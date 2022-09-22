@@ -1,0 +1,1111 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "BuyLootBoxTooltip/amountLeft"
+msgstr "Envelopes available for purchase today"
+
+msgid "BuyLootBoxTooltip/description"
+msgstr ""
+"Paid Envelopes for sending to other players. The person to whom you send an "
+"Envelope as a gift will receive its contents."
+
+msgid "BuyLootBoxTooltip/info"
+msgstr ""
+"The number of Envelopes purchased per day must not exceed %(amountMax)."
+
+msgid "BuyLootBoxTooltip/title"
+msgstr "Purchasing Red Envelopes"
+
+msgid "album/fillAlbumError"
+msgstr "Error placing the Charm: server error."
+
+msgid "album/newCharms"
+msgstr "NEW CHARMS: %(countNewCharms)s"
+
+msgid "album/stub/button"
+msgstr "To Sending Envelopes"
+
+msgid "album/stub/description"
+msgstr ""
+"Charms for completing the Album can be received as a gift from your friends "
+"or random players. Send Envelopes and receive Envelopes with Charms in "
+"return."
+
+msgid "album/stub/title"
+msgstr "Complete your Album and receive bonuses after each battle"
+
+msgid "bonus/percentage"
+msgstr "+%(percentage)s%"
+
+msgid "bonus/tooltip/combatExperience/body"
+msgstr "Added to earnings after each Random Battle, including Grand Battle."
+
+msgid "bonus/tooltip/combatExperience/header"
+msgstr "Bonus to Combat Experience"
+
+msgid "bonus/tooltip/combatExperience/headerShort"
+msgstr "To Combat Experience"
+
+msgid "bonus/tooltip/credits/body"
+msgstr "Added to earnings after each Random Battle, including Grand Battle."
+
+msgid "bonus/tooltip/credits/header"
+msgstr "Bonus to Credits"
+
+msgid "bonus/tooltip/credits/headerShort"
+msgstr "To credits"
+
+msgid "bonus/tooltip/crewExperience/body"
+msgstr "Added to earnings after each Random Battle, including Grand Battle."
+
+msgid "bonus/tooltip/crewExperience/header"
+msgstr "Bonus to Crew Experience"
+
+msgid "bonus/tooltip/crewExperience/headerShort"
+msgstr "To Crew Experience"
+
+msgid "bonus/tooltip/freeExperience/body"
+msgstr "Added to earnings after each Random Battle, including Grand Battle."
+
+msgid "bonus/tooltip/freeExperience/header"
+msgstr "Bonus to Free Experience"
+
+msgid "bonus/tooltip/freeExperience/headerShort"
+msgstr "To Free Experience"
+
+msgid "charmName/1"
+msgstr "\"Happiness\" Gold Sycee"
+
+msgid "charmName/10"
+msgstr "\"Longevity\" Copper Coin"
+
+msgid "charmName/11"
+msgstr "Bamboo Branches"
+
+msgid "charmName/12"
+msgstr "Gillyflower"
+
+msgid "charmName/13"
+msgstr "White Daffodil"
+
+msgid "charmName/14"
+msgstr "Yellow Daffodil"
+
+msgid "charmName/15"
+msgstr "Peach Blossoms"
+
+msgid "charmName/16"
+msgstr "Lunar Mandarins"
+
+msgid "charmName/17"
+msgstr "\"Happiness\" Arrives"
+
+msgid "charmName/18"
+msgstr "Happy Spring Festival"
+
+msgid "charmName/19"
+msgstr "\"Happiness\" Chinese Knot"
+
+msgid "charmName/2"
+msgstr "\"Happiness\" Cash Charm"
+
+msgid "charmName/20"
+msgstr "Scroll of \"Happiness\""
+
+msgid "charmName/21"
+msgstr "Orange Wave Firework"
+
+msgid "charmName/22"
+msgstr "Three-Color Firework"
+
+msgid "charmName/23"
+msgstr "Orange Crown Firework"
+
+msgid "charmName/24"
+msgstr "Chinese Base Drum"
+
+msgid "charmName/25"
+msgstr "String of Firecrackers"
+
+msgid "charmName/26"
+msgstr "Firecrackers"
+
+msgid "charmName/27"
+msgstr "Red Cloud With Gold Rims"
+
+msgid "charmName/28"
+msgstr "Golden Fan With Three Tassels"
+
+msgid "charmName/29"
+msgstr "Red Fan"
+
+msgid "charmName/3"
+msgstr "Copper Cash Charm"
+
+msgid "charmName/30"
+msgstr "Red Silk Fan"
+
+msgid "charmName/31"
+msgstr "Flower Lantern"
+
+msgid "charmName/32"
+msgstr "Red Lantern"
+
+msgid "charmName/33"
+msgstr "Fan Lantern"
+
+msgid "charmName/34"
+msgstr "Palace Lantern"
+
+msgid "charmName/35"
+msgstr "Vase Lantern"
+
+msgid "charmName/36"
+msgstr "Harmonious Lantern"
+
+msgid "charmName/37"
+msgstr "Grand Red Lantern"
+
+msgid "charmName/38"
+msgstr "Hexagonal Lantern"
+
+msgid "charmName/39"
+msgstr "Paper Lantern"
+
+msgid "charmName/4"
+msgstr "Triple Copper Cash Charm"
+
+msgid "charmName/40"
+msgstr "Small Red Lantern"
+
+msgid "charmName/41"
+msgstr "Triple \"Happiness\" Gold Sycees"
+
+msgid "charmName/42"
+msgstr "Three-Cash \"Happiness\" Charm"
+
+msgid "charmName/43"
+msgstr "Dragon and Phoenix Cash Charm"
+
+msgid "charmName/44"
+msgstr "\"Five Happiness\" Copper Coin Charm"
+
+msgid "charmName/45"
+msgstr "Ten-Cash Charm With Golden Tassel"
+
+msgid "charmName/46"
+msgstr "Ten-Cash Charm With Red Tassel"
+
+msgid "charmName/47"
+msgstr "Chinese Knot With Golden Rims"
+
+msgid "charmName/48"
+msgstr "\"Happiness\" Gold Coin"
+
+msgid "charmName/49"
+msgstr "\"Peace\" Gold Coin"
+
+msgid "charmName/5"
+msgstr "Copper Charm With Golden Tassel"
+
+msgid "charmName/50"
+msgstr "\"Longevity\" Gold Coin"
+
+msgid "charmName/51"
+msgstr "Pot of Bamboo Branches"
+
+msgid "charmName/52"
+msgstr "Pot of Gillyflowers"
+
+msgid "charmName/53"
+msgstr "Pot of White Daffodils"
+
+msgid "charmName/54"
+msgstr "Pot of Yellow Daffodils"
+
+msgid "charmName/55"
+msgstr "Peach Blossom Branch"
+
+msgid "charmName/56"
+msgstr "Good Fortune and Prosperity"
+
+msgid "charmName/57"
+msgstr "Gilded \"Happiness\" Arrives"
+
+msgid "charmName/58"
+msgstr "Gilded Spring Festival Decoration"
+
+msgid "charmName/59"
+msgstr "\"Happiness\" Chinese Knot With Golden Thread"
+
+msgid "charmName/6"
+msgstr "Copper Charm With Red Tassel"
+
+msgid "charmName/60"
+msgstr "Gilded Scroll of \"Happiness\""
+
+msgid "charmName/61"
+msgstr "Dandelion Firework"
+
+msgid "charmName/62"
+msgstr "Triple-Color Peony Firework"
+
+msgid "charmName/63"
+msgstr "Chrysanthemum Firework"
+
+msgid "charmName/64"
+msgstr "Base Drum With Dragon Patterns"
+
+msgid "charmName/65"
+msgstr "String of Gilded Firecrackers"
+
+msgid "charmName/66"
+msgstr "Gilded Firecrackers"
+
+msgid "charmName/67"
+msgstr "Dark Gold Cloud"
+
+msgid "charmName/68"
+msgstr "\"Happiness\" Fan With Three Tassels"
+
+msgid "charmName/69"
+msgstr "Red Fan With Golden Bamboo Patterns"
+
+msgid "charmName/7"
+msgstr "Chinese Knot"
+
+msgid "charmName/70"
+msgstr "Red Fan With Wintersweet Patterns"
+
+msgid "charmName/71"
+msgstr "Flower Lantern With Wintersweet Patterns"
+
+msgid "charmName/72"
+msgstr "Red Lantern With Golden Carp Patterns"
+
+msgid "charmName/73"
+msgstr "Fan Lantern With Wintersweet Patterns"
+
+msgid "charmName/74"
+msgstr "Palace Lantern With Wintersweet Patterns"
+
+msgid "charmName/75"
+msgstr "Vase Lantern With Spring Motifs"
+
+msgid "charmName/76"
+msgstr "Harmonious Lantern With Gold Dragon Patterns"
+
+msgid "charmName/77"
+msgstr "\"Good Fortune\" Grand Red Lantern"
+
+msgid "charmName/78"
+msgstr "\"Happiness\" Hexagonal Lantern"
+
+msgid "charmName/79"
+msgstr "Paper Lantern With Golden Rims"
+
+msgid "charmName/8"
+msgstr "\"Happiness\" Copper Coin"
+
+msgid "charmName/80"
+msgstr "Small Red Lantern With Spring Motifs"
+
+msgid "charmName/81"
+msgstr "Gold Incense Burner With Dragon Ears"
+
+msgid "charmName/82"
+msgstr "Gold Three-Legged Toad"
+
+msgid "charmName/83"
+msgstr "Gold Dragon Turtle"
+
+msgid "charmName/84"
+msgstr "Gold Lion"
+
+msgid "charmName/85"
+msgstr "Gold Leaping Carp"
+
+msgid "charmName/9"
+msgstr "\"Peace\" Copper Coin"
+
+msgid "charmType/common"
+msgstr "Regular"
+
+msgid "charmType/rare"
+msgstr "Special"
+
+msgid "charmTypeLong/common"
+msgstr "Regular Charm"
+
+msgid "charmTypeLong/rare"
+msgstr "Special Charm"
+
+msgid "common/multiplier"
+msgstr "x%(amount)s"
+
+msgid "dialogs/dailyQuestslunarNYInfo/message"
+msgstr ""
+"During Lunar New Year Blessings, in addition to the rewards for completing "
+"each daily mission, you will also receive Standard Envelopes for completed "
+"Standard and Bonus Missions."
+
+msgid "dialogs/dailyQuestslunarNYInfo/title"
+msgstr "Standard Envelopes for Daily Missions"
+
+msgid "envelope/button/buyEnvelope"
+msgstr "Purchase Envelope"
+
+msgid "envelope/button/by"
+msgstr "Purchase"
+
+msgid "envelope/button/send"
+msgstr "Send"
+
+msgid "envelope/button/toDQ"
+msgstr "To Missions"
+
+msgid "envelope/popover/free/description"
+msgstr ""
+"An envelope with a Standard Envelope. It can be earned by completing daily "
+"missions and at certain Stages of the Personal Progression."
+
+msgid "envelope/popover/free/ended"
+msgstr ""
+"No Envelopes left. Earn them by completing daily missions and at certain "
+"Stages of the event."
+
+msgid "envelope/popover/paid/description"
+msgstr ""
+"An Envelope with gold and a Regular Charm. It can be purchased in the Store."
+
+msgid "envelope/popover/paid/ended"
+msgstr "No Envelopes left. Purchase them in the Store."
+
+msgid "envelope/popover/premiumPaid/description"
+msgstr ""
+"An Envelope with gold, a Special Charm, and a decal. It can be purchased in "
+"the Store."
+
+msgid "envelope/popover/premiumPaid/ended"
+msgstr "No Envelopes left. Purchase them in the Store."
+
+msgid "envelope/popover/probability"
+msgstr ""
+"* A Regular Charm can be replaced with a Special Charm and a decal with a "
+"%(probability)s% chance."
+
+msgid "envelope/popover/reciprocal"
+msgstr ""
+"An envelope in return will be matched no later than %(count)s h after "
+"sending."
+
+msgid "envelopesEntry/count"
+msgstr "Envelopes available:"
+
+msgid "envelopesEntry/externalLink"
+msgstr "Purchase"
+
+msgid "envelopesEntry/notAvailable"
+msgstr "No Envelopes"
+
+msgid "envelopesEntry/systemError/subTitle"
+msgstr "We are working on fixing the issue. Please try checking back later."
+
+msgid "envelopesEntry/systemError/title"
+msgstr "Sending Envelopes Is Temporarily Unavailable"
+
+msgid "envelopesEntry/tooltip/additionally"
+msgstr "Purchased and earned Envelopes can only be sent as a gift."
+
+msgid "envelopesEntry/tooltip/description"
+msgstr ""
+"Purchase and earn Envelopes with gifts to send to your friend or a random "
+"player. The more envelopes you send, the further you will advance through "
+"the Personal Progression."
+
+msgid "envelopesEntry/tooltip/title"
+msgstr "Red Envelopes"
+
+msgid "envelopesProgression/statistic/end"
+msgstr "All rewards received"
+
+msgid "envelopesProgression/statistic/progress"
+msgstr "Envelopes sent: %(sent)s / %(max)s"
+
+msgid "envelopesProgression/toNextRewards"
+msgstr ""
+"%(count)s more Envelopes\n"
+"to get a reward"
+
+msgid "fillEnvelope/backButton/back"
+msgstr "BACK"
+
+msgid "fillEnvelope/backButton/goto"
+msgstr "TO ENVELOPES"
+
+msgid "fillEnvelope/friendSelect/error"
+msgstr ""
+"The player selected does not meet the conditions for receiving an Envelope. "
+"Select another player."
+
+msgid "fillEnvelope/friendSelect/friendNotFound"
+msgstr "Friend with this name not found."
+
+msgid "fillEnvelope/friendSelect/inputNote"
+msgstr "Nickname must contain from 2 to 24 characters or digits."
+
+msgid "fillEnvelope/friendSelect/inputPlaceholder"
+msgstr "TO:"
+
+msgid "fillEnvelope/header/subTitle"
+msgstr "Envelopes available:"
+
+msgid "fillEnvelope/link"
+msgstr "More information about Red Envelopes"
+
+msgid "fillEnvelope/noFriends/battle"
+msgstr "In Team chat in battle"
+
+msgid "fillEnvelope/noFriends/clan"
+msgstr "In clans"
+
+msgid "fillEnvelope/noFriends/platoon"
+msgstr "In Platoons"
+
+msgid "fillEnvelope/noFriends/social"
+msgstr "In social networks and forums"
+
+msgid "fillEnvelope/noFriends/subTitle"
+msgstr "You can find friends:"
+
+msgid "fillEnvelope/noFriends/title"
+msgstr "You Need Friends to Send Envelopes"
+
+msgid "fillEnvelope/randomUserSend"
+msgstr ""
+"A random player will receive the envelope sent. You are guaranteed to "
+"receive an equal gift in return."
+
+msgid "fillEnvelope/reload"
+msgstr "Change Message"
+
+msgid "fillEnvelope/sendButton"
+msgstr "Send Envelope"
+
+msgid "fillEnvelope/systemError/title"
+msgstr "Sending Envelopes Is Temporarily Unavailable"
+
+msgid "fillEnvelope/tab/friend"
+msgstr "Send to Friend"
+
+msgid "fillEnvelope/tab/random"
+msgstr "Send to Random Player"
+
+msgid "fillEnvelope/tab/toFriend"
+msgstr "Send to Friend"
+
+msgid "fillEnvelope/tab/toRandom"
+msgstr "Send to Random Player"
+
+msgid "fillEnvelope/trigger/changeCongrats"
+msgstr "CHANGE MESSAGE"
+
+msgid "fillEnvelope/trigger/selectFriend"
+msgstr "SELECT A FRIEND"
+
+msgid "glossary/envelopeType/free"
+msgstr "Standard Envelope"
+
+msgid "glossary/envelopeType/paid"
+msgstr "Regular Envelope"
+
+msgid "glossary/envelopeType/premiumPaid"
+msgstr "Special Envelope"
+
+msgid "glossary/eventName"
+msgstr "Red Envelopes"
+
+msgid "historyEnvelopes/header"
+msgstr "Envelope History"
+
+msgid "historyEnvelopes/tableButtonTooltip/friendRequestInProgress"
+msgstr "You can send an Envelope after mutual adding to the Friends list."
+
+msgid "historyEnvelopes/tableButtonTooltip/isFriend"
+msgstr "Send an Envelope in return"
+
+msgid "historyEnvelopes/tableButtonTooltip/notFriend"
+msgstr "Add to Friends"
+
+msgid "historyEnvelopes/tableHeader/playerName"
+msgstr "Player's Nickname"
+
+msgid "historyEnvelopes/tableHeader/receivedEnvelopes"
+msgstr "Envelopes Received"
+
+msgid "historyEnvelopes/tableHeader/receivedGold"
+msgstr "Gold Received"
+
+msgid "historyEnvelopes/tableHeader/sendInReply"
+msgstr "Send in Return"
+
+msgid "historyEnvelopes/tableHeader/sentInResponse"
+msgstr "Sent in Return"
+
+msgid "historyError/description"
+msgstr "We are working on fixing the issue. Please try checking back later."
+
+msgid "historyError/title"
+msgstr "History Temporarily Unavailable"
+
+msgid "infoPage/about/description"
+msgstr ""
+"From %(eventRange)s, World of Tanks will host a game event during which you "
+"will be able to congratulate your friends and other players on the Year of "
+"the Tiger by sending them gifts in Red Envelopes. Each Envelope contains a "
+"Charm for completing the festive Album. The more Charms in the Album, the "
+"more bonuses you will receive after each battle."
+
+msgid "infoPage/about/formatString"
+msgstr "{start} through {end}"
+
+msgid "infoPage/about/link"
+msgstr "Detailed Rules of Participation"
+
+msgid "infoPage/about/title"
+msgstr "About the Event"
+
+msgid "infoPage/album/description"
+msgstr ""
+"Complete the Album and receive bonuses after each battle for each Charm "
+"placed. You can receive bonuses to Combat Experience, Crew Experience, Free "
+"Experience, or credits."
+
+msgid "infoPage/album/title"
+msgstr "Album and Charm Bonuses"
+
+msgid "infoPage/charm/percent"
+msgstr "%(value)s%"
+
+msgid "infoPage/charm/simple/description"
+msgstr ""
+"Upon being placed in the Album slot, Regular Charms increase one of the "
+"bonuses by %(simpleCharmPercent)s"
+
+msgid "infoPage/charm/simple/title"
+msgstr "Regular Charms"
+
+msgid "infoPage/charm/special/description"
+msgstr ""
+"Upon being placed in the Album slot, Special Charms increase %(textLight_1)s "
+"or %(textLight_2)s"
+
+msgid "infoPage/charm/special/textLight_1"
+msgstr "two bonuses by %(percent)s"
+
+msgid "infoPage/charm/special/textLight_2"
+msgstr "one bonus by %(percent)s"
+
+msgid "infoPage/charm/special/title"
+msgstr "Special Charms"
+
+msgid "infoPage/envelopes/description"
+msgstr ""
+"A player who receives an Envelope as a gift will find Charms, gold, and "
+"decals depending on the Envelope type. You cannot open the Envelope "
+"yourself. It can be only sent to other players."
+
+msgid "infoPage/envelopes/free/description"
+msgstr "Contains a Regular Charm."
+
+msgid "infoPage/envelopes/free/title"
+msgstr "Standard Envelope"
+
+msgid "infoPage/envelopes/paid/description"
+msgstr "Contains %(goldAmount)s and a Regular Charm."
+
+msgid "infoPage/envelopes/paid/title"
+msgstr "Regular Envelope"
+
+msgid "infoPage/envelopes/premiumPaid/description"
+msgstr ""
+"Contains %(goldAmount)s, a Special Charm, and a unique decal with the image "
+"of the received Charm."
+
+msgid "infoPage/envelopes/premiumPaid/title"
+msgstr "Special Envelope"
+
+msgid "infoPage/envelopes/probability"
+msgstr ""
+"* A Regular Charm in the Standard and Regular Envelopes can be replaced with "
+"a Special Charm and a decal with a %(probability)s chance."
+
+msgid "infoPage/envelopes/title"
+msgstr "Red Envelopes"
+
+msgid "infoPage/lunarNewYear"
+msgstr "LUNAR NEW YEAR BLESSINGS"
+
+msgid "infoPage/presents/description_1"
+msgstr ""
+"You can send Envelopes of three different types to a friend or a random "
+"player."
+
+msgid "infoPage/presents/description_2"
+msgstr ""
+"If you send an envelope to a random player, you will be guaranteed to "
+"receive an equal gift in return. If the system does not match a gift within "
+"%(count)s h, the Envelope will return to you and can be sent once again."
+
+msgid "infoPage/presents/title"
+msgstr "Give Gifts to Friends"
+
+msgid "infoPage/progress/description"
+msgstr ""
+"By sending Red Envelopes to friends and random players, you will increase "
+"your progress in the event. For each Stage, you will receive an improved "
+"badge, a medal, and Standard Envelopes as a reward."
+
+msgid "infoPage/progress/title"
+msgstr "Event Progression"
+
+msgid "infoPage/where/description_1"
+msgstr ""
+"You can receive Standard Envelopes by completing daily missions and "
+"advancing through the event progression."
+
+msgid "infoPage/where/description_2"
+msgstr "Regular and Special Envelopes can be purchased %(link)s"
+
+msgid "infoPage/where/link"
+msgstr "in the Premium Shop."
+
+msgid "infoPage/where/title"
+msgstr "How to Receive Envelopes"
+
+msgid "intro/button"
+msgstr "Affirmative!"
+
+msgid "intro/slide1/text"
+msgstr ""
+"Envelopes can be purchased in the Store and received by completing daily "
+"missions or at certain Progression Stages."
+
+msgid "intro/slide1/title"
+msgstr "Earn or Purchase Envelopes"
+
+msgid "intro/slide2/text"
+msgstr ""
+"In a special Lunar New Year section, you will be able to send an Envelope to "
+"a friend or a random player. If you send an envelope to a random player, you "
+"will be guaranteed to receive an equal envelope in return."
+
+msgid "intro/slide2/title"
+msgstr "Give Gifts to Friends"
+
+msgid "intro/slide3/text"
+msgstr ""
+"Congratulate friends on Lunar New Year by sending them Red Envelopes with "
+"gold and Charms. Increase your Personal Progression Stage!"
+
+msgid "intro/slide3/title"
+msgstr "Increase Personal Progression"
+
+msgid "intro/title"
+msgstr "TIME TO SEND GIFTS!"
+
+msgid "mainWidget/level/1"
+msgstr "Stage 1"
+
+msgid "mainWidget/level/2"
+msgstr "Stage 2"
+
+msgid "mainWidget/level/3"
+msgstr "Stage 3"
+
+msgid "mainWidget/level/4"
+msgstr "Stage 4"
+
+msgid "mainWidget/level/5"
+msgstr "Stage 5"
+
+msgid "mainWidget/newEnvelope"
+msgstr "new Envelopes"
+
+msgid "mainWidget/tooltip/main/conditionToNextLevel"
+msgstr "Envelopes left to send to reach %(level)s: %(count)s"
+
+msgid "mainWidget/tooltip/main/description"
+msgstr ""
+"Send any Envelopes and advance through the Personal Progression. Receive "
+"unique rewards as Regular Envelopes, badges, and medals."
+
+msgid "mainWidget/tooltip/main/endEvent"
+msgstr "Event ends in %(days)s"
+
+msgid "mainWidget/tooltip/main/lessThanDay"
+msgstr "less than 1 d"
+
+msgid "mainWidget/tooltip/main/maxLevel"
+msgstr "All Personal Progression rewards received!"
+
+msgid "mainWidget/tooltip/main/progressFinished"
+msgstr "All Personal Progression rewards received!"
+
+msgid "mainWidget/tooltip/main/title"
+msgstr "%(level)s Red Envelopes"
+
+msgid "mainWidget/tooltip/main/toNextLevel"
+msgstr "Stage %(level)s"
+
+msgid "mainWidget/tooltip/newEnvelop/additionally"
+msgstr ""
+"Send Envelopes to friends or exchange them with random players. If your "
+"Envelope is not matched within %(count)s h, you will get it back."
+
+msgid "mainWidget/tooltip/newEnvelop/description"
+msgstr "Open Envelopes and receive gifts from friends and random players."
+
+msgid "mainWidget/tooltip/newEnvelop/title"
+msgstr "Your Gift"
+
+msgid "menu/contextMenu/lunarNYSendGift"
+msgstr "Send Envelope"
+
+msgid "navigationTooltips/album/body"
+msgstr "Contains Collection Album with all decorations."
+
+msgid "navigationTooltips/album/header"
+msgstr "Album"
+
+msgid "navigationTooltips/info/body"
+msgstr "Red Envelopes details"
+
+msgid "navigationTooltips/info/header"
+msgstr "About the Event"
+
+msgid "navigationTooltips/sendEnvelopes/body"
+msgstr "Contains Envelopes that can be sent to friends or random players."
+
+msgid "navigationTooltips/sendEnvelopes/header"
+msgstr "Sending an Envelope"
+
+msgid "navigationTooltips/storeEnvelopes/body"
+msgstr "Contains all Envelopes that friends or random players sent you."
+
+msgid "navigationTooltips/storeEnvelopes/header"
+msgstr "Envelope Storage"
+
+msgid "noEnvelopesStub/button"
+msgstr "To Sending"
+
+msgid "noEnvelopesStub/description"
+msgstr ""
+"Send Envelopes to your friends or random players and expect the same in "
+"return!"
+
+msgid "noEnvelopesStub/title"
+msgstr "You Haven't Received Envelopes Yet"
+
+msgid "openEnvelopesAwards/addToFriendsButton"
+msgstr "Add to Friends"
+
+msgid "openEnvelopesAwards/animationCheckbox"
+msgstr "Show Animation"
+
+msgid "openEnvelopesAwards/award/charm"
+msgstr "%(name)s Charm"
+
+msgid "openEnvelopesAwards/award/decal"
+msgstr "%(name)s Decal"
+
+msgid "openEnvelopesAwards/backToEnvelopesButton"
+msgstr "To Envelopes"
+
+msgid "openEnvelopesAwards/charms"
+msgstr "Charms"
+
+msgid "openEnvelopesAwards/decals"
+msgstr "Decals"
+
+msgid "openEnvelopesAwards/envelopesLeft"
+msgstr "%(envelopeType)s Envelopes left: %(count)s"
+
+msgid "openEnvelopesAwards/friendRequestIsSentButton"
+msgstr "Request Sent"
+
+msgid "openEnvelopesAwards/friendRequestIsSentTooltip"
+msgstr "Request sent. Please wait until the player accepts it."
+
+msgid "openEnvelopesAwards/goldReward"
+msgstr "Gold"
+
+msgid "openEnvelopesAwards/infoLink"
+msgstr "More information about Red Envelopes"
+
+msgid "openEnvelopesAwards/multiOpenTitle"
+msgstr "Opening %(envelopeType)s"
+
+msgid "openEnvelopesAwards/openMoreButton"
+msgstr "Open Another %(count)s"
+
+msgid "openEnvelopesAwards/openNextButton"
+msgstr "Open Next"
+
+msgid "openEnvelopesAwards/otherRewards"
+msgstr "What's Inside:"
+
+msgid "openEnvelopesAwards/pagination"
+msgstr "%(current)s / %(all)s"
+
+msgid "openEnvelopesAwards/sendBackButton"
+msgstr "Send in Return"
+
+msgid "openEnvelopesAwards/title"
+msgstr "Received %(envelopeType)s Envelope"
+
+msgid "popover/free/description"
+msgstr ""
+"For daily missions.\n"
+"Contains a Regular Charm."
+
+msgid "popover/free/title"
+msgstr "Standard Envelope"
+
+msgid "popover/message/generalDisable"
+msgstr "Sending and purchasing temporarily unavailable."
+
+msgid "popover/message/serviceDisable"
+msgstr "Temporarily unavailable"
+
+msgid "popover/paid/description"
+msgstr ""
+"Purchased in the Store.\n"
+"Contains %(goldAmount)s and a Regular Charm."
+
+msgid "popover/paid/title"
+msgstr "Regular Envelope"
+
+msgid "popover/premiumPaid/description"
+msgstr ""
+"Purchased in the Store.\n"
+"Contains %(goldAmount)s, a Special Charm, and a decal."
+
+msgid "popover/premiumPaid/title"
+msgstr "Special Envelope"
+
+msgid "postbattle/envelopesLabel"
+msgstr "%(envelopeName)s: %(count)s%(icon)s"
+
+msgid "progressionAward/receivedLevel"
+msgstr "YOU REACHED STAGE %(receivedLevel)s"
+
+msgid "selectCharm/nothingFoundButton"
+msgstr "Reset Filter"
+
+msgid "selectCharm/nothingFoundError"
+msgstr ""
+"No matches found. Change your filter settings or reset them to default."
+
+msgid "selectCharm/stub/title"
+msgstr "No Charms Left"
+
+msgid "selectCharm/title"
+msgstr "Charms Left: %(count)s"
+
+msgid "selectCharm/visibleCharms"
+msgstr "Displayed: %(count)s"
+
+msgid "storeEnvelopes/backPaginationButtonText"
+msgstr "Back"
+
+msgid "storeEnvelopes/envelope/amount"
+msgstr "×%(amount)s"
+
+msgid "storeEnvelopes/forwardPaginationButtonText"
+msgstr "More Envelopes"
+
+msgid "storeEnvelopes/historyButton"
+msgstr "Envelope History"
+
+msgid "storeEnvelopes/openByEnvelopeType/button"
+msgstr "Open %(count)s at a Time"
+
+msgid "storeEnvelopes/openByEnvelopeType/buttonAll"
+msgstr "Open All"
+
+msgid "storeEnvelopes/openByEnvelopeType/title"
+msgstr "Envelopes will be opened %(count)s at once or one by one."
+
+msgid "storeEnvelopes/openById/button"
+msgstr "Open"
+
+msgid "storeEnvelopes/openById/checkbox"
+msgstr "%(count)s"
+
+msgid "storeEnvelopes/openById/title"
+msgstr ""
+"Select how many envelopes from %(playerName)s you would like to open at once"
+
+msgid "storeEnvelopes/tab/free"
+msgstr "Standard Envelope (%(count)s item(s))"
+
+msgid "storeEnvelopes/tab/paid"
+msgstr "Paid Regular Envelope (%(count)s item(s))"
+
+msgid "storeEnvelopes/tab/premiumPaid"
+msgstr "Paid Special Envelope (%(count)s item(s))"
+
+msgid "systemMessage/autoOpen/body"
+msgstr "We opened all Lunar New Year Blessings Envelopes for you."
+
+msgid "systemMessage/autoOpen/header"
+msgstr "Rewards Received"
+
+msgid "systemMessage/awards/charm"
+msgstr "Charm added: "
+
+msgid "systemMessage/awards/charms"
+msgstr "Charms added: "
+
+msgid "systemMessage/awards/many/projection_decal"
+msgstr "Decals added: "
+
+msgid "systemMessage/awards/projection_decal"
+msgstr "Decal added: "
+
+msgid "systemMessage/enableChanged/isDisabled"
+msgstr "Lunar New Year Blessings is temporarily suspended."
+
+msgid "systemMessage/enableChanged/isEnabled"
+msgstr "Lunar New Year Blessings has resumed."
+
+msgid "systemMessage/envelopeReceived/header"
+msgstr "Envelope received!"
+
+msgid "systemMessage/envelopesReceived/body"
+msgstr "Open envelopes to receive Charms and other valuable gifts."
+
+msgid "systemMessage/envelopesReceived/counter"
+msgstr "x%(count)s"
+
+msgid "systemMessage/envelopesReceived/header"
+msgstr "Envelopes received!"
+
+msgid "systemMessage/envelopesReceived/openButton"
+msgstr "Open"
+
+msgid "systemMessage/invoiceReceived/charmsAccrued"
+msgstr "Charms added: "
+
+msgid "systemMessage/invoiceReceived/charmsDebited"
+msgstr "Charms removed: "
+
+msgid "systemMessage/invoiceReceived/entitlementsAccrued"
+msgstr "%(entitlementType)s Envelopes to send added: %(count)s"
+
+msgid "systemMessage/invoiceReceived/entitlementsDebited"
+msgstr "%(entitlementType)s Envelopes to send removed: %(count)s"
+
+msgid "systemMessage/invoiceReceived/lootboxAccrued"
+msgstr "Gift %(entitlementType)s Envelopes added: %(count)s"
+
+msgid "systemMessage/invoiceReceived/lootboxDebited"
+msgstr "Gift %(entitlementType)s Envelopes removed: %(count)s"
+
+msgid "systemMessage/newEnvelopesReceived/body/envelope"
+msgstr "Envelope received"
+
+msgid "systemMessage/newEnvelopesReceived/body/envelopeWithName"
+msgstr "gifted an Envelope"
+
+msgid "systemMessage/newEnvelopesReceived/body/envelopes"
+msgstr "Envelopes received"
+
+msgid "systemMessage/newEnvelopesReceived/body/envelopesSeveralSender"
+msgstr "Envelopes received from multiple players"
+
+msgid "systemMessage/newEnvelopesReceived/body/envelopesWithName"
+msgstr "gifted Envelopes"
+
+msgid "systemMessage/newEnvelopesReceived/simple/envelopeType"
+msgstr "Received "
+
+msgid "systemMessage/newEnvelopesReceived/simple/envelopesBody"
+msgstr "You received Envelopes as a gift from other players:"
+
+msgid "systemMessage/newEnvelopesReceived/simple/header"
+msgstr "Congratulations!"
+
+msgid "systemMessage/newEnvelopesReceived/simple/sender"
+msgstr "Sender: "
+
+msgid "systemMessage/openEnvelopesAwards/error"
+msgstr "Error opening the Envelope. Please try again later."
+
+msgid "systemMessage/progression/awards/achievement"
+msgstr "Medal: "
+
+msgid "systemMessage/progression/awards/badge"
+msgstr "Badge: "
+
+msgid "systemMessage/progression/awards/giftsystem_3_baseEnvelope"
+msgstr "Standard Envelopes: "
+
+msgid "systemMessage/progression/awards/header"
+msgstr "You received the following rewards:"
+
+msgid "systemMessage/progression/header"
+msgstr "Congratulations!"
+
+msgid "systemMessage/progression/newLevel"
+msgstr "New Progression Stage reched:"
+
+msgid "systemMessage/sendEnvelope/FREE"
+msgstr "Standard Envelope"
+
+msgid "systemMessage/sendEnvelope/PAID"
+msgstr "Paid Regular Envelope"
+
+msgid "systemMessage/sendEnvelope/PREMIUM_PAID"
+msgstr "Paid Special Envelope"
+
+msgid "systemMessage/sendEnvelope/error"
+msgstr "Error: an error occurred while sending the Envelope."
+
+msgid "systemMessage/sendEnvelope/header"
+msgstr "Envelope Sent"
+
+msgid "systemMessage/sendEnvelope/returnedEnvelope/body"
+msgstr ""
+"Unable to find an equivalent pair for the Envelope sent to a random player. "
+"We returned the envelope to you, and you can send it again."
+
+msgid "systemMessage/sendEnvelope/returnedEnvelope/btn"
+msgstr "To Sending"
+
+msgid "systemMessage/sendEnvelope/returnedEnvelope/header"
+msgstr "The Envelope you sent was returned"
+
+msgid "systemMessage/sendEnvelope/toFriend"
+msgstr "%(envelopeType)s sent to player %(nickName)s"
+
+msgid "systemMessage/sendEnvelope/toRandomUser"
+msgstr "%(envelopeType)s sent to a random player"
+
+msgid "systemMessage/shop/maxEnvelopes/body"
+msgstr ""
+"You purchased the maximum number of Envelopes per day: %(maxCount)s. You "
+"will be able to purchase more tomorrow at %(time)s."
+
+msgid "systemMessage/shop/maxEnvelopes/header"
+msgstr "Envelope Purchase Limit Reached"

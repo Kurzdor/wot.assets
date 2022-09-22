@@ -1,0 +1,168 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-18 10:00+0300\n"
+"PO-Revision-Date: 2011-03-18 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "multiOpenView/applyLabel"
+msgstr "Так точно!"
+
+msgid "multiOpenView/boxesInStorage"
+msgstr "Ящиков в наличии: {count}"
+
+msgid "multiOpenView/boxesNotAvailable"
+msgstr "Ящики закончились"
+
+msgid "multiOpenView/openBoxesLabel"
+msgstr "Открыть {count} шт."
+
+msgid "multiOpenView/skipBtn"
+msgstr "ПРОПУСТИТЬ АНИМАЦИЮ"
+
+msgid "multiOpenView/title"
+msgstr "Поздравляем!"
+
+msgid "notificationView/gotoRewardsBtn"
+msgstr "К выбору наград"
+
+msgid "notificationView/subtitle/second"
+msgstr "Используйте жетоны за выслугу лет для получения награды!"
+
+msgid "notificationView/subtitle/timeout"
+msgstr "У вас остались неиспользованные жетоны за выслугу лет."
+
+msgid "notificationView/timeout"
+msgstr "До обнуления жетонов: %(timeout)s"
+
+msgid "notificationView/title"
+msgstr "Поздравляем!"
+
+msgid "notifications/description"
+msgstr ""
+"Ящики с заслуженной наградой — в подарок за выслугу лет! Открывайте и "
+"забирайте содержимое."
+
+msgid "notifications/header"
+msgstr "Заслуженная награда"
+
+msgid "openBoxView/autoOpenTooltip/body"
+msgstr ""
+"{date} мы откроем за вас ящики с заслуженной наградой и выдадим награды."
+
+msgid "openBoxView/autoOpenTooltip/header"
+msgstr "Автоматическое открытие"
+
+msgid "openBoxView/boxesInStorage"
+msgstr "Ящиков в наличии: {count}"
+
+msgid "openBoxView/description"
+msgstr ""
+"Ящики с заслуженной наградой — в подарок! Открывайте и забирайте содержимое."
+
+msgid "openBoxView/header"
+msgstr "Заслуженная награда"
+
+msgid "openBoxView/openBoxesLabel"
+msgstr "Открыть {count} шт."
+
+msgid "rewardsScreen/moreRewards"
+msgstr "... и ещё"
+
+msgid "rewardsScreen/showGiftButtonLabel"
+msgstr "К награде"
+
+msgid "rewardsView/applyBtn"
+msgstr "Так точно!"
+
+msgid "rewardsView/gotoRewardsBtn"
+msgstr "К наградам"
+
+msgid "rewardsView/lootBox/descr"
+msgstr "Откройте и заберите содержимое!"
+
+msgid "rewardsView/lootBox/multiplier"
+msgstr "x"
+
+msgid "rewardsView/lootBox/title"
+msgstr ""
+"ящиков\n"
+"с заслуженной\n"
+"наградой"
+
+msgid "rewardsView/nextBtn"
+msgstr "К следующей награде (%(count)s)"
+
+msgid "rewardsView/openBtn"
+msgstr "Открыть"
+
+msgid "rewardsView/sacoin/body"
+msgstr ""
+"Вы получили жетоны за выслугу лет. Можете обменять их на ценные награды."
+
+msgid "rewardsView/sacoin/title"
+msgstr "Получены жетоны"
+
+msgid "rewardsView/subTitle/AT"
+msgstr "Награда за активное участие в Альфа-тесте"
+
+msgid "rewardsView/subTitle/BT"
+msgstr "Награда за активное участие в Бета-тесте"
+
+msgid "rewardsView/subTitle/Y0"
+msgstr "Награда за боевые заслуги"
+
+msgid "rewardsView/subTitle/Y1"
+msgstr "Награда за 1 год в строю"
+
+msgid "rewardsView/subTitle/Y10"
+msgstr "Награда за 10 лет в строю"
+
+msgid "rewardsView/subTitle/Y11"
+msgstr "Награда за 11 лет в строю"
+
+msgid "rewardsView/subTitle/Y2"
+msgstr "Награда за 2 года в строю"
+
+msgid "rewardsView/subTitle/Y3"
+msgstr "Награда за 3 года в строю"
+
+msgid "rewardsView/subTitle/Y4"
+msgstr "Награда за 4 года в строю"
+
+msgid "rewardsView/subTitle/Y5"
+msgstr "Награда за 5 лет в строю"
+
+msgid "rewardsView/subTitle/Y6"
+msgstr "Награда за 6 лет в строю"
+
+msgid "rewardsView/subTitle/Y7"
+msgstr "Награда за 7 лет в строю"
+
+msgid "rewardsView/subTitle/Y8"
+msgstr "Награда за 8 лет в строю"
+
+msgid "rewardsView/subTitle/Y9"
+msgstr "Награда за 9 лет в строю"
+
+msgid "rewardsView/subTitle/otherRewards"
+msgstr "Также начислено:"
+
+msgid "rewardsView/title"
+msgstr "Поздравляем!"
+
+msgid "specialItem/body"
+msgstr ""
+"Выдаются за боевые заслуги. После закрытия Магазина оставшиеся жетоны будут "
+"обнулены."
+
+msgid "specialItem/header"
+msgstr "%(count)s шт. жетонов за выслугу лет"
+
+msgid "tooltip/restrictedMode"
+msgstr "Операция временно недоступна. Попробуйте позже."
