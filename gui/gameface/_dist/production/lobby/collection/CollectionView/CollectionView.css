@@ -189,13 +189,12 @@
 }
 
 .App_base_e6 {
-    opacity: 0;
-    animation-name: App_fadeIn_dd;
-    animation-duration: .4s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-    animation-delay: .4s;
-    animation-iteration-count: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.App_content_de {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,14 +202,19 @@
     height: 100%;
     color: #fff;
     position: relative;
-    z-index: 3;
 }
 
 .App_close_a9 {
+    opacity: 0;
+    animation-name: App_fadeIn_dd;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: .4s;
+    animation-iteration-count: 1;
     position: absolute;
     top: 67rem;
     left: 40rem;
-    z-index: 2;
 }
 
 .App_animationBg_17 {
@@ -225,7 +229,6 @@
     height: 100%;
     background-color: #111;
     position: absolute;
-    z-index: -1;
 }
 
 @keyframes CollectionLayout_slideUp_d7 {
@@ -285,17 +288,17 @@
 .CollectionLayout_base_e4 {
     opacity: 0;
     animation-name: CollectionLayout_fadeIn_bd;
-    animation-duration: .4s;
+    animation-duration: .3s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
-    animation-delay: .4s;
+    animation-delay: .3s;
     animation-iteration-count: 1;
     width: 100%;
     height: 100%;
     position: relative;
 }
 
-.CollectionLayout_bg_53 {
+.CollectionLayout_base__firstAnimation_8d {
     opacity: 0;
     animation-name: CollectionLayout_fadeIn_bd;
     animation-duration: .4s;
@@ -303,6 +306,9 @@
     animation-timing-function: ease-in;
     animation-delay: .4s;
     animation-iteration-count: 1;
+    }
+
+.CollectionLayout_bg_53 {
     width: 100%;
     height: 100%;
     background: no-repeat center / 1264rem 736rem;
@@ -844,6 +850,11 @@
     position: absolute;
     top: -5rem;
     left: 25rem;
+}
+
+.PageCounter_counter_a7 {
+    min-width: 9rem;
+    height: 9rem;
 }
 
 .PageCounter_counterText_d1 {
@@ -1847,7 +1858,68 @@
             height: 6rem;
         }
 
+@keyframes Header_slideUp_61 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Header_fadeIn_c6 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Header_raysAppearance_8d {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .2;
+    }
+}
+
+@keyframes Header_rotate_9c {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes Header_slideUpWithScale_d8 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2) translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
 .Header_base_b2 {
+    opacity: 0;
+    animation-name: Header_fadeIn_c6;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: .4s;
+    animation-iteration-count: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1925,4 +1997,12 @@
 .Header_base__ultraSize_3d .Header_seasonText_1d {
         padding-top: 10rem;
     }
+
+.Header_tabs_b6 {
+    margin-top: 4rem;
+}
+
+.mediaMedium .Header_tabs_b6 {
+        margin-top: 9rem;
+}
 

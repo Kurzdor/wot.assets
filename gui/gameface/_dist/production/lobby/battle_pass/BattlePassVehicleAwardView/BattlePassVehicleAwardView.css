@@ -1011,7 +1011,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     align-items: center;
     height: 100%;
     padding: 50rem 0;
-    background: url('R.images.gui.maps.icons.battlePass.backgrounds.common') no-repeat center / cover;
+    background: no-repeat center / cover;
     position: relative;
 }
 
@@ -1019,22 +1019,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         padding-top: 100rem;
         padding-bottom: 80rem;
 }
-
-.App_base__chapter101_95 {
-            background-image: url('R.images.gui.maps.icons.battlePass.backgrounds.chapter101');
-        }
-
-.App_base__chapter102_6f {
-            background-image: url('R.images.gui.maps.icons.battlePass.backgrounds.chapter102');
-        }
-
-.App_base__chapter103_7a {
-            background-image: url('R.images.gui.maps.icons.battlePass.backgrounds.chapter103');
-        }
-
-.App_base__chapter74_0e {
-        background-image: url('R.images.gui.maps.icons.battlePass.backgrounds.chapter74');
-    }
 
 .App_close_86 {
     position: absolute;

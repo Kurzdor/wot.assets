@@ -1,5 +1,5 @@
 .ChapterBackground_base_fa {
-    background: url('R.images.gui.maps.icons.battlePass.backgrounds.common') no-repeat center / cover;
+    background: no-repeat center / cover;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -9,19 +9,8 @@
     z-index: 0;
     transition: opacity .2s step-end;
 }
-        .ChapterBackground_base__chapter101_c8 {
-            background-image: url('R.images.gui.maps.icons.battlePass.backgrounds.chapter101');
-        }
-        .ChapterBackground_base__chapter102_40 {
-            background-image: url('R.images.gui.maps.icons.battlePass.backgrounds.chapter102');
-        }
-        .ChapterBackground_base__chapter103_3b {
-            background-image: url('R.images.gui.maps.icons.battlePass.backgrounds.chapter103');
-        }
-        .ChapterBackground_base__chapter74_71 {
-        background-image: url('R.images.gui.maps.icons.battlePass.backgrounds.chapter74');
-    }
-        .ChapterBackground_base__current_7a {
+
+    .ChapterBackground_base__current_7a {
         opacity: 1;
         z-index: 1;
         transition: opacity .2s cubic-bezier(.37, 0, .63, 1);

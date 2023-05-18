@@ -1,0 +1,87 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem; /* border offset*/
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.TooltipDecorator_decoratorContent_de {
+    background-color: #000;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Content_base_17 {
+    line-height: normal;
+}
+.Content_separator_9c {
+    width: 283rem;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Devider_points') 50% / contain no-repeat;
+}
+.Content_rewards_bb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 403rem;
+    height: 154rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Ribbon_large') bottom / cover no-repeat;
+    color: #c9c9b6;
+    font-size: 14rem;
+}
+.Content_base_17 {
+    width: 372rem;
+    padding: 16rem 17rem 18rem 25rem;
+}
+.Content_title_01 {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 7rem;
+    line-height: 20rem;
+}
+.Content_text_bc {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 8rem;
+    line-height: 18rem;
+}
+.Content_currency_1a {
+    color: #FFC363;
+}
+.Content_icon_eb {
+    width: 16rem;
+    height: 16rem;
+    margin: 2rem -5rem 0;
+    background: url('R.images.gui.maps.icons.library.GoldIcon_2') no-repeat center / contain;
+    position: relative;
+}
+.Content_duration_9f {
+    color: #E9E2BF;
+}
+.Content_separator_9c {
+    width: 372rem;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Devider_points') 50% / contain no-repeat;
+}
+.Content_description_b6 {
+    margin-top: 8rem;
+    color: #8C8C7E;
+}
+.Content_highlight_bd {
+    color: #FFDD99;
+}
+

@@ -5,56 +5,53 @@
     padding-top: 30rem;
 }
 
+.Illustration_chapter_6b {
+    width: 234rem;
+    height: 313rem;
+    background: no-repeat center / contain;
+    position: relative;
+    z-index: 1;
+}
+
+.mediaMedium .Illustration_chapter_6b {
+        width: 334rem;
+        height: 444rem;
+}
+
+.mediaLarge .Illustration_chapter_6b {
+        width: 414rem;
+        height: 550rem;
+}
+
+.mediaExtraLarge .Illustration_chapter_6b {
+        width: 608rem;
+        height: 808rem;
+}
+
 .Illustration_tank_f9 {
-    width: 100%;
-    height: 100%;
+    width: 242rem;
+    height: 159rem;
     background: no-repeat center / contain;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-
-.Illustration_illustrationWrapper_89 {
-    width: 380rem;
-    height: 400rem;
-    position: relative;
-}
-
-.mediaLarge .Illustration_illustrationWrapper_89 {
-        width: 500rem;
-        height: 524rem;
-}
-
-.Illustration_illustrationWrapper__prevChapter_bf {
-        width: 380rem;
-        height: 400rem;
-        margin-right: 21rem;
-    }
-
-.Illustration_shieldWrapper_a5 {
-    position: absolute;
-    top: 10%;
+    bottom: 0;
     left: 50%;
-    z-index: 1;
-    transform: translate(-50%, -50%);
+    z-index: 2;
+    transform: translateX(-50%);
 }
 
-.Illustration_arrow_13 {
-    width: 261rem;
-    height: 201rem;
-    background: url('R.images.gui.maps.icons.battlePass.chapter_choice.confirm.arrow') no-repeat center / contain;
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    z-index: 3;
-    transform: translate(50%, -50%);
+.mediaMedium .Illustration_tank_f9 {
+        width: 376rem;
+        height: 248rem;
 }
 
-.mediaLarge .Illustration_arrow_13 {
-        width: 384rem;
-        height: 296rem;
-        left: 25%;
+.mediaLarge .Illustration_tank_f9 {
+        width: 452rem;
+        height: 298rem;
+}
+
+.mediaExtraLarge .Illustration_tank_f9 {
+        width: 608rem;
+        height: 400rem;
 }
 
 .App_base_92 {
@@ -65,20 +62,41 @@
 
 .App_title_95 {
     color: #F2F2F7;
-    font-size: 36rem;
+    font-size: 24rem;
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.2;
     width: 800rem;
     margin-bottom: 19rem;
     text-align: center;
 }
 
+.mediaMedium .App_title_95 {
+        color: #F2F2F7;
+        font-size: 28rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.mediaLarge .App_title_95 {
+        color: #F2F2F7;
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
 .App_subTitle_5f {
-    color: #C9C9B6;
-    font-size: 16rem;
+    color: #E9E2BF;
+    font-size: 14rem;
     font-weight: 400;
-    line-height: 1.25;
+    line-height: 1.3;
     width: 570rem;
     text-align: center;
+}
+
+.mediaMedium .App_subTitle_5f {
+        color: #E9E2BF;
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
 }
 

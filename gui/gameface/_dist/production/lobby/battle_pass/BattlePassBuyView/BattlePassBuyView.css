@@ -222,7 +222,7 @@ body {
     }
 
 .ChapterBackground_base_fa {
-    background: url('R.images.gui.maps.icons.battlePass.backgrounds.common') no-repeat center / cover;
+    background: no-repeat center / cover;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -232,19 +232,8 @@ body {
     z-index: 0;
     transition: opacity .2s step-end;
 }
-        .ChapterBackground_base__chapter101_c8 {
-            background-image: url('R.images.gui.maps.icons.battlePass.backgrounds.chapter101');
-        }
-        .ChapterBackground_base__chapter102_40 {
-            background-image: url('R.images.gui.maps.icons.battlePass.backgrounds.chapter102');
-        }
-        .ChapterBackground_base__chapter103_3b {
-            background-image: url('R.images.gui.maps.icons.battlePass.backgrounds.chapter103');
-        }
-        .ChapterBackground_base__chapter74_71 {
-        background-image: url('R.images.gui.maps.icons.battlePass.backgrounds.chapter74');
-    }
-        .ChapterBackground_base__current_7a {
+
+    .ChapterBackground_base__current_7a {
         opacity: 1;
         z-index: 1;
         transition: opacity .2s cubic-bezier(.37, 0, .63, 1);
@@ -274,6 +263,16 @@ body {
     bottom: 0;
     left: 0;
     z-index: -1;
+}
+
+.BattlePassBuyViewContent_blackout_3d {
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .BattlePassBuyViewContent_back_d2 {
@@ -604,46 +603,17 @@ body {
 }
 .Illustration_img_44 {
     width: 100%;
-    height: 100%;
-    background: rgba(0,0,0, .5) no-repeat top / contain;
+    height: 298rem;
+    background: no-repeat top / contain;
+    position: relative;
     transform: scale(1);
     transition: transform .2s cubic-bezier(.37, 0, .63, 1);
 }
-.Illustration_img__chapter101_02 {
-            background-image: url('R.images.gui.maps.icons.battlePass.buy.illustrations.chapter101_Small');
-        }
-.mediaMedium .Illustration_img__chapter101_02 {
-                background-image: url('R.images.gui.maps.icons.battlePass.buy.illustrations.chapter101_Medium');
+.mediaMedium .Illustration_img_44 {
+        height: 388rem;
 }
-.mediaLarge .Illustration_img__chapter101_02 {
-                background-image: url('R.images.gui.maps.icons.battlePass.buy.illustrations.chapter101_Large');
-}
-.Illustration_img__chapter102_09 {
-            background-image: url('R.images.gui.maps.icons.battlePass.buy.illustrations.chapter102_Small');
-        }
-.mediaMedium .Illustration_img__chapter102_09 {
-                background-image: url('R.images.gui.maps.icons.battlePass.buy.illustrations.chapter102_Medium');
-}
-.mediaLarge .Illustration_img__chapter102_09 {
-                background-image: url('R.images.gui.maps.icons.battlePass.buy.illustrations.chapter102_Large');
-}
-.Illustration_img__chapter103_90 {
-            background-image: url('R.images.gui.maps.icons.battlePass.buy.illustrations.chapter103_Small');
-        }
-.mediaMedium .Illustration_img__chapter103_90 {
-                background-image: url('R.images.gui.maps.icons.battlePass.buy.illustrations.chapter103_Medium');
-}
-.mediaLarge .Illustration_img__chapter103_90 {
-                background-image: url('R.images.gui.maps.icons.battlePass.buy.illustrations.chapter103_Large');
-}
-.Illustration_img__chapter74_07 {
-        background-image: url('R.images.gui.maps.icons.battlePass.buy.illustrations.chapter74_Small');
-    }
-.mediaMedium .Illustration_img__chapter74_07 {
-            background-image: url('R.images.gui.maps.icons.battlePass.buy.illustrations.chapter74_Medium');
-}
-.mediaLarge .Illustration_img__chapter74_07 {
-            background-image: url('R.images.gui.maps.icons.battlePass.buy.illustrations.chapter74_Large');
+.mediaLarge .Illustration_img_44 {
+        height: 440rem;
 }
 .Illustration_base__hover_70 .Illustration_img_44 {
         transform: scale(1.05);
@@ -651,6 +621,14 @@ body {
 .Illustration_base__disabled_a8 .Illustration_img_44 {
         opacity: .5;
     }
+.Illustration_vignette_e0 {
+    background: linear-gradient(348deg, rgba(17, 17, 17, 1) 0%, rgba(17, 17, 17, 1) 16%, rgba(17, 17, 17, .9) 22%, rgba(255, 255, 255, 0) 65%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -1rem;
+    left: 0;
+}
 .Illustration_asset_e2 {
     width: 100%;
     height: 100%;
@@ -1165,11 +1143,8 @@ body {
 .Logo_logoIcon_60 {
     width: 100%;
     height: 100%;
-    background: url('R.images.gui.maps.icons.battlePass.buy.battle_pass_small') no-repeat center / contain;
+    background: no-repeat center / contain;
     position: relative;
-}
-.mediaMedium .Logo_logoIcon_60 {
-        background-image: url('R.images.gui.maps.icons.battlePass.buy.battle_pass');
 }
 .Logo_base__notAvailable_23 .Logo_logoIcon_60 {
         filter: brightness(.5);
@@ -1323,17 +1298,9 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 2rem;
-    background: url('R.images.gui.maps.icons.battlePass.buy.illustrations.extra.shop_offer_Small') center / cover;
+    background: url('R.images.gui.maps.icons.battlePass.buy.illustrations.shop_offer') center / cover;
     transform: scale(1);
     transition: transform .2s cubic-bezier(.37, 0, .63, 1);
-}
-
-.mediaMedium .ShopOfferCard_illustration_0c {
-        background-image: url('R.images.gui.maps.icons.battlePass.buy.illustrations.extra.shop_offer_Medium');
-}
-
-.mediaLarge .ShopOfferCard_illustration_0c {
-        background-image: url('R.images.gui.maps.icons.battlePass.buy.illustrations.extra.shop_offer_Large');
 }
 
 .ShopOfferCard_base_3a:hover .ShopOfferCard_illustration_0c {

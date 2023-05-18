@@ -587,22 +587,11 @@ body {
 .AdditionalRewards_reward_18 {
     margin: 0 20rem;
     position: relative;
-    transition: .3s cubic-bezier(.07, .82, .17, 1) opacity, .3s cubic-bezier(.07, .82, .17, 1) transform;
 }
 
 .mediaLarge .AdditionalRewards_reward_18 {
         margin: 0 15rem;
 }
-
-.AdditionalRewards_reward__entering_cc {
-        opacity: 0;
-        transform: translateY(20rem);
-    }
-
-.AdditionalRewards_reward__entered_82 {
-        opacity: 1;
-        transform: translateY(0);
-    }
 
 .AdditionalRewards_rewardsList_52 {
     display: flex;
@@ -1091,6 +1080,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         font-size: 24rem;
         font-weight: 400;
         line-height: 1.2;
+        max-width: 900rem;
     }
 
 .Footer_buttonContainer_64 {
@@ -1346,6 +1336,64 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         color: #8C8C7E;
     }
 
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Title_base_24 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Title_title_20 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    line-height: 1.1;
+}
+
+.mediaMedium .Title_title_20 {
+        font-size: 18rem;
+}
+
+.Title_base__wide_bd .Title_title_20 {
+        color: #E9E2BF;
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+.mediaMedium .Title_base__wide_bd .Title_title_20 {
+            font-size: 22rem;
+}
+
+.Title_subtitle_47 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.mediaMedium .Title_subtitle_47 {
+        font-size: 18rem;
+}
+
+.Title_base__wide_bd .Title_subtitle_47 {
+        color: #E9E2BF;
+        font-size: 18rem;
+        font-weight: 400;
+        line-height: 1.25;
+    }
+
+.mediaMedium .Title_base__wide_bd .Title_subtitle_47 {
+            font-size: 22rem;
+}
+
 /* colors*/
 
 /* buttons*/
@@ -1467,60 +1515,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-timing-function: cubic-bezier(.07, .82, .17, 1);
     animation-delay: 1.4s;
     animation-iteration-count: 1;
-    color: #E9E2BF;
-    font-size: 14rem;
-    font-weight: 700;
-    line-height: 1.15;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    line-height: 1.1;
     position: relative;
     z-index: 4;
 }
 
 .mediaSmall .Reward_title_3d {
         width: 110%;
-}
-
-.mediaMedium .Reward_title_3d {
-        font-size: 18rem;
-}
-
-.Reward_base__wide_fa .Reward_title_3d {
-        color: #E9E2BF;
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
-    }
-
-.mediaMedium .Reward_base__wide_fa .Reward_title_3d {
-            font-size: 22rem;
-}
-
-.Reward_collectionText_ad {
-    color: #E9E2BF;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
-
-.mediaMedium .Reward_collectionText_ad {
-        font-size: 18rem;
-}
-
-.Reward_base__wide_fa .Reward_collectionText_ad {
-        color: #E9E2BF;
-        font-size: 18rem;
-        font-weight: 400;
-        line-height: 1.25;
-    }
-
-.mediaMedium .Reward_base__wide_fa .Reward_collectionText_ad {
-            font-size: 22rem;
 }
 
 .Reward_count_22 {
@@ -1543,11 +1544,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .mediaMedium .Reward_count_22 {
         right: 10%;
-}
-
-.Reward_tankName_b6 {
-    color: #E9E2BF;
-    line-height: .9;
 }
 
 .Rewards_base_05 {
@@ -1847,25 +1843,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     width: 100%;
     height: 100%;
-    background: #000 url('R.images.gui.maps.icons.battlePass.backgrounds.chapter101') no-repeat center / cover;
+    background: #000 no-repeat center / cover;
     position: relative;
 }
-
-.RewardsApp_base__chapter101_5a {
-        background-image: url('R.images.gui.maps.icons.battlePass.backgrounds.chapter101');
-    }
-
-.RewardsApp_base__chapter102_a7 {
-        background-image: url('R.images.gui.maps.icons.battlePass.backgrounds.chapter102');
-    }
-
-.RewardsApp_base__chapter103_cc {
-        background-image: url('R.images.gui.maps.icons.battlePass.backgrounds.chapter103');
-    }
-
-.RewardsApp_base__chapter74_cc {
-        background-image: url('R.images.gui.maps.icons.battlePass.backgrounds.chapter74');
-    }
 
 .RewardsApp_saturate_be {
     background: linear-gradient(0deg, rgba(255, 255, 255, .4), rgba(255, 255, 255, .4));
@@ -1885,6 +1865,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     bottom: 0;
     left: 0;
 }
+
+.RewardsApp_overlay__common_ff {
+        background-color: rgba(17,17,17, .5);
+    }
 
 .RewardsApp_main_72 {
     opacity: 0;

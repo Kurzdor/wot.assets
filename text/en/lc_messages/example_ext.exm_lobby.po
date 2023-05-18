@@ -11,13 +11,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "buy/server_error"
-msgstr "Server Error"
+msgstr "Ошибка сервера"
 
 msgid "msg/descriptor"
-msgstr "This resource is located in the example_ext extension."
+msgstr "Этот ресурс находится в экстеншене example_ext."
 
 msgid "msg/info"
-msgstr "This resource is located in the example_ext extension."
+msgstr "Этот ресурс находится в экстеншене example_ext."
 
 msgid "msg/title"
-msgstr "This resource is located in the example_ext extension."
+msgstr "Этот ресурс находится в экстеншене example_ext."

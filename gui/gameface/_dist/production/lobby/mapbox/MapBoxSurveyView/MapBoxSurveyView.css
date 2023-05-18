@@ -864,7 +864,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Survey_base__first_ac .Survey_content_c5[lang=ja],
-        .Survey_base__first_ac .Survey_content_c5[lang=th] {
+        .Survey_base__first_ac .Survey_content_c5[lang=th]{
             margin-top: -30rem;
         }
 
@@ -904,8 +904,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 36rem;
     font-weight: 700;
     line-height: 1.1;
-    width: 930rem;
     margin-top: -22rem;
+    width: 930rem;
     text-align: center;
 }
 
@@ -914,7 +914,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         font-size: 56rem;
         font-weight: 700;
         line-height: 1.1;
-        width: 1610rem;
+        width:1610rem;
 }
 
 .ToggleButton_base_2c {

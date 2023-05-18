@@ -12,21 +12,22 @@ msgstr ""
 
 msgid "invites/note/change_and_leave/PREBATTLE_EXAMPLE_EXT_BATTLE"
 msgstr ""
-"You will be automatically removed from the tactical unit and transferred to "
-"the %(host)s server."
+"Вы будете автоматически исключены из состава формирования и перемещены на "
+"сервер %(host)s."
 
 msgid "invites/note/change_and_leave/QUEUE_EXAMPLE_EXT_BATTLE"
 msgstr ""
-"You will exit EXAMPLE_EXT_BATTLE and be transferred to the %(host)s server."
+"Вы покинете режим «EXAMPLE_EXT_BATTLE» и будете перемещены на сервер "
+"%(host)s."
 
 msgid "invites/note/leave/PREBATTLE_EXAMPLE_EXT_BATTLE"
-msgstr "You will be automatically removed from the tactical unit."
+msgstr "Вы будете автоматически исключены из состава формирования."
 
 msgid "invites/note/leave/QUEUE_EXAMPLE_EXT_BATTLE"
-msgstr "You will exit EXAMPLE_EXT_BATTLE."
+msgstr "Вы покинете режим «EXAMPLE_EXT_BATTLE»."
 
 msgid "invites/prebattle/alreadyJoined/EXAMPLE_EXT_BATTLE"
-msgstr "You have already joined the Platoon."
+msgstr "Вы уже присоединились к этому взводу."
 
 msgid "invites/text/EXAMPLE_EXT_BATTLE"
-msgstr "Invitation to Join the EXAMPLE_EXT_BATTLE Platoon"
+msgstr "Приглашение войти в состав взвода события «EXAMPLE_EXT_BATTLE»"

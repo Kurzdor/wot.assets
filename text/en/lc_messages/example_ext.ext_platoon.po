@@ -11,16 +11,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "headerButton/tooltips/squad/body"
-msgstr "Create a tactical unit of 2–5 players to cooperate in example_ext."
+msgstr ""
+"Создание формирования из 2–5 игроков для совместной игры в событии "
+"«example_ext»."
 
 msgid "headerButton/tooltips/squad/header"
-msgstr "example_ext Platoon"
+msgstr "Взвод события «example_ext»"
 
 msgid "members/header/event"
 msgstr ": example_ext events"
 
 msgid "members/header/tooltip/event/body"
-msgstr "The Platoon should comprise 5 vehicles."
+msgstr "Взвод должен состоять из 5 машин."
 
 msgid "members/header/tooltip/event/header"
-msgstr "Rules for Creating a Platoon"
+msgstr "Правила формирования взвода"

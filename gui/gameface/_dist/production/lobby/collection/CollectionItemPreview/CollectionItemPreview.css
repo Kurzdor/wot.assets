@@ -133,16 +133,38 @@
 .App_base_93 {
     width: 100%;
     height: 100%;
+    overflow: hidden;
     position: relative;
-    z-index: 0;
 }
 
-.App_bg_fd {
+.App_animationMain_5a {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: App_fadeIn_9e .4s ease-in .4s 1 forwards;
+}
+
+.App_mainBg_01 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / cover;
+    filter: blur(3px);
+    position: absolute;
+}
+
+.App_darkBg_7f {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .7);
+    pointer-events: none;
+}
+
+.App_animationBg_a3 {
+    width: 100%;
+    height: 100%;
+    background-color: #111;
     position: absolute;
-    z-index: -1;
+    animation: App_fadeIn_9e .3s ease-in 0s 1 forwards;
     pointer-events: none;
 }
 
@@ -151,6 +173,16 @@
     top: 42rem;
     right: 42rem;
     z-index: 1;
+}
+
+@keyframes App_fadeIn_9e {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .FormatText_base_d0 {
@@ -362,21 +394,6 @@
     flex: 1;
 }
 
-.Default_text_6f {
-    color: #8C8C7E;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    padding-bottom: 20rem;
-}
-
-.Default_scrollBarPosition_48 {
-    max-height: 85%;
-    position: relative;
-    top: 15rem;
-    right: -30rem;
-}
-
 .ElementDescription_base_af {
     width: 620rem;
     height: 200rem;
@@ -396,16 +413,102 @@
             margin-top: 20rem;
 }
 
-.Photo_base_16 {
-    position: relative;
-}
-
-.Photo_text_68 {
+.ElementDescription_text_cb {
     color: #8C8C7E;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
     padding-bottom: 20rem;
+}
+
+.ElementDescription_scrollBarPosition_d7 {
+    max-height: 85%;
+    position: relative;
+    top: 15rem;
+    right: -30rem;
+}
+
+.LoupeButton_base_7c {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.LoupeButton_icon_59 {
+    width: 100rem;
+    height: 100rem;
+    background: url('R.images.gui.maps.icons.collections.overlays.loupe') center / contain no-repeat;
+    position: absolute;
+    bottom: -50rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mediaLarge .LoupeButton_icon_59 {
+        bottom: -40rem;
+}
+
+.LoupeButton_iconHover_0e {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.collections.overlays.loupe_hover') center / contain no-repeat;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.LoupeButton_base_7c:hover .LoupeButton_iconHover_0e {
+        opacity: 1;
+    }
+
+.LoupeButton_base_7c:active .LoupeButton_iconHover_0e {
+        opacity: .5;
+    }
+
+.LoupeButton_hoverText_e7 {
+    color: #FFDD99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+    opacity: 0;
+    position: absolute;
+    bottom: -35rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity .2s ease-in-out;
+}
+
+.mediaLarge .LoupeButton_hoverText_e7 {
+        bottom: -28rem;
+}
+
+.LoupeButton_base_7c:hover .LoupeButton_hoverText_e7 {
+        opacity: 1;
+    }
+
+.LoupeButton_base_7c:active .LoupeButton_hoverText_e7 {
+        opacity: .5;
+    }
+
+.VehicleInfo_base_24 {
+    display: flex;
+}
+
+.VehicleInfo_type_e3 {
+    margin: 0 -10rem;
+    position: relative;
+    top: -15rem;
+}
+
+.VehicleInfo_type_e3[lang=ko] {
+        transform: translateY(-2rem);
+    }
+
+.VehicleInfo_ico_ca {
+    width: 65rem;
+    height: 65rem;
+    background: no-repeat center / contain;
 }
 
 .CollectionElement_base_76 {
@@ -415,13 +518,15 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .CollectionElement_image_6f {
-    width: 450rem;
+    width: 400rem;
     height: 300rem;
     margin-bottom: 50rem;
     background: no-repeat center / contain;
+    position: relative;
 }
 
 .mediaLarge .CollectionElement_image_6f {
@@ -434,13 +539,22 @@
         margin-bottom: 50rem;
 }
 
-.CollectionElement_base__photo_f0 .CollectionElement_image_6f {
-        width: 600rem;
-        height: 450rem;
-        margin-bottom: 50rem;
+.CollectionElement_base__style3d_98 .CollectionElement_image_6f,
+    .CollectionElement_base__style2d_4a .CollectionElement_image_6f {
+        filter: brightness(.87);
+        transition: filter .3s ease-in;
     }
 
-.mediaExtraLarge .CollectionElement_base__photo_f0 .CollectionElement_image_6f {
+.CollectionElement_base__style3d_98 .CollectionElement_image_6f:hover, .CollectionElement_base__style2d_4a .CollectionElement_image_6f:hover {
+            filter: brightness(1);
+        }
+
+.mediaExtraLarge .CollectionElement_base__style3d_98 .CollectionElement_image_6f, .mediaExtraLarge .CollectionElement_base__style2d_4a .CollectionElement_image_6f {
+            width: 1000rem;
+            height: 680rem;
+}
+
+.mediaExtraLarge .CollectionElement_base__photo_f0 .CollectionElement_image_6f, .mediaExtraLarge .CollectionElement_base__note_99 .CollectionElement_image_6f {
             width: 1000rem;
             height: 680rem;
 }
@@ -450,6 +564,14 @@
     font-size: 28rem;
     font-weight: 700;
     line-height: 1.1;
+}
+
+.CollectionElement_title__style3d_b3 {
+        margin-bottom: -30rem;
+    }
+
+.CollectionElement_vehicleString_98 {
+    margin-left: 5rem;
 }
 
 .CollectionElement_type_84 {

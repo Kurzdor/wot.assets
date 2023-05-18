@@ -1,0 +1,39 @@
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FrontlineConfirmFooterMoneyApp_base_a2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: -4rem 0 -2rem;
+}
+
+    .FrontlineConfirmFooterMoneyApp_base__extended_22 {
+        margin: 0 0 10rem;
+    }
+
+.FrontlineConfirmFooterMoneyApp_label_2b {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    align-items: flex-end;
+    margin-left: 20rem;
+}
+
+.FrontlineConfirmFooterMoneyApp_price_16 {
+    color: #CBAC77;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 -1rem 4rem;
+}
+
+.FrontlineConfirmFooterMoneyApp_icon_7e {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.epicBattles.awards.c_24x24.abilityToken') no-repeat center / cover;
+}
+

@@ -717,118 +717,23 @@
 .EmblemLabels_label__disabled_b6 {
         display: none;
     }
-.EmblemLabels_iconChapterCompleted_cc {
+.EmblemLabels_icon_40 {
     width: 70rem;
     height: 70rem;
     margin-top: -7rem;
     background: no-repeat center / contain;
 }
-.EmblemLabels_iconChapterCompleted__small_56 {
+.EmblemLabels_icon__small_f3 {
         width: 50rem;
         height: 50rem;
         margin-top: -5rem;
-        background: no-repeat center / contain;
     }
-.EmblemLabels_iconChapterCompleted__micro_37 {
+.EmblemLabels_icon__micro_cf {
         width: 30rem;
         height: 30rem;
         margin-top: 3.5rem;
-        background: no-repeat center / contain;
     }
-.EmblemLabels_iconChapterCompleted__chapterNotChosen_af {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.not_chosen');
-    }
-.EmblemLabels_iconChapterCompleted__chapter101_98 {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_101_big');
-        }
-.EmblemLabels_iconChapterCompleted__chapter101Small_37 {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_101');
-        }
-.EmblemLabels_iconChapterCompleted__chapter101Micro_d4 {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_101_micro');
-        }
-.EmblemLabels_iconChapterCompleted__chapter101BP_1d {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_101_big_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter101SmallBP_5a {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_101_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter101MicroBP_5d {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_101_micro_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter102_33 {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_102_big');
-        }
-.EmblemLabels_iconChapterCompleted__chapter102Small_6a {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_102');
-        }
-.EmblemLabels_iconChapterCompleted__chapter102Micro_4f {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_102_micro');
-        }
-.EmblemLabels_iconChapterCompleted__chapter102BP_78 {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_102_big_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter102SmallBP_70 {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_102_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter102MicroBP_7e {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_102_micro_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter103_38 {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_103_big');
-        }
-.EmblemLabels_iconChapterCompleted__chapter103Small_5b {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_103');
-        }
-.EmblemLabels_iconChapterCompleted__chapter103Micro_8a {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_103_micro');
-        }
-.EmblemLabels_iconChapterCompleted__chapter103BP_19 {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_103_big_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter103SmallBP_8b {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_103_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter103MicroBP_4a {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_103_micro_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter74_1e {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_74_big');
-    }
-.EmblemLabels_iconChapterCompleted__chapter74Small_dc {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_74');
-    }
-.EmblemLabels_iconChapterCompleted__chapter74Micro_12 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_74_micro');
-    }
-.EmblemLabels_iconChapterCompleted__chapter74BP_bb {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_74_big_BP');
-    }
-.EmblemLabels_iconChapterCompleted__chapter74SmallBP_e7 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_74_BP');
-    }
-.EmblemLabels_iconChapterCompleted__chapter74MicroBP_3c {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_74_micro_BP');
-    }
-.EmblemLabels_iconChapterCompleted__allFree_08 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.tank');
-    }
-.EmblemLabels_iconChapterCompleted__allFreeSmall_d1 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.tank_silver_small');
-    }
-.EmblemLabels_iconChapterCompleted__allFreeMicro_02 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.tank_micro');
-    }
-.EmblemLabels_iconChapterCompleted__allGolden_f0 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.tank_BP');
-    }
-.EmblemLabels_iconChapterCompleted__allGoldenSmall_16 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.tank_small');
-    }
-.EmblemLabels_iconChapterCompleted__allGoldenMicro_5c {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.tank_micro_BP');
-    }
-.EmblemLabels_iconChapterCompleted__animated_1d {
+.EmblemLabels_icon__animated_09 {
     animation-name: EmblemLabels_showIcon_d3;
     animation-duration: .5s;
     animation-fill-mode: forwards;
@@ -837,8 +742,8 @@
     animation-iteration-count: 1;
         opacity: 0;
     }
-.EmblemLabels_iconChapterCompleted__animatedSmall_a5,
-    .EmblemLabels_iconChapterCompleted__animatedMicro_8f {
+.EmblemLabels_icon__animatedSmall_e4,
+    .EmblemLabels_icon__animatedMicro_10 {
     animation-name: EmblemLabels_showIconSmall_cb;
     animation-duration: .5s;
     animation-fill-mode: forwards;

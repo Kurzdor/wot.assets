@@ -697,7 +697,7 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    background: url('R.images.gui.maps.icons.battlePass.backgrounds.chapter1') no-repeat center / cover;
+    background: no-repeat center / cover;
     position: relative;
 }
 .BattlePassProgressionsViewContent_header_76 {
@@ -1861,118 +1861,23 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .EmblemLabels_label__disabled_b6 {
         display: none;
     }
-.EmblemLabels_iconChapterCompleted_cc {
+.EmblemLabels_icon_40 {
     width: 70rem;
     height: 70rem;
     margin-top: -7rem;
     background: no-repeat center / contain;
 }
-.EmblemLabels_iconChapterCompleted__small_56 {
+.EmblemLabels_icon__small_f3 {
         width: 50rem;
         height: 50rem;
         margin-top: -5rem;
-        background: no-repeat center / contain;
     }
-.EmblemLabels_iconChapterCompleted__micro_37 {
+.EmblemLabels_icon__micro_cf {
         width: 30rem;
         height: 30rem;
         margin-top: 3.5rem;
-        background: no-repeat center / contain;
     }
-.EmblemLabels_iconChapterCompleted__chapterNotChosen_af {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.not_chosen');
-    }
-.EmblemLabels_iconChapterCompleted__chapter101_98 {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_101_big');
-        }
-.EmblemLabels_iconChapterCompleted__chapter101Small_37 {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_101');
-        }
-.EmblemLabels_iconChapterCompleted__chapter101Micro_d4 {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_101_micro');
-        }
-.EmblemLabels_iconChapterCompleted__chapter101BP_1d {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_101_big_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter101SmallBP_5a {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_101_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter101MicroBP_5d {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_101_micro_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter102_33 {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_102_big');
-        }
-.EmblemLabels_iconChapterCompleted__chapter102Small_6a {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_102');
-        }
-.EmblemLabels_iconChapterCompleted__chapter102Micro_4f {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_102_micro');
-        }
-.EmblemLabels_iconChapterCompleted__chapter102BP_78 {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_102_big_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter102SmallBP_70 {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_102_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter102MicroBP_7e {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_102_micro_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter103_38 {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_103_big');
-        }
-.EmblemLabels_iconChapterCompleted__chapter103Small_5b {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_103');
-        }
-.EmblemLabels_iconChapterCompleted__chapter103Micro_8a {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_103_micro');
-        }
-.EmblemLabels_iconChapterCompleted__chapter103BP_19 {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_103_big_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter103SmallBP_8b {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_103_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter103MicroBP_4a {
-            background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_103_micro_BP');
-        }
-.EmblemLabels_iconChapterCompleted__chapter74_1e {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_74_big');
-    }
-.EmblemLabels_iconChapterCompleted__chapter74Small_dc {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_74');
-    }
-.EmblemLabels_iconChapterCompleted__chapter74Micro_12 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_74_micro');
-    }
-.EmblemLabels_iconChapterCompleted__chapter74BP_bb {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_74_big_BP');
-    }
-.EmblemLabels_iconChapterCompleted__chapter74SmallBP_e7 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_74_BP');
-    }
-.EmblemLabels_iconChapterCompleted__chapter74MicroBP_3c {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.icon_logo_chapter_74_micro_BP');
-    }
-.EmblemLabels_iconChapterCompleted__allFree_08 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.tank');
-    }
-.EmblemLabels_iconChapterCompleted__allFreeSmall_d1 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.tank_silver_small');
-    }
-.EmblemLabels_iconChapterCompleted__allFreeMicro_02 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.tank_micro');
-    }
-.EmblemLabels_iconChapterCompleted__allGolden_f0 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.tank_BP');
-    }
-.EmblemLabels_iconChapterCompleted__allGoldenSmall_16 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.tank_small');
-    }
-.EmblemLabels_iconChapterCompleted__allGoldenMicro_5c {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.tank_micro_BP');
-    }
-.EmblemLabels_iconChapterCompleted__animated_1d {
+.EmblemLabels_icon__animated_09 {
     animation-name: EmblemLabels_showIcon_d3;
     animation-duration: .5s;
     animation-fill-mode: forwards;
@@ -1981,8 +1886,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-iteration-count: 1;
         opacity: 0;
     }
-.EmblemLabels_iconChapterCompleted__animatedSmall_a5,
-    .EmblemLabels_iconChapterCompleted__animatedMicro_8f {
+.EmblemLabels_icon__animatedSmall_e4,
+    .EmblemLabels_icon__animatedMicro_10 {
     animation-name: EmblemLabels_showIconSmall_cb;
     animation-duration: .5s;
     animation-fill-mode: forwards;
@@ -2319,6 +2224,44 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .EmblemProgressBar_base__hidden_8b {
         display: none;
     }
+
+.ViewDecorator_base_aa {
+    width: 100%;
+    height: 100%;
+    background: no-repeat 50% / cover;
+}
+.ViewDecorator_container_98 {
+    visibility: hidden;
+}
+.ViewDecorator_container__shown_da {
+        visibility: visible;
+    }
+.ViewDecorator_leftBlock_63 {
+    position: absolute;
+    top: 31rem;
+    left: 15rem;
+    z-index: 1;
+}
+.ViewDecorator_leftBlock__small_6a {
+        top: 11rem;
+        left: 10rem;
+    }
+.ViewDecorator_rightBlock_71 {
+    position: absolute;
+    top: 31rem;
+    right: 16rem;
+    z-index: 1;
+}
+.ViewDecorator_rightBlock__small_ef {
+        top: 11rem;
+        right: 8rem;
+    }
+.ViewDecorator_view_9e {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .Counter_base_9e {
     display: flex;
@@ -3585,27 +3528,38 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Header_chapterWrapper_6c {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 .Header_chapterText_57 {
     color: #F2F2F7;
     font-size: 28rem;
     font-weight: 700;
     line-height: 1.1;
+    padding: 3rem 0;
     line-height: 1;
+    white-space: nowrap;
 }
 .mediaLarge .Header_chapterText_57 {
         font-size: 36rem;
         line-height: 40rem;
 }
+.Header_chapterText__overflow_ce {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
 .Header_chapterStatus_2e {
     color: #FEAB34;
     font-size: 28rem;
     font-weight: 700;
     line-height: 1.1;
+    width: 170rem;
     margin-left: 8rem;
+    padding-left: 10rem;
     line-height: 1;
+    text-align: left;
 }
 .mediaLarge .Header_chapterStatus_2e {
+        width: 210rem;
         font-size: 36rem;
         line-height: 40rem;
 }
@@ -3665,15 +3619,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         margin-right: 20rem;
     }
 .Header_awards_92 {
-    position: absolute;
-    top: 0;
-    right: 0;
+    margin-top: -3rem;
+    margin-right: 0;
+    position: relative;
 }
 .mediaMedium .Header_awards_92 {
-        top: -18rem;
+        margin-top: -18rem;
 }
 .mediaLarge .Header_awards_92 {
-        top: 0;
+        margin-top: 0;
 }
 .Header_flag_3d {
     width: 100rem;
@@ -6260,17 +6214,17 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 /* vertical offset for positioning progression's progressbar at the center of screen */
 .Card_base_5f {
-    width: 140rem;
+    width: var(--small-card-width);
     position: relative;
 }
 .mediaMedium .Card_base_5f {
-        width: 220rem;
+        width: var(--big-card-width);
 }
 .Card_base__inProgress_ad {
-        width: 224rem;
+        width: var(--small-current-card-width);
     }
 .mediaMedium .Card_base__inProgress_ad {
-            width: 340rem;
+            width: var(--big-current-card-width);
 }
 .Card_base__inProgressNonPremium_0c {
         padding-top: 60rem;

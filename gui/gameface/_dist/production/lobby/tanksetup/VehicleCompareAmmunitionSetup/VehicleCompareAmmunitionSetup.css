@@ -74,83 +74,6 @@
     padding-top: 20rem;
 }
 
-.Storage_base_53 {
-    display: flex;
-    align-items: center;
-}
-
-    .Storage_base__reversed_8f {
-        flex-direction: row-reverse;
-    }
-
-.Storage_icon_6a {
-    width: 30rem;
-    height: 30rem;
-    background: url('R.images.gui.maps.icons.library.storage_icon') no-repeat center / contain;
-}
-
-.Storage_count_7a {
-    color: #8C8C7E;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
-
-.Storage_base__reversed_8f .Storage_count_7a {
-        color: #C9C9B6;
-        font-size: 22rem;
-        font-weight: 700;
-        line-height: 1.2;
-        margin-top: -4rem;
-    }
-
-.Storage_count__zero_54 {
-        color: #B70000;
-    }
-
-.Animation_base_ab {
-    display: flex;
-    position: relative;
-}
-
-    .Animation_base__withAnimation_41 {
-        opacity: 0;
-        animation: Animation_action-show_f8 .2s forwards;
-    }
-
-    .Animation_base__enter_1e {
-        animation: Animation_action-show_f8 .2s forwards;
-    }
-
-    .Animation_base__exit_88 {
-        animation: Animation_action-hide_44 .2s forwards;
-        pointer-events: none;
-    }
-
-@keyframes Animation_action-show_f8 {
-    0% {
-        opacity: 0;
-        transform: translateY(10rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes Animation_action-hide_44 {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(10rem);
-    }
-}
-
 .Checkbox_base_36 {
     display: flex;
     align-items: flex-start;
@@ -442,6 +365,54 @@
     }
 }
 
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Animation_base_ab {
+    display: flex;
+    position: relative;
+}
+
+    .Animation_base__withAnimation_41 {
+        opacity: 0;
+        animation: Animation_action-show_f8 .2s forwards;
+    }
+
+    .Animation_base__enter_1e {
+        animation: Animation_action-show_f8 .2s forwards;
+    }
+
+    .Animation_base__exit_88 {
+        animation: Animation_action-hide_44 .2s forwards;
+        pointer-events: none;
+    }
+
+@keyframes Animation_action-show_f8 {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Animation_action-hide_44 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+}
+
 .CButton_base_40 {
     display: flex;
     justify-content: center;
@@ -657,81 +628,1422 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-left: 10rem;
 }
 
-.DealPanel_base_10 {
+.AbilitiesActionsPanel_base_c0 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    z-index: 1;
 }
 
-    .DealPanel_base__tiny_86 {
+    .AbilitiesActionsPanel_base__tiny_b8 {
         justify-content: center;
     }
 
-    .DealPanel_base__small_f6,
-    .DealPanel_base__medium_8a {
+    .AbilitiesActionsPanel_base__small_9d,
+    .AbilitiesActionsPanel_base__medium_31 {
         width: 902rem;
     }
 
-    .DealPanel_base__large_7b,
-    .DealPanel_base__huge_b3 {
+    .AbilitiesActionsPanel_base__large_15,
+    .AbilitiesActionsPanel_base__huge_27 {
         width: 1102rem;
     }
-
-    .DealPanel_base__dialog_b4 {
-        flex-direction: column-reverse;
-    }
-.DealPanel_storage_40 {
-    display: flex;
-    align-items: center;
+.AbilitiesActionsPanel_toReservesBtn_6b {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-.DealPanel_storage__medium_fe,
-    .DealPanel_storage__large_1e,
-    .DealPanel_storage__huge_e3 {
-        padding-top: 4rem;
-    }
-.DealPanel_from_70 {
-    color: #8C8C7E;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-right: 3rem;
-}
-.DealPanel_base__dialog_b4 .DealPanel_from_70 {
-        display: block;
-    }
-.DealPanel_plus_b0 {
-    width: 24rem;
-    height: 24rem;
-    margin: 0 3rem;
-    background: url('R.images.gui.maps.icons.tanksetup.hangar.plus') no-repeat center / contain;
-    position: relative;
-    top: 1rem;
-}
-.DealPanel_renewal_a8 {
-    display: flex;
+.AbilitiesActionsPanel_checkBox_77 {
     position: absolute;
     top: 8rem;
     left: 0;
 }
-.DealPanel_renewal__dialog_aa {
-        margin-top: 15rem;
-        position: relative;
-        top: 0;
-    }
-.DealPanel_control_39 {
-    margin-left: 20rem;
+.AbilitiesActionsPanel_checkBoxZone_49 {
+    width: 100%;
 }
-.DealPanel_totalPrice_2d {
+.AbilitiesActionsPanel_checkBoxLabel_2a {
+    margin-top: -3rem;
+}
+.AbilitiesActionsPanel_vehicleIcon_2f {
+    width: 16rem;
+    height: 16rem;
+    margin: 2rem -3rem 0;
+    background: no-repeat center / cover;
+    filter: brightness(50%);
+    transition: filter .1s linear;
+}
+.AbilitiesActionsPanel_checkBoxZone_49:hover .AbilitiesActionsPanel_vehicleIcon_2f {
+        filter: brightness(70%);
+    }
+
+.Points_base_3e {
     display: flex;
     align-items: center;
-    margin-left: 30rem;
+}
+
+.Points_icon_15 {
+    margin-left: 6rem;
+    background: url('R.images.gui.maps.icons.epicBattles.awards.c_24x24.abilityToken') no-repeat 50%/contain;
+}
+
+.Points_base__small_ce .Points_icon_15 {
+        width: 16rem;
+        height: 16rem;
+        background-image: url('R.images.gui.maps.icons.epicBattles.awards.c_16x16.abilityToken');
+    }
+
+.Points_base__normal_61 .Points_icon_15,
+    .Points_base__big_fb .Points_icon_15 {
+        width: 24rem;
+        height: 24rem;
+        background-image: url('R.images.gui.maps.icons.epicBattles.awards.c_24x24.abilityToken');
+    }
+
+.Points_label_1b {
+    display: flex;
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.Points_base__big_fb .Points_label_1b {
+        color: #CED9D9;
+        font-size: 22rem;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+.Points_base__brown_ea .Points_label_1b {
+        color: #CBAC77;
+    }
+
+.Points_base__red_b0 .Points_label_1b {
+        color: #FF2717;
+    }
+
+.Purchase_base_b3 {
+    display: flex;
+}
+
+.Purchase_priceContainer_c3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Purchase_priceLabel_da {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-right: 8rem;
+}
+
+.Purchase_actions_62 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 16rem;
+}
+
+.Purchase_purchaseButton_c3 {
+    margin-right: 10rem;
+}
+
+.Purchase_button_6e {
+    min-width: 160rem;
+}
+
+.HorizontalBar_base_49 {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+    position: relative;
+}
+
+    .HorizontalBar_base__nonActive_82 {
+        visibility: hidden;
+    }
+
+    .HorizontalBar_base_49 .disable,
+    .HorizontalBar_base_49 .disable:hover {
+        opacity: .3;
+        cursor: default;
+    }
+
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover, .HorizontalBar_rightButton_03:hover {
+        opacity: 1;
+    }
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem 7rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+        opacity: 1;
+    }
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
+        opacity: .7;
+    }
+
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.VerticalBar_base_f3 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+    .VerticalBar_base__nonActive_42 {
+        visibility: hidden;
+    }
+
+    .VerticalBar_base_f3 .disable,
+    .VerticalBar_base_f3 .disable:hover {
+        opacity: .3;
+        cursor: default;
+    }
+
+.VerticalBar_topButton_d7,
+.VerticalBar_bottomButton_06 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_d7:hover, .VerticalBar_bottomButton_06:hover {
+        opacity: 1;
+    }
+
+.VerticalBar_topButton_d7 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_06 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_df {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32 {
+    display: none;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32:hover {
+        opacity: 1;
+    }
+
+.VerticalBar_rail_43 {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_43:hover {
+        opacity: .7;
+    }
+
+
+.VerticalScroll_content_cb {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_f8 {
+    display: flex;
+}
+
+.VerticalScroll_bar_1e {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_af {
+    flex: 1;
+}
+
+.TankName_base_f1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .TankName_base__sizeMedium_3a {
+        color: #FEFEEC;
+        font-size: 24rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+    .TankName_base__typeWhite_32 {
+        color: #F2F2F7;
+    }
+
+    .TankName_base__typeWhiteSpanish_e2 {
+        color: #E9E2BF;
+    }
+
+.TankName_base__typeColored_bc .TankName_level_bb {
+        color: #E9E2BF;
+    }
+
+.TankName_type_3c {
+    width: 42rem;
+    height: 38rem;
+    margin: 0 -10rem;
+    background: no-repeat center / contain;
+    position: relative;
+    top: -10rem;
+}
+
+.TankName_type__elite_cc {
+        margin: 0 -6rem;
+    }
+
+.TankName_base__sizeMedium_3a .TankName_type_3c {
+        width: 83rem;
+        height: 73rem;
+        margin: 0 -23rem;
+        background: no-repeat center / contain;
+        position: relative;
+        top: -18rem;
+    }
+
+.TankName_base__sizeMedium_3a .TankName_type__elite_cc {
+            margin: 0 -16rem;
+        }
+
+.TankName_base__typeColored_bc .TankName_name_56 {
+        color: #8C8C7E;
+    }
+
+.Aside_base_a5 {
+    display: flex;
+    flex-direction: column;
+    width: 360rem;
+}
+
+.Aside_content_24 {
+    padding: 13rem 10rem 0 28rem;
+}
+
+.mediaMedium .Aside_content_24 {
+        padding-right: 0;
+}
+
+.Aside_tankDetails_35 {
+    height: 20rem;
+    margin-bottom: 10rem;
+}
+
+.Aside_description_f0 {
+    margin-bottom: 26rem;
+}
+
+.Aside_title_6f {
+    color: #E9E2BF;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.Aside_category_c0 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 1rem;
+    line-height: 1;
+}
+
+.Aside_text_ca {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 7rem;
+    line-height: 1.25;
+}
+
+.mediaMedium .Aside_text_ca {
+        color: #8C8C7E;
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
+}
+
+.Aside_status_91 {
+    color: #FF2717;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    height: 40rem;
+    margin-top: 12rem;
+    padding-top: 18rem;
+    border-top: 1rem solid rgba(255,255,255, .1);
+    position: relative;
+}
+
+.Aside_status__activated_4e {
+        color: #80D43A;
+    }
+
+.CategoryTitle_base_f3 {
+    display: flex;
+    align-items: center;
+}
+
+.CategoryTitle_title_9d {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
     position: relative;
     top: -2rem;
 }
-.DealPanel_totalPrice__mixed_fd {
-        margin-left: 0;
+
+.CategoryTitle_icon_48 {
+    width: 32rem;
+    height: 32rem;
+    margin-left: -7rem;
+    background: no-repeat center / contain;
+    transform: translateY(-1rem);
+}
+
+.InfoIcon_base_83 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.InfoIcon_icon_47 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.library.info') no-repeat 50%/cover;
+}
+
+.LevelTab_base_92 {
+    display: flex;
+    justify-content: center;
+    padding: 7rem 0;
+    color: #8d8e80;
+    position: relative;
+    cursor: pointer;
+}
+
+    .LevelTab_base__active_84 {
+        color: #FFDD99;
+        text-shadow: 0 0 12rem #ff7f00;
+    }
+
+    .LevelTab_base_92:hover {
+        color: #E9E2BF;
+    }
+
+.LevelTab_label_c7 {
+    justify-content: center;
+    width: 16rem;
+    font-size: 15rem;
+    text-align: center;
+    transition: color .16s;
+    pointer-events: none;
+}
+
+.LevelTab_arrow_5d {
+    width: 8rem;
+    height: 6rem;
+    background: url('R.images.gui.maps.icons.epicBattles.arrow.skillParam') no-repeat;
+    position: absolute;
+    top: 13rem;
+    right: 0;
+    transition: background-image .16s;
+}
+
+.LevelTab_arrow__active_b2 {
+        background-image: url('R.images.gui.maps.icons.epicBattles.arrow.skillParamHover');
+    }
+
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+    .ExtendedText_base__zeroPadding_25 {
+        padding: 0;
+    }
+
+    .ExtendedText_base__isTruncationAvailable_5b {
+        width: 100%;
+    }
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+        opacity: 0;
+    }
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #FF2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #FFFFFF;
+}
+
+.colors_white_45 {
+    color: #F2F2F7;
+}
+
+.colors_whiteOrange_81 {
+    color: #FEFEEC;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #E9E2BF;
+}
+
+.colors_par_5b {
+    color: #8C8C7E;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362E;
+}
+
+.colors_red_79 {
+    color: #FF2717;
+}
+
+.colors_redDark_73 {
+    color: #B70000;
+}
+
+.colors_yellow_76 {
+    color: #FEAB34;
+}
+
+.colors_orange_cd {
+    color: #EE7000;
+}
+
+.colors_cream_0f {
+    color: #FFDD99;
+}
+
+.colors_brown_82 {
+    color: #CBAC77;
+}
+
+.colors_greenBright_68 {
+    color: #80D43A;
+}
+
+.colors_green_fa {
+    color: #7AB300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #CCFFFF;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09E2FF;
+}
+
+.colors_cred_35 {
+    color: #CED9D9;
+}
+
+.colors_gold_c3 {
+    color: #FFC363;
+}
+
+.colors_bond_ce {
+    color: #C9C9B6;
+}
+
+.colors_prom_83 {
+    color: #A29B70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.SkillParam_base_66 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    width: 100%;
+    padding: 0 30rem 22rem 80rem;
+    position: relative;
+}
+
+.SkillParam_valueWrapper_96 {
+    display: flex;
+    align-items: center;
+    padding-right: 16rem;
+    color: #f7f3e8;
+    white-space: nowrap;
+    position: absolute;
+    top: 1rem;
+    left: 80rem;
+    transform: translateX(-100%);
+}
+
+.SkillParam_diff_06 {
+    padding-right: 2rem;
+}
+
+.SkillParam_diffValue_9c {
+    color: #80D43A;
+}
+
+.SkillParam_labelWrapper_60 {
+    width: 100%;
+}
+
+.SkillParam_label_66 {
+    color: #e9e4c0;
+}
+
+.SkillParam_progress_2f {
+    display: flex;
+    height: 3rem;
+    padding: 0 4rem;
+    background-color: rgba(233,226,191, .1);
+    position: absolute;
+    right: 30rem;
+    bottom: 12rem;
+    left: 80rem;
+}
+
+.SkillParam_progressDot_28 {
+    width: 3rem;
+    height: 100%;
+    box-shadow: 0 0 12rem #ff7f00;
+    background-color: #E9E2BF;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.SkillParam_progressDot__end_aa {
+        right: 0;
+        left: auto;
+    }
+
+.SkillParam_progressValue_6d {
+    box-shadow: 0 0 12rem rgba(255,127,0, .5);
+    background-color: #E9E2BF;
+    position: relative;
+}
+
+.SkillParam_progressValueDot_52 {
+    width: 2rem;
+    height: 10rem;
+    margin-top: -5rem;
+    background-color: #d9cfb2;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+}
+
+.SkillParam_progressDelta_1d {
+    background-color: #80D43A;
+    transition: width .16s;
+}
+
+.Levels_base_a9 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Levels_tabsWrapper_a0 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 31rem;
+    margin-bottom: 16rem;
+    position: relative;
+}
+
+.Levels_tabsBorder_cf {
+    width: 100%;
+    height: 1rem;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255, .1) 30%, rgba(255,255,255, .1) 70%, transparent);
+    position: absolute;
+    left: 0;
+}
+
+.Levels_tabsBorder__top_8f {
+        top: 0;
+    }
+
+.Levels_tabsBorder__bottom_82 {
+        bottom: 0;
+    }
+
+.Levels_tabsLabel_60 {
+    padding: 7rem 0;
+    color: #E9E2BF;
+    font-size: 14rem;
+    line-height: 1.4;
+}
+
+.Levels_tabs_8f {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+.Levels_tab_c3 {
+    width: 80rem;
+}
+
+.Levels_caret_7e {
+    width: 80rem;
+    height: 35rem;
+    background: url('R.images.gui.maps.icons.epicBattles.arrow.bg') no-repeat 50% / 75rem 35rem;
+    position: absolute;
+    top: 9rem;
+    transition: left .16s cubic-bezier(0, .58, .98, 1) .16s;
+    pointer-events: none;
+}
+
+.Levels_params_d6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Levels_infoIcon_68 {
+    margin-right: 6rem;
+}
+
+.BattleAbilitiesSetup_aside_bd {
+    position: relative;
+    top: 2rem;
+    right: -12rem;
+}
+    .mediaMedium .BattleAbilitiesSetup_aside_bd {
+        right: 0;
+}
+
+.ScrollArea_base_47 {
+    width: 100%;
+    min-width: 1rem;
+    min-height: 1rem;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+
+    .ScrollArea_base__scrollIndent_1d.ps--active-y {
+        padding-right: 13rem;
+    }
+
+    .ScrollArea_base__scrollIndent_1d.ps--active-х {
+        padding-bottom: 13rem;
+    }
+
+    .ScrollArea_base__verticalScrollbarMargin_50 .ps__rail-y {
+                margin: 20rem 0;
+                right: 5rem;
+            }
+
+    .ScrollArea_base__multiple_44 .ps__rail-y {
+                margin-bottom: 30rem;
+            }
+
+    .ScrollArea_base__hidden_ec {
+        visibility: hidden;
+    }
+.ps--scrolling-dragging {
+        cursor: move;
+    }
+.ps__rail-x, .ps__thumb-x {
+        height: 13rem;
+        position: absolute;
+    }
+.ps__rail-y, .ps__thumb-y {
+        width: 13rem;
+        position: absolute;
+    }
+.ps__thumb-x, .ps__button-start-x, .ps__button-end-x, .ps__thumb-y, .ps__button-start-y, .ps__button-end-y {
+        border: 1rem solid #7e7b68;
+        box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+        opacity: .7;
+    }
+.ps__thumb-x:hover, .ps__button-start-x:hover, .ps__button-end-x:hover, .ps__thumb-y:hover, .ps__button-start-y:hover, .ps__button-end-y:hover {
+            opacity: 1;
+        }
+.ps__thumb-x, .ps__button-start-x, .ps__button-end-x {
+        bottom: -6rem;
+    }
+.ps__thumb-y, .ps__button-start-y, .ps__button-end-y {
+        right: -6rem;
+    }
+.ps__rail-x {
+        display: none;
+        margin-left: 15rem;
+        border-top: 6rem solid transparent;
+        border-bottom: 6rem solid transparent;
+        bottom: 0;
+        cursor: pointer;
+    }
+.ps__rail-y {
+        display: none;
+        margin-top: 15rem;
+        border-left: 6rem solid transparent;
+        border-right: 6rem solid transparent;
+        right: 0;
+        cursor: pointer;
+    }
+.ps__track_x, .ps__track_y {
+        background-image: url('R.images.gui.maps.icons.components.scroll_area.background');
+        background-size: 1rem;
+        position: relative;
+    }
+.ps__track_x:hover, .ps__track_y:hover {
+            opacity: .7;
+        }
+.ps__track_x {
+        width: 100%;
+        height: 1rem;
+        background-repeat: repeat-x;
+        background-position: 50% 0;
+    }
+.ps__track_y {
+        width: 1rem;
+        height: 100%;
+        background-repeat: repeat-y;
+        background-position: 0 50%;
+    }
+.ps--active-x > .ps__rail-x, .ps--active-y > .ps__rail-y {
+        display: block;
+    }
+.ps__thumb-x, .ps__thumb-y {
+        background: #26241b 50% 50% no-repeat;
+        transition: opacity linear .13s;
+    }
+.ps__thumb-x:active, .ps__thumb-y:active {
+            opacity: .7;
+        }
+.ps__thumb-x {
+        min-width: 10rem;
+        background-image: url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal');
+        background-size: 8rem 7rem;
+    }
+.ps__thumb-y {
+        min-height: 10rem;
+        background-image: url('R.images.gui.maps.icons.components.scroll_area.thumb');
+        background-size: 7rem 8rem;
+    }
+.ps__button-start-x, .ps__button-end-x, .ps__button-start-y, .ps__button-end-y {
+        width: 13rem;
+        height: 13rem;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 7rem 5rem;
+        position: absolute;
+    }
+.ps__button-start-x.disabled, .ps__button-end-x.disabled, .ps__button-start-y.disabled, .ps__button-end-y.disabled {
+            opacity: .3;
+            cursor: default;
+            pointer-events: none;
+        }
+.ps__button-start-x, .ps__button-start-y {
+        background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+    }
+.ps__button-end-x, .ps__button-end-y {
+        background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+    }
+.ps__button-start-x, .ps__button-end-x {
+        transform: rotate(-90deg);
+    }
+.ps__button-start-x {
+        left: -14rem;
+    }
+.ps__button-end-x {
+        right: -14rem;
+    }
+.ps__button-start-y {
+        top: -14rem;
+    }
+.ps__button-end-y {
+        bottom: -14rem;
+    }
+
+.ScrollableCards_base_e0 {
+    display: flex;
+}
+
+.ScrollableCards_scroll_4b {
+    margin-right: -5rem;
+}
+
+.ShortenedText_base_fe {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 18rem;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity ease .2s;
+}
+
+    .ShortenedText_base__shown_af {
+        opacity: 1;
+    }
+
+.FormatColorTagText_base_10 {
+    display: flex;
+    position: relative;
+}
+
+.FormatColorTagText_text_85 {
+    flex: 1;
+}
+
+.BaseCard_base_17 {
+    position: relative;
+}
+.BaseCard_content_42 {
+    width: 290rem;
+    height: 185rem;
+    border-radius: 3rem;
+    background-color: rgba(255,255,255, .05);
+    position: relative;
+    transition: box-shadow .15s ease-in-out;
+    cursor: pointer;
+}
+.BaseCard_content_42:hover {
+        background-color: rgba(255,255,255, .1);
+    }
+.BaseCard_content__large_be,
+    .BaseCard_content__huge_f3 {
+        width: 354rem;
+        height: 236rem;
+    }
+.BaseCard_content__installed_1b {
+        box-shadow: inset 0 0 0 1rem rgba(255,255,255, .2);
+        background-color: rgba(255,255,255, .1);
+    }
+.BaseCard_content__installed_1b:hover {
+            background-color: rgba(255,255,255, .15);
+        }
+.BaseCard_content__current_89 {
+        border-image-source: url('R.images.gui.maps.icons.tanksetup.cards.glow');
+        border-image-slice: 4 fill;
+        border-image-width: 4rem;
+        box-shadow: inset 0 0 0 1rem rgba(249,201,111, .5);
+        background-color: rgba(255,140,109, .1);
+    }
+.BaseCard_content__current_89:hover {
+            background-color: rgba(255,140,109, .15);
+        }
+.BaseCard_content__nonclickable_75,
+    .BaseCard_content__nonclickable_75:hover {
+        background-color: rgba(255,140,109, .1);
+        cursor: default;
+    }
+.BaseCard_content__disabled_eb,
+    .BaseCard_content__disabled_eb:hover {
+        background-color: rgba(0,0,0, .05);
+    }
+.BaseCard_image_53 {
+    width: 80rem;
+    height: 80rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    right: 10rem;
+}
+.BaseCard_content__large_be .BaseCard_image_53,
+    .BaseCard_content__huge_f3 .BaseCard_image_53 {
+        width: 135rem;
+        height: 101rem;
+        top: 10rem;
+    }
+.BaseCard_content__disabled_eb .BaseCard_image_53 {
+        opacity: .5;
+    }
+.BaseCard_types_09 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.BaseCard_highlight_73,
+.BaseCard_overlay_ba {
+    width: 96rem;
+    height: 96rem;
+    background: no-repeat center / contain;
+    position: absolute;
+}
+.BaseCard_content__large_be .BaseCard_highlight_73,
+    .BaseCard_content__huge_f3 .BaseCard_highlight_73,
+    .BaseCard_content__large_be .BaseCard_overlay_ba,
+    .BaseCard_content__huge_f3 .BaseCard_overlay_ba {
+        width: 186rem;
+        height: 168rem;
+    }
+.BaseCard_highlight__battleBooster_49 {
+        top: 0;
+        right: 8rem;
+    }
+.BaseCard_content__large_be .BaseCard_highlight__battleBooster_49,
+        .BaseCard_content__huge_f3 .BaseCard_highlight__battleBooster_49 {
+            display: none;
+        }
+.BaseCard_overlay__battleBooster_85 {
+        top: 5rem;
+        right: 12rem;
+    }
+.BaseCard_content__large_be .BaseCard_overlay__battleBooster_85,
+        .BaseCard_content__huge_f3 .BaseCard_overlay__battleBooster_85 {
+            top: -35rem;
+            right: -18rem;
+        }
+.BaseCard_overlay__battleBoosterReplace_53 {
+        top: 8rem;
+        right: 11rem;
+    }
+.BaseCard_content__large_be .BaseCard_overlay__battleBoosterReplace_53,
+        .BaseCard_content__huge_f3 .BaseCard_overlay__battleBoosterReplace_53 {
+            top: -37rem;
+            right: -20rem;
+        }
+.BaseCard_overlay__equipmentPlus_62 {
+        top: -20rem;
+        right: 22rem;
+    }
+.BaseCard_content__large_be .BaseCard_overlay__equipmentPlus_62,
+        .BaseCard_content__huge_f3 .BaseCard_overlay__equipmentPlus_62 {
+            top: -20rem;
+            right: -20rem;
+        }
+.BaseCard_overlay__builtInEquipment_68 {
+        top: -15rem;
+        right: -5rem;
+    }
+.BaseCard_content__large_be .BaseCard_overlay__builtInEquipment_68,
+        .BaseCard_content__huge_f3 .BaseCard_overlay__builtInEquipment_68 {
+            top: -25rem;
+            right: -5rem;
+        }
+.BaseCard_overlay__equipmentTrophyBasic_ae,
+    .BaseCard_overlay__equipmentTrophyUpgraded_1b {
+        top: -15rem;
+        right: 22rem;
+    }
+.BaseCard_content__large_be .BaseCard_overlay__equipmentTrophyBasic_ae,
+        .BaseCard_content__huge_f3 .BaseCard_overlay__equipmentTrophyBasic_ae,
+        .BaseCard_content__large_be .BaseCard_overlay__equipmentTrophyUpgraded_1b,
+        .BaseCard_content__huge_f3 .BaseCard_overlay__equipmentTrophyUpgraded_1b {
+            top: -20rem;
+            right: -15rem;
+        }
+.BaseCard_overlay__equipmentModernized_97 {
+        top: -15rem;
+        right: 22rem;
+    }
+.BaseCard_content__large_be .BaseCard_overlay__equipmentModernized_97,
+        .BaseCard_content__huge_f3 .BaseCard_overlay__equipmentModernized_97 {
+            top: -25rem;
+            right: -20rem;
+        }
+.BaseCard_specialization_62 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 5rem;
+    overflow: hidden;
+    position: absolute;
+}
+.BaseCard_content__large_be .BaseCard_specialization_62,
+    .BaseCard_content__huge_f3 .BaseCard_specialization_62 {
+        padding: 10rem 13rem;
+    }
+.BaseCard_content__disabled_eb .BaseCard_specialization_62 {
+        opacity: .5;
+        z-index: 1;
+    }
+.BaseCard_name_c3 {
+    display: flex;
+    width: 186rem;
+    color: #C9C9B6;
+    font-size: 15rem;
+    line-height: 17rem;
+    position: absolute;
+    bottom: 95rem;
+    left: 15rem;
+}
+.BaseCard_content__disabled_eb .BaseCard_name_c3 {
+        opacity: .5;
+        z-index: 1;
+    }
+.BaseCard_content__large_be .BaseCard_name_c3,
+    .BaseCard_content__huge_f3 .BaseCard_name_c3 {
+        width: 190rem;
+        line-height: 18rem;
+        bottom: 122rem;
+        left: 25rem;
+    }
+.BaseCard_details_fc {
+    position: absolute;
+    top: 95rem;
+    right: 15rem;
+    bottom: 0;
+    left: 15rem;
+}
+.BaseCard_content__disabled_eb .BaseCard_details_fc {
+        opacity: .5;
+        z-index: 1;
+    }
+.BaseCard_content__large_be .BaseCard_details_fc,
+    .BaseCard_content__huge_f3 .BaseCard_details_fc {
+        top: 120rem;
+        left: 25rem;
+    }
+.BaseCard_options_15 {
+    display: flex;
+    opacity: 1;
+    position: absolute;
+    right: 10rem;
+    bottom: 10rem;
+    transition: opacity .3s;
+}
+.BaseCard_content__large_be .BaseCard_options_15,
+    .BaseCard_content__huge_f3 .BaseCard_options_15 {
+        right: 17rem;
+        bottom: 17rem;
+    }
+.BaseCard_content__disabled_eb .BaseCard_options_15 {
+        opacity: .5;
+        z-index: 1;
+    }
+.BaseCard_actions_95 {
+    display: flex;
+    position: absolute;
+    right: 10rem;
+    bottom: 10rem;
+    z-index: 5;
+}
+.BaseCard_content__large_be .BaseCard_actions_95,
+    .BaseCard_content__huge_f3 .BaseCard_actions_95 {
+        right: 15rem;
+        bottom: 15rem;
+    }
+.BaseCard_hover_cf {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.BaseCard_disabled_c8 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('R.images.gui.maps.icons.library.disabled_pattern') center / 9rem;
+    opacity: .5;
+}
+.BaseCard_content__current_89 .BaseCard_disabled_c8,
+    .BaseCard_content__installed_1b .BaseCard_disabled_c8 {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        bottom: 1rem;
+        left: 1rem;
+        width: auto;
+        height: auto;
+    }
+.BaseCard_locked_13 {
+    position: absolute;
+    bottom: 0;
+}
+.BaseCard_category_5e {
+    width: 48rem;
+    height: 48rem;
+    background: no-repeat center / contain;
+    opacity: .5;
+    position: absolute;
+    top: -7rem;
+    left: -8rem;
+    pointer-events: none;
+}
+.BaseCard_category__tiny_03,
+    .BaseCard_category__small_96,
+    .BaseCard_category__medium_11 {
+        width: 64rem;
+        height: 64rem;
+    }
+.BaseCard_category__large_c1,
+    .BaseCard_category__huge_71 {
+        width: 80rem;
+        height: 80rem;
+        top: -3rem;
+        left: 0;
+    }
+
+.DisabledAbilities_base_1d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: DisabledAbilities_uprise_f2 .25s;
+}
+
+.DisabledAbilities_glow_75 {
+    width: 100%;
+    height: 161rem;
+    background: url('R.images.gui.maps.icons.tanksetup.cards.disabled_reserve.glow') no-repeat center / 354rem 159rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.DisabledAbilities_line_54 {
+    width: 100%;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.tanksetup.cards.disabled_reserve.line') no-repeat center / 354rem 1rem;
+    pointer-events: none;
+}
+
+.DisabledAbilities_icon_e5 {
+    width: 36rem;
+    height: 36rem;
+    background: url('R.images.gui.maps.icons.tanksetup.cards.disabled_reserve.icon') no-repeat center / contain;
+    position: absolute;
+    bottom: -14rem;
+}
+
+@keyframes DisabledAbilities_uprise_f2 {
+    0% {
+        opacity: 0;
+    }
+}
+
+.Warning_base_4c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: Warning_uprise_de .25s;
+}
+
+.Warning_glow_79 {
+    width: 100%;
+    height: 114rem;
+    background: url('R.images.gui.maps.icons.tanksetup.warning.glow') no-repeat center / 354rem 114rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.Warning_line_df {
+    width: 100%;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.tanksetup.warning.line') no-repeat center / 347rem 1rem;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.Warning_icon_24 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.library.alertBigIcon') no-repeat center / contain;
+    position: absolute;
+    z-index: 2;
+}
+
+@keyframes Warning_uprise_de {
+    0% {
+        opacity: 0;
+    }
+}
+
+.Storage_base_53 {
+    display: flex;
+    align-items: center;
+}
+
+    .Storage_base__reversed_8f {
+        flex-direction: row-reverse;
+    }
+
+.Storage_icon_6a {
+    width: 30rem;
+    height: 30rem;
+    background: url('R.images.gui.maps.icons.library.storage_icon') no-repeat center / contain;
+}
+
+.Storage_count_7a {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Storage_base__reversed_8f .Storage_count_7a {
+        color: #C9C9B6;
+        font-size: 22rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-top: -4rem;
+    }
+
+.Storage_count__zero_54 {
+        color: #B70000;
     }
 
 .Currency_base_57 {
@@ -1009,257 +2321,179 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         padding-right: 20rem;
     }
 
-.TotalPrice_base_d9 {
+.Availability_base_51 {
+    width: 30rem;
+    height: 30rem;
+    background: url('R.images.gui.maps.icons.customization.installed_on_tank_icon') no-repeat center / contain;
+}
+
+.Options_base_b3 {
     display: flex;
-    align-items: center;
 }
 
-.TotalPrice_message_66 {
-    color: #8C8C7E;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-top: 5rem;
-    margin-right: 7rem;
+    .Options_base__visually_03 {
+        margin-bottom: -8rem;
+    }
+
+    .Options_base__hidden_82 {
+        opacity: 0;
+        animation: Options_options-hide_10 .25s;
+    }
+
+    .Options_base__shown_84 {
+        animation: Options_options-show_5a .25s;
+    }
+@keyframes Options_options-show_5a {
+    0% {
+        opacity: 0;
+        transform: translateY(6rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Options_options-hide_10 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(6rem);
+    }
+}
+
+.AbilitiesCard_base_7c {
+    width: 100%;
+    height: 100%;
     position: relative;
-    top: 2rem;
 }
-
-.TotalPrice_message__hidden_29 {
-        display: none;
-    }
-
-.TotalPrice_plus_f0 {
-    width: 24rem;
-    height: 24rem;
-    margin: 0 3rem;
-    background: url('R.images.gui.maps.icons.tanksetup.hangar.plus') no-repeat center / contain;
-    position: relative;
-    top: 1rem;
-}
-
-.CompareHeader_base_7a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 902rem;
-}
-
-    .CompareHeader_base__small_ad,
-    .CompareHeader_base__medium_b7 {
-        width: 902rem;
-    }
-
-    .CompareHeader_base__large_6f,
-    .CompareHeader_base__huge_d0 {
-        width: 1102rem;
-    }
-.CompareHeader_title_59 {
-    color: #f5eed5;
-    font-size: 28rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-top: 12rem;
-    text-align: center;
-}
-.CompareHeader_description_1c {
+.AbilitiesCard_bonuses_d2 {
     color: #8C8C7E;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
-    margin-top: 12rem;
-    text-align: center;
+    line-height: 18rem;
 }
-.CompareHeader_controlsContainer_8b {
-    width: 100%;
-    margin-top: 17rem;
+.AbilitiesCard_unit_38 {
+    color: #80D43A;
     position: relative;
 }
-.CompareHeader_tabs_15 {
+.AbilitiesCard_unit__special_31 {
+        color: #b4ff48;
+    }
+.AbilitiesCard_points_79 {
     position: absolute;
+    bottom: 8rem;
     left: 0;
 }
-.CompareHeader_filters_80 {
+
+.ExtraImage_base_78 {
+    width: 16rem;
+    height: 16rem;
+    background: no-repeat center / contain;
+}
+
+    .ExtraImage_base__medium_07 {
+        width: 32rem;
+        height: 32rem;
+    }
+
+    .ExtraImage_base__big_86 {
+        width: 48rem;
+        height: 48rem;
+    }
+
+.AbilityLevel_base_63 {
     position: absolute;
-    top: 10rem;
-    right: 0;
+    top: 0;
+    left: -12rem;
 }
 
-.CtaButtons_base_4c {
+    .AbilityLevel_base__large_66,
+    .AbilityLevel_base__huge_3c {
+        top: -1rem;
+        left: 8rem;
+    }
+
+.AbilitiesList_base_bc {
     display: flex;
-    position: relative;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 100%;
+    padding-top: 16rem;
 }
 
-.CtaButtons_content_9b {
+    .AbilitiesList_base__large_a9,
+    .AbilitiesList_base__huge_7f {
+        padding-top: 20rem;
+    }
+
+    .AbilitiesList_base__disabled_ad {
+    opacity: .1;
+    }
+.AbilitiesList_card_e0 {
+    padding: 0 0 16rem 16rem;
+}
+.AbilitiesList_card__large_e2,
+    .AbilitiesList_card__huge_ad {
+        padding: 0 0 20rem 20rem;
+    }
+
+.BattleAbilitiesNoSelected_base_06 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    position: relative;
-    pointer-events: none;
-}
-
-.CtaButtons_substrate_2d {
-    display: flex;
-    background-color: #000;
-    opacity: .25;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    bottom: -1rem;
-    left: 1rem;
-}
-
-.CtaButtons_indicator_e9 {
-    border-image-source: url('R.atlases.components.indicator_selected_box');
-    border-image-slice: 10 fill;
-    border-image-width: 10rem;
-    position: absolute;
-    top: -8rem;
-    right: -9rem;
-    bottom: -10rem;
-    left: -9rem;
-}
-
-.CtaButtons_toggle_64 {
-    width: 48rem;
-    height: 48rem;
-    background: url('R.atlases.components.icon_selected_off') no-repeat center / contain;
-    opacity: .8;
-    position: absolute;
-    bottom: -25rem;
-    left: 52%;
-    transform: translateX(-50%);
-}
-
-.CtaButtons_toggle__on_40 {
-        background-image: url('R.atlases.components.icon_selected_on');
-        opacity: 1;
-    }
-
-.Filter_base_1f {
-    display: flex;
-    justify-content: flex-start;
-    width: auto;
-}
-
-    .Filter_base__tiny_d7 {
-        margin-left: 25rem;
-    }
-
-    .Filter_base__detailed_18 {
-        justify-content: space-between;
-    }
-.Filter_buttons_e6 {
-    display: flex;
-}
-.Filter_button_34 {
-    width: 33rem;
-}
-.Filter_button_34 + .Filter_button_34 {
-        margin-left: 6rem;
-    }
-
-.FilterItem_base_2e {
-    width: 24rem;
-    height: 24rem;
-    background: no-repeat center / contain;
-    position: relative;
-    top: 1rem;
-}
-
-.ClearBtn_base_a6 {
-    width: 24rem;
-    height: 24rem;
-    position: relative;
-    cursor: pointer;
-}
-
-.ClearBtn_stroke_09 {
-    width: 100%;
     height: 100%;
-    border-image-source: url('R.atlases.components.stroke');
-    border-image-slice: 4 fill;
-    border-image-width: 4rem;
-    text-shadow: -1rem -1rem 0 #fff;
-    opacity: .2;
-    position: absolute;
-    pointer-events: none;
+    margin-top: -20rem;
 }
 
-.ClearBtn_background_61 {
-    width: 100%;
-    height: 100%;
-    border-radius: 8rem;
-    border-image-source: url('R.atlases.components.back_secondary');
-    border-image-slice: 4 fill;
-    border-image-width: 4rem;
-    opacity: .1;
-    transition: opacity ease-in-out .16s;
-    pointer-events: none;
+.BattleAbilitiesNoSelected_noSelectedImage_85 {
+    width: 600rem;
+    height: 450rem;
+    background: url('R.images.gui.maps.icons.tanksetup.reserves.reserves_big') no-repeat 50% -50%;
+    background-size: contain;
 }
 
-.ClearBtn_base__hover_3b .ClearBtn_background_61 {
-        opacity: .5;
+.BattleAbilitiesNoSelected_noSelectedImage__small_d2 {
+        width: 350rem;
+        height: 250rem;
+        background: url('R.images.gui.maps.icons.tanksetup.reserves.reserves_small') no-repeat  50% -10%;
     }
 
-.ClearBtn_base__down_60 .ClearBtn_background_61 {
-        opacity: .2;
-    }
-
-.ClearBtn_cross_1d {
-    width: 9rem;
-    height: 9rem;
-    background: url('R.images.gui.maps.icons.tanksetup.panel.cross') no-repeat center / contain;
-    position: absolute;
-    top: 7rem;
-    left: 8rem;
-    pointer-events: none;
+.BattleAbilitiesNoSelected_title_20 {
+    color: #F2F2F7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: -65rem;
 }
 
-.MatchDetails_base_a8 {
-    display: flex;
-    align-items: flex-end;
+.BattleAbilitiesNoSelected_title__small_65 {
+        margin-top: -20rem;
+    }
+
+.BattleAbilitiesNoSelected_subTitle_aa {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 10rem;
+    font-weight: 700;
+}
+
+.BattleAbilitiesNoSelected_button_bf {
+    margin-top: 35rem;
+}
+
+.Content_base_d8 {
     position: relative;
-}
-
-.MatchDetails_count_d2 {
-    padding: 0 3rem;
-    color: #E9E2BF;
-}
-
-.MatchDetails_clear_21 {
-    display: none;
-    margin-bottom: -5rem;
-    opacity: 0;
-    transition: opacity .2s;
-}
-
-.MatchDetails_clear__shown_49 {
-        display: flex;
-        opacity: 1;
-    }
-
-.MatchDetails_buttons_ab {
-    display: flex;
-    margin: 0 0 -2rem 5rem;
-}
-
-.MatchDetails_button_5e + .MatchDetails_button_5e {
-        margin-left: 6rem;
-    }
-
-.MatchDetails_separator_bc {
-    position: relative;
-}
-
-.MatchDetails_arrow_b0 {
-    width: 129rem;
-    height: 69rem;
-    background: url('R.atlases.components.filter_arrow') no-repeat center / contain;
-    position: absolute;
-    top: 1rem;
-    left: -70rem;
 }
 
 .Header_base_fb {
@@ -1298,6 +2532,205 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     .Header_tabs__tiny_35 {
         margin-top: 16rem;
     }
+
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .TextButton_base__right_39 {
+        flex-direction: row-reverse;
+    }
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+    .TextButton_icon__forward_59 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.back');
+        transform: translateY(1rem);
+    }
+.TextButton_icon__forward_59 {
+        transform: rotate(180deg) translateY(1rem);
+    }
+.TextButton_icon__close_53 {
+        margin: -1rem 0;
+        background-image: url('R.images.gui.maps.icons.components.text_button.close');
+    }
+.TextButton_icon__info_33 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.info');
+    }
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+    .TextButton_icon__forward_59 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+    }
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+    }
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+    }
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_glow_a4 {
+        opacity: 0;
+    }
+.TextButton_caption_82 {
+    position: relative;
+    transition: color .16s, text-shadow .16s;
+}
+.TextButton_caption__back_b9,
+    .TextButton_caption__forward_4e,
+    .TextButton_caption__close_36 {
+        color: #FFDD99;
+        text-shadow: 0 0 10rem rgba(255,42,0, 1),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4);
+    }
+.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
+            color: #fffa9f;
+        }
+.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
+            color: #FFDD99;
+        }
+.TextButton_caption__info_23 {
+        padding: 0 5rem;
+        color: #CCFFFF;
+        text-shadow: 0 0 12rem rgba(31,68,255, .8),
+            0 0 8rem #00eaff;
+    }
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+            color: #e3ffff;
+            text-shadow: 0 0 12rem rgba(31,68,255, .8),
+                0 0 12rem rgba(0,234,255, 1),
+                0 0 8rem #00eaff;
+        }
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+            color: #CCFFFF;
+            text-shadow: 0 0 12rem rgba(31,68,255, .6),
+                0 0 8rem #00eaff;
+        }
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+        margin-left: 8rem;
+    }
+.TextButton_base__right_39 .TextButton_goto_e7 {
+        margin-right: 8rem;
+    }
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity .16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+        left: -4rem;
+    }
+.TextButton_base__right_39 .TextButton_shine_e2 {
+        right: -4rem;
+        transform: rotate(180deg);
+    }
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_shine_e2 {
+        opacity: 0;
+    }
+
+.InfoButton_base__standalone_e2 {
+        display: none;
+        position: absolute;
+        top: 51rem;
+        left: 20rem;
+    }
+
+        .mediaLargeWidth .InfoButton_base__standalone_e2 {
+            display: flex;
+}
+    .InfoButton_base__onlyIcon_bb {
+        width: 30rem;
+        height: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1rem solid rgba(147, 147, 147, .35);
+        border-radius: 2rem;
+        background: rgba(0,0,0, .15);
+    }
+
+.InfoButton_hidden_7e {
+    display: none;
+}
+
+.Header_base_aa {
+    display: flex;
+    flex-direction: column;
+}
+
+.Header_points_d5 {
+    position: relative;
+    top: -2rem;
+}
+
+.Header_content_2c {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding-bottom: 2rem;
+}
+
+.Header_textWrapper_63 {
+    position: relative;
+    top: 8rem;
+}
+
+.Header_text_dc {
+    color: #FEFEEC;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    align-items: center;
+}
+
+.Header_infoButton_5e {
+    margin-left: 11rem;
+}
+
+.mediaLargeWidth .Header_infoButton_5e {
+        opacity: 0;
+        pointer-events: none;
+}
 
 .Tabs_base_d9 {
     display: flex;
@@ -1566,6 +2999,500 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         margin-right: -10rem;
     }
 
+.DealPanel_base_10 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+    .DealPanel_base__tiny_86 {
+        justify-content: center;
+    }
+
+    .DealPanel_base__small_f6,
+    .DealPanel_base__medium_8a {
+        width: 902rem;
+    }
+
+    .DealPanel_base__large_7b,
+    .DealPanel_base__huge_b3 {
+        width: 1102rem;
+    }
+
+    .DealPanel_base__dialog_b4 {
+        flex-direction: column-reverse;
+    }
+.DealPanel_storage_40 {
+    display: flex;
+    align-items: center;
+}
+.DealPanel_storage__medium_fe,
+    .DealPanel_storage__large_1e,
+    .DealPanel_storage__huge_e3 {
+        padding-top: 4rem;
+    }
+.DealPanel_from_70 {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-right: 3rem;
+}
+.DealPanel_base__dialog_b4 .DealPanel_from_70 {
+        display: block;
+    }
+.DealPanel_plus_b0 {
+    width: 24rem;
+    height: 24rem;
+    margin: 0 3rem;
+    background: url('R.images.gui.maps.icons.tanksetup.hangar.plus') no-repeat center / contain;
+    position: relative;
+    top: 1rem;
+}
+.DealPanel_renewal_a8 {
+    display: flex;
+    position: absolute;
+    top: 8rem;
+    left: 0;
+}
+.DealPanel_renewal__dialog_aa {
+        margin-top: 15rem;
+        position: relative;
+        top: 0;
+    }
+.DealPanel_control_39 {
+    margin-left: 20rem;
+}
+.DealPanel_totalPrice_2d {
+    display: flex;
+    align-items: center;
+    margin-left: 30rem;
+    position: relative;
+    top: -2rem;
+}
+.DealPanel_totalPrice__mixed_fd {
+        margin-left: 0;
+    }
+
+.TotalPrice_base_d9 {
+    display: flex;
+    align-items: center;
+}
+
+.TotalPrice_message_66 {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-top: 5rem;
+    margin-right: 7rem;
+    position: relative;
+    top: 2rem;
+}
+
+.TotalPrice_message__hidden_29 {
+        display: none;
+    }
+
+.TotalPrice_plus_f0 {
+    width: 24rem;
+    height: 24rem;
+    margin: 0 3rem;
+    background: url('R.images.gui.maps.icons.tanksetup.hangar.plus') no-repeat center / contain;
+    position: relative;
+    top: 1rem;
+}
+
+.Action_base_bf {
+    display: flex;
+    opacity: 0;
+    position: relative;
+}
+
+    .Action_base_bf + .Action_base_bf {
+        padding-left: 8rem;
+    }
+
+    .Action_base__hidden_4b {
+        animation: Action_action-hide_42 .25s;
+        pointer-events: none;
+    }
+
+    .Action_base__shown_9f {
+        opacity: 1;
+        animation: Action_action-show_a9 .25s;
+    }
+
+    .Action_base__cut_26 {
+        display: none;
+    }
+.Action_action_b5 {
+    display: flex;
+}
+.Action_image_e9 {
+    width: 24rem;
+    height: 24rem;
+    background: no-repeat center / contain;
+    position: relative;
+    top: 1rem;
+}
+.Action_button_74 {
+    width: 45rem;
+    height: 22rem;
+}
+@keyframes Action_action-show_a9 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Action_action-hide_42 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.BoosterActions_base_95 {
+    display: flex;
+    transition: transform .25s;
+}
+
+    .BoosterActions_base__hidden_3e {
+        transform: translateY(6rem);
+        pointer-events: none;
+    }
+
+    .BoosterActions_base__shown_6a {
+        transform: translateY(0);
+    }
+
+.Booster_base_e5 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    line-height: 18rem;
+}
+.Booster_unit_5e {
+    color: #80D43A;
+    position: relative;
+}
+.Booster_unit__special_54 {
+        color: #b4ff48;
+    }
+
+.Cards_base_0a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 100%;
+    padding-top: 16rem;
+}
+
+    .Cards_base__large_47,
+    .Cards_base__huge_d2 {
+        padding-top: 20rem;
+    }
+
+    .Cards_base__disabled_a9 {
+    opacity: .1;
+    }
+.Cards_card_ab {
+    padding: 0 0 16rem 16rem;
+}
+.Cards_card__large_b2,
+    .Cards_card__huge_78 {
+        padding: 0 0 20rem 20rem;
+    }
+
+.CompareHeader_base_7a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 902rem;
+}
+
+    .CompareHeader_base__small_ad,
+    .CompareHeader_base__medium_b7 {
+        width: 902rem;
+    }
+
+    .CompareHeader_base__large_6f,
+    .CompareHeader_base__huge_d0 {
+        width: 1102rem;
+    }
+.CompareHeader_title_59 {
+    color: #f5eed5;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 12rem;
+    text-align: center;
+}
+.CompareHeader_description_1c {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 12rem;
+    text-align: center;
+}
+.CompareHeader_controlsContainer_8b {
+    width: 100%;
+    margin-top: 17rem;
+    position: relative;
+}
+.CompareHeader_tabs_15 {
+    position: absolute;
+    left: 0;
+}
+.CompareHeader_filters_80 {
+    position: absolute;
+    top: 10rem;
+    right: 0;
+}
+
+.Consumable_base_54 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    line-height: 18rem;
+}
+.Consumable_unit_0d {
+    color: #80D43A;
+    position: relative;
+}
+.Consumable_unit__special_14 {
+        color: #b4ff48;
+    }
+
+.ConsumableActions_base_fc {
+    display: flex;
+    transition: transform .25s;
+}
+
+    .ConsumableActions_base__hidden_c1 {
+        transform: translateY(6rem);
+        pointer-events: none;
+    }
+
+    .ConsumableActions_base__shown_17 {
+        transform: translateY(0);
+    }
+
+.Cards_base_57 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 100%;
+    padding-top: 16rem;
+}
+
+    .Cards_base__large_db,
+    .Cards_base__huge_ac {
+        padding-top: 20rem;
+    }
+
+    .Cards_base__disabled_4f {
+    opacity: .1;
+    }
+.Cards_card_4e {
+    padding: 0 0 16rem 16rem;
+}
+.Cards_card__large_87,
+    .Cards_card__huge_dd {
+        padding: 0 0 20rem 20rem;
+    }
+
+.CtaButtons_base_4c {
+    display: flex;
+    position: relative;
+}
+
+.CtaButtons_content_9b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    pointer-events: none;
+}
+
+.CtaButtons_substrate_2d {
+    display: flex;
+    background-color: #000;
+    opacity: .25;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: -1rem;
+    left: 1rem;
+}
+
+.CtaButtons_indicator_e9 {
+    border-image-source: url('R.atlases.components.indicator_selected_box');
+    border-image-slice: 10 fill;
+    border-image-width: 10rem;
+    position: absolute;
+    top: -8rem;
+    right: -9rem;
+    bottom: -10rem;
+    left: -9rem;
+}
+
+.CtaButtons_toggle_64 {
+    width: 48rem;
+    height: 48rem;
+    background: url('R.atlases.components.icon_selected_off') no-repeat center / contain;
+    opacity: .8;
+    position: absolute;
+    bottom: -25rem;
+    left: 52%;
+    transform: translateX(-50%);
+}
+
+.CtaButtons_toggle__on_40 {
+        background-image: url('R.atlases.components.icon_selected_on');
+        opacity: 1;
+    }
+
+.Filter_base_1f {
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+}
+
+    .Filter_base__tiny_d7 {
+        margin-left: 25rem;
+    }
+
+    .Filter_base__detailed_18 {
+        justify-content: space-between;
+    }
+.Filter_buttons_e6 {
+    display: flex;
+}
+.Filter_button_34 {
+    width: 33rem;
+}
+.Filter_button_34 + .Filter_button_34 {
+        margin-left: 6rem;
+    }
+
+.FilterItem_base_2e {
+    width: 24rem;
+    height: 24rem;
+    background: no-repeat center / contain;
+    position: relative;
+    top: 1rem;
+}
+
+.ClearBtn_base_a6 {
+    width: 24rem;
+    height: 24rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.ClearBtn_stroke_09 {
+    width: 100%;
+    height: 100%;
+    border-image-source: url('R.atlases.components.stroke');
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    text-shadow: -1rem -1rem 0 #fff;
+    opacity: .2;
+    position: absolute;
+    pointer-events: none;
+}
+
+.ClearBtn_background_61 {
+    width: 100%;
+    height: 100%;
+    border-radius: 8rem;
+    border-image-source: url('R.atlases.components.back_secondary');
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    opacity: .1;
+    transition: opacity ease-in-out .16s;
+    pointer-events: none;
+}
+
+.ClearBtn_base__hover_3b .ClearBtn_background_61 {
+        opacity: .5;
+    }
+
+.ClearBtn_base__down_60 .ClearBtn_background_61 {
+        opacity: .2;
+    }
+
+.ClearBtn_cross_1d {
+    width: 9rem;
+    height: 9rem;
+    background: url('R.images.gui.maps.icons.tanksetup.panel.cross') no-repeat center / contain;
+    position: absolute;
+    top: 7rem;
+    left: 8rem;
+    pointer-events: none;
+}
+
+.MatchDetails_base_a8 {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.MatchDetails_count_d2 {
+    padding: 0 3rem;
+    color: #E9E2BF;
+}
+
+.MatchDetails_clear_21 {
+    display: none;
+    margin-bottom: -5rem;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.MatchDetails_clear__shown_49 {
+        display: flex;
+        opacity: 1;
+    }
+
+.MatchDetails_buttons_ab {
+    display: flex;
+    margin: 0 0 -2rem 5rem;
+}
+
+.MatchDetails_button_5e + .MatchDetails_button_5e {
+        margin-left: 6rem;
+    }
+
+.MatchDetails_separator_bc {
+    position: relative;
+}
+
+.MatchDetails_arrow_b0 {
+    width: 129rem;
+    height: 69rem;
+    background: url('R.atlases.components.filter_arrow') no-repeat center / contain;
+    position: absolute;
+    top: 1rem;
+    left: -70rem;
+}
+
 .ExperimentalEquipCoinBlock_base_91 {
     display: flex;
     align-items: center;
@@ -1602,160 +3529,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 24rem;
     padding: 2.5rem 24rem 4.5rem;
     font-size: 14rem;
-}
-
-.ScrollArea_base_47 {
-    width: 100%;
-    min-width: 1rem;
-    min-height: 1rem;
-    max-height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: relative;
-}
-
-    .ScrollArea_base__scrollIndent_1d.ps--active-y {
-        padding-right: 13rem;
-    }
-
-    .ScrollArea_base__scrollIndent_1d.ps--active-х {
-        padding-bottom: 13rem;
-    }
-
-    .ScrollArea_base__verticalScrollbarMargin_50 .ps__rail-y {
-                margin: 20rem 0;
-                right: 5rem;
-            }
-
-    .ScrollArea_base__multiple_44 .ps__rail-y {
-                margin-bottom: 30rem;
-            }
-
-    .ScrollArea_base__hidden_ec {
-        visibility: hidden;
-    }
-.ps--scrolling-dragging {
-        cursor: move;
-    }
-.ps__rail-x, .ps__thumb-x {
-        height: 13rem;
-        position: absolute;
-    }
-.ps__rail-y, .ps__thumb-y {
-        width: 13rem;
-        position: absolute;
-    }
-.ps__thumb-x, .ps__button-start-x, .ps__button-end-x, .ps__thumb-y, .ps__button-start-y, .ps__button-end-y {
-        border: 1rem solid #7e7b68;
-        box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
-        opacity: .7;
-    }
-.ps__thumb-x:hover, .ps__button-start-x:hover, .ps__button-end-x:hover, .ps__thumb-y:hover, .ps__button-start-y:hover, .ps__button-end-y:hover {
-            opacity: 1;
-        }
-.ps__thumb-x, .ps__button-start-x, .ps__button-end-x {
-        bottom: -6rem;
-    }
-.ps__thumb-y, .ps__button-start-y, .ps__button-end-y {
-        right: -6rem;
-    }
-.ps__rail-x {
-        display: none;
-        margin-left: 15rem;
-        border-top: 6rem solid transparent;
-        border-bottom: 6rem solid transparent;
-        bottom: 0;
-        cursor: pointer;
-    }
-.ps__rail-y {
-        display: none;
-        margin-top: 15rem;
-        border-left: 6rem solid transparent;
-        border-right: 6rem solid transparent;
-        right: 0;
-        cursor: pointer;
-    }
-.ps__track_x, .ps__track_y {
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.background');
-        background-size: 1rem;
-        position: relative;
-    }
-.ps__track_x:hover, .ps__track_y:hover {
-            opacity: .7;
-        }
-.ps__track_x {
-        width: 100%;
-        height: 1rem;
-        background-repeat: repeat-x;
-        background-position: 50% 0;
-    }
-.ps__track_y {
-        width: 1rem;
-        height: 100%;
-        background-repeat: repeat-y;
-        background-position: 0 50%;
-    }
-.ps--active-x > .ps__rail-x, .ps--active-y > .ps__rail-y {
-        display: block;
-    }
-.ps__thumb-x, .ps__thumb-y {
-        background: #26241b 50% 50% no-repeat;
-        transition: opacity linear .13s;
-    }
-.ps__thumb-x:active, .ps__thumb-y:active {
-            opacity: .7;
-        }
-.ps__thumb-x {
-        min-width: 10rem;
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal');
-        background-size: 8rem 7rem;
-    }
-.ps__thumb-y {
-        min-height: 10rem;
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.thumb');
-        background-size: 7rem 8rem;
-    }
-.ps__button-start-x, .ps__button-end-x, .ps__button-start-y, .ps__button-end-y {
-        width: 13rem;
-        height: 13rem;
-        background-repeat: no-repeat;
-        background-position: 50%;
-        background-size: 7rem 5rem;
-        position: absolute;
-    }
-.ps__button-start-x.disabled, .ps__button-end-x.disabled, .ps__button-start-y.disabled, .ps__button-end-y.disabled {
-            opacity: .3;
-            cursor: default;
-            pointer-events: none;
-        }
-.ps__button-start-x, .ps__button-start-y {
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
-    }
-.ps__button-end-x, .ps__button-end-y {
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
-    }
-.ps__button-start-x, .ps__button-end-x {
-        transform: rotate(-90deg);
-    }
-.ps__button-start-x {
-        left: -14rem;
-    }
-.ps__button-end-x {
-        right: -14rem;
-    }
-.ps__button-start-y {
-        top: -14rem;
-    }
-.ps__button-end-y {
-        bottom: -14rem;
-    }
-
-.ScrollableCards_base_e0 {
-    display: flex;
-}
-
-.ScrollableCards_scroll_4b {
-    margin-right: -5rem;
 }
 
 .Specialization_base_ec {
@@ -1847,420 +3620,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
-.ShortenedText_base_fe {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    max-height: 18rem;
-    opacity: 0;
-    overflow: hidden;
-    transition: opacity ease .2s;
-}
-
-    .ShortenedText_base__shown_af {
-        opacity: 1;
-    }
-
-.Warning_base_4c {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    animation: Warning_uprise_de .25s;
-}
-
-.Warning_glow_79 {
-    width: 100%;
-    height: 114rem;
-    background: url('R.images.gui.maps.icons.tanksetup.warning.glow') no-repeat center / 354rem 114rem;
-    position: absolute;
-    bottom: 0;
-}
-
-.Warning_line_df {
-    width: 100%;
-    height: 1rem;
-    background: url('R.images.gui.maps.icons.tanksetup.warning.line') no-repeat center / 347rem 1rem;
-    z-index: 1;
-    pointer-events: none;
-}
-
-.Warning_icon_24 {
-    width: 24rem;
-    height: 24rem;
-    background: url('R.images.gui.maps.icons.library.alertBigIcon') no-repeat center / contain;
-    position: absolute;
-    z-index: 2;
-}
-
-@keyframes Warning_uprise_de {
-    0% {
-        opacity: 0;
-    }
-}
-
-.DisabledAbilities_base_1d {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    animation: DisabledAbilities_uprise_f2 .25s;
-}
-
-.DisabledAbilities_glow_75 {
-    width: 100%;
-    height: 161rem;
-    background: url('R.images.gui.maps.icons.tanksetup.cards.disabled_reserve.glow') no-repeat center / 354rem 159rem;
-    position: absolute;
-    bottom: 0;
-}
-
-.DisabledAbilities_line_54 {
-    width: 100%;
-    height: 1rem;
-    background: url('R.images.gui.maps.icons.tanksetup.cards.disabled_reserve.line') no-repeat center / 354rem 1rem;
-    pointer-events: none;
-}
-
-.DisabledAbilities_icon_e5 {
-    width: 36rem;
-    height: 36rem;
-    background: url('R.images.gui.maps.icons.tanksetup.cards.disabled_reserve.icon') no-repeat center / contain;
-    position: absolute;
-    bottom: -14rem;
-}
-
-@keyframes DisabledAbilities_uprise_f2 {
-    0% {
-        opacity: 0;
-    }
-}
-
-.BaseCard_base_17 {
-    position: relative;
-}
-.BaseCard_content_42 {
-    width: 290rem;
-    height: 185rem;
-    border-radius: 3rem;
-    background-color: rgba(255,255,255, .05);
-    position: relative;
-    transition: box-shadow .15s ease-in-out;
-    cursor: pointer;
-}
-.BaseCard_content_42:hover {
-        background-color: rgba(255,255,255, .1);
-    }
-.BaseCard_content__large_be,
-    .BaseCard_content__huge_f3 {
-        width: 354rem;
-        height: 236rem;
-    }
-.BaseCard_content__installed_1b {
-        box-shadow: inset 0 0 0 1rem rgba(255,255,255, .2);
-        background-color: rgba(255,255,255, .1);
-    }
-.BaseCard_content__installed_1b:hover {
-            background-color: rgba(255,255,255, .15);
-        }
-.BaseCard_content__current_89 {
-        border-image-source: url('R.images.gui.maps.icons.tanksetup.cards.glow');
-        border-image-slice: 4 fill;
-        border-image-width: 4rem;
-        box-shadow: inset 0 0 0 1rem rgba(249,201,111, .5);
-        background-color: rgba(255,140,109, .1);
-    }
-.BaseCard_content__current_89:hover {
-            background-color: rgba(255,140,109, .15);
-        }
-.BaseCard_content__nonclickable_75,
-    .BaseCard_content__nonclickable_75:hover {
-        background-color: rgba(255,140,109, .1);
-        cursor: default;
-    }
-.BaseCard_content__disabled_eb,
-    .BaseCard_content__disabled_eb:hover {
-        background-color: rgba(0,0,0, .05);
-    }
-.BaseCard_image_53 {
-    width: 80rem;
-    height: 80rem;
-    background: no-repeat center / contain;
-    position: absolute;
-    top: 0;
-    right: 10rem;
-}
-.BaseCard_content__large_be .BaseCard_image_53,
-    .BaseCard_content__huge_f3 .BaseCard_image_53 {
-        width: 135rem;
-        height: 101rem;
-        top: 10rem;
-    }
-.BaseCard_content__disabled_eb .BaseCard_image_53 {
-        opacity: .5;
-    }
-.BaseCard_types_09 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-}
-.BaseCard_highlight_73,
-.BaseCard_overlay_ba {
-    width: 96rem;
-    height: 96rem;
-    background: no-repeat center / contain;
-    position: absolute;
-}
-.BaseCard_content__large_be .BaseCard_highlight_73,
-    .BaseCard_content__huge_f3 .BaseCard_highlight_73,
-    .BaseCard_content__large_be .BaseCard_overlay_ba,
-    .BaseCard_content__huge_f3 .BaseCard_overlay_ba {
-        width: 186rem;
-        height: 168rem;
-    }
-.BaseCard_highlight__battleBooster_49 {
-        top: 0;
-        right: 8rem;
-    }
-.BaseCard_content__large_be .BaseCard_highlight__battleBooster_49,
-        .BaseCard_content__huge_f3 .BaseCard_highlight__battleBooster_49 {
-            display: none;
-        }
-.BaseCard_overlay__battleBooster_85 {
-        top: 5rem;
-        right: 12rem;
-    }
-.BaseCard_content__large_be .BaseCard_overlay__battleBooster_85,
-        .BaseCard_content__huge_f3 .BaseCard_overlay__battleBooster_85 {
-            top: -35rem;
-            right: -18rem;
-        }
-.BaseCard_overlay__battleBoosterReplace_53 {
-        top: 8rem;
-        right: 11rem;
-    }
-.BaseCard_content__large_be .BaseCard_overlay__battleBoosterReplace_53,
-        .BaseCard_content__huge_f3 .BaseCard_overlay__battleBoosterReplace_53 {
-            top: -37rem;
-            right: -20rem;
-        }
-.BaseCard_overlay__equipmentPlus_62 {
-        top: -20rem;
-        right: 22rem;
-    }
-.BaseCard_content__large_be .BaseCard_overlay__equipmentPlus_62,
-        .BaseCard_content__huge_f3 .BaseCard_overlay__equipmentPlus_62 {
-            top: -20rem;
-            right: -20rem;
-        }
-.BaseCard_overlay__builtInEquipment_68 {
-        top: -15rem;
-        right: -5rem;
-    }
-.BaseCard_content__large_be .BaseCard_overlay__builtInEquipment_68,
-        .BaseCard_content__huge_f3 .BaseCard_overlay__builtInEquipment_68 {
-            top: -25rem;
-            right: -5rem;
-        }
-.BaseCard_overlay__equipmentTrophyBasic_ae,
-    .BaseCard_overlay__equipmentTrophyUpgraded_1b {
-        top: -15rem;
-        right: 22rem;
-    }
-.BaseCard_content__large_be .BaseCard_overlay__equipmentTrophyBasic_ae,
-        .BaseCard_content__huge_f3 .BaseCard_overlay__equipmentTrophyBasic_ae,
-        .BaseCard_content__large_be .BaseCard_overlay__equipmentTrophyUpgraded_1b,
-        .BaseCard_content__huge_f3 .BaseCard_overlay__equipmentTrophyUpgraded_1b {
-            top: -20rem;
-            right: -15rem;
-        }
-.BaseCard_overlay__equipmentModernized_97 {
-        top: -15rem;
-        right: 22rem;
-    }
-.BaseCard_content__large_be .BaseCard_overlay__equipmentModernized_97,
-        .BaseCard_content__huge_f3 .BaseCard_overlay__equipmentModernized_97 {
-            top: -25rem;
-            right: -20rem;
-        }
-.BaseCard_specialization_62 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    padding: 5rem;
-    overflow: hidden;
-    position: absolute;
-}
-.BaseCard_content__large_be .BaseCard_specialization_62,
-    .BaseCard_content__huge_f3 .BaseCard_specialization_62 {
-        padding: 10rem 13rem;
-    }
-.BaseCard_content__disabled_eb .BaseCard_specialization_62 {
-        opacity: .5;
-        z-index: 1;
-    }
-.BaseCard_name_c3 {
-    display: flex;
-    width: 186rem;
-    color: #C9C9B6;
-    font-size: 15rem;
-    line-height: 17rem;
-    position: absolute;
-    bottom: 95rem;
-    left: 15rem;
-}
-.BaseCard_content__disabled_eb .BaseCard_name_c3 {
-        opacity: .5;
-        z-index: 1;
-    }
-.BaseCard_content__large_be .BaseCard_name_c3,
-    .BaseCard_content__huge_f3 .BaseCard_name_c3 {
-        width: 190rem;
-        line-height: 18rem;
-        bottom: 122rem;
-        left: 25rem;
-    }
-.BaseCard_details_fc {
-    position: absolute;
-    top: 95rem;
-    right: 15rem;
-    bottom: 0;
-    left: 15rem;
-}
-.BaseCard_content__disabled_eb .BaseCard_details_fc {
-        opacity: .5;
-        z-index: 1;
-    }
-.BaseCard_content__large_be .BaseCard_details_fc,
-    .BaseCard_content__huge_f3 .BaseCard_details_fc {
-        top: 120rem;
-        left: 25rem;
-    }
-.BaseCard_options_15 {
-    display: flex;
-    opacity: 1;
-    position: absolute;
-    right: 10rem;
-    bottom: 10rem;
-    transition: opacity .3s;
-}
-.BaseCard_content__large_be .BaseCard_options_15,
-    .BaseCard_content__huge_f3 .BaseCard_options_15 {
-        right: 17rem;
-        bottom: 17rem;
-    }
-.BaseCard_content__disabled_eb .BaseCard_options_15 {
-        opacity: .5;
-        z-index: 1;
-    }
-.BaseCard_actions_95 {
-    display: flex;
-    position: absolute;
-    right: 10rem;
-    bottom: 10rem;
-    z-index: 5;
-}
-.BaseCard_content__large_be .BaseCard_actions_95,
-    .BaseCard_content__huge_f3 .BaseCard_actions_95 {
-        right: 15rem;
-        bottom: 15rem;
-    }
-.BaseCard_hover_cf {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-.BaseCard_disabled_c8 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url('R.images.gui.maps.icons.library.disabled_pattern') center / 9rem;
-    opacity: .5;
-}
-.BaseCard_locked_13 {
-    position: absolute;
-    bottom: 0;
-}
-.BaseCard_category_5e {
-    width: 48rem;
-    height: 48rem;
-    background: no-repeat center / contain;
-    opacity: .5;
-    position: absolute;
-    top: -7rem;
-    left: -8rem;
-    pointer-events: none;
-}
-.BaseCard_category__tiny_03,
-    .BaseCard_category__small_96,
-    .BaseCard_category__medium_11 {
-        width: 64rem;
-        height: 64rem;
-    }
-.BaseCard_category__large_c1,
-    .BaseCard_category__huge_71 {
-        width: 80rem;
-        height: 80rem;
-        top: -3rem;
-        left: 0;
-    }
-
-.Availability_base_51 {
-    width: 30rem;
-    height: 30rem;
-    background: url('R.images.gui.maps.icons.customization.installed_on_tank_icon') no-repeat center / contain;
-}
-
-.Options_base_b3 {
-    display: flex;
-}
-
-    .Options_base__visually_03 {
-        margin-bottom: -8rem;
-    }
-
-    .Options_base__hidden_82 {
-        opacity: 0;
-        animation: Options_options-hide_10 .25s;
-    }
-
-    .Options_base__shown_84 {
-        animation: Options_options-show_5a .25s;
-    }
-@keyframes Options_options-show_5a {
-    0% {
-        opacity: 0;
-        transform: translateY(6rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes Options_options-hide_10 {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(6rem);
-    }
-}
-
 .Unit_base_15 {
     color: #80D43A;
     position: relative;
@@ -2326,62 +3685,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
     top: 2rem;
     left: -2rem;
-}
-
-.Action_base_bf {
-    display: flex;
-    opacity: 0;
-    position: relative;
-}
-
-    .Action_base_bf + .Action_base_bf {
-        padding-left: 8rem;
-    }
-
-    .Action_base__hidden_4b {
-        animation: Action_action-hide_42 .25s;
-        pointer-events: none;
-    }
-
-    .Action_base__shown_9f {
-        opacity: 1;
-        animation: Action_action-show_a9 .25s;
-    }
-
-    .Action_base__cut_26 {
-        display: none;
-    }
-.Action_action_b5 {
-    display: flex;
-}
-.Action_image_e9 {
-    width: 24rem;
-    height: 24rem;
-    background: no-repeat center / contain;
-    position: relative;
-    top: 1rem;
-}
-.Action_button_74 {
-    width: 45rem;
-    height: 22rem;
-}
-@keyframes Action_action-show_a9 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes Action_action-hide_42 {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
 }
 
 .DeviceActions_base_c0 {
@@ -2545,11 +3848,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         background-image: url('R.images.gui.maps.icons.library.equipCoin_1');
         transform: translateY(3rem);
     }
-
-.FormatText_base_d0 {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .OptDevicesSetup_intro_ae {
     width: 100%;
@@ -3275,285 +4573,29 @@ in JS 8000 reserved like anchor for start optimization
         font-size: 28rem;
     }
 
-.FormatColorTagText_base_10 {
-    display: flex;
-    position: relative;
-}
-
-.FormatColorTagText_text_85 {
-    flex: 1;
-}
-
-.Consumable_base_54 {
-    color: #8C8C7E;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    line-height: 18rem;
-}
-.Consumable_unit_0d {
-    color: #80D43A;
-    position: relative;
-}
-.Consumable_unit__special_14 {
-        color: #b4ff48;
-    }
-
-.ConsumableActions_base_fc {
-    display: flex;
-    transition: transform .25s;
-}
-
-    .ConsumableActions_base__hidden_c1 {
-        transform: translateY(6rem);
-        pointer-events: none;
-    }
-
-    .ConsumableActions_base__shown_17 {
-        transform: translateY(0);
-    }
-
-.Cards_base_57 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-    height: 100%;
-    padding-top: 16rem;
-}
-
-    .Cards_base__large_db,
-    .Cards_base__huge_ac {
-        padding-top: 20rem;
-    }
-
-    .Cards_base__disabled_4f {
-    opacity: .1;
-    }
-.Cards_card_4e {
-    padding: 0 0 16rem 16rem;
-}
-.Cards_card__large_87,
-    .Cards_card__huge_dd {
-        padding: 0 0 20rem 20rem;
-    }
-
-.BoosterActions_base_95 {
-    display: flex;
-    transition: transform .25s;
-}
-
-    .BoosterActions_base__hidden_3e {
-        transform: translateY(6rem);
-        pointer-events: none;
-    }
-
-    .BoosterActions_base__shown_6a {
-        transform: translateY(0);
-    }
-
-.Booster_base_e5 {
-    color: #8C8C7E;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    line-height: 18rem;
-}
-.Booster_unit_5e {
-    color: #80D43A;
-    position: relative;
-}
-.Booster_unit__special_54 {
-        color: #b4ff48;
-    }
-
-.Cards_base_0a {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-    height: 100%;
-    padding-top: 16rem;
-}
-
-    .Cards_base__large_47,
-    .Cards_base__huge_d2 {
-        padding-top: 20rem;
-    }
-
-    .Cards_base__disabled_a9 {
-    opacity: .1;
-    }
-.Cards_card_ab {
-    padding: 0 0 16rem 16rem;
-}
-.Cards_card__large_b2,
-    .Cards_card__huge_78 {
-        padding: 0 0 20rem 20rem;
-    }
-
-.AbilitiesActionsPanel_base_c0 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-}
-
-    .AbilitiesActionsPanel_base__tiny_b8 {
-        justify-content: center;
-    }
-
-    .AbilitiesActionsPanel_base__small_9d,
-    .AbilitiesActionsPanel_base__medium_31 {
-        width: 902rem;
-    }
-
-    .AbilitiesActionsPanel_base__large_15,
-    .AbilitiesActionsPanel_base__huge_27 {
-        width: 1102rem;
-    }
-.AbilitiesActionsPanel_toReservesBtn_6b {
+.TankName_base_56 {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 85rem;
+    right: 30rem;
 }
-.AbilitiesActionsPanel_checkBox_77 {
-    margin-right: 25rem;
-    padding: 8rem 10rem 0 9rem;
-}
-.AbilitiesActionsPanel_checkBoxZone_49 {
-    width: 100%;
-}
-.AbilitiesActionsPanel_checkBoxLabel_2a {
-    margin-top: -3rem;
-}
-.AbilitiesActionsPanel_vehicleIcon_2f {
-    width: 16rem;
-    height: 16rem;
-    margin: 2rem -3rem 0;
-    background: no-repeat center / cover;
-    filter: brightness(50%);
-    transition: filter .1s linear;
-}
-.AbilitiesActionsPanel_checkBoxZone_49:hover .AbilitiesActionsPanel_vehicleIcon_2f {
-        filter: brightness(70%);
+
+    .TankName_base__medium_13 {
+        right: 5rem;
     }
 
-.ExtraImage_base_78 {
-    width: 16rem;
-    height: 16rem;
-    background: no-repeat center / contain;
-}
-
-    .ExtraImage_base__medium_07 {
-        width: 32rem;
-        height: 32rem;
+    .TankName_base__small_f9 {
+        top: 70rem;
+        right: 5rem;
     }
 
-    .ExtraImage_base__big_86 {
-        width: 48rem;
-        height: 48rem;
+    .TankName_base__tiny_2d {
+        top: 107rem;
+        right: 10rem;
     }
 
-.AbilityLevel_base_63 {
-    position: absolute;
-    top: 0;
-    left: -12rem;
-}
-
-    .AbilityLevel_base__large_66,
-    .AbilityLevel_base__huge_3c {
-        top: -1rem;
-        left: 8rem;
+    .TankName_base__hidden_b0 {
+        opacity: 0;
     }
-
-.AbilitiesCard_base_7c {
-    color: #8C8C7E;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    line-height: 18rem;
-}
-.AbilitiesCard_unit_38 {
-    color: #80D43A;
-    position: relative;
-}
-.AbilitiesCard_unit__special_31 {
-        color: #b4ff48;
-    }
-
-.AbilitiesList_base_bc {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-    height: 100%;
-    padding-top: 16rem;
-}
-
-    .AbilitiesList_base__large_a9,
-    .AbilitiesList_base__huge_7f {
-        padding-top: 20rem;
-    }
-
-    .AbilitiesList_base__disabled_ad {
-    opacity: .1;
-    }
-.AbilitiesList_card_e0 {
-    padding: 0 0 16rem 16rem;
-}
-.AbilitiesList_card__large_e2,
-    .AbilitiesList_card__huge_ad {
-        padding: 0 0 20rem 20rem;
-    }
-
-.BattleAbilitiesNoSelected_base_06 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin-top: -20rem;
-}
-
-.BattleAbilitiesNoSelected_noSelectedImage_85 {
-    width: 600rem;
-    height: 450rem;
-    background: url('R.images.gui.maps.icons.tanksetup.reserves.reserves_big') no-repeat 50% -50%;
-    background-size: contain;
-}
-
-.BattleAbilitiesNoSelected_noSelectedImage__small_d2 {
-        width: 350rem;
-        height: 250rem;
-        background: url('R.images.gui.maps.icons.tanksetup.reserves.reserves_small') no-repeat  50% -10%;
-    }
-
-.BattleAbilitiesNoSelected_title_20 {
-    color: #F2F2F7;
-    font-size: 28rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-top: -65rem;
-}
-
-.BattleAbilitiesNoSelected_title__small_65 {
-        margin-top: -20rem;
-    }
-
-.BattleAbilitiesNoSelected_subTitle_aa {
-    color: #8C8C7E;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-top: 10rem;
-    font-weight: 700;
-}
-
-.BattleAbilitiesNoSelected_button_bf {
-    margin-top: 35rem;
-}
 
 .Animation_base_bf {
     height: 100%;
@@ -3633,212 +4675,6 @@ in JS 8000 reserved like anchor for start optimization
         transform: translateX(20rem);
     }
 }
-
-.TankName_base_f1 {
-    display: flex;
-    justify-content: flex-end;
-}
-
-    .TankName_base__sizeMedium_3a {
-        color: #FEFEEC;
-        font-size: 24rem;
-        font-weight: 400;
-        line-height: 1.2;
-    }
-
-    .TankName_base__typeWhite_32 {
-        color: #F2F2F7;
-    }
-
-    .TankName_base__typeWhiteSpanish_e2 {
-        color: #E9E2BF;
-    }
-
-.TankName_base__typeColored_bc .TankName_level_bb {
-        color: #E9E2BF;
-    }
-
-.TankName_type_3c {
-    width: 42rem;
-    height: 38rem;
-    margin: 0 -10rem;
-    background: no-repeat center / contain;
-    position: relative;
-    top: -10rem;
-}
-
-.TankName_type__elite_cc {
-        margin: 0 -6rem;
-    }
-
-.TankName_base__sizeMedium_3a .TankName_type_3c {
-        width: 83rem;
-        height: 73rem;
-        margin: 0 -23rem;
-        background: no-repeat center / contain;
-        position: relative;
-        top: -18rem;
-    }
-
-.TankName_base__sizeMedium_3a .TankName_type__elite_cc {
-            margin: 0 -16rem;
-        }
-
-.TankName_base__typeColored_bc .TankName_name_56 {
-        color: #8C8C7E;
-    }
-
-.TankName_base_56 {
-    position: absolute;
-    top: 85rem;
-    right: 30rem;
-}
-
-    .TankName_base__medium_13 {
-        right: 5rem;
-    }
-
-    .TankName_base__small_f9 {
-        top: 70rem;
-        right: 5rem;
-    }
-
-    .TankName_base__tiny_2d {
-        top: 107rem;
-        right: 10rem;
-    }
-
-.TextButton_base_b6 {
-    display: flex;
-    align-items: center;
-    padding: 0 3rem;
-    font-size: 12rem;
-    position: relative;
-    cursor: pointer;
-}
-
-    .TextButton_base__right_39 {
-        flex-direction: row-reverse;
-    }
-.TextButton_icon_17 {
-    width: 32rem;
-    height: 32rem;
-    background: no-repeat center / contain;
-    position: relative;
-}
-.TextButton_icon__back_43,
-    .TextButton_icon__forward_59 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.back');
-        transform: translateY(1rem);
-    }
-.TextButton_icon__forward_59 {
-        transform: rotate(180deg) translateY(1rem);
-    }
-.TextButton_icon__close_53 {
-        margin: -1rem 0;
-        background-image: url('R.images.gui.maps.icons.components.text_button.close');
-    }
-.TextButton_icon__info_33 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.info');
-    }
-.TextButton_glow_a4 {
-    width: 100%;
-    height: 100%;
-    background: no-repeat center / contain;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    transition: opacity .16s;
-}
-.TextButton_icon__back_43 .TextButton_glow_a4,
-    .TextButton_icon__forward_59 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
-    }
-.TextButton_icon__close_53 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
-    }
-.TextButton_icon__info_33 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
-    }
-.TextButton_base_b6:hover .TextButton_glow_a4 {
-        opacity: 1;
-    }
-.TextButton_base_b6:active .TextButton_glow_a4 {
-        opacity: 0;
-    }
-.TextButton_caption_82 {
-    position: relative;
-    transition: color .16s, text-shadow .16s;
-}
-.TextButton_caption__back_b9,
-    .TextButton_caption__forward_4e,
-    .TextButton_caption__close_36 {
-        color: #FFDD99;
-        text-shadow: 0 0 10rem rgba(255,42,0, 1),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4);
-    }
-.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
-            color: #fffa9f;
-        }
-.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
-            color: #FFDD99;
-        }
-.TextButton_caption__info_23 {
-        padding: 0 5rem;
-        color: #CCFFFF;
-        text-shadow: 0 0 12rem rgba(31,68,255, .8),
-            0 0 8rem #00eaff;
-    }
-.TextButton_base_b6:hover .TextButton_caption__info_23 {
-            color: #e3ffff;
-            text-shadow: 0 0 12rem rgba(31,68,255, .8),
-                0 0 12rem rgba(0,234,255, 1),
-                0 0 8rem #00eaff;
-        }
-.TextButton_base_b6:active .TextButton_caption__info_23 {
-            color: #CCFFFF;
-            text-shadow: 0 0 12rem rgba(31,68,255, .6),
-                0 0 8rem #00eaff;
-        }
-.TextButton_goto_e7 {
-    color: #7c7c6c;
-}
-.TextButton_base__left_ff .TextButton_goto_e7 {
-        margin-left: 8rem;
-    }
-.TextButton_base__right_39 .TextButton_goto_e7 {
-        margin-right: 8rem;
-    }
-.TextButton_shine_e2 {
-    width: 90rem;
-    height: 40rem;
-    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
-    opacity: 0;
-    position: absolute;
-    top: -4rem;
-    transition: opacity .16s;
-    pointer-events: none;
-}
-.TextButton_base__left_ff .TextButton_shine_e2 {
-        left: -4rem;
-    }
-.TextButton_base__right_39 .TextButton_shine_e2 {
-        right: -4rem;
-        transform: rotate(180deg);
-    }
-.TextButton_base_b6:hover .TextButton_shine_e2 {
-        opacity: 1;
-    }
-.TextButton_base_b6:active .TextButton_shine_e2 {
-        opacity: 0;
-    }
 
 body {
     flex: 1;

@@ -329,6 +329,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 100%;
     background: url('R.images.gui.maps.icons.development.library.GameFacePattern') center / 100rem;
     color: #e9e2bf;
+    position: absolute;
 }
 
 .DisplayBrowserState_alertIcon_c4 {

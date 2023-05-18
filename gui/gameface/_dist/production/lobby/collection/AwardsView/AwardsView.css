@@ -211,7 +211,7 @@
     }
 
 .App_overlay_c7 {
-    background: url('R.images.gui.maps.icons.collections.backgrounds.common') no-repeat center / cover;
+    background: no-repeat center / cover;
     position: absolute;
     top: 0;
     right: 0;

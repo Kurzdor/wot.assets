@@ -10,6 +10,11 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
 msgid "actionStub/name"
 msgstr "Modification"
 
@@ -364,6 +369,24 @@ msgid "br_minefield/shortDescr"
 msgstr ""
 "Deploys an active minefield in the selected area for a certain period of "
 "time. Enemies can destroy your mines by shooting them."
+
+msgid "br_respawn/name"
+msgstr "Respawn"
+
+msgid "br_respawn/platoon/descr"
+msgstr ""
+"Allows you to get back to battle after your vehicle is destroyed. This "
+"mechanic works within the first %(duration)s min of a battle.\n"
+"\n"
+"To respawn an ally, stay out of combat for %(timeToResurrect)s s. Respawn "
+"charges are shared between Platoon members."
+
+msgid "br_respawn/solo/descr"
+msgstr ""
+"Allows you to get back to battle after your vehicle has been destroyed. This "
+"mechanic works within the first %(duration)s min of a battle.\n"
+"\n"
+"Once destroyed, your vehicle respawns automatically."
 
 msgid "br_smoke/descr"
 msgstr ""

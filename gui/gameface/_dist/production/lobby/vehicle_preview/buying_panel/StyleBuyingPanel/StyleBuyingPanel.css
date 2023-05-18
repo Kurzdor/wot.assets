@@ -218,6 +218,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     .mediaSmall .Content_base__progression_18 {
             transform: translateY(0);
 }
+    .Content_base__withCaption_2c {
+        transform: translateY(0);
+    }
 
 .Content_content_d7 {
     display: flex;
