@@ -1,0 +1,101 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem; /* border offset*/
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.TooltipDecorator_decoratorContent_de {
+    background-color: #000;
+}
+
+.Body_base_53 {
+    width: 365rem;
+    background: linear-gradient(180deg, rgba(51, 51, 41, .3) 0%, rgba(51, 51, 41, 0) 15.62%, rgba(51, 51, 41, 0) 88.02%, rgba(51, 51, 41, .1) 100%);
+}
+.Body_title_54 {
+    margin: 20rem 20rem 10rem;
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Body_description_fe {
+    margin: 0 20rem 5rem;
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18rem;
+}
+.Body_listHeader_15 {
+    display: flex;
+    padding: 5rem 20rem;
+}
+.Body_listColumnHeader_39 {
+    width: 38%;
+    color: #595950;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 24rem;
+}
+.Body_list_3b {
+    display: flex;
+    flex-direction: column;
+}
+.Body_listRow_41 {
+    display: flex;
+    align-items: flex-start;
+    padding: 8rem 0 8rem 15rem;
+}
+.Body_listRow__best_9d {
+        background: linear-gradient(180deg, rgba(255, 255, 255, .05) 0%, rgba(255, 255, 255, .02) 100%);
+    }
+.Body_listCell_b2 {
+    display: flex;
+    width: 60%;
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 24rem;
+    opacity: 1;
+}
+.Body_listRow__invalid_95 .Body_listCell_b2 {
+        opacity: .5;
+    }
+.Body_listRow__current_c4 .Body_listCell_b2 {
+        color: #FEFEEC;
+    }
+.Body_listRow__best_9d .Body_listCell_b2 {
+        color: #FFC363;
+    }
+.Body_listCell__narrow_db {
+        width: 38%;
+    }
+.Body_separator_11 {
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.dogtags.monthly_separator') no-repeat center / contain;
+}
+.Body_stateIcon_30 {
+    width: 24rem;
+    height: 24rem;
+    margin-left: 5rem;
+    margin-right: 3rem;
+    background: url('R.images.gui.maps.icons.dogtags.icons.close_icon') center no-repeat;
+    background-size: 10rem;
+}
+.Body_listRow__current_c4 .Body_stateIcon_30 {
+        background-image: url('R.images.gui.maps.icons.dogtags.icons.hour_glass');
+        background-size: 10rem 16rem;
+    }
+.Body_listRow__best_9d .Body_stateIcon_30 {
+        background-image: url('R.images.gui.maps.icons.dogtags.icons.cup');
+        background-size: 24rem;
+    }
+

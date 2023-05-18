@@ -300,25 +300,31 @@ msgstr ""
 msgid "accountCompletion/warningSomethingWentWrong"
 msgstr "Something went wrong."
 
+msgid "addFreeSkillWindow/label"
+msgstr "Zero Perks"
+
+msgid "addFreeSkillWindow/submit"
+msgstr "Select Perk"
+
 msgid "addSkillWindow/cancel"
 msgstr "Cancel"
 
 msgid "addSkillWindow/desc1"
 msgstr ""
-"Skills take effect as soon as training starts, gradually increasing to their "
+"Perks take effect as soon as training starts, gradually increasing to their "
 "full potential."
 
 msgid "addSkillWindow/desc2"
 msgstr "Perks only come into effect after reaching 100%."
 
 msgid "addSkillWindow/label"
-msgstr "Skills and Perks"
+msgstr "Perks"
 
 msgid "addSkillWindow/label/commander"
 msgstr "Commander"
 
 msgid "addSkillWindow/label/common"
-msgstr "common"
+msgstr "group"
 
 msgid "addSkillWindow/label/driver"
 msgstr "Driver"
@@ -333,10 +339,10 @@ msgid "addSkillWindow/label/radioman"
 msgstr "Radio Operator"
 
 msgid "addSkillWindow/submit"
-msgstr "Select"
+msgstr "Select Perk"
 
 msgid "addSkillWindow/title"
-msgstr "View Additional Skills and Perks"
+msgstr "View Additional Perks"
 
 msgid "barracksExpand/cancel"
 msgstr "Cancel"
@@ -543,8 +549,8 @@ msgstr "Consumable \"%(conflicted)s\" will be sent to the Depot due to "
 
 msgid "buyInstallConfirmation/message"
 msgstr ""
-"Purchase and mount %(kind)s \"%(name)s\" on the current vehicle for %(price)s"
-"%(creditsIcon)s? %(conflict)s"
+"Purchase and mount %(kind)s \"%(name)s\" on the current vehicle for "
+"%(price)s%(creditsIcon)s? %(conflict)s"
 
 msgid "buyInstallConfirmation/messageCombine"
 msgstr ""
@@ -579,11 +585,14 @@ msgstr "Purchase"
 msgid "buyPremWithoutBenefitsConfirmation/title"
 msgstr "Confirm Purchase"
 
+msgid "buySlot/hangarSlot/header"
+msgstr "Garage Slot"
+
 msgid "buySlotConfirmation/cancel"
 msgstr "Cancel"
 
 msgid "buySlotConfirmation/message"
-msgstr "Purchase an additional slot for %(goldCost)s gold in the Garage?"
+msgstr "Purchase an additional slot in the Garage for %(goldCost)s?"
 
 msgid "buySlotConfirmation/submit"
 msgstr "Purchase"
@@ -591,16 +600,28 @@ msgstr "Purchase"
 msgid "buySlotConfirmation/title"
 msgstr "Confirm Purchase"
 
-msgid "buySlotNotEnoughCredits/cancel"
+msgid "buySlotNotEnough/credits/cancel"
 msgstr "OK"
 
-msgid "buySlotNotEnoughCredits/message"
+msgid "buySlotNotEnough/credits/message"
+msgstr "Not enough credits to purchase a slot."
+
+msgid "buySlotNotEnough/credits/submit"
+msgstr "OK"
+
+msgid "buySlotNotEnough/credits/title"
+msgstr "Not Enough Credits"
+
+msgid "buySlotNotEnough/gold/cancel"
+msgstr "OK"
+
+msgid "buySlotNotEnough/gold/message"
 msgstr "Not enough gold to purchase a slot."
 
-msgid "buySlotNotEnoughCredits/submit"
+msgid "buySlotNotEnough/gold/submit"
 msgstr "OK"
 
-msgid "buySlotNotEnoughCredits/title"
+msgid "buySlotNotEnough/gold/title"
 msgstr "Not enough gold"
 
 msgid "buySlotShopConfirmation/cancel"
@@ -608,7 +629,8 @@ msgstr "Cancel"
 
 msgid "buySlotShopConfirmation/messageCombine"
 msgstr ""
-"No available slots in the Garage. Purchase an additional slot for {%d} gold?"
+"No available slots in the Garage. Purchase an additional slot for {%d} "
+"credits?"
 
 msgid "buySlotShopConfirmation/submit"
 msgstr "Purchase"
@@ -864,6 +886,37 @@ msgstr "Close"
 msgid "common/submit"
 msgstr "Continue"
 
+msgid "comp7/deserter/cancel"
+msgstr "Cancel"
+
+msgid "comp7/deserter/message"
+msgstr ""
+"This battle is not over yet. If you leave the battle before it ends, you "
+"will be letting down your team.\n"
+"{brown_open}You will be charged a disciplinary penalty.{brown_close}\n"
+"Are you sure you want to leave the battle?"
+
+msgid "comp7/deserter/msgTitle"
+msgstr "You will lose your Rating Points!"
+
+msgid "comp7/deserter/submit"
+msgstr "Desert"
+
+msgid "comp7/deserter/title"
+msgstr "Desertion From Battlefield"
+
+msgid "comp7/punishmentWindow/cancel"
+msgstr "Affirmative!"
+
+msgid "comp7/punishmentWindow/message"
+msgstr "Block duration: %(banDuration)s."
+
+msgid "comp7/punishmentWindow/msgTitle"
+msgstr "You have received a disciplinary penalty"
+
+msgid "comp7/punishmentWindow/title"
+msgstr "Mode Block"
+
 msgid "confirmBattleBoosterBuyAndInstall/cancel"
 msgstr "Cancel"
 
@@ -1059,26 +1112,14 @@ msgstr "Total"
 msgid "confirmModuleDialog/totalLabel"
 msgstr "Total:"
 
-msgid "confirmReward/cancel"
-msgstr "Cancel"
-
-msgid "confirmReward/message"
-msgstr "Claim your rewards from the Gate?"
-
-msgid "confirmReward/submit"
-msgstr "Claim"
-
-msgid "confirmReward/title"
-msgstr "Receiving Reward"
-
 msgid "confirmUnlock/cancel"
 msgstr "No"
 
 msgid "confirmUnlock/item/message"
 msgstr ""
-"Research %(typeString)s %(userString)s for %(color_tag_open)s%(xpCost)s"
-"%(color_tag_close)s%(xpCostIcon)s (including %(color_tag_open)s%(freeXP)s"
-"%(color_tag_close)s%(freeXPIcon)s)?"
+"Research %(typeString)s %(userString)s for "
+"%(color_tag_open)s%(xpCost)s%(color_tag_close)s%(xpCostIcon)s (including "
+"%(color_tag_open)s%(freeXP)s%(color_tag_close)s%(freeXPIcon)s)?"
 
 msgid "confirmUnlock/submit"
 msgstr "Yes"
@@ -1088,9 +1129,9 @@ msgstr "Confirm Research"
 
 msgid "confirmUnlock/vehicle/message"
 msgstr ""
-"Research %(userString)s for %(color_tag_open)s%(xpCost)s%(color_tag_close)s"
-"%(xpCostIcon)s (including %(color_tag_open)s%(freeXP)s%(color_tag_close)s"
-"%(freeXPIcon)s)?"
+"Research %(userString)s for "
+"%(color_tag_open)s%(xpCost)s%(color_tag_close)s%(xpCostIcon)s (including "
+"%(color_tag_open)s%(freeXP)s%(color_tag_close)s%(freeXPIcon)s)?"
 
 msgid "controlsWrongNotification/cancel"
 msgstr "Cancel"
@@ -1476,10 +1517,10 @@ msgid "dropSkill/fullscreen/ok"
 msgstr "Reset"
 
 msgid "dropSkill/fullscreen/title"
-msgstr "Reset all skills and perks?"
+msgstr "Reset all perks?"
 
 msgid "dropSkill/message"
-msgstr "Reset all skills and perks?"
+msgstr "Reset all perks?"
 
 msgid "dropSkill/submit"
 msgstr "Reset"
@@ -1550,6 +1591,18 @@ msgstr "Performance Warning"
 msgid "equipmentBuyInstall/price"
 msgstr "Purchase price:"
 
+msgid "equipmentDeconstruct/confirmation/header"
+msgstr "Disassemble %(equipment)s?"
+
+msgid "equipmentDeconstruction/cancelButton"
+msgstr "Cancel"
+
+msgid "equipmentDeconstruction/confirmAndUpgradeButton"
+msgstr "Disassemble and Upgrade"
+
+msgid "equipmentDeconstruction/confirmButton"
+msgstr "Disassemble"
+
 msgid "equipmentDestroy/DemountOptions/bonds"
 msgstr ""
 "This demounted equipment will be {white_Open}destroyed{white_Close}.\n"
@@ -1569,6 +1622,15 @@ msgstr "Mount equipment '%(equipment)s'?"
 msgid "equipmentSale/conformation/header"
 msgstr "Sell equipment '%(equipment)s'?"
 
+msgid "equipmentUpgrade/cancelButton"
+msgstr "Cancel"
+
+msgid "equipmentUpgrade/confirmButton"
+msgstr "Upgrade"
+
+msgid "equipmentUpgrade/getMoreCurrencyButton"
+msgstr "Continue"
+
 msgid "eula/p1"
 msgstr ""
 "Please read the <BR/><A HREF='event:%(eulaURL)s'><U>End User License "
@@ -1586,9 +1648,10 @@ msgstr "Cancel"
 
 msgid "exchangeGoldConfirmation/message"
 msgstr ""
-"Exchange %(primaryCurrencyColorTagOpen)s%(primaryCurrencyAmount)s%(tagClose)s"
-"%(primaryCurrencyIcon)s for %(resultCurrencyColorTagOpen)s"
-"%(resultCurrencyAmount)s%(tagClose)s%(resultCurrencyIcon)s?"
+"Exchange "
+"%(primaryCurrencyColorTagOpen)s%(primaryCurrencyAmount)s%(tagClose)s%(primaryCurrencyIcon)s "
+"for "
+"%(resultCurrencyColorTagOpen)s%(resultCurrencyAmount)s%(tagClose)s%(resultCurrencyIcon)s?"
 
 msgid "exchangeGoldConfirmation/submit"
 msgstr "Exchange"
@@ -1598,19 +1661,20 @@ msgstr "Exchange Gold"
 
 msgid "exchangeXPConfirmation/available/forFree/message"
 msgstr ""
-"The discount on conversion of up to %(resultCurrencyColorTagOpen)s"
-"%(freeXPLimit)s%(tagClose)s%(resultCurrencyIcon)s XP to Free Experience will "
-"be used. Next time, experience will be converted for gold."
+"The discount on conversion of up to "
+"%(resultCurrencyColorTagOpen)s%(freeXPLimit)s%(tagClose)s%(resultCurrencyIcon)s "
+"XP to Free Experience will be used. Next time, experience will be converted "
+"for gold."
 
 msgid "exchangeXPConfirmation/cancel"
 msgstr "Cancel"
 
 msgid "exchangeXPConfirmation/message"
 msgstr ""
-"Convert %(resultCurrencyColorTagOpen)s%(resultCurrencyAmount)s%(tagClose)s"
-"%(resultCurrencyIcon)s XP to Free Experience for "
-"%(primaryCurrencyColorTagOpen)s%(primaryCurrencyAmount)s%(tagClose)s"
-"%(primaryCurrencyIcon)s?"
+"Convert "
+"%(resultCurrencyColorTagOpen)s%(resultCurrencyAmount)s%(tagClose)s%(resultCurrencyIcon)s "
+"XP to Free Experience for "
+"%(primaryCurrencyColorTagOpen)s%(primaryCurrencyAmount)s%(tagClose)s%(primaryCurrencyIcon)s?"
 
 msgid "exchangeXPConfirmation/submit"
 msgstr "Transfer"
@@ -1692,6 +1756,33 @@ msgstr "Confirm"
 msgid "fortificationFixedPlayers/title"
 msgstr "Attach to Structure"
 
+msgid "freeSkillsInfo/message"
+msgstr ""
+"A zero perk is available to a crew member by default. It does not require "
+"spending experience and cannot be changed by a player. A zero perk provides "
+"an advantage by significantly reducing the amount of experience required for "
+"further training of the crew member."
+
+msgid "freeSkillsInfo/submit"
+msgstr "Affirmative!"
+
+msgid "freeSkillsInfo/title"
+msgstr "About Zero Perks"
+
+msgid "freeSkillsLearning/message"
+msgstr ""
+"%(iconWarning) {orange_Open}After confirmation, a zero perk cannot be "
+"changed.{orange_Close}\n"
+"A zero perk does not require spending experience and cannot be changed by a "
+"player. It provides an advantage by significantly reducing the amount of "
+"experience required for further training of the crew member."
+
+msgid "freeSkillsLearning/title/learning"
+msgstr "Select %(skillName)s as a zero perk?"
+
+msgid "freeSkillsLearning/title/relearning"
+msgstr "Re-train %(skillName)s as a zero perk?"
+
 msgid "freeSlotConfirmation/cancel"
 msgstr "Cancel"
 
@@ -1723,15 +1814,16 @@ msgstr ""
 "game resource earned in battles.\n"
 "\n"
 "It includes:%(simpleText_close)s\n"
-"%(xpIcon)s%(orangeText_open)sCombat Experience%(orangeText_close)s"
-"%(simpleText_open)s is used to research new modules of a certain vehicle, as "
-"well as for further progress in the game of the Wargaming universe in which "
-"the experience was earned.%(simpleText_close)s\n"
+"%(xpIcon)s%(orangeText_open)sCombat "
+"Experience%(orangeText_close)s%(simpleText_open)s is used to research new "
+"modules of a certain vehicle, as well as for further progress in the game of "
+"the Wargaming universe in which the experience was earned."
+"%(simpleText_close)s\n"
 "\n"
-"%(freeXPIcon)s%(orangeText_open)sFree Experience%(orangeText_close)s"
-"%(simpleText_open)s is used to research any modules and vehicles, as well as "
-"to accelerate crew training. Please spend Free Experience carefully."
-"%(simpleText_close)s"
+"%(freeXPIcon)s%(orangeText_open)sFree "
+"Experience%(orangeText_close)s%(simpleText_open)s is used to research any "
+"modules and vehicles, as well as to accelerate crew training. Please spend "
+"Free Experience carefully.%(simpleText_close)s"
 
 msgid "freeXPInfo/submitBtnLbl"
 msgstr "Continue"
@@ -1944,10 +2036,13 @@ msgstr "{orange_Open}One or more crew members are unsuitable{orange_Close}"
 msgid "idleCrewBonus/message/crewWarning"
 msgstr "The selected vehicle is unsuitable for one of the following reasons:"
 
-msgid "idleCrewBonus/message/remove"
+msgid "idleCrewBonus/message/removeName"
+msgstr "{white_Open}%(vehicleName)s{white_Close}"
+
+msgid "idleCrewBonus/message/removeType"
 msgstr ""
-"Only 1 crew can receive the bonus. The bonus will be removed from the "
-"{white_Open}%s{white_Close}"
+"Only one crew can receive the bonus. The bonus will be removed from the "
+"%(typeIcon)"
 
 msgid "idleCrewBonus/submit"
 msgstr "Confirm"
@@ -2313,11 +2408,8 @@ msgstr "Confirm"
 
 msgid "protectedDismissTankman/additionalMessage"
 msgstr ""
-"For this operation, enter the level %(skillType)s \"%(skillName)s"
-"\" (%(roleLevel)s)"
-
-msgid "protectedDismissTankman/additionalMessage/isAbillity"
-msgstr "of a skill"
+"For this operation, enter the level %(skillType)s "
+"\"%(skillName)s\" (%(roleLevel)s)"
 
 msgid "protectedDismissTankman/additionalMessage/isPerk"
 msgstr "of a perk"
@@ -2475,63 +2567,53 @@ msgstr "Exit"
 msgid "quit/title"
 msgstr "Exit Game?"
 
-msgid "quitBattle/cancel"
-msgstr "No"
-
-msgid "quitBattle/deserter/cancel"
+msgid "quitBattle/IGR/leaver/cancel"
 msgstr "Cancel"
 
-msgid "quitBattle/deserter/message"
+msgid "quitBattle/IGR/leaver/descriptionAlive"
 msgstr ""
-"The team needs you! Leaving the battle before your vehicle is destroyed is "
-"considered desertion and can result in a disciplinary penalty."
-"%(additionalInfo)s"
+"Your team needs you! Leaving a battle before it ends or before your vehicle "
+"is destroyed is considered desertion. This may result in a disciplinary "
+"penalty and the loss of all bonuses for the battle played in IGR."
 
-msgid "quitBattle/deserter/submit"
+msgid "quitBattle/IGR/leaver/submit"
 msgstr "Desert"
 
-msgid "quitBattle/deserter/title"
-msgstr "Desertion from Battlefield"
+msgid "quitBattle/IGR/leaver/title"
+msgstr "Desert the battlefield?"
 
-msgid "quitBattle/message"
-msgstr "Exit battle?"
+msgid "quitBattle/cancel"
+msgstr "Cancel"
+
+msgid "quitBattle/leaver/cancel"
+msgstr "Cancel"
+
+msgid "quitBattle/leaver/descriptionAlive"
+msgstr ""
+"Your team needs you! Leaving a battle before it ends or before your vehicle "
+"is destroyed is considered desertion. This may result in a disciplinary "
+"penalty."
+
+msgid "quitBattle/leaver/submit"
+msgstr "Desert"
+
+msgid "quitBattle/leaver/title"
+msgstr "Desert the battlefield?"
+
+msgid "quitBattle/replay/cancel"
+msgstr "Cancel"
+
+msgid "quitBattle/replay/submit"
+msgstr "Quit"
+
+msgid "quitBattle/replay/title"
+msgstr "Exit the Spectator mode?"
 
 msgid "quitBattle/submit"
-msgstr "Yes"
+msgstr "Leave"
 
 msgid "quitBattle/title"
-msgstr "Exit Battle"
-
-msgid "quitBattleIGR/cancel"
-msgstr "No"
-
-msgid "quitBattleIGR/deserter/cancel"
-msgstr "Cancel"
-
-msgid "quitBattleIGR/deserter/message"
-msgstr ""
-"The team needs you! Leaving the battle before it ends or before your vehicle "
-"is destroyed is considered desertion and can result in a disciplinary "
-"penalty and deprivation of all bonuses for the battle played in IGR."
-"%(additionalInfo)s"
-
-msgid "quitBattleIGR/deserter/submit"
-msgstr "Desert"
-
-msgid "quitBattleIGR/deserter/title"
-msgstr "Desertion from Battlefield"
-
-msgid "quitBattleIGR/message"
-msgstr ""
-"Warning! Your vehicle is still operational. If you leave the game now you "
-"won't get perks and won't be able to come back to this battle. Are you sure "
-"you want to quit?"
-
-msgid "quitBattleIGR/submit"
-msgstr "Yes"
-
-msgid "quitBattleIGR/title"
-msgstr "Exit Battle"
+msgstr "Leave battle?"
 
 msgid "quitPreBattle/cancel"
 msgstr "No"
@@ -2544,18 +2626,6 @@ msgstr "Yes"
 
 msgid "quitPreBattle/title"
 msgstr "Exit Pre-Battle Lobby"
-
-msgid "quitReplay/cancel"
-msgstr "No"
-
-msgid "quitReplay/message"
-msgstr "Exit the Spectator mode?"
-
-msgid "quitReplay/submit"
-msgstr "Yes"
-
-msgid "quitReplay/title"
-msgstr "Exit Spectator Mode"
 
 msgid "rally/autoSearch/cancel"
 msgstr "No"
@@ -2596,19 +2666,6 @@ msgstr "Proceed"
 
 msgid "rally/goToAnother/title"
 msgstr "Change Mode"
-
-msgid "rally/goToBattleTutorial/cancel"
-msgstr "Cancel"
-
-msgid "rally/goToBattleTutorial/message"
-msgstr ""
-"Are you sure you want to leave the tactical unit and go to Battle Training?"
-
-msgid "rally/goToBattleTutorial/submit"
-msgstr "Proceed"
-
-msgid "rally/goToBattleTutorial/title"
-msgstr "Go to Battle Training"
 
 msgid "rally/goToIntro/cancel"
 msgstr "Cancel"
@@ -2668,6 +2725,12 @@ msgstr "Yes"
 
 msgid "rally/startBattle/title"
 msgstr "Search for Enemy"
+
+msgid "recruitDialog/name/title"
+msgstr "Recruit a new crew member (%(name)s)?"
+
+msgid "recruitDialog/title"
+msgstr "Recruit a new crew member?"
 
 msgid "recruitWindow/cancel"
 msgstr "Cancel"
@@ -2873,18 +2936,6 @@ msgstr "Continue"
 msgid "reportBug/title"
 msgstr "Go to Game Forum"
 
-msgid "rerollReward/cancel"
-msgstr "Cancel"
-
-msgid "rerollReward/confirm"
-msgstr "Re-Roll Reward"
-
-msgid "rerollReward/message"
-msgstr "It will cost:"
-
-msgid "rerollReward/title"
-msgstr "Are you sure you want to re-roll the current reward?"
-
 msgid "resetGraphics/cancel"
 msgstr "Continue"
 
@@ -2957,57 +3008,6 @@ msgstr ""
 msgid "retrainingWindow/submit"
 msgstr "Retrain"
 
-msgid "sandBox/cancel"
-msgstr "No"
-
-msgid "sandBox/goToAnother/cancel"
-msgstr "Cancel"
-
-msgid "sandBox/goToAnother/message"
-msgstr ""
-"If you change the battle mode, you will automatically leave the Proving "
-"Ground mode."
-
-msgid "sandBox/goToAnother/submit"
-msgstr "Proceed"
-
-msgid "sandBox/goToAnother/title"
-msgstr "Change Mode"
-
-msgid "sandBox/goToBattleTutorial/cancel"
-msgstr "Cancel"
-
-msgid "sandBox/goToBattleTutorial/message"
-msgstr "Leave the tactical unit and go to Battle Training?"
-
-msgid "sandBox/goToBattleTutorial/submit"
-msgstr "Proceed"
-
-msgid "sandBox/goToBattleTutorial/title"
-msgstr "Go to Battle Training"
-
-msgid "sandBox/goToSquad/cancel"
-msgstr "Cancel"
-
-msgid "sandBox/goToSquad/message"
-msgstr ""
-"If you create a Platoon, you will automatically leave the current mode."
-
-msgid "sandBox/goToSquad/submit"
-msgstr "Create"
-
-msgid "sandBox/goToSquad/title"
-msgstr "Create Platoon"
-
-msgid "sandBox/message"
-msgstr "Do you want to enter the sandbox?"
-
-msgid "sandBox/submit"
-msgstr "Yes"
-
-msgid "sandBox/title"
-msgstr "Sandbox"
-
 msgid "sellConfirmation/cancel"
 msgstr "Cancel"
 
@@ -3065,7 +3065,7 @@ msgid "skillDropWindow/submit"
 msgstr "Reset"
 
 msgid "skillDropWindow/title"
-msgstr "Skill and Perk Reset"
+msgstr "Perk Reset"
 
 msgid "soundModeInvalid/cancel"
 msgstr "Cancel"
@@ -3133,20 +3133,6 @@ msgstr "Proceed"
 
 msgid "squad/goToAnother/title"
 msgstr "Change Mode"
-
-msgid "squad/goToBattleTutorial/cancel"
-msgstr "Cancel"
-
-msgid "squad/goToBattleTutorial/message"
-msgstr ""
-"You are in a Platoon. If you go to Battle Training, you will be excluded "
-"from the Platoon."
-
-msgid "squad/goToBattleTutorial/submit"
-msgstr "Proceed"
-
-msgid "squad/goToBattleTutorial/title"
-msgstr "Go to Battle Training"
 
 msgid "squad/goToSquad/cancel"
 msgstr "Cancel"
@@ -3411,21 +3397,6 @@ msgstr "Retrain"
 msgid "tankmanRetraining/unknownVehicleByGold/title"
 msgstr "Confirm Retraining"
 
-msgid "technicalMaintenanceConfirm/cancel"
-msgstr "Cancel"
-
-msgid "technicalMaintenanceConfirm/message"
-msgstr "%(content)s"
-
-msgid "technicalMaintenanceConfirm/msg_repair"
-msgstr "Repair the vehicle?"
-
-msgid "technicalMaintenanceConfirm/submit"
-msgstr "OK"
-
-msgid "technicalMaintenanceConfirm/title"
-msgstr "Confirm Purchase"
-
 msgid "tradeInConfirmation/cancel"
 msgstr "Cancel"
 
@@ -3639,8 +3610,8 @@ msgstr "CONFIRM SALE"
 
 msgid "vehicleSellDialog/CtrlQuestion/Question"
 msgstr ""
-"To confirm, enter the sale price from the column \"Total"
-"\" (%(control_tag_open)s%(controlNumber)s%(control_tag_close)s)"
+"To confirm, enter the sale price from the column "
+"\"Total\" (%(control_tag_open)s%(controlNumber)s%(control_tag_close)s)"
 
 msgid "vehicleSellDialog/CtrlQuestion/errorMessage"
 msgstr "You have entered incorrect information."
@@ -3671,6 +3642,9 @@ msgstr "CREW:"
 
 msgid "vehicleSellDialog/customization"
 msgstr "EXTERIOR:"
+
+msgid "vehicleSellDialog/deconstruct"
+msgstr "Disassemble"
 
 msgid "vehicleSellDialog/equipment"
 msgstr "CONSUMABLES:"

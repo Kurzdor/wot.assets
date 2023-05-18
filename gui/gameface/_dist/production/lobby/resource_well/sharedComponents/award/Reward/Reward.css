@@ -1,0 +1,183 @@
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.VehicleInfo_base_28 {
+    display: flex;
+    align-items: center;
+}
+
+    .VehicleInfo_base__intro_e5 {
+        color: #FFDD99;
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+    .mediaMedium .VehicleInfo_base__intro_e5 {
+            color: #FFDD99;
+            font-size: 24rem;
+            font-weight: 700;
+            line-height: 1.2;
+}
+
+    .mediaLarge .VehicleInfo_base__intro_e5 {
+            color: #FFDD99;
+            font-size: 28rem;
+            font-weight: 700;
+            line-height: 1.1;
+}
+
+    .mediaExtraLarge .VehicleInfo_base__intro_e5 {
+            color: #FFDD99;
+            font-size: 36rem;
+            font-weight: 700;
+            line-height: 1.1;
+}
+
+    .VehicleInfo_base__progression_85 {
+        color: #CED9D9;
+        font-size: 28rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+    .mediaLarge .VehicleInfo_base__progression_85 {
+            font-size: 36rem;
+}
+
+.VehicleInfo_type_e7 {
+    position: relative;
+}
+
+.VehicleInfo_type_e7[lang=ko] {
+        transform: translateY(-2rem);
+    }
+
+.VehicleInfo_base__intro_e5 .VehicleInfo_type_e7 {
+        width: 36rem;
+        transform: translateY(2rem);
+    }
+
+.VehicleInfo_base__intro_e5 .VehicleInfo_type_e7[lang=ko] {
+            transform: translateY(-2rem);
+        }
+
+.mediaMedium .VehicleInfo_base__intro_e5 .VehicleInfo_type_e7 {
+            width: 50rem;
+            transform: translateY(4rem);
+}
+
+.mediaMedium .VehicleInfo_base__intro_e5 .VehicleInfo_type_e7[lang=ko] {
+                transform: translateY(-2rem);
+            }
+
+.mediaExtraLarge .VehicleInfo_base__intro_e5 .VehicleInfo_type_e7 {
+            width: 55rem;
+}
+
+.VehicleInfo_base__award_e7 .VehicleInfo_type_e7 {
+        width: 50rem;
+        transform: translateY(3rem);
+    }
+
+.VehicleInfo_base__award_e7 .VehicleInfo_type_e7[lang=ko] {
+            transform: translateY(-2rem);
+        }
+
+.mediaLarge .VehicleInfo_base__award_e7 .VehicleInfo_type_e7 {
+            width: 60rem;
+            transform: translateY(4rem);
+}
+
+.mediaLarge .VehicleInfo_base__award_e7 .VehicleInfo_type_e7[lang=ko] {
+                transform: translateY(-2rem);
+            }
+
+.VehicleInfo_base__progression_85 .VehicleInfo_type_e7 {
+        width: 50rem;
+        transform: translateY(2rem);
+    }
+
+.VehicleInfo_base__progression_85 .VehicleInfo_type_e7[lang=ko] {
+            transform: translateY(-2rem);
+        }
+
+.mediaLarge .VehicleInfo_base__progression_85 .VehicleInfo_type_e7[lang=ko] {
+                transform: translateY(-4rem);
+            }
+
+.VehicleInfo_ico_c9 {
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.VehicleInfo_base__intro_e5 .VehicleInfo_ico_c9 {
+        width: 56rem;
+        height: 56rem;
+    }
+
+.mediaMedium .VehicleInfo_base__intro_e5 .VehicleInfo_ico_c9 {
+            width: 83rem;
+            height: 74rem;
+}
+
+.VehicleInfo_base__award_e7 .VehicleInfo_ico_c9 {
+        width: 74rem;
+        height: 74rem;
+    }
+
+.mediaLarge .VehicleInfo_base__award_e7 .VehicleInfo_ico_c9 {
+            width: 84rem;
+            height: 84rem;
+}
+
+.VehicleInfo_base__progression_85 .VehicleInfo_ico_c9 {
+        width: 70rem;
+        height: 70rem;
+    }
+
+.Reward_base_3a {
+    position: relative;
+}
+
+.Reward_title_4c {
+    color: #F2F2F7;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.mediaMedium .Reward_title_4c {
+        color: #F2F2F7;
+        font-size: 28rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.mediaLarge .Reward_title_4c {
+        color: #F2F2F7;
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.Reward_title__block_cf {
+        position: static;
+        transform: translateX(0);
+    }
+
+.Reward_formatText_d5 {
+    flex-wrap: nowrap;
+}
+

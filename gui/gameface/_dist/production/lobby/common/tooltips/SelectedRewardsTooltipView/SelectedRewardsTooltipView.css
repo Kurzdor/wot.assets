@@ -1,0 +1,184 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem; /* border offset*/
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.TooltipDecorator_decoratorContent_de {
+    background-color: #000;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #FFFFFF;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #F2F2F7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #FEFEEC;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #E9E2BF;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8C8C7E;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362E;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #FF2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #B70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #FEAB34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #EE7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #FFDD99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #CBAC77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80D43A;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7AB300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #CCFFFF;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09E2FF;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #CED9D9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #FFC363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #C9C9B6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #A29B70;
+}
+
+.Category_base_e5 {
+    display: flex;
+}
+
+.Category_image_e5 {
+    width: 48rem;
+    height: 48rem;
+    margin-right: 10rem;
+    background: no-repeat center / contain;
+}
+
+.Category_content_4f {
+    flex: 1 1 100%;
+    padding-top: 3rem;
+}
+
+.Category_title_0e {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 5rem;
+}
+
+.Category_rewards_10 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Category_counter_79 {
+    color: #F2F2F7;
+}
+
+.App_base_ba {
+    width: 508rem;
+    padding: 20rem 20rem 10rem;
+    box-shadow: inset 0 0 25rem rgba(242, 242, 230, .1);
+    background-color: #12110b;
+    background-image: linear-gradient(180deg, rgba(51,51,41, .3) 0%, transparent 15.62%, transparent 88.02%, rgba(51,51,41, .1) 100%);
+}
+
+.App_title_43 {
+    color: rgba(233,226,191, .5);
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10rem;
+}
+
+.App_description_43 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 10rem;
+}
+
+.App_divider_36 {
+    height: 9rem;
+    margin: 0 -20rem;
+    background: url('R.images.gui.maps.icons.selectableReward.tooltips.divider') repeat-x center left;
+    mask-image: linear-gradient(90deg, transparent 0%, rgba(201,201,182, .2) 38.22%, rgba(201,201,182, .2) 64.56%, transparent 100%);
+}
+
+.App_category_c3 {
+    margin: 10rem 0;
+}
+

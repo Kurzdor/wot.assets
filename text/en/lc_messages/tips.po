@@ -10,14 +10,11 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "battlePassChapterChoice"
-msgstr "Free Choice of Chapter"
-
-msgid "battlePassPoints"
-msgstr "Battle Pass Points"
-
-msgid "battlePassSpecialVehicles"
+msgid "battlePassStyles"
 msgstr "New progressive styles"
+
+msgid "battlePassToken"
+msgstr "New vehicles for Tokens"
 
 msgid "battleRoyale0"
 msgstr ""
@@ -80,6 +77,297 @@ msgstr "Each Vehicle Has Unique Abilities"
 
 msgid "beCareful"
 msgstr "Be Careful"
+
+msgid "comp70"
+msgstr ""
+"Fight for Rating Points to reach the highest ranks and prove your "
+"superiority."
+
+msgid "comp70Status"
+msgstr "Ranked System"
+
+msgid "comp71"
+msgstr ""
+"The more Prestige Points you earn in battle, the more Rating Points you will "
+"receive for a victory, and the fewer you will lose for a defeat."
+
+msgid "comp710"
+msgstr ""
+"You can switch to a more suitable vehicle during Pre-Battle Preparation."
+
+msgid "comp710Status"
+msgstr "Pre-Battle Preparation"
+
+msgid "comp711"
+msgstr ""
+"The Pre-Battle Preparation screen displays your vehicles fitted with the "
+"crew and shells. Do not forget to prepare them before entering battle."
+
+msgid "comp711Status"
+msgstr "Pre-Battle Preparation"
+
+msgid "comp712"
+msgstr ""
+"Once you have selected your vehicle, let your allies know by clicking the "
+"Confirm Selection button."
+
+msgid "comp712Status"
+msgstr "Pre-Battle Preparation"
+
+msgid "comp713"
+msgstr ""
+"After clicking the Confirm Selection button, you will not be able to change "
+"vehicles."
+
+msgid "comp713Status"
+msgstr "Confirm Your Selection"
+
+msgid "comp714"
+msgstr ""
+"Capture special points on the map to access Tactical Skills and gain the "
+"upper hand!"
+
+msgid "comp714Status"
+msgstr "Points of Interest"
+
+msgid "comp715"
+msgstr ""
+"A Point of Interest on the map. Capturing this location will allow you to "
+"use the Divisional Radar Tactical Skill. When activated, all enemy vehicles "
+"will remain spotted for several seconds."
+
+msgid "comp715Status"
+msgstr "Comms Center"
+
+msgid "comp716"
+msgstr ""
+"A Point of Interest on the map. Capturing this location will allow you to "
+"use the Artillery Strike Tactical Skill. When activated, the player can "
+"select an area to be hit by an artillery barrage."
+
+msgid "comp716Status"
+msgstr "Artillery Headquarters"
+
+msgid "comp717"
+msgstr ""
+"If the Artillery Strike Tactical Skill hits your ally, they will not get "
+"damaged. However, they will be stunned."
+
+msgid "comp717Status"
+msgstr "Artillery Strike"
+
+msgid "comp718"
+msgstr ""
+"Please note: Maps in this mode may differ from their Random Battles "
+"counterparts."
+
+msgid "comp718Status"
+msgstr "Maps in the Event"
+
+msgid "comp719"
+msgstr "Creating a Platoon of 7 players can improve your chances of winning."
+
+msgid "comp719Status"
+msgstr "Team Play is Key"
+
+msgid "comp71Status"
+msgstr "Prestige Points and Rating Points"
+
+msgid "comp72"
+msgstr "In Onslaught, battles are matched among players of similar ranks."
+
+msgid "comp720"
+msgstr ""
+"Leaving a battle before it ends puts your allies at a disadvantage. Doing so "
+"will result in a temporary block and the removal of Rating Points."
+
+msgid "comp720Status"
+msgstr "Desertion"
+
+msgid "comp721"
+msgstr ""
+"You can check the charge level of your allies' Role Skills in battle by "
+"pressing the Tab or Alt keys."
+
+msgid "comp721Status"
+msgstr "Ally Role Skills"
+
+msgid "comp722"
+msgstr ""
+"You can check the team list to see if your allies have acquired any Tactical "
+"Skills. Enemy Tactical Skills are not displayed."
+
+msgid "comp722Status"
+msgstr "Tactical Skills"
+
+msgid "comp723"
+msgstr ""
+"If a Role Skill impacts a vehicle, the corresponding icon will be displayed "
+"above the player's marker."
+
+msgid "comp723Status"
+msgstr "Role Skill Effects"
+
+msgid "comp724"
+msgstr ""
+"The H key (by default) enables voice chat. Use this feature to communicate "
+"with your team more effectively."
+
+msgid "comp724Status"
+msgstr "Voice Chat"
+
+msgid "comp725"
+msgstr ""
+"If you have any issues with voice chat, check your settings in the game "
+"client."
+
+msgid "comp725Status"
+msgstr "Voice Chat"
+
+msgid "comp726"
+msgstr ""
+"Only players in the Champion and Legend ranks are displayed on the "
+"Leaderboard. All players who make the Leaderboard will receive daily rewards."
+
+msgid "comp726Status"
+msgstr "Leaderboard"
+
+msgid "comp727"
+msgstr ""
+"Deserters will be temporarily blocked from participating in the game mode. "
+"The duration of the block will be increased for each consecutive violation."
+
+msgid "comp727Status"
+msgstr "Temporary Block"
+
+msgid "comp728"
+msgstr ""
+"Fight in the game mode to unlock new elements of the Onslaught progressive "
+"style."
+
+msgid "comp728Status"
+msgstr "Progressive Style"
+
+msgid "comp729"
+msgstr ""
+"When pressing Alt, the role of any vehicle within your view range will be "
+"displayed above the player's marker. For allied players, you will also see "
+"their Role Skill charge level."
+
+msgid "comp729Status"
+msgstr "Vehicle Roles"
+
+msgid "comp72Status"
+msgstr "Worthy Players"
+
+msgid "comp73"
+msgstr ""
+"The Legend rank is only awarded to the best of the best. To achieve this "
+"rank, you need to be in the top 10% of players on the Leaderboard by Rating "
+"Points earned."
+
+msgid "comp730"
+msgstr "Play in the mode to receive unique Season rewards!"
+
+msgid "comp730Status"
+msgstr "Season of the Crimson Griffin"
+
+msgid "comp731"
+msgstr ""
+"You can reassign hotkeys for Role and Tactical Skills in the game settings."
+
+msgid "comp731Status"
+msgstr "Control Settings"
+
+msgid "comp732"
+msgstr ""
+"After a certain amount of time, you will be able to re-capture a Point of "
+"Interest."
+
+msgid "comp732Status"
+msgstr "About Points of Interest"
+
+msgid "comp733"
+msgstr ""
+"You cannot capture a Point of Interest until you use the corresponding "
+"Tactical Skill."
+
+msgid "comp733Status"
+msgstr "About Points of Interest"
+
+msgid "comp734"
+msgstr "Capturing a Point of Interest earns you a number of Prestige Points."
+
+msgid "comp734Status"
+msgstr "About Points of Interest"
+
+msgid "comp735"
+msgstr ""
+"Check out the event regulations to learn more about earning Prestige Points."
+
+msgid "comp735Status"
+msgstr "About Prestige Points"
+
+msgid "comp736"
+msgstr ""
+"Please note: If you leave a battle before it ends, you will lose more Rating "
+"Points than if you had lost in a terrible defeat."
+
+msgid "comp736Status"
+msgstr "Desertion"
+
+msgid "comp73Status"
+msgstr "Legend"
+
+msgid "comp74"
+msgstr ""
+"If you stop playing in this mode, you will lose Rating Points. This rule "
+"applies to the Silver, Gold, Champion, and Legend ranks."
+
+msgid "comp74Status"
+msgstr "Rank Inactivity"
+
+msgid "comp75"
+msgstr ""
+"Depending on the role, each vehicle has a special skill with three charge "
+"levels. The higher the charge level when the skill is activated, the "
+"stronger the effect."
+
+msgid "comp75Status"
+msgstr "About Role Skills"
+
+msgid "comp76"
+msgstr ""
+"Prestige Points can be earned for impressive performance in battle, "
+"capturing Points of Interest, using skills, etc."
+
+msgid "comp76Status"
+msgstr "About Prestige Points"
+
+msgid "comp77"
+msgstr ""
+"You can learn more about Onslaught by clicking the ABOUT THE EVENT button on "
+"the event screen."
+
+msgid "comp77Status"
+msgstr "Mode Details"
+
+msgid "comp78"
+msgstr ""
+"Players will have no information about their opponents' vehicles until they "
+"are spotted."
+
+msgid "comp78Status"
+msgstr "Fog of War"
+
+msgid "comp79"
+msgstr ""
+"With a collection of Tier X vehicles in different roles, you can always pick "
+"out the very best vehicle for any battle, and adapt to your allies' vehicles "
+"as well."
+
+msgid "comp79Status"
+msgstr "Enlarge Garage"
 
 msgid "dualGunVehicles"
 msgstr "Vehicles with the double-barreled gun system"
@@ -219,6 +507,37 @@ msgstr "Follow the Rules"
 msgid "howToPlay"
 msgstr "How to Play"
 
+msgid "mapbox0"
+msgstr ""
+"If your vehicle is in the danger zone during a random event (for example, in "
+"the plane crash area), it will be destroyed!"
+
+msgid "mapbox0Status"
+msgstr "Random Event Danger Zone"
+
+msgid "mapbox1"
+msgstr ""
+"The random event area will be marked on the minimap with a corresponding "
+"icon, and a red border will appear on the area of the map itself 20 seconds "
+"before the event occurs."
+
+msgid "mapbox1Status"
+msgstr "Event Markers"
+
+msgid "mapbox2"
+msgstr ""
+"Dynamic cover: Interactive environment objects that can be moved, flipped, "
+"or used in battle to attack or defend."
+
+msgid "mapbox2Status"
+msgstr "Interacting with Environment"
+
+msgid "mapbox3"
+msgstr "Use the new environment elements for effective battle performance."
+
+msgid "mapbox3Status"
+msgstr "New Game Options"
+
 msgid "payAttention"
 msgstr "Pay Attention"
 
@@ -340,16 +659,6 @@ msgstr "End of Season Rewards"
 
 msgid "rankedStatus9"
 msgstr "Rewards for Ranks"
-
-msgid "sandbox0"
-msgstr ""
-"You spawn in area 1 (for tanks and tank destroyers) or 2 (for SPGs). Apply "
-"everything you have learned during battle training and claim victory."
-
-msgid "sandbox1"
-msgstr ""
-"You spawn at the green base, which gives you three options for starting the "
-"attack. Choose your tactics and try to secure victory."
 
 msgid "security"
 msgstr "Security Above Everything"
@@ -712,23 +1021,14 @@ msgstr ""
 
 msgid "tip188"
 msgstr ""
-"During Season IX of Battle Pass, three styles will be available for the "
-"following Core Vehicles: the AMX 13 105, the Progetto M40 mod. 65, and the "
-"60TP Lewandowskiego. At the beginning of each Chapter, you will be able to "
-"select one of the three styles."
+"During Season X of Battle Pass, three styles will be available for the "
+"following Core Vehicles: the Rinoceronte, the UDES 15/16, and the Maus."
 
 msgid "tip189"
 msgstr ""
-"As you progress through Battle Pass, you will accumulate Points that can be "
-"spent in a special section of the in-game Store once the main Chapters have "
-"been completed. This section will contain items from previous Seasons, as "
-"well as bonds."
-
-msgid "tip190"
-msgstr ""
-"In Battle Pass, you can select the Chapters you wish to complete and switch "
-"between them at any time, even if you have already started a different one. "
-"Your progress in each Chapter is saved."
+"This Season brings two new Tier IX vehicles: the BZ-58-2 heavy tank and the "
+"KPz 3 Projekt 07 HK tank destroyer. You can purchase them using Battle Pass "
+"Tokens."
 
 msgid "tip191"
 msgstr ""
@@ -792,6 +1092,17 @@ msgid "tip201"
 msgstr ""
 "Allows for partially maintaining mobility when the main track is destroyed."
 
+msgid "tip202"
+msgstr ""
+"The use of jet boosters increases the vehicle's mobility. It allows you to "
+"take advantageous positions or cross dangerous areas faster."
+
+msgid "tip202Status"
+msgstr "Vehicles With Jet Boosters"
+
+msgid "tip203"
+msgstr "Press the TAB or B keys to activate Personal Reserves"
+
 msgid "tip23"
 msgstr "Light vehicles with weak armor protection can be destroyed by ramming."
 
@@ -817,8 +1128,8 @@ msgstr ""
 
 msgid "tip32"
 msgstr ""
-"Additional perks and skills become available after training your crew to "
-"100% in their major qualification."
+"Additional perks become available after training your crew to 100% in their "
+"major qualification."
 
 msgid "tip33"
 msgstr ""
@@ -945,7 +1256,7 @@ msgid "tip77"
 msgstr ""
 "Acceleration is affected by engine power, vehicle weight, and terrain type. "
 "It can be improved by mounting the corresponding equipment or by using the "
-"corresponding consumables, modifications, and crew member skills."
+"corresponding consumables, modifications, and crew perks."
 
 msgid "tip78"
 msgstr ""
@@ -960,7 +1271,7 @@ msgstr ""
 msgid "tip81"
 msgstr ""
 "The speed with which the sight snaps to the target is determined by the "
-"Gunner's skills, certain mounted equipment and consumables."
+"Gunner's perks, certain mounted equipment and consumables."
 
 msgid "tip83"
 msgstr "Auto-Aim turns off if the tracked target is destroyed or lost."
@@ -1010,7 +1321,7 @@ msgstr "The Commander boosts the major qualifications of other crew members."
 msgid "tip95"
 msgstr ""
 "All Combat Experience earned with Accelerate Crew Training enabled is "
-"received by the least-skilled crew member."
+"received by the least trained crew member."
 
 msgid "tip98"
 msgstr ""
@@ -1025,3 +1336,11 @@ msgstr "Useful Options"
 
 msgid "wheeledVehicles"
 msgstr "Wheeled vehicles are some of the most dynamic in the game"
+
+msgid "winback1"
+msgstr ""
+"You can exit Warm-Up in the mode selection menu of the Random Battle "
+"settings."
+
+msgid "winback1Status"
+msgstr "Pay Attention"

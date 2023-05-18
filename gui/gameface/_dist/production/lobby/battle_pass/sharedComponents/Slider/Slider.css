@@ -1,0 +1,243 @@
+/* colors*/
+
+/* buttons*/
+
+@keyframes Slider_fadeOut_15 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes Slider_fadeIn_2e {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Slider_fadeInWithScale_67 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes Slider_slideUp_a7 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Slider_scale_ce {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes Slider_rotate_9f {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.Slider_base_df {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 0 130rem;
+    position: relative;
+}
+
+.Slider_base__carousel_de {
+        padding: 0 20rem;
+    }
+
+.Slider_trackWrapper_79 {
+    overflow: hidden;
+}
+
+.Slider_base__carousel_de .Slider_trackWrapper_79 {
+        overflow: visible;
+    }
+
+.Slider_track_4c {
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    transition: .5s cubic-bezier(.78, .13, .15, .86) transform;
+}
+
+.Slider_base__withoutAnimation_14 .Slider_track_4c {
+        transition-property: none;
+    }
+
+.Slider_base__withoutPointer_01 .Slider_track_4c {
+        pointer-events: none;
+    }
+
+.Slider_slide_8b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    opacity: 0;
+    transition: .5s cubic-bezier(.78, .13, .15, .86) opacity,
+                .5s cubic-bezier(.78, .13, .15, .86) filter,
+                .5s cubic-bezier(.78, .13, .15, .86) transform;
+}
+
+.Slider_slide__active_97 {
+        opacity: 1;
+    }
+
+.Slider_slide__carousel_0c {
+        filter: brightness(1);
+        opacity: 0;
+        transform: scale(.66);
+        pointer-events: none;
+    }
+
+.Slider_base__carousel_de .Slider_slide__active_97 {
+        opacity: 1;
+        transform: scale(1);
+        pointer-events: inherit;
+    }
+
+.Slider_slide__beforeActive_35,
+    .Slider_slide__afterActive_1f {
+        opacity: .5;
+        cursor: pointer;
+        pointer-events: inherit;
+    }
+
+.Slider_slide__beforeActive_35:hover, .Slider_slide__afterActive_1f:hover {
+            filter: brightness(.8);
+            opacity: .9;
+        }
+
+/* becouse of 4k performance */
+
+.Slider_slide__beforeActive_35 {
+        transform: scale(.66) translateX(150px);
+    }
+
+/* stylelint-disable */
+
+.Slider_slide__beforeActiveLarge_b1 {
+        transform: scale(.66) translateX(200px);
+    }
+
+.Slider_slide__afterActive_1f {
+        transform: scale(.66) translateX(-150px);
+    }
+
+.Slider_slide__afterActiveLarge_cb {
+        transform: scale(.66) translateX(-200px);
+    }
+
+.Slider_slide__leftEdge_d8 {
+        transform: scale(.66) translateX(300px);
+    }
+
+.Slider_slide__leftEdgeLarge_9f {
+        transform: scale(.66) translateX(400px);
+    }
+
+.Slider_slide__rightEdge_43 {
+        transform: scale(.66) translateX(-300px);
+    }
+
+.Slider_slide__rightEdgeLarge_71 {
+        transform: scale(.66) translateX(-400px);
+    }
+
+/* stylelint-enable */
+
+.Slider_base__withoutAnimation_14 .Slider_slide_8b {
+        transition-property: none;
+    }
+
+.Slider_prev_11,
+.Slider_next_ae {
+    width: 74rem;
+    height: 142rem;
+    background: no-repeat center / contain;
+    filter: brightness(1) saturate(1);
+    position: absolute;
+    top: 44%;
+    z-index: 1;
+    transform: translateY(-50%);
+    transition: .3s cubic-bezier(.07, .82, .17, 1) filter;
+    cursor: pointer;
+}
+
+.Slider_prev_11:hover, .Slider_next_ae:hover {
+        filter: brightness(1.3) saturate(1.5);
+    }
+
+.Slider_prev__disabled_5a, .Slider_next__disabled_ac {
+        filter: brightness(.3) grayscale(1);
+        cursor: default;
+        pointer-events: none;
+    }
+
+.Slider_prev__disabled_5a:hover, .Slider_next__disabled_ac:hover {
+            filter: brightness(.3) grayscale(1);
+        }
+
+.Slider_prev_11 {
+    background-image: url('R.images.gui.maps.icons.battlePass.intro.prev');
+    left: 20rem;
+}
+
+.Slider_next_ae {
+    background-image: url('R.images.gui.maps.icons.battlePass.intro.next');
+    right: 20rem;
+}
+
+.Slider_counter_55 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 4rem;
+    color: #F2F2F7;
+    font-size: 15rem;
+    font-weight: 700;
+}
+
+.Slider_base__large_75 .Slider_counter_55 {
+        margin-bottom: 8rem;
+        font-size: 20rem;
+    }
+
+.Slider_counterDivider_0f {
+    margin: 0 6rem;
+}
+

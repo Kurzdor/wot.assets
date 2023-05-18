@@ -1,0 +1,20 @@
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Lock_base_f9 {
+    padding-top: 14rem;
+}
+
+.Lock_title_ca {
+    color: #FF2717;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.Lock_level_df {
+    color: #FFDD99;
+}
+

@@ -1,0 +1,837 @@
+.QuestList_base_4a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+    .QuestList_base__horizontal_ea {
+        flex-direction: row;
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBar_base_45 {
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+.ProgressBar_base__small_df {
+        height: 2rem;
+    }
+.ProgressBar_background_51 {
+    width: 100%;
+    max-width: 8001px;
+    height: 100%;
+    background-image: var(--progress-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ProgressBar_background__small_46 {
+        height: 2rem;
+    }
+.ProgressBar_lineWrapper_6a {
+    display: flex;
+    flex: 1;
+}
+
+
+.ProgressBarBlink_base_24 {
+    width: 60rem;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    pointer-events: none;
+}
+
+    .ProgressBarBlink_base__small_0f {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressLineImpose_base_80 {
+    max-width: 8001px;
+    height: 100%;
+    background-color: var(--progress-line-base);
+    position: relative;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressLineImpose_base__disabled_cc {
+        background-color: var(--progress-line-disabled);
+    }
+.ProgressLineImpose_base__finished_d4 {
+        background-color: var(--progress-line-finished);
+    }
+.ProgressLineImpose_base__withoutBounce_56 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressLineImpose_pattern_1c {
+    max-width: 8001px;
+    background-image: var(--progress-pattern-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-disabled);
+        left: 0;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-finished);
+    }
+.ProgressLineImpose_gradient_35 {
+    max-width: 8001px;
+    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
+        display: none;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
+        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
+    }
+.ProgressLineImpose_glow_a5 {
+    width: 60rem;
+    max-width: 8001px;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.ProgressLineImpose_glow__left_d8 {
+        left: 1rem;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
+    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+        display: none;
+    }
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaSimple_base_6c {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ProgressBarDeltaSimple_delta_99 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-property: width, transform;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaGrow_base_7e {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressBarDeltaGrow_glow_68 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+
+.Countdown_base_6c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Countdown_icon_cb {
+    width: 37rem;
+    height: 37rem;
+    background-image: url('R.images.gui.maps.icons.missions.daily.widgets.clock_icon');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.Countdown_time_96 {
+    color: #FFDD99;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: -10rem;
+    font-weight: 700;
+    text-shadow: 0 0 12rem rgba(218, 33, 28, 1);
+}
+
+.QuestCard_base__appearStart_dd {
+        opacity: 0;
+        transform: translateX(-50rem);
+    }
+    .QuestCard_base__appearEnd_d5 {
+        opacity: 1;
+        transform: translate(0, 0); /* y is required by disappear transition*/
+        transition-timing-function: cubic-bezier(.19, 1, .22, 1);
+        transition-duration: .25s;
+        transition-property: transform, opacity;
+    }
+    .QuestCard_base__disappearEnd_34 {
+        margin: 0 !important; /* Calculated disappear distance doesn't include margins*/
+        opacity: 0;
+        transition-timing-function: linear;
+        transition-duration: .4s;
+    }
+
+.QuestCard_border_bg__appearStart_07 {
+            opacity: 1;
+            transform: translateX(-320rem);
+        }
+
+.QuestCard_border_bg__appearEnd_6e {
+            opacity: 0;
+            transform: translateX(0);
+            transition: transform .8s cubic-bezier(.21, .61, .35, 1) .15s, opacity 1s cubic-bezier(.21, .61, .35, 1) .15s;
+        }
+
+@keyframes QuestCard_bg-blink_7f {
+    0% {
+        background-color: rgba(76, 111, 29, 0);
+    }
+
+    50% {
+        background-color: rgba(76, 111, 29, .4);
+    }
+
+    100% {
+        background-color: rgba(76, 111, 29, 0);
+    }
+}
+
+.QuestCard_complete__blink_78 {
+        animation-name: QuestCard_bg-blink_7f;
+        animation-duration: .8s;
+        animation-timing-function: cubic-bezier(.45, .05, .55, .95);
+        animation-delay: .6s;
+        animation-iteration-count: 2;
+    }
+
+.QuestCard_complete_bg__completeStart_68 {
+            opacity: 1;
+            left: -440rem;
+        }
+
+.QuestCard_complete_bg__completeEnd_dd {
+            opacity: 0;
+            left: -20rem;
+            transition: left 2s cubic-bezier(.07, .82, .16, 1) .1s, opacity 2s cubic-bezier(.07, .82, .16, 1) .1s;
+        }
+
+.QuestCard_icon__completeStart_af {
+        opacity: 0;
+        transform: scale(1.8);
+    }
+
+.QuestCard_icon__completeEnd_e0 {
+        opacity: 1;
+        transform: scale(1);
+        transition: transform .2s linear .3s, opacity .2s linear .3s;
+    }
+
+.QuestCard_base_01 {
+    display: flex;
+    align-items: center;
+    width: 320rem;
+    height: 60rem;
+    margin: .5rem 0;
+    padding-right: 14rem;
+    background-image: url('R.images.gui.maps.icons.missions.daily.widgets.big_bg');
+    background-size: 100%; /* needed for high-res screens*/
+    position: relative;
+    cursor: pointer;
+}
+
+.QuestCard_base_01:hover .QuestCard_hoverBg_62 {
+            opacity: .4;
+        }
+
+.QuestCard_base__complete_b5 {
+        background-image: url('R.images.gui.maps.icons.missions.daily.widgets.big_bg_complete');
+    }
+
+.QuestCard_base__bonus_f0 {
+        background-image: url('R.images.gui.maps.icons.missions.daily.widgets.big_bg_bonus');
+    }
+
+.QuestCard_border_00 {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(
+            0 0,
+            320rem 0,
+            320rem 1rem,
+            1rem 1rem,
+            1rem 59rem,
+            320rem 59rem,
+            320rem 60rem,
+            0 60rem,
+            0 0
+    );
+    position: absolute;
+}
+
+.QuestCard_border_bg_cb {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(135deg, transparent 1%, #fff 87%, transparent 87%);
+        position: absolute;
+    }
+
+.QuestCard_complete_97 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -3;
+}
+
+.QuestCard_complete_bg_89 {
+        width: 400rem;
+        height: 400rem;
+        background-color: #4c6f1d;
+        position: absolute;
+        top: -200rem;
+        z-index: -1;
+        transform: rotate(-60deg);
+    }
+
+.QuestCard_hoverBg_62 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.missions.daily.widgets.big_bg_onhover');
+    background-size: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    transition: opacity .1s ease-in-out;
+}
+
+.QuestCard_content_3e {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 246rem;
+}
+
+.QuestCard_icon_7e {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    height: 60rem;
+    position: relative;
+}
+
+.QuestCard_icon_img_d7 {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 32rem;
+    }
+
+.QuestCard_icon_img__check_2e {
+            background-image: url('R.images.gui.maps.icons.missions.icons.check_green');
+        }
+
+.QuestCard_description_6a {
+    color: #e9e2bf;
+    font-size: 14rem;
+}
+
+.QuestCard_description_pad_right_b6 {
+        padding-right: 50rem;
+    }
+
+.QuestCard_progressCounter_3f {
+    display: flex;
+    color: #e9e2bf;
+    font-size: 14rem;
+}
+
+.QuestCard_progressCounter_current_af {
+        color: #feab34;
+    }
+
+.QuestCard_progressCounter_separator_6b {
+        margin: 0 2rem;
+        color: #e9e2bf;
+    }
+
+.QuestCard_progressCounter_total_50 {
+        color: #e9e2bf;
+    }
+
+.QuestCard_progressCounterComplete_86 .QuestCard_progressCounter_current_af,
+        .QuestCard_progressCounterComplete_86 .QuestCard_progressCounter_separator_6b,
+        .QuestCard_progressCounterComplete_86 .QuestCard_progressCounter_total_50 {
+            color: #80d43a;
+        }
+
+.QuestCard_progressBar_26 {
+    width: 100%;
+    margin-left: 2rem;
+    margin-top: 4rem;
+}
+
+.QuestCard_countdown_1a {
+    position: absolute;
+    right: 10rem;
+}
+
+.IconQuestCardMini_base__appearStart_b2 {
+        opacity: 0;
+        transform: translateY(60rem);
+    }
+    .IconQuestCardMini_base__appearEnd_75 {
+        opacity: 1;
+        transform: translate(0, 0); /* x is needed by disappear transition;*/
+        transition-timing-function: cubic-bezier(.19, 1, .22, 1);
+        transition-duration: .3s;
+        transition-property: transform, opacity;
+    }
+    .IconQuestCardMini_base__disappearStart_cb {
+        margin: 0 !important;
+        opacity: 0;
+        transition-timing-function: linear;
+    }
+
+.IconQuestCardMini_border_bg__appearStart_34 {
+            opacity: 1;
+            transform: translateY(-60rem);
+        }
+
+.IconQuestCardMini_border_bg__appearEnd_81 {
+            opacity: 0;
+            transform: translateY(60rem);
+            transition: transform 1s ease .15s, opacity 1s ease .3s;
+        }
+
+@keyframes IconQuestCardMini_bg-blink_e4 {
+    0% {
+        background-color: rgba(76, 111, 29, 0);
+    }
+
+    50% {
+        background-color: rgba(76, 111, 29, .4);
+    }
+
+    100% {
+        background-color: rgba(76, 111, 29, 0);
+    }
+}
+
+.IconQuestCardMini_complete__blink_31 {
+        animation-name: IconQuestCardMini_bg-blink_e4;
+        animation-duration: .8s;
+        animation-timing-function: cubic-bezier(.45, .05, .55, .95);
+        animation-delay: .6s;
+        animation-iteration-count: 2;
+    }
+
+.IconQuestCardMini_complete_bg__completeStart_e2 {
+            opacity: 1;
+            left: -150rem;
+        }
+
+.IconQuestCardMini_complete_bg__completeEnd_d2 {
+            opacity: 0;
+            left: -30rem;
+            transition: opacity 1s cubic-bezier(.07, .82, .16, 1), left 1s cubic-bezier(.07, .82, .16, 1);
+        }
+
+.IconQuestCardMini_check__completeStart_4e {
+        opacity: 0;
+        transform: scale(1.8);
+    }
+
+.IconQuestCardMini_check__completeEnd_0d {
+        opacity: 1;
+        transform: scale(1);
+        transition: transform .2s linear .8s, opacity .2s linear .8s;
+    }
+
+.IconQuestCardMini_base_8a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60rem;
+    height: 60rem;
+    margin-right: 1rem;
+    background-image: url('R.images.gui.maps.icons.missions.daily.widgets.small_bg');
+    background-repeat: no-repeat;
+    background-size: 100%; /* needed for high-res screens*/
+    position: relative;
+    cursor: pointer;
+}
+
+.IconQuestCardMini_base_8a:hover .IconQuestCardMini_hoverBg_18 {
+            opacity: .4;
+        }
+
+.IconQuestCardMini_base__complete_c2 {
+        background-image: url('R.images.gui.maps.icons.missions.daily.widgets.small_bg_complete');
+    }
+
+.IconQuestCardMini_base__bonus_df {
+        background-image: url('R.images.gui.maps.icons.missions.daily.widgets.small_bg_bonus');
+    }
+
+.IconQuestCardMini_hoverBg_18 {
+    width: 100%;
+    height: 100%;
+    background-image: url('R.images.gui.maps.icons.missions.daily.widgets.small_bg_onhover');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    transition: opacity .1s ease-in-out;
+}
+
+.IconQuestCardMini_border_d2 {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(
+        0 0,
+        60rem 0,
+        60rem 60rem,
+        0 60rem,
+        0 0,
+        1rem 1rem,
+        1rem 59rem,
+        59rem 59rem,
+        59rem 1rem,
+        1rem 1rem
+    );
+    position: absolute;
+}
+
+.IconQuestCardMini_border_bg_47 {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(135deg, transparent 1%, #fff 50%, transparent 50%);
+    }
+
+.IconQuestCardMini_icon_f7 {
+    width: 60rem;
+    height: 60rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32rem;
+}
+
+.IconQuestCardMini_check_66 {
+    width: 16rem;
+    height: 16rem;
+    background-image: url('R.images.gui.maps.icons.missions.icons.check_green_xs');
+    background-repeat: no-repeat;
+    background-size: 100%; /* needed for high-res screens*/
+    position: absolute;
+    top: 50rem;
+}
+
+.IconQuestCardMini_complete_4a {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -3;
+}
+
+.IconQuestCardMini_complete_bg_30 {
+        width: 130rem;
+        height: 130rem;
+        background-color: #4c6f1d;
+        position: absolute;
+        top: -50rem;
+        z-index: -1;
+        transform: rotate(-60deg);
+    }
+
+/* This file overrides base style from the mini variant*/
+.IconQuestCardMicro_base__appearStart_4e {
+        opacity: 0;
+        transform: translateY(60rem);
+    }
+.IconQuestCardMicro_base__appearEnd_1f {
+        opacity: 1;
+        transform: translate(0, 0); /* x is needed by disappear transition;*/
+        transition-timing-function: cubic-bezier(.19, 1, .22, 1);
+        transition-duration: .3s;
+        transition-property: transform, opacity;
+    }
+.IconQuestCardMicro_base__disappearStart_b0 {
+        margin: 0 !important;
+        opacity: 0;
+        transition-timing-function: linear;
+    }
+.IconQuestCardMicro_border_bg__appearStart_f9 {
+            opacity: 1;
+            transform: translateY(-60rem);
+        }
+.IconQuestCardMicro_border_bg__appearEnd_2a {
+            opacity: 0;
+            transform: translateY(60rem);
+            transition: transform 1s ease .15s, opacity 1s ease .3s;
+        }
+@keyframes IconQuestCardMicro_bg-blink_bc {
+    0% {
+        background-color: rgba(76, 111, 29, 0);
+    }
+
+    50% {
+        background-color: rgba(76, 111, 29, .4);
+    }
+
+    100% {
+        background-color: rgba(76, 111, 29, 0);
+    }
+}
+.IconQuestCardMicro_complete__blink_25 {
+        animation-name: IconQuestCardMicro_bg-blink_bc;
+        animation-duration: .8s;
+        animation-timing-function: cubic-bezier(.45, .05, .55, .95);
+        animation-delay: .6s;
+        animation-iteration-count: 2;
+    }
+.IconQuestCardMicro_complete_bg__completeStart_9a {
+            opacity: 1;
+            left: -150rem;
+        }
+.IconQuestCardMicro_complete_bg__completeEnd_3c {
+            opacity: 0;
+            left: -30rem;
+            transition: opacity 1s cubic-bezier(.07, .82, .16, 1), left 1s cubic-bezier(.07, .82, .16, 1);
+        }
+.IconQuestCardMicro_check__completeStart_d4 {
+        opacity: 0;
+        transform: scale(1.8);
+    }
+.IconQuestCardMicro_check__completeEnd_df {
+        opacity: 1;
+        transform: scale(1);
+        transition: transform .2s linear .8s, opacity .2s linear .8s;
+    }
+.IconQuestCardMicro_base_a6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60rem;
+    height: 60rem;
+    margin-right: 1rem;
+    background-image: url('R.images.gui.maps.icons.missions.daily.widgets.small_bg');
+    background-repeat: no-repeat;
+    background-size: 100%; /* needed for high-res screens*/
+    position: relative;
+    cursor: pointer;
+}
+.IconQuestCardMicro_base_a6:hover .IconQuestCardMicro_hoverBg_60 {
+            opacity: .4;
+        }
+.IconQuestCardMicro_base__complete_b2 {
+        background-image: url('R.images.gui.maps.icons.missions.daily.widgets.small_bg_complete');
+    }
+.IconQuestCardMicro_base__bonus_ea {
+        background-image: url('R.images.gui.maps.icons.missions.daily.widgets.small_bg_bonus');
+    }
+.IconQuestCardMicro_hoverBg_60 {
+    width: 100%;
+    height: 100%;
+    background-image: url('R.images.gui.maps.icons.missions.daily.widgets.small_bg_onhover');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    transition: opacity .1s ease-in-out;
+}
+.IconQuestCardMicro_border_b6 {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(
+        0 0,
+        60rem 0,
+        60rem 60rem,
+        0 60rem,
+        0 0,
+        1rem 1rem,
+        1rem 59rem,
+        59rem 59rem,
+        59rem 1rem,
+        1rem 1rem
+    );
+    position: absolute;
+}
+.IconQuestCardMicro_border_bg_03 {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(135deg, transparent 1%, #fff 50%, transparent 50%);
+    }
+.IconQuestCardMicro_icon_2a {
+    width: 60rem;
+    height: 60rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32rem;
+}
+.IconQuestCardMicro_check_3a {
+    width: 16rem;
+    height: 16rem;
+    background-image: url('R.images.gui.maps.icons.missions.icons.check_green_xs');
+    background-repeat: no-repeat;
+    background-size: 100%; /* needed for high-res screens*/
+    position: absolute;
+    top: 50rem;
+}
+.IconQuestCardMicro_complete_8d {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -3;
+}
+.IconQuestCardMicro_complete_bg_94 {
+        width: 130rem;
+        height: 130rem;
+        background-color: #4c6f1d;
+        position: absolute;
+        top: -50rem;
+        z-index: -1;
+        transform: rotate(-60deg);
+    }
+.IconQuestCardMicro_base_a6 {
+    width: 48rem;
+    height: 48rem;
+    background-image: url('R.images.gui.maps.icons.missions.daily.widgets.widgets.mini_bg');
+}
+.IconQuestCardMicro_base__complete_b2 {
+        background-image: url('R.images.gui.maps.icons.missions.daily.widgets.mini_bg_complete');
+    }
+.IconQuestCardMicro_base__bonus_ea {
+        background-image: url('R.images.gui.maps.icons.missions.daily.widgets.mini_bg_bonus');
+    }
+.IconQuestCardMicro_border_b6 {
+    clip-path: polygon(
+        0 0,
+        48rem 0,
+        48rem 48rem,
+        0 48rem,
+        0 0,
+        1rem 1rem,
+        1rem 47rem,
+        47rem 47rem,
+        47rem 1rem,
+        1rem 1rem
+    );
+}
+.IconQuestCardMicro_hoverBg_60 {
+    background-image: url('R.images.gui.maps.icons.missions.daily.widgets.mini_bg_onhover');
+}
+.IconQuestCardMicro_icon_2a {
+    width: 48rem;
+    height: 48rem;
+}
+.IconQuestCardMicro_check_3a {
+    top: 40rem;
+}
+
+.Widget_base_f1 {
+    height: 100%; /* icon cards have overflowing countdown and end align*/
+    padding-left: 3rem;
+}
+
+    .Widget_base__alignEnd_7b {
+        display: flex;
+        align-items: flex-end;
+    }
+
+body {
+    margin: 2rem;
+    line-height: normal;
+    overflow: hidden;
+}
+
+html {
+    overflow: hidden;
+}
+

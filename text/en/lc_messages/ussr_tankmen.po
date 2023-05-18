@@ -196,6 +196,12 @@ msgstr "?empty?"
 msgid "names/bob21_commander_ru4_Nearyou_n"
 msgstr "Near_You"
 
+msgid "names/commander_baroness"
+msgstr "?empty?"
+
+msgid "names/commander_baroness_n"
+msgstr "Baroness"
+
 msgid "names/commander_bingo"
 msgstr "Bingo"
 
@@ -226,17 +232,35 @@ msgstr "Commander"
 msgid "names/commander_cobra_n"
 msgstr "Cobra"
 
+msgid "names/commander_cover_girl"
+msgstr "?empty?"
+
+msgid "names/commander_cover_girl_n"
+msgstr "Cover Girl"
+
 msgid "names/commander_duke"
 msgstr "?empty?"
 
 msgid "names/commander_duke_n"
 msgstr "Duke"
 
+msgid "names/commander_ferenc"
+msgstr "?empty?"
+
+msgid "names/commander_ferenc_n"
+msgstr "Ferenc"
+
 msgid "names/commander_gagarin21"
 msgstr "Gagarin"
 
 msgid "names/commander_gagarin21_n"
 msgstr "Yuri"
+
+msgid "names/commander_hillen"
+msgstr "Hillen"
+
+msgid "names/commander_hillen_n"
+msgstr "Ciarán"
 
 msgid "names/commander_hunter_1"
 msgstr "Letov"
@@ -262,6 +286,12 @@ msgstr "LeGrand"
 msgid "names/commander_marina_n"
 msgstr "Marie"
 
+msgid "names/commander_nansen"
+msgstr "Nansen"
+
+msgid "names/commander_nansen_n"
+msgstr "Robert"
+
 msgid "names/commander_natale"
 msgstr "Di Natale"
 
@@ -279,6 +309,18 @@ msgstr "O’Treat"
 
 msgid "names/commander_pumpkin_n"
 msgstr "Patrick"
+
+msgid "names/commander_quickybaby"
+msgstr "?empty?"
+
+msgid "names/commander_quickybaby_n"
+msgstr "QuickyBaby"
+
+msgid "names/commander_rebranding"
+msgstr "Metkiy"
+
+msgid "names/commander_rebranding_n"
+msgstr "Oleg"
 
 msgid "names/commander_starlight"
 msgstr "Starlight"
@@ -351,6 +393,36 @@ msgstr "Grodin"
 
 msgid "names/hw21_commander5n"
 msgstr "Elias"
+
+msgid "names/hw22_tailrius"
+msgstr "?empty?"
+
+msgid "names/hw22_tailrius_n"
+msgstr "Caudamius"
+
+msgid "names/hw22_witch_aurelia"
+msgstr "von Alden"
+
+msgid "names/hw22_witch_aurelia_n"
+msgstr "Aurelia"
+
+msgid "names/hw22_witch_deirdra"
+msgstr "Grimmhildt"
+
+msgid "names/hw22_witch_deirdra_n"
+msgstr "Deirdre"
+
+msgid "names/hw22_witch_kordelia"
+msgstr "Astra"
+
+msgid "names/hw22_witch_kordelia_n"
+msgstr "Cordelia"
+
+msgid "names/hw22_witch_sibilla"
+msgstr "Brennheart"
+
+msgid "names/hw22_witch_sibilla_n"
+msgstr "Sybill"
 
 msgid "names/loza1"
 msgstr "Loza"
@@ -489,6 +561,36 @@ msgstr "Anton"
 
 msgid "names/ny22_menn"
 msgstr "Arnold"
+
+msgid "names/ny23_girl_1"
+msgstr "Han"
+
+msgid "names/ny23_girl_1n"
+msgstr "Wendy"
+
+msgid "names/ny23_girl_2"
+msgstr "Snezhina"
+
+msgid "names/ny23_girl_2n"
+msgstr "Darya"
+
+msgid "names/ny23_girl_3"
+msgstr "Einfrieren"
+
+msgid "names/ny23_girl_3n"
+msgstr "Marie \"Germia\""
+
+msgid "names/ny23_girl_4"
+msgstr "Snowfall"
+
+msgid "names/ny23_girl_4n"
+msgstr "Florencia \"Hitomi\""
+
+msgid "names/ny23_girl_m"
+msgstr "Jovovich"
+
+msgid "names/ny23_girl_mn"
+msgstr "Milla"
 
 msgid "names/oow21_Strategist"
 msgstr "Shatarkhanov"
@@ -4990,6 +5092,24 @@ msgstr "Fyodor"
 msgid "names/rusn99"
 msgstr "Fedot"
 
+msgid "names/tankmen_bp10_1"
+msgstr "Mancini"
+
+msgid "names/tankmen_bp10_1_n"
+msgstr "Sandro"
+
+msgid "names/tankmen_bp10_2"
+msgstr "Kittel"
+
+msgid "names/tankmen_bp10_2_n"
+msgstr "Emil"
+
+msgid "names/tankmen_bp10_3"
+msgstr "Holmberg"
+
+msgid "names/tankmen_bp10_3_n"
+msgstr "Rebecca"
+
 msgid "names/tankmen_bp2_2"
 msgstr "Samokhin"
 
@@ -5121,6 +5241,30 @@ msgstr "Norette"
 
 msgid "names/tankmen_bp9_3_n"
 msgstr "Isabelle"
+
+msgid "names/tankmen_bph_1"
+msgstr "?empty?"
+
+msgid "names/tankmen_bph_1_n"
+msgstr "T-800"
+
+msgid "names/tankmen_bph_2"
+msgstr "Connor"
+
+msgid "names/tankmen_bph_2_n"
+msgstr "John"
+
+msgid "names/tankmen_bph_3"
+msgstr "Connor"
+
+msgid "names/tankmen_bph_3_n"
+msgstr "Sarah"
+
+msgid "names/tankmen_bph_4"
+msgstr "?empty?"
+
+msgid "names/tankmen_bph_4_n"
+msgstr "T-1000"
 
 msgid "names/twitch_girl1"
 msgstr "Wells"

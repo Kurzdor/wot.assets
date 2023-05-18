@@ -48,7 +48,7 @@ msgstr "Draw Distance"
 msgid "FAR_PLANE/description"
 msgstr ""
 "Determines the display distance of relief features, buildings, enemy "
-"vehicles and other game objects."
+"vehicles, and other game objects."
 
 msgid "FLORA_QUALITY"
 msgstr "Grass Density"
@@ -256,7 +256,7 @@ msgstr "Track Physics"
 msgid "TRACK_PHYSICS_QUALITY/description"
 msgstr ""
 "Determines the quality of physics simulations for broken and operational "
-"tracks.\n"
+"tracks, as well as the track details.\n"
 "\n"
 "Reducing or disabling this parameter can improve game performance."
 
@@ -744,9 +744,6 @@ msgstr ""
 msgid "edgeDetectAA"
 msgstr "Edge detect AA"
 
-msgid "eventSettingDisabled"
-msgstr "Some settings are unavailable"
-
 msgid "feedBack"
 msgstr "Battle Notifications"
 
@@ -764,6 +761,9 @@ msgstr "Capture points reset"
 
 msgid "feedback/tab/battleEvents/checkbox/BlockedDamage"
 msgstr "Damage Blocked"
+
+msgid "feedback/tab/battleEvents/checkbox/CrewPerks"
+msgstr "Crew Perks"
 
 msgid "feedback/tab/battleEvents/checkbox/EnemyBurning"
 msgstr "Enemy vehicle set on fire"
@@ -808,10 +808,15 @@ msgid "feedback/tab/battleEvents/checkbox/VehicleInfo"
 msgstr "Vehicle info"
 
 msgid "feedback/tab/battleEvents/checkbox/WorldCollision"
-msgstr "Damage by wrecking"
+msgstr "Damage by impact"
 
 msgid "feedback/tab/battleEvents/info"
-msgstr "The three most recent events are displayed in a battle"
+msgstr ""
+"The three most recent events\n"
+"are displayed in battle"
+
+msgid "feedback/tab/battleEvents/label/BattleEvents"
+msgstr "Battle Events"
 
 msgid "feedback/tab/battleEvents/label/Information"
 msgstr "Notifications"
@@ -1132,7 +1137,7 @@ msgid "game/anonymizer"
 msgstr "Anonymize your nickname in battle"
 
 msgid "game/battleLoadingInfo"
-msgstr "Tips on the Battle Loading Screen"
+msgstr "Tips on the battle loading screen"
 
 msgid "game/battleLoadingInfo/minimap"
 msgstr "Minimap"
@@ -1360,7 +1365,7 @@ msgid "game/showVectorOnMap"
 msgstr "Display camera direction beam"
 
 msgid "game/showVehModelsOnMap"
-msgstr "Enable Expanded Minimap Features"
+msgstr "Enable expanded minimap features"
 
 msgid "game/showVehModelsOnMap/alt"
 msgstr "Upon pressing Alt"
@@ -1862,6 +1867,9 @@ msgstr "Right"
 msgid "keyboard/keysBlocks/command/showHUD"
 msgstr "Hide Battle Interface"
 
+msgid "keyboard/keysBlocks/command/showPersonalReserves"
+msgstr "Personal Reserves Activation"
+
 msgid "keyboard/keysBlocks/command/showQuestProgress"
 msgstr "Progress of Personal Missions"
 
@@ -2072,7 +2080,7 @@ msgstr "Windowed (borderless)"
 
 msgid "screenMode/description"
 msgstr ""
-"Switch between full-screen, windowed and windowed (borderless) game modes. "
+"Switch between full-screen, windowed, and windowed (borderless) game modes. "
 "The windowed game mode will reduce game performance."
 
 msgid "screenMode/fullscreen"
@@ -2299,8 +2307,8 @@ msgstr "Night mode"
 msgid "sounds/nightMode/description"
 msgstr ""
 "Levels out volume differences, reduces sharp sounds, and minimizes low "
-"frequencies in game, providing a comfortable and soft sound environment for "
-"late night gaming."
+"frequencies in-game, providing a comfortable and soft sound environment for "
+"late-night gaming."
 
 msgid "sounds/sixthSense/body"
 msgstr "Custom sound. Move the sixthSense.mp3 file to the res/audioww folder."

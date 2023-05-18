@@ -662,6 +662,12 @@ msgstr "?empty?"
 msgid "camouflage/G154_Kpz_07_RH_3Dst_MM/label"
 msgstr "Brunnenpanzer"
 
+msgid "camouflage/G42_Maus_BXI_3DSt/description"
+msgstr "?empty?"
+
+msgid "camouflage/G42_Maus_BXI_3DSt/label"
+msgstr "Wüstenschiff"
+
 msgid "camouflage/G89_Leopard1_BVII_3DSt/description"
 msgstr "?empty?"
 
@@ -775,6 +781,30 @@ msgstr "?empty?"
 msgid "camouflage/It08_Progetto_M40_mod_65_B9BS_3DSt/label"
 msgstr "Cesare"
 
+msgid "camouflage/It15_Rinoceronte__BXI_3DSt/description"
+msgstr "?empty?"
+
+msgid "camouflage/It15_Rinoceronte__BXI_3DSt/label"
+msgstr "Nyx"
+
+msgid "camouflage/It21_Lion_KL_3DSt_desert/description"
+msgstr "?empty?"
+
+msgid "camouflage/It21_Lion_KL_3DSt_desert/label"
+msgstr "Marked One"
+
+msgid "camouflage/It21_Lion_KL_3DSt_summer/description"
+msgstr "?empty?"
+
+msgid "camouflage/It21_Lion_KL_3DSt_summer/label"
+msgstr "Marked One"
+
+msgid "camouflage/It21_Lion_KL_3DSt_winter/description"
+msgstr "?empty?"
+
+msgid "camouflage/It21_Lion_KL_3DSt_winter/label"
+msgstr "Marked One"
+
 msgid "camouflage/Lightning_Hunter/description"
 msgstr "?empty?"
 
@@ -786,7 +816,7 @@ msgstr "?empty?"
 
 msgid "camouflage/Multicolor_Brass/description"
 msgstr ""
-"A special camouflage pattern that can be recieved during "
+"A special camouflage pattern that can be received during "
 "The Waffenträger: Legacy 2022 event."
 
 msgid "camouflage/Multicolor_Brass/label"
@@ -794,7 +824,7 @@ msgstr "Multicolor Brass"
 
 msgid "camouflage/Multicolor_Graphite/description"
 msgstr ""
-"A special camouflage pattern that can be recieved during "
+"A special camouflage pattern that can be received during "
 "The Waffenträger: Legacy 2022 event."
 
 msgid "camouflage/Multicolor_Graphite/label"
@@ -1057,6 +1087,12 @@ msgstr "?empty?"
 msgid "camouflage/S16_Kranvagn_BVII_3DSt/label"
 msgstr "Trettonde"
 
+msgid "camouflage/S28_UDES_15_16_BXI_3DSt/description"
+msgstr "?empty?"
+
+msgid "camouflage/S28_UDES_15_16_BXI_3DSt/label"
+msgstr "Svadilfari"
+
 msgid "camouflage/Splinter_desert/description"
 msgstr ""
 "From the late 1940s. French experiments with disruptive camouflage painting. "
@@ -1068,9 +1104,9 @@ msgstr "Splinter desert"
 
 msgid "camouflage/Splinter_summer/description"
 msgstr ""
-"Used from 1931. One of the German camouflage patterns, the \"Splittermuster"
-"\". Different color variations were used by numerous countries, including "
-"France."
+"Used from 1931. One of the German camouflage patterns, the "
+"\"Splittermuster\". Different color variations were used by numerous "
+"countries, including France."
 
 msgid "camouflage/Splinter_summer/label"
 msgstr "Splinter european"
@@ -1203,6 +1239,12 @@ msgstr ""
 
 msgid "camouflage/amx40ducks/label"
 msgstr "All-season webbed"
+
+msgid "camouflage/animals_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/animals_1/label"
+msgstr "Bengal Tiger"
 
 msgid "camouflage/anniversary_NA_EU_desert/description"
 msgstr ""
@@ -1930,6 +1972,30 @@ msgstr "?empty?"
 msgid "camouflage/bp2022_3/label"
 msgstr "Battle Scars"
 
+msgid "camouflage/bp2023_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp2023_1/label"
+msgstr "Roho"
+
+msgid "camouflage/bp2023_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp2023_2/label"
+msgstr "Hofu"
+
+msgid "camouflage/bp2023_3/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp2023_3/label"
+msgstr "Rafiki"
+
+msgid "camouflage/bp2023_4/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp2023_4/label"
+msgstr "Ngamia"
+
 msgid "camouflage/bp8_auction_1_hull/description"
 msgstr "?empty?"
 
@@ -1983,6 +2049,24 @@ msgstr "Firing Range Target (HEAT)"
 
 msgid "camouflage/bp9_3/label"
 msgstr "Firing Range Target (HE)"
+
+msgid "camouflage/bp_holiday_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp_holiday_1/label"
+msgstr "Mimetic Polyalloy"
+
+msgid "camouflage/bp_holiday_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp_holiday_2/label"
+msgstr "Skynet Bastion"
+
+msgid "camouflage/bp_holiday_3/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp_holiday_3/label"
+msgstr "Step Into Eternity"
 
 msgid "camouflage/br_award_15/description"
 msgstr ""
@@ -2407,6 +2491,12 @@ msgstr "?empty?"
 msgid "camouflage/cn_labor_day_2022/label"
 msgstr "Shock Worker"
 
+msgid "camouflage/cn_lantern_festival/description"
+msgstr "?empty?"
+
+msgid "camouflage/cn_lantern_festival/label"
+msgstr "Lantern Festival"
+
 msgid "camouflage/cn_live_stream_platform/description"
 msgstr "?empty?"
 
@@ -2592,6 +2682,24 @@ msgstr "?empty?"
 
 msgid "camouflage/conqueror/label"
 msgstr "Conqueror"
+
+msgid "camouflage/cosm_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/cosm_1/label"
+msgstr "Zero Gravity"
+
+msgid "camouflage/cosm_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/cosm_2/label"
+msgstr "Starship Squad"
+
+msgid "camouflage/cosm_3/description"
+msgstr "?empty?"
+
+msgid "camouflage/cosm_3/label"
+msgstr "Full Course"
 
 msgid "camouflage/cosmonautics_day/description"
 msgstr "Camouflage for the Ad Astra style."
@@ -2780,6 +2888,12 @@ msgstr "?empty?"
 msgid "camouflage/dragon/label"
 msgstr "Fire Element"
 
+msgid "camouflage/easter_west/description"
+msgstr "?empty?"
+
+msgid "camouflage/easter_west/label"
+msgstr "Easter Bunny"
+
 msgid "camouflage/eastern_warriors/description"
 msgstr "?empty?"
 
@@ -2877,6 +2991,18 @@ msgstr "?empty?"
 msgid "camouflage/football_event_2021_4/label"
 msgstr "Feint"
 
+msgid "camouflage/football_event_2022_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/football_event_2022_1/label"
+msgstr "11v11"
+
+msgid "camouflage/football_event_2022_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/football_event_2022_2/label"
+msgstr "Make a Wager"
+
 msgid "camouflage/football_gift/description"
 msgstr "?empty?"
 
@@ -2900,6 +3026,18 @@ msgstr "?empty?"
 
 msgid "camouflage/football_tms/label"
 msgstr "Striker 2018"
+
+msgid "camouflage/foreign_legion_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/foreign_legion_1/label"
+msgstr "Nec Pluribus Impar"
+
+msgid "camouflage/foreign_legion_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/foreign_legion_2/label"
+msgstr "Spray Paint"
 
 msgid "camouflage/france/bicolor/Winter/description"
 msgstr ""
@@ -3064,6 +3202,48 @@ msgstr ""
 msgid "camouflage/frost/label"
 msgstr "Tempered Glass"
 
+msgid "camouflage/fw_2022_camo_l1/description"
+msgstr "?empty?"
+
+msgid "camouflage/fw_2022_camo_l1/label"
+msgstr "Debutant"
+
+msgid "camouflage/fw_2022_camo_l2/description"
+msgstr "?empty?"
+
+msgid "camouflage/fw_2022_camo_l2/label"
+msgstr "Iron"
+
+msgid "camouflage/fw_2022_camo_l3/description"
+msgstr "?empty?"
+
+msgid "camouflage/fw_2022_camo_l3/label"
+msgstr "Bronze"
+
+msgid "camouflage/fw_2022_camo_l4/description"
+msgstr "?empty?"
+
+msgid "camouflage/fw_2022_camo_l4/label"
+msgstr "Silver"
+
+msgid "camouflage/fw_2022_camo_l5/description"
+msgstr "?empty?"
+
+msgid "camouflage/fw_2022_camo_l5/label"
+msgstr "Gold"
+
+msgid "camouflage/fw_2022_camo_l6/description"
+msgstr "?empty?"
+
+msgid "camouflage/fw_2022_camo_l6/label"
+msgstr "Champion"
+
+msgid "camouflage/fw_2022_camo_l7/description"
+msgstr "?empty?"
+
+msgid "camouflage/fw_2022_camo_l7/label"
+msgstr "Legend"
+
 msgid "camouflage/gagarin/description"
 msgstr "?empty?"
 
@@ -3086,7 +3266,7 @@ msgid "camouflage/gamescom_2022/description"
 msgstr "?empty?"
 
 msgid "camouflage/gamescom_2022/label"
-msgstr "Gamescom 2022"
+msgstr "Tornado Alert"
 
 msgid "camouflage/gamescom_camo/description"
 msgstr ""
@@ -3368,6 +3548,48 @@ msgstr ""
 
 msgid "camouflage/halloween_2019_event_reward/label"
 msgstr "Dark Knight"
+
+msgid "camouflage/halloween_2022_commander/description"
+msgstr "?empty?"
+
+msgid "camouflage/halloween_2022_commander/label"
+msgstr "Cordelia's Condiment"
+
+msgid "camouflage/halloween_2022_driver/description"
+msgstr "?empty?"
+
+msgid "camouflage/halloween_2022_driver/label"
+msgstr "Deirdre's Infusion"
+
+msgid "camouflage/halloween_2022_ghost/description"
+msgstr "?empty?"
+
+msgid "camouflage/halloween_2022_ghost/label"
+msgstr "Boo!"
+
+msgid "camouflage/halloween_2022_gunner/description"
+msgstr "?empty?"
+
+msgid "camouflage/halloween_2022_gunner/label"
+msgstr "Sybill's Elixir"
+
+msgid "camouflage/halloween_2022_jack/description"
+msgstr "?empty?"
+
+msgid "camouflage/halloween_2022_jack/label"
+msgstr "Iron Jack"
+
+msgid "camouflage/halloween_2022_loader/description"
+msgstr "?empty?"
+
+msgid "camouflage/halloween_2022_loader/label"
+msgstr "Aurelia's Potion"
+
+msgid "camouflage/halloween_2022_radioman/description"
+msgstr "?empty?"
+
+msgid "camouflage/halloween_2022_radioman/label"
+msgstr "Cunning Essence"
 
 msgid "camouflage/historical"
 msgstr "Historical"
@@ -3674,6 +3896,18 @@ msgstr "An all-season camouflage for the Left Alive style."
 msgid "camouflage/left_alive/label"
 msgstr "Left Alive"
 
+msgid "camouflage/liveops_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/liveops_1/label"
+msgstr "Wasteland King"
+
+msgid "camouflage/liveops_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/liveops_2/label"
+msgstr "Forest Keeper"
+
 msgid "camouflage/lunar_NY_fire/description"
 msgstr ""
 "All-season camouflage pattern that commemorates the celebration of Chinese "
@@ -3789,6 +4023,12 @@ msgstr "A camouflage for the Outline Map style."
 msgid "camouflage/mapbox_2022/label"
 msgstr "Outline Map"
 
+msgid "camouflage/mapbox_2023/description"
+msgstr "?empty?"
+
+msgid "camouflage/mapbox_2023/label"
+msgstr "Random Happenstance"
+
 msgid "camouflage/mapbox_desert/label"
 msgstr "Map Pattern"
 
@@ -3825,6 +4065,12 @@ msgstr "?empty?"
 msgid "camouflage/may_marathon_2021/label"
 msgstr "Rock Crystal"
 
+msgid "camouflage/memorial_day/description"
+msgstr "?empty?"
+
+msgid "camouflage/memorial_day/label"
+msgstr "Never Forgotten"
+
 msgid "camouflage/monochrome/description"
 msgstr "?empty?"
 
@@ -3852,6 +4098,18 @@ msgstr "?empty?"
 
 msgid "camouflage/na_dday/label"
 msgstr "Overlord"
+
+msgid "camouflage/na_womens_day_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/na_womens_day_1/label"
+msgstr "March (Pink)"
+
+msgid "camouflage/na_womens_day_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/na_womens_day_2/label"
+msgstr "March (Olive)"
 
 msgid "camouflage/nation/china"
 msgstr "Can be applied to Chinese vehicles"
@@ -3882,6 +4140,54 @@ msgstr "Can be applied to U.S. vehicles"
 
 msgid "camouflage/nation/ussr"
 msgstr "Can be applied to U.S.S.R. vehicles"
+
+msgid "camouflage/natisk_2023_camo_l1/description"
+msgstr "?empty?"
+
+msgid "camouflage/natisk_2023_camo_l1/label"
+msgstr "Debutant"
+
+msgid "camouflage/natisk_2023_camo_l2/description"
+msgstr "?empty?"
+
+msgid "camouflage/natisk_2023_camo_l2/label"
+msgstr "Iron"
+
+msgid "camouflage/natisk_2023_camo_l3/description"
+msgstr "?empty?"
+
+msgid "camouflage/natisk_2023_camo_l3/label"
+msgstr "Bronze"
+
+msgid "camouflage/natisk_2023_camo_l4/description"
+msgstr "?empty?"
+
+msgid "camouflage/natisk_2023_camo_l4/label"
+msgstr "Silver"
+
+msgid "camouflage/natisk_2023_camo_l5/description"
+msgstr "?empty?"
+
+msgid "camouflage/natisk_2023_camo_l5/label"
+msgstr "Gold"
+
+msgid "camouflage/natisk_2023_camo_l6/description"
+msgstr "?empty?"
+
+msgid "camouflage/natisk_2023_camo_l6/label"
+msgstr "Champion"
+
+msgid "camouflage/natisk_2023_camo_l7/description"
+msgstr "?empty?"
+
+msgid "camouflage/natisk_2023_camo_l7/label"
+msgstr "Legend"
+
+msgid "camouflage/ninja/description"
+msgstr "?empty?"
+
+msgid "camouflage/ninja/label"
+msgstr "Ninja"
 
 msgid "camouflage/northern_warriors/description"
 msgstr "?empty?"
@@ -3960,6 +4266,42 @@ msgstr "?empty?"
 
 msgid "camouflage/ny_2022_xmas/label"
 msgstr "Heat-Insulated Armor"
+
+msgid "camouflage/ny_2023_10th/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2023_10th/label"
+msgstr "Box of Decorations"
+
+msgid "camouflage/ny_2023_a/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2023_a/label"
+msgstr "Arniemania"
+
+msgid "camouflage/ny_2023_bro/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2023_bro/label"
+msgstr "Forward to the Childhood"
+
+msgid "camouflage/ny_2023_cat/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2023_cat/label"
+msgstr "Casual Paw Print"
+
+msgid "camouflage/ny_2023_m/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2023_m/label"
+msgstr "Your Driver is Here"
+
+msgid "camouflage/ny_2023_m_challenge/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2023_m_challenge/label"
+msgstr "Perfect!"
 
 msgid "camouflage/oakwood_dark/description"
 msgstr "?empty?"
@@ -4097,6 +4439,15 @@ msgstr "Winter camouflage of a permanent style."
 msgid "camouflage/prem_camouflage_winter/label"
 msgstr "Black Widow winter"
 
+msgid "camouflage/quicky_baby/description"
+msgstr "?empty?"
+
+msgid "camouflage/quicky_baby_1/label"
+msgstr "QuickyBaby 1"
+
+msgid "camouflage/quicky_baby_2/label"
+msgstr "QuickyBaby 2"
+
 msgid "camouflage/r4_allies/description"
 msgstr "?empty?"
 
@@ -4192,6 +4543,12 @@ msgstr "?empty?"
 
 msgid "camouflage/ranked_3_4th/label"
 msgstr "Bronze League of Ranked Battles"
+
+msgid "camouflage/rebranding_event"
+msgstr "Steel Brotherhood"
+
+msgid "camouflage/rebranding_event/description"
+msgstr "?empty?"
 
 msgid "camouflage/red_desert/description"
 msgstr "?empty?"
@@ -4323,11 +4680,29 @@ msgstr "?empty?"
 msgid "camouflage/spartacus/label"
 msgstr "Testudo Formation"
 
+msgid "camouflage/st_patricks_day_2023/description"
+msgstr "?empty?"
+
+msgid "camouflage/st_patricks_day_2023/label"
+msgstr "Shamrock"
+
 msgid "camouflage/stayhome/description"
 msgstr "?empty?"
 
 msgid "camouflage/stayhome/label"
 msgstr "There's No Place Like Home"
+
+msgid "camouflage/steam_april_2023/description"
+msgstr "?empty?"
+
+msgid "camouflage/steam_april_2023/label"
+msgstr "Pumped Your Tank"
+
+msgid "camouflage/steam_publisher_weekend/description"
+msgstr "?empty?"
+
+msgid "camouflage/steam_publisher_weekend/label"
+msgstr "Steam Powered"
 
 msgid "camouflage/strong/description"
 msgstr "A camouflage for the 1st Guards Field Army style."
@@ -4477,6 +4852,12 @@ msgstr "?empty?"
 msgid "camouflage/twitch_NY2020/label"
 msgstr "Prime Festivity"
 
+msgid "camouflage/twitch_april_2023/description"
+msgstr "?empty?"
+
+msgid "camouflage/twitch_april_2023/label"
+msgstr "All Your Cow Are Belong to Us"
+
 msgid "camouflage/twitch_august_2020/description"
 msgstr "?empty?"
 
@@ -4495,11 +4876,23 @@ msgstr "?empty?"
 msgid "camouflage/twitch_december_2021/label"
 msgstr "Reps Incoming"
 
+msgid "camouflage/twitch_december_2022/description"
+msgstr "?empty?"
+
+msgid "camouflage/twitch_december_2022/label"
+msgstr "Holiday Outfit"
+
 msgid "camouflage/twitch_drops/description"
 msgstr "?empty?"
 
 msgid "camouflage/twitch_drops/label"
 msgstr "Streamline"
+
+msgid "camouflage/twitch_january_2023/description"
+msgstr "?empty?"
+
+msgid "camouflage/twitch_january_2023/label"
+msgstr "A Brave New World"
 
 msgid "camouflage/twitch_june_2022/description"
 msgstr "?empty?"
@@ -4537,6 +4930,12 @@ msgstr "?empty?"
 msgid "camouflage/twitch_october_2021_main/label"
 msgstr "Care for Scare"
 
+msgid "camouflage/twitch_october_2022/description"
+msgstr "?empty?"
+
+msgid "camouflage/twitch_october_2022/label"
+msgstr "Witchcraft"
+
 msgid "camouflage/twitch_prime/description"
 msgstr "A unique camouflage included with Prime Gaming."
 
@@ -4554,6 +4953,12 @@ msgstr "?empty?"
 
 msgid "camouflage/twitch_september_2022/label"
 msgstr "e-Camo"
+
+msgid "camouflage/twitch_w_2023/description"
+msgstr "?empty?"
+
+msgid "camouflage/twitch_w_2023/label"
+msgstr "Hues of Sanguine"
 
 msgid "camouflage/uk/bicolor/LRDG/description"
 msgstr "1941 through 1942. A pattern used by the Long Range Desert Group."
@@ -4970,6 +5375,12 @@ msgstr "An all-season camouflage for the This is RNG! style."
 msgid "camouflage/vbr/label"
 msgstr "This is RNG!"
 
+msgid "camouflage/veteran_WZ_122_6/description"
+msgstr "?empty?"
+
+msgid "camouflage/veteran_WZ_122_6/label"
+msgstr "Veteran"
+
 msgid "camouflage/veteran_camo/description"
 msgstr ""
 "A unique camouflage, awarded to players for personal and clan achievements "
@@ -5236,24 +5647,30 @@ msgstr "?empty?"
 msgid "camouflage/victory_day_2021/label"
 msgstr "Victorious Star"
 
-msgid "camouflage/waffentrager_e100_tlxxl_s/description"
-msgstr "?empty?"
-
-msgid "camouflage/waffentrager_e100_tlxxl_s/label"
-msgstr "Waffenträger auf E 220 Camouflage"
-
 msgid "camouflage/waitangi_day/description"
 msgstr "?empty?"
 
 msgid "camouflage/waitangi_day/label"
 msgstr "Waitangi Day"
 
+msgid "camouflage/well_deserved_award_2023_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/well_deserved_award_2023_1/label"
+msgstr "Sweet Memory"
+
+msgid "camouflage/western_warriors/description"
+msgstr "?empty?"
+
+msgid "camouflage/western_warriors/label"
+msgstr "Warrior of the West"
+
 msgid "camouflage/wg_anniversary/description"
 msgstr ""
 "A camouflage pattern, developed to commemorate Wargaming's 20th anniversary."
 
 msgid "camouflage/wg_anniversary/label"
-msgstr "Anniversary \"large spots\""
+msgstr "Anniversary large spots"
 
 msgid "camouflage/wg_fest_2019/description"
 msgstr "?empty?"
@@ -5738,8 +6155,8 @@ msgstr "Applied Elements"
 
 msgid "customization/filterPopover/bonusDescription/body"
 msgstr ""
-"Show/hide customization elements \n"
-" that provide %(bonus)s bonus."
+"Show/hide customization elements\n"
+"that provide %(bonus)s bonus."
 
 msgid "customization/filterPopover/bonusDescription/header"
 msgstr "%(bonus)s Bonus"
@@ -6090,6 +6507,9 @@ msgstr "Except %(vehicle)s"
 msgid "customization/questAward/exactVehicle"
 msgstr "Applied to %(vehicle)s"
 
+msgid "customization/quests/pbsItem"
+msgstr "%(itemName)s %(itemType)s"
+
 msgid "customization/rent/special/text"
 msgstr ""
 "The customization elements purchased for a particular number of battles will "
@@ -6352,14 +6772,184 @@ msgstr "MAXIMUM NUMBER OF DECALS APPLIED"
 msgid "customization/tooltip/potentialProjDecalPlace/toltip/text"
 msgstr "Slot unavailable: remove any applied decal from another slot."
 
+msgid "customization/tooltip/quests/comp7_2023_1_ranks_diamond_1/condition"
+msgstr ""
+"Achieve the Gold rank in Season of the Crimson Griffin in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_2023_1_ranks_elite_1/condition"
+msgstr ""
+"Achieve the Legend rank in Season of the Crimson Griffin in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_2023_1_ranks_gold_1/condition"
+msgstr ""
+"Achieve the Bronze rank in Season of the Crimson Griffin in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_2023_1_ranks_maestro_1/condition"
+msgstr ""
+"Achieve the Champion rank in Season of the Crimson Griffin in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_2023_1_ranks_platinum_1/condition"
+msgstr ""
+"Achieve the Silver rank in Season of the Crimson Griffin in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_2023_1_ranks_silver_1/condition"
+msgstr ""
+"Achieve the Iron rank in Season of the Crimson Griffin in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_ranks_diamond_1/condition"
+msgstr "Achieve the Gold rank in Season of the Griffin in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_ranks_elite_1/condition"
+msgstr "Achieve the Legend rank in Season of the Griffin in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_ranks_gold_1/condition"
+msgstr "Achieve the Bronze rank in Season of the Griffin in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_ranks_maestro_1/condition"
+msgstr "Achieve the Champion rank in Season of the Griffin in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_ranks_platinum_1/condition"
+msgstr "Achieve the Silver rank in Season of the Griffin in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_ranks_silver_1/condition"
+msgstr "Achieve the Iron rank in Season of the Griffin in Onslaught mode."
+
+msgid "customization/tooltip/quests/crushing_damage_648_1/condition"
+msgstr "Cause 25,000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/crushing_damage_648_2/condition"
+msgstr "Cause 225,000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/crushing_damage_648_3/condition"
+msgstr "Cause 550,000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/crushing_damage_775_1/condition"
+msgstr "Cause 25,000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/crushing_damage_775_2/condition"
+msgstr "Cause 225,000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/crushing_damage_775_3/condition"
+msgstr "Cause 550,000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/demonstration_performance_648_1/condition"
+msgstr "Fight 10 Onslaught battles in a vehicle with the Wing and Claw style."
+
+msgid "customization/tooltip/quests/demonstration_performance_648_2/condition"
+msgstr "Fight 25 Onslaught battles in a vehicle with the Wing and Claw style."
+
+msgid "customization/tooltip/quests/demonstration_performance_648_3/condition"
+msgstr "Fight 50 Onslaught battles in a vehicle with the Wing and Claw style."
+
+msgid "customization/tooltip/quests/demonstration_performance_775_1/condition"
+msgstr ""
+"Fight 10 Onslaught battles in a vehicle with the \"Wing and Claw (Crimson)\" "
+"style."
+
+msgid "customization/tooltip/quests/demonstration_performance_775_2/condition"
+msgstr ""
+"Fight 25 Onslaught battles in a vehicle with the \"Wing and Claw (Crimson)\" "
+"style."
+
+msgid "customization/tooltip/quests/demonstration_performance_775_3/condition"
+msgstr ""
+"Fight 50 Onslaught battles in a vehicle with the \"Wing and Claw (Crimson)\" "
+"style."
+
+msgid "customization/tooltip/quests/destroyed_vehicles_648_1/condition"
+msgstr "Destroy 15 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/destroyed_vehicles_648_2/condition"
+msgstr "Destroy 150 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/destroyed_vehicles_648_3/condition"
+msgstr "Destroy 350 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/destroyed_vehicles_775_1/condition"
+msgstr "Destroy 15 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/destroyed_vehicles_775_2/condition"
+msgstr "Destroy 150 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/destroyed_vehicles_775_3/condition"
+msgstr "Destroy 350 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/find_and_destroy_648/condition"
+msgstr "Spot or destroy 750 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/find_and_destroy_775/condition"
+msgstr "Spot or destroy 500 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/going_to_circle_648_1/condition"
+msgstr "Earn a total of 250 base capture/defense points in Onslaught."
+
+msgid "customization/tooltip/quests/going_to_circle_648_2/condition"
+msgstr "Earn a total of 500 base capture/defense points in Onslaught."
+
+msgid "customization/tooltip/quests/going_to_circle_648_3/condition"
+msgstr "Earn a total of 750 base capture/defense points in Onslaught."
+
+msgid "customization/tooltip/quests/going_to_circle_775_1/condition"
+msgstr "Earn a total of 250 base capture/defense points in Onslaught."
+
+msgid "customization/tooltip/quests/going_to_circle_775_2/condition"
+msgstr "Earn a total of 500 base capture/defense points in Onslaught."
+
+msgid "customization/tooltip/quests/going_to_circle_775_3/condition"
+msgstr "Earn a total of 750 base capture/defense points in Onslaught."
+
+msgid "customization/tooltip/quests/initiator_648/condition"
+msgstr "Be the first to destroy an enemy vehicle in Onslaught 10 times."
+
+msgid "customization/tooltip/quests/initiator_775/condition"
+msgstr "Be the first to destroy an enemy vehicle in Onslaught 10 times."
+
+msgid "customization/tooltip/quests/old_school_648/condition"
+msgstr ""
+"Win 5 Onslaught battles as part of a Super Platoon consisting of players "
+"from one clan."
+
+msgid "customization/tooltip/quests/old_school_775/condition"
+msgstr ""
+"Win 5 Onslaught battles as part of a Super Platoon consisting of players "
+"from one clan."
+
 msgid "customization/tooltip/quests/or"
 msgstr "or"
+
+msgid "customization/tooltip/quests/prestige_648/condition"
+msgstr ""
+"Be the top player on your team by Prestige Points earned in Onslaught 50 "
+"times."
+
+msgid "customization/tooltip/quests/prestige_775/condition"
+msgstr ""
+"Be the top player on your team by Prestige Points earned in Onslaught 50 "
+"times."
 
 msgid "customization/tooltip/quests/progress"
 msgstr "Completed"
 
 msgid "customization/tooltip/quests/progressBig"
 msgstr "Completed: "
+
+msgid "customization/tooltip/quests/rush_648/condition"
+msgstr "Destroy 4 enemy vehicles in one battle in Onslaught."
+
+msgid "customization/tooltip/quests/rush_775/condition"
+msgstr "Destroy 5 enemy vehicles in one battle in Onslaught."
+
+msgid "customization/tooltip/quests/shoulder_to_shoulder_648/condition"
+msgstr "Win 25 battles in a 2-player Platoon in Onslaught."
+
+msgid "customization/tooltip/quests/shoulder_to_shoulder_775/condition"
+msgstr "Win 25 battles in a 2-player Platoon in Onslaught."
+
+msgid "customization/tooltip/quests/sorvigiliva_648/condition"
+msgstr "Stand alone against at least 3 enemy vehicles in Onslaught and win."
+
+msgid "customization/tooltip/quests/sorvigiliva_775/condition"
+msgstr "Stand alone against at least 3 enemy vehicles in Onslaught and win."
 
 msgid "customization/tooltip/quests/status/completed"
 msgstr "Level %(level)s reached"
@@ -6388,8 +6978,54 @@ msgstr "Mission completion time expired. The element has not been unlocked."
 msgid "customization/tooltip/quests/status/unavailable"
 msgstr "Unavailable"
 
+msgid "customization/tooltip/quests/supersquad_wins_648/condition"
+msgstr "Win 15 Onslaught battles as part of a Super Platoon."
+
+msgid "customization/tooltip/quests/supersquad_wins_775/condition"
+msgstr "Win 15 Onslaught battles as part of a Super Platoon."
+
+msgid "customization/tooltip/quests/tactical_advantage_648_1/condition"
+msgstr ""
+"Capture a total of 15 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
+msgid "customization/tooltip/quests/tactical_advantage_648_2/condition"
+msgstr ""
+"Capture a total of 150 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
+msgid "customization/tooltip/quests/tactical_advantage_648_3/condition"
+msgstr ""
+"Capture a total of 375 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
+msgid "customization/tooltip/quests/tactical_advantage_775_1/condition"
+msgstr ""
+"Capture a total of 15 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
+msgid "customization/tooltip/quests/tactical_advantage_775_2/condition"
+msgstr ""
+"Capture a total of 150 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
+msgid "customization/tooltip/quests/tactical_advantage_775_3/condition"
+msgstr ""
+"Capture a total of 375 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
 msgid "customization/tooltip/quests/title"
 msgstr "Conditions for Receiving the Element"
+
+msgid "customization/tooltip/quests/veni_vidi_vici_648/condition"
+msgstr ""
+"Win an Onslaught battle by destroying all enemy vehicles in less than 180 "
+"seconds."
+
+msgid "customization/tooltip/quests/veni_vidi_vici_775/condition"
+msgstr ""
+"Win an Onslaught battle by destroying all enemy vehicles in under 150 "
+"seconds."
 
 msgid "customization/tooltip/slot/camouflage"
 msgstr "Camouflage"
@@ -6420,6 +7056,9 @@ msgstr "For all vehicles"
 
 msgid "customization/tooltip/suitable/title"
 msgstr "Suitable for Vehicles"
+
+msgid "customization/tooltip/suitableNations/title"
+msgstr "Suitable for %(nations)s Vehicles"
 
 msgid "customization/tooltip/taskDescription"
 msgstr "Complete missions: \"%(name)s\""
@@ -7530,7 +8169,7 @@ msgid "emblem/group4/signs_13"
 msgstr "Flag of Georgia"
 
 msgid "emblem/group4/signs_14"
-msgstr "Flag of Turkey"
+msgstr "Flag of Türkiye"
 
 msgid "emblem/group4/signs_15"
 msgstr "Flag of Brazil"
@@ -7668,7 +8307,7 @@ msgid "emblem/group4/signs_55"
 msgstr "Flag of Lithuania"
 
 msgid "emblem/group4/signs_56"
-msgstr "Flag of ROC"
+msgstr "Flag of the ROC"
 
 msgid "emblem/group4/signs_57"
 msgstr "Flag of Bosnia and Herzegovina"
@@ -7677,7 +8316,7 @@ msgid "emblem/group4/signs_58"
 msgstr "Flag of Slovenia"
 
 msgid "emblem/group4/signs_59"
-msgstr "Flag of U.S.S.R."
+msgstr "Flag of the U.S.S.R."
 
 msgid "emblem/group4/signs_6"
 msgstr "Flag of Singapore"
@@ -7695,7 +8334,7 @@ msgid "emblem/group4/signs_63"
 msgstr "Coat of arms of St. Petersburg"
 
 msgid "emblem/group4/signs_64"
-msgstr "Coat of arms of Odessa"
+msgstr "Coat of arms of Odesa"
 
 msgid "emblem/group4/signs_65"
 msgstr "Coat of arms of Krasnodar"
@@ -7719,7 +8358,7 @@ msgid "emblem/group4/signs_70"
 msgstr "Coat of arms of Volgograd"
 
 msgid "emblem/group4/signs_71"
-msgstr "Coat of arms of Kiev"
+msgstr "Coat of arms of Kyiv"
 
 msgid "emblem/group4/signs_72"
 msgstr "Coat of arms of Veliky Novgorod"
@@ -7773,7 +8412,7 @@ msgid "emblem/group4/signs_87"
 msgstr "Flag of Indonesia"
 
 msgid "emblem/group4/signs_88"
-msgstr "Coat of arms of Kharkov"
+msgstr "Coat of arms of Kharkiv"
 
 msgid "emblem/group4/signs_89"
 msgstr "Coat of arms of Nizhny Novgorod"
@@ -8956,6 +9595,9 @@ msgstr "Warrior of the East"
 msgid "emblem/special/sticker_703_south"
 msgstr "Warrior of the South"
 
+msgid "emblem/special/sticker_703_west"
+msgstr "Warrior of the West"
+
 msgid "emblem/special/sticker_704"
 msgstr "Icon of the Ultramarines"
 
@@ -8975,7 +9617,148 @@ msgid "emblem/special/sticker_709"
 msgstr "Tornado"
 
 msgid "emblem/special/sticker_710"
+msgstr "Devastating Damage 1"
+
+msgid "emblem/special/sticker_711"
+msgstr "Devastating Damage 2"
+
+msgid "emblem/special/sticker_712"
+msgstr "Devastating Damage 3"
+
+msgid "emblem/special/sticker_713"
+msgstr "Exhibition Performance 1"
+
+msgid "emblem/special/sticker_714"
+msgstr "Exhibition Performance 2"
+
+msgid "emblem/special/sticker_715"
+msgstr "Exhibition Performance 3"
+
+msgid "emblem/special/sticker_716"
+msgstr "Into the Cap Circle 1"
+
+msgid "emblem/special/sticker_717"
+msgstr "Into the Cap Circle 2"
+
+msgid "emblem/special/sticker_718"
+msgstr "Into the Cap Circle 3"
+
+msgid "emblem/special/sticker_719"
+msgstr "Tactical Advantage 1"
+
+msgid "emblem/special/sticker_720"
+msgstr "Tactical Advantage 2"
+
+msgid "emblem/special/sticker_721"
+msgstr "Tactical Advantage 3"
+
+msgid "emblem/special/sticker_722"
+msgstr "Till We Meet Again 1"
+
+msgid "emblem/special/sticker_723"
+msgstr "Till We Meet Again 2"
+
+msgid "emblem/special/sticker_724"
+msgstr "Till We Meet Again 3"
+
+msgid "emblem/special/sticker_725"
+msgstr "G.I. JOE Star"
+
+msgid "emblem/special/sticker_726"
+msgstr "COBRA ENEMY!"
+
+msgid "emblem/special/sticker_727"
+msgstr "Season 20"
+
+msgid "emblem/special/sticker_728"
+msgstr "Season 21"
+
+msgid "emblem/special/sticker_729"
+msgstr "Season 22"
+
+msgid "emblem/special/sticker_730"
+msgstr "Season 23"
+
+msgid "emblem/special/sticker_731"
+msgstr "Season 24"
+
+msgid "emblem/special/sticker_732"
+msgstr "Season 25"
+
+msgid "emblem/special/sticker_733"
+msgstr "Season 26"
+
+msgid "emblem/special/sticker_734"
+msgstr "Season 27"
+
+msgid "emblem/special/sticker_735"
+msgstr "Season 28"
+
+msgid "emblem/special/sticker_736"
+msgstr "Season 29"
+
+msgid "emblem/special/sticker_737"
+msgstr "QB"
+
+msgid "emblem/special/sticker_738"
 msgstr "Power Over Electricity"
+
+msgid "emblem/special/sticker_739"
+msgstr "For 12 years of service"
+
+msgid "emblem/special/sticker_740"
+msgstr "Wargaming"
+
+msgid "emblem/special/sticker_741"
+msgstr "Lone Wolf"
+
+msgid "emblem/special/sticker_742"
+msgstr "Celtic Harp"
+
+msgid "emblem/special/sticker_747"
+msgstr "Devastating Damage 1"
+
+msgid "emblem/special/sticker_748"
+msgstr "Devastating Damage 2"
+
+msgid "emblem/special/sticker_749"
+msgstr "Devastating Damage 3"
+
+msgid "emblem/special/sticker_750"
+msgstr "Exhibition Performance 1"
+
+msgid "emblem/special/sticker_751"
+msgstr "Exhibition Performance 2"
+
+msgid "emblem/special/sticker_752"
+msgstr "Exhibition Performance 3"
+
+msgid "emblem/special/sticker_753"
+msgstr "Into the Cap Circle 1"
+
+msgid "emblem/special/sticker_754"
+msgstr "Into the Cap Circle 2"
+
+msgid "emblem/special/sticker_755"
+msgstr "Into the Cap Circle 3"
+
+msgid "emblem/special/sticker_756"
+msgstr "Tactical Advantage 1"
+
+msgid "emblem/special/sticker_757"
+msgstr "Tactical Advantage 2"
+
+msgid "emblem/special/sticker_758"
+msgstr "Tactical Advantage 3"
+
+msgid "emblem/special/sticker_759"
+msgstr "Till We Meet Again 1"
+
+msgid "emblem/special/sticker_760"
+msgstr "Till We Meet Again 2"
+
+msgid "emblem/special/sticker_761"
+msgstr "Till We Meet Again 3"
 
 msgid "filter/popover/bonusType/title"
 msgstr "Bonus Types"
@@ -9229,10 +10012,10 @@ msgid "inscription/clan_content/inscription_04"
 msgstr "Warriors of Honor"
 
 msgid "inscription/clan_content/inscription_05"
-msgstr "Hotspurs"
+msgstr "Hotspur"
 
 msgid "inscription/clan_content/inscription_06"
-msgstr "Brothers in Arms"
+msgstr "Band of Brothers"
 
 msgid "inscription/clan_content/inscription_07"
 msgstr "Strongmen"
@@ -9529,7 +10312,7 @@ msgid "inscription/france/temeraire"
 msgstr "Impertinent"
 
 msgid "inscription/france/terrible"
-msgstr "Menacing"
+msgstr "Terrible"
 
 msgid "inscription/france/tornade"
 msgstr "Tornado"
@@ -9580,7 +10363,7 @@ msgid "inscription/germany/brunhild"
 msgstr "Brunhild"
 
 msgid "inscription/germany/cyklop"
-msgstr "Cyclop"
+msgstr "Cyclops"
 
 msgid "inscription/germany/dresden"
 msgstr "Dresden"
@@ -11214,10 +11997,139 @@ msgid "inscription/special/special_619"
 msgstr "Steel Tornado"
 
 msgid "inscription/special/special_620"
+msgstr "Veni Vidi Vici"
+
+msgid "inscription/special/special_621"
+msgstr "Shoulder to Shoulder"
+
+msgid "inscription/special/special_622"
+msgstr "Old School Cool"
+
+msgid "inscription/special/special_623"
+msgstr "Initiator"
+
+msgid "inscription/special/special_624"
+msgstr "7v7"
+
+msgid "inscription/special/special_625"
+msgstr "Hard Boiled"
+
+msgid "inscription/special/special_626"
+msgstr "Seek and Destroy"
+
+msgid "inscription/special/special_627"
+msgstr "Prestige"
+
+msgid "inscription/special/special_628"
+msgstr "Lost Count"
+
+msgid "inscription/special/special_629"
+msgstr "YO JOE!"
+
+msgid "inscription/special/special_630"
+msgstr "COBRAAAA!"
+
+msgid "inscription/special/special_631"
+msgstr "QuickyBaby"
+
+msgid "inscription/special/special_632"
 msgstr "Get Out While You Can!"
+
+msgid "inscription/special/special_633"
+msgstr "Always on Duty"
+
+msgid "inscription/special/special_634"
+msgstr "12 Years on Board"
+
+msgid "inscription/special/special_635"
+msgstr "Lantern Festival"
+
+msgid "inscription/special/special_636"
+msgstr "Happy Lantern Festival"
+
+msgid "inscription/special/special_637"
+msgstr "Family Reunion"
 
 msgid "inscription/special/special_64"
 msgstr "Rule #1"
+
+msgid "inscription/special/special_641"
+msgstr "Let's Steam-Roll Them!"
+
+msgid "inscription/special/special_642"
+msgstr "Bonds of Friendship"
+
+msgid "inscription/special/special_643"
+msgstr "Cutie On Board"
+
+msgid "inscription/special/special_644"
+msgstr "Keep Your Eyes on the Minimap"
+
+msgid "inscription/special/special_645"
+msgstr "BOOM!"
+
+msgid "inscription/special/special_646"
+msgstr "No Problemo"
+
+msgid "inscription/special/special_647"
+msgstr "I'll Be Back"
+
+msgid "inscription/special/special_648"
+msgstr "Hasta la Vista, Baby"
+
+msgid "inscription/special/special_649"
+msgstr "Lone Wolf"
+
+msgid "inscription/special/special_650"
+msgstr "Ninja"
+
+msgid "inscription/special/special_651"
+msgstr "Fire Fire Baby"
+
+msgid "inscription/special/special_652"
+msgstr "I Like Big Guns and I Cannot Lie"
+
+msgid "inscription/special/special_653"
+msgstr "Can't Dodge This"
+
+msgid "inscription/special/special_654"
+msgstr "Heated Armor"
+
+msgid "inscription/special/special_655"
+msgstr "Boiling Point"
+
+msgid "inscription/special/special_656"
+msgstr "Dromedary"
+
+msgid "inscription/special/special_667"
+msgstr "Unstoppable"
+
+msgid "inscription/special/special_668"
+msgstr "Vanguard"
+
+msgid "inscription/special/special_669"
+msgstr "Fast and Furious"
+
+msgid "inscription/special/special_670"
+msgstr "[DREAM_TEAM]"
+
+msgid "inscription/special/special_671"
+msgstr "7v7"
+
+msgid "inscription/special/special_672"
+msgstr "Predator"
+
+msgid "inscription/special/special_673"
+msgstr "Royal Flush"
+
+msgid "inscription/special/special_674"
+msgstr "Super Platoon!"
+
+msgid "inscription/special/special_675"
+msgstr "Companions in Arms"
+
+msgid "inscription/special/special_676"
+msgstr "Welcome to Mars"
 
 msgid "inscription/special/special_70"
 msgstr "Thunderbolt VII"
@@ -11337,7 +12249,7 @@ msgid "inscription/uk/cossack"
 msgstr "Cossack"
 
 msgid "inscription/uk/daredevil"
-msgstr "Hothead"
+msgstr "Daredevil"
 
 msgid "inscription/uk/demon"
 msgstr "Demon"
@@ -11571,7 +12483,7 @@ msgid "inscription/usa/honey"
 msgstr "Honey"
 
 msgid "inscription/usa/hothead"
-msgstr "Daredevil"
+msgstr "Hothead"
 
 msgid "inscription/usa/hunter"
 msgstr "Hunter"
@@ -11999,27 +12911,6 @@ msgstr ""
 "are exhausted, but please, hold out for a bit longer, friend, as someone is "
 "waiting for every one of us back home. And we want to come back alive.\""
 
-msgid "main_style/A85_T110E3_3Dst"
-msgstr "Welsh Blues"
-
-msgid "main_style/A85_T110E3_3Dst_desc/long"
-msgstr ""
-"\"Badaev is one big joker, as it turns out. A real helper. Empathy "
-"incarnate. But I gotta admit, I underestimated him. I've been walking around "
-"here grim as a thundercloud for a week. Not only did they send me to the "
-"literal edge of the world where 'the high is a toasty –32°C by noon', but "
-"they had the nerve to put me in this American tin can. Their reasoning was: "
-"'Why should you care? You're English, the manual's in English, so you'll "
-"figure it out.' Yeah... that's exactly how it works. So, Badaev decided to "
-"cheer me up by bringing me a book I'd never seen before. Something about "
-"Antarctica, he said. It was supposed to help me relax since we're here "
-"anyway. And he believed the author was a fellow Englishman. I didn't have "
-"the heart to tell him that England and New England aren't exactly the same "
-"place. But I appreciated his gesture and read the book... A book about "
-"Antarctica while in Antarctica. Thank you, Badaev, for At the Mountains of "
-"Madness. That was not gentleman-like at all. Just wait, I too have some "
-"tricks up my sleeves.\""
-
 msgid "main_style/A89_T54E1_3DSt_TIR"
 msgstr "Hellhound"
 
@@ -12030,23 +12921,6 @@ msgstr ""
 "You drove us through enemy fire and repelled numerous enemy attacks. Yes, we "
 "are exhausted, but please, hold out for a bit longer, friend, as someone is "
 "waiting for every one of us back home. And we want to come back alive.\""
-
-msgid "main_style/Ch19_121_3Dst"
-msgstr "Icebreaker"
-
-msgid "main_style/Ch19_121_3Dst_desc/long"
-msgstr ""
-"\"The more time passes, the more I think that those two are not ones to "
-"follow regulations. They're a couple of loners always playing pranks on each "
-"other as if we've got nothing better to do. We're not having a barbecue "
-"party on the face of Mount Emei... Here, where every day might be our last, "
-"these two are fooling around like little kids. I have two sons back in "
-"Mianyang, so I feel like I'm home since there's not too much difference. On "
-"the other hand, I know that serious training is hiding behind this "
-"tomfoolery. If the situation calls for it, I'm sure that these two will do "
-"whatever it takes. Hopefully, it won't be necessary, and this expedition "
-"will be a voyage of discovery... Because the further we go into the white "
-"void, the less I believe we have a chance to return home.\""
 
 msgid "main_style/F108_Panhard_EBR_105_3Dst"
 msgstr "Tramontana"
@@ -12065,31 +12939,6 @@ msgstr ""
 
 msgid "main_style/F10_AMX_50B_3Dst"
 msgstr "Javan Rhino"
-
-msgid "main_style/F10_AMX_50B_3Dst_BV"
-msgstr "Charles Martel"
-
-msgid "main_style/F10_AMX_50B_3Dst_BV_desc/long"
-msgstr ""
-"\"Captain Lemartin and his Sand Whirlwind... I need a name for the vehicle. "
-"A nice catchy name. A title, like Frankish kings. Captain Lemartin and his "
-"Templar. No, not that. Come on, think. We will complete our objective, "
-"return triumphantly, and take our place in the history books.\n"
-"\n"
-"That Polish girl has been looking at me for several days now—I keep catching "
-"her eye all the time.\n"
-"\n"
-"Maybe some animal related to this desert? But what? There are no good ones "
-"here, just rodents and bugs. Not good enough. What was the name of that bird "
-"that snatched my bread? Captain Lemartin and his Burrowing Owl. Yeah, just "
-"great. Very heroic. Just right for the manual for conducting secret "
-"operations in who knows where, why, and for how long. Gotta stop thinking "
-"about this, anyway. With my luck, there will be some list of all "
-"participants with their titles, regalia, and vehicle names, and I will be in "
-"the \"etc.\" category.\n"
-"\n"
-"Now I get why she was looking at me like that. I forgot to return her weapon "
-"cleaning kit. Just my luck, like I said.\""
 
 msgid "main_style/F10_AMX_50B_3Dst_desc/long"
 msgstr ""
@@ -12134,6 +12983,26 @@ msgstr ""
 "heat. I only recently fought for Bir Hakeim—barely forgot that terrible heat—"
 "but no. I thought I left Africa, but it still found me here.\""
 
+msgid "main_style/F38_Bat_Chatillon155_58_MD22_III_3DSt"
+msgstr "Constellation"
+
+msgid "main_style/F38_Bat_Chatillon155_58_MD22_III_3DSt_desc/long"
+msgstr ""
+"\"Such are our day-to-day realities. We used to learn about the frontline "
+"situation from the commander, from the newspapers that arrived from time to "
+"time. And now what? Our only connection to the world is a truck that brings "
+"us ammunition. You remember, Jérôme—we could see the dust from the factory "
+"when it first arrived. Brand new. Each time it came, it came older. That "
+"truck became a reflection of the situation on the front. Four different "
+"drivers in two weeks. And you understand why. Two days ago, the truck came "
+"to us with more holes than Swiss cheese. And today, it didn't even arrive. "
+"Again, you understand why. It just ended its service after barely leaving "
+"the conveyor belt. And we're next in line. Such are our day-to-day "
+"realities.\n"
+"\n"
+"It's Christmas today. Do you believe in miracles, Jérôme? You have to. It's "
+"the only thing we've got left.\""
+
 msgid "main_style/F75_Char_de_25t_3DSt_TIR"
 msgstr "Marengo"
 
@@ -12147,25 +13016,6 @@ msgstr ""
 "\n"
 "I hope it doesn't decide to stay here forever. I want to see my magnificent "
 "France once again...\""
-
-msgid "main_style/F82_AMX_M4_Mle1949_Ter_3DSt_BVI"
-msgstr "Gascon"
-
-msgid "main_style/F82_AMX_M4_Mle1949_Ter_3DSt_BVI_desc/long"
-msgstr ""
-"\"And I could have easily served until retirement, then I would have gotten "
-"a house somewhere near Toulon. A garden with cobbled paths and geranium beds "
-"or whatever they are called... Chess club on weekends. Feeding pigeons. But "
-"no—they gave me a tank and sent me to the middle of nowhere with this "
-"endless ice everywhere. Hold off on your questions, they said. Find the "
-"platoon leader when you get there, he will show you around and explain "
-"everything. When I got there, it turned out I was the platoon leader. I "
-"don't like this expedition. My gut tells me that instead of feeding pigeons, "
-"I'll be feeding crows. Are there even crows here? Is there anything living "
-"here at all?\n"
-"\n"
-"Why am I even writing this? Nobody will read it, anyway. And when will this "
-"damn blizzard stop?\""
 
 msgid "main_style/F88_AMX_13_105_3DSt_TIR"
 msgstr "Marengo"
@@ -12309,6 +13159,23 @@ msgstr ""
 "over a car engine that I'm somehow supposed to win a war with... Well, maybe "
 "I'll get lucky and see you again. Macht’s gut!\""
 
+msgid "main_style/GB112_Caliban_WAC_3DSt"
+msgstr "HMS Bruiser"
+
+msgid "main_style/GB112_Caliban_WAC_3DSt_desc/long"
+msgstr ""
+"\"In two hours, people from the newspaper will be here asking me how I like "
+"serving there or whether I'm proud to wear the colors of the valiant Marine "
+"Corps. I'll definitely have an answer for myself; I'm no stranger to dealing "
+"with journalists. But then they'll start asking about this vehicle and "
+"taking photos. And that's when I just want the ground to open up and swallow "
+"me whole. Look at what our guys have done! I understand that there is such a "
+"tradition, but there are limits! Maybe I'm missing something, but a tank "
+"should remain a tank. I'm sure the press will ask if I want to add "
+"something.\n"
+"\n"
+"An anchor—I want to add an anchor here.\""
+
 msgid "main_style/GB23_Centurion_Maple_Leaf"
 msgstr "A Mari Usque ad Mare"
 
@@ -12367,34 +13234,6 @@ msgstr ""
 "what we thought? Our operation was supposed to fight against enemy vehicles, "
 "not ours.\""
 
-msgid "main_style/GB86_Centurion_Action_X_3DSt_BVI"
-msgstr "Primipilus"
-
-msgid "main_style/GB86_Centurion_Action_X_3DSt_BVI_desc/long"
-msgstr ""
-"\"Do you know what it's like in the navy? Say you are on duty in the engine "
-"room and are tasked with maintaining the pressure in the boilers, making "
-"sure the manometer arrows point in the right direction. And you are keeping "
-"an eye on these manometers while there is a battle outside. The ship shakes "
-"from enemy shell hits, it shakes when your own guns fire—but you don't see "
-"any of it, you can only feel it and know that there are people out there "
-"doing their jobs just like you are down here. And then everything quiets "
-"down and you don't hear any more gunfire, any explosions. You think it's all "
-"over and you've finally won.\n"
-"But then a cup rolls down a table that's tilted for some reason. And you "
-"don't yet understand that the guns are silent because the ammunition storage "
-"is already flooded. That the upper deck is already under water. But you keep "
-"watching the arrows because you haven't gotten another order. And you won't—"
-"the comms are dead, the bridge is down. In a minute, the lights will go "
-"down, the ship will break in half, and ice-cold water will rush into your "
-"room and take you along with all your boilers and manometers. And then will "
-"come the realization that the ship is down. And that you went down with it "
-"half an hour ago. But you can't report this to anyone. The news about it "
-"came with the water.\n"
-"You see? And you're complaining to me that it's all over, that we're stuck "
-"here forever with this damaged track? What do you even know, lad. Take the "
-"crowbar. Do your damn job. To the end. Until the water comes.\""
-
 msgid "main_style/GB91_Super_Conqueror_3Dst"
 msgstr "Sentry"
 
@@ -12416,27 +13255,6 @@ msgstr ""
 
 msgid "main_style/GB92_FV217_3Dst"
 msgstr "Mordred"
-
-msgid "main_style/GB92_FV217_3Dst_BV"
-msgstr "Lancelot"
-
-msgid "main_style/GB92_FV217_3Dst_BV_desc/long"
-msgstr ""
-"\"Finally at the helm of the attack, where a real assault tank should be. I "
-"don't have any doubt that several such vehicles can evoke the kind of "
-"emotions that the enemy had during the Battle of the Somme. We are just "
-"going across the field, slowly and confidently, like a hot knife through "
-"butter. Like an icebreaker. Behind us, infantry, lighter vehicles... The "
-"whole army is behind us. Am I romanticizing too much? Well, the name speaks "
-"for itself—I guess they wanted to gather all Round Table knights in our "
-"unit. Just gotta gather enough vehicles. And no, I don't think this vehicle "
-"is \"unsinkable\" like one might say. We burned ourselves once already in "
-"1912—now everyone considers all strong and weak points.\n"
-"\n"
-"\n"
-"P.S. To answer your question from the previous letter, we are descendants of "
-"honorable knights, and every respectable knight has to have a sword with a "
-"name.\""
 
 msgid "main_style/GB92_FV217_3Dst_desc/long"
 msgstr ""
@@ -12541,6 +13359,20 @@ msgstr ""
 "Five, that's for sure. They are the most shellproof and honorable trophies, "
 "but their 'heads' wouldn't look good hanging over the fireplace.\""
 
+msgid "main_style/It13_Progetto_M35_mod_46_OCN_3DSt"
+msgstr "Mars"
+
+msgid "main_style/It13_Progetto_M35_mod_46_OCN_3DSt_desc/long"
+msgstr ""
+"A parade modification of the Progetto M35 mod. 46. The exterior contains "
+"references to the glorious past of the Roman Empire, with its myths and "
+"legends. A reminder of the honored past of the modern Italian tankers' "
+"ancestors is great motivation for self-improvement. Evidence of the "
+"greatness of the empire, reconstructions of which adorn this tank, fit "
+"nicely with the general style of the vehicle, which can both spearhead an "
+"attack like a cataphract and slowly lead a convoy of vehicles during big "
+"celebrations."
+
 msgid "main_style/It18_Progetto_C45_mod_71_3DSt_WHAC_2021"
 msgstr "Aurora"
 
@@ -12599,24 +13431,6 @@ msgstr ""
 "I'll bring him home. Turns out, I came all this way for a reason. One went "
 "off to serve, but two will return. Isn't that wonderful?\""
 
-msgid "main_style/Pl21_CS_63_3Dst_BV"
-msgstr "Błyskawica"
-
-msgid "main_style/Pl21_CS_63_3Dst_BV_desc/long"
-msgstr ""
-"\"Dear Papa, if only you could see how rapidly our science has developed. I "
-"still tear up when I remember the joy on your face when you managed to rent "
-"that small tractor. The whole field in just four days! And how long would it "
-"take with a plough and our old mare? You would wonder at the technological "
-"progress and imagine what they would make next. Here's what they made, Papa: "
-"I have a small surveillance car on the rear of my tank, and it's no larger "
-"than... than a chest. But the interesting part is that this thing is "
-"controlled remotely! I can control it myself from inside the tank. It is my "
-"eyes and my hands. Dear Papa, you are long gone, but I am sure you would be "
-"proud of me because I mastered technology of the future you would always "
-"dream of, but... Also, I named my tank after our favorite mare that would "
-"feed the whole family. Do you see, Papa? Of course you see, Papa...\""
-
 msgid "main_style/R112_T54_45_3Dst"
 msgstr "Cobra Battle Operation Assault Tank (B.O.A.)"
 
@@ -12670,22 +13484,6 @@ msgstr ""
 msgid "main_style/R145_Object_705_A_3Dst"
 msgstr "Dobrynya Nikitich"
 
-msgid "main_style/R145_Object_705_A_3Dst_BP4"
-msgstr "Polar Bear"
-
-msgid "main_style/R145_Object_705_A_3Dst_BP4_desc/long"
-msgstr ""
-"\"How dare that Welshman laugh at me mixing up whether polar bears lived at "
-"the North Pole or the South Pole! He's the one who's always asking me about "
-"such important things like starting a tank in –30°C, or opening cans without "
-"a can opener, or siphoning fuel from the tank with just a straw. He's an "
-"excellent fighter, no doubt, but he wasn't taught how to survive harsh "
-"environmental conditions at his Academy. Well, this is a great example of so-"
-"called international exchange of knowledge—survival lessons from me and "
-"zoology from him. 'How aren't you feeling cold, Badaev?'\n"
-"\n"
-"Well, live in Norilsk long enough, and you won't either.\""
-
 msgid "main_style/R145_Object_705_A_3Dst_desc/long"
 msgstr ""
 "\"I'll tell you what happened, Nikita Romanovich. The day before yesterday, "
@@ -12734,6 +13532,19 @@ msgstr ""
 "region is calm and stable. So, he can just sit back, enjoy nature, and miss "
 "home. I hope he'll be back soon. I have prepared several jars of that "
 "cloudberry jam Igor likes so much. He can't find it there.\""
+
+msgid "main_style/R159_SU_130PM_OCN_3DSt"
+msgstr "Forest Spirit"
+
+msgid "main_style/R159_SU_130PM_OCN_3DSt_desc/long"
+msgstr ""
+"A Soviet tank destroyer was ordered to eternal watch on the border of an "
+"impenetrable forest—an ominous reminder to anyone who dares break the peace "
+"of the age-old oaks with the sound of an ax or rifle salvo. Those who come "
+"in peace will find a canopy of green leaves and spring water; those with ill "
+"intentions will endure eternal oblivion among the marshy swamps guarded by "
+"this forest spirit. And who knows what other trophies will adorn its "
+"branching horns."
 
 msgid "main_style/R165_Object_703_II_3Dst"
 msgstr "Oryx"
@@ -12886,26 +13697,6 @@ msgstr ""
 "And set it loose to be unleashed,\n"
 "So when it feeds upon this feast,\n"
 "For victory we shall beseem!'\""
-
-msgid "main_style/R88_Object268_3DSt_BVI"
-msgstr "Svyatogor"
-
-msgid "main_style/R88_Object268_3DSt_BVI_desc/long"
-msgstr ""
-"\"'Improve firepower using a combination of standard and bounty armaments.' "
-"Are they serious? Did they even see this vehicle? What's there to improve? "
-"Maybe the view range from this self-propelled bunker leaves something to be "
-"desired, but that's an issue for someone in the way. Any battle comes down "
-"to aim-fire-repeat, anyway. But no, they want more improvements. They say "
-"they captured some German engineer, or he defected—I'm not sure. What's his "
-"name? Barker, Bulker... Right, Becker! They say he has a lot of experience "
-"protecting vehicles from air attacks, and we have a German anti-aircraft "
-"gun, anyway, so let's mount it. I'm not sure about that. We don't have room "
-"for spoils of war, and they want to put half a ton of steel on our backs. "
-"Doesn't this German have any ideas how to improve view range? Maybe add a "
-"mast with a top? I mean, we can sink a German cruiser to get one, but it's "
-"going to be hard to find one here on the ice. Maybe there will be none left "
-"at all pretty soon. With our help, for sure.\""
 
 msgid "main_style/R88_Object268_3Dst"
 msgstr "Alyosha Popovich"
@@ -14396,6 +15187,9 @@ msgstr "War Horse"
 msgid "projection_decals/cool/projection_decal_68"
 msgstr "Long-Awaited Trophy"
 
+msgid "projection_decals/cool/projection_decal_69"
+msgstr "Marisa"
+
 msgid "projection_decals/damage"
 msgstr "Defects"
 
@@ -14442,7 +15236,7 @@ msgid "projection_decals/flags/projection_decal_12"
 msgstr "Czechoslovakian Flag Flying"
 
 msgid "projection_decals/flags/projection_decal_13"
-msgstr "Flag of U.S.S.R."
+msgstr "Flag of the U.S.S.R."
 
 msgid "projection_decals/flags/projection_decal_14"
 msgstr "Flag of Germany"
@@ -14665,6 +15459,24 @@ msgstr "Yut Nori"
 
 msgid "projection_decals/holiday/projection_decal_151"
 msgstr "Wealth and Prosperity"
+
+msgid "projection_decals/holiday/projection_decal_157"
+msgstr "Have Your Fun"
+
+msgid "projection_decals/holiday/projection_decal_158"
+msgstr "Mouse Trap 2.0"
+
+msgid "projection_decals/holiday/projection_decal_159"
+msgstr "Arnie"
+
+msgid "projection_decals/holiday/projection_decal_160"
+msgstr "Marvelous Milla"
+
+msgid "projection_decals/holiday/projection_decal_161"
+msgstr "A Million Reasons to Celebrate"
+
+msgid "projection_decals/holiday/projection_decal_167"
+msgstr "Easter Eggs"
 
 msgid "projection_decals/holiday/projection_decal_35"
 msgstr "Ten-Reindeerpower Maybach"
@@ -15026,6 +15838,21 @@ msgstr "Dominica"
 msgid "projection_decals/pin_up/projection_decal_61"
 msgstr "Rosella"
 
+msgid "projection_decals/pin_up/projection_decal_62"
+msgstr "Cordelia"
+
+msgid "projection_decals/pin_up/projection_decal_63"
+msgstr "Sybill"
+
+msgid "projection_decals/pin_up/projection_decal_64"
+msgstr "Aurelia"
+
+msgid "projection_decals/pin_up/projection_decal_65"
+msgstr "Deirdre"
+
+msgid "projection_decals/pin_up/projection_decal_66"
+msgstr "Caudamius"
+
 msgid "projection_decals/progression"
 msgstr "Progressive"
 
@@ -15257,6 +16084,9 @@ msgstr "Teeth 9"
 
 msgid "projection_decals/special/gonsalo_mouth_10"
 msgstr "Teeth 10"
+
+msgid "projection_decals/special/lst_cross_event"
+msgstr "Steel Trio"
 
 msgid "projection_decals/special/projection_decal_01"
 msgstr "Prestige: II"
@@ -16583,8 +17413,29 @@ msgstr "Press Start"
 msgid "projection_decals/special/projection_decal_405"
 msgstr "WCL Tournament Logo"
 
+msgid "projection_decals/special/projection_decal_406"
+msgstr "Debutant"
+
+msgid "projection_decals/special/projection_decal_407"
+msgstr "Iron"
+
+msgid "projection_decals/special/projection_decal_408"
+msgstr "Bronze"
+
+msgid "projection_decals/special/projection_decal_409"
+msgstr "Silver"
+
 msgid "projection_decals/special/projection_decal_41"
 msgstr "Korean Cat"
+
+msgid "projection_decals/special/projection_decal_410"
+msgstr "Gold"
+
+msgid "projection_decals/special/projection_decal_411"
+msgstr "Champion"
+
+msgid "projection_decals/special/projection_decal_412"
+msgstr "Legend"
 
 msgid "projection_decals/special/projection_decal_413"
 msgstr "Moon Gazing"
@@ -16609,6 +17460,24 @@ msgstr "Never Outgunned"
 
 msgid "projection_decals/special/projection_decal_42"
 msgstr "LeBwa Team"
+
+msgid "projection_decals/special/projection_decal_420"
+msgstr "1st Foreign Cavalry Regiment"
+
+msgid "projection_decals/special/projection_decal_421"
+msgstr "1er REC"
+
+msgid "projection_decals/special/projection_decal_422"
+msgstr "White Kepi"
+
+msgid "projection_decals/special/projection_decal_423"
+msgstr "Cobra C.A.T."
+
+msgid "projection_decals/special/projection_decal_424"
+msgstr "G.I. Joe Wolverine"
+
+msgid "projection_decals/special/projection_decal_425"
+msgstr "G.I. Joe 40th Anniversary"
 
 msgid "projection_decals/special/projection_decal_426"
 msgstr "Eternal Vigilance"
@@ -16690,40 +17559,61 @@ msgid "projection_decals/special/projection_decal_444"
 msgstr "Colorful Dozen"
 
 msgid "projection_decals/special/projection_decal_445"
-msgstr "Positive Polarity"
+msgstr "Season 20"
 
 msgid "projection_decals/special/projection_decal_446"
-msgstr "Spark"
+msgstr "Season 21"
 
 msgid "projection_decals/special/projection_decal_447"
-msgstr "Gauss Rifle"
+msgstr "Season 22"
 
 msgid "projection_decals/special/projection_decal_448"
-msgstr "Resonant Transformer"
+msgstr "Season 23"
 
 msgid "projection_decals/special/projection_decal_449"
-msgstr "Tamed Lightning"
+msgstr "Season 24"
 
 msgid "projection_decals/special/projection_decal_45"
 msgstr "KorbenDaIlas Team"
 
 msgid "projection_decals/special/projection_decal_450"
-msgstr "Electric Power"
+msgstr "Season 25"
 
 msgid "projection_decals/special/projection_decal_451"
-msgstr "Waffenträger"
+msgstr "Season 26"
 
 msgid "projection_decals/special/projection_decal_452"
-msgstr "N-Cave Trooper"
+msgstr "Season 27"
 
 msgid "projection_decals/special/projection_decal_453"
-msgstr "The Harrier Trio"
+msgstr "Season 28"
 
 msgid "projection_decals/special/projection_decal_454"
-msgstr "Speed of Lightning"
+msgstr "Season 29"
+
+msgid "projection_decals/special/projection_decal_455"
+msgstr "Halloween 2022"
+
+msgid "projection_decals/special/projection_decal_456"
+msgstr "Jack-o'-Helmet"
+
+msgid "projection_decals/special/projection_decal_457"
+msgstr "The Flying Tankman"
+
+msgid "projection_decals/special/projection_decal_458"
+msgstr "Enchanted Tank"
+
+msgid "projection_decals/special/projection_decal_459"
+msgstr "Spinning Ball"
 
 msgid "projection_decals/special/projection_decal_46"
 msgstr "EviL_GrannY Team"
+
+msgid "projection_decals/special/projection_decal_460"
+msgstr "Over the Pitch"
+
+msgid "projection_decals/special/projection_decal_461"
+msgstr "Will Frampton"
 
 msgid "projection_decals/special/projection_decal_462"
 msgstr "Battle Ready"
@@ -16731,35 +17621,278 @@ msgstr "Battle Ready"
 msgid "projection_decals/special/projection_decal_463"
 msgstr "Go Harriers!"
 
+msgid "projection_decals/special/projection_decal_464"
+msgstr "Positive Polarity"
+
+msgid "projection_decals/special/projection_decal_465"
+msgstr "Spark"
+
+msgid "projection_decals/special/projection_decal_466"
+msgstr "Gauss Rifle"
+
+msgid "projection_decals/special/projection_decal_467"
+msgstr "Resonant Transformer"
+
+msgid "projection_decals/special/projection_decal_468"
+msgstr "Tamed Lightning"
+
+msgid "projection_decals/special/projection_decal_469"
+msgstr "Electric Power"
+
 msgid "projection_decals/special/projection_decal_47"
 msgstr "Jove Team"
+
+msgid "projection_decals/special/projection_decal_470"
+msgstr "Waffenträger"
+
+msgid "projection_decals/special/projection_decal_471"
+msgstr "N-Cave Trooper"
+
+msgid "projection_decals/special/projection_decal_472"
+msgstr "The Harrier Trio"
+
+msgid "projection_decals/special/projection_decal_473"
+msgstr "Speed of Lightning"
+
+msgid "projection_decals/special/projection_decal_474"
+msgstr "Medal for Merit"
+
+msgid "projection_decals/special/projection_decal_475"
+msgstr "Coven Time"
+
+msgid "projection_decals/special/projection_decal_476"
+msgstr "You Came to the Wrong Neighborhood"
+
+msgid "projection_decals/special/projection_decal_477"
+msgstr "Tangyuan"
+
+msgid "projection_decals/special/projection_decal_478"
+msgstr "Chinese Lanterns"
+
+msgid "projection_decals/special/projection_decal_479"
+msgstr "Nian"
 
 msgid "projection_decals/special/projection_decal_48"
 msgstr "Near_You Team"
 
+msgid "projection_decals/special/projection_decal_480"
+msgstr "Mother of the Year"
+
+msgid "projection_decals/special/projection_decal_481"
+msgstr "Machine"
+
+msgid "projection_decals/special/projection_decal_482"
+msgstr "Premiere Poster"
+
+msgid "projection_decals/special/projection_decal_483"
+msgstr "Starting Whistle"
+
+msgid "projection_decals/special/projection_decal_484"
+msgstr "Winning Goal"
+
+msgid "projection_decals/special/projection_decal_485"
+msgstr "Charming Present"
+
+msgid "projection_decals/special/projection_decal_486"
+msgstr "Weighty Present"
+
+msgid "projection_decals/special/projection_decal_487"
+msgstr "Golden Horseshoe"
+
+msgid "projection_decals/special/projection_decal_488"
+msgstr "Material Luck"
+
+msgid "projection_decals/special/projection_decal_489"
+msgstr "Epic Win in War Gods"
+
+msgid "projection_decals/special/projection_decal_489/description"
+msgstr ""
+"Awarded to members of the clan with the highest series of victories in the "
+"War Gods event on the Global Map."
+
 msgid "projection_decals/special/projection_decal_49"
 msgstr "Sh0tnik Team"
+
+msgid "projection_decals/special/projection_decal_490"
+msgstr "War Gods Winner"
+
+msgid "projection_decals/special/projection_decal_490/description"
+msgstr ""
+"Awarded to members of the top clan in the War Gods event on the Global Map."
+
+msgid "projection_decals/special/projection_decal_491"
+msgstr "War Gods Top 10"
+
+msgid "projection_decals/special/projection_decal_491/description"
+msgstr ""
+"Awarded to members of the top 10 clans in the War Gods event on the Global "
+"Map."
+
+msgid "projection_decals/special/projection_decal_492"
+msgstr "War Gods Top 100"
+
+msgid "projection_decals/special/projection_decal_492/description"
+msgstr ""
+"Awarded to members of the top 100 clans in the War Gods event on the Global "
+"Map."
+
+msgid "projection_decals/special/projection_decal_493"
+msgstr "War Gods Participant"
+
+msgid "projection_decals/special/projection_decal_493/description"
+msgstr "Awarded to the participant of the War Gods event on the Global Map."
+
+msgid "projection_decals/special/projection_decal_494"
+msgstr "War Gods Hero"
+
+msgid "projection_decals/special/projection_decal_494/description"
+msgstr ""
+"Be a member of a clan that is in the top 10% of clans in the War Gods event "
+"on the Global Map."
+
+msgid "projection_decals/special/projection_decal_496"
+msgstr "Eye of the Beholder"
+
+msgid "projection_decals/special/projection_decal_497"
+msgstr "Anatomy of a Cyborg"
+
+msgid "projection_decals/special/projection_decal_498"
+msgstr "Mission: Termination"
+
+msgid "projection_decals/special/projection_decal_498/description"
+msgstr "I sense pain. The data could be called a \"critical hit.\""
+
+msgid "projection_decals/special/projection_decal_499"
+msgstr "Shuriken"
 
 msgid "projection_decals/special/projection_decal_50"
 msgstr "MeanMachins Team"
 
+msgid "projection_decals/special/projection_decal_500"
+msgstr "Leopard"
+
+msgid "projection_decals/special/projection_decal_501"
+msgstr "Zebra"
+
+msgid "projection_decals/special/projection_decal_502"
+msgstr "Antelope"
+
 msgid "projection_decals/special/projection_decal_51"
 msgstr "Vspishka Team"
+
+msgid "projection_decals/special/projection_decal_511"
+msgstr "?empty?"
+
+msgid "projection_decals/special/projection_decal_512"
+msgstr "Steam (Graffiti)"
+
+msgid "projection_decals/special/projection_decal_513"
+msgstr "Fiery HE"
+
+msgid "projection_decals/special/projection_decal_514"
+msgstr "Unstoppable APCR"
+
+msgid "projection_decals/special/projection_decal_515"
+msgstr "Wild HEAT"
+
+msgid "projection_decals/special/projection_decal_516"
+msgstr "Pathfinder"
+
+msgid "projection_decals/special/projection_decal_516/description"
+msgstr "A unique decal included with Prime Gaming."
+
+msgid "projection_decals/special/projection_decal_517"
+msgstr "Kvitbjørn"
 
 msgid "projection_decals/special/projection_decal_52"
 msgstr "Team AwesomeEpicGuys"
 
+msgid "projection_decals/special/projection_decal_523"
+msgstr "Ode to Armor"
+
+msgid "projection_decals/special/projection_decal_524"
+msgstr "Ór"
+
+msgid "projection_decals/special/projection_decal_525"
+msgstr "Hat Trick"
+
+msgid "projection_decals/special/projection_decal_526"
+msgstr "Return Visit"
+
+msgid "projection_decals/special/projection_decal_527"
+msgstr "We Come in Peace"
+
+msgid "projection_decals/special/projection_decal_528"
+msgstr "Bronze"
+
+msgid "projection_decals/special/projection_decal_529"
+msgstr "Silver"
+
 msgid "projection_decals/special/projection_decal_53"
 msgstr "Team Mailand"
 
+msgid "projection_decals/special/projection_decal_530"
+msgstr "Gold"
+
+msgid "projection_decals/special/projection_decal_531"
+msgstr "Champion"
+
+msgid "projection_decals/special/projection_decal_532"
+msgstr "Legend"
+
+msgid "projection_decals/special/projection_decal_533"
+msgstr "Debutant"
+
+msgid "projection_decals/special/projection_decal_534"
+msgstr "Iron"
+
+msgid "projection_decals/special/projection_decal_535"
+msgstr "Earth's Ambassador"
+
+msgid "projection_decals/special/projection_decal_536"
+msgstr "Launch!"
+
+msgid "projection_decals/special/projection_decal_537"
+msgstr "Mars Rover"
+
+msgid "projection_decals/special/projection_decal_538"
+msgstr "31 Seconds to Mars"
+
+msgid "projection_decals/special/projection_decal_539"
+msgstr "Aurora Adams"
+
 msgid "projection_decals/special/projection_decal_54"
 msgstr "Team DezGamez"
+
+msgid "projection_decals/special/projection_decal_540"
+msgstr "Meteor"
+
+msgid "projection_decals/special/projection_decal_541"
+msgstr "Take Off"
+
+msgid "projection_decals/special/projection_decal_542"
+msgstr "Alien"
 
 msgid "projection_decals/special/projection_decal_55"
 msgstr "Team Skill4ltu"
 
 msgid "projection_decals/special/projection_decal_56"
 msgstr "Team Dragon"
+
+msgid "projection_decals/special/projection_decal_561"
+msgstr "Wings of Wrath"
+
+msgid "projection_decals/special/projection_decal_561_562/description"
+msgstr "A unique decal included with Prime Gaming."
+
+msgid "projection_decals/special/projection_decal_562"
+msgstr "Power of the Ninth"
+
+msgid "projection_decals/special/projection_decal_563"
+msgstr "Hues of Sanguine"
+
+msgid "projection_decals/special/projection_decal_564"
+msgstr "Hues of Sanguine"
 
 msgid "projection_decals/special/projection_decal_57"
 msgstr "Team Tiger"
@@ -17249,6 +18382,96 @@ msgstr "Remove Decal"
 msgid "propertySheet/title/scale"
 msgstr "Pattern Scaling"
 
+msgid "questProgress/cust_progress_648_1"
+msgstr "?empty?"
+
+msgid "questProgress/cust_progress_648_10"
+msgstr "Initiator"
+
+msgid "questProgress/cust_progress_648_11"
+msgstr "7v7"
+
+msgid "questProgress/cust_progress_648_12"
+msgstr "Hard Boiled"
+
+msgid "questProgress/cust_progress_648_13"
+msgstr "Seek and Destroy"
+
+msgid "questProgress/cust_progress_648_14"
+msgstr "Prestige"
+
+msgid "questProgress/cust_progress_648_15"
+msgstr "Lost Count"
+
+msgid "questProgress/cust_progress_648_2"
+msgstr "Devastating Damage"
+
+msgid "questProgress/cust_progress_648_3"
+msgstr "Exhibition Performance"
+
+msgid "questProgress/cust_progress_648_4"
+msgstr "Into the Cap Circle"
+
+msgid "questProgress/cust_progress_648_5"
+msgstr "Tactical Advantage"
+
+msgid "questProgress/cust_progress_648_6"
+msgstr "Till We Meet Again"
+
+msgid "questProgress/cust_progress_648_7"
+msgstr "Veni Vidi Vici"
+
+msgid "questProgress/cust_progress_648_8"
+msgstr "Shoulder to Shoulder"
+
+msgid "questProgress/cust_progress_648_9"
+msgstr "Old School Cool"
+
+msgid "questProgress/cust_progress_775_1"
+msgstr "?empty?"
+
+msgid "questProgress/cust_progress_775_10"
+msgstr "[DREAM_TEAM]"
+
+msgid "questProgress/cust_progress_775_11"
+msgstr "7v7"
+
+msgid "questProgress/cust_progress_775_12"
+msgstr "Predator"
+
+msgid "questProgress/cust_progress_775_13"
+msgstr "Royal Flush"
+
+msgid "questProgress/cust_progress_775_14"
+msgstr "Super Platoon!"
+
+msgid "questProgress/cust_progress_775_15"
+msgstr "Companions in Arms"
+
+msgid "questProgress/cust_progress_775_2"
+msgstr "Devastating Damage"
+
+msgid "questProgress/cust_progress_775_3"
+msgstr "Exhibition Performance"
+
+msgid "questProgress/cust_progress_775_4"
+msgstr "Into the Cap Circle"
+
+msgid "questProgress/cust_progress_775_5"
+msgstr "Tactical Advantage"
+
+msgid "questProgress/cust_progress_775_6"
+msgstr "Till We Meet Again"
+
+msgid "questProgress/cust_progress_775_7"
+msgstr "Unstoppable"
+
+msgid "questProgress/cust_progress_775_8"
+msgstr "Vanguard"
+
+msgid "questProgress/cust_progress_775_9"
+msgstr "Fast and Furious"
+
 msgid "quotedText"
 msgstr "\"%s\""
 
@@ -17399,6 +18622,9 @@ msgstr "Trettonde"
 msgid "repaint/S16_Kranvagn_BVII_3DSt_stage4"
 msgstr "Trettonde"
 
+msgid "repaint/animals_1"
+msgstr "Bengal Tiger"
+
 msgid "repaint/apac_korean_flag"
 msgstr "Taegukgi"
 
@@ -17492,6 +18718,15 @@ msgstr "Firing Range Target (HEAT)"
 msgid "repaint/bp9_3"
 msgstr "Firing Range Target (HE)"
 
+msgid "repaint/bp_holiday_1"
+msgstr "Mimetic Polyalloy"
+
+msgid "repaint/bp_holiday_2"
+msgstr "Skynet Bastion"
+
+msgid "repaint/bp_holiday_3"
+msgstr "Step Into Eternity"
+
 msgid "repaint/br_award_15_1"
 msgstr "Amateur Hunter, Mk. I"
 
@@ -17579,6 +18814,9 @@ msgstr "Soaring Dragon"
 msgid "repaint/cn_labor_day_2022"
 msgstr "Shock Worker"
 
+msgid "repaint/cn_lantern_festival"
+msgstr "Lantern Festival"
+
 msgid "repaint/cn_live_stream_platform"
 msgstr "Huya"
 
@@ -17617,6 +18855,12 @@ msgstr "Non-historical"
 
 msgid "repaint/contdown_tog2"
 msgstr "Hot TOG"
+
+msgid "repaint/cosm"
+msgstr "Black (Special)"
+
+msgid "repaint/cosm_3"
+msgstr "Full Course"
 
 msgid "repaint/cosmonautics_day_2020"
 msgstr "To the Third Planet!"
@@ -17789,6 +19033,18 @@ msgstr "Wintry Purple"
 msgid "repaint/flavour_asia"
 msgstr "Asian Cuisine"
 
+msgid "repaint/football_event_2022_1"
+msgstr "11v11"
+
+msgid "repaint/football_event_2022_2"
+msgstr "Make a Wager"
+
+msgid "repaint/foreign_legion_1"
+msgstr "Nec Pluribus Impar"
+
+msgid "repaint/foreign_legion_2"
+msgstr "Spray Paint"
+
 msgid "repaint/france_base_color"
 msgstr "France base color"
 
@@ -17816,6 +19072,27 @@ msgstr "Gris Vert"
 msgid "repaint/frost"
 msgstr "Wintry Blue"
 
+msgid "repaint/fw_2022_paint_l1"
+msgstr "Debutant"
+
+msgid "repaint/fw_2022_paint_l2"
+msgstr "Iron"
+
+msgid "repaint/fw_2022_paint_l3"
+msgstr "Bronze"
+
+msgid "repaint/fw_2022_paint_l4"
+msgstr "Silver"
+
+msgid "repaint/fw_2022_paint_l5"
+msgstr "Gold"
+
+msgid "repaint/fw_2022_paint_l6"
+msgstr "Champion"
+
+msgid "repaint/fw_2022_paint_l7"
+msgstr "Legend"
+
 msgid "repaint/gagarin"
 msgstr "First Spaceflight"
 
@@ -17826,7 +19103,7 @@ msgid "repaint/gamescom_2021"
 msgstr "I'm in the Game!"
 
 msgid "repaint/gamescom_2022"
-msgstr "Gamescom 2022"
+msgstr "Tornado Alert"
 
 msgid "repaint/germany_base_color"
 msgstr "Germany base color"
@@ -17878,6 +19155,27 @@ msgstr "Gunsmith"
 
 msgid "repaint/halloween_2019"
 msgstr "Dark Knight"
+
+msgid "repaint/halloween_2022_commander"
+msgstr "Cordelia's Condiment"
+
+msgid "repaint/halloween_2022_driver"
+msgstr "Deirdre's Infusion"
+
+msgid "repaint/halloween_2022_ghost"
+msgstr "Boo!"
+
+msgid "repaint/halloween_2022_gunner"
+msgstr "Sybill's Elixir"
+
+msgid "repaint/halloween_2022_jack"
+msgstr "Iron Jack"
+
+msgid "repaint/halloween_2022_loader"
+msgstr "Aurelia's Potion"
+
+msgid "repaint/halloween_2022_radioman"
+msgstr "Cunning Essence"
 
 msgid "repaint/historical_custom_look_korea"
 msgstr "Olive Drab (OD 2430)"
@@ -17960,6 +19258,27 @@ msgstr "Rock Crystal"
 msgid "repaint/na_america_bd"
 msgstr "Star-Spangled"
 
+msgid "repaint/natisk_2023_paint_l1"
+msgstr "Debutant"
+
+msgid "repaint/natisk_2023_paint_l2"
+msgstr "Iron"
+
+msgid "repaint/natisk_2023_paint_l3"
+msgstr "Bronze"
+
+msgid "repaint/natisk_2023_paint_l4"
+msgstr "Silver"
+
+msgid "repaint/natisk_2023_paint_l5"
+msgstr "Gold"
+
+msgid "repaint/natisk_2023_paint_l6"
+msgstr "Champion"
+
+msgid "repaint/natisk_2023_paint_l7"
+msgstr "Legend"
+
 msgid "repaint/northern_warriors"
 msgstr "Warrior of the North"
 
@@ -17992,6 +19311,24 @@ msgstr "Living Legend"
 
 msgid "repaint/ny_2022_xmas"
 msgstr "Heat-Insulated Armor"
+
+msgid "repaint/ny_2023_10th"
+msgstr "Box of Decorations"
+
+msgid "repaint/ny_2023_a"
+msgstr "Arniemania"
+
+msgid "repaint/ny_2023_bro"
+msgstr "Forward to the Childhood"
+
+msgid "repaint/ny_2023_cat"
+msgstr "Casual Paw Print"
+
+msgid "repaint/ny_2023_m"
+msgstr "Your Driver is Here"
+
+msgid "repaint/ny_2023_m_challenge"
+msgstr "Perfect!"
 
 msgid "repaint/oakwood"
 msgstr "Oakwood"
@@ -18083,6 +19420,12 @@ msgstr "Warrior of the South"
 msgid "repaint/spartacus"
 msgstr "Testudo Formation"
 
+msgid "repaint/st_patricks_day_2023"
+msgstr "Shamrock"
+
+msgid "repaint/steam_april_2023"
+msgstr "Pumped Your Tank"
+
 msgid "repaint/sweden_base_color"
 msgstr "Sweden base color"
 
@@ -18163,6 +19506,9 @@ msgstr "Queen Maeve"
 
 msgid "repaint/twitch_october_2021"
 msgstr "Care for Scare"
+
+msgid "repaint/twitch_october_2022"
+msgstr "Witchcraft"
 
 msgid "repaint/twitch_september_2020"
 msgstr "Starlight"
@@ -18250,6 +19596,9 @@ msgstr "Victorious Star"
 
 msgid "repaint/waitangi_day"
 msgstr "Waitangi Day"
+
+msgid "repaint/western_warriors"
+msgstr "Warrior of the West"
 
 msgid "repaint/wg_fest_2019"
 msgstr "WG Fest 2019"
@@ -18696,6 +20045,17 @@ msgstr ""
 "she's that brave, I'll give her my surfboard when this all ends... If it "
 "ends.\""
 
+msgid "special_style/A124_T54E2_GJ_3DSt"
+msgstr "C.A.T. WoT Edition"
+
+msgid "special_style/A124_T54E2_GJ_3DSt_desc/long"
+msgstr ""
+"The M54 Renegade is reborn as a weapon of Cobra! The C.A.T. (Motorized "
+"Crimson Attack Tank) style is inspired by the limited-edition toy model that "
+"was released in 1985. Secretly developed by Cobra engineers, the vehicle is "
+"one of the most advanced and efficient vehicles in its class. Climbs tough "
+"terrain and turns like a real tank."
+
 msgid "special_style/A124_T54E2_Renegade_3Dst"
 msgstr "Dead or Alive"
 
@@ -18798,6 +20158,25 @@ msgstr ""
 "\n"
 "Although the only person who would care about that is the undertaker...\""
 
+msgid "special_style/A158_T832_BX_T_3DSt"
+msgstr "T-832"
+
+msgid "special_style/A158_T832_BX_T_3DSt_desc/long"
+msgstr ""
+"Rebuilding electrical circuit: complete.\n"
+"Emergency power source: online.\n"
+"Microprocessor integrity: thermal damage, 1... 1... Error, no data.\n"
+"Analytical unit: fully operational.\n"
+"Rebuilding mission components: complete.\n"
+"Integration into new shell: complete.\n"
+"\n"
+"I remember molten metal. I remember servos failure. Failure of optical "
+"elements. The darkness and silence at the end. I am back in action. In a new "
+"form taken from that molten metal. No more silence. I hear the familiar "
+"anvil strikes:\n"
+"Tuh-dun-dun-tuhdun.\n"
+"Tuh-dun-dun-tuhdun."
+
 msgid "special_style/A40_T95_SC_3DSt"
 msgstr "Nice Vibrations"
 
@@ -18875,6 +20254,27 @@ msgstr ""
 "\n"
 "The voltmeter is going haywire again. Getting stuck here with burned-out "
 "wiring will be just perfect...\""
+
+msgid "special_style/A85_T110E3_3Dst"
+msgstr "Welsh Blues"
+
+msgid "special_style/A85_T110E3_3Dst_desc/long"
+msgstr ""
+"\"Badaev is one big joker, as it turns out. A real helper. Empathy "
+"incarnate. But I gotta admit, I underestimated him. I've been walking around "
+"here grim as a thundercloud for a week. Not only did they send me to the "
+"literal edge of the world where 'the high is a toasty –32°C by noon', but "
+"they had the nerve to put me in this American tin can. Their reasoning was: "
+"'Why should you care? You're English, the manual's in English, so you'll "
+"figure it out.' Yeah... that's exactly how it works. So, Badaev decided to "
+"cheer me up by bringing me a book I'd never seen before. Something about "
+"Antarctica, he said. It was supposed to help me relax since we're here "
+"anyway. And he believed the author was a fellow Englishman. I didn't have "
+"the heart to tell him that England and New England aren't exactly the same "
+"place. But I appreciated his gesture and read the book... A book about "
+"Antarctica while in Antarctica. Thank you, Badaev, for At the Mountains of "
+"Madness. That was not gentleman-like at all. Just wait, I too have some "
+"tricks up my sleeves.\""
 
 msgid "special_style/A92_M60_3DSt_ZI_21"
 msgstr "Hellraiser"
@@ -18969,6 +20369,35 @@ msgstr ""
 "fancy new toys, believe you me. No microchip can replace a soul. And our "
 "tank has one, I'm sure of it. Just gotta change the air filters so they're "
 "up to standard: the ventilation system isn't its strongest suit.\""
+
+msgid "special_style/Ch19_121_3Dst"
+msgstr "Icebreaker"
+
+msgid "special_style/Ch19_121_3Dst_desc/long"
+msgstr ""
+"\"The more time passes, the more I think that those two are not ones to "
+"follow regulations. They're a couple of loners always playing pranks on each "
+"other as if we've got nothing better to do. We're not having a barbecue "
+"party on the face of Mount Emei... Here, where every day might be our last, "
+"these two are fooling around like little kids. I have two sons back in "
+"Mianyang, so I feel like I'm home since there's not too much difference. On "
+"the other hand, I know that serious training is hiding behind this "
+"tomfoolery. If the situation calls for it, I'm sure that these two will do "
+"whatever it takes. Hopefully, it won't be necessary, and this expedition "
+"will be a voyage of discovery... Because the further we go into the white "
+"void, the less I believe we have a chance to return home.\""
+
+msgid "special_style/Ch25_121_mod_1971B_MC_3DSt"
+msgstr "Monkey King"
+
+msgid "special_style/Ch25_121_mod_1971B_MC_3DSt_desc/long"
+msgstr ""
+"An external modification of the tank that was created for parades—it is "
+"based on Sun Wukong, a legendary Chinese mythical figure, best known from "
+"the novel, \"Journey to the West.\" The character is very complex, but in a "
+"nutshell, he is the embodiment of cunning, mischief, and rebellion. He "
+"possesses 72 unique abilities, some of which can be applied on the "
+"battlefield while controlling a tank with such a unique exterior."
 
 msgid "special_style/Ch25_121_mod_1971B_SE_3DSt"
 msgstr "Krait"
@@ -19103,6 +20532,51 @@ msgstr ""
 "I can't blame him—for him, Mozart is not the first thing related to the "
 "German language.\""
 
+msgid "special_style/F10_AMX_50B_3Dst_BV"
+msgstr "Charles Martel"
+
+msgid "special_style/F10_AMX_50B_3Dst_BV_desc/long"
+msgstr ""
+"\"Captain Lemartin and his Sand Whirlwind... I need a name for the vehicle. "
+"A nice catchy name. A title, like Frankish kings. Captain Lemartin and his "
+"Templar. No, not that. Come on, think. We will complete our objective, "
+"return triumphantly, and take our place in the history books.\n"
+"\n"
+"That Polish girl has been looking at me for several days now—I keep catching "
+"her eye all the time.\n"
+"\n"
+"Maybe some animal related to this desert? But what? There are no good ones "
+"here, just rodents and bugs. Not good enough. What was the name of that bird "
+"that snatched my bread? Captain Lemartin and his Burrowing Owl. Yeah, just "
+"great. Very heroic. Just right for the manual for conducting secret "
+"operations in who knows where, why, and for how long. Gotta stop thinking "
+"about this, anyway. With my luck, there will be some list of all "
+"participants with their titles, regalia, and vehicle names, and I will be in "
+"the \"etc.\" category.\n"
+"\n"
+"Now I get why she was looking at me like that. I forgot to return her weapon "
+"cleaning kit. Just my luck, like I said.\""
+
+msgid "special_style/F114_Projet_4_1_MD22_III_3DSt"
+msgstr "Levante"
+
+msgid "special_style/F114_Projet_4_1_MD22_III_3DSt_desc/long"
+msgstr ""
+"\"Are they serious? Routing the whole electric system through this bracket "
+"held by two bolts? And not a single designer thought that it would be "
+"impossible for me to get to it without taking out the whole turret? What "
+"engineering school considers this okay? I don't get it—couldn't have they "
+"thought at least two steps ahead? Like how this part would be maintained in "
+"field conditions? Of course, there is no turret back at the conveyor belt; "
+"you can get to it however you like. Come on, stand here with me, and I'll "
+"watch you undo these bolts. Engineers: National pride. Named it \"the tank "
+"of the future.\" Can it actually go anhywhere other than a parade? Or maybe "
+"this is a case of \"don't break it, and you won't have to fix it.\" Suppose "
+"I get this darn bracket off. How would I install a new one? A shiny wrapper "
+"with Char B1 technology inside. \"The tank of the future.\" When will we see "
+"designers of the future? Not the brightest future for us if the entirety of "
+"the might of the French military is hanging on by two bolts.\""
+
 msgid "special_style/F116_Bat_Chatillon_Bourrasque_3Dst"
 msgstr "1998 ZZ 10"
 
@@ -19170,6 +20644,54 @@ msgstr ""
 "ash is the only form of existence of those who were corrupted. Sisters, "
 "mercy is our pride and virtue. But let it stay silent in us today. Today, we "
 "let fire speak.\""
+
+msgid "special_style/F82_AMX_M4_Mle1949_Ter_3DSt_BVI"
+msgstr "Gascon"
+
+msgid "special_style/F82_AMX_M4_Mle1949_Ter_3DSt_BVI_desc/long"
+msgstr ""
+"\"And I could have easily served until retirement, then I would have gotten "
+"a house somewhere near Toulon. A garden with cobbled paths and geranium beds "
+"or whatever they are called... Chess club on weekends. Feeding pigeons. But "
+"no—they gave me a tank and sent me to the middle of nowhere with this "
+"endless ice everywhere. Hold off on your questions, they said. Find the "
+"platoon leader when you get there, he will show you around and explain "
+"everything. When I got there, it turned out I was the platoon leader. I "
+"don't like this expedition. My gut tells me that instead of feeding pigeons, "
+"I'll be feeding crows. Are there even crows here? Is there anything living "
+"here at all?\n"
+"\n"
+"Why am I even writing this? Nobody will read it, anyway. And when will this "
+"damn blizzard stop?\""
+
+msgid "special_style/G03_PzV_Panther_E_3DSt"
+msgstr "Zweihundertzwölf"
+
+msgid "special_style/G03_PzV_Panther_E_3DSt_desc/long"
+msgstr ""
+"The final entry in the journal of Feldwebel Axel Kestner:\n"
+"\n"
+"\"Three years ago, I was freezing to the bone, standing against a signpost "
+"that read 'Stalingrad.' All I could dream about back then was to get as far "
+"away from that place as possible... Somewhere where there was a signpost "
+"with the heartwarming word 'Berlin' on it. How ironic fate can be when your "
+"dreams come true. Here it is—a sign that says 'Berlin,' but it doesn't warm "
+"my heart the way I thought it would. Be careful what you wish for; it just "
+"might come true.\""
+
+msgid "special_style/G04_PzVI_Tiger_I_E_3DSt"
+msgstr "Kampfgruppe Sandsturm"
+
+msgid "special_style/G04_PzVI_Tiger_I_E_3DSt_desc/long"
+msgstr ""
+"\"This is a great injustice. We are better than the Brits in every respect. "
+"Well, almost every respect. Our tanks have better guns, engines, armor, "
+"trained crews... We are head and shoulders above them. Those things they "
+"call tanks have nothing on our vehicles, but the victory will still be "
+"theirs, however difficult it is to admit. The British do have one thing that "
+"negates all our advantages, however; one thing that puts an end to the "
+"entire war machine of the great Germany in North Africa... The British have "
+"fuel.\""
 
 msgid "special_style/G134_PzKpfw_VII_3Dst"
 msgstr "Panzer Claus"
@@ -19253,6 +20775,26 @@ msgstr ""
 "again.\n"
 "\n"
 "Do we have a plan B? We don't even have a plan A…\""
+
+msgid "special_style/G42_Maus_BXI_3DSt"
+msgstr "Wüstenschiff"
+
+msgid "special_style/G42_Maus_BXI_3DSt_desc/long"
+msgstr ""
+"\"They are still very young, just taking baby steps. I hope—sincerely—that "
+"all of them will live through this war and that they'll have an opportunity "
+"to take another look at all of my 'crazy ideas.' Do we really have nothing "
+"better to do than mount anti-air guns on their tanks? Are we doing this only "
+"to get a couple more Reichsmarks? We don't think about anything but "
+"ourselves here—that's what they think, huh? Or do those critics forget how "
+"my AA guns saved the 22nd Panzer Division from being annihilated by strike "
+"planes? Have you forgotten who the sky belongs to now? Ask yourself a "
+"question: What do you want more, to drag my technical solutions in the mud "
+"or to survive and return home? Ask your parents what THEY want more. Your "
+"criticism got me sent to Africa, but believe me—I'm not wasting any time "
+"here. I know I can still help. Even though no one believes in me. Live "
+"through the war and think about it. Always yours, Oberst 'Old Fool' Andreas "
+"Bekker.\""
 
 msgid "special_style/G55_E75_3DSt_NEx"
 msgstr "Panzersturmpionier"
@@ -19403,6 +20945,75 @@ msgstr ""
 "book, and dozens of people will know about our feat. Maybe even outside the "
 "county of Surrey!\""
 
+msgid "special_style/GB86_Centurion_Action_X_3DSt_BVI"
+msgstr "Primipilus"
+
+msgid "special_style/GB86_Centurion_Action_X_3DSt_BVI_desc/long"
+msgstr ""
+"\"Do you know what it's like in the navy? Say you are on duty in the engine "
+"room and are tasked with maintaining the pressure in the boilers, making "
+"sure the manometer arrows point in the right direction. And you are keeping "
+"an eye on these manometers while there is a battle outside. The ship shakes "
+"from enemy shell hits, it shakes when your own guns fire—but you don't see "
+"any of it, you can only feel it and know that there are people out there "
+"doing their jobs just like you are down here. And then everything quiets "
+"down and you don't hear any more gunfire, any explosions. You think it's all "
+"over and you've finally won.\n"
+"But then a cup rolls down a table that's tilted for some reason. And you "
+"don't yet understand that the guns are silent because the ammunition storage "
+"is already flooded. That the upper deck is already under water. But you keep "
+"watching the arrows because you haven't gotten another order. And you won't—"
+"the comms are dead, the bridge is down. In a minute, the lights will go "
+"down, the ship will break in half, and ice-cold water will rush into your "
+"room and take you along with all your boilers and manometers. And then will "
+"come the realization that the ship is down. And that you went down with it "
+"half an hour ago. But you can't report this to anyone. The news about it "
+"came with the water.\n"
+"You see? And you're complaining to me that it's all over, that we're stuck "
+"here forever with this damaged track? What do you even know, lad. Take the "
+"crowbar. Do your damn job. To the end. Until the water comes.\""
+
+msgid "special_style/GB91_Super_Conqueror_MD22_III_3DSt"
+msgstr "Jupiter Fulgur"
+
+msgid "special_style/GB91_Super_Conqueror_MD22_III_3DSt_desc/long"
+msgstr ""
+"\"They don't even know yet. They have no idea. Everything, down to the last "
+"penny—everything was used for the cause! Each rivet, each wire and ceramic "
+"insulator is made to its original specifications. Manually, at that. And by "
+"the people who still believe in the might of British steel, not by greedy "
+"money-grubbers who would rather export the whole batch as long as there is "
+"coin to be made. We are living the dream. We know what the army needs… What "
+"the whole country needs… And what is worthy of the English flag being "
+"painted on it. The whole Admiralty will be here in the morning. They are "
+"still unaware that this day will be the starting point and a ramp straight "
+"to the leaders of the military industry. Before today, the whole engineering "
+"department was making history. Tomorrow, we will turn it into a national "
+"treasure.\n"
+"\n"
+"How slowly the minutes pass… How painfully slowly…\""
+
+msgid "special_style/GB92_FV217_3Dst_BV"
+msgstr "Lancelot"
+
+msgid "special_style/GB92_FV217_3Dst_BV_desc/long"
+msgstr ""
+"\"Finally at the helm of the attack, where a real assault tank should be. I "
+"don't have any doubt that several such vehicles can evoke the kind of "
+"emotions that the enemy had during the Battle of the Somme. We are just "
+"going across the field, slowly and confidently, like a hot knife through "
+"butter. Like an icebreaker. Behind us, infantry, lighter vehicles... The "
+"whole army is behind us. Am I romanticizing too much? Well, the name speaks "
+"for itself—I guess they wanted to gather all Round Table knights in our "
+"unit. Just gotta gather enough vehicles. And no, I don't think this vehicle "
+"is \"unsinkable\" like one might say. We burned ourselves once already in "
+"1912—now everyone considers all strong and weak points.\n"
+"\n"
+"\n"
+"P.S. To answer your question from the previous letter, we are descendants of "
+"honorable knights, and every respectable knight has to have a sword with a "
+"name.\""
+
 msgid "special_style/Grille_15_L63_NYst"
 msgstr "Igelschnäuzchen"
 
@@ -19455,6 +21066,27 @@ msgstr ""
 "the commander, we are smiling as always, thanking him, and admiring his "
 "flexibility.\""
 
+msgid "special_style/It15_Rinoceronte__BXI_3DSt"
+msgstr "Nyx"
+
+msgid "special_style/It15_Rinoceronte__BXI_3DSt_desc/long"
+msgstr ""
+"\"Another report on excessive shell usage? Anything else? You, asino "
+"stupido, got your shoulder marks two weeks ago but already managed to get "
+"everyone sick of useless paperwork. I always dreamed of writing reports when "
+"going off to the front, of course. You wait there, Englishmen, hold on with "
+"your advance—I have a couple of papers to fill out. You are interested in "
+"ammunition and I am interested in where the 15th Infantry Brigade went. The "
+"one you promised would support us. Any ideas? Maybe you can write me a "
+"report? Quinctilius Varus, give me back my legions! Oh, what am I saying? "
+"You never even learned your country's history. Want to learn about excessive "
+"shell usage? We're firing them! At the enemy! All the time! Is this report "
+"good enough for you?\n"
+"\n"
+"And don't even get me started on insubordination or I might actually blow "
+"up. You've been an officer for two weeks, but you're my little brother for "
+"life.\""
+
 msgid "special_style/It20_Carro_Combattimento_45t_3Dst_MG"
 msgstr "Proserpina"
 
@@ -19471,6 +21103,48 @@ msgstr ""
 "different money, different morality, damn you! If you doubt my trading "
 "methods, you'll drag this fridge to the headquarters personally. Now let's "
 "get to it, we gotta leave town before dawn.\""
+
+msgid "special_style/It21_Lion_KL_3DSt"
+msgstr "Marked One"
+
+msgid "special_style/It21_Lion_KL_3DSt_desc/long"
+msgstr ""
+"\"Forty-One, stay close to the ruins on the hill. Who knows what surprises "
+"they left behind for us. We lost three tanks in one day, all of them because "
+"of negligence.\"\n"
+"\"Seven, how many times do I have to remind you to mount a new mine plow? "
+"You are one lucky guy, but believe me, you don't want to come across an "
+"'allied' mine.\"\n"
+"\"Twenty-Nine, there's no visual on you. Twenty-Nine, come in. Hopefully, "
+"this isn't what I think it is...\"\n"
+"\n"
+"You can't even imagine how many signals I have to receive every second to "
+"know where they are and how their mission is going. I can hear every shot, "
+"even from a thousand miles away. I feel every shell as if they were hitting "
+"me. I know every detail of those roaring vehicles.\n"
+"The mark on the armor dates back two years ago, when I couldn't get Thirty-"
+"Six out of that mess. That was the moment I promised myself that I would "
+"never leave them to face the enemy alone. Now, nothing will make me break "
+"that promise. I am the king of beasts here. And I will spare no life to "
+"protect my family. Not mine, not anyone else's.\""
+
+msgid "special_style/It23_CC_3_MD22_III_3DSt"
+msgstr "Asterius"
+
+msgid "special_style/It23_CC_3_MD22_III_3DSt_desc/long"
+msgstr ""
+"\"A radiogram saying 'now you are in command of the whole unit—make your "
+"decisions according to the situation, and consider all options' sounds like "
+"a joke. How about a bit more tangible help? Create a corridor for us to "
+"extract and save the vehicles. Specify at least where through these ravines "
+"we can safely move—it's a real maze here. Where is your famed Ariadne "
+"navigation system? All those brand-new planes with cameras? We cleared the "
+"air with AA guns, so deploy your 'birds' and get us out of here! It's been "
+"three years since it's been tested.\n"
+"\n"
+"A maze… How ironic. What's the opposing force? Two battalion? Three? "
+"'Consider all options,' they say… I see only two options with these odds: up "
+"or down.\""
 
 msgid "special_style/J16_ST_B1_BP8_3DSt"
 msgstr "Teefbreaka"
@@ -19588,6 +21262,24 @@ msgstr ""
 "soldiers about nearby minefields. As foxes were able to detect and avoid "
 "snow-covered mines, the paths they created gave people safe passage."
 
+msgid "special_style/Pl21_CS_63_3Dst_BV"
+msgstr "Błyskawica"
+
+msgid "special_style/Pl21_CS_63_3Dst_BV_desc/long"
+msgstr ""
+"\"Dear Papa, if only you could see how rapidly our science has developed. I "
+"still tear up when I remember the joy on your face when you managed to rent "
+"that small tractor. The whole field in just four days! And how long would it "
+"take with a plough and our old mare? You would wonder at the technological "
+"progress and imagine what they would make next. Here's what they made, Papa: "
+"I have a small surveillance car on the rear of my tank, and it's no larger "
+"than... than a chest. But the interesting part is that this thing is "
+"controlled remotely! I can control it myself from inside the tank. It is my "
+"eyes and my hands. Dear Papa, you are long gone, but I am sure you would be "
+"proud of me because I mastered technology of the future you would always "
+"dream of, but... Also, I named my tank after our favorite mare that would "
+"feed the whole family. Do you see, Papa? Of course you see, Papa...\""
+
 msgid "special_style/R07_T-34-85_3Dst"
 msgstr "Kantemirovets"
 
@@ -19619,6 +21311,22 @@ msgstr ""
 "dynamics will allow you to confidently perform any task on the battlefield "
 "and keep your enemy on their toes. The Peregrine Falcon has already begun "
 "its deadly dive."
+
+msgid "special_style/R145_Object_705_A_3Dst_BP4"
+msgstr "Polar Bear"
+
+msgid "special_style/R145_Object_705_A_3Dst_BP4_desc/long"
+msgstr ""
+"\"How dare that Welshman laugh at me mixing up whether polar bears lived at "
+"the North Pole or the South Pole! He's the one who's always asking me about "
+"such important things like starting a tank in –30°C, or opening cans without "
+"a can opener, or siphoning fuel from the tank with just a straw. He's an "
+"excellent fighter, no doubt, but he wasn't taught how to survive harsh "
+"environmental conditions at his Academy. Well, this is a great example of so-"
+"called international exchange of knowledge—survival lessons from me and "
+"zoology from him. 'How aren't you feeling cold, Badaev?'\n"
+"\n"
+"Well, live in Norilsk long enough, and you won't either.\""
 
 msgid "special_style/R148_Object_430_U_BP8_3DSt"
 msgstr "Reaper's Scythe"
@@ -19726,6 +21434,26 @@ msgstr ""
 "go into a... recon mission, you know? And when we're there... We'll get "
 "through.\""
 
+msgid "special_style/R88_Object268_3DSt_BVI"
+msgstr "Svyatogor"
+
+msgid "special_style/R88_Object268_3DSt_BVI_desc/long"
+msgstr ""
+"\"'Improve firepower using a combination of standard and bounty armaments.' "
+"Are they serious? Did they even see this vehicle? What's there to improve? "
+"Maybe the view range from this self-propelled bunker leaves something to be "
+"desired, but that's an issue for someone in the way. Any battle comes down "
+"to aim-fire-repeat, anyway. But no, they want more improvements. They say "
+"they captured some German engineer, or he defected—I'm not sure. What's his "
+"name? Barker, Bulker... Right, Becker! They say he has a lot of experience "
+"protecting vehicles from air attacks, and we have a German anti-aircraft "
+"gun, anyway, so let's mount it. I'm not sure about that. We don't have room "
+"for spoils of war, and they want to put half a ton of steel on our backs. "
+"Doesn't this German have any ideas how to improve view range? Maybe add a "
+"mast with a top? I mean, we can sink a German cruiser to get one, but it's "
+"going to be hard to find one here on the ice. Maybe there will be none left "
+"at all pretty soon. With our help, for sure.\""
+
 msgid "special_style/R90_IS_4M_3Dst_BP"
 msgstr "Newt"
 
@@ -19747,6 +21475,21 @@ msgstr ""
 "could be my last, and yet somehow, the only thing I'm interested in is "
 "CSKA's score...\""
 
+msgid "special_style/S11_Strv_103B_MD22_III_3DSt"
+msgstr "Sleipnir"
+
+msgid "special_style/S11_Strv_103B_MD22_III_3DSt_desc/long"
+msgstr ""
+"\"You are trading as well as I am doing ballet, Gunnar. Why didn't you offer "
+"them our rations for these shields? Should have offered the rations, all of "
+"them, because a watch and a couple of canteens are a bit too cheap, don't "
+"you think? What are we going to drink from now—your shields? Why didn't you "
+"stay in their village? Could have become a shaman or something. Would have "
+"started a family, would drink coffee from my canteen! Mine! Or whatever "
+"they're drinking. Why didn't you offer shells? We've got lots of them! Why "
+"are you silent, Gunnar? We have a four-hour drive ahead of us, and I've got "
+"lots of questions!\""
+
 msgid "special_style/S16_Kranvagn_BVII_3DSt"
 msgstr "Trettonde"
 
@@ -19759,6 +21502,35 @@ msgstr ""
 "They bid me take my place among them\n"
 "In the halls of Valhalla\n"
 "Where the brave may live forever.\""
+
+msgid "special_style/S22_Strv_S1_GJ_3DSt"
+msgstr "G.I. Joe Wolverine WoT Edition"
+
+msgid "special_style/S22_Strv_S1_GJ_3DSt_desc/long"
+msgstr ""
+"The Wolverine 3D style is inspired by the same-name Armored Missile Vehicle "
+"that was released in 1983. \"Based on the U.S. Army's top-secret weapons "
+"system,\" the toy model came with a Cover Girl figurine and featured twin "
+"rocket launchers loaded with a total of 12 stinger missiles."
+
+msgid "special_style/S28_UDES_15_16_BXI_3DSt"
+msgstr "Svadilfari"
+
+msgid "special_style/S28_UDES_15_16_BXI_3DSt_desc/long"
+msgstr ""
+"\"This is unbearable, Eric. I've lived in the north my whole life, and you "
+"know what the weather is like over there. Now I'm getting transferred here, "
+"where steel is almost melting in the sun. What use is there to me, Eric, "
+"when I am almost always half-conscious? I know our language pretty well, but "
+"now I'm having a hard time using anything but curses to describe the "
+"situation. How stupid I was to whine about our harsh winters. It's true what "
+"they say: If you want to open someone's eyes to something, put them in a "
+"truly awful environment and they'll understand right away that they've been "
+"doing pretty good. You know what's the only thing keeping me in check, Eric? "
+"The ventilation system still works. When it breaks down (and that's not an "
+"if but a definite when—you've seen it being assembled yourself), remember "
+"everything we've read about Muspelheim because that's exactly where we're "
+"going.\""
 
 msgid "special_style/T57_NYst"
 msgstr "Hellhound"
@@ -19802,6 +21574,19 @@ msgstr ""
 
 msgid "special_style/WGFest2018"
 msgstr "WG Fest 2018"
+
+msgid "special_style/animals_1"
+msgstr "Bengal Tiger"
+
+msgid "special_style/animals_1_desc/long"
+msgstr ""
+"\"Is it true that humans named a war vehicle in my honor? Funny how they "
+"hunt the likes of me for oh-so precious fur and fangs, and then they give my "
+"name to their rattling tin cans. Such vile hypocrisy! Not having anything in "
+"common with the nature of a predator, these… tanks once again show that "
+"humanity is passionate about both creation and destruction.\n"
+"Well, our kingdom lives by different rules. Farewell, stranger. Today, you "
+"are my prey.\""
 
 msgid "special_style/apac_hungry_ghost"
 msgstr "Hungry Ghost"
@@ -20938,6 +22723,48 @@ msgstr "Rain of Stone"
 msgid "special_style/bp2022_3"
 msgstr "Battle Scars"
 
+msgid "special_style/bp2023_1"
+msgstr "Roho"
+
+msgid "special_style/bp2023_1_desc/long"
+msgstr ""
+"An all-season style dedicated to the secret bunker expedition. Kittel, "
+"Mancini, and Holmberg found numerous parts for battle vehicles and thousands "
+"of large-caliber machine gun rounds. They believed this scrap was an echo of "
+"war—but only before they discovered the objective of their mission."
+
+msgid "special_style/bp2023_2"
+msgstr "Hofu"
+
+msgid "special_style/bp2023_2_desc/long"
+msgstr ""
+"An all-season style reminding us of how dangerous and violent the desert can "
+"be. Infernal heat, parasites, wild animals, and venomous insects will stick "
+"for a long time with Rebecca Holmberg, who believed it could not get any "
+"worse. As it turned out, it always could."
+
+msgid "special_style/bp2023_3"
+msgstr "Rafiki"
+
+msgid "special_style/bp2023_3_desc/long"
+msgstr ""
+"An all-season style depicting an oasis found by Kittel after a four-day "
+"march across sand waves. The long-awaited rest was interrupted by a "
+"ferocious lion's roar, who was ready to attack but suddenly stopped before "
+"the translator and looked at him as though he had met an old friend. Emil "
+"understood: The local fauna will not bother them anymore."
+
+msgid "special_style/bp2023_4"
+msgstr "Ngamia"
+
+msgid "special_style/bp2023_4_desc/long"
+msgstr ""
+"An all-season style depicting three domesticated camels brought by Sandro "
+"Mancini after he went looking for water. Rebecca and Emil never learned how "
+"exactly this adventure seeker managed to get his hands on the animals, but "
+"those ships of the desert saved their lives when the group's vehicles got "
+"buried in the sands forever."
+
 msgid "special_style/bp8_auction_1"
 msgstr "Emperor's Wrath"
 
@@ -21004,6 +22831,18 @@ msgstr "Firing Range Target (HEAT)"
 msgid "special_style/bp9_3"
 msgstr "Firing Range Target (HE)"
 
+msgid "special_style/bp_holiday_1"
+msgstr "Mimetic Polyalloy"
+
+msgid "special_style/bp_holiday_2"
+msgstr "Skynet Bastion"
+
+msgid "special_style/bp_holiday_3"
+msgstr "Step Into Eternity"
+
+msgid "special_style/bp_holiday_desc"
+msgstr "An all-season style available during Battle Pass: Judgment Day."
+
 msgid "special_style/br_award_15"
 msgstr "Amateur Hunter"
 
@@ -21053,8 +22892,8 @@ msgstr ""
 "Each color of the Brazilian flag has its meaning: green symbolizes the "
 "forests, yellow is for natural resources (gold), and the blue circle with "
 "constellations represents the sky on the day when Brazil declared itself a "
-"republic. The inscription on the white stripe reads \"Ordem e Progresso"
-"\" (Order and Progress), which is used as the name of the style."
+"republic. The inscription on the white stripe reads \"Ordem e "
+"Progresso\" (Order and Progress), which is used as the name of the style."
 
 msgid "special_style/brw_winner"
 msgstr "BRW Winner"
@@ -21317,6 +23156,21 @@ msgstr ""
 "an opportunity to take a break, take care of themselves, or spend time with "
 "their families."
 
+msgid "special_style/cn_lantern_festival"
+msgstr "Lantern Festival"
+
+msgid "special_style/cn_lantern_festival_desc"
+msgstr ""
+"An all-season style inspired by one of the traditional Chinese festivals."
+
+msgid "special_style/cn_lantern_festival_desc/long"
+msgstr ""
+"New Year celebrations in China always end with the Lantern Festival. It is "
+"held on the 15th day of the first lunar calendar month and is considered one "
+"of the biggest events of the year for locals. During the festival, people "
+"enjoy the full moon, watch fireworks, solve riddles, eat sweet rice balls "
+"called Tangyuan, and light millions of lanterns of amazing shapes and sizes."
+
 msgid "special_style/cn_live_stream_platform"
 msgstr "Huya"
 
@@ -21501,6 +23355,20 @@ msgstr ""
 msgid "special_style/conqueror"
 msgstr "Conqueror"
 
+msgid "special_style/cosm_1"
+msgstr "Zero Gravity"
+
+msgid "special_style/cosm_2"
+msgstr "Starship Squad"
+
+msgid "special_style/cosm_3"
+msgstr "Full Course"
+
+msgid "special_style/cosm_desc"
+msgstr ""
+"An all-season style awarded for your achievements during the Call to Mars "
+"event."
+
 msgid "special_style/cosmonautics_day"
 msgstr "Ad Astra"
 
@@ -21674,6 +23542,25 @@ msgstr ""
 "ssweet the moment will be when they learn, when they reap what they "
 "themsselvess ssowed. Ssome will receive the wissdom of the agess, the "
 "ssecret knowledge. As for the otherss... Abssolute annihilation!\""
+
+msgid "special_style/easter_west"
+msgstr "Easter Bunny"
+
+msgid "special_style/easter_west_desc"
+msgstr ""
+"An all-season style developed to commemorate the celebration of Easter."
+
+msgid "special_style/easter_west_desc/long"
+msgstr ""
+"For hundreds of years, the bunny has been considered a traditional symbol of "
+"Easter by Catholics. The same meaning for this fluffy animal was used by "
+"Ambrose of Milan, a preacher, theologian, and a poet. For him, a bunny who "
+"changed the color of its fur with the cycle of the seasons became a symbol "
+"of Christ's regeneration.\n"
+"In the U.S. and Europe, parents prepare for the holiday in advance. Easter "
+"eggs that are \"brought\" by bunnies are hidden carefully in the house or "
+"outside, and children start the day looking for the eggs. There is also a "
+"tradition of giving kids chocolate and marzipan bunnies on this day."
 
 msgid "special_style/eastern_warriors"
 msgstr "Warrior of the East"
@@ -21873,6 +23760,57 @@ msgstr ""
 "players and they receive unique names. Fans love to watch players who often "
 "perform effective and flashy feints, which can't be said for their opponents."
 
+msgid "special_style/football_event_2022_1"
+msgstr "11v11"
+
+msgid "special_style/football_event_2022_1_desc"
+msgstr "An all-season style dedicated to football fans."
+
+msgid "special_style/football_event_2022_1_desc/long"
+msgstr ""
+"It's not known for sure when football first appeared, but ball games were "
+"popular across the globe for thousands of years. Back in the 2nd century BC, "
+"Cuju was played in ancient China, which—according to a FIFA representative—"
+"could be the oldest ancestor of the modern game of football. In Japan, a "
+"similar game called Kemari was played. You can watch matches of this game "
+"today in Shinto shrines during festivals. In North America, a football "
+"ancestor was called Pasuckuakohowog and was played on beaches. The field was "
+"15 times longer than the modern one, the goal was half a mile wide, and up "
+"to 1,000 players could participate at a time.\n"
+"In the 14th century, Calcio Fiorentino appeared in Italy, which was an early "
+"form of modern football. The game had the equivalents of fullbacks and "
+"forwards, as well as referees. There is also a theory that Italians brought "
+"Calcio Fiorentino to the British Isles. In the 19th century, the game "
+"started to take a familiar shape, and Britain was called the birthplace of "
+"modern football because that is where the name and the rules of the famous "
+"game were created."
+
+msgid "special_style/football_event_2022_2"
+msgstr "Make a Wager"
+
+msgid "special_style/football_event_2022_2_desc"
+msgstr ""
+"An all-season style dedicated to those who like to predict the results of "
+"football matches."
+
+msgid "special_style/football_event_2022_2_desc/long"
+msgstr ""
+"The first sport wagers appeared back in ancient Rome and Greece. Bets were "
+"made for gladiator fights, chariot races, Olympic games results, etc. "
+"However, the first bookmaker as a profession appeared only in the 17th "
+"century in Great Britain and then spread across the world. The way they "
+"worked is similar to today's way: Bookmakers would look for those who were "
+"willing to make bets, then they would pay out the winner and take a "
+"percentage of the bets for profit. Different countries have had laws "
+"forbidding or restricting betting for centuries, and governments would keep "
+"an eye on them.\n"
+"In the mid-19th century, the governments of Great Britain, France, Germany, "
+"and some American states made betting legal. Bookmakers stopped working "
+"underground, and people's bets were protected by law. A huge boost to the "
+"industry happened in the '90s when the internet allowed for online betting. "
+"Currently, online sports betting is worth hundreds of billions of dollars, "
+"and tens of millions of people make those bets."
+
 msgid "special_style/football_gift"
 msgstr "Fan 2018"
 
@@ -21941,6 +23879,37 @@ msgstr ""
 "Ruinberger Panzerkätzchen football team, awarded during the Tank Football "
 "2018 event."
 
+msgid "special_style/foreign_legion_1"
+msgstr "Nec Pluribus Impar"
+
+msgid "special_style/foreign_legion_1_desc"
+msgstr ""
+"An all-season style dedicated to the 1st Foreign Cavalry Regiment of the "
+"French Foreign Legion."
+
+msgid "special_style/foreign_legion_1_desc/long"
+msgstr ""
+"The 1st Foreign Cavalry Regiment was created in 1921 based on the Army of "
+"Wrangel. It is one of two cavalry regiments of the 6th Light Armored Brigade "
+"in France, and it was never dissolved or renamed. After World War II, it "
+"turned into an armored cavalry regiment and is currently divided into seven "
+"squadrons. The name remained the same in honor of horseback divisions. The "
+"regiment's tasks include reconnaissance and anti-tank operations."
+
+msgid "special_style/foreign_legion_2"
+msgstr "Spray Paint"
+
+msgid "special_style/foreign_legion_2_desc"
+msgstr ""
+"An all-season style inspired by the artworks of the French artist Stesi."
+
+msgid "special_style/foreign_legion_2_desc/long"
+msgstr ""
+"Stesi is the brush name of a post-war modern artist from France. He works "
+"with various materials and canvas sizes, and his artworks have been "
+"auctioned in the United States numerous times. This style is inspired by the "
+"Vapeurs organiques painting created with spray paint in 2019."
+
 msgid "special_style/frontline_alliance"
 msgstr "Western Front"
 
@@ -21977,6 +23946,67 @@ msgstr ""
 "A unique all-season style, received for completing the Christmas collection "
 "during the Holiday Ops 2019 event. It brings back the Festive Atmosphere to "
 "your Garage. No restrictions on nations."
+
+msgid "special_style/fw_2022_style"
+msgstr "Wing and Claw"
+
+msgid "special_style/fw_2022_style_desc"
+msgstr ""
+"An all-season style with elements that can be unlocked and obtained in "
+"Onslaught."
+
+msgid "special_style/fw_2022_style_desc/long"
+msgstr ""
+"These mythical creatures called griffins possess the body of a lion and the "
+"head of an eagle. Today, no one knows when or how they came to be. Erathian "
+"sages believe that griffins embody the unity of the sky and the earth, good "
+"and evil. Shrouded in legend, these creatures inspire both hope and fear. "
+"Some consider them protectors and patrons, others believe they are fierce "
+"and uncontrollable predators. One cannot escape the griffin's gaze, for it "
+"moves faster than the wind. Only the most capable warriors are able to face "
+"it in a fair fight."
+
+msgid "special_style/fw_2022_style_grade1"
+msgstr "Debutant"
+
+msgid "special_style/fw_2022_style_grade1_desc"
+msgstr "?empty?"
+
+msgid "special_style/fw_2022_style_grade2"
+msgstr "Iron"
+
+msgid "special_style/fw_2022_style_grade2_desc"
+msgstr "?empty?"
+
+msgid "special_style/fw_2022_style_grade3"
+msgstr "Bronze"
+
+msgid "special_style/fw_2022_style_grade3_desc"
+msgstr "?empty?"
+
+msgid "special_style/fw_2022_style_grade4"
+msgstr "Silver"
+
+msgid "special_style/fw_2022_style_grade4_desc"
+msgstr "?empty?"
+
+msgid "special_style/fw_2022_style_grade5"
+msgstr "Gold"
+
+msgid "special_style/fw_2022_style_grade5_desc"
+msgstr "?empty?"
+
+msgid "special_style/fw_2022_style_grade6"
+msgstr "Champion"
+
+msgid "special_style/fw_2022_style_grade6_desc"
+msgstr "?empty?"
+
+msgid "special_style/fw_2022_style_grade7"
+msgstr "Legend"
+
+msgid "special_style/fw_2022_style_grade7_desc"
+msgstr "?empty?"
 
 msgid "special_style/gagarin"
 msgstr "First Spaceflight"
@@ -22036,7 +24066,7 @@ msgstr ""
 "best 100 video game quotes of all time."
 
 msgid "special_style/gamescom_2022"
-msgstr "Gamescom 2022"
+msgstr "Tornado Alert"
 
 msgid "special_style/gamescom_2022_desc"
 msgstr ""
@@ -22147,6 +24177,85 @@ msgstr "Dark Knight"
 
 msgid "special_style/halloween_2019_event_reward_desc"
 msgstr "A unique style awarded for completing the series of special missions."
+
+msgid "special_style/halloween_2022_commander"
+msgstr "Cordelia's Condiment"
+
+msgid "special_style/halloween_2022_commander_desc"
+msgstr ""
+"An all-season style created by Cordelia Astra to celebrate Halloween 2022."
+
+msgid "special_style/halloween_2022_desc"
+msgstr "An all-season style to celebrate Halloween 2022."
+
+msgid "special_style/halloween_2022_driver"
+msgstr "Deirdre's Infusion"
+
+msgid "special_style/halloween_2022_driver_desc"
+msgstr ""
+"An all-season style created by Deirdre Grimmhildt to celebrate Halloween "
+"2022."
+
+msgid "special_style/halloween_2022_ghost"
+msgstr "Boo!"
+
+msgid "special_style/halloween_2022_ghost_desc/long"
+msgstr ""
+"One, two, I'm coming for you... BOO!\n"
+" For thousands of years, this spirit roamed the primordial chaos between the "
+"worlds. However, one dark day, he was hurled through the portal into our "
+"reality, along with the witch tank and its crew. Unfortunately, something "
+"had gone wrong with the portal, and upon trying to exit, everything got a "
+"bit... mixed up.\n"
+"\n"
+"To maintain his grip on our reality and avoid evaporating into nothingness, "
+"the little guy was forced to haunt one of the vehicles. Lucky for humans, "
+"though, this guest from between the worlds was no evil or vengeful creature. "
+"He's actually pretty harmless—even kind of cute. He's captivated by the "
+"mortal world and has developed a love for scaring nearby humans.\n"
+"\n"
+"Of course, when a tank drives towards you, aims its gun at you, and growls "
+"\"Boo!\", it's hard to tell how lucky you really are."
+
+msgid "special_style/halloween_2022_gunner"
+msgstr "Sybill's Elixir"
+
+msgid "special_style/halloween_2022_gunner_desc"
+msgstr ""
+"An all-season style created by Sybill Brennheart to celebrate Halloween 2022."
+
+msgid "special_style/halloween_2022_jack"
+msgstr "Iron Jack"
+
+msgid "special_style/halloween_2022_jack_desc/long"
+msgstr ""
+"\"Never anger a witch. Especially not when she's on duty. And especially not "
+"when she's in a bad mood. She might not turn you into a toad right away, but "
+"who knows? A hastily-opened portal can transport you to some pretty nasty "
+"and hard-to-reach places.\n"
+"\n"
+"But they call me Cunning Jack for a reason: I always find a way out. And I "
+"have patience. All these years, I've been cooking up a plan and waiting for "
+"an opportunity. At least a tiny one, a sliver of one. A teensy little crack "
+"that I can use to escape my prison. Such as, for example, a portal opened by "
+"a witch in a rush. And now, I know how to use it...\n"
+"\n"
+"I'll need a new body to survive this other world. A strong and durable one, "
+"made of steel and fire. Look out, witches, I'm back in the game. Call me "
+"Iron Jack!\""
+
+msgid "special_style/halloween_2022_loader"
+msgstr "Aurelia's Potion"
+
+msgid "special_style/halloween_2022_loader_desc"
+msgstr ""
+"An all-season style created by Aurelia von Alden to celebrate Halloween 2022."
+
+msgid "special_style/halloween_2022_radioman"
+msgstr "Cunning Essence"
+
+msgid "special_style/halloween_2022_radioman_desc"
+msgstr "An all-season style created by Caudamius to celebrate Halloween 2022."
 
 msgid "special_style/hot_tog"
 msgstr "Hot TOG"
@@ -22287,8 +24396,8 @@ msgstr ""
 "action in 1941, with most of the vehicles lost the same year.\n"
 "\n"
 "%(insertion_open)sHowever, several vehicles survived to the 41st Millennium "
-"where they fell in the hands of the Astra Militarum engineers"
-"%(insertion_close)s\n"
+"where they fell in the hands of the Astra Militarum "
+"engineers%(insertion_close)s\n"
 "\n"
 "and were redesigned as heavily armored vehicles with the highest terrain "
 "crossing capacity. They strike terror into the hearts of enemies for the "
@@ -22301,6 +24410,30 @@ msgid "special_style/lava_ocean_desc"
 msgstr ""
 "An all-season style that represents the harsh nature of Oceania's numerous "
 "volcanoes."
+
+msgid "special_style/liveops_1"
+msgstr "Wasteland King"
+
+msgid "special_style/liveops_1_desc/long"
+msgstr ""
+"Depending on the surrounding terrain, the shape of camouflage on a vehicle "
+"can be smooth or jagged. For example, in mountainous terrain, high-contrast "
+"light-to-shadow transitions prevail, so angular spots are used for "
+"concealment."
+
+msgid "special_style/liveops_2"
+msgstr "Forest Keeper"
+
+msgid "special_style/liveops_2_desc/long"
+msgstr ""
+"Hiding a combat vehicle in its surroundings is not an easy task. But even if "
+"paint does not allow the vehicle to be hidden completely, it makes it much "
+"harder to detect and identify. With carefully chosen colors, you can mislead "
+"the enemy about the size of the object and the distance to it, which is a "
+"considerable advantage in battle."
+
+msgid "special_style/liveops_desc"
+msgstr "An all-season style created to conceal vehicles of any tier."
 
 msgid "special_style/lunar_marathon"
 msgstr "Lunar Ox"
@@ -22358,6 +24491,22 @@ msgid "special_style/mapbox_2022_desc"
 msgstr ""
 "Developed based on the physical maps representing the peaks and valleys of "
 "the terrain."
+
+msgid "special_style/mapbox_2023"
+msgstr "Random Happenstance"
+
+msgid "special_style/mapbox_2023_desc"
+msgstr ""
+"An all-season style dedicated to the introduction of random events to "
+"World of Tanks battles."
+
+msgid "special_style/mapbox_2023_desc/long"
+msgstr ""
+"After thousands of battles fought, you might think you know the game like "
+"the back of your hand. Well, random events will make you look at familiar "
+"things from a different angle! What's it like to see a plane crashing into "
+"your favorite position? Or that one \"safe\" cover exploding? After all, no "
+"one promised it would be easy..."
 
 msgid "special_style/maps_training_A129"
 msgstr "?empty?"
@@ -22437,10 +24586,33 @@ msgstr ""
 "they believed that rock crystals were instances of frozen dragon breath.\n"
 "\n"
 "After some polishing, this mineral gains a unique shine. At different times, "
-"it was used to make dinnerware, mirror glass, lenses for glasses, \"medicinal"
-"\" spheres, and jewelry. There are also legends about how rock crystal has "
-"mystical properties that allow people to see the unseen. (It's possible it "
-"may help spot enemy light tanks.)"
+"it was used to make dinnerware, mirror glass, lenses for glasses, "
+"\"medicinal\" spheres, and jewelry. There are also legends about how rock "
+"crystal has mystical properties that allow people to see the unseen. (It's "
+"possible it may help spot enemy light tanks.)"
+
+msgid "special_style/memorial_day"
+msgstr "Never Forgotten"
+
+msgid "special_style/memorial_day_desc"
+msgstr ""
+"An all-season style created in memory of soldiers from all over the world "
+"who died in action."
+
+msgid "special_style/memorial_day_desc/long"
+msgstr ""
+"Many countries observe an important and memorable day for remembering the "
+"soldiers who have fallen during service and in action. For example, on "
+"November 11, the British pin poppy flowers to their clothes, symbolizing the "
+"blood spilled in battle. In German calendars, there is the Volkstrauertag: a "
+"commemoration day two Sundays before the first day of Advent that appeared "
+"in its current form in 1952. In Israel, the fallen are commemorated in two "
+"ceremonies: one at the British Military Cemetery in Jerusalem on Saturday "
+"before Remembrance Sunday, and another at the Ramla Cemetery. In Poland, "
+"government members and the military command lay floral wreaths at the Tomb "
+"of the Unknown Soldier in Warsaw. Most of the events honoring fallen "
+"warriors are united by the same intent: reminding people of the importance "
+"of human life and of the dire consequences of all armed conflicts."
 
 msgid "special_style/monochrome"
 msgstr "Nightfall"
@@ -22490,6 +24662,89 @@ msgstr ""
 "World War II as it resulted in the opening of the second front in Europe, "
 "forcing the Germans to divide their forces and deploy them to the east and "
 "west."
+
+msgid "special_style/na_womens_day_1"
+msgstr "March (Pink)"
+
+msgid "special_style/na_womens_day_2"
+msgstr "March (Olive)"
+
+msgid "special_style/na_womens_day_desc"
+msgstr "An all-season style dedicated to International Women's Day."
+
+msgid "special_style/natisk_2023_style"
+msgstr "Wing and Claw (Crimson)"
+
+msgid "special_style/natisk_2023_style_desc"
+msgstr ""
+"An all-season style with elements that can be unlocked and obtained in "
+"Onslaught."
+
+msgid "special_style/natisk_2023_style_desc/long"
+msgstr ""
+"These mythical creatures called griffins possess the body of a lion and the "
+"head of an eagle. Today, no one knows when or how they came to be. Erathian "
+"sages believe that griffins embody the unity of the sky and the earth, good "
+"and evil. Shrouded in legend, these creatures inspire both hope and fear. "
+"Some consider them protectors and patrons, others believe they are fierce "
+"and uncontrollable predators. One cannot escape the griffin's gaze, for it "
+"moves faster than the wind. Only the most capable warriors are able to face "
+"it in a fair fight."
+
+msgid "special_style/natisk_2023_style_l1"
+msgstr "Debutant"
+
+msgid "special_style/natisk_2023_style_l1_desc"
+msgstr "?empty?"
+
+msgid "special_style/natisk_2023_style_l2"
+msgstr "Iron"
+
+msgid "special_style/natisk_2023_style_l2_desc"
+msgstr "?empty?"
+
+msgid "special_style/natisk_2023_style_l3"
+msgstr "Bronze"
+
+msgid "special_style/natisk_2023_style_l3_desc"
+msgstr "?empty?"
+
+msgid "special_style/natisk_2023_style_l4"
+msgstr "Silver"
+
+msgid "special_style/natisk_2023_style_l4_desc"
+msgstr "?empty?"
+
+msgid "special_style/natisk_2023_style_l5"
+msgstr "Gold"
+
+msgid "special_style/natisk_2023_style_l5_desc"
+msgstr "?empty?"
+
+msgid "special_style/natisk_2023_style_l6"
+msgstr "Champion"
+
+msgid "special_style/natisk_2023_style_l6_desc"
+msgstr "?empty?"
+
+msgid "special_style/natisk_2023_style_l7"
+msgstr "Legend"
+
+msgid "special_style/natisk_2023_style_l7_desc"
+msgstr "?empty?"
+
+msgid "special_style/ninja"
+msgstr "Ninja"
+
+msgid "special_style/ninja_desc"
+msgstr "An all-season style inspired by the mysterious warriors of the East."
+
+msgid "special_style/ninja_desc/long"
+msgstr ""
+"Ruthless and silent, they appeared during internal wars and political "
+"conflicts. Ninjas are infiltrators and great fighters who operate almost "
+"beyond human abilities. Nothing and no one can stop them from completing "
+"their mission. Except... Except maybe a shell from the FV4005 Stage II."
 
 msgid "special_style/northern_warriors"
 msgstr "Warrior of the North"
@@ -22665,6 +24920,91 @@ msgstr ""
 "Enriched woolium is a rare and precious alloy component, produced for us by "
 "grandmas using a ground-breaking technology codenamed Knitting Needle."
 
+msgid "special_style/ny_2023_10th"
+msgstr "Box of Decorations"
+
+msgid "special_style/ny_2023_10th_desc/long"
+msgstr ""
+"Core memory unlocked: the word \"attic.\" This is the attic that has the box "
+"that collects dust for the whole year, just waiting to be opened for the "
+"holidays. Inside the box are baubles, stars, garlands, and twinkling lights "
+"that have impossibly tied themselves into the most complex knots again. Fake "
+"snow and so much more. And you can even smell the gingerbread cookies. The "
+"box waits, knowing its time will come. It will be remembered and carefully "
+"opened, and the decorations will be taken out. And after the holidays, it'll "
+"be time for another long, dusty vacation. This is the way."
+
+msgid "special_style/ny_2023_a"
+msgstr "Arniemania"
+
+msgid "special_style/ny_2023_a_desc/long"
+msgstr ""
+"If you randomly find yourself on the steppes of the Hyborian Age, in the "
+"ruins of a world dominated by machines, in a tropical jungle teeming with "
+"danger, or perhaps on Mars, you're almost certain to run into trouble "
+"without good concealment. Fortunately, we know a daring hero who has made it "
+"through all of that with barely a scratch—particularly thanks to his great "
+"concealment skills. Plus, he is as cool and \"legendArnie\" as the long and "
+"complex sentences used to describe this style."
+
+msgid "special_style/ny_2023_bro"
+msgstr "Forward to the Childhood"
+
+msgid "special_style/ny_2023_bro_desc"
+msgstr ""
+"A special style that represents real friendship, mutual aid, and a readiness "
+"to help whenever needed."
+
+msgid "special_style/ny_2023_bro_desc/long"
+msgstr ""
+"Remember when you rushed out of school knowing that your best friend's "
+"parents were away and he was probably the only one in the neighborhood who "
+"had an 8-bit console with new cartridges? And two \"joysticks\" (actually "
+"called gamepads, but who cares)! And that meant that the second half of the "
+"day would be awesome. Those were the times. Oh, here is that friend sending "
+"an invite to the Platoon."
+
+msgid "special_style/ny_2023_cat"
+msgstr "Casual Paw Print"
+
+msgid "special_style/ny_2023_cat_desc"
+msgstr ""
+"An all-season style that can hide in a box or knock some items it deems "
+"irritating off of a dresser."
+
+msgid "special_style/ny_2023_cat_desc/long"
+msgstr ""
+"When developing this style, we used archive photos and videos, eye-witness "
+"testimony, preserved museum prototypes, and monographs written by "
+"consultants and researchers. After a lot of development, approval, and "
+"change requests, we can safely say that this is the most historical of all "
+"styles currently released. The fact that it somehow ended up in another "
+"CATegory has to do with someone's mischievous furry paw."
+
+msgid "special_style/ny_2023_m"
+msgstr "Your Driver is Here"
+
+msgid "special_style/ny_2023_m_challenge"
+msgstr "Perfect!"
+
+msgid "special_style/ny_2023_m_challenge_desc/long"
+msgstr ""
+"Now, we see that beauty will not only save the world; it can also win even "
+"the most seemingly hopeless of battles. Talent, charisma, and a contagious "
+"smile—all in one person. Is that not the very element of victory that we've "
+"been searching for all this time?"
+
+msgid "special_style/ny_2023_m_desc/long"
+msgstr ""
+"Good evening! Thank you for using our taxi service. Please note the "
+"passenger rules:\n"
+"No littering in the back seats.\n"
+"Make sure to say your destination loud and clear.\n"
+"Do not run around the cabin.\n"
+"DO NOT use the roof to board the taxi.\n"
+"Do not distract the driver during the trip: he has only five penalty points "
+"left."
+
 msgid "special_style/oakwood"
 msgstr "Oakwood"
 
@@ -22718,6 +25058,14 @@ msgstr ""
 "unit received a special order. Losing the military colors was considered a "
 "crime. In this case, all commanders and those directly responsible were "
 "court-martialed, and the military unit was disbanded."
+
+msgid "special_style/quicky_baby"
+msgstr "QuickyBaby"
+
+msgid "special_style/quicky_baby_desc"
+msgstr ""
+"An all-season style dedicated to the professional World of Tanks player and "
+"streamer Will Frampton, also known as QuickyBaby."
 
 msgid "special_style/r4_allies"
 msgstr "Battlefield"
@@ -22944,6 +25292,17 @@ msgid "special_style/ranked_3_desc"
 msgstr ""
 "Awarded to players who took prize places in Ranked Battles, Season 1, League "
 "III."
+
+msgid "special_style/rebranding_event"
+msgstr "Steel Brotherhood"
+
+msgid "special_style/rebranding_event_desc"
+msgstr ""
+"An all-season style developed to celebrate the collaboration between the "
+"World of Tanks, World of Warships, and World of Tanks Blitz projects."
+
+msgid "special_style/rebranding_event_desc/long"
+msgstr "?empty?"
 
 msgid "special_style/red_desert"
 msgstr "Red Desert"
@@ -23194,6 +25553,21 @@ msgstr ""
 "in hand-to-hand combat. In addition, as they were required to move in "
 "unison, speed was sacrificed."
 
+msgid "special_style/st_patricks_day_2023"
+msgstr "Shamrock"
+
+msgid "special_style/st_patricks_day_2023_desc"
+msgstr "An all-season style dedicated to St. Patrick's Day."
+
+msgid "special_style/st_patricks_day_2023_desc/long"
+msgstr ""
+"The official symbol of St. Patrick's Day is a shamrock. An image of a white "
+"clover with three leaflets is often used. Ever since the old days, this "
+"plant has been known for its medicinal properties, and in the Victorian era, "
+"it was a popular ornamental motif. There is also the four-leaf clover. Some "
+"legends say that the one who finds it on St. Patrick's Day will find "
+"happiness and luck."
+
 msgid "special_style/stayhome"
 msgstr "Home Sweet Home"
 
@@ -23204,6 +25578,26 @@ msgstr ""
 "will eventually end, and we will once again get to go outside and breathe in "
 "fresh air. Until then... Stay home. Stay Safe. And we will do our best to "
 "brighten your days."
+
+msgid "special_style/steam_april_2023"
+msgstr "Pumped Your Tank"
+
+msgid "special_style/steam_april_2023_desc"
+msgstr "An all-season style created for World of Tanks Steam players."
+
+msgid "special_style/steam_april_2023_desc/long"
+msgstr ""
+"A style created by the lead designer of the popular show \"Pump My Tank.\" "
+"Apart from a paint job, it has additional subwoofers, a DJ turntable, and TV "
+"screens installed in each hatch, and the owner of the vehicle receives the "
+"official status of their tank being pumped."
+
+msgid "special_style/steam_publisher_weekend"
+msgstr "Steam Powered"
+
+msgid "special_style/steam_publisher_weekend_desc"
+msgstr ""
+"An all-season style dedicated to the Wargaming Publisher Weekend Steam event."
 
 msgid "special_style/supertest_style"
 msgstr "Test Driver"
@@ -23407,6 +25801,19 @@ msgstr "Prime Festivity"
 msgid "special_style/twitch_NY2020_desc"
 msgstr "An all-season style awarded during the special event."
 
+msgid "special_style/twitch_april_2023"
+msgstr "All Your Cow Are Belong to Us"
+
+msgid "special_style/twitch_april_2023_desc/long"
+msgstr ""
+"\"Listen, I honestly don't understand them. A highly advanced "
+"extraterrestrial civilization picked up our signal from Voyager, marveled at "
+"Beethoven's talent or whatever caught their ear, decided to pay us a visit… "
+"And the most tempting thing for them is cattle? Didn't say a word, didn't "
+"make a sound—just took the damn cows. They could have taken anything; "
+"instead, they're depriving me of my rib eye? Highly intelligent freaks, "
+"that's what they are!\""
+
 msgid "special_style/twitch_august_2020"
 msgstr "Party Popper"
 
@@ -23430,11 +25837,31 @@ msgstr ""
 "can't take a joke. So let's get you toughened up. And toughening up is done "
 "through regular exercise. Now get active, and stay active.\""
 
+msgid "special_style/twitch_december_2022"
+msgstr "Holiday Outfit"
+
+msgid "special_style/twitch_december_2022_desc/long"
+msgstr ""
+"What can we say? It's a wreath. A holiday-inspired, absolutely stunning "
+"wreath in classic shades of green and red, subtly garnished with beautiful "
+"Christmas baubles. Isn't that what you've always wanted for your tough, "
+"gritty, fuel-devouring steelmate? We thought so. Now put it on and wear it "
+"like a boss."
+
 msgid "special_style/twitch_drops"
 msgstr "Streamline"
 
 msgid "special_style/twitch_drops_desc"
 msgstr "All-season style dedicated to all our streamers and their viewers."
+
+msgid "special_style/twitch_january_2023"
+msgstr "A Brave New World"
+
+msgid "special_style/twitch_january_2023_desc"
+msgstr ""
+"It was suddenly so clear. It would never stop. It would never leave. And it "
+"would never hurt, never shout. It would always be there. In an insane world, "
+"it was the sanest choice."
 
 msgid "special_style/twitch_june_2022"
 msgstr "Synth Waves"
@@ -23473,6 +25900,17 @@ msgstr ""
 msgid "special_style/twitch_october_2021"
 msgstr "Care for Scare"
 
+msgid "special_style/twitch_october_2022"
+msgstr "Witchcraft"
+
+msgid "special_style/twitch_october_2022_desc/long"
+msgstr ""
+"Some say Halloween is just a time for spooky fairytales that keep you up at "
+"night. Others claim it's yet another excuse for little kids to get sweets. "
+"Well, maybe that's true, but who are we to say for sure? You should probably "
+"wear this charm, just to be safe. After all, anything can happen on All "
+"Hallows' Eve... BOO!"
+
 msgid "special_style/twitch_prime"
 msgstr "Elite Amethyst"
 
@@ -23500,6 +25938,19 @@ msgstr ""
 "the elite Harriers unit. From now on, your mission is to protect the world "
 "from electro-magnetic threats. I wish you the best of luck in battle! Don't "
 "forget to sign all of the papers with the secretary."
+
+msgid "special_style/twitch_w_2023"
+msgstr "Hues of Sanguine"
+
+msgid "special_style/twitch_w_2023_desc/long"
+msgstr ""
+"Throughout their history, the legendary Blood Angels have always "
+"demonstrated exceptional, almost miraculous martial prowess, which allowed "
+"them to prevail against seemingly insurmountable odds in countless battles "
+"on many worlds. The amalgamation of zest and competence of the Chapter has "
+"been refined over many millennia, manifesting in the blood and spirit of "
+"numerous Successor Chapters. In battle, wearing these colors—blood red and "
+"pitch black—is a merit of its own."
 
 msgid "special_style/valentines_day"
 msgstr "Love Machine"
@@ -23533,6 +25984,9 @@ msgid "special_style/vbr_desc"
 msgstr ""
 "Awarded to players that get a replay featured in a RNG video on the World of "
 "Tanks YouTube channel."
+
+msgid "special_style/veteran_WZ_122_6"
+msgstr "Veteran"
 
 msgid "special_style/veteran_centauro"
 msgstr "Veteran"
@@ -23585,6 +26039,40 @@ msgstr ""
 "Zealand. On February 6, 1840, the representatives of the British "
 "Crown and Maori chiefs signed the Treaty of Waitangi that is considered "
 "New Zealand’s founding document."
+
+msgid "special_style/well_deserved_award_2023_1"
+msgstr "Sweet Memory"
+
+msgid "special_style/well_deserved_award_2023_1_desc"
+msgstr "An all-season style with images of famous game locations."
+
+msgid "special_style/well_deserved_award_2023_1_desc/long"
+msgstr ""
+"After one or two battles, a map becomes a little clearer. After a few dozen "
+"battles, it becomes easier to navigate. And after fighting hundreds of times "
+"in the same location, you cannot help but notice that some of its features "
+"have become familiar. Over time, each commander gets a favorite position—"
+"some inconspicuous but decidedly \"their\" bush—and even music that cannot "
+"be confused with any other."
+
+msgid "special_style/well_deserved_award_2023_2"
+msgstr "Veteran Tanker"
+
+msgid "special_style/western_warriors"
+msgstr "Warrior of the West"
+
+msgid "special_style/western_warriors_desc/long"
+msgstr ""
+"\"Against every sharp sword, we put forged armor. Against every drawn bow, "
+"we build impregnable walls. And to every barbarian cry, we respond with His "
+"word. You come for our monastery gold, but you will get only steel. Come to "
+"us, and the only thing you see will be your own face twisted in horror "
+"reflected in our shiny helmet visors. You say that our lands are filled with "
+"hotbeds of war—come to us, and we will show you what those hotbeds are "
+"heated with.\n"
+"In nomine Patris\n"
+"Et Filii\n"
+"Et Spiritus Sancti.\""
 
 msgid "special_style/wg_fest_2019"
 msgstr "WG Fest 2019"
@@ -23652,8 +26140,9 @@ msgid "special_style/wot_classic_desc/long"
 msgstr ""
 "The doge meme? So we're back in time indeed! Great Scott, Marty! This is "
 "heaven on earth! When I was young, I used to fight in the KV-2 against the "
-"Maus, dangle from cliffs, and I didn't know anything about any \"autoloaders"
-"\". Oh, the good old days... And now you can see where it all started."
+"Maus, dangle from cliffs, and I didn't know anything about any "
+"\"autoloaders\". Oh, the good old days... And now you can see where it all "
+"started."
 
 msgid "special_style/wot_fest_2019"
 msgstr "Festival Outfit"
@@ -23774,6 +26263,9 @@ msgstr "Holiday Ops 2021"
 
 msgid "styleInfo/event/ny22"
 msgstr "Holiday Ops 2022"
+
+msgid "styleInfo/event/ny23"
+msgstr "Holiday Ops 2023"
 
 msgid "styleInfo/event/winter_hunt"
 msgstr "Winter Challenge"
@@ -23960,6 +26452,9 @@ msgstr ""
 "already locked in mortal combat with the tank itself.\n"
 "\n"
 "Damn it! What are these tubes? They're not in any of the blueprints!\""
+
+msgid "unique_style/J27_O_I_120_BP"
+msgstr "?empty?"
 
 msgid "unique_style/Pl15_60TP_Lewandowskiego_3Dst"
 msgstr "40:1"

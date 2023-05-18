@@ -1,0 +1,5461 @@
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.LobbyTopSubViewWrapper_base_2e {
+    /* Layer system on C++ side corrects view height +35px,
+    so all views with LOBBY_TOP_SUB_VIEW ViewFlag on python side have extra spacing in the bottom
+    It is impossible to recheck all the places where python views with such ViewFlag are rendered,
+    So that's why we use this slug for correct positioning of elements in such views.
+    */
+    padding-bottom: 35rem;
+}
+
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .TextButton_base__right_39 {
+        flex-direction: row-reverse;
+    }
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+    .TextButton_icon__forward_59 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.back');
+        transform: translateY(1rem);
+    }
+.TextButton_icon__forward_59 {
+        transform: rotate(180deg) translateY(1rem);
+    }
+.TextButton_icon__close_53 {
+        margin: -1rem 0;
+        background-image: url('R.images.gui.maps.icons.components.text_button.close');
+    }
+.TextButton_icon__info_33 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.info');
+    }
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+    .TextButton_icon__forward_59 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+    }
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+    }
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+    }
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_glow_a4 {
+        opacity: 0;
+    }
+.TextButton_caption_82 {
+    position: relative;
+    transition: color .16s, text-shadow .16s;
+}
+.TextButton_caption__back_b9,
+    .TextButton_caption__forward_4e,
+    .TextButton_caption__close_36 {
+        color: #FFDD99;
+        text-shadow: 0 0 10rem rgba(255,42,0, 1),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4);
+    }
+.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
+            color: #fffa9f;
+        }
+.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
+            color: #FFDD99;
+        }
+.TextButton_caption__info_23 {
+        padding: 0 5rem;
+        color: #CCFFFF;
+        text-shadow: 0 0 12rem rgba(31,68,255, .8),
+            0 0 8rem #00eaff;
+    }
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+            color: #e3ffff;
+            text-shadow: 0 0 12rem rgba(31,68,255, .8),
+                0 0 12rem rgba(0,234,255, 1),
+                0 0 8rem #00eaff;
+        }
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+            color: #CCFFFF;
+            text-shadow: 0 0 12rem rgba(31,68,255, .6),
+                0 0 8rem #00eaff;
+        }
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+        margin-left: 8rem;
+    }
+.TextButton_base__right_39 .TextButton_goto_e7 {
+        margin-right: 8rem;
+    }
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity .16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+        left: -4rem;
+    }
+.TextButton_base__right_39 .TextButton_shine_e2 {
+        right: -4rem;
+        transform: rotate(180deg);
+    }
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_shine_e2 {
+        opacity: 0;
+    }
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+.page_base_b1 {
+    background: url('R.images.gui.maps.icons.comp7.backgrounds.comp7_bg') no-repeat center / cover;
+}
+.page_base__leaderboard_d7 {
+        background-image: url('R.images.gui.maps.icons.comp7.backgrounds.leaderboard_bg');
+    }
+.page_base__rankRewards_fb {
+        background-image: url('R.images.gui.maps.icons.comp7.backgrounds.rewards_bg');
+    }
+.page_base__weeklyQuests_f8 {
+        background-image: url('R.images.gui.maps.icons.comp7.backgrounds.quests_bg');
+    }
+.page_heading_05 {
+    padding-top: 54rem;
+}
+.mediaMedium .page_heading_05 {
+        padding-top: 63rem;
+        padding-bottom: 9rem;
+}
+.page_close_a4 {
+    position: absolute;
+    top: 54rem;
+    right: 29rem;
+}
+.mediaMedium .page_close_a4 {
+        top: 63rem;
+}
+.mediaLarge .page_close_a4 {
+        right: 40rem;
+}
+
+.Counter_base_9e {
+    display: flex;
+    min-width: 14rem;
+    height: 14rem;
+    position: relative;
+    z-index: 0;
+    animation: Counter_show_be ease-in-out forwards;
+}
+
+    .Counter_base__big_19 {
+        min-width: 21rem;
+        height: 21rem;
+    }
+
+    .Counter_base__small_3b {
+        min-width: 13rem;
+        height: 13rem;
+    }
+
+    .Counter_base__empty_98 {
+        min-width: 6rem;
+        height: 6rem;
+    }
+
+    .Counter_base__animated_40 {
+        animation-duration: .2s;
+    }
+
+    .Counter_base__hidden_56 {
+        animation-name: Counter_hide_b6;
+    }
+.Counter_bg_74 {
+    border: 1rem solid #fe4e0f;
+    border-radius: 7rem;
+    box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
+            0 0 6rem rgba(254,103,0, .2),
+            0 0 12rem 4rem rgba(249,0,0, .3);
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.Counter_base__big_19 .Counter_bg_74 {
+        border-radius: 11rem;
+    }
+.Counter_base__small_3b .Counter_bg_74 {
+        border-radius: 7rem;
+    }
+.Counter_value_3e {
+    display: flex;
+    padding: 0 4rem;
+    color: #fefeec;
+    font-size: 11rem;
+    line-height: 13rem;
+    white-space: nowrap;
+}
+.Counter_base__big_19 .Counter_value_3e {
+        padding: 0 7rem;
+        font-size: 14rem;
+        line-height: 20rem;
+    }
+.Counter_base__small_3b .Counter_value_3e {
+        font-size: 9rem;
+        line-height: 12rem;
+    }
+.Counter_value__text_d6 {
+        padding: 0 7rem;
+    }
+.Counter_base__big_19 .Counter_value__text_d6 {
+            padding: 0 10rem;
+        }
+.Counter_base__small_3b .Counter_value__text_d6 {
+            padding: 0 5rem;
+            font-size: 10rem;
+        }
+.Counter_base__pattern_71 .Counter_value_3e {
+        display: none;
+    }
+.Counter_plus_15 {
+    position: relative;
+    top: -1rem;
+}
+.Counter_pattern_83 {
+    display: none;
+}
+.Counter_base__pattern_71 .Counter_pattern_83 {
+        display: block;
+        border-radius: 50%;
+        background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+        opacity: .8;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+@keyframes Counter_show_be {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes Counter_hide_b6 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+.MenuItem_base_a3 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    animation: MenuItem_fade-out_98 .5s ease-in-out forwards;
+}
+
+    .MenuItem_base_a3:hover {
+        cursor: pointer;
+    }
+
+    .MenuItem_base__active_59:hover {
+        cursor: default;
+    }
+
+    .MenuItem_base__leftIndent_f7 {
+        padding-left: 16rem;
+    }
+
+    @media (min-width: 1366px) and (min-height: 768px) {
+
+    .MenuItem_base__leftIndent_f7 {
+            padding-left: 32rem
+    }
+    }
+
+    @media (min-width: 3840px) and (min-height: 2160px) {
+
+    .MenuItem_base__leftIndent_f7 {
+            padding-left: 56rem
+    }
+    }
+
+    .MenuItem_base__rightIndent_d4 {
+        padding-right: 40rem;
+    }
+
+    @media (min-width: 1600px) and (min-height: 900px) {
+
+    .MenuItem_base__rightIndent_d4 {
+            padding-right: 56rem
+    }
+    }
+
+    @keyframes MenuItem_fade-out_98 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+.MenuItem_background_b6 {
+    background-color: rgba(0,0,0, .4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: background-color .5s ease-in-out;
+}
+
+.MenuItem_base__active_59 .MenuItem_background_b6 {
+        background-color: rgba(0,0,0, .4);
+    }
+
+.MenuItem_base__leftIndent_f7 .MenuItem_background_b6 {
+        left: 16rem;
+    }
+
+@media (min-width: 1366px) and (min-height: 768px) {
+
+.MenuItem_base__leftIndent_f7 .MenuItem_background_b6 {
+            left: 32rem
+    }
+    }
+
+@media (min-width: 3840px) and (min-height: 2160px) {
+
+.MenuItem_base__leftIndent_f7 .MenuItem_background_b6 {
+            left: 56rem
+    }
+    }
+
+.MenuItem_base__rightIndent_d4 .MenuItem_background_b6 {
+        right: 40rem;
+        left: 0;
+    }
+
+@media (min-width: 1600px) and (min-height: 900px) {
+
+.MenuItem_base__rightIndent_d4 .MenuItem_background_b6 {
+            right: 56rem
+    }
+    }
+
+.MenuItem_base__expanded_6d .MenuItem_background_b6 {
+        background-color: rgba(0,0,0, .8);
+    }
+
+.MenuItem_selection_43 {
+    border: 1rem solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: background-color .16s ease-in-out,
+        border-color .5s ease-in-out;
+}
+
+.MenuItem_base_a3:hover .MenuItem_selection_43 {
+        background-color: rgba(255,85,0, .06);
+    }
+
+.MenuItem_base__active_59 .MenuItem_selection_43 {
+        border-color: rgba(255,85,0, .1);
+        border-radius: 2rem;
+        background-color: rgba(255,85,0, .06);
+    }
+
+.MenuItem_base__leftIndent_f7 .MenuItem_selection_43 {
+        left: 16rem;
+    }
+
+@media (min-width: 1366px) and (min-height: 768px) {
+
+.MenuItem_base__leftIndent_f7 .MenuItem_selection_43 {
+            left: 32rem
+    }
+    }
+
+@media (min-width: 3840px) and (min-height: 2160px) {
+
+.MenuItem_base__leftIndent_f7 .MenuItem_selection_43 {
+            left: 56rem
+    }
+    }
+
+.MenuItem_base__rightIndent_d4 .MenuItem_selection_43 {
+        right: 40rem;
+        left: 0;
+    }
+
+@media (min-width: 1600px) and (min-height: 900px) {
+
+.MenuItem_base__rightIndent_d4 .MenuItem_selection_43 {
+            right: 56rem
+    }
+    }
+
+.MenuItem_stateHighlight_55 {
+    width: 337rem;
+    height: 168rem;
+    background: url('R.images.gui.maps.icons.components.tabs.tab.highlight') 50% 50% / contain no-repeat;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .5s ease-in-out;
+    pointer-events: none;
+}
+
+.MenuItem_base__active_59 .MenuItem_stateHighlight_55 {
+        opacity: 1;
+    }
+
+.MenuItem_textHolder_1b {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    transition: width .3s ease-in-out;
+}
+
+.MenuItem_textHolder__expanded_45 {
+        max-width: 92rem;
+    }
+
+.MenuItem_textHolder__extraExpanded_4b {
+        max-width: 120rem;
+    }
+
+.MenuItem_text_5b {
+    color: #e9e2bf;
+    font-size: 12rem;
+    line-height: 1.2;
+    opacity: 0;
+    left: 0;
+    transition: opacity .5s ease-in-out .16s,
+        color .16s ease-in-out,
+        text-shadow .16s ease-in-out;
+}
+
+.MenuItem_base_a3:hover .MenuItem_text_5b {
+        color: #fd9;
+        opacity: 1;
+    }
+
+.MenuItem_base__extra_e9 .MenuItem_text_5b {
+        font-size: 14rem;
+        line-height: 1.4;
+    }
+
+.MenuItem_text__expanded_32 {
+        padding-right: 20rem;
+        opacity: .6;
+    }
+
+.MenuItem_text__extraExpanded_c6 {
+        padding-right: 24rem;
+    }
+
+.MenuItem_text__activeExpanded_40 {
+        color: #fd9;
+        text-shadow: 0 0 15px #e52,
+            0 0 8px #ff2a00,
+            0 0 4px rgba(255, 127, 0, .25);
+        opacity: 1;
+    }
+
+.MenuItem_container_c1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68rem;
+    height: 52rem;
+    position: relative;
+}
+
+.MenuItem_base__extra_e9 .MenuItem_container_c1 {
+        width: 100rem;
+        height: 80rem;
+    }
+
+.MenuItem_accentItem_d0 {
+    width: 100%;
+    height: 1rem;
+    background-image: linear-gradient(to right, transparent, rgba(200, 90, 29, .5) 30%, #ab592e 40%, #fec17b 50%, #ab592e 60%, rgba(200, 90, 29, .5) 70%, transparent);
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.MenuItem_accentItem__top_05 {
+        top: 0;
+    }
+
+.MenuItem_accentItem__bottom_99 {
+        bottom: 0;
+    }
+
+.MenuItem_base__active_59 .MenuItem_accentItem_d0 {
+        opacity: 1;
+    }
+
+.MenuItem_imageHolder_f9 {
+    position: relative;
+}
+
+.MenuItem_icon_0a {
+    width: 40rem;
+    height: 40rem;
+    background-position: 50% 50%;
+    background-size: contain;
+    filter: grayscale(50%) sepia(1);
+    position: relative;
+    z-index: 1;
+    transition: filter .5s ease-in-out;
+}
+
+.MenuItem_base__extra_e9 .MenuItem_icon_0a {
+        width: 64rem;
+        height: 64rem;
+    }
+
+.MenuItem_base_a3:hover .MenuItem_icon_0a,
+    .MenuItem_icon__active_10 {
+        filter: grayscale(0) sepia(0);
+    }
+
+.MenuItem_counterHolder_31 {
+    position: absolute;
+    top: 2rem;
+    right: -6rem;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.MenuItem_base__extra_e9 .MenuItem_counterHolder_31 {
+        top: 4rem;
+        right: -6rem;
+    }
+
+.MenuItem_notificationHolder_de {
+    top: 4rem;
+    right: -4rem;
+}
+
+.MenuItem_base__extra_e9 .MenuItem_notificationHolder_de {
+        top: 7rem;
+        right: -3rem;
+    }
+
+.MenuItem_arrow_61 {
+    width: 7rem;
+    height: 12rem;
+    margin-top: -6rem;
+    background: url('R.images.gui.maps.icons.components.tabs.tab.arrow') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    right: -17rem;
+    transition: opacity .5s ease-in-out;
+    pointer-events: none;
+}
+
+.MenuItem_base__active_59 .MenuItem_arrow_61 {
+        opacity: 1;
+    }
+
+.MenuItem_base__rightIndent_d4 .MenuItem_arrow_61 {
+        right: 23rem;
+    }
+
+@media (min-width: 1600px) and (min-height: 900px) {
+
+.MenuItem_base__rightIndent_d4 .MenuItem_arrow_61 {
+            right: 39rem
+    }
+    }
+
+.Tabs_base_d9 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+    .Tabs_base__vertical_c0 {
+        flex-direction: row;
+    }
+
+.Tabs_list_0a {
+    display: flex;
+    position: relative;
+}
+
+.Tabs_list__centered_dc {
+        justify-content: center;
+        align-items: center;
+    }
+
+.Tabs_wrapper_2d {
+    display: flex;
+}
+
+.Tabs_wrapper__centered_d8 {
+        justify-content: center;
+        align-items: center;
+    }
+
+.Tabs_wrapper__vertical_a5 {
+        flex-direction: column;
+    }
+
+.Spinner_base_87 {
+    width: 260rem;
+    height: 260rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.Spinner_caption_cf {
+    color: #8C8C7E;
+    font-size: 12rem;
+    text-align: center;
+    white-space: pre;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translateY(48rem);
+}
+
+.Spinner_gear_c4 {
+    width: 260rem;
+    height: 260rem;
+    margin-top: 2rem;
+    background: url('R.images.gui.maps.icons.components.spinner.spinner') 0 0;
+    background-size: 260rem 520rem;
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    animation: Spinner_spin_f5 .28s linear infinite;
+}
+
+.Spinner_logo_bf {
+    width: 260rem;
+    height: 260rem;
+    background: url('R.images.gui.maps.icons.components.spinner.spinner') 0 -260rem no-repeat;
+    background-size: 260rem 520rem;
+    position: absolute;
+    top: -4rem;
+    left: 0;
+}
+
+@keyframes Spinner_spin_f5 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+.Heading_base_e6 {
+    color: #FFFFFF;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+}
+    .mediaMedium .Heading_base_e6 {
+        color: #FFFFFF;
+        font-size: 56rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+    .mediaLarge .Heading_base_e6 {
+        color: #FFFFFF;
+        font-size: 73rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    position: relative;
+    cursor: pointer;
+}
+
+    .CButton_base__main_42,
+    .CButton_base__primary_7f,
+    .CButton_base__primaryGreen_6f,
+    .CButton_base__primaryRed_ec,
+    .CButton_base__secondary_50 {
+        background-size: 100% 100%;
+    }
+
+    .CButton_base__main_42 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+
+    .CButton_base__primary_7f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+
+    .CButton_base__primaryGreen_6f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+
+    .CButton_base__primaryRed_ec {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+
+    .CButton_base__secondary_50 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+
+    .CButton_base__ghost_ed {
+        border-radius: 3rem;
+        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
+            0 0 0 1rem rgba(255,255,255, .15) inset;
+        background-color: rgba(0,0,0, .15);
+    }
+
+    .CButton_base__extraSmall_27 {
+        min-height: 17rem;
+        padding: 0 16rem;
+    }
+
+    .CButton_base__small_df,
+    .CButton_base__medium_74 {
+        padding: 0 20rem;
+    }
+
+    .CButton_base__small_df {
+        min-height: 18rem;
+    }
+
+    .CButton_base__medium_74 {
+        min-height: 32rem;
+    }
+
+    .CButton_base__disabled_d9 {
+        cursor: default;
+    }
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+.CButton_base__primary_7f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+.CButton_base__secondary_50 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow .16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+        border-radius: 2rem;
+        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
+    }
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+        transition: opacity .16s ease-in-out;
+    }
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+        opacity: 1;
+    }
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
+        background-color: rgba(8,6,0, .18);
+        background-image: none;
+    }
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+        opacity: 1;
+    }
+.CButton_stateDisabled_54 {
+    background-color: rgba(0,0,0, .25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+        opacity: 1;
+    }
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: .03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang=ja],
+    .CButton_content_cc[lang=ko],
+    .CButton_content_cc[lang=zh_tw],
+    .CButton_content_cc[lang=zh_sg],
+    .CButton_content_cc[lang=zh_cn],
+    .CButton_content_cc[lang=th] {
+        font-weight: 400;
+    }
+.CButton_base__main_42 .CButton_content_cc,
+    .CButton_base__primaryRed_ec .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #600;
+    }
+.CButton_base__secondary_50 .CButton_content_cc {
+        color: rgba(254,254,236, .75);
+    }
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #1c2502;
+    }
+.CButton_base__extraSmall_27 .CButton_content_cc {
+        font-size: 12rem;
+    }
+.CButton_base__small_df .CButton_content_cc {
+        font-size: 14rem;
+    }
+.CButton_base__medium_74 .CButton_content_cc {
+        font-size: 15rem;
+    }
+.CButton_base__disabled_d9 .CButton_content_cc {
+        opacity: .6;
+    }
+
+.ErrorState_base_ad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ErrorState_titleContainer_b1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15rem;
+}
+
+.ErrorState_alertIcon_54 {
+    width: 24rem;
+    height: 24rem;
+    margin-right: 6rem;
+    background: url('R.images.gui.maps.icons.library.alertBigIcon') no-repeat center / cover;
+}
+
+.ErrorState_title_d2 {
+    color: #FEFEEC;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.ErrorState_description_d6 {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.ErrorState_buttonWrapper_c5 {
+    margin-top: 28rem;
+}
+
+.ErrorState_button_76 {
+    min-width: 160rem;
+    min-height: 24rem;
+}
+
+.mediaMedium .ErrorState_button_76 {
+        min-height: 32rem;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.LastUpdateNote_base_cf {
+    display: flex;
+    align-items: center;
+}
+
+.LastUpdateNote_infoIcon_de {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.infoIcon') no-repeat center / cover;
+}
+
+.ActiveSeasonState_base_fd {
+    display: flex;
+    align-items: center;
+}
+
+.ActiveSeasonState_calendarIcon_d6 {
+    width: 21rem;
+    height: 21rem;
+    margin-right: 8rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.calendar') no-repeat center / cover;
+    transform: translateY(2rem);
+}
+
+.mediaLarge .ActiveSeasonState_calendarIcon_d6 {
+        width: 20rem;
+        height: 22rem;
+        background-image: url('R.images.gui.maps.icons.comp7.icons.calendarBig');
+}
+
+.ActiveSeasonState_divider_b5 {
+    width: 2rem;
+    height: 17rem;
+    margin: 2rem 8rem 0;
+    background-color: rgba(255,255,255, .5);
+}
+
+.mediaLarge .ActiveSeasonState_divider_b5 {
+        height: 29rem;
+}
+
+.ScheduleSubheading_base_d0 {
+    color: #FFFFFF;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+}
+    .mediaLarge .ScheduleSubheading_base_d0 {
+        color: #FFFFFF;
+        font-size: 24rem;
+        font-weight: 400;
+        line-height: 1.2;
+}
+
+.SubheadingContainer_base_e2 {
+    position: relative;
+}
+
+.SubheadingContainer_updateInfo_4f {
+    position: absolute;
+    right: -38rem; /* visual fix for matching with scroll */
+    bottom: 0;
+}
+
+.SubheadingContainer_updateInfoText_07 {
+    color: rgba(255,255,255, .6);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+.CurrentPositionPanel_base_99 {
+    color: #CBAC77;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: var(--height);
+    border: 1rem solid rgba(255, 161, 0, .2);
+    background-color: rgba(255, 161, 0, .1);
+    position: relative;
+}
+/* TODO: add state to HasRecordsState and move out this css, and set it only when scroll position doesn't math with personalPositionDistance */
+.CurrentPositionPanel_base__active_58 {
+        transition: background-color .3s cubic-bezier(.07, .82, .17, 1);
+        cursor: pointer;
+    }
+.CurrentPositionPanel_base__active_58:hover {
+            background-color: rgba(255, 161, 0, .15);
+        }
+.CurrentPositionPanel_cell_17 {
+    display: flex;
+    text-align: center;
+}
+.CurrentPositionPanel_cell__order_6e {
+        justify-content: center;
+        width: 94rem;
+    }
+.CurrentPositionPanel_cell__currentPosition_71 {
+        flex: 1;
+        padding-left: 35rem;
+    }
+.CurrentPositionPanel_cell__battles_4e {
+        justify-content: center;
+        width: 166rem;
+    }
+.CurrentPositionPanel_cell__score_64 {
+        justify-content: center;
+        width: 166rem;
+    }
+.CurrentPositionPanel_screwIcon_2b {
+    --screwOffset: 15rem;
+    width: 5rem;
+    height: 5rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.screw') no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.mediaLarge .CurrentPositionPanel_screwIcon_2b {
+        --screwOffset: 20rem;
+}
+.CurrentPositionPanel_screwIcon__left_ee {
+        left: var(--screwOffset);
+    }
+.CurrentPositionPanel_screwIcon__right_02 {
+        right: var(--screwOffset);
+    }
+
+.VerticalBar_base_f3 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+    .VerticalBar_base__nonActive_42 {
+        visibility: hidden;
+    }
+
+    .VerticalBar_base_f3 .disable,
+    .VerticalBar_base_f3 .disable:hover {
+        opacity: .3;
+        cursor: default;
+    }
+
+.VerticalBar_topButton_d7,
+.VerticalBar_bottomButton_06 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_d7:hover, .VerticalBar_bottomButton_06:hover {
+        opacity: 1;
+    }
+
+.VerticalBar_topButton_d7 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_06 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_df {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32 {
+    display: none;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32:hover {
+        opacity: 1;
+    }
+
+.VerticalBar_rail_43 {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_43:hover {
+        opacity: .7;
+    }
+
+
+.VerticalScroll_content_cb {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_f8 {
+    display: flex;
+}
+
+.VerticalScroll_bar_1e {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_af {
+    flex: 1;
+}
+
+.RankEmblem_base_d5 {
+    width: var(--imageSize);
+    height: var(--imageSize);
+    background: no-repeat center / cover;
+}
+
+
+.RowsDivider_base_52 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: url('R.images.gui.maps.icons.comp7.icons.rowsDivider') no-repeat bottom center / 840rem 70rem;
+}
+
+.RowsDivider_rankText_02 {
+    color: #F2F2F7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-left: 14rem;
+    line-height: 1.3;
+}
+
+.Header_base_cc {
+    color: rgba(255,255,255, .6);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    height: 30rem;
+}
+.Header_separator_fa {
+    width: 2rem;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.comp7.icons.header_separator') no-repeat center / cover;
+}
+.Header_cell_05 {
+    display: flex;
+    align-items: center;
+}
+.Header_cell__order_70 {
+        justify-content: center;
+        width: 94rem;
+        padding-left: 1rem;
+    }
+.Header_cell__player_65 {
+        flex: 1;
+        padding-left: 35rem;
+    }
+.Header_cell__battles_4c {
+        justify-content: center;
+        width: 166rem;
+    }
+.Header_cell__score_4d {
+        justify-content: center;
+        width: 166rem;
+    }
+
+.TextOverflow_base_3b {
+    flex: 0 1 auto;
+    width: auto;
+    line-height: 1.3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Badge_base_ac {
+    display: flex;
+    justify-content: center;
+    background: no-repeat center / contain;
+}
+
+    .Badge_base__default_c9 {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    .Badge_base__x48_e4 {
+        width: 48rem;
+        height: 48rem;
+    }
+
+.PlayerNickname_base_32 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.PlayerNickname_userName_cc {
+    flex: 0 1 auto; /* the only value for correct work */
+}
+
+.PlayerNickname_igrIcon_34 {
+    background: url('R.images.gui.maps.icons.library.premium_igr_big.png') no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_igrIcon_34 {
+        width: 32rem;
+        height: 14rem;
+    }
+
+.PlayerNickname_base__x48_84 .PlayerNickname_igrIcon_34 {
+        width: 64rem;
+        height: 28rem;
+    }
+
+.PlayerNickname_suffixBadgeWrapper_cc {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.PlayerNickname_suffixBadgeStripe_8a {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: -1;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_suffixBadgeStripe_8a {
+        width: 64rem;
+        height: 24rem;
+        right: 12rem;
+    }
+
+.PlayerNickname_base__default_8d.PlayerNickname_base__inverted_34 .PlayerNickname_suffixBadgeStripe_8a {
+        right: auto;
+        left: 12rem;
+        transform: rotateY(180deg);
+    }
+
+.PlayerNickname_base__x48_84 .PlayerNickname_suffixBadgeStripe_8a {
+        width: 68rem;
+        height: 28rem;
+        right: 16rem;
+    }
+
+.PlayerNickname_base__x48_84.PlayerNickname_base__inverted_34 .PlayerNickname_suffixBadgeStripe_8a {
+        right: auto;
+        left: 16rem;
+        transform: rotateY(180deg);
+    }
+
+.PlayerNickname_suffixBadge_bd {
+    background: no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_suffixBadge_bd {
+        width: 24rem;
+        height: 24rem;
+    }
+
+.PlayerNickname_base__x48_84 .PlayerNickname_suffixBadge_bd {
+        width: 32rem;
+        height: 32rem;
+    }
+
+.PlayerNickname_anonymizedIcon_80 {
+    background: no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_anonymizedIcon_80 {
+        width: 24rem;
+        height: 24rem;
+        background-image: url('R.images.gui.maps.icons.library.eye.png');
+    }
+
+.PlayerNickname_base__x48_84 .PlayerNickname_anonymizedIcon_80 {
+        width: 48rem;
+        height: 48rem;
+        background-image: url('R.images.gui.maps.icons.library.eye_48x48.png');
+    }
+
+.Row_base_12 {
+    color: #C9C9B6;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    padding-left: 1rem;
+    border-bottom: 1rem solid rgba(255,255,255, .07);
+}
+
+    .Row_base__personal_3e {
+        padding-left: 0;
+        border: 1rem solid rgba(255, 161, 0, .2);
+        background-color: rgba(255, 161, 0, .1);
+        color: #CBAC77;
+        position: relative;
+    }
+.Row_order_5e {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94rem;
+    background: no-repeat center / contain;
+}
+.Row_order__first_76 {
+        background-image: url('R.images.gui.maps.icons.comp7.icons.first');
+    }
+.Row_order__second_cc {
+        background-image: url('R.images.gui.maps.icons.comp7.icons.second');
+    }
+.Row_order__third_3f {
+        background-image: url('R.images.gui.maps.icons.comp7.icons.third');
+    }
+.Row_playerContainer_0b {
+    display: flex;
+    flex: 1;
+    padding-left: 25rem;
+}
+.Row_player_79 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 10rem;
+}
+.Row_clanTag_0b {
+    color: var(--clanTagColor);
+    mix-blend-mode: screen;
+}
+.Row_battles_77 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 166rem;
+}
+.Row_score_81 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 166rem;
+}
+
+.Leaderboard_base_53 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.Leaderboard_content_ff {
+    display: flex;
+    flex: 1 1;
+    position: relative;
+}
+.Leaderboard_shadowsContainer_e5 {
+    display: flex;
+    width: 100%;
+    height: 176rem;
+    position: absolute;
+    top: -81rem;
+    left: 0;
+    pointer-events: none;
+}
+.Leaderboard_shadowsContainer__bottom_40 {
+        top: auto;
+        bottom: -81rem;
+        transform: rotate(180deg);
+    }
+.Leaderboard_shadow_74 {
+    height: 100%;
+    background: no-repeat center / contain;
+}
+.Leaderboard_shadow__left_72 {
+        width: 150rem;
+        background-image: url('R.images.gui.maps.icons.comp7.icons.shadow_left_side');
+    }
+.Leaderboard_shadow__center_36 {
+        flex: 1;
+        background-image: url('R.images.gui.maps.icons.comp7.icons.shadow_middle');
+        background-repeat: repeat;
+    }
+.Leaderboard_shadow__right_37 {
+        width: 150rem;
+        background-image: url('R.images.gui.maps.icons.comp7.icons.shadow_right_side');
+    }
+.Leaderboard_area_e8 {
+    width: 100%;
+}
+.Leaderboard_row_d4 {
+    height: var(--rowHeight);
+}
+.Leaderboard_bar_b8 {
+    padding-left: 20rem;
+}
+.Leaderboard_rowsDivider_01 {
+    height: var(--rowsDividerHeight);
+    border-bottom: 1rem solid rgba(255,255,255, .07);
+}
+
+.Pagination_base_44 {
+    display: flex;
+    justify-content: center;
+}
+
+.Pagination_pageButton_e8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34rem;
+    height: 20rem;
+    border: 1rem solid transparent;
+    color: rgba(140,140,126, .5);
+    font-size: 14rem;
+}
+
+.Pagination_pageButton_e8 + .Pagination_pageButton_e8 {
+        margin-left: 10rem;
+    }
+
+.Pagination_pageButton__active_93,
+    .Pagination_pageButton__inactive_a6 {
+        cursor: pointer;
+    }
+
+.Pagination_pageButton__active_93 {
+        border-image-source: url('R.images.gui.maps.icons.comp7.icons.pageButtonBg');
+        border-image-slice: 1 fill;
+        box-shadow: 0 0 15rem #ee5003,
+            0 0 6rem rgba(255,42,0, .5);
+        color: #e9e2bf;
+        transition: box-shadow .16s ease-in-out;
+    }
+
+.Pagination_pageButton__inactive_a6 {
+        border-color: rgba(140,140,126, .15);
+        border-radius: 2rem;
+        transition: border-color .16s ease-out, color .16s ease-out;
+    }
+
+.Pagination_pageButton__inactive_a6:hover {
+            border-color: rgba(140,140,126, .3);
+            color: rgba(140,140,126, 1);
+        }
+
+.Pagination_pageButton__disabled_f6 {
+        cursor: default;
+    }
+
+.Pagination_pageValue_29 {
+    margin-top: -.5rem;
+}
+
+.Pagination_control_2c {
+    height: 20rem;
+    padding: 0 10rem;
+    border: 1rem solid rgba(140,140,126, .15);
+    border-radius: 2rem;
+    color: rgba(140,140,126, .5);
+    font-size: 14rem;
+}
+
+.Pagination_control__active_80 {
+        transition: border-color .16s ease-in, color .16s ease-in;
+        cursor: pointer;
+    }
+
+.Pagination_control__active_80:hover {
+            border-color: rgba(140,140,126, .3);
+            color: rgba(140,140,126, 1);
+        }
+
+.Pagination_control__prev_e7 {
+        margin-right: 10rem;
+    }
+
+.Pagination_control__next_cc {
+        margin-left: 10rem;
+    }
+
+.HasRecordsState_base_4d {
+    --offset: 15rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+    .mediaMedium .HasRecordsState_base_4d {
+        --offset: 20rem;
+}
+
+    .HasRecordsState_base__withoutPagination_58 {
+        padding-bottom: calc(var(--offset)*2 + 20rem);
+    }
+
+.HasRecordsState_tableContainer_1b {
+    flex: 1 1;
+    margin-bottom: var(--offset);
+}
+
+.HasRecordsState_pagination_7f {
+    padding-top: var(--offset);
+    padding-bottom: var(--offset);
+}
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #FFFFFF;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #F2F2F7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #FEFEEC;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #E9E2BF;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8C8C7E;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362E;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #FF2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #B70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #FEAB34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #EE7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #FFDD99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #CBAC77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80D43A;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7AB300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #CCFFFF;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09E2FF;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #CED9D9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #FFC363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #C9C9B6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #A29B70;
+}
+
+.NoRecordsState_base_0e {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.NoRecordsState_imageContainer_cf {
+    width: 500rem;
+    height: 350rem;
+    position: relative;
+}
+
+.NoRecordsState_image_90 {
+    width: 540rem;
+    height: 380rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.leaderboardRanks') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.NoRecordsState_title_ae {
+    color: #FFFFFF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaMedium .NoRecordsState_title_ae {
+        color: #FFFFFF;
+        font-size: 22rem;
+        font-weight: 700;
+        line-height: 1.2;
+}
+
+.NoRecordsState_subtitle_a0 {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    justify-content: center;
+    max-width: 550rem;
+    margin-top: 10rem;
+}
+
+.mediaMedium .NoRecordsState_subtitle_a0 {
+        margin-top: 12rem;
+}
+
+@keyframes RankTabs_fadeIn_72 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes RankTabs_fadeInThreeQuarters_54 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+
+@keyframes RankTabs_fadeInHalf_d5 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes RankTabs_fadeOut_9a {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes RankTabs_fadeInWithScale_03 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes RankTabs_slideUp_1f {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes RankTabs_scale_72 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes RankTabs_raysAppearance_47 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes RankTabs_rotate_b0 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes RankTabs_reverse-rotate_a8 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes RankTabs_glowAppearance_25 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes RankTabs_highlightAppearance_24 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+
+/* should be percentage of screen width */
+
+.RankTabs_base_d8 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.RankTabs_line_c5 {
+    flex: 1 1;
+    height: 2rem;
+    border-radius: 4rem;
+    opacity: .15;
+}
+
+.RankTabs_line__toRight_fe {
+        background: linear-gradient(270deg, #F2F2F7, transparent);
+    }
+
+.RankTabs_line__toLeft_2a {
+        background: linear-gradient(90deg, #F2F2F7, transparent);
+    }
+
+.RankTabs_ranksContainer_8f {
+    display: flex;
+    align-items: center;
+    padding: 0 76rem;
+}
+
+.RankTabs_dividersDot_6c {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #F2F2F7;
+    opacity: .2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.RankTabs_rank_49 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.RankTabs_rank_49 + .RankTabs_rank_49 {
+        margin-left: 70rem;
+    }
+
+.RankTabs_rankEmblem_a1 {
+    filter: brightness(1);
+    cursor: pointer;
+}
+
+.RankTabs_rankEmblem_a1:hover {
+        filter: brightness(1.15);
+
+        /* transition must be here for avoiding of rankEmblem blink on 1st render */
+        transition: filter .5s cubic-bezier(.07, .82, .17, 1);
+    }
+
+.RankTabs_rank__disabled_c0 .RankTabs_rankEmblem_a1 {
+        opacity: .3;
+        cursor: default;
+    }
+
+.RankTabs_rank__disabled_c0 .RankTabs_rankEmblem_a1:hover {
+            filter: brightness(1);
+        }
+
+.RankTabs_label_c4 {
+    color: #F2F2F7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    white-space: nowrap;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+}
+
+.RankTabs_rank__active_09 .RankTabs_label_c4 {
+        opacity: 1;
+
+        /* transition must be here for avoiding of blink of label on 1st render */
+        transition: opacity .5s linear;
+    }
+
+.RankTabs_rankTabHighlight_23 {
+    width: 223rem;
+    height: 164rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.rankTabHighlight') no-repeat center / cover;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.RankTabs_rank__active_09 .RankTabs_rankTabHighlight_23 {
+        opacity: 1;
+        transition: opacity .5s linear;
+    }
+
+.SuccessState_base_6e {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+    .SuccessState_base__noRecords_22 {
+        overflow: hidden;
+    }
+
+.SuccessState_content_e3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1;
+}
+
+.SuccessState_base__hasRecords_e6 .SuccessState_content_e3 {
+        margin-top: 20rem;
+    }
+
+.SuccessState_base__noRecords_22 .SuccessState_content_e3 {
+        transform: translateY(-12%);
+    }
+
+.mediaLarge .SuccessState_base__noRecords_22 .SuccessState_content_e3 {
+            transform: translateY(-9%);
+}
+
+.mediaExtraLarge .SuccessState_base__noRecords_22 .SuccessState_content_e3 {
+            transform: translateY(-6%);
+}
+
+@keyframes LeaderboardPage_fadeIn_9e {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes LeaderboardPage_fadeInThreeQuarters_1f {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+
+@keyframes LeaderboardPage_fadeInHalf_6c {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes LeaderboardPage_fadeOut_36 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes LeaderboardPage_fadeInWithScale_66 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes LeaderboardPage_slideUp_73 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes LeaderboardPage_scale_8c {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes LeaderboardPage_raysAppearance_e0 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes LeaderboardPage_rotate_43 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes LeaderboardPage_reverse-rotate_e2 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes LeaderboardPage_glowAppearance_c8 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes LeaderboardPage_highlightAppearance_a3 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+
+/* should be percentage of screen width */
+
+.LeaderboardPage_base_29 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.LeaderboardPage_container_6a {
+    flex: 1 1;
+    position: relative;
+}
+
+.LeaderboardPage_subHeading_da {
+    display: flex;
+    justify-content: center;
+}
+
+.LeaderboardPage_container_6a,
+.LeaderboardPage_subHeading_da {
+    width: 840rem;
+}
+
+.mediaSmall .LeaderboardPage_container_6a, .mediaSmall .LeaderboardPage_subHeading_da {
+        width: 900rem;
+}
+
+.mediaMedium .LeaderboardPage_container_6a, .mediaMedium .LeaderboardPage_subHeading_da {
+        width: 1220rem;
+}
+
+.mediaLarge .LeaderboardPage_container_6a, .mediaLarge .LeaderboardPage_subHeading_da {
+        width: 1320rem;
+}
+
+.LeaderboardPage_content_ae {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    opacity: 1;
+    transition: opacity .5s cubic-bezier(.07, .82, .17, 1);
+}
+
+.LeaderboardPage_base__loading_b6 .LeaderboardPage_content_ae {
+        opacity: .3;
+        pointer-events: none;
+    }
+
+.LeaderboardPage_base__success_8e .LeaderboardPage_content_ae {
+        margin-top: 25rem;
+    }
+
+.mediaLarge .LeaderboardPage_base__success_8e .LeaderboardPage_content_ae {
+            margin-top: 30rem;
+}
+
+.LeaderboardPage_base__error_32 .LeaderboardPage_content_ae {
+        justify-content: center;
+        padding-bottom: 10%;
+    }
+
+.LeaderboardPage_spinner_55 {
+    transform: translate(-50%, -70%);
+}
+
+.HorizontalBar_base_49 {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+    position: relative;
+}
+
+    .HorizontalBar_base__nonActive_82 {
+        visibility: hidden;
+    }
+
+    .HorizontalBar_base_49 .disable,
+    .HorizontalBar_base_49 .disable:hover {
+        opacity: .3;
+        cursor: default;
+    }
+
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover, .HorizontalBar_rightButton_03:hover {
+        opacity: 1;
+    }
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem 7rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+        opacity: 1;
+    }
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
+        opacity: .7;
+    }
+
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.ProgressionScroll_base_14 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.ProgressionScroll_areaWrapper_0f {
+    height: 100%;
+    mask-image: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);
+}
+
+.ProgressionScroll_areaContent_7c {
+    display: flex;
+    align-content: center;
+    padding-left: var(--offset);
+    padding-right: var(--offset);
+}
+
+@keyframes HighlightedRankEmblem_fadeIn_6c {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes HighlightedRankEmblem_fadeInThreeQuarters_3b {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+
+@keyframes HighlightedRankEmblem_fadeInHalf_1c {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes HighlightedRankEmblem_fadeOut_e7 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes HighlightedRankEmblem_fadeInWithScale_70 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes HighlightedRankEmblem_slideUp_64 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes HighlightedRankEmblem_scale_20 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes HighlightedRankEmblem_raysAppearance_af {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes HighlightedRankEmblem_rotate_b0 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes HighlightedRankEmblem_reverse-rotate_99 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes HighlightedRankEmblem_glowAppearance_86 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes HighlightedRankEmblem_highlightAppearance_b9 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+
+/* should be percentage of screen width */
+
+.HighlightedRankEmblem_base_29 {
+    position: relative;
+}
+
+.HighlightedRankEmblem_highlights_3d {
+    width: var(--highlightsSize);
+    height: var(--highlightsSize);
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .3s linear, filter .3s linear;
+}
+
+.HighlightedRankEmblem_highlights__gold_3f {
+        filter: grayscale(0%) brightness(250%);
+        transition-delay: .3s;
+    }
+
+.HighlightedRankEmblem_highlights__silver_cd {
+        filter: grayscale(100%) brightness(150%);
+        transition-delay: .3s;
+    }
+
+.HighlightedRankEmblem_highlights__hidden_55 {
+        filter: grayscale(0%) brightness(0%);
+        opacity: 0;
+    }
+
+.HighlightedRankEmblem_highlight_32 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / cover;
+    position: absolute;
+    animation: HighlightedRankEmblem_highlightAppearance_b9 .3s linear .3s both, HighlightedRankEmblem_rotate_b0 80s linear infinite;
+    pointer-events: none;
+}
+
+.HighlightedRankEmblem_highlight__second_ba {
+        animation-direction: normal, reverse;
+    }
+
+.HighlightedRankEmblem_base__static_a0 .HighlightedRankEmblem_highlight_32 {
+        animation: HighlightedRankEmblem_highlightAppearance_b9 .3s linear .3s both;
+    }
+
+.HighlightedRankEmblem_rankEmblem_d0 {
+    position: relative;
+}
+
+.RankInfo_base_6e {
+    position: relative;
+}
+
+.RankInfo_highlight_71 {
+    width: 276rem;
+    height: 50rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.blue_light') no-repeat center / contain;
+    filter: brightness(150%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.RankInfo_formattedText_a4 {
+    flex-wrap: nowrap;
+    color: #FFFFFF;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 20rem;
+}
+
+.RankItemDivider_base_e4 {
+    width: 152rem;
+    height: 2rem;
+    background-image: linear-gradient(270deg, rgba(91, 139, 193, 0), rgba(102, 156, 212, 1) 50%, rgba(91, 139, 193, 0));
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBar_base_45 {
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+.ProgressBar_base__small_df {
+        height: 2rem;
+    }
+.ProgressBar_background_51 {
+    width: 100%;
+    max-width: 8001px;
+    height: 100%;
+    background-image: var(--progress-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ProgressBar_background__small_46 {
+        height: 2rem;
+    }
+.ProgressBar_lineWrapper_6a {
+    display: flex;
+    flex: 1;
+}
+
+
+.ProgressBarBlink_base_24 {
+    width: 60rem;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    pointer-events: none;
+}
+
+    .ProgressBarBlink_base__small_0f {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressLineImpose_base_80 {
+    max-width: 8001px;
+    height: 100%;
+    background-color: var(--progress-line-base);
+    position: relative;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressLineImpose_base__disabled_cc {
+        background-color: var(--progress-line-disabled);
+    }
+.ProgressLineImpose_base__finished_d4 {
+        background-color: var(--progress-line-finished);
+    }
+.ProgressLineImpose_base__withoutBounce_56 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressLineImpose_pattern_1c {
+    max-width: 8001px;
+    background-image: var(--progress-pattern-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-disabled);
+        left: 0;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-finished);
+    }
+.ProgressLineImpose_gradient_35 {
+    max-width: 8001px;
+    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
+        display: none;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
+        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
+    }
+.ProgressLineImpose_glow_a5 {
+    width: 60rem;
+    max-width: 8001px;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.ProgressLineImpose_glow__left_d8 {
+        left: 1rem;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
+    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+        display: none;
+    }
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaSimple_base_6c {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ProgressBarDeltaSimple_delta_99 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-property: width, transform;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaGrow_base_7e {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressBarDeltaGrow_glow_68 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+
+.RankProgressDivisions_base_fa {
+    display: flex;
+    align-items: flex-end;
+}
+
+.RankProgressDivisions_divisionItem_57 {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 0;
+    margin-bottom: -1rem;
+}
+
+.RankProgressDivisions_divisionItem__current_a0 {
+        position: relative;
+    }
+
+.RankProgressDivisions_highlightContainer_89 {
+    width: 100%;
+    height: 150rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.RankProgressDivisions_radialBack_81 {
+    width: 150%;
+    height: 100%;
+    background-image: radial-gradient(59% 59% at 50% 0%, rgba(255, 42, 0, .12), transparent);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(1, -1);
+}
+
+.RankProgressDivisions_mainBack_4e {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(243, 104, 60, .16), transparent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.RankProgressDivisions_bottomLine_5e {
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    left: 0;
+}
+
+.RankProgressDivisions_bottomLine__first_19 {
+        background-image: linear-gradient(90deg, transparent, #bf684d, transparent);
+        bottom: 0;
+    }
+
+.RankProgressDivisions_bottomLine__second_f4 {
+        background-image: linear-gradient(90deg, transparent, rgba(191, 104, 77, .3), transparent);
+        bottom: 1rem;
+    }
+
+.RankProgressDivisions_bottomLine__third_a1 {
+        background-image: linear-gradient(90deg, transparent, rgba(191, 104, 77, .1), transparent);
+        bottom: 2rem;
+    }
+
+.RankProgressDivisions_divisionText_6e {
+    margin-bottom: 6rem;
+    font-size: 18rem;
+    opacity: .4;
+    position: relative;
+}
+
+.RankProgressDivisions_divisionItem__current_a0 .RankProgressDivisions_divisionText_6e {
+        display: flex;
+        color: #FFDD99;
+        text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+        opacity: 1;
+    }
+
+.RankProgressDivisions_note_94 {
+    font-size: 14rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.RankProgressPoints_base_d4 {
+    color: rgba(255,255,255, .2);
+    font-size: 12rem;
+    position: relative;
+}
+.RankProgressPoints_point_ae {
+    display: flex;
+    position: absolute;
+}
+.RankProgressPoints_base__top_75 .RankProgressPoints_point_ae {
+        bottom: 0;
+    }
+.RankProgressPoints_base__bottom_e0 .RankProgressPoints_point_ae {
+        top: 0;
+    }
+.RankProgressPoints_pointLine_80 {
+    width: 1rem;
+    height: 10rem;
+}
+.RankProgressPoints_pointLine__extended_df {
+        height: 20rem;
+    }
+.RankProgressPoints_base__top_75 .RankProgressPoints_pointLine_80 {
+        background-image: linear-gradient(to top, rgba(255,255,255, .3), transparent);
+    }
+.RankProgressPoints_base__bottom_e0 .RankProgressPoints_pointLine_80 {
+        background-image: linear-gradient(to bottom, rgba(255,255,255, .3), transparent);
+    }
+.RankProgressPoints_pointValue_5b {
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+}
+.RankProgressPoints_pointValue__next_8a {
+        color: rgba(255,255,255, .7);
+        text-shadow: 0 4rem 4rem rgba(0, 0, 0, .25), 0 0 2rem rgba(233, 241, 255, .6);
+    }
+.RankProgressPoints_base__top_75 .RankProgressPoints_pointValue_5b {
+        bottom: 10rem;
+    }
+.RankProgressPoints_base__bottom_e0 .RankProgressPoints_pointValue_5b {
+        top: 10rem;
+    }
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+.RankProgress_base_6f {
+    display: flex;
+    flex-direction: column;
+    width: 380rem;
+    color: #FFFFFF;
+    transition: opacity .3s linear;
+}
+.mediaMedium .RankProgress_base_6f {
+        width: 430rem;
+}
+.RankProgress_base__hidden_7d {
+        opacity: 0;
+    }
+.RankProgress_base__inactive_3b {
+        opacity: .7;
+    }
+.RankProgress_base__active_c8 {
+        opacity: 1;
+        transition-delay: .3s;
+    }
+.RankProgress_progressWrapper_e4 {
+    padding: 3rem 0;
+    border-top: 1rem solid rgba(255,255,255, .2);
+    border-bottom: 1rem solid rgba(255,255,255, .2);
+}
+
+.RankStatusDescription_base_57 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: inline;
+    width: 120%;
+    max-width: 500rem;
+    text-align: center;
+}
+    .mediaLarge .RankStatusDescription_base_57 {
+        width: 100%;
+}
+
+.AchievedRankStatus_base_6f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.LastUpdate_base_40 {
+    color: #595950;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-top: 10rem;
+}
+
+.LastUpdate_dataUpdate_2d {
+    animation: LastUpdate_blink_68 2s infinite;
+}
+
+@keyframes LastUpdate_blink_68 {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.CurrentRankStatus_base_a0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.FutureRankStatus_base_7e {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.FutureRankStatus_lock_0d {
+    width: 49rem;
+    height: 64rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.lockBig') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -40rem);
+}
+
+@keyframes RankItem_fadeIn_5f {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes RankItem_fadeInThreeQuarters_a3 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+
+@keyframes RankItem_fadeInHalf_de {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes RankItem_fadeOut_b1 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes RankItem_fadeInWithScale_8b {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes RankItem_slideUp_e2 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes RankItem_scale_cf {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes RankItem_raysAppearance_9f {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes RankItem_rotate_78 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes RankItem_reverse-rotate_b9 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes RankItem_glowAppearance_32 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes RankItem_highlightAppearance_69 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+
+/* should be percentage of screen width */
+
+.RankItem_base_a1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* should be fluid for rank dividers positioning */
+    padding-bottom: 150rem;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.RankItem_rankEmblem__future_95 {
+        opacity: .5;
+    }
+
+.RankItem_rankDescription_68 {
+    display: flex;
+    height: 150rem; /* should be static for correct positioning of emblem without rankDescription context */
+    opacity: 0;
+    position: absolute; /* should be cut from context due to extra width of children (more than parent container by design) */
+    top: 100%;
+    transition: opacity .3s linear;
+    pointer-events: none;
+}
+
+/* hidden siblings can have tooltips, block them here */
+
+.RankItem_rankDescription__text_7f {
+        padding-top: 50rem;
+    }
+
+.mediaLarge .RankItem_rankDescription__text_7f {
+            padding-top: 62rem;
+}
+
+.RankItem_rankDescription__progress_6c {
+        padding-top: 29rem;
+    }
+
+.mediaLarge .RankItem_rankDescription__progress_6c {
+            padding-top: 41rem;
+}
+
+.RankItem_rankDescription__viewed_74 {
+        opacity: 1;
+        transition-delay: .3s;
+        pointer-events: auto;
+    }
+
+.RankItem_rankInfo_9a {
+    padding-top: 16rem;
+    padding-bottom: 14rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mediaLarge .RankItem_rankInfo_9a {
+        padding-top: 28rem;
+}
+
+.RankItem_dividerContainer_ad {
+    position: absolute;
+    top: calc(var(--emblemSize)/2);
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+@keyframes Item_fadeIn_87 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Item_fadeInThreeQuarters_63 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+
+@keyframes Item_fadeInHalf_5d {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes Item_fadeOut_bf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes Item_fadeInWithScale_69 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes Item_slideUp_2f {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Item_scale_8b {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes Item_raysAppearance_aa {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Item_rotate_5a {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes Item_reverse-rotate_f2 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes Item_glowAppearance_f7 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Item_highlightAppearance_0e {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+
+/* should be percentage of screen width */
+
+.Item_base_6f {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--itemWidth);
+    height: 100%;
+    position: relative;
+}
+
+.Item_base__noTitle_e7 {
+        /* should be synced with .title height */
+        padding-top: 23.4rem;
+    }
+
+.mediaLargeHeight .Item_base__noTitle_e7 {
+            padding-top: 31.2rem;
+}
+
+.Item_title_f3 {
+    color: #FEFEEC;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    width: 100%;
+    margin-bottom: 10rem;
+    line-height: 1.3;
+    text-align: center;
+    opacity: .3;
+    transition: opacity .3s linear;
+}
+
+.mediaLargeHeight .Item_title_f3 {
+        color: #FEFEEC;
+        font-size: 24rem;
+        font-weight: 700;
+        line-height: 1.2;
+        line-height: 1.3;
+}
+
+.Item_title__active_a9 {
+        opacity: 1;
+        transition-delay: .3s;
+    }
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+.RatingScore_base_50 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.RatingScore_rating_c0 {
+    position: relative;
+}
+.RatingScore_score_41 {
+    color: #FFFFFF;
+    font-size: 44rem;
+    font-weight: 700;
+    line-height: 110%;
+}
+.mediaLarge .RatingScore_score_41 {
+        color: #FFFFFF;
+        font-size: 73rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 6rem;
+}
+.RatingScore_rankInactivity_84 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    right: -5rem;
+    transform: translateX(100%);
+}
+.RatingScore_rankInactivityCount_31 {
+    color: #E9E2BF;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-right: 2rem;
+}
+.RatingScore_rankInactivityIconContainer_d4 {
+    width: 16rem;
+    height: 16rem;
+    position: relative;
+}
+.RatingScore_rankInactivityIcon_75 {
+    width: 42rem;
+    height: 43rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.timer') no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.RatingScore_title_b4 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+@keyframes ItemFooter_fadeIn_08 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ItemFooter_fadeInThreeQuarters_25 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+
+@keyframes ItemFooter_fadeInHalf_ec {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes ItemFooter_fadeOut_14 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes ItemFooter_fadeInWithScale_7d {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes ItemFooter_slideUp_ad {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ItemFooter_scale_55 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes ItemFooter_raysAppearance_f4 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ItemFooter_rotate_bb {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ItemFooter_reverse-rotate_d0 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes ItemFooter_glowAppearance_d8 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ItemFooter_highlightAppearance_ac {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+
+/* should be percentage of screen width */
+
+.ItemFooter_base_5a {
+    width: 100%;
+    height: 110rem;
+    padding-top: 2rem;
+    position: relative;
+}
+
+.mediaLarge .ItemFooter_base_5a {
+        height: 180rem;
+}
+
+.ItemFooter_background_29 {
+    width: 100%;
+    padding-bottom: 18.67%;
+    background: url('R.images.gui.maps.icons.comp7.icons.footerBg') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ItemFooter_divider_58 {
+    width: 100%;
+    height: 2rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.footerDivider') no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ItemFooter_light_5b {
+    width: 81rem;
+    height: 38rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.footerLight') no-repeat center / contain;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    pointer-events: none;
+}
+
+.ItemFooter_footer_3c {
+    width: 100%;
+    height: 100%;
+}
+
+.ItemFooter_rankItemFooter_66 {
+    top: 50%;
+    transform: translateY(-60%);
+}
+
+@keyframes ProgressionPage_fadeIn_ab {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ProgressionPage_fadeInThreeQuarters_7d {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+
+@keyframes ProgressionPage_fadeInHalf_cb {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes ProgressionPage_fadeOut_10 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes ProgressionPage_fadeInWithScale_33 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes ProgressionPage_slideUp_75 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ProgressionPage_scale_b7 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes ProgressionPage_raysAppearance_62 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ProgressionPage_rotate_30 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ProgressionPage_reverse-rotate_a0 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes ProgressionPage_glowAppearance_98 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ProgressionPage_highlightAppearance_12 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+
+/* should be percentage of screen width */
+
+.ProgressionPage_base_8a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.ProgressionPage_content_b3 {
+    opacity: 0;
+    animation-name: ProgressionPage_fadeIn_ab;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1;
+    margin-bottom: 12rem;
+}
+
+.mediaMedium .ProgressionPage_content_b3 {
+        margin-bottom: 20rem;
+}
+
+.mediaLarge .ProgressionPage_content_b3 {
+        margin-bottom: 33rem;
+}
+
+.ProgressionPage_areaContainer_19 {
+    flex: 1 1;
+}
+
+.ProgressionPage_areaWrapper_49 {
+    mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 4%, #c4c4c4 30%, #c4c4c4 70%, rgba(196,196,196, .1) 96%, transparent);
+}
+
+.mediaSmall .ProgressionPage_areaWrapper_49 {
+        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 6%, #c4c4c4 30%, #c4c4c4 70%, rgba(196,196,196, .1) 94%, transparent);
+}
+
+.mediaMedium .ProgressionPage_areaWrapper_49 {
+        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 2%, #c4c4c4 30%, #c4c4c4 70%, rgba(196,196,196, .1) 98%, transparent);
+}
+
+.mediaLarge .ProgressionPage_areaWrapper_49 {
+        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 4%, #c4c4c4 35%, #c4c4c4 65%, rgba(196,196,196, .1) 96%, transparent);
+}
+
+.mediaExtraLarge .ProgressionPage_areaWrapper_49 {
+        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 6%, #c4c4c4 30%, #c4c4c4 70%, rgba(196,196,196, .1) 94%, transparent);
+}
+
+.ProgressionPage_bar_a5 {
+    width: 78vw;
+}
+
+.ProgressionPage_footer_34 {
+    width: 78vw;
+}
+
+.Reward_base_ea {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+    .Reward_base__s48x48_46,
+    .Reward_base__small_c0 {
+        width: 48rem;
+        height: 48rem;
+    }
+
+    .Reward_base__s80x80_ce,
+    .Reward_base__big_e5 {
+        width: 80rem;
+        height: 80rem;
+    }
+
+    .Reward_base__s128x100_c3 {
+        width: 128rem;
+        height: 100rem;
+    }
+
+    .Reward_base__s180x135_7c {
+        width: 180rem;
+        height: 135rem;
+    }
+
+    .Reward_base__s232x174_67 {
+        width: 232rem;
+        height: 174rem;
+    }
+
+    .Reward_base__s296x222_78 {
+        width: 296rem;
+        height: 222rem;
+    }
+
+    .Reward_base__s400x300_07 {
+        width: 400rem;
+        height: 300rem;
+    }
+
+    .Reward_base__s600x450_f8 {
+        width: 600rem;
+        height: 450rem;
+    }
+
+.Reward_tooltipWrapper_b5 {
+    height: 100%;
+}
+
+.Reward_icon_df {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.Reward_overlay_68 {
+    background: no-repeat center / 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.Reward_base__s48x48_46 .Reward_overlay_68,
+    .Reward_base__small_c0 .Reward_overlay_68 {
+        width: 96rem;
+        height: 96rem;
+        background-size: 100%;
+        overflow: visible;
+    }
+
+.Reward_base__s80x80_ce .Reward_overlay_68,
+    .Reward_base__big_e5 .Reward_overlay_68 {
+        width: 128rem;
+        height: 128rem;
+    }
+
+.Reward_base__s180x135_7c .Reward_overlay_68 {
+        width: 266rem;
+        height: 241rem;
+    }
+
+.Reward_base__s232x174_67 .Reward_overlay_68 {
+        width: 344rem;
+        height: 312rem;
+    }
+
+.Reward_base__s296x222_78 .Reward_overlay_68 {
+        width: 450rem;
+        height: 408rem;
+    }
+
+.Reward_base__s400x300_07 .Reward_overlay_68 {
+        width: 618rem;
+        height: 590rem;
+    }
+
+.Reward_base__s600x450_f8 .Reward_overlay_68 {
+        width: 670rem;
+        height: 575rem;
+    }
+
+.Reward_highlight_36 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 0;
+}
+
+.Reward_image_89 {
+    position: relative;
+}
+
+.Reward_info_72 {
+    margin-top: -13rem;
+    color: #e9e2bf;
+    font-size: 14rem;
+    line-height: 18rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_info_72,
+    .Reward_base__small_c0 .Reward_info_72 {
+        margin: -10rem -10rem 0;
+    }
+
+.Reward_info__multi_63 {
+        margin-right: 2rem;
+        text-align: right;
+    }
+
+.Reward_base__s48x48_46 .Reward_info__multi_63,
+        .Reward_base__small_c0 .Reward_info__multi_63 {
+            margin-right: 0;
+        }
+
+.Reward_info__credits_ef {
+        color: #CED9D9;
+    }
+
+.Reward_info__gold_36 {
+        color: #FFC363;
+    }
+
+.Reward_info__crystal_36 {
+        color: #C9C9B6;
+    }
+
+.Reward_info__premiumTank_d3 {
+        color: #FFDD99;
+    }
+
+.Reward_timer_d3 {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_timer_d3,
+    .Reward_base__small_c0 .Reward_timer_d3 {
+        width: 23rem;
+        height: 23rem;
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
+        top: -6rem;
+        right: -6rem;
+    }
+
+.Reward_base__s80x80_ce .Reward_timer_d3,
+    .Reward_base__big_e5 .Reward_timer_d3 {
+        width: 48rem;
+        height: 48rem;
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
+        top: -14rem;
+        right: -14rem;
+    }
+
+.Rewards_base_26 {
+    display: flex;
+}
+
+    .Rewards_base__vertical_9f {
+        flex-direction: column;
+    }
+
+.Rewards_reward_7b {
+    margin: 0 10rem;
+}
+
+.Rewards_reward__vertical_c6 {
+        margin: 15rem 0;
+    }
+
+.AdditionalRewards_reward_bc {
+    margin: 0;
+}
+
+    .AdditionalRewards_reward_bc + .AdditionalRewards_reward_bc {
+        margin-left: 20rem;
+    }
+
+    .mediaSmall .AdditionalRewards_reward_bc + .AdditionalRewards_reward_bc {
+            margin-left: 24rem;
+}
+
+    .mediaLarge .AdditionalRewards_reward_bc + .AdditionalRewards_reward_bc {
+            margin-left: 30rem;
+}
+
+.AdditionalRewards_vehiclesRentBase_e9 {
+    margin: 0 5rem;
+}
+
+.AdditionalRewards_vehiclesRentBase_e9 .AdditionalRewards_vehiclesRentLabel_18 {
+    color: #FFDD99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: -7rem -12rem 0;
+}
+
+.Heading_base_25 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.Heading_tooltipArea_cf {
+    display: flex;
+    position: relative;
+}
+
+.Heading_rankEmblem__future_4c {
+        opacity: .5;
+    }
+
+.Heading_lock_86 {
+    width: 11rem;
+    height: 14rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.lockExtraSmall') no-repeat center / cover;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mediaMedium .Heading_lock_86 {
+        bottom: 4rem;
+}
+
+.mediaLarge .Heading_lock_86 {
+        bottom: 9rem;
+}
+
+.Heading_description_62 {
+    width: 100%;
+    margin-top: 2rem;
+    padding-bottom: 26rem;
+    text-align: center;
+    position: relative;
+}
+
+.Heading_rankName_8c {
+    color: #F2F2F7;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.Heading_currentRankStatus_94 {
+    color: rgba(255,255,255, .5);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+.Preview_base_1f {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    height: 60rem;
+    opacity: .7;
+    position: relative;
+    transition: opacity .25s ease-out;
+    cursor: pointer;
+}
+
+    .Preview_base__hovered_ee {
+        opacity: 1;
+    }
+.Preview_icon_f3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('R.images.gui.maps.icons.library.previewVehicle') no-repeat center / contain;
+    transition: opacity .25s ease-out;
+    pointer-events: none;
+}
+.Preview_icon__small_a1 {
+        width: 70rem;
+        height: 70rem;
+    }
+.Preview_icon__normal_5c {
+        width: 100rem;
+        height: 100rem;
+    }
+.Preview_base__mouseDown_d0 .Preview_icon_f3 {
+        opacity: .7;
+    }
+.Preview_label_2e {
+    color: #FFDD99;
+    font-size: 14rem;
+    line-height: 1.25;
+    text-shadow: 0 0 4rem rgba(255,127,0, .25),
+        0 0 8rem #ff2a00,
+        0 0 12rem #e52;
+    opacity: 0;
+    position: absolute;
+    bottom: -8rem;
+    transform: translateY(-5rem);
+    transition: transform .25s ease-out,
+        opacity .25s ease-out;
+}
+.Preview_base__visibleLabel_92 .Preview_label_2e,
+    .Preview_base__hovered_ee .Preview_label_2e {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+
+@keyframes MainReward_fadeIn_90 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes MainReward_fadeInThreeQuarters_3e {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+
+@keyframes MainReward_fadeInHalf_a2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes MainReward_fadeOut_31 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes MainReward_fadeInWithScale_84 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes MainReward_slideUp_ea {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes MainReward_scale_f9 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes MainReward_raysAppearance_2d {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes MainReward_rotate_3d {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes MainReward_reverse-rotate_eb {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes MainReward_glowAppearance_fe {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes MainReward_highlightAppearance_b5 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+
+/* should be percentage of screen width */
+
+.MainReward_base_17 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 85rem;
+    position: relative;
+}
+
+.mediaMedium .MainReward_base_17 {
+        padding-bottom: 105rem;
+}
+
+.MainReward_imageContainer_85 {
+    display: flex;
+    position: relative;
+}
+
+.MainReward_highlightContainer_f8 {
+    width: 460rem;
+    height: 460rem;
+    filter: brightness(130%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.mediaMedium .MainReward_highlightContainer_f8 {
+        width: 580rem;
+        height: 580rem;
+}
+
+.mediaLarge .MainReward_highlightContainer_f8 {
+        width: 760rem;
+        height: 760rem;
+}
+
+.mediaExtraLarge .MainReward_highlightContainer_f8 {
+        width: 840rem;
+        height: 840rem;
+}
+
+.MainReward_highlight_25 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.comp7.icons.blue_highlight') no-repeat center / cover;
+    animation: MainReward_glowAppearance_fe linear .7s both, MainReward_rotate_3d 80s linear infinite;
+}
+
+.MainReward_preview_80 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    bottom: 24rem;
+    left: 0;
+    z-index: 1;
+}
+
+.mediaMedium .MainReward_preview_80 {
+        bottom: 20rem;
+}
+
+.mediaLarge .MainReward_preview_80 {
+        bottom: 30rem;
+}
+
+.mediaExtraLarge .MainReward_preview_80 {
+        bottom: 80rem;
+}
+
+.MainReward_info_13 {
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 85rem;
+    left: 0;
+    transform: translateY(100%);
+}
+
+.mediaMedium .MainReward_info_13 {
+        bottom: 105rem;
+}
+
+.MainReward_title_be {
+    color: #FFFFFF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding: 0 25rem;
+}
+
+.mediaMedium .MainReward_title_be {
+        color: #FFFFFF;
+        font-size: 24rem;
+        font-weight: 700;
+        line-height: 1.2;
+}
+
+.mediaLarge .MainReward_title_be {
+        padding: 0 35rem;
+}
+
+.mediaExtraLarge .MainReward_title_be {
+        padding: 0 110rem;
+}
+
+.MainReward_subTitle_59 {
+    color: #F2F2F7;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-top: 12rem;
+}
+
+.mediaMedium .MainReward_subTitle_59 {
+        color: #F2F2F7;
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.RewardsStatus_base_10 {
+    display: flex;
+}
+
+.RewardsStatus_icon_83 {
+    width: 16rem;
+    height: 17rem;
+    margin-top: 2rem;
+    margin-right: 5rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.done') no-repeat center / cover;
+}
+
+.RewardsStatus_textContainer_e6 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    min-height: 40rem;
+}
+
+/* for 2 lines localization support */
+
+.RewardsStatus_base__achieved_82 .RewardsStatus_textContainer_e6 {
+        color: #80D43A;
+    }
+
+.RewardsStatus_text_ee {
+    justify-content: center;
+}
+
+.RankRewardsItem_base_93 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--itemWidth);
+    height: 100%;
+    position: relative;
+}
+
+.RankRewardsItem_mainRewardContainer_3e {
+    width: 100%;
+}
+
+.RankRewardsItem_rewardsContainer_c6 {
+    height: 48rem;
+    margin-bottom: 40rem;
+}
+
+.mediaLarge .RankRewardsItem_rewardsContainer_c6 {
+        margin-bottom: 60rem;
+}
+
+@keyframes RankRewardsPage_fadeIn_3b {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes RankRewardsPage_fadeInThreeQuarters_4e {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+
+@keyframes RankRewardsPage_fadeInHalf_57 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes RankRewardsPage_fadeOut_28 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes RankRewardsPage_fadeInWithScale_d2 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes RankRewardsPage_slideUp_16 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes RankRewardsPage_scale_b4 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes RankRewardsPage_raysAppearance_3a {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes RankRewardsPage_rotate_11 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes RankRewardsPage_reverse-rotate_cb {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes RankRewardsPage_glowAppearance_02 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes RankRewardsPage_highlightAppearance_53 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+
+/* should be percentage of screen width */
+
+.RankRewardsPage_base_de {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.RankRewardsPage_content_00 {
+    flex: 1 1;
+    width: 100%;
+    margin-bottom: 12rem;
+    position: relative;
+}
+
+.mediaMedium .RankRewardsPage_content_00 {
+        margin-bottom: 20rem;
+}
+
+.mediaLarge .RankRewardsPage_content_00 {
+        margin-bottom: 33rem;
+}
+
+.RankRewardsPage_scrollContainer_6b {
+    opacity: 0;
+    animation-name: RankRewardsPage_fadeIn_3b;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.RankRewardsPage_areaContainer_3e {
+    flex: 1 1;
+}
+
+.RankRewardsPage_areaWrapper_61 {
+    mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 4%, #c4c4c4 10%, #c4c4c4 90%, rgba(196,196,196, .1) 96%, transparent);
+}
+
+.mediaSmall .RankRewardsPage_areaWrapper_61 {
+        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 5%, #c4c4c4 20%, #c4c4c4 80%, rgba(196,196,196, .1) 95%, transparent);
+}
+
+.mediaMedium .RankRewardsPage_areaWrapper_61 {
+        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 3%, #c4c4c4 25%, #c4c4c4 75%, rgba(196,196,196, .1) 97%, transparent);
+}
+
+.mediaLarge .RankRewardsPage_areaWrapper_61 {
+        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 4%, #c4c4c4 20%, #c4c4c4 80%, rgba(196,196,196, .1) 96%, transparent);
+}
+
+.mediaExtraLarge .RankRewardsPage_areaWrapper_61 {
+        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 4%, #c4c4c4 25%, #c4c4c4 75%, rgba(196,196,196, .1) 96%, transparent);
+}
+
+.RankRewardsPage_bar_87 {
+    width: 78vw;
+}
+
+.Progress_base_3c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Progress_counter_bd {
+    color: rgba(254,254,236, .5);
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    flex-wrap: nowrap;
+}
+
+.mediaMedium .Progress_counter_bd {
+        font-size: 40rem;
+}
+
+.mediaExtraLarge .Progress_counter_bd {
+        font-size: 56rem;
+}
+
+.Progress_current_b0 {
+    color: #FFFFFF;
+}
+
+.Progress_progressBar_4a {
+    width: 110rem;
+    padding: 12rem 0;
+}
+
+.mediaMedium .Progress_progressBar_4a {
+        width: 172rem;
+        padding: 16rem 0;
+}
+
+.mediaExtraLarge .Progress_progressBar_4a {
+        width: 192rem;
+        padding: 36rem 0;
+}
+
+.QuestCard_base_5f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 164rem;
+    height: 380rem;
+    padding-top: 52rem;
+    padding-bottom: 14rem;
+    position: relative;
+}
+    .mediaSmall .QuestCard_base_5f {
+        width: 180rem;
+}
+    .mediaMedium .QuestCard_base_5f {
+        width: 240rem;
+        height: 460rem;
+        padding-top: 0;
+        padding-bottom: 60rem;
+}
+    .mediaLarge .QuestCard_base_5f {
+        width: 300rem;
+        height: 500rem;
+}
+    .mediaExtraLarge .QuestCard_base_5f {
+        height: 530rem;
+        padding-bottom: 20rem;
+}
+
+.QuestCard_highlight_6f {
+    width: 518rem;
+    height: 554rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.active_quest_highlight') no-repeat center / contain;
+    position: absolute;
+    top: 65%;
+    left: 60%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.mediaMedium .QuestCard_highlight_6f {
+        width: 720rem;
+        height: 640rem;
+        top: 55%;
+        left: 56%;
+}
+
+.mediaExtraLarge .QuestCard_highlight_6f {
+        width: 836rem;
+        height: 894rem;
+        top: 53%;
+        left: 60%;
+}
+
+.QuestCard_icon_7a {
+    width: 124rem;
+    height: 124rem;
+    background: no-repeat center / contain;
+    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+}
+
+.mediaMedium .QuestCard_icon_7a {
+        width: 180rem;
+        height: 180rem;
+        margin-top: -2rem;
+}
+
+.mediaLarge .QuestCard_icon_7a {
+        width: 234rem;
+        height: 234rem;
+        margin-top: -2rem;
+}
+
+.mediaExtraLarge .QuestCard_icon_7a {
+        width: 240rem;
+        height: 240rem;
+        margin-top: -40rem;
+}
+
+.QuestCard_base__completed_99 .QuestCard_icon_7a,
+    .QuestCard_base__locked_3f .QuestCard_icon_7a {
+        mask-image: linear-gradient(180deg, #fff 21%, rgba(255,255,255, .52) 44.5%, transparent 83%);
+        transform: translateY(35rem);
+    }
+
+.mediaMedium .QuestCard_base__completed_99 .QuestCard_icon_7a, .mediaMedium .QuestCard_base__locked_3f .QuestCard_icon_7a {
+            transform: translateY(50rem);
+}
+
+.mediaExtraLarge .QuestCard_base__completed_99 .QuestCard_icon_7a, .mediaExtraLarge .QuestCard_base__locked_3f .QuestCard_icon_7a {
+            transform: translateY(50rem);
+}
+
+.QuestCard_base__completed_99 .QuestCard_icon_7a {
+        opacity: .25;
+    }
+
+.QuestCard_base__locked_3f .QuestCard_icon_7a {
+        opacity: .55;
+    }
+
+.QuestCard_content_a1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin-top: -30rem;
+    transition: opacity .4s ease-in-out;
+}
+
+.mediaMedium .QuestCard_content_a1 {
+        margin-top: -48rem;
+}
+
+.mediaExtraLarge .QuestCard_content_a1 {
+        margin-top: -72rem;
+}
+
+.QuestCard_base__completed_99 .QuestCard_content_a1 {
+        opacity: .2;
+    }
+
+.QuestCard_progress_2b {
+    transition: opacity .4s ease-in-out;
+}
+
+.QuestCard_base__locked_3f .QuestCard_progress_2b {
+        opacity: .6;
+    }
+
+.QuestCard_description_88 {
+    color: #FEFEEC;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    flex: 1;
+    padding: 0;
+    text-align: center;
+    opacity: .88;
+    transition: opacity .4s ease-in-out;
+}
+
+.mediaMedium .QuestCard_description_88 {
+        color: #FEFEEC;
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
+        padding: 0 30rem;
+}
+
+.mediaLarge .QuestCard_description_88 {
+        padding: 0 40rem;
+}
+
+.mediaExtraLarge .QuestCard_description_88 {
+        padding: 0 24rem;
+}
+
+.QuestCard_base__locked_3f .QuestCard_description_88 {
+        opacity: .77;
+    }
+
+.QuestCard_reward_8a {
+    margin: 0 5rem;
+}
+
+.mediaMedium .QuestCard_reward_8a {
+        margin: 0 11rem;
+}
+
+.QuestCard_status_b5 {
+    margin-top: 30rem;
+}
+
+.mediaMedium .QuestCard_status_b5 {
+        margin-top: 37rem;
+}
+
+.mediaExtraLarge .QuestCard_status_b5 {
+        margin-top: 46rem;
+}
+
+.Status_base_f6 {
+    display: flex;
+}
+
+    .Status_base__locked_ed {
+        opacity: .77;
+    }
+
+.Status_icon_34 {
+    width: 18rem;
+    height: 18rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.flag') no-repeat center / contain;
+}
+
+.Status_base__locked_ed .Status_icon_34 {
+        width: 14rem;
+        height: 18rem;
+        margin-right: 2rem;
+        background-image: url('R.images.gui.maps.icons.comp7.icons.lockMedium');
+    }
+
+.Status_base__completed_39 .Status_icon_34 {
+        width: 16rem;
+        height: 17rem;
+        margin-top: 2rem;
+        background-image: url('R.images.gui.maps.icons.comp7.icons.done');
+    }
+
+.Status_text_ec {
+    color: #CBAC77;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-left: 6rem;
+}
+
+.Status_base__locked_ed .Status_text_ec {
+        color: #FFFFFF;
+    }
+
+.Status_base__completed_39 .Status_text_ec {
+        color: #80D43A;
+    }
+
+.QuestsList_base_77 {
+    display: flex;
+}
+
+.mediaSmall .QuestsList_card_3a {
+        margin: 0 11rem;
+}
+
+.mediaMedium .QuestsList_card_3a {
+        margin: 0;
+}
+
+.mediaExtraLarge .QuestsList_card_3a {
+        margin: 0 22rem;
+}
+
+.Separator_base_38 {
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.Separator_line_96 {
+    flex: 1;
+    width: 1rem;
+    background-image: linear-gradient(180deg, rgba(255,255,255, .2) 0%, #fff 50%, rgba(255,255,255, .2) 100%);
+    opacity: .2;
+}
+
+.Separator_line__top_19 {
+        background-image: linear-gradient(180deg, rgba(255,255,255, .2), #fff);
+    }
+
+.mediaMedium .Separator_line__top_19 {
+            flex: none;
+            height: 163rem;
+}
+
+.mediaLarge .Separator_line__top_19 {
+            height: 217rem;
+}
+
+.mediaExtraLarge .Separator_line__top_19 {
+            height: 200rem;
+}
+
+.Separator_line__bottom_40 {
+        background-image: linear-gradient(180deg, #fff, rgba(255,255,255, .2));
+    }
+
+.Separator_arrowContainer_db {
+    height: 70rem;
+    position: relative;
+}
+
+.Separator_arrow_44 {
+    width: 90rem;
+    height: 80rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.arrow') no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 12rem;
+    transform: translate(-100%, -50%);
+}
+
+.mediaExtraLarge .Separator_arrow_44 {
+        height: 76rem;
+        background-image: url('R.images.gui.maps.icons.comp7.icons.arrow_large');
+}
+
+.Separator_base__highlighted_91 .Separator_arrow_44 {
+        background-image: url('R.images.gui.maps.icons.comp7.icons.arrow_highlighted');
+    }
+
+.mediaExtraLarge .Separator_base__highlighted_91 .Separator_arrow_44 {
+            background-image: url('R.images.gui.maps.icons.comp7.icons.arrow_highlighted_large');
+}
+
+.Countdown_base_fe {
+    display: flex;
+    align-items: center;
+}
+
+.Countdown_icon_8b {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+}
+
+.Countdown_description_8d {
+    color: #FFDD99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.ResetStatus_base_1c {
+    color: #FFFFFF;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+    .mediaExtraLarge .ResetStatus_base_1c {
+        font-size: 20rem;
+}
+
+.ResetStatus_text_49 {
+    align-items: center;
+}
+
+.ResetStatus_timer_91 {
+    color: #FFDD99;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.mediaExtraLarge .ResetStatus_timer_91 {
+        font-size: 20rem;
+}
+
+.TokenPoint_base_96 {
+    color: #FFFFFF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TokenPoint_tokenValue_fd {
+    display: flex;
+    margin-top: 3rem;
+    opacity: .3;
+}
+
+.TokenPoint_tokenValue__hide_01 {
+        animation: TokenPoint_fadeOut_4d 1s forwards;
+    }
+
+.TokenPoint_tokenIcon_38 {
+    width: 18rem;
+    height: 18rem;
+    margin-top: 1rem;
+    background: url('R.images.gui.maps.icons.quests.bonuses.small.comp7_2023_1_weekly_rewards_token') no-repeat center / cover;
+}
+
+.TokenPoint_serif_df {
+    width: 1rem;
+    height: 34rem;
+    background-image: linear-gradient(transparent, rgba(255,255,255, .2) 8rem, transparent 8rem, transparent 26rem, rgba(255,255,255, .2) 26rem, transparent);
+}
+
+.TokenPoint_rewards_c0 {
+    margin-top: 3rem;
+}
+
+.mediaExtraLarge .TokenPoint_rewards_c0 {
+        margin-top: 10rem;
+}
+
+.TokenPoint_rewards__passed_9d {
+        opacity: .4;
+    }
+
+.TokenPoint_reward_3b {
+    margin: 0 5rem;
+}
+
+@keyframes TokenPoint_fadeOut_4d {
+    0% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.TokenProgress_base_92 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 830rem;
+}
+    .mediaSmall .TokenProgress_base_92 {
+        width: 930rem;
+}
+    .mediaMedium .TokenProgress_base_92 {
+        width: 1080rem;
+}
+    .mediaLarge .TokenProgress_base_92 {
+        width: 1360rem;
+}
+    .mediaExtraLarge .TokenProgress_base_92 {
+        width: 1400rem;
+}
+
+.TokenProgress_content_48 {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20rem;
+    padding: 30rem 0 0 30rem;
+}
+
+.mediaSmall .TokenProgress_content_48 {
+        padding-left: 0;
+}
+
+.mediaMedium .TokenProgress_content_48 {
+        margin-bottom: 20rem;
+}
+
+.mediaLarge .TokenProgress_content_48 {
+        margin-bottom: 38rem;
+}
+
+.mediaExtraLarge .TokenProgress_content_48 {
+        margin-bottom: 35rem;
+}
+
+.TokenProgress_progress_a2 {
+    flex: 1;
+    margin-right: 20rem;
+    position: relative;
+}
+
+.mediaSmall .TokenProgress_progress_a2 {
+        margin-right: 25rem;
+}
+
+.TokenProgress_progressBar_cb {
+    margin: 0 -1rem;
+    padding: 2rem 0;
+    border-top: 1rem solid rgba(255,255,255, .2);
+    border-bottom: 1rem solid rgba(255,255,255, .2);
+}
+
+.TokenProgress_points_da {
+    width: 100%;
+    position: absolute;
+}
+
+.TokenProgress_point_e0 {
+    position: absolute;
+    top: -30rem;
+    left: 0;
+    transform: translateX(-50%);
+}
+
+.TokenProgress_currentTokenValue_12 {
+    color: #FFFFFF;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    margin-bottom: 2rem;
+    position: absolute;
+    top: -45rem;
+    left: 0;
+    transform: translateX(-50%);
+}
+
+.TokenProgress_tokenIcon_63 {
+    width: 40rem;
+    height: 40rem;
+    margin: -2rem -6rem 0 -1rem;
+    background: url('R.images.gui.maps.icons.quests.bonuses.small.comp7_2023_1_weekly_rewards_token') no-repeat center / cover;
+}
+
+.TokenProgress_finalRewards_40 {
+    position: relative;
+    top: -32rem;
+}
+
+.TokenProgress_finalRewards__passed_a4 {
+        opacity: .4;
+    }
+
+.TokenProgress_description_36 {
+    color: rgba(255,255,255, .4);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+}
+
+.mediaLarge .TokenProgress_description_36 {
+        color: rgba(255,255,255, .4);
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
+}
+
+.TokenProgress_description__done_e8 {
+        color: #80D43A;
+    }
+
+.TokenProgress_iconDone_04 {
+    width: 17rem;
+    height: 17rem;
+    margin-top: 2rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.done') no-repeat center / cover;
+}
+
+@keyframes WeeklyQuestsPage_fadeIn_88 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes WeeklyQuestsPage_fadeInThreeQuarters_7f {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+
+@keyframes WeeklyQuestsPage_fadeInHalf_dc {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes WeeklyQuestsPage_fadeOut_f1 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes WeeklyQuestsPage_fadeInWithScale_37 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes WeeklyQuestsPage_slideUp_11 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes WeeklyQuestsPage_scale_49 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes WeeklyQuestsPage_raysAppearance_dd {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes WeeklyQuestsPage_rotate_2c {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes WeeklyQuestsPage_reverse-rotate_9c {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes WeeklyQuestsPage_glowAppearance_29 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes WeeklyQuestsPage_highlightAppearance_00 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+
+/* should be percentage of screen width */
+
+.WeeklyQuestsPage_base_ee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.WeeklyQuestsPage_content_8f {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1;
+    width: 78vw;
+}
+
+.mediaLarge .WeeklyQuestsPage_content_8f {
+        padding-top: 10rem;
+}
+
+.mediaExtraLarge .WeeklyQuestsPage_content_8f {
+        padding: none;
+}
+
+.WeeklyQuestsPage_questsList_98 {
+    margin-top: -40rem;
+    margin-bottom: 24rem;
+}
+
+.mediaSmall .WeeklyQuestsPage_questsList_98 {
+        margin-bottom: 24rem;
+}
+
+.mediaMedium .WeeklyQuestsPage_questsList_98 {
+        margin-top: -5rem;
+        margin-bottom: 0;
+}
+
+.mediaLarge .WeeklyQuestsPage_questsList_98 {
+        margin-top: 0rem;
+        margin-bottom: 75rem;
+}
+
+.mediaExtraLarge .WeeklyQuestsPage_questsList_98 {
+        margin-top: 7vh;
+        margin-bottom: 7vh;
+}
+
+.WeeklyQuestsPage_progression_7c {
+    margin-bottom: 10rem;
+}
+
+.mediaMedium .WeeklyQuestsPage_progression_7c {
+        margin-bottom: 10rem;
+}
+
+.mediaLarge .WeeklyQuestsPage_progression_7c {
+        margin-bottom: 20rem;
+}
+
+.mediaExtraLarge .WeeklyQuestsPage_progression_7c {
+        margin-bottom: 2vh;
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+.App_base_ef {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.App_viewContainer_81 {
+    width: 100%;
+    height: 100%;
+}
+.App_sidebar_95 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.App_info_e9 {
+    position: absolute;
+    top: 54rem;
+    left: 29rem;
+}
+.mediaMedium .App_info_e9 {
+        top: 63rem;
+}
+.mediaLarge .App_info_e9 {
+        left: 40rem;
+}
+

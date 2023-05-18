@@ -1,0 +1,24 @@
+.Point_base_e9 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Point_points_2a {
+    color: #e9e2bf;
+    font-size: 16rem;
+}
+
+.Point_points__special_c7 {
+        color: #80d43a;
+        font-size: 16rem;
+    }
+
+.Point_pointIcon_9e {
+    width: 24rem;
+    height: 24rem;
+    margin-left: 6rem;
+    margin-top: 4rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.points_24') center / contain no-repeat;
+}
+

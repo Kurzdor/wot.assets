@@ -1,0 +1,164 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem; /* border offset*/
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.TooltipDecorator_decoratorContent_de {
+    background-color: #000;
+}
+
+.commonTooltipStyles_base_1f {
+    width: 220rem;
+    padding-bottom: 20rem;
+    background: linear-gradient(180deg, rgba(51, 51, 41, .3) 0%, rgba(51, 51, 41, 0) 15.62%, rgba(51, 51, 41, 0) 88.02%, rgba(51, 51, 41, .1) 100%);
+}
+
+.commonTooltipStyles_title_de {
+    margin: 20rem 20rem 10rem;
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.commonTooltipStyles_listHeader_5f {
+    display: flex;
+    padding: 0 20rem;
+}
+
+.commonTooltipStyles_headerLevel_bb,
+.commonTooltipStyles_headerValue_c0 {
+    width: 50%;
+    color: #595950;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 24rem;
+}
+
+.commonTooltipStyles_separator_6a {
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.dogtags.tooltip_separator') no-repeat;
+    background-size: contain;
+}
+
+.commonTooltipStyles_list_84 {
+    display: flex;
+    flex-direction: column;
+}
+
+.commonTooltipStyles_levelRow_50 {
+    display: flex;
+}
+
+.commonTooltipStyles_levelRow_50.commonTooltipStyles_current_83 {
+        background: url('R.images.gui.maps.icons.dogtags.tooltip_level_highlight') no-repeat;
+        background-size: cover;
+    }
+
+.commonTooltipStyles_levelRow_50.commonTooltipStyles_current_83 .commonTooltipStyles_level_20,
+        .commonTooltipStyles_levelRow_50.commonTooltipStyles_current_83 .commonTooltipStyles_value_4b {
+            color: #FFC363;
+        }
+
+.commonTooltipStyles_levelRow_50.commonTooltipStyles_next_21 .commonTooltipStyles_level_20,
+        .commonTooltipStyles_levelRow_50.commonTooltipStyles_next_21 .commonTooltipStyles_value_4b {
+            color: #E9E2BF;
+        }
+
+.commonTooltipStyles_level_20 {
+    display: flex;
+    align-items: center;
+    padding-left: 20rem;
+}
+
+.commonTooltipStyles_level_20,
+.commonTooltipStyles_value_4b {
+    width: 50%;
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 24rem;
+}
+
+.Body_base_5a {
+    width: 280rem;
+    padding-bottom: 20rem;
+    background: linear-gradient(180deg, rgba(51, 51, 41, .3) 0%, rgba(51, 51, 41, 0) 15.62%, rgba(51, 51, 41, 0) 88.02%, rgba(51, 51, 41, .1) 100%);
+}
+
+.Body_list_f0 {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(255, 255, 255, .05) 0%, rgba(255, 255, 255, .02) 100%);
+}
+
+.Body_levelRow_c8 {
+    display: flex;
+    align-items: flex-start;
+    padding: 5rem 20rem 5rem 0;
+}
+
+.Body_levelRow_c8.Body_current_5c .Body_level_71,
+        .Body_levelRow_c8.Body_current_5c .Body_value_69 {
+            color: #FFC363;
+        }
+
+.Body_level_71 {
+    display: flex;
+    align-items: center;
+    padding-left: 10rem;
+}
+
+.Body_level_71,
+.Body_value_69 {
+    width: 50%;
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 24rem;
+}
+
+.Body_description_b5 {
+    margin: 0 20rem 15rem;
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18rem;
+}
+
+.Body_monthIcon_bf {
+    width: 24rem;
+    height: 24rem;
+    margin-left: 5rem;
+    margin-right: 3rem;
+    background: url('R.images.gui.maps.icons.dogtags.icons.close_icon') center no-repeat;
+    background-size: 10rem;
+}
+
+.Body_monthIcon_bf.Body_cup_ef {
+        background-image: url('R.images.gui.maps.icons.dogtags.icons.cup');
+        background-size: 24rem;
+    }
+
+.Body_monthIcon_bf.Body_hourGlass_33 {
+        background-image: url('R.images.gui.maps.icons.dogtags.icons.hour_glass');
+        background-size: 10rem 16rem;
+    }
+
+.Body_lastMonthDesc_20 {
+    width: 50%;
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 24rem;
+}
+

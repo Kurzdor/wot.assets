@@ -61,9 +61,6 @@ msgstr "In Team Battle"
 msgid "Contact/status/inBattle/training"
 msgstr "In Team Training Battle"
 
-msgid "Contact/status/inBattle/tutorial"
-msgstr "In Battle Training"
-
 msgid "Contact/status/inBattle/unknown"
 msgstr "In Battle"
 
@@ -109,11 +106,11 @@ msgstr "Change Unavailable"
 
 msgid "RoleChange/footerInfo/body"
 msgstr ""
-"All the trained skills and perks will be reset, so you can rearrange them. "
-"The cost of skill and perk reset is included in the cost of the operation."
+"All the trained perks will be reset, so you can rearrange them. The cost of "
+"the perk reset is included in the cost of the operation."
 
 msgid "RoleChange/footerInfo/header"
-msgstr "Skill and Perk Reset"
+msgstr "Perk Reset"
 
 msgid "RoleChange/roleAndVehicleTaken/body"
 msgstr ""
@@ -512,6 +509,9 @@ msgstr "%(value)s effect"
 msgid "additionalRewards/customizations/paint"
 msgstr "%(value)s paint"
 
+msgid "additionalRewards/customizations/progressionStyle"
+msgstr "%(value)s progressive style"
+
 msgid "additionalRewards/customizations/projectionDecal"
 msgstr "%(value)s decal"
 
@@ -581,6 +581,12 @@ msgstr ""
 "penetration of a vehicle's armor. Ricochets are quite rare. The penetration "
 "power of this shell is not reduced with distance traveled."
 
+msgid "advanced/additionalInvisibilityDevice"
+msgstr ""
+"Effectiveness depends on the vehicle type. Increases the concealment of a "
+"stationary or moving vehicle. Useful for active spotting, as well as for "
+"passive spotting from risky positions."
+
 msgid "advanced/aimingStabilizer"
 msgstr ""
 "Improves aiming: reduces reticle dispersion during firing, turret traverse "
@@ -596,18 +602,6 @@ msgid "advanced/autoExtinguishers"
 msgstr ""
 "Automatically extinguishes fire in a vehicle right after inflammation. The "
 "passive effect reduces the chance of inflammation."
-
-msgid "advanced/battleTeaching"
-msgstr ""
-"Apply everything you have learned from Bootcamp in a battle against bots."
-
-msgid "advanced/brotherhood"
-msgstr ""
-"Improves major qualifications and all skills for the entire crew. Comes into "
-"effect when it reaches 100% for all crew members."
-
-msgid "advanced/camouflage"
-msgstr "Reduces vehicle visibility."
 
 msgid "advanced/camouflageNet"
 msgstr ""
@@ -626,30 +620,9 @@ msgstr ""
 "Affects the view range. Slightly improves the efficiency of other crew "
 "members."
 
-msgid "advanced/commander_eagleEye"
-msgstr "Increases Maximum View Range."
-
-msgid "advanced/commander_enemyShotPredictor"
-msgstr "Indicates an enemy SPG shot."
-
-msgid "advanced/commander_expert"
+msgid "advanced/commandersView"
 msgstr ""
-"Enables the Commander to identify critically damaged modules on targeted "
-"vehicles within the view range."
-
-msgid "advanced/commander_sixthSense"
-msgstr ""
-"Enables the Commander to identify whether the vehicle has been spotted by "
-"the enemy."
-
-msgid "advanced/commander_tutor"
-msgstr ""
-"Provides additional experience to all crew members except the Commander."
-
-msgid "advanced/commander_universalist"
-msgstr ""
-"Enables the Commander to master every qualification and replace knocked-out "
-"crew members."
+"Decreases concealment of stationary and moving enemy vehicles behind foliage."
 
 msgid "advanced/demountKit/common"
 msgstr ""
@@ -658,26 +631,6 @@ msgstr ""
 
 msgid "advanced/driver"
 msgstr "Affects the dynamic characteristics of the vehicle."
-
-msgid "advanced/driver_badRoadsKing"
-msgstr ""
-"Reduces ground resistance when driving on soft and moderately soft terrain."
-
-msgid "advanced/driver_rammingMaster"
-msgstr ""
-"Decreases ramming damage to your vehicle and increases ramming damage to an "
-"enemy vehicle."
-
-msgid "advanced/driver_smoothDriving"
-msgstr "Improves accuracy when firing on the move."
-
-msgid "advanced/driver_tidyPerson"
-msgstr ""
-"Reduces the chance of engine fire by preventing gas or oil leakage in the "
-"engine compartment."
-
-msgid "advanced/driver_virtuoso"
-msgstr "Increases vehicle traverse speed."
 
 msgid "advanced/economyBonds"
 msgstr "A rare special currency used to purchase unique items."
@@ -720,8 +673,11 @@ msgstr ""
 "demounted using the Demount Kit or in-game currency and mounted on other "
 "vehicles."
 
-msgid "advanced/fireFighting"
-msgstr "Enhances firefighting abilities."
+msgid "advanced/extraHealthReserve"
+msgstr ""
+"Increases the vehicle's hit points. Improves durability and loading capacity "
+"of suspension, as well as its repair speed. Fully restores suspension hit "
+"points after repairs."
 
 msgid "advanced/gamemodeRandom"
 msgstr "Battle with automatic matching of allies and enemies."
@@ -759,19 +715,6 @@ msgstr ""
 "Affects gun aiming, firing accuracy, turret traverse speed, and gun traverse "
 "speed."
 
-msgid "advanced/gunner_gunsmith"
-msgstr "Improves the accuracy of a damaged gun."
-
-msgid "advanced/gunner_rancorous"
-msgstr "Makes targeted enemy vehicles visible for two additional seconds."
-
-msgid "advanced/gunner_smoothTurret"
-msgstr "Improves accuracy during turret rotation."
-
-msgid "advanced/gunner_sniper"
-msgstr ""
-"Increases the chance of causing damage to enemy vehicle modules and crew."
-
 msgid "advanced/handExtinguishers"
 msgstr "Extinguishes fire in your vehicle upon activation."
 
@@ -787,8 +730,31 @@ msgstr "High-Explosive Shells"
 msgid "advanced/header/shellType/HOLLOW_CHARGE"
 msgstr "High-Explosive Anti-Tank Shells"
 
+msgid "advanced/improvedConfiguration"
+msgstr ""
+"Improves repair speed and hit points of the ammo rack, fuel tank, and "
+"engine. Decreases the penalty from a damaged ammo rack and engine, and "
+"decreases the chance of engine fire. Prevents one fuel tank fire, ammo rack "
+"explosion, and engine destruction in a battle."
+
+msgid "advanced/improvedRadioCommunication"
+msgstr ""
+"Increases the time an enemy remains spotted, and reduces the time you remain "
+"spotted."
+
+msgid "advanced/improvedRotationMechanism"
+msgstr ""
+"Reduces reticle dispersion during firing, turret traverse, or vehicle "
+"movement, and increases turret and hull traverse speeds."
+
+msgid "advanced/improvedSights"
+msgstr ""
+"Reduces the size of the aiming circle to increase the accuracy of an aiming "
+"or fully aimed gun. As a result, your gun has a better chance of hitting the "
+"target."
+
 msgid "advanced/improvedVentilation"
-msgstr "Improves crew skills that affect the vehicle characteristics."
+msgstr "Improves crew perks that affect the vehicle's characteristics."
 
 msgid "advanced/info"
 msgstr "additional information"
@@ -796,12 +762,12 @@ msgstr "additional information"
 msgid "advanced/instructions"
 msgstr ""
 "Effective during one battle. Depending on the type, increases the effect of "
-"mounted equipment, improves the trained or activates not trained skills/"
-"perks of crew members."
+"mounted equipment, or either improves the trained perks or activates the not-"
+"yet-trained perks of crew members."
 
 msgid "advanced/largeMedkit"
 msgstr ""
-"Prompt treatment of all injured crew members and removes the stun effect. "
+"Prompt treatment of all injured crew members and removal of the stun effect. "
 "The passive effect improves the protection of the crew and reduces stun "
 "duration."
 
@@ -813,40 +779,25 @@ msgstr ""
 msgid "advanced/loader"
 msgstr "Affects the gun loading time."
 
-msgid "advanced/loader_desperado"
+msgid "advanced/modernizedAimDrivesAimingStabilizer"
 msgstr ""
-"Accelerates gun loading if the vehicle has less than 10% of its hit points "
-"left."
+"Reduces the reticle aiming time and dispersion during firing, turret "
+"traverse, or vehicle movement."
 
-msgid "advanced/loader_intuition"
-msgstr "Allows for quicker switching between shell types in a loaded gun."
-
-msgid "advanced/loader_pedant"
+msgid "advanced/modernizedExtraHealthReserveAntifragmentationLining"
 msgstr ""
-"Increases ammo rack durability: the shells do not come into contact with "
-"each other."
+"Increases the hit points of the vehicle and its internal modules. Increases "
+"suspension hit points and repair speed. Decreases the penalty from a damaged "
+"ammo rack and engine. Fully restores suspension hit points after repairs."
 
-msgid "advanced/naturalCover"
-msgstr "Reduces vehicle visibility."
+msgid "advanced/modernizedTurbochargerRotationMechanism"
+msgstr ""
+"Increases engine power and top speed. Reduces reticle dispersion during "
+"firing, turret traverse, or vehicle movement, and increases turret and hull "
+"traverse speeds."
 
 msgid "advanced/radioman"
 msgstr "Affects the signal range."
-
-msgid "advanced/radioman_finder"
-msgstr "Increases Maximum View Range."
-
-msgid "advanced/radioman_inventor"
-msgstr "Extends Signal Range."
-
-msgid "advanced/radioman_lastEffort"
-msgstr ""
-"Allows a Radio Operator who survives the destruction of his vehicle to "
-"report enemy positions for another two seconds (12 seconds in total)."
-
-msgid "advanced/radioman_retransmitter"
-msgstr ""
-"Extends Signal Range of allied communications within the vehicle's radio "
-"coverage."
 
 msgid "advanced/rammer"
 msgstr "Reduces Gun Reload Time."
@@ -857,13 +808,12 @@ msgstr ""
 "rewards."
 
 msgid "advanced/ration"
-msgstr ""
-"Improves crew skills and perks that affect the vehicle characteristics."
+msgstr "Improves crew perks that affect the vehicle's characteristics."
 
 msgid "advanced/recertificationForm/description"
 msgstr ""
-"A consumable item that allows you to reset all skills and perks for a chosen "
-"crew member."
+"A consumable item that allows you to reset all perks for a chosen crew "
+"member."
 
 msgid "advanced/relativeArmor"
 msgstr ""
@@ -872,8 +822,8 @@ msgstr ""
 
 msgid "advanced/relativeCamouflage"
 msgstr ""
-"A set of parameters that show the vehicle concealment and spotting of your "
-"vehicle by enemies."
+"A set of parameters that show the vehicle's concealment and the spotting of "
+"your vehicle by enemies."
 
 msgid "advanced/relativeMobility"
 msgstr ""
@@ -894,9 +844,6 @@ msgstr ""
 "and disabled manually. Purchased once and does not disappear after the "
 "battle."
 
-msgid "advanced/repair"
-msgstr "Accelerates repairs of damaged modules."
-
 msgid "advanced/service"
 msgstr ""
 "Items that improve particular vehicle characteristics or repair modules in "
@@ -915,6 +862,13 @@ msgstr ""
 "moving. The effect is disabled if the vehicle moves forwards or backwards, "
 "or when the hull is turned. The effect is not disabled when turning the hull "
 "of high-tier Swedish tank destroyers."
+
+msgid "advanced/turbocharger"
+msgstr ""
+"Increases engine power, providing better acceleration, maneuvering, and "
+"ascension on terrain slopes. Increases the vehicle's maximum forward and "
+"reverse speed, allowing you to take positions and escape enemy return fire "
+"more quickly."
 
 msgid "advanced/vehicleChassis"
 msgstr ""
@@ -959,13 +913,6 @@ msgid "advanced/vehicleWheeledChassis"
 msgstr ""
 "The module that affects the vehicle's maneuverability and load capacity. The "
 "suspension of a wheeled vehicle does not allow it to turn on the spot."
-
-msgid "advanced/wt_largeMedkit"
-msgstr ""
-"Prompt treatment of all injured crew members and removes the stun effect."
-
-msgid "advanced/wt_largeRepairkit"
-msgstr "Prompt repair of all damaged modules."
 
 msgid "ammo/auto/body"
 msgstr ""
@@ -1038,6 +985,14 @@ msgstr ""
 msgid "anonymizer/teamStats/header"
 msgstr "The player's nickname was anonymized: %(name)s"
 
+msgid "awardItem/abilityToken/body"
+msgstr ""
+"Accumulate the required number of Points and activate Frontline Combat "
+"Reserves."
+
+msgid "awardItem/abilityToken/header"
+msgstr "Combat Reserve Points"
+
 msgid "awardItem/battleToken/description"
 msgstr "Unlocks several missions."
 
@@ -1076,6 +1031,12 @@ msgstr ""
 
 msgid "awardItem/brcoin/header"
 msgstr "Steel Seals"
+
+msgid "awardItem/comp7_2023_1_weekly_rewards_token/body"
+msgstr "A special currency awarded for completing the last weekly mission."
+
+msgid "awardItem/comp7_2023_1_weekly_rewards_token/header"
+msgstr "Lucky Chip"
 
 msgid "awardItem/completionTokens/body"
 msgstr "A set of components required for award vehicle assembly."
@@ -1331,6 +1292,12 @@ msgstr ""
 msgid "awardItem/crystal/header"
 msgstr "Bonds"
 
+msgid "awardItem/equipCoin/body"
+msgstr "Components are needed for upgrading Experimental Equipment."
+
+msgid "awardItem/equipCoin/header"
+msgstr "Components"
+
 msgid "awardItem/eventCoin/body"
 msgstr ""
 "Awarded for completing Anniversary Missions during the Active Phase and "
@@ -1339,6 +1306,18 @@ msgstr ""
 
 msgid "awardItem/eventCoin/header"
 msgstr "Anniversary Coins"
+
+msgid "awardItem/excluded_map/body"
+msgstr "An additional slot for excluded maps."
+
+msgid "awardItem/excluded_map/header"
+msgstr "Excluded Map"
+
+msgid "awardItem/exclusive_vehicle/body"
+msgstr "The TS-54 heavy tank, exclusive to WoT Plus."
+
+msgid "awardItem/exclusive_vehicle/header"
+msgstr "Exclusive Vehicle"
 
 msgid "awardItem/freeTokens/body"
 msgstr ""
@@ -1360,6 +1339,12 @@ msgstr "An increased multiplier for Free Experience earned in a battle."
 msgid "awardItem/freeXPFactor/header"
 msgstr "Free Experience Multiplier"
 
+msgid "awardItem/free_equipment_demounting/body"
+msgstr "Demount equipment for free and use it again."
+
+msgid "awardItem/free_equipment_demounting/header"
+msgstr "Free Equipment Demounting"
+
 msgid "awardItem/gold/body"
 msgstr ""
 "A valuable in-game currency. You can use it to purchase WoT Premium Account, "
@@ -1368,11 +1353,23 @@ msgstr ""
 msgid "awardItem/gold/header"
 msgstr "Gold"
 
+msgid "awardItem/gold_bank/body"
+msgstr "Earn up to %(goldReserveCapacity)s gold every week."
+
+msgid "awardItem/gold_bank/header"
+msgstr "Gold Reserve"
+
 msgid "awardItem/groups/body"
 msgstr "An additional reward."
 
 msgid "awardItem/groups/header"
 msgstr "Reward"
+
+msgid "awardItem/idle_crew_xp/body"
+msgstr "A constant bonus to Crew XP."
+
+msgid "awardItem/idle_crew_xp/header"
+msgstr "Intensive Crew Regimen"
 
 msgid "awardItem/oneof/body"
 msgstr ""
@@ -1410,8 +1407,8 @@ msgstr "Days of Premium Account"
 
 msgid "awardItem/premium_plus/body"
 msgstr ""
-"A special account status that gives you more credits and experience, as well "
-"as providing additional options."
+"A special account status that gives you more credits and experience and "
+"provides additional options."
 
 msgid "awardItem/premium_plus/header"
 msgstr "WoT Premium Account"
@@ -1579,7 +1576,7 @@ msgid "barracks/tankmen/recovery/header"
 msgstr "Crew Member Dismissed"
 
 msgid "barracks/tankmen/recovery/newSkill"
-msgstr "Skills/perks not selected"
+msgstr "Perks not selected"
 
 msgid "barracks/tankmen/recoveryBtn/header"
 msgstr "Recover Crew Member"
@@ -1604,9 +1601,6 @@ msgstr "Directives <span>will not work</span>:"
 
 msgid "battleBooster/crew"
 msgstr "Directives"
-
-msgid "battleBooster/installationEffects"
-msgstr "Effect from mounting"
 
 msgid "battleBooster/inventoryCount"
 msgstr "In stock"
@@ -1701,7 +1695,7 @@ msgstr ""
 "by clicking the Claim Reward button above the Stage."
 
 msgid "battlePassOffer/footer/recertification_gift"
-msgstr "Resets all skills for free"
+msgstr "Resets all perks for free"
 
 msgid "battlePassOffer/footer/trophy_gift"
 msgstr ""
@@ -1721,7 +1715,7 @@ msgid "battlePassOffer/title/guide_gift"
 msgstr "Training Guides to Select From"
 
 msgid "battlePassOffer/title/new_device_fv_gift"
-msgstr "Equipment to Select From"
+msgstr "Standard Equipment to Select From"
 
 msgid "battlePassOffer/title/new_device_mi_gift"
 msgstr "Equipment to Select From"
@@ -1885,22 +1879,26 @@ msgstr "Event starts in"
 msgid "battleTypes/battleRoyale/tillStartCycle"
 msgstr "Starts in:"
 
-msgid "battleTypes/battleTeaching/body"
-msgstr ""
-"Apply everything you have learned from Battle Training in a battle against "
-"bots on the %(map1)s map.\n"
-"• Note: after you have fought %(battles)d battles (of any type) on your "
-"account, you will not earn credits or experience in this mode.\n"
-"• Tiers allowed: I–II."
+msgid "battleTypes/battleRoyale/widget/body2"
+msgstr "Complete Steel Hunter missions to earn Progression Points."
 
-msgid "battleTypes/battleTeaching/header"
-msgstr "Proving Ground"
+msgid "battleTypes/battleRoyale/widget/tillEnd"
+msgstr "Episode ends in:"
 
-msgid "battleTypes/battleTutorial/body"
-msgstr "Learn to drive your tank and destroy enemy vehicles."
+msgid "battleTypes/battleRoyale/widget/timeTable/empty"
+msgstr "—"
 
-msgid "battleTypes/battleTutorial/header"
-msgstr "Battle Training"
+msgid "battleTypes/battleRoyale/widget/timeTable/time"
+msgstr "%(start)s–%(end)s"
+
+msgid "battleTypes/battleRoyale/widget/timeTable/title"
+msgstr "Battle Schedule"
+
+msgid "battleTypes/battleRoyale/widget/today"
+msgstr "today"
+
+msgid "battleTypes/battleRoyale/widget/tomorrow"
+msgstr "tomorrow"
 
 msgid "battleTypes/epic_training/body"
 msgstr ""
@@ -2661,11 +2659,102 @@ msgstr "Effective for %(time)s."
 msgid "boostersPanel/openBoostersWindow/body"
 msgstr "Click to select and activate Personal Reserves."
 
+msgid "boostersWindow/booster/activateInfo/activation"
+msgstr "Activation:"
+
+msgid "boostersWindow/booster/activateInfo/activationInfo"
+msgstr ""
+"Can be activated in the Garage or during battle by pressing the TAB or B "
+"keys. The bonus applies to Random Battles, tournaments, and both the Steel "
+"Hunter and Frontline modes."
+
+msgid "boostersWindow/booster/activateInfo/basicReserve"
+msgstr "Standard Personal Reserve"
+
+msgid "boostersWindow/booster/activateInfo/bonus"
+msgstr "Bonus:"
+
+msgid "boostersWindow/booster/activateInfo/bonusTimeInfo"
+msgstr ""
+"You will receive the bonus if you enter a battle before the Personal Reserve "
+"expires."
+
+msgid "boostersWindow/booster/activateInfo/bonusValueTime/booster_credits"
+msgstr "%(effectValue)s to credits earned in battle for %(effectTime)s"
+
+msgid "boostersWindow/booster/activateInfo/bonusValueTime/booster_crew_xp"
+msgstr "%(effectValue)s to Crew XP earned in battle for %(effectTime)s"
+
+msgid "boostersWindow/booster/activateInfo/bonusValueTime/booster_fl_xp"
+msgstr "%(effectValue)s to Frontline XP earned in battle for %(effectTime)s"
+
+msgid "boostersWindow/booster/activateInfo/bonusValueTime/booster_free_xp"
+msgstr "%(effectValue)s to Free XP earned in battle for %(effectTime)s"
+
+msgid ""
+"boostersWindow/booster/activateInfo/bonusValueTime/"
+"booster_free_xp_and_crew_xp"
+msgstr ""
+"%(effectValue)s to Free and Crew XP earned in battle for %(effectTime)s"
+
+msgid "boostersWindow/booster/activateInfo/bonusValueTime/booster_xp"
+msgstr "%(effectValue)s to Combat XP earned in battle for %(effectTime)s"
+
+msgid "boostersWindow/booster/activateInfo/clanReserveReceiveInfo"
+msgstr ""
+"Clan Reserves are prepared in Stronghold structures or can be earned in War "
+"Games."
+
 msgid "boostersWindow/booster/activateInfo/description"
-msgstr "In Depot, in the Personal Reserves section."
+msgstr "On the Personal Reserves Activation screen."
+
+msgid "boostersWindow/booster/activateInfo/improvedReserve"
+msgstr "Improved Personal Reserve"
+
+msgid "boostersWindow/booster/activateInfo/inDepot"
+msgstr "In Depot"
+
+msgid "boostersWindow/booster/activateInfo/nonPaidReceiveInfo"
+msgstr ""
+"Complete missions and participate in game events to earn Personal Reserves."
+
+msgid "boostersWindow/booster/activateInfo/notActivated"
+msgstr "Not activated"
+
+msgid "boostersWindow/booster/activateInfo/notEnough"
+msgstr "required:"
+
+msgid "boostersWindow/booster/activateInfo/paidReceiveInfo"
+msgstr ""
+"You can purchase Improved Personal Reserves in the Premium Shop or in the "
+"Store."
+
+msgid "boostersWindow/booster/activateInfo/purchase"
+msgstr "Purchase"
+
+msgid "boostersWindow/booster/activateInfo/receive"
+msgstr "Acquisition Method"
 
 msgid "boostersWindow/booster/activateInfo/title"
 msgstr "Activation:"
+
+msgid "boostersWindow/booster/activateInfo/title/booster_credits"
+msgstr "Credits"
+
+msgid "boostersWindow/booster/activateInfo/title/booster_crew_xp"
+msgstr "Crew XP"
+
+msgid "boostersWindow/booster/activateInfo/title/booster_fl_xp"
+msgstr "Frontline XP"
+
+msgid "boostersWindow/booster/activateInfo/title/booster_free_xp"
+msgstr "Free XP"
+
+msgid "boostersWindow/booster/activateInfo/title/booster_free_xp_and_crew_xp"
+msgstr "Free & Crew XP"
+
+msgid "boostersWindow/booster/activateInfo/title/booster_xp"
+msgstr "Combat XP"
 
 msgid "boostersWindow/booster/active/title"
 msgstr "Activated"
@@ -2725,23 +2814,20 @@ msgstr ""
 "Random Battles, Ranked Battles, special tournaments, and both Steel Hunter "
 "and Frontline modes."
 
-msgid "boostersWindow/booster/quality/big"
-msgstr "(Large)"
-
-msgid "boostersWindow/booster/quality/medium"
-msgstr "(Medium)"
-
-msgid "boostersWindow/booster/quality/small"
-msgstr "(Small)"
-
 msgid "boostersWindow/booster/shortDescriptionSpecial"
 msgstr "Additional bonuses after each battle"
+
+msgid "buyFreeSkill/header"
+msgstr "Perks Available for Training"
+
+msgid "buyFreeSkill/infoButton"
+msgstr "Click to learn more about crew zero perks."
 
 msgid "buySkill/fully"
 msgstr "%(count)s (Fully)"
 
 msgid "buySkill/header"
-msgstr "Skills Available for Training"
+msgstr "Perks Available for Training"
 
 msgid "buySkill/partly"
 msgstr "%(count)s (Partly)"
@@ -2752,7 +2838,7 @@ msgstr ""
 "players from the following categories: Friends and Permanent Tactical Units."
 
 msgid "chatContactsListOnly/header"
-msgstr "Receive Messages Only from Contact List"
+msgstr "Receive Messages Only From Contact List"
 
 msgid "clanCommonInfo/ClanName"
 msgstr "Clan [%(clanAbbrev)s] %(clanName)s"
@@ -2941,7 +3027,7 @@ msgid "crewBooks/tankman/skill/lowGainedXp"
 msgstr "Rounded to 1/100 of percent."
 
 msgid "crewBundle/bonus/anyAdditionalSkill"
-msgstr "Enough experience to train one perk or skill to 100%."
+msgstr "Enough experience to train one perk to 100%."
 
 msgid "crewBundle/bonus/basicRoleBoost_100"
 msgstr "100% trained major qualification."
@@ -3783,7 +3869,7 @@ msgstr ""
 msgid "dismissTankmanDialog/cantRestorAlert/body"
 msgstr ""
 "After dismissal, you can recover only three crew members with at least one "
-"100% trained skill/perk."
+"perk trained to 100%."
 
 msgid "dismissTankmanDialog/cantRestorAlert/header"
 msgstr "Remove Forever"
@@ -3799,7 +3885,7 @@ msgstr ""
 "your Garage as soon as they are ready for battle."
 
 msgid "displayPlatoonMembers/header"
-msgstr "Display vehicles of Platoon members in the Garage"
+msgstr "Display Vehicles of Platoon Members in the Garage"
 
 msgid "elen/ancor/allGroups/body"
 msgstr "Click to go to this group's positions."
@@ -4886,7 +4972,7 @@ msgid "equipment/restriction"
 msgstr "Restriction:"
 
 msgid "event/squad/disable/body"
-msgstr "Select a Harriers' vehicle"
+msgstr "To join the event, select the %(tankName)s"
 
 msgid "event/squad/disable/header"
 msgstr "Attention!"
@@ -5027,7 +5113,7 @@ msgstr "Not ready"
 msgid "fortification/sortie/bothRole/body"
 msgstr ""
 "This player can direct Artillery Strike at the selected area and add a bonus "
-"to major qualifications and all skills for the entire crew of their vehicle, "
+"to major qualifications and all perks for the entire crew of their vehicle, "
 "as well as the crews of nearby allied vehicles, if the Artillery Strike and "
 "Inspire Reserves were mounted before the battle."
 
@@ -5066,7 +5152,7 @@ msgstr "Artillery Strike"
 
 msgid "fortification/sortie/inspireRole/body"
 msgstr ""
-"This player can add a bonus to major qualifications and all skills for the "
+"This player can add a bonus to major qualifications and all perks for the "
 "entire crew of their vehicle, as well as the crews of nearby allied "
 "vehicles, if the Inspire Reserve was mounted before the battle."
 
@@ -5258,8 +5344,8 @@ msgstr "Unavailable"
 msgid "hangar/ammo_panel/battleBooster/empty/body"
 msgstr ""
 "Place for directives that increase the efficiency of mounted equipment and "
-"crew skills or perks. If the skill or perk is not trained, the directive "
-"boosts the effect to 100%."
+"crew perks. If the perk is not trained, the directive boosts the effect to "
+"100%."
 
 msgid "hangar/ammo_panel/battleBooster/empty/header"
 msgstr "Directives Slot"
@@ -5295,14 +5381,23 @@ msgstr "Consumables Slot"
 msgid "hangar/crew/assignedTo"
 msgstr "Vehicle"
 
+msgid "hangar/crew/commanderFeature"
+msgstr "Commander feature:"
+
+msgid "hangar/crew/freeSkills"
+msgstr "Zero perks:"
+
 msgid "hangar/crew/moreskills"
-msgstr "and more skills/perks: %(skill_cnt)s"
+msgstr "and more perks: %(skill_cnt)s"
+
+msgid "hangar/crew/new_free_skill_available/header"
+msgstr "New zero perk available"
 
 msgid "hangar/crew/new_skill_available/header"
-msgstr "New perk/skill available"
+msgstr "New perk available"
 
 msgid "hangar/crew/new_skill_available/text"
-msgstr "Learn this perk/skill in Personal File"
+msgstr "Learn this perk in Personal File"
 
 msgid "hangar/crew/rudy/dog/poland/body"
 msgstr ""
@@ -5323,7 +5418,7 @@ msgid "hangar/crew/rudy/dog/ussr/header"
 msgstr "Szarik"
 
 msgid "hangar/crew/specialty_skills"
-msgstr "Major qualification, skills, perks"
+msgstr "Perks:"
 
 msgid "hangar/elen/bottom/allperiphery/body"
 msgstr ""
@@ -5479,6 +5574,12 @@ msgstr ""
 msgid "hangar/header/personalMissions/operation_disabled/header"
 msgstr "Operation Unavailable"
 
+msgid "hangar/header/personalMissions/unavailable/body"
+msgstr "Personal Missions are unavailable in %(modeName)s."
+
+msgid "hangar/header/personalMissions/unavailable/header"
+msgstr "No Available Missions"
+
 msgid "hangar/header/personalMissions2/completedLockedNext/body"
 msgstr ""
 "Complete missions for other vehicle types to unlock the next operation."
@@ -5596,6 +5697,12 @@ msgstr "You need to rent a vehicle."
 msgid "hangar/startBtn/battleRoyale/notRented/header"
 msgstr "Unavailable"
 
+msgid "hangar/startBtn/battleRoyale/telecomRentalIsOver/body"
+msgstr "Select another vehicle."
+
+msgid "hangar/startBtn/battleRoyale/telecomRentalIsOver/header"
+msgstr "Vehicle Unavailable"
+
 msgid "hangar/startBtn/battleRoyaleSquadNotReady/notReady/body"
 msgstr ""
 "To join the battle, all Platoon members should confirm that they are ready."
@@ -5622,20 +5729,8 @@ msgstr "Select a map to enter a battle."
 msgid "hangar/startBtn/mapsTraining/notReady/header"
 msgstr "Unavailable"
 
-msgid "hangar/startBtn/noTicket/body"
-msgstr "You need a Key to enter battle in the Blitzträger auf E 110"
-
-msgid "hangar/startBtn/noTicket/header"
-msgstr "Unable to Enter Battle"
-
 msgid "hangar/startBtn/preview/body"
 msgstr "Go back to the Garage to select a vehicle and enter a battle."
-
-msgid "hangar/startBtn/primeNotAvailable/body"
-msgstr "Curfew is in effect on this server. Please select another server."
-
-msgid "hangar/startBtn/primeNotAvailable/header"
-msgstr "Unable to Enter Battle"
 
 msgid "hangar/startBtn/squadNotReady/body"
 msgstr "To join the battle, select a vehicle and confirm that you are ready."
@@ -5677,8 +5772,8 @@ msgstr "Exterior"
 
 msgid "hangar/unlockButton/body"
 msgstr ""
-"Click to open research window\n"
-"of current vehicle."
+"Click to open the research window\n"
+"of the current vehicle."
 
 msgid "hangar/unlockButton/header"
 msgstr "Research"
@@ -5836,13 +5931,19 @@ msgstr "The name and crew member image can be changed here."
 msgid "hangarTutorial/personalCase/additional/documentsTitle"
 msgstr "Personal Data"
 
+msgid "hangarTutorial/personalCase/additional/freePerksDescription"
+msgstr "The list of zero perks is displayed here."
+
+msgid "hangarTutorial/personalCase/additional/freePerksTitle"
+msgstr "Zero Perks"
+
 msgid "hangarTutorial/personalCase/additional/perksDescription"
 msgstr ""
-"The list of skills and perks that the crew member has not yet been trained "
-"for is displayed here."
+"The list of perks that the crew member has not yet been trained for is "
+"displayed here."
 
 msgid "hangarTutorial/personalCase/additional/perksTitle"
-msgstr "Skills"
+msgstr "Perks"
 
 msgid "hangarTutorial/personalCase/additional/recordDescription"
 msgstr ""
@@ -5861,19 +5962,30 @@ msgstr ""
 msgid "hangarTutorial/personalCase/additional/trainingTitle"
 msgstr "Training"
 
+msgid "hangarTutorial/personalCase/freeSkills/headerDescription"
+msgstr "Crew member's zero perks are displayed here. They cannot be changed."
+
+msgid "hangarTutorial/personalCase/freeSkills/newPerkDescription"
+msgstr "Click to select a zero perk for training."
+
+msgid "hangarTutorial/personalCase/freeSkills/newPerkTitle"
+msgstr "Train Zero Perk"
+
+msgid "hangarTutorial/personalCase/freeSkills/title"
+msgstr "Zero Perks"
+
 msgid "hangarTutorial/personalCase/perks/headerDescription"
 msgstr ""
-"Additional skills and perks, trained or being trained at the moment, are "
-"displayed here."
+"Additional perks, trained or being trained at the moment, are displayed here."
 
 msgid "hangarTutorial/personalCase/perks/newPerkDescription"
-msgstr "Click to select skills and perks for training."
+msgstr "Click to select perks for training."
 
 msgid "hangarTutorial/personalCase/perks/newPerkTitle"
-msgstr "Train Skill or Perk"
+msgstr "Train a Perk"
 
 msgid "hangarTutorial/personalCase/perks/title"
-msgstr "Crew Member Skills and Perks"
+msgstr "Crew Member Perks"
 
 msgid "hangarTutorial/personalCase/skills/headerDescription"
 msgstr "Crew Member Details"
@@ -5881,9 +5993,8 @@ msgstr "Crew Member Details"
 msgid "hangarTutorial/personalCase/skills/specialtyDescription"
 msgstr ""
 "The higher the level of major qualification, the better the crew member's "
-"performance. After training your crew to 100% in their major qualification, "
-"additional perks and skills become available. The base maximum of 100% can "
-"be increased using certain equipment and consumables."
+"performance. The base maximum of 100% can be increased using certain "
+"equipment and consumables."
 
 msgid "hangarTutorial/personalCase/skills/specialtyTitle"
 msgstr "Major Qualification Level"
@@ -6038,6 +6149,22 @@ msgstr "Bonds"
 msgid "header/buttons/crystal/title"
 msgstr "Bonds"
 
+msgid "header/buttons/equipCoin/description0"
+msgstr ""
+"%(equipCoin)s can be received for disassembling Experimental Equipment."
+
+msgid "header/buttons/equipCoin/description1"
+msgstr "Components are needed for upgrading Experimental Equipment."
+
+msgid "header/buttons/equipCoin/descriptionEquipCoin"
+msgstr "Components"
+
+msgid "header/buttons/equipCoin/descriptionTitle"
+msgstr "How to Receive:"
+
+msgid "header/buttons/equipCoin/title"
+msgstr "Components"
+
 msgid "header/buttons/forts/body"
 msgstr "Go to your clan information."
 
@@ -6174,6 +6301,12 @@ msgstr "Discounts are applied to the vehicles of the following nations:"
 msgid "header/buttons/techtree/header"
 msgstr "Tech Tree"
 
+msgid "header/buttons/tournaments/body"
+msgstr "See Tournaments and Challenges"
+
+msgid "header/buttons/tournaments/header"
+msgstr "Tournaments"
+
 msgid "header/eliteIcon/body"
 msgstr ""
 "A vehicle with all tech branches fully researched.\n"
@@ -6268,26 +6401,54 @@ msgstr ""
 msgid "hullLockEnabled/header"
 msgstr "Automatic Hull Lock in Sniper Mode"
 
-msgid "idle_crew_tooltip/activateButton"
-msgstr "Click to activate Intensive Crew Regimen"
+msgid "idle_crew_tooltip/activatedWoTPlusNeeded"
+msgstr "Activated WoT Plus needed"
 
-msgid "idle_crew_tooltip/activeStatus"
-msgstr "Active"
+msgid "idle_crew_tooltip/bonusLabel"
+msgstr "WoT Plus Benefit"
 
 msgid "idle_crew_tooltip/boostLabel"
-msgstr "Continous Crew XP bonus"
+msgstr "Selected vehicle receives a constant Crew XP bonus"
+
+msgid "idle_crew_tooltip/currentlyActiveOn"
+msgstr "Currently active on:"
 
 msgid "idle_crew_tooltip/description"
 msgstr ""
-"The crew of the selected vehicle receives a constant Crew XP bonus every "
-"hour. The bonus is the same for each crew member, regardless of the vehicle "
-"or number of crew members."
+"The crew of the selected vehicle receives a constant Crew XP bonus. The "
+"bonus is the same for each crew member, regardless of the number of crew "
+"members. Note: The bonus is not applied to special vehicles and unsuitable "
+"crew members."
+
+msgid "idle_crew_tooltip/every5minutes"
+msgstr "/ every 5 minutes"
 
 msgid "idle_crew_tooltip/heading"
 msgstr "Intensive Crew Regimen"
 
-msgid "idle_crew_tooltip/perHour"
-msgstr "/ Hour"
+msgid "idle_crew_tooltip/status/active/description"
+msgstr "Selected vehicle receives a constant Crew XP bonus"
+
+msgid "idle_crew_tooltip/status/active/label"
+msgstr "Active"
+
+msgid "idle_crew_tooltip/status/inactive/anotherVehicleIsSelected"
+msgstr "Currently active on the %(vehicleName)"
+
+msgid "idle_crew_tooltip/status/inactive/description"
+msgstr "Click to enable Intensive Crew Regimen"
+
+msgid "idle_crew_tooltip/status/inactive/label"
+msgstr "Inactive"
+
+msgid "idle_crew_tooltip/status/unavailable/description/incompatibleVehicle"
+msgstr "Incompatible Vehicle"
+
+msgid "idle_crew_tooltip/status/unavailable/description/subscriptionIsRequired"
+msgstr "WoT Plus Required"
+
+msgid "idle_crew_tooltip/status/unavailable/label"
+msgstr "Disabled"
 
 msgid "idle_crew_tooltip/warningHeader"
 msgstr "Current Restrictions:"
@@ -6424,6 +6585,12 @@ msgstr "View, add, and delete contacts."
 msgid "loby_messenger/contacts_button/header"
 msgstr "Contacts"
 
+msgid "loby_messenger/listView/news/tooltip/body"
+msgstr "Important and interesting changes in the game, all in one place."
+
+msgid "loby_messenger/listView/news/tooltip/header"
+msgstr "What's New?"
+
 msgid "loby_messenger/new/channels_carousel_button_left/body"
 msgstr "You have new messages."
 
@@ -6558,7 +6725,7 @@ msgstr ""
 "in the login dropdown menu uses our algorithm to select the optimal server."
 
 msgid "loginServerSelection/header"
-msgstr "Display server selection upon game launch"
+msgstr "Display Server Selection Upon Game Launch"
 
 msgid "marathon/body"
 msgstr ""
@@ -6782,6 +6949,13 @@ msgstr "Battles in Qualification: %(current)s / %(max)s"
 msgid "mode_selector/unavailable/bootcamp"
 msgstr "Unavailable in Bootcamp."
 
+msgid "mode_selector/unavailable/notVehicles/level"
+msgstr "Tier %(levels)s"
+
+msgid "mode_selector/unavailable/notVehicles/text"
+msgstr ""
+"You need at least one %(vehicles)s vehicle to participate in mode battles."
+
 msgid "mode_selector/unavailable/techProblems"
 msgstr "Temporarily unavailable for technical reasons."
 
@@ -6790,6 +6964,9 @@ msgstr "item(s)"
 
 msgid "moduleFits/already_installed/header"
 msgstr "Mounted on:"
+
+msgid "moduleFits/already_installed/hiddenVehicleCount"
+msgstr "and additional %(count)s"
 
 msgid "moduleFits/battleBooster/cannotBuy/description"
 msgstr ""
@@ -6815,13 +6992,14 @@ msgstr ""
 "Earn them in battles, sell surplus items from your storage, or exchange Gold "
 "to acquire more."
 
-msgid "moduleFits/deluxeEquipment/cannotBuy/description"
-msgstr ""
-"This type of equipment can be received as a reward during special game "
-"events."
+msgid "moduleFits/deconstruct/modernized/description"
+msgstr "(will be received)"
 
-msgid "moduleFits/deluxeEquipment/cannotBuy/header"
-msgstr "This equipment cannot be purchased"
+msgid "moduleFits/deconstruct/modernized/price"
+msgstr "Disassembly Level %(level)s"
+
+msgid "moduleFits/deconstruct/price"
+msgstr "Disassembly"
 
 msgid "moduleFits/dismantling"
 msgstr ""
@@ -6835,6 +7013,12 @@ msgid "moduleFits/duplicated/note"
 msgstr ""
 "Equipment that provides a similar effect has already been mounted on the "
 "vehicle."
+
+msgid "moduleFits/equipcoin_error/header"
+msgstr "Not Enough Components"
+
+msgid "moduleFits/equipcoin_error/text"
+msgstr "To get more components, disassemble unused Experimental Equipment."
 
 msgid "moduleFits/gold_error/header"
 msgstr "Not enough gold."
@@ -6885,13 +7069,19 @@ msgstr ""
 "Currently mounted: %(moduleName)s. Replacing the equipment will change the "
 "following characteristics:"
 
+msgid "moduleFits/similar_device_already_installed/header"
+msgstr "Unable to Mount"
+
+msgid "moduleFits/similar_device_already_installed/text"
+msgstr ""
+"Equipment that provides a similar effect has already been mounted on the "
+"vehicle."
+
 msgid "moduleFits/too_heavy/header"
 msgstr "Unable to mount."
 
 msgid "moduleFits/too_heavy/text"
-msgstr ""
-"This equipment requires suspension\n"
-"with higher load capacity."
+msgstr "This equipment requires suspension with higher load capacity."
 
 msgid "moduleFits/too_heavy_chassi/header"
 msgstr "Unable to mount. Higher load capacity required."
@@ -6905,35 +7095,24 @@ msgstr "Modules are too heavy"
 msgid "moduleFits/too_heavy_chassis/text"
 msgstr "Consider lightening the vehicle."
 
-msgid "moduleFits/trophyEquipment/basic/description"
-msgstr ""
-"You can upgrade Bounty Equipment characteristics using in-game currency."
-
-msgid "moduleFits/trophyEquipment/basic/header"
-msgstr "Upgrading Bounty Equipment"
-
-msgid "moduleFits/trophyEquipment/cannotBuy/description"
-msgstr ""
-"This type of equipment can be received as a reward during special game "
-"events."
-
-msgid "moduleFits/trophyEquipment/cannotBuy/header"
-msgstr "Bounty Equipment cannot be purchased"
-
-msgid "moduleFits/trophyEquipment/upgraded/description"
-msgstr "This type of equipment provides the maximum bonus."
-
-msgid "moduleFits/trophyEquipment/upgraded/header"
-msgstr "Bounty Equipment Upgraded"
-
 msgid "moduleFits/unlock_error/header"
 msgstr "The module is not researched."
 
 msgid "moduleFits/unlock_error/text"
 msgstr "Research the module."
 
+msgid "moduleFits/upgradable/modernized/price"
+msgstr "Upgrade Level %(level)s"
+
 msgid "moduleFits/upgradable/price"
 msgstr "Upgrade"
+
+msgid "moduleFits/useless_battle_booster/header"
+msgstr "Directive Has No Effect"
+
+msgid "moduleFits/useless_battle_booster/text"
+msgstr ""
+"The directive will only work if you have the corresponding equipment mounted."
 
 msgid "moduleFits/wrong_slot/body"
 msgstr "The module is already in another slot."
@@ -6964,300 +7143,300 @@ msgstr "A unique crew member"
 
 msgid "notrecruitedtankman/bob20_commander1_asia/desc"
 msgstr ""
-"Awarded during the Dynasty Wars 2020 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the rank of the "
-"player's team at the end of the event."
+"Awarded during the Dynasty Wars 2020 event. This Commander comes with a "
+"choice of zero perk and enough experience to train additional perks to 100%. "
+"The amount of experience depends on the rank of the player's team at the end "
+"of the event."
 
 msgid "notrecruitedtankman/bob20_commander1_asia/label"
 msgstr "Dynasty Wars 2020"
 
 msgid "notrecruitedtankman/bob20_commander1_eu/desc"
 msgstr ""
-"Awarded during the Team Clash 2020 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the rank of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2020 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob20_commander1_eu/label"
 msgstr "Team Clash 2020"
 
 msgid "notrecruitedtankman/bob20_commander1_na/desc"
 msgstr ""
-"Awarded during the Dynasty Wars 2020 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the rank of the "
-"player's team at the end of the event."
+"Awarded during the Dynasty Wars 2020 event. This Commander comes with a "
+"choice of zero perk and enough experience to train additional perks to 100%. "
+"The amount of experience depends on the rank of the player's team at the end "
+"of the event."
 
 msgid "notrecruitedtankman/bob20_commander1_na/label"
 msgstr "Dynasty Wars 2020"
 
 msgid "notrecruitedtankman/bob20_commander1_ru/desc"
 msgstr ""
-"Awarded during the Team Clash 2020 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the rank of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2020 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob20_commander1_ru/label"
 msgstr "Team Clash 2020"
 
 msgid "notrecruitedtankman/bob20_commander2_asia/desc"
 msgstr ""
-"Awarded during the Dynasty Wars 2020 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the rank of the "
-"player's team at the end of the event."
+"Awarded during the Dynasty Wars 2020 event. This Commander comes with a "
+"choice of zero perk and enough experience to train additional perks to 100%. "
+"The amount of experience depends on the rank of the player's team at the end "
+"of the event."
 
 msgid "notrecruitedtankman/bob20_commander2_asia/label"
 msgstr "Dynasty Wars 2020"
 
 msgid "notrecruitedtankman/bob20_commander2_eu/desc"
 msgstr ""
-"Awarded during the Team Clash 2020 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the rank of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2020 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob20_commander2_eu/label"
 msgstr "Team Clash 2020"
 
 msgid "notrecruitedtankman/bob20_commander2_na/desc"
 msgstr ""
-"Awarded during the Dynasty Wars 2020 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the rank of the "
-"player's team at the end of the event."
+"Awarded during the Dynasty Wars 2020 event. This Commander comes with a "
+"choice of zero perk and enough experience to train additional perks to 100%. "
+"The amount of experience depends on the rank of the player's team at the end "
+"of the event."
 
 msgid "notrecruitedtankman/bob20_commander2_na/label"
 msgstr "Dynasty Wars 2020"
 
 msgid "notrecruitedtankman/bob20_commander2_ru/desc"
 msgstr ""
-"Awarded during the Team Clash 2020 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the rank of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2020 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob20_commander2_ru/label"
 msgstr "Team Clash 2020"
 
 msgid "notrecruitedtankman/bob20_commander3_eu/desc"
 msgstr ""
-"Awarded during the Team Clash 2020 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the rank of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2020 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob20_commander3_eu/label"
 msgstr "Team Clash 2020"
 
 msgid "notrecruitedtankman/bob20_commander3_ru/desc"
 msgstr ""
-"Awarded during the Team Clash 2020 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the rank of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2020 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob20_commander3_ru/label"
 msgstr "Team Clash 2020"
 
 msgid "notrecruitedtankman/bob20_commander4_eu/desc"
 msgstr ""
-"Awarded during the Team Clash 2020 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the rank of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2020 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob20_commander4_eu/label"
 msgstr "Team Clash 2020"
 
 msgid "notrecruitedtankman/bob20_commander4_ru/desc"
 msgstr ""
-"Awarded during the Team Clash 2020 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the rank of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2020 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob20_commander4_ru/label"
 msgstr "Team Clash 2020"
 
 msgid "notrecruitedtankman/bob21_commander_asia1_Mastertortoise/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_asia1_Mastertortoise/label"
 msgstr "Team Clash 2021"
 
 msgid "notrecruitedtankman/bob21_commander_asia2_Summertiger/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_asia2_Summertiger/label"
 msgstr "Team Clash 2021"
 
 msgid "notrecruitedtankman/bob21_commander_asia3_Maharlika/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_asia3_Maharlika/label"
 msgstr "Team Clash 2021"
 
 msgid "notrecruitedtankman/bob21_commander_eu1_Circon/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_eu1_Circon/label"
 msgstr "Team Clash 2021"
 
 msgid "notrecruitedtankman/bob21_commander_eu2_Dakillzor/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_eu2_Dakillzor/label"
 msgstr "Team Clash 2021"
 
 msgid "notrecruitedtankman/bob21_commander_eu3_Newmulti2k/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_eu3_Newmulti2k/label"
 msgstr "Team Clash 2021"
 
 msgid "notrecruitedtankman/bob21_commander_eu4_Orzanel/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_eu4_Orzanel/label"
 msgstr "Team Clash 2021"
 
 msgid "notrecruitedtankman/bob21_commander_na1_Cabbagemechanic/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_na1_Cabbagemechanic/label"
 msgstr "Team Clash 2021"
 
 msgid "notrecruitedtankman/bob21_commander_na2_Tragicloss/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_na2_Tragicloss/label"
 msgstr "Team Clash 2021"
 
 msgid "notrecruitedtankman/bob21_commander_na3_Cmdraf/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_na3_Cmdraf/label"
 msgstr "Team Clash 2021"
 
 msgid "notrecruitedtankman/bob21_commander_ru1_Vspishka/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_ru1_Vspishka/label"
 msgstr "Team Clash 2021"
 
 msgid "notrecruitedtankman/bob21_commander_ru1_Yusha/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_ru1_Yusha/label"
 msgstr "Team Clash 2021"
 
 msgid "notrecruitedtankman/bob21_commander_ru2_Amway921/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_ru2_Amway921/label"
 msgstr "Team Clash 2021"
 
 msgid "notrecruitedtankman/bob21_commander_ru2_Korbendailas/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_ru2_Korbendailas/label"
 msgstr "Team Clash 2021"
 
 msgid "notrecruitedtankman/bob21_commander_ru3_Inspirer/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_ru3_Inspirer/label"
 msgstr "Team Clash 2021"
 
 msgid "notrecruitedtankman/bob21_commander_ru3_Lebwa/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_ru3_Lebwa/label"
 msgstr "Team Clash 2021"
 
 msgid "notrecruitedtankman/bob21_commander_ru4_Evilgranny/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_ru4_Evilgranny/label"
 msgstr "Team Clash 2021"
 
 msgid "notrecruitedtankman/bob21_commander_ru4_Nearyou/desc"
 msgstr ""
-"Awarded during the Team Clash 2021 event. The commander has the Sixth "
-"Sense perk trained to 100% and enough experience to train additional perks "
-"or skills to 100%. The amount of experience depends on the place of the "
-"player's team at the end of the event."
+"Awarded during the Team Clash 2021 event. This Commander comes with a choice "
+"of zero perk and enough experience to train additional perks to 100%. The "
+"amount of experience depends on the rank of the player's team at the end of "
+"the event."
 
 msgid "notrecruitedtankman/bob21_commander_ru4_Nearyou/label"
 msgstr "Team Clash 2021"
@@ -7308,6 +7487,17 @@ msgstr ""
 
 msgid "notrecruitedtankman/ch_compensation/label"
 msgstr "A Unique Crew Member"
+
+msgid "notrecruitedtankman/commander_baroness/desc"
+msgstr ""
+"The spoiled offspring of European aristocrats, the Baroness graduated from "
+"student radicalism and eventually joined the ranks of COBRA. Her chief "
+"strength in navigating the organization's power structure is in playing high-"
+"ranking members against each other. Rumor has it she is also the only person "
+"who knows Destro's true identity."
+
+msgid "notrecruitedtankman/commander_baroness/label"
+msgstr "Unique Commander"
 
 msgid "notrecruitedtankman/commander_bingo/desc"
 msgstr ""
@@ -7374,6 +7564,16 @@ msgstr ""
 msgid "notrecruitedtankman/commander_cobra/label"
 msgstr "An Elite Recruit"
 
+msgid "notrecruitedtankman/commander_cover_girl/desc"
+msgstr ""
+"Cover Girl was initially a high fashion model in New York and Chicago who "
+"enlisted in the service, attended Armor School at Fort Knox and related "
+"technology schools, and is an expert at diesel mechanics and gas turbine "
+"technology."
+
+msgid "notrecruitedtankman/commander_cover_girl/label"
+msgstr "Unique Commander"
+
 msgid "notrecruitedtankman/commander_duke/desc"
 msgstr ""
 "A real hero, Duke is the leader of the G.I. Joe team and he's ready to take "
@@ -7382,6 +7582,17 @@ msgstr ""
 msgid "notrecruitedtankman/commander_duke/label"
 msgstr "An Elite Recruit"
 
+msgid "notrecruitedtankman/commander_ferenc/desc"
+msgstr ""
+"A tank battle is a lot like a football match. You start out neat and "
+"cautious, studying your opponents. You take the position that suits your "
+"role. You fall back if your teammates need your help. But most importantly, "
+"you're always alert, waiting for a chance to strike… And when it's there, "
+"all you need is a good shot."
+
+msgid "notrecruitedtankman/commander_ferenc/label"
+msgstr "Unique Commander"
+
 msgid "notrecruitedtankman/commander_gagarin21/desc"
 msgstr ""
 "\"Orbiting Earth in the spaceship, I saw how beautiful our planet is. "
@@ -7389,6 +7600,27 @@ msgstr ""
 
 msgid "notrecruitedtankman/commander_gagarin21/label"
 msgstr "A unique crew member"
+
+msgid "notrecruitedtankman/commander_hillen/desc"
+msgstr ""
+"I'm a big rugby fan, you know. And the minute they brought me here, I "
+"immediately felt like a fish in water. I mean, think about it. 15-on-15 "
+"scrums? Check. Different roles on the field? Check. Tactical variety? Check. "
+"Power moves? Loads of them! Too bad there's no referee—the lads here do some "
+"really crazy stuff sometimes. So I'll just take a couple more fights and "
+"head back to my place, if you don't mind, mate."
+
+msgid "notrecruitedtankman/commander_hillen/label"
+msgstr "Unique Commander"
+
+msgid "notrecruitedtankman/commander_hob/desc"
+msgstr ""
+"Knabe is a force to be reckoned with. He once pulled five tanks out of the "
+"mud with his bare hands and hardly broke a sweat! As a tank commander, he "
+"leads his team to victory—even if the team actively resists."
+
+msgid "notrecruitedtankman/commander_hob/label"
+msgstr "Unique Commander"
 
 msgid "notrecruitedtankman/commander_maeve/desc"
 msgstr ""
@@ -7406,11 +7638,25 @@ msgstr ""
 msgid "notrecruitedtankman/commander_marina/label"
 msgstr "An Elite Recruit"
 
+msgid "notrecruitedtankman/commander_nansen/desc"
+msgstr ""
+"Life, to me, is the greatest of all games. The danger lies in treating it as "
+"a trivial game, a game to be taken lightly, and a game in which the rules "
+"don't matter much. The rules matter a great deal. The game has to be played "
+"fairly, or it is no game at all. Have you not succeeded? Continue! Have you "
+"succeeded? Continue! The time to prepare for your next expedition is when "
+"you have just returned from a successful trip.\n"
+"\n"
+"*Based on quotes by Ernest Shackleton, Fridtjof Nansen, and Robert Peary."
+
+msgid "notrecruitedtankman/commander_nansen/label"
+msgstr "Unique Commander"
+
 msgid "notrecruitedtankman/commander_omelia/desc"
 msgstr ""
-"Just as we're saying farewell to the messed up 2020, Omelia Hayworth is "
-"joining the ranks of World of Tanks commanders, bringing joy and true "
-"Holiday spirit. Here’s to happy 2021!"
+"Just as we're saying farewell to a messed up 2020, Omelia Hayworth is "
+"joining the ranks of World of Tanks commanders, bringing joy and a true "
+"holiday spirit. Here's to a happy 2021!"
 
 msgid "notrecruitedtankman/commander_omelia/label"
 msgstr "An Elite Recruit"
@@ -7433,6 +7679,28 @@ msgstr ""
 msgid "notrecruitedtankman/commander_patrick/label"
 msgstr "An Elite Recruit"
 
+msgid "notrecruitedtankman/commander_quickybaby/desc"
+msgstr ""
+"QuickyBaby has been a passionate World of Tanks commander since the early "
+"days of the game. It's time for the famed content creator to join you in "
+"your Garage and lead you to victory!\n"
+"His analytical approach to the game and quick wit have earned him an ever-"
+"growing community on Twitch and YouTube and make him an excellent commander "
+"on the battlefield. Roll out together, wreak havoc, and show your enemies "
+"why QuickyBaby still has a great love for the game after all these years."
+
+msgid "notrecruitedtankman/commander_quickybaby/label"
+msgstr "Unique Commander"
+
+msgid "notrecruitedtankman/commander_rebranding/desc"
+msgstr ""
+"A brave commander perfectly skilled in the art of tank combat. In his spare "
+"time, he studies enemy tactics or plays chess. He does not lose his temper "
+"even in the most stressful of situations."
+
+msgid "notrecruitedtankman/commander_rebranding/label"
+msgstr "Unique Crew Member"
+
 msgid "notrecruitedtankman/commander_starlight/desc"
 msgstr ""
 "Her name speaks for itself. A spotless soul with the purest of intentions "
@@ -7442,6 +7710,20 @@ msgstr ""
 
 msgid "notrecruitedtankman/commander_starlight/label"
 msgstr "An Elite Recruit"
+
+msgid "notrecruitedtankman/commander_tolmeron/desc"
+msgstr ""
+"A Primaris Space Marine, Lieutenant Tolmeron is not as venerable as some "
+"veterans of his famed Сhapter, but he already has their respect. He is "
+"considered to be a bellicose exemplar of justice with unwavering loyalty to "
+"his battle brothers. The humility with which he accepts promotions and "
+"decorations—and, most of all, the ease with which he earns them—is notable. "
+"\"In combat, he moves like a drop of blood sliding down an adamantium plate: "
+"quickly, inevitably,\" say the brethren. \"The blood of Sanguinius runs "
+"noble in this one. And his battle scars adorn him.\""
+
+msgid "notrecruitedtankman/commander_tolmeron/label"
+msgstr "Unique Commander"
 
 msgid "notrecruitedtankman/commander_twitch_ermelinda/desc"
 msgstr ""
@@ -7465,8 +7747,8 @@ msgstr "Unique Commander"
 msgid "notrecruitedtankman/czech_woman/desc"
 msgstr ""
 "Awarded during particular game events. Female crew members have the Brothers "
-"in Arms perk trained to 100%, as well as one more skill or perk of your "
-"choice trained to 100%."
+"in Arms perk trained to 100%, as well as one more perk of your choice "
+"trained to 100%."
 
 msgid "notrecruitedtankman/czech_woman/event"
 msgstr "the Czech Holidays event"
@@ -7477,6 +7759,9 @@ msgstr "A unique crew member"
 msgid "notrecruitedtankman/expireTitle"
 msgstr "Recruitment"
 
+msgid "notrecruitedtankman/freeSkillsTitle"
+msgstr "Zero Perks"
+
 msgid "notrecruitedtankman/howToGet"
 msgstr "How to receive:"
 
@@ -7486,9 +7771,9 @@ msgstr ""
 "you can select:\n"
 "• nation\n"
 "• vehicle\n"
-"• qualification.\n"
-"This crew member has enough experience to train three perks or skills of "
-"your choice to 100%."
+"• qualification\n"
+"This crew member has enough experience to train three perks of your choice "
+"to 100%."
 
 msgid "notrecruitedtankman/hw19_commanders/label"
 msgstr "Mirny-13 Event"
@@ -7546,6 +7831,61 @@ msgstr "Participate in the Mirny: Hope event."
 msgid "notrecruitedtankman/hw21_commander5/label"
 msgstr "Mirny: Hope Event"
 
+msgid "notrecruitedtankman/hw22_tailrius/desc"
+msgstr ""
+"Pet him without permission, and you risk easily losing an arm. Caudamius "
+"considers himself a wild cat who came to humans of his own volition and now "
+"lives among them as equals. Thanks to his tough character, he does a great "
+"job as the radio operator for his crew of witches. In fact, his hearing "
+"alone can detect enemies at vast distances."
+
+msgid "notrecruitedtankman/hw22_tailrius/label"
+msgstr "Pumpkin Bash"
+
+msgid "notrecruitedtankman/hw22_witch_aurelia/desc"
+msgstr ""
+"After graduating from the magic academy, Aurelia von Alden surprised "
+"everyone by deciding not to return to her ancestral home. Instead, she set "
+"off to join the crew of the legendary Hammer tank and protect the world "
+"against otherworldly threats. Still, this witch tank loader is perfectly "
+"prim and proper, and, of course, always punctual."
+
+msgid "notrecruitedtankman/hw22_witch_aurelia/label"
+msgstr "Pumpkin Bash"
+
+msgid "notrecruitedtankman/hw22_witch_deirdra/desc"
+msgstr ""
+"As a young witch, Deirdre suffered the early loss of her mother. She was "
+"then raised by her father, the famous master Holgrim the Iron, designer of "
+"the legendary Hammer witch tank. Dei loves machines, speed, and cookies. Her "
+"cheerful and active nature helps her to get out of extremely difficult "
+"combat situations, while always managing to boost the morale of the entire "
+"crew."
+
+msgid "notrecruitedtankman/hw22_witch_deirdra/label"
+msgstr "Pumpkin Bash"
+
+msgid "notrecruitedtankman/hw22_witch_kordelia/desc"
+msgstr ""
+"After starting her tour of duty as a driver in the tank forces, Cordelia "
+"Astra's leadership qualities quickly propelled her into the position of "
+"commander. As a seasoned veteran of numerous military campaigns, Cordelia is "
+"responsible, calm, and tough-minded. To Cordelia, her tank crew is her "
+"family, and she will never abandon her family, no matter the situation."
+
+msgid "notrecruitedtankman/hw22_witch_kordelia/label"
+msgstr "Pumpkin Bash"
+
+msgid "notrecruitedtankman/hw22_witch_sibilla/desc"
+msgstr ""
+"Impulsive and explosive, this fire witch hates all things boring and "
+"mundane. As the youngest member of the crew, she is loved and cared for, and "
+"her antics often go unpunished. In battle, however, Sybill's hot-headedness "
+"plays an important role that makes her a vital part of the crew."
+
+msgid "notrecruitedtankman/hw22_witch_sibilla/label"
+msgstr "Pumpkin Bash"
+
 msgid "notrecruitedtankman/ny19men/desc"
 msgstr ""
 "\"Any of you players feel sad, and I swear I'll congratulate every last one "
@@ -7556,9 +7896,9 @@ msgstr "Holiday Ops 2019"
 
 msgid "notrecruitedtankman/ny19woman/desc"
 msgstr ""
-"Awarded for reaching festive atmosphere levels during the Holiday Ops 2019 "
+"Awarded for reaching Festive Atmosphere Levels during the Holiday Ops 2019 "
 "event. The female crew member has the Brothers in Arms perk trained to 100% "
-"and enough experience to train one perk or skill to 100%."
+"and enough experience to train one additional perk to 100%."
 
 msgid "notrecruitedtankman/ny19woman/label"
 msgstr "Holiday Ops 2019"
@@ -7570,7 +7910,7 @@ msgid "notrecruitedtankman/ny20defaultGirl/desc"
 msgstr ""
 "A female crew member is awarded for activating a Snow Maiden. The female "
 "crew member has the Brothers in Arms perk trained to 100% and enough "
-"experience to train one perk or skill to 100%."
+"experience to train one additional perk to 100%."
 
 msgid "notrecruitedtankman/ny20defaultGirl/howToGetInfo"
 msgstr "Reach a certain Festive Atmosphere Level and activate a Snow Maiden."
@@ -7609,7 +7949,7 @@ msgid "notrecruitedtankman/ny20woman/desc"
 msgstr ""
 "Awarded for activating a Snow Maiden during the Holiday Ops 2020 event. The "
 "female crew member has the Brothers in Arms perk trained to 100% and enough "
-"experience to train one perk or skill to 100%."
+"experience to train one additional perk to 100%."
 
 msgid "notrecruitedtankman/ny20woman/label"
 msgstr "Holiday Ops 2020"
@@ -7626,7 +7966,7 @@ msgid "notrecruitedtankman/ny21woman/desc"
 msgstr ""
 "Awarded for reaching Festive Atmosphere Levels during Holiday Ops 2021. The "
 "female crew member has the Brothers in Arms perk trained to 100% and enough "
-"experience to train one perk or skill to 100%."
+"experience to train one additional perk to 100%."
 
 msgid "notrecruitedtankman/ny21woman/label"
 msgstr "Holiday Ops 2021"
@@ -7635,7 +7975,7 @@ msgid "notrecruitedtankman/ny22defaultGirl/desc"
 msgstr ""
 "A female crew member is awarded for reaching a specific Festive Atmosphere "
 "Level. The female crew member has the Brothers in Arms perk trained to 100% "
-"and enough experience to train one perk or skill to 100%."
+"and enough experience to train one additional perk to 100%."
 
 msgid "notrecruitedtankman/ny22defaultGirl/howToGetInfo"
 msgstr "Reach a specific Festive Atmosphere Level."
@@ -7671,10 +8011,86 @@ msgid "notrecruitedtankman/ny22woman/desc"
 msgstr ""
 "Awarded for reaching a certain Festive Atmosphere Level during Holiday Ops "
 "2022. The female crew member has the Brothers in Arms perk trained to 100% "
-"and enough experience to train one additional perk or skill to 100%."
+"and enough experience to train one additional perk to 100%."
 
 msgid "notrecruitedtankman/ny22woman/label"
 msgstr "Holiday Ops 2022"
+
+msgid "notrecruitedtankman/ny23_girl_1/desc"
+msgstr ""
+"Awarded for reaching a certain Festive Atmosphere Level during Holiday Ops "
+"2023. The female crew member has the Brothers in Arms perk trained to 100% "
+"and enough experience to train one additional perk to 100%."
+
+msgid "notrecruitedtankman/ny23_girl_1/label"
+msgstr "Holiday Ops 2023"
+
+msgid "notrecruitedtankman/ny23_girl_2/desc"
+msgstr ""
+"Awarded for reaching a certain Festive Atmosphere Level during Holiday Ops "
+"2023. The female crew member has the Brothers in Arms perk trained to 100% "
+"and enough experience to train one additional perk to 100%."
+
+msgid "notrecruitedtankman/ny23_girl_2/label"
+msgstr "Holiday Ops 2023"
+
+msgid "notrecruitedtankman/ny23_girl_3/desc"
+msgstr ""
+"Awarded for reaching a certain Festive Atmosphere Level during Holiday Ops "
+"2023. The female crew member has the Brothers in Arms perk trained to 100% "
+"and enough experience to train one additional perk to 100%."
+
+msgid "notrecruitedtankman/ny23_girl_3/label"
+msgstr "Holiday Ops 2023"
+
+msgid "notrecruitedtankman/ny23_girl_4/desc"
+msgstr ""
+"Awarded for reaching a certain Festive Atmosphere Level during Holiday Ops "
+"2023. The female crew member has the Brothers in Arms perk trained to 100% "
+"and enough experience to train one additional perk to 100%."
+
+msgid "notrecruitedtankman/ny23_girl_4/label"
+msgstr "Holiday Ops 2023"
+
+msgid "notrecruitedtankman/ny23_girl_m/desc"
+msgstr ""
+"Her dashing beauty, undeniable talent, and unique, contagious laugh are "
+"Milla's unwavering companions on her victory marches down the red carpet. "
+"And the next time you catch her on the silver screen, you will likely "
+"remember the words of the scientist from Milla's most beloved movie: \"I "
+"told you ... perfect!\""
+
+msgid "notrecruitedtankman/ny23_girl_m/event"
+msgstr "Holiday Ops 2023"
+
+msgid "notrecruitedtankman/ny23_girl_m/label"
+msgstr "Holiday Ops 2023"
+
+msgid "notrecruitedtankman/ny23defaultGirl/desc"
+msgstr ""
+"A female crew member is awarded for reaching a specific Festive Atmosphere "
+"Level. The female crew member has the Brothers in Arms perk trained to 100% "
+"and enough experience to train one additional perk to 100%."
+
+msgid "notrecruitedtankman/ny23defaultGirl/howToGetInfo"
+msgstr "Reach a specific Festive Atmosphere Level."
+
+msgid "notrecruitedtankman/ny23defaultGirl/label"
+msgstr "Holiday Ops 2023"
+
+msgid "notrecruitedtankman/ny23ruby_girl_1/desc"
+msgstr ""
+"Her dashing beauty, undeniable talent, and unique, contagious laugh are "
+"Milla's unwavering companions on her victory marches down the red carpet. "
+"And the next time you catch her on the silver screen, you will likely "
+"remember the words of the scientist from Milla's most beloved movie: \"I "
+"told you ... perfect!\""
+
+msgid "notrecruitedtankman/ny23ruby_girl_1/event"
+msgstr "Holiday Ops 2023"
+
+msgid "notrecruitedtankman/ny23ruby_girl_1/label"
+msgstr "Holiday Ops 2023"
 
 msgid "notrecruitedtankman/offspring_commander/desc"
 msgstr ""
@@ -7769,7 +8185,7 @@ msgid "notrecruitedtankman/race19_commanderA/desc"
 msgstr ""
 "The driver of the racing vehicle is awarded for personal achievements during "
 "The Great Race event. The Commander has the Brothers in Arms perk trained to "
-"100% and enough experience to train two perks or skills to 100%."
+"100% and enough experience to train two additional perks to 100%."
 
 msgid "notrecruitedtankman/race19_commanderA/howToGetInfo"
 msgstr "Complete Abraham Turtle's Racing Collection."
@@ -7781,7 +8197,7 @@ msgid "notrecruitedtankman/race19_commanderB/desc"
 msgstr ""
 "The driver of the racing vehicle is awarded for personal achievements during "
 "The Great Race event. The Commander has the Brothers in Arms perk trained to "
-"100% and enough experience to train two perks or skills to 100%."
+"100% and enough experience to train two additional perks to 100%."
 
 msgid "notrecruitedtankman/race19_commanderB/howToGetInfo"
 msgstr "Complete Wilhelm Mäuschen's Racing Collection."
@@ -7793,7 +8209,7 @@ msgid "notrecruitedtankman/race19_commanderC/desc"
 msgstr ""
 "The driver of the racing vehicle is awarded for personal achievements during "
 "The Great Race event. The Commander has the Brothers in Arms perk trained to "
-"100% and enough experience to train two perks or skills to 100%."
+"100% and enough experience to train two additional perks to 100%."
 
 msgid "notrecruitedtankman/race19_commanderC/howToGetInfo"
 msgstr "Complete Vitaliy Olenenko's Racing Collection."
@@ -7802,7 +8218,7 @@ msgid "notrecruitedtankman/race19_commanderC/label"
 msgstr "Unique Commander"
 
 msgid "notrecruitedtankman/skillsTitle"
-msgstr "Trained Skills and Perks"
+msgstr "Perks"
 
 msgid "notrecruitedtankman/tankman/desc"
 msgstr "?empty?"
@@ -7812,6 +8228,15 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankman/label"
 msgstr "A unique crew member"
+
+msgid "notrecruitedtankman/tankmen/desc"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen/label"
+msgstr "Unique Crew Member"
 
 msgid "notrecruitedtankman/tankmen_auc_1/desc"
 msgstr ""
@@ -7842,6 +8267,52 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_auc_2/label"
 msgstr "Warhammer 40,000: Special Offer"
+
+msgid "notrecruitedtankman/tankmen_bp10_1/desc"
+msgstr ""
+"Eighteen years of infantry service did not change this soldier's demeanor at "
+"all. He is still a fun and light-hearted hulk of a man who loves to place "
+"bets, believes in his luck, and always relies on chance. He got into the "
+"desert by flipping a coin—what else is there to say? His carelessness got "
+"him into mortal danger several times, but he always got away unscathed. His "
+"catchphrase is \"Betcha I'll come back alive.\""
+
+msgid "notrecruitedtankman/tankmen_bp10_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp10_1/label"
+msgstr "Battle Pass Season X"
+
+msgid "notrecruitedtankman/tankmen_bp10_2/desc"
+msgstr ""
+"A military translator who can quickly adapt to any specifics of any military "
+"branch. A polyglot who knows eight languages, including Swahili. After the "
+"passing of his comrade in arms, Leo Sommer, he keeps to himself, which is "
+"why he prefers to work alone and prefers not to make new friends. While "
+"working in the archives, he found a mention of an ancient scroll that was "
+"considered lost, and not a week later, he was a part of a special desert "
+"expedition."
+
+msgid "notrecruitedtankman/tankmen_bp10_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp10_2/label"
+msgstr "Battle Pass Season X"
+
+msgid "notrecruitedtankman/tankmen_bp10_3/desc"
+msgstr ""
+"Only three people have access to this spy's personal file. According to some "
+"info, she is the daughter of an intel officer and an actress. She was "
+"recruited at a young age and is considered the best in covert operations. In "
+"addition to her remarkable wits, she also makes active use of her good "
+"looks. She was sent to the desert by the order of higher commanding "
+"officers, but she never wanted to go there."
+
+msgid "notrecruitedtankman/tankmen_bp10_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp10_3/label"
+msgstr "Battle Pass Season X"
 
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
@@ -8158,7 +8629,7 @@ msgid "notrecruitedtankman/tankmen_bp8_7/howToGetInfo"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp8_7/label"
-msgstr "Battle Pass Season VIII"
+msgstr "Battle Pass Season X"
 
 msgid "notrecruitedtankman/tankmen_bp8_8/desc"
 msgstr ""
@@ -8173,7 +8644,7 @@ msgid "notrecruitedtankman/tankmen_bp8_8/howToGetInfo"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp8_8/label"
-msgstr "Battle Pass Season VIII"
+msgstr "Battle Pass Season IX"
 
 msgid "notrecruitedtankman/tankmen_bp9_1/desc"
 msgstr ""
@@ -8219,11 +8690,74 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_bp9_3/label"
 msgstr "Battle Pass Season IX"
 
+msgid "notrecruitedtankman/tankmen_bph_1/desc"
+msgstr ""
+"One of the autonomous anthropomorphous endoskeleton mechanism models created "
+"by Cyberdyne Systems (designation: CSM-101) to perform combat missions. The "
+"machine's processor, which works in expanded mode, is able to learn, "
+"providing a considerable advantage in case mission parameters change. The "
+"T-800 is considered the most effective (and most iconic) specimen out of the "
+"entire range of terminators."
+
+msgid "notrecruitedtankman/tankmen_bph_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bph_1/label"
+msgstr "Battle Pass: Judgment Day"
+
+msgid "notrecruitedtankman/tankmen_bph_2/desc"
+msgstr ""
+"A 10-year-old boy and the future leader of a global resistance movement in "
+"the war between machines and humans. The main enemy of Skynet. To eliminate "
+"him, the network sent its most advanced creation: the T-1000. However, "
+"knowing Skynet's plans, the future John Connor decided to protect himself by "
+"sending a reprogrammed T-800 machine to the past, which completed the "
+"mission and eliminated the threat to the (then non-existent, but still very "
+"important) future resistance."
+
+msgid "notrecruitedtankman/tankmen_bph_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bph_2/label"
+msgstr "Battle Pass: Judgment Day"
+
+msgid "notrecruitedtankman/tankmen_bph_3/desc"
+msgstr ""
+"John Connor's mother. She knows about his destiny and prepares him for his "
+"role as the future resistance leader. Her attempts to tell the world about "
+"the future forced her into isolation, which put the whole of humanity under "
+"immense threat. However, even in captivity, she remained strong in spirit. "
+"After being reunited with her son and his unlikely protector, she continued "
+"the battle against Skynet. One of the most memorable female characters in "
+"cinema."
+
+msgid "notrecruitedtankman/tankmen_bph_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bph_3/label"
+msgstr "Battle Pass: Judgment Day"
+
+msgid "notrecruitedtankman/tankmen_bph_4/desc"
+msgstr ""
+"The newest and most advanced (at the time) terminator model, which was "
+"created by Skynet to eliminate John Connor. Unlike older endoskeletons, it "
+"consists of liquid metal alloy that is capable of shape shifting and mimicry "
+"to blend in with its environment. It is not susceptible to mechanical "
+"destruction, and basically invulnerable to firearms. Despite being mass-"
+"produced in the future, it was used very rarely. In fact, Skynet considered "
+"the cutting-edge self-learning chip a potential threat to the network."
+
+msgid "notrecruitedtankman/tankmen_bph_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bph_4/label"
+msgstr "Battle Pass: Judgment Day"
+
 msgid "notrecruitedtankman/tankwoman/desc"
 msgstr ""
-"Was awarded during particular events. Female crew members have the Brothers "
-"in Arms perk trained to 100%, as well as one more skill or perk of your "
-"choice trained to 100%."
+"Awarded during particular game events. Female crew members have the Brothers "
+"in Arms perk trained to 100%, as well as one more perk of your choice "
+"trained to 100%."
 
 msgid "notrecruitedtankman/tankwoman/label"
 msgstr "A unique crew member"
@@ -8244,8 +8778,8 @@ msgstr "An Elite Recruit"
 
 msgid "notrecruitedtankman/twitch4/desc"
 msgstr ""
-"He might be missing an eye, but \"Nelson\" is more than equipped for battle, "
-"thanks to his three additional perks."
+"He might be missing an eye, but \"Nelson\" is more than equipped for battle "
+"thanks to his perks."
 
 msgid "notrecruitedtankman/twitch4/label"
 msgstr "An Elite Recruit"
@@ -8420,6 +8954,49 @@ msgstr "Search Battles With Tier X Vehicles Only"
 
 msgid "parameter/categories"
 msgstr "Category: "
+
+msgid "periodicReward/comp7/body"
+msgstr "A special daily reward given to players on the Leaderboard."
+
+msgid "periodicReward/header"
+msgstr "Daily Reward"
+
+msgid "perkType/info/common"
+msgstr ""
+"Trained by all qualifications {brown_Start}(effective level is averaged "
+"across the entire crew){brown__End}."
+
+msgid "perkType/info/situational"
+msgstr "Situational effects trigger when certain conditions are met in battle."
+
+msgid "perkType/name/commanderSpecial"
+msgstr "Commander feature"
+
+msgid "perkType/name/common"
+msgstr "Group perk"
+
+msgid "perkType/name/main"
+msgstr "Perk"
+
+msgid "perkType/name/situational"
+msgstr "Perk with a situational effect"
+
+msgid "perks/configurationScreenText"
+msgstr ""
+"Trained by all qualifications {brown_Start}(effective level is averaged "
+"across the entire crew){brown__End}."
+
+msgid "perks/fullGroupSkillTitle"
+msgstr "When the perk is fully trained by all crew members (100%):"
+
+msgid "perks/fullSkillTitle"
+msgstr "When the perk is fully trained (100%):"
+
+msgid "perks/infoText"
+msgstr ""
+"A perk with a situational effect comes into effect when trained to at least "
+"1%. Its effectiveness grows with further training. The situational effect "
+"triggers when certain conditions are met in battle."
 
 msgid "personalMissions/awards/camouflage/alliance/body"
 msgstr ""
@@ -8792,19 +9369,19 @@ msgid "personalMissions/tankgirlsBlock/header"
 msgstr "Non-Recruited Female Crew Members"
 
 msgid "personal_case/skills/accTeachingOfSkillBtn/body"
-msgstr "Click to increase the current skill or perk using Free Experience."
+msgstr "Click to increase the current perk using Free Experience."
 
 msgid "personal_case/skills/accTeachingOfSkillBtn/header"
 msgstr "Quick Training"
 
 msgid "personal_case/skills/accTeachingOfSkillBtn/notEnoughFreeXP/body"
-msgstr "Not enough Free Experience to increase the current skill or perk."
+msgstr "Not enough Free Experience to increase the current perk."
 
 msgid "personal_case/skills/accTeachingOfSkillBtn/notEnoughFreeXP/header"
 msgstr "Quick Training Unavailable"
 
 msgid "personal_case/skills/accTeachingOfSkillBtn/selectSkill/body"
-msgstr "A skill or perk for accelerated training has not been selected."
+msgstr "A perk for accelerated training has not been selected."
 
 msgid "personal_case/skills/accTeachingOfSkillBtn/selectSkill/header"
 msgstr "Quick Training Unavailable"
@@ -8816,22 +9393,28 @@ msgid "personal_case/skills/drop/header"
 msgstr "Delete Qualification"
 
 msgid "personal_case/skills/dropSkillsButton/body"
-msgstr "Click to reset skills or perks."
+msgstr "Click to reset perks."
 
 msgid "personal_case/skills/dropSkillsButton/header"
-msgstr "Reset Skills or Perks"
+msgstr "Reset Perks"
+
+msgid "personal_case/skills/dropSkillsButton/inBattle/body"
+msgstr "Wait until the crew exits battle to change their perks."
+
+msgid "personal_case/skills/dropSkillsButton/inBattle/header"
+msgstr "Vehicle in Battle"
 
 msgid "personal_case/skills/dropSkillsButton/noSkill/body"
-msgstr "You have no trained skills or perks."
+msgstr "You have no trained perks."
 
 msgid "personal_case/skills/dropSkillsButton/noSkill/header"
-msgstr "Perks/Skills Unavailable"
+msgstr "Perks Unavailable"
 
 msgid "personal_case/skills/new/body"
-msgstr "Click to train for a new perk or skill."
+msgstr "Click to train a new perk."
 
 msgid "personal_case/skills/new/header"
-msgstr "Train for Skill or Perk"
+msgstr "Train a Perk"
 
 msgid "personal_case/training/at_spg_btn/body"
 msgstr "Display tank destroyers of this nation."
@@ -8951,32 +9534,6 @@ msgstr ""
 "Click to select a badge that will be displayed next to your nickname in "
 "battle. You can earn badges in Ranked Battles, for completing Personal "
 "Missions, and for participating in game events."
-
-msgid "prem/dashboard/header/clanReserves/body"
-msgstr ""
-"When activated, Clan Reserves allow you to receive additional bonuses after "
-"each battle. Clan Reserves have several sizes and are active for a specific "
-"period in Random Battles, Ranked Battles, special tournaments, and both "
-"Steel Hunter and Frontline modes."
-
-msgid "prem/dashboard/header/clanReserves/emptySlot/body"
-msgstr "Click to select and activate Clan Reserves."
-
-msgid "prem/dashboard/header/clanReserves/header"
-msgstr "Clan Reserves"
-
-msgid "prem/dashboard/header/personalReserves/body"
-msgstr ""
-"When activated, Personal Reserves allow you to receive additional bonuses "
-"after each battle. Personal Reserves are active for a specific period in "
-"Random Battles, Ranked Battles, special tournaments, and both Steel Hunter "
-"and Frontline modes."
-
-msgid "prem/dashboard/header/personalReserves/emptySlot/body"
-msgstr "Click to select and activate Personal Reserves."
-
-msgid "prem/dashboard/header/personalReserves/header"
-msgstr "Personal Reserves"
 
 msgid "prem/piggyBank/ghostBtn/body"
 msgstr ""
@@ -9184,7 +9741,7 @@ msgid "privateQuests/status/notReceived/header"
 msgstr "Reward not claimed"
 
 msgid "privateQuests/status/received/header"
-msgstr "Reward claimed"
+msgstr "Reward Received"
 
 msgid "privateQuests/taskListItem/body"
 msgstr "Click to view details."
@@ -9341,10 +9898,10 @@ msgid "quests/igr"
 msgstr "Mission is available in Premium IGR only"
 
 msgid "quests/linkBtn/battlePass"
-msgstr "To Battle Pass Progression"
+msgstr "See Battle Pass Progression"
 
 msgid "quests/linkBtn/battlePass/select"
-msgstr "To Battle Pass Chapter selection"
+msgstr "To Battle Pass Chapter Selection"
 
 msgid "quests/linkBtn/customizationProgression/disabled"
 msgstr "Detailed information is currently unavailable."
@@ -9410,8 +9967,8 @@ msgstr ""
 msgid "quests/seasonAward/femaleTankman/description/part2"
 msgstr ""
 "• Manual selection of nation, vehicle type, and major qualification\n"
-"• The Brothers in Arms perk trained to 100%\n"
-"• One more skill or perk of your choice trained to 100%."
+"• The unique Brothers in Arms perk\n"
+"• One more perk of your choice trained to 100%."
 
 msgid "quests/seasonAward/title"
 msgstr "%(name)s"
@@ -9882,6 +10439,35 @@ msgstr ""
 msgid "roleExp/status/roleActions/title"
 msgstr "Receive a bonus to experience by performing role actions:"
 
+msgid "roleSkill/description/active"
+msgstr "When activated"
+
+msgid "roleSkill/description/passive"
+msgstr "Passive effect"
+
+msgid "roleSkill/info"
+msgstr ""
+"Role Skills are charged passively during the battle. To speed up the "
+"process, perform well and capture Points of Interest/the base."
+
+msgid "seasonalBattleSelector/tillEnd"
+msgstr "Season ends in:"
+
+msgid "seasonalBattleSelector/timeTable/empty"
+msgstr "—"
+
+msgid "seasonalBattleSelector/timeTable/interval"
+msgstr "%(start)s–%(end)s"
+
+msgid "seasonalBattleSelector/timeTable/title"
+msgstr "Battle Schedule"
+
+msgid "seasonalBattleSelector/timeTable/today"
+msgstr "Today"
+
+msgid "seasonalBattleSelector/timeTable/tomorrow"
+msgstr "Tomorrow"
+
 msgid "selectableCrewbook/allNations"
 msgstr "You can select from any nation available in the game."
 
@@ -9909,9 +10495,6 @@ msgstr ""
 msgid "selectedVehicle/header"
 msgstr "Selected Vehicle"
 
-msgid "seniorityAwards/additional/tooltip/header"
-msgstr "Vehicle comes with:"
-
 msgid "seniorityAwards/hangarEntryPoint/tooltip/body"
 msgstr ""
 "Crates with a Well-Deserved Reward as a gift for years of service! Open the "
@@ -9919,9 +10502,6 @@ msgstr ""
 
 msgid "seniorityAwards/hangarEntryPoint/tooltip/header"
 msgstr "A Well-Deserved Reward"
-
-msgid "seniorityAwards/hangarSlot/tooltip/header"
-msgstr "Garage slot"
 
 msgid "server/notAccess"
 msgstr "You need an invitation to enter this server."
@@ -10061,8 +10641,8 @@ msgstr "View Range and Draw"
 msgid "settings/minimapCircles/viewRange/body"
 msgstr ""
 "Shows the view range value of your vehicle,\n"
-"adjusted in accordance with the skills and perks of your crew and equipment, "
-"consumables, and directives mounted on your vehicle."
+"adjusted in accordance with the perks of your crew\n"
+"and the equipment, consumables, and directives mounted on your vehicle."
 
 msgid "settings/minimapCircles/viewRange/title"
 msgstr "2. View Range Circle"
@@ -10158,13 +10738,6 @@ msgid "settings_dialog/sound/soundModeInvalid"
 msgstr ""
 "Files of the selected notification voice\n"
 "are damaged or missing."
-
-msgid "setttingsDisabledNotification/body"
-msgstr ""
-"Some settings are unavailable in this mode. Please select another mode."
-
-msgid "setttingsDisabledNotification/header"
-msgstr "Unavailable"
 
 msgid "shell/basic"
 msgstr "Default"
@@ -10277,54 +10850,6 @@ msgstr ""
 msgid "showVehModelsOnMap/header"
 msgstr "Expanded Minimap Features"
 
-msgid "skills/brotherhood/descr"
-msgstr ""
-"Improves the major qualifications and all skills for the entire crew. This "
-"perk is cumulative with the effects of Improved Ventilation, Venting System, "
-"Extra Combat Rations, Chocolate, Case of Cola, Strong Coffee, Improved "
-"Combat Rations, Pudding and Tea, Onigiri, Buchty, Coffee with Cinnamon Buns, "
-"Bread with Smalec, and Spaghetti with Meat Sauce, as well as Vent Purge."
-
-msgid "skills/brotherhood/header"
-msgstr "Brothers in Arms"
-
-msgid "skills/camouflage/descr"
-msgstr ""
-"Reduces vehicle visibility. This skill is cumulative with the effects of "
-"camouflage (for the corresponding map types) and Camouflage Net, as well as "
-"Natural Cover."
-
-msgid "skills/camouflage/header"
-msgstr "Concealment"
-
-msgid "skills/commander_eagleEye/descr"
-msgstr ""
-"Increases Maximum View Range. The skill is more effective if observation "
-"devices are damaged, or when combined with Situational Awareness, Coated "
-"Optics, Experimental Optics, Bounty Optics, and Binocular Telescope."
-
-msgid "skills/commander_eagleEye/header"
-msgstr "Recon"
-
-msgid "skills/driver_badRoadsKing/descr"
-msgstr ""
-"Reduces ground resistance when driving on soft and moderately soft terrain. "
-"Lower ground resistance increases vehicle maneuverability and acceleration. "
-"This skill is cumulative with the effects of Additional Grousers."
-
-msgid "skills/driver_badRoadsKing/header"
-msgstr "Off-Road Driving"
-
-msgid "skills/driver_virtuoso/descr"
-msgstr ""
-"Increases vehicle traverse speed. This skill is cumulative with the effects "
-"of Additional Grousers, Lend-Lease Oil, Quality Oil, Removed Speed Governor, "
-"100-octane Gasoline, and 105-octane Gasoline, as well as Combat Course. "
-"Important! This skill increases gun dispersion on hull traverse."
-
-msgid "skills/driver_virtuoso/header"
-msgstr "Clutch Braking"
-
 msgid "skills/forRole/commander"
 msgstr "Commander"
 
@@ -10344,51 +10869,7 @@ msgid "skills/forRole/radioman"
 msgstr "Radio Operator"
 
 msgid "skills/newPerk/header"
-msgstr "One more skill or perk of your choice"
-
-msgid "skills/radioman_finder/descr"
-msgstr ""
-"Increases Maximum View Range. This skill is more effective when combined "
-"with Recon, Coated Optics, Experimental Optics, Bounty Optics, and Binocular "
-"Telescope."
-
-msgid "skills/radioman_finder/header"
-msgstr "Situational Awareness"
-
-msgid "skills/radioman_inventor/descr"
-msgstr "Extends Signal Range."
-
-msgid "skills/radioman_inventor/header"
-msgstr "Signal Boosting"
-
-msgid "skills/repair/descr"
-msgstr ""
-"Accelerates repairs to damaged modules. The effective skill level is "
-"averaged across the entire crew. This skill is cumulative with the effects "
-"of Modified Configuration, Improved Hardening, Large Repair Kit, and Pre-"
-"Battle Maintenance."
-
-msgid "skills/repair/header"
-msgstr "Repairs"
-
-msgid "skills/status/avgExp"
-msgstr " (effective skill level is averaged across the entire crew)"
-
-msgid "skills/status/for2radiomen"
-msgstr ""
-" (if two Radio operators have this skill, only the higher rating is "
-"effective)"
-
-msgid "skills/status/isForRole"
-msgstr "Trained by%(role)s%(special)s. "
-
-msgid "skills/status/momental"
-msgstr ""
-"Comes into effect after training starts. The effect increases with skill "
-"level."
-
-msgid "skills/status/requiersWholeCrew"
-msgstr "Comes into effect after all crew members reach 100%."
+msgstr "One more perk of your choice"
 
 msgid "sound/dynamicRange/help/body"
 msgstr ""
@@ -10414,12 +10895,27 @@ msgstr ""
 msgid "soundQualityOn/header"
 msgstr "LQ Sound"
 
+msgid "squadBonus/comp7/description"
+msgstr ""
+"When playing in a Platoon, you can receive additional credits and experience."
+
 msgid "squadBonus/complex/body"
 msgstr ""
-"Receive an additional %(bonus)s to Combat Experience after each battle when "
-"playing in a Platoon with other players.\n"
-"This bonus is only available for Permanent Tactical Units, and is not "
+"Receive an additional %(bonus)s to Combat XP after each battle when playing "
+"in a Platoon with other players.\n"
+"\n"
+"This bonus is only available for Permanent Tactical Units and is not "
 "available for Dynamic Platoons."
+
+msgid "squadBonus/complex/bonusPercent"
+msgstr "%(value)s%%"
+
+msgid "squadBonus/complex/comp7/body"
+msgstr ""
+"You will receive additional credits and experience when playing in a Platoon."
+
+msgid "squadBonus/complex/comp7/header"
+msgstr "Bonuses for Platoon Play"
 
 msgid "squadBonus/complex/header"
 msgstr "Bonus for Platoon Playing"
@@ -10478,17 +10974,11 @@ msgstr "Click to reset filter"
 msgid "storage/filter/noResultsBtn/header"
 msgstr "Reset Filter"
 
-msgid "storage/filter/personalReserves/btns/duration"
-msgstr "Duration: %(durTime)s h"
+msgid "storage/filter/personalReserves/btns/type/comboExp"
+msgstr "Additional Free and Crew XP per battle"
 
 msgid "storage/filter/personalReserves/btns/type/credits"
 msgstr "Additional credits per battle"
-
-msgid "storage/filter/personalReserves/btns/type/crewExp"
-msgstr "Additional crew experience per battle"
-
-msgid "storage/filter/personalReserves/btns/type/freeExp"
-msgstr "Additional Free Experience per battle"
 
 msgid "storage/filter/personalReserves/btns/type/vehicleExp"
 msgstr "Additional experience per battle"
@@ -10531,7 +11021,7 @@ msgid "storage/mainMenu/for_sell/body"
 msgstr "Displays modules and shells that are not compatible with your vehicle."
 
 msgid "storage/mainMenu/for_sell/header"
-msgstr "Modules and shells for sale"
+msgstr "Modules and shells to sale"
 
 msgid "storage/mainMenu/in_hangar/body"
 msgstr "Displays all vehicles in the Garage."
@@ -10657,10 +11147,10 @@ msgid "tankCaruselTooltip/vehicleType/elite/mediumTank"
 msgstr "Elite Medium Tank"
 
 msgid "tankCaruselTooltip/vehicleType/normal/AT-SPG"
-msgstr "Tank Destroyers"
+msgstr "Tank Destroyer"
 
 msgid "tankCaruselTooltip/vehicleType/normal/SPG"
-msgstr "SPGs"
+msgstr "SPG"
 
 msgid "tankCaruselTooltip/vehicleType/normal/heavyTank"
 msgstr "Heavy Tank"
@@ -10712,13 +11202,17 @@ msgstr ""
 
 msgid "tank_params/desc/avgDamagePerMinute"
 msgstr ""
-"The amount of damage that can potentially be caused to an enemy vehicle "
-"within 1 minute if all hits penetrate the armor."
+"Amount of damage potentially caused to an enemy vehicle in 1 minute if all "
+"hits penetrate the armor."
 
 msgid "tank_params/desc/avgPiercingPower"
 msgstr ""
-"The average thickness of armor penetrated by a standard shell adjusted for "
-"shell normalization."
+"Average armor thickness penetrated by a standard shell, adjusted for shell "
+"normalization."
+
+msgid "tank_params/desc/burstFireRate"
+msgstr ""
+"Loading time between shells in container. / Number of shells in a burst."
 
 msgid "tank_params/desc/chargeTime"
 msgstr ""
@@ -10733,21 +11227,22 @@ msgstr "Time to repair a damaged main/reserve track."
 
 msgid "tank_params/desc/chassisRotationSpeed"
 msgstr ""
-"Speed of hull traverse about its axis, and speed of changing direction in "
+"Speed of hull traverse around its axis, and speed of direction change in "
 "motion (maneuverability)."
 
 msgid "tank_params/desc/circularVisionRadius"
 msgstr ""
-"The current View Range of your vehicle. No enemy vehicles can be spotted at "
-"a distance exceeding 445 m. Further increase of the View Range allows you to "
-"more easily spot enemy vehicles within the 445 m radius."
+"The current view range of your vehicle. No enemy vehicles can be spotted at "
+"a distance exceeding 445 m. Further increasing the view range allows you to "
+"more easily spot enemy vehicles within the 445 m radius (standard/special "
+"mode)."
 
 msgid "tank_params/desc/clipFireRate"
 msgstr ""
 "Time between firing the last shell in the magazine (or both guns) and "
 "loading the new magazine. / Time between firing a shell and loading the next "
-"shell in the magazine (or the next gun). / Number of shells in the magazine "
-"(or guns)."
+"shell in the magazine, gun, or container. / Number of shells or containers "
+"in the magazine (or guns)."
 
 msgid "tank_params/desc/damage"
 msgstr "Damage caused by a standard shell upon penetrating enemy armor."
@@ -10785,7 +11280,7 @@ msgid "tank_params/desc/invisibilityStillFactor"
 msgstr ""
 "Shows the concealment of a motionless vehicle. The higher the parameter, the "
 "more concealed the vehicle. The following parameters are indicated: for a "
-"stationary vehicle / for a stationary vehicle after firing."
+"stationary vehicle / for a stationary vehicle after firing."
 
 msgid "tank_params/desc/maxHealth"
 msgstr "Number of vehicle durability points."
@@ -10813,8 +11308,7 @@ msgstr ""
 "shared at any distance."
 
 msgid "tank_params/desc/relativeArmor"
-msgstr ""
-"A set of parameters that shows the vehicle resilience to damage caused."
+msgstr "A set of parameters that show the vehicle's resilience to damage."
 
 msgid "tank_params/desc/relativeCamouflage"
 msgstr ""
@@ -10840,8 +11334,21 @@ msgstr "Number of rounds per minute."
 
 msgid "tank_params/desc/reloadTimeSecs"
 msgstr ""
-"Time it takes to reload the gun (or both guns on vehicles with the double-"
-"barreled gun system) after firing."
+"Time to reload the gun (or both guns on vehicles with the double-barreled "
+"gun system) after firing."
+
+msgid "tank_params/desc/rocketAccelerationEnginePower"
+msgstr ""
+"This parameter affects vehicle acceleration, top speed, and hull traverse "
+"speed."
+
+msgid "tank_params/desc/rocketAccelerationReuseAndDuration"
+msgstr ""
+"Jet boosters that increase engine power and top speed. When activated, jet "
+"boosters decrease maneuverability and they cannot be disabled manually."
+
+msgid "tank_params/desc/rocketAccelerationSpeedLimits"
+msgstr "Nominal vehicle speed with activated jet boosters."
 
 msgid "tank_params/desc/shotDispersionAngle"
 msgstr ""
@@ -10888,6 +11395,11 @@ msgstr ""
 "position.\n"
 "Values are shown for hard/moderately soft/soft ground."
 
+msgid "tank_params/desc/turboshaftBurstFireRate"
+msgstr ""
+"Loading time between shells in container. / Number of shells in a burst in "
+"the special mode."
+
 msgid "tank_params/desc/turboshaftEnginePower"
 msgstr ""
 "This parameter affects vehicle acceleration, top speed, and hull traverse "
@@ -10912,7 +11424,7 @@ msgstr "Nominal vehicle speed with a charged turbine."
 
 msgid "tank_params/desc/turboshaftSwitchTime"
 msgstr ""
-"Time required to charge the turbine to maximum, as well as return to "
+"Time required to charge the turbine to maximum. / Time to return to the "
 "standard operation mode."
 
 msgid "tank_params/desc/turretArmor"
@@ -10920,8 +11432,8 @@ msgstr "Thickness of turret armor: front / sides / rear respectively."
 
 msgid "tank_params/desc/turretRotationSpeed"
 msgstr ""
-"Degrees of gun traverse per second within the arc of fire (in turret or "
-"stationary cabin)."
+"Degrees of gun traverse per second within the arc of fire in a turret or a "
+"stationary cabin (standard/special mode)."
 
 msgid "tank_params/desc/turretYawLimits"
 msgstr ""
@@ -10952,17 +11464,14 @@ msgstr ""
 "damaged engine increases the time needed for switching. Switching is "
 "unavailable when the engine is destroyed."
 
-msgid "tankman/skillsTitle"
-msgstr "Advantages"
-
 msgid "tankman/status/inactiveSkills/header"
-msgstr "Wrong skills and perks"
+msgstr "Wrong Perks"
 
 msgid "tankman/status/inactiveSkills/text"
 msgstr ""
-"Qualification skills and perks %(skills)s of the crew member cannot be used. "
-"To select correct skills and perks in Personal File, reset all trained "
-"skills and perks."
+"Perks of the following qualifications cannot be used: %(skills)s. You can "
+"choose the suitable perks in the Personal File after resetting the "
+"previously trained ones. Zero perks cannot be reset."
 
 msgid "tankman/status/inactiveSkillsRoleFormat"
 msgstr "\"%s\""
@@ -10972,22 +11481,22 @@ msgstr "Premium vehicle of correct type"
 
 msgid "tankman/status/wrongPremiumVehicle/text"
 msgstr ""
-"The crew member does not have specialization on %(vehicle)s, but he can use "
-"his skills and perks."
+"The crew member does not have specialization on %(vehicle)s, but they can "
+"use their perks."
 
 msgid "tankman/status/wrongRoleLevel"
 msgstr ""
-"This crew member cannot use his skills and perks because his major "
-"qualification level is less than 100%. Train him in his Personal File or "
-"increase his major qualification level in battle."
+"This crew member cannot use their perks because their major qualification "
+"level is less than 100%. Train them via their Personal File or increase "
+"their major qualification level in battle."
 
 msgid "tankman/status/wrongVehicle/header"
 msgstr "No specialization on %(vehicle)s"
 
 msgid "tankman/status/wrongVehicle/text"
 msgstr ""
-"This crew member cannot make full use of his skills and perks. Train this "
-"crew member in his Personal File."
+"This crew member cannot make full use of their perks. Train them via their "
+"Personal File."
 
 msgid "tanksFilter/counter/close/body"
 msgstr "Click to reset filter settings to default."
@@ -11171,6 +11680,18 @@ msgstr "%(value)s min"
 msgid "template/time/lessThenMinute"
 msgstr "less than a minute"
 
+msgid "tillTime/days"
+msgstr "%(day)s d"
+
+msgid "tillTime/hours"
+msgstr "%(hour)s h"
+
+msgid "tillTime/lessMin"
+msgstr "less than a minute"
+
+msgid "tillTime/min"
+msgstr "%(min)s min"
+
 msgid "trade/body"
 msgstr ""
 "Premium vehicles can be traded in\n"
@@ -11323,16 +11844,16 @@ msgstr "Spectator mode enabled."
 
 msgid "turnOffCombatChat/body"
 msgstr ""
-"This option is used for Random Battle, Ranked Battle,\n"
-"and Frontline modes only, and:\n"
+"This option is only available for Random Battles, Ranked Battles,\n"
+"Frontline, and Onslaught modes. Note that:\n"
 "\n"
-"• Platoon chat is not disabled\n"
+"• The Platoon chat is not disabled\n"
 "• Players can see special commands\n"
 "• Players can send special commands\n"
-"• Players can send messages in the Platoon chat only."
+"• Players can only send messages in the Platoon chat."
 
 msgid "turnOffCombatChat/header"
-msgstr "Disable Chat with Allies"
+msgstr "Disable Chat With Allies"
 
 msgid "useFreeXP/body"
 msgstr ""
@@ -11358,8 +11879,11 @@ msgstr "Required Level"
 msgid "vehicle/action_prc"
 msgstr "Discount %(actionPrc)s, previous cost: %(oldPrice)s"
 
-msgid "vehicle/afterEventEnd/title"
-msgstr "All battles fought, vehicle unavailable."
+msgid "vehicle/additional/header"
+msgstr "Vehicle comes with:"
+
+msgid "vehicle/allModules/header"
+msgstr "All Researched Modules"
 
 msgid "vehicle/ammo"
 msgstr "In the ammo"
@@ -11435,6 +11959,9 @@ msgstr "(Right-click to view characteristics)"
 msgid "vehicle/graph/notes/vehicleUnlock"
 msgstr "(Left-click to research a vehicle)"
 
+msgid "vehicle/hangarSlot/header"
+msgstr "Garage slot"
+
 msgid "vehicle/inventoryCount"
 msgstr "In Depot"
 
@@ -11453,16 +11980,6 @@ msgstr "Rental From"
 msgid "vehicle/multiplied_xp"
 msgstr "Combat Experience"
 
-msgid "vehicle/overview/desc"
-msgstr ""
-"This is a real nightmare for any enemy. No Platoons: just you and this wild "
-"beast. And don't ask how Ermelinda managed to get it off the chain. This "
-"vehicle is only available for Random Battles from September 26 through "
-"October 18, 2022."
-
-msgid "vehicle/overview/title"
-msgstr "Overview:"
-
 msgid "vehicle/radioDistance"
 msgstr "<h1>Signal Range</h1> <h2>(km)</h2>"
 
@@ -11473,10 +11990,10 @@ msgid "vehicle/rentAvailable"
 msgstr "Vehicle rental available"
 
 msgid "vehicle/rentLeft/battles"
-msgstr "Available battles"
+msgstr "Number of battles before the end of the rental period"
 
 msgid "vehicle/rentLeft/days"
-msgstr "The vehicle will be available until %(date)s"
+msgstr "Days of rental left"
 
 msgid "vehicle/rentLeft/epic/base"
 msgstr "Rental for Frontline"
@@ -11491,10 +12008,7 @@ msgid "vehicle/rentLeft/epic/minsLeft"
 msgstr "%(timeNum)s min"
 
 msgid "vehicle/rentLeft/hours"
-msgstr "The vehicle will be available until %(date)s"
-
-msgid "vehicle/rentLeft/noTimeLeft"
-msgstr "All battles fought, vehicle unavailable."
+msgstr "Hours of rental left"
 
 msgid "vehicle/rentLeft/wins"
 msgstr "Victories left before the end of the rental period"
@@ -11510,11 +12024,6 @@ msgstr "Rental for Frontline"
 
 msgid "vehicle/rentLeftFuture/hours"
 msgstr "Hours of rent"
-
-msgid "vehicle/rentLeftFuture/obtainedBy"
-msgstr ""
-"Can be earned by completing the Progression or from the Engineer's Gate "
-"during The Waffenträger: Legacy event."
 
 msgid "vehicle/rentLeftFuture/wins"
 msgstr "victories within the rental period"
@@ -11538,6 +12047,12 @@ msgid "vehicle/stats/footnote"
 msgstr ""
 "These characteristics apply to the vehicle with the crew trained to 100%."
 
+msgid "vehicle/telecomRental/remainingTime/days"
+msgstr "Rented for: %(time)s days left"
+
+msgid "vehicle/telecomRental/remainingTime/hours"
+msgstr "Rented for: %(time)s hours left"
+
 msgid "vehicle/telecomRentalsRenting"
 msgstr "Telecom Vehicle Rental"
 
@@ -11557,34 +12072,25 @@ msgid "vehicle/vehicleCount"
 msgstr "Applied"
 
 msgid "vehicle/wotPlusRenting"
-msgstr "WoT Plus Vehicle Rental"
+msgstr "This vehicle is exclusive to the WoT Plus subscription."
 
-msgid "vehicle/wotPlusRenting/remainingTime/days"
-msgstr "Rented for: %(time)s days left"
+msgid "vehicle/wotPlusRenting/inactive"
+msgstr "Subscription suspended"
 
-msgid "vehicle/wotPlusRenting/remainingTime/hours"
-msgstr "Rented for: %(time)s hours left"
+msgid "vehicle/wotPlusRenting/remainingTime"
+msgstr "Active until %(time)s"
 
 msgid "vehicle/xp"
 msgstr "Combat Experience"
 
 msgid "vehicleCrystal/limitStatus/common/description"
-msgstr "%(max)s Weekly earning limit"
-
-msgid "vehicleCrystal/limitStatus/common/title"
-msgstr "Earning Bonds:"
+msgstr "%(max)s Weekly bonds earning limit"
 
 msgid "vehicleCrystal/limitStatus/limitReached/description"
-msgstr "Limit will be reset in: %(timeLeft)s"
-
-msgid "vehicleCrystal/limitStatus/limitReached/title"
-msgstr "Bonds Limit Reached"
+msgstr "Bonds limit will be reset in: %(timeLeft)s"
 
 msgid "vehicleCrystal/limitStatus/progress/description"
-msgstr "%(current)s / %(max)s"
-
-msgid "vehicleCrystal/limitStatus/progress/title"
-msgstr "Weekly Bonds Limit:"
+msgstr "%(current)s/%(max)s Weekly bonds earning limit"
 
 msgid "vehicleIgr/days"
 msgstr "Special ends in, days: %(days)s"
@@ -11607,7 +12113,7 @@ msgid "vehicleParams/bonus/extra/camouflageExtras"
 msgstr "Camouflage"
 
 msgid "vehicleParams/bonus/inactiveDescription"
-msgstr "Does not work without the %(skillName)s skill (perk) trained"
+msgstr "Does not work without the %(skillName)s perk trained"
 
 msgid "vehicleParams/bonus/perk/template"
 msgstr "\"%(name)s\" perk"
@@ -11631,7 +12137,7 @@ msgid "vehicleParams/bonus/situational"
 msgstr "Activated when certain events occur in battle."
 
 msgid "vehicleParams/bonus/skill/template"
-msgstr "\"%(name)s\" skill"
+msgstr "\"%(name)s\" perk"
 
 msgid "vehicleParams/bonus/tankmanLevel/commander"
 msgstr "Commander's proficiency"
@@ -11656,6 +12162,15 @@ msgstr "%(name)s Modification"
 
 msgid "vehicleParams/bonuses/title"
 msgstr "Parameter Modifiers:"
+
+msgid "vehicleParams/bonuses/title/crew_mastery"
+msgstr "Crew Qualification Level:"
+
+msgid "vehicleParams/bonuses/title/equipment"
+msgstr "Configuration:"
+
+msgid "vehicleParams/bonuses/title/skills"
+msgstr "Crew Perks:"
 
 msgid "vehicleParams/chassisRotationSpeed"
 msgstr "Traverse Speed (deg/s)"
@@ -11697,7 +12212,7 @@ msgid "vehicleParams/simplified/title"
 msgstr "Simplified Technical Characteristics:"
 
 msgid "vehicleParams/skill/name"
-msgstr "Crew skill or perk"
+msgstr "Crew perk"
 
 msgid "vehicleParams/speedLimits"
 msgstr "Top Speed / Reverse Speed (km/h)"
@@ -11820,7 +12335,7 @@ msgid "vehiclePreview/crew/commander"
 msgstr ""
 "Influences the distance at which enemy vehicles are spotted "
 "(%(paramName)s).\n"
-"Improves crew performance. The Commander adds %(crewPercents)s to major "
+"Improves crew performance. The Commander adds %(crewPercents)s to the major "
 "qualifications of all other crew members per %(commanderPercents)s of the "
 "Commander's major qualification."
 
@@ -11939,34 +12454,33 @@ msgstr "This bundle includes:"
 
 msgid "vehiclePreview/tankman/newPerk/header"
 msgstr ""
-"One more skill or perk\n"
+"One additional perk\n"
 "of your choice"
 
 msgid "vehiclePreview/tankman/skillsTitle"
-msgstr "Trained Skills and Perks"
+msgstr "Trained Perks"
 
 msgid "vehiclePreview/vehiclePanel/info/body"
 msgstr ""
 "These characteristics apply to a vehicle with the crew trained to 100%."
 
 msgid "vehiclePreview/vehiclePanel/info/header/crew/AnySkills"
-msgstr "Vehicle comes with %d%% crew with unique skills and perks."
+msgstr "Vehicle comes with a %d%% crew with unique perks."
 
 msgid "vehiclePreview/vehiclePanel/info/header/crew/isAbillity"
-msgstr "skill"
+msgstr "perk"
 
 msgid "vehiclePreview/vehiclePanel/info/header/crew/isPerk"
 msgstr "perk"
 
 msgid "vehiclePreview/vehiclePanel/info/header/crew/newSkill/forAll"
 msgstr ""
-"Vehicle comes with %(level)d%% crew with an additional skill or perk of your "
-"choice."
+"Vehicle comes with a %(level)d%% crew with an additional perk of your choice."
 
 msgid "vehiclePreview/vehiclePanel/info/header/crew/newSkill/forOne"
 msgstr ""
-"Vehicle comes with %(level)d%% crew and a %(role)s with an additional skill "
-"or perk of your choice."
+"Vehicle comes with a %(level)d%% crew and a %(role)s with an additional perk "
+"of your choice."
 
 msgid "vehiclePreview/vehiclePanel/info/header/crew/oneSkill/forAll"
 msgstr ""
@@ -12052,6 +12566,43 @@ msgstr ""
 "for gold or with a Demounting Kit."
 
 msgid "vehicleSellDialog/renderer/alertIconGold/header"
+msgstr "Demounting to Depot"
+
+msgid "vehicleSellDialog/renderer/sbscr/Deluxe/nonsub/demountEnabled/body"
+msgstr ""
+"Improved Equipment can be demounted and used again for bonds, or for free "
+"with WoT Plus subscription."
+
+msgid "vehicleSellDialog/renderer/sbscr/Deluxe/nonsub/demountEnabled/header"
+msgstr "Demounting to Depot"
+
+msgid "vehicleSellDialog/renderer/sbscr/Deluxe/nonsub/demountNotEnabled/body"
+msgstr "Improved Equipment can be demounted and used again only for bonds."
+
+msgid "vehicleSellDialog/renderer/sbscr/Deluxe/nonsub/demountNotEnabled/header"
+msgstr "Demounting to Depot"
+
+msgid "vehicleSellDialog/renderer/sbscr/Deluxe/sub/demountNotEnabled/body"
+msgstr "Improved Equipment can be demounted and used again only for bonds."
+
+msgid "vehicleSellDialog/renderer/sbscr/Deluxe/sub/demountNotEnabled/header"
+msgstr "Demounting to Depot"
+
+msgid "vehicleSellDialog/renderer/sbscr/Modernized/body"
+msgstr ""
+"Experimental Equipment of Level II and III can be demounted and used again "
+"only for components."
+
+msgid "vehicleSellDialog/renderer/sbscr/Modernized/header"
+msgstr "Demounting to Depot"
+
+msgid "vehicleSellDialog/renderer/sbscr/Standard/nonsub/body"
+msgstr ""
+"Standard, Bounty, and Experimental Equipment of Level I can be demounted and "
+"used again for gold, a Demounting Kit, or for free with WoT Plus "
+"subscription."
+
+msgid "vehicleSellDialog/renderer/sbscr/Standard/nonsub/header"
 msgstr "Demounting to Depot"
 
 msgid "vehicleStatus/ammoNotFull/header"
@@ -12200,6 +12751,9 @@ msgstr ""
 msgid "vehicleStatus/serverRestriction/header"
 msgstr "?empty?"
 
+msgid "vehicleStatus/subscription_suspended/header"
+msgstr "Not available"
+
 msgid "vehicleStatus/tooHeavy/header"
 msgstr "Vehicle Overloaded"
 
@@ -12230,6 +12784,14 @@ msgstr ""
 
 msgid "wallet/not_available_crystal/header"
 msgstr "Retrieving Data"
+
+msgid "wallet/not_available_equipCoin/body"
+msgstr ""
+"Retrieving balance data.\n"
+"All your components will become available soon."
+
+msgid "wallet/not_available_equipCoin/header"
+msgstr "Data Acquisition"
 
 msgid "wallet/not_available_freexp/body"
 msgstr ""

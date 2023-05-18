@@ -1,0 +1,187 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem; /* border offset*/
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.TooltipDecorator_decoratorContent_de {
+    background-color: #000;
+}
+
+.TextOverflow_base_3b {
+    flex: 0 1 auto;
+    width: auto;
+    line-height: 1.3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Badge_base_ac {
+    display: flex;
+    justify-content: center;
+    background: no-repeat center / contain;
+}
+
+    .Badge_base__default_c9 {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    .Badge_base__x48_e4 {
+        width: 48rem;
+        height: 48rem;
+    }
+
+.PlayerNickname_base_32 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.PlayerNickname_userName_cc {
+    flex: 0 1 auto; /* the only value for correct work */
+}
+
+.PlayerNickname_igrIcon_34 {
+    background: url('R.images.gui.maps.icons.library.premium_igr_big.png') no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_igrIcon_34 {
+        width: 32rem;
+        height: 14rem;
+    }
+
+.PlayerNickname_base__x48_84 .PlayerNickname_igrIcon_34 {
+        width: 64rem;
+        height: 28rem;
+    }
+
+.PlayerNickname_suffixBadgeWrapper_cc {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.PlayerNickname_suffixBadgeStripe_8a {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: -1;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_suffixBadgeStripe_8a {
+        width: 64rem;
+        height: 24rem;
+        right: 12rem;
+    }
+
+.PlayerNickname_base__default_8d.PlayerNickname_base__inverted_34 .PlayerNickname_suffixBadgeStripe_8a {
+        right: auto;
+        left: 12rem;
+        transform: rotateY(180deg);
+    }
+
+.PlayerNickname_base__x48_84 .PlayerNickname_suffixBadgeStripe_8a {
+        width: 68rem;
+        height: 28rem;
+        right: 16rem;
+    }
+
+.PlayerNickname_base__x48_84.PlayerNickname_base__inverted_34 .PlayerNickname_suffixBadgeStripe_8a {
+        right: auto;
+        left: 16rem;
+        transform: rotateY(180deg);
+    }
+
+.PlayerNickname_suffixBadge_bd {
+    background: no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_suffixBadge_bd {
+        width: 24rem;
+        height: 24rem;
+    }
+
+.PlayerNickname_base__x48_84 .PlayerNickname_suffixBadge_bd {
+        width: 32rem;
+        height: 32rem;
+    }
+
+.PlayerNickname_anonymizedIcon_80 {
+    background: no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_anonymizedIcon_80 {
+        width: 24rem;
+        height: 24rem;
+        background-image: url('R.images.gui.maps.icons.library.eye.png');
+    }
+
+.PlayerNickname_base__x48_84 .PlayerNickname_anonymizedIcon_80 {
+        width: 48rem;
+        height: 48rem;
+        background-image: url('R.images.gui.maps.icons.library.eye_48x48.png');
+    }
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.WTRInfo_wtr_5e {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+}
+
+.WTRInfo_wtrIcon_a9 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.library.wtrIcon_24') center / contain no-repeat;
+}
+
+.WTRInfo_wtrValue_80 {
+    height: 20rem;
+    margin-left: 2rem;
+    color: #8c8c7e;
+}
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.WTRTooltip_base_89 {
+    display: flex;
+    flex-direction: column;
+    min-width: 230rem;
+    padding: 12rem 16rem 10rem;
+    color: #8c8c7e;
+    font-size: 14rem;
+}
+
+.WTRTooltip_header_7c {
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+}
+
+.WTRTooltip_iconGap_7c {
+    margin-left: 8rem;
+}
+
+.WTRTooltip_clanTagGap_a0 {
+    margin-left: 5rem;
+}
+
+.WTRTooltip_description_83 {
+    margin-top: 6rem;
+}
+

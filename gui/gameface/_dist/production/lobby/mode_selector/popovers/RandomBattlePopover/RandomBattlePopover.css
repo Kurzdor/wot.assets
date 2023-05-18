@@ -1,0 +1,426 @@
+.Checkbox_base_36 {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    cursor: pointer;
+}
+
+    .Checkbox_base__disabled_08 {
+        pointer-events: none;
+    }
+
+    .Checkbox_base__center_52 {
+        align-items: center;
+    }
+
+    .Checkbox_base__bottom_28 {
+        align-items: flex-end;
+    }
+
+.Checkbox_input_37 {
+    border: 1rem solid rgba(190, 190, 190, .45);
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, .3);
+    opacity: .6;
+    position: relative;
+    transition: background-color .1s linear;
+}
+
+.Checkbox_base__mouseDown_45 .Checkbox_input_37 {
+        background-color: rgba(0, 0, 0, .4);
+    }
+
+.Checkbox_base__small_18 .Checkbox_input_37 {
+        width: 12rem;
+        height: 12rem;
+    }
+
+.Checkbox_base__medium_12 .Checkbox_input_37 {
+        width: 18rem;
+        height: 18rem;
+    }
+
+.Checkbox_base__large_f7 .Checkbox_input_37 {
+        width: 24rem;
+        height: 24rem;
+    }
+
+.Checkbox_base__extraLarge_c9 .Checkbox_input_37 {
+        width: 32rem;
+        height: 32rem;
+    }
+
+.Checkbox_alertOverlay_52 {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    left: -1rem;
+    border: 1rem solid #feab34;
+    border-radius: 2rem;
+    box-shadow: inset 0 0 9rem rgba(0, 0, 0, .25);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.Checkbox_base__alert_b7 .Checkbox_alertOverlay_52 {
+        animation: Checkbox_blink_5e 2s ease-in-out infinite;
+    }
+
+.Checkbox_base__alert_b7.Checkbox_base__checked_a2 .Checkbox_alertOverlay_52,
+    .Checkbox_base__alert_b7.Checkbox_base__disabled_08 .Checkbox_alertOverlay_52 {
+        opacity: 0;
+        animation: initial;
+    }
+
+.Checkbox_inputHoverOverlay_36 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #201f1c, #494741);
+    opacity: 0;
+    transition: opacity .1s linear;
+    pointer-events: none;
+}
+
+.Checkbox_base_36:hover .Checkbox_inputHoverOverlay_36 {
+        opacity: .8;
+    }
+
+.Checkbox_base_36.Checkbox_base__mouseDown_45:hover .Checkbox_inputHoverOverlay_36 {
+        opacity: 0;
+    }
+
+.Checkbox_highlight_b8 {
+    background: no-repeat 50% / contain;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .1s linear;
+    pointer-events: none;
+}
+
+.Checkbox_base__checked_a2 .Checkbox_highlight_b8 {
+        opacity: 1;
+    }
+
+.Checkbox_base__checked_a2.Checkbox_base__disabled_08 .Checkbox_highlight_b8 {
+        opacity: 0;
+    }
+
+.Checkbox_base__small_18 .Checkbox_highlight_b8 {
+        width: 34rem;
+        height: 34rem;
+    }
+
+.Checkbox_base__medium_12 .Checkbox_highlight_b8 {
+        width: 40rem;
+        height: 40rem;
+    }
+
+.Checkbox_base__large_f7 .Checkbox_highlight_b8 {
+        width: 46rem;
+        height: 46rem;
+    }
+
+.Checkbox_base__extraLarge_c9 .Checkbox_highlight_b8 {
+        width: 54rem;
+        height: 54rem;
+    }
+
+.Checkbox_base__main_3a.Checkbox_base__small_18 .Checkbox_highlight_b8 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_s');
+    }
+
+.Checkbox_base__main_3a.Checkbox_base__medium_12 .Checkbox_highlight_b8 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_m');
+    }
+
+.Checkbox_base__main_3a.Checkbox_base__large_f7 .Checkbox_highlight_b8 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_l');
+    }
+
+.Checkbox_base__main_3a.Checkbox_base__extraLarge_c9 .Checkbox_highlight_b8 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_xl');
+    }
+
+.Checkbox_base__primary_ab.Checkbox_base__small_18 .Checkbox_highlight_b8 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_s_green');
+    }
+
+.Checkbox_base__primary_ab.Checkbox_base__medium_12 .Checkbox_highlight_b8 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_m_green');
+    }
+
+.Checkbox_base__primary_ab.Checkbox_base__large_f7 .Checkbox_highlight_b8 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_l_green');
+    }
+
+.Checkbox_base__primary_ab.Checkbox_base__extraLarge_c9 .Checkbox_highlight_b8 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_xl_green');
+    }
+
+.Checkbox_checkmark_60 {
+    background: center / contain no-repeat;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+}
+
+.Checkbox_base__checked_a2 .Checkbox_checkmark_60 {
+        /* Using a transition causes the image to blink on appear */
+        animation: Checkbox_fadeIn_1a .1s linear 0 normal forwards;
+    }
+
+.Checkbox_base__checked_a2.Checkbox_base__disabled_08 .Checkbox_checkmark_60 {
+        opacity: .5;
+    }
+
+.Checkbox_base__small_18 .Checkbox_checkmark_60 {
+        width: 11rem;
+        height: 11rem;
+    }
+
+.Checkbox_base__medium_12 .Checkbox_checkmark_60 {
+        width: 19rem;
+        height: 20rem;
+        transform: translate(1rem, -4rem);
+    }
+
+.Checkbox_base__large_f7 .Checkbox_checkmark_60 {
+        width: 23rem;
+        height: 24rem;
+        transform: translate(3rem, -3rem);
+    }
+
+.Checkbox_base__extraLarge_c9 .Checkbox_checkmark_60 {
+        width: 36rem;
+        height: 36rem;
+        transform: translate(2rem, -8rem);
+    }
+
+.Checkbox_base__main_3a.Checkbox_base__small_18 .Checkbox_checkmark_60 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_s');
+    }
+
+.Checkbox_base__main_3a.Checkbox_base__medium_12 .Checkbox_checkmark_60 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_m');
+    }
+
+.Checkbox_base__main_3a.Checkbox_base__large_f7 .Checkbox_checkmark_60 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_l');
+    }
+
+.Checkbox_base__main_3a.Checkbox_base__extraLarge_c9 .Checkbox_checkmark_60 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_xl');
+    }
+
+.Checkbox_base__primary_ab.Checkbox_base__small_18 .Checkbox_checkmark_60 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_s_green');
+    }
+
+.Checkbox_base__primary_ab.Checkbox_base__medium_12 .Checkbox_checkmark_60 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_m_green');
+    }
+
+.Checkbox_base__primary_ab.Checkbox_base__large_f7 .Checkbox_checkmark_60 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_l_green');
+    }
+
+.Checkbox_base__primary_ab.Checkbox_base__extraLarge_c9 .Checkbox_checkmark_60 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_xl_green');
+    }
+
+.Checkbox_label_bc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    padding-left: 10rem;
+    position: relative;
+}
+
+.Checkbox_labelContent_64 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    line-height: 1.15;
+    transition: color .1s linear;
+}
+
+.Checkbox_base__extraLarge_c9 .Checkbox_labelContent_64 {
+        font-size: 16rem;
+    }
+
+.Checkbox_base_36:hover .Checkbox_labelContent_64 {
+        color: #c8c8b6;
+    }
+
+.Checkbox_base__disabled_08 .Checkbox_labelContent_64,
+    .Checkbox_base__disabled_08:hover .Checkbox_labelContent_64 {
+        color: #37362e;
+    }
+
+@keyframes Checkbox_fadeIn_1a {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Checkbox_blink_5e {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.PopoverDecorator_base_ed {
+    display: flex;
+    position: absolute;
+}
+
+.PopoverDecorator_decorator_d3 {
+    padding: 58rem;
+    border-image-source: url('R.images.gui.maps.icons.popovers.popover_bg');
+    border-image-slice: 90 fill;
+    border-image-width: 90rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.PopoverDecorator_arrow_8a {
+    background: no-repeat 0 0 / contain;
+    position: absolute;
+}
+
+.PopoverDecorator_arrow__bottom_c3,
+    .PopoverDecorator_arrow__top_6e {
+        width: 301rem;
+        height: 90rem;
+        margin: 0 58rem;
+        background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_top');
+        left: 50%;
+    }
+
+.PopoverDecorator_arrow__left_7a,
+    .PopoverDecorator_arrow__right_b6 {
+        width: 84rem;
+        height: 181rem;
+        margin: 58rem 0;
+        background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_left');
+        top: 50%;
+    }
+
+.PopoverDecorator_arrow__left_7a {
+        right: 10rem;
+        transform: scaleX(-1) translateY(-90rem);
+    }
+
+.PopoverDecorator_arrow__right_b6 {
+        left: 10rem;
+        transform: translateY(-90rem);
+    }
+
+.PopoverDecorator_arrow__top_6e {
+        bottom: 8rem;
+        transform: scaleY(-1) translateX(-150rem);
+    }
+
+.PopoverDecorator_arrow__bottom_c3 {
+        top: 8rem;
+        transform: translateX(-150rem);
+    }
+
+.PopoverDecorator_closeBtn_32 {
+    width: 18rem;
+    height: 18rem;
+    background: url('R.images.gui.maps.icons.popovers.close_button_slim_up') no-repeat 0 0 / contain;
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.PopoverDecorator_closeBtn_32:hover {
+        filter: brightness(160%);
+    }
+
+.PopoverDecorator_closeBtn_32:active {
+        background-image: url('R.images.gui.maps.icons.popovers.close_button_slim_press');
+        filter: brightness(100%);
+    }
+
+.PopoverDecorator_content_f0 {
+    position: relative;
+    z-index: 2;
+}
+
+.DynamicCheckbox_content_bd {
+    display: flex;
+}
+
+.DynamicCheckbox_info_50 {
+    width: 16rem;
+    height: 16rem;
+    margin-left: 5rem;
+    background: url('R.images.gui.maps.icons.platoon.common.info') 0 0 / contain no-repeat;
+    opacity: .6;
+    transition: opacity .1s linear;
+}
+
+.DynamicCheckbox_base_e0:hover .DynamicCheckbox_info_50 {
+        opacity: 1;
+    }
+
+.DynamicCheckbox_info__disabled_fc {
+        opacity: .3;
+    }
+
+.DynamicCheckbox_base_e0:hover .DynamicCheckbox_info__disabled_fc {
+            opacity: .3;
+        }
+
+.RandomBattlePopoverApp_base_cf {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 22rem 11rem 0;
+}
+
+.RandomBattlePopoverApp_header_f6 {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 15rem 0 0 24rem;
+}
+
+.RandomBattlePopoverApp_separator_d0 {
+    align-self: center;
+    width: 141rem;
+    height: 80rem;
+    margin: -25rem 0 -32rem;
+    background: url('R.images.gui.maps.icons.mode_selector.common.popover_lip') 0 0 / contain no-repeat;
+}
+
+.RandomBattlePopoverApp_checkbox_dd {
+    margin: 0 0 8rem 28rem;
+}
+

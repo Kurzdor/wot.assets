@@ -229,9 +229,6 @@ msgstr "Danger Area"
 msgid "deploymentMap/spgLimitReached"
 msgstr "Front blocked—vehicle type limit reached"
 
-msgid "destroy_timers/airstrike_txt"
-msgstr "Leave Zone!"
-
 msgid "epicBattleItem/supplyPoints/body"
 msgstr ""
 "Accumulate the required number of Points and activate the Frontline Combat "
@@ -297,12 +294,6 @@ msgstr "Attackers ( %(lane1)s/%(lane2)s/%(lane3)s )"
 
 msgid "epictraining/info/team2LaneLabel"
 msgstr "Defenders ( %(lane1)s/%(lane2)s/%(lane3)s )"
-
-msgid "equipment/healPoint/healed"
-msgstr "Restoring vehicle's hit points"
-
-msgid "equipment/healPoint/healing"
-msgstr "Restoring vehicle's hit points"
 
 msgid "game/all_enemies_defeated"
 msgstr "All enemy vehicles destroyed"
@@ -392,12 +383,6 @@ msgstr "Under Attack"
 
 msgid "in_game_rank/experience_text"
 msgstr "XP"
-
-msgid "inspire/inspired"
-msgstr "Inspiring"
-
-msgid "inspire/inspiring"
-msgstr "Inspiring"
 
 msgid "intro/card/categories/desc"
 msgstr ""
@@ -585,15 +570,6 @@ msgstr ""
 
 msgid "progress_timers/active"
 msgstr "Active"
-
-msgid "progress_timers/base_capture"
-msgstr "Base capture"
-
-msgid "progress_timers/blocked"
-msgstr "Blocked"
-
-msgid "progress_timers/captured"
-msgstr "Completed"
 
 msgid "progress_timers/fully_equipped"
 msgstr "Fully equipped"
@@ -785,11 +761,16 @@ msgstr "Low Performance"
 
 msgid "selectorTooltip/epicBattle/body"
 msgstr ""
-"30v30 battles in %(bodyVehicleLevel)s with Respawn mechanics, Combat "
-"Reserves, and Resupply Circles."
+"30v30 battles in %(bodyVehicleLevel)s. Make use of Respawn mechanics, Combat "
+"Reserves, as well as Resupply Circles."
 
 msgid "selectorTooltip/epicBattle/bodyVehicleLevel"
-msgstr "Tier %(level)s vehicles"
+msgstr "Tier %(level)s vehicles"
+
+msgid "selectorTooltip/epicBattle/ended/body"
+msgstr ""
+"30v30 battles in %(bodyVehicleLevel)s. Make use of Respawn mechanics, Combat "
+"Reserves, as well as repairs in battle."
 
 msgid "selectorTooltip/epicBattle/frozen"
 msgstr "This mode is temporarily unavailable for technical reasons."
@@ -814,18 +795,6 @@ msgstr "Today"
 
 msgid "selectorTooltip/epicBattle/timeTable/tomorrow"
 msgstr "Tomorrow"
-
-msgid "smoke/InAllySmoke"
-msgstr "Inside smoke: concealed."
-
-msgid "smoke/InEnemySmoke"
-msgstr "Inside smoke. View range and crew performance decreased."
-
-msgid "smoke/InEnemySmokePostEffect"
-msgstr "Wind down time. View range and crew performance decreased."
-
-msgid "smoke/In_smoke"
-msgstr "In smoke"
 
 msgid "spectator_mode/camera_controls_title"
 msgstr "Spectator Mode Camera"
@@ -866,10 +835,40 @@ msgstr "a minute"
 msgid "status/timeLeft/min"
 msgstr "%(min)s min"
 
-msgid "stealthRadar/active"
+msgid "statusNotificationTimers/captureBlock/blocked"
+msgstr "Blocked"
+
+msgid "statusNotificationTimers/deathZone"
+msgstr "Leave the zone!"
+
+msgid "statusNotificationTimers/healPoint/healed"
+msgstr "Restoring hit points"
+
+msgid "statusNotificationTimers/healPoint/healing"
+msgstr "Restoring hit points"
+
+msgid "statusNotificationTimers/inspire/inspired"
+msgstr "Inspiring"
+
+msgid "statusNotificationTimers/inspire/inspiring"
+msgstr "Inspiring"
+
+msgid "statusNotificationTimers/repairPoint"
+msgstr "Resupply Circle"
+
+msgid "statusNotificationTimers/smoke/ally"
+msgstr "Inside smoke: concealed."
+
+msgid "statusNotificationTimers/smoke/enemy"
+msgstr "Inside smoke. View range and crew performance decreased."
+
+msgid "statusNotificationTimers/smoke/enemyPostEffect"
+msgstr "Wind down time. View range and crew performance decreased."
+
+msgid "statusNotificationTimers/stealthRadar/active"
 msgstr "Sentinel activated"
 
-msgid "stealthRadar/inactive"
+msgid "statusNotificationTimers/stealthRadar/inactive"
 msgstr "Activates %(activationDelay)s s after the vehicle stops"
 
 msgid "super_platoon_panel/title"
@@ -895,6 +894,9 @@ msgstr "Mode Unavailable"
 
 msgid "tooltips/common/title"
 msgstr "Frontline"
+
+msgid "tooltips/end"
+msgstr "The event has finished"
 
 msgid "tooltips/slotSetupInfo/open/desc"
 msgstr ""
@@ -948,7 +950,7 @@ msgid "tooltips/timeToStart"
 msgstr "Battles will start in: %(timeLeft)s"
 
 msgid "tooltips/widget/finished"
-msgstr "Battles have finished"
+msgstr "The event has finished"
 
 msgid "tooltips/widget/level"
 msgstr "Tier %(level)s"

@@ -1,0 +1,159 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem; /* border offset*/
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.TooltipDecorator_decoratorContent_de {
+    background-color: #000;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.NationName_base_a2 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.NationName_highlight_61 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.NationName_highlightBold_3b {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    font-weight: 800;
+}
+
+.Content_base_d3 {
+    display: flex;
+    flex-direction: column;
+    width: 420rem;
+}
+
+.Content_box_bf {
+    display: flex;
+}
+
+.Content_icon_2a {
+    margin: 4rem 3rem;
+}
+
+.Content_iconUrl_37 {
+    width: 13rem;
+    height: 16rem;
+    background: no-repeat 0 0 / contain;
+}
+
+.Content_title_a8 {
+    width: 100%;
+    padding: 18rem 18rem 10rem;
+}
+
+.Content_subTitle_d2 {
+    display: flex;
+    width: 100%;
+    padding: 0 18rem;
+}
+
+.Content_desc_74 {
+    display: flex;
+    width: 100%;
+    padding: 7rem 18rem 0;
+}
+
+.Content_contentTitle_4e {
+    width: 100%;
+    padding: 19rem 18rem 7rem;
+}
+
+.Content_separator_c5 {
+    width: 100%;
+    height: 1rem;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(90deg, rgba(201,201,182, .2) 0%, transparent 50%, transparent 100%);
+    background-size: 3rem;
+    mask: linear-gradient(90deg, transparent 0%, #000 40%, #000 60%, transparent 100%);
+}
+
+.Content_separator__bottom_5a {
+        margin-top: -1rem;
+    }
+
+.Content_content_90 {
+    width: 100%;
+    padding-right: 18rem;
+    background: url('R.images.gui.maps.icons.roleExp.actionsTooltip.whiteBg') repeat-y center / contain;
+}
+
+.Content_footer_dd {
+    display: flex;
+    width: 100%;
+    padding: 10rem 26rem 17rem 18rem;
+}
+
+.Content_contentFirst_ef {
+    display: flex;
+    padding: 15rem 18rem 0;
+}
+
+.Content_contentSecond_68 {
+    display: flex;
+    padding: 7rem 18rem 17rem;
+}
+
+.Content_nationsBlock_09 {
+    padding-top: 2rem;
+}
+
+.Content_highTitle_c2 {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+}
+
+.Content_highTitleCustom_8f {
+    color: #E9E2BF;
+    font-size: 15rem;
+    font-weight: 700;
+}
+
+.Content_mainText_7a {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Content_highlightText_a3 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Content_infoIcon_47 {
+    width: 16rem;
+    height: 16rem;
+    margin: 2rem 5rem 0 -3rem;
+    background: url('R.images.gui.maps.icons.library.InformationIcon') center / contain no-repeat;
+}
+

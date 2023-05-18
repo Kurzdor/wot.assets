@@ -1,0 +1,76 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem; /* border offset*/
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.TooltipDecorator_decoratorContent_de {
+    background-color: #000;
+}
+
+.RerollTooltipContent_base_a9 {
+    width: 240rem;
+    height: auto;
+    margin: 15rem 22rem 10rem;
+}
+
+.RerollTooltipContent_header_77 {
+    margin: 0 2rem;
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+}
+
+.RerollTooltipContent_desc_42 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding-top: 8rem;
+    color: #8c8c7e;
+    font-size: 14rem;
+}
+
+.RerollTooltipContent_desc_timeLeft_2a {
+        display: inline;
+        color: #e9e2bf;
+    }
+
+.RerollTooltipContent_desc_42 span {
+        height: 18rem;
+        margin: 0 2rem;
+    }
+
+.RerollTooltipContent_available_63 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 2rem;
+    color: #fd9;
+    font-size: 14rem;
+}
+
+.RerollTooltipContent_available_icon_cf {
+        width: 24rem;
+        height: 24rem;
+        margin: 1rem 2rem 0 -6rem;
+        background-image: url('R.images.gui.maps.icons.missions.daily.widgets.clock_icon_s');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+.RerollTooltipContent_available_timeLeft_13 {
+        margin-left: 4rem;
+    }
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+

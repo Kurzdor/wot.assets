@@ -194,8 +194,8 @@ msgstr ""
 
 msgid "vehiclePreview/title/tooltip/info/body/progress/withDiscount"
 msgstr ""
-"The vehicle and related rewards are available during %(event_name)s"
-"%(addInfo)s"
+"The vehicle and related rewards are available during "
+"%(event_name)s%(addInfo)s"
 
 msgid "vehiclePreview/title/tooltip/rewards"
 msgstr "Set of Rewards"

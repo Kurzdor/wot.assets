@@ -324,7 +324,7 @@ msgid "commanderCam/hint/description"
 msgstr "Zoom out to enter Tactical View"
 
 msgid "consumables_panel/equipment/cooldownSeconds"
-msgstr "Cooldown: %(cooldownSeconds)s s."
+msgstr "Cooldown: %(cooldownSeconds)s s"
 
 msgid "consumables_panel/equipment/tooltip/empty"
 msgstr "A consumable slot"
@@ -500,6 +500,9 @@ msgstr "Immobilized: suspension destroyed."
 msgid "damage_panel/devices/wheel/normal"
 msgstr "Suspension is intact."
 
+msgid "danger_zone/indicator"
+msgstr "Your vehicle will be destroyed—leave the danger zone!"
+
 msgid "devices/ammo_bay"
 msgstr "Ammo Rack"
 
@@ -611,6 +614,15 @@ msgstr "to enable voice chat"
 
 msgid "dynamicSquad/invite"
 msgstr "Invitation to join the Platoon"
+
+msgid "efficiencyRibbons/AirstrikeDmg"
+msgstr "Damage by Airstrike"
+
+msgid "efficiencyRibbons/ArtilleryDmg"
+msgstr "Damage by Artillery Strike"
+
+msgid "efficiencyRibbons/CannonDmg"
+msgstr "Damage by Main Objective"
 
 msgid "efficiencyRibbons/armor"
 msgstr "Damage Blocked"
@@ -736,7 +748,7 @@ msgid "efficiencyRibbons/vehicleRecovery"
 msgstr "Vehicle Abandoned"
 
 msgid "efficiencyRibbons/worldCollision"
-msgstr "Damage by Wrecking"
+msgstr "Damage by Impact"
 
 msgid "epic_players_panel/state/hidden/body"
 msgstr "Hide team panels"
@@ -808,6 +820,15 @@ msgstr "to view the vehicle characteristics"
 msgid "helpScreen/hint/press"
 msgstr "Press"
 
+msgid "helpScreen/mapbox/description"
+msgstr "to view the map features"
+
+msgid "helpScreen/mapbox/press"
+msgstr "Press"
+
+msgid "hint/noBindingKey"
+msgstr "The core keys are not assigned"
+
 msgid "hitMarker/blocked"
 msgstr "Armor not penetrated"
 
@@ -855,6 +876,12 @@ msgstr "No active missions for this battle mode."
 
 msgid "personalMissions/tip/noQuests/vehicleType"
 msgstr "No active missions for this vehicle type."
+
+msgid "personal_reserves/hint/description"
+msgstr "to activate Personal Reserves"
+
+msgid "personal_reserves/hint/press"
+msgstr "Press"
 
 msgid "player_errors/cant_move/chassis_damaged"
 msgstr "Immobilized: suspension damaged."
@@ -906,6 +933,9 @@ msgstr "[%(entity)s] does not need medical aid."
 
 msgid "player_errors/equipment/order/notReady"
 msgstr "Reserve is not yet ready."
+
+msgid "player_errors/equipment/poi/unavailable"
+msgstr "Capture the %(name)s to activate the Tactical Skill"
 
 msgid "player_errors/equipment/repairEverything/crewAndDevicesAreOk"
 msgstr ""
@@ -1145,6 +1175,15 @@ msgid ""
 "player_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_SELF_SUICIDE"
 msgstr "Crew destroyed."
 
+msgid "player_messages/DEATH_FROM_MINE_EXPLOSION_ALLY_ENEMY_ARCADE"
+msgstr "%(attacker)s destroyed %(target)s by mines."
+
+msgid "player_messages/DEATH_FROM_MINE_EXPLOSION_ENEMY_ALLY_ARCADE"
+msgstr "%(attacker)s destroyed %(target)s by mines."
+
+msgid "player_messages/DEATH_FROM_MINE_EXPLOSION_SELF_ENEMY_ARCADE"
+msgstr "%(target)s destroyed by mines."
+
 msgid "player_messages/DEATH_FROM_OVERTURN_ALLY_ALLY"
 msgstr "Ally %(attacker)s overturned ally %(target)s"
 
@@ -1248,10 +1287,16 @@ msgid "player_messages/DEATH_FROM_SHOT_ALLY_ENEMY"
 msgstr "%(attacker)s destroyed %(target)s."
 
 msgid "player_messages/DEATH_FROM_SHOT_ALLY_ENEMY_ARTILLERY"
-msgstr "%(attacker)s destroyed %(target)s by artillery strike."
+msgstr "%(attacker)s destroyed %(target)s by Artillery Strike."
 
 msgid "player_messages/DEATH_FROM_SHOT_ALLY_ENEMY_BOMBER"
-msgstr "%(attacker)s destroyed %(target)s by bombing."
+msgstr "%(attacker)s destroyed %(target)s by Airstrike."
+
+msgid "player_messages/DEATH_FROM_SHOT_ALLY_ENEMY_COMP7"
+msgstr "%(attacker)s destroyed %(target)s (Fire Cover)."
+
+msgid "player_messages/DEATH_FROM_SHOT_ALLY_ENEMY_POI"
+msgstr "%(attacker)s destroyed %(target)s (Artillery Strike)."
 
 msgid "player_messages/DEATH_FROM_SHOT_ALLY_SUICIDE"
 msgstr "Ally %(target)s was lost in battle."
@@ -1266,10 +1311,16 @@ msgid "player_messages/DEATH_FROM_SHOT_ENEMY_ALLY"
 msgstr "%(attacker)s destroyed %(target)s."
 
 msgid "player_messages/DEATH_FROM_SHOT_ENEMY_ALLY_ARTILLERY"
-msgstr "%(attacker)s destroyed %(target)s by artillery strike."
+msgstr "%(attacker)s destroyed %(target)s by Artillery Strike."
 
 msgid "player_messages/DEATH_FROM_SHOT_ENEMY_ALLY_BOMBER"
-msgstr "%(attacker)s destroyed %(target)s by bombing."
+msgstr "%(attacker)s destroyed %(target)s by Airstrike."
+
+msgid "player_messages/DEATH_FROM_SHOT_ENEMY_ALLY_COMP7"
+msgstr "%(attacker)s destroyed %(target)s (Fire Cover)."
+
+msgid "player_messages/DEATH_FROM_SHOT_ENEMY_ALLY_POI"
+msgstr "%(attacker)s destroyed %(target)s (Artillery Strike)."
 
 msgid "player_messages/DEATH_FROM_SHOT_ENEMY_ENEMY"
 msgstr "Enemy %(attacker)s destroyed enemy %(target)s."
@@ -1305,7 +1356,13 @@ msgid "player_messages/DEATH_FROM_SHOT_SELF_ENEMY_ARTILLERY"
 msgstr "%(target)s destroyed by artillery strike."
 
 msgid "player_messages/DEATH_FROM_SHOT_SELF_ENEMY_BOMBER"
-msgstr "%(target)s destroyed by bombing."
+msgstr "%(target)s destroyed by Airstrike."
+
+msgid "player_messages/DEATH_FROM_SHOT_SELF_ENEMY_COMP7"
+msgstr "%(target)s destroyed"
+
+msgid "player_messages/DEATH_FROM_SHOT_SELF_ENEMY_POI"
+msgstr "%(target)s destroyed"
 
 msgid "player_messages/DEATH_FROM_WORLD_COLLISION_ALLY_ALLY"
 msgstr "Ally %(attacker)s crashed ally %(target)s."
@@ -1421,6 +1478,12 @@ msgstr "Enemy base%s captured!"
 
 msgid "player_messages/enemy_team_name"
 msgstr "Enemy Team"
+
+msgid "player_messages/poi_equipment_used_by_ally"
+msgstr "Your ally %(name)s used the %(equipment)s Tactical Skill"
+
+msgid "player_messages/poi_equipment_used_by_enemy"
+msgstr "The enemy used the %(equipment)s Tactical Skill"
 
 msgid "player_messages/postmortem_caption"
 msgstr "Player %(name)s (%(type)s); HP: %(health)d%%"
@@ -1539,8 +1602,17 @@ msgstr "Spectator Mode"
 msgid "postmortem/tips/observerMode/text"
 msgstr "Switch between allied vehicles."
 
+msgid "postmortem_messages/DEATH_FROM_ARTILLERY_PROTECTION"
+msgstr "Vehicle destroyed by the main objective"
+
 msgid "postmortem_messages/DEATH_FROM_ARTILLERY_PROTECTION_UNKNOWN"
 msgstr "Vehicle destroyed by artillery strike."
+
+msgid "postmortem_messages/DEATH_FROM_ARTILLERY_SECTOR"
+msgstr "Vehicle destroyed by the main objective"
+
+msgid "postmortem_messages/DEATH_FROM_BOMBER"
+msgstr "Vehicle destroyed by Airstrike"
 
 msgid "postmortem_messages/DEATH_FROM_CLING_BRANDER"
 msgstr "Vehicle destroyed by Battlefield Robot."
@@ -1597,7 +1669,7 @@ msgid "postmortem_messages/DEATH_FROM_KAMIKAZE"
 msgstr "Vehicle destroyed by Fireball."
 
 msgid "postmortem_messages/DEATH_FROM_MINE_EXPLOSION"
-msgstr "Vehicle destroyed by Minefield."
+msgstr "Vehicle destroyed by mines"
 
 msgid "postmortem_messages/DEATH_FROM_OVERTURN_ALLY_SELF"
 msgstr "Vehicle overturned by ally"
@@ -1617,6 +1689,9 @@ msgstr "Vehicle destroyed by ramming"
 msgid "postmortem_messages/DEATH_FROM_RAMMING_SELF_SUICIDE"
 msgstr "Vehicle destroyed by ramming"
 
+msgid "postmortem_messages/DEATH_FROM_RECOVERY"
+msgstr "Your vehicle was destroyed"
+
 msgid "postmortem_messages/DEATH_FROM_SECTOR_BOMBERS_UNKNOWN"
 msgstr "Vehicle destroyed during zone bombardment."
 
@@ -1627,13 +1702,13 @@ msgid "postmortem_messages/DEATH_FROM_SHOT"
 msgstr "Vehicle destroyed by player shot"
 
 msgid "postmortem_messages/DEATH_FROM_SHOT_ARCADE_BOMBER_BATTLE_ROYALE"
-msgstr "Vehicle destroyed by Artillery Strike."
+msgstr "Vehicle destroyed by Airstrike."
 
 msgid "postmortem_messages/DEATH_FROM_SHOT_ARTILLERY"
-msgstr "Vehicle destroyed by artillery strike"
+msgstr "Vehicle destroyed by Artillery Strike"
 
 msgid "postmortem_messages/DEATH_FROM_SHOT_BOMBER"
-msgstr "Vehicle destroyed by bombing"
+msgstr "Vehicle destroyed by Airstrike"
 
 msgid "postmortem_messages/DEATH_FROM_THUNDER_STRIKE"
 msgstr "Vehicle destroyed by Electric Discharge."
@@ -1946,7 +2021,7 @@ msgid "rewardWindow/countLabel"
 msgstr "x{count}"
 
 msgid "rewardWindow/lootbox/btnLabel"
-msgstr "Go to Boxes"
+msgstr "To Boxes"
 
 msgid "rewardWindow/lootbox/descText"
 msgstr "You received Large Boxes with valuable rewards."
@@ -2355,19 +2430,98 @@ msgstr "Gunslinger"
 msgid "rewardWindow/twitch32/subHeaderText"
 msgstr "Rewards Received"
 
-msgid "rewardWindow/twitch33/btnLabel"
-msgstr "More"
-
 msgid "rewardWindow/twitch33/descText"
-msgstr ""
-"Congratulations! You've received a special supply drop included with Prime "
-"Gaming. Now, put it to good use!"
+msgstr "You received a unique reward for the program: Prime Gaming"
 
 msgid "rewardWindow/twitch33/headerText"
-msgstr "SWATT"
+msgstr "PRIME GAMING"
 
-msgid "rewardWindow/twitch33/subHeaderText"
-msgstr "Rewards Received"
+msgid "rewardWindow/twitch33/mainReward_1"
+msgstr "e-Camo"
+
+msgid "rewardWindow/twitch33/mainReward_2"
+msgstr "Battle Ready"
+
+msgid "rewardWindow/twitch33/mainReward_3"
+msgstr "Go Harriers!"
+
+msgid "rewardWindow/twitch33/mainReward_4"
+msgstr "Dagger"
+
+msgid "rewardWindow/twitch34/descText"
+msgstr "You received a unique reward for the program: Prime Gaming"
+
+msgid "rewardWindow/twitch34/headerText"
+msgstr "PRIME GAMING"
+
+msgid "rewardWindow/twitch34/mainReward_1"
+msgstr "Witchcraft"
+
+msgid "rewardWindow/twitch34/mainReward_2"
+msgstr "Coven Time"
+
+msgid "rewardWindow/twitch34/mainReward_3"
+msgstr "You Came to the Wrong Neighborhood"
+
+msgid "rewardWindow/twitch34/mainReward_4"
+msgstr "Bite Me!"
+
+msgid "rewardWindow/twitch35/descText"
+msgstr "You received a unique reward for the program: Prime Gaming"
+
+msgid "rewardWindow/twitch35/headerText"
+msgstr "PRIME GAMING"
+
+msgid "rewardWindow/twitch35/mainReward_1"
+msgstr "Ferenc"
+
+msgid "rewardWindow/twitch35/mainReward_2"
+msgstr "Starting Whistle"
+
+msgid "rewardWindow/twitch35/mainReward_3"
+msgstr "Winning Goal"
+
+msgid "rewardWindow/twitch35/mainReward_4"
+msgstr "All-Time Classic"
+
+msgid "rewardWindow/twitch36/descText"
+msgstr "You received a unique reward for the program: Prime Gaming"
+
+msgid "rewardWindow/twitch36/headerText"
+msgstr "PRIME GAMING"
+
+msgid "rewardWindow/twitch36/mainReward_1"
+msgstr "Holiday Outfit"
+
+msgid "rewardWindow/twitch36/mainReward_2"
+msgstr "Charming Present"
+
+msgid "rewardWindow/twitch36/mainReward_3"
+msgstr "Weighty Present"
+
+msgid "rewardWindow/twitch36/mainReward_4"
+msgstr "Double Celebration"
+
+msgid "rewardWindow/twitch37/btnLabel"
+msgstr "Select Rewards"
+
+msgid "rewardWindow/twitch37/descText"
+msgstr "You received a unique reward for the program: Prime Gaming"
+
+msgid "rewardWindow/twitch37/headerText"
+msgstr "PRIME GAMING"
+
+msgid "rewardWindow/twitch37/mainReward_1"
+msgstr "A Brave New World"
+
+msgid "rewardWindow/twitch37/mainReward_2"
+msgstr "Eye of the Beholder"
+
+msgid "rewardWindow/twitch37/mainReward_3"
+msgstr "Anatomy of a Cyborg"
+
+msgid "rewardWindow/twitch37/mainReward_4"
+msgstr "You've Been Spotted"
 
 msgid "rewardWindow/twitch4/btnLabel"
 msgstr "Recruit"
@@ -2553,6 +2707,9 @@ msgstr "The core keys are not assigned"
 msgid "siegeMode/hint/press"
 msgstr "Press"
 
+msgid "siegeMode/hint/rocketAcceleration"
+msgstr "to activate jet boosters"
+
 msgid "siegeMode/hint/turboshaftEngine"
 msgstr "to switch engine modes"
 
@@ -2675,6 +2832,12 @@ msgstr "Composition"
 
 msgid "statistics/tab/line_up/title"
 msgstr "Team composition"
+
+msgid "statistics/tab/personalReserves/header"
+msgstr "Personal Reserves"
+
+msgid "statistics/tab/personalReserves/header/title"
+msgstr "Personal Reserves Activation"
 
 msgid "statistics/tab/quests/header"
 msgstr "Missions"
@@ -2946,3 +3109,6 @@ msgstr "[%(device)s] injured due to enemy %(entity)s impact."
 
 msgid "vehicle_messages/TANKMAN_HIT_AT_WORLD_COLLISION_SELF_SUICIDE"
 msgstr "[%(device)s] injured due to impact."
+
+msgid "vehicle_messages/poi_equipment_used"
+msgstr "The %(equipment)s Tactical Skill has been activated!"

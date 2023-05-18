@@ -259,11 +259,56 @@ msgstr ""
 msgid "detailsHelp/engineMode/engineModePage2/title"
 msgstr "Advantages and Disadvantages"
 
+msgid "detailsHelp/mapbox/artefacts/description"
+msgstr "Use the new environment elements for effective battle performance."
+
+msgid "detailsHelp/mapbox/artefacts/title"
+msgstr "New Game Options"
+
+msgid "detailsHelp/mapbox/environment/description"
+msgstr ""
+"Dynamic cover: Interactive environment objects that can be moved, flipped, "
+"or used in battle to attack or defend."
+
+msgid "detailsHelp/mapbox/environment/title"
+msgstr "Interacting with Environment"
+
+msgid "detailsHelp/mapbox/headerTitle"
+msgstr "Map Features"
+
+msgid "detailsHelp/mapbox/markers/description"
+msgstr ""
+"The random event area will be marked on the minimap with a corresponding "
+"icon, and a red border will appear on the area of the map itself in advance. "
+"Attention: If your vehicle is in the danger zone during a random event (for "
+"example, in the plane crash area), it will be destroyed!"
+
+msgid "detailsHelp/mapbox/markers/title"
+msgstr "Event Markers"
+
 msgid "detailsHelp/noKey"
 msgstr "NOT ASSIGNED"
 
 msgid "detailsHelp/noKeysWarning"
 msgstr "The core keys have not been assigned. Assign them in game settings."
+
+msgid "detailsHelp/rocketAcceleration/page1"
+msgstr ""
+"The use of jet boosters increases the vehicle's mobility. It allows you to "
+"take advantageous positions or cross dangerous areas faster. Jet boosters "
+"can be activated for a certain time and for a limited number of times per "
+"battle. They cannot be deactivated or destroyed."
+
+msgid "detailsHelp/rocketAcceleration/page1/title"
+msgstr "Jet Boosters"
+
+msgid "detailsHelp/rocketAcceleration/page2"
+msgstr ""
+"Upon activation, jet boosters increase engine power and top forward speed. "
+"However, the vehicle becomes less maneuverable and loses reverse speed."
+
+msgid "detailsHelp/rocketAcceleration/page2/title"
+msgstr "Advantages and Disadvantages"
 
 msgid "detailsHelp/role/description"
 msgstr "Receive a bonus to experience by performing role actions:"

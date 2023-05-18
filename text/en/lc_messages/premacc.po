@@ -10,25 +10,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "cardPiggy/accumSuspended"
-msgstr ""
-"Credit accumulation suspended:\n"
-"WoT Premium Account expired."
-
-msgid "cardPiggy/closeButton"
-msgstr "Close"
-
-msgid "cardPiggy/maxAmount"
-msgstr "{maxAmount}"
-
-msgid "cardPiggy/piggyFull"
-msgstr "Credit Reserve full"
-
-msgid "cardPiggy/piggyNotPremDescr"
-msgstr ""
-"Provides up to {credits}\n"
-"per week for active play."
-
 msgid "dailyExperiencePage/backBtnAddLabel"
 msgstr "TO ACCOUNT STATUS"
 
@@ -52,44 +33,6 @@ msgstr "Details"
 
 msgid "dashboard/header/clanInfo/role"
 msgstr "{role} in the clan"
-
-msgid "dashboard/header/clanReserves/title"
-msgstr "Clan Reserves"
-
-msgid "dashboard/header/personalReserves/title"
-msgstr "Personal Reserves"
-
-msgid "dashboard/header/timeLeft/day"
-msgstr "{day} d {hour} h"
-
-msgid "dashboard/header/timeLeft/hour"
-msgstr "{hour} h {min} min"
-
-msgid "dashboard/header/timeLeft/lessMin"
-msgstr "1 min"
-
-msgid "dashboard/header/timeLeft/min"
-msgstr "{min} min"
-
-msgid "dogTags/header/normalSize"
-msgstr "Personal Dog Tag"
-
-msgid "dogTags/header/small"
-msgstr ""
-"Personal\n"
-"Dog Tag"
-
-msgid "doubleExperienceCard/multiplier"
-msgstr "x{multiplier}"
-
-msgid "doubleExperienceCard/multiplierExp"
-msgstr "{multiplier}&nbsp;manageable bonus to&nbsp;experience"
-
-msgid "doubleExperienceCard/multiplierLocked"
-msgstr "Increases experience earned in the selected victorious battle."
-
-msgid "doubleExperienceCard/notAvailableNow"
-msgstr "Temporarily unavailable"
 
 msgid "mapsBlacklist/backBtn/addLabel"
 msgstr "TO ACCOUNT STATUS"
@@ -117,17 +60,17 @@ msgstr "Excluded Maps"
 
 msgid "mapsBlacklist/infoTooltip/desc"
 msgstr ""
-"You can exclude one map from the rotation. WoT Premium Account allows you to "
-"exclude two maps at once. In battles, you will not be placed on excluded "
-"maps."
+"With a Standard Account, you can exclude one map from the rotation. WoT "
+"Premium Account and an active WoT Plus subscription allow you to exclude one "
+"additional map each."
 
 msgid "mapsBlacklist/infoTooltip/header"
 msgstr "Excluded Maps"
 
 msgid "mapsBlacklist/infoTooltip/highlightDesc"
 msgstr ""
-"Please note that maps can be excluded only in Random Battles of the Standard "
-"Battle type."
+"• Please note that maps can only be excluded in Random Battles of the "
+"Standard Battle type."
 
 msgid "mapsBlacklist/infoTooltip/rule1"
 msgstr ""
@@ -294,12 +237,6 @@ msgstr ""
 msgid "mapsBlacklistReplace/title"
 msgstr "Which map do you want to replace?"
 
-msgid "missionsCard/premiumTasks"
-msgstr "Premium Missions"
-
-msgid "parentControlCard/attention"
-msgstr "IMPORTANT!"
-
 msgid "parentControlCard/infoPopover/body"
 msgstr ""
 "Parental controls have been enabled for this account.\n"
@@ -310,9 +247,6 @@ msgstr "Parental Control"
 
 msgid "parentControlCard/infoPopover/link"
 msgstr "on the game portal"
-
-msgid "parentControlCard/timeLimit"
-msgstr "Play time limit enabled"
 
 msgid "piggyBank/backBtnAddLabel"
 msgstr "TO ACCOUNT STATUS"
@@ -362,68 +296,13 @@ msgid "piggyBank/timeToOpenBankMsg/title"
 msgstr "Credit Reserve opens in:"
 
 msgid "piggyBankCard/timeLeft/days"
-msgstr "%(day)s d"
+msgstr "%(day)s d"
 
 msgid "piggyBankCard/timeLeft/hours"
-msgstr "%(hour)s h"
+msgstr "%(hour)s h"
 
 msgid "piggyBankCard/timeLeft/lessMin"
-msgstr "1 min"
+msgstr "1 min"
 
 msgid "piggyBankCard/timeLeft/min"
-msgstr "%(min)s min"
-
-msgid "premiumCard/basePremLeft"
-msgstr "Wargaming Premium: {timeLeft}"
-
-msgid "premiumCard/basePremium"
-msgstr "WoT Premium Account"
-
-msgid "premiumCard/bonus_credits"
-msgstr "Platoon bonus to credits"
-
-msgid "premiumCard/bonus_exp"
-msgstr "Manageable Bonus to Experience"
-
-msgid "premiumCard/bonus_map"
-msgstr "+1 slot to exclude a map"
-
-msgid "premiumCard/bonus_piggy"
-msgstr "Credit Reserve"
-
-msgid "premiumCard/bonus_tasks"
-msgstr "Premium Missions"
-
-msgid "premiumCard/stats/withPrem"
-msgstr "WoT Premium"
-
-msgid "premiumCard/stats/withoutPrem"
-msgstr "Standard Account"
-
-msgid "premiumCard/tankPremium"
-msgstr "WoT Premium Account"
-
-msgid "premiumCard/threeAdvantages"
-msgstr "And other unique benefits!"
-
-msgid "premiumCard/timeLeft/days"
-msgstr "%(day)s d"
-
-msgid "premiumCard/timeLeft/hours"
-msgstr "%(hour)s h"
-
-msgid "premiumCard/timeLeft/lessMin"
-msgstr "1 min"
-
-msgid "premiumCard/timeLeft/min"
-msgstr "%(min)s min"
-
-msgid "premiumCard/tryPremium"
-msgstr ""
-"Try\n"
-"WoT Premium Account"
-
-msgid "premiumCard/upToTankPremium"
-msgstr ""
-"Upgrade to\n"
-"WoT Premium Account"
+msgstr "%(min)s min"

@@ -1,0 +1,52 @@
+.BlockCompleted_base_0a {
+    line-height: normal;
+}
+.BlockCompleted_separator_c8 {
+    width: 283rem;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Devider_points') 50% / contain no-repeat;
+}
+.BlockCompleted_rewards_d5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 403rem;
+    height: 154rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Ribbon_large') bottom / cover no-repeat;
+    color: #c9c9b6;
+    font-size: 14rem;
+}
+.BlockCompleted_whiteBg_52 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 403rem;
+    height: 64rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Gradient_devider') center / cover repeat-y;
+    position: relative;
+}
+.BlockCompleted_whiteBgLine_94 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #80d43a;
+    font-size: 14rem;
+}
+.BlockCompleted_whiteBgIcon_17 {
+    width: 12rem;
+    height: 12rem;
+    margin-top: 2rem;
+    margin-right: 4rem;
+    background: url('R.images.gui.maps.icons.library.done') center / contain no-repeat;
+}
+.BlockCompleted_description_a4 {
+    width: 100%;
+    padding: 20rem 20rem 0;
+    color: #cbac77;
+    font-size: 14rem;
+    line-height: 1.2;
+    text-align: center;
+}
+

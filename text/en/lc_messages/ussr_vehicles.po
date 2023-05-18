@@ -91,9 +91,6 @@ msgstr ""
 msgid "AT-1bis"
 msgstr "AT-1 Bis"
 
-msgid "Alarm_flags_bot"
-msgstr "Signal Flags"
-
 msgid "BAMM_V12"
 msgstr "VAMM V12"
 
@@ -106,25 +103,7 @@ msgstr "BT-2"
 msgid "BT-2_bis"
 msgstr "BT-5"
 
-msgid "BT-2_bis_bootcamp"
-msgstr "BT-5"
-
-msgid "BT-2_bootcamp"
-msgstr "BT-2"
-
-msgid "BT-2_bootcamp_descr"
-msgstr ""
-"Developed on the basis of the Christie M1931 tank. Manufactured from 1932 "
-"through 1935 at Kharkov Locomotive Factory with a total production of 650 "
-"BT-2 and 1,884 BT-5 vehicles."
-
-msgid "BT-2_bootcamp_short"
-msgstr "BT-2"
-
 msgid "BT-2_cylindrical"
-msgstr "BT-2"
-
-msgid "BT-2_cylindrical_bootcamp"
 msgstr "BT-2"
 
 msgid "BT-2_descr"
@@ -140,9 +119,6 @@ msgstr ""
 "Winter War, and Second World War."
 
 msgid "BT-2bis"
-msgstr "BT-5"
-
-msgid "BT-2bis_bootcamp"
 msgstr "BT-5"
 
 msgid "BT-5"
@@ -257,9 +233,6 @@ msgid "Chassis_KV4_2"
 msgstr "KV-4 Bis"
 
 msgid "Chassis_LTP"
-msgstr "LTP"
-
-msgid "Chassis_LTP_bootcamp"
 msgstr "LTP"
 
 msgid "Chassis_Object263B"
@@ -505,6 +478,9 @@ msgstr "LT-432"
 msgid "Chassis_R159_SU_130PM"
 msgstr "SU-130PM"
 
+msgid "Chassis_R159_SU_130PM_DR"
+msgstr "Forest Spirit"
+
 msgid "Chassis_R160_T_50_2"
 msgstr "T-50-2"
 
@@ -574,17 +550,29 @@ msgstr "Object 259A"
 msgid "Chassis_R188_Object_259A_CN"
 msgstr "Udarniy"
 
+msgid "Chassis_R191_Object_283"
+msgstr "Obj. 283"
+
 msgid "Chassis_R192_K_2"
 msgstr "K-2"
 
 msgid "Chassis_R193_M4A2_T_34"
 msgstr "VVSS T54"
 
+msgid "Chassis_R194_ST_62_var_2"
+msgstr "ST-62 Version 2"
+
 msgid "Chassis_R195_T34M_54"
 msgstr "T-34-85M"
 
 msgid "Chassis_R197_KV_1S_MZ"
 msgstr "KV-1SA"
+
+msgid "Chassis_R202_SU_2_122"
+msgstr "SU-2-122"
+
+msgid "Chassis_R205_Tank_Rozanova"
+msgstr "TITT Rozanov"
 
 msgid "Chassis_R71_IS_2B"
 msgstr "IS-2M"
@@ -600,9 +588,6 @@ msgstr "Object 430"
 
 msgid "Chassis_R96_Object_430_2"
 msgstr "Object 430 improved"
-
-msgid "Chassis_R97_Object_140_hound_TLXXL"
-msgstr "Object 140 \"Resistor\""
 
 msgid "Chassis_ST_I"
 msgstr "ST-I"
@@ -641,9 +626,6 @@ msgid "Chassis_SU14_1_2"
 msgstr "SU-14-1"
 
 msgid "Chassis_SU76I"
-msgstr "SU-76I"
-
-msgid "Chassis_SU76I_bootcamp"
 msgstr "SU-76I"
 
 msgid "Chassis_SU_85I"
@@ -835,6 +817,9 @@ msgstr ""
 
 msgid "IS-4"
 msgstr "IS-4"
+
+msgid "IS-4_7x7"
+msgstr "IS-4 7v7"
 
 msgid "IS-4_descr"
 msgstr ""
@@ -1160,17 +1145,6 @@ msgstr "KZ V8"
 msgid "LTP"
 msgstr "LTP"
 
-msgid "LTP_bootcamp"
-msgstr "LTP"
-
-msgid "LTP_bootcamp_descr"
-msgstr ""
-"An experimental project for a light vehicle developed by Lieutenant "
-"Provornov in the summer of 1942. No prototypes were manufactured."
-
-msgid "LTP_bootcamp_short"
-msgstr "LTP"
-
 msgid "LTP_descr"
 msgstr ""
 "A proposed light vehicle developed by Lieutenant Provornov in the summer of "
@@ -1194,9 +1168,6 @@ msgstr "M-17L 1,445 r/min"
 msgid "M-17T"
 msgstr "M-17L 1,400 r/min"
 
-msgid "M-17T_bootcamp"
-msgstr "M-17L 1400 r/min"
-
 msgid "M-40-2V_SH"
 msgstr "M-40 Bis"
 
@@ -1209,9 +1180,6 @@ msgstr "M-5-400F"
 msgid "M-5-400F_Bis"
 msgstr "M-5-400F Bis"
 
-msgid "M-5-400_bootcamp"
-msgstr "M-5-400"
-
 msgid "M-50T"
 msgstr "M-50T"
 
@@ -1222,9 +1190,6 @@ msgid "M-50T_fallout"
 msgstr "M-50T"
 
 msgid "M-80"
-msgstr "M-80"
-
-msgid "M-80_bootcamp"
 msgstr "M-80"
 
 msgid "M3_Stuart_LL"
@@ -1250,14 +1215,6 @@ msgstr "MN-1"
 
 msgid "MS-1"
 msgstr "MS-1"
-
-msgid "MS-1_bot"
-msgstr "MS-1"
-
-msgid "MS-1_bot_descr"
-msgstr ""
-"The first Soviet mass-produced tank, with a total of 959 vehicles "
-"manufactured from 1928 through 1931."
 
 msgid "MS-1_descr"
 msgstr ""
@@ -1322,9 +1279,6 @@ msgid "Matilda_II_LL_short_special"
 msgstr "High rate of fire and good armoring"
 
 msgid "Maybach_HL_120_TRM_A"
-msgstr "Maybach HL 120 TRM"
-
-msgid "Maybach_HL_120_TRM_A_bootcamp"
 msgstr "Maybach HL 120 TRM"
 
 msgid "Medous_MAT"
@@ -1643,8 +1597,8 @@ msgstr "R-113"
 msgid "R113M"
 msgstr "R-113"
 
-msgid "R113M_WT"
-msgstr "R-113 \"Resistor\""
+msgid "R113M_DR"
+msgstr "R-113D"
 
 msgid "R113_Object_730"
 msgstr "IS-5 (Object 730)"
@@ -2510,12 +2464,6 @@ msgstr "Good concealment, gun elevation/depression angles, and durability"
 msgid "R155_Object_277"
 msgstr "Object 277"
 
-msgid "R155_Object_277_bob"
-msgstr "Object 277 BB"
-
-msgid "R155_Object_277_bob_short"
-msgstr "Obj. 277 BB"
-
 msgid "R155_Object_277_descr"
 msgstr ""
 "Developed in 1956–1958 at the Kirov Plant, Leningrad, under the supervision "
@@ -2614,6 +2562,33 @@ msgstr "Perfect concealment and good depression/elevation angles"
 
 msgid "R159_SU_130PM"
 msgstr "SU-130PM"
+
+msgid "R159_SU_130PM_DR"
+msgstr "Forest Spirit"
+
+msgid "R159_SU_130PM_DR_descr"
+msgstr ""
+"A Soviet tank destroyer was ordered to eternal watch on the border of an "
+"impenetrable forest—an ominous reminder to anyone who dares break the peace "
+"of the age-old oaks with the sound of an ax or rifle salvo. Those who come "
+"in peace will find a canopy of green leaves and spring water; those with ill "
+"intentions will endure eternal oblivion among the marshy swamps guarded by "
+"this forest spirit. And who knows what other trophies will adorn its "
+"branching horns."
+
+msgid "R159_SU_130PM_DR_long_special"
+msgstr ""
+"A Tier VIII Premium Soviet tank destroyer. Its good mobility and great "
+"concealment allow you to quickly take the best positions and fire while "
+"remaining unspotted. In turn, the powerful 130 mm gun on the non-fully-"
+"rotating turret turns the vehicle into a stealthy and very dangerous tank "
+"destroyer."
+
+msgid "R159_SU_130PM_DR_short"
+msgstr "Forest Spirit"
+
+msgid "R159_SU_130PM_DR_short_special"
+msgstr "A powerful gun, great concealment, and a unique exterior"
 
 msgid "R159_SU_130PM_descr"
 msgstr ""
@@ -3090,6 +3065,30 @@ msgstr "Obj. 259A"
 msgid "R188_Object_259A_short_special"
 msgstr "A powerful gun and sloped armor"
 
+msgid "R191_Object_283"
+msgstr "Object 283"
+
+msgid "R191_Object_283_descr"
+msgstr ""
+"The Object 283 is a draft of a medium tank developed by Research Institute "
+"No. 100 in the mid-1960s. The original plans were to create a vehicle with a "
+"cast hull, a centrally-place power unit, and a rear fighting compartment. "
+"There were also plans to mount a stereoscopic rangefinder. The project was "
+"discontinued at the development stage."
+
+msgid "R191_Object_283_long_special"
+msgstr ""
+"A Tier IX Premium Soviet medium tank with rear turret placement. Good armor "
+"and sturdy sides allow this vehicle to turn the battle around and surprise "
+"the enemy with great survivability. Its low silhouette and effective gun "
+"allow you to play ambush tactics in open spaces with suitable cover."
+
+msgid "R191_Object_283_short"
+msgstr "Obj. 283"
+
+msgid "R191_Object_283_short_special"
+msgstr "Low silhouette and good armor"
+
 msgid "R192_K_2"
 msgstr "K-2"
 
@@ -3138,6 +3137,36 @@ msgstr "M4-85"
 
 msgid "R193_M4A2_T_34_short_special"
 msgstr "Powerful gun and good mobility"
+
+msgid "R194_ST_62_var_2"
+msgstr "ST-62 Version 2"
+
+msgid "R194_ST_62_var_2_descr"
+msgstr ""
+"In the early 1960s, Mobile Vehicle Engineering Institute #100 in Leningrad "
+"developed a medium tank with the code name ST‑62 Version 2. An emphasis was "
+"put on protecting the vehicle from the destructive effects of nuclear "
+"weapons (i.e., radiation and shock waves). Initially, the project suggested "
+"an unmanned turret, with the whole crew being placed in the hull. However, "
+"partners could not produce the autoloader and electronics in time, so a "
+"loader/autoloader operator was placed in the turret, as the loading process "
+"could not be fully automated. Instead of the standard viewing devices, "
+"television observation was planned to be used. Cameras were placed on the "
+"front of the hull and on the turret. Gun operation was also supposed to be "
+"remote. The tank was developed with multiple gun and engine variants. The "
+"project did not go beyond the blueprint stage."
+
+msgid "R194_ST_62_var_2_long_special"
+msgstr ""
+"A Soviet medium tank with a 100 mm gun and an inverse autoreloader. The "
+"vehicle boasts its powerful armament, good armor, and admirable mobility. In "
+"addition, its small dimensions make this tank a hard target to hit."
+
+msgid "R194_ST_62_var_2_short"
+msgstr "ST-62 Ver. 2"
+
+msgid "R194_ST_62_var_2_short_special"
+msgstr "Good mobility and an autoreloader"
 
 msgid "R195_T34M_54"
 msgstr "T-34M-54"
@@ -3199,6 +3228,59 @@ msgstr "KV-1SA"
 
 msgid "R197_KV_1S_MZ_short_special"
 msgstr "An inverse autoreloader and good rate of fire"
+
+msgid "R202_SU_2_122"
+msgstr "SU-2-122"
+
+msgid "R202_SU_2_122_descr"
+msgstr ""
+"In December 1942, Soviet engineers had an idea to build a multi-barrel tank "
+"destroyer based on the modified chassis of the T-34. One of the projects was "
+"an unusual twin howitzer, which was to be named the SU-2-122. The project "
+"was discontinued at the blueprints stage and remained in the archives, where "
+"it was recently discovered."
+
+msgid "R202_SU_2_122_long_special"
+msgstr ""
+"This is the first Soviet tank destroyer using the double-barreled gun "
+"system. Thanks to its powerful HE shells, it can cause devastating damage to "
+"opponents, after which point it is not too enjoyable for them to continue "
+"fighting. The gun's features do not allow for sharpshooting and call for "
+"fighting at close range."
+
+msgid "R202_SU_2_122_short"
+msgstr "SU-2-122"
+
+msgid "R202_SU_2_122_short_special"
+msgstr "A double-barreled gun system and powerful HE shells"
+
+msgid "R205_Tank_Rozanova"
+msgstr "TITT Rozanov"
+
+msgid "R205_Tank_Rozanova_descr"
+msgstr ""
+"A project of the self-taught engineer Rozanov. The fighting tank had thick, "
+"angled armor plates, its suspension was protected by folding screens, and "
+"the main feature was the addition of driven \"battle rollers\" in the front. "
+"They were supposed to protect suspension from mines and shells and, if "
+"needed, be raised up. Rozanov's other ideas included armored protection for "
+"tank-borne infantry, as well as a shell delivery system involving a chain-"
+"driven autoloader. The project was rejected by GABTU, as \"battle rollers\" "
+"could not be used as a mine clearer in reality, and some other suggestions "
+"were not developed enough from an engineering standpoint."
+
+msgid "R205_Tank_Rozanova_long_special"
+msgstr ""
+"A Soviet Tier VIII medium tank with an accurate and rapid-firing 85 mm gun "
+"that deals huge amounts of damage per minute. In addition to the sturdy "
+"armor, this low-profile vehicle also has screens on the sides that provide "
+"additional protection, allowing you to harness the vehicle's full potential."
+
+msgid "R205_Tank_Rozanova_short"
+msgstr "TITT"
+
+msgid "R205_Tank_Rozanova_short_special"
+msgstr "High rate of fire and low profile"
 
 msgid "R20_T-44_FL_long_special"
 msgstr ""
@@ -3360,25 +3442,6 @@ msgstr "Object 140 CL"
 msgid "R97_Object_140_cl_short"
 msgstr "Obj. 140 CL"
 
-msgid "R97_Object_140_hound_TLXXL"
-msgstr "Resistor"
-
-msgid "R97_Object_140_hound_TLXXL_descr"
-msgstr ""
-"One morning long ago, a crow was flying over an open field. In the corner of "
-"its eye, it spotted a long, mysterious snake. Delighted to have chanced upon "
-"such a rare delicacy, the crow quickly grounded itself and charged right in "
-"to snap up the tasty treat. However, the crow was so shocked that it, like a "
-"thunderbolt out of the blue, quickly flew off without resistance. The moral "
-"of this story? When you see a power cable, conduct yourself like normal for "
-"electrifying adventures may prove too jolting."
-
-msgid "R97_Object_140_hound_TLXXL_short"
-msgstr "Resistor"
-
-msgid "R97_Object_140_hound_TLXXL_short_special"
-msgstr "Major modernization of the main battle tank"
-
 msgid "R98_T44_85M_long_special"
 msgstr ""
 "A Tier VIII Soviet light tank with great mobility and an accurate gun with a "
@@ -3393,8 +3456,8 @@ msgid "R98_T44_85_long_special"
 msgstr ""
 "A Tier VII Soviet medium tank with great mobility and firepower, but "
 "extremely weak armor. It can quickly take an advantageous position and "
-"perform the role of a sniper. However, the tank is also good at \"outcircling"
-"\" enemy heavy tanks and causing them problems."
+"perform the role of a sniper. However, the tank is also good at "
+"\"outcircling\" enemy heavy tanks and causing them problems."
 
 msgid "R98_T44_85_short_special"
 msgstr "Good damage per minute and great dynamics"
@@ -3709,22 +3772,6 @@ msgstr ""
 msgid "SU76I"
 msgstr "SU-76I"
 
-msgid "SU76I_bootcamp"
-msgstr "SU-76I"
-
-msgid "SU76I_bootcamp_descr"
-msgstr ""
-"The first prototype of the SU-76I (\"I\" stands for \"foreign\" in Russian) "
-"was created in March of 1943 on the basis of the captured German StuG III "
-"and Pz.Kpfw. III vehicles, and featured the Soviet 76-mm F-34 gun. A total "
-"of 200 vehicles were manufactured. The SU-76I participated in combat actions "
-"until the summer of 1944 and was used for training purposes until the end of "
-"the war. The SU-85I was supposed to become the next stage of vehicle "
-"development."
-
-msgid "SU76I_bootcamp_short"
-msgstr "SU-76I"
-
 msgid "SU76I_descr"
 msgstr ""
 "The first prototype of the SU-76I (\"I\" stands for \"foreign\" in Russian) "
@@ -3778,12 +3825,6 @@ msgstr "T-18"
 msgid "T-18_Standart"
 msgstr "MS-1 mod. 1927"
 
-msgid "T-18_Standart_bot"
-msgstr "MS-1 mod. 1927"
-
-msgid "T-18_bot"
-msgstr "MS-1"
-
 msgid "T-18_mod"
 msgstr "MS-1 mod. 1930"
 
@@ -3796,17 +3837,6 @@ msgstr "T-26F"
 msgid "T-26M"
 msgstr "T-26M"
 
-msgid "T-26_bot"
-msgstr "T-26"
-
-msgid "T-26_bot_descr"
-msgstr ""
-"A light tank developed on the basis of the U.K. Vickers Mk. E. tank at the "
-"beginning of the 1930s. The vehicle was designed for supporting infantry and "
-"came in several modifications. It also served as a basis for various special "
-"vehicles and SPGs that were not widely used. From 1931 through 1941, 9,686 "
-"vehicles of various modifications and configurations were produced."
-
 msgid "T-26_conic"
 msgstr "T-26 mod. 1938"
 
@@ -3814,12 +3844,6 @@ msgid "T-26_conic_short"
 msgstr "T-26 mod. 1938"
 
 msgid "T-26_cylindrical"
-msgstr "T-26 mod. 1936–1937"
-
-msgid "T-26_cylindrical_bot"
-msgstr "T-26 mod. 1936–1937"
-
-msgid "T-26_cylindrical_bot_short"
 msgstr "T-26 mod. 1936–1937"
 
 msgid "T-26_cylindrical_short"
@@ -4162,9 +4186,6 @@ msgstr ""
 msgid "TD-12"
 msgstr "TD-12"
 
-msgid "TD-12_WT"
-msgstr "TD-12 \"Resistor\""
-
 msgid "TD-30"
 msgstr "M-50D"
 
@@ -4231,9 +4252,6 @@ msgid "Turret_1_KV4"
 msgstr "KV-4"
 
 msgid "Turret_1_LTP"
-msgstr "LTP"
-
-msgid "Turret_1_LTP_bootcamp"
 msgstr "LTP"
 
 msgid "Turret_1_Object263B"
@@ -4437,6 +4455,9 @@ msgstr "LT-432"
 msgid "Turret_1_R159_SU_130PM"
 msgstr "SU-130PM"
 
+msgid "Turret_1_R159_SU_130PM_DR"
+msgstr "Forest Spirit"
+
 msgid "Turret_1_R160_T_50_2"
 msgstr "T-34S"
 
@@ -4497,17 +4518,29 @@ msgstr "Object 259A"
 msgid "Turret_1_R188_Object_259A_CN"
 msgstr "Udarniy"
 
+msgid "Turret_1_R191_Object_283"
+msgstr "Obj. 283"
+
 msgid "Turret_1_R192_K_2"
 msgstr "K-2"
 
 msgid "Turret_1_R193_M4A2_T_34"
 msgstr "T-34 mod. 1942"
 
+msgid "Turret_1_R194_ST_62_var_2"
+msgstr "ST-62 Version 2"
+
 msgid "Turret_1_R195_T34M_54"
 msgstr "T-54 first prototype mod. 1945"
 
 msgid "Turret_1_R197_KV_1S_MZ"
 msgstr "KV-1SA"
+
+msgid "Turret_1_R202_SU_2_122"
+msgstr "SU-2-122"
+
+msgid "Turret_1_R205_Tank_Rozanova"
+msgstr "TITT Rozanov"
 
 msgid "Turret_1_R71_IS_2B"
 msgstr "IS-122"
@@ -4517,9 +4550,6 @@ msgstr "Object 263"
 
 msgid "Turret_1_R96_Object_430"
 msgstr "Object 430"
-
-msgid "Turret_1_R97_Object_140_hound_TLXXL"
-msgstr "Object 140 \"Resistor\""
 
 msgid "Turret_1_ST_I"
 msgstr "Object 701-1"
@@ -4543,9 +4573,6 @@ msgid "Turret_1_SU14_1"
 msgstr "SU-14-1"
 
 msgid "Turret_1_SU76I"
-msgstr "SU-76I"
-
-msgid "Turret_1_SU76I_bootcamp"
 msgstr "SU-76I"
 
 msgid "Turret_1_SU_85I"
@@ -4782,6 +4809,9 @@ msgstr "V-2-34M"
 msgid "V-2-34_B"
 msgstr "V-2-34"
 
+msgid "V-2-34_C"
+msgstr "V-2-34C"
+
 msgid "V-2-34_MapsTraining_Player_MT_1"
 msgstr "V-2-34"
 
@@ -4905,6 +4935,9 @@ msgstr "B-12-5B"
 msgid "V_12_6V_1"
 msgstr "V-12-6V1"
 
+msgid "V_12_7"
+msgstr "V-12-7"
+
 msgid "V_2K"
 msgstr "V-2K"
 
@@ -4919,6 +4952,9 @@ msgstr "V-2-34A"
 
 msgid "V_2_34E"
 msgstr "V-2-34E"
+
+msgid "V_2_IS_520_Roz"
+msgstr "V-2-IS TITT"
 
 msgid "V_3BT"
 msgstr "V-3BT"
@@ -4937,6 +4973,9 @@ msgstr "B-54S"
 
 msgid "V_54_105"
 msgstr "V-54-105"
+
+msgid "V_54_105_DR"
+msgstr "V-54-105D"
 
 msgid "V_64"
 msgstr "V-64"
@@ -4978,6 +5017,9 @@ msgstr "ZiS-16"
 msgid "_100mm_3UBK4"
 msgstr "3UBK4"
 
+msgid "_100mm_3UBK4A"
+msgstr "3UBK4A"
+
 msgid "_100mm_3UBK4M"
 msgstr "3UBK4M"
 
@@ -5017,6 +5059,9 @@ msgstr "3VBM-2"
 msgid "_100mm_3VOF"
 msgstr "3VOF"
 
+msgid "_100mm_BR-412A"
+msgstr "UBR-412A"
+
 msgid "_100mm_BR-412D"
 msgstr "UBR-412D"
 
@@ -5053,9 +5098,6 @@ msgstr "100 mm D-54TS"
 msgid "_100mm_D54_TS"
 msgstr "100 mm U-8TS"
 
-msgid "_100mm_D54_TS_WT"
-msgstr "100 mm U-8TS \"Resistor\""
-
 msgid "_100mm_D54_TS_fallout"
 msgstr "100 mm U-8TS"
 
@@ -5074,6 +5116,9 @@ msgstr "100 mm D-46T"
 msgid "_100mm_D_46TK"
 msgstr "100 mm D-46TK"
 
+msgid "_100mm_D_46T_P"
+msgstr "100 mm D-46TP"
+
 msgid "_100mm_LB-1"
 msgstr "100 mm LB-1"
 
@@ -5088,6 +5133,9 @@ msgstr "100 mm LB-1C"
 
 msgid "_100mm_M-63"
 msgstr "100 mm M-63"
+
+msgid "_100mm_NT_12"
+msgstr "100 mm NT-12"
 
 msgid "_100mm_S34"
 msgstr "100 mm S-34"
@@ -5134,21 +5182,6 @@ msgstr "UBR-412PBM"
 msgid "_100mm_UBR-412PBU"
 msgstr "UBR-412P"
 
-msgid "_100mm_UBR-412PB_WT"
-msgstr "Silver Bullet"
-
-msgid "_100mm_UBR-412PB_WT_descr"
-msgstr "Pride of the Alliance armorers"
-
-msgid "_100mm_UBR-412PB_WT_long_special"
-msgstr ""
-"Each overloaded Generator will weaken Ermelinda's shield and increase the "
-"damage to her vehicle. Damage does not decrease during the enemy's "
-"vulnerability phase."
-
-msgid "_100mm_UBR-412PB_WT_short_special"
-msgstr "Damage Increases During the Battle"
-
 msgid "_100mm_UBR-412PB_fallout"
 msgstr "UBR-412PB R"
 
@@ -5167,6 +5200,9 @@ msgstr "UOF-412"
 msgid "_100mm_UOF-412-DG"
 msgstr "UOF-412U"
 
+msgid "_100mm_UOF-412A"
+msgstr "UOF-412A"
+
 msgid "_100mm_UOF-412B"
 msgstr "UOF-412B"
 
@@ -5175,6 +5211,15 @@ msgstr "UOF-412B1"
 
 msgid "_100mm_UOF-412BM"
 msgstr "UOF-412BM"
+
+msgid "_100mm_ZUBK_81"
+msgstr "ZUBK-81"
+
+msgid "_100mm_ZUBM_101"
+msgstr "ZUBM-101"
+
+msgid "_100mm_ZUOF_121"
+msgstr "ZUOF-121"
 
 msgid "_107mm_9S1"
 msgstr "107 mm 9S1"
@@ -5265,9 +5310,6 @@ msgstr "10RT-26"
 
 msgid "_10RT_26E"
 msgstr "10RT-26E"
-
-msgid "_10R_bootcamp"
-msgstr "10R"
 
 msgid "_12.7mm_AP_B32"
 msgstr "B-32"
@@ -5401,6 +5443,9 @@ msgstr "BP-463"
 msgid "_122mm_BP450S"
 msgstr "BP-460A"
 
+msgid "_122mm_BP450S-DG"
+msgstr "BP-460P"
+
 msgid "_122mm_BP450SO"
 msgstr "BP-460AO"
 
@@ -5500,6 +5545,9 @@ msgstr "OF-462"
 msgid "_122mm_OF420S"
 msgstr "OF-420S"
 
+msgid "_122mm_OF420S-DG"
+msgstr "OF-42OP"
+
 msgid "_122mm_OF420SO"
 msgstr "OF-420SO"
 
@@ -5584,6 +5632,9 @@ msgstr "VBR-472B"
 msgid "_122mm_cannon_M-30S"
 msgstr "122 mm M-30S"
 
+msgid "_122mm_cannon_M-30_1938_dualgun"
+msgstr "122 mm Howitzer M-30 mod. 1938"
+
 msgid "_122mm_cannon_U-11"
 msgstr "122 mm U-11"
 
@@ -5601,6 +5652,9 @@ msgstr "12LL"
 
 msgid "_12RT"
 msgstr "12RT"
+
+msgid "_12RT_Roz"
+msgstr "12RT TITT"
 
 msgid "_12RT_SH"
 msgstr "12RT-DV"
@@ -5661,6 +5715,9 @@ msgstr "130 mm M-65"
 
 msgid "_130mm_M_65S"
 msgstr "130 mm M-65S"
+
+msgid "_130mm_M_65S_DR"
+msgstr "130 mm M-65D"
 
 msgid "_130mm_OF-46"
 msgstr "OF-46"
@@ -5872,19 +5929,10 @@ msgstr "G-620"
 msgid "_20mm_BC-20"
 msgstr "BC-20"
 
-msgid "_20mm_BC-20_bootcamp"
-msgstr "BC-20"
-
 msgid "_20mm_TNSH"
 msgstr "20 mm TNSh"
 
-msgid "_20mm_TNSH_bootcamp"
-msgstr "20 mm TNSh"
-
 msgid "_20mm_UBR-20"
-msgstr "UBR-20"
-
-msgid "_20mm_UBR-20_bootcamp"
 msgstr "UBR-20"
 
 msgid "_23mm_BC-23"
@@ -5929,19 +5977,10 @@ msgstr "M74"
 msgid "_37mm_B-3"
 msgstr "37 mm B-3"
 
-msgid "_37mm_B-3_bootcamp"
-msgstr "37 mm B-3"
-
-msgid "_37mm_B-3_bot"
-msgstr "37 mm B-3"
-
 msgid "_37mm_BPT1"
 msgstr "BPT1"
 
 msgid "_37mm_Gochkins"
-msgstr "37 mm Hotchkiss"
-
-msgid "_37mm_Gochkins_bot"
 msgstr "37 mm Hotchkiss"
 
 msgid "_37mm_HE_M63_LL"
@@ -5956,15 +5995,6 @@ msgstr "UBR-160"
 msgid "_37mm_UBR-160P"
 msgstr "UBR-160P"
 
-msgid "_37mm_UBR-160P_bootcamp"
-msgstr "UBR-160P"
-
-msgid "_37mm_UBR-160_bootcamp"
-msgstr "UBR-160"
-
-msgid "_37mm_UBR-160_bot"
-msgstr "UBR-160"
-
 msgid "_37mm_UBR160PA"
 msgstr "UBR-160PA"
 
@@ -5974,16 +6004,10 @@ msgstr "UBR-160 bis"
 msgid "_37mm_UBRT1"
 msgstr "UBRT1"
 
-msgid "_37mm_UBRT1_bot"
-msgstr "UBRT1"
-
 msgid "_37mm_UO160A"
 msgstr "UO-160A"
 
 msgid "_37mm_UOF-160"
-msgstr "UOF-160"
-
-msgid "_37mm_UOF-160_bootcamp"
 msgstr "UOF-160"
 
 msgid "_37mm_UOT1"
@@ -6007,17 +6031,11 @@ msgstr "45 mm 20K"
 msgid "_45mm_20KL"
 msgstr "45 mm 20KL"
 
-msgid "_45mm_20KL_bootcamp"
-msgstr "45 mm 20K(l)"
-
 msgid "_45mm_20KM"
 msgstr "45 mm 20KM"
 
 msgid "_45mm_20K_S"
 msgstr "45 mm 20KS"
-
-msgid "_45mm_20K_bootcamp"
-msgstr "45 mm 20K"
 
 msgid "_45mm_21KMT"
 msgstr "45 mm 21-KMT"
@@ -6025,13 +6043,7 @@ msgstr "45 mm 21-KMT"
 msgid "_45mm_UBR-240A"
 msgstr "UBR-240A"
 
-msgid "_45mm_UBR-240A_bootcamp"
-msgstr "UBR-240A"
-
 msgid "_45mm_UBR-240PA"
-msgstr "UBR-240PA"
-
-msgid "_45mm_UBR-240PA_bootcamp"
 msgstr "UBR-240PA"
 
 msgid "_45mm_UBR-243"
@@ -6056,9 +6068,6 @@ msgid "_45mm_UO-243"
 msgstr "UO-243"
 
 msgid "_45mm_UOF-240A"
-msgstr "UOF-240A"
-
-msgid "_45mm_UOF-240A_bootcamp"
 msgstr "UOF-240A"
 
 msgid "_45mm_UOF-243"
@@ -6133,6 +6142,9 @@ msgstr "5TD"
 msgid "_5TDF"
 msgstr "5TDF"
 
+msgid "_5TDF_O"
+msgstr "5TFD (experimental)"
+
 msgid "_5TDF_S"
 msgstr "5TDF-S"
 
@@ -6145,17 +6157,11 @@ msgstr "AP Mk. 1T"
 msgid "_71-TK-1"
 msgstr "71-TK-1"
 
-msgid "_71-TK-1_bot"
-msgstr "71-TK-1"
-
 msgid "_71-TK-3"
 msgstr "71-TK-3"
 
 msgid "_71-TK-3U"
 msgstr "71-TK-3U"
-
-msgid "_71-TK-3_bootcamp"
-msgstr "71-TK-3"
 
 msgid "_71_TK_1SH"
 msgstr "71-TK-1SH"
@@ -6188,9 +6194,6 @@ msgid "_76mm_F-34"
 msgstr "76 mm F-34"
 
 msgid "_76mm_F-34S_A"
-msgstr "76 mm S-1"
-
-msgid "_76mm_F-34S_A_bootcamp"
 msgstr "76 mm S-1"
 
 msgid "_76mm_F_32"
@@ -6250,9 +6253,6 @@ msgstr "76 mm S-54S"
 msgid "_76mm_UBR-354A"
 msgstr "UBR-354A"
 
-msgid "_76mm_UBR-354A_bootcamp"
-msgstr "UBR-354A"
-
 msgid "_76mm_UBR-354KA"
 msgstr "UBR-354KA"
 
@@ -6266,9 +6266,6 @@ msgid "_76mm_UBR-354MA_MapsTraining_Player_MT_1"
 msgstr "UBR-354MA"
 
 msgid "_76mm_UBR-354MP"
-msgstr "UBR-354MP"
-
-msgid "_76mm_UBR-354MP_bootcamp"
 msgstr "UBR-354MP"
 
 msgid "_76mm_UBR_350P"
@@ -6288,9 +6285,6 @@ msgstr "UOF-354KA"
 
 msgid "_76mm_UOF-354M"
 msgstr "UOF-354M"
-
-msgid "_76mm_UOF-354_bootcamp"
-msgstr "UOF-354"
 
 msgid "_76mm_ZiS-3_mod_42"
 msgstr "76 mm ZiS-3"
@@ -6357,6 +6351,18 @@ msgstr "85 mm F-30"
 
 msgid "_85mm_F-30A"
 msgstr "85 mm F-30"
+
+msgid "_85mm_H_3_457"
+msgstr "85 mm N-3-457"
+
+msgid "_85mm_H_3_UBR_365K"
+msgstr "UBR-365K-85"
+
+msgid "_85mm_H_3_UBR_365P"
+msgstr "UBR-365P-85"
+
+msgid "_85mm_H_3_UOF_365K"
+msgstr "OF-365K-85"
 
 msgid "_85mm_LB-2S"
 msgstr "85 mm LB-2S"
@@ -6465,9 +6471,6 @@ msgstr "9RU"
 
 msgid "_9RU_CN"
 msgstr "9RU C"
-
-msgid "_9R_bootcamp"
-msgstr "9R"
 
 msgid "chassisE1_LL"
 msgstr "Stuart E1"

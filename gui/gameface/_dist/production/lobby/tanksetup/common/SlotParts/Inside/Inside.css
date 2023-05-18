@@ -1,0 +1,120 @@
+.Bonus_base_dd {
+    width: 54rem;
+    height: 54rem;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+    .Bonus_base__fitting_d1 {
+        opacity: .5;
+    }
+.Bonus_icon_3b {
+    width: 96rem;
+    height: 96rem;
+    background: no-repeat center / contain;
+    position: absolute;
+}
+.Bonus_icon__battleBooster_66 {
+        top: -14rem;
+        left: -20rem;
+    }
+.Bonus_icon__battleBoosterReplace_8d {
+        top: -12rem;
+        left: -20rem;
+    }
+.Bonus_icon__equipmentPlus_48 {
+        top: -28rem;
+        left: -20rem;
+    }
+.Bonus_icon__builtInEquipment_77 {
+        top: -21rem;
+        left: -23rem;
+    }
+.Bonus_icon__equipmentModernized_76 {
+        top: -23rem;
+        left: -19rem;
+    }
+.Bonus_icon__equipmentTrophyBasic_a4,
+    .Bonus_icon__equipmentTrophyUpgraded_6d {
+        top: -23rem;
+        left: -19rem;
+    }
+
+.Level_base_57 {
+    height: 16rem;
+    background: center center / contain no-repeat;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+    .Level_base__level1_c4 {
+        width: 9rem;
+    }
+
+    .Level_base__level2_9c {
+        width: 12rem;
+    }
+
+    .Level_base__level3_39 {
+        width: 15rem;
+    }
+
+    .Level_base__level4_e3 {
+        width: 16rem;
+    }
+
+    .Level_base__level5_ea {
+        width: 14rem;
+    }
+
+    .Level_base__level6_5d {
+        width: 17rem;
+    }
+
+    .Level_base__level7_03 {
+        width: 20rem;
+    }
+
+    .Level_base__level8_b5 {
+        width: 23rem;
+    }
+
+    .Level_base__level9_d6 {
+        width: 17rem;
+    }
+
+    .Level_base__level10_89 {
+        width: 15rem;
+    }
+
+.Inside_image_e5 {
+    width: 48rem;
+    height: 48rem;
+    padding: 6rem;
+    background: no-repeat center / contain;
+}
+
+    .Inside_image__fitting_11 {
+        opacity: .5;
+    }
+.Inside_warning_e4 {
+    width: 54rem;
+    height: 54rem;
+    background: url('R.images.gui.maps.icons.library.icon_alert_32x32') no-repeat center / 32rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.Inside_change_5a {
+    width: 20rem;
+    height: 20rem;
+    background: url('R.images.gui.maps.icons.tanksetup.panel.change') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+

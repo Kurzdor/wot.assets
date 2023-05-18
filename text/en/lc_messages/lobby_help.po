@@ -73,6 +73,9 @@ msgstr "Battle Modes"
 msgid "header/finance-block"
 msgstr "Game Currency"
 
+msgid "header/personal-reserves"
+msgstr "Reserves"
+
 msgid "header/premium-button"
 msgstr "Account Type"
 

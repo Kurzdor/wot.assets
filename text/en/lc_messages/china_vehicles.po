@@ -22,6 +22,9 @@ msgstr "A-220B"
 msgid "A-220B_1P"
 msgstr "A-220B"
 
+msgid "A-220B_1_MK"
+msgstr "A-220B MK"
+
 msgid "A-220B_1_SH"
 msgstr "A-220B1"
 
@@ -179,20 +182,6 @@ msgstr ""
 
 msgid "Ch06_Renault_NC31"
 msgstr "Renault NC-31"
-
-msgid "Ch06_Renault_NC31_bot"
-msgstr "Renault NC-31"
-
-msgid "Ch06_Renault_NC31_bot_descr"
-msgstr ""
-"A Renault FT modification with a new chassis that used long-stroke "
-"suspension elements and Kégresse-Hinstin fanged rubber tracks with metal "
-"shoes. These features, along with an upgraded 45 h.p. engine, increased the "
-"top speed to 16 km/h. A total of 15 vehicles of this type were exported to "
-"China."
-
-msgid "Ch06_Renault_NC31_bot_short"
-msgstr "NC-31"
 
 msgid "Ch06_Renault_NC31_descr"
 msgstr ""
@@ -496,6 +485,32 @@ msgstr "Good mobility and view range"
 msgid "Ch25_121_mod_1971B"
 msgstr "121B"
 
+msgid "Ch25_121_mod_1971B_MK"
+msgstr "Monkey King"
+
+msgid "Ch25_121_mod_1971B_MK_descr"
+msgstr ""
+"An external modification of the tank that was created for parades—it is "
+"based on Sun Wukong, a legendary Chinese mythical figure, best known from "
+"the novel, \"Journey to the West.\" The character is very complex, but in a "
+"nutshell, he is the embodiment of cunning, mischief, and rebellion. He "
+"possesses 72 unique abilities, some of which can be applied on the "
+"battlefield while controlling a tank with such a unique exterior."
+
+msgid "Ch25_121_mod_1971B_MK_long_special"
+msgstr ""
+"A Chinese medium tank with a unique style. Proper usage of the turret armor "
+"and the low profile will allow for hull-down play. Comfortable view range "
+"and concealment parameters will let you spot the enemy first, and a nice "
+"combination of reload time and damage per shot will make you efficient even "
+"in the most difficult situations."
+
+msgid "Ch25_121_mod_1971B_MK_short"
+msgstr "Monkey King"
+
+msgid "Ch25_121_mod_1971B_MK_short_special"
+msgstr "Good damage per shot and mobility, with a unique exterior"
+
 msgid "Ch25_121_mod_1971B_descr"
 msgstr ""
 "The upgraded version of the 121 Chinese medium tank, developed in the 1960s. "
@@ -738,11 +753,11 @@ msgstr "Good damage per shot and penetration, and great dynamics"
 msgid "Ch41_WZ_111_5A"
 msgstr "WZ-111 model 5A"
 
-msgid "Ch41_WZ_111_5A_bob"
-msgstr "WZ-111 model 5A BB"
+msgid "Ch41_WZ_111_5A_7x7"
+msgstr "WZ-111 model 5A 7v7"
 
-msgid "Ch41_WZ_111_5A_bob_short"
-msgstr "WZ-111 5A BB"
+msgid "Ch41_WZ_111_5A_7x7_short"
+msgstr "WZ-111 5A 7"
 
 msgid "Ch41_WZ_111_5A_descr"
 msgstr ""
@@ -901,6 +916,121 @@ msgstr ""
 msgid "Ch46_113_140_short_special"
 msgstr "High rate of fire and reliable armor"
 
+msgid "Ch47_BZ_176"
+msgstr "BZ-176"
+
+msgid "Ch47_BZ_176_descr"
+msgstr ""
+"In the 1960s, amid tense relations with the Soviet Union, China came up with "
+"the concept of creating \"frontier-covering forces.\" The main firepower of "
+"this formation was to be units with \"frontier-covering tanks\" in service. "
+"The design allowed the gun to depress through the turret top to reduce the "
+"overall vehicle height. In addition, the tank was set to feature twin tracks "
+"and jet boosters. Theoretically, due to the high specific power, they would "
+"provide good mobility and crossing capacity. The project was closed in 1978, "
+"and no prototypes were produced."
+
+msgid "Ch47_BZ_176_long_special"
+msgstr ""
+"A Tier VIII Premium Chinese tank with jet boosters that allows you to "
+"increase mobility in battle. Its good armor and powerful gun make the BZ-176 "
+"a formidable frontline assault vehicle."
+
+msgid "Ch47_BZ_176_short_special"
+msgstr "Jet boosters mechanics and a powerful gun"
+
+msgid "Ch48_BZ_75"
+msgstr "BZ-75"
+
+msgid "Ch48_BZ_75_descr"
+msgstr ""
+"In the 1960s, amid tense relations with the U.S.S.R., China came up with the "
+"concept of creating \"frontier-covering forces.\" The main firepower of this "
+"formation was to be units with \"frontier-covering tanks\" in service. One "
+"of the projects for such vehicles was the BZ-75, developed in 1975 using the "
+"experience gained developing the WZ‑111 heavy tank. While working on the "
+"turret, engineers incorporated the design features of the WZ‑1224 project. "
+"No BZ‑75 prototypes were manufactured."
+
+msgid "Ch48_BZ_75_short"
+msgstr "BZ-75"
+
+msgid "Ch49_BZ_68"
+msgstr "BZ-68"
+
+msgid "Ch49_BZ_68_descr"
+msgstr ""
+"One of the variants of the \"frontier-covering tank.\" The vehicle featured "
+"quite a simple yet technologically advanced hull and turret welded from flat "
+"plates. It was supposed to mount two solid-propellant jet boosters for "
+"crossing tough terrain, as well as for self-recovery. No prototypes were "
+"manufactured. The project was canceled during the design phase in 1969."
+
+msgid "Ch49_BZ_68_short"
+msgstr "BZ-68"
+
+msgid "Ch50_BZ_166"
+msgstr "BZ-166"
+
+msgid "Ch50_BZ_166_descr"
+msgstr ""
+"In the 1960s, Chinese engineers tried to keep up with the leading tank-"
+"building countries, so their projects included design solutions of different "
+"schools. The distinctive features of the BZ-166 heavy tank were the \"wavy\" "
+"surfaces of the frontal hull armor and the jet boosters. According to the "
+"design concept, such armor was to increase the chances of ricochets. The jet "
+"boosters could increase the vehicle's speed for a short time. It was planned "
+"to equip the tank with 122 to 160 mm guns and use it for operations in "
+"fortified areas, as well as to destroy enemy engineering structures. It "
+"existed only in blueprints."
+
+msgid "Ch50_BZ_166_short"
+msgstr "BZ-166"
+
+msgid "Ch51_BZ_58"
+msgstr "BZ-58"
+
+msgid "Ch51_BZ_58_descr"
+msgstr ""
+"Development began in the late 1950s under the concept of creating \"frontier-"
+"covering tanks.\" The project's distinctive feature was the combined hull: "
+"Its frontal armor was cast with large upper glacis slopes, while the rest of "
+"the hull was welded. The vehicle was supposed to feature an autoloader in "
+"the rear recess of the turret. The design of the turret itself was combined: "
+"The welded base was complemented by cast blocks on the vehicle's cheeks. No "
+"prototypes were manufactured, and the project was canceled in 1970."
+
+msgid "Ch51_BZ_58_short"
+msgstr "BZ-58"
+
+msgid "Ch52_WZ_122_6_F3"
+msgstr "116-F3"
+
+msgid "Ch52_WZ_122_6_F3_descr"
+msgstr ""
+"In the late 1970s, Chinese designers continued the development of a next-"
+"generation main battle tank. At this stage, they already had great "
+"experience in studying Western tank building designs, including those of the "
+"U.S.A. and Germany. The 116-F3 was a reserve project that differed in its "
+"elongated hull and suspension with seven pairs of support rollers. All this "
+"provided the opportunity to further improve the engine cooling system, as "
+"well as to enhance the frontal armor and integrate alternative designs of "
+"the main armament."
+
+msgid "Ch52_WZ_122_6_F3_long_special"
+msgstr ""
+"A Chinese heavy tank with a magazine loading system for three shells. Its "
+"large-caliber gun with good depression/elevation angles allows you to take "
+"advantage of terrain irregularities. Its sturdy turret can withstand many "
+"enemy hits. Additionally, the vehicle boasts a high reverse speed that can "
+"help you survive in difficult situations."
+
+msgid "Ch52_WZ_122_6_F3_short"
+msgstr "116-F3"
+
+msgid "Ch52_WZ_122_6_F3_short_special"
+msgstr "A powerful gun and reliable armor"
+
 msgid "Ch53_T_26_China"
 msgstr "T-26 CN"
 
@@ -920,16 +1050,66 @@ msgstr ""
 
 msgid "Ch53_T_26_China_long_special"
 msgstr ""
-"A Tier II Chinese light tank with the familiar features of the vehicle from "
-"the Soviet branch. Its balanced mobility and firepower provide excellent "
-"opportunities for both defensive and aggressive actions. It is a great "
-"choice for beginners just learning to play World of Tanks."
+"A Tier II Chinese light tank with features similar to those of the vehicle "
+"from the Soviet branch. Its balanced mobility and firepower provide "
+"excellent opportunities for both defensive and aggressive actions. It is a "
+"great choice for those who are just learning to play World of Tanks."
 
 msgid "Ch53_T_26_China_short"
 msgstr "T-26 CN"
 
 msgid "Ch53_T_26_China_short_special"
 msgstr "Good mobility and a high rate of fire"
+
+msgid "Ch58_111_Vz51"
+msgstr "WZ-111 model 6"
+
+msgid "Ch58_111_Vz51_descr"
+msgstr ""
+"The project of the 111 heavy tank was developed in the early 1960s. The "
+"vehicle was based on the designs of the Soviet IS-2 and IS-3 and was meant "
+"to be similar to the T-10. In addition, the Chinese designers managed to get "
+"the ČKD's concepts of the Czechoslovakian heavy tank turret of the late "
+"1950s, which they tried to use in one of the design versions."
+
+msgid "Ch58_111_Vz51_long_special"
+msgstr ""
+"The hull of the Chinese WZ-111 provides reliable overall armoring and good "
+"mobility for a heavy tank. The turret of the Czechoslovakian Vz. 51 gives "
+"excellent frontal armor and the opportunity to mount a great 105 mm gun with "
+"a high rate of fire and decent damage per shot. The tank is most effective "
+"at close and medium range."
+
+msgid "Ch58_111_Vz51_short"
+msgstr "WZ-111 6"
+
+msgid "Ch58_111_Vz51_short_special"
+msgstr "Reliable armor and a great gun"
+
+msgid "Ch59_BZ58_2"
+msgstr "BZ-58-2"
+
+msgid "Ch59_BZ58_2_descr"
+msgstr ""
+"Development began in the late 1950s under the concept of creating \"frontier-"
+"covering tanks.\" The distinctive feature was the combined hull: Its frontal "
+"armor was cast with large upper glacis slopes, while the rest of the hull "
+"was welded. One of the design versions was to mount a large cast turret, in "
+"the development of which the Chinese engineers were obviously inspired by "
+"the experience of their Polish colleagues."
+
+msgid "Ch59_BZ58_2_long_special"
+msgstr ""
+"A Chinese heavy tank with a unique combination of a reliable turret, "
+"powerful gun, and depression/elevation angles unusual for vehicles of this "
+"nation. Its well-armored turret means this vehicle can take advantage of "
+"terrain irregularities."
+
+msgid "Ch59_BZ58_2_short"
+msgstr "BZ-58-2"
+
+msgid "Ch59_BZ58_2_short_special"
+msgstr "A large-caliber gun and reliable turret"
 
 msgid "Chassis_01_Ch24_Type64_SH"
 msgstr "Type 64BL"
@@ -975,9 +1155,6 @@ msgstr "M24/25"
 
 msgid "Chassis_Ch06_Renault_NC31_2"
 msgstr "M26/27"
-
-msgid "Chassis_Ch06_Renault_NC31_bot"
-msgstr "M24/25"
 
 msgid "Chassis_Ch07_Vickers_MkE_Type_BT26"
 msgstr "Vickers Mk. E Type B"
@@ -1075,6 +1252,9 @@ msgstr "Type 64"
 msgid "Chassis_Ch25_121_mod_1971B"
 msgstr "121B"
 
+msgid "Chassis_Ch25_121_mod_1971B_MK"
+msgstr "Monkey King"
+
 msgid "Chassis_Ch26_59_Patton"
 msgstr "59-Patton"
 
@@ -1165,8 +1345,41 @@ msgstr "WZ-114"
 msgid "Chassis_Ch46_113_140"
 msgstr "Mod. 1963"
 
+msgid "Chassis_Ch47_BZ_176_2"
+msgstr "BZ-176"
+
+msgid "Chassis_Ch48_BZ_75"
+msgstr "BZ model 1975"
+
+msgid "Chassis_Ch49_BZ_68"
+msgstr "BZ-68"
+
+msgid "Chassis_Ch49_BZ_68_2"
+msgstr "BZ-68-1"
+
+msgid "Chassis_Ch50_BZ_166"
+msgstr "BZ-166"
+
+msgid "Chassis_Ch50_BZ_166_2"
+msgstr "BZ-166M"
+
+msgid "Chassis_Ch51_BZ_58"
+msgstr "BZ-58"
+
+msgid "Chassis_Ch51_BZ_58_2"
+msgstr "BZ-58M"
+
+msgid "Chassis_Ch52_WZ_122_6_F3"
+msgstr "116-F3"
+
 msgid "Chassis_Ch53_T_26_China"
 msgstr "T-26"
+
+msgid "Chassis_Ch58_111_Vz51"
+msgstr "WZ-111 model 6"
+
+msgid "Chassis_Ch59_BZ58_2"
+msgstr "BZ-58-2"
 
 msgid "Continental_AOSI_895_5_Prem_SH"
 msgstr "Continental AOSI895-5"
@@ -1188,17 +1401,23 @@ msgstr "Detroit Diesel 8V71T"
 msgid "ER_52"
 msgstr "ER 52"
 
-msgid "Fanions_de_signaux_bot"
-msgstr "Signal Flags"
-
 msgid "Franklin"
 msgstr "Franklin"
 
 msgid "Gun_Ch00_ClingeBot_SH"
 msgstr "Clinger"
 
+msgid "HS_110F"
+msgstr "HS 110F"
+
+msgid "MTU_8V_331"
+msgstr "MTU 8V 331"
+
 msgid "NORINCO_12150L7"
 msgstr "NORINCO 12150L"
+
+msgid "NORINCO_12150LM"
+msgstr "NORINCO 12150LM"
 
 msgid "NORINCO_12150LP"
 msgstr "NORINCO 12150LP"
@@ -1246,9 +1465,6 @@ msgid "Turret_1_Ch05_T34_2"
 msgstr "T-34-2"
 
 msgid "Turret_1_Ch06_Renault_NC31"
-msgstr "FT-17"
-
-msgid "Turret_1_Ch06_Renault_NC31_bot"
 msgstr "FT-17"
 
 msgid "Turret_1_Ch07_Vickers_MkE_Type_BT26"
@@ -1314,6 +1530,9 @@ msgstr "Type 64"
 msgid "Turret_1_Ch25_121_mod_1971B"
 msgstr "121B"
 
+msgid "Turret_1_Ch25_121_mod_1971B_MK"
+msgstr "Monkey King"
+
 msgid "Turret_1_Ch26_59_Patton"
 msgstr "59-Patton"
 
@@ -1377,8 +1596,32 @@ msgstr "WZ-114"
 msgid "Turret_1_Ch46_113_140"
 msgstr "Type 140"
 
+msgid "Turret_1_Ch47_BZ_176"
+msgstr "BZ-176"
+
+msgid "Turret_1_Ch48_BZ_75"
+msgstr "BZ model 1975"
+
+msgid "Turret_1_Ch49_BZ_68"
+msgstr "BZ-68"
+
+msgid "Turret_1_Ch50_BZ_166"
+msgstr "BZ-166"
+
+msgid "Turret_1_Ch51_BZ_58"
+msgstr "BZ-58"
+
+msgid "Turret_1_Ch52_WZ_122_6_F3"
+msgstr "116-F3"
+
 msgid "Turret_1_Ch53_T_26_China"
 msgstr "T-26"
+
+msgid "Turret_1_Ch58_111_Vz51"
+msgstr "WZ-111 model 6"
+
+msgid "Turret_1_Ch59_BZ58_2"
+msgstr "BZ-58-2"
 
 msgid "Turret_2_Ch04_T34_1"
 msgstr "T-34-1 model 2"
@@ -1431,6 +1674,15 @@ msgstr "Type T-34M"
 msgid "Turret_2_Ch31_M3G_FT"
 msgstr "M3G FT model 2"
 
+msgid "Turret_2_Ch49_BZ_68"
+msgstr "BZ-68-1"
+
+msgid "Turret_2_Ch50_BZ_166"
+msgstr "BZ-166-1"
+
+msgid "Turret_2_Ch51_BZ_58"
+msgstr "BZ-58-1"
+
 msgid "Turret_3_Ch29_Type_62C_prot_SH"
 msgstr "WZ-132-1BL"
 
@@ -1442,6 +1694,9 @@ msgstr "Twin Cadillac, Series 42"
 
 msgid "Type59_gold"
 msgstr "Type 59 G"
+
+msgid "Type_165"
+msgstr "Type-165"
 
 msgid "V-2"
 msgstr "V-2"
@@ -1455,8 +1710,20 @@ msgstr "V-2-54SC"
 msgid "V_2_54SCG"
 msgstr "V-2-54SCG"
 
+msgid "V_2_54SCG_2"
+msgstr "V-2-54SCG-2"
+
+msgid "V_2_54SCH"
+msgstr "V-2-54SCH"
+
+msgid "V_2_54SCM"
+msgstr "V-2-54SCM"
+
 msgid "V_2_54SCP"
 msgstr "V-2-54SCP"
+
+msgid "V_2_54SCR"
+msgstr "V-2-54SCR"
 
 msgid "V_2_54SC_QL"
 msgstr "V-2-54SC QL"
@@ -1509,6 +1776,12 @@ msgstr "Chuan jian-412G"
 msgid "_100mm_CJ-412GX"
 msgstr "Chuan jian-412GX"
 
+msgid "_100mm_Chuan_bei_59_2"
+msgstr "Chuan bei Type 59M"
+
+msgid "_100mm_Chuan_chao_59_2"
+msgstr "Chuan chao Type 59M"
+
 msgid "_100mm_D54_TA"
 msgstr "100 mm D-54TA"
 
@@ -1518,11 +1791,17 @@ msgstr "Sha bao-412G"
 msgid "_100mm_SB-412GX"
 msgstr "Sha bao-412GX"
 
+msgid "_100mm_SB_Type_59_2"
+msgstr "Sha bao Type 59M"
+
 msgid "_100mm_TC-412G"
 msgstr "Tuo chuan-412G"
 
 msgid "_100mm_TC-412GX"
 msgstr "Tuo chuan-412GX"
+
+msgid "_100mm_Type_59_2"
+msgstr "100 mm Type 59M"
 
 msgid "_100mm_UBR-412"
 msgstr "Chuan bei-412"
@@ -1536,6 +1815,12 @@ msgstr "Sha bao-412"
 msgid "_105mm_APDS_M392A2"
 msgstr "APDS M392A2"
 
+msgid "_105mm_APDS_M392A2_MK"
+msgstr "APDS M392A2 MK"
+
+msgid "_105mm_Chuan_bei_81-I"
+msgstr "Chuan bei-81-I"
+
 msgid "_105mm_F34M_G1_APCR_SH"
 msgstr "F34M APCR"
 
@@ -1548,14 +1833,32 @@ msgstr "105 mm F34"
 msgid "_105mm_HEAT_M456"
 msgstr "HEAT M456"
 
+msgid "_105mm_HEAT_M456_MK"
+msgstr "HEAT M456 MK"
+
 msgid "_105mm_HEP_M393A1"
 msgstr "HEP M393A1"
+
+msgid "_105mm_HEP_M393A1_MK"
+msgstr "HEP M393A1 MK"
 
 msgid "_105mm_L7A3C"
 msgstr "105 mm L7A3C"
 
 msgid "_105mm_L7C"
 msgstr "105 mm L7C"
+
+msgid "_105mm_L7C_MK"
+msgstr "105 mm L7C MK"
+
+msgid "_105mm_Po_81-I"
+msgstr "Po-81-I"
+
+msgid "_105mm_Sha_bao_81-I"
+msgstr "Sha bao-81-I"
+
+msgid "_105mm_Type_81-I"
+msgstr "105 mm Type 81-I"
 
 msgid "_120mm_CB-472LY"
 msgstr "Chuan bei-472LY"
@@ -1611,6 +1914,9 @@ msgstr "12150L7B"
 msgid "_12150L7BW"
 msgstr "12150L7BW"
 
+msgid "_12150L7B_MK"
+msgstr "12150L7B MK"
+
 msgid "_12150L7G"
 msgstr "12150L7G"
 
@@ -1635,8 +1941,14 @@ msgstr "12150LT2"
 msgid "_12150LTG"
 msgstr "12150LTG"
 
+msgid "_12150LTM"
+msgstr "12150LTM"
+
 msgid "_12150LZ"
 msgstr "NORINCO 12150L"
+
+msgid "_12150LZM"
+msgstr "NORINCO 12150L1M"
 
 msgid "_12150LZ_A"
 msgstr "NORINCO 12150L (a)"
@@ -1662,6 +1974,9 @@ msgstr "122 mm D-25TA"
 msgid "_122_mm_371_122JTX"
 msgstr "122 mm 371-122JTX"
 
+msgid "_122_mm_Type_59_2"
+msgstr "122 mm Type-59-2"
+
 msgid "_122mm_60_122TG_FT"
 msgstr "122 mm 60-122TG FT"
 
@@ -1674,6 +1989,9 @@ msgstr "122 mm 60-122TC"
 msgid "_122mm_CB-472"
 msgstr "Chuan bei-472"
 
+msgid "_122mm_Chuan_bei_Type_59"
+msgstr "Chuan bei Type 59-2"
+
 msgid "_122mm_D25_TG_FT"
 msgstr "122 mm D-25TG FT"
 
@@ -1683,8 +2001,14 @@ msgstr "GM 40HE"
 msgid "_122mm_PO-122"
 msgstr "Po-122"
 
+msgid "_122mm_Po_Type_59"
+msgstr "Po Type 59-2"
+
 msgid "_122mm_SB-472"
 msgstr "Sha bao-472"
+
+msgid "_122mm_Sha_bao_Type_59"
+msgstr "Sha bao Type 59-2"
 
 msgid "_122mm_Type_57"
 msgstr "Chuan bei-471"
@@ -1719,6 +2043,18 @@ msgstr "130 mm 59-130TA"
 msgid "_130mm_59_130TA_QL"
 msgstr "130 mm 59-130TA QL"
 
+msgid "_130mm_59_TP_A"
+msgstr "130 mm M-65 Type 70A"
+
+msgid "_130mm_59_TP_A_OF_46"
+msgstr "Sha bao M-65A"
+
+msgid "_130mm_59_TP_A_PB_46"
+msgstr "Chuan-bei M-65A"
+
+msgid "_130mm_59_TP_A_PB_46_A"
+msgstr "Tuo chuan M-65A"
+
 msgid "_130mm_AP"
 msgstr "Chuan bei-482"
 
@@ -1730,6 +2066,15 @@ msgstr "Chuan bei-462G"
 
 msgid "_130mm_Chuan_bei_482G"
 msgstr "Chuan bei-482G"
+
+msgid "_130mm_Chuan_bei_492"
+msgstr "Chuan bei-492"
+
+msgid "_130mm_Chuan_bei_492F"
+msgstr "Chuan bei-492F"
+
+msgid "_130mm_Chuan_bei_M_65"
+msgstr "Chuan bei M-65"
 
 msgid "_130mm_HE"
 msgstr "Sha bao-482"
@@ -1743,14 +2088,32 @@ msgstr "Po-130 QL"
 msgid "_130mm_HE_QL"
 msgstr "Sha bao-482 QL"
 
+msgid "_130mm_M_65_Type_70"
+msgstr "130 mm M-65 Type 70"
+
 msgid "_130mm_Po_130F"
 msgstr "Po-130F"
 
 msgid "_130mm_Po_130G"
 msgstr "Po-130G"
 
+msgid "_130mm_Po_M_65"
+msgstr "Po M-65"
+
 msgid "_130mm_Sha_bao_482G"
 msgstr "Sha bao-482G"
+
+msgid "_130mm_Sha_bao_492G"
+msgstr "Sha bao-492G"
+
+msgid "_130mm_Sha_bao_M_65"
+msgstr "Sha bao M-65"
+
+msgid "_130mm_Type_62"
+msgstr "130 mm Type-62"
+
+msgid "_152_mm_64_152T"
+msgstr "152 mm 64-152T"
 
 msgid "_152mm_59_152JG_FT"
 msgstr "152 mm 59-152JG FT"
@@ -1763,6 +2126,9 @@ msgstr "152 mm 59-152JG"
 
 msgid "_152mm_59_152JG_FT_HE_G6_SH"
 msgstr "59-152JG HE"
+
+msgid "_152mm_AP_T"
+msgstr "Chuan bei-152T"
 
 msgid "_152mm_Chuan_bei_547"
 msgstr "Chuan bei-547"
@@ -1779,11 +2145,26 @@ msgstr "GM 45CR"
 msgid "_152mm_GM_45HE"
 msgstr "GM 45HE"
 
+msgid "_152mm_HEAT_T"
+msgstr "Po-152T"
+
+msgid "_152mm_HE_T"
+msgstr "Sha bao-152T"
+
 msgid "_152mm_Po_152"
 msgstr "Po-152"
 
 msgid "_152mm_Sha_bao_547"
 msgstr "Sha bao-547"
+
+msgid "_160mm_56_160_BZS"
+msgstr "160 mm 56-160 BZS"
+
+msgid "_160mm_CB_76"
+msgstr "Chuan bei-76"
+
+msgid "_160mm_Sha_bao_76B"
+msgstr "Sha bao-76B"
 
 msgid "_2x_GAZ_203"
 msgstr "2x GAZ-203"
@@ -1795,9 +2176,6 @@ msgid "_37mm_APC_M51"
 msgstr "APC M51"
 
 msgid "_37mm_APX_SA18"
-msgstr "37 mm APX SA18"
-
-msgid "_37mm_APX_SA18_bot"
 msgstr "37 mm APX SA18"
 
 msgid "_37mm_AP_M74"
@@ -1819,9 +2197,6 @@ msgid "_37mm_OE_mle._1916"
 msgstr "OE mle. 1916"
 
 msgid "_37mm_Odr_mle._1935"
-msgstr "ODR mle. 1935"
-
-msgid "_37mm_Odr_mle._1935_bot"
 msgstr "ODR mle. 1935"
 
 msgid "_37mm_Pak"
@@ -2000,6 +2375,12 @@ msgstr "Chuan bei-367G"
 msgid "_85mm_CJ_365"
 msgstr "Chuan jian-365"
 
+msgid "_85mm_Chuan_bei_T58"
+msgstr "Chuan bei Type 58"
+
+msgid "_85mm_Chuan_chao_T58"
+msgstr "Chuan chao Type 58"
+
 msgid "_85mm_HEAT"
 msgstr "Po-365"
 
@@ -2014,6 +2395,9 @@ msgstr "Sha bao-365"
 
 msgid "_85mm_SB_367G"
 msgstr "Sha bao-367G"
+
+msgid "_85mm_SB_Type_58"
+msgstr "Sha bao Type 58"
 
 msgid "_85mm_Tip_56-85JT"
 msgstr "85 mm 56-85JT"
@@ -2039,6 +2423,9 @@ msgstr "85 mm Tip 64-85T"
 msgid "_85mm_Tip_64-85T_HEAT_G4_SH"
 msgstr "Tip 64-85T HEAT"
 
+msgid "_85mm_Type_58"
+msgstr "85 mm Type 58"
+
 msgid "_85mm_UBR"
 msgstr "Chuan bei-367"
 
@@ -2047,6 +2434,9 @@ msgstr "Sha bao-367"
 
 msgid "_8V135"
 msgstr "8V135"
+
+msgid "_8V135_M"
+msgstr "8V135-M"
 
 msgid "_90mm_AP_M318"
 msgstr "AP M318"
@@ -2078,8 +2468,11 @@ msgstr "9RM"
 msgid "_9R_SH"
 msgstr "9R"
 
-msgid "_Renault_M26_27_bot"
-msgstr "Renault M26/27"
+msgid "_MT_50_T"
+msgstr "12150TP"
+
+msgid "_R_113_P"
+msgstr "A-220P"
 
 msgid "_Renault_NC"
 msgstr "Renault NC-2"

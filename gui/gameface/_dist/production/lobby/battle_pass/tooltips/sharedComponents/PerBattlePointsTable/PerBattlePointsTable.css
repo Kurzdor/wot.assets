@@ -1,0 +1,69 @@
+.styles_base_86 {
+    line-height: normal;
+}
+.styles_separator_f8 {
+    width: 283rem;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Devider_points') 50% / contain no-repeat;
+}
+.styles_rewards_26 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 403rem;
+    height: 154rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Ribbon_large') bottom / cover no-repeat;
+    color: #c9c9b6;
+    font-size: 14rem;
+}
+.styles_base_86 {
+    display: flex;
+    flex-direction: row;
+    width: 403rem;
+    padding-left: 28rem;
+    padding-bottom: 10rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Gradient_devider') center top / 100% 40rem no-repeat;
+    position: relative;
+}
+.styles_separators_5c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 403rem;
+    position: absolute;
+}
+/* override*/
+.styles_separator_f8 {
+    position: absolute;
+    top: 80rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.styles_tableHeader_a0 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40rem;
+    color: #8c8c7e;
+    font-size: 14rem;
+}
+.styles_label_d5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+    font-size: 14rem;
+}
+.styles_label__table_9e {
+        justify-content: flex-start;
+        color: #8c8c7e;
+    }
+.styles_pointsColumn_20 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 25rem;
+}
+

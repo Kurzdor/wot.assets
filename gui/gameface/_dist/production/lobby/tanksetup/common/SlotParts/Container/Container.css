@@ -1,0 +1,77 @@
+.Container_base_9a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 54rem;
+    height: 54rem;
+    position: relative;
+}
+
+    .Container_base__grabbing_73 {
+        pointer-events: none;
+    }
+
+    .Container_base_9a {
+    background-image: linear-gradient(rgba(0,0,0, .45), rgba(0,0,0, .45));
+    cursor: pointer;
+}
+
+    .Container_base__hangar_ab:hover {
+        background-image: linear-gradient(rgba(0,0,0, .45), rgba(0,0,0, .45)),
+            linear-gradient(rgba(255,255,255, .15), rgba(255,255,255, .15));
+    }
+
+    .Container_base__setup_1c:hover {
+    box-shadow: inset 0 0 12rem rgba(255,255,255, .05);
+    background-image: linear-gradient(rgba(255,255,255, .05), rgba(255,255,255, .05));
+    }
+
+    .Container_base__compare_0b {
+        background-image: linear-gradient(rgba(255,255,255, .05), rgba(255,255,255, .05));
+    }
+
+    .Container_base__compare_0b:hover {
+            background-image: linear-gradient(rgba(255,255,255, .1), rgba(255,255,255, .1));
+        }
+
+    .Container_base__selected_17,
+    .Container_base__selected_17:hover {
+    box-shadow: 0 0 0 1rem rgba(249,201,111, .5),
+        inset 0 0 3rem rgba(255,96,0, .2),
+        inset 0 0 10rem rgba(255,0,0, .25),
+        0 0 10rem rgba(255,0,0, .25);
+    background-image: none;
+    cursor: default;
+    }
+
+    .Container_base__dragIn_a6 {
+    box-shadow: inset 0 0 12rem rgba(255,255,255, .05);
+    background-image: linear-gradient(rgba(255,255,255, .05), rgba(255,255,255, .05));
+    }
+
+    .Container_base__dragInActive_e5 {
+    box-shadow: 0 0 0 1rem rgba(249,201,111, .5),
+        inset 0 0 3rem rgba(255,96,0, .2),
+        inset 0 0 10rem rgba(255,0,0, .25),
+        0 0 10rem rgba(255,0,0, .25);
+    background-image: none;
+        background-image: linear-gradient(rgba(255,255,255, .05), rgba(255,255,255, .05));
+    }
+
+    .Container_base__toggle_94 {
+    border-image-source: url('R.images.gui.maps.icons.tanksetup.panel.toggle');
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    cursor: pointer;
+    }
+
+    .Container_base__toggle_94:hover {
+        background-image: linear-gradient(rgba(255,255,255, .2), rgba(255,255,255, .2));
+    }
+
+    .Container_base__disabled_22,
+    .Container_base__disabled_22:hover {
+    background-image: linear-gradient(rgba(0,0,0, .2), rgba(0,0,0, .2));
+    cursor: default;
+    }
+

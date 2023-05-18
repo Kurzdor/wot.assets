@@ -131,6 +131,17 @@ msgstr ""
 msgid "11YearsOfService_descr"
 msgstr "You have been in the game since %(regDate)s"
 
+msgid "12YearsOfService"
+msgstr "For 12 years of service"
+
+msgid "12YearsOfService_condition"
+msgstr ""
+"Awarded to players for their invaluable contribution to the evolution of "
+"World of Tanks."
+
+msgid "12YearsOfService_descr"
+msgstr "You have been in the game since %(regDate)s"
+
 msgid "BR2019Title15"
 msgstr "Taking Off"
 
@@ -181,6 +192,15 @@ msgstr ""
 
 msgid "BattlePassCommonPr_1"
 msgstr "With Flying Colors"
+
+msgid "BattlePassCommonPr_10"
+msgstr "Dark Desert"
+
+msgid "BattlePassCommonPr_10_condition"
+msgstr "• Awarded for completing all three Chapters."
+
+msgid "BattlePassCommonPr_10_descr"
+msgstr "Complete all Progression Stages during Battle Pass Season X."
 
 msgid "BattlePassCommonPr_1_condition"
 msgstr "• The Main Progression consists of 45 Stages."
@@ -279,11 +299,43 @@ msgstr "• Awarded for completing all three Chapters."
 msgid "BattlePassCommonPr_9_descr"
 msgstr "Complete all Progression Stages during Battle Pass Season IX."
 
+msgid "BattlePassCommonPr_NY23"
+msgstr "The Future Is Set"
+
+msgid "BattlePassCommonPr_NY23_condition"
+msgstr "• Awarded for completing the Progression."
+
+msgid "BattlePassCommonPr_NY23_descr"
+msgstr "Awarded for your achievements during Battle Pass: Judgment Day."
+
 msgid "BigAnniversaryMedal_CN"
 msgstr "Big Anniversary Medal"
 
 msgid "BigAnniversaryMedal_CN_descr"
 msgstr "Complete all Anniversary Missions during the 10th Anniversary event."
+
+msgid "Cosmic_MartianStalker"
+msgstr "Martian Stalker"
+
+msgid "Cosmic_MartianStalker_condition"
+msgstr ""
+"Awarded to all players who fulfilled the respective conditions during the "
+"special game event."
+
+msgid "Cosmic_MartianStalker_descr"
+msgstr ""
+"Complete three special missions in one day during the Call to Mars event."
+
+msgid "Cosmic_SpaceTrace"
+msgstr "Space Trace"
+
+msgid "Cosmic_SpaceTrace_condition"
+msgstr ""
+"Awarded to all players who fulfilled the respective conditions during the "
+"special game event."
+
+msgid "Cosmic_SpaceTrace_descr"
+msgstr "Complete the Call to Mars event progression."
 
 msgid "DdaymarathonMedal"
 msgstr "Ready to Land!"
@@ -849,6 +901,27 @@ msgstr "LegendArnie!"
 msgid "NY22_CelebChallenge_descr"
 msgstr ""
 "Awarded for completing all Missions From Arnie during Holiday Ops 2022."
+
+msgid "NY23_AtmsphrLevel"
+msgstr "It's Snow Time!"
+
+msgid "NY23_AtmsphrLevel_condition"
+msgstr ""
+"• You can enhance the Festive Atmosphere by increasing the object Levels in "
+"your Village.\n"
+"• Awarded to all players who fulfill the respective condition during Holiday "
+"Ops 2023."
+
+msgid "NY23_AtmsphrLevel_descr"
+msgstr "Reach Festive Atmosphere Level X by participating in Holiday Ops 2023."
+
+msgid "NY23_CelebChallenge"
+msgstr "First Take"
+
+msgid "NY23_CelebChallenge_descr"
+msgstr ""
+"Awarded for completing the corresponding Mission From Milla during Holiday "
+"Ops 2023."
 
 msgid "RP2018firstmed"
 msgstr "Exemplary Cadet, Class III"
@@ -1540,6 +1613,20 @@ msgstr ""
 msgid "collectorVehicle_descr"
 msgstr "Have all existing Collectors' vehicles in the Garage."
 
+msgid "comp7Season1"
+msgstr "Test Flight"
+
+msgid "comp7Season1_descr"
+msgstr "Awarded for participating in Season of the Griffin in Onslaught mode."
+
+msgid "comp7_2023_1"
+msgstr "Soaring Wings"
+
+msgid "comp7_2023_1_descr"
+msgstr ""
+"Awarded for completing a series of missions in Season of the Crimson Griffin "
+"in Onslaught mode."
+
 msgid "conqueror"
 msgstr "Capturer %(rank)s"
 
@@ -1611,6 +1698,12 @@ msgid "december21"
 msgstr "Achiever"
 
 msgid "december21_descr"
+msgstr "A unique medal included with Prime Gaming."
+
+msgid "december22"
+msgstr "Double Celebration"
+
+msgid "december22_descr"
 msgstr "A unique medal included with Prime Gaming."
 
 msgid "dedicationMedal1"
@@ -2309,6 +2402,28 @@ msgstr ""
 msgid "hw2021Medal2_descr"
 msgstr "Complete all Phases on high difficulty during the Mirny: Hope event."
 
+msgid "hw2022Medal01"
+msgstr "Spooky Adventure"
+
+msgid "hw2022Medal01_condition"
+msgstr ""
+"Awarded to all players who fulfill the special conditions during the event."
+
+msgid "hw2022Medal01_descr"
+msgstr ""
+"Complete all missions involving Combat Abilities during the Pumpkin Bash "
+"event."
+
+msgid "hw2022Medal02"
+msgstr "Grim Reaper"
+
+msgid "hw2022Medal02_condition"
+msgstr ""
+"Awarded to all players who fulfill the special conditions during the event."
+
+msgid "hw2022Medal02_descr"
+msgstr "Earn 65,000 Halloween Points during the Pumpkin Bash event."
+
 msgid "impenetrable"
 msgstr "Shellproof"
 
@@ -2395,6 +2510,12 @@ msgid "january21"
 msgstr "Charm"
 
 msgid "january21_descr"
+msgstr "A unique medal included with Prime Gaming."
+
+msgid "january23"
+msgstr "You've Been Spotted"
+
+msgid "january23_descr"
 msgstr "A unique medal included with Prime Gaming."
 
 msgid "july21"
@@ -3600,6 +3721,12 @@ msgstr "Until Valhalla!"
 msgid "november21_descr"
 msgstr "A unique medal included with Prime Gaming."
 
+msgid "november22"
+msgstr "All-Time Classic"
+
+msgid "november22_descr"
+msgstr "A unique medal included with Prime Gaming."
+
 msgid "occupyingForce"
 msgstr "Master Striker"
 
@@ -3627,6 +3754,12 @@ msgid "october21"
 msgstr "Trick or Trick"
 
 msgid "october21_descr"
+msgstr "A unique medal included with Prime Gaming."
+
+msgid "october22"
+msgstr "Bite Me!"
+
+msgid "october22_descr"
 msgstr "A unique medal included with Prime Gaming."
 
 msgid "oowCBTParticipant"
@@ -3685,6 +3818,8 @@ msgid "pattonValley_condition"
 msgstr ""
 "\t• M46 Patton\n"
 "\t• M46 Patton KR\n"
+"\t• M47 Iron Arnie\n"
+"\t• M47 Patton Improved\n"
 "\t• M48A5 Patton\n"
 "\t• M48A2/T54E2/T123E6\n"
 "\t• M60\n"
@@ -3692,7 +3827,7 @@ msgstr ""
 "• The total results for all vehicles are calculated.\n"
 "• Newly received awards are added together.\n"
 "• Vehicles destroyed in Random Battles, Ranked Battles, Advances, and in "
-"battles on the Global Map and in Frontline mode are counted."
+"battles on the Global Map and in the Frontline mode are counted."
 
 msgid "pattonValley_descr"
 msgstr "Destroy 100 Patton tanks, including:"
@@ -4277,13 +4412,13 @@ msgstr "The Lion of Sinai"
 msgid "sinai_condition"
 msgstr ""
 "• IS, IS-M, IS-2, IS-2M, IS-2&nbsp;shielded, IS-2-II, IS-3, IS-3-II, IS-3A, "
-"IS-4, IS-5, IS-6, IS-6 FL, IS-6 B, IS-7, Kirovets-1, T-10\n"
+"IS-4, IS-5, IS-6, IS-6&nbsp;FL, IS-6&nbsp;B, IS-7, Kirovets-1, K-2, T-10\n"
 "\n"
 "• ISU-122S, ISU-130, ISU-152, ISU-152K\n"
 "\n"
 "• Object&nbsp;252U, Defender, Object&nbsp;260, Object&nbsp;261, "
 "Object&nbsp;257, Object&nbsp;263, Object&nbsp;268, Object&nbsp;268&nbsp;"
-"Version&nbsp;4, 268&nbsp;Version&nbsp;5, Object&nbsp;704\n"
+"Version&nbsp;4, Object&nbsp;268&nbsp;Version&nbsp;5, Object&nbsp;704\n"
 "\n"
 "• Only Soviet vehicles are included.\n"
 "• The total results for all vehicles are calculated.\n"

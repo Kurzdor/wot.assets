@@ -23,7 +23,7 @@ msgid "blueprints/convertFragments"
 msgstr "Creating fragments..."
 
 msgid "browser/init"
-msgstr "Checking polarity..."
+msgstr "Initializing..."
 
 msgid "browser/w2c_call"
 msgstr "Initializing..."
@@ -47,7 +47,7 @@ msgid "buyAndInstall"
 msgstr "Purchasing and mounting..."
 
 msgid "buyBattlePass"
-msgstr "Unlocking Improved Reward Track..."
+msgstr "Unlocking Improved Rewards…"
 
 msgid "buyBattlePassLevels"
 msgstr "Counting Progression Stages..."
@@ -66,6 +66,9 @@ msgstr "Changing qualification..."
 
 msgid "chooseStyle"
 msgstr "Adding style..."
+
+msgid "claimSeniorityAwards"
+msgstr "Loading content…"
 
 msgid "clans/invites/send"
 msgstr "Sending invitation..."
@@ -86,7 +89,7 @@ msgid "customizationDrop"
 msgstr "Deleting..."
 
 msgid "dailyQuests/waitReroll"
-msgstr "Awaiting mission re-roll..."
+msgstr "Awaiting mission re-roll…"
 
 msgid "deleting"
 msgstr "Deleting..."
@@ -399,14 +402,14 @@ msgstr "Selling..."
 msgid "sellVehicle"
 msgstr "Selling vehicle..."
 
-msgid "sinhronize"
-msgstr "Synchronization..."
-
 msgid "start_battle"
 msgstr "Battle starts..."
 
 msgid "stats"
 msgstr "Gathering information..."
+
+msgid "storage/forDeconstruct"
+msgstr "Disassembling equipment…"
 
 msgid "storage/forSell"
 msgstr "Selling extra items..."
@@ -416,6 +419,9 @@ msgstr "Researching..."
 
 msgid "switchChapter"
 msgstr "Selecting Chapter..."
+
+msgid "synchronize"
+msgstr "Synchronization..."
 
 msgid "techMaintenance"
 msgstr "Re-equipping the vehicle..."
@@ -459,53 +465,8 @@ msgstr "Transfer Gold"
 msgid "tutorial-chapter-loading"
 msgstr "Loading tutorial..."
 
-msgid "tutorial-queue"
-msgstr "Loading tutorial..."
-
-msgid "tutorial-request-battle-count"
-msgstr "Gathering data..."
-
-msgid "tutorial-request-bonus"
-msgstr "Receiving bonus..."
-
-msgid "tutorial-request-credits"
-msgstr "Gathering data..."
-
-msgid "tutorial-request-elite-vehicles"
-msgstr "Receiving a list of Elite vehicles..."
-
-msgid "tutorial-request-inventory-items"
-msgstr "Gathering data from the Depot..."
-
-msgid "tutorial-request-item-params"
-msgstr "Gathering data on a module..."
-
 msgid "tutorial-request-shop"
 msgstr "Gathering data from the Store..."
-
-msgid "tutorial-request-slots"
-msgstr "Gathering data on slots..."
-
-msgid "tutorial-request-tankman"
-msgstr "Gathering data on crew members..."
-
-msgid "tutorial-request-tankman-info"
-msgstr "Gathering data on a crew member..."
-
-msgid "tutorial-request-unlocks"
-msgstr "Receiving a list of researched modules..."
-
-msgid "tutorial-request-vehicle-equipments"
-msgstr "Gathering data..."
-
-msgid "tutorial-request-vehicle-settings"
-msgstr "Receiving vehicle's settings..."
-
-msgid "tutorial-request-xp"
-msgstr "Gathering data..."
-
-msgid "tutorial-start-training"
-msgstr "Starting training..."
 
 msgid "tutorial-update-scene"
 msgstr "Updating interface..."

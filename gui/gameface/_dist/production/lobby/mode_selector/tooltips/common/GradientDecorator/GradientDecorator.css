@@ -1,0 +1,46 @@
+.Divider_base_0f {
+    width: 100%;
+    height: 1rem;
+    background: no-repeat 50% / contain;
+}
+
+    .Divider_base__dots_be {
+        background-image: url('R.images.gui.maps.icons.mode_selector.tooltips.separator_dots');
+    }
+
+    .Divider_base__dashed_d5 {
+        background-image: url('R.images.gui.maps.icons.mode_selector.tooltips.separator_dashed');
+    }
+
+    .Divider_base__short_92 {
+        background-image: url('R.images.gui.maps.icons.mode_selector.tooltips.separator_dashed_short');
+    }
+
+.GradientDecorator_base_c4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12rem 0 18rem;
+    background: url('R.images.gui.maps.icons.library.white_bg') no-repeat 50% / 100%;
+    position: relative;
+}
+
+.GradientDecorator_child_ee {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.GradientDecorator_divider_e3 {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.GradientDecorator_divider__bottom_47 {
+        top: auto;
+        bottom: 0;
+    }
+

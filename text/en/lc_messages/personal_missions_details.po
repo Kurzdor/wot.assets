@@ -364,7 +364,7 @@ msgid "pm2_5_2_13_description_alive"
 msgstr "Survive the battle."
 
 msgid "pm2_5_2_13_description_topByDamage"
-msgstr "Be among the top 3 players in the battle by damage caused."
+msgstr "Be among the top 3 players on both teams by damage caused."
 
 msgid "pm2_5_2_13_short"
 msgstr "Bloc-13"
@@ -2786,7 +2786,7 @@ msgid "pm2_7_1_5"
 msgstr "Union-5. Heroic Triple"
 
 msgid "pm2_7_1_5_description_topByDamage"
-msgstr "Be among the top 3 players in the battle by damage caused."
+msgstr "Be among the top 3 players on both teams by damage caused."
 
 msgid "pm2_7_1_5_description_topByDamageAdv"
 msgstr "Be the top player in the battle by damage caused."
@@ -3263,7 +3263,7 @@ msgid "pm2_7_3_13"
 msgstr "Alliance-13. Big Shark"
 
 msgid "pm2_7_3_13_description_topByExp"
-msgstr "Be among the top 3 players in the battle by experience earned."
+msgstr "Be among the top 3 players on both teams by experience earned."
 
 msgid "pm2_7_3_13_description_topByExpAdv"
 msgstr "Be the top player in the battle by experience earned."
@@ -4899,9 +4899,9 @@ msgstr "HT-9: A Crushing Blow"
 
 msgid "quest_2_9_advise"
 msgstr ""
-"The driver's Controlled Impact skill and the Spall Liner equipment can "
-"significantly reduce the damage done to your vehicle by ramming, and, at the "
-"same time, increase the damage of your own ramming attacks."
+"The Driver's Controlled Impact perk and the Spall Liner equipment item can "
+"significantly reduce the damage caused to your vehicle by ramming and, at "
+"the same time, increase the damage of your own ramming attacks."
 
 msgid "quest_2_9_descr"
 msgstr ""

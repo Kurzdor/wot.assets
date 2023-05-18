@@ -1,0 +1,134 @@
+.Chose_base_96 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27rem;
+    height: 100%;
+}
+
+.Chose_chose_f6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 75rem;
+    height: 57rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.or') no-repeat center / contain;
+    color: #fd9;
+    font-size: 14rem;
+    text-shadow: 0 0 12rem #f00;
+    transform: translateY(-12rem);
+}
+
+.Footer_base_8e {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 540rem;
+    height: 100rem;
+    margin: 0 -28rem -28rem;
+    padding-left: 28rem;
+    padding-right: 28rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.styles_tooltip_highlight') no-repeat center top / cover;
+}
+.Footer_icon_ae {
+    width: 90rem;
+    height: 75rem;
+    margin-right: 10rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.style_bp') no-repeat center / contain;
+}
+.Footer_label_1d {
+    display: flex;
+    flex: 0;
+    margin-bottom: 4rem;
+    color: #cbac77;
+    font-size: 16rem;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.VehicleStyle_base_8b {
+    display: flex;
+    flex-direction: column;
+}
+
+.VehicleStyle_title_a1 {
+    margin-bottom: 6rem;
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+}
+
+.VehicleStyle_label_40 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 14rem;
+    color: #8c8c7e;
+    font-size: 14rem;
+}
+
+.VehicleStyle_image_ff {
+    width: 226rem;
+    height: 102rem;
+    background: center / contain;
+}
+
+.VehicleStyle_tankName_26 {
+    margin-top: -1rem;
+    color: #ffa759;
+    font-size: 15rem;
+    text-shadow: 0 0 12rem rgba(255,48,0, .7);
+}
+
+.Content_base_06 {
+    display: flex;
+    flex-direction: column;
+    width: 540rem;
+    padding: 20rem 28rem 28rem;
+    line-height: normal;
+    position: relative;
+}
+.Content_title_eb {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+}
+.Content_description_28 {
+    margin-top: 13rem;
+    margin-bottom: 19rem;
+    color: #8c8c7e;
+    font-size: 16rem;
+}
+.Content_images_99 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.Content_chose_3a {
+    display: flex;
+    margin-top: 35rem;
+}
+
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem; /* border offset*/
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.TooltipDecorator_decoratorContent_de {
+    background-color: #000;
+}
+

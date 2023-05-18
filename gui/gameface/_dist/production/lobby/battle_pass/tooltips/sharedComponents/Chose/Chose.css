@@ -1,0 +1,22 @@
+.Chose_base_96 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27rem;
+    height: 100%;
+}
+
+.Chose_chose_f6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 75rem;
+    height: 57rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.or') no-repeat center / contain;
+    color: #fd9;
+    font-size: 14rem;
+    text-shadow: 0 0 12rem #f00;
+    transform: translateY(-12rem);
+}
+

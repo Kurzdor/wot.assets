@@ -165,6 +165,11 @@ msgstr ""
 "Once you accept the invitation, you will be automatically excluded from the "
 "battle on the Global Map and transferred to %(host)s server."
 
+msgid "invites/note/change_and_leave/PREBATTLE_COMP7"
+msgstr ""
+"Once you accept the invitation, you will be automatically removed from the "
+"tactical unit and transferred to the %(host)s server."
+
 msgid "invites/note/change_and_leave/PREBATTLE_EPIC"
 msgstr ""
 "Once you accept the invitation, you will be automatically removed from the "
@@ -250,6 +255,11 @@ msgstr ""
 "Once you accept the invitation, you will exit Big Hunt and be transferred to "
 "the %(host)s server."
 
+msgid "invites/note/change_and_leave/QUEUE_COMP7"
+msgstr ""
+"Once you accept the invitation, you will exit Onslaught and be transferred "
+"to the %(host)s server."
+
 msgid "invites/note/change_and_leave/QUEUE_EPIC"
 msgstr ""
 "Once you accept the invitation, you will exit Frontline and be transferred "
@@ -257,8 +267,8 @@ msgstr ""
 
 msgid "invites/note/change_and_leave/QUEUE_EVENT_BATTLES"
 msgstr ""
-"Once you accept the invitation, you will exit The Waffenträger: Legacy and "
-"be transferred to the %(host)s server."
+"Once you accept the invitation, you will exit +++Event battle+++ and be "
+"transferred to the %(host)s server."
 
 msgid "invites/note/change_and_leave/QUEUE_MAPBOX"
 msgstr ""
@@ -280,10 +290,15 @@ msgstr ""
 "Once you accept the invitation, you will exit Ranked Battle mode and be "
 "transferred to the %(host)s server."
 
-msgid "invites/note/change_and_leave/QUEUE_SANDBOX"
+msgid "invites/note/change_and_leave/QUEUE_WINBACK"
 msgstr ""
-"Once you accept the invitation, you will exit the Proving Ground mode and "
-"will be transferred to the %(host)s server."
+"Once you accept the invitation, you will exit Warm-Up and be transferred to "
+"the %(host)s server."
+
+msgid "invites/note/change_and_leave_permanently/QUEUE_WINBACK"
+msgstr ""
+"Once you accept the invitation, you will exit Warm-Up and be transferred to "
+"the %(host)s server. You will not be able to start it again."
 
 msgid "invites/note/leave/PREBATTLE_BATTLE_ROYALE"
 msgstr ""
@@ -300,6 +315,11 @@ msgstr ""
 "Once you accept the invitation, you will be automatically excluded from the "
 "battle on the Global Map."
 
+msgid "invites/note/leave/PREBATTLE_COMP7"
+msgstr ""
+"Once you accept the invitation, you will be automatically removed from the "
+"tactical unit."
+
 msgid "invites/note/leave/PREBATTLE_EPIC"
 msgstr ""
 "Once you accept the invitation, you will be automatically removed from the "
@@ -312,7 +332,8 @@ msgstr ""
 
 msgid "invites/note/leave/PREBATTLE_EVENT"
 msgstr ""
-"Once you accept the invitation, you will exit The Waffenträger: Legacy."
+"Once you accept the invitation, you will be automatically removed from the "
+"tactical unit."
 
 msgid "invites/note/leave/PREBATTLE_E_SPORT_COMMON"
 msgstr "Once you accept the invitation, you will exit the Team Battle mode."
@@ -368,12 +389,14 @@ msgstr "Once you accept the invitation, you will exit Steel Hunter."
 msgid "invites/note/leave/QUEUE_BATTLE_ROYALE_TOURNAMENT"
 msgstr "Once you accept the invitation, you will exit Big Hunt."
 
+msgid "invites/note/leave/QUEUE_COMP7"
+msgstr "Once you accept the invitation, you will exit Onslaught."
+
 msgid "invites/note/leave/QUEUE_EPIC"
 msgstr "Once you accept the invitation, you will exit Frontline."
 
 msgid "invites/note/leave/QUEUE_EVENT_BATTLES"
-msgstr ""
-"Once you accept the invitation, you will exit The Waffenträger: Legacy."
+msgstr "Once you accept the invitation, you will exit +++Event battle+++."
 
 msgid "invites/note/leave/QUEUE_MAPBOX"
 msgstr "Once you accept the invitation, you will exit Recon Mission."
@@ -387,13 +410,13 @@ msgstr "Once you accept the invitation, you will exit Random Battles."
 msgid "invites/note/leave/QUEUE_RANKED"
 msgstr "Once you accept the invitation, you will exit the Ranked Battle mode."
 
-msgid "invites/note/leave/QUEUE_SANDBOX"
-msgstr "Once you accept the invitation, you will exit the Proving Ground mode."
+msgid "invites/note/leave/QUEUE_WINBACK"
+msgstr "Once you accept the invitation, you will exit Warm-Up."
 
-msgid "invites/note/leave/SQUAD_EVENT"
+msgid "invites/note/leave_permanently/QUEUE_WINBACK"
 msgstr ""
-"Once you accept the invitation, you will be automatically removed from the "
-"current Harrier Platoon."
+"Once you accept the invitation, you will exit Warm-Up. You will not be able "
+"to start it again."
 
 msgid "invites/note/serverSelectionIsRemembered"
 msgstr "Server changes will now be saved."
@@ -454,25 +477,22 @@ msgid "invites/state/REVOKED"
 msgstr "Invitation withdrawn."
 
 msgid "invites/text/BATTLE_ROYALE"
-msgstr ""
-"%(titleStartTag)sInvitation to Join Steel Hunter Platoon%(titleEndTag)s"
+msgstr "Invitation to Join Steel Hunter Platoon"
+
+msgid "invites/text/COMP7"
+msgstr "Invitation to Join the Onslaught Platoon"
 
 msgid "invites/text/EPIC"
-msgstr ""
-"%(titleStartTag)sInvitation to join the Frontline Platoon%(titleEndTag)s"
+msgstr "Invitation to Join the Frontline Platoon"
 
 msgid "invites/text/EPIC_TRAINING"
-msgstr ""
-"%(titleStartTag)sInvitation to Join Team Training in Frontline Mode"
-"%(titleEndTag)s"
+msgstr "Invitation to Join Team Training in Frontline Mode"
 
 msgid "invites/text/EVENT"
-msgstr "%(titleStartTag)sInvitation to Join Harriers' Platoon%(titleEndTag)s"
+msgstr "Invitation to the Platoon"
 
 msgid "invites/text/FALLOUT"
-msgstr ""
-"%(titleStartTag)sInvitation to Join the Platoon for %(battleType)s"
-"%(titleEndTag)s"
+msgstr "Invitation to Join the Platoon for %(battleType)s"
 
 msgid "invites/text/FALLOUT/FALLOUT_CLASSIC"
 msgstr "Domination"
@@ -481,29 +501,28 @@ msgid "invites/text/FALLOUT/FALLOUT_MULTITEAM"
 msgstr "Steel Hunt"
 
 msgid "invites/text/FORT_BATTLE"
-msgstr "%(titleStartTag)sInvitation to Battle%(titleEndTag)s"
+msgstr "Invitation to Battle"
 
 msgid "invites/text/MAPBOX"
-msgstr ""
-"%(titleStartTag)sInvitation to Join Recon Mission Platoon%(titleEndTag)s"
+msgstr "Invitation to Join Recon Mission Platoon"
 
 msgid "invites/text/MAPS_TRAINING"
-msgstr "%(titleStartTag)sInvitation to Explore Maps%(titleEndTag)s"
+msgstr "Invitation to Explore Maps"
 
 msgid "invites/text/SORTIE"
-msgstr "%(titleStartTag)sInvitation to Join the Detachment%(titleEndTag)s"
+msgstr "Invitation to Join the Detachment"
 
 msgid "invites/text/SQUAD"
-msgstr "%(titleStartTag)sInvitation to Join the Platoon%(titleEndTag)s"
+msgstr "Invitation to the Platoon"
 
 msgid "invites/text/STRONGHOLD"
-msgstr "%(titleStartTag)sInvitation to Join Detachment%(titleEndTag)s"
+msgstr "Invitation to Join the Detachment"
 
 msgid "invites/text/TRAINING"
-msgstr "%(titleStartTag)sInvitation to Join Team Training%(titleEndTag)s"
+msgstr "Invitation to Join Team Training"
 
 msgid "invites/text/UNIT"
-msgstr "%(titleStartTag)sInvitation to Join the Team%(titleEndTag)s"
+msgstr "Invitation to Join the Team"
 
 msgid "invites/text/creatorName"
 msgstr "from %(nameStartTag)s%(name)s%(nameEndTag)s"

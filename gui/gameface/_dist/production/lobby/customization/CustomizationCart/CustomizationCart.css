@@ -1,0 +1,1935 @@
+/* $resolution-height * 2*/
+/* $resolution-small-width * 2*/
+/* $resolution-big-width * 2*/
+/* MIN_SCREEN_WIDTH * 2 - 1px*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+.Header_base_fa {
+    display: flex;
+    padding-bottom: 18rem;
+    color: #d0d0c7;
+    font-size: 24rem;
+    font-weight: 700;
+    position: relative;
+}
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+        (min-width: 2560px) and (min-height: 1800px) {
+.Header_base_fa {
+        flex-direction: column
+}
+    }
+.Header_bg_d4 {
+    width: 1024rem;
+    height: 151rem;
+    background: url('R.images.gui.maps.icons.customization.gf_customization_cart.style') 50% 100% no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+}
+.Header_title_a1 {
+    margin-right: 6rem;
+}
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+        (min-width: 2560px) and (min-height: 1800px) {
+.Header_title_a1 {
+        margin-bottom: 10rem
+}
+    }
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+        (min-width: 2560px) and (min-height: 1800px) {
+.Header_itemsTitle_06 {
+        font-size: 36rem
+}
+    }
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+        (min-width: 2560px) and (min-height: 1800px) {
+.Header_extraTitle_54 {
+        margin-bottom: 5rem;
+        font-size: 56rem
+}
+    }
+
+.HorizontalBar_base_49 {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+    position: relative;
+}
+
+    .HorizontalBar_base__nonActive_82 {
+        visibility: hidden;
+    }
+
+    .HorizontalBar_base_49 .disable,
+    .HorizontalBar_base_49 .disable:hover {
+        opacity: .3;
+        cursor: default;
+    }
+
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover, .HorizontalBar_rightButton_03:hover {
+        opacity: 1;
+    }
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem 7rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+        opacity: 1;
+    }
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
+        opacity: .7;
+    }
+
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.VerticalBar_base_f3 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+    .VerticalBar_base__nonActive_42 {
+        visibility: hidden;
+    }
+
+    .VerticalBar_base_f3 .disable,
+    .VerticalBar_base_f3 .disable:hover {
+        opacity: .3;
+        cursor: default;
+    }
+
+.VerticalBar_topButton_d7,
+.VerticalBar_bottomButton_06 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_d7:hover, .VerticalBar_bottomButton_06:hover {
+        opacity: 1;
+    }
+
+.VerticalBar_topButton_d7 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_06 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_df {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32 {
+    display: none;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32:hover {
+        opacity: 1;
+    }
+
+.VerticalBar_rail_43 {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_43:hover {
+        opacity: .7;
+    }
+
+
+.VerticalScroll_content_cb {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_f8 {
+    display: flex;
+}
+
+.VerticalScroll_bar_1e {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_af {
+    flex: 1;
+}
+
+.FormFactor_base_70 {
+    width: 39rem;
+    height: 9rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Image_base_26 {
+    width: 100%;
+    height: 100%;
+    border-image-source: url('R.images.gui.maps.icons.customization.gf_customization_cart.slot.border');
+    border-image-slice: 4 fill;
+    border-image-width: 2rem;
+    background: url('R.images.gui.maps.icons.customization.gf_customization_cart.slot.shadow') 50% 100% / 100% 58rem no-repeat;
+}
+
+.Image_shine_3d {
+    width: 100%;
+    height: 100%;
+    background-image: url('R.images.gui.maps.icons.customization.gf_customization_cart.slot.shine');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: absolute;
+    z-index: -2;
+}
+
+.Image_content_69 {
+    width: 100%;
+    height: 100%;
+    border: 1rem solid rgba(255, 255, 255, .3);
+    background: url('R.images.gui.maps.icons.library.TankItem_buy_tank_popover_small') 50% / contain no-repeat;
+    z-index: -1;
+}
+
+.Currency_base_57 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.Currency_icon_c5 {
+    --icon-height: 16rem;
+    --icon-width: var(--icon-height);
+    width: var(--icon-width);
+    height: var(--icon-height);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+.Currency_base__small_af .Currency_icon_c5,
+    .Currency_base__big_bc .Currency_icon_c5,
+    .Currency_base__large_65 .Currency_icon_c5,
+    .Currency_base__extraLarge_4d .Currency_icon_c5 {
+        transform: translateY(3rem);
+    }
+.Currency_icon__credits-small_9b {
+        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
+    }
+.Currency_icon__credits-big_96 {
+        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
+    }
+.Currency_icon__credits-large_ac {
+        --icon-height: 48rem;
+        margin-left: -1rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_silver');
+    }
+.Currency_base__large_65 .Currency_icon__credits-large_ac {
+            transform: translateY(4rem);
+        }
+.Currency_icon__credits-extraLarge_16 {
+        --icon-height: 80rem;
+        margin-right: -2rem;
+        background-image: url('R.images.gui.maps.icons.library.credits_icon_80x80');
+    }
+.Currency_icon__gold-small_86 {
+        background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
+    }
+.Currency_base__small_af .Currency_icon__gold-small_86 {
+            transform: translateY(2rem);
+        }
+.Currency_icon__gold-big_15 {
+        background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
+    }
+.Currency_base__big_bc .Currency_icon__gold-big_15 {
+            transform: translateY(4rem);
+        }
+.Currency_icon__gold-large_36 {
+        --icon-height: 48rem;
+        margin-left: -1rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_gold');
+    }
+.Currency_base__large_65 .Currency_icon__gold-large_36 {
+            transform: translateY(4rem);
+        }
+.Currency_icon__gold-extraLarge_a0 {
+        --icon-height: 80rem;
+        background-image: url('R.images.gui.maps.icons.library.gold_icon_80x80');
+    }
+.Currency_icon__crystal-small_27 {
+        background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
+    }
+.Currency_base__small_af .Currency_icon__crystal-small_27 {
+            transform: translateY(2rem);
+        }
+.Currency_icon__crystal-big_cd {
+        --icon-height: 22rem;
+        --icon-width: 23rem;
+        background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
+    }
+.Currency_base__big_bc .Currency_icon__crystal-big_cd {
+            transform: translateY(4rem);
+        }
+.Currency_icon__crystal-large_d3 {
+        --icon-height: 48rem;
+        margin-left: -1rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_bonds');
+    }
+.Currency_icon__crystal-extraLarge_09 {
+        --icon-height: 80rem;
+        background-image: url('R.images.gui.maps.icons.library.crystal_80x80');
+    }
+.Currency_base__extraLarge_4d .Currency_icon__crystal-extraLarge_09 {
+            transform: translateY(7rem);
+        }
+.Currency_icon__xp-small_a7 {
+        background-image: url('R.images.gui.maps.icons.library.NormalXpIcon');
+    }
+.Currency_base__small_af .Currency_icon__xp-small_a7 {
+            transform: translateY(1rem);
+        }
+.Currency_icon__xp-big_97 {
+        --icon-height: 22rem;
+        --icon-width: 23rem;
+        margin-left: -5rem;
+        background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
+    }
+.Currency_base__big_bc .Currency_icon__xp-big_97 {
+            transform: translateY(2rem);
+        }
+.Currency_icon__xp-large_6b {
+        --icon-height: 48rem;
+        margin: 0 -5rem 0 -6rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.exp');
+    }
+.Currency_icon__xp-extraLarge_67 {
+        --icon-height: 80rem;
+        margin: 0 -5rem;
+        background-image: url('R.images.gui.maps.icons.library.xp_tank_icon_80x80');
+    }
+.Currency_icon__freeXP-small_ca {
+        background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
+    }
+.Currency_base__small_af .Currency_icon__freeXP-small_ca {
+            transform: translateY(1rem);
+        }
+.Currency_icon__freeXP-big_21 {
+        --icon-height: 24rem;
+        margin-left: -5rem;
+        background-image: url('R.images.gui.maps.icons.library.freeXPIconBig24x24');
+    }
+.Currency_icon__freeXP-large_c8 {
+        --icon-height: 48rem;
+        margin: 0 -5rem 0 -6rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.freeExp');
+    }
+.Currency_icon__freeXP-extraLarge_58 {
+        --icon-height: 80rem;
+        margin: 0 -5rem;
+        background-image: url('R.images.gui.maps.icons.library.free_xp_icon_80x80');
+    }
+.Currency_base__extraLarge_4d .Currency_icon__freeXP-extraLarge_58 {
+            transform: translateY(4rem);
+        }
+.Currency_icon__equipCoin-small_32 {
+        --icon-height: 16rem;
+        margin-right: -2rem;
+        background-image: url('R.images.gui.maps.icons.library.equipCoin_1');
+    }
+.Currency_base__small_af .Currency_icon__equipCoin-small_32 {
+            transform: translateX(-1rem) translateY(1rem);
+        }
+.Currency_icon__equipCoin-big_79 {
+        --icon-height: 24rem;
+        background-image: url('R.images.gui.maps.icons.library.equipCoinBig');
+    }
+.Currency_base__big_bc .Currency_icon__equipCoin-big_79 {
+            transform: translateX(-5rem) translateY(3rem);
+        }
+.Currency_icon__equipCoin-large_2c {
+        --icon-height: 48rem;
+        margin-right: 2rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.equipCoin');
+    }
+.Currency_icon__equipCoin-extraLarge_8a {
+        --icon-height: 80rem;
+        margin-right: 8rem;
+        background-image: url('R.images.gui.maps.icons.library.equipCoin_icon_80x80');
+    }
+.Currency_base__extraLarge_4d .Currency_icon__equipCoin-extraLarge_8a {
+            transform: translateX(2rem) translateY(4rem);
+        }
+.Currency_value_e1 {
+    /* font-size inherit does not work here, so 1em means the size does not change */
+    /* stylelint-disable-next-line */
+    --font-size: 1em;
+    font-size: var(--font-size);
+    position: relative;
+    z-index: 2;
+}
+.Currency_base__small_af .Currency_value_e1 {
+        padding-right: 2rem;
+    }
+.Currency_base__big_bc .Currency_value_e1 {
+        --font-size: 24rem;
+        padding-right: 5rem;
+        font-weight: 700;
+    }
+.Currency_base__big_bc .Currency_value_e1 + .Currency_icon_c5 {
+            font-size: 24rem;
+        }
+.Currency_base__large_65 .Currency_value_e1 {
+        --font-size: 36rem;
+        font-weight: 700;
+    }
+.Currency_base__large_65 .Currency_value_e1 + .Currency_icon_c5 {
+            font-size: 36rem;
+        }
+.Currency_base__extraLarge_4d .Currency_value_e1 {
+        --font-size: 56rem;
+        font-weight: 700;
+    }
+.Currency_value__freeXP_cb {
+        color: #F2F2F7;
+    }
+.Currency_value__credits_76 {
+        color: #CED9D9;
+    }
+.Currency_value__gold_dd {
+        color: #FFC363;
+    }
+.Currency_value__xp_b0,
+    .Currency_value__crystal_19,
+    .Currency_value__equipCoin_d0 {
+        color: #C9C9B6;
+    }
+.Currency_base__small_af .Currency_value__notEnough_56 {
+            color: #FF2717;
+        }
+.Currency_base__big_bc .Currency_value__notEnough_56 {
+            color: #B70000;
+        }
+.Currency_base__large_65 .Currency_value__notEnough_56 {
+            color: #B70000;
+        }
+.Currency_base__extraLarge_4d .Currency_value__notEnough_56 {
+            color: #B70000;
+        }
+.Currency_stock_87 {
+    height: 13rem;
+    color: #FFDD99;
+    font-size: 13rem;
+    line-height: 1;
+    position: relative;
+    z-index: 0;
+    pointer-events: none;
+}
+.Currency_stock__indent_a1 {
+        margin-left: 2rem;
+    }
+.Currency_base__small_af .Currency_stock_87 {
+        transform: translateY(0rem);
+    }
+.Currency_base__big_bc .Currency_stock_87 {
+        transform: translateY(4rem);
+    }
+.Currency_base__large_65 .Currency_stock_87 {
+        transform: translateY(10rem);
+    }
+.Currency_base__extraLarge_4d .Currency_stock_87 {
+        transform: translateY(18rem);
+    }
+.Currency_stock__interactive_93 {
+        pointer-events: auto;
+    }
+.Currency_stockBackground_82 {
+    width: 80rem;
+    height: 45rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -27rem;
+    bottom: 0;
+    z-index: -1;
+    transform: translateY(17rem);
+}
+
+.Price_base_94 {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0 3rem;
+    color: #e9e2bf;
+}
+
+    .Price_base__stock_16 {
+        padding: 10rem 20rem 3rem 15rem;
+        overflow: hidden;
+    }
+
+.Price_factor_d3 {
+    margin-right: -3rem;
+    z-index: 1;
+}
+
+.Price_storage_93 {
+    margin-right: -2rem;
+    padding-right: 25rem;
+    background: url('R.images.gui.maps.icons.customization.storage_icon') 100% 50% / 30rem 24rem no-repeat;
+}
+
+/* $resolution-height * 2*/
+/* $resolution-small-width * 2*/
+/* $resolution-big-width * 2*/
+/* MIN_SCREEN_WIDTH * 2 - 1px*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+.ProgressionLevelIcon_base_c3 {
+    display: flex;
+}
+.ProgressionLevelIcon_icon_0b {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.ProgressionLevelIcon_icon__big_c2 {
+        display: none;
+        width: 24rem;
+        height: 18rem;
+    }
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+            (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+            (min-width: 2560px) and (min-height: 1800px) {
+.ProgressionLevelIcon_icon__big_c2 {
+            display: flex
+    }
+        }
+.ProgressionLevelIcon_icon__small_37 {
+        display: flex;
+        width: 20rem;
+        height: 14rem;
+    }
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+            (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+            (min-width: 2560px) and (min-height: 1800px) {
+.ProgressionLevelIcon_icon__small_37 {
+            display: none
+    }
+        }
+
+/* $resolution-height * 2*/
+/* $resolution-small-width * 2*/
+/* $resolution-big-width * 2*/
+/* MIN_SCREEN_WIDTH * 2 - 1px*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+.Slot_base_a9 {
+    width: 82rem;
+    height: 82rem;
+    position: relative;
+}
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+        (min-width: 2560px) and (min-height: 1800px) {
+.Slot_base_a9 {
+        width: 104rem;
+        height: 104rem
+}
+    }
+.Slot_base__big_f1 {
+        width: 180rem;
+    }
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+            (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+            (min-width: 2560px) and (min-height: 1800px) {
+.Slot_base__big_f1 {
+            width: 228rem
+    }
+        }
+.Slot_base__own_45 {
+        cursor: pointer;
+    }
+.Slot_border_d9 {
+    width: 100%;
+    height: 100%;
+    border-image-source: url('R.images.gui.maps.icons.customization.gf_customization_cart.slot.border');
+    border-image-width: 2rem;
+    opacity: .25;
+    position: relative;
+}
+.Slot_base__own_45 .Slot_border_d9,
+    .Slot_base__style_4a .Slot_border_d9 {
+        opacity: 1;
+    }
+.Slot_base__unchecked_8f .Slot_border_d9 {
+        opacity: .55;
+    }
+.Slot_base__unchecked_8f:hover .Slot_border_d9 {
+        opacity: .8;
+    }
+.Slot_checkbox_d2 {
+    width: 18rem;
+    height: 18rem;
+    background: url('R.images.gui.maps.icons.customization.gf_customization_cart.slot.unchecked_active') 50% / contain
+        no-repeat;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+.Slot_base_a9:hover .Slot_checkbox_d2 {
+        background-image: url('R.images.gui.maps.icons.customization.gf_customization_cart.slot.unchecked_hover');
+    }
+.Slot_checkbox__checked_a8 {
+        background-image: url('R.images.gui.maps.icons.customization.gf_customization_cart.slot.checked_active');
+    }
+.Slot_base__checked_ea:hover .Slot_checkbox__checked_a8 {
+            background-image: url('R.images.gui.maps.icons.customization.gf_customization_cart.slot.checked_hover');
+        }
+.Slot_topLeftCorner_8b {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
+.Slot_icon_b3 {
+    margin: 0 1rem 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Slot_icon__edited_66 {
+        width: 16rem;
+        height: 16rem;
+        background-image: url('R.images.gui.maps.icons.customization.edited_small');
+    }
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+            (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+            (min-width: 2560px) and (min-height: 1800px) {
+.Slot_icon__edited_66 {
+            width: 18rem;
+            height: 18rem;
+            background-image: url('R.images.gui.maps.icons.customization.edited_big')
+    }
+        }
+.Slot_icon__rewindable_f5 {
+        width: 20rem;
+        height: 14rem;
+        background-image: url('R.images.gui.maps.icons.customization.progression_rewind_small');
+    }
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+            (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+            (min-width: 2560px) and (min-height: 1800px) {
+.Slot_icon__rewindable_f5 {
+            width: 24rem;
+            height: 18rem;
+            background-image: url('R.images.gui.maps.icons.customization.progression_rewind')
+    }
+        }
+.Slot_icon__special_36 {
+        width: 17rem;
+        height: 18rem;
+        background-image: url('R.images.gui.maps.icons.customization.star');
+    }
+.Slot_icon__alert_4e {
+        width: 16rem;
+        height: 16rem;
+        background-image: url('R.images.gui.maps.icons.library.alertIcon');
+    }
+.Slot_icon__unHistorical_66 {
+        width: 21rem;
+        height: 18rem;
+        background-image: url('R.images.gui.maps.icons.customization.non_historical_mini');
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+    }
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+            (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+            (min-width: 2560px) and (min-height: 1800px) {
+.Slot_icon__unHistorical_66 {
+            width: 32rem;
+            height: 32rem;
+            background-image: url('R.images.gui.maps.icons.customization.non_historical');
+            top: 0;
+            right: 0
+    }
+        }
+.Slot_icon__fantastical_e3 {
+        width: 21rem;
+        height: 18rem;
+        background-image: url('R.images.gui.maps.icons.customization.fantastical_mini');
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+    }
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+            (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+            (min-width: 2560px) and (min-height: 1800px) {
+.Slot_icon__fantastical_e3 {
+            width: 32rem;
+            height: 32rem;
+            background-image: url('R.images.gui.maps.icons.customization.fantastical');
+            top: 0;
+            right: 0
+    }
+        }
+.Slot_icon__formFactor_d1 {
+        position: absolute;
+        bottom: 4rem;
+        left: 4rem;
+    }
+.Slot_hover_ab {
+    display: none;
+}
+.Slot_base__own_45:hover .Slot_hover_ab {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: url('R.images.gui.maps.icons.customization.gf_customization_cart.slot.hover');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+    }
+.Slot_price_03 {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+/* $resolution-height * 2*/
+/* $resolution-small-width * 2*/
+/* $resolution-big-width * 2*/
+/* MIN_SCREEN_WIDTH * 2 - 1px*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+.Slots_slot_44 {
+    margin: 0 16rem 16rem 0;
+}
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+        (min-width: 2560px) and (min-height: 1800px) {
+.Slots_slot_44 {
+        margin-right: 20rem;
+        margin-bottom: 20rem
+}
+    }
+
+/* $resolution-height * 2*/
+/* $resolution-small-width * 2*/
+/* $resolution-big-width * 2*/
+/* MIN_SCREEN_WIDTH * 2 - 1px*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+.Title_base_0d {
+    display: flex;
+    align-items: flex-end;
+    color: #e9e2bf;
+    font-weight: 700;
+    line-height: 1.2;
+}
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+        (min-width: 2560px) and (min-height: 1800px) {
+.Title_base_0d {
+        font-size: 18rem
+}
+    }
+.Title_base_0d[lang=ja],
+    .Title_base_0d[lang=ko],
+    .Title_base_0d[lang=zh_tw],
+    .Title_base_0d[lang=zh_sg],
+    .Title_base_0d[lang=zh_cn],
+    .Title_base_0d[lang=th] {
+        font-weight: 400;
+    }
+.Title_ico_b2 {
+    width: 16rem;
+    height: 16rem;
+    margin-right: 8rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: -1rem;
+}
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+        (min-width: 2560px) and (min-height: 1800px) {
+.Title_ico_b2 {
+        top: -2rem
+}
+    }
+.Title_ico__summer_ce {
+        background-image: url('R.images.gui.maps.icons.customization.items_popover.summer16x16');
+    }
+.Title_ico__winter_0e {
+        background-image: url('R.images.gui.maps.icons.customization.items_popover.winter16x16');
+    }
+.Title_ico__desert_dd {
+        background-image: url('R.images.gui.maps.icons.customization.items_popover.desert16x16');
+    }
+.Title_bonus_03 {
+    margin-left: 10rem;
+    color: #80d43a;
+    font-size: 14rem;
+    font-weight: 400;
+}
+.Title_count_0d {
+    margin-left: 3rem;
+}
+.Title_count__zero_ba {
+        color: #ff2717;
+    }
+
+/* $resolution-height * 2*/
+/* $resolution-small-width * 2*/
+/* $resolution-big-width * 2*/
+/* MIN_SCREEN_WIDTH * 2 - 1px*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+.Season_base_cb {
+    position: relative;
+}
+.Season_list_b5 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 6rem;
+}
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+        (min-width: 2560px) and (min-height: 1800px) {
+.Season_list_b5 {
+        margin-bottom: 9rem
+}
+    }
+.Season_title_10 {
+    margin: 11rem 0;
+}
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+        (min-width: 2560px) and (min-height: 1800px) {
+.Season_title_10 {
+        margin-top: 8rem;
+        margin-bottom: 17rem
+}
+    }
+
+/* $resolution-height * 2*/
+/* $resolution-small-width * 2*/
+/* $resolution-big-width * 2*/
+/* MIN_SCREEN_WIDTH * 2 - 1px*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+.Seasons_base_d0 {
+    display: flex;
+    background: url('R.images.gui.maps.icons.customization.gf_customization_cart.slots') 50% 100% / 100% 100% no-repeat;
+    position: relative;
+}
+.Seasons_lip_93 {
+    width: 820rem;
+    height: 320rem;
+    background: url('R.images.gui.maps.icons.customization.gf_customization_cart.lip') 50% 0 / 100% 100rem no-repeat;
+    position: absolute;
+    left: -10rem;
+    z-index: 1;
+    pointer-events: none;
+}
+@media (min-width: 1280px) and (max-width: 2047px),
+        (min-width: 2047px) and (max-height: 1429px),
+        (min-width: 2560px) {
+.Seasons_lip_93 {
+        width: 1017rem
+}
+    }
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+        (min-width: 2560px) and (min-height: 1800px) {
+.Seasons_lip_93 {
+        width: 1025rem
+}
+    }
+@media (min-width: 1700px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (max-height: 1429px),
+        (min-width: 3400px) {
+.Seasons_lip_93 {
+        width: 1273rem
+}
+    }
+.Seasons_lip__top_bd {
+        top: -50rem;
+    }
+.Seasons_lip__bottom_9b {
+        bottom: -50rem;
+        transform: rotate(180deg);
+    }
+.Seasons_scroll_a5 {
+    width: 100%;
+}
+.Seasons_areaBase_4e {
+    display: flex;
+}
+.Seasons_areaContent_4a {
+    max-height: 100%;
+    padding-top: 10rem;
+}
+
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    position: relative;
+    cursor: pointer;
+}
+
+    .CButton_base__main_42,
+    .CButton_base__primary_7f,
+    .CButton_base__primaryGreen_6f,
+    .CButton_base__primaryRed_ec,
+    .CButton_base__secondary_50 {
+        background-size: 100% 100%;
+    }
+
+    .CButton_base__main_42 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+
+    .CButton_base__primary_7f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+
+    .CButton_base__primaryGreen_6f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+
+    .CButton_base__primaryRed_ec {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+
+    .CButton_base__secondary_50 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+
+    .CButton_base__ghost_ed {
+        border-radius: 3rem;
+        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
+            0 0 0 1rem rgba(255,255,255, .15) inset;
+        background-color: rgba(0,0,0, .15);
+    }
+
+    .CButton_base__extraSmall_27 {
+        min-height: 17rem;
+        padding: 0 16rem;
+    }
+
+    .CButton_base__small_df,
+    .CButton_base__medium_74 {
+        padding: 0 20rem;
+    }
+
+    .CButton_base__small_df {
+        min-height: 18rem;
+    }
+
+    .CButton_base__medium_74 {
+        min-height: 32rem;
+    }
+
+    .CButton_base__disabled_d9 {
+        cursor: default;
+    }
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+.CButton_base__primary_7f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+.CButton_base__secondary_50 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow .16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+        border-radius: 2rem;
+        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
+    }
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+        transition: opacity .16s ease-in-out;
+    }
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+        opacity: 1;
+    }
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
+        background-color: rgba(8,6,0, .18);
+        background-image: none;
+    }
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+        opacity: 1;
+    }
+.CButton_stateDisabled_54 {
+    background-color: rgba(0,0,0, .25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+        opacity: 1;
+    }
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: .03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang=ja],
+    .CButton_content_cc[lang=ko],
+    .CButton_content_cc[lang=zh_tw],
+    .CButton_content_cc[lang=zh_sg],
+    .CButton_content_cc[lang=zh_cn],
+    .CButton_content_cc[lang=th] {
+        font-weight: 400;
+    }
+.CButton_base__main_42 .CButton_content_cc,
+    .CButton_base__primaryRed_ec .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #600;
+    }
+.CButton_base__secondary_50 .CButton_content_cc {
+        color: rgba(254,254,236, .75);
+    }
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #1c2502;
+    }
+.CButton_base__extraSmall_27 .CButton_content_cc {
+        font-size: 12rem;
+    }
+.CButton_base__small_df .CButton_content_cc {
+        font-size: 14rem;
+    }
+.CButton_base__medium_74 .CButton_content_cc {
+        font-size: 15rem;
+    }
+.CButton_base__disabled_d9 .CButton_content_cc {
+        opacity: .6;
+    }
+
+.Checkbox_base_36 {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    cursor: pointer;
+}
+
+    .Checkbox_base__disabled_08 {
+        pointer-events: none;
+    }
+
+    .Checkbox_base__center_52 {
+        align-items: center;
+    }
+
+    .Checkbox_base__bottom_28 {
+        align-items: flex-end;
+    }
+
+.Checkbox_input_37 {
+    border: 1rem solid rgba(190, 190, 190, .45);
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, .3);
+    opacity: .6;
+    position: relative;
+    transition: background-color .1s linear;
+}
+
+.Checkbox_base__mouseDown_45 .Checkbox_input_37 {
+        background-color: rgba(0, 0, 0, .4);
+    }
+
+.Checkbox_base__small_18 .Checkbox_input_37 {
+        width: 12rem;
+        height: 12rem;
+    }
+
+.Checkbox_base__medium_12 .Checkbox_input_37 {
+        width: 18rem;
+        height: 18rem;
+    }
+
+.Checkbox_base__large_f7 .Checkbox_input_37 {
+        width: 24rem;
+        height: 24rem;
+    }
+
+.Checkbox_base__extraLarge_c9 .Checkbox_input_37 {
+        width: 32rem;
+        height: 32rem;
+    }
+
+.Checkbox_alertOverlay_52 {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    left: -1rem;
+    border: 1rem solid #feab34;
+    border-radius: 2rem;
+    box-shadow: inset 0 0 9rem rgba(0, 0, 0, .25);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.Checkbox_base__alert_b7 .Checkbox_alertOverlay_52 {
+        animation: Checkbox_blink_5e 2s ease-in-out infinite;
+    }
+
+.Checkbox_base__alert_b7.Checkbox_base__checked_a2 .Checkbox_alertOverlay_52,
+    .Checkbox_base__alert_b7.Checkbox_base__disabled_08 .Checkbox_alertOverlay_52 {
+        opacity: 0;
+        animation: initial;
+    }
+
+.Checkbox_inputHoverOverlay_36 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #201f1c, #494741);
+    opacity: 0;
+    transition: opacity .1s linear;
+    pointer-events: none;
+}
+
+.Checkbox_base_36:hover .Checkbox_inputHoverOverlay_36 {
+        opacity: .8;
+    }
+
+.Checkbox_base_36.Checkbox_base__mouseDown_45:hover .Checkbox_inputHoverOverlay_36 {
+        opacity: 0;
+    }
+
+.Checkbox_highlight_b8 {
+    background: no-repeat 50% / contain;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .1s linear;
+    pointer-events: none;
+}
+
+.Checkbox_base__checked_a2 .Checkbox_highlight_b8 {
+        opacity: 1;
+    }
+
+.Checkbox_base__checked_a2.Checkbox_base__disabled_08 .Checkbox_highlight_b8 {
+        opacity: 0;
+    }
+
+.Checkbox_base__small_18 .Checkbox_highlight_b8 {
+        width: 34rem;
+        height: 34rem;
+    }
+
+.Checkbox_base__medium_12 .Checkbox_highlight_b8 {
+        width: 40rem;
+        height: 40rem;
+    }
+
+.Checkbox_base__large_f7 .Checkbox_highlight_b8 {
+        width: 46rem;
+        height: 46rem;
+    }
+
+.Checkbox_base__extraLarge_c9 .Checkbox_highlight_b8 {
+        width: 54rem;
+        height: 54rem;
+    }
+
+.Checkbox_base__main_3a.Checkbox_base__small_18 .Checkbox_highlight_b8 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_s');
+    }
+
+.Checkbox_base__main_3a.Checkbox_base__medium_12 .Checkbox_highlight_b8 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_m');
+    }
+
+.Checkbox_base__main_3a.Checkbox_base__large_f7 .Checkbox_highlight_b8 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_l');
+    }
+
+.Checkbox_base__main_3a.Checkbox_base__extraLarge_c9 .Checkbox_highlight_b8 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_xl');
+    }
+
+.Checkbox_base__primary_ab.Checkbox_base__small_18 .Checkbox_highlight_b8 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_s_green');
+    }
+
+.Checkbox_base__primary_ab.Checkbox_base__medium_12 .Checkbox_highlight_b8 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_m_green');
+    }
+
+.Checkbox_base__primary_ab.Checkbox_base__large_f7 .Checkbox_highlight_b8 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_l_green');
+    }
+
+.Checkbox_base__primary_ab.Checkbox_base__extraLarge_c9 .Checkbox_highlight_b8 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_xl_green');
+    }
+
+.Checkbox_checkmark_60 {
+    background: center / contain no-repeat;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+}
+
+.Checkbox_base__checked_a2 .Checkbox_checkmark_60 {
+        /* Using a transition causes the image to blink on appear */
+        animation: Checkbox_fadeIn_1a .1s linear 0 normal forwards;
+    }
+
+.Checkbox_base__checked_a2.Checkbox_base__disabled_08 .Checkbox_checkmark_60 {
+        opacity: .5;
+    }
+
+.Checkbox_base__small_18 .Checkbox_checkmark_60 {
+        width: 11rem;
+        height: 11rem;
+    }
+
+.Checkbox_base__medium_12 .Checkbox_checkmark_60 {
+        width: 19rem;
+        height: 20rem;
+        transform: translate(1rem, -4rem);
+    }
+
+.Checkbox_base__large_f7 .Checkbox_checkmark_60 {
+        width: 23rem;
+        height: 24rem;
+        transform: translate(3rem, -3rem);
+    }
+
+.Checkbox_base__extraLarge_c9 .Checkbox_checkmark_60 {
+        width: 36rem;
+        height: 36rem;
+        transform: translate(2rem, -8rem);
+    }
+
+.Checkbox_base__main_3a.Checkbox_base__small_18 .Checkbox_checkmark_60 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_s');
+    }
+
+.Checkbox_base__main_3a.Checkbox_base__medium_12 .Checkbox_checkmark_60 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_m');
+    }
+
+.Checkbox_base__main_3a.Checkbox_base__large_f7 .Checkbox_checkmark_60 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_l');
+    }
+
+.Checkbox_base__main_3a.Checkbox_base__extraLarge_c9 .Checkbox_checkmark_60 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_xl');
+    }
+
+.Checkbox_base__primary_ab.Checkbox_base__small_18 .Checkbox_checkmark_60 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_s_green');
+    }
+
+.Checkbox_base__primary_ab.Checkbox_base__medium_12 .Checkbox_checkmark_60 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_m_green');
+    }
+
+.Checkbox_base__primary_ab.Checkbox_base__large_f7 .Checkbox_checkmark_60 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_l_green');
+    }
+
+.Checkbox_base__primary_ab.Checkbox_base__extraLarge_c9 .Checkbox_checkmark_60 {
+        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_xl_green');
+    }
+
+.Checkbox_label_bc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    padding-left: 10rem;
+    position: relative;
+}
+
+.Checkbox_labelContent_64 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    line-height: 1.15;
+    transition: color .1s linear;
+}
+
+.Checkbox_base__extraLarge_c9 .Checkbox_labelContent_64 {
+        font-size: 16rem;
+    }
+
+.Checkbox_base_36:hover .Checkbox_labelContent_64 {
+        color: #c8c8b6;
+    }
+
+.Checkbox_base__disabled_08 .Checkbox_labelContent_64,
+    .Checkbox_base__disabled_08:hover .Checkbox_labelContent_64 {
+        color: #37362e;
+    }
+
+@keyframes Checkbox_fadeIn_1a {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Checkbox_blink_5e {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.Tutorial_tutorial_ce {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+    .Tutorial_tutorial_border_ab {
+        height: 100%;
+        border-image-source: url('R.images.gui.maps.icons.components.tutorial.border');
+        border-image-slice: 4 fill;
+        border-image-width: 15rem;
+        border-image-outset: 20rem;
+        position: absolute;
+        right: -10rem;
+        left: -10rem;
+        transition: opacity .5s linear .5s;
+    }
+
+    .Tutorial_tutorial__hidden_8a .Tutorial_tutorial_border_ab {
+            opacity: 0;
+        }
+
+    .Tutorial_tutorial_hint_bc {
+        display: flex;
+        align-items: center;
+        width: 250rem;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translateY(-50%);
+        transition: opacity .5s linear .1s;
+    }
+
+    .Tutorial_tutorial__hidden_8a .Tutorial_tutorial_hint_bc {
+            opacity: 0;
+        }
+
+    .Tutorial_tutorial_hintSubstrate_c7 {
+        width: 100%;
+        height: 66rem;
+        background-image: url('R.images.gui.maps.icons.components.tutorial.back');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .Tutorial_tutorial_hintArrow_75 {
+        width: 86rem;
+        height: 90rem;
+        background-image: url('R.images.gui.maps.icons.components.tutorial.arrow');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: -10rem;
+        animation-name: Tutorial_blink_f5;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    .Tutorial_tutorial__hidden_8a .Tutorial_tutorial_hintArrow_75 {
+            animation-play-state: paused;
+        }
+
+    .Tutorial_tutorial_hintText_b5 {
+        padding-left: 24rem;
+        color: #fd9;
+        line-height: 18rem;
+        text-align: center;
+        text-shadow: 0 0 10rem rgba(255,42,0, 1),
+            0 0 5rem rgba(255,42,0, .4),
+            0 0 4rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4);
+        position: relative;
+    }
+
+@keyframes Tutorial_blink_f5 {
+    0% {
+        opacity: 0;
+        transform: translateX(60rem);
+    }
+
+    30%,
+    70% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+}
+
+/* $resolution-height * 2*/
+/* $resolution-small-width * 2*/
+/* $resolution-big-width * 2*/
+/* MIN_SCREEN_WIDTH * 2 - 1px*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+.Footer_base_0d {
+    display: flex;
+    flex-direction: column;
+    padding: 14rem 32rem 0 0;
+}
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+        (min-width: 2560px) and (min-height: 1800px) {
+.Footer_base_0d {
+        padding-top: 30rem
+}
+    }
+.Footer_content_fd {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+}
+.Footer_button_7d {
+    position: relative;
+    top: 5rem;
+}
+.Footer_price_29 {
+    margin: 0 20rem 0 10rem;
+    position: relative;
+}
+.Footer_price__stock_fd {
+        margin-right: 40rem;
+    }
+.Footer_fights_5e {
+    flex: 1;
+    padding: 0 0 1rem;
+    text-align: right;
+}
+.Footer_extension_2b {
+    position: relative;
+    top: -2rem;
+    z-index: 1;
+}
+.Footer_cButton_b6 {
+    min-width: 157rem;
+}
+.Footer_footnote_21 {
+    display: flex;
+    flex: 1;
+    padding: 0 0 3rem;
+}
+.Footer_footnote_icon_e4 {
+        width: 18rem;
+        height: 18rem;
+        margin: 0 3rem;
+        background-image: url('R.images.gui.maps.icons.customization.edited_big');
+    }
+
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .TextButton_base__right_39 {
+        flex-direction: row-reverse;
+    }
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+    .TextButton_icon__forward_59 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.back');
+        transform: translateY(1rem);
+    }
+.TextButton_icon__forward_59 {
+        transform: rotate(180deg) translateY(1rem);
+    }
+.TextButton_icon__close_53 {
+        margin: -1rem 0;
+        background-image: url('R.images.gui.maps.icons.components.text_button.close');
+    }
+.TextButton_icon__info_33 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.info');
+    }
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+    .TextButton_icon__forward_59 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+    }
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+    }
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+    }
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_glow_a4 {
+        opacity: 0;
+    }
+.TextButton_caption_82 {
+    position: relative;
+    transition: color .16s, text-shadow .16s;
+}
+.TextButton_caption__back_b9,
+    .TextButton_caption__forward_4e,
+    .TextButton_caption__close_36 {
+        color: #FFDD99;
+        text-shadow: 0 0 10rem rgba(255,42,0, 1),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4);
+    }
+.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
+            color: #fffa9f;
+        }
+.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
+            color: #FFDD99;
+        }
+.TextButton_caption__info_23 {
+        padding: 0 5rem;
+        color: #CCFFFF;
+        text-shadow: 0 0 12rem rgba(31,68,255, .8),
+            0 0 8rem #00eaff;
+    }
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+            color: #e3ffff;
+            text-shadow: 0 0 12rem rgba(31,68,255, .8),
+                0 0 12rem rgba(0,234,255, 1),
+                0 0 8rem #00eaff;
+        }
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+            color: #CCFFFF;
+            text-shadow: 0 0 12rem rgba(31,68,255, .6),
+                0 0 8rem #00eaff;
+        }
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+        margin-left: 8rem;
+    }
+.TextButton_base__right_39 .TextButton_goto_e7 {
+        margin-right: 8rem;
+    }
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity .16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+        left: -4rem;
+    }
+.TextButton_base__right_39 .TextButton_shine_e2 {
+        right: -4rem;
+        transform: rotate(180deg);
+    }
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_shine_e2 {
+        opacity: 0;
+    }
+
+/* $resolution-height * 2*/
+/* $resolution-small-width * 2*/
+/* $resolution-big-width * 2*/
+/* MIN_SCREEN_WIDTH * 2 - 1px*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+.BackButton_base_a6 {
+    position: absolute;
+    top: 75rem;
+    z-index: 1;
+}
+.BackButton_base__left_75 {
+        left: 25rem;
+    }
+.BackButton_base__right_db {
+        right: 28rem;
+    }
+
+html {
+    height: 100%;
+}
+
+body {
+    flex: 1;
+    height: 100%;
+    background-color: rgba(0,0,0, .5);
+    color: #8c8c7c;
+    font-size: 14rem;
+    line-height: 1;
+    overflow: hidden;
+}
+
+/* $resolution-height * 2*/
+
+/* $resolution-small-width * 2*/
+
+/* $resolution-big-width * 2*/
+
+/* MIN_SCREEN_WIDTH * 2 - 1px*/
+
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
+
+/* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+
+.CustomizationCartApp_base_b8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    top: -20rem;
+}
+
+.CustomizationCartApp_overlay_f0 {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .15;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.CustomizationCartApp_overlay__lowSettings_2d {
+        opacity: .4;
+    }
+
+.CustomizationCartApp_header_f5 {
+    align-items: flex-end;
+    flex: 1;
+    width: 800rem;
+    min-height: 117rem;
+}
+
+@media (min-width: 1280px) and (max-width: 2047px),
+        (min-width: 2047px) and (max-height: 1429px),
+        (min-width: 2560px) {
+
+.CustomizationCartApp_header_f5 {
+        width: 997rem
+}
+    }
+
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+        (min-width: 2560px) and (min-height: 1800px) {
+
+.CustomizationCartApp_header_f5 {
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 1005rem
+}
+    }
+
+@media (min-width: 1700px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (max-height: 1429px),
+        (min-width: 3400px) {
+
+.CustomizationCartApp_header_f5 {
+        width: 1253rem
+}
+    }
+
+.CustomizationCartApp_seasons_e0 {
+    flex: 0 auto;
+    width: 800rem;
+}
+
+@media (min-width: 1280px) and (max-width: 2047px),
+        (min-width: 2047px) and (max-height: 1429px),
+        (min-width: 2560px) {
+
+.CustomizationCartApp_seasons_e0 {
+        width: 997rem
+}
+    }
+
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+        (min-width: 2560px) and (min-height: 1800px) {
+
+.CustomizationCartApp_seasons_e0 {
+        width: 1005rem
+}
+    }
+
+@media (min-width: 1700px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (max-height: 1429px),
+        (min-width: 3400px) {
+
+.CustomizationCartApp_seasons_e0 {
+        width: 1253rem
+}
+    }
+
+.CustomizationCartApp_footer_9d {
+    align-items: flex-start;
+    flex: 1;
+    width: 800rem;
+    min-height: 83rem;
+}
+
+@media (min-width: 1280px) and (max-width: 2047px),
+        (min-width: 2047px) and (max-height: 1429px),
+        (min-width: 2560px) {
+
+.CustomizationCartApp_footer_9d {
+        width: 997rem
+}
+    }
+
+@media (min-width: 1280px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (min-height: 900px) and (max-height: 1429px),
+        (min-width: 2560px) and (min-height: 1800px) {
+
+.CustomizationCartApp_footer_9d {
+        width: 1005rem;
+        min-height: 145rem
+}
+    }
+
+@media (min-width: 1700px) and (max-width: 2047px) and (min-height: 900px),
+        (min-width: 2047px) and (max-height: 1429px),
+        (min-width: 3400px) {
+
+.CustomizationCartApp_footer_9d {
+        width: 1253rem
+}
+    }
+

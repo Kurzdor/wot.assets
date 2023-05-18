@@ -1,0 +1,9 @@
+.LobbyTopSubViewWrapper_base_2e {
+    /* Layer system on C++ side corrects view height +35px,
+    so all views with LOBBY_TOP_SUB_VIEW ViewFlag on python side have extra spacing in the bottom
+    It is impossible to recheck all the places where python views with such ViewFlag are rendered,
+    So that's why we use this slug for correct positioning of elements in such views.
+    */
+    padding-bottom: 35rem;
+}
+

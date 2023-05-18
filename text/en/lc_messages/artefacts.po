@@ -68,13 +68,13 @@ msgid "additionalInvisibilityDevice/short_special"
 msgstr "Increases the concealment of a stationary or moving vehicle."
 
 msgid "additionalInvisibilityDevice_tier1/name"
-msgstr "Low Noise Exhaust System Class 1"
+msgstr "Low Noise Exhaust System Class 1"
 
 msgid "additionalInvisibilityDevice_tier2/name"
-msgstr "Low Noise Exhaust System Class 2"
+msgstr "Low Noise Exhaust System Class 2"
 
 msgid "additionalInvisibilityDevice_tier3/name"
-msgstr "Low Noise Exhaust System Class 3"
+msgstr "Low Noise Exhaust System Class 3"
 
 msgid "additional_armor_plates_1/name"
 msgstr "Additional Armor Plating (Type 1)"
@@ -114,10 +114,10 @@ msgstr "-5%"
 
 msgid "aimingStabilizerBattleBooster/long_special"
 msgstr ""
-"Improves the effect of Vertical Stabilizer (Class 1 and Class 2), "
-"Stabilizing Equipment System, and Bounty Stabilizer for the course of the "
-"battle. To equip and activate this directive, these equipment items should "
-"be mounted on your vehicle."
+"Improves the effect of Vertical Stabilizer (any class), Stabilizing "
+"Equipment System, and Bounty Stabilizer for the course of the battle. To "
+"equip and activate this directive, these equipment items should be mounted "
+"on your vehicle."
 
 msgid "aimingStabilizerBattleBooster/name"
 msgstr "Stabilizer Greasing"
@@ -163,8 +163,69 @@ msgstr "Medium Spall Liner"
 msgid "antifragmentationLining_tier4/name"
 msgstr "Light Spall Liner"
 
-msgid "antifragmentationLining_wt/name"
-msgstr "?empty?"
+msgid "archetype/additionalInvisibilityDevice/name"
+msgstr "Exhaust System"
+
+msgid "archetype/aimingStabilizer/name"
+msgstr "Stabilizer"
+
+msgid "archetype/antifragmentationLining/name"
+msgstr "Spall Liner"
+
+msgid "archetype/camouflageNet/name"
+msgstr "Camouflage Net"
+
+msgid "archetype/coatedOptics/name"
+msgstr "Optics"
+
+msgid "archetype/commandersView/name"
+msgstr "Vision System"
+
+msgid "archetype/enhancedAimDrives/name"
+msgstr "Gun Laying Drive"
+
+msgid "archetype/extraHealthReserve/name"
+msgstr "Hardening"
+
+msgid "archetype/grousers/name"
+msgstr "Grousers"
+
+msgid "archetype/improvedConfiguration/name"
+msgstr "Configuration"
+
+msgid "archetype/improvedRadioCommunication/name"
+msgstr "Radio Set"
+
+msgid "archetype/improvedRotationMechanism/name"
+msgstr "Rotation Mechanism"
+
+msgid "archetype/improvedSights/name"
+msgstr "Aiming"
+
+msgid "archetype/improvedVentilation/name"
+msgstr "Ventilation"
+
+msgid "archetype/modernizedAimDrivesAimingStabilizer/name/noTemplate"
+msgstr "Fire-Control System"
+
+msgid ""
+"archetype/modernizedExtraHealthReserveAntifragmentationLining/name/noTemplate"
+msgstr "Survival Improvement Suite"
+
+msgid "archetype/modernizedTurbochargerRotationMechanism/name/noTemplate"
+msgstr "Mobility Improvement System"
+
+msgid "archetype/stereoscope/name"
+msgstr "Binocular Telescope"
+
+msgid "archetype/tankRammer/name"
+msgstr "Rammer"
+
+msgid "archetype/template"
+msgstr "\"%(name)s\" category equipment"
+
+msgid "archetype/turbocharger/name"
+msgstr "Turbocharger"
 
 msgid "artillery/longDescr"
 msgstr ""
@@ -339,253 +400,6 @@ msgstr ""
 "Causes damage to and decreases view range of all vehicles inside the mist. "
 "Conceals all vehicles inside and behind the mist."
 
-msgid "builtinAbsorb_wt/always"
-msgstr ""
-"By being near a clump of Plasma on the ground, the vehicle accelerates its "
-"evaporation. If, at the moment of evaporation of Plasma, the vehicle is "
-"within a 50 m radius from it, it will recover a certain number of hit points "
-"and accelerate the Teleportation cooldown."
-
-msgid "builtinAbsorb_wt/descr"
-msgstr "Passive ability"
-
-msgid "builtinAbsorb_wt/features"
-msgstr ""
-"1. When shields are activated, it is recommended to act aggressively and "
-"capture Plasma. This is the key to victory for the Engineer.\n"
-"2. Passive tactics are ineffective. Move around the map, split up the enemy "
-"team, and block points of interest."
-
-msgid "builtinAbsorb_wt/long_special"
-msgstr "?empty?"
-
-msgid "builtinAbsorb_wt/name"
-msgstr "Absorption"
-
-msgid "builtinAbsorb_wt/onUse"
-msgstr "?empty?"
-
-msgid "builtinAbsorb_wt/restriction"
-msgstr "?empty?"
-
-msgid "builtinAbsorb_wt/short_special"
-msgstr "?empty?"
-
-msgid "builtinAfterburning_wt/always"
-msgstr "?empty?"
-
-msgid "builtinAfterburning_wt/descr"
-msgstr "Combat ability"
-
-msgid "builtinAfterburning_wt/features"
-msgstr ""
-"1. Use Charge to quickly move to the points of interest.\n"
-"2. Use Charge to leave dangerous areas of the map.\n"
-"3. Use Charge to \"outcircle\" the enemy or avoid taking damage."
-
-msgid "builtinAfterburning_wt/long_special"
-msgstr "?empty?"
-
-msgid "builtinAfterburning_wt/name"
-msgstr "Charge"
-
-msgid "builtinAfterburning_wt/onUse"
-msgstr ""
-"Increases the vehicle's dynamic characteristics for a particular period of "
-"time."
-
-msgid "builtinAfterburning_wt/restriction"
-msgstr "?empty?"
-
-msgid "builtinAfterburning_wt/short_special"
-msgstr "?empty?"
-
-msgid "builtinChargedShot_wt/always"
-msgstr "?empty?"
-
-msgid "builtinChargedShot_wt/descr"
-msgstr "Combat ability"
-
-msgid "builtinChargedShot_wt/features"
-msgstr ""
-"1. Use the Railgun to set Sentinels on fire by aiming at their rear.\n"
-"2. The Railgun is completely ineffective at long range but very useful at "
-"close range."
-
-msgid "builtinChargedShot_wt/long_special"
-msgstr "?empty?"
-
-msgid "builtinChargedShot_wt/name"
-msgstr "Railgun"
-
-msgid "builtinChargedShot_wt/onUse"
-msgstr ""
-"After activating the ability, the shot that follows will be less accurate "
-"but will cause more damage to the enemy and their modules."
-
-msgid "builtinChargedShot_wt/restriction"
-msgstr "?empty?"
-
-msgid "builtinChargedShot_wt/short_special"
-msgstr "?empty?"
-
-msgid "builtinDrop_wt/always"
-msgstr "?empty?"
-
-msgid "builtinDrop_wt/descr"
-msgstr "?empty?"
-
-msgid "builtinDrop_wt/features"
-msgstr "?empty?"
-
-msgid "builtinDrop_wt/long_special"
-msgstr "?empty?"
-
-msgid "builtinDrop_wt/name"
-msgstr "?empty?"
-
-msgid "builtinDrop_wt/onUse"
-msgstr "?empty?"
-
-msgid "builtinDrop_wt/restriction"
-msgstr "?empty?"
-
-msgid "builtinDrop_wt/short_special"
-msgstr "?empty?"
-
-msgid "builtinImpulse_wt/always"
-msgstr "?empty?"
-
-msgid "builtinImpulse_wt/descr"
-msgstr "Combat ability"
-
-msgid "builtinImpulse_wt/features"
-msgstr ""
-"1. The more targets affected by EMP Burst, the faster it cools down.\n"
-"2. EMP Burst can go through environment objects. It can help you slow down "
-"the most maneuverable targets.\n"
-"3. EMP Burst can cause damage through Foudre's Ballistic Dome."
-
-msgid "builtinImpulse_wt/long_special"
-msgstr "?empty?"
-
-msgid "builtinImpulse_wt/name"
-msgstr "EMP Burst"
-
-msgid "builtinImpulse_wt/onUse"
-msgstr ""
-"A charge of energy that covers the area around the vehicle, stuns all enemy "
-"vehicles in the impact area, and causes damage to those closest. It passes "
-"through all obstacles and resets Generator Overload points from damaged "
-"vehicles."
-
-msgid "builtinImpulse_wt/restriction"
-msgstr "?empty?"
-
-msgid "builtinImpulse_wt/short_special"
-msgstr "?empty?"
-
-msgid "builtinInstantStunShoot_wt/always"
-msgstr "?empty?"
-
-msgid "builtinInstantStunShoot_wt/descr"
-msgstr "Combat ability"
-
-msgid "builtinInstantStunShoot_wt/features"
-msgstr ""
-"1. EMP Arrow stuns vehicles. Use this ability to slow down the enemy and "
-"then cause damage to them.\n"
-"2. EMP Arrow has a damage area. You can stun a target without hitting it "
-"directly.\n"
-"3. EMP Arrow can be used even when the gun is not loaded."
-
-msgid "builtinInstantStunShoot_wt/long_special"
-msgstr "?empty?"
-
-msgid "builtinInstantStunShoot_wt/name"
-msgstr "EMP Arrow"
-
-msgid "builtinInstantStunShoot_wt/onUse"
-msgstr ""
-"A shot with a high-voltage charge that slows down and stuns enemies. Resets "
-"Generator Overload points from damaged vehicles."
-
-msgid "builtinInstantStunShoot_wt/restriction"
-msgstr "?empty?"
-
-msgid "builtinInstantStunShoot_wt/short_special"
-msgstr "?empty?"
-
-msgid "builtinLargeMedkit_wt/always"
-msgstr "%(crewHitChance)s to protection of the crew from injuries"
-
-msgid "builtinLargeMedkit_wt/descr"
-msgstr "Treatment of all injured crew members and removing the stun effect."
-
-msgid "builtinLargeMedkit_wt/long_special"
-msgstr ""
-"Treats all injured crew members upon activation. The passive effect protects "
-"the crew from injuries. This consumable is suitable for all vehicle types of "
-"any nation."
-
-msgid "builtinLargeMedkit_wt/name"
-msgstr "Large First Aid Kit"
-
-msgid "builtinLargeMedkit_wt/onUse"
-msgstr ""
-"Treatment of all injured crew members. Can be used multiple times in a "
-"battle."
-
-msgid "builtinLargeMedkit_wt/restriction"
-msgstr "?empty?"
-
-msgid "builtinLargeMedkit_wt/short_special"
-msgstr "Treats all injured crew members"
-
-msgid "builtinLargeMedkit_wt/stunDisabled/descr"
-msgstr "Treatment of all injured crew members."
-
-msgid "builtinOverload_wt/always"
-msgstr ""
-"Harriers can pick up clumps of Plasma and use them to overload Generators. "
-"Each overloaded Generator temporarily disables the shield surrounding "
-"Ermelinda's vehicle. To slow down Plasma evaporation, maintain a speed "
-"higher than 50 km/h. The first time a load of Plasma is picked up, a certain "
-"amount of HP will be restored to the entire team. In addition, having Plasma "
-"on board a vehicle increases the damage caused to Ermelinda."
-
-msgid "builtinOverload_wt/descr"
-msgstr "Passive ability"
-
-msgid "builtinOverload_wt/features"
-msgstr ""
-"1. Whenever possible, hand Plasma over to more maneuverable and durable "
-"allies. You can drop Plasma by pressing the N key.\n"
-"2. Restore some of your hit points and reload Charge by taking part in a "
-"successful Generator Overload.\n"
-"3. If you destroy a Sentinels' Camp but are unable to overload the "
-"Generators, do not give up! After collecting a clump of Plasma, keep up your "
-"speed for as long as possible. This is your best chance to make it to a "
-"Generator.\n"
-"4. Do not give up! If at least one Harrier is carrying Plasma when the timer "
-"runs out, the battle will go into overtime, and the battle time will be "
-"extended by 60 seconds."
-
-msgid "builtinOverload_wt/long_special"
-msgstr "?empty?"
-
-msgid "builtinOverload_wt/name"
-msgstr "Overload"
-
-msgid "builtinOverload_wt/onUse"
-msgstr "?empty?"
-
-msgid "builtinOverload_wt/restriction"
-msgstr "?empty?"
-
-msgid "builtinOverload_wt/short_special"
-msgstr "?empty?"
-
 msgid "builtinRepairkit/always"
 msgstr "%(vehicleRepairSpeed)s to module repair speed"
 
@@ -606,140 +420,24 @@ msgstr ""
 msgid "builtinRepairkit/restriction"
 msgstr "?empty?"
 
-msgid "builtinRepairkit_wt/always"
-msgstr "%(vehicleRepairSpeed)s to module repair speed"
-
-msgid "builtinRepairkit_wt/descr"
-msgstr "Repair of all damaged modules."
-
-msgid "builtinRepairkit_wt/long_special"
-msgstr ""
-"Repairs all damaged modules at once upon activation. It also passively "
-"increases the repair speed."
-
-msgid "builtinRepairkit_wt/name"
-msgstr "Large Repair Kit"
-
-msgid "builtinRepairkit_wt/onUse"
-msgstr ""
-"Repair of all damaged modules. Can be used multiple times in a battle. "
-"Cannot be spent."
-
-msgid "builtinRepairkit_wt/restriction"
-msgstr "?empty?"
-
-msgid "builtinShield_wt/always"
-msgstr "?empty?"
-
-msgid "builtinShield_wt/descr"
-msgstr "Combat ability"
-
-msgid "builtinShield_wt/features"
-msgstr ""
-"1. Ballistic Dome has a short duration. Use it in critical situations to "
-"protect yourself from enemy shells.\n"
-"2. Use Ballistic Dome to avoid being stunned.\n"
-"3. Remember: Ballistic Dome does not protect you from ramming, falling, or "
-"EMP Burst damage."
-
-msgid "builtinShield_wt/long_special"
-msgstr "?empty?"
-
-msgid "builtinShield_wt/name"
-msgstr "Ballistic Dome"
-
-msgid "builtinShield_wt/onUse"
-msgstr ""
-"Grants invulnerability to stun and damage received from shells for a certain "
-"period of time."
-
-msgid "builtinShield_wt/restriction"
-msgstr "?empty?"
-
-msgid "builtinShield_wt/short_special"
-msgstr "?empty?"
-
-msgid "builtinStronghold_wt/always"
-msgstr "?empty?"
-
-msgid "builtinStronghold_wt/descr"
-msgstr "Combat ability"
-
-msgid "builtinStronghold_wt/features"
-msgstr ""
-"1. Use Siege Mode wisely. It drastically decreases the vehicle's mobility, "
-"as well as your chances of escape.\n"
-"2. The vehicle has great elevation and depression angles, allowing you to "
-"use terrain irregularities to your advantage.\n"
-"3. The vehicle has high survivability. Use this to help your allies."
-
-msgid "builtinStronghold_wt/long_special"
-msgstr "?empty?"
-
-msgid "builtinStronghold_wt/name"
-msgstr "Siege Mode"
-
-msgid "builtinStronghold_wt/onUse"
-msgstr ""
-"Increases the vehicle's fire rate but decreases its mobility for a certain "
-"period of time."
-
-msgid "builtinStronghold_wt/restriction"
-msgstr "?empty?"
-
-msgid "builtinStronghold_wt/short_special"
-msgstr "?empty?"
-
-msgid "builtinTeleport_wt/always"
-msgstr "?empty?"
-
-msgid "builtinTeleport_wt/descr"
-msgstr "Von Krieger's secret technology"
-
-msgid "builtinTeleport_wt/features"
-msgstr ""
-"1. The Harriers will know when you use Teleportation, but they will not know "
-"where you appear.\n"
-"2. It is not recommended to stray too far from the Harriers, as you might "
-"not get to points of interest in time."
-
-msgid "builtinTeleport_wt/long_special"
-msgstr "?empty?"
-
-msgid "builtinTeleport_wt/name"
-msgstr "Teleportation"
-
-msgid "builtinTeleport_wt/onUse"
-msgstr ""
-"Allows the vehicle to teleport to a selected point on the map after some "
-"delay.\n"
-"Operating the vehicle is impossible during preparation. Cannot be used while "
-"the shield is deactivated."
-
-msgid "builtinTeleport_wt/restriction"
-msgstr "The ability is only available with an active shield"
-
-msgid "builtinTeleport_wt/short_special"
-msgstr "?empty?"
-
 msgid "camouflageBattleBooster/action/boost"
 msgstr "Additional 10% to vehicle concealment"
 
 msgid "camouflageBattleBooster/action/perk"
-msgstr "Gives all crew members the Concealment skill trained to 100%"
+msgstr "Gives all crew members the Concealment perk trained to 100%"
 
 msgid "camouflageBattleBooster/long_special"
 msgstr ""
-"The Concealment skill reduces the visibility of both stationary and moving "
-"vehicles for the course of the battle. If the skill is trained to 100%, the "
+"The Concealment perk reduces the visibility of both stationary and moving "
+"vehicles for the course of the battle. If the perk is trained to 100%, the "
 "equipped directive increases its effect; if not, the directive provides your "
-"vehicle with the skill trained to 100%."
+"vehicle with the perk trained to 100%."
 
 msgid "camouflageBattleBooster/name"
 msgstr "Natural Cover"
 
 msgid "camouflageBattleBooster/short_special"
-msgstr "Provides the Concealment skill trained to 100% or increases its effect"
+msgstr "Provides the Concealment perk trained to 100% or increases its effect"
 
 msgid "camouflageNet/battle_descr"
 msgstr "Increases the concealment of a stationary vehicle 3 s after it stops"
@@ -748,7 +446,7 @@ msgid "camouflageNet/long_special"
 msgstr ""
 "The effectiveness depends on the vehicle type. Camouflage Net is mainly "
 "beneficial for stealthy vehicles: SPGs and tank destroyers with a low "
-"silhouette. It increases the effect of the Concealment skill. Combining them "
+"silhouette. It increases the effect of the Concealment perk. Combining them "
 "will provide a good bonus for your vehicle. Camouflage Net activates 3 "
 "seconds after the vehicle stops moving."
 
@@ -766,11 +464,11 @@ msgstr "Camouflage Net Class 3"
 
 msgid "chocolate/always"
 msgstr ""
-"{colorTagOpen}%(crewLevel)s{colorTagClose} to all crew skills and perks for "
-"the course of the battle."
+"{colorTagOpen}%(crewLevel)s{colorTagClose} to all crew perks for the course "
+"of the battle."
 
 msgid "chocolate/descr"
-msgstr "{colorTagOpen}+10%{colorTagClose} to all crew skills and perks."
+msgstr "{colorTagOpen}+10%{colorTagClose} to all crew perks."
 
 msgid "chocolate/long_special"
 msgstr ""
@@ -823,8 +521,8 @@ msgstr "Coated Optics"
 
 msgid "coatedOpticsBattleBooster/descr"
 msgstr ""
-"%s to view range (up to 445 m) with Coated Optics, Experimental Optics, or "
-"Bounty Optics mounted."
+"%s to view range (up to 445 m) with Coated Optics (any class), Experimental "
+"Optics, or Bounty Optics mounted."
 
 msgid "coatedOpticsBattleBooster/gain/deluxe"
 msgstr "+2.5%"
@@ -855,11 +553,11 @@ msgstr "Coated Optics Class 3"
 
 msgid "cocacola/always"
 msgstr ""
-"{colorTagOpen}%(crewLevel)s{colorTagClose} to all crew skills and perks for "
-"the course of the battle."
+"{colorTagOpen}%(crewLevel)s{colorTagClose} to all crew perks for the course "
+"of the battle."
 
 msgid "cocacola/descr"
-msgstr "{colorTagOpen}+10%{colorTagClose} to all crew skills and perks."
+msgstr "{colorTagOpen}+10%{colorTagClose} to all crew perks."
 
 msgid "cocacola/long_special"
 msgstr ""
@@ -892,6 +590,229 @@ msgid "commandersView/short_special"
 msgstr ""
 "Reduces the concealment of enemy vehicles, either moving or behind foliage"
 
+msgid "comp7_aggressive_detection/descr/active"
+msgstr ""
+"The view range will be increased by {colorTagOpen}%(visionBuff_1).1f/"
+"%(visionBuff_2).1f/%(visionBuff_3).1f%%{colorTagClose} for "
+"{colorTagOpen}%(duration)d s{colorTagClose}.\n"
+"\n"
+"The timer will reset when an enemy vehicle is destroyed upon your spotting."
+
+msgid "comp7_aggressive_detection/name"
+msgstr "Active Recon"
+
+msgid "comp7_ally_support/descr/active"
+msgstr ""
+"For {colorTagOpen}%(duration)d s{colorTagClose}, your crew receives a "
+"{colorTagOpen}%(crewBuff_1).1f/%(crewBuff_2).1f/%(crewBuff_3).1f%"
+"%{colorTagClose} bonus to the major qualification level for each vehicle on "
+"your team with a different role.\n"
+"\n"
+"Your vehicle will always be included in the calculation of this bonus."
+
+msgid "comp7_ally_support/name"
+msgstr "One for All"
+
+msgid "comp7_aoe_heal/descr/active"
+msgstr ""
+"For {colorTagOpen}%(duration)d s{colorTagClose}, an area with a radius of "
+"{colorTagOpen}%(radius)d m{colorTagClose} is created around your vehicle "
+"that restores {colorTagOpen}%(heal_1)d/%(heal_2)d/%(heal_3)d{colorTagClose} "
+"hit points for your vehicle and allied vehicles."
+
+msgid "comp7_aoe_heal/name"
+msgstr "Field Repairs"
+
+msgid "comp7_aoe_inspire/descr/active"
+msgstr ""
+"For {colorTagOpen}%(duration)d s{colorTagClose}, your crew and allied crews "
+"receive a {colorTagOpen}%(crewBuff_1).0f/%(crewBuff_2).0f/%(crewBuff_3).0f%"
+"%{colorTagClose} bonus to the major qualification level."
+
+msgid "comp7_aoe_inspire/name"
+msgstr "Inspire"
+
+msgid "comp7_berserk/descr/active"
+msgstr ""
+"For {colorTagOpen}%(duration)d s{colorTagClose}, the gun reload time is "
+"reduced by {colorTagOpen}%(gunReloadTimeBuff_1).0f/%(gunReloadTimeBuff_2).0f/"
+"%(gunReloadTimeBuff_3).0f%%{colorTagClose}. Also, gun dispersion after "
+"firing, during movement, and during hull and turret traverse is reduced by "
+"{colorTagOpen}%(shotDispersionFactorsBuff_1).0f/"
+"%(shotDispersionFactorsBuff_2).0f/%(shotDispersionFactorsBuff_3).0f%"
+"%{colorTagClose}.\n"
+"\n"
+"The timer will reset when you cause damage by ramming or shooting from a "
+"distance of under {colorTagOpen}%(damageDistance)d m{colorTagClose}."
+
+msgid "comp7_berserk/name"
+msgstr "Fury"
+
+msgid "comp7_concentration/descr/active"
+msgstr ""
+"For {colorTagOpen}%(duration)d s{colorTagClose}, gun dispersion after "
+"firing, during movement, and during hull and turret traverse is reduced by "
+"{colorTagOpen}%(shotDispersionFactorsBuff_1).0f/"
+"%(shotDispersionFactorsBuff_2).0f/%(shotDispersionFactorsBuff_3).0f%"
+"%{colorTagClose}.\n"
+"\n"
+"While this Role Skill is active, the reload time between shots is reduced by "
+"{colorTagOpen}%(clipReloadTimeBoost_1).1f/%(clipReloadTimeBoost_2).1f/"
+"%(clipReloadTimeBoost_3).1f s{colorTagClose}.\n"
+"\n"
+"At the beginning of a battle, the charge level of the Role Skill is 1."
+
+msgid "comp7_concentration/name"
+msgstr "Focus on the Target"
+
+msgid "comp7_fast_recharge/descr/active"
+msgstr ""
+"For a magazine loading system:\n"
+"\n"
+"The remaining magazine reload time is reduced by "
+"{colorTagOpen}%(gunReloadTimeBuff_1).0f/%(gunReloadTimeBuff_2).0f/"
+"%(gunReloadTimeBuff_3).0f%%{colorTagClose}.\n"
+"\n"
+"For an autoreloading system:\n"
+"\n"
+"All fired shells in the current cycle will be reloaded "
+"{colorTagOpen}%(gunReloadTimeBuff_1).0f/%(gunReloadTimeBuff_2).0f/"
+"%(gunReloadTimeBuff_3).0f%%{colorTagClose} faster.\n"
+"\n"
+"This skill can only be activated during the reloading process."
+
+msgid "comp7_fast_recharge/name"
+msgstr "Sleight of Hand"
+
+msgid "comp7_hunter/descr/active"
+msgstr ""
+"Resets the number of enemy vehicles damaged by shots.\n"
+"\n"
+"For {colorTagOpen}%(duration)d s{colorTagClose}, your vehicle will restore "
+"{colorTagOpen}%(heal_1)d/%(heal_2)d/%(heal_3)d{colorTagClose} hit points for "
+"each enemy vehicle damaged by a shot at the moment of activation."
+
+msgid "comp7_hunter/descr/passive"
+msgstr ""
+"Gun reload time is reduced by {colorTagOpen}%(gunReloadTimeBuff)d%"
+"%{colorTagClose} for each enemy vehicle damaged by a shot."
+
+msgid "comp7_hunter/name"
+msgstr "Bounty Hunter"
+
+msgid "comp7_juggernaut/descr/active"
+msgstr ""
+"For {colorTagOpen}%(duration_1)d/%(duration_2)d/%(duration_3)d "
+"s{colorTagClose}, your vehicle's engine power will increase by "
+"{colorTagOpen}%(enginePowerBuff)d%%{colorTagClose}, the repair speed of "
+"damaged modules will increase by {colorTagOpen}%(repairBuff)d%"
+"%{colorTagClose}, and stun duration will decrease by "
+"{colorTagOpen}%(stunDurationResist)d%%{colorTagClose}.\n"
+"\n"
+"When this skill is active, each enemy shell that hits your vehicle reduces "
+"the remaining reload time by "
+"{colorTagOpen}%(gunReloadBoost)d s{colorTagClose}."
+
+msgid "comp7_juggernaut/name"
+msgstr "Straight Ahead"
+
+msgid "comp7_march/descr/active"
+msgstr ""
+"For {colorTagOpen}%(duration_1)d/%(duration_2)d/%(duration_3)d "
+"s{colorTagClose}, your vehicle's engine power will increase by "
+"{colorTagOpen}%(enginePowerBuff)d%%{colorTagClose}, its top forward speed "
+"will increase by {colorTagOpen}%(fwdSpeedBoost)d{colorTagClose} km/h, and "
+"its concealment value will increase by "
+"{colorTagOpen}%(invisibilityFactor).0f%%{colorTagClose}."
+
+msgid "comp7_march/name"
+msgstr "Forced March"
+
+msgid "comp7_recon/descr/active"
+msgstr ""
+"A recon aircraft will fly over the selected area within "
+"{colorTagOpen}%(delay)d s{colorTagClose}. Enemy vehicles detected within a "
+"radius of {colorTagOpen}%(radius_1)d/%(radius_2)d/%(radius_3)d "
+"m{colorTagClose} remain spotted for {colorTagOpen}%(duration_1)d/"
+"%(duration_2)d/%(duration_3)d&nbsp;s{colorTagClose}.\n"
+"\n"
+"At the beginning of a battle, the charge level of the Role Skill is 1."
+
+msgid "comp7_recon/name"
+msgstr "Recon Flight"
+
+msgid "comp7_redline/descr/active"
+msgstr ""
+"The selected area will be attacked by an artillery strike within "
+"{colorTagOpen}%(delay)d s{colorTagClose}.\n"
+"\n"
+"The targets damaged within a radius of {colorTagOpen}%(radius_1)d/"
+"%(radius_2)d/%(radius_3)d m{colorTagClose} will receive "
+"{colorTagOpen}%(damage_1)d/%(damage_2)d/%(damage_3)d{colorTagClose} HP of "
+"damage and will be stunned for {colorTagOpen}%(stunDuration_1)d/"
+"%(stunDuration_2)d/%(stunDuration_3)d s{colorTagClose}."
+
+msgid "comp7_redline/name"
+msgstr "Fire Cover"
+
+msgid "comp7_risky_attack/descr/active"
+msgstr ""
+"Acceleration\n"
+"\n"
+"For {colorTagOpen}%(duration)d s{colorTagClose}, engine power increases by "
+"{colorTagOpen}%(enginePowerBuff)d%%{colorTagClose}, the top forward speed "
+"increases by {colorTagOpen}%(fwdSpeedBoost)d{colorTagClose} km/h, and the "
+"top reverse speed increases by "
+"{colorTagOpen}%(bkwSpeedBoost)d{colorTagClose} km/h.\n"
+"\n"
+"Recovery\n"
+"\n"
+"For {colorTagOpen}%(healDuration)d s{colorTagClose}, your vehicle restores "
+"{colorTagOpen}%(baseHeal)d{colorTagClose} hit points {colorTagOpen}+"
+"%(extraHealFactor_1)d/%(extraHealFactor_2)d/%(extraHealFactor_3)d%"
+"%{colorTagClose} of hit points lost while Acceleration is active.\n"
+"\n"
+"At the beginning of a battle, the charge level of the Role Skill is 1."
+
+msgid "comp7_risky_attack/name"
+msgstr "Second Wind"
+
+msgid "comp7_sniper/descr/active"
+msgstr ""
+"For {colorTagOpen}%(duration_1)d/%(duration_2)d/"
+"%(duration_3)d s{colorTagClose}, dispersion at 100 m is equal to "
+"{colorTagOpen}%(dispersionFactor).2f m{colorTagClose}.\n"
+"\n"
+"If your vehicle has not been spotted at the moment of the shot, the damage "
+"caused with your shell will increase by {colorTagOpen}%(damageFactors_1).0f/"
+"%(damageFactors_2).0f/%(damageFactors_3).0f%%{colorTagClose}. \n"
+"\n"
+"The timer will be reset for damage caused by shooting from a distance of "
+"over {colorTagOpen}%(damageDistance)d m{colorTagClose}."
+
+msgid "comp7_sniper/name"
+msgstr "Bullseye"
+
+msgid "comp7_sure_shot/descr/active"
+msgstr ""
+"For {colorTagOpen}%(duration)d s{colorTagClose}, gun dispersion after "
+"firing, during movement, and during hull and turret traverse is reduced by "
+"{colorTagOpen}%(shotDispersionFactorsBuff_1).0f/"
+"%(shotDispersionFactorsBuff_2).0f/%(shotDispersionFactorsBuff_3).0f%"
+"%{colorTagClose}.\n"
+"\n"
+"While this skill is active, damage by shooting reduces gun reload time by "
+"{colorTagOpen}%(gunReloadBuff_1).0f/%(gunReloadBuff_2).0f/"
+"%(gunReloadBuff_3).0f%%{colorTagClose} of the percentage by which the enemy "
+"vehicle's hit points have decreased.\n"
+"\n"
+"Destroying an enemy vehicle reduces gun reload time by "
+"{colorTagOpen}%(gunReloadBuff_1).0f/%(gunReloadBuff_2).0f/"
+"%(gunReloadBuff_3).0f%%{colorTagClose}."
+
+msgid "comp7_sure_shot/name"
+msgstr "Clean Shot"
+
 msgid "corrodingShot/descr"
 msgstr ""
 "Upon activation and causing damage to an enemy's vehicle, the shell applies "
@@ -913,6 +834,9 @@ msgstr "Acid Shell"
 msgid "crewBattleBooster/descr/boost"
 msgstr "Improves the following"
 
+msgid "crewBattleBooster/descr/commander_special"
+msgstr "Commander Feature"
+
 msgid "crewBattleBooster/descr/common"
 msgstr "{colorTagOpen}{action}{colorTagClose} {skillOrPerk} \"{name}\""
 
@@ -923,7 +847,7 @@ msgid "crewBattleBooster/descr/replace"
 msgstr "Gives the following"
 
 msgid "crewBattleBooster/descr/skill"
-msgstr "skill:"
+msgstr "perk:"
 
 msgid "deluxAimingStabilizer/long_special"
 msgstr ""
@@ -974,10 +898,10 @@ msgstr "Accelerates repairs, protects ammo rack, fuel tanks, and engine"
 msgid "deluxImprovedVentilation/long_special"
 msgstr ""
 "An improved version of Ventilation ({colorTagOpen}+5%{colorTagClose} to all "
-"crew skills) that provides a stronger effect: "
-"{colorTagOpen}+8.5%{colorTagClose} to all crew skills. This equipment is "
-"suitable for vehicles of all nations and types. Can be demounted using bonds "
-"only."
+"crew perks) that provides a stronger effect: "
+"{colorTagOpen}+8.5%{colorTagClose} to all crew perks. This equipment is "
+"suitable for vehicles of all nations and types. It can only be demounted "
+"using bonds."
 
 msgid "deluxImprovedVentilation/name"
 msgstr "Venting System"
@@ -1094,8 +1018,9 @@ msgstr "Enhanced Gun Laying Drive"
 
 msgid "enhancedAimDrivesBattleBooster/descr"
 msgstr ""
-"%s to aiming speed with Enhanced Gun Laying Drive, Wear-Resistant Gun Laying "
-"Drive, or Bounty Gun Laying Drive mounted."
+"%s to aiming speed with Enhanced Gun Laying Drive (any class), Wear-"
+"Resistant Gun Laying Drive, Bounty Gun Laying Drive, or Fire-Control System "
+"mounted."
 
 msgid "enhancedAimDrivesBattleBooster/gain/deluxe"
 msgstr "+2.5%"
@@ -1128,6 +1053,12 @@ msgstr "Enhanced Gun Laying Drive Class 3"
 msgid "enhancedBelwillWashers/name"
 msgstr "Enhanced Belleville Washers"
 
+msgid "enhancedExtraHealthReserve/additional_descr"
+msgstr "Fully restores suspension hit points after repairs."
+
+msgid "enhancedExtraHealthReserve/effect/chassisRestoration"
+msgstr "Fully restores suspension hit points after repairs"
+
 msgid "enhancedLevers/name"
 msgstr "Enhanced Levers"
 
@@ -1145,6 +1076,12 @@ msgstr "Enhanced Torsion Bars Class 3 t"
 
 msgid "enhancedTorsions5t/name"
 msgstr "Enhanced Torsion Bars Class 5+ t"
+
+msgid "exampleAbility/descr"
+msgstr "Test Skill for Visual Script"
+
+msgid "exampleAbility/name"
+msgstr "Test Skill"
 
 msgid "extraHealthReserve/additional_descr"
 msgstr "Fully restores suspension hit points after repairs."
@@ -1175,9 +1112,6 @@ msgstr "Improved Hardening Class 2"
 msgid "extraHealthReserve_tier3/name"
 msgstr "Improved Hardening Class 3"
 
-msgid "extraHealthReserve_wt/name"
-msgstr "?empty?"
-
 msgid "fireCircle/descr"
 msgstr ""
 "Envelops the enemy vehicle in a fiery aura that causes damage and reduces "
@@ -1195,24 +1129,23 @@ msgid "fireCircle/shortDescr"
 msgstr "Ring of Fire"
 
 msgid "fireFightingBattleBooster/action/boost"
-msgstr "Additional 50% to the Firefighting skill"
+msgstr "Additional 50% to the Firefighting perk"
 
 msgid "fireFightingBattleBooster/action/perk"
-msgstr "Gives all crew members the Firefighting skill trained to 100%"
+msgstr "Gives the Firefighting perk trained to 100% to the Radio Operator"
 
 msgid "fireFightingBattleBooster/long_special"
 msgstr ""
-"The Firefighting skill enhances the firefighting abilities of your vehicle "
-"for the course of the battle. If the skill is trained to 100%, the equipped "
+"The Firefighting perk enhances the firefighting abilities of your vehicle "
+"for the course of the battle. If the perk is trained to 100%, the equipped "
 "directive increases its effect; if not, the directive provides your vehicle "
-"with the skill trained to 100%."
+"with the perk trained to 100%."
 
 msgid "fireFightingBattleBooster/name"
 msgstr "Experienced Firefighters"
 
 msgid "fireFightingBattleBooster/short_special"
-msgstr ""
-"Provides the Firefighting skill trained to 100% or increases its effect"
+msgstr "Provides the Firefighting perk trained to 100% or increases its effect"
 
 msgid "fort_aoe_artillery/longDescr"
 msgstr ""
@@ -1229,7 +1162,7 @@ msgstr ""
 
 msgid "fort_inspire/longDescr"
 msgstr ""
-"Provides a bonus to major qualifications and all skills for the entire crew "
+"Provides a bonus to major qualifications and all perks for the entire crew "
 "of your vehicle, as well as the crews of nearby allied vehicles."
 
 msgid "fort_inspire/name"
@@ -1237,7 +1170,7 @@ msgstr "Inspire"
 
 msgid "fort_inspire/shortDescr"
 msgstr ""
-"Provides a bonus to major qualifications and all skills for the entire crew "
+"Provides a bonus to major qualifications and all perks for the entire crew "
 "of your vehicle, as well as the crews of nearby allied vehicles."
 
 msgid "fuel_system_revision_1/name"
@@ -1308,9 +1241,9 @@ msgstr ""
 msgid "grousers/long_special"
 msgstr ""
 "Increases vehicle traverse speed and maintains speed when crossing all types "
-"of terrains. It is considerably effective when driving on soft and "
-"moderately soft terrain. It is most effective when combined with the Clutch "
-"Braking and Off-Road Driving skills."
+"of terrain. It is considerably effective when driving on soft and moderately "
+"soft terrain. It is most effective when combined with the Clutch Braking and "
+"Off-Road Driving perks."
 
 msgid "grousers/name"
 msgstr "Additional Grousers"
@@ -1378,11 +1311,10 @@ msgstr ""
 "for %(duration)s seconds."
 
 msgid "hotCoffee/always"
-msgstr ""
-"%(crewLevel)s to all crew skills and perks for the course of the battle"
+msgstr "%(crewLevel)s to all crew perks for the course of the battle."
 
 msgid "hotCoffee/descr"
-msgstr "{colorTagOpen}+10%{colorTagClose} to all crew skills and perks."
+msgstr "{colorTagOpen}+10%{colorTagClose} to all crew perks."
 
 msgid "hotCoffee/long_special"
 msgstr ""
@@ -1452,8 +1384,8 @@ msgstr "Accelerates repairs, protects ammo rack, fuel tanks, and engine"
 
 msgid "improvedConfigurationBattleBooster/descr"
 msgstr ""
-"%s to repair speed with Modified Configuration, Improved Configuration, or "
-"Bounty Protection Technology mounted."
+"%s to repair speed with Modified Configuration (any class), Improved "
+"Configuration, or Bounty Protection Technology mounted."
 
 msgid "improvedConfigurationBattleBooster/gain/deluxe"
 msgstr "+10%"
@@ -1495,16 +1427,13 @@ msgstr ""
 "Increases the time an enemy remains spotted and reduces the time you remain "
 "spotted"
 
-msgid "improvedRadioCommunication_wt/name"
-msgstr "?empty?"
-
 msgid "improvedRotationMechanism/long_special"
 msgstr ""
 "Increases hull and turret traverse speed for vehicles with turrets. "
 "Increases hull and gun traverse speed for vehicles with stationary cabins. "
 "Reduces gun dispersion during movement and during hull and turret traverse, "
 "as well as after firing. It is more effective when combined with the Clutch "
-"Braking skill."
+"Braking perk."
 
 msgid "improvedRotationMechanism/name"
 msgstr "Improved Rotation Mechanism"
@@ -1576,7 +1505,7 @@ msgstr "Improved Ventilation"
 
 msgid "improvedVentilationBattleBooster/descr"
 msgstr ""
-"%s to all crew skills with Improved Ventilation (any class), Venting System, "
+"%s to all crew perks with Improved Ventilation (any class), Venting System, "
 "or Bounty Ventilation mounted."
 
 msgid "improvedVentilationBattleBooster/gain/deluxe"
@@ -1642,7 +1571,7 @@ msgstr "Large-Caliber Tank Gun Rammer"
 msgid "largeMedkit/always"
 msgstr ""
 "%(crewStunDuration)s to stun duration\n"
-"%(crewHitChance)s to protection of the crew from injuries"
+"%(crewHitChance)s to crew protection from injuries"
 
 msgid "largeMedkit/descr"
 msgstr "Treatment of all injured crew members and removing the stun effect."
@@ -1704,10 +1633,7 @@ msgid "largeRepairkit/short_special"
 msgstr "Repairs all damaged modules"
 
 msgid "lastEffortBattleBooster/action/boost"
-msgstr ""
-"An additional 3 s to time for a Radio Operator who was not injured at the "
-"moment of his vehicle's destruction to report enemy positions (13 seconds in "
-"total)"
+msgstr "Additional 50% to the Call for Vengeance perk"
 
 msgid "lastEffortBattleBooster/action/perk"
 msgstr "Gives the Call for Vengeance perk trained to 100%"
@@ -1757,6 +1683,87 @@ msgstr "Medium-Caliber Artillery Shell Rammer"
 msgid "mediumCaliberTankRammer/name"
 msgstr "Medium-Caliber Tank Gun Rammer"
 
+msgid "modernizedAimDrivesAimingStabilizer1/long_special"
+msgstr "Fire-Control System T1"
+
+msgid "modernizedAimDrivesAimingStabilizer1/name"
+msgstr "Fire-Control System T1"
+
+msgid "modernizedAimDrivesAimingStabilizer1/short_special"
+msgstr "Fire-Control System T1"
+
+msgid "modernizedAimDrivesAimingStabilizer2/long_special"
+msgstr "Fire-Control System T2"
+
+msgid "modernizedAimDrivesAimingStabilizer2/name"
+msgstr "Fire-Control System T2"
+
+msgid "modernizedAimDrivesAimingStabilizer2/short_special"
+msgstr "Fire-Control System T2"
+
+msgid "modernizedAimDrivesAimingStabilizer3/long_special"
+msgstr "Fire-Control System T3"
+
+msgid "modernizedAimDrivesAimingStabilizer3/name"
+msgstr "Fire-Control System T3"
+
+msgid "modernizedAimDrivesAimingStabilizer3/short_special"
+msgstr "Fire-Control System T3"
+
+msgid "modernizedExtraHealthReserveAntifragmentationLining1/long_special"
+msgstr "Survival Improvement Suite T1"
+
+msgid "modernizedExtraHealthReserveAntifragmentationLining1/name"
+msgstr "Survival Improvement Suite T1"
+
+msgid "modernizedExtraHealthReserveAntifragmentationLining1/short_special"
+msgstr "Survival Improvement Suite T1"
+
+msgid "modernizedExtraHealthReserveAntifragmentationLining2/long_special"
+msgstr "Survival Improvement Suite T2"
+
+msgid "modernizedExtraHealthReserveAntifragmentationLining2/name"
+msgstr "Survival Improvement Suite T2"
+
+msgid "modernizedExtraHealthReserveAntifragmentationLining2/short_special"
+msgstr "Survival Improvement Suite T2"
+
+msgid "modernizedExtraHealthReserveAntifragmentationLining3/long_special"
+msgstr "Survival Improvement Suite T3"
+
+msgid "modernizedExtraHealthReserveAntifragmentationLining3/name"
+msgstr "Survival Improvement Suite T3"
+
+msgid "modernizedExtraHealthReserveAntifragmentationLining3/short_special"
+msgstr "Survival Improvement Suite T3"
+
+msgid "modernizedTurbochargerRotationMechanism1/long_special"
+msgstr "Mobility Improvement System T1"
+
+msgid "modernizedTurbochargerRotationMechanism1/name"
+msgstr "Mobility Improvement System T1"
+
+msgid "modernizedTurbochargerRotationMechanism1/short_special"
+msgstr "Mobility Improvement System T1"
+
+msgid "modernizedTurbochargerRotationMechanism2/long_special"
+msgstr "Mobility Improvement System T2"
+
+msgid "modernizedTurbochargerRotationMechanism2/name"
+msgstr "Mobility Improvement System T2"
+
+msgid "modernizedTurbochargerRotationMechanism2/short_special"
+msgstr "Mobility Improvement System T2"
+
+msgid "modernizedTurbochargerRotationMechanism3/long_special"
+msgstr "Mobility Improvement System T3"
+
+msgid "modernizedTurbochargerRotationMechanism3/name"
+msgstr "Mobility Improvement System T3"
+
+msgid "modernizedTurbochargerRotationMechanism3/short_special"
+msgstr "Mobility Improvement System T3"
+
 msgid "nitro/descr"
 msgstr ""
 "Temporarily increases the engine power, top speed, and traverse speed of "
@@ -1797,7 +1804,7 @@ msgid "passive_engineering/shortFilterAlert"
 msgstr "Not suitable for SPGs"
 
 msgid "pedantBattleBooster/action/boost"
-msgstr "Additional 37.5% to ammo rack durability"
+msgstr "Additional 300% to the Safe Stowage perk"
 
 msgid "pedantBattleBooster/action/perk"
 msgstr "Gives the Safe Stowage perk trained to 100%"
@@ -1814,6 +1821,24 @@ msgstr "Shell Organizer"
 
 msgid "pedantBattleBooster/short_special"
 msgstr "Provides the Safe Stowage perk trained to 100% or increases its effect"
+
+msgid "poi_artillery_aoe/descr"
+msgstr ""
+"Within {colorTagOpen}3 s{colorTagClose}, the selected area will be attacked "
+"with Artillery Strike. Any targets damaged within a radius of 25 m will "
+"receive {colorTagOpen}325{colorTagClose} HP of damage and will be stunned "
+"for {colorTagOpen}10 s{colorTagClose}."
+
+msgid "poi_artillery_aoe/name"
+msgstr "Artillery Strike"
+
+msgid "poi_radar/descr"
+msgstr ""
+"When activated, all enemy vehicles will remain spotted for "
+"{colorTagOpen}%(duration)d s{colorTagClose}."
+
+msgid "poi_radar/name"
+msgstr "Divisional Radar"
 
 msgid "qualityOil/always"
 msgstr "%(vehicleEnginePower)s to engine power for the course of the battle"
@@ -1878,7 +1903,7 @@ msgid "rammerBattleBooster/short_special"
 msgstr "Improves the effect of the rammer"
 
 msgid "rancorousBattleBooster/action/boost"
-msgstr "Additional 2 s to time for a targeted enemy vehicle to stay visible"
+msgstr "Doubles the effect of the Designated Target perk"
 
 msgid "rancorousBattleBooster/action/perk"
 msgstr "Gives the Designated Target perk trained to 100%"
@@ -1898,11 +1923,10 @@ msgstr ""
 "Provides the Designated Target perk trained to 100% or increases its effect"
 
 msgid "ration/always"
-msgstr ""
-"%(crewLevel)s to all crew skills and perks for the course of the battle"
+msgstr "%(crewLevel)s to all crew perks for the course of the battle."
 
 msgid "ration/descr"
-msgstr "{colorTagOpen}+10%{colorTagClose} to all crew skills and perks."
+msgstr "{colorTagOpen}+10%{colorTagClose} to all crew perks."
 
 msgid "ration/long_special"
 msgstr ""
@@ -1922,11 +1946,10 @@ msgid "ration/short_special"
 msgstr "Improves the performance of Soviet crews"
 
 msgid "ration_china/always"
-msgstr ""
-"%(crewLevel)s to all crew skills and perks for the course of the battle"
+msgstr "%(crewLevel)s to all crew perks for the course of the battle."
 
 msgid "ration_china/descr"
-msgstr "{colorTagOpen}+10%{colorTagClose} to all crew skills and perks."
+msgstr "{colorTagOpen}+10%{colorTagClose} to all crew perks."
 
 msgid "ration_china/long_special"
 msgstr ""
@@ -1946,11 +1969,10 @@ msgid "ration_china/short_special"
 msgstr "Improves the performance of Chinese crews"
 
 msgid "ration_czech/always"
-msgstr ""
-"%(crewLevel)s to all crew skills and perks for the course of the battle"
+msgstr "%(crewLevel)s to all crew perks for the course of the battle."
 
 msgid "ration_czech/descr"
-msgstr "{colorTagOpen}+10%{colorTagClose} to all crew skills and perks."
+msgstr "{colorTagOpen}+10%{colorTagClose} to all crew perks."
 
 msgid "ration_czech/long_special"
 msgstr ""
@@ -1970,11 +1992,10 @@ msgid "ration_czech/short_special"
 msgstr "Improves the performance of Czechoslovakian crews"
 
 msgid "ration_italy/always"
-msgstr ""
-"%(crewLevel)s to all crew skills and perks for the course of the battle"
+msgstr "%(crewLevel)s to all crew perks for the course of the battle."
 
 msgid "ration_italy/descr"
-msgstr "{colorTagOpen}+10%{colorTagClose} to all crew skills and perks."
+msgstr "{colorTagOpen}+10%{colorTagClose} to all crew perks."
 
 msgid "ration_italy/long_special"
 msgstr ""
@@ -1994,11 +2015,10 @@ msgid "ration_italy/short_special"
 msgstr "Improves the performance of Italian crews"
 
 msgid "ration_japan/always"
-msgstr ""
-"%(crewLevel)s to all crew skills and perks for the course of the battle"
+msgstr "%(crewLevel)s to all crew perks for the course of the battle."
 
 msgid "ration_japan/descr"
-msgstr "{colorTagOpen}+10%{colorTagClose} to all crew skills and perks."
+msgstr "{colorTagOpen}+10%{colorTagClose} to all crew perks."
 
 msgid "ration_japan/long_special"
 msgstr ""
@@ -2018,11 +2038,10 @@ msgid "ration_japan/short_special"
 msgstr "Improves the performance of Japanese crews"
 
 msgid "ration_poland/always"
-msgstr ""
-"%(crewLevel)s to all crew skills and perks for the course of the battle"
+msgstr "%(crewLevel)s to all crew perks for the course of the battle."
 
 msgid "ration_poland/descr"
-msgstr "{colorTagOpen}+10%{colorTagClose} to all crew skills and perks."
+msgstr "{colorTagOpen}+10%{colorTagClose} to all crew perks."
 
 msgid "ration_poland/long_special"
 msgstr ""
@@ -2042,11 +2061,10 @@ msgid "ration_poland/short_special"
 msgstr "Improves the performance of Polish crews"
 
 msgid "ration_sweden/always"
-msgstr ""
-"%(crewLevel)s to all crew skills and perks for the course of the battle"
+msgstr "%(crewLevel)s to all crew perks for the course of the battle."
 
 msgid "ration_sweden/descr"
-msgstr "{colorTagOpen}+10%{colorTagClose} to all crew skills and perks."
+msgstr "{colorTagOpen}+10%{colorTagClose} to all crew perks."
 
 msgid "ration_sweden/long_special"
 msgstr ""
@@ -2066,11 +2084,10 @@ msgid "ration_sweden/short_special"
 msgstr "Improves the performance of Swedish crews"
 
 msgid "ration_uk/always"
-msgstr ""
-"%(crewLevel)s to all crew skills and perks for the course of the battle"
+msgstr "%(crewLevel)s to all crew perks for the course of the battle."
 
 msgid "ration_uk/descr"
-msgstr "{colorTagOpen}+10%{colorTagClose} to all crew skills and perks."
+msgstr "{colorTagOpen}+10%{colorTagClose} to all crew perks."
 
 msgid "ration_uk/long_special"
 msgstr ""
@@ -2913,24 +2930,26 @@ msgstr "Surging Fervor"
 msgid "shotPassion/shortDescr"
 msgstr "Surging Fervor"
 
-msgid "sixthSenseBattleBooster/action/boost"
-msgstr "The Sixth Sense perk is activated 1 s earlier"
+msgid "sixthSenseBattleBooster/action/builtinPerkBooster"
+msgstr "Sixth Sense is activated 1 s earlier"
 
-msgid "sixthSenseBattleBooster/action/perk"
-msgstr "Gives the Sixth Sense perk trained to 100%"
+msgid "sixthSenseBattleBooster/description/builtinPerkBooster"
+msgstr ""
+"The Sixth Sense feature enables the commander to identify whether the "
+"vehicle has been spotted by the enemy. Activates 3 s after your vehicle is "
+"spotted."
 
 msgid "sixthSenseBattleBooster/long_special"
 msgstr ""
-"The Sixth Sense perk allows you to determine whether your vehicle has been "
-"spotted by enemies for the course of the battle. If the perk is trained to "
-"100%, the equipped directive increases its effect; if not, the directive "
-"provides your vehicle with the perk trained to 100%."
+"The Sixth Sense perk allows the Commander to determine whether the vehicle "
+"has been spotted by enemies for the course of the battle. The equipped "
+"directive increases its effect."
 
 msgid "sixthSenseBattleBooster/name"
 msgstr "Increased Focus"
 
 msgid "sixthSenseBattleBooster/short_special"
-msgstr "Provides the Sixth Sense perk trained to 100% or increases its effect"
+msgstr "Increases the effect of the Sixth Sense commander feature"
 
 msgid "smallMedkit/always"
 msgstr "?empty?"
@@ -3010,42 +3029,42 @@ msgstr ""
 "smoke have decreased view range and crew performance."
 
 msgid "smoothDrivingBattleBooster/action/boost"
-msgstr "Doubles the effect of the Smooth Ride skill"
+msgstr "Doubles the effect of the Smooth Ride perk"
 
 msgid "smoothDrivingBattleBooster/action/perk"
-msgstr "Gives the Smooth Ride skill trained to 100%"
+msgstr "Gives the Smooth Ride perk trained to 100%"
 
 msgid "smoothDrivingBattleBooster/long_special"
 msgstr ""
-"The Smooth Ride skill improves accuracy when firing on the move for the "
-"course of the battle. If the skill is trained to 100%, the equipped "
-"directive increases its effect; if not, the directive provides your vehicle "
-"with the skill trained to 100%."
+"The Smooth Ride perk improves accuracy when firing on the move for the "
+"course of the battle. If the perk is trained to 100%, the equipped directive "
+"increases its effect; if not, the directive provides your vehicle with the "
+"perk trained to 100%."
 
 msgid "smoothDrivingBattleBooster/name"
 msgstr "Gearbox Intricacy"
 
 msgid "smoothDrivingBattleBooster/short_special"
-msgstr "Provides the Smooth Ride skill trained to 100% or increases its effect"
+msgstr "Provides the Smooth Ride perk trained to 100% or increases its effect"
 
 msgid "smoothTurretBattleBooster/action/boost"
-msgstr "Doubles the effect of the Snap Shot skill"
+msgstr "Doubles the effect of the Snap Shot perk"
 
 msgid "smoothTurretBattleBooster/action/perk"
-msgstr "Gives the Snap Shot skill trained to 100%"
+msgstr "Gives the Snap Shot perk trained to 100%"
 
 msgid "smoothTurretBattleBooster/long_special"
 msgstr ""
-"The Snap Shot skill improves accuracy during turret rotation for the course "
-"of the battle. If the skill is trained to 100%, the equipped directive "
+"The Snap Shot perk improves accuracy during turret rotation for the course "
+"of the battle. If the perk is trained to 100%, the equipped directive "
 "increases its effect; if not, the directive provides your vehicle with the "
-"skill trained to 100%."
+"perk trained to 100%."
 
 msgid "smoothTurretBattleBooster/name"
 msgstr "Steady Hand"
 
 msgid "smoothTurretBattleBooster/short_special"
-msgstr "Provides the Snap Shot skill trained to 100% or increases its effect"
+msgstr "Provides the Snap Shot perk trained to 100% or increases its effect"
 
 msgid "spawn_kamikaze/descr"
 msgstr ""
@@ -3194,6 +3213,27 @@ msgstr "Bounty Optics"
 msgid "trophyBasicCoatedOptics/short_special"
 msgstr "Extends view range of both stationary and moving vehicles."
 
+msgid "trophyBasicExtraHealthReserve/additional_descr"
+msgstr "Fully restores suspension hit points after repairs."
+
+msgid "trophyBasicExtraHealthReserve/effect/chassisRestoration"
+msgstr "Restores the suspension after repairs"
+
+msgid "trophyBasicExtraHealthReserve/long_special"
+msgstr ""
+"Increases vehicle durability, load capacity, and repair speed. Reduces hull "
+"damage caused by suspension damage during impact. Fully restores suspension "
+"hit points after repairs. Reduces the chance of destruction of a track upon "
+"receiving damage, allowing your vehicle to remain on the move as long as "
+"possible."
+
+msgid "trophyBasicExtraHealthReserve/name"
+msgstr "Bounty Hardening"
+
+msgid "trophyBasicExtraHealthReserve/short_special"
+msgstr ""
+"Increases vehicle durability and load capacity, and protects suspension"
+
 msgid "trophyBasicImprovedConfiguration/name"
 msgstr "Bounty Protection Technology"
 
@@ -3257,6 +3297,15 @@ msgstr "Bounty Stabilizer"
 msgid "trophyUpgradedCoatedOptics/name"
 msgstr "Bounty Optics"
 
+msgid "trophyUpgradedExtraHealthReserve/additional_descr"
+msgstr "Fully restores suspension hit points after repairs."
+
+msgid "trophyUpgradedExtraHealthReserve/effect/chassisRestoration"
+msgstr "Restores suspension after repairs"
+
+msgid "trophyUpgradedExtraHealthReserve/name"
+msgstr "Bounty Hardening"
+
 msgid "trophyUpgradedImprovedConfiguration/name"
 msgstr "Bounty Protection Technology"
 
@@ -3290,8 +3339,8 @@ msgstr "Increases engine power and top speed"
 
 msgid "turbochargerBattleBooster/descr"
 msgstr ""
-"%s to engine power with Turbocharger (any class), Bounty Turbocharger, or "
-"Improved Compressor mounted."
+"%s to engine power with Turbocharger (any class), Bounty Turbocharger, "
+"Improved Compressor, or Mobility Improvement System mounted."
 
 msgid "turbochargerBattleBooster/gain/deluxe"
 msgstr "+4%"
@@ -3321,21 +3370,21 @@ msgid "turbocharger_tier3/name"
 msgstr "Turbocharger Class 3"
 
 msgid "virtuosoBattleBooster/action/boost"
-msgstr "Doubles the effect of the Clutch Braking skill"
+msgstr "Doubles the effect of the Clutch Braking perk"
 
 msgid "virtuosoBattleBooster/action/perk"
-msgstr "Gives the Clutch Braking skill trained to 100%"
+msgstr "Gives the Clutch Braking perk trained to 100%"
 
 msgid "virtuosoBattleBooster/long_special"
 msgstr ""
-"The Clutch Braking skill increases the traverse speed of both stationary and "
-"moving vehicles for the course of the battle. If the skill is trained to "
+"The Clutch Braking perk increases the traverse speed of both stationary and "
+"moving vehicles for the course of the battle. If the perk is trained to "
 "100%, the equipped directive increases its effect; if not, the directive "
-"provides your vehicle with the skill trained to 100%."
+"provides your vehicle with the perk trained to 100%."
 
 msgid "virtuosoBattleBooster/name"
 msgstr "Combat Course"
 
 msgid "virtuosoBattleBooster/short_special"
 msgstr ""
-"Provides the Clutch Braking skill trained to 100% or increases its effect"
+"Provides the Clutch Braking perk trained to 100% or increases its effect"

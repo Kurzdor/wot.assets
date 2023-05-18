@@ -1,0 +1,20 @@
+.Heading_base_e6 {
+    color: #FFFFFF;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+}
+    .mediaMedium .Heading_base_e6 {
+        color: #FFFFFF;
+        font-size: 56rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+    .mediaLarge .Heading_base_e6 {
+        color: #FFFFFF;
+        font-size: 73rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+

@@ -1,0 +1,539 @@
+.PopoverDecorator_base_ed {
+    display: flex;
+    position: absolute;
+}
+
+.PopoverDecorator_decorator_d3 {
+    padding: 58rem;
+    border-image-source: url('R.images.gui.maps.icons.popovers.popover_bg');
+    border-image-slice: 90 fill;
+    border-image-width: 90rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.PopoverDecorator_arrow_8a {
+    background: no-repeat 0 0 / contain;
+    position: absolute;
+}
+
+.PopoverDecorator_arrow__bottom_c3,
+    .PopoverDecorator_arrow__top_6e {
+        width: 301rem;
+        height: 90rem;
+        margin: 0 58rem;
+        background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_top');
+        left: 50%;
+    }
+
+.PopoverDecorator_arrow__left_7a,
+    .PopoverDecorator_arrow__right_b6 {
+        width: 84rem;
+        height: 181rem;
+        margin: 58rem 0;
+        background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_left');
+        top: 50%;
+    }
+
+.PopoverDecorator_arrow__left_7a {
+        right: 10rem;
+        transform: scaleX(-1) translateY(-90rem);
+    }
+
+.PopoverDecorator_arrow__right_b6 {
+        left: 10rem;
+        transform: translateY(-90rem);
+    }
+
+.PopoverDecorator_arrow__top_6e {
+        bottom: 8rem;
+        transform: scaleY(-1) translateX(-150rem);
+    }
+
+.PopoverDecorator_arrow__bottom_c3 {
+        top: 8rem;
+        transform: translateX(-150rem);
+    }
+
+.PopoverDecorator_closeBtn_32 {
+    width: 18rem;
+    height: 18rem;
+    background: url('R.images.gui.maps.icons.popovers.close_button_slim_up') no-repeat 0 0 / contain;
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.PopoverDecorator_closeBtn_32:hover {
+        filter: brightness(160%);
+    }
+
+.PopoverDecorator_closeBtn_32:active {
+        background-image: url('R.images.gui.maps.icons.popovers.close_button_slim_press');
+        filter: brightness(100%);
+    }
+
+.PopoverDecorator_content_f0 {
+    position: relative;
+    z-index: 2;
+}
+
+.BonusInfoIcon_bonusInfoIcon_3d {
+    width: 16rem;
+    height: 16rem;
+    margin-left: 8rem;
+    background-size: contain;
+}
+
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    position: relative;
+    cursor: pointer;
+}
+
+    .CButton_base__main_42,
+    .CButton_base__primary_7f,
+    .CButton_base__primaryGreen_6f,
+    .CButton_base__primaryRed_ec,
+    .CButton_base__secondary_50 {
+        background-size: 100% 100%;
+    }
+
+    .CButton_base__main_42 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+
+    .CButton_base__primary_7f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+
+    .CButton_base__primaryGreen_6f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+
+    .CButton_base__primaryRed_ec {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+
+    .CButton_base__secondary_50 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+
+    .CButton_base__ghost_ed {
+        border-radius: 3rem;
+        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
+            0 0 0 1rem rgba(255,255,255, .15) inset;
+        background-color: rgba(0,0,0, .15);
+    }
+
+    .CButton_base__extraSmall_27 {
+        min-height: 17rem;
+        padding: 0 16rem;
+    }
+
+    .CButton_base__small_df,
+    .CButton_base__medium_74 {
+        padding: 0 20rem;
+    }
+
+    .CButton_base__small_df {
+        min-height: 18rem;
+    }
+
+    .CButton_base__medium_74 {
+        min-height: 32rem;
+    }
+
+    .CButton_base__disabled_d9 {
+        cursor: default;
+    }
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+.CButton_base__primary_7f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+.CButton_base__secondary_50 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow .16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+        border-radius: 2rem;
+        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
+    }
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+        transition: opacity .16s ease-in-out;
+    }
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+        opacity: 1;
+    }
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
+        background-color: rgba(8,6,0, .18);
+        background-image: none;
+    }
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+        opacity: 1;
+    }
+.CButton_stateDisabled_54 {
+    background-color: rgba(0,0,0, .25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+        opacity: 1;
+    }
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: .03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang=ja],
+    .CButton_content_cc[lang=ko],
+    .CButton_content_cc[lang=zh_tw],
+    .CButton_content_cc[lang=zh_sg],
+    .CButton_content_cc[lang=zh_cn],
+    .CButton_content_cc[lang=th] {
+        font-weight: 400;
+    }
+.CButton_base__main_42 .CButton_content_cc,
+    .CButton_base__primaryRed_ec .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #600;
+    }
+.CButton_base__secondary_50 .CButton_content_cc {
+        color: rgba(254,254,236, .75);
+    }
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #1c2502;
+    }
+.CButton_base__extraSmall_27 .CButton_content_cc {
+        font-size: 12rem;
+    }
+.CButton_base__small_df .CButton_content_cc {
+        font-size: 14rem;
+    }
+.CButton_base__medium_74 .CButton_content_cc {
+        font-size: 15rem;
+    }
+.CButton_base__disabled_d9 .CButton_content_cc {
+        opacity: .6;
+    }
+
+.SubView_base_df {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.Header_base_a7 {
+    height: 120rem;
+    padding: 14rem 21rem;
+    background: no-repeat center / contain;
+}
+
+.Header_header_9f {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 19rem;
+}
+
+.Header_label_af {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+}
+
+.Header_description_41 {
+    height: 18rem;
+    margin: 1rem 0 3rem;
+    color: #8c8c7e;
+    font-size: 14rem;
+}
+
+.Header_bonusInfo_3f {
+    display: flex;
+    flex-direction: row;
+}
+
+.Header_bonusesIcon_7a {
+    margin-top: -7rem;
+    position: relative;
+}
+
+.Header_xp_87 {
+    width: 48rem;
+    height: 48rem;
+    background: url('R.images.gui.maps.icons.platoon.common.exp') center / contain no-repeat;
+    position: absolute;
+    right: -10rem;
+}
+
+.Header_credits_82 {
+    width: 48rem;
+    height: 48rem;
+    background: url('R.images.gui.maps.icons.platoon.common.silver') center / contain no-repeat;
+    position: absolute;
+    right: 8rem;
+}
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.Separator_base_98 {
+    pointer-events: none;
+}
+
+.Separator_base__horizontal_34 {
+        width: 100%;
+        height: 1rem;
+    }
+
+.Separator_base__vertical_9d {
+        width: 1rem;
+        height: 100%;
+    }
+
+.Separator_image_5b {
+    background: center / 100% no-repeat;
+}
+
+.Separator_base__horizontal_34 .Separator_image_5b {
+        width: 100%;
+        height: 144rem;
+        margin: -71rem auto 0;
+    }
+
+.Separator_base__vertical_9d .Separator_image_5b {
+        width: 144rem;
+        height: 100%;
+        margin: 0 -71rem;
+    }
+
+.ToggleButton_base_b9 {
+    border-radius: 2rem;
+    position: relative;
+}
+
+.ToggleButton_content_85 {
+    font-weight: 300;
+}
+
+.ToggleButton_overlay_0a {
+    border-radius: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.ToggleButton_base__active_68 .ToggleButton_overlay_0a {
+    border: 1rem solid rgba(255, 195, 99, .75);
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, .6), 0 0 7px rgba(238, 112, 0, .5);
+    background: linear-gradient(180deg, rgba(255, 42, 0, .1) 0%, rgba(255, 42, 0, 0) .01%, rgba(255, 127, 0, .1) 100%);
+}
+
+.ToggleButton_indicator_85 {
+    /* This Needs to be an even number otherwise translate(-50%) makes it at half a pixel position and causes sub pixel blurring */
+    width: 40rem;
+    height: 29rem;
+    background: url('R.images.gui.maps.icons.buttons.toggle_indicator') left top no-repeat;
+    background-size: 39rem 29rem;
+    position: absolute;
+    bottom: -14rem;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, 0);
+    pointer-events: none;
+}
+
+.ToggleButton_base__active_68 .ToggleButton_indicator_85 {
+    background-image: url('R.images.gui.maps.icons.buttons.toggle_indicator_active');
+}
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.FlatButton_base_bf {
+    display: flex;
+    flex-direction: row;
+    width: 292rem;
+    height: 70rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.FlatButton_background_5f {
+    width: 100%;
+    height: 86rem;
+    border-image-source: url('R.images.gui.maps.icons.platoon.platoon_dropdown.flat_buttons.background_over');
+    border-image-slice: 10 fill;
+    border-image-width: 10rem;
+    position: absolute;
+    top: -8rem;
+    transition: border-image linear .16s;
+    pointer-events: none;
+}
+
+.FlatButton_base_bf:hover .FlatButton_background_5f {
+        border-image-source: url('R.images.gui.maps.icons.platoon.platoon_dropdown.flat_buttons.background_hover');
+    }
+
+.FlatButton_base__disabled_c0 .FlatButton_background_5f,
+    .FlatButton_base__disabled_c0:hover .FlatButton_background_5f {
+        border-image-source: url('R.images.gui.maps.icons.platoon.platoon_dropdown.flat_buttons.background_disabled');
+    }
+
+.FlatButton_image_ce {
+    width: 70rem;
+    height: 70rem;
+    margin: 0 13rem 0 5rem;
+    background: center / contain no-repeat;
+}
+
+.FlatButton_base__disabled_c0 .FlatButton_image_ce {
+        opacity: .3;
+    }
+
+.FlatButton_text_90 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 215rem;
+    height: 70rem;
+    margin-left: -15rem;
+    color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 700;
+}
+
+.FlatButton_base__disabled_c0 .FlatButton_text_90 {
+        opacity: .3;
+    }
+
+.FlatButton_description_08 {
+    color: #8C8C7E;
+    font-weight: 400;
+}
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.SettingsContainer_base_5d {
+    height: 0;
+    opacity: 0;
+    position: relative;
+}
+
+.SettingsContainer_base_5d .SettingsContainer_settingsContainer_48 {
+        height: inherit;
+    }
+
+.SettingsContainer_base__shown_b7 {
+        height: auto;
+        opacity: 1;
+    }
+
+.SettingsContainer_settingsHighlight_22 {
+    width: 81rem;
+    height: 86rem;
+    background-size: contain;
+    position: absolute;
+    top: -51rem;
+    left: 1rem;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.PlatoonDropdown_base_ea {
+    width: 292rem;
+    padding-bottom: 9rem;
+    color: #8c8c7e;
+    font-size: 14rem;
+}
+

@@ -25,9 +25,6 @@ msgstr "AEC A190"
 msgid "AEC_Type_179"
 msgstr "AEC Type 179"
 
-msgid "Alarm_flags_bot"
-msgstr "Signal Flags"
-
 msgid "Armstrong-Siddeley"
 msgstr "2x Armstrong Siddeley"
 
@@ -95,9 +92,6 @@ msgstr "Vickers Medium Mk. I"
 msgid "Chassis_GB01_Medium_Mark_I_2"
 msgstr "Vickers Medium Mk. IA*"
 
-msgid "Chassis_GB01_Medium_Mark_I_bot"
-msgstr "Vickers Medium Mk. I"
-
 msgid "Chassis_GB03_Cruiser_Mk_I"
 msgstr "A9 Mk. I"
 
@@ -115,9 +109,6 @@ msgstr "Vickers Medium Mk. II"
 
 msgid "Chassis_GB05_Vickers_Medium_Mk_II_2"
 msgstr "Vickers Medium Mk. IIA"
-
-msgid "Chassis_GB05_Vickers_Medium_Mk_II_bot"
-msgstr "Vickers Medium Mk. II"
 
 msgid "Chassis_GB06_Vickers_Medium_Mk_III"
 msgstr "Vickers Medium A6E1"
@@ -202,6 +193,9 @@ msgstr "Matilda Mk. IIA"
 
 msgid "Chassis_GB115_Gonsalo"
 msgstr "Gonsalo"
+
+msgid "Chassis_GB116_Harry_Hopkins_I"
+msgstr "A25 Harry Hopkins I"
 
 msgid "Chassis_GB11_Caernarvon"
 msgstr "FV221"
@@ -573,21 +567,6 @@ msgstr "Ford V8-239"
 msgid "GB01_Medium_Mark_I"
 msgstr "Vickers Medium Mk. I"
 
-msgid "GB01_Medium_Mark_I_bot"
-msgstr "Vickers Medium Mk. I"
-
-msgid "GB01_Medium_Mark_I_bot_descr"
-msgstr ""
-"In 1921, Vickers-Armstrong developed a project for the Vickers Light Tank. "
-"The 1923–1924 trials showed that the tank was ready for mass production. In "
-"1924, the vehicle was renamed the Vickers Medium Tank Mk. I. The same year, "
-"a total of 30 vehicles were produced and entered service. Another 50 "
-"vehicles of the Mk. IA modification were manufactured later. The Vickers "
-"Medium Tank remained in service until 1938."
-
-msgid "GB01_Medium_Mark_I_bot_short"
-msgstr "Medium I"
-
 msgid "GB01_Medium_Mark_I_descr"
 msgstr ""
 "In 1921, Vickers-Armstrong developed a project for the Vickers Light Tank. "
@@ -626,18 +605,6 @@ msgstr "Valentine"
 
 msgid "GB05_Vickers_Medium_Mk_II"
 msgstr "Vickers Medium Mk. II"
-
-msgid "GB05_Vickers_Medium_Mk_II_bot"
-msgstr "Vickers Medium Mk. II"
-
-msgid "GB05_Vickers_Medium_Mk_II_bot_descr"
-msgstr ""
-"British medium tank. Developed on the basis of the Vickers Medium Mark I "
-"tank from 1924 through 1925 by Vickers. The vehicle was mass-produced from "
-"1925 through 1934 with approximately 100 tanks manufactured."
-
-msgid "GB05_Vickers_Medium_Mk_II_bot_short"
-msgstr "Medium II"
 
 msgid "GB05_Vickers_Medium_Mk_II_descr"
 msgstr ""
@@ -1035,6 +1002,40 @@ msgstr "Gonsalo"
 
 msgid "GB115_Gonsalo_short_special"
 msgstr "Decent penetration and good mobility"
+
+msgid "GB116_Harry_Hopkins_I"
+msgstr "A25 Harry Hopkins I"
+
+msgid "GB116_Harry_Hopkins_I_descr"
+msgstr ""
+"Development of the upgraded version of the Tetrarch I under the designation "
+"of Light Tank Mk. VIII or A25 started in 1941. Its frontal hull and turret "
+"armor were enhanced and, together with the side plates, formed sloped armor. "
+"The vehicle's dimensions were unchanged, so its combat weight remained "
+"slightly over 8.5 tons.\n"
+"In November 1941, the tank's name was changed to the Harry Hopkins I in "
+"honor of Harry Hopkins, President Roosevelt's advisor. The vehicle failed "
+"testing in the Middle East due to issues with thermal conditions and driving "
+"on sand. The first six tanks were built only in 1943, at which point they "
+"were of little interest to the British Army.\n"
+"However, it is difficult to call the A25 project a failure. In 1942, the "
+"Alecto tank destroyer was developed based on the chassis of the "
+"Harry Hopkins I. It never saw combat but was used until the late 1940s in "
+"Europe and in the Middle East. One Harry Hopkins I vehicle has survived to "
+"this day and resides at the Bovington Tank Museum in the U.K."
+
+msgid "GB116_Harry_Hopkins_I_long_special"
+msgstr ""
+"A Premium British light tank with excellent gun characteristics: Decent "
+"armor penetration combined with a high rate of fire make this vehicle a "
+"formidable opponent. Its incredible shell velocity allows it to make a "
+"significant contribution to team success in both attack and defense."
+
+msgid "GB116_Harry_Hopkins_I_short"
+msgstr "A25 H.H. I"
+
+msgid "GB116_Harry_Hopkins_I_short_special"
+msgstr "High rate of fire and excellent penetration"
 
 msgid "GB11_Caernarvon"
 msgstr "Caernarvon"
@@ -1977,6 +1978,12 @@ msgstr "S. Conqueror"
 msgid "GB92_FV217"
 msgstr "FV217 Badger"
 
+msgid "GB92_FV217_7x7"
+msgstr "FV217 Badger 7v7"
+
+msgid "GB92_FV217_7x7_short"
+msgstr "Badger 7v7"
+
 msgid "GB92_FV217_descr"
 msgstr ""
 "A project for a tank destroyer based on the Conqueror chassis was developed "
@@ -2043,8 +2050,8 @@ msgstr ""
 "Aignan-de-Cramesnil and Sento. Joe Ekins, the Sherman gunner, laid fire on "
 "moving Tigers and destroyed all three German vehicles within 12 minutes. As "
 "it turned out, one of the tanks under No. 007 was commanded by the most "
-"successful German tank ace, Michael Wittmann, also known as \"The Black Baron"
-"\". However, it still remains unclear who destroyed Wittmann's tank as "
+"successful German tank ace, Michael Wittmann, also known as \"The Black "
+"Baron\". However, it still remains unclear who destroyed Wittmann's tank as "
 "several British vehicles were engaged in that battle."
 
 msgid "GB95_Ekins_Firefly_M4A4_long_special"
@@ -2211,6 +2218,9 @@ msgstr "Meadows E.S.T.L."
 msgid "Meadows_HOP"
 msgstr "Meadows H.O.P."
 
+msgid "Meadows_HOP_Mod.HH"
+msgstr "Meadows H.O.P. Mod. HH"
+
 msgid "Meadows_HOP_OC"
 msgstr "Meadows H.O.P. O.C."
 
@@ -2227,9 +2237,6 @@ msgid "N11"
 msgstr "WS No. 11"
 
 msgid "N14"
-msgstr "WS No. 14"
-
-msgid "N14_bot"
 msgstr "WS No. 14"
 
 msgid "N19Mk1"
@@ -2324,6 +2331,9 @@ msgstr "QF 20 pounder"
 
 msgid "QF_2pdr_Littlejohn"
 msgstr "QF 2-pdr Mk. X-B"
+
+msgid "QF_2pdr_Littlejohn_HH"
+msgstr "2-pdr Gun Mk X-B HH"
 
 msgid "QF_6_pounder_8cwt_Mk_I"
 msgstr "QF 6-pdr 8 cwt Mk. I"
@@ -2448,9 +2458,6 @@ msgstr "Sunbeam Amazon"
 msgid "Turret_1_GB01_Medium_Mark_I"
 msgstr "Vickers Medium Mk. I"
 
-msgid "Turret_1_GB01_Medium_Mark_I_bot"
-msgstr "Vickers Medium Mk. I"
-
 msgid "Turret_1_GB03_Cruiser_Mk_I"
 msgstr "Cruiser Mk. I"
 
@@ -2458,9 +2465,6 @@ msgid "Turret_1_GB04_Valentine"
 msgstr "Valentine Mk. I"
 
 msgid "Turret_1_GB05_Vickers_Medium_Mk_II"
-msgstr "Vickers Medium Mk. II*"
-
-msgid "Turret_1_GB05_Vickers_Medium_Mk_II_bot"
 msgstr "Vickers Medium Mk. II*"
 
 msgid "Turret_1_GB06_Vickers_Medium_Mk_III"
@@ -2522,6 +2526,9 @@ msgstr "M8 GMC"
 
 msgid "Turret_1_GB115_Gonsalo"
 msgstr "Gonsalo"
+
+msgid "Turret_1_GB116_Harry_Hopkins_I"
+msgstr "A25 Harry Hopkins I"
 
 msgid "Turret_1_GB11_Caernarvon"
 msgstr "Centurion Mk. II"
@@ -2832,8 +2839,8 @@ msgstr "Armstrong Siddeley V8"
 msgid "Vickers-Armstrong_MkII"
 msgstr "Armstrong Siddeley V8 SC"
 
-msgid "Vickers-Armstrong_bot"
-msgstr "Armstrong Siddeley V8"
+msgid "WS_No.19_HH"
+msgstr "WS No. 19 HH"
 
 msgid "Wright_Continental_R-975C1"
 msgstr "Wright Continental R-975C1"
@@ -3145,11 +3152,17 @@ msgstr "HE Mk. 1D"
 msgid "_25pdr_HE_Mk_1DA"
 msgstr "HE Mk. 1DA"
 
+msgid "_2pdr_APCBC_Mk.I_XBT"
+msgstr "APCBC Mk. I XBT"
+
 msgid "_2pdr_APCNR_Mk.1"
 msgstr "APCNR Mk. 1"
 
 msgid "_2pdr_APCNR_Mk.2"
 msgstr "APCNR Mk. 2"
+
+msgid "_2pdr_APCNR_Mk.II"
+msgstr "APCNR Mk. II"
 
 msgid "_2pdr_APSV_Mk.1"
 msgstr "APSV Mk. 1"
@@ -3286,9 +3299,6 @@ msgstr "HE Mk. 2B"
 msgid "_3pdr_gun_Hotchkiss"
 msgstr "OQF 3-pdr Gun Mk. I"
 
-msgid "_3pdr_gun_Hotchkiss_bot"
-msgstr "OQF 3-pdr Gun Mk. I"
-
 msgid "_4.5inch_HE_Mk_13"
 msgstr "HE Mk. XIII"
 
@@ -3336,9 +3346,6 @@ msgstr "QF AP Mk. IIIT"
 
 msgid "_47mm_3pdrAPCR"
 msgstr "QF APDS Mk. I"
-
-msgid "_47mm_3pdrAP_bot"
-msgstr "QF AP Mk. IIIT"
 
 msgid "_47mm_3pdrHE"
 msgstr "QF HE Mk. IT"

@@ -172,6 +172,144 @@ msgstr "?empty?"
 msgid "component/background/base/517/title"
 msgstr "Team Maharlika"
 
+msgid "component/background/base/602/description"
+msgstr ""
+"Awarded for achieving the Iron rank in Season of the Griffin in Onslaught "
+"mode"
+
+msgid "component/background/base/602/description_locked"
+msgstr "Achieve the Iron rank in Season of the Griffin in Onslaught mode"
+
+msgid "component/background/base/602/title"
+msgstr "Iron"
+
+msgid "component/background/base/603/description"
+msgstr ""
+"Awarded for achieving the Bronze rank in Season of the Griffin in Onslaught "
+"mode"
+
+msgid "component/background/base/603/description_locked"
+msgstr "Achieve the Bronze rank in Season of the Griffin in Onslaught mode"
+
+msgid "component/background/base/603/title"
+msgstr "Bronze"
+
+msgid "component/background/base/604/description"
+msgstr ""
+"Awarded for achieving the Silver rank in Season of the Griffin in Onslaught "
+"mode"
+
+msgid "component/background/base/604/description_locked"
+msgstr "Achieve the Silver rank in Season of the Griffin in Onslaught mode"
+
+msgid "component/background/base/604/title"
+msgstr "Silver"
+
+msgid "component/background/base/605/description"
+msgstr ""
+"Awarded for achieving the Gold rank in Season of the Griffin in Onslaught "
+"mode"
+
+msgid "component/background/base/605/description_locked"
+msgstr "Achieve the Gold rank in Season of the Griffin in Onslaught mode"
+
+msgid "component/background/base/605/title"
+msgstr "Gold"
+
+msgid "component/background/base/606/description"
+msgstr ""
+"Awarded for achieving the Champion rank in Season of the Griffin in "
+"Onslaught mode"
+
+msgid "component/background/base/606/description_locked"
+msgstr "Achieve the Champion rank in Season of the Griffin in Onslaught mode"
+
+msgid "component/background/base/606/title"
+msgstr "Champion"
+
+msgid "component/background/base/607/description"
+msgstr ""
+"Awarded for achieving the Legend rank in Season of the Griffin in Onslaught "
+"mode"
+
+msgid "component/background/base/607/description_locked"
+msgstr "Achieve the Legend rank in Season of the Griffin in Onslaught mode"
+
+msgid "component/background/base/607/title"
+msgstr "Legend"
+
+msgid "component/background/base/609/description"
+msgstr ""
+"Awarded for achieving the Iron rank in Season of the Crimson Griffin in "
+"Onslaught mode"
+
+msgid "component/background/base/609/description_locked"
+msgstr ""
+"Achieve the Iron rank in Season of the Crimson Griffin in Onslaught mode"
+
+msgid "component/background/base/609/title"
+msgstr "Iron"
+
+msgid "component/background/base/610/description"
+msgstr ""
+"Awarded for achieving the Bronze rank in Season of the Crimson Griffin in "
+"Onslaught mode"
+
+msgid "component/background/base/610/description_locked"
+msgstr ""
+"Achieve the Bronze rank in Season of the Crimson Griffin in Onslaught mode"
+
+msgid "component/background/base/610/title"
+msgstr "Bronze"
+
+msgid "component/background/base/611/description"
+msgstr ""
+"Awarded for achieving the Silver rank in Season of the Crimson Griffin in "
+"Onslaught mode"
+
+msgid "component/background/base/611/description_locked"
+msgstr ""
+"Achieve the Silver rank in Season of the Crimson Griffin in Onslaught mode"
+
+msgid "component/background/base/611/title"
+msgstr "Silver"
+
+msgid "component/background/base/612/description"
+msgstr ""
+"Awarded for achieving the Gold rank in Season of the Crimson Griffin in "
+"Onslaught mode"
+
+msgid "component/background/base/612/description_locked"
+msgstr ""
+"Achieve the Gold rank in Season of the Crimson Griffin in Onslaught mode"
+
+msgid "component/background/base/612/title"
+msgstr "Gold"
+
+msgid "component/background/base/613/description"
+msgstr ""
+"Awarded for achieving the Champion rank in Season of the Crimson Griffin in "
+"Onslaught mode"
+
+msgid "component/background/base/613/description_locked"
+msgstr ""
+"Achieve the Champion rank in Season of the Crimson Griffin in Onslaught mode"
+
+msgid "component/background/base/613/title"
+msgstr "Champion"
+
+msgid "component/background/base/614/description"
+msgstr ""
+"Awarded for achieving the Legend rank in Season of the Crimson Griffin in "
+"Onslaught mode"
+
+msgid "component/background/base/614/description_locked"
+msgstr ""
+"Achieve the Legend rank in Season of the Crimson Griffin in Onslaught mode"
+
+msgid "component/background/base/614/title"
+msgstr "Legend"
+
 msgid "component/background/base/66/description"
 msgstr "The starter Background"
 
@@ -452,6 +590,35 @@ msgstr "Fight {unlock_value} battles"
 
 msgid "component/engraving/dedication/316/title"
 msgstr "Battles Fought"
+
+msgid "component/engraving/dedication/600/description"
+msgstr "Total number of Prestige Points earned in Onslaught mode"
+
+msgid "component/engraving/dedication/600/description_locked"
+msgstr ""
+"Achieve the Iron rank in Season of the Crimson Griffin in Onslaught mode"
+
+msgid "component/engraving/dedication/600/title"
+msgstr "Prestige Points"
+
+msgid "component/engraving/dedication/601/description"
+msgstr "Number of victories in Season of the Griffin in Onslaught mode"
+
+msgid "component/engraving/dedication/601/description_locked"
+msgstr "Achieve the Silver rank in Season of the Griffin in Onslaught mode"
+
+msgid "component/engraving/dedication/601/title"
+msgstr "Victories in Onslaught Mode"
+
+msgid "component/engraving/dedication/608/description"
+msgstr "Number of victories in Season of the Crimson Griffin in Onslaught mode"
+
+msgid "component/engraving/dedication/608/description_locked"
+msgstr ""
+"Achieve the Silver rank in Season of the Crimson Griffin in Onslaught mode"
+
+msgid "component/engraving/dedication/608/title"
+msgstr "Crimson Griffin's Victories"
 
 msgid "component/engraving/ranked_skill/408/description"
 msgstr ""

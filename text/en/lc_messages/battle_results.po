@@ -40,6 +40,9 @@ msgstr "Vehicles"
 msgid "common/battleEfficiency/title"
 msgstr "Battle Performance"
 
+msgid "common/battleEfficiencyWithSkills/title"
+msgstr "Battle Performance (including used skills)"
+
 msgid "common/battleEfficiencyWithoutOreders/title"
 msgstr "Battle Performance (Not Including Combat Reserves)"
 
@@ -52,8 +55,11 @@ msgstr "[%(clanAbbrev)s]"
 msgid "common/crewMember/description"
 msgstr "%(role)s, %(name)s"
 
+msgid "common/crewMember/newFreeSkill"
+msgstr "Zero perk available"
+
 msgid "common/crewMember/newSkill"
-msgstr "New skill"
+msgstr "New perk"
 
 msgid "common/details/buyPremiumBtn"
 msgstr "Purchase Premium"
@@ -397,6 +403,9 @@ msgstr "Destroyed by a shot"
 msgid "common/vehicleState/dead1"
 msgstr "Destroyed by fire"
 
+msgid "common/vehicleState/dead13"
+msgstr "Destroyed by the player's skill"
+
 msgid "common/vehicleState/dead2"
 msgstr "Destroyed by ramming"
 
@@ -490,6 +499,9 @@ msgstr "Reward for completing the mission and events"
 msgid "details/calculations/fairPlayViolation/afk"
 msgstr "Fine for inaction in battle"
 
+msgid "details/calculations/fairPlayViolation/comp7_deserter"
+msgstr "Fine for desertion"
+
 msgid "details/calculations/fairPlayViolation/deserter"
 msgstr "Fine for desertion"
 
@@ -547,7 +559,7 @@ msgid "details/calculations/noPenalty"
 msgstr "For courageous resistance"
 
 msgid "details/calculations/piggyBankInfo"
-msgstr "Added to Credit Reserve"
+msgstr "Added to Stock Reserves"
 
 msgid "details/calculations/playerRankXP"
 msgstr "Rank bonus"
@@ -698,6 +710,10 @@ msgstr "Structure %(buildingName)s not captured"
 msgid "finish/clanBattle_reason_def/1win"
 msgstr "Structure defended: %(buildingName)s"
 
+msgid "finish/clarification/finishAllPlayersLeft"
+msgstr ""
+"The result is calculated based on the remaining information about the teams"
+
 msgid "finish/overtime/lose"
 msgstr "Enemy not destroyed"
 
@@ -790,9 +806,6 @@ msgid "progressiveReward/descr"
 msgstr ""
 "Fight battles and receive rewards. The more you fight, the closer the "
 "rewards."
-
-msgid "replayBtnLabel"
-msgstr "Download Replay"
 
 msgid "selectVehicle"
 msgstr "Select a Vehicle"
@@ -964,6 +977,9 @@ msgstr "Zones captured / objectives destroyed"
 msgid "team/stats/labels_capturePointsVal"
 msgstr "Base capture/defense points"
 
+msgid "team/stats/labels_capturedPointsOfInterest"
+msgstr "Points of Interest captured"
+
 msgid "team/stats/labels_damageAssisted"
 msgstr "Damage caused with the player’s assistance"
 
@@ -984,6 +1000,9 @@ msgstr "Total Damage:"
 
 msgid "team/stats/labels_damageDealtByOrder"
 msgstr "\tincluding from Combat Reserves"
+
+msgid "team/stats/labels_damageDealtBySkills"
+msgstr "\tincluding used skills"
 
 msgid "team/stats/labels_damageDealtRatio"
 msgstr "\tdamage done to enemy team"
@@ -1021,6 +1040,9 @@ msgstr "Hits received as a result of splash damage"
 msgid "team/stats/labels_flags"
 msgstr "Flags delivered"
 
+msgid "team/stats/labels_healed"
+msgstr "Hit points restored (yours/allies)"
+
 msgid "team/stats/labels_hits"
 msgstr "\tdirect hits/penetrations"
 
@@ -1038,6 +1060,9 @@ msgstr "\tnon-penetration"
 
 msgid "team/stats/labels_piercingsReceived"
 msgstr "\tpenetrations"
+
+msgid "team/stats/labels_roleSkillUsed"
+msgstr "Role Skills used"
 
 msgid "team/stats/labels_shots"
 msgstr "Shots fired"
@@ -1086,13 +1111,13 @@ msgstr "Vehicles"
 
 msgid "team/teamInfluenceTotal"
 msgstr ""
-"Influence earned by detachment: %(color_tag_open)s%(resourceValue)s"
-"%(color_tag_close)s%(resourceIcon)s"
+"Influence earned by detachment: "
+"%(color_tag_open)s%(resourceValue)s%(color_tag_close)s%(resourceIcon)s"
 
 msgid "team/teamResourceTotal"
 msgstr ""
-"Industrial Resource earned by detachment: %(color_tag_open)s%(resourceValue)s"
-"%(color_tag_close)s%(resourceIcon)s"
+"Industrial Resource earned by detachment: "
+"%(color_tag_open)s%(resourceValue)s%(color_tag_close)s%(resourceIcon)s"
 
 msgid "team/teamScore/body"
 msgstr "Sort by number of victory points earned."

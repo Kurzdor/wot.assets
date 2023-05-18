@@ -1,0 +1,249 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem; /* border offset*/
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.TooltipDecorator_decoratorContent_de {
+    background-color: #000;
+}
+
+.App_base_7b {
+    display: flex;
+    flex-direction: row;
+    padding: 16rem;
+    padding-right: 6rem;
+}
+
+    .App_base__disabled_e1 {
+        display: flex;
+        align-items: center;
+        width: 270rem;
+        height: 65rem;
+        padding: 12rem;
+        color: #8C8C7E;
+    }
+
+.App_reserveBlock_dc {
+    display: flex;
+}
+
+.App_reserveBlock_clan_31 {
+        margin-left: 6rem;
+    }
+
+.App_reserveBlock__disabled_f3 {
+        filter: saturate(0);
+    }
+
+.App_tooltipSlot_cd {
+    margin-right: 10rem;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TooltipSlot_base_f8 {
+    width: 100rem;
+    height: 100rem;
+    padding: 1rem;
+    border: 1rem solid rgba(255, 255, 255, .15);
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, .4);
+    position: relative;
+}
+
+    .TooltipSlot_base__clan_3e .TooltipSlot_fillPattern_9d {
+            background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_green_medium') center center / cover;
+        }
+
+    .TooltipSlot_base__clan_3e .TooltipSlot_cardFill_3b {
+            border: 1rem solid #496019;
+        }
+
+    .TooltipSlot_base__clan_3e .TooltipSlot_activeLight_85 {
+            background: url('R.images.gui.maps.icons.personal_reserves.activated_light_clan') center center / cover;
+        }
+
+    .TooltipSlot_base__clan_3e .TooltipSlot_timerIcon_ac {
+            background: url('R.images.gui.maps.icons.personal_reserves.icon_timer_clan_tooltip') center center / cover;
+        }
+
+    .TooltipSlot_base__event_80 .TooltipSlot_fillPattern_9d {
+            background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_orange_medium') center center / cover;
+        }
+
+    .TooltipSlot_base__event_80 .TooltipSlot_cardFill_3b {
+            border: 1rem solid #98752f;
+        }
+
+    .TooltipSlot_base__event_80 .TooltipSlot_activeLight_85 {
+            background: url('R.images.gui.maps.icons.personal_reserves.activated_light_event') center center / cover;
+        }
+
+    .TooltipSlot_base__event_80 .TooltipSlot_timerIcon_ac {
+            background: url('R.images.gui.maps.icons.personal_reserves.icon_timer_event_tooltip') center center / cover;
+        }
+
+    .TooltipSlot_base__inactive_24 {
+        border: 1rem solid rgba(255, 255, 255, .1);
+        background: rgba(255, 255, 255, .02);
+    }
+
+    .TooltipSlot_base__inactive_24 .TooltipSlot_boosterIcon_b0 {
+            opacity: .5;
+        }
+
+    .TooltipSlot_base__inactive_24.TooltipSlot_base__clan_3e {
+            background: url('R.images.gui.maps.icons.personal_reserves.clan_icon') no-repeat center center / contain;
+            background-size: 35rem 50rem;
+        }
+
+.TooltipSlot_boosterIcon_b0 {
+    width: 80rem;
+    height: 80rem;
+    opacity: 1;
+}
+
+.TooltipSlot_cardContent_2d {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.TooltipSlot_boosterCount_fb {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    position: absolute;
+    top: 4rem;
+    right: 7rem;
+}
+
+.TooltipSlot_cardFill_3b {
+    width: 100rem;
+    height: 100rem;
+    padding: 1rem;
+    border: 1rem solid #127177;
+    border-radius: 2rem;
+    clip-path: inset(calc(100% - var(--fillPercentage)) 0 0 0);
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    z-index: 1;
+}
+
+.TooltipSlot_cardFill_borderGradient_7e {
+        width: 100rem;
+        height: 100rem;
+        border-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, .2) 0%,
+            rgba(255, 255, 255, 0) 50%,
+            rgba(255, 255, 255, .2) 100%
+        );
+        border-image-slice: 1;
+        border-image-width: 1rem;
+        position: absolute;
+        top: -1rem;
+        left: -1rem;
+    }
+
+.TooltipSlot_fillPattern_9d {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_blue_medium') center center / cover;
+}
+
+.TooltipSlot_timer_9b {
+    color: #FFFFFF;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.TooltipSlot_timerIcon_ac {
+    width: 43rem;
+    height: 43rem;
+    margin: -12rem -13rem -13rem;
+    background: url('R.images.gui.maps.icons.personal_reserves.icon_timer_personal_tooltip') center center / cover;
+}
+
+.TooltipSlot_multiplier_7f {
+    color: #FEFEEC;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 4rem;
+    left: 0;
+}
+
+.TooltipSlot_activeLight_85 {
+    width: 100rem;
+    height: 54rem;
+    background: url('R.images.gui.maps.icons.personal_reserves.activated_light_personal') center center / cover;
+    position: absolute;
+    top: -9rem;
+    left: 0;
+}
+
+.TooltipSlot_activeLight_border_19 {
+        width: 100rem;
+        height: 1rem;
+        border-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, .2) 40%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, .2) 60%,
+            rgba(255, 255, 255, 0) 100%
+        );
+        border-image-slice: 1;
+        border-image-width: 1rem;
+        position: absolute;
+        top: -1rem;
+        left: 0;
+    }
+
+.TooltipSlot_paidHighlight_07 {
+    width: 64rem;
+    height: 64rem;
+    border-radius: 2rem;
+    border-image-slice: 1;
+    background: radial-gradient(
+        circle at top right,
+        rgba(255, 195, 99, .4) 0%,
+        rgba(255, 195, 99, .1) 50%,
+        rgba(255, 195, 99, 0) 100%
+    );
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+}
+

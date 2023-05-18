@@ -1,0 +1,74 @@
+.Content_base_f0 {
+    width: 482rem;
+    border: 1rem solid #f2f2e61a;
+    border-radius: 2rem;
+    background: linear-gradient(180deg, rgba(51, 51, 41, .3) 0%, rgba(51, 51, 41, 0) 16%, rgba(51, 51, 41, 0) 88%, rgba(51, 51, 41, .1) 100%),
+                linear-gradient(0deg, #030200, #030200);
+}
+
+.Content_images_aa {
+    width: 100%;
+    height: 200rem;
+    background: url('R.images.gui.maps.icons.resourceWell.tooltips.unique_style') no-repeat center / contain;
+}
+
+.Content_content_69 {
+    padding: 0 31rem;
+}
+
+.Content_title_70 {
+    margin: 21rem 0 14rem;
+    color: #E9E2BF;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.Content_descriptionBlock_91 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    line-height: 1.29;
+}
+
+.Content_firstPart_eb {
+    margin-bottom: 17rem;
+}
+
+.Content_separatorWrapper_c6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10rem 0;
+}
+
+.Content_separator_ae {
+    width: 480rem;
+    height: 9rem;
+    background: url('R.images.gui.maps.icons.resourceWell.tooltips.divider') center / contain no-repeat;
+}
+
+.Content_moreInfo_2f {
+    padding-bottom: 25rem;
+    color: #595950;
+    font-size: 14rem;
+    line-height: 1.29;
+}
+
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem; /* border offset*/
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.TooltipDecorator_decoratorContent_de {
+    background-color: #000;
+}
+

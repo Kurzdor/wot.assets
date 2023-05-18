@@ -1,0 +1,84 @@
+.Illustration_base_e1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30rem;
+}
+
+.Illustration_tank_f9 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.Illustration_illustrationWrapper_89 {
+    width: 380rem;
+    height: 400rem;
+    position: relative;
+}
+
+.mediaLarge .Illustration_illustrationWrapper_89 {
+        width: 500rem;
+        height: 524rem;
+}
+
+.Illustration_illustrationWrapper__prevChapter_bf {
+        width: 380rem;
+        height: 400rem;
+        margin-right: 21rem;
+    }
+
+.Illustration_shieldWrapper_a5 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+.Illustration_arrow_13 {
+    width: 261rem;
+    height: 201rem;
+    background: url('R.images.gui.maps.icons.battlePass.chapter_choice.confirm.arrow') no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    z-index: 3;
+    transform: translate(50%, -50%);
+}
+
+.mediaLarge .Illustration_arrow_13 {
+        width: 384rem;
+        height: 296rem;
+        left: 25%;
+}
+
+.App_base_92 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App_title_95 {
+    color: #F2F2F7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    width: 800rem;
+    margin-bottom: 19rem;
+    text-align: center;
+}
+
+.App_subTitle_5f {
+    color: #C9C9B6;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    width: 570rem;
+    text-align: center;
+}
+

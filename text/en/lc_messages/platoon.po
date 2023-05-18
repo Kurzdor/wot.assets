@@ -19,8 +19,29 @@ msgstr "Click to cancel the search for Platoon members."
 msgid "buttons/createPlatoon/caption"
 msgstr "New Platoon"
 
+msgid "buttons/createPlatoon/comp7/forSeven/caption"
+msgstr "7 players"
+
+msgid "buttons/createPlatoon/comp7/forSeven/description"
+msgstr "Creating a Super Platoon of 7 players."
+
+msgid "buttons/createPlatoon/comp7/forSeven/text"
+msgstr "7 players"
+
+msgid "buttons/createPlatoon/comp7/forTwo/caption"
+msgstr "2 players"
+
+msgid "buttons/createPlatoon/comp7/forTwo/description"
+msgstr "Creating a Platoon of 2 players."
+
+msgid "buttons/createPlatoon/comp7/forTwo/text"
+msgstr "2 players"
+
 msgid "buttons/createPlatoon/description"
 msgstr "Create a Platoon to invite friends to play together."
+
+msgid "buttons/createSuperPlatoon/caption"
+msgstr "New Super Platoon"
 
 msgid "buttons/findPlayers/caption"
 msgstr "Find Players"
@@ -99,9 +120,6 @@ msgstr "Enable Platoon Voice Chat"
 msgid "buttons/unMute/description"
 msgstr "Click to enable Platoon voice chat."
 
-msgid "event_squad"
-msgstr "Harriers' Platoon"
-
 msgid "headerButton/inSquad"
 msgstr "In Platoon"
 
@@ -122,6 +140,14 @@ msgstr "Create a two-player tactical unit to participate in Steel Hunter."
 msgid "headerButton/tooltips/battleRoyaleSquad/header"
 msgstr "Platoon"
 
+msgid "headerButton/tooltips/comp7Squad/body"
+msgstr ""
+"You can create a Platoon or join the existing one. In Onslaught, Platoons "
+"can consist of 2 players or 7 players."
+
+msgid "headerButton/tooltips/comp7Squad/header"
+msgstr "Platoon"
+
 msgid "headerButton/tooltips/dominationSquad/body"
 msgstr ""
 "Create a tactical unit of 2 or 3 players to play cooperatively.\n"
@@ -133,18 +159,18 @@ msgstr "Platoon"
 
 msgid "headerButton/tooltips/eventSquad/body"
 msgstr ""
-"Create a tactical unit of 2 or 3 players to cooperate on the side of the "
-"Harrier Squad in The Waffenträger: Legacy."
+"Create a tactical unit of 2 or 3 players to participate in The Great Race."
 
 msgid "headerButton/tooltips/eventSquad/header"
-msgstr "Harriers' Platoon"
+msgstr "The Great Race Platoon"
 
-msgid "headerButton/tooltips/inEventSquad/body"
+msgid "headerButton/tooltips/funRandomSquad/body"
 msgstr ""
-"Click to go to the Harriers' Platoon menu and challenge Ermelinda personally."
+"Create a tactical unit of 2 or 3 players to cooperate in Arcade Cabinet "
+"battles."
 
-msgid "headerButton/tooltips/inEventSquad/header"
-msgstr "Harriers' Platoon"
+msgid "headerButton/tooltips/funRandomSquad/header"
+msgstr "Platoon"
 
 msgid "headerButton/tooltips/inMapboxSquad/body"
 msgstr "Click to open the Platoon Menu."
@@ -248,14 +274,17 @@ msgstr "The Platoon has reached the maximum number of SPGs"
 msgid "members/footer/vehicles/differentLevels"
 msgstr "Penalty to experience due to inappropriate Platoon composition!"
 
-msgid "members/header/battleRoyale"
+msgid "members/header/battle_royal"
 msgstr ": Steel Hunter"
+
+msgid "members/header/comp7"
+msgstr ": Onslaught"
 
 msgid "members/header/epic"
 msgstr ": Frontline"
 
 msgid "members/header/event"
-msgstr ": The Waffenträger: Legacy"
+msgstr ": Event"
 
 msgid "members/header/mapbox"
 msgstr ": Recon Mission"
@@ -266,8 +295,24 @@ msgstr "+++NO BONUS TOOLTIP BODY PLACEHOLDER+++"
 msgid "members/header/noBonusPlaceholder/tooltip/header"
 msgstr "+++NO BONUS TOOLTIP HEADER PLACEHOLDER+++"
 
-msgid "members/header/randomBattle"
+msgid "members/header/squad"
 msgstr ": Random Battle"
+
+msgid "members/header/tooltip/comp7/body"
+msgstr ""
+"The difference in Rating Points between players in a Platoon should not "
+"exceed %(rating)s. There are no such restrictions for Super Platoon players."
+
+msgid "members/header/tooltip/comp7/dropdown"
+msgstr "Only the Platoon Commander can change the player limit."
+
+msgid "members/header/tooltip/comp7/dropdown/item"
+msgstr ""
+"Unable to change. The player limit cannot be lower than the current number "
+"of players."
+
+msgid "members/header/tooltip/comp7/header"
+msgstr "Rules for Creating a Platoon"
 
 msgid "members/header/tooltip/epic/body"
 msgstr ""
@@ -278,9 +323,7 @@ msgid "members/header/tooltip/epic/header"
 msgstr "Rules for Platoon Creation"
 
 msgid "members/header/tooltip/event/body"
-msgstr ""
-"The Platoon can only consist of special Harriers' vehicles. The main "
-"objective is to destroy the Blitzträger auf E 110 (or 220)."
+msgstr "The Platoon should comprise three special vehicles of the mode."
 
 msgid "members/header/tooltip/event/header"
 msgstr "Rules for Platoon Creation"

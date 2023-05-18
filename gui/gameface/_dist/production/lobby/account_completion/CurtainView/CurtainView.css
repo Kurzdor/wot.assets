@@ -1,0 +1,247 @@
+.SceneWrapper_base_39 {
+    width: 100%;
+    height: 100vh;
+    cursor: grab;
+}
+
+.SceneWrapper_grab_98 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.SceneWrapper_grab__down_3c {
+        cursor: all-scroll;
+    }
+
+.Spinner_base_87 {
+    width: 260rem;
+    height: 260rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.Spinner_caption_cf {
+    color: #8C8C7E;
+    font-size: 12rem;
+    text-align: center;
+    white-space: pre;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translateY(48rem);
+}
+
+.Spinner_gear_c4 {
+    width: 260rem;
+    height: 260rem;
+    margin-top: 2rem;
+    background: url('R.images.gui.maps.icons.components.spinner.spinner') 0 0;
+    background-size: 260rem 520rem;
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    animation: Spinner_spin_f5 .28s linear infinite;
+}
+
+.Spinner_logo_bf {
+    width: 260rem;
+    height: 260rem;
+    background: url('R.images.gui.maps.icons.components.spinner.spinner') 0 -260rem no-repeat;
+    background-size: 260rem 520rem;
+    position: absolute;
+    top: -4rem;
+    left: 0;
+}
+
+@keyframes Spinner_spin_f5 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+.SubView_base_df {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+@keyframes SubViewContainer_showIn_e5 {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes SubViewContainer_showOut_ac {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes SubViewContainer_fadeIn_be {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes SubViewContainer_fadeOut_76 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes SubViewContainer_windowIn_4c {
+    from {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.SubViewContainer_base_f2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.SubViewContainer_subView_2a {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-fill-mode: forwards;
+}
+
+.SubViewContainer_subView__showing_05 {
+        animation-name: SubViewContainer_fadeIn_be;
+    }
+
+.SubViewContainer_subView__hiding_e0 {
+        animation-name: SubViewContainer_fade2Out_0f;
+    }
+
+@keyframes CurtainViewApp_showIn_cf {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes CurtainViewApp_showOut_94 {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes CurtainViewApp_fadeIn_cf {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes CurtainViewApp_fadeOut_57 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes CurtainViewApp_windowIn_29 {
+    from {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.CurtainViewApp_base_ef {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 580rem;
+    height: 100vh;
+    background: url('R.images.gui.maps.icons.account_completion.curtain_bg') no-repeat 50% / cover;
+    position: relative;
+    animation-fill-mode: forwards;
+    cursor: auto;
+}
+
+.CurtainViewApp_base__hidden_44 {
+        transform: translateX(-100%);
+    }
+
+.CurtainViewApp_base__opening_49 {
+        animation-name: CurtainViewApp_showIn_cf;
+    }
+
+.CurtainViewApp_base__opened_ac {
+        transform: translateX(0%);
+    }
+
+.CurtainViewApp_base__hiding_75 {
+        animation-name: CurtainViewApp_showOut_94;
+    }
+
+.CurtainViewApp_base__small_4b,
+    .CurtainViewApp_base__extraSmall_5f {
+        width: 386rem;
+    }
+
+.CurtainViewApp_waiting_ac {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0f0d0d;
+    opacity: .8;
+    z-index: 1;
+}
+

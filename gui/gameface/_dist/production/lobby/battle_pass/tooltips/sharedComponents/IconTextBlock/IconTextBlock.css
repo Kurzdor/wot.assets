@@ -1,0 +1,18 @@
+.IconTextBlock_base_46 {
+    display: flex;
+    align-items: center;
+}
+
+.IconTextBlock_icon_c9 {
+    width: 36rem;
+    height: 36rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.IconTextBlock_text_89 {
+    width: 90%;
+    margin-left: 10rem;
+}
+

@@ -1,0 +1,59 @@
+.Content_base_52 {
+    line-height: normal;
+}
+.Content_separator_d1 {
+    width: 283rem;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Devider_points') 50% / contain no-repeat;
+}
+.Content_rewards_dc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 403rem;
+    height: 154rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Ribbon_large') bottom / cover no-repeat;
+    color: #c9c9b6;
+    font-size: 14rem;
+}
+.Content_base_52 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300rem;
+    padding: 28rem;
+}
+.Content_title_90 {
+    color: #f2f2e7;
+    font-size: 24rem;
+    font-weight: 700;
+}
+.Content_subtitle_f8 {
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+}
+.Content_description_90 {
+    margin-top: 14rem;
+    color: #8c8c7e;
+    font-size: 14rem;
+}
+
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem; /* border offset*/
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.TooltipDecorator_decoratorContent_de {
+    background-color: #000;
+}
+

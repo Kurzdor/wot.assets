@@ -1,0 +1,362 @@
+.VehicleInfo_base_4f {
+    display: flex;
+    align-items: center;
+    background: left center no-repeat;
+    color: #c9c9b6;
+    font-size: 14rem;
+    line-height: 1;
+}
+
+    .VehicleInfo_base__level1_15 {
+        padding-left: 9rem;
+        background-image: url('R.images.gui.maps.icons.levels.tank_level_1');
+        background-size: 9rem 16rem;
+    }
+
+    .VehicleInfo_base__level2_28 {
+        padding-left: 12rem;
+        background-image: url('R.images.gui.maps.icons.levels.tank_level_2');
+        background-size: 12rem 16rem;
+    }
+
+    .VehicleInfo_base__level3_17 {
+        padding-left: 15rem;
+        background-image: url('R.images.gui.maps.icons.levels.tank_level_3');
+        background-size: 15rem 16rem;
+    }
+
+    .VehicleInfo_base__level4_02 {
+        padding-left: 16rem;
+        background-image: url('R.images.gui.maps.icons.levels.tank_level_4');
+        background-size: 16rem 16rem;
+    }
+
+    .VehicleInfo_base__level5_bd {
+        padding-left: 14rem;
+        background-image: url('R.images.gui.maps.icons.levels.tank_level_5');
+        background-size: 14rem 16rem;
+    }
+
+    .VehicleInfo_base__level6_ea {
+        padding-left: 17rem;
+        background-image: url('R.images.gui.maps.icons.levels.tank_level_6');
+        background-size: 17rem 16rem;
+    }
+
+    .VehicleInfo_base__level7_0a {
+        padding-left: 20rem;
+        background-image: url('R.images.gui.maps.icons.levels.tank_level_7');
+        background-size: 20rem 16rem;
+    }
+
+    .VehicleInfo_base__level8_27 {
+        padding-left: 23rem;
+        background-image: url('R.images.gui.maps.icons.levels.tank_level_8');
+        background-size: 23rem 16rem;
+    }
+
+    .VehicleInfo_base__level9_95 {
+        padding-left: 17rem;
+        background-image: url('R.images.gui.maps.icons.levels.tank_level_9');
+        background-size: 17rem 16rem;
+    }
+
+    .VehicleInfo_base__level10_dc {
+        padding-left: 15rem;
+        background-image: url('R.images.gui.maps.icons.levels.tank_level_10');
+        background-size: 15rem 16rem;
+    }
+
+.VehicleInfo_vehicleType_e2 {
+    width: 16rem;
+        height: 16rem;
+    background: no-repeat center / contain;
+}
+
+.VehicleInfo_vehicleType__elite_95 {
+    width: 24rem;
+        height: 24rem;
+        margin: 2rem 0 0 -2rem;
+    }
+
+.VehicleInfo_vehicleName_9e {
+    color: #C9C9B6;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-left: 3rem;
+    text-shadow: 0 0 5px rgba(201,201,182, .5);
+}
+
+.BlockCompleted_base_0a {
+    line-height: normal;
+}
+.BlockCompleted_separator_c8 {
+    width: 283rem;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Devider_points') 50% / contain no-repeat;
+}
+.BlockCompleted_rewards_d5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 403rem;
+    height: 154rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Ribbon_large') bottom / cover no-repeat;
+    color: #c9c9b6;
+    font-size: 14rem;
+}
+.BlockCompleted_whiteBg_52 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 403rem;
+    height: 64rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Gradient_devider') center / cover repeat-y;
+    position: relative;
+}
+.BlockCompleted_whiteBgLine_94 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #80d43a;
+    font-size: 14rem;
+}
+.BlockCompleted_whiteBgIcon_17 {
+    width: 12rem;
+    height: 12rem;
+    margin-top: 2rem;
+    margin-right: 4rem;
+    background: url('R.images.gui.maps.icons.library.done') center / contain no-repeat;
+}
+.BlockCompleted_description_a4 {
+    width: 100%;
+    padding: 20rem 20rem 0;
+    color: #cbac77;
+    font-size: 14rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.styles_base_86 {
+    line-height: normal;
+}
+.styles_separator_f8 {
+    width: 283rem;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Devider_points') 50% / contain no-repeat;
+}
+.styles_rewards_26 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 403rem;
+    height: 154rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Ribbon_large') bottom / cover no-repeat;
+    color: #c9c9b6;
+    font-size: 14rem;
+}
+.styles_base_86 {
+    display: flex;
+    flex-direction: row;
+    width: 403rem;
+    padding-left: 28rem;
+    padding-bottom: 10rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Gradient_devider') center top / 100% 40rem no-repeat;
+    position: relative;
+}
+.styles_separators_5c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 403rem;
+    position: absolute;
+}
+/* override*/
+.styles_separator_f8 {
+    position: absolute;
+    top: 80rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.styles_tableHeader_a0 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40rem;
+    color: #8c8c7e;
+    font-size: 14rem;
+}
+.styles_label_d5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+    font-size: 14rem;
+}
+.styles_label__table_9e {
+        justify-content: flex-start;
+        color: #8c8c7e;
+    }
+.styles_pointsColumn_20 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 25rem;
+}
+
+.Point_base_e9 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Point_points_2a {
+    color: #e9e2bf;
+    font-size: 16rem;
+}
+
+.Point_points__special_c7 {
+        color: #80d43a;
+        font-size: 16rem;
+    }
+
+.Point_pointIcon_9e {
+    width: 24rem;
+    height: 24rem;
+    margin-left: 6rem;
+    margin-top: 4rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.points_24') center / contain no-repeat;
+}
+
+.Footer_base_5c {
+    line-height: normal;
+}
+.Footer_separator_87 {
+    width: 283rem;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Devider_points') 50% / contain no-repeat;
+}
+.Footer_rewards_98 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 403rem;
+    height: 154rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Ribbon_large') bottom / cover no-repeat;
+    color: #c9c9b6;
+    font-size: 14rem;
+}
+.Footer_description_dc {
+    width: 100%;
+    margin-bottom: 20rem;
+    color: #8c8c7e;
+    font-size: 14rem;
+    line-height: 1.2;
+}
+.Footer_rewards_98 {
+    margin: 18rem -28rem -28rem;
+}
+.Footer_awardImage_9e {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 56rem;
+    height: 56rem;
+    margin: 10rem 0 14rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.points_reward_56') no-repeat center / contain;
+}
+.Footer_awardPoints_6a {
+    margin-bottom: 2rem;
+    padding-top: 20rem;
+    transform: translateY(50%);
+}
+
+.Points_points_ce {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24rem;
+    color: #8c8c7e;
+    font-size: 36rem;
+    font-weight: 700;
+}
+
+.Points_pointsSplitter_fb {
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.Points_pointsCurrentLabel_9d {
+    color: #f5eed5;
+}
+
+.Content_base_06 {
+    line-height: normal;
+}
+.Content_separator_af {
+    width: 283rem;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Devider_points') 50% / contain no-repeat;
+}
+.Content_rewards_22 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 403rem;
+    height: 154rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Ribbon_large') bottom / cover no-repeat;
+    color: #c9c9b6;
+    font-size: 14rem;
+}
+.Content_base_06 {
+    display: flex;
+    flex-direction: column;
+    padding: 28rem;
+}
+.Content_base__big_a6 {
+        width: 403rem;
+    }
+.Content_base__small_39 {
+        width: 350rem;
+    }
+.Content_title_07 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: -10rem;
+}
+.Content_titleLabel_ba {
+    color: #f2f2e7;
+    font-size: 24rem;
+    font-weight: 700;
+}
+.Content_separator_af {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem; /* border offset*/
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.TooltipDecorator_decoratorContent_de {
+    background-color: #000;
+}
+

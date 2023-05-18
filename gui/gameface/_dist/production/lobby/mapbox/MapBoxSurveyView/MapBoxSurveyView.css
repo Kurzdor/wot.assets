@@ -1,0 +1,1911 @@
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .TextButton_base__right_39 {
+        flex-direction: row-reverse;
+    }
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+    .TextButton_icon__forward_59 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.back');
+        transform: translateY(1rem);
+    }
+.TextButton_icon__forward_59 {
+        transform: rotate(180deg) translateY(1rem);
+    }
+.TextButton_icon__close_53 {
+        margin: -1rem 0;
+        background-image: url('R.images.gui.maps.icons.components.text_button.close');
+    }
+.TextButton_icon__info_33 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.info');
+    }
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+    .TextButton_icon__forward_59 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+    }
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+    }
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+    }
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_glow_a4 {
+        opacity: 0;
+    }
+.TextButton_caption_82 {
+    position: relative;
+    transition: color .16s, text-shadow .16s;
+}
+.TextButton_caption__back_b9,
+    .TextButton_caption__forward_4e,
+    .TextButton_caption__close_36 {
+        color: #FFDD99;
+        text-shadow: 0 0 10rem rgba(255,42,0, 1),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4);
+    }
+.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
+            color: #fffa9f;
+        }
+.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
+            color: #FFDD99;
+        }
+.TextButton_caption__info_23 {
+        padding: 0 5rem;
+        color: #CCFFFF;
+        text-shadow: 0 0 12rem rgba(31,68,255, .8),
+            0 0 8rem #00eaff;
+    }
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+            color: #e3ffff;
+            text-shadow: 0 0 12rem rgba(31,68,255, .8),
+                0 0 12rem rgba(0,234,255, 1),
+                0 0 8rem #00eaff;
+        }
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+            color: #CCFFFF;
+            text-shadow: 0 0 12rem rgba(31,68,255, .6),
+                0 0 8rem #00eaff;
+        }
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+        margin-left: 8rem;
+    }
+.TextButton_base__right_39 .TextButton_goto_e7 {
+        margin-right: 8rem;
+    }
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity .16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+        left: -4rem;
+    }
+.TextButton_base__right_39 .TextButton_shine_e2 {
+        right: -4rem;
+        transform: rotate(180deg);
+    }
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_shine_e2 {
+        opacity: 0;
+    }
+
+.MapPoint_base_05 {
+    width: 80rem;
+    height: 80rem;
+    cursor: default;
+}
+
+    .MapPoint_base__hidden_bd {
+        display: none;
+    }
+
+    .MapPoint_base__static_15 {
+        cursor: pointer;
+        pointer-events: none;
+    }
+
+    .MapPoint_base__hovered_2b {
+        cursor: pointer;
+    }
+
+.MapPoint_point_51 {
+    width: 80rem;
+    height: 80rem;
+    background: center / cover no-repeat;
+    pointer-events: none;
+}
+
+.MapPoint_point__1_17 {
+            background-image: url('R.images.gui.maps.icons.mapbox.survey.template.interactiveMap.green_pin1');
+        }
+
+.MapPoint_base__hovered_2b .MapPoint_point__1_17 {
+                background-image: url('R.images.gui.maps.icons.mapbox.survey.template.interactiveMap.red_pin1');
+            }
+
+.MapPoint_point__2_1c {
+            background-image: url('R.images.gui.maps.icons.mapbox.survey.template.interactiveMap.green_pin2');
+        }
+
+.MapPoint_base__hovered_2b .MapPoint_point__2_1c {
+                background-image: url('R.images.gui.maps.icons.mapbox.survey.template.interactiveMap.red_pin2');
+            }
+
+.MapPoint_point__3_64 {
+            background-image: url('R.images.gui.maps.icons.mapbox.survey.template.interactiveMap.green_pin3');
+        }
+
+.MapPoint_base__hovered_2b .MapPoint_point__3_64 {
+                background-image: url('R.images.gui.maps.icons.mapbox.survey.template.interactiveMap.red_pin3');
+            }
+
+.MapPoint_hitArea_e4 {
+    width: 32rem;
+    height: 32rem;
+    position: absolute;
+    top: 26rem;
+    left: 26rem;
+    pointer-events: auto;
+}
+
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    position: relative;
+    cursor: pointer;
+}
+
+    .CButton_base__main_42,
+    .CButton_base__primary_7f,
+    .CButton_base__primaryGreen_6f,
+    .CButton_base__primaryRed_ec,
+    .CButton_base__secondary_50 {
+        background-size: 100% 100%;
+    }
+
+    .CButton_base__main_42 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+
+    .CButton_base__primary_7f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+
+    .CButton_base__primaryGreen_6f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+
+    .CButton_base__primaryRed_ec {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+
+    .CButton_base__secondary_50 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+
+    .CButton_base__ghost_ed {
+        border-radius: 3rem;
+        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
+            0 0 0 1rem rgba(255,255,255, .15) inset;
+        background-color: rgba(0,0,0, .15);
+    }
+
+    .CButton_base__extraSmall_27 {
+        min-height: 17rem;
+        padding: 0 16rem;
+    }
+
+    .CButton_base__small_df,
+    .CButton_base__medium_74 {
+        padding: 0 20rem;
+    }
+
+    .CButton_base__small_df {
+        min-height: 18rem;
+    }
+
+    .CButton_base__medium_74 {
+        min-height: 32rem;
+    }
+
+    .CButton_base__disabled_d9 {
+        cursor: default;
+    }
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+.CButton_base__primary_7f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+.CButton_base__secondary_50 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow .16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+        border-radius: 2rem;
+        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
+    }
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+        transition: opacity .16s ease-in-out;
+    }
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+        opacity: 1;
+    }
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
+        background-color: rgba(8,6,0, .18);
+        background-image: none;
+    }
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+        opacity: 1;
+    }
+.CButton_stateDisabled_54 {
+    background-color: rgba(0,0,0, .25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+        opacity: 1;
+    }
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: .03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang=ja],
+    .CButton_content_cc[lang=ko],
+    .CButton_content_cc[lang=zh_tw],
+    .CButton_content_cc[lang=zh_sg],
+    .CButton_content_cc[lang=zh_cn],
+    .CButton_content_cc[lang=th] {
+        font-weight: 400;
+    }
+.CButton_base__main_42 .CButton_content_cc,
+    .CButton_base__primaryRed_ec .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #600;
+    }
+.CButton_base__secondary_50 .CButton_content_cc {
+        color: rgba(254,254,236, .75);
+    }
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #1c2502;
+    }
+.CButton_base__extraSmall_27 .CButton_content_cc {
+        font-size: 12rem;
+    }
+.CButton_base__small_df .CButton_content_cc {
+        font-size: 14rem;
+    }
+.CButton_base__medium_74 .CButton_content_cc {
+        font-size: 15rem;
+    }
+.CButton_base__disabled_d9 .CButton_content_cc {
+        opacity: .6;
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBar_base_45 {
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+.ProgressBar_base__small_df {
+        height: 2rem;
+    }
+.ProgressBar_background_51 {
+    width: 100%;
+    max-width: 8001px;
+    height: 100%;
+    background-image: var(--progress-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ProgressBar_background__small_46 {
+        height: 2rem;
+    }
+.ProgressBar_lineWrapper_6a {
+    display: flex;
+    flex: 1;
+}
+
+
+.ProgressBarBlink_base_24 {
+    width: 60rem;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    pointer-events: none;
+}
+
+    .ProgressBarBlink_base__small_0f {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressLineImpose_base_80 {
+    max-width: 8001px;
+    height: 100%;
+    background-color: var(--progress-line-base);
+    position: relative;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressLineImpose_base__disabled_cc {
+        background-color: var(--progress-line-disabled);
+    }
+.ProgressLineImpose_base__finished_d4 {
+        background-color: var(--progress-line-finished);
+    }
+.ProgressLineImpose_base__withoutBounce_56 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressLineImpose_pattern_1c {
+    max-width: 8001px;
+    background-image: var(--progress-pattern-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-disabled);
+        left: 0;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-finished);
+    }
+.ProgressLineImpose_gradient_35 {
+    max-width: 8001px;
+    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
+        display: none;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
+        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
+    }
+.ProgressLineImpose_glow_a5 {
+    width: 60rem;
+    max-width: 8001px;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.ProgressLineImpose_glow__left_d8 {
+        left: 1rem;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
+    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+        display: none;
+    }
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaSimple_base_6c {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ProgressBarDeltaSimple_delta_99 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-property: width, transform;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaGrow_base_7e {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressBarDeltaGrow_glow_68 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+
+.Footer_base_52 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Footer_progressBarWrapper_d3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 557rem;
+    padding-bottom: 20rem;
+}
+
+.Footer_progressBarLabel_e7 {
+    color: #C9C9B6;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+.Footer_buttonsWrapper_a5 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.mediaLarge .Footer_buttonsWrapper_a5 {
+        padding-top: 30rem;
+}
+
+.Footer_button_19 {
+    min-width: 160rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+@keyframes Header_fadeIn_51 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Header_fadeInWithScale_db {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes Header_slideUp_58 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Header_slideLeft_31 {
+    0% {
+        opacity: 0;
+        transform: translateX(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.Header_base_40 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Header_title_49 {
+    opacity: 0;
+    animation-name: Header_slideUp_58;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
+    animation-delay: .4s;
+    animation-iteration-count: 1;
+    color: #8C8C7E;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    justify-content: center;
+    width: 737rem;
+    margin-bottom: 7rem;
+}
+
+.mediaMedium .Header_title_49 {
+        color: #8C8C7E;
+        font-size: 24rem;
+        font-weight: 700;
+        line-height: 1.2;
+        width: 981rem;
+        margin-bottom: 8rem;
+}
+
+.Header_subTitle_8d {
+    opacity: 0;
+    animation-name: Header_slideUp_58;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
+    animation-delay: .4s;
+    animation-iteration-count: 1;
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    justify-content: center;
+    width: 760rem;
+    text-align: center;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Survey_base_97 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+    .Survey_base__empty_48 {
+        display: none;
+    }
+
+    .Survey_base__finish_2f {
+        display: flex;
+    }
+
+.Survey_title_79 {
+    color: #FEFEEC;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    justify-content: center;
+    width: 930rem;
+    line-height: 1.35;
+    text-align: center;
+    z-index: 3;
+}
+
+.mediaMedium .Survey_title_79 {
+        color: #FEFEEC;
+        font-size: 56rem;
+        font-weight: 700;
+        line-height: 1.1;
+        width: 1520rem;
+        line-height: 1.35;
+}
+
+.mediaLarge .Survey_title_79 {
+        width: 1610rem;
+}
+
+.Survey_title_79[lang=th] {
+        line-height: 1.45;
+    }
+
+.Survey_title_79[lang=ja] {
+        color: #FEFEEC;
+        font-size: 28rem;
+        font-weight: 700;
+        line-height: 1.1;
+        line-height: 1.35;
+    }
+
+.mediaMedium .Survey_title_79[lang=ja] {
+            color: #FEFEEC;
+            font-size: 56rem;
+            font-weight: 700;
+            line-height: 1.1;
+            line-height: 1.35;
+}
+
+.Survey_base__first_ac .Survey_title_79 {
+        margin-top: 38rem;
+    }
+
+.mediaMedium .Survey_base__first_ac .Survey_title_79 {
+            margin-top: 0;
+}
+
+.Survey_base__first_ac .Survey_title_79[lang=ja] {
+            margin-top: 40rem;
+        }
+
+.mediaMedium .Survey_base__first_ac .Survey_title_79[lang=ja] {
+                margin-top: 0;
+}
+
+.Survey_content_c5 {
+    margin-top: 0;
+}
+
+.mediaMedium .Survey_content_c5 {
+        margin-top: 20rem;
+}
+
+.mediaLarge .Survey_content_c5 {
+        margin-top: 50rem;
+}
+
+.Survey_base__vehicle_88 .Survey_content_c5 {
+        margin-top: 20rem;
+    }
+
+.mediaMedium .Survey_base__vehicle_88 .Survey_content_c5 {
+            margin-top: 50rem;
+}
+
+.Survey_base__table_4f .Survey_content_c5 {
+        margin-top: 30rem;
+    }
+
+.mediaMedium .Survey_base__table_4f .Survey_content_c5 {
+            margin-top: 50rem;
+}
+
+.Survey_base__multipleChoice_4e .Survey_content_c5,
+    .Survey_base__map_3e .Survey_content_c5,
+    .Survey_base__textarea_dd .Survey_content_c5 {
+        margin-top: 15rem;
+    }
+
+.mediaMedium .Survey_base__multipleChoice_4e .Survey_content_c5, .mediaMedium .Survey_base__map_3e .Survey_content_c5, .mediaMedium .Survey_base__textarea_dd .Survey_content_c5 {
+            margin-top: 50rem;
+}
+
+.Survey_base__first_ac .Survey_content_c5 {
+        margin-top: -18rem;
+    }
+
+.mediaLarge .Survey_base__first_ac .Survey_content_c5 {
+            margin-top: 50rem;
+}
+
+.Survey_base__first_ac .Survey_content_c5[lang=ja],
+        .Survey_base__first_ac .Survey_content_c5[lang=th] {
+            margin-top: -30rem;
+        }
+
+.mediaMedium .Survey_base__first_ac .Survey_content_c5[lang=ja], .mediaMedium .Survey_base__first_ac .Survey_content_c5[lang=th] {
+                margin-top: 50rem;
+}
+
+.Survey_base__first_ac .Survey_content_c5[lang=ko] {
+            margin-top: -10rem;
+        }
+
+.mediaMedium .Survey_base__first_ac .Survey_content_c5[lang=ko] {
+                margin-top: 50rem;
+}
+
+.FinishContent_base_a0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.FinishContent_image_7a {
+    width: 240rem;
+    height: 240rem;
+    margin-top: -50rem;
+    background: url('R.images.gui.maps.icons.mapbox.survey.finalCheck') no-repeat center / cover;
+}
+
+.mediaMedium .FinishContent_image_7a {
+        margin-top: -80rem;
+}
+
+.FinishContent_text_b3 {
+    color: #FEFEEC;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    width: 930rem;
+    margin-top: -22rem;
+    text-align: center;
+}
+
+.mediaMedium .FinishContent_text_b3 {
+        color: #FEFEEC;
+        font-size: 56rem;
+        font-weight: 700;
+        line-height: 1.1;
+        width: 1610rem;
+}
+
+.ToggleButton_base_2c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30rem;
+    min-height: 20rem;
+    border-radius: 2rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .ToggleButton_base__button_cb.ToggleButton_base__active_a6 {
+    border-image: linear-gradient(90deg, #ac802c 0%, #eece63 48.95%, #efd065 48.96%, #ae842e 100%) 1 1 1 stretch;
+    border-image-width: 1rem;
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, .6), 0 0 7rem rgba(250, 112, 0, .6);
+    background: linear-gradient(180deg, rgba(255,42,0, .1) 0%, rgba(255,42,0, 0) .01%, rgba(255,128,0, .1) 100%);
+        }
+
+    .ToggleButton_base__button_cb.ToggleButton_base__active_a6:hover {
+                box-shadow: 0 0 0 1rem rgba(0,0,0, .6), 0 0 7rem rgba(250,112,0, .6), inset 0 0 40rem rgba(255,255,255, .1);
+            }
+
+    .ToggleButton_base__slot_98 {
+        min-width: 80rem;
+        min-height: 80rem;
+        border: 1rem solid rgba(255,255,255, .15);
+        background: rgba(0,0,0, .1);
+    }
+
+    .ToggleButton_base__slot_98:hover {
+            background: radial-gradient(rgba(0,0,0, 0) 10%, rgba(150,150,150, .1));
+        }
+
+    .ToggleButton_base__slot_98:active,.ToggleButton_base__slot_98  {
+            box-shadow: none;
+            background: rgba(0,0,0, .2);
+        }
+
+    .ToggleButton_base__slot_98.ToggleButton_base__active_a6 {
+    border-image: linear-gradient(90deg, #ac802c 0%, #eece63 48.95%, #efd065 48.96%, #ae842e 100%) 1 1 1 stretch;
+    border-image-width: 1rem;
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, .6), 0 0 7rem rgba(250, 112, 0, .6);
+    background: linear-gradient(180deg, rgba(255,42,0, .1) 0%, rgba(255,42,0, 0) .01%, rgba(255,128,0, .1) 100%);
+        }
+
+    .ToggleButton_base__slot_98.ToggleButton_base__active_a6:active {
+                background: rgba(0,0,0, .2);
+            }
+
+    .ToggleButton_base__disabled_19 {
+        cursor: initial;
+        pointer-events: none;
+    }
+
+.ToggleButton_texture_f1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    z-index: 1;
+}
+
+.ToggleButton_background_ef {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    z-index: -1;
+}
+
+.ToggleButton_content_63 {
+    color: #f1f0e0;
+    font-size: 13rem;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 0 -1rem 2rem rgba(0,0,0, .7);
+}
+
+.ToggleButton_base__slot_98 .ToggleButton_content_63 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 auto;
+        position: relative;
+        z-index: -1;
+    }
+
+.ToggleButton_overlay_23 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 2rem;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.ToggleButton_base__disabled_19 .ToggleButton_overlay_23 {
+        margin: -1rem;
+        background: url('R.images.gui.maps.icons.buttons.toggle_disable');
+        background-repeat: repeat;
+    }
+
+.ToggleButton_base__button_cb .ToggleButton_overlay_23 {
+        background-color: rgba(255,255,255, .04);
+    }
+
+.ToggleButton_base__button_cb:hover .ToggleButton_overlay_23 {
+        box-shadow: inset 0 0 40rem rgba(255,255,255, .1);
+    }
+
+.ToggleButton_base__button_cb:active .ToggleButton_overlay_23 {
+        box-shadow: none;
+        background: rgba(0,0,0, .2);
+    }
+
+.ToggleButton_base__button_cb.ToggleButton_base__active_a6:active .ToggleButton_overlay_23 {
+        background: rgba(0,0,0, .2);
+    }
+
+.ToggleButton_indicator_a7 {
+    /* This Needs to be an even number otherwise translate(-50%) makes it at half a pixel position and causes sub pixel blurring */
+    width: 16rem;
+    height: 5rem;
+    background: url('R.images.gui.maps.icons.buttons.toggle_switcher_off');
+    background-size: 16rem 5rem;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, 0);
+    pointer-events: none;
+}
+
+.ToggleButton_base__slot_98 .ToggleButton_indicator_a7 {
+        width: 64rem;
+        height: 32rem;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: absolute;
+        bottom: -17rem;
+    }
+
+.ToggleButton_base__slot_98.ToggleButton_base__active_a6 .ToggleButton_indicator_a7 {
+        background-image: url('R.images.gui.maps.icons.buttons.toggle_check');
+    }
+
+.ToggleButton_base__button_cb.ToggleButton_base__active_a6 .ToggleButton_indicator_a7 {
+        background-image: url('R.images.gui.maps.icons.buttons.toggle_switcher_on');
+    }
+
+.SurveyTextOption_base_18 {
+    display: flex;
+}
+
+.SurveyTextOption_toggle_76 {
+    width: 185rem;
+    min-height: 56rem;
+}
+
+.mediaMedium .SurveyTextOption_toggle_76 {
+        width: 213rem;
+        min-height: 66rem;
+}
+
+.SurveyTextOption_toggle__extendedSmall_2f {
+        width: 220rem;
+    }
+
+.mediaMedium .SurveyTextOption_toggle__extendedSmall_2f {
+            width: 300rem;
+}
+
+.SurveyTextOption_toggle__large_8f {
+        width: 320rem;
+    }
+
+.mediaMedium .SurveyTextOption_toggle__large_8f {
+            width: 368rem;
+}
+
+.SurveyTextOption_buttonTitle_b6 {
+    margin-top: -6rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+    line-height: 1;
+}
+
+.mediaMedium .SurveyTextOption_buttonTitle_b6 {
+        color: #E9E2BF;
+        font-size: 20rem;
+        font-weight: 400;
+        line-height: 1.2;
+        line-height: 1;
+}
+
+.SurveyTextOption_buttonTitle_b6[lang=ja] {
+        margin-top: 0;
+    }
+
+.SurveyTextOption_buttonTitle_b6[lang=ko] {
+        margin-top: 2rem;
+    }
+
+.SurveyTextOption_buttonTitle_b6[lang=ja],
+    .SurveyTextOption_buttonTitle_b6[lang=ko] {
+        color: #E9E2BF;
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
+        line-height: 1.3;
+    }
+
+.mediaMedium .SurveyTextOption_buttonTitle_b6[lang=ja], .mediaMedium .SurveyTextOption_buttonTitle_b6[lang=ko] {
+            color: #E9E2BF;
+            font-size: 20rem;
+            font-weight: 400;
+            line-height: 1.2;
+            line-height: 1.3;
+}
+
+.ImageSurveyContent_base_db {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ImageSurveyContent_image_43 {
+    width: 1024rem;
+    height: 364rem;
+    margin-bottom: 18rem;
+    background: no-repeat center / contain;
+}
+
+.mediaMedium .ImageSurveyContent_image_43 {
+        margin-bottom: 35rem;
+}
+
+.ImageSurveyContent_buttons_ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ImageSurveyContent_toggle_af {
+    margin-right: 10rem;
+}
+
+.mediaMedium .ImageSurveyContent_toggle_af {
+        margin-right: 20rem;
+}
+
+.ImageSurveyContent_toggle__last_90 {
+        margin-right: 0;
+    }
+
+.mediaMedium .ImageSurveyContent_toggle__last_90 {
+            margin-right: 0;
+}
+
+.SurveyImageOption_base_19 {
+    display: flex;
+}
+
+.SurveyImageOption_toggle_2d {
+    width: 140rem;
+    min-height: 190rem;
+    margin: 0 5rem;
+}
+
+.mediaMedium .SurveyImageOption_toggle_2d {
+        width: 180rem;
+        min-height: 220rem;
+        margin: 0 10rem;
+}
+
+.SurveyImageOption_toggleContent_60 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 190rem;
+}
+
+.mediaMedium .SurveyImageOption_toggleContent_60 {
+        min-height: 220rem;
+}
+
+.SurveyImageOption_buttonImage_a5 {
+    width: 80rem;
+    height: 80rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 20rem;
+    left: 30rem;
+}
+
+.mediaMedium .SurveyImageOption_buttonImage_a5 {
+        width: 180rem;
+        height: 135rem;
+        top: 10rem;
+        left: 0;
+}
+
+.SurveyImageOption_buttonTitle_ac {
+    color: #E9E2BF;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 130rem;
+    padding-top: 75rem;
+}
+
+.mediaMedium .SurveyImageOption_buttonTitle_ac {
+        color: #E9E2BF;
+        font-size: 24rem;
+        font-weight: 400;
+        line-height: 1.2;
+        width: 170rem;
+        padding-top: 90rem;
+}
+
+.SurveyImageOption_buttonTitle_ac[lang=de] {
+        color: #E9E2BF;
+        font-size: 18rem;
+        font-weight: 400;
+        line-height: 1.25;
+    }
+
+.mediaMedium .SurveyImageOption_buttonTitle_ac[lang=de] {
+            color: #E9E2BF;
+            font-size: 24rem;
+            font-weight: 400;
+            line-height: 1.2;
+}
+
+.VehicleSurveyContent_base_d0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.VehicleSurveyContent_buttons_f0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.VehicleSurveyContent_toggleContent_14 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.VehicleSurveyContent_buttonImage_6e {
+    width: 80rem;
+    height: 80rem;
+    background: no-repeat center / contain;
+}
+
+.mediaMedium .VehicleSurveyContent_buttonImage_6e {
+        width: 180rem;
+        height: 135rem;
+}
+
+.VehicleSurveyContent_buttonTitle_b5 {
+    color: #E9E2BF;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.mediaMedium .VehicleSurveyContent_buttonTitle_b5 {
+        color: #E9E2BF;
+        font-size: 24rem;
+        font-weight: 400;
+        line-height: 1.2;
+}
+
+.Option_base_32 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.Option_questionTitle_66 {
+    color: #E9E2BF;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: -2rem;
+}
+
+.mediaMedium .Option_questionTitle_66 {
+        color: #E9E2BF;
+        font-size: 24rem;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-top: -6rem;
+}
+
+.Option_questionTitle__small_c8 {
+        width: 150rem;
+    }
+
+.mediaMedium .Option_questionTitle__small_c8 {
+            width: 174rem;
+}
+
+.Option_questionTitle__medium_cf {
+        width: 392rem;
+    }
+
+.mediaMedium .Option_questionTitle__medium_cf {
+            width: 450rem;
+}
+
+.Option_questionTitle__large_f2 {
+        width: 582rem;
+    }
+
+.mediaMedium .Option_questionTitle__large_f2 {
+            width: 684rem;
+}
+
+.Option_icon_6f {
+    width: 48rem;
+    height: 48rem;
+    background: no-repeat center / contain;
+}
+
+.Option_buttons_5f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20rem;
+}
+
+.Option_toggle_c4 {
+    margin-left: 10rem;
+}
+
+.mediaMedium .Option_toggle_c4 {
+        margin-left: 20rem;
+}
+
+.Option_buttonTitle_ad {
+    color: #E9E2BF;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.TableSurveyContent_base_63 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.TableSurveyContent_option_86 {
+    padding-bottom: 13rem;
+}
+.TableSurveyContent_option_86 + .TableSurveyContent_option_86 {
+        padding-top: 13rem;
+        border-top: 1rem solid rgba(255, 255, 255, .2);
+    }
+.TableSurveyContent_blank_01 {
+    width: 1024rem;
+    height: calc(var(--rows)*70rem + (var(--rows) - 1)*13rem);
+}
+.mediaMedium .TableSurveyContent_blank_01 {
+        height: calc(var(--rows)*80rem + (var(--rows) - 1)*13rem);
+}
+
+.TextArea_base_23 {
+    width: 100%;
+    position: relative;
+}
+
+.TextArea_textAreaWrapper_60 {
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(69,68,55, .7);
+    background-color: rgba(13,13,12, .7);
+    transition: box-shadow .35s ease-in-out;
+}
+
+.TextArea_textAreaWrapper__focused_d3 {
+        box-shadow: 0 0 0 1rem #663c1f;
+    }
+
+.TextArea_textArea_3d {
+    color: #C9C9B6;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 7rem 5rem 10rem;
+    border: none;
+    background-color: rgba(0,0,0, 0);
+    line-height: 18rem;
+}
+
+.TextArea_textArea__disabled_50 {
+        opacity: .3;
+        pointer-events: none;
+    }
+
+.TextArea_textArea__hint_e1 {
+        color: #5f5f56;
+    }
+
+.TextArea_textArea_3d::selection {
+        background-color: #8C8C7E;
+        color: #37362E;
+    }
+
+.Answer_base_74 {
+    display: flex;
+    flex-direction: column;
+    width: 534rem;
+}
+
+.Answer_header_3c {
+    display: flex;
+    justify-content: space-between;
+    width: 534rem;
+    height: 40rem;
+    margin-top: -14rem;
+}
+
+.Answer_pointNameWrapper_49 {
+    display: flex;
+    align-items: center;
+}
+
+.Answer_pointName_50 {
+    color: #FEFEEC;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.Answer_point_25 {
+    width: 80rem;
+    height: 80rem;
+    margin: -7rem 0 0 -19rem;
+    background: center / cover no-repeat;
+}
+
+.Answer_point__1_32 {
+            background-image: url('R.images.gui.maps.icons.mapbox.survey.template.interactiveMap.green_pin1');
+        }
+
+.Answer_point__2_17 {
+            background-image: url('R.images.gui.maps.icons.mapbox.survey.template.interactiveMap.green_pin2');
+        }
+
+.Answer_point__3_ee {
+            background-image: url('R.images.gui.maps.icons.mapbox.survey.template.interactiveMap.green_pin3');
+        }
+
+.Answer_textArea_f0 {
+    width: 534rem;
+    height: 100rem;
+}
+
+.Answer_closeButton_65 {
+    width: 32rem;
+    height: 32rem;
+    margin: 4rem -8rem 0 0;
+    background: url('R.images.gui.maps.icons.components.text_button.close') no-repeat center / contain;
+    position: relative;
+}
+
+.Answer_closeButton__overState_37 {
+        cursor: pointer;
+    }
+
+.Answer_glow_19 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.components.text_button.close_hover') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .16s;
+}
+
+.Answer_glow__overState_a1:hover {
+            opacity: 1;
+        }
+
+.Answers_base_81 {
+    width: 534rem;
+    height: 420rem;
+    position: relative;
+}
+
+.Answers_answers_e5 {
+    position: absolute;
+    z-index: 3;
+}
+
+.Answers_answer_b0 {
+    width: 534rem;
+    height: 130rem;
+    position: absolute;
+}
+
+.InfoBlock_base_4d {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 450rem;
+    height: 420rem;
+}
+
+.InfoBlock_arrow_26 {
+    width: 250rem;
+    height: 250rem;
+    background: url('R.images.gui.maps.icons.mapbox.survey.template.interactiveMap.info_arrow') no-repeat center / contain;
+    transform: rotate(180deg);
+}
+
+.InfoBlock_blocks_f7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 36rem;
+}
+
+.InfoBlock_infoElement_e9 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 96rem;
+}
+
+.InfoBlock_infoElementText_1b {
+    color: #FFDD99;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 220rem;
+    margin-top: -2rem;
+    text-align: left;
+    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+}
+
+.InfoBlock_infoIcon_e6 {
+    width: 80rem;
+    height: 80rem;
+    background: center / contain no-repeat;
+}
+
+.InfoBlock_infoIcon__hand_28 {
+        background-image: url('R.images.gui.maps.icons.mapbox.survey.template.interactiveMap.arm_map');
+    }
+
+.InfoBlock_infoIcon__point_4a {
+        background-image: url('R.images.gui.maps.icons.mapbox.survey.template.interactiveMap.big_3pin');
+    }
+
+.InteractiveMapSurveyContent_base_32 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.InteractiveMapSurveyContent_rightBlock_85 {
+    width: 534rem;
+    height: 420rem;
+    position: relative;
+}
+
+.InteractiveMapSurveyContent_answers_3d {
+    position: absolute;
+}
+
+.MapImage_base_09 {
+    width: 420rem;
+    height: 420rem;
+    position: relative;
+}
+
+.MapImage_imageBorder_61 {
+    width: 1024rem;
+    height: 600rem;
+    margin: -81rem 0 0 -302rem;
+    background: url('R.images.gui.maps.icons.mapbox.survey.template.image.borderShineMap') no-repeat center / contain;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+}
+
+.MapImage_image_11 {
+    width: 418rem;
+    height: 418rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    pointer-events: none;
+}
+
+.MapImage_image__events_c7 {
+        pointer-events: auto;
+    }
+
+.MapImage_image__hand_02 {
+        cursor: pointer;
+    }
+
+.MapBlock_base_3a {
+    width: 450rem;
+    height: 420rem;
+    position: relative;
+}
+
+.MapBlock_point_8d {
+    width: 80rem;
+    height: 80rem;
+    position: absolute;
+    pointer-events: none;
+}
+
+.MapBlock_point__hidden_c0 {
+        display: none;
+    }
+
+.OpenedQuestionContent_base_85 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+    .OpenedQuestionContent_base__small_0b {
+        padding-top: 25rem;
+    }
+
+    .mediaMedium .OpenedQuestionContent_base__small_0b {
+            padding-top: 0;
+}
+
+.OpenedQuestionContent_mapWrapper_34 {
+    width: 450rem;
+    height: calc(2rem + var(--iconHeight));
+    padding: 1rem 0 0 1rem;
+    position: relative;
+}
+
+.OpenedQuestionContent_textWrapper_76 {
+    width: 420rem;
+    height: calc(2rem + var(--iconHeight));
+    z-index: 3;
+}
+
+.OpenedQuestionContent_textAreaSize_96 {
+    width: 420rem;
+    height: calc(2rem + var(--iconHeight));
+}
+
+.OpenedQuestionContent_textAreaFont_8a {
+    line-height: 17rem;
+}
+
+.OpenedQuestionContent_imageBorder_41 {
+    width: 1024rem;
+    height: 600rem;
+    margin: -81rem 0 0 -302rem;
+    background: url('R.images.gui.maps.icons.mapbox.survey.template.image.borderShineMap') no-repeat center / contain;
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.OpenedQuestionContent_image_7d {
+    width: 418rem;
+    height: var(--iconHeight);
+    background: no-repeat center / contain;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.MultipleChoiceQuestionContent_base_7e {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1024rem;
+}
+    .mediaMedium .MultipleChoiceQuestionContent_base_7e {
+        width: 1200rem;
+}
+
+.MultipleChoiceQuestionContent_buttons_65 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.MultipleChoiceQuestionContent_toggle_d3 {
+    margin: 13rem 5rem;
+}
+
+.mediaMedium .MultipleChoiceQuestionContent_toggle_d3 {
+        margin: 15rem 10rem;
+}
+
+@keyframes App_fadeIn_c3 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes App_fadeInWithScale_0b {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes App_slideUp_10 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes App_slideLeft_7a {
+    0% {
+        opacity: 0;
+        transform: translateX(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.App_base_dd {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.App_container_d1 {
+    opacity: 0;
+    animation-name: App_fadeInWithScale_0b;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.App_bg_a7 {
+    position: absolute;
+    top: -6rem;
+    right: -6rem;
+    bottom: -6rem;
+    left: -6rem;
+    background: no-repeat 50% / cover;
+    filter: blur(3rem);
+    z-index: -1;
+}
+
+.App_blackout_f2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .8);
+}
+
+.App_blackout__emptyMap_d1 {
+        background-color: #000000;
+    }
+
+.App_close_00 {
+    position: absolute;
+    top: 40rem;
+    right: 40rem;
+}
+
+.App_header_7d {
+    width: 100%;
+    position: absolute;
+    top: 40rem;
+    left: 0;
+}
+
+.mediaMedium .App_header_7d {
+        top: 32rem;
+}
+
+.App_survey_f5 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.App_content_bb {
+    margin-top: -70rem;
+    z-index: 1;
+}
+
+.mediaLarge .App_content_bb {
+        margin-top: -30rem;
+}
+
+.App_footer_6c {
+    opacity: 0;
+    animation-name: App_slideUp_10;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    width: 100%;
+    position: absolute;
+    bottom: 50rem;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.mediaMedium .App_footer_6c {
+        bottom: 45rem;
+}
+
+.mediaLarge .App_footer_6c {
+        bottom: 80rem;
+}
+
+.App_footer__clickable_f0 {
+        pointer-events: auto;
+    }
+

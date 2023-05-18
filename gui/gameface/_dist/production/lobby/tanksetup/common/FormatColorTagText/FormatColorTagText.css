@@ -1,0 +1,23 @@
+.ShortenedText_base_fe {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 18rem;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity ease .2s;
+}
+
+    .ShortenedText_base__shown_af {
+        opacity: 1;
+    }
+
+.FormatColorTagText_base_10 {
+    display: flex;
+    position: relative;
+}
+
+.FormatColorTagText_text_85 {
+    flex: 1;
+}
+

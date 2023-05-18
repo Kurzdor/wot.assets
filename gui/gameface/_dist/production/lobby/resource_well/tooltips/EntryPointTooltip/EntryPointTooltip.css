@@ -1,0 +1,448 @@
+.Content_base_a5 {
+    width: 302rem;
+    height: 288rem;
+    border: 1rem solid #f2f2e61a;
+    border-radius: 2rem;
+    background: linear-gradient(180deg, rgba(51, 51, 41, .3) 0%, rgba(51, 51, 41, 0) 16%, rgba(51, 51, 41, 0) 88%, rgba(51, 51, 41, .1) 100%),
+                linear-gradient(0deg, #030200, #030200);
+}
+
+    .Content_base__regularRewardReceived_be,
+    .Content_base__topRewardReceived_12 {
+        height: 234rem;
+    }
+
+    .Content_base__forbidden_9e,
+    .Content_base__paused_33 {
+        height: auto;
+    }
+
+.Content_content_4a {
+    padding: 118rem 21rem 0;
+}
+
+.Content_topImage_2e {
+    width: 100%;
+    height: 170rem;
+    background: url('R.images.gui.maps.icons.resourceWell.tooltips.entryPoint.states.notStarted') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Content_topImage__forbidden_33 {
+            background-image: url('R.images.gui.maps.icons.resourceWell.tooltips.entryPoint.states.forbidden');
+        }
+
+.Content_topImage__paused_73 {
+            background-image: url('R.images.gui.maps.icons.resourceWell.tooltips.entryPoint.states.paused');
+        }
+
+.Content_topImage__regularRewardAvailable_d6 {
+            background-image: url('R.images.gui.maps.icons.resourceWell.tooltips.entryPoint.states.regularRewardAvailable');
+        }
+
+.Content_topImage__topRewardAvailable_d7 {
+            background-image: url('R.images.gui.maps.icons.resourceWell.tooltips.entryPoint.states.topRewardAvailable');
+        }
+
+.Content_topImage__noRewards_8a {
+            background-image: url('R.images.gui.maps.icons.resourceWell.tooltips.entryPoint.states.noRewards');
+        }
+
+.Content_topImage__regularRewardReceived_ae {
+            background-image: url('R.images.gui.maps.icons.resourceWell.tooltips.entryPoint.states.regularRewardReceived');
+        }
+
+.Content_topImage__topRewardReceived_fb {
+            background-image: url('R.images.gui.maps.icons.resourceWell.tooltips.entryPoint.states.topRewardReceived');
+        }
+
+.Content_title_fb {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    position: relative;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TimerEntryPointTooltip_base_5a {
+    display: flex;
+}
+
+.TimerEntryPointTooltip_text_17 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-right: 5rem;
+}
+
+.TimerEntryPointTooltip_lastUntil_25 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.TimerEntryPointTooltip_leftTime_d7 {
+    color: #FFDD99;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+}
+
+.TimerMainScreen_shineWrapper_3c {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.TimerMainScreen_shineBg_77 {
+    width: 462rem;
+    height: 260rem;
+    background: url('R.images.gui.maps.icons.resourceWell.timer.shine_timer_small') no-repeat center / contain;
+    opacity: 1;
+    position: relative;
+    top: -69rem;
+}
+
+.mediaMedium .TimerMainScreen_shineBg_77 {
+        width: 700rem;
+        height: 394rem;
+        background-image: url('R.images.gui.maps.icons.resourceWell.timer.shine_timer');
+        top: -122rem;
+}
+
+.TimerMainScreen_content_24 {
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.TimerMainScreen_text_9c,
+.TimerMainScreen_time_98 {
+    color: #E9E2BF;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-right: 5rem;
+}
+
+.mediaMedium .TimerMainScreen_text_9c, .mediaMedium .TimerMainScreen_time_98 {
+        font-size: 18rem;
+}
+
+.TimerMainScreen_content__daysLeft_35 .TimerMainScreen_text_9c, .TimerMainScreen_content__daysLeft_35 .TimerMainScreen_time_98 {
+        color: #F2F2F7;
+        opacity: .5;
+    }
+
+.TimerMainScreen_content__endingSoon_f0 .TimerMainScreen_text_9c, .TimerMainScreen_content__endingSoon_f0 .TimerMainScreen_time_98 {
+        color: #FFDD99;
+        text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+    }
+
+.TimerMainScreen_time_98 {
+    margin: 0;
+}
+
+.Timer_base_ca {
+    margin-top: 60rem;
+    position: relative;
+}
+
+    .Timer_base__entryPointTooltip_1d {
+        margin-top: 5rem;
+    }
+
+.NotStartedState_timerWrapper_8f {
+    display: flex;
+}
+
+.NotStartedState_timerIcon_f6 {
+    width: 37rem;
+    height: 37rem;
+    margin: -4rem -6rem 0 -10rem;
+    background: url('R.images.gui.maps.icons.resourceWell.tooltips.entryPoint.time_icon') no-repeat center / contain;
+}
+
+.NotStartedState_text_ab {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 15rem 0 10rem;
+}
+
+.NotStartedState_vehicleString_01 {
+    color: #E9E2BF;
+}
+
+.Counter_base_8c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70rem;
+}
+    .mediaMedium .Counter_base_8c {
+        margin-top: -80rem;
+}
+    .mediaLarge .Counter_base_8c {
+        margin-top: -59rem;
+}
+
+.Counter_base_8c.Counter_base__entryPointTooltip_2f {
+    margin-top: -59rem;
+}
+
+.Counter_counterGlow_ae {
+    background: url('R.images.gui.maps.icons.resourceWell.counter_glow') no-repeat center / contain;
+    position: absolute;
+    pointer-events: none;
+}
+
+.Counter_base__mainScreen_aa .Counter_counterGlow_ae {
+        width: 488rem;
+        height: 108rem;
+        top: -65rem;
+    }
+
+.mediaMedium .Counter_base__mainScreen_aa .Counter_counterGlow_ae {
+            top: -75rem;
+}
+
+.mediaLarge .Counter_base__mainScreen_aa .Counter_counterGlow_ae {
+            top: -63rem;
+}
+
+.Counter_base__entryPointTooltip_2f .Counter_counterGlow_ae {
+        width: 300rem;
+        height: 168rem;
+        top: -10rem;
+    }
+
+.Counter_counterBg_d9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('R.images.gui.maps.icons.resourceWell.counter_bg')  no-repeat center / contain;
+    position: relative;
+    pointer-events: none;
+}
+
+.Counter_base__mainScreen_aa .Counter_counterBg_d9 {
+        width: 310rem;
+        height: 200rem;
+        top: -40rem;
+    }
+
+.mediaLarge .Counter_base__mainScreen_aa .Counter_counterBg_d9 {
+            top: -50rem;
+}
+
+.Counter_base__entryPointTooltip_2f .Counter_counterBg_d9 {
+        width: 100%;
+        height: 124rem;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+
+.Counter_counterNumber_8b {
+    pointer-events: auto;
+}
+
+.Counter_counterNumber__less_8b {
+        text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+    }
+
+.Counter_base__mainScreen_aa .Counter_counterNumber_8b {
+        color: #FFDD99;
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-top: -10rem;
+    }
+
+.mediaLarge .Counter_base__mainScreen_aa .Counter_counterNumber_8b {
+            font-size: 56rem;
+}
+
+.Counter_base__entryPointTooltip_2f .Counter_counterNumber_8b {
+        color: #FFDD99;
+        font-size: 28rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+.Counter_tanksOverText_72 {
+    opacity: .5;
+}
+
+.Counter_base__mainScreen_aa .Counter_tanksOverText_72 {
+        color: #E9E2BF;
+        font-size: 22rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-top: -10rem;
+    }
+
+.mediaMedium .Counter_base__mainScreen_aa .Counter_tanksOverText_72 {
+            color: #E9E2BF;
+            font-size: 28rem;
+            font-weight: 700;
+            line-height: 1.1;
+}
+
+.Counter_base__entryPointTooltip_2f .Counter_tanksOverText_72 {
+        color: #E9E2BF;
+        font-size: 28rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin: 0;
+    }
+
+.Counter_errorWrapper_a2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: auto;
+}
+
+.Counter_alertIcon_cf {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.resourceWell.alertIcon') no-repeat center / contain;
+    z-index: 1;
+}
+
+.Counter_errorLines_6e {
+    color: #FFDD99;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+    position: relative;
+    top: -23rem;
+}
+
+.RewardAvaiableState_timerWrapper_6e {
+    display: flex;
+    position: relative;
+}
+
+.RewardAvaiableState_timerIcon_7d {
+    width: 37rem;
+    height: 37rem;
+    margin: -4rem -6rem 0 -10rem;
+    background: url('R.images.gui.maps.icons.resourceWell.tooltips.entryPoint.time_icon') no-repeat center / contain;
+}
+
+.RewardAvaiableState_wrapper_2d {
+    position: relative;
+}
+
+.RewardAvaiableState_text_fb {
+    color: #FFDD99;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 18rem 0 30rem;
+    text-align: center;
+}
+
+.RewardReceivedState_base_bb {
+    width: 100%;
+    position: relative;
+}
+
+.RewardReceivedState_checkIcon_ee {
+    width: 16rem;
+    height: 16rem;
+    margin-top: 3rem;
+    background: url('R.images.gui.maps.icons.resourceWell.tooltips.entryPoint.check') no-repeat center / contain;
+}
+
+.RewardReceivedState_checkText_38 {
+    color: #80D43A;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    z-index: 1;
+}
+
+.RewardReceivedState_greenLight_96 {
+    width: 302rem;
+    height: 132rem;
+    background: url('R.images.gui.maps.icons.resourceWell.tooltips.entryPoint.footerGreenLight') no-repeat center / contain;
+    position: absolute;
+    bottom: -4rem;
+    left: -22rem;
+    z-index: 0;
+}
+
+.RewardReceivedState_wrapper_22 {
+    display: flex;
+    margin: 25rem 0 15rem;
+    position: relative;
+}
+
+.RewardReceivedState_timerWrapper_e7 {
+    display: flex;
+    position: relative;
+}
+
+.RewardReceivedState_timerIcon_60 {
+    width: 37rem;
+    height: 37rem;
+    margin: -4rem -6rem 0 -10rem;
+    background: url('R.images.gui.maps.icons.resourceWell.tooltips.entryPoint.time_icon') no-repeat center / contain;
+}
+
+.WarningState_base_a9 {
+    display: flex;
+    margin: 8rem 0 25rem;
+    position: relative;
+}
+
+.WarningState_alertIcon_41 {
+    width: 18rem;
+    height: 18rem;
+    background: url('R.images.gui.maps.icons.resourceWell.tooltips.entryPoint.alertIcon') no-repeat center / contain;
+}
+
+.WarningState_alertText_3a {
+    color: #EE7000;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem; /* border offset*/
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.TooltipDecorator_decoratorContent_de {
+    background-color: #000;
+}
+

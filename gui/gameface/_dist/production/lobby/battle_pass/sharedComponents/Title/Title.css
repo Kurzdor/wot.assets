@@ -1,0 +1,51 @@
+.Title_base_29 {
+    width: 100%;
+    min-width: 100vw;
+    margin: 0;
+    text-align: center;
+}
+
+.Title_chapter_74 {
+    color: #F2F2F7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 7rem;
+}
+
+.mediaLarge .Title_chapter_74 {
+        color: #F2F2F7;
+        font-size: 24rem;
+        font-weight: 700;
+        line-height: 1.2;
+}
+
+.Title_buyBPTitle_dd {
+    color: #F2F2F7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaLarge .Title_buyBPTitle_dd {
+        color: #F2F2F7;
+        font-size: 56rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.mediaExtraLarge .Title_buyBPTitle_dd {
+        color: #F2F2F7;
+        font-size: 73rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.Title_subTitle_52 {
+    color: #E9E2BF;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-top: 10rem;
+}
+

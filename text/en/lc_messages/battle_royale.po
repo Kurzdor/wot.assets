@@ -248,18 +248,6 @@ msgstr "Pyotr Lopakhin"
 msgid "commanderTooltip/vehicleDescription"
 msgstr "The special %(vehicle)s tank for Steel Hunter."
 
-msgid "equipment/berserk/active"
-msgstr "RAMPAGE!"
-
-msgid "equipment/healPoint/healed"
-msgstr "Restoring hit points"
-
-msgid "equipment/healPoint/healing"
-msgstr "Restoring hit points"
-
-msgid "equipment/repairPoint"
-msgstr "Repair Zone"
-
 msgid "fragPanel/squadsCount"
 msgstr "Platoons: %(squadsCount)s"
 
@@ -411,21 +399,6 @@ msgstr "Complete missions and receive valuable rewards."
 
 msgid "level_up/max_level_info/title"
 msgstr "New Daily Missions Available"
-
-msgid "loot/advanced"
-msgstr "Consumables"
-
-msgid "loot/airdrop"
-msgstr "Airdrop"
-
-msgid "loot/basic"
-msgstr "Supplies"
-
-msgid "loot/corpse"
-msgstr "Spoils of War"
-
-msgid "loot/multiple"
-msgstr "Combined Spoils of War: %(count)s"
 
 msgid "modeSelector/cycleIsComing"
 msgstr ""
@@ -673,6 +646,69 @@ msgstr "a minute"
 msgid "status/timeLeft/min"
 msgstr "%(min)s min"
 
+msgid "statusNotificationTimers/berserk/active"
+msgstr "RAMPAGE!"
+
+msgid "statusNotificationTimers/damagingCorrodingShot"
+msgstr "Acid corrodes the armor!"
+
+msgid "statusNotificationTimers/deathZone"
+msgstr "Zone is closed! Leave the zone or your vehicle will be destroyed!"
+
+msgid "statusNotificationTimers/deathZoneWarning"
+msgstr "Leave the danger zone!"
+
+msgid "statusNotificationTimers/fireCircle"
+msgstr "Mobility decreased!"
+
+msgid "statusNotificationTimers/halfOverturned"
+msgstr "Back on tracks..."
+
+msgid "statusNotificationTimers/healPoint/healed"
+msgstr "Restoring hit points"
+
+msgid "statusNotificationTimers/healPoint/healing"
+msgstr "Restoring hit points"
+
+msgid "statusNotificationTimers/hpRestoreOnDamage"
+msgstr "Converting damage"
+
+msgid "statusNotificationTimers/inspire/inspired"
+msgstr "Technical characteristics improved"
+
+msgid "statusNotificationTimers/loot/advanced"
+msgstr "Consumables"
+
+msgid "statusNotificationTimers/loot/airdrop"
+msgstr "Airdrop"
+
+msgid "statusNotificationTimers/loot/basic"
+msgstr "Supplies"
+
+msgid "statusNotificationTimers/loot/corpse"
+msgstr "Spoils of War"
+
+msgid "statusNotificationTimers/loot/multiple"
+msgstr "Combined Spoils of War: %(count)s"
+
+msgid "statusNotificationTimers/loot/pickup"
+msgstr "Collecting: %(lootType)s"
+
+msgid "statusNotificationTimers/repairPoint"
+msgstr "Repair Zone"
+
+msgid "statusNotificationTimers/shotPassion"
+msgstr "Surging fervor!"
+
+msgid "statusNotificationTimers/smoke/ally"
+msgstr "In smoke"
+
+msgid "statusNotificationTimers/smoke/damaging"
+msgstr "Our armor is corroding!"
+
+msgid "statusNotificationTimers/thunderStrike"
+msgstr "Mobility decreased!"
+
 msgid "techtree/body_armor"
 msgstr "Armor"
 
@@ -727,39 +763,6 @@ msgstr "Hit Points"
 msgid "techtree/turret_rotation_speed"
 msgstr "Rotation Speed"
 
-msgid "timersPanel/damagingCorrodingShot"
-msgstr "Acid corrodes the armor!"
-
-msgid "timersPanel/damagingSmoke"
-msgstr "Our armor is corroding!"
-
-msgid "timersPanel/deathZone"
-msgstr "Zone is closed! Leave the zone or your vehicle will be destroyed!"
-
-msgid "timersPanel/fireCircle"
-msgstr "Mobility decreased!"
-
-msgid "timersPanel/halfOverturned"
-msgstr "Back on tracks..."
-
-msgid "timersPanel/hpRestoreOnDamage"
-msgstr "Converting damage"
-
-msgid "timersPanel/inspired"
-msgstr "Technical characteristics improved"
-
-msgid "timersPanel/lootPickup"
-msgstr "Collecting: %(lootType)s"
-
-msgid "timersPanel/orangeZone"
-msgstr "Leave the Danger Zone!"
-
-msgid "timersPanel/shotPassion"
-msgstr "Surging fervor!"
-
-msgid "timersPanel/thunderStrike"
-msgstr "Mobility decreased!"
-
 msgid "tooltips/awards/achievement"
 msgstr "Medal"
 
@@ -794,7 +797,7 @@ msgid "tooltips/rentIcon/rent/footer"
 msgstr "Rent for: {time}"
 
 msgid "tooltips/rentIcon/rent/title"
-msgstr "Rent for 7 Days"
+msgstr "Rent for {days} Days"
 
 msgid "tooltips/rentIcon/testDrive/description"
 msgstr "After the test-drive period, the vehicle can be rented for a fee."
@@ -838,7 +841,7 @@ msgid "tournament/fightButton/notReady"
 msgstr "Not ready"
 
 msgid "tournament/fightButton/ready"
-msgstr "Ready"
+msgstr "Ready!"
 
 msgid "tournament/notification/NO_PLACES"
 msgstr "Unable to enter tournament. Error code: %(errorString)s"

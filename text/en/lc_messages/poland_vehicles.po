@@ -124,6 +124,12 @@ msgstr "CS-53 I"
 msgid "Chassis_Pl23_CS_53_2"
 msgstr "CS-53 II"
 
+msgid "Chassis_Pl24_56TP"
+msgstr "56TP"
+
+msgid "Chassis_Pl25_CS_52_C"
+msgstr "CS-53 II"
+
 msgid "Fug7A"
 msgstr "FuG 7"
 
@@ -132,6 +138,9 @@ msgstr "GTD"
 
 msgid "GTD_M1"
 msgstr "GTD-M1"
+
+msgid "GTD_M11"
+msgstr "GTD-M11"
 
 msgid "GTD_M2"
 msgstr "GTD-M2"
@@ -572,6 +581,55 @@ msgstr ""
 msgid "Pl23_CS_53_short"
 msgstr "CS-53"
 
+msgid "Pl24_56TP"
+msgstr "56TP"
+
+msgid "Pl24_56TP_descr"
+msgstr ""
+"The vehicle was developed in the 1950s. Using the scaling method, Polish "
+"engineers took the elements of a medium tank chassis as the base and "
+"adjusted those elements to a different weight category. They were guided by "
+"the Soviet T-54, which meant that some of the vehicle's components were "
+"similar to the first versions of the Soviet medium tank. As a result, it was "
+"an extremely interesting design with a rather low silhouette. However, it "
+"existed only in blueprints. Such a heavy vehicle would require too many "
+"resources of the Polish industry."
+
+msgid "Pl24_56TP_long_special"
+msgstr ""
+"This tank boasts an excellent armament: a 122 mm gun with fast aiming and "
+"depression angles of -9 degrees. However, its good gun handling parameters "
+"are counterbalanced by mediocre damage per minute. Its frontal armor cannot "
+"be called extraordinary, but this is compensated by good mobility."
+
+msgid "Pl24_56TP_short"
+msgstr "56TP"
+
+msgid "Pl24_56TP_short_special"
+msgstr "A great gun and good mobility"
+
+msgid "Pl25_CS_52_C"
+msgstr "CS-52 C"
+
+msgid "Pl25_CS_52_C_descr"
+msgstr ""
+"In order to replace the T-34-85, Poland started to develop a new medium tank "
+"based on available concepts of Soviet tank building and original ideas. One "
+"of the variants featured a 100 mm gun mounted on the CS-52 turret. However, "
+"in 1968, T-55 production was launched in the country, and the project was "
+"discontinued. No prototypes were built."
+
+msgid "Pl25_CS_52_C_long_special"
+msgstr ""
+"A Tier VIII Premium Polish medium tank that is an alternative version of the "
+"CS-52 LIS with a gas-turbine engine. All other characteristics are identical."
+
+msgid "Pl25_CS_52_C_short"
+msgstr "CS-52 C"
+
+msgid "Pl25_CS_52_C_short_special"
+msgstr "A versatile vehicle with a gas-turbine engine"
+
 msgid "Polski_FIAT_122BC"
 msgstr "Polski FIAT 122BC"
 
@@ -586,6 +644,9 @@ msgstr "RKD"
 
 msgid "RT10_26P"
 msgstr "10RT-26P"
+
+msgid "RT10_26P_A"
+msgstr "10RT-26PA"
 
 msgid "RTU_Jesion"
 msgstr "RTU \"Jesion\""
@@ -698,6 +759,12 @@ msgstr "CS-59"
 msgid "Turret_1_Pl23_CS_53"
 msgstr "CS-53"
 
+msgid "Turret_1_Pl24_56TP"
+msgstr "56TP"
+
+msgid "Turret_1_Pl25_CS_52_C"
+msgstr "CS 63 P"
+
 msgid "Turret_2_Pl05_50TP_Tyszkiewicza"
 msgstr "50TP Tyszkiewicza II"
 
@@ -752,6 +819,9 @@ msgstr "W12-5B"
 msgid "W_12_5_P"
 msgstr "W12-5P"
 
+msgid "W_12_5_P_1"
+msgstr "W12-5P-1"
+
 msgid "W_12_5_P_SH"
 msgstr "W12-5P MH"
 
@@ -794,8 +864,14 @@ msgstr "HEAT wz.62"
 msgid "_100mm_armata_wz_62_G4_SH"
 msgstr "100 mm armata wz.62"
 
+msgid "_100mm_armata_wz_62_P"
+msgstr "100 mm armata wz. 62 P."
+
 msgid "_100mm_haubica_wz_14_19"
 msgstr "100 mm haubica wz. 14/19"
+
+msgid "_100mm_pocisk_kumulacyjny_w43"
+msgstr "Pocisk kumulacyjny w.43"
 
 msgid "_100mm_pocisk_kumulacyjny_w49"
 msgstr "Pocisk kumulacyjny w.49"
@@ -808,6 +884,9 @@ msgstr "Pocisk przeciwpancerny wz.14/19"
 
 msgid "_100mm_pocisk_wybuchowy"
 msgstr "Pocisk wybuchowy wz.14/19"
+
+msgid "_100mm_slpgr_m_43"
+msgstr "slpgr m/43 (2)"
 
 msgid "_100mm_slpgr_m_49"
 msgstr "slpgr m/49"
@@ -872,11 +951,20 @@ msgstr "BR-471B"
 msgid "_122mm_BR-471_D"
 msgstr "BR-471D"
 
+msgid "_122mm_BR-471_DM"
+msgstr "BR-471DM"
+
+msgid "_122mm_BR-471_M"
+msgstr "BR-471M"
+
 msgid "_122mm_D_25T_P"
 msgstr "122 mm D-25T"
 
 msgid "_122mm_OF-471"
 msgstr "OF-471"
+
+msgid "_122mm_OF-471M"
+msgstr "OF-471M"
 
 msgid "_122mm_UBR-471P_P"
 msgstr "WBR-471B"
@@ -895,6 +983,9 @@ msgstr "WOF-471P"
 
 msgid "_122mm_UOF-471_P"
 msgstr "OF-471P"
+
+msgid "_122mm_armata_wz_56"
+msgstr "122 mm armata wz. 56"
 
 msgid "_122mm_wz_43_50_G6_APCR_SH"
 msgstr "APCR wz.43/50"

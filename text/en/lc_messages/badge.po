@@ -224,6 +224,52 @@ msgstr ""
 "Be a member of a clan that is in the top 10% of clans in the Iron Age event "
 "on the Global Map."
 
+msgid "badge_124"
+msgstr "Onslaught Champion"
+
+msgid "badge_124_descr"
+msgstr ""
+"Awarded for achieving the Champion rank in Season of the Griffin in "
+"Onslaught mode."
+
+msgid "badge_125"
+msgstr "Onslaught Legend"
+
+msgid "badge_125_descr"
+msgstr ""
+"Awarded for achieving the Legend rank in Season of the Griffin in Onslaught "
+"mode."
+
+msgid "badge_126"
+msgstr "Legend of the Griffin"
+
+msgid "badge_126_descr"
+msgstr ""
+"Awarded for achieving the Legend rank in Season of the Griffin in Onslaught "
+"mode."
+
+msgid "badge_127"
+msgstr "M Is for Magic"
+
+msgid "badge_127_descr"
+msgstr "Complete all missions in the Pumpkin Bash event."
+
+msgid "badge_128"
+msgstr "Winter Is Coming"
+
+msgid "badge_128_descr"
+msgstr ""
+"For fulfilling the respective conditions during Holiday Ops 2023. This badge "
+"replaces the one earned in the previous year."
+
+msgid "badge_129"
+msgstr "War Gods Hero"
+
+msgid "badge_129_descr"
+msgstr ""
+"Be a member of a clan that is in the top 10% of clans in the War Gods event "
+"on the Global Map."
+
 msgid "badge_12_descr"
 msgstr ""
 "Can be received for completing enough missions to earn the T28 HTC tank "
@@ -234,6 +280,37 @@ msgstr "T28 HTC, Class II"
 
 msgid "badge_13"
 msgstr "T28 HTC Badge Class I"
+
+msgid "badge_130"
+msgstr "Steam Veteran"
+
+msgid "badge_130_descr"
+msgstr ""
+"Awarded for completing special missions during various events on Steam."
+
+msgid "badge_131"
+msgstr "Through the Thorns"
+
+msgid "badge_131_descr"
+msgstr ""
+"Awarded for achieving the Champion rank in Season of the Crimson Griffin in "
+"Onslaught mode."
+
+msgid "badge_132"
+msgstr "To the Stars"
+
+msgid "badge_132_descr"
+msgstr ""
+"Awarded for achieving the Legend rank in Season of the Crimson Griffin in "
+"Onslaught mode."
+
+msgid "badge_133"
+msgstr "The Last of the Griffins"
+
+msgid "badge_133_descr"
+msgstr ""
+"Awarded for achieving the Legend rank in Season of the Crimson Griffin in "
+"Onslaught mode."
 
 msgid "badge_13_descr"
 msgstr ""
@@ -958,6 +1035,12 @@ msgstr "Badges show your achievements in the game to players from both teams."
 
 msgid "badgesPage/header/suffixSetting/label"
 msgstr "Display badge:"
+
+msgid "suffix/badge_126"
+msgstr "Legend of the Griffin"
+
+msgid "suffix/badge_133"
+msgstr "The Last of the Griffins"
 
 msgid "suffix/badge_56"
 msgstr "Alpha Tester"

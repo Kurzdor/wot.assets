@@ -131,6 +131,12 @@ msgstr "Show/hide rental vehicles for Global Map and Stronghold battles."
 msgid "tooltip/clanRented/header"
 msgstr "Rental Vehicles for Clan Battles"
 
+msgid "tooltip/comp7/body"
+msgstr "Show/hide vehicles suitable for Onslaught."
+
+msgid "tooltip/comp7/header"
+msgstr "Vehicles for Onslaught mode"
+
 msgid "tooltip/crystals/body"
 msgstr "Show/hide vehicles available for earning bonds."
 
@@ -156,6 +162,12 @@ msgstr "Show/hide only primary vehicles."
 
 msgid "tooltip/favorite/header"
 msgstr "Primary Vehicles"
+
+msgid "tooltip/funRandom/body"
+msgstr "Show/hide suitable vehicles for Arcade Cabinet mode."
+
+msgid "tooltip/funRandom/header"
+msgstr "Arcade Vehicles"
 
 msgid "tooltip/gameMode/body"
 msgstr "Check the box to view suitable vehicles for the %(battleType)s mode."

@@ -1,0 +1,1875 @@
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .TextButton_base__right_39 {
+        flex-direction: row-reverse;
+    }
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+    .TextButton_icon__forward_59 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.back');
+        transform: translateY(1rem);
+    }
+.TextButton_icon__forward_59 {
+        transform: rotate(180deg) translateY(1rem);
+    }
+.TextButton_icon__close_53 {
+        margin: -1rem 0;
+        background-image: url('R.images.gui.maps.icons.components.text_button.close');
+    }
+.TextButton_icon__info_33 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.info');
+    }
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+    .TextButton_icon__forward_59 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+    }
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+    }
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+    }
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_glow_a4 {
+        opacity: 0;
+    }
+.TextButton_caption_82 {
+    position: relative;
+    transition: color .16s, text-shadow .16s;
+}
+.TextButton_caption__back_b9,
+    .TextButton_caption__forward_4e,
+    .TextButton_caption__close_36 {
+        color: #FFDD99;
+        text-shadow: 0 0 10rem rgba(255,42,0, 1),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4);
+    }
+.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
+            color: #fffa9f;
+        }
+.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
+            color: #FFDD99;
+        }
+.TextButton_caption__info_23 {
+        padding: 0 5rem;
+        color: #CCFFFF;
+        text-shadow: 0 0 12rem rgba(31,68,255, .8),
+            0 0 8rem #00eaff;
+    }
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+            color: #e3ffff;
+            text-shadow: 0 0 12rem rgba(31,68,255, .8),
+                0 0 12rem rgba(0,234,255, 1),
+                0 0 8rem #00eaff;
+        }
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+            color: #CCFFFF;
+            text-shadow: 0 0 12rem rgba(31,68,255, .6),
+                0 0 8rem #00eaff;
+        }
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+        margin-left: 8rem;
+    }
+.TextButton_base__right_39 .TextButton_goto_e7 {
+        margin-right: 8rem;
+    }
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity .16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+        left: -4rem;
+    }
+.TextButton_base__right_39 .TextButton_shine_e2 {
+        right: -4rem;
+        transform: rotate(180deg);
+    }
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_shine_e2 {
+        opacity: 0;
+    }
+
+@keyframes App_fadeOut_2f {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+@keyframes App_fadeIn_c9 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes App_fadeInWithScale_48 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes App_slideUp_b3 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes App_slideUpCenter_be {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes App_blink_e5 {
+    0% {
+        filter: brightness(1);
+    }
+
+    16% {
+        filter: brightness(3);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
+}
+.App_base_97 {
+    opacity: 0;
+    animation: App_fadeIn_c9 .4s cubic-bezier(.47, 0, .75, .72) .45s forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #131417 url('R.images.gui.maps.icons.resourceWell.backgrounds.mainBg') no-repeat center;
+    background-size: 1364rem 712rem;
+    overflow: hidden;
+}
+.mediaSmall .App_base_97 {
+        background-size: 1766rem 922rem;
+}
+.mediaMedium .App_base_97 {
+        background-size: 2290rem 1194rem;
+}
+.mediaLarge .App_base_97 {
+        background-size: 2700rem 1408rem;
+}
+.mediaExtraLarge .App_base_97 {
+        background-size: 3640rem 1900rem;
+}
+.App_animationBg_5b {
+    opacity: 0;
+    animation: App_fadeIn_c9 .4s cubic-bezier(.47, 0, .75, .72) 0s forwards;
+    width: 100%;
+    height: 100%;
+    background-color: #151619;
+    position: absolute;
+    z-index: -1;
+}
+.App_additionalBg_ab {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.resourceWell.backgrounds.additionalBg') no-repeat center / cover;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+.App_aboutButton_6c {
+    position: absolute;
+    top: 55rem;
+    left: 40rem;
+    z-index: 2;
+}
+.App_close_f4 {
+    position: absolute;
+    top: 60rem;
+    right: 50rem;
+    z-index: 3;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.EventInfo_base_7d {
+    margin-top: 5rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+    .mediaLarge .EventInfo_base_7d {
+        margin-top: 10rem;
+}
+    .mediaExtraLarge .EventInfo_base_7d {
+        margin: 25rem;
+}
+
+.EventInfo_title_d4 {
+    color: #F2F2F7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 5rem;
+}
+
+.mediaMedium .EventInfo_title_d4 {
+        color: #F2F2F7;
+        font-size: 56rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin: 0;
+}
+
+.mediaLarge .EventInfo_title_d4 {
+        color: #F2F2F7;
+        font-size: 73rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.mediaExtraLarge .EventInfo_title_d4 {
+        color: #F2F2F7;
+        font-size: 144rem;
+        font-weight: 700;
+        line-height: 1;
+}
+
+.EventInfo_description_c5 {
+    color: #F2F2F7;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    opacity: .75;
+}
+
+.mediaMedium .EventInfo_description_c5 {
+        color: #F2F2F7;
+        font-size: 20rem;
+        font-weight: 400;
+        line-height: 1.2;
+}
+
+.mediaExtraLarge .EventInfo_description_c5 {
+        color: #F2F2F7;
+        font-size: 24rem;
+        font-weight: 400;
+        line-height: 1.2;
+}
+
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    position: relative;
+    cursor: pointer;
+}
+
+    .CButton_base__main_42,
+    .CButton_base__primary_7f,
+    .CButton_base__primaryGreen_6f,
+    .CButton_base__primaryRed_ec,
+    .CButton_base__secondary_50 {
+        background-size: 100% 100%;
+    }
+
+    .CButton_base__main_42 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+
+    .CButton_base__primary_7f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+
+    .CButton_base__primaryGreen_6f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+
+    .CButton_base__primaryRed_ec {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+
+    .CButton_base__secondary_50 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+
+    .CButton_base__ghost_ed {
+        border-radius: 3rem;
+        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
+            0 0 0 1rem rgba(255,255,255, .15) inset;
+        background-color: rgba(0,0,0, .15);
+    }
+
+    .CButton_base__extraSmall_27 {
+        min-height: 17rem;
+        padding: 0 16rem;
+    }
+
+    .CButton_base__small_df,
+    .CButton_base__medium_74 {
+        padding: 0 20rem;
+    }
+
+    .CButton_base__small_df {
+        min-height: 18rem;
+    }
+
+    .CButton_base__medium_74 {
+        min-height: 32rem;
+    }
+
+    .CButton_base__disabled_d9 {
+        cursor: default;
+    }
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+.CButton_base__primary_7f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+.CButton_base__secondary_50 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow .16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+        border-radius: 2rem;
+        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
+    }
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+        transition: opacity .16s ease-in-out;
+    }
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+        opacity: 1;
+    }
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
+        background-color: rgba(8,6,0, .18);
+        background-image: none;
+    }
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+        opacity: 1;
+    }
+.CButton_stateDisabled_54 {
+    background-color: rgba(0,0,0, .25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+        opacity: 1;
+    }
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: .03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang=ja],
+    .CButton_content_cc[lang=ko],
+    .CButton_content_cc[lang=zh_tw],
+    .CButton_content_cc[lang=zh_sg],
+    .CButton_content_cc[lang=zh_cn],
+    .CButton_content_cc[lang=th] {
+        font-weight: 400;
+    }
+.CButton_base__main_42 .CButton_content_cc,
+    .CButton_base__primaryRed_ec .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #600;
+    }
+.CButton_base__secondary_50 .CButton_content_cc {
+        color: rgba(254,254,236, .75);
+    }
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #1c2502;
+    }
+.CButton_base__extraSmall_27 .CButton_content_cc {
+        font-size: 12rem;
+    }
+.CButton_base__small_df .CButton_content_cc {
+        font-size: 14rem;
+    }
+.CButton_base__medium_74 .CButton_content_cc {
+        font-size: 15rem;
+    }
+.CButton_base__disabled_d9 .CButton_content_cc {
+        opacity: .6;
+    }
+
+.NoVehiclesState_footerTitle_e9 {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 15rem;
+    text-align: center;
+}
+    .mediaMedium .NoVehiclesState_footerTitle_e9 {
+        color: #E9E2BF;
+        font-size: 22rem;
+        font-weight: 700;
+        line-height: 1.2;
+}
+
+.NoVehiclesState_footerSubtitle_3e {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.mediaMedium .NoVehiclesState_footerSubtitle_3e {
+        color: #8C8C7E;
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
+}
+
+.NoVehiclesState_buttonsBlock_83 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem;
+}
+
+.NoVehiclesState_activeState_49 .NoVehiclesState_buttonsBlock_83 {
+        margin: 0;
+    }
+
+.NoVehiclesState_button_86 {
+    min-width: 200rem;
+    z-index: 2;
+}
+
+.Footer_base_41 {
+    width: 950rem;
+    height: 140rem;
+    background: url('R.images.gui.maps.icons.resourceWell.footer.footer_shadow_bg_small') no-repeat 50% 100% / cover;
+    text-align: center;
+    position: absolute;
+    bottom: -25rem;
+    z-index: 3;
+}
+    .mediaMedium .Footer_base_41 {
+        width: 1080rem;
+        height: 160rem;
+        background-image: url('R.images.gui.maps.icons.resourceWell.footer.footer_shadow_bg');
+        bottom: -15rem;
+}
+    .Footer_base__active_91 {
+        bottom: -5rem;
+    }
+    .mediaMedium .Footer_base__active_91 {
+            bottom: -10rem;
+}
+
+.Footer_topLip_1c {
+    width: 828rem;
+    height: 26rem;
+    background: url('R.images.gui.maps.icons.resourceWell.footer.footer_lipBig_small') no-repeat center / cover;
+    position: absolute;
+    top: -19rem;
+    z-index: 1;
+}
+
+.mediaMedium .Footer_topLip_1c {
+        width: 958rem;
+        background-image: url('R.images.gui.maps.icons.resourceWell.footer.footer_lipBig');
+        top: -21rem;
+}
+
+.Footer_topLightline_24 {
+    width: 950rem;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.resourceWell.footer.footer_lite_line') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.mediaMedium .Footer_topLightline_24 {
+        width: 1080rem;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBar_base_45 {
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+.ProgressBar_base__small_df {
+        height: 2rem;
+    }
+.ProgressBar_background_51 {
+    width: 100%;
+    max-width: 8001px;
+    height: 100%;
+    background-image: var(--progress-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ProgressBar_background__small_46 {
+        height: 2rem;
+    }
+.ProgressBar_lineWrapper_6a {
+    display: flex;
+    flex: 1;
+}
+
+
+.ProgressBarBlink_base_24 {
+    width: 60rem;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    pointer-events: none;
+}
+
+    .ProgressBarBlink_base__small_0f {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressLineImpose_base_80 {
+    max-width: 8001px;
+    height: 100%;
+    background-color: var(--progress-line-base);
+    position: relative;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressLineImpose_base__disabled_cc {
+        background-color: var(--progress-line-disabled);
+    }
+.ProgressLineImpose_base__finished_d4 {
+        background-color: var(--progress-line-finished);
+    }
+.ProgressLineImpose_base__withoutBounce_56 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressLineImpose_pattern_1c {
+    max-width: 8001px;
+    background-image: var(--progress-pattern-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-disabled);
+        left: 0;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-finished);
+    }
+.ProgressLineImpose_gradient_35 {
+    max-width: 8001px;
+    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
+        display: none;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
+        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
+    }
+.ProgressLineImpose_glow_a5 {
+    width: 60rem;
+    max-width: 8001px;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.ProgressLineImpose_glow__left_d8 {
+        left: 1rem;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
+    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+        display: none;
+    }
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaSimple_base_6c {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ProgressBarDeltaSimple_delta_99 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-property: width, transform;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaGrow_base_7e {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressBarDeltaGrow_glow_68 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+
+.ActiveState_progressionWrapper_b9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+}
+    .mediaMedium .ActiveState_progressionWrapper_b9 {
+        padding: 0;
+}
+
+.ActiveState_topLine_57 {
+    display: flex;
+    justify-content: center;
+    width: 870rem;
+    position: relative;
+}
+
+.mediaMedium .ActiveState_topLine_57 {
+        width: 1000rem;
+}
+
+.ActiveState_smallTitle_06 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+}
+
+.mediaLarge .ActiveState_smallTitle_06 {
+        font-size: 16rem;
+        top: 15rem;
+}
+
+.ActiveState_progressionBg_a2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 950rem;
+    height: 17rem;
+    background: url('R.images.gui.maps.icons.resourceWell.footer.progressbar_bg_small') no-repeat center / contain;
+}
+
+.mediaMedium .ActiveState_progressionBg_a2 {
+        width: 1080rem;
+        background-image: url('R.images.gui.maps.icons.resourceWell.footer.progressbar_bg');
+}
+
+.ActiveState_progressBar_24 {
+    width: 870rem;
+    text-align: left;
+    position: relative;
+    top: -1rem;
+}
+
+.mediaMedium .ActiveState_progressBar_24 {
+        width: 1000rem;
+}
+
+.ActiveState_minValue_aa {
+    position: relative;
+    left: -1rem;
+}
+
+.ActiveState_scaleValueWrapper_91 {
+    color: #E9E2BF;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    justify-content: space-between;
+    width: 870rem;
+    opacity: .3;
+}
+
+.mediaMedium .ActiveState_scaleValueWrapper_91 {
+        width: 1000rem;
+}
+
+.ActiveState_percentWrapper_80 {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.mediaMedium .ActiveState_percentWrapper_80 {
+        margin-top: 15rem;
+}
+
+.ActiveState_activePercent_53 {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    position: relative;
+    left: -3rem;
+}
+
+.mediaMedium .ActiveState_activePercent_53 {
+        left: 7rem;
+}
+
+.ActiveState_buttonsBlock_1b {
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem;
+}
+
+.ActiveState_activeState_78 .ActiveState_buttonsBlock_1b {
+        margin: 0;
+    }
+
+.ActiveState_button_b9 {
+    min-width: 200rem;
+    z-index: 2;
+}
+
+.ActiveState_activeState_78 .ActiveState_button_b9 {
+        margin: 0 5rem;
+    }
+
+.ActiveState_footerDescr_d4 {
+    color: #595950;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.ActiveState_buttonReturnBlock_f3 {
+    display: flex;
+    position: relative;
+}
+
+.ActiveState_buttonReturnTooltipText_54 {
+    color: #E9E2BF;
+}
+
+.ActiveState_iconInfo_54 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.resourceWell.icon_info') no-repeat center / contain;
+}
+
+.mediaMedium .ActiveState_iconInfo_54 {
+        margin-top: 4rem;
+}
+
+.ActiveState_iconInfoEmpty_b8 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.Forbidden_footerTitle_8a {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 15rem;
+    text-align: center;
+}
+    .mediaMedium .Forbidden_footerTitle_8a {
+        color: #E9E2BF;
+        font-size: 22rem;
+        font-weight: 700;
+        line-height: 1.2;
+}
+
+.Forbidden_footerSubtitle_f8 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.mediaMedium .Forbidden_footerSubtitle_f8 {
+        color: #8C8C7E;
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
+}
+
+.Forbidden_buttonsBlock_64 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem;
+}
+
+.Forbidden_button_b5 {
+    min-width: 200rem;
+    z-index: 2;
+}
+
+.NoProgress_footerTitle_57 {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 15rem;
+    text-align: center;
+}
+    .mediaMedium .NoProgress_footerTitle_57 {
+        color: #E9E2BF;
+        font-size: 22rem;
+        font-weight: 700;
+        line-height: 1.2;
+}
+
+.NoProgress_buttonsBlock_bb {
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem;
+}
+
+.NoProgress_button_46 {
+    min-width: 200rem;
+    z-index: 2;
+}
+
+.NoProgress_footerDescr_5f {
+    color: #595950;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.mediaMedium .NoProgress_footerDescr_5f {
+        margin-top: 15rem;
+}
+
+.Preview_base_1f {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    height: 60rem;
+    opacity: .7;
+    position: relative;
+    transition: opacity .25s ease-out;
+    cursor: pointer;
+}
+
+    .Preview_base__hovered_ee {
+        opacity: 1;
+    }
+.Preview_icon_f3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('R.images.gui.maps.icons.library.previewVehicle') no-repeat center / contain;
+    transition: opacity .25s ease-out;
+    pointer-events: none;
+}
+.Preview_icon__small_a1 {
+        width: 70rem;
+        height: 70rem;
+    }
+.Preview_icon__normal_5c {
+        width: 100rem;
+        height: 100rem;
+    }
+.Preview_base__mouseDown_d0 .Preview_icon_f3 {
+        opacity: .7;
+    }
+.Preview_label_2e {
+    color: #FFDD99;
+    font-size: 14rem;
+    line-height: 1.25;
+    text-shadow: 0 0 4rem rgba(255,127,0, .25),
+        0 0 8rem #ff2a00,
+        0 0 12rem #e52;
+    opacity: 0;
+    position: absolute;
+    bottom: -8rem;
+    transform: translateY(-5rem);
+    transition: transform .25s ease-out,
+        opacity .25s ease-out;
+}
+.Preview_base__visibleLabel_92 .Preview_label_2e,
+    .Preview_base__hovered_ee .Preview_label_2e {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+
+.VehicleInfo_base_28 {
+    display: flex;
+    align-items: center;
+}
+
+    .VehicleInfo_base__intro_e5 {
+        color: #FFDD99;
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+    .mediaMedium .VehicleInfo_base__intro_e5 {
+            color: #FFDD99;
+            font-size: 24rem;
+            font-weight: 700;
+            line-height: 1.2;
+}
+
+    .mediaLarge .VehicleInfo_base__intro_e5 {
+            color: #FFDD99;
+            font-size: 28rem;
+            font-weight: 700;
+            line-height: 1.1;
+}
+
+    .mediaExtraLarge .VehicleInfo_base__intro_e5 {
+            color: #FFDD99;
+            font-size: 36rem;
+            font-weight: 700;
+            line-height: 1.1;
+}
+
+    .VehicleInfo_base__progression_85 {
+        color: #CED9D9;
+        font-size: 28rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+    .mediaLarge .VehicleInfo_base__progression_85 {
+            font-size: 36rem;
+}
+
+.VehicleInfo_type_e7 {
+    position: relative;
+}
+
+.VehicleInfo_type_e7[lang=ko] {
+        transform: translateY(-2rem);
+    }
+
+.VehicleInfo_base__intro_e5 .VehicleInfo_type_e7 {
+        width: 36rem;
+        transform: translateY(2rem);
+    }
+
+.VehicleInfo_base__intro_e5 .VehicleInfo_type_e7[lang=ko] {
+            transform: translateY(-2rem);
+        }
+
+.mediaMedium .VehicleInfo_base__intro_e5 .VehicleInfo_type_e7 {
+            width: 50rem;
+            transform: translateY(4rem);
+}
+
+.mediaMedium .VehicleInfo_base__intro_e5 .VehicleInfo_type_e7[lang=ko] {
+                transform: translateY(-2rem);
+            }
+
+.mediaExtraLarge .VehicleInfo_base__intro_e5 .VehicleInfo_type_e7 {
+            width: 55rem;
+}
+
+.VehicleInfo_base__award_e7 .VehicleInfo_type_e7 {
+        width: 50rem;
+        transform: translateY(3rem);
+    }
+
+.VehicleInfo_base__award_e7 .VehicleInfo_type_e7[lang=ko] {
+            transform: translateY(-2rem);
+        }
+
+.mediaLarge .VehicleInfo_base__award_e7 .VehicleInfo_type_e7 {
+            width: 60rem;
+            transform: translateY(4rem);
+}
+
+.mediaLarge .VehicleInfo_base__award_e7 .VehicleInfo_type_e7[lang=ko] {
+                transform: translateY(-2rem);
+            }
+
+.VehicleInfo_base__progression_85 .VehicleInfo_type_e7 {
+        width: 50rem;
+        transform: translateY(2rem);
+    }
+
+.VehicleInfo_base__progression_85 .VehicleInfo_type_e7[lang=ko] {
+            transform: translateY(-2rem);
+        }
+
+.mediaLarge .VehicleInfo_base__progression_85 .VehicleInfo_type_e7[lang=ko] {
+                transform: translateY(-4rem);
+            }
+
+.VehicleInfo_ico_c9 {
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.VehicleInfo_base__intro_e5 .VehicleInfo_ico_c9 {
+        width: 56rem;
+        height: 56rem;
+    }
+
+.mediaMedium .VehicleInfo_base__intro_e5 .VehicleInfo_ico_c9 {
+            width: 83rem;
+            height: 74rem;
+}
+
+.VehicleInfo_base__award_e7 .VehicleInfo_ico_c9 {
+        width: 74rem;
+        height: 74rem;
+    }
+
+.mediaLarge .VehicleInfo_base__award_e7 .VehicleInfo_ico_c9 {
+            width: 84rem;
+            height: 84rem;
+}
+
+.VehicleInfo_base__progression_85 .VehicleInfo_ico_c9 {
+        width: 70rem;
+        height: 70rem;
+    }
+
+.Counter_base_8c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70rem;
+}
+    .mediaMedium .Counter_base_8c {
+        margin-top: -80rem;
+}
+    .mediaLarge .Counter_base_8c {
+        margin-top: -59rem;
+}
+
+.Counter_base_8c.Counter_base__entryPointTooltip_2f {
+    margin-top: -59rem;
+}
+
+.Counter_counterGlow_ae {
+    background: url('R.images.gui.maps.icons.resourceWell.counter_glow') no-repeat center / contain;
+    position: absolute;
+    pointer-events: none;
+}
+
+.Counter_base__mainScreen_aa .Counter_counterGlow_ae {
+        width: 488rem;
+        height: 108rem;
+        top: -65rem;
+    }
+
+.mediaMedium .Counter_base__mainScreen_aa .Counter_counterGlow_ae {
+            top: -75rem;
+}
+
+.mediaLarge .Counter_base__mainScreen_aa .Counter_counterGlow_ae {
+            top: -63rem;
+}
+
+.Counter_base__entryPointTooltip_2f .Counter_counterGlow_ae {
+        width: 300rem;
+        height: 168rem;
+        top: -10rem;
+    }
+
+.Counter_counterBg_d9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('R.images.gui.maps.icons.resourceWell.counter_bg')  no-repeat center / contain;
+    position: relative;
+    pointer-events: none;
+}
+
+.Counter_base__mainScreen_aa .Counter_counterBg_d9 {
+        width: 310rem;
+        height: 200rem;
+        top: -40rem;
+    }
+
+.mediaLarge .Counter_base__mainScreen_aa .Counter_counterBg_d9 {
+            top: -50rem;
+}
+
+.Counter_base__entryPointTooltip_2f .Counter_counterBg_d9 {
+        width: 100%;
+        height: 124rem;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+
+.Counter_counterNumber_8b {
+    pointer-events: auto;
+}
+
+.Counter_counterNumber__less_8b {
+        text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+    }
+
+.Counter_base__mainScreen_aa .Counter_counterNumber_8b {
+        color: #FFDD99;
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-top: -10rem;
+    }
+
+.mediaLarge .Counter_base__mainScreen_aa .Counter_counterNumber_8b {
+            font-size: 56rem;
+}
+
+.Counter_base__entryPointTooltip_2f .Counter_counterNumber_8b {
+        color: #FFDD99;
+        font-size: 28rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+.Counter_tanksOverText_72 {
+    opacity: .5;
+}
+
+.Counter_base__mainScreen_aa .Counter_tanksOverText_72 {
+        color: #E9E2BF;
+        font-size: 22rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-top: -10rem;
+    }
+
+.mediaMedium .Counter_base__mainScreen_aa .Counter_tanksOverText_72 {
+            color: #E9E2BF;
+            font-size: 28rem;
+            font-weight: 700;
+            line-height: 1.1;
+}
+
+.Counter_base__entryPointTooltip_2f .Counter_tanksOverText_72 {
+        color: #E9E2BF;
+        font-size: 28rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin: 0;
+    }
+
+.Counter_errorWrapper_a2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: auto;
+}
+
+.Counter_alertIcon_cf {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.resourceWell.alertIcon') no-repeat center / contain;
+    z-index: 1;
+}
+
+.Counter_errorLines_6e {
+    color: #FFDD99;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+    position: relative;
+    top: -23rem;
+}
+
+.Tank_base_3c {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Tank_tankWrapper_15 {
+    width: 1364rem;
+    height: 712rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.mediaSmall .Tank_tankWrapper_15 {
+        width: 1766rem;
+        height: 922rem;
+}
+
+.mediaMedium .Tank_tankWrapper_15 {
+        width: 2290rem;
+        height: 1194rem;
+}
+
+.mediaLarge .Tank_tankWrapper_15 {
+        width: 2700rem;
+        height: 1408rem;
+}
+
+.mediaExtraLarge .Tank_tankWrapper_15 {
+        width: 3640rem;
+        height: 1900rem;
+}
+
+.Tank_tankWrapper__withStyle_e9 {
+        background-image: url('R.images.gui.maps.icons.resourceWell.tanksBg.style__noactive');
+    }
+
+.Tank_base__active_3b .Tank_tankWrapper__withStyle_e9 {
+            background-image: url('R.images.gui.maps.icons.resourceWell.tanksBg.style__active');
+        }
+
+.Tank_tankWrapper__withoutStyle_cf {
+        background-image: url('R.images.gui.maps.icons.resourceWell.tanksBg.withoutStyle__noactive');
+    }
+
+.Tank_base__active_3b .Tank_tankWrapper__withoutStyle_cf {
+            background-image: url('R.images.gui.maps.icons.resourceWell.tanksBg.withoutStyle__active');
+        }
+
+.Tank_label_de {
+    width: 200rem;
+    text-align: center;
+}
+
+.Tank_tankLight_e1 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Tank_tankLight__withStyle_1b {
+        background-image: url('R.images.gui.maps.icons.resourceWell.tanksBg.leftShine');
+    }
+
+.Tank_tankLight__withoutStyle_f5 {
+        background-image: url('R.images.gui.maps.icons.resourceWell.tanksBg.rightShine');
+    }
+
+.Tank_tankInfoWrapper_60 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1024rem;
+    height: 100%;
+}
+
+.mediaSmall .Tank_tankInfoWrapper_60 {
+        max-width: 1366rem;
+}
+
+.mediaMedium .Tank_tankInfoWrapper_60 {
+        max-width: 1600rem;
+}
+
+.mediaLarge .Tank_tankInfoWrapper_60 {
+        max-width: 1920rem;
+}
+
+.mediaExtraLarge .Tank_tankInfoWrapper_60 {
+        max-width: 2560rem;
+}
+
+.Tank_dustAnimation_89 {
+    width: 1070rem;
+    height: 890rem;
+    position: absolute;
+    top: -207rem;
+}
+
+.mediaSmall .Tank_dustAnimation_89 {
+        top: -70rem;
+}
+
+.mediaMedium .Tank_dustAnimation_89 {
+        top: 103rem;
+}
+
+.mediaLarge .Tank_dustAnimation_89 {
+        top: 240rem;
+}
+
+.mediaExtraLarge .Tank_dustAnimation_89 {
+        top: 556rem;
+}
+
+.Tank_dustAnimation__withStyle_47 {
+        left: 14rem;
+    }
+
+.mediaSmall .Tank_dustAnimation__withStyle_47 {
+            left: 128rem;
+}
+
+.mediaMedium .Tank_dustAnimation__withStyle_47 {
+            left: 280rem;
+}
+
+.mediaLarge .Tank_dustAnimation__withStyle_47 {
+            left: 445rem;
+}
+
+.mediaExtraLarge .Tank_dustAnimation__withStyle_47 {
+            left: 760rem;
+}
+
+.Tank_dustAnimation__withoutStyle_83 {
+        right: 42rem;
+    }
+
+.mediaSmall .Tank_dustAnimation__withoutStyle_83 {
+            right: 200rem;
+}
+
+.mediaMedium .Tank_dustAnimation__withoutStyle_83 {
+            right: 412rem;
+}
+
+.mediaLarge .Tank_dustAnimation__withoutStyle_83 {
+            right: 608rem;
+}
+
+.mediaExtraLarge .Tank_dustAnimation__withoutStyle_83 {
+            right: 915rem;
+}
+
+.Tank_particles_48 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Tank_particles__parts_ee {
+        z-index: -2;
+    }
+
+.Tank_particles__dust_38 {
+        z-index: -1;
+    }
+
+.Tank_tankInfo_7a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360rem;
+    height: 200rem;
+    position: relative;
+    top: 8%;
+    left: 17%;
+}
+
+.mediaExtraLarge .Tank_tankInfo_7a {
+        top: 5%;
+}
+
+.Tank_base__top_e1 .Tank_tankInfo_7a {
+        left: -17%;
+    }
+
+.Tank_tankInfoShadow_84 {
+    width: 600rem;
+    height: 350rem;
+    background: url('R.images.gui.maps.icons.resourceWell.shadow_vehicle_info') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.Tank_info_17 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360rem;
+    height: 200rem;
+    position: relative;
+    z-index: 2;
+}
+
+.Tank_preview_7a {
+    position: relative;
+}
+
+.Tank_vehicleInfo_3d {
+    margin-top: 15rem;
+}
+
+.Tank_vehicleInfo__disabled_8b {
+        opacity: .7;
+    }
+
+.Tank_styleInfo_42 {
+    display: flex;
+    margin-top: 10rem;
+}
+
+.Tank_infoWrapper_90 {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.Tank_infoText_5e {
+    color: #FFDD99;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-right: 2rem;
+}
+
+.mediaLarge .Tank_infoText_5e {
+        color: #FFDD99;
+        font-size: 20rem;
+        font-weight: 400;
+        line-height: 1.2;
+}
+
+.Tank_infoIcon_a3 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.resourceWell.icon_info') no-repeat center / contain;
+    position: absolute;
+    right: -26rem;
+}
+
+.mediaLarge .Tank_infoIcon_a3 {
+        margin-top: 2rem;
+}
+
+.Tank_tanksLeft_e2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60rem;
+    position: relative;
+}
+
+.mediaMedium .Tank_tanksLeft_e2 {
+        margin-top: 70rem;
+}
+
+.Tank_base__active_3b .Tank_tanksLeft_e2 {
+        margin-top: 57rem;
+    }
+
+.mediaMedium .Tank_base__active_3b .Tank_tanksLeft_e2 {
+            margin-top: 65rem;
+}
+
+.mediaLarge .Tank_base__active_3b .Tank_tanksLeft_e2 {
+            margin-top: 79rem;
+}
+
+.Tank_lockIcon_a0 {
+    width: 90rem;
+    height: 90rem;
+    background: url('R.images.gui.maps.icons.resourceWell.lock_small') no-repeat center / contain;
+    position: absolute;
+    bottom: 13rem;
+    z-index: 1;
+}
+
+.mediaMedium .Tank_lockIcon_a0 {
+        bottom: 25rem;
+}
+
+.mediaLarge .Tank_lockIcon_a0 {
+        width: 136rem;
+        height: 136rem;
+        background-image: url('R.images.gui.maps.icons.resourceWell.lock');
+        bottom: 5rem;
+}
+
+.Tank_textInfoWrapper_b1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 440rem;
+    height: 50rem;
+    background: url('R.images.gui.maps.icons.resourceWell.backgrounds.disable_without_style_small') no-repeat center / contain;
+}
+
+.mediaMedium .Tank_textInfoWrapper_b1 {
+        width: 520rem;
+        height: 63rem;
+        background-image: url('R.images.gui.maps.icons.resourceWell.backgrounds.disable_without_style');
+}
+
+.Tank_tanksLeftBlockedText_d4 {
+    color: #FFDD99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    justify-content: center;
+}
+
+.mediaMedium .Tank_tanksLeftBlockedText_d4 {
+        color: #FFDD99;
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
+}
+
+.Tank_tanksLeftText_d8 {
+    color: #FFDD99;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    max-width: 330rem;
+    text-align: center;
+    position: relative;
+    top: -119rem;
+}
+
+.mediaMedium .Tank_tanksLeftText_d8 {
+        top: -110rem;
+}
+
+.mediaLarge .Tank_tanksLeftText_d8 {
+        top: -120rem;
+}
+
+.Tanks_base_82 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+    @media (min-width: 2561px) {.Tanks_base_82 {
+        width: 2560rem
+}
+    }
+
+.TimerEntryPointTooltip_base_5a {
+    display: flex;
+}
+
+.TimerEntryPointTooltip_text_17 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-right: 5rem;
+}
+
+.TimerEntryPointTooltip_lastUntil_25 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.TimerEntryPointTooltip_leftTime_d7 {
+    color: #FFDD99;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+}
+
+.TimerMainScreen_shineWrapper_3c {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.TimerMainScreen_shineBg_77 {
+    width: 462rem;
+    height: 260rem;
+    background: url('R.images.gui.maps.icons.resourceWell.timer.shine_timer_small') no-repeat center / contain;
+    opacity: 1;
+    position: relative;
+    top: -69rem;
+}
+
+.mediaMedium .TimerMainScreen_shineBg_77 {
+        width: 700rem;
+        height: 394rem;
+        background-image: url('R.images.gui.maps.icons.resourceWell.timer.shine_timer');
+        top: -122rem;
+}
+
+.TimerMainScreen_content_24 {
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.TimerMainScreen_text_9c,
+.TimerMainScreen_time_98 {
+    color: #E9E2BF;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-right: 5rem;
+}
+
+.mediaMedium .TimerMainScreen_text_9c, .mediaMedium .TimerMainScreen_time_98 {
+        font-size: 18rem;
+}
+
+.TimerMainScreen_content__daysLeft_35 .TimerMainScreen_text_9c, .TimerMainScreen_content__daysLeft_35 .TimerMainScreen_time_98 {
+        color: #F2F2F7;
+        opacity: .5;
+    }
+
+.TimerMainScreen_content__endingSoon_f0 .TimerMainScreen_text_9c, .TimerMainScreen_content__endingSoon_f0 .TimerMainScreen_time_98 {
+        color: #FFDD99;
+        text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+    }
+
+.TimerMainScreen_time_98 {
+    margin: 0;
+}
+
+.Timer_base_ca {
+    margin-top: 60rem;
+    position: relative;
+}
+
+    .Timer_base__entryPointTooltip_1d {
+        margin-top: 5rem;
+    }
+

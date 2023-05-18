@@ -1,0 +1,63 @@
+.CurrencyReward_base_48 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.CurrencyReward_icon_9e {
+    width: 48rem;
+    height: 48rem;
+    background: no-repeat center / contain;
+    position: relative;
+    z-index: 1;
+}
+
+.CurrencyReward_icon__credits_f6 {
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_silver');
+    }
+
+.CurrencyReward_icon__gold_1c {
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_gold');
+    }
+
+.CurrencyReward_icon__crystal_11 {
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_bonds');
+    }
+
+.CurrencyReward_icon__xp_d5 {
+        margin: 0 -5rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.exp');
+    }
+
+.CurrencyReward_icon__freeXP_7e {
+        margin: 0 -5rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.freeExp');
+    }
+
+.CurrencyReward_value_ef {
+    color: #F2F2F7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding-right: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.CurrencyReward_value__freeXP_b8 {
+        color: #F2F2F7;
+    }
+
+.CurrencyReward_value__xp_2d,
+    .CurrencyReward_value__credits_87 {
+        color: #CED9D9;
+    }
+
+.CurrencyReward_value__gold_93 {
+        color: #FFC363;
+    }
+
+.CurrencyReward_value__crystal_51 {
+        color: #C9C9B6;
+    }
+

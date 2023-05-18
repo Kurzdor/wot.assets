@@ -1,0 +1,419 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem; /* border offset*/
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.TooltipDecorator_decoratorContent_de {
+    background-color: #000;
+}
+
+.Divider_base_95 {
+    width: 100%;
+    height: 1rem;
+    margin: 16rem 0 15rem;
+    background: url('R.images.gui.maps.icons.tooltip.tooltip_divider_dotty') no-repeat 50% / 450rem 9rem;
+}
+
+.Column_base_12 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.Table_base_fa {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.Table_params_28 {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.Table_paramSource_cc {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+    .ExtendedText_base__zeroPadding_25 {
+        padding: 0;
+    }
+
+    .ExtendedText_base__isTruncationAvailable_5b {
+        width: 100%;
+    }
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+        opacity: 0;
+    }
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #FF2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #FFFFFF;
+}
+
+.colors_white_45 {
+    color: #F2F2F7;
+}
+
+.colors_whiteOrange_81 {
+    color: #FEFEEC;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #E9E2BF;
+}
+
+.colors_par_5b {
+    color: #8C8C7E;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362E;
+}
+
+.colors_red_79 {
+    color: #FF2717;
+}
+
+.colors_redDark_73 {
+    color: #B70000;
+}
+
+.colors_yellow_76 {
+    color: #FEAB34;
+}
+
+.colors_orange_cd {
+    color: #EE7000;
+}
+
+.colors_cream_0f {
+    color: #FFDD99;
+}
+
+.colors_brown_82 {
+    color: #CBAC77;
+}
+
+.colors_greenBright_68 {
+    color: #80D43A;
+}
+
+.colors_green_fa {
+    color: #7AB300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #CCFFFF;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09E2FF;
+}
+
+.colors_cred_35 {
+    color: #CED9D9;
+}
+
+.colors_gold_c3 {
+    color: #FFC363;
+}
+
+.colors_bond_ce {
+    color: #C9C9B6;
+}
+
+.colors_prom_83 {
+    color: #A29B70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.default_cell_1a {
+    display: flex;
+    align-items: center;
+    min-width: 90rem;
+    height: 25rem;
+}
+
+    .default_cell_1a + .default_cell_1a {
+        margin-top: 6rem;
+    }
+
+    .default_cell_1a + .default_title_65 {
+        margin-top: 11rem;
+    }
+
+.default_title_65 {
+    display: flex;
+    align-items: center;
+    min-width: 90rem;
+    height: 25rem;
+    margin-bottom: 8rem;
+}
+
+.Param_base_84 {
+    justify-content: flex-end;
+    color: #8C8C7E;
+}
+
+.ParamSource_base_43 {
+    display: flex;
+    margin-left: 7rem;
+}
+
+.ParamSource_icon_a3 {
+    width: 24rem;
+    height: 24rem;
+    background: no-repeat 50% / cover;
+    opacity: .5;
+}
+
+.ParamSource_base__enabled_8b .ParamSource_icon_a3 {
+        opacity: 1;
+    }
+
+.ParamSource_asteriskIcon_17 {
+    width: 16rem;
+    height: 16rem;
+    background: no-repeat 50% / cover;
+}
+
+.ParamSource_sourceName_f9 {
+    color: #595950;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-left: 12rem;
+}
+
+.ParamSource_base__enabled_8b .ParamSource_sourceName_f9 {
+        color: #8C8C7E;
+    }
+
+.Title_base_3a {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.Title_title_80 {
+    color: #FEFEEC;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Title_base__penalty_27 .Title_title_80 {
+        color: #FF2717;
+    }
+
+.TooltipAdvancedFooter_base_56 {
+    display: flex;
+    padding: 12rem 20rem 20rem;
+}
+
+.TooltipAdvancedFooter_altBtn_02 {
+    width: 29rem;
+    height: 26rem;
+    margin-right: 8rem;
+    background: url('R.images.gui.maps.icons.tooltip.tooltip_alt_btn') no-repeat center / cover;
+}
+
+.Note_base_28 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 520rem;
+}
+
+    .Note_base__warning_8e {
+        justify-content: flex-start;
+        margin-left: 50rem;
+    }
+
+    .Note_base__textOnly_f2,
+    .Note_base__content_47,
+    .Note_base__autoReloadTime_93 {
+        justify-content: flex-start;
+    }
+
+    .Note_base__autoReloadTime_93 {
+        padding-left: 60rem;
+        position: relative;
+    }
+
+.Note_icon_ab {
+    width: 16rem;
+    height: 16rem;
+    margin-right: 4rem;
+    background: no-repeat 50% / cover;
+}
+
+.Note_base__autoReloadTime_93 .Note_icon_ab {
+        margin-right: 0;
+        position: absolute;
+        top: 10rem;
+        left: 30rem;
+    }
+
+.Note_title_12 {
+    color: #595950;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Note_base__content_47 .Note_title_12,
+    .Note_base__autoReloadTime_93 .Note_title_12 {
+        color: #8C8C7E;
+    }
+
+.Footer_base_f1 {
+    padding: 0;
+    color: #8C8C7E;
+}
+
+.Header_base_a0 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Header_content_4e {
+    position: relative;
+}
+
+.Header_headerNotes_33 {
+    margin: 20rem 0 10rem;
+}
+
+.Header_icon_27 {
+    width: 48rem;
+    height: 48rem;
+    background: no-repeat 50% / cover;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+}
+
+.Header_texts_9d {
+    flex-direction: column;
+    max-width: 520rem;
+}
+
+.Header_base__withIcon_d1 .Header_texts_9d {
+        padding-left: 60rem;
+    }
+
+.Header_titleWrapper_6a {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 7rem;
+}
+
+.Header_title_7f {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.Header_unitOfMeasurement_1a {
+    color: #E9E2BF;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-left: 5rem;
+    margin-bottom: -1rem;
+}
+
+.Header_descriptionWrapper_c3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Header_description_1c {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.VehicleParamsTooltipApp_base_45 {
+    display: flex;
+    flex-direction: column;
+    padding: 12rem 18rem 21rem;
+}
+
+.VehicleParamsTooltipApp_categories_e0 {
+    margin-bottom: -4rem;
+}
+

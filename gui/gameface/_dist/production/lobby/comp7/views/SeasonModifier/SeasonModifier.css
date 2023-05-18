@@ -1,0 +1,175 @@
+@keyframes App_fadeIn_8f {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes App_fadeInThreeQuarters_73 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+
+@keyframes App_fadeInHalf_51 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes App_fadeOut_5d {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes App_fadeInWithScale_99 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes App_slideUp_5f {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes App_scale_da {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes App_raysAppearance_a0 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes App_rotate_34 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes App_reverse-rotate_2b {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes App_glowAppearance_d4 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes App_highlightAppearance_70 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+.App_base_b6 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1rem;
+    opacity: 0;
+    animation: App_fadeIn_8f .3s forwards;
+}
+
+.App_content_c2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 352rem;
+    height: 56rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.modifierBackground') no-repeat center / cover;
+    overflow: hidden;
+}
+
+.App_description_f8 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 6rem;
+}
+
+.App_title_b6 {
+    color: rgba(255,255,255, .9);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.App_name_c7 {
+    color: rgba(255,255,255, .9);
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.App_icon_59 {
+    width: 48rem;
+    height: 48rem;
+    margin-left: 6rem;
+    margin-right: 22rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.shield') no-repeat center / cover;
+}
+

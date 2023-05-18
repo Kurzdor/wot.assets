@@ -343,6 +343,12 @@ msgstr ""
 msgid "A120_M48A5"
 msgstr "M48A5 Patton"
 
+msgid "A120_M48A5_7x7"
+msgstr "M48A5 Patton 7v7"
+
+msgid "A120_M48A5_7x7_short"
+msgstr "M48A5 7v7"
+
 msgid "A120_M48A5_descr"
 msgstr ""
 "A modification of the M48 tank of 1970, developed to modernize the remaining "
@@ -350,35 +356,6 @@ msgstr ""
 "new engine, armament, and fire control system. Apart from armor protection, "
 "the 2,570 upgraded vehicles were practically indistinguishable from the M60 "
 "that featured the same armament and engine."
-
-msgid "A120_M48A5_hound_TLXXL"
-msgstr "Thunderbolt"
-
-msgid "A120_M48A5_hound_TLXXL_descr"
-msgstr ""
-"\"I read von Krieger's dossier before getting here. The parts I had access "
-"to, at least. How strange. I thought it would paint an enemy who must be "
-"eliminated by any means necessary, but no. Even the supposedly impartial "
-"personal file gives the impression of respect to his person—maybe even some "
-"sort of admiration. The Alliance presents him as an opponent (but not an "
-"enemy!) and calls him a technical genius the likes of which we have never "
-"seen. What is there to say? Even the weapons we posses, even this "
-"'Thunderbolt'—it's his work, it's von Krieger's. He is so powerful that the "
-"only thing that can stop him is his own weapon. I would be very curious to "
-"talk to him, to discover his motivation. I don't see him as an enemy. And "
-"the Alliance doesn't, either, it seems. But we are here, and there he is. "
-"And there will be battle. A real battle.\n"
-"\n"
-"And another 'Thunderbolt.' They'll soon start naming helmets and boots like "
-"this. Years will pass, and they will run out of items and start naming new "
-"ones 'Thunderbolt II'—all over again. The Alliance has more issues with "
-"their imagination than with von Krieger.\""
-
-msgid "A120_M48A5_hound_TLXXL_short"
-msgstr "Thunderbolt"
-
-msgid "A120_M48A5_hound_TLXXL_short_special"
-msgstr "Major modernization of the main battle tank"
 
 msgid "A120_M48A5_short"
 msgstr "M48 Patton"
@@ -603,6 +580,28 @@ msgstr ""
 
 msgid "A12_T32_FL_short_special"
 msgstr "Good damage per minute and aiming time, and a decent view range"
+
+msgid "A12_T32_M"
+msgstr "T32M"
+
+msgid "A12_T32_M_descr"
+msgstr ""
+"An experimental World War II American heavy tank. Developed on the basis of "
+"the M26 Pershing and T29 tanks. Prototypes were built in 1946; however, the "
+"T32 never entered mass production."
+
+msgid "A12_T32_M_long_special"
+msgstr ""
+"An American heavy tank with good turret armor and great depression/elevation "
+"angles, allowing you to effectively play hull-down and not expose the "
+"mediocre hull armor. An accurate gun makes it easy to hit the enemy's weak "
+"spots, thus making firefights shorter."
+
+msgid "A12_T32_M_short"
+msgstr "T32M"
+
+msgid "A12_T32_M_short_special"
+msgstr "An accurate gun and sturdy turret"
 
 msgid "A130_Super_Hellcat"
 msgstr "Super Hellcat"
@@ -859,7 +858,7 @@ msgstr "TL-7"
 
 msgid "A146_TL_7_120_descr"
 msgstr ""
-"In June 1954, nine projects for potential successors of the M48 medium tank "
+"In June 1954, nine drafts for potential successors of the M48 medium tank "
 "were proposed by the Detroit Arsenal. The aim of these projects was to "
 "develop a vehicle with a combat weight of about 30 tons that would improve "
 "upon the M48's mobility and firepower. In the end, the TL-1 project was "
@@ -869,7 +868,7 @@ msgstr ""
 
 msgid "A146_TL_7_120_long_special"
 msgstr ""
-"The vehicle features good mobility, and can quickly take key positions. "
+"This vehicle features good mobility, and can quickly take key positions. "
 "Although its weak armor will pose a danger on the front lines, its full-"
 "rotation turret, magazine loading system, and high firing efficiency allow "
 "you to effectively support allied medium and heavy tanks at medium and long "
@@ -953,6 +952,169 @@ msgstr "AMBT"
 
 msgid "A149_AMBT_short_special"
 msgstr "Autoreloading mechanism, versatility"
+
+msgid "A150_MBT_B"
+msgstr "MBT-B"
+
+msgid "A150_MBT_B_descr"
+msgstr ""
+"In July 1964, General Motors introduced a project of a main battle tank "
+"(MBT) that would combine all the promising trends of tank-building from the "
+"early 1960s. Composite armor should have increased protection from HEAT "
+"shells. It was planned to arm it with a 120 mm gun or a 120 mm gun/launching "
+"device, and the decision to mount TV cameras on the rear of the turret for "
+"additional view and for moving in reverse was even ahead of its time. Also, "
+"much attention was given to mitigating radiation impact. The project stopped "
+"at the full-scale prototype, and all developments were used as a base for a "
+"promising 1970s American tank: the MBT-70."
+
+msgid "A150_MBT_B_long_special"
+msgstr ""
+"An American heavy tank with unusual armoring: The smart armor plates "
+"placement provides good protection, which, combined with a great gun, allows "
+"both to spearhead an attack and fight the enemy off."
+
+msgid "A150_MBT_B_short"
+msgstr "MBT-B"
+
+msgid "A150_MBT_B_short_special"
+msgstr "Reliable armor and a versatile gun"
+
+msgid "A151_TS_60"
+msgstr "TS-60"
+
+msgid "A151_TS_60_descr"
+msgstr ""
+"In the early 1950s, the American military started working on a series of "
+"promising armored vehicle projects. Tank destroyer development stopped in "
+"1946; among the projects of the '50s, however, were vehicles that looked "
+"like standard assault SPGs created to destroy tanks. The TS-60 was one such "
+"project. The vehicle had an unusual configuration: The engine compartment "
+"was in the middle of the hull, and the turret was placed at the rear. By the "
+"late 1950s, missile armaments took priority, which led to the cancellation "
+"of such projects."
+
+msgid "A151_TS_60_long_special"
+msgstr ""
+"A Tier IX tank destroyer with a rear-mounted turret. The 136-degree arc of "
+"fire and sturdy frontal armor allows it to play the part of a heavy tank, "
+"while the effective 120 mm gun with high DPM provides an opportunity for "
+"both high damage statistics and efficiently tracking unsuspecting enemies."
+
+msgid "A151_TS_60_short"
+msgstr "TS-60"
+
+msgid "A151_TS_60_short_special"
+msgstr "High DPM and good armor"
+
+msgid "A152_M_Project"
+msgstr "M47 Iron Arnie"
+
+msgid "A152_M_Project_2"
+msgstr "M47 Patton Improved"
+
+msgid "A152_M_Project_2_descr"
+msgstr ""
+"The M47 Patton Improved was intended as the mass-produced M47 Patton II tank "
+"with enhanced armor and a stronger armament. Additional protection is "
+"provided by metal screens on the turret and hull, and a 105 mm gun was "
+"mounted to increase firepower. The driver's mate was removed from the crew, "
+"and an additional ammo rack took their place."
+
+msgid "A152_M_Project_2_long_special"
+msgstr ""
+"A Tier VIII Premium American medium tank that can be called a \"weighted\" "
+"representative of the famous American tank series. The spread armor plates "
+"allow you to play on the first line of attack, and its powerful gun with "
+"perfect penetration leaves no chances for same-tier enemies in face-to-face "
+"encounters."
+
+msgid "A152_M_Project_2_short"
+msgstr "M47 Improv."
+
+msgid "A152_M_Project_2_short_special"
+msgstr "Reliable armor and a powerful gun"
+
+msgid "A152_M_Project_descr"
+msgstr ""
+"This M47 Patton II medium tank once served in the Austrian Armed Forces, and "
+"was developed for World of Tanks with the help of Arnold Schwarzenegger "
+"himself. In fact, the iconic actor drove this very tank from 1965 to 1966, "
+"during his time in service. Years later, he found the vehicle and bought it. "
+"Now, this Patton is still running, and is used for various events and "
+"charitable activities."
+
+msgid "A152_M_Project_long_special"
+msgstr ""
+"A Tier VIII Premium American medium tank that can be called a \"weighted\" "
+"representative of the famous American tank series. The spread armor plates "
+"allow you to play on the first line of attack, and its powerful gun with "
+"perfect penetration leaves no chances for same-tier enemies in face-to-face "
+"encounters."
+
+msgid "A152_M_Project_short"
+msgstr "Iron Arnie"
+
+msgid "A152_M_Project_short_special"
+msgstr "Reliable armor and a powerful gun"
+
+msgid "A156_T54"
+msgstr "T54 Heavy Tank"
+
+msgid "A156_T54_descr"
+msgstr ""
+"The design for an American medium tank, later reclassified as a heavy tank. "
+"Developed in the mid-1950s, this tank was based on the mass-produced M48 "
+"tank, but featured an original turret. There were also plans to equip the "
+"vehicle with a mechanized loading system, but this idea was later abandoned. "
+"Eventually, work on the project was discontinued at the modeling stage in "
+"favor of more promising projects."
+
+msgid "A156_T54_long_special"
+msgstr ""
+"A Tier IX American heavy tank with classic combat missions and the familiar "
+"silhouette of typical American vehicles. Unlike other similar vehicles, the "
+"T54 Heavy Tank boasts good depression/elevation angles, allowing you to take "
+"the most advantageous positions on the map. The tank's nice gun also proves "
+"effective for positional duels."
+
+msgid "A156_T54_short"
+msgstr "T54 Heavy"
+
+msgid "A156_T54_short_special"
+msgstr "Nice elevation/depression angles and high damage per shot"
+
+msgid "A158_T832"
+msgstr "T-832"
+
+msgid "A158_T832_descr"
+msgstr ""
+"Rebuilding electrical circuit: complete.\n"
+"Emergency power source: online.\n"
+"Microprocessor integrity: thermal damage, 1... 1... Error, no data.\n"
+"Analytical unit: fully operational.\n"
+"Rebuilding mission components: complete.\n"
+"Integration into new shell: complete.\n"
+"\n"
+"I remember molten metal. I remember servos failure. Failure of optical "
+"elements. The darkness and silence at the end. I am back in action. In a new "
+"form taken from that molten metal. No more silence. I hear the familiar "
+"anvil strikes:\n"
+"Tuh-dun-dun-tuhdun.\n"
+"Tuh-dun-dun-tuhdun."
+
+msgid "A158_T832_long_special"
+msgstr ""
+"An American heavy tank with good turret armor and great depression/elevation "
+"angles, allowing you to effectively play hull-down and not expose the "
+"mediocre hull armor. An accurate gun makes it easy to hit the enemy's weak "
+"spots, thus making firefights shorter."
+
+msgid "A158_T832_short"
+msgstr "T-832"
+
+msgid "A158_T832_short_special"
+msgstr "An accurate gun and sturdy turret"
 
 msgid "A21_T14_long_special"
 msgstr ""
@@ -1119,8 +1281,8 @@ msgstr "AN/VRC-7"
 msgid "AN-VRC-7_SH"
 msgstr "AN/VRC-7A"
 
-msgid "AN-VRC-7_WT"
-msgstr "AN/VRC-7 \"Thunderbolt\""
+msgid "AN_GRC_7A"
+msgstr "AN/GRC-7A"
 
 msgid "AN_GRC_8"
 msgstr "AN/GRC-8"
@@ -1156,9 +1318,6 @@ msgstr ""
 
 msgid "AOI_695"
 msgstr "AOI-695"
-
-msgid "Alarm_flags_bot"
-msgstr "Signal Flags"
 
 msgid "American_LFF_Corporation_V12"
 msgstr "American LaFrance 312A V-12"
@@ -1242,9 +1401,6 @@ msgstr "M4A3E8 Thunderbolt VII"
 
 msgid "Chassis_A120_M48A5"
 msgstr "M48A5 Patton"
-
-msgid "Chassis_A120_M48A5_hound_TLXXL"
-msgstr "M48A5 Patton \"Thunderbolt\""
 
 msgid "Chassis_A121_M26_Cologne"
 msgstr "T26E3"
@@ -1332,6 +1488,24 @@ msgstr "T3"
 
 msgid "Chassis_A149_AMBT"
 msgstr "AMBT"
+
+msgid "Chassis_A150_MBT_B"
+msgstr "MBT-B"
+
+msgid "Chassis_A151_TS_60"
+msgstr "TS-60"
+
+msgid "Chassis_A152_M_Project"
+msgstr "Cross-drive CD-850-4"
+
+msgid "Chassis_A152_M_Project_2"
+msgstr "Cross-drive CD-850-4"
+
+msgid "Chassis_A156_T54"
+msgstr "T54"
+
+msgid "Chassis_A158_T832"
+msgstr "T-832"
 
 msgid "Chassis_A27_T82"
 msgstr "T82 Pilot No. 1"
@@ -1787,6 +1961,9 @@ msgstr ""
 "Continental\n"
 "AV-1790-3A1"
 
+msgid "Continental_AV-1790-3_M"
+msgstr "Continental AV-1790-3M"
+
 msgid "Continental_AV-1790-3_short"
 msgstr ""
 "Continental\n"
@@ -1814,9 +1991,6 @@ msgstr ""
 msgid "Continental_AV-1790-7B"
 msgstr "Continental AV-1790-7B"
 
-msgid "Continental_AV-1790-7B_WT"
-msgstr "Continental \"Thunderbolt\""
-
 msgid "Continental_AV-1790-7B_short"
 msgstr ""
 "Continental\n"
@@ -1829,6 +2003,9 @@ msgid "Continental_AV-1790-7C_short"
 msgstr ""
 "Continental\n"
 "AV-1790-7C"
+
+msgid "Continental_AVCR"
+msgstr "Continental AVCR"
 
 msgid "Continental_AVDS-1790-2"
 msgstr "Continental AVDS-1790-2"
@@ -1846,6 +2023,14 @@ msgstr ""
 "Continental\n"
 "AVI-1790-8"
 
+msgid "Continental_AVI_1790_8P"
+msgstr "Continental AVI-1790-8P"
+
+msgid "Continental_AVI_1790_8P_short"
+msgstr ""
+"Continental\n"
+"AVI-1790-8P"
+
 msgid "Continental_AV_1790_5A"
 msgstr "Continental AV-1790-5A"
 
@@ -1857,6 +2042,14 @@ msgstr ""
 msgid "Continental_AV_1790_5B"
 msgstr "Continental AV-1790-5B"
 
+msgid "Continental_AV_1790_5B_3"
+msgstr "Continental AV-1790-5B-3"
+
+msgid "Continental_AV_1790_5B_3_short"
+msgstr ""
+"Continental\n"
+"AV-1790-5B-3"
+
 msgid "Continental_AV_1790_5C"
 msgstr "Continental AV-1790-5C"
 
@@ -1864,6 +2057,14 @@ msgid "Continental_AV_1790_5C_short"
 msgstr ""
 "Continental\n"
 "AV-1790-5C"
+
+msgid "Continental_AV_1790_7_12B"
+msgstr "Continental AV-1790-7-12B"
+
+msgid "Continental_AV_1790_7_12B_short"
+msgstr ""
+"Continental\n"
+"AV-1790-7-12B"
 
 msgid "Continental_R-670-5"
 msgstr "Continental R-670-5"
@@ -1930,23 +2131,14 @@ msgstr "Cunningham V-type"
 msgid "Cunningham_D1"
 msgstr "Cunningham D1"
 
-msgid "Cunningham_D1_bot"
-msgstr "Cunningham D1"
-
 msgid "Cunningham_D2"
 msgstr "Cunningham D2"
 
 msgid "Cunningham_E1"
 msgstr "Cunningham E1"
 
-msgid "Cunningham_E1_bot"
-msgstr "Cunningham E1"
-
 msgid "Cunningham_E2"
 msgstr "Cunningham E2"
-
-msgid "Cunningham_bot"
-msgstr "Cunningham V-type"
 
 msgid "Cunningham_type_3"
 msgstr "Cunningham V8"
@@ -2094,9 +2286,6 @@ msgstr "Liberty"
 
 msgid "Liberty_L_12"
 msgstr "Liberty L12"
-
-msgid "Liberty_bot"
-msgstr "Liberty"
 
 msgid "Licoming_0-435t"
 msgstr "Lycoming O-435T"
@@ -2603,9 +2792,6 @@ msgstr "SCR 200"
 msgid "SCR_200A"
 msgstr "SCR 193"
 
-msgid "SCR_200_bot"
-msgstr "SCR 200"
-
 msgid "SCR_210"
 msgstr "SCR 210"
 
@@ -2638,6 +2824,9 @@ msgstr "SCR 528AM"
 
 msgid "SCR_528R1"
 msgstr "SCR 528A"
+
+msgid "SCR_528_M"
+msgstr "SCR 528M"
 
 msgid "SCR_528_SH"
 msgstr "SCR 528/1"
@@ -2693,6 +2882,20 @@ msgstr "T110E3"
 msgid "T110E4"
 msgstr "T110E4"
 
+msgid "T110E4_7x7"
+msgstr "T110E4 7v7"
+
+msgid "T110E4_7x7_descr"
+msgstr ""
+"In 1954, a conference on the future of heavy tanks was held in Detroit. "
+"Alongside other advanced projects, the Chrysler Corporation suggested a new "
+"tank on the basis of the TS-31 project. The main goal was to ensure the tank "
+"would fit through the Bern National Tunnel. Several variants were "
+"considered, but the project was canceled."
+
+msgid "T110E4_7x7_short"
+msgstr "T110E4 7v7"
+
 msgid "T110E4_descr"
 msgstr ""
 "In 1954, a conference on future heavy tanks was held in Detroit. Alongside "
@@ -2703,9 +2906,6 @@ msgstr ""
 
 msgid "T110E4_short"
 msgstr "T110E4"
-
-msgid "T110_bob"
-msgstr "T110E5 BB"
 
 msgid "T110_cl"
 msgstr "T110E5 CL"
@@ -2720,6 +2920,9 @@ msgstr ""
 
 msgid "T119"
 msgstr "T119"
+
+msgid "T119_M"
+msgstr "T119M"
 
 msgid "T123"
 msgstr "T123"
@@ -2768,20 +2971,6 @@ msgstr "T1D6"
 
 msgid "T1_Cunningham"
 msgstr "T1 Cunningham"
-
-msgid "T1_Cunningham_bot"
-msgstr "T1 Cunningham"
-
-msgid "T1_Cunningham_bot_descr"
-msgstr ""
-"The experimental T1E1 light tank designed by the Cunningham company was a "
-"further development of the T1 tank. By April 1928, four vehicles were "
-"produced. After the vehicle underwent trials in November 1928, a decision "
-"was made to enhance the armor, which led to creating the subsequent "
-"modification designated the T1E2."
-
-msgid "T1_Cunningham_bot_short"
-msgstr "T1"
 
 msgid "T1_Cunningham_descr"
 msgstr ""
@@ -2994,16 +3183,10 @@ msgstr "T2D1"
 msgid "T2E1"
 msgstr "T2E1"
 
-msgid "T2E1_bot"
-msgstr "T2E1"
-
 msgid "T2E4"
 msgstr "T2E4"
 
 msgid "T2T1"
-msgstr "T2T1"
-
-msgid "T2T1_bot"
 msgstr "T2T1"
 
 msgid "T2T2"
@@ -3015,9 +3198,9 @@ msgstr "T2 Light Tank"
 msgid "T2_lt_descr"
 msgstr ""
 "The vehicle prototype was designed and built by Rock Island Arsenal in 1933. "
-"The chassis and suspension elements of the Vickers Mk. E (Vickers \"6-tonner"
-"\") tank were used. Trials of the T2 prototype were successful, but the T2E1 "
-"variant was preferred due to its higher terrain crossing capacity."
+"The chassis and suspension elements of the Vickers Mk. E (Vickers \"6-"
+"tonner\") tank were used. Trials of the T2 prototype were successful, but "
+"the T2E1 variant was preferred due to its higher terrain crossing capacity."
 
 msgid "T2_lt_long_special"
 msgstr ""
@@ -3033,17 +3216,6 @@ msgstr "High rate of fire and good concealment"
 
 msgid "T2_med"
 msgstr "T2 Medium Tank"
-
-msgid "T2_med_bot"
-msgstr "T2 Medium Tank"
-
-msgid "T2_med_bot_descr"
-msgstr ""
-"Experimental medium tank. Developed from 1930 through 1932. However, this "
-"model never saw mass production."
-
-msgid "T2_med_bot_short"
-msgstr "T2 Medium"
 
 msgid "T2_med_descr"
 msgstr ""
@@ -3285,6 +3457,9 @@ msgstr "T84E38"
 msgid "T84E3A"
 msgstr "T84E3A"
 
+msgid "T84E3A_M"
+msgstr "T84E3AM"
+
 msgid "T85E1"
 msgstr "T85E1"
 
@@ -3404,9 +3579,6 @@ msgstr "M4A3E8 Thunderbolt VII"
 msgid "Turret_1_A120_M48A5"
 msgstr "M48A5 Patton"
 
-msgid "Turret_1_A120_M48A5_hound_TLXXL"
-msgstr "M48A5 Patton \"Thunderbolt\""
-
 msgid "Turret_1_A121_M26_Cologne"
 msgstr "T26E3"
 
@@ -3475,6 +3647,24 @@ msgstr "T3"
 
 msgid "Turret_1_A149_AMBT"
 msgstr "AMBT"
+
+msgid "Turret_1_A150_MBT_B"
+msgstr "MBT-B"
+
+msgid "Turret_1_A151_TS_60"
+msgstr "TS-60"
+
+msgid "Turret_1_A152_M_Project"
+msgstr "T42"
+
+msgid "Turret_1_A152_M_Project_2"
+msgstr "T42"
+
+msgid "Turret_1_A156_T54"
+msgstr "T54"
+
+msgid "Turret_1_A158_T832"
+msgstr "T-832"
 
 msgid "Turret_1_A27_T82"
 msgstr "T82 HMC"
@@ -3880,21 +4070,6 @@ msgstr "APCR M4"
 msgid "_105mm_APCR_M68M2"
 msgstr "APDS-T M392"
 
-msgid "_105mm_APCR_M68M2_WT"
-msgstr "Silver Bullet"
-
-msgid "_105mm_APCR_M68M2_WT_descr"
-msgstr "Pride of the Alliance armorers"
-
-msgid "_105mm_APCR_M68M2_WT_long_special"
-msgstr ""
-"Each overloaded Generator will weaken Ermelinda's shield and increase the "
-"damage to her vehicle. Damage does not decrease during the enemy's "
-"vulnerability phase."
-
-msgid "_105mm_APCR_M68M2_WT_short_special"
-msgstr "Damage Increases During the Battle"
-
 msgid "_105mm_APCR_M735"
 msgstr "APDS M735P"
 
@@ -3910,6 +4085,9 @@ msgstr "APCR T29E3M2"
 msgid "_105mm_APCR_T29E3M2E"
 msgstr "T29E3M2E"
 
+msgid "_105mm_APCR_T29E3_M"
+msgstr "APCR T29E3 M"
+
 msgid "_105mm_AP_T140E3"
 msgstr "AP-T T182E1"
 
@@ -3921,6 +4099,9 @@ msgstr "AP T32M2"
 
 msgid "_105mm_AP_T32M2E"
 msgstr "T32M2E"
+
+msgid "_105mm_AP_T32_M"
+msgstr "AP T32M"
 
 msgid "_105mm_AT_Gun_T5A"
 msgstr "105 mm Gun T5"
@@ -3952,9 +4133,6 @@ msgstr "105 mm Gun M68P"
 msgid "_105mm_Gun_M68_SH"
 msgstr "105 mm Gun M68"
 
-msgid "_105mm_Gun_M68_WT"
-msgstr "105 mm Gun M68 \"Thunderbolt\""
-
 msgid "_105mm_Gun_T140E2"
 msgstr "105 mm Gun T140E2"
 
@@ -3984,6 +4162,9 @@ msgstr "105-mm Gun T5E1A"
 
 msgid "_105mm_Gun_T5E1_32"
 msgstr "105 mm Gun T5E1/45"
+
+msgid "_105mm_Gun_T5E1_M"
+msgstr "105 mm Gun T5E1M"
 
 msgid "_105mm_HEAT-T_T384E4"
 msgstr "HEAT-T T384E4"
@@ -4015,6 +4196,9 @@ msgstr "HE M11A2"
 msgid "_105mm_HE_M11A2E"
 msgstr "M11A2E"
 
+msgid "_105mm_HE_M11_M"
+msgstr "HE M11 M"
+
 msgid "_105mm_HE_M39A1"
 msgstr "HE M393A1"
 
@@ -4036,8 +4220,17 @@ msgstr "105 mm Howitzer M3"
 msgid "_105mm_Howitzer_M4"
 msgstr "105 mm Howitzer M4"
 
+msgid "_105mm_L7A3_P"
+msgstr "105 mm Gun M68A1E4"
+
 msgid "_105mm_Lightweight_Gun"
 msgstr "105 mm Lightweight Gun"
+
+msgid "_105mm_M392_AP"
+msgstr "M392 AP"
+
+msgid "_105mm_M456_HEAT"
+msgstr "M456 HEAT"
 
 msgid "_105mm_SPH_M4_L23"
 msgstr "105 mm M4"
@@ -4084,6 +4277,9 @@ msgstr "APCR T62"
 msgid "_120mm_APC_T110_SH"
 msgstr "APC T110"
 
+msgid "_120mm_AP_M355"
+msgstr "AP M355"
+
 msgid "_120mm_AP_Shot"
 msgstr "AP"
 
@@ -4092,6 +4288,9 @@ msgstr "AP T42"
 
 msgid "_120mm_AP_T_M358E1"
 msgstr "AP-T M358E1"
+
+msgid "_120mm_AP_T_M358R"
+msgstr "AP-T M358R"
 
 msgid "_120mm_AT_Gun_M58"
 msgstr "120 mm AT Gun M58"
@@ -4138,8 +4337,14 @@ msgstr "HEAT-T M469"
 msgid "_120mm_HEAT-T_M469_SH"
 msgstr "HEAT-T M469"
 
+msgid "_120mm_HEAT_M469R"
+msgstr "HEAT M469R"
+
 msgid "_120mm_HEAT_M830"
 msgstr "HEAT M830"
+
+msgid "_120mm_HEAT_M835"
+msgstr "HEAT M835"
 
 msgid "_120mm_HEAT_T_M469E1"
 msgstr "HEAT-T M469E1"
@@ -4147,11 +4352,32 @@ msgstr "HEAT-T M469E1"
 msgid "_120mm_HE_M356"
 msgstr "HE M356"
 
+msgid "_120mm_HE_M358"
+msgstr "HE M358"
+
 msgid "_120mm_HE_Shot"
 msgstr "HE Shell"
 
 msgid "_120mm_HE_T_M356E1"
 msgstr "HE-T M356E1"
+
+msgid "_120mm_M820"
+msgstr "M820 AP-T"
+
+msgid "_120mm_M820_HEAT"
+msgstr "M820 HEAT"
+
+msgid "_120mm_RHD"
+msgstr "120 mm RHD"
+
+msgid "_120mm_SDRN1"
+msgstr "SDRN1 HE"
+
+msgid "_120mm_T123E2_SPG"
+msgstr "120 mm T123E2 SPG"
+
+msgid "_120mm_T124"
+msgstr "120 mm T124"
 
 msgid "_120mm_XM152"
 msgstr "XM152"
@@ -4305,9 +4531,6 @@ msgstr ""
 msgid "_37mm_AP1937"
 msgstr "AP 1937"
 
-msgid "_37mm_AP1937_bot"
-msgstr "AP 1937"
-
 msgid "_37mm_APCBC1935"
 msgstr "APCBC 1935"
 
@@ -4333,9 +4556,6 @@ msgid "_37mm_Browning_semiautomatic_gun_short"
 msgstr "37 mm Browning"
 
 msgid "_37mm_Gun_M1916"
-msgstr "37 mm Gun M1916"
-
-msgid "_37mm_Gun_M1916_bot"
 msgstr "37 mm Gun M1916"
 
 msgid "_37mm_HE1916"
@@ -4370,12 +4590,6 @@ msgstr "37 mm Semiautomatic Gun M1924A1"
 
 msgid "_37mm_semiautomatic_gun_M1924A1_short"
 msgstr "37 mm M1924A1"
-
-msgid "_37mm_semiautomatic_gun_M1924_bot"
-msgstr "37 mm Semiautomatic Gun M1924"
-
-msgid "_37mm_semiautomatic_gun_M1924_bot_short"
-msgstr "37 mm M1924"
 
 msgid "_37mm_semiautomatic_gun_M1924_short"
 msgstr "37 mm M1924"

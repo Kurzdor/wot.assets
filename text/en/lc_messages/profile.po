@@ -28,6 +28,12 @@ msgstr "Steel Hunter, Platoon"
 msgid "profile/dropdown/labels/clan"
 msgstr "Global Map"
 
+msgid "profile/dropdown/labels/comp7"
+msgstr "Onslaught: Griffin"
+
+msgid "profile/dropdown/labels/comp7_s2"
+msgstr "Onslaught: Crimson Griffin"
+
 msgid "profile/dropdown/labels/epicRandom"
 msgstr "Grand Battle"
 
@@ -116,8 +122,35 @@ msgstr ""
 "• Damage upon your spotting\n"
 "• Damage upon your destroying a track and immobilizing the enemy vehicle."
 
+msgid "profile/params/tooltip/avgAssistedDamage/shortSelf/comp7/body"
+msgstr ""
+"Includes:\n"
+"• Damage upon your spotting (including damage with the help of skills)\n"
+"• Damage upon your destroying a track and immobilizing an enemy vehicle "
+"(including damage with the help of skills)\n"
+"• Damage caused by allies with the help of your skills."
+
+msgid "profile/params/tooltip/avgAssistedDamage/shortSelf/comp7/header"
+msgstr "Damage Caused With Your Assistance"
+
 msgid "profile/params/tooltip/avgAssistedDamage/shortSelf/header"
 msgstr "Damage Caused with Your Assistance"
+
+msgid "profile/params/tooltip/avgAssistedStunDamage/comp7/shortOther/body"
+msgstr ""
+"The ratio between the total damage caused to a stunned enemy (including "
+"stuns with the help of skills) and the number of played battles"
+
+msgid "profile/params/tooltip/avgAssistedStunDamage/comp7/shortOther/header"
+msgstr "Damage to Enemy Vehicles Stunned by Player"
+
+msgid "profile/params/tooltip/avgAssistedStunDamage/comp7/shortSelf/body"
+msgstr ""
+"The ratio between the total damage caused to a stunned enemy (including "
+"stuns with the help of skills) and the number of played battles"
+
+msgid "profile/params/tooltip/avgAssistedStunDamage/comp7/shortSelf/header"
+msgstr "Damage to Enemy Vehicles Stunned by You"
 
 msgid "profile/params/tooltip/avgAssistedStunDamage/shortOther/body"
 msgstr ""
@@ -145,12 +178,28 @@ msgid "profile/params/tooltip/avgDestroyedVehicles/body"
 msgstr ""
 "Ratio of total number of enemy vehicles destroyed to number of battles fought"
 
+msgid "profile/params/tooltip/avgDestroyedVehicles/comp7/body"
+msgstr ""
+"The ratio between the total number of destroyed enemy vehicles (including "
+"vehicles destroyed with the help of skills) and the number of played battles"
+
+msgid "profile/params/tooltip/avgDestroyedVehicles/comp7/header"
+msgstr "Enemy Vehicles Destroyed"
+
 msgid "profile/params/tooltip/avgDestroyedVehicles/header"
 msgstr "Enemy Vehicles Destroyed"
 
 msgid "profile/params/tooltip/avgDetectedEnemies/body"
 msgstr ""
 "Ratio of total number of enemy vehicles spotted to number of battles fought"
+
+msgid "profile/params/tooltip/avgDetectedEnemies/comp7/body"
+msgstr ""
+"The ratio between the total number of spotted enemy vehicles (including "
+"vehicles spotted with the help of skills) and the number of played battles"
+
+msgid "profile/params/tooltip/avgDetectedEnemies/comp7/header"
+msgstr "Enemy Vehicles Spotted"
 
 msgid "profile/params/tooltip/avgDetectedEnemies/header"
 msgstr "Enemy Vehicles Spotted"
@@ -173,16 +222,56 @@ msgstr "Ratio of total experience points earned to number of battles fought"
 msgid "profile/params/tooltip/avgExp/header"
 msgstr "Average Experience per Battle"
 
+msgid "profile/params/tooltip/avgHealthRepair/body"
+msgstr ""
+"The ratio between the total number of restored hit points and the number of "
+"played battles"
+
+msgid "profile/params/tooltip/avgHealthRepair/header"
+msgstr "Hit Points Restored"
+
+msgid "profile/params/tooltip/avgPoiCaptured/body"
+msgstr ""
+"The ratio between the number of captured Points of Interest and the number "
+"of played battles"
+
+msgid "profile/params/tooltip/avgPoiCaptured/header"
+msgstr "Points of Interest Captured"
+
+msgid "profile/params/tooltip/avgPrestigePoints/body"
+msgstr ""
+"The ratio between the total number of Prestige Points earned and the number "
+"of played battles"
+
+msgid "profile/params/tooltip/avgPrestigePoints/header"
+msgstr "Prestige Points"
+
 msgid "profile/params/tooltip/avgReceivedDamage/body"
 msgstr "Ratio of total damage received to number of battles fought"
 
 msgid "profile/params/tooltip/avgReceivedDamage/header"
 msgstr "Damage Received"
 
+msgid "profile/params/tooltip/avgRoleSkillUsed/body"
+msgstr ""
+"The ratio between the total number of Role Skills used and the number of "
+"played battles"
+
+msgid "profile/params/tooltip/avgRoleSkillUsed/header"
+msgstr "Role Skills Used"
+
 msgid "profile/params/tooltip/avgStunNumber/body"
 msgstr ""
 "Ratio of total number of hits that stunned the enemy crew to the number of "
 "battles fought"
+
+msgid "profile/params/tooltip/avgStunNumber/comp7/body"
+msgstr ""
+"The ratio between the total number of hits (including hits with the help of "
+"skills) with stun to the enemy crew and the number of played battles"
+
+msgid "profile/params/tooltip/avgStunNumber/comp7/header"
+msgstr "Number of Stuns"
 
 msgid "profile/params/tooltip/avgStunNumber/header"
 msgstr "Number of Stuns"
@@ -602,6 +691,22 @@ msgstr "Most enemy vehicles destroyed in a battle."
 msgid "profile/params/tooltip/maxDestroyed/vehicle/header"
 msgstr "Most Vehicles Destroyed"
 
+msgid "profile/params/tooltip/maxEquipmentDamageDealt/body"
+msgstr ""
+"The maximum damage caused by both Role Skills and Tactical Skills in one "
+"battle."
+
+msgid "profile/params/tooltip/maxEquipmentDamageDealt/header"
+msgstr "Maximum Damage Caused by Skills per Battle"
+
+msgid "profile/params/tooltip/maxEquipmentDamageDealt/vehicle/body"
+msgstr ""
+"Damage caused by both Role Skills and Tactical Skills is included.\n"
+"The record is in the %(value_0)s"
+
+msgid "profile/params/tooltip/maxEquipmentDamageDealt/vehicle/header"
+msgstr "Maximum Damage Caused by Skills per Battle"
+
 msgid "profile/params/tooltip/maxExp/body"
 msgstr "Record achieved in %(value_0)s"
 
@@ -620,6 +725,35 @@ msgstr "Maximum experience is not displayed in this battle mode."
 msgid "profile/params/tooltip/maxExpDisabled/header"
 msgstr "Maximum Experience in a Battle"
 
+msgid "profile/params/tooltip/maxHealthRepair/body"
+msgstr ""
+"The maximum number of hit points restored for your vehicle and allied "
+"vehicles in one battle."
+
+msgid "profile/params/tooltip/maxHealthRepair/header"
+msgstr "Maximum Restored Hit Points per Battle"
+
+msgid "profile/params/tooltip/maxHealthRepair/vehicle/body"
+msgstr ""
+"The maximum number of hit points restored for your vehicle and allied "
+"vehicles in one battle.\n"
+"The record is in the %(value_0)s"
+
+msgid "profile/params/tooltip/maxHealthRepair/vehicle/header"
+msgstr "Maximum Restored Hit Points per Battle"
+
+msgid "profile/params/tooltip/maxPrestigePoints/body"
+msgstr "The maximum number of Prestige Points earned in one battle."
+
+msgid "profile/params/tooltip/maxPrestigePoints/header"
+msgstr "Maximum Number of Prestige Points per Battle"
+
+msgid "profile/params/tooltip/maxPrestigePoints/vehicle/body"
+msgstr "The record is in the %(value_0)s"
+
+msgid "profile/params/tooltip/maxPrestigePoints/vehicle/header"
+msgstr "Maximum Number of Prestige Points per Battle"
+
 msgid "profile/params/tooltip/maxVictoryPoints/body"
 msgstr "Most victory points earned in a battle across all battles fought"
 
@@ -631,6 +765,20 @@ msgstr "Most victory points earned in a battle across all battles fought"
 
 msgid "profile/params/tooltip/maxWinPoints/header"
 msgstr "Most Victory Points Earned in a Battle"
+
+msgid "profile/params/tooltip/maxWinSeries/body"
+msgstr ""
+"The most consecutive victories achieved in the mode solo and in a Platoon/"
+"Platoon of 7 players."
+
+msgid "profile/params/tooltip/maxWinSeries/header"
+msgstr "Most Consecutive Victories (Solo and Platoon/Super Platoon)"
+
+msgid "profile/params/tooltip/poiCaptured/body"
+msgstr "The number of Points of Interest captured"
+
+msgid "profile/params/tooltip/poiCaptured/header"
+msgstr "Points of Interest Captured"
 
 msgid "profile/params/tooltip/ranked/avgFrags/body"
 msgstr "Average number of enemy vehicles destroyed in a battle"
@@ -728,6 +876,9 @@ msgstr "Current season"
 
 msgid "profile/seasonsdropdown/specific"
 msgstr "Season %(date1)s – %(date2)s"
+
+msgid "profile/section/statistics/scores/maxHealthRepair"
+msgstr "Maximum Restored Hit Points per Battle"
 
 msgid "profile/summary/clan/btnLabel"
 msgstr "Clan Profile"
@@ -1184,8 +1335,20 @@ msgstr "Enemy Vehicles Destroyed"
 msgid "section/statistics/detailed/avgDetectedEnemies"
 msgstr "Enemy vehicles spotted"
 
+msgid "section/statistics/detailed/avgHealthRepaired"
+msgstr "Hit Points Restored"
+
+msgid "section/statistics/detailed/avgPoiCaptured"
+msgstr "Points of Interest Captured"
+
+msgid "section/statistics/detailed/avgPrestigePoints"
+msgstr "Prestige Points"
+
 msgid "section/statistics/detailed/avgReceivedDamage"
 msgstr "Damage received"
+
+msgid "section/statistics/detailed/avgRoleSkillUsed"
+msgstr "Role Skills Used"
 
 msgid "section/statistics/detailed/damageCoefficient"
 msgstr "Damage ratio"
@@ -1222,6 +1385,12 @@ msgstr "Steel Hunter"
 
 msgid "section/statistics/headerText/clan"
 msgstr "Global Map"
+
+msgid "section/statistics/headerText/comp7"
+msgstr "Onslaught: Griffin"
+
+msgid "section/statistics/headerText/comp7_s2"
+msgstr "Onslaught: Crimson Griffin"
 
 msgid "section/statistics/headerText/epicRandom"
 msgstr "Grand Battle"
@@ -1273,6 +1442,9 @@ msgstr "Average Experience per Battle"
 
 msgid "section/statistics/scores/avgExperience/short"
 msgstr "Experience"
+
+msgid "section/statistics/scores/avgPrestigePoints"
+msgstr "Average Number of Prestige Points per Battle"
 
 msgid "section/statistics/scores/avgVictoryPoints"
 msgstr "Average number of victory points"
@@ -1346,11 +1518,23 @@ msgstr "Pillages"
 msgid "section/statistics/scores/maxDamage"
 msgstr "Maximum damage in a battle"
 
+msgid "section/statistics/scores/maxEquipmentDamageDealt"
+msgstr "Maximum Damage Caused by Skills per Battle"
+
 msgid "section/statistics/scores/maxExperience"
 msgstr "Maximum experience in a battle"
 
+msgid "section/statistics/scores/maxPrestigePoints"
+msgstr "Maximum Number of Prestige Points per Battle"
+
 msgid "section/statistics/scores/maxVictoryPoints"
 msgstr "Most victory points earned in a battle"
+
+msgid "section/statistics/scores/maxWinSeries"
+msgstr "Most Consecutive Victories (Solo and Platoon/Super Platoon)"
+
+msgid "section/statistics/scores/poiCaptured"
+msgstr "Points of Interest Captured"
 
 msgid "section/statistics/scores/ranked/avgFrags"
 msgstr "Average number of destroyed vehicles"
@@ -1441,6 +1625,9 @@ msgstr ""
 msgid "section/technique/buttonBar/classiness"
 msgstr "Mastery"
 
+msgid "section/technique/buttonBar/prestigePoints"
+msgstr "Average Number of Prestige Points per Battle"
+
 msgid "section/technique/buttonBar/totalBattles"
 msgstr "Battles"
 
@@ -1466,6 +1653,12 @@ msgstr "No vehicles in the Garage that have fought in Steel Hunter."
 
 msgid "section/technique/emptyScreenLabel/battleType/battleRoyaleSquad"
 msgstr "No vehicles in the Garage that have fought in Steel Hunter."
+
+msgid "section/technique/emptyScreenLabel/battleType/comp7"
+msgstr "There are no vehicles that have fought in Onslaught mode."
+
+msgid "section/technique/emptyScreenLabel/battleType/comp7_season2"
+msgstr "There are no vehicles that have fought in Onslaught mode."
 
 msgid "section/technique/emptyScreenLabel/battleType/epicRandom"
 msgstr "No vehicles in the Garage have fought in the Grand Battle mode"
@@ -1547,6 +1740,12 @@ msgstr "Sort by nation."
 
 msgid "section/technique/sort/tooltip/nation/header"
 msgstr "Nation"
+
+msgid "section/technique/sort/tooltip/prestigePoints/body"
+msgstr "Sort by the average number of Prestige Points per battle"
+
+msgid "section/technique/sort/tooltip/prestigePoints/header"
+msgstr "Average Number of Prestige Points per Battle"
 
 msgid "section/technique/sort/tooltip/technique/body"
 msgstr "Sort by vehicles' type."

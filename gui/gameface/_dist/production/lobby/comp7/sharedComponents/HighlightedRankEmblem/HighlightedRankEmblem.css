@@ -1,0 +1,187 @@
+.RankEmblem_base_d5 {
+    width: var(--imageSize);
+    height: var(--imageSize);
+    background: no-repeat center / cover;
+}
+
+@keyframes HighlightedRankEmblem_fadeIn_6c {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes HighlightedRankEmblem_fadeInThreeQuarters_3b {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+
+@keyframes HighlightedRankEmblem_fadeInHalf_1c {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes HighlightedRankEmblem_fadeOut_e7 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes HighlightedRankEmblem_fadeInWithScale_70 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes HighlightedRankEmblem_slideUp_64 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes HighlightedRankEmblem_scale_20 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes HighlightedRankEmblem_raysAppearance_af {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes HighlightedRankEmblem_rotate_b0 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes HighlightedRankEmblem_reverse-rotate_99 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes HighlightedRankEmblem_glowAppearance_86 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes HighlightedRankEmblem_highlightAppearance_b9 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+
+/* should be percentage of screen width */
+
+.HighlightedRankEmblem_base_29 {
+    position: relative;
+}
+
+.HighlightedRankEmblem_highlights_3d {
+    width: var(--highlightsSize);
+    height: var(--highlightsSize);
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .3s linear, filter .3s linear;
+}
+
+.HighlightedRankEmblem_highlights__gold_3f {
+        filter: grayscale(0%) brightness(250%);
+        transition-delay: .3s;
+    }
+
+.HighlightedRankEmblem_highlights__silver_cd {
+        filter: grayscale(100%) brightness(150%);
+        transition-delay: .3s;
+    }
+
+.HighlightedRankEmblem_highlights__hidden_55 {
+        filter: grayscale(0%) brightness(0%);
+        opacity: 0;
+    }
+
+.HighlightedRankEmblem_highlight_32 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / cover;
+    position: absolute;
+    animation: HighlightedRankEmblem_highlightAppearance_b9 .3s linear .3s both, HighlightedRankEmblem_rotate_b0 80s linear infinite;
+    pointer-events: none;
+}
+
+.HighlightedRankEmblem_highlight__second_ba {
+        animation-direction: normal, reverse;
+    }
+
+.HighlightedRankEmblem_base__static_a0 .HighlightedRankEmblem_highlight_32 {
+        animation: HighlightedRankEmblem_highlightAppearance_b9 .3s linear .3s both;
+    }
+
+.HighlightedRankEmblem_rankEmblem_d0 {
+    position: relative;
+}
+

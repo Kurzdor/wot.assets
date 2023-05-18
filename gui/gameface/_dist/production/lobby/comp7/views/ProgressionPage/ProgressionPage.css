@@ -1,0 +1,1784 @@
+.Heading_base_e6 {
+    color: #FFFFFF;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+}
+    .mediaMedium .Heading_base_e6 {
+        color: #FFFFFF;
+        font-size: 56rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+    .mediaLarge .Heading_base_e6 {
+        color: #FFFFFF;
+        font-size: 73rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.HorizontalBar_base_49 {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+    position: relative;
+}
+
+    .HorizontalBar_base__nonActive_82 {
+        visibility: hidden;
+    }
+
+    .HorizontalBar_base_49 .disable,
+    .HorizontalBar_base_49 .disable:hover {
+        opacity: .3;
+        cursor: default;
+    }
+
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover, .HorizontalBar_rightButton_03:hover {
+        opacity: 1;
+    }
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem 7rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+        opacity: 1;
+    }
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
+        opacity: .7;
+    }
+
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.ProgressionScroll_base_14 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.ProgressionScroll_areaWrapper_0f {
+    height: 100%;
+    mask-image: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);
+}
+
+.ProgressionScroll_areaContent_7c {
+    display: flex;
+    align-content: center;
+    padding-left: var(--offset);
+    padding-right: var(--offset);
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ActiveSeasonState_base_fd {
+    display: flex;
+    align-items: center;
+}
+
+.ActiveSeasonState_calendarIcon_d6 {
+    width: 21rem;
+    height: 21rem;
+    margin-right: 8rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.calendar') no-repeat center / cover;
+    transform: translateY(2rem);
+}
+
+.mediaLarge .ActiveSeasonState_calendarIcon_d6 {
+        width: 20rem;
+        height: 22rem;
+        background-image: url('R.images.gui.maps.icons.comp7.icons.calendarBig');
+}
+
+.ActiveSeasonState_divider_b5 {
+    width: 2rem;
+    height: 17rem;
+    margin: 2rem 8rem 0;
+    background-color: rgba(255,255,255, .5);
+}
+
+.mediaLarge .ActiveSeasonState_divider_b5 {
+        height: 29rem;
+}
+
+.ScheduleSubheading_base_d0 {
+    color: #FFFFFF;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+}
+    .mediaLarge .ScheduleSubheading_base_d0 {
+        color: #FFFFFF;
+        font-size: 24rem;
+        font-weight: 400;
+        line-height: 1.2;
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+.page_base_b1 {
+    background: url('R.images.gui.maps.icons.comp7.backgrounds.comp7_bg') no-repeat center / cover;
+}
+.page_base__leaderboard_d7 {
+        background-image: url('R.images.gui.maps.icons.comp7.backgrounds.leaderboard_bg');
+    }
+.page_base__rankRewards_fb {
+        background-image: url('R.images.gui.maps.icons.comp7.backgrounds.rewards_bg');
+    }
+.page_base__weeklyQuests_f8 {
+        background-image: url('R.images.gui.maps.icons.comp7.backgrounds.quests_bg');
+    }
+.page_heading_05 {
+    padding-top: 54rem;
+}
+.mediaMedium .page_heading_05 {
+        padding-top: 63rem;
+        padding-bottom: 9rem;
+}
+.page_close_a4 {
+    position: absolute;
+    top: 54rem;
+    right: 29rem;
+}
+.mediaMedium .page_close_a4 {
+        top: 63rem;
+}
+.mediaLarge .page_close_a4 {
+        right: 40rem;
+}
+
+.RankEmblem_base_d5 {
+    width: var(--imageSize);
+    height: var(--imageSize);
+    background: no-repeat center / cover;
+}
+
+@keyframes HighlightedRankEmblem_fadeIn_6c {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes HighlightedRankEmblem_fadeInThreeQuarters_3b {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+
+@keyframes HighlightedRankEmblem_fadeInHalf_1c {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes HighlightedRankEmblem_fadeOut_e7 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes HighlightedRankEmblem_fadeInWithScale_70 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes HighlightedRankEmblem_slideUp_64 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes HighlightedRankEmblem_scale_20 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes HighlightedRankEmblem_raysAppearance_af {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes HighlightedRankEmblem_rotate_b0 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes HighlightedRankEmblem_reverse-rotate_99 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes HighlightedRankEmblem_glowAppearance_86 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes HighlightedRankEmblem_highlightAppearance_b9 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+
+/* should be percentage of screen width */
+
+.HighlightedRankEmblem_base_29 {
+    position: relative;
+}
+
+.HighlightedRankEmblem_highlights_3d {
+    width: var(--highlightsSize);
+    height: var(--highlightsSize);
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .3s linear, filter .3s linear;
+}
+
+.HighlightedRankEmblem_highlights__gold_3f {
+        filter: grayscale(0%) brightness(250%);
+        transition-delay: .3s;
+    }
+
+.HighlightedRankEmblem_highlights__silver_cd {
+        filter: grayscale(100%) brightness(150%);
+        transition-delay: .3s;
+    }
+
+.HighlightedRankEmblem_highlights__hidden_55 {
+        filter: grayscale(0%) brightness(0%);
+        opacity: 0;
+    }
+
+.HighlightedRankEmblem_highlight_32 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / cover;
+    position: absolute;
+    animation: HighlightedRankEmblem_highlightAppearance_b9 .3s linear .3s both, HighlightedRankEmblem_rotate_b0 80s linear infinite;
+    pointer-events: none;
+}
+
+.HighlightedRankEmblem_highlight__second_ba {
+        animation-direction: normal, reverse;
+    }
+
+.HighlightedRankEmblem_base__static_a0 .HighlightedRankEmblem_highlight_32 {
+        animation: HighlightedRankEmblem_highlightAppearance_b9 .3s linear .3s both;
+    }
+
+.HighlightedRankEmblem_rankEmblem_d0 {
+    position: relative;
+}
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #FFFFFF;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #F2F2F7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #FEFEEC;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #E9E2BF;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8C8C7E;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362E;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #FF2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #B70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #FEAB34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #EE7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #FFDD99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #CBAC77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80D43A;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7AB300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #CCFFFF;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09E2FF;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #CED9D9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #FFC363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #C9C9B6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #A29B70;
+}
+
+.RankInfo_base_6e {
+    position: relative;
+}
+
+.RankInfo_highlight_71 {
+    width: 276rem;
+    height: 50rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.blue_light') no-repeat center / contain;
+    filter: brightness(150%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.RankInfo_formattedText_a4 {
+    flex-wrap: nowrap;
+    color: #FFFFFF;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 20rem;
+}
+
+.RankItemDivider_base_e4 {
+    width: 152rem;
+    height: 2rem;
+    background-image: linear-gradient(270deg, rgba(91, 139, 193, 0), rgba(102, 156, 212, 1) 50%, rgba(91, 139, 193, 0));
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBar_base_45 {
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+.ProgressBar_base__small_df {
+        height: 2rem;
+    }
+.ProgressBar_background_51 {
+    width: 100%;
+    max-width: 8001px;
+    height: 100%;
+    background-image: var(--progress-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ProgressBar_background__small_46 {
+        height: 2rem;
+    }
+.ProgressBar_lineWrapper_6a {
+    display: flex;
+    flex: 1;
+}
+
+
+.ProgressBarBlink_base_24 {
+    width: 60rem;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    pointer-events: none;
+}
+
+    .ProgressBarBlink_base__small_0f {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressLineImpose_base_80 {
+    max-width: 8001px;
+    height: 100%;
+    background-color: var(--progress-line-base);
+    position: relative;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressLineImpose_base__disabled_cc {
+        background-color: var(--progress-line-disabled);
+    }
+.ProgressLineImpose_base__finished_d4 {
+        background-color: var(--progress-line-finished);
+    }
+.ProgressLineImpose_base__withoutBounce_56 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressLineImpose_pattern_1c {
+    max-width: 8001px;
+    background-image: var(--progress-pattern-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-disabled);
+        left: 0;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-finished);
+    }
+.ProgressLineImpose_gradient_35 {
+    max-width: 8001px;
+    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
+        display: none;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
+        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
+    }
+.ProgressLineImpose_glow_a5 {
+    width: 60rem;
+    max-width: 8001px;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.ProgressLineImpose_glow__left_d8 {
+        left: 1rem;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
+    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+        display: none;
+    }
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaSimple_base_6c {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ProgressBarDeltaSimple_delta_99 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-property: width, transform;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaGrow_base_7e {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressBarDeltaGrow_glow_68 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+
+.RankProgressDivisions_base_fa {
+    display: flex;
+    align-items: flex-end;
+}
+
+.RankProgressDivisions_divisionItem_57 {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 0;
+    margin-bottom: -1rem;
+}
+
+.RankProgressDivisions_divisionItem__current_a0 {
+        position: relative;
+    }
+
+.RankProgressDivisions_highlightContainer_89 {
+    width: 100%;
+    height: 150rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.RankProgressDivisions_radialBack_81 {
+    width: 150%;
+    height: 100%;
+    background-image: radial-gradient(59% 59% at 50% 0%, rgba(255, 42, 0, .12), transparent);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(1, -1);
+}
+
+.RankProgressDivisions_mainBack_4e {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(243, 104, 60, .16), transparent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.RankProgressDivisions_bottomLine_5e {
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    left: 0;
+}
+
+.RankProgressDivisions_bottomLine__first_19 {
+        background-image: linear-gradient(90deg, transparent, #bf684d, transparent);
+        bottom: 0;
+    }
+
+.RankProgressDivisions_bottomLine__second_f4 {
+        background-image: linear-gradient(90deg, transparent, rgba(191, 104, 77, .3), transparent);
+        bottom: 1rem;
+    }
+
+.RankProgressDivisions_bottomLine__third_a1 {
+        background-image: linear-gradient(90deg, transparent, rgba(191, 104, 77, .1), transparent);
+        bottom: 2rem;
+    }
+
+.RankProgressDivisions_divisionText_6e {
+    margin-bottom: 6rem;
+    font-size: 18rem;
+    opacity: .4;
+    position: relative;
+}
+
+.RankProgressDivisions_divisionItem__current_a0 .RankProgressDivisions_divisionText_6e {
+        display: flex;
+        color: #FFDD99;
+        text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+        opacity: 1;
+    }
+
+.RankProgressDivisions_note_94 {
+    font-size: 14rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.RankProgressPoints_base_d4 {
+    color: rgba(255,255,255, .2);
+    font-size: 12rem;
+    position: relative;
+}
+.RankProgressPoints_point_ae {
+    display: flex;
+    position: absolute;
+}
+.RankProgressPoints_base__top_75 .RankProgressPoints_point_ae {
+        bottom: 0;
+    }
+.RankProgressPoints_base__bottom_e0 .RankProgressPoints_point_ae {
+        top: 0;
+    }
+.RankProgressPoints_pointLine_80 {
+    width: 1rem;
+    height: 10rem;
+}
+.RankProgressPoints_pointLine__extended_df {
+        height: 20rem;
+    }
+.RankProgressPoints_base__top_75 .RankProgressPoints_pointLine_80 {
+        background-image: linear-gradient(to top, rgba(255,255,255, .3), transparent);
+    }
+.RankProgressPoints_base__bottom_e0 .RankProgressPoints_pointLine_80 {
+        background-image: linear-gradient(to bottom, rgba(255,255,255, .3), transparent);
+    }
+.RankProgressPoints_pointValue_5b {
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+}
+.RankProgressPoints_pointValue__next_8a {
+        color: rgba(255,255,255, .7);
+        text-shadow: 0 4rem 4rem rgba(0, 0, 0, .25), 0 0 2rem rgba(233, 241, 255, .6);
+    }
+.RankProgressPoints_base__top_75 .RankProgressPoints_pointValue_5b {
+        bottom: 10rem;
+    }
+.RankProgressPoints_base__bottom_e0 .RankProgressPoints_pointValue_5b {
+        top: 10rem;
+    }
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+.RankProgress_base_6f {
+    display: flex;
+    flex-direction: column;
+    width: 380rem;
+    color: #FFFFFF;
+    transition: opacity .3s linear;
+}
+.mediaMedium .RankProgress_base_6f {
+        width: 430rem;
+}
+.RankProgress_base__hidden_7d {
+        opacity: 0;
+    }
+.RankProgress_base__inactive_3b {
+        opacity: .7;
+    }
+.RankProgress_base__active_c8 {
+        opacity: 1;
+        transition-delay: .3s;
+    }
+.RankProgress_progressWrapper_e4 {
+    padding: 3rem 0;
+    border-top: 1rem solid rgba(255,255,255, .2);
+    border-bottom: 1rem solid rgba(255,255,255, .2);
+}
+
+.RankStatusDescription_base_57 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: inline;
+    width: 120%;
+    max-width: 500rem;
+    text-align: center;
+}
+    .mediaLarge .RankStatusDescription_base_57 {
+        width: 100%;
+}
+
+.AchievedRankStatus_base_6f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.LastUpdateNote_base_cf {
+    display: flex;
+    align-items: center;
+}
+
+.LastUpdateNote_infoIcon_de {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.infoIcon') no-repeat center / cover;
+}
+
+.LastUpdate_base_40 {
+    color: #595950;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-top: 10rem;
+}
+
+.LastUpdate_dataUpdate_2d {
+    animation: LastUpdate_blink_68 2s infinite;
+}
+
+@keyframes LastUpdate_blink_68 {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.CurrentRankStatus_base_a0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.FutureRankStatus_base_7e {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.FutureRankStatus_lock_0d {
+    width: 49rem;
+    height: 64rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.lockBig') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -40rem);
+}
+
+@keyframes RankItem_fadeIn_5f {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes RankItem_fadeInThreeQuarters_a3 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+
+@keyframes RankItem_fadeInHalf_de {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes RankItem_fadeOut_b1 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes RankItem_fadeInWithScale_8b {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes RankItem_slideUp_e2 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes RankItem_scale_cf {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes RankItem_raysAppearance_9f {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes RankItem_rotate_78 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes RankItem_reverse-rotate_b9 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes RankItem_glowAppearance_32 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes RankItem_highlightAppearance_69 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+
+/* should be percentage of screen width */
+
+.RankItem_base_a1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* should be fluid for rank dividers positioning */
+    padding-bottom: 150rem;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.RankItem_rankEmblem__future_95 {
+        opacity: .5;
+    }
+
+.RankItem_rankDescription_68 {
+    display: flex;
+    height: 150rem; /* should be static for correct positioning of emblem without rankDescription context */
+    opacity: 0;
+    position: absolute; /* should be cut from context due to extra width of children (more than parent container by design) */
+    top: 100%;
+    transition: opacity .3s linear;
+    pointer-events: none;
+}
+
+/* hidden siblings can have tooltips, block them here */
+
+.RankItem_rankDescription__text_7f {
+        padding-top: 50rem;
+    }
+
+.mediaLarge .RankItem_rankDescription__text_7f {
+            padding-top: 62rem;
+}
+
+.RankItem_rankDescription__progress_6c {
+        padding-top: 29rem;
+    }
+
+.mediaLarge .RankItem_rankDescription__progress_6c {
+            padding-top: 41rem;
+}
+
+.RankItem_rankDescription__viewed_74 {
+        opacity: 1;
+        transition-delay: .3s;
+        pointer-events: auto;
+    }
+
+.RankItem_rankInfo_9a {
+    padding-top: 16rem;
+    padding-bottom: 14rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mediaLarge .RankItem_rankInfo_9a {
+        padding-top: 28rem;
+}
+
+.RankItem_dividerContainer_ad {
+    position: absolute;
+    top: calc(var(--emblemSize)/2);
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+@keyframes Item_fadeIn_87 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Item_fadeInThreeQuarters_63 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+
+@keyframes Item_fadeInHalf_5d {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes Item_fadeOut_bf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes Item_fadeInWithScale_69 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes Item_slideUp_2f {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Item_scale_8b {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes Item_raysAppearance_aa {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Item_rotate_5a {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes Item_reverse-rotate_f2 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes Item_glowAppearance_f7 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Item_highlightAppearance_0e {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+
+/* should be percentage of screen width */
+
+.Item_base_6f {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--itemWidth);
+    height: 100%;
+    position: relative;
+}
+
+.Item_base__noTitle_e7 {
+        /* should be synced with .title height */
+        padding-top: 23.4rem;
+    }
+
+.mediaLargeHeight .Item_base__noTitle_e7 {
+            padding-top: 31.2rem;
+}
+
+.Item_title_f3 {
+    color: #FEFEEC;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    width: 100%;
+    margin-bottom: 10rem;
+    line-height: 1.3;
+    text-align: center;
+    opacity: .3;
+    transition: opacity .3s linear;
+}
+
+.mediaLargeHeight .Item_title_f3 {
+        color: #FEFEEC;
+        font-size: 24rem;
+        font-weight: 700;
+        line-height: 1.2;
+        line-height: 1.3;
+}
+
+.Item_title__active_a9 {
+        opacity: 1;
+        transition-delay: .3s;
+    }
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+.RatingScore_base_50 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.RatingScore_rating_c0 {
+    position: relative;
+}
+.RatingScore_score_41 {
+    color: #FFFFFF;
+    font-size: 44rem;
+    font-weight: 700;
+    line-height: 110%;
+}
+.mediaLarge .RatingScore_score_41 {
+        color: #FFFFFF;
+        font-size: 73rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 6rem;
+}
+.RatingScore_rankInactivity_84 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    right: -5rem;
+    transform: translateX(100%);
+}
+.RatingScore_rankInactivityCount_31 {
+    color: #E9E2BF;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-right: 2rem;
+}
+.RatingScore_rankInactivityIconContainer_d4 {
+    width: 16rem;
+    height: 16rem;
+    position: relative;
+}
+.RatingScore_rankInactivityIcon_75 {
+    width: 42rem;
+    height: 43rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.timer') no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.RatingScore_title_b4 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+@keyframes ItemFooter_fadeIn_08 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ItemFooter_fadeInThreeQuarters_25 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+
+@keyframes ItemFooter_fadeInHalf_ec {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes ItemFooter_fadeOut_14 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes ItemFooter_fadeInWithScale_7d {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes ItemFooter_slideUp_ad {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ItemFooter_scale_55 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes ItemFooter_raysAppearance_f4 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ItemFooter_rotate_bb {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ItemFooter_reverse-rotate_d0 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes ItemFooter_glowAppearance_d8 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ItemFooter_highlightAppearance_ac {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+
+/* should be percentage of screen width */
+
+.ItemFooter_base_5a {
+    width: 100%;
+    height: 110rem;
+    padding-top: 2rem;
+    position: relative;
+}
+
+.mediaLarge .ItemFooter_base_5a {
+        height: 180rem;
+}
+
+.ItemFooter_background_29 {
+    width: 100%;
+    padding-bottom: 18.67%;
+    background: url('R.images.gui.maps.icons.comp7.icons.footerBg') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ItemFooter_divider_58 {
+    width: 100%;
+    height: 2rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.footerDivider') no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ItemFooter_light_5b {
+    width: 81rem;
+    height: 38rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.footerLight') no-repeat center / contain;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    pointer-events: none;
+}
+
+.ItemFooter_footer_3c {
+    width: 100%;
+    height: 100%;
+}
+
+.ItemFooter_rankItemFooter_66 {
+    top: 50%;
+    transform: translateY(-60%);
+}
+
+@keyframes ProgressionPage_fadeIn_ab {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ProgressionPage_fadeInThreeQuarters_7d {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+
+@keyframes ProgressionPage_fadeInHalf_cb {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes ProgressionPage_fadeOut_10 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes ProgressionPage_fadeInWithScale_33 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes ProgressionPage_slideUp_75 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ProgressionPage_scale_b7 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes ProgressionPage_raysAppearance_62 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ProgressionPage_rotate_30 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ProgressionPage_reverse-rotate_a0 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes ProgressionPage_glowAppearance_98 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ProgressionPage_highlightAppearance_12 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+
+/* should be percentage of screen width */
+
+.ProgressionPage_base_8a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.ProgressionPage_content_b3 {
+    opacity: 0;
+    animation-name: ProgressionPage_fadeIn_ab;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1;
+    margin-bottom: 12rem;
+}
+
+.mediaMedium .ProgressionPage_content_b3 {
+        margin-bottom: 20rem;
+}
+
+.mediaLarge .ProgressionPage_content_b3 {
+        margin-bottom: 33rem;
+}
+
+.ProgressionPage_areaContainer_19 {
+    flex: 1 1;
+}
+
+.ProgressionPage_areaWrapper_49 {
+    mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 4%, #c4c4c4 30%, #c4c4c4 70%, rgba(196,196,196, .1) 96%, transparent);
+}
+
+.mediaSmall .ProgressionPage_areaWrapper_49 {
+        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 6%, #c4c4c4 30%, #c4c4c4 70%, rgba(196,196,196, .1) 94%, transparent);
+}
+
+.mediaMedium .ProgressionPage_areaWrapper_49 {
+        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 2%, #c4c4c4 30%, #c4c4c4 70%, rgba(196,196,196, .1) 98%, transparent);
+}
+
+.mediaLarge .ProgressionPage_areaWrapper_49 {
+        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 4%, #c4c4c4 35%, #c4c4c4 65%, rgba(196,196,196, .1) 96%, transparent);
+}
+
+.mediaExtraLarge .ProgressionPage_areaWrapper_49 {
+        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 6%, #c4c4c4 30%, #c4c4c4 70%, rgba(196,196,196, .1) 94%, transparent);
+}
+
+.ProgressionPage_bar_a5 {
+    width: 78vw;
+}
+
+.ProgressionPage_footer_34 {
+    width: 78vw;
+}
+

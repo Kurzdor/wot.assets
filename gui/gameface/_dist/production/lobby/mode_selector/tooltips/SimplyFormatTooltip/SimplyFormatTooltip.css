@@ -1,0 +1,139 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem; /* border offset*/
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.TooltipDecorator_decoratorContent_de {
+    background-color: #000;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FormatTextWithColorTags_blackReal_d5 {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_d8 {
+    color: #FFFFFF;
+}
+
+.FormatTextWithColorTags_white_b9 {
+    color: #F2F2F7;
+}
+
+.FormatTextWithColorTags_whiteOrange_ea {
+    color: #FEFEEC;
+}
+
+.FormatTextWithColorTags_whiteSpanish_54 {
+    color: #E9E2BF;
+}
+
+.FormatTextWithColorTags_par_c1 {
+    color: #8C8C7E;
+}
+
+.FormatTextWithColorTags_parSecondary_4e {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_14 {
+    color: #37362E;
+}
+
+.FormatTextWithColorTags_red_d9 {
+    color: #FF2717;
+}
+
+.FormatTextWithColorTags_redDark_ea {
+    color: #B70000;
+}
+
+.FormatTextWithColorTags_yellow_48 {
+    color: #FEAB34;
+}
+
+.FormatTextWithColorTags_orange_ad {
+    color: #EE7000;
+}
+
+.FormatTextWithColorTags_cream_96 {
+    color: #FFDD99;
+}
+
+.FormatTextWithColorTags_brown_27 {
+    color: #CBAC77;
+}
+
+.FormatTextWithColorTags_greenBright_04 {
+    color: #80D43A;
+}
+
+.FormatTextWithColorTags_green_58 {
+    color: #7AB300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_b3 {
+    color: #CCFFFF;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_ab {
+    color: #09E2FF;
+}
+
+.FormatTextWithColorTags_cred_d3 {
+    color: #CED9D9;
+}
+
+.FormatTextWithColorTags_gold_28 {
+    color: #FFC363;
+}
+
+.FormatTextWithColorTags_bond_74 {
+    color: #C9C9B6;
+}
+
+.FormatTextWithColorTags_prom_58 {
+    color: #A29B70;
+}
+
+.SimplyFormatTooltipApp_base_08 {
+    width: 100%;
+    max-width: 349rem;
+    padding: 13rem 15rem 17rem 20rem;
+}
+
+.SimplyFormatTooltipApp_header_db {
+    color: #E9E2BF;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.SimplyFormatTooltipApp_header__withBody_6a {
+        margin-bottom: 5rem;
+    }
+
+.SimplyFormatTooltipApp_body_eb {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    white-space: pre;
+}
+

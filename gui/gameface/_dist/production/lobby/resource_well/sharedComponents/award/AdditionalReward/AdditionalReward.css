@@ -1,0 +1,138 @@
+.AdditionalReward_base_6a {
+    position: relative;
+    z-index: 0;
+}
+
+.AdditionalReward_info_51 {
+    color: #FFDD99;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mediaMedium .AdditionalReward_info_51 {
+        color: #FFDD99;
+        font-size: 20rem;
+        font-weight: 400;
+        line-height: 1.2;
+}
+
+.AdditionalReward_infoIco_60 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.resourceWell.icon_info') no-repeat center / contain;
+    transform: translateY(2rem);
+}
+
+.AdditionalReward_content_7d {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.AdditionalReward_shadow_15 {
+    width: 460rem;
+    height: 162rem;
+    background: url('R.images.gui.maps.icons.resourceWell.award.number_shadow') no-repeat center / contain;
+    position: absolute;
+    left: 50%;
+    z-index: -2;
+    pointer-events: none;
+}
+
+.AdditionalReward_shadow__top_26 {
+        top: -59rem;
+        transform: translateX(-50%) rotate(180deg);
+    }
+
+.mediaExtraLarge .AdditionalReward_shadow__top_26 {
+            top: -58rem;
+}
+
+.AdditionalReward_shadow__bottom_50 {
+        bottom: -59rem;
+        transform: translateX(-50%);
+    }
+
+.AdditionalReward_bg_ea {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.gui.maps.icons.resourceWell.award.bg_s') no-repeat center / contain;
+    z-index: -1;
+}
+
+.mediaLarge .AdditionalReward_bg_ea {
+        background-image: url('R.images.gui.maps.icons.resourceWell.award.bg_m');
+}
+
+.AdditionalReward_glow_a2 {
+    width: 180rem;
+    height: 180rem;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.mediaLarge .AdditionalReward_glow_a2 {
+        width: 220rem;
+        height: 220rem;
+}
+
+.AdditionalReward_reward_37 {
+    width: 642rem;
+    height: 96rem;
+    background: url('R.images.gui.maps.icons.resourceWell.award.muzzle_s') no-repeat center / contain;
+}
+
+.mediaLarge .AdditionalReward_reward_37 {
+        width: 670rem;
+        height: 128rem;
+        background-image: url('R.images.gui.maps.icons.resourceWell.award.muzzle_m');
+}
+
+.AdditionalReward_tooltip_6a {
+    width: 150rem;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.mediaLarge .AdditionalReward_tooltip_6a {
+        width: 180rem;
+}
+
+.AdditionalReward_number_a3 {
+    color: #F2F2F7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-54%, -50%) rotate(-60deg);
+}
+
+.mediaLarge .AdditionalReward_number_a3 {
+        font-size: 42rem;
+}
+
+.AdditionalReward_texture_4c {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.gui.maps.icons.resourceWell.award.texture') no-repeat center / cover;
+    mix-blend-mode: darken;
+}
+
