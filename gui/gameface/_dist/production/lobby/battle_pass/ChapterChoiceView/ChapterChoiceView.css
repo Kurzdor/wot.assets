@@ -1786,6 +1786,12 @@
     z-index: -2;
     transform: translate(-50%, -50%);
 }
+.Emblem_extra__micro_f7 {
+        width: 60rem;
+        height: 60rem;
+        background-image: url('R.images.gui.maps.icons.battlePass.logo.extra_flags_micro');
+        top: 24rem;
+    }
 .Emblem_extra__small_28 {
         width: 100rem;
         height: 100rem;

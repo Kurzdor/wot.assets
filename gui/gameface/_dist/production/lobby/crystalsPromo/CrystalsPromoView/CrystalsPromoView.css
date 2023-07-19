@@ -772,14 +772,12 @@
     flex-direction: column;
     padding-top: 15rem;
 }
-
-    .HowToEarn_base__big_3d {
+    .mediaLarge .HowToEarn_base_69 {
         padding-top: 80rem;
-    }
-
-    .HowToEarn_base__exstra_87 {
+}
+    .mediaExtraLarge .HowToEarn_base_69 {
         padding-top: 130rem;
-    }
+}
 
 .HowToEarn_layoutContainer_c5 {
     display: flex;
@@ -788,6 +786,7 @@
 
 .HowToEarn_modsList_89 {
     display: flex;
+    justify-content: center;
     margin-top: 40rem;
 }
 
@@ -826,12 +825,8 @@
     white-space: pre;
 }
 
-.HowToEarn_mod__medium_fe {
-        margin: 0 50rem;
-    }
-
-.HowToEarn_mod__ranked_35 {
-        background-image: url('R.images.gui.maps.icons.crystalsInfo.earn.c_64x64_Rangovy_boy');
+.HowToEarn_mod_f4 + .HowToEarn_mod_f4 {
+        margin-left: 50rem;
     }
 
 .HowToEarn_mod__general_47 {

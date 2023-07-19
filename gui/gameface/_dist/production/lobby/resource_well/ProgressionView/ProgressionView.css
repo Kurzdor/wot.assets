@@ -262,11 +262,8 @@
     position: relative;
     z-index: 1;
 }
-    .mediaLarge .EventInfo_base_7d {
-        margin-top: 10rem;
-}
     .mediaExtraLarge .EventInfo_base_7d {
-        margin: 25rem;
+        margin: 10rem 25rem 25rem;
 }
 
 .EventInfo_title_d4 {
@@ -290,13 +287,6 @@
         font-size: 73rem;
         font-weight: 700;
         line-height: 1.1;
-}
-
-.mediaExtraLarge .EventInfo_title_d4 {
-        color: #F2F2F7;
-        font-size: 144rem;
-        font-weight: 700;
-        line-height: 1;
 }
 
 .EventInfo_description_c5 {
@@ -1821,14 +1811,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: url('R.images.gui.maps.icons.resourceWell.timer.shine_timer_small') no-repeat center / contain;
     opacity: 1;
     position: relative;
-    top: -69rem;
+    top: -129rem;
 }
 
 .mediaMedium .TimerMainScreen_shineBg_77 {
         width: 700rem;
         height: 394rem;
         background-image: url('R.images.gui.maps.icons.resourceWell.timer.shine_timer');
-        top: -122rem;
+        top: -182rem;
 }
 
 .TimerMainScreen_content_24 {

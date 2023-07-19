@@ -508,7 +508,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-duration: .4s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(.07, .82, .17, 1);
-    animation-delay: 0;
+    animation-delay: 0s;
     animation-iteration-count: 1;
     display: flex;
     justify-content: center;
@@ -925,10 +925,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .MainReward_base__size232_59 .MainReward_value_98,
     .MainReward_base__size180_bf .MainReward_value_98 {
-        color: #E9E2BF;
         font-size: 20rem;
-        font-weight: 400;
-        line-height: 1.2;
     }
 
 .MainReward_base__size600_09 .MainReward_value_98 {
@@ -1116,7 +1113,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .VehicleReward_base__size180_45 .VehicleReward_title_55 {
-        color: #8C8C7E;
+        color: #E9E2BF;
         font-size: 16rem;
         font-weight: 400;
         line-height: 1.25;
@@ -1170,7 +1167,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .VehicleReward_base__size180_45 .VehicleReward_rent_89 {
-        color: #8C8C7E;
+        color: #FFDD99;
         font-size: 14rem;
         font-weight: 400;
         line-height: 1.3;

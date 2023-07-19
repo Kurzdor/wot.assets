@@ -1424,6 +1424,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
 }
 
+.App_shadow__common_46 {
+        background: rgba(0, 0, 0, .5);
+    }
+
 .App_close_9c {
     position: absolute;
     top: 40rem;

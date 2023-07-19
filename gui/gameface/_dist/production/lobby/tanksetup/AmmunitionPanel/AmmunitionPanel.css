@@ -2520,12 +2520,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Groups_group_1f {
-    display: flex;
-    flex-direction: column;
+    margin-right: 20rem;
 }
 
-.Groups_group_1f + .Groups_group_1f {
-        margin-left: 20rem;
+.Groups_group_1f:last-child {
+        margin-right: 0rem;
     }
 
 .Groups_groupWrapper_70 {

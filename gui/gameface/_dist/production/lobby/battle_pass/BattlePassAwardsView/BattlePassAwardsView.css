@@ -1469,6 +1469,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
+.mediaSmall .Reward_base_14 {
+        margin: 0 10rem;
+}
+
+.mediaMedium .Reward_base_14 {
+        margin: 0;
+}
+
 .Reward_imageWrapper_5a {
     position: relative;
 }
@@ -1515,7 +1523,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-timing-function: cubic-bezier(.07, .82, .17, 1);
     animation-delay: 1.4s;
     animation-iteration-count: 1;
-    width: 100%;
+    width: 214rem;
+    text-align: center;
     position: relative;
     z-index: 4;
 }

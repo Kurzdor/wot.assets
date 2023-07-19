@@ -700,6 +700,28 @@
     background: no-repeat center / cover;
     position: relative;
 }
+.BattlePassProgressionsViewContent_base__extra_e2 {
+        --widget-size: 418rem;
+        background-color: #131012;
+        background-position: 100% 50%;
+        background-size: 1640rem 820rem;
+    }
+.mediaSmall .BattlePassProgressionsViewContent_base__extra_e2 {
+            background-size: 1940rem 970rem;
+            --widget-size: 506rem;
+}
+.mediaMedium .BattlePassProgressionsViewContent_base__extra_e2 {
+            --widget-size: 580rem;
+            background-size: 2336rem 1168rem;
+}
+.mediaLarge .BattlePassProgressionsViewContent_base__extra_e2 {
+            --widget-size: 689rem;
+            background-size: 2880rem 1440rem;
+}
+.mediaExtraLarge .BattlePassProgressionsViewContent_base__extra_e2 {
+            --widget-size: 931rem;
+            background-size: 3800rem 1900rem;
+}
 .BattlePassProgressionsViewContent_header_76 {
     margin-top: 32rem;
     position: absolute;
@@ -718,19 +740,30 @@
         margin-top: -50rem;
 }
 .BattlePassProgressionsViewContent_progression__extraChapter_01 {
-        margin-right: 302rem;
+        margin-right: var(--widget-size);
     }
-.mediaSmall .BattlePassProgressionsViewContent_progression__extraChapter_01 {
-            margin-right: 335rem;
+.BattlePassProgressionsViewContent_extraChapterWidget_e2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--widget-size);
+    position: absolute;
+    top: 50%;
+    right: 30rem;
+    transform: translateY(40%);
 }
-.mediaMedium .BattlePassProgressionsViewContent_progression__extraChapter_01 {
-            margin-right: 396rem;
+.mediaSmall .BattlePassProgressionsViewContent_extraChapterWidget_e2 {
+        transform: translateY(50%);
 }
-.mediaLarge .BattlePassProgressionsViewContent_progression__extraChapter_01 {
-            margin-right: 610rem;
+.mediaMedium .BattlePassProgressionsViewContent_extraChapterWidget_e2 {
+        transform: translateY(80%);
 }
-.mediaExtraLarge .BattlePassProgressionsViewContent_progression__extraChapter_01 {
-            margin-right: 820rem;
+.mediaLarge .BattlePassProgressionsViewContent_extraChapterWidget_e2 {
+        transform: translateY(100%);
+}
+.mediaExtraLarge .BattlePassProgressionsViewContent_extraChapterWidget_e2 {
+        transform: translateY(140%);
 }
 .BattlePassProgressionsViewContent_footer_13 {
     flex-direction: column;
@@ -759,9 +792,82 @@
         top: 6rem;
 }
 
-.FormatText_base_d0 {
+.ExtraChapterWidget_base_61 {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 10rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.ExtraChapterWidget_glow_e7 {
+    width: 500rem;
+    height: 160rem;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(13, 13, 13, .5) 54%, transparent 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.ExtraChapterWidget_vehicle_dc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-width: 150rem;
+    height: 100%;
+    position: relative;
+}
+
+.ExtraChapterWidget_vehicleCaption_39 {
+    margin-bottom: 2rem;
+    color: #ffc363;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 17rem;
+}
+
+.mediaMedium .ExtraChapterWidget_vehicleCaption_39 {
+        margin-top: 11rem;
+        margin-bottom: 4rem;
+        font-size: 18rem;
+}
+
+.ExtraChapterWidget_vehicleBg_ce {
+    width: 232rem;
+    height: 174rem;
+    background: no-repeat center / contain;
+    opacity: .5;
+    position: absolute;
+    right: -75rem;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.mediaMedium .ExtraChapterWidget_vehicleBg_ce {
+        width: 360rem;
+        height: 270rem;
+}
+
+.ExtraChapterWidget_vehicleInfo_44 {
+    opacity: .9;
+}
+
+.mediaMedium .ExtraChapterWidget_vehicleInfo_44 {
+        font-size: 36rem;
+}
+
+.ExtraChapterWidget_separatorBg_ab {
+    z-index: -1;
+}
+
+.ExtraChapterWidget_styleDescription_fe {
+    min-width: 150rem;
 }
 
 .Preview_base_1f {
@@ -819,283 +925,129 @@
         transform: translateY(0rem);
     }
 
-.ExtraChapterWidget_base_61 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 352rem;
-    height: 629rem;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    z-index: 0;
-    transform: translateY(-50%);
-    pointer-events: auto;
-}
-    .mediaSmall .ExtraChapterWidget_base_61 {
-        width: 385rem;
-        height: 668rem;
-}
-    .mediaMedium .ExtraChapterWidget_base_61 {
-        width: 446rem;
-        height: 682rem;
-}
-    .mediaLarge .ExtraChapterWidget_base_61 {
-        width: 660rem;
-        height: 969rem;
-}
-    .mediaExtraLarge .ExtraChapterWidget_base_61 {
-        width: 870rem;
-        height: 1231rem;
+.Separator_base_c5 {
+    width: 55rem;
+    height: 100rem;
+    position: relative;
 }
 
-.ExtraChapterWidget_background_c4 {
-    width: 500rem;
-    height: 768rem;
-    background: url('R.images.gui.maps.icons.battlePass.progression.extra.tankExtraSmall') no-repeat center / contain;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    transform: translateY(36rem);
-    pointer-events: none;
-}
-
-.mediaSmall .ExtraChapterWidget_background_c4 {
-        width: 520rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.progression.extra.tankSmall');
-        transform: translateY(10rem);
-}
-
-.mediaMedium .ExtraChapterWidget_background_c4 {
-        width: 600rem;
-        height: 900rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.progression.extra.tankMedium');
-        transform: translateY(60rem);
-}
-
-.mediaLarge .ExtraChapterWidget_background_c4 {
-        width: 900rem;
-        height: 1080rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.progression.extra.tankLarge');
-        transform: translateY(10rem);
-}
-
-.mediaExtraLarge .ExtraChapterWidget_background_c4 {
-        width: 1200rem;
-        height: 1440rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.progression.extra.tankExtraLarge');
-        transform: translateY(80rem);
-}
-
-.ExtraChapterWidget_content_a7 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 415rem;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    z-index: 2;
-    transform: translate(-50%, -50%);
-    pointer-events: auto;
-}
-
-.mediaExtraLarge .ExtraChapterWidget_content_a7 {
-        width: 769rem;
-        height: 452rem;
-}
-
-.ExtraChapterWidget_shadow_25 {
-    width: 682rem;
-    height: 530rem;
-    background: radial-gradient(50% 50% at 50% 50%, #0d0d0d 0%, rgba(13, 13, 13, 0) 100%);
+.Separator_separatorBg_28 {
+    width: 180rem;
+    height: 180rem;
+    background: url('R.images.gui.maps.icons.battlePass.progression.extra_chapter_separator') no-repeat center / contain;
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 1;
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
 
-.ExtraChapterWidget_wreath_e3 {
-    width: 120rem;
-    height: 110rem;
-    background: url('R.images.gui.maps.icons.battlePass.progression.extra.wreath') no-repeat center / contain;
+.Separator_preview_44 {
+    width: 60rem;
+    height: 60rem;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
+    top: -15rem;
+    left: 54%;
     transform: translate(-50%, -50%);
 }
 
-.mediaSmall .ExtraChapterWidget_wreath_e3 {
-        width: 165rem;
-        height: 153rem;
+.mediaMedium .Separator_preview_44 {
+        top: -30rem;
 }
 
-.ExtraChapterWidget_wrapper_4d {
+.FormatText_base_d0 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    pointer-events: auto;
+    flex-wrap: wrap;
 }
 
-.ExtraChapterWidget_rewardLabel_7e {
-    color: #CED9D9;
-    font-size: 14rem;
+.StyleDescription_base_b1 {
+    flex: 1;
+}
+
+.StyleDescription_title_9e {
+    margin-bottom: 4rem;
+    color: rgba(242,242,247, .9);
+    font-size: 18rem;
     font-weight: 700;
-    line-height: 1.15;
-    margin-bottom: 10rem;
+    line-height: 1.1;
 }
 
-.mediaSmall .ExtraChapterWidget_rewardLabel_7e {
-        font-size: 18rem;
+.mediaMedium .StyleDescription_title_9e {
+        font-size: 22rem;
 }
 
-.mediaLarge .ExtraChapterWidget_rewardLabel_7e {
-        font-size: 24rem;
-}
-
-.mediaExtraLarge .ExtraChapterWidget_rewardLabel_7e {
-        font-size: 28rem;
-}
-
-.ExtraChapterWidget_rewardText_5a {
+.StyleDescription_subTitle_99 {
     display: flex;
-    justify-content: center;
-}
-
-.ExtraChapterWidget_rewardCaption_04 {
-    color: #8C8C7E;
-    font-size: 10rem;
+    align-items: center;
+    color: #FEFEEC;
+    font-size: 14rem;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
-.mediaSmall .ExtraChapterWidget_rewardCaption_04 {
-        font-size: 14rem;
-}
-
-.mediaLarge .ExtraChapterWidget_rewardCaption_04 {
+.mediaMedium .StyleDescription_subTitle_99 {
         font-size: 16rem;
 }
 
-.mediaExtraLarge .ExtraChapterWidget_rewardCaption_04 {
-        font-size: 18rem;
+.StyleDescription_subTitleTextWrapper_36 {
+    max-width: 100%;
+    overflow: hidden;
 }
 
-.ExtraChapterWidget_captionText_0c {
-    margin-top: -20rem;
+.StyleDescription_subTitleText_c8 {
+    white-space: nowrap;
 }
 
-.mediaSmall .ExtraChapterWidget_captionText_0c {
-        margin-top: -10rem;
+.StyleDescription_subTitleText__truncated_0f {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+.StyleDescription_infoIcon_30 {
+    width: 27rem;
+    height: 26rem;
+    margin: -4rem -2rem -5rem;
+    background: url('R.images.gui.maps.icons.battlePass.progression.info') no-repeat center / contain;
 }
 
-.mediaLarge .ExtraChapterWidget_captionText_0c {
-        margin-top: -36rem;
-}
-
-.ExtraChapterWidget_preview_4a {
-    width: 60rem;
-    height: 60rem;
-    margin-top: -50rem;
-    margin-bottom: 60rem;
-    position: relative;
-    z-index: 4;
-}
-
-.mediaMedium .ExtraChapterWidget_preview_4a {
-        margin-bottom: 80rem;
-}
-
-.ExtraChapterWidget_timer_9b {
-    width: 200rem;
-    height: 30rem;
-    margin-top: 40rem;
-    position: relative;
-}
-
-.Timer_base_4c {
+.StyleDescription_remark_0e {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 18rem;
-    position: relative;
-}
-
-.Timer_light_77 {
-    width: 309rem;
-    height: 232rem;
-    background: url('R.images.gui.maps.icons.battlePass.progression.extra.timerLight') no-repeat center / contain;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 0;
-    transform: translate(-50%, -50%);
-}
-
-.Timer_icon_f5 {
-    width: 37rem;
-    height: 37rem;
-    margin-top: -4rem;
-    background: url('R.images.gui.maps.icons.battlePass.tooltips.time_icon_glow') center / cover no-repeat;
-}
-
-.mediaSmall .Timer_icon_f5 {
-        margin-top: -1rem;
-}
-
-.Timer_value_3f {
-    margin-top: -5rem;
-    color: #FFFFFF;
-    font-size: 20rem;
+    margin-top: 6rem;
+    color: #FFDD99;
+    font-size: 14rem;
     font-weight: 400;
-    z-index: 1;
+    line-height: 1.3;
 }
 
-.mediaSmall .Timer_value_3f {
-        margin-top: -7rem;
-        font-size: 24rem;
+.mediaMedium .StyleDescription_remark_0e {
+        font-size: 16rem;
+}
+
+.StyleDescription_lockIcon_6e {
+    width: 46rem;
+    height: 46rem;
+    margin: -14rem -11rem -16rem -17rem;
+    background: url('R.images.gui.maps.icons.battlePass.progression.icon_lock') no-repeat center / contain;
 }
 
 .VehicleInfo_base_45 {
     display: flex;
+    color: #F2F2F7;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
-.VehicleInfo_icon_00 {
-    width: 42rem;
-    height: 38rem;
-    margin: 2rem -10rem;
-    background: no-repeat center / contain;
-    position: relative;
-    top: -10rem;
+.VehicleInfo_type_2e {
+    width: 74rem;
+    height: 74rem;
+    margin: -22rem -12rem;
+    background: center / contain no-repeat;
 }
 
-.VehicleInfo_icon__elite_81 {
-        margin: 0 -6rem;
-    }
-
-.mediaLarge .VehicleInfo_icon_00 {
-        width: 83rem;
-        height: 73rem;
-        margin: 0 -23rem;
-        background: no-repeat center / contain;
-        position: relative;
-        top: -18rem;
+.mediaMedium .VehicleInfo_type_2e {
+        margin: -9rem -12rem -13rem;
 }
-
-.mediaLarge .VehicleInfo_icon__elite_81 {
-            margin: 0 -16rem;
-        }
 
 .CButton_base_40 {
     display: flex;
@@ -1345,6 +1297,23 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .mediaLarge .Footer_buttonWrapper_fc {
         min-width: 160rem;
+}
+.Footer_buttonWrapper__isExtra_ec {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: -15rem 0 -15rem 68rem;
+    }
+.mediaMedium .Footer_buttonWrapper__isExtra_ec {
+            margin: -8rem 0 -8rem 72rem;
+}
+.Footer_multicurrencyIcon_bc {
+    width: 68rem;
+    height: 48rem;
+    background: url('R.images.gui.maps.icons.battlePass.progression.extra.multicurrencyIcon') no-repeat center / contain;
+}
+.mediaMedium .Footer_multicurrencyIcon_bc {
+        margin-left: 4rem;
 }
 .Footer_button_80 {
     overflow: hidden;
@@ -1645,6 +1614,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     z-index: -2;
     transform: translate(-50%, -50%);
 }
+.Emblem_extra__micro_f7 {
+        width: 60rem;
+        height: 60rem;
+        background-image: url('R.images.gui.maps.icons.battlePass.logo.extra_flags_micro');
+        top: 24rem;
+    }
 .Emblem_extra__small_28 {
         width: 100rem;
         height: 100rem;
@@ -3668,6 +3643,388 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         height: 50rem;
 }
 
+/* vertical offset for positioning progression's progressbar at the center of screen */
+/* colors*/
+/* buttons*/
+@keyframes Progression_fadeOut_7c {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes Progression_fadeIn_1d {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Progression_fadeInWithScale_74 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes Progression_slideUp_a2 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Progression_scale_a8 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes Progression_rotate_1c {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.Progression_base_52 {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 518rem;
+    padding: 0 50rem 9rem;
+    position: relative;
+}
+.mediaMedium .Progression_base_52 {
+        height: 642rem;
+}
+.mediaLarge .Progression_base_52 {
+        height: 782rem;
+}
+.Progression_base_52 .ps__rail-x {
+            margin-left: 25rem;
+            margin-right: 25rem;
+        }
+.mediaLarge .Progression_base__isExtra_a3 .ps__rail-x {
+                    margin-right: 40rem;
+}
+.mediaExtraLarge .Progression_base__isExtra_a3 .ps__rail-x {
+                    margin-right: 50rem;
+}
+.Progression_scrollWrapper_3a {
+    flex: 1;
+    cursor: grab;
+}
+.Progression_wrapper_0f {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 110rem;
+    padding-bottom: 22rem;
+}
+.mediaMedium .Progression_wrapper_0f {
+        padding-top: 110rem;
+}
+.mediaLarge .Progression_wrapper_0f {
+        padding-top: 176rem;
+}
+.Progression_section__last_4d {
+        margin-bottom: 0;
+    }
+.Progression_divider_4e {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130rem;
+    height: 100%;
+}
+.Progression_dividerContent_82 {
+    transform: rotate(-90deg);
+}
+.Progression_dividerText_8c {
+    color: #8c8c7e;
+    font-size: 14rem;
+}
+.Progression_progressContainer_7f {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 16rem;
+    background-color: #000;
+    position: relative;
+    z-index: 2;
+}
+.Progression_progress_c8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100rem;
+    overflow: hidden;
+    position: absolute;
+}
+.Progression_progress__inactive_b8 {
+        pointer-events: none;
+    }
+.Progression_progressBackground_8c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 10rem;
+    background-color: var(--progress-line-base);
+    overflow: hidden;
+    position: absolute;
+}
+.Progression_progressBackground__disabled_0b {
+        background-color: var(--progress-line-disabled);
+    }
+.Progression_progressBackground__finished_0e {
+        background-color: var(--progress-line-finished);
+    }
+.Progression_decor_7f {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 0;
+    height: 100%;
+    z-index: 3;
+}
+.Progression_decorBackground_4c {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 67rem;
+    height: 248rem;
+    margin-left: -2rem;
+    margin-top: 60rem;
+    background: url('R.images.gui.maps.icons.battlePass.progression.medal_bg_small') right center / contain no-repeat;
+}
+.mediaMedium .Progression_decorBackground_4c {
+        width: 90rem;
+        height: 340rem;
+        margin-left: -1rem;
+        background-image: url('R.images.gui.maps.icons.battlePass.progression.medal_bg');
+}
+.mediaLarge .Progression_decorBackground_4c {
+        margin-top: 90rem;
+}
+.Progression_decor__left_4e .Progression_decorBackground_4c {
+        margin-left: -65rem;
+        transform: rotate(180deg);
+    }
+.mediaMedium .Progression_decor__left_4e .Progression_decorBackground_4c {
+            margin-left: -89rem;
+}
+.Progression_row_2c {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 150rem;
+    position: relative;
+    z-index: 3;
+}
+.mediaMedium .Progression_row_2c {
+        height: 210rem;
+}
+.mediaLarge .Progression_row_2c {
+        height: 235rem;
+}
+.Progression_row__basic_05 {
+        align-items: flex-end;
+        height: 210rem;
+    }
+.mediaMedium .Progression_row__basic_05 {
+            height: 275rem;
+}
+.mediaLarge .Progression_row__basic_05 {
+            height: 325rem;
+}
+.Progression_bookmark_78 {
+    height: 100%;
+    position: relative;
+    left: 0;
+}
+.Progression_bookmark__start_e7 {
+        width: 50rem;
+        padding-top: 110rem;
+        padding-bottom: 22rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+.Progression_bookmarkLeftFixed_6c {
+    opacity: 0;
+    transition: opacity linear .3s;
+}
+.Progression_bookmarkLeftFixed__active_3b {
+        opacity: 1;
+    }
+.Progression_bookmarkLeftResponsive_c3 {
+    color: #E9E2BF;
+}
+.Progression_bookmarkBackground_d6 {
+    width: 50rem;
+    background: url('R.images.gui.maps.icons.battlePass.progression.shadow_lip') center / 100% no-repeat;
+}
+.Progression_scrollToButton_38 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 189rem;
+    z-index: 3;
+    transform: translateY(50%);
+    transition: opacity linear .3s,
+    visibility linear .3s;
+    transition-delay: .2s;
+}
+.mediaMedium .Progression_scrollToButton_38 {
+        bottom: 249rem;
+}
+.mediaLarge .Progression_scrollToButton_38 {
+        bottom: 274rem;
+}
+.Progression_scrollToButton__visible_47 {
+        opacity: 1;
+        visibility: visible;
+    }
+.Progression_scrollToButton__forward_18 {
+        right: 60rem;
+    }
+.Progression_scrollToButton__backward_1f {
+        left: 60rem;
+    }
+.Progression_arrowButton_ad {
+    transition-delay: .5s;
+}
+.Progression_scrollToButton__visible_47 .Progression_arrowButton_ad {
+        transition-delay: .2s;
+    }
+.Progression_progressionToButton_3b {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: 189rem;
+    z-index: 3;
+    transform: translateY(50%);
+    transition: opacity linear .3s,
+    visibility linear .3s;
+    pointer-events: none;
+}
+.mediaMedium .Progression_progressionToButton_3b {
+        bottom: 249rem;
+}
+.mediaLarge .Progression_progressionToButton_3b {
+        bottom: 274rem;
+}
+.Progression_progressionToButton__hidden_29 {
+        opacity: 0;
+        visibility: hidden;
+    }
+.Progression_progressionToButton__back_a8 {
+        left: 50rem;
+    }
+.Progression_progressionToButton__forward_ce {
+        right: 50rem;
+    }
+.Progression_shadow_4a {
+    width: 162rem;
+    height: 460rem;
+    background: url('R.images.gui.maps.icons.battlePass.progression.shadow_main_small') right center / contain no-repeat;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+.Progression_shadow__left_e1 {
+        left: -54rem;
+    }
+.mediaMedium .Progression_shadow__left_e1 {
+            width: 199rem;
+            height: 564rem;
+            background-image: url('R.images.gui.maps.icons.battlePass.progression.shadow_main_medium');
+            left: -77rem;
+}
+.mediaLarge .Progression_shadow__left_e1 {
+            width: 220rem;
+            height: 624rem;
+            background-image: url('R.images.gui.maps.icons.battlePass.progression.shadow_main');
+            left: -90rem;
+}
+.Progression_shadow__right_f8 {
+        right: -54rem;
+        transform: rotate(180deg);
+    }
+.mediaMedium .Progression_shadow__right_f8 {
+            width: 199rem;
+            height: 564rem;
+            background-image: url('R.images.gui.maps.icons.battlePass.progression.shadow_main_medium');
+            right: -77rem;
+}
+.mediaLarge .Progression_shadow__right_f8 {
+            width: 220rem;
+            height: 624rem;
+            background-image: url('R.images.gui.maps.icons.battlePass.progression.shadow_main');
+            right: -90rem;
+}
+.Progression_base__isExtra_a3 .Progression_shadow__right_f8 {
+            opacity: .5;
+        }
+.Progression_additionalShadow_69 {
+    width: 103rem;
+    height: 440rem;
+    background: url('R.images.gui.maps.icons.battlePass.progression.shadow_additional_small') right center / contain no-repeat;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: -45rem;
+    bottom: 0;
+    transition: .3s ease-in-out opacity;
+    pointer-events: none;
+}
+.mediaMedium .Progression_additionalShadow_69 {
+        width: 126rem;
+        height: 540rem;
+        background-image: url('R.images.gui.maps.icons.battlePass.progression.shadow_additional_medium');
+        right: -54rem;
+}
+.mediaLarge .Progression_additionalShadow_69 {
+        width: 139rem;
+        height: 598rem;
+        background-image: url('R.images.gui.maps.icons.battlePass.progression.shadow_additional');
+        right: -58rem;
+}
+.Progression_additionalShadow__active_80 {
+        opacity: 1;
+    }
+.Progression_scrollBarPosition_40 {
+    margin-top: -18rem;
+    padding: 0 10rem;
+}
+
 .HorizontalBar_base_49 {
     display: flex;
     width: 100%;
@@ -4101,385 +4458,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Bookmark_rightTextLine_37 {
     border-left: 1rem solid #fff;
     background-image: linear-gradient(to left, transparent, rgba(255,255,255, .2) 80%, rgba(255,255,255, .4) 90%, rgba(255,255,255, .6) 100%);
-}
-
-/* vertical offset for positioning progression's progressbar at the center of screen */
-/* colors*/
-/* buttons*/
-@keyframes Progression_fadeOut_7c {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes Progression_fadeIn_1d {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes Progression_fadeInWithScale_74 {
-    0% {
-        opacity: 0;
-        transform: scale(1.2);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-@keyframes Progression_slideUp_a2 {
-    0% {
-        opacity: 0;
-        transform: translateY(20rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes Progression_scale_a8 {
-    0% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-@keyframes Progression_rotate_1c {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-.Progression_base_52 {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    height: 518rem;
-    padding: 0 50rem 9rem;
-    position: relative;
-}
-.mediaMedium .Progression_base_52 {
-        height: 642rem;
-}
-.mediaLarge .Progression_base_52 {
-        height: 782rem;
-}
-.Progression_base_52 .ps__rail-x {
-            margin-left: 25rem;
-            margin-right: 25rem;
-        }
-.mediaLarge .Progression_base__isExtra_a3 .ps__rail-x {
-                    margin-right: 40rem;
-}
-.mediaExtraLarge .Progression_base__isExtra_a3 .ps__rail-x {
-                    margin-right: 50rem;
-}
-.Progression_scrollWrapper_3a {
-    flex: 1;
-    cursor: grab;
-}
-.Progression_wrapper_0f {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding-top: 110rem;
-    padding-bottom: 22rem;
-}
-.mediaMedium .Progression_wrapper_0f {
-        padding-top: 110rem;
-}
-.mediaLarge .Progression_wrapper_0f {
-        padding-top: 176rem;
-}
-.Progression_section__last_4d {
-        margin-bottom: 0;
-    }
-.Progression_divider_4e {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 130rem;
-    height: 100%;
-}
-.Progression_dividerContent_82 {
-    transform: rotate(-90deg);
-}
-.Progression_dividerText_8c {
-    color: #8c8c7e;
-    font-size: 14rem;
-}
-.Progression_progressContainer_7f {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 16rem;
-    background-color: #000;
-    position: relative;
-    z-index: 2;
-}
-.Progression_progress_c8 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100rem;
-    overflow: hidden;
-    position: absolute;
-}
-.Progression_progress__inactive_b8 {
-        pointer-events: none;
-    }
-.Progression_progressBackground_8c {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 10rem;
-    background-color: var(--progress-line-base);
-    overflow: hidden;
-    position: absolute;
-}
-.Progression_progressBackground__disabled_0b {
-        background-color: var(--progress-line-disabled);
-    }
-.Progression_progressBackground__finished_0e {
-        background-color: var(--progress-line-finished);
-    }
-.Progression_decor_7f {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 0;
-    height: 100%;
-    z-index: 3;
-}
-.Progression_decorBackground_4c {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 67rem;
-    height: 248rem;
-    margin-left: -2rem;
-    margin-top: 60rem;
-    background: url('R.images.gui.maps.icons.battlePass.progression.medal_bg_small') right center / contain no-repeat;
-}
-.mediaMedium .Progression_decorBackground_4c {
-        width: 90rem;
-        height: 340rem;
-        margin-left: -1rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.progression.medal_bg');
-}
-.mediaLarge .Progression_decorBackground_4c {
-        margin-top: 90rem;
-}
-.Progression_decor__left_4e .Progression_decorBackground_4c {
-        margin-left: -65rem;
-        transform: rotate(180deg);
-    }
-.mediaMedium .Progression_decor__left_4e .Progression_decorBackground_4c {
-            margin-left: -89rem;
-}
-.Progression_row_2c {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-    height: 150rem;
-    position: relative;
-    z-index: 3;
-}
-.mediaMedium .Progression_row_2c {
-        height: 210rem;
-}
-.mediaLarge .Progression_row_2c {
-        height: 235rem;
-}
-.Progression_row__basic_05 {
-        align-items: flex-end;
-        height: 210rem;
-    }
-.mediaMedium .Progression_row__basic_05 {
-            height: 275rem;
-}
-.mediaLarge .Progression_row__basic_05 {
-            height: 325rem;
-}
-.Progression_bookmark_78 {
-    height: 100%;
-    position: relative;
-    left: 0;
-}
-.Progression_bookmark__start_e7 {
-        width: 50rem;
-        padding-top: 110rem;
-        padding-bottom: 22rem;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-    }
-.Progression_bookmarkLeftFixed_6c {
-    opacity: 0;
-    transition: opacity linear .3s;
-}
-.Progression_bookmarkLeftFixed__active_3b {
-        opacity: 1;
-    }
-.Progression_bookmarkLeftResponsive_c3 {
-    color: #E9E2BF;
-}
-.Progression_bookmarkBackground_d6 {
-    width: 50rem;
-    background: url('R.images.gui.maps.icons.battlePass.progression.shadow_lip') center / 100% no-repeat;
-}
-.Progression_scrollToButton_38 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    bottom: 189rem;
-    z-index: 3;
-    transform: translateY(50%);
-    transition: opacity linear .3s,
-    visibility linear .3s;
-    transition-delay: .2s;
-}
-.mediaMedium .Progression_scrollToButton_38 {
-        bottom: 249rem;
-}
-.mediaLarge .Progression_scrollToButton_38 {
-        bottom: 274rem;
-}
-.Progression_scrollToButton__visible_47 {
-        opacity: 1;
-        visibility: visible;
-    }
-.Progression_scrollToButton__forward_18 {
-        right: 60rem;
-    }
-.Progression_scrollToButton__backward_1f {
-        left: 60rem;
-    }
-.Progression_arrowButton_ad {
-    transition-delay: .5s;
-}
-.Progression_scrollToButton__visible_47 .Progression_arrowButton_ad {
-        transition-delay: .2s;
-    }
-.Progression_progressionToButton_3b {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: absolute;
-    bottom: 189rem;
-    z-index: 3;
-    transform: translateY(50%);
-    transition: opacity linear .3s,
-    visibility linear .3s;
-    pointer-events: none;
-}
-.mediaMedium .Progression_progressionToButton_3b {
-        bottom: 249rem;
-}
-.mediaLarge .Progression_progressionToButton_3b {
-        bottom: 274rem;
-}
-.Progression_progressionToButton__hidden_29 {
-        opacity: 0;
-        visibility: hidden;
-    }
-.Progression_progressionToButton__back_a8 {
-        left: 50rem;
-    }
-.Progression_progressionToButton__forward_ce {
-        right: 50rem;
-    }
-.Progression_shadow_4a {
-    width: 162rem;
-    height: 460rem;
-    background: url('R.images.gui.maps.icons.battlePass.progression.shadow_main_small') right center / contain no-repeat;
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    pointer-events: none;
-}
-.Progression_shadow__left_e1 {
-        left: -54rem;
-    }
-.mediaMedium .Progression_shadow__left_e1 {
-            width: 199rem;
-            height: 564rem;
-            background-image: url('R.images.gui.maps.icons.battlePass.progression.shadow_main_medium');
-            left: -77rem;
-}
-.mediaLarge .Progression_shadow__left_e1 {
-            width: 220rem;
-            height: 624rem;
-            background-image: url('R.images.gui.maps.icons.battlePass.progression.shadow_main');
-            left: -90rem;
-}
-.Progression_shadow__right_f8 {
-        right: -54rem;
-        transform: rotate(180deg);
-    }
-.mediaMedium .Progression_shadow__right_f8 {
-            width: 199rem;
-            height: 564rem;
-            background-image: url('R.images.gui.maps.icons.battlePass.progression.shadow_main_medium');
-            right: -77rem;
-}
-.mediaLarge .Progression_shadow__right_f8 {
-            width: 220rem;
-            height: 624rem;
-            background-image: url('R.images.gui.maps.icons.battlePass.progression.shadow_main');
-            right: -90rem;
-}
-.Progression_additionalShadow_69 {
-    width: 103rem;
-    height: 440rem;
-    background: url('R.images.gui.maps.icons.battlePass.progression.shadow_additional_small') right center / contain no-repeat;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: -45rem;
-    bottom: 0;
-    transition: .3s ease-in-out opacity;
-    pointer-events: none;
-}
-.mediaMedium .Progression_additionalShadow_69 {
-        width: 126rem;
-        height: 540rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.progression.shadow_additional_medium');
-        right: -54rem;
-}
-.mediaLarge .Progression_additionalShadow_69 {
-        width: 139rem;
-        height: 598rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.progression.shadow_additional');
-        right: -58rem;
-}
-.Progression_additionalShadow__active_80 {
-        opacity: 1;
-    }
-.Progression_scrollBarPosition_40 {
-    margin-top: -18rem;
-    padding: 0 10rem;
 }
 
 /*

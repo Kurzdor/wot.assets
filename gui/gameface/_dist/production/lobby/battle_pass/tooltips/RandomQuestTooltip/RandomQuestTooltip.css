@@ -1,0 +1,199 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem; /* border offset*/
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.TooltipDecorator_decoratorContent_de {
+    background-color: #000;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #FFFFFF;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #F2F2F7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #FEFEEC;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #E9E2BF;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8C8C7E;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362E;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #FF2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #B70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #FEAB34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #EE7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #FFDD99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #CBAC77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80D43A;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7AB300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #CCFFFF;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09E2FF;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #CED9D9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #FFC363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #C9C9B6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #A29B70;
+}
+
+.List_base_65 {
+    background: linear-gradient(90deg, #c9c9b600 0%, #c9c9b612 38.22%, #c9c9b612 64.56%, #c9c9b600 100%);
+}
+
+.List_item_f9 {
+    display: flex;
+}
+
+.List_circle_65 {
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    margin: 12rem 6rem 0 0;
+    border-radius: 100%;
+    background-color: #8C8C7E;
+}
+
+.Content_base_f9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 420rem;
+    padding: 0 20rem 20rem;
+}
+
+.Content_image_d9 {
+    width: 232rem;
+    height: 174rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.random_quest') no-repeat center / contain;
+}
+
+.Content_title_33 {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    width: 100%;
+    margin-top: 4rem;
+    text-align: left;
+}
+
+.Content_subTitle_97 {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    width: 100%;
+    margin-top: 8rem;
+    text-align: left;
+}
+
+.Content_divider_52 {
+    width: 420rem;
+    height: 9rem;
+    margin-top: 8rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.random_quest_divider') no-repeat center / contain;
+}
+
+.Content_rewardBase_31 {
+    width: 100%;
+    margin: -4rem 0 -12rem;
+    padding: 7rem 0 12rem 0rem;
+}
+
+.Content_reward_b0 {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    width: 100%;
+    margin: 2rem 0;
+    padding-right: 4rem;
+}
+
+.Content_expireTime_7c {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    width: 100%;
+    margin-top: 10rem;
+    text-align: left;
+}
+

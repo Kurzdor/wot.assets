@@ -16,7 +16,6 @@ html {
         transform: scale(1.03);
     }
 }
-
 @keyframes Content_zoom-out_39 {
     0% {
         transform: scale(1.03);
@@ -26,7 +25,6 @@ html {
         transform: scale(1);
     }
 }
-
 @keyframes Content_brightness-in_e7 {
     0% {
         filter: brightness(1);
@@ -36,7 +34,6 @@ html {
         filter: brightness(1.05);
     }
 }
-
 @keyframes Content_brightness-out_72 {
     0% {
         filter: brightness(1.05);
@@ -46,53 +43,67 @@ html {
         filter: brightness(1);
     }
 }
-
 .Content_base_5b {
     width: 100%;
     height: 100%;
-    border: 1rem solid rgba(69, 69, 69, 1);
-    box-shadow: inset 0 0 7rem rgba(0, 0, 0, .5);
-    overflow: hidden;
+    border-radius: 2rem;
     position: relative;
     cursor: pointer;
 }
-
 .Content_bg_2c {
     width: 100%;
     height: 100%;
+    border-radius: 2rem;
     background: no-repeat center / cover;
-    animation: Content_zoom-out_39 .5s cubic-bezier(.07, .82, .17, 1) forwards, Content_brightness-out_72 .5s cubic-bezier(.07, .82, .17, 1) forwards;
-}
-
-.Content_base_5b:hover .Content_bg_2c {
-        animation: Content_zoom-in_e8 .5s cubic-bezier(.07, .82, .17, 1) forwards, Content_brightness-in_e7 .5s cubic-bezier(.07, .82, .17, 1) forwards;
-    }
-
-.Content_base__big_7a .Content_bg_2c {
-        background-image: url('R.images.gui.maps.icons.mapbox.entryPoint.bg.big');
-    }
-
-.Content_base__thinSmall_a8 .Content_bg_2c {
-        background-image: url('R.images.gui.maps.icons.mapbox.entryPoint.bg.thinSmall');
-    }
-
-.Content_base__wideSmall_07 .Content_bg_2c {
-        background-image: url('R.images.gui.maps.icons.mapbox.entryPoint.bg.wideSmall');
-    }
-
-.Content_base__thinExtraSmall_82 .Content_bg_2c {
-        background-image: url('R.images.gui.maps.icons.mapbox.entryPoint.bg.thinExtraSmall');
-    }
-
-.Content_shadow_96 {
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(60% 60% at 50% 50%, transparent, rgba(0, 0, 0, .6));
+    filter: brightness(1);
     position: absolute;
     top: 0;
     left: 0;
+    transform: scale(1);
+    transition: filter .5s cubic-bezier(.07, .82, .17, 1), transform .5s cubic-bezier(.07, .82, .17, 1);
 }
-
+.Content_base_5b:hover .Content_bg_2c {
+        filter: brightness(1.05);
+        transform: scale(1.03);
+    }
+.Content_base__disabled_80 .Content_bg_2c {
+        filter: brightness(1) grayscale(100%);
+    }
+.Content_base__disabled_80:hover .Content_bg_2c {
+        filter: brightness(1.05) grayscale(100%);
+    }
+.Content_base__big_7a .Content_bg_2c {
+        background-image: url('R.images.gui.maps.icons.mapbox.entryPoint.bg.big');
+    }
+.Content_base__thinSmall_a8 .Content_bg_2c {
+        background-image: url('R.images.gui.maps.icons.mapbox.entryPoint.bg.thinSmall');
+    }
+.Content_base__wideSmall_07 .Content_bg_2c {
+        background-image: url('R.images.gui.maps.icons.mapbox.entryPoint.bg.wideSmall');
+    }
+.Content_base__thinExtraSmall_82 .Content_bg_2c {
+        background-image: url('R.images.gui.maps.icons.mapbox.entryPoint.bg.thinExtraSmall');
+    }
+.Content_particles_ec {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    width: 160rem;
+    height: 112rem;
+    mix-blend-mode: screen;
+}
+.mediaMedium .Content_particles_ec {
+        width: 220rem;
+}
+.mediaLarge .Content_particles_ec {
+        width: 300rem;
+        height: 150rem;
+}
+.Content_base__single_c0 .Content_particles_ec {
+        width: 300rem;
+    }
 .Content_content_a1 {
     position: absolute;
     top: 0;
@@ -101,124 +112,89 @@ html {
     left: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     padding: 0 15rem;
     pointer-events: none;
 }
-
-.Content_header_c5 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+.Content_highlight_e6 {
     width: 100%;
-    position: absolute;
-    bottom: 33rem;
-}
-
-.Content_base__big_7a .Content_header_c5 {
-        height: 72rem;
-        bottom: 45rem;
-    }
-
-.Content_base__thinSmall_a8 .Content_header_c5 {
-        height: 72rem;
-        bottom: 26rem;
-    }
-
-.Content_base__wideSmall_07 .Content_header_c5 {
-        height: 64rem;
-    }
-
-.Content_base__thinExtraSmall_82 .Content_header_c5 {
-        height: 52rem;
-    }
-
-.Content_icon_ab {
-    width: 72rem;
-    height: 72rem;
-    background: url('R.images.gui.maps.icons.mapbox.entryPoint.icons.icon72x72') no-repeat center / contain;
-    mask: linear-gradient(#000 47%, transparent 83%);
+    height: 100%;
+    border-image-source: url('R.images.gui.maps.icons.comp7.banner.border');
+    border-image-slice: 1 fill;
+    border-image-width: 1rem;
+    background: url('R.images.gui.maps.icons.comp7.banner.highlight') no-repeat center / cover;
+    filter: brightness(.6);
+    opacity: .6;
     position: absolute;
     top: 0;
+    left: 0;
 }
-
-.Content_base__wideSmall_07 .Content_icon_ab {
-        width: 64rem;
-        height: 64rem;
-        background-image: url('R.images.gui.maps.icons.mapbox.entryPoint.icons.icon64x64');
+.Content_base_5b:hover .Content_highlight_e6 {
+        filter: none;
+        opacity: 1;
     }
-
-.Content_base__thinExtraSmall_82 .Content_icon_ab {
-        width: 52rem;
-        height: 52rem;
-        background-image: url('R.images.gui.maps.icons.mapbox.entryPoint.icons.icon52x52');
-    }
-
+.Content_shadow_96 {
+    width: 100%;
+    height: 100%;
+    border: 1rem solid rgba(255,255,255, .25);
+    border-radius: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .3) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .Content_title_a9 {
-    color: #FEFEEC;
+    margin-top: -6rem;
+    color: #FFFFFF;
+    font-size: 15rem;
     font-weight: 700;
     text-align: center;
-    opacity: .8;
-    position: absolute;
-    bottom: -1rem;
-    z-index: 1;
+    letter-spacing: 1rem;
 }
-
-.Content_base__big_7a .Content_title_a9 {
+.mediaMedium .Content_title_a9 {
+        font-size: 18rem;
+}
+.mediaLarge .Content_title_a9 {
+        margin-top: -8rem;
         font-size: 24rem;
-    }
-
-.Content_base__wideSmall_07 .Content_title_a9 {
+}
+.Content_base__single_c0 .Content_title_a9 {
         font-size: 22rem;
     }
-
-.Content_base__thinSmall_a8 .Content_title_a9 {
-        font-size: 18rem;
-        bottom: 7rem;
-    }
-
-.Content_base__thinExtraSmall_82 .Content_title_a9 {
-        font-size: 15rem;
-        bottom: 3rem;
-    }
-
+.mediaLarge .Content_base__single_c0 .Content_title_a9 {
+            font-size: 24rem;
+}
 .Content_endDate_82 {
-    padding-left: 26rem;
+    padding-left: 21rem;
     color: #FFDD99;
-    font-size: 14rem;
+    font-size: 12rem;
     text-align: center;
+    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
     position: absolute;
-    bottom: 19rem;
-    z-index: 1;
+    bottom: 7rem;
 }
-
-.Content_base__wideSmall_07 .Content_endDate_82 {
+.mediaLarge .Content_endDate_82 {
         bottom: 12rem;
-    }
-
-.Content_base__thinSmall_a8 .Content_endDate_82 {
-        font-size: 12rem;
-        bottom: 8rem;
-    }
-
-.Content_base__thinExtraSmall_82 .Content_endDate_82 {
-        font-size: 12rem;
-        bottom: 14rem;
-    }
-
-.Content_timerIcon_99 {
-    width: 37rem;
-    height: 37rem;
-    background: url('R.images.gui.maps.icons.mapbox.entryPoint.time_icon') no-repeat center / contain;
-    position: absolute;
-    top: -9rem;
-    left: -6rem;
 }
-
-.Content_base__thinSmall_a8 .Content_timerIcon_99,
-    .Content_base__thinExtraSmall_82 .Content_timerIcon_99 {
-        top: -11rem;
+.mediaMedium .Content_endDate_82 {
+        font-size: 16rem;
+}
+.Content_timerIcon_99 {
+    width: 38rem;
+    height: 38rem;
+    background: url('R.images.gui.maps.icons.library.ClockIcon_1') no-repeat center / contain;
+    position: absolute;
+    top: 60%;
+    left: -10rem;
+    transform: translateY(-50%);
+}
+.Content_base__disabled_80 .Content_timerIcon_99 {
+        width: 46rem;
+        height: 46rem;
+        background-image: url('R.images.gui.maps.icons.library.lock_icon');
+        top: 55%;
+        left: -14rem;
+        transform: translateY(-50%);
     }
 

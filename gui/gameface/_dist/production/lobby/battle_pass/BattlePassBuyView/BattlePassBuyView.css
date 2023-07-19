@@ -324,268 +324,6 @@ body {
         line-height: 1.1;
 }
 
-.Currency_base_57 {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-.Currency_icon_c5 {
-    --icon-height: 16rem;
-    --icon-width: var(--icon-height);
-    width: var(--icon-width);
-    height: var(--icon-height);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-    z-index: 1;
-}
-.Currency_base__small_af .Currency_icon_c5,
-    .Currency_base__big_bc .Currency_icon_c5,
-    .Currency_base__large_65 .Currency_icon_c5,
-    .Currency_base__extraLarge_4d .Currency_icon_c5 {
-        transform: translateY(3rem);
-    }
-.Currency_icon__credits-small_9b {
-        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
-    }
-.Currency_icon__credits-big_96 {
-        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
-    }
-.Currency_icon__credits-large_ac {
-        --icon-height: 48rem;
-        margin-left: -1rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_silver');
-    }
-.Currency_base__large_65 .Currency_icon__credits-large_ac {
-            transform: translateY(4rem);
-        }
-.Currency_icon__credits-extraLarge_16 {
-        --icon-height: 80rem;
-        margin-right: -2rem;
-        background-image: url('R.images.gui.maps.icons.library.credits_icon_80x80');
-    }
-.Currency_icon__gold-small_86 {
-        background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
-    }
-.Currency_base__small_af .Currency_icon__gold-small_86 {
-            transform: translateY(2rem);
-        }
-.Currency_icon__gold-big_15 {
-        background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
-    }
-.Currency_base__big_bc .Currency_icon__gold-big_15 {
-            transform: translateY(4rem);
-        }
-.Currency_icon__gold-large_36 {
-        --icon-height: 48rem;
-        margin-left: -1rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_gold');
-    }
-.Currency_base__large_65 .Currency_icon__gold-large_36 {
-            transform: translateY(4rem);
-        }
-.Currency_icon__gold-extraLarge_a0 {
-        --icon-height: 80rem;
-        background-image: url('R.images.gui.maps.icons.library.gold_icon_80x80');
-    }
-.Currency_icon__crystal-small_27 {
-        background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
-    }
-.Currency_base__small_af .Currency_icon__crystal-small_27 {
-            transform: translateY(2rem);
-        }
-.Currency_icon__crystal-big_cd {
-        --icon-height: 22rem;
-        --icon-width: 23rem;
-        background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
-    }
-.Currency_base__big_bc .Currency_icon__crystal-big_cd {
-            transform: translateY(4rem);
-        }
-.Currency_icon__crystal-large_d3 {
-        --icon-height: 48rem;
-        margin-left: -1rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_bonds');
-    }
-.Currency_icon__crystal-extraLarge_09 {
-        --icon-height: 80rem;
-        background-image: url('R.images.gui.maps.icons.library.crystal_80x80');
-    }
-.Currency_base__extraLarge_4d .Currency_icon__crystal-extraLarge_09 {
-            transform: translateY(7rem);
-        }
-.Currency_icon__xp-small_a7 {
-        background-image: url('R.images.gui.maps.icons.library.NormalXpIcon');
-    }
-.Currency_base__small_af .Currency_icon__xp-small_a7 {
-            transform: translateY(1rem);
-        }
-.Currency_icon__xp-big_97 {
-        --icon-height: 22rem;
-        --icon-width: 23rem;
-        margin-left: -5rem;
-        background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
-    }
-.Currency_base__big_bc .Currency_icon__xp-big_97 {
-            transform: translateY(2rem);
-        }
-.Currency_icon__xp-large_6b {
-        --icon-height: 48rem;
-        margin: 0 -5rem 0 -6rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.exp');
-    }
-.Currency_icon__xp-extraLarge_67 {
-        --icon-height: 80rem;
-        margin: 0 -5rem;
-        background-image: url('R.images.gui.maps.icons.library.xp_tank_icon_80x80');
-    }
-.Currency_icon__freeXP-small_ca {
-        background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
-    }
-.Currency_base__small_af .Currency_icon__freeXP-small_ca {
-            transform: translateY(1rem);
-        }
-.Currency_icon__freeXP-big_21 {
-        --icon-height: 24rem;
-        margin-left: -5rem;
-        background-image: url('R.images.gui.maps.icons.library.freeXPIconBig24x24');
-    }
-.Currency_icon__freeXP-large_c8 {
-        --icon-height: 48rem;
-        margin: 0 -5rem 0 -6rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.freeExp');
-    }
-.Currency_icon__freeXP-extraLarge_58 {
-        --icon-height: 80rem;
-        margin: 0 -5rem;
-        background-image: url('R.images.gui.maps.icons.library.free_xp_icon_80x80');
-    }
-.Currency_base__extraLarge_4d .Currency_icon__freeXP-extraLarge_58 {
-            transform: translateY(4rem);
-        }
-.Currency_icon__equipCoin-small_32 {
-        --icon-height: 16rem;
-        margin-right: -2rem;
-        background-image: url('R.images.gui.maps.icons.library.equipCoin_1');
-    }
-.Currency_base__small_af .Currency_icon__equipCoin-small_32 {
-            transform: translateX(-1rem) translateY(1rem);
-        }
-.Currency_icon__equipCoin-big_79 {
-        --icon-height: 24rem;
-        background-image: url('R.images.gui.maps.icons.library.equipCoinBig');
-    }
-.Currency_base__big_bc .Currency_icon__equipCoin-big_79 {
-            transform: translateX(-5rem) translateY(3rem);
-        }
-.Currency_icon__equipCoin-large_2c {
-        --icon-height: 48rem;
-        margin-right: 2rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.equipCoin');
-    }
-.Currency_icon__equipCoin-extraLarge_8a {
-        --icon-height: 80rem;
-        margin-right: 8rem;
-        background-image: url('R.images.gui.maps.icons.library.equipCoin_icon_80x80');
-    }
-.Currency_base__extraLarge_4d .Currency_icon__equipCoin-extraLarge_8a {
-            transform: translateX(2rem) translateY(4rem);
-        }
-.Currency_value_e1 {
-    /* font-size inherit does not work here, so 1em means the size does not change */
-    /* stylelint-disable-next-line */
-    --font-size: 1em;
-    font-size: var(--font-size);
-    position: relative;
-    z-index: 2;
-}
-.Currency_base__small_af .Currency_value_e1 {
-        padding-right: 2rem;
-    }
-.Currency_base__big_bc .Currency_value_e1 {
-        --font-size: 24rem;
-        padding-right: 5rem;
-        font-weight: 700;
-    }
-.Currency_base__big_bc .Currency_value_e1 + .Currency_icon_c5 {
-            font-size: 24rem;
-        }
-.Currency_base__large_65 .Currency_value_e1 {
-        --font-size: 36rem;
-        font-weight: 700;
-    }
-.Currency_base__large_65 .Currency_value_e1 + .Currency_icon_c5 {
-            font-size: 36rem;
-        }
-.Currency_base__extraLarge_4d .Currency_value_e1 {
-        --font-size: 56rem;
-        font-weight: 700;
-    }
-.Currency_value__freeXP_cb {
-        color: #F2F2F7;
-    }
-.Currency_value__credits_76 {
-        color: #CED9D9;
-    }
-.Currency_value__gold_dd {
-        color: #FFC363;
-    }
-.Currency_value__xp_b0,
-    .Currency_value__crystal_19,
-    .Currency_value__equipCoin_d0 {
-        color: #C9C9B6;
-    }
-.Currency_base__small_af .Currency_value__notEnough_56 {
-            color: #FF2717;
-        }
-.Currency_base__big_bc .Currency_value__notEnough_56 {
-            color: #B70000;
-        }
-.Currency_base__large_65 .Currency_value__notEnough_56 {
-            color: #B70000;
-        }
-.Currency_base__extraLarge_4d .Currency_value__notEnough_56 {
-            color: #B70000;
-        }
-.Currency_stock_87 {
-    height: 13rem;
-    color: #FFDD99;
-    font-size: 13rem;
-    line-height: 1;
-    position: relative;
-    z-index: 0;
-    pointer-events: none;
-}
-.Currency_stock__indent_a1 {
-        margin-left: 2rem;
-    }
-.Currency_base__small_af .Currency_stock_87 {
-        transform: translateY(0rem);
-    }
-.Currency_base__big_bc .Currency_stock_87 {
-        transform: translateY(4rem);
-    }
-.Currency_base__large_65 .Currency_stock_87 {
-        transform: translateY(10rem);
-    }
-.Currency_base__extraLarge_4d .Currency_stock_87 {
-        transform: translateY(18rem);
-    }
-.Currency_stock__interactive_93 {
-        pointer-events: auto;
-    }
-.Currency_stockBackground_82 {
-    width: 80rem;
-    height: 45rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    right: -27rem;
-    bottom: 0;
-    z-index: -1;
-    transform: translateY(17rem);
-}
-
 .Illustration_base_d3 {
     width: 100%;
     height: 100%;
@@ -901,21 +639,9 @@ body {
     }
 
 .BattlePassBuyExtraCard_price_8a {
-    color: #FFC363;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-    width: 100%;
-    text-align: center;
     position: absolute;
     bottom: 20rem;
-}
-
-.mediaMedium .BattlePassBuyExtraCard_price_8a {
-        color: #FFC363;
-        font-size: 22rem;
-        font-weight: 700;
-        line-height: 1.2;
+    left: 0;
 }
 
 .BattlePassBuyExtraCard_illustration_6b {
@@ -1157,6 +883,294 @@ body {
     100% {
         transform: scale(1);
     }
+}
+
+.Currency_base_57 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.Currency_icon_c5 {
+    --icon-height: 16rem;
+    --icon-width: var(--icon-height);
+    width: var(--icon-width);
+    height: var(--icon-height);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+.Currency_base__small_af .Currency_icon_c5,
+    .Currency_base__big_bc .Currency_icon_c5,
+    .Currency_base__large_65 .Currency_icon_c5,
+    .Currency_base__extraLarge_4d .Currency_icon_c5 {
+        transform: translateY(3rem);
+    }
+.Currency_icon__credits-small_9b {
+        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
+    }
+.Currency_icon__credits-big_96 {
+        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
+    }
+.Currency_icon__credits-large_ac {
+        --icon-height: 48rem;
+        margin-left: -1rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_silver');
+    }
+.Currency_base__large_65 .Currency_icon__credits-large_ac {
+            transform: translateY(4rem);
+        }
+.Currency_icon__credits-extraLarge_16 {
+        --icon-height: 80rem;
+        margin-right: -2rem;
+        background-image: url('R.images.gui.maps.icons.library.credits_icon_80x80');
+    }
+.Currency_icon__gold-small_86 {
+        background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
+    }
+.Currency_base__small_af .Currency_icon__gold-small_86 {
+            transform: translateY(2rem);
+        }
+.Currency_icon__gold-big_15 {
+        background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
+    }
+.Currency_base__big_bc .Currency_icon__gold-big_15 {
+            transform: translateY(4rem);
+        }
+.Currency_icon__gold-large_36 {
+        --icon-height: 48rem;
+        margin-left: -1rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_gold');
+    }
+.Currency_base__large_65 .Currency_icon__gold-large_36 {
+            transform: translateY(4rem);
+        }
+.Currency_icon__gold-extraLarge_a0 {
+        --icon-height: 80rem;
+        background-image: url('R.images.gui.maps.icons.library.gold_icon_80x80');
+    }
+.Currency_icon__crystal-small_27 {
+        background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
+    }
+.Currency_base__small_af .Currency_icon__crystal-small_27 {
+            transform: translateY(2rem);
+        }
+.Currency_icon__crystal-big_cd {
+        --icon-height: 22rem;
+        --icon-width: 23rem;
+        background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
+    }
+.Currency_base__big_bc .Currency_icon__crystal-big_cd {
+            transform: translateY(4rem);
+        }
+.Currency_icon__crystal-large_d3 {
+        --icon-height: 48rem;
+        margin-left: -1rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_bonds');
+    }
+.Currency_icon__crystal-extraLarge_09 {
+        --icon-height: 80rem;
+        background-image: url('R.images.gui.maps.icons.library.crystal_80x80');
+    }
+.Currency_base__extraLarge_4d .Currency_icon__crystal-extraLarge_09 {
+            transform: translateY(7rem);
+        }
+.Currency_icon__xp-small_a7 {
+        background-image: url('R.images.gui.maps.icons.library.NormalXpIcon');
+    }
+.Currency_base__small_af .Currency_icon__xp-small_a7 {
+            transform: translateY(1rem);
+        }
+.Currency_icon__xp-big_97 {
+        --icon-height: 22rem;
+        --icon-width: 23rem;
+        margin-left: -5rem;
+        background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
+    }
+.Currency_base__big_bc .Currency_icon__xp-big_97 {
+            transform: translateY(2rem);
+        }
+.Currency_icon__xp-large_6b {
+        --icon-height: 48rem;
+        margin: 0 -5rem 0 -6rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.exp');
+    }
+.Currency_icon__xp-extraLarge_67 {
+        --icon-height: 80rem;
+        margin: 0 -5rem;
+        background-image: url('R.images.gui.maps.icons.library.xp_tank_icon_80x80');
+    }
+.Currency_icon__freeXP-small_ca {
+        background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
+    }
+.Currency_base__small_af .Currency_icon__freeXP-small_ca {
+            transform: translateY(1rem);
+        }
+.Currency_icon__freeXP-big_21 {
+        --icon-height: 24rem;
+        margin-left: -5rem;
+        background-image: url('R.images.gui.maps.icons.library.freeXPIconBig24x24');
+    }
+.Currency_icon__freeXP-large_c8 {
+        --icon-height: 48rem;
+        margin: 0 -5rem 0 -6rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.freeExp');
+    }
+.Currency_icon__freeXP-extraLarge_58 {
+        --icon-height: 80rem;
+        margin: 0 -5rem;
+        background-image: url('R.images.gui.maps.icons.library.free_xp_icon_80x80');
+    }
+.Currency_base__extraLarge_4d .Currency_icon__freeXP-extraLarge_58 {
+            transform: translateY(4rem);
+        }
+.Currency_icon__equipCoin-small_32 {
+        --icon-height: 16rem;
+        margin-right: -2rem;
+        background-image: url('R.images.gui.maps.icons.library.equipCoin_1');
+    }
+.Currency_base__small_af .Currency_icon__equipCoin-small_32 {
+            transform: translateX(-1rem) translateY(1rem);
+        }
+.Currency_icon__equipCoin-big_79 {
+        --icon-height: 24rem;
+        background-image: url('R.images.gui.maps.icons.library.equipCoinBig');
+    }
+.Currency_base__big_bc .Currency_icon__equipCoin-big_79 {
+            transform: translateX(-5rem) translateY(3rem);
+        }
+.Currency_icon__equipCoin-large_2c {
+        --icon-height: 48rem;
+        margin-right: 2rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.equipCoin');
+    }
+.Currency_icon__equipCoin-extraLarge_8a {
+        --icon-height: 80rem;
+        margin-right: 8rem;
+        background-image: url('R.images.gui.maps.icons.library.equipCoin_icon_80x80');
+    }
+.Currency_base__extraLarge_4d .Currency_icon__equipCoin-extraLarge_8a {
+            transform: translateX(2rem) translateY(4rem);
+        }
+.Currency_value_e1 {
+    /* font-size inherit does not work here, so 1em means the size does not change */
+    /* stylelint-disable-next-line */
+    --font-size: 1em;
+    font-size: var(--font-size);
+    position: relative;
+    z-index: 2;
+}
+.Currency_base__small_af .Currency_value_e1 {
+        padding-right: 2rem;
+    }
+.Currency_base__big_bc .Currency_value_e1 {
+        --font-size: 24rem;
+        padding-right: 5rem;
+        font-weight: 700;
+    }
+.Currency_base__big_bc .Currency_value_e1 + .Currency_icon_c5 {
+            font-size: 24rem;
+        }
+.Currency_base__large_65 .Currency_value_e1 {
+        --font-size: 36rem;
+        font-weight: 700;
+    }
+.Currency_base__large_65 .Currency_value_e1 + .Currency_icon_c5 {
+            font-size: 36rem;
+        }
+.Currency_base__extraLarge_4d .Currency_value_e1 {
+        --font-size: 56rem;
+        font-weight: 700;
+    }
+.Currency_value__freeXP_cb {
+        color: #F2F2F7;
+    }
+.Currency_value__credits_76 {
+        color: #CED9D9;
+    }
+.Currency_value__gold_dd {
+        color: #FFC363;
+    }
+.Currency_value__xp_b0,
+    .Currency_value__crystal_19,
+    .Currency_value__equipCoin_d0 {
+        color: #C9C9B6;
+    }
+.Currency_base__small_af .Currency_value__notEnough_56 {
+            color: #FF2717;
+        }
+.Currency_base__big_bc .Currency_value__notEnough_56 {
+            color: #B70000;
+        }
+.Currency_base__large_65 .Currency_value__notEnough_56 {
+            color: #B70000;
+        }
+.Currency_base__extraLarge_4d .Currency_value__notEnough_56 {
+            color: #B70000;
+        }
+.Currency_stock_87 {
+    height: 13rem;
+    color: #FFDD99;
+    font-size: 13rem;
+    line-height: 1;
+    position: relative;
+    z-index: 0;
+    pointer-events: none;
+}
+.Currency_stock__indent_a1 {
+        margin-left: 2rem;
+    }
+.Currency_base__small_af .Currency_stock_87 {
+        transform: translateY(0rem);
+    }
+.Currency_base__big_bc .Currency_stock_87 {
+        transform: translateY(4rem);
+    }
+.Currency_base__large_65 .Currency_stock_87 {
+        transform: translateY(10rem);
+    }
+.Currency_base__extraLarge_4d .Currency_stock_87 {
+        transform: translateY(18rem);
+    }
+.Currency_stock__interactive_93 {
+        pointer-events: auto;
+    }
+.Currency_stockBackground_82 {
+    width: 80rem;
+    height: 45rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -27rem;
+    bottom: 0;
+    z-index: -1;
+    transform: translateY(17rem);
+}
+
+.Price_base_d1 {
+    color: #FFC363;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+    .mediaMedium .Price_base_d1 {
+        color: #FFC363;
+        font-size: 22rem;
+        font-weight: 700;
+        line-height: 1.2;
+}
+
+.Price_divider_2d {
+    color: #F2F2F7;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-left: 4rem;
+    margin-right: 6rem;
 }
 
 /* colors*/
@@ -1939,6 +1953,57 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
+.Title_base_29 {
+    width: 100%;
+    min-width: 100vw;
+    margin: 0;
+    text-align: center;
+}
+
+.Title_chapter_74 {
+    color: #F2F2F7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 7rem;
+}
+
+.mediaLarge .Title_chapter_74 {
+        color: #F2F2F7;
+        font-size: 24rem;
+        font-weight: 700;
+        line-height: 1.2;
+}
+
+.Title_buyBPTitle_dd {
+    color: #F2F2F7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaLarge .Title_buyBPTitle_dd {
+        color: #F2F2F7;
+        font-size: 56rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.mediaExtraLarge .Title_buyBPTitle_dd {
+        color: #F2F2F7;
+        font-size: 73rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.Title_subTitle_52 {
+    color: #E9E2BF;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-top: 10rem;
+}
+
 /* colors*/
 
 /* buttons*/
@@ -2024,57 +2089,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         margin-left: 12rem;
     }
 
-.Title_base_29 {
-    width: 100%;
-    min-width: 100vw;
-    margin: 0;
-    text-align: center;
-}
-
-.Title_chapter_74 {
-    color: #F2F2F7;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 7rem;
-}
-
-.mediaLarge .Title_chapter_74 {
-        color: #F2F2F7;
-        font-size: 24rem;
-        font-weight: 700;
-        line-height: 1.2;
-}
-
-.Title_buyBPTitle_dd {
-    color: #F2F2F7;
-    font-size: 36rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.mediaLarge .Title_buyBPTitle_dd {
-        color: #F2F2F7;
-        font-size: 56rem;
-        font-weight: 700;
-        line-height: 1.1;
-}
-
-.mediaExtraLarge .Title_buyBPTitle_dd {
-        color: #F2F2F7;
-        font-size: 73rem;
-        font-weight: 700;
-        line-height: 1.1;
-}
-
-.Title_subTitle_52 {
-    color: #E9E2BF;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-top: 10rem;
-}
-
 .ChapterWarning_base_fe {
     display: flex;
     justify-content: center;
@@ -2089,6 +2103,17 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     .mediaExtraLarge .ChapterWarning_base_fe {
         transform: translateY(100rem);
 }
+    .ChapterWarning_base__isMulticurrency_be {
+        height: 40rem;
+        margin-top: 13rem;
+    }
+    .mediaLarge .ChapterWarning_base__isMulticurrency_be {
+            margin-top: -30rem;
+}
+    .mediaExtraLarge .ChapterWarning_base__isMulticurrency_be {
+            height: 48rem;
+            margin-top: -50rem;
+}
 
 .ChapterWarning_lip_a0 {
     width: 693rem;
@@ -2098,6 +2123,18 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: -98rem;
     transform: translateY(10rem);
     pointer-events: none;
+}
+
+.ChapterWarning_base__isMulticurrency_be .ChapterWarning_lip_a0 {
+        top: -110rem;
+    }
+
+.mediaLarge .ChapterWarning_base__isMulticurrency_be .ChapterWarning_lip_a0 {
+            top: -120rem;
+}
+
+.mediaExtraLarge .ChapterWarning_base__isMulticurrency_be .ChapterWarning_lip_a0 {
+            top: -172rem;
 }
 
 .ChapterWarning_message_62 {
@@ -2116,11 +2153,219 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         margin-top: 50rem;
 }
 
+.ChapterWarning_base__isMulticurrency_be .ChapterWarning_message_62 {
+        margin-top: 0;
+    }
+
+.mediaLarge .ChapterWarning_base__isMulticurrency_be .ChapterWarning_message_62 {
+            margin-top: -20rem;
+}
+
+.mediaExtraLarge .ChapterWarning_base__isMulticurrency_be .ChapterWarning_message_62 {
+            margin-top: -124rem;
+}
+
 .ChapterWarning_icon_d2 {
     width: 16rem;
     height: 16rem;
     margin: 5rem 5rem 0 0;
     background: url('R.images.gui.maps.icons.battlePass.buy.alertIcon') no-repeat center / contain;
+}
+
+.RadioButton_base_d9 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+    .RadioButton_base__disabled_84 {
+        opacity: .5;
+        cursor: default;
+    }
+
+.RadioButton_input_24 {
+    display: flex;
+    position: relative;
+}
+
+.RadioButton_base__small_71 .RadioButton_input_24 {
+        width: 12rem;
+        height: 12rem;
+        margin-right: 6rem;
+    }
+
+.RadioButton_base__medium_d8 .RadioButton_input_24 {
+        width: 18rem;
+        height: 18rem;
+        margin-right: 8rem;
+    }
+
+.RadioButton_blank_b5,
+.RadioButton_blankHover_5e,
+.RadioButton_blankMousedown_0e,
+.RadioButton_check_f2,
+.RadioButton_checkHover_c6,
+.RadioButton_checkMousedown_a7 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.RadioButton_transition_b3 {
+    transition: opacity .1s ease-out;
+}
+
+.RadioButton_blank_b5 {
+    position: absolute;
+    top: -3rem;
+    right: -3rem;
+    bottom: -3rem;
+    left: -3rem;
+}
+
+.RadioButton_base__small_71 .RadioButton_blank_b5 {
+        background: url('R.images.gui.maps.icons.components.radiobutton.blank_small') center / 16rem no-repeat;
+    }
+
+.RadioButton_base__medium_d8 .RadioButton_blank_b5 {
+        background: url('R.images.gui.maps.icons.components.radiobutton.blank_medium') center / 18rem no-repeat;
+    }
+
+.RadioButton_base__blank_46 .RadioButton_blank_b5 {
+        opacity: 1;
+    }
+
+.RadioButton_blankHover_5e {
+    position: absolute;
+    top: -3rem;
+    right: -3rem;
+    bottom: -3rem;
+    left: -3rem;
+}
+
+.RadioButton_base__small_71 .RadioButton_blankHover_5e {
+        background: url('R.images.gui.maps.icons.components.radiobutton.blank_small_hover') center / 16rem no-repeat;
+    }
+
+.RadioButton_base__medium_d8 .RadioButton_blankHover_5e {
+        background: url('R.images.gui.maps.icons.components.radiobutton.blank_medium_hover') center / 18rem no-repeat;
+    }
+
+.RadioButton_base__blankHover_9a .RadioButton_blankHover_5e {
+        opacity: 1;
+    }
+
+.RadioButton_blankMousedown_0e {
+    position: absolute;
+    top: -3rem;
+    right: -3rem;
+    bottom: -3rem;
+    left: -3rem;
+}
+
+.RadioButton_base__small_71 .RadioButton_blankMousedown_0e {
+        background: url('R.images.gui.maps.icons.components.radiobutton.blank_small_mousedown') center / 16rem no-repeat;
+    }
+
+.RadioButton_base__medium_d8 .RadioButton_blankMousedown_0e {
+        background: url('R.images.gui.maps.icons.components.radiobutton.blank_medium_mousedown') center / 18rem no-repeat;
+    }
+
+.RadioButton_base__blankMousedown_cd .RadioButton_blankMousedown_0e {
+        opacity: 1;
+    }
+
+.RadioButton_base__small_71 .RadioButton_check_f2 {
+        position: absolute;
+        top: -3rem;
+        right: -3rem;
+        bottom: -3rem;
+        left: -3rem;
+        background: url('R.images.gui.maps.icons.components.radiobutton.checked_small') center / 16rem no-repeat;
+    }
+
+.RadioButton_base__medium_d8 .RadioButton_check_f2 {
+        position: absolute;
+        top: -15rem;
+        right: -15rem;
+        bottom: -15rem;
+        left: -15rem;
+        background: url('R.images.gui.maps.icons.components.radiobutton.checked_medium') center / 48rem no-repeat;
+    }
+
+.RadioButton_base__check_fe .RadioButton_check_f2 {
+        opacity: 1;
+    }
+
+.RadioButton_base__small_71 .RadioButton_checkHover_c6 {
+        position: absolute;
+        top: -3rem;
+        right: -3rem;
+        bottom: -3rem;
+        left: -3rem;
+        background: url('R.images.gui.maps.icons.components.radiobutton.checked_small_hover') center / 16rem no-repeat;
+    }
+
+.RadioButton_base__medium_d8 .RadioButton_checkHover_c6 {
+        position: absolute;
+        top: -15rem;
+        right: -15rem;
+        bottom: -15rem;
+        left: -15rem;
+        background: url('R.images.gui.maps.icons.components.radiobutton.checked_medium_hover') center / 48rem no-repeat;
+    }
+
+.RadioButton_base__checkHover_2f .RadioButton_checkHover_c6 {
+        opacity: 1;
+    }
+
+.RadioButton_base__small_71 .RadioButton_checkMousedown_a7 {
+        position: absolute;
+        top: -3rem;
+        right: -3rem;
+        bottom: -3rem;
+        left: -3rem;
+        background: url('R.images.gui.maps.icons.components.radiobutton.checked_small_mousedown') center / 16rem no-repeat;
+    }
+
+.RadioButton_base__medium_d8 .RadioButton_checkMousedown_a7 {
+        position: absolute;
+        top: -15rem;
+        right: -15rem;
+        bottom: -15rem;
+        left: -15rem;
+        background: url('R.images.gui.maps.icons.components.radiobutton.checked_medium_mousedown') center / 48rem no-repeat;
+    }
+
+.RadioButton_base__checkMousedown_83 .RadioButton_checkMousedown_a7 {
+        opacity: 1;
+    }
+
+.RadioButton_label_7f {
+    color: #8C8C7E;
+    line-height: 1.3;
+    transition: color .1s ease-out, opacity .1s ease-out;
+}
+
+.RadioButton_base_d9:hover > .RadioButton_label_7f {
+        color: #E9E2BF;
+    }
+
+.RadioButton_base_d9.RadioButton_base__disabled_84 > .RadioButton_label_7f,
+    .RadioButton_base_d9.RadioButton_base__disabled_84:hover > .RadioButton_label_7f {
+        color: #8C8C7E;
+        transition: none;
+    }
+
+.RadioButton_base__small_71 .RadioButton_label_7f {
+        font-size: 12rem;
+    }
+
+.RadioButton_base__medium_d8 .RadioButton_label_7f {
+        font-size: 14rem;
+    }
+
+.CurrencyRadioButton_currency_80 {
+    margin-bottom: 4rem;
 }
 
 .Price_base_70 {
@@ -2134,6 +2379,83 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 400;
     line-height: 1.25;
     padding-right: 9rem;
+}
+
+.Price_label__isMulticurrency_b4 {
+        color: #FFDD99;
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 4rem;
+        padding-right: 12rem;
+    }
+
+.Price_priceDivider_b4 {
+    color: #F2F2F7;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 0 9rem 4rem 6rem;
+    opacity: .8;
+}
+
+.Footer_base_9a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+    .Footer_base__isMulticurrency_33 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: -24rem;
+    }
+
+.Footer_divider_5e {
+    width: 720rem;
+    height: 1rem;
+    background-color: #fff;
+    opacity: .1;
+}
+
+.Footer_base__isMulticurrency_33 .Footer_divider_5e {
+        break-after: flex;
+        flex-basis: 100%;
+    }
+
+.Footer_price_b6 {
+    margin-top: 10rem;
+}
+
+.Footer_base__isMulticurrency_33 .Footer_price_b6 {
+        margin: 24rem 0 30rem;
+    }
+
+.mediaExtraLarge .Footer_base__isMulticurrency_33 .Footer_price_b6 {
+            margin-bottom: 86rem;
+}
+
+.Footer_warning_de {
+    color: #FEAB34;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-top: 5rem;
+}
+
+.Footer_buttons_32 {
+    margin-top: 12rem;
+}
+
+.Footer_base__isMulticurrency_33 .Footer_buttons_32 {
+        margin: 26rem 0 0 20rem;
+    }
+
+.mediaLarge .Footer_chapterWarning_c1 {
+        transform: translateY(25rem);
 }
 
 /* colors*/
@@ -2349,20 +2671,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         margin-right: 20rem;
     }
 
-.ConfirmBuyViewContent_footer_af {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-.ConfirmBuyViewContent_divider_01 {
-    width: 720rem;
-    height: 1rem;
-    background-color: #fff;
-    opacity: .1;
-}
-
 .ConfirmBuyViewContent_background_73 {
     background: #000 no-repeat center / cover;
     position: absolute;
@@ -2409,18 +2717,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: -172rem;
 }
 
-.ConfirmBuyViewContent_warning_46 {
-    color: #FEAB34;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-top: 5rem;
-}
-
-.ConfirmBuyViewContent_price_e7 {
-    margin-top: 10rem;
-}
-
 .ConfirmBuyViewContent_indentBlock_dc,
 .ConfirmBuyViewContent_rewardBtn_64 {
     width: 160rem;
@@ -2429,14 +2725,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .mediaLarge .ConfirmBuyViewContent_indentBlock_dc, .mediaLarge .ConfirmBuyViewContent_rewardBtn_64 {
         margin: 25rem 0 20rem;
-}
-
-.mediaLarge .ConfirmBuyViewContent_chapterWarning_df {
-        transform: translateY(25rem);
-}
-
-.ConfirmBuyViewContent_buttons_24 {
-    margin-top: 15rem;
 }
 
 .FormatText_base_d0 {

@@ -147,10 +147,22 @@
 .App_mainBg_01 {
     width: 100%;
     height: 100%;
-    background: no-repeat center / cover;
+    background: no-repeat center / 1264rem 736rem;
     filter: blur(3px);
     position: absolute;
 }
+
+.mediaMedium .App_mainBg_01 {
+        background-size: 1738rem 1012rem;
+}
+
+.mediaLarge .App_mainBg_01 {
+        background-size: 2133rem 1242rem;
+}
+
+.App_base__ultraSize_fb .App_mainBg_01 {
+        background-size: 3160rem 1840rem;
+    }
 
 .App_darkBg_7f {
     width: 100%;

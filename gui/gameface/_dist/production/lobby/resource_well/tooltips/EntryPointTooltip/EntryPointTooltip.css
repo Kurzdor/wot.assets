@@ -115,14 +115,14 @@
     background: url('R.images.gui.maps.icons.resourceWell.timer.shine_timer_small') no-repeat center / contain;
     opacity: 1;
     position: relative;
-    top: -69rem;
+    top: -129rem;
 }
 
 .mediaMedium .TimerMainScreen_shineBg_77 {
         width: 700rem;
         height: 394rem;
         background-image: url('R.images.gui.maps.icons.resourceWell.timer.shine_timer');
-        top: -122rem;
+        top: -182rem;
 }
 
 .TimerMainScreen_content_24 {

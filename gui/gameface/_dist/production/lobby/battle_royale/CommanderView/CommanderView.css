@@ -12,7 +12,9 @@ body {
     width: 48rem;
     height: 48rem;
     margin-right: 10rem;
-    background-size: cover;
+    border: 1rem solid rgba(255, 255, 255, .15);
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, .3) no-repeat center / contain;
     position: relative;
 }
 
@@ -33,16 +35,6 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url('R.images.gui.maps.icons.battleRoyale.hangar.back_commander_bg') no-repeat 100% 100% / 100% 100%;
-}
-
-.App_bgOverCommander_26 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: url('R.images.gui.maps.icons.battleRoyale.hangar.over_commander_bg') no-repeat 100% 100% / 100% 100%;
 }
 
 .App_details_b4 {

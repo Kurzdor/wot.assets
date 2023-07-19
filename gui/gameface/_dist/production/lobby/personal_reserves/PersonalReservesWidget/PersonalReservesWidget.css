@@ -95,7 +95,8 @@ html {
     }
 
     .ReserveIcon_base__clan_7b .ReserveIcon_fill_48 {
-            background: radial-gradient(100% 3rem at 50% 0%, rgba(225, 255, 186, .2), transparent 100%), linear-gradient(180deg, #496019 0%, #1f3b1b 100%);
+            background: radial-gradient(100% 3rem at 50% 0%, rgba(225, 255, 186, .2), transparent 100%),
+                linear-gradient(180deg, #496019 0%, #1f3b1b 100%);
         }
 
     .ReserveIcon_base__clan_7b .ReserveIcon_fill_pattern_03 {
@@ -107,11 +108,15 @@ html {
             }
 
     .ReserveIcon_base__clan_7b .ReserveIcon_minutesLeft_fe {
-            text-shadow: -1rem -1rem 0rem #1f3b1b, 1rem 1rem 0rem #1f3b1b, -1rem 1rem 0rem #1f3b1b, 1rem -1rem 0rem #1f3b1b;
+            text-shadow: -1rem -1rem 0rem #1f3b1b,
+ 1rem 1rem 0rem #1f3b1b,
+ -1rem 1rem 0rem #1f3b1b,
+                1rem -1rem 0rem #1f3b1b;
         }
 
     .ReserveIcon_base__event_b6 .ReserveIcon_fill_48 {
-            background: radial-gradient(100% 3rem at 50% 0%, rgba(249, 255, 186, .2), transparent 100%), linear-gradient(180deg, #98752f 0%, #72500f 100%);
+            background: radial-gradient(100% 3rem at 50% 0%, rgba(249, 255, 186, .2), transparent 100%),
+                linear-gradient(180deg, #98752f 0%, #72500f 100%);
         }
 
     .ReserveIcon_base__event_b6 .ReserveIcon_fill_pattern_03 {
@@ -123,51 +128,50 @@ html {
             }
 
     .ReserveIcon_base__event_b6 .ReserveIcon_minutesLeft_fe {
-            text-shadow: -1rem -1rem 0rem #583a00, 1rem 1rem 0rem #583a00, -1rem 1rem 0rem #583a00, 1rem -1rem 0rem #583a00;
+            text-shadow: -1rem -1rem 0rem #583a00,
+ 1rem 1rem 0rem #583a00,
+ -1rem 1rem 0rem #583a00,
+                1rem -1rem 0rem #583a00;
         }
 
-    .mediaMedium .ReserveIcon_base_26 {
+    .ReserveIcon_base__medium_6d {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 38rem;
         height: 38rem;
         border-radius: 2rem;
         box-shadow: -1px 1px 2px rgba(0, 0, 0, .3), 0px -1px 2px rgba(255, 255, 255, .07);
         background: linear-gradient(0deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), #211f16;
-}
+        position: relative;
+    }
 
 .ReserveIcon_minutesLeft_fe {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 16rem;
+    color: #FFFFFF;
+    font-size: 14rem;
+    font-weight: 300;
+    text-shadow: -1rem -1rem 0rem #05334e, 1rem 1rem 0rem #05334e, -1rem 1rem 0rem #05334e, 1rem -1rem 0rem #05334e;
+    position: absolute;
+    bottom: 4rem;
+    z-index: 3;
+    animation: ReserveIcon_fadeIn_74 .5s;
 }
 
-.mediaMedium .ReserveIcon_minutesLeft_fe {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 16rem;
-        color: #FFFFFF;
-        font-size: 14rem;
-        font-weight: 300;
-        text-shadow: -1rem -1rem 0rem #05334e, 1rem 1rem 0rem #05334e, -1rem 1rem 0rem #05334e, 1rem -1rem 0rem #05334e;
-        position: absolute;
-        bottom: 4rem;
-        z-index: 3;
-        animation: ReserveIcon_fadeIn_74 .5s;
-}
-
-.mediaMedium .ReserveIcon_minutesLeft__smallMinutes_42 {
-            font-size: 12rem;
-            font-weight: 100;
-        }
+.ReserveIcon_minutesLeft__smallMinutes_42 {
+        font-size: 12rem;
+        font-weight: 100;
+    }
 
 .ReserveIcon_icon_aa {
-    display: none;
-}
-
-.mediaMedium .ReserveIcon_icon_aa {
-        display: block;
-        width: 32rem;
-        height: 32rem;
-        z-index: 2;
+    display: block;
+    width: 32rem;
+    height: 32rem;
+    z-index: 2;
 }
 
 .ReserveIcon_icon__active_f5 {
@@ -181,7 +185,8 @@ html {
     max-height: 38rem;
     border-radius: 5rem;
     border-top: 1rem rgba(255, 255, 255, .05) solid;
-    background: radial-gradient(100% 3rem at 50% 0%, rgba(186, 255, 251, .2), transparent 100%), linear-gradient(180deg, #127177 0%, #0c4261 100%);
+    background: radial-gradient(100% 3rem at 50% 0%, rgba(186, 255, 251, .2), transparent 100%),
+        linear-gradient(180deg, #127177 0%, #0c4261 100%);
     position: absolute;
     right: 0;
     bottom: 0;
@@ -201,12 +206,13 @@ html {
         left: 2rem;
     }
 
-.mediaMedium .ReserveIcon_fill_wrapper_76 {
+.ReserveIcon_fill_wrapper__medium_c3 {
+            position: absolute;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
-}
+        }
 
 .ReserveIcon_fill_pattern_03 {
         width: 100%;
@@ -226,10 +232,6 @@ html {
         bottom: -2rem;
         left: -2rem;
     }
-
-.mediaMedium .ReserveIcon_fill_border_14 {
-            display: none;
-}
 
 @keyframes ReserveIcon_fillIn_ae {
     from {

@@ -2074,6 +2074,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     flex-direction: row;
     bottom: 50rem;
+    z-index: 1;
 }
     .Rewards_base__extraSmall_9b,
     .Rewards_base__small_78 {
@@ -2563,6 +2564,30 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .NormalCard_statusDescription__color_b5 {
         color: #E9E2BF;
     }
+
+.NormalCard_alert_4c {
+    color: #EE7000;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15rem auto 0;
+}
+
+.NormalCard_cornerAlert_a7 {
+    position: absolute;
+    top: 12rem;
+    right: 8rem;
+}
+
+.NormalCard_alertIcon_86 {
+    width: 16rem;
+    height: 16rem;
+    margin-right: 4rem;
+    background: url('R.images.gui.maps.icons.library.alertIcon') no-repeat left / contain;
+}
 
 .NormalCard_belowStatus_05 {
     position: absolute;
@@ -3948,76 +3973,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     pointer-events: none;
 }
 
-.Card_widgetOverlay_a5 {
-    pointer-events: auto;
-}
-
-.Card_belowStatus_b6 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 80rem;
-    position: relative;
-    pointer-events: auto;
-}
-
-.mediaMedium .Card_belowStatus_b6 {
-        margin-top: 110rem;
-}
-
-.Card_base__b1_6f .Card_subtitle_4a {
-        padding-top: 218rem;
-    }
-
-.mediaMedium .Card_base__b1_6f .Card_subtitle_4a {
-            padding-top: 279rem;
-}
-
-.mediaLarge .Card_base__b1_6f .Card_subtitle_4a {
-            padding-top: 325rem;
-}
-
-.Card_base__b2_53 .Card_subtitle_4a {
-        padding-top: 111rem;
-    }
-
-.mediaMedium .Card_base__b2_53 .Card_subtitle_4a {
-            padding-top: 164rem;
-}
-
-.mediaLarge .Card_base__b2_53 .Card_subtitle_4a {
-            padding-top: 180rem;
-}
-
-.Card_name_d9 {
-    flex-direction: column;
-    line-height: 100%;
-}
-
-.Card_base__b1_6f .Card_name_d9 {
-        bottom: 254rem;
-    }
-
-.mediaMedium .Card_base__b1_6f .Card_name_d9 {
-            bottom: 308rem;
-}
-
-.mediaLarge .Card_base__b1_6f .Card_name_d9 {
-            bottom: 376rem;
-}
-
-.Card_base__b2_53 .Card_name_d9 {
-        bottom: 121rem;
-    }
-
-.mediaMedium .Card_base__b2_53 .Card_name_d9 {
-            bottom: 123rem;
-}
-
-.mediaLarge .Card_base__b2_53 .Card_name_d9 {
-            bottom: 162rem;
-}
-
 .Progression_base_94 {
     display: flex;
     flex-direction: column;
@@ -4117,6 +4072,23 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .mediaMedium .Progression_progressValueIcon_e9 {
         margin-bottom: -1rem;
+}
+
+.Card_widgetOverlay_a5 {
+    pointer-events: auto;
+}
+
+.Card_belowStatus_b6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80rem;
+    position: relative;
+    pointer-events: auto;
+}
+
+.mediaMedium .Card_belowStatus_b6 {
+        margin-top: 110rem;
 }
 
 .Column_base_41 {
