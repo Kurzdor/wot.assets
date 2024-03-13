@@ -6,6 +6,10 @@ const COMMANDS = { start: 'start', build: 'build' };
 
 const command = COMMANDS[process.env.COMMAND];
 
+const getProcessFlag = (flagName) => {
+    return process.argv.find((flag) => flag.startsWith(flagName))?.split('=')?.[1];
+};
+
 async function choseFeatureType() {
     const futureTypes = Object.values(FEATURES_TYPES);
     const readline = require('readline');
@@ -43,14 +47,25 @@ const build = () => {
 };
 
 const start = () => {
-    choseFeatureType().then((answer) => {
-        if (FEATURES_TYPES.internal === answer) {
-            runCommand(`npm run start`);
-        }
-        if (FEATURES_TYPES.external === answer) {
+    const featureName = getProcessFlag('feature');
+    if (featureName) {
+        if (featureName === 'extensions') {
             runCommand(`npm run start:extensions`);
+        } else {
+            runCommand(
+                `cross-env BUILD_MODE=start AUTO_START_FEATURE=${featureName} node externalBuilder/externalBuilder.js`,
+            );
         }
-    });
+    } else {
+        choseFeatureType().then((answer) => {
+            if (FEATURES_TYPES.internal === answer) {
+                runCommand(`npm run start`);
+            }
+            if (FEATURES_TYPES.external === answer) {
+                runCommand(`npm run start:extensions`);
+            }
+        });
+    }
 };
 
 const run = () => {

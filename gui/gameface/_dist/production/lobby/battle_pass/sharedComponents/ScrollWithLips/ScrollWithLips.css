@@ -205,6 +205,9 @@
 .ScrollWithLips_base_69 {
     position: relative;
 }
+.ScrollWithLips_scrollContent_19 {
+    height: auto;
+}
 .ScrollWithLips_lip_90 {
     height: 96rem;
     background: url('R.images.gui.maps.icons.battlePass.buy.lip') no-repeat center center / cover;

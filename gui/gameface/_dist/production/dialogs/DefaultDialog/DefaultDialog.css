@@ -445,6 +445,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 17rem;
+    text-align: center;
     z-index: 2;
 }
 

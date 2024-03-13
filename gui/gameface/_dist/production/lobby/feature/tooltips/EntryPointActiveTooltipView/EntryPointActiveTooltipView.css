@@ -1,0 +1,544 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #FFFFFF;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #F2F2F7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #FEFEEC;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #E9E2BF;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8C8C7E;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362E;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #FF2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #B70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #FEAB34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #EE7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #FFDD99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #CBAC77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80D43A;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7AB300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #CCFFFF;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09E2FF;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #CED9D9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #FFC363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #C9C9B6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #A29B70;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBar_base_45 {
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+.ProgressBar_base__medium_62 {
+        height: 6rem;
+    }
+.ProgressBar_base__small_df {
+        height: 2rem;
+    }
+.ProgressBar_background_51 {
+    width: 100%;
+    max-width: 8001px;
+    height: 100%;
+    background-image: var(--progress-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ProgressBar_background__medium_6e {
+        height: 6rem;
+    }
+.ProgressBar_background__small_46 {
+        height: 2rem;
+    }
+.ProgressBar_lineWrapper_6a {
+    display: flex;
+    flex: 1;
+}
+
+
+.ProgressBarBlink_base_24 {
+    width: 60rem;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    pointer-events: none;
+}
+
+    .ProgressBarBlink_base__medium_ec {
+        width: 42rem;
+        height: 70rem;
+    }
+
+    .ProgressBarBlink_base__small_0f {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressLineImpose_base_80 {
+    max-width: 8001px;
+    height: 100%;
+    background-color: var(--progress-line-base);
+    position: relative;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressLineImpose_base__disabled_cc {
+        background-color: var(--progress-line-disabled);
+    }
+.ProgressLineImpose_base__finished_d4 {
+        background-color: var(--progress-line-finished);
+    }
+.ProgressLineImpose_base__withoutBounce_56 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressLineImpose_pattern_1c {
+    max-width: 8001px;
+    background-image: var(--progress-pattern-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-disabled);
+        left: 0;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-finished);
+    }
+.ProgressLineImpose_gradient_35 {
+    max-width: 8001px;
+    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
+        display: none;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
+        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
+    }
+.ProgressLineImpose_glow_a5 {
+    width: 60rem;
+    max-width: 8001px;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.ProgressLineImpose_glow__left_d8 {
+        left: 1rem;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
+    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+        display: none;
+    }
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaSimple_base_6c {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ProgressBarDeltaSimple_delta_99 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-property: width, transform;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaGrow_base_7e {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressBarDeltaGrow_glow_68 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+
+.Chapter_base_b5 {
+    width: 380rem;
+    height: 96rem;
+    position: relative;
+}
+
+.Chapter_background_4c {
+    width: 308rem;
+    height: 91rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.Chapter_background__disabled_24 {
+        opacity: 0.3;
+    }
+
+.Chapter_separator_5f {
+    width: 100%;
+    height: 9rem;
+    margin: 8rem 0;
+    background: url('R.images.armory_yard.gui.maps.icons.tooltips.separator') no-repeat center / cover;
+    margin: 0;
+    position: absolute;
+    top: -5rem;
+    left: 0;
+}
+
+.Chapter_content_98 {
+    padding: 20rem;
+    position: relative;
+}
+
+.Chapter_title_7b {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.Chapter_title__disabled_d3 {
+        opacity: 0.5;
+    }
+
+.Chapter_icon_a2 {
+    width: 32rem;
+    height: 32rem;
+    margin: 4rem -2rem 0 -10rem;
+    background: no-repeat center / cover;
+}
+
+.Chapter_icon__announcement_28 {
+        background-image: url('R.images.armory_yard.gui.maps.icons.tooltips.chapters.announcement');
+    }
+
+.Chapter_icon__locked_8f {
+        background-image: url('R.images.armory_yard.gui.maps.icons.tooltips.chapters.locked');
+    }
+
+.Chapter_icon__justBeforeStart_27 {
+        background-image: url('R.images.armory_yard.gui.maps.icons.tooltips.chapters.justBeforeStart');
+    }
+
+.Chapter_icon__completed_d4 {
+        background-image: url('R.images.armory_yard.gui.maps.icons.tooltips.chapters.completed');
+    }
+
+.Chapter_text_27 {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.Chapter_text__active_1b {
+        font-size: 14rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+.Chapter_text__quests_2e {
+        font-size: 15rem;
+        font-weight: 700;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+.Chapter_text__locked_b9 {
+        color: #FFDD99;
+        text-shadow: 0 0 4rem #954700, 0 0 16rem rgba(146, 55, 27, 0.5);
+    }
+
+.Chapter_text__justBeforeStart_cf {
+        color: #FFDD99;
+        text-shadow: 0 0 4rem rgba(255, 127, 0, 0.25), 0 0 8rem #ff2a00, 0 0 15rem #f15926;
+    }
+
+.Chapter_text__completed_19 {
+        color: #7AB300;
+    }
+
+.Chapter_state_74 {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    position: relative;
+}
+
+.Chapter_state__active_f7 {
+        margin-top: 6rem;
+    }
+
+.Chapter_progressBar_f0 {
+    display: flex;
+    margin-top: 28rem;
+    position: relative;
+}
+
+.Tokens_base_ba {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 378rem;
+    height: 111rem;
+    padding: 12rem 20rem;
+    background: url('R.images.armory_yard.gui.maps.icons.tooltips.ribbon_large') no-repeat left / contain;
+    position: relative;
+}
+
+.Tokens_header_55 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    align-self: flex-start;
+    margin-bottom: 13rem;
+}
+
+.Tokens_icon_78 {
+    width: 32rem;
+    height: 32rem;
+    background: url('R.images.armory_yard.gui.maps.icons.tooltips.chapters.token') no-repeat left / contain;
+}
+
+.Tokens_value_1d {
+    margin-top: 4rem;
+    font-weight: 700;
+}
+
+.App_base_7c {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 380rem;
+    padding: 20rem 0 0;
+    background-color: #11110e;
+    position: relative;
+}
+
+.App_metal_7d {
+    width: 320rem;
+    height: 88rem;
+    background: url('R.images.armory_yard.gui.maps.icons.tooltips.metal') no-repeat left / cover;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.App_content_f3 {
+    position: relative;
+}
+
+.App_headerContainer_af {
+    padding: 0 20rem;
+}
+
+.App_header_d6 {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.App_timerContainer_6e {
+    position: relative;
+}
+
+.App_timerIcon_02 {
+    width: 32rem;
+    height: 32rem;
+    background: url('R.images.armory_yard.gui.maps.icons.tooltips.chapters.justBeforeStart') no-repeat center / cover;
+    position: absolute;
+    top: 3rem;
+    left: -10rem;
+}
+
+.App_description_91 {
+    margin-top: 8rem;
+}
+
+.App_description__emphasized_f0 {
+        margin-left: 20rem;
+        color: #FFDD99;
+        text-shadow: 0 0 4rem rgba(255, 127, 0, 0.25), 0 0 8rem #ff2a00, 0 0 15rem #f15926;
+    }
+
+.App_chapters_9f {
+    width: 380rem;
+    height: 484rem;
+    margin-top: 15rem;
+    background: url('R.images.armory_yard.gui.maps.icons.tooltips.scratches') no-repeat left / cover;
+}
+
+.App_tokens_75 {
+    margin-left: 1rem;
+}
+

@@ -1,3 +1,12 @@
+body {
+    margin: 1rem;
+    overflow: hidden;
+}
+
+html {
+    overflow: hidden;
+}
+
 .EntryPointContent_base_d2 {
     width: 100%;
     height: 100%;
@@ -220,13 +229,4 @@
 .EntryPointContent_base__thinExtraSmall_05 .EntryPointContent_seasonDateTimeIcon_a1 {
         top: -11rem;
     }
-
-body {
-    margin: 1rem;
-    overflow: hidden;
-}
-
-html {
-    overflow: hidden;
-}
 

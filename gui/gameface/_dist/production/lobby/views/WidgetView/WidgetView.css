@@ -1,0 +1,76 @@
+.Widget_base_55 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateY(0rem);
+    transition: transform .12s ease-in-out;
+    cursor: pointer;
+}
+
+    .Widget_base_55:hover {
+        filter: brightness(1.15);
+        transform: translateY(4rem);
+    }
+
+.Widget_icon_de {
+    width: 130rem;
+    height: 130rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: -17rem;
+}
+
+.Widget_icon__inProgress_e5 {
+    background: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_in_progress_130_130')
+    no-repeat center / contain;
+    }
+
+.mediaSmall .Widget_icon__inProgress_e5 {
+        background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_in_progress_150_150');
+}
+
+.Widget_icon__completed_4d {
+    background: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_done_130_130')
+    no-repeat center / contain;
+    }
+
+.mediaSmall .Widget_icon__completed_4d {
+        background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_done_150_150');
+}
+
+.mediaMedium .Widget_icon_de {
+        width: 150rem;
+        height: 150rem;
+}
+
+.Widget_level_cc {
+    color: #DBDBDB;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10rem;
+    text-shadow: 0 0 5rem #000, 0 3rem 7rem #000, 0 0 10rem #000;
+}
+
+.mediaSmall .Widget_level_cc {
+        color: #DBDBDB;
+        font-size: 24rem;
+        font-weight: 700;
+        line-height: 1.2;
+}
+
+.mediaMedium .Widget_level_cc {
+        margin-bottom: 15rem;
+}
+
+.App_base_06 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 12rem;
+}
+

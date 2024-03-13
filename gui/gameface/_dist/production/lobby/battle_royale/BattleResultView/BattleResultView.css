@@ -1496,6 +1496,9 @@ body {
     height: 12rem;
     position: relative;
 }
+.ProgressBar_base__medium_62 {
+        height: 6rem;
+    }
 .ProgressBar_base__small_df {
         height: 2rem;
     }
@@ -1511,6 +1514,9 @@ body {
     top: 0;
     left: 0;
 }
+.ProgressBar_background__medium_6e {
+        height: 6rem;
+    }
 .ProgressBar_background__small_46 {
         height: 2rem;
     }
@@ -1532,6 +1538,11 @@ body {
     transform: translate(50%, -50%);
     pointer-events: none;
 }
+
+    .ProgressBarBlink_base__medium_ec {
+        width: 42rem;
+        height: 70rem;
+    }
 
     .ProgressBarBlink_base__small_0f {
         width: 44rem;
@@ -1896,30 +1907,48 @@ body {
 .Emblem_image__completedGoldenMicro_2d {
         background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_BP_completed_micro');
     }
-.Emblem_extra_d4 {
+.Emblem_marathon_c6,
+.Emblem_resource_97 {
     display: flex;
     justify-content: center;
     width: 140rem;
     height: 130rem;
     margin-bottom: 8rem;
-    background: url('R.images.gui.maps.icons.battlePass.logo.extra_flags') left top / cover no-repeat;
     position: absolute;
     top: 60rem;
     left: 50%;
-    z-index: -2;
+    z-index: 0;
     transform: translate(-50%, -50%);
 }
-.Emblem_extra__micro_f7 {
+.Emblem_marathon__micro_61, .Emblem_resource__micro_67 {
         width: 60rem;
         height: 60rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.extra_flags_micro');
         top: 24rem;
     }
-.Emblem_extra__small_28 {
-        width: 100rem;
-        height: 100rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.extra_flags_small');
+.Emblem_marathon__small_0b, .Emblem_resource__small_41 {
+        width: 107rem;
+        height: 98rem;
         top: 40rem;
+    }
+.Emblem_marathon_c6 {
+    background: url('R.images.gui.maps.icons.battlePass.logo.marathon_flags') left top / cover;
+    background-repeat: no-repeat;
+}
+.Emblem_marathon__micro_61 {
+        background-image: url('R.images.gui.maps.icons.battlePass.logo.marathon_flags_micro');
+    }
+.Emblem_marathon__small_0b {
+        background-image: url('R.images.gui.maps.icons.battlePass.logo.marathon_flags_small');
+    }
+.Emblem_resource_97 {
+    background: url('R.images.gui.maps.icons.battlePass.logo.resource') left top / cover;
+    background-repeat: no-repeat;
+}
+.Emblem_resource__micro_67 {
+        background-image: url('R.images.gui.maps.icons.battlePass.logo.resource_micro');
+    }
+.Emblem_resource__small_41 {
+        background-image: url('R.images.gui.maps.icons.battlePass.logo.resource_small');
     }
 
 @keyframes Label_hideLevel_61 {

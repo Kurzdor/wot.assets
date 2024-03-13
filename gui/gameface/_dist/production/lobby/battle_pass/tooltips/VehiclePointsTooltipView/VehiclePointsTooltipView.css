@@ -1,3 +1,16 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+
 .VehicleInfo_base_4f {
     display: flex;
     align-items: center;
@@ -138,6 +151,53 @@
     font-size: 14rem;
     line-height: 1.2;
     text-align: center;
+}
+
+.Content_base_06 {
+    line-height: normal;
+}
+.Content_separator_af {
+    width: 283rem;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Devider_points') 50% / contain no-repeat;
+}
+.Content_rewards_22 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 403rem;
+    height: 154rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Ribbon_large') bottom / cover no-repeat;
+    color: #c9c9b6;
+    font-size: 14rem;
+}
+.Content_base_06 {
+    display: flex;
+    flex-direction: column;
+    padding: 28rem;
+}
+.Content_base__big_a6 {
+        width: 403rem;
+    }
+.Content_base__small_39 {
+        width: 350rem;
+    }
+.Content_title_07 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: -10rem;
+}
+.Content_titleLabel_ba {
+    color: #f2f2e7;
+    font-size: 24rem;
+    font-weight: 700;
+}
+.Content_separator_af {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
 }
 
 .styles_base_86 {
@@ -294,69 +354,5 @@
 
 .Points_pointsCurrentLabel_9d {
     color: #f5eed5;
-}
-
-.Content_base_06 {
-    line-height: normal;
-}
-.Content_separator_af {
-    width: 283rem;
-    height: 1rem;
-    background: url('R.images.gui.maps.icons.battlePass.tooltips.Devider_points') 50% / contain no-repeat;
-}
-.Content_rewards_22 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 403rem;
-    height: 154rem;
-    background: url('R.images.gui.maps.icons.battlePass.tooltips.Ribbon_large') bottom / cover no-repeat;
-    color: #c9c9b6;
-    font-size: 14rem;
-}
-.Content_base_06 {
-    display: flex;
-    flex-direction: column;
-    padding: 28rem;
-}
-.Content_base__big_a6 {
-        width: 403rem;
-    }
-.Content_base__small_39 {
-        width: 350rem;
-    }
-.Content_title_07 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: -10rem;
-}
-.Content_titleLabel_ba {
-    color: #f2f2e7;
-    font-size: 24rem;
-    font-weight: 700;
-}
-.Content_separator_af {
-    margin-top: 5rem;
-    margin-bottom: 10rem;
-}
-
-.TooltipDecorator_base_c9 {
-    display: flex;
-    position: absolute;
-}
-
-.TooltipDecorator_decorator_3d {
-    padding: 4rem 6rem 8rem; /* border offset*/
-    border-image-source: url('R.atlases.components.tooltip_background');
-    border-image-slice: 24 fill;
-    border-image-width: 24rem;
-    position: relative;
-}
-
-.TooltipDecorator_decoratorContent_de {
-    background-color: #000;
 }
 

@@ -1,0 +1,397 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.App_base_00 {
+    width: 360rem;
+    max-height: 600rem;
+    padding: 24rem;
+    border: 1rem solid rgba(242, 242, 230, 0.1);
+    border-radius: 2rem;
+    box-shadow: 0 1rem 12rem 0 rgba(0, 0, 0, 0.15), 0 0 1rem 0 #000, 0 0 25rem 0 rgba(242, 242, 230, 0.1) inset;
+    background: linear-gradient(
+            180deg,
+            rgba(51, 51, 41, 0.06) 0%,
+            rgba(44, 44, 36, 0) 13.02%,
+            rgba(7, 7, 6, 0) 85.94%,
+            rgba(51, 51, 41, 0.02) 100%
+        ),
+        #12110b;
+    overflow: hidden;
+}
+
+.App_divider_dd {
+    width: 316rem;
+    height: 9rem;
+    margin: 8rem 0;
+    background: url('R.images.gui_lootboxes.gui.maps.storage.tooltipDivider') no-repeat center / cover;
+}
+
+.App_elementDescription_2e {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Header_base_b0 {
+    display: flex;
+    align-items: center;
+    width: 316rem;
+    height: 80rem;
+    margin-top: -18rem;
+}
+
+.Header_headerImage_11 {
+    width: 48rem;
+    height: 48rem;
+    margin-right: 16rem;
+    background: no-repeat center / cover;
+}
+
+.Header_headerImage__vehicle_81 {
+        background-image: url('R.images.gui_lootboxes.gui.maps.storage.rewards.premTank');
+    }
+
+.Header_headerImage__premium_d2 {
+        background-image: url('R.images.gui_lootboxes.gui.maps.storage.rewards.premAccount');
+    }
+
+.Header_headerImage__currency_8a {
+        background-image: url('R.images.gui_lootboxes.gui.maps.storage.rewards.currency');
+    }
+
+.Header_headerImage__vehicleCustomizations_08 {
+        background-image: url('R.images.gui_lootboxes.gui.maps.storage.rewards.customisation');
+    }
+
+.Header_headerImage__crew_52 {
+        background-image: url('R.images.gui_lootboxes.gui.maps.storage.rewards.crew');
+    }
+
+.Header_headerImage__boosters_72 {
+        background-image: url('R.images.gui_lootboxes.gui.maps.storage.rewards.boosters');
+    }
+
+.Header_headerImage__equipments_92 {
+        background-image: url('R.images.gui_lootboxes.gui.maps.storage.rewards.equipments');
+    }
+
+.Header_headerImage__accountCustomizations_24 {
+        background-image: url('R.images.gui_lootboxes.gui.maps.storage.rewards.customisation');
+    }
+
+.Header_headerImage__featureItems_30 {
+        background-image: url('R.images.gui_lootboxes.gui.maps.storage.rewards.eventThings');
+    }
+
+.Header_headerDescriptionWrapper_e2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Header_headerTitle_19 {
+    color: #E9E2BF;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 8rem;
+}
+
+.Header_headerDescription_30 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Reward_base_ea {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+    .Reward_base__s48x48_46,
+    .Reward_base__small_c0 {
+        width: 48rem;
+        height: 48rem;
+    }
+
+    .Reward_base__s80x80_ce,
+    .Reward_base__big_e5 {
+        width: 80rem;
+        height: 80rem;
+    }
+
+    .Reward_base__s128x100_c3 {
+        width: 128rem;
+        height: 100rem;
+    }
+
+    .Reward_base__s180x135_7c {
+        width: 180rem;
+        height: 135rem;
+    }
+
+    .Reward_base__s232x174_67 {
+        width: 232rem;
+        height: 174rem;
+    }
+
+    .Reward_base__s296x222_78 {
+        width: 296rem;
+        height: 222rem;
+    }
+
+    .Reward_base__s400x300_07 {
+        width: 400rem;
+        height: 300rem;
+    }
+
+    .Reward_base__s600x450_f8 {
+        width: 600rem;
+        height: 450rem;
+    }
+
+.Reward_tooltipWrapper_b5 {
+    height: 100%;
+}
+
+.Reward_icon_df {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.Reward_overlay_68 {
+    background: no-repeat center / 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.Reward_base__s48x48_46 .Reward_overlay_68,
+    .Reward_base__small_c0 .Reward_overlay_68 {
+        width: 96rem;
+        height: 96rem;
+        background-size: 100%;
+        overflow: visible;
+    }
+
+.Reward_base__s80x80_ce .Reward_overlay_68,
+    .Reward_base__big_e5 .Reward_overlay_68 {
+        width: 128rem;
+        height: 128rem;
+    }
+
+.Reward_base__s180x135_7c .Reward_overlay_68 {
+        width: 266rem;
+        height: 241rem;
+    }
+
+.Reward_base__s232x174_67 .Reward_overlay_68 {
+        width: 344rem;
+        height: 312rem;
+    }
+
+.Reward_base__s296x222_78 .Reward_overlay_68 {
+        width: 450rem;
+        height: 408rem;
+    }
+
+.Reward_base__s400x300_07 .Reward_overlay_68 {
+        width: 618rem;
+        height: 590rem;
+    }
+
+.Reward_base__s600x450_f8 .Reward_overlay_68 {
+        width: 670rem;
+        height: 575rem;
+    }
+
+.Reward_highlight_36 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 0;
+}
+
+.Reward_image_89 {
+    position: relative;
+}
+
+.Reward_info_72 {
+    margin-top: -13rem;
+    color: #e9e2bf;
+    font-size: 14rem;
+    line-height: 18rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_info_72,
+    .Reward_base__small_c0 .Reward_info_72 {
+        margin: -10rem -10rem 0;
+    }
+
+.Reward_info__multi_63 {
+        margin-right: 2rem;
+        text-align: right;
+    }
+
+.Reward_base__s48x48_46 .Reward_info__multi_63,
+        .Reward_base__small_c0 .Reward_info__multi_63 {
+            margin-right: 0;
+        }
+
+.Reward_info__credits_ef {
+        color: #E9E2BF;
+    }
+
+.Reward_info__gold_36 {
+        color: #FFC363;
+    }
+
+.Reward_info__crystal_36 {
+        color: #C9C9B6;
+    }
+
+.Reward_info__premiumTank_d3 {
+        color: #FFDD99;
+    }
+
+.Reward_timer_d3 {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_timer_d3,
+    .Reward_base__small_c0 .Reward_timer_d3 {
+        width: 23rem;
+        height: 23rem;
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
+        top: -6rem;
+        right: -6rem;
+    }
+
+.Reward_base__s80x80_ce .Reward_timer_d3,
+    .Reward_base__big_e5 .Reward_timer_d3 {
+        width: 48rem;
+        height: 48rem;
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
+        top: -14rem;
+        right: -14rem;
+    }
+
+.RewardSlots_base_84 {
+    display: flex;
+    align-items: center;
+    width: 316rem;
+}
+
+.RewardSlots_vehicles_f7 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+.RewardSlots_vehicle_17 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+.RewardSlots_vehicleLevelRange_3d {
+    color: #FFDD99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 48rem;
+    text-align: center;
+    position: absolute;
+    bottom: -9rem;
+    left: 50%;
+    z-index: 0;
+    transform: translateX(-50%);
+}
+
+.RewardSlots_divider_9f {
+    width: 316rem;
+    height: 9rem;
+    margin: 8rem 0;
+    background: url('R.images.gui_lootboxes.gui.maps.storage.tooltipDivider') no-repeat center / cover;
+}
+
+.RewardSlots_premRewardImage_c0 {
+    width: 48rem;
+    height: 48rem;
+    margin-right: 16rem;
+    background: no-repeat center / cover;
+    position: relative;
+}
+
+.RewardSlots_premRewardImage__premVehicle_13 {
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.small.vehicles');
+    }
+
+.RewardSlots_premRewardImage__rentVehicle_a3 {
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.small.vehicles_rent');
+    }
+
+.RewardSlots_rewardsText_49 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    width: 202rem;
+    overflow: hidden;
+}
+
+.RewardSlots_rewardDescription_83 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 202rem;
+}
+
+.RewardSlots_textMargin_6c {
+    margin-left: 16rem;
+}
+

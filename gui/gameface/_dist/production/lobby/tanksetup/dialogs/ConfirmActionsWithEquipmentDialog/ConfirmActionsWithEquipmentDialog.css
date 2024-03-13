@@ -192,6 +192,7 @@
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 17rem;
+    text-align: center;
     z-index: 2;
 }
 
@@ -271,6 +272,28 @@
     }
 }
 
+.Alert_alert_66 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 5rem 0 4rem;
+}
+
+.Alert_icon_ea {
+    width: 16rem;
+    height: 16rem;
+    margin-right: 5rem;
+    background: url('R.images.gui.maps.icons.library.alertIcon') 0 0 / contain no-repeat;
+    transform: translateY(1rem);
+}
+
+.Alert_alertText_14 {
+    color: #EE7000;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
 .CurrentBalanceCurrencies_base_50 {
     margin-right: 1rem;
 }
@@ -339,25 +362,6 @@
 .CurrentBalanceCurrencies_line_a6 {
     height: 1.3rem;
     background-image: linear-gradient(to right, rgba(66, 66, 62, .12) 10%, rgba(66, 66, 62, .28) 20%, rgba(66, 66, 62, .48) 30%, rgba(66, 66, 62, .7) 40%);
-}
-
-.Equipment_base_cb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 128rem;
-    height: 100rem;
-    margin-bottom: -15rem;
-    position: relative;
-}
-
-.Equipment_glow_15 {
-    width: 248rem;
-    height: 248rem;
-    background: url('R.images.gui.maps.icons.tanksetup.dialogs.deconstructConfirm.alert_glow') no-repeat center / cover;
-    position: absolute;
-    top: -70rem;
-    left: -60rem;
 }
 
 .Currency_base_57 {
@@ -682,6 +686,14 @@
     margin: 0;
 }
 
+.Content_column_9d {
+    flex-direction: column-reverse;
+}
+
+.Content_alert_0f {
+    margin: 0 0 15rem;
+}
+
 .Reward_base_ea {
     display: flex;
     flex-direction: column;
@@ -830,7 +842,7 @@
         }
 
 .Reward_info__credits_ef {
-        color: #CED9D9;
+        color: #E9E2BF;
     }
 
 .Reward_info__gold_36 {
@@ -868,6 +880,16 @@
         top: -14rem;
         right: -14rem;
     }
+
+.Equipment_base_cb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 128rem;
+    height: 100rem;
+    margin-bottom: -15rem;
+    position: relative;
+}
 
 .CButton_base_40 {
     display: flex;
@@ -1111,6 +1133,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .PriceBlockSlots_price_02 {
     display: flex;
     justify-content: flex-start;
+}
+
+.PriceBlockSlots_column_95 {
+    flex-direction: column-reverse;
+}
+
+.PriceBlockSlots_alert_2e {
+    margin: 0 0 15rem;
 }
 
 .NumericStepper_base_35 {
@@ -1474,6 +1504,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex: 1 1 auto;
 }
 
+.PriceBlockStorage_column_1e {
+    flex-direction: column-reverse;
+}
+
+.PriceBlockStorage_alert_22 {
+    margin: 0 0 15rem;
+}
+
 .Footer_base_5b {
     width: 100%;
 }
@@ -1505,7 +1543,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .App_dialogBackground_3a {
-    background-color: rgba(0, 0, 0, .45);
+    background: rgba(0, 0, 0, .45) radial-gradient(44.17% 44.17% at 50% -6.78%, rgba(255, 0, 0, .2) 0%, rgba(255, 0, 0, 0) 100%);
 }
 
 .App_dialogCenter_6a {

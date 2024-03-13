@@ -1,0 +1,41 @@
+# This file was generated using wgpygen
+#   template: configs/templates/view_model.unbound.jinja2
+#   source: configs/definitions/views/buy_vehicle_view_model.yaml
+# Please, don't edit this file manually.
+(def macro BuyVehicleViewModel()
+    (scope
+        (event onCloseBtnClick)
+        (event onBuyBtnClick)
+        (event onInHangarClick)
+        (event onBackClick)
+        (event onCommanderLvlChange)
+        (event onCheckboxWithoutCrewChanged)
+        (event onDisclaimerClick)
+
+        (var nation:str = '')
+        (var tankLvl:str = '')
+        (var tankName:str = '')
+        (var tankType:str = '')
+        (var isWithoutCommander:bool = false)
+        (var hasCommanderCheckbox:bool = false)
+        (var countCrew:number = 0)
+        (var vehicleNameTooltip:str = '')
+        (var tradeOffVehicleIntCD:number = -1)
+        (var buyVehicleIntCD:number = 0)
+        (var isToggleBtnVisible:bool = false)
+        (var isElite:bool = false)
+        (var isRentSelected:bool = false)
+        (var isRestore:bool = false)
+        (var withoutCommanderAltText:str = '')
+        (var priceDescription:str = '')
+        (var noCrewCheckboxLabel:str = '')
+        (var isContentHidden:bool = false)
+        (var bgSource:str = '')
+        (var needDisclaimer:bool = false)
+
+        # The following submodels are used in this model:
+        # commanderLvlCards:ui_kit.list_model
+        # equipmentBlock:views.buy_vehicle_view.equipment_block_model
+        # congratulationAnim:views.buy_vehicle_view.vehicle_congratulation_model
+    )
+)

@@ -5,11 +5,6 @@
 
 const documentCssRules = [
     `
-        html {
-            font-size: <%= scale %>px;
-        }
-    `,
-    `
         body {
             overflow-wrap: <%= overflowWrap %>;
         }
@@ -25,4 +20,8 @@ if (document.styleSheets.length === 0) {
 
 const documentStyle = document.styleSheets[0];
 documentCssRules.forEach((cssRule) => documentStyle.insertRule(cssRule, documentStyle.cssRules.length));
-window.isInitialJSExecuted = true;
+window.isDomBuilt = true;
+
+window.engine.on('self.onScaleUpdated', (scale) => {
+    document.documentElement.style.fontSize = `${scale}px`;
+});

@@ -1,0 +1,157 @@
+(def element SubscriptionSlot(name:str) layout=true
+    (name = "name")
+    (macro PremDashboardAdaptiveSize)
+    (macro SubscriptionCardModel)
+    (macro SubscriptionCardScope)
+    (macro InteractiveSubscriptionCardComponent "SUBSCRIPTIONCARDSTATE.Available")
+    (bind mouseChildren "state == SUBSCRIPTIONCARDSTATE.Active")
+    
+    (scope
+        (var size:str = "isNormalSize 
+            ? (hasClanReserves ?  SIZE.BigClan : SIZE.Big) 
+            : (hasClanReserves ? SIZE.SmallClan : SIZE.Small)"
+        )
+        (var cardPaddnig:str = "isNormalSize 
+            ? (hasClanReserves ? 15px : 20px) 
+            : (hasClanReserves ? 10px : 15px)"
+        )
+        (var cardWidth:number = 0
+            (dispatch __szChanged on='evChanged')
+        )
+        (var cardHeight:number = 0 
+            (dispatch __szChanged on='evChanged')
+        )
+        (bind cardWidth "isNormalSize 
+            ? (hasClanReserves ?  235 : 360) 
+            : (hasClanReserves ? 160 : 250)"
+        )        
+        (bind cardHeight "isNormalSize ? 80 : 65")
+    )
+    (dispatch onCardClick 
+        (event "evCardClick")
+    )
+    (exec "playSound(R.sounds.highlight())" (event "evCardOver")
+        (enabled = "state != SUBSCRIPTIONCARDSTATE.Disable")
+    )
+    (exec "playSound(R.sounds.play())" (event "evCardClick")
+        (enabled = "state != SUBSCRIPTIONCARDSTATE.Disable")
+    )
+    (style
+        (bind width "cardWidth")
+        (bind height "cardHeight")
+        (align = "left|middle")
+    )
+    (block
+        (name = 'slotMask')
+        (style
+            (position = "absolute")
+        )
+        (.graphics
+            (bindcall clear init=false
+                (event "__szChanged")
+            )
+            (bindcall lineStyle "1" "0xffffff" "1" init=true
+                (event "__szChanged")
+            )
+            (bindcall beginFill "0x000000" "1" init=true
+                (event "__szChanged")
+            )
+            (bindcall drawRoundRect "0" "0" "cardWidth" "cardHeight" "BORDER_RARIUS" "BORDER_RARIUS" init=true watch=false
+                (event "__szChanged")
+            )
+            (bindcall endFill
+                (event "__szChanged")
+            )
+        )
+    )
+    (bind mask "$target.slotMask")
+    (macro SubscriptionCardBg "state" "cardWidth" "cardHeight")
+    (block
+        (style
+            (bind paddingLeft "cardPaddnig")
+            (bind paddingRight "cardPaddnig")
+            (width = 100%)
+        )
+        (hblock
+            (style
+                (width = 100%)
+            )
+            (image
+                (bind visible "state == SUBSCRIPTIONCARDSTATE.Active")
+                (style
+                    (position = absolute)
+                    (left = -12px)
+                    (vcenter = 0)
+                )
+                (source = "R.images.gui.maps.icons.subscription.dashboard_card.checkmark()")
+            )
+            (tf
+                (bind class "LABEL_STYLES[size]")
+                (style
+                    (bind marginLeft "state == SUBSCRIPTIONCARDSTATE.Active ? 20px : 0")
+                )
+                (bind text "R.strings.subscription.dashboard.subscriptionCard[isNormalSize ? 'label' : 'labelShort']()")
+            )
+            (button
+                (bind visible "state == SUBSCRIPTIONCARDSTATE.Active")
+                (macro ButtonStylePrimaryGhost "BUTTON_SIZE_SMALL")
+                (scope
+                    (dispatch onInfoButtonClik on='clicked')
+                )
+                (style
+                    (position = absolute)
+                    (right = 0)
+                    (width = 24px)
+                    (height = 24px)
+                )
+                (icon = "R.images.gui.maps.icons.subscription.dashboard_card.icon_info()")
+            ) 
+        )
+        (hblock
+            (style
+                (align = "middle")
+            )
+            (block
+                (macro InteractiveSubscriptionCardComponent "SUBSCRIPTIONCARDSTATE.Active")
+                (tf
+                    (bind class "state != SUBSCRIPTIONCARDSTATE.Disable ? 'StatusStyle' : 'ErrorTextStyle'")
+                    (bind text "state != '' ? STATUS_LABLE[state][size] : ''")
+                )
+            )
+            (hblock
+                (bind visible "state == SUBSCRIPTIONCARDSTATE.Active")
+                (style
+                    (marginTop = 2px)
+                    (marginLeft = 8px)
+                    (align = "middle")
+                )
+                (block
+                    (macro InteractiveSubscriptionCardComponent "SUBSCRIPTIONCARDSTATE.Active")
+                    (image
+                        (source = "R.images.gui.maps.icons.subscription.dashboard_card.url_icon()")
+                    )
+                )
+                (block
+                    (style
+                        (width = 1px)
+                        (height = 15px)
+                        (marginLeft = 15px)
+                        (backgroundColor = 0xff8C8C7E)
+                        (alpha = 0.2)
+                    )
+                )
+                (tf
+                    (class = 'MainTextStyle')
+                    (style
+                        (marginLeft = 12px)
+                    )
+                    (bind text "nextCharge")
+                )
+            )
+        )
+    )
+    (controller $ToolTip
+        (bind enabled "state != SUBSCRIPTIONCARDSTATE.Disable")
+        (content = "R.views.lobby.subscription.WotPlusTooltip.resId")
+    )
+)

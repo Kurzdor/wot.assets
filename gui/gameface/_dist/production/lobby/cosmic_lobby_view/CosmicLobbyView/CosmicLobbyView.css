@@ -1,0 +1,2512 @@
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .TextButton_base__right_39 {
+        flex-direction: row-reverse;
+    }
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+    .TextButton_icon__forward_59 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.back');
+        transform: translateY(1rem);
+    }
+.TextButton_icon__forward_59 {
+        transform: rotate(180deg) translateY(1rem);
+    }
+.TextButton_icon__close_53 {
+        margin: -1rem 0;
+        background-image: url('R.images.gui.maps.icons.components.text_button.close');
+    }
+.TextButton_icon__info_33 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.info');
+    }
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+    .TextButton_icon__forward_59 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+    }
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+    }
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+    }
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_glow_a4 {
+        opacity: 0;
+    }
+.TextButton_caption_82 {
+    position: relative;
+    transition: color .16s, text-shadow .16s;
+}
+.TextButton_caption__back_b9,
+    .TextButton_caption__forward_4e,
+    .TextButton_caption__close_36 {
+        color: #FFDD99;
+        text-shadow: 0 0 10rem rgba(255,42,0, 1),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4);
+    }
+.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
+            color: #fffa9f;
+        }
+.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
+            color: #FFDD99;
+        }
+.TextButton_caption__info_23 {
+        padding: 0 5rem;
+        color: #CCFFFF;
+        text-shadow: 0 0 12rem rgba(31,68,255, .8),
+            0 0 8rem #00eaff;
+    }
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+            color: #e3ffff;
+            text-shadow: 0 0 12rem rgba(31,68,255, .8),
+                0 0 12rem rgba(0,234,255, 1),
+                0 0 8rem #00eaff;
+        }
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+            color: #CCFFFF;
+            text-shadow: 0 0 12rem rgba(31,68,255, .6),
+                0 0 8rem #00eaff;
+        }
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+        margin-left: 8rem;
+    }
+.TextButton_base__right_39 .TextButton_goto_e7 {
+        margin-right: 8rem;
+    }
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity .16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+        left: -4rem;
+    }
+.TextButton_base__right_39 .TextButton_shine_e2 {
+        right: -4rem;
+        transform: rotate(180deg);
+    }
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_shine_e2 {
+        opacity: 0;
+    }
+
+body {
+    background-color: #000000;
+}
+
+.CosmicLobbyViewApp_base_1b {
+    --headerHeight: 70rem;
+    width: 100%;
+    height: 100%;
+    background-color: #93523b;
+    overflow: hidden;
+    position: relative;
+    animation-name: CosmicLobbyViewApp_fadeIn_c8;
+    animation-duration: 600ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+    animation-delay: 300ms;
+
+    --scale: .05vw; /* 1/1920 * 100 vw */
+
+    /* fallbacks. Should be overwritten on each screen */
+    --vehicleScale: 1;
+    --artefactScale: 1;
+    --pickupsScale: 1;
+    --shopScale: 1;
+}
+
+/* Wider aspect ratio than 1920/1080 means height is limiting factor for scale */
+
+@media (min-aspect-ratio: 1920/1080) {
+
+.CosmicLobbyViewApp_base_1b {
+        --scale: .09vh /* 1/1080 * 100 vh */
+}
+    }
+
+.CosmicLobbyViewApp_base__fadeOut_49 {
+        animation-name: CosmicLobbyViewApp_fadeOut_ab;
+        animation-duration: 600ms;
+        animation-timing-function: ease-in;
+    }
+
+.CosmicLobbyViewApp_header_3b {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 20rem;
+    right: 25rem;
+    left: 25rem;
+    z-index: 100;
+}
+
+.mediaSmall .CosmicLobbyViewApp_header_3b {
+        top: 25rem;
+}
+
+.CosmicLobbyViewApp_about_6a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-width: 200rem;
+    margin-left: -2rem;
+}
+
+.CosmicLobbyViewApp_close_43 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    min-width: 200rem;
+}
+
+.CosmicLobbyViewApp_texture_a4 {
+    width: 100%;
+    height: 100%;
+    background-image: url('R.images.cosmic_event.gui.maps.icons.texture_pass');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    pointer-events: none;
+}
+
+.CosmicLobbyViewApp_glow_86 {
+    width: 100%;
+    height: 100%;
+    background-image: url('R.images.cosmic_event.gui.maps.icons.glow_screen');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 400rem 380rem;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: -80rem;
+    left: 0;
+    pointer-events: none;
+}
+
+.mediaLarge .CosmicLobbyViewApp_glow_86 {
+        top: -30rem;
+}
+
+.CosmicLobbyViewApp_routeWrapper_8a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.CosmicLobbyViewApp_route__enterActive_72 .CosmicLobbyViewApp_routeWrapper_8a {
+        z-index: 10;
+    }
+
+.CosmicLobbyViewApp_route_7e {
+    z-index: 1;
+}
+
+.CosmicLobbyViewApp_background_00 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 600ms ease-in-out;
+}
+
+.CosmicLobbyViewApp_background__main_80 {
+        background: url('R.images.cosmic_event.gui.maps.icons.cosmicLobbyView.main_bg') center bottom / cover no-repeat;
+    }
+
+.CosmicLobbyViewApp_background__artefact_36 {
+        background: url('R.images.cosmic_event.gui.maps.icons.cosmicLobbyView.artefact_bg') center bottom / cover
+            no-repeat;
+    }
+
+.CosmicLobbyViewApp_background__vehicle_39 {
+        background: url('R.images.cosmic_event.gui.maps.icons.cosmicLobbyView.vehicle_bg') center bottom / cover
+            no-repeat;
+    }
+
+.CosmicLobbyViewApp_background__pickups_00 {
+        background: url('R.images.cosmic_event.gui.maps.icons.cosmicLobbyView.pickups_bg') center bottom / cover
+            no-repeat;
+    }
+
+.CosmicLobbyViewApp_stage_90 {
+    transition: opacity 800ms ease-in-out 200ms;
+}
+
+.CosmicLobbyViewApp_route__enter_0c .CosmicLobbyViewApp_stage_90 {
+        opacity: 0;
+    }
+
+.CosmicLobbyViewApp_route__enterActive_72 .CosmicLobbyViewApp_stage_90 {
+        opacity: 0;
+    }
+
+.CosmicLobbyViewApp_route__enterDone_69 .CosmicLobbyViewApp_stage_90 {
+        opacity: 1;
+    }
+
+.CosmicLobbyViewApp_route__exit_e2 .CosmicLobbyViewApp_stage_90 {
+        opacity: 1;
+        transition: opacity 1600ms ease-in-out;
+    }
+
+.CosmicLobbyViewApp_route__exitActive_7a .CosmicLobbyViewApp_stage_90 {
+        opacity: 1;
+    }
+
+.CosmicLobbyViewApp_route__exitDone_20 .CosmicLobbyViewApp_stage_90 {
+        opacity: 0;
+    }
+
+.CosmicLobbyViewApp_routeBackground_b9 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 800ms ease-in-out;
+}
+
+.CosmicLobbyViewApp_route__enter_0c .CosmicLobbyViewApp_routeBackground_b9 {
+        opacity: 0;
+    }
+
+.CosmicLobbyViewApp_route__enterActive_72 .CosmicLobbyViewApp_routeBackground_b9 {
+        opacity: 0;
+    }
+
+.CosmicLobbyViewApp_route__enterDone_69 .CosmicLobbyViewApp_routeBackground_b9 {
+        opacity: 1;
+    }
+
+.CosmicLobbyViewApp_route__exit_e2 .CosmicLobbyViewApp_routeBackground_b9 {
+        opacity: 1;
+    }
+
+.CosmicLobbyViewApp_route__exitActive_7a .CosmicLobbyViewApp_routeBackground_b9 {
+        opacity: 0;
+    }
+
+.CosmicLobbyViewApp_route__exitDone_20 .CosmicLobbyViewApp_routeBackground_b9 {
+        opacity: 0;
+    }
+
+.CosmicLobbyViewApp_fromLeft_c6,
+.CosmicLobbyViewApp_fromLeft_2_da,
+.CosmicLobbyViewApp_fromLeft_3_98,
+.CosmicLobbyViewApp_fromLeft_4_58,
+.CosmicLobbyViewApp_fromLeft_5_91 {
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-duration: 300ms, 300ms;
+    transition-property: transform, opacity;
+}
+
+.CosmicLobbyViewApp_route__enter_0c .CosmicLobbyViewApp_fromLeft_c6, .CosmicLobbyViewApp_route__enter_0c .CosmicLobbyViewApp_fromLeft_2_da, .CosmicLobbyViewApp_route__enter_0c .CosmicLobbyViewApp_fromLeft_3_98, .CosmicLobbyViewApp_route__enter_0c .CosmicLobbyViewApp_fromLeft_4_58, .CosmicLobbyViewApp_route__enter_0c .CosmicLobbyViewApp_fromLeft_5_91 {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+.CosmicLobbyViewApp_route__enterActive_72 .CosmicLobbyViewApp_fromLeft_c6, .CosmicLobbyViewApp_route__enterActive_72 .CosmicLobbyViewApp_fromLeft_2_da, .CosmicLobbyViewApp_route__enterActive_72 .CosmicLobbyViewApp_fromLeft_3_98, .CosmicLobbyViewApp_route__enterActive_72 .CosmicLobbyViewApp_fromLeft_4_58, .CosmicLobbyViewApp_route__enterActive_72 .CosmicLobbyViewApp_fromLeft_5_91 {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+.CosmicLobbyViewApp_route__enterDone_69 .CosmicLobbyViewApp_fromLeft_c6, .CosmicLobbyViewApp_route__enterDone_69 .CosmicLobbyViewApp_fromLeft_2_da, .CosmicLobbyViewApp_route__enterDone_69 .CosmicLobbyViewApp_fromLeft_3_98, .CosmicLobbyViewApp_route__enterDone_69 .CosmicLobbyViewApp_fromLeft_4_58, .CosmicLobbyViewApp_route__enterDone_69 .CosmicLobbyViewApp_fromLeft_5_91 {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+.CosmicLobbyViewApp_route__exit_e2 .CosmicLobbyViewApp_fromLeft_c6, .CosmicLobbyViewApp_route__exit_e2 .CosmicLobbyViewApp_fromLeft_2_da, .CosmicLobbyViewApp_route__exit_e2 .CosmicLobbyViewApp_fromLeft_3_98, .CosmicLobbyViewApp_route__exit_e2 .CosmicLobbyViewApp_fromLeft_4_58, .CosmicLobbyViewApp_route__exit_e2 .CosmicLobbyViewApp_fromLeft_5_91 {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+.CosmicLobbyViewApp_route__exitActive_7a .CosmicLobbyViewApp_fromLeft_c6, .CosmicLobbyViewApp_route__exitActive_7a .CosmicLobbyViewApp_fromLeft_2_da, .CosmicLobbyViewApp_route__exitActive_7a .CosmicLobbyViewApp_fromLeft_3_98, .CosmicLobbyViewApp_route__exitActive_7a .CosmicLobbyViewApp_fromLeft_4_58, .CosmicLobbyViewApp_route__exitActive_7a .CosmicLobbyViewApp_fromLeft_5_91 {
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+
+.CosmicLobbyViewApp_route__exitDone_20 .CosmicLobbyViewApp_fromLeft_c6, .CosmicLobbyViewApp_route__exitDone_20 .CosmicLobbyViewApp_fromLeft_2_da, .CosmicLobbyViewApp_route__exitDone_20 .CosmicLobbyViewApp_fromLeft_3_98, .CosmicLobbyViewApp_route__exitDone_20 .CosmicLobbyViewApp_fromLeft_4_58, .CosmicLobbyViewApp_route__exitDone_20 .CosmicLobbyViewApp_fromLeft_5_91 {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+.CosmicLobbyViewApp_fromLeft_2_da {
+    transition-delay: 50ms, 50ms;
+}
+
+.CosmicLobbyViewApp_fromLeft_3_98 {
+    transition-delay: 100ms, 100ms;
+}
+
+.CosmicLobbyViewApp_fromLeft_4_58 {
+    transition-delay: 150ms, 150ms;
+}
+
+.CosmicLobbyViewApp_fromLeft_5_91 {
+    transition-delay: 200ms, 200ms;
+}
+
+.CosmicLobbyViewApp_fromBelow_4f {
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-duration: 300ms, 300ms;
+    transition-property: transform, opacity;
+}
+
+.CosmicLobbyViewApp_route__enter_0c .CosmicLobbyViewApp_fromBelow_4f {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+.CosmicLobbyViewApp_route__enterActive_72 .CosmicLobbyViewApp_fromBelow_4f {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+.CosmicLobbyViewApp_route__enterDone_69 .CosmicLobbyViewApp_fromBelow_4f {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+.CosmicLobbyViewApp_route__exit_e2 .CosmicLobbyViewApp_fromBelow_4f {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+.CosmicLobbyViewApp_route__exitActive_7a .CosmicLobbyViewApp_fromBelow_4f {
+        opacity: 1;
+        transform: translateY(100%);
+    }
+
+.CosmicLobbyViewApp_route__exitDone_20 .CosmicLobbyViewApp_fromBelow_4f {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+.CosmicLobbyViewApp_fadeAfterTransition_ac {
+    transition: opacity 300ms ease-in-out 300ms;
+}
+
+.CosmicLobbyViewApp_route__enter_0c .CosmicLobbyViewApp_fadeAfterTransition_ac {
+        opacity: 0;
+    }
+
+.CosmicLobbyViewApp_route__enterActive_72 .CosmicLobbyViewApp_fadeAfterTransition_ac {
+        opacity: 0;
+    }
+
+.CosmicLobbyViewApp_route__enterDone_69 .CosmicLobbyViewApp_fadeAfterTransition_ac {
+        opacity: 1;
+    }
+
+.CosmicLobbyViewApp_route__exit_e2 .CosmicLobbyViewApp_fadeAfterTransition_ac {
+        opacity: 1;
+    }
+
+.CosmicLobbyViewApp_route__exitActive_7a .CosmicLobbyViewApp_fadeAfterTransition_ac {
+        opacity: 1;
+    }
+
+.CosmicLobbyViewApp_route__exitDone_20 .CosmicLobbyViewApp_fadeAfterTransition_ac {
+        opacity: 0;
+    }
+
+@keyframes CosmicLobbyViewApp_fadeIn_c8 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes CosmicLobbyViewApp_fadeOut_ab {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.ExitMode_base_e4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+    .ExitMode_base_e4 .ExitMode_title_6f {
+        /* font size and colors aren't in constants on figma*/
+        color: #ffdd99;
+        font-size: 12rem;
+        font-weight: 400;
+        line-height: 1.3;
+        margin-right: 7rem;
+        text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+    }
+
+    .ExitMode_base_e4 .ExitMode_icon_da {
+        width: 40rem;
+        height: 40rem;
+        margin: -14rem;
+    }
+
+.Navigation_base_32 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+.Navigation_link_82 {
+    color: #f4e1b3;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 0 15rem;
+    line-height: 20rem;
+    letter-spacing: 0;
+    opacity: .7;
+    position: relative;
+    transition: opacity 1s ease;
+    cursor: pointer;
+}
+.Navigation_link_82:hover {
+        opacity: .9;
+        transition: opacity .2s ease;
+    }
+.Navigation_link_icon_83 {
+        width: 18rem;
+        height: 18rem;
+        margin-right: 10rem;
+    }
+.Navigation_link_light_47 {
+        width: 128rem;
+        height: 61rem;
+        background: url('R.images.cosmic_event.gui.maps.icons.cosmicLobbyView.navigation.light') center center / contain
+            no-repeat;
+        opacity: 0;
+        position: absolute;
+        top: -19rem;
+        left: 50%;
+        z-index: -1;
+        transform: translateX(-50%);
+        transition: all 1s ease;
+        pointer-events: none;
+    }
+.Navigation_link__active_db {
+        opacity: 1;
+    }
+.Navigation_link__active_db:hover {
+            opacity: 1;
+        }
+.Navigation_link__active_db .Navigation_link_light_47 {
+        opacity: 1;
+    }
+
+.ActionItem_base_86 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 28rem;
+    margin-bottom: 1rem;
+    padding-left: 11rem;
+    background: linear-gradient(90deg, #6c27004c 0%, #6f37184c 33.8%, #71412000 100%);
+}
+.ActionItem_icon_e8 {
+    width: 30rem;
+    height: 30rem;
+    margin: -3rem;
+    padding: 5rem;
+}
+.ActionItem_icon_bg_90 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 28rem;
+        height: 28rem;
+        margin-right: 10rem;
+        background: url('R.images.cosmic_event.gui.maps.icons.scoring.action_icon_bg') center center / 28rem 28rem
+            no-repeat;
+    }
+.ActionItem_title_8b {
+    flex: 1 0 auto;
+    padding-bottom: 3rem;
+    color: #f4e1b3;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 19rem;
+    letter-spacing: .04em;
+}
+.mediaMedium .ActionItem_title_8b {
+    color: #f4e1b3;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+}
+.ActionItem_points_b7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 57rem;
+    padding-left: 10rem;
+    padding-right: 18rem;
+    padding-bottom: 3rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.event_icon.c_14x14') right center / 14rem 14rem no-repeat;
+    text-align: right;
+    position: relative;
+    color: #f4e1b3;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+}
+.ActionItem_points_bg_61 {
+        width: 84rem;
+        height: 26rem;
+        background: url('R.images.cosmic_event.gui.maps.icons.scoring.action_points_bg') 0 0 / contain no-repeat;
+        position: absolute;
+        top: 0;
+        right: -20rem;
+        z-index: -1;
+    }
+
+.Artefact_image_be {
+    width: calc(770*var(--scale)*var(--artefactScale));
+    height: calc(700*var(--scale)*var(--artefactScale));
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-duration: .3s, .3s;
+    transition-property: width, height;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBar_base_45 {
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+.ProgressBar_base__medium_62 {
+        height: 6rem;
+    }
+.ProgressBar_base__small_df {
+        height: 2rem;
+    }
+.ProgressBar_background_51 {
+    width: 100%;
+    max-width: 8001px;
+    height: 100%;
+    background-image: var(--progress-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ProgressBar_background__medium_6e {
+        height: 6rem;
+    }
+.ProgressBar_background__small_46 {
+        height: 2rem;
+    }
+.ProgressBar_lineWrapper_6a {
+    display: flex;
+    flex: 1;
+}
+
+
+.ProgressBarBlink_base_24 {
+    width: 60rem;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    pointer-events: none;
+}
+
+    .ProgressBarBlink_base__medium_ec {
+        width: 42rem;
+        height: 70rem;
+    }
+
+    .ProgressBarBlink_base__small_0f {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressLineImpose_base_80 {
+    max-width: 8001px;
+    height: 100%;
+    background-color: var(--progress-line-base);
+    position: relative;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressLineImpose_base__disabled_cc {
+        background-color: var(--progress-line-disabled);
+    }
+.ProgressLineImpose_base__finished_d4 {
+        background-color: var(--progress-line-finished);
+    }
+.ProgressLineImpose_base__withoutBounce_56 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressLineImpose_pattern_1c {
+    max-width: 8001px;
+    background-image: var(--progress-pattern-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-disabled);
+        left: 0;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-finished);
+    }
+.ProgressLineImpose_gradient_35 {
+    max-width: 8001px;
+    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
+        display: none;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
+        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
+    }
+.ProgressLineImpose_glow_a5 {
+    width: 60rem;
+    max-width: 8001px;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.ProgressLineImpose_glow__left_d8 {
+        left: 1rem;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
+    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+        display: none;
+    }
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaSimple_base_6c {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ProgressBarDeltaSimple_delta_99 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-property: width, transform;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaGrow_base_7e {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressBarDeltaGrow_glow_68 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+
+.Reward_base_ea {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+    .Reward_base__s48x48_46,
+    .Reward_base__small_c0 {
+        width: 48rem;
+        height: 48rem;
+    }
+
+    .Reward_base__s80x80_ce,
+    .Reward_base__big_e5 {
+        width: 80rem;
+        height: 80rem;
+    }
+
+    .Reward_base__s128x100_c3 {
+        width: 128rem;
+        height: 100rem;
+    }
+
+    .Reward_base__s180x135_7c {
+        width: 180rem;
+        height: 135rem;
+    }
+
+    .Reward_base__s232x174_67 {
+        width: 232rem;
+        height: 174rem;
+    }
+
+    .Reward_base__s296x222_78 {
+        width: 296rem;
+        height: 222rem;
+    }
+
+    .Reward_base__s400x300_07 {
+        width: 400rem;
+        height: 300rem;
+    }
+
+    .Reward_base__s600x450_f8 {
+        width: 600rem;
+        height: 450rem;
+    }
+
+.Reward_tooltipWrapper_b5 {
+    height: 100%;
+}
+
+.Reward_icon_df {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.Reward_overlay_68 {
+    background: no-repeat center / 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.Reward_base__s48x48_46 .Reward_overlay_68,
+    .Reward_base__small_c0 .Reward_overlay_68 {
+        width: 96rem;
+        height: 96rem;
+        background-size: 100%;
+        overflow: visible;
+    }
+
+.Reward_base__s80x80_ce .Reward_overlay_68,
+    .Reward_base__big_e5 .Reward_overlay_68 {
+        width: 128rem;
+        height: 128rem;
+    }
+
+.Reward_base__s180x135_7c .Reward_overlay_68 {
+        width: 266rem;
+        height: 241rem;
+    }
+
+.Reward_base__s232x174_67 .Reward_overlay_68 {
+        width: 344rem;
+        height: 312rem;
+    }
+
+.Reward_base__s296x222_78 .Reward_overlay_68 {
+        width: 450rem;
+        height: 408rem;
+    }
+
+.Reward_base__s400x300_07 .Reward_overlay_68 {
+        width: 618rem;
+        height: 590rem;
+    }
+
+.Reward_base__s600x450_f8 .Reward_overlay_68 {
+        width: 670rem;
+        height: 575rem;
+    }
+
+.Reward_highlight_36 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 0;
+}
+
+.Reward_image_89 {
+    position: relative;
+}
+
+.Reward_info_72 {
+    margin-top: -13rem;
+    color: #e9e2bf;
+    font-size: 14rem;
+    line-height: 18rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_info_72,
+    .Reward_base__small_c0 .Reward_info_72 {
+        margin: -10rem -10rem 0;
+    }
+
+.Reward_info__multi_63 {
+        margin-right: 2rem;
+        text-align: right;
+    }
+
+.Reward_base__s48x48_46 .Reward_info__multi_63,
+        .Reward_base__small_c0 .Reward_info__multi_63 {
+            margin-right: 0;
+        }
+
+.Reward_info__credits_ef {
+        color: #E9E2BF;
+    }
+
+.Reward_info__gold_36 {
+        color: #FFC363;
+    }
+
+.Reward_info__crystal_36 {
+        color: #C9C9B6;
+    }
+
+.Reward_info__premiumTank_d3 {
+        color: #FFDD99;
+    }
+
+.Reward_timer_d3 {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_timer_d3,
+    .Reward_base__small_c0 .Reward_timer_d3 {
+        width: 23rem;
+        height: 23rem;
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
+        top: -6rem;
+        right: -6rem;
+    }
+
+.Reward_base__s80x80_ce .Reward_timer_d3,
+    .Reward_base__big_e5 .Reward_timer_d3 {
+        width: 48rem;
+        height: 48rem;
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
+        top: -14rem;
+        right: -14rem;
+    }
+
+.HorizontalBar_base_49 {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+    position: relative;
+}
+
+    .HorizontalBar_base__nonActive_82 {
+        visibility: hidden;
+    }
+
+    .HorizontalBar_base_49 .disable,
+    .HorizontalBar_base_49 .disable:hover {
+        opacity: .3;
+        cursor: default;
+    }
+
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover, .HorizontalBar_rightButton_03:hover {
+        opacity: 1;
+    }
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem 7rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+        opacity: 1;
+    }
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
+        opacity: .7;
+    }
+
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.VerticalBar_base_f3 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+    .VerticalBar_base__nonActive_42 {
+        visibility: hidden;
+    }
+
+    .VerticalBar_base_f3 .disable,
+    .VerticalBar_base_f3 .disable:hover {
+        opacity: .3;
+        cursor: default;
+    }
+
+.VerticalBar_topButton_d7,
+.VerticalBar_bottomButton_06 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_d7:hover, .VerticalBar_bottomButton_06:hover {
+        opacity: 1;
+    }
+
+.VerticalBar_topButton_d7 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_06 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_df {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32 {
+    display: none;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32:hover {
+        opacity: 1;
+    }
+
+.VerticalBar_rail_43 {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_43:hover {
+        opacity: .7;
+    }
+
+
+.VerticalScroll_content_cb {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_f8 {
+    display: flex;
+}
+
+.VerticalScroll_bar_1e {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_af {
+    flex: 1;
+}
+
+.ArtefactProgress_base_3f {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5rem;
+    background: linear-gradient(0deg, #3b1509 5%, rgba(0, 0, 0, 0));
+    position: relative;
+
+    --divider-width: 1rem;
+
+    --rewards-wrap-margin: 3rem;
+
+    --wrapper-margin-left: 25rem;
+    --wrapper-margin-right: 40rem;
+}
+.ArtefactProgress_faded_8e {
+    opacity: .5;
+}
+.ArtefactProgress_scrollWrap_77 {
+    width: 100%;
+    max-width: calc(var(--rewards-wrap-width)*var(--sections-amount) + var(--rewards-wrap-margin)*2*var(--sections-amount) + var(--divider-width)*(var(--sections-amount) + 1) + var(--wrapper-margin-left) + var(--wrapper-margin-right));
+}
+.ArtefactProgress_wrapper_e4 {
+    margin-left: var(--wrapper-margin-left);
+    margin-right: var(--wrapper-margin-right);
+    position: relative;
+}
+.ArtefactProgress_flexContainer_2f {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+}
+.ArtefactProgress_doneProgression_f4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 349rem;
+    height: 29rem;
+    background-image: url('R.images.cosmic_event.gui.maps.icons.artefact.progress.done_progression_bg');
+    color: #f4e1b3;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+}
+.ArtefactProgress_doneProgression_text_35 {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+.ArtefactProgress_currentPoints_8a {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 4rem;
+    left: var(--progress-percentage);
+    transform: translateX(-50%);
+    color: #f4e1b3;
+    font-size: 26rem;
+    font-weight: 700;
+    line-height: 30rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+}
+.ArtefactProgress_currentPoints_icon_1f {
+        width: 14rem;
+        height: 14rem;
+        margin-left: 2rem;
+        margin-top: 4rem;
+    }
+.ArtefactProgress_rewards_f7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--rewards-wrap-width);
+    margin-left: var(--rewards-wrap-margin);
+    margin-right: var(--rewards-wrap-margin);
+    position: relative;
+}
+.ArtefactProgress_rewards_top_fa {
+        display: flex;
+        align-items: flex-end;
+        height: 64rem;
+        margin-bottom: 1rem;
+    }
+.ArtefactProgress_rewards_top__current_d4 {
+            background-image: url('R.images.cosmic_event.gui.maps.icons.artefact.progress.selected_bg_up');
+            background-repeat: repeat-x;
+            background-position: bottom;
+        }
+.ArtefactProgress_rewards_bottom_57 {
+        height: 54rem;
+        margin-top: 2rem;
+    }
+.ArtefactProgress_rewards_bottom__current_a2 {
+            background-image: url('R.images.cosmic_event.gui.maps.icons.artefact.progress.selected_bg_down');
+            background-repeat: repeat-x;
+            background-position: top;
+        }
+.ArtefactProgress_rewards_wrap_e7 {
+        display: flex;
+    }
+.ArtefactProgress_rewards_group_46 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.ArtefactProgress_reward_e2 {
+    width: 48rem;
+    height: 48rem;
+    margin-bottom: 7rem;
+}
+.ArtefactProgress_divider_45 {
+    width: var(--divider-width);
+    height: 5rem;
+    margin-top: 1rem;
+    background-color: #f4e1b3;
+    opacity: .5;
+}
+.ArtefactProgress_divider_end_77 {
+        width: var(--divider-width);
+        height: 42rem;
+        margin-bottom: 2rem;
+        background: linear-gradient(0deg, #f4e1b3 30%, rgba(244, 225, 179, 0) 100%);
+        opacity: .5;
+    }
+.ArtefactProgress_pointsMark_b0 {
+    color: #f4e1b3;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 19rem;
+    letter-spacing: .04em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 60rem;
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    top: 7rem;
+    right: 50%;
+    transform: translateX(50%);
+}
+.ArtefactProgress_pointsMark_group_99 {
+        position: relative;
+    }
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Description_base_89 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 10rem;
+}
+.Description_title_23 {
+    color: #f4e1b3;
+    font-size: 42rem;
+    font-weight: 700;
+    line-height: 49rem;
+    letter-spacing: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-shadow: 0 0 2rem rgba(1, 3, 38, .5);
+}
+.Description_text_33 {
+    margin-bottom: 3rem;
+}
+.Description_icon_25 {
+    width: 74rem;
+    height: 48rem;
+    margin-right: 16rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.description.title_icon') no-repeat center / cover;
+}
+.mediaMedium .Description_icon_25 {
+        width: 86rem;
+        height: 56rem;
+        background: url('R.images.cosmic_event.gui.maps.icons.description.title_icon_medium') no-repeat center / cover;
+}
+.Description_bodyText_39 {
+    max-width: 435rem;
+    text-shadow: 0 0 5rem rgba(1, 3, 38, 0.15);
+    letter-spacing: .64rem;
+    color: #FEFEEC;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 19rem;
+    letter-spacing: .04em;
+}
+.mediaMedium .Description_bodyText_39 {
+    color: #FEFEEC;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+}
+.Description_underline_8e {
+    --height: 4rem;
+    --width: 345rem;
+    --dotsWidth: calc(var(--height)*18);
+    width: var(--width);
+    height: var(--height);
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+
+    /* These separate properties are required because calc with var does not work in shorthand form in Gameface */
+    /* stylelint-disable */
+    border-left-width: calc(var(--width) - var(--dotsWidth));
+    border-left-style: solid;
+    border-left-color: #f4e1b3;
+    /* stylelint-enable */
+    background: url('R.images.cosmic_event.gui.maps.icons.separator_dots') right top / 72rem;
+    position: relative;
+}
+.mediaMedium .Description_underline_8e {
+        --width: 424rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+}
+
+.ProgressBar_base_86 {
+    height: 2rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.progress_bar_total') 0 0 / 3rem 2rem repeat-x;
+    position: relative;
+}
+.ProgressBar_current_a7 {
+    height: 2rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.progress_bar_current') 0 0 / 3rem 2rem repeat-x;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ProgressBar_current_overlay_6c {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(255, 211, 106, 0) 0%, rgba(255, 211, 106, 1) 100%);
+        mix-blend-mode: soft-light;
+    }
+
+.Mission_base_3a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 12rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.artefact.missions.available.small') 0 0 / cover no-repeat;
+}
+
+    .Mission_base__done_69 {
+        background: url('R.images.cosmic_event.gui.maps.icons.artefact.missions.done.small') 0 0 / cover no-repeat;
+    }
+
+    .Mission_base__done_69:hover {
+            background: url('R.images.cosmic_event.gui.maps.icons.artefact.missions.done.small_hover') 0 0 / cover
+                no-repeat;
+        }
+
+    .Mission_base__available_d7:hover {
+        background: url('R.images.cosmic_event.gui.maps.icons.artefact.missions.available.small_hover') 0 0 / cover
+            no-repeat;
+    }
+
+    .mediaLarge .Mission_base_3a {
+        flex-direction: row;
+        align-items: stretch;
+        width: 322rem;
+        margin-bottom: 1rem;
+}
+
+    .mediaLarge .Mission_base__done_69 {
+            background-image: url('R.images.cosmic_event.gui.maps.icons.artefact.missions.done.big');
+        }
+
+    .mediaLarge .Mission_base__done_69:hover {
+                background-image: url('R.images.cosmic_event.gui.maps.icons.artefact.missions.done.big_hover');
+            }
+
+    .mediaLarge .Mission_base__available_d7 {
+            background-image: url('R.images.cosmic_event.gui.maps.icons.artefact.missions.available.big');
+        }
+
+    .mediaLarge .Mission_base__available_d7:hover {
+                background-image: url('R.images.cosmic_event.gui.maps.icons.artefact.missions.available.big_hover');
+            }
+.Mission_header_c5 {
+    width: 66rem;
+    height: 60rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 110rem 110rem;
+    position: relative;
+}
+.Mission_points_92 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 4rem;
+    position: absolute;
+    right: 8rem;
+    bottom: 2rem;
+    color: #f4e1b3;
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+}
+.Mission_base__done_69 .Mission_points_92 {
+    display: none;
+}
+.Mission_body_c9 {
+    display: none;
+    padding: 0 12rem;
+    color: #f4e1b3;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 19rem;
+    letter-spacing: .04em;
+}
+.mediaLarge .Mission_body_c9 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        flex: 1 1 auto;
+}
+.Mission_title_d6 {
+    line-height: 14rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    color: #f4e1b3;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Mission_progression_1c {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 14rem;
+    margin: 6rem 0;
+    line-height: 14rem;
+}
+.Mission_progression_current_c3 {
+        color: #ffa420;
+    }
+.Mission_base__done_69 .Mission_progression_1c,
+.Mission_base__done_69 .Mission_progressBar_71 {
+    display: none;
+}
+
+.ArtefactRoute_base_32 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    padding: 50rem 25rem;
+    overflow: hidden;
+    position: relative;
+}
+    .mediaLarge .ArtefactRoute_base_32 {
+        padding: 100rem 25rem;
+}
+.ArtefactRoute_main_ce {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex: 1 1 auto;
+    margin-bottom: 100rem;
+}
+.ArtefactRoute_actions_heading_d4 {
+    display: none;
+    color: #f4e1b3;
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+    margin-top: 10rem;
+    text-shadow: 0 0 2rem rgba(1, 3, 38, .5);
+}
+.mediaMedium .ArtefactRoute_actions_heading_d4 {
+        display: flex;
+}
+.ArtefactRoute_actions_be {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-self: flex-start;
+    min-width: 296rem;
+    margin-top: 20rem;
+}
+.ArtefactRoute_missions_ce {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 15rem;
+}
+.mediaMedium .ArtefactRoute_missions_ce {
+        margin-top: 40rem;
+}
+.mediaLarge .ArtefactRoute_missions_ce {
+        flex-direction: column;
+        margin-top: 45rem;
+}
+.ArtefactRoute_mission_e3 {
+    margin-right: 6rem;
+}
+.mediaLarge .ArtefactRoute_mission_e3 {
+        margin-right: 0;
+}
+.ArtefactRoute_stage_39 {
+    flex: 1 1 auto;
+    margin-top: var(--headerHeight);
+    position: relative;
+}
+.ArtefactRoute_artefact_d0 {
+    position: absolute;
+    top: 50.72464%;
+    left: 33.57143%;
+    transform: translate(-50%, -50%);
+    --artefactScale: 1.1;
+}
+.ArtefactRoute_smallerText_b5 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-right: 5rem;
+    text-shadow: 0 0 10rem rgba(0, 0, 0, .25);
+}
+.ArtefactRoute_progress_84 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+    .ExtendedText_base__zeroPadding_25 {
+        padding: 0;
+    }
+
+    .ExtendedText_base__isTruncationAvailable_5b {
+        width: 100%;
+    }
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+        opacity: 0;
+    }
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #FF2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #FFFFFF;
+}
+
+.colors_white_45 {
+    color: #F2F2F7;
+}
+
+.colors_whiteOrange_81 {
+    color: #FEFEEC;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #E9E2BF;
+}
+
+.colors_par_5b {
+    color: #8C8C7E;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362E;
+}
+
+.colors_red_79 {
+    color: #FF2717;
+}
+
+.colors_redDark_73 {
+    color: #B70000;
+}
+
+.colors_yellow_76 {
+    color: #FEAB34;
+}
+
+.colors_orange_cd {
+    color: #EE7000;
+}
+
+.colors_cream_0f {
+    color: #FFDD99;
+}
+
+.colors_brown_82 {
+    color: #CBAC77;
+}
+
+.colors_greenBright_68 {
+    color: #80D43A;
+}
+
+.colors_green_fa {
+    color: #7AB300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #CCFFFF;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09E2FF;
+}
+
+.colors_cred_35 {
+    color: #CED9D9;
+}
+
+.colors_gold_c3 {
+    color: #FFC363;
+}
+
+.colors_bond_ce {
+    color: #C9C9B6;
+}
+
+.colors_prom_83 {
+    color: #A29B70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.ShopEntryPoint_base_88 {
+    width: 190rem;
+    height: 135rem;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+    .mediaLarge .ShopEntryPoint_base_88 {
+        width: 250rem;
+        height: 180rem;
+}
+
+    .ShopEntryPoint_base_88:hover {
+        transform: scale(1.06);
+    }
+
+    .ShopEntryPoint_base_88:hover .ShopEntryPoint_title_5c {
+            transform: scale(0.94) translateX(-53%);
+        }
+.ShopEntryPoint_bg_c4 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.cosmic_event.gui.maps.icons.shop_entry_point.shop') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mediaLarge .ShopEntryPoint_bg_c4 {
+        background-image: url('R.images.cosmic_event.gui.maps.icons.shop_entry_point.shop_large');
+}
+.ShopEntryPoint_hover_f3 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.cosmic_event.gui.maps.icons.shop_entry_point.shop_hover') no-repeat center / cover;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.2s ease;
+}
+.mediaLarge .ShopEntryPoint_hover_f3 {
+        background-image: url('R.images.cosmic_event.gui.maps.icons.shop_entry_point.shop_large_hover');
+}
+.ShopEntryPoint_base_88:hover .ShopEntryPoint_hover_f3 {
+        opacity: 1;
+    }
+.ShopEntryPoint_title_5c {
+    color: #f4e1b3;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+    text-align: center;
+    position: absolute;
+    bottom: -4rem;
+    left: 50%;
+    transform: scale(1) translateX(-50%);
+    transition: transform 0.3s ease-in-out;
+}
+.ShopEntryPoint_particles_f6 {
+    width: 90%;
+    height: 123%;
+    position: absolute;
+    top: -20rem;
+    left: 7rem;
+}
+
+.HeaderLineButton_base_30 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+    --cursor-type: pointer;
+}
+.HeaderLineButton_alignItemsLeft_e4 {
+    align-items: flex-start;
+}
+.HeaderLineButton_alignItemsLeft_e4 .HeaderLineButton_header_61 {
+        margin-right: 20rem;
+    }
+.HeaderLineButton_alignItemsLeft_e4 .HeaderLineButton_lineContainer_18 {
+        flex-direction: row-reverse;
+    }
+.HeaderLineButton_alignItemsLeft_e4 .HeaderLineButton_lineContainer_18 .HeaderLineButton_dot_fe {
+            margin-left: 3rem;
+        }
+.HeaderLineButton_alignItemsRight_ff {
+    align-items: flex-end;
+}
+.HeaderLineButton_alignItemsRight_ff .HeaderLineButton_header_61 {
+        margin-left: 20rem;
+    }
+.HeaderLineButton_alignItemsRight_ff .HeaderLineButton_lineContainer_18 {
+        flex-direction: row;
+    }
+.HeaderLineButton_alignItemsRight_ff .HeaderLineButton_lineContainer_18 .HeaderLineButton_dot_fe {
+            margin-right: 3rem;
+        }
+.HeaderLineButton_header_61 {
+    color: #f4e1b3;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+    margin-bottom: 4rem;
+    cursor: var(--cursor-type);
+}
+.HeaderLineButton_lineContainer_18 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 1 auto;
+}
+.HeaderLineButton_lineContainer_18 .HeaderLineButton_dot_fe {
+        width: 5rem;
+        height: 5rem;
+        box-shadow: 0 0 0 1rem rgba(1, 3, 38, .1);
+        background-color: #f4e1b3;
+    }
+.HeaderLineButton_lineContainer_18 .HeaderLineButton_line_3c {
+        flex: 1 1 auto;
+        height: 1rem;
+        box-shadow: 0 0 0 1rem rgba(1, 3, 38, .1);
+        background-color: #f4e1b3;
+    }
+
+.HowToPlay_base_73 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 380rem;
+    margin-top: 27rem;
+}
+.HowToPlay_title_7c {
+    color: #f4e1b3;
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+    margin-bottom: 12rem;
+}
+.HowToPlay_actionContainer_cc {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 23rem;
+}
+.HowToPlay_actionContainer_cc .HowToPlay_slotIcon_c4 {
+        width: 60rem;
+        height: 60rem;
+    }
+.HowToPlay_actionContainer_cc .HowToPlay_arrowIcon_09 {
+        width: 51rem;
+        height: 16rem;
+        margin-left: 11rem;
+        margin-right: 11rem;
+        background-image: url('R.images.cosmic_event.gui.maps.icons.smallArrow');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+.mediaMedium .HowToPlay_actionContainer_cc .HowToPlay_arrowIcon_09 {
+            width: 68rem;
+            height: 17rem;
+            background-image: url('R.images.cosmic_event.gui.maps.icons.arrow');
+}
+.HowToPlay_actionContainer_cc .HowToPlay_reverse_6b {
+        transform: scaleX(-1);
+    }
+.HowToPlay_actionContainer_cc .HowToPlay_bodyText_f7 {
+    color: #FEFEEC;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 19rem;
+    letter-spacing: .04em;
+        max-width: 230rem;
+    }
+.mediaMedium .HowToPlay_actionContainer_cc .HowToPlay_bodyText_f7 {
+    color: #FEFEEC;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+}
+
+.Pickup_wrapper_7a {
+    width: calc(178*var(--scale)*var(--pickupsScale));
+    height: calc(204*var(--scale)*var(--pickupsScale));
+    position: relative;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-duration: .3s, .3s;
+    transition-property: width, height;
+}
+
+.Pickup_glow_68 {
+    width: 200%;
+    height: 455.88235%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-duration: .3s, .3s;
+    transition-property: width, height;
+    pointer-events: none;
+}
+
+.Pickup_image_4d {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-duration: .3s, .3s;
+    transition-property: width, height;
+}
+
+.Vehicle_image_49 {
+    width: calc(1447*var(--scale)*var(--vehicleScale));
+    height: calc(634*var(--scale)*var(--vehicleScale));
+    mix-blend-mode: var(--mix-blend-mode);
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-duration: .3s, .3s;
+    transition-property: width, height;
+}
+.Vehicle_base__inBattle_35 .Vehicle_image_49 {
+    --mix-blend-mode: color-dodge;
+
+    /* This is here because during route fadeIn the mix-blend-mode for unknown reasons does not work; https://jira.wargaming.net/browse/WOTPRG-8859 */
+    animation: Vehicle_delayedFadeIn_89 1.4s linear;
+}
+.Vehicle_label_6a {
+    position: absolute;
+    bottom: 3%;
+    left: 35%;
+}
+.Vehicle_label_6a span {
+        filter: drop-shadow(0 0 3rem #000);
+        position: relative;
+        z-index: 1;
+    color: #FEAB34;
+    font-size: 26rem;
+    font-weight: 700;
+    line-height: 30rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+    }
+.Vehicle_glow_c1 {
+    width: 344rem;
+    height: 118rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.vehicle.vehicle_label_glow') 0 0 / contain no-repeat;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes Vehicle_delayedFadeIn_89 {
+    from {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.MainRoute_base_bb {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    padding: 50rem 25rem;
+    overflow: hidden;
+    position: relative;
+}
+    .mediaLarge .MainRoute_base_bb {
+        padding: 100rem 25rem;
+}
+.MainRoute_pointsContainer_06 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.MainRoute_pointsContainer_06 .MainRoute_icon_12 {
+        width: 14rem;
+        height: 14rem;
+        margin-left: 5rem;
+    }
+.MainRoute_pointsContainer_06 .MainRoute_points_26 {
+    color: #f4e1b3;
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+        margin-bottom: 4rem;
+    }
+.MainRoute_shopEntryContainer_0f {
+    position: absolute;
+    right: -21rem;
+    bottom: -13rem;
+    z-index: 2;
+    cursor: pointer;
+}
+.mediaLarge .MainRoute_shopEntryContainer_0f {
+        right: 10rem;
+        bottom: -63rem;
+}
+.MainRoute_pointsProgressBar_8a {
+    width: 88rem;
+}
+.MainRoute_stage_02 {
+    flex: 1 1 auto;
+    position: relative;
+}
+.MainRoute_artefact_88 {
+    position: absolute;
+    top: 30.43478%;
+    left: 28.57143%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    --artefactScale: .62;
+}
+.MainRoute_artefact_88:hover {
+        --artefactScale: .67;
+    }
+.MainRoute_artefact_info_7b {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: absolute;
+        top: 41%;
+        left: 76%;
+        z-index: 10;
+    }
+.MainRoute_artefact_info_header_af {
+            width: 130rem;
+        }
+.mediaSmall .MainRoute_artefact_info_header_af {
+                width: 203rem;
+}
+.MainRoute_vehicle_37 {
+    position: absolute;
+    right: 14.28571%;
+    bottom: 2.89855%;
+}
+.mediaMedium .MainRoute_vehicle_37 {
+        right: 8.57143%;
+        bottom: 0.14493%;
+}
+.MainRoute_vehicle_37 {
+    cursor: pointer;
+    --vehicleScale: .62;
+}
+.MainRoute_vehicle_37:hover {
+        --vehicleScale: .67;
+    }
+.MainRoute_vehicle_info_6c {
+        width: 150rem;
+        position: absolute;
+        top: 25%;
+        left: 58%;
+        z-index: 10;
+    }
+.MainRoute_pickups_bb {
+    position: absolute;
+    top: 39.13043%;
+    left: 81.42857%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    --pickupsScale: .62;
+}
+.MainRoute_pickups_bb:hover {
+        --pickupsScale: .67;
+    }
+.MainRoute_pickups_bb .MainRoute_pickupsInfo_a4 {
+        width: 100rem;
+        margin-left: -4rem;
+        position: absolute;
+        bottom: 140%;
+        left: 50%;
+    }
+.mediaMedium .MainRoute_pickups_bb .MainRoute_pickupsInfo_a4 {
+            width: 140rem;
+}
+
+.DescriptiveBlock_base_a6 {
+    width: 439rem;
+    min-height: 99rem;
+    margin-bottom: 3rem;
+    position: relative;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+    transition-property: left;
+}
+
+    .mediaMedium .DescriptiveBlock_base_a6 {
+        min-height: 117rem;
+        margin-bottom: 6rem;
+}
+
+    .DescriptiveBlock_base_a6 .DescriptiveBlock_containerHover_0d {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        width: 439rem;
+        min-height: 99rem;
+        position: relative;
+        top: 0;
+        left: 0rem;
+        transition-timing-function: ease-in-out;
+        transition-duration: .3s;
+        transition-property: left, opacity;
+    }
+
+    .mediaMedium .DescriptiveBlock_base_a6 .DescriptiveBlock_containerHover_0d {
+            width: 465rem;
+            min-height: 117rem;
+}
+
+    .DescriptiveBlock_base_a6 .DescriptiveBlock_containerHover_0d .DescriptiveBlock_title_95 {
+            padding-left: 15rem;
+            padding-top: 0;
+            padding-bottom: 1rem;
+            background-image: url('R.images.cosmic_event.gui.maps.icons.descriptiveBlockPatchwork');
+            background-repeat: no-repeat;
+            background-position: top left;
+            background-size: cover;
+    color: #FEFEEC;
+    font-size: 16rem;
+    font-weight: 500;
+    line-height: 19rem;
+    letter-spacing: .04em;
+        }
+
+    .mediaMedium .DescriptiveBlock_base_a6 .DescriptiveBlock_containerHover_0d .DescriptiveBlock_title_95 {
+                padding-top: 2rem;
+                padding-bottom: 5rem;
+    color: #FEFEEC;
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+}
+
+    .DescriptiveBlock_base_a6 .DescriptiveBlock_containerHover_0d .DescriptiveBlock_normalFlex_f6 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            flex: 1 1 auto;
+            padding-left: 15rem;
+            background: linear-gradient(
+                90deg,
+                rgba(108, 39, 0, .35) 0%,
+                rgba(111, 55, 24, .35) 50%,
+                rgba(113, 65, 32, 0) 100%
+            );
+        }
+
+    .DescriptiveBlock_base_a6 .DescriptiveBlock_containerHover_0d .DescriptiveBlock_normalFlex_f6 .DescriptiveBlock_img_a8 {
+                width: 60rem;
+                height: 60rem;
+                background: url('R.images.cosmic_event.gui.maps.icons.descriptiveBlockSlotBackground') center center /
+                    56rem 56rem no-repeat;
+            }
+
+    .DescriptiveBlock_base_a6 .DescriptiveBlock_containerHover_0d .DescriptiveBlock_normalFlex_f6 .DescriptiveBlock_description_93 {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex: 1 1 auto;
+                margin-left: 12rem;
+                margin-right: 0;
+    color: #f4e1b3;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 19rem;
+    letter-spacing: .04em;
+            }
+
+    .mediaMedium .DescriptiveBlock_base_a6 .DescriptiveBlock_containerHover_0d .DescriptiveBlock_normalFlex_f6 .DescriptiveBlock_description_93 {
+    color: #f4e1b3;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+}
+.DescriptiveBlock_base__hovered_8e .DescriptiveBlock_containerHover_0d {
+    left: 40rem;
+}
+.DescriptiveBlock_base__unFocused_b7 .DescriptiveBlock_containerHover_0d {
+    opacity: .5;
+}
+
+.PickupsRoute_base_27 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    padding: 50rem 25rem;
+    overflow: hidden;
+    position: relative;
+}
+
+    .mediaLarge .PickupsRoute_base_27 {
+        padding: 100rem 25rem;
+}
+.PickupsRoute_faded_a4 {
+    opacity: .5;
+}
+.PickupsRoute_texture_9b {
+    width: 100%;
+    height: 100%;
+    background-image: url('R.images.cosmic_event.gui.maps.icons.texture_pass');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+}
+.PickupsRoute_glow_d2 {
+    width: 100%;
+    height: 100%;
+    background-image: url('R.images.cosmic_event.gui.maps.icons.glow_screen');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 400rem 380rem;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.PickupsRoute_pageDescription_2c {
+    margin-bottom: 10rem;
+}
+.mediaMedium .PickupsRoute_pageDescription_2c {
+        margin-bottom: 20rem;
+}
+.PickupsRoute_pickupsWrapper_9a {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: .3s opacity ease-in-out;
+}
+.PickupsRoute_abilityOvercharge_98 {
+    top: 36.23188%;
+    left: 15.71429%;
+}
+.PickupsRoute_abilityRapidShelling_70 {
+    top: 44.92754%;
+    left: 35.71429%;
+}
+.PickupsRoute_abilityBlackHole_d2 {
+    top: 53.62319%;
+    left: 55.71429%;
+}
+.PickupsRoute_abilityPowerShot_b9 {
+    top: 62.31884%;
+    left: 75.71429%;
+}
+.PickupsRoute_ability_info_3b {
+    min-width: 146rem;
+    margin-left: -4rem;
+    white-space: nowrap;
+    visibility: hidden;
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transition: .3s opacity ease-in-out;
+    --cursor-type: default;
+}
+.mediaMedium .PickupsRoute_ability_info_3b {
+        visibility: visible;
+}
+.PickupsRoute_stage_a6 {
+    flex: 1 1 auto;
+    position: relative;
+}
+.PickupsRoute_importantText_72 {
+    color: #f4e1b3;
+    font-weight: 700;
+}
+
+.VehicleRoute_base_95 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    padding: 50rem 25rem;
+    overflow: hidden;
+}
+    .mediaLarge .VehicleRoute_base_95 {
+        padding: 100rem 25rem;
+}
+.VehicleRoute_texture_f5 {
+    width: 100%;
+    height: 100%;
+    background-image: url('R.images.cosmic_event.gui.maps.icons.texture_pass');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    pointer-events: none;
+}
+.VehicleRoute_glow_46 {
+    width: 100%;
+    height: 100%;
+    background-image: url('R.images.cosmic_event.gui.maps.icons.glow_screen');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 400rem 380rem;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.VehicleRoute_sideBarWrapper_ee {
+    position: relative;
+    z-index: 10;
+}
+.VehicleRoute_pageDescription_98 {
+    margin-bottom: 20rem;
+}
+.VehicleRoute_droppedOpacity_e6 {
+    opacity: .5;
+}
+.VehicleRoute_stage_e4 {
+    flex: 1 1 auto;
+    margin-top: var(--headerHeight);
+    position: relative;
+}
+.VehicleRoute_vehicle_ca {
+    position: absolute;
+    right: -7.14286%;
+    bottom: 8.69565%;
+    --vehicleScale: 1;
+}
+

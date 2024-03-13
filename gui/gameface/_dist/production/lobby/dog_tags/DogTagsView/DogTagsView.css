@@ -1769,6 +1769,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 12rem;
     position: relative;
 }
+.ProgressBar_base__medium_62 {
+        height: 6rem;
+    }
 .ProgressBar_base__small_df {
         height: 2rem;
     }
@@ -1784,6 +1787,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 0;
     left: 0;
 }
+.ProgressBar_background__medium_6e {
+        height: 6rem;
+    }
 .ProgressBar_background__small_46 {
         height: 2rem;
     }
@@ -1805,6 +1811,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translate(50%, -50%);
     pointer-events: none;
 }
+
+    .ProgressBarBlink_base__medium_ec {
+        width: 42rem;
+        height: 70rem;
+    }
 
     .ProgressBarBlink_base__small_0f {
         width: 44rem;
@@ -2369,11 +2380,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .ToggleButton_indicator_c1 {
-    /* This Needs to be an even number otherwise translate(-50%) makes it at half a pixel position and causes sub pixel blurring */
     width: 40rem;
     height: 29rem;
-    background: url('R.images.gui.maps.icons.buttons.toggle_indicator') left top no-repeat;
-    background-size: 39rem 29rem;
+    background: url('R.images.gui.maps.icons.buttons.toggle_indicator') no-repeat center / contain;
     position: absolute;
     bottom: -14rem;
     left: 50%;

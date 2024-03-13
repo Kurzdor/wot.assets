@@ -1795,14 +1795,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .mediaExtraLarge .App_background_1f {
         width: 4096rem;
         height: 1524rem;
+        margin-top: -250rem;
 }
 .App_background__indent_eb {
-        margin-right: -970rem;
+        margin-top: -170rem;
     }
+.mediaLarge .App_background__indent_eb {
+            width: 3940rem;
+            height: 1490rem;
+            margin-top: -120rem;
+}
 .mediaExtraLarge .App_background__indent_eb {
             width: 5310rem;
-            height: 1960rem;
-            margin: -280rem 0 0;
+            height: 1860rem;
+            margin-top: -220rem;
 }
 .App_shadow_03 {
     height: 300rem;

@@ -1,0 +1,186 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+
+.Content_base_46 {
+    display: flex;
+    width: 100%;
+    min-height: 160rem;
+    position: relative;
+}
+
+.Content_baseBackground_ae {
+    background: linear-gradient(90deg, rgba(201, 201, 182, 0) 0%, #C9C9B6 38.22%, #C9C9B6 64.56%, rgba(201, 201, 182, 0) 100%);
+    opacity: .07;
+    position: absolute;
+    top: 0;
+    right: -20rem;
+    bottom: 0;
+    left: -20rem;
+    z-index: -1;
+}
+
+.Content_border_e3 {
+    height: 2rem;
+    background: linear-gradient(90deg, transparent 0%, #C9C9B6 38%, #C9C9B6 64%, transparent 100%) repeat-x center / 4rem 2rem;
+    opacity: .2;
+    mask: linear-gradient(to left, transparent, #C9C9B6 50%, #C9C9B6 70%, transparent);
+    position: absolute;
+    right: -20rem;
+    left: -20rem;
+    mask-repeat: repeat;
+}
+
+.Content_border__top_13 {
+        top: 0;
+    }
+
+.Content_border__bot_7a {
+        bottom: 0;
+    }
+
+.Content_vehicle_29,
+.Content_compensation_26 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 22rem 0;
+}
+
+.Content_compensationIcon_4b {
+    width: 139rem;
+    height: 93rem;
+}
+
+.Content_vehicleIcon_cf {
+    width: 139rem;
+    height: 93rem;
+    background: no-repeat center / 100%;
+}
+
+.Content_compensationArrow_8b {
+    width: 106rem;
+    height: 65rem;
+    background: url('R.images.gui_lootboxes.gui.maps.openBox.compensationArrow') no-repeat center / 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+}
+
+.Content_vehicleName_e8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Content_vehicleTitle_b7,
+.Content_compensationTitle_3d,
+.Content_vehicleNameLevel_37,
+.Content_vehicleNameText_e7 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Content_compensationCount_89 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Content_compensationCount__gold_f9 {
+        color: #FFC363;
+        font-size: 14rem;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+
+.Content_compensationCount__credits_1f {
+        color: #CED9D9;
+        font-size: 14rem;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+
+.Content_vehicleNameType_f8 {
+    width: 18rem;
+    height: 18rem;
+    margin: 0 4rem;
+    background: no-repeat center / 170%;
+}
+
+.Footer_base_9e {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 46rem;
+    margin-top: 2rem;
+}
+
+.Footer_icon_16 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui_lootboxes.gui.maps.rewards.compensation_24x24') no-repeat center / contain;
+}
+
+.Footer_icon__vehicles_b6 {
+        background-image: url('R.images.gui_lootboxes.gui.maps.rewards.compensationVehicles');
+    }
+
+.Footer_text_55 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-left: 5rem;
+}
+
+.Header_base_e6 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 65rem;
+}
+
+.Header_title_3b {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.Header_description_b1 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 10rem;
+}
+
+.App_base_dc {
+    display: flex;
+    flex-direction: column;
+    width: 400rem;
+    padding: 20rem;
+    border-radius: 2rem;
+    background: linear-gradient(180deg, rgba(51, 51, 41, .3) 0%, rgba(51, 51, 41, 0) 15.62%, rgba(51, 51, 41, 0) 88.02%, rgba(51, 51, 41, .1) 100%);
+    color: #8C8C7E;
+    overflow: hidden;
+}
+

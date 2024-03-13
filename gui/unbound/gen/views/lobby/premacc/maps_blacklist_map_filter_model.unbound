@@ -1,0 +1,11 @@
+# This file was generated using wgpygen
+#   template: configs/templates/view_model.unbound.jinja2
+#   source: configs/definitions/views/lobby/premacc/maps_blacklist_models.yaml
+# Please, don't edit this file manually.
+(def macro MapsBlacklistMapFilterModel()
+    (scope
+        (var filterName:str = '')
+        (var filterID:number = -1)
+        (var selected:bool = false)
+    )
+)

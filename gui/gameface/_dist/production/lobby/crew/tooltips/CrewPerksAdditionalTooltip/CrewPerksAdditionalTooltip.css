@@ -3,17 +3,13 @@
     position: absolute;
 }
 
-.TooltipDecorator_decorator_3d {
-    padding: 4rem 6rem 8rem; /* border offset*/
-    border-image-source: url('R.atlases.components.tooltip_background');
-    border-image-slice: 24 fill;
-    border-image-width: 24rem;
-    position: relative;
-}
-
-.TooltipDecorator_decoratorContent_de {
-    background-color: #000;
-}
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
 
 .Divided_base_06 {
     position: relative;
@@ -32,6 +28,12 @@
     width: 16rem;
     height: 16rem;
     background: url('R.images.gui.maps.icons.tooltip.asterisk_optional') no-repeat center / cover;
+}
+
+.default_zeroPerk_bb {
+    width: 16rem;
+    height: 16rem;
+    background: url('R.images.gui.maps.icons.tankmen.crew.zeroSkill16x16') no-repeat center / cover;
 }
 
 .HeaderSection_base_f2 {
@@ -74,7 +76,6 @@
 
 .AltContentSection_description_25 {
     padding: 16rem 20rem;
-    white-space: pre-wrap;
 }
 
 .AltContentSection_info_41 {
@@ -85,7 +86,7 @@
 .AltContentSection_infoIcon_9c {
     width: 16rem;
     height: 16rem;
-    margin: 2rem 2rem 0 0;
+    margin: 2rem 2rem 0rem 0rem;
     background: url('R.images.gui.maps.icons.library.InformationIcon') no-repeat center / cover;
 }
 

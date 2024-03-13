@@ -209,42 +209,42 @@
 
 .GroupAnimation_base__enterUp_b3 {
         z-index: 1;
-        animation: GroupAnimation_animationEnterTop_92 .3s;
+        animation: GroupAnimation_animationEnterTop_92 0.3s;
     }
     .GroupAnimation_base__enterDown_f0 {
         z-index: 1;
-        animation: GroupAnimation_animationEnterDown_73 .3s;
+        animation: GroupAnimation_animationEnterDown_73 0.3s;
     }
     .GroupAnimation_base__exitUp_92 {
         position: absolute;
-        animation: GroupAnimation_animationExitTop_89 .3s;
+        animation: GroupAnimation_animationExitTop_89 0.3s;
     }
     .GroupAnimation_base__exitDown_67 {
         position: absolute;
-        animation: GroupAnimation_animationExitDown_02 .3s;
+        animation: GroupAnimation_animationExitDown_02 0.3s;
     }
 @keyframes GroupAnimation_animationEnterTop_92 {
     0% {
         opacity: 0;
-        transform: translateY(20rem) scale(.9);
+        transform: translateY(20rem) scale(0.9);
     }
 }
 @keyframes GroupAnimation_animationEnterDown_73 {
     0% {
         opacity: 0;
-        transform: translateY(-20rem) scale(.9);
+        transform: translateY(-20rem) scale(0.9);
     }
 }
 @keyframes GroupAnimation_animationExitTop_89 {
     100% {
         opacity: 0;
-        transform: translateY(20rem) scale(.9);
+        transform: translateY(20rem) scale(0.9);
     }
 }
 @keyframes GroupAnimation_animationExitDown_02 {
     100% {
         opacity: 0;
-        transform: translateY(-20rem) scale(.9);
+        transform: translateY(-20rem) scale(0.9);
     }
 }
 
@@ -756,6 +756,47 @@ body {
         opacity: 0;
         transform: translateY(8rem);
     }
+}
+
+.Section_base_8a {
+    display: flex;
+    isolation: isolate;
+    position: relative;
+}
+
+    .Section_base__hidden_f0 {
+        display: none;
+    }
+.Section_label_73 {
+    text-align: center;
+    position: absolute;
+    top: -20rem;
+    left: 50%;
+    transform: translate(-50%);
+    pointer-events: none;
+    pointer-events: none;
+}
+.Section_counter_8a {
+    position: absolute;
+    top: -6rem;
+    right: 7rem;
+}
+.Section_configLabel_c9 {
+    width: 100%;
+    text-align: center;
+    opacity: .6;
+    position: absolute;
+    bottom: -18rem;
+}
+.Section_configText_eb {
+    color: #F2F2F7;
+    font-size: 11rem;
+}
+.Section_configVehicleIcon_20 {
+    width: 9rem;
+    height: 12rem;
+    margin: 0 -2rem;
+    background: no-repeat center / cover;
 }
 
 .SlotDivider_base_60 {
@@ -2133,47 +2174,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex-direction: row;
 }
 
-.Section_base_8a {
-    display: flex;
-    isolation: isolate;
-    position: relative;
-}
-
-    .Section_base__hidden_f0 {
-        display: none;
-    }
-.Section_label_73 {
-    text-align: center;
-    position: absolute;
-    top: -20rem;
-    left: 50%;
-    transform: translate(-50%);
-    pointer-events: none;
-    pointer-events: none;
-}
-.Section_counter_8a {
-    position: absolute;
-    top: -6rem;
-    right: 7rem;
-}
-.Section_configLabel_c9 {
-    width: 100%;
-    text-align: center;
-    opacity: .6;
-    position: absolute;
-    bottom: -18rem;
-}
-.Section_configText_eb {
-    color: #F2F2F7;
-    font-size: 11rem;
-}
-.Section_configVehicleIcon_20 {
-    width: 9rem;
-    height: 12rem;
-    margin: 0 -2rem;
-    background: no-repeat center / cover;
-}
-
 .Count_base_e4 {
     color: #fff5e2;
     font-size: 12rem;
@@ -2396,9 +2396,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 56rem;
     height: 56rem;
     border-radius: 1rem;
-    border-image-source: url('R.images.gui.maps.icons.tanksetup.panel.border');
-    border-image-slice: 4 fill;
-    border-image-width: 4rem;
+    border-image: url('R.images.gui.maps.icons.tanksetup.panel.border') 4 fill / 4rem;
     box-shadow: inset 0 0 10rem 5rem rgba(255,54,0, .4);
     background: rgba(255,39,23, .2);
     position: absolute;
@@ -2415,6 +2413,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .ShellsSection_border__triple_f2 {
         width: 130rem;
     }
+
+.ShellsSection_counter_74 {
+    position: absolute;
+    top: -6rem;
+    right: 7rem;
+}
 
 .ShellsSection_disabled_c2 {
     width: 100%;

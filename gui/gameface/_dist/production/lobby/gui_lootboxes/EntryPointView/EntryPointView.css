@@ -1,0 +1,125 @@
+html {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.FormatCount_base_01 {
+    display: flex;
+}
+
+.App_base_5c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.App_shine_d0 {
+    align-self: center;
+    width: 150rem;
+    height: 150rem;
+    background: url('swf://gui/flash/animations/eventLootBoxes/lootboxShine.swf') no-repeat center / contain;
+    mix-blend-mode: screen;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+.App_base__large_56 .App_shine_d0 {
+        width: 275rem;
+        height: 275rem;
+    }
+.App_wrapper_4d {
+    width: 114rem;
+    height: 114rem;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    pointer-events: auto;
+}
+.App_base__large_56 .App_wrapper_4d {
+        width: 222rem;
+        height: 214rem;
+    }
+.App_wrapper_4d .App_base__disabled_cc {
+        cursor: default;
+    }
+.App_icon_51 {
+    width: 80rem;
+    height: 80rem;
+    background: url('R.images.gui_lootboxes.gui.maps.entryPoint.entry') no-repeat center / cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.App_base__large_56 .App_icon_51 {
+        width: 160rem;
+        height: 160rem;
+        background-image: url('R.images.gui_lootboxes.gui.maps.entryPoint.entryMedium');
+    }
+.App_base__disabled_cc .App_icon_51 {
+        opacity: 0.4;
+    }
+.App_icon__hovered_72 {
+        filter: brightness(1.3);
+    }
+.App_count_6b {
+    display: flex;
+    color: #F2F2F7;
+    font-size: 20rem;
+    text-shadow: 0 0 14rem #f00;
+    position: absolute;
+    right: 4rem;
+    bottom: 24rem;
+}
+.App_base__large_56 .App_count_6b {
+        font-size: 24rem;
+        right: 16rem;
+        bottom: 54rem;
+    }
+.App_base__disabled_cc .App_count_6b {
+        color: #595950;
+    }
+.App_tooltip_8b {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+}
+.App_disabledBg_79 {
+    background: url('R.images.gui_lootboxes.gui.maps.entryPoint.disabledBg') repeat center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+}
+.App_disabledLock_a0 {
+    width: 97rem;
+    height: 86rem;
+    background: url('R.images.gui_lootboxes.gui.maps.entryPoint.disabled') no-repeat center;
+    mix-blend-mode: screen;
+    position: absolute;
+    bottom: -30rem;
+    left: 50%;
+    z-index: 99;
+    transform: translateX(-50%);
+}
+.App_base__large_56 .App_disabledLock_a0 {
+        width: 193rem;
+        height: 172rem;
+        background-image: url('R.images.gui_lootboxes.gui.maps.entryPoint.disabledMedium');
+        bottom: -50rem;
+    }
+

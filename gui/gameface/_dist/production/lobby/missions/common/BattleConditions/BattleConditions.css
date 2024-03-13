@@ -116,6 +116,9 @@
     height: 12rem;
     position: relative;
 }
+.ProgressBar_base__medium_62 {
+        height: 6rem;
+    }
 .ProgressBar_base__small_df {
         height: 2rem;
     }
@@ -131,6 +134,9 @@
     top: 0;
     left: 0;
 }
+.ProgressBar_background__medium_6e {
+        height: 6rem;
+    }
 .ProgressBar_background__small_46 {
         height: 2rem;
     }
@@ -152,6 +158,11 @@
     transform: translate(50%, -50%);
     pointer-events: none;
 }
+
+    .ProgressBarBlink_base__medium_ec {
+        width: 42rem;
+        height: 70rem;
+    }
 
     .ProgressBarBlink_base__small_0f {
         width: 44rem;

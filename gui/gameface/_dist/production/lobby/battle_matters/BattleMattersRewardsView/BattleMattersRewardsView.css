@@ -182,15 +182,15 @@
 
 .App_header_3a {
     position: absolute;
-    top: 40rem;
+    top: 38rem;
 }
 
 .mediaMedium .App_header_3a {
-        top: 48rem;
+        top: 46rem;
 }
 
 .mediaExtraLarge .App_header_3a {
-        top: 68rem;
+        top: 66rem;
 }
 
 .App_close_a9 {
@@ -503,6 +503,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 .Footer_base_a6 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(20rem);
+    pointer-events: none;
+}
+.Footer_base__showed_e9 {
     opacity: 0;
     animation-name: Footer_fadeInUp_b6;
     animation-duration: .4s;
@@ -510,10 +518,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-timing-function: cubic-bezier(.07, .82, .17, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
+        pointer-events: auto;
+    }
 
 @keyframes Header_fadeIn_a3 {
     0% {
@@ -608,23 +614,18 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-timing-function: cubic-bezier(.07, .82, .17, 1);
     animation-delay: .6s;
     animation-iteration-count: 1;
+    margin-bottom: 4rem;
     color: #E9E2BF;
     font-size: 18rem;
     font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 8rem;
+    line-height: 1.2;
 }
 .mediaSmall .Header_title_8c {
-        color: #E9E2BF;
         font-size: 22rem;
-        font-weight: 700;
-        line-height: 1.2;
 }
 .mediaExtraLarge .Header_title_8c {
-        color: #E9E2BF;
+        margin-bottom: 0;
         font-size: 28rem;
-        font-weight: 700;
-        line-height: 1.1;
 }
 .Header_subTitle_81 {
     opacity: 0;
@@ -637,17 +638,50 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     color: #FEFEEC;
     font-size: 36rem;
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 .mediaSmall .Header_subTitle_81 {
-        color: #FEFEEC;
         font-size: 56rem;
-        font-weight: 700;
-        line-height: 1.1;
 }
 .mediaExtraLarge .Header_subTitle_81 {
-        color: #FEFEEC;
         font-size: 73rem;
+}
+.Header_completed_86 {
+    opacity: 0;
+    animation-name: Header_slideUp_ea;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    display: flex;
+    align-items: center;
+    margin-top: 6rem;
+}
+.Header_completedIcon_af {
+    width: 16rem;
+    height: 16rem;
+    background: url('R.images.gui.maps.icons.battleMatters.rewards.completed') no-repeat center / contain;
+}
+.mediaExtraLarge .Header_completedIcon_af {
+        transform: translateY(2rem);
+}
+.Header_completedText_a3 {
+    color: #7AB300;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    padding-left: 4rem;
+}
+.mediaSmall .Header_completedText_a3 {
+        color: #7AB300;
+        font-size: 15rem;
+        font-weight: 700;
+        line-height: 1.15;
+}
+.mediaExtraLarge .Header_completedText_a3 {
+        color: #7AB300;
+        font-size: 18rem;
         font-weight: 700;
         line-height: 1.1;
 }
@@ -800,7 +834,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         }
 
 .Reward_info__credits_ef {
-        color: #CED9D9;
+        color: #E9E2BF;
     }
 
 .Reward_info__gold_36 {

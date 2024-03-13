@@ -3,17 +3,13 @@
     position: absolute;
 }
 
-.TooltipDecorator_decorator_3d {
-    padding: 4rem 6rem 8rem; /* border offset*/
-    border-image-source: url('R.atlases.components.tooltip_background');
-    border-image-slice: 24 fill;
-    border-image-width: 24rem;
-    position: relative;
-}
-
-.TooltipDecorator_decoratorContent_de {
-    background-color: #000;
-}
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
 
 .Divider_base_95 {
     width: 100%;
@@ -275,12 +271,12 @@
         color: #FF2717;
     }
 
-.TooltipAdvancedFooter_base_56 {
+.TooltipAdvancedFooter_base_d6 {
     display: flex;
     padding: 12rem 20rem 20rem;
 }
 
-.TooltipAdvancedFooter_altBtn_02 {
+.TooltipAdvancedFooter_altBtn_e0 {
     width: 29rem;
     height: 26rem;
     margin-right: 8rem;

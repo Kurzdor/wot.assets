@@ -401,6 +401,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 12rem;
     position: relative;
 }
+.ProgressBar_base__medium_62 {
+        height: 6rem;
+    }
 .ProgressBar_base__small_df {
         height: 2rem;
     }
@@ -416,6 +419,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 0;
     left: 0;
 }
+.ProgressBar_background__medium_6e {
+        height: 6rem;
+    }
 .ProgressBar_background__small_46 {
         height: 2rem;
     }
@@ -437,6 +443,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translate(50%, -50%);
     pointer-events: none;
 }
+
+    .ProgressBarBlink_base__medium_ec {
+        width: 42rem;
+        height: 70rem;
+    }
 
     .ProgressBarBlink_base__small_0f {
         width: 44rem;
@@ -864,7 +875,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Survey_base__first_ac .Survey_content_c5[lang=ja],
-        .Survey_base__first_ac .Survey_content_c5[lang=th]{
+        .Survey_base__first_ac .Survey_content_c5[lang=th] {
             margin-top: -30rem;
         }
 
@@ -904,8 +915,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 36rem;
     font-weight: 700;
     line-height: 1.1;
-    margin-top: -22rem;
     width: 930rem;
+    margin-top: -22rem;
     text-align: center;
 }
 
@@ -914,7 +925,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         font-size: 56rem;
         font-weight: 700;
         line-height: 1.1;
-        width:1610rem;
+        width: 1610rem;
 }
 
 .ToggleButton_base_2c {
@@ -989,11 +1000,36 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 0;
     bottom: 0;
     left: 0;
-    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
     border-image-slice: 4 fill;
     border-image-width: 4rem;
     z-index: -1;
 }
+
+.ToggleButton_background__main_68 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+
+.ToggleButton_background__primary_a9 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+
+.ToggleButton_background__primaryGreen_4f {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+
+.ToggleButton_background__primaryRed_ca {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+
+.ToggleButton_background__secondary_b2 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+
+.ToggleButton_background__ghost_d6 {
+        border-radius: 3rem;
+        box-shadow: 0 0 0 1rem rgba(0,0,0, .3), 0 0 0 1rem rgba(255,255,255, .15) inset;
+        background-color: rgba(0,0,0, .15);
+    }
 
 .ToggleButton_content_63 {
     color: #f1f0e0;
@@ -1025,8 +1061,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .ToggleButton_base__disabled_19 .ToggleButton_overlay_23 {
         margin: -1rem;
-        background: url('R.images.gui.maps.icons.buttons.toggle_disable');
-        background-repeat: repeat;
+        background: url('R.images.gui.maps.icons.buttons.toggle_disable') repeat;
     }
 
 .ToggleButton_base__button_cb .ToggleButton_overlay_23 {

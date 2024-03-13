@@ -1,3 +1,44 @@
+body {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.App_base_4b {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.App_title_ad {
+    color: #E9E2BF;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.App_panel_92 {
+    width: 620rem;
+    height: 89rem;
+    margin-top: 7rem;
+    border-radius: 5rem;
+    background: rgba(255,255,255, .03);
+    transition: background-color .2s;
+    cursor: pointer;
+}
+
+.mediaMediumHeight .App_panel_92 {
+        height: 90rem;
+}
+
+.App_panel_92:hover {
+        background: rgba(255,255,255, .07);
+    }
+
+.App_panel__extraSmall_84 {
+        height: 70rem;
+    }
+
 .EmptyPanel_base_cb {
     width: 100%;
     height: 100%;
@@ -136,46 +177,5 @@
         width: 40rem;
         margin-left: 10rem;
         margin-right: 10rem;
-    }
-
-body {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.App_base_4b {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
-
-.App_title_ad {
-    color: #E9E2BF;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-}
-
-.App_panel_92 {
-    width: 620rem;
-    height: 89rem;
-    margin-top: 7rem;
-    border-radius: 5rem;
-    background: rgba(255,255,255, .03);
-    transition: background-color .2s;
-    cursor: pointer;
-}
-
-.mediaMediumHeight .App_panel_92 {
-        height: 90rem;
-}
-
-.App_panel_92:hover {
-        background: rgba(255,255,255, .07);
-    }
-
-.App_panel__extraSmall_84 {
-        height: 70rem;
     }
 

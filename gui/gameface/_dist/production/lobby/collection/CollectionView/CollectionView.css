@@ -156,6 +156,16 @@
     }
 }
 
+@keyframes App_fadeOut_a5 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @keyframes App_raysAppearance_9f {
     0% {
         opacity: 0;
@@ -250,6 +260,16 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes CollectionLayout_fadeOut_9c {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
@@ -378,7 +398,6 @@
     }
 
 .CollectionElement_background__unreceived_58 {
-        opacity: .5;
         z-index: 0;
         cursor: default;
     }
@@ -490,7 +509,6 @@
     width: 200%;
     height: 200%;
     mask-size: 100%;
-    mask-image: url('R.images.gui.maps.icons.collections.common.newElementMaskOverSize');
     position: relative;
 }
 
@@ -935,20 +953,131 @@
         z-index: 3;
     }
 
+@keyframes Error_slideUp_1f {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Error_fadeIn_6d {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Error_fadeOut_df {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes Error_raysAppearance_2f {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .2;
+    }
+}
+
+@keyframes Error_rotate_fd {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes Error_slideUpWithScale_63 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2) translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.Error_base_92 {
+    opacity: 0;
+    animation-name: Error_fadeIn_6d;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: .4s;
+    animation-iteration-count: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-36rem);
+}
+
+.Error_icon_9e {
+    width: 80rem;
+    height: 80rem;
+    background: url('R.images.gui.maps.icons.collections.common.error_icon') no-repeat center / cover;
+}
+
+.Error_title_36 {
+    color: #F2F2F7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 51rem 0 18rem;
+}
+
+.Error_description_9c {
+    color: #FFFFFF;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
 .Footer_base_df {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 1080rem;
-    height: 160rem;
+    height: auto;
     position: absolute;
-    bottom: 0;
+    bottom: 150rem;
 }
 
 .Footer_completedStateWrapper_73 {
     position: absolute;
-    bottom: 52rem;
+}
+
+.Footer_scrollWrap_0c {
+    overflow: scroll;
+}
+
+@media (max-height: 900px) {
+    .Footer_base_df {
+        bottom: 140rem;
+    }
 }
 
 /*
@@ -961,6 +1090,9 @@
     height: 12rem;
     position: relative;
 }
+.ProgressBar_base__medium_62 {
+        height: 6rem;
+    }
 .ProgressBar_base__small_df {
         height: 2rem;
     }
@@ -976,6 +1108,9 @@
     top: 0;
     left: 0;
 }
+.ProgressBar_background__medium_6e {
+        height: 6rem;
+    }
 .ProgressBar_background__small_46 {
         height: 2rem;
     }
@@ -997,6 +1132,11 @@
     transform: translate(50%, -50%);
     pointer-events: none;
 }
+
+    .ProgressBarBlink_base__medium_ec {
+        width: 42rem;
+        height: 70rem;
+    }
 
     .ProgressBarBlink_base__small_0f {
         width: 44rem;
@@ -1156,7 +1296,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 868rem;
     height: 100%;
     opacity: 1;
     position: absolute;
@@ -1170,7 +1309,7 @@
     margin-bottom: 5rem;
 }
 .ActiveState_progressBarWrapper_4a {
-    width: 868rem;
+    height: 10rem;
     transition: transform .4s easy-in, opacity .4s easy-in;
     transition-delay: .08s;
 }
@@ -1179,14 +1318,11 @@
         transform: translateY(40rem);
     }
 .ActiveState_progressBarBg_de {
-    width: 950rem;
     height: 17rem;
-    margin-left: -41rem;
-    background: url('R.images.gui.maps.icons.collections.progress_bar.progressBarBg') no-repeat center / contain;
 }
 .ActiveState_progressBar_36 {
     width: 100%;
-    height: 12rem;
+    height: 10rem;
     position: relative;
     top: -15rem;
 }
@@ -1197,36 +1333,92 @@
         opacity: 0;
         transform: translateY(40rem);
     }
+.ActiveState_relativeWrap_75 {
+    position: relative;
+    top: 15rem;
+}
 
 .CounterBlock_base_f4 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200rem;
+    height: 51rem;
+    position: relative;
+}
+
+    .mediaLarge .CounterBlock_base_f4 {
+        height: 58rem;
 }
 
 .CounterBlock_text_82 {
-    color: #8C8C7E;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    position: absolute;
+    top: 25rem;
+    left: 15rem;
+}
+
+.mediaLarge .CounterBlock_text_82 {
+        color: #E9E2BF;
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
+        left: -3rem;
 }
 
 .CounterBlock_count_85 {
+    margin-top: 1rem;
+    font-weight: 700;
+    line-height: 125%;
     color: #E9E2BF;
-    font-size: 15rem;
+    font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
-    margin-top: 1rem;
 }
 
-.CounterBlock_count__total_2b {
-        opacity: .5;
+.CounterBlock_count__received_38 {
+        color: #FEAB34;
     }
 
-.CounterBlock_infoIcon_a4 {
-    width: 42rem;
-    height: 42rem;
-    margin: -10rem 0 0 -5rem;
-    background: url('R.images.gui.maps.icons.collections.progress_bar.infoIcon') no-repeat center / contain;
+.mediaLarge .CounterBlock_count_85 {
+        color: #E9E2BF;
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
 }
+
+.mediaLarge .CounterBlock_count__received_38 {
+            color: #FEAB34;
+        }
+
+.CounterBlock_infoIcon_a4 {
+    width: 40rem;
+    height: 40rem;
+    margin-top: 3rem;
+    background: url('R.images.gui.maps.icons.collections.progress_bar.infoIcon') no-repeat center / cover;
+    position: absolute;
+    top: 13rem;
+    left: 152rem;
+}
+
+.CounterBlock_infoIcon__large_19 {
+        left: 160rem;
+    }
+
+.mediaLarge .CounterBlock_infoIcon_a4 {
+        width: 45rem;
+        height: 40rem;
+        top: 15rem;
+        left: 173rem;
+}
+
+.mediaLarge .CounterBlock_infoIcon__large_19 {
+            top: 14rem;
+            left: 183rem;
+        }
 
 .Reward_base_ea {
     display: flex;
@@ -1376,7 +1568,7 @@
         }
 
 .Reward_info__credits_ef {
-        color: #CED9D9;
+        color: #E9E2BF;
     }
 
 .Reward_info__gold_36 {
@@ -1429,123 +1621,109 @@
     transform: translateX(3rem);
 }
 
-.LevelContent_base_dd {
+.ProgressItem_progressItemWrapper_fa {
+    color: #8C8C7E;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    transition: transform .4s easy-in, opacity .4s easy-in;
-    transition-delay: .24s;
+    top: -15rem;
 }
 
-    .LevelContent_base__completed_c2 {
+    .ProgressItem_progressItemWrapper__zero_ed {
+        color: #8C8C7E;
+        font-size: 12rem;
+        font-weight: 400;
+        line-height: 1.3;
+        opacity: 1;
+        position: relative;
+        bottom: -1rem;
+    }
+
+    .ProgressItem_progressItemWrapper__invisible_b1 {
         opacity: 0;
-        transform: translateY(40rem);
     }
-.LevelContent_rewards_51 {
-    filter: brightness(1);
+
+    .ProgressItem_progressItemWrapper__bottom_d0 {
+        top: 26rem;
+    }
+.ProgressItem_item_34 {
     position: absolute;
-    top: -72rem;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 7rem;
 }
-.LevelContent_base__justReceived_3f .LevelContent_rewards_51 {
-        animation: LevelContent_brightnesIn_4c .08s ease-in forwards, LevelContent_brightnesOut_27 .3s ease-out forwards .16s;
+.ProgressItem_item__top_ef {
+        top: -1rem;
     }
-.LevelContent_checkIconWrapper_ed {
+.ProgressItem_point_57 {
+    width: 1rem;
+}
+.ProgressItem_point__top_d4 {
+        position: absolute;
+        top: 21rem;
+    }
+.ProgressItem_point__smallTop_3b {
+        width: 1rem;
+        height: 6rem;
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 0.01%, rgba(255, 255, 255, 0) 100%);
+    }
+.ProgressItem_point__largeBottom_8a {
+        width: 1rem;
+        height: 8rem;
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 0.01%, rgba(255, 255, 255, 0) 100%);
+        top: 10rem;
+    }
+.ProgressItem_leftIndent_b3 {
+    left: -3rem;
+}
+.ProgressItem_leftIndent__medium_f0 {
+        left: -6rem;
+    }
+.ProgressItem_zeroWrap_b0 {
+    margin-bottom: 4rem;
+    transform: translate(-2.5rem, -2rem);
+}
+.ProgressItem_checkIconWrapper_28 {
     transition: transform .4s easy-in, opacity .4s easy-in;
     transition-delay: .16s;
     pointer-events: none;
 }
-.LevelContent_base__completed_c2 .LevelContent_checkIconWrapper_ed {
+.ProgressItem_base__completed_d3 .ProgressItem_checkIconWrapper_28 {
         opacity: 0;
         transform: translateY(40rem);
     }
-.LevelContent_receivedIconBg_b0 {
+.ProgressItem_receivedIconBg_72 {
     width: 70rem;
     height: 18rem;
-    background: url('R.images.gui.maps.icons.collections.progress_bar.checkIconBg') no-repeat center / contain;
+    background: url('R.images.gui.maps.icons.collections.progress_bar.checkIconBg') no-repeat center / cover;
     opacity: 0;
     position: absolute;
-    top: -21rem;
     left: -33rem;
 }
-.LevelContent_base__received_81 .LevelContent_receivedIconBg_b0 {
+.ProgressItem_base__received_fe .ProgressItem_receivedIconBg_72 {
         opacity: .7;
     }
-.LevelContent_base__justReceived_3f .LevelContent_receivedIconBg_b0 {
-        animation: LevelContent_fadeInBgStep1_70 .25s ease-out forwards, LevelContent_fadeInBgStep2_7f .8s ease-in forwards .25s;
+.ProgressItem_base__justReceived_87 .ProgressItem_receivedIconBg_72 {
+        animation: ProgressItem_fadeInBgStep1_ed .25s ease-out forwards, ProgressItem_fadeInBgStep2_b4 .8s ease-in forwards .25s;
     }
-.LevelContent_receivedIcon_af {
+.ProgressItem_receivedIcon_4f {
     width: 16rem;
     height: 16rem;
-    background: url('R.images.gui.maps.icons.collections.progress_bar.checkIcon') no-repeat center / contain;
+    background: url('R.images.gui.maps.icons.collections.progress_bar.checkIcon') no-repeat center / cover;
     opacity: 0;
     position: absolute;
-    top: -19rem;
     left: -6rem;
 }
-.LevelContent_base__received_81 .LevelContent_receivedIcon_af {
+.ProgressItem_base__received_fe .ProgressItem_receivedIcon_4f {
         opacity: 1;
     }
-.LevelContent_base__justReceived_3f .LevelContent_receivedIcon_af {
-        animation: LevelContent_fadeInScaleIcon_ff .08s ease-in-out forwards;
+.ProgressItem_base__justReceived_87 .ProgressItem_receivedIcon_4f {
+        animation: ProgressItem_fadeInScaleIcon_e4 .08s ease-in-out forwards;
     }
-.LevelContent_point_0d {
-    width: 1rem;
-    transition: transform .4s easy-in, opacity .4s easy-in;
-    transition-delay: .08s;
-}
-.LevelContent_base__completed_c2 .LevelContent_point_0d {
-        opacity: 0;
-        transform: translateY(40rem);
-    }
-.LevelContent_point__top_b1 {
-        height: 12rem;
-        background-image: linear-gradient(0deg, rgba(255,255,255, .25), rgba(255,255,255, .5) .01%, transparent);
-        position: relative;
-        top: -12rem;
-    }
-.LevelContent_base__received_81 .LevelContent_point__top_b1 {
-            height: 6rem;
-            top: -6rem;
-        }
-.LevelContent_point__bottom_e6 {
-        height: 6rem;
-        background-image: linear-gradient(180deg, rgba(255,255,255, .25), rgba(255,255,255, .5) .01%, transparent);
-    }
-.LevelContent_number_ef {
-    color: rgba(242,242,247, .3);
-    font-size: 12rem;
-    font-weight: 400;
-    line-height: 1.3;
-    position: absolute;
-    top: 4rem;
-    left: 50%;
-    transform: translate(-50%, 0);
-    transition: transform .4s easy-in, opacity .4s easy-in;
-    transition-delay: .08s;
-}
-.LevelContent_base__completed_c2 .LevelContent_number_ef {
-        opacity: 0;
-        transform: translate(-50%, 20rem);
-    }
-@keyframes LevelContent_brightnesIn_4c {
-    0% {
-        filter: brightness(1);
-    }
-
-    100% {
-        filter: brightness(1.2);
-    }
-}
-@keyframes LevelContent_brightnesOut_27 {
-    0% {
-        filter: brightness(1.2);
-    }
-
-    100% {
-        filter: brightness(1.1);
-    }
-}
-@keyframes LevelContent_fadeInScaleIcon_ff {
+@keyframes ProgressItem_fadeInScaleIcon_e4 {
     0% {
         opacity: 0;
         transform: scale(.5);
@@ -1556,7 +1734,7 @@
         transform: scale(1);
     }
 }
-@keyframes LevelContent_fadeInBgStep1_70 {
+@keyframes ProgressItem_fadeInBgStep1_ed {
     0% {
         opacity: 0;
         transform: scale(0);
@@ -1567,7 +1745,7 @@
         transform: scale(1.2);
     }
 }
-@keyframes LevelContent_fadeInBgStep2_7f {
+@keyframes ProgressItem_fadeInBgStep2_b4 {
     0% {
         opacity: 1;
         transform: scale(1.2);
@@ -1580,48 +1758,272 @@
 }
 
 .ProgressScale_base_88 {
+    display: block;
     width: 100%;
-    position: relative;
+    margin-top: -15rem;
 }
 
-    .ProgressScale_base__bottom_ee {
-        top: -12rem;
-    }
-
-.ProgressScale_baseBottom_dc {
-    transition: transform .4s easy-in, opacity .4s easy-in;
-    transition-delay: .08s;
-}
-
-.ProgressScale_base__completed_b0 .ProgressScale_baseBottom_dc {
+    .ProgressScale_base__completed_b0 {
         opacity: 0;
         transform: translateY(40rem);
     }
 
-.ProgressScale_point_31 {
-    width: 1rem;
+.HorizontalBar_base_49 {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+    position: relative;
 }
 
-.ProgressScale_base__top_0e .ProgressScale_point_31 {
-        height: 15rem;
-        background-image: linear-gradient(0deg, rgba(255,255,255, .25), rgba(255,255,255, .5) .01%, transparent);
-        position: relative;
-        top: -15rem;
+    .HorizontalBar_base__nonActive_82 {
+        visibility: hidden;
     }
 
-.ProgressScale_base__bottom_ee .ProgressScale_point_31 {
-        height: 6rem;
-        background-image: linear-gradient(180deg, rgba(255,255,255, .25), rgba(255,255,255, .5) .01%, transparent);
+    .HorizontalBar_base_49 .disable,
+    .HorizontalBar_base_49 .disable:hover {
+        opacity: .3;
+        cursor: default;
     }
 
-.ProgressScale_zeroNumber_25 {
-    color: rgba(242,242,247, .3);
-    font-size: 12rem;
-    font-weight: 400;
-    line-height: 1.3;
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover, .HorizontalBar_rightButton_03:hover {
+        opacity: 1;
+    }
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem 7rem;
+    opacity: .5;
     position: absolute;
-    top: 4rem;
-    left: -2rem;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+        opacity: 1;
+    }
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
+        opacity: .7;
+    }
+
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.VerticalBar_base_f3 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+    .VerticalBar_base__nonActive_42 {
+        visibility: hidden;
+    }
+
+    .VerticalBar_base_f3 .disable,
+    .VerticalBar_base_f3 .disable:hover {
+        opacity: .3;
+        cursor: default;
+    }
+
+.VerticalBar_topButton_d7,
+.VerticalBar_bottomButton_06 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_d7:hover, .VerticalBar_bottomButton_06:hover {
+        opacity: 1;
+    }
+
+.VerticalBar_topButton_d7 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_06 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_df {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32 {
+    display: none;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32:hover {
+        opacity: 1;
+    }
+
+.VerticalBar_rail_43 {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_43:hover {
+        opacity: .7;
+    }
+
+
+.VerticalScroll_content_cb {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_f8 {
+    display: flex;
+}
+
+.VerticalScroll_bar_1e {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_af {
+    flex: 1;
+}
+
+.ScrollProgressionArea_progressContainer_48 {
+    width: 100%;
+    height: 110rem;
+    position: relative;
+}
+
+.ScrollProgressionArea_shadow_15 {
+    width: 20rem;
+    height: 100%;
+    position: absolute;
+}
+
+.ScrollProgressionArea_shadow__left_f6 {
+        background: url('R.images.gui.maps.icons.collections.progress_bar.progressScrollLeftShadow') no-repeat center / contain;
+        left: 0;
+    }
+
+.ScrollProgressionArea_shadow__left_small_73 {
+        background: url('R.images.gui.maps.icons.collections.progress_bar.progressScrollLeftShadowSmall') no-repeat center / contain;
+        left: -13rem;
+    }
+
+.ScrollProgressionArea_shadow__right_8a {
+        background: url('R.images.gui.maps.icons.collections.progress_bar.progressScrollRightShadow') no-repeat center / contain;
+        right: 0;
+    }
+
+.ScrollProgressionArea_shadow__right_small_44 {
+        background: url('R.images.gui.maps.icons.collections.progress_bar.progressScrollRightShadowSmall') no-repeat center / contain;
+        right: -13rem;
+    }
+
+.ScrollProgressionArea_scrollWrap_4b {
+    width: 110%;
+    padding: 0;
+    overflow: scroll;
+}
+
+.ScrollProgressionArea_progressWidthWrap_fc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1160px) {
+    .ScrollProgressionArea_progressContainer__large_1f {
+        width: 840rem;
+    }
+
+    .ScrollProgressionArea_scrollWrap_4b {
+        width: 100%;
+    }
 }
 
 .CompletedState_base_c8 {
@@ -1880,6 +2282,16 @@
     }
 }
 
+@keyframes Header_fadeOut_30 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @keyframes Header_raysAppearance_8d {
     0% {
         opacity: 0;
@@ -1980,14 +2392,18 @@
 
 .Header_seasonText_1d {
     color: #FFDD99;
-    font-size: 24rem;
+    font-size: 18rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.1;
     margin: 2rem 0;
 }
 
 .mediaMedium .Header_seasonText_1d {
         padding-top: 5rem;
+        color: #FFDD99;
+        font-size: 24rem;
+        font-weight: 700;
+        line-height: 1.2;
 }
 
 .mediaLarge .Header_seasonText_1d {

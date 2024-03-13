@@ -1,0 +1,132 @@
+body {
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.Flag_base_52 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Flag_hitArea_28 {
+    width: 46rem;
+    height: 78rem;
+    position: absolute;
+    top: 0;
+    left: 32rem;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.Flag_hoverSequence_f5 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: opacity .15s linear;
+}
+
+.Flag_hoverSequence__visible_53 {
+        opacity: 1;
+    }
+
+.Flag_background_66 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.armory_yard.gui.maps.icons.entry_point.flag') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.Flag_background__disabled_76 {
+        background: url('R.images.armory_yard.gui.maps.icons.entry_point.flag_disabled') no-repeat center / cover;
+    }
+
+.Flag_content_4d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.Flag_anchor_7c {
+    width: 28rem;
+    height: 28rem;
+    background: url('R.images.armory_yard.gui.maps.icons.entry_point.anchor') no-repeat center / cover;
+}
+
+.Flag_anchor__disabled_71 {
+        background: url('R.images.armory_yard.gui.maps.icons.entry_point.anchor_disabled') no-repeat center / cover;
+    }
+
+.Flag_progression_e2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32rem;
+    margin-top: 4rem;
+    position: relative;
+}
+
+.Flag_progression__text_91 {
+        color: #f6d392;
+        font-size: 14rem;
+        font-weight: 400;
+        line-height: 1.3;
+        text-shadow: 0 1rem 6rem rgba(0, 0, 0, .4);
+    }
+
+.Flag_progression__gradient_77 {
+        color: #eaca91;
+        position: absolute;
+        mask-image: linear-gradient(transparent, #fff);
+    }
+
+.Flag_icon_02 {
+    width: 32rem;
+    height: 32rem;
+    margin-top: 2rem;
+    background: no-repeat center / cover;
+}
+
+.App_base_88 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.App_flag_c7 {
+    width: 108rem;
+    height: 108rem;
+    opacity: 0;
+    position: absolute;
+    top: -15rem;
+    left: 0;
+    z-index: 0;
+    animation: App_fadeIn_ce .6s cubic-bezier(.5, 0, .5, 1) forwards .1s;
+}
+
+@keyframes App_fadeIn_ce {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0rem;
+    }
+}
+

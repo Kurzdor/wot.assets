@@ -1,0 +1,1521 @@
+.SubView_base_df {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    position: relative;
+    cursor: pointer;
+}
+
+    .CButton_base__main_42,
+    .CButton_base__primary_7f,
+    .CButton_base__primaryGreen_6f,
+    .CButton_base__primaryRed_ec,
+    .CButton_base__secondary_50 {
+        background-size: 100% 100%;
+    }
+
+    .CButton_base__main_42 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+
+    .CButton_base__primary_7f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+
+    .CButton_base__primaryGreen_6f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+
+    .CButton_base__primaryRed_ec {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+
+    .CButton_base__secondary_50 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+
+    .CButton_base__ghost_ed {
+        border-radius: 3rem;
+        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
+            0 0 0 1rem rgba(255,255,255, .15) inset;
+        background-color: rgba(0,0,0, .15);
+    }
+
+    .CButton_base__extraSmall_27 {
+        min-height: 17rem;
+        padding: 0 16rem;
+    }
+
+    .CButton_base__small_df,
+    .CButton_base__medium_74 {
+        padding: 0 20rem;
+    }
+
+    .CButton_base__small_df {
+        min-height: 18rem;
+    }
+
+    .CButton_base__medium_74 {
+        min-height: 32rem;
+    }
+
+    .CButton_base__disabled_d9 {
+        cursor: default;
+    }
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+.CButton_base__primary_7f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+.CButton_base__secondary_50 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow .16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+        border-radius: 2rem;
+        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
+    }
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+        transition: opacity .16s ease-in-out;
+    }
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+        opacity: 1;
+    }
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
+        background-color: rgba(8,6,0, .18);
+        background-image: none;
+    }
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+        opacity: 1;
+    }
+.CButton_stateDisabled_54 {
+    background-color: rgba(0,0,0, .25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+        opacity: 1;
+    }
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: .03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang=ja],
+    .CButton_content_cc[lang=ko],
+    .CButton_content_cc[lang=zh_tw],
+    .CButton_content_cc[lang=zh_sg],
+    .CButton_content_cc[lang=zh_cn],
+    .CButton_content_cc[lang=th] {
+        font-weight: 400;
+    }
+.CButton_base__main_42 .CButton_content_cc,
+    .CButton_base__primaryRed_ec .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #600;
+    }
+.CButton_base__secondary_50 .CButton_content_cc {
+        color: rgba(254,254,236, .75);
+    }
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #1c2502;
+    }
+.CButton_base__extraSmall_27 .CButton_content_cc {
+        font-size: 12rem;
+    }
+.CButton_base__small_df .CButton_content_cc {
+        font-size: 14rem;
+    }
+.CButton_base__medium_74 .CButton_content_cc {
+        font-size: 15rem;
+    }
+.CButton_base__disabled_d9 .CButton_content_cc {
+        opacity: .6;
+    }
+
+.TextOverflow_base_3b {
+    flex: 0 1 auto;
+    width: auto;
+    line-height: 1.3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.DialogTemplateButton_base_0b {
+    min-width: 160rem;
+}
+
+    .DialogTemplateButton_base_0b + .DialogTemplateButton_base_0b {
+        margin-left: 14rem;
+    }
+
+.DialogTemplateButton_label_83 {
+    line-height: 1.2;
+    text-align: center;
+}
+
+.DialogTemplateButton_label__noTooltip_14 {
+        pointer-events: none;
+    }
+
+.DialogTemplateButtonList_base_8e {
+    display: flex;
+}
+
+.DialogTemplateWrapper_base_f7 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / cover;
+    position: relative;
+}
+
+    .DialogTemplateWrapper_base__hidden_5f {
+        visibility: hidden;
+    }
+
+.DialogTemplateWrapper_subView_30 {
+    height: auto;
+}
+
+.Box_mt__XS_0c {
+            margin-top: 4rem;
+        }
+        .Box_mt__SM_eb {
+            margin-top: 8rem;
+        }
+        .Box_mt__SMp_cf {
+            margin-top: 10rem;
+        }
+        .Box_mt__MD_25 {
+            margin-top: 16rem;
+        }
+        .Box_mt__MDp_49 {
+            margin-top: 20rem;
+        }
+        .Box_mt__LG_e8 {
+            margin-top: 32rem;
+        }
+        .Box_mt__XL_83 {
+            margin-top: 64rem;
+        }
+
+.Box_mr__XS_7c {
+            margin-right: 4rem;
+        }
+
+.Box_mr__SM_08 {
+            margin-right: 8rem;
+        }
+
+.Box_mr__SMp_06 {
+            margin-right: 10rem;
+        }
+
+.Box_mr__MD_4a {
+            margin-right: 16rem;
+        }
+
+.Box_mr__MDp_b6 {
+            margin-right: 20rem;
+        }
+
+.Box_mr__LG_d0 {
+            margin-right: 32rem;
+        }
+
+.Box_mr__XL_db {
+            margin-right: 64rem;
+        }
+
+.Box_mb__XS_bb {
+            margin-bottom: 4rem;
+        }
+
+.Box_mb__SM_83 {
+            margin-bottom: 8rem;
+        }
+
+.Box_mb__SMp_04 {
+            margin-bottom: 10rem;
+        }
+
+.Box_mb__MD_ed {
+            margin-bottom: 16rem;
+        }
+
+.Box_mb__MDp_65 {
+            margin-bottom: 20rem;
+        }
+
+.Box_mb__LG_c8 {
+            margin-bottom: 32rem;
+        }
+
+.Box_mb__XL_f8 {
+            margin-bottom: 64rem;
+        }
+
+.Box_ml__XS_8a {
+            margin-left: 4rem;
+        }
+
+.Box_ml__SM_e6 {
+            margin-left: 8rem;
+        }
+
+.Box_ml__SMp_fb {
+            margin-left: 10rem;
+        }
+
+.Box_ml__MD_2b {
+            margin-left: 16rem;
+        }
+
+.Box_ml__MDp_c7 {
+            margin-left: 20rem;
+        }
+
+.Box_ml__LG_39 {
+            margin-left: 32rem;
+        }
+
+.Box_ml__XL_4a {
+            margin-left: 64rem;
+        }
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* eslint-disable-next-line expectedscss*/
+.Text_paragraph-P10_2c {
+        font-size: 10rem;
+        font-weight: 400;
+        line-height: 1.2;
+}
+.Text_paragraph-P12_22 {
+        font-size: 12rem;
+        font-weight: 400;
+        line-height: 1.3;
+}
+.Text_paragraph-P14_a7 {
+        font-size: 14rem;
+        font-weight: 400;
+        line-height: 1.3;
+}
+.Text_paragraph-P16_90 {
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
+}
+.Text_paragraph-P18_50 {
+        font-size: 18rem;
+        font-weight: 400;
+        line-height: 1.25;
+}
+.Text_paragraph-P24_33 {
+        font-size: 24rem;
+        font-weight: 400;
+        line-height: 32rem;
+}
+.Text_heading-H14_8b {
+        font-size: 14rem;
+        font-weight: 700;
+        line-height: 1.15;
+}
+.Text_heading-H15_9e {
+        font-size: 15rem;
+        font-weight: 700;
+        line-height: 1.15;
+}
+.Text_heading-H18_b7 {
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+.Text_heading-H20R_f6 {
+        font-size: 20rem;
+        font-weight: 400;
+        line-height: 1.2;
+}
+.Text_heading-H22_27 {
+        font-size: 22rem;
+        font-weight: 700;
+        line-height: 1.2;
+}
+.Text_heading-H24R_be {
+        font-size: 24rem;
+        font-weight: 400;
+        line-height: 1.2;
+}
+.Text_heading-H24_0c {
+        font-size: 24rem;
+        font-weight: 700;
+        line-height: 1.2;
+}
+.Text_heading-H28_78 {
+        font-size: 28rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+.Text_heading-H36_32 {
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+.Text_heading-H56_c3 {
+        font-size: 56rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+.Text_heading-H73_8f {
+        font-size: 73rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+.Text_heading-H144_a9 {
+        font-size: 144rem;
+        font-weight: 700;
+        line-height: 1;
+}
+.Text_BLACK_REAL_30 {
+        color: #000000;
+    }
+.Text_WHITE_REAL_bc {
+        color: #FFFFFF;
+    }
+.Text_WHITE_62 {
+        color: #F2F2F7;
+    }
+.Text_WHITE_ORANGE_54 {
+        color: #FEFEEC;
+    }
+.Text_WHITE_SPANISH_df {
+        color: #E9E2BF;
+    }
+.Text_PAR_15 {
+        color: #8C8C7E;
+    }
+.Text_PAR_SECONDARY_5d {
+        color: #595950;
+    }
+.Text_PAR_TERTIARY_c9 {
+        color: #37362E;
+    }
+.Text_INFO_RED_30 {
+        color: #FF0000;
+    }
+.Text_RED_66 {
+        color: #FF2717;
+    }
+.Text_RED_DARK_d8 {
+        color: #B70000;
+    }
+.Text_YELLOW_ed {
+        color: #FEAB34;
+    }
+.Text_ORANGE_be {
+        color: #EE7000;
+    }
+.Text_CREAM_57 {
+        color: #FFDD99;
+    }
+.Text_BROWN_18 {
+        color: #CBAC77;
+    }
+.Text_GREEN_BRIGHT_3f {
+        color: #80D43A;
+    }
+.Text_GREEN_e3 {
+        color: #7AB300;
+    }
+.Text_GREEN_DARK_f1 {
+        color: #497212;
+    }
+.Text_BLUE_BOOSTER_21 {
+        color: #CCFFFF;
+    }
+.Text_BLUE_TEAMKILLER_ab {
+        color: #09E2FF;
+    }
+.Text_CRED_f7 {
+        color: #CED9D9;
+    }
+.Text_GOLD_28 {
+        color: #FFC363;
+    }
+.Text_BOND_be {
+        color: #C9C9B6;
+    }
+.Text_PROM_65 {
+        color: #A29B70;
+    }
+
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .TextButton_base__right_39 {
+        flex-direction: row-reverse;
+    }
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+    .TextButton_icon__forward_59 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.back');
+        transform: translateY(1rem);
+    }
+.TextButton_icon__forward_59 {
+        transform: rotate(180deg) translateY(1rem);
+    }
+.TextButton_icon__close_53 {
+        margin: -1rem 0;
+        background-image: url('R.images.gui.maps.icons.components.text_button.close');
+    }
+.TextButton_icon__info_33 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.info');
+    }
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+    .TextButton_icon__forward_59 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+    }
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+    }
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+    }
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_glow_a4 {
+        opacity: 0;
+    }
+.TextButton_caption_82 {
+    position: relative;
+    transition: color .16s, text-shadow .16s;
+}
+.TextButton_caption__back_b9,
+    .TextButton_caption__forward_4e,
+    .TextButton_caption__close_36 {
+        color: #FFDD99;
+        text-shadow: 0 0 10rem rgba(255,42,0, 1),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4);
+    }
+.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
+            color: #fffa9f;
+        }
+.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
+            color: #FFDD99;
+        }
+.TextButton_caption__info_23 {
+        padding: 0 5rem;
+        color: #CCFFFF;
+        text-shadow: 0 0 12rem rgba(31,68,255, .8),
+            0 0 8rem #00eaff;
+    }
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+            color: #e3ffff;
+            text-shadow: 0 0 12rem rgba(31,68,255, .8),
+                0 0 12rem rgba(0,234,255, 1),
+                0 0 8rem #00eaff;
+        }
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+            color: #CCFFFF;
+            text-shadow: 0 0 12rem rgba(31,68,255, .6),
+                0 0 8rem #00eaff;
+        }
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+        margin-left: 8rem;
+    }
+.TextButton_base__right_39 .TextButton_goto_e7 {
+        margin-right: 8rem;
+    }
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity .16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+        left: -4rem;
+    }
+.TextButton_base__right_39 .TextButton_shine_e2 {
+        right: -4rem;
+        transform: rotate(180deg);
+    }
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_shine_e2 {
+        opacity: 0;
+    }
+
+.DefaultDialogTemplate_base_d2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.DefaultDialogTemplate_topRight_eb {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.DefaultDialogTemplate_center_b4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 720rem;
+    opacity: 0;
+    position: relative;
+}
+
+.DefaultDialogTemplate_center__shown_e1 {
+        animation-name: DefaultDialogTemplate_windowIn_3b;
+        animation-duration: .5s;
+        animation-fill-mode: both;
+    }
+
+.DefaultDialogTemplate_center__withIcon_f9 {
+        margin-top: -164rem;
+    }
+
+.DefaultDialogTemplate_base__extraSmallHeight_f5 .DefaultDialogTemplate_center__withIcon_f9.DefaultDialogTemplate_center__responsive_21,
+            .DefaultDialogTemplate_base__smallHeight_52 .DefaultDialogTemplate_center__withIcon_f9.DefaultDialogTemplate_center__responsive_21 {
+                margin-top: -82rem;
+            }
+
+.DefaultDialogTemplate_icon_36 {
+    margin-bottom: 32rem;
+    z-index: 1;
+}
+
+.DefaultDialogTemplate_base__extraSmallHeight_f5 .DefaultDialogTemplate_icon__responsive_e0,
+        .DefaultDialogTemplate_base__smallHeight_52 .DefaultDialogTemplate_icon__responsive_e0 {
+            margin-bottom: 43rem;
+        }
+
+.DefaultDialogTemplate_title_c6 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #F2F2F7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 17rem;
+    text-align: center;
+    z-index: 2;
+}
+
+.DefaultDialogTemplate_base__extraSmallHeight_f5 .DefaultDialogTemplate_title__responsive_6e,
+        .DefaultDialogTemplate_base__smallHeight_52 .DefaultDialogTemplate_title__responsive_6e {
+            color: #F2F2F7;
+            font-size: 24rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+.DefaultDialogTemplate_content_22 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    z-index: 3;
+}
+
+.DefaultDialogTemplate_footer_4e {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #C9C9B6;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 14rem;
+}
+
+.DefaultDialogTemplate_buttons_f7 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.DefaultDialogTemplate_divider_d5 {
+    width: 100%;
+    height: 1rem;
+    margin: 25rem 0 27rem;
+    background-color: #FFFFFF;
+    opacity: .1;
+}
+
+.DefaultDialogTemplate_divider__noContent_3f {
+        margin-top: 23rem;
+    }
+
+.DefaultDialogTemplate_divider__noFooter_10 {
+        margin-bottom: 29rem;
+    }
+
+.DefaultDialogTemplate_closeBtn_5e {
+    align-self: flex-end;
+    margin: 31rem 28rem 0 0;
+}
+
+.DefaultDialogTemplate_base__extraSmallHeight_f5 .DefaultDialogTemplate_closeBtn__responsive_49,
+        .DefaultDialogTemplate_base__smallHeight_52 .DefaultDialogTemplate_closeBtn__responsive_49 {
+            margin: 11rem 8rem 0 0;
+        }
+
+@keyframes DefaultDialogTemplate_windowIn_3b {
+    from {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.Icon_base_e1 {
+    width: 444rem;
+    height: 300rem;
+    position: relative;
+}
+
+.Icon_block_1d {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+}
+
+.Icon_block__backgroundIcon_79 {
+        width: 420rem;
+        height: 240rem;
+        background: no-repeat 50% 100% / contain;
+    }
+
+.Icon_icon_70 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+}
+
+.Icon_icon__standartIcon_54 {
+        width: 158rem;
+        height: 120rem;
+        position: absolute;
+        bottom: 0rem;
+        left: 140rem;
+    }
+
+.Icon_separator_27 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.tankmen.windows.lipBig_recruitment') no-repeat 50% / contain;
+    position: absolute;
+    bottom: -151rem;
+    left: 0;
+}
+
+.Icon_separator__small_51 {
+        width: 300rem;
+        height: 182rem;
+        background-image: url('R.images.gui.maps.icons.tankmen.windows.lipSmall_recruitment');
+        bottom: -93rem;
+        left: 56rem;
+    }
+
+.DropDownControl_base_46 {
+    display: flex;
+    height: 100%;
+    border: 1rem solid #464538;
+    border-radius: 2rem;
+    box-shadow: inset 0 0 1rem #000,
+        inset 0 0 8rem #000;
+    transition: background .3s ease-in-out;
+    cursor: pointer;
+}
+
+    .DropDownControl_base__small_22 {
+        height: 24rem;
+    }
+
+    .DropDownControl_base__medium_09 {
+        height: 32rem;
+    }
+
+    .DropDownControl_base__over_e7 {
+        background: linear-gradient(180deg, rgba(255,255,255, .1) 0%, rgba(255,255,255, 0) 100%);
+    }
+
+    .DropDownControl_base__down_1c,
+    .DropDownControl_base__open_e3 {
+        background: linear-gradient(180deg, rgba(0,0,0, .5) 0%, rgba(0,0,0, .4) 100%);
+    }
+
+    .DropDownControl_base__focused_63 {
+        border-color: #75552c;
+    }
+
+    .DropDownControl_base__selected_46 {
+        border-color: #7AB300;
+    }
+
+    .DropDownControl_base__disabled_37 {
+        cursor: default;
+    }
+.DropDownControl_label_12 {
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    padding: 0 8rem;
+    color: #8C8C7E;
+}
+.DropDownControl_label__small_e7 {
+        padding-bottom: 2rem;
+        font-size: 14rem;
+    }
+.DropDownControl_label__medium_0b {
+        padding-bottom: 5rem;
+        font-size: 16rem;
+    }
+.DropDownControl_label__placeholder_98 {
+        color: #595950;
+    }
+.DropDownControl_base__down_1c .DropDownControl_label_12,
+    .DropDownControl_base__open_e3 .DropDownControl_label_12 {
+        opacity: .8;
+    }
+.DropDownControl_base__disabled_37 .DropDownControl_label_12 {
+        color: #37362E;
+    }
+.DropDownControl_button_cb {
+    display: flex;
+    background: url('R.images.gui.maps.icons.components.dropdown.button') no-repeat center / 100%;
+    position: relative;
+    top: 1rem;
+    right: 1rem;
+    pointer-events: none;
+}
+.DropDownControl_button__small_b5 {
+        width: 22rem;
+        height: 20rem;
+    }
+.DropDownControl_button__medium_14 {
+        width: 28rem;
+        height: 28rem;
+    }
+.DropDownControl_base__down_1c .DropDownControl_button_cb {
+        opacity: .6;
+    }
+.DropDownControl_base__open_e3 .DropDownControl_button_cb {
+        opacity: .8;
+    }
+.DropDownControl_base__disabled_37 .DropDownControl_button_cb {
+        opacity: .8;
+    }
+.DropDownControl_gradient_b5 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255, .1) 0%, rgba(255,255,255, 0) 100%);
+    position: absolute;
+}
+.DropDownControl_disabled_4e {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.library.disabled_pattern') center / 9rem;
+    opacity: .8;
+    position: absolute;
+}
+.DropDownControl_arrow_de {
+    background: no-repeat center / contain;
+    position: absolute;
+}
+.DropDownControl_arrow__small_77 {
+        width: 9rem;
+        height: 6rem;
+        background-image: url('R.images.gui.maps.icons.components.dropdown.arrow_small');
+        top: 7rem;
+        left: 7rem;
+    }
+.DropDownControl_arrow__medium_3d {
+        width: 13rem;
+        height: 7rem;
+        background-image: url('R.images.gui.maps.icons.components.dropdown.arrow_medium');
+        top: 11rem;
+        left: 8rem;
+    }
+.DropDownControl_base__open_e3 .DropDownControl_arrow_de {
+        transform: rotate(180deg);
+    }
+.DropDownControl_alert_75 {
+    border: 1rem solid #EE7000;
+    border-radius: 2rem;
+    box-shadow: inset 0 0 6rem rgba(141,13,3, .1);
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    left: -1rem;
+    z-index: 1;
+    animation: DropDownControl_blink_68 2s ease-in-out infinite;
+    pointer-events: none;
+}
+@keyframes DropDownControl_blink_68 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.ScrollArea_base_47 {
+    width: 100%;
+    min-width: 1rem;
+    min-height: 1rem;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+
+    .ScrollArea_base__scrollIndent_1d.ps--active-y {
+        padding-right: 13rem;
+    }
+
+    .ScrollArea_base__scrollIndent_1d.ps--active-х {
+        padding-bottom: 13rem;
+    }
+
+    .ScrollArea_base__verticalScrollbarMargin_50 .ps__rail-y {
+                margin: 20rem 0;
+                right: 5rem;
+            }
+
+    .ScrollArea_base__multiple_44 .ps__rail-y {
+                margin-bottom: 30rem;
+            }
+
+    .ScrollArea_base__hidden_ec {
+        visibility: hidden;
+    }
+.ps--scrolling-dragging {
+        cursor: move;
+    }
+.ps__rail-x, .ps__thumb-x {
+        height: 13rem;
+        position: absolute;
+    }
+.ps__rail-y, .ps__thumb-y {
+        width: 13rem;
+        position: absolute;
+    }
+.ps__thumb-x, .ps__button-start-x, .ps__button-end-x, .ps__thumb-y, .ps__button-start-y, .ps__button-end-y {
+        border: 1rem solid #7e7b68;
+        box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+        opacity: .7;
+    }
+.ps__thumb-x:hover, .ps__button-start-x:hover, .ps__button-end-x:hover, .ps__thumb-y:hover, .ps__button-start-y:hover, .ps__button-end-y:hover {
+            opacity: 1;
+        }
+.ps__thumb-x, .ps__button-start-x, .ps__button-end-x {
+        bottom: -6rem;
+    }
+.ps__thumb-y, .ps__button-start-y, .ps__button-end-y {
+        right: -6rem;
+    }
+.ps__rail-x {
+        display: none;
+        margin-left: 15rem;
+        border-top: 6rem solid transparent;
+        border-bottom: 6rem solid transparent;
+        bottom: 0;
+        cursor: pointer;
+    }
+.ps__rail-y {
+        display: none;
+        margin-top: 15rem;
+        border-left: 6rem solid transparent;
+        border-right: 6rem solid transparent;
+        right: 0;
+        cursor: pointer;
+    }
+.ps__track_x, .ps__track_y {
+        background-image: url('R.images.gui.maps.icons.components.scroll_area.background');
+        background-size: 1rem;
+        position: relative;
+    }
+.ps__track_x:hover, .ps__track_y:hover {
+            opacity: .7;
+        }
+.ps__track_x {
+        width: 100%;
+        height: 1rem;
+        background-repeat: repeat-x;
+        background-position: 50% 0;
+    }
+.ps__track_y {
+        width: 1rem;
+        height: 100%;
+        background-repeat: repeat-y;
+        background-position: 0 50%;
+    }
+.ps--active-x > .ps__rail-x, .ps--active-y > .ps__rail-y {
+        display: block;
+    }
+.ps__thumb-x, .ps__thumb-y {
+        background: #26241b 50% 50% no-repeat;
+        transition: opacity linear .13s;
+    }
+.ps__thumb-x:active, .ps__thumb-y:active {
+            opacity: .7;
+        }
+.ps__thumb-x {
+        min-width: 10rem;
+        background-image: url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal');
+        background-size: 8rem 7rem;
+    }
+.ps__thumb-y {
+        min-height: 10rem;
+        background-image: url('R.images.gui.maps.icons.components.scroll_area.thumb');
+        background-size: 7rem 8rem;
+    }
+.ps__button-start-x, .ps__button-end-x, .ps__button-start-y, .ps__button-end-y {
+        width: 13rem;
+        height: 13rem;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 7rem 5rem;
+        position: absolute;
+    }
+.ps__button-start-x.disabled, .ps__button-end-x.disabled, .ps__button-start-y.disabled, .ps__button-end-y.disabled {
+            opacity: .3;
+            cursor: default;
+            pointer-events: none;
+        }
+.ps__button-start-x, .ps__button-start-y {
+        background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+    }
+.ps__button-end-x, .ps__button-end-y {
+        background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+    }
+.ps__button-start-x, .ps__button-end-x {
+        transform: rotate(-90deg);
+    }
+.ps__button-start-x {
+        left: -14rem;
+    }
+.ps__button-end-x {
+        right: -14rem;
+    }
+.ps__button-start-y {
+        top: -14rem;
+    }
+.ps__button-end-y {
+        bottom: -14rem;
+    }
+
+.DropDownItem_base_5e {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    color: #8C8C7E;
+    cursor: pointer;
+}
+
+    .DropDownItem_base_5e:hover {
+        background-color: #1c1b12;
+    }
+
+    .DropDownItem_base__small_d6 {
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+
+    .DropDownItem_base__medium_e4 {
+        padding-top: 6rem;
+        padding-bottom: 8rem;
+    }
+
+    .DropDownItem_base__selected_8e {
+        color: #CBAC77;
+    }
+
+    .DropDownItem_base__disabled_21 {
+        color: #37362E;
+        pointer-events: none;
+    }
+
+.DropDownItems_base__withScroll_19 {
+        padding-right: 15rem;
+    }
+
+.DropDownList_base_62 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 198rem;
+    position: relative;
+}
+
+    .DropDownList_base__small_0c {
+        font-size: 14rem;
+        line-height: 16rem;
+    }
+
+    .DropDownList_base__medium_99 {
+        font-size: 16rem;
+        line-height: 18rem;
+    }
+.DropDownList_scrollMix_45 .ps__rail-y {
+            right: 1rem;
+        }
+
+.PureDropDown_base_fc {
+    display: flex;
+    flex-direction: column;
+    width: 200rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0,0,0, .6);
+    background-color: rgba(23,23,15, .8);
+    position: relative;
+}
+
+    .PureDropDown_base__small_a6 {
+        height: 24rem;
+    }
+
+    .PureDropDown_base__medium_05 {
+        height: 32rem;
+    }
+.PureDropDown_control__down_18 {
+        z-index: 3;
+    }
+.PureDropDown_list_28 {
+    display: flex;
+    width: 100%;
+    border: 1rem solid #464538;
+    border-radius: 2rem;
+    background-color: #090906;
+    position: absolute;
+    left: 0;
+    transition: opacity .25s;
+}
+.PureDropDown_list__up_a1 {
+        opacity: 0;
+        z-index: -1;
+        pointer-events: none;
+    }
+.PureDropDown_list__down_c4 {
+        opacity: 1;
+        z-index: 2;
+    }
+.PureDropDown_list__under_64 {
+        margin-top: -1rem;
+        top: 100%;
+    }
+.PureDropDown_list__above_c8 {
+        top: 1rem;
+        transform: translateY(-100%);
+    }
+
+.WarningText_base_10 {
+    display: flex;
+    color: #EE7000;
+    text-align: center;
+}
+
+.WarningText_alertIcon_8f {
+    width: 16rem;
+    height: 16rem;
+    margin: 4rem 6rem 0 0;
+    background: url('R.images.gui.maps.icons.library.alertIcon') no-repeat 50% / contain;
+}
+
+.DropDownHeader_base_2c {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.DropDownHeader_lock_59 {
+    width: 9rem;
+    height: 12rem;
+    margin: 0 0 1rem 5rem;
+    background: url('R.images.gui.maps.icons.library.gray_lock') no-repeat 50% / contain;
+}
+
+
+    .NationRender_text_e6 {
+        width: 140rem;
+        margin-left: 12rem;
+    }
+
+.NationRender_base_14 {
+    display: flex;
+    align-items: center;
+    margin: -6rem -8rem -8rem;
+    padding: 3rem 0 6rem;
+    position: relative;
+}
+
+.NationRender_base__header_e7 {
+        top: -2rem;
+    }
+
+.NationRender_base__disabled_07 {
+        pointer-events: none;
+    }
+
+.NationRender_icon_90 {
+    background: no-repeat 50% / contain;
+    opacity: .7;
+    position: relative;
+    top: 2rem;
+    left: 7rem;
+}
+
+.NationRender_base__header_e7 .NationRender_icon_90 {
+        opacity: 1;
+        top: 1rem;
+    }
+
+.NationRender_base__disabled_07 .NationRender_icon_90 {
+        opacity: .5;
+    }
+
+.NationRender_base_14:hover .NationRender_icon_90 {
+        opacity: 1;
+    }
+
+.NationRender_icon_90 {
+    width: 26rem;
+    height: 16rem;
+}
+
+
+    .SpecializationRender_text_c3 {
+        width: 140rem;
+        margin-left: 11rem;
+    }
+
+.SpecializationRender_base_16 {
+    display: flex;
+    align-items: center;
+    margin: -6rem -8rem -8rem;
+    padding: 3rem 0 6rem;
+    position: relative;
+}
+
+.SpecializationRender_base__header_6f {
+        top: -2rem;
+    }
+
+.SpecializationRender_base__disabled_c7 {
+        pointer-events: none;
+    }
+
+.SpecializationRender_icon_49 {
+    width: 24rem;
+    height: 24rem;
+    background: no-repeat 50% / contain;
+    opacity: .7;
+    position: relative;
+    top: 2rem;
+    left: 7rem;
+}
+
+.SpecializationRender_base__header_6f .SpecializationRender_icon_49 {
+        opacity: 1;
+        top: 1rem;
+    }
+
+.SpecializationRender_base__disabled_c7 .SpecializationRender_icon_49 {
+        opacity: .5;
+    }
+
+.SpecializationRender_base_16:hover .SpecializationRender_icon_49 {
+        opacity: 1;
+    }
+
+.SpecializationRender_icon_49 {
+    left: 5rem;
+}
+
+.VehicleRender_base_49 {
+    display: flex;
+    align-items: center;
+    margin: -6rem -8rem -8rem;
+    padding: 3rem 0 6rem;
+    position: relative;
+}
+
+    .VehicleRender_base__header_cb {
+        top: -2rem;
+    }
+
+    .VehicleRender_base__disabled_25 {
+        pointer-events: none;
+    }
+
+.VehicleRender_icon_5e {
+    width: 24rem;
+    height: 24rem;
+    background: no-repeat 50% / contain;
+    opacity: .7;
+    position: relative;
+    top: 2rem;
+    left: 7rem;
+}
+
+.VehicleRender_base__header_cb .VehicleRender_icon_5e {
+        opacity: 1;
+        top: 1rem;
+    }
+
+.VehicleRender_base__disabled_25 .VehicleRender_icon_5e {
+        opacity: .5;
+    }
+
+.VehicleRender_base_49:hover .VehicleRender_icon_5e {
+        opacity: 1;
+    }
+
+.VehicleRender_icon_5e {
+    left: 4rem;
+}
+
+.VehicleRender_base__header_cb .VehicleRender_icon_5e {
+        top: 1rem;
+    }
+
+.VehicleRender_text_52 {
+    width: 140rem;
+    margin: 3rem 0 0 5rem;
+}
+
+.VehicleRender_text__default_50 {
+        margin-left: 0;
+    }
+
+.VehicleRender_igr_ba {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 6rem;
+    background: url('R.images.gui.maps.icons.library.premium_igr_ico') no-repeat 50% / contain;
+}
+
+
+    .VehTypeRender_text_a1 {
+        width: 140rem;
+        margin-left: 5rem;
+    }
+
+.VehTypeRender_base_ec {
+    display: flex;
+    align-items: center;
+    margin: -6rem -8rem -8rem;
+    padding: 3rem 0 6rem;
+    position: relative;
+}
+
+.VehTypeRender_base__header_a0 {
+        top: -2rem;
+    }
+
+.VehTypeRender_base__disabled_b8 {
+        pointer-events: none;
+    }
+
+.VehTypeRender_icon_93 {
+    width: 24rem;
+    height: 24rem;
+    background: no-repeat 50% / contain;
+    opacity: .7;
+    position: relative;
+    top: 2rem;
+    left: 7rem;
+}
+
+.VehTypeRender_base__header_a0 .VehTypeRender_icon_93 {
+        opacity: 1;
+        top: 1rem;
+    }
+
+.VehTypeRender_base__disabled_b8 .VehTypeRender_icon_93 {
+        opacity: .5;
+    }
+
+.VehTypeRender_base_ec:hover .VehTypeRender_icon_93 {
+        opacity: 1;
+    }
+
+.VehTypeRender_icon_93 {
+    left: 0;
+}
+
+.RecruitContent_base_f3 {
+    display: flex;
+    flex-direction: column;
+    margin: 8rem 0 5rem;
+}
+
+.RecruitContent_content_ab {
+    display: flex;
+    justify-content: center;
+}
+
+.RecruitContent_column_28 {
+    display: flex;
+    flex-direction: column;
+    width: 200rem;
+    margin: 0 40rem 4rem 0;
+}
+
+.RecruitContent_column__last_c7 {
+        margin-right: 0;
+    }
+
+.RecruitContent_dropDown_dc {
+    margin: 6rem 0 13rem;
+}
+
+.RecruitContent_warning_ac {
+    margin-bottom: 18rem;
+}
+

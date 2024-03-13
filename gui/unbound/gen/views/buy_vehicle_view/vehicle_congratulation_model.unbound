@@ -1,0 +1,20 @@
+# This file was generated using wgpygen
+#   template: configs/templates/view_model.unbound.jinja2
+#   source: configs/definitions/views/buy_vehicle_view/vehicle_congratulation_model.yaml
+# Please, don't edit this file manually.
+(def macro VehicleCongratulationModel()
+    (scope
+        (var isElite:bool = false)
+        (var isCollectible:bool = false)
+        (var vehicleType:str = '')
+        (var lvl:str = '')
+        (var vName:str = '')
+        (var image:str = '')
+        (var imageAlt:str = '')
+        (var btnLbl:str = '')
+        (var backBtnLbl:str = '')
+        (var title:str = '')
+        (var resetAnimTrigger:bool = false)
+        (var needBackBtn:bool = false)
+    )
+)

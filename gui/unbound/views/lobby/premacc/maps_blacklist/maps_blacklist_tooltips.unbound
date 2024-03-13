@@ -1,0 +1,32 @@
+(def layout MapsBlacklistInfoTooltipContent() entrance=true
+    (macro MapsBlacklistInfoTooltipModel)
+    (macro TooltipDefaultConstraints)
+    (style
+        (paddingLeft = 5px)
+        (paddingRight = 5px)
+        (paddingBottom = 5px)
+    )
+
+    (macro TooltipTextBlock "R.strings.premacc.mapsBlacklist.infoTooltip.header()" HighTitleTextStyle 5px 340px)
+    (macro TooltipTextBlock "R.strings.premacc.mapsBlacklist.infoTooltip.desc()" MainTextStyle 5px 340px 15px)
+
+    (block
+        (name = 'highlightDescBlock')
+        (macro TooltipTextBlock "R.strings.premacc.mapsBlacklist.infoTooltip.highlightDesc()" NeutralTextStyle 5px 340px 15px)
+    )
+
+    (macro TooltipTextBlock "R.strings.premacc.mapsBlacklist.infoTooltip.rule2()" MainTextStyle 5px 340px 0px)
+    (macro TooltipTextBlock "TextFormat(
+        R.strings.premacc.mapsBlacklist.infoTooltip.rule1(), 
+        {maxCooldownTimeStr: hardSpace(timeLeft(
+            maxCooldownTime,
+            R.strings.menu.timeLeft.short.day(),
+            R.strings.menu.timeLeft.short.hour(),
+            R.strings.menu.timeLeft.short.min(),
+            R.strings.menu.timeLeft.short.lessMin(),
+            true
+            ))
+        })" 
+        MainTextStyle 5px 340px 0px)
+    (macro TooltipTextBlock "R.strings.premacc.mapsBlacklist.infoTooltip.rule3()" MainTextStyle 5px 340px 0px)
+)

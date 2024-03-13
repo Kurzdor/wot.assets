@@ -1,0 +1,24 @@
+# This file was generated using wgpygen
+#   template: configs/templates/view_model.unbound.jinja2
+#   source: configs/definitions/views/battle_royale/hangar_bottom_panel_view_model.yaml
+# Please, don't edit this file manually.
+(def macro HangarBottomPanelViewModel()
+    (scope
+        (event onRentBtnClicked)
+        (event onRepairBtnClicked)
+
+        (var vehName:str = '')
+        (var vehType:str = '')
+        (var rentState:str = '')
+        (var rentDays:number = 0)
+        (var rentTime:str = '')
+        (var isRepairBtnVisible:bool = false)
+        (var isVehicleInBattle:bool = false)
+        (var isEnoughMoney:bool = true)
+
+        # The following submodels are used in this model:
+        # ammunition:ui_kit.list_model
+        # abilities:ui_kit.list_model
+        # rentPrice:ui_kit.list_model
+    )
+)

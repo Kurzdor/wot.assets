@@ -1,0 +1,173 @@
+(def element CommanderSlot() layout=true
+    (macro CommanderSlotModel)
+
+    (scope
+        (event onDiscountChangeTrigger)
+        (event onCommanderLvlChange)
+        (event onEnabledForTutorialChange)
+        (var isDiscountEnabled:bool=false)
+        (bind isDiscountEnabled "defPrice!='' && !isBootcamp")
+        (var discountChangeTrigger:bool=false
+            (dispatch onDiscountChangeTrigger on='evChanged')
+        )
+        (bind discountChangeTrigger "discount>=0")
+        (var isSlotEnabledForTutorial:bool=true)
+        (bind isSlotEnabledForTutorial "$event.value" init=false (event "onEnabledForTutorialChange"))
+    )
+    (bind tabChildren "slotIsEnabled")
+    
+    (button
+        (macro ButVehicleToggleSlotStlyes)
+        
+        (style              
+            (width = 306px)
+            (height = 360px)
+            (backgroundColor = 0x70000000)
+            (bind alpha "slotIsEnabled ? 1.0 : 0.6")
+        )
+
+        (scope
+            (var isEnabledForTutorial:bool=true
+                (dispatch onEnabledForTutorialChange args="{value: isEnabledForTutorial}"on='evChanged')
+            )
+        )
+
+        (bind selected "isSelected")
+        (bind enabled "slotIsEnabled && isSlotEnabledForTutorial")
+
+        (dispatch onCommanderLvlChange args="{value: idx}" dir=1 init=false on='selectedChanged')
+
+        (block
+            (name = 'hit')
+            (style
+                (width = 306px)
+                (height = 360px)
+                (position = "absolute")
+                (backgroundColor = 0x000000ff)
+            )
+            (controller $Tutorial viewTutorialId='BuyVehicleView' enabled=false
+                (bind controlID "idx==2 ? 'academyBtn' : idx==0 ? 'freeCommanderBtn' : 'schoolCommanderBtn'" watch=false init=false (event "onDiscountChangeTrigger"))
+                (bind enabled "slotIsEnabled" watch=false init=false (event "onDiscountChangeTrigger"))
+            )
+            (hitArea = "$target.parent")
+            (bind buttonMode "slotIsEnabled")
+            (tabEnabled = false)
+        )
+
+        (content
+            (style
+                (width = 100%)
+                (height = 100%)
+                (paddingLeft = 21px)
+                (paddingRight = 18px)
+                (paddingTop = 212px)
+            )
+            (block
+                (name = 'hint')
+                (style
+                    (position = "absolute")
+                    (left=-1px)
+                    (top=-3px)
+                )
+                (visible = false)
+                (bind visible "false" init=false (event "onCommanderLvlChange") (enabled = "discount==100"))
+                (mouseChildren = false)
+                (mouseEnabled = false)
+                (buttonMode=true)
+            )
+            (block
+                (name = 'discounts')
+                (style
+                    (position = "absolute")
+                    (top = -15px)
+                    (right = -15px)
+                )
+                (bind visible "discount>0 && !isBootcamp || discount==100")
+                (image
+                    (source = "R.atlases.store.card_discount()")
+                )
+                (tf
+                    (style
+                        (top=27px)
+                        (right=31px)
+                        (position = "absolute")
+                    )
+                    (selectable = false)
+                    (class MiddleTitleTextStyle)
+                    (bind text "discount==100 ? R.strings.store.buyVehicleWindow.bootcamp.topCommanderFree() : '-'+discount+'%'")
+                )
+            )
+            
+            (block
+                (style
+                    (width = 100%)
+                    (height = 100%)
+                    (align = "top|left")
+                )
+                (tf
+                    (style
+                        (fontFamily = $TitleFont)
+                        (fontSize = 40)
+                        (bind textColor "percents==100 ? 0xFFC363 :0xcac8c1")
+                        (marginBottom = 22px)
+                    )
+                    (bind text "''+percents + '%'")
+                )
+                (tf
+                    (style
+                        (marginBottom = 7px)
+                    )
+                    (class HighTitleTextStyle)
+                    (bind text "title" init=false)
+                )
+
+                (tf
+                    (class MainTextStyle)
+                    (text = "R.strings.store.buyVehicleWindow.freeSlot()")
+                    (bind visible "isFree && discount==0")
+                    (mouseEnabled = false)
+                )
+            )
+        )
+
+        (bottomContent
+            (style
+                (width = 100%)
+                (height = 100%)
+                (position = "absolute")
+            )
+            (image 
+                (style
+                    (center = 0)
+                    (top = 25)
+                    (position = "absolute")
+                )
+                (bind source "R.atlases.store['slot_'+idx]()")
+            )
+        )
+    )
+
+    (hblock
+        (tabChildren = false)
+        (mouseEnabled = false)
+        (mouseChildren = false)
+        (bind visible "!isFree")
+        (style
+            (height = 20px)
+            (width=100%)
+            (gap=6px)
+            (position = "absolute")
+            (bottom = 20)
+            (left = 20)
+            (bind alpha "slotIsEnabled && isSlotEnabledForTutorial ? 1.0 : 0.6")
+        )
+        (element StrikeText '' MainTextStyle
+            (scope
+                (bind strikeText "defPrice" (bind enabled "isDiscountEnabled"))
+            )
+            (bind visible "isDiscountEnabled")
+        )
+        (element Group 'actionPrice' 'group' renderer_name='ActionDefPriceSmall')
+    )
+)
+
