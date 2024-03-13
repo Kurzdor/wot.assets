@@ -326,6 +326,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
     }
 
+.Content_currency__wdrcoin_77 {
+        width: 24rem;
+        height: 24rem;
+        background-image: url('R.images.gui.maps.icons.library.wdrcoinIcon_1');
+    }
+
 .Content_buyButton_2a {
     min-width: 160rem;
     height: 30rem;

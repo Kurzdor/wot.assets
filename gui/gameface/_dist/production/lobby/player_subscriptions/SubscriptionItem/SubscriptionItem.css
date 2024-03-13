@@ -626,6 +626,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: none;
     width: calc(var(--card-width) - 2*var(--footer-margin));
     height: 0rem;
+    text-shadow: 0 0 1px #000;
     position: absolute;
     top: 25rem;
     transition: height .2s;

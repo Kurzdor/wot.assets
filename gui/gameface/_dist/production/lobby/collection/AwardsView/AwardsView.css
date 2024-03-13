@@ -156,6 +156,16 @@
     }
 }
 
+@keyframes App_fadeOut_c6 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @keyframes App_raysAppearance_f4 {
     0% {
         opacity: 0;
@@ -455,6 +465,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
+@keyframes Footer_fadeOut_a7 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @keyframes Footer_raysAppearance_44 {
     0% {
         opacity: 0;
@@ -528,6 +548,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes Header_fadeOut_54 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
@@ -825,6 +855,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
+@keyframes Rewards_fadeOut_49 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @keyframes Rewards_raysAppearance_35 {
     0% {
         opacity: 0;
@@ -971,6 +1011,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes MainRewards_fadeOut_f6 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 

@@ -1,0 +1,13 @@
+# This file was generated using wgpygen
+#   template: configs/templates/view_model.unbound.jinja2
+#   source: configs/definitions/views/battle_royale/hangar_bottom_panel_view_model.yaml
+# Please, don't edit this file manually.
+(def macro EquipmentPanelCmpRentStates()
+    (scope
+        (const STATE_NORMAL:str = 'normal')
+        (const STATE_TEST_DRIVE_AVAILABLE:str = 'testDriveAvailable')
+        (const STATE_TEST_DRIVE_ACTIVE:str = 'testDriveActive')
+        (const STATE_RENT_AVAILABLE:str = 'rentAvailable')
+        (const STATE_RENT_ACTIVE:str = 'rentActive')
+    )
+)

@@ -292,20 +292,28 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 13rem;
+    width: 100%;
+    height: 100%;
+    /* stylelint-disable declaration-block-no-redundant-longhand-properties */
+    padding-left: var(--outer-shadow-width);
+    padding-top: var(--outer-shadow-width);
+    padding-right: var(--outer-shadow-width);
+    padding-bottom: var(--outer-shadow-width);
+    /* stylelint-enable declaration-block-no-redundant-longhand-properties */
     overflow: hidden;
     position: relative;
 }
 
 .WindowDecorator_frame_b5 {
-    width: 100%;
-    height: 100%;
     border: transparent solid;
     border-width: 30rem 27rem 43rem 24rem;
     border-image: url('R.images.gui.maps.icons.windows.window_bg.centered') 30 27 43 24 fill;
     opacity: .85;
     position: absolute;
-    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .WindowDecorator_frame__focused_af {
@@ -313,32 +321,22 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 
 .WindowDecorator_container_1d {
-    --border-top: 9rem;
-    --border-side: 13rem;
-    --border-bottom: 11rem;
-    --outer-shadow: 2rem;
-    margin: -2rem;
-    border: transparent solid;
+    position: relative;
+}
 
-    /* gameface can't into shorthanded props with variables */
-    /* stylelint-disable declaration-block-no-redundant-longhand-properties */
-    border-left-width: var(--border-side);
-    border-top-width: var(--border-top);
-    border-right-width: var(--border-side);
-    border-bottom-width: var(--border-bottom);
-    /* stylelint-enable declaration-block-no-redundant-longhand-properties */
+.WindowDecorator_contentDecorations_be {
+    border: transparent solid;
+    border-width: 9rem 13rem 11rem;
     border-image: url('R.images.gui.maps.icons.windows.window_bg.window_form_bg_new') 9 13 11 fill;
-    z-index: 0;
+    position: absolute;
+    top: -2rem;
+    right: -2rem;
+    bottom: -2rem;
+    left: -2rem;
 }
 
 .WindowDecorator_content_0b {
-    /* outer content shadow compensation */
-
-    /* gameface can't into mixing units inside of calc() */
-    /* stylelint-disable length-zero-no-unit */
-    margin-left: calc(0rem - var(--border-side) + var(--outer-shadow));
-    margin-top: calc(0rem - var(--border-top) + var(--outer-shadow));
-    /* stylelint-enable length-zero-no-unit */
+    position: absolute;
 }
 
 .SubView_base_df {
@@ -471,11 +469,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .ToggleButton_indicator_85 {
-    /* This Needs to be an even number otherwise translate(-50%) makes it at half a pixel position and causes sub pixel blurring */
     width: 40rem;
     height: 29rem;
-    background: url('R.images.gui.maps.icons.buttons.toggle_indicator') left top no-repeat;
-    background-size: 39rem 29rem;
+    background: url('R.images.gui.maps.icons.buttons.toggle_indicator') no-repeat center / contain;
     position: absolute;
     bottom: -14rem;
     left: 50%;
@@ -758,150 +754,228 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
-.ScrollArea_base_47 {
+.HorizontalBar_base_49 {
+    display: flex;
     width: 100%;
-    min-width: 1rem;
-    min-height: 1rem;
-    max-height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    height: 13rem;
     position: relative;
 }
 
-    .ScrollArea_base__scrollIndent_1d.ps--active-y {
-        padding-right: 13rem;
-    }
-
-    .ScrollArea_base__scrollIndent_1d.ps--active-х {
-        padding-bottom: 13rem;
-    }
-
-    .ScrollArea_base__verticalScrollbarMargin_50 .ps__rail-y {
-                margin: 20rem 0;
-                right: 5rem;
-            }
-
-    .ScrollArea_base__multiple_44 .ps__rail-y {
-                margin-bottom: 30rem;
-            }
-
-    .ScrollArea_base__hidden_ec {
+    .HorizontalBar_base__nonActive_82 {
         visibility: hidden;
     }
-.ps--scrolling-dragging {
-        cursor: move;
+
+    .HorizontalBar_base_49 .disable,
+    .HorizontalBar_base_49 .disable:hover {
+        opacity: .3;
+        cursor: default;
     }
-.ps__rail-x, .ps__thumb-x {
-        height: 13rem;
-        position: absolute;
+
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover, .HorizontalBar_rightButton_03:hover {
+        opacity: 1;
     }
-.ps__rail-y, .ps__thumb-y {
-        width: 13rem;
-        position: absolute;
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem 7rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+        opacity: 1;
     }
-.ps__thumb-x, .ps__button-start-x, .ps__button-end-x, .ps__thumb-y, .ps__button-start-y, .ps__button-end-y {
-        border: 1rem solid #7e7b68;
-        box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
         opacity: .7;
     }
-.ps__thumb-x:hover, .ps__button-start-x:hover, .ps__button-end-x:hover, .ps__thumb-y:hover, .ps__button-start-y:hover, .ps__button-end-y:hover {
-            opacity: 1;
-        }
-.ps__thumb-x, .ps__button-start-x, .ps__button-end-x {
-        bottom: -6rem;
+
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.VerticalBar_base_f3 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+    .VerticalBar_base__nonActive_42 {
+        visibility: hidden;
     }
-.ps__thumb-y, .ps__button-start-y, .ps__button-end-y {
-        right: -6rem;
+
+    .VerticalBar_base_f3 .disable,
+    .VerticalBar_base_f3 .disable:hover {
+        opacity: .3;
+        cursor: default;
     }
-.ps__rail-x {
-        display: none;
-        margin-left: 15rem;
-        border-top: 6rem solid transparent;
-        border-bottom: 6rem solid transparent;
-        bottom: 0;
-        cursor: pointer;
+
+.VerticalBar_topButton_d7,
+.VerticalBar_bottomButton_06 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_d7:hover, .VerticalBar_bottomButton_06:hover {
+        opacity: 1;
     }
-.ps__rail-y {
-        display: none;
-        margin-top: 15rem;
-        border-left: 6rem solid transparent;
-        border-right: 6rem solid transparent;
-        right: 0;
-        cursor: pointer;
+
+.VerticalBar_topButton_d7 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_06 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_df {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32 {
+    display: none;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32:hover {
+        opacity: 1;
     }
-.ps__track_x, .ps__track_y {
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.background');
-        background-size: 1rem;
-        position: relative;
+
+.VerticalBar_rail_43 {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_43:hover {
+        opacity: .7;
     }
-.ps__track_x:hover, .ps__track_y:hover {
-            opacity: .7;
-        }
-.ps__track_x {
-        width: 100%;
-        height: 1rem;
-        background-repeat: repeat-x;
-        background-position: 50% 0;
+
+
+.VerticalScroll_content_cb {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_f8 {
+    display: flex;
+}
+
+.VerticalScroll_bar_1e {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_af {
+    flex: 1;
+}
+
+/* bugfix WOTD-242261: due to using Chat as Subview in MembersWindow in platoon feature
+2 bundles (Chat.css and MembersWindow.css) start to conflict with each other
+
+for example, provided selectors as css mixClasses for Scroll component can be overwritten by basic css classes of Scroll component
+because both in Chat.tsx and MembersWindow.tsx <Scroll> component is used
+
+so we just add specificity to css classes here
+*/
+
+.VerticalAutoScroll_base_db .VerticalAutoScroll_content_47 {
+        height: auto;
+        min-height: 1rem;
+        max-height: 100%;
     }
-.ps__track_y {
-        width: 1rem;
-        height: 100%;
-        background-repeat: repeat-y;
-        background-position: 0 50%;
-    }
-.ps--active-x > .ps__rail-x, .ps--active-y > .ps__rail-y {
-        display: block;
-    }
-.ps__thumb-x, .ps__thumb-y {
-        background: #26241b 50% 50% no-repeat;
-        transition: opacity linear .13s;
-    }
-.ps__thumb-x:active, .ps__thumb-y:active {
-            opacity: .7;
-        }
-.ps__thumb-x {
-        min-width: 10rem;
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal');
-        background-size: 8rem 7rem;
-    }
-.ps__thumb-y {
-        min-height: 10rem;
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.thumb');
-        background-size: 7rem 8rem;
-    }
-.ps__button-start-x, .ps__button-end-x, .ps__button-start-y, .ps__button-end-y {
-        width: 13rem;
-        height: 13rem;
-        background-repeat: no-repeat;
-        background-position: 50%;
-        background-size: 7rem 5rem;
+
+.VerticalAutoScroll_base_db .VerticalAutoScroll_barBase_93 {
         position: absolute;
-    }
-.ps__button-start-x.disabled, .ps__button-end-x.disabled, .ps__button-start-y.disabled, .ps__button-end-y.disabled {
-            opacity: .3;
-            cursor: default;
-            pointer-events: none;
-        }
-.ps__button-start-x, .ps__button-start-y {
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
-    }
-.ps__button-end-x, .ps__button-end-y {
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
-    }
-.ps__button-start-x, .ps__button-end-x {
-        transform: rotate(-90deg);
-    }
-.ps__button-start-x {
-        left: -14rem;
-    }
-.ps__button-end-x {
-        right: -14rem;
-    }
-.ps__button-start-y {
-        top: -14rem;
-    }
-.ps__button-end-y {
-        bottom: -14rem;
+        right: 0;
     }
 
 .DropDownItem_base_5e {
@@ -955,9 +1029,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         font-size: 16rem;
         line-height: 18rem;
     }
-.DropDownList_scrollMix_45 .ps__rail-y {
-            right: 1rem;
-        }
 
 .PureDropDown_base_fc {
     display: flex;
@@ -1267,6 +1338,60 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-left: 5rem;
 }
 
+.PrestigeProgressTab_base_7c {
+    width: 36rem;
+    height: 16rem;
+    position: relative;
+}
+
+.PrestigeProgressTab_icon_0a {
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.PrestigeProgressTab_base__left_55 .PrestigeProgressTab_icon_0a {
+        transform: rotateY(180deg);
+    }
+
+.PrestigeProgressTab_level_ba {
+    width: 100%;
+    font-size: 13rem;
+    font-weight: 500;
+    line-height: 15rem;
+    position: relative;
+}
+
+.PrestigeProgressTab_base__left_55 .PrestigeProgressTab_level_ba {
+        padding-right: 5rem;
+        text-align: right;
+    }
+
+.PrestigeProgressTab_base__right_5d .PrestigeProgressTab_level_ba {
+        padding-left: 5rem;
+        text-align: left;
+    }
+
+.PrestigeProgressTab_base__iron_03 .PrestigeProgressTab_level_ba {
+        color: #909ba1;
+    }
+
+.PrestigeProgressTab_base__bronze_b8 .PrestigeProgressTab_level_ba {
+        color: #f18140;
+    }
+
+.PrestigeProgressTab_base__silver_ef .PrestigeProgressTab_level_ba {
+        color: #87b2ca;
+    }
+
+.PrestigeProgressTab_base__gold_b6 .PrestigeProgressTab_level_ba,
+    .PrestigeProgressTab_base__enamel_39 .PrestigeProgressTab_level_ba {
+        color: #ecbe6e;
+    }
+
 /*////////////*/
 
 /* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
@@ -1280,6 +1405,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 20rem;
     background-repeat: no-repeat;
     color: #fff;
+    font-size: 13rem;
     z-index: 1;
 }
 
@@ -1293,6 +1419,18 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .VehicleDescription_vehicleType__elite_71 {
         width: 24rem;
         height: 24rem;
+    }
+
+.VehicleDescription_prestigeTab__short_c8 {
+        margin-right: -19rem;
+    }
+
+.VehicleDescription_prestigeTab__medium_37 {
+        margin-right: -12rem;
+    }
+
+.VehicleDescription_prestigeTab__long_dd {
+        margin-right: -6rem;
     }
 
 .VoiceAnimation_talkingAnimation_c4 {
@@ -1431,20 +1569,30 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 0;
 }
 
-.RankEmblem_base_d5 {
+.RankEmblem_base_ec {
     width: var(--imageSize);
     height: var(--imageSize);
     background: no-repeat center / cover;
 }
 
 .Comp7Content_base_f9 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Comp7Content_scoreContainer_f9 {
     color: #FFDD99;
     font-size: 12rem;
     font-weight: 400;
     line-height: 1.3;
     display: flex;
+    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+}
+
+.Comp7Content_score_e7 {
+    display: flex;
     align-items: center;
-    text-shadow: 0rem 0rem 4rem rgba(255, 127, 0, .25), 0rem 0rem 8rem #ff2a00, 0rem 0rem 15rem #e52;
+    padding-right: 10rem;
 }
 
 .Comp7Content_icon_0f {

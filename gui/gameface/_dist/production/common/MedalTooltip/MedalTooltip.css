@@ -1,0 +1,55 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.atlases.components.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+
+.MedalTooltipApp_base_b1 {
+    display: flex;
+    flex-direction: column;
+    width: 332rem;
+    padding: 14rem 20rem;
+}
+
+.MedalTooltipApp_name_55 {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.MedalTooltipApp_image_5d {
+    width: 150rem;
+    height: 150rem;
+    margin: 13rem 0 0 72rem;
+    background: no-repeat 50% / contain;
+}
+
+.MedalTooltipApp_conditions_08 {
+    color: #595950;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.MedalTooltipApp_description_e9 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.MedalTooltipApp_dots_fe {
+    width: 328rem;
+    height: 1rem;
+    margin: 15rem 0;
+    background: url('R.images.gui.maps.icons.achievements.tooltips.separator_dots_short') no-repeat 50% / contain;
+}
+

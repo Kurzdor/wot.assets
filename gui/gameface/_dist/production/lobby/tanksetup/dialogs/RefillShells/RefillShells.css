@@ -471,9 +471,152 @@ body {
     }
 }
 
-.FormatText_base_d0 {
+.Item_base_2f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+    .Item_base_2f + .Item_base_2f {
+        margin-left: 15rem;
+    }
+
+.Item_highlight_ab {
+    width: 492rem;
+    height: 310rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: -1;
+}
+
+.Item_highlight__optionalDevice_2d,
+    .Item_highlight__battleBoosterReplace_3f,
+    .Item_highlight__battleBooster_09,
+    .Item_highlight__builtInEquipment_21,
+    .Item_highlight__battleAbility_2b,
+    .Item_highlight__postProgressionModification_5e {
+        background-image: url('R.images.gui.maps.icons.demountKit.simple_highlight');
+    }
+
+.Item_highlight__equipmentPlus_f1 {
+        background-image: url('R.images.gui.maps.icons.demountKit.equipmentPlus_highlight');
+    }
+
+.Item_highlight__equipmentTrophyBasic_4b,
+    .Item_highlight__equipmentTrophyUpgraded_90 {
+        background-image: url('R.images.gui.maps.icons.demountKit.equipmentTrophyBasic_highlight');
+    }
+
+.Item_highlight__equipmentModernized_a2 {
+        background-image: url('R.images.gui.maps.icons.demountKit.equipmentModernized_highlight');
+    }
+
+.Item_overlay_ee {
+    background: no-repeat center / contain;
+    position: absolute;
+}
+
+.Item_overlay__battleBooster_4e,
+    .Item_overlay__battleBoosterReplace_e0 {
+        width: 248rem;
+        height: 224rem;
+    }
+
+.Item_overlay__battleBoosterReplace_e0 {
+        background-image: url('R.images.gui.maps.icons.artefact.battleBooster_replace_overlay_medium');
+    }
+
+.Item_overlay__battleBooster_4e {
+        background-image: url('R.images.gui.maps.icons.artefact.battleBooster_overlay_medium');
+    }
+
+.Item_overlay__equipmentPlus_a6,
+    .Item_overlay__equipmentTrophyBasic_ac,
+    .Item_overlay__equipmentTrophyUpgraded_32,
+    .Item_overlay__equipmentModernized_1_fd,
+    .Item_overlay__equipmentModernized_2_70,
+    .Item_overlay__equipmentModernized_3_f1 {
+        width: 48rem;
+        height: 47rem;
+        top: 0;
+        left: 0;
+    }
+
+.Item_overlay__equipmentPlus_a6 {
+        background-image: url('R.images.gui.maps.icons.demountKit.equipmentPlus_overlay');
+    }
+
+.Item_overlay__equipmentTrophyBasic_ac {
+        background-image: url('R.images.gui.maps.icons.demountKit.equipmentTrophyBasic_overlay');
+    }
+
+.Item_overlay__equipmentTrophyUpgraded_32 {
+        background-image: url('R.images.gui.maps.icons.demountKit.equipmentTrophyUpgraded_overlay');
+    }
+
+.Item_overlay__equipmentModernized_1_fd {
+        background-image: url('R.images.gui.maps.icons.demountKit.experimental_level_icon_lvl1');
+    }
+
+.Item_overlay__equipmentModernized_2_70 {
+        background-image: url('R.images.gui.maps.icons.demountKit.experimental_level_icon_lvl2');
+    }
+
+.Item_overlay__equipmentModernized_3_f1 {
+        background-image: url('R.images.gui.maps.icons.demountKit.experimental_level_icon_lvl3');
+    }
+
+.Item_level_90 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: -3rem;
+    left: 12rem;
+}
+
+.Item_postProgressionLevel_ad {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42rem;
+    height: 42rem;
+    background: url('R.images.gui.maps.icons.vehPostProgression.confirm.polygon') no-repeat center / contain;
+    position: absolute;
+    top: -42rem;
+    left: 2rem;
+}
+
+.Item_image_8d {
+    width: 180rem;
+    height: 135rem;
+    background: no-repeat center / cover;
+    position: relative;
+}
+
+.Item_image__postProgression_ca {
+        width: 120rem;
+        height: 120rem;
+        margin: 8rem 30rem;
+    }
+
+.Items_base_b1 {
+    display: flex;
+    align-items: center;
+    z-index: 0;
+}
+
+.Names_base_96 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    color: #C9C9B6;
+    line-height: 22rem;
 }
 
 .Currency_base_57 {
@@ -643,6 +786,34 @@ body {
 .Currency_base__extraLarge_4d .Currency_icon__equipCoin-extraLarge_8a {
             transform: translateX(2rem) translateY(4rem);
         }
+.Currency_icon__stpCoin-small_6b {
+        --icon-height: 16rem;
+        margin-right: -2rem;
+        background-image: url('R.images.gui.maps.icons.library.stpcoin.stpcoinSmall');
+    }
+.Currency_base__small_af .Currency_icon__stpCoin-small_6b {
+            transform: translateX(-1rem) translateY(1rem);
+        }
+.Currency_icon__stpCoin-big_da {
+        --icon-height: 24rem;
+        background-image: url('R.images.gui.maps.icons.library.stpcoin.stpcoinBig');
+    }
+.Currency_base__big_bc .Currency_icon__stpCoin-big_da {
+            transform: translateX(-5rem) translateY(3rem);
+        }
+.Currency_icon__stpCoin-large_ee {
+        --icon-height: 48rem;
+        margin-right: 2rem;
+        background-image: url('R.images.gui.maps.icons.library.stpcoin.stpcoinLarge');
+    }
+.Currency_icon__stpCoin-extraLarge_fa {
+        --icon-height: 80rem;
+        margin-right: 8rem;
+        background-image: url('R.images.gui.maps.icons.library.stpcoin.stpcoinExtraLarge');
+    }
+.Currency_base__extraLarge_4d .Currency_icon__stpCoin-extraLarge_fa {
+            transform: translateX(2rem) translateY(4rem);
+        }
 .Currency_value_e1 {
     /* font-size inherit does not work here, so 1em means the size does not change */
     /* stylelint-disable-next-line */
@@ -684,7 +855,8 @@ body {
     }
 .Currency_value__xp_b0,
     .Currency_value__crystal_19,
-    .Currency_value__equipCoin_d0 {
+    .Currency_value__equipCoin_d0,
+    .Currency_value__stpCoin_38 {
         color: #C9C9B6;
     }
 .Currency_base__small_af .Currency_value__notEnough_56 {
@@ -736,6 +908,11 @@ body {
     bottom: 0;
     z-index: -1;
     transform: translateY(17rem);
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .Alert_base_42 {
@@ -992,27 +1169,27 @@ body {
     transform: translateX(100%);
 }
 
-.RepairHeader_base_b4 {
+.RepairHeaderApp_base_b0 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.RepairHeader_durability_e8 {
+.RepairHeaderApp_durability_69 {
     margin: 20rem 0 35rem;
 }
 
-.ExchangeDialogContent_base_1a {
+.ExchangeDialogContent_base_ef {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.ExchangeDialogContent_description_1e {
+.ExchangeDialogContent_description_6e {
     margin: 12rem 0 1rem;
 }
 
-.ExchangeDialogContent_status_19 {
+.ExchangeDialogContent_status_33 {
     color: #8C8C7E;
     font-size: 16rem;
     font-weight: 400;
@@ -1021,19 +1198,19 @@ body {
     line-height: 1;
 }
 
-.ExchangeDialogContent_status__notPossible_9a {
+.ExchangeDialogContent_status__notPossible_e1 {
         color: #EE7000;
     }
 
-.ExchangeDialogContent_status__notRequired_bd {
+.ExchangeDialogContent_status__notRequired_8a {
         color: #80D43A;
     }
 
-.ExchangeDialogContent_items_3f {
+.ExchangeDialogContent_items_72 {
     margin-bottom: 45rem;
 }
 
-.ExchangeDialogContent_title_ca {
+.ExchangeDialogContent_title_9f {
     color: #F2F2F7;
     font-size: 36rem;
     font-weight: 700;
@@ -1044,7 +1221,7 @@ body {
     text-align: center;
 }
 
-.ExchangeDialogContent_titleCurrency_f4 {
+.ExchangeDialogContent_titleCurrency_88 {
     transform: translateY(4rem);
 }
 
@@ -1405,6 +1582,159 @@ body {
         height: 32rem;
     }
 
+.Layout_base_81 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 996rem;
+    height: 100%;
+    position: relative;
+}
+
+    .Layout_base__small_cb,
+    .Layout_base__medium_df {
+        width: 1310rem;
+    }
+
+    .Layout_base__large_f6,
+    .Layout_base__huge_d2 {
+        width: 1560rem;
+    }
+.Layout_header_46 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10rem 0 20rem;
+}
+.Layout_base__compare_56 .Layout_header_46 {
+        flex-direction: column;
+        align-items: center;
+    }
+.Layout_header__small_cb,
+    .Layout_header__tiny_4b {
+        margin: 10rem 0 16rem;
+    }
+.Layout_content_79 {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+}
+.Layout_base__compare_56 .Layout_content_79 {
+        justify-content: center;
+        margin-top: 7rem;
+        padding-top: 20rem;
+        padding-bottom: 10rem;
+    }
+.Layout_main_df {
+    width: 596rem;
+    border-top: 1rem solid rgba(255,255,255, .1);
+    border-bottom: 1rem solid rgba(255,255,255, .1);
+}
+.Layout_base__compare_56 .Layout_main_df {
+        width: 902rem;
+    }
+.Layout_base__small_cb .Layout_main_df,
+    .Layout_base__medium_df .Layout_main_df {
+        width: 902rem;
+    }
+.Layout_base__large_f6 .Layout_main_df,
+    .Layout_base__huge_d2 .Layout_main_df {
+        width: 1102rem;
+    }
+.Layout_inner_3e {
+    margin: 0 -16rem;
+}
+.Layout_base__large_f6 .Layout_inner_3e,
+    .Layout_base__huge_d2 .Layout_inner_3e {
+        margin: 0 -20rem;
+    }
+.Layout_footer_f4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 166rem;
+    padding-top: 20rem;
+}
+
+.Storage_base_53 {
+    display: flex;
+    align-items: center;
+}
+
+    .Storage_base__reversed_8f {
+        flex-direction: row-reverse;
+    }
+
+.Storage_icon_6a {
+    width: 30rem;
+    height: 30rem;
+    background: url('R.images.gui.maps.icons.library.storage_icon') no-repeat center / contain;
+}
+
+.Storage_count_7a {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Storage_base__reversed_8f .Storage_count_7a {
+        color: #C9C9B6;
+        font-size: 22rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-top: -4rem;
+    }
+
+.Storage_count__zero_54 {
+        color: #B70000;
+    }
+
+.Animation_base_ab {
+    display: flex;
+    position: relative;
+}
+
+    .Animation_base__withAnimation_41 {
+        opacity: 0;
+        animation: Animation_action-show_f8 .2s forwards;
+    }
+
+    .Animation_base__enter_1e {
+        animation: Animation_action-show_f8 .2s forwards;
+    }
+
+    .Animation_base__exit_88 {
+        animation: Animation_action-hide_44 .2s forwards;
+        pointer-events: none;
+    }
+
+@keyframes Animation_action-show_f8 {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Animation_action-hide_44 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+}
+
 .Checkbox_base_36 {
     display: flex;
     align-items: flex-start;
@@ -1696,332 +2026,6 @@ body {
     }
 }
 
-.ExchangeDialogFooter_base_ac {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.ExchangeDialogFooter_exchange_60 {
-    margin-top: 10rem;
-}
-
-.ExchangeDialogFooter_renewal_7b {
-    margin: 5rem 0 15rem;
-}
-
-.Item_base_2f {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-    .Item_base_2f + .Item_base_2f {
-        margin-left: 15rem;
-    }
-
-.Item_highlight_ab {
-    width: 492rem;
-    height: 310rem;
-    background: no-repeat center / contain;
-    position: absolute;
-    z-index: -1;
-}
-
-.Item_highlight__optionalDevice_2d,
-    .Item_highlight__battleBoosterReplace_3f,
-    .Item_highlight__battleBooster_09,
-    .Item_highlight__builtInEquipment_21,
-    .Item_highlight__battleAbility_2b,
-    .Item_highlight__postProgressionModification_5e {
-        background-image: url('R.images.gui.maps.icons.demountKit.simple_highlight');
-    }
-
-.Item_highlight__equipmentPlus_f1 {
-        background-image: url('R.images.gui.maps.icons.demountKit.equipmentPlus_highlight');
-    }
-
-.Item_highlight__equipmentTrophyBasic_4b,
-    .Item_highlight__equipmentTrophyUpgraded_90 {
-        background-image: url('R.images.gui.maps.icons.demountKit.equipmentTrophyBasic_highlight');
-    }
-
-.Item_highlight__equipmentModernized_a2 {
-        background-image: url('R.images.gui.maps.icons.demountKit.equipmentModernized_highlight');
-    }
-
-.Item_overlay_ee {
-    background: no-repeat center / contain;
-    position: absolute;
-}
-
-.Item_overlay__battleBooster_4e,
-    .Item_overlay__battleBoosterReplace_e0 {
-        width: 248rem;
-        height: 224rem;
-    }
-
-.Item_overlay__battleBoosterReplace_e0 {
-        background-image: url('R.images.gui.maps.icons.artefact.battleBooster_replace_overlay_medium');
-    }
-
-.Item_overlay__battleBooster_4e {
-        background-image: url('R.images.gui.maps.icons.artefact.battleBooster_overlay_medium');
-    }
-
-.Item_overlay__equipmentPlus_a6,
-    .Item_overlay__equipmentTrophyBasic_ac,
-    .Item_overlay__equipmentTrophyUpgraded_32,
-    .Item_overlay__equipmentModernized_1_fd,
-    .Item_overlay__equipmentModernized_2_70,
-    .Item_overlay__equipmentModernized_3_f1 {
-        width: 48rem;
-        height: 47rem;
-        top: 0;
-        left: 0;
-    }
-
-.Item_overlay__equipmentPlus_a6 {
-        background-image: url('R.images.gui.maps.icons.demountKit.equipmentPlus_overlay');
-    }
-
-.Item_overlay__equipmentTrophyBasic_ac {
-        background-image: url('R.images.gui.maps.icons.demountKit.equipmentTrophyBasic_overlay');
-    }
-
-.Item_overlay__equipmentTrophyUpgraded_32 {
-        background-image: url('R.images.gui.maps.icons.demountKit.equipmentTrophyUpgraded_overlay');
-    }
-
-.Item_overlay__equipmentModernized_1_fd {
-        background-image: url('R.images.gui.maps.icons.demountKit.experimental_level_icon_lvl1');
-    }
-
-.Item_overlay__equipmentModernized_2_70 {
-        background-image: url('R.images.gui.maps.icons.demountKit.experimental_level_icon_lvl2');
-    }
-
-.Item_overlay__equipmentModernized_3_f1 {
-        background-image: url('R.images.gui.maps.icons.demountKit.experimental_level_icon_lvl3');
-    }
-
-.Item_level_90 {
-    width: 32rem;
-    height: 32rem;
-    background: no-repeat center / contain;
-    position: absolute;
-    top: -3rem;
-    left: 12rem;
-}
-
-.Item_postProgressionLevel_ad {
-    color: #8C8C7E;
-    font-size: 14rem;
-    font-weight: 700;
-    line-height: 1.15;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 42rem;
-    height: 42rem;
-    background: url('R.images.gui.maps.icons.vehPostProgression.confirm.polygon') no-repeat center / contain;
-    position: absolute;
-    top: -42rem;
-    left: 2rem;
-}
-
-.Item_image_8d {
-    width: 180rem;
-    height: 135rem;
-    background: no-repeat center / cover;
-    position: relative;
-}
-
-.Item_image__postProgression_ca {
-        width: 120rem;
-        height: 120rem;
-        margin: 8rem 30rem;
-    }
-
-.Items_base_b1 {
-    display: flex;
-    align-items: center;
-    z-index: 0;
-}
-
-.DialogContent_base_48 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.DialogContent_title_2c {
-    color: #F2F2F7;
-    font-size: 36rem;
-    font-weight: 700;
-    line-height: 1.1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin-top: 45rem;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-.Layout_base_81 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 996rem;
-    height: 100%;
-    position: relative;
-}
-
-    .Layout_base__small_cb,
-    .Layout_base__medium_df {
-        width: 1310rem;
-    }
-
-    .Layout_base__large_f6,
-    .Layout_base__huge_d2 {
-        width: 1560rem;
-    }
-.Layout_header_46 {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 10rem 0 20rem;
-}
-.Layout_base__compare_56 .Layout_header_46 {
-        flex-direction: column;
-        align-items: center;
-    }
-.Layout_header__small_cb,
-    .Layout_header__tiny_4b {
-        margin: 10rem 0 16rem;
-    }
-.Layout_content_79 {
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
-    width: 100%;
-}
-.Layout_base__compare_56 .Layout_content_79 {
-        justify-content: center;
-        margin-top: 7rem;
-        padding-top: 20rem;
-        padding-bottom: 10rem;
-    }
-.Layout_main_df {
-    width: 596rem;
-    border-top: 1rem solid rgba(255,255,255, .1);
-    border-bottom: 1rem solid rgba(255,255,255, .1);
-}
-.Layout_base__compare_56 .Layout_main_df {
-        width: 902rem;
-    }
-.Layout_base__small_cb .Layout_main_df,
-    .Layout_base__medium_df .Layout_main_df {
-        width: 902rem;
-    }
-.Layout_base__large_f6 .Layout_main_df,
-    .Layout_base__huge_d2 .Layout_main_df {
-        width: 1102rem;
-    }
-.Layout_inner_3e {
-    margin: 0 -16rem;
-}
-.Layout_base__large_f6 .Layout_inner_3e,
-    .Layout_base__huge_d2 .Layout_inner_3e {
-        margin: 0 -20rem;
-    }
-.Layout_footer_f4 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 166rem;
-    padding-top: 20rem;
-}
-
-.Storage_base_53 {
-    display: flex;
-    align-items: center;
-}
-
-    .Storage_base__reversed_8f {
-        flex-direction: row-reverse;
-    }
-
-.Storage_icon_6a {
-    width: 30rem;
-    height: 30rem;
-    background: url('R.images.gui.maps.icons.library.storage_icon') no-repeat center / contain;
-}
-
-.Storage_count_7a {
-    color: #8C8C7E;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
-
-.Storage_base__reversed_8f .Storage_count_7a {
-        color: #C9C9B6;
-        font-size: 22rem;
-        font-weight: 700;
-        line-height: 1.2;
-        margin-top: -4rem;
-    }
-
-.Storage_count__zero_54 {
-        color: #B70000;
-    }
-
-.Animation_base_ab {
-    display: flex;
-    position: relative;
-}
-
-    .Animation_base__withAnimation_41 {
-        opacity: 0;
-        animation: Animation_action-show_f8 .2s forwards;
-    }
-
-    .Animation_base__enter_1e {
-        animation: Animation_action-show_f8 .2s forwards;
-    }
-
-    .Animation_base__exit_88 {
-        animation: Animation_action-hide_44 .2s forwards;
-        pointer-events: none;
-    }
-
-@keyframes Animation_action-show_f8 {
-    0% {
-        opacity: 0;
-        transform: translateY(10rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes Animation_action-hide_44 {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(10rem);
-    }
-}
-
 .ConfirmButton_base_75 {
     min-width: 160rem;
 }
@@ -2034,83 +2038,6 @@ body {
     min-width: 160rem;
     margin-left: 10rem;
 }
-
-.DealPanel_base_10 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-    .DealPanel_base__tiny_86 {
-        justify-content: center;
-    }
-
-    .DealPanel_base__small_f6,
-    .DealPanel_base__medium_8a {
-        width: 902rem;
-    }
-
-    .DealPanel_base__large_7b,
-    .DealPanel_base__huge_b3 {
-        width: 1102rem;
-    }
-
-    .DealPanel_base__dialog_b4 {
-        flex-direction: column-reverse;
-    }
-.DealPanel_storage_40 {
-    display: flex;
-    align-items: center;
-}
-.DealPanel_storage__medium_fe,
-    .DealPanel_storage__large_1e,
-    .DealPanel_storage__huge_e3 {
-        padding-top: 4rem;
-    }
-.DealPanel_from_70 {
-    color: #8C8C7E;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-right: 3rem;
-}
-.DealPanel_base__dialog_b4 .DealPanel_from_70 {
-        display: block;
-    }
-.DealPanel_plus_b0 {
-    width: 24rem;
-    height: 24rem;
-    margin: 0 3rem;
-    background: url('R.images.gui.maps.icons.tanksetup.hangar.plus') no-repeat center / contain;
-    position: relative;
-    top: 1rem;
-}
-.DealPanel_renewal_a8 {
-    display: flex;
-    position: absolute;
-    top: 8rem;
-    left: 0;
-}
-.DealPanel_renewal__dialog_aa {
-        margin-top: 15rem;
-        position: relative;
-        top: 0;
-    }
-.DealPanel_control_39 {
-    margin-left: 20rem;
-}
-.DealPanel_totalPrice_2d {
-    display: flex;
-    align-items: center;
-    margin-left: 30rem;
-    position: relative;
-    top: -2rem;
-}
-.DealPanel_totalPrice__mixed_fd {
-        margin-left: 0;
-    }
 
 .Price_base_61 {
     display: flex;
@@ -2152,6 +2079,116 @@ body {
     background: url('R.images.gui.maps.icons.tanksetup.hangar.plus') no-repeat center / contain;
     position: relative;
     top: 1rem;
+}
+
+.App_base_44 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+    .App_base__tiny_5e {
+        justify-content: center;
+    }
+
+    .App_base__small_1d,
+    .App_base__medium_2a {
+        width: 902rem;
+    }
+
+    .App_base__large_8d,
+    .App_base__huge_6d {
+        width: 1102rem;
+    }
+
+    .App_base__dialog_fa {
+        flex-direction: column-reverse;
+    }
+.App_storage_d5 {
+    display: flex;
+    align-items: center;
+}
+.App_storage__medium_51,
+    .App_storage__large_8a,
+    .App_storage__huge_b6 {
+        padding-top: 4rem;
+    }
+.App_from_a4 {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-right: 3rem;
+}
+.App_base__dialog_fa .App_from_a4 {
+        display: block;
+    }
+.App_plus_04 {
+    width: 24rem;
+    height: 24rem;
+    margin: 0 3rem;
+    background: url('R.images.gui.maps.icons.tanksetup.hangar.plus') no-repeat center / contain;
+    position: relative;
+    top: 1rem;
+}
+.App_renewal_06 {
+    display: flex;
+    position: absolute;
+    top: 8rem;
+    left: 0;
+}
+.App_renewal__dialog_ba {
+        margin-top: 15rem;
+        position: relative;
+        top: 0;
+    }
+.App_control_fc {
+    margin-left: 20rem;
+}
+.App_totalPrice_87 {
+    display: flex;
+    align-items: center;
+    margin-left: 30rem;
+    position: relative;
+    top: -2rem;
+}
+.App_totalPrice__mixed_cc {
+        margin-left: 0;
+    }
+
+.ExchangeDialogFooter_base_45 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ExchangeDialogFooter_exchange_11 {
+    margin-top: 10rem;
+}
+
+.ExchangeDialogFooter_renewal_e2 {
+    margin: 5rem 0 15rem;
+}
+
+.DialogContent_base_48 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DialogContent_title_2c {
+    color: #F2F2F7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 45rem;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .DialogFooter_base_38 {

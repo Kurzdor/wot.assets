@@ -128,7 +128,7 @@
     height: 130rem;
     padding-top: 15rem;
     padding-bottom: 78rem;
-    background: url('R.images.gui.maps.icons.battlePass.logo.emblem') left top / cover no-repeat;
+    background: left top / cover no-repeat;
     position: relative;
 }
 .Emblem_image__micro_aa {
@@ -136,77 +136,12 @@
         height: 60rem;
         padding-top: 0;
         padding-bottom: 0;
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_micro');
     }
 .Emblem_image__small_ce {
         width: 100rem;
         height: 100rem;
         padding-top: 12rem;
         padding-bottom: 57rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_small');
-    }
-.Emblem_image__open_43 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_open');
-    }
-.Emblem_image__openSmall_5d {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_open_small');
-    }
-.Emblem_image__openMicro_a9 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_open_micro');
-    }
-.Emblem_image__battlePass_ba {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_BP');
-    }
-.Emblem_image__battlePassSmall_d5 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_BP_small');
-    }
-.Emblem_image__battlePassMicro_6e {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_BP_micro');
-    }
-.Emblem_image__battlePassOpen_36 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_BP_open');
-    }
-.Emblem_image__battlePassSmallOpen_2f {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_BP_open_small');
-    }
-.Emblem_image__battlePassMicroOpen_e5 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_BP_open_micro');
-    }
-.Emblem_image__seasonWaiting_96 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.seasonWaiting');
-    }
-.Emblem_image__seasonWaitingSmall_c0 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.seasonWaiting');
-    }
-.Emblem_image__seasonWaitingMicro_86 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.seasonWaiting');
-    }
-.Emblem_image__completedFree_56 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_completed');
-    }
-.Emblem_image__completedFreeSmall_a1 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_completed_small');
-    }
-.Emblem_image__completedFreeMicro_45 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_completed_micro');
-    }
-.Emblem_image__completedFreeOpen_08 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_completed_open');
-    }
-.Emblem_image__completedFreeSmallOpen_91 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_completed_open_small');
-    }
-.Emblem_image__completedFreeMicroOpen_d3 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_completed_open_micro');
-    }
-.Emblem_image__completedGolden_77 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_BP_completed');
-    }
-.Emblem_image__completedGoldenSmall_be {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_BP_completed_small');
-    }
-.Emblem_image__completedGoldenMicro_2d {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_BP_completed_micro');
     }
 .Emblem_extra_d4 {
     display: flex;
@@ -214,7 +149,7 @@
     width: 140rem;
     height: 130rem;
     margin-bottom: 8rem;
-    background: url('R.images.gui.maps.icons.battlePass.logo.extra_flags') left top / cover no-repeat;
+    background: left top / cover no-repeat;
     position: absolute;
     top: 60rem;
     left: 50%;
@@ -224,13 +159,11 @@
 .Emblem_extra__micro_f7 {
         width: 60rem;
         height: 60rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.extra_flags_micro');
         top: 24rem;
     }
 .Emblem_extra__small_28 {
         width: 100rem;
         height: 100rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.extra_flags_small');
         top: 40rem;
     }
 

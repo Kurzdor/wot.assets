@@ -1,0 +1,83 @@
+(def layout PiggyProgressBar()
+    (style
+        (width = 100%)
+        (height = 100%)
+    )
+    (scope
+        (var isFull:bool = true)
+        (var currentValue:number = 1200) #set in model
+        (var totalValue:number = 1500) #set in model
+        (var isEnabled:bool = true)
+        (var progress:number = 0.0)
+        (var progressEmtyColor:str = 'bitmap:PiggyBg')
+        (var progressFreezeColor:str = 'bitmap:PiggyFreeze')
+        (var progressCompleteColor:str = 'bitmap:PiggyGreen')
+        (var progressInProgressColor:str = 'bitmap:PiggyOrange')
+
+        (bind progress "currentValue/totalValue" init=false)
+        (bind isFull "progress >= 1")
+
+    )
+    (block
+        (style
+            (width = 100%)
+            (height = 100%)
+            (bind backgroundImage "progressEmtyColor")
+            (backgroundSize = "repeat")
+        )
+        (hblock
+            (style
+                (width = 33.3%)
+                (paddingTop = 2px)
+            )
+            (controller $Repeat count=4 layout=true	
+                (exprs
+                    (style
+                        (width = 100%)
+                    )
+                    (image
+                        (name = 'separ')
+                        (source = "R.images.gui.maps.icons.premacc.piggybank.separator_pr_bar()")
+                    )
+                )
+            )
+        )
+    )
+    (hblock
+        (name = 'orangeProgress')
+        (style
+            (macro AbsPositionFullSize)
+        )
+        (block
+            (style
+                (position = "absolute")
+                (bind width "100% * progress")
+                (height = 100%)
+                (bind backgroundImage "isEnabled ? progressInProgressColor : progressFreezeColor")
+                (backgroundSize = "repeat")
+            )
+            
+            (block
+                (style
+                    (macro AbsPositionFullSize)
+                    (align = "right")
+                    (top = -7px)
+                    (left = 20px)
+                )
+                (image
+                    (source = "R.images.gui.maps.icons.premacc.piggybank.light()")
+                    (bind visible "isEnabled")
+                )
+            )
+        )
+        (bind visible "!isFull && progress > 0")
+    )
+    (block
+        (style
+            (macro AbsPositionFullSize)
+            (bind backgroundImage "isFull ? progressCompleteColor : progressEmtyColor")
+            (backgroundSize = "repeat")
+        )
+        (bind visible "isFull")
+    )
+)

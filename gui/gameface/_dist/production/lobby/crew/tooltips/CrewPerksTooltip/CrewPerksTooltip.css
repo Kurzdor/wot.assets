@@ -3,17 +3,13 @@
     position: absolute;
 }
 
-.TooltipDecorator_decorator_3d {
-    padding: 4rem 6rem 8rem; /* border offset*/
-    border-image-source: url('R.atlases.components.tooltip_background');
-    border-image-slice: 24 fill;
-    border-image-width: 24rem;
-    position: relative;
-}
-
-.TooltipDecorator_decoratorContent_de {
-    background-color: #000;
-}
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.atlases.components.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
 
 .Divided_base_06 {
     position: relative;
@@ -32,6 +28,12 @@
     width: 16rem;
     height: 16rem;
     background: url('R.images.gui.maps.icons.tooltip.asterisk_optional') no-repeat center / cover;
+}
+
+.default_zeroPerk_bb {
+    width: 16rem;
+    height: 16rem;
+    background: url('R.images.gui.maps.icons.tankmen.crew.zeroSkill16x16') no-repeat center / cover;
 }
 
 .HeaderSection_base_f2 {
@@ -215,41 +217,21 @@
     width: 100%;
 }
 
-.TooltipAdvancedFooter_base_56 {
+.renderers_word_f3 {
+    white-space: nowrap;
+    overflow-wrap: normal;
+}
+
+.TooltipAdvancedFooter_base_d6 {
     display: flex;
     padding: 12rem 20rem 20rem;
 }
 
-.TooltipAdvancedFooter_altBtn_02 {
+.TooltipAdvancedFooter_altBtn_e0 {
     width: 29rem;
     height: 26rem;
     margin-right: 8rem;
     background: url('R.images.gui.maps.icons.tooltip.tooltip_alt_btn') no-repeat center / cover;
-}
-
-.ExtraInfo_info_3b {
-    display: flex;
-    padding: 8rem 20rem 12rem;
-    color: #595950;
-}
-
-.ExtraInfo_asterisk_86 {
-    margin-top: 1rem;
-}
-
-.ExtraInfo_conditionalText_69 {
-    flex: 0;
-}
-
-.ExtraInfo_commonIcon_23 {
-    width: 35rem;
-    height: 26rem;
-    margin: -3rem 0 0 -17rem;
-    background: url('R.images.gui.maps.icons.tankmen.crew.crewOperations') no-repeat center / cover;
-}
-
-.ExtraInfo_commonText_34 {
-    margin-left: -4rem;
 }
 
 .SkillsSection_base_d2 {
@@ -290,9 +272,58 @@
     color: #E9E2BF;
 }
 
+.TypeInfo_base_9e {
+    display: flex;
+    color: #595950;
+}
+
+.TypeInfo_asterisk_97 {
+    margin-top: 1rem;
+}
+
+.TypeInfo_conditionalText_93 {
+    flex: 0;
+}
+
+.TypeInfo_commonIcon_48 {
+    width: 35rem;
+    height: 26rem;
+    margin: -3rem 0 0 -17rem;
+    background: url('R.images.gui.maps.icons.tankmen.crew.crewOperations') no-repeat center / cover;
+}
+
+.TypeInfo_commonText_53 {
+    margin-left: -4rem;
+}
+
+.ExtraInfo_base_55 {
+    display: flex;
+    flex-direction: column;
+    padding: 8rem 20rem 12rem;
+    color: #595950;
+}
+
+.ExtraInfo_zeroPerkBlock_01 {
+    display: flex;
+    margin-top: 8rem;
+}
+
+.ExtraInfo_zeroPerkIcon_63 {
+    position: relative;
+    top: 3rem;
+    right: 1rem;
+}
+
 .MainContentSection_description_ac {
     padding: 20rem;
     background: url('R.images.gui.maps.icons.tooltip.tooltip_accent_bg') no-repeat center / cover;
+}
+
+.MainContentSection_irrelevant_99 {
+    padding: 11rem 20rem;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, #000000 50%, rgba(0, 0, 0, 0.4) 100%);
+    color: #FF2717;
+    text-align: center;
 }
 
 .CrewPerksApp_base_b3 {

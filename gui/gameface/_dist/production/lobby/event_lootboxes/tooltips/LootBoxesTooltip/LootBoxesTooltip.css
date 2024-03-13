@@ -1,0 +1,174 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.atlases.components.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+
+.ContentTitle_slotNumber_bc {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ContentTitle_probability_3d {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-left: 4rem;
+}
+
+.ContentRewardList_base_84 {
+    display: flex;
+    margin-top: 8rem;
+}
+
+.ContentRewardList_content_50 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    padding-left: 4rem;
+}
+
+.ContentRewardList_content__vehicle_d7 {
+        max-width: 350rem;
+    }
+
+.ContentRewardList_rewardItem_f5 {
+    width: 50rem;
+    height: 50rem;
+    margin-right: 5rem;
+    background: url('R.images.event_lootboxes.gui.maps.welcomeScreen.buyTexture') no-repeat center / 100%;
+    position: relative;
+}
+
+.ContentRewardList_rewardCount_4d {
+    color: #8C8C7E;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    position: absolute;
+    right: -4rem;
+    bottom: -2rem;
+}
+
+.ContentRewardList_premIcon_16 {
+    width: 50rem;
+    height: 50rem;
+    margin-right: 5rem;
+    background: url('R.images.gui.maps.icons.quests.bonuses.small.vehicles') no-repeat center / 100%;
+}
+
+.ContentRewardList_vehicleName_db {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-left: 4rem;
+}
+
+.Content_base_7a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.Content_title_75 {
+    color: #E9E2BF;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.Content_slotWrap_62 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Content_slotRow_b9 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16rem;
+}
+
+.Header_base_a6 {
+    display: flex;
+    width: 100%;
+    min-height: 90rem;
+}
+
+.Header_boxIcon_e3 {
+    width: 80rem;
+    height: 80rem;
+    background: no-repeat center / 100%;
+}
+
+.Header_base__event_common_22 .Header_boxIcon_e3 {
+        background-image: url('R.images.event_lootboxes.gui.maps.shared.regularBoxSmall');
+    }
+
+.Header_base__event_premium_23 .Header_boxIcon_e3 {
+        background-image: url('R.images.event_lootboxes.gui.maps.shared.premiumBoxSmall');
+    }
+
+.Header_textWrap_46 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 15rem;
+}
+
+.Header_base__event_common_22 .Header_textWrap_46 {
+        max-width: 320rem;
+    }
+
+.Header_base__event_premium_23 .Header_textWrap_46 {
+        max-width: 350rem;
+    }
+
+.Header_textTitle_01 {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 10rem;
+}
+
+.Header_textDescription_9a {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 100%;
+    padding-right: 35rem;
+}
+
+.App_base_63 {
+    display: flex;
+    flex-direction: column;
+    padding: 20rem;
+    border-radius: 2rem;
+    background: linear-gradient(180deg, rgba(51, 51, 41, .3) 0%, rgba(51, 51, 41, 0) 15.62%, rgba(51, 51, 41, 0) 88.02%, rgba(51, 51, 41, .1) 100%);
+    color: #8C8C7E;
+    overflow: hidden;
+}
+
+    .App_base__event_common_1e {
+        width: 440rem;
+    }
+
+    .App_base__event_premium_c0 {
+        width: 470rem;
+    }
+

@@ -1,0 +1,1137 @@
+(def element EventInfo() layout = true entrance=true loadOrder="LoadOrder.NOT_WAITING_FIRST"
+    (macro EventInfoViewModel)
+    (style
+        (position = "absolute")
+        (bind width "viewSize.width" (event "viewResized"))
+        (bind height "viewSize.height" (event "viewResized"))
+    )
+    (block
+        (style
+            (width = 100%)
+            (bind height "viewSize.height -90px" (event "viewResized"))
+            (bind paddingTop "((viewSize.height >= 900) && (viewSize.width >= 1366)) ? 220px : 150px" (event "viewResized"))
+            (paddingLeft = 10px)
+            (paddingBottom = 10px)
+            (paddingRight = 10px)
+        )
+        (scrollArea
+            (style
+                (width = 100%)
+                (height = 100%)
+            )
+            (verticalSlider
+                (macro ScrollBarV 100)
+            )
+            (content
+                (style
+                    (width = 100%)
+                    (height = 100%)
+                    (marginTop = 20px)
+                )
+                (block
+                    (name = 'content')
+                    (style
+                        (width = 100%)
+                        (align = "center")
+                    )
+                    (block
+                        (style
+                            (width = 870px)
+                            (bind marginLeft "(viewSize.width >= 1366) ? 0 : ((viewSize.width <= 1280) ? 120px : 70px)" (event "viewResized"))
+                        )
+                        (block
+                            (buttonMode = true)
+                            (dispatch onInfoVideoClicked on='click')
+                            (style
+                                (marginBottom = 60px)
+                                (width = 870px)
+                                (height = 490px)
+                                (backgroundImage = "R.images.gui.maps.icons.battleRoyale.infoPage.videoScreen()")
+                                (backgroundSize = "fill")
+                                (align = "center|middle")
+                            )
+                            (block
+                                (buttonMode = true)
+                                (style
+                                    (backgroundImage = "R.images.gui.maps.icons.library.videoBtn()")
+                                    (width = 150px)
+                                    (height = 100px)
+                                )
+                                (bind alpha 0.8 init=false on='rollOver')
+                                (bind alpha 1 init=false on='rollOut')
+                            )
+                        )
+                        (tf
+                            (class PromoTitleTextStyle)
+                            (style
+                                (marginBottom = 40px)
+                            )
+                            (text = "R.strings.br_about_event.aboutEvent.features.title()")
+                            
+                        )
+                        (tf
+                            (style
+                                (width = 100%)
+                                (marginBottom = 40px)
+                                (leading = 5px)
+                            )
+                            (class MainBigTextStyle)
+                            (text = "R.strings.br_about_event.aboutEvent.features.description()")
+                            
+                        )
+                        (hblock
+                            (style
+                                (gap = 15px)
+                            )
+                            (element BrFeatures
+                                (scope
+                                    (image = "R.images.gui.maps.icons.battleRoyale.infoPage.brFeatures.feature_1()")
+                                    (title = "R.strings.br_about_event.aboutEvent.feature_1.title()")
+                                    (description = "R.strings.br_about_event.aboutEvent.feature_1.description()")
+                                )
+                            )
+                            (element BrFeatures
+                                (scope
+                                    (image = "R.images.gui.maps.icons.battleRoyale.infoPage.brFeatures.feature_2()")
+                                    (title = "R.strings.br_about_event.aboutEvent.feature_2.title()")
+                                    (description = "R.strings.br_about_event.aboutEvent.feature_2.description()")
+                                )
+                            )
+                            (element BrFeatures
+                                (scope
+                                    (image = "R.images.gui.maps.icons.battleRoyale.infoPage.brFeatures.feature_3()")
+                                    (title = "R.strings.br_about_event.aboutEvent.feature_3.title()")
+                                    (description = "R.strings.br_about_event.aboutEvent.feature_3.description()")
+                                )
+                            )
+                        )
+                        (hblock
+                            (style
+                                (gap = 15px)
+                            )
+                            (element BrFeatures
+                                (scope
+                                    (image = "R.images.gui.maps.icons.battleRoyale.infoPage.brFeatures.feature_4()")
+                                    (title = "R.strings.br_about_event.aboutEvent.feature_4.title()")
+                                    (description = "R.strings.br_about_event.aboutEvent.feature_4.description()")
+                                )
+                            )
+                            (element BrFeatures
+                                (scope
+                                    (image = "R.images.gui.maps.icons.battleRoyale.infoPage.brFeatures.feature_5()")
+                                    (title = "R.strings.br_about_event.aboutEvent.feature_5.title()")
+                                    (description = "R.strings.br_about_event.aboutEvent.feature_5.description()")
+                                )
+                            )
+                            (element BrFeatures
+                                (scope
+                                    (image = "R.images.gui.maps.icons.battleRoyale.infoPage.brFeatures.feature_6()")
+                                    (title = "R.strings.br_about_event.aboutEvent.feature_6.title()")
+                                    (description = "R.strings.br_about_event.aboutEvent.feature_6.description()")
+                                )
+                            )
+                        )
+                        (hblock
+                            (style
+                                (gap = 15px)
+                            )
+                            (element BrFeatures
+                                (scope
+                                    (image = "R.images.gui.maps.icons.battleRoyale.infoPage.brFeatures.feature_7()")
+                                    (title = "R.strings.br_about_event.aboutEvent.feature_7.title()")
+                                    (description = "R.strings.br_about_event.aboutEvent.feature_7.description()")
+                                )
+                            )
+                            (element BrFeatures
+                                (scope
+                                    (image = "R.images.gui.maps.icons.battleRoyale.infoPage.brFeatures.feature_8()")
+                                    (title = "R.strings.br_about_event.aboutEvent.feature_8.title()")
+                                    (description = "R.strings.br_about_event.aboutEvent.feature_8.description()")
+                                )
+                            )
+                            (element BrFeatures
+                                (scope
+                                    (image = "R.images.gui.maps.icons.battleRoyale.infoPage.brFeatures.feature_9()")
+                                    (title = "R.strings.br_about_event.aboutEvent.feature_9.title()")
+                                    (description = "R.strings.br_about_event.aboutEvent.feature_9.description()")
+                                )
+                            )
+                        )
+                        (element BrDivider)
+                        (tf
+                            (class PromoTitleTextStyle)
+                            (style
+                                (marginBottom = 40px)
+                            )
+                            (text = "R.strings.br_about_event.aboutEvent.zone.title()")
+                            
+                        )
+                        (tf
+                            (style
+                                (width = 100%)
+                                (marginBottom = 40px)
+                                (leading = 5px)
+                            )
+                            (class MainBigTextStyle)
+                            (text = "R.strings.br_about_event.aboutEvent.zone.description()")
+                            
+                        )
+                        (hblock
+                            (style
+                                (width = 100%)
+                                (marginBottom = 50px)
+                                (hgap = 20px)
+                            )
+                            (block
+                                (style
+                                    (width = 50%)
+                                )
+                                (image
+                                    (style
+                                        (marginBottom = 40px)
+                                    )
+                                    (source = "R.images.gui.maps.icons.battleRoyale.infoPage.deathZone_1()")
+                                )
+                                (tf
+                                    (style
+                                        (marginBottom = 20px)
+                                    )
+                                    (class HighTitleTextStyle)
+                                    (antiAliasType = 'advanced')
+                                    (text = "R.strings.br_about_event.aboutEvent.zone.feature_1.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.zone.feature_1.description()")
+                                )
+                            )
+                            (block
+                                (style
+                                    (width = 50%)
+                                )
+                                (image
+                                    (style
+                                        (marginBottom = 40px)
+                                    )
+                                    (source = "R.images.gui.maps.icons.battleRoyale.infoPage.deathZone_2()")
+                                )
+                                (tf
+                                    (style
+                                        (marginBottom = 20px)
+                                    )
+                                    (class HighTitleTextStyle)
+                                    (antiAliasType = 'advanced')
+                                    (text = "R.strings.br_about_event.aboutEvent.zone.feature_2.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.zone.feature_2.description()")
+                                )
+                            )
+                        )
+                        (element BrDivider)
+                        (tf
+                            (class PromoTitleTextStyle)
+                            (style
+                                (marginBottom = 40px)
+                            )
+                            (text = "R.strings.br_about_event.aboutEvent.lootAndAirDrop.title()")
+                            
+                        )
+                        (tf
+                            (style
+                                (width = 100%)
+                                (marginBottom = 40px)
+                                (leading = 5px)
+                            )
+                            (class MainBigTextStyle)
+                            (text = "R.strings.br_about_event.aboutEvent.lootAndAirDrop.description()")
+                            
+                        )
+                        (hblock
+                            (style
+                                (width = 100%)
+                                (marginBottom = 40px)
+                            )
+                            (image
+                                (style
+                                    (marginRight = 20px)
+                                )
+                                (source = "R.images.gui.maps.icons.battleRoyale.infoPage.lootAndAirDrop_1()")
+                            )
+                            (block
+                                (style
+                                    (width = 100%)
+                                )
+                                (tf
+                                    (style
+                                        (marginBottom = 15px)
+                                    )
+                                    (class HighTitleTextStyle)
+                                    (antiAliasType = 'advanced')
+                                    (text = "R.strings.br_about_event.aboutEvent.lootAndAirDrop.feature_1.title()")
+                                )
+                                (tf
+                                    (class MainBigTextStyle)
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (leading = 5px)
+                                    )
+                                    (text = "R.strings.br_about_event.aboutEvent.lootAndAirDrop.feature_1.description()")
+                                )
+                            )
+                        )
+                        (hblock
+                            (style
+                                (width = 100%)
+                                (marginBottom = 40px)
+                            )
+                            (image
+                                (style
+                                    (marginRight = 20px)
+                                )
+                                (source = "R.images.gui.maps.icons.battleRoyale.infoPage.lootAndAirDrop_2()")
+                            )
+                            (block
+                                (style
+                                    (width = 100%)
+                                )
+                                (tf
+                                    (class HighTitleTextStyle)
+                                    (antiAliasType = 'advanced')
+                                    (style
+                                        (marginBottom = 15px)
+                                    )
+                                    (text = "R.strings.br_about_event.aboutEvent.lootAndAirDrop.feature_2.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.lootAndAirDrop.feature_2.description()")
+                                )
+                            )
+                        )
+                        (hblock
+                            (style
+                                (width = 100%)
+                                (marginBottom = 40px)
+                            )
+                            (image
+                                (style
+                                    (marginRight = 20px)
+                                )
+                                (source = "R.images.gui.maps.icons.battleRoyale.infoPage.lootAndAirDrop_3()")
+                            )
+                            (block
+                                (style
+                                    (width = 100%)
+                                )
+                                (tf
+                                    (class HighTitleTextStyle)
+                                    (antiAliasType = 'advanced')
+                                    (style
+                                        (marginBottom = 15px)
+                                    )
+                                    (text = "R.strings.br_about_event.aboutEvent.lootAndAirDrop.feature_3.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.lootAndAirDrop.feature_3.description()")
+                                )
+                            )
+                        )
+                        (hblock
+                            (style
+                                (width = 100%)
+                                (marginBottom = 40px)
+                            )
+                            (image
+                                (style
+                                    (marginRight = 20px)
+                                )
+                                (source = "R.images.gui.maps.icons.battleRoyale.infoPage.lootAndAirDrop_4()")
+                            )
+                            (block
+                                (style
+                                    (width = 100%)
+                                    (textColor = 0x8c8c7e)
+                                )
+                                (tf
+                                    (class HighTitleTextStyle)
+                                    (antiAliasType = 'advanced')
+                                    (style
+                                        (marginBottom = 15px)
+                                    )
+                                    (text = "R.strings.br_about_event.aboutEvent.lootAndAirDrop.feature_4.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.lootAndAirDrop.feature_4.description()")
+                                )
+                            )
+                        )
+                        (element BrDivider)
+                        (tf
+                            (class PromoTitleTextStyle)
+                            (style
+                                (marginBottom = 40px)
+                            )
+                            (text = "R.strings.br_about_event.aboutEvent.specialEquipment.title()")
+                            
+                        )
+                        (tf
+                            (style
+                                (width = 100%)
+                                (marginBottom = 40px)
+                                (leading = 5px)
+                            )
+                            (class HighTitleTextStyle)
+                            (text = "R.strings.br_about_event.aboutEvent.specialEquipment.description_1()")
+                        )
+                        (tf
+                            (style
+                                (width = 100%)
+                                (marginBottom = 40px)
+                                (leading = 5px)
+                            )
+                            (class MainBigTextStyle)
+                            (text = "R.strings.br_about_event.aboutEvent.specialEquipment.description_3()")
+                        )
+                        (hblock
+                            (style
+                                (width = 100%)
+                                (marginBottom = 50px)
+                                (hgap = 20px)
+                            )
+                            (block
+                                (style
+                                    (width = 33%)
+                                )
+                                (image
+                                    (style
+                                        (marginBottom = 40px)
+                                    )
+                                    (source = "R.images.gui.maps.icons.battleRoyale.infoPage.specialEquipment_1()")
+                                )
+                                (hblock
+                                    (image
+                                        (source = "R.images.gui.maps.icons.battleRoyale.infoPage.ussrIcon()")
+                                        (style
+                                            (marginRight = 5px)
+                                            (marginTop = 3px)
+                                        )
+                                    )
+                                    (tf
+                                        (style
+                                            (marginBottom = 20px)
+                                        )
+                                        (class HighTitleTextStyle)
+                                        (antiAliasType = 'advanced')
+                                        (text = "R.strings.br_about_event.aboutEvent.specialEquipment.feature_1.title()")
+                                    )
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.specialEquipment.feature_1.description()")
+                                )
+                            )
+                            (block
+                                (style
+                                    (width = 33%)
+                                )
+                                (image
+                                    (style
+                                        (marginBottom = 40px)
+                                    )
+                                    (source = "R.images.gui.maps.icons.battleRoyale.infoPage.specialEquipment_2()")
+                                )
+                                (hblock
+                                    (image
+                                        (source = "R.images.gui.maps.icons.battleRoyale.infoPage.germanIcon()")
+                                        (style
+                                            (marginRight = 5px)
+                                            (marginTop = 5px)
+                                        )
+                                    )
+                                    (tf
+                                        (style
+                                            (marginBottom = 20px)
+                                        )
+                                        (class HighTitleTextStyle)
+                                        (antiAliasType = 'advanced')
+                                        (text = "R.strings.br_about_event.aboutEvent.specialEquipment.feature_2.title()")
+                                    )
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.specialEquipment.feature_2.description()")
+                                )
+                            )
+                            (block
+                                (style
+                                    (width = 33%)
+                                )
+                                (image
+                                    (style
+                                        (marginBottom = 40px)
+                                    )
+                                    (source = "R.images.gui.maps.icons.battleRoyale.infoPage.specialEquipment_3()")
+                                )
+                                (hblock
+                                    (image
+                                        (source = "R.images.gui.maps.icons.battleRoyale.infoPage.usaIcon()")
+                                        (style
+                                            (marginRight = 5px)
+                                            (marginTop = 5px)
+                                        )
+                                    )
+                                    (tf
+                                        (style
+                                            (marginBottom = 20px)
+                                        )
+                                        (class HighTitleTextStyle)
+                                        (antiAliasType = 'advanced')
+                                        (text = "R.strings.br_about_event.aboutEvent.specialEquipment.feature_3.title()")
+                                    )
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.specialEquipment.feature_3.description()")
+                                )
+                            )
+                        )
+                        (element BrDivider)
+                        (hblock
+                            (style
+                                (width = 100%)
+                                (marginBottom = 40px)
+                            )
+                            (image
+                                (style
+                                    (width = 50%)
+                                )
+                                (source = "R.images.gui.maps.icons.battleRoyale.infoPage.cone()")
+                            )
+                            (block
+                                (style
+                                    (width = 50%)
+                                    (paddingLeft = 20px)
+                                )
+                                (tf
+                                    (class PromoTitleTextStyle)
+                                    (style
+                                        (marginBottom = 30px)
+                                    )
+                                    (text = "R.strings.br_about_event.aboutEvent.cone.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (leading = 10px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.cone.description()")
+                                )
+                            )
+                        )
+                        (element BrDivider)
+                        (hblock
+                            (style
+                                (width = 100%)
+                                (marginBottom = 40px)
+                            )
+                            (block
+                                (style
+                                    (width = 50%)
+                                    (paddingRight = 20px)
+                                )
+                                (tf
+                                    (class PromoTitleTextStyle)
+                                    (style
+                                        (marginBottom = 30px)
+                                    )
+                                    (text = "R.strings.br_about_event.aboutEvent.radar.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (leading = 10px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.radar.description()")
+                                )
+                            )
+                            (image
+                                (style
+                                    (width = 50%)
+                                )
+                                (source = "R.images.gui.maps.icons.battleRoyale.infoPage.radar()")
+                            )
+                        )
+                        (element BrDivider)
+                        (tf
+                            (class PromoTitleTextStyle)
+                            (style
+                                (marginBottom = 40px)
+                            )
+                            (text = "R.strings.br_about_event.aboutEvent.personalConsumables.title()")
+                            
+                        )
+                        (tf
+                            (style
+                                (width = 100%)
+                                (marginBottom = 40px)
+                                (leading = 5px)
+                            )
+                            (class MainBigTextStyle)
+                            (text = "R.strings.br_about_event.aboutEvent.personalConsumables.description()")
+                            
+                        )
+                        (hblock
+                            (style
+                                (width = 100%)
+                                (marginBottom = 50px)
+                                (hgap = 20px)
+                            )
+                            (block
+                                (style
+                                    (width = 25%)
+                                )
+                                (image
+                                    (source = "R.images.gui.maps.icons.battleRoyale.infoPage.personalConsumables_1()")
+                                    (style
+                                        (marginBottom = 40px)
+                                    )
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (marginBottom = 20px)
+                                        (textAlign = "center")
+                                    )
+                                    (class HighTitleTextStyle)
+                                    (antiAliasType = 'advanced')
+                                    (text = "R.strings.br_about_event.aboutEvent.personalConsumables.feature_1.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (textAlign = "center")
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.personalConsumables.feature_1.description()")
+                                )
+                            )
+                            (block
+                                (style
+                                    (width = 25%)
+                                )
+                                (image
+                                    (source = "R.images.gui.maps.icons.battleRoyale.infoPage.personalConsumables_2()")
+                                    (style
+                                        (marginBottom = 40px)
+                                    )
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (marginBottom = 20px)
+                                        (textAlign = "center")
+                                    )
+                                    (class HighTitleTextStyle)
+                                    (antiAliasType = 'advanced')
+                                    (text = "R.strings.br_about_event.aboutEvent.personalConsumables.feature_2.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (textAlign = "center")
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.personalConsumables.feature_2.description()")
+                                )
+                            )
+                            (block
+                                (style
+                                    (width = 25%)
+                                )
+                                (image
+                                    (source = "R.images.gui.maps.icons.battleRoyale.infoPage.personalConsumables_3()")
+                                    (style
+                                        (marginBottom = 40px)
+                                    )
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (marginBottom = 20px)
+                                        (textAlign = "center")
+                                    )
+                                    (class HighTitleTextStyle)
+                                    (antiAliasType = 'advanced')
+                                    (text = "R.strings.br_about_event.aboutEvent.personalConsumables.feature_3.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (textAlign = "center")
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.personalConsumables.feature_3.description()")
+                                )
+                            )
+                            (block
+                                (style
+                                    (width = 25%)
+                                )
+                                (image
+                                    (source = "R.images.gui.maps.icons.battleRoyale.infoPage.personalConsumables_4()")
+                                    (style
+                                        (marginBottom = 40px)
+                                    )
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (marginBottom = 20px)
+                                        (textAlign = "center")
+                                    )
+                                    (class HighTitleTextStyle)
+                                    (antiAliasType = 'advanced')
+                                    (text = "R.strings.br_about_event.aboutEvent.personalConsumables.feature_4.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (textAlign = "center")
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.personalConsumables.feature_4.description()")
+                                )
+                            )
+                        )
+                        (element BrDivider)
+                        (tf
+                            (class PromoTitleTextStyle)
+                            (style
+                                (marginBottom = 40px)
+                            )
+                            (text = "R.strings.br_about_event.aboutEvent.globalAbilities.title()")
+                            
+                        )
+                        (tf
+                            (style
+                                (width = 100%)
+                                (marginBottom = 40px)
+                                (leading = 5px)
+                            )
+                            (class MainBigTextStyle)
+                            (text = "R.strings.br_about_event.aboutEvent.globalAbilities.description()")
+                            
+                        )
+                        (hblock
+                            (style
+                                (width = 100%)
+                                (marginBottom = 50px)
+                                (hgap = 20px)
+                            )
+                            (block
+                                (style
+                                    (width = 25%)
+                                )
+                                (image
+                                    (source = "R.images.gui.maps.icons.battleRoyale.infoPage.globalAbilities_1()")
+                                    (style
+                                        (marginBottom = 40px)
+                                    )
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (marginBottom = 20px)
+                                        (textAlign = "center")
+                                    )
+                                    (class HighTitleTextStyle)
+                                    (antiAliasType = 'advanced')
+                                    (text = "R.strings.br_about_event.aboutEvent.globalAbilities.feature_1.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (textAlign = "center")
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.globalAbilities.feature_1.description()")
+                                )
+                            )
+                            (block
+                                (style
+                                    (width = 25%)
+                                )
+                                (image
+                                    (source = "R.images.gui.maps.icons.battleRoyale.infoPage.globalAbilities_2()")
+                                    (style
+                                        (marginBottom = 40px)
+                                    )
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (marginBottom = 20px)
+                                        (textAlign = "center")
+                                    )
+                                    (class HighTitleTextStyle)
+                                    (antiAliasType = 'advanced')
+                                    (text = "R.strings.br_about_event.aboutEvent.globalAbilities.feature_2.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (textAlign = "center")
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.globalAbilities.feature_2.description()")
+                                )
+                            )
+                            (block
+                                (style
+                                    (width = 25%)
+                                )
+                                (image
+                                    (source = "R.images.gui.maps.icons.battleRoyale.infoPage.globalAbilities_3()")
+                                    (style
+                                        (marginBottom = 40px)
+                                    )
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (marginBottom = 20px)
+                                        (textAlign = "center")
+                                    )
+                                    (class HighTitleTextStyle)
+                                    (antiAliasType = 'advanced')
+                                    (text = "R.strings.br_about_event.aboutEvent.globalAbilities.feature_3.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (textAlign = "center")
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.globalAbilities.feature_3.description()")
+                                )
+                            )
+                            (block
+                                (style
+                                    (width = 25%)
+                                )
+                                (image
+                                    (source = "R.images.gui.maps.icons.battleRoyale.infoPage.globalAbilities_4()")
+                                    (style
+                                        (marginBottom = 40px)
+                                    )
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (marginBottom = 20px)
+                                        (textAlign = "center")
+                                    )
+                                    (class HighTitleTextStyle)
+                                    (antiAliasType = 'advanced')
+                                    (text = "R.strings.br_about_event.aboutEvent.globalAbilities.feature_4.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (textAlign = "center")
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.globalAbilities.feature_4.description()")
+                                )
+                            )
+                        )
+                        (element BrDivider)
+                        (tf
+                            (class PromoTitleTextStyle)
+                            (style
+                                (marginBottom = 40px)
+                            )
+                            (text = "R.strings.br_about_event.aboutEvent.criticalDamage.title()")
+                            
+                        )
+                        (tf
+                            (style
+                                (width = 100%)
+                                (marginBottom = 40px)
+                                (leading = 5px)
+                            )
+                            (class MainBigTextStyle)
+                            (text = "R.strings.br_about_event.aboutEvent.criticalDamage.description_1()")
+                            
+                        )
+                        (block
+                            (style
+                                (marginBottom = 50px)
+                            )
+                            (image
+                                (source = "R.images.gui.maps.icons.battleRoyale.infoPage.criticalDamage()")
+                                (style
+                                    (marginBottom = 40px)
+                                )
+                            )
+                            (tf
+                                (style
+                                    (width = 100%)
+                                    (textColor = 0x8c8c7e)
+                                    (textAlign = "center")
+                                    (leading = 5px)
+                                )
+                                (class MainTextStyle)
+                                (text = "R.strings.br_about_event.aboutEvent.criticalDamage.description_2()")
+                            )
+                        )
+                        (element BrDivider)
+                        (tf
+                            (class PromoTitleTextStyle)
+                            (style
+                                (marginBottom = 40px)
+                            )
+                            (text = "R.strings.br_about_event.aboutEvent.titlesAndLeagueAwards.title()")
+                            
+                        )
+                        (tf
+                            (style
+                                (width = 100%)
+                                (marginBottom = 40px)
+                                (leading = 5px)
+                            )
+                            (class MainBigTextStyle)
+                            (text = "R.strings.br_about_event.aboutEvent.titlesAndLeagueAwards.description()")
+                            
+                        )
+                        (hblock
+                            (style
+                                (width = 100%)
+                                (marginBottom = 50px)
+                                (hgap = 80px)
+                            )
+                            (block
+                                (style
+                                    (width = 50%)
+                                )
+                                (image
+                                    (source = "R.images.gui.maps.icons.battleRoyale.infoPage.titlesAndLeagueAwards_1()")
+                                    (style
+                                        (marginBottom = 40px)
+                                    )
+                                )
+                                (tf
+                                    (style
+                                        (marginBottom = 20px)
+                                    )
+                                    (class HighTitleTextStyle)
+                                    (antiAliasType = 'advanced')
+                                    (text = "R.strings.br_about_event.aboutEvent.titlesAndLeagueAwards.feature_1.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.titlesAndLeagueAwards.feature_1.description()")
+                                )
+                            )
+                            (block
+                                (style
+                                    (width = 50%)
+                                )
+                                (image
+                                    (source = "R.images.gui.maps.icons.battleRoyale.infoPage.titlesAndLeagueAwards_2()")
+                                    (style
+                                        (marginBottom = 40px)
+                                    )
+                                )
+                                (tf
+                                    (style
+                                        (marginBottom = 20px)
+                                    )
+                                    (class HighTitleTextStyle)
+                                    (antiAliasType = 'advanced')
+                                    (text = "R.strings.br_about_event.aboutEvent.titlesAndLeagueAwards.feature_2.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (leading = 5px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.titlesAndLeagueAwards.feature_2.description()")
+                                )
+                            )
+                        )
+                        (element BrDivider)
+                        (hblock
+                            (style
+                                (width = 100%)
+                                (paddingBottom = 60px)
+                            )
+                            (image
+                                (style
+                                    (width = 50%)
+                                )
+                                (source = "R.images.gui.maps.icons.battleRoyale.infoPage.awards()")
+                            )
+                            (block
+                                (style
+                                    (width = 50%)
+                                    (paddingLeft = 40px)
+                                )
+                                (tf
+                                    (class PromoTitleTextStyle)
+                                    (style
+                                        (marginBottom = 30px)
+                                    )
+                                    (text = "R.strings.br_about_event.aboutEvent.awards.title()")
+                                )
+                                (tf
+                                    (style
+                                        (width = 100%)
+                                        (textColor = 0x8c8c7e)
+                                        (leading = 10px)
+                                    )
+                                    (class MainBigTextStyle)
+                                    (text = "R.strings.br_about_event.aboutEvent.awards.description()")
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        )
+    )
+)
+
+(def element BrFeatures() layout = true
+    (scope
+        (var image:str = '')
+        (var description:str = '')
+        (var title:str = '')
+    )
+    (style
+        (maxWidth = 100%)
+        (flow = "Flow.HORIZONTAL")
+        (marginBottom = 25px)
+    )
+    (image
+        (style
+            (marginRight = 20px)
+        )
+        (bind source "image")
+    )
+    (block
+        (style
+            (width = 200px)
+            (marginTop = 10px)
+        )
+        (tf
+            (style
+                (width = 100%)
+                (marginBottom = 20px)
+            )
+            (class HighTitleTextStyle)
+            (antiAliasType = 'advanced')
+            (bind text "title")
+        )
+        (tf
+            (style
+                (width = 100%)
+                (leading = 5px)
+            )
+            (class MainBigTextStyle)
+            (bind text "description")
+        )
+    )
+)
+
+(def layout BrDivider()
+    (style
+        (width = 100%)
+        (height = 10px)
+        (marginBottom = 60px)
+
+    )
+    (block
+        (style
+            (maxWidth = 100%)
+            (backgroundSize = "autosize")
+            (backgroundImage = "R.images.gui.maps.icons.battleRoyale.infoPage.divider()")
+            (position="absolute")
+            (marginTop = -85px)
+            (marginBottom = -85px)
+            (zindex = 0)
+        )
+    )
+)

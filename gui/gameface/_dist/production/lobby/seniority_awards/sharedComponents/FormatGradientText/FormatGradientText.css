@@ -1,0 +1,19 @@
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FormatGradientText_gradientBox_c3 {
+    position: relative;
+}
+
+.FormatGradientText_gradientText_39 {
+    color: #f4e58b;
+}
+
+.FormatGradientText_gradientText__copied_f8 {
+        color: #ddab61;
+        position: absolute;
+        mask-image: linear-gradient(transparent, #fff);
+    }
+

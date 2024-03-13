@@ -3,16 +3,17 @@
     position: absolute;
 }
 
-.TooltipDecorator_decorator_3d {
-    padding: 4rem 6rem 8rem; /* border offset*/
-    border-image-source: url('R.atlases.components.tooltip_background');
-    border-image-slice: 24 fill;
-    border-image-width: 24rem;
-    position: relative;
-}
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.atlases.components.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
 
-.TooltipDecorator_decoratorContent_de {
-    background-color: #000;
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .Content_base_d2 {
@@ -38,7 +39,7 @@
     width: 420rem;
     padding: 11rem 20rem 8rem;
 }
-.Content_base__isStyleChosen_d2 {
+.Content_base__bottom_ab {
         padding-bottom: 0;
     }
 .Content_image_90 {
@@ -114,10 +115,5 @@
 }
 .Content_paragraphTop_18 {
     margin-bottom: 20rem;
-}
-
-.FormatText_base_d0 {
-    display: flex;
-    flex-wrap: wrap;
 }
 

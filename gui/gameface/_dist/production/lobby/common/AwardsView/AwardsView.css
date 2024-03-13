@@ -663,75 +663,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     align-items: center;
     margin-bottom: 25rem;
     position: relative;
+    z-index: 3;
 }
 .mediaLarge .MainReward_reward_7c {
         margin-bottom: 50rem;
 }
-.MainReward_reward__quadruple_19 {
-        width: 25%;
-    }
-.mediaSmall .MainReward_reward__quadruple_19 {
-            width: auto;
-}
-.MainReward_imageWrapper_0a {
-    position: relative;
-}
-.MainReward_image_3d {
-    opacity: 0;
-    animation-name: MainReward_fadeInWithScale_87;
-    animation-duration: .8s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    animation-delay: 1.2s;
-    animation-iteration-count: 1;
-    width: 400rem;
-    height: 300rem;
-    margin: 50rem 5rem 0;
-    background: no-repeat center / contain;
-    position: relative;
-    z-index: 3;
-}
-.MainReward_base__medium_82 .MainReward_image_3d {
-        width: 400rem;
-        height: 300rem;
-    }
-.MainReward_base__large_9c .MainReward_image_3d {
-        width: 600rem;
-        height: 450rem;
-    }
-.MainReward_image__double_49,
-    .MainReward_image__triple_88 {
-        width: 296rem;
-        height: 222rem;
-    }
-.MainReward_base__small_b9 .MainReward_image__double_49, .MainReward_base__small_b9 .MainReward_image__triple_88 {
-            width: 296rem;
-            height: 174rem;
-        }
-.MainReward_base__medium_82 .MainReward_image__double_49, .MainReward_base__medium_82 .MainReward_image__triple_88 {
-            width: 296rem;
-            height: 222rem;
-        }
-.MainReward_base__large_9c .MainReward_image__double_49, .MainReward_base__large_9c .MainReward_image__triple_88 {
-            width: 400rem;
-            height: 300rem;
-        }
-.MainReward_image__quadruple_9e {
-        width: 230rem;
-        height: 174rem;
-    }
-.MainReward_base__small_b9 .MainReward_image__quadruple_9e {
-            width: 230rem;
-            height: 174rem;
-        }
-.MainReward_base__medium_82 .MainReward_image__quadruple_9e {
-            width: 296rem;
-            height: 222rem;
-        }
-.MainReward_base__large_9c .MainReward_image__quadruple_9e {
-            width: 400rem;
-            height: 300rem;
-        }
 .MainReward_captions_68 {
     opacity: 0;
     animation-name: MainReward_fadeIn_34;
@@ -766,17 +702,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-duration: .8s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(.07, .82, .17, 1);
-    animation-delay: 1.8s;
+    animation-delay: 1.4s;
     animation-iteration-count: 1;
     color: #E9E2BF;
     font-size: 24rem;
     position: absolute;
-    top: 82%;
-    right: 5%;
+    right: 0;
+    bottom: 10%;
     z-index: 4;
-}
-.mediaMedium .MainReward_count_24 {
-        right: 10%;
 }
 
 /* colors*/

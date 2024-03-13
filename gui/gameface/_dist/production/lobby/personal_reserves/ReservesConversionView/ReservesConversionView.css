@@ -441,6 +441,9 @@
 .BoosterList_boosterIcon_0c {
     width: 180rem;
     height: 135rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .BoosterList_boosterIcon_battleXP_51 {

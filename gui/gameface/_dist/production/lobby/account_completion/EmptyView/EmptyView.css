@@ -136,12 +136,14 @@
     align-items: center;
     width: 580rem;
     height: 100vh;
+    background: url('R.images.gui.maps.icons.account_completion.curtain_top_bg_small') no-repeat center top / contain;
     position: relative;
     cursor: auto;
 }
     .CurtainSubViewTemplate_base__small_53,
     .CurtainSubViewTemplate_base__extraSmall_2d {
         width: 386rem;
+        background-image: url('R.images.gui.maps.icons.account_completion.curtain_top_bg');
     }
 
 .CurtainSubViewTemplate_closeButton_40 {

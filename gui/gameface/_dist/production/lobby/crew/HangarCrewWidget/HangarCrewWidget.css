@@ -1,0 +1,1172 @@
+.ButtonsBar_base_9c {
+    display: flex;
+    flex-direction: row;
+    width: 336rem;
+    height: 35rem;
+    background: url('R.images.gui.maps.icons.crewWidget.buttonsBar.background') no-repeat center / contain;
+    position: relative;
+}
+
+.ButtonsBar_button_d1 {
+    width: 44rem;
+    height: 20rem;
+    margin-top: 7rem;
+    position: relative;
+}
+
+.ButtonsBar_button__crewOperaions_70 {
+        margin-left: 8rem;
+    }
+
+.ButtonsBar_button__crewBooks_b4 {
+        margin-left: 12rem;
+        z-index: 2;
+    }
+
+.ButtonsBar_button__toggle_64 {
+        margin-left: 6rem;
+        z-index: 1;
+    }
+
+.ButtonsBar_icon_57 {
+    width: 32rem;
+    height: 22rem;
+    position: relative;
+}
+
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    position: relative;
+    cursor: pointer;
+}
+
+    .CButton_base__main_42,
+    .CButton_base__primary_7f,
+    .CButton_base__primaryGreen_6f,
+    .CButton_base__primaryRed_ec,
+    .CButton_base__secondary_50 {
+        background-size: 100% 100%;
+    }
+
+    .CButton_base__main_42 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+
+    .CButton_base__primary_7f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+
+    .CButton_base__primaryGreen_6f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+
+    .CButton_base__primaryRed_ec {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+
+    .CButton_base__secondary_50 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+
+    .CButton_base__ghost_ed {
+        border-radius: 3rem;
+        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
+            0 0 0 1rem rgba(255,255,255, .15) inset;
+        background-color: rgba(0,0,0, .15);
+    }
+
+    .CButton_base__extraSmall_27 {
+        min-height: 17rem;
+        padding: 0 16rem;
+    }
+
+    .CButton_base__small_df,
+    .CButton_base__medium_74 {
+        padding: 0 20rem;
+    }
+
+    .CButton_base__small_df {
+        min-height: 18rem;
+    }
+
+    .CButton_base__medium_74 {
+        min-height: 32rem;
+    }
+
+    .CButton_base__disabled_d9 {
+        cursor: default;
+    }
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+.CButton_base__primary_7f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+.CButton_base__secondary_50 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow .16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+        border-radius: 2rem;
+        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
+    }
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+        transition: opacity .16s ease-in-out;
+    }
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+        opacity: 1;
+    }
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
+        background-color: rgba(8,6,0, .18);
+        background-image: none;
+    }
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+        opacity: 1;
+    }
+.CButton_stateDisabled_54 {
+    background-color: rgba(0,0,0, .25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+        opacity: 1;
+    }
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: .03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang=ja],
+    .CButton_content_cc[lang=ko],
+    .CButton_content_cc[lang=zh_tw],
+    .CButton_content_cc[lang=zh_sg],
+    .CButton_content_cc[lang=zh_cn],
+    .CButton_content_cc[lang=th] {
+        font-weight: 400;
+    }
+.CButton_base__main_42 .CButton_content_cc,
+    .CButton_base__primaryRed_ec .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #600;
+    }
+.CButton_base__secondary_50 .CButton_content_cc {
+        color: rgba(254,254,236, .75);
+    }
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #1c2502;
+    }
+.CButton_base__extraSmall_27 .CButton_content_cc {
+        font-size: 12rem;
+    }
+.CButton_base__small_df .CButton_content_cc {
+        font-size: 14rem;
+    }
+.CButton_base__medium_74 .CButton_content_cc {
+        font-size: 15rem;
+    }
+.CButton_base__disabled_d9 .CButton_content_cc {
+        opacity: .6;
+    }
+
+.Counter_base_9e {
+    display: flex;
+    min-width: 14rem;
+    height: 14rem;
+    position: relative;
+    z-index: 0;
+    animation: Counter_show_be ease-in-out forwards;
+}
+
+    .Counter_base__big_19 {
+        min-width: 21rem;
+        height: 21rem;
+    }
+
+    .Counter_base__small_3b {
+        min-width: 13rem;
+        height: 13rem;
+    }
+
+    .Counter_base__empty_98 {
+        min-width: 6rem;
+        height: 6rem;
+    }
+
+    .Counter_base__animated_40 {
+        animation-duration: .2s;
+    }
+
+    .Counter_base__hidden_56 {
+        animation-name: Counter_hide_b6;
+    }
+.Counter_bg_74 {
+    border: 1rem solid #fe4e0f;
+    border-radius: 7rem;
+    box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
+            0 0 6rem rgba(254,103,0, .2),
+            0 0 12rem 4rem rgba(249,0,0, .3);
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.Counter_base__big_19 .Counter_bg_74 {
+        border-radius: 11rem;
+    }
+.Counter_base__small_3b .Counter_bg_74 {
+        border-radius: 7rem;
+    }
+.Counter_value_3e {
+    display: flex;
+    padding: 0 4rem;
+    color: #fefeec;
+    font-size: 11rem;
+    line-height: 13rem;
+    white-space: nowrap;
+}
+.Counter_base__big_19 .Counter_value_3e {
+        padding: 0 7rem;
+        font-size: 14rem;
+        line-height: 20rem;
+    }
+.Counter_base__small_3b .Counter_value_3e {
+        font-size: 9rem;
+        line-height: 12rem;
+    }
+.Counter_value__text_d6 {
+        padding: 0 7rem;
+    }
+.Counter_base__big_19 .Counter_value__text_d6 {
+            padding: 0 10rem;
+        }
+.Counter_base__small_3b .Counter_value__text_d6 {
+            padding: 0 5rem;
+            font-size: 10rem;
+        }
+.Counter_base__pattern_71 .Counter_value_3e {
+        display: none;
+    }
+.Counter_plus_15 {
+    position: relative;
+    top: -1rem;
+}
+.Counter_pattern_83 {
+    display: none;
+}
+.Counter_base__pattern_71 .Counter_pattern_83 {
+        display: block;
+        border-radius: 50%;
+        background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+        opacity: .8;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+@keyframes Counter_show_be {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes Counter_hide_b6 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+.CrewBookButton_base_da {
+    position: relative;
+}
+
+.CrewBookButton_button_ee {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.CrewBookButton_icon_11 {
+    width: 32rem;
+    height: 22rem;
+    background: url('R.images.gui.maps.icons.crewWidget.buttonsBar.icons.crewBooks') no-repeat center / contain;
+    position: relative;
+}
+
+.CrewBookButton_discount_6b {
+    width: 44rem;
+    height: 42rem;
+    background: url('R.images.gui.maps.icons.crewWidget.buttonsBar.discount') no-repeat center / contain;
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    pointer-events: none;
+}
+
+.CrewBookButton_counter_5d {
+    position: absolute;
+    top: -6rem;
+    right: 2rem;
+    pointer-events: none;
+}
+
+.PopoverDecorator_base_ed {
+    display: flex;
+    position: absolute;
+}
+
+.PopoverDecorator_decorator_d3 {
+    padding: 58rem;
+    border-image-source: url('R.images.gui.maps.icons.popovers.popover_bg');
+    border-image-slice: 90 fill;
+    border-image-width: 90rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.PopoverDecorator_arrow_8a {
+    background: no-repeat 0 0 / contain;
+    position: absolute;
+}
+
+.PopoverDecorator_arrow__bottom_c3,
+    .PopoverDecorator_arrow__top_6e {
+        width: 301rem;
+        height: 90rem;
+        margin: 0 58rem;
+        background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_top');
+        left: 50%;
+    }
+
+.PopoverDecorator_arrow__left_7a,
+    .PopoverDecorator_arrow__right_b6 {
+        width: 84rem;
+        height: 181rem;
+        margin: 58rem 0;
+        background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_left');
+        top: 50%;
+    }
+
+.PopoverDecorator_arrow__left_7a {
+        right: 10rem;
+        transform: scaleX(-1) translateY(-90rem);
+    }
+
+.PopoverDecorator_arrow__right_b6 {
+        left: 10rem;
+        transform: translateY(-90rem);
+    }
+
+.PopoverDecorator_arrow__top_6e {
+        bottom: 8rem;
+        transform: scaleY(-1) translateX(-150rem);
+    }
+
+.PopoverDecorator_arrow__bottom_c3 {
+        top: 8rem;
+        transform: translateX(-150rem);
+    }
+
+.PopoverDecorator_closeBtn_32 {
+    width: 18rem;
+    height: 18rem;
+    background: url('R.images.gui.maps.icons.popovers.close_button_slim_up') no-repeat 0 0 / contain;
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.PopoverDecorator_closeBtn_32:hover {
+        filter: brightness(160%);
+    }
+
+.PopoverDecorator_closeBtn_32:active {
+        background-image: url('R.images.gui.maps.icons.popovers.close_button_slim_press');
+        filter: brightness(100%);
+    }
+
+.PopoverDecorator_content_f0 {
+    position: relative;
+    z-index: 2;
+}
+
+.CrewOperationsButton_base_e3 {
+    position: relative;
+}
+
+.CrewOperationsButton_button_8e {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.CrewOperationsButton_icon_0c {
+    width: 32rem;
+    height: 22rem;
+    background: url('R.images.gui.maps.icons.crewWidget.buttonsBar.icons.crewOperations') no-repeat center / contain;
+    position: relative;
+}
+
+.CrewOperationsButton_autoReturnIcon_f0 {
+    width: 32rem;
+    height: 22rem;
+    background: url('R.images.gui.maps.icons.crewWidget.buttonsBar.arrows') no-repeat center / contain;
+    position: absolute;
+    top: -9rem;
+    right: -16rem;
+    pointer-events: none;
+}
+
+.ToggleButton_base_09 {
+    border-radius: 2rem;
+    position: relative;
+}
+
+.ToggleButton_overlay_76 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 2rem;
+    pointer-events: none;
+}
+
+.ToggleButton_base__active_05 .ToggleButton_overlay_76 {
+        border: 1rem solid rgba(255, 195, 99, .75);
+        box-shadow: 0 0 0 1rem rgba(0, 0, 0, .6), 0 0 7px rgba(238, 112, 0, .5);
+        background: linear-gradient(
+            180deg,
+            rgba(255, 42, 0, .1) 0%,
+            rgba(255, 42, 0, 0) .01%,
+            rgba(255, 127, 0, .1) 100%
+        );
+    }
+
+.ToggleButton_button_14 {
+    padding: 0;
+}
+
+.ToggleButton_indicator_c2 {
+    width: 40rem;
+    height: 29rem;
+    background: url('R.images.gui.maps.icons.buttons.toggle_indicator') no-repeat center / contain;
+    position: absolute;
+    bottom: -14rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    pointer-events: none;
+}
+
+.ToggleButton_base__active_05 .ToggleButton_indicator_c2 {
+        background-image: url('R.images.gui.maps.icons.buttons.toggle_indicator_active');
+    }
+
+.ToggleButton_counter_86 {
+    position: absolute;
+    top: -6rem;
+    right: -3rem;
+    pointer-events: none;
+}
+
+.CrewToggleButton_base_03 {
+    position: relative;
+}
+
+.CrewToggleButton_button_89 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.CrewToggleButton_iconContainer_f9 {
+    width: 32rem;
+    height: 20rem;
+    position: relative;
+}
+
+.CrewToggleButton_icon_a7 {
+    width: 32rem;
+    height: 22rem;
+    background: no-repeat 50% / contain;
+    position: relative;
+}
+
+.CrewWidgetApp_base_cc {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.CrewWidgetApp_buttonsBar_e5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.CrewWidgetApp_slotsList_ee {
+    margin-top: 38rem;
+}
+
+.BaseSlot_base_97 {
+    display: flex;
+    flex-direction: row;
+    width: 370rem;
+    height: 61rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.background') no-repeat center / contain;
+    position: relative;
+    cursor: pointer;
+}
+
+    .BaseSlot_base__hovered_61 {
+        background-image: url('R.images.gui.maps.icons.crewWidget.slot.hoveredBackground');
+    }
+
+    .BaseSlot_base__inactive_7e {
+        cursor: initial;
+    }
+
+.BaseSlot_hoverGlow_de {
+    width: 360rem;
+    height: 88rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.hoverGlow') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -14rem;
+    left: -14rem;
+    transition: opacity .3s;
+    pointer-events: none;
+}
+
+.BaseSlot_hoverGlow__visible_f4 {
+        opacity: 1;
+    }
+
+.BaseSlot_selectedGlow_25 {
+    width: 360rem;
+    height: 88rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.selectedGlow') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -14rem;
+    left: -14rem;
+    transition: opacity .3s;
+    pointer-events: none;
+}
+
+.BaseSlot_selectedGlow__visible_2f {
+        opacity: 1;
+    }
+
+.BaseSlot_hover_e9 {
+    width: 300rem;
+    height: 60rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.tankmanSlotHover') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity .3s;
+}
+
+.BaseSlot_hover__visible_1f {
+        opacity: 1;
+    }
+
+.BaseSlot_disabled_67 {
+    width: 370rem;
+    height: 61rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.disabledLayer') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.DogSlot_base_8f {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.DogSlot_icon_ba {
+    width: 100rem;
+    height: 60rem;
+    background: url('R.images.gui.maps.icons.tankmen.icons.small.ussr_dog_1') no-repeat center / contain;
+    position: relative;
+}
+
+.DogSlot_container_63 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+}
+
+.DogSlot_roleAndName_c9 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7rem;
+    position: relative;
+}
+
+.DogSlot_role_5c {
+    width: 18rem;
+    height: 18rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.dogPaw') no-repeat center / contain;
+    position: relative;
+}
+
+.DogSlot_name_9c {
+    color: #C9C9B6;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-left: 4rem;
+    position: relative;
+}
+
+.DogSlot_btnDetails_b7 {
+    width: 118rem;
+    height: 20rem;
+    margin-top: 8rem;
+}
+
+.ChangeCrewButton_base_0f {
+    width: 44rem;
+    height: 42rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .ChangeCrewButton_base__inactive_77 {
+        cursor: initial;
+    }
+
+.ChangeCrewButton_normalState_07 {
+    width: 44rem;
+    height: 42rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.btn_crew_change_default') no-repeat center / contain;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity .3s;
+}
+
+.ChangeCrewButton_normalState__hide_db {
+        opacity: 0;
+    }
+
+.ChangeCrewButton_hoverState_68 {
+    width: 74rem;
+    height: 72rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.btn_crew_change_hover') no-repeat center / cover;
+    opacity: 0;
+    position: absolute;
+    top: -15rem;
+    left: -15rem;
+    transition: opacity .3s;
+}
+
+.ChangeCrewButton_hoverState__show_89 {
+        opacity: 1;
+    }
+
+.ChangeCrewButton_hoverState_68 {
+    pointer-events: none;
+}
+
+.CrewSlot_base_ac {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.CrewSlot_changeCrew_02 {
+    margin: 9rem 0 0 8rem;
+    position: relative;
+    z-index: 1;
+}
+
+.CrewSlot_content_5b {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.CrewSlot_content__withChangeCrewButton_4e {
+        right: 41rem;
+    }
+
+.CrewSlot_warningHighlight_ff {
+    width: 300rem;
+    height: 60rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.untrainedTankmanHighlight') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.CrewSlot_selectHighlight_50 {
+    width: 300rem;
+    height: 60rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.selectedTankmanHighlight') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.CrewSlot_selectHighlightInTankmanMode_37 {
+    width: 300rem;
+    height: 60rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.selectedTankmanHighlight2') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.TankmanIcon_base_f9 {
+    background: no-repeat center / contain;
+}
+
+    .TankmanIcon_base__big_98 {
+        width: 158rem;
+        height: 118rem;
+    }
+
+    .TankmanIcon_base__small_b2,
+    .TankmanIcon_base__barracks_62 {
+        width: 100rem;
+        height: 60rem;
+    }
+
+    .TankmanIcon_base__special_3f {
+        width: 444rem;
+        height: 300rem;
+    }
+
+    .TankmanIcon_base__c_204x256_97 {
+        width: 204rem;
+        height: 256rem;
+    }
+
+.TankmanIcon_innerShadow_c6 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.gui.maps.icons.tankmen.crew.icon_shadow') no-repeat center / contain;
+    pointer-events: none;
+}
+
+.AcceleratedTrainingIcon_base_4f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 16rem;
+    height: 16rem;
+    pointer-events: auto;
+}
+
+.AcceleratedTrainingIcon_icon_45 {
+    width: 34rem;
+    height: 34rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.speedXpIcon') no-repeat center / contain;
+}
+
+.SpecializationAndName_base_ef {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.SpecializationAndName_roleWrapper_87 {
+    display: flex;
+    pointer-events: auto;
+}
+
+.SpecializationAndName_role_55 {
+    width: 18rem;
+    height: 18rem;
+    background: no-repeat 50% / contain;
+    opacity: .4;
+    position: relative;
+}
+
+.SpecializationAndName_role__withGap_35 {
+        margin-left: 5rem;
+    }
+
+.SpecializationAndName_percent_e6 {
+    color: #F2F2F7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-left: 4rem;
+    opacity: .7;
+    position: relative;
+}
+
+.SpecializationAndName_percent__untrained_1b {
+        color: #FF2717;
+        opacity: 1;
+    }
+
+.SpecializationAndName_acceleratedTrainingIcon_35 {
+    margin: 2rem 0 0 3rem;
+}
+
+.SpecializationAndName_name_aa {
+    color: #C9C9B6;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    flex: 1;
+    margin-left: 4rem;
+    text-overflow: ellipsis;
+    text-shadow: 0 0 8rem #333;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.EmptySlotContent_base_77 {
+    width: 370rem;
+    height: 61rem;
+    position: relative;
+}
+
+.EmptySlotContent_tankmanIcon_07 {
+    margin-left: 3rem;
+    position: relative;
+}
+
+.EmptySlotContent_icon_a8 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.EmptySlotContent_specialization_1f {
+    position: absolute;
+    top: 7rem;
+    left: 105rem;
+}
+
+.EmptySlotContent_specialization__disabled_3d {
+        opacity: 0.5;
+    }
+
+.EmptySlotContent_vehicle_55 {
+    color: #CBAC77;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 224rem;
+    position: absolute;
+    top: 30rem;
+    left: 106rem;
+}
+
+.LastSkillInfo_base_38 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    pointer-events: none;
+}
+
+.LastSkillInfo_realLevel_78 {
+    color: #FEAB34;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 1rem 0 0 4rem;
+}
+
+.LastSkillInfo_base__small_c5 .LastSkillInfo_realLevel_78 {
+        margin-top: -2rem;
+        font-size: 14rem;
+    }
+
+.LastSkillInfo_possibleLevel_02 {
+    color: #FEFEEC;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 1rem 0 0 4rem;
+}
+
+.LastSkillInfo_base__small_c5 .LastSkillInfo_possibleLevel_02 {
+        margin-top: -2rem;
+        font-size: 14rem;
+    }
+
+.LastSkillInfo_possibleLevel_02 {
+    text-shadow: 0 0 4px rgba(255, 127, 0, .25),
+    0 0 8px #ff2a00,
+    0 0 15px #e52;
+}
+
+.LastSkillInfo_acceleratedTrainingIcon_bf {
+    position: relative;
+}
+
+.LastSkillInfo_base__big_10 .LastSkillInfo_acceleratedTrainingIcon_bf {
+        margin: 5rem 0 0 3rem;
+    }
+
+.TankmanSkill_base_84 {
+    position: relative;
+    width: 16rem;
+    height: 16rem;
+}
+
+    .TankmanSkill_base__big_a0 {
+        width: 24rem;
+        height: 24rem;
+    }
+
+.TankmanSkill_bg_f9 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat 50% / contain;
+}
+
+.TankmanSkill_icon_1b {
+    width: 14rem;
+    height: 14rem;
+    background: no-repeat 50% / contain;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    pointer-events: none;
+}
+
+.TankmanSkill_base__big_a0 .TankmanSkill_icon_1b {
+        width: 22rem;
+        height: 22rem;
+    }
+
+.TankmanSkill_icon__irrelevant_50 {
+        opacity: .4;
+    }
+
+.AnimatedNewSkill_base_6b {
+    width: 16rem;
+    height: 16rem;
+}
+
+    .AnimatedNewSkill_base__big_31 {
+        width: 24rem;
+        height: 24rem;
+    }
+
+.Skill_base_ba {
+    width: 16rem;
+    height: 16rem;
+    position: relative;
+    pointer-events: auto;
+}
+
+    .Skill_base__big_eb {
+        width: 24rem;
+        height: 24rem;
+    }
+
+.SkillsList_base_11 {
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    position: relative;
+}
+
+.SkillsList_row_03 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.TankmanInfo_base_69 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+    .TankmanInfo_base__disabled_36 {
+        opacity: 0.5;
+    }
+
+.TankmanInfo_tankmanTooltipHoverArea_9b {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.TankmanInfo_specialization_77 {
+    flex: 1;
+    margin-left: 105rem;
+    margin-top: 7rem;
+    position: relative;
+    pointer-events: none;
+}
+
+.TankmanInfo_specialization__withManySkills_9a {
+        margin-top: 4rem;
+    }
+
+.TankmanInfo_skillsContainer_17 {
+    position: absolute;
+    top: 31rem;
+    left: 102rem;
+    pointer-events: none;
+}
+
+.TankmanInfo_skillsContainer__withManySkills_00 {
+        top: 25rem;
+    }
+
+.QuickTrainingTankmanSlotContent_base_8d {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.QuickTrainingTankmanSlotContent_arrow_5a {
+    width: 57rem;
+    height: 96rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.xp_arrow_small') no-repeat 50% / contain;
+    position: absolute;
+    top: 0;
+    left: -6rem;
+    pointer-events: none;
+}
+
+.QuickTrainingTankmanSlotContent_highlight_72 {
+    width: 339rem;
+    height: 60rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.skillQuickTrainingHighlight') no-repeat 50% / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.QuickTrainingTankmanSlotContent_icon_7c {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.TankmanSlotContent_base_00 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.TankmanSlotContent_icon_ef {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.SlotsList_base_5f {
+    width: 370rem;
+    position: relative;
+}
+
+.HangarCrewWidgetApp_base_d6 {
+    padding: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+

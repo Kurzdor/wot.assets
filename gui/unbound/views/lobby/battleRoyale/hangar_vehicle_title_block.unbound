@@ -1,0 +1,198 @@
+(def macro BattleRoyaleHangarVehicleTitleBlock()
+    (hblock
+        (style
+            (align = "middle")
+        )
+        (name = 'titleBlock')
+
+        (element VehicleTitle
+            (name = 'vehicleTitle')
+            (scope
+                (bind vehType "vehType")
+                (bind vehNameTxt "vehName")
+                (txtStyle = 'HangarVehNameTextStyle')
+            )
+            (style
+                (paddingTop = -20px)
+                (paddingBottom = -20px)
+                (marginLeft = 8px)
+            )
+        )
+
+        (element Splitter
+            (bind visible "rentState != STATE_NORMAL && rentState != STATE_TEST_DRIVE_AVAILABLE")
+        )
+
+        (hblock
+            (name = 'rentBtnBlock')
+            (style
+                (paddingTop = 4px)
+                (paddingLeft = 20px)
+                (align = "middle")
+            )
+            (bind visible "rentState != STATE_NORMAL")
+
+            (group 'rentPrice'
+                (container
+                    (style
+                        (flow = "Flow.HORIZONTAL")
+                        (gap = 5px)
+                        (marginRight = 10px)
+                    )
+                )
+                (renderer = 'ActionPriceBRBig')
+                (bind visible "rentState == STATE_RENT_AVAILABLE")
+            )
+
+            (hblock
+                (name = 'buttonBlock')
+                (style
+                    (align = "middle")
+                )
+                (block
+                    (name = 'highlightWrapper')
+                    (style
+                        (position = "absolute")
+                        (center = 0)
+                        (middle = 0)
+                    )
+                    (image
+                        (name = 'highlight')
+                        (source = "R.images.gui.maps.icons.battleRoyale.hangar.btnRentHighlight()")
+                    )
+                    (bind visible "isEnoughMoney")
+                    (macro EmptyHitAreaMacro)
+                )
+                (button
+                    (name = 'btnRent')
+                    (scope
+                        (dispatch onRentBtnClicked args="{}" on='clicked')
+                    )
+                    (macro ButtonStyleMain "BUTTON_SIZE_LARGE")
+                    (style
+                        (filters
+                            (dropShadow
+                                (distance = 0)
+                                (angle = 0)
+                                (color = 0xed5422)
+                                (alpha = 0.5)
+                                (blurX = 15)
+                                (blurY = 15)
+                                (bind strength "isEnoughMoney ? 2.0 : 0")
+                                (quality = 3)
+                            )
+                        )
+                    )
+                    (bind label "TextFormat(rentState == STATE_RENT_AVAILABLE ? 
+                        R.strings.battle_royale.button.rent() : 
+                        R.strings.battle_royale.button.testDrive(), {days: rentDays})"
+                    )
+                    (bind enabled "isEnoughMoney")
+                )
+                (block
+                    (image
+                        (name = 'infoIcon')
+                        (style
+                            (marginLeft = -6px)
+                        )
+                        (source = "R.images.gui.maps.icons.battleRoyale.hangar.information()")
+                    )
+                    (bind visible "rentState == STATE_TEST_DRIVE_AVAILABLE")
+
+                    (controller $ToolTip
+                        (delay = 0.4)
+                        (args tooltipId='TestDriveInfoTooltipView')
+                        (content = "R.views.battle_royale.lobby.tooltips.TestDriveInfoTooltipView.resId")
+                    )
+                )
+
+                (bind visible "rentState == STATE_TEST_DRIVE_AVAILABLE || rentState == STATE_RENT_AVAILABLE")
+            )
+        )
+
+        (hblock
+            (name = 'rentLabel')
+            (style
+                (align = "middle")
+                (marginTop = 4px)
+            )
+            (tf
+                (macro BRRentLabelStyle)
+                (bind text "rentState == STATE_TEST_DRIVE_ACTIVE ? 
+                    R.strings.battle_royale.vehRentBlock.inTestDrive() : 
+                    R.strings.battle_royale.vehRentBlock.inRent()"
+                )
+            )
+            (image
+                (style
+                    (marginTop = 2px)
+                    (marginLeft = -5px)
+                    (marginRight = -10px)
+                )
+                (source = "R.images.gui.maps.icons.library.ClockIcon_1()")
+            )
+            (tf
+                (macro BRRentLabelStyle)
+                (bind text "rentTime")
+            )
+            (bind visible "rentState == STATE_TEST_DRIVE_ACTIVE || rentState == STATE_RENT_ACTIVE")
+
+            (controller $ToolTip
+                (delay = 0.4)
+                (args tooltipId='RentIconTooltipView')
+                (content = "R.views.battle_royale.lobby.tooltips.RentIconTooltipView.resId")
+            )
+        )
+    )
+)
+
+(def element Splitter() layout=true
+    (name = 'splitter')
+    (style
+        (backgroundColor = 0x33F2F2F7)
+        (width = 1px)
+        (height = 32px)
+        (marginLeft = 20px)
+    )
+)
+
+(def macro BRRentLabelStyle()
+    (class TutorialTextStyle)
+    (style
+        (fontSize = 16)
+    )
+)
+
+(def css BRCointBIgTextStyle()  #24
+    (fontFamily = $TitleFont)
+    (fontSize = 22)
+    (textColor = 0xff2717)
+)
+
+(def constant ACTION_PRICE_BR_BIG {
+        font: {
+            gold: GoldTextBigStyle,
+            credits: CreditsTextBigStyle,
+            crystal: CrystalTextBigStyle,
+            freeXP: ExpTextBigStyle,
+            xp: ExpTextBigStyle,
+            brcoin: CreditsTextBigStyle,
+        },
+        icon: {
+            gold: "R.atlases.components.GoldIcon_1()",
+            credits: "R.images.gui.maps.icons.battleRoyale.currency.credits_32()",
+            crystal: "R.atlases.components.crystal_16x16()",
+            freeXP: "R.atlases.components.FreeXpIcon_2()",
+            xp: "R.atlases.components.XpIcon_1()",
+            brcoin: "R.images.gui.maps.icons.battleRoyale.currency.proxy_32()",
+        },
+        fontNotEnough : BRCointBIgTextStyle,
+        actionsBG: "R.atlases.components.action_bg_total()",
+        actionsBGMargins: {top: -2px, right: -2px, bottom: -2px, left: 0px},
+        iconMargins: {top: 0px, right: 0px, bottom: 0px, left: 3px}
+    }
+)
+
+(def element ActionPriceBRBig() layout=true
+    (macro ActionPrice "ACTION_PRICE_BR_BIG")
+)

@@ -1,3 +1,16 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.atlases.components.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+
 .FormatText_base_d0 {
     display: flex;
     flex-wrap: wrap;
@@ -629,6 +642,7 @@
     font-weight: 700;
     line-height: 1.1;
     margin-left: 10rem;
+    line-height: 125%;
     opacity: .5;
 }
 
@@ -870,22 +884,5 @@
     width: 140rem;
     height: 140rem;
     background: url('R.images.gui.maps.icons.battlePass.tooltips.rare_trophy_device') center / contain no-repeat;
-}
-
-.TooltipDecorator_base_c9 {
-    display: flex;
-    position: absolute;
-}
-
-.TooltipDecorator_decorator_3d {
-    padding: 4rem 6rem 8rem; /* border offset*/
-    border-image-source: url('R.atlases.components.tooltip_background');
-    border-image-slice: 24 fill;
-    border-image-width: 24rem;
-    position: relative;
-}
-
-.TooltipDecorator_decoratorContent_de {
-    background-color: #000;
 }
 

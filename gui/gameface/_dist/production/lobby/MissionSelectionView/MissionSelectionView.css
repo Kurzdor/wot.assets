@@ -1,0 +1,838 @@
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .TextButton_base__right_39 {
+        flex-direction: row-reverse;
+    }
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+    .TextButton_icon__forward_59 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.back');
+        transform: translateY(1rem);
+    }
+.TextButton_icon__forward_59 {
+        transform: rotate(180deg) translateY(1rem);
+    }
+.TextButton_icon__close_53 {
+        margin: -1rem 0;
+        background-image: url('R.images.gui.maps.icons.components.text_button.close');
+    }
+.TextButton_icon__info_33 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.info');
+    }
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+    .TextButton_icon__forward_59 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+    }
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+    }
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+    }
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_glow_a4 {
+        opacity: 0;
+    }
+.TextButton_caption_82 {
+    position: relative;
+    transition: color .16s, text-shadow .16s;
+}
+.TextButton_caption__back_b9,
+    .TextButton_caption__forward_4e,
+    .TextButton_caption__close_36 {
+        color: #FFDD99;
+        text-shadow: 0 0 10rem rgba(255,42,0, 1),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4);
+    }
+.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
+            color: #fffa9f;
+        }
+.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
+            color: #FFDD99;
+        }
+.TextButton_caption__info_23 {
+        padding: 0 5rem;
+        color: #CCFFFF;
+        text-shadow: 0 0 12rem rgba(31,68,255, .8),
+            0 0 8rem #00eaff;
+    }
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+            color: #e3ffff;
+            text-shadow: 0 0 12rem rgba(31,68,255, .8),
+                0 0 12rem rgba(0,234,255, 1),
+                0 0 8rem #00eaff;
+        }
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+            color: #CCFFFF;
+            text-shadow: 0 0 12rem rgba(31,68,255, .6),
+                0 0 8rem #00eaff;
+        }
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+        margin-left: 8rem;
+    }
+.TextButton_base__right_39 .TextButton_goto_e7 {
+        margin-right: 8rem;
+    }
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity .16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+        left: -4rem;
+    }
+.TextButton_base__right_39 .TextButton_shine_e2 {
+        right: -4rem;
+        transform: rotate(180deg);
+    }
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_shine_e2 {
+        opacity: 0;
+    }
+
+.Background_base_94 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat 50% / cover;
+    position: absolute;
+}
+
+    .Background_base__blur_69 {
+        filter: blur(12px);
+    }
+
+.Background_vignette_79 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.story_mode.gui.maps.icons.common.vignette') no-repeat 50% / 100%;
+    position: absolute;
+}
+
+.Background_preloader_7d {
+    display: none;
+}
+
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+    .ExtendedText_base__zeroPadding_25 {
+        padding: 0;
+    }
+
+    .ExtendedText_base__isTruncationAvailable_5b {
+        width: 100%;
+    }
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+        opacity: 0;
+    }
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #FF2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #FFFFFF;
+}
+
+.colors_white_45 {
+    color: #F2F2F7;
+}
+
+.colors_whiteOrange_81 {
+    color: #FEFEEC;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #E9E2BF;
+}
+
+.colors_par_5b {
+    color: #8C8C7E;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362E;
+}
+
+.colors_red_79 {
+    color: #FF2717;
+}
+
+.colors_redDark_73 {
+    color: #B70000;
+}
+
+.colors_yellow_76 {
+    color: #FEAB34;
+}
+
+.colors_orange_cd {
+    color: #EE7000;
+}
+
+.colors_cream_0f {
+    color: #FFDD99;
+}
+
+.colors_brown_82 {
+    color: #CBAC77;
+}
+
+.colors_greenBright_68 {
+    color: #80D43A;
+}
+
+.colors_green_fa {
+    color: #7AB300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #CCFFFF;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09E2FF;
+}
+
+.colors_cred_35 {
+    color: #CED9D9;
+}
+
+.colors_gold_c3 {
+    color: #FFC363;
+}
+
+.colors_bond_ce {
+    color: #C9C9B6;
+}
+
+.colors_prom_83 {
+    color: #A29B70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.renderers_word_f3 {
+    white-space: nowrap;
+    overflow-wrap: normal;
+}
+
+.MissionInfo_base_ff {
+    display: flex;
+    flex-direction: column;
+}
+
+.MissionInfo_title_af {
+    color: #E9E2BF;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    width: 400rem;
+}
+
+.mediaMedium .MissionInfo_title_af {
+        color: #E9E2BF;
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.mediaExtraLarge .MissionInfo_title_af {
+        color: #E9E2BF;
+        font-size: 56rem;
+        font-weight: 700;
+        line-height: 1.1;
+        width: 500rem;
+}
+
+.MissionInfo_subTitle_64 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 400rem;
+    height: 60rem;
+    margin-top: 11rem;
+}
+
+.mediaMedium .MissionInfo_subTitle_64 {
+        margin-top: 14rem;
+}
+
+.mediaExtraLarge .MissionInfo_subTitle_64 {
+        color: #E9E2BF;
+        font-size: 20rem;
+        font-weight: 400;
+        line-height: 1.2;
+        width: 500rem;
+        height: 82rem;
+        margin-top: 15rem;
+}
+
+.MissionInfo_frame_54 {
+    width: 450rem;
+    height: 66rem;
+    margin: 18rem 0 0 -10rem;
+    background: url('R.images.story_mode.gui.maps.icons.missionSelection.task.frame') no-repeat 50% / contain;
+    position: relative;
+}
+
+.mediaMedium .MissionInfo_frame_54 {
+        margin-top: 30rem;
+}
+
+.mediaExtraLarge .MissionInfo_frame_54 {
+        width: 510rem;
+        height: 96rem;
+        margin-top: 21rem;
+        background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.task.frame_extraLarge');
+}
+
+.MissionInfo_glow_87 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 392rem;
+    height: 292rem;
+    background: url('R.images.story_mode.gui.maps.icons.missionSelection.task.glow') no-repeat 50% / contain;
+    opacity: .45;
+    left: -86rem;
+    pointer-events: none;
+}
+
+.MissionInfo_icon_9b {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90rem;
+    height: 90rem;
+    background: url('R.images.story_mode.gui.maps.icons.missionSelection.task.swords') no-repeat 50% / contain;
+    left: -32rem;
+}
+
+.MissionInfo_icon__completed_a0 {
+        background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.task.check');
+    }
+
+.MissionInfo_description_c4 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    width: 300rem;
+    left: 62rem;
+}
+
+.mediaExtraLarge .MissionInfo_description_c4 {
+        color: #8C8C7E;
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.MissionButton_base_d2 {
+    width: 66rem;
+    height: 66rem;
+}
+
+    .mediaExtraLarge .MissionButton_base_d2 {
+        width: 96rem;
+        height: 96rem;
+}
+
+    .MissionButton_base_d2 {
+    position: relative;
+    pointer-events: none;
+}
+
+.MissionButton_area_92 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 66rem;
+    height: 66rem;
+}
+
+.mediaExtraLarge .MissionButton_area_92 {
+        width: 96rem;
+        height: 96rem;
+}
+
+.MissionButton_area_92 {
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.MissionButton_base__selected_d4 .MissionButton_area_92 {
+        cursor: auto;
+        pointer-events: none;
+    }
+
+.MissionButton_backGlow_a7 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 198rem;
+    height: 198rem;
+}
+
+.mediaExtraLarge .MissionButton_backGlow_a7 {
+        width: 246rem;
+        height: 246rem;
+}
+
+.MissionButton_base__selected_d4 .MissionButton_backGlow_a7 {
+        background: url('R.images.story_mode.gui.maps.icons.missionSelection.button.back_glow') no-repeat 50% / contain;
+    }
+
+.mediaExtraLarge .MissionButton_base__selected_d4 .MissionButton_backGlow_a7 {
+            background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.button.extraLarge.back_glow');
+}
+
+.MissionButton_back_19 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 198rem;
+    height: 198rem;
+}
+
+.mediaExtraLarge .MissionButton_back_19 {
+        width: 246rem;
+        height: 246rem;
+}
+
+.MissionButton_back_19 {
+    background: url('R.images.story_mode.gui.maps.icons.missionSelection.button.background_inactive') no-repeat 50% / contain;
+}
+
+.mediaExtraLarge .MissionButton_back_19 {
+        background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.button.extraLarge.background_inactive');
+}
+
+.MissionButton_base__selected_d4 .MissionButton_back_19 {
+        background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.button.selected');
+    }
+
+.mediaExtraLarge .MissionButton_base__selected_d4 .MissionButton_back_19 {
+            background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.button.extraLarge.selected');
+}
+
+.MissionButton_base__selected_d4.MissionButton_base__complete_da .MissionButton_back_19 {
+        background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.button.selected_complete');
+    }
+
+.mediaExtraLarge .MissionButton_base__selected_d4.MissionButton_base__complete_da .MissionButton_back_19 {
+            background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.button.extraLarge.selected_complete');
+}
+
+.MissionButton_smallGlow_3c {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 198rem;
+    height: 198rem;
+}
+
+.mediaExtraLarge .MissionButton_smallGlow_3c {
+        width: 246rem;
+        height: 246rem;
+}
+
+.MissionButton_smallGlow_3c {
+    background: url('R.images.story_mode.gui.maps.icons.missionSelection.button.small_glow_inactive') no-repeat 50% / contain;
+}
+
+.mediaExtraLarge .MissionButton_smallGlow_3c {
+        background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.button.extraLarge.small_glow_inactive');
+}
+
+.MissionButton_base__selected_d4 .MissionButton_smallGlow_3c {
+        background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.button.small_glow');
+    }
+
+.mediaExtraLarge .MissionButton_base__selected_d4 .MissionButton_smallGlow_3c {
+            background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.button.extraLarge.small_glow');
+}
+
+.MissionButton_swords_fb {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 198rem;
+    height: 198rem;
+}
+
+.mediaExtraLarge .MissionButton_swords_fb {
+        width: 246rem;
+        height: 246rem;
+}
+
+.MissionButton_swords_fb {
+    background: url('R.images.story_mode.gui.maps.icons.missionSelection.button.swords') no-repeat 50% / contain;
+}
+
+.mediaExtraLarge .MissionButton_swords_fb {
+        background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.button.extraLarge.swords');
+}
+
+.MissionButton_missionId_97 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFDD99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.MissionButton_base__selected_d4 .MissionButton_missionId_97 {
+        color: #FFDD99;
+        font-size: 24rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-top: -2rem;
+    }
+
+.MissionSelector_base_69 {
+    display: flex;
+    align-items: center;
+}
+
+.MissionSelector_line_e4 {
+    width: 30rem;
+    height: 1rem;
+    margin: 0 -3rem;
+    background: #8e8e8e;
+    opacity: .4;
+}
+
+.mediaExtraLarge .MissionSelector_line_e4 {
+        width: 36rem;
+        margin: 0 -12rem;
+}
+
+.MissionSelector_line__left_9c {
+        margin-left: 5rem;
+    }
+
+.mediaExtraLarge .MissionSelector_line__left_9c {
+            margin-left: -2rem;
+}
+
+.MissionSelector_line__right_dc {
+        margin-right: 5rem;
+    }
+
+.mediaExtraLarge .MissionSelector_line__right_dc {
+            margin-right: -2rem;
+}
+
+.MissionSelector_line__selected_ff {
+        width: 22rem;
+    }
+
+.mediaExtraLarge .MissionSelector_line__selected_ff {
+            width: 26rem;
+}
+
+.MissionVehicle_base_5d {
+    display: flex;
+}
+
+.MissionVehicle_text_ba {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.mediaMedium .MissionVehicle_text_ba {
+        color: #8C8C7E;
+        font-size: 20rem;
+        font-weight: 400;
+        line-height: 1.2;
+}
+
+.MissionVehicle_icon_bb {
+    width: 16rem;
+    height: 16rem;
+    margin: 3rem 0 0 6rem;
+    background: url('R.images.story_mode.gui.maps.icons.missionSelection.info_white_orange') no-repeat 50% / contain;
+}
+
+.mediaMedium .MissionVehicle_icon_bb {
+        margin-top: 6rem;
+}
+
+.MissionSelectionViewApp_base_fd {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    animation: MissionSelectionViewApp_fadeIn_3b .5s both;
+}
+
+.MissionSelectionViewApp_blackScreen_8d {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.MissionSelectionViewApp_shadowTop_1a {
+    width: 100vw;
+    height: 284rem;
+    background: radial-gradient(40% 50% at 50% -5%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .7) 60%, rgba(0, 0, 0, .4) 80%, rgba(0, 0, 0, 0) 100%),
+        linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 46.8%, rgba(0, 0, 0, 0.2) 74.96%, rgba(0, 0, 0, 0) 97.21%);
+    position: absolute;
+}
+
+.MissionSelectionViewApp_shadowLeft_62 {
+    width: 460rem;
+    height: 100vh;
+    background: radial-gradient(100% 50% at 100% 30%, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.5) 36.38%, rgba(0, 0, 0, 0.3) 64.51%, rgba(0, 0, 0, 0.15) 83.26%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.mediaMedium .MissionSelectionViewApp_shadowLeft_62 {
+        width: 500rem;
+}
+
+.mediaLarge .MissionSelectionViewApp_shadowLeft_62 {
+        width: 550rem;
+}
+
+.mediaExtraLarge .MissionSelectionViewApp_shadowLeft_62 {
+        width: 800rem;
+}
+
+.MissionSelectionViewApp_shadowBottom_9c {
+    width: 100vw;
+    height: 107rem;
+    background: radial-gradient(50% 50% at 50% 100%, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.5) 36.38%, rgba(0, 0, 0, 0.3) 64.51%, rgba(0, 0, 0, 0.15) 83.26%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.MissionSelectionViewApp_close_5b {
+    position: absolute;
+    top: 11rem;
+    right: 9rem;
+}
+
+.mediaMedium .MissionSelectionViewApp_close_5b {
+        top: 31rem;
+        right: 29rem;
+}
+
+.MissionSelectionViewApp_missionSelector_47 {
+    margin-top: 25rem;
+}
+
+.mediaExtraLarge .MissionSelectionViewApp_missionSelector_47 {
+        margin-top: 34rem;
+}
+
+.MissionSelectionViewApp_specialVehicle_40 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 33rem;
+}
+
+.MissionSelectionViewApp_missionInfo_c1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -34rem;
+    left: 40rem;
+}
+
+.mediaMedium .MissionSelectionViewApp_missionInfo_c1 {
+        left: 70rem;
+}
+
+.mediaLarge .MissionSelectionViewApp_missionInfo_c1 {
+        margin-top: -43rem;
+        left: 100rem;
+}
+
+.mediaExtraLarge .MissionSelectionViewApp_missionInfo_c1 {
+        margin-top: -39rem;
+        left: 150rem;
+}
+
+.MissionSelectionViewApp_leftSparkles_e6 {
+    width: 1024rem;
+    height: 768rem;
+    background: url('R.images.story_mode.gui.maps.icons.common.sparkles.left_extraSmall') no-repeat 50% / contain;
+    opacity: .5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.mediaSmall .MissionSelectionViewApp_leftSparkles_e6 {
+        width: 1366rem;
+        height: 768rem;
+        background-image: url('R.images.story_mode.gui.maps.icons.common.sparkles.left_small');
+}
+
+.mediaMedium .MissionSelectionViewApp_leftSparkles_e6 {
+        width: 1600rem;
+        height: 900rem;
+        background-image: url('R.images.story_mode.gui.maps.icons.common.sparkles.left_medium');
+}
+
+.mediaLarge .MissionSelectionViewApp_leftSparkles_e6 {
+        width: 1920rem;
+        height: 1080rem;
+        background-image: url('R.images.story_mode.gui.maps.icons.common.sparkles.left_large');
+}
+
+.MissionSelectionViewApp_rightSparkles_84 {
+    width: 1024rem;
+    height: 768rem;
+    background: url('R.images.story_mode.gui.maps.icons.common.sparkles.right_extraSmall') no-repeat 50% / contain;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.mediaSmall .MissionSelectionViewApp_rightSparkles_84 {
+        width: 1366rem;
+        height: 768rem;
+        background-image: url('R.images.story_mode.gui.maps.icons.common.sparkles.right_small');
+}
+
+.mediaMedium .MissionSelectionViewApp_rightSparkles_84 {
+        width: 1600rem;
+        height: 900rem;
+        background-image: url('R.images.story_mode.gui.maps.icons.common.sparkles.right_medium');
+}
+
+.mediaLarge .MissionSelectionViewApp_rightSparkles_84 {
+        width: 1920rem;
+        height: 1080rem;
+        background-image: url('R.images.story_mode.gui.maps.icons.common.sparkles.right_large');
+}
+
+@keyframes MissionSelectionViewApp_fadeIn_3b {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+

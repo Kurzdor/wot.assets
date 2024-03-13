@@ -1,0 +1,378 @@
+(def constant MORE_INFO_BTN_SIZE_LARGE {width : 145px, height : 32px, fontSize : 16px})
+(def constant MORE_INFO_BTN_SIZE_MEDIUM {width : 125px, height : 24px, fontSize : 14px})
+
+(def layout Piggybank() entrance=true loadOrder="LoadOrder.NOT_WAITING_FIRST"
+    (name = 'Piggybank')
+    (macro PiggybankModel)
+
+    (scope
+        (const BOUNDARY_WIDTH:number = 1600)
+        (const BOUNDARY_HEIGHT:number = 900)
+        (const AMOUNT_START:number = 0)
+
+        (var isNormalSize:bool = "viewSize.width > BOUNDARY_WIDTH && viewSize.height > BOUNDARY_HEIGHT"
+            (event "viewResized")
+        )
+        (var scrScale:number = "isNormalSize ? 0.85 : 0.65")
+        (var _fontForTitle:str = "isNormalSize ? 'HeroTitleTextStyle' : 'GrandTitleTextStyle'")
+        (var _leadingTitle:number = "isNormalSize ? -15 : -5")
+
+        (var _creditsIconWidth:number = "isNormalSize ? 80 : 48")
+        (var _creditsIconHeight:number = "isNormalSize ? 80 : 48")
+    )
+
+    (dispatch onBackBtnClicked on='escPressed')
+    
+    (style
+        (position = "absolute")
+        (bind width "viewSize.width"
+            (event "viewResized")
+        )
+        (bind height "viewSize.height"
+            (event "viewResized")
+        )    
+        (backgroundColor = 0xFF0c0b10)
+    )
+
+    (image
+        (name = 'background')
+        (style
+            (position = "absolute")
+            (hcenter = 0)
+            (vcenter = 0)
+            (bind scaleX "scrScale")
+            (bind scaleY "scrScale")
+            (pivotX = 50%)
+            (pivotY = 50%)
+        )
+        (source = "R.images.gui.maps.icons.premacc.backgrounds.piggybank()")
+    )
+
+    (text_button 'backBtn'
+        (style
+            (position = "absolute")
+            (top = 71px)
+            (left = 50px)
+        )
+            (scope
+            (dispatch onBackBtnClicked on='clicked')
+            )
+            (macro ButtonBackStyle)
+            (label = "R.strings.menu.store.backButton.label()")
+            (bind labelAdditional "backBtnLabel")
+    )
+
+    (block
+        (name = 'viewContent')
+        (style
+            (bind height "viewSize.height" 
+                (event "viewResized")
+            )
+            (bind width "viewSize.width * 0.5" 
+                (event "viewResized")
+            )
+            (bind paddingRight "isNormalSize ? 30px : 20px")
+            (align = "right|middle")
+        )
+        (bind visible "isPremUsed")
+
+        (block
+            (hblock
+                (style
+                    (align = "middle")
+                    (hgap = 10px)
+                )
+                (tf
+                    (name = 'reserveBankTitle')
+                    (bind class "isNormalSize ? 'HeroTitleTextStyle' : 'GrandTitleTextStyle'")
+                    (text = "R.strings.premacc.piggyBank.reserveBank.title()")
+                )
+                (button
+                    (macro ButtonStylePrimaryGhost "BUTTON_SIZE_LARGE") 
+                    (style
+                        (width = 32px)
+                        (height = 32px)
+                        (bind marginTop "isNormalSize ? 11px : 9px")
+                    )
+                    (scope
+                        (dispatch onGoToContentPage on='clicked')
+                    )
+                    (icon = "R.images.gui.maps.icons.premacc.piggybank.icon_info_normal()")
+                    (controller $ToolTip
+                        (bindcall args body="R.strings.tooltips.prem.piggyBank.ghostBtn.body()" init=true)
+                        (content = "R.views.common.tooltip_window.simple_tooltip_content.SimpleTooltipContent.resId")
+                        (decorator = "R.views.common.tooltip_window.tooltip_window.TooltipWindow.resId")
+                        (enabled = false)
+                        (bind enabled "isPremUsed" init=true)
+                    )
+                )
+            )
+
+            (tf
+                (name = 'reserveBankDescr')
+                (style
+                    (bind marginTop "isNormalSize ? 15px : 8px")
+                    (bind width "isNormalSize ? 540px : 440px")
+                    (marginLeft = 3px)
+                )
+
+                # TODO: change to formatString after blueprint sync
+                (bind htmlText "TextFormat(
+                    htmlTextStyle(R.strings.premacc.piggyBank.reserveBank.description(), 'MainBigTextStyle'), 
+                    {period:periodInDays, maxAmount: htmlTextStyle(maxAmountStr, 'CreditsTextStyle') + 
+                    R.images.gui.maps.icons.library.CreditsIcon_2.tag()})"
+                )
+            )
+        )
+
+        (hblock
+            (name = 'countOfStoredCredits')
+            (style
+                (bind width "isNormalSize ? 540px : 440px")
+                (bind marginTop "isNormalSize ? 35px : 16px")
+                (align = "left|middle")
+            )
+            (tf
+                (name = 'currentAmount')
+                # TODO: change Style later
+                (class EpicTitleTextStyle)
+                (bind alpha "isTankPremiumActive || piggyIsFull ? 1 : 0.5")
+                (bind text "currentAmountStr")
+            )
+
+            (image
+                (name = 'creditsBig')
+                (source = "R.images.gui.maps.icons.quests.bonuses.big.credits()")
+            )
+        )
+
+        (block
+            (name = 'progressBlock')
+            (style
+                (bind marginTop "isNormalSize ? 5px :-5px")
+                (bind width "isNormalSize ? 540px : 438px")
+            )
+            (element PiggyProgressBar
+                (style
+                    (align = "left|middle")
+                    (width = 100%)
+                    (height = 6px)
+                )
+                (scope
+                    (bind totalValue "maxAmount")
+                    (bind currentValue "currentAmount")
+                    (bind isEnabled "isTankPremiumActive")
+                )
+            )
+
+            (hblock
+                (name = 'rangeOfCredits')
+                (style
+                    (width = 100%)
+                    (marginTop = 4px)
+                )
+                (tf
+                    (name = 'progressStart')
+                    (class CreditsTextStyle)
+                    (style
+                        (marginLeft = -3px)
+                        (alpha = 0.5)
+                    )
+                    (text = "AMOUNT_START")
+                )
+                
+                (hblock
+                    (style
+                        (position = "absolute")
+                        (align = "center|middle")
+                        (hcenter = 0px)
+                    )
+                    (bind visible "piggyIsFull")
+                    (image
+                        (name = 'checkmark')
+                        (source = "R.images.gui.maps.icons.library.fortification.checkmark()")
+                    )
+                    (tf
+                        (class StatusInfoTextStyle)
+                        (text = "R.strings.premacc.piggyBank.progressBarComplited()")
+                    )
+                )
+
+                (tf
+                    (name = 'progressStop')
+                    (class CreditsTextStyle)
+                    (style
+                        (position = "absolute")
+                        (alpha = 0.5)
+                        (right = -4px)
+                    )
+                    (bind text "maxAmountStr")
+                )
+            )
+        )
+
+        (block
+            (name =  'timeToOpenBank')
+            
+            (block
+                (style
+                    (bind width "isNormalSize ? 540px : 420px")
+                    (align = "center|middle")
+                )
+                (tf
+                    (class MainBigTextStyle)
+                    (style
+                        (bind marginTop "isNormalSize ? 60px : 37px")
+                    )
+                    (text = "R.strings.premacc.piggyBank.timeToOpenBankMsg.title()")
+                )
+
+                (tf
+                    (class PromoSubTitleTextStyle)
+                    (bind text "timeLeft(
+                            timeleft, 
+                            R.strings.premacc.piggyBank.timeLeft.days(),
+                            R.strings.premacc.piggyBank.timeLeft.hours(),
+                            R.strings.premacc.piggyBank.timeLeft.hours(),
+                            R.strings.premacc.piggyBank.timeLeft.lessMin(),
+                            timeleft < ONE_HOUR
+                        )"
+                        (enabled="timeleft > 0")
+                    )
+                )
+            )
+
+            (image
+                (style
+                    (position = "absolute")
+                    (hcenter = 0px)
+                    (bind vcenter "isNormalSize ? 30px : 20px")
+                )
+                (source = "R.images.gui.maps.icons.premacc.piggybank.bg_timer_530()")
+            )
+        )
+
+        (block
+            (style
+                (bind width "isNormalSize ? 530px : 410px")
+                (align = "center|middle")
+            )
+            (bind visible "!isTankPremiumActive")
+
+            (hblock
+                (style
+                    (align = "middle")
+                    (bind marginTop "isNormalSize ? 40px : 35px")
+                    (gap = 5px)
+                )
+                
+                (image
+                    (bind source "piggyIsFull ?
+                        R.images.gui.maps.icons.library.InformationIcon() :
+                        R.images.gui.maps.icons.library.alertIcon()"
+                    )
+                )
+                (tf
+                    (bind class "piggyIsFull ? 'MainTextStyle' : 'AlertTextStyle'")
+                    (text = "R.strings.premacc.piggyBank.premAccUnactiveMsg()")
+                )
+            )
+
+            (button
+                (bind visible "isNormalSize")
+                (macro ButtonStylePrimary "BUTTON_SIZE_LARGE")
+                (style
+                    (marginTop = 16px)    
+                )
+                (dispatch onPremAccProlong on='clicked')
+                (bind label "R.strings.premacc.piggyBank.premAccProlongBtn()")
+            )
+
+            (button
+                (bind visible "!isNormalSize")
+                (macro ButtonStylePrimary "BUTTON_SIZE_MEDIUM")
+                (style
+                    (marginTop = 16px)    
+                )
+                (dispatch onPremAccProlong on='clicked')
+                (bind label "R.strings.premacc.piggyBank.premAccProlongBtn()")
+            )
+        )
+    )
+
+    (block
+        (name = 'viewContentPremUnused')
+        (style
+            (bind height "viewSize.height" 
+                (event "viewResized")
+            )
+            (bind width "viewSize.width * 0.5" 
+                (event "viewResized")
+            )
+            (bind paddingRight "isNormalSize ? 25px : 20px")
+            (align = "right|middle")
+        )
+        
+        (bind visible "!isPremUsed")
+
+        (hblock
+            (tf
+                (name = 'piggyPromoTitle')
+                (style
+                    (bind width "isNormalSize ? NORMAL_SIZE_BLOCK : SMALL_SIZE_BLOCK")
+                )
+
+                (bind htmlText "htmlTextStyle(
+                    TextFormat(
+                        R.strings.premacc.piggyBank.reserveBankPremUnsearched.title(),
+                        {
+                            period:periodInDays, 
+                            maxAmount: maxAmountStr + 
+                            R.images.gui.maps.icons.quests.bonuses.big.credits.tag(_creditsIconWidth, _creditsIconHeight, -20)
+                        }),
+                    styleName=_fontForTitle, leading=_leadingTitle)"
+                )
+            )
+        )
+
+        (tf
+            (name = 'promoDescr')
+            (style
+                (marginTop = 15px)
+                (bind width "isNormalSize ? 560px : SMALL_SIZE_BLOCK")
+                (bind marginRight "isNormalSize ? 40px : 0px")
+            )
+
+            (bind htmlText "TextFormat(
+                htmlTextStyle(
+                    R.strings.premacc.piggyBank.reserveBankPremUnsearched.description(),
+                    'MainBigTextStyle'),
+            
+                {percDisc:percentDiscount, period:periodInDays, maxAmount: htmlTextStyle(maxAmountStr, 'CreditsTextStyle') + 
+                R.images.gui.maps.icons.library.CreditsIcon_2.tag()})"
+            )
+        )
+
+        (block
+            (name = 'showMoreInfo')
+            (style
+                (bind width "isNormalSize ?  NORMAL_SIZE_BLOCK : SMALL_SIZE_BLOCK")
+                (bind marginTop "isNormalSize ? 27px : 20px")
+                (align = "left")
+            )
+            (button
+                (bind visible "viewSize.height >= 900" (event "viewResized"))
+                (macro ButtonStylePrimary "MORE_INFO_BTN_SIZE_LARGE")
+                (dispatch onGoToContentPage on='clicked')
+                (label = "R.strings.premacc.piggyBank.moreInfoBtn()")
+            )
+
+            (button
+                (bind visible "viewSize.height < 900" (event "viewResized"))
+                (macro ButtonStylePrimary "MORE_INFO_BTN_SIZE_MEDIUM")
+                (dispatch onGoToContentPage on='clicked')
+                (label = "R.strings.premacc.piggyBank.moreInfoBtn()")
+            )
+        )
+    ) #viewContentPremUnused
+)

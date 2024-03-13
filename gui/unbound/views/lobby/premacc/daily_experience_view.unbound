@@ -1,0 +1,123 @@
+(def constant NORMAL_SIZE_BLOCK 600px)
+(def constant SMALL_SIZE_BLOCK 440px)
+
+(def layout DailyExperiencePage() entrance=true loadOrder="LoadOrder.NOT_WAITING_FIRST"
+    (name = 'DailyExperienceView')
+    (macro DailyExperienceViewModel)
+    (scope
+        (const BOUNDARY_WIDTH:number = 1600)
+        (const BOUNDARY_HEIGHT:number = 1080)
+        (const BONUS_ICON_PREFIX_NORMAL:str = 'bonus_600_x')
+        (const BONUS_ICON_PREFIX_SMALL:str = 'bonus_440_x')
+
+        (var isNormalSize:bool = "viewSize.width >= BOUNDARY_WIDTH && viewSize.height >= BOUNDARY_HEIGHT"
+            (event "viewResized")
+        )
+        (var _fontForTitle:str = "isNormalSize ? 'HeroTitleTextStyle' : 'GrandTitleTextStyle'")
+    )
+
+    (style
+        (width = 100%)
+        (height = 100%)
+    )
+
+    (dispatch onBackBtnClicked on='escPressed')
+
+    (element PremDashboarBg)
+
+    (text_button 'backBtn'
+        (style
+            (position = "absolute")
+            (top = 71px)
+            (left = 50px)
+        )
+
+        (scope
+            (dispatch onBackBtnClicked on='clicked')
+        )
+        (macro ButtonBackStyle)
+        (label = "R.strings.menu.store.backButton.label()")
+        (bind labelAdditional "backBtnLabel")
+    )
+
+
+    (hblock
+        (name = 'viewContent')
+        (style
+            (position = "absolute")
+            (hcenter = 0)
+            (vcenter = 0)
+            (bind gap "isNormalSize ? 60px : 40px")
+            (align = "center|middle")
+        )
+
+        (image
+            (name = 'bonusIcon')
+            (bind source "isNormalSize ? 
+                R.images.gui.maps.icons.premacc.content[BONUS_ICON_PREFIX_NORMAL + multiplier]() : 
+                R.images.gui.maps.icons.premacc.content[BONUS_ICON_PREFIX_SMALL + multiplier]()"
+            )
+        )
+
+        (block
+            (name = 'rightContentBlock')
+            (style
+                (bind vgap "isNormalSize ?  10px : 15px")
+                (bind marginLeft "isNormalSize ? 5px : 0px")
+            )
+
+            (tf
+                (name = 'dailyPageContentTitle')
+                (style
+                    (bind width "isNormalSize ? NORMAL_SIZE_BLOCK : SMALL_SIZE_BLOCK")
+                )
+                (bind class "_fontForTitle")
+                (text = "R.strings.premacc.dailyExperiencePage.bonus.title()")
+                
+            )
+
+            (tf
+                (name = 'dailyPageContentDescr')
+                (style
+                    (bind marginTop "isNormalSize ? 10px : 15px")
+                    (bind width "isNormalSize ? NORMAL_SIZE_BLOCK : SMALL_SIZE_BLOCK")
+                )
+                (bind class "isNormalSize ? 'MainBigTextStyle' : 'MainTextStyle'")
+                (bind text "TextFormat(R.strings.premacc.dailyExperiencePage.bonus.description(), {maxExpCount:totalBonusCount})")
+            )
+
+            (tf
+                (name = 'curExpCoeffCount')
+                (bind visible "isTankPremiumActive")
+                (style
+                    (bind marginTop "isNormalSize ? 0px : -10px")
+                )
+
+                (bind htmlText "TextFormat(
+                    htmlTextStyle(R.strings.premacc.dailyExperiencePage.bonus.countOfExp(), 'PromoSubTitleTextStyle'), 
+                    {expCount: htmlTextStyle(leftBonusCount, 'GrandTitleTextStyle')})"
+                )
+            )
+
+            (block
+                (name = 'showMoreInfo')
+                (style
+                    (marginTop =  20px)
+                )
+                (bind visible "!isTankPremiumActive")
+                (button
+                    (bind visible "viewSize.height >= 900" (event "viewResized"))
+                    (macro ButtonStylePrimary "MORE_INFO_BTN_SIZE_LARGE")
+                    (dispatch onGoToContentPage on='clicked')
+                    (label = "R.strings.premacc.dailyExperiencePage.moreInfoBtn()")
+                )
+                (button
+                    (bind visible "viewSize.height < 900" (event "viewResized"))
+                    (macro ButtonStylePrimary "MORE_INFO_BTN_SIZE_MEDIUM")
+                    (dispatch onGoToContentPage on='clicked')
+                    (label = "R.strings.premacc.dailyExperiencePage.moreInfoBtn()")
+                )
+            )
+        ) #rightContentBlock
+    ) #hblock
+)

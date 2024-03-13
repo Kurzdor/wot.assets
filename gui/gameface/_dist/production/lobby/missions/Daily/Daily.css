@@ -2340,38 +2340,41 @@ html {
     position: absolute;
 }
 
-.MainContent_countDownContainer_5d {
-    display: flex;
-    align-items: center;
-    margin-right: 8rem;
+.MainContent_rerollTimer_2f {
     position: absolute;
     top: -40rem;
 }
 
-.mediaMedium .MainContent_countDownContainer_5d {
+.mediaMedium .MainContent_rerollTimer_2f {
         top: -44rem;
 }
 
-.mediaExtraLarge .MainContent_countDownContainer_5d {
+.mediaExtraLarge .MainContent_rerollTimer_2f {
         top: -50rem;
 }
 
-.MainContent_timer_bc {
+.RerollTimer_base_40 {
+    display: flex;
+    align-items: center;
+    margin-right: 8rem;
+}
+
+.RerollTimer_icon_f8 {
     width: 38rem;
     height: 38rem;
     background: url('R.images.gui.maps.icons.library.ClockIcon_1') no-repeat center / cover;
     transform: translateY(1rem);
 }
 
-.mediaLarge .MainContent_timer_bc {
+.mediaLarge .RerollTimer_icon_f8 {
         transform: translateY(0);
 }
 
-.mediaExtraLarge .MainContent_timer_bc {
+.mediaExtraLarge .RerollTimer_icon_f8 {
         transform: translateY(1rem);
 }
 
-.MainContent_countDown_ee {
+.RerollTimer_countDown_e3 {
     color: #FFDD99;
     font-size: 14rem;
     font-weight: 400;
@@ -3106,7 +3109,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         width: 150%;
         height: 400%;
         background: url('R.images.gui.maps.icons.winback.common.fired_line_minimalistic') no-repeat center / 100% 100%;
-        filter: hue-rotate(18deg) brightness(1.2);
         opacity: .44;
         mix-blend-mode: screen;
         transition: opacity .2s;

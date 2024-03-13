@@ -1,333 +1,3 @@
-.FormatText_base_d0 {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.TextButton_base_b6 {
-    display: flex;
-    align-items: center;
-    padding: 0 3rem;
-    font-size: 12rem;
-    position: relative;
-    cursor: pointer;
-}
-
-    .TextButton_base__right_39 {
-        flex-direction: row-reverse;
-    }
-.TextButton_icon_17 {
-    width: 32rem;
-    height: 32rem;
-    background: no-repeat center / contain;
-    position: relative;
-}
-.TextButton_icon__back_43,
-    .TextButton_icon__forward_59 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.back');
-        transform: translateY(1rem);
-    }
-.TextButton_icon__forward_59 {
-        transform: rotate(180deg) translateY(1rem);
-    }
-.TextButton_icon__close_53 {
-        margin: -1rem 0;
-        background-image: url('R.images.gui.maps.icons.components.text_button.close');
-    }
-.TextButton_icon__info_33 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.info');
-    }
-.TextButton_glow_a4 {
-    width: 100%;
-    height: 100%;
-    background: no-repeat center / contain;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    transition: opacity .16s;
-}
-.TextButton_icon__back_43 .TextButton_glow_a4,
-    .TextButton_icon__forward_59 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
-    }
-.TextButton_icon__close_53 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
-    }
-.TextButton_icon__info_33 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
-    }
-.TextButton_base_b6:hover .TextButton_glow_a4 {
-        opacity: 1;
-    }
-.TextButton_base_b6:active .TextButton_glow_a4 {
-        opacity: 0;
-    }
-.TextButton_caption_82 {
-    position: relative;
-    transition: color .16s, text-shadow .16s;
-}
-.TextButton_caption__back_b9,
-    .TextButton_caption__forward_4e,
-    .TextButton_caption__close_36 {
-        color: #FFDD99;
-        text-shadow: 0 0 10rem rgba(255,42,0, 1),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4);
-    }
-.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
-            color: #fffa9f;
-        }
-.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
-            color: #FFDD99;
-        }
-.TextButton_caption__info_23 {
-        padding: 0 5rem;
-        color: #CCFFFF;
-        text-shadow: 0 0 12rem rgba(31,68,255, .8),
-            0 0 8rem #00eaff;
-    }
-.TextButton_base_b6:hover .TextButton_caption__info_23 {
-            color: #e3ffff;
-            text-shadow: 0 0 12rem rgba(31,68,255, .8),
-                0 0 12rem rgba(0,234,255, 1),
-                0 0 8rem #00eaff;
-        }
-.TextButton_base_b6:active .TextButton_caption__info_23 {
-            color: #CCFFFF;
-            text-shadow: 0 0 12rem rgba(31,68,255, .6),
-                0 0 8rem #00eaff;
-        }
-.TextButton_goto_e7 {
-    color: #7c7c6c;
-}
-.TextButton_base__left_ff .TextButton_goto_e7 {
-        margin-left: 8rem;
-    }
-.TextButton_base__right_39 .TextButton_goto_e7 {
-        margin-right: 8rem;
-    }
-.TextButton_shine_e2 {
-    width: 90rem;
-    height: 40rem;
-    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
-    opacity: 0;
-    position: absolute;
-    top: -4rem;
-    transition: opacity .16s;
-    pointer-events: none;
-}
-.TextButton_base__left_ff .TextButton_shine_e2 {
-        left: -4rem;
-    }
-.TextButton_base__right_39 .TextButton_shine_e2 {
-        right: -4rem;
-        transform: rotate(180deg);
-    }
-.TextButton_base_b6:hover .TextButton_shine_e2 {
-        opacity: 1;
-    }
-.TextButton_base_b6:active .TextButton_shine_e2 {
-        opacity: 0;
-    }
-
-.TankName_base_f1 {
-    display: flex;
-    justify-content: flex-end;
-}
-
-    .TankName_base__sizeMedium_3a {
-        color: #FEFEEC;
-        font-size: 24rem;
-        font-weight: 400;
-        line-height: 1.2;
-    }
-
-    .TankName_base__typeWhite_32 {
-        color: #F2F2F7;
-    }
-
-    .TankName_base__typeWhiteSpanish_e2 {
-        color: #E9E2BF;
-    }
-
-.TankName_base__typeColored_bc .TankName_level_bb {
-        color: #E9E2BF;
-    }
-
-.TankName_type_3c {
-    width: 42rem;
-    height: 38rem;
-    margin: 0 -10rem;
-    background: no-repeat center / contain;
-    position: relative;
-    top: -10rem;
-}
-
-.TankName_type__elite_cc {
-        margin: 0 -6rem;
-    }
-
-.TankName_base__sizeMedium_3a .TankName_type_3c {
-        width: 83rem;
-        height: 73rem;
-        margin: 0 -23rem;
-        background: no-repeat center / contain;
-        position: relative;
-        top: -18rem;
-    }
-
-.TankName_base__sizeMedium_3a .TankName_type__elite_cc {
-            margin: 0 -16rem;
-        }
-
-.TankName_base__typeColored_bc .TankName_name_56 {
-        color: #8C8C7E;
-    }
-
-.App_base_4d {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background: #060708 url('R.images.gui.maps.icons.battlePass.extra_intro.tank') no-repeat center / cover;
-    opacity: 0;
-    overflow: hidden;
-    position: relative;
-    transition: opacity .5s;
-}
-    .mediaExtraLarge .App_base_4d {
-        background-image: url('R.images.gui.maps.icons.battlePass.extra_intro.tank_big');
-}
-    .App_base__visible_f0 {
-        opacity: 1;
-    }
-
-.App_close_53 {
-    position: absolute;
-    top: 7rem;
-    right: 48rem;
-}
-
-.App_header_b6 {
-    width: 100%;
-    height: 150rem;
-    margin-top: 15rem;
-}
-
-.App_content_16 {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    margin-top: 100rem;
-    padding: 0 45rem;
-}
-
-.mediaLarge .App_content_16 {
-        margin-top: 165rem;
-        padding: 0 64rem;
-}
-
-.App_confirm_99 {
-    width: 160rem;
-    margin-bottom: 33rem;
-}
-
-.mediaLarge .App_confirm_99 {
-        margin-bottom: 63rem;
-}
-
-.Header_base_f4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.Header_title_0a {
-    color: #F2F2F7;
-    font-size: 56rem;
-    font-weight: 700;
-}
-
-.mediaLarge .Header_title_0a {
-        font-size: 73rem;
-}
-
-.Header_description_85 {
-    margin-top: 8rem;
-    color: #FEFEEC;
-    font-size: 16rem;
-    line-height: .9;
-}
-
-.mediaLarge .Header_description_85 {
-        margin-top: 20rem;
-        font-size: 20rem;
-        line-height: .8;
-}
-
-.Progression_base_20 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 320rem;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-}
-    .mediaMedium .Progression_base_20 {
-        width: 450rem;
-}
-    .mediaLarge .Progression_base_20 {
-        width: 634rem;
-}
-
-.Progression_title_5c {
-    color: #FEFEEC;
-    font-size: 15rem;
-    font-weight: 700;
-    line-height: 1.15;
-    opacity: .5;
-}
-
-.mediaLarge .Progression_title_5c {
-        font-size: 18rem;
-}
-
-.Progression_name_8e {
-    color: #F2F2F7;
-    font-size: 28rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin: 12rem 0;
-    text-align: center;
-}
-
-.mediaLarge .Progression_name_8e {
-        margin: 16rem 0;
-        font-size: 40rem;
-}
-
-.Progression_description_fc {
-    color: #FEFEEC;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    width: 300rem;
-    text-align: center;
-}
-
-.mediaLarge .Progression_description_fc {
-        width: 430rem;
-        font-size: 16rem;
-}
-
 .CButton_base_40 {
     display: flex;
     justify-content: center;
@@ -529,4 +199,360 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_base__disabled_d9 .CButton_content_cc {
         opacity: .6;
     }
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .TextButton_base__right_39 {
+        flex-direction: row-reverse;
+    }
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+    .TextButton_icon__forward_59 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.back');
+        transform: translateY(1rem);
+    }
+.TextButton_icon__forward_59 {
+        transform: rotate(180deg) translateY(1rem);
+    }
+.TextButton_icon__close_53 {
+        margin: -1rem 0;
+        background-image: url('R.images.gui.maps.icons.components.text_button.close');
+    }
+.TextButton_icon__info_33 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.info');
+    }
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+    .TextButton_icon__forward_59 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+    }
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+    }
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+    }
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_glow_a4 {
+        opacity: 0;
+    }
+.TextButton_caption_82 {
+    position: relative;
+    transition: color .16s, text-shadow .16s;
+}
+.TextButton_caption__back_b9,
+    .TextButton_caption__forward_4e,
+    .TextButton_caption__close_36 {
+        color: #FFDD99;
+        text-shadow: 0 0 10rem rgba(255,42,0, 1),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4);
+    }
+.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
+            color: #fffa9f;
+        }
+.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
+            color: #FFDD99;
+        }
+.TextButton_caption__info_23 {
+        padding: 0 5rem;
+        color: #CCFFFF;
+        text-shadow: 0 0 12rem rgba(31,68,255, .8),
+            0 0 8rem #00eaff;
+    }
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+            color: #e3ffff;
+            text-shadow: 0 0 12rem rgba(31,68,255, .8),
+                0 0 12rem rgba(0,234,255, 1),
+                0 0 8rem #00eaff;
+        }
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+            color: #CCFFFF;
+            text-shadow: 0 0 12rem rgba(31,68,255, .6),
+                0 0 8rem #00eaff;
+        }
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+        margin-left: 8rem;
+    }
+.TextButton_base__right_39 .TextButton_goto_e7 {
+        margin-right: 8rem;
+    }
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity .16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+        left: -4rem;
+    }
+.TextButton_base__right_39 .TextButton_shine_e2 {
+        right: -4rem;
+        transform: rotate(180deg);
+    }
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_shine_e2 {
+        opacity: 0;
+    }
+
+.TankName_base_f1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    line-height: 1.3;
+}
+
+    .TankName_base__sizeMedium_3a {
+        color: #FEFEEC;
+        font-size: 24rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+    .TankName_base__sizBig_a9 {
+        color: #F2F2F7;
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+    .TankName_base__typeWhite_32 {
+        color: #F2F2F7;
+    }
+
+    .TankName_base__typeWhiteSpanish_e2 {
+        color: #E9E2BF;
+    }
+
+.TankName_base__typeColored_bc .TankName_level_bb {
+        color: #E9E2BF;
+    }
+
+.TankName_type_3c {
+    width: 42rem;
+    height: 38rem;
+    margin: 0 -9rem;
+    background: no-repeat center / contain;
+    position: relative;
+    top: -8rem;
+}
+
+.TankName_type__elite_cc {
+        margin: 0 -6rem;
+    }
+
+.TankName_base__sizeMedium_3a .TankName_type_3c,
+    .TankName_base__sizeBig_2b .TankName_type_3c {
+        width: 83rem;
+        height: 73rem;
+        margin: 0 -23rem;
+        top: -16rem;
+    }
+
+.TankName_base__sizeMedium_3a .TankName_type__elite_cc, .TankName_base__sizeBig_2b .TankName_type__elite_cc {
+            margin: 0 -16rem;
+        }
+
+.TankName_base__sizeBig_2b .TankName_type_3c {
+        margin: 0 -23rem;
+        top: -14rem;
+    }
+
+.TankName_base__sizeBig_2b .TankName_type__elite_cc {
+            margin: 0 -13rem;
+        }
+
+.TankName_base__typeColored_bc .TankName_name_56 {
+        color: #8C8C7E;
+    }
+
+.TankName_premiumIGR_25 {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 3rem 0 -2rem;
+    background: url('R.images.gui.maps.icons.library.premium_igr_ico') no-repeat center / contain;
+    position: relative;
+    top: 5rem;
+}
+
+.App_base_4d {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #060708 url('R.images.gui.maps.icons.battlePass.extra_intro.tank') no-repeat center / cover;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    transition: opacity .5s;
+}
+    .mediaExtraLarge .App_base_4d {
+        background-image: url('R.images.gui.maps.icons.battlePass.extra_intro.tank_big');
+}
+    .App_base__visible_f0 {
+        opacity: 1;
+    }
+
+.App_close_53 {
+    position: absolute;
+    top: 7rem;
+    right: 48rem;
+}
+
+.App_header_b6 {
+    width: 100%;
+    height: 150rem;
+    margin-top: 15rem;
+}
+
+.App_content_16 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 100rem;
+    padding: 0 45rem;
+}
+
+.mediaLarge .App_content_16 {
+        margin-top: 165rem;
+        padding: 0 64rem;
+}
+
+.App_confirm_99 {
+    width: 160rem;
+    margin-bottom: 33rem;
+}
+
+.mediaLarge .App_confirm_99 {
+        margin-bottom: 63rem;
+}
+
+.Header_base_f4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Header_title_0a {
+    color: #F2F2F7;
+    font-size: 56rem;
+    font-weight: 700;
+}
+
+.mediaLarge .Header_title_0a {
+        font-size: 73rem;
+}
+
+.Header_description_85 {
+    margin-top: 8rem;
+    color: #FEFEEC;
+    font-size: 16rem;
+    line-height: .9;
+}
+
+.mediaLarge .Header_description_85 {
+        margin-top: 20rem;
+        font-size: 20rem;
+        line-height: .8;
+}
+
+.Progression_base_20 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 320rem;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+    .mediaMedium .Progression_base_20 {
+        width: 450rem;
+}
+    .mediaLarge .Progression_base_20 {
+        width: 634rem;
+}
+
+.Progression_title_5c {
+    color: #FEFEEC;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    opacity: .5;
+}
+
+.mediaLarge .Progression_title_5c {
+        font-size: 18rem;
+}
+
+.Progression_name_8e {
+    color: #F2F2F7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 12rem 0;
+    text-align: center;
+}
+
+.mediaLarge .Progression_name_8e {
+        margin: 16rem 0;
+        font-size: 40rem;
+}
+
+.Progression_description_fc {
+    color: #FEFEEC;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 300rem;
+    text-align: center;
+}
+
+.mediaLarge .Progression_description_fc {
+        width: 430rem;
+        font-size: 16rem;
+}
 

@@ -50,6 +50,99 @@ body {
     pointer-events: none;
 }
 
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ShamrockBlock_base_11 {
+    display: flex;
+    width: 238rem;
+    height: 80rem;
+    margin: 14rem 0 24rem;
+}
+
+.ShamrockBlock_wrapper_db {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    width: 238rem;
+    height: 80rem;
+    box-shadow: 0 0 10rem 0 rgba(0, 0, 0, .3), 0 0 3rem 0 rgba(0, 0, 0, .5);
+    background: url('R.images.gui.maps.icons.battleRoyale.hangar.shop') no-repeat center / cover;
+    filter: brightness(1);
+    position: relative;
+    transition: filter .2s;
+    cursor: pointer;
+}
+
+.ShamrockBlock_wrapper_db:hover {
+        filter: brightness(1.2);
+    }
+
+.ShamrockBlock_header_63 {
+    color: #F2F2F7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0 0 9rem;
+    line-height: 1;
+    text-shadow: 0 0 14rem #00743c;
+}
+
+.ShamrockBlock_link_65 {
+    margin: 2rem 0 2rem 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.ShamrockBlock_currency_b9 {
+    display: flex;
+    align-items: center;
+    height: 20rem;
+    margin-top: 6rem;
+    padding-left: 22rem;
+    position: relative;
+}
+
+.ShamrockBlock_value_9c {
+    margin-left: 3rem;
+    margin-top: -5rem;
+    line-height: 20rem;
+    text-shadow: 0 1rem 2rem rgba(0, 0, 0, .7), 0 0 8rem rgba(0, 210, 109, .7);
+}
+
+.ShamrockBlock_icon_79 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.battleRoyale.currency.stpcoin') no-repeat center / cover;
+    position: absolute;
+    top: -3rem;
+    left: 0;
+}
+
+.ShamrockBlock_shopIcon_b8 {
+    width: 160rem;
+    height: 120rem;
+    background: url('R.images.gui.maps.icons.battleRoyale.hangar.shopIcon') no-repeat center / cover;
+    position: absolute;
+    top: -15rem;
+    right: -24rem;
+    pointer-events: none;
+}
+
+.ShamrockBlock_particles_d8 {
+    width: 160rem;
+    height: 120rem;
+    position: absolute;
+    top: -15rem;
+    right: -24rem;
+    pointer-events: none;
+}
+
 .Spec_base_a5 {
     display: flex;
     flex-direction: row;
@@ -120,14 +213,13 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     width: 349rem;
-    padding: 19rem 0 24rem 88rem;
-    background: url('R.images.gui.maps.icons.battleRoyale.hangar.vehicleFeaturesBg') no-repeat 100% 100% / 100% 100%;
+    padding: 8rem 0 24rem 88rem;
+    background: url('R.images.gui.maps.icons.battleRoyale.hangar.vehicleFeaturesBg') no-repeat center / cover;
     overflow: hidden;
     position: relative;
 }
 
     .mediaMedium .App_base_e7 {
-        padding-top: 26rem;
         padding-bottom: 26rem;
 }
 

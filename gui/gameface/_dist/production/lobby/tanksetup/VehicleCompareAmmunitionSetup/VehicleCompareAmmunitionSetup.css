@@ -1,3 +1,135 @@
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .TextButton_base__right_39 {
+        flex-direction: row-reverse;
+    }
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+    .TextButton_icon__forward_59 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.back');
+        transform: translateY(1rem);
+    }
+.TextButton_icon__forward_59 {
+        transform: rotate(180deg) translateY(1rem);
+    }
+.TextButton_icon__close_53 {
+        margin: -1rem 0;
+        background-image: url('R.images.gui.maps.icons.components.text_button.close');
+    }
+.TextButton_icon__info_33 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.info');
+    }
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+    .TextButton_icon__forward_59 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+    }
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+    }
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+    }
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_glow_a4 {
+        opacity: 0;
+    }
+.TextButton_caption_82 {
+    position: relative;
+    transition: color .16s, text-shadow .16s;
+}
+.TextButton_caption__back_b9,
+    .TextButton_caption__forward_4e,
+    .TextButton_caption__close_36 {
+        color: #FFDD99;
+        text-shadow: 0 0 10rem rgba(255,42,0, 1),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4);
+    }
+.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
+            color: #fffa9f;
+        }
+.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
+            color: #FFDD99;
+        }
+.TextButton_caption__info_23 {
+        padding: 0 5rem;
+        color: #CCFFFF;
+        text-shadow: 0 0 12rem rgba(31,68,255, .8),
+            0 0 8rem #00eaff;
+    }
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+            color: #e3ffff;
+            text-shadow: 0 0 12rem rgba(31,68,255, .8),
+                0 0 12rem rgba(0,234,255, 1),
+                0 0 8rem #00eaff;
+        }
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+            color: #CCFFFF;
+            text-shadow: 0 0 12rem rgba(31,68,255, .6),
+                0 0 8rem #00eaff;
+        }
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+        margin-left: 8rem;
+    }
+.TextButton_base__right_39 .TextButton_goto_e7 {
+        margin-right: 8rem;
+    }
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity .16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+        left: -4rem;
+    }
+.TextButton_base__right_39 .TextButton_shine_e2 {
+        right: -4rem;
+        transform: rotate(180deg);
+    }
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_shine_e2 {
+        opacity: 0;
+    }
+
 .Layout_base_81 {
     display: flex;
     flex-direction: column;
@@ -72,6 +204,120 @@
     width: 100%;
     height: 166rem;
     padding-top: 20rem;
+}
+
+body {
+    flex: 1;
+    height: 100%;
+    line-height: 1;
+    overflow: hidden;
+}
+
+.SetupApp_base_7b {
+    height: 100%;
+    background-color: rgba(0,0,0, .2);
+    position: relative;
+    transition: background-color .5s;
+}
+
+.SetupApp_base__shown_a0 {
+        background-color: rgba(0,0,0, .7);
+    }
+
+.SetupApp_base__compare_9d {
+        width: 100%;
+    }
+
+.SetupApp_base__setup_92 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 34rem 0 35rem;
+        overflow: hidden;
+    }
+
+.SetupApp_close_da {
+    position: absolute;
+    top: 51rem;
+    right: 20rem;
+    z-index: 1;
+}
+
+.SetupApp_close__hidden_5a {
+        display: none;
+    }
+
+.SetupApp_close__small_61 {
+        top: 47rem;
+    }
+
+.SetupApp_content_65 {
+    flex: 1;
+    position: relative;
+}
+
+.SetupApp_content__compare_6e {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-height: calc(258.45rem + 55vh);
+        margin-top: calc(24vh - 173.04rem);
+        padding-top: 34rem;
+        overflow: hidden;
+    }
+
+.SetupApp_content__invisible_9a {
+        display: none;
+    }
+
+.SetupApp_content__shown_dd {
+        opacity: 1;
+        animation: SetupApp_show-app_00 .3s ease-out;
+    }
+
+.SetupApp_content__hidden_78 {
+        opacity: 0;
+        animation: SetupApp_hide-app_29 .3s ease-in;
+    }
+
+.SetupApp_panel_42 {
+    padding-bottom: 23rem;
+    position: absolute;
+    bottom: 35rem;
+    z-index: 1;
+}
+
+.SetupApp_back_20 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.lobby.settings_blured_bg') no-repeat top / cover;
+    position: absolute;
+}
+
+@keyframes SetupApp_show-app_00 {
+    0% {
+        opacity: 0;
+        transform: translateY(85rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes SetupApp_hide-app_29 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(85rem);
+    }
 }
 
 .Checkbox_base_36 {
@@ -1108,9 +1354,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 100%;
 }
 
+.renderers_word_f3 {
+    white-space: nowrap;
+    overflow-wrap: normal;
+}
+
 .TankName_base_f1 {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-start;
+    line-height: 1.3;
 }
 
     .TankName_base__sizeMedium_3a {
@@ -1118,6 +1371,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         font-size: 24rem;
         font-weight: 400;
         line-height: 1.2;
+    }
+
+    .TankName_base__sizBig_a9 {
+        color: #F2F2F7;
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
     }
 
     .TankName_base__typeWhite_32 {
@@ -1135,32 +1395,49 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .TankName_type_3c {
     width: 42rem;
     height: 38rem;
-    margin: 0 -10rem;
+    margin: 0 -9rem;
     background: no-repeat center / contain;
     position: relative;
-    top: -10rem;
+    top: -8rem;
 }
 
 .TankName_type__elite_cc {
         margin: 0 -6rem;
     }
 
-.TankName_base__sizeMedium_3a .TankName_type_3c {
+.TankName_base__sizeMedium_3a .TankName_type_3c,
+    .TankName_base__sizeBig_2b .TankName_type_3c {
         width: 83rem;
         height: 73rem;
         margin: 0 -23rem;
-        background: no-repeat center / contain;
-        position: relative;
-        top: -18rem;
+        top: -16rem;
     }
 
-.TankName_base__sizeMedium_3a .TankName_type__elite_cc {
+.TankName_base__sizeMedium_3a .TankName_type__elite_cc, .TankName_base__sizeBig_2b .TankName_type__elite_cc {
             margin: 0 -16rem;
+        }
+
+.TankName_base__sizeBig_2b .TankName_type_3c {
+        margin: 0 -23rem;
+        top: -14rem;
+    }
+
+.TankName_base__sizeBig_2b .TankName_type__elite_cc {
+            margin: 0 -13rem;
         }
 
 .TankName_base__typeColored_bc .TankName_name_56 {
         color: #8C8C7E;
     }
+
+.TankName_premiumIGR_25 {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 3rem 0 -2rem;
+    background: url('R.images.gui.maps.icons.library.premium_igr_ico') no-repeat center / contain;
+    position: relative;
+    top: 5rem;
+}
 
 .Aside_base_a5 {
     display: flex;
@@ -1490,152 +1767,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         right: 0;
 }
 
-.ScrollArea_base_47 {
-    width: 100%;
-    min-width: 1rem;
-    min-height: 1rem;
-    max-height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: relative;
-}
-
-    .ScrollArea_base__scrollIndent_1d.ps--active-y {
-        padding-right: 13rem;
-    }
-
-    .ScrollArea_base__scrollIndent_1d.ps--active-х {
-        padding-bottom: 13rem;
-    }
-
-    .ScrollArea_base__verticalScrollbarMargin_50 .ps__rail-y {
-                margin: 20rem 0;
-                right: 5rem;
-            }
-
-    .ScrollArea_base__multiple_44 .ps__rail-y {
-                margin-bottom: 30rem;
-            }
-
-    .ScrollArea_base__hidden_ec {
-        visibility: hidden;
-    }
-.ps--scrolling-dragging {
-        cursor: move;
-    }
-.ps__rail-x, .ps__thumb-x {
-        height: 13rem;
-        position: absolute;
-    }
-.ps__rail-y, .ps__thumb-y {
-        width: 13rem;
-        position: absolute;
-    }
-.ps__thumb-x, .ps__button-start-x, .ps__button-end-x, .ps__thumb-y, .ps__button-start-y, .ps__button-end-y {
-        border: 1rem solid #7e7b68;
-        box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
-        opacity: .7;
-    }
-.ps__thumb-x:hover, .ps__button-start-x:hover, .ps__button-end-x:hover, .ps__thumb-y:hover, .ps__button-start-y:hover, .ps__button-end-y:hover {
-            opacity: 1;
-        }
-.ps__thumb-x, .ps__button-start-x, .ps__button-end-x {
-        bottom: -6rem;
-    }
-.ps__thumb-y, .ps__button-start-y, .ps__button-end-y {
-        right: -6rem;
-    }
-.ps__rail-x {
-        display: none;
-        margin-left: 15rem;
-        border-top: 6rem solid transparent;
-        border-bottom: 6rem solid transparent;
-        bottom: 0;
-        cursor: pointer;
-    }
-.ps__rail-y {
-        display: none;
-        margin-top: 15rem;
-        border-left: 6rem solid transparent;
-        border-right: 6rem solid transparent;
-        right: 0;
-        cursor: pointer;
-    }
-.ps__track_x, .ps__track_y {
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.background');
-        background-size: 1rem;
-        position: relative;
-    }
-.ps__track_x:hover, .ps__track_y:hover {
-            opacity: .7;
-        }
-.ps__track_x {
-        width: 100%;
-        height: 1rem;
-        background-repeat: repeat-x;
-        background-position: 50% 0;
-    }
-.ps__track_y {
-        width: 1rem;
-        height: 100%;
-        background-repeat: repeat-y;
-        background-position: 0 50%;
-    }
-.ps--active-x > .ps__rail-x, .ps--active-y > .ps__rail-y {
-        display: block;
-    }
-.ps__thumb-x, .ps__thumb-y {
-        background: #26241b 50% 50% no-repeat;
-        transition: opacity linear .13s;
-    }
-.ps__thumb-x:active, .ps__thumb-y:active {
-            opacity: .7;
-        }
-.ps__thumb-x {
-        min-width: 10rem;
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal');
-        background-size: 8rem 7rem;
-    }
-.ps__thumb-y {
-        min-height: 10rem;
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.thumb');
-        background-size: 7rem 8rem;
-    }
-.ps__button-start-x, .ps__button-end-x, .ps__button-start-y, .ps__button-end-y {
-        width: 13rem;
-        height: 13rem;
-        background-repeat: no-repeat;
-        background-position: 50%;
-        background-size: 7rem 5rem;
-        position: absolute;
-    }
-.ps__button-start-x.disabled, .ps__button-end-x.disabled, .ps__button-start-y.disabled, .ps__button-end-y.disabled {
-            opacity: .3;
-            cursor: default;
-            pointer-events: none;
-        }
-.ps__button-start-x, .ps__button-start-y {
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
-    }
-.ps__button-end-x, .ps__button-end-y {
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
-    }
-.ps__button-start-x, .ps__button-end-x {
-        transform: rotate(-90deg);
-    }
-.ps__button-start-x {
-        left: -14rem;
-    }
-.ps__button-end-x {
-        right: -14rem;
-    }
-.ps__button-start-y {
-        top: -14rem;
-    }
-.ps__button-end-y {
-        bottom: -14rem;
-    }
-
 .ScrollableCards_base_e0 {
     display: flex;
 }
@@ -1957,6 +2088,34 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         left: 0;
     }
 
+.DisabledAbilities_base_1d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: DisabledAbilities_uprise_f2 .25s;
+}
+
+.DisabledAbilities_glow_75 {
+    width: 100%;
+    height: 161rem;
+    background: url('R.images.gui.maps.icons.tanksetup.cards.disabled_reserve.glow') no-repeat center / 354rem 159rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.DisabledAbilities_line_54 {
+    width: 100%;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.tanksetup.cards.disabled_reserve.line') no-repeat center / 354rem 1rem;
+    pointer-events: none;
+}
+
+@keyframes DisabledAbilities_uprise_f2 {
+    0% {
+        opacity: 0;
+    }
+}
+
 .Warning_base_4c {
     display: flex;
     justify-content: center;
@@ -1994,40 +2153,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 0;
     }
 }
-
-.Storage_base_53 {
-    display: flex;
-    align-items: center;
-}
-
-    .Storage_base__reversed_8f {
-        flex-direction: row-reverse;
-    }
-
-.Storage_icon_6a {
-    width: 30rem;
-    height: 30rem;
-    background: url('R.images.gui.maps.icons.library.storage_icon') no-repeat center / contain;
-}
-
-.Storage_count_7a {
-    color: #8C8C7E;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
-
-.Storage_base__reversed_8f .Storage_count_7a {
-        color: #C9C9B6;
-        font-size: 22rem;
-        font-weight: 700;
-        line-height: 1.2;
-        margin-top: -4rem;
-    }
-
-.Storage_count__zero_54 {
-        color: #B70000;
-    }
 
 .Currency_base_57 {
     display: flex;
@@ -2196,6 +2321,34 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Currency_base__extraLarge_4d .Currency_icon__equipCoin-extraLarge_8a {
             transform: translateX(2rem) translateY(4rem);
         }
+.Currency_icon__stpCoin-small_6b {
+        --icon-height: 16rem;
+        margin-right: -2rem;
+        background-image: url('R.images.gui.maps.icons.library.stpcoin.stpcoinSmall');
+    }
+.Currency_base__small_af .Currency_icon__stpCoin-small_6b {
+            transform: translateX(-1rem) translateY(1rem);
+        }
+.Currency_icon__stpCoin-big_da {
+        --icon-height: 24rem;
+        background-image: url('R.images.gui.maps.icons.library.stpcoin.stpcoinBig');
+    }
+.Currency_base__big_bc .Currency_icon__stpCoin-big_da {
+            transform: translateX(-5rem) translateY(3rem);
+        }
+.Currency_icon__stpCoin-large_ee {
+        --icon-height: 48rem;
+        margin-right: 2rem;
+        background-image: url('R.images.gui.maps.icons.library.stpcoin.stpcoinLarge');
+    }
+.Currency_icon__stpCoin-extraLarge_fa {
+        --icon-height: 80rem;
+        margin-right: 8rem;
+        background-image: url('R.images.gui.maps.icons.library.stpcoin.stpcoinExtraLarge');
+    }
+.Currency_base__extraLarge_4d .Currency_icon__stpCoin-extraLarge_fa {
+            transform: translateX(2rem) translateY(4rem);
+        }
 .Currency_value_e1 {
     /* font-size inherit does not work here, so 1em means the size does not change */
     /* stylelint-disable-next-line */
@@ -2237,7 +2390,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 .Currency_value__xp_b0,
     .Currency_value__crystal_19,
-    .Currency_value__equipCoin_d0 {
+    .Currency_value__equipCoin_d0,
+    .Currency_value__stpCoin_38 {
         color: #C9C9B6;
     }
 .Currency_base__small_af .Currency_value__notEnough_56 {
@@ -2302,6 +2456,40 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .Price_price__discount_29 {
         padding-right: 20rem;
+    }
+
+.Storage_base_53 {
+    display: flex;
+    align-items: center;
+}
+
+    .Storage_base__reversed_8f {
+        flex-direction: row-reverse;
+    }
+
+.Storage_icon_6a {
+    width: 30rem;
+    height: 30rem;
+    background: url('R.images.gui.maps.icons.library.storage_icon') no-repeat center / contain;
+}
+
+.Storage_count_7a {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Storage_base__reversed_8f .Storage_count_7a {
+        color: #C9C9B6;
+        font-size: 22rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-top: -4rem;
+    }
+
+.Storage_count__zero_54 {
+        color: #B70000;
     }
 
 .Availability_base_51 {
@@ -2477,242 +2665,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .Content_base_d8 {
     position: relative;
-}
-
-.Header_base_fb {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 596rem;
-    position: relative;
-}
-
-    .Header_base__small_d1,
-    .Header_base__medium_66 {
-        width: 902rem;
-    }
-
-    .Header_base__large_63,
-    .Header_base__huge_45 {
-        width: 1102rem;
-    }
-.Header_title_64 {
-    color: #f5eed5;
-    font-size: 36rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-.Header_title__small_fc,
-    .Header_title__tiny_8e {
-        font-size: 28rem;
-        font-weight: 700;
-        line-height: 1.1;
-    }
-.Header_tabs_73 {
-    margin-top: 20rem;
-}
-.Header_tabs__small_5f,
-    .Header_tabs__tiny_35 {
-        margin-top: 16rem;
-    }
-
-.TextButton_base_b6 {
-    display: flex;
-    align-items: center;
-    padding: 0 3rem;
-    font-size: 12rem;
-    position: relative;
-    cursor: pointer;
-}
-
-    .TextButton_base__right_39 {
-        flex-direction: row-reverse;
-    }
-.TextButton_icon_17 {
-    width: 32rem;
-    height: 32rem;
-    background: no-repeat center / contain;
-    position: relative;
-}
-.TextButton_icon__back_43,
-    .TextButton_icon__forward_59 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.back');
-        transform: translateY(1rem);
-    }
-.TextButton_icon__forward_59 {
-        transform: rotate(180deg) translateY(1rem);
-    }
-.TextButton_icon__close_53 {
-        margin: -1rem 0;
-        background-image: url('R.images.gui.maps.icons.components.text_button.close');
-    }
-.TextButton_icon__info_33 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.info');
-    }
-.TextButton_glow_a4 {
-    width: 100%;
-    height: 100%;
-    background: no-repeat center / contain;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    transition: opacity .16s;
-}
-.TextButton_icon__back_43 .TextButton_glow_a4,
-    .TextButton_icon__forward_59 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
-    }
-.TextButton_icon__close_53 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
-    }
-.TextButton_icon__info_33 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
-    }
-.TextButton_base_b6:hover .TextButton_glow_a4 {
-        opacity: 1;
-    }
-.TextButton_base_b6:active .TextButton_glow_a4 {
-        opacity: 0;
-    }
-.TextButton_caption_82 {
-    position: relative;
-    transition: color .16s, text-shadow .16s;
-}
-.TextButton_caption__back_b9,
-    .TextButton_caption__forward_4e,
-    .TextButton_caption__close_36 {
-        color: #FFDD99;
-        text-shadow: 0 0 10rem rgba(255,42,0, 1),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4);
-    }
-.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
-            color: #fffa9f;
-        }
-.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
-            color: #FFDD99;
-        }
-.TextButton_caption__info_23 {
-        padding: 0 5rem;
-        color: #CCFFFF;
-        text-shadow: 0 0 12rem rgba(31,68,255, .8),
-            0 0 8rem #00eaff;
-    }
-.TextButton_base_b6:hover .TextButton_caption__info_23 {
-            color: #e3ffff;
-            text-shadow: 0 0 12rem rgba(31,68,255, .8),
-                0 0 12rem rgba(0,234,255, 1),
-                0 0 8rem #00eaff;
-        }
-.TextButton_base_b6:active .TextButton_caption__info_23 {
-            color: #CCFFFF;
-            text-shadow: 0 0 12rem rgba(31,68,255, .6),
-                0 0 8rem #00eaff;
-        }
-.TextButton_goto_e7 {
-    color: #7c7c6c;
-}
-.TextButton_base__left_ff .TextButton_goto_e7 {
-        margin-left: 8rem;
-    }
-.TextButton_base__right_39 .TextButton_goto_e7 {
-        margin-right: 8rem;
-    }
-.TextButton_shine_e2 {
-    width: 90rem;
-    height: 40rem;
-    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
-    opacity: 0;
-    position: absolute;
-    top: -4rem;
-    transition: opacity .16s;
-    pointer-events: none;
-}
-.TextButton_base__left_ff .TextButton_shine_e2 {
-        left: -4rem;
-    }
-.TextButton_base__right_39 .TextButton_shine_e2 {
-        right: -4rem;
-        transform: rotate(180deg);
-    }
-.TextButton_base_b6:hover .TextButton_shine_e2 {
-        opacity: 1;
-    }
-.TextButton_base_b6:active .TextButton_shine_e2 {
-        opacity: 0;
-    }
-
-.InfoButton_base__standalone_e2 {
-        display: none;
-        position: absolute;
-        top: 51rem;
-        left: 20rem;
-    }
-
-        .mediaLargeWidth .InfoButton_base__standalone_e2 {
-            display: flex;
-}
-    .InfoButton_base__onlyIcon_bb {
-        width: 30rem;
-        height: 30rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1rem solid rgba(147, 147, 147, .35);
-        border-radius: 2rem;
-        background: rgba(0,0,0, .15);
-    }
-
-.InfoButton_hidden_7e {
-    display: none;
-}
-
-.Header_base_aa {
-    display: flex;
-    flex-direction: column;
-}
-
-.Header_points_d5 {
-    position: relative;
-    top: -2rem;
-}
-
-.Header_content_2c {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1;
-    padding-bottom: 2rem;
-}
-
-.Header_textWrapper_63 {
-    position: relative;
-    top: 8rem;
-}
-
-.Header_text_dc {
-    color: #FEFEEC;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    align-items: center;
-}
-
-.Header_infoButton_5e {
-    margin-left: 11rem;
-}
-
-.mediaLargeWidth .Header_infoButton_5e {
-        opacity: 0;
-        pointer-events: none;
 }
 
 .Tabs_base_d9 {
@@ -2982,82 +2934,107 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         margin-right: -10rem;
     }
 
-.DealPanel_base_10 {
+.Header_base_fb {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 596rem;
     position: relative;
-    z-index: 1;
 }
 
-    .DealPanel_base__tiny_86 {
-        justify-content: center;
-    }
-
-    .DealPanel_base__small_f6,
-    .DealPanel_base__medium_8a {
+    .Header_base__small_d1,
+    .Header_base__medium_66 {
         width: 902rem;
     }
 
-    .DealPanel_base__large_7b,
-    .DealPanel_base__huge_b3 {
+    .Header_base__large_63,
+    .Header_base__huge_45 {
         width: 1102rem;
     }
+.Header_title_64 {
+    color: #f5eed5;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Header_title__small_fc,
+    .Header_title__tiny_8e {
+        font-size: 28rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+.Header_tabs_73 {
+    margin-top: 20rem;
+}
+.Header_tabs__small_5f,
+    .Header_tabs__tiny_35 {
+        margin-top: 16rem;
+    }
 
-    .DealPanel_base__dialog_b4 {
-        flex-direction: column-reverse;
-    }
-.DealPanel_storage_40 {
+.InfoButton_base_62 {
     display: flex;
-    align-items: center;
 }
-.DealPanel_storage__medium_fe,
-    .DealPanel_storage__large_1e,
-    .DealPanel_storage__huge_e3 {
-        padding-top: 4rem;
+
+    .InfoButton_base__standalone_e2 {
+        position: absolute;
+        top: 47rem;
+        left: 35rem;
     }
-.DealPanel_from_70 {
-    color: #8C8C7E;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-right: 3rem;
-}
-.DealPanel_base__dialog_b4 .DealPanel_from_70 {
-        display: block;
+
+    .InfoButton_base__onlyIcon_bb {
+        width: 30rem;
+        height: 30rem;
+        justify-content: center;
+        align-items: center;
+        border: 1rem solid rgba(147, 147, 147, .35);
+        border-radius: 2rem;
+        background: rgba(0,0,0, .15);
     }
-.DealPanel_plus_b0 {
-    width: 24rem;
-    height: 24rem;
-    margin: 0 3rem;
-    background: url('R.images.gui.maps.icons.tanksetup.hangar.plus') no-repeat center / contain;
-    position: relative;
-    top: 1rem;
+
+.InfoButton_hidden_7e {
+    display: none;
 }
-.DealPanel_renewal_a8 {
+
+.Header_base_aa {
     display: flex;
-    position: absolute;
-    top: 8rem;
-    left: 0;
+    flex-direction: column;
 }
-.DealPanel_renewal__dialog_aa {
-        margin-top: 15rem;
-        position: relative;
-        top: 0;
-    }
-.DealPanel_control_39 {
-    margin-left: 20rem;
-}
-.DealPanel_totalPrice_2d {
-    display: flex;
-    align-items: center;
-    margin-left: 30rem;
+
+.Header_points_d5 {
     position: relative;
     top: -2rem;
 }
-.DealPanel_totalPrice__mixed_fd {
-        margin-left: 0;
-    }
+
+.Header_content_2c {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding-bottom: 2rem;
+}
+
+.mediaLargeWidth .Header_content_2c {
+        justify-content: flex-end;
+}
+
+.Header_textWrapper_63 {
+    position: relative;
+    top: 8rem;
+}
+
+.Header_text_dc {
+    color: #FEFEEC;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    align-items: center;
+}
+
+.Header_infoButton_5e {
+    margin-left: 11rem;
+}
 
 .TotalPrice_base_d9 {
     display: flex;
@@ -3087,6 +3064,83 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
     top: 1rem;
 }
+
+.App_base_44 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+    .App_base__tiny_5e {
+        justify-content: center;
+    }
+
+    .App_base__small_1d,
+    .App_base__medium_2a {
+        width: 902rem;
+    }
+
+    .App_base__large_8d,
+    .App_base__huge_6d {
+        width: 1102rem;
+    }
+
+    .App_base__dialog_fa {
+        flex-direction: column-reverse;
+    }
+.App_storage_d5 {
+    display: flex;
+    align-items: center;
+}
+.App_storage__medium_51,
+    .App_storage__large_8a,
+    .App_storage__huge_b6 {
+        padding-top: 4rem;
+    }
+.App_from_a4 {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-right: 3rem;
+}
+.App_base__dialog_fa .App_from_a4 {
+        display: block;
+    }
+.App_plus_04 {
+    width: 24rem;
+    height: 24rem;
+    margin: 0 3rem;
+    background: url('R.images.gui.maps.icons.tanksetup.hangar.plus') no-repeat center / contain;
+    position: relative;
+    top: 1rem;
+}
+.App_renewal_06 {
+    display: flex;
+    position: absolute;
+    top: 8rem;
+    left: 0;
+}
+.App_renewal__dialog_ba {
+        margin-top: 15rem;
+        position: relative;
+        top: 0;
+    }
+.App_control_fc {
+    margin-left: 20rem;
+}
+.App_totalPrice_87 {
+    display: flex;
+    align-items: center;
+    margin-left: 30rem;
+    position: relative;
+    top: -2rem;
+}
+.App_totalPrice__mixed_cc {
+        margin-left: 0;
+    }
 
 .Action_base_bf {
     display: flex;
@@ -3144,17 +3198,17 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
-.BoosterActions_base_95 {
+.Actions_base_ea {
     display: flex;
     transition: transform .25s;
 }
 
-    .BoosterActions_base__hidden_3e {
+    .Actions_base__hidden_65 {
         transform: translateY(6rem);
         pointer-events: none;
     }
 
-    .BoosterActions_base__shown_6a {
+    .Actions_base__shown_9b {
         transform: translateY(0);
     }
 
@@ -3173,78 +3227,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         color: #b4ff48;
     }
 
-.Cards_base_0a {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-    height: 100%;
-    padding-top: 16rem;
-}
-
-    .Cards_base__large_47,
-    .Cards_base__huge_d2 {
-        padding-top: 20rem;
-    }
-
-    .Cards_base__disabled_a9 {
-    opacity: .1;
-    }
-.Cards_card_ab {
-    padding: 0 0 16rem 16rem;
-}
-.Cards_card__large_b2,
-    .Cards_card__huge_78 {
-        padding: 0 0 20rem 20rem;
-    }
-
-.CompareHeader_base_7a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 902rem;
-}
-
-    .CompareHeader_base__small_ad,
-    .CompareHeader_base__medium_b7 {
-        width: 902rem;
-    }
-
-    .CompareHeader_base__large_6f,
-    .CompareHeader_base__huge_d0 {
-        width: 1102rem;
-    }
-.CompareHeader_title_59 {
-    color: #f5eed5;
-    font-size: 28rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-top: 12rem;
-    text-align: center;
-}
-.CompareHeader_description_1c {
-    color: #8C8C7E;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-top: 12rem;
-    text-align: center;
-}
-.CompareHeader_controlsContainer_8b {
-    width: 100%;
-    margin-top: 17rem;
-    position: relative;
-}
-.CompareHeader_tabs_15 {
-    position: absolute;
-    left: 0;
-}
-.CompareHeader_filters_80 {
-    position: absolute;
-    top: 10rem;
-    right: 0;
-}
-
 .Consumable_base_54 {
     color: #8C8C7E;
     font-size: 14rem;
@@ -3260,21 +3242,190 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         color: #b4ff48;
     }
 
-.ConsumableActions_base_fc {
+.Specialization_base_ec {
+    width: 22rem;
+    height: 22rem;
+    opacity: .8;
+    position: relative;
+}
+
+    .Specialization_base__tiny_fe,
+    .Specialization_base__small_a3,
+    .Specialization_base__medium_85 {
+        width: 38rem;
+        height: 38rem;
+    }
+
+    .Specialization_base__large_07,
+    .Specialization_base__huge_33 {
+        width: 54rem;
+        height: 54rem;
+    }
+
+    .Specialization_base__setup_5e {
+        opacity: .5;
+    }
+
+    .Specialization_base__correct_4c {
+        opacity: 1;
+    }
+.Specialization_glow_f0 {
+    width: 210rem;
+    height: 210rem;
+    background: url('R.images.gui.maps.icons.specialization.glow') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.Specialization_base__correct_4c .Specialization_glow_f0 {
+        animation: Specialization_glow_f0 1s;
+    }
+.Specialization_icon_3a {
+    width: 48rem;
+    height: 48rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: -13rem;
+    left: -13rem;
+    pointer-events: none;
+}
+.Specialization_icon__tiny_05,
+    .Specialization_icon__small_cf,
+    .Specialization_icon__medium_ed {
+        width: 64rem;
+        height: 64rem;
+    }
+.Specialization_icon__large_98,
+    .Specialization_icon__huge_f7 {
+        width: 80rem;
+        height: 80rem;
+    }
+.Specialization_specializationWrapper_bf,
+.Specialization_specializationButton_45 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 18rem;
+    padding-top: 1rem;
+}
+@keyframes Specialization_glow_f0 {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.Specializations_base_ab {
+    display: flex;
+    position: relative;
+}
+
+.Bonus_base_aa {
+    display: flex;
+}
+
+.Bonus_bonus_49 {
+    max-width: 100%;
+}
+
+.Bonus_text_48 {
+    flex: 1;
+}
+
+.Unit_base_15 {
+    color: #80D43A;
+    position: relative;
+}
+
+    .Unit_base__special_37 {
+        color: #b4ff48;
+    }
+.Unit_glow_38 {
+    width: 60rem;
+    height: 60rem;
+    background: url('R.images.gui.maps.icons.tanksetup.hangar.bonus_glow') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+.Unit_base__special_37 .Unit_glow_38 {
+        opacity: 1;
+        animation: Unit_glow_38 .25s;
+    }
+@keyframes Unit_glow_38 {
+    0% {
+        opacity: 0;
+    }
+
+    10%,
+    100% {
+        opacity: 1;
+    }
+}
+
+.Bonuses_base_af {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    line-height: 18rem;
+}
+.Bonuses_bonus_d1 {
+    display: flex;
+}
+.Bonuses_text_37 {
+    flex: 1;
+}
+.Bonuses_effect_f8 {
+    color: #FFC363;
+}
+.Bonuses_icon_40 {
+    width: 10rem;
+    height: 16rem;
+    background: url('R.images.gui.maps.icons.tanksetup.cards.effect') no-repeat center / contain;
+    position: relative;
+    top: 2rem;
+    left: -2rem;
+}
+
+.DeviceActions_base_c0 {
     display: flex;
     transition: transform .25s;
 }
 
-    .ConsumableActions_base__hidden_c1 {
+    .DeviceActions_base__hidden_a6 {
         transform: translateY(6rem);
         pointer-events: none;
     }
 
-    .ConsumableActions_base__shown_17 {
+    .DeviceActions_base__shown_b0 {
         transform: translateY(0);
     }
 
-.Cards_base_57 {
+.Card_base_48 {
+    padding: 0 0 16rem 16rem;
+}
+
+    .Card_base__large_42,
+    .Card_base__huge_55 {
+        padding: 0 0 20rem 20rem;
+    }
+
+.Cards_base_30 {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -3283,20 +3434,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding-top: 16rem;
 }
 
-    .Cards_base__large_db,
-    .Cards_base__huge_ac {
+    .Cards_base__large_33,
+    .Cards_base__huge_60 {
         padding-top: 20rem;
     }
 
-    .Cards_base__disabled_4f {
+    .Cards_base__disabled_28 {
     opacity: .1;
-    }
-.Cards_card_4e {
-    padding: 0 0 16rem 16rem;
-}
-.Cards_card__large_87,
-    .Cards_card__huge_dd {
-        padding: 0 0 20rem 20rem;
     }
 
 .CtaButtons_base_4c {
@@ -3514,200 +3658,49 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 14rem;
 }
 
-.Specialization_base_ec {
-    width: 22rem;
-    height: 22rem;
-    opacity: .8;
-    position: relative;
-}
-
-    .Specialization_base__tiny_fe,
-    .Specialization_base__small_a3,
-    .Specialization_base__medium_85 {
-        width: 38rem;
-        height: 38rem;
-    }
-
-    .Specialization_base__large_07,
-    .Specialization_base__huge_33 {
-        width: 54rem;
-        height: 54rem;
-    }
-
-    .Specialization_base__setup_5e {
-        opacity: .5;
-    }
-
-    .Specialization_base__correct_4c {
-        opacity: 1;
-    }
-.Specialization_glow_f0 {
-    width: 210rem;
-    height: 210rem;
-    background: url('R.images.gui.maps.icons.specialization.glow') no-repeat center / contain;
-    opacity: 0;
+.HeaderContent_base_cd {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
+    top: 10rem;
+    right: 0;
 }
-.Specialization_base__correct_4c .Specialization_glow_f0 {
-        animation: Specialization_glow_f0 1s;
-    }
-.Specialization_icon_3a {
-    width: 48rem;
-    height: 48rem;
-    background: no-repeat center / contain;
-    position: absolute;
-    top: -13rem;
-    left: -13rem;
-    pointer-events: none;
-}
-.Specialization_icon__tiny_05,
-    .Specialization_icon__small_cf,
-    .Specialization_icon__medium_ed {
-        width: 64rem;
-        height: 64rem;
-    }
-.Specialization_icon__large_98,
-    .Specialization_icon__huge_f7 {
-        width: 80rem;
-        height: 80rem;
-    }
-.Specialization_specializationWrapper_bf,
-.Specialization_specializationButton_45 {
+
+.CompareHeader_base_7a {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 18rem;
-    padding-top: 1rem;
+    width: 902rem;
 }
-@keyframes Specialization_glow_f0 {
-    0% {
-        opacity: 0;
+
+    .CompareHeader_base__small_ad,
+    .CompareHeader_base__medium_b7 {
+        width: 902rem;
     }
 
-    10% {
-        opacity: 1;
+    .CompareHeader_base__large_6f,
+    .CompareHeader_base__huge_d0 {
+        width: 1102rem;
     }
-
-    100% {
-        opacity: 0;
-    }
+.CompareHeader_title_59 {
+    color: #f5eed5;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 12rem;
+    text-align: center;
 }
-
-.Specializations_base_ab {
-    display: flex;
-    position: relative;
-}
-
-.Unit_base_15 {
-    color: #80D43A;
-    position: relative;
-}
-
-    .Unit_base__special_37 {
-        color: #b4ff48;
-    }
-.Unit_glow_38 {
-    width: 60rem;
-    height: 60rem;
-    background: url('R.images.gui.maps.icons.tanksetup.hangar.bonus_glow') no-repeat center / contain;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-}
-.Unit_base__special_37 .Unit_glow_38 {
-        opacity: 1;
-        animation: Unit_glow_38 .25s;
-    }
-@keyframes Unit_glow_38 {
-    0% {
-        opacity: 0;
-    }
-
-    10%,
-    100% {
-        opacity: 1;
-    }
-}
-
-.Bonus_base_aa {
-    max-width: 100%;
-}
-
-.Bonus_text_48 {
-    flex: 1;
-}
-
-.Bonuses_base_af {
+.CompareHeader_description_1c {
     color: #8C8C7E;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
-    line-height: 18rem;
+    margin-top: 12rem;
+    text-align: center;
 }
-.Bonuses_bonus_d1 {
-    display: flex;
-}
-.Bonuses_text_37 {
-    flex: 1;
-}
-.Bonuses_effect_f8 {
-    color: #FFC363;
-}
-.Bonuses_icon_40 {
-    width: 10rem;
-    height: 16rem;
-    background: url('R.images.gui.maps.icons.tanksetup.cards.effect') no-repeat center / contain;
+.CompareHeader_controlsContainer_8b {
+    width: 100%;
+    margin-top: 17rem;
     position: relative;
-    top: 2rem;
-    left: -2rem;
 }
-
-.DeviceActions_base_c0 {
-    display: flex;
-    transition: transform .25s;
-}
-
-    .DeviceActions_base__hidden_a6 {
-        transform: translateY(6rem);
-        pointer-events: none;
-    }
-
-    .DeviceActions_base__shown_b0 {
-        transform: translateY(0);
-    }
-
-.Cards_base_f1 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-    height: 100%;
-    padding-top: 16rem;
-}
-
-    .Cards_base__large_a2,
-    .Cards_base__huge_32 {
-        padding-top: 20rem;
-    }
-
-    .Cards_base__disabled_20 {
-    opacity: .1;
-    }
-.Cards_card_5e {
-    padding: 0 0 16rem 16rem;
-}
-.Cards_card__large_0e,
-    .Cards_card__huge_84 {
-        padding: 0 0 20rem 20rem;
-    }
 
 .Introduction_base_0e {
     width: 100%;
@@ -3838,6 +3831,34 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     overflow: hidden;
     position: relative;
 }
+
+.WeaponOccupancy_base_19 {
+    display: flex;
+    color: #7AB300;
+    font-weight: 700;
+}
+
+    .WeaponOccupancy_base__incomplete_e0 {
+        color: #FF2717;
+    }
+
+.WeaponOccupancy_tip_18 {
+    margin-right: 5rem;
+}
+
+.WeaponOccupancy_occupancy_6e {
+    color: #80D43A;
+    font-size: 24rem;
+}
+
+.WeaponOccupancy_occupancy__incomplete_e1 {
+        color: #FF2717;
+    }
+
+.WeaponOccupancy_occupancy__large_37,
+    .WeaponOccupancy_occupancy__huge_a5 {
+        font-size: 28rem;
+    }
 
 .SectionsSwapTransition_base__tiny_fe {
         width: 100%;
@@ -3972,165 +3993,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
-.Specification_base_e9 {
-    display: flex;
-    flex: 1;
-    padding-bottom: 7rem;
-    color: #8C8C7E;
-}
-
-    .Specification_base__medium_2f,
-    .Specification_base__large_47,
-    .Specification_base__huge_0b {
-        padding-bottom: 9rem;
-    }
-
-.Specification_units_7e {
-    padding-left: 3rem;
-    color: #595950;
-}
-
-.Specification_separator_46 {
-    flex: 1;
-    margin: 0 5rem 1rem;
-    border-bottom: 1rem solid rgba(255,255,255, .05);
-}
-
-.Specification_separator__tiny_11 {
-        flex: 0;
-        margin: 0 2rem;
-    }
-
-.Specification_value_bf {
-    display: flex;
-    color: #E9E2BF;
-}
-
-.TotalRow_base__tiny_c9 {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        position: relative;
-        top: -21rem;
-    }
-
-.TotalRow_row_f2 {
-    display: flex;
-    flex: 1;
-    padding-bottom: 7rem;
-    color: #8C8C7E;
-}
-
-.TotalRow_row__medium_fd,
-    .TotalRow_row__large_44,
-    .TotalRow_row__huge_e2 {
-        padding-bottom: 9rem;
-    }
-
-.TotalRow_row_f2 {
-    height: 21rem;
-}
-
-.TotalRow_row__medium_fd,
-    .TotalRow_row__large_44,
-    .TotalRow_row__huge_e2 {
-        height: 23rem;
-    }
-
-.TotalRow_rowItem_ff {
-    display: flex;
-}
-
-.TotalRow_separator_a2 {
-    flex: 1;
-    margin: 0 5rem 1rem;
-    border-bottom: 1rem solid rgba(255,255,255, .05);
-}
-
-.TotalRow_separator__tiny_7a {
-        flex: 0;
-        margin: 0 2rem;
-    }
-
-.TotalRow_total_f7 {
-    color: #E9E2BF;
-}
-
-.TotalRow_total__tiny_bf {
-        color: #8C8C7E;
-    }
-
-.TotalRow_colored_33 {
-    color: #8C8C7E;
-}
-
-.TotalRow_overall_09 {
-    display: flex;
-    color: #8C8C7E;
-}
-
-.TotalRow_value_b8 {
-    display: flex;
-    color: #E9E2BF;
-}
-
-.TotalRow_lowResolutionValue_a2 {
-    display: none;
-}
-
-.TotalRow_lowResolutionValue__tiny_e6 {
-    display: flex;
-    color: #E9E2BF;
-    }
-
-.TotalRow_hiResolutionValue_fa {
-    display: flex;
-    color: #E9E2BF;
-}
-
-.TotalRow_hiResolutionValue__tiny_94 {
-        display: none;
-    }
-
-.TotalRow_price_4a {
-    display: flex;
-}
-
-.TotalRow_price__final_d4 {
-        margin-left: 12rem;
-    }
-
-.TotalRow_indent_0e {
-    margin-left: 5rem;
-}
-
-.TotalRow_divider_94 {
-    margin: 0 5rem;
-}
-
-.Specifications_base_1e {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 140rem;
-}
-
-    .Specifications_base__tiny_63 {
-        flex-direction: row;
-        height: auto;
-    }
-
-    .Specifications_base__medium_09,
-    .Specifications_base__large_27 {
-        height: 155rem;
-    }
-
-.Specifications_overall_da {
-    display: flex;
-    flex-direction: column;
-}
-
 /*
 Gameface can't calculate gradient biggest than 8128px
 in JS 8000 reserved like anchor for start optimization
@@ -4251,37 +4113,6 @@ in JS 8000 reserved like anchor for start optimization
         background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
     }
 
-.StepEditor_base_f5 {
-    width: 36rem;
-    height: 36rem;
-    background: no-repeat center / contain;
-    position: relative;
-}
-
-    .StepEditor_base__enabled_f4:hover {
-            filter: brightness(1.35);
-        }
-
-    .StepEditor_base__enabled_f4:active {
-            filter: none;
-        }
-
-    .StepEditor_base__minusOff_19 {
-        background-image: url('R.images.gui.maps.icons.tanksetup.shells.minus_off');
-    }
-
-    .StepEditor_base__minusOn_9c {
-        background-image: url('R.images.gui.maps.icons.tanksetup.shells.minus_on');
-    }
-
-    .StepEditor_base__plusOff_af {
-        background-image: url('R.images.gui.maps.icons.tanksetup.shells.plus_off');
-    }
-
-    .StepEditor_base__plusOn_71 {
-        background-image: url('R.images.gui.maps.icons.tanksetup.shells.plus_on');
-    }
-
 .SlideControl_base_c8 {
     width: 11rem;
     height: 26rem;
@@ -4348,6 +4179,37 @@ in JS 8000 reserved like anchor for start optimization
 
 .Slider_editor__plus_b5 {
         right: -34rem;
+    }
+
+.StepEditor_base_f5 {
+    width: 36rem;
+    height: 36rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+
+    .StepEditor_base__enabled_f4:hover {
+            filter: brightness(1.35);
+        }
+
+    .StepEditor_base__enabled_f4:active {
+            filter: none;
+        }
+
+    .StepEditor_base__minusOff_19 {
+        background-image: url('R.images.gui.maps.icons.tanksetup.shells.minus_off');
+    }
+
+    .StepEditor_base__minusOn_9c {
+        background-image: url('R.images.gui.maps.icons.tanksetup.shells.minus_on');
+    }
+
+    .StepEditor_base__plusOff_af {
+        background-image: url('R.images.gui.maps.icons.tanksetup.shells.plus_off');
+    }
+
+    .StepEditor_base__plusOn_71 {
+        background-image: url('R.images.gui.maps.icons.tanksetup.shells.plus_on');
     }
 
 .Shell_base_4d {
@@ -4461,6 +4323,165 @@ in JS 8000 reserved like anchor for start optimization
         left: 110rem;
     }
 
+.Specification_base_e9 {
+    display: flex;
+    flex: 1;
+    padding-bottom: 7rem;
+    color: #8C8C7E;
+}
+
+    .Specification_base__medium_2f,
+    .Specification_base__large_47,
+    .Specification_base__huge_0b {
+        padding-bottom: 9rem;
+    }
+
+.Specification_units_7e {
+    padding-left: 3rem;
+    color: #595950;
+}
+
+.Specification_separator_46 {
+    flex: 1;
+    margin: 0 5rem 1rem;
+    border-bottom: 1rem solid rgba(255,255,255, .05);
+}
+
+.Specification_separator__tiny_11 {
+        flex: 0;
+        margin: 0 2rem;
+    }
+
+.Specification_value_bf {
+    display: flex;
+    color: #E9E2BF;
+}
+
+.Specifications_base_1e {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 140rem;
+}
+
+    .Specifications_base__tiny_63 {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .Specifications_base__medium_09,
+    .Specifications_base__large_27 {
+        height: 155rem;
+    }
+
+.Specifications_overall_da {
+    display: flex;
+    flex-direction: column;
+}
+
+.TotalRow_base__tiny_c9 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        top: -21rem;
+    }
+
+.TotalRow_row_f2 {
+    display: flex;
+    flex: 1;
+    padding-bottom: 7rem;
+    color: #8C8C7E;
+}
+
+.TotalRow_row__medium_fd,
+    .TotalRow_row__large_44,
+    .TotalRow_row__huge_e2 {
+        padding-bottom: 9rem;
+    }
+
+.TotalRow_row_f2 {
+    height: 21rem;
+}
+
+.TotalRow_row__medium_fd,
+    .TotalRow_row__large_44,
+    .TotalRow_row__huge_e2 {
+        height: 23rem;
+    }
+
+.TotalRow_rowItem_ff {
+    display: flex;
+}
+
+.TotalRow_separator_a2 {
+    flex: 1;
+    margin: 0 5rem 1rem;
+    border-bottom: 1rem solid rgba(255,255,255, .05);
+}
+
+.TotalRow_separator__tiny_7a {
+        flex: 0;
+        margin: 0 2rem;
+    }
+
+.TotalRow_total_f7 {
+    color: #E9E2BF;
+}
+
+.TotalRow_total__tiny_bf {
+        color: #8C8C7E;
+    }
+
+.TotalRow_colored_33 {
+    color: #8C8C7E;
+}
+
+.TotalRow_overall_09 {
+    display: flex;
+    color: #8C8C7E;
+}
+
+.TotalRow_value_b8 {
+    display: flex;
+    color: #E9E2BF;
+}
+
+.TotalRow_lowResolutionValue_a2 {
+    display: none;
+}
+
+.TotalRow_lowResolutionValue__tiny_e6 {
+    display: flex;
+    color: #E9E2BF;
+    }
+
+.TotalRow_hiResolutionValue_fa {
+    display: flex;
+    color: #E9E2BF;
+}
+
+.TotalRow_hiResolutionValue__tiny_94 {
+        display: none;
+    }
+
+.TotalRow_price_4a {
+    display: flex;
+}
+
+.TotalRow_price__final_d4 {
+        margin-left: 12rem;
+    }
+
+.TotalRow_indent_0e {
+    margin-left: 5rem;
+}
+
+.TotalRow_divider_94 {
+    margin: 0 5rem;
+}
+
 .Swap_base_91 {
     width: 46rem;
     height: 46rem;
@@ -4476,6 +4497,47 @@ in JS 8000 reserved like anchor for start optimization
         display: none;
     }
 
+.ShellContainer_base_d7 {
+    display: flex;
+    align-items: center;
+    width: 257rem;
+    margin-top: -10rem;
+    opacity: 1;
+}
+
+    .ShellContainer_base__tiny_4b {
+        align-items: center;
+        width: 100%;
+        height: 120rem;
+        margin-top: 0;
+    }
+
+    .ShellContainer_base__large_10,
+    .ShellContainer_base__huge_74 {
+        width: 322rem;
+    }
+.ShellContainer_swap_14 {
+    display: flex;
+    justify-content: center;
+    width: 64rem;
+    margin-top: -235rem;
+    position: relative;
+    z-index: 1;
+}
+.ShellContainer_swap__noEvents_e5 {
+        pointer-events: none;
+    }
+.ShellContainer_swap__tiny_f2 {
+        width: 100%;
+        height: 1rem;
+        margin-top: 0;
+        background-color: rgba(255,255,255, .1);
+    }
+.ShellContainer_swap__large_60,
+    .ShellContainer_swap__huge_b8 {
+        margin-top: -275rem;
+    }
+
 .Sections_base_c8 {
     display: flex;
     justify-content: center;
@@ -4489,71 +4551,9 @@ in JS 8000 reserved like anchor for start optimization
         justify-content: flex-start;
         align-items: flex-start;
     }
-.Sections_shell_a2 {
-    display: flex;
-    align-items: center;
-    width: 257rem;
-    margin-top: -10rem;
-    opacity: 1;
-}
-.Sections_base__tiny_71 .Sections_shell_a2 {
-        align-items: center;
-        width: 100%;
-        height: 120rem;
-        margin-top: 0;
-    }
-.Sections_base__large_d0 .Sections_shell_a2,
-    .Sections_base__huge_b0 .Sections_shell_a2 {
-        width: 322rem;
-    }
-.Sections_swap_be {
-    display: flex;
-    justify-content: center;
-    width: 64rem;
-    margin-top: -235rem;
-    position: relative;
-    z-index: 1;
-}
-.Sections_swap__noEvents_2d {
-        pointer-events: none;
-    }
-.Sections_base__tiny_71 .Sections_swap_be {
-        width: 100%;
-        height: 1rem;
-        margin-top: 0;
-        background-color: rgba(255,255,255, .1);
-    }
-.Sections_base__large_d0 .Sections_swap_be,
-    .Sections_base__huge_b0 .Sections_swap_be {
-        margin-top: -275rem;
-    }
 
-.WeaponOccupancy_base_19 {
-    display: flex;
-    color: #7AB300;
-    font-weight: 700;
-}
-
-    .WeaponOccupancy_base__incomplete_e0 {
-        color: #FF2717;
-    }
-
-.WeaponOccupancy_tip_18 {
-    margin-right: 5rem;
-}
-
-.WeaponOccupancy_occupancy_6e {
-    color: #80D43A;
-    font-size: 24rem;
-}
-
-.WeaponOccupancy_occupancy__incomplete_e1 {
-        color: #FF2717;
-    }
-
-.WeaponOccupancy_occupancy__large_37,
-    .WeaponOccupancy_occupancy__huge_a5 {
-        font-size: 28rem;
+    .Sections_base__large_d0 {
+        justify-content: space-around;
     }
 
 .TankName_base_56 {
@@ -4656,120 +4656,6 @@ in JS 8000 reserved like anchor for start optimization
     100% {
         opacity: 0;
         transform: translateX(20rem);
-    }
-}
-
-body {
-    flex: 1;
-    height: 100%;
-    line-height: 1;
-    overflow: hidden;
-}
-
-.SetupApp_base_7b {
-    height: 100%;
-    background-color: rgba(0,0,0, .2);
-    position: relative;
-    transition: background-color .5s;
-}
-
-.SetupApp_base__shown_a0 {
-        background-color: rgba(0,0,0, .7);
-    }
-
-.SetupApp_base__compare_9d {
-        width: 100%;
-    }
-
-.SetupApp_base__setup_92 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 34rem 0 35rem;
-        overflow: hidden;
-    }
-
-.SetupApp_close_da {
-    position: absolute;
-    top: 51rem;
-    right: 20rem;
-    z-index: 1;
-}
-
-.SetupApp_close__hidden_5a {
-        display: none;
-    }
-
-.SetupApp_close__small_61 {
-        top: 47rem;
-    }
-
-.SetupApp_content_65 {
-    flex: 1;
-    position: relative;
-}
-
-.SetupApp_content__compare_6e {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-height: calc(258.45rem + 55vh);
-        margin-top: calc(24vh - 173.04rem);
-        padding-top: 34rem;
-        overflow: hidden;
-    }
-
-.SetupApp_content__invisible_9a {
-        display: none;
-    }
-
-.SetupApp_content__shown_dd {
-        opacity: 1;
-        animation: SetupApp_show-app_00 .3s ease-out;
-    }
-
-.SetupApp_content__hidden_78 {
-        opacity: 0;
-        animation: SetupApp_hide-app_29 .3s ease-in;
-    }
-
-.SetupApp_panel_42 {
-    padding-bottom: 23rem;
-    position: absolute;
-    bottom: 35rem;
-    z-index: 1;
-}
-
-.SetupApp_back_20 {
-    width: 100%;
-    height: 100%;
-    background: url('R.images.gui.maps.icons.lobby.settings_blured_bg') no-repeat top / cover;
-    position: absolute;
-}
-
-@keyframes SetupApp_show-app_00 {
-    0% {
-        opacity: 0;
-        transform: translateY(85rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes SetupApp_hide-app_29 {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(85rem);
     }
 }
 

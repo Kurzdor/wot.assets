@@ -1,3 +1,13 @@
+body {
+    margin: 1rem;
+    line-height: normal;
+    overflow: hidden;
+}
+
+html {
+    overflow: hidden;
+}
+
 .QuestList_base_4a {
     display: flex;
     flex-direction: column;
@@ -228,7 +238,7 @@
     font-size: 12rem;
     font-weight: 400;
     line-height: 1.3;
-    margin-top: -10rem;
+    margin-top: -11rem;
     font-weight: 700;
     text-shadow: 0 0 12rem rgba(218, 33, 28, 1);
 }
@@ -824,14 +834,4 @@
         display: flex;
         align-items: flex-end;
     }
-
-body {
-    margin: 2rem;
-    line-height: normal;
-    overflow: hidden;
-}
-
-html {
-    overflow: hidden;
-}
 

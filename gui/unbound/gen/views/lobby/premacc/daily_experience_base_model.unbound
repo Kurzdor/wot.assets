@@ -1,0 +1,12 @@
+# This file was generated using wgpygen
+#   template: configs/templates/view_model.unbound.jinja2
+#   source: configs/definitions/views/lobby/premacc/daily_experience_base_model.yaml
+# Please, don't edit this file manually.
+(def macro DailyExperienceBaseModel()
+    (scope
+        (var isTankPremiumActive:bool = false)
+        (var multiplier:number = 1)
+        (var leftBonusCount:number = 0)
+        (var totalBonusCount:number = 5)
+    )
+)

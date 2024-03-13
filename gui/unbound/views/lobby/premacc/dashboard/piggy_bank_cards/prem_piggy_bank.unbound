@@ -1,0 +1,209 @@
+(def layout PremPiggyBankCard() entrance=true
+    (macro PremPiggyBankCardModel)
+    (macro PremDashboardAdaptiveSize)
+    (style
+        (width = 100%)
+        (height = 100%)
+        (backgroundColor = 0xff0c0c0c)
+    )
+    (scope
+        (var piggyActiveIcon:str = "R.images.gui.maps.icons.premacc.dashboard.cardPiggy['piggybank_' + (isNormalSize ? '360' : '340')]()")
+        (var piggyNotActiveIcon:str = "R.images.gui.maps.icons.premacc.dashboard.cardPiggy['piggybank_disabled_' + (isNormalSize ? '360' : '340')]()")
+        (var isPiggyFull:bool = "currentAmount >= maxAmount")
+        (var _fontForTitle:str = "isNormalSize ? 'MainBigTextStyle' : 'MainTextStyle'")
+        
+        (event evCardOver)
+        (event evCardOut)
+    )
+    (dispatch onGoToPiggyView on='click' 
+        (enabled="$event.buttonIdx == MOUSE.LEFT")
+    )
+    (dispatch evCardOver on='rollOver')
+    (dispatch evCardOut on='rollOut')
+    
+    (macro DashboardCardSounds over="evCardOver" click="onGoToPiggyView")
+
+    (image
+        (name = 'bg')
+        (style
+            (width = 100%)
+            (height = 100%)
+            (bind alpha "isAvailable && isTankPremiumActive ? 1: 0.4")
+        )
+        (bind source "isTankPremiumActive ? piggyActiveIcon : piggyNotActiveIcon")
+    )
+
+    (block
+        (name = 'disable')
+        (style
+            (macro AbsPositionFullSize)
+            (bind backgroundImage "CARD_DISABLE_TEXTURE")
+            (bind backgroundSize "repeat")
+            (alpha = 0.3)
+        )
+        (bind visible "!isAvailable")
+    )
+
+        
+    (image
+        (name = 'corner')
+        (style
+            (position = "absolute")
+            (align = "right")
+            (top = -1px)
+            (right = -1px)
+        )
+        (source = "R.images.gui.maps.icons.premacc.dashboard.cardPiggy.corner()")
+        (bind visible "isAvailable && timeleft > 0 && timeleft < ONE_DAY && currentAmount >= 0" (bind enabled "isTankPremiumActive"))
+        (bind visible "isAvailable && timeleft > 0 && timeleft < ONE_DAY && currentAmount > 0" (bind enabled "!isTankPremiumActive"))
+    )
+        
+    (hblock
+        (style
+            (macro AbsPositionFullSize)
+            (align = "right")
+            (top = 10px)
+            (right = 15px)
+        )
+        (image
+            (style
+                (marginRight = -5px)
+                (bind marginTop "isNormalSize ? 0px : -6px")
+            )
+            (source = "R.images.gui.maps.icons.library.ClockIcon_1()")
+        )
+        (tf
+            (bind class "isNormalSize ? 'PromoSubTitleTextStyle' : 'HighlightTextStyle'")
+            (bind text "timeLeft(
+                    timeleft, 
+                    R.strings.menu.timeLeft.short.day(),
+                    R.strings.menu.timeLeft.short.hour(),
+                    R.strings.menu.timeLeft.short.min(),
+                    R.strings.menu.timeLeft.short.lessMin(),
+                    true
+                )"
+                (enabled = "timeleft > 0")
+            )
+        )
+        (bind visible "currentAmount >= 0 && isAvailable && timeleft > 0" (bind enabled "isTankPremiumActive"))
+        (bind visible "currentAmount > 0 && isAvailable && timeleft > 0" (bind enabled "!isTankPremiumActive"))
+    )
+    
+    # If have tankprem
+    (hblock
+        (style
+            (position = "absolute")
+            (hcenter = 0px)
+            (bind bottom "isNormalSize ? 100px : 82px")
+            (gap = 19px)
+        )
+        (image
+            (style
+                (marginRight = -20px)
+                (marginBottom = 3px)
+            )
+            (source = "R.images.gui.maps.icons.premacc.dashboard.cardPiggy.check()")
+            (bind visible "isPiggyFull")
+        )
+        (tf 
+            (bind class "isPiggyFull ? 'MissionStatusAvailableTextStyle' : 'HighTitleTextStyle'")
+            (bind text "isPiggyFull ? R.strings.premacc.cardPiggy.piggyFull() : R.strings.premacc.piggyBank.reserveBank.title()")
+        )
+        (bind visible "isTankPremiumActive && isAvailable")
+    )
+    (hblock
+        (name = 'moneyBlock')
+        (style
+            (position = "absolute")
+            (hcenter = 0px)
+            (bottom = 34px)
+            (gap = 5px)
+            (bind alpha "isTankPremiumActive || isPiggyFull ? 1 : 0.4")
+        )
+        (tf 
+            (bind class "isNormalSize ? 'GrandTitleTextStyle' : 'CreditsTextBigStyle'")
+            (bind text "currentAmountStr")
+        )
+        (image
+            (style
+                (bind margin "isNormalSize ? 0px : -10px")
+            )
+            (source = "R.images.gui.maps.icons.quests.bonuses.small.credits()")
+        )
+        (bind visible "currentAmount >= 0 && isAvailable"
+            (bind enabled "isTankPremiumActive")
+        )
+        (bind visible "currentAmount > 0 && isAvailable"
+            (bind enabled "!isTankPremiumActive")
+        )
+    )
+
+    # lock state
+    (block
+        (name = 'lock')
+        (style
+            (width = 100%)
+            (position = "absolute")
+            (hcenter = 0px)
+            (bind top "isNormalSize ? 111px : 89px")
+            (align = "center|middle")
+        )
+        (image
+            (style
+                (bind alpha "isAvailable ? 1 : 0.8")
+                (marginBottom = -19px)
+            )
+            (source = "R.images.gui.maps.icons.premacc.dashboard.cardXp.lock()")
+        )
+        (tf
+            (style
+                (bind alpha "isAvailable ? 1 : 0.6")
+                (marginTop = -10px)
+            )
+            (class HighTitleTextStyle)
+            (text = "R.strings.premacc.piggyBank.reserveBank.title()")
+        )
+        (tf
+            (style
+                (marginTop = 5px)
+                (textAlign = "center")
+                (width = 100%)
+                (bind alpha "isAvailable ? 1 : 0.6")
+                (multiline = true)
+            )
+            (bind class "isNormalSize ? 'MainBigTextStyle' : 'MainTextStyle'")
+            (text = "R.strings.premacc.cardPiggy.accumSuspended()")
+            (bind visible "currentAmount > 0")
+        )
+        (tf
+            (style
+                (bind alpha "isAvailable ? 1 : 0.6")
+                (multiline = true)
+                (marginTop = 5px)
+            )
+            (bind htmlText "htmlTextStyle(TextFormat(R.strings.premacc.cardPiggy.piggyNotPremDescr(),
+                    {credits:htmlTextStyle('' + maxAmountStr + R.images.gui.maps.icons.library.CreditsIcon_2.tag(), 'CreditsTextStyle')})
+                    , _fontForTitle,'center', leading=-1)
+                    "
+            )
+            (bind visible "currentAmount == 0")
+        )
+        (bind visible "!isTankPremiumActive || !isAvailable")
+    )
+
+    (tf 
+        (style
+            (position = "absolute")
+            (hcenter = 0px)
+            (bottom = 29px)
+        )
+        (class ErrorTextStyle)
+        (text = "R.strings.premacc.doubleExperienceCard.notAvailableNow()")
+        (bind visible "!isAvailable")
+    )
+    (macro HoverCardAndStroke)
+
+    (bind buttonMode "isAvailable")
+    (bind mouseEnabled "isAvailable")
+    (mouseChildren = false)
+)
