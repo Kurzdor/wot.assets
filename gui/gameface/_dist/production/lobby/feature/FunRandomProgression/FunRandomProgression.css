@@ -1,0 +1,1155 @@
+.Countdown_base_fe {
+    display: flex;
+    align-items: center;
+}
+
+.Countdown_icon_8b {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+}
+
+.Countdown_description_8d {
+    color: #FFDD99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .TextButton_base__right_39 {
+        flex-direction: row-reverse;
+    }
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+    .TextButton_icon__forward_59 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.back');
+        transform: translateY(1rem);
+    }
+.TextButton_icon__forward_59 {
+        transform: rotate(180deg) translateY(1rem);
+    }
+.TextButton_icon__close_53 {
+        margin: -1rem 0;
+        background-image: url('R.images.gui.maps.icons.components.text_button.close');
+    }
+.TextButton_icon__info_33 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.info');
+    }
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+    .TextButton_icon__forward_59 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+    }
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+    }
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+    }
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_glow_a4 {
+        opacity: 0;
+    }
+.TextButton_caption_82 {
+    position: relative;
+    transition: color .16s, text-shadow .16s;
+}
+.TextButton_caption__back_b9,
+    .TextButton_caption__forward_4e,
+    .TextButton_caption__close_36 {
+        color: #FFDD99;
+        text-shadow: 0 0 10rem rgba(255,42,0, 1),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4);
+    }
+.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
+            color: #fffa9f;
+        }
+.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
+            color: #FFDD99;
+        }
+.TextButton_caption__info_23 {
+        padding: 0 5rem;
+        color: #CCFFFF;
+        text-shadow: 0 0 12rem rgba(31,68,255, .8),
+            0 0 8rem #00eaff;
+    }
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+            color: #e3ffff;
+            text-shadow: 0 0 12rem rgba(31,68,255, .8),
+                0 0 12rem rgba(0,234,255, 1),
+                0 0 8rem #00eaff;
+        }
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+            color: #CCFFFF;
+            text-shadow: 0 0 12rem rgba(31,68,255, .6),
+                0 0 8rem #00eaff;
+        }
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+        margin-left: 8rem;
+    }
+.TextButton_base__right_39 .TextButton_goto_e7 {
+        margin-right: 8rem;
+    }
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity .16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+        left: -4rem;
+    }
+.TextButton_base__right_39 .TextButton_shine_e2 {
+        right: -4rem;
+        transform: rotate(180deg);
+    }
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_shine_e2 {
+        opacity: 0;
+    }
+
+.Complete_base_c3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.Complete_resetTimer_66 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 9rem;
+}
+
+.mediaMedium .Complete_resetTimer_66 {
+        margin-top: 17rem;
+}
+
+.Complete_timer_b6 {
+    color: #FFDD99;
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: -5rem;
+}
+
+.Complete_flashline_22 {
+    width: 408rem;
+    height: 12rem;
+    margin-top: 10rem;
+    margin-right: 4rem;
+    background: url('R.images.fun_random.gui.maps.icons.feature.progression.flashline') no-repeat;
+}
+
+.Complete_flashline__left_a9 {
+        margin-left: 9rem;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+.Complete_title_21 {
+    color: #F2F2F7;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.mediaMedium .Complete_title_21 {
+        color: #F2F2F7;
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.Complete_description_20 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 9rem;
+}
+
+.mediaMedium .Complete_description_20 {
+        color: #E9E2BF;
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
+        margin-top: 13rem;
+}
+
+.Congratulation_base_58 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.Congratulation_title_42 {
+    color: #80D43A;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaLarge .Congratulation_title_42 {
+        color: #80D43A;
+        font-size: 56rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.Congratulation_description_b8 {
+    color: #E9E2BF;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-top: 8rem;
+}
+
+.mediaLarge .Congratulation_description_b8 {
+        margin-top: 16rem;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBar_base_45 {
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+.ProgressBar_base__small_df {
+        height: 2rem;
+    }
+.ProgressBar_background_51 {
+    width: 100%;
+    max-width: 8001px;
+    height: 100%;
+    background-image: var(--progress-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ProgressBar_background__small_46 {
+        height: 2rem;
+    }
+.ProgressBar_lineWrapper_6a {
+    display: flex;
+    flex: 1;
+}
+
+
+.ProgressBarBlink_base_24 {
+    width: 60rem;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    pointer-events: none;
+}
+
+    .ProgressBarBlink_base__small_0f {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressLineImpose_base_80 {
+    max-width: 8001px;
+    height: 100%;
+    background-color: var(--progress-line-base);
+    position: relative;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressLineImpose_base__disabled_cc {
+        background-color: var(--progress-line-disabled);
+    }
+.ProgressLineImpose_base__finished_d4 {
+        background-color: var(--progress-line-finished);
+    }
+.ProgressLineImpose_base__withoutBounce_56 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressLineImpose_pattern_1c {
+    max-width: 8001px;
+    background-image: var(--progress-pattern-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-disabled);
+        left: 0;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-finished);
+    }
+.ProgressLineImpose_gradient_35 {
+    max-width: 8001px;
+    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
+        display: none;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
+        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
+    }
+.ProgressLineImpose_glow_a5 {
+    width: 60rem;
+    max-width: 8001px;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.ProgressLineImpose_glow__left_d8 {
+        left: 1rem;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
+    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+        display: none;
+    }
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaSimple_base_6c {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ProgressBarDeltaSimple_delta_99 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-property: width, transform;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaGrow_base_7e {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressBarDeltaGrow_glow_68 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+
+.Reward_base_ea {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+    .Reward_base__s48x48_46,
+    .Reward_base__small_c0 {
+        width: 48rem;
+        height: 48rem;
+    }
+
+    .Reward_base__s80x80_ce,
+    .Reward_base__big_e5 {
+        width: 80rem;
+        height: 80rem;
+    }
+
+    .Reward_base__s128x100_c3 {
+        width: 128rem;
+        height: 100rem;
+    }
+
+    .Reward_base__s180x135_7c {
+        width: 180rem;
+        height: 135rem;
+    }
+
+    .Reward_base__s232x174_67 {
+        width: 232rem;
+        height: 174rem;
+    }
+
+    .Reward_base__s296x222_78 {
+        width: 296rem;
+        height: 222rem;
+    }
+
+    .Reward_base__s400x300_07 {
+        width: 400rem;
+        height: 300rem;
+    }
+
+    .Reward_base__s600x450_f8 {
+        width: 600rem;
+        height: 450rem;
+    }
+
+.Reward_tooltipWrapper_b5 {
+    height: 100%;
+}
+
+.Reward_icon_df {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.Reward_overlay_68 {
+    background: no-repeat center / 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.Reward_base__s48x48_46 .Reward_overlay_68,
+    .Reward_base__small_c0 .Reward_overlay_68 {
+        width: 96rem;
+        height: 96rem;
+        background-size: 100%;
+        overflow: visible;
+    }
+
+.Reward_base__s80x80_ce .Reward_overlay_68,
+    .Reward_base__big_e5 .Reward_overlay_68 {
+        width: 128rem;
+        height: 128rem;
+    }
+
+.Reward_base__s180x135_7c .Reward_overlay_68 {
+        width: 266rem;
+        height: 241rem;
+    }
+
+.Reward_base__s232x174_67 .Reward_overlay_68 {
+        width: 344rem;
+        height: 312rem;
+    }
+
+.Reward_base__s296x222_78 .Reward_overlay_68 {
+        width: 450rem;
+        height: 408rem;
+    }
+
+.Reward_base__s400x300_07 .Reward_overlay_68 {
+        width: 618rem;
+        height: 590rem;
+    }
+
+.Reward_base__s600x450_f8 .Reward_overlay_68 {
+        width: 670rem;
+        height: 575rem;
+    }
+
+.Reward_highlight_36 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 0;
+}
+
+.Reward_image_89 {
+    position: relative;
+}
+
+.Reward_info_72 {
+    margin-top: -13rem;
+    color: #e9e2bf;
+    font-size: 14rem;
+    line-height: 18rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_info_72,
+    .Reward_base__small_c0 .Reward_info_72 {
+        margin: -10rem -10rem 0;
+    }
+
+.Reward_info__multi_63 {
+        margin-right: 2rem;
+        text-align: right;
+    }
+
+.Reward_base__s48x48_46 .Reward_info__multi_63,
+        .Reward_base__small_c0 .Reward_info__multi_63 {
+            margin-right: 0;
+        }
+
+.Reward_info__credits_ef {
+        color: #CED9D9;
+    }
+
+.Reward_info__gold_36 {
+        color: #FFC363;
+    }
+
+.Reward_info__crystal_36 {
+        color: #C9C9B6;
+    }
+
+.Reward_info__premiumTank_d3 {
+        color: #FFDD99;
+    }
+
+.Reward_timer_d3 {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_timer_d3,
+    .Reward_base__small_c0 .Reward_timer_d3 {
+        width: 23rem;
+        height: 23rem;
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
+        top: -6rem;
+        right: -6rem;
+    }
+
+.Reward_base__s80x80_ce .Reward_timer_d3,
+    .Reward_base__big_e5 .Reward_timer_d3 {
+        width: 48rem;
+        height: 48rem;
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
+        top: -14rem;
+        right: -14rem;
+    }
+
+.Rewards_base_26 {
+    display: flex;
+}
+
+    .Rewards_base__vertical_9f {
+        flex-direction: column;
+    }
+
+.Rewards_reward_7b {
+    margin: 0 10rem;
+}
+
+.Rewards_reward__vertical_c6 {
+        margin: 15rem 0;
+    }
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #FFFFFF;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #F2F2F7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #FEFEEC;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #E9E2BF;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8C8C7E;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362E;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #FF2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #B70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #FEAB34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #EE7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #FFDD99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #CBAC77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80D43A;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7AB300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #CCFFFF;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09E2FF;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #CED9D9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #FFC363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #C9C9B6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #A29B70;
+}
+
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8C8C7E;
+}
+
+.Stage_base_99 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 2;
+    width: auto;
+    height: 231rem;
+    position: relative;
+}
+
+.Stage_rewards_6b {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 104rem;
+    height: 104rem;
+    margin-top: -44rem;
+    position: absolute;
+}
+
+.mediaMedium .Stage_rewards_6b {
+        justify-content: center;
+        margin-top: -20rem;
+}
+
+.Stage_reward_29 {
+    margin: 4rem 8rem;
+}
+
+.Stage_points_8c {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    width: 104rem;
+    margin-top: 75rem;
+    text-align: center;
+    opacity: .6;
+}
+
+.mediaMedium .Stage_points_8c {
+        color: #8C8C7E;
+        font-size: 18rem;
+        font-weight: 400;
+        line-height: 1.25;
+}
+
+.Stage_base__current_60 .Stage_points_8c {
+        color: #8C8C7E;
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
+        opacity: 1;
+    }
+
+.mediaMedium .Stage_base__current_60 .Stage_points_8c {
+            color: #8C8C7E;
+            font-size: 24rem;
+            font-weight: 700;
+            line-height: 1.2;
+}
+
+.Stage_index_e2 {
+    color: #8C8C7E;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    opacity: .5;
+    position: absolute;
+    bottom: 30rem;
+}
+
+.mediaMedium .Stage_index_e2 {
+        color: #8C8C7E;
+        font-size: 14rem;
+        font-weight: 400;
+        line-height: 1.3;
+}
+
+.Stage_base__done_17 .Stage_index_e2,
+    .Stage_base__current_60 .Stage_index_e2 {
+        opacity: 1;
+    }
+
+.Stage_check_f9 {
+    align-content: center;
+    width: 104rem;
+    height: 24rem;
+    margin-top: 85rem;
+    background: url('R.images.gui.maps.icons.library.check') no-repeat center;
+}
+
+.Stage_doneGlowTop_05 {
+    width: 212rem;
+    height: 170rem;
+    background: url('R.images.fun_random.gui.maps.icons.feature.progression.done_top') no-repeat center / cover;
+    position: absolute;
+    top: -44rem;
+}
+
+.Stage_doneGlowBottom_1c {
+    width: 212rem;
+    height: 63rem;
+    background: url('R.images.fun_random.gui.maps.icons.feature.progression.done_bottom') no-repeat center / cover;
+    position: absolute;
+    bottom: 30rem;
+}
+
+.Stage_separator_46 {
+    width: 2rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.Stage_separatorDark_ce {
+    width: 1rem;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+}
+
+.Stage_separatorLight_28 {
+    width: 1rem;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .4) 48.96%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    left: 1rem;
+}
+
+.Progression_base_7b {
+    display: flex;
+    position: relative;
+}
+
+.Progression_progress_67 {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 126rem;
+}
+
+.Progression_stages_15 {
+    display: flex;
+    width: 100%;
+}
+
+.Quest_base_24 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 484rem;
+    position: relative;
+}
+
+    .mediaMedium .Quest_base_24 {
+        width: 600rem;
+}
+
+    .mediaLarge .Quest_base_24 {
+        width: 700rem;
+}
+
+.Quest_borderBox_ed {
+    width: 100%;
+    height: 100%;
+    border: 1rem solid rgba(255, 255, 255, .15);
+    border-radius: 5rem;
+    box-shadow: inset 0 0 30rem rgba(255, 255, 255, .03);
+    background: rgba(26, 26, 26, .25);
+    mask: linear-gradient(0deg, transparent 0%, #000 100%, #000 0%, transparent 100%);
+    position: absolute;
+    top: 0;
+    left: 0rem;
+    z-index: -1;
+}
+
+.Quest_conditions_d5 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Quest_questIcon_2e {
+    width: 48rem;
+    height: 48rem;
+    margin-top: 32rem;
+    background: center / contain no-repeat;
+}
+
+.mediaLarge .Quest_questIcon_2e {
+        width: 80rem;
+        height: 80rem;
+        margin-top: 50rem;
+}
+
+.Quest_questName_bf {
+    color: #FFFFFF;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 8rem;
+    padding: 0 45rem;
+    text-align: center;
+}
+
+.mediaMedium .Quest_questName_bf {
+        color: #FFFFFF;
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.mediaLarge .Quest_questName_bf {
+        color: #FFFFFF;
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-top: 16rem;
+}
+
+.Quest_questPoints_88 {
+    color: #C9C9B6;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 8rem;
+}
+
+.mediaMedium .Quest_questPoints_88 {
+        color: #C9C9B6;
+        font-size: 28rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.mediaLarge .Quest_questPoints_88 {
+        color: #E9E2BF;
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.App_base_80 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.App_close_ec {
+    position: absolute;
+    top: 30rem;
+    right: 25rem;
+}
+
+.mediaMedium .App_close_ec {
+        top: 40rem;
+        right: 40rem;
+}
+
+.App_info_30 {
+    position: absolute;
+    top: 30rem;
+    left: 25rem;
+}
+
+.mediaMedium .App_info_30 {
+        top: 40rem;
+        left: 40rem;
+}
+
+.App_bg_04 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat 50% / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.App_header_2e {
+    color: #F2F2F7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaLarge .App_header_2e {
+        color: #F2F2F7;
+        font-size: 56rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.mediaExtraLarge .App_header_2e {
+        color: #F2F2F7;
+        font-size: 73rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+.App_content_c2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.App_complete_aa {
+    display: flex;
+    align-items: center;
+}
+
+.App_progression_00 {
+    display: flex;
+    flex-direction: column;
+    width: 992rem;
+    margin-top: 60rem;
+}
+
+.mediaMedium .App_progression_00 {
+        width: 1415rem;
+        margin-top: 20rem;
+}
+
+.App_base__completedFinal_cb .App_progression_00 {
+        margin-top: 100rem;
+    }
+
+.App_resetTimer_94 {
+    color: #FFDD99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.App_resetText_07 {
+    margin-left: 5rem;
+    margin-top: 7rem;
+}
+
+.App_footer_b1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    opacity: .8;
+}
+
+.App_footer__hidden_7b {
+        opacity: 0;
+    }
+
+.App_footerText_e7 {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.App_infoIcon_37 {
+    width: 24rem;
+    height: 24rem;
+    margin-right: 5rem;
+    background: url('R.images.gui.maps.icons.library.info') no-repeat center center;
+    background-size: contain;
+}
+
+.App_quest_96 {
+    display: flex;
+    margin-top: 24rem;
+}
+
+.mediaMedium .App_quest_96 {
+        margin-top: 47rem;
+}
+
+.mediaLarge .App_quest_96 {
+        margin-top: 35rem;
+}
+
+.App_conditions_fb {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+

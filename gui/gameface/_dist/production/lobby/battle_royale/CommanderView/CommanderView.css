@@ -12,9 +12,7 @@ body {
     width: 48rem;
     height: 48rem;
     margin-right: 10rem;
-    border: 1rem solid rgba(255, 255, 255, .15);
-    border-radius: 1rem;
-    background: rgba(0, 0, 0, .3) no-repeat center / contain;
+    background-size: cover;
     position: relative;
 }
 

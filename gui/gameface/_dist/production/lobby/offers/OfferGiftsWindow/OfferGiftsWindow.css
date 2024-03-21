@@ -1,148 +1,206 @@
-.ScrollArea_base_47 {
+.HorizontalBar_base_49 {
+    display: flex;
     width: 100%;
-    min-width: 1rem;
-    min-height: 1rem;
-    max-height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    height: 13rem;
     position: relative;
 }
 
-    .ScrollArea_base__scrollIndent_1d.ps--active-y {
-        padding-right: 13rem;
-    }
-
-    .ScrollArea_base__scrollIndent_1d.ps--active-х {
-        padding-bottom: 13rem;
-    }
-
-    .ScrollArea_base__verticalScrollbarMargin_50 .ps__rail-y {
-                margin: 20rem 0;
-                right: 5rem;
-            }
-
-    .ScrollArea_base__multiple_44 .ps__rail-y {
-                margin-bottom: 30rem;
-            }
-
-    .ScrollArea_base__hidden_ec {
+    .HorizontalBar_base__nonActive_82 {
         visibility: hidden;
     }
-.ps--scrolling-dragging {
-        cursor: move;
+
+    .HorizontalBar_base_49 .disable,
+    .HorizontalBar_base_49 .disable:hover {
+        opacity: .3;
+        cursor: default;
     }
-.ps__rail-x, .ps__thumb-x {
-        height: 13rem;
-        position: absolute;
+
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover, .HorizontalBar_rightButton_03:hover {
+        opacity: 1;
     }
-.ps__rail-y, .ps__thumb-y {
-        width: 13rem;
-        position: absolute;
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem 7rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+        opacity: 1;
     }
-.ps__thumb-x, .ps__button-start-x, .ps__button-end-x, .ps__thumb-y, .ps__button-start-y, .ps__button-end-y {
-        border: 1rem solid #7e7b68;
-        box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
         opacity: .7;
     }
-.ps__thumb-x:hover, .ps__button-start-x:hover, .ps__button-end-x:hover, .ps__thumb-y:hover, .ps__button-start-y:hover, .ps__button-end-y:hover {
-            opacity: 1;
-        }
-.ps__thumb-x, .ps__button-start-x, .ps__button-end-x {
-        bottom: -6rem;
+
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.VerticalBar_base_f3 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+    .VerticalBar_base__nonActive_42 {
+        visibility: hidden;
     }
-.ps__thumb-y, .ps__button-start-y, .ps__button-end-y {
-        right: -6rem;
+
+    .VerticalBar_base_f3 .disable,
+    .VerticalBar_base_f3 .disable:hover {
+        opacity: .3;
+        cursor: default;
     }
-.ps__rail-x {
-        display: none;
-        margin-left: 15rem;
-        border-top: 6rem solid transparent;
-        border-bottom: 6rem solid transparent;
-        bottom: 0;
-        cursor: pointer;
+
+.VerticalBar_topButton_d7,
+.VerticalBar_bottomButton_06 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_d7:hover, .VerticalBar_bottomButton_06:hover {
+        opacity: 1;
     }
-.ps__rail-y {
-        display: none;
-        margin-top: 15rem;
-        border-left: 6rem solid transparent;
-        border-right: 6rem solid transparent;
-        right: 0;
-        cursor: pointer;
+
+.VerticalBar_topButton_d7 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_06 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_df {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32 {
+    display: none;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32:hover {
+        opacity: 1;
     }
-.ps__track_x, .ps__track_y {
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.background');
-        background-size: 1rem;
-        position: relative;
+
+.VerticalBar_rail_43 {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_43:hover {
+        opacity: .7;
     }
-.ps__track_x:hover, .ps__track_y:hover {
-            opacity: .7;
-        }
-.ps__track_x {
-        width: 100%;
-        height: 1rem;
-        background-repeat: repeat-x;
-        background-position: 50% 0;
-    }
-.ps__track_y {
-        width: 1rem;
-        height: 100%;
-        background-repeat: repeat-y;
-        background-position: 0 50%;
-    }
-.ps--active-x > .ps__rail-x, .ps--active-y > .ps__rail-y {
-        display: block;
-    }
-.ps__thumb-x, .ps__thumb-y {
-        background: #26241b 50% 50% no-repeat;
-        transition: opacity linear .13s;
-    }
-.ps__thumb-x:active, .ps__thumb-y:active {
-            opacity: .7;
-        }
-.ps__thumb-x {
-        min-width: 10rem;
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal');
-        background-size: 8rem 7rem;
-    }
-.ps__thumb-y {
-        min-height: 10rem;
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.thumb');
-        background-size: 7rem 8rem;
-    }
-.ps__button-start-x, .ps__button-end-x, .ps__button-start-y, .ps__button-end-y {
-        width: 13rem;
-        height: 13rem;
-        background-repeat: no-repeat;
-        background-position: 50%;
-        background-size: 7rem 5rem;
-        position: absolute;
-    }
-.ps__button-start-x.disabled, .ps__button-end-x.disabled, .ps__button-start-y.disabled, .ps__button-end-y.disabled {
-            opacity: .3;
-            cursor: default;
-            pointer-events: none;
-        }
-.ps__button-start-x, .ps__button-start-y {
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
-    }
-.ps__button-end-x, .ps__button-end-y {
-        background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
-    }
-.ps__button-start-x, .ps__button-end-x {
-        transform: rotate(-90deg);
-    }
-.ps__button-start-x {
-        left: -14rem;
-    }
-.ps__button-end-x {
-        right: -14rem;
-    }
-.ps__button-start-y {
-        top: -14rem;
-    }
-.ps__button-end-y {
-        bottom: -14rem;
-    }
+
+
+.VerticalScroll_content_cb {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_f8 {
+    display: flex;
+}
+
+.VerticalScroll_bar_1e {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_af {
+    flex: 1;
+}
 
 .CButton_base_40 {
     display: flex;
@@ -351,90 +409,80 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex-wrap: wrap;
 }
 
-.RentInfo_base_21 {
+.Layout_base_81 {
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin-top: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 996rem;
+    height: 100%;
+    position: relative;
 }
 
-.RentInfo_icon_b0 {
-    width: 19rem;
-    height: 19rem;
-    background: url('R.images.gui.maps.icons.library.rent_ico_big') no-repeat 50% 50% / contain;
-    transform: translate(-3rem, 2rem);
-}
-
-.RentInfo_text_65 {
-    color: #fd9;
-    font-size: 14rem;
-    text-shadow: 0 0 12rem #f00;
-}
-
-.Alert_base_c1 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
-
-.Alert_icon_80 {
-    width: 16rem;
-    height: 16rem;
-    margin-right: 5rem;
-    background: url('R.images.gui.maps.icons.library.alertIcon') 0 0 / contain no-repeat;
-    transform: translateY(1rem);
-}
-
-.Alert_text_cd {
-    color: #ee7000;
-    font-size: 14rem;
-}
-
-.InventoryInfo_base_ee {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
-
-.InventoryInfo_icon_5c {
-    width: 30rem;
-    height: 24rem;
-    margin-right: 3rem;
-    background: url('R.images.gui.maps.icons.offers.in_inventory_icon') 0 0 / contain no-repeat;
-    transform: translateY(3rem);
-}
-
-.InventoryInfo_text_35 {
-    color: #e9e2bf;
-    font-size: 14rem;
-}
-
-.InfoBlock_price_ec {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin-top: 6rem;
-    color: #f2f2f7;
-    font-size: 16rem;
-}
-
-    .InfoBlock_price__disabled_59 {
-        color: #b70000;
+    .Layout_base__small_cb,
+    .Layout_base__medium_df {
+        width: 1310rem;
     }
 
-.InfoBlock_label_38 {
-    height: 19rem;
+    .Layout_base__large_f6,
+    .Layout_base__huge_d2 {
+        width: 1560rem;
+    }
+.Layout_header_46 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10rem 0 20rem;
 }
-
-.InfoBlock_tokenIcon_ff {
-    width: 16rem;
-    height: 16rem;
-    margin-left: 3rem;
-    background: url('R.images.gui.maps.icons.offers.token') 0 0 / contain no-repeat;
+.Layout_base__compare_56 .Layout_header_46 {
+        flex-direction: column;
+        align-items: center;
+    }
+.Layout_header__small_cb,
+    .Layout_header__tiny_4b {
+        margin: 10rem 0 16rem;
+    }
+.Layout_content_79 {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
 }
-
-.InfoBlock_inventoryInHangar_b5 {
-    margin-left: -6rem;
+.Layout_base__compare_56 .Layout_content_79 {
+        justify-content: center;
+        margin-top: 7rem;
+        padding-top: 20rem;
+        padding-bottom: 10rem;
+    }
+.Layout_main_df {
+    width: 596rem;
+    border-top: 1rem solid rgba(255,255,255, .1);
+    border-bottom: 1rem solid rgba(255,255,255, .1);
+}
+.Layout_base__compare_56 .Layout_main_df {
+        width: 902rem;
+    }
+.Layout_base__small_cb .Layout_main_df,
+    .Layout_base__medium_df .Layout_main_df {
+        width: 902rem;
+    }
+.Layout_base__large_f6 .Layout_main_df,
+    .Layout_base__huge_d2 .Layout_main_df {
+        width: 1102rem;
+    }
+.Layout_inner_3e {
+    margin: 0 -16rem;
+}
+.Layout_base__large_f6 .Layout_inner_3e,
+    .Layout_base__huge_d2 .Layout_inner_3e {
+        margin: 0 -20rem;
+    }
+.Layout_footer_f4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 166rem;
+    padding-top: 20rem;
 }
 
 .ShortenedText_base_fe {
@@ -485,6 +533,92 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     color: #80d43a;
 }
 
+.Alert_base_c1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.Alert_icon_80 {
+    width: 16rem;
+    height: 16rem;
+    margin-right: 5rem;
+    background: url('R.images.gui.maps.icons.library.alertIcon') 0 0 / contain no-repeat;
+    transform: translateY(1rem);
+}
+
+.Alert_text_cd {
+    color: #ee7000;
+    font-size: 14rem;
+}
+
+.InventoryInfo_base_ee {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.InventoryInfo_icon_5c {
+    width: 30rem;
+    height: 24rem;
+    margin-right: 3rem;
+    background: url('R.images.gui.maps.icons.offers.in_inventory_icon') 0 0 / contain no-repeat;
+    transform: translateY(3rem);
+}
+
+.InventoryInfo_text_35 {
+    color: #e9e2bf;
+    font-size: 14rem;
+}
+
+.InfoBlock_price_ec {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 6rem;
+    color: #E9E2BF;
+    font-size: 16rem;
+}
+
+    .InfoBlock_price__disabled_59 {
+        color: #FF2717;
+    }
+
+.InfoBlock_label_38 {
+    height: 19rem;
+}
+
+.InfoBlock_tokenIcon_ff {
+    width: 16rem;
+    height: 16rem;
+    margin-left: 3rem;
+    background: url('R.images.gui.maps.icons.offers.token') 0 0 / contain no-repeat;
+}
+
+.InfoBlock_inventoryInHangar_b5 {
+    margin-left: -6rem;
+}
+
+.RentInfo_base_21 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 5rem;
+}
+
+.RentInfo_icon_b0 {
+    width: 19rem;
+    height: 19rem;
+    background: url('R.images.gui.maps.icons.library.rent_ico_big') no-repeat 50% 50% / contain;
+    transform: translate(-3rem, 2rem);
+}
+
+.RentInfo_text_65 {
+    color: #fd9;
+    font-size: 14rem;
+    text-shadow: 0 0 12rem #f00;
+}
+
 .Gift_base_94 {
     width: 312rem;
     height: 205rem;
@@ -492,6 +626,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     border: 1rem rgba(255,255,255, .15) solid;
     border-radius: 2rem;
     background-color: rgba(0,0,0, .25);
+    overflow-y: hidden;
     position: relative;
     cursor: pointer;
 }
@@ -552,10 +687,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     bottom: 12rem;
     left: 12rem;
 }
-
-.Gift_base__disabled_20 .Gift_info_4e {
-        opacity: .5;
-    }
 
 .Gift_hoverInfo_61 {
     display: flex;
@@ -808,7 +939,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex-direction: column;
     align-items: center;
     flex: 0 1;
-    margin-top: 19rem;
     position: relative;
 }
 
@@ -855,6 +985,24 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Gifts_bottom_12 {
     width: 100%;
     height: 23rem;
+}
+
+.Countdown_base_fe {
+    display: flex;
+    align-items: center;
+}
+
+.Countdown_icon_8b {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+}
+
+.Countdown_description_8d {
+    color: #FFDD99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
 }
 
 .TextButton_base_b6 {
@@ -990,71 +1138,244 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 
 .Header_base_2d {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
-    margin-bottom: 2rem;
 }
 
 .Header_header_c7 {
-    margin: 67rem 0 0;
-    text-align: center;
+    width: 810rem;
+    margin: 85rem 13rem 10rem 0;
+    position: relative;
 }
 
-.Header_header__small_9c {
-        margin: 57rem 0 0;
-    }
-
-.Header_title_5e {
-    color: #f2f2f7;
-    font-size: 28rem;
-    font-weight: 700;
-    margin-bottom: 14rem;
-    padding: 0 250rem;
-    letter-spacing: -1rem;
+.mediaSmallWidth .Header_header_c7 {
+        width: 1087rem;
 }
 
-.Header_title__small_e2 {
-        margin-bottom: 9rem;
-    }
-
-.Header_description_9b {
-    color: #8c8c7e;
-    font-size: 14rem;
-    height: 20rem;
-}
-
-.Header_expiration_b2 {
-    color: #8c8c7e;
-    font-size: 14rem;
-}
-
-.Header_highlight_4d {
-    color: #e9e2bf;
-    font-size: 14rem;
+.mediaMediumWidth .Header_header_c7 {
+        width: 1307rem;
+        margin-top: 91rem;
 }
 
 .Header_pageBack_3d {
     position: absolute;
     top: 50rem;
-    left: 30rem;
+    left: 10rem;
+}
+
+.mediaMediumWidth .Header_pageBack_3d {
+        top: 64rem;
+}
+
+.Header_title_5e {
+    color: #FEFEEC;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding-right: 240rem;
+}
+
+.mediaMediumWidth .Header_title_5e {
+        color: #FEFEEC;
+        font-size: 56rem;
+        font-weight: 700;
+        line-height: 1.1;
+        padding-right: 280rem;
 }
 
 .Header_token_dd {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    margin-top: 5rem;
+    padding-right: 240rem;
+}
+
+.mediaMediumWidth .Header_token_dd {
+        padding-right: 280rem;
+}
+
+.Header_tokenText_6a {
+    color: #8C8C7E;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.mediaMediumWidth .Header_tokenText_6a {
+        color: #8C8C7E;
+        font-size: 28rem;
+        font-weight: 700;
+        line-height: 1.1;
+        font-weight: 400;
 }
 
 .Header_tokenLabel_5b {
-    color: #f2f2f7;
-    font-size: 14rem;
+    color: #E9E2BF;
+    font-weight: 700;
 }
 
 .Header_tokenIcon_fc {
+    align-self: flex-end;
+    width: 24rem;
+    height: 24rem;
+    margin-left: 5rem;
+    background: url('R.images.gui.maps.icons.offers.token') center / contain no-repeat;
+}
+
+.Header_choices_7f {
+    color: #E9E2BF;
+    font-weight: 700;
+}
+
+.Header_description_9b {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-top: 32rem;
+}
+
+.mediaMediumWidth .Header_description_9b {
+        color: #8C8C7E;
+        font-size: 20rem;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-top: 50rem;
+}
+
+.Header_descriptionSpacer_fd {
+    height: 22rem;
+}
+
+.Header_learnMore_0c {
+    margin-left: 5rem;
+    color: #E9E2BF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.mediaMediumWidth .Header_learnMore_0c {
+        margin-left: 10rem;
+}
+
+.Header_learnMore_0c:hover {
+        color: #EE7000;
+    }
+
+.Header_learnMoreText_1f {
+    border-bottom: 1rem solid;
+}
+
+.Header_learnMoreIcon_4f {
     width: 16rem;
     height: 16rem;
-    margin-left: 3rem;
-    background: url('R.images.gui.maps.icons.offers.token') 0 0 / contain no-repeat;
-    transform: translateY(-3rem);
+    margin-left: 4rem;
+    margin-top: 4rem;
+    background: url('R.images.gui.maps.icons.offers.link') center / contain no-repeat;
+}
+
+.Header_learnMore_0c:hover .Header_learnMoreIcon_4f {
+        background-image: url('R.images.gui.maps.icons.offers.link_hover');
+    }
+
+.Header_sign_2c {
+    width: 300rem;
+    height: 348rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: -196rem;
+    right: -63rem;
+    pointer-events: none;
+}
+
+.mediaMediumWidth .Header_sign_2c {
+        top: -198rem;
+        right: -30rem;
+}
+
+.Header_signText_a1 {
+    color: #FEFEEC;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    top: 212rem;
+    right: 65rem;
+    left: 65rem;
+}
+
+.mediaMediumWidth .Header_signText_a1 {
+        color: #FEFEEC;
+        font-size: 24rem;
+        font-weight: 400;
+        line-height: 1.2;
+        top: 228rem;
+        right: 35rem;
+        left: 35rem;
+}
+
+.Header_signClock_74 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    top: 236rem;
+    right: 65rem;
+    left: 65rem;
+}
+
+.mediaMediumWidth .Header_signClock_74 {
+        top: 259rem;
+        right: 35rem;
+        left: 35rem;
+}
+
+.Header_signClockIcon_70 {
+    width: 36rem;
+    height: 36rem;
+    background: url('R.images.gui.maps.icons.offers.clock') center / contain no-repeat;
+}
+
+.mediaMediumWidth .Header_signClockIcon_70 {
+        width: 48rem;
+        height: 48rem;
+}
+
+.Header_signClockText_4f {
+    color: #FFDD99;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 5rem;
+    text-shadow: 0 0 8rem #ff2a00;
+}
+
+.mediaMediumWidth .Header_signClockText_4f {
+        color: #FFDD99;
+        font-size: 24rem;
+        font-weight: 400;
+        line-height: 1.2;
+        text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+}
+
+.Header_border_40 {
+    width: 100%;
+    height: 1rem;
+    margin-top: 15rem;
+    background-color: #FFFFFF;
+    opacity: .1;
+}
+
+.mediaMediumWidth .Header_border_40 {
+        margin-top: 20rem;
 }
 
 .App_base_55 {

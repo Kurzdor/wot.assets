@@ -1,0 +1,416 @@
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    position: relative;
+    cursor: pointer;
+}
+
+    .CButton_base__main_42,
+    .CButton_base__primary_7f,
+    .CButton_base__primaryGreen_6f,
+    .CButton_base__primaryRed_ec,
+    .CButton_base__secondary_50 {
+        background-size: 100% 100%;
+    }
+
+    .CButton_base__main_42 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+
+    .CButton_base__primary_7f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+
+    .CButton_base__primaryGreen_6f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+
+    .CButton_base__primaryRed_ec {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+
+    .CButton_base__secondary_50 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+
+    .CButton_base__ghost_ed {
+        border-radius: 3rem;
+        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
+            0 0 0 1rem rgba(255,255,255, .15) inset;
+        background-color: rgba(0,0,0, .15);
+    }
+
+    .CButton_base__extraSmall_27 {
+        min-height: 17rem;
+        padding: 0 16rem;
+    }
+
+    .CButton_base__small_df,
+    .CButton_base__medium_74 {
+        padding: 0 20rem;
+    }
+
+    .CButton_base__small_df {
+        min-height: 18rem;
+    }
+
+    .CButton_base__medium_74 {
+        min-height: 32rem;
+    }
+
+    .CButton_base__disabled_d9 {
+        cursor: default;
+    }
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+.CButton_base__primary_7f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+.CButton_base__secondary_50 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow .16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+        border-radius: 2rem;
+        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
+    }
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+        transition: opacity .16s ease-in-out;
+    }
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+        opacity: 1;
+    }
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
+        background-color: rgba(8,6,0, .18);
+        background-image: none;
+    }
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+        opacity: 1;
+    }
+.CButton_stateDisabled_54 {
+    background-color: rgba(0,0,0, .25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+        opacity: 1;
+    }
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: .03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang=ja],
+    .CButton_content_cc[lang=ko],
+    .CButton_content_cc[lang=zh_tw],
+    .CButton_content_cc[lang=zh_sg],
+    .CButton_content_cc[lang=zh_cn],
+    .CButton_content_cc[lang=th] {
+        font-weight: 400;
+    }
+.CButton_base__main_42 .CButton_content_cc,
+    .CButton_base__primaryRed_ec .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #600;
+    }
+.CButton_base__secondary_50 .CButton_content_cc {
+        color: rgba(254,254,236, .75);
+    }
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #1c2502;
+    }
+.CButton_base__extraSmall_27 .CButton_content_cc {
+        font-size: 12rem;
+    }
+.CButton_base__small_df .CButton_content_cc {
+        font-size: 14rem;
+    }
+.CButton_base__medium_74 .CButton_content_cc {
+        font-size: 15rem;
+    }
+.CButton_base__disabled_d9 .CButton_content_cc {
+        opacity: .6;
+    }
+
+.Background_base_94 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat 50% / cover;
+    position: absolute;
+}
+
+    .Background_base__blur_69 {
+        filter: blur(12px);
+    }
+
+.Background_vignette_79 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.story_mode.gui.maps.icons.common.vignette') no-repeat 50% / 100%;
+    position: absolute;
+}
+
+.Background_preloader_7d {
+    display: none;
+}
+
+.Lore_base_eb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Lore_content_63 {
+    width: 100%;
+    height: 330rem;
+    position: relative;
+}
+
+.mediaLarge .Lore_content_63 {
+        height: 380rem;
+}
+
+.Lore_glow_68 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1417rem;
+    height: 805rem;
+    background: url('R.images.story_mode.gui.maps.icons.common.lore.glow') no-repeat 50% / cover;
+}
+
+.Lore_glow__top_b7 {
+        top: 0;
+        transform: translate(-50%, -50%);
+    }
+
+.Lore_glow__bottom_f7 {
+        opacity: 0.6;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+    }
+
+.Lore_line_43 {
+    width: 1688rem;
+    height: 950rem;
+    background: url('R.images.story_mode.gui.maps.icons.common.lore.line_extraSmall') no-repeat 50% / cover;
+    position: absolute;
+    top: -343rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.mediaLarge .Lore_line_43 {
+        width: 1920rem;
+        height: 1080rem;
+        background-image: url('R.images.story_mode.gui.maps.icons.common.lore.line_large');
+        top: -390rem;
+}
+
+.Lore_photos_ba {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 434rem;
+    height: 310rem;
+    margin-left: -235rem;
+    margin-top: 9rem;
+    background: no-repeat 50% / cover;
+}
+
+.mediaSmall .Lore_photos_ba {
+        width: 546rem;
+        height: 385rem;
+        margin-left: -304rem;
+        margin-top: -28rem;
+}
+
+.mediaMedium .Lore_photos_ba {
+        margin-left: -313rem;
+        margin-top: -24rem;
+}
+
+.mediaLarge .Lore_photos_ba {
+        width: 700rem;
+        height: 500rem;
+        margin-left: -391rem;
+        margin-top: -65rem;
+}
+
+.mediaExtraLarge .Lore_photos_ba {
+        margin-left: -392rem;
+        margin-top: -53rem;
+}
+
+.Lore_text_6e {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 430rem;
+    margin-left: 20rem;
+    white-space: pre-wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%);
+}
+
+.mediaSmall .Lore_text_6e {
+        color: #8C8C7E;
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
+        width: 560rem;
+}
+
+.mediaSmall .Lore_text_6e {
+        width: 580rem;
+}
+
+.mediaLarge .Lore_text_6e {
+        color: #8C8C7E;
+        font-size: 20rem;
+        font-weight: 400;
+        line-height: 1.2;
+        width: 700rem;
+}
+
+.EpilogueWindowApp_base_0c {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.EpilogueWindowApp_shining_f3 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1920rem;
+    height: 660rem;
+    background: url('R.images.story_mode.gui.maps.icons.common.victory_back') no-repeat 50% / cover;
+    top: 0;
+}
+
+.EpilogueWindowApp_title_aa {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: #F2F2F7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    top: 72rem;
+}
+
+.mediaMedium .EpilogueWindowApp_title_aa {
+        color: #F2F2F7;
+        font-size: 56rem;
+        font-weight: 700;
+        line-height: 1.1;
+        top: 85rem;
+}
+
+.mediaLarge .EpilogueWindowApp_title_aa {
+        top: 100rem;
+}
+
+.EpilogueWindowApp_continueButton_57 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    min-width: 160rem;
+    bottom: 50rem;
+}
+
+.EpilogueWindowApp_lore_ce {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 106rem;
+}
+
+.mediaMedium .EpilogueWindowApp_lore_ce {
+        top: 144rem;
+}
+
+.mediaLarge .EpilogueWindowApp_lore_ce {
+        top: 84rem;
+}
+
+.mediaExtraLarge .EpilogueWindowApp_lore_ce {
+        top: 118rem;
+}
+

@@ -3,19 +3,15 @@
     position: absolute;
 }
 
-.TooltipDecorator_decorator_3d {
-    padding: 4rem 6rem 8rem; /* border offset*/
-    border-image-source: url('R.atlases.components.tooltip_background');
-    border-image-slice: 24 fill;
-    border-image-width: 24rem;
-    position: relative;
-}
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.atlases.components.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
 
-.TooltipDecorator_decoratorContent_de {
-    background-color: #000;
-}
-
-.RankEmblem_base_d5 {
+.RankEmblem_base_ec {
     width: var(--imageSize);
     height: var(--imageSize);
     background: no-repeat center / cover;
@@ -57,14 +53,14 @@
     text-shadow: 0 4rem 4rem rgba(0, 0, 0, .25);
 }
 
-.App_rankEmblemContainer_c4 {
+.App_emblemContainer_08 {
     display: flex;
     justify-content: center;
     width: 100%;
     position: relative;
 }
 
-.App_rankEmblem_b1 {
+.App_emblem_90 {
     position: relative;
 }
 
@@ -183,6 +179,13 @@
 
 .FormatTextWithColorTags_prom_dd {
     color: #A29B70;
+}
+
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8C8C7E;
 }
 
 .tooltips_base_6b {
@@ -516,4 +519,73 @@
         right: 0;
         transform: translateX(50%);
     }
+
+.QualificationContent_base_b6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.QualificationContent_qualificationEmblem_c9 {
+    margin: 10rem 0 16rem;
+    position: relative;
+}
+
+.QualificationContent_iconContainer_08 {
+    display: flex;
+    width: 30rem;
+    position: relative;
+    transform: translateY(1rem);
+}
+
+.QualificationContent_dash_65 {
+    width: 66rem;
+    height: 32rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.light_dash') no-repeat center / cover;
+}
+
+.QualificationContent_dash__right_b2 {
+        transform: rotate(180deg);
+    }
+
+.QualificationContent_score_78 {
+    margin: 0 -6rem 0 -10rem;
+    color: #CBAC77;
+    font-size: 20rem;
+    line-height: 1;
+    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+    transform: translateY(-1rem);
+}
+
+.QualificationContent_battlesCounter_4c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.QualificationContent_battleIcon_3e {
+    width: 45rem;
+    height: 46rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.battles_45x46') no-repeat center / cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.QualificationContent_condition_6f {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20rem;
+}
+
+.QualificationContent_divider_0b {
+    width: auto;
+    margin: 16rem 0;
+}
 

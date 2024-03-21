@@ -1,0 +1,74 @@
+(def macro BattleRoyaleHangarVehicleTitleBlock()
+    (hblock
+        (style
+            (align = "middle")
+        )
+        (name = 'titleBlock')
+
+        (element VehicleTitle
+            (name = 'vehicleTitle')
+            (scope
+                (bind vehType "vehType")
+                (bind vehNameTxt "vehName")
+                (txtStyle = 'HangarVehNameTextStyle')
+            )
+            (style
+                (paddingTop = -20px)
+                (paddingBottom = -20px)
+                (marginLeft = 8px)
+            )
+        )
+    )
+)
+
+(def element Splitter() layout=true
+    (name = 'splitter')
+    (style
+        (backgroundColor = 0x33F2F2F7)
+        (width = 1px)
+        (height = 32px)
+        (marginLeft = 20px)
+    )
+)
+
+
+(def css BRCointBIgTextStyle()  #24
+    (fontFamily = $TitleFont)
+    (fontSize = 22)
+    (textColor = 0xff2717)
+)
+
+(def constant ACTION_PRICE_BR_BIG {
+        font: {
+            gold: GoldTextBigStyle,
+            credits: CreditsTextBigStyle,
+            crystal: CrystalTextBigStyle,
+            freeXP: ExpTextBigStyle,
+            xp: ExpTextBigStyle,
+            brcoin: CreditsTextBigStyle,
+        },
+        icon: {
+            gold: "R.atlases.components.GoldIcon_1()",
+            credits: "R.images.gui.maps.icons.battleRoyale.currency.credits_32()",
+            crystal: "R.atlases.components.crystal_16x16()",
+            freeXP: "R.atlases.components.FreeXpIcon_2()",
+            xp: "R.atlases.components.XpIcon_1()",
+            brcoin: "R.images.gui.maps.icons.battleRoyale.currency.proxy_32()",
+        },
+        fontNotEnough : BRCointBIgTextStyle,
+        actionsBG: "R.atlases.components.action_bg_total()",
+        actionsBGMargins: {top: -2px, right: -2px, bottom: -2px, left: 0px},
+        iconMargins: {top: 0px, right: 0px, bottom: 0px, left: 3px}
+    }
+)
+
+(def element ActionPriceBRBig() layout=true
+    (macro ActionPrice "ACTION_PRICE_BR_BIG")
+
+    (controller $ToolTip
+        (delay = 0.4)
+        (args tooltipId='BrCoinTooltipView')
+        (content = "R.views.battle_royale.lobby.tooltips.BrCoinTooltipView.resId")
+        (bind enabled "type == 'brcoin'")
+    )
+)

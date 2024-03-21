@@ -1,0 +1,169 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.atlases.components.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+
+.Content_base_2d {
+    display: flex;
+    width: 100%;
+    min-height: 160rem;
+    position: relative;
+}
+
+.Content_baseBackground_1b {
+    background: linear-gradient(90deg, rgba(201, 201, 182, 0) 0%, #C9C9B6 38.22%, #C9C9B6 64.56%, rgba(201, 201, 182, 0) 100%);
+    opacity: .07;
+    position: absolute;
+    top: 0;
+    right: -20rem;
+    bottom: 0;
+    left: -20rem;
+    z-index: -1;
+}
+
+.Content_border_d3 {
+    height: 2rem;
+    background: linear-gradient(90deg, transparent 0%, #C9C9B6 38%, #C9C9B6 64%, transparent 100%) repeat-x center / 4rem 2rem;
+    opacity: .2;
+    mask: linear-gradient(to left, transparent, #C9C9B6 50%, #C9C9B6 70%, transparent);
+    position: absolute;
+    right: -20rem;
+    left: -20rem;
+    mask-repeat: repeat;
+}
+
+.Content_border__top_76 {
+        top: 0;
+    }
+
+.Content_border__bot_5e {
+        bottom: 0;
+    }
+
+.Content_vehicle_c8,
+.Content_compensation_07 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 22rem 0;
+}
+
+.Content_compensationIcon_d7 {
+    width: 139rem;
+    height: 93rem;
+    background: url('R.images.event_lootboxes.gui.maps.openBox.gold_180x135') no-repeat center / 100%;
+}
+
+.Content_vehicleIcon_2f {
+    width: 90rem;
+    height: 64rem;
+    background: no-repeat center / 100%;
+}
+
+.Content_compensationArrow_ae {
+    width: 106rem;
+    height: 65rem;
+    background: url('R.images.event_lootboxes.gui.maps.openBox.compensationArrow') no-repeat center / 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+}
+
+.Content_vehicleName_da {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Content_vehicleTitle_21,
+.Content_compensationTitle_2a,
+.Content_vehicleNameLevel_1d,
+.Content_vehicleNameText_a5 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Content_compensationCount_b8 {
+    color: #FFC363;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Content_vehicleNameType_05 {
+    width: 18rem;
+    height: 18rem;
+    margin: 0 4rem;
+    background: no-repeat center / 170%;
+}
+
+.Header_base_5b {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 65rem;
+}
+
+.Header_title_50 {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.Header_description_2a {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 10rem;
+}
+
+.Footer_base_a0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 46rem;
+    margin-top: 2rem;
+}
+
+.Footer_icon_4c {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.event_lootboxes.gui.maps.openBox.compensation') no-repeat center / 100%;
+}
+
+.Footer_text_6b {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-left: 5rem;
+}
+
+.App_base_54 {
+    display: flex;
+    flex-direction: column;
+    width: 400rem;
+    padding: 20rem;
+    border-radius: 2rem;
+    background: linear-gradient(180deg, rgba(51, 51, 41, .3) 0%, rgba(51, 51, 41, 0) 15.62%, rgba(51, 51, 41, 0) 88.02%, rgba(51, 51, 41, .1) 100%);
+    color: #8C8C7E;
+    overflow: hidden;
+}
+

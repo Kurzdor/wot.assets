@@ -1,19 +1,20 @@
+body {
+    margin: 0;
+    line-height: normal;
+}
+
 .TooltipDecorator_base_c9 {
     display: flex;
     position: absolute;
 }
 
-.TooltipDecorator_decorator_3d {
-    padding: 4rem 6rem 8rem; /* border offset*/
-    border-image-source: url('R.atlases.components.tooltip_background');
-    border-image-slice: 24 fill;
-    border-image-width: 24rem;
-    position: relative;
-}
-
-.TooltipDecorator_decoratorContent_de {
-    background-color: #000;
-}
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.atlases.components.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
 
 .BattleConditions_base_8f {
     width: 100%;
@@ -604,10 +605,5 @@
     font-size: 16rem;
     font-weight: 700;
     text-align: center;
-}
-
-body {
-    margin: 0;
-    line-height: normal;
 }
 

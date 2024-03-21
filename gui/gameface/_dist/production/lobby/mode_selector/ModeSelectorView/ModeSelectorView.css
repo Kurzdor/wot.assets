@@ -332,6 +332,122 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 0;
     }
 
+.Widget_base_e7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.Widget_icon_16 {
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: no-repeat 50% / contain;
+    transform: translate(-50%, 0rem);
+    pointer-events: auto;
+}
+
+.Widget_icon__huge_6c {
+        width: 130rem;
+        height: 130rem;
+    }
+
+.Widget_icon__big_ad,
+    .Widget_icon__medium_db,
+    .Widget_icon__small_ea {
+        width: 64rem;
+        height: 64rem;
+    }
+
+.Widget_icon__b0_19,
+    .Widget_icon__b1_0b {
+        top: 147rem;
+    }
+
+.Widget_icon__b0__medium_43, .Widget_icon__b1__medium_85 {
+            top: 103rem;
+    }
+
+.Widget_icon__b0__extraSmall_a2,
+    .Widget_icon__b0__small_c9,
+    .Widget_icon__b1__extraSmall_6a,
+    .Widget_icon__b1__small_67 {
+            top: 107rem;
+    }
+
+.Widget_icon__b2_c7 {
+        top: 5rem;
+    }
+
+.Widget_icon__b2__medium_7f {
+            top: -4rem;
+    }
+
+.Widget_icon__b2__extraSmall_6b,
+    .Widget_icon__b2__small_33 {
+            top: 6rem;
+    }
+
+.Widget_icon__b3_21 {
+        top: -10rem;
+    }
+
+.Widget_icon__b3__medium_8c {
+            top: 14rem;
+    }
+
+.Widget_icon__b3__extraSmall_a9,
+    .Widget_icon__b3__small_c7 {
+            top: 0;
+    }
+
+.Widget_icon__b4_55 {
+        top: 22rem;
+    }
+
+.Widget_icon__b4__medium_f1 {
+            top: 18rem;
+    }
+
+.Widget_icon__b4__extraSmall_26,
+    .Widget_icon__b4__small_78 {
+            top: 12rem;
+    }
+
+.Widget_icon__b5_af {
+        top: 9rem;
+    }
+
+.Widget_icon__b5__medium_67 {
+            top: 6rem;
+    }
+
+.Widget_icon__b5__extraSmall_7e,
+    .Widget_icon__b5__small_32 {
+            top: 10rem;
+    }
+
+.Widget_icon__b6_3a {
+        top: 3rem;
+    }
+
+.Widget_icon__b6__medium_e3 {
+            top: 6rem;
+    }
+
+.Widget_icon__b6__extraSmall_3e,
+    .Widget_icon__b6__small_69 {
+            top: 4rem;
+    }
+
 .Counter_base_9e {
     display: flex;
     min-width: 14rem;
@@ -884,122 +1000,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
             font-weight: 400;
             line-height: 1.3;
             padding-top: 45rem;
-    }
-
-.Widget_base_e7 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.Widget_icon_16 {
-    position: absolute;
-    top: auto;
-    bottom: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: no-repeat 50% / contain;
-    transform: translate(-50%, 0rem);
-    pointer-events: auto;
-}
-
-.Widget_icon__huge_6c {
-        width: 130rem;
-        height: 130rem;
-    }
-
-.Widget_icon__big_ad,
-    .Widget_icon__medium_db,
-    .Widget_icon__small_ea {
-        width: 64rem;
-        height: 64rem;
-    }
-
-.Widget_icon__b0_19,
-    .Widget_icon__b1_0b {
-        top: 147rem;
-    }
-
-.Widget_icon__b0__medium_43, .Widget_icon__b1__medium_85 {
-            top: 103rem;
-    }
-
-.Widget_icon__b0__extraSmall_a2,
-    .Widget_icon__b0__small_c9,
-    .Widget_icon__b1__extraSmall_6a,
-    .Widget_icon__b1__small_67 {
-            top: 107rem;
-    }
-
-.Widget_icon__b2_c7 {
-        top: 5rem;
-    }
-
-.Widget_icon__b2__medium_7f {
-            top: -4rem;
-    }
-
-.Widget_icon__b2__extraSmall_6b,
-    .Widget_icon__b2__small_33 {
-            top: 6rem;
-    }
-
-.Widget_icon__b3_21 {
-        top: -10rem;
-    }
-
-.Widget_icon__b3__medium_8c {
-            top: 14rem;
-    }
-
-.Widget_icon__b3__extraSmall_a9,
-    .Widget_icon__b3__small_c7 {
-            top: 0;
-    }
-
-.Widget_icon__b4_55 {
-        top: 22rem;
-    }
-
-.Widget_icon__b4__medium_f1 {
-            top: 18rem;
-    }
-
-.Widget_icon__b4__extraSmall_26,
-    .Widget_icon__b4__small_78 {
-            top: 12rem;
-    }
-
-.Widget_icon__b5_af {
-        top: 9rem;
-    }
-
-.Widget_icon__b5__medium_67 {
-            top: 6rem;
-    }
-
-.Widget_icon__b5__extraSmall_7e,
-    .Widget_icon__b5__small_32 {
-            top: 10rem;
-    }
-
-.Widget_icon__b6_3a {
-        top: 3rem;
-    }
-
-.Widget_icon__b6__medium_e3 {
-            top: 6rem;
-    }
-
-.Widget_icon__b6__extraSmall_3e,
-    .Widget_icon__b6__small_69 {
-            top: 4rem;
     }
 
 .BonusBattles_base_1b {
@@ -2074,7 +2074,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     flex-direction: row;
     bottom: 50rem;
-    z-index: 1;
 }
     .Rewards_base__extraSmall_9b,
     .Rewards_base__small_78 {
@@ -2564,30 +2563,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .NormalCard_statusDescription__color_b5 {
         color: #E9E2BF;
     }
-
-.NormalCard_alert_4c {
-    color: #EE7000;
-    font-size: 14rem;
-    font-weight: 700;
-    line-height: 1.15;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15rem auto 0;
-}
-
-.NormalCard_cornerAlert_a7 {
-    position: absolute;
-    top: 12rem;
-    right: 8rem;
-}
-
-.NormalCard_alertIcon_86 {
-    width: 16rem;
-    height: 16rem;
-    margin-right: 4rem;
-    background: url('R.images.gui.maps.icons.library.alertIcon') no-repeat left / contain;
-}
 
 .NormalCard_belowStatus_05 {
     position: absolute;
@@ -3151,48 +3126,21 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         pointer-events: none;
     }
 
-.Comp7BattleCard_widgetOverlay_66 {
+.Card_widgetOverlay_a5 {
     pointer-events: auto;
 }
 
-.Comp7BattleCard_widget_3b {
-    position: absolute;
-    top: 10rem;
-    left: 50%;
-    z-index: 1;
-    transform: translateX(-50%);
-}
-
-.Comp7BattleCard_base__b0_91 .Comp7BattleCard_widget_3b,
-    .Comp7BattleCard_base__b1_30 .Comp7BattleCard_widget_3b {
-        top: 30rem;
-    }
-
-.mediaMedium .Comp7BattleCard_base__b0_91 .Comp7BattleCard_widget_3b, .mediaMedium .Comp7BattleCard_base__b1_30 .Comp7BattleCard_widget_3b {
-            top: 80rem;
-}
-
-.mediaMedium .Comp7BattleCard_base__b2_da .Comp7BattleCard_widget_3b {
-            width: 120rem;
-            height: 120rem;
-            top: 0;
-}
-
-.Comp7BattleCard_subtitle_75 {
-    pointer-events: auto;
-}
-
-.Comp7BattleCard_belowStatus_48 {
+.Card_belowStatus_b6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 80rem;
     position: relative;
+    pointer-events: auto;
 }
 
-.RankEmblem_base_d5 {
-    width: var(--imageSize);
-    height: var(--imageSize);
-    background: no-repeat center / cover;
+.mediaMedium .Card_belowStatus_b6 {
+        margin-top: 110rem;
 }
 
 /*
@@ -3395,180 +3343,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transition-timing-function: cubic-bezier(1, 0, .75, .75);
     }
 
-.Progress_base_e5 {
-    width: 86rem;
-}
-
-.Progress_progress_33 {
-    margin-bottom: 10rem;
-}
-
-.Progress_status_43 {
-    color: #CBAC77;
-    font-size: 12rem;
-    text-align: center;
-    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
-}
-
-.Progress_statusPoints_36 {
-    color: #FFDD99;
-    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
-}
-
-.Progress_points_4e {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.Progress_dash_18 {
-    width: 66rem;
-    height: 31rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.light_dash') no-repeat center / cover;
-}
-
-.Progress_dash__right_2a {
-        transform: rotate(180deg);
-    }
-
-.Progress_score_3f {
-    margin: 0 -6rem;
-    color: #FFDD99;
-    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
-}
-
-.Warning_base_18 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12rem;
-    position: relative;
-}
-
-.Warning_lighting_e5 {
-    width: 111rem;
-    height: 58rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.lighting') no-repeat center / cover;
-    opacity: .6;
-    position: absolute;
-    top: -12rem;
-    right: 50%;
-    transform: translateX(55rem);
-    pointer-events: none;
-}
-
-.Warning_value_47 {
-    color: #FFDD99;
-    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
-}
-
-.Warning_base__text_6b .Warning_value_47 {
-        color: #FF2717;
-        text-shadow: 0 0 14rem #f00;
-    }
-
-.Warning_timer_c3 {
-    width: 30rem;
-    height: 30rem;
-    margin: 0 -10rem -2rem -5rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.timer') no-repeat center / cover;
-    position: relative;
-}
-
-.App_base_3b {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-    overflow: hidden;
-}
-
-.App_content_c6 {
-    width: 130rem;
-    position: relative;
-    z-index: 1;
-}
-
-.mediaMediumHeight .App_content_c6 {
-        width: 150rem;
-}
-
-.App_rank_38 {
-    width: 100%;
-    filter: brightness(1);
-    transition: filter .2s linear;
-    cursor: pointer;
-}
-
-.App_rank_38:hover {
-        filter: brightness(1.15);
-    }
-
-.App_base__unavailable_bb .App_rank_38 {
-        filter: brightness(.53);
-        cursor: default;
-    }
-
-.App_rankEmblem_10 {
-    width: 130rem;
-    height: 130rem;
-    margin-bottom: 10rem;
-}
-
-.App_base__unavailable_bb .App_rankEmblem_10 {
-        filter: saturate(0%);
-    }
-
-.mediaMediumHeight .App_rankEmblem_10 {
-        width: 150rem;
-        height: 150rem;
-        margin-bottom: 0;
-}
-
-.App_progression_b2 {
-    margin: 0 0 8rem 22rem;
-}
-
-.mediaMediumHeight .App_progression_b2 {
-        margin-left: 32rem;
-}
-
-.App_warning_4a {
-    margin-top: -5rem;
-}
-
-.Progression_base_bb {
-    display: flex;
-    justify-content: center;
-}
-
-.Progression_progress_2a {
-    margin-top: 18rem;
-}
-
-.Progression_warning_1f {
-    margin-top: -5rem;
-}
-
-.Countdown_base_fe {
-    display: flex;
-    align-items: center;
-}
-
-.Countdown_icon_8b {
-    width: 32rem;
-    height: 32rem;
-    background: no-repeat center / contain;
-}
-
-.Countdown_description_8d {
-    color: #FFDD99;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
-
 .FormatTextWithColorTags_blackReal_3c {
     color: #000000;
 }
@@ -3661,6 +3435,386 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     color: #A29B70;
 }
 
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8C8C7E;
+}
+
+.Progression_base_94 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 20rem;
+}
+
+.Progression_title_81 {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.Progression_contentWrapper_3a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.Progression_progress_7b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 8rem 0 10rem;
+    padding: 0 20rem;
+    position: absolute;
+}
+
+.Progression_currentStage_67 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 15rem;
+}
+
+.mediaMedium .Progression_currentStage_67 {
+        margin-bottom: 22rem;
+}
+
+.Progression_currentStage_67 span {
+        color: #E9E2BF;
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-left: 5rem;
+        position: relative;
+        top: 0;
+    }
+
+.mediaMedium .Progression_currentStage_67 span {
+            color: #E9E2BF;
+            font-size: 22rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-left: 6rem;
+            top: 2rem;
+}
+
+.mediaLarge .Progression_currentStage_67 span {
+            color: #E9E2BF;
+            font-size: 24rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-left: 7rem;
+}
+
+.Progression_progressValue_f7 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    margin-top: 15rem;
+    text-align: center;
+}
+
+.mediaMedium .Progression_progressValue_f7 {
+        margin-top: 22rem;
+}
+
+.Progression_progressValueIcon_e9 {
+    width: 16rem;
+    height: 16rem;
+    margin-left: 5rem;
+    background: url('R.images.gui.maps.icons.mode_selector.common.token_battle_royale') no-repeat center/cover;
+}
+
+.mediaMedium .Progression_progressValueIcon_e9 {
+        margin-bottom: -1rem;
+}
+
+.Comp7BattleCard_widget_3b {
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+    .Comp7BattleCard_base__b0_91 .Comp7BattleCard_widget_3b,
+    .Comp7BattleCard_base__b1_30 .Comp7BattleCard_widget_3b {
+        top: 108rem;
+    }
+
+    .mediaMedium .Comp7BattleCard_base__b0_91 .Comp7BattleCard_widget_3b, .mediaMedium .Comp7BattleCard_base__b1_30 .Comp7BattleCard_widget_3b {
+            width: 150rem;
+            height: 150rem;
+            top: 80rem;
+}
+
+    .mediaLarge .Comp7BattleCard_base__b0_91 .Comp7BattleCard_widget_3b, .mediaLarge .Comp7BattleCard_base__b1_30 .Comp7BattleCard_widget_3b {
+            top: 126rem;
+}
+
+    .mediaMedium .Comp7BattleCard_base__b2_da .Comp7BattleCard_widget_3b {
+            width: 110rem;
+            height: 110rem;
+            top: 4rem;
+}
+
+    .mediaLarge .Comp7BattleCard_base__b2_da .Comp7BattleCard_widget_3b {
+            top: 14rem;
+}
+
+.Comp7BattleCard_belowStatus_48 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+.QualificationCounter_base_fb {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.QualificationCounter_dash_e2 {
+    width: 66rem;
+    height: 32rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.light_dash') no-repeat center / cover;
+}
+.QualificationCounter_dash__right_3e {
+        transform: rotate(180deg);
+    }
+.QualificationCounter_iconContainer_c3 {
+    display: flex;
+    width: 26rem;
+    position: relative;
+    transform: translateY(1rem);
+}
+.QualificationCounter_battleIcon_2e {
+    width: 42rem;
+    height: 42rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.battles_42x42') no-repeat center / cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.QualificationCounter_score_3b {
+    margin: 0 -6rem 0 -12rem;
+    color: #CBAC77;
+    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+    transform: translateY(-1rem);
+}
+
+.RankEmblem_base_ec {
+    width: var(--imageSize);
+    height: var(--imageSize);
+    background: no-repeat center / cover;
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+.Progress_base_2e {
+    width: 86rem;
+}
+.Progress_progress_32 {
+    margin-bottom: 10rem;
+}
+.Progress_status_95 {
+    color: #CBAC77;
+    font-size: 12rem;
+    text-align: center;
+    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+}
+.Progress_statusPoints_73 {
+    color: #FFDD99;
+    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+}
+.Progress_points_a7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Progress_dash_32 {
+    width: 66rem;
+    height: 31rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.light_dash') no-repeat center / cover;
+}
+.Progress_dash__right_fb {
+        transform: rotate(180deg);
+    }
+.Progress_score_c0 {
+    margin: 0 -6rem;
+    color: #FFDD99;
+    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+.Qualification_base_46 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Qualification_ratingCalculation_8f {
+    display: flex;
+    justify-content: center;
+    color: #FFDD99;
+    text-align: center;
+    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+}
+.Qualification_timer_78 {
+    width: 33rem;
+    height: 33rem;
+    margin: -7rem -5rem 0 -10rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.timer') no-repeat center / cover;
+    filter: drop-shadow(0rem 0rem 4rem rgba(255, 127, 0, .25)) drop-shadow(0rem 0rem 8rem #ff2a00);
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+.Warning_base_a5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12rem;
+    position: relative;
+}
+.Warning_lighting_e0 {
+    width: 111rem;
+    height: 58rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.lighting') no-repeat center / cover;
+    opacity: .6;
+    position: absolute;
+    top: -12rem;
+    right: 50%;
+    transform: translateX(55rem);
+    pointer-events: none;
+}
+.Warning_value_1e {
+    color: #FFDD99;
+    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+}
+.Warning_base__text_08 .Warning_value_1e {
+        color: #FF2717;
+        text-shadow: 0 0 14rem #f00;
+    }
+.Warning_timer_fe {
+    width: 30rem;
+    height: 30rem;
+    margin: 0 -10rem -2rem -5rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.timer') no-repeat center / cover;
+    position: relative;
+}
+
+.App_base_de {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+.App_content_da {
+    width: 130rem;
+    position: relative;
+    z-index: 1;
+}
+.mediaMediumHeight .App_content_da {
+        width: 150rem;
+}
+.App_emblemContainer_dc {
+    width: 100%;
+    filter: brightness(1);
+    transition: filter .2s linear;
+    cursor: pointer;
+}
+.App_emblemContainer_dc:hover {
+        filter: brightness(1.15);
+    }
+.App_base__unavailable_e1 .App_emblemContainer_dc {
+        filter: brightness(.53);
+        cursor: default;
+    }
+.App_emblem_90 {
+    width: 130rem;
+    height: 130rem;
+    margin-bottom: 10rem;
+}
+.App_base__unavailable_e1 .App_emblem_90 {
+        filter: saturate(0%);
+    }
+.mediaMediumHeight .App_emblem_90 {
+        width: 150rem;
+        height: 150rem;
+        margin-bottom: 0;
+}
+.App_progression_e6 {
+    margin: 0 0 8rem 22rem;
+}
+.mediaMediumHeight .App_progression_e6 {
+        margin-left: 32rem;
+}
+.App_warning_f8 {
+    margin-top: -5rem;
+}
+
+.Progression_base_bb {
+    display: flex;
+    justify-content: center;
+}
+
+.Progression_progress_2a {
+    margin-top: 18rem;
+}
+
+.Progression_warning_1f {
+    margin-top: -5rem;
+}
+
+.Progression_battlesCounter__b0_31,
+    .Progression_battlesCounter__b1_92 {
+        margin-top: 20rem;
+    }
+
+.Progression_battlesCounter__b2_0c .Progression_battlesCounter_df {
+        margin-top: 10rem;
+    }
+
+.Countdown_base_fe {
+    display: flex;
+    align-items: center;
+}
+
+.Countdown_icon_8b {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+}
+
+.Countdown_description_8d {
+    color: #FFDD99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
 .Progression_base_4f {
     display: flex;
     flex-direction: column;
@@ -3741,6 +3895,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
     pointer-events: auto;
 }
+
+.FunRandomCard_belowStatus__hidden_ad {
+        display: none;
+    }
 
 .mediaMedium .FunRandomCard_belowStatus_03 {
         margin-top: 80rem;
@@ -3861,10 +4019,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 
 .ToggleButton_indicator_c5 {
-    /* This Needs to be an even number otherwise translate(-50%) makes it at half a pixel position and causes sub pixel blurring */
     width: 40rem;
     height: 29rem;
-    background: url('R.images.gui.maps.icons.buttons.toggle_indicator') no-repeat 0 / contain;
+    background: url('R.images.gui.maps.icons.buttons.toggle_indicator') no-repeat center / contain;
     position: absolute;
     bottom: -14rem;
     left: 50%;
@@ -3971,124 +4128,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 2rem;
     transform: translate(50%, -50%);
     pointer-events: none;
-}
-
-.Progression_base_94 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 0 20rem;
-}
-
-.Progression_title_81 {
-    color: #8C8C7E;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    text-align: center;
-}
-
-.Progression_contentWrapper_3a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: relative;
-}
-
-.Progression_progress_7b {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 8rem 0 10rem;
-    padding: 0 20rem;
-    position: absolute;
-}
-
-.Progression_currentStage_67 {
-    color: #8C8C7E;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 15rem;
-}
-
-.mediaMedium .Progression_currentStage_67 {
-        margin-bottom: 22rem;
-}
-
-.Progression_currentStage_67 span {
-        color: #E9E2BF;
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
-        margin-left: 5rem;
-        position: relative;
-        top: 0;
-    }
-
-.mediaMedium .Progression_currentStage_67 span {
-            color: #E9E2BF;
-            font-size: 22rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-left: 6rem;
-            top: 2rem;
-}
-
-.mediaLarge .Progression_currentStage_67 span {
-            color: #E9E2BF;
-            font-size: 24rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-left: 7rem;
-}
-
-.Progression_progressValue_f7 {
-    color: #8C8C7E;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    display: flex;
-    align-items: center;
-    margin-top: 15rem;
-    text-align: center;
-}
-
-.mediaMedium .Progression_progressValue_f7 {
-        margin-top: 22rem;
-}
-
-.Progression_progressValueIcon_e9 {
-    width: 16rem;
-    height: 16rem;
-    margin-left: 5rem;
-    background: url('R.images.gui.maps.icons.mode_selector.common.token_battle_royale') no-repeat center/cover;
-}
-
-.mediaMedium .Progression_progressValueIcon_e9 {
-        margin-bottom: -1rem;
-}
-
-.Card_widgetOverlay_a5 {
-    pointer-events: auto;
-}
-
-.Card_belowStatus_b6 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 80rem;
-    position: relative;
-    pointer-events: auto;
-}
-
-.mediaMedium .Card_belowStatus_b6 {
-        margin-top: 110rem;
 }
 
 .Column_base_41 {

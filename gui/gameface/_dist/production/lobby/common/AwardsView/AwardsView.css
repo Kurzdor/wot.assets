@@ -663,76 +663,30 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     align-items: center;
     margin-bottom: 25rem;
     position: relative;
+    z-index: 3;
 }
 .mediaLarge .MainReward_reward_7c {
         margin-bottom: 50rem;
 }
-.MainReward_reward__quadruple_19 {
-        width: 25%;
+.MainReward_reward_7c + .MainReward_reward_7c {
+        margin-left: 10rem;
     }
-.mediaSmall .MainReward_reward__quadruple_19 {
-            width: auto;
+.mediaSmall .MainReward_reward_7c + .MainReward_reward_7c {
+            margin-left: 20rem;
 }
-.MainReward_imageWrapper_0a {
-    position: relative;
+.mediaMedium .MainReward_reward_7c + .MainReward_reward_7c {
+            margin-left: 30rem;
 }
-.MainReward_image_3d {
-    opacity: 0;
-    animation-name: MainReward_fadeInWithScale_87;
-    animation-duration: .8s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    animation-delay: 1.2s;
-    animation-iteration-count: 1;
-    width: 400rem;
-    height: 300rem;
-    margin: 50rem 5rem 0;
-    background: no-repeat center / contain;
-    position: relative;
-    z-index: 3;
+.mediaLarge .MainReward_reward_7c + .MainReward_reward_7c {
+            margin-left: 40rem;
 }
-.MainReward_base__medium_82 .MainReward_image_3d {
-        width: 400rem;
-        height: 300rem;
-    }
-.MainReward_base__large_9c .MainReward_image_3d {
-        width: 600rem;
-        height: 450rem;
-    }
-.MainReward_image__double_49,
-    .MainReward_image__triple_88 {
-        width: 296rem;
-        height: 222rem;
-    }
-.MainReward_base__small_b9 .MainReward_image__double_49, .MainReward_base__small_b9 .MainReward_image__triple_88 {
-            width: 296rem;
-            height: 174rem;
-        }
-.MainReward_base__medium_82 .MainReward_image__double_49, .MainReward_base__medium_82 .MainReward_image__triple_88 {
-            width: 296rem;
-            height: 222rem;
-        }
-.MainReward_base__large_9c .MainReward_image__double_49, .MainReward_base__large_9c .MainReward_image__triple_88 {
-            width: 400rem;
-            height: 300rem;
-        }
-.MainReward_image__quadruple_9e {
-        width: 230rem;
-        height: 174rem;
-    }
-.MainReward_base__small_b9 .MainReward_image__quadruple_9e {
-            width: 230rem;
-            height: 174rem;
-        }
-.MainReward_base__medium_82 .MainReward_image__quadruple_9e {
-            width: 296rem;
-            height: 222rem;
-        }
-.MainReward_base__large_9c .MainReward_image__quadruple_9e {
-            width: 400rem;
-            height: 300rem;
-        }
 .MainReward_captions_68 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 4;
+}
+.MainReward_base__withAnimations_06 .MainReward_captions_68 {
     opacity: 0;
     animation-name: MainReward_fadeIn_34;
     animation-duration: .8s;
@@ -740,19 +694,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-timing-function: cubic-bezier(.07, .82, .17, 1);
     animation-delay: 1.4s;
     animation-iteration-count: 1;
-    width: 100%;
-    text-align: center;
-    position: relative;
-    z-index: 4;
-}
+    }
 .mediaSmall .MainReward_captions_68 {
         width: 110%;
 }
 .MainReward_title_cb {
     color: #E9E2BF;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -761,22 +711,27 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.3;
 }
 .MainReward_count_24 {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    position: absolute;
+    right: 10%;
+    bottom: 14rem;
+    z-index: 4;
+}
+.MainReward_base__withAnimations_06 .MainReward_count_24 {
     opacity: 0;
     animation-name: MainReward_fadeIn_34;
     animation-duration: .8s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(.07, .82, .17, 1);
-    animation-delay: 1.8s;
+    animation-delay: 1.4s;
     animation-iteration-count: 1;
-    color: #E9E2BF;
-    font-size: 24rem;
-    position: absolute;
-    top: 82%;
-    right: 5%;
-    z-index: 4;
-}
-.mediaMedium .MainReward_count_24 {
-        right: 10%;
+    }
+.mediaLarge .MainReward_count_24 {
+        font-size: 28rem;
+        bottom: 20rem;
 }
 
 /* colors*/
@@ -843,8 +798,18 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 42rem;
 }
 .AwardsApp_header_cc {
-    align-items: center;
-    position: relative;
+    color: #F2F2F7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 28rem;
+    text-align: center;
+}
+.mediaLarge .AwardsApp_header_cc {
+        color: #F2F2F7;
+        font-size: 24rem;
+        font-weight: 700;
+        line-height: 1.2;
 }
 .AwardsApp_subTitle_08 {
     opacity: 0;
@@ -854,14 +819,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-timing-function: ease-in-out;
     animation-delay: .6s;
     animation-iteration-count: 1;
-    color: #E9E2BF;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-    text-align: center;
-}
-.mediaSmall .AwardsApp_subTitle_08 {
-        font-size: 24rem;
 }
 .AwardsApp_title_d4 {
     opacity: 0;
@@ -872,16 +829,27 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-delay: .8s;
     animation-iteration-count: 1;
     color: #F2F2F7;
-    font-size: 36rem;
+    font-size: 56rem;
     font-weight: 700;
     line-height: 1.1;
-    text-align: center;
+    margin-top: 4rem;
 }
-.mediaSmall .AwardsApp_title_d4 {
+.mediaLarge .AwardsApp_title_d4 {
         color: #F2F2F7;
-        font-size: 56rem;
+        font-size: 73rem;
         font-weight: 700;
         line-height: 1.1;
+        margin-top: 2rem;
+}
+.AwardsApp_underTitle_f9 {
+    opacity: 0;
+    animation-name: AwardsApp_slideUp_cd;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.2s;
+    animation-iteration-count: 1;
+    margin-top: 11rem;
 }
 .AwardsApp_content_28 {
     flex-direction: column;
@@ -915,6 +883,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .mediaLarge .AwardsApp_reward_f1 {
         margin-top: -50rem;
 }
+.mediaExtraLarge .AwardsApp_reward_f1 {
+        margin-top: -230rem;
+}
 .AwardsApp_ribbon_b2 {
     opacity: 0;
     animation-name: AwardsApp_slideUp_cd;
@@ -942,6 +913,24 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .AwardsApp_ribbon__withoutMainRewards_9c {
         top: 100%;
     }
+.AwardsApp_bottomNote_8e {
+    opacity: 0;
+    animation-name: AwardsApp_slideUp_cd;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.4s;
+    animation-iteration-count: 1;
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 24rem;
+    text-align: center;
+}
+.mediaLarge .AwardsApp_bottomNote_8e {
+        margin-bottom: 34rem;
+}
 .AwardsApp_wrapperButton_cf {
     opacity: 0;
     animation-name: AwardsApp_slideUp_cd;

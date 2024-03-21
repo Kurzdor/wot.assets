@@ -499,6 +499,13 @@
     color: #A29B70;
 }
 
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8C8C7E;
+}
+
 .Card_base_00 {
     width: 260rem;
     height: 171rem;

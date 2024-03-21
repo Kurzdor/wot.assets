@@ -1,0 +1,90 @@
+/* stylelint-disable */
+[lang=ja],
+[lang=ko],
+[lang=zh_tw],
+[lang=zh_sg],
+[lang=zh_ch],
+[lang=th] {
+    overflow-wrap: break-word;
+}
+/* stylelint-enable */
+.Content_base_a9 {
+    display: flex;
+    flex-direction: column;
+    width: 400rem;
+    padding: 24rem;
+    background: linear-gradient(180deg, rgba(51, 51, 41, .3) 0%, rgba(51, 51, 41, 0) 15.62%, rgba(51, 51, 41, 0) 88.02%, rgba(51, 51, 41, .1) 100%);
+}
+.Content_topTitle_d3 {
+    margin-bottom: 12rem;
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 20rem;
+}
+.Content_lootBox_02 {
+    width: 360rem;
+    height: 180rem;
+    margin-bottom: 14rem;
+    background: url('R.images.event_lootboxes.gui.maps.entryPoint.lootboxTooltip') no-repeat center / contain;
+}
+.Content_title_1d {
+    margin-bottom: 6rem;
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 17rem;
+}
+.Content_text_3c {
+    color: #8c8c7e;
+    font-size: 14rem;
+    line-height: 18rem;
+}
+
+.TaggedText_paragraph_7f {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+    .TaggedText_paragraph__left_6f {
+        justify-content: flex-start;
+    }
+
+    .TaggedText_paragraph__right_01 {
+        justify-content: flex-end;
+    }
+
+    .TaggedText_paragraph__center_ab {
+        justify-content: center;
+    }
+
+.TaggedText_neutral_f3 {
+    color: #cbac77;
+}
+
+.TaggedText_expTag_81 {
+    color: #e9e2bf;
+}
+
+.TaggedText_stats_f2 {
+    color: #e9e2bf;
+}
+
+.TaggedText_colorTag_4a {
+    color: #80d43a;
+}
+
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.atlases.components.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+

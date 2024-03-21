@@ -1,0 +1,164 @@
+(def macro SubscriptionCardBg(state:expression, itemW:expression, itemH:expression)
+    (scope
+        (event redrawGraphicRect)
+        (var hoverAlpha:number = 0)
+        (var strokeAlpha:number = 0.07
+            (dispatch redrawGraphicRect on='evChanged')
+        )
+        (dispatch redrawGraphicRect
+            (event "__szChanged")
+        )
+        
+        (controller $Animation
+            (bindcall play duration=0.2 to={hoverAlpha:0.1, strokeAlpha:0.25}
+                (event "evCardOver")
+            )
+            (bindcall play duration=0.2 to={hoverAlpha:0.0, strokeAlpha:0.07}
+                (event "evCardOut")
+            )
+            (bind enabled "state == SUBSCRIPTIONCARDSTATE.Available")
+        )
+    )
+    (block
+        (style
+            (macro AbsPositionFullSize)
+        )
+        (image
+            (name = 'bgIcon')
+            (bind visible "state != SUBSCRIPTIONCARDSTATE.Active")
+            (style
+                (position = "absolute")
+            )
+            (bind source "R.images.gui.maps.icons.subscription.dashboard_card[size]()")
+        )
+        (image
+            (bind visible "state == SUBSCRIPTIONCARDSTATE.Active")
+            (style
+                (position = "absolute")
+                (alpha = 0.5)
+                (top = 0)
+                (right = 0)
+            )
+            (source = "R.images.gui.maps.icons.subscription.dashboard_card.corner_glow()")
+        )
+        (block
+            (name = 'disableTile')
+            (bind visible "state == SUBSCRIPTIONCARDSTATE.Disable")
+            (class BtnAbstractDisabledOverlayStyle)
+        )
+        (block
+            (name = 'bgGraphics')
+            (style
+                (position = "absolute")
+            )
+            (.graphics
+                (bindcall clear
+                    (event "redrawGraphicRect")
+                )
+                (bindcall lineStyle "1" "0xffffff" "strokeAlpha" "true" init=true watch=false
+                    (event "redrawGraphicRect")
+                )
+                (bindcall beginFill "0x000000" "0.1" init=true
+                    (event "redrawGraphicRect")
+                )
+                (bindcall drawRoundRect "0" "0" "itemW-1" "itemH-1" "BORDER_RARIUS" "BORDER_RARIUS" init=true watch=false
+                    (event "redrawGraphicRect")
+                )
+                (bindcall endFill init=true
+                    (event "redrawGraphicRect")
+                )
+            )
+        )
+        (block
+            (name = 'hover')
+            (style
+                (macro AbsPositionFullSize)
+                (backgroundColor = 0xffffffff)
+                (bind alpha "hoverAlpha")
+            )
+        )
+        (image
+            (bind visible "state == SUBSCRIPTIONCARDSTATE.Available")
+            (style
+                (macro AbsPositionFullSize)
+                (scale9grid = "Rect(7,7,26,26)")
+            )
+            (source = "R.images.gui.maps.icons.premacc.dashboard.stroke_corner()")
+        )
+        (image
+            (name = 'glow')
+            (style
+                (position = "absolute")
+            )
+            (source = "R.images.gui.maps.icons.subscription.dashboard_card.glow()")
+        )
+    )
+)
+
+(def macro SubscriptionCardScope()
+    (scope
+        (event evCardClick)
+        (event evCardOver)
+        (event evCardOut)
+        (event __szChanged)
+        
+        (var hasClanReserves:bool = false)
+        
+        (const BORDER_RARIUS:number = 7)
+        (const SIZE:dict = {
+            'Big': 'big',
+            'BigClan': 'bigClan',
+            'Small': 'small',
+            'SmallClan': 'smallClan'
+        })
+
+        (const LABEL_STYLES:dict = {
+            'big': 'HighTitleTextStyle',
+            'bigClan': 'HighTitleTextStyle',
+            'small': 'MiddleTitleTextStyle',
+            'smallClan': 'StatsTextStyle'
+        })
+        
+        (const STATUS_LABLE:dict = {
+            'available': {
+                'big' : "R.strings.subscription.dashboard.subscriptionCard.state.available()",
+                'bigClan' : "R.strings.subscription.dashboard.subscriptionCard.state.available()",
+                'small': "R.strings.subscription.dashboard.subscriptionCard.state.available()",
+                'smallClan' : "R.strings.subscription.dashboard.subscriptionCard.state.available()"
+            },
+            'active': {
+                'big' : "R.strings.subscription.dashboard.subscriptionCard.state.active.long()",
+                'bigClan' : "R.strings.subscription.dashboard.subscriptionCard.state.active.short()",
+                'small' : "R.strings.subscription.dashboard.subscriptionCard.state.active.short()",
+                'smallClan' : "R.strings.subscription.dashboard.subscriptionCard.state.active.short()"
+            },
+            'disable': {
+                'big' : "R.strings.subscription.dashboard.subscriptionCard.state.disable.long()",
+                'bigClan' : "R.strings.subscription.dashboard.subscriptionCard.state.disable.long()",
+                'small' : "R.strings.subscription.dashboard.subscriptionCard.state.disable.short()",
+                'smallClan' : "R.strings.subscription.dashboard.subscriptionCard.state.disable.short()"
+            }
+        })
+    )
+)
+
+(def css StatusStyle()
+    (fontFamily = $FieldFont)
+    (fontSize = 14px)
+    (textColor = 0xffffdd99)
+)
+
+(def macro InteractiveSubscriptionCardComponent(interactiveState:expression)
+        (bind buttonMode "state == interactiveState")
+        (bind mouseEnabled "state == interactiveState")
+        (bind mouseChildren "false")
+        (dispatch evCardOver init=false on='rollOver'
+            (enabled = "state == interactiveState")
+        )
+        (dispatch evCardOut init=false on='rollOut'
+            (enabled = "state == interactiveState")
+        )
+        (dispatch evCardClick init=false on='click'
+            (enabled = "state == interactiveState")
+        )
+)

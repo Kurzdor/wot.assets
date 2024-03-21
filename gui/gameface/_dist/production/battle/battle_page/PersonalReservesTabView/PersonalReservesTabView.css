@@ -3,207 +3,220 @@
     flex-wrap: wrap;
 }
 
-.CButton_base_40 {
+.App_base_3a {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #8C8C7E;
+}
+
+.App_body_e9 {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 2rem;
-    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
-    position: relative;
-    cursor: pointer;
+    flex: 1;
+    padding-bottom: 50rem;
 }
 
-    .CButton_base__main_42,
-    .CButton_base__primary_7f,
-    .CButton_base__primaryGreen_6f,
-    .CButton_base__primaryRed_ec,
-    .CButton_base__secondary_50 {
-        background-size: 100% 100%;
-    }
-
-    .CButton_base__main_42 {
-        background-image: url('R.images.gui.maps.icons.components.button.back_main');
-    }
-
-    .CButton_base__primary_7f {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
-    }
-
-    .CButton_base__primaryGreen_6f {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
-    }
-
-    .CButton_base__primaryRed_ec {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
-    }
-
-    .CButton_base__secondary_50 {
-        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
-    }
-
-    .CButton_base__ghost_ed {
-        border-radius: 3rem;
-        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
-            0 0 0 1rem rgba(255,255,255, .15) inset;
-        background-color: rgba(0,0,0, .15);
-    }
-
-    .CButton_base__extraSmall_27 {
-        min-height: 17rem;
-        padding: 0 16rem;
-    }
-
-    .CButton_base__small_df,
-    .CButton_base__medium_74 {
-        padding: 0 20rem;
-    }
-
-    .CButton_base__small_df {
-        min-height: 18rem;
-    }
-
-    .CButton_base__medium_74 {
-        min-height: 32rem;
-    }
-
-    .CButton_base__disabled_d9 {
-        cursor: default;
-    }
-/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
-The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
-between 'border-image-width' and 'fill'.
-This bug is reproduced in Google Chrome 81.0.4044.113
-*/
-.CButton_back_e5 {
-    border-image-slice: 4 fill;
-    border-image-width: 4rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.CButton_base__main_42 .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
-    }
-.CButton_base__primary_7f .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
-    }
-.CButton_base__primaryGreen_6f .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
-    }
-.CButton_base__primaryRed_ec .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
-    }
-.CButton_base__secondary_50 .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
-    }
-.CButton_texture_fe {
-    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
-    background-size: 155rem 31rem;
-    mix-blend-mode: soft-light;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.CButton_state_11 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transition: box-shadow .16s ease-in-out;
-}
-.CButton_base__focus_83 .CButton_state_11 {
-        border-radius: 2rem;
-        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
-    }
-.CButton_stateHighlightHover_ff,
-.CButton_stateHighlightActive_35,
-.CButton_stateDisabled_54 {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-        transition: opacity .16s ease-in-out;
-    }
-.CButton_stateHighlightHover_ff {
-    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
-}
-.CButton_base_40:hover .CButton_stateHighlightHover_ff {
-        opacity: 1;
-    }
-.CButton_base_40:active .CButton_stateHighlightHover_ff {
-        opacity: 0;
-    }
-.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
-        opacity: 0;
-    }
-.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
-        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
-        background-color: rgba(8,6,0, .18);
-        background-image: none;
-    }
-.CButton_stateHighlightActive_35 {
-    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
-}
-.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
-        opacity: 1;
-    }
-.CButton_stateDisabled_54 {
-    background-color: rgba(0,0,0, .25);
-    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
-    background-size: 15rem;
-}
-.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-        opacity: 1;
-    }
-.CButton_content_cc {
+.App_title_b1 {
     display: flex;
     align-items: center;
-    color: #f2f2e6;
-    font-weight: 700;
-    line-height: 1.2;
-    text-shadow: 0 -1rem 1rem #000;
-    letter-spacing: .03em;
-    transform: translateY(-1rem);
+    margin-bottom: 2%;
 }
-.CButton_content_cc[lang=ja],
-    .CButton_content_cc[lang=ko],
-    .CButton_content_cc[lang=zh_tw],
-    .CButton_content_cc[lang=zh_sg],
-    .CButton_content_cc[lang=zh_cn],
-    .CButton_content_cc[lang=th] {
-        font-weight: 400;
+
+.App_title_line_5a {
+        width: 362rem;
+        height: 2rem;
+        margin-right: 12rem;
+        background: url('R.images.gui.maps.icons.personal_reserves.battle_activation.title_line') no-repeat center;
     }
-.CButton_base__main_42 .CButton_content_cc,
-    .CButton_base__primaryRed_ec .CButton_content_cc {
-        text-shadow: 0 -1rem 1rem #600;
+
+.App_title_line__right_2f {
+            margin-left: 12rem;
+            margin-right: 0;
+            transform: rotate(180deg);
+        }
+
+.App_title_text_d4 {
+        color: #F2F2F7;
+        font-size: 28rem;
+        font-weight: 700;
+        line-height: 1.1;
+        color: #FFFFFF;
     }
-.CButton_base__secondary_50 .CButton_content_cc {
-        color: rgba(254,254,236, .75);
+
+.App_reserves_9e {
+    display: flex;
+    align-items: flex-start;
+}
+
+.App_notice_9a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.App_notice_icon_a7 {
+        width: 32rem;
+        height: 32rem;
+        background: url('R.images.gui.maps.icons.personal_reserves.battle_activation.info') no-repeat center/cover;
     }
-.CButton_base__primaryGreen_6f .CButton_content_cc {
-        text-shadow: 0 -1rem 1rem #1c2502;
-    }
-.CButton_base__extraSmall_27 .CButton_content_cc {
-        font-size: 12rem;
-    }
-.CButton_base__small_df .CButton_content_cc {
+
+.App_notice_text_64 {
+        color: #8C8C7E;
         font-size: 14rem;
+        font-weight: 400;
+        line-height: 1.3;
+        margin-top: 6rem;
+        margin-bottom: 20rem;
+        color: #FEAB34;
+        text-align: center;
     }
-.CButton_base__medium_74 .CButton_content_cc {
-        font-size: 15rem;
+
+.App_notice_background_fd {
+        width: 660rem;
+        height: 150rem;
+        background: url('R.images.gui.maps.icons.personal_reserves.battle_activation.notice_glow') no-repeat
+            bottom/cover;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
     }
-.CButton_base__disabled_d9 .CButton_content_cc {
-        opacity: .6;
+
+.App_groupWrapper_9e {
+    padding-bottom: 10rem;
+}
+
+.App_groupWrapper_clan_51 {
+        margin-left: 15rem;
     }
+
+.App_groupWrapper_clan_51 + .App_groupWrapper_clan_51 {
+            margin-left: 0rem;
+        }
+
+.Counter_base_9e {
+    display: flex;
+    min-width: 14rem;
+    height: 14rem;
+    position: relative;
+    z-index: 0;
+    animation: Counter_show_be ease-in-out forwards;
+}
+
+    .Counter_base__big_19 {
+        min-width: 21rem;
+        height: 21rem;
+    }
+
+    .Counter_base__small_3b {
+        min-width: 13rem;
+        height: 13rem;
+    }
+
+    .Counter_base__empty_98 {
+        min-width: 6rem;
+        height: 6rem;
+    }
+
+    .Counter_base__animated_40 {
+        animation-duration: .2s;
+    }
+
+    .Counter_base__hidden_56 {
+        animation-name: Counter_hide_b6;
+    }
+.Counter_bg_74 {
+    border: 1rem solid #fe4e0f;
+    border-radius: 7rem;
+    box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
+            0 0 6rem rgba(254,103,0, .2),
+            0 0 12rem 4rem rgba(249,0,0, .3);
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.Counter_base__big_19 .Counter_bg_74 {
+        border-radius: 11rem;
+    }
+.Counter_base__small_3b .Counter_bg_74 {
+        border-radius: 7rem;
+    }
+.Counter_value_3e {
+    display: flex;
+    padding: 0 4rem;
+    color: #fefeec;
+    font-size: 11rem;
+    line-height: 13rem;
+    white-space: nowrap;
+}
+.Counter_base__big_19 .Counter_value_3e {
+        padding: 0 7rem;
+        font-size: 14rem;
+        line-height: 20rem;
+    }
+.Counter_base__small_3b .Counter_value_3e {
+        font-size: 9rem;
+        line-height: 12rem;
+    }
+.Counter_value__text_d6 {
+        padding: 0 7rem;
+    }
+.Counter_base__big_19 .Counter_value__text_d6 {
+            padding: 0 10rem;
+        }
+.Counter_base__small_3b .Counter_value__text_d6 {
+            padding: 0 5rem;
+            font-size: 10rem;
+        }
+.Counter_base__pattern_71 .Counter_value_3e {
+        display: none;
+    }
+.Counter_plus_15 {
+    position: relative;
+    top: -1rem;
+}
+.Counter_pattern_83 {
+    display: none;
+}
+.Counter_base__pattern_71 .Counter_pattern_83 {
+        display: block;
+        border-radius: 50%;
+        background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+        opacity: .8;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+@keyframes Counter_show_be {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes Counter_hide_b6 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
 
 .Countdown_base_fe {
     display: flex;
@@ -487,44 +500,48 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .Quantity_base_e7 {
     color: #8C8C7E;
-    font-size: 14rem;
+    font-size: 16rem;
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 1.25;
     display: flex;
+    align-items: center;
     line-height: 20rem;
-    text-shadow: 0 0 8rem rgba(0, 0, 0, .5);
+    text-shadow: 0 0 8rem rgba(0, 0, 0, 0.5);
 }
 
-    .mediaMedium .Quantity_base_e7 {
-        color: #8C8C7E;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
-}
-
-    .Quantity_base__premium_7e {
-        color: #FFC363;
+    .Quantity_base__highlighted_3d {
+        color: #FFDD99;
+        text-shadow: 0px 0px 15px #e52, 0px 0px 8px #ff2a00, 0px 0px 4px rgba(255, 127, 0, 0.25);
     }
 
-    .mediaMedium .Quantity_base__premium_7e {
-            color: #FFC363;
+.Quantity_icon_e5 {
+    display: none;
 }
 
-.Quantity_icon_e5 {
-    width: 30rem;
-    height: 24rem;
-    margin-right: 2rem;
-    background: url('R.images.gui.maps.icons.buttons.icon_table_comparison_inhangar') center center / cover;
+.mediaMedium .Quantity_icon_e5 {
+        display: block;
+        width: 30rem;
+        height: 24rem;
+        margin-right: 2rem;
+        background: url('R.images.gui.maps.icons.buttons.icon_table_comparison_inhangar') center center / cover;
 }
+
+.Quantity_price_5f .Quantity_price_icon_83 {
+        transform: none;
+    }
+
+.Quantity_price__discount_41 {
+        margin-right: 14rem;
+    }
 
 .ReserveCard_base_37 {
     --card-width: 190rem;
     --card-height: 190rem;
     width: var(--card-width);
     height: var(--card-height);
-    border: 1rem solid rgba(255, 255, 255, .15);
+    border: 1rem solid rgba(255, 255, 255, 0.15);
     border-radius: 2rem;
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, 0.2);
     position: relative;
 }
 
@@ -533,135 +550,92 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         --card-height: 230rem;
 }
 
-    .mediaLarge .ReserveCard_base_37 {
-        --card-width: 250rem;
-        --card-height: 250rem;
-}
+    .ReserveCard_base__tooltipSize_15 {
+        --card-width: 100rem;
+        --card-height: 100rem;
+        margin-right: 10rem;
+    }
 
     .ReserveCard_base__doubleSize_fc {
-        --card-height: 400rem;
+        --card-height: 385rem;
     }
 
     .mediaMedium .ReserveCard_base__doubleSize_fc {
-            --card-height: 480rem;
+            --card-height: 475rem;
 }
-
-    .mediaLarge .ReserveCard_base__doubleSize_fc {
-            --card-height: 520rem;
-}
-
-    .ReserveCard_base__clan_64 .ReserveCard_cardFill_pattern_55 {
-            /* intentionally no cover*/
-            background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_green') center center;
-        }
-
-    .ReserveCard_base__clan_64 .ReserveCard_cardFill_border_c0 {
-            border: 1rem solid #496019;
-        }
 
     .ReserveCard_base__clan_64 .ReserveCard_activeLight_be {
-            background: url('R.images.gui.maps.icons.personal_reserves.activated_light_clan_activation') no-repeat center -25rem / cover;
+            background: url('R.images.gui.maps.icons.personal_reserves.activated_light_clan_activation') no-repeat
+                center center / cover;
         }
 
-    .ReserveCard_base__clan_64 .ReserveCard_checkmark_db {
-            background: url('R.images.gui.maps.icons.personal_reserves.checkmark_clan_activation') center center / cover;
+    .ReserveCard_base__clan_64.ReserveCard_base__tooltipSize_15 .ReserveCard_boosterIcon_37 {
+            width: 80rem;
+            height: 80rem;
         }
 
-    .ReserveCard_base__clan_64 .ReserveCard_timerIcon_b5 {
-            background: url('R.images.gui.maps.icons.personal_reserves.icon_timer_clan_activation') center center / cover;
-        }
-
-    .ReserveCard_base__event_1e .ReserveCard_cardFill_pattern_55 {
-            /* intentionally no cover*/
-            background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_orange') center center;
-        }
-
-    .ReserveCard_base__event_1e .ReserveCard_cardFill_border_c0 {
-            border: 1rem solid #98752f;
-        }
-
-    .ReserveCard_base__event_1e .ReserveCard_activeLight_be {
-            background: url('R.images.gui.maps.icons.personal_reserves.activated_light_event_activation') no-repeat center -25rem / cover;
-        }
-
-    .ReserveCard_base__event_1e .ReserveCard_checkmark_db {
-            background: url('R.images.gui.maps.icons.personal_reserves.checkmark_event_activation') center center / cover;
-        }
-
-    .ReserveCard_base__event_1e .ReserveCard_timerIcon_b5 {
-            background: url('R.images.gui.maps.icons.personal_reserves.icon_timer_event_activation') center center / cover;
-        }
+    .ReserveCard_base__expiringToday_d3 {
+        border: 1rem solid rgba(255, 170, 51, 0.34);
+    }
 
     .ReserveCard_base__inactive_20,
     .ReserveCard_base__disabled_9c {
-        border: 1rem solid rgba(255, 255, 255, .1);
+        border: 1rem solid rgba(255, 255, 255, 0.1);
     }
 
-    .ReserveCard_base__inactive_20 .ReserveCard_timer_6e, .ReserveCard_base__disabled_9c .ReserveCard_timer_6e {
+    .ReserveCard_base__inactive_20 .ReserveCard_timerContainer_65, .ReserveCard_base__disabled_9c .ReserveCard_timerContainer_65 {
             visibility: hidden;
         }
 
-    .ReserveCard_base__inactive_20 .ReserveCard_bonus_d5, .ReserveCard_base__disabled_9c .ReserveCard_bonus_d5 {
-            color: #8C8C7E;
-            font-size: 14rem;
-            font-weight: 400;
-            line-height: 1.3;
-        }
-
-    .mediaMedium .ReserveCard_base__inactive_20 .ReserveCard_bonus_d5, .mediaMedium .ReserveCard_base__disabled_9c .ReserveCard_bonus_d5 {
-                color: #8C8C7E;
-                font-size: 16rem;
-                font-weight: 400;
-                line-height: 1.25;
-}
-
     .ReserveCard_base__inactive_20.ReserveCard_base__clan_64 .ReserveCard_boosterIcon_37 {
-                opacity: .2;
+                opacity: 0.25;
             }
 
-    .ReserveCard_base__inactive_20:hover .ReserveCard_cardContent_98 {
-                opacity: .2;
+    .ReserveCard_base__inactive_20:hover {
+            cursor: pointer;
+        }
+
+    .ReserveCard_base__inactive_20:hover::before {
+                border: 1rem solid rgba(0, 0, 0, 0.2);
+                border-radius: 2rem;
+                content: '';
+                position: absolute;
+                top: -2rem;
+                right: -2rem;
+                bottom: -2rem;
+                left: -2rem;
+            }
+
+    .ReserveCard_base__inactive_20:hover .ReserveCard_boosterIcon_37 {
+                opacity: 0.2;
             }
 
     .ReserveCard_base__inactive_20:hover .ReserveCard_overlay_1c {
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                border-radius: 2rem;
+                border-image: radial-gradient(
+                    rgba(255, 255, 255, 0.2) 0%,
+                    rgba(255, 255, 255, 0.1) 5%,
+                    rgba(37, 9, 9, 0) 10%,
+                    rgba(255, 255, 255, 0.1) 95%,
+                    rgba(255, 255, 255, 0.2) 100%
+                );
+                border-image-slice: 1;
+                border-image-width: 1rem;
+                box-shadow: 0rem 0rem 25rem 0rem rgba(255, 255, 255, 0.1) inset;
             }
 
-    .ReserveCard_base__inactive_20 .ReserveCard_premiumLight_9f {
-            opacity: .3;
-        }
+    .ReserveCard_base__inactive_20:hover .ReserveCard_plusIcon_27 {
+                background: url('R.images.gui.maps.icons.personal_reserves.plus_icon_hover') center center / cover;
+            }
 
     .ReserveCard_base__disabled_9c {
-        opacity: .5;
-    }
-
-    .ReserveCard_base__disabled_9c .ReserveCard_boosterIcon_37 {
-            filter: saturate(0);
-        }
-
-    .ReserveCard_base__disabled_9c.ReserveCard_base__clan_64 .ReserveCard_bonus_d5 {
-                visibility: hidden;
-            }
-
-    .ReserveCard_base__disabled_9c.ReserveCard_base__clan_64 .ReserveCard_plusIcon_27 {
-                opacity: .5;
-            }
-
-    .ReserveCard_base__disabled_9c.ReserveCard_base__clan_64 .ReserveCard_boosterIcon_37 {
-                opacity: .2;
-            }
-
-    .ReserveCard_base__premium_74 {
-        border-color: #594d39;
-        background: url('R.images.gui.maps.icons.personal_reserves.premium_bg') center center / cover;
+        opacity: 0.5;
     }
 
     .ReserveCard_base__activatedAnimation_aa .ReserveCard_cardFill_15 {
             transform-origin: bottom center;
-            animation: ReserveCard_fillIn_2b .6s;
+            animation: ReserveCard_fillIn_2b 0.6s;
             animation-fill-mode: forwards;
         }
 
@@ -669,58 +643,65 @@ This bug is reproduced in Google Chrome 81.0.4044.113
             animation: ReserveCard_borderBrightness_e5 1s;
         }
 
-    .ReserveCard_base__activatedAnimation_aa .ReserveCard_checkmark_db {
-            animation: ReserveCard_fadeIn_50 .6s, ReserveCard_checkmarkSpark_3c .6s;
-            animation-fill-mode: forwards;
-        }
-
     .ReserveCard_base__activatedAnimation_aa .ReserveCard_activeLight_be,
         .ReserveCard_base__activatedAnimation_aa .ReserveCard_activeLight_border_97 {
-            animation: ReserveCard_timerSpark_2f .3s;
-            animation-delay: .6s;
+            animation: ReserveCard_timerSpark_2f 0.3s;
         }
 
-    .ReserveCard_base__activatedAnimation_aa .ReserveCard_timer_6e,
+    .ReserveCard_base__activatedAnimation_aa .ReserveCard_timerContainer_65,
         .ReserveCard_base__activatedAnimation_aa .ReserveCard_boosterIcon_37 {
-            animation: ReserveCard_scaleUpDown_74 .6s;
-            animation-delay: .6s;
+            animation: ReserveCard_scaleUpDown_74 0.6s;
         }
 
-    .ReserveCard_base__activatedAnimation_aa .ReserveCard_timer_6e {
+    .ReserveCard_base__activatedAnimation_aa .ReserveCard_timerContainer_65 {
             opacity: 0;
-            animation: ReserveCard_fadeIn_50 .3s;
+            animation: ReserveCard_fadeIn_50 0.3s;
             animation-fill-mode: forwards;
-            animation-delay: .6s;
         }
 
-    .ReserveCard_base__zeroTime_c0 .ReserveCard_timer_6e {
+    .ReserveCard_base__zeroTime_c0 .ReserveCard_timerContainer_65 {
             animation: ReserveCard_fadeIn_50 1s alternate infinite;
         }
+
+    .ReserveCard_base__gradient_f3 {
+        border: 1px solid #ffb266;
+        border-radius: 2px;
+        box-shadow: 0px 0px 30px 0px rgba(255, 122, 0, 0.3) inset;
+        background: linear-gradient(0deg, rgba(255, 107, 0, 0.1) 0%, rgba(255, 107, 0, 0.1) 100%), rgba(0, 0, 0, 0.4);
+        position: relative;
+    }
+
 .ReserveCard_base_37 + .ReserveCard_base_37 {
-    margin-top: 20rem;
+    margin-top: 5rem;
 }
+
+.mediaMedium .ReserveCard_base_37 + .ReserveCard_base_37 {
+        margin-top: 15rem;
+}
+
 .ReserveCard_boosterIcon_37 {
-    width: 130rem;
-    height: 98rem;
+    width: 180rem;
+    height: 135rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     opacity: 1;
-}
-.mediaLarge .ReserveCard_boosterIcon_37 {
-        width: 180rem;
-        height: 135rem;
-}
-.ReserveCard_overlay_1c {
-    display: none;
-    width: 100%;
-    height: 100%;
-    padding: 0 20rem;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+.mediaMedium .ReserveCard_boosterIcon_37 {
+        width: 232rem;
+        height: 174rem;
+}
+
+.ReserveCard_base__tooltipSize_15 .ReserveCard_boosterIcon_37 {
+        width: 80rem;
+        height: 80rem;
+    }
+
 .ReserveCard_disabledPattern_5d {
     width: 100%;
     height: 100%;
@@ -729,47 +710,54 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 0;
     left: 0;
 }
-.ReserveCard_overlayUpper_0a,
-.ReserveCard_overlayLower_23 {
-    height: 40%;
-}
-.ReserveCard_overlayTextContainer_52 {
-    color: #8C8C7E;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
+
+.ReserveCard_overlay_1c {
+    display: none;
     width: 100%;
-    height: 20%;
+    height: 100%;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
 }
-.mediaMedium .ReserveCard_overlayTextContainer_52 {
-        color: #8C8C7E;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
-}
-.ReserveCard_overlayLower_23 {
+
+.ReserveCard_overlayButton_c6,
+.ReserveCard_overlayClanButton_af {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-}
-.ReserveCard_overlayButton_c6 {
-    width: 150rem;
-    min-height: 20rem;
-    margin-bottom: 17rem;
-}
-.mediaMedium .ReserveCard_overlayButton_c6 {
-        width: 154rem;
-        min-height: 31rem;
-}
-.ReserveCard_overlayText_76 {
-    display: inline;
-    flex-direction: row;
-    text-align: center;
-}
-.ReserveCard_groupDescription_38 {
+    width: 100%;
+    height: 100%;
+    text-shadow: 0px 0px 14px #00a2ff;
     color: #FEFEEC;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    z-index: 999;
 }
+
+.ReserveCard_overlayButton_c6.ReserveCard_overlayClanButton_af, .ReserveCard_overlayClanButton_af.ReserveCard_overlayClanButton_af {
+        text-shadow: 0px 0px 14px rgba(255, 255, 255, 0.5);
+    }
+
+.ReserveCard_overlayButton_light_39, .ReserveCard_overlayClanButton_light_02 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 181rem;
+        height: 181rem;
+        background: url('R.images.gui.maps.icons.personal_reserves.activation.light') center center / cover no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+.ReserveCard_overlayButton_icon_89 {
+    width: 48rem;
+    height: 48rem;
+}
+
 .ReserveCard_cardContent_98 {
     display: flex;
     flex-direction: column;
@@ -780,196 +768,239 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
     z-index: 3;
 }
+
 .ReserveCard_cardContent_quantity_32 {
         position: absolute;
         top: 7rem;
-        right: 9rem;
+        right: 14rem;
     }
+
+.ReserveCard_base__tooltipSize_15 .ReserveCard_cardContent_quantity_32 {
+            top: 3rem;
+            right: 8rem;
+        }
+
+.ReserveCard_base__tooltipSize_15.ReserveCard_base__active_7e .ReserveCard_cardContent_quantity_32 {
+            display: none;
+        }
+
+.ReserveCard_cardContent_expiringQuantity_a6 {
+        color: #FEFEEC;
+        font-size: 15rem;
+        font-weight: 700;
+        line-height: 1.15;
+        text-shadow: 0px 0px 15px #e52, 0px 0px 8px #ff2a00, 0px 0px 4px rgba(255, 127, 0, 0.25);
+        position: absolute;
+        top: 30rem;
+        right: 14rem;
+    }
+
+.ReserveCard_base__tooltipSize_15 .ReserveCard_cardContent_expiringQuantity_a6 {
+            top: 20rem;
+            right: 8rem;
+        }
+
+.ReserveCard_base__tooltipSize_15.ReserveCard_base__active_7e .ReserveCard_cardContent_expiringQuantity_a6 {
+            display: none;
+        }
+
 .ReserveCard_plusIcon_27 {
-    width: 12rem;
-    height: 12rem;
+    width: 48rem;
+    height: 48rem;
     background: url('R.images.gui.maps.icons.personal_reserves.plus_icon_small') center center / cover;
     position: absolute;
-    right: 20rem;
-    bottom: 20rem;
+    top: 0;
+    right: 0;
 }
-.mediaMedium .ReserveCard_plusIcon_27 {
-        width: 16rem;
-        height: 16rem;
-}
-.ReserveCard_checkmark_db {
-    width: 250rem;
-    height: 79rem;
-    background: url('R.images.gui.maps.icons.personal_reserves.checkmark_personal_activation') center center / cover;
-    position: absolute;
-    right: -34rem;
-    bottom: -28rem;
-    z-index: 2;
-}
-.mediaMedium .ReserveCard_checkmark_db {
-        right: -13rem;
-}
-.mediaLarge .ReserveCard_checkmark_db {
-        right: -5rem;
-}
+
+.ReserveCard_base__tooltipSize_15 .ReserveCard_plusIcon_27 {
+        display: none;
+    }
+
 .ReserveCard_cardFill_15 {
     width: var(--card-width);
     height: var(--card-height);
     clip-path: inset(calc(100% - var(--fillPercentage)) 0 0 0);
     position: absolute;
-    bottom: -1rem;
-    left: -1rem;
     z-index: 1;
 }
-.ReserveCard_cardFill_patternGradient_0b {
-        width: calc(var(--card-width) - 4rem);
-        height: calc(var(--card-height) - 4rem);
-        background: radial-gradient(135.48% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .3) 100%) center center / cover;
-        position: absolute;
-        top: 2rem;
-        left: 2rem;
-        z-index: 1000;
-    }
+
 .ReserveCard_cardFill_pattern_55 {
         width: calc(var(--card-width) - 4rem);
         height: calc(var(--card-height) - 4rem);
         /* intentionally no cover*/
-        background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_blue') center center;
+        background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_orange') 0 0 / 2rem 2rem repeat;
         position: absolute;
         top: 2rem;
         left: 2rem;
     }
+
 .ReserveCard_cardFill_borderTop_4f {
-        border-top: 1rem solid rgba(255, 255, 255, .1);
+        height: 1rem;
+        background: linear-gradient(
+            90deg,
+            rgba(254, 171, 52, 0) 0%,
+            rgba(254, 171, 52, 0.5) 50%,
+            rgba(254, 171, 52, 0) 100%
+        );
         position: absolute;
         top: calc(100% - var(--fillPercentage));
         right: 2rem;
         left: 2rem;
     }
-.ReserveCard_cardFill_border_c0 {
-        width: 100%;
-        height: 100%;
-        border: 1rem solid #127177;
-        border-radius: 4rem;
-        position: absolute;
-    }
-.ReserveCard_cardFill_borderGradient_ad {
-        width: 100%;
-        height: 100%;
-        border-radius: 4rem;
-        border-image: linear-gradient(to right, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .2) 100%);
-        border-image-slice: 1;
-        border-image-width: 1rem;
-        position: absolute;
-    }
-.ReserveCard_timer_6e {
-    color: #FFFFFF;
-    font-size: 20rem;
-    font-weight: 400;
-    line-height: 1.2;
+
+.ReserveCard_timerContainer_65 {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    margin-left: 14rem;
-    margin-top: 4rem;
-    position: relative;
+    width: 70rem;
+    height: 24rem;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FEFEEC;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
 }
-.mediaMedium .ReserveCard_timer_6e {
-        color: #FFFFFF;
-        font-size: 24rem;
-        font-weight: 400;
+
+.mediaMedium .ReserveCard_timerContainer_65 {
+        top: 12rem;
+        color: #FEFEEC;
+        font-size: 22rem;
+        font-weight: 700;
         line-height: 1.2;
 }
-.mediaLarge .ReserveCard_timer_6e {
-        color: #FFFFFF;
+
+.ReserveCard_base__tooltipSize_15 .ReserveCard_timerContainer_65 {
+        color: #FEFEEC;
+        font-size: 14rem;
+        font-weight: 700;
+        line-height: 1.15;
+        top: 0;
+    }
+
+.ReserveCard_timerContainer_icon_c9 {
+        width: 16rem;
+        height: 16rem;
+        margin-right: 4rem;
+        background: url('R.images.gui.maps.icons.personal_reserves.icon_timer_personal_activation') center center /
+            cover;
+        filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
+        position: relative;
+    }
+
+.mediaMedium .ReserveCard_timerContainer_icon_c9 {
+            top: 2rem;
+}
+
+.ReserveCard_base__tooltipSize_15 .ReserveCard_timerContainer_icon_c9 {
+            display: none;
+        }
+
+.ReserveCard_timerContainer_timer_44 {
+        min-width: 30rem;
+    }
+
+.mediaMedium .ReserveCard_timerContainer_timer_44 {
+            min-width: 50rem;
+}
+
+.ReserveCard_bonus_d5 {
+    color: #FEFEEC;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0px 0px 14px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    right: 14rem;
+    bottom: 14rem;
+}
+
+.mediaMedium .ReserveCard_bonus_d5 {
+        color: #FEFEEC;
         font-size: 28rem;
         font-weight: 700;
         line-height: 1.1;
-        font-weight: 400;
 }
-.ReserveCard_timerIcon_b5 {
-    width: 48rem;
-    height: 48rem;
-    background: url('R.images.gui.maps.icons.personal_reserves.icon_timer_personal_activation') center center / cover;
-    position: absolute;
-    bottom: -12rem;
-    left: -38rem;
-}
-.mediaMedium .ReserveCard_timerIcon_b5 {
-        width: 50rem;
-        height: 50rem;
-        left: -40rem;
-}
-.mediaLarge .ReserveCard_timerIcon_b5 {
-        width: 52rem;
-        height: 52rem;
-}
-.ReserveCard_bonus_d5 {
-    color: #FEFEEC;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-bottom: 18rem;
-}
-.mediaMedium .ReserveCard_bonus_d5 {
-        color: #FEFEEC;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
-}
-.ReserveCard_bonusDescription_72 {
-    color: #FEFEEC;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
-.mediaMedium .ReserveCard_bonusDescription_72 {
-        color: #FEFEEC;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
-}
-.ReserveCard_activeLight_be {
-    width: var(--card-width);
-    height: 135rem;
-    background: url('R.images.gui.maps.icons.personal_reserves.activated_light_personal_activation') no-repeat center -25rem / cover;
-    position: absolute;
-    top: -1rem;
-    left: 0;
-    z-index: 2;
-}
-.ReserveCard_activeLight_border_97 {
-        width: var(--card-width);
-        height: 1rem;
-        border-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .2) 40%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, .2) 60%, rgba(255, 255, 255, 0) 100%);
-        border-image-slice: 1;
-        border-image-width: 1rem;
-        position: absolute;
-        top: 0;
-        left: 5rem;
+
+.ReserveCard_base__tooltipSize_15 .ReserveCard_bonus_d5 {
+        display: none;
     }
-.ReserveCard_limitedOfferTimer_93 {
+
+.ReserveCard_base__tooltipSize_15.ReserveCard_base__active_7e .ReserveCard_bonus_d5 {
+        display: block;
+        right: 5rem;
+        bottom: 7rem;
+        color: #FEFEEC;
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+.ReserveCard_bonusText_b7 {
+    color: rgba(233, 226, 191, 0);
+}
+
+.ReserveCard_bonusText__copied_26 {
+        color: #e9e2bf;
+        position: absolute;
+        mask-image: linear-gradient(180deg, #e9e2bf 41.94%, rgba(233, 226, 191, 0) 203.23%);
+    }
+
+.ReserveCard_activeLight_be {
+    width: 190rem;
+    height: 95rem;
+    background: url('R.images.gui.maps.icons.personal_reserves.activated_light_personal_activation') no-repeat center
+        center / cover;
     position: absolute;
     top: 1rem;
-    left: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.ReserveCard_limitedOfferLight_ba {
-    width: 95rem;
-    height: 95rem;
-    background: url('R.images.gui.maps.icons.personal_reserves.limited_light') center center / cover;
+
+.mediaMedium .ReserveCard_activeLight_be {
+        width: 230rem;
+        height: 114rem;
+}
+
+.ReserveCard_base__tooltipSize_15 .ReserveCard_activeLight_be {
+        width: 100rem;
+        height: 50rem;
+    }
+
+.ReserveCard_expiringLight_c0 {
+    width: 159rem;
+    height: 105rem;
+    background: url('R.images.gui.maps.icons.personal_reserves.expiration_light') no-repeat center center / cover;
     position: absolute;
     top: -1rem;
-    left: -1rem;
+    left: 191rem;
+    transform: translateX(-100%);
 }
-.ReserveCard_premiumLight_9f {
-    width: 95rem;
-    height: 95rem;
-    background: url('R.images.gui.maps.icons.personal_reserves.premium_light') center center / cover;
-    opacity: 1;
+
+.mediaMedium .ReserveCard_expiringLight_c0 {
+        left: 231rem;
+}
+
+.ReserveCard_base__tooltipSize_15 .ReserveCard_expiringLight_c0 {
+        width: 100rem;
+        left: 101rem;
+    }
+
+.ReserveCard_expiringIndicator_bb {
     position: absolute;
-    top: -1rem;
-    right: -1rem;
+    top: -4rem;
+    left: 101%;
+    transform: translateX(-100%);
 }
+
+.ReserveCard_base__tooltipSize_15 .ReserveCard_expiringIndicator_bb {
+        display: none;
+    }
+
 @keyframes ReserveCard_fillIn_2b {
     from {
         transform: scaleY(0);
@@ -979,6 +1010,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scaleY(1);
     }
 }
+
 @keyframes ReserveCard_fadeIn_50 {
     from {
         opacity: 0;
@@ -988,19 +1020,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-@keyframes ReserveCard_checkmarkSpark_3c {
-    from {
-        filter: brightness(1);
-    }
 
-    50% {
-        filter: brightness(1.5);
-    }
-
-    to {
-        filter: brightness(1);
-    }
-}
 @keyframes ReserveCard_timerSpark_2f {
     from {
         filter: brightness(1);
@@ -1014,6 +1034,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         filter: brightness(1);
     }
 }
+
 @keyframes ReserveCard_borderBrightness_e5 {
     from {
         filter: brightness(2);
@@ -1023,17 +1044,18 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         filter: brightness(1);
     }
 }
+
 @keyframes ReserveCard_scaleUpDown_74 {
     from {
-        transform: scale(1);
+        transform: translate(-50%, -50%) scale(1);
     }
 
     50% {
-        transform: scale(1.02);
+        transform: translate(-50%, -50%) scale(1.02);
     }
 
     to {
-        transform: scale(1);
+        transform: translate(-50%, -50%) scale(1);
     }
 }
 
@@ -1043,151 +1065,35 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     justify-content: space-around;
     align-items: center;
     padding: 0 18rem;
-    background: url('R.images.gui.maps.icons.personal_reserves.activation.group_bg_default') center / contain no-repeat;
     position: relative;
 }
-
-    .ReserveGroup_base_86:hover {
-        background: url('R.images.gui.maps.icons.personal_reserves.activation.group_bg_hover') center / contain no-repeat;
-    }
-
-    .ReserveGroup_base_activated_c7 {
-        background: url('R.images.gui.maps.icons.personal_reserves.activation.group_bg_activated') center / contain no-repeat;
-    }
 
 .ReserveGroup_header_58 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 24rem;
-}
-
-.mediaMedium .ReserveGroup_header_58 {
-        margin-bottom: 32rem;
-}
-
-.mediaLarge .ReserveGroup_header_58 {
-        margin-bottom: 36rem;
+    margin-bottom: 10rem;
 }
 
 .ReserveGroup_header_title_e4 {
         color: #F2F2F7;
-        font-size: 22rem;
+        font-size: 15rem;
         font-weight: 700;
-        line-height: 1.2;
+        line-height: 1.15;
     }
 
 .mediaMedium .ReserveGroup_header_title_e4 {
             color: #F2F2F7;
-            font-size: 24rem;
+            font-size: 22rem;
             font-weight: 700;
             line-height: 1.2;
 }
 
-.mediaLarge .ReserveGroup_header_title_e4 {
-            color: #F2F2F7;
-            font-size: 28rem;
-            font-weight: 700;
-            line-height: 1.1;
-            padding-bottom: 5rem;
-}
-
 .ReserveGroup_header_description_03 {
-        color: #E9E2BF;
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
-    }
-
-.mediaMedium .ReserveGroup_header_description_03 {
-            color: #E9E2BF;
-            font-size: 16rem;
-            font-weight: 400;
-            line-height: 1.25;
-}
-
-.App_base_3a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    color: #8C8C7E;
-}
-
-.App_body_e9 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    padding-bottom: 100rem;
-}
-
-.App_title_b1 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2%;
-}
-
-.App_title_line_5a {
-        width: 362rem;
-        height: 2rem;
-        margin-right: 12rem;
-        background: url('R.images.gui.maps.icons.personal_reserves.battle_activation.title_line') no-repeat center;
-    }
-
-.App_title_line__right_2f {
-            margin-left: 12rem;
-            margin-right: 0;
-            transform: rotate(180deg);
-        }
-
-.App_title_text_d4 {
-        color: #F2F2F7;
-        font-size: 28rem;
-        font-weight: 700;
-        line-height: 1.1;
-        color: #FFFFFF;
-    }
-
-.App_reserves_9e {
-    display: flex;
-    align-items: flex-start;
-}
-
-.App_notice_9a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-}
-
-.App_notice_icon_a7 {
-        width: 32rem;
-        height: 32rem;
-        background: url('R.images.gui.maps.icons.personal_reserves.battle_activation.info') no-repeat center/cover;
-    }
-
-.App_notice_text_64 {
         color: #8C8C7E;
         font-size: 14rem;
         font-weight: 400;
         line-height: 1.3;
-        margin-top: 6rem;
-        margin-bottom: 20rem;
-        color: #FEAB34;
-        text-align: center;
-    }
-
-.App_notice_background_fd {
-        width: 660rem;
-        height: 150rem;
-        background: url('R.images.gui.maps.icons.personal_reserves.battle_activation.notice_glow') no-repeat bottom/cover;
-        position: absolute;
-        bottom: 0;
-        z-index: -1;
     }
 

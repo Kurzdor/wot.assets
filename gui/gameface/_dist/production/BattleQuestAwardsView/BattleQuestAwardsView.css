@@ -1,0 +1,1032 @@
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    position: relative;
+    cursor: pointer;
+}
+
+    .CButton_base__main_42,
+    .CButton_base__primary_7f,
+    .CButton_base__primaryGreen_6f,
+    .CButton_base__primaryRed_ec,
+    .CButton_base__secondary_50 {
+        background-size: 100% 100%;
+    }
+
+    .CButton_base__main_42 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+
+    .CButton_base__primary_7f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+
+    .CButton_base__primaryGreen_6f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+
+    .CButton_base__primaryRed_ec {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+
+    .CButton_base__secondary_50 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+
+    .CButton_base__ghost_ed {
+        border-radius: 3rem;
+        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
+            0 0 0 1rem rgba(255,255,255, .15) inset;
+        background-color: rgba(0,0,0, .15);
+    }
+
+    .CButton_base__extraSmall_27 {
+        min-height: 17rem;
+        padding: 0 16rem;
+    }
+
+    .CButton_base__small_df,
+    .CButton_base__medium_74 {
+        padding: 0 20rem;
+    }
+
+    .CButton_base__small_df {
+        min-height: 18rem;
+    }
+
+    .CButton_base__medium_74 {
+        min-height: 32rem;
+    }
+
+    .CButton_base__disabled_d9 {
+        cursor: default;
+    }
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+.CButton_base__primary_7f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+.CButton_base__secondary_50 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow .16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+        border-radius: 2rem;
+        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
+    }
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+        transition: opacity .16s ease-in-out;
+    }
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+        opacity: 1;
+    }
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
+        background-color: rgba(8,6,0, .18);
+        background-image: none;
+    }
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+        opacity: 1;
+    }
+.CButton_stateDisabled_54 {
+    background-color: rgba(0,0,0, .25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+        opacity: 1;
+    }
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: .03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang=ja],
+    .CButton_content_cc[lang=ko],
+    .CButton_content_cc[lang=zh_tw],
+    .CButton_content_cc[lang=zh_sg],
+    .CButton_content_cc[lang=zh_cn],
+    .CButton_content_cc[lang=th] {
+        font-weight: 400;
+    }
+.CButton_base__main_42 .CButton_content_cc,
+    .CButton_base__primaryRed_ec .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #600;
+    }
+.CButton_base__secondary_50 .CButton_content_cc {
+        color: rgba(254,254,236, .75);
+    }
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #1c2502;
+    }
+.CButton_base__extraSmall_27 .CButton_content_cc {
+        font-size: 12rem;
+    }
+.CButton_base__small_df .CButton_content_cc {
+        font-size: 14rem;
+    }
+.CButton_base__medium_74 .CButton_content_cc {
+        font-size: 15rem;
+    }
+.CButton_base__disabled_d9 .CButton_content_cc {
+        opacity: .6;
+    }
+
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .TextButton_base__right_39 {
+        flex-direction: row-reverse;
+    }
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+    .TextButton_icon__forward_59 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.back');
+        transform: translateY(1rem);
+    }
+.TextButton_icon__forward_59 {
+        transform: rotate(180deg) translateY(1rem);
+    }
+.TextButton_icon__close_53 {
+        margin: -1rem 0;
+        background-image: url('R.images.gui.maps.icons.components.text_button.close');
+    }
+.TextButton_icon__info_33 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.info');
+    }
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+    .TextButton_icon__forward_59 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+    }
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+    }
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+    }
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_glow_a4 {
+        opacity: 0;
+    }
+.TextButton_caption_82 {
+    position: relative;
+    transition: color .16s, text-shadow .16s;
+}
+.TextButton_caption__back_b9,
+    .TextButton_caption__forward_4e,
+    .TextButton_caption__close_36 {
+        color: #FFDD99;
+        text-shadow: 0 0 10rem rgba(255,42,0, 1),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4);
+    }
+.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
+            color: #fffa9f;
+        }
+.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
+            color: #FFDD99;
+        }
+.TextButton_caption__info_23 {
+        padding: 0 5rem;
+        color: #CCFFFF;
+        text-shadow: 0 0 12rem rgba(31,68,255, .8),
+            0 0 8rem #00eaff;
+    }
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+            color: #e3ffff;
+            text-shadow: 0 0 12rem rgba(31,68,255, .8),
+                0 0 12rem rgba(0,234,255, 1),
+                0 0 8rem #00eaff;
+        }
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+            color: #CCFFFF;
+            text-shadow: 0 0 12rem rgba(31,68,255, .6),
+                0 0 8rem #00eaff;
+        }
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+        margin-left: 8rem;
+    }
+.TextButton_base__right_39 .TextButton_goto_e7 {
+        margin-right: 8rem;
+    }
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity .16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+        left: -4rem;
+    }
+.TextButton_base__right_39 .TextButton_shine_e2 {
+        right: -4rem;
+        transform: rotate(180deg);
+    }
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_shine_e2 {
+        opacity: 0;
+    }
+
+.Reward_base_ea {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+    .Reward_base__s48x48_46,
+    .Reward_base__small_c0 {
+        width: 48rem;
+        height: 48rem;
+    }
+
+    .Reward_base__s80x80_ce,
+    .Reward_base__big_e5 {
+        width: 80rem;
+        height: 80rem;
+    }
+
+    .Reward_base__s128x100_c3 {
+        width: 128rem;
+        height: 100rem;
+    }
+
+    .Reward_base__s180x135_7c {
+        width: 180rem;
+        height: 135rem;
+    }
+
+    .Reward_base__s232x174_67 {
+        width: 232rem;
+        height: 174rem;
+    }
+
+    .Reward_base__s296x222_78 {
+        width: 296rem;
+        height: 222rem;
+    }
+
+    .Reward_base__s400x300_07 {
+        width: 400rem;
+        height: 300rem;
+    }
+
+    .Reward_base__s600x450_f8 {
+        width: 600rem;
+        height: 450rem;
+    }
+
+.Reward_tooltipWrapper_b5 {
+    height: 100%;
+}
+
+.Reward_icon_df {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.Reward_overlay_68 {
+    background: no-repeat center / 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.Reward_base__s48x48_46 .Reward_overlay_68,
+    .Reward_base__small_c0 .Reward_overlay_68 {
+        width: 96rem;
+        height: 96rem;
+        background-size: 100%;
+        overflow: visible;
+    }
+
+.Reward_base__s80x80_ce .Reward_overlay_68,
+    .Reward_base__big_e5 .Reward_overlay_68 {
+        width: 128rem;
+        height: 128rem;
+    }
+
+.Reward_base__s180x135_7c .Reward_overlay_68 {
+        width: 266rem;
+        height: 241rem;
+    }
+
+.Reward_base__s232x174_67 .Reward_overlay_68 {
+        width: 344rem;
+        height: 312rem;
+    }
+
+.Reward_base__s296x222_78 .Reward_overlay_68 {
+        width: 450rem;
+        height: 408rem;
+    }
+
+.Reward_base__s400x300_07 .Reward_overlay_68 {
+        width: 618rem;
+        height: 590rem;
+    }
+
+.Reward_base__s600x450_f8 .Reward_overlay_68 {
+        width: 670rem;
+        height: 575rem;
+    }
+
+.Reward_highlight_36 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 0;
+}
+
+.Reward_image_89 {
+    position: relative;
+}
+
+.Reward_info_72 {
+    margin-top: -13rem;
+    color: #e9e2bf;
+    font-size: 14rem;
+    line-height: 18rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_info_72,
+    .Reward_base__small_c0 .Reward_info_72 {
+        margin: -10rem -10rem 0;
+    }
+
+.Reward_info__multi_63 {
+        margin-right: 2rem;
+        text-align: right;
+    }
+
+.Reward_base__s48x48_46 .Reward_info__multi_63,
+        .Reward_base__small_c0 .Reward_info__multi_63 {
+            margin-right: 0;
+        }
+
+.Reward_info__credits_ef {
+        color: #CED9D9;
+    }
+
+.Reward_info__gold_36 {
+        color: #FFC363;
+    }
+
+.Reward_info__crystal_36 {
+        color: #C9C9B6;
+    }
+
+.Reward_info__premiumTank_d3 {
+        color: #FFDD99;
+    }
+
+.Reward_timer_d3 {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_timer_d3,
+    .Reward_base__small_c0 .Reward_timer_d3 {
+        width: 23rem;
+        height: 23rem;
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
+        top: -6rem;
+        right: -6rem;
+    }
+
+.Reward_base__s80x80_ce .Reward_timer_d3,
+    .Reward_base__big_e5 .Reward_timer_d3 {
+        width: 48rem;
+        height: 48rem;
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
+        top: -14rem;
+        right: -14rem;
+    }
+
+@keyframes AwardsList_raysAppearance_fa {
+    0% {
+        transform: translateY(20rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes AwardsList_rotate_78 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.AwardsList_base_1f {
+    position: relative;
+}
+
+.AwardsList_container_18 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AwardsList_value_af {
+    color: #FFDD99;
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: -37rem;
+}
+
+.mediaLarge .AwardsList_value_af {
+        color: #FFDD99;
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-top: -53rem;
+        font-weight: 400;
+}
+
+.AwardsList_reward_33 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AwardsList_label_02 {
+    color: #E9E2BF;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 5rem;
+}
+
+.mediaSmall .AwardsList_label_02 {
+        color: #E9E2BF;
+        font-size: 14rem;
+        font-weight: 400;
+        line-height: 1.3;
+}
+
+.mediaLarge .AwardsList_label_02 {
+        color: #E9E2BF;
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
+}
+
+@keyframes BackGround_raysAppearance_85 {
+    0% {
+        transform: translateY(20rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes BackGround_rotate_18 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.BackGround_base_16 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BackGround_bgContainer_4f {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.BackGround_bg_5a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.battle_royale_progression.gui.maps.backgrounds.main_bg') no-repeat center / cover;
+    filter: blur(6.5px);
+}
+
+.BackGround_noise_26 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.battle_royale_progression.gui.maps.progression.noise') repeat center / cover;
+    opacity: .1;
+    mix-blend-mode: soft-light;
+}
+
+.BackGround_shade_6e {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .3);
+}
+
+.BackGround_bottomShadow_4c {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 36%, rgba(0, 0, 0, .39) 45%, rgba(0, 0, 0, .73) 57%, rgba(0, 0, 0, .8) 100%);
+    opacity: .7;
+}
+
+.BackGround_awardsContainer_39 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 200rem;
+}
+
+.BackGround_glowContainer_e8 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -105rem;
+}
+
+.mediaMedium .BackGround_glowContainer_e8 {
+        top: -135rem;
+}
+
+.BackGround_ribbon_fe {
+    width: 1366rem;
+    height: 356rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 10;
+}
+
+.BackGround_base__inProgress_b9 .BackGround_ribbon_fe {
+        background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.red_ribbon_1366');
+    }
+
+.mediaMedium .BackGround_base__inProgress_b9 .BackGround_ribbon_fe {
+            background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.red_ribbon_1600');
+}
+
+.mediaLarge .BackGround_base__inProgress_b9 .BackGround_ribbon_fe {
+            background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.red_ribbon_1920');
+}
+
+.BackGround_base__completed_2a .BackGround_ribbon_fe {
+        background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.gold_ribbon_1366');
+    }
+
+.mediaMedium .BackGround_base__completed_2a .BackGround_ribbon_fe {
+            background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.gold_ribbon_1600');
+}
+
+.mediaLarge .BackGround_base__completed_2a .BackGround_ribbon_fe {
+            background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.gold_ribbon_1920');
+}
+
+.mediaMedium .BackGround_ribbon_fe {
+        width: 1600rem;
+        height: 417rem;
+}
+
+.mediaLarge .BackGround_ribbon_fe {
+        width: 1920rem;
+        height: 500rem;
+}
+
+.BackGround_gradientLine_b1 {
+    animation-name: BackGround_raysAppearance_85, BackGround_rotate_18;
+    animation-duration: 1.5s, 120s;
+    animation-fill-mode: forwards, forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .17, 1), linear;
+    animation-delay: .8s, 1.2s;
+    animation-iteration-count: 1, infinite;
+    width: 700rem;
+    height: 700rem;
+    background: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.radial_lines') no-repeat top / cover;
+    mix-blend-mode: screen;
+    position: absolute;
+}
+
+.mediaMedium .BackGround_gradientLine_b1 {
+        width: 900rem;
+        height: 900rem;
+}
+
+.mediaExtraLarge .BackGround_gradientLine_b1 {
+        width: 1000rem;
+        height: 1000rem;
+}
+
+.BackGround_glow_89 {
+    width: 600rem;
+    height: 600rem;
+    background: no-repeat top / cover;
+    position: absolute;
+    z-index: 5;
+}
+
+.BackGround_base__inProgress_b9 .BackGround_glow_89 {
+        background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.glow_in_progress');
+        mix-blend-mode: overlay;
+    }
+
+.BackGround_base__completed_2a .BackGround_glow_89 {
+        background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.glow_done');
+        mix-blend-mode: screen;
+    }
+
+.mediaLarge .BackGround_glow_89 {
+        width: 800rem;
+        height: 800rem;
+}
+
+.BackGround_base__completed_2a .BackGround_splash_e1 {
+        width: 500rem;
+        height: 500rem;
+        background: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.splash') no-repeat top / cover;
+        mix-blend-mode: screen;
+        position: absolute;
+        z-index: 5;
+    }
+
+.mediaLarge .BackGround_base__completed_2a .BackGround_splash_e1 {
+            width: 900rem;
+            height: 900rem;
+}
+
+.BackGround_base__completed_2a .BackGround_glowSmall_5f {
+        width: 600rem;
+        height: 600rem;
+        background: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.glow_small') no-repeat top /
+            cover;
+        opacity: .5;
+        mix-blend-mode: screen;
+        position: absolute;
+        z-index: 5;
+    }
+
+.mediaLarge .BackGround_glowSmall_5f {
+        width: 800rem;
+        height: 800rem;
+}
+
+.BattleIcon_base_cd {
+    position: relative;
+}
+
+.BattleIcon_block_0d {
+    width: 500rem;
+    height: 500rem;
+    position: relative;
+}
+
+.BattleIcon_icon_f7 {
+    width: 130rem;
+    height: 130rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 185rem;
+    left: 185rem;
+    z-index: 10;
+}
+
+.BattleIcon_base__completed_6e .BattleIcon_icon_f7 {
+        background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_done_130_130');
+    }
+
+.mediaLarge .BattleIcon_base__completed_6e .BattleIcon_icon_f7 {
+            background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_done_150_150');
+}
+
+.BattleIcon_base__inProgress_32 .BattleIcon_icon_f7 {
+        background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_in_progress_130_130');
+    }
+
+.mediaLarge .BattleIcon_base__inProgress_32 .BattleIcon_icon_f7 {
+            background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_in_progress_150_150');
+}
+
+.mediaLarge .BattleIcon_icon_f7 {
+        width: 150rem;
+        height: 150rem;
+        top: 165rem;
+        left: 175rem;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Header_base_05 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Header_subTitle_65 {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaLarge .Header_subTitle_65 {
+        color: #E9E2BF;
+        font-size: 24rem;
+        font-weight: 700;
+        line-height: 1.2;
+}
+
+.Header_title_03 {
+    color: #F2F2F7;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaLarge .Header_title_03 {
+        color: #F2F2F7;
+        font-size: 73rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+@keyframes App_raysAppearance_d2 {
+    0% {
+        transform: translateY(20rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes App_rotate_7a {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    overflow: hidden;
+}
+
+.App_base_4e {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #2e2e2e;
+    position: relative;
+    animation: App_windowIn_f3 .5s both;
+}
+
+.App_content_92 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.App_buttonClose_fc {
+    position: absolute;
+    top: 40rem;
+    right: 30rem;
+}
+
+.App_buttonApprove_44 {
+    position: absolute;
+    bottom: 50rem;
+    z-index: 15;
+}
+
+.mediaMedium .App_buttonApprove_44 {
+        bottom: 70rem;
+}
+
+.mediaLarge .App_buttonApprove_44 {
+        bottom: 90rem;
+}
+
+.App_buttonSize_c6 {
+    width: 180rem;
+    margin: 8rem 57rem;
+}
+
+.App_battleIcon_e2 {
+    margin-left: -25rem;
+    position: absolute;
+    top: -155rem;
+}
+
+.mediaMedium .App_battleIcon_e2 {
+        top: -135rem;
+}
+
+.mediaLarge .App_battleIcon_e2 {
+        top: -120rem;
+}
+
+.mediaExtraLarge .App_battleIcon_e2 {
+        top: -100rem;
+}
+
+.App_awards_75 {
+    margin-top: 50rem;
+    position: relative;
+    z-index: 15;
+}
+
+.mediaSmall .App_awards_75 {
+        margin-top: 100rem;
+}
+
+.mediaMedium .App_awards_75 {
+        margin-top: 30rem;
+}
+
+.App_header_e4 {
+    position: absolute;
+    top: 180rem;
+}
+
+.mediaMedium .App_header_e4 {
+        top: 200rem;
+}
+
+.mediaLarge .App_header_e4 {
+        top: 220rem;
+}
+
+.mediaExtraLarge .App_header_e4 {
+        top: 250rem;
+}
+
+@keyframes App_windowIn_f3 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+

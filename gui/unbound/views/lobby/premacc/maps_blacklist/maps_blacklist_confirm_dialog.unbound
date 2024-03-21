@@ -1,0 +1,67 @@
+(def layout MapsBlacklistConfirmDialogContent() entrance=true
+    (name = 'MapsBlacklistConfirmDialogContent')
+    (macro MapsBlacklistConfirmDialogModel)
+    (macro MapsBlacklistSizeConstants)
+
+    (style
+        (align = "center | middle")
+        (width = 100%)
+        (marginTop = -2px)
+        (marginBottom = 6px)
+        (gap = 15px)
+    )
+
+    (hblock
+        (name = 'mapsBlock')
+        (style
+            (gap = 30px)
+        )
+
+        (group name = 'selectedMaps'
+            (style
+                (marginTop = 15px)
+                (marginBottom = 15px)
+                (align = "center|middle")
+            )
+            (renderer = 'MapsBlacklistDialogSlot')
+            (container
+                (style
+                    (flow = "Flow.HORIZONTAL")
+                    (gap = 21px)
+                )
+            )
+        )
+
+        (bind visible "showSelectedMaps")
+    )
+
+    (tf
+        (name = 'description')
+        (style
+            (width = 100%)
+        )
+
+        # have 1+ selected map
+        (bind htmlText "formatString(
+                            htmlTextStyle(R.strings.premacc.mapsBlacklistReplace.message(), 'MainBigTextStyle', 'center'),
+                            [
+                                {name: 'mapName', value: TextFormat(R.strings.premacc.mapsBlacklist.mapName(), {mapName:R.strings.arenas['c_' + mapId].name()}), style: 'HighlightTextStyle'},
+                                {name: 'cooldownTimeStr', value: ''+timeLeft(cooldownTime, R.strings.menu.timeLeft.short.day(), R.strings.menu.timeLeft.short.hour(), R.strings.menu.timeLeft.short.min(), R.strings.menu.timeLeft.short.lessMin()), style: 'HighlightTextStyle'}
+                            ],
+                            true
+                        )"
+            (bind enabled "showSelectedMaps")
+        )
+
+        # haven't selected maps
+        (bind htmlText "formatString(
+                            htmlTextStyle(R.strings.premacc.mapsBlacklistConfim.message(), 'MainBigTextStyle', 'center'),
+                            [
+                                {name: 'cooldownTimeStr', value: ''+timeLeft(cooldownTime, R.strings.menu.timeLeft.short.day(), R.strings.menu.timeLeft.short.hour(), R.strings.menu.timeLeft.short.min(), R.strings.menu.timeLeft.short.lessMin()), style: 'HighlightTextStyle'}
+                            ],
+                            true
+                        )"
+            (bind enabled "!showSelectedMaps")
+        )
+    )
+)

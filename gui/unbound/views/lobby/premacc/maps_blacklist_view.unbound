@@ -1,0 +1,332 @@
+(def macro MapsBlacklistSizeConstants()
+    (scope
+        (const MAPS_BLACKLIST_SLOT_SIZE_SMALL:number = 150)
+        (const MAPS_BLACKLIST_SLOT_SIZE_BIG:number = 225)
+        (const SCREEN_WIDTH_MAX:number = 1400)
+    )
+)
+
+(def layout MapsBlacklistView() entrance=true isReadyTracked=true loadOrder="LoadOrder.NOT_WAITING_FIRST"
+    (name = 'mapsBlackListView')
+    (macro MapsBlacklistViewModel)
+    (macro MapsBlacklistSizeConstants)
+    (scope
+        (const SCREEN_WIDTH_MIN:number = 1100)
+
+        # handle close event form slots
+        (event evSlotCloseEvent)
+        # handle map slot button click events
+        (event evSlotButtonAddClick)
+        (event evSlotButtonRemoveClick)
+
+        (var mapsGap:number = 20)
+        (bind mapsGap "viewSize.width < SCREEN_WIDTH_MAX ? 20 : 30"
+            (event "viewResized")
+        )
+
+        (var mapsAreaW:number = 830)
+        (bind mapsAreaW "viewSize.width < SCREEN_WIDTH_MAX ? (viewSize.width < SCREEN_WIDTH_MIN ? 830 : 1000) : 1245"
+            (event "viewResized")
+        )
+
+        (var mapsAreaH:number = 300)
+        (bind mapsAreaH "viewSize.height - (viewSize.width < SCREEN_WIDTH_MAX ? (cooldownTime > 0 ? 354 : 325) : (cooldownTime > 0 ? 374 : 345))"
+            (event "viewResized")
+        )
+
+        (var areaGap:number = 300)
+        (bind areaGap "(viewSize.width - mapsAreaW) * 0.5 + 10"
+            (event "viewResized")
+        )
+    )
+    (style
+        (width = 100%)
+        (height = 100%)
+        (align = "center")
+        (paddingTop = 50px)
+        (gap = 5px)
+    )
+
+    # Close button and event for ESC
+    (dispatch onBackAction on='escPressed')
+
+    # Send event to add map to blacklist
+    (dispatch onMapAddToBlacklistEvent
+        (event "evSlotButtonAddClick")
+    )
+    # Send event to remove map from blacklist
+    (dispatch onMapRemoveFromBlacklistEvent
+        (event "evSlotButtonRemoveClick")
+        (event "evSlotCloseEvent")
+    )
+
+    # Hide waiting
+    (dispatch onInitialized
+        (event "$evReadyChanged")
+    )
+
+    (element PremDashboarBg)
+
+    (image
+        (name = 'headerBg')
+        (style
+            (position = "absolute")
+            (hcenter = 0px)
+            (top = -260px)
+            (blendMode = 'add')
+        )
+        (source = "R.images.gui.maps.icons.premacc.map.pm_light_inprogress()")
+        (bind visible "cooldownTime > 0")
+    )
+
+    (hblock
+        (tf
+            (name = 'header')
+            (bind class "viewSize.width < SCREEN_WIDTH_MAX ? 'PromoTitleTextStyle' : 'GrandTitleTextStyle'"
+                (event "viewResized")
+            )
+            (text = "R.strings.premacc.mapsBlacklist.header()")
+        )
+        (block
+            (name = 'iconInfo')
+            (style
+                (bind marginLeft "viewSize.width < SCREEN_WIDTH_MAX ? 0 : 2"
+                    (event "viewResized")
+                )
+                (bind marginTop "viewSize.width < SCREEN_WIDTH_MAX ? 7 : 18"
+                    (event "viewResized")
+                )
+            )
+            (image
+                (source = "R.images.gui.maps.icons.library.info()")
+            )
+            (controller $ToolTip
+                (delay = "0.4")
+                (bind content "R.views.lobby.premacc.maps_blacklist.maps_blacklist_tooltips.MapsBlacklistInfoTooltipContent.resId")
+                (decorator = "R.views.common.tooltip_window.tooltip_window.TooltipWindow.resId")
+            )
+        )
+    )
+
+    (hblock
+        (name = 'subHeaderBlock')
+        (bind visible "cooldownTime > 0")
+
+        (tf
+            (name = 'subHeader')
+            (bind htmlText "TextFormat(
+                htmlTextStyle(R.strings.premacc.mapsBlacklist.cooldown(), 'HighlightTextStyle'), 
+                htmlTextStyle(
+                    timeLeft(cooldownTime,
+                            R.strings.menu.timeLeft.short.day(),
+                            R.strings.menu.timeLeft.short.hour(),
+                            R.strings.menu.timeLeft.short.min(),
+                            R.strings.menu.timeLeft.short.lessMin(),
+                            true), 
+                    'DropShadowCriticalTextStyle'))"
+                (enabled = "cooldownTime > 0")
+            )
+        )
+    )
+
+    (group name = 'disabledMaps'
+        (style
+            (bind marginTop "viewSize.width < SCREEN_WIDTH_MAX ? 10 : 15"
+                (event "viewResized")
+            )
+            (marginBottom = 15px)
+            (align = "center|middle")
+            (paddingRight = 25px)
+        )
+        (renderer = 'MapsBlacklistWidgetSlot')
+        (container
+            (style
+                (flow = "Flow.HORIZONTAL")
+                (gap = 40px)
+            )
+        )
+    )
+
+    (hblock
+        (name = 'mapsHeader')
+        (style
+            (bind width "mapsAreaW")
+        )
+
+        (block
+            (image
+                (name = 'separator')
+                (style
+                    (position = "absolute")
+                    (bind width "mapsAreaW + 20")
+                    (bottom = -100px)
+                    (left = -10px)
+                )
+                (source = "R.atlases.components.lip_mid()")
+            )
+            (macro EmptyHitAreaMacro)
+        )
+
+        (element FilterArrow
+            (name = 'filterArrow')
+            (style
+                (position = "absolute")
+                (bottom = -72px)
+                (left = 29px)
+            )
+            (bind visible "isFilterApplied")
+        )
+
+        (hblock
+            (style
+                (position = "absolute")
+                (gap = 2px)
+            )
+            (tf
+                (name = 'filteredCount')
+                (class MainTextStyle)
+                (bind htmlText "TextFormat(htmlTextStyle(R.strings.premacc.mapsBlacklist.mapsFilter(), 'MainTextStyle'), {count: htmlTextStyle(mapsTotal, 'StatsTextStyle')})"
+                    (bind enabled "!isFilterApplied")
+                )
+                (bind htmlText "TextFormat(
+                        htmlTextStyle(R.strings.premacc.mapsBlacklist.mapsFilterSelected(), 'MainTextStyle'),
+                        {count: htmlTextStyle(mapsSelected, 'StatsTextStyle'), total: htmlTextStyle(mapsTotal, 'MainTextStyle')}
+                    )"
+                    (bind enabled "isFilterApplied")
+                )
+            )
+            (button
+                (name = 'closeBtn')
+                (macro ButtonStylePrimaryGhost "BUTTON_SIZE_MEDIUM")
+                (style
+                    (width = 24px)
+                )
+                (scope
+                    (dispatch onFilterReset on='clicked')
+                )
+                (icon = "R.images.gui.maps.icons.library.cross()")
+                (bind visible "isFilterApplied")
+            )
+        )
+
+
+        (hblock
+            (name = 'filtersBlock')
+            (style
+                (position = "absolute")
+                (right = 0px)
+                (gap = 5px)
+            )
+            
+            (tf
+                (name = 'filtersLabel')
+                (class MainTextStyle)
+                (text = "R.strings.premacc.mapsBlacklist.mapsFiltersLabel()")
+            )
+
+            (group name = 'mapsFilters'
+                (style
+                    (height = 100%)
+                    (align = "right|middle")
+                    (marginTop = 1px)
+                )
+                (renderer = 'MapsFilterRenderer')
+                (container
+                    (style
+                        (flow = "Flow.HORIZONTAL")
+                        (gap = 5px)
+                    )
+                )
+            )
+        )
+    )
+
+    (list name = 'maps'
+        (style
+            (width = 100%)
+            (bind height "mapsAreaH")
+            (marginTop = 32px)
+            (marginRight = 20px)
+        )
+        (isVirtualLayout = false)
+        (renderer = 'MapsBlacklistSlot')
+        (container
+            (style
+                (bind width "mapsAreaW")
+                (flow = "Flow.TILE_HORIZONTAL")
+                (bind gap "mapsGap")
+                (bind marginLeft "areaGap")
+                (bind paddingTop "mapsGap")
+                (bind paddingBottom "mapsGap")
+            )
+        )
+        (allowDeselect = false)
+        (verticalSlider
+            (scroll_bar
+                (orientation = "Flow.VERTICAL")
+                (btn_decr = 'SBUpBtn')
+                (track = 'SBVTrack')
+                (thumb = 'SBVThumb')
+                (btn_incr = 'SBDownBtn')
+                (style
+                    (paddingTop = 10px)
+                    (paddingBottom = 10px)
+                )
+                (value = 0)
+            )
+        )
+        (vscrollPolicy = 'auto')
+        (hscrollPolicy = 'off')
+    )
+
+    (text_button 'backBtn'
+        (macro ButtonBackStyle)
+        (style
+            (position = "absolute")
+            (top = 71px)
+            (left = 50px)
+        )
+        (label = "R.strings.premacc.mapsBlacklist.backBtn.label()")
+        (bind labelAdditional "R.strings.premacc.mapsBlacklist.backBtn.addLabel()")
+        (dispatch onBackAction on='clicked')
+    )
+)
+
+(def layout FilterArrow()
+    (mouseChildren = false)
+    (mouseEnabled = false)
+    (image
+        (name = 'filterArrow')
+        (source = "R.atlases.components.filter_arrow()")
+    )
+)
+
+(def layout MapsFilterRenderer()
+    (macro MapsBlacklistMapFilterModel)
+
+    (button
+        (bind name "'mapsFilterButton_' + filterName")
+        (macro ButtonStyleSecondary "BUTTON_SIZE_MEDIUM") 
+        (macro ButtonToggleStyles)
+        (style
+            (width = 31px)
+            (height = 21px)
+        )
+        (toggle = true)
+        (bind selected "selected")
+        (icon
+            (style
+                (marginTop = -2px)
+            )
+            (visible = true)
+            (bind source "R.images.gui.maps.icons.customization.items_popover[filterName+'16x16']()"
+                (bind enabled "filterName != ''")
+            )
+        )
+    )
+
+    (macro SetSimpleToolTip
+        body="R.strings.premacc.mapsBlacklist.filtersTooltip.desc.resId"
+        header="R.strings.premacc.mapsBlacklist.filtersTooltip.header[filterName].resId"
+    )
+)

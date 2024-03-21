@@ -8,17 +8,13 @@
     position: absolute;
 }
 
-.TooltipDecorator_decorator_3d {
-    padding: 4rem 6rem 8rem; /* border offset*/
-    border-image-source: url('R.atlases.components.tooltip_background');
-    border-image-slice: 24 fill;
-    border-image-width: 24rem;
-    position: relative;
-}
-
-.TooltipDecorator_decoratorContent_de {
-    background-color: #000;
-}
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.atlases.components.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
 
 .FormatTextWithColorTags_blackReal_3c {
     color: #000000;
@@ -110,6 +106,13 @@
 
 .FormatTextWithColorTags_prom_dd {
     color: #A29B70;
+}
+
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8C8C7E;
 }
 
 .tooltips_base_6b {

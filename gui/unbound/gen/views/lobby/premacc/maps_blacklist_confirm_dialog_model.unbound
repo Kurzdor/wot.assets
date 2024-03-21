@@ -1,0 +1,16 @@
+# This file was generated using wgpygen
+#   template: configs/templates/view_model.unbound.jinja2
+#   source: configs/definitions/views/lobby/premacc/maps_blacklist_models.yaml
+# Please, don't edit this file manually.
+(def macro MapsBlacklistConfirmDialogModel()
+    (scope
+        (event onMapSelected)
+
+        (var mapId:str = '')
+        (var cooldownTime:number = 0)
+        (var showSelectedMaps:bool = false)
+
+        # The following submodels are used in this model:
+        # selectedMaps:ui_kit.list_model
+    )
+)

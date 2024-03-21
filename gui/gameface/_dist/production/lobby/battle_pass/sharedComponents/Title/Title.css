@@ -20,6 +20,10 @@
         line-height: 1.2;
 }
 
+.Title_base__transparentChapterName_18 .Title_chapter_74 {
+        opacity: .8;
+    }
+
 .Title_buyBPTitle_dd {
     color: #F2F2F7;
     font-size: 36rem;
@@ -39,6 +43,13 @@
         font-size: 73rem;
         font-weight: 700;
         line-height: 1.1;
+}
+
+.mediaExtraLarge .Title_base__transparentChapterName_18 .Title_buyBPTitle_dd {
+            color: #F2F2F7;
+            font-size: 56rem;
+            font-weight: 700;
+            line-height: 1.1;
 }
 
 .Title_subTitle_52 {

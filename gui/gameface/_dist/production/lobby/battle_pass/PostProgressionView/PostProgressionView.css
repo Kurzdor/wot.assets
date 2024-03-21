@@ -1,0 +1,3025 @@
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Background_base_67 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Background_bg_e8,
+.Background_bgDisabled_e0,
+.Background_bgHover_b4 {
+    width: 76rem;
+    height: 91rem;
+    background: no-repeat center / contain;
+    opacity: 1;
+    position: absolute;
+    bottom: 2rem;
+    z-index: 1;
+    transition: opacity .3s linear;
+}
+
+.mediaMedium .Background_bg_e8, .mediaMedium .Background_bgDisabled_e0, .mediaMedium .Background_bgHover_b4 {
+        height: 136rem;
+}
+
+.Background_base__big_56 .Background_bg_e8, .Background_base__big_56 .Background_bgDisabled_e0, .Background_base__big_56 .Background_bgHover_b4 {
+        width: 96rem;
+        height: 171rem;
+        bottom: 2rem;
+    }
+
+.mediaMedium .Background_base__big_56 .Background_bg_e8, .mediaMedium .Background_base__big_56 .Background_bgDisabled_e0, .mediaMedium .Background_base__big_56 .Background_bgHover_b4 {
+            width: 152rem;
+            height: 272rem;
+            bottom: 4rem;
+}
+
+.mediaMedium .Background_bg_e8 {
+        height: 131rem;
+}
+
+.Background_base__hovered_32 .Background_bg_e8 {
+        opacity: 0;
+    }
+
+.Background_base__big_56 .Background_bg_e8 {
+        height: 166rem;
+    }
+
+.mediaMedium .Background_base__big_56 .Background_bg_e8 {
+            height: 262rem;
+}
+
+.Background_bgHover_b4 {
+    opacity: 0;
+}
+
+.Background_base__hovered_32 .Background_bgHover_b4 {
+        opacity: 1;
+    }
+
+.Border_base_5a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.Border_border_bd,
+.Border_borderHover_ab {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center bottom / contain;
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    transition: opacity .3s linear;
+}
+
+.Border_base__hovered_83 .Border_border_bd, .Border_base__hovered_83 .Border_borderHover_ab {
+        opacity: 0;
+    }
+
+.Border_borderHover_ab {
+    opacity: 0;
+}
+
+.Border_base__hovered_83 .Border_borderHover_ab {
+        opacity: 1;
+    }
+
+.Border_borderDisabled_8b {
+    width: 80rem;
+    height: 95rem;
+    background: no-repeat center bottom / contain;
+    position: absolute;
+    z-index: 2;
+}
+
+.mediaMedium .Border_borderDisabled_8b {
+        height: 140rem;
+}
+
+.Border_borderDisabled__big_12 {
+        width: 100rem;
+        height: 175rem;
+    }
+
+.mediaMedium .Border_borderDisabled__big_12 {
+            width: 160rem;
+            height: 280rem;
+}
+
+.CountValue_base_fe {
+    width: 33rem;
+    height: 29rem;
+    background: url('R.images.gui.maps.icons.battlePass.awards_widget.collectionCompleted_small') no-repeat center / contain;
+    position: absolute;
+    z-index: 4;
+}
+
+    .CountValue_base__big_ea {
+        width: 33rem;
+        height: 29rem;
+        background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.collectionCompleted_big');
+        top: 6rem;
+    }
+
+    .mediaMedium .CountValue_base__big_ea {
+            width: 46rem;
+            height: 40rem;
+            top: 10rem;
+}
+
+.Count_base_a6 {
+    color: #F2F2F7;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 0 10rem #9d4b00, 0 0 6rem #9d4b00;
+    position: absolute;
+    top: 44rem;
+    left: 0;
+    z-index: 5;
+}
+    .mediaMedium .Count_base_a6 {
+        top: 47rem;
+}
+    .Count_base__big_2c {
+        font-size: 30rem;
+        font-weight: 700;
+        line-height: 36rem;
+        text-shadow: 0 0 20rem #9d4b00, 0 0 12rem #9d4b00;
+        top: 61rem;
+    }
+    .mediaMedium .Count_base__big_2c {
+            font-size: 48rem;
+            line-height: 58rem;
+            top: 98rem;
+}
+    .Count_base__locked_e3 {
+        text-shadow: none;
+    }
+    .Count_base__disabled_66 {
+        text-shadow: none;
+        opacity: .5;
+    }
+
+.Icon_base_05 {
+    width: 52rem;
+    height: 52rem;
+    background: no-repeat center / contain;
+    filter: grayscale(0%);
+    position: absolute;
+    top: 7rem;
+    z-index: 4;
+    transition: filter .3s linear;
+}
+
+    .Icon_base__big_9e {
+        width: 64rem;
+        height: 64rem;
+        top: 9rem;
+    }
+
+    .mediaMedium .Icon_base__big_9e {
+            width: 100rem;
+            height: 100rem;
+            top: 14rem;
+}
+
+    .Icon_base__darkened_2b {
+        filter: grayscale(80%);
+    }
+
+    .Icon_base__hover_03 {
+        filter: grayscale(0%);
+    }
+
+    .Icon_base__disabled_a1 {
+        filter: grayscale(100%);
+    }
+
+.Label_base_05 {
+    color: #8C8C7E;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 42rem;
+    font-weight: 700;
+    text-align: center;
+    white-space: pre-wrap;
+    position: absolute;
+    top: 74rem;
+    right: 3rem;
+    left: 3rem;
+    z-index: 5;
+}
+    .mediaMedium .Label_base_05 {
+        display: flex;
+        transition: color .3s linear;
+}
+    .Label_base__big_3c {
+        color: #FEFEEC;
+        font-size: 14rem;
+        font-weight: 700;
+        line-height: 1.15;
+        display: flex;
+        height: 65rem;
+        color: rgba(254,254,236, .5);
+        top: 86rem;
+        transition: color .3s linear;
+    }
+    .mediaMedium .Label_base__big_3c {
+            height: 104rem;
+            font-size: 24rem;
+            top: 138rem;
+            right: 6rem;
+            left: 6rem;
+}
+    .Label_base__gold_dc {
+        color: #FFC363;
+        text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 15rem rgba(238, 85, 34, .7);
+    }
+    .Label_base__hover_51 {
+        color: #E9E2BF;
+    }
+    .Label_base__hover_51.Label_base__gold_dc {
+            color: #FFC363;
+        }
+    .Label_base__disabled_df {
+        color: #8C8C7E;
+        text-shadow: none;
+    }
+    .mediaMedium .Label_base__disabled_df {
+            color: #8C8C7E;
+}
+
+.ChoiceAward_base_0d {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80rem;
+    height: 95rem;
+    isolation: isolate;
+    position: relative;
+    cursor: pointer;
+}
+
+    .mediaMedium .ChoiceAward_base_0d {
+        height: 140rem;
+}
+
+    .ChoiceAward_base__big_ec {
+        width: 100rem;
+        height: 175rem;
+    }
+
+    .mediaMedium .ChoiceAward_base__big_ec {
+            width: 160rem;
+            height: 280rem;
+}
+
+    .ChoiceAward_base__disabled_f1 {
+        cursor: default;
+    }
+
+    .ChoiceAward_base__hasAppearAnimation_a0 {
+        opacity: 0;
+        visibility: hidden;
+        animation: ChoiceAward_baseAppear_89 .3s ease-in-out 1.2s forwards;
+    }
+
+.ChoiceAward_shine_d5 {
+    width: 27rem;
+    height: 48rem;
+    background: url('R.images.gui.maps.icons.battlePass.awards_widget.award_borderShine_small_s') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    animation: ChoiceAward_shine_small_s_f2 2s linear infinite alternate;
+    pointer-events: none;
+}
+
+.mediaMedium .ChoiceAward_shine_d5 {
+        width: 31rem;
+        height: 72rem;
+        background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_borderShine_small_m');
+        animation: ChoiceAward_shine_small_m_de 2s linear infinite alternate;
+}
+
+.ChoiceAward_base__big_ec .ChoiceAward_shine_d5 {
+        width: 45rem;
+        height: 85rem;
+        background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_borderShine_big_s');
+        animation: ChoiceAward_shine_big_s_02 2s linear infinite alternate;
+    }
+
+.mediaMedium .ChoiceAward_base__big_ec .ChoiceAward_shine_d5 {
+            width: 46rem;
+            height: 116rem;
+            background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_borderShine_big_m');
+            animation: ChoiceAward_shine_big_m_ed 2s linear infinite alternate;
+}
+
+.ChoiceAward_shine__left_2e {
+        left: -13rem;
+    }
+
+.mediaMedium .ChoiceAward_shine__left_2e {
+            left: -14rem;
+}
+
+.ChoiceAward_base__big_ec .ChoiceAward_shine__left_2e {
+            left: -21rem;
+        }
+
+.mediaMedium .ChoiceAward_base__big_ec .ChoiceAward_shine__left_2e {
+                left: -22rem;
+}
+
+.ChoiceAward_shine__right_64 {
+        right: -13rem;
+    }
+
+.mediaMedium .ChoiceAward_shine__right_64 {
+            right: -14rem;
+            animation-direction: alternate-reverse;
+}
+
+.ChoiceAward_base__big_ec .ChoiceAward_shine__right_64 {
+            right: -21rem;
+        }
+
+.mediaMedium .ChoiceAward_base__big_ec .ChoiceAward_shine__right_64 {
+                right: -22rem;
+                animation-direction: alternate-reverse;
+}
+
+.ChoiceAward_arrow_30 {
+    width: 68rem;
+    height: 90rem;
+    background: url('R.images.gui.maps.icons.battlePass.awards_widget.award_arrow_small_s') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    transition: all .3s;
+}
+
+.mediaMedium .ChoiceAward_arrow_30 {
+        width: 68rem;
+        height: 90rem;
+        background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_arrow_small_m');
+}
+
+.ChoiceAward_base_0d:hover .ChoiceAward_arrow_30 {
+        opacity: 1;
+        transform: translateY(5rem);
+    }
+
+.ChoiceAward_base__big_ec .ChoiceAward_arrow_30 {
+        width: 86rem;
+        height: 113rem;
+        background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_arrow_big_s');
+        opacity: 0;
+        transition: all .3s;
+    }
+
+.mediaMedium .ChoiceAward_base__big_ec .ChoiceAward_arrow_30 {
+            width: 136rem;
+            height: 180rem;
+            background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_arrow_big_m');
+}
+
+.ChoiceAward_blinkShape_89 {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    mask-image: linear-gradient(180deg, transparent 0%, #000000 50%);
+    pointer-events: none;
+}
+
+.mediaMedium .ChoiceAward_blinkShape_89 {
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+}
+
+.ChoiceAward_base_0d:hover .ChoiceAward_blinkShape_89 {
+        mask-image: none;
+    }
+
+.ChoiceAward_base__big_ec .ChoiceAward_blinkShape_89 {
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+    }
+
+.mediaMedium .ChoiceAward_base__big_ec .ChoiceAward_blinkShape_89 {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+}
+
+.ChoiceAward_blink_f0 {
+    width: 14rem;
+    height: 300rem;
+    background: #fff;
+    filter: blur(8px);
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 99;
+    transform: rotate(45deg) translate(-200rem, 0rem);
+    transform-origin: center;
+    animation: ChoiceAward_blinker_0c 5s linear infinite;
+}
+
+.ChoiceAward_base__big_ec .ChoiceAward_blink_f0 {
+        width: 28rem;
+    }
+
+@keyframes ChoiceAward_baseAppear_89 {
+    0% {
+        opacity: 0;
+        visibility: visible;
+        transform: translateY(-30rem);
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+}
+
+@keyframes ChoiceAward_blinker_0c {
+    0% {
+        transform: rotate(45deg) translate(-200rem, 0rem);
+    }
+
+    30% {
+        transform: rotate(45deg) translate(200rem, 0rem);
+    }
+
+    100% {
+        transform: rotate(45deg) translate(200rem, 0rem);
+    }
+}
+
+@keyframes ChoiceAward_shine_small_s_f2 {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+}
+
+@keyframes ChoiceAward_shine_small_m_de {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(60%);
+    }
+}
+
+@keyframes ChoiceAward_shine_big_s_02 {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(90%);
+    }
+}
+
+@keyframes ChoiceAward_shine_big_m_ed {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(150%);
+    }
+}
+
+.CoinAward_base_75 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80rem;
+    height: 95rem;
+    isolation: isolate;
+    position: relative;
+    cursor: pointer;
+}
+    .mediaMedium .CoinAward_base_75 {
+        height: 140rem;
+}
+    .CoinAward_base__big_1f {
+        width: 100rem;
+        height: 175rem;
+    }
+    .mediaMedium .CoinAward_base__big_1f {
+            width: 160rem;
+            height: 280rem;
+}
+
+.Counter_base_9e {
+    display: flex;
+    min-width: 14rem;
+    height: 14rem;
+    position: relative;
+    z-index: 0;
+    animation: Counter_show_be ease-in-out forwards;
+}
+
+    .Counter_base__big_19 {
+        min-width: 21rem;
+        height: 21rem;
+    }
+
+    .Counter_base__small_3b {
+        min-width: 13rem;
+        height: 13rem;
+    }
+
+    .Counter_base__empty_98 {
+        min-width: 6rem;
+        height: 6rem;
+    }
+
+    .Counter_base__animated_40 {
+        animation-duration: .2s;
+    }
+
+    .Counter_base__hidden_56 {
+        animation-name: Counter_hide_b6;
+    }
+.Counter_bg_74 {
+    border: 1rem solid #fe4e0f;
+    border-radius: 7rem;
+    box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
+            0 0 6rem rgba(254,103,0, .2),
+            0 0 12rem 4rem rgba(249,0,0, .3);
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.Counter_base__big_19 .Counter_bg_74 {
+        border-radius: 11rem;
+    }
+.Counter_base__small_3b .Counter_bg_74 {
+        border-radius: 7rem;
+    }
+.Counter_value_3e {
+    display: flex;
+    padding: 0 4rem;
+    color: #fefeec;
+    font-size: 11rem;
+    line-height: 13rem;
+    white-space: nowrap;
+}
+.Counter_base__big_19 .Counter_value_3e {
+        padding: 0 7rem;
+        font-size: 14rem;
+        line-height: 20rem;
+    }
+.Counter_base__small_3b .Counter_value_3e {
+        font-size: 9rem;
+        line-height: 12rem;
+    }
+.Counter_value__text_d6 {
+        padding: 0 7rem;
+    }
+.Counter_base__big_19 .Counter_value__text_d6 {
+            padding: 0 10rem;
+        }
+.Counter_base__small_3b .Counter_value__text_d6 {
+            padding: 0 5rem;
+            font-size: 10rem;
+        }
+.Counter_base__pattern_71 .Counter_value_3e {
+        display: none;
+    }
+.Counter_plus_15 {
+    position: relative;
+    top: -1rem;
+}
+.Counter_pattern_83 {
+    display: none;
+}
+.Counter_base__pattern_71 .Counter_pattern_83 {
+        display: block;
+        border-radius: 50%;
+        background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+        opacity: .8;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+@keyframes Counter_show_be {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes Counter_hide_b6 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+.CollectionAward_base_0c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80rem;
+    height: 95rem;
+    isolation: isolate;
+    position: relative;
+    cursor: pointer;
+}
+    .mediaMedium .CollectionAward_base_0c {
+        height: 140rem;
+}
+    .CollectionAward_base__big_ca {
+        width: 100rem;
+        height: 175rem;
+    }
+    .mediaMedium .CollectionAward_base__big_ca {
+            width: 160rem;
+            height: 280rem;
+}
+
+.CollectionAward_bubble_65 {
+    position: absolute;
+    top: -5rem;
+    right: -5rem;
+    z-index: 5;
+}
+
+.CommanderAward_base_11 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80rem;
+    height: 95rem;
+    isolation: isolate;
+    position: relative;
+    cursor: pointer;
+}
+    .mediaMedium .CommanderAward_base_11 {
+        height: 140rem;
+}
+    .CommanderAward_base__big_ce {
+        width: 100rem;
+        height: 175rem;
+    }
+    .mediaMedium .CommanderAward_base__big_ce {
+            width: 160rem;
+            height: 280rem;
+}
+
+.CommanderAward_icon_92 {
+    width: 76rem;
+    height: 91rem;
+    border-radius: 3rem;
+    background: url('R.images.gui.maps.icons.battlePass.awards_widget.commander_icon_small') no-repeat center / contain;
+    filter: brightness(.9);
+    position: absolute;
+    top: 2rem;
+    z-index: 4;
+    transition: filter .3s linear;
+}
+
+.CommanderAward_base__hover_fc .CommanderAward_icon_92 {
+        filter: brightness(1.2);
+    }
+
+.CommanderAward_base__big_ce .CommanderAward_icon_92 {
+        width: 96rem;
+        height: 114rem;
+        background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.commander_icon_big');
+        filter: grayscale(20%);
+        top: 9rem;
+        transition: filter .3s linear;
+    }
+
+.mediaMedium .CommanderAward_base__big_ce .CommanderAward_icon_92 {
+            width: 152rem;
+            height: 182rem;
+            top: 14rem;
+}
+
+.CommanderAward_base__hover_fc .CommanderAward_base__big_ce .CommanderAward_icon_92 {
+            filter: grayscale(0%);
+        }
+
+.PointAward_base_6f {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80rem;
+    height: 95rem;
+    isolation: isolate;
+    position: relative;
+    cursor: pointer;
+}
+    .mediaMedium .PointAward_base_6f {
+        height: 140rem;
+}
+    .PointAward_base__big_dc {
+        width: 100rem;
+        height: 175rem;
+    }
+    .mediaMedium .PointAward_base__big_dc {
+            width: 160rem;
+            height: 280rem;
+}
+
+.PointAward_locked_7c,
+.PointAward_lockedHover_80 {
+    width: 24rem;
+    height: 24rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    bottom: 3rem;
+    z-index: 3;
+    transition: opacity .3s linear;
+}
+
+.mediaMedium .PointAward_locked_7c, .mediaMedium .PointAward_lockedHover_80 {
+        bottom: 4rem;
+}
+
+.PointAward_locked__hidden_bb, .PointAward_lockedHover__hidden_17 {
+        display: none;
+    }
+
+.PointAward_base__big_dc .PointAward_locked_7c, .PointAward_base__big_dc .PointAward_lockedHover_80 {
+        width: 32rem;
+        height: 32rem;
+        bottom: 8rem;
+    }
+
+.mediaMedium .PointAward_base__big_dc .PointAward_locked_7c, .mediaMedium .PointAward_base__big_dc .PointAward_lockedHover_80 {
+            width: 48rem;
+            height: 48rem;
+            bottom: 13rem;
+}
+
+.PointAward_base__big_dc .PointAward_locked__hidden_bb, .PointAward_base__big_dc .PointAward_lockedHover__hidden_17 {
+            display: none;
+        }
+
+.PointAward_locked_7c {
+    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_small_s');
+    opacity: 1;
+}
+
+.mediaMedium .PointAward_locked_7c {
+        background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_small_m');
+}
+
+.PointAward_base__big_dc .PointAward_locked_7c {
+        background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_big_s');
+    }
+
+.mediaMedium .PointAward_base__big_dc .PointAward_locked_7c {
+            background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_big_m');
+}
+
+.PointAward_base__hover_50 .PointAward_locked_7c {
+        opacity: 0;
+    }
+
+.PointAward_lockedHover_80 {
+    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_small_s');
+    opacity: 0;
+}
+
+.mediaMedium .PointAward_lockedHover_80 {
+        background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_small_m');
+}
+
+.PointAward_base__big_dc .PointAward_lockedHover_80 {
+        background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_big_s');
+    }
+
+.mediaMedium .PointAward_base__big_dc .PointAward_lockedHover_80 {
+            background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_big_m');
+}
+
+.PointAward_base__hover_50 .PointAward_lockedHover_80 {
+        opacity: 1;
+    }
+
+/* colors*/
+
+/* buttons*/
+
+.AwardsWrapper_base_e5 {
+    display: flex;
+}
+
+.AwardsWrapper_award_49 {
+    margin-right: 3rem;
+}
+
+.mediaSmall .AwardsWrapper_award_49 {
+        margin-right: 10rem;
+}
+
+.mediaMedium .AwardsWrapper_award_49 {
+        margin-right: 20rem;
+}
+
+.AwardsWrapper_award__last_b0 {
+        margin-right: 0;
+    }
+
+.mediaSmallWidth .AwardsWrapper_award__last_b0 {
+            margin-right: 5rem;
+}
+
+.mediaMediumWidth .AwardsWrapper_award__last_b0 {
+            margin-right: 0;
+}
+
+.AwardsWrapper_base__big_6b .AwardsWrapper_award_49 {
+        margin-right: 20rem;
+    }
+
+.mediaMedium .AwardsWrapper_base__big_6b .AwardsWrapper_award_49 {
+            margin-right: 30rem;
+}
+
+.AwardsWrapper_base__big_6b .AwardsWrapper_award__last_b0 {
+        margin-right: 0;
+    }
+
+/* colors*/
+
+/* buttons*/
+
+@keyframes App_fadeOut_dc {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes App_fadeIn_c2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes App_fadeInWithScale_8f {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes App_slideUp_7e {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes App_scale_73 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes App_rotate_8d {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.App_base_9c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #070a0d;
+    overflow: hidden;
+    position: relative;
+}
+
+.App_base__rewardsState_23 {
+        background: #040608;
+    }
+
+.App_background_38 {
+    width: 1766rem;
+    height: 922rem;
+    background: url('R.images.gui.maps.icons.battlePass.post_progression.bg_tank') no-repeat center center / cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+
+.mediaMedium .App_background_38 {
+        width: 2250rem;
+        height: 1174rem;
+        transform: translate(-50%, -54%);
+}
+
+.mediaLarge .App_background_38 {
+        width: 2700rem;
+        height: 1410rem;
+        transform: translate(-50%, -53%);
+}
+
+.mediaExtraLarge .App_background_38 {
+        width: 3640rem;
+        height: 1900rem;
+        transform: translate(-50%, -52.5%);
+}
+
+.App_base__tankmenState_97 .App_background_38 {
+        background-image: url('R.images.gui.maps.icons.battlePass.post_progression.bg');
+    }
+
+.App_base__rewardsState_23 .App_background_38 {
+        filter: blur(5px) brightness(.6);
+    }
+
+.App_additionalAnimation_77 {
+    opacity: 0;
+    animation-name: App_fadeIn_c2;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.App_header_97 {
+    margin-top: 40rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    transition: opacity .3ms;
+}
+
+.mediaLarge .App_header_97 {
+        margin-top: 52rem;
+}
+
+.App_base__rewardsState_23 .App_header_97 {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+.App_awards_e8 {
+    position: absolute;
+    top: -2rem;
+    right: 7rem;
+}
+
+.mediaMedium .App_awards_e8 {
+        right: 16rem;
+}
+
+.mediaLarge .App_awards_e8 {
+        top: -15rem;
+}
+
+.App_footer_d6 {
+    display: none;
+}
+
+.App_base__buyState_97 .App_footer_d6 {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        z-index: 1;
+        transform: translateX(-50%);
+        cursor: default;
+    }
+
+.mediaMedium .App_base__buyState_97 .App_footer_d6 {
+            padding-top: 10rem;
+}
+
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    position: relative;
+    cursor: pointer;
+}
+
+    .CButton_base__main_42,
+    .CButton_base__primary_7f,
+    .CButton_base__primaryGreen_6f,
+    .CButton_base__primaryRed_ec,
+    .CButton_base__secondary_50 {
+        background-size: 100% 100%;
+    }
+
+    .CButton_base__main_42 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+
+    .CButton_base__primary_7f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+
+    .CButton_base__primaryGreen_6f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+
+    .CButton_base__primaryRed_ec {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+
+    .CButton_base__secondary_50 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+
+    .CButton_base__ghost_ed {
+        border-radius: 3rem;
+        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
+            0 0 0 1rem rgba(255,255,255, .15) inset;
+        background-color: rgba(0,0,0, .15);
+    }
+
+    .CButton_base__extraSmall_27 {
+        min-height: 17rem;
+        padding: 0 16rem;
+    }
+
+    .CButton_base__small_df,
+    .CButton_base__medium_74 {
+        padding: 0 20rem;
+    }
+
+    .CButton_base__small_df {
+        min-height: 18rem;
+    }
+
+    .CButton_base__medium_74 {
+        min-height: 32rem;
+    }
+
+    .CButton_base__disabled_d9 {
+        cursor: default;
+    }
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+.CButton_base__primary_7f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+.CButton_base__secondary_50 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow .16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+        border-radius: 2rem;
+        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
+    }
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+        transition: opacity .16s ease-in-out;
+    }
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+        opacity: 1;
+    }
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
+        background-color: rgba(8,6,0, .18);
+        background-image: none;
+    }
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+        opacity: 1;
+    }
+.CButton_stateDisabled_54 {
+    background-color: rgba(0,0,0, .25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+        opacity: 1;
+    }
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: .03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang=ja],
+    .CButton_content_cc[lang=ko],
+    .CButton_content_cc[lang=zh_tw],
+    .CButton_content_cc[lang=zh_sg],
+    .CButton_content_cc[lang=zh_cn],
+    .CButton_content_cc[lang=th] {
+        font-weight: 400;
+    }
+.CButton_base__main_42 .CButton_content_cc,
+    .CButton_base__primaryRed_ec .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #600;
+    }
+.CButton_base__secondary_50 .CButton_content_cc {
+        color: rgba(254,254,236, .75);
+    }
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #1c2502;
+    }
+.CButton_base__extraSmall_27 .CButton_content_cc {
+        font-size: 12rem;
+    }
+.CButton_base__small_df .CButton_content_cc {
+        font-size: 14rem;
+    }
+.CButton_base__medium_74 .CButton_content_cc {
+        font-size: 15rem;
+    }
+.CButton_base__disabled_d9 .CButton_content_cc {
+        opacity: .6;
+    }
+
+.Final_base_12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Final_controls_dd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300rem;
+    height: 130rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mediaSmall .Final_controls_dd {
+        height: 132rem;
+}
+
+.mediaMedium .Final_controls_dd {
+        width: 310rem;
+        height: 145rem;
+}
+
+.mediaLarge .Final_controls_dd {
+        height: 165rem;
+}
+
+.mediaExtraLarge .Final_controls_dd {
+        height: 205rem;
+}
+
+.Final_label_2f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300rem;
+    height: 20rem;
+    position: relative;
+}
+
+.mediaMedium .Final_label_2f {
+        width: 350rem;
+}
+
+.Final_base__finalState_dd .Final_label_2f {
+        transform: translateX(-6rem);
+    }
+
+.Final_text_8c {
+    color: #FFDD99;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.mediaMedium .Final_text_8c {
+        font-size: 20rem;
+}
+
+.Final_buttonWrapper_7d {
+    min-width: 220rem;
+    height: 32rem;
+    margin-top: 20rem;
+}
+
+.mediaSmall .Final_buttonWrapper_7d {
+        margin-top: 22rem;
+}
+
+.mediaMedium .Final_buttonWrapper_7d {
+        margin-top: 28rem;
+}
+
+.Final_base__finalState_dd .Final_buttonWrapper_7d {
+        min-width: 240rem;
+    }
+
+.Final_button_64 {
+    color: #E9E2BF;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    padding: 0 30rem;
+}
+
+.Final_base__finalState_dd .Final_button_64 {
+        padding: 0 20rem;
+    }
+
+.IconButton_base_d0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    height: 60rem;
+    opacity: .7;
+    position: relative;
+    transition: opacity .25s ease-out;
+    cursor: pointer;
+}
+
+    .IconButton_base__hovered_26 {
+        opacity: 1;
+    }
+
+    .IconButton_base__disabled_7d {
+        cursor: auto;
+    }
+.IconButton_icon_26 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: no-repeat center / contain;
+    transition: opacity .25s ease-out;
+    pointer-events: none;
+}
+.IconButton_icon__preview_58 {
+        background-image: url('R.images.gui.maps.icons.library.previewVehicle');
+    }
+.IconButton_icon__compare_4d {
+        background-image: url('R.images.gui.maps.icons.library.compare');
+    }
+.IconButton_base__disabled_7d .IconButton_icon__compare_4d {
+            background-image: url('R.images.gui.maps.icons.library.compareDisabled');
+        }
+.IconButton_icon__small_b8 {
+        width: 70rem;
+        height: 70rem;
+    }
+.IconButton_icon__normal_d3 {
+        width: 100rem;
+        height: 100rem;
+    }
+.IconButton_base__mouseDown_06 .IconButton_icon_26 {
+        opacity: .7;
+    }
+.IconButton_label_73 {
+    color: #FFDD99;
+    font-size: 14rem;
+    line-height: 1.25;
+    text-shadow: 0 0 4rem rgba(255,127,0, .25),
+        0 0 8rem #ff2a00,
+        0 0 12rem #e52;
+    white-space: nowrap;
+    opacity: 0;
+    position: absolute;
+    transform: translateY(-5rem);
+    transition: transform .25s ease-out,
+        opacity .25s ease-out;
+}
+.IconButton_label__small_3a {
+        bottom: -2rem;
+    }
+.IconButton_label__normal_ef {
+        bottom: -8rem;
+    }
+.IconButton_base__visibleLabel_3a .IconButton_label_73,
+    .IconButton_base__hovered_26 .IconButton_label_73 {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+.IconButton_base__disabled_7d .IconButton_label_73 {
+        opacity: 0;
+    }
+
+.Reward_base_ea {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+    .Reward_base__s48x48_46,
+    .Reward_base__small_c0 {
+        width: 48rem;
+        height: 48rem;
+    }
+
+    .Reward_base__s80x80_ce,
+    .Reward_base__big_e5 {
+        width: 80rem;
+        height: 80rem;
+    }
+
+    .Reward_base__s128x100_c3 {
+        width: 128rem;
+        height: 100rem;
+    }
+
+    .Reward_base__s180x135_7c {
+        width: 180rem;
+        height: 135rem;
+    }
+
+    .Reward_base__s232x174_67 {
+        width: 232rem;
+        height: 174rem;
+    }
+
+    .Reward_base__s296x222_78 {
+        width: 296rem;
+        height: 222rem;
+    }
+
+    .Reward_base__s400x300_07 {
+        width: 400rem;
+        height: 300rem;
+    }
+
+    .Reward_base__s600x450_f8 {
+        width: 600rem;
+        height: 450rem;
+    }
+
+.Reward_tooltipWrapper_b5 {
+    height: 100%;
+}
+
+.Reward_icon_df {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.Reward_overlay_68 {
+    background: no-repeat center / 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.Reward_base__s48x48_46 .Reward_overlay_68,
+    .Reward_base__small_c0 .Reward_overlay_68 {
+        width: 96rem;
+        height: 96rem;
+        background-size: 100%;
+        overflow: visible;
+    }
+
+.Reward_base__s80x80_ce .Reward_overlay_68,
+    .Reward_base__big_e5 .Reward_overlay_68 {
+        width: 128rem;
+        height: 128rem;
+    }
+
+.Reward_base__s180x135_7c .Reward_overlay_68 {
+        width: 266rem;
+        height: 241rem;
+    }
+
+.Reward_base__s232x174_67 .Reward_overlay_68 {
+        width: 344rem;
+        height: 312rem;
+    }
+
+.Reward_base__s296x222_78 .Reward_overlay_68 {
+        width: 450rem;
+        height: 408rem;
+    }
+
+.Reward_base__s400x300_07 .Reward_overlay_68 {
+        width: 618rem;
+        height: 590rem;
+    }
+
+.Reward_base__s600x450_f8 .Reward_overlay_68 {
+        width: 670rem;
+        height: 575rem;
+    }
+
+.Reward_highlight_36 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 0;
+}
+
+.Reward_image_89 {
+    position: relative;
+}
+
+.Reward_info_72 {
+    margin-top: -13rem;
+    color: #e9e2bf;
+    font-size: 14rem;
+    line-height: 18rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_info_72,
+    .Reward_base__small_c0 .Reward_info_72 {
+        margin: -10rem -10rem 0;
+    }
+
+.Reward_info__multi_63 {
+        margin-right: 2rem;
+        text-align: right;
+    }
+
+.Reward_base__s48x48_46 .Reward_info__multi_63,
+        .Reward_base__small_c0 .Reward_info__multi_63 {
+            margin-right: 0;
+        }
+
+.Reward_info__credits_ef {
+        color: #CED9D9;
+    }
+
+.Reward_info__gold_36 {
+        color: #FFC363;
+    }
+
+.Reward_info__crystal_36 {
+        color: #C9C9B6;
+    }
+
+.Reward_info__premiumTank_d3 {
+        color: #FFDD99;
+    }
+
+.Reward_timer_d3 {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_timer_d3,
+    .Reward_base__small_c0 .Reward_timer_d3 {
+        width: 23rem;
+        height: 23rem;
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
+        top: -6rem;
+        right: -6rem;
+    }
+
+.Reward_base__s80x80_ce .Reward_timer_d3,
+    .Reward_base__big_e5 .Reward_timer_d3 {
+        width: 48rem;
+        height: 48rem;
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
+        top: -14rem;
+        right: -14rem;
+    }
+
+.AnimatedReward_base_f0 {
+    display: flex;
+    position: relative;
+}
+
+.Divider_divider_81 {
+    width: 200rem;
+    height: 2rem;
+    margin-top: 9rem;
+    background: url('R.images.gui.maps.icons.battlePass.post_progression.headline') no-repeat center / cover;
+    opacity: .5;
+}
+    .mediaMedium .Divider_divider_81 {
+        width: 360rem;
+}
+    .Divider_divider__right_91 {
+        transform: rotate(-180deg);
+    }
+
+.Title_base_0b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+}
+
+.Title_divider_b4 {
+    width: 200rem;
+    height: 2rem;
+    margin-top: 9rem;
+    background: url('R.images.gui.maps.icons.battlePass.post_progression.headline') no-repeat center / cover;
+    opacity: .5;
+}
+
+.mediaMedium .Title_divider_b4 {
+        width: 360rem;
+}
+
+.Title_divider__right_d0 {
+        transform: rotate(-180deg);
+    }
+
+.Title_text_18 {
+    color: #F2F2F7;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 12rem;
+}
+
+.mediaMedium .Title_text_18 {
+        font-size: 28rem;
+}
+
+.Purchase_base_0a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Purchase_content_da {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 888rem;
+    height: 222rem;
+    position: absolute;
+    bottom: 57rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.mediaMedium .Purchase_content_da {
+        width: 904rem;
+        height: 271rem;
+        bottom: 73rem;
+}
+
+.mediaLarge .Purchase_content_da {
+        width: 1200rem;
+        height: 250rem;
+        bottom: 100rem;
+}
+
+.mediaExtraLarge .Purchase_content_da {
+        bottom: 120rem;
+}
+
+.Purchase_preview_0a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100rem;
+    height: 100rem;
+    position: absolute;
+    bottom: 189rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mediaMedium .Purchase_preview_0a {
+        bottom: 254rem;
+}
+
+.mediaLarge .Purchase_preview_0a {
+        bottom: 302rem;
+}
+
+.mediaExtraLarge .Purchase_preview_0a {
+        bottom: 16%;
+}
+
+.Purchase_shadow_45 {
+    width: 888rem;
+    height: 222rem;
+    background: url('R.images.gui.maps.icons.battlePass.post_progression.shadow') no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.mediaMedium .Purchase_shadow_45 {
+        width: 904rem;
+        height: 271rem;
+}
+
+.mediaLarge .Purchase_shadow_45 {
+        width: 1200rem;
+        height: 300rem;
+}
+
+.Purchase_visibleRewards_92 {
+    display: flex;
+    justify-content: center;
+    margin: 10rem 0 0 15rem;
+}
+
+.mediaMedium .Purchase_visibleRewards_92 {
+        margin-left: 20rem;
+}
+
+.Purchase_visibleRewards_92 > div {
+        margin-right: 15rem;
+    }
+
+.mediaMedium .Purchase_visibleRewards_92 > div {
+            margin-right: 20rem;
+}
+
+.Purchase_title_5c {
+    margin: 5rem 0 15rem;
+}
+
+.mediaMedium .Purchase_title_5c {
+        margin-bottom: 16rem;
+}
+
+.mediaLarge .Purchase_title_5c {
+        margin: 10rem 0 22rem;
+}
+
+.mediaExtraLarge .Purchase_title_5c {
+        margin-top: 110rem;
+}
+
+.Purchase_description_fb {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 400rem;
+    height: 36rem;
+    margin-bottom: 9rem;
+    text-align: center;
+}
+
+.mediaMedium .Purchase_description_fb {
+        width: 450rem;
+        margin-bottom: 20rem;
+        font-size: 16rem;
+}
+
+.mediaExtraLarge .Purchase_description_fb {
+        margin-bottom: 32rem;
+}
+
+.Purchase_button_90 {
+    opacity: 0;
+    transition: .4s ease-in opacity;
+    pointer-events: none;
+}
+
+.Purchase_button__active_b8 {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+.Purchase_button__disappearing_13 {
+        opacity: 0;
+        transition-timing-function: ease-out;
+    }
+
+.Purchase_rewardButton_ae {
+    min-width: 140rem;
+    margin-top: 13rem;
+    background: rgba(0, 0, 0, .15);
+    transition-duration: .2s;
+    transition-property: opacity;
+}
+
+.mediaLarge .Purchase_rewardButton_ae {
+        margin-top: 20rem;
+}
+
+.mediaExtraLarge .Purchase_rewardButton_ae {
+        margin-top: 30rem;
+}
+
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .TextButton_base__right_39 {
+        flex-direction: row-reverse;
+    }
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+    .TextButton_icon__forward_59 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.back');
+        transform: translateY(1rem);
+    }
+.TextButton_icon__forward_59 {
+        transform: rotate(180deg) translateY(1rem);
+    }
+.TextButton_icon__close_53 {
+        margin: -1rem 0;
+        background-image: url('R.images.gui.maps.icons.components.text_button.close');
+    }
+.TextButton_icon__info_33 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.info');
+    }
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+    .TextButton_icon__forward_59 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+    }
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+    }
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+    }
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_glow_a4 {
+        opacity: 0;
+    }
+.TextButton_caption_82 {
+    position: relative;
+    transition: color .16s, text-shadow .16s;
+}
+.TextButton_caption__back_b9,
+    .TextButton_caption__forward_4e,
+    .TextButton_caption__close_36 {
+        color: #FFDD99;
+        text-shadow: 0 0 10rem rgba(255,42,0, 1),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4);
+    }
+.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
+            color: #fffa9f;
+        }
+.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
+            color: #FFDD99;
+        }
+.TextButton_caption__info_23 {
+        padding: 0 5rem;
+        color: #CCFFFF;
+        text-shadow: 0 0 12rem rgba(31,68,255, .8),
+            0 0 8rem #00eaff;
+    }
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+            color: #e3ffff;
+            text-shadow: 0 0 12rem rgba(31,68,255, .8),
+                0 0 12rem rgba(0,234,255, 1),
+                0 0 8rem #00eaff;
+        }
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+            color: #CCFFFF;
+            text-shadow: 0 0 12rem rgba(31,68,255, .6),
+                0 0 8rem #00eaff;
+        }
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+        margin-left: 8rem;
+    }
+.TextButton_base__right_39 .TextButton_goto_e7 {
+        margin-right: 8rem;
+    }
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity .16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+        left: -4rem;
+    }
+.TextButton_base__right_39 .TextButton_shine_e2 {
+        right: -4rem;
+        transform: rotate(180deg);
+    }
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_shine_e2 {
+        opacity: 0;
+    }
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #FFFFFF;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #F2F2F7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #FEFEEC;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #E9E2BF;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8C8C7E;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362E;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #FF2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #B70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #FEAB34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #EE7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #FFDD99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #CBAC77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80D43A;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7AB300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #CCFFFF;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09E2FF;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #CED9D9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #FFC363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #C9C9B6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #A29B70;
+}
+
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8C8C7E;
+}
+
+.ChapterBackground_base_fa {
+    background: no-repeat center / cover;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    transition: opacity .2s step-end;
+}
+
+    .ChapterBackground_base__current_7a {
+        opacity: 1;
+        z-index: 1;
+        transition: opacity .2s cubic-bezier(.37, 0, .63, 1);
+    }
+
+.GroupTitle_base_e8 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.GroupTitle_text_b7 {
+    color: #c9c9b6;
+}
+
+.GroupTitle_divider_19 {
+    flex: 1;
+    height: 1rem;
+}
+
+.GroupTitle_divider__left_d2 {
+        background-image: linear-gradient(to left, rgba(255,255,255, .3), transparent);
+    }
+
+.GroupTitle_divider__right_24 {
+        background-image: linear-gradient(to right, rgba(255,255,255, .3), transparent);
+    }
+
+.GroupTitle_inner_f2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20rem;
+    font-size: 16rem;
+    transform: translateY(-2rem);
+}
+
+.GroupTitle_icon_62 {
+    width: 24rem;
+    height: 24rem;
+    background: no-repeat center / contain;
+}
+
+.GroupTitle_base__now_fa .GroupTitle_icon_62 {
+        background-image: url('R.images.gui.maps.icons.battlePass.progression.icon_now_rewards_title');
+    }
+
+.GroupTitle_base__future_42 .GroupTitle_icon_62 {
+        background-image: url('R.images.gui.maps.icons.battlePass.progression.icon_future_rewards_title');
+    }
+
+.GroupTitle_steps_8d {
+    margin-left: 4rem;
+    color: #e9e2bf;
+}
+
+.GroupRewards_base_70 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.GroupRewards_item_af {
+    margin: -10rem 0;
+    padding: 25rem 20rem;
+}
+
+.RewardsBlock_base_0e {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.RewardsBlock_groupTitle_2f {
+    width: 100%;
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+}
+.mediaMedium .RewardsBlock_groupTitle_2f {
+        margin-bottom: 15rem;
+}
+.RewardsBlock_groupRewards_38 {
+    margin-bottom: 10rem;
+}
+.mediaMedium .RewardsBlock_groupRewards_38 {
+        margin-bottom: 15rem;
+}
+.RewardsBlock_groupRewards__future_b9 {
+        opacity: .5;
+    }
+
+.HorizontalBar_base_49 {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+    position: relative;
+}
+
+    .HorizontalBar_base__nonActive_82 {
+        visibility: hidden;
+    }
+
+    .HorizontalBar_base_49 .disable,
+    .HorizontalBar_base_49 .disable:hover {
+        opacity: .3;
+        cursor: default;
+    }
+
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover, .HorizontalBar_rightButton_03:hover {
+        opacity: 1;
+    }
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem 7rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+        opacity: 1;
+    }
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
+        opacity: .7;
+    }
+
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.VerticalBar_base_f3 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+    .VerticalBar_base__nonActive_42 {
+        visibility: hidden;
+    }
+
+    .VerticalBar_base_f3 .disable,
+    .VerticalBar_base_f3 .disable:hover {
+        opacity: .3;
+        cursor: default;
+    }
+
+.VerticalBar_topButton_d7,
+.VerticalBar_bottomButton_06 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_d7:hover, .VerticalBar_bottomButton_06:hover {
+        opacity: 1;
+    }
+
+.VerticalBar_topButton_d7 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_06 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_df {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32 {
+    display: none;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32:hover {
+        opacity: 1;
+    }
+
+.VerticalBar_rail_43 {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_43:hover {
+        opacity: .7;
+    }
+
+
+.VerticalScroll_content_cb {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_f8 {
+    display: flex;
+}
+
+.VerticalScroll_bar_1e {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_af {
+    flex: 1;
+}
+
+.ScrollWithLips_base_69 {
+    position: relative;
+}
+.ScrollWithLips_lip_90 {
+    height: 96rem;
+    background: url('R.images.gui.maps.icons.battlePass.buy.lip') no-repeat center center / cover;
+    position: absolute;
+    right: 50rem;
+    left: 50rem;
+    z-index: 2;
+    pointer-events: none;
+}
+.mediaMedium .ScrollWithLips_lip_90 {
+        height: 112rem;
+        right: 20rem;
+        left: 20rem;
+}
+.mediaLarge .ScrollWithLips_lip_90 {
+        height: 144rem;
+        right: 45rem;
+        left: 45rem;
+}
+.ScrollWithLips_lip__top_ab {
+        top: -1rem;
+        transform: translate(0, -50%);
+    }
+.ScrollWithLips_lip__bottom_17 {
+        bottom: 0;
+        transform: translate(0, 50%) rotate(180deg);
+    }
+.ScrollWithLips_scroll_7e {
+    visibility: hidden;
+}
+.ScrollWithLips_scroll__loaded_b2 {
+        visibility: visible;
+    }
+.ScrollWithLips_topButton_4e {
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.arrow_top') no-repeat center / 7rem 5rem;
+}
+.ScrollWithLips_bottomButton_1e {
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.arrow_down') no-repeat center / 7rem 5rem;
+}
+.ScrollWithLips_track_4f {
+    margin: 0 0 1rem;
+}
+
+.Content_base_94 {
+    display: flex;
+    width: 960rem;
+    max-height: 450rem;
+    margin-top: 70rem;
+    position: relative;
+}
+    .mediaSmall .Content_base_94 {
+        width: 1040rem;
+        max-height: 426rem;
+}
+    .mediaMedium .Content_base_94 {
+        width: 1250rem;
+        max-height: 551rem;
+}
+    .mediaLarge .Content_base_94 {
+        width: 1300rem;
+        max-height: 671rem;
+}
+
+.Content_mainContent_d4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 0 50rem;
+}
+
+.mediaSmall .Content_mainContent_d4 {
+        padding: 0 60rem;
+}
+
+.mediaMedium .Content_mainContent_d4 {
+        padding: 0 20rem;
+}
+
+.mediaLarge .Content_mainContent_d4 {
+        padding: 0 45rem;
+}
+
+/* colors*/
+
+/* buttons*/
+
+@keyframes RewardsViewContent_fadeOut_2c {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes RewardsViewContent_fadeIn_08 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes RewardsViewContent_fadeInWithScale_0f {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes RewardsViewContent_slideUp_ee {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes RewardsViewContent_scale_27 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes RewardsViewContent_rotate_5b {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.RewardsViewContent_base_42 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.RewardsViewContent_content_64 {
+    opacity: 0;
+    animation-name: RewardsViewContent_fadeIn_08;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
+    animation-delay: .2s;
+    animation-iteration-count: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.RewardsViewContent_background_37 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.RewardsViewContent_shadow_2a {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.RewardsViewContent_back_96 {
+    position: absolute;
+    top: 75rem;
+    left: 35rem;
+    z-index: 1;
+}
+
+.RewardsViewContent_header_46 {
+    text-align: center;
+    position: absolute;
+    top: 70rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.RewardsViewContent_title_8d {
+    color: #F2F2F7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 7rem;
+}
+
+.mediaLarge .RewardsViewContent_title_8d {
+        font-size: 24rem;
+}
+
+.RewardsViewContent_subtitle_8d {
+    color: #F2F2F7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 6rem;
+}
+
+.mediaLarge .RewardsViewContent_subtitle_8d {
+        margin-top: 12rem;
+        font-size: 24rem;
+}
+
+.RewardsViewContent_description_2d {
+    color: #F2F2F7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaMedium .RewardsViewContent_description_2d {
+        font-size: 36rem;
+}
+
+.mediaLarge .RewardsViewContent_description_2d {
+        font-size: 56rem;
+}
+
+.RewardsViewContent_footerButton_06 {
+    width: 140rem;
+    margin-top: 25rem;
+}
+
+.mediaMedium .RewardsViewContent_footerButton_06 {
+        width: 160rem;
+        margin-top: 42rem;
+}
+
+.Rewards_full_21 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    animation: Rewards_fade-in_1d .6s;
+}
+
+@keyframes Rewards_fade-in_1d {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.Tankmen_base_93 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Tankmen_image_e9 {
+    width: 962rem;
+    height: 330rem;
+    margin-top: 130rem;
+    background: url('R.images.gui.maps.icons.battlePass.post_progression.tankmen') no-repeat center / contain;
+}
+
+.mediaMedium .Tankmen_image_e9 {
+        width: 1096rem;
+        height: 376rem;
+        margin-top: 125rem;
+}
+
+.mediaLarge .Tankmen_image_e9 {
+        width: 1370rem;
+        height: 470rem;
+        margin-top: 100rem;
+}
+
+.mediaExtraLarge .Tankmen_image_e9 {
+        width: 1650rem;
+        height: 566rem;
+}
+
+.Tankmen_title_f6 {
+    margin-top: -18rem;
+}
+
+.mediaMedium .Tankmen_title_f6 {
+        margin-top: 2rem;
+}
+
+.mediaLarge .Tankmen_title_f6 {
+        margin-top: 5rem;
+}
+
+.mediaExtraLarge .Tankmen_title_f6 {
+        margin-top: 2rem;
+}
+
+.Tankmen_description_9e {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 537rem;
+    margin-top: 12rem;
+    text-align: center;
+}
+
+.mediaMedium .Tankmen_description_9e {
+        width: 569rem;
+        margin-top: 20rem;
+        font-size: 16rem;
+}
+
+.mediaExtraLarge .Tankmen_description_9e {
+        margin-top: 25rem;
+}
+
+.Tankmen_tankmenBtn_dc {
+    margin-top: 15rem;
+}
+
+.mediaMedium .Tankmen_tankmenBtn_dc {
+        margin-top: 25rem;
+}
+
+.Tankmen_button_ce {
+    color: #F2F2F7;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    overflow: hidden;
+}
+
+.Tankmen_blink_ed {
+    display: flex;
+    width: 110rem;
+    height: 107rem;
+    background: url('R.images.gui.maps.icons.battlePass.progression.refl') no-repeat center / contain;
+    opacity: .5;
+    mix-blend-mode: additive;
+    position: absolute;
+    top: -37rem;
+    left: -220rem;
+    animation: Tankmen_move_46 3s ease-out infinite;
+    animation-delay: 2s;
+}
+
+@keyframes Tankmen_move_46 {
+    0% {
+        opacity: .3;
+        left: -220rem;
+    }
+
+    40% {
+        opacity: .3;
+        left: -220rem;
+    }
+
+    75% {
+        opacity: .7;
+        left: 310rem;
+    }
+
+    100% {
+        opacity: .8;
+        left: 310rem;
+    }
+}
+
+.Footer_base_0b {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 13rem;
+    position: relative;
+}
+    .mediaMedium .Footer_base_0b {
+        padding-bottom: 24rem;
+}
+    .mediaLarge .Footer_base_0b {
+        padding-bottom: 46rem;
+}
+
+.Footer_light_6b {
+    display: flex;
+    width: 1200rem;
+    height: 768rem;
+    background: url('R.images.gui.maps.icons.battlePass.post_progression.light_done') no-repeat center / contain;
+    mix-blend-mode: additive;
+    position: absolute;
+    bottom: 10rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    pointer-events: none;
+}
+
+.Footer_buttonWrapper_af {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 240rem;
+}
+
+.Footer_button_70 {
+    overflow: hidden;
+}
+
+.Footer_blink_0a {
+    display: flex;
+    width: 110rem;
+    height: 107rem;
+    background: url('R.images.gui.maps.icons.battlePass.progression.refl') no-repeat center / contain;
+    opacity: .5;
+    mix-blend-mode: additive;
+    position: absolute;
+    top: -37rem;
+    left: -220rem;
+    animation: Footer_move_6c 3s ease-out infinite;
+    animation-delay: 2s;
+}
+
+@keyframes Footer_move_6c {
+    0% {
+        opacity: .3;
+        left: -220rem;
+    }
+
+    40% {
+        opacity: .3;
+        left: -220rem;
+    }
+
+    75% {
+        opacity: .7;
+        left: 310rem;
+    }
+
+    100% {
+        opacity: .8;
+        left: 310rem;
+    }
+}
+
+.Header_base_07 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Header_title_14 {
+    color: #F2F2F7;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.mediaMedium .Header_title_14 {
+        margin-top: 5rem;
+        font-size: 28rem;
+}
+
+.mediaLarge .Header_title_14 {
+        margin-top: 15rem;
+}
+
+.mediaExtraLarge .Header_title_14 {
+        margin-top: 18rem;
+        font-size: 36rem;
+}
+
+.Header_description_c0 {
+    color: #F2F2F7;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.mediaMedium .Header_description_c0 {
+        margin-top: 8rem;
+        font-size: 73rem;
+}
+
+.mediaLarge .Header_description_c0 {
+        margin-top: 6rem;
+}
+
+.mediaExtraLarge .Header_description_c0 {
+        margin-top: 13rem;
+        font-size: 100rem;
+}
+
+.Header_icon_1b {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.battlePass.post_progression.check') no-repeat center / cover;
+    transform: translateY(2rem);
+}
+
+.Header_text_98 {
+    color: #80D43A;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.mediaMedium .Header_text_98 {
+        font-size: 20rem;
+}
+
+.Header_label_b2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300rem;
+    height: 20rem;
+    margin-top: 10rem;
+    position: relative;
+    transform: translateX(-6rem);
+}
+
+.mediaMedium .Header_label_b2 {
+        width: 350rem;
+        margin-top: 16rem;
+}
+
+.Header_greenLight_c1 {
+    width: 244rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.battlePass.post_progression.green_light') no-repeat center / cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+

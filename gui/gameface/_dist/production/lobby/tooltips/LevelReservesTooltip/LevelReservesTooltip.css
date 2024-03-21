@@ -1,0 +1,246 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.atlases.components.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+    .ExtendedText_base__zeroPadding_25 {
+        padding: 0;
+    }
+
+    .ExtendedText_base__isTruncationAvailable_5b {
+        width: 100%;
+    }
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+        opacity: 0;
+    }
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #FF2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #FFFFFF;
+}
+
+.colors_white_45 {
+    color: #F2F2F7;
+}
+
+.colors_whiteOrange_81 {
+    color: #FEFEEC;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #E9E2BF;
+}
+
+.colors_par_5b {
+    color: #8C8C7E;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362E;
+}
+
+.colors_red_79 {
+    color: #FF2717;
+}
+
+.colors_redDark_73 {
+    color: #B70000;
+}
+
+.colors_yellow_76 {
+    color: #FEAB34;
+}
+
+.colors_orange_cd {
+    color: #EE7000;
+}
+
+.colors_cream_0f {
+    color: #FFDD99;
+}
+
+.colors_brown_82 {
+    color: #CBAC77;
+}
+
+.colors_greenBright_68 {
+    color: #80D43A;
+}
+
+.colors_green_fa {
+    color: #7AB300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #CCFFFF;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09E2FF;
+}
+
+.colors_cred_35 {
+    color: #CED9D9;
+}
+
+.colors_gold_c3 {
+    color: #FFC363;
+}
+
+.colors_bond_ce {
+    color: #C9C9B6;
+}
+
+.colors_prom_83 {
+    color: #A29B70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.renderers_word_f3 {
+    white-space: nowrap;
+    overflow-wrap: normal;
+}
+
+.LevelReservesApp_base_b8 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    width: 350rem;
+    height: auto;
+    padding: 16rem 19rem 18rem;
+    border: 1rem solid #3d3b31;
+    border-radius: 2rem;
+    box-shadow: 0 0 8rem #000000,
+    inset 0 0 4rem rgba(61,59,49, .86);
+    background: #070705 linear-gradient(to top, rgba(201,201,182, .05), rgba(201,201,182, 0) 9%, rgba(201,201,182, 0) 89%, rgba(201,201,182, .05));
+}
+
+.LevelReservesApp_title_80 {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 7rem;
+}
+
+.LevelReservesApp_desc_0c {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.LevelReservesApp_container_5c {
+    margin-top: 15rem;
+    background-image: linear-gradient(to right, transparent, rgba(201,201,182, .07) 38%, rgba(201,201,182, .07) 64%, transparent);
+    position: relative;
+}
+
+.LevelReservesApp_divider_ef {
+    height: 1rem;
+    background: url('R.images.frontline.gui.maps.bg.tooltipBorder') no-repeat 50%;
+}
+
+.LevelReservesApp_levelContainer_8a {
+    margin-bottom: 21rem;
+    padding: 17rem 0 1rem;
+}
+
+.LevelReservesApp_levelTitle_eb {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 2rem;
+}
+
+.LevelReservesApp_levelDesc_bf {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.LevelReservesApp_footer_d3 {
+    display: flex;
+    margin-top: 17rem;
+}
+
+.LevelReservesApp_infoIcon_80 {
+    width: 16rem;
+    height: 16rem;
+    margin: 2rem 0 0 -3rem;
+    background: url('R.images.gui.maps.icons.library.InformationIcon') no-repeat center / contain;
+}
+
+.LevelReservesApp_infoLabel_72 {
+    padding-left: 6rem;
+}
+

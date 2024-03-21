@@ -3,17 +3,13 @@
     position: absolute;
 }
 
-.TooltipDecorator_decorator_3d {
-    padding: 4rem 6rem 8rem; /* border offset*/
-    border-image-source: url('R.atlases.components.tooltip_background');
-    border-image-slice: 24 fill;
-    border-image-width: 24rem;
-    position: relative;
-}
-
-.TooltipDecorator_decoratorContent_de {
-    background-color: #000;
-}
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.atlases.components.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
 
 .FormatText_base_d0 {
     display: flex;
@@ -52,7 +48,7 @@
     height: 1rem;
     margin-top: 10rem;
     margin-bottom: 10rem;
-    background: url('R.images.gui.maps.icons.battlePass2020.tooltips.Devider_points') 50% / contain no-repeat;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.Devider_points') 50% / contain no-repeat;
 }
 
 .Footer_container_fa {

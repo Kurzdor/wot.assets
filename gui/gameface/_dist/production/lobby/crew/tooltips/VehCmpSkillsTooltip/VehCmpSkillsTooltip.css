@@ -1,0 +1,303 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.atlases.components.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+    .ExtendedText_base__zeroPadding_25 {
+        padding: 0;
+    }
+
+    .ExtendedText_base__isTruncationAvailable_5b {
+        width: 100%;
+    }
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+        opacity: 0;
+    }
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #FF2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #FFFFFF;
+}
+
+.colors_white_45 {
+    color: #F2F2F7;
+}
+
+.colors_whiteOrange_81 {
+    color: #FEFEEC;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #E9E2BF;
+}
+
+.colors_par_5b {
+    color: #8C8C7E;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362E;
+}
+
+.colors_red_79 {
+    color: #FF2717;
+}
+
+.colors_redDark_73 {
+    color: #B70000;
+}
+
+.colors_yellow_76 {
+    color: #FEAB34;
+}
+
+.colors_orange_cd {
+    color: #EE7000;
+}
+
+.colors_cream_0f {
+    color: #FFDD99;
+}
+
+.colors_brown_82 {
+    color: #CBAC77;
+}
+
+.colors_greenBright_68 {
+    color: #80D43A;
+}
+
+.colors_green_fa {
+    color: #7AB300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #CCFFFF;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09E2FF;
+}
+
+.colors_cred_35 {
+    color: #CED9D9;
+}
+
+.colors_gold_c3 {
+    color: #FFC363;
+}
+
+.colors_bond_ce {
+    color: #C9C9B6;
+}
+
+.colors_prom_83 {
+    color: #A29B70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.renderers_word_f3 {
+    white-space: nowrap;
+    overflow-wrap: normal;
+}
+
+.SkillIcon_base_43 {
+    display: flex;
+    background: no-repeat center / contain;
+    position: relative;
+}
+
+    .SkillIcon_base__small_d0 {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .SkillIcon_base__c_22x22_14 {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    .SkillIcon_base__medium_d0 {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    .SkillIcon_base__c_36x36_flat_7e {
+        width: 36rem;
+        height: 36rem;
+    }
+
+    .SkillIcon_base__big_ae {
+        width: 52rem;
+        height: 52rem;
+    }
+
+    .SkillIcon_base__dialogs_e5 {
+        width: 180rem;
+        height: 135rem;
+    }
+
+.Divided_base_06 {
+    position: relative;
+}
+
+.Divided_divider_64 {
+    width: 360rem;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.tooltip.tooltip_perks_divider') no-repeat center / cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.VehCmpSkillsTooltipApp_base_a2 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 345rem;
+    padding: 14rem 22rem 9rem;
+}
+
+.VehCmpSkillsTooltipApp_header_56 {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 18rem;
+}
+
+.VehCmpSkillsTooltipApp_info_7b {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-bottom: 19rem;
+    position: relative;
+}
+
+.VehCmpSkillsTooltipApp_infoBg_99 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(201,201,182, 0) 0%, #C9C9B6 38%, #C9C9B6 65%, rgba(201,201,182, 0) 100%);
+    opacity: .07;
+    position: absolute;
+    right: -22rem;
+    left: -22rem;
+}
+
+.VehCmpSkillsTooltipApp_infoHeader_b0 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 17rem 0 8rem;
+}
+
+.VehCmpSkillsTooltipApp_percentage_82 {
+    color: #EE7000;
+}
+
+.VehCmpSkillsTooltipApp_bottom_b2 {
+    display: flex;
+    margin-top: 8rem;
+}
+
+.VehCmpSkillsTooltipApp_column_03 {
+    margin-right: 6rem;
+}
+
+.VehCmpSkillsTooltipApp_column__right_e8 {
+        margin-left: 3rem;
+    }
+
+.VehCmpSkillsTooltipApp_row_1f {
+    display: flex;
+    align-items: center;
+    height: 36rem;
+}
+
+.VehCmpSkillsTooltipApp_roleName_58 {
+    margin-left: 11rem;
+}
+
+.VehCmpSkillsTooltipApp_roleIcon_5d {
+    width: 18rem;
+    height: 18rem;
+    background: no-repeat 50% / contain;
+    opacity: .7;
+}
+
+.VehCmpSkillsTooltipApp_skillIcon_82 {
+    width: 16rem;
+    height: 16rem;
+    margin: 0 3rem;
+}
+

@@ -3,21 +3,116 @@
     position: absolute;
 }
 
-.TooltipDecorator_decorator_3d {
-    padding: 4rem 6rem 8rem; /* border offset*/
-    border-image-source: url('R.atlases.components.tooltip_background');
-    border-image-slice: 24 fill;
-    border-image-width: 24rem;
-    position: relative;
-}
-
-.TooltipDecorator_decoratorContent_de {
-    background-color: #000;
-}
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.atlases.components.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
 
 .FormatText_base_d0 {
     display: flex;
     flex-wrap: wrap;
+}
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #FFFFFF;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #F2F2F7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #FEFEEC;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #E9E2BF;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8C8C7E;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362E;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #FF2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #B70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #FEAB34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #EE7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #FFDD99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #CBAC77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80D43A;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7AB300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #CCFFFF;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09E2FF;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #CED9D9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #FFC363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #C9C9B6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #A29B70;
+}
+
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8C8C7E;
 }
 
 .Reward_base_ea {
@@ -306,62 +401,55 @@
         margin: 0 15rem;
     }
 
-.LargeStringFormat_base_35 {
+.App_base_0c {
+    width: 370rem;
+}
+
+.App_header_aa {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    padding: 17rem 21rem 21rem;
 }
 
-.HangarApp_base_3b {
-    width: 372rem;
-    padding: 12rem 20rem;
-}
-
-    .HangarApp_base__large_db {
-        padding-bottom: 32rem;
-    }
-.HangarApp_title_75 {
+.App_title_46 {
     color: #E9E2BF;
-    font-size: 15rem;
+    font-size: 18rem;
     font-weight: 700;
-    line-height: 1.15;
+    line-height: 1.1;
 }
-.HangarApp_title__large_24 {
+
+.App_title__small_da {
         color: #E9E2BF;
-        font-size: 18rem;
+        font-size: 14rem;
         font-weight: 700;
-        line-height: 1.1;
-        margin-bottom: 4rem;
+        line-height: 1.15;
+        margin-top: 12rem;
+        padding: 0 21rem;
     }
-.HangarApp_separator_70 {
-    width: 100%;
-    height: 1rem;
-    margin: 17rem 0 10rem;
-    background: url('R.images.gui.maps.icons.account_completion.separator_dashed') no-repeat 50% / contain;
-}
-.HangarApp_text_e0 {
+
+.App_subtitle_25 {
     color: #8C8C7E;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
-.HangarApp_text__indent_14 {
-        margin-bottom: 12rem;
+
+.App_ribbon_20 {
+    width: 370rem;
+    height: 146rem;
+    background: url('R.images.gui.maps.icons.account_completion.tooltips.ribbon') no-repeat center / cover;
+    position: relative;
+}
+
+.App_rewards_33 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.App_reward_9c + .App_reward_9c {
+        margin-left: 28rem;
     }
-.HangarApp_textName_8f {
-    color: #FEFEEC;
-}
-.HangarApp_textInner_59 {
-    color: #E9E2BF;
-}
-.HangarApp_rewards_91 {
-    margin: 9rem 1rem 0;
-}
-.HangarApp_rewards__indent_d5 {
-        margin-top: 24rem;
-    }
-.HangarApp_rewardsItem_d5 {
-    margin: 0 9rem;
-}
 

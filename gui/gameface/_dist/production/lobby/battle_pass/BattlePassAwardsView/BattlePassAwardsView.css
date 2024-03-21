@@ -570,6 +570,16 @@ body {
     z-index: 4;
 }
 
+.AdditionalRewards_title__updateAnimation_d7, .AdditionalRewards_subtitle__updateAnimation_1a {
+    opacity: 0;
+    animation-name: AdditionalRewards_slideUp_7d;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
+    animation-delay: .8s;
+    animation-iteration-count: 1;
+    }
+
 .AdditionalRewards_subtitle_58 {
     max-width: 730rem;
     margin-top: 96rem;
@@ -1066,22 +1076,31 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Footer_title_79 {
-    color: #8C8C7E;
+    color: #E9E2BF;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
     max-width: 800rem;
     margin-bottom: 30rem;
     text-align: center;
+    opacity: .5;
 }
 
 .Footer_title__highlight_36 {
         color: #E9E2BF;
-        font-size: 24rem;
+        font-size: 20rem;
         font-weight: 400;
         line-height: 1.2;
         max-width: 900rem;
+        opacity: 1;
     }
+
+.mediaMedium .Footer_title__highlight_36 {
+            color: #E9E2BF;
+            font-size: 24rem;
+            font-weight: 400;
+            line-height: 1.2;
+}
 
 .Footer_buttonContainer_64 {
     display: flex;
@@ -1282,59 +1301,46 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         margin-top: -400rem;
 }
 
-.TankName_base_f1 {
+.TankName_base_d5 {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    color: #E9E2BF;
+    line-height: 1.3;
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+    .mediaMedium .TankName_base_d5 {
+        font-size: 18rem;
+}
+    .TankName_base__wide_c6 {
+        color: #E9E2BF;
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+    .mediaMedium .TankName_base__wide_c6 {
+            font-size: 24rem;
 }
 
-    .TankName_base__sizeMedium_3a {
-        color: #FEFEEC;
-        font-size: 24rem;
-        font-weight: 400;
-        line-height: 1.2;
-    }
-
-    .TankName_base__typeWhite_32 {
-        color: #F2F2F7;
-    }
-
-    .TankName_base__typeWhiteSpanish_e2 {
-        color: #E9E2BF;
-    }
-
-.TankName_base__typeColored_bc .TankName_level_bb {
-        color: #E9E2BF;
-    }
-
-.TankName_type_3c {
-    width: 42rem;
-    height: 38rem;
+.TankName_type_4d {
+    width: 56rem;
+    height: 50rem;
     margin: 0 -10rem;
     background: no-repeat center / contain;
-    position: relative;
-    top: -10rem;
 }
 
-.TankName_type__elite_cc {
-        margin: 0 -6rem;
+.TankName_base__wide_c6 .TankName_type_4d {
+        margin: 0 -8rem;
     }
 
-.TankName_base__sizeMedium_3a .TankName_type_3c {
-        width: 83rem;
-        height: 73rem;
-        margin: 0 -23rem;
-        background: no-repeat center / contain;
-        position: relative;
-        top: -18rem;
-    }
-
-.TankName_base__sizeMedium_3a .TankName_type__elite_cc {
-            margin: 0 -16rem;
-        }
-
-.TankName_base__typeColored_bc .TankName_name_56 {
-        color: #8C8C7E;
-    }
+.mediaMedium .TankName_base__wide_c6 .TankName_type_4d {
+            width: 83rem;
+            height: 74rem;
+            margin: 0 -14rem;
+}
 
 .FormatText_base_d0 {
     display: flex;
@@ -1371,6 +1377,18 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .mediaMedium .Title_base__wide_bd .Title_title_20 {
             font-size: 22rem;
 }
+
+.Title_base__credits_d6 .Title_title_20 {
+        color: #CED9D9;
+    }
+
+.Title_base__gold_e5 .Title_title_20 {
+        color: #FFC363;
+    }
+
+.Title_base__crystal_94 .Title_title_20 {
+        color: #C9C9B6;
+    }
 
 .Title_subtitle_47 {
     color: #E9E2BF;
@@ -1500,6 +1518,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         height: 300rem;
 }
 
+.Reward_base__updateAnimation_df .Reward_image_2d {
+    opacity: 0;
+    animation-name: Reward_fadeInWithScale_c5;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    }
+
 .Reward_base__wide_fa .Reward_image_2d {
         width: 400rem;
         height: 300rem;
@@ -1533,6 +1561,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         width: 110%;
 }
 
+.Reward_base__updateAnimation_df .Reward_title_3d {
+    opacity: 0;
+    animation-name: Reward_fadeInWithScale_c5;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    }
+
+.Reward_base__wide_fa .Reward_title_3d {
+        width: 380rem;
+    }
+
 .Reward_count_22 {
     opacity: 0;
     animation-name: Reward_fadeIn_f4;
@@ -1555,10 +1597,135 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         right: 10%;
 }
 
+.Reward_base__updateAnimation_df .Reward_count_22 {
+    opacity: 0;
+    animation-name: Reward_fadeInWithScale_c5;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    }
+
 .Rewards_base_05 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+    .Rewards_base__updateSize_5b {
+        height: 300rem;
+    }
+
+    .mediaMedium .Rewards_base__updateSize_5b {
+            height: 450rem;
+}
+
+/* colors*/
+
+/* buttons*/
+
+@keyframes Ribbon_fadeOut_03 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes Ribbon_fadeIn_2f {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Ribbon_fadeInWithScale_97 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes Ribbon_slideUp_f8 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Ribbon_scale_7e {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes Ribbon_rotate_f6 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.Ribbon_base_e0 {
+    opacity: 0;
+    animation-name: Ribbon_slideUp_f8;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    width: 1366rem;
+    height: 356rem;
+    margin-left: -683rem;
+    background: no-repeat center center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+}
+
+.mediaMedium .Ribbon_base_e0 {
+        width: 1600rem;
+        height: 417rem;
+        margin-left: -800rem;
+        top: 40rem;
+}
+
+.mediaLarge .Ribbon_base_e0 {
+        width: 1920rem;
+        height: 500rem;
+        margin-left: -960rem;
+}
+
+.Ribbon_base__indentWide_6b {
+        top: 60rem;
+    }
+
+.mediaMedium .Ribbon_base__indentWide_6b {
+            top: 120rem;
 }
 
 /* colors*/
@@ -1659,61 +1826,17 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     justify-content: center;
     position: relative;
-    z-index: 0;
 }
 
-.MainRewards_ribbon_db {
-    opacity: 0;
-    animation-name: MainRewards_slideUp_86;
-    animation-duration: .8s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    animation-delay: 1s;
-    animation-iteration-count: 1;
-    width: 1366rem;
-    height: 356rem;
-    margin-left: -683rem;
-    background: url('R.images.gui.maps.icons.battlePass.rewards.ribbon_small') no-repeat center center / contain;
-    opacity: 0;
+.MainRewards_glow_61 {
     position: absolute;
-    top: 10rem;
+    top: 57%;
     left: 50%;
-    z-index: -2;
+    transform: translate(-50%, -50%);
 }
 
-.mediaMedium .MainRewards_ribbon_db {
-        width: 1600rem;
-        height: 417rem;
-        margin-left: -800rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.rewards.ribbon_medium');
-        top: 40rem;
-}
-
-.mediaLarge .MainRewards_ribbon_db {
-        width: 1920rem;
-        height: 500rem;
-        margin-left: -960rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.rewards.ribbon');
-}
-
-.MainRewards_ribbon__indentWide_6c {
-        top: 60rem;
-    }
-
-.mediaMedium .MainRewards_ribbon__indentWide_6c {
-            top: 120rem;
-}
-
-.MainRewards_ribbon__bpBack_93 {
-        background-image: url('R.images.gui.maps.icons.battlePass.rewards.ribbon_with_bp_small');
-    }
-
-.mediaMedium .MainRewards_ribbon__bpBack_93 {
-            background-image: url('R.images.gui.maps.icons.battlePass.rewards.ribbon_with_bp_medium');
-}
-
-.mediaLarge .MainRewards_ribbon__bpBack_93 {
-            background-image: url('R.images.gui.maps.icons.battlePass.rewards.ribbon_with_bp');
+.mediaMedium .MainRewards_glow_61 {
+        top: 50%;
 }
 
 .MainRewards_rays_20 {
@@ -1727,7 +1850,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: absolute;
     top: 60%;
     left: 50%;
-    z-index: -1;
     animation: MainRewards_raysAppearance_42 .8s cubic-bezier(.07, .82, .17, 1) .8s forwards, MainRewards_rotate_ec 120s linear 1.2s infinite forwards;
     pointer-events: none;
 }
@@ -1744,18 +1866,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         height: 1300rem;
         margin-left: -650rem;
         margin-top: -650rem;
-}
-
-.MainRewards_glow_61 {
-    position: absolute;
-    top: 57%;
-    left: 50%;
-    z-index: -3;
-    transform: translate(-50%, -50%);
-}
-
-.mediaMedium .MainRewards_glow_61 {
-        top: 50%;
 }
 
 @keyframes MainRewards_raysAppearance_42 {
@@ -1944,9 +2054,25 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         margin-top: 113rem;
 }
 
+.RewardsApp_additionalRewards__diffTop_ff {
+        margin-top: -19rem;
+    }
+
+.mediaLarge .RewardsApp_additionalRewards__diffTop_ff {
+            margin-top: 35rem;
+}
+
 .RewardsApp_additionalRewards__slideTop_da {
     transform: translateY(calc(var(--banner-height)/-2.5));
     }
+
+.RewardsApp_base__buyWithLevels_ae .RewardsApp_additionalRewards_ba {
+        margin-top: 40rem;
+    }
+
+.mediaLarge .RewardsApp_base__buyWithLevels_ae .RewardsApp_additionalRewards_ba {
+            margin-top: 80rem;
+}
 
 .RewardsApp_additionalRewards__animateSlide_6c {
     transition: transform .3s ease-in-out 0.3s;
@@ -1955,6 +2081,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .mediaLarge .RewardsApp_additionalRewards__indentS_b4 {
             margin-top: 55rem;
 }
+
+.RewardsApp_base__buyWithLevels_ae .RewardsApp_mainRewards_18 {
+        margin-top: 74rem;
+    }
 
 .RewardsApp_mainRewards__slideTop_ed {
     transform: translateY(calc(var(--banner-height)/-2.5));

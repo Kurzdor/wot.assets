@@ -1,0 +1,54 @@
+.AnimationControls_base_c8 {
+    display: flex;
+    align-items: center;
+    height: 74rem;
+    position: absolute;
+    bottom: 0;
+    left: 15rem;
+    z-index: 10;
+}
+.AnimationControls_icon_03 {
+    width: 50rem;
+    height: 50rem;
+    background: url('R.images.event_lootboxes.gui.maps.openBox.icon_hide_video') no-repeat center / 150%;
+    mix-blend-mode: screen;
+    cursor: pointer;
+}
+.AnimationControls_base__disabled_86 .AnimationControls_icon_03 {
+        background-image: url('R.images.event_lootboxes.gui.maps.openBox.icon_show_video');
+    }
+.AnimationControls_glow_f3 {
+    width: 40rem;
+    height: 50rem;
+    background: url('R.images.event_lootboxes.gui.maps.openBox.icon_video_glow') no-repeat center / cover;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 5rem;
+    transform: translateY(-50%);
+    transition: opacity .16s;
+}
+.AnimationControls_base_c8:hover .AnimationControls_glow_f3 {
+        opacity: 1;
+    }
+.AnimationControls_text_95 {
+    color: #FFDD99;
+    font-size: 12rem;
+    line-height: 14rem;
+    text-shadow: 0 0 10rem rgba(255,42,0, 1),
+        0 0 10rem rgba(255,42,0, .4),
+        0 0 10rem rgba(255,42,0, .4),
+        0 0 2rem rgba(255,42,0, .4),
+        0 0 1rem rgba(255,42,0, .4),
+        0 0 2rem rgba(255,42,0, .4),
+        0 0 1rem rgba(255,42,0, .4);
+    transition: color .16s;
+    cursor: pointer;
+}
+.AnimationControls_base_c8:hover .AnimationControls_text_95 {
+        color: #fffa9f;
+    }
+.AnimationControls_base_c8:active .AnimationControls_text_95 {
+        color: #fd9;
+    }
+

@@ -1115,8 +1115,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 100%;
     height: 100%;
     min-height: 710rem;
-    background: url('R.images.gui.maps.icons.currency_reserves.background') center center / cover no-repeat;
+    background: #000 url('R.images.gui.maps.icons.currency_reserves.background') center center / cover no-repeat;
     position: relative;
+}
+
+    .mediaExtraLarge .CurrencyReservesApp_base_3e {
+        background-size: 2560rem 1440rem;
 }
 
 .CurrencyReservesApp_mediaWrapper_45 {

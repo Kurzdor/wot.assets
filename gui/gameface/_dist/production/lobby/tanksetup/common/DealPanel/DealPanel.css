@@ -657,83 +657,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-left: 10rem;
 }
 
-.DealPanel_base_10 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-    .DealPanel_base__tiny_86 {
-        justify-content: center;
-    }
-
-    .DealPanel_base__small_f6,
-    .DealPanel_base__medium_8a {
-        width: 902rem;
-    }
-
-    .DealPanel_base__large_7b,
-    .DealPanel_base__huge_b3 {
-        width: 1102rem;
-    }
-
-    .DealPanel_base__dialog_b4 {
-        flex-direction: column-reverse;
-    }
-.DealPanel_storage_40 {
-    display: flex;
-    align-items: center;
-}
-.DealPanel_storage__medium_fe,
-    .DealPanel_storage__large_1e,
-    .DealPanel_storage__huge_e3 {
-        padding-top: 4rem;
-    }
-.DealPanel_from_70 {
-    color: #8C8C7E;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-right: 3rem;
-}
-.DealPanel_base__dialog_b4 .DealPanel_from_70 {
-        display: block;
-    }
-.DealPanel_plus_b0 {
-    width: 24rem;
-    height: 24rem;
-    margin: 0 3rem;
-    background: url('R.images.gui.maps.icons.tanksetup.hangar.plus') no-repeat center / contain;
-    position: relative;
-    top: 1rem;
-}
-.DealPanel_renewal_a8 {
-    display: flex;
-    position: absolute;
-    top: 8rem;
-    left: 0;
-}
-.DealPanel_renewal__dialog_aa {
-        margin-top: 15rem;
-        position: relative;
-        top: 0;
-    }
-.DealPanel_control_39 {
-    margin-left: 20rem;
-}
-.DealPanel_totalPrice_2d {
-    display: flex;
-    align-items: center;
-    margin-left: 30rem;
-    position: relative;
-    top: -2rem;
-}
-.DealPanel_totalPrice__mixed_fd {
-        margin-left: 0;
-    }
-
 .Currency_base_57 {
     display: flex;
     align-items: center;
@@ -1037,4 +960,81 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
     top: 1rem;
 }
+
+.App_base_44 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+    .App_base__tiny_5e {
+        justify-content: center;
+    }
+
+    .App_base__small_1d,
+    .App_base__medium_2a {
+        width: 902rem;
+    }
+
+    .App_base__large_8d,
+    .App_base__huge_6d {
+        width: 1102rem;
+    }
+
+    .App_base__dialog_fa {
+        flex-direction: column-reverse;
+    }
+.App_storage_d5 {
+    display: flex;
+    align-items: center;
+}
+.App_storage__medium_51,
+    .App_storage__large_8a,
+    .App_storage__huge_b6 {
+        padding-top: 4rem;
+    }
+.App_from_a4 {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-right: 3rem;
+}
+.App_base__dialog_fa .App_from_a4 {
+        display: block;
+    }
+.App_plus_04 {
+    width: 24rem;
+    height: 24rem;
+    margin: 0 3rem;
+    background: url('R.images.gui.maps.icons.tanksetup.hangar.plus') no-repeat center / contain;
+    position: relative;
+    top: 1rem;
+}
+.App_renewal_06 {
+    display: flex;
+    position: absolute;
+    top: 8rem;
+    left: 0;
+}
+.App_renewal__dialog_ba {
+        margin-top: 15rem;
+        position: relative;
+        top: 0;
+    }
+.App_control_fc {
+    margin-left: 20rem;
+}
+.App_totalPrice_87 {
+    display: flex;
+    align-items: center;
+    margin-left: 30rem;
+    position: relative;
+    top: -2rem;
+}
+.App_totalPrice__mixed_cc {
+        margin-left: 0;
+    }
 

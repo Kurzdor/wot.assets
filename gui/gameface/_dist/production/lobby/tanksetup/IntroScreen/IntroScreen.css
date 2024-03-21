@@ -297,11 +297,6 @@
     }
 }
 
-.FormatText_base_d0 {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .SlideContainer_title_a9 {
     color: #F2F2F7;
     font-size: 36rem;
@@ -343,64 +338,6 @@
         padding-left: 5%;
         padding-right: 5%;
     }
-
-.NewDevices_deviceName_d6 {
-    white-space: nowrap;
-}
-
-.NewDevices_highlighted_1a {
-    color: #E9E2BF;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-}
-
-.NewDevices_description_b2 {
-    display: flex;
-    justify-content: center;
-    min-width: 680rem;
-}
-
-.NewDevices_image_28 {
-    width: 960rem;
-    max-width: 100%;
-    height: 460rem;
-    background: url('R.images.gui.maps.icons.tanksetup.introduction.slides.c_1') no-repeat center / contain;
-}
-
-.Category_base_4c {
-    color: #8C8C7E;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    display: flex;
-    align-items: center;
-}
-
-.Category_name_5e {
-    margin-left: -10rem;
-}
-
-.Category_image_c3 {
-    width: 80rem;
-    height: 80rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-.NewCategory_categories_83 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30rem;
-}
-
-.NewCategory_image_8b {
-    width: 960rem;
-    max-width: 100%;
-    height: 280rem;
-    background: url('R.images.gui.maps.icons.tanksetup.introduction.slides.c_2') no-repeat center / contain;
-}
 
 .DeviceCost_row_70 {
     display: flex;
@@ -670,6 +607,69 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .DeviceSlots_button_a2 {
     width: 160rem;
+}
+
+.Category_base_4c {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+}
+
+.Category_name_5e {
+    margin-left: -10rem;
+}
+
+.Category_image_c3 {
+    width: 80rem;
+    height: 80rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.NewCategory_categories_83 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30rem;
+}
+
+.NewCategory_image_8b {
+    width: 960rem;
+    max-width: 100%;
+    height: 280rem;
+    background: url('R.images.gui.maps.icons.tanksetup.introduction.slides.c_2') no-repeat center / contain;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.NewDevices_deviceName_d6 {
+    white-space: nowrap;
+}
+
+.NewDevices_highlighted_1a {
+    color: #E9E2BF;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.NewDevices_description_b2 {
+    display: flex;
+    justify-content: center;
+    min-width: 680rem;
+}
+
+.NewDevices_image_28 {
+    width: 960rem;
+    max-width: 100%;
+    height: 460rem;
+    background: url('R.images.gui.maps.icons.tanksetup.introduction.slides.c_1') no-repeat center / contain;
 }
 
 .IntroScreen_base_c0 {

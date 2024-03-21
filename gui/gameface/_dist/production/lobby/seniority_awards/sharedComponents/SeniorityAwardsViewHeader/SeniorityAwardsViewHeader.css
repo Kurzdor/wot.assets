@@ -1,0 +1,182 @@
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FormatGradientText_gradientBox_c3 {
+    position: relative;
+}
+
+.FormatGradientText_gradientText_39 {
+    color: #f4e58b;
+}
+
+.FormatGradientText_gradientText__copied_f8 {
+        color: #ddab61;
+        position: absolute;
+        mask-image: linear-gradient(transparent, #fff);
+    }
+
+.HeaderButton_base_a0 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HeaderButton_caption_06 {
+    color: #FFFFFF;
+    font-size: 16rem;
+    line-height: 20rem;
+    letter-spacing: 1rem;
+    position: relative;
+}
+
+.HeaderButton_icon_89 {
+    width: 14rem;
+    height: 15rem;
+    margin-left: 7rem;
+    background: no-repeat center / contain url('R.images.gui.maps.icons.library.info_14x15');
+    position: relative;
+}
+
+.SeniorityAwardsViewHeader_base_90 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25rem;
+    position: relative;
+}
+
+.SeniorityAwardsViewHeader_titleBox_0e {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+    position: relative;
+}
+
+.SeniorityAwardsViewHeader_light_6e {
+    width: 950rem;
+    height: 190rem;
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(40,40,67, .5), transparent);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    pointer-events: none;
+}
+
+.mediaSmall .SeniorityAwardsViewHeader_light_6e {
+        width: 1205rem;
+        height: 237rem;
+}
+
+.mediaMedium .SeniorityAwardsViewHeader_light_6e {
+        width: 1165rem;
+        height: 225rem;
+}
+
+.mediaLarge .SeniorityAwardsViewHeader_light_6e {
+        width: 1741rem;
+        height: 285rem;
+}
+
+.mediaExtraLarge .SeniorityAwardsViewHeader_light_6e {
+        width: 2057rem;
+        height: 428rem;
+}
+
+.SeniorityAwardsViewHeader_glow_4c {
+    width: 1274rem;
+    height: 920rem;
+    background: url('R.images.gui.maps.icons.seniorityAwards.pm_light_inprogress') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -415rem);
+    pointer-events: none;
+}
+
+.SeniorityAwardsViewHeader_line_57 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 250rem;
+    height: 1rem;
+    background-image: linear-gradient(90deg, transparent, #fd9);
+}
+
+.mediaSmall .SeniorityAwardsViewHeader_line_57 {
+        width: 300rem;
+}
+
+.mediaLarge .SeniorityAwardsViewHeader_line_57 {
+        width: 493rem;
+}
+
+.SeniorityAwardsViewHeader_line__inverted_23 {
+        transform: rotate(180deg);
+    }
+
+.SeniorityAwardsViewHeader_square_ca {
+    width: 8rem;
+    height: 8rem;
+    background-color: #fd9;
+    transform: rotate(45deg);
+}
+
+.SeniorityAwardsViewHeader_title_f3 {
+    margin: 0 22rem;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1.5rem;
+    position: relative;
+}
+
+.mediaLarge .SeniorityAwardsViewHeader_title_f3 {
+        font-size: 36rem;
+}
+
+.SeniorityAwardsViewHeader_gradientText_2f {
+    color: #f4e58b;
+}
+
+.SeniorityAwardsViewHeader_gradientText__copied_1e {
+        color: #ddab61;
+        position: absolute;
+        mask-image: linear-gradient(transparent, #fff);
+    }
+
+.SeniorityAwardsViewHeader_subTitleBox_57 {
+    color: #F2F2F7;
+    font-size: 45rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 1.5rem;
+    position: relative;
+}
+
+.mediaLarge .SeniorityAwardsViewHeader_subTitleBox_57 {
+        font-size: 73rem;
+}
+
+.mediaExtraLarge .SeniorityAwardsViewHeader_subTitleBox_57 {
+        font-size: 100rem;
+}
+
+.SeniorityAwardsViewHeader_subTitle_27 {
+    justify-content: center;
+}
+
+.SeniorityAwardsViewHeader_headerButton_50 {
+    margin-top: 7rem;
+}
+
+.mediaLarge .SeniorityAwardsViewHeader_headerButton_50 {
+        margin-top: 13rem;
+}
+

@@ -1,0 +1,1775 @@
+.SceneWrapper_base_99 {
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+}
+
+    .SceneWrapper_base__down_65 {
+        cursor: all-scroll;
+    }
+
+    .SceneWrapper_base__moveSpaceDisabled_fe {
+        cursor: auto;
+    }
+
+.Spinner_base_87 {
+    width: 260rem;
+    height: 260rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.Spinner_caption_cf {
+    color: #8C8C7E;
+    font-size: 12rem;
+    text-align: center;
+    white-space: pre;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translateY(48rem);
+}
+
+.Spinner_gear_c4 {
+    width: 260rem;
+    height: 260rem;
+    margin-top: 2rem;
+    background: url('R.images.gui.maps.icons.components.spinner.spinner') 0 0;
+    background-size: 260rem 520rem;
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    animation: Spinner_spin_f5 .28s linear infinite;
+}
+
+.Spinner_logo_bf {
+    width: 260rem;
+    height: 260rem;
+    background: url('R.images.gui.maps.icons.components.spinner.spinner') 0 -260rem no-repeat;
+    background-size: 260rem 520rem;
+    position: absolute;
+    top: -4rem;
+    left: 0;
+}
+
+@keyframes Spinner_spin_f5 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .TextButton_base__right_39 {
+        flex-direction: row-reverse;
+    }
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+    .TextButton_icon__forward_59 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.back');
+        transform: translateY(1rem);
+    }
+.TextButton_icon__forward_59 {
+        transform: rotate(180deg) translateY(1rem);
+    }
+.TextButton_icon__close_53 {
+        margin: -1rem 0;
+        background-image: url('R.images.gui.maps.icons.components.text_button.close');
+    }
+.TextButton_icon__info_33 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.info');
+    }
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+    .TextButton_icon__forward_59 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+    }
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+    }
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+    }
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_glow_a4 {
+        opacity: 0;
+    }
+.TextButton_caption_82 {
+    position: relative;
+    transition: color .16s, text-shadow .16s;
+}
+.TextButton_caption__back_b9,
+    .TextButton_caption__forward_4e,
+    .TextButton_caption__close_36 {
+        color: #FFDD99;
+        text-shadow: 0 0 10rem rgba(255,42,0, 1),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4);
+    }
+.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
+            color: #fffa9f;
+        }
+.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
+            color: #FFDD99;
+        }
+.TextButton_caption__info_23 {
+        padding: 0 5rem;
+        color: #CCFFFF;
+        text-shadow: 0 0 12rem rgba(31,68,255, .8),
+            0 0 8rem #00eaff;
+    }
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+            color: #e3ffff;
+            text-shadow: 0 0 12rem rgba(31,68,255, .8),
+                0 0 12rem rgba(0,234,255, 1),
+                0 0 8rem #00eaff;
+        }
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+            color: #CCFFFF;
+            text-shadow: 0 0 12rem rgba(31,68,255, .6),
+                0 0 8rem #00eaff;
+        }
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+        margin-left: 8rem;
+    }
+.TextButton_base__right_39 .TextButton_goto_e7 {
+        margin-right: 8rem;
+    }
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity .16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+        left: -4rem;
+    }
+.TextButton_base__right_39 .TextButton_shine_e2 {
+        right: -4rem;
+        transform: rotate(180deg);
+    }
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_shine_e2 {
+        opacity: 0;
+    }
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+.page_heading_05 {
+    padding-top: 54rem;
+}
+.mediaMedium .page_heading_05 {
+        padding-top: 63rem;
+        padding-bottom: 9rem;
+}
+.page_close_a4 {
+    position: absolute;
+    top: 54rem;
+    right: 29rem;
+}
+.mediaMedium .page_close_a4 {
+        top: 63rem;
+}
+.mediaLarge .page_close_a4 {
+        right: 40rem;
+}
+
+.Reward_base_ea {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+    .Reward_base__s48x48_46,
+    .Reward_base__small_c0 {
+        width: 48rem;
+        height: 48rem;
+    }
+
+    .Reward_base__s80x80_ce,
+    .Reward_base__big_e5 {
+        width: 80rem;
+        height: 80rem;
+    }
+
+    .Reward_base__s128x100_c3 {
+        width: 128rem;
+        height: 100rem;
+    }
+
+    .Reward_base__s180x135_7c {
+        width: 180rem;
+        height: 135rem;
+    }
+
+    .Reward_base__s232x174_67 {
+        width: 232rem;
+        height: 174rem;
+    }
+
+    .Reward_base__s296x222_78 {
+        width: 296rem;
+        height: 222rem;
+    }
+
+    .Reward_base__s400x300_07 {
+        width: 400rem;
+        height: 300rem;
+    }
+
+    .Reward_base__s600x450_f8 {
+        width: 600rem;
+        height: 450rem;
+    }
+
+.Reward_tooltipWrapper_b5 {
+    height: 100%;
+}
+
+.Reward_icon_df {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.Reward_overlay_68 {
+    background: no-repeat center / 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.Reward_base__s48x48_46 .Reward_overlay_68,
+    .Reward_base__small_c0 .Reward_overlay_68 {
+        width: 96rem;
+        height: 96rem;
+        background-size: 100%;
+        overflow: visible;
+    }
+
+.Reward_base__s80x80_ce .Reward_overlay_68,
+    .Reward_base__big_e5 .Reward_overlay_68 {
+        width: 128rem;
+        height: 128rem;
+    }
+
+.Reward_base__s180x135_7c .Reward_overlay_68 {
+        width: 266rem;
+        height: 241rem;
+    }
+
+.Reward_base__s232x174_67 .Reward_overlay_68 {
+        width: 344rem;
+        height: 312rem;
+    }
+
+.Reward_base__s296x222_78 .Reward_overlay_68 {
+        width: 450rem;
+        height: 408rem;
+    }
+
+.Reward_base__s400x300_07 .Reward_overlay_68 {
+        width: 618rem;
+        height: 590rem;
+    }
+
+.Reward_base__s600x450_f8 .Reward_overlay_68 {
+        width: 670rem;
+        height: 575rem;
+    }
+
+.Reward_highlight_36 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 0;
+}
+
+.Reward_image_89 {
+    position: relative;
+}
+
+.Reward_info_72 {
+    margin-top: -13rem;
+    color: #e9e2bf;
+    font-size: 14rem;
+    line-height: 18rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_info_72,
+    .Reward_base__small_c0 .Reward_info_72 {
+        margin: -10rem -10rem 0;
+    }
+
+.Reward_info__multi_63 {
+        margin-right: 2rem;
+        text-align: right;
+    }
+
+.Reward_base__s48x48_46 .Reward_info__multi_63,
+        .Reward_base__small_c0 .Reward_info__multi_63 {
+            margin-right: 0;
+        }
+
+.Reward_info__credits_ef {
+        color: #CED9D9;
+    }
+
+.Reward_info__gold_36 {
+        color: #FFC363;
+    }
+
+.Reward_info__crystal_36 {
+        color: #C9C9B6;
+    }
+
+.Reward_info__premiumTank_d3 {
+        color: #FFDD99;
+    }
+
+.Reward_timer_d3 {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_timer_d3,
+    .Reward_base__small_c0 .Reward_timer_d3 {
+        width: 23rem;
+        height: 23rem;
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
+        top: -6rem;
+        right: -6rem;
+    }
+
+.Reward_base__s80x80_ce .Reward_timer_d3,
+    .Reward_base__big_e5 .Reward_timer_d3 {
+        width: 48rem;
+        height: 48rem;
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
+        top: -14rem;
+        right: -14rem;
+    }
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+@keyframes Highlight_fadeIn_e9 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Highlight_fadeInThreeQuarters_2e {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+@keyframes Highlight_fadeInHalf_0c {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+@keyframes Highlight_fadeOut_85 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes Highlight_fadeInWithScale_26 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes Highlight_slideUp_72 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Highlight_scale_e8 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes Highlight_raysAppearance_ec {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+@keyframes Highlight_rotate_21 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes Highlight_reverse-rotate_9c {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes Highlight_glowAppearance_5a {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Highlight_highlightAppearance_f2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+@keyframes Highlight_blink_6f {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Highlight_slideUpIn_9e {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.Highlight_base_13 {
+    display: flex;
+    width: 900rem;
+    height: 900rem;
+    position: relative;
+    pointer-events: none;
+}
+.mediaMedium .Highlight_base_13 {
+        width: 1300rem;
+        height: 1300rem;
+}
+.mediaExtraLarge .Highlight_base_13 {
+        width: 1400rem;
+        height: 1400rem;
+}
+.Highlight_rays_17 {
+    opacity: 0;
+    animation-name: Highlight_raysAppearance_ec, Highlight_rotate_21;
+    animation-duration: 1.5s, 120s;
+    animation-fill-mode: forwards, forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .17, 1), linear;
+    animation-delay: .8s, 1.2s;
+    animation-iteration-count: 1, infinite;
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.comp7.rewards.rays') no-repeat center / contain;
+    position: absolute;
+}
+.Highlight_highlight_f7 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.AnimatedReward_base_74 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.AnimatedReward_highlight_cb {
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+.AnimatedReward_highlight__visible_f6 {
+        opacity: 1;
+        transition: opacity .5s ease-in .4s;
+    }
+
+.AnimatedReward_reward_ea {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.mediaMedium .AnimatedReward_reward_ea {
+        transform: translate(-50%, -60%);
+}
+
+.AnimatedReward_reward__success_f2 {
+        transform: translate(-50%, -50%);
+        transition: transform .3s ease-in;
+    }
+
+.mediaMedium .AnimatedReward_reward__success_f2 {
+            transform: translate(-50%, -50%);
+}
+
+.App_base_a4 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.comp7.backgrounds.purchase_vignette') no-repeat center / cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.App_rewardWrapper_a5,
+.App_sceneWrapper_83 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.App_sceneWrapper_83 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.App_content_87 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    pointer-events: none;
+}
+
+.App_waiting_96 {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(15, 13, 13, .8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    position: relative;
+    cursor: pointer;
+}
+
+    .CButton_base__main_42,
+    .CButton_base__primary_7f,
+    .CButton_base__primaryGreen_6f,
+    .CButton_base__primaryRed_ec,
+    .CButton_base__secondary_50 {
+        background-size: 100% 100%;
+    }
+
+    .CButton_base__main_42 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+
+    .CButton_base__primary_7f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+
+    .CButton_base__primaryGreen_6f {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+
+    .CButton_base__primaryRed_ec {
+        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+
+    .CButton_base__secondary_50 {
+        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+
+    .CButton_base__ghost_ed {
+        border-radius: 3rem;
+        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
+            0 0 0 1rem rgba(255,255,255, .15) inset;
+        background-color: rgba(0,0,0, .15);
+    }
+
+    .CButton_base__extraSmall_27 {
+        min-height: 17rem;
+        padding: 0 16rem;
+    }
+
+    .CButton_base__small_df,
+    .CButton_base__medium_74 {
+        padding: 0 20rem;
+    }
+
+    .CButton_base__small_df {
+        min-height: 18rem;
+    }
+
+    .CButton_base__medium_74 {
+        min-height: 32rem;
+    }
+
+    .CButton_base__disabled_d9 {
+        cursor: default;
+    }
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+    }
+.CButton_base__primary_7f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+    }
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+    }
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+    }
+.CButton_base__secondary_50 .CButton_back_e5 {
+        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+    }
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow .16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+        border-radius: 2rem;
+        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
+    }
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+        transition: opacity .16s ease-in-out;
+    }
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+        opacity: 1;
+    }
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+        opacity: 0;
+    }
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
+        background-color: rgba(8,6,0, .18);
+        background-image: none;
+    }
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+        opacity: 1;
+    }
+.CButton_stateDisabled_54 {
+    background-color: rgba(0,0,0, .25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+        opacity: 1;
+    }
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: .03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang=ja],
+    .CButton_content_cc[lang=ko],
+    .CButton_content_cc[lang=zh_tw],
+    .CButton_content_cc[lang=zh_sg],
+    .CButton_content_cc[lang=zh_cn],
+    .CButton_content_cc[lang=th] {
+        font-weight: 400;
+    }
+.CButton_base__main_42 .CButton_content_cc,
+    .CButton_base__primaryRed_ec .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #600;
+    }
+.CButton_base__secondary_50 .CButton_content_cc {
+        color: rgba(254,254,236, .75);
+    }
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+        text-shadow: 0 -1rem 1rem #1c2502;
+    }
+.CButton_base__extraSmall_27 .CButton_content_cc {
+        font-size: 12rem;
+    }
+.CButton_base__small_df .CButton_content_cc {
+        font-size: 14rem;
+    }
+.CButton_base__medium_74 .CButton_content_cc {
+        font-size: 15rem;
+    }
+.CButton_base__disabled_d9 .CButton_content_cc {
+        opacity: .6;
+    }
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.VehicleName_base_3b {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    position: relative;
+}
+
+    .VehicleName_base__24x24_a7,
+    .VehicleName_base__24x24_metal_92 {
+        font-size: 14rem;
+    }
+
+    .VehicleName_base__48x48_6a {
+        font-size: 22rem;
+        font-weight: 700;
+    }
+
+    .VehicleName_base__64x64_d2 {
+        font-size: 22rem;
+        font-weight: 700;
+    }
+
+    .VehicleName_base__83x74_ba {
+        font-size: 24rem;
+        font-weight: 700;
+    }
+
+.VehicleName_vehicleTypeContainer_f2 {
+    position: relative;
+}
+
+.VehicleName_base__24x24_a7 .VehicleName_vehicleTypeContainer_f2,
+    .VehicleName_base__24x24_metal_92 .VehicleName_vehicleTypeContainer_f2 {
+        width: 24rem;
+    }
+
+.VehicleName_base__48x48_6a .VehicleName_vehicleTypeContainer_f2 {
+        width: 48rem;
+    }
+
+.VehicleName_base__60x54_08 .VehicleName_vehicleTypeContainer_f2 {
+        width: 40rem;
+    }
+
+.VehicleName_base__64x64_d2 .VehicleName_vehicleTypeContainer_f2 {
+        width: 64rem;
+    }
+
+.VehicleName_base__83x74_ba .VehicleName_vehicleTypeContainer_f2 {
+        width: 55rem;
+    }
+
+.VehicleName_vehicleType_c3 {
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.VehicleName_base__24x24_a7 .VehicleName_vehicleType_c3,
+    .VehicleName_base__24x24_metal_92 .VehicleName_vehicleType_c3 {
+        width: 24rem;
+        height: 24rem;
+    }
+
+.VehicleName_base__48x48_6a .VehicleName_vehicleType_c3 {
+        width: 48rem;
+        height: 48rem;
+    }
+
+.VehicleName_base__60x54_08 .VehicleName_vehicleType_c3 {
+        width: 60rem;
+        height: 54rem;
+    }
+
+.VehicleName_base__64x64_d2 .VehicleName_vehicleType_c3 {
+        width: 64rem;
+        height: 64rem;
+    }
+
+.VehicleName_base__83x74_ba .VehicleName_vehicleType_c3 {
+        width: 83rem;
+        height: 74rem;
+    }
+
+.Content_subtitle_87 {
+    color: #FFFFFF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 10rem;
+    text-align: center;
+}
+    .mediaMedium .Content_subtitle_87 {
+        font-size: 24rem;
+}
+
+.Content_wrapper_23 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.Content_vehicleType_99 {
+    margin-top: 2rem;
+}
+
+.Congratulation_base_d4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Congratulation_heading_ee {
+    color: #FFFFFF;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaMedium .Congratulation_heading_ee {
+        font-size: 56rem;
+}
+
+.Congratulation_footer_1c {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    width: 720rem;
+}
+
+.Congratulation_timer_9b {
+    width: 32rem;
+    height: 32rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.timer_48x48') no-repeat center / cover;
+    transform: translate(2rem, -6rem);
+}
+
+.mediaMedium .Congratulation_timer_9b {
+        transform: translate(2rem, -5rem);
+}
+
+.Congratulation_description_ed {
+    color: #FFDD99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    text-shadow: 0 0 14rem #f00;
+}
+
+.mediaMedium .Congratulation_description_ed {
+        font-size: 16rem;
+}
+
+.Congratulation_separator_a6 {
+    width: 100%;
+    height: 1rem;
+    margin: 8rem 0 25rem;
+    background-color: #FFFFFF;
+    opacity: .1;
+}
+
+.Congratulation_buttonWrapper_a4 {
+    margin-bottom: 50rem;
+}
+
+.mediaMedium .Congratulation_buttonWrapper_a4 {
+        margin-bottom: 80rem;
+}
+
+.mediaLarge .Congratulation_buttonWrapper_a4 {
+        margin-bottom: 100rem;
+}
+
+.mediaExtraLarge .Congratulation_buttonWrapper_a4 {
+        margin-bottom: 120rem;
+}
+
+.Congratulation_button_2b {
+    min-width: 165rem;
+    min-height: 24rem;
+    pointer-events: auto;
+}
+
+.mediaMedium .Congratulation_button_2b {
+        min-height: 32rem;
+}
+
+.Error_base_00 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Error_content_46 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 720rem;
+}
+
+.Error_icon_cf {
+    width: 784rem;
+    height: 784rem;
+    margin: -335rem 0;
+    background: url('R.images.gui.maps.icons.comp7.icons.error') no-repeat center / cover;
+}
+
+.Error_title_0e {
+    color: #FFFFFF;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    justify-content: center;
+}
+
+.Error_description_d4 {
+    color: rgba(201, 201, 182, 1);
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-top: 10rem;
+}
+
+.Error_separator_4e {
+    width: 100%;
+    height: 1rem;
+    margin: 31rem 0;
+    background-color: #FFFFFF;
+    opacity: .1;
+}
+
+.Error_button_7d {
+    min-width: 165rem;
+    pointer-events: auto;
+}
+
+.Currency_base_57 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.Currency_icon_c5 {
+    --icon-height: 16rem;
+    --icon-width: var(--icon-height);
+    width: var(--icon-width);
+    height: var(--icon-height);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+.Currency_base__small_af .Currency_icon_c5,
+    .Currency_base__big_bc .Currency_icon_c5,
+    .Currency_base__large_65 .Currency_icon_c5,
+    .Currency_base__extraLarge_4d .Currency_icon_c5 {
+        transform: translateY(3rem);
+    }
+.Currency_icon__credits-small_9b {
+        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
+    }
+.Currency_icon__credits-big_96 {
+        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
+    }
+.Currency_icon__credits-large_ac {
+        --icon-height: 48rem;
+        margin-left: -1rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_silver');
+    }
+.Currency_base__large_65 .Currency_icon__credits-large_ac {
+            transform: translateY(4rem);
+        }
+.Currency_icon__credits-extraLarge_16 {
+        --icon-height: 80rem;
+        margin-right: -2rem;
+        background-image: url('R.images.gui.maps.icons.library.credits_icon_80x80');
+    }
+.Currency_icon__gold-small_86 {
+        background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
+    }
+.Currency_base__small_af .Currency_icon__gold-small_86 {
+            transform: translateY(2rem);
+        }
+.Currency_icon__gold-big_15 {
+        background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
+    }
+.Currency_base__big_bc .Currency_icon__gold-big_15 {
+            transform: translateY(4rem);
+        }
+.Currency_icon__gold-large_36 {
+        --icon-height: 48rem;
+        margin-left: -1rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_gold');
+    }
+.Currency_base__large_65 .Currency_icon__gold-large_36 {
+            transform: translateY(4rem);
+        }
+.Currency_icon__gold-extraLarge_a0 {
+        --icon-height: 80rem;
+        background-image: url('R.images.gui.maps.icons.library.gold_icon_80x80');
+    }
+.Currency_icon__crystal-small_27 {
+        background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
+    }
+.Currency_base__small_af .Currency_icon__crystal-small_27 {
+            transform: translateY(2rem);
+        }
+.Currency_icon__crystal-big_cd {
+        --icon-height: 22rem;
+        --icon-width: 23rem;
+        background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
+    }
+.Currency_base__big_bc .Currency_icon__crystal-big_cd {
+            transform: translateY(4rem);
+        }
+.Currency_icon__crystal-large_d3 {
+        --icon-height: 48rem;
+        margin-left: -1rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_bonds');
+    }
+.Currency_icon__crystal-extraLarge_09 {
+        --icon-height: 80rem;
+        background-image: url('R.images.gui.maps.icons.library.crystal_80x80');
+    }
+.Currency_base__extraLarge_4d .Currency_icon__crystal-extraLarge_09 {
+            transform: translateY(7rem);
+        }
+.Currency_icon__xp-small_a7 {
+        background-image: url('R.images.gui.maps.icons.library.NormalXpIcon');
+    }
+.Currency_base__small_af .Currency_icon__xp-small_a7 {
+            transform: translateY(1rem);
+        }
+.Currency_icon__xp-big_97 {
+        --icon-height: 22rem;
+        --icon-width: 23rem;
+        margin-left: -5rem;
+        background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
+    }
+.Currency_base__big_bc .Currency_icon__xp-big_97 {
+            transform: translateY(2rem);
+        }
+.Currency_icon__xp-large_6b {
+        --icon-height: 48rem;
+        margin: 0 -5rem 0 -6rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.exp');
+    }
+.Currency_icon__xp-extraLarge_67 {
+        --icon-height: 80rem;
+        margin: 0 -5rem;
+        background-image: url('R.images.gui.maps.icons.library.xp_tank_icon_80x80');
+    }
+.Currency_icon__freeXP-small_ca {
+        background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
+    }
+.Currency_base__small_af .Currency_icon__freeXP-small_ca {
+            transform: translateY(1rem);
+        }
+.Currency_icon__freeXP-big_21 {
+        --icon-height: 24rem;
+        margin-left: -5rem;
+        background-image: url('R.images.gui.maps.icons.library.freeXPIconBig24x24');
+    }
+.Currency_icon__freeXP-large_c8 {
+        --icon-height: 48rem;
+        margin: 0 -5rem 0 -6rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.freeExp');
+    }
+.Currency_icon__freeXP-extraLarge_58 {
+        --icon-height: 80rem;
+        margin: 0 -5rem;
+        background-image: url('R.images.gui.maps.icons.library.free_xp_icon_80x80');
+    }
+.Currency_base__extraLarge_4d .Currency_icon__freeXP-extraLarge_58 {
+            transform: translateY(4rem);
+        }
+.Currency_icon__equipCoin-small_32 {
+        --icon-height: 16rem;
+        margin-right: -2rem;
+        background-image: url('R.images.gui.maps.icons.library.equipCoin_1');
+    }
+.Currency_base__small_af .Currency_icon__equipCoin-small_32 {
+            transform: translateX(-1rem) translateY(1rem);
+        }
+.Currency_icon__equipCoin-big_79 {
+        --icon-height: 24rem;
+        background-image: url('R.images.gui.maps.icons.library.equipCoinBig');
+    }
+.Currency_base__big_bc .Currency_icon__equipCoin-big_79 {
+            transform: translateX(-5rem) translateY(3rem);
+        }
+.Currency_icon__equipCoin-large_2c {
+        --icon-height: 48rem;
+        margin-right: 2rem;
+        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.equipCoin');
+    }
+.Currency_icon__equipCoin-extraLarge_8a {
+        --icon-height: 80rem;
+        margin-right: 8rem;
+        background-image: url('R.images.gui.maps.icons.library.equipCoin_icon_80x80');
+    }
+.Currency_base__extraLarge_4d .Currency_icon__equipCoin-extraLarge_8a {
+            transform: translateX(2rem) translateY(4rem);
+        }
+.Currency_value_e1 {
+    /* font-size inherit does not work here, so 1em means the size does not change */
+    /* stylelint-disable-next-line */
+    --font-size: 1em;
+    font-size: var(--font-size);
+    position: relative;
+    z-index: 2;
+}
+.Currency_base__small_af .Currency_value_e1 {
+        padding-right: 2rem;
+    }
+.Currency_base__big_bc .Currency_value_e1 {
+        --font-size: 24rem;
+        padding-right: 5rem;
+        font-weight: 700;
+    }
+.Currency_base__big_bc .Currency_value_e1 + .Currency_icon_c5 {
+            font-size: 24rem;
+        }
+.Currency_base__large_65 .Currency_value_e1 {
+        --font-size: 36rem;
+        font-weight: 700;
+    }
+.Currency_base__large_65 .Currency_value_e1 + .Currency_icon_c5 {
+            font-size: 36rem;
+        }
+.Currency_base__extraLarge_4d .Currency_value_e1 {
+        --font-size: 56rem;
+        font-weight: 700;
+    }
+.Currency_value__freeXP_cb {
+        color: #F2F2F7;
+    }
+.Currency_value__credits_76 {
+        color: #CED9D9;
+    }
+.Currency_value__gold_dd {
+        color: #FFC363;
+    }
+.Currency_value__xp_b0,
+    .Currency_value__crystal_19,
+    .Currency_value__equipCoin_d0 {
+        color: #C9C9B6;
+    }
+.Currency_base__small_af .Currency_value__notEnough_56 {
+            color: #FF2717;
+        }
+.Currency_base__big_bc .Currency_value__notEnough_56 {
+            color: #B70000;
+        }
+.Currency_base__large_65 .Currency_value__notEnough_56 {
+            color: #B70000;
+        }
+.Currency_base__extraLarge_4d .Currency_value__notEnough_56 {
+            color: #B70000;
+        }
+.Currency_stock_87 {
+    height: 13rem;
+    color: #FFDD99;
+    font-size: 13rem;
+    line-height: 1;
+    position: relative;
+    z-index: 0;
+    pointer-events: none;
+}
+.Currency_stock__indent_a1 {
+        margin-left: 2rem;
+    }
+.Currency_base__small_af .Currency_stock_87 {
+        transform: translateY(0rem);
+    }
+.Currency_base__big_bc .Currency_stock_87 {
+        transform: translateY(4rem);
+    }
+.Currency_base__large_65 .Currency_stock_87 {
+        transform: translateY(10rem);
+    }
+.Currency_base__extraLarge_4d .Currency_stock_87 {
+        transform: translateY(18rem);
+    }
+.Currency_stock__interactive_93 {
+        pointer-events: auto;
+    }
+.Currency_stockBackground_82 {
+    width: 80rem;
+    height: 45rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -27rem;
+    bottom: 0;
+    z-index: -1;
+    transform: translateY(17rem);
+}
+
+.CurrentBalance_currencyBlock_12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40rem;
+}
+
+.CurrentBalance_currencyContainer_6c {
+    display: flex;
+    margin-right: 10rem;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.CurrentBalance_currencyContainer_6c + .CurrentBalance_currencyContainer_6c {
+        margin-left: 7rem;
+    }
+
+.CurrentBalance_currency_42 {
+    width: 16rem;
+    height: 16rem;
+    margin-right: 5rem;
+    background: no-repeat center / contain;
+    transform: translateY(1rem);
+}
+
+.CurrentBalance_currency__credits_83 {
+        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
+    }
+
+.CurrentBalance_currency__gold_fe {
+        background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
+    }
+
+.CurrentBalance_currency__crystal_8c {
+        background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
+    }
+
+.CurrentBalance_currency__freeXP_0e {
+        background-image: url('R.images.gui.maps.icons.library.FreeXpIcon_2');
+    }
+
+.CurrentBalance_currency__equipCoin_a3 {
+        background-image: url('R.images.gui.maps.icons.library.equipCoin_1');
+    }
+
+.CurrentBalance_balance_1d {
+    color: #C9C9B6;
+    font-size: 14rem;
+}
+
+.CurrentBalance_balance__credits_70 {
+        color: #CED9D9;
+    }
+
+.CurrentBalance_balance__gold_18 {
+        color: #FFC363;
+    }
+
+.CurrentBalance_line_2b {
+    height: 1.3rem;
+    background-image: linear-gradient(to right, rgba(66, 66, 62, .12) 10%, rgba(66, 66, 62, .28) 20%, rgba(66, 66, 62, .48) 30%, rgba(66, 66, 62, .7) 40%);
+}
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #FFFFFF;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #F2F2F7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #FEFEEC;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #E9E2BF;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8C8C7E;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362E;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #FF2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #B70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #FEAB34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #EE7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #FFDD99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #CBAC77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80D43A;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7AB300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #CCFFFF;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09E2FF;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #CED9D9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #FFC363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #C9C9B6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #A29B70;
+}
+
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8C8C7E;
+}
+
+.Content_title_47 {
+    color: #FFFFFF;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    justify-content: center;
+}
+
+    .Content_title__reward_cc {
+        margin-top: 300rem;
+    }
+
+    .mediaMedium .Content_title__reward_cc {
+            margin-top: 450rem;
+}
+.Content_vehicleType_1a {
+    margin-top: 4rem;
+}
+.Content_vehicleName_70 {
+    color: #F2F2F7;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-left: 4rem;
+}
+.mediaMedium .Content_vehicleName_70 {
+        font-size: 16rem;
+}
+.Content_vehicleName__3dStyle_03 {
+        font-size: 15rem;
+    }
+.mediaMedium .Content_vehicleName__3dStyle_03 {
+            font-size: 18rem;
+}
+.Content_subtitle_26 {
+    color: rgba(242,242,247, .6);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 12rem;
+}
+.mediaMedium .Content_subtitle_26 {
+        margin-top: 20rem;
+        font-size: 16rem;
+}
+.Content_subtitle__3dStyle_20 {
+        color: #E9E2BF;
+        font-size: 15rem;
+        font-weight: 700;
+        line-height: 1.15;
+        margin-top: 15rem;
+    }
+.mediaMedium .Content_subtitle__3dStyle_20 {
+            font-size: 18rem;
+}
+
+.PurchaseConfirm_base_62 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.PurchaseConfirm_balance_1a {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.PurchaseConfirm_content_e9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 720rem;
+    height: 100%;
+}
+
+.PurchaseConfirm_base__reward_25 .PurchaseConfirm_content_e9 {
+        justify-content: center;
+    }
+
+.PurchaseConfirm_separator_23 {
+    width: 100%;
+    height: 1rem;
+    margin: 25rem 0 20rem;
+    background-color: #FFFFFF;
+    opacity: .1;
+}
+
+.PurchaseConfirm_alert_86 {
+    color: #FFDD99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 5rem 0 15rem;
+    text-shadow: 0 0 14rem #f00;
+}
+
+.mediaMedium .PurchaseConfirm_alert_86 {
+        font-size: 16rem;
+}
+
+.PurchaseConfirm_alertIcon_df {
+    width: 24rem;
+    height: 24rem;
+    margin: -1rem 3rem 0 0;
+    background: url('R.images.gui.maps.icons.comp7.icons.alertIcon') no-repeat center / cover;
+}
+
+.PurchaseConfirm_priceContainer_74 {
+    color: rgba(242,242,247, .6);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 20rem;
+}
+
+.mediaMedium .PurchaseConfirm_priceContainer_74 {
+        font-size: 16rem;
+}
+
+.PurchaseConfirm_price_76 {
+    margin: 0 8rem 2rem 0;
+}
+
+.PurchaseConfirm_discount_60 {
+    margin-right: 8rem;
+    font-size: 14rem;
+    line-height: 1;
+    position: relative;
+    transform: translateY(-5rem);
+}
+
+.mediaMedium .PurchaseConfirm_discount_60 {
+        font-size: 16rem;
+}
+
+.PurchaseConfirm_discount__freeXP_59 {
+        color: #F2F2F7;
+    }
+
+.PurchaseConfirm_discount__credits_0e {
+        color: #CED9D9;
+    }
+
+.PurchaseConfirm_discount__gold_57 {
+        color: #FFC363;
+    }
+
+.PurchaseConfirm_discount__xp_e2,
+    .PurchaseConfirm_discount__crystal_df,
+    .PurchaseConfirm_discount__equipCoin_1a {
+        color: #C9C9B6;
+    }
+
+.PurchaseConfirm_discountLine_e4 {
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    top: 60%;
+}
+
+.PurchaseConfirm_discount__freeXP_59 .PurchaseConfirm_discountLine_e4 {
+        background-color: #F2F2F7;
+    }
+
+.PurchaseConfirm_discount__credits_0e .PurchaseConfirm_discountLine_e4 {
+        background-color: #CED9D9;
+    }
+
+.PurchaseConfirm_discount__gold_57 .PurchaseConfirm_discountLine_e4 {
+        background-color: #FFC363;
+    }
+
+.PurchaseConfirm_discount__xp_e2 .PurchaseConfirm_discountLine_e4,
+    .PurchaseConfirm_discount__crystal_df .PurchaseConfirm_discountLine_e4,
+    .PurchaseConfirm_discount__equipCoin_1a .PurchaseConfirm_discountLine_e4 {
+        background-color: #F2F2F7;
+    }
+
+.PurchaseConfirm_buttons_34 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50rem;
+}
+
+.mediaMedium .PurchaseConfirm_buttons_34 {
+        margin-bottom: 80rem;
+}
+
+.mediaLarge .PurchaseConfirm_buttons_34 {
+        margin-bottom: 100rem;
+}
+
+.mediaExtraLarge .PurchaseConfirm_buttons_34 {
+        margin-bottom: 120rem;
+}
+
+.PurchaseConfirm_base__reward_25 .PurchaseConfirm_buttons_34 {
+        margin-bottom: 0;
+    }
+
+.PurchaseConfirm_buttonWrapper_a3 + .PurchaseConfirm_buttonWrapper_a3 {
+        margin-left: 14rem;
+    }
+
+.PurchaseConfirm_button_0c {
+    min-width: 165rem;
+    min-height: 24rem;
+    pointer-events: auto;
+}
+
+.mediaMedium .PurchaseConfirm_button_0c {
+        min-height: 32rem;
+}
+

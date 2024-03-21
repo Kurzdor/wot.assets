@@ -120,14 +120,13 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     width: 349rem;
-    padding: 19rem 0 24rem 88rem;
-    background: url('R.images.gui.maps.icons.battleRoyale.hangar.vehicleFeaturesBg') no-repeat 100% 100% / 100% 100%;
+    padding: 8rem 0 13rem 88rem;
+    background: url('R.images.gui.maps.icons.battleRoyale.hangar.vehicleFeaturesBg') no-repeat center / cover;
     overflow: hidden;
     position: relative;
 }
 
     .mediaMedium .App_base_e7 {
-        padding-top: 26rem;
         padding-bottom: 26rem;
 }
 

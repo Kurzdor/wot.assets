@@ -138,7 +138,7 @@
 .BonusXpBlock_base_91 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 3rem;
     box-shadow: 0 0 0 1rem rgba(255, 255, 255, .25) inset;
@@ -151,52 +151,34 @@
         background: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.background_x1_360') center center / cover no-repeat;
 }
 
-    .BonusXpBlock_base__x1_a1 {
-        background-image: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.background_x1_340');
-    }
-
-    .mediaMedium .BonusXpBlock_base__x1_a1 {
-            background-image: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.background_x1_360');
-}
-
-    .BonusXpBlock_base__x2_76 {
-        background-image: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.background_x2_340');
-    }
-
-    .mediaMedium .BonusXpBlock_base__x2_76 {
-            background-image: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.background_x2_360');
-}
-
-    .BonusXpBlock_base__x3_17 {
-        background-image: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.background_x3_340');
-    }
-
-    .mediaMedium .BonusXpBlock_base__x3_17 {
-            background-image: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.background_x3_360');
-}
-
-    .BonusXpBlock_base__x4_54 {
-        background-image: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.background_x4_340');
-    }
-
-    .mediaMedium .BonusXpBlock_base__x4_54 {
-            background-image: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.background_x4_360');
-}
-
-    .BonusXpBlock_base__x5_16 {
-        background-image: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.background_x5_340');
-    }
-
-    .mediaMedium .BonusXpBlock_base__x5_16 {
-            background-image: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.background_x5_360');
-}
-
     .BonusXpBlock_base__locked_c9 {
-        justify-content: center;
+        justify-content: flex-start;
     }
+
+    .BonusXpBlock_base__locked_c9 .BonusXpBlock_lock_1f {
+            width: 71rem;
+            height: 95rem;
+            margin-left: 2rem;
+            margin-top: -55rem;
+            background: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.lock') center top / 71rem 95rem no-repeat;
+        }
+
+    .mediaMedium .BonusXpBlock_base__locked_c9 .BonusXpBlock_lock_1f {
+                margin-left: 20rem;
+                margin-top: -90rem;
+}
+
+    .BonusXpBlock_base__locked_c9 .BonusXpBlock_locked_overlay_e2 {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, #000000 3.74%, rgba(0, 0, 0, 0) 98.38%);
+            opacity: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
 
     .BonusXpBlock_base__disabled_a6 {
-        justify-content: center;
         cursor: auto;
         pointer-events: none;
     }
@@ -205,11 +187,51 @@
             width: 100%;
             height: 100%;
             background: #0c0c0c;
-            opacity: .4;
+            opacity: .3;
             position: absolute;
             top: 0;
             left: 0;
         }
+
+.BonusXpBlock_xp_1c {
+    width: 190rem;
+    height: 190rem;
+    margin-top: 20rem;
+}
+
+.BonusXpBlock_xp__x1_8c {
+        background: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.bonus_440_x1') center center / cover no-repeat;
+    }
+
+.BonusXpBlock_xp__x2_a5 {
+        background: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.bonus_440_x2') center center / cover no-repeat;
+    }
+
+.BonusXpBlock_xp__x3_8a {
+        background: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.bonus_440_x3') center center / cover no-repeat;
+    }
+
+.BonusXpBlock_xp__x4_36 {
+        background: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.bonus_440_x4') center center / cover no-repeat;
+    }
+
+.BonusXpBlock_xp__x5_16 {
+        background: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.bonus_440_x5') center center / cover no-repeat;
+    }
+
+.BonusXpBlock_xp__wotPlus_dd {
+        background: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.bonus_440_x3_wotplus') center center / cover no-repeat;
+    }
+
+.BonusXpBlock_xp__locked_7a {
+        opacity: .4;
+    }
+
+.mediaMedium .BonusXpBlock_xp_1c {
+        width: 270rem;
+        height: 270rem;
+        margin-top: -5rem;
+}
 
 .BonusXpBlock_hover_43 {
     --hover-color: #fff0;
@@ -227,44 +249,20 @@
         --hover-color: #ffffff10;
     }
 
-.BonusXpBlock_base__locked_c9 .BonusXpBlock_hover_43 {
-        --hover-color: #00000080;
-    }
-
-.BonusXpBlock_base__locked_c9:hover .BonusXpBlock_hover_43 {
-        --hover-color: #0000001e;
-    }
-
-.BonusXpBlock_base__disabled_a6 .BonusXpBlock_hover_43,
-    .BonusXpBlock_base__disabled_a6:hover .BonusXpBlock_hover_43 {
-        --hover-color: #000;
-        background: url('R.images.gui.maps.icons.account_dashboard.cards_disabled_pattern') 0 0 / 7rem repeat;
-        opacity: .4;
+.BonusXpBlock_base__disabled_a6 .BonusXpBlock_hover_43 {
+        background: url('R.images.gui.maps.icons.account_dashboard.cards_disabled_pattern') 0 0 / 5rem repeat;
+        opacity: .3;
     }
 
 .BonusXpBlock_text_97 {
-    margin-top: 20rem;
-    padding: 60rem 20rem 20rem;
+    margin-top: -35rem;
     text-align: center;
     position: relative;
     z-index: 1;
 }
 
-.BonusXpBlock_base__locked_c9 .BonusXpBlock_text_97,
-    .BonusXpBlock_base__disabled_a6 .BonusXpBlock_text_97 {
-        background: url('R.images.gui.maps.icons.account_dashboard.bonus_xp.lock') center top / 71rem 95rem no-repeat;
-    }
-
-.mediaMedium .BonusXpBlock_base__locked_c9 .BonusXpBlock_text_97, .mediaMedium .BonusXpBlock_base__disabled_a6 .BonusXpBlock_text_97 {
-            margin-top: 2rem;
-}
-
-.BonusXpBlock_base__disabled_a6 .BonusXpBlock_text_97 {
-        opacity: .75;
-    }
-
-.BonusXpBlock_base__disabled_a6 .BonusXpBlock_text_97 .BonusXpBlock_heading_a4 {
-            opacity: .6;
+.BonusXpBlock_base__locked_c9 .BonusXpBlock_text_97 .BonusXpBlock_heading_a4 {
+            margin-top: 10rem;
         }
 
 .BonusXpBlock_heading_a4 {
@@ -273,10 +271,18 @@
     flex-wrap: wrap;
     justify-content: center;
     color: #E9E2BF;
-    font-size: 18rem;
+    font-size: 15rem;
     font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 10rem;
+    line-height: 1.15;
+    margin-top: 35rem;
+}
+
+.mediaMedium .BonusXpBlock_heading_a4 {
+        color: #E9E2BF;
+        font-size: 22rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-top: 25rem;
 }
 
 .BonusXpBlock_description_18 {
@@ -306,28 +312,32 @@
     line-height: 1.3;
 }
 
-.BonusXpBlock_multiplier_e3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: #E9E2BF;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
+.BonusXpBlock_multiplier_value_50 {
+    color: rgba(255,255,255, 0.6);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
 }
 
-.BonusXpBlock_multiplier_e3 > * {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.mediaMedium .BonusXpBlock_multiplier_value_50 {
+        color: rgba(255,255,255, 0.6);
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
+}
 
-.BonusXpBlock_multiplier_value_50 {
-    color: #FFDD99;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
+.BonusXpBlock_multiplier_unavailable_0c {
+    color: rgba(255,255,255, 0.6);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.mediaMedium .BonusXpBlock_multiplier_unavailable_0c {
+        color: rgba(255,255,255, 0.6);
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
 }
 
 .BonusXpBlock_uses_f2 {
@@ -338,7 +348,7 @@
     font-size: 24rem;
     font-weight: 700;
     line-height: 1.2;
-    margin: 0 0 10rem;
+    margin: 5rem 0;
 }
 
 .mediaMedium .BonusXpBlock_uses_f2 {
@@ -346,11 +356,161 @@
         font-size: 36rem;
         font-weight: 700;
         line-height: 1.1;
-        margin: 20rem 0;
+        margin: 0 0 10rem;
 }
 
 .BonusXpBlock_usesLeft_fb {
     color: #F2F2F7;
+}
+
+.BonusXpBlock_alert_b3 {
+    width: 308rem;
+    height: 259rem;
+    margin-top: -90rem;
+    position: relative;
+}
+
+.BonusXpBlock_alert_b3::before {
+    background: url('R.images.gui.maps.icons.battlePass.lights.perk_light') no-repeat center / contain;
+    opacity: 0.3;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.BonusXpBlock_alertIcon_6c {
+    width: 16rem;
+    height: 16rem;
+    margin-top: 120rem;
+    background: url('R.images.gui.maps.icons.library.icon_alert_32x32') no-repeat center / contain;
+    position: relative;
+}
+
+.BonusXpBlock_xpIconContainer_87 {
+    display: flex;
+    width: 16rem;
+    position: relative;
+    transform: translateY(1rem);
+}
+
+.BonusXpBlock_xpIcon_ce {
+    width: 16rem;
+    height: 16rem;
+    background: url('R.images.gui.maps.icons.library.XpIconBig') no-repeat center / cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.BonusXpBlock_daily_applied_xp_c4 {
+    display: flex;
+}
+
+.BonusXpBlock_plus_sign_b9 {
+    margin-top: -1rem;
+}
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #FFFFFF;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #F2F2F7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #FEFEEC;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #E9E2BF;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8C8C7E;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362E;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #FF2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #B70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #FEAB34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #EE7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #FFDD99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #CBAC77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80D43A;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7AB300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #CCFFFF;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09E2FF;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #CED9D9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #FFC363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #C9C9B6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #A29B70;
+}
+
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8C8C7E;
 }
 
 .ExcludedMapsBlock_base_6b {
@@ -1049,16 +1209,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     100% {
         transform: rotate(360deg);
     }
-}
-
-.PendingInfoBlock_renameInProgress_81 {
-    color: #8C8C7E;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .PendingInfoBlock_separator_a2 {

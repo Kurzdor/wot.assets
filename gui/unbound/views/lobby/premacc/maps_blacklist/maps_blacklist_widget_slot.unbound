@@ -1,0 +1,183 @@
+(def layout MapsBlacklistWidgetSlot()
+    (macro MapsBlacklistWidgetSlotModel)
+    (macro MapsBlacklistSlotModel)
+    (style
+        (align = "center")
+        (gap = 5px)
+    )
+    (scope
+        (const MAPS_BLACKLIST_WIDGET_SLOT_ICON_SIZE:number = 75px)
+        (const MAPS_BLACKLIST_WIDGET_SLOT_SIZE:number = 81px)
+        (event evSlotCloseEvent)
+
+        # tooltips for maps_blacklist_view
+        (var smallSlotTooltipBody:str = "!isShowMode ? state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_COOLDOWN'] ?
+            TextFormat(
+                R.strings.premacc.mapsBlacklist.smallSlotTooltip[state].body(),
+                {cooldownStr: hardSpace(timeLeft(
+                    cooldownTime,
+                    R.strings.menu.timeLeft.full.day(),
+                    R.strings.menu.timeLeft.full.hour(),
+                    R.strings.menu.timeLeft.full.min(),
+                    R.strings.menu.timeLeft.full.lessMin(),
+                    cooldownTime < ONE_HOUR
+                ))}
+            ) : 
+            (!isShowMode && state != '' ? R.strings.premacc.mapsBlacklist.smallSlotTooltip[state].body() : '') 
+            : ''"
+            watch=true
+        )
+        
+        # tooltips for prem_dashboard_view
+        (var smallSlotCardTooltipBody:str = "isShowMode ? mapId != '' && state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_CHANGE'] ?
+            TextFormat(
+                R.strings.premacc.mapsBlacklist.smallSlotCardTooltip[state].body(), 
+                {
+                    mapName: R.strings.arenas['c_' + mapId].name()
+                }
+            ) : 
+            (mapId != '' && state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_COOLDOWN'] ?
+            TextFormat(
+                R.strings.premacc.mapsBlacklist.smallSlotCardTooltip[state].body(), 
+                {
+                    mapName: R.strings.arenas['c_' + mapId].name(), 
+                    cooldownStr: hardSpace(timeLeft(
+                        cooldownTime, 
+                        R.strings.menu.timeLeft.full.day(), 
+                        R.strings.menu.timeLeft.full.hour(), 
+                        R.strings.menu.timeLeft.full.min(), 
+                        R.strings.menu.timeLeft.full.lessMin(),
+                        cooldownTime < ONE_HOUR
+                    ))
+                }
+            ) : 
+            (state != '' && state != MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_COOLDOWN'] && state != MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_CHANGE'] ?
+            R.strings.premacc.mapsBlacklist.smallSlotCardTooltip[state].body() : '')) 
+            : ''" 
+            watch=true
+        )
+    )
+
+    (bind mouseChildren "!isShowMode")
+    (bind buttonMode "isShowMode")
+
+    (block
+        (name = 'icons')
+        (style
+            (width = "MAPS_BLACKLIST_WIDGET_SLOT_SIZE")
+            (height = "MAPS_BLACKLIST_WIDGET_SLOT_SIZE")
+        )
+        (image
+            (bind source "R.images.gui.maps.icons.premacc.map.widget_slot[state]()"
+                (bind enabled "state != ''")
+            )
+        )
+        (image
+            (style
+                (width = "MAPS_BLACKLIST_WIDGET_SLOT_ICON_SIZE")
+                (height = "MAPS_BLACKLIST_WIDGET_SLOT_ICON_SIZE")
+                (vcenter = 0px)
+                (hcenter = 0px)
+                (position = "absolute")
+                (bind alpha "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_COOLDOWN'] ? 0.4 : 1")
+            )
+            (bind source "R.images.gui.maps.icons.map['c_' + mapId]()"
+                (bind enabled "mapId != ''")
+            )
+            (bind visible "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_CHANGE'] || state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_COOLDOWN']")
+        )
+
+        (button
+            (name = 'closeBtn')
+            (macro ButtonStylePrimaryGhost "BUTTON_SIZE_LARGE") 
+            (style
+                (width = 20px)
+                (height = 20px)
+                (backgroundColor = 0xff000000)
+                (position = "absolute")
+                (top = -10px)
+                (right = -10px)
+            )
+            (scope
+                (dispatch evSlotCloseEvent dir=1 args="{mapId: mapId}" on='clicked')
+            )
+            (bind visible "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_CHANGE'] && !isShowMode")
+            (icon = "R.images.gui.maps.icons.library.cross()")
+        )
+
+        (hblock
+            (style
+                (position = "absolute")
+                (vcenter = 0px)
+                (hcenter = 0px)
+                (gap = -10px)
+                (align = "middle | center")
+            )
+            (bind visible "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_COOLDOWN']")
+            (image
+                (style
+                    (marginLeft = -13px)
+                )
+                (name = 'cooldownIcon')
+                (source = "R.images.gui.maps.icons.premacc.map.widget_slot.icon_cooldown_slot()")
+            )
+            (tf
+                (name = 'timeTF')
+                (class VehicleStatusCriticalSmallTextStyle)
+                (bind text "timeLeft(
+                        cooldownTime,
+                        R.strings.menu.timeLeft.short.day(),
+                        R.strings.menu.timeLeft.short.hour(),
+                        R.strings.menu.timeLeft.short.min(),
+                        R.strings.menu.timeLeft.short.lessMin(),
+                        true
+                    )"
+                    (enabled="cooldownTime > 0")
+                )
+            )
+        )
+    )
+    (tf
+        (name = 'mapNameTF')
+        (style
+            (position = "absolute")
+            (top = 84px)
+            (hcenter = 0px)
+            (width = 120px)
+            (autoSize = true)
+            (multiline = true)
+            (wordWrap = true)
+            (textAlign = "center")
+            (leading = -3)
+        )
+        (bind class "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_ACTIVE'] || state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_CHANGE'] ? 'HighlightTextStyle' : 'MainBigTextStyle'")
+        (bind text "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_ACTIVE'] ?
+                        R.strings.premacc.mapsBlacklist.smallSlot.active.label() : 
+                        (mapId != '' ? R.strings.arenas['c_' + mapId].name() : '')")
+        (bind visible "state != MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_DISABLED'] && !isShowMode")
+    )
+
+    # tooltips for maps_blacklist_view
+    (controller $ToolTip
+        (delay = "0.4")
+        (args
+            header="R.strings.premacc.mapsBlacklist.smallSlotTooltip[state].header()"
+            body="smallSlotTooltipBody"
+        )
+        (content = "R.views.common.tooltip_window.simple_tooltip_content.SimpleTooltipContent.resId")
+        (decorator = "R.views.common.tooltip_window.tooltip_window.TooltipWindow.resId")
+        (bind enabled "!isShowMode && state != ''")
+    )
+
+    # tooltips for prem_dashboard_view
+    (controller $ToolTip
+        (delay = "0.4")
+        (args
+            header="R.strings.premacc.mapsBlacklist.smallSlotCardTooltip[state].header()"
+            body="smallSlotCardTooltipBody"
+        )
+        (content = "R.views.common.tooltip_window.simple_tooltip_content.SimpleTooltipContent.resId")
+        (decorator = "R.views.common.tooltip_window.tooltip_window.TooltipWindow.resId")
+        (bind enabled "isShowMode && (state != '' || mapId != '')")
+    )
+)

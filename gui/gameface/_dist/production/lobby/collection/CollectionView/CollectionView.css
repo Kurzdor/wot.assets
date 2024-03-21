@@ -156,6 +156,16 @@
     }
 }
 
+@keyframes App_fadeOut_a5 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @keyframes App_raysAppearance_9f {
     0% {
         opacity: 0;
@@ -250,6 +260,16 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes CollectionLayout_fadeOut_9c {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
@@ -378,7 +398,6 @@
     }
 
 .CollectionElement_background__unreceived_58 {
-        opacity: .5;
         z-index: 0;
         cursor: default;
     }
@@ -934,6 +953,108 @@
 .Content_bg__threadBgPosition_f3 {
         z-index: 3;
     }
+
+@keyframes Error_slideUp_1f {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Error_fadeIn_6d {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Error_fadeOut_df {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes Error_raysAppearance_2f {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .2;
+    }
+}
+
+@keyframes Error_rotate_fd {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes Error_slideUpWithScale_63 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2) translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.Error_base_92 {
+    opacity: 0;
+    animation-name: Error_fadeIn_6d;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: .4s;
+    animation-iteration-count: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-36rem);
+}
+
+.Error_icon_9e {
+    width: 80rem;
+    height: 80rem;
+    background: url('R.images.gui.maps.icons.collections.common.error_icon') no-repeat center / cover;
+}
+
+.Error_title_36 {
+    color: #F2F2F7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 51rem 0 18rem;
+}
+
+.Error_description_9c {
+    color: #FFFFFF;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
 
 .Footer_base_df {
     display: flex;
@@ -1516,6 +1637,7 @@
     font-size: 12rem;
     font-weight: 400;
     line-height: 1.3;
+    min-width: 12rem;
     position: absolute;
     top: 4rem;
     left: 50%;
@@ -1877,6 +1999,16 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes Header_fadeOut_30 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 

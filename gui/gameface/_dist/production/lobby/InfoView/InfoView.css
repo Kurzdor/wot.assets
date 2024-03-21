@@ -1,0 +1,1201 @@
+.HorizontalBar_base_49 {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+    position: relative;
+}
+
+    .HorizontalBar_base__nonActive_82 {
+        visibility: hidden;
+    }
+
+    .HorizontalBar_base_49 .disable,
+    .HorizontalBar_base_49 .disable:hover {
+        opacity: .3;
+        cursor: default;
+    }
+
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover, .HorizontalBar_rightButton_03:hover {
+        opacity: 1;
+    }
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem 7rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+        opacity: 1;
+    }
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
+        opacity: .7;
+    }
+
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.VerticalBar_base_f3 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+    .VerticalBar_base__nonActive_42 {
+        visibility: hidden;
+    }
+
+    .VerticalBar_base_f3 .disable,
+    .VerticalBar_base_f3 .disable:hover {
+        opacity: .3;
+        cursor: default;
+    }
+
+.VerticalBar_topButton_d7,
+.VerticalBar_bottomButton_06 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: .5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_d7:hover, .VerticalBar_bottomButton_06:hover {
+        opacity: 1;
+    }
+
+.VerticalBar_topButton_d7 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_06 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_df {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32 {
+    display: none;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32:hover {
+        opacity: 1;
+    }
+
+.VerticalBar_rail_43 {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_43:hover {
+        opacity: .7;
+    }
+
+
+.VerticalScroll_content_cb {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_f8 {
+    display: flex;
+}
+
+.VerticalScroll_bar_1e {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_af {
+    flex: 1;
+}
+
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .TextButton_base__right_39 {
+        flex-direction: row-reverse;
+    }
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+    .TextButton_icon__forward_59 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.back');
+        transform: translateY(1rem);
+    }
+.TextButton_icon__forward_59 {
+        transform: rotate(180deg) translateY(1rem);
+    }
+.TextButton_icon__close_53 {
+        margin: -1rem 0;
+        background-image: url('R.images.gui.maps.icons.components.text_button.close');
+    }
+.TextButton_icon__info_33 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.info');
+    }
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+    .TextButton_icon__forward_59 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+    }
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+    }
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+    }
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_glow_a4 {
+        opacity: 0;
+    }
+.TextButton_caption_82 {
+    position: relative;
+    transition: color .16s, text-shadow .16s;
+}
+.TextButton_caption__back_b9,
+    .TextButton_caption__forward_4e,
+    .TextButton_caption__close_36 {
+        color: #FFDD99;
+        text-shadow: 0 0 10rem rgba(255,42,0, 1),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4);
+    }
+.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
+            color: #fffa9f;
+        }
+.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
+            color: #FFDD99;
+        }
+.TextButton_caption__info_23 {
+        padding: 0 5rem;
+        color: #CCFFFF;
+        text-shadow: 0 0 12rem rgba(31,68,255, .8),
+            0 0 8rem #00eaff;
+    }
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+            color: #e3ffff;
+            text-shadow: 0 0 12rem rgba(31,68,255, .8),
+                0 0 12rem rgba(0,234,255, 1),
+                0 0 8rem #00eaff;
+        }
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+            color: #CCFFFF;
+            text-shadow: 0 0 12rem rgba(31,68,255, .6),
+                0 0 8rem #00eaff;
+        }
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+        margin-left: 8rem;
+    }
+.TextButton_base__right_39 .TextButton_goto_e7 {
+        margin-right: 8rem;
+    }
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity .16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+        left: -4rem;
+    }
+.TextButton_base__right_39 .TextButton_shine_e2 {
+        right: -4rem;
+        transform: rotate(180deg);
+    }
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_shine_e2 {
+        opacity: 0;
+    }
+
+.PageTitle_base_ef {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PageTitle_title_33 {
+    color: #F2F2F7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaMedium .PageTitle_title_33 {
+        font-size: 56rem;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.default_sectionTitleLong_f5 {
+    color: #FEFEEC;
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 41rem;
+}
+
+.default_sectionTitleSmall_45 {
+    color: #FEFEEC;
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 18rem;
+}
+
+.default_sectionTitleSmall__biggerMargin_5b {
+        margin-bottom: 26rem;
+    }
+
+.default_sectionTitleSmall__largeMargin_e4 {
+        margin-bottom: 34rem;
+    }
+
+.default_sectionSubtitle_6e {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 10rem;
+}
+
+.AboutSection_base_9b {
+    padding: 46rem 0 65rem;
+}
+
+.AboutSection_description_ac {
+    margin-bottom: 16rem;
+}
+
+.AboutSection_battlePass_03 {
+    display: flex;
+    margin-bottom: 26rem;
+}
+
+.AboutSection_battlePassImgContainer_b8 {
+    padding: 0 40rem 0 20rem;
+}
+
+.AboutSection_battlePassImg_15 {
+    width: 136rem;
+    height: 136rem;
+    background: url('R.images.frontline.gui.maps.infopage.BP_icon_points') no-repeat center / contain;
+}
+
+.AboutSection_battlePassText_4c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0;
+}
+
+.AboutSection_table_4b {
+    display: flex;
+    width: 50%;
+    margin-top: 10rem;
+}
+
+.AboutSection_tableColumn_4e {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.AboutSection_tableCell_1a {
+    display: flex;
+    align-items: center;
+    height: 60rem;
+}
+
+.AboutSection_tableCell_1a + .AboutSection_tableCell_1a {
+        border-top: 1rem rgba(255,255,255, .05) solid;
+    }
+
+.AboutSection_tableCell__centered_c2 {
+        justify-content: center;
+    }
+
+.AboutSection_tableCellText_1f {
+    margin-bottom: 3rem;
+}
+
+.AboutSection_tableBpImg_d4 {
+    width: 16rem;
+    height: 16rem;
+    margin-left: 8rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.points_16') no-repeat center / contain;
+}
+
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+    .ExtendedText_base__zeroPadding_25 {
+        padding: 0;
+    }
+
+    .ExtendedText_base__isTruncationAvailable_5b {
+        width: 100%;
+    }
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+        opacity: 0;
+    }
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #FF2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #FFFFFF;
+}
+
+.colors_white_45 {
+    color: #F2F2F7;
+}
+
+.colors_whiteOrange_81 {
+    color: #FEFEEC;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #E9E2BF;
+}
+
+.colors_par_5b {
+    color: #8C8C7E;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362E;
+}
+
+.colors_red_79 {
+    color: #FF2717;
+}
+
+.colors_redDark_73 {
+    color: #B70000;
+}
+
+.colors_yellow_76 {
+    color: #FEAB34;
+}
+
+.colors_orange_cd {
+    color: #EE7000;
+}
+
+.colors_cream_0f {
+    color: #FFDD99;
+}
+
+.colors_brown_82 {
+    color: #CBAC77;
+}
+
+.colors_greenBright_68 {
+    color: #80D43A;
+}
+
+.colors_green_fa {
+    color: #7AB300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #CCFFFF;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09E2FF;
+}
+
+.colors_cred_35 {
+    color: #CED9D9;
+}
+
+.colors_gold_c3 {
+    color: #FFC363;
+}
+
+.colors_bond_ce {
+    color: #C9C9B6;
+}
+
+.colors_prom_83 {
+    color: #A29B70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.renderers_word_f3 {
+    white-space: nowrap;
+    overflow-wrap: normal;
+}
+
+.DividedSection_base_dd {
+    padding: 46rem 0 65rem;
+    position: relative;
+}
+
+.DividedSection_divider_6e {
+    width: 100%;
+    height: 120rem;
+    background: url('R.images.frontline.gui.maps.infopage.divider') round;
+    position: absolute;
+    bottom: -60rem;
+}
+
+.AddonsSection_description_66 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.AddonsSection_column_fb {
+    flex: 0;
+    width: 285rem;
+}
+
+.AddonsSection_column_fb + .AddonsSection_column_fb {
+        margin-left: 15rem;
+    }
+
+.AddonsSection_text_08 {
+    display: flex;
+}
+
+.LevelUpSection_container_a4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35rem;
+}
+
+.LevelUpSection_text_2a {
+    width: 400rem;
+}
+
+.mediaMedium .LevelUpSection_text_2a {
+        width: 450rem;
+}
+
+.LevelUpSection_img_a3 {
+    width: 472rem;
+    height: 192rem;
+    background: url('R.images.frontline.gui.maps.infopage.level_up') no-repeat center / contain;
+}
+
+.MainInfoSection_base_81 {
+    padding: 0 0 65rem;
+}
+
+.MainInfoSection_row_c7 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.MainInfoSection_row_c7 + .MainInfoSection_row_c7 {
+        margin-top: 23rem;
+    }
+
+.MainInfoSection_cell_b3 {
+    display: flex;
+    flex: 0;
+    width: 240rem;
+}
+
+.MainInfoSection_cell_b3 + .MainInfoSection_cell_b3 {
+        margin-left: 30rem;
+    }
+
+.mediaMedium .MainInfoSection_cell_b3 {
+        width: 300rem;
+}
+
+.MainInfoSection_cellImage_ec {
+    width: 60rem;
+    height: 60rem;
+    margin-right: 22rem;
+    background: no-repeat center / cover;
+}
+
+.MainInfoSection_cellContent_bb {
+    display: flex;
+    flex-direction: column;
+    flex: 0;
+}
+
+.ProgressionSection_description_1e {
+    margin-bottom: 13rem;
+}
+
+.ProgressionSection_caption_98 {
+    display: flex;
+    align-items: center;
+}
+
+.ProgressionSection_captionDescription_e4 {
+    flex: 0;
+}
+
+.ProgressionSection_captionText_e3 {
+    margin-top: 10rem;
+}
+
+.ProgressionSection_captionImgContainer_a1 {
+    width: 142rem;
+    height: 142rem;
+    margin-right: 35rem;
+}
+
+.ProgressionSection_captionImg_56,
+.ProgressionSection_captionBadge_5b {
+    width: 100%;
+    height: 100%;
+}
+
+.ProgressionSection_captionImg_56 {
+    background: url('R.images.gui.maps.icons.library.epicRank.big_rank_general') no-repeat center / cover;
+}
+
+.ProgressionSection_captionBadge_5b {
+    background: url('R.images.frontline.gui.maps.infopage.badge_20') no-repeat center / cover;
+}
+
+.ProgressionSection_rankText_ef {
+    margin: 23rem 0 44rem;
+}
+
+.ProgressionSection_rankImg_50 {
+    width: 64rem;
+    height: 64rem;
+    margin-bottom: 10rem;
+    background: no-repeat center / contain;
+}
+
+.ProgressionSection_table_3f {
+    display: flex;
+    margin-bottom: 21rem;
+}
+
+.ProgressionSection_tableColumn_78 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.ProgressionSection_tableCell_60 {
+    display: flex;
+    padding-bottom: 10rem;
+    color: #CBAC77;
+}
+
+.ProgressionSection_tableCell__header_a9 {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 1;
+    }
+
+.ProgressionSection_tableCell__centered_6d {
+        justify-content: center;
+    }
+
+.ProgressionSection_tableCell__right_98 {
+        justify-content: flex-end;
+    }
+
+.ReserveCategoriesSection_categoriesText_85 {
+    margin-bottom: 34rem;
+}
+
+.ReserveCategoriesSection_categoriesLists_8c {
+    display: flex;
+    margin-bottom: -22rem;
+}
+
+.ReserveCategoriesSection_categoryColumn_b1 {
+    flex-direction: column;
+    flex: 0;
+    width: 285rem;
+}
+
+.ReserveCategoriesSection_categoryColumn_b1 + .ReserveCategoriesSection_categoryColumn_b1 {
+        margin-left: 60rem;
+    }
+
+.ReserveCategoriesSection_categoryCell_16 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12rem;
+}
+
+.ReserveCategoriesSection_categoryCell__title_1b {
+        color: #E9E2BF;
+        font-size: 15rem;
+        font-weight: 700;
+        line-height: 1.15;
+        margin-bottom: 16rem;
+        padding-bottom: 5rem;
+        border-bottom: 1rem solid rgba(255,255,255, .05);
+    }
+
+.ReserveCategoriesSection_categoryCell__imgContainer_86 {
+        width: 48rem;
+        height: 48rem;
+        margin-right: 10rem;
+    }
+
+.ReserveCategoriesSection_categoryTypeIcon_bb {
+    width: 32rem;
+    height: 32rem;
+    margin-right: -3rem;
+    background: no-repeat center / contain;
+}
+
+.ReserveCategoriesSection_categoryTypeImg_d7 {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    background: no-repeat center / contain;
+}
+
+.RulesSection_base_e7 {
+    padding: 46rem 0 50rem;
+}
+
+.RulesSection_description_8b {
+    display: flex;
+    justify-content: space-between;
+}
+
+.RulesSection_descriptionColumn_f3 {
+    display: flex;
+    flex-direction: column;
+    flex: 0;
+    width: 285rem;
+}
+
+.RulesSection_descriptionColumn_f3 + .RulesSection_descriptionColumn_f3 {
+        margin-left: 15rem;
+    }
+
+.RulesSection_descriptionImg_ee {
+    height: 170rem;
+    margin-bottom: 22rem;
+    background: no-repeat center / contain;
+}
+
+.RulesSection_text_e7 + .RulesSection_text_e7 {
+        margin-top: 15rem;
+    }
+
+.RulesSection_list_7b {
+    margin-top: 15rem;
+}
+
+.RulesSection_listItem_48 {
+    display: flex;
+}
+
+.RulesSection_listItemText_9f {
+    flex: 0;
+}
+
+.RulesSection_listBullet_32 {
+    display: flex;
+    justify-content: center;
+    width: 19rem;
+}
+
+.RulesSection_backToFight_70 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35rem;
+}
+
+.RulesSection_backToFightText_79 {
+    width: 325rem;
+}
+
+.mediaMedium .RulesSection_backToFightText_79 {
+        width: 450rem;
+}
+
+.RulesSection_backToFightImg_52 {
+    width: 470rem;
+    height: 326rem;
+    background: url('R.images.frontline.gui.maps.infopage.map') no-repeat center / cover;
+}
+
+.ScenariosSection_scenarios_0d {
+    display: flex;
+    justify-content: space-between;
+    margin: 39rem 0 35rem;
+}
+
+.ScenariosSection_scenariosItem_e7 {
+    display: flex;
+    flex-direction: column;
+    width: 260rem;
+}
+
+.mediaMedium .ScenariosSection_scenariosItem_e7 {
+        width: 300rem;
+}
+
+.ScenariosSection_scenariosItemHeader_94 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14rem;
+}
+
+.ScenariosSection_scenariosItemHeaderIcon_61 {
+    width: 32rem;
+    height: 32rem;
+    margin-right: 10rem;
+    background: no-repeat center / cover;
+}
+
+.ScenariosSection_scenariosItemHeaderText_67 {
+    color: #E9E2BF;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.ScenariosSection_scenariosItemList_a4 {
+    display: flex;
+}
+
+.ScenariosSection_listBullet_49 {
+    margin: 0 9rem;
+}
+
+.ScenariosSection_progression_8a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ScenariosSection_progressionInfo_e3 {
+    flex: 0;
+    width: 400rem;
+}
+
+.mediaMedium .ScenariosSection_progressionInfo_e3 {
+        width: 520rem;
+}
+
+.ScenariosSection_progressionImg_a6 {
+    width: 360rem;
+    height: 280rem;
+    background: url('R.images.gui.maps.icons.epicBattles.skills.intro.slots') no-repeat center / cover;
+}
+
+.ScenariosSection_progressionTable_8d {
+    display: flex;
+    width: 100%;
+    margin-top: 33rem;
+}
+
+.ScenariosSection_progressionTableColumn_3d {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-bottom: 1rem rgba(255,255,255, .05) solid;
+}
+
+.ScenariosSection_progressionNoteText_e0 {
+    margin: 26rem 0 42rem;
+}
+
+.ScenariosSection_progressionTableHeaderIcon_4c {
+    width: 24rem;
+    height: 24rem;
+    margin-right: 3rem;
+    background: no-repeat center / contain;
+}
+
+.ScenariosSection_progressionTableHeaderText_0e {
+    height: 24rem;
+    color: #E9E2BF;
+}
+
+.ScenariosSection_progressionTableCell_71 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60rem;
+}
+
+.ScenariosSection_progressionTableCell_71 + .ScenariosSection_progressionTableCell_71 {
+        border-top: 1rem rgba(255,255,255, .05) solid;
+    }
+
+.ScenariosSection_progressionTableCell__accentStart_76 {
+        justify-content: flex-start;
+        color: #E9E2BF;
+    }
+
+.ScenariosSection_progressionTableCell__accent_b5 {
+        color: #FEFEEC;
+    }
+
+.ScenariosSection_configuration_95 {
+    display: flex;
+    margin-bottom: 37rem;
+}
+
+.ScenariosSection_configurationText_71 {
+    margin-top: 7rem;
+}
+
+.ScenariosSection_configurationTable_7a {
+    display: flex;
+    width: 75%;
+    margin-top: 5rem;
+    padding-right: 0;
+}
+
+.mediaMedium .ScenariosSection_configurationTable_7a {
+        width: 560rem;
+        padding-right: 26rem;
+}
+
+.ScenariosSection_configurationIcon_3c {
+    width: 64rem;
+    height: 64rem;
+    background: no-repeat center / contain;
+}
+
+.ScenariosSection_configurationTableColumn_6a {
+    flex: 1;
+    min-width: 130rem;
+}
+
+.ScenariosSection_configurationTableColumn__accent_7c {
+        min-width: 113rem;
+        color: #E9E2BF;
+    }
+
+.ScenariosSection_configurationTableCell_92 {
+    display: flex;
+    align-items: center;
+    height: 60rem;
+}
+
+.ScenariosSection_configurationTableCell_92 + .ScenariosSection_configurationTableCell_92 {
+        border-top: 1rem rgba(255,255,255, .05) solid;
+    }
+
+.ScenariosSection_configurationTableCell__start_e8 {
+        justify-content: flex-start;
+    }
+
+.ScenariosSection_configurationTableCell__centered_c2 {
+        justify-content: center;
+    }
+
+.ScenariosSection_configurationImgContainer_f1 {
+    display: none;
+}
+
+.mediaMedium .ScenariosSection_configurationImgContainer_f1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+}
+
+.ScenariosSection_configurationImg_ad {
+    width: 350rem;
+    height: 250rem;
+    background: url('R.images.gui.maps.icons.tanksetup.reserves.reserves_small') no-repeat center / cover;
+}
+
+.SubTitle_base_07 {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    font-size: 18rem;
+}
+
+    .mediaMedium .SubTitle_base_07 {
+        font-size: 24rem;
+}
+
+.WinStrategySection_base_b6 {
+    padding: 50rem 0;
+}
+
+.WinStrategySection_container_e8 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.WinStrategySection_text_17 {
+    flex: 0;
+    width: 460rem;
+    margin-right: 15rem;
+}
+
+.WinStrategySection_img_9f {
+    flex: 0;
+    width: 470rem;
+    height: 100%;
+    background: url('R.images.frontline.gui.maps.infopage.bigmap') no-repeat center / contain;
+}
+
+.mediaMedium .WinStrategySection_img_9f {
+        height: 470rem;
+}
+
+.WinStrategySection_winText_7d + .WinStrategySection_winText_7d {
+        margin-top: 15rem;
+    }
+
+.InfoViewApp_base_a5 {
+    padding-top: 135rem;
+}
+
+    .InfoViewApp_base__fullScreen_0a {
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(transparent, rgba(0,0,0, .7)) no-repeat center / cover, url('R.images.frontline.gui.maps.bg.info') no-repeat center / cover;
+    }
+
+    .mediaMedium .InfoViewApp_base_a5 {
+        padding-top: 185rem;
+}
+
+.InfoViewApp_page_ca {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.InfoViewApp_scroll_0b {
+    padding: 0 10rem 10rem;
+}
+
+.InfoViewApp_pageTitle_5d {
+    position: absolute;
+    top: 42rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.mediaLarge .InfoViewApp_pageTitle_5d {
+        top: 88rem;
+}
+
+.InfoViewApp_closeButton_c4 {
+    position: absolute;
+    top: 50rem;
+    left: 45rem;
+}
+
+.InfoViewApp_mainContent_9d {
+    width: 820rem;
+}
+
+.InfoViewApp_mainContent__padded_64 {
+        padding: 0 20rem;
+    }
+
+.mediaMedium .InfoViewApp_mainContent_9d {
+        width: 960rem;
+        padding: 0;
+}
+

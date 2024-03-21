@@ -8,17 +8,13 @@
     position: absolute;
 }
 
-.TooltipDecorator_decorator_3d {
-    padding: 4rem 6rem 8rem; /* border offset*/
-    border-image-source: url('R.atlases.components.tooltip_background');
-    border-image-slice: 24 fill;
-    border-image-width: 24rem;
-    position: relative;
-}
-
-.TooltipDecorator_decoratorContent_de {
-    background-color: #000;
-}
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.atlases.components.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
 
 .App_base_8e {
     width: 359rem;
@@ -76,5 +72,14 @@
     line-height: 1.25;
     margin-left: 10rem;
     white-space: pre-wrap;
+}
+
+.App_premiumIGR_82 {
+    align-self: flex-end;
+    width: 10rem;
+    height: 10rem;
+    margin: 0 3rem 0 -2rem;
+    background: url('R.images.gui.maps.icons.library.premium_igr_ico') no-repeat center / contain;
+    transform: translateY(-3rem);
 }
 

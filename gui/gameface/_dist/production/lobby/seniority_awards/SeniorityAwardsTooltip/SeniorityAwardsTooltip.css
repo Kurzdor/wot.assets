@@ -1,0 +1,147 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.atlases.components.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+
+.App_base_7e {
+    width: 420rem;
+    padding: 11rem 20rem 8rem;
+    line-height: normal;
+    overflow: hidden;
+}
+.App_section_e9 {
+    background: linear-gradient(90deg, transparent, rgba(201,201,182, .07) 37%, rgba(201,201,182, .07) 63%, transparent);
+}
+.App_separator_16 {
+    width: 283rem;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.seniorityAwards.tooltips.separator') 50% / contain no-repeat;
+}
+.App_subtitle_dd {
+    color: #7AB300;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 10rem 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+.Description_base_d9 {
+    height: 40rem;
+}
+.Description_separator_64 {
+    width: 283rem;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.seniorityAwards.tooltips.separator') 50% / contain no-repeat;
+}
+.Description_desc_6f {
+    position: relative;
+}
+.Description_rank_c5 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 10rem 0;
+    font-weight: 300;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.Description_segment_b3 {
+    color: #E9E2BF;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 10rem 0;
+    font-size: 16rem;
+    font-weight: 300;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.Header_godrays_2a {
+    width: 200rem;
+    height: 170rem;
+    background: url('R.images.gui.maps.icons.seniorityAwards.tooltips.godrays') bottom / cover no-repeat;
+    transform: translate(115rem, 10rem);
+}
+.Header_container_9c {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.Header_effect_6a {
+    width: 398rem;
+    height: 269rem;
+    background: url('R.images.gui.maps.icons.seniorityAwards.tooltips.effect') bottom / cover no-repeat;
+    opacity: .5;
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(15rem, 4rem);
+}
+.Header_glow_59 {
+    width: 652rem;
+    height: 409rem;
+    background: url('R.images.gui.maps.icons.seniorityAwards.tooltips.glow') bottom / cover no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-111rem, -127rem);
+}
+.Header_image_85 {
+    width: 70rem;
+    height: 81rem;
+    background: url('R.images.gui.maps.icons.seniorityAwards.tooltips.award_1') no-repeat 50% / contain;
+}
+.Header_image__second_c8 {
+        margin-left: 15rem;
+    }
+.Header_imageContainer_fc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(180rem, 33rem);
+}
+.Header_imageContainer__double_b7 {
+        display: flex;
+        transform: translate(135rem, 33rem);
+    }
+.Header_topBlock_73 {
+    width: 100%;
+    height: 120rem;
+    margin-bottom: 12rem;
+}
+.Header_topBlock__indent_03 {
+        height: 140rem;
+    }
+.Header_title_ad {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    max-width: 205rem;
+    text-align: center;
+}
+.Header_titleContainer_27 {
+    margin: 50rem 25rem 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+

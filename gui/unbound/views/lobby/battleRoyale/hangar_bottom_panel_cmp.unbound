@@ -1,0 +1,196 @@
+(def element HangarBottomPanelCmp() layout=true entrance=true
+    (macro HangarBottomPanelViewModel)
+    (name = 'HangarBottomPanelCmp')
+    
+    (style
+        (bind width "viewSize.width"
+            (event "viewResized")
+        )
+    )
+    (block
+        (name = 'main')
+        (style
+            (position = absolute)
+            (width = 100%)
+            (bottom = 0)
+            (align = "center")
+        )
+        (block
+            (name = 'bgShadowWrapper')
+            (style
+                (paddingBottom = 20px)
+                (align = "center")
+                (gap = 20px)
+            )
+            (block
+                (name = 'vehTitleBlock')
+                (style
+                    (position = absolute)
+                    (center = 0)
+                    (bottom = 0)
+                )
+
+                (macro EmptyHitAreaMacro)
+                (image
+                    (name = 'bgShadow')
+                    (source = "R.images.gui.maps.icons.battleRoyale.hangar.titleBlockBg()")
+                )
+            )
+
+            (macro BattleRoyaleHangarVehicleTitleBlock)
+            (macro BattleRoyaleVehStatus)
+            (macro BattleRoyaleRepairBlock)
+        )
+        (macro BREquipmentPanel)
+    )
+)
+
+(def element BattleRoyaleConsumableRenderer() layout=true
+    (macro BattleRoyaleConsumableModel)
+    (style
+        (bind backgroundImage "iconSource")
+        (backgroundSize = "autosize")
+    )
+    (tf
+        (name = 'quantityTF')
+        (class HighlightTextStyle)
+        (style
+            (position = absolute)
+            (right = -10px)
+            (vcenter = 18px)
+        )
+        (bind text "quantity")
+        (bind visible "quantity != 0")
+    )
+    (controller $ToolTip
+        (args tooltipType="tooltipType" intCD="intCD")
+        (content = "R.views.common.tooltip_window.backport_tooltip_content.BackportTooltipContent.resId")
+        (decorator = "R.views.common.tooltip_window.tooltip_window.TooltipWindow.resId")
+    )
+)
+
+(def css HangarVehNameTextStyle()
+    (fontFamily = $TitleFont)
+    (fontSize = 22)
+    (textColor = 0xCED9D9)
+    (marginTop = 2px)
+    (marginLeft = -22px)
+    (filters
+        (dropShadow
+            (distance = 0)
+            (angle = 0)
+            (color = 0x000000)
+            (blurX = 2)
+            (blurY = 2)
+            (strength = 2.0)
+            (quality = 3)
+        )
+    )
+)
+
+(def macro BattleRoyaleRepairBlock()
+    (button
+        (name = 'repairBtn')
+        (macro ButtonStylePrimary "BUTTON_SIZE_MEDIUM")
+        (macro ButtonIconTextStyles "BUTTON_SIZE_SMALL")
+        (style
+            (minWidth = 140px)
+            (marginTop = -10px)
+        )
+        (label = "R.strings.battle_royale.button.repair()")
+        (dispatch onRepairBtnClicked on='clicked')
+        (bind enabled "!isVehicleInBattle")
+        (controller $ToolTip
+            (args
+                header="R.strings.tooltips.hangar.maintenance.header()"
+                body="R.strings.tooltips.hangar.maintenance.body()"
+            )
+            (delay = 0.4)
+            (content = "R.views.common.tooltip_window.simple_tooltip_content.SimpleTooltipContent.resId")
+            (decorator = "R.views.common.tooltip_window.tooltip_window.TooltipWindow.resId")
+            (bind enabled "!isVehicleInBattle")
+        )
+        (controller $ToolTip
+            (args
+                header="R.strings.tooltips.hangar.maintenance.disabled.header()"
+                body="R.strings.tooltips.hangar.maintenance.disabled.body()"
+            )
+            (delay = 0.4)
+            (content = "R.views.common.tooltip_window.simple_tooltip_content.SimpleTooltipContent.resId")
+            (decorator = "R.views.common.tooltip_window.tooltip_window.TooltipWindow.resId")
+            (bind enabled "isVehicleInBattle")
+        )
+    )
+)
+
+(def macro BREquipmentPanel()
+    (hblock
+        (name = 'equipmentPanel')
+        (style
+            (align = "center|middle")
+            (backgroundImage = "R.images.gui.maps.icons.battleRoyale.hangar.consumables_bg()")
+            (backgroundSize = "autosize")
+        )
+        (group 'ammunition'
+            (container
+                (style
+                    (flow = "Flow.HORIZONTAL")
+                    (gap = 20px)
+                )
+            )
+            (renderer = 'BattleRoyaleConsumableRenderer')
+        )
+        (block
+            (name = 'separator')
+            (style
+                (width = 1px)
+                (height = 50px)
+                (marginLeft = 30px)
+                (marginRight = 23px)
+                (backgroundColor = 0x1AFFFFFF)
+            )
+        )
+        (group 'abilities'
+            (container
+                (style
+                    (flow = "Flow.HORIZONTAL")
+                    (gap = 20px)
+                )
+            )
+            (renderer = 'BattleRoyaleConsumableRenderer')
+        )
+        (block
+            (name = 'separator2')
+            (style
+                (width = 1px)
+                (height = 50px)
+                (marginLeft = 30px)
+                (marginRight = 23px)
+                (backgroundColor = 0x1AFFFFFF)
+            )
+        )
+        (group 'specialAbilities'
+            (container
+                (style
+                    (flow = "Flow.HORIZONTAL")
+                    (gap = 20px)
+                )
+            )
+            (renderer = 'BattleRoyaleConsumableRenderer')
+        )
+    )
+)
+
+(def macro BattleRoyaleVehStatus()
+    (tf
+        (class StatusAttentionTextStyle)
+        (style
+            (fontSize = 18)
+            (height = 27px)
+            (marginTop = -18px)
+            (marginBottom = -3px)
+        )
+        (text = "R.strings.menu.currentVehicleStatus.battle()")
+        (bind visible "isVehicleInBattle")
+    )
+)

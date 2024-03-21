@@ -1,0 +1,25 @@
+# This file was generated using wgpygen
+#   template: configs/templates/view_model.unbound.jinja2
+#   source: configs/definitions/views/lobby/premacc/maps_blacklist_models.yaml
+# Please, don't edit this file manually.
+(def macro MapsBlacklistViewModel()
+    (scope
+        (event onBackAction)
+        (event onCloseEvent)
+        (event onMapAddToBlacklistEvent)
+        (event onMapRemoveFromBlacklistEvent)
+        (event onFilterReset)
+        (event onInitialized)
+        (event onFilterClick)
+
+        (var cooldownTime:number = 0)
+        (var mapsSelected:number = 0)
+        (var mapsTotal:number = 0)
+        (var isFilterApplied:bool = false)
+
+        # The following submodels are used in this model:
+        # disabledMaps:ui_kit.list_model
+        # mapsFilters:ui_kit.list_model
+        # maps:ui_kit.list_model
+    )
+)

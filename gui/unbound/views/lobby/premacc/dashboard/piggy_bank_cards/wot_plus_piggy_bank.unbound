@@ -1,0 +1,166 @@
+(def layout WotPlusPiggyBankCard() entrance=true
+    (macro WotPlusPiggyBankCardModel)
+    (macro PremDashboardAdaptiveSize)
+    (macro PiggyBankStates)
+    (macro WotPlusScope)
+    
+    (mouseEnabled = true)
+    (buttonMode = true)
+    (mouseChildren = false)
+
+    (style
+        (width = 100%)
+        (height = 100%)
+        (backgroundColor = 0xff0c0c0c)
+    )
+    (scope
+        (event evCardOver)
+        (event evCardOut)
+        (var isOverlayEnable:bool = "premState == BANKSTATE.Available && creditCurrentAmount == '0' 
+            && wotPlusState == BANKSTATE.Available && goldCurrentAmount == '0'"
+        )
+        (var isTimeToOpenVisible:bool = "premState == BANKSTATE.Active || creditCurrentAmount != '0' 
+            || wotPlusState == BANKSTATE.Active || goldCurrentAmount != '0'"
+        )
+        (var blockWidth:number = "isNormalSize ? 165px : 115px")
+    )
+    
+    (dispatch onCardClick on='click' 
+        (enabled="$event.buttonIdx == MOUSE.LEFT")
+    )
+    (dispatch evCardOver on='rollOver')
+    (dispatch evCardOut on='rollOut')
+    
+    (macro DashboardCardSounds over="evCardOver" click="onCardClick")
+    (macro BankBackgrounds)
+    (block
+        (name = 'overlayBlock')
+        (bind visible "isOverlayEnable")
+        (style
+            (macro AbsPositionFullSize)
+            (backgroundColor = 0x8d000000) 
+        )
+        (block
+            (style
+                (width = 100%)
+                (position = "absolute")
+                (bind top "isNormalSize ? 111px : 89px")
+                (align = "center")
+            )
+            (image
+                (name = 'lockIcon')
+                (style
+                    (marginBottom = -29px)
+                )
+                (source = "R.images.gui.maps.icons.subscription.dashboard_card.piggy_bank.lock()")
+            )
+            (tf
+                (name = 'overlayLabel')
+                (class HighTitleTextStyle)
+                (text = "R.strings.subscription.dashboard.piggyBank.overlayLabel()")
+            )
+            (tf
+                (name = 'overlayDesc')
+                (style
+                    (multiline = true)
+                    (bind marginTop "isNormalSize ? 6px : 5px")
+                )
+                (bind htmlText "htmlTextStyle(TextFormat(R.strings.subscription.dashboard.piggyBank.overlayDesc(),
+                    {
+                        credits:htmlTextStyle('' + creditMaxAmount + R.images.gui.maps.icons.library.CreditsIcon_2.tag(), 'CreditsTextStyle'),
+                        gold:htmlTextStyle('' + goldMaxAmount + R.images.gui.maps.icons.library.GoldIcon_2.tag(), 'GoldTextStyle')
+                    }), 
+                    'MainTextStyle','center', leading=-1)"
+                )
+            )
+        )
+    )
+    (hblock 
+        (bind visible "!isOverlayEnable")
+        (style
+            (position = absolute)
+            (width = 100%)
+            (bottom = 34px)
+            (gap = 10px)
+            (align = "center")
+        )
+        
+        (element PiggyStatus
+            (name = 'prem')
+            (style
+                (bind width "blockWidth")
+            )
+            (scope
+                (bind piggyStatusType "PIGGY_STATUS_TYPE.Prem")
+                (bind state "premState")
+                (bind amount "creditCurrentAmount")
+                (bind isFull "creditCurrentAmount == creditMaxAmount")
+            )
+        )
+        (image
+            (name = 'dividerIcon')
+            (class AbsPositionCenterStyle)
+            (source = "R.images.gui.maps.icons.subscription.dashboard_card.piggy_bank.divider()")
+        )
+        (element PiggyStatus
+            (name = 'wotPlus')
+            (style
+                (bind width "blockWidth")
+            )
+            (scope
+                (bind piggyStatusType "PIGGY_STATUS_TYPE.WotPlus")
+                (bind state "wotPlusState")
+                (bind amount "goldCurrentAmount")
+                (bind isFull "goldCurrentAmount == goldMaxAmount")
+            )
+        )
+    )
+    (block
+        (name = 'timeToOpenBlock')
+        (bind visible "isTimeToOpenVisible")
+        (style
+            (position = "absolute")
+            (top = 0)
+            (right = 0)
+        )
+        (image
+            (name = 'cornerIcon')
+            (style
+                (position = "absolute")
+                (align = "right")
+                (top = -1px)
+                (right = -1px)
+            )
+            (source = "R.images.gui.maps.icons.subscription.dashboard_card.piggy_bank.corner()")
+        )
+        (hblock
+            (style
+                (marginTop = 10px)
+                (marginRight = 15px)
+            )
+            (image
+                (name = 'clockIcon')
+                (style
+                    (marginRight = -5px)
+                    (bind marginTop "isNormalSize ? 0px : -6px")
+                )
+                (source = "R.images.gui.maps.icons.library.ClockIcon_1()")
+            )
+            (tf
+                (name = 'timeToOpen')
+                (bind class "isNormalSize ? 'PromoSubTitleTextStyle' : 'HighlightTextStyle'")
+                (bind text "timeLeft(
+                        timeToOpen, 
+                        R.strings.menu.timeLeft.short.day(),
+                        R.strings.menu.timeLeft.short.hour(),
+                        R.strings.menu.timeLeft.short.min(),
+                        R.strings.menu.timeLeft.short.lessMin(),
+                        true
+                    )"
+                    (enabled = "timeToOpen > 0")
+                )
+            )
+        )
+    )
+    (macro HoverCardAndStroke)
+)

@@ -200,6 +200,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .6;
     }
 
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .TextButton_base_b6 {
     display: flex;
     align-items: center;
@@ -335,6 +340,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .TankName_base_f1 {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-start;
+    line-height: 1.3;
 }
 
     .TankName_base__sizeMedium_3a {
@@ -342,6 +349,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         font-size: 24rem;
         font-weight: 400;
         line-height: 1.2;
+    }
+
+    .TankName_base__sizBig_a9 {
+        color: #F2F2F7;
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
     }
 
     .TankName_base__typeWhite_32 {
@@ -359,31 +373,192 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .TankName_type_3c {
     width: 42rem;
     height: 38rem;
-    margin: 0 -10rem;
     background: no-repeat center / contain;
     position: relative;
-    top: -10rem;
 }
 
-.TankName_type__elite_cc {
-        margin: 0 -6rem;
+.TankName_type__extraSmall_80 {
+        margin: 0 -9rem;
+        top: -8rem;
     }
 
-.TankName_base__sizeMedium_3a .TankName_type_3c {
+.TankName_type__medium_ff {
+        top: -16rem;
+    }
+
+.TankName_type__big_9a {
+        top: -10rem;
+    }
+
+.TankName_type__medium_ff,
+    .TankName_type__big_9a {
         width: 83rem;
         height: 73rem;
         margin: 0 -23rem;
-        background: no-repeat center / contain;
-        position: relative;
-        top: -18rem;
     }
 
-.TankName_base__sizeMedium_3a .TankName_type__elite_cc {
-            margin: 0 -16rem;
-        }
+.TankName_type__eliteExtraSmall_74 {
+        margin: 0 -6rem;
+    }
+
+.TankName_type__eliteMedium_10 {
+        margin: 0 -16rem;
+    }
+
+.TankName_type__eliteBig_ac {
+        margin: 0 -13rem;
+    }
 
 .TankName_base__typeColored_bc .TankName_name_56 {
         color: #8C8C7E;
+    }
+
+.TankName_premiumIGR_25 {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 3rem 0 -2rem;
+    background: url('R.images.gui.maps.icons.library.premium_igr_ico') no-repeat center / contain;
+    position: relative;
+    top: 5rem;
+}
+
+.PrestigeProgressLabel_base_85 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.PrestigeProgressLabel_letter_e2 {
+    background: no-repeat center / contain;
+}
+.PrestigeProgressLabel_base__extraSmall_06 .PrestigeProgressLabel_letter_e2 {
+        width: 6rem;
+        height: 12rem;
+    }
+.PrestigeProgressLabel_base__extraSmall_06 .PrestigeProgressLabel_letter__s1_65 {
+            width: 5rem;
+        }
+.PrestigeProgressLabel_base__small_72 .PrestigeProgressLabel_letter_e2 {
+        width: 9rem;
+        height: 19rem;
+    }
+.PrestigeProgressLabel_base__small_72 .PrestigeProgressLabel_letter__s1_65 {
+            width: 8rem;
+        }
+.PrestigeProgressLabel_base__small_72 .PrestigeProgressLabel_letter__s4_f4 {
+            width: 10rem;
+        }
+.PrestigeProgressLabel_base__smallExtended_c9 .PrestigeProgressLabel_letter_e2 {
+        width: 16rem;
+        height: 33rem;
+    }
+.PrestigeProgressLabel_base__smallExtended_c9 .PrestigeProgressLabel_letter__s1_65 {
+            width: 12rem;
+        }
+.PrestigeProgressLabel_base__medium_03 .PrestigeProgressLabel_letter_e2 {
+        width: 23rem;
+        height: 48rem;
+    }
+.PrestigeProgressLabel_base__medium_03 .PrestigeProgressLabel_letter__s1_65 {
+            width: 17rem;
+        }
+.PrestigeProgressLabel_base__mediumExtended_9f .PrestigeProgressLabel_letter_e2 {
+        width: 39rem;
+        height: 88rem;
+    }
+.PrestigeProgressLabel_base__mediumExtended_9f .PrestigeProgressLabel_letter__s1_65 {
+            width: 32rem;
+        }
+.PrestigeProgressLabel_base__large_d2 .PrestigeProgressLabel_letter_e2 {
+        width: 53rem;
+        height: 120rem;
+    }
+.PrestigeProgressLabel_base__large_d2 .PrestigeProgressLabel_letter__s1_65 {
+            width: 43rem;
+        }
+.PrestigeProgressLabel_base__extraLarge_34 .PrestigeProgressLabel_letter_e2 {
+        width: 77rem;
+        height: 176rem;
+    }
+.PrestigeProgressLabel_base__extraLarge_34 .PrestigeProgressLabel_letter__s1_65 {
+            width: 62rem;
+        }
+
+.PrestigeProgressSymbol_base_f8 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+    .PrestigeProgressSymbol_base__extraSmall_05 {
+        width: 48rem;
+        height: 48rem;
+    }
+
+    .PrestigeProgressSymbol_base__small_1c {
+        width: 72rem;
+        height: 72rem;
+    }
+
+    .PrestigeProgressSymbol_base__smallExtended_e0 {
+        width: 115rem;
+        height: 84rem;
+    }
+
+    .PrestigeProgressSymbol_base__medium_24 {
+        width: 170rem;
+        height: 124rem;
+    }
+
+    .PrestigeProgressSymbol_base__mediumExtended_11 {
+        width: 296rem;
+        height: 222rem;
+    }
+
+    .PrestigeProgressSymbol_base__large_3c {
+        width: 400rem;
+        height: 300rem;
+    }
+
+    .PrestigeProgressSymbol_base__extraLarge_a7 {
+        width: 600rem;
+        height: 450rem;
+    }
+.PrestigeProgressSymbol_icon_af {
+    background: no-repeat center / contain;
+    position: absolute;
+}
+.PrestigeProgressSymbol_base__extraSmall_05 .PrestigeProgressSymbol_icon_af {
+        width: 48rem;
+        height: 48rem;
+    }
+.PrestigeProgressSymbol_base__small_1c .PrestigeProgressSymbol_icon_af {
+        width: 72rem;
+        height: 72rem;
+    }
+.PrestigeProgressSymbol_base__smallExtended_e0 .PrestigeProgressSymbol_icon_af {
+        width: 115rem;
+        height: 84rem;
+    }
+.PrestigeProgressSymbol_base__medium_24 .PrestigeProgressSymbol_icon_af {
+        width: 170rem;
+        height: 124rem;
+    }
+.PrestigeProgressSymbol_base__mediumExtended_11 .PrestigeProgressSymbol_icon_af {
+        width: 296rem;
+        height: 222rem;
+    }
+.PrestigeProgressSymbol_base__large_3c .PrestigeProgressSymbol_icon_af {
+        width: 400rem;
+        height: 300rem;
+    }
+.PrestigeProgressSymbol_base__extraLarge_a7 .PrestigeProgressSymbol_icon_af {
+        width: 600rem;
+        height: 450rem;
     }
 
 @keyframes Icon_scaleFadeIn_ed {
@@ -437,6 +612,42 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(360deg);
     }
 }
+.Icon_glow_69 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+}
+.Icon_glow__light_75 {
+        width: 500rem;
+        height: 500rem;
+        margin: -250rem 0 0 -250rem;
+        background: url('R.images.gui.maps.icons.elitewindow.lines') no-repeat center / contain;
+        opacity: 0;
+        mix-blend-mode: screen;
+        animation: Icon_raysAppearance_58 .8s cubic-bezier(.07, .82, .17, 1) .8s 1 forwards, Icon_rotate_b0 120s linear 1.2s infinite forwards;
+        pointer-events: none;
+    }
+.mediaMedium .Icon_glow__light_75 {
+            width: 800rem;
+            height: 800rem;
+            margin: -400rem 0 0 -400rem;
+}
+.Icon_glow__strong_6c {
+        width: 560rem;
+        height: 560rem;
+        margin: -260rem 0 0 -280rem;
+        background: url('swf://gui/flash/animations/eliteWindow/rays.swf') no-repeat center / contain;
+        opacity: 0;
+        mix-blend-mode: screen;
+        animation: Icon_slideUp_00 .8s cubic-bezier(.07, .82, .17, 1) .8s 1 forwards;
+        pointer-events: none;
+    }
+.mediaMedium .Icon_glow__strong_6c {
+            width: 666rem;
+            height: 666rem;
+            margin: -313rem 0 0 -333rem;
+}
 .Icon_base_fe {
     display: flex;
     position: relative;
@@ -449,63 +660,17 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-timing-function: ease-in-out;
     animation-delay: .6s;
     animation-iteration-count: 1;
-    width: 400rem;
-    height: 300rem;
+    width: 300rem;
+    height: 225rem;
     background: center / cover no-repeat;
 }
-.Icon_tankIcon__small_d9,
-    .Icon_tankIcon__extraSmall_bc {
-        width: 350rem;
-        height: 258rem;
-    }
-.Icon_glow_69 {
-    display: flex;
-    position: relative;
-    z-index: -1;
-}
-.Icon_glowLight_dc {
-    width: 800rem;
-    height: 800rem;
-    margin: -400rem 0 0 -400rem;
-    background: url('R.images.gui.maps.icons.elitewindow.lines') no-repeat center / contain;
-    opacity: 0;
-    mix-blend-mode: additive;
-    z-index: 1;
-    animation: Icon_raysAppearance_58 .8s cubic-bezier(.07, .82, .17, 1) .8s 1 forwards, Icon_rotate_b0 120s linear 1.2s infinite forwards;
-    pointer-events: none;
-}
-.Icon_glowLight__small_dd,
-    .Icon_glowLight__extraSmall_5f {
-
-        width: 500rem;
-
-        height: 500rem;
-        margin: -250rem 0 0 -250rem;
-    }
-.Icon_glowStrong_cb {
-    width: 666rem;
-    height: 666rem;
-    margin: -313rem 0 0 -333rem;
-    background: url('swf://gui/flash/animations/eliteWindow/rays.swf') no-repeat center / contain;
-    opacity: 0;
-    mix-blend-mode: additive;
-    animation: Icon_slideUp_00 .8s cubic-bezier(.07, .82, .17, 1) .8s 1 forwards;
-    pointer-events: none;
-}
-.Icon_glowStrong__small_1f,
-    .Icon_glowStrong__extraSmall_e9 {
-        width: 560rem;
-        height: 560rem;
-        margin: -260rem 0 0 -280rem;
-    }
-.Icon_glowLight_dc,
-.Icon_glowStrong_cb {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.mediaMedium .Icon_tankIcon_b2 {
+        width: 400rem;
+        height: 300rem;
+        margin-bottom: 10rem;
 }
 
-@keyframes PostProgresstion_scaleFadeIn_4a {
+@keyframes PostProgression_scaleFadeIn_df {
     0% {
         opacity: 0;
         transform: scale(1.2) translateY(-20rem);
@@ -516,7 +681,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1) translateY(0);
     }
 }
-@keyframes PostProgresstion_slideUp_8d {
+@keyframes PostProgression_slideUp_ff {
     0% {
         opacity: 0;
         transform: translateY(10rem);
@@ -527,7 +692,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-@keyframes PostProgresstion_fadeIn_26 {
+@keyframes PostProgression_fadeIn_4f {
     0% {
         opacity: 0;
     }
@@ -536,7 +701,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-@keyframes PostProgresstion_raysAppearance_05 {
+@keyframes PostProgression_raysAppearance_66 {
     0% {
         opacity: 0;
         transform: translateY(20rem);
@@ -547,7 +712,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-@keyframes PostProgresstion_rotate_17 {
+@keyframes PostProgression_rotate_fe {
     from {
         transform: rotate(0deg);
     }
@@ -556,34 +721,29 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(360deg);
     }
 }
-.PostProgresstion_base_b1 {
+.PostProgression_base_1a {
     display: flex;
-    margin-top: 40rem;
     opacity: 0;
     position: relative;
-    animation-name: PostProgresstion_fadeIn_26;
+    animation-name: PostProgression_fadeIn_4f;
     animation-duration: .2s;
     animation-fill-mode: forwards;
     animation-delay: .8s;
 }
-.PostProgresstion_base__small_c2,
-    .PostProgresstion_base__extraSmall_a3 {
-        margin-top: 30rem;
-    }
-.PostProgresstion_lockWrapper_23 {
+.PostProgression_lockWrapper_29 {
     display: flex;
     position: absolute;
     top: -12rem;
     left: 50%;
     transform: translateX(-50%);
 }
-.PostProgresstion_lock_15 {
+.PostProgression_lock_da {
     width: 17rem;
     height: 24rem;
     background: url('R.images.gui.maps.icons.elitewindow.unlocked_lock') center / cover no-repeat;
     z-index: 1;
 }
-.PostProgresstion_lockCloud_dd {
+.PostProgression_lockCloud_97 {
     width: 400rem;
     height: 300rem;
     margin-top: -6rem;
@@ -593,7 +753,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.PostProgresstion_content_e4 {
+.PostProgression_content_06 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -601,7 +761,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 50rem;
     z-index: 1;
 }
-.PostProgresstion_textBackground_18 {
+.PostProgression_textBackground_89 {
     position: absolute;
     top: 0;
     right: 0;
@@ -611,20 +771,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     opacity: .2;
     z-index: -1;
 }
-.PostProgresstion_text_4a {
+.PostProgression_text_4e {
     color: #E9E2BF;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
 }
-.PostProgresstion_icon_0e {
+.PostProgression_icon_0d {
     width: 40rem;
     height: 24rem;
     margin-top: 3rem;
     background: url('R.images.gui.maps.icons.elitewindow.modification_icon') center / cover no-repeat;
 }
 
-@keyframes Content_scaleFadeIn_96 {
+@keyframes App_scaleFadeIn_16 {
     0% {
         opacity: 0;
         transform: scale(1.2) translateY(-20rem);
@@ -635,7 +795,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1) translateY(0);
     }
 }
-@keyframes Content_slideUp_08 {
+@keyframes App_slideUp_9d {
     0% {
         opacity: 0;
         transform: translateY(10rem);
@@ -646,7 +806,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-@keyframes Content_fadeIn_da {
+@keyframes App_fadeIn_09 {
     0% {
         opacity: 0;
     }
@@ -655,7 +815,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-@keyframes Content_raysAppearance_1b {
+@keyframes App_raysAppearance_1f {
     0% {
         opacity: 0;
         transform: translateY(20rem);
@@ -666,7 +826,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-@keyframes Content_rotate_e9 {
+@keyframes App_rotate_3d {
     from {
         transform: rotate(0deg);
     }
@@ -675,20 +835,56 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(360deg);
     }
 }
+.App_glow_e2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+}
+.App_glow__light_b9 {
+        width: 500rem;
+        height: 500rem;
+        margin: -250rem 0 0 -250rem;
+        background: url('R.images.gui.maps.icons.elitewindow.lines') no-repeat center / contain;
+        opacity: 0;
+        mix-blend-mode: screen;
+        animation: App_raysAppearance_1f .8s cubic-bezier(.07, .82, .17, 1) .8s 1 forwards, App_rotate_3d 120s linear 1.2s infinite forwards;
+        pointer-events: none;
+    }
+.mediaMedium .App_glow__light_b9 {
+            width: 800rem;
+            height: 800rem;
+            margin: -400rem 0 0 -400rem;
+}
+.App_glow__strong_6f {
+        width: 560rem;
+        height: 560rem;
+        margin: -260rem 0 0 -280rem;
+        background: url('swf://gui/flash/animations/eliteWindow/rays.swf') no-repeat center / contain;
+        opacity: 0;
+        mix-blend-mode: screen;
+        animation: App_slideUp_9d .8s cubic-bezier(.07, .82, .17, 1) .8s 1 forwards;
+        pointer-events: none;
+    }
+.mediaMedium .App_glow__strong_6f {
+            width: 666rem;
+            height: 666rem;
+            margin: -313rem 0 0 -333rem;
+}
 body {
     overflow: hidden;
 }
-.Content_base_4c {
+.App_base_55 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
     background: #000000 url('R.images.gui.maps.icons.elitewindow.background') no-repeat center / cover;
     position: relative;
-    animation: Content_window-in_2f .4s both;
+    animation: App_window-in_54 .4s both;
 }
-.Content_backgroundGlare_fe {
+.App_backgroundGlare_1f {
     background: url('R.images.gui.maps.icons.elitewindow.background_glare') no-repeat center / cover;
     mix-blend-mode: screen;
     position: absolute;
@@ -697,73 +893,76 @@ body {
     bottom: 0;
     left: 0;
 }
-.Content_tankName_5e {
+.App_header_1c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50rem;
+}
+.mediaLarge .App_header_1c {
+        margin-top: 80rem;
+}
+.mediaExtraLarge .App_header_1c {
+        margin-top: 100rem;
+}
+.App_tankName_7f {
     opacity: 0;
-    animation-name: Content_slideUp_08;
+    animation-name: App_slideUp_9d;
     animation-duration: .2s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     animation-delay: .2s;
     animation-iteration-count: 1;
-    margin-bottom: -40rem;
+    margin-bottom: -35rem;
 }
-.Content_title_58 {
+.App_title_f1 {
     color: #F2F2F7;
-    font-size: 73rem;
+    font-size: 36rem;
     font-weight: 700;
     line-height: 1.1;
     opacity: 0;
-    animation-name: Content_slideUp_08;
+    animation-name: App_slideUp_9d;
     animation-duration: .2s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     animation-delay: .2s;
     animation-iteration-count: 1;
-    margin-bottom: 200rem;
 }
-.Content_title__large_fe {
-        margin-bottom: 87rem;
-    }
-.Content_title__medium_8e {
-        margin-bottom: 80rem;
-    }
-.Content_title__small_69 {
-        margin-bottom: 56rem;
-    }
-.Content_title__extraSmall_2d {
-        margin-bottom: 27rem;
-    }
-.Content_title__small_69,
-    .Content_title__extraSmall_2d {
+.mediaMedium .App_title_f1 {
         color: #F2F2F7;
-        font-size: 36rem;
+        font-size: 73rem;
         font-weight: 700;
         line-height: 1.1;
-    }
-.Content_contentWrapper_4a {
+}
+.App_mainWrapper_5f {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 120rem;
+    transform: translateY(-15rem);
 }
-.Content_contentWrapper__medium_13,
-    .Content_contentWrapper__large_87 {
-        margin-bottom: 80rem;
+.mediaLarge .App_mainWrapper_5f {
+        transform: translateY(-40rem);
+}
+.mediaExtraLarge .App_mainWrapper_5f {
+        transform: translateY(-60rem);
+}
+.App_mainWrapper__hasPostProgression_86 {
+        transform: translateY(0);
     }
-.Content_contentWrapper__small_43 {
-        margin-bottom: 48rem;
-    }
-.Content_contentWrapper__extraSmall_1f {
-        margin-bottom: 60rem;
-    }
-.Content_content_ba {
+.mediaExtraLarge .App_mainWrapper__hasPostProgression_86 {
+            transform: translateY(-40rem);
+}
+.App_main_9f {
+    display: flex;
+    position: relative;
+}
+.App_content_19 {
     color: #E9E2BF;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
     opacity: 0;
-    animation-name: Content_slideUp_08;
+    animation-name: App_slideUp_9d;
     animation-duration: .2s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
@@ -774,32 +973,126 @@ body {
     text-align: center;
     z-index: 1;
 }
-.Content_content__postProgression_80 {
-        margin-top: 30rem;
+.App_content__postProgression_5f {
+        margin-top: 20rem;
     }
-.Content_content__postProgression_80.Content_content__small_d0,
-        .Content_content__postProgression_80.Content_content__extraSmall_2d {
-            margin-top: 20rem;
-        }
-.Content_buttons_b2 {
+.mediaMedium .App_content__postProgression_5f {
+            margin-top: 30rem;
+}
+.App_buttonGroup_b3 {
     opacity: 0;
-    animation-name: Content_slideUp_08;
+    animation-name: App_slideUp_9d;
     animation-duration: .2s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     animation-delay: 1s;
     animation-iteration-count: 1;
     display: flex;
+    justify-content: center;
+    margin-bottom: 50rem;
 }
-.Content_button_d9 {
+.mediaLarge .App_buttonGroup_b3 {
+        margin-bottom: 80rem;
+}
+.mediaExtraLarge .App_buttonGroup_b3 {
+        margin-bottom: 100rem;
+}
+.App_button_3b {
     width: 160rem;
-    margin: 0 10rem;
-    padding: 0 10rem;
+    height: 32rem;
 }
-.Content_closeButton_92 {
+.mediaLarge .App_button_3b {
+        width: 180rem;
+}
+.App_button_3b + .App_button_3b {
+        margin-left: 20rem;
+    }
+.App_closeButton_5a {
     position: absolute;
     top: 40rem;
     right: 40rem;
     z-index: 1;
+}
+.App_postProgression_6b {
+    margin-top: 51rem;
+}
+.mediaLarge .App_postProgression_6b {
+        margin-top: 90rem;
+}
+.App_arrow_a5 {
+    width: 250rem;
+    height: 250rem;
+    background: url('R.images.gui.maps.icons.elitewindow.arrow') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-40%);
+}
+.mediaMedium .App_arrow_a5 {
+        transform: translate(-40%, 5rem);
+}
+.App_section_f3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400rem;
+}
+.mediaMedium .App_section_f3 {
+        width: 500rem;
+}
+.App_section_f3 + .App_section_f3 {
+        margin-left: 32rem;
+    }
+.mediaSmall .App_section_f3 + .App_section_f3 {
+            margin-left: 48rem;
+}
+.App_section_image_ed {
+    opacity: 0;
+    animation-name: App_scaleFadeIn_16;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: .6s;
+    animation-iteration-count: 1;
+        width: 300rem;
+        height: 225rem;
+        margin-bottom: 16rem;
+    }
+.mediaMedium .App_section_image_ed {
+            width: 400rem;
+            height: 300rem;
+            margin-bottom: 10rem;
+}
+.App_section_body_29 {
+    opacity: 0;
+    animation-name: App_slideUp_9d;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: .4s;
+    animation-iteration-count: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.App_section_title_3d {
+        color: #FEFEEC;
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 8rem;
+    }
+.App_section_description_b4 {
+        justify-content: center;
+        color: #E9E2BF;
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 20rem;
+    }
+.App_prestigeBadge_78 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 

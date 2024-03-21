@@ -118,37 +118,6 @@ in JS 8000 reserved like anchor for start optimization
         background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
     }
 
-.StepEditor_base_f5 {
-    width: 36rem;
-    height: 36rem;
-    background: no-repeat center / contain;
-    position: relative;
-}
-
-    .StepEditor_base__enabled_f4:hover {
-            filter: brightness(1.35);
-        }
-
-    .StepEditor_base__enabled_f4:active {
-            filter: none;
-        }
-
-    .StepEditor_base__minusOff_19 {
-        background-image: url('R.images.gui.maps.icons.tanksetup.shells.minus_off');
-    }
-
-    .StepEditor_base__minusOn_9c {
-        background-image: url('R.images.gui.maps.icons.tanksetup.shells.minus_on');
-    }
-
-    .StepEditor_base__plusOff_af {
-        background-image: url('R.images.gui.maps.icons.tanksetup.shells.plus_off');
-    }
-
-    .StepEditor_base__plusOn_71 {
-        background-image: url('R.images.gui.maps.icons.tanksetup.shells.plus_on');
-    }
-
 .SlideControl_base_c8 {
     width: 11rem;
     height: 26rem;
@@ -215,5 +184,36 @@ in JS 8000 reserved like anchor for start optimization
 
 .Slider_editor__plus_b5 {
         right: -34rem;
+    }
+
+.StepEditor_base_f5 {
+    width: 36rem;
+    height: 36rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+
+    .StepEditor_base__enabled_f4:hover {
+            filter: brightness(1.35);
+        }
+
+    .StepEditor_base__enabled_f4:active {
+            filter: none;
+        }
+
+    .StepEditor_base__minusOff_19 {
+        background-image: url('R.images.gui.maps.icons.tanksetup.shells.minus_off');
+    }
+
+    .StepEditor_base__minusOn_9c {
+        background-image: url('R.images.gui.maps.icons.tanksetup.shells.minus_on');
+    }
+
+    .StepEditor_base__plusOff_af {
+        background-image: url('R.images.gui.maps.icons.tanksetup.shells.plus_off');
+    }
+
+    .StepEditor_base__plusOn_71 {
+        background-image: url('R.images.gui.maps.icons.tanksetup.shells.plus_on');
     }
 

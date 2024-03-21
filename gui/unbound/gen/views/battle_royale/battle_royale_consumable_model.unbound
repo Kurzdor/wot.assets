@@ -1,0 +1,12 @@
+# This file was generated using wgpygen
+#   template: configs/templates/view_model.unbound.jinja2
+#   source: configs/definitions/views/battle_royale/hangar_bottom_panel_view_model.yaml
+# Please, don't edit this file manually.
+(def macro BattleRoyaleConsumableModel()
+    (scope
+        (var iconSource:str = '')
+        (var quantity:number = 0)
+        (var intCD:number = 0)
+        (var tooltipType:str = '')
+    )
+)
