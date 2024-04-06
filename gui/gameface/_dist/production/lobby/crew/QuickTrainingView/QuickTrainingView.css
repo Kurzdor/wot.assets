@@ -1362,21 +1362,19 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .TankmanSkill_background__grey_49 {
-        border: 1rem solid #FFFFFF;
-        opacity: .2;
+        border: 1rem solid rgba(255,255,255, .2);
     }
 
 .TankmanSkill_background__lightYellow_9f {
-        border: 1rem solid #fd9;
+        border: 1rem solid #FFDD99;
     }
 
 .TankmanSkill_background__yellow_e2 {
-        border: 1rem solid #feab34;
+        border: 1rem solid #FEAB34;
     }
 
 .TankmanSkill_background__red_ca {
-        border: 1rem solid #ff2717;
-        opacity: .6;
+        border: 1rem solid rgba(255,39,23, .6);
     }
 
 .TankmanSkill_container_84 {
@@ -1394,9 +1392,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         height: 22rem;
     }
 
-.TankmanSkill_container__disabled_92 {
-        opacity: .5;
-    }
+.TankmanSkill_disabledIcon_25 {
+    opacity: .3;
+}
 
 .TankmanSkill_disabled_ba {
     position: absolute;

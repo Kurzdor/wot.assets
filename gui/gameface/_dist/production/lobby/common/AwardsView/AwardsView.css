@@ -897,7 +897,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 1366rem;
     height: 356rem;
     margin: -121rem 0 0 -683rem;
-    background: url('R.images.gui.maps.icons.battlePass.rewards.ribbon_small') no-repeat center center / contain;
+    background: url('R.images.gui.maps.icons.awards.multipleAwards.ribbon_regular_small') no-repeat center center / contain;
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -908,7 +908,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         width: 1920rem;
         height: 500rem;
         margin: -160rem 0 0 -960rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.rewards.ribbon');
+        background-image: url('R.images.gui.maps.icons.awards.multipleAwards.ribbon_regular');
 }
 .AwardsApp_ribbon__withoutMainRewards_9c {
         top: 100%;

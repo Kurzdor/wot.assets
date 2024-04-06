@@ -327,6 +327,10 @@
 }
 
 .BonusXpBlock_multiplier_unavailable_0c {
+    display: flex;
+    justify-content: center;
+    padding-left: 8rem;
+    padding-right: 8rem;
     color: rgba(255,255,255, 0.6);
     font-size: 14rem;
     font-weight: 400;

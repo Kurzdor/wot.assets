@@ -13,7 +13,8 @@ body {
     cursor: pointer;
 }
 
-    .App_base__disabled_ca {
+    .App_base__disabled_ca,
+    .App_base__postevent_8c {
         border-color: rgba(255, 255, 255, 0.25);
         box-shadow: inset 0 0 8rem rgba(0, 0, 0, 0.05);
     }
@@ -63,7 +64,8 @@ body {
 .App_base_21:hover .App_highlight_af {
         opacity: 1;
     }
-.App_base__disabled_ca .App_highlight_af {
+.App_highlight_af .App_base__disabled_ca,
+    .App_base__postevent_8c .App_highlight_af {
         background: none;
     }
 .App_overlay_7b {
@@ -187,4 +189,7 @@ body {
         line-height: 1.25;
         margin-bottom: 3rem;
 }
+.App_base__postevent_8c .App_seasonDateText_6e {
+        text-shadow: none;
+    }
 
