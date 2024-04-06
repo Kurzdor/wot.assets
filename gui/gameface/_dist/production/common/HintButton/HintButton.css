@@ -1,0 +1,47 @@
+
+.HintButton_base_19 {
+    position: relative;
+}
+
+.HintButton_btnOuter_f9 {
+    display: flex;
+    flex-direction: row;
+    border: 2rem solid #ff981f;
+    border-radius: 6rem;
+}
+
+.HintButton_btnOuter__blink_e7 {
+        border: 2rem solid #ffbd1f;
+    }
+
+.HintButton_animationContainer_c5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+}
+
+.HintButton_buttonContainer_2a {
+    display: flex;
+    flex-direction: row;
+}
+
+.HintButton_btnInner_e4 {
+    display: flex;
+    flex-direction: row;
+    height: 14rem;
+    margin: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border-radius: 2rem;
+    background: #ff981f;
+    color: #000;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 13rem;
+}
+
+.HintButton_btnInner__blink_75 {
+        background: #ffbd1f;
+    }
+

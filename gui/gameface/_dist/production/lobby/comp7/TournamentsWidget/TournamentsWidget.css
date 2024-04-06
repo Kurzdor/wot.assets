@@ -1,0 +1,103 @@
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+.App_base_79 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.App_layer_fb {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.App_layer__logo_90 {
+            background-image: url('R.images.gui.maps.icons.comp7.tournaments.logo');
+        }
+.App_base__extended_1f .App_layer__logo_90 {
+                background-image: url('R.images.gui.maps.icons.comp7.tournaments.logo_extended');
+            }
+.App_layer__scene_6d {
+            background-image: url('R.images.gui.maps.icons.comp7.tournaments.scene');
+        }
+.App_base__extended_1f .App_layer__scene_6d {
+                background-image: url('R.images.gui.maps.icons.comp7.tournaments.scene_extended');
+            }
+.App_layer__shadow_6c {
+            background-image: url('R.images.gui.maps.icons.comp7.tournaments.shadow');
+        }
+.App_base__extended_1f .App_layer__shadow_6c {
+                background-image: url('R.images.gui.maps.icons.comp7.tournaments.shadow_extended');
+            }
+.App_layer__logo_90 {
+        transition: transform 1s cubic-bezier(.07, .82, .17, 1);
+    }
+.App_base_79:hover .App_layer__logo_90 {
+            transform: translateY(-8rem);
+        }
+.App_base__extended_1f:hover .App_layer__logo_90 {
+            transform: translateY(-16rem);
+        }
+.App_layer__scene_6d {
+        transition: transform 2s cubic-bezier(.07, .82, .17, 1);
+    }
+.App_base_79:hover .App_layer__scene_6d {
+            transform: translateX(-2rem) translateY(-1rem);
+        }
+.App_base__extended_1f .App_layer__scene_6d {
+            transition: transform 5s cubic-bezier(.07, .82, .17, 1);
+            mask-image: linear-gradient(to bottom, #000 70%, transparent);
+        }
+.App_base__extended_1f:hover .App_layer__scene_6d {
+            transform: translateX(-4rem) translateY(-3rem);
+        }
+.App_particles_a8 {
+    width: 170rem;
+    height: 103rem;
+    mix-blend-mode: additive;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.App_base__extended_1f .App_particles_a8 {
+        width: 210rem;
+        height: 127rem;
+    }
+.App_content_60 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 0 8rem 12rem;
+    position: relative;
+}
+.App_base__extended_1f .App_content_60 {
+        padding: 0 14rem 20rem;
+    }
+.App_heading_ae,
+.App_text_a5 {
+    justify-content: center;
+}
+.App_heading_ae {
+    color: #FFFFFF;
+    font-size: 15rem;
+    font-weight: 700;
+}
+.App_base__extended_1f .App_heading_ae {
+        margin-bottom: 4rem;
+    }
+.App_text_a5 {
+    color: #E9E2BF;
+    font-size: 14rem;
+}
+

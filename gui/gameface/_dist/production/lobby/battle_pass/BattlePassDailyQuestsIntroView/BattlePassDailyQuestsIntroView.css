@@ -210,13 +210,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, 0.7);
     overflow: hidden;
-    transition: opacity .5s ease-in;
 }
 
-    .App_base__hidden_6d {
-        opacity: 0;
+    .App_base__nonClickable_2e {
         pointer-events: none;
     }
 

@@ -178,6 +178,110 @@
     overflow-wrap: normal;
 }
 
+.SkillIcon_base_43 {
+    display: flex;
+    background: no-repeat center / contain;
+    position: relative;
+}
+
+    .SkillIcon_base__small_d0 {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .SkillIcon_base__c_22x22_14 {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    .SkillIcon_base__medium_d0 {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    .SkillIcon_base__c_36x36_flat_7e {
+        width: 36rem;
+        height: 36rem;
+    }
+
+    .SkillIcon_base__big_ae {
+        width: 52rem;
+        height: 52rem;
+    }
+
+    .SkillIcon_base__dialogs_e5 {
+        width: 180rem;
+        height: 135rem;
+    }
+
+.TankmanSkill_base_84 {
+    position: relative;
+    width: 16rem;
+    height: 16rem;
+}
+
+    .TankmanSkill_base__big_a0 {
+        width: 24rem;
+        height: 24rem;
+    }
+
+.TankmanSkill_background_e5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 2rem;
+    background: rgba(0,0,0, .3);
+}
+
+.TankmanSkill_background__grey_49 {
+        border: 1rem solid rgba(255,255,255, .2);
+    }
+
+.TankmanSkill_background__lightYellow_9f {
+        border: 1rem solid #FFDD99;
+    }
+
+.TankmanSkill_background__yellow_e2 {
+        border: 1rem solid #FEAB34;
+    }
+
+.TankmanSkill_background__red_ca {
+        border: 1rem solid rgba(255,39,23, .6);
+    }
+
+.TankmanSkill_container_84 {
+    width: 14rem;
+    height: 14rem;
+    background: no-repeat 50% / contain;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    pointer-events: none;
+}
+
+.TankmanSkill_base__big_a0 .TankmanSkill_container_84 {
+        width: 22rem;
+        height: 22rem;
+    }
+
+.TankmanSkill_disabledIcon_25 {
+    opacity: .3;
+}
+
+.TankmanSkill_disabled_ba {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    border-radius: 6rem;
+    background: url('R.images.gui.maps.icons.library.disabled_pattern') center / 9rem;
+    opacity: .3;
+}
+
 .FreePerk_base_51 {
     color: #8C8C7E;
     font-size: 14rem;
@@ -189,10 +293,7 @@
 }
 
 .FreePerk_icon_ff {
-    width: 16rem;
-    height: 16rem;
     margin-right: 6rem;
-    background: url('R.images.gui.maps.icons.crew.newSkill') no-repeat 50% / contain;
 }
 
 .FreePerk_perkLevel_ba {

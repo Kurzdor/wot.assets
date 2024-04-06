@@ -554,7 +554,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 24rem;
     font-weight: 400;
     line-height: 1.2;
-    margin-top: -27rem;
+    margin-top: -37rem;
 }
 
 .mediaLarge .AwardsList_value_af {
@@ -639,7 +639,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 0;
     bottom: 0;
     left: 0;
-    background: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.main_bg') no-repeat center / cover;
+    background: url('R.images.battle_royale_progression.gui.maps.backgrounds.main_bg') no-repeat center / cover;
     filter: blur(6.5px);
 }
 
@@ -820,6 +820,49 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         height: 800rem;
 }
 
+.BattleIcon_base_cd {
+    position: relative;
+}
+
+.BattleIcon_block_0d {
+    width: 500rem;
+    height: 500rem;
+    position: relative;
+}
+
+.BattleIcon_icon_f7 {
+    width: 130rem;
+    height: 130rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 185rem;
+    left: 185rem;
+    z-index: 10;
+}
+
+.BattleIcon_base__completed_6e .BattleIcon_icon_f7 {
+        background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_done_130_130');
+    }
+
+.mediaLarge .BattleIcon_base__completed_6e .BattleIcon_icon_f7 {
+            background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_done_150_150');
+}
+
+.BattleIcon_base__inProgress_32 .BattleIcon_icon_f7 {
+        background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_in_progress_130_130');
+    }
+
+.mediaLarge .BattleIcon_base__inProgress_32 .BattleIcon_icon_f7 {
+            background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_in_progress_150_150');
+}
+
+.mediaLarge .BattleIcon_icon_f7 {
+        width: 150rem;
+        height: 150rem;
+        top: 165rem;
+        left: 175rem;
+}
+
 .FormatText_base_d0 {
     display: flex;
     flex-wrap: wrap;
@@ -928,6 +971,24 @@ body {
     margin: 8rem 57rem;
 }
 
+.App_battleIcon_e2 {
+    margin-left: -25rem;
+    position: absolute;
+    top: -155rem;
+}
+
+.mediaMedium .App_battleIcon_e2 {
+        top: -135rem;
+}
+
+.mediaLarge .App_battleIcon_e2 {
+        top: -120rem;
+}
+
+.mediaExtraLarge .App_battleIcon_e2 {
+        top: -100rem;
+}
+
 .App_awards_75 {
     margin-top: 50rem;
     position: relative;
@@ -947,12 +1008,16 @@ body {
     top: 180rem;
 }
 
-.mediaSmall .App_header_e4 {
-        top: 100rem;
+.mediaMedium .App_header_e4 {
+        top: 200rem;
 }
 
-.mediaMedium .App_header_e4 {
-        top: 150rem;
+.mediaLarge .App_header_e4 {
+        top: 220rem;
+}
+
+.mediaExtraLarge .App_header_e4 {
+        top: 250rem;
 }
 
 @keyframes App_windowIn_f3 {

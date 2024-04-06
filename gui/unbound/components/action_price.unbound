@@ -22,7 +22,7 @@
                     (bind lineColor "strikeConfig.line[type]" (enabled = "type!=''"))
                     (bind strikeText "defPrice")
                 )
-                (bind visible "isWithAction && notHideForBootcamp")
+                (bind visible "isWithAction")
             )
         )
     )
@@ -70,8 +70,6 @@
         (var showAction:bool = true)
         (var showValue:bool = true)
         (var config:dict="configExpr")
-        (var notHideForBootcamp:bool = true)
-        (bind notHideForBootcamp "!isBootcamp || action==100")
     )
     (style
         (flow = "Flow.HORIZONTAL")
@@ -85,7 +83,7 @@
         )
         (view_holder 'prefix')
         (block
-            (bind visible "showOldValue && notHideForBootcamp")
+            (bind visible "showOldValue")
             (style
                 (marginRight = 4)
             )
@@ -124,7 +122,7 @@
         )
     )
     (image
-        (bind visible "isWithAction && showAction && notHideForBootcamp")
+        (bind visible "isWithAction && showAction")
         (style
             (marginTop = "config.actionsBGMargins.top")
             (marginRight = "config.actionsBGMargins.right")
@@ -160,7 +158,7 @@
             oldCrystal = "oldCrystal"
             isBuying = "isBuying"
         )
-        (bind enabled "isWithAction && notHideForBootcamp")
+        (bind enabled "isWithAction")
         (content = "R.views.common.tooltip_window.backport_tooltip_content.BackportTooltipContent.resId")
         (decorator = "R.views.common.tooltip_window.tooltip_window.TooltipWindow.resId")
     )

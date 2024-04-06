@@ -46,27 +46,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 2;
 }
-
-.App_layer_10 {
-    width: 416rem;
-    height: 210rem;
-    background: no-repeat center / contain;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.App_layer__under_59 {
-        background-image: url('R.images.gui.maps.icons.battleRoyale.hangar.bottomLayer');
-        z-index: 1;
-    }
-
-.App_layer__above_4b {
-        background-image: url('R.images.gui.maps.icons.battleRoyale.hangar.topLayer');
-        z-index: 3;
-    }
 
 .App_type_40 {
     color: #E9E2BF;

@@ -664,75 +664,39 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     z-index: 1;
 }
 
-.WotPlusIntroViewApp_illustration_00 {
-    width: 450rem;
-    height: 300rem;
-    background: url('R.images.gui.maps.icons.library.WotPlusRewardIllustration_small') center center / contain no-repeat;
+.WotPlusIntroViewApp_body_0f {
+    display: flex;
+    align-items: flex-start;
 }
 
-.mediaMedium .WotPlusIntroViewApp_illustration_00 {
-        width: 800rem;
-        height: 530rem;
-        background: url('R.images.gui.maps.icons.library.WotPlusRewardIllustration') center center / contain no-repeat;
+.WotPlusIntroViewApp_battleBonusIcon_01 {
+    width: 250rem;
+    height: 250rem;
 }
 
-.WotPlusIntroViewApp_informations_16 {
-    width: 485rem;
+.WotPlusIntroViewApp_manageableXPMultiplierIcon_ba {
+    width: 250rem;
+    height: 250rem;
 }
 
-.mediaMedium .WotPlusIntroViewApp_informations_16 {
-        width: 566rem;
+.WotPlusIntroViewApp_tankerBannerIcon_3b {
+    width: 250rem;
+    height: 250rem;
 }
 
-.WotPlusIntroViewApp_informationContent_0e {
-    width: 400rem;
+.WotPlusIntroViewApp_description_4f {
+    text-align: center;
 }
 
-.mediaMedium .WotPlusIntroViewApp_informationContent_0e {
-        width: 450rem;
-}
-
-.WotPlusIntroViewApp_textShadow_78 {
-    text-shadow: 0 0 1rem #000;
-}
-
-.WotPlusIntroViewApp_wotPlusGeneralInfoIcon_e9 {
-    width: 48rem;
-    height: 48rem;
-    background: url('R.images.gui.maps.icons.library.WotPlusGeneralInfoSmall') center center / contain no-repeat;
-}
-
-.mediaMedium .WotPlusIntroViewApp_wotPlusGeneralInfoIcon_e9 {
-        width: 80rem;
-        height: 80rem;
-        background: url('R.images.gui.maps.icons.library.WotPlusGeneralInfo') center center / contain no-repeat;
-}
-
-.WotPlusIntroViewApp_wotPlusCyclesInfoIcon_8e {
-    width: 48rem;
-    height: 48rem;
-    background: url('R.images.gui.maps.icons.library.WotPlusCyclesInfoSmall') center center / contain no-repeat;
-}
-
-.mediaMedium .WotPlusIntroViewApp_wotPlusCyclesInfoIcon_8e {
-        width: 80rem;
-        height: 80rem;
-        background: url('R.images.gui.maps.icons.library.WotPlusCyclesInfo') center center / contain no-repeat;
-}
-
-.WotPlusIntroViewApp_wotPlusRewardsInfoIcon_49 {
-    width: 48rem;
-    height: 48rem;
-    background: url('R.images.gui.maps.icons.library.WotPlusRewardsInfoSmall') center center / contain no-repeat;
-}
-
-.mediaMedium .WotPlusIntroViewApp_wotPlusRewardsInfoIcon_49 {
-        width: 80rem;
-        height: 80rem;
-        background: url('R.images.gui.maps.icons.library.WotPlusRewardsInfo') center center / contain no-repeat;
-}
+.WotPlusIntroViewApp_description_4f div {
+        justify-content: center;
+    }
 
 .WotPlusIntroViewApp_button_a9 {
-    width: 180rem;
+    width: 160rem;
 }
+
+.WotPlusIntroViewApp_button_a9:first-child {
+        margin-right: 17rem;
+    }
 

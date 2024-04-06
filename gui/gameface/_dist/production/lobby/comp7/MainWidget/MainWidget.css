@@ -339,6 +339,13 @@
     color: #A29B70;
 }
 
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8C8C7E;
+}
+
 /* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .QualificationCounter_base_fb {

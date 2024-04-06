@@ -108,6 +108,13 @@
     color: #A29B70;
 }
 
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8C8C7E;
+}
+
 .List_base_65 {
     background: linear-gradient(90deg, #c9c9b600 0%, #c9c9b612 38.22%, #c9c9b612 64.56%, #c9c9b600 100%);
 }

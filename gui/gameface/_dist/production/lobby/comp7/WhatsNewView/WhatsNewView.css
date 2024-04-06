@@ -758,6 +758,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     color: #A29B70;
 }
 
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8C8C7E;
+}
+
 .ActiveSeasonState_base_55 {
     display: flex;
     align-items: center;
@@ -813,9 +820,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .typography_h2_18 {
     color: #FFFFFF;
-    font-size: 22rem;
+    font-size: 18rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.1;
+}
+
+.mediaSmall .typography_h2_18 {
+        color: #FFFFFF;
+        font-size: 22rem;
+        font-weight: 700;
+        line-height: 1.2;
 }
 
 .mediaLarge .typography_h2_18 {
@@ -865,19 +879,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 144rem 0 102rem;
+    padding: 144rem 0 80rem;
 }
     .mediaSmall .Banner_base_a0 {
-        padding: 189rem 0 70rem;
+        padding: 189rem 0 90rem;
 }
     .mediaMedium .Banner_base_a0 {
         padding-top: 171rem;
+        padding-bottom: 110rem;
 }
     .mediaLarge .Banner_base_a0 {
-        padding: 190rem 0 140rem;
+        padding: 190rem 0 170rem;
 }
     .mediaExtraLarge .Banner_base_a0 {
-        padding: 320rem 0 160rem;
+        padding: 320rem 0 180rem;
 }
 
 .Banner_h3_80 {
@@ -948,27 +963,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         margin-left: 7rem;
     }
 
-.Tag_base_b1 {
-    color: #FFFFFF;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    padding: 6rem 10rem;
-    border-radius: 2rem;
-}
-
-    .Tag_base__new_6b {
-        background-color: #c93303;
-    }
-
-    .Tag_base__changed_95 {
-        background-color: #2e7228;
-    }
-
-    .Tag_base__seasonUpdate_2c {
-        background-color: #285772;
-    }
-
 .Introduction_row_38 + .Introduction_row_38 {
         margin-top: 20rem;
     }
@@ -977,6 +971,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .Introduction_h2_a8 {
     color: #FFFFFF;
+    font-size: 22rem;
     line-height: 1;
 }
 .mediaSmall .Introduction_h2_a8 {
@@ -1002,37 +997,48 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .Introduction_introContainer_02 {
     width: 100%;
-    height: 160rem;
+    height: 240rem;
     background-color: rgba(16,20,35, .4);
     position: relative;
     z-index: 0;
 }
 .mediaSmall .Introduction_introContainer_02 {
-        height: 240rem;
+        height: 316rem;
 }
 .mediaLarge .Introduction_introContainer_02 {
-        height: 330rem;
+        height: 430rem;
+}
+.Introduction_introBackgroundWrapper_60 {
+    width: 704rem;
+    height: 348rem;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+.mediaSmall .Introduction_introBackgroundWrapper_60 {
+        width: 1060rem;
+        height: 457rem;
+}
+.mediaLarge .Introduction_introBackgroundWrapper_60 {
+        width: 1440rem;
+        height: 621rem;
 }
 .Introduction_introBackground_a7 {
-    width: 736rem;
-    height: 218rem;
+    width: 803rem;
+    height: 348rem;
+    background: url('R.images.gui.maps.icons.comp7.whatsNewView.introBackground') no-repeat center bottom / cover;
+    position: absolute;
+    bottom: 0;
+    left: 54%;
+    z-index: -1;
+    transform: translateX(-50%);
+    pointer-events: none;
 }
 .mediaSmall .Introduction_introBackground_a7 {
-        width: 1108rem;
-        height: 328rem;
-}
-.mediaLarge .Introduction_introBackground_a7 {
-        width: 1506rem;
-        height: 446rem;
-}
-.Introduction_introBackground_a7 {
-    background: url('R.images.gui.maps.icons.comp7.whatsNewView.introBackground') no-repeat left center / cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
+        width: 100%;
+        height: 100%;
+        left: auto;
+        transform: translateX(0);
 }
 .Introduction_introDescription_5e {
     display: flex;
@@ -1304,18 +1310,48 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-delay: 2250ms;
         }
 
+.Tag_base_b1 {
+    color: #FFFFFF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding: 6rem 10rem;
+    border-radius: 2rem;
+}
+
+    .Tag_base__new_6b {
+        background-color: #c93303;
+    }
+
+    .Tag_base__changed_95 {
+        background-color: #2e7228;
+    }
+
+    .Tag_base__seasonUpdate_2c {
+        background-color: #285772;
+    }
+
+    .Tag_base__revamped_5c {
+        background-color: #5a2872;
+    }
+
+    .Tag_base__returned_6d {
+        background-color: #447228;
+    }
+
 .Map_base_71 {
-    width: 158rem;
-    height: 161rem;
+    width: 220rem;
+    height: 158rem;
     background: no-repeat center / contain;
     position: relative;
+    z-index: 0;
 }
     .mediaSmall .Map_base_71 {
-        width: 241rem;
-        height: 236rem;
+        width: 332rem;
+        height: 240rem;
 }
     .mediaLarge .Map_base_71 {
-        width: 336rem;
+        width: 458rem;
         height: 330rem;
 }
 
@@ -1326,6 +1362,31 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: -1;
+}
+
+.Map_content_66 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100%;
+    padding: 10rem;
+}
+
+.mediaSmall .Map_content_66 {
+        padding: 18rem;
+}
+
+.mediaLarge .Map_content_66 {
+        padding: 20rem;
+}
+
+.Map_nameContainer_a3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1 1;
 }
 
 .Map_name_70 {
@@ -1334,9 +1395,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 700;
     line-height: 1.15;
     text-shadow: 0 4rem 4rem rgba(0, 0, 0, .4), 0 4rem 4rem rgba(0, 0, 0, .25);
-    position: absolute;
-    bottom: 12rem;
-    left: 20rem;
 }
 
 .mediaSmall .Map_name_70 {
@@ -1344,211 +1402,161 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         font-size: 18rem;
         font-weight: 700;
         line-height: 1.1;
-        bottom: 20rem;
 }
 
-.mediaLarge .Map_name_70 {
-        bottom: 24rem;
-        left: 38rem;
-}
-
-.Map_tag_56 {
+.Map_stamp_37 {
     padding: 4rem 10rem;
     border: 2rem solid;
     border-radius: 2rem;
+    font-size: 12rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotateZ(-30deg);
+    transform-origin: 50% 50%;
 }
 
-.mediaSmall .Map_tag_56 {
+.mediaSmall .Map_stamp_37 {
         padding: 6rem 22rem;
 }
 
-.Map_tag__removed_7f {
+.mediaSmall .Map_stamp_37 {
+        font-size: 15rem;
+}
+
+.mediaLarge .Map_stamp_37 {
+        font-size: 20rem;
+}
+
+.Map_stamp__removed_46 {
         border-color: #FF2717;
         background-color: rgba(183, 0, 0, .1);
         color: #FF2717;
-        font-size: 15rem;
-        font-weight: 700;
-        line-height: 1.15;
+        font-size: 18rem;
     }
 
-.mediaSmall .Map_tag__removed_7f {
-            color: #FF2717;
-            font-size: 18rem;
-            font-weight: 700;
-            line-height: 1.1;
+.mediaSmall .Map_stamp__removed_46 {
+            font-size: 22rem;
 }
 
-.mediaLarge .Map_tag__removed_7f {
-            color: #FF2717;
-            font-size: 36rem;
-            font-weight: 700;
-            line-height: 1.1;
+.mediaLarge .Map_stamp__removed_46 {
+            font-size: 28rem;
 }
 
-.Map_tag__underDevelopment_a6 {
+.Map_stamp__underDevelopment_2b {
         border-color: #FFFFFF;
         background-color: rgba(255, 255, 255, .1);
         color: #FFFFFF;
-        font-size: 12rem;
-        font-weight: 700;
-        line-height: 1.2;
-        text-align: center;
     }
 
-.mediaSmall .Map_tag__underDevelopment_a6 {
-            font-size: 15rem;
-}
-
-.mediaLarge .Map_tag__underDevelopment_a6 {
-            font-size: 20rem;
-}
-
 .MapChanges_header_5c {
-    margin-bottom: 10rem;
+    margin-bottom: 16rem;
 }
     .mediaSmall .MapChanges_header_5c {
-        margin-bottom: 16rem;
+        margin-bottom: 28rem;
 }
 
 .MapChanges_legend_43 {
     margin-bottom: 14rem;
 }
 
-.Modifiers_base_c3 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background: url('R.images.gui.maps.icons.comp7.whatsNewView.modifier_bg') no-repeat center / cover;
-}
-
-.Modifiers_tableContainer_9a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 540rem;
-    padding-top: 48rem;
-    padding-bottom: 68rem;
-}
-
-.mediaSmall .Modifiers_tableContainer_9a {
-        width: 700rem;
-        padding-top: 58rem;
-        padding-bottom: 78rem;
-}
-
-.Modifiers_tableHeadingWrapper_b3 {
-    display: flex;
-    align-items: center;
+.SeasonalChanges_base_5c {
+    align-items: stretch;
     width: 100%;
 }
-
-.Modifiers_headingIcon_3c {
-    width: 58rem;
-    height: 76rem;
-    margin: 0 24rem;
-    background: url('R.images.gui.maps.icons.comp7.whatsNewView.modifier_58x76') no-repeat center / cover;
+.SeasonalChanges_row_35 {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
 }
-
-.Modifiers_tableHeading_86 {
+.mediaMedium .SeasonalChanges_row_35 {
+        align-items: center;
+}
+.SeasonalChanges_divider_29 {
+    width: 100%;
+    height: 1rem;
+    margin: 20rem 0;
+    background: linear-gradient(to right, transparent, #fff 50%, transparent);
+    opacity: .1;
+}
+.mediaLarge .SeasonalChanges_divider_29 {
+        margin: 50rem 0;
+}
+.SeasonalChanges_image_6d {
+    width: 90rem;
+    height: 67.5rem;
+    background: no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mediaMedium .SeasonalChanges_image_6d {
+        width: 135rem;
+        height: 101.25rem;
+}
+.mediaLarge .SeasonalChanges_image_6d {
+        width: 180rem;
+        height: 135rem;
+        top: 50%;
+        transform: translateY(-50%);
+}
+.SeasonalChanges_row__shopUpdates_dd .SeasonalChanges_image_6d {
+        background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.improvedAiming');
+    }
+.SeasonalChanges_row__trainingRoom_bb .SeasonalChanges_image_6d {
+        background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.trainingRoom');
+    }
+.SeasonalChanges_rowContainer_58 {
     display: flex;
     flex-direction: column;
     flex: 1 1;
+    padding-left: 102rem;
 }
-
-.Modifiers_description_e3 {
-    margin-top: 8rem;
+.mediaMedium .SeasonalChanges_rowContainer_58 {
+        padding-left: 147rem;
 }
-
-.Modifiers_section_c3 {
+.mediaLarge .SeasonalChanges_rowContainer_58 {
+        padding-left: 192rem;
+}
+.SeasonalChanges_headingContainer_03 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.SeasonalChanges_row__trainingRoom_bb .SeasonalChanges_headingContainer_03 {
+        margin-top: -12rem;
+    }
+.SeasonalChanges_heading_70 {
+    margin-right: 12rem;
+}
+.mediaMedium .SeasonalChanges_heading_70 {
+        margin-right: 20rem;
+}
+.SeasonalChanges_headingTag_c9 {
+    margin: 12rem 0;
+}
+.SeasonalChanges_columnContainer_83 {
+    padding-bottom: 16rem;
+}
+.mediaSmall .SeasonalChanges_columnContainer_83 {
+        padding-bottom: 30rem;
+}
+.SeasonalChanges_tournamentsContainer_1b {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-top: 36rem;
+    justify-content: flex-end;
+    padding: 0 28rem 16rem;
+    background: url('R.images.gui.maps.icons.comp7.whatsNewView.tournaments_bg') no-repeat center top / cover;
 }
-
-.Modifiers_row_c0 {
-    display: flex;
-    padding-left: 24rem;
-    position: relative;
+.mediaSmall .SeasonalChanges_tournamentsContainer_1b {
+        padding: 0 40rem 30rem;
 }
-
-.Modifiers_row_c0 + .Modifiers_row_c0 {
-        margin-top: 20rem;
-    }
-
-.Modifiers_row__heading_7a {
-        align-items: center;
-        height: 56rem;
-        margin-bottom: -8rem;
-        background: linear-gradient(90deg, transparent, rgba(255,255,255, .06) 87%, transparent);
-        color: #FFFFFF;
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
-    }
-
-.Modifiers_dividerContainer_6c {
-    width: 100%;
-    height: 1rem;
-    position: absolute;
-    top: 100%;
-    transform: translateY(12rem);
-    mask-image: linear-gradient(to right, #000 33.33%, transparent 33.33%, transparent);
-    mask-repeat: repeat;
-    mask-size: 3rem 1rem;
-}
-
-.Modifiers_dividerGradient_e7 {
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(90deg, transparent, #c9c9b6 72%, #c9c9b6 90%, transparent);
-    opacity: .2;
-}
-
-.Modifiers_column_b1 {
-    display: flex;
-}
-
-.Modifiers_column__first_bd {
-        flex: 1 1;
-    }
-
-.Modifiers_column__second_dc,
-    .Modifiers_column__third_bb {
-        justify-content: center;
-        flex: 0 1 100rem;
-    }
-
-.Modifiers_columnIcon_92 {
-    width: 40rem;
-    height: 40rem;
-    background: no-repeat center / cover;
-}
-
-.Modifiers_columnIcon__random_c0 {
-        background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.random_40x40');
-    }
-
-.Modifiers_columnIcon__comp7_39 {
-        background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.comp7_40x40');
-    }
-
-.Modifiers_positiveValue_95 {
-    color: #80D43A;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
-
-.mediaMedium .Modifiers_positiveValue_95 {
-        color: #80D43A;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
+.mediaLarge .SeasonalChanges_tournamentsContainer_1b {
+        padding-left: 60rem;
+        padding-right: 60rem;
 }
 
 .VehicleName_base_3b {
@@ -1672,6 +1680,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 
 .Vehicle_base_ae {
+    display: flex;
     width: 220rem;
     height: 158rem;
     background: no-repeat center / contain;
@@ -1696,18 +1705,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Vehicle_details_7d {
-    padding: 8rem 0 12rem 20rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1 1;
+    padding: 0 0 10rem 14rem;
 }
 
 .mediaSmall .Vehicle_details_7d {
-        padding: 8rem 0 24rem 28rem;
+        padding: 0 0 14rem 18rem;
 }
 
 .mediaLarge .Vehicle_details_7d {
-        padding: 8rem 0 32rem 38rem;
+        padding: 0 0 18rem 22rem;
 }
 
 .Vehicle_shortName_02,
@@ -1725,6 +1736,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Vehicle_typeIcon_20.Vehicle_type_01 {
     width: 28rem;
     height: 28rem;
+}
+
+.Vehicle_vehicleRole_4c {
+    transform: translateX(-4rem);
 }
 
 .VehiclesForRent_header_2e {

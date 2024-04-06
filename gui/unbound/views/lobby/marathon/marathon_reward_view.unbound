@@ -48,7 +48,7 @@
                 (bind isVideoPlaying "true" init=false
                     (event "evDelayComplete")
                 )                              
-                (bind sourceName "R.videos.vehicle[videoSource]()" init=false)
+                (bind sourceName "'video://videos/vehicle/'+videoSource+ '.usm'" init=false)
                 (dispatch onVideoStarted on='evOnPlaybackStarted')
                 (dispatch onVideoStopped on='evOnPlaybackStopped')
             )           

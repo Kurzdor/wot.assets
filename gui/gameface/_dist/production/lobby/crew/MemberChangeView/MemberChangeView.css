@@ -952,36 +952,41 @@
 .TankName_type_3c {
     width: 42rem;
     height: 38rem;
-    margin: 0 -9rem;
     background: no-repeat center / contain;
     position: relative;
-    top: -8rem;
 }
 
-.TankName_type__elite_cc {
-        margin: 0 -6rem;
+.TankName_type__extraSmall_80 {
+        margin: 0 -9rem;
+        top: -8rem;
     }
 
-.TankName_base__sizeMedium_3a .TankName_type_3c,
-    .TankName_base__sizeBig_2b .TankName_type_3c {
-        width: 83rem;
-        height: 73rem;
-        margin: 0 -23rem;
+.TankName_type__medium_ff {
         top: -16rem;
     }
 
-.TankName_base__sizeMedium_3a .TankName_type__elite_cc, .TankName_base__sizeBig_2b .TankName_type__elite_cc {
-            margin: 0 -16rem;
-        }
-
-.TankName_base__sizeBig_2b .TankName_type_3c {
-        margin: 0 -23rem;
-        top: -14rem;
+.TankName_type__big_9a {
+        top: -10rem;
     }
 
-.TankName_base__sizeBig_2b .TankName_type__elite_cc {
-            margin: 0 -13rem;
-        }
+.TankName_type__medium_ff,
+    .TankName_type__big_9a {
+        width: 83rem;
+        height: 73rem;
+        margin: 0 -23rem;
+    }
+
+.TankName_type__eliteExtraSmall_74 {
+        margin: 0 -6rem;
+    }
+
+.TankName_type__eliteMedium_10 {
+        margin: 0 -16rem;
+    }
+
+.TankName_type__eliteBig_ac {
+        margin: 0 -13rem;
+    }
 
 .TankName_base__typeColored_bc .TankName_name_56 {
         color: #8C8C7E;
@@ -1064,12 +1069,6 @@
         margin-left: 6rem;
         z-index: 1;
     }
-
-.ButtonsBar_icon_57 {
-    width: 32rem;
-    height: 22rem;
-    position: relative;
-}
 
 .CButton_base_40 {
     display: flex;
@@ -1787,32 +1786,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         height: 256rem;
     }
 
-.TankmanIcon_innerShadow_c6 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: url('R.images.gui.maps.icons.tankmen.crew.icon_shadow') no-repeat center / contain;
-    pointer-events: none;
-}
-
-.AcceleratedTrainingIcon_base_4f {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 16rem;
-    height: 16rem;
-    pointer-events: auto;
-}
-
-.AcceleratedTrainingIcon_icon_45 {
-    width: 34rem;
-    height: 34rem;
-    background: url('R.images.gui.maps.icons.crewWidget.slot.speedXpIcon') no-repeat center / contain;
-}
-
 .SpecializationAndName_base_ef {
     display: flex;
     flex-direction: row;
@@ -1835,25 +1808,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .SpecializationAndName_role__withGap_35 {
         margin-left: 5rem;
     }
-
-.SpecializationAndName_percent_e6 {
-    color: #F2F2F7;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-left: 4rem;
-    opacity: .7;
-    position: relative;
-}
-
-.SpecializationAndName_percent__untrained_1b {
-        color: #FF2717;
-        opacity: 1;
-    }
-
-.SpecializationAndName_acceleratedTrainingIcon_35 {
-    margin: 2rem 0 0 3rem;
-}
 
 .SpecializationAndName_name_aa {
     color: #C9C9B6;
@@ -1907,11 +1861,63 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 106rem;
 }
 
+.EfficiencyIndicator_base_34 {
+    display: flex;
+    justify-content: center;
+    width: 32rem;
+    height: 22rem;
+    border-radius: 2rem;
+    background-color: rgba(0,0,0, .4);
+    position: relative;
+    pointer-events: auto;
+}
+
+.EfficiencyIndicator_percent_6b {
+    margin-top: 2rem;
+    text-shadow: 0 0 12rem rgba(255, 0, 0, 0.7), 0 0 8rem rgba(226, 0, 0, 0.7);
+    position: relative;
+    color: #FFC3BE;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.EfficiencyIndicator_percent__full_30 {
+        color: #FFFFFF;
+        text-shadow: 0 0 15rem rgb(238, 85, 34), 0 0 8rem rgba(254, 171, 52, 0.6), 0 0 4rem rgba(255, 127, 0, 0.25);
+        letter-spacing: -1rem;
+    }
+
+.EfficiencyIndicator_icon_da {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.untrained') no-repeat center / 44rem 36rem;
+}
+
+.AcceleratedTrainingIcon_base_4f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 16rem;
+    height: 16rem;
+    pointer-events: auto;
+}
+
+.AcceleratedTrainingIcon_icon_45 {
+    width: 34rem;
+    height: 34rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.speedXpIcon') no-repeat center / contain;
+}
+
 .LastSkillInfo_base_38 {
     display: flex;
-    flex-direction: row;
     position: relative;
     pointer-events: none;
+}
+
+.LastSkillInfo_levelsContainer_4f {
+    display: flex;
 }
 
 .LastSkillInfo_realLevel_78 {
@@ -1954,6 +1960,42 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         margin: 5rem 0 0 3rem;
     }
 
+.SkillIcon_base_43 {
+    display: flex;
+    background: no-repeat center / contain;
+    position: relative;
+}
+
+    .SkillIcon_base__small_d0 {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .SkillIcon_base__c_22x22_14 {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    .SkillIcon_base__medium_d0 {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    .SkillIcon_base__c_36x36_flat_7e {
+        width: 36rem;
+        height: 36rem;
+    }
+
+    .SkillIcon_base__big_ae {
+        width: 52rem;
+        height: 52rem;
+    }
+
+    .SkillIcon_base__dialogs_e5 {
+        width: 180rem;
+        height: 135rem;
+    }
+
 .TankmanSkill_base_84 {
     position: relative;
     width: 16rem;
@@ -1965,16 +2007,33 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         height: 24rem;
     }
 
-.TankmanSkill_bg_f9 {
+.TankmanSkill_background_e5 {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: no-repeat 50% / contain;
+    border-radius: 2rem;
+    background: rgba(0,0,0, .3);
 }
 
-.TankmanSkill_icon_1b {
+.TankmanSkill_background__grey_49 {
+        border: 1rem solid rgba(255,255,255, .2);
+    }
+
+.TankmanSkill_background__lightYellow_9f {
+        border: 1rem solid #FFDD99;
+    }
+
+.TankmanSkill_background__yellow_e2 {
+        border: 1rem solid #FEAB34;
+    }
+
+.TankmanSkill_background__red_ca {
+        border: 1rem solid rgba(255,39,23, .6);
+    }
+
+.TankmanSkill_container_84 {
     width: 14rem;
     height: 14rem;
     background: no-repeat 50% / contain;
@@ -1984,14 +2043,26 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     pointer-events: none;
 }
 
-.TankmanSkill_base__big_a0 .TankmanSkill_icon_1b {
+.TankmanSkill_base__big_a0 .TankmanSkill_container_84 {
         width: 22rem;
         height: 22rem;
     }
 
-.TankmanSkill_icon__irrelevant_50 {
-        opacity: .4;
-    }
+.TankmanSkill_disabledIcon_25 {
+    opacity: .3;
+}
+
+.TankmanSkill_disabled_ba {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    border-radius: 6rem;
+    background: url('R.images.gui.maps.icons.library.disabled_pattern') center / 9rem;
+    opacity: .3;
+}
 
 .AnimatedNewSkill_base_6b {
     width: 16rem;
@@ -2017,8 +2088,18 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .SkillsList_base_11 {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.SkillsList_efficiency_72 {
+    margin: -1rem 4rem 0 0;
+}
+
+.SkillsList_container_c7 {
+    display: flex;
     flex-direction: column;
-    height: 30rem;
     position: relative;
 }
 
@@ -2830,19 +2911,25 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.3;
 }
 
-.Content_levelPercentage_f1 {
-    color: #FFFFFF;
+.DismissedCountdown_base_12 {
+    display: flex;
+    align-items: center;
+    height: 32rem;
+}
+
+.DismissedCountdown_icon_e6 {
+    width: 32rem;
+    height: 32rem;
+    background: url('R.images.gui.maps.icons.components.countdown.clock') no-repeat center / contain;
+}
+
+.DismissedCountdown_label_92 {
+    color: #FFDD99;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
-    margin-left: 2rem;
-    position: relative;
-    top: -1rem;
+    margin-left: -2rem;
 }
-
-.Content_levelPercentage__red_c9 {
-        color: #FF2717;
-    }
 
 .Location_base_4d {
     display: flex;
@@ -2850,10 +2937,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Location_duration_5d {
-    color: #E9E2BF;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
+    position: relative;
+    top: -5rem;
 }
 
 .Location_icon_eb {
@@ -2872,21 +2957,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .Skill_base_a9 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding-left: 2rem;
-    padding-bottom: 2rem;
+    align-items: center;
 }
-
-    .Skill_base__double_7a {
-        width: 44rem;
-    }
-
-    .Skill_base__collapsed_6e {
-        width: 20rem;
-        margin-right: -2rem;
-        overflow: hidden;
-    }
 
 .Skill_skillLevel_85 {
     color: #FEAB34;
@@ -2895,14 +2967,69 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.25;
     display: flex;
     flex-wrap: nowrap;
+    height: 22rem;
     padding-left: 6rem;
 }
 
 .Skills_base_d8 {
     display: flex;
-    flex-direction: row;
+}
+
+.Skills_skillsEfficiencyWrapper_13 {
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+.Skills_skillsEfficiencyWrapper__singleRow_c9 {
+        position: relative;
+        top: 1rem;
+    }
+
+.Skills_skillsEfficiency_10 {
+    pointer-events: none;
+}
+
+.Skills_skillsList_85 {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 }
+
+.Skills_skillsRow_e6 {
+    display: flex;
+    position: relative;
+}
+
+.Skills_skillsRow_e6 + .Skills_skillsRow_e6 {
+        margin-top: 2rem;
+    }
+
+.Skills_skill_8e {
+    margin-right: 2rem;
+}
+
+.Skills_skill__last_8c {
+        margin-right: 0;
+    }
+
+.Skills_skill__collapsed_b9,
+    .Skills_skill__extraCollapsed_8a {
+        margin: 0;
+        overflow: hidden;
+    }
+
+.Skills_skill__collapsed_b9.Skills_skill__last_8c, .Skills_skill__extraCollapsed_8a.Skills_skill__last_8c {
+            width: auto;
+        }
+
+.Skills_skill__collapsed_b9 {
+        width: 16rem;
+    }
+
+.Skills_skill__extraCollapsed_8a {
+        width: 14rem;
+    }
 
 .ThemeHelper_base_39 {
     display: flex;
@@ -3052,13 +3179,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .5;
     }
 .TankmanCard_skills_ef {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 262rem;
-    margin-left: -2rem;
-    margin-top: -1rem;
-    margin-bottom: -2rem;
+    margin-top: 1rem;
 }
 .TankmanCard_helperLayer_09 {
     position: absolute;
@@ -3068,6 +3189,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
     z-index: 3;
 }
+.TankmanCard_helperLayer__error_2a {
+        background-image: radial-gradient(150% 100% at 0% 100%, rgba(177, 0, 21, 0.25) 0%, rgba(177, 0, 21, 0) 50%);
+    }
 
 .VirtualGrid_base_52 {
     display: flex;

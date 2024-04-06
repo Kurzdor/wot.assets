@@ -672,6 +672,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     color: #A29B70;
 }
 
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8C8C7E;
+}
+
 .Header_base_11 {
     display: flex;
     flex-direction: column;
@@ -1051,6 +1058,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .Rating_seasonPoints_49 {
     display: flex;
+    position: relative;
+    z-index: 1;
 }
 .Rating_point_b1 + .Rating_point_b1 {
         margin-left: -10rem;

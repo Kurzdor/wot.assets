@@ -15,6 +15,7 @@
     width: 420rem;
     padding: 11rem 20rem 8rem;
     line-height: normal;
+    overflow: hidden;
 }
 .App_section_e9 {
     background: linear-gradient(90deg, transparent, rgba(201,201,182, .07) 37%, rgba(201,201,182, .07) 63%, transparent);

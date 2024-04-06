@@ -197,42 +197,6 @@
     height: 8rem;
 }
 
-.ButtonsBar_base_9c {
-    display: flex;
-    flex-direction: row;
-    width: 336rem;
-    height: 35rem;
-    background: url('R.images.gui.maps.icons.crewWidget.buttonsBar.background') no-repeat center / contain;
-    position: relative;
-}
-
-.ButtonsBar_button_d1 {
-    width: 44rem;
-    height: 20rem;
-    margin-top: 7rem;
-    position: relative;
-}
-
-.ButtonsBar_button__crewOperaions_70 {
-        margin-left: 8rem;
-    }
-
-.ButtonsBar_button__crewBooks_b4 {
-        margin-left: 12rem;
-        z-index: 2;
-    }
-
-.ButtonsBar_button__toggle_64 {
-        margin-left: 6rem;
-        z-index: 1;
-    }
-
-.ButtonsBar_icon_57 {
-    width: 32rem;
-    height: 22rem;
-    position: relative;
-}
-
 .CButton_base_40 {
     display: flex;
     justify-content: center;
@@ -433,6 +397,140 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 .CButton_base__disabled_d9 .CButton_content_cc {
         opacity: .6;
+    }
+
+.Countdown_base_fe {
+    display: flex;
+    align-items: center;
+}
+
+.Countdown_icon_8b {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+}
+
+.Countdown_description_8d {
+    color: #FFDD99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.ConversionBannerWidgetApp_base_08 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 20rem 0 15rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .ConversionBannerWidgetApp_base__disabled_79 {
+        cursor: default;
+    }
+
+.ConversionBannerWidgetApp_background_c7 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1rem solid rgba(255, 255, 255, .25);
+    background-color: #23231c;
+    transition: background-color .3s;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #000000 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.ConversionBannerWidgetApp_base__hovered_e9 .ConversionBannerWidgetApp_background_c7 {
+        background-color: #2e2e28;
+    }
+
+.ConversionBannerWidgetApp_backgroundImage_96 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.gui.maps.icons.crew.conversionBannerBg') repeat-x center / 840rem 70rem;
+    opacity: .1;
+}
+
+.ConversionBannerWidgetApp_fullSize_7f {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.ConversionBannerWidgetApp_button_fc {
+    margin-left: 15rem;
+    padding: 0;
+    position: relative;
+}
+
+.ConversionBannerWidgetApp_buttonGlow_57 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1rem solid rgba(255, 221, 153, 1);
+    filter: drop-shadow(0 0 8rem rgba(238, 85, 34, .85)) drop-shadow(0 0 4rem rgba(255, 42, 0, .85)) drop-shadow(0 0 2rem rgba(255, 127, 0, 0.22));
+}
+
+.ConversionBannerWidgetApp_buttonText_70 {
+    color: #E9E2BF;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    padding: 6rem 15rem 8rem;
+}
+
+.ConversionBannerWidgetApp_text_63 {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    position: relative;
+    bottom: 2rem;
+}
+
+.ConversionBannerWidgetApp_countdown_f9 {
+    position: relative;
+    z-index: 1;
+}
+
+.ButtonsBar_base_9c {
+    display: flex;
+    flex-direction: row;
+    width: 336rem;
+    height: 35rem;
+    background: url('R.images.gui.maps.icons.crewWidget.buttonsBar.background') no-repeat center / contain;
+    position: relative;
+}
+
+.ButtonsBar_button_d1 {
+    width: 44rem;
+    height: 20rem;
+    margin-top: 7rem;
+    position: relative;
+}
+
+.ButtonsBar_button__crewOperaions_70 {
+        margin-left: 8rem;
+    }
+
+.ButtonsBar_button__crewBooks_b4 {
+        margin-left: 12rem;
+        z-index: 2;
+    }
+
+.ButtonsBar_button__toggle_64 {
+        margin-left: 6rem;
+        z-index: 1;
     }
 
 .Counter_base_9e {
@@ -1032,32 +1130,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         height: 256rem;
     }
 
-.TankmanIcon_innerShadow_c6 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: url('R.images.gui.maps.icons.tankmen.crew.icon_shadow') no-repeat center / contain;
-    pointer-events: none;
-}
-
-.AcceleratedTrainingIcon_base_4f {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 16rem;
-    height: 16rem;
-    pointer-events: auto;
-}
-
-.AcceleratedTrainingIcon_icon_45 {
-    width: 34rem;
-    height: 34rem;
-    background: url('R.images.gui.maps.icons.crewWidget.slot.speedXpIcon') no-repeat center / contain;
-}
-
 .SpecializationAndName_base_ef {
     display: flex;
     flex-direction: row;
@@ -1080,25 +1152,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .SpecializationAndName_role__withGap_35 {
         margin-left: 5rem;
     }
-
-.SpecializationAndName_percent_e6 {
-    color: #F2F2F7;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-left: 4rem;
-    opacity: .7;
-    position: relative;
-}
-
-.SpecializationAndName_percent__untrained_1b {
-        color: #FF2717;
-        opacity: 1;
-    }
-
-.SpecializationAndName_acceleratedTrainingIcon_35 {
-    margin: 2rem 0 0 3rem;
-}
 
 .SpecializationAndName_name_aa {
     color: #C9C9B6;
@@ -1152,11 +1205,63 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 106rem;
 }
 
+.EfficiencyIndicator_base_34 {
+    display: flex;
+    justify-content: center;
+    width: 32rem;
+    height: 22rem;
+    border-radius: 2rem;
+    background-color: rgba(0,0,0, .4);
+    position: relative;
+    pointer-events: auto;
+}
+
+.EfficiencyIndicator_percent_6b {
+    margin-top: 2rem;
+    text-shadow: 0 0 12rem rgba(255, 0, 0, 0.7), 0 0 8rem rgba(226, 0, 0, 0.7);
+    position: relative;
+    color: #FFC3BE;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.EfficiencyIndicator_percent__full_30 {
+        color: #FFFFFF;
+        text-shadow: 0 0 15rem rgb(238, 85, 34), 0 0 8rem rgba(254, 171, 52, 0.6), 0 0 4rem rgba(255, 127, 0, 0.25);
+        letter-spacing: -1rem;
+    }
+
+.EfficiencyIndicator_icon_da {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.untrained') no-repeat center / 44rem 36rem;
+}
+
+.AcceleratedTrainingIcon_base_4f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 16rem;
+    height: 16rem;
+    pointer-events: auto;
+}
+
+.AcceleratedTrainingIcon_icon_45 {
+    width: 34rem;
+    height: 34rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.speedXpIcon') no-repeat center / contain;
+}
+
 .LastSkillInfo_base_38 {
     display: flex;
-    flex-direction: row;
     position: relative;
     pointer-events: none;
+}
+
+.LastSkillInfo_levelsContainer_4f {
+    display: flex;
 }
 
 .LastSkillInfo_realLevel_78 {
@@ -1199,6 +1304,42 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         margin: 5rem 0 0 3rem;
     }
 
+.SkillIcon_base_43 {
+    display: flex;
+    background: no-repeat center / contain;
+    position: relative;
+}
+
+    .SkillIcon_base__small_d0 {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .SkillIcon_base__c_22x22_14 {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    .SkillIcon_base__medium_d0 {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    .SkillIcon_base__c_36x36_flat_7e {
+        width: 36rem;
+        height: 36rem;
+    }
+
+    .SkillIcon_base__big_ae {
+        width: 52rem;
+        height: 52rem;
+    }
+
+    .SkillIcon_base__dialogs_e5 {
+        width: 180rem;
+        height: 135rem;
+    }
+
 .TankmanSkill_base_84 {
     position: relative;
     width: 16rem;
@@ -1210,16 +1351,33 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         height: 24rem;
     }
 
-.TankmanSkill_bg_f9 {
+.TankmanSkill_background_e5 {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: no-repeat 50% / contain;
+    border-radius: 2rem;
+    background: rgba(0,0,0, .3);
 }
 
-.TankmanSkill_icon_1b {
+.TankmanSkill_background__grey_49 {
+        border: 1rem solid rgba(255,255,255, .2);
+    }
+
+.TankmanSkill_background__lightYellow_9f {
+        border: 1rem solid #FFDD99;
+    }
+
+.TankmanSkill_background__yellow_e2 {
+        border: 1rem solid #FEAB34;
+    }
+
+.TankmanSkill_background__red_ca {
+        border: 1rem solid rgba(255,39,23, .6);
+    }
+
+.TankmanSkill_container_84 {
     width: 14rem;
     height: 14rem;
     background: no-repeat 50% / contain;
@@ -1229,14 +1387,26 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     pointer-events: none;
 }
 
-.TankmanSkill_base__big_a0 .TankmanSkill_icon_1b {
+.TankmanSkill_base__big_a0 .TankmanSkill_container_84 {
         width: 22rem;
         height: 22rem;
     }
 
-.TankmanSkill_icon__irrelevant_50 {
-        opacity: .4;
-    }
+.TankmanSkill_disabledIcon_25 {
+    opacity: .3;
+}
+
+.TankmanSkill_disabled_ba {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    border-radius: 6rem;
+    background: url('R.images.gui.maps.icons.library.disabled_pattern') center / 9rem;
+    opacity: .3;
+}
 
 .AnimatedNewSkill_base_6b {
     width: 16rem;
@@ -1262,8 +1432,18 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .SkillsList_base_11 {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.SkillsList_efficiency_72 {
+    margin: -1rem 4rem 0 0;
+}
+
+.SkillsList_container_c7 {
+    display: flex;
     flex-direction: column;
-    height: 30rem;
     position: relative;
 }
 
@@ -1899,34 +2079,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Currency_base__extraLarge_4d .Currency_icon__equipCoin-extraLarge_8a {
             transform: translateX(2rem) translateY(4rem);
         }
-.Currency_icon__stpCoin-small_6b {
-        --icon-height: 16rem;
-        margin-right: -2rem;
-        background-image: url('R.images.gui.maps.icons.library.stpcoin.stpcoinSmall');
-    }
-.Currency_base__small_af .Currency_icon__stpCoin-small_6b {
-            transform: translateX(-1rem) translateY(1rem);
-        }
-.Currency_icon__stpCoin-big_da {
-        --icon-height: 24rem;
-        background-image: url('R.images.gui.maps.icons.library.stpcoin.stpcoinBig');
-    }
-.Currency_base__big_bc .Currency_icon__stpCoin-big_da {
-            transform: translateX(-5rem) translateY(3rem);
-        }
-.Currency_icon__stpCoin-large_ee {
-        --icon-height: 48rem;
-        margin-right: 2rem;
-        background-image: url('R.images.gui.maps.icons.library.stpcoin.stpcoinLarge');
-    }
-.Currency_icon__stpCoin-extraLarge_fa {
-        --icon-height: 80rem;
-        margin-right: 8rem;
-        background-image: url('R.images.gui.maps.icons.library.stpcoin.stpcoinExtraLarge');
-    }
-.Currency_base__extraLarge_4d .Currency_icon__stpCoin-extraLarge_fa {
-            transform: translateX(2rem) translateY(4rem);
-        }
 .Currency_value_e1 {
     /* font-size inherit does not work here, so 1em means the size does not change */
     /* stylelint-disable-next-line */
@@ -1968,8 +2120,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 .Currency_value__xp_b0,
     .Currency_value__crystal_19,
-    .Currency_value__equipCoin_d0,
-    .Currency_value__stpCoin_38 {
+    .Currency_value__equipCoin_d0 {
         color: #C9C9B6;
     }
 .Currency_base__small_af .Currency_value__notEnough_56 {
@@ -2543,6 +2694,30 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         padding-left: 415rem;
 }
 
+.CrewBooksSection_topButtons_2a {
+    left: 361rem;
+}
+
+.mediaSmall .CrewBooksSection_topButtons_2a {
+        left: 406rem;
+}
+
+.CrewBooksSection_base__centered_be .CrewBooksSection_topButtons_2a {
+        left: calc((100vw - 616rem)/2 - 9rem);
+    }
+
+.mediaSmall .CrewBooksSection_base__centered_be .CrewBooksSection_topButtons_2a {
+            left: calc((100vw - 848rem)/2 - 9rem);
+}
+
+.mediaMedium .CrewBooksSection_base__centered_be .CrewBooksSection_topButtons_2a {
+            left: calc((100vw - 1048rem)/2 - 9rem);
+}
+
+.mediaLarge .CrewBooksSection_base__centered_be .CrewBooksSection_topButtons_2a {
+            left: calc((100vw - 1254rem)/2 - 9rem);
+}
+
 .CrewBooksSection_mainContentWrapper_2a {
     display: flex;
     padding-top: 51rem;
@@ -2682,4 +2857,21 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex: 1;
     padding: 26rem 20rem 0;
 }
+
+.QuickTrainingViewApp_conversionBanner_30 {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    bottom: 35rem;
+    left: 0;
+    transform: translateY(10rem);
+    transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+    pointer-events: none;
+}
+
+.QuickTrainingViewApp_conversionBanner__visible_46 {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
 

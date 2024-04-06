@@ -1,6 +1,5 @@
 (def element HangarBottomPanelCmp() layout=true entrance=true
     (macro HangarBottomPanelViewModel)
-    (macro EquipmentPanelCmpRentStates)
     (name = 'HangarBottomPanelCmp')
     
     (style
@@ -100,7 +99,6 @@
         )
         (label = "R.strings.battle_royale.button.repair()")
         (dispatch onRepairBtnClicked on='clicked')
-        (bind visible "rentState != STATE_TEST_DRIVE_AVAILABLE && rentState != STATE_RENT_AVAILABLE")
         (bind enabled "!isVehicleInBattle")
         (controller $ToolTip
             (args
@@ -192,7 +190,7 @@
             (marginTop = -18px)
             (marginBottom = -3px)
         )
-        (text = "R.strings.battle_royale.vehRentBlock.inBattle()")
+        (text = "R.strings.menu.currentVehicleStatus.battle()")
         (bind visible "isVehicleInBattle")
     )
 )

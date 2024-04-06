@@ -227,6 +227,13 @@
     color: #A29B70;
 }
 
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8C8C7E;
+}
+
 .Background_base_1b {
     position: absolute;
     top: 0;
@@ -450,11 +457,16 @@
     white-space: nowrap;
     opacity: 0;
     position: absolute;
-    bottom: -8rem;
     transform: translateY(-5rem);
     transition: transform .25s ease-out,
         opacity .25s ease-out;
 }
+.IconButton_label__small_3a {
+        bottom: -2rem;
+    }
+.IconButton_label__normal_ef {
+        bottom: -8rem;
+    }
 .IconButton_base__visibleLabel_3a .IconButton_label_73,
     .IconButton_base__hovered_26 .IconButton_label_73 {
         opacity: 1;

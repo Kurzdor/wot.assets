@@ -1579,6 +1579,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     color: #A29B70;
 }
 
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8C8C7E;
+}
+
 .NoRecordsState_base_9b {
     display: flex;
     flex-direction: column;
@@ -4312,7 +4319,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
-.Heading_rankEmblem__future_6d {
+.Heading_rankEmblem__inactive_8a {
         opacity: .5;
     }
 
@@ -4419,11 +4426,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     white-space: nowrap;
     opacity: 0;
     position: absolute;
-    bottom: -8rem;
     transform: translateY(-5rem);
     transition: transform .25s ease-out,
         opacity .25s ease-out;
 }
+.IconButton_label__small_3a {
+        bottom: -2rem;
+    }
+.IconButton_label__normal_ef {
+        bottom: -8rem;
+    }
 .IconButton_base__visibleLabel_3a .IconButton_label_73,
     .IconButton_base__hovered_26 .IconButton_label_73 {
         opacity: 1;
@@ -5792,34 +5804,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Currency_base__extraLarge_4d .Currency_icon__equipCoin-extraLarge_8a {
             transform: translateX(2rem) translateY(4rem);
         }
-.Currency_icon__stpCoin-small_6b {
-        --icon-height: 16rem;
-        margin-right: -2rem;
-        background-image: url('R.images.gui.maps.icons.library.stpcoin.stpcoinSmall');
-    }
-.Currency_base__small_af .Currency_icon__stpCoin-small_6b {
-            transform: translateX(-1rem) translateY(1rem);
-        }
-.Currency_icon__stpCoin-big_da {
-        --icon-height: 24rem;
-        background-image: url('R.images.gui.maps.icons.library.stpcoin.stpcoinBig');
-    }
-.Currency_base__big_bc .Currency_icon__stpCoin-big_da {
-            transform: translateX(-5rem) translateY(3rem);
-        }
-.Currency_icon__stpCoin-large_ee {
-        --icon-height: 48rem;
-        margin-right: 2rem;
-        background-image: url('R.images.gui.maps.icons.library.stpcoin.stpcoinLarge');
-    }
-.Currency_icon__stpCoin-extraLarge_fa {
-        --icon-height: 80rem;
-        margin-right: 8rem;
-        background-image: url('R.images.gui.maps.icons.library.stpcoin.stpcoinExtraLarge');
-    }
-.Currency_base__extraLarge_4d .Currency_icon__stpCoin-extraLarge_fa {
-            transform: translateX(2rem) translateY(4rem);
-        }
 .Currency_value_e1 {
     /* font-size inherit does not work here, so 1em means the size does not change */
     /* stylelint-disable-next-line */
@@ -5861,8 +5845,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 .Currency_value__xp_b0,
     .Currency_value__crystal_19,
-    .Currency_value__equipCoin_d0,
-    .Currency_value__stpCoin_38 {
+    .Currency_value__equipCoin_d0 {
         color: #C9C9B6;
     }
 .Currency_base__small_af .Currency_value__notEnough_56 {
@@ -7748,12 +7731,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .AdditionalRewards_reward_e8 {
-    margin: 0;
+    margin: 0 6rem;
 }
-
-    .AdditionalRewards_reward_e8 + .AdditionalRewards_reward_e8 {
-        margin-left: 12rem;
-    }
 
 .SeasonPoint_base_a1 {
     position: relative;
@@ -7919,12 +7898,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
             --content-spacing: 60rem;
 }
     .mediaExtraLarge .CardContent_base__withVehicle_b1 {
-            --content-spacing: 106rem;
+            --content-spacing: 86rem;
 }
     .CardContent_base__collapsed_a6:hover {
             background: linear-gradient(180deg, transparent, rgba(175, 231, 255, 0.2) 60%, transparent);
         }
-
 .CardContent_bigLock_fb {
     width: 112rem;
     height: 199rem;
@@ -7938,27 +7916,22 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition: opacity .25s ease-in;
     pointer-events: none;
 }
-
 .mediaMedium .CardContent_bigLock_fb {
         width: 180rem;
         height: 321rem;
         bottom: 108rem;
 }
-
 .mediaLarge .CardContent_bigLock_fb {
         width: 231rem;
         height: 412rem;
         bottom: 115rem;
 }
-
 .mediaExtraLarge .CardContent_bigLock_fb {
         bottom: 122rem;
 }
-
 .CardContent_bigLock__visible_00 {
         opacity: 1;
     }
-
 .CardContent_lock_a5 {
     width: 16rem;
     height: 25rem;
@@ -7972,247 +7945,284 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition: opacity .25s linear;
     pointer-events: none;
 }
-
 .mediaMedium .CardContent_lock_a5 {
         width: 24rem;
         height: 39rem;
         background-image: url('R.images.gui.maps.icons.comp7.icons.lock_24x39');
         bottom: 145rem;
 }
-
 .mediaLarge .CardContent_lock_a5 {
         bottom: 156rem;
 }
-
 .mediaExtraLarge .CardContent_lock_a5 {
         bottom: 180rem;
 }
-
 .CardContent_lock__visible_2e {
         opacity: 1;
     }
-
-.CardContent_vehicleContainer_43 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 232rem;
-    height: 150rem;
+.CardContent_vehicleImageWrapper_84 {
+    width: 180rem;
+    height: 104rem;
     position: absolute;
+    z-index: 0;
     transition: transform .25s linear;
 }
-
-.mediaSmall .CardContent_vehicleContainer_43 {
-        width: 260rem;
+.mediaSmall .CardContent_vehicleImageWrapper_84 {
+        width: 220rem;
+        height: 124rem;
 }
-
-.mediaMedium .CardContent_vehicleContainer_43 {
-        width: 360rem;
-        height: 230rem;
+.mediaMedium .CardContent_vehicleImageWrapper_84 {
+        width: 310rem;
+        height: 180rem;
 }
-
-.mediaLarge .CardContent_vehicleContainer_43 {
-        width: 550rem;
-        height: 380rem;
+.mediaLarge .CardContent_vehicleImageWrapper_84 {
+        width: 444rem;
+        height: 260rem;
 }
-
-.mediaExtraLarge .CardContent_vehicleContainer_43 {
-        width: 690rem;
-        height: 500rem;
+.mediaExtraLarge .CardContent_vehicleImageWrapper_84 {
+        width: 542rem;
+        height: 310rem;
 }
-
-.CardContent_base__selected_ce .CardContent_vehicleContainer_43 {
-        transform: translate(-3rem, 68rem);
+.CardContent_base__selected_ce .CardContent_vehicleImageWrapper_84 {
+        transform: translate(23rem, 91rem);
     }
-
-.mediaSmall .CardContent_base__selected_ce .CardContent_vehicleContainer_43 {
-            transform: translate(32rem, 67rem);
+.mediaSmall .CardContent_base__selected_ce .CardContent_vehicleImageWrapper_84 {
+            transform: translate(52rem, 79rem);
 }
-
-.mediaMedium .CardContent_base__selected_ce .CardContent_vehicleContainer_43 {
-            transform: translate(38rem, 69rem);
+.mediaMedium .CardContent_base__selected_ce .CardContent_vehicleImageWrapper_84 {
+            transform: translate(63rem, 93rem);
 }
-
-.mediaLarge .CardContent_base__selected_ce .CardContent_vehicleContainer_43 {
-            transform: translate(8rem, 50rem);
+.mediaLarge .CardContent_base__selected_ce .CardContent_vehicleImageWrapper_84 {
+            transform: translate(61rem, 111rem);
 }
-
-.mediaExtraLarge .CardContent_base__selected_ce .CardContent_vehicleContainer_43 {
-            transform: translate(56rem, 116rem);
+.mediaExtraLarge .CardContent_base__selected_ce .CardContent_vehicleImageWrapper_84 {
+            transform: translate(130rem, 210rem);
 }
-
-.CardContent_base__collapsed_a6 .CardContent_vehicleContainer_43 {
-        transform: translate(-68rem, 68rem);
+.CardContent_base__collapsed_a6 .CardContent_vehicleImageWrapper_84 {
+        transform: translate(-42rem, 91rem);
     }
-
-.mediaSmall .CardContent_base__collapsed_a6 .CardContent_vehicleContainer_43 {
-            transform: translate(-78rem, 67rem);
+.mediaSmall .CardContent_base__collapsed_a6 .CardContent_vehicleImageWrapper_84 {
+            transform: translate(-57rem, 79rem);
 }
-
-.mediaMedium .CardContent_base__collapsed_a6 .CardContent_vehicleContainer_43 {
-            transform: translate(-97rem, 69rem);
+.mediaMedium .CardContent_base__collapsed_a6 .CardContent_vehicleImageWrapper_84 {
+            transform: translate(-71rem, 93rem);
 }
-
-.mediaLarge .CardContent_base__collapsed_a6 .CardContent_vehicleContainer_43 {
-            transform: translate(-163rem, 50rem);
+.mediaLarge .CardContent_base__collapsed_a6 .CardContent_vehicleImageWrapper_84 {
+            transform: translate(-110rem, 111rem);
 }
-
-.mediaExtraLarge .CardContent_base__collapsed_a6 .CardContent_vehicleContainer_43 {
-            transform: translate(-188rem, 116rem);
+.mediaExtraLarge .CardContent_base__collapsed_a6 .CardContent_vehicleImageWrapper_84 {
+            transform: translate(-114rem, 210rem);
 }
-
 .CardContent_vehicleImage_a2 {
     width: 303rem;
     height: 250rem;
     background: url('R.images.gui.maps.icons.comp7.icons.vehicle_941x777') no-repeat center / cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
     pointer-events: none;
 }
-
 .mediaSmall .CardContent_vehicleImage_a2 {
         width: 381rem;
         height: 315rem;
 }
-
 .mediaMedium .CardContent_vehicleImage_a2 {
         width: 542rem;
         height: 448rem;
 }
-
 .mediaLarge .CardContent_vehicleImage_a2 {
         width: 772rem;
         height: 637rem;
 }
-
 .mediaExtraLarge .CardContent_vehicleImage_a2 {
         width: 942rem;
         height: 777rem;
 }
-
 .CardContent_base__collapsed_a6 .CardContent_vehicleImage_a2 {
         mask: linear-gradient(180deg, rgba(217, 217, 217, 0) 20%, rgba(217, 217, 217, .9) 50%, rgba(217, 217, 217, 0) 100%);
     }
-
 .CardContent_mainReward_2d {
     display: flex;
     justify-content: center;
     position: absolute;
     transition: transform .25s linear, opacity 0.125s linear;
 }
-
 .CardContent_base__selected_ce .CardContent_mainReward_2d {
         transform: translate(-25rem, 80rem);
     }
-
 .mediaSmall .CardContent_base__selected_ce .CardContent_mainReward_2d {
             transform: translate(10rem, 80rem);
 }
-
 .mediaMedium .CardContent_base__selected_ce .CardContent_mainReward_2d {
             transform: translate(-28rem, 54rem);
 }
-
 .mediaLarge .CardContent_base__selected_ce .CardContent_mainReward_2d {
             transform: translate(-82rem, 72rem);
 }
-
 .mediaExtraLarge .CardContent_base__selected_ce .CardContent_mainReward_2d {
             transform: translate(28rem, 178rem);
 }
-
 .CardContent_base__collapsed_a6 .CardContent_mainReward_2d {
         transform: translate(-40rem, 80rem);
     }
-
 .mediaSmall .CardContent_base__collapsed_a6 .CardContent_mainReward_2d {
             transform: translate(-40rem, 80rem);
 }
-
 .mediaMedium .CardContent_base__collapsed_a6 .CardContent_mainReward_2d {
             transform: translate(-60rem, 54rem);
 }
-
 .mediaLarge .CardContent_base__collapsed_a6 .CardContent_mainReward_2d {
             transform: translate(-122rem, 72rem);
 }
-
 .mediaExtraLarge .CardContent_base__collapsed_a6 .CardContent_mainReward_2d {
             transform: translate(-94rem, 178rem);
 }
-
 .CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
-        width: 85rem;
-        height: 85rem;
-        transform: translate(65rem, 176rem);
+        transform: translate(19rem, 167rem);
     }
-
 .mediaSmall .CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
-            width: 100rem;
-            height: 100rem;
-            transform: translate(90rem, 174rem);
+            transform: translate(30rem, 174rem);
 }
-
 .mediaMedium .CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
-            width: 140rem;
-            height: 128rem;
-            transform: translate(108rem, 217rem);
+            transform: translate(43rem, 227rem);
 }
-
 .mediaLarge .CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
-            width: 190rem;
-            height: 180rem;
-            transform: translate(133rem, 294rem);
+            transform: translate(60rem, 297rem);
 }
-
 .mediaExtraLarge .CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
-            width: 200rem;
-            height: 216rem;
-            transform: translate(234rem, 435rem);
+            transform: translate(98rem, 428rem);
 }
-
 .CardContent_base__selected_ce.CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
         opacity: 1;
     }
-
 .CardContent_base__collapsed_a6.CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
         opacity: 0;
+        z-index: -1; /* enable events for vehicle tooltip*/
     }
-
+.CardContent_mainRewardWithVehicle_a1 {
+    width: 70rem;
+    height: 74rem;
+}
+.mediaSmall .CardContent_mainRewardWithVehicle_a1 {
+        width: 83rem;
+        height: 86rem;
+}
+.mediaMedium .CardContent_mainRewardWithVehicle_a1 {
+        width: 102rem;
+        height: 106rem;
+}
+.mediaLarge .CardContent_mainRewardWithVehicle_a1 {
+        width: 150rem;
+        height: 158rem;
+}
+.mediaExtraLarge .CardContent_mainRewardWithVehicle_a1 {
+        width: 184rem;
+        height: 192rem;
+}
+.CardContent_base__collapsed_a6 .CardContent_mainRewardWithVehicle_a1 {
+        pointer-events: none;
+    }
+.CardContent_mainRewardPreview_a1,
+.CardContent_mainRewardWithVehiclePreview_ea,
+.CardContent_vehiclePreview_af {
+    position: absolute;
+    z-index: 1;
+}
+.CardContent_base__collapsed_a6 .CardContent_mainRewardPreview_a1, .CardContent_base__collapsed_a6 .CardContent_mainRewardWithVehiclePreview_ea, .CardContent_base__collapsed_a6 .CardContent_vehiclePreview_af {
+        opacity: 0;
+        pointer-events: none;
+    }
+.CardContent_mainRewardPreview_a1 {
+    top: 106rem;
+    left: 84rem;
+    transition: transform .25s linear, opacity 0.125s linear;
+}
+.mediaSmall .CardContent_mainRewardPreview_a1 {
+        top: 104rem;
+}
+.mediaMedium .CardContent_mainRewardPreview_a1 {
+        top: 202rem;
+        left: 164rem;
+}
+.mediaLarge .CardContent_mainRewardPreview_a1 {
+        top: 306rem;
+        left: 260rem;
+}
+.mediaExtraLarge .CardContent_mainRewardPreview_a1 {
+        top: 310rem;
+        left: 270rem;
+}
+.CardContent_mainRewardWithVehiclePreview_ea {
+    top: 33rem;
+    left: 3rem;
+}
+.mediaSmall .CardContent_mainRewardWithVehiclePreview_ea {
+        top: 39rem;
+        left: 6rem;
+}
+.mediaMedium .CardContent_mainRewardWithVehiclePreview_ea {
+        top: 53rem;
+        left: 13rem;
+}
+.mediaLarge .CardContent_mainRewardWithVehiclePreview_ea {
+        top: 93rem;
+        left: 32rem;
+}
+.mediaExtraLarge .CardContent_mainRewardWithVehiclePreview_ea {
+        top: 120rem;
+        left: 48rem;
+}
+.CardContent_vehiclePreview_af {
+    top: 150rem;
+    left: 85rem;
+}
+.mediaSmall .CardContent_vehiclePreview_af {
+        top: 158rem;
+        left: 134rem;
+}
+.mediaMedium .CardContent_vehiclePreview_af {
+        top: 222rem;
+        left: 184rem;
+}
+.mediaLarge .CardContent_vehiclePreview_af {
+        top: 314rem;
+        left: 246rem;
+}
+.mediaExtraLarge .CardContent_vehiclePreview_af {
+        top: 472rem;
+        left: 366rem;
+}
 .CardContent_mainRewardIcon_e2 {
     pointer-events: none;
 }
-
 .CardContent_base__withVehicle_b1 .CardContent_mainRewardIcon_e2 {
         width: 195rem;
         height: 156rem;
     }
-
 .mediaSmall .CardContent_base__withVehicle_b1 .CardContent_mainRewardIcon_e2 {
             width: 230rem;
             height: 184rem;
 }
-
 .mediaMedium .CardContent_base__withVehicle_b1 .CardContent_mainRewardIcon_e2 {
             width: 283rem;
             height: 226rem;
 }
-
 .mediaLarge .CardContent_base__withVehicle_b1 .CardContent_mainRewardIcon_e2 {
             width: 417rem;
             height: 334rem;
 }
-
 .mediaExtraLarge .CardContent_base__withVehicle_b1 .CardContent_mainRewardIcon_e2 {
             width: 510rem;
             height: 406rem;
 }
-
 .CardContent_rewardImageContainer_3c {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
-
 .CardContent_cardInfoContainer_91 {
     display: flex;
     flex-direction: column;
@@ -8220,46 +8230,36 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 254rem;
     padding-top: 96rem;
 }
-
 .mediaSmall .CardContent_cardInfoContainer_91 {
         width: 298rem;
 }
-
 .mediaMedium .CardContent_cardInfoContainer_91 {
         width: 300rem;
         padding-top: 109rem;
 }
-
 .mediaLarge .CardContent_cardInfoContainer_91 {
         width: 344rem;
         padding-top: 168rem;
 }
-
 .mediaExtraLarge .CardContent_cardInfoContainer_91 {
         width: 488rem;
         padding-top: 270rem;
 }
-
 .CardContent_base__withVehicle_b1 .CardContent_cardInfoContainer_91 {
         width: 240rem;
     }
-
 .mediaSmall .CardContent_base__withVehicle_b1 .CardContent_cardInfoContainer_91 {
             width: 248rem;
 }
-
 .mediaMedium .CardContent_base__withVehicle_b1 .CardContent_cardInfoContainer_91 {
             width: 286rem;
 }
-
 .mediaLarge .CardContent_base__withVehicle_b1 .CardContent_cardInfoContainer_91 {
             width: 308rem;
 }
-
 .mediaExtraLarge .CardContent_base__withVehicle_b1 .CardContent_cardInfoContainer_91 {
             width: 396rem;
 }
-
 .CardContent_cardInfo_03 {
     display: flex;
     flex-direction: column;
@@ -8269,80 +8269,91 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 700;
     position: relative;
 }
-
 .mediaMedium .CardContent_cardInfo_03 {
         font-size: 24rem;
 }
-
 .mediaLarge .CardContent_cardInfo_03 {
         font-size: 28rem;
 }
-
 .CardContent_vehicleName_89 {
     font-size: 18rem;
 }
-
 .mediaMedium .CardContent_vehicleName_89 {
         margin-bottom: 4rem;
         font-size: 24rem;
 }
-
 .mediaLarge .CardContent_vehicleName_89 {
         font-size: 28rem;
 }
-
 .CardContent_base_be .CardContent_vehicleTypeContainer_29 {
     width: 30rem;
 }
-
 .mediaMedium .CardContent_base_be .CardContent_vehicleTypeContainer_29 {
         width: 50rem;
 }
-
 .CardContent_title_c4 {
     font-size: 18rem;
     font-weight: 700;
 }
-
 .mediaMedium .CardContent_title_c4 {
         font-size: 24rem;
 }
-
 .mediaLarge .CardContent_title_c4 {
         font-size: 28rem;
 }
-
 .CardContent_subTitle_83 {
     margin-top: 4rem;
     color: #E9E2BF;
     font-size: 15rem;
 }
-
 .mediaMedium .CardContent_subTitle_83 {
         margin-top: 7rem;
 }
-
 .mediaLarge .CardContent_subTitle_83 {
         margin-top: 4rem;
         font-size: 18rem;
 }
-
 .CardContent_additionalRewards_2a {
-    margin: 16rem 0 28rem;
+    margin: 16rem 0 28rem -6rem;
 }
-
 .mediaMedium .CardContent_additionalRewards_2a {
-        margin: 30rem 0 35rem;
+        margin: 30rem 0 35rem -6rem;
 }
-
 .mediaLarge .CardContent_additionalRewards_2a {
-        margin: 36rem 0 48rem;
+        margin: 36rem 0 48rem -6rem;
 }
-
+.CardContent_base__withVehicle_b1 .CardContent_additionalRewards_2a {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        width: 100%;
+        margin: 10rem 0 5rem -6rem;
+    }
+.mediaSmall .CardContent_base__withVehicle_b1 .CardContent_additionalRewards_2a {
+            margin: 10rem 0 9rem -6rem;
+}
+.mediaMedium .CardContent_base__withVehicle_b1 .CardContent_additionalRewards_2a {
+            margin: 10rem 0 9rem -6rem;
+}
+.mediaLarge .CardContent_base__withVehicle_b1 .CardContent_additionalRewards_2a {
+            max-width: 240rem;
+            margin: 36rem 0 26rem -6rem;
+}
+.mediaExtraLarge .CardContent_base__withVehicle_b1 .CardContent_additionalRewards_2a {
+            max-width: auto;
+            margin: 36rem 0 48rem -6rem;
+}
+.CardContent_additionalRewardWithVehicle_1a {
+    margin: 0 3rem 3rem;
+}
+.mediaMedium .CardContent_additionalRewardWithVehicle_1a {
+        margin: 0 6rem 6rem;
+}
+.mediaExtraLarge .CardContent_additionalRewardWithVehicle_1a {
+        margin: 0 3rem 3rem;
+}
 .CardContent_rewardsStatus_99 {
     padding-right: var(--content-spacing);
 }
-
 .CardContent_seasonPointsContainer_fb {
     display: flex;
     justify-content: center;
@@ -8351,96 +8362,75 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 0;
     left: 0;
 }
-
 .CardContent_base__selected_ce .CardContent_seasonPointsContainer_fb {
         padding-left: var(--content-spacing);
         padding-right: var(--content-spacing);
-        bottom: 16rem;
+        bottom: 0;
     }
-
 .mediaSmall .CardContent_base__selected_ce .CardContent_seasonPointsContainer_fb {
-            bottom: 8rem;
+            bottom: -4rem;
 }
-
 .mediaMedium .CardContent_base__selected_ce .CardContent_seasonPointsContainer_fb {
-            bottom: 38rem;
+            bottom: 26rem;
 }
-
 .mediaLarge .CardContent_base__selected_ce .CardContent_seasonPointsContainer_fb {
             bottom: 18rem;
 }
-
 .mediaExtraLarge .CardContent_base__selected_ce .CardContent_seasonPointsContainer_fb {
             bottom: 20rem;
 }
-
 .CardContent_base__collapsed_a6 .CardContent_seasonPointsContainer_fb {
-        bottom: 22rem;
+        bottom: 4rem;
     }
-
 .mediaSmall .CardContent_base__collapsed_a6 .CardContent_seasonPointsContainer_fb {
-            bottom: 12rem;
+            bottom: 0;
 }
-
 .mediaMedium .CardContent_base__collapsed_a6 .CardContent_seasonPointsContainer_fb {
-            bottom: 47rem;
+            bottom: 32rem;
 }
-
 .mediaLarge .CardContent_base__collapsed_a6 .CardContent_seasonPointsContainer_fb {
             bottom: 34rem;
 }
-
 .mediaExtraLarge .CardContent_base__collapsed_a6 .CardContent_seasonPointsContainer_fb {
             bottom: 40rem;
 }
-
 .CardContent_base__selected_ce .CardContent_seasonPoints_41 {
         margin: 0 16rem;
     }
-
 .mediaMedium .CardContent_base__selected_ce .CardContent_seasonPoints_41 {
             margin: 0 28rem;
 }
-
 .CardContent_base__selected_ce .CardContent_seasonPointWrapper_20 + .CardContent_base__selected_ce .CardContent_seasonPointWrapper_20 {
             margin-left: -4rem;
         }
-
 .CardContent_base__collapsed_a6 .CardContent_seasonPointWrapper_20 + .CardContent_base__collapsed_a6 .CardContent_seasonPointWrapper_20 {
             margin-left: -5rem;
         }
-
 .mediaLarge .CardContent_base__collapsed_a6 .CardContent_seasonPointWrapper_20 + .CardContent_base__collapsed_a6 .CardContent_seasonPointWrapper_20 {
                 margin-left: -2rem;
 }
-
 .CardContent_venzel_09 {
     display: flex;
     align-items: flex-start;
     flex: 1 1;
 }
-
 .CardContent_venzel__right_27 {
         transform: scale(-1, 1);
     }
-
 .CardContent_peak_05 {
     width: 42rem;
     height: 14rem;
     background: url('R.images.gui.maps.icons.comp7.icons.venzel_42x14') no-repeat center / cover;
 }
-
 .CardContent_lines_f4 {
     flex: 1 1;
     margin-top: 3rem;
 }
-
 .CardContent_line_ba {
     height: 1rem;
     background: rgba(192, 222, 239, 0.6);
     opacity: 0.8;
 }
-
 .CardContent_line_ba + .CardContent_line_ba {
         margin-top: 2rem;
     }
@@ -8974,8 +8964,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Legend_rankEmblem_5d {
     position: relative;
 }
-.Legend_rankEmblem__qualification_01,
-    .Legend_rankEmblem__future_28 {
+.Legend_rankEmblem__inactive_c1 {
         filter: grayscale(100%);
         opacity: .4;
     }
@@ -9041,25 +9030,55 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 750rem;
     height: 46rem;
     background: url('R.images.gui.maps.icons.comp7.icons.blue_highlight_750x46') no-repeat center / 750rem 46rem;
     position: relative;
 }
+    .mediaMedium .StatusBanner_base_af {
+        height: 52rem;
+        background-size: 750rem 52rem;
+}
 
-.StatusBanner_line_81 {
+.StatusBanner_lineWrapper_25 {
     width: 100%;
     height: 1rem;
-    background: linear-gradient(90deg, transparent 33.33%, #fbffde 50%, transparent 66.67%);
+    mask: linear-gradient(90deg, transparent, #000 50%, transparent);
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
 }
 
+.StatusBanner_line_81 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(10, 98, 153), #fbffde 50%, rgb(10, 98, 153));
+}
+
 .StatusBanner_description_46 {
     color: rgba(255,255,255, .8);
     font-size: 14rem;
     line-height: 18rem;
+}
+
+.mediaMedium .StatusBanner_description_46 {
+        font-size: 16rem;
+}
+
+.StatusBanner_selectionContainer_88 {
+    display: flex;
+    align-items: center;
+}
+
+.StatusBanner_selectionButton_8d {
+    min-width: 120rem;
+    min-height: 24rem;
+    margin-left: 20rem;
+}
+
+.mediaMedium .StatusBanner_selectionButton_8d {
+        min-height: 28rem;
 }
 
 .YearlyRewardsPage_base_39 {
@@ -9110,6 +9129,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .mediaExtraLarge .YearlyRewardsPage_legend_2b {
         padding-top: 63rem;
         padding-bottom: 75rem;
+}
+
+.YearlyRewardsPage_status_27 {
+    display: flex;
+    justify-content: center;
 }
 
 .Background_base_8d {

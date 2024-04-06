@@ -1,0 +1,77 @@
+.App_base_1d {
+    width: 349rem;
+    height: 83rem;
+    padding: 6rem 0 0 88rem;
+    background: url('R.images.gui.maps.icons.battleRoyale.hangar.vehicleFeaturesBg') no-repeat center / cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.App_wrapper_f7 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 260rem;
+    height: 66rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.App_background_0f {
+    width: 260rem;
+    height: 66rem;
+    background: url('R.images.gui.maps.icons.battleRoyale.hangar.storeBg') no-repeat center / cover;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.App_currency_29:hover + .App_background_0f,
+    .App_background_0f:hover {
+        opacity: 1;
+    }
+
+.App_currency_29 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -25rem;
+    z-index: 2;
+}
+
+.App_value_b4 {
+    color: #CED9D9;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: -3rem 0 0 -5rem;
+    text-shadow: 0 0 4rem #000;
+}
+
+.App_icon_9d {
+    width: 80rem;
+    height: 80rem;
+    background: url('R.images.gui.maps.icons.battleRoyale.currency.proxy_80') no-repeat 100% 100% / 100% 100%;
+}
+
+.App_link_2e {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10rem;
+    padding-right: 16rem;
+    position: relative;
+    z-index: 2;
+    transition: text-shadow .2s ease-in-out;
+}
+
+.App_link_2e:hover {
+        text-shadow: 0 0 14rem #f00;
+    }
+

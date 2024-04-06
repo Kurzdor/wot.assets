@@ -322,11 +322,16 @@
     white-space: nowrap;
     opacity: 0;
     position: absolute;
-    bottom: -8rem;
     transform: translateY(-5rem);
     transition: transform .25s ease-out,
         opacity .25s ease-out;
 }
+.IconButton_label__small_3a {
+        bottom: -2rem;
+    }
+.IconButton_label__normal_ef {
+        bottom: -8rem;
+    }
 .IconButton_base__visibleLabel_3a .IconButton_label_73,
     .IconButton_base__hovered_26 .IconButton_label_73 {
         opacity: 1;
@@ -372,36 +377,41 @@
 .TankName_type_3c {
     width: 42rem;
     height: 38rem;
-    margin: 0 -9rem;
     background: no-repeat center / contain;
     position: relative;
-    top: -8rem;
 }
 
-.TankName_type__elite_cc {
-        margin: 0 -6rem;
+.TankName_type__extraSmall_80 {
+        margin: 0 -9rem;
+        top: -8rem;
     }
 
-.TankName_base__sizeMedium_3a .TankName_type_3c,
-    .TankName_base__sizeBig_2b .TankName_type_3c {
-        width: 83rem;
-        height: 73rem;
-        margin: 0 -23rem;
+.TankName_type__medium_ff {
         top: -16rem;
     }
 
-.TankName_base__sizeMedium_3a .TankName_type__elite_cc, .TankName_base__sizeBig_2b .TankName_type__elite_cc {
-            margin: 0 -16rem;
-        }
-
-.TankName_base__sizeBig_2b .TankName_type_3c {
-        margin: 0 -23rem;
-        top: -14rem;
+.TankName_type__big_9a {
+        top: -10rem;
     }
 
-.TankName_base__sizeBig_2b .TankName_type__elite_cc {
-            margin: 0 -13rem;
-        }
+.TankName_type__medium_ff,
+    .TankName_type__big_9a {
+        width: 83rem;
+        height: 73rem;
+        margin: 0 -23rem;
+    }
+
+.TankName_type__eliteExtraSmall_74 {
+        margin: 0 -6rem;
+    }
+
+.TankName_type__eliteMedium_10 {
+        margin: 0 -16rem;
+    }
+
+.TankName_type__eliteBig_ac {
+        margin: 0 -13rem;
+    }
 
 .TankName_base__typeColored_bc .TankName_name_56 {
         color: #8C8C7E;

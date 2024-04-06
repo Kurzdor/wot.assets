@@ -22,6 +22,5 @@
         (var oldCrystal:number = 0)
         (var isBuying:bool = true)
         (var showOldValue:bool = false)
-        (var isBootcamp:bool = false)
     )
 )

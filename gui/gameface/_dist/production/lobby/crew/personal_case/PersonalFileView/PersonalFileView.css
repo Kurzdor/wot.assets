@@ -177,16 +177,6 @@
         height: 256rem;
     }
 
-.TankmanIcon_innerShadow_c6 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: url('R.images.gui.maps.icons.tankmen.crew.icon_shadow') no-repeat center / contain;
-    pointer-events: none;
-}
-
 .TankmanFolder_base_00 {
     width: 360rem;
     height: 360rem;
@@ -230,6 +220,21 @@
 }
 
 .TankmanFolder_base__big_60 .TankmanFolder_icon_74 {
+        bottom: 32rem;
+        left: 33rem;
+    }
+
+.TankmanFolder_innerShadow_44 {
+    width: 204rem;
+    height: 256rem;
+    background: url('R.images.gui.maps.icons.tankmen.crew.icon_shadow') no-repeat center / contain;
+    position: absolute;
+    bottom: 53rem;
+    left: 59rem;
+    pointer-events: none;
+}
+
+.TankmanFolder_base__big_60 .TankmanFolder_innerShadow_44 {
         bottom: 32rem;
         left: 33rem;
     }
@@ -436,18 +441,73 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .6;
     }
 
+.RetrainAndEfficiency_base_71 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.RetrainAndEfficiency_canNotRetrainIcon_82 {
+    width: 50rem;
+    height: 30rem;
+    margin-left: 14rem;
+    background: url('R.images.gui.maps.icons.crew.profile.untrained') no-repeat center / contain;
+    position: relative;
+    top: -5rem;
+}
+
+.RetrainAndEfficiency_retrainWarningLabel_af {
+    color: #FF2717;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.RetrainAndEfficiency_skillsEfficiencyLabel_45 {
+    color: rgba(242,242,247, .6);
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-left: 14rem;
+}
+
+.RetrainAndEfficiency_skillsEfficiencyLabel__red_e9 {
+        color: #FF2717;
+    }
+
+.RetrainAndEfficiency_skillsEfficiencyRateContainer_5c {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.RetrainAndEfficiency_skillsEfficiencyNumber_9a {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.RetrainAndEfficiency_skillsEfficiencyNumber__red_a1 {
+        color: #ffc3be;
+        text-shadow: #FF2717 0 0 20rem, #FF2717 0 0 20rem;
+    }
+
+.RetrainAndEfficiency_skillsEfficiencyInfoIcon_76 {
+    width: 14rem;
+    height: 14rem;
+    margin-left: 5rem;
+    background: url('R.images.gui.maps.icons.tankmen.crew.information') no-repeat center / contain;
+    position: relative;
+    top: 2rem;
+}
+
 .CurrentVehicleTrain_base_22 {
     display: flex;
     flex-direction: row;
     height: 20rem;
     position: relative;
-}
-.CurrentVehicleTrain_tooltipHoverArea_cc {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
 }
 .CurrentVehicleTrain_currentVehicle_9d {
     color: rgba(242,242,247, .6);
@@ -466,21 +526,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex-direction: row;
     align-items: center;
 }
-.CurrentVehicleTrain_roleLevelContainer_95 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
-.CurrentVehicleTrain_roleLevelLabel_31 {
-    color: rgba(242,242,247, .6);
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-left: 14rem;
-}
-.CurrentVehicleTrain_roleLevelLabel__red_0e {
-        color: #FF2717;
-    }
 .CurrentVehicleTrain_retrainBtnContainer_00 {
     width: 120rem;
     height: 20rem;
@@ -512,29 +557,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: absolute;
     top: 1rem;
     left: 0;
-}
-.CurrentVehicleTrain_trainLevelRateContainer_5c {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-.CurrentVehicleTrain_trainLevelNumber_b0 {
-    color: #E9E2BF;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-.CurrentVehicleTrain_trainLevelNumber__red_07 {
-        color: #FF2717;
-    }
-.CurrentVehicleTrain_trainLevelInfoIcon_27 {
-    width: 14rem;
-    height: 14rem;
-    margin-left: 5rem;
-    background: url('R.images.gui.maps.icons.tankmen.crew.information') no-repeat center / contain;
-    position: relative;
-    top: 2rem;
 }
 .CurrentVehicleTrain_discountContainer_24 {
     display: flex;
@@ -623,15 +645,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Role_commanderBonus_99 {
     width: 24rem;
     height: 24rem;
-    background: url('R.images.gui.maps.icons.tankmen.skills.medium.comander_bonus') no-repeat center / contain;
+    background: url('R.images.gui.maps.icons.tankmen.skills.medium.commander_bonus') no-repeat center / contain;
 }
 
 .SpecializationSlots_base_1a {
     display: flex;
-    flex-direction: row;
 }
 
 .SpecializationSlots_frame_85 {
+    display: flex;
     width: 150rem;
     height: 33rem;
     border: 1rem solid rgba(242,242,247, .1);
@@ -678,7 +700,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .SpecializationSlots_arrows_6e {
     display: none;
-    flex-direction: row;
     align-items: center;
     position: absolute;
     top: -3rem;
@@ -728,13 +749,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .SpecializationSlots_info_7c {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 0 0 2rem 8rem;
     pointer-events: none;
@@ -768,7 +783,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 400;
     line-height: 1.3;
     position: relative;
-    left: -19rem;
+    top: 5rem;
+}
+
+.SpecializationSlots_premVehicleTypeIcon_c9 {
+    width: 28rem;
+    height: 28rem;
+    background: no-repeat center / contain;
+    background-size: 48rem 48rem;
+    position: relative;
+    top: -5rem;
 }
 
 .TankmanInfoApp_base_8a {
@@ -1042,17 +1066,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .5;
     }
 
-.Buttons_discount_08 {
-    width: 122rem;
-    height: 42rem;
-    background: url('R.images.gui.maps.icons.tankmen.crew.discount') no-repeat center / contain;
-    position: absolute;
-    top: 3rem;
-    left: 50%;
-    transform: translateX(-50%);
-    pointer-events: none;
-}
-
 .Buttons_buttonWrapper_de {
     display: flex;
 }
@@ -1302,17 +1315,86 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     max-height: 100%;
 }
 
-.SkillRoleIcon_base_6b {
-    width: 30rem;
-    height: 30rem;
-    display: flex;
+.RoleIcon_base_51 {
     background: no-repeat center / contain;
+}
+
+    .RoleIcon_base__small_68 {
+        width: 13rem;
+        height: 13rem;
+    }
+
+    .RoleIcon_base__c_14x14_8f {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .RoleIcon_base__c_18x18_0b {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .RoleIcon_base__c_24x24_new_fe,
+    .RoleIcon_base__c_24x24_52 {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    .RoleIcon_base__c_30x30_red_85,
+    .RoleIcon_base__c_30x30_e9 {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .RoleIcon_base__medium_5d {
+        width: 33rem;
+        height: 33rem;
+    }
+
+    .RoleIcon_base__white_2a {
+        width: 44rem;
+        height: 44rem;
+    }
+
+    .RoleIcon_base__big_b4 {
+        width: 60rem;
+        height: 60rem;
+    }
+
+.SkillRoleIcon_base_6b {
+    display: flex;
     opacity: .3;
     position: relative;
 }
 
-    .SkillRoleIcon_base__irrelevant_22 {
-        opacity: 0.6;
+.Frame_base_05 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1rem solid;
+    border-radius: 2rem;
+}
+
+    .Frame_base__gray_7b {
+        border-color: rgba(255,255,255, .2);
+    }
+
+    .Frame_base__gray_7b.Frame_base__disabled_39 {
+            border-color: rgba(255,255,255, .1);
+        }
+
+    .Frame_base__red_4c {
+        border-color: rgba(255,39,23, .6);
+    }
+
+    .Frame_base__red_4c.Frame_base__disabled_39 {
+            border-color: rgba(255,39,23, .4);
+        }
+
+    .Frame_base__yellow_b9 {
+        border-color: #FEAB34;
     }
 
 .SkillIcon_base_43 {
@@ -1326,7 +1408,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         height: 14rem;
     }
 
-    .SkillIcon_base__c22x22_e5 {
+    .SkillIcon_base__c_22x22_14 {
         width: 22rem;
         height: 22rem;
     }
@@ -1336,7 +1418,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         height: 24rem;
     }
 
-    .SkillIcon_base__c36x36_flat_88 {
+    .SkillIcon_base__c_36x36_flat_7e {
         width: 36rem;
         height: 36rem;
     }
@@ -1351,23 +1433,133 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         height: 135rem;
     }
 
-.Skill_base_8e {
+.MainInfo_base_a2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.mediaMedium .MainInfo_skillIcon_1a {
+        bottom: 16rem;
+}
+.MainInfo_base__disabled_e2 .MainInfo_skillIcon_1a {
+        opacity: .5;
+    }
+.MainInfo_base__blocked_47 .MainInfo_skillIcon_1a {
+        opacity: .3;
+    }
+.MainInfo_skillName_63 {
+    color: #F2F2F7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: none;
+    justify-content: center;
+    line-height: 120%;
+    text-align: center;
+    opacity: .5;
+    position: absolute;
+    top: 61rem;
+    right: 5rem;
+    left: 5rem;
+}
+.MainInfo_base__inProgress_29 .MainInfo_skillName_63,
+    .MainInfo_base__learned_1e .MainInfo_skillName_63,
+    .MainInfo_base__hover_1e .MainInfo_skillName_63 {
+        opacity: .8;
+    }
+.MainInfo_base__inProgress_29 .MainInfo_skillName_63 {
+        color: #E9E2BF;
+    }
+.MainInfo_base__disabled_e2 .MainInfo_skillName_63 {
+        opacity: .5;
+    }
+.MainInfo_base__blocked_47 .MainInfo_skillName_63 {
+        opacity: .3;
+    }
+.mediaMedium .MainInfo_skillName_63 {
+        display: flex;
+}
+
+.StateBg_base_2d {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.StateBg_progressBar_eb {
+    background-color: rgba(255, 92, 0, .5);
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+    left: 1rem;
+}
+
+.StateBg_base__isLowEfficiency_2c .StateBg_progressBar_eb {
+        background-color: rgba(255, 17, 0, .2);
+    }
+
+.StateBg_disabledPattern_ab {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    background: rgba(0, 0, 0, .3) url('R.images.gui.maps.icons.library.disabled_pattern_27x27') center;
+    opacity: .5;
+}
+
+.StateBg_backPlate_05 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.StateBg_base__learned_77 .StateBg_backPlate_05 {
+        background-color: rgba(255, 255, 255, .1);
+    }
+
+.StateBg_base__inProgress_f7 .StateBg_backPlate_05 {
+        box-shadow: inset 0 0 30rem rgba(255, 122, 0, .3);
+        background: linear-gradient(0deg, rgba(255, 92, 0, .1), rgba(255, 92, 0, .1)), rgba(0, 0, 0, .6);
+    }
+
+.StateBg_base__isLowEfficiency_2c .StateBg_backPlate_05,
+    .StateBg_base__inProgress_f7.StateBg_base__isLowEfficiency_2c .StateBg_backPlate_05 {
+        box-shadow: inset 0 0 20rem rgba(255, 17, 0, 0.5);
+    }
+
+.StateBg_base__isLowEfficiency_2c.StateBg_base__inProgress_f7 .StateBg_backPlate_05 {
+        background: none;
+    }
+
+.StateBg_hover_38 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255,255,255, .05);
+}
+
+.StateBg_base__inProgress_f7 .StateBg_hover_38 {
+        background-color: rgba(255,255,255, .1);
+    }
+
+.Skill_base_8e {
     width: 84rem;
     height: 80rem;
     position: relative;
 }
-
-    .Skill_base__hover_14 {
-        background-color: rgba(255,255,255, .05);
-    }
-
-    .Skill_base__inProgress_d4.Skill_base__hover_14 {
-        background-color: rgba(255,255,255, .1);
-    }
 
     .Skill_base__clickable_6c {
         cursor: pointer;
@@ -1381,40 +1573,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     .mediaLarge .Skill_base_8e {
         width: 148rem;
 }
-.Skill_progressBar_2e {
-    background-color: rgba(255, 92, 0, .5);
-    position: absolute;
-    right: 1rem;
-    bottom: 0;
-    left: 1rem;
-}
-.Skill_stateBg_7d {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border: 1rem solid rgba(242,242,247, .1);
-    border-radius: 2rem;
-}
-.Skill_base__learned_34 .Skill_stateBg_7d {
-        border-color: rgba(242,242,247, .2);
-        background-color: rgba(255,255,255, .1);
-    }
-.Skill_base__inProgress_d4 .Skill_stateBg_7d {
-        border-color: rgba(255, 178, 102, .8);
-        box-shadow: inset 0 0 30rem rgba(255, 122, 0, .3);
-        background: linear-gradient(0deg, rgba(255, 92, 0, .1), rgba(255, 92, 0, .1)), rgba(0, 0, 0, .6);
-    }
-.Skill_disabledPattern_68 {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    bottom: 1rem;
-    left: 1rem;
-    background: rgba(0,0,0, .3) url('R.images.gui.maps.icons.library.disabled_pattern') center;
-    opacity: .5;
-}
 .Skill_progressText_df {
     color: #FEAB34;
     font-size: 16rem;
@@ -1424,43 +1582,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 0;
     right: 3rem;
 }
-.Skill_base__disabled_9d .Skill_progressText_df {
+.Skill_progressText__lowEfficiency_f9 {
         opacity: .5;
     }
-.mediaMedium .Skill_skillIcon_26 {
-        bottom: 16rem;
-}
-.Skill_base__disabled_9d .Skill_skillIcon_26 {
-        opacity: .5;
-    }
-.Skill_skillName_dd {
-    color: #F2F2F7;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    display: none;
-    justify-content: center;
-    text-align: center;
-    opacity: .5;
-    position: absolute;
-    top: 61rem;
-    right: 2rem;
-    left: 2rem;
-}
-.Skill_base__inProgress_d4 .Skill_skillName_dd,
-    .Skill_base__learned_34 .Skill_skillName_dd,
-    .Skill_base__hover_14 .Skill_skillName_dd {
-        opacity: .8;
-    }
-.Skill_base__inProgress_d4 .Skill_skillName_dd {
-        color: #E9E2BF;
-    }
-.Skill_base__disabled_9d .Skill_skillName_dd {
-        opacity: .5;
-    }
-.mediaMedium .Skill_skillName_dd {
-        display: flex;
-}
 .Skill_zeroSkill_b3 {
     width: 46rem;
     height: 46rem;
@@ -1515,11 +1639,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .SkillsGroup_qualificationContainer_18 {
     display: flex;
     flex-direction: row;
+    height: 19rem;
     position: relative;
 }
 
 .mediaLarge .SkillsGroup_qualificationContainer_18 {
-        font-size: 16rem;
+        height: 21rem;
 }
 
 .SkillsGroup_alertIcon_77 {
@@ -1534,11 +1659,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .SkillsGroup_qualification_90 {
-    color: #F2F2F7;
+    color: rgba(242,242,247, .6);
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
-    opacity: .6;
 }
 
 .mediaLarge .SkillsGroup_qualification_90 {
@@ -1629,21 +1753,47 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.15;
 }
 
-.SkillsStateInfo_state__achieve_e8,
-    .SkillsStateInfo_state__allSkills_a6,
+.SkillsStateInfo_state__allSkills_a6,
+    .SkillsStateInfo_state__reduced_ec,
     .SkillsStateInfo_state__training_60 {
         color: #FEFEEC;
+    }
+
+.SkillsStateInfo_state__disabled_ed,
+    .SkillsStateInfo_state__locked_19 {
+        color: #ffc3be;
+        text-shadow: #FF2717 0 0 20rem, #FF2717 0 0 20rem;
     }
 
 .mediaMedium .SkillsStateInfo_state_56 {
         font-size: 18rem;
 }
 
+.SkillsStateInfo_gradient_44 {
+    width: 200rem;
+    height: 30rem;
+    background: radial-gradient(70% 75% at 50% 0%, rgba(255, 0, 0, 0.2) 0%, rgba(255, 0, 30, 0) 85%);
+    position: absolute;
+    top: -15rem;
+    left: -25rem;
+}
+
+.mediaMedium .SkillsStateInfo_gradient_44 {
+        width: 250rem;
+        height: 40rem;
+        top: -23rem;
+}
+
+.mediaLarge .SkillsStateInfo_gradient_44 {
+        height: 50rem;
+        top: -31rem;
+}
+
 .SkillsStateInfo_countContainer_da {
     display: flex;
     align-items: flex-end;
     position: absolute;
-    right: -4rem;
+    right: -12rem;
     bottom: 0;
     transform: translateX(100%);
 }
@@ -1713,6 +1863,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: linear-gradient(90deg, rgba(255,255,255, 0) 0%, rgba(255,255,255, .08) 15%, rgba(255,255,255, .08) 85%, rgba(255,255,255, 0) 100%);
     position: relative;
 }
+
+    .SkillsMatrix_base__red_fe {
+        background: linear-gradient(90deg, rgba(255, 98, 98, 0) 0%, rgba(255, 98, 98, .08) 15%, rgba(255, 98, 98, .08) 85%, rgba(255, 98, 98, 0) 100%);
+    }
 
     .mediaMedium .SkillsMatrix_base_2a {
         padding: 0 57rem 0 5rem;
