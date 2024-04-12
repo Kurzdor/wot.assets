@@ -1,0 +1,339 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+
+.Column_base_a8 {
+    flex: 1 1 auto;
+    position: relative;
+}
+
+    .Column_base__notFirstColumn_74::after {
+            width: 1rem;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent 50%, rgba(18, 17, 11, 1) 50%),
+                linear-gradient(180deg, #c9c9b6 100%);
+            background-size: 4rem 3rem, 100% 100%;
+            opacity: .2;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+.Column_battleType_38 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 30rem;
+    padding-left: 25rem;
+    position: relative;
+}
+
+.Column_cell_73 {
+    position: relative;
+}
+
+.Column_separator_99 {
+    width: 100%;
+    height: 1rem;
+    background: linear-gradient(to right, transparent 50%, rgba(18, 17, 11, 1) 50%),
+        linear-gradient(270deg, #c9c9b6 0%, #12110b 100%);
+    background-size: 3rem 2rem, 100% 100%;
+    opacity: .2;
+    position: relative;
+    z-index: 1;
+}
+
+.Column_base__notFirstColumn_74 .Column_separator_99 {
+        background-image: linear-gradient(to left, transparent 50%, rgba(18, 17, 11, 1) 50%),
+            linear-gradient(90deg, #c9c9b6 0%, #12110b 100%);
+    }
+
+.Column_row_97 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32rem;
+    padding: 0rem 25rem 2rem;
+    position: relative;
+}
+
+.Column_row__last_4d {
+        margin-bottom: 6rem;
+    }
+
+.Column_pointContainer_30 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Column_point_1b {
+    color: #FFDD99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-right: 5rem;
+}
+
+.Column_place_90 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Column_reward_c1 {
+    width: 16rem;
+    height: 16rem;
+    margin-top: 1rem;
+    background: url('R.images.battle_royale_progression.gui.maps.progression.token_battle_royale') no-repeat center / cover;
+}
+
+.Column_dash_3c {
+    color: #FFDD99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-right: 15rem;
+}
+
+.Table_base_ce {
+    width: 100%;
+    position: relative;
+}
+
+.Table_battleTypeBg_12 {
+    width: 100%;
+    height: 32rem;
+    background: url('R.images.battle_royale.gui.maps.tooltips.battleType_bg') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Table_table_a9 {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.App_base_e6 {
+    width: 363rem;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Schedule_base_f8 {
+    margin-top: 12rem;
+    background: url('R.images.battle_royale.gui.maps.tooltips.schedule_bg') no-repeat center / cover;
+}
+
+    .Schedule_base_f8::after,
+    .Schedule_base_f8::before {
+        width: 100%;
+        height: 1rem;
+        background: linear-gradient(to right, transparent 50%, rgba(18, 17, 11, 1) 50%),
+                 linear-gradient(270deg, #12110b 0%, #c9c9b6 50%, #12110b 100%);
+        background-size: 3rem 2rem, 100% 100%;
+        opacity: .2;
+        content: '';
+        position: relative;
+        left: 0;
+    }
+
+    .Schedule_base_f8::after {
+        bottom: 0;
+    }
+
+    .Schedule_base_f8::before {
+        top: 0;
+    }
+
+.Schedule_container_28 {
+    margin: 10rem 0;
+    margin-left: 22rem;
+}
+
+.Schedule_title_0b {
+    display: flex;
+}
+
+.Schedule_icon_b3 {
+    width: 18rem;
+    height: 18rem;
+    margin: -2rem 2rem 0;
+    background: url('R.images.gui.maps.icons.buttons.calendar') no-repeat center / cover;
+}
+
+.Schedule_text_83 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-left: 2rem;
+}
+
+.Schedule_scheduleContainer_e8 {
+    margin-left: 23rem;
+}
+
+.Schedule_schedule_b0 {
+    display: flex;
+}
+
+.Schedule_period_6e {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+}
+
+.Schedule_period__today_17 {
+        color: #E9E2BF;
+        font-size: 14rem;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+
+.Schedule_description_83 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Footer_base_7d {
+    width: 100%;
+    padding: 20rem 0;
+}
+
+.Footer_container_7b {
+    width: 318rem;
+    margin-left: 24rem;
+}
+
+.Footer_title_9a {
+    display: flex;
+}
+
+.Footer_icon_4d {
+    width: 16rem;
+    height: 16rem;
+    margin-top: .4rem;
+    margin-right: 5rem;
+    background: no-repeat center / cover;
+}
+
+.Footer_base__high_74 .Footer_icon_4d {
+        background-image: url('R.images.gui.maps.icons.library.CancelIcon_1');
+    }
+
+.Footer_base__medium_6a .Footer_icon_4d {
+        background-image: url('R.images.gui.maps.icons.library.alertIcon');
+    }
+
+.Footer_base__low_f3 .Footer_icon_4d {
+        background-image: url('R.images.gui.maps.icons.library.attentionIcon1');
+    }
+
+.Footer_text_45 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Footer_description_4a {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Header_base_82 {
+    width: 100%;
+    margin-bottom: 15rem;
+    padding-left: 23rem;
+}
+
+.Header_header_72 {
+    width: 100%;
+    height: 80rem;
+    padding: 20rem 0;
+    background: url('R.images.gui.maps.icons.battleRoyale.backgrounds.widget_tooltip_background') no-repeat center/ cover;
+    position: relative;
+}
+
+.Header_base__completed_39 .Header_completedIcon_4f {
+        width: 250rem;
+        height: 79rem;
+        background: url('R.images.battle_royale.gui.maps.tooltips.check_mark') no-repeat center/ cover;
+        position: absolute;
+        top: 28rem;
+        left: 45rem;
+    }
+
+.Header_description_b1 {
+    width: 318rem;
+    margin: 15rem 0 5rem;
+}
+
+.Header_base__completed_39 .Header_description_b1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -10rem;
+    }
+
+.Header_subtitle_33 {
+    display: none;
+}
+
+.Header_base__completed_39 .Header_subtitle_33 {
+        display: block;
+        color: #FEFEEC;
+        font-size: 15rem;
+        font-weight: 700;
+        line-height: 1.15;
+    }
+
+.Header_title_62 {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+}
+
+.Header_text_23 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Header_base__completed_39 .Header_text_23 {
+        text-align: center;
+    }
+

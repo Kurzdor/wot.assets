@@ -1,0 +1,102 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.App_base_52 {
+    display: flex;
+    flex-direction: column;
+    width: 330rem;
+    padding: 16rem;
+    border-radius: 2rem;
+    background: linear-gradient(
+        180deg,
+        rgba(51, 51, 41, 0.3) 0%,
+        rgba(51, 51, 41, 0) 15.62%,
+        rgba(51, 51, 41, 0) 88.02%,
+        rgba(51, 51, 41, 0.1) 100%
+    );
+    color: #8C8C7E;
+    overflow: hidden;
+}
+
+.App_headerWrapper_0b {
+    margin-bottom: 16rem;
+}
+
+.App_description_4f {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Header_base_7c {
+    display: flex;
+    flex-direction: column;
+    width: 298rem;
+}
+
+.Header_headerName_89 {
+    color: #E9E2BF;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 16rem;
+}
+
+.Header_headerDescription_62 {
+    display: flex;
+    align-items: center;
+    width: 298rem;
+}
+
+.Header_boxIcon_a2 {
+    width: 48rem;
+    height: 48rem;
+    margin-right: 4rem;
+    background: no-repeat center / cover;
+}
+
+.Header_boxIcon__tier1_09 {
+        background-image: url('R.images.gui_lootboxes.gui.maps.storage.tier_1_1366');
+    }
+
+.Header_boxIcon__tier2_f4 {
+        background-image: url('R.images.gui_lootboxes.gui.maps.storage.tier_2_1366');
+    }
+
+.Header_boxIcon__tier3_48 {
+        background-image: url('R.images.gui_lootboxes.gui.maps.storage.tier_3_1366');
+    }
+
+.Header_boxIcon__tier4_3e {
+        background-image: url('R.images.gui_lootboxes.gui.maps.storage.tier_4_1366');
+    }
+
+.Header_infoBoxes_13 {
+    color: #E9E2BF;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Header_headerDescriptionDivider_d8 {
+    height: 12rem;
+    margin: 0 8rem;
+    border: 1rem #E9E2BF solid;
+}
+

@@ -1,0 +1,398 @@
+body {
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.App_base_21 {
+    width: 160rem;
+    height: 112rem;
+    border-radius: 3rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+    .mediaMedium .App_base_21 {
+        width: 220rem;
+        height: 112rem;
+}
+
+    .mediaLarge .App_base_21 {
+        width: 300rem;
+        height: 150rem;
+}
+
+    .App_base__single_c6 {
+        width: 300rem;
+        height: 112rem;
+    }
+
+    .mediaMedium .App_base__single_c6 {
+            width: 300rem;
+            height: 112rem;
+}
+
+    .mediaLarge .App_base__single_c6 {
+            width: 300rem;
+            height: 150rem;
+}
+.App_bg_20 {
+    width: 160rem;
+    height: 112rem;
+    border-radius: 3rem;
+    background: url('R.images.gui.maps.icons.battleRoyale.banner.c_160x112') no-repeat center / cover;
+    filter: brightness(1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    transition: filter .5s cubic-bezier(.07, .82, .17, 1), transform .5s cubic-bezier(.07, .82, .17, 1);
+}
+.mediaMedium .App_bg_20 {
+        width: 220rem;
+        height: 112rem;
+        background-image: url('R.images.gui.maps.icons.battleRoyale.banner.c_220x112');
+}
+.mediaLarge .App_bg_20 {
+        width: 300rem;
+        height: 150rem;
+        background-image: url('R.images.gui.maps.icons.battleRoyale.banner.c_300x150');
+}
+.App_base_21:hover .App_bg_20 {
+        filter: brightness(1.05);
+        transform: scale(1.03);
+    }
+.App_base__disabled_ca .App_bg_20 {
+        filter: brightness(1) grayscale(100%);
+    }
+.App_base__disabled_ca:hover .App_bg_20 {
+        filter: brightness(1.05) grayscale(100%);
+    }
+.App_base__announce_4b .App_bg_20 {
+        filter: brightness(1) grayscale(100%);
+    }
+.App_base__announce_4b:hover .App_bg_20 {
+        filter: brightness(1.05) grayscale(100%);
+    }
+.App_base__single_c6 .App_bg_20 {
+        width: 300rem;
+        height: 112rem;
+        background-image: url('R.images.gui.maps.icons.battleRoyale.banner.c_300x112');
+    }
+.mediaLarge .App_base__single_c6 .App_bg_20 {
+            width: 300rem;
+            height: 150rem;
+            background-image: url('R.images.gui.maps.icons.battleRoyale.banner.c_300x150');
+}
+.App_shadow_2b {
+    width: 100%;
+    height: 100%;
+    border: 1rem solid rgba(255, 255, 255, .1);
+    border-radius: 3rem;
+    box-shadow: inset 0 0 25rem rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .25);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.App_highlight_af {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.battleRoyale.banner.hover_extrasmall') no-repeat center / cover;
+    filter: brightness(0);
+    opacity: .6;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mediaMedium .App_highlight_af {
+        background: url('R.images.gui.maps.icons.battleRoyale.banner.hover_small') no-repeat center / cover;
+}
+.mediaLarge .App_highlight_af {
+        background: url('R.images.gui.maps.icons.battleRoyale.banner.hover_large') no-repeat center / cover;
+}
+.App_base_21:hover .App_highlight_af {
+        filter: none;
+        opacity: 1;
+    }
+.App_base__single_c6 .App_highlight_af {
+        background: url('R.images.gui.maps.icons.battleRoyale.banner.hover_medium') no-repeat center / cover;
+    }
+.mediaLarge .App_base__single_c6 .App_highlight_af {
+            background: url('R.images.gui.maps.icons.battleRoyale.banner.hover_large') no-repeat center / cover;
+}
+.App_overlay_7b {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity .5s cubic-bezier(.07, .82, .17, 1);
+}
+.App_base_21:hover .App_overlay_7b {
+        opacity: .8;
+    }
+.App_particles_ad {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    width: 160rem;
+    height: 112rem;
+    mix-blend-mode: screen;
+}
+.mediaMedium .App_particles_ad {
+        width: 220rem;
+}
+.mediaLarge .App_particles_ad {
+        width: 300rem;
+        height: 150rem;
+}
+.App_base__single_c6 .App_particles_ad {
+        width: 300rem;
+    }
+.App_content_42 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.App_base__active_61 .App_content_42 {
+        justify-content: center;
+    }
+.mediaMedium .App_base__active_61 .App_content_42 {
+            justify-content: flex-start;
+}
+.App_base__single_c6 .App_content_42 {
+        justify-content: flex-start;
+    }
+.App_labels_29 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 15rem;
+    left: 0;
+}
+.mediaMedium .App_labels_29 {
+        bottom: 14rem;
+}
+.mediaLarge .App_labels_29 {
+        bottom: 19rem;
+}
+.App_title_c2 {
+    color: #FFFFFF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    width: 100rem;
+    text-align: center;
+    text-shadow: 0 2rem 4rem rgba(0, 0, 0, .5);
+    letter-spacing: .5rem;
+    opacity: 1;
+}
+.mediaMedium .App_title_c2 {
+        width: 100%;
+        letter-spacing: 1rem;
+}
+.App_base__disabled_ca .App_title_c2 {
+        filter: grayscale(1);
+        opacity: 0.7;
+    }
+.App_base__announce_4b .App_title_c2 {
+        filter: grayscale(1);
+        opacity: 0.7;
+    }
+.App_base__single_c6 .App_title_c2 {
+        color: #FFFFFF;
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
+        width: 100%;
+        letter-spacing: 1rem;
+    }
+.mediaLarge .App_base__single_c6 .App_title_c2 {
+            color: #FFFFFF;
+            font-size: 24rem;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: 1rem;
+}
+.mediaLarge .App_title_c2 {
+        color: #FFFFFF;
+        font-size: 24rem;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 1rem;
+}
+.App_subtitle_3a {
+    margin-top: 2rem;
+    color: #FFFFFF;
+    font-size: 20rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 20rem;
+    text-align: center;
+    text-shadow: 0 2rem 4rem rgba(0, 0, 0, .5);
+    letter-spacing: 1rem;
+}
+.mediaMedium .App_subtitle_3a {
+        margin-top: -4rem;
+        color: #FFFFFF;
+        font-size: 24rem;
+        font-weight: 700;
+        line-height: 1.2;
+}
+.App_base__single_c6 .App_subtitle_3a {
+        margin-top: -2rem;
+
+        color: #FFFFFF;
+
+        font-size: 24rem;
+
+        font-weight: 700;
+
+        line-height: 1.2;
+    }
+.mediaLarge .App_subtitle_3a {
+        color: #FFFFFF;
+        font-size: 28rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+.App_info_6b {
+    color: #E9E2BF;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 150rem;
+    margin-top: 3rem;
+    text-align: center;
+    text-shadow: 0 2rem 4rem rgba(0, 0, 0, .5);
+    opacity: 0;
+}
+.App_base__disabled_ca .App_info_6b {
+        filter: grayscale(1);
+        opacity: 0.7;
+    }
+.App_base__announce_4b .App_info_6b {
+        filter: grayscale(1);
+        opacity: 0.7;
+    }
+.mediaMedium .App_info_6b {
+        max-width: 200rem;
+        opacity: 1;
+        color: #E9E2BF;
+        font-size: 14rem;
+        font-weight: 400;
+        line-height: 1.3;
+}
+.mediaLarge .App_info_6b {
+        color: #E9E2BF;
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
+        max-width: 280rem;
+}
+.App_base__single_c6 .App_info_6b {
+        max-width: 280rem;
+        margin-top: 0;
+        opacity: 1;
+        color: #E9E2BF;
+        font-size: 14rem;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+.mediaLarge .App_base__single_c6 .App_info_6b {
+            margin-top: 4rem;
+            color: #E9E2BF;
+            font-size: 16rem;
+            font-weight: 400;
+            line-height: 1.25;
+}
+.App_base__disabled_ca .App_base__single_c6 .App_info_6b {
+            filter: grayscale(1);
+            opacity: 0.7;
+        }
+.App_seasonDate_95 {
+    padding-left: 21rem;
+    color: #FFDD99;
+    position: absolute;
+    bottom: 7rem;
+}
+.mediaLarge .App_seasonDate_95 {
+        bottom: 12rem;
+}
+.App_seasonDateIcon_7b {
+    width: 38rem;
+    height: 38rem;
+    background: url('R.images.gui.maps.icons.library.ClockIcon_1') no-repeat center / contain;
+    position: absolute;
+    top: 60%;
+    left: -10rem;
+    transform: translateY(-50%);
+}
+.App_base__disabled_ca .App_seasonDateIcon_7b {
+        width: 46rem;
+        height: 46rem;
+        background-image: url('R.images.gui.maps.icons.library.lock_icon');
+        filter: grayscale(60%);
+        top: 55%;
+        left: -14rem;
+        transform: translateY(-50%);
+    }
+.App_base__announce_4b .App_seasonDateIcon_7b {
+        filter: grayscale(60%);
+        opacity: 0.7;
+    }
+.App_seasonDateText_6e {
+    color: #FFDD99;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+}
+.mediaMedium .App_seasonDateText_6e {
+        color: #FFDD99;
+        font-size: 14rem;
+        font-weight: 400;
+        line-height: 1.3;
+}
+.mediaLarge .App_seasonDateText_6e {
+        color: #FFDD99;
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
+}
+.App_base__single_c6 .App_seasonDateText_6e {
+        color: #FFDD99;
+        font-size: 14rem;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+.mediaLarge .App_base__single_c6 .App_seasonDateText_6e {
+            color: #FFDD99;
+            font-size: 16rem;
+            font-weight: 400;
+            line-height: 1.25;
+}
+.App_base__disabled_ca .App_seasonDateText_6e {
+        filter: grayscale(60%);
+        opacity: 0.7;
+    }
+.App_base__announce_4b .App_seasonDateText_6e {
+        filter: grayscale(60%);
+        opacity: 0.7;
+    }
+

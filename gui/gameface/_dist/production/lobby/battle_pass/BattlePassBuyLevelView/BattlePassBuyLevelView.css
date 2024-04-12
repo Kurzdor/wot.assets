@@ -726,6 +726,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 12rem;
     position: relative;
 }
+.ProgressBar_base__medium_62 {
+        height: 6rem;
+    }
 .ProgressBar_base__small_df {
         height: 2rem;
     }
@@ -741,6 +744,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 0;
     left: 0;
 }
+.ProgressBar_background__medium_6e {
+        height: 6rem;
+    }
 .ProgressBar_background__small_46 {
         height: 2rem;
     }
@@ -762,6 +768,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translate(50%, -50%);
     pointer-events: none;
 }
+
+    .ProgressBarBlink_base__medium_ec {
+        width: 42rem;
+        height: 70rem;
+    }
 
     .ProgressBarBlink_base__small_0f {
         width: 44rem;
@@ -988,7 +999,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Points_base_ce {
     display: flex;
     flex-direction: row;
-    margin-bottom: -1rem;
     pointer-events: none;
 }
 
@@ -1178,7 +1188,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         }
 
 .Reward_info__credits_ef {
-        color: #CED9D9;
+        color: #E9E2BF;
     }
 
 .Reward_info__gold_36 {
@@ -1273,6 +1283,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Content_base__hidden_c7 .Content_buttonWrapper_c2 {
         opacity: 0;
         transition-timing-function: ease-out;
+        pointer-events: none;
     }
 
 .Content_rewardBtn_36 {
@@ -1835,7 +1846,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .VerticalBar_thumb_32 {
-    display: none;
+    display: flex;
     flex: 0 0 13rem;
     width: 13rem;
     height: 100%;
@@ -1891,6 +1902,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .ScrollWithLips_base_69 {
     position: relative;
+}
+.ScrollWithLips_scrollContent_19 {
+    height: auto;
 }
 .ScrollWithLips_lip_90 {
     height: 96rem;

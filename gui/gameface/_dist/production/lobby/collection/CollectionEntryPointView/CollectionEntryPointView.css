@@ -1,0 +1,222 @@
+body {
+    margin: 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.App_base_c1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.EntryPoint_base_c6 {
+    border: 1rem solid;
+    border-radius: 2rem;
+    filter: brightness(1);
+    position: relative;
+    transition: all 0.5s cubic-bezier(.78, .13, .15, .86);
+    cursor: pointer;
+}
+
+    .EntryPoint_base__completed_74 {
+        border-image: linear-gradient(270deg, #80d43a 2.53%, rgba(128, 212, 58, 0) 76.82%) 1;
+    }
+
+    .EntryPoint_base__disabled_c0 {
+        border-image: linear-gradient(270deg, rgba(255, 255, 255, 0.3), #0000 85%) 1;
+        background: linear-gradient(269.12deg, rgba(0, 0, 0, 0.3) 0.61%, rgba(6, 8, 68, 0) 86.22%);
+    }
+
+    .EntryPoint_base__active_f3 {
+        border-image: linear-gradient(270deg, #ffd588 3%, #ffc656 3%, #0000 85%) 1;
+    }
+.EntryPoint_purpleGradient_5a {
+    background: linear-gradient(269.12deg, rgba(6, 8, 68, 0.3) 0.61%, rgba(6, 8, 68, 0) 86.22%);
+    opacity: .7;
+    position: absolute;
+    transition: all 0.5s cubic-bezier(.78, .13, .15, .86);
+}
+.EntryPoint_base_c6:hover .EntryPoint_purpleGradient_5a {
+        opacity: .5;
+    }
+.EntryPoint_fullSize_4e {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.EntryPoint_flexCenter_3c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.EntryPoint_animation_4a {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+    transition: all 0.5s cubic-bezier(.78, .13, .15, .86);
+}
+.EntryPoint_animation__first_44 {
+        opacity: 1;
+    }
+.EntryPoint_base_c6:hover .EntryPoint_animation_4a {
+        opacity: 1;
+    }
+.EntryPoint_activeShadow_13 {
+    background: url('R.images.gui.maps.icons.collections.entry_point.birthday_2023.green_glow') no-repeat center / cover;
+    position: absolute;
+    transition: all 0.5s cubic-bezier(.78, .13, .15, .86);
+}
+.EntryPoint_activeShadow__large_26 {
+        background: url('R.images.gui.maps.icons.collections.entry_point.birthday_2023.green_glow_large') no-repeat center / cover;
+        opacity: 0;
+        top: 16rem;
+        left: 5rem;
+    }
+.EntryPoint_base_c6:hover .EntryPoint_activeShadow__large_26 {
+            opacity: 1;
+        }
+.EntryPoint_documentsShine_55 {
+    background: url('R.images.gui.maps.icons.collections.entry_point.birthday_2023.entryBack') no-repeat center / cover;
+    position: absolute;
+}
+.EntryPoint_borderSparks_a4 {
+    background: url('R.images.gui.maps.icons.collections.entry_point.birthday_2023.borderSparksHover') no-repeat right / cover;
+    opacity: .7;
+    position: absolute;
+    transition: all 0.5s cubic-bezier(.78, .13, .15, .86);
+}
+.EntryPoint_base_c6:hover .EntryPoint_borderSparks_a4 {
+        opacity: 1;
+    }
+.EntryPoint_documentsContainer_05 {
+    position: absolute;
+    top: -10rem;
+    transition: all 0.5s cubic-bezier(.78, .13, .15, .86);
+}
+.EntryPoint_base_c6:hover .EntryPoint_documentsContainer__active_71, .EntryPoint_base_c6:hover .EntryPoint_documentsContainer__completed_e4 {
+            transform: scale(1.1);
+        }
+.EntryPoint_documentsContainer_big_63 .EntryPoint_documents_79 {
+        width: 150rem;
+    }
+.EntryPoint_documentsContainer_thinSmall_be {
+        top: -7rem;
+    }
+.EntryPoint_documentsContainer_thinExtraSmall_90 .EntryPoint_documents_79 {
+        width: 110rem;
+    }
+.EntryPoint_documents_79 {
+    width: 115rem;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.collections.entry_point.birthday_2023.documents') no-repeat center / contain;
+}
+.EntryPoint_documents__disabled_47 {
+        background: url('R.images.gui.maps.icons.collections.entry_point.birthday_2023.documentsDisabled') no-repeat center / contain;
+    }
+.EntryPoint_wrapper_75 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+}
+.EntryPoint_receivedItems_52 {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1rem rgba(0,0,0, .1),
+              0 0 6rem rgba(254,103,0, .2),
+              0 0 12rem 4rem rgba(249,0,0, .3);
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    color: #F2F2F7;
+    font-size: 13rem;
+    font-weight: 400;
+    position: absolute;
+    top: 10rem;
+    right: 10rem;
+    animation: EntryPoint_show_cf ease-in-out forwards;
+}
+.EntryPoint_receivedItems_52 span {
+        position: absolute;
+        top: -2rem;
+    }
+.EntryPoint_receivedItems__large_6c {
+        width: 18rem;
+        height: 18rem;
+        font-size: 13rem;
+    }
+.EntryPoint_receivedItems__large_6c span {
+            position: absolute;
+            top: 0;
+        }
+.EntryPoint_mainText_ce {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 10rem;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    overflow-wrap: break-word;
+}
+.EntryPoint_mainText_big_b8 {
+        font-size: 24rem;
+    }
+.EntryPoint_mainText_wideSmall_8b {
+        font-size: 18rem;
+    }
+.EntryPoint_mainText_thinSmall_dd {
+        font-size: 18rem;
+    }
+.EntryPoint_mainText_thinExtraSmall_41 {
+        font-size: 15rem;
+    }
+.EntryPoint_mainText__disabled_40 {
+        opacity: .8;
+    }
+.EntryPoint_durationWrap_21 {
+    width: 100%;
+    height: 29rem;
+}
+.EntryPoint_durationWrap_big_ef {
+        margin-bottom: 8rem;
+    }
+.EntryPoint_icon_99 {
+    width: 22rem;
+    height: 22rem;
+    margin-top: 3rem;
+}
+.EntryPoint_icon__completed_35 {
+        background: url('R.images.gui.maps.icons.library.check') no-repeat center / contain;
+    }
+.EntryPoint_icon__disabled_5e {
+        margin-right: 3rem;
+        background: url('R.images.gui.maps.icons.library.alertIcon1') no-repeat center / contain;
+    }
+.EntryPoint_icon__active_44 {
+        width: 35rem;
+        height: 35rem;
+        background: url('R.images.gui.maps.icons.library.ClockIcon_1') no-repeat center / contain;
+    }
+.EntryPoint_secondText_d5 {
+    font-size: 16rem;
+    overflow-wrap: break-word;
+}
+.EntryPoint_secondText_thinExtraSmall_3d {
+        font-size: 11rem;
+    }
+.EntryPoint_secondText__completed_dc {
+        color: #80D43A;
+    }
+.EntryPoint_secondText__disabled_c5 {
+        color: #FFDD99;
+        text-shadow: 0 0 4px rgba(255, 127, 0, 0.25), 0 0 8px #ff2a00, 0 0 15px #e52;
+    }
+.EntryPoint_secondText__active_bb {
+        color: #FFDD99;
+    }
+

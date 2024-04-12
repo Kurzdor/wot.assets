@@ -148,7 +148,7 @@
 }
 
 .VerticalBar_thumb_32 {
-    display: none;
+    display: flex;
     flex: 0 0 13rem;
     width: 13rem;
     height: 100%;
@@ -204,6 +204,9 @@
 
 .ScrollWithLips_base_69 {
     position: relative;
+}
+.ScrollWithLips_scrollContent_19 {
+    height: auto;
 }
 .ScrollWithLips_lip_90 {
     height: 96rem;

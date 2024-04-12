@@ -1,0 +1,478 @@
+@keyframes ModifierDomainIcon_iconHover_69 {
+    from {
+        filter: brightness(1) contrast(1);
+    }
+
+    to {
+        filter: brightness(1.5) contrast(.75);
+    }
+}
+
+@keyframes ModifierDomainIcon_iconOut_c6 {
+    from {
+        filter: brightness(1.5) contrast(.75);
+    }
+
+    to {
+        filter: brightness(1) contrast(1);
+    }
+}
+
+.ModifierDomainIcon_base_74 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ModifierDomainIcon_base_74:hover {
+    background: url('R.images.battle_modifiers.gui.maps.icons.feature.domains.c_64x64.hoverBg') no-repeat center / contain;
+}
+
+.ModifierDomainIcon_image_62 {
+    animation-name: ModifierDomainIcon_iconOut_c6;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    --icon-height: 40rem;
+    --icon-width: var(--icon-height);
+    width: var(--icon-width);
+    height: var(--icon-height);
+    background: no-repeat center / contain;
+}
+
+.ModifierDomainIcon_image__big_3c {
+        --icon-height: 64rem;
+    }
+
+.ModifierDomainIcon_image__large_f1 {
+        --icon-height: 80rem;
+    }
+
+.ModifierDomainIcon_image_62:hover {
+    animation-name: ModifierDomainIcon_iconHover_69;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBar_base_45 {
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+.ProgressBar_base__medium_62 {
+        height: 6rem;
+    }
+.ProgressBar_base__small_df {
+        height: 2rem;
+    }
+.ProgressBar_background_51 {
+    width: 100%;
+    max-width: 8001px;
+    height: 100%;
+    background-image: var(--progress-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ProgressBar_background__medium_6e {
+        height: 6rem;
+    }
+.ProgressBar_background__small_46 {
+        height: 2rem;
+    }
+.ProgressBar_lineWrapper_6a {
+    display: flex;
+    flex: 1;
+}
+
+
+.ProgressBarBlink_base_24 {
+    width: 60rem;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    pointer-events: none;
+}
+
+    .ProgressBarBlink_base__medium_ec {
+        width: 42rem;
+        height: 70rem;
+    }
+
+    .ProgressBarBlink_base__small_0f {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressLineImpose_base_80 {
+    max-width: 8001px;
+    height: 100%;
+    background-color: var(--progress-line-base);
+    position: relative;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressLineImpose_base__disabled_cc {
+        background-color: var(--progress-line-disabled);
+    }
+.ProgressLineImpose_base__finished_d4 {
+        background-color: var(--progress-line-finished);
+    }
+.ProgressLineImpose_base__withoutBounce_56 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressLineImpose_pattern_1c {
+    max-width: 8001px;
+    background-image: var(--progress-pattern-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-disabled);
+        left: 0;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
+        background-image: var(--progress-pattern-finished);
+    }
+.ProgressLineImpose_gradient_35 {
+    max-width: 8001px;
+    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
+        top: 0;
+        bottom: 0;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
+        display: none;
+    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
+        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
+    }
+.ProgressLineImpose_glow_a5 {
+    width: 60rem;
+    max-width: 8001px;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.ProgressLineImpose_glow__left_d8 {
+        left: 1rem;
+    }
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
+    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+        display: none;
+    }
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
+        width: 44rem;
+        height: 43rem;
+        background-image: var(--progress-glow-small);
+    }
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaSimple_base_6c {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ProgressBarDeltaSimple_delta_99 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-property: width, transform;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaGrow_base_7e {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+.ProgressBarDeltaGrow_glow_68 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
+        transition-timing-function: cubic-bezier(1, 0, .75, .75);
+    }
+
+@keyframes Status_fadeInWithScale_9b {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 0), scaleY(.75);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(-50%, 0), scaleY(1.05);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0), scaleY(1);
+    }
+}
+@keyframes Status_slideDown_d6 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.Status_base_a8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85rem;
+    padding-bottom: 25rem;
+}
+.Status_base__completedResettable_61 {
+        height: 74rem;
+        padding-bottom: 10rem;
+    }
+.Status_base__completedFinal_81 {
+        height: 74rem;
+        padding-bottom: 14rem;
+    }
+.Status_progress_f1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity .2s cubic-bezier(.07, .82, .16, 1) 0s;
+}
+.Status_base__completedResettable_61 .Status_progress_f1,
+    .Status_base__completedFinal_81 .Status_progress_f1,
+    .Status_base__disabled_e2 .Status_progress_f1 {
+        opacity: 0;
+        transition-delay: 0s;
+    }
+.Status_progressLevel_9a {
+    color: #FFDD99;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 6rem;
+    line-height: 20rem;
+    text-align: center;
+}
+.Status_progressBar_68 {
+    width: 44rem;
+}
+.Status_statusIcon_bf {
+    opacity: 0;
+    position: absolute;
+    transition: opacity .2s cubic-bezier(.07, .82, .16, 1) 0s;
+}
+.Status_base__completedResettable_61 .Status_statusIcon_bf {
+        width: 32rem;
+        height: 32rem;
+        background: url('R.images.gui.maps.icons.components.countdown.clock') center center / cover;
+        opacity: 1;
+        bottom: 10rem;
+        transition-delay: .2s;
+    }
+.Status_base__completedFinal_81 .Status_statusIcon_bf {
+        width: 24rem;
+        height: 24rem;
+        background: url('R.images.gui.maps.icons.library.check') center center / cover;
+        opacity: 1;
+        bottom: 14rem;
+        transition-delay: .2s;
+    }
+
+@keyframes App_fadeInWithScale_72 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 0), scaleY(.75);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(-50%, 0), scaleY(1.05);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0), scaleY(1);
+    }
+}
+@keyframes App_slideDown_0e {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+html {
+    overflow: visible;
+}
+body {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+.App_base_59 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.App_animContainer_b4 {
+    opacity: 0;
+    animation-name: App_slideDown_0e;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-delay: .2s;
+    animation-iteration-count: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360rem;
+    height: 135rem;
+    position: relative;
+    cursor: pointer;
+}
+.App_base__completedResettable_78 .App_animContainer_b4,
+    .App_base__completedFinal_76 .App_animContainer_b4,
+    .App_base__disabled_e8 .App_animContainer_b4 {
+        height: 120rem;
+    }
+.App_backgroundWrapper_0b {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    transition: transform .2s cubic-bezier(.07, .82, .16, 1), height .2s cubic-bezier(.07, .82, .16, 1), filter .2s cubic-bezier(.07, .82, .16, 1);
+}
+.App_base_59:hover .App_backgroundWrapper_0b {
+        transform: translateY(5rem);
+    }
+.App_base__completedResettable_78 .App_backgroundWrapper_0b,
+    .App_base__completedFinal_76 .App_backgroundWrapper_0b,
+    .App_base__disabled_e8 .App_backgroundWrapper_0b {
+        height: 120rem;
+    }
+.App_base__completedResettable_78 .App_backgroundWrapper_0b {
+        filter: saturate(0);
+    }
+.App_background_75 {
+    transform: translate(-50%, 0);
+}
+.App_background__scaled_b4 {
+        transform: translate(-50%, 50%) scale(2);
+    }
+.App_modifications_5f {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4rem;
+}
+.App_title_31 {
+    color: #FEFEEC;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    width: 100%;
+    padding-top: 2rem;
+    line-height: 32rem;
+    text-align: center;
+    text-shadow: 0 4rem 4rem rgba(0, 0, 0, .25);
+    white-space: nowrap;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+}
+.App_status_1c {
+    width: 74rem;
+    position: absolute;
+    bottom: 0;
+    transition: transform .2s cubic-bezier(.07, .82, .16, 1);
+}
+.App_base_59:hover .App_status_1c {
+        transform: translateY(5rem);
+    }
+

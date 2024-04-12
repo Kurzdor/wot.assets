@@ -1,0 +1,497 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.GradientDecorator_base_ee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12rem 0 18rem;
+    position: relative;
+}
+
+.GradientDecorator_bg_21 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: url('R.images.gui.maps.icons.library.white_bg') no-repeat 50% / 100%;
+}
+
+.GradientDecorator_divider_13 {
+    width: 360rem;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.tooltip.tooltip_perks_divider') no-repeat center / cover;
+}
+
+.TooltipContentSection_base_5c {
+    display: flex;
+    flex-direction: column;
+}
+
+    .TooltipContentSection_base_5c + .TooltipContentSection_base_5c {
+        margin-top: 16rem;
+    }
+
+.TooltipContentSection_label_91 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.TooltipContentSection_base__withPadding_c4 .TooltipContentSection_content_88 {
+        padding-left: 13rem;
+    }
+
+.AdditionalRoles_role_8a {
+    display: flex;
+    align-items: flex-end;
+    margin: 5rem 0 0 10rem;
+}
+
+    .AdditionalRoles_role_8a + .AdditionalRoles_role_8a {
+        margin-top: 7rem;
+    }
+
+.AdditionalRoles_roleIcon_44 {
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    background: no-repeat center / contain;
+    opacity: .6;
+    position: relative;
+}
+
+.AdditionalRoles_roleName_47 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-left: 9rem;
+}
+
+.MainRole_base_dd {
+    display: flex;
+    align-items: flex-end;
+}
+
+.MainRole_roleIcon_c2 {
+    width: 24rem;
+    height: 24rem;
+    background: no-repeat center / contain;
+    opacity: 0.6;
+    position: relative;
+}
+
+.MainRole_roleName_19 {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 2rem 9rem;
+}
+
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+    .ExtendedText_base__zeroPadding_25 {
+        padding: 0;
+    }
+
+    .ExtendedText_base__isTruncationAvailable_5b {
+        width: 100%;
+    }
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+        opacity: 0;
+    }
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #FF2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #FFFFFF;
+}
+
+.colors_white_45 {
+    color: #F2F2F7;
+}
+
+.colors_whiteOrange_81 {
+    color: #FEFEEC;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #E9E2BF;
+}
+
+.colors_par_5b {
+    color: #8C8C7E;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362E;
+}
+
+.colors_red_79 {
+    color: #FF2717;
+}
+
+.colors_redDark_73 {
+    color: #B70000;
+}
+
+.colors_yellow_76 {
+    color: #FEAB34;
+}
+
+.colors_orange_cd {
+    color: #EE7000;
+}
+
+.colors_cream_0f {
+    color: #FFDD99;
+}
+
+.colors_brown_82 {
+    color: #CBAC77;
+}
+
+.colors_greenBright_68 {
+    color: #80D43A;
+}
+
+.colors_green_fa {
+    color: #7AB300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #CCFFFF;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09E2FF;
+}
+
+.colors_cred_35 {
+    color: #CED9D9;
+}
+
+.colors_gold_c3 {
+    color: #FFC363;
+}
+
+.colors_bond_ce {
+    color: #C9C9B6;
+}
+
+.colors_prom_83 {
+    color: #A29B70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.Modifiers_base_d4 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.Modifiers_modifiers_b5 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+    padding-left: 46rem;
+}
+
+.Modifiers_modifier_82 {
+    display: flex;
+    position: relative;
+}
+
+.Modifiers_modifier_82 + .Modifiers_modifier_82 {
+        margin-top: 6rem;
+    }
+
+.Modifiers_value_29 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    left: -6rem;
+    transform: translateX(-100%);
+}
+
+.Modifiers_value__red_a1 {
+        color: #FF2717;
+    }
+
+.Modifiers_label_be {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Modifiers_final_f3 {
+    display: flex;
+    margin-top: 10rem;
+}
+
+.Modifiers_finalLabel_e4 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Modifiers_finalValue_f9 {
+    color: #E9E2BF;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-left: 2rem;
+}
+
+.Modifiers_finalValue__red_2e {
+        color: #FF2717;
+    }
+
+.TankName_base_f1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    line-height: 1.3;
+}
+
+    .TankName_base__sizeMedium_3a {
+        color: #FEFEEC;
+        font-size: 24rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+    .TankName_base__sizBig_a9 {
+        color: #F2F2F7;
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+    .TankName_base__typeWhite_32 {
+        color: #F2F2F7;
+    }
+
+    .TankName_base__typeWhiteSpanish_e2 {
+        color: #E9E2BF;
+    }
+
+.TankName_base__typeColored_bc .TankName_level_bb {
+        color: #E9E2BF;
+    }
+
+.TankName_type_3c {
+    width: 42rem;
+    height: 38rem;
+    margin: 0 -9rem;
+    background: no-repeat center / contain;
+    position: relative;
+    top: -8rem;
+}
+
+.TankName_type__elite_cc {
+        margin: 0 -6rem;
+    }
+
+.TankName_base__sizeMedium_3a .TankName_type_3c,
+    .TankName_base__sizeBig_2b .TankName_type_3c {
+        width: 83rem;
+        height: 73rem;
+        margin: 0 -23rem;
+        top: -16rem;
+    }
+
+.TankName_base__sizeMedium_3a .TankName_type__elite_cc, .TankName_base__sizeBig_2b .TankName_type__elite_cc {
+            margin: 0 -16rem;
+        }
+
+.TankName_base__sizeBig_2b .TankName_type_3c {
+        margin: 0 -23rem;
+        top: -14rem;
+    }
+
+.TankName_base__sizeBig_2b .TankName_type__elite_cc {
+            margin: 0 -13rem;
+        }
+
+.TankName_base__typeColored_bc .TankName_name_56 {
+        color: #8C8C7E;
+    }
+
+.TankName_base__tagPremiumIGR_26 .TankName_name_56 {
+        padding-left: 13rem;
+        background: url('R.images.gui.maps.icons.library.premium_igr_ico') no-repeat left 50% / 10rem 10rem;
+    }
+
+.TankName_premiumIGR_25 {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 3rem 0 -2rem;
+    background: url('R.images.gui.maps.icons.library.premium_igr_ico') no-repeat center / contain;
+    position: relative;
+    top: 5rem;
+}
+
+.PremiumSpecialization_base_a1 {
+    display: flex;
+    align-items: center;
+    height: 18rem;
+}
+
+.PremiumSpecialization_icon_bd {
+    width: 24rem;
+    height: 24rem;
+    margin: 0 0 -1rem -4rem;
+    background: no-repeat url('R.images.gui.maps.icons.library.prem_small_icon') center / 20rem 17rem;
+}
+
+.PremiumSpecialization_label_ec {
+    color: #FFC363;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-left: 2rem;
+}
+
+.Specialization_tank_d3 {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Specialization_tankIcon_fd {
+    top: 1rem;
+}
+
+.Specialization_premiumVehicleName_ba {
+    color: #FFC363;
+}
+
+.TankmanLocation_tank_90 {
+    justify-content: flex-start;
+    align-items: center;
+    height: 20rem;
+}
+
+.TankmanLocation_tankIcon_13 {
+    top: 1rem;
+}
+
+.TankmanLocation_premiumVehicleName_a6 {
+    color: #FFC363;
+}
+
+.TrainingLevelApp_base_f2 {
+    display: flex;
+    flex-direction: column;
+    width: 328rem;
+    padding: 21rem 20rem 23rem;
+    position: relative;
+}
+
+.TrainingLevelApp_additionalRoles_f3 {
+    margin-top: 19rem;
+}
+
+.TrainingLevelApp_specialization_9f {
+    margin-top: 19rem;
+}
+
+.TrainingLevelApp_modifiers_5b {
+    margin-top: 22rem;
+    padding: 15rem 0 20rem;
+}
+
+.TrainingLevelApp_description_4a {
+    color: #595950;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 4rem;
+}
+
+.TrainingLevelApp_description_4a + .TrainingLevelApp_description_4a {
+        margin-top: 0;
+    }
+

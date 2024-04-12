@@ -1,0 +1,16 @@
+# This file was generated using wgpygen
+#   template: configs/templates/view_model.unbound.jinja2
+#   source: configs/definitions/views/buy_vehicle_view/additional_equipment_slot_model.yaml
+# Please, don't edit this file manually.
+(def macro AdditionalEquipmentSlotModel()
+    (scope
+        (event onSelectedChange)
+
+        (var isEnabled:bool = false)
+        (var isSelected:bool = false)
+        (var isDisabledTooltip:bool = false)
+
+        # The following submodels are used in this model:
+        # actionPrices:ui_kit.list_model
+    )
+)

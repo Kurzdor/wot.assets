@@ -3,17 +3,13 @@
     position: absolute;
 }
 
-.TooltipDecorator_decorator_3d {
-    padding: 4rem 6rem 8rem; /* border offset*/
-    border-image-source: url('R.atlases.components.tooltip_background');
-    border-image-slice: 24 fill;
-    border-image-width: 24rem;
-    position: relative;
-}
-
-.TooltipDecorator_decoratorContent_de {
-    background-color: #000;
-}
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
 
 .Body_base_53 {
     width: 365rem;
@@ -34,9 +30,6 @@
     font-style: normal;
     line-height: 18rem;
 }
-.Body_description__last_cc {
-        margin-bottom: 20rem;
-     }
 .Body_listHeader_15 {
     display: flex;
     padding: 5rem 20rem;

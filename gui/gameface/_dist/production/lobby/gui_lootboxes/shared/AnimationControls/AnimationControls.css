@@ -1,0 +1,65 @@
+.AnimationControls_base_71 {
+    width: 70rem;
+    height: 98rem;
+    color: #fd9;
+    position: absolute;
+    bottom: 0;
+    left: 15rem;
+    z-index: 10;
+    cursor: pointer;
+}
+
+    .AnimationControls_base_71:hover {
+        color: #fffa9f;
+    }
+
+    .AnimationControls_base_71:active {
+        color: #fd9;
+    }
+
+    .AnimationControls_base__disabled_ec {
+        color: #8C8C7E;
+        cursor: default;
+    }
+
+    .AnimationControls_base__disabled_ec:hover {
+        color: #8C8C7E;
+    }
+
+    .AnimationControls_base__disabled_ec:active {
+        color: #8C8C7E;
+    }
+
+    .mediaMedium .AnimationControls_base_71 {
+        height: 152rem;
+}
+.AnimationControls_flexColumnCenter_62 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.AnimationControls_icon_05 {
+    width: 32rem;
+    height: 32rem;
+    background: url('R.images.gui_lootboxes.gui.maps.openBox.icon_hide_video') no-repeat center / 150%;
+    mix-blend-mode: screen;
+    position: relative;
+    top: 0;
+}
+.AnimationControls_base__disabledAnimadion_89 .AnimationControls_icon_05 {
+        background-image: url('R.images.gui_lootboxes.gui.maps.openBox.icon_show_video');
+    }
+.AnimationControls_text_20 {
+    font-size: 12rem;
+    line-height: 14rem;
+    text-align: center;
+    text-shadow: 0 0 15rem #e52, 0 0 8rem #ff2a00, 0 0 4rem rgba(255, 127, 0, .25);
+    bottom: 0;
+    transition: color .16s;
+}
+.AnimationControls_base__disabled_ec .AnimationControls_text_20 {
+        text-shadow: none;
+    }
+

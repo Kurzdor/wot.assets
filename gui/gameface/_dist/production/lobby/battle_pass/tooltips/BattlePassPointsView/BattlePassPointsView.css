@@ -3,17 +3,13 @@
     position: absolute;
 }
 
-.TooltipDecorator_decorator_3d {
-    padding: 4rem 6rem 8rem; /* border offset*/
-    border-image-source: url('R.atlases.components.tooltip_background');
-    border-image-slice: 24 fill;
-    border-image-width: 24rem;
-    position: relative;
-}
-
-.TooltipDecorator_decoratorContent_de {
-    background-color: #000;
-}
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
 
 .FormatText_base_d0 {
     display: flex;
@@ -110,15 +106,15 @@
     text-shadow: 0 0 5px rgba(201,201,182, .5);
 }
 
-.VehicleBonusList_base_7f {
+.VehicleList_base_b7 {
     line-height: normal;
 }
-.VehicleBonusList_separator_43 {
+.VehicleList_separator_f9 {
     width: 283rem;
     height: 1rem;
     background: url('R.images.gui.maps.icons.battlePass.tooltips.Devider_points') 50% / contain no-repeat;
 }
-.VehicleBonusList_rewards_3a {
+.VehicleList_rewards_98 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,11 +125,11 @@
     color: #c9c9b6;
     font-size: 14rem;
 }
-.VehicleBonusList_base_7f {
+.VehicleList_base_b7 {
     display: flex;
     flex-direction: column;
 }
-.VehicleBonusList_info_20 {
+.VehicleList_info_5a {
     color: #8C8C7E;
     font-size: 14rem;
     font-weight: 400;
@@ -144,7 +140,7 @@
     align-items: center;
     height: 28rem;
 }
-.VehicleBonusList_points_64 {
+.VehicleList_points_59 {
     display: flex;
     align-items: flex-end;
     height: 16rem;
@@ -154,7 +150,7 @@
     position: relative;
     top: 1rem;
 }
-.VehicleBonusList_top_7a {
+.VehicleList_top_09 {
     color: #FFDD99;
 }
 
@@ -178,12 +174,12 @@
     font-size: 14rem;
 }
 .Content_base_a8 {
-    width: 500rem;
+    width: 490rem;
     padding: 28rem;
 }
-.Content_base__small_1d {
-        width: 490rem;
-    }
+.mediaSmall .Content_base_a8 {
+        width: 500rem;
+}
 .Content_subtitleRules_a7 {
     color: #E9E2BF;
     font-size: 14rem;
@@ -384,9 +380,9 @@
     width: 100%;
 }
 .Points_points_9b {
-    width: 520rem;
+    width: 490rem;
 }
-.Points_points__small_b8 {
-        width: 490rem;
-    }
+.mediaSmall .Points_points_9b {
+        width: 520rem;
+}
 

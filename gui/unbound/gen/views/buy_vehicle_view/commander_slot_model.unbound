@@ -1,0 +1,20 @@
+# This file was generated using wgpygen
+#   template: configs/templates/view_model.unbound.jinja2
+#   source: configs/definitions/views/buy_vehicle_view/commander_slot_model.yaml
+# Please, don't edit this file manually.
+(def macro CommanderSlotModel()
+    (scope
+        (var idx:number = 0)
+        (var isSelected:bool = false)
+        (var percents:number = 0)
+        (var title:str = '')
+        (var defPrice:str = '')
+        (var isFree:bool = false)
+        (var discount:number = -1)
+        (var slotIsEnabled:bool = true)
+        (var isBootcamp:bool = false)
+
+        # The following submodels are used in this model:
+        # actionPrice:ui_kit.list_model
+    )
+)

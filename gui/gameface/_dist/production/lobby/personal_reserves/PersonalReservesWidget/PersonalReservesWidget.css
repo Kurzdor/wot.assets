@@ -49,6 +49,10 @@ html {
             background: radial-gradient(100% 98.78% at 0% 100%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .2) 100%), #61440c;
         }
 
+.App_entryIcon__disabled_e9 {
+        filter: saturate(0);
+    }
+
 .App_reserveBlocksContainer_46 {
     display: flex;
     align-items: center;

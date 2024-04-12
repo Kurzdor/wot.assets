@@ -1,0 +1,672 @@
+.Caption_base_18 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Caption_flare_20 {
+    width: 1200rem;
+    height: 768rem;
+    margin-top: 16rem;
+    background: url('R.images.historical_battles.gui.maps.icons.battle.eventStats.bg.flare') no-repeat 50% 0 / cover;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Caption_label_b8 {
+    color: #F2F2F7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding: 0 22rem 4rem;
+    z-index: 1;
+}
+
+.Caption_line_63 {
+    flex: 0 0 345rem;
+    width: 345rem;
+    height: 2rem;
+    background: url('R.images.historical_battles.gui.maps.icons.battle.eventStats.bg.line_left') no-repeat 50% / contain;
+}
+
+.Caption_line__right_c4 {
+        transform: rotate(180deg);
+    }
+
+.Header_base_27 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1920rem;
+    height: 157rem;
+    background: url('R.images.historical_battles.gui.maps.icons.battle.eventStats.bg.header') no-repeat 50% / contain;
+    color: #E9E2BF;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+    transform: translateX(-50%);
+}
+.Header_mapInfo_ae {
+    width: 350rem;
+    text-align: right;
+}
+.mediaMedium .Header_mapInfo_ae {
+        width: 500rem;
+}
+.Header_mapName_ea {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Header_icon_c2 {
+    width: 136rem;
+    height: 136rem;
+    background: no-repeat center / cover;
+}
+.Header_battleInfo_ca {
+    display: flex;
+    flex-direction: column;
+    width: 350rem;
+}
+.mediaMedium .Header_battleInfo_ca {
+        width: 500rem;
+}
+.Header_battleMode_5f {
+    color: #E9E2BF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+}
+.Header_battleTask_0b {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.SortHelper_base_5a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+    .SortHelper_base__active_ae {
+        cursor: pointer;
+    }
+
+.SortHelper_arrow_5f {
+    width: 118rem;
+    height: 6rem;
+    background: url('R.images.historical_battles.gui.maps.icons.common.teamList.bg.filterArrow') no-repeat 0 / 122rem 6rem;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%) rotate(-180deg);
+}
+
+.SortHelper_base__sortAsc_7b .SortHelper_arrow_5f {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+        bottom: -6rem;
+    }
+
+.CellDecorator_base_50 {
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+    .CellDecorator_base__small_4f.CellDecorator_base__player_58 {
+            width: 294rem;
+        }
+
+    .CellDecorator_base__small_4f.CellDecorator_base__stats_a6 {
+            width: 70rem;
+        }
+
+    .CellDecorator_base__medium_94.CellDecorator_base__player_58 {
+            width: 266rem;
+        }
+
+    .CellDecorator_base__medium_94.CellDecorator_base__stats_a6 {
+            width: 80rem;
+        }
+
+    .CellDecorator_base__big_28.CellDecorator_base__player_58 {
+            width: 344rem;
+        }
+
+    .CellDecorator_base__big_28.CellDecorator_base__stats_a6 {
+            width: 90rem;
+        }
+
+    .CellDecorator_base_50.CellDecorator_base__vehicle_21,
+    .CellDecorator_base_50.CellDecorator_base__vehicleIcon_bc,
+    .CellDecorator_base_50.CellDecorator_base__role_c2,
+    .CellDecorator_base_50.CellDecorator_base__roleIcon_21 {
+        width: 120rem;
+    }
+
+    .CellDecorator_base__bordered_bd {
+        border-left-width: 1rem;
+        border-left-style: solid;
+        border-image-source: linear-gradient(
+                180deg,
+                transparent 2.66%,
+                rgba(255,255,255, .2) 48.96%,
+                transparent 97.89%
+        );
+        border-image-slice: 0 0 0 1;
+        border-image-repeat: stretch;
+    }
+
+.CellDecorator_border_c6 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 31rem;
+    background: linear-gradient(
+            180deg,
+            transparent 2.66%,
+            rgba(255,255,255, .2) 48.96%,
+            transparent 97.89%
+    );
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+}
+
+.CellDecorator_children_2b {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.CellDecorator_base__stats_a6 .CellDecorator_children_2b,
+    .CellDecorator_base__statsLarge_27 .CellDecorator_children_2b {
+        justify-content: center;
+    }
+
+.CellDecorator_base__vehicleIcon_bc .CellDecorator_children_2b {
+        padding-left: 18rem;
+    }
+
+.CellDecorator_base__roleIcon_21 .CellDecorator_children_2b {
+        padding-left: 10rem;
+    }
+
+.CellDecorator_base__player_58 .CellDecorator_children_2b {
+        padding-left: 23rem;
+    }
+
+.CellDecorator_base__vehicle_21 .CellDecorator_children_2b,
+    .CellDecorator_base__role_c2 .CellDecorator_children_2b {
+        padding-left: 16rem;
+    }
+
+.RowDecorator_base_c9 {
+    height: 43rem;
+    border-bottom-width: 1rem;
+    border-bottom-style: solid;
+    border-image-source: linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(255,255,255, .08) 15%,
+            rgba(255,255,255, .08) 85%,
+            transparent 100%
+    );
+    border-image-slice: 0 0 1 0;
+    border-image-repeat: stretch;
+    position: relative;
+}
+
+    .RowDecorator_base__hovered_7f {
+        cursor: pointer;
+    }
+
+.RowDecorator_childrenWrapper_9e {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    z-index: 3;
+}
+
+.RowDecorator_base__redBg_17 .RowDecorator_childrenWrapper_9e {
+        opacity: .5;
+    }
+
+.RowDecorator_base__defaultText_a2 .RowDecorator_childrenWrapper_9e {
+        color: #F2F2F7;
+    }
+
+.RowDecorator_base__goldText_62 .RowDecorator_childrenWrapper_9e {
+        color: #FEAB34;
+    }
+
+.RowDecorator_base__disable_95 .RowDecorator_childrenWrapper_9e {
+        opacity: .5;
+    }
+
+.RowDecorator_hoverBg_0f {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255, .08) 15%, rgba(255,255,255, .08) 85%, transparent 100%);
+    opacity: 0;
+    z-index: 2;
+}
+
+.RowDecorator_base__hovered_7f .RowDecorator_hoverBg_0f {
+        opacity: 1;
+        top: -1rem;
+        bottom: -1rem;
+        transition: opacity ease-in-out .1s;
+    }
+
+.RowDecorator_backgroundHelper_16 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.RowDecorator_base__goldBg_d0 .RowDecorator_backgroundHelper_16 {
+    background: linear-gradient(90deg, transparent 0%, rgba(254,171,52, .1) 15%, rgba(254,171,52, .1) 85%, transparent 100%);
+        top: -1rem;
+        bottom: -1rem;
+    }
+
+.RowDecorator_base__redBg_17 .RowDecorator_backgroundHelper_16 {
+    background: linear-gradient(90deg, transparent 0%, rgba(236,18,18, .08) 15%, rgba(236,18,18, .08) 85%, transparent 100%);
+    }
+
+.HeaderIcon_base_af {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .6;
+    transition: opacity ease-in-out .1s;
+}
+
+    .HeaderIcon_base__hoverEnabled_ac:hover {
+        opacity: .8;
+    }
+
+    .HeaderIcon_base__highlighted_de {
+        opacity: 1;
+    }
+
+.HeaderIcon_icon_56 {
+    width: 28rem;
+    height: 20rem;
+    background: no-repeat 50% / contain;
+}
+
+.HeaderRow_base_a5 {
+    display: flex;
+    flex-direction: row;
+}
+
+.HeaderRow_text_ff {
+    margin-left: 2rem;
+}
+
+.HeaderRow_text__tabWindow_a5 {
+        color: #E9E2BF;
+        font-size: 15rem;
+        font-weight: 700;
+        line-height: 1.15;
+    }
+
+.HeaderRow_text__leaderBoard_f5 {
+        color: #F2F2F7;
+        font-size: 14rem;
+        font-weight: 700;
+        line-height: 1.15;
+        opacity: .5;
+    }
+
+.HeaderRow_cell_42 {
+    width: 100%;
+    height: 100%;
+}
+
+.HeaderRow_icon__squad_02 {
+        justify-content: flex-start;
+        width: 28rem;
+        height: 20rem;
+    }
+
+.HeaderRow_icon__vehicle_3f,
+    .HeaderRow_icon__role_a8 {
+        justify-content: flex-start;
+    }
+
+.TextOverflow_base_3b {
+    flex: 0 1 auto;
+    width: auto;
+    line-height: 1.3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Badge_base_ac {
+    display: flex;
+    justify-content: center;
+    background: no-repeat center / contain;
+}
+
+    .Badge_base__default_c9 {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    .Badge_base__x48_e4 {
+        width: 48rem;
+        height: 48rem;
+    }
+
+.PlayerNickname_base_32 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.PlayerNickname_userName_cc {
+    flex: 0 1 auto; /* the only value for correct work */
+}
+
+.PlayerNickname_igrIcon_34 {
+    background: url('R.images.gui.maps.icons.library.premium_igr_big.png') no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_igrIcon_34 {
+        width: 32rem;
+        height: 14rem;
+    }
+
+.PlayerNickname_base__x48_84 .PlayerNickname_igrIcon_34 {
+        width: 64rem;
+        height: 28rem;
+    }
+
+.PlayerNickname_suffixBadgeWrapper_cc {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.PlayerNickname_suffixBadgeStripe_8a {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: -1;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_suffixBadgeStripe_8a {
+        width: 64rem;
+        height: 24rem;
+        right: 12rem;
+    }
+
+.PlayerNickname_base__default_8d.PlayerNickname_base__inverted_34 .PlayerNickname_suffixBadgeStripe_8a {
+        right: auto;
+        left: 12rem;
+        transform: rotateY(180deg);
+    }
+
+.PlayerNickname_base__x48_84 .PlayerNickname_suffixBadgeStripe_8a {
+        width: 68rem;
+        height: 28rem;
+        right: 16rem;
+    }
+
+.PlayerNickname_base__x48_84.PlayerNickname_base__inverted_34 .PlayerNickname_suffixBadgeStripe_8a {
+        right: auto;
+        left: 16rem;
+        transform: rotateY(180deg);
+    }
+
+.PlayerNickname_suffixBadge_bd {
+    background: no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_suffixBadge_bd {
+        width: 24rem;
+        height: 24rem;
+    }
+
+.PlayerNickname_base__x48_84 .PlayerNickname_suffixBadge_bd {
+        width: 32rem;
+        height: 32rem;
+    }
+
+.PlayerNickname_anonymizedIcon_80 {
+    background: no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_anonymizedIcon_80 {
+        width: 24rem;
+        height: 24rem;
+        background-image: url('R.images.gui.maps.icons.library.eye.png');
+    }
+
+.PlayerNickname_base__x48_84 .PlayerNickname_anonymizedIcon_80 {
+        width: 48rem;
+        height: 48rem;
+        background-image: url('R.images.gui.maps.icons.library.eye_48x48.png');
+    }
+
+.PlayerInfo_base_b3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+    .PlayerInfo_base__solo_ff {
+        padding-left: 30rem;
+    }
+
+.PlayerInfo_nickName_fd {
+    flex: 1;
+}
+
+.PlayerInfo_userName__withBadge_e0 {
+        padding-left: 7rem;
+    }
+
+.PlayerInfo_clanTag_db {
+    max-width: 60rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.PlayerInfo_squad_21 {
+    background: no-repeat 50% / contain;
+    text-align: center;
+}
+
+.PlayerInfo_squad__default_82 {
+        color: #F2F2F7;
+        font-size: 14rem;
+        font-weight: 400;
+        line-height: 1.3;
+        width: 18rem;
+        height: 24rem;
+        margin: 5rem 8rem 0 4rem;
+        line-height: 18rem;
+    }
+
+.PlayerInfo_squad__highContrast_e0 {
+        color: #595950;
+        font-size: 12rem;
+        font-weight: 400;
+        line-height: 1.3;
+        width: 14rem;
+        height: 18rem;
+        margin: 0 10rem 0 6rem;
+        line-height: 14rem;
+    }
+
+.PlayerInfo_squad__defaultAlly_fd {
+        color: #FEAB34;
+    }
+
+.PlayerInfo_banIcon_00 {
+    width: 16rem;
+    height: 16rem;
+    background: no-repeat 50% / contain;
+    position: absolute;
+    top: 23rem;
+    left: -15rem;
+    transform: translateY(-50%);
+}
+
+.RoleInfo_base_5a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.RoleInfo_icon_9a {
+    width: 16rem;
+    height: 16rem;
+    margin-right: 5rem;
+    background: no-repeat 50% / contain;
+}
+
+.StatValueDecorator_base_92 {
+    white-space: nowrap;
+    position: relative;
+}
+
+    .StatValueDecorator_base__max_13 {
+        color: #E9E2BF;
+        font-size: 15rem;
+        font-weight: 700;
+        line-height: 1.15;
+    }
+
+.StatValueDecorator_crown_0a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 44rem;
+    height: 44rem;
+    background: no-repeat 50% / contain;
+    z-index: 2;
+}
+
+.StatValueDecorator_amount_5a {
+    position: relative;
+    z-index: 3;
+}
+
+.VehicleInfo_base_8e {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.VehicleInfo_icon_50 {
+    width: 16rem;
+    height: 16rem;
+    margin-right: 7rem;
+    background: no-repeat 50% / contain;
+}
+
+.VehicleInfo_label_e9 {
+    max-width: 80rem;
+}
+
+.PlayerRow_cell_81 {
+    margin-bottom: 2rem;
+}
+
+.TeamList_base_b7 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.EventStatsApp_base_85 {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.EventStatsApp_darkener_cf {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .85;
+    z-index: 1;
+}
+
+.EventStatsApp_overlay_cd {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #141519;
+    z-index: 1;
+}
+
+.EventStatsApp_table_58 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: -92rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.EventStatsApp_tableCaption_1d {
+    margin-bottom: 40rem;
+}
+

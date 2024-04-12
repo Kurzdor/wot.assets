@@ -292,20 +292,28 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 13rem;
+    width: 100%;
+    height: 100%;
+    /* stylelint-disable declaration-block-no-redundant-longhand-properties */
+    padding-left: var(--outer-shadow-width);
+    padding-top: var(--outer-shadow-width);
+    padding-right: var(--outer-shadow-width);
+    padding-bottom: var(--outer-shadow-width);
+    /* stylelint-enable declaration-block-no-redundant-longhand-properties */
     overflow: hidden;
     position: relative;
 }
 
 .WindowDecorator_frame_b5 {
-    width: 100%;
-    height: 100%;
     border: transparent solid;
     border-width: 30rem 27rem 43rem 24rem;
     border-image: url('R.images.gui.maps.icons.windows.window_bg.centered') 30 27 43 24 fill;
     opacity: .85;
     position: absolute;
-    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .WindowDecorator_frame__focused_af {
@@ -313,32 +321,22 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 
 .WindowDecorator_container_1d {
-    --border-top: 9rem;
-    --border-side: 13rem;
-    --border-bottom: 11rem;
-    --outer-shadow: 2rem;
-    margin: -2rem;
-    border: transparent solid;
+    position: relative;
+}
 
-    /* gameface can't into shorthanded props with variables */
-    /* stylelint-disable declaration-block-no-redundant-longhand-properties */
-    border-left-width: var(--border-side);
-    border-top-width: var(--border-top);
-    border-right-width: var(--border-side);
-    border-bottom-width: var(--border-bottom);
-    /* stylelint-enable declaration-block-no-redundant-longhand-properties */
+.WindowDecorator_contentDecorations_be {
+    border: transparent solid;
+    border-width: 9rem 13rem 11rem;
     border-image: url('R.images.gui.maps.icons.windows.window_bg.window_form_bg_new') 9 13 11 fill;
-    z-index: 0;
+    position: absolute;
+    top: -2rem;
+    right: -2rem;
+    bottom: -2rem;
+    left: -2rem;
 }
 
 .WindowDecorator_content_0b {
-    /* outer content shadow compensation */
-
-    /* gameface can't into mixing units inside of calc() */
-    /* stylelint-disable length-zero-no-unit */
-    margin-left: calc(0rem - var(--border-side) + var(--outer-shadow));
-    margin-top: calc(0rem - var(--border-top) + var(--outer-shadow));
-    /* stylelint-enable length-zero-no-unit */
+    position: absolute;
 }
 
 .SubView_base_df {
@@ -471,11 +469,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .ToggleButton_indicator_85 {
-    /* This Needs to be an even number otherwise translate(-50%) makes it at half a pixel position and causes sub pixel blurring */
     width: 40rem;
     height: 29rem;
-    background: url('R.images.gui.maps.icons.buttons.toggle_indicator') left top no-repeat;
-    background-size: 39rem 29rem;
+    background: url('R.images.gui.maps.icons.buttons.toggle_indicator') no-repeat center / contain;
     position: absolute;
     bottom: -14rem;
     left: 50%;
@@ -1431,7 +1427,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 0;
 }
 
-.RankEmblem_base_d5 {
+.RankEmblem_base_ec {
     width: var(--imageSize);
     height: var(--imageSize);
     background: no-repeat center / cover;

@@ -624,6 +624,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
+
 @keyframes YearLeaderboardReward_bottom-top-small_be {
     0% {
         transform: translateY(10rem);
@@ -633,6 +634,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
+
 @keyframes YearLeaderboardReward_bottom-top_81 {
     0% {
         transform: translateY(20rem);
@@ -642,6 +644,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
+
 @keyframes YearLeaderboardReward_bottom-top-big_77 {
     0% {
         transform: translateY(30rem);
@@ -651,6 +654,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
+
 @keyframes YearLeaderboardReward_bottom-top-huge_b6 {
     0% {
         transform: translateY(40rem);
@@ -660,6 +664,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
+
 @keyframes YearLeaderboardReward_zoom-in_83 {
     0% {
         transform: scale(.5);
@@ -669,6 +674,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
+
 @keyframes YearLeaderboardReward_zoom-in-width_56 {
     0% {
         transform: scaleX(.5);
@@ -678,6 +684,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scaleX(1);
     }
 }
+
 .YearLeaderboardReward_base_ce {
     display: flex;
     align-items: center;
@@ -685,19 +692,23 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     mix-blend-mode: screen;
     animation: YearLeaderboardReward_fade-in_51 .5s cubic-bezier(.07, .82, .17, 1) 2s forwards;
 }
+
 .YearLeaderboardReward_descr_d5 {
     max-width: 800rem;
     margin-top: -3rem;
     z-index: 1;
 }
+
 .YearLeaderboardReward_descrText_16 {
     color: #8c8c7e;
     font-size: 16rem;
 }
+
 .YearLeaderboardReward_rewardName_f3 {
     color: #e9e2bf;
     font-size: 16rem;
 }
+
 .YearLeaderboardReward_stripImage_89 {
     width: 100rem;
     height: 40rem;
@@ -706,6 +717,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background-position: center;
     background-size: cover;
 }
+
 .YearLeaderboardReward_image_7f {
     width: 48rem;
     height: 48rem;

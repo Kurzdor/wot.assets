@@ -1,0 +1,67 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+
+.AbilityTooltipApp_base_fe {
+    display: flex;
+    width: 446rem;
+    overflow: hidden;
+    position: relative;
+}
+.AbilityTooltipApp_corner_fd {
+    width: 9rem;
+    height: 9rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.tooltip.corner') no-repeat center / contain;
+    position: absolute;
+}
+.AbilityTooltipApp_corner__top_left_ab {
+        top: 0;
+        left: 0;
+    }
+.AbilityTooltipApp_corner__top_right_47 {
+        top: 0;
+        right: 0;
+        transform: scaleX(-1);
+    }
+.AbilityTooltipApp_corner__bottom_right_f6 {
+        right: 0;
+        bottom: 0;
+        transform: scaleY(-1) scaleX(-1);
+    }
+.AbilityTooltipApp_corner__bottom_left_51 {
+        bottom: 0;
+        left: 0;
+        transform: scaleY(-1);
+    }
+.AbilityTooltipApp_content_4b {
+    flex: 1;
+    margin: 8rem;
+    padding: 17rem 18rem 23rem 22rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.tooltip.bg') repeat;
+}
+.AbilityTooltipApp_title_48 {
+    color: #FEFEEC;
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+    padding-bottom: 8rem;
+}
+.AbilityTooltipApp_description_3c {
+    color: #f4e1b3;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 18rem;
+    letter-spacing: .04em;
+}
+

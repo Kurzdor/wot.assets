@@ -353,7 +353,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         }
 
 .Reward_info__credits_ef {
-        color: #CED9D9;
+        color: #E9E2BF;
     }
 
 .Reward_info__gold_36 {
@@ -555,6 +555,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-bottom: 7rem;
     overflow-wrap: break-word;
     position: relative;
+    animation: SubscriptionAwardViewApp_fadeInUp_b6 400ms ease-out 200ms both;
 
     color: #F2F2F7;
 
@@ -577,6 +578,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
+    animation: SubscriptionAwardViewApp_fadeInUp_b6 400ms ease-out 400ms both;
 }
 .mediaMedium .SubscriptionAwardViewApp_subheading_f8 {
         color: #F2F2F7;
@@ -618,6 +620,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .SubscriptionAwardViewApp_bigLogo_container_95 .SubscriptionAwardViewApp_bigLogo_icon_f6 {
         width: var(--logo-icon-width);
         height: var(--logo-icon-height);
+        animation: SubscriptionAwardViewApp_fadeInScale_28 400ms ease-out 600ms both;
     }
 .SubscriptionAwardViewApp_freeSpaceFill_2a {
     display: flex;
@@ -654,6 +657,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         font-size: 14rem;
         font-weight: 700;
         line-height: 1.15;
+        animation: SubscriptionAwardViewApp_fadeInUp_b6 400ms ease-out 800ms both;
     }
 .mediaMedium .SubscriptionAwardViewApp_unlockedFeatures_label_80 {
             color: #E9E2BF;
@@ -707,4 +711,26 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         width: 180rem;
         margin: 0rem 10rem;
     }
+@keyframes SubscriptionAwardViewApp_fadeInUp_b6 {
+    from {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+@keyframes SubscriptionAwardViewApp_fadeInScale_28 {
+    from {
+        opacity: 0;
+        transform: scale(1.2) translateY(20rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0rem);
+    }
+}
 

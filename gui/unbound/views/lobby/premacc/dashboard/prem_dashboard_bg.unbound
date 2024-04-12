@@ -1,0 +1,32 @@
+(def layout PremDashboarBg(source:str = "R.images.gui.maps.icons.premacc.backgrounds.dashboard()")
+    (name = 'background')
+    (scope
+        (event evReadyToShow)
+        (macro BgAspectRatioHelper "evReadyToShow")
+        (var imgSource:str = "source")
+    )
+    (style
+        (position = "absolute")
+        (bind width "viewSize.width"
+            (event "viewResized")
+        )
+        (bind height "viewSize.height"
+            (event "viewResized")
+        )
+        (backgroundColor = 0xFF0c0b10)
+    )
+
+    (macro ViewTransparentBg)
+    (image
+        (name = 'icon')
+        (style
+            (position = "absolute")
+            (hcenter = 0px)
+            (vcenter = 0px)
+            (bind width "bgW")
+            (bind height "bgH")
+        )
+        (dispatch evReadyToShow on='complete')
+        (bind source "imgSource")
+    )
+)

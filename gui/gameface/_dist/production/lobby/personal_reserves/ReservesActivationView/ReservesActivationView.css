@@ -148,7 +148,7 @@
 }
 
 .VerticalBar_thumb_32 {
-    display: none;
+    display: flex;
     flex: 0 0 13rem;
     width: 13rem;
     height: 100%;

@@ -2378,7 +2378,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
     .ReserveStockBlock_base_background_ee {
-        background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.bg_default_small') center center / cover no-repeat;
+        background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.piggybank_340') center center / cover no-repeat;
         position: absolute;
         top: 1rem;
         right: 1rem;
@@ -2388,16 +2388,101 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 
     .mediaMedium .ReserveStockBlock_base_background_ee {
-            background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.bg_default_large') center center / cover no-repeat;
+            background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.piggybank_360') center center / cover no-repeat;
 }
 
-    .ReserveStockBlock_base__allLocked_35 .ReserveStockBlock_base_background_ee {
-            background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.bg_locked_small') center center / cover no-repeat;
+    .ReserveStockBlock_base__locked_56 {
+        justify-content: center;
+        background: #0c0c0c;
+    }
+
+    .ReserveStockBlock_base__locked_56 .ReserveStockBlock_base_background_ee {
+            background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.piggybank_disabled_340') center center / cover no-repeat;
+            z-index: 1;
         }
 
-    .mediaMedium .ReserveStockBlock_base__allLocked_35 .ReserveStockBlock_base_background_ee {
-                background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.bg_locked_large') center center / cover no-repeat;
+    .mediaMedium .ReserveStockBlock_base__locked_56 .ReserveStockBlock_base_background_ee {
+                background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.piggybank_disabled_360') center center / cover no-repeat;
 }
+
+    .ReserveStockBlock_base__locked_56 .ReserveStockBlock_base_background_ee,
+        .ReserveStockBlock_base__locked_56 .ReserveStockBlock_footerContainer_78 {
+            opacity: .4;
+        }
+
+    .ReserveStockBlock_base__locked_56 .ReserveStockBlock_footerContainer_78 {
+            position: absolute;
+            bottom: 36rem;
+        }
+
+    .ReserveStockBlock_base__locked_56 .ReserveStockBlock_text_93 {
+            margin-top: 20rem;
+            padding-top: 0;
+        }
+
+    .ReserveStockBlock_base__locked_56 .ReserveStockBlock_title_15 {
+            width: 100%;
+            margin-top: 22rem;
+            margin-bottom: 10rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+    .mediaMedium .ReserveStockBlock_base__locked_56 .ReserveStockBlock_title_15 {
+                margin-top: 20rem;
+                margin-bottom: 10rem;
+}
+
+    .ReserveStockBlock_base__locked__full_20 .ReserveStockBlock_footerContainer_78 {
+                opacity: 1;
+            }
+
+    .ReserveStockBlock_base__locked__empty_d6 .ReserveStockBlock_footerContainer_78,
+            .ReserveStockBlock_base__locked__empty_d6 .ReserveStockBlock_cornerHighlight_74,
+            .ReserveStockBlock_base__locked__empty_d6 .ReserveStockBlock_countdownContainer_45 {
+                display: none;
+            }
+
+    .ReserveStockBlock_base__locked__empty_d6 .ReserveStockBlock_text_93 {
+                margin-top: 4rem;
+            }
+
+    .ReserveStockBlock_base__locked__empty_d6 .ReserveStockBlock_title_15 {
+                height: auto;
+                margin-top: 58rem;
+                margin-bottom: 10rem;
+            }
+
+    .mediaMedium .ReserveStockBlock_base__locked__empty_d6 .ReserveStockBlock_title_15 {
+                    margin-top: 56rem;
+                    margin-bottom: 10rem;
+}
+
+    .ReserveStockBlock_base__disabled_c5 {
+        justify-content: center;
+        background: #0c0c0c;
+        z-index: -1;
+        cursor: default;
+    }
+
+    .ReserveStockBlock_base__disabled_c5 .ReserveStockBlock_text_93 {
+            opacity: .75;
+        }
+
+    .ReserveStockBlock_base__disabled_c5 .ReserveStockBlock_footerContainer_78 {
+            display: block;
+            margin-bottom: 35rem;
+            color: #FF2717;
+            opacity: 1;
+            bottom: 31rem;
+            z-index: 1;
+        }
+
+    .ReserveStockBlock_base__disabled_c5 .ReserveStockBlock_blockTitle_13 {
+            color: #e9e2bfd3;
+            opacity: .75;
+        }
 
 .ReserveStockBlock_hover_9c {
     --hover-color: #fff0;
@@ -2415,23 +2500,34 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         --hover-color: #ffffff08;
     }
 
+.ReserveStockBlock_base__locked_56 .ReserveStockBlock_hover_9c {
+        --hover-color: #00000080;
+    }
+
+.ReserveStockBlock_base__disabled_c5 .ReserveStockBlock_hover_9c,
+    .ReserveStockBlock_base__disabled_c5:hover .ReserveStockBlock_hover_9c {
+        --hover-color: #00000080;
+    }
+
 .ReserveStockBlock_title_15 {
     color: #E9E2BF;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 40rem;
-    margin-bottom: 5rem;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 32rem;
     padding: 0 5rem;
     position: relative;
 }
 
-.ReserveStockBlock_text__locked_77 .ReserveStockBlock_title_15 {
-        margin-bottom: 0;
+.mediaMedium .ReserveStockBlock_title_15 {
+        margin-bottom: 30rem;
+}
+
+.ReserveStockBlock_title__full_b6 {
+        color: #7AB300;
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
     }
 
 .ReserveStockBlock_text_93 {
@@ -2439,69 +2535,57 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 124rem;
-    padding: 0;
-    text-align: center;
+    margin-top: 25rem;
+    padding: 60rem 20rem 0;
     z-index: 1;
 }
 
-.mediaMedium .ReserveStockBlock_text_93 {
-        width: 180rem;
-        margin-right: 0;
+.ReserveStockBlock_disabledSubtitle_87 {
+    justify-content: center;
+    color: #8C8C7E;
+    line-height: 20rem;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.ReserveStockBlock_disabledSubtitle__empty_58 {
+        justify-content: center;
+        width: 145rem;
+    }
+
+.mediaMedium .ReserveStockBlock_disabledSubtitle__empty_58 {
+            width: 165rem;
+            color: #8C8C7E;
+            font-size: 16rem;
+            font-weight: 400;
+            line-height: 1.25;
+}
+
+.mediaMedium .ReserveStockBlock_disabledSubtitle_87 {
+        color: #8C8C7E;
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
+}
+
+.ReserveStockBlock_disabledPattern_ca {
+    background: url('R.images.gui.maps.icons.account_dashboard.cards_disabled_pattern') 0 0 / 7rem repeat;
+    background-repeat: repeat;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: -2;
 }
 
 .ReserveStockBlock_lock_6e {
-    width: 32rem;
-    height: 36rem;
-    background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.icon_lock') center center / cover no-repeat;
-    position: relative;
-}
-
-.mediaMedium .ReserveStockBlock_lock_6e {
-        margin: -2rem 0;
-}
-
-.ReserveStockBlock_lockGlow_70 {
-    width: 124rem;
-    height: 68rem;
-    background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.locked_glow') center center / cover no-repeat;
-    mix-blend-mode: screen;
+    width: 71rem;
+    height: 95rem;
+    background: url('R.images.gui.maps.icons.account_dashboard.icon_lock') center center / cover no-repeat;
     position: absolute;
-    top: -47rem;
-    left: -46rem;
-    z-index: -1;
-}
-
-.mediaMedium .ReserveStockBlock_lockGlow_70 {
-        width: 180rem;
-        left: -72rem;
-}
-
-.ReserveStockBlock_alertContainer_c9 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 122rem;
-    height: 62rem;
-    overflow: hidden;
-    position: relative;
-}
-
-.ReserveStockBlock_alertIcon_3f {
-    width: 16rem;
-    height: 16rem;
-    margin-top: 15rem;
-    background: url('R.images.gui.maps.icons.library.alertIcon') center center / cover no-repeat;
-}
-
-.ReserveStockBlock_alertGlow_88 {
-    width: 205rem;
-    height: 190rem;
-    background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.disabled_glow') center center / cover no-repeat;
-    position: absolute;
-    top: -70rem;
-    left: -42rem;
-    z-index: -1;
+    top: -75rem;
+    left: 15rem;
 }
 
 .ReserveStockBlock_cornerHighlight_74 {
@@ -2513,22 +2597,30 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: -1rem;
 }
 
-.ReserveStockBlock_currencyContainer_ed {
-    display: flex;
-    align-items: center;
-    position: relative;
-    bottom: 2rem;
+.ReserveStockBlock_footerContainer_78 {
+    margin-bottom: 33rem;
 }
 
-.ReserveStockBlock_currencyContainer_ed > span > span {
-        transform: translateY(2rem);
-    }
+.mediaMedium .ReserveStockBlock_footerContainer_78 {
+        margin-bottom: 38rem;
+}
 
 .ReserveStockBlock_countdownContainer_45 {
     position: absolute;
     top: 5rem;
     right: 12rem;
     z-index: 1;
+}
+
+.ReserveStockBlock_countdownContainer_45 > div > div {
+        color: #E9E2BF;
+    }
+
+.mediaMedium .ReserveStockBlock_countdownContainer_45 > div > div {
+            color: #E9E2BF;
+            font-size: 24rem;
+            font-weight: 400;
+            line-height: 1.2;
 }
 
 .ReserveStockBlock_countdownContainer_45 > div > img {
@@ -2540,31 +2632,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .ReserveStockBlock_checkmark_6f {
-    width: 8rem;
-    height: 10rem;
-    margin-top: 4rem;
-    margin-right: 2rem;
+    width: 24rem;
+    height: 24rem;
     background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.icon_check') center center / cover no-repeat;
-}
-
-.ReserveStockBlock_textContainer_24 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    min-height: 100rem;
-    padding: 0 10rem;
-}
-
-.ReserveStockBlock_divider_64 {
-    width: 1rem;
-    height: 62rem;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, 0) 100%);
     position: absolute;
-    bottom: 28rem;
-}
-
-.mediaMedium .ReserveStockBlock_divider_64 {
-        bottom: 22rem;
+    left: -24rem;
 }
 
 .AccountDashboardApp_base_b3 {

@@ -1,0 +1,155 @@
+.Waiting_waiting_51 {
+    color: #FFC363;
+}
+
+.Waiting_alertIcon_11 {
+    width: 20rem;
+    height: 16rem;
+    background: url('R.images.gui.maps.icons.library.alertIcon') no-repeat 100% 1rem / contain;
+    position: relative;
+    right: 5rem;
+    left: 2rem;
+}
+
+.Waiting_frame1_76 {
+    animation: Waiting_colors_c4 3s linear infinite;
+    animation-delay: .1s;
+}
+
+.Waiting_frame2_a3 {
+    animation: Waiting_colors_c4 3s linear infinite;
+    animation-delay: .2s;
+}
+
+.Waiting_frame3_1f {
+    animation: Waiting_colors_c4 3s linear infinite;
+    animation-delay: .3s;
+}
+
+@keyframes Waiting_colors_c4 {
+    0%,
+    10%,
+    20%,
+    30%,
+    40% {
+        opacity: .5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60%,
+    70%,
+    80%,
+    90%,
+    100% {
+        opacity: .5;
+    }
+}
+
+.CurrencyItem_base_32 {
+    height: 20rem;
+    margin-left: 20rem;
+    padding-left: 20rem;
+    color: #C9C9B6;
+    font-size: 14rem;
+    line-height: 1.3;
+    position: relative;
+}
+
+    .CurrencyItem_base__credits_39 {
+        color: #CED9D9;
+    }
+
+    .CurrencyItem_base__gold_bb {
+        color: #FFC363;
+    }
+.CurrencyItem_icon_85 {
+    width: 16rem;
+    height: 16rem;
+    background: no-repeat 0 0 / contain;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+}
+.CurrencyItem_base__credits_39 .CurrencyItem_icon_85 {
+        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
+    }
+.CurrencyItem_base__gold_bb .CurrencyItem_icon_85 {
+        background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
+        top: 2rem;
+    }
+.CurrencyItem_base__crystal_2f .CurrencyItem_icon_85 {
+        background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
+        top: 2rem;
+    }
+.CurrencyItem_base__freeXP_03 .CurrencyItem_icon_85 {
+        width: 18rem;
+        height: 18rem;
+        background-image: url('R.images.gui.maps.icons.library.FreeXpIcon_2');
+        top: 1rem;
+        left: -1rem;
+    }
+.CurrencyItem_base__equipCoin_fd .CurrencyItem_icon_85 {
+        background-image: url('R.images.gui.maps.icons.library.equipCoin_1');
+        top: 2rem;
+    }
+
+.CoinItem_base__defence_1d {
+        color: #bdfbff;
+    }
+    .CoinItem_base__counterattack_de {
+        color: #FFDD99;
+    }
+    .CoinItem_base__offence_f0 {
+        color: #F2F2F7;
+    }
+    .CoinItem_base_1a {
+    height: 20rem;
+    margin-top: 3rem;
+    padding-left: 20rem;
+    font-size: 14rem;
+    line-height: 1.3;
+    position: relative;
+}
+
+.CoinItem_icon_06 {
+    width: 16rem;
+    height: 16rem;
+    background: no-repeat 0 0 / contain;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+}
+
+.HBMoneyBalanceApp_base_eb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40rem;
+    padding-right: 10rem;
+    background: url('R.images.gui.maps.icons.library.top_balance_bg') no-repeat center / 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.HBMoneyBalanceApp_separator_f7 {
+    width: 2rem;
+    height: 39rem;
+    margin-left: 19rem;
+    background: url('R.images.historical_battles.gui.maps.icons.common.header_divider') no-repeat center / 100%;
+}
+
+.HBMoneyBalanceApp_inStock_13 {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: -1rem 10rem 0 0;
+}
+
+.HBMoneyBalanceApp_coin_c9 + .HBMoneyBalanceApp_coin_c9 {
+    margin-left: 20rem;
+}
+

@@ -1,0 +1,132 @@
+(def element PiggyStatus() layout=true
+    (macro PiggyStatusScope)
+    (macro PiggyBankStates)
+
+    (scope
+        (var piggyStatusType:str = 'prem')
+        (var state:str = '')
+        (var isFull:bool = false)
+        (var amount:str = '0')
+        (var hasAccumulation:bool = "amount != '0'")
+        (var hasAccumulationWarning:bool = "state == BANKSTATE.Available && hasAccumulation")
+    )
+
+    (block
+        (style
+            (width = 100%)
+            (align = "center")
+        )
+        (tf
+            (name ='piggyStatusType')
+            (class HighlightTextStyle)
+            (bind text "R.strings.subscription.dashboard.piggyBank[piggyStatusType].label()")
+        )
+        (tf
+            (name ='availableLabel')
+            (class MainTextStyle)
+            (style
+                (width = 100%)
+                (textAlign = "center")
+                (multiline = true)
+            )
+            (bind text "R.strings.subscription.dashboard.piggyBank[piggyStatusType].available()")
+            (bind visible "state == BANKSTATE.Available && !hasAccumulation")
+        )
+        (hblock
+            (name = 'amountBlock')
+            (style
+                (align = "middle|left")
+                (marginTop = 1px)
+            )
+            (bind visible "state == BANKSTATE.Active || hasAccumulationWarning")
+            (image
+                (name = 'checkmarkIcon')
+                (bind visible "isFull")
+                (style
+                    (marginRight = 1px)
+                    (bind alpha "state == BANKSTATE.Active ? 1 : 0.5")
+                )
+                (source = "R.images.gui.maps.icons.subscription.dashboard_card.piggy_bank.checkmark()")
+            )
+            (image
+                (name = 'alertIcon')
+                (bind visible "hasAccumulationWarning && !isFull")
+                (source = "R.images.gui.maps.icons.library.alertIcon()")
+            ) 
+            (tf
+                (name = 'amount')
+                (bind class "CURRENCY_STYLE[piggyStatusType]")
+                (style
+                    (bind alpha "state == BANKSTATE.Active ? 1 : 0.5")
+                )
+                (bind text "amount")
+            )
+            (image
+                (name = 'currencyIcon')
+                (style
+                    (bind alpha "state == BANKSTATE.Active ? 1 : 0.5")
+                )
+                (bind source "CURRENCY_ICON[piggyStatusType]")
+            )
+        )
+        (tf
+            (name ='disableLabel')
+            (class ErrorTextStyle)
+            (style    
+                (fontSize = 12)
+                (width = 100%)
+                (textAlign = "center")
+                (multiline = true)
+            )
+            (text = "R.strings.subscription.dashboard.piggyBank.disable()")
+            (bind visible "state == BANKSTATE.Disable")
+        )
+    )
+)
+
+(def macro BankBackgrounds()
+    (scope
+        (var bgIcon:str = "R.images.gui.maps.icons.subscription.dashboard_card.piggy_bank[(isNormalSize ? 'bg' : 'bg_small')]()")
+        (var premOffIcon:str = "R.images.gui.maps.icons.subscription.dashboard_card.piggy_bank[(isNormalSize ? 'prem_off' : 'prem_off_small')]()")
+        (var wotPLusOffIcon:str = "R.images.gui.maps.icons.subscription.dashboard_card.piggy_bank[(isNormalSize ? 'wotPLus_off' : 'wotPLus_off_small')]()")
+    )
+    (image
+        (name = 'bg')
+        (class AbsPositionFullSizeStyle)
+        (bind source "bgIcon")
+    )
+    (image
+        (name = 'prem_off')
+        (bind visible "premState != BANKSTATE.Active")
+        (class AbsPositionFullSizeStyle)
+        (bind source "premOffIcon")
+    )
+    (image
+        (name = 'wotPLus_off')
+        (bind visible "wotPlusState != BANKSTATE.Active")
+        (class AbsPositionFullSizeStyle)
+        (bind source "wotPLusOffIcon")
+    )
+)
+
+(def macro PiggyStatusScope()
+    (scope
+        (const CURRENCY_ICON:dict = {
+            'prem': "R.images.gui.maps.icons.library.CreditsIcon_2()",
+            'wotPlus': "R.images.gui.maps.icons.library.GoldIcon_2()"
+        })    
+        (const CURRENCY_STYLE:dict = {
+            'prem': 'CreditsTextStyle',
+            'wotPlus': 'GoldTextStyle'
+        })
+    )
+)
+
+(def macro WotPlusScope()
+    (scope
+        (const PIGGY_STATUS_TYPE:dict = {
+            'Prem': 'prem',
+            'WotPlus': 'wotPlus'
+        })
+    )
+)

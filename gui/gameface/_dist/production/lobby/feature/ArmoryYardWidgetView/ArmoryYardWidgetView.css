@@ -1,0 +1,895 @@
+body {
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.Box_mt__XS_0c {
+            margin-top: 4rem;
+        }
+        .Box_mt__SM_eb {
+            margin-top: 8rem;
+        }
+        .Box_mt__SMp_cf {
+            margin-top: 10rem;
+        }
+        .Box_mt__MD_25 {
+            margin-top: 16rem;
+        }
+        .Box_mt__MDp_49 {
+            margin-top: 20rem;
+        }
+        .Box_mt__LG_e8 {
+            margin-top: 32rem;
+        }
+        .Box_mt__XL_83 {
+            margin-top: 64rem;
+        }
+
+.Box_mr__XS_7c {
+            margin-right: 4rem;
+        }
+
+.Box_mr__SM_08 {
+            margin-right: 8rem;
+        }
+
+.Box_mr__SMp_06 {
+            margin-right: 10rem;
+        }
+
+.Box_mr__MD_4a {
+            margin-right: 16rem;
+        }
+
+.Box_mr__MDp_b6 {
+            margin-right: 20rem;
+        }
+
+.Box_mr__LG_d0 {
+            margin-right: 32rem;
+        }
+
+.Box_mr__XL_db {
+            margin-right: 64rem;
+        }
+
+.Box_mb__XS_bb {
+            margin-bottom: 4rem;
+        }
+
+.Box_mb__SM_83 {
+            margin-bottom: 8rem;
+        }
+
+.Box_mb__SMp_04 {
+            margin-bottom: 10rem;
+        }
+
+.Box_mb__MD_ed {
+            margin-bottom: 16rem;
+        }
+
+.Box_mb__MDp_65 {
+            margin-bottom: 20rem;
+        }
+
+.Box_mb__LG_c8 {
+            margin-bottom: 32rem;
+        }
+
+.Box_mb__XL_f8 {
+            margin-bottom: 64rem;
+        }
+
+.Box_ml__XS_8a {
+            margin-left: 4rem;
+        }
+
+.Box_ml__SM_e6 {
+            margin-left: 8rem;
+        }
+
+.Box_ml__SMp_fb {
+            margin-left: 10rem;
+        }
+
+.Box_ml__MD_2b {
+            margin-left: 16rem;
+        }
+
+.Box_ml__MDp_c7 {
+            margin-left: 20rem;
+        }
+
+.Box_ml__LG_39 {
+            margin-left: 32rem;
+        }
+
+.Box_ml__XL_4a {
+            margin-left: 64rem;
+        }
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* eslint-disable-next-line expectedscss*/
+.Text_paragraph-P10_2c {
+        font-size: 10rem;
+        font-weight: 400;
+        line-height: 1.2;
+}
+.Text_paragraph-P12_22 {
+        font-size: 12rem;
+        font-weight: 400;
+        line-height: 1.3;
+}
+.Text_paragraph-P14_a7 {
+        font-size: 14rem;
+        font-weight: 400;
+        line-height: 1.3;
+}
+.Text_paragraph-P16_90 {
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
+}
+.Text_paragraph-P18_50 {
+        font-size: 18rem;
+        font-weight: 400;
+        line-height: 1.25;
+}
+.Text_paragraph-P24_33 {
+        font-size: 24rem;
+        font-weight: 400;
+        line-height: 32rem;
+}
+.Text_heading-H14_8b {
+        font-size: 14rem;
+        font-weight: 700;
+        line-height: 1.15;
+}
+.Text_heading-H15_9e {
+        font-size: 15rem;
+        font-weight: 700;
+        line-height: 1.15;
+}
+.Text_heading-H18_b7 {
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+.Text_heading-H20R_f6 {
+        font-size: 20rem;
+        font-weight: 400;
+        line-height: 1.2;
+}
+.Text_heading-H22_27 {
+        font-size: 22rem;
+        font-weight: 700;
+        line-height: 1.2;
+}
+.Text_heading-H24R_be {
+        font-size: 24rem;
+        font-weight: 400;
+        line-height: 1.2;
+}
+.Text_heading-H24_0c {
+        font-size: 24rem;
+        font-weight: 700;
+        line-height: 1.2;
+}
+.Text_heading-H28_78 {
+        font-size: 28rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+.Text_heading-H36_32 {
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+.Text_heading-H56_c3 {
+        font-size: 56rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+.Text_heading-H73_8f {
+        font-size: 73rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+.Text_heading-H144_a9 {
+        font-size: 144rem;
+        font-weight: 700;
+        line-height: 1;
+}
+.Text_BLACK_REAL_30 {
+        color: #000000;
+    }
+.Text_WHITE_REAL_bc {
+        color: #FFFFFF;
+    }
+.Text_WHITE_62 {
+        color: #F2F2F7;
+    }
+.Text_WHITE_ORANGE_54 {
+        color: #FEFEEC;
+    }
+.Text_WHITE_SPANISH_df {
+        color: #E9E2BF;
+    }
+.Text_PAR_15 {
+        color: #8C8C7E;
+    }
+.Text_PAR_SECONDARY_5d {
+        color: #595950;
+    }
+.Text_PAR_TERTIARY_c9 {
+        color: #37362E;
+    }
+.Text_INFO_RED_30 {
+        color: #FF0000;
+    }
+.Text_RED_66 {
+        color: #FF2717;
+    }
+.Text_RED_DARK_d8 {
+        color: #B70000;
+    }
+.Text_YELLOW_ed {
+        color: #FEAB34;
+    }
+.Text_ORANGE_be {
+        color: #EE7000;
+    }
+.Text_CREAM_57 {
+        color: #FFDD99;
+    }
+.Text_BROWN_18 {
+        color: #CBAC77;
+    }
+.Text_GREEN_BRIGHT_3f {
+        color: #80D43A;
+    }
+.Text_GREEN_e3 {
+        color: #7AB300;
+    }
+.Text_GREEN_DARK_f1 {
+        color: #497212;
+    }
+.Text_BLUE_BOOSTER_21 {
+        color: #CCFFFF;
+    }
+.Text_BLUE_TEAMKILLER_ab {
+        color: #09E2FF;
+    }
+.Text_CRED_f7 {
+        color: #CED9D9;
+    }
+.Text_GOLD_28 {
+        color: #FFC363;
+    }
+.Text_BOND_be {
+        color: #C9C9B6;
+    }
+.Text_PROM_65 {
+        color: #A29B70;
+    }
+
+.StateBlock_base_28 {
+    color: #FFDD99;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+    .StateBlock_base__active_f1,
+    .StateBlock_base__completed_8c {
+        margin-bottom: -1rem;
+    }
+
+    .StateBlock_base__active__thinSmall_4c, .StateBlock_base__completed__thinSmall_cd {
+            color: #FFDD99;
+            font-size: 16rem;
+            font-weight: 400;
+            line-height: 1.25;
+        }
+
+    .StateBlock_base__active__wideSmall_ef, .StateBlock_base__completed__wideSmall_0d {
+            color: #FFDD99;
+            font-size: 16rem;
+            font-weight: 400;
+            line-height: 1.25;
+            margin-bottom: 1rem;
+        }
+
+    .StateBlock_base__active__big_b8, .StateBlock_base__completed__big_b5 {
+            color: #FFDD99;
+            font-size: 16rem;
+            font-weight: 400;
+            line-height: 1.25;
+            margin-bottom: 1rem;
+        }
+
+    .StateBlock_base__postProgression_ca {
+        margin-bottom: 8rem;
+        text-shadow: 0 0 15rem #e52, 0 0 8rem #ff2a00, 0 0 4rem rgba(255, 127, 0, 0.25);
+    }
+
+    .StateBlock_base__postProgression__thinSmall_76 {
+            color: #FFDD99;
+            font-size: 12rem;
+            font-weight: 400;
+            line-height: 1.3;
+            margin-bottom: 8rem;
+        }
+
+    .StateBlock_base__postProgression__wideSmall_88,
+        .StateBlock_base__postProgression__big_cd {
+            color: #FFDD99;
+            font-size: 14rem;
+            font-weight: 400;
+            line-height: 1.3;
+            margin-bottom: 0;
+        }
+
+    .StateBlock_base__beforeProgression__thinSmall_07 {
+            color: #FFDD99;
+            font-size: 16rem;
+            font-weight: 400;
+            line-height: 1.25;
+        }
+
+    .StateBlock_base__beforeProgression__wideSmall_84 {
+            color: #FFDD99;
+            font-size: 16rem;
+            font-weight: 400;
+            line-height: 1.25;
+            margin-bottom: 1rem;
+        }
+
+    .StateBlock_base__beforeProgression__big_e8 {
+            color: #FFDD99;
+            font-size: 16rem;
+            font-weight: 400;
+            line-height: 1.25;
+            margin-bottom: 0;
+        }
+
+.StateBlock_icon_2c {
+    width: 32rem;
+    height: 32rem;
+    margin-left: -10rem;
+    background: no-repeat center / contain;
+}
+
+.StateBlock_icon__clock_b5 {
+        margin-right: -2rem;
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.small.clock_glow');
+    }
+
+.StateBlock_icon__clock__active_d0 {
+            margin-top: 1rem;
+            margin-right: -3rem;
+        }
+
+.StateBlock_icon__clock__active__thinSmall_e6 {
+                margin-top: 4rem;
+            }
+
+.StateBlock_icon__clock__active__wideSmall_da {
+                margin-bottom: -2rem;
+            }
+
+.StateBlock_icon__clock__active__big_94 {
+                margin-bottom: -2rem;
+            }
+
+.StateBlock_icon__lock_c8 {
+        margin-right: -4rem;
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.small.anounce');
+    }
+
+.SequencedBg_base_b6 {
+    width: 500rem;
+    height: 281rem;
+}
+
+.WidgetActive_base_89 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.WidgetActive_sparks_05 {
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 76rem;
+    left: -114rem;
+}
+
+.WidgetActive_sparks__scaledX2_d8 {
+        top: 220rem;
+        left: 142rem;
+        transform: scale(2);
+    }
+
+.WidgetActive_sparks__wideSmall_f0 {
+        top: 80rem;
+        left: -54rem;
+    }
+
+.WidgetActive_sparks__wideSmall__scaledX2_c8 {
+            top: 211rem;
+            left: 208rem;
+            transform: scale(2);
+        }
+
+.WidgetActive_sparks__big_29 {
+        top: 100rem;
+        left: -44rem;
+    }
+
+.WidgetActive_sparks__big__scaledX2_87 {
+            top: 229rem;
+            left: 191rem;
+            transform: scale(2);
+        }
+
+.WidgetActive_active_bg_46 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 2rem;
+    background: url('R.images.armory_yard.gui.maps.icons.widget.big.active_bg_160') no-repeat center / cover;
+}
+
+.WidgetActive_active_bg__thinSmall_47 {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.active_bg_220');
+    }
+
+.WidgetActive_active_bg__wideSmall_8e {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.active_bg_300');
+    }
+
+.WidgetActive_active_bg__big_b7 {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.active_bg_300_150');
+    }
+
+.WidgetActive_countdown_ea {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.armory_yard.gui.maps.icons.widget.big.countdown_160') no-repeat center / cover;
+    mix-blend-mode: screen;
+}
+
+.WidgetActive_countdown__thinSmall_6e {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.countdown_220');
+    }
+
+.WidgetActive_countdown__wideSmall_fb {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.countdown_300');
+    }
+
+.WidgetActive_countdown__big_1f {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.countdown_300_150');
+    }
+
+.WidgetBeforeProgression_base_f6 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.WidgetBeforeProgression_intro_bg_36 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 2rem;
+    background: url('R.images.armory_yard.gui.maps.icons.widget.big.passive_160') no-repeat center / cover;
+}
+
+.WidgetBeforeProgression_intro_bg__thinSmall_fd {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.passive_220');
+    }
+
+.WidgetBeforeProgression_intro_bg__wideSmall_30 {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.passive_300');
+    }
+
+.WidgetBeforeProgression_intro_bg__big_c7 {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.passive_300_150');
+    }
+
+.WidgetBeforeProgression_hover_intro_7a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.15);
+    mix-blend-mode: overlay;
+}
+
+.WidgetBuyOut_base_71 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.WidgetBuyOut_active_bg_2f {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 3rem;
+    background: url('R.images.armory_yard.gui.maps.icons.widget.big.active_bg_160') no-repeat center / cover;
+}
+
+.WidgetBuyOut_active_bg__thinSmall_4e {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.active_bg_220');
+    }
+
+.WidgetBuyOut_active_bg__wideSmall_37 {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.active_bg_300');
+    }
+
+.WidgetBuyOut_active_bg__big_1d {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.active_bg_300_150');
+    }
+
+.WidgetBuyOut_buyoutPhase_e4 {
+    width: 100%;
+    height: 45rem;
+    background: url('R.images.armory_yard.gui.maps.icons.widget.big.buyout_160') no-repeat center / cover;
+    mix-blend-mode: screen;
+    position: absolute;
+    bottom: 0;
+}
+
+.WidgetBuyOut_buyoutPhase__thinSmall_f1 {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.buyout_220');
+    }
+
+.WidgetBuyOut_buyoutPhase__wideSmall_2a {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.buyout_300');
+    }
+
+.WidgetBuyOut_buyoutPhase__big_d4 {
+        height: 40rem;
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.buyout_300_150');
+    }
+
+.WidgetBuyOut_buyoutCountdown_7b {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.armory_yard.gui.maps.icons.widget.big.countdown_160') no-repeat center / cover;
+    mix-blend-mode: screen;
+}
+
+.WidgetBuyOut_buyoutCountdown__thinSmall_f9 {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.countdown_220');
+    }
+
+.WidgetBuyOut_buyoutCountdown__wideSmall_06 {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.countdown_300');
+    }
+
+.WidgetBuyOut_buyoutCountdown__big_7f {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.countdown_300_150');
+    }
+
+.WidgetBuyOut_sparks_02 {
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 95rem;
+    left: -80rem;
+}
+
+.WidgetBuyOut_sparks__scaledX2_0b {
+        top: 233rem;
+        left: 153rem;
+        transform: scale(2);
+    }
+
+.WidgetBuyOut_sparks__hovered_4d {
+        top: 70rem;
+        left: -114rem;
+    }
+
+.WidgetBuyOut_sparks__hovered__scaledX2_f6 {
+            top: 202rem;
+            left: 140rem;
+        }
+
+.WidgetBuyOut_sparks__thinSmall_06 {
+        top: 90rem;
+        left: -80rem;
+    }
+
+.WidgetBuyOut_sparks__thinSmall__scaledX2_2f {
+            top: 231rem;
+            left: 185rem;
+            transform: scale(2);
+        }
+
+.WidgetBuyOut_sparks__thinSmall__hovered_71 {
+            top: 70rem;
+        }
+
+.WidgetBuyOut_sparks__thinSmall__hovered__scaledX2_84 {
+                top: 211rem;
+            }
+
+.WidgetBuyOut_sparks__wideSmall_45 {
+        top: 85rem;
+        left: -50rem;
+    }
+
+.WidgetBuyOut_sparks__wideSmall__scaledX2_6d {
+            top: 226rem;
+            left: 215rem;
+            transform: scale(2);
+        }
+
+.WidgetBuyOut_sparks__wideSmall__hovered_9e {
+            top: 60rem;
+        }
+
+.WidgetBuyOut_sparks__wideSmall__hovered__scaledX2_a6 {
+                top: 201rem;
+            }
+
+.WidgetBuyOut_sparks__big_fb {
+        top: 120rem;
+        left: -50rem;
+    }
+
+.WidgetBuyOut_sparks__big__scaledX2_42 {
+            top: 259rem;
+            left: 216rem;
+            transform: scale(2);
+        }
+
+.WidgetBuyOut_sparks__big__hovered_67 {
+            top: 70rem;
+        }
+
+.WidgetBuyOut_sparks__big__hovered__scaledX2_2c {
+                top: 203rem;
+            }
+
+.App_base_ab {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+    .App_base__hover_3c {
+        cursor: pointer;
+    }
+
+.App_mainTextBlock_f3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.App_title_63 {
+    color: #E9E2BF;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
+}
+
+.App_title__beforeProgression_e2,
+    .App_title__disabled_b0 {
+        color: #FFFFFF;
+        opacity: 0.7;
+        transition: opacity 450ms;
+    }
+
+.App_title__beforeProgression__hover_ab, .App_title__disabled__hover_47 {
+            opacity: 1;
+        }
+
+.App_title__beforeProgression__thinSmall_4f, .App_title__disabled__thinSmall_5c {
+            color: #FFFFFF;
+            font-size: 18rem;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+.App_title__beforeProgression__wideSmall_9f, .App_title__disabled__wideSmall_69 {
+            color: #FFFFFF;
+            font-size: 22rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+.App_title__beforeProgression__big_5a, .App_title__disabled__big_d2 {
+            color: #FFFFFF;
+            font-size: 24rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+.App_title__active_5f,
+    .App_title__completed_bb,
+    .App_title__postProgression_cb {
+        color: #fbf6ee;
+        transition: color 450ms;
+    }
+
+.App_title__active__hover_5d, .App_title__completed__hover_e0, .App_title__postProgression__hover_74 {
+            color: #FFFFFF;
+        }
+
+.App_title__active__thinSmall_26, .App_title__completed__thinSmall_9a, .App_title__postProgression__thinSmall_2f {
+            color: #fbf6ee;
+            font-size: 18rem;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+.App_title__active__thinSmall__hover_a3, .App_title__completed__thinSmall__hover_bb, .App_title__postProgression__thinSmall__hover_fa {
+                color: #FFFFFF;
+            }
+
+.App_title__active__wideSmall_ee, .App_title__completed__wideSmall_dc, .App_title__postProgression__wideSmall_0e {
+            color: #fbf6ee;
+            font-size: 22rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+.App_title__active__wideSmall__hover_d5, .App_title__completed__wideSmall__hover_b3, .App_title__postProgression__wideSmall__hover_b2 {
+                color: #FFFFFF;
+            }
+
+.App_title__active__big_c9, .App_title__completed__big_1a, .App_title__postProgression__big_2b {
+            color: #fbf6ee;
+            font-size: 24rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+.App_title__active__big__hover_9d, .App_title__completed__big__hover_45, .App_title__postProgression__big__hover_b6 {
+                color: #FFFFFF;
+            }
+
+.App_state_c0 {
+    width: 100%;
+    position: absolute;
+    bottom: -1rem;
+}
+
+.App_state__big_25 {
+        bottom: 4rem;
+    }
+
+.App_underTitle_f1 {
+    color: #8C8C7E;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: -2rem;
+}
+
+.App_underTitle__beforeProgression_aa,
+    .App_underTitle__disabled_03 {
+        color: #FEFEEC;
+        opacity: 0.7;
+        transition: opacity 450ms;
+    }
+
+.App_underTitle__beforeProgression__thinSmall_4a, .App_underTitle__disabled__thinSmall_76 {
+            color: #FEFEEC;
+            font-size: 14rem;
+            font-weight: 400;
+            line-height: 1.3;
+            margin-top: 0;
+        }
+
+.App_underTitle__beforeProgression__wideSmall_bf, .App_underTitle__disabled__wideSmall_52 {
+            color: #FEFEEC;
+            font-size: 16rem;
+            font-weight: 400;
+            line-height: 1.25;
+            margin-top: 0;
+        }
+
+.App_underTitle__beforeProgression__big_97, .App_underTitle__disabled__big_bf {
+            color: #FEFEEC;
+            font-size: 16rem;
+            font-weight: 400;
+            line-height: 1.25;
+            margin-top: 2rem;
+        }
+
+.App_underTitle__active_2c,
+    .App_underTitle__completed_f4,
+    .App_underTitle__postProgression_4e {
+        color: #FFDD99;
+        text-shadow: 0 0 15rem #e52, 0 0 8rem #ff2a00, 0 0 4rem rgba(255, 127, 0, 0.25);
+    }
+
+.App_underTitle__active__thinSmall_f8, .App_underTitle__completed__thinSmall_c9, .App_underTitle__postProgression__thinSmall_7c {
+            color: #FFDD99;
+            font-size: 14rem;
+            font-weight: 400;
+            line-height: 1.3;
+            margin-top: 0;
+        }
+
+.App_underTitle__active__wideSmall_12, .App_underTitle__completed__wideSmall_62, .App_underTitle__postProgression__wideSmall_19 {
+            color: #FFDD99;
+            font-size: 16rem;
+            font-weight: 400;
+            line-height: 1.25;
+            margin-top: 0;
+        }
+
+.App_underTitle__active__big_e0, .App_underTitle__completed__big_a7, .App_underTitle__postProgression__big_dd {
+            color: #FFDD99;
+            font-size: 16rem;
+            font-weight: 400;
+            line-height: 1.25;
+            margin-top: 2rem;
+        }
+
+.App_underTitle__hover_f6 {
+        opacity: 1;
+    }
+
+.App_stroke_70 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.armory_yard.gui.maps.icons.widget.big.border_160') no-repeat center / cover;
+    z-index: 1;
+}
+
+.App_stroke__thinSmall_05 {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.border_220');
+    }
+
+.App_stroke__wideSmall_6f {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.border_300');
+    }
+
+.App_stroke__big_5f {
+        background-image: url('R.images.armory_yard.gui.maps.icons.widget.big.border_300_150');
+    }
+

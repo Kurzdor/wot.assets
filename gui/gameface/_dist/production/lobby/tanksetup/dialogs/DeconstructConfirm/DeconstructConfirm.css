@@ -424,6 +424,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 17rem;
+    text-align: center;
     z-index: 2;
 }
 
@@ -840,6 +841,28 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex-wrap: wrap;
 }
 
+.Alert_alert_66 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 5rem 0 4rem;
+}
+
+.Alert_icon_ea {
+    width: 16rem;
+    height: 16rem;
+    margin-right: 5rem;
+    background: url('R.images.gui.maps.icons.library.alertIcon') 0 0 / contain no-repeat;
+    transform: translateY(1rem);
+}
+
+.Alert_alertText_14 {
+    color: #EE7000;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
 .PriceBlock_base_7a {
     display: flex;
     flex-direction: column;
@@ -1069,7 +1092,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .VerticalBar_thumb_32 {
-    display: none;
+    display: flex;
     flex: 0 0 13rem;
     width: 13rem;
     height: 100%;
@@ -1271,7 +1294,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         }
 
 .Reward_info__credits_ef {
-        color: #CED9D9;
+        color: #E9E2BF;
     }
 
 .Reward_info__gold_36 {

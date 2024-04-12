@@ -140,9 +140,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1920rem;
-    height: 1080rem;
-    margin-top: 60rem;
+    width: 100%;
+    height: 100%;
     background: url('img://gui/maps/loading/login_bg.png') no-repeat center / cover;
 }
 
@@ -192,14 +191,14 @@
 
 .Content_label_0c {
     color: #595950;
-    font-size: 14rem;
+    font-size: 13rem;
     font-weight: 800;
 }
 
 .Content_version_39 {
     position: absolute;
-    bottom: 6rem;
-    left: 14rem;
+    top: 12rem;
+    left: 16rem;
 }
 
 .Content_copyright_bf {

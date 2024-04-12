@@ -1,0 +1,251 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+    .ExtendedText_base__zeroPadding_25 {
+        padding: 0;
+    }
+
+    .ExtendedText_base__isTruncationAvailable_5b {
+        width: 100%;
+    }
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+        opacity: 0;
+    }
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #FF2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #FFFFFF;
+}
+
+.colors_white_45 {
+    color: #F2F2F7;
+}
+
+.colors_whiteOrange_81 {
+    color: #FEFEEC;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #E9E2BF;
+}
+
+.colors_par_5b {
+    color: #8C8C7E;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362E;
+}
+
+.colors_red_79 {
+    color: #FF2717;
+}
+
+.colors_redDark_73 {
+    color: #B70000;
+}
+
+.colors_yellow_76 {
+    color: #FEAB34;
+}
+
+.colors_orange_cd {
+    color: #EE7000;
+}
+
+.colors_cream_0f {
+    color: #FFDD99;
+}
+
+.colors_brown_82 {
+    color: #CBAC77;
+}
+
+.colors_greenBright_68 {
+    color: #80D43A;
+}
+
+.colors_green_fa {
+    color: #7AB300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #CCFFFF;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09E2FF;
+}
+
+.colors_cred_35 {
+    color: #CED9D9;
+}
+
+.colors_gold_c3 {
+    color: #FFC363;
+}
+
+.colors_bond_ce {
+    color: #C9C9B6;
+}
+
+.colors_prom_83 {
+    color: #A29B70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.HbVehicleRewardTooltipApp_base_ae {
+    border: 1rem solid rgba(242,242,230, .1);
+    background-color: #12110b;
+}
+
+.HbVehicleRewardTooltipApp_content_b3 {
+    padding: 14rem 18rem;
+    background: linear-gradient(180deg, rgba(51,51,41, .3) 0%, rgba(51,51,41, 0) 15.5%, rgba(51,51,41, 0) 88%, rgba(51,51,41, .1) 100%);
+    width: 392rem;
+    padding: 16rem 20rem 20rem;
+}
+
+.HbVehicleRewardTooltipApp_header_b1 {
+    color: #E9E2BF;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 2rem 0 7rem;
+}
+
+.HbVehicleRewardTooltipApp_description_7a,
+.HbVehicleRewardTooltipApp_footer_41 {
+    color: #8C8C7E;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.HbVehicleRewardTooltipApp_discount_4d {
+    color: #CBAC77;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 10rem;
+}
+
+.HbVehicleRewardTooltipApp_divider_13 {
+    height: 9rem;
+    margin: 7rem -20rem;
+    background: url('R.images.gui.maps.icons.tooltip.tooltip_divider_dotty') no-repeat 50% / 392rem 9rem;
+}
+
+.HbVehicleRewardTooltipApp_highlightedSilver_66 {
+    color: #E9E2BF;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.HbVehicleRewardTooltipApp_highlightedGold_59 {
+    color: #FFC363;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.HbVehicleRewardTooltipApp_footerText_23 {
+    flex-wrap: nowrap;
+}
+
+.HbVehicleRewardTooltipApp_discountText_27 {
+    color: #fd9;
+    font-size: 14rem;
+    font-weight: 500;
+    text-shadow: 0 0 15.8rem #f00, 0 0 9.2rem #ff2a00, 0 0 6.3rem rgba(255, 46, 0, .8);
+}
+
+.HbVehicleRewardTooltipApp_coinIcon_02 {
+    width: 16rem;
+    height: 16rem;
+    margin: 3rem 0 0;
+    background: url('R.images.historical_battles.gui.maps.icons.hbCoin.c_16x16.offence') no-repeat 50% / contain;
+}
+
+.HbVehicleRewardTooltipApp_attentionIcon_4e {
+    width: 16rem;
+    height: 16rem;
+    margin: 2rem 2rem 0 0;
+    background: url('R.images.historical_battles.gui.maps.icons.progression.attention') no-repeat 50% / contain;
+}
+
+.HbVehicleRewardTooltipApp_discountIcon_f2 {
+    width: 24rem;
+    height: 24rem;
+    margin: -2rem 1rem 0 0;
+    background: url('R.images.historical_battles.gui.maps.icons.progression.discount') no-repeat 50% / contain;
+}
+

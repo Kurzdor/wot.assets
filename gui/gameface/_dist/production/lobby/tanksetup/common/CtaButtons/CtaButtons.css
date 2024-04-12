@@ -226,7 +226,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .CtaButtons_indicator_e9 {
-    border-image-source: url('R.atlases.components.indicator_selected_box');
+    border-image-source: url('R.images.gui.maps.icons.buttons.indicator_selected_box');
     border-image-slice: 10 fill;
     border-image-width: 10rem;
     position: absolute;
@@ -239,7 +239,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CtaButtons_toggle_64 {
     width: 48rem;
     height: 48rem;
-    background: url('R.atlases.components.icon_selected_off') no-repeat center / contain;
+    background: url('R.images.gui.maps.icons.tanksetup.shells.icon_selected_off') no-repeat center / contain;
     opacity: .8;
     position: absolute;
     bottom: -25rem;
@@ -248,7 +248,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .CtaButtons_toggle__on_40 {
-        background-image: url('R.atlases.components.icon_selected_on');
+        background-image: url('R.images.gui.maps.icons.tanksetup.shells.icon_selected_on');
         opacity: 1;
     }
 

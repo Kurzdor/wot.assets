@@ -1,0 +1,295 @@
+(def macro MapsBlackListSlotBase()
+    (macro MapsBlacklistSizeConstants)
+    (scope
+        (event evSlotSizeChanged)
+        (event evSlotButtonAddClick)
+        (event evSlotButtonRemoveClick)
+        (event evSlotOver)
+        (event evSlotOut)
+        (var slotSize:number = "MAPS_BLACKLIST_SLOT_SIZE_SMALL"
+            (dispatch evSlotSizeChanged on='evChanged')
+        )
+        (var highlightBorderAlpha:number = 1
+            (dispatch evSlotSizeChanged on='evChanged')
+        )
+        (var showMapHoverBlock:bool = false)
+        (var mapName:str = '')
+        (var tfVcenter:number = "slotSize == MAPS_BLACKLIST_SLOT_SIZE_SMALL ? -15 : 0" watch=true)
+        (var crossVcenter:number = "slotSize == MAPS_BLACKLIST_SLOT_SIZE_SMALL ? -10 : 0" watch=true)
+
+        (bind highlightBorderAlpha "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_ACTIVE']|| state ==
+        MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_ACTIVE_NO_HOVER'] ? 1 : state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_DISABLED'] ? 0.6 : 0")
+        (bind showMapHoverBlock "true" init=false
+            (event "evSlotOver")
+        )
+        (bind showMapHoverBlock "false"
+            (event "evSlotOut")
+        )
+        (bind mapName "mapId != '' ? 
+                TextFormat(R.strings.premacc.mapsBlacklist.mapName(), {mapName:R.strings.arenas['c_' + mapId].name()}) : ''")
+        (var hoverTextWidth:number = "slotSize - (slotSize == MAPS_BLACKLIST_SLOT_SIZE_SMALL ? 24 : 40)" watch=true)
+    )
+    (style
+        (bind backgroundColor "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_DISABLED'] ? 0x99262626 : 0x99000000")
+        (align = "center")
+        (bind width "slotSize")
+        (bind height "slotSize")
+    )
+
+    # handle event here to prevent bug with mapHover and fast mouse moving
+    (dispatch evSlotOut on='rollOut')
+    
+    (block
+        (name = 'mapSlot')
+        (dispatch evSlotOver on='rollOver')
+        (style
+            (width = 100%)
+            (height = 100%)
+        )
+        
+        (image
+            (name = 'mapIcon')
+            (style
+                (width = 100%)
+                (height = 100%)
+                (vcenter = 0px)
+                (hcenter = 0px)
+                (position = "absolute")
+                (bind alpha "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_DISABLED'] ? 0.3 :
+                    state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_ACTIVE']
+                    || state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_ACTIVE_NO_HOVER']
+                    || state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_SELECTED']
+                    ? 1 : 0.4")
+            )
+            (bind source "mapId != '' ? R.images.gui.maps.icons.map['c_' + mapId]() : ''")
+        )
+
+        (image
+            (name = 'mapShadow')
+            (style
+                (position = "absolute")
+                (bottom = 0px)
+                (width = 100%)
+            )
+            (bind source "R.atlases.mapsBlacklist['shadow_' + slotSize].exists() ? R.atlases.mapsBlacklist['shadow_' + slotSize]() : ''")
+        )
+
+        (block
+            (name = 'pattern')
+            (style
+                (width = 100%)
+                (height = 100%)
+                (backgroundImage = "CARD_DISABLE_TEXTURE")
+                (backgroundSize = "repeat")
+                (alpha = 0.45)
+            )
+            (bind visible "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_COOLDOWN']")
+        )
+
+        (image
+            (name = 'mapGlow')
+            (style
+                (position = "absolute")
+                (top = -9px)
+                (left  = -9px)
+                (bind width "slotSize == MAPS_BLACKLIST_SLOT_SIZE_SMALL ? 168 : 243")
+                (bind height "slotSize == MAPS_BLACKLIST_SLOT_SIZE_SMALL ? 167 : 242")
+                (scale9grid = "Rect(15,15,2,2)")
+            )
+            (source = "R.atlases.mapsBlacklist.glow_scale9()")
+            (bind visible "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_COOLDOWN'] || state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_CHANGE']")
+        )
+
+        # using in dialog window
+        (view_holder 'mapSelectedBlock'
+        )
+
+        (image
+            (name = 'mapDeleted')
+            (style
+                (position = "absolute")
+                (bind vcenter "crossVcenter")
+                (hcenter = 0px)
+                (blendMode = 'add')
+                (bind width "slotSize == MAPS_BLACKLIST_SLOT_SIZE_SMALL ? 50 : 100")
+                (bind height "slotSize == MAPS_BLACKLIST_SLOT_SIZE_SMALL ? 50 : 100")
+            )
+            (source = "R.atlases.mapsBlacklist.deleted_225()")
+            (bind visible "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_CHANGE'] || state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_COOLDOWN']")
+        )
+        (image
+            (name = 'mapCooldownIcon')
+            (style
+                (position = "absolute")
+                (vcenter = 50%)
+                (hcenter = 0px)
+            )
+            (source = "R.images.gui.maps.icons.premacc.map.widget_slot.icon_cooldown_slot()")
+            (bind visible "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_COOLDOWN']")
+        )
+
+        (tf
+            (name = 'mapNameTF')
+            (style
+                (position = "absolute")
+                (bottom = 13px)
+                (hcenter = 0px)
+                (textAlign = "center")
+            )
+            (bind class "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_ACTIVE'] || state ==
+            MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_ACTIVE_NO_HOVER'] || state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_SELECTED']
+                            ? 'HighlightTextStyle' : 'MainBigTextStyle'")
+            (bind text "R.strings.arenas['c_' + mapId].name()"
+                (bind enabled "mapId != ''")
+            )
+
+            (controller $Animation
+                (bindcall play duration=0.25 to={alpha:1, visible:1}
+                    (bind enabled "!((state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_ACTIVE'] || state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_CHANGE']) && showMapHoverBlock)")
+                )
+                (bindcall play duration=0.25 to={alpha:0, visible:0}
+                    (bind enabled "(state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_ACTIVE'] || state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_CHANGE']) && showMapHoverBlock")
+                )
+            )
+        )
+
+        (bind buttonMode "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_ACTIVE_NO_HOVER']")
+    )
+
+    (image
+        (name = 'mapSelectedHover')
+        (style
+            (position = "absolute")
+            (hcenter = 0px)
+            (vcenter = 0px)
+            (scale9grid = "Rect(47,47,2,2)")
+            (width = 100%)
+            (height = 100%)
+        )
+        (source = "R.atlases.mapsBlacklist.selected_hover_150()")
+        (bind visible "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_ACTIVE_NO_HOVER'] && showMapHoverBlock")
+    )
+
+    (block
+        (name ='mapHover')
+        (style
+            (backgroundColor = 0xBF000000)
+            (width = 100%)
+            (height = 100%)
+            (vcenter = 0px)
+            (hcenter = 0px)
+            (position = "absolute")
+        )
+        (tf
+            (name = 'hoverTF')
+            (style
+                (position = "absolute")
+                (bind vcenter "tfVcenter")
+                (hcenter = 0px)
+                (bind width "hoverTextWidth")
+            )
+            (bind htmlText "TextFormat(htmlTextStyle(R.strings.premacc.mapsBlacklist.slot[state].hoverStr(), 'MainTextStyle', 'center'), 
+                                {mapNameStr: htmlTextStyle(mapName, 'StatsTextStyle')})"
+                (bind enabled "(state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_ACTIVE'] || state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_CHANGE']) && showMapHoverBlock")
+            )
+        )
+
+        (button
+            (scope
+                (dispatch evSlotButtonAddClick dir=1 args="{mapId: mapId}" on='clicked'
+                    (enabled = "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_ACTIVE']")
+                )
+                (dispatch evSlotButtonRemoveClick dir=1 args="{mapId: mapId}" on='clicked'
+                    (enabled = "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_CHANGE']")
+                )
+            )
+            (style
+                (position = "absolute")
+                (hcenter = 0px)
+                (bottom = 10px)
+            )
+            (macro ButtonStylePrimary "BUTTON_SIZE_MEDIUM") 
+            (bind label "R.strings.premacc.mapsBlacklist.slot[state].hoverBtn()")
+        )
+        (visible = false)
+
+        (controller $Animation
+            (bindcall play duration=0.25 to={alpha:1, visible:1}
+                (bind enabled "(state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_ACTIVE'] || state ==                 MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_CHANGE']) && showMapHoverBlock")
+            )
+            (bindcall play duration=0.25 to={alpha:0, visible:0}
+                (bind enabled "!((state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_ACTIVE'] || state ==
+                MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_CHANGE']) && showMapHoverBlock)")
+            )
+        )
+    )
+
+    (block
+        (style
+            (macro AbsPositionFullSize)
+        )
+        (image
+            (name = 'highlightBorder')
+            (style
+                (macro AbsPositionFullSize)
+                (bind alpha "highlightBorderAlpha")
+                (scale9grid = "Rect(5,5,6,6)")
+            )
+            (source = "R.atlases.mapsBlacklist.stroke_scale9()")
+            (bind visible "state != MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_COOLDOWN'] && state !=
+            MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_CHANGE']")
+        )
+        (macro EmptyHitAreaMacro)
+    )
+
+    (controller $ToolTip
+        (delay = "0.4")
+        (args
+            header="R.strings.premacc.mapsBlacklist.slotTooltip[state].header()"
+            body="TextFormat(
+                R.strings.premacc.mapsBlacklist.slotTooltip[state].body(), 
+                {cooldownStr:hardSpace(
+                    timeLeft(cooldownTime, 
+                            R.strings.menu.timeLeft.full.day(), 
+                            R.strings.menu.timeLeft.full.hour(), 
+                            R.strings.menu.timeLeft.full.min(), 
+                            R.strings.menu.timeLeft.full.lessMin(),
+                            cooldownTime < ONE_HOUR)
+                )})"
+        )
+        (content = "R.views.common.tooltip_window.simple_tooltip_content.SimpleTooltipContent.resId")
+        (decorator = "R.views.common.tooltip_window.tooltip_window.TooltipWindow.resId")
+        (bind enabled "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_DISABLED'] || state ==
+        MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_COOLDOWN']")
+    )
+)
+
+(def layout MapsBlacklistSlot()
+    (macro MapsBlacklistSlotModel)
+    (macro MapsBlackListSlotBase)
+    (scope
+        (bind slotSize "viewSize.width < SCREEN_WIDTH_MAX ? MAPS_BLACKLIST_SLOT_SIZE_SMALL : MAPS_BLACKLIST_SLOT_SIZE_BIG"
+            (event "viewResized")
+        )
+    )
+
+    (bind visible "filtered")
+)
+
+(def layout MapsBlacklistDialogSlot()
+    (macro MapsBlacklistDialogSlotModel)
+    (macro MapsBlackListSlotBase)
+
+    (view_holder_content 'mapSelectedBlock'
+        (image
+            (name = 'mapSelected150')
+            (style
+                (top = -9px)
+                (left  = -9px)
+                (position = "absolute")
+            )
+            (source = "R.atlases.mapsBlacklist.selected_150()")
+            (bind visible "state == MAPSTATEENUM['MAPS_BLACKLIST_SLOT_STATE_SELECTED']")
+        )
+    )
+)

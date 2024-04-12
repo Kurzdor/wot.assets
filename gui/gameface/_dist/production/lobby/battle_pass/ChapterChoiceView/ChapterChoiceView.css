@@ -281,7 +281,7 @@
         height: 175rem;
     }
 
-    .mediaMedium .Award_base__big_70 {
+    .mediaLarge .Award_base__big_70 {
             width: 160rem;
             height: 280rem;
 }
@@ -324,7 +324,7 @@
         height: 175rem;
     }
 
-.mediaMedium .Award_border__bigAward_d1, .mediaMedium .Award_border__bigCoin_0e, .mediaMedium .Award_border__bigPoint_9a, .mediaMedium .Award_border__bigCollection_40 {
+.mediaLarge .Award_border__bigAward_d1, .mediaLarge .Award_border__bigCoin_0e, .mediaLarge .Award_border__bigPoint_9a, .mediaLarge .Award_border__bigCollection_40 {
             width: 160rem;
             height: 280rem;
 }
@@ -351,7 +351,7 @@
         background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_border_big_s');
     }
 
-.mediaMedium .Award_border__bigAward_d1 {
+.mediaLarge .Award_border__bigAward_d1 {
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_border_big_m');
 }
 
@@ -361,7 +361,7 @@
         background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.coin_border_big_s');
     }
 
-.mediaMedium .Award_border__bigCoin_0e, .mediaMedium .Award_border__bigPoint_9a, .mediaMedium .Award_border__bigCollection_40 {
+.mediaLarge .Award_border__bigCoin_0e, .mediaLarge .Award_border__bigPoint_9a, .mediaLarge .Award_border__bigCollection_40 {
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.coin_border_big_m');
 }
 
@@ -404,7 +404,7 @@
         background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_borderDisabled_big_s');
     }
 
-.mediaMedium .Award_borderDisabled__big_67 {
+.mediaLarge .Award_borderDisabled__big_67 {
             width: 160rem;
             height: 280rem;
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_borderDisabled_big_m');
@@ -442,7 +442,7 @@
         height: 175rem;
     }
 
-.mediaMedium .Award_borderHover__bigAward_cf, .mediaMedium .Award_borderHover__bigCoin_2d, .mediaMedium .Award_borderHover__bigPoint_db, .mediaMedium .Award_borderHover__bigCollection_6d {
+.mediaLarge .Award_borderHover__bigAward_cf, .mediaLarge .Award_borderHover__bigCoin_2d, .mediaLarge .Award_borderHover__bigPoint_db, .mediaLarge .Award_borderHover__bigCollection_6d {
             width: 160rem;
             height: 280rem;
 }
@@ -469,7 +469,7 @@
         background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_borderHover_big_s');
     }
 
-.mediaMedium .Award_borderHover__bigAward_cf {
+.mediaLarge .Award_borderHover__bigAward_cf {
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_borderHover_big_m');
 }
 
@@ -479,7 +479,7 @@
         background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.coin_borderHover_big_s');
     }
 
-.mediaMedium .Award_borderHover__bigCoin_2d, .mediaMedium .Award_borderHover__bigPoint_db, .mediaMedium .Award_borderHover__bigCollection_6d {
+.mediaLarge .Award_borderHover__bigCoin_2d, .mediaLarge .Award_borderHover__bigPoint_db, .mediaLarge .Award_borderHover__bigCollection_6d {
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.coin_borderHover_big_m');
 }
 
@@ -590,7 +590,7 @@
         animation: Award_shine_big_s_5f 2s linear infinite alternate;
     }
 
-.mediaMedium .Award_shine__bigLeft_54, .mediaMedium .Award_shine__bigRight_41 {
+.mediaLarge .Award_shine__bigLeft_54, .mediaLarge .Award_shine__bigRight_41 {
             width: 46rem;
             height: 116rem;
             animation: Award_shine_big_m_4d 2s linear infinite alternate;
@@ -623,7 +623,7 @@
         left: -21rem;
     }
 
-.mediaMedium .Award_shine__bigLeft_54 {
+.mediaLarge .Award_shine__bigLeft_54 {
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_borderShine_big_m');
             left: -22rem;
 }
@@ -634,7 +634,7 @@
         animation-direction: alternate-reverse;
     }
 
-.mediaMedium .Award_shine__bigRight_41 {
+.mediaLarge .Award_shine__bigRight_41 {
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_borderShine_big_m');
             right: -22rem;
             animation-direction: alternate-reverse;
@@ -654,7 +654,7 @@
         bottom: 2rem;
     }
 
-.mediaMedium .Award_base__big_70 .Award_bg_cb, .mediaMedium .Award_base__big_70 .Award_bgDisabled_5c, .mediaMedium .Award_base__big_70 .Award_bgHover_a6 {
+.mediaLarge .Award_base__big_70 .Award_bg_cb, .mediaLarge .Award_base__big_70 .Award_bgDisabled_5c, .mediaLarge .Award_base__big_70 .Award_bgHover_a6 {
             bottom: 4rem;
 }
 
@@ -689,7 +689,7 @@
         height: 166rem;
     }
 
-.mediaMedium .Award_bg__bigAward_48, .mediaMedium .Award_bg__bigCoin_66, .mediaMedium .Award_bg__bigPoint_83, .mediaMedium .Award_bg__bigCollection_10 {
+.mediaLarge .Award_bg__bigAward_48, .mediaLarge .Award_bg__bigCoin_66, .mediaLarge .Award_bg__bigPoint_83, .mediaLarge .Award_bg__bigCollection_10 {
             width: 152rem;
             height: 262rem;
 }
@@ -716,7 +716,7 @@
         background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_bg_big_s');
     }
 
-.mediaMedium .Award_bg__bigAward_48 {
+.mediaLarge .Award_bg__bigAward_48 {
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_bg_big_m');
 }
 
@@ -726,7 +726,7 @@
         background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.coin_bg_big_s');
     }
 
-.mediaMedium .Award_bg__bigCoin_66, .mediaMedium .Award_bg__bigPoint_83, .mediaMedium .Award_bg__bigCollection_10 {
+.mediaLarge .Award_bg__bigCoin_66, .mediaLarge .Award_bg__bigPoint_83, .mediaLarge .Award_bg__bigCollection_10 {
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.coin_bg_big_m');
 }
 
@@ -760,7 +760,7 @@
         background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_bgDisabled_big_s');
     }
 
-.mediaMedium .Award_bgDisabled__big_2a {
+.mediaLarge .Award_bgDisabled__big_2a {
             width: 152rem;
             height: 272rem;
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_bgDisabled_big_m');
@@ -797,7 +797,7 @@
         height: 171rem;
     }
 
-.mediaMedium .Award_bgHover__bigAward_25, .mediaMedium .Award_bgHover__bigCoin_5e, .mediaMedium .Award_bgHover__bigPoint_4b, .mediaMedium .Award_bgHover__bigCollection_9d {
+.mediaLarge .Award_bgHover__bigAward_25, .mediaLarge .Award_bgHover__bigCoin_5e, .mediaLarge .Award_bgHover__bigPoint_4b, .mediaLarge .Award_bgHover__bigCollection_9d {
             width: 152rem;
             height: 272rem;
 }
@@ -824,7 +824,7 @@
         background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_bgHover_big_s');
     }
 
-.mediaMedium .Award_bgHover__bigAward_25 {
+.mediaLarge .Award_bgHover__bigAward_25 {
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_bgHover_big_m');
 }
 
@@ -834,7 +834,7 @@
         background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.coin_bgHover_big_s');
     }
 
-.mediaMedium .Award_bgHover__bigCoin_5e, .mediaMedium .Award_bgHover__bigPoint_4b, .mediaMedium .Award_bgHover__bigCollection_9d {
+.mediaLarge .Award_bgHover__bigCoin_5e, .mediaLarge .Award_bgHover__bigPoint_4b, .mediaLarge .Award_bgHover__bigCollection_9d {
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.coin_bgHover_big_m');
 }
 
@@ -862,7 +862,7 @@
         bottom: 8rem;
     }
 
-.mediaMedium .Award_locked__big_71, .mediaMedium .Award_lockedHover__big_00 {
+.mediaLarge .Award_locked__big_71, .mediaLarge .Award_lockedHover__big_00 {
             width: 48rem;
             height: 48rem;
             bottom: 13rem;
@@ -888,7 +888,7 @@
         background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_big_s');
     }
 
-.mediaMedium .Award_locked__big_71 {
+.mediaLarge .Award_locked__big_71 {
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_big_m');
 }
 
@@ -912,7 +912,7 @@
         background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_big_s');
     }
 
-.mediaMedium .Award_lockedHover__big_00 {
+.mediaLarge .Award_lockedHover__big_00 {
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_big_m');
 }
 
@@ -945,7 +945,7 @@
         transition: all .3s;
     }
 
-.mediaMedium .Award_base__big_70 .Award_arrow_5e {
+.mediaLarge .Award_base__big_70 .Award_arrow_5e {
             width: 136rem;
             height: 180rem;
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_arrow_big_m');
@@ -1030,7 +1030,7 @@
         top: 9rem;
     }
 
-.mediaMedium .Award_icon__bigAward_3e, .mediaMedium .Award_icon__bigCoin_c0, .mediaMedium .Award_icon__bigPoint_91, .mediaMedium .Award_icon__bigCollection_de {
+.mediaLarge .Award_icon__bigAward_3e, .mediaLarge .Award_icon__bigCoin_c0, .mediaLarge .Award_icon__bigPoint_91, .mediaLarge .Award_icon__bigCollection_de {
             width: 100rem;
             height: 100rem;
             top: 14rem;
@@ -1040,7 +1040,7 @@
         background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_icon_big_s');
     }
 
-.mediaMedium .Award_icon__bigAward_3e {
+.mediaLarge .Award_icon__bigAward_3e {
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.award_icon_big_m');
 }
 
@@ -1054,7 +1054,7 @@
             filter: grayscale(0%);
         }
 
-.mediaMedium .Award_icon__bigPoint_91 {
+.mediaLarge .Award_icon__bigPoint_91 {
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.point_icon_big_m');
 }
 
@@ -1068,7 +1068,7 @@
             filter: grayscale(0%);
         }
 
-.mediaMedium .Award_icon__bigCoin_c0 {
+.mediaLarge .Award_icon__bigCoin_c0 {
             background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.coin_icon_big_m');
 }
 
@@ -1120,7 +1120,7 @@
             text-shadow: none;
         }
 
-.mediaMedium .Award_base__big_70 .Award_count_e4 {
+.mediaLarge .Award_base__big_70 .Award_count_e4 {
             font-size: 48rem;
             line-height: 58rem;
             top: 98rem;
@@ -1150,7 +1150,7 @@
         top: 6rem;
     }
 
-.mediaMedium .Award_base__big_70 .Award_completedCollectionIcon_c4 {
+.mediaLarge .Award_base__big_70 .Award_completedCollectionIcon_c4 {
             width: 46rem;
             height: 40rem;
             top: 10rem;
@@ -1218,7 +1218,7 @@
         top: 86rem;
     }
 
-.mediaMedium .Award_label__bigAward_fe, .mediaMedium .Award_label__bigCoin_b9, .mediaMedium .Award_label__bigPoint_33, .mediaMedium .Award_label__bigCollection_2e {
+.mediaLarge .Award_label__bigAward_fe, .mediaLarge .Award_label__bigCoin_b9, .mediaLarge .Award_label__bigPoint_33, .mediaLarge .Award_label__bigCollection_2e {
             color: #F2F2F7;
             font-size: 24rem;
             font-weight: 700;
@@ -1271,7 +1271,7 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
     }
 
-.mediaMedium .Award_base__big_70 .Award_blinkShape_77 {
+.mediaLarge .Award_base__big_70 .Award_blinkShape_77 {
             clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
 }
 
@@ -1374,9 +1374,34 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background: url('R.images.gui.maps.icons.battlePass.backgrounds.common') no-repeat center / cover;
     overflow: hidden;
     position: relative;
+}
+
+.App_backgroundBlur_26 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.battlePass.backgrounds.common') no-repeat center / cover;
+    filter: blur(5rem);
+    position: absolute;
+    z-index: 0;
+}
+
+.App_background_6b {
+    width: 100%;
+    height: 117%;
+    background: url('R.images.gui.maps.icons.battlePass.backgrounds.common') no-repeat center / cover;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+.mediaSmall .App_background_6b {
+        height: 123%;
+}
+
+.mediaMedium .App_background_6b {
+        height: 120%;
 }
 
 .App_infoButtons_78 {
@@ -1400,13 +1425,13 @@
 
 .App_flags_d9 {
     position: absolute;
-    top: 40rem;
+    top: 20rem;
     right: 5rem;
     z-index: 2;
 }
 
 .mediaSmall .App_flags_d9 {
-        right: 50rem;
+        right: 30rem;
 }
 
 .App_chapters_8a {
@@ -1417,41 +1442,51 @@
     margin-top: 106rem;
 }
 
-.mediaMedium .App_chapters__normal_df {
-            width: 1128rem;
-}
-
-.mediaLarge .App_chapters__normal_df {
-            width: 1356rem;
-            margin-top: 120rem;
-}
-
-.mediaExtraLarge .App_chapters__normal_df {
-            justify-content: center;
-            width: 100%;
-}
-
-.App_chapters__extend_a3 {
-        width: 984rem;
+.App_chapters__medium_d5 {
+        justify-content: center;
+        width: 970rem;
     }
 
-.mediaSmall .App_chapters__extend_a3 {
+.mediaSmall .App_chapters__medium_d5 {
+            width: 960rem;
             margin-top: 106rem;
 }
 
-.mediaMedium .App_chapters__extend_a3 {
-            width: 1508rem;
-            margin-top: 105rem;
+.mediaMedium .App_chapters__medium_d5 {
+            width: 1500rem;
 }
 
-.mediaLarge .App_chapters__extend_a3 {
-            width: 1816rem;
+.mediaLarge .App_chapters__medium_d5 {
+            width: 1845rem;
             margin-top: 120rem;
 }
 
-.mediaExtraLarge .App_chapters__extend_a3 {
-            justify-content: center;
+.mediaExtraLarge .App_chapters__medium_d5 {
             width: 100%;
+}
+
+.App_chapters__small_9c {
+        width: 1010rem;
+    }
+
+.mediaSmall .App_chapters__small_9c {
+            width: 1240rem;
+            margin-top: 106rem;
+}
+
+.mediaMedium .App_chapters__small_9c {
+            width: 1580rem;
+            margin-top: 105rem;
+}
+
+.mediaLarge .App_chapters__small_9c {
+            width: 1845rem;
+            margin-top: 140rem;
+}
+
+.mediaExtraLarge .App_chapters__small_9c {
+            align-items: center;
+            width: 2410rem;
 }
 
 .Preview_base_1f {
@@ -1512,6 +1547,8 @@
 .TankName_base_f1 {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-start;
+    line-height: 1.3;
 }
 
     .TankName_base__sizeMedium_3a {
@@ -1519,6 +1556,13 @@
         font-size: 24rem;
         font-weight: 400;
         line-height: 1.2;
+    }
+
+    .TankName_base__sizBig_a9 {
+        color: #F2F2F7;
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
     }
 
     .TankName_base__typeWhite_32 {
@@ -1536,32 +1580,54 @@
 .TankName_type_3c {
     width: 42rem;
     height: 38rem;
-    margin: 0 -10rem;
+    margin: 0 -9rem;
     background: no-repeat center / contain;
     position: relative;
-    top: -10rem;
+    top: -8rem;
 }
 
 .TankName_type__elite_cc {
         margin: 0 -6rem;
     }
 
-.TankName_base__sizeMedium_3a .TankName_type_3c {
+.TankName_base__sizeMedium_3a .TankName_type_3c,
+    .TankName_base__sizeBig_2b .TankName_type_3c {
         width: 83rem;
         height: 73rem;
         margin: 0 -23rem;
-        background: no-repeat center / contain;
-        position: relative;
-        top: -18rem;
+        top: -16rem;
     }
 
-.TankName_base__sizeMedium_3a .TankName_type__elite_cc {
+.TankName_base__sizeMedium_3a .TankName_type__elite_cc, .TankName_base__sizeBig_2b .TankName_type__elite_cc {
             margin: 0 -16rem;
+        }
+
+.TankName_base__sizeBig_2b .TankName_type_3c {
+        margin: 0 -23rem;
+        top: -14rem;
+    }
+
+.TankName_base__sizeBig_2b .TankName_type__elite_cc {
+            margin: 0 -13rem;
         }
 
 .TankName_base__typeColored_bc .TankName_name_56 {
         color: #8C8C7E;
     }
+
+.TankName_base__tagPremiumIGR_26 .TankName_name_56 {
+        padding-left: 13rem;
+        background: url('R.images.gui.maps.icons.library.premium_igr_ico') no-repeat left 50% / 10rem 10rem;
+    }
+
+.TankName_premiumIGR_25 {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 3rem 0 -2rem;
+    background: url('R.images.gui.maps.icons.library.premium_igr_ico') no-repeat center / contain;
+    position: relative;
+    top: 5rem;
+}
 
 @keyframes Emblem_hideLevel_f2 {
     0% {
@@ -1773,30 +1839,48 @@
 .Emblem_image__completedGoldenMicro_2d {
         background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_BP_completed_micro');
     }
-.Emblem_extra_d4 {
+.Emblem_marathon_c6,
+.Emblem_resource_97 {
     display: flex;
     justify-content: center;
     width: 140rem;
     height: 130rem;
     margin-bottom: 8rem;
-    background: url('R.images.gui.maps.icons.battlePass.logo.extra_flags') left top / cover no-repeat;
     position: absolute;
     top: 60rem;
     left: 50%;
-    z-index: -2;
+    z-index: 0;
     transform: translate(-50%, -50%);
 }
-.Emblem_extra__micro_f7 {
+.Emblem_marathon__micro_61, .Emblem_resource__micro_67 {
         width: 60rem;
         height: 60rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.extra_flags_micro');
         top: 24rem;
     }
-.Emblem_extra__small_28 {
-        width: 100rem;
-        height: 100rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.extra_flags_small');
+.Emblem_marathon__small_0b, .Emblem_resource__small_41 {
+        width: 107rem;
+        height: 98rem;
         top: 40rem;
+    }
+.Emblem_marathon_c6 {
+    background: url('R.images.gui.maps.icons.battlePass.logo.marathon_flags') left top / cover;
+    background-repeat: no-repeat;
+}
+.Emblem_marathon__micro_61 {
+        background-image: url('R.images.gui.maps.icons.battlePass.logo.marathon_flags_micro');
+    }
+.Emblem_marathon__small_0b {
+        background-image: url('R.images.gui.maps.icons.battlePass.logo.marathon_flags_small');
+    }
+.Emblem_resource_97 {
+    background: url('R.images.gui.maps.icons.battlePass.logo.resource') left top / cover;
+    background-repeat: no-repeat;
+}
+.Emblem_resource__micro_67 {
+        background-image: url('R.images.gui.maps.icons.battlePass.logo.resource_micro');
+    }
+.Emblem_resource__small_41 {
+        background-image: url('R.images.gui.maps.icons.battlePass.logo.resource_small');
     }
 
 @keyframes Label_hideLevel_61 {
@@ -2334,6 +2418,9 @@
     height: 12rem;
     position: relative;
 }
+.ProgressBar_base__medium_62 {
+        height: 6rem;
+    }
 .ProgressBar_base__small_df {
         height: 2rem;
     }
@@ -2349,6 +2436,9 @@
     top: 0;
     left: 0;
 }
+.ProgressBar_background__medium_6e {
+        height: 6rem;
+    }
 .ProgressBar_background__small_46 {
         height: 2rem;
     }
@@ -2370,6 +2460,11 @@
     transform: translate(50%, -50%);
     pointer-events: none;
 }
+
+    .ProgressBarBlink_base__medium_ec {
+        width: 42rem;
+        height: 70rem;
+    }
 
     .ProgressBarBlink_base__small_0f {
         width: 44rem;
@@ -2788,9 +2883,9 @@
         height: 742rem;
 }
 
-.mediaExtraLarge .Chapter_base__qHDSize_da {
-            width: 608rem;
-            height: 1034rem;
+.mediaExtraLarge .Chapter_base_f0 {
+        width: 608rem;
+        height: 750rem;
 }
 
 .Chapter_bg_2e {
@@ -2814,10 +2909,10 @@
         height: 550rem;
 }
 
-.Chapter_base__qHDSize_da .Chapter_bg_2e {
+.mediaExtraLarge .Chapter_bg_2e {
         width: 608rem;
         height: 808rem;
-    }
+}
 
 .Chapter_base__paused_ff .Chapter_bg_2e,
     .Chapter_base__notStarted_9b .Chapter_bg_2e,
@@ -2829,6 +2924,65 @@
         filter: brightness(100%);
     }
 
+.Chapter_base__small_32 .Chapter_bg_2e {
+        width: 200rem;
+        height: 312rem;
+        top: 15rem;
+    }
+
+.mediaSmall .Chapter_base__small_32 .Chapter_bg_2e {
+            width: 245rem;
+            height: 325rem;
+            top: 5rem;
+}
+
+.mediaMedium .Chapter_base__small_32 .Chapter_bg_2e {
+            width: 300rem;
+            height: 444rem;
+}
+
+.mediaLarge .Chapter_base__small_32 .Chapter_bg_2e {
+            width: 360rem;
+            height: 470rem;
+            top: 30rem;
+}
+
+.mediaExtraLarge .Chapter_base__small_32 .Chapter_bg_2e {
+            width: 490rem;
+            height: 640rem;
+            top: 0;
+}
+
+.Chapter_base__medium_e2 .Chapter_bg_2e {
+        width: 234rem;
+        height: 312rem;
+        top: 15rem;
+    }
+
+.mediaSmall .Chapter_base__medium_e2 .Chapter_bg_2e {
+            width: 245rem;
+            height: 325rem;
+            top: 5rem;
+}
+
+.mediaMedium .Chapter_base__medium_e2 .Chapter_bg_2e {
+            width: 340rem;
+            height: 460rem;
+            top: -5rem;
+}
+
+.mediaLarge .Chapter_base__medium_e2 .Chapter_bg_2e {
+            width: 420rem;
+            height: 580rem;
+            top: -15rem;
+}
+
+.mediaExtraLarge .Chapter_base__medium_e2 .Chapter_bg_2e {
+            width: 610rem;
+            height: 810rem;
+            top: -100rem;
+}
+
 .Chapter_bgHover_ac {
     width: 118rem;
     height: 230rem;
@@ -2836,7 +2990,7 @@
     opacity: 0;
     mix-blend-mode: overlay;
     position: absolute;
-    top: 0;
+    top: 10rem;
     left: 50%;
     z-index: 1;
     transform: translateX(-50%);
@@ -2846,17 +3000,20 @@
 .mediaMedium .Chapter_bgHover_ac {
         width: 154rem;
         height: 300rem;
+        top: 30rem;
 }
 
 .mediaLarge .Chapter_bgHover_ac {
         width: 204rem;
         height: 400rem;
+        top: 15rem;
 }
 
-.Chapter_base__qHDSize_da .Chapter_bgHover_ac {
+.mediaExtraLarge .Chapter_bgHover_ac {
         width: 310rem;
         height: 600rem;
-    }
+        top: -35rem;
+}
 
 .Chapter_base_f0:hover .Chapter_bgHover_ac {
         opacity: 1;
@@ -2886,16 +3043,66 @@
         height: 408rem;
 }
 
-.Chapter_base__qHDSize_da .Chapter_border_5c {
+.mediaExtraLarge .Chapter_border_5c {
         width: 360rem;
         height: 600rem;
-    }
+}
 
 .Chapter_frame_58 {
     width: 100%;
     height: 100%;
     background: url('R.images.gui.maps.icons.battlePass.chapter_choice.active') no-repeat center / cover;
     position: absolute;
+}
+
+.Chapter_base__small_32 .Chapter_frame_58 {
+        width: 200rem;
+        height: 265rem;
+    }
+
+.mediaSmall .Chapter_base__small_32 .Chapter_frame_58 {
+            width: 245rem;
+            height: 325rem;
+}
+
+.mediaMedium .Chapter_base__small_32 .Chapter_frame_58 {
+            width: 300rem;
+            height: 375rem;
+}
+
+.mediaLarge .Chapter_base__small_32 .Chapter_frame_58 {
+            width: 360rem;
+            height: 420rem;
+}
+
+.mediaExtraLarge .Chapter_base__small_32 .Chapter_frame_58 {
+            width: 490rem;
+            height: 600rem;
+}
+
+.Chapter_base__medium_e2 .Chapter_frame_58 {
+        width: 235rem;
+        height: 310rem;
+    }
+
+.mediaSmall .Chapter_base__medium_e2 .Chapter_frame_58 {
+            width: 245rem;
+            height: 325rem;
+}
+
+.mediaMedium .Chapter_base__medium_e2 .Chapter_frame_58 {
+            width: 340rem;
+            height: 435rem;
+}
+
+.mediaLarge .Chapter_base__medium_e2 .Chapter_frame_58 {
+            width: 420rem;
+            height: 535rem;
+}
+
+.mediaExtraLarge .Chapter_base__medium_e2 .Chapter_frame_58 {
+            width: 610rem;
+            height: 810rem;
 }
 
 .Chapter_content_61 {
@@ -2906,8 +3113,6 @@
 }
 
 .Chapter_vehicleImg_b1 {
-    width: 242rem;
-    height: 159rem;
     background: no-repeat center / contain;
     filter: brightness(100%);
     position: absolute;
@@ -2918,22 +3123,58 @@
     transition: filter .3s linear;
 }
 
-.mediaMedium .Chapter_vehicleImg_b1 {
-        width: 376rem;
-        height: 248rem;
-}
-
-.mediaLarge .Chapter_vehicleImg_b1 {
-        width: 452rem;
-        height: 298rem;
-}
-
-.Chapter_base__qHDSize_da .Chapter_vehicleImg_b1 {
-        width: 608rem;
-        height: 400rem;
+.Chapter_base__small_32 .Chapter_vehicleImg_b1 {
+        width: 190rem;
+        height: 195rem;
     }
 
+.mediaSmall .Chapter_base__small_32 .Chapter_vehicleImg_b1 {
+            width: 240rem;
+            height: 190rem;
+}
+
+.mediaMedium .Chapter_base__small_32 .Chapter_vehicleImg_b1 {
+            width: 300rem;
+            height: 300rem;
+}
+
+.mediaLarge .Chapter_base__small_32 .Chapter_vehicleImg_b1 {
+            width: 350rem;
+            height: 280rem;
+}
+
+.mediaExtraLarge .Chapter_base__small_32 .Chapter_vehicleImg_b1 {
+            width: 480rem;
+            height: 370rem;
+}
+
+.Chapter_base__medium_e2 .Chapter_vehicleImg_b1 {
+        width: 242rem;
+        height: 185rem;
+    }
+
+.mediaSmall .Chapter_base__medium_e2 .Chapter_vehicleImg_b1 {
+            width: 240rem;
+            height: 210rem;
+}
+
+.mediaMedium .Chapter_base__medium_e2 .Chapter_vehicleImg_b1 {
+            width: 376rem;
+            height: 305rem;
+}
+
+.mediaLarge .Chapter_base__medium_e2 .Chapter_vehicleImg_b1 {
+            width: 460rem;
+            height: 380rem;
+}
+
+.mediaExtraLarge .Chapter_base__medium_e2 .Chapter_vehicleImg_b1 {
+            width: 608rem;
+            height: 500rem;
+}
+
 .Chapter_base__notStarted_9b .Chapter_vehicleImg_b1,
+    .Chapter_base__disabled_6d .Chapter_vehicleImg_b1,
     .Chapter_base__paused_ff .Chapter_vehicleImg_b1,
     .Chapter_base__completed_88 .Chapter_vehicleImg_b1 {
         filter: brightness(90%);
@@ -2947,112 +3188,259 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: -43rem;
+    top: -33rem;
     z-index: 4;
     transition: transform .3s linear;
 }
 
 .mediaMedium .Chapter_shieldWrapper_27 {
-        top: -93rem;
+        top: -72rem;
 }
 
 .mediaLarge .Chapter_shieldWrapper_27 {
-        top: -68rem;
+        top: -45rem;
 }
 
-.Chapter_base__qHDSize_da .Chapter_shieldWrapper_27 {
-        top: -105rem;
+.mediaExtraLarge .Chapter_shieldWrapper_27 {
+        top: -70rem;
+}
+
+.Chapter_base__medium_e2 .Chapter_shieldWrapper_27 {
+        top: -33rem;
     }
 
-.Chapter_base_f0:hover .Chapter_shieldWrapper_27 {
-        transform: translateY(-10rem);
-    }
+.mediaSmall .Chapter_base__medium_e2 .Chapter_shieldWrapper_27 {
+            top: -55rem;
+}
+
+.mediaMedium .Chapter_base__medium_e2 .Chapter_shieldWrapper_27 {
+            top: -85rem;
+}
+
+.mediaLarge .Chapter_base__medium_e2 .Chapter_shieldWrapper_27 {
+            top: -110rem;
+}
+
+.mediaExtraLarge .Chapter_base__medium_e2 .Chapter_shieldWrapper_27 {
+            top: -200rem;
+}
 
 .Chapter_shield_bc {
     display: flex;
     position: relative;
     z-index: 5;
+    transition: filter .2s linear;
 }
 
 .Chapter_base__notStarted_9b .Chapter_shield_bc,
-    .Chapter_base__paused_ff .Chapter_shield_bc {
-        filter: brightness(.6) saturate(.7);
+    .Chapter_base__disabled_6d .Chapter_shield_bc {
+        opacity: 0.85;
     }
 
-.Chapter_base__completed_88 .Chapter_shield_bc {
+.Chapter_base__notStarted_9b .Chapter_shield_bc,
+    .Chapter_base__disabled_6d .Chapter_shield_bc,
+    .Chapter_base__paused_ff .Chapter_shield_bc {
+        filter: brightness(.7) saturate(.8);
+    }
+
+.Chapter_base__notStarted_9b:hover .Chapter_shield_bc,
+    .Chapter_base__disabled_6d:hover .Chapter_shield_bc,
+    .Chapter_base__paused_ff:hover .Chapter_shield_bc {
+        filter: brightness(.95) saturate(.9);
+    }
+
+.Chapter_base__disabled_6d .Chapter_shield_bc,
+    .Chapter_base__completed_88 .Chapter_shield_bc {
         transform: translateY(-10rem);
     }
 
-.mediaMedium .Chapter_base__completed_88 .Chapter_shield_bc {
+.mediaMedium .Chapter_base__disabled_6d .Chapter_shield_bc, .mediaMedium .Chapter_base__completed_88 .Chapter_shield_bc {
             transform: translateY(-18rem);
 }
 
-.mediaLarge .Chapter_base__completed_88 .Chapter_shield_bc {
-            transform: translateY(-18rem);
+.mediaLarge .Chapter_base__disabled_6d .Chapter_shield_bc, .mediaLarge .Chapter_base__completed_88 .Chapter_shield_bc {
+            transform: translateY(-8rem);
 }
 
-.Chapter_base__qHDSize_da .Chapter_base__completed_88 .Chapter_shield_bc {
-            transform: translateY(-59rem);
-        }
+.mediaExtraLarge .Chapter_base__disabled_6d .Chapter_shield_bc, .mediaExtraLarge .Chapter_base__completed_88 .Chapter_shield_bc {
+            transform: translateY(-15rem);
+}
 
 .Chapter_shieldShine_3f {
     animation-name: Chapter_rotate_78;
     animation-duration: 90s;
     animation-iteration-count: infinite;
-    width: 360rem;
-    height: 360rem;
     background: url('R.images.gui.maps.icons.battlePass.chapter_choice.emblem_shine') no-repeat center / contain;
     mix-blend-mode: screen;
     position: absolute;
-    top: -100rem;
     z-index: 4;
     pointer-events: none;
 }
 
-.mediaMedium .Chapter_shieldShine_3f {
-        top: -90rem;
-}
-
-.mediaLarge .Chapter_shieldShine_3f {
-        top: -60rem;
-}
-
-.Chapter_base__qHDSize_da .Chapter_shieldShine_3f {
-        width: 500rem;
-        height: 500rem;
+.Chapter_base__small_32 .Chapter_shieldShine_3f {
         top: -130rem;
     }
 
+.mediaLarge .Chapter_base__small_32 .Chapter_shieldShine_3f {
+            top: -115rem;
+}
+
+.mediaExtraLarge .Chapter_base__small_32 .Chapter_shieldShine_3f {
+            width: 500rem;
+            height: 500rem;
+            top: -180rem;
+}
+
+.Chapter_base__medium_e2 .Chapter_shieldShine_3f {
+        width: 360rem;
+        height: 360rem;
+        top: -130rem;
+    }
+
+.mediaMedium .Chapter_base__medium_e2 .Chapter_shieldShine_3f {
+            top: -137rem;
+}
+
+.mediaLarge .Chapter_base__medium_e2 .Chapter_shieldShine_3f {
+            top: -110rem;
+}
+
+.mediaExtraLarge .Chapter_base__medium_e2 .Chapter_shieldShine_3f {
+            width: 400rem;
+            height: 400rem;
+            top: -140rem;
+}
+
+.Chapter_disabledIcon_f3,
 .Chapter_completedIcon_f2 {
     width: 164rem;
-    height: 16rem;
-    background: url('R.images.gui.maps.icons.battlePass.chapter_choice.check_lines') no-repeat center / contain;
+    height: 15rem;
     position: absolute;
-    top: 57rem;
+    top: 54rem;
     z-index: 5;
 }
 
-.mediaMedium .Chapter_completedIcon_f2 {
-        top: 3rem;
+.mediaMedium .Chapter_disabledIcon_f3, .mediaMedium .Chapter_completedIcon_f2 {
+        height: 18rem;
+        top: 12rem;
 }
 
-.mediaLarge .Chapter_completedIcon_f2 {
-        top: 63rem;
+.mediaLarge .Chapter_disabledIcon_f3, .mediaLarge .Chapter_completedIcon_f2 {
+        height: 21rem;
+        top: 68rem;
 }
 
-.Chapter_base__qHDSize_da .Chapter_completedIcon_f2 {
+.mediaExtraLarge .Chapter_disabledIcon_f3, .mediaExtraLarge .Chapter_completedIcon_f2 {
         width: 180rem;
-        height: 32rem;
-        top: 20rem;
+        height: 25rem;
+        top: 30rem;
+}
+
+.Chapter_completedIcon_f2 {
+    background: url('R.images.gui.maps.icons.battlePass.chapter_choice.check_lines') no-repeat center / contain;
+}
+
+.Chapter_base__small_32 .Chapter_completedIcon_f2 {
+        height: 18rem;
+        top: 70rem;
     }
+
+.mediaMedium .Chapter_base__small_32 .Chapter_completedIcon_f2 {
+            height: 18rem;
+            top: 27rem;
+}
+
+.mediaLarge .Chapter_base__small_32 .Chapter_completedIcon_f2 {
+            height: 22rem;
+            top: 94rem;
+}
+
+.mediaExtraLarge .Chapter_base__small_32 .Chapter_completedIcon_f2 {
+            width: 180rem;
+            height: 27rem;
+            top: 64rem;
+}
+
+.Chapter_base__medium_e2 .Chapter_completedIcon_f2 {
+        height: 19rem;
+        top: 69rem;
+    }
+
+.mediaSmall .Chapter_base__medium_e2 .Chapter_completedIcon_f2 {
+            top: 47rem;
+}
+
+.mediaMedium .Chapter_base__medium_e2 .Chapter_completedIcon_f2 {
+            height: 20rem;
+            top: 12rem;
+}
+
+.mediaLarge .Chapter_base__medium_e2 .Chapter_completedIcon_f2 {
+            height: 20rem;
+            top: 30rem;
+}
+
+.mediaExtraLarge .Chapter_base__medium_e2 .Chapter_completedIcon_f2 {
+            height: 24rem;
+            top: -65rem;
+}
+
+.Chapter_disabledIcon_f3 {
+    background: url('R.images.gui.maps.icons.battlePass.progression.icon_lock_current') no-repeat center / contain;
+}
+
+.Chapter_base__small_32 .Chapter_disabledIcon_f3 {
+        height: 36rem;
+        top: 61rem;
+    }
+
+.mediaMedium .Chapter_base__small_32 .Chapter_disabledIcon_f3 {
+            height: 40rem;
+            top: 14rem;
+}
+
+.mediaLarge .Chapter_base__small_32 .Chapter_disabledIcon_f3 {
+            height: 45rem;
+            top: 83rem;
+}
+
+.mediaExtraLarge .Chapter_base__small_32 .Chapter_disabledIcon_f3 {
+            height: 50rem;
+            top: 50rem;
+}
+
+.Chapter_base__medium_e2 .Chapter_disabledIcon_f3 {
+        height: 37rem;
+        top: 62rem;
+    }
+
+.mediaSmall .Chapter_base__medium_e2 .Chapter_disabledIcon_f3 {
+            height: 37rem;
+            top: 39rem;
+}
+
+.mediaMedium .Chapter_base__medium_e2 .Chapter_disabledIcon_f3 {
+            height: 42rem;
+            top: 2rem;
+}
+
+.mediaLarge .Chapter_base__medium_e2 .Chapter_disabledIcon_f3 {
+            height: 39rem;
+            top: 21rem;
+}
+
+.mediaExtraLarge .Chapter_base__medium_e2 .Chapter_disabledIcon_f3 {
+            height: 45rem;
+            top: -75rem;
+}
 
 .Chapter_title_57 {
     color: #E9E2BF;
-    font-size: 18rem;
+    font-size: 15rem;
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.15;
     width: 100%;
-    margin-top: 73rem;
+    margin-top: 95rem;
     text-align: center;
     position: relative;
     z-index: 5;
@@ -3060,22 +3448,48 @@
 }
 
 .mediaMedium .Chapter_title_57 {
-        margin-top: 34rem;
-        font-size: 28rem;
+        margin-top: 50rem;
+        font-size: 24rem;
 }
 
 .mediaLarge .Chapter_title_57 {
-        margin-top: 94rem;
+        margin-top: 120rem;
 }
 
-.Chapter_base__qHDSize_da .Chapter_title_57 {
-        margin-top: 59rem;
+.mediaExtraLarge .Chapter_title_57 {
+        margin-top: 90rem;
         font-size: 36rem;
+}
+
+.Chapter_base__medium_e2 .Chapter_title_57 {
+        margin-top: 95rem;
     }
+
+.mediaSmall .Chapter_base__medium_e2 .Chapter_title_57 {
+            margin-top: 73rem;
+}
+
+.mediaMedium .Chapter_base__medium_e2 .Chapter_title_57 {
+            margin-top: 40rem;
+            font-size: 24rem;
+}
+
+.mediaLarge .Chapter_base__medium_e2 .Chapter_title_57 {
+            margin-top: 53rem;
+}
+
+.mediaExtraLarge .Chapter_base__medium_e2 .Chapter_title_57 {
+            margin-top: -40rem;
+            font-size: 36rem;
+}
 
 .Chapter_base__active_e5 .Chapter_title_57 {
         color: #FFDD99;
         opacity: 1;
+    }
+
+.Chapter_base__disabled_6d .Chapter_title_57 {
+        opacity: 0.7;
     }
 
 .Chapter_base_f0:hover .Chapter_title_57 {
@@ -3091,18 +3505,61 @@
 .Chapter_preview_1d {
     width: 40rem;
     height: 40rem;
-    position: relative;
+    position: absolute;
+    bottom: 80rem;
+    left: 50%;
     z-index: 5;
 }
 
 .mediaMedium .Chapter_preview_1d {
-        margin-top: 5rem;
+        bottom: 124rem;
+}
+
+.mediaLarge .Chapter_preview_1d {
+        bottom: 150rem;
+}
+
+.Chapter_base__small_32 .Chapter_preview_1d {
+        bottom: 70rem;
+    }
+
+.mediaMedium .Chapter_base__small_32 .Chapter_preview_1d {
+            bottom: 120rem;
+}
+
+.mediaLarge .Chapter_base__small_32 .Chapter_preview_1d {
+            bottom: 105rem;
+}
+
+.mediaExtraLarge .Chapter_base__small_32 .Chapter_preview_1d {
+            bottom: 130rem;
+}
+
+.Chapter_base__medium_e2 .Chapter_preview_1d {
+        width: 40rem;
+        height: 40rem;
+        bottom: 65rem;
+    }
+
+.mediaSmall .Chapter_base__medium_e2 .Chapter_preview_1d {
+            bottom: 75rem;
+}
+
+.mediaMedium .Chapter_base__medium_e2 .Chapter_preview_1d {
+            bottom: 120rem;
+}
+
+.mediaLarge .Chapter_base__medium_e2 .Chapter_preview_1d {
+            bottom: 155rem;
+}
+
+.mediaExtraLarge .Chapter_base__medium_e2 .Chapter_preview_1d {
+            bottom: 160rem;
 }
 
 .Chapter_previewWrapper_74 {
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -3111,7 +3568,7 @@
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
-    margin: -5rem 0 5rem;
+    margin: 5rem 0;
     opacity: .6;
     position: relative;
     z-index: 5;
@@ -3122,9 +3579,9 @@
         font-size: 22rem;
 }
 
-.Chapter_base__qHDSize_da .Chapter_styleTitle_0d {
+.mediaExtraLarge .Chapter_styleTitle_0d {
         font-size: 24rem;
-    }
+}
 
 .Chapter_base__active_e5 .Chapter_styleTitle_0d,
     .Chapter_base_f0:hover .Chapter_styleTitle_0d {
@@ -3139,6 +3596,7 @@
     display: flex;
     align-items: flex-start;
     margin-bottom: -10rem;
+    line-height: 1.3;
     opacity: .6;
     position: relative;
     z-index: 5;
@@ -3153,7 +3611,6 @@
 .mediaLarge .Chapter_vehicleTitle_10 {
         margin-bottom: -10rem;
         font-size: 15rem;
-        line-height: .9;
 }
 
 .Chapter_base__active_e5 .Chapter_vehicleTitle_10,
@@ -3164,7 +3621,7 @@
 .Chapter_vehicleInHangar_61 {
     width: 24rem;
     height: 24rem;
-    margin: -3rem 0 5rem;
+    margin: -1rem 0 5rem;
     background: url('R.images.gui.maps.icons.battlePass.chapter_choice.hasVehicle') no-repeat center / contain;
 }
 
@@ -3176,7 +3633,7 @@
 .mediaLarge .Chapter_vehicleInHangar_61 {
         width: 32rem;
         height: 32rem;
-        margin-top: -10rem;
+        margin-top: -6rem;
 }
 
 .CButton_base_40 {
@@ -3453,9 +3910,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 180rem;
-    margin: 0 30rem;
-    padding: 0 20rem;
+    width: 162rem;
+    margin: 0 20rem;
+    padding: 0 11rem;
     position: relative;
 }
 
@@ -3465,6 +3922,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .mediaMedium .ChapterCompleted_base_55 {
         width: 240rem;
+        margin: 0 30rem;
+        padding: 0 20rem;
 }
 
 .ChapterCompleted_effect_1e {
@@ -3576,35 +4035,33 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     text-align: center;
 }
 
-.mediaMedium .Header_title_af {
+.mediaLarge .Header_title_af {
         font-size: 56rem;
 }
 
-.mediaLarge .Header_title_af {
+.mediaExtraLarge .Header_title_af {
         font-size: 73rem;
 }
 
-.Header_base__qHDSize_a9 .Header_title_af {
-        font-size: 96rem;
-    }
-
 .Header_description_cc {
+    width: 600rem;
     margin-top: 8rem;
     color: #E9E2BF;
     font-size: 16rem;
     line-height: 1.2;
     text-align: center;
-    white-space: pre;
 }
 
 .mediaLarge .Header_description_cc {
+        width: 750rem;
         margin-top: 15rem;
         font-size: 20rem;
 }
 
-.Header_base__qHDSize_a9 .Header_description_cc {
+.mediaExtraLarge .Header_description_cc {
+        width: 900rem;
         font-size: 24rem;
-    }
+}
 
 .Header_freePoints_05,
 .Header_freePointsInfo_f3 {
@@ -3636,11 +4093,25 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .ChaptersCompleted_base_6f {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 100%;
+    padding-top: 35rem;
+    padding-bottom: 45rem;
     background: rgba(0,0,0, .3) no-repeat top / contain;
+}
+    .mediaMedium .ChaptersCompleted_base_6f {
+        padding-top: 45rem;
+        padding-bottom: 80rem;
+}
+    .mediaLarge .ChaptersCompleted_base_6f {
+        padding-top: 75rem;
+        padding-bottom: 100rem;
+}
+    .mediaExtraLarge .ChaptersCompleted_base_6f {
+        padding-top: 75rem;
+        padding-bottom: 270rem;
 }
 
 .ChaptersCompleted_chapters_8d {
@@ -3650,14 +4121,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .ChaptersCompleted_header_08 {
     width: 1000rem;
-    margin: 20rem 0;
-    padding: 20rem 0 30rem;
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .35) 49.93%, rgba(0, 0, 0, 0) 100%);
+    padding-bottom: 30rem;
     position: relative;
-}
-
-.mediaLarge .ChaptersCompleted_header_08 {
-        margin-top: 40rem;
 }
 
 .ChaptersCompleted_headerShadow_8f {
@@ -3718,8 +4183,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 28rem;
+    width: 60rem;
     height: 400rem;
+    z-index: 10;
 }
     .mediaMedium .Separator_base_8a {
         width: 88rem;
@@ -3730,7 +4196,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         height: 742rem;
 }
     .mediaExtraLarge .Separator_base__qHDSize_bb {
-            width: 46rem;
+            width: 150rem;
             height: 1034rem;
 }
 

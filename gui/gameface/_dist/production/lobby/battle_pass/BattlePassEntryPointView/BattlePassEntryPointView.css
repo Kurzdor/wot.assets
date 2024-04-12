@@ -1,3 +1,80 @@
+.Blink_base_88 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.Blink_shadowWrapper_49 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255,185,50, .5);
+    overflow: hidden;
+    animation: Blink_shadowAnimation_7c 2.3s ease-out forwards;
+    mask-size: contain;
+    mask-position: top;
+}
+
+.Blink_blinkWrapper_33 {
+    mask-size: contain;
+    mask-position: top;
+}
+
+.Blink_blinkInner_82 {
+    animation: Blink_blinkAnimation_6a 2.3s ease-out forwards;
+}
+
+.Blink_blink_68 {
+    height: 160rem;
+    background-image: linear-gradient(0deg, transparent, rgba(255,255,255, .2));
+    filter: brightness(200%);
+}
+
+@keyframes Blink_shadowAnimation_7c {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .15;
+    }
+
+    60% {
+        opacity: .3;
+    }
+
+    70% {
+        opacity: .15;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes Blink_blinkAnimation_6a {
+    0% {
+        transform: translateY(100%);
+    }
+
+    60% {
+        transform: translateY(45%);
+    }
+
+    80% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
 @keyframes Emblem_hideLevel_f2 {
     0% {
         transform: translateY(0);
@@ -208,30 +285,48 @@
 .Emblem_image__completedGoldenMicro_2d {
         background-image: url('R.images.gui.maps.icons.battlePass.logo.emblem_BP_completed_micro');
     }
-.Emblem_extra_d4 {
+.Emblem_marathon_c6,
+.Emblem_resource_97 {
     display: flex;
     justify-content: center;
     width: 140rem;
     height: 130rem;
     margin-bottom: 8rem;
-    background: url('R.images.gui.maps.icons.battlePass.logo.extra_flags') left top / cover no-repeat;
     position: absolute;
     top: 60rem;
     left: 50%;
-    z-index: -2;
+    z-index: 0;
     transform: translate(-50%, -50%);
 }
-.Emblem_extra__micro_f7 {
+.Emblem_marathon__micro_61, .Emblem_resource__micro_67 {
         width: 60rem;
         height: 60rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.extra_flags_micro');
         top: 24rem;
     }
-.Emblem_extra__small_28 {
-        width: 100rem;
-        height: 100rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.extra_flags_small');
+.Emblem_marathon__small_0b, .Emblem_resource__small_41 {
+        width: 107rem;
+        height: 98rem;
         top: 40rem;
+    }
+.Emblem_marathon_c6 {
+    background: url('R.images.gui.maps.icons.battlePass.logo.marathon_flags') left top / cover;
+    background-repeat: no-repeat;
+}
+.Emblem_marathon__micro_61 {
+        background-image: url('R.images.gui.maps.icons.battlePass.logo.marathon_flags_micro');
+    }
+.Emblem_marathon__small_0b {
+        background-image: url('R.images.gui.maps.icons.battlePass.logo.marathon_flags_small');
+    }
+.Emblem_resource_97 {
+    background: url('R.images.gui.maps.icons.battlePass.logo.resource') left top / cover;
+    background-repeat: no-repeat;
+}
+.Emblem_resource__micro_67 {
+        background-image: url('R.images.gui.maps.icons.battlePass.logo.resource_micro');
+    }
+.Emblem_resource__small_41 {
+        background-image: url('R.images.gui.maps.icons.battlePass.logo.resource_small');
     }
 
 @keyframes Label_hideLevel_61 {
@@ -769,6 +864,9 @@
     height: 12rem;
     position: relative;
 }
+.ProgressBar_base__medium_62 {
+        height: 6rem;
+    }
 .ProgressBar_base__small_df {
         height: 2rem;
     }
@@ -784,6 +882,9 @@
     top: 0;
     left: 0;
 }
+.ProgressBar_background__medium_6e {
+        height: 6rem;
+    }
 .ProgressBar_background__small_46 {
         height: 2rem;
     }
@@ -805,6 +906,11 @@
     transform: translate(50%, -50%);
     pointer-events: none;
 }
+
+    .ProgressBarBlink_base__medium_ec {
+        width: 42rem;
+        height: 70rem;
+    }
 
     .ProgressBarBlink_base__small_0f {
         width: 44rem;
@@ -1085,483 +1191,6 @@
     }
 .EmblemProgressBar_base__hidden_8b {
         display: none;
-    }
-
-@keyframes StateMouseOver_fadeInWithScale_65 {
-    0% {
-        opacity: 0;
-        transform: scaleY(.75);
-    }
-
-    50% {
-        opacity: 1;
-        transform: scaleY(1.05);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scaleY(1);
-    }
-}
-@keyframes StateMouseOver_slideUp_b1 {
-    0% {
-        opacity: 0;
-        transform: translateY(-10rem);
-    }
-
-    33% {
-        opacity: 1;
-        transform: translateY(5rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes StateMouseOver_wrapperHover_3b {
-    from {
-        filter: brightness(1) contrast(1);
-    }
-
-    to {
-        filter: brightness(1.35) contrast(.75);
-    }
-}
-@keyframes StateMouseOver_wrapperOut_ef {
-    from {
-        filter: brightness(1.35) contrast(.75);
-    }
-
-    to {
-        filter: brightness(1) contrast(1);
-    }
-}
-@keyframes StateMouseOver_flagHover_8e {
-    from {
-        transform: scaleY(1);
-    }
-
-    to {
-        transform: scaleY(1.05);
-    }
-}
-@keyframes StateMouseOver_emblemHover_a7 {
-    from {
-        margin-top: 4rem;
-    }
-
-    to {
-        margin-top: 9rem;
-    }
-}
-@keyframes StateMouseOver_logoIconHover_a1 {
-    from {
-        bottom: 25rem;
-    }
-
-    to {
-        bottom: 20rem;
-    }
-}
-@keyframes StateMouseOver_logoIconHoverSmall_2c {
-    from {
-        bottom: 20rem;
-    }
-
-    to {
-        bottom: 15rem;
-    }
-}
-@keyframes StateMouseOver_logoSmallX2IconHover_f6 {
-    from {
-        bottom: -10rem;
-    }
-
-    to {
-        bottom: -15rem;
-    }
-}
-@keyframes StateMouseOver_freePointsHover_64 {
-    from {
-        bottom: 30rem;
-    }
-
-    to {
-        bottom: 25rem;
-    }
-}
-@keyframes StateMouseOver_freePointsSmallX2Hover_a0 {
-    from {
-        bottom: -5rem;
-    }
-
-    to {
-        bottom: -10rem;
-    }
-}
-@keyframes StateMouseOver_flagOut_2d {
-    from {
-        transform: scaleY(1.05);
-    }
-
-    to {
-        transform: scaleY(1);
-    }
-}
-@keyframes StateMouseOver_emblemOut_9d {
-    from {
-        margin-top: 9rem;
-    }
-
-    to {
-        margin-top: 4rem;
-    }
-}
-@keyframes StateMouseOver_freePointsOut_f2 {
-    from {
-        bottom: 25rem;
-    }
-
-    to {
-        bottom: 30rem;
-    }
-}
-@keyframes StateMouseOver_freePointsSmallX2Out_60 {
-    from {
-        bottom: -10rem;
-    }
-
-    to {
-        bottom: -5rem;
-    }
-}
-@keyframes StateMouseOver_logoIconOut_b3 {
-    from {
-        bottom: 20rem;
-    }
-
-    to {
-        bottom: 25rem;
-    }
-}
-@keyframes StateMouseOver_logoIconOutSmall_6a {
-    from {
-        bottom: 15rem;
-    }
-
-    to {
-        bottom: 20rem;
-    }
-}
-@keyframes StateMouseOver_logoSmallX2IconOut_f4 {
-    from {
-        bottom: -15rem;
-    }
-
-    to {
-        bottom: -10rem;
-    }
-}
-@keyframes StateMouseOver_emblemLevelUp_cf {
-    0% {
-        filter: brightness(1) contrast(1);
-        transform: translateY(0);
-    }
-
-    16% {
-        transform: translateY(6rem);
-    }
-
-    30% {
-        filter: brightness(1.35) contrast(.75);
-    }
-
-    100% {
-        filter: brightness(1) contrast(1);
-        transform: translateY(0);
-    }
-}
-@keyframes StateMouseOver_emblemAttention_c6 {
-    0% {
-        filter: brightness(1.5);
-    }
-
-    100% {
-        filter: brightness(1);
-    }
-}
-@keyframes StateMouseOver_emblemCopyAttention_07 {
-    0% {
-        opacity: 1;
-        transform: scale(1, 1);
-    }
-
-    100% {
-        opacity: 0;
-        transform: scale(1.3, 1.3);
-    }
-}
-@keyframes StateMouseOver_flagLevelUp_2a {
-    0% {
-        filter: brightness(1) contrast(1);
-        transform: scaleY(1);
-    }
-
-    16% {
-        filter: brightness(1.35) contrast(.75);
-        transform: scaleY(1.05);
-    }
-
-    100% {
-        filter: brightness(1) contrast(1);
-        transform: scaleY(1);
-    }
-}
-@keyframes StateMouseOver_flagLevelUpPosOut_0d {
-    from {
-        transform: scaleY(1.05);
-    }
-
-    to {
-        transform: scaleY(1);
-    }
-}
-@keyframes StateMouseOver_flagLevelUpLightOut_0b {
-    from {
-        filter: brightness(1.35) contrast(.75);
-    }
-
-    to {
-        filter: brightness(1) contrast(1);
-    }
-}
-@keyframes StateMouseOver_flareLevelUp_d5 {
-    0% {
-        opacity: 1;
-    }
-}
-@keyframes StateMouseOver_flagBuyBPIn_63 {
-    0% {
-        transform: scaleY(1);
-    }
-
-    38% {
-        transform: scaleY(.9);
-    }
-
-    76% {
-        transform: scaleY(1.1);
-    }
-
-    100% {
-        transform: scaleY(1);
-    }
-}
-@keyframes StateMouseOver_flagSwitchChapter_c9 {
-    0% {
-        opacity: 1;
-        transform: scaleY(1);
-    }
-
-    38% {
-        opacity: 0;
-        transform: scaleY(.9);
-    }
-
-    76% {
-        opacity: 1;
-        transform: scaleY(1.1);
-    }
-
-    100% {
-        transform: scaleY(1);
-    }
-}
-@keyframes StateMouseOver_emblemBuyBP_de {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    3% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    33% {
-        opacity: 0;
-        transform: translateY(-30rem);
-    }
-
-    46% {
-        opacity: 0;
-        transform: translateY(-30rem);
-    }
-
-    66% {
-        opacity: 1;
-        transform: translateY(5rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes StateMouseOver_lightBuyBP_42 {
-    0% {
-        opacity: 0;
-        transform: scale(.8);
-    }
-
-    16% {
-        opacity: 0;
-        transform: scale(.8);
-    }
-
-    37% {
-        opacity: 1;
-        transform: scale(1.3);
-    }
-
-    100% {
-        opacity: 0;
-        transform: scale(.8);
-    }
-}
-@keyframes StateMouseOver_lightAttention_5d {
-    0% {
-        opacity: 0;
-        transform: scale(.1);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1.35);
-    }
-}
-@keyframes StateMouseOver_lightAttentionSmall_8a {
-    0% {
-        opacity: 0;
-        transform: scale(.1);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
-}
-@keyframes StateMouseOver_lightChapterNotChosen_b7 {
-    0% {
-        opacity: 0;
-        transform: scale(0);
-    }
-
-    10% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
-
-    90% {
-        opacity: 1;
-        transform: scale(.8);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(.8);
-    }
-}
-@keyframes StateMouseOver_lightChapterNotChosenSmall_4e {
-    0% {
-        opacity: 0;
-        transform: scale(0);
-    }
-
-    10% {
-        opacity: 1;
-        transform: scale(.5);
-    }
-
-    90% {
-        opacity: 1;
-        transform: scale(.8);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-.StateMouseOver_base_95 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    animation-name: StateMouseOver_wrapperHover_3b;
-    animation-duration: .3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-}
-.StateMouseOver_flag_34 {
-    animation-name: StateMouseOver_flagHover_8e;
-    animation-duration: .3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-}
-.StateMouseOver_emblem_aa {
-    animation-name: StateMouseOver_emblemHover_a7;
-    animation-duration: .01s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-}
-.StateMouseOver_chapterLogoIcon_a8 {
-    animation-name: StateMouseOver_logoIconHoverSmall_2c;
-    animation-duration: .2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-}
-.StateMouseOver_base__medium_d1 .StateMouseOver_chapterLogoIcon_a8 {
-    animation-name: StateMouseOver_logoIconHover_a1;
-    animation-duration: .2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    }
-.StateMouseOver_base__smallX2_b2 .StateMouseOver_chapterLogoIcon_a8 {
-    animation-name: StateMouseOver_logoSmallX2IconHover_f6;
-    animation-duration: .2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    }
-.StateMouseOver_freePoints_ff {
-    animation-name: StateMouseOver_freePointsHover_64;
-    animation-duration: .2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-}
-.StateMouseOver_base__smallX2_b2 .StateMouseOver_freePoints_ff {
-    animation-name: StateMouseOver_freePointsSmallX2Hover_a0;
-    animation-duration: .2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: 0s;
-    animation-iteration-count: 1;
     }
 
 @keyframes StateNormal_fadeInWithScale_f8 {
@@ -2058,35 +1687,6 @@
         bottom: -5rem;
         transform: translateY(-50rem);
     }
-.StateNormal_blink_7e {
-    width: 100rem;
-    height: 120rem;
-    background: no-repeat center / contain;
-    opacity: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    transform: translate(-50%, -50%) translateY(-15rem);
-    pointer-events: none;
-}
-.StateNormal_blink__mouseOver_9b {
-        transform: translate(-50%, -50%) translateY(-12rem);
-    }
-.StateNormal_base__medium_e3 .StateNormal_blink_7e {
-        width: 142rem;
-        height: 160rem;
-        transform: translate(-50%, -50%) translateY(-18rem);
-    }
-.StateNormal_base__medium_e3 .StateNormal_blink_7e.StateNormal_blink__mouseOver_9b {
-            transform: translate(-50%, -50%) translateY(-15rem);
-        }
-.StateNormal_base__smallX2_07 .StateNormal_blink_7e {
-        transform: translate(-50%, -50%) translateY(-22rem);
-    }
-.StateNormal_base__smallX2_07 .StateNormal_blink_7e.StateNormal_blink__mouseOver_9b {
-            transform: translate(-50%, -50%) translateY(-19rem);
-        }
 
 @keyframes StateAttention_fadeInWithScale_b7 {
     0% {
@@ -2530,25 +2130,6 @@
         height: 130rem;
         background-image: url('R.images.gui.maps.icons.battlePass.logo.Main_BP');
 }
-.StateAttention_flare_ac {
-    animation-name: StateAttention_flareLevelUp_62;
-    animation-duration: 1.8s;
-    animation-fill-mode: forwards;
-    animation-delay: .2s;
-    animation-iteration-count: 1;
-    width: 100rem;
-    height: 120rem;
-    background: no-repeat center / contain;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) translateY(-15rem);
-    pointer-events: none;
-}
-.mediaMedium .StateAttention_flare_ac {
-        width: 142rem;
-        height: 160rem;
-}
 
 @keyframes StateBuyBP_fadeInWithScale_b4 {
     0% {
@@ -2980,31 +2561,6 @@
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
-.StateBuyBP_flare_8f {
-    animation-name: StateBuyBP_flareLevelUp_15;
-    animation-duration: 1.8s;
-    animation-fill-mode: forwards;
-    animation-delay: .2s;
-    animation-iteration-count: 1;
-    width: 100rem;
-    height: 120rem;
-    background: no-repeat center / contain;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) translateY(-15rem);
-    pointer-events: none;
-}
-.StateBuyBP_base__medium_1f .StateBuyBP_flare_8f {
-        width: 142rem;
-        height: 160rem;
-    }
-.StateBuyBP_base__smallX2_51 .StateBuyBP_flare_8f {
-        transform: translate(-50%, -50%) translateY(-22rem);
-    }
-.StateBuyBP_base__smallX2_51 .StateBuyBP_flare_8f.StateBuyBP_blink__mouseOver_50 {
-            transform: translate(-50%, -50%) translateY(-19rem);
-        }
 
 @keyframes StateChapterNotChosen_fadeInWithScale_b1 {
     0% {
@@ -3863,31 +3419,6 @@
     animation-delay: .2s;
     animation-iteration-count: 1;
 }
-.StateComplete_flare_aa {
-    animation-name: StateComplete_flareLevelUp_e2;
-    animation-duration: 1.8s;
-    animation-fill-mode: forwards;
-    animation-delay: .2s;
-    animation-iteration-count: 1;
-    width: 100rem;
-    height: 120rem;
-    background: no-repeat center / contain;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) translateY(-15rem);
-    pointer-events: none;
-}
-.StateComplete_base__medium_c7 .StateComplete_flare_aa {
-        width: 142rem;
-        height: 160rem;
-    }
-.StateComplete_base__smallX2_b1 .StateComplete_flare_aa {
-        transform: translate(-50%, -50%) translateY(-22rem);
-    }
-.StateComplete_base__smallX2_b1 .StateComplete_flare_aa.StateComplete_blink__mouseOver_2e {
-            transform: translate(-50%, -50%) translateY(-19rem);
-        }
 
 @keyframes StateLevelUp_fadeInWithScale_0b {
     0% {
@@ -4319,31 +3850,6 @@
     animation-delay: .2s;
     animation-iteration-count: 1;
 }
-.StateLevelUp_flare_99 {
-    animation-name: StateLevelUp_flareLevelUp_87;
-    animation-duration: 1.8s;
-    animation-fill-mode: forwards;
-    animation-delay: .2s;
-    animation-iteration-count: 1;
-    width: 100rem;
-    height: 120rem;
-    background: no-repeat center / contain;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) translateY(-15rem);
-    pointer-events: none;
-}
-.StateLevelUp_base__medium_0c .StateLevelUp_flare_99 {
-        width: 142rem;
-        height: 160rem;
-    }
-.StateLevelUp_base__smallX2_09 .StateLevelUp_flare_99 {
-        transform: translate(-50%, -50%) translateY(-22rem);
-    }
-.StateLevelUp_base__smallX2_09 .StateLevelUp_flare_99.StateLevelUp_blink__mouseOver_b1 {
-            transform: translate(-50%, -50%) translateY(-19rem);
-        }
 
 @keyframes StateMouseOut_fadeInWithScale_6c {
     0% {
@@ -4816,6 +4322,483 @@
 .StateMouseOut_base__smallX2_e5 .StateMouseOut_freePoints_fb {
     animation-name: StateMouseOut_freePointsSmallX2Out_6c;
     animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    }
+
+@keyframes StateMouseOver_fadeInWithScale_65 {
+    0% {
+        opacity: 0;
+        transform: scaleY(.75);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scaleY(1.05);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+@keyframes StateMouseOver_slideUp_b1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes StateMouseOver_wrapperHover_3b {
+    from {
+        filter: brightness(1) contrast(1);
+    }
+
+    to {
+        filter: brightness(1.35) contrast(.75);
+    }
+}
+@keyframes StateMouseOver_wrapperOut_ef {
+    from {
+        filter: brightness(1.35) contrast(.75);
+    }
+
+    to {
+        filter: brightness(1) contrast(1);
+    }
+}
+@keyframes StateMouseOver_flagHover_8e {
+    from {
+        transform: scaleY(1);
+    }
+
+    to {
+        transform: scaleY(1.05);
+    }
+}
+@keyframes StateMouseOver_emblemHover_a7 {
+    from {
+        margin-top: 4rem;
+    }
+
+    to {
+        margin-top: 9rem;
+    }
+}
+@keyframes StateMouseOver_logoIconHover_a1 {
+    from {
+        bottom: 25rem;
+    }
+
+    to {
+        bottom: 20rem;
+    }
+}
+@keyframes StateMouseOver_logoIconHoverSmall_2c {
+    from {
+        bottom: 20rem;
+    }
+
+    to {
+        bottom: 15rem;
+    }
+}
+@keyframes StateMouseOver_logoSmallX2IconHover_f6 {
+    from {
+        bottom: -10rem;
+    }
+
+    to {
+        bottom: -15rem;
+    }
+}
+@keyframes StateMouseOver_freePointsHover_64 {
+    from {
+        bottom: 30rem;
+    }
+
+    to {
+        bottom: 25rem;
+    }
+}
+@keyframes StateMouseOver_freePointsSmallX2Hover_a0 {
+    from {
+        bottom: -5rem;
+    }
+
+    to {
+        bottom: -10rem;
+    }
+}
+@keyframes StateMouseOver_flagOut_2d {
+    from {
+        transform: scaleY(1.05);
+    }
+
+    to {
+        transform: scaleY(1);
+    }
+}
+@keyframes StateMouseOver_emblemOut_9d {
+    from {
+        margin-top: 9rem;
+    }
+
+    to {
+        margin-top: 4rem;
+    }
+}
+@keyframes StateMouseOver_freePointsOut_f2 {
+    from {
+        bottom: 25rem;
+    }
+
+    to {
+        bottom: 30rem;
+    }
+}
+@keyframes StateMouseOver_freePointsSmallX2Out_60 {
+    from {
+        bottom: -10rem;
+    }
+
+    to {
+        bottom: -5rem;
+    }
+}
+@keyframes StateMouseOver_logoIconOut_b3 {
+    from {
+        bottom: 20rem;
+    }
+
+    to {
+        bottom: 25rem;
+    }
+}
+@keyframes StateMouseOver_logoIconOutSmall_6a {
+    from {
+        bottom: 15rem;
+    }
+
+    to {
+        bottom: 20rem;
+    }
+}
+@keyframes StateMouseOver_logoSmallX2IconOut_f4 {
+    from {
+        bottom: -15rem;
+    }
+
+    to {
+        bottom: -10rem;
+    }
+}
+@keyframes StateMouseOver_emblemLevelUp_cf {
+    0% {
+        filter: brightness(1) contrast(1);
+        transform: translateY(0);
+    }
+
+    16% {
+        transform: translateY(6rem);
+    }
+
+    30% {
+        filter: brightness(1.35) contrast(.75);
+    }
+
+    100% {
+        filter: brightness(1) contrast(1);
+        transform: translateY(0);
+    }
+}
+@keyframes StateMouseOver_emblemAttention_c6 {
+    0% {
+        filter: brightness(1.5);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
+}
+@keyframes StateMouseOver_emblemCopyAttention_07 {
+    0% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.3, 1.3);
+    }
+}
+@keyframes StateMouseOver_flagLevelUp_2a {
+    0% {
+        filter: brightness(1) contrast(1);
+        transform: scaleY(1);
+    }
+
+    16% {
+        filter: brightness(1.35) contrast(.75);
+        transform: scaleY(1.05);
+    }
+
+    100% {
+        filter: brightness(1) contrast(1);
+        transform: scaleY(1);
+    }
+}
+@keyframes StateMouseOver_flagLevelUpPosOut_0d {
+    from {
+        transform: scaleY(1.05);
+    }
+
+    to {
+        transform: scaleY(1);
+    }
+}
+@keyframes StateMouseOver_flagLevelUpLightOut_0b {
+    from {
+        filter: brightness(1.35) contrast(.75);
+    }
+
+    to {
+        filter: brightness(1) contrast(1);
+    }
+}
+@keyframes StateMouseOver_flareLevelUp_d5 {
+    0% {
+        opacity: 1;
+    }
+}
+@keyframes StateMouseOver_flagBuyBPIn_63 {
+    0% {
+        transform: scaleY(1);
+    }
+
+    38% {
+        transform: scaleY(.9);
+    }
+
+    76% {
+        transform: scaleY(1.1);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+@keyframes StateMouseOver_flagSwitchChapter_c9 {
+    0% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    38% {
+        opacity: 0;
+        transform: scaleY(.9);
+    }
+
+    76% {
+        opacity: 1;
+        transform: scaleY(1.1);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+@keyframes StateMouseOver_emblemBuyBP_de {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    3% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    33% {
+        opacity: 0;
+        transform: translateY(-30rem);
+    }
+
+    46% {
+        opacity: 0;
+        transform: translateY(-30rem);
+    }
+
+    66% {
+        opacity: 1;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes StateMouseOver_lightBuyBP_42 {
+    0% {
+        opacity: 0;
+        transform: scale(.8);
+    }
+
+    16% {
+        opacity: 0;
+        transform: scale(.8);
+    }
+
+    37% {
+        opacity: 1;
+        transform: scale(1.3);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(.8);
+    }
+}
+@keyframes StateMouseOver_lightAttention_5d {
+    0% {
+        opacity: 0;
+        transform: scale(.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.35);
+    }
+}
+@keyframes StateMouseOver_lightAttentionSmall_8a {
+    0% {
+        opacity: 0;
+        transform: scale(.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+@keyframes StateMouseOver_lightChapterNotChosen_b7 {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    10% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    90% {
+        opacity: 1;
+        transform: scale(.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(.8);
+    }
+}
+@keyframes StateMouseOver_lightChapterNotChosenSmall_4e {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    10% {
+        opacity: 1;
+        transform: scale(.5);
+    }
+
+    90% {
+        opacity: 1;
+        transform: scale(.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.StateMouseOver_base_95 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation-name: StateMouseOver_wrapperHover_3b;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+.StateMouseOver_flag_34 {
+    animation-name: StateMouseOver_flagHover_8e;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+.StateMouseOver_emblem_aa {
+    animation-name: StateMouseOver_emblemHover_a7;
+    animation-duration: .01s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+.StateMouseOver_chapterLogoIcon_a8 {
+    animation-name: StateMouseOver_logoIconHoverSmall_2c;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+.StateMouseOver_base__medium_d1 .StateMouseOver_chapterLogoIcon_a8 {
+    animation-name: StateMouseOver_logoIconHover_a1;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    }
+.StateMouseOver_base__smallX2_b2 .StateMouseOver_chapterLogoIcon_a8 {
+    animation-name: StateMouseOver_logoSmallX2IconHover_f6;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    }
+.StateMouseOver_freePoints_ff {
+    animation-name: StateMouseOver_freePointsHover_64;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+.StateMouseOver_base__smallX2_b2 .StateMouseOver_freePoints_ff {
+    animation-name: StateMouseOver_freePointsSmallX2Hover_a0;
+    animation-duration: .2s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(.07, .82, .16, 1);
     animation-delay: 0s;
@@ -5696,28 +5679,6 @@
     animation-iteration-count: 1;
     opacity: 0;
 }
-.StateShow_flare_d1 {
-    width: 100rem;
-    height: 120rem;
-    background: no-repeat center / contain;
-    opacity: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) translateY(-15rem);
-    pointer-events: none;
-}
-.mediaMedium .StateShow_flare_d1 {
-        width: 142rem;
-        height: 160rem;
-}
-.StateShow_flare__firstShow_79 {
-    animation-name: StateShow_flareLevelUp_3a;
-    animation-duration: 1.8s;
-    animation-fill-mode: forwards;
-    animation-delay: .3s;
-    animation-iteration-count: 1;
-    }
 
 @keyframes StateSwitchChapter_fadeInWithScale_2b {
     0% {
@@ -6151,31 +6112,6 @@
     animation-iteration-count: 1;
     opacity: 0;
 }
-.StateSwitchChapter_flare_67 {
-    animation-name: StateSwitchChapter_flareLevelUp_50;
-    animation-duration: 1.8s;
-    animation-fill-mode: forwards;
-    animation-delay: .2s;
-    animation-iteration-count: 1;
-    width: 100rem;
-    height: 120rem;
-    background: no-repeat center / contain;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) translateY(-15rem);
-    pointer-events: none;
-}
-.StateSwitchChapter_base__medium_77 .StateSwitchChapter_flare_67 {
-        width: 142rem;
-        height: 160rem;
-    }
-.StateSwitchChapter_base__smallX2_56 .StateSwitchChapter_flare_67 {
-        transform: translate(-50%, -50%) translateY(-22rem);
-    }
-.StateSwitchChapter_base__smallX2_56 .StateSwitchChapter_flare_67.StateSwitchChapter_blink__mouseOver_23 {
-            transform: translate(-50%, -50%) translateY(-19rem);
-        }
 
 @keyframes Content_fadeInWithScale_fc {
     0% {
@@ -6643,40 +6579,72 @@ body {
 .Content_componentWrapper__hidden_7a {
         opacity: 0;
     }
-.Content_light_c3 {
-    opacity: 0;
-    mix-blend-mode: additive;
+
+.App_base_f0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.App_light_08 {
     position: absolute;
-    top: 40%;
-    left: 50%;
+    transform: translateY(-20rem) scale(.75);
 }
-.Content_light__chapterNotChosen_1a {
-    animation-name: Content_lightChapterNotChosen_56;
-    animation-duration: .8s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.6, .04, .98, .34);
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-        width: 300rem;
-        height: 240rem;
-        margin: -120rem 0 0 -150rem;
-        background: url('swf://gui/flash/animations/battlePass/seq.swf') no-repeat center / 80%;
-        z-index: 0;
-    }
-.mediaMedium .Content_light__chapterNotChosen_1a {
-            background-size: 100%;
+
+.mediaMedium .App_light_08 {
+        transform: translateY(-20rem) scale(1);
 }
-.Content_base__small_7b .Content_light__chapterNotChosen_1a {
-    animation-name: Content_lightChapterNotChosenSmall_12;
-    animation-duration: .8s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-        }
-.Content_base__disabled_76 .Content_light_c3,
-    .Content_base__seasonWaiting_7c .Content_light_c3,
-    .Content_light__hidden_15 {
-        display: none;
+
+.App_light__chapterNotChosen_ff {
+        animation: App_lightChapterNotChosenSmall_d9 cubic-bezier(.6, .04, .98, .34) .8s;
     }
+
+.mediaMedium .App_light__chapterNotChosen_ff {
+            animation: App_lightChapterNotChosen_3d cubic-bezier(.6, .04, .98, .34) .8s;
+}
+
+@keyframes App_lightChapterNotChosenSmall_d9 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem) scale(0);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(-20rem) scale(1.1);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateY(-20rem) scale(.75);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-20rem) scale(.75);
+    }
+}
+
+@keyframes App_lightChapterNotChosen_3d {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem) scale(0);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(-20rem) scale(1.2);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateY(-20rem) scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-20rem) scale(1);
+    }
+}
 

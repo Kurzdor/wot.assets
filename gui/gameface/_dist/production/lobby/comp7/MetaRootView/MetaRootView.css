@@ -4,15 +4,6 @@ body {
     overflow: hidden;
 }
 
-.LobbyTopSubViewWrapper_base_2e {
-    /* Layer system on C++ side corrects view height +35px,
-    so all views with LOBBY_TOP_SUB_VIEW ViewFlag on python side have extra spacing in the bottom
-    It is impossible to recheck all the places where python views with such ViewFlag are rendered,
-    So that's why we use this slug for correct positioning of elements in such views.
-    */
-    padding-bottom: 35rem;
-}
-
 .TextButton_base_b6 {
     display: flex;
     align-items: center;
@@ -147,18 +138,6 @@ body {
 
 /* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
-.page_base_b1 {
-    background: url('R.images.gui.maps.icons.comp7.backgrounds.comp7_bg') no-repeat center / cover;
-}
-.page_base__leaderboard_d7 {
-        background-image: url('R.images.gui.maps.icons.comp7.backgrounds.leaderboard_bg');
-    }
-.page_base__rankRewards_fb {
-        background-image: url('R.images.gui.maps.icons.comp7.backgrounds.rewards_bg');
-    }
-.page_base__weeklyQuests_f8 {
-        background-image: url('R.images.gui.maps.icons.comp7.backgrounds.quests_bg');
-    }
 .page_heading_05 {
     padding-top: 54rem;
 }
@@ -178,493 +157,210 @@ body {
         right: 40rem;
 }
 
-.Counter_base_9e {
-    display: flex;
-    min-width: 14rem;
-    height: 14rem;
-    position: relative;
-    z-index: 0;
-    animation: Counter_show_be ease-in-out forwards;
-}
-
-    .Counter_base__big_19 {
-        min-width: 21rem;
-        height: 21rem;
-    }
-
-    .Counter_base__small_3b {
-        min-width: 13rem;
-        height: 13rem;
-    }
-
-    .Counter_base__empty_98 {
-        min-width: 6rem;
-        height: 6rem;
-    }
-
-    .Counter_base__animated_40 {
-        animation-duration: .2s;
-    }
-
-    .Counter_base__hidden_56 {
-        animation-name: Counter_hide_b6;
-    }
-.Counter_bg_74 {
-    border: 1rem solid #fe4e0f;
-    border-radius: 7rem;
-    box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
-            0 0 6rem rgba(254,103,0, .2),
-            0 0 12rem 4rem rgba(249,0,0, .3);
-    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+.Frame_base_af {
+    border: 1rem solid rgba(255,85,0, .2);
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
+    pointer-events: none;
 }
-.Counter_base__big_19 .Counter_bg_74 {
-        border-radius: 11rem;
+
+    .Frame_base__small_f0 {
+        width: 68rem;
+        height: 52rem;
     }
-.Counter_base__small_3b .Counter_bg_74 {
-        border-radius: 7rem;
+
+    .Frame_base__medium_05 {
+        width: 100rem;
+        height: 80rem;
     }
-.Counter_value_3e {
+
+.Frame_border_17 {
+    width: 100%;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.components.tabs.tab.border_horizontal') no-repeat 50% 0 / contain;
+    position: absolute;
+}
+
+.Frame_border__top_f7 {
+        top: -1rem;
+    }
+
+.Frame_border__bottom_52 {
+        bottom: -1rem;
+    }
+
+.Frame_arrow_c3 {
+    width: 7rem;
+    height: 12rem;
+    margin-left: 12rem;
+    background: url('R.images.gui.maps.icons.components.tabs.tab.arrow') no-repeat center / contain;
+    position: absolute;
+    top: 40%;
+    left: 100%;
+}
+
+.Tab_base_cd {
     display: flex;
-    padding: 0 4rem;
-    color: #fefeec;
-    font-size: 11rem;
-    line-height: 13rem;
-    white-space: nowrap;
-}
-.Counter_base__big_19 .Counter_value_3e {
-        padding: 0 7rem;
-        font-size: 14rem;
-        line-height: 20rem;
-    }
-.Counter_base__small_3b .Counter_value_3e {
-        font-size: 9rem;
-        line-height: 12rem;
-    }
-.Counter_value__text_d6 {
-        padding: 0 7rem;
-    }
-.Counter_base__big_19 .Counter_value__text_d6 {
-            padding: 0 10rem;
-        }
-.Counter_base__small_3b .Counter_value__text_d6 {
-            padding: 0 5rem;
-            font-size: 10rem;
-        }
-.Counter_base__pattern_71 .Counter_value_3e {
-        display: none;
-    }
-.Counter_plus_15 {
-    position: relative;
-    top: -1rem;
-}
-.Counter_pattern_83 {
-    display: none;
-}
-.Counter_base__pattern_71 .Counter_pattern_83 {
-        display: block;
-        border-radius: 50%;
-        background-image: url('R.images.gui.maps.icons.components.counter.pattern');
-        opacity: .8;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-@keyframes Counter_show_be {
-    0% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-@keyframes Counter_hide_b6 {
-    0% {
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(0);
-    }
-}
-
-.MenuItem_base_a3 {
-    display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 1;
-    animation: MenuItem_fade-out_98 .5s ease-in-out forwards;
+    transition: color 0.5s ease-in-out, text-shadow 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-    .MenuItem_base_a3:hover {
-        cursor: pointer;
+    .Tab_base__small_bf {
+        width: 68rem;
+        height: 52rem;
     }
 
-    .MenuItem_base__active_59:hover {
+    .Tab_base__medium_96 {
+        width: 100rem;
+        height: 80rem;
+    }
+
+    .Tab_base_cd:hover {
+        background-color: rgba(255,85,0, 0.06);
+    }
+
+    .Tab_base__active_7e {
+        background-color: rgba(255,85,0, 0.06);
         cursor: default;
     }
 
-    .MenuItem_base__leftIndent_f7 {
-        padding-left: 16rem;
-    }
-
-    @media (min-width: 1366px) and (min-height: 768px) {
-
-    .MenuItem_base__leftIndent_f7 {
-            padding-left: 32rem
-    }
-    }
-
-    @media (min-width: 3840px) and (min-height: 2160px) {
-
-    .MenuItem_base__leftIndent_f7 {
-            padding-left: 56rem
-    }
-    }
-
-    .MenuItem_base__rightIndent_d4 {
-        padding-right: 40rem;
-    }
-
-    @media (min-width: 1600px) and (min-height: 900px) {
-
-    .MenuItem_base__rightIndent_d4 {
-            padding-right: 56rem
-    }
-    }
-
-    @keyframes MenuItem_fade-out_98 {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-.MenuItem_background_b6 {
-    background-color: rgba(0,0,0, .4);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    transition: background-color .5s ease-in-out;
-}
-
-.MenuItem_base__active_59 .MenuItem_background_b6 {
-        background-color: rgba(0,0,0, .4);
-    }
-
-.MenuItem_base__leftIndent_f7 .MenuItem_background_b6 {
-        left: 16rem;
-    }
-
-@media (min-width: 1366px) and (min-height: 768px) {
-
-.MenuItem_base__leftIndent_f7 .MenuItem_background_b6 {
-            left: 32rem
-    }
-    }
-
-@media (min-width: 3840px) and (min-height: 2160px) {
-
-.MenuItem_base__leftIndent_f7 .MenuItem_background_b6 {
-            left: 56rem
-    }
-    }
-
-.MenuItem_base__rightIndent_d4 .MenuItem_background_b6 {
-        right: 40rem;
-        left: 0;
-    }
-
-@media (min-width: 1600px) and (min-height: 900px) {
-
-.MenuItem_base__rightIndent_d4 .MenuItem_background_b6 {
-            right: 56rem
-    }
-    }
-
-.MenuItem_base__expanded_6d .MenuItem_background_b6 {
-        background-color: rgba(0,0,0, .8);
-    }
-
-.MenuItem_selection_43 {
-    border: 1rem solid transparent;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    transition: background-color .16s ease-in-out,
-        border-color .5s ease-in-out;
-}
-
-.MenuItem_base_a3:hover .MenuItem_selection_43 {
-        background-color: rgba(255,85,0, .06);
-    }
-
-.MenuItem_base__active_59 .MenuItem_selection_43 {
-        border-color: rgba(255,85,0, .1);
-        border-radius: 2rem;
-        background-color: rgba(255,85,0, .06);
-    }
-
-.MenuItem_base__leftIndent_f7 .MenuItem_selection_43 {
-        left: 16rem;
-    }
-
-@media (min-width: 1366px) and (min-height: 768px) {
-
-.MenuItem_base__leftIndent_f7 .MenuItem_selection_43 {
-            left: 32rem
-    }
-    }
-
-@media (min-width: 3840px) and (min-height: 2160px) {
-
-.MenuItem_base__leftIndent_f7 .MenuItem_selection_43 {
-            left: 56rem
-    }
-    }
-
-.MenuItem_base__rightIndent_d4 .MenuItem_selection_43 {
-        right: 40rem;
-        left: 0;
-    }
-
-@media (min-width: 1600px) and (min-height: 900px) {
-
-.MenuItem_base__rightIndent_d4 .MenuItem_selection_43 {
-            right: 56rem
-    }
-    }
-
-.MenuItem_stateHighlight_55 {
-    width: 337rem;
-    height: 168rem;
-    background: url('R.images.gui.maps.icons.components.tabs.tab.highlight') 50% 50% / contain no-repeat;
+.Tab_highlight_b6 {
+    width: 0rem;
+    height: 0rem;
+    background: url('R.images.gui.maps.icons.components.tabs.tab.highlight') no-repeat center / contain;
     opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: opacity .5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, width 0.3s ease-out;
+    transition-delay: 0.1s;
     pointer-events: none;
 }
 
-.MenuItem_base__active_59 .MenuItem_stateHighlight_55 {
+.Tab_base__active_7e .Tab_highlight_b6 {
+        width: 338rem;
+        height: 168rem;
         opacity: 1;
     }
 
-.MenuItem_textHolder_1b {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-    transition: width .3s ease-in-out;
-}
-
-.MenuItem_textHolder__expanded_45 {
-        max-width: 92rem;
-    }
-
-.MenuItem_textHolder__extraExpanded_4b {
-        max-width: 120rem;
-    }
-
-.MenuItem_text_5b {
-    color: #e9e2bf;
-    font-size: 12rem;
-    line-height: 1.2;
-    opacity: 0;
-    left: 0;
-    transition: opacity .5s ease-in-out .16s,
-        color .16s ease-in-out,
-        text-shadow .16s ease-in-out;
-}
-
-.MenuItem_base_a3:hover .MenuItem_text_5b {
-        color: #fd9;
-        opacity: 1;
-    }
-
-.MenuItem_base__extra_e9 .MenuItem_text_5b {
-        font-size: 14rem;
-        line-height: 1.4;
-    }
-
-.MenuItem_text__expanded_32 {
-        padding-right: 20rem;
-        opacity: .6;
-    }
-
-.MenuItem_text__extraExpanded_c6 {
-        padding-right: 24rem;
-    }
-
-.MenuItem_text__activeExpanded_40 {
-        color: #fd9;
-        text-shadow: 0 0 15px #e52,
-            0 0 8px #ff2a00,
-            0 0 4px rgba(255, 127, 0, .25);
-        opacity: 1;
-    }
-
-.MenuItem_container_c1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 68rem;
-    height: 52rem;
-    position: relative;
-}
-
-.MenuItem_base__extra_e9 .MenuItem_container_c1 {
-        width: 100rem;
-        height: 80rem;
-    }
-
-.MenuItem_accentItem_d0 {
-    width: 100%;
-    height: 1rem;
-    background-image: linear-gradient(to right, transparent, rgba(200, 90, 29, .5) 30%, #ab592e 40%, #fec17b 50%, #ab592e 60%, rgba(200, 90, 29, .5) 70%, transparent);
-    opacity: 0;
-    position: absolute;
-    left: 50%;
-    z-index: 1;
-    transform: translateX(-50%);
-}
-
-.MenuItem_accentItem__top_05 {
-        top: 0;
-    }
-
-.MenuItem_accentItem__bottom_99 {
-        bottom: 0;
-    }
-
-.MenuItem_base__active_59 .MenuItem_accentItem_d0 {
-        opacity: 1;
-    }
-
-.MenuItem_imageHolder_f9 {
-    position: relative;
-}
-
-.MenuItem_icon_0a {
-    width: 40rem;
-    height: 40rem;
-    background-position: 50% 50%;
+.Tab_icon_28 {
+    background-repeat: no-repeat;
     background-size: contain;
-    filter: grayscale(50%) sepia(1);
-    position: relative;
-    z-index: 1;
-    transition: filter .5s ease-in-out;
+    filter: grayscale(.5) sepia(1);
+    pointer-events: none;
 }
 
-.MenuItem_base__extra_e9 .MenuItem_icon_0a {
+.Tab_icon__small_48 {
+        width: 32rem;
+        height: 32rem;
+    }
+
+.Tab_icon__medium_73 {
         width: 64rem;
         height: 64rem;
     }
 
-.MenuItem_base_a3:hover .MenuItem_icon_0a,
-    .MenuItem_icon__active_10 {
+.Tab_base_cd:hover .Tab_icon_28,
+    .Tab_base__active_7e .Tab_icon_28 {
         filter: grayscale(0) sepia(0);
     }
 
-.MenuItem_counterHolder_31 {
+.Tab_notification_86 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 14rem;
+    height: 14rem;
+    padding: 0 3rem 2rem;
+    border: 1rem solid #fe4e0f;
+    border-radius: 999rem;
+    box-shadow: 0 0 0 1rem rgba(0,0,0, 0.3), 0 0 6rem rgba(254,103,0, 0.2), 0 0 12rem 4rem rgba(249,0,0, 0.3);
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    color: #FFFFFF;
+    font-size: 12rem;
+    text-align: center;
     position: absolute;
-    top: 2rem;
-    right: -6rem;
-    z-index: 2;
+    top: 12rem;
+    right: 12rem;
+    z-index: 5;
+    transform: translateY(-50%);
+    transition: right 0.5s ease-in-out;
     pointer-events: none;
 }
 
-.MenuItem_base__extra_e9 .MenuItem_counterHolder_31 {
-        top: 4rem;
-        right: -6rem;
+.Tab_notification__symbol_9b {
+        width: 14rem;
     }
 
-.MenuItem_notificationHolder_de {
-    top: 4rem;
-    right: -4rem;
-}
+.Tab_notification__symbol_9b.Tab_notification__small_92 {
+            width: 13rem;
+        }
 
-.MenuItem_base__extra_e9 .MenuItem_notificationHolder_de {
-        top: 7rem;
-        right: -3rem;
+.Tab_notification__small_92 {
+        min-width: 13rem;
+        height: 13rem;
+        padding: 0 3rem 2rem;
+        font-size: 10rem;
     }
 
-.MenuItem_arrow_61 {
-    width: 7rem;
-    height: 12rem;
-    margin-top: -6rem;
-    background: url('R.images.gui.maps.icons.components.tabs.tab.arrow') no-repeat center / contain;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    right: -17rem;
-    transition: opacity .5s ease-in-out;
-    pointer-events: none;
-}
-
-.MenuItem_base__active_59 .MenuItem_arrow_61 {
-        opacity: 1;
+.Tab_notification__dot_51 {
+        min-width: 0;
+        padding: 0;
     }
 
-.MenuItem_base__rightIndent_d4 .MenuItem_arrow_61 {
-        right: 23rem;
-    }
+.Tab_notification__dot_51.Tab_notification__small_92 {
+            width: 6rem;
+            height: 6rem;
+        }
 
-@media (min-width: 1600px) and (min-height: 900px) {
+.Tab_notification__dot_51.Tab_notification__medium_e6,
+        .Tab_notification__dot_51.Tab_notification__large_6b {
+            width: 8rem;
+            height: 8rem;
+        }
 
-.MenuItem_base__rightIndent_d4 .MenuItem_arrow_61 {
-            right: 39rem
-    }
-    }
-
-.Tabs_base_d9 {
+.VerticalTabs_base_41 {
     display: flex;
     flex-direction: column;
-    flex: 1;
-}
-
-    .Tabs_base__vertical_c0 {
-        flex-direction: row;
-    }
-
-.Tabs_list_0a {
-    display: flex;
     position: relative;
 }
 
-.Tabs_list__centered_dc {
-        justify-content: center;
-        align-items: center;
-    }
-
-.Tabs_wrapper_2d {
-    display: flex;
+.VerticalTabs_title_8c {
+    padding: 0 5rem 10rem;
+    font-size: 14rem;
+    text-align: center;
 }
 
-.Tabs_wrapper__centered_d8 {
-        justify-content: center;
-        align-items: center;
+.VerticalTabs_group_08 {
+    padding: 10rem 0;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.VerticalTabs_group__small_69 {
+        width: 68rem;
     }
 
-.Tabs_wrapper__vertical_a5 {
-        flex-direction: column;
+.VerticalTabs_group__medium_68 {
+        width: 100rem;
     }
+
+.VerticalTabs_group_08 + .VerticalTabs_group_08 {
+        margin-top: 10rem;
+    }
+
+.Tabs_icon_78 {
+    width: 40rem;
+    height: 40rem;
+    filter: grayscale(.75) sepia(0);
+    transition: .2s filter;
+}
+    .mediaMedium .Tabs_icon_78 {
+        width: 64rem;
+        height: 64rem;
+}
 
 .Spinner_base_87 {
     width: 260rem;
@@ -719,20 +415,20 @@ body {
     }
 }
 
-.Heading_base_e6 {
+.Heading_base_74 {
     color: #FFFFFF;
     font-size: 36rem;
     font-weight: 700;
     line-height: 1.1;
     text-align: center;
 }
-    .mediaMedium .Heading_base_e6 {
+    .mediaMedium .Heading_base_74 {
         color: #FFFFFF;
         font-size: 56rem;
         font-weight: 700;
         line-height: 1.1;
 }
-    .mediaLarge .Heading_base_e6 {
+    .mediaExtraLarge .Heading_base_74 {
         color: #FFFFFF;
         font-size: 73rem;
         font-weight: 700;
@@ -941,133 +637,58 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .6;
     }
 
-.ErrorState_base_ad {
+.ErrorState_base_eb {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.ErrorState_titleContainer_b1 {
+.ErrorState_titleContainer_ca {
     display: flex;
     align-items: center;
     margin-bottom: 15rem;
+    position: relative;
 }
 
-.ErrorState_alertIcon_54 {
+.ErrorState_alertIcon_76 {
     width: 24rem;
     height: 24rem;
-    margin-right: 6rem;
     background: url('R.images.gui.maps.icons.library.alertBigIcon') no-repeat center / cover;
+    position: absolute;
+    right: 100%;
+    transform: translateX(-6rem);
 }
 
-.ErrorState_title_d2 {
+.ErrorState_title_c1 {
     color: #FEFEEC;
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
 }
 
-.ErrorState_description_d6 {
-    color: #8C8C7E;
+.ErrorState_description_d9 {
+    color: rgba(255,255,255, 0.6);
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
 }
 
-.ErrorState_buttonWrapper_c5 {
+.ErrorState_buttonWrapper_5e {
     margin-top: 28rem;
 }
 
-.ErrorState_button_76 {
+.ErrorState_button_23 {
     min-width: 160rem;
     min-height: 24rem;
 }
 
-.mediaMedium .ErrorState_button_76 {
+.mediaMedium .ErrorState_button_23 {
         min-height: 32rem;
-}
-
-.FormatText_base_d0 {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.LastUpdateNote_base_cf {
-    display: flex;
-    align-items: center;
-}
-
-.LastUpdateNote_infoIcon_de {
-    width: 24rem;
-    height: 24rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.infoIcon') no-repeat center / cover;
-}
-
-.ActiveSeasonState_base_fd {
-    display: flex;
-    align-items: center;
-}
-
-.ActiveSeasonState_calendarIcon_d6 {
-    width: 21rem;
-    height: 21rem;
-    margin-right: 8rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.calendar') no-repeat center / cover;
-    transform: translateY(2rem);
-}
-
-.mediaLarge .ActiveSeasonState_calendarIcon_d6 {
-        width: 20rem;
-        height: 22rem;
-        background-image: url('R.images.gui.maps.icons.comp7.icons.calendarBig');
-}
-
-.ActiveSeasonState_divider_b5 {
-    width: 2rem;
-    height: 17rem;
-    margin: 2rem 8rem 0;
-    background-color: rgba(255,255,255, .5);
-}
-
-.mediaLarge .ActiveSeasonState_divider_b5 {
-        height: 29rem;
-}
-
-.ScheduleSubheading_base_d0 {
-    color: #FFFFFF;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    display: flex;
-    align-items: center;
-}
-    .mediaLarge .ScheduleSubheading_base_d0 {
-        color: #FFFFFF;
-        font-size: 24rem;
-        font-weight: 400;
-        line-height: 1.2;
-}
-
-.SubheadingContainer_base_e2 {
-    position: relative;
-}
-
-.SubheadingContainer_updateInfo_4f {
-    position: absolute;
-    right: -38rem; /* visual fix for matching with scroll */
-    bottom: 0;
-}
-
-.SubheadingContainer_updateInfoText_07 {
-    color: rgba(255,255,255, .6);
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
 }
 
 /* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
-.CurrentPositionPanel_base_99 {
+.CurrentPositionPanel_base_92 {
     color: #CBAC77;
     font-size: 16rem;
     font-weight: 400;
@@ -1082,34 +703,34 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 /* TODO: add state to HasRecordsState and move out this css, and set it only when scroll position doesn't math with personalPositionDistance */
-.CurrentPositionPanel_base__active_58 {
+.CurrentPositionPanel_base__active_8c {
         transition: background-color .3s cubic-bezier(.07, .82, .17, 1);
         cursor: pointer;
     }
-.CurrentPositionPanel_base__active_58:hover {
+.CurrentPositionPanel_base__active_8c:hover {
             background-color: rgba(255, 161, 0, .15);
         }
-.CurrentPositionPanel_cell_17 {
+.CurrentPositionPanel_cell_be {
     display: flex;
     text-align: center;
 }
-.CurrentPositionPanel_cell__order_6e {
+.CurrentPositionPanel_cell__order_be {
         justify-content: center;
         width: 94rem;
     }
-.CurrentPositionPanel_cell__currentPosition_71 {
+.CurrentPositionPanel_cell__currentPosition_c5 {
         flex: 1;
         padding-left: 35rem;
     }
-.CurrentPositionPanel_cell__battles_4e {
+.CurrentPositionPanel_cell__battles_8f {
         justify-content: center;
         width: 166rem;
     }
-.CurrentPositionPanel_cell__score_64 {
+.CurrentPositionPanel_cell__score_d2 {
         justify-content: center;
         width: 166rem;
     }
-.CurrentPositionPanel_screwIcon_2b {
+.CurrentPositionPanel_screwIcon_8f {
     --screwOffset: 15rem;
     width: 5rem;
     height: 5rem;
@@ -1118,13 +739,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 50%;
     transform: translateY(-50%);
 }
-.mediaLarge .CurrentPositionPanel_screwIcon_2b {
+.mediaLarge .CurrentPositionPanel_screwIcon_8f {
         --screwOffset: 20rem;
 }
-.CurrentPositionPanel_screwIcon__left_ee {
+.CurrentPositionPanel_screwIcon__left_cb {
         left: var(--screwOffset);
     }
-.CurrentPositionPanel_screwIcon__right_02 {
+.CurrentPositionPanel_screwIcon__right_6e {
         right: var(--screwOffset);
     }
 
@@ -1179,7 +800,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .VerticalBar_thumb_32 {
-    display: none;
+    display: flex;
     flex: 0 0 13rem;
     width: 13rem;
     height: 100%;
@@ -1233,14 +854,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex: 1;
 }
 
-.RankEmblem_base_d5 {
+.RankEmblem_base_ec {
     width: var(--imageSize);
     height: var(--imageSize);
     background: no-repeat center / cover;
 }
 
 
-.RowsDivider_base_52 {
+.RowsDivider_base_0a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1248,7 +869,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: url('R.images.gui.maps.icons.comp7.icons.rowsDivider') no-repeat bottom center / 840rem 70rem;
 }
 
-.RowsDivider_rankText_02 {
+.RowsDivider_rankText_96 {
     color: #F2F2F7;
     font-size: 18rem;
     font-weight: 700;
@@ -1257,7 +878,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.3;
 }
 
-.Header_base_cc {
+.Header_base_83 {
     color: rgba(255,255,255, .6);
     font-size: 14rem;
     font-weight: 400;
@@ -1265,29 +886,29 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     height: 30rem;
 }
-.Header_separator_fa {
+.Header_separator_14 {
     width: 2rem;
     height: 100%;
     background: url('R.images.gui.maps.icons.comp7.icons.header_separator') no-repeat center / cover;
 }
-.Header_cell_05 {
+.Header_cell_0e {
     display: flex;
     align-items: center;
 }
-.Header_cell__order_70 {
+.Header_cell__order_7d {
         justify-content: center;
         width: 94rem;
         padding-left: 1rem;
     }
-.Header_cell__player_65 {
+.Header_cell__player_c5 {
         flex: 1;
         padding-left: 35rem;
     }
-.Header_cell__battles_4c {
+.Header_cell__battles_0d {
         justify-content: center;
         width: 166rem;
     }
-.Header_cell__score_4d {
+.Header_cell__score_3e {
         justify-content: center;
         width: 166rem;
     }
@@ -1408,8 +1029,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         background-image: url('R.images.gui.maps.icons.library.eye_48x48.png');
     }
 
-.Row_base_12 {
-    color: #C9C9B6;
+.Row_base_fc {
+    color: rgba(255,255,255, .7);
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -1418,69 +1039,70 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     border-bottom: 1rem solid rgba(255,255,255, .07);
 }
 
-    .Row_base__personal_3e {
+    .Row_base__personal_1c {
         padding-left: 0;
         border: 1rem solid rgba(255, 161, 0, .2);
         background-color: rgba(255, 161, 0, .1);
         color: #CBAC77;
         position: relative;
     }
-.Row_order_5e {
+.Row_order_30 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 94rem;
     background: no-repeat center / contain;
+    color: rgba(255,255,255, .4);
 }
-.Row_order__first_76 {
+.Row_order__first_53 {
         background-image: url('R.images.gui.maps.icons.comp7.icons.first');
     }
-.Row_order__second_cc {
+.Row_order__second_cb {
         background-image: url('R.images.gui.maps.icons.comp7.icons.second');
     }
-.Row_order__third_3f {
+.Row_order__third_c6 {
         background-image: url('R.images.gui.maps.icons.comp7.icons.third');
     }
-.Row_playerContainer_0b {
+.Row_playerContainer_9e {
     display: flex;
     flex: 1;
     padding-left: 25rem;
 }
-.Row_player_79 {
+.Row_player_f9 {
     display: flex;
     align-items: center;
     height: 100%;
     padding: 0 10rem;
 }
-.Row_clanTag_0b {
+.Row_clanTag_73 {
     color: var(--clanTagColor);
     mix-blend-mode: screen;
 }
-.Row_battles_77 {
+.Row_battles_61 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 166rem;
 }
-.Row_score_81 {
+.Row_score_55 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 166rem;
 }
 
-.Leaderboard_base_53 {
+.Leaderboard_base_ec {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
 }
-.Leaderboard_content_ff {
+.Leaderboard_content_a5 {
     display: flex;
     flex: 1 1;
     position: relative;
 }
-.Leaderboard_shadowsContainer_e5 {
+.Leaderboard_shadowsContainer_bc {
     display: flex;
     width: 100%;
     height: 176rem;
@@ -1489,68 +1111,64 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
     pointer-events: none;
 }
-.Leaderboard_shadowsContainer__bottom_40 {
+.Leaderboard_shadowsContainer__bottom_b4 {
         top: auto;
         bottom: -81rem;
         transform: rotate(180deg);
     }
-.Leaderboard_shadow_74 {
+.Leaderboard_shadow_3f {
     height: 100%;
     background: no-repeat center / contain;
 }
-.Leaderboard_shadow__left_72 {
+.Leaderboard_shadow__left_ee {
         width: 150rem;
         background-image: url('R.images.gui.maps.icons.comp7.icons.shadow_left_side');
     }
-.Leaderboard_shadow__center_36 {
+.Leaderboard_shadow__center_37 {
         flex: 1;
         background-image: url('R.images.gui.maps.icons.comp7.icons.shadow_middle');
         background-repeat: repeat;
     }
-.Leaderboard_shadow__right_37 {
+.Leaderboard_shadow__right_ee {
         width: 150rem;
         background-image: url('R.images.gui.maps.icons.comp7.icons.shadow_right_side');
     }
-.Leaderboard_area_e8 {
+.Leaderboard_area_c7 {
     width: 100%;
 }
-.Leaderboard_row_d4 {
+.Leaderboard_row_06 {
     height: var(--rowHeight);
 }
-.Leaderboard_bar_b8 {
+.Leaderboard_bar_69 {
     padding-left: 20rem;
 }
-.Leaderboard_rowsDivider_01 {
+.Leaderboard_rowsDivider_2c {
     height: var(--rowsDividerHeight);
     border-bottom: 1rem solid rgba(255,255,255, .07);
 }
 
-.Pagination_base_44 {
+.Pagination_base_49 {
     display: flex;
     justify-content: center;
 }
-
-.Pagination_pageButton_e8 {
+.Pagination_pageButton_27 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 34rem;
     height: 20rem;
     border: 1rem solid transparent;
-    color: rgba(140,140,126, .5);
+    color: rgba(255,255,255, .5);
     font-size: 14rem;
 }
-
-.Pagination_pageButton_e8 + .Pagination_pageButton_e8 {
+.Pagination_pageButton_27 + .Pagination_pageButton_27 {
         margin-left: 10rem;
     }
-
-.Pagination_pageButton__active_93,
-    .Pagination_pageButton__inactive_a6 {
+.Pagination_pageButton__active_0b,
+    .Pagination_pageButton__inactive_4c {
         cursor: pointer;
     }
-
-.Pagination_pageButton__active_93 {
+.Pagination_pageButton__active_0b {
         border-image-source: url('R.images.gui.maps.icons.comp7.icons.pageButtonBg');
         border-image-slice: 1 fill;
         box-shadow: 0 0 15rem #ee5003,
@@ -1558,54 +1176,45 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         color: #e9e2bf;
         transition: box-shadow .16s ease-in-out;
     }
-
-.Pagination_pageButton__inactive_a6 {
-        border-color: rgba(140,140,126, .15);
+.Pagination_pageButton__inactive_4c {
+        border-color: rgba(255,255,255, .15);
         border-radius: 2rem;
         transition: border-color .16s ease-out, color .16s ease-out;
     }
-
-.Pagination_pageButton__inactive_a6:hover {
-            border-color: rgba(140,140,126, .3);
-            color: rgba(140,140,126, 1);
+.Pagination_pageButton__inactive_4c:hover {
+            border-color: rgba(255,255,255, .3);
+            color: rgba(255,255,255, 1);
         }
-
-.Pagination_pageButton__disabled_f6 {
+.Pagination_pageButton__disabled_e4 {
         cursor: default;
     }
-
-.Pagination_pageValue_29 {
+.Pagination_pageValue_b2 {
     margin-top: -.5rem;
 }
-
-.Pagination_control_2c {
+.Pagination_control_4f {
     height: 20rem;
     padding: 0 10rem;
-    border: 1rem solid rgba(140,140,126, .15);
+    border: 1rem solid rgba(255,255,255, .15);
     border-radius: 2rem;
-    color: rgba(140,140,126, .5);
+    color: rgba(255,255,255, .5);
     font-size: 14rem;
 }
-
-.Pagination_control__active_80 {
+.Pagination_control__active_25 {
         transition: border-color .16s ease-in, color .16s ease-in;
         cursor: pointer;
     }
-
-.Pagination_control__active_80:hover {
-            border-color: rgba(140,140,126, .3);
-            color: rgba(140,140,126, 1);
+.Pagination_control__active_25:hover {
+            border-color: rgba(255,255,255, .3);
+            color: rgba(255,255,255, 1);
         }
-
-.Pagination_control__prev_e7 {
+.Pagination_control__prev_8e {
         margin-right: 10rem;
     }
-
-.Pagination_control__next_cc {
+.Pagination_control__next_86 {
         margin-left: 10rem;
     }
 
-.HasRecordsState_base_4d {
+.HasRecordsState_base_bb {
     --offset: 15rem;
     display: flex;
     flex-direction: column;
@@ -1613,22 +1222,268 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 100%;
 }
 
-    .mediaMedium .HasRecordsState_base_4d {
+    .mediaMedium .HasRecordsState_base_bb {
         --offset: 20rem;
 }
 
-    .HasRecordsState_base__withoutPagination_58 {
+    .HasRecordsState_base__withoutPagination_ad {
         padding-bottom: calc(var(--offset)*2 + 20rem);
     }
-
-.HasRecordsState_tableContainer_1b {
+.HasRecordsState_tableContainer_02 {
     flex: 1 1;
     margin-bottom: var(--offset);
 }
-
-.HasRecordsState_pagination_7f {
+.HasRecordsState_pagination_cb {
     padding-top: var(--offset);
     padding-bottom: var(--offset);
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+@keyframes RankTabs_fadeIn_42 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes RankTabs_fadeInThreeQuarters_0c {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+@keyframes RankTabs_fadeInHalf_ca {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+@keyframes RankTabs_fadeOut_3e {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes RankTabs_fadeInWithScale_d0 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes RankTabs_slideUp_d1 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes RankTabs_scale_a5 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes RankTabs_raysAppearance_39 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+@keyframes RankTabs_rotate_b0 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes RankTabs_reverse-rotate_85 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes RankTabs_glowAppearance_c7 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes RankTabs_highlightAppearance_67 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+@keyframes RankTabs_blink_8a {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes RankTabs_slideUpIn_c8 {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.RankTabs_base_c4 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.RankTabs_line_0e {
+    flex: 1 1;
+    height: 2rem;
+    border-radius: 4rem;
+    opacity: .15;
+}
+.RankTabs_line__toRight_43 {
+        background: linear-gradient(270deg, #F2F2F7, transparent);
+    }
+.RankTabs_line__toLeft_cd {
+        background: linear-gradient(90deg, #F2F2F7, transparent);
+    }
+.RankTabs_ranksContainer_86 {
+    display: flex;
+    align-items: center;
+    padding: 0 76rem;
+}
+.RankTabs_dividersDot_b9 {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #F2F2F7;
+    opacity: .2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.RankTabs_rank_6f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.RankTabs_rank_6f + .RankTabs_rank_6f {
+        margin-left: 70rem;
+    }
+.RankTabs_rankEmblem_d6 {
+    filter: brightness(1);
+    cursor: pointer;
+}
+.RankTabs_rankEmblem_d6:hover {
+        filter: brightness(1.15);
+
+        /* transition must be here for avoiding of rankEmblem blink on 1st render */
+        transition: filter .5s cubic-bezier(.07, .82, .17, 1);
+    }
+.RankTabs_rank__disabled_55 .RankTabs_rankEmblem_d6 {
+        opacity: .3;
+        cursor: default;
+    }
+.RankTabs_rank__disabled_55 .RankTabs_rankEmblem_d6:hover {
+            filter: brightness(1);
+        }
+.RankTabs_label_cc {
+    color: #F2F2F7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    white-space: nowrap;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+}
+.RankTabs_rank__active_38 .RankTabs_label_cc {
+        opacity: 1;
+
+        /* transition must be here for avoiding of blink of label on 1st render */
+        transition: opacity .5s linear;
+    }
+.RankTabs_rankTabHighlight_c1 {
+    width: 223rem;
+    height: 164rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.rankTabHighlight') no-repeat center / cover;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.RankTabs_rank__active_38 .RankTabs_rankTabHighlight_c1 {
+        opacity: 1;
+        transition: opacity .5s linear;
+    }
+
+.HasRecordsStateContainer_base_ee {
+    height: 100%;
+}
+
+.HasRecordsStateContainer_content_b4 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    padding-top: 20rem;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .FormatTextWithColorTags_blackReal_3c {
@@ -1723,45 +1578,47 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     color: #A29B70;
 }
 
-.NoRecordsState_base_0e {
+.NoRecordsState_base_9b {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.NoRecordsState_imageContainer_cf {
-    width: 500rem;
-    height: 350rem;
+.NoRecordsState_imageContainer_13 {
+    width: 420rem;
+    height: 260rem;
+    margin-bottom: 20rem;
     position: relative;
 }
 
-.NoRecordsState_image_90 {
+.NoRecordsState_image_fe {
     width: 540rem;
     height: 380rem;
     background: url('R.images.gui.maps.icons.comp7.icons.leaderboardRanks') no-repeat center / cover;
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     pointer-events: none;
 }
 
-.NoRecordsState_title_ae {
+.NoRecordsState_title_f4 {
     color: #FFFFFF;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
-.mediaMedium .NoRecordsState_title_ae {
+.mediaMedium .NoRecordsState_title_f4 {
         color: #FFFFFF;
         font-size: 22rem;
         font-weight: 700;
         line-height: 1.2;
 }
 
-.NoRecordsState_subtitle_a0 {
-    color: #8C8C7E;
+.NoRecordsState_subtitle_5b {
+    color: rgba(255,255,255, 0.6);
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -1770,281 +1627,81 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: 10rem;
 }
 
-.mediaMedium .NoRecordsState_subtitle_a0 {
+.mediaMedium .NoRecordsState_subtitle_5b {
         margin-top: 12rem;
 }
 
-@keyframes RankTabs_fadeIn_72 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes RankTabs_fadeInThreeQuarters_54 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: .75;
-    }
-}
-
-@keyframes RankTabs_fadeInHalf_d5 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: .5;
-    }
-}
-
-@keyframes RankTabs_fadeOut_9a {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes RankTabs_fadeInWithScale_03 {
-    0% {
-        opacity: 0;
-        transform: scale(1.2);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-@keyframes RankTabs_slideUp_1f {
-    0% {
-        opacity: 0;
-        transform: translateY(50%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes RankTabs_scale_72 {
-    0% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes RankTabs_raysAppearance_47 {
-    0% {
-        opacity: 0;
-        transform: translateY(20rem);
-    }
-
-    100% {
-        opacity: .2;
-        transform: translateY(0);
-    }
-}
-
-@keyframes RankTabs_rotate_b0 {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes RankTabs_reverse-rotate_a8 {
-    from {
-        transform: rotate(360deg);
-    }
-
-    to {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes RankTabs_glowAppearance_25 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes RankTabs_highlightAppearance_24 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: .8;
-    }
-}
-
-/* delay should be set always separately only for appearance effect, not hiding */
-
-/* should be percentage of screen width */
-
-.RankTabs_base_d8 {
+.LastUpdateNote_base_7f {
     display: flex;
     align-items: center;
-    width: 100%;
-    position: relative;
 }
 
-.RankTabs_line_c5 {
-    flex: 1 1;
-    height: 2rem;
-    border-radius: 4rem;
-    opacity: .15;
+.LastUpdateNote_infoIcon_5c {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.infoIcon') no-repeat center / cover;
 }
 
-.RankTabs_line__toRight_fe {
-        background: linear-gradient(270deg, #F2F2F7, transparent);
-    }
-
-.RankTabs_line__toLeft_2a {
-        background: linear-gradient(90deg, #F2F2F7, transparent);
-    }
-
-.RankTabs_ranksContainer_8f {
+.ActiveSeasonState_base_55 {
     display: flex;
     align-items: center;
-    padding: 0 76rem;
 }
 
-.RankTabs_dividersDot_6c {
+.ActiveSeasonState_calendarIcon_df {
+    width: 21rem;
+    height: 21rem;
+    margin-right: 8rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.calendar') no-repeat center / cover;
+    transform: translateY(2rem);
+}
+
+.mediaLarge .ActiveSeasonState_calendarIcon_df {
+        width: 14rem;
+        height: 16rem;
+        background-image: url('R.images.gui.maps.icons.comp7.icons.calendar_14x16');
+}
+
+.ActiveSeasonState_divider_5b {
     width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background-color: #F2F2F7;
-    opacity: .2;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 17rem;
+    margin: 2rem 12rem 0;
+    background-color: rgba(255,255,255, .5);
 }
 
-.RankTabs_rank_49 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.ScheduleSubheading_base_f7 {
+    color: #FFFFFF;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+}
+    .mediaLarge .ScheduleSubheading_base_f7 {
+        color: #FFFFFF;
+        font-size: 20rem;
+        font-weight: 400;
+        line-height: 1.2;
+}
+
+.SubheadingContainer_base_a6 {
     position: relative;
 }
 
-.RankTabs_rank_49 + .RankTabs_rank_49 {
-        margin-left: 70rem;
-    }
-
-.RankTabs_rankEmblem_a1 {
-    filter: brightness(1);
-    cursor: pointer;
+.SubheadingContainer_updateInfo_9a {
+    position: absolute;
+    right: -38rem; /* visual fix for matching with scroll */
+    bottom: 0;
 }
 
-.RankTabs_rankEmblem_a1:hover {
-        filter: brightness(1.15);
-
-        /* transition must be here for avoiding of rankEmblem blink on 1st render */
-        transition: filter .5s cubic-bezier(.07, .82, .17, 1);
-    }
-
-.RankTabs_rank__disabled_c0 .RankTabs_rankEmblem_a1 {
-        opacity: .3;
-        cursor: default;
-    }
-
-.RankTabs_rank__disabled_c0 .RankTabs_rankEmblem_a1:hover {
-            filter: brightness(1);
-        }
-
-.RankTabs_label_c4 {
-    color: #F2F2F7;
+.SubheadingContainer_updateInfoText_40 {
+    color: rgba(255,255,255, .6);
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
-    white-space: nowrap;
-    opacity: 0;
-    position: absolute;
-    top: 100%;
 }
 
-.RankTabs_rank__active_09 .RankTabs_label_c4 {
-        opacity: 1;
-
-        /* transition must be here for avoiding of blink of label on 1st render */
-        transition: opacity .5s linear;
-    }
-
-.RankTabs_rankTabHighlight_23 {
-    width: 223rem;
-    height: 164rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.rankTabHighlight') no-repeat center / cover;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-}
-
-.RankTabs_rank__active_09 .RankTabs_rankTabHighlight_23 {
-        opacity: 1;
-        transition: opacity .5s linear;
-    }
-
-.SuccessState_base_6e {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-    .SuccessState_base__noRecords_22 {
-        overflow: hidden;
-    }
-
-.SuccessState_content_e3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1 1;
-}
-
-.SuccessState_base__hasRecords_e6 .SuccessState_content_e3 {
-        margin-top: 20rem;
-    }
-
-.SuccessState_base__noRecords_22 .SuccessState_content_e3 {
-        transform: translateY(-12%);
-    }
-
-.mediaLarge .SuccessState_base__noRecords_22 .SuccessState_content_e3 {
-            transform: translateY(-9%);
-}
-
-.mediaExtraLarge .SuccessState_base__noRecords_22 .SuccessState_content_e3 {
-            transform: translateY(-6%);
-}
-
-@keyframes LeaderboardPage_fadeIn_9e {
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+@keyframes LeaderboardPage_fadeIn_46 {
     0% {
         opacity: 0;
     }
@@ -2053,8 +1710,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-
-@keyframes LeaderboardPage_fadeInThreeQuarters_1f {
+@keyframes LeaderboardPage_fadeInThreeQuarters_98 {
     0% {
         opacity: 0;
     }
@@ -2063,8 +1719,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .75;
     }
 }
-
-@keyframes LeaderboardPage_fadeInHalf_6c {
+@keyframes LeaderboardPage_fadeInHalf_30 {
     0% {
         opacity: 0;
     }
@@ -2073,8 +1728,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .5;
     }
 }
-
-@keyframes LeaderboardPage_fadeOut_36 {
+@keyframes LeaderboardPage_fadeOut_e8 {
     0% {
         opacity: 1;
     }
@@ -2083,8 +1737,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 0;
     }
 }
-
-@keyframes LeaderboardPage_fadeInWithScale_66 {
+@keyframes LeaderboardPage_fadeInWithScale_07 {
     0% {
         opacity: 0;
         transform: scale(1.2);
@@ -2095,8 +1748,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-
-@keyframes LeaderboardPage_slideUp_73 {
+@keyframes LeaderboardPage_slideUp_9c {
     0% {
         opacity: 0;
         transform: translateY(50%);
@@ -2107,8 +1759,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-
-@keyframes LeaderboardPage_scale_8c {
+@keyframes LeaderboardPage_scale_5d {
     0% {
         transform: scale(0);
     }
@@ -2117,8 +1768,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-
-@keyframes LeaderboardPage_raysAppearance_e0 {
+@keyframes LeaderboardPage_raysAppearance_c3 {
     0% {
         opacity: 0;
         transform: translateY(20rem);
@@ -2129,8 +1779,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-
-@keyframes LeaderboardPage_rotate_43 {
+@keyframes LeaderboardPage_rotate_db {
     from {
         transform: rotate(0deg);
     }
@@ -2139,8 +1788,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(360deg);
     }
 }
-
-@keyframes LeaderboardPage_reverse-rotate_e2 {
+@keyframes LeaderboardPage_reverse-rotate_1d {
     from {
         transform: rotate(360deg);
     }
@@ -2149,8 +1797,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(0deg);
     }
 }
-
-@keyframes LeaderboardPage_glowAppearance_c8 {
+@keyframes LeaderboardPage_glowAppearance_4f {
     0% {
         opacity: 0;
     }
@@ -2159,8 +1806,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-
-@keyframes LeaderboardPage_highlightAppearance_a3 {
+@keyframes LeaderboardPage_highlightAppearance_23 {
     0% {
         opacity: 0;
     }
@@ -2169,12 +1815,31 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .8;
     }
 }
+@keyframes LeaderboardPage_blink_7e {
+    0% {
+        opacity: 1;
+    }
 
-/* delay should be set always separately only for appearance effect, not hiding */
+    50% {
+        opacity: .2;
+    }
 
-/* should be percentage of screen width */
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes LeaderboardPage_slideUpIn_37 {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
 
-.LeaderboardPage_base_29 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.LeaderboardPage_base_4a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2182,62 +1847,358 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 100%;
     color: #fff;
 }
-
-.LeaderboardPage_container_6a {
+.LeaderboardPage_animationContainer_94 {
     flex: 1 1;
     position: relative;
 }
-
-.LeaderboardPage_subHeading_da {
+.LeaderboardPage_subHeading_ae {
     display: flex;
     justify-content: center;
 }
-
-.LeaderboardPage_container_6a,
-.LeaderboardPage_subHeading_da {
+.LeaderboardPage_animationContainer_94,
+.LeaderboardPage_subHeading_ae {
     width: 840rem;
 }
-
-.mediaSmall .LeaderboardPage_container_6a, .mediaSmall .LeaderboardPage_subHeading_da {
+.mediaSmall .LeaderboardPage_animationContainer_94, .mediaSmall .LeaderboardPage_subHeading_ae {
         width: 900rem;
 }
-
-.mediaMedium .LeaderboardPage_container_6a, .mediaMedium .LeaderboardPage_subHeading_da {
+.mediaMedium .LeaderboardPage_animationContainer_94, .mediaMedium .LeaderboardPage_subHeading_ae {
         width: 1220rem;
 }
-
-.mediaLarge .LeaderboardPage_container_6a, .mediaLarge .LeaderboardPage_subHeading_da {
+.mediaLarge .LeaderboardPage_animationContainer_94, .mediaLarge .LeaderboardPage_subHeading_ae {
         width: 1320rem;
 }
-
-.LeaderboardPage_content_ae {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1;
+.LeaderboardPage_content_46 {
+    height: 100%;
     opacity: 1;
     transition: opacity .5s cubic-bezier(.07, .82, .17, 1);
 }
-
-.LeaderboardPage_base__loading_b6 .LeaderboardPage_content_ae {
+.LeaderboardPage_base__loading_12 .LeaderboardPage_content_46 {
         opacity: .3;
         pointer-events: none;
     }
-
-.LeaderboardPage_base__success_8e .LeaderboardPage_content_ae {
-        margin-top: 25rem;
-    }
-
-.mediaLarge .LeaderboardPage_base__success_8e .LeaderboardPage_content_ae {
-            margin-top: 30rem;
+.LeaderboardPage_hasRecords_9f {
+    padding-top: 25rem;
+}
+.mediaLarge .LeaderboardPage_hasRecords_9f {
+        padding-top: 30rem;
+}
+.LeaderboardPage_error_7d,
+.LeaderboardPage_noRecords_6b {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+.LeaderboardPage_noRecords_6b {
+    padding-bottom: 5%;
+}
+.mediaMedium .LeaderboardPage_noRecords_6b {
+        padding-bottom: 10%;
+}
+.LeaderboardPage_error_7d {
+    padding-bottom: 8%;
+}
+.LeaderboardPage_spinner_67 {
+    transform: translate(-50%, -70%);
 }
 
-.LeaderboardPage_base__error_32 .LeaderboardPage_content_ae {
-        justify-content: center;
-        padding-bottom: 10%;
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+.RatingScore_base_bd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.RatingScore_rating_c9 {
+    position: relative;
+}
+.RatingScore_score_33 {
+    color: #FFFFFF;
+    font-size: 44rem;
+    font-weight: 700;
+    line-height: 110%;
+}
+.mediaLarge .RatingScore_score_33 {
+        color: #FFFFFF;
+        font-size: 73rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 6rem;
+}
+.RatingScore_rankInactivity_17 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    right: -5rem;
+    transform: translateX(100%);
+}
+.RatingScore_rankInactivityCount_31 {
+    color: #E9E2BF;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-right: 2rem;
+}
+.RatingScore_rankInactivityIconContainer_32 {
+    width: 16rem;
+    height: 16rem;
+    position: relative;
+}
+.RatingScore_rankInactivityIcon_05 {
+    width: 42rem;
+    height: 43rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.timer') no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.RatingScore_title_e4 {
+    color: rgba(255,255,255, 0.6);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+@keyframes ItemFooter_fadeIn_16 {
+    0% {
+        opacity: 0;
     }
 
-.LeaderboardPage_spinner_55 {
-    transform: translate(-50%, -70%);
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes ItemFooter_fadeInThreeQuarters_73 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+@keyframes ItemFooter_fadeInHalf_2c {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+@keyframes ItemFooter_fadeOut_41 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes ItemFooter_fadeInWithScale_61 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes ItemFooter_slideUp_76 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes ItemFooter_scale_a2 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes ItemFooter_raysAppearance_c4 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+@keyframes ItemFooter_rotate_af {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes ItemFooter_reverse-rotate_d4 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes ItemFooter_glowAppearance_0e {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes ItemFooter_highlightAppearance_80 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+@keyframes ItemFooter_blink_c4 {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes ItemFooter_slideUpIn_e5 {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.ItemFooter_base_0f {
+    width: 100%;
+    height: 110rem;
+    padding-top: 2rem;
+    position: relative;
+}
+.mediaLarge .ItemFooter_base_0f {
+        height: 180rem;
+}
+.ItemFooter_background_bf {
+    width: 100%;
+    padding-bottom: 18.67%;
+    background: url('R.images.gui.maps.icons.comp7.icons.footerBg') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ItemFooter_divider_bb {
+    width: 100%;
+    height: 2rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.footerDivider') no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ItemFooter_light_79 {
+    width: 81rem;
+    height: 38rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.footerLight') no-repeat center / contain;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    pointer-events: none;
+}
+.ItemFooter_footer_e7 {
+    width: 100%;
+    height: 100%;
+}
+.ItemFooter_rankItemFooter_e6 {
+    top: 50%;
+    transform: translateY(-60%);
+}
+
+.Parallax_base_c9 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.comp7.qualificationParallax.c_6') no-repeat center / cover;
+    overflow: hidden;
+    position: relative;
+}
+.Parallax_layer_15 {
+    height: calc(100vh + 120rem);
+    background: no-repeat center / cover;
+    position: absolute;
+    top: -60rem;
+}
+.mediaExtraLargeWidth .Parallax_layer_15 {
+        height: calc(100vh + 228rem);
+        top: -114rem;
+}
+.mediaMedium .Parallax_layer_15 {
+        height: calc(100vh + 140rem);
+        top: -70rem;
+}
+.mediaLarge .Parallax_layer_15 {
+        height: calc(100vh + 168rem);
+        top: -84rem;
+}
+.mediaExtraLarge .Parallax_layer_15 {
+        height: calc(100vh + 228rem);
+        top: -114rem;
+}
+.Parallax_shadow_45 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 10, 25, .6);
+}
+.Parallax_waiting_36 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.ParallaxContainer_base_17 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .HorizontalBar_base_49 {
@@ -2339,25 +2300,27 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-bottom: 7rem;
 }
 
-.ProgressionScroll_base_14 {
+.ProgressionScroll_base_0f {
     width: 100%;
     height: 100%;
     position: relative;
 }
 
-.ProgressionScroll_areaWrapper_0f {
+.ProgressionScroll_areaWrapper_dc {
     height: 100%;
     mask-image: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);
 }
 
-.ProgressionScroll_areaContent_7c {
+.ProgressionScroll_areaContent_2f {
     display: flex;
     align-content: center;
     padding-left: var(--offset);
     padding-right: var(--offset);
 }
 
-@keyframes HighlightedRankEmblem_fadeIn_6c {
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+@keyframes HighlightedRankEmblem_fadeIn_3a {
     0% {
         opacity: 0;
     }
@@ -2366,8 +2329,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-
-@keyframes HighlightedRankEmblem_fadeInThreeQuarters_3b {
+@keyframes HighlightedRankEmblem_fadeInThreeQuarters_a4 {
     0% {
         opacity: 0;
     }
@@ -2376,8 +2338,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .75;
     }
 }
-
-@keyframes HighlightedRankEmblem_fadeInHalf_1c {
+@keyframes HighlightedRankEmblem_fadeInHalf_6e {
     0% {
         opacity: 0;
     }
@@ -2386,8 +2347,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .5;
     }
 }
-
-@keyframes HighlightedRankEmblem_fadeOut_e7 {
+@keyframes HighlightedRankEmblem_fadeOut_48 {
     0% {
         opacity: 1;
     }
@@ -2396,8 +2356,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 0;
     }
 }
-
-@keyframes HighlightedRankEmblem_fadeInWithScale_70 {
+@keyframes HighlightedRankEmblem_fadeInWithScale_a8 {
     0% {
         opacity: 0;
         transform: scale(1.2);
@@ -2408,8 +2367,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-
-@keyframes HighlightedRankEmblem_slideUp_64 {
+@keyframes HighlightedRankEmblem_slideUp_82 {
     0% {
         opacity: 0;
         transform: translateY(50%);
@@ -2420,8 +2378,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-
-@keyframes HighlightedRankEmblem_scale_20 {
+@keyframes HighlightedRankEmblem_scale_ec {
     0% {
         transform: scale(0);
     }
@@ -2430,8 +2387,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-
-@keyframes HighlightedRankEmblem_raysAppearance_af {
+@keyframes HighlightedRankEmblem_raysAppearance_a6 {
     0% {
         opacity: 0;
         transform: translateY(20rem);
@@ -2442,8 +2398,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-
-@keyframes HighlightedRankEmblem_rotate_b0 {
+@keyframes HighlightedRankEmblem_rotate_0f {
     from {
         transform: rotate(0deg);
     }
@@ -2452,8 +2407,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(360deg);
     }
 }
-
-@keyframes HighlightedRankEmblem_reverse-rotate_99 {
+@keyframes HighlightedRankEmblem_reverse-rotate_e8 {
     from {
         transform: rotate(360deg);
     }
@@ -2462,8 +2416,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(0deg);
     }
 }
-
-@keyframes HighlightedRankEmblem_glowAppearance_86 {
+@keyframes HighlightedRankEmblem_glowAppearance_2a {
     0% {
         opacity: 0;
     }
@@ -2472,8 +2425,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-
-@keyframes HighlightedRankEmblem_highlightAppearance_b9 {
+@keyframes HighlightedRankEmblem_highlightAppearance_60 {
     0% {
         opacity: 0;
     }
@@ -2482,16 +2434,34 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .8;
     }
 }
+@keyframes HighlightedRankEmblem_blink_ce {
+    0% {
+        opacity: 1;
+    }
 
-/* delay should be set always separately only for appearance effect, not hiding */
+    50% {
+        opacity: .2;
+    }
 
-/* should be percentage of screen width */
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes HighlightedRankEmblem_slideUpIn_80 {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
 
-.HighlightedRankEmblem_base_29 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.HighlightedRankEmblem_base_e2 {
     position: relative;
 }
-
-.HighlightedRankEmblem_highlights_3d {
+.HighlightedRankEmblem_highlights_cc {
     width: var(--highlightsSize);
     height: var(--highlightsSize);
     opacity: 1;
@@ -2501,51 +2471,46 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translate(-50%, -50%);
     transition: opacity .3s linear, filter .3s linear;
 }
-
-.HighlightedRankEmblem_highlights__gold_3f {
+.HighlightedRankEmblem_highlights__gold_9f {
         filter: grayscale(0%) brightness(250%);
         transition-delay: .3s;
     }
-
-.HighlightedRankEmblem_highlights__silver_cd {
+.HighlightedRankEmblem_highlights__silver_f4 {
         filter: grayscale(100%) brightness(150%);
         transition-delay: .3s;
     }
-
-.HighlightedRankEmblem_highlights__hidden_55 {
+.HighlightedRankEmblem_highlights__hidden_10 {
         filter: grayscale(0%) brightness(0%);
         opacity: 0;
     }
-
-.HighlightedRankEmblem_highlight_32 {
+.HighlightedRankEmblem_highlight_72 {
     width: 100%;
     height: 100%;
     background: no-repeat center / cover;
     position: absolute;
-    animation: HighlightedRankEmblem_highlightAppearance_b9 .3s linear .3s both, HighlightedRankEmblem_rotate_b0 80s linear infinite;
+    animation: HighlightedRankEmblem_highlightAppearance_60 .3s linear .3s both, HighlightedRankEmblem_rotate_0f 80s linear infinite;
     pointer-events: none;
 }
-
-.HighlightedRankEmblem_highlight__second_ba {
+.HighlightedRankEmblem_highlight__second_91 {
         animation-direction: normal, reverse;
     }
-
-.HighlightedRankEmblem_base__static_a0 .HighlightedRankEmblem_highlight_32 {
-        animation: HighlightedRankEmblem_highlightAppearance_b9 .3s linear .3s both;
+.HighlightedRankEmblem_base__static_87 .HighlightedRankEmblem_highlight_72 {
+        animation: HighlightedRankEmblem_highlightAppearance_60 .3s linear .3s both;
     }
-
-.HighlightedRankEmblem_rankEmblem_d0 {
+.HighlightedRankEmblem_highlights__hidden_10 .HighlightedRankEmblem_highlight_72 {
+        display: none;
+    }
+.HighlightedRankEmblem_rankEmblem_29 {
     position: relative;
 }
 
-.RankInfo_base_6e {
+.RankInfo_base_21 {
     position: relative;
 }
 
-.RankInfo_highlight_71 {
+.RankInfo_highlight_1f {
     width: 276rem;
     height: 50rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.blue_light') no-repeat center / contain;
     filter: brightness(150%);
     position: absolute;
     top: 50%;
@@ -2555,7 +2520,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     pointer-events: none;
 }
 
-.RankInfo_formattedText_a4 {
+.RankInfo_formattedText_26 {
     flex-wrap: nowrap;
     color: #FFFFFF;
     font-size: 15rem;
@@ -2563,7 +2528,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 20rem;
 }
 
-.RankItemDivider_base_e4 {
+.RankItemDivider_base_c4 {
     width: 152rem;
     height: 2rem;
     background-image: linear-gradient(270deg, rgba(91, 139, 193, 0), rgba(102, 156, 212, 1) 50%, rgba(91, 139, 193, 0));
@@ -2579,6 +2544,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 12rem;
     position: relative;
 }
+.ProgressBar_base__medium_62 {
+        height: 6rem;
+    }
 .ProgressBar_base__small_df {
         height: 2rem;
     }
@@ -2594,6 +2562,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 0;
     left: 0;
 }
+.ProgressBar_background__medium_6e {
+        height: 6rem;
+    }
 .ProgressBar_background__small_46 {
         height: 2rem;
     }
@@ -2615,6 +2586,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translate(50%, -50%);
     pointer-events: none;
 }
+
+    .ProgressBarBlink_base__medium_ec {
+        width: 42rem;
+        height: 70rem;
+    }
 
     .ProgressBarBlink_base__small_0f {
         width: 44rem;
@@ -2769,23 +2745,23 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transition-timing-function: cubic-bezier(1, 0, .75, .75);
     }
 
-.RankProgressDivisions_base_fa {
+.RankProgressDivisions_base_54 {
     display: flex;
     align-items: flex-end;
 }
 
-.RankProgressDivisions_divisionItem_57 {
+.RankProgressDivisions_divisionItem_77 {
     display: flex;
     justify-content: center;
     flex: 1 1 0;
     margin-bottom: -1rem;
 }
 
-.RankProgressDivisions_divisionItem__current_a0 {
+.RankProgressDivisions_divisionItem__current_84 {
         position: relative;
     }
 
-.RankProgressDivisions_highlightContainer_89 {
+.RankProgressDivisions_highlightContainer_53 {
     width: 100%;
     height: 150rem;
     position: absolute;
@@ -2796,7 +2772,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     pointer-events: none;
 }
 
-.RankProgressDivisions_radialBack_81 {
+.RankProgressDivisions_radialBack_cc {
     width: 150%;
     height: 100%;
     background-image: radial-gradient(59% 59% at 50% 0%, rgba(255, 42, 0, .12), transparent);
@@ -2808,7 +2784,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translateX(-50%) scale(1, -1);
 }
 
-.RankProgressDivisions_mainBack_4e {
+.RankProgressDivisions_mainBack_38 {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(0deg, rgba(243, 104, 60, .16), transparent);
@@ -2817,43 +2793,43 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
 }
 
-.RankProgressDivisions_bottomLine_5e {
+.RankProgressDivisions_bottomLine_67 {
     width: 100%;
     height: 1rem;
     position: absolute;
     left: 0;
 }
 
-.RankProgressDivisions_bottomLine__first_19 {
+.RankProgressDivisions_bottomLine__first_bd {
         background-image: linear-gradient(90deg, transparent, #bf684d, transparent);
         bottom: 0;
     }
 
-.RankProgressDivisions_bottomLine__second_f4 {
+.RankProgressDivisions_bottomLine__second_60 {
         background-image: linear-gradient(90deg, transparent, rgba(191, 104, 77, .3), transparent);
         bottom: 1rem;
     }
 
-.RankProgressDivisions_bottomLine__third_a1 {
+.RankProgressDivisions_bottomLine__third_08 {
         background-image: linear-gradient(90deg, transparent, rgba(191, 104, 77, .1), transparent);
         bottom: 2rem;
     }
 
-.RankProgressDivisions_divisionText_6e {
+.RankProgressDivisions_divisionText_ea {
     margin-bottom: 6rem;
     font-size: 18rem;
     opacity: .4;
     position: relative;
 }
 
-.RankProgressDivisions_divisionItem__current_a0 .RankProgressDivisions_divisionText_6e {
+.RankProgressDivisions_divisionItem__current_84 .RankProgressDivisions_divisionText_ea {
         display: flex;
         color: #FFDD99;
         text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
         opacity: 1;
     }
 
-.RankProgressDivisions_note_94 {
+.RankProgressDivisions_note_e1 {
     font-size: 14rem;
     position: absolute;
     top: 0;
@@ -2861,80 +2837,80 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translate(-50%, -100%);
 }
 
-.RankProgressPoints_base_d4 {
+.RankProgressPoints_base_86 {
     color: rgba(255,255,255, .2);
     font-size: 12rem;
     position: relative;
 }
-.RankProgressPoints_point_ae {
+.RankProgressPoints_point_f9 {
     display: flex;
     position: absolute;
 }
-.RankProgressPoints_base__top_75 .RankProgressPoints_point_ae {
+.RankProgressPoints_base__top_78 .RankProgressPoints_point_f9 {
         bottom: 0;
     }
-.RankProgressPoints_base__bottom_e0 .RankProgressPoints_point_ae {
+.RankProgressPoints_base__bottom_fc .RankProgressPoints_point_f9 {
         top: 0;
     }
-.RankProgressPoints_pointLine_80 {
+.RankProgressPoints_pointLine_b3 {
     width: 1rem;
     height: 10rem;
 }
-.RankProgressPoints_pointLine__extended_df {
+.RankProgressPoints_pointLine__extended_6b {
         height: 20rem;
     }
-.RankProgressPoints_base__top_75 .RankProgressPoints_pointLine_80 {
+.RankProgressPoints_base__top_78 .RankProgressPoints_pointLine_b3 {
         background-image: linear-gradient(to top, rgba(255,255,255, .3), transparent);
     }
-.RankProgressPoints_base__bottom_e0 .RankProgressPoints_pointLine_80 {
+.RankProgressPoints_base__bottom_fc .RankProgressPoints_pointLine_b3 {
         background-image: linear-gradient(to bottom, rgba(255,255,255, .3), transparent);
     }
-.RankProgressPoints_pointValue_5b {
+.RankProgressPoints_pointValue_af {
     position: absolute;
     left: 0;
     transform: translateX(-50%);
 }
-.RankProgressPoints_pointValue__next_8a {
+.RankProgressPoints_pointValue__next_c5 {
         color: rgba(255,255,255, .7);
         text-shadow: 0 4rem 4rem rgba(0, 0, 0, .25), 0 0 2rem rgba(233, 241, 255, .6);
     }
-.RankProgressPoints_base__top_75 .RankProgressPoints_pointValue_5b {
+.RankProgressPoints_base__top_78 .RankProgressPoints_pointValue_af {
         bottom: 10rem;
     }
-.RankProgressPoints_base__bottom_e0 .RankProgressPoints_pointValue_5b {
+.RankProgressPoints_base__bottom_fc .RankProgressPoints_pointValue_af {
         top: 10rem;
     }
 
 /* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
-.RankProgress_base_6f {
+.RankProgress_base_97 {
     display: flex;
     flex-direction: column;
     width: 380rem;
     color: #FFFFFF;
     transition: opacity .3s linear;
 }
-.mediaMedium .RankProgress_base_6f {
+.mediaMedium .RankProgress_base_97 {
         width: 430rem;
 }
-.RankProgress_base__hidden_7d {
+.RankProgress_base__hidden_b9 {
         opacity: 0;
     }
-.RankProgress_base__inactive_3b {
+.RankProgress_base__inactive_49 {
         opacity: .7;
     }
-.RankProgress_base__active_c8 {
+.RankProgress_base__active_a2 {
         opacity: 1;
         transition-delay: .3s;
     }
-.RankProgress_progressWrapper_e4 {
+.RankProgress_progressWrapper_4e {
     padding: 3rem 0;
     border-top: 1rem solid rgba(255,255,255, .2);
     border-bottom: 1rem solid rgba(255,255,255, .2);
 }
 
-.RankStatusDescription_base_57 {
-    color: #8C8C7E;
+.RankStatusDescription_base_07 {
+    color: rgba(255,255,255, 0.6);
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -2943,32 +2919,32 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     max-width: 500rem;
     text-align: center;
 }
-    .mediaLarge .RankStatusDescription_base_57 {
+    .mediaLarge .RankStatusDescription_base_07 {
         width: 100%;
 }
 
-.AchievedRankStatus_base_6f {
+.AchievedRankStatus_base_70 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-.LastUpdate_base_40 {
-    color: #595950;
+.LastUpdate_base_f7 {
+    color: rgba(255,255,255, .4);
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
     padding-top: 10rem;
 }
 
-.LastUpdate_dataUpdate_2d {
-    animation: LastUpdate_blink_68 2s infinite;
+.LastUpdate_dataUpdate_90 {
+    animation: LastUpdate_blink_eb 2s infinite;
 }
 
-@keyframes LastUpdate_blink_68 {
+@keyframes LastUpdate_blink_eb {
     0% {
-        opacity: 1;
+        opacity: .4;
     }
 
     50% {
@@ -2976,18 +2952,18 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 
     100% {
-        opacity: 1;
+        opacity: .4;
     }
 }
 
-.CurrentRankStatus_base_a0 {
+.CurrentRankStatus_base_d4 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-.FutureRankStatus_base_7e {
+.FutureRankStatus_base_c2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2995,7 +2971,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
-.FutureRankStatus_lock_0d {
+.FutureRankStatus_lock_d0 {
     width: 49rem;
     height: 64rem;
     background: url('R.images.gui.maps.icons.comp7.icons.lockBig') no-repeat center / cover;
@@ -3005,7 +2981,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translate(-50%, -40rem);
 }
 
-@keyframes RankItem_fadeIn_5f {
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+@keyframes RankItem_fadeIn_95 {
     0% {
         opacity: 0;
     }
@@ -3014,8 +2992,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-
-@keyframes RankItem_fadeInThreeQuarters_a3 {
+@keyframes RankItem_fadeInThreeQuarters_f1 {
     0% {
         opacity: 0;
     }
@@ -3024,8 +3001,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .75;
     }
 }
-
-@keyframes RankItem_fadeInHalf_de {
+@keyframes RankItem_fadeInHalf_8a {
     0% {
         opacity: 0;
     }
@@ -3034,8 +3010,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .5;
     }
 }
-
-@keyframes RankItem_fadeOut_b1 {
+@keyframes RankItem_fadeOut_56 {
     0% {
         opacity: 1;
     }
@@ -3044,8 +3019,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 0;
     }
 }
-
-@keyframes RankItem_fadeInWithScale_8b {
+@keyframes RankItem_fadeInWithScale_68 {
     0% {
         opacity: 0;
         transform: scale(1.2);
@@ -3056,8 +3030,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-
-@keyframes RankItem_slideUp_e2 {
+@keyframes RankItem_slideUp_74 {
     0% {
         opacity: 0;
         transform: translateY(50%);
@@ -3068,8 +3041,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-
-@keyframes RankItem_scale_cf {
+@keyframes RankItem_scale_6b {
     0% {
         transform: scale(0);
     }
@@ -3078,8 +3050,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-
-@keyframes RankItem_raysAppearance_9f {
+@keyframes RankItem_raysAppearance_a8 {
     0% {
         opacity: 0;
         transform: translateY(20rem);
@@ -3090,8 +3061,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-
-@keyframes RankItem_rotate_78 {
+@keyframes RankItem_rotate_da {
     from {
         transform: rotate(0deg);
     }
@@ -3100,8 +3070,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(360deg);
     }
 }
-
-@keyframes RankItem_reverse-rotate_b9 {
+@keyframes RankItem_reverse-rotate_3e {
     from {
         transform: rotate(360deg);
     }
@@ -3110,8 +3079,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(0deg);
     }
 }
-
-@keyframes RankItem_glowAppearance_32 {
+@keyframes RankItem_glowAppearance_90 {
     0% {
         opacity: 0;
     }
@@ -3120,8 +3088,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-
-@keyframes RankItem_highlightAppearance_69 {
+@keyframes RankItem_highlightAppearance_5c {
     0% {
         opacity: 0;
     }
@@ -3130,12 +3097,31 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .8;
     }
 }
+@keyframes RankItem_blink_7e {
+    0% {
+        opacity: 1;
+    }
 
-/* delay should be set always separately only for appearance effect, not hiding */
+    50% {
+        opacity: .2;
+    }
 
-/* should be percentage of screen width */
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes RankItem_slideUpIn_ee {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
 
-.RankItem_base_a1 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.RankItem_base_60 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3144,12 +3130,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     color: #FFFFFF;
     position: relative;
 }
-
-.RankItem_rankEmblem__future_95 {
+.RankItem_rankEmblem__future_08 {
         opacity: .5;
     }
-
-.RankItem_rankDescription_68 {
+.RankItem_rankDescription_32 {
     display: flex;
     height: 150rem; /* should be static for correct positioning of emblem without rankDescription context */
     opacity: 0;
@@ -3158,51 +3142,44 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition: opacity .3s linear;
     pointer-events: none;
 }
-
 /* hidden siblings can have tooltips, block them here */
-
-.RankItem_rankDescription__text_7f {
+.RankItem_rankDescription__text_90 {
         padding-top: 50rem;
     }
-
-.mediaLarge .RankItem_rankDescription__text_7f {
+.mediaLarge .RankItem_rankDescription__text_90 {
             padding-top: 62rem;
 }
-
-.RankItem_rankDescription__progress_6c {
+.RankItem_rankDescription__progress_e2 {
         padding-top: 29rem;
     }
-
-.mediaLarge .RankItem_rankDescription__progress_6c {
+.mediaLarge .RankItem_rankDescription__progress_e2 {
             padding-top: 41rem;
 }
-
-.RankItem_rankDescription__viewed_74 {
+.RankItem_rankDescription__viewed_6b {
         opacity: 1;
         transition-delay: .3s;
         pointer-events: auto;
     }
-
-.RankItem_rankInfo_9a {
+.RankItem_rankInfo_6f {
     padding-top: 16rem;
     padding-bottom: 14rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
-
-.mediaLarge .RankItem_rankInfo_9a {
+.mediaLarge .RankItem_rankInfo_6f {
         padding-top: 28rem;
 }
-
-.RankItem_dividerContainer_ad {
+.RankItem_dividerContainer_0f {
     position: absolute;
     top: calc(var(--emblemSize)/2);
     right: 0;
     transform: translate(50%, -50%);
 }
 
-@keyframes Item_fadeIn_87 {
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+@keyframes RankItemContainer_fadeIn_f3 {
     0% {
         opacity: 0;
     }
@@ -3211,8 +3188,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-
-@keyframes Item_fadeInThreeQuarters_63 {
+@keyframes RankItemContainer_fadeInThreeQuarters_70 {
     0% {
         opacity: 0;
     }
@@ -3221,8 +3197,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .75;
     }
 }
-
-@keyframes Item_fadeInHalf_5d {
+@keyframes RankItemContainer_fadeInHalf_a0 {
     0% {
         opacity: 0;
     }
@@ -3231,8 +3206,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .5;
     }
 }
-
-@keyframes Item_fadeOut_bf {
+@keyframes RankItemContainer_fadeOut_84 {
     0% {
         opacity: 1;
     }
@@ -3241,8 +3215,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 0;
     }
 }
-
-@keyframes Item_fadeInWithScale_69 {
+@keyframes RankItemContainer_fadeInWithScale_dd {
     0% {
         opacity: 0;
         transform: scale(1.2);
@@ -3253,8 +3226,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-
-@keyframes Item_slideUp_2f {
+@keyframes RankItemContainer_slideUp_e1 {
     0% {
         opacity: 0;
         transform: translateY(50%);
@@ -3265,8 +3237,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-
-@keyframes Item_scale_8b {
+@keyframes RankItemContainer_scale_a2 {
     0% {
         transform: scale(0);
     }
@@ -3275,8 +3246,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-
-@keyframes Item_raysAppearance_aa {
+@keyframes RankItemContainer_raysAppearance_47 {
     0% {
         opacity: 0;
         transform: translateY(20rem);
@@ -3287,8 +3257,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-
-@keyframes Item_rotate_5a {
+@keyframes RankItemContainer_rotate_47 {
     from {
         transform: rotate(0deg);
     }
@@ -3297,8 +3266,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(360deg);
     }
 }
-
-@keyframes Item_reverse-rotate_f2 {
+@keyframes RankItemContainer_reverse-rotate_c5 {
     from {
         transform: rotate(360deg);
     }
@@ -3307,8 +3275,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(0deg);
     }
 }
-
-@keyframes Item_glowAppearance_f7 {
+@keyframes RankItemContainer_glowAppearance_49 {
     0% {
         opacity: 0;
     }
@@ -3317,8 +3284,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-
-@keyframes Item_highlightAppearance_0e {
+@keyframes RankItemContainer_highlightAppearance_7a {
     0% {
         opacity: 0;
     }
@@ -3327,12 +3293,31 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .8;
     }
 }
+@keyframes RankItemContainer_blink_d5 {
+    0% {
+        opacity: 1;
+    }
 
-/* delay should be set always separately only for appearance effect, not hiding */
+    50% {
+        opacity: .2;
+    }
 
-/* should be percentage of screen width */
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes RankItemContainer_slideUpIn_da {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
 
-.Item_base_6f {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.RankItemContainer_base_b3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3341,17 +3326,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 100%;
     position: relative;
 }
-
-.Item_base__noTitle_e7 {
-        /* should be synced with .title height */
-        padding-top: 23.4rem;
-    }
-
-.mediaLargeHeight .Item_base__noTitle_e7 {
-            padding-top: 31.2rem;
-}
-
-.Item_title_f3 {
+.RankItemContainer_title_d5 {
     color: #FEFEEC;
     font-size: 18rem;
     font-weight: 700;
@@ -3363,263 +3338,571 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     opacity: .3;
     transition: opacity .3s linear;
 }
-
-.mediaLargeHeight .Item_title_f3 {
+.mediaLargeHeight .RankItemContainer_title_d5 {
         color: #FEFEEC;
         font-size: 24rem;
         font-weight: 700;
         line-height: 1.2;
         line-height: 1.3;
 }
-
-.Item_title__active_a9 {
+.RankItemContainer_title__active_f0 {
         opacity: 1;
         transition-delay: .3s;
     }
 
 /* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
-.RatingScore_base_50 {
+@keyframes Progression_fadeIn_1f {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Progression_fadeInThreeQuarters_f6 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+@keyframes Progression_fadeInHalf_9e {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+@keyframes Progression_fadeOut_f2 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes Progression_fadeInWithScale_35 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes Progression_slideUp_90 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Progression_scale_9c {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes Progression_raysAppearance_55 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+@keyframes Progression_rotate_f4 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes Progression_reverse-rotate_ab {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes Progression_glowAppearance_87 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Progression_highlightAppearance_5d {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+@keyframes Progression_blink_3d {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Progression_slideUpIn_a3 {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.Progression_base_97 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
 }
-.RatingScore_rating_c0 {
-    position: relative;
+.Progression_areaContainer_09 {
+    flex: 1 1;
 }
-.RatingScore_score_41 {
-    color: #FFFFFF;
-    font-size: 44rem;
-    font-weight: 700;
-    line-height: 110%;
+.Progression_areaWrapper_5f {
+    mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 4%, #c4c4c4 30%, #c4c4c4 70%, rgba(196,196,196, .1) 96%, transparent);
 }
-.mediaLarge .RatingScore_score_41 {
-        color: #FFFFFF;
+.mediaSmall .Progression_areaWrapper_5f {
+        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 6%, #c4c4c4 30%, #c4c4c4 70%, rgba(196,196,196, .1) 94%, transparent);
+}
+.mediaMedium .Progression_areaWrapper_5f {
+        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 2%, #c4c4c4 30%, #c4c4c4 70%, rgba(196,196,196, .1) 98%, transparent);
+}
+.mediaLarge .Progression_areaWrapper_5f {
+        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 4%, #c4c4c4 35%, #c4c4c4 65%, rgba(196,196,196, .1) 96%, transparent);
+}
+.mediaExtraLarge .Progression_areaWrapper_5f {
+        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 6%, #c4c4c4 30%, #c4c4c4 70%, rgba(196,196,196, .1) 94%, transparent);
+}
+.Progression_bar_4d {
+    width: 78vw;
+}
+
+.BattlesCounter_base_f1 {
+    color: rgba(255,255,255, 0.6);
+    font-size: 42rem;
+    line-height: 1.2;
+}
+    .mediaMedium .BattlesCounter_base_f1 {
+        font-size: 56rem;
+}
+    .mediaLarge .BattlesCounter_base_f1 {
         font-size: 73rem;
-        font-weight: 700;
-        line-height: 1.1;
-        margin-bottom: 6rem;
 }
-.RatingScore_rankInactivity_84 {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 20%;
-    right: -5rem;
-    transform: translateX(100%);
+    .mediaExtraLarge .BattlesCounter_base_f1 {
+        font-size: 100rem;
 }
-.RatingScore_rankInactivityCount_31 {
-    color: #E9E2BF;
-    font-size: 12rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-right: 2rem;
+
+.BattlesCounter_battlesCount_ef {
+    color: #FFFFFF;
+    font-weight: 700;
 }
-.RatingScore_rankInactivityIconContainer_d4 {
-    width: 16rem;
-    height: 16rem;
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+@keyframes QualificationBattleItem_fadeIn_c9 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes QualificationBattleItem_fadeInThreeQuarters_20 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+@keyframes QualificationBattleItem_fadeInHalf_89 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+@keyframes QualificationBattleItem_fadeOut_c3 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes QualificationBattleItem_fadeInWithScale_4f {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes QualificationBattleItem_slideUp_1f {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes QualificationBattleItem_scale_37 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes QualificationBattleItem_raysAppearance_8f {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+@keyframes QualificationBattleItem_rotate_2d {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes QualificationBattleItem_reverse-rotate_9d {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes QualificationBattleItem_glowAppearance_56 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes QualificationBattleItem_highlightAppearance_a0 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+@keyframes QualificationBattleItem_blink_3b {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes QualificationBattleItem_slideUpIn_be {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.QualificationBattleItem_base_0d {
+    width: 68rem;
+    height: 68rem;
     position: relative;
 }
-.RatingScore_rankInactivityIcon_75 {
-    width: 42rem;
-    height: 43rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.timer') no-repeat center / contain;
+.QualificationBattleItem_base__size_234_ab {
+        width: 80rem;
+        height: 80rem;
+    }
+.QualificationBattleItem_battleBackground_67 {
+    width: var(--imageSize);
+    height: var(--imageSize);
+    background: no-repeat center / cover;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
-.RatingScore_title_b4 {
-    color: #8C8C7E;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
-
-@keyframes ItemFooter_fadeIn_08 {
-    0% {
-        opacity: 0;
+.QualificationBattleItem_base__inProgress_2a .QualificationBattleItem_battleBackground_67 {
+        animation: QualificationBattleItem_blink_3b 1.5s linear 1s forwards infinite;
     }
 
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes ItemFooter_fadeInThreeQuarters_25 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: .75;
-    }
-}
-
-@keyframes ItemFooter_fadeInHalf_ec {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: .5;
-    }
-}
-
-@keyframes ItemFooter_fadeOut_14 {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes ItemFooter_fadeInWithScale_7d {
-    0% {
-        opacity: 0;
-        transform: scale(1.2);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-@keyframes ItemFooter_slideUp_ad {
-    0% {
-        opacity: 0;
-        transform: translateY(50%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes ItemFooter_scale_55 {
-    0% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes ItemFooter_raysAppearance_f4 {
-    0% {
-        opacity: 0;
-        transform: translateY(20rem);
-    }
-
-    100% {
-        opacity: .2;
-        transform: translateY(0);
-    }
-}
-
-@keyframes ItemFooter_rotate_bb {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes ItemFooter_reverse-rotate_d0 {
-    from {
-        transform: rotate(360deg);
-    }
-
-    to {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes ItemFooter_glowAppearance_d8 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes ItemFooter_highlightAppearance_ac {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: .8;
-    }
-}
-
-/* delay should be set always separately only for appearance effect, not hiding */
-
-/* should be percentage of screen width */
-
-.ItemFooter_base_5a {
-    width: 100%;
-    height: 110rem;
-    padding-top: 2rem;
+.BattlesProgression_base_a1 {
+    display: flex;
     position: relative;
 }
 
-.mediaLarge .ItemFooter_base_5a {
-        height: 180rem;
+.BattlesProgression_item_73 + .BattlesProgression_item_73 {
+        margin-left: -6rem;
+    }
+
+.mediaMedium .BattlesProgression_item_73 + .BattlesProgression_item_73 {
+            margin-left: -3rem;
 }
 
-.ItemFooter_background_29 {
-    width: 100%;
-    padding-bottom: 18.67%;
-    background: url('R.images.gui.maps.icons.comp7.icons.footerBg') no-repeat center / contain;
+.mediaLarge .BattlesProgression_item_73 + .BattlesProgression_item_73 {
+            margin-left: 4rem;
+}
+
+.mediaExtraLarge .BattlesProgression_item_73 + .BattlesProgression_item_73 {
+            margin-left: 23rem;
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+.Qualification_base_0f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Qualification_content_64 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1;
+}
+.Qualification_footer_8f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14rem;
+    line-height: 18rem;
+}
+.mediaMedium .Qualification_footer_8f {
+        font-size: 16rem;
+        line-height: 20rem;
+}
+.mediaLarge .Qualification_footer_8f {
+        font-size: 20rem;
+        line-height: 24rem;
+}
+.Qualification_qualificationEmblem_e2 {
+    width: 200rem;
+    height: 200rem;
+    margin-top: 15rem;
+    margin-bottom: 16rem;
+    background: url('R.images.gui.maps.icons.comp7.ranks.c_200.qualification') no-repeat center / cover;
+}
+.mediaMedium .Qualification_qualificationEmblem_e2 {
+        width: 280rem;
+        height: 280rem;
+        margin-bottom: 8rem;
+        background-image: url('R.images.gui.maps.icons.comp7.ranks.c_260.qualification');
+}
+.mediaLarge .Qualification_qualificationEmblem_e2 {
+        width: 420rem;
+        height: 420rem;
+        margin-bottom: -4rem;
+        background-image: url('R.images.gui.maps.icons.comp7.ranks.c_420.qualification');
+}
+.mediaExtraLarge .Qualification_qualificationEmblem_e2 {
+        width: 600rem;
+        height: 600rem;
+        margin-top: 20rem;
+        margin-bottom: -10rem;
+        background-image: url('R.images.gui.maps.icons.comp7.ranks.c_600.qualification');
+}
+.Qualification_battlesProgression_51 {
+    margin: 14rem 0 32rem;
+}
+.mediaMedium .Qualification_battlesProgression_51 {
+        margin: 19rem 0 50rem;
+}
+.mediaLarge .Qualification_battlesProgression_51 {
+        margin-top: 30rem;
+        margin-bottom: 61rem;
+}
+.mediaExtraLarge .Qualification_battlesProgression_51 {
+        margin-top: 44rem;
+        margin-bottom: 89rem;
+}
+.Qualification_counterDescription_20 {
+    color: rgba(255,255,255, 0.7);
+    font-size: 14rem;
+}
+.mediaMedium .Qualification_counterDescription_20 {
+        font-size: 16rem;
+}
+.mediaLarge .Qualification_counterDescription_20 {
+        font-size: 20rem;
+}
+.Qualification_counterDescription_20 + .Qualification_counterDescription_20 {
+        margin-top: 3rem;
+    }
+.mediaLarge .Qualification_counterDescription_20 + .Qualification_counterDescription_20 {
+            margin-top: 5rem;
+}
+.mediaExtraLarge .Qualification_counterDescription_20 + .Qualification_counterDescription_20 {
+            margin-top: 8rem;
+}
+.Qualification_ratingCalculationDescription_7a {
+    margin-top: 3rem;
+    color: rgba(255,255,255, 0.6);
+    font-size: 14rem;
+    line-height: 18rem;
+    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+    position: relative;
+}
+.mediaMedium .Qualification_ratingCalculationDescription_7a {
+        font-size: 16rem;
+        line-height: 20rem;
+}
+.mediaLarge .Qualification_ratingCalculationDescription_7a {
+        margin-top: 5rem;
+        font-size: 20rem;
+        line-height: 24rem;
+}
+.mediaExtraLarge .Qualification_ratingCalculationDescription_7a {
+        margin-top: 8rem;
+}
+.Qualification_timerIcon_35 {
+    width: 33rem;
+    height: 33rem;
+    margin: 2rem 0 0 -10rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.timer') no-repeat center / cover;
+    filter: drop-shadow(0rem 0rem 4rem rgba(255, 127, 0, .25)) drop-shadow(0rem 0rem 8rem #ff2a00) drop-shadow(0rem 0rem 15rem #e52);
     position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.ItemFooter_divider_58 {
-    width: 100%;
-    height: 2rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.footerDivider') no-repeat center;
-    background-size: 100% 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.ItemFooter_light_5b {
-    width: 81rem;
-    height: 38rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.footerLight') no-repeat center / contain;
-    position: absolute;
-    top: 2rem;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    pointer-events: none;
-}
-
-.ItemFooter_footer_3c {
-    width: 100%;
-    height: 100%;
-}
-
-.ItemFooter_rankItemFooter_66 {
     top: 50%;
-    transform: translateY(-60%);
+    left: 100%;
+    transform: translateY(-50%);
+}
+.mediaLarge .Qualification_timerIcon_35 {
+        width: 48rem;
+        height: 48rem;
+        margin: 2rem 0 0 -10rem;
+        background: url('R.images.gui.maps.icons.comp7.icons.timer_48x48') no-repeat center / cover;
+}
+.Qualification_conditionContainer_c4 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.mediaLarge .Qualification_conditionContainer_c4 {
+        margin-bottom: 9rem;
+}
+.mediaExtraLarge .Qualification_conditionContainer_c4 {
+        margin-bottom: 13rem;
+}
+.Qualification_condition_23,
+.Qualification_rewardsDescription_c2 {
+    color: rgba(255,255,255, 0.6);
+}
+.Qualification_infoIcon_fe {
+    width: 16rem;
+    height: 16rem;
+    margin-left: 5rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.infoIcon_16x16') no-repeat center / cover;
+    transform: translateY(2rem);
+}
+.Qualification_rewardsButton_db {
+    margin-top: 25rem;
+    margin-bottom: 40rem;
+    font-size: 14rem;
+    line-height: 18rem;
+    opacity: .8;
+}
+.mediaMedium .Qualification_rewardsButton_db {
+        margin-top: 26rem;
+        margin-bottom: 35rem;
+        font-size: 16rem;
+        line-height: 20rem;
+}
+.mediaLarge .Qualification_rewardsButton_db {
+        margin-top: 29rem;
+        margin-bottom: 42rem;
+        font-size: 18rem;
+}
+.mediaExtraLarge .Qualification_rewardsButton_db {
+        margin-top: 49rem;
+        margin-bottom: 60rem;
+        font-size: 20rem;
+}
+.Qualification_buttonIcon_39 {
+    display: none;
+}
+.Qualification_waiting_de {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
 }
 
-@keyframes ProgressionPage_fadeIn_ab {
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+@keyframes ProgressionPage_fadeIn_16 {
     0% {
         opacity: 0;
     }
@@ -3628,8 +3911,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-
-@keyframes ProgressionPage_fadeInThreeQuarters_7d {
+@keyframes ProgressionPage_fadeInThreeQuarters_a8 {
     0% {
         opacity: 0;
     }
@@ -3638,8 +3920,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .75;
     }
 }
-
-@keyframes ProgressionPage_fadeInHalf_cb {
+@keyframes ProgressionPage_fadeInHalf_9d {
     0% {
         opacity: 0;
     }
@@ -3648,8 +3929,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .5;
     }
 }
-
-@keyframes ProgressionPage_fadeOut_10 {
+@keyframes ProgressionPage_fadeOut_0e {
     0% {
         opacity: 1;
     }
@@ -3658,8 +3938,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 0;
     }
 }
-
-@keyframes ProgressionPage_fadeInWithScale_33 {
+@keyframes ProgressionPage_fadeInWithScale_ee {
     0% {
         opacity: 0;
         transform: scale(1.2);
@@ -3670,8 +3949,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-
-@keyframes ProgressionPage_slideUp_75 {
+@keyframes ProgressionPage_slideUp_e2 {
     0% {
         opacity: 0;
         transform: translateY(50%);
@@ -3682,8 +3960,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-
-@keyframes ProgressionPage_scale_b7 {
+@keyframes ProgressionPage_scale_2c {
     0% {
         transform: scale(0);
     }
@@ -3692,8 +3969,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-
-@keyframes ProgressionPage_raysAppearance_62 {
+@keyframes ProgressionPage_raysAppearance_a2 {
     0% {
         opacity: 0;
         transform: translateY(20rem);
@@ -3704,8 +3980,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-
-@keyframes ProgressionPage_rotate_30 {
+@keyframes ProgressionPage_rotate_75 {
     from {
         transform: rotate(0deg);
     }
@@ -3714,8 +3989,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(360deg);
     }
 }
-
-@keyframes ProgressionPage_reverse-rotate_a0 {
+@keyframes ProgressionPage_reverse-rotate_bc {
     from {
         transform: rotate(360deg);
     }
@@ -3724,8 +3998,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(0deg);
     }
 }
-
-@keyframes ProgressionPage_glowAppearance_98 {
+@keyframes ProgressionPage_glowAppearance_12 {
     0% {
         opacity: 0;
     }
@@ -3734,8 +4007,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-
-@keyframes ProgressionPage_highlightAppearance_12 {
+@keyframes ProgressionPage_highlightAppearance_da {
     0% {
         opacity: 0;
     }
@@ -3744,73 +4016,338 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .8;
     }
 }
+@keyframes ProgressionPage_blink_57 {
+    0% {
+        opacity: 1;
+    }
 
-/* delay should be set always separately only for appearance effect, not hiding */
+    50% {
+        opacity: .2;
+    }
 
-/* should be percentage of screen width */
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes ProgressionPage_slideUpIn_0f {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
 
-.ProgressionPage_base_8a {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.ProgressionPage_base_fa {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100%;
+    position: relative;
+    z-index: 0;
 }
-
-.ProgressionPage_content_b3 {
-    opacity: 0;
-    animation-name: ProgressionPage_fadeIn_ab;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
-    animation-delay: 0s;
-    animation-iteration-count: 1;
+.ProgressionPage_parallaxContainer_c4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.ProgressionPage_contentWrapper_cf {
     display: flex;
     flex-direction: column;
-    align-items: center;
     flex: 1 1;
-    margin-bottom: 12rem;
+    width: 100%;
 }
-
-.mediaMedium .ProgressionPage_content_b3 {
-        margin-bottom: 20rem;
-}
-
-.mediaLarge .ProgressionPage_content_b3 {
-        margin-bottom: 33rem;
-}
-
-.ProgressionPage_areaContainer_19 {
+.ProgressionPage_content_4a {
     flex: 1 1;
 }
-
-.ProgressionPage_areaWrapper_49 {
-    mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 4%, #c4c4c4 30%, #c4c4c4 70%, rgba(196,196,196, .1) 96%, transparent);
+.ProgressionPage_content__progression_c5 {
+        margin-bottom: 12rem;
+    }
+.mediaMedium .ProgressionPage_content__progression_c5 {
+            margin-bottom: 20rem;
 }
-
-.mediaSmall .ProgressionPage_areaWrapper_49 {
-        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 6%, #c4c4c4 30%, #c4c4c4 70%, rgba(196,196,196, .1) 94%, transparent);
+.mediaLarge .ProgressionPage_content__progression_c5 {
+            margin-bottom: 33rem;
 }
-
-.mediaMedium .ProgressionPage_areaWrapper_49 {
-        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 2%, #c4c4c4 30%, #c4c4c4 70%, rgba(196,196,196, .1) 98%, transparent);
-}
-
-.mediaLarge .ProgressionPage_areaWrapper_49 {
-        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 4%, #c4c4c4 35%, #c4c4c4 65%, rgba(196,196,196, .1) 96%, transparent);
-}
-
-.mediaExtraLarge .ProgressionPage_areaWrapper_49 {
-        mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 6%, #c4c4c4 30%, #c4c4c4 70%, rgba(196,196,196, .1) 94%, transparent);
-}
-
-.ProgressionPage_bar_a5 {
+.ProgressionPage_footer_d1 {
     width: 78vw;
 }
 
-.ProgressionPage_footer_34 {
-    width: 78vw;
+.Box_mt__XS_0c {
+            margin-top: 4rem;
+        }
+        .Box_mt__SM_eb {
+            margin-top: 8rem;
+        }
+        .Box_mt__SMp_cf {
+            margin-top: 10rem;
+        }
+        .Box_mt__MD_25 {
+            margin-top: 16rem;
+        }
+        .Box_mt__MDp_49 {
+            margin-top: 20rem;
+        }
+        .Box_mt__LG_e8 {
+            margin-top: 32rem;
+        }
+        .Box_mt__XL_83 {
+            margin-top: 64rem;
+        }
+
+.Box_mr__XS_7c {
+            margin-right: 4rem;
+        }
+
+.Box_mr__SM_08 {
+            margin-right: 8rem;
+        }
+
+.Box_mr__SMp_06 {
+            margin-right: 10rem;
+        }
+
+.Box_mr__MD_4a {
+            margin-right: 16rem;
+        }
+
+.Box_mr__MDp_b6 {
+            margin-right: 20rem;
+        }
+
+.Box_mr__LG_d0 {
+            margin-right: 32rem;
+        }
+
+.Box_mr__XL_db {
+            margin-right: 64rem;
+        }
+
+.Box_mb__XS_bb {
+            margin-bottom: 4rem;
+        }
+
+.Box_mb__SM_83 {
+            margin-bottom: 8rem;
+        }
+
+.Box_mb__SMp_04 {
+            margin-bottom: 10rem;
+        }
+
+.Box_mb__MD_ed {
+            margin-bottom: 16rem;
+        }
+
+.Box_mb__MDp_65 {
+            margin-bottom: 20rem;
+        }
+
+.Box_mb__LG_c8 {
+            margin-bottom: 32rem;
+        }
+
+.Box_mb__XL_f8 {
+            margin-bottom: 64rem;
+        }
+
+.Box_ml__XS_8a {
+            margin-left: 4rem;
+        }
+
+.Box_ml__SM_e6 {
+            margin-left: 8rem;
+        }
+
+.Box_ml__SMp_fb {
+            margin-left: 10rem;
+        }
+
+.Box_ml__MD_2b {
+            margin-left: 16rem;
+        }
+
+.Box_ml__MDp_c7 {
+            margin-left: 20rem;
+        }
+
+.Box_ml__LG_39 {
+            margin-left: 32rem;
+        }
+
+.Box_ml__XL_4a {
+            margin-left: 64rem;
+        }
+
+/* eslint-disable-next-line expectedscss*/
+.Text_paragraph-P10_2c {
+        font-size: 10rem;
+        font-weight: 400;
+        line-height: 1.2;
 }
+.Text_paragraph-P12_22 {
+        font-size: 12rem;
+        font-weight: 400;
+        line-height: 1.3;
+}
+.Text_paragraph-P14_a7 {
+        font-size: 14rem;
+        font-weight: 400;
+        line-height: 1.3;
+}
+.Text_paragraph-P16_90 {
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
+}
+.Text_paragraph-P18_50 {
+        font-size: 18rem;
+        font-weight: 400;
+        line-height: 1.25;
+}
+.Text_paragraph-P24_33 {
+        font-size: 24rem;
+        font-weight: 400;
+        line-height: 32rem;
+}
+.Text_heading-H14_8b {
+        font-size: 14rem;
+        font-weight: 700;
+        line-height: 1.15;
+}
+.Text_heading-H15_9e {
+        font-size: 15rem;
+        font-weight: 700;
+        line-height: 1.15;
+}
+.Text_heading-H18_b7 {
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+.Text_heading-H20R_f6 {
+        font-size: 20rem;
+        font-weight: 400;
+        line-height: 1.2;
+}
+.Text_heading-H22_27 {
+        font-size: 22rem;
+        font-weight: 700;
+        line-height: 1.2;
+}
+.Text_heading-H24R_be {
+        font-size: 24rem;
+        font-weight: 400;
+        line-height: 1.2;
+}
+.Text_heading-H24_0c {
+        font-size: 24rem;
+        font-weight: 700;
+        line-height: 1.2;
+}
+.Text_heading-H28_78 {
+        font-size: 28rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+.Text_heading-H36_32 {
+        font-size: 36rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+.Text_heading-H56_c3 {
+        font-size: 56rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+.Text_heading-H73_8f {
+        font-size: 73rem;
+        font-weight: 700;
+        line-height: 1.1;
+}
+.Text_heading-H144_a9 {
+        font-size: 144rem;
+        font-weight: 700;
+        line-height: 1;
+}
+.Text_BLACK_REAL_30 {
+        color: #000000;
+    }
+.Text_WHITE_REAL_bc {
+        color: #FFFFFF;
+    }
+.Text_WHITE_62 {
+        color: #F2F2F7;
+    }
+.Text_WHITE_ORANGE_54 {
+        color: #FEFEEC;
+    }
+.Text_WHITE_SPANISH_df {
+        color: #E9E2BF;
+    }
+.Text_PAR_15 {
+        color: #8C8C7E;
+    }
+.Text_PAR_SECONDARY_5d {
+        color: #595950;
+    }
+.Text_PAR_TERTIARY_c9 {
+        color: #37362E;
+    }
+.Text_INFO_RED_30 {
+        color: #FF0000;
+    }
+.Text_RED_66 {
+        color: #FF2717;
+    }
+.Text_RED_DARK_d8 {
+        color: #B70000;
+    }
+.Text_YELLOW_ed {
+        color: #FEAB34;
+    }
+.Text_ORANGE_be {
+        color: #EE7000;
+    }
+.Text_CREAM_57 {
+        color: #FFDD99;
+    }
+.Text_BROWN_18 {
+        color: #CBAC77;
+    }
+.Text_GREEN_BRIGHT_3f {
+        color: #80D43A;
+    }
+.Text_GREEN_e3 {
+        color: #7AB300;
+    }
+.Text_GREEN_DARK_f1 {
+        color: #497212;
+    }
+.Text_BLUE_BOOSTER_21 {
+        color: #CCFFFF;
+    }
+.Text_BLUE_TEAMKILLER_ab {
+        color: #09E2FF;
+    }
+.Text_CRED_f7 {
+        color: #CED9D9;
+    }
+.Text_GOLD_28 {
+        color: #FFC363;
+    }
+.Text_BOND_be {
+        color: #C9C9B6;
+    }
+.Text_PROM_65 {
+        color: #A29B70;
+    }
 
 .Reward_base_ea {
     display: flex;
@@ -3960,7 +4497,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         }
 
 .Reward_info__credits_ef {
-        color: #CED9D9;
+        color: #E9E2BF;
     }
 
 .Reward_info__gold_36 {
@@ -4015,27 +4552,27 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         margin: 15rem 0;
     }
 
-.AdditionalRewards_reward_bc {
+.AdditionalRewards_reward_16 {
     margin: 0;
 }
 
-    .AdditionalRewards_reward_bc + .AdditionalRewards_reward_bc {
+    .AdditionalRewards_reward_16 + .AdditionalRewards_reward_16 {
         margin-left: 20rem;
     }
 
-    .mediaSmall .AdditionalRewards_reward_bc + .AdditionalRewards_reward_bc {
+    .mediaSmall .AdditionalRewards_reward_16 + .AdditionalRewards_reward_16 {
             margin-left: 24rem;
 }
 
-    .mediaLarge .AdditionalRewards_reward_bc + .AdditionalRewards_reward_bc {
+    .mediaLarge .AdditionalRewards_reward_16 + .AdditionalRewards_reward_16 {
             margin-left: 30rem;
 }
 
-.AdditionalRewards_vehiclesRentBase_e9 {
+.AdditionalRewards_vehiclesRentBase_d4 {
     margin: 0 5rem;
 }
 
-.AdditionalRewards_vehiclesRentBase_e9 .AdditionalRewards_vehiclesRentLabel_18 {
+.AdditionalRewards_vehiclesRentBase_d4 .AdditionalRewards_vehiclesRentLabel_3e {
     color: #FFDD99;
     font-size: 14rem;
     font-weight: 400;
@@ -4043,23 +4580,23 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin: -7rem -12rem 0;
 }
 
-.Heading_base_25 {
+.Heading_base_99 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-.Heading_tooltipArea_cf {
+.Heading_tooltipArea_c9 {
     display: flex;
     position: relative;
 }
 
-.Heading_rankEmblem__future_4c {
+.Heading_rankEmblem__future_6d {
         opacity: .5;
     }
 
-.Heading_lock_86 {
+.Heading_lock_a8 {
     width: 11rem;
     height: 14rem;
     background: url('R.images.gui.maps.icons.comp7.icons.lockExtraSmall') no-repeat center / cover;
@@ -4069,15 +4606,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translateX(-50%);
 }
 
-.mediaMedium .Heading_lock_86 {
+.mediaMedium .Heading_lock_a8 {
         bottom: 4rem;
 }
 
-.mediaLarge .Heading_lock_86 {
+.mediaLarge .Heading_lock_a8 {
         bottom: 9rem;
 }
 
-.Heading_description_62 {
+.Heading_description_6f {
     width: 100%;
     margin-top: 2rem;
     padding-bottom: 26rem;
@@ -4085,14 +4622,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
-.Heading_rankName_8c {
+.Heading_rankName_05 {
     color: #F2F2F7;
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
 }
 
-.Heading_currentRankStatus_94 {
+.Heading_rankStatus_63 {
     color: rgba(255,255,255, .5);
     font-size: 14rem;
     font-weight: 400;
@@ -4159,7 +4696,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0rem);
     }
 
-@keyframes MainReward_fadeIn_90 {
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+@keyframes MainReward_fadeIn_88 {
     0% {
         opacity: 0;
     }
@@ -4168,8 +4707,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-
-@keyframes MainReward_fadeInThreeQuarters_3e {
+@keyframes MainReward_fadeInThreeQuarters_30 {
     0% {
         opacity: 0;
     }
@@ -4178,8 +4716,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .75;
     }
 }
-
-@keyframes MainReward_fadeInHalf_a2 {
+@keyframes MainReward_fadeInHalf_73 {
     0% {
         opacity: 0;
     }
@@ -4188,8 +4725,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .5;
     }
 }
-
-@keyframes MainReward_fadeOut_31 {
+@keyframes MainReward_fadeOut_27 {
     0% {
         opacity: 1;
     }
@@ -4198,8 +4734,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 0;
     }
 }
-
-@keyframes MainReward_fadeInWithScale_84 {
+@keyframes MainReward_fadeInWithScale_51 {
     0% {
         opacity: 0;
         transform: scale(1.2);
@@ -4210,8 +4745,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-
-@keyframes MainReward_slideUp_ea {
+@keyframes MainReward_slideUp_58 {
     0% {
         opacity: 0;
         transform: translateY(50%);
@@ -4222,8 +4756,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-
-@keyframes MainReward_scale_f9 {
+@keyframes MainReward_scale_5c {
     0% {
         transform: scale(0);
     }
@@ -4232,8 +4765,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-
-@keyframes MainReward_raysAppearance_2d {
+@keyframes MainReward_raysAppearance_6b {
     0% {
         opacity: 0;
         transform: translateY(20rem);
@@ -4244,8 +4776,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-
-@keyframes MainReward_rotate_3d {
+@keyframes MainReward_rotate_8c {
     from {
         transform: rotate(0deg);
     }
@@ -4254,8 +4785,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(360deg);
     }
 }
-
-@keyframes MainReward_reverse-rotate_eb {
+@keyframes MainReward_reverse-rotate_39 {
     from {
         transform: rotate(360deg);
     }
@@ -4264,8 +4794,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(0deg);
     }
 }
-
-@keyframes MainReward_glowAppearance_fe {
+@keyframes MainReward_glowAppearance_20 {
     0% {
         opacity: 0;
     }
@@ -4274,8 +4803,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-
-@keyframes MainReward_highlightAppearance_b5 {
+@keyframes MainReward_highlightAppearance_ab {
     0% {
         opacity: 0;
     }
@@ -4284,29 +4812,45 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .8;
     }
 }
+@keyframes MainReward_blink_b5 {
+    0% {
+        opacity: 1;
+    }
 
-/* delay should be set always separately only for appearance effect, not hiding */
+    50% {
+        opacity: .2;
+    }
 
-/* should be percentage of screen width */
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes MainReward_slideUpIn_d0 {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
 
-.MainReward_base_17 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.MainReward_base_32 {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 85rem;
     position: relative;
 }
-
-.mediaMedium .MainReward_base_17 {
+.mediaMedium .MainReward_base_32 {
         padding-bottom: 105rem;
 }
-
-.MainReward_imageContainer_85 {
+.MainReward_imageContainer_37 {
     display: flex;
     position: relative;
 }
-
-.MainReward_highlightContainer_f8 {
+.MainReward_highlightContainer_cf {
     width: 460rem;
     height: 460rem;
     filter: brightness(130%);
@@ -4317,30 +4861,25 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
-
-.mediaMedium .MainReward_highlightContainer_f8 {
+.mediaMedium .MainReward_highlightContainer_cf {
         width: 580rem;
         height: 580rem;
 }
-
-.mediaLarge .MainReward_highlightContainer_f8 {
+.mediaLarge .MainReward_highlightContainer_cf {
         width: 760rem;
         height: 760rem;
 }
-
-.mediaExtraLarge .MainReward_highlightContainer_f8 {
+.mediaExtraLarge .MainReward_highlightContainer_cf {
         width: 840rem;
         height: 840rem;
 }
-
-.MainReward_highlight_25 {
+.MainReward_highlight_06 {
     width: 100%;
     height: 100%;
     background: url('R.images.gui.maps.icons.comp7.icons.blue_highlight') no-repeat center / cover;
-    animation: MainReward_glowAppearance_fe linear .7s both, MainReward_rotate_3d 80s linear infinite;
+    animation: MainReward_glowAppearance_20 linear .7s both, MainReward_rotate_8c 80s linear infinite;
 }
-
-.MainReward_preview_80 {
+.MainReward_preview_7a {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -4349,20 +4888,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
     z-index: 1;
 }
-
-.mediaMedium .MainReward_preview_80 {
+.mediaMedium .MainReward_preview_7a {
         bottom: 20rem;
 }
-
-.mediaLarge .MainReward_preview_80 {
+.mediaLarge .MainReward_preview_7a {
         bottom: 30rem;
 }
-
-.mediaExtraLarge .MainReward_preview_80 {
+.mediaExtraLarge .MainReward_preview_7a {
         bottom: 80rem;
 }
-
-.MainReward_info_13 {
+.MainReward_info_58 {
     text-align: center;
     position: absolute;
     right: 0;
@@ -4370,80 +4905,43 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
     transform: translateY(100%);
 }
-
-.mediaMedium .MainReward_info_13 {
+.mediaMedium .MainReward_info_58 {
         bottom: 105rem;
 }
-
-.MainReward_title_be {
+.MainReward_title_6d {
     color: #FFFFFF;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
     padding: 0 25rem;
 }
-
-.mediaMedium .MainReward_title_be {
+.mediaMedium .MainReward_title_6d {
         color: #FFFFFF;
         font-size: 24rem;
         font-weight: 700;
         line-height: 1.2;
 }
-
-.mediaLarge .MainReward_title_be {
+.mediaLarge .MainReward_title_6d {
         padding: 0 35rem;
 }
-
-.mediaExtraLarge .MainReward_title_be {
+.mediaExtraLarge .MainReward_title_6d {
         padding: 0 110rem;
 }
-
-.MainReward_subTitle_59 {
+.MainReward_subTitle_e2 {
     color: #F2F2F7;
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
     margin-top: 12rem;
 }
-
-.mediaMedium .MainReward_subTitle_59 {
+.mediaMedium .MainReward_subTitle_e2 {
         color: #F2F2F7;
         font-size: 18rem;
         font-weight: 700;
         line-height: 1.1;
 }
 
-.RewardsStatus_base_10 {
-    display: flex;
-}
-
-.RewardsStatus_icon_83 {
-    width: 16rem;
-    height: 17rem;
-    margin-top: 2rem;
-    margin-right: 5rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.done') no-repeat center / cover;
-}
-
-.RewardsStatus_textContainer_e6 {
-    color: #8C8C7E;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    min-height: 40rem;
-}
-
-/* for 2 lines localization support */
-
-.RewardsStatus_base__achieved_82 .RewardsStatus_textContainer_e6 {
-        color: #80D43A;
-    }
-
-.RewardsStatus_text_ee {
-    justify-content: center;
-}
-
-.RankRewardsItem_base_93 {
+.RankRewardsItem_base_a7 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4453,20 +4951,53 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
-.RankRewardsItem_mainRewardContainer_3e {
+.RankRewardsItem_mainRewardContainer_e0 {
     width: 100%;
 }
 
-.RankRewardsItem_rewardsContainer_c6 {
+.RankRewardsItem_rewardsContainer_69 {
     height: 48rem;
     margin-bottom: 40rem;
 }
 
-.mediaLarge .RankRewardsItem_rewardsContainer_c6 {
+.mediaLarge .RankRewardsItem_rewardsContainer_69 {
         margin-bottom: 60rem;
 }
 
-@keyframes RankRewardsPage_fadeIn_3b {
+.RankRewardsItem_rewardsContainer__qualification_b0 {
+        margin-bottom: 0;
+    }
+
+.mediaLarge .RankRewardsItem_rewardsContainer__qualification_b0 {
+            margin-bottom: 0;
+}
+
+.RankRewardsItem_statusContainer_bf {
+    display: flex;
+    color: #80D43A;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    min-height: 40rem;
+}
+
+/* for 2 lines localization support */
+
+.RankRewardsItem_statusContainer__hidden_c8 {
+        visibility: hidden;
+    }
+
+.RankRewardsItem_icon_7d {
+    width: 16rem;
+    height: 17rem;
+    margin-top: 2rem;
+    margin-right: 5rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.done') no-repeat center / cover;
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+@keyframes RankRewardsPage_fadeIn_0c {
     0% {
         opacity: 0;
     }
@@ -4475,8 +5006,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-
-@keyframes RankRewardsPage_fadeInThreeQuarters_4e {
+@keyframes RankRewardsPage_fadeInThreeQuarters_05 {
     0% {
         opacity: 0;
     }
@@ -4485,8 +5015,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .75;
     }
 }
-
-@keyframes RankRewardsPage_fadeInHalf_57 {
+@keyframes RankRewardsPage_fadeInHalf_fb {
     0% {
         opacity: 0;
     }
@@ -4495,8 +5024,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .5;
     }
 }
-
-@keyframes RankRewardsPage_fadeOut_28 {
+@keyframes RankRewardsPage_fadeOut_00 {
     0% {
         opacity: 1;
     }
@@ -4505,8 +5033,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 0;
     }
 }
-
-@keyframes RankRewardsPage_fadeInWithScale_d2 {
+@keyframes RankRewardsPage_fadeInWithScale_db {
     0% {
         opacity: 0;
         transform: scale(1.2);
@@ -4517,8 +5044,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-
-@keyframes RankRewardsPage_slideUp_16 {
+@keyframes RankRewardsPage_slideUp_13 {
     0% {
         opacity: 0;
         transform: translateY(50%);
@@ -4529,8 +5055,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-
-@keyframes RankRewardsPage_scale_b4 {
+@keyframes RankRewardsPage_scale_7d {
     0% {
         transform: scale(0);
     }
@@ -4539,8 +5064,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-
-@keyframes RankRewardsPage_raysAppearance_3a {
+@keyframes RankRewardsPage_raysAppearance_f8 {
     0% {
         opacity: 0;
         transform: translateY(20rem);
@@ -4551,8 +5075,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-
-@keyframes RankRewardsPage_rotate_11 {
+@keyframes RankRewardsPage_rotate_eb {
     from {
         transform: rotate(0deg);
     }
@@ -4561,8 +5084,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(360deg);
     }
 }
-
-@keyframes RankRewardsPage_reverse-rotate_cb {
+@keyframes RankRewardsPage_reverse-rotate_79 {
     from {
         transform: rotate(360deg);
     }
@@ -4571,8 +5093,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(0deg);
     }
 }
-
-@keyframes RankRewardsPage_glowAppearance_02 {
+@keyframes RankRewardsPage_glowAppearance_3e {
     0% {
         opacity: 0;
     }
@@ -4581,8 +5102,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-
-@keyframes RankRewardsPage_highlightAppearance_53 {
+@keyframes RankRewardsPage_highlightAppearance_b7 {
     0% {
         opacity: 0;
     }
@@ -4591,82 +5111,100 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .8;
     }
 }
+@keyframes RankRewardsPage_blink_6f {
+    0% {
+        opacity: 1;
+    }
 
-/* delay should be set always separately only for appearance effect, not hiding */
+    50% {
+        opacity: .2;
+    }
 
-/* should be percentage of screen width */
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes RankRewardsPage_slideUpIn_36 {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
 
-.RankRewardsPage_base_de {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.RankRewardsPage_base_fd {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100%;
 }
-
-.RankRewardsPage_content_00 {
+.RankRewardsPage_content_3f {
     flex: 1 1;
     width: 100%;
     margin-bottom: 12rem;
     position: relative;
 }
-
-.mediaMedium .RankRewardsPage_content_00 {
+.mediaMedium .RankRewardsPage_content_3f {
         margin-bottom: 20rem;
 }
-
-.mediaLarge .RankRewardsPage_content_00 {
+.mediaLarge .RankRewardsPage_content_3f {
         margin-bottom: 33rem;
 }
-
-.RankRewardsPage_scrollContainer_6b {
-    opacity: 0;
-    animation-name: RankRewardsPage_fadeIn_3b;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
-    animation-delay: 0s;
-    animation-iteration-count: 1;
+.RankRewardsPage_scrollContainer_f2 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-.RankRewardsPage_areaContainer_3e {
+.RankRewardsPage_areaContainer_9e {
     flex: 1 1;
 }
-
-.RankRewardsPage_areaWrapper_61 {
+.RankRewardsPage_areaWrapper_fb {
     mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 4%, #c4c4c4 10%, #c4c4c4 90%, rgba(196,196,196, .1) 96%, transparent);
 }
-
-.mediaSmall .RankRewardsPage_areaWrapper_61 {
+.mediaSmall .RankRewardsPage_areaWrapper_fb {
         mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 5%, #c4c4c4 20%, #c4c4c4 80%, rgba(196,196,196, .1) 95%, transparent);
 }
-
-.mediaMedium .RankRewardsPage_areaWrapper_61 {
+.mediaMedium .RankRewardsPage_areaWrapper_fb {
         mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 3%, #c4c4c4 25%, #c4c4c4 75%, rgba(196,196,196, .1) 97%, transparent);
 }
-
-.mediaLarge .RankRewardsPage_areaWrapper_61 {
+.mediaLarge .RankRewardsPage_areaWrapper_fb {
         mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 4%, #c4c4c4 20%, #c4c4c4 80%, rgba(196,196,196, .1) 96%, transparent);
 }
-
-.mediaExtraLarge .RankRewardsPage_areaWrapper_61 {
+.mediaExtraLarge .RankRewardsPage_areaWrapper_fb {
         mask-image: linear-gradient(90deg, transparent, rgba(196,196,196, .1) 4%, #c4c4c4 25%, #c4c4c4 75%, rgba(196,196,196, .1) 96%, transparent);
 }
-
-.RankRewardsPage_bar_87 {
+.RankRewardsPage_bar_59 {
     width: 78vw;
 }
+.RankRewardsPage_qualificationFooter_71 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 18rem;
+    line-height: 1.5;
+    opacity: 0.5;
+}
+.mediaMedium .RankRewardsPage_qualificationFooter_71 {
+        margin-top: 2rem;
+        margin-bottom: 22rem;
+}
+.mediaLarge .RankRewardsPage_qualificationFooter_71 {
+        margin-top: 11rem;
+        margin-bottom: 44rem;
+}
 
-.Progress_base_3c {
+.Progress_base_d5 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.Progress_counter_bd {
+.Progress_counter_3b {
     color: rgba(254,254,236, .5);
     font-size: 24rem;
     font-weight: 700;
@@ -4674,34 +5212,34 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex-wrap: nowrap;
 }
 
-.mediaMedium .Progress_counter_bd {
+.mediaMedium .Progress_counter_3b {
         font-size: 40rem;
 }
 
-.mediaExtraLarge .Progress_counter_bd {
+.mediaExtraLarge .Progress_counter_3b {
         font-size: 56rem;
 }
 
-.Progress_current_b0 {
+.Progress_current_fd {
     color: #FFFFFF;
 }
 
-.Progress_progressBar_4a {
+.Progress_progressBar_d2 {
     width: 110rem;
     padding: 12rem 0;
 }
 
-.mediaMedium .Progress_progressBar_4a {
+.mediaMedium .Progress_progressBar_d2 {
         width: 172rem;
         padding: 16rem 0;
 }
 
-.mediaExtraLarge .Progress_progressBar_4a {
+.mediaExtraLarge .Progress_progressBar_d2 {
         width: 192rem;
         padding: 36rem 0;
 }
 
-.QuestCard_base_5f {
+.QuestCard_base_27 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -4711,25 +5249,25 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding-bottom: 14rem;
     position: relative;
 }
-    .mediaSmall .QuestCard_base_5f {
+    .mediaSmall .QuestCard_base_27 {
         width: 180rem;
 }
-    .mediaMedium .QuestCard_base_5f {
+    .mediaMedium .QuestCard_base_27 {
         width: 240rem;
         height: 460rem;
         padding-top: 0;
         padding-bottom: 60rem;
 }
-    .mediaLarge .QuestCard_base_5f {
+    .mediaLarge .QuestCard_base_27 {
         width: 300rem;
         height: 500rem;
 }
-    .mediaExtraLarge .QuestCard_base_5f {
+    .mediaExtraLarge .QuestCard_base_27 {
         height: 530rem;
         padding-bottom: 20rem;
 }
 
-.QuestCard_highlight_6f {
+.QuestCard_highlight_08 {
     width: 518rem;
     height: 554rem;
     background: url('R.images.gui.maps.icons.comp7.icons.active_quest_highlight') no-repeat center / contain;
@@ -4741,68 +5279,68 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     pointer-events: none;
 }
 
-.mediaMedium .QuestCard_highlight_6f {
+.mediaMedium .QuestCard_highlight_08 {
         width: 720rem;
         height: 640rem;
         top: 55%;
         left: 56%;
 }
 
-.mediaExtraLarge .QuestCard_highlight_6f {
+.mediaExtraLarge .QuestCard_highlight_08 {
         width: 836rem;
         height: 894rem;
         top: 53%;
         left: 60%;
 }
 
-.QuestCard_icon_7a {
+.QuestCard_icon_81 {
     width: 124rem;
     height: 124rem;
     background: no-repeat center / contain;
     transition: transform .4s ease-in-out, opacity .4s ease-in-out;
 }
 
-.mediaMedium .QuestCard_icon_7a {
+.mediaMedium .QuestCard_icon_81 {
         width: 180rem;
         height: 180rem;
         margin-top: -2rem;
 }
 
-.mediaLarge .QuestCard_icon_7a {
+.mediaLarge .QuestCard_icon_81 {
         width: 234rem;
         height: 234rem;
         margin-top: -2rem;
 }
 
-.mediaExtraLarge .QuestCard_icon_7a {
+.mediaExtraLarge .QuestCard_icon_81 {
         width: 240rem;
         height: 240rem;
         margin-top: -40rem;
 }
 
-.QuestCard_base__completed_99 .QuestCard_icon_7a,
-    .QuestCard_base__locked_3f .QuestCard_icon_7a {
+.QuestCard_base__completed_e3 .QuestCard_icon_81,
+    .QuestCard_base__locked_e9 .QuestCard_icon_81 {
         mask-image: linear-gradient(180deg, #fff 21%, rgba(255,255,255, .52) 44.5%, transparent 83%);
         transform: translateY(35rem);
     }
 
-.mediaMedium .QuestCard_base__completed_99 .QuestCard_icon_7a, .mediaMedium .QuestCard_base__locked_3f .QuestCard_icon_7a {
+.mediaMedium .QuestCard_base__completed_e3 .QuestCard_icon_81, .mediaMedium .QuestCard_base__locked_e9 .QuestCard_icon_81 {
             transform: translateY(50rem);
 }
 
-.mediaExtraLarge .QuestCard_base__completed_99 .QuestCard_icon_7a, .mediaExtraLarge .QuestCard_base__locked_3f .QuestCard_icon_7a {
+.mediaExtraLarge .QuestCard_base__completed_e3 .QuestCard_icon_81, .mediaExtraLarge .QuestCard_base__locked_e9 .QuestCard_icon_81 {
             transform: translateY(50rem);
 }
 
-.QuestCard_base__completed_99 .QuestCard_icon_7a {
+.QuestCard_base__completed_e3 .QuestCard_icon_81 {
         opacity: .25;
     }
 
-.QuestCard_base__locked_3f .QuestCard_icon_7a {
+.QuestCard_base__locked_e9 .QuestCard_icon_81 {
         opacity: .55;
     }
 
-.QuestCard_content_a1 {
+.QuestCard_content_36 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -4811,27 +5349,27 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition: opacity .4s ease-in-out;
 }
 
-.mediaMedium .QuestCard_content_a1 {
+.mediaMedium .QuestCard_content_36 {
         margin-top: -48rem;
 }
 
-.mediaExtraLarge .QuestCard_content_a1 {
+.mediaExtraLarge .QuestCard_content_36 {
         margin-top: -72rem;
 }
 
-.QuestCard_base__completed_99 .QuestCard_content_a1 {
+.QuestCard_base__completed_e3 .QuestCard_content_36 {
         opacity: .2;
     }
 
-.QuestCard_progress_2b {
+.QuestCard_progress_63 {
     transition: opacity .4s ease-in-out;
 }
 
-.QuestCard_base__locked_3f .QuestCard_progress_2b {
+.QuestCard_base__locked_e9 .QuestCard_progress_63 {
         opacity: .6;
     }
 
-.QuestCard_description_88 {
+.QuestCard_description_ba {
     color: #FEFEEC;
     font-size: 14rem;
     font-weight: 400;
@@ -4843,7 +5381,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition: opacity .4s ease-in-out;
 }
 
-.mediaMedium .QuestCard_description_88 {
+.mediaMedium .QuestCard_description_ba {
         color: #FEFEEC;
         font-size: 16rem;
         font-weight: 400;
@@ -4851,67 +5389,67 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         padding: 0 30rem;
 }
 
-.mediaLarge .QuestCard_description_88 {
+.mediaLarge .QuestCard_description_ba {
         padding: 0 40rem;
 }
 
-.mediaExtraLarge .QuestCard_description_88 {
+.mediaExtraLarge .QuestCard_description_ba {
         padding: 0 24rem;
 }
 
-.QuestCard_base__locked_3f .QuestCard_description_88 {
+.QuestCard_base__locked_e9 .QuestCard_description_ba {
         opacity: .77;
     }
 
-.QuestCard_reward_8a {
+.QuestCard_reward_d5 {
     margin: 0 5rem;
 }
 
-.mediaMedium .QuestCard_reward_8a {
+.mediaMedium .QuestCard_reward_d5 {
         margin: 0 11rem;
 }
 
-.QuestCard_status_b5 {
+.QuestCard_status_26 {
     margin-top: 30rem;
 }
 
-.mediaMedium .QuestCard_status_b5 {
+.mediaMedium .QuestCard_status_26 {
         margin-top: 37rem;
 }
 
-.mediaExtraLarge .QuestCard_status_b5 {
+.mediaExtraLarge .QuestCard_status_26 {
         margin-top: 46rem;
 }
 
-.Status_base_f6 {
+.Status_base_78 {
     display: flex;
 }
 
-    .Status_base__locked_ed {
+    .Status_base__locked_1f {
         opacity: .77;
     }
 
-.Status_icon_34 {
+.Status_icon_9c {
     width: 18rem;
     height: 18rem;
     background: url('R.images.gui.maps.icons.comp7.icons.flag') no-repeat center / contain;
 }
 
-.Status_base__locked_ed .Status_icon_34 {
+.Status_base__locked_1f .Status_icon_9c {
         width: 14rem;
         height: 18rem;
         margin-right: 2rem;
         background-image: url('R.images.gui.maps.icons.comp7.icons.lockMedium');
     }
 
-.Status_base__completed_39 .Status_icon_34 {
+.Status_base__completed_66 .Status_icon_9c {
         width: 16rem;
         height: 17rem;
         margin-top: 2rem;
         background-image: url('R.images.gui.maps.icons.comp7.icons.done');
     }
 
-.Status_text_ec {
+.Status_text_b3 {
     color: #CBAC77;
     font-size: 14rem;
     font-weight: 400;
@@ -4919,70 +5457,70 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-left: 6rem;
 }
 
-.Status_base__locked_ed .Status_text_ec {
+.Status_base__locked_1f .Status_text_b3 {
         color: #FFFFFF;
     }
 
-.Status_base__completed_39 .Status_text_ec {
+.Status_base__completed_66 .Status_text_b3 {
         color: #80D43A;
     }
 
-.QuestsList_base_77 {
+.QuestsList_base_a9 {
     display: flex;
 }
 
-.mediaSmall .QuestsList_card_3a {
+.mediaSmall .QuestsList_card_f7 {
         margin: 0 11rem;
 }
 
-.mediaMedium .QuestsList_card_3a {
+.mediaMedium .QuestsList_card_f7 {
         margin: 0;
 }
 
-.mediaExtraLarge .QuestsList_card_3a {
+.mediaExtraLarge .QuestsList_card_f7 {
         margin: 0 22rem;
 }
 
-.Separator_base_38 {
+.Separator_base_f3 {
     display: flex;
     flex-direction: column;
     pointer-events: none;
 }
 
-.Separator_line_96 {
+.Separator_line_03 {
     flex: 1;
     width: 1rem;
     background-image: linear-gradient(180deg, rgba(255,255,255, .2) 0%, #fff 50%, rgba(255,255,255, .2) 100%);
     opacity: .2;
 }
 
-.Separator_line__top_19 {
+.Separator_line__top_ba {
         background-image: linear-gradient(180deg, rgba(255,255,255, .2), #fff);
     }
 
-.mediaMedium .Separator_line__top_19 {
+.mediaMedium .Separator_line__top_ba {
             flex: none;
             height: 163rem;
 }
 
-.mediaLarge .Separator_line__top_19 {
+.mediaLarge .Separator_line__top_ba {
             height: 217rem;
 }
 
-.mediaExtraLarge .Separator_line__top_19 {
+.mediaExtraLarge .Separator_line__top_ba {
             height: 200rem;
 }
 
-.Separator_line__bottom_40 {
+.Separator_line__bottom_95 {
         background-image: linear-gradient(180deg, #fff, rgba(255,255,255, .2));
     }
 
-.Separator_arrowContainer_db {
+.Separator_arrowContainer_f9 {
     height: 70rem;
     position: relative;
 }
 
-.Separator_arrow_44 {
+.Separator_arrow_3d {
     width: 90rem;
     height: 80rem;
     background: url('R.images.gui.maps.icons.comp7.icons.arrow') no-repeat center / contain;
@@ -4992,16 +5530,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translate(-100%, -50%);
 }
 
-.mediaExtraLarge .Separator_arrow_44 {
+.mediaExtraLarge .Separator_arrow_3d {
         height: 76rem;
         background-image: url('R.images.gui.maps.icons.comp7.icons.arrow_large');
 }
 
-.Separator_base__highlighted_91 .Separator_arrow_44 {
+.Separator_base__highlighted_6a .Separator_arrow_3d {
         background-image: url('R.images.gui.maps.icons.comp7.icons.arrow_highlighted');
     }
 
-.mediaExtraLarge .Separator_base__highlighted_91 .Separator_arrow_44 {
+.mediaExtraLarge .Separator_base__highlighted_6a .Separator_arrow_3d {
             background-image: url('R.images.gui.maps.icons.comp7.icons.arrow_highlighted_large');
 }
 
@@ -5023,32 +5561,43 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.3;
 }
 
-.ResetStatus_base_1c {
+.ResetStatus_base_25 {
     color: #FFFFFF;
-    font-size: 16rem;
+    font-size: 14rem;
     font-weight: 400;
-    line-height: 1.25;
+    line-height: 1.3;
 }
-    .mediaExtraLarge .ResetStatus_base_1c {
+    .mediaMedium .ResetStatus_base_25 {
+        font-size: 16rem;
+}
+    .mediaExtraLarge .ResetStatus_base_25 {
         font-size: 20rem;
 }
 
-.ResetStatus_text_49 {
+.ResetStatus_text_83 {
     align-items: center;
 }
 
-.ResetStatus_timer_91 {
+.ResetStatus_timer_0b {
     color: #FFDD99;
-    font-size: 16rem;
+    font-size: 14rem;
     font-weight: 400;
-    line-height: 1.25;
+    line-height: 1.3;
 }
 
-.mediaExtraLarge .ResetStatus_timer_91 {
+.mediaMedium .ResetStatus_timer_0b {
+        font-size: 16rem;
+}
+
+.mediaExtraLarge .ResetStatus_timer_0b {
         font-size: 20rem;
 }
 
-.TokenPoint_base_96 {
+.mediaExtraLarge .ResetStatus_icon_9c {
+        transform: translateY(2rem);
+}
+
+.TokenPoint_base_fb {
     color: #FFFFFF;
     font-size: 14rem;
     font-weight: 400;
@@ -5058,46 +5607,46 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     align-items: center;
 }
 
-.TokenPoint_tokenValue_fd {
+.TokenPoint_tokenValue_b8 {
     display: flex;
     margin-top: 3rem;
     opacity: .3;
 }
 
-.TokenPoint_tokenValue__hide_01 {
-        animation: TokenPoint_fadeOut_4d 1s forwards;
+.TokenPoint_tokenValue__hide_6e {
+        animation: TokenPoint_fadeOut_33 1s forwards;
     }
 
-.TokenPoint_tokenIcon_38 {
+.TokenPoint_tokenIcon_0d {
     width: 18rem;
     height: 18rem;
     margin-top: 1rem;
-    background: url('R.images.gui.maps.icons.quests.bonuses.small.comp7_2023_1_weekly_rewards_token') no-repeat center / cover;
+    background: url('R.images.gui.maps.icons.quests.bonuses.small.comp7TokenWeeklyReward') no-repeat center / cover;
 }
 
-.TokenPoint_serif_df {
+.TokenPoint_serif_c1 {
     width: 1rem;
     height: 34rem;
     background-image: linear-gradient(transparent, rgba(255,255,255, .2) 8rem, transparent 8rem, transparent 26rem, rgba(255,255,255, .2) 26rem, transparent);
 }
 
-.TokenPoint_rewards_c0 {
+.TokenPoint_rewards_46 {
     margin-top: 3rem;
 }
 
-.mediaExtraLarge .TokenPoint_rewards_c0 {
+.mediaExtraLarge .TokenPoint_rewards_46 {
         margin-top: 10rem;
 }
 
-.TokenPoint_rewards__passed_9d {
+.TokenPoint_rewards__passed_97 {
         opacity: .4;
     }
 
-.TokenPoint_reward_3b {
+.TokenPoint_reward_85 {
     margin: 0 5rem;
 }
 
-@keyframes TokenPoint_fadeOut_4d {
+@keyframes TokenPoint_fadeOut_33 {
     0% {
         opacity: .3;
     }
@@ -5107,107 +5656,133 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
-.TokenProgress_base_92 {
+.TokenPoint_rewardsWrapper_79 {
+    position: relative;
+}
+
+.TokenPoint_iconDone_24 {
+    width: 17rem;
+    height: 17rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.done') no-repeat center / cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.TokenProgress_base_d7 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 830rem;
 }
-    .mediaSmall .TokenProgress_base_92 {
+    .mediaSmall .TokenProgress_base_d7 {
         width: 930rem;
 }
-    .mediaMedium .TokenProgress_base_92 {
+    .mediaMedium .TokenProgress_base_d7 {
         width: 1080rem;
 }
-    .mediaLarge .TokenProgress_base_92 {
+    .mediaLarge .TokenProgress_base_d7 {
         width: 1360rem;
 }
-    .mediaExtraLarge .TokenProgress_base_92 {
+    .mediaExtraLarge .TokenProgress_base_d7 {
         width: 1400rem;
 }
 
-.TokenProgress_content_48 {
+.TokenProgress_content_8d {
     display: flex;
     width: 100%;
     margin-bottom: 20rem;
     padding: 30rem 0 0 30rem;
 }
 
-.mediaSmall .TokenProgress_content_48 {
+.mediaSmall .TokenProgress_content_8d {
         padding-left: 0;
 }
 
-.mediaMedium .TokenProgress_content_48 {
+.mediaMedium .TokenProgress_content_8d {
         margin-bottom: 20rem;
 }
 
-.mediaLarge .TokenProgress_content_48 {
+.mediaLarge .TokenProgress_content_8d {
         margin-bottom: 38rem;
 }
 
-.mediaExtraLarge .TokenProgress_content_48 {
-        margin-bottom: 35rem;
+.mediaExtraLarge .TokenProgress_content_8d {
+        margin-bottom: 60rem;
 }
 
-.TokenProgress_progress_a2 {
+.TokenProgress_progress_7f {
     flex: 1;
     margin-right: 20rem;
     position: relative;
 }
 
-.mediaSmall .TokenProgress_progress_a2 {
+.mediaSmall .TokenProgress_progress_7f {
         margin-right: 25rem;
 }
 
-.TokenProgress_progressBar_cb {
+.TokenProgress_progressBar_56 {
     margin: 0 -1rem;
     padding: 2rem 0;
     border-top: 1rem solid rgba(255,255,255, .2);
     border-bottom: 1rem solid rgba(255,255,255, .2);
 }
 
-.TokenProgress_points_da {
+.TokenProgress_points_75 {
     width: 100%;
     position: absolute;
 }
 
-.TokenProgress_point_e0 {
+.TokenProgress_point_55 {
     position: absolute;
     top: -30rem;
     left: 0;
     transform: translateX(-50%);
 }
 
-.TokenProgress_currentTokenValue_12 {
+.TokenProgress_currentTokenValue_44 {
     color: #FFFFFF;
-    font-size: 28rem;
+    font-size: 24rem;
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.2;
     display: flex;
     margin-bottom: 2rem;
     position: absolute;
-    top: -45rem;
+    top: -40rem;
     left: 0;
     transform: translateX(-50%);
 }
 
-.TokenProgress_tokenIcon_63 {
-    width: 40rem;
-    height: 40rem;
-    margin: -2rem -6rem 0 -1rem;
-    background: url('R.images.gui.maps.icons.quests.bonuses.small.comp7_2023_1_weekly_rewards_token') no-repeat center / cover;
+.mediaMedium .TokenProgress_currentTokenValue_44 {
+        font-size: 28rem;
+        top: -45rem;
 }
 
-.TokenProgress_finalRewards_40 {
+.TokenProgress_tokenIcon_5e {
+    width: 33rem;
+    height: 33rem;
+    margin: 0 -6rem 0 -1rem;
+    background: url('R.images.gui.maps.icons.quests.bonuses.small.comp7TokenWeeklyReward') no-repeat center / cover;
+}
+
+.mediaMedium .TokenProgress_tokenIcon_5e {
+        width: 40rem;
+        height: 40rem;
+        margin-top: -1rem;
+}
+
+.TokenProgress_finalRewards_7d {
     position: relative;
     top: -32rem;
 }
 
-.TokenProgress_finalRewards__passed_a4 {
+.TokenProgress_finalRewards__passed_ac {
         opacity: .4;
     }
 
-.TokenProgress_description_36 {
+.TokenProgress_description_b8 {
     color: rgba(255,255,255, .4);
     font-size: 14rem;
     font-weight: 400;
@@ -5215,25 +5790,27 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
 }
 
-.mediaLarge .TokenProgress_description_36 {
+.mediaLarge .TokenProgress_description_b8 {
         color: rgba(255,255,255, .4);
         font-size: 16rem;
         font-weight: 400;
         line-height: 1.25;
 }
 
-.TokenProgress_description__done_e8 {
+.TokenProgress_description__done_75 {
         color: #80D43A;
     }
 
-.TokenProgress_iconDone_04 {
+.TokenProgress_iconDone_8f {
     width: 17rem;
     height: 17rem;
     margin-top: 2rem;
     background: url('R.images.gui.maps.icons.comp7.icons.done') no-repeat center / cover;
 }
 
-@keyframes WeeklyQuestsPage_fadeIn_88 {
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+@keyframes WeeklyQuestsPage_fadeIn_46 {
     0% {
         opacity: 0;
     }
@@ -5242,8 +5819,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-
-@keyframes WeeklyQuestsPage_fadeInThreeQuarters_7f {
+@keyframes WeeklyQuestsPage_fadeInThreeQuarters_8d {
     0% {
         opacity: 0;
     }
@@ -5252,8 +5828,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .75;
     }
 }
-
-@keyframes WeeklyQuestsPage_fadeInHalf_dc {
+@keyframes WeeklyQuestsPage_fadeInHalf_b5 {
     0% {
         opacity: 0;
     }
@@ -5262,8 +5837,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .5;
     }
 }
-
-@keyframes WeeklyQuestsPage_fadeOut_f1 {
+@keyframes WeeklyQuestsPage_fadeOut_6c {
     0% {
         opacity: 1;
     }
@@ -5272,8 +5846,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 0;
     }
 }
-
-@keyframes WeeklyQuestsPage_fadeInWithScale_37 {
+@keyframes WeeklyQuestsPage_fadeInWithScale_7b {
     0% {
         opacity: 0;
         transform: scale(1.2);
@@ -5284,8 +5857,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-
-@keyframes WeeklyQuestsPage_slideUp_11 {
+@keyframes WeeklyQuestsPage_slideUp_3b {
     0% {
         opacity: 0;
         transform: translateY(50%);
@@ -5296,8 +5868,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-
-@keyframes WeeklyQuestsPage_scale_49 {
+@keyframes WeeklyQuestsPage_scale_6e {
     0% {
         transform: scale(0);
     }
@@ -5306,8 +5877,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-
-@keyframes WeeklyQuestsPage_raysAppearance_dd {
+@keyframes WeeklyQuestsPage_raysAppearance_aa {
     0% {
         opacity: 0;
         transform: translateY(20rem);
@@ -5318,8 +5888,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-
-@keyframes WeeklyQuestsPage_rotate_2c {
+@keyframes WeeklyQuestsPage_rotate_4d {
     from {
         transform: rotate(0deg);
     }
@@ -5328,8 +5897,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(360deg);
     }
 }
-
-@keyframes WeeklyQuestsPage_reverse-rotate_9c {
+@keyframes WeeklyQuestsPage_reverse-rotate_c0 {
     from {
         transform: rotate(360deg);
     }
@@ -5338,8 +5906,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(0deg);
     }
 }
-
-@keyframes WeeklyQuestsPage_glowAppearance_29 {
+@keyframes WeeklyQuestsPage_glowAppearance_2f {
     0% {
         opacity: 0;
     }
@@ -5348,8 +5915,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-
-@keyframes WeeklyQuestsPage_highlightAppearance_00 {
+@keyframes WeeklyQuestsPage_highlightAppearance_b4 {
     0% {
         opacity: 0;
     }
@@ -5358,12 +5924,31 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: .8;
     }
 }
+@keyframes WeeklyQuestsPage_blink_03 {
+    0% {
+        opacity: 1;
+    }
 
-/* delay should be set always separately only for appearance effect, not hiding */
+    50% {
+        opacity: .2;
+    }
 
-/* should be percentage of screen width */
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes WeeklyQuestsPage_slideUpIn_e0 {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
 
-.WeeklyQuestsPage_base_ee {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.WeeklyQuestsPage_base_6c {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -5372,8 +5957,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
     z-index: 0;
 }
-
-.WeeklyQuestsPage_content_8f {
+.WeeklyQuestsPage_content_cc {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -5381,62 +5965,2053 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex: 1 1;
     width: 78vw;
 }
-
-.mediaLarge .WeeklyQuestsPage_content_8f {
+.mediaLarge .WeeklyQuestsPage_content_cc {
         padding-top: 10rem;
 }
-
-.mediaExtraLarge .WeeklyQuestsPage_content_8f {
-        padding: none;
+.mediaExtraLarge .WeeklyQuestsPage_content_cc {
+        padding: 0;
 }
-
-.WeeklyQuestsPage_questsList_98 {
-    margin-top: -40rem;
-    margin-bottom: 24rem;
+.WeeklyQuestsPage_questsList_78 {
+    margin-top: -55rem;
+    margin-bottom: 35rem;
 }
-
-.mediaSmall .WeeklyQuestsPage_questsList_98 {
+.mediaSmall .WeeklyQuestsPage_questsList_78 {
         margin-bottom: 24rem;
 }
-
-.mediaMedium .WeeklyQuestsPage_questsList_98 {
+.mediaMedium .WeeklyQuestsPage_questsList_78 {
         margin-top: -5rem;
         margin-bottom: 0;
 }
-
-.mediaLarge .WeeklyQuestsPage_questsList_98 {
-        margin-top: 0rem;
-        margin-bottom: 75rem;
+.mediaLarge .WeeklyQuestsPage_questsList_78 {
+        margin-top: 0;
+        margin-bottom: 52rem;
 }
-
-.mediaExtraLarge .WeeklyQuestsPage_questsList_98 {
+.mediaExtraLarge .WeeklyQuestsPage_questsList_78 {
         margin-top: 7vh;
-        margin-bottom: 7vh;
+        margin-bottom: 11vh;
 }
-
-.WeeklyQuestsPage_progression_7c {
+.WeeklyQuestsPage_progression_25 {
     margin-bottom: 10rem;
 }
-
-.mediaMedium .WeeklyQuestsPage_progression_7c {
+.mediaMedium .WeeklyQuestsPage_progression_25 {
         margin-bottom: 10rem;
 }
-
-.mediaLarge .WeeklyQuestsPage_progression_7c {
+.mediaLarge .WeeklyQuestsPage_progression_25 {
         margin-bottom: 20rem;
 }
-
-.mediaExtraLarge .WeeklyQuestsPage_progression_7c {
+.mediaExtraLarge .WeeklyQuestsPage_progression_25 {
         margin-bottom: 2vh;
 }
+.WeeklyQuestsPage_resetStatus_8a {
+    margin-top: 4rem;
+}
+.mediaMedium .WeeklyQuestsPage_resetStatus_8a {
+        margin-top: 8rem;
+}
+.mediaLarge .WeeklyQuestsPage_resetStatus_8a {
+        margin-top: 24rem;
+}
+.mediaExtraLarge .WeeklyQuestsPage_resetStatus_8a {
+        margin-top: 30rem;
+}
+
+.VehicleName_base_3b {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    position: relative;
+}
+
+    .VehicleName_base__24x24_a7,
+    .VehicleName_base__24x24_metal_92 {
+        font-size: 14rem;
+    }
+
+    .VehicleName_base__48x48_6a {
+        font-size: 22rem;
+        font-weight: 700;
+    }
+
+    .VehicleName_base__64x64_d2 {
+        font-size: 22rem;
+        font-weight: 700;
+    }
+
+    .VehicleName_base__83x74_ba {
+        font-size: 24rem;
+        font-weight: 700;
+    }
+
+.VehicleName_vehicleTypeContainer_f2 {
+    position: relative;
+}
+
+.VehicleName_base__24x24_a7 .VehicleName_vehicleTypeContainer_f2,
+    .VehicleName_base__24x24_metal_92 .VehicleName_vehicleTypeContainer_f2 {
+        width: 24rem;
+    }
+
+.VehicleName_base__48x48_6a .VehicleName_vehicleTypeContainer_f2 {
+        width: 48rem;
+    }
+
+.VehicleName_base__60x54_08 .VehicleName_vehicleTypeContainer_f2 {
+        width: 40rem;
+    }
+
+.VehicleName_base__64x64_d2 .VehicleName_vehicleTypeContainer_f2 {
+        width: 64rem;
+    }
+
+.VehicleName_base__83x74_ba .VehicleName_vehicleTypeContainer_f2 {
+        width: 55rem;
+    }
+
+.VehicleName_vehicleType_c3 {
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.VehicleName_base__24x24_a7 .VehicleName_vehicleType_c3,
+    .VehicleName_base__24x24_metal_92 .VehicleName_vehicleType_c3 {
+        width: 24rem;
+        height: 24rem;
+    }
+
+.VehicleName_base__48x48_6a .VehicleName_vehicleType_c3 {
+        width: 48rem;
+        height: 48rem;
+    }
+
+.VehicleName_base__60x54_08 .VehicleName_vehicleType_c3 {
+        width: 60rem;
+        height: 54rem;
+    }
+
+.VehicleName_base__64x64_d2 .VehicleName_vehicleType_c3 {
+        width: 64rem;
+        height: 64rem;
+    }
+
+.VehicleName_base__83x74_ba .VehicleName_vehicleType_c3 {
+        width: 83rem;
+        height: 74rem;
+    }
+
+.AdditionalRewards_reward_e8 {
+    margin: 0;
+}
+
+    .AdditionalRewards_reward_e8 + .AdditionalRewards_reward_e8 {
+        margin-left: 12rem;
+    }
+
+.SeasonPoint_base_a1 {
+    position: relative;
+    z-index: 0;
+}
+
+    .SeasonPoint_base__x16_06 {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .SeasonPoint_base__x24_b6 {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    .SeasonPoint_base__x32_f0 {
+        width: 32rem;
+        height: 32rem;
+    }
+
+    .SeasonPoint_base__x48_8a {
+        width: 48rem;
+        height: 48rem;
+    }
+
+    .SeasonPoint_base__x62_b1 {
+        width: 64rem;
+        height: 64rem;
+    }
+
+.SeasonPoint_highlight_87 {
+    background: no-repeat center / cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.SeasonPoint_base__x24_b6 .SeasonPoint_highlight_87 {
+        width: 48rem;
+        height: 48rem;
+        background-image: url('R.images.gui.maps.icons.comp7.icons.season_point_highlight_x48');
+    }
+
+.SeasonPoint_base__x32_f0 .SeasonPoint_highlight_87 {
+        width: 64rem;
+        height: 64rem;
+        background-image: url('R.images.gui.maps.icons.comp7.icons.season_point_highlight_x64');
+    }
+
+.SeasonPoint_base__x48_8a .SeasonPoint_highlight_87 {
+        width: 72rem;
+        height: 72rem;
+        background-image: url('R.images.gui.maps.icons.comp7.icons.season_point_highlight_x72');
+    }
+
+.SeasonPoint_base__x62_b1 .SeasonPoint_highlight_87 {
+        width: 96rem;
+        height: 96rem;
+        background-image: url('R.images.gui.maps.icons.comp7.icons.season_point_highlight_x96');
+    }
+
+.SeasonPoint_icon_b6 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / cover;
+    position: relative;
+}
+
+.SeasonPoint_base__notAchieved_02 .SeasonPoint_icon_b6 {
+        opacity: .7;
+    }
+
+.CardSeasonPoints_base_8c {
+    display: flex;
+    align-items: center;
+}
+
+.RewardsStatus_base_49 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.RewardsStatus_status_48 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.RewardsStatus_venzel_80 {
+    display: flex;
+    align-items: flex-start;
+    flex: 1 1;
+}
+
+.RewardsStatus_venzel__right_b6 {
+        transform: scale(-1, 1);
+    }
+
+.RewardsStatus_icon_9f {
+    width: 8rem;
+    height: 2rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.venzel_8x2') no-repeat center / cover;
+}
+
+.RewardsStatus_line_d8 {
+    flex: 1 1;
+    height: 1rem;
+    opacity: 0.8;
+}
+
+.RewardsStatus_base__guaranteed_4f .RewardsStatus_line_d8,
+    .RewardsStatus_base__claimed_0f .RewardsStatus_line_d8 {
+        background: linear-gradient(270deg, rgba(128, 212, 58, 0.4) 0%, rgba(128, 212, 58, 0) 50.45%), linear-gradient(0deg, rgba(204, 237, 255, 0.65), rgba(204, 237, 255, 0.65));
+    }
+
+.RewardsStatus_base__possible_67 .RewardsStatus_line_d8 {
+        background: linear-gradient(0deg, rgba(204, 237, 255, 0.65), rgba(204, 237, 255, 0.65)), linear-gradient(270deg, rgba(255, 221, 153, 0.8) 0%, rgba(255, 221, 153, 0) 50%);
+    }
+
+.RewardsStatus_base__notAvailable_b1 .RewardsStatus_line_d8 {
+        background: linear-gradient(0deg, rgba(204, 237, 255, 0.65), rgba(204, 237, 255, 0.65)), linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 53.71%);
+    }
+
+.RewardsStatus_statusIcon_72 {
+    width: 20rem;
+    height: 20rem;
+    margin: 0 16rem;
+    background: no-repeat center / cover;
+}
+
+.RewardsStatus_base__guaranteed_4f .RewardsStatus_statusIcon_72,
+    .RewardsStatus_base__claimed_0f .RewardsStatus_statusIcon_72 {
+        background-image: url('R.images.gui.maps.icons.comp7.icons.check_icon_20x20');
+    }
+
+.RewardsStatus_base__notAvailable_b1 .RewardsStatus_statusIcon_72 {
+        background-image: url('R.images.gui.maps.icons.comp7.icons.lock_20x20');
+    }
+
+.RewardsStatus_base__possible_67 .RewardsStatus_statusIcon_72 {
+        background-image: url('R.images.gui.maps.icons.comp7.icons.flag_20x20');
+    }
+
+.RewardsStatus_description_f6 {
+    margin-top: 3rem;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.mediaMedium .RewardsStatus_description_f6 {
+        margin-top: 6rem;
+        font-size: 16rem;
+}
+
+.RewardsStatus_base__guaranteed_4f .RewardsStatus_description_f6,
+    .RewardsStatus_base__claimed_0f .RewardsStatus_description_f6 {
+        color: #80D43A;
+    }
+
+.RewardsStatus_base__notAvailable_b1 .RewardsStatus_description_f6 {
+        color: rgba(255,255,255, .5);
+    }
+
+.RewardsStatus_base__possible_67 .RewardsStatus_description_f6 {
+        color: #E9E2BF;
+    }
+
+.CardContent_base_be {
+    --content-spacing: 30rem;
+    position: relative;
+    z-index: 0;
+}
+    .mediaSmall .CardContent_base_be {
+        --content-spacing: 58rem;
+}
+    .mediaMedium .CardContent_base_be {
+        --content-spacing: 50rem;
+}
+    .mediaLarge .CardContent_base_be {
+        --content-spacing: 60rem;
+}
+    .mediaExtraLarge .CardContent_base_be {
+        --content-spacing: 130rem;
+}
+    .CardContent_base__withVehicle_b1 {
+        --content-spacing: 30rem;
+    }
+    .mediaSmall .CardContent_base__withVehicle_b1 {
+            --content-spacing: 46rem;
+}
+    .mediaMedium .CardContent_base__withVehicle_b1 {
+            --content-spacing: 50rem;
+}
+    .mediaLarge .CardContent_base__withVehicle_b1 {
+            --content-spacing: 60rem;
+}
+    .mediaExtraLarge .CardContent_base__withVehicle_b1 {
+            --content-spacing: 106rem;
+}
+    .CardContent_base__collapsed_a6:hover {
+            background: linear-gradient(180deg, transparent, rgba(175, 231, 255, 0.2) 60%, transparent);
+        }
+
+.CardContent_bigLock_fb {
+    width: 112rem;
+    height: 199rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.lock_231x412') no-repeat center / cover;
+    filter: brightness(1.7);
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    bottom: 77rem;
+    z-index: -1;
+    transition: opacity .25s ease-in;
+    pointer-events: none;
+}
+
+.mediaMedium .CardContent_bigLock_fb {
+        width: 180rem;
+        height: 321rem;
+        bottom: 108rem;
+}
+
+.mediaLarge .CardContent_bigLock_fb {
+        width: 231rem;
+        height: 412rem;
+        bottom: 115rem;
+}
+
+.mediaExtraLarge .CardContent_bigLock_fb {
+        bottom: 122rem;
+}
+
+.CardContent_bigLock__visible_00 {
+        opacity: 1;
+    }
+
+.CardContent_lock_a5 {
+    width: 16rem;
+    height: 25rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.lock_16x25') no-repeat center / cover;
+    filter: brightness(1.7);
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    bottom: 128rem;
+    z-index: 1;
+    transition: opacity .25s linear;
+    pointer-events: none;
+}
+
+.mediaMedium .CardContent_lock_a5 {
+        width: 24rem;
+        height: 39rem;
+        background-image: url('R.images.gui.maps.icons.comp7.icons.lock_24x39');
+        bottom: 145rem;
+}
+
+.mediaLarge .CardContent_lock_a5 {
+        bottom: 156rem;
+}
+
+.mediaExtraLarge .CardContent_lock_a5 {
+        bottom: 180rem;
+}
+
+.CardContent_lock__visible_2e {
+        opacity: 1;
+    }
+
+.CardContent_vehicleContainer_43 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 232rem;
+    height: 150rem;
+    position: absolute;
+    transition: transform .25s linear;
+}
+
+.mediaSmall .CardContent_vehicleContainer_43 {
+        width: 260rem;
+}
+
+.mediaMedium .CardContent_vehicleContainer_43 {
+        width: 360rem;
+        height: 230rem;
+}
+
+.mediaLarge .CardContent_vehicleContainer_43 {
+        width: 550rem;
+        height: 380rem;
+}
+
+.mediaExtraLarge .CardContent_vehicleContainer_43 {
+        width: 690rem;
+        height: 500rem;
+}
+
+.CardContent_base__selected_ce .CardContent_vehicleContainer_43 {
+        transform: translate(-3rem, 68rem);
+    }
+
+.mediaSmall .CardContent_base__selected_ce .CardContent_vehicleContainer_43 {
+            transform: translate(32rem, 67rem);
+}
+
+.mediaMedium .CardContent_base__selected_ce .CardContent_vehicleContainer_43 {
+            transform: translate(38rem, 69rem);
+}
+
+.mediaLarge .CardContent_base__selected_ce .CardContent_vehicleContainer_43 {
+            transform: translate(8rem, 50rem);
+}
+
+.mediaExtraLarge .CardContent_base__selected_ce .CardContent_vehicleContainer_43 {
+            transform: translate(56rem, 116rem);
+}
+
+.CardContent_base__collapsed_a6 .CardContent_vehicleContainer_43 {
+        transform: translate(-68rem, 68rem);
+    }
+
+.mediaSmall .CardContent_base__collapsed_a6 .CardContent_vehicleContainer_43 {
+            transform: translate(-78rem, 67rem);
+}
+
+.mediaMedium .CardContent_base__collapsed_a6 .CardContent_vehicleContainer_43 {
+            transform: translate(-97rem, 69rem);
+}
+
+.mediaLarge .CardContent_base__collapsed_a6 .CardContent_vehicleContainer_43 {
+            transform: translate(-163rem, 50rem);
+}
+
+.mediaExtraLarge .CardContent_base__collapsed_a6 .CardContent_vehicleContainer_43 {
+            transform: translate(-188rem, 116rem);
+}
+
+.CardContent_vehicleImage_a2 {
+    width: 303rem;
+    height: 250rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.vehicle_941x777') no-repeat center / cover;
+    pointer-events: none;
+}
+
+.mediaSmall .CardContent_vehicleImage_a2 {
+        width: 381rem;
+        height: 315rem;
+}
+
+.mediaMedium .CardContent_vehicleImage_a2 {
+        width: 542rem;
+        height: 448rem;
+}
+
+.mediaLarge .CardContent_vehicleImage_a2 {
+        width: 772rem;
+        height: 637rem;
+}
+
+.mediaExtraLarge .CardContent_vehicleImage_a2 {
+        width: 942rem;
+        height: 777rem;
+}
+
+.CardContent_base__collapsed_a6 .CardContent_vehicleImage_a2 {
+        mask: linear-gradient(180deg, rgba(217, 217, 217, 0) 20%, rgba(217, 217, 217, .9) 50%, rgba(217, 217, 217, 0) 100%);
+    }
+
+.CardContent_mainReward_2d {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    transition: transform .25s linear, opacity 0.125s linear;
+}
+
+.CardContent_base__selected_ce .CardContent_mainReward_2d {
+        transform: translate(-25rem, 80rem);
+    }
+
+.mediaSmall .CardContent_base__selected_ce .CardContent_mainReward_2d {
+            transform: translate(10rem, 80rem);
+}
+
+.mediaMedium .CardContent_base__selected_ce .CardContent_mainReward_2d {
+            transform: translate(-28rem, 54rem);
+}
+
+.mediaLarge .CardContent_base__selected_ce .CardContent_mainReward_2d {
+            transform: translate(-82rem, 72rem);
+}
+
+.mediaExtraLarge .CardContent_base__selected_ce .CardContent_mainReward_2d {
+            transform: translate(28rem, 178rem);
+}
+
+.CardContent_base__collapsed_a6 .CardContent_mainReward_2d {
+        transform: translate(-40rem, 80rem);
+    }
+
+.mediaSmall .CardContent_base__collapsed_a6 .CardContent_mainReward_2d {
+            transform: translate(-40rem, 80rem);
+}
+
+.mediaMedium .CardContent_base__collapsed_a6 .CardContent_mainReward_2d {
+            transform: translate(-60rem, 54rem);
+}
+
+.mediaLarge .CardContent_base__collapsed_a6 .CardContent_mainReward_2d {
+            transform: translate(-122rem, 72rem);
+}
+
+.mediaExtraLarge .CardContent_base__collapsed_a6 .CardContent_mainReward_2d {
+            transform: translate(-94rem, 178rem);
+}
+
+.CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
+        width: 85rem;
+        height: 85rem;
+        transform: translate(65rem, 176rem);
+    }
+
+.mediaSmall .CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
+            width: 100rem;
+            height: 100rem;
+            transform: translate(90rem, 174rem);
+}
+
+.mediaMedium .CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
+            width: 140rem;
+            height: 128rem;
+            transform: translate(108rem, 217rem);
+}
+
+.mediaLarge .CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
+            width: 190rem;
+            height: 180rem;
+            transform: translate(133rem, 294rem);
+}
+
+.mediaExtraLarge .CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
+            width: 200rem;
+            height: 216rem;
+            transform: translate(234rem, 435rem);
+}
+
+.CardContent_base__selected_ce.CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
+        opacity: 1;
+    }
+
+.CardContent_base__collapsed_a6.CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
+        opacity: 0;
+    }
+
+.CardContent_mainRewardIcon_e2 {
+    pointer-events: none;
+}
+
+.CardContent_base__withVehicle_b1 .CardContent_mainRewardIcon_e2 {
+        width: 195rem;
+        height: 156rem;
+    }
+
+.mediaSmall .CardContent_base__withVehicle_b1 .CardContent_mainRewardIcon_e2 {
+            width: 230rem;
+            height: 184rem;
+}
+
+.mediaMedium .CardContent_base__withVehicle_b1 .CardContent_mainRewardIcon_e2 {
+            width: 283rem;
+            height: 226rem;
+}
+
+.mediaLarge .CardContent_base__withVehicle_b1 .CardContent_mainRewardIcon_e2 {
+            width: 417rem;
+            height: 334rem;
+}
+
+.mediaExtraLarge .CardContent_base__withVehicle_b1 .CardContent_mainRewardIcon_e2 {
+            width: 510rem;
+            height: 406rem;
+}
+
+.CardContent_rewardImageContainer_3c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.CardContent_cardInfoContainer_91 {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 254rem;
+    padding-top: 96rem;
+}
+
+.mediaSmall .CardContent_cardInfoContainer_91 {
+        width: 298rem;
+}
+
+.mediaMedium .CardContent_cardInfoContainer_91 {
+        width: 300rem;
+        padding-top: 109rem;
+}
+
+.mediaLarge .CardContent_cardInfoContainer_91 {
+        width: 344rem;
+        padding-top: 168rem;
+}
+
+.mediaExtraLarge .CardContent_cardInfoContainer_91 {
+        width: 488rem;
+        padding-top: 270rem;
+}
+
+.CardContent_base__withVehicle_b1 .CardContent_cardInfoContainer_91 {
+        width: 240rem;
+    }
+
+.mediaSmall .CardContent_base__withVehicle_b1 .CardContent_cardInfoContainer_91 {
+            width: 248rem;
+}
+
+.mediaMedium .CardContent_base__withVehicle_b1 .CardContent_cardInfoContainer_91 {
+            width: 286rem;
+}
+
+.mediaLarge .CardContent_base__withVehicle_b1 .CardContent_cardInfoContainer_91 {
+            width: 308rem;
+}
+
+.mediaExtraLarge .CardContent_base__withVehicle_b1 .CardContent_cardInfoContainer_91 {
+            width: 396rem;
+}
+
+.CardContent_cardInfo_03 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #FFFFFF;
+    font-size: 18rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.mediaMedium .CardContent_cardInfo_03 {
+        font-size: 24rem;
+}
+
+.mediaLarge .CardContent_cardInfo_03 {
+        font-size: 28rem;
+}
+
+.CardContent_vehicleName_89 {
+    font-size: 18rem;
+}
+
+.mediaMedium .CardContent_vehicleName_89 {
+        margin-bottom: 4rem;
+        font-size: 24rem;
+}
+
+.mediaLarge .CardContent_vehicleName_89 {
+        font-size: 28rem;
+}
+
+.CardContent_base_be .CardContent_vehicleTypeContainer_29 {
+    width: 30rem;
+}
+
+.mediaMedium .CardContent_base_be .CardContent_vehicleTypeContainer_29 {
+        width: 50rem;
+}
+
+.CardContent_title_c4 {
+    font-size: 18rem;
+    font-weight: 700;
+}
+
+.mediaMedium .CardContent_title_c4 {
+        font-size: 24rem;
+}
+
+.mediaLarge .CardContent_title_c4 {
+        font-size: 28rem;
+}
+
+.CardContent_subTitle_83 {
+    margin-top: 4rem;
+    color: #E9E2BF;
+    font-size: 15rem;
+}
+
+.mediaMedium .CardContent_subTitle_83 {
+        margin-top: 7rem;
+}
+
+.mediaLarge .CardContent_subTitle_83 {
+        margin-top: 4rem;
+        font-size: 18rem;
+}
+
+.CardContent_additionalRewards_2a {
+    margin: 16rem 0 28rem;
+}
+
+.mediaMedium .CardContent_additionalRewards_2a {
+        margin: 30rem 0 35rem;
+}
+
+.mediaLarge .CardContent_additionalRewards_2a {
+        margin: 36rem 0 48rem;
+}
+
+.CardContent_rewardsStatus_99 {
+    padding-right: var(--content-spacing);
+}
+
+.CardContent_seasonPointsContainer_fb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.CardContent_base__selected_ce .CardContent_seasonPointsContainer_fb {
+        padding-left: var(--content-spacing);
+        padding-right: var(--content-spacing);
+        bottom: 16rem;
+    }
+
+.mediaSmall .CardContent_base__selected_ce .CardContent_seasonPointsContainer_fb {
+            bottom: 8rem;
+}
+
+.mediaMedium .CardContent_base__selected_ce .CardContent_seasonPointsContainer_fb {
+            bottom: 38rem;
+}
+
+.mediaLarge .CardContent_base__selected_ce .CardContent_seasonPointsContainer_fb {
+            bottom: 18rem;
+}
+
+.mediaExtraLarge .CardContent_base__selected_ce .CardContent_seasonPointsContainer_fb {
+            bottom: 20rem;
+}
+
+.CardContent_base__collapsed_a6 .CardContent_seasonPointsContainer_fb {
+        bottom: 22rem;
+    }
+
+.mediaSmall .CardContent_base__collapsed_a6 .CardContent_seasonPointsContainer_fb {
+            bottom: 12rem;
+}
+
+.mediaMedium .CardContent_base__collapsed_a6 .CardContent_seasonPointsContainer_fb {
+            bottom: 47rem;
+}
+
+.mediaLarge .CardContent_base__collapsed_a6 .CardContent_seasonPointsContainer_fb {
+            bottom: 34rem;
+}
+
+.mediaExtraLarge .CardContent_base__collapsed_a6 .CardContent_seasonPointsContainer_fb {
+            bottom: 40rem;
+}
+
+.CardContent_base__selected_ce .CardContent_seasonPoints_41 {
+        margin: 0 16rem;
+    }
+
+.mediaMedium .CardContent_base__selected_ce .CardContent_seasonPoints_41 {
+            margin: 0 28rem;
+}
+
+.CardContent_base__selected_ce .CardContent_seasonPointWrapper_20 + .CardContent_base__selected_ce .CardContent_seasonPointWrapper_20 {
+            margin-left: -4rem;
+        }
+
+.CardContent_base__collapsed_a6 .CardContent_seasonPointWrapper_20 + .CardContent_base__collapsed_a6 .CardContent_seasonPointWrapper_20 {
+            margin-left: -5rem;
+        }
+
+.mediaLarge .CardContent_base__collapsed_a6 .CardContent_seasonPointWrapper_20 + .CardContent_base__collapsed_a6 .CardContent_seasonPointWrapper_20 {
+                margin-left: -2rem;
+}
+
+.CardContent_venzel_09 {
+    display: flex;
+    align-items: flex-start;
+    flex: 1 1;
+}
+
+.CardContent_venzel__right_27 {
+        transform: scale(-1, 1);
+    }
+
+.CardContent_peak_05 {
+    width: 42rem;
+    height: 14rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.venzel_42x14') no-repeat center / cover;
+}
+
+.CardContent_lines_f4 {
+    flex: 1 1;
+    margin-top: 3rem;
+}
+
+.CardContent_line_ba {
+    height: 1rem;
+    background: rgba(192, 222, 239, 0.6);
+    opacity: 0.8;
+}
+
+.CardContent_line_ba + .CardContent_line_ba {
+        margin-top: 2rem;
+    }
+
+.Card_base_4c {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    position: relative;
+}
+
+.Card_cardContent_83 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* required for correct animations and tooltips for main rewards assets  */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.Card_cardContentInner_b9 {
+    width: 100%;
+    height: 100%;
+}
+
+.Card_cardContentInner__selected_f6 {
+        width: 444rem;
+    }
+
+.mediaSmall .Card_cardContentInner__selected_f6 {
+            width: 540rem;
+}
+
+.mediaMedium .Card_cardContentInner__selected_f6 {
+            width: 648rem;
+}
+
+.mediaLarge .Card_cardContentInner__selected_f6 {
+            width: 792rem;
+}
+
+.mediaExtraLarge .Card_cardContentInner__selected_f6 {
+            width: 1068rem;
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+@keyframes Cards_fadeIn_52 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Cards_fadeInThreeQuarters_8d {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+@keyframes Cards_fadeInHalf_bd {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+@keyframes Cards_fadeOut_55 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes Cards_fadeInWithScale_0c {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes Cards_slideUp_39 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Cards_scale_60 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes Cards_raysAppearance_32 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+@keyframes Cards_rotate_7c {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes Cards_reverse-rotate_67 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes Cards_glowAppearance_d8 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Cards_highlightAppearance_c3 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+@keyframes Cards_blink_2e {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Cards_slideUpIn_6a {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.Cards_base_b0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Cards_card_18 {
+    position: relative;
+    transition: width .3s cubic-bezier(.6, .04, .98, .34);
+}
+.Cards_card__collapsed_9b {
+    width: 74rem;
+    height: 360rem;
+    }
+.mediaSmall .Cards_card__collapsed_9b {
+        width: 90rem;
+}
+.mediaMedium .Cards_card__collapsed_9b {
+        width: 108rem;
+        height: 460rem;
+}
+.mediaLarge .Cards_card__collapsed_9b {
+        width: 132rem;
+        height: 600rem;
+}
+.mediaExtraLarge .Cards_card__collapsed_9b {
+        width: 178rem;
+        height: 730rem;
+}
+.Cards_card__collapsed_9b {
+        cursor: pointer;
+}
+.Cards_card__selected_1b {
+    width: 444rem;
+    height: 360rem;
+    }
+.mediaSmall .Cards_card__selected_1b {
+        width: 540rem;
+}
+.mediaMedium .Cards_card__selected_1b {
+        width: 648rem;
+        height: 460rem;
+}
+.mediaLarge .Cards_card__selected_1b {
+        width: 792rem;
+        height: 600rem;
+}
+.mediaExtraLarge .Cards_card__selected_1b {
+        width: 1068rem;
+        height: 730rem;
+}
+.Cards_card__selected_1b {
+        cursor: auto;
+}
+.Cards_highlight_28 {
+    width: 694rem;
+    height: 518rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.selected_card_highlight') no-repeat center / cover;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -47%);
+    pointer-events: none;
+}
+.mediaMedium .Cards_highlight_28 {
+        width: 902rem;
+        height: 673rem;
+        transform: translate(-69%, -50%);
+}
+.mediaLarge .Cards_highlight_28 {
+        width: 1380rem;
+        height: 1030rem;
+        transform: translate(-63%, -48%);
+}
+.mediaExtraLarge .Cards_highlight_28 {
+        width: 1836rem;
+        height: 1370rem;
+        transform: translate(-61%, -42%);
+}
+.Cards_highlight__visible_f9 {
+    opacity: 0;
+    animation-name: Cards_fadeIn_52;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: .6s;
+    animation-iteration-count: 1;
+    }
+.Cards_divider_06 {
+    width: 1rem;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #d5f7ff 50%, #fff 50%, transparent);
+    opacity: .3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.Cards_divider__left_c1 {
+        left: 1rem;
+    }
+.Cards_divider__right_c2 {
+        right: -1rem;
+    }
+.Cards_shadow_39 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+.Cards_card__collapsed_9b .Cards_shadow_39 {
+    width: 74rem;
+    height: 360rem;
+    }
+.mediaSmall .Cards_card__collapsed_9b .Cards_shadow_39 {
+        width: 90rem;
+}
+.mediaMedium .Cards_card__collapsed_9b .Cards_shadow_39 {
+        width: 108rem;
+        height: 460rem;
+}
+.mediaLarge .Cards_card__collapsed_9b .Cards_shadow_39 {
+        width: 132rem;
+        height: 600rem;
+}
+.mediaExtraLarge .Cards_card__collapsed_9b .Cards_shadow_39 {
+        width: 178rem;
+        height: 730rem;
+}
+.Cards_card__collapsed_9b .Cards_shadow_39 {
+        background-image: radial-gradient(50% 50% at 100% 50%, rgba(4, 28, 63, 0.7) 0%, rgba(4, 28, 63, 0) 100%);
+}
+.Cards_card__selected_1b .Cards_shadow_39 {
+    width: 444rem;
+    height: 360rem;
+    }
+.mediaSmall .Cards_card__selected_1b .Cards_shadow_39 {
+        width: 540rem;
+}
+.mediaMedium .Cards_card__selected_1b .Cards_shadow_39 {
+        width: 648rem;
+        height: 460rem;
+}
+.mediaLarge .Cards_card__selected_1b .Cards_shadow_39 {
+        width: 792rem;
+        height: 600rem;
+}
+.mediaExtraLarge .Cards_card__selected_1b .Cards_shadow_39 {
+        width: 1068rem;
+        height: 730rem;
+}
+.Cards_card__selected_1b .Cards_shadow_39 {
+        background-image: radial-gradient(10% 50% at 100% 50%, rgba(4, 28, 63, 0.7) 0%, rgba(4, 28, 63, 0) 100%);
+}
+
+.ErrorState_base_27 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 8%;
+}
+
+.ErrorState_titleContainer_56 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15rem;
+    position: relative;
+}
+
+.ErrorState_alertIcon_7a {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.library.alertBigIcon') no-repeat center / cover;
+    position: absolute;
+    right: 100%;
+    transform: translateX(-6rem);
+}
+
+.ErrorState_title_55 {
+    color: #FEFEEC;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.ErrorState_description_57 {
+    color: rgba(255,255,255, 0.6);
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+
+
+.LegendItem_base_10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* provide space for possible rank change without layout jump */
+    padding-bottom: 24.8rem;
+    position: relative;
+}
+
+.LegendItem_pointsContainer_02 {
+    display: flex;
+    justify-content: center;
+}
+
+.LegendItem_pointsCount_ff {
+    margin-top: 4rem;
+    margin-right: 2rem;
+    color: rgba(255,255,255, .4);
+    font-size: 16rem;
+    font-weight: 700;
+}
+
+.LegendItem_pointsCount__current_43 {
+        margin-top: 3rem;
+        color: #FFFFFF;
+        font-size: 24rem;
+    }
+
+.LegendItem_currentRankContainer_38 {
+    color: rgba(255,255,255, .6);
+    font-size: 14rem;
+    line-height: 1.2;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    transition: 0s opacity linear;
+}
+
+.LegendItem_currentRankContainer__visible_ea {
+        /* rank container should be visible only after expanding of whole legend,
+        and hide immediately after start of legend collapsing */
+        opacity: 1;
+        transition-delay: 500ms;
+        transition-duration: .3s;
+    }
+
+.LegendItem_rankString_9f {
+    flex-wrap: nowrap;
+    margin-top: 8rem;
+}
+
+.LegendItem_rank_95 {
+    color: #E9E2BF;
+}
+
+.LegendItem_seasonPoint_a7 {
+    transform: translateY(8rem);
+}
+
+.LegendItem_seasonPoint__current_3e {
+        transform: translateY(7rem);
+    }
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+@keyframes Legend_fadeIn_ae {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Legend_fadeInThreeQuarters_6e {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .75;
+    }
+}
+@keyframes Legend_fadeInHalf_b2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+@keyframes Legend_fadeOut_60 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes Legend_fadeInWithScale_a7 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes Legend_slideUp_57 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Legend_scale_c6 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes Legend_raysAppearance_6d {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(0);
+    }
+}
+@keyframes Legend_rotate_c5 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes Legend_reverse-rotate_75 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes Legend_glowAppearance_f6 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Legend_highlightAppearance_17 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+@keyframes Legend_blink_fe {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Legend_slideUpIn_f1 {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.Legend_base_af {
+    display: flex;
+    align-items: center;
+}
+.Legend_items_20 {
+    width: 252rem;
+    overflow: hidden;
+    transition: 500ms width cubic-bezier(.78, .13, .15, .86);
+}
+.mediaMedium .Legend_items_20 {
+        width: 312rem;
+}
+.Legend_items__mask_left_2f {
+        mask-image: linear-gradient(270deg, transparent, #d9d9d9 50%, #d9d9d9);
+    }
+.Legend_items__mask_center_4e {
+        mask-image: linear-gradient(270deg, transparent, #d9d9d9 50%, transparent);
+    }
+.Legend_items__mask_right_b7 {
+        mask-image: linear-gradient(270deg, #d9d9d9, #d9d9d9 50%, transparent);
+    }
+.Legend_items__mask_none_4f {
+        mask-image: none;
+    }
+.Legend_items__withCurrentRank_ba {
+        width: 292rem;
+    }
+.mediaMedium .Legend_items__withCurrentRank_ba {
+            width: 358rem;
+}
+.Legend_items__hovered_67 {
+        width: 504rem;
+    }
+.mediaMedium .Legend_items__hovered_67 {
+            width: 624rem;
+}
+.Legend_items__withCurrentRank_ba.Legend_items__hovered_67 {
+        width: 544rem;
+    }
+.mediaMedium .Legend_items__withCurrentRank_ba.Legend_items__hovered_67 {
+            width: 670rem;
+}
+.Legend_items__noOverflow_3b {
+        overflow: visible;
+    }
+.Legend_inner_35 {
+    display: flex;
+    align-items: flex-end;
+    transform: translateX(0rem);
+    transition: 500ms transform cubic-bezier(.78, .13, .15, .86);
+}
+.Legend_inner__-1_1c {
+        transform: translateX(84rem);
+    }
+.mediaMedium .Legend_inner__-1_1c {
+            transform: translateX(104rem);
+}
+.Legend_inner__0_8d {
+        transform: translateX(84rem);
+    }
+.mediaMedium .Legend_inner__0_8d {
+            transform: translateX(104rem);
+}
+.Legend_inner__1_7e {
+        transform: translateX(0rem);
+    }
+.mediaMedium .Legend_inner__1_7e {
+            transform: translateX(0rem);
+}
+.Legend_inner__2_f5 {
+        transform: translateX(-84rem);
+    }
+.mediaMedium .Legend_inner__2_f5 {
+            transform: translateX(-104rem);
+}
+.Legend_inner__3_4d {
+        transform: translateX(-168rem);
+    }
+.mediaMedium .Legend_inner__3_4d {
+            transform: translateX(-208rem);
+}
+.Legend_inner__4_22 {
+        transform: translateX(-252rem);
+    }
+.mediaMedium .Legend_inner__4_22 {
+            transform: translateX(-312rem);
+}
+.Legend_inner__5_43 {
+        transform: translateX(-252rem);
+    }
+.mediaMedium .Legend_inner__5_43 {
+            transform: translateX(-312rem);
+}
+.Legend_item_27 {
+    margin: 0 10rem;
+}
+.Legend_item__current_7f {
+        margin: 0 20rem;
+    }
+.Legend_item__ghost_a6 {
+        width: 84rem;
+    }
+.mediaMedium .Legend_item__ghost_a6 {
+            width: 104rem;
+}
+.Legend_description_f0 {
+    width: 280rem;
+    margin-left: 36rem;
+    color: #FEFEEC;
+    font-size: 14rem;
+    line-height: 1.2;
+}
+.mediaMedium .Legend_description_f0 {
+        width: 328rem;
+        margin-left: 36rem;
+        font-size: 16rem;
+}
+
+.StatusBanner_base_af {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.blue_highlight_750x46') no-repeat center / 750rem 46rem;
+    position: relative;
+}
+
+.StatusBanner_line_81 {
+    width: 100%;
+    height: 1rem;
+    background: linear-gradient(90deg, transparent 33.33%, #fbffde 50%, transparent 66.67%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.StatusBanner_description_46 {
+    color: rgba(255,255,255, .8);
+    font-size: 14rem;
+    line-height: 18rem;
+}
+
+.YearlyRewardsPage_base_39 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.YearlyRewardsPage_headersWrapper_8e {
+    position: relative;
+    z-index: 1;
+}
+
+.YearlyRewardsPage_contentWrapper_73 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+}
+
+.YearlyRewardsPage_cardsContainer_90 {
+    display: flex;
+    justify-content: center;
+    flex: 1 1;
+}
+
+.YearlyRewardsPage_legend_2b {
+    display: flex;
+    justify-content: center;
+    padding: 28rem 0 16rem;
+}
+
+.mediaMedium .YearlyRewardsPage_legend_2b {
+        padding-top: 0;
+        padding-bottom: 22rem;
+}
+
+.mediaLarge .YearlyRewardsPage_legend_2b {
+        padding-top: 42rem;
+}
+
+.mediaExtraLarge .YearlyRewardsPage_legend_2b {
+        padding-top: 63rem;
+        padding-bottom: 75rem;
+}
+
+.Row_base_de {
+    display: flex;
+    flex-direction: row;
+}
+
+    .Row_base__secondary_0a {
+        color: rgba(255,255,255, .3);
+        font-size: 14rem;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+
+    .mediaMedium .Row_base__secondary_0a {
+            padding-top: 8rem;
+}
+
+    .mediaLarge .Row_base__secondary_0a {
+            padding-top: 6rem;
+}
+
+.Row_dashes_87 {
+    display: flex;
+    flex: 1;
+    align-self: flex-end;
+    height: 1rem;
+    margin: 0 12rem;
+    background-image: linear-gradient(90deg, rgba(255,255,255, .2), rgba(0, 0, 0, 0) 75%, transparent 75%, transparent 100%);
+    background-size: 4rem 2rem;
+    transform: translateY(-4rem);
+}
+
+.Row_dash_0a {
+    color: #FFFFFF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.Row_base__secondary_0a .Row_dash_0a {
+        opacity: .3;
+    }
+
+.Separator_base_93 {
+    width: 196rem;
+    height: 40rem;
+    transform: translateY(-5rem);
+}
+    .mediaSmall .Separator_base_93 {
+        width: 276rem;
+}
+    .mediaMedium .Separator_base_93 {
+        width: 326rem;
+}
+    .mediaLarge .Separator_base_93 {
+        width: 356rem;
+}
+    .mediaExtraLarge .Separator_base_93 {
+        width: 416rem;
+}
+    .Separator_base_active_37 {
+        width: 222rem;
+        transform: translateY(0);
+    }
+    .mediaSmall .Separator_base_active_37 {
+            width: 302rem;
+}
+    .mediaMedium .Separator_base_active_37 {
+            width: 352rem;
+}
+    .mediaLarge .Separator_base_active_37 {
+            width: 382rem;
+}
+    .mediaExtraLarge .Separator_base_active_37 {
+            width: 442rem;
+}
+
+.SeasonCard_base_ad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 270rem;
+    height: 100%;
+    padding-bottom: 45rem;
+    position: relative;
+}
+    .mediaSmall .SeasonCard_base_ad {
+        width: 329rem;
+        padding-bottom: 45rem;
+}
+    .mediaMedium .SeasonCard_base_ad {
+        width: 393rem;
+        padding-bottom: 44rem;
+}
+    .mediaLarge .SeasonCard_base_ad {
+        width: 480rem;
+        padding-bottom: 70rem;
+}
+    .mediaExtraLarge .SeasonCard_base_ad {
+        width: 654rem;
+        padding-bottom: 84rem;
+}
+
+.SeasonCard_heading_bd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SeasonCard_base__muffled_c4 .SeasonCard_heading_bd {
+        opacity: .6;
+    }
+
+.SeasonCard_name_8e {
+    color: #FFFFFF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaSmall .SeasonCard_name_8e {
+        font-size: 20rem;
+}
+
+.mediaMedium .SeasonCard_name_8e {
+        font-size: 24rem;
+}
+
+.mediaExtraLarge .SeasonCard_name_8e {
+        font-size: 28rem;
+}
+
+.SeasonCard_status_93 {
+    color: rgba(255,255,255, .6);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 4rem;
+}
+
+.mediaMedium .SeasonCard_status_93 {
+        font-size: 16rem;
+}
+
+.SeasonCard_rankImage_26 {
+    display: flex;
+    width: 150rem;
+    height: 150rem;
+    margin: 10rem 0 6rem;
+    background: no-repeat center / cover;
+}
+
+.mediaMedium .SeasonCard_rankImage_26 {
+        width: 200rem;
+        height: 200rem;
+        margin: 14rem 0 10rem;
+}
+
+.mediaLarge .SeasonCard_rankImage_26 {
+        width: 280rem;
+        height: 280rem;
+        margin: 13rem 0 20rem;
+}
+
+.mediaExtraLarge .SeasonCard_rankImage_26 {
+        width: 420rem;
+        height: 420rem;
+        margin: 8rem 0 30rem;
+}
+
+.SeasonCard_rankStatus_16 {
+    color: #FFFFFF;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 6rem;
+}
+
+.mediaSmall .SeasonCard_rankStatus_16 {
+        font-size: 20rem;
+}
+
+.mediaMedium .SeasonCard_rankStatus_16 {
+        margin-bottom: 6rem;
+        font-size: 24rem;
+}
+
+.mediaLarge .SeasonCard_rankStatus_16 {
+        margin-bottom: 40rem;
+        font-size: 24rem;
+}
+
+.mediaExtraLarge .SeasonCard_rankStatus_16 {
+        margin-bottom: 30rem;
+        font-size: 24rem;
+}
+
+.SeasonCard_base__muffled_c4 .SeasonCard_rankStatus_16 {
+        opacity: .6;
+    }
+
+.SeasonCard_table_17 {
+    color: rgba(255,255,255, .6);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 34rem 20rem;
+}
+
+.mediaSmall .SeasonCard_table_17 {
+        padding: 0 50rem 20rem;
+}
+
+.mediaMedium .SeasonCard_table_17 {
+        padding: 0 50rem 34rem;
+        font-size: 20rem;
+}
+
+.mediaLarge .SeasonCard_table_17 {
+        padding: 0 84rem 40rem;
+}
+
+.mediaExtraLarge .SeasonCard_table_17 {
+        padding: 0 141rem 124rem;
+}
+
+.SeasonCard_base__muffled_c4 .SeasonCard_table_17 {
+        opacity: .6;
+    }
+
+.SeasonCard_container_28 {
+    margin: 17rem 0 2rem;
+}
+
+.mediaLarge .SeasonCard_container_28 {
+        margin-bottom: 9rem;
+}
+
+.SeasonCard_condition_6b {
+    position: absolute;
+    bottom: 24rem;
+}
+
+.mediaMedium .SeasonCard_condition_6b {
+        bottom: 15rem;
+}
+
+.mediaLarge .SeasonCard_condition_6b {
+        bottom: 28rem;
+}
+
+.mediaExtraLarge .SeasonCard_condition_6b {
+        bottom: 38rem;
+}
+
+.SeasonCard_glow_54 {
+    height: 254rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.mediaSmall .SeasonCard_glow_54 {
+        height: 309rem;
+}
+
+.mediaMedium .SeasonCard_glow_54 {
+        height: 370rem;
+}
+
+.mediaLarge .SeasonCard_glow_54 {
+        height: 450rem;
+}
+
+.mediaExtraLarge .SeasonCard_glow_54 {
+        height: 614rem;
+}
+
+.SeasonCard_statisticsAvailability_15,
+.SeasonCard_generationOfStatistics_96 {
+    color: rgba(255,255,255, .8);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    justify-content: center;
+}
+
+.mediaMedium .SeasonCard_statisticsAvailability_15, .mediaMedium .SeasonCard_generationOfStatistics_96 {
+        font-size: 16rem;
+}
+
+.SeasonCard_generationOfStatistics_96 {
+    animation: SeasonCard_blink_6f 2s infinite;
+}
+
+@keyframes SeasonCard_blink_6f {
+    0% {
+        opacity: .5;
+    }
+
+    50% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+.YearlyStatisticsPage_base_87 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-size: 1024rem 680rem;
+}
+    .mediaSmall .YearlyStatisticsPage_base_87 {
+        /* 1368, not 1366 because of dds format (added transparent pixel to left and right side of asset */
+        background-size: 1366rem 680rem;
+}
+    .mediaMedium .YearlyStatisticsPage_base_87 {
+        background-size: 1600rem 812rem;
+}
+    .mediaLarge .YearlyStatisticsPage_base_87 {
+        background-size: 1920rem 992rem;
+}
+    .mediaExtraLarge .YearlyStatisticsPage_base_87 {
+        background-size: 2560rem 1352rem;
+}
+
+.YearlyStatisticsPage_contentWrapper_24 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1 1;
+    width: 100%;
+    margin-top: 31rem;
+}
+
+.mediaLarge .YearlyStatisticsPage_contentWrapper_24 {
+        margin-top: 60rem;
+}
+
+.mediaExtraLarge .YearlyStatisticsPage_contentWrapper_24 {
+        margin-top: 134rem;
+}
+
+.YearlyStatisticsPage_cardWrapper_dd {
+    position: relative;
+}
+
+.YearlyStatisticsPage_divider_a2 {
+    width: 1rem;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #d5f7ff 30%, #fff 70%, transparent);
+    opacity: .1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.YearlyStatisticsPage_divider__left_bf {
+        left: 0;
+    }
+
+.YearlyStatisticsPage_divider__right_92 {
+        right: 0;
+    }
 
 /* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .App_base_ef {
     width: 100%;
     height: 100%;
+    background: #000 no-repeat center / cover;
     position: relative;
 }
+.App_base__qualification_73 {
+        background-image: url('R.images.gui.maps.icons.comp7.backgrounds.qualification');
+    }
+.App_base__progression_3b {
+        background-image: url('R.images.gui.maps.icons.comp7.backgrounds.comp7_bg_progression');
+    }
+.App_base__leaderboard_da {
+        background-image: url('R.images.gui.maps.icons.comp7.backgrounds.leaderboard_bg');
+    }
+.App_base__rankRewards_55 {
+        background-image: url('R.images.gui.maps.icons.comp7.backgrounds.rewards_bg');
+    }
+.App_base__weeklyQuests_58 {
+        background-image: url('R.images.gui.maps.icons.comp7.backgrounds.quests_bg');
+    }
 .App_viewContainer_81 {
     width: 100%;
     height: 100%;
@@ -5444,8 +8019,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .App_sidebar_95 {
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 16rem;
     transform: translateY(-50%);
+}
+.mediaSmall .App_sidebar_95 {
+        left: 32rem;
+}
+.mediaExtraLarge .App_sidebar_95 {
+        left: 56rem;
 }
 .App_info_e9 {
     position: absolute;

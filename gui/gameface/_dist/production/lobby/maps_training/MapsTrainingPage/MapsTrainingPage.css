@@ -148,7 +148,7 @@
 }
 
 .VerticalBar_thumb_32 {
-    display: none;
+    display: flex;
     flex: 0 0 13rem;
     width: 13rem;
     height: 100%;
@@ -821,7 +821,7 @@
         }
 
     .ToggleButton_base__slot_4e.ToggleButton_base__active_8d {
-    border-image: url('R.atlases.components.indicator_selected_box') 12 fill / 12rem / 9rem;
+    border-image: url('R.images.gui.maps.icons.buttons.indicator_selected_box') 12 fill / 12rem / 9rem;
         }
 
     .ToggleButton_base__slot_4e.ToggleButton_base__active_8d:active {
@@ -890,7 +890,7 @@
     }
 
 .ToggleButton_base__button_f5.ToggleButton_base__active_8d .ToggleButton_overlay_1d {
-    border-image: url('R.atlases.components.indicator_selected_box') 12 fill / 12rem / 9rem;
+    border-image: url('R.images.gui.maps.icons.buttons.indicator_selected_box') 12 fill / 12rem / 9rem;
     }
 
 .ToggleButton_base__button_f5.ToggleButton_base__active_8d:hover .ToggleButton_overlay_1d {
@@ -1095,47 +1095,6 @@
 .SceneWrapper_grab__down_50 {
         cursor: all-scroll;
     }
-
-.Tooltip_base_7a {
-    padding: 23rem 25rem 27rem;
-    border-image: url('R.atlases.components.tooltip_background') 24 fill / 24rem;
-    position: absolute;
-    top: 100%;
-    right: -6rem;
-    z-index: 1;
-    transform: translateY(4rem);
-    pointer-events: none;
-}
-
-    .Tooltip_base__left_99 {
-        right: 7rem;
-    }
-
-    .Tooltip_base__left_99.Tooltip_base__small_8a,
-        .Tooltip_base__left_99.Tooltip_base__extraSmall_ca {
-            right: 4rem;
-        }
-
-    .Tooltip_base__left_99.Tooltip_base__teamPoint_a6 {
-            right: 28rem;
-        }
-
-    .Tooltip_base__left_99.Tooltip_base__teamPoint_a6.Tooltip_base__small_8a,
-            .Tooltip_base__left_99.Tooltip_base__teamPoint_a6.Tooltip_base__extraSmall_ca {
-                right: 13rem;
-            }
-
-    .Tooltip_base__bottom_02 {
-        top: auto;
-        bottom: 18rem;
-    }
-
-.Tooltip_image_94 {
-    width: 380rem;
-    height: 220rem;
-    border: 1rem solid #3d3b31;
-    background: no-repeat 50% / cover;
-}
 
 .Point_base_4d {
     position: absolute;
@@ -1532,7 +1491,7 @@
         }
 
 .Reward_info__credits_ef {
-        color: #CED9D9;
+        color: #E9E2BF;
     }
 
 .Reward_info__gold_36 {

@@ -1,0 +1,121 @@
+(def constant CARD_DISABLE_TEXTURE 'bitmap:DisableCard')
+(def constant PREM_DASHBOARD_ADAPTIVE_WIDTH 1600)
+(def constant PREM_DASHBOARD_ADAPTIVE_HEIGTH 900)
+(def constant PREM_DASHBOARD_PARENT_CONTROL_ADAPTIVE_HEIGTH 1080)
+(def constant PREM_DASHBOARD_CARD_W_520 520)
+(def constant PREM_DASHBOARD_CARD_W_366 366)
+(def constant PREM_DASHBOARD_CARD_H_140 140)
+(def constant PREM_DASHBOARD_CARD_H_130 130)
+(def constant PREM_DASHBOARD_CARD_W_360 360)
+(def constant PREM_DASHBOARD_CARD_W_250 250)
+(def constant PREM_DASHBOARD_CARD_H_400 400)
+(def constant PREM_DASHBOARD_CARD_H_340 340)
+
+(def css PremAccHighTitleOrangeTextStyle()
+    (fontFamily = $TitleFont)
+    (fontSize = 18)
+    (textColor = 0xEE7000)
+)
+
+(def css PremAccTitleOrangeTextStyle()
+    (fontFamily = $TitleFont)
+    (fontSize = 14)
+    (textColor = 0xEE7000)
+)
+
+(def css PremAccLinkTextStyle()
+    (fontFamily = $FieldFont)
+    (fontSize = 14)
+    (textColor = 0xFFFFFF)
+)
+
+(def macro PremDashboardAdaptiveSize()
+    (scope
+        (var isNormalSize:bool = 
+            "viewSize.width >= PREM_DASHBOARD_ADAPTIVE_WIDTH && viewSize.height >= PREM_DASHBOARD_ADAPTIVE_HEIGTH"
+            (event "viewResized")
+        )
+    )
+)
+
+(def macro PremDashboardMainViewAdaptiveSize()
+    (scope
+        (event premDashboardSizeChangedEvent)
+        (var isNormalSize:bool = "!isShowParentControl 
+                ? (viewSize.width >= PREM_DASHBOARD_ADAPTIVE_WIDTH && viewSize.height >= PREM_DASHBOARD_PARENT_CONTROL_ADAPTIVE_HEIGTH) 
+                : (viewSize.width >= PREM_DASHBOARD_ADAPTIVE_WIDTH && viewSize.height >= PREM_DASHBOARD_ADAPTIVE_HEIGTH)"
+            (event "viewResized")
+        )
+        (dispatch premDashboardSizeChangedEvent dir=2 args="{value: isNormalSize}"
+            (bind trigger "isNormalSize")
+        )
+    )
+)
+
+(def macro HoverCardAndStroke()
+    (scope
+        (var hoverAlpha:number = 0)
+        (var strokeAlpha:number = 0.2)
+        
+        (controller $Animation
+            (bindcall play duration=0.2 to={hoverAlpha:1.0, strokeAlpha:0.25} 
+                (event "evCardOver")
+            )
+            (bindcall play duration=0.2 to={hoverAlpha:0.0, strokeAlpha:0.2} 
+                (event "evCardOut")
+            )
+        )
+    )
+    (block
+        (style
+            (macro AbsPositionFullSize)
+        )
+        (image
+            (style
+                (macro AbsPositionFullSize)
+                (bind alpha "hoverAlpha")
+            )
+            (source = "R.images.gui.maps.icons.premacc.dashboard.hover()")
+        )
+        (image
+            (style
+                (macro AbsPositionFullSize)
+                (bind alpha "strokeAlpha")
+                (scale9grid = "Rect(10,10,500,380)")
+            )
+            (source = "R.images.gui.maps.icons.premacc.dashboard.stroke()")
+        )
+        (image
+            (style
+                (macro AbsPositionFullSize)
+                (scale9grid = "Rect(7,7,26,26)")
+            )
+            (source = "R.images.gui.maps.icons.premacc.dashboard.stroke_corner()")
+        )
+
+        (macro EmptyHitAreaMacro)
+    )
+)
+
+(def macro PremDashboardAvailable()
+    (block
+        (name = 'disable')
+        (style
+            (macro AbsPositionFullSize)
+            (backgroundImage = "CARD_DISABLE_TEXTURE")
+            (backgroundSize = "repeat")
+            (alpha = 0.3)
+        )
+        (bind visible "!isAvailable")
+    )
+)
+
+
+(def macro DashboardCardSounds(over:expression, click:expression)
+    (exec "playSound(R.sounds.highlight())" 
+        (event "evCardOver")
+    )
+    (exec "playSound(R.sounds.play())"
+        (event "click")
+    )
+)

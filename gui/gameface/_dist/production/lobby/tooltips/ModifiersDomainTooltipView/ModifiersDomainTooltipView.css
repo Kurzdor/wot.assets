@@ -1,0 +1,108 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
+
+.ModifierParameter_base_84 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8rem;
+}
+.ModifierParameter_paramValue_7d {
+    width: 100rem;
+    padding-right: 16rem;
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 18rem;
+    text-align: right;
+    white-space: nowrap;
+}
+.ModifierParameter_paramIcon_ff {
+    width: 100rem;
+    background: url('R.images.gui.maps.icons.library.InformationIcon') 70rem 3rem / 16rem 16rem no-repeat;
+}
+.ModifierParameter_paramValue_7d.ModifierParameter_paramValue__positive_e4 {
+    color: #80d43a;
+}
+.ModifierParameter_paramValue_7d.ModifierParameter_paramValue__negative_7e {
+    color: #ff2717;
+}
+.ModifierParameter_paramValue_7d.ModifierParameter_paramValue__undefined_f6 {
+    color: #e9e2bf;
+}
+.ModifierParameter_paramName_9a {
+    flex: 1;
+    width: 100%;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 18rem;
+}
+.ModifierParameter_restrictBlock_97 {
+    color: #595950;
+}
+
+.App_base_17 {
+    width: 420rem;
+    padding: 0 20rem 8rem 0;
+    color: #8c8c7e;
+    font-size: 14rem;
+}
+.App_header_5e {
+    display: flex;
+    flex-direction: row;
+}
+.App_icon_7c {
+    width: 80rem;
+    height: 80rem;
+    background: no-repeat 50% / contain;
+}
+.App_headerText_b7 {
+    flex: 1;
+    width: 100%;
+    margin-top: 19rem;
+}
+.App_separator_35 {
+    width: 100%;
+    height: 7rem;
+    margin-top: 15rem;
+    background: url('R.images.gui.maps.icons.components.tooltip.tool_tip_separator') 50% / contain no-repeat;
+}
+.App_title_21 {
+    margin-bottom: 8rem;
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 17rem;
+}
+.App_description_d2 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 18rem;
+}
+.App_params_dc {
+    width: 100%;
+    margin-top: 9rem;
+    margin-bottom: 22rem;
+    padding-left: 20rem;
+}
+.App_paramsTitle_4a {
+    margin-bottom: 12rem;
+    color: #fefeec;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 14rem;
+}
+.App_paramsList_4b {
+    width: 100%;
+}
+

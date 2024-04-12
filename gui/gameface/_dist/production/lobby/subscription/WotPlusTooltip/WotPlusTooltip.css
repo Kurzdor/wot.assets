@@ -3,106 +3,124 @@
     position: absolute;
 }
 
-.TooltipDecorator_decorator_3d {
-    padding: 4rem 6rem 8rem; /* border offset*/
-    border-image-source: url('R.atlases.components.tooltip_background');
-    border-image-slice: 24 fill;
-    border-image-width: 24rem;
-    position: relative;
-}
-
-.TooltipDecorator_decoratorContent_de {
-    background-color: #000;
-}
-
-.GradientDecorator_base_5f {
-    display: flex;
-    justify-content: center;
-    padding: 12rem 0 18rem;
-    position: relative;
-}
-
-.GradientDecorator_bg_fc {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background: url('R.images.gui.maps.icons.library.white_bg') no-repeat 50% / 100%;
-}
-
-.GradientDecorator_child_01 {
-    display: flex;
-    width: 100%;
-    position: relative;
-}
-
-.GradientDecorator_divider_9e {
-    margin: 0;
-}
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+        padding: 4rem 6rem 8rem;
+        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+        border-image-slice: 24 fill;
+        border-image-width: 24rem;
+        position: relative;
+    }
 
 .WotPlusTooltipApp_base_e0 {
     display: flex;
     flex-direction: column;
-    width: 400rem;
-    padding: 14rem 20rem 0;
+    align-items: stretch;
+    width: 340rem;
     position: relative;
 }
 
-.WotPlusTooltipApp_title_23 {
-    color: #E9E2BF;
-    font-size: 15rem;
-    font-weight: 700;
-    line-height: 1.15;
+.WotPlusTooltipApp_headerBlock_55 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 180rem;
+    padding-bottom: 10rem;
+    background: url('R.images.gui.maps.icons.subscription.tooltip.wotplus_header') center / cover;
 }
 
-.WotPlusTooltipApp_desc_ef {
+.WotPlusTooltipApp_headerTitle_8e {
+    color: #FEFEEC;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 25);
+}
+
+.WotPlusTooltipApp_headerDesc_f7 {
+    color: #8C8C7E;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 280rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 25);
+}
+
+.WotPlusTooltipApp_decorator_a3 {
+    display: flex;
+    padding: 5rem 20rem 10rem;
+}
+
+.WotPlusTooltipApp_gridBase_b7 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.WotPlusTooltipApp_gridElement_18 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1 0 150rem;
+    padding: 10rem 0;
+}
+
+.WotPlusTooltipApp_bonusImg_2a {
+    width: 32rem;
+    height: 32rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.WotPlusTooltipApp_bonusName_f0 {
     color: #8C8C7E;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
-    margin-top: 9rem;
-}
-
-.WotPlusTooltipApp_decorator_a3 {
-    width: 100%;
-    margin-top: 19rem;
+    max-width: 120rem;
+    margin-left: 5rem;
 }
 
 .WotPlusTooltipApp_statusBlock_d8 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    margin-bottom: 15rem;
 }
 
 .WotPlusTooltipApp_status_e3 {
-    color: #595950;
-    font-size: 14rem;
+    color: #CBAC77;
+    font-size: 16rem;
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 1.25;
     display: flex;
 }
 
 .WotPlusTooltipApp_status__activated_ca {
         color: #7AB300;
-        font-size: 15rem;
-        font-weight: 700;
-        line-height: 1.15;
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
         letter-spacing: .8rem;
     }
 
 .WotPlusTooltipApp_status__suspended_a8 {
-        color: #EE7000;
-        font-size: 15rem;
-        font-weight: 700;
-        line-height: 1.15;
+        color: #FF2717;
+        font-size: 16rem;
+        font-weight: 400;
+        line-height: 1.25;
         letter-spacing: .8rem;
     }
+
+.WotPlusTooltipApp_description_bd {
+    justify-content: center;
+    width: 280rem;
+    color: #8C8C7E;
+    text-align: center;
+}
 
 .WotPlusTooltipApp_chargeBlock_69 {
     display: flex;

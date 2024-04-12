@@ -1,0 +1,174 @@
+body {
+    margin: 1rem;
+    overflow: hidden;
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+.App_base_4e {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.App_bg_c0 {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.banner_entry_point.c_160x112') no-repeat center / cover;
+    filter: brightness(1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    transition: filter .5s cubic-bezier(.07, .82, .17, 1), transform .5s cubic-bezier(.07, .82, .17, 1);
+}
+.mediaMedium .App_bg_c0 {
+        background-image: url('R.images.cosmic_event.gui.maps.icons.banner_entry_point.c_220x112');
+}
+.mediaLarge .App_bg_c0 {
+        background-image: url('R.images.cosmic_event.gui.maps.icons.banner_entry_point.c_300x150');
+}
+.App_base_4e:hover .App_bg_c0 {
+        filter: brightness(1.05);
+        transform: scale(1.03);
+    }
+.App_base__disabled_22 .App_bg_c0 {
+        filter: brightness(1) grayscale(100%);
+    }
+.App_base__disabled_22:hover .App_bg_c0 {
+        filter: brightness(1.05) grayscale(100%);
+    }
+.App_shadow_07 {
+    width: 100%;
+    height: 100%;
+    border: 1rem solid rgba(255,255,255, .25);
+    border-radius: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .3) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.App_highlight_a2 {
+    width: 100%;
+    height: 100%;
+    border-image-source: url('R.images.cosmic_event.gui.maps.icons.banner_entry_point.border');
+    border-image-slice: 1 fill;
+    border-image-width: 1rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.banner_entry_point.highlight') no-repeat center / cover;
+    filter: brightness(.6);
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.App_base_4e:hover .App_highlight_a2 {
+        filter: none;
+        opacity: 1;
+    }
+.App_overlay_22 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity .5s cubic-bezier(.07, .82, .17, 1);
+}
+.App_base_4e:hover .App_overlay_22 {
+        opacity: .8;
+    }
+.App_particles_9e {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    width: 160rem;
+    height: 112rem;
+    mix-blend-mode: screen;
+}
+.mediaMedium .App_particles_9e {
+        width: 220rem;
+}
+.mediaLarge .App_particles_9e {
+        width: 300rem;
+        height: 150rem;
+}
+.App_content_d0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.App_title_27 {
+    margin-top: -6rem;
+    color: #FFFFFF;
+    font-size: 15rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1rem;
+}
+.mediaMedium .App_title_27 {
+        font-size: 18rem;
+}
+.mediaLarge .App_title_27 {
+        margin-top: -8rem;
+        font-size: 24rem;
+}
+.App_info_31 {
+    max-width: 150rem;
+    margin-top: -3rem;
+    color: #E9E2BF;
+    font-size: 12rem;
+    text-align: center;
+}
+.mediaMedium .App_info_31 {
+        max-width: 200rem;
+        font-size: 16rem;
+}
+.mediaLarge .App_info_31 {
+        max-width: 280rem;
+        margin-top: 2rem;
+}
+.App_seasonDate_9a {
+    padding-left: 21rem;
+    color: #FFDD99;
+    position: absolute;
+    bottom: 7rem;
+}
+.mediaLarge .App_seasonDate_9a {
+        bottom: 12rem;
+}
+.App_seasonDateIcon_4d {
+    width: 38rem;
+    height: 38rem;
+    background: url('R.images.gui.maps.icons.library.ClockIcon_1') no-repeat center / contain;
+    position: absolute;
+    top: 60%;
+    left: -10rem;
+    transform: translateY(-50%);
+}
+.App_base__disabled_22 .App_seasonDateIcon_4d {
+        width: 46rem;
+        height: 46rem;
+        background-image: url('R.images.gui.maps.icons.library.lock_icon');
+        top: 55%;
+        left: -14rem;
+        transform: translateY(-50%);
+    }
+.App_seasonDateText_b3 {
+    font-size: 12rem;
+    text-align: center;
+    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+}
+.mediaMedium .App_seasonDateText_b3 {
+        font-size: 16rem;
+}
+

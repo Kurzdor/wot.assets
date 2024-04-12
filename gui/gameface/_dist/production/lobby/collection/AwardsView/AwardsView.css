@@ -156,6 +156,16 @@
     }
 }
 
+@keyframes App_fadeOut_c6 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @keyframes App_raysAppearance_f4 {
     0% {
         opacity: 0;
@@ -455,6 +465,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
+@keyframes Footer_fadeOut_a7 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @keyframes Footer_raysAppearance_44 {
     0% {
         opacity: 0;
@@ -505,8 +525,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         margin-bottom: 30rem;
 }
 
-.Footer_buttonSize_04 {
+.Footer_button_42 {
+    width: 160rem;
+    height: 32rem;
     padding: 3rem 29rem;
+}
+
+.Footer_rightButton_bd {
+    margin-left: 20rem;
 }
 
 @keyframes Header_slideUp_7d {
@@ -528,6 +554,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes Header_fadeOut_54 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
@@ -564,9 +600,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Header_base_f2 {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    z-index: 1;
 }
 
 .Header_overhead_71 {
@@ -607,6 +644,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 36rem;
     font-weight: 700;
     line-height: 1.1;
+    margin-top: 2rem;
 }
 
 .mediaMedium .Header_title_d5 {
@@ -614,6 +652,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         font-size: 56rem;
         font-weight: 700;
         line-height: 1.1;
+        margin-top: -1rem;
 }
 
 .Reward_base_ea {
@@ -764,7 +803,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         }
 
 .Reward_info__credits_ef {
-        color: #CED9D9;
+        color: #E9E2BF;
     }
 
 .Reward_info__gold_36 {
@@ -825,6 +864,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
+@keyframes Rewards_fadeOut_49 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @keyframes Rewards_raysAppearance_35 {
     0% {
         opacity: 0;
@@ -869,14 +918,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     align-items: flex-start;
 }
 
-.Rewards_base__wide_70 {
-        margin-top: -52rem;
-    }
-
-.mediaMedium .Rewards_base__wide_70 {
-            margin-top: -96rem;
-}
-
 .Rewards_infoLabel_03 {
     margin-top: 20rem;
     line-height: 1.3;
@@ -897,44 +938,60 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .Rewards_infoCount_a4 {
     color: #E9E2BF;
-    font-size: 24rem;
+    font-size: 28rem;
     position: absolute;
-    right: 0;
+    right: 5rem;
     bottom: 0;
     z-index: 4;
 }
 
 .Rewards_base__wide_70 .Rewards_infoCount_a4 {
-        top: 82%;
+        top: 87%;
+    }
+
+.Rewards_infoCount__s400x300_5e {
+        font-size: 36rem;
+    }
+
+.Rewards_infoCount__s296x222_0c {
+        font-size: 28rem;
+    }
+
+.Rewards_infoCount__s232x174_ff {
+        font-size: 22rem;
     }
 
 .Rewards_rewardWrapper_6f {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-weight: 700;
 }
 
 .Rewards_label_50 {
     margin-top: 20rem;
-    color: #e9e2bf;
+    color: #E9E2BF;
     font-size: 14rem;
+    font-weight: 700;
     line-height: 1.3;
     text-align: center;
     z-index: 1;
 }
 
-.mediaMedium .Rewards_label_50 {
-        font-size: 18rem;
-}
+.Rewards_label__s400x300_2e {
+        margin-top: 12rem;
+        font-size: 22rem;
+    }
 
-.Rewards_base__wide_70 .Rewards_label_50 {
-        margin-top: -8rem;
+.Rewards_label__s296x222_f2 {
+        margin-top: -5rem;
         font-size: 18rem;
     }
 
-.mediaMedium .Rewards_base__wide_70 .Rewards_label_50 {
-            font-size: 22rem;
-}
+.Rewards_label__s232x174_c5 {
+        margin-top: -5rem;
+        font-size: 15rem;
+    }
 
 .Rewards_label__credits_4f {
         color: #CED9D9;
@@ -971,6 +1028,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes MainRewards_fadeOut_f6 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
@@ -1102,7 +1169,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-iteration-count: 1;
     width: 100%;
     height: 100%;
-    margin-top: -70rem;
+    margin-top: -90rem;
     position: absolute;
     transform: scale(2);
 }

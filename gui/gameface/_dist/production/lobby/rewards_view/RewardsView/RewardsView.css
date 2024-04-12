@@ -1,0 +1,563 @@
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Reward_base_ea {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+    .Reward_base__s48x48_46,
+    .Reward_base__small_c0 {
+        width: 48rem;
+        height: 48rem;
+    }
+
+    .Reward_base__s80x80_ce,
+    .Reward_base__big_e5 {
+        width: 80rem;
+        height: 80rem;
+    }
+
+    .Reward_base__s128x100_c3 {
+        width: 128rem;
+        height: 100rem;
+    }
+
+    .Reward_base__s180x135_7c {
+        width: 180rem;
+        height: 135rem;
+    }
+
+    .Reward_base__s232x174_67 {
+        width: 232rem;
+        height: 174rem;
+    }
+
+    .Reward_base__s296x222_78 {
+        width: 296rem;
+        height: 222rem;
+    }
+
+    .Reward_base__s400x300_07 {
+        width: 400rem;
+        height: 300rem;
+    }
+
+    .Reward_base__s600x450_f8 {
+        width: 600rem;
+        height: 450rem;
+    }
+
+.Reward_tooltipWrapper_b5 {
+    height: 100%;
+}
+
+.Reward_icon_df {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.Reward_overlay_68 {
+    background: no-repeat center / 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.Reward_base__s48x48_46 .Reward_overlay_68,
+    .Reward_base__small_c0 .Reward_overlay_68 {
+        width: 96rem;
+        height: 96rem;
+        background-size: 100%;
+        overflow: visible;
+    }
+
+.Reward_base__s80x80_ce .Reward_overlay_68,
+    .Reward_base__big_e5 .Reward_overlay_68 {
+        width: 128rem;
+        height: 128rem;
+    }
+
+.Reward_base__s180x135_7c .Reward_overlay_68 {
+        width: 266rem;
+        height: 241rem;
+    }
+
+.Reward_base__s232x174_67 .Reward_overlay_68 {
+        width: 344rem;
+        height: 312rem;
+    }
+
+.Reward_base__s296x222_78 .Reward_overlay_68 {
+        width: 450rem;
+        height: 408rem;
+    }
+
+.Reward_base__s400x300_07 .Reward_overlay_68 {
+        width: 618rem;
+        height: 590rem;
+    }
+
+.Reward_base__s600x450_f8 .Reward_overlay_68 {
+        width: 670rem;
+        height: 575rem;
+    }
+
+.Reward_highlight_36 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 0;
+}
+
+.Reward_image_89 {
+    position: relative;
+}
+
+.Reward_info_72 {
+    margin-top: -13rem;
+    color: #e9e2bf;
+    font-size: 14rem;
+    line-height: 18rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_info_72,
+    .Reward_base__small_c0 .Reward_info_72 {
+        margin: -10rem -10rem 0;
+    }
+
+.Reward_info__multi_63 {
+        margin-right: 2rem;
+        text-align: right;
+    }
+
+.Reward_base__s48x48_46 .Reward_info__multi_63,
+        .Reward_base__small_c0 .Reward_info__multi_63 {
+            margin-right: 0;
+        }
+
+.Reward_info__credits_ef {
+        color: #E9E2BF;
+    }
+
+.Reward_info__gold_36 {
+        color: #FFC363;
+    }
+
+.Reward_info__crystal_36 {
+        color: #C9C9B6;
+    }
+
+.Reward_info__premiumTank_d3 {
+        color: #FFDD99;
+    }
+
+.Reward_timer_d3 {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_timer_d3,
+    .Reward_base__small_c0 .Reward_timer_d3 {
+        width: 23rem;
+        height: 23rem;
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
+        top: -6rem;
+        right: -6rem;
+    }
+
+.Reward_base__s80x80_ce .Reward_timer_d3,
+    .Reward_base__big_e5 .Reward_timer_d3 {
+        width: 48rem;
+        height: 48rem;
+        background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
+        top: -14rem;
+        right: -14rem;
+    }
+
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+    .TextButton_base__right_39 {
+        flex-direction: row-reverse;
+    }
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+    .TextButton_icon__forward_59 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.back');
+        transform: translateY(1rem);
+    }
+.TextButton_icon__forward_59 {
+        transform: rotate(180deg) translateY(1rem);
+    }
+.TextButton_icon__close_53 {
+        margin: -1rem 0;
+        background-image: url('R.images.gui.maps.icons.components.text_button.close');
+    }
+.TextButton_icon__info_33 {
+        margin: -1rem -5rem;
+        background-image: url('R.images.gui.maps.icons.components.text_button.info');
+    }
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+    .TextButton_icon__forward_59 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+    }
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+    }
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+    }
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_glow_a4 {
+        opacity: 0;
+    }
+.TextButton_caption_82 {
+    position: relative;
+    transition: color .16s, text-shadow .16s;
+}
+.TextButton_caption__back_b9,
+    .TextButton_caption__forward_4e,
+    .TextButton_caption__close_36 {
+        color: #FFDD99;
+        text-shadow: 0 0 10rem rgba(255,42,0, 1),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 10rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4),
+            0 0 2rem rgba(255,42,0, .4),
+            0 0 1rem rgba(255,42,0, .4);
+    }
+.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
+            color: #fffa9f;
+        }
+.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
+            color: #FFDD99;
+        }
+.TextButton_caption__info_23 {
+        padding: 0 5rem;
+        color: #CCFFFF;
+        text-shadow: 0 0 12rem rgba(31,68,255, .8),
+            0 0 8rem #00eaff;
+    }
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+            color: #e3ffff;
+            text-shadow: 0 0 12rem rgba(31,68,255, .8),
+                0 0 12rem rgba(0,234,255, 1),
+                0 0 8rem #00eaff;
+        }
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+            color: #CCFFFF;
+            text-shadow: 0 0 12rem rgba(31,68,255, .6),
+                0 0 8rem #00eaff;
+        }
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+        margin-left: 8rem;
+    }
+.TextButton_base__right_39 .TextButton_goto_e7 {
+        margin-right: 8rem;
+    }
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity .16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+        left: -4rem;
+    }
+.TextButton_base__right_39 .TextButton_shine_e2 {
+        right: -4rem;
+        transform: rotate(180deg);
+    }
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+        opacity: 1;
+    }
+.TextButton_base_b6:active .TextButton_shine_e2 {
+        opacity: 0;
+    }
+
+:root {
+    width: 101vw;
+    height: 101vh;
+}
+.RewardsViewApp_base_ca {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 50rem;
+    padding-bottom: 60rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.rewardsView.background') center center / cover no-repeat;
+    overflow: hidden;
+    position: relative;
+    left: -.5vw;
+}
+.mediaMedium .RewardsViewApp_base_ca {
+        padding-bottom: 80rem;
+}
+.RewardsViewApp_close_55 {
+    position: absolute;
+    top: 30rem;
+    right: 24rem;
+}
+.mediaMedium .RewardsViewApp_close_55 {
+        top: 30rem;
+        right: 55rem;
+}
+.RewardsViewApp_ribbon_1c {
+    width: 1366rem;
+    height: 356rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.rewardsView.ribbon') center center / cover no-repeat;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+    transform: translateY(-60rem);
+}
+.mediaSmall .RewardsViewApp_ribbon_1c {
+        transform: translateY(-25rem);
+}
+.mediaMedium .RewardsViewApp_ribbon_1c {
+        width: 1600rem;
+        height: 417rem;
+        transform: translateY(-88rem);
+}
+.mediaLarge .RewardsViewApp_ribbon_1c {
+        width: 1920rem;
+        height: 500rem;
+        transform: translateY(-100rem);
+}
+.RewardsViewApp_headerBlock_4b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 73rem;
+    padding: 0 20rem;
+    text-align: center;
+    z-index: 1;
+}
+.mediaSmall .RewardsViewApp_headerBlock_4b {
+        margin-bottom: 24rem;
+}
+.mediaMedium .RewardsViewApp_headerBlock_4b {
+        margin-bottom: 70rem;
+}
+.mediaLarge .RewardsViewApp_headerBlock_4b {
+        margin-bottom: 125rem;
+}
+.RewardsViewApp_viewTitle_22 {
+    color: #f4e1b3;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+}
+.mediaLarge .RewardsViewApp_viewTitle_22 {
+    color: #f4e1b3;
+    font-size: 26rem;
+    font-weight: 700;
+    line-height: 30rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+}
+.RewardsViewApp_title_1b {
+    color: #FEFEEC;
+    font-size: 42rem;
+    font-weight: 700;
+    line-height: 49rem;
+    letter-spacing: 0;
+    margin: 7rem 0;
+}
+.mediaLarge .RewardsViewApp_title_1b {
+    color: #FEFEEC;
+    font-size: 96rem;
+    font-weight: 700;
+    line-height: 113rem;
+}
+.RewardsViewApp_mainRewards_60 {
+    display: flex;
+    flex-direction: row;
+}
+.RewardsViewApp_heroImageBlock_70 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 28rem;
+    position: relative;
+}
+.mediaSmall .RewardsViewApp_heroImageBlock_70 {
+        margin-bottom: 20rem;
+}
+.mediaMedium .RewardsViewApp_heroImageBlock_70 {
+        margin-bottom: 26rem;
+}
+.mediaLarge .RewardsViewApp_heroImageBlock_70 {
+        margin-bottom: 41rem;
+}
+.RewardsViewApp_heroImageBlock_70 + .RewardsViewApp_heroImageBlock_70 {
+    margin-left: -40rem;
+}
+.mediaSmall .RewardsViewApp_heroImageBlock_70 + .RewardsViewApp_heroImageBlock_70 {
+        margin-left: 20rem;
+}
+.mediaMedium .RewardsViewApp_heroImageBlock_70 + .RewardsViewApp_heroImageBlock_70 {
+        margin-left: 30rem;
+}
+.mediaLarge .RewardsViewApp_heroImageBlock_70 + .RewardsViewApp_heroImageBlock_70 {
+        margin-left: 40rem;
+}
+.RewardsViewApp_heroImage_5d {
+    width: 232rem;
+    height: 174rem;
+    background: none center bottom / contain no-repeat;
+}
+.mediaSmall .RewardsViewApp_heroImage_5d {
+        width: 296rem;
+        height: 222rem;
+}
+.mediaLarge .RewardsViewApp_heroImage_5d {
+        width: 400rem;
+        height: 300rem;
+}
+.RewardsViewApp_heroImageSubtitle_62 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 0 20rem;
+}
+.mediaSmall .RewardsViewApp_heroImageSubtitle_62 {
+    color: #f4e1b3;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+        margin-top: 16rem;
+}
+.RewardsViewApp_heroImageSubtitle_label_59 {
+    color: #F2F2F7;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 19rem;
+    letter-spacing: .04em;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 220rem;
+        margin-top: 6rem;
+        margin-bottom: 20rem;
+        text-align: center;
+    }
+.RewardsViewApp_heroImageSubtitle_value_1d {
+        display: flex;
+        flex-direction: row;
+    }
+.RewardsViewApp_footer_d3 .RewardsViewApp_infoText_40 {
+    color: #f4e1b3;
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 21rem;
+    /* stylelint-disable-next-line unit-blacklist */
+    letter-spacing: .04em;
+        margin-bottom: 64rem;
+        opacity: .7;
+    }
+.RewardsViewApp_footer_d3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.RewardsViewApp_multiplyer_78 {
+    display: flex;
+    flex-direction: row;
+    color: #FFDD99;
+    font-size: 24rem;
+    font-weight: 700;
+    position: absolute;
+    right: 26rem;
+    bottom: 106rem;
+    z-index: 1;
+}
+.mediaMedium .RewardsViewApp_multiplyer_78 {
+        font-size: 36rem;
+        right: 16rem;
+}
+.RewardsViewApp_info_e6 {
+    color: #FFDD99;
+    font-size: 24rem;
+    font-weight: 700;
+}
+.mediaSmall .RewardsViewApp_info_e6 {
+        font-size: 36rem;
+}
+.RewardsViewApp_primaryButton_bd {
+    width: 156rem;
+    height: 30rem;
+    border: none;
+    background-color: #f4e1b3;
+    cursor: pointer;
+    color: #010326;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.RewardsViewApp_primaryButton_wrapper_77 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 160rem;
+        height: 34rem;
+        border: 1rem solid #f4e1b3;
+        background-color: rgba(1, 3, 38, .22);
+    }
+

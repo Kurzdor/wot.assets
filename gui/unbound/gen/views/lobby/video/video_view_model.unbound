@@ -1,0 +1,18 @@
+# This file was generated using wgpygen
+#   template: configs/templates/view_model.unbound.jinja2
+#   source: configs/definitions/views/lobby/video/video_view_model.yaml
+# Please, don't edit this file manually.
+(def macro VideoViewModel()
+    (scope
+        (event onCloseBtnClick)
+        (event onVideoStarted)
+        (event onVideoStopped)
+        (event onLoadError)
+
+        (var videoSource:str = '')
+        (var subtitleTrack:number = 0)
+        (var isWindowAccessible:bool = true)
+        (var isUIVisible:bool = false)
+        (var isVignetteVisible:bool = true)
+    )
+)

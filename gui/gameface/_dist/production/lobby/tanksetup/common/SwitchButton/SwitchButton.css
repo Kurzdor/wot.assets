@@ -13,11 +13,11 @@
     .SwitchButton_base__active_31 {
         border-radius: 3rem;
         background: linear-gradient(
-            90deg,
-            #ac802c 0%,
-            #eece63 48.95%,
-            #efd065 48.96%,
-            #ae842e 100%
+                90deg,
+                #ac802c 0%,
+                #eece63 48.95%,
+                #efd065 48.96%,
+                #ae842e 100%
         );
     }
 
@@ -38,8 +38,8 @@
 }
 .SwitchButton_buttonBackHovered_45 {
     background: linear-gradient(180deg, rgba(255,255,255, .2), rgba(255,255,255, .1)),
-        linear-gradient(0deg, rgba(255,255,255, .1) 0%, rgba(255,255,255, 0) 100%)
-        #393830;
+    linear-gradient(0deg, rgba(255,255,255, .1) 0%, rgba(255,255,255, 0) 100%)
+    #393830;
     opacity: 0;
     transition: opacity .4s;
 }
@@ -55,7 +55,6 @@
 }
 .SwitchButton_base__active_31 .SwitchButton_buttonGlow_4c {
         background: linear-gradient(180deg, rgba(255,42,0, .1) 0%, transparent .01%, rgba(255,127,0, .1) 100%);
-        filter: drop-shadow(0 0 20rem #ee5003);
     }
 .SwitchButton_base__warning_71 .SwitchButton_buttonGlow_4c {
         background: linear-gradient(180deg, transparent, rgba(255,0,0, .2) 100%);
@@ -98,7 +97,6 @@
     width: 16rem;
     height: 16rem;
     background-size: contain;
-    filter: drop-shadow(0 1rem 2rem rgba(0,0,0, .5));
     opacity: .2;
     position: relative;
 }

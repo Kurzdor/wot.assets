@@ -1,9 +1,3 @@
-.SubView_base_df {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
 .PopoverDecorator_base_ed {
     display: flex;
     position: absolute;
@@ -85,6 +79,12 @@
 .PopoverDecorator_content_f0 {
     position: relative;
     z-index: 2;
+}
+
+.SubView_base_df {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .SettingsPopover_base_e3 {

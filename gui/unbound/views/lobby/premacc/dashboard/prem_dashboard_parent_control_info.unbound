@@ -1,0 +1,27 @@
+# required for parental control tooltip
+(def layout PremDashboardParentControlInfoContent() entrance=true
+    (name = 'PremDashboardParentControlInfoContent')
+    (macro ParentControlInfoPopoverModel)
+    (scope
+        (var linkText:str = "TextFormat(LINK_TEMPLATE, {content: '<u>' + R.strings.premacc.parentControlCard.infoPopover.link() + '</u> ' + R.images.gui.maps.icons.library.buyInWeb.tag(12, 12, 0)})")
+    )
+    (style
+        (minWidth = 300px)
+    )
+
+    (macro TooltipTextBlock "R.strings.premacc.parentControlCard.infoPopover.header()" MiddleTitleTextStyle 0px)
+
+    (tf
+        (name = 'body')
+        (style
+            (width = 300px)
+            (multiline = true)
+        )
+        (class MainTextStyle)
+        (bind htmlText "TextFormat(
+            htmlTextStyle(R.strings.premacc.parentControlCard.infoPopover.body(), 'MainTextStyle'), 
+            {link: htmlTextStyle(linkText, 'PremAccLinkTextStyle')})"
+        )
+        (dispatch onLinkClicked on='link')
+    )
+)
