@@ -2832,7 +2832,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: absolute;
     top: 11rem;
     left: 15rem;
-    z-index: 5;
+    z-index: 9;
 }
 
 .mediaSmall .HangarApp_infoButton_42 {
@@ -2840,7 +2840,19 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         left: 35rem;
 }
 
+.HangarApp_closeButton_f3 {
+    position: absolute;
+    top: 11rem;
+    right: 15rem;
+    z-index: 9;
+}
+
+.mediaSmall .HangarApp_closeButton_f3 {
+        top: 31rem;
+        right: 35rem;
+}
+
 .HangarApp_fadingCover_c8 {
-    z-index: 7;
+    z-index: 1;
 }
 

@@ -2908,8 +2908,8 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 36%, rgba(0, 0, 0, .39) 45%, rgba(0, 0, 0, .8) 57%, rgba(0, 0, 0, 1) 100%);
-    opacity: .7;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 36%, rgba(0, 0, 0, .39) 45%, rgba(0, 0, 0, .8) 60%, rgba(0, 0, 0, 1) 100%);
+    opacity: .8;
 }
 .App_buttonClose_0a {
     position: absolute;

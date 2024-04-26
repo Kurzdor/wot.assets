@@ -3796,7 +3796,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 50%;
     left: 15rem;
     z-index: 99;
-    transform: translate(0, -50%);
+    transform: translate(0rem, -50%);
 }
 .mediaLarge .App_tabs_6c {
         left: 30rem;
