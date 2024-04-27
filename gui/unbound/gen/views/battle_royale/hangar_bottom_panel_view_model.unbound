@@ -19,6 +19,7 @@
         # The following submodels are used in this model:
         # ammunition:ui_kit.list_model
         # abilities:ui_kit.list_model
+        # specialAbilities:ui_kit.list_model
         # rentPrice:ui_kit.list_model
     )
 )

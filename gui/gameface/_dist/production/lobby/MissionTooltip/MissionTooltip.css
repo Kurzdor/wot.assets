@@ -4,23 +4,23 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .MissionTooltipApp_base_1d {
     display: flex;
     flex-direction: column;
     width: 368rem;
     padding: 20rem;
-    box-shadow: inset 0 0 10px rgba(59,59,46, .86);
+    box-shadow: inset 0 0 10px rgba(59, 59, 46, 0.86);
 }
 
 .MissionTooltipApp_title_b0 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
@@ -28,7 +28,7 @@
 }
 
 .MissionTooltipApp_subTitle_ff {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
@@ -36,7 +36,7 @@
 }
 
 .MissionTooltipApp_text_9c {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -48,4 +48,3 @@
     margin: 12rem 0 30rem 70rem;
     background: no-repeat 50% / contain;
 }
-

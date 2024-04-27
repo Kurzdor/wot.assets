@@ -5,33 +5,34 @@
     position: relative;
 }
 
-    .HorizontalBar_base__nonActive_82 {
-        visibility: hidden;
-    }
+.HorizontalBar_base__nonActive_82 {
+    visibility: hidden;
+}
 
-    .HorizontalBar_base_49 .disable,
-    .HorizontalBar_base_49 .disable:hover {
-        opacity: .3;
-        cursor: default;
-    }
+.HorizontalBar_base_49 .disable,
+.HorizontalBar_base_49 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
 
 .HorizontalBar_leftButton_5f,
 .HorizontalBar_rightButton_03 {
     width: 13rem;
     height: 13rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
     background: no-repeat center / 7rem 5rem;
-    opacity: .5;
+    opacity: 0.5;
     z-index: 1;
     transform: rotate(-90deg);
     transition: opacity 130ms linear;
     cursor: pointer;
 }
 
-.HorizontalBar_leftButton_5f:hover, .HorizontalBar_rightButton_03:hover {
-        opacity: 1;
-    }
+.HorizontalBar_leftButton_5f:hover,
+.HorizontalBar_rightButton_03:hover {
+    opacity: 1;
+}
 
 .HorizontalBar_leftButton_5f {
     background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
@@ -55,9 +56,10 @@
     min-width: 20rem;
     height: 13rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
-    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem 7rem;
-    opacity: .5;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem
+        7rem;
+    opacity: 0.5;
     position: absolute;
     z-index: 1;
     transition: opacity 130ms linear;
@@ -65,8 +67,8 @@
 }
 
 .HorizontalBar_thumb_fd:hover {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 .HorizontalBar_rail_32 {
     height: 0;
@@ -78,9 +80,8 @@
 }
 
 .HorizontalBar_rail_32:hover {
-        opacity: .7;
-    }
-
+    opacity: 0.7;
+}
 
 .HorizontalScroll_base_29 {
     width: 100%;
@@ -105,32 +106,33 @@
     position: relative;
 }
 
-    .VerticalBar_base__nonActive_42 {
-        visibility: hidden;
-    }
+.VerticalBar_base__nonActive_42 {
+    visibility: hidden;
+}
 
-    .VerticalBar_base_f3 .disable,
-    .VerticalBar_base_f3 .disable:hover {
-        opacity: .3;
-        cursor: default;
-    }
+.VerticalBar_base_f3 .disable,
+.VerticalBar_base_f3 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
 
 .VerticalBar_topButton_d7,
 .VerticalBar_bottomButton_06 {
     width: 13rem;
     height: 13rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
     background: no-repeat center / 7rem 5rem;
-    opacity: .5;
+    opacity: 0.5;
     z-index: 1;
     transition: opacity 130ms linear;
     cursor: pointer;
 }
 
-.VerticalBar_topButton_d7:hover, .VerticalBar_bottomButton_06:hover {
-        opacity: 1;
-    }
+.VerticalBar_topButton_d7:hover,
+.VerticalBar_bottomButton_06:hover {
+    opacity: 1;
+}
 
 .VerticalBar_topButton_d7 {
     background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
@@ -148,15 +150,15 @@
 }
 
 .VerticalBar_thumb_32 {
-    display: none;
+    display: flex;
     flex: 0 0 13rem;
     width: 13rem;
     height: 100%;
     min-height: 20rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
     background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
-    opacity: .5;
+    opacity: 0.5;
     position: absolute;
     z-index: 1;
     transition: opacity 130ms linear;
@@ -164,8 +166,8 @@
 }
 
 .VerticalBar_thumb_32:hover {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 .VerticalBar_rail_43 {
     width: 0;
@@ -180,9 +182,8 @@
 }
 
 .VerticalBar_rail_43:hover {
-        opacity: .7;
-    }
-
+    opacity: 0.7;
+}
 
 .VerticalScroll_content_cb {
     height: 100%;
@@ -211,9 +212,9 @@
     cursor: pointer;
 }
 
-    .TextButton_base__right_39 {
-        flex-direction: row-reverse;
-    }
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
 .TextButton_icon_17 {
     width: 32rem;
     height: 32rem;
@@ -221,22 +222,22 @@
     position: relative;
 }
 .TextButton_icon__back_43,
-    .TextButton_icon__forward_59 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.back');
-        transform: translateY(1rem);
-    }
 .TextButton_icon__forward_59 {
-        transform: rotate(180deg) translateY(1rem);
-    }
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
 .TextButton_icon__close_53 {
-        margin: -1rem 0;
-        background-image: url('R.images.gui.maps.icons.components.text_button.close');
-    }
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
 .TextButton_icon__info_33 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.info');
-    }
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
 .TextButton_glow_a4 {
     width: 100%;
     height: 100%;
@@ -244,72 +245,82 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    transition: opacity .16s;
+    transition: opacity 0.16s;
 }
 .TextButton_icon__back_43 .TextButton_glow_a4,
-    .TextButton_icon__forward_59 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
-    }
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
 .TextButton_icon__close_53 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
 .TextButton_icon__info_33 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
 .TextButton_base_b6:hover .TextButton_glow_a4 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .TextButton_base_b6:active .TextButton_glow_a4 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .TextButton_caption_82 {
     position: relative;
-    transition: color .16s, text-shadow .16s;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
 }
 .TextButton_caption__back_b9,
-    .TextButton_caption__forward_4e,
-    .TextButton_caption__close_36 {
-        color: #FFDD99;
-        text-shadow: 0 0 10rem rgba(255,42,0, 1),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4);
-    }
-.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
-            color: #fffa9f;
-        }
-.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
-            color: #FFDD99;
-        }
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
 .TextButton_caption__info_23 {
-        padding: 0 5rem;
-        color: #CCFFFF;
-        text-shadow: 0 0 12rem rgba(31,68,255, .8),
-            0 0 8rem #00eaff;
-    }
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
 .TextButton_base_b6:hover .TextButton_caption__info_23 {
-            color: #e3ffff;
-            text-shadow: 0 0 12rem rgba(31,68,255, .8),
-                0 0 12rem rgba(0,234,255, 1),
-                0 0 8rem #00eaff;
-        }
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
 .TextButton_base_b6:active .TextButton_caption__info_23 {
-            color: #CCFFFF;
-            text-shadow: 0 0 12rem rgba(31,68,255, .6),
-                0 0 8rem #00eaff;
-        }
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
 .TextButton_goto_e7 {
     color: #7c7c6c;
 }
 .TextButton_base__left_ff .TextButton_goto_e7 {
-        margin-left: 8rem;
-    }
+    margin-left: 8rem;
+}
 .TextButton_base__right_39 .TextButton_goto_e7 {
-        margin-right: 8rem;
-    }
+    margin-right: 8rem;
+}
 .TextButton_shine_e2 {
     width: 90rem;
     height: 40rem;
@@ -317,22 +328,22 @@
     opacity: 0;
     position: absolute;
     top: -4rem;
-    transition: opacity .16s;
+    transition: opacity 0.16s;
     pointer-events: none;
 }
 .TextButton_base__left_ff .TextButton_shine_e2 {
-        left: -4rem;
-    }
+    left: -4rem;
+}
 .TextButton_base__right_39 .TextButton_shine_e2 {
-        right: -4rem;
-        transform: rotate(180deg);
-    }
+    right: -4rem;
+    transform: rotate(180deg);
+}
 .TextButton_base_b6:hover .TextButton_shine_e2 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .TextButton_base_b6:active .TextButton_shine_e2 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .Booster_booster_0a {
     display: flex;
@@ -340,57 +351,57 @@
     z-index: 1;
 }
 
-    .Booster_booster_description_11 {
-        color: #8C8C7E;
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
-        min-width: 80rem;
-    }
-
-    .mediaMedium .Booster_booster_description_11 {
-            color: #8C8C7E;
-            font-size: 16rem;
-            font-weight: 400;
-            line-height: 1.25;
-            min-width: 90rem;
+.Booster_booster_description_11 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    min-width: 80rem;
 }
 
-    .Booster_booster__new_3a .Booster_booster_description_11 {
-            color: #FEFEEC;
-        }
+.mediaMedium .Booster_booster_description_11 {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    min-width: 90rem;
+}
 
-    .Booster_booster_inHangar_41 {
-        display: flex;
-        align-items: center;
-        min-width: 51rem;
-        min-height: 22rem;
-        margin-right: 3rem;
-        border: 1rem solid rgba(255, 255, 255, .05);
-        border-radius: 2rem;
-        background: rgba(242, 242, 247, .05);
-    }
+.Booster_booster__new_3a .Booster_booster_description_11 {
+    color: #fefeec;
+}
 
-    .Booster_booster_inHangar_icon_33 {
-            width: 30rem;
-            height: 24rem;
-            margin-left: -3rem;
-            background: url('R.images.gui.maps.icons.buttons.icon_table_comparison_inhangar') center center / cover;
-        }
+.Booster_booster_inHangar_41 {
+    display: flex;
+    align-items: center;
+    min-width: 51rem;
+    min-height: 22rem;
+    margin-right: 3rem;
+    border: 1rem solid rgba(255, 255, 255, 0.05);
+    border-radius: 2rem;
+    background: rgba(242, 242, 247, 0.05);
+}
 
-    .Booster_booster_inHangar_count_ab {
-            color: #8C8C7E;
-            font-size: 14rem;
-            font-weight: 400;
-            line-height: 1.3;
-            flex: 1;
-            margin-left: -3rem;
-            text-align: center;
-        }
+.Booster_booster_inHangar_icon_33 {
+    width: 30rem;
+    height: 24rem;
+    margin-left: -3rem;
+    background: url('R.images.gui.maps.icons.buttons.icon_table_comparison_inhangar') center center / cover;
+}
 
-    .Booster_booster__new_3a .Booster_booster_inHangar_count_ab {
-                color: #80D43A;
-            }
+.Booster_booster_inHangar_count_ab {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    flex: 1;
+    margin-left: -3rem;
+    text-align: center;
+}
+
+.Booster_booster__new_3a .Booster_booster_inHangar_count_ab {
+    color: #80d43a;
+}
 
 .BoosterList_base_f6 {
     display: flex;
@@ -399,7 +410,7 @@
 }
 
 .BoosterList_boosterTitle_81 {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 22rem;
     font-weight: 700;
     line-height: 1.2;
@@ -407,18 +418,18 @@
 }
 
 .mediaMedium .BoosterList_boosterTitle_81 {
-        color: #F2F2F7;
-        font-size: 24rem;
-        font-weight: 700;
-        line-height: 1.2;
+    color: #f2f2f7;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .mediaLarge .BoosterList_boosterTitle_81 {
-        color: #F2F2F7;
-        font-size: 28rem;
-        font-weight: 700;
-        line-height: 1.1;
-        margin-bottom: 20rem;
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20rem;
 }
 
 .BoosterList_boosterIconContainer_a4 {
@@ -427,15 +438,15 @@
 }
 
 .mediaSmall .BoosterList_boosterIconContainer_a4 {
-        margin-bottom: 24rem;
+    margin-bottom: 24rem;
 }
 
 .mediaMedium .BoosterList_boosterIconContainer_a4 {
-        margin-bottom: 20rem;
+    margin-bottom: 20rem;
 }
 
 .mediaLarge .BoosterList_boosterIconContainer_a4 {
-        margin-bottom: 36rem;
+    margin-bottom: 36rem;
 }
 
 .BoosterList_boosterIcon_0c {
@@ -444,53 +455,53 @@
 }
 
 .BoosterList_boosterIcon_battleXP_51 {
-        background-image: url('R.images.gui.maps.icons.quests.bonuses.s180x135.booster_xp');
-    }
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.s180x135.booster_xp');
+}
 
 .BoosterList_boosterIcon_credits_ca {
-        background-image: url('R.images.gui.maps.icons.quests.bonuses.s180x135.booster_credits');
-    }
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.s180x135.booster_credits');
+}
 
 .BoosterList_boosterIcon_crewFreeXP_6b {
-        background-image: url('R.images.gui.maps.icons.quests.bonuses.s180x135.booster_free_xp_and_crew_xp');
-    }
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.s180x135.booster_free_xp_and_crew_xp');
+}
 
 .mediaMedium .BoosterList_boosterIcon_0c {
-        width: 296rem;
-        height: 222rem;
+    width: 296rem;
+    height: 222rem;
 }
 
 .mediaMedium .BoosterList_boosterIcon_battleXP_51 {
-            background-image: url('R.images.gui.maps.icons.quests.bonuses.s296x222.booster_xp');
-        }
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.s296x222.booster_xp');
+}
 
 .mediaMedium .BoosterList_boosterIcon_credits_ca {
-            background-image: url('R.images.gui.maps.icons.quests.bonuses.s296x222.booster_credits');
-        }
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.s296x222.booster_credits');
+}
 
 .mediaMedium .BoosterList_boosterIcon_crewFreeXP_6b {
-            background-image: url('R.images.gui.maps.icons.quests.bonuses.s296x222.booster_free_xp_and_crew_xp');
-        }
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.s296x222.booster_free_xp_and_crew_xp');
+}
 
 .mediaLarge .BoosterList_boosterIcon_0c {
-        width: 360rem;
-        height: 270rem;
+    width: 360rem;
+    height: 270rem;
 }
 
 .mediaLarge .BoosterList_boosterIcon_battleXP_51 {
-            background-image: url('R.images.gui.maps.icons.quests.bonuses.s360x270.booster_xp');
-        }
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.s360x270.booster_xp');
+}
 
 .mediaLarge .BoosterList_boosterIcon_credits_ca {
-            background-image: url('R.images.gui.maps.icons.quests.bonuses.s360x270.booster_credits');
-        }
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.s360x270.booster_credits');
+}
 
 .mediaLarge .BoosterList_boosterIcon_crewFreeXP_6b {
-            background-image: url('R.images.gui.maps.icons.quests.bonuses.s360x270.booster_free_xp_and_crew_xp');
-        }
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.s360x270.booster_free_xp_and_crew_xp');
+}
 
 .BoosterList_boosterCount_aa {
-    color: #FEFEEC;
+    color: #fefeec;
     font-size: 22rem;
     font-weight: 700;
     line-height: 1.2;
@@ -501,21 +512,21 @@
 }
 
 .mediaMedium .BoosterList_boosterCount_aa {
-        color: #FEFEEC;
-        font-size: 24rem;
-        font-weight: 700;
-        line-height: 1.2;
+    color: #fefeec;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .mediaLarge .BoosterList_boosterCount_aa {
-        color: #FEFEEC;
-        font-size: 28rem;
-        font-weight: 700;
-        line-height: 1.1;
+    color: #fefeec;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .BoosterList_boosterSubtitle_8d {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
@@ -523,10 +534,10 @@
 }
 
 .mediaMedium .BoosterList_boosterSubtitle_8d {
-        color: #E9E2BF;
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .BoosterList_list_e2 {
@@ -537,29 +548,29 @@
 }
 
 .BoosterList_list_item_d8 {
-        display: flex;
-        min-height: 53rem;
-        padding: 10rem 0;
-        border-bottom: 1rem solid rgba(255, 255, 255, .1);
-    }
+    display: flex;
+    min-height: 53rem;
+    padding: 10rem 0;
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.1);
+}
 
 .mediaMedium .BoosterList_list_item_d8 {
-            min-height: 63rem;
+    min-height: 63rem;
 }
 
 .BoosterList_list_arrow_f5 {
-        width: 56rem;
-        height: 32rem;
-        margin-left: -40rem;
-        background: url('R.images.gui.maps.icons.personal_reserves.conversion.green_arrow_small') center / cover no-repeat;
-    }
+    width: 56rem;
+    height: 32rem;
+    margin-left: -40rem;
+    background: url('R.images.gui.maps.icons.personal_reserves.conversion.green_arrow_small') center / cover no-repeat;
+}
 
 .mediaMedium .BoosterList_list_arrow_f5 {
-            width: 72rem;
-            height: 42rem;
-            margin-left: -14rem;
-            margin-right: 10rem;
-            background: url('R.images.gui.maps.icons.personal_reserves.conversion.green_arrow_big') center / cover no-repeat;
+    width: 72rem;
+    height: 42rem;
+    margin-left: -14rem;
+    margin-right: 10rem;
+    background: url('R.images.gui.maps.icons.personal_reserves.conversion.green_arrow_big') center / cover no-repeat;
 }
 
 .BoosterList_sections_88 {
@@ -569,18 +580,18 @@
 }
 
 .BoosterList_sections_second_d0 {
-        display: flex;
-        align-items: center;
-    }
+    display: flex;
+    align-items: center;
+}
 
 .mediaSmall .BoosterList_sections_second_d0 {
-            padding-left: 10rem;
+    padding-left: 10rem;
 }
 
 .BoosterList_sections_second_d0 .BoosterList_list_item_d8 + .BoosterList_list_item_d8 {
-            border-top: 1rem solid rgba(255, 255, 255, .1);
-            border-bottom: none;
-        }
+    border-top: 1rem solid rgba(255, 255, 255, 0.1);
+    border-bottom: none;
+}
 
 .BoosterList_noConversionColumn_50 {
     display: flex;
@@ -590,11 +601,11 @@
 }
 
 .mediaMedium .BoosterList_noConversionColumn_50 {
-        min-height: 300rem;
+    min-height: 300rem;
 }
 
 .BoosterList_noConversion_c8 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 20rem;
     font-weight: 400;
     line-height: 1.2;
@@ -611,7 +622,7 @@
     width: 100%;
     height: 100%;
     background: url('R.images.gui.maps.icons.personal_reserves.bg_boosters') no-repeat top / cover;
-    color: #8C8C7E;
+    color: #8c8c7e;
     overflow: hidden;
 }
 
@@ -631,12 +642,12 @@
 }
 
 .mediaLarge .ReservesConversionViewApp_scrollArea_4a {
-        padding-top: 65rem;
-        padding-bottom: 45rem;
+    padding-top: 65rem;
+    padding-bottom: 45rem;
 }
 
 .ReservesConversionViewApp_mainTitle_75 {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 36rem;
     font-weight: 700;
     line-height: 1.1;
@@ -644,18 +655,18 @@
 }
 
 .mediaMedium .ReservesConversionViewApp_mainTitle_75 {
-        margin-bottom: 8rem;
+    margin-bottom: 8rem;
 }
 
 .mediaLarge .ReservesConversionViewApp_mainTitle_75 {
-        color: #FFFFFF;
-        font-size: 56rem;
-        font-weight: 700;
-        line-height: 1.1;
+    color: #ffffff;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .ReservesConversionViewApp_mainDescription_3c {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -665,20 +676,20 @@
 }
 
 .mediaMedium .ReservesConversionViewApp_mainDescription_3c {
-        color: #8C8C7E;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
-        max-width: 600rem;
-        margin-bottom: 70rem;
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    max-width: 600rem;
+    margin-bottom: 70rem;
 }
 
 .mediaLarge .ReservesConversionViewApp_mainDescription_3c {
-        color: #8C8C7E;
-        font-size: 20rem;
-        font-weight: 400;
-        line-height: 1.2;
-        margin-bottom: 90rem;
+    color: #8c8c7e;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 90rem;
 }
 
 .ReservesConversionViewApp_boosterBlocksContainer_ba {
@@ -692,10 +703,9 @@
 }
 
 .mediaSmall .ReservesConversionViewApp_credits_7a {
-        margin: 0 48rem;
+    margin: 0 48rem;
 }
 
 .mediaLarge .ReservesConversionViewApp_credits_7a {
-        margin: 0 72rem;
+    margin: 0 72rem;
 }
-

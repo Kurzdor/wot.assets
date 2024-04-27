@@ -161,6 +161,25 @@
             )
             (renderer = 'BattleRoyaleConsumableRenderer')
         )
+        (block
+            (name = 'separator2')
+            (style
+                (width = 1px)
+                (height = 50px)
+                (marginLeft = 30px)
+                (marginRight = 23px)
+                (backgroundColor = 0x1AFFFFFF)
+            )
+        )
+        (group 'specialAbilities'
+            (container
+                (style
+                    (flow = "Flow.HORIZONTAL")
+                    (gap = 20px)
+                )
+            )
+            (renderer = 'BattleRoyaleConsumableRenderer')
+        )
     )
 )
 

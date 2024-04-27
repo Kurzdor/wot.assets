@@ -28,19 +28,18 @@
     pointer-events: none;
     background-image: url('R.images.gui.maps.icons.battlePass.icons.loupe_hover');
     opacity: 0;
-    transition: opacity .2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .LoupeButton_base_ba:hover .LoupeButton_iconHover_91 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 .LoupeButton_base_ba:active .LoupeButton_iconHover_91 {
-        opacity: .5;
-    }
+    opacity: 0.5;
+}
 
 .LoupeButton_hoverArea_d0 {
     position: absolute;
     cursor: pointer;
 }
-

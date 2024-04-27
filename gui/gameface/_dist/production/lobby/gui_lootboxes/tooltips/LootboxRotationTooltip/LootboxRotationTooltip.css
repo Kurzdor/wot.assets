@@ -4,12 +4,12 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .App_base_70 {
     width: 590rem;
@@ -17,7 +17,10 @@
     padding: 24rem;
     border: 1rem solid rgba(242, 242, 230, 0.1);
     border-radius: 2rem;
-    box-shadow: 0 1rem 12rem 0 rgba(0, 0, 0, 0.15), 0 0 1rem 0 #000, 0 0 25rem 0 rgba(242, 242, 230, 0.1) inset;
+    box-shadow:
+        0 1rem 12rem 0 rgba(0, 0, 0, 0.15),
+        0 0 1rem 0 #000,
+        0 0 25rem 0 rgba(242, 242, 230, 0.1) inset;
     background: linear-gradient(
             180deg,
             rgba(51, 51, 41, 0.06) 0%,
@@ -37,7 +40,7 @@
 }
 
 .App_elementDescription_a9 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -72,7 +75,7 @@
 }
 
 .Header_headerTitle_e9 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
@@ -80,7 +83,7 @@
 }
 
 .Header_headerDescription_8e {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -97,7 +100,7 @@
 }
 
 .Description_description_a3 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -107,14 +110,14 @@
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    background: #8C8C7E;
+    background: #8c8c7e;
     position: absolute;
     top: 9rem;
     left: 0;
 }
 
 .Description_item_51 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -134,9 +137,9 @@
     position: relative;
 }
 
-    .RotationVehicle_base__received_32 {
-        opacity: .3;
-    }
+.RotationVehicle_base__received_32 {
+    opacity: 0.3;
+}
 
 .RotationVehicle_icon_41 {
     width: 80rem;
@@ -145,7 +148,7 @@
 }
 
 .RotationVehicle_label_b8 {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -192,12 +195,12 @@
 }
 
 .Compensation_base__credits_63 .Compensation_currencyIcon_1c {
-        background-image: url('R.images.gui.maps.icons.library.credits_icon_80x80');
-    }
+    background-image: url('R.images.gui.maps.icons.library.credits_icon_80x80');
+}
 
 .Compensation_base__gold_c7 .Compensation_currencyIcon_1c {
-        background-image: url('R.images.gui.maps.icons.library.gold_icon_80x80');
-    }
+    background-image: url('R.images.gui.maps.icons.library.gold_icon_80x80');
+}
 
 .Compensation_value_72 {
     position: absolute;
@@ -207,18 +210,18 @@
 }
 
 .Compensation_base__credits_63 .Compensation_value_72 {
-        color: #CED9D9;
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
-    }
+    color: #ced9d9;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
 
 .Compensation_base__gold_c7 .Compensation_value_72 {
-        color: #FFC363;
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
-    }
+    color: #ffc363;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
 
 .Compensation_compensationIcon_6b {
     width: 24rem;
@@ -263,7 +266,7 @@
 }
 
 .RotationVehicleList_stageLabel_5d {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -282,14 +285,13 @@
 }
 
 .RotationVehicleList_stageIcon__1_c0 {
-        background-image: url('R.images.gui_lootboxes.gui.maps.storage.progression.tooltip.stage1');
-    }
+    background-image: url('R.images.gui_lootboxes.gui.maps.storage.progression.tooltip.stage1');
+}
 
 .RotationVehicleList_stageIcon__2_de {
-        background-image: url('R.images.gui_lootboxes.gui.maps.storage.progression.tooltip.stage2');
-    }
+    background-image: url('R.images.gui_lootboxes.gui.maps.storage.progression.tooltip.stage2');
+}
 
 .RotationVehicleList_stageIcon__3_60 {
-        background-image: url('R.images.gui_lootboxes.gui.maps.storage.progression.tooltip.stage3');
-    }
-
+    background-image: url('R.images.gui_lootboxes.gui.maps.storage.progression.tooltip.stage3');
+}

@@ -1,0 +1,692 @@
+.SceneWrapper_base_a5 {
+    width: 100%;
+    height: 100vh;
+    cursor: grab;
+}
+
+.SceneWrapper_grab_58 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.SceneWrapper_grab__down_ce {
+    cursor: all-scroll;
+}
+
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.6);
+    position: relative;
+    cursor: pointer;
+}
+
+.CButton_base__main_42,
+.CButton_base__primary_7f,
+.CButton_base__primaryGreen_6f,
+.CButton_base__primaryRed_ec,
+.CButton_base__secondary_50 {
+    background-size: 100% 100%;
+}
+
+.CButton_base__main_42 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_main');
+}
+
+.CButton_base__primary_7f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+
+.CButton_base__primaryGreen_6f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+
+.CButton_base__primaryRed_ec {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+
+.CButton_base__secondary_50 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+
+.CButton_base__ghost_ed {
+    border-radius: 3rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 0 1rem rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.CButton_base__extraSmall_27 {
+    min-height: 17rem;
+    padding: 0 16rem;
+}
+
+.CButton_base__small_df,
+.CButton_base__medium_74 {
+    padding: 0 20rem;
+}
+
+.CButton_base__small_df {
+    min-height: 18rem;
+}
+
+.CButton_base__medium_74 {
+    min-height: 32rem;
+}
+
+.CButton_base__disabled_d9 {
+    cursor: default;
+}
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+}
+.CButton_base__primary_7f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+.CButton_base__secondary_50 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow 0.16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+    border-radius: 2rem;
+    box-shadow: inset 0 0 2rem 1rem rgba(255, 85, 0, 0.2);
+}
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
+.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
+.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+    transition: opacity 0.16s ease-in-out;
+}
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(
+        180deg,
+        rgba(252, 248, 235, 0.25) 0%,
+        rgba(252, 248, 235, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+    opacity: 1;
+}
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+    box-shadow: 0 15rem 12rem 0 rgba(242, 242, 230, 0.11) inset;
+    background-color: rgba(8, 6, 0, 0.18);
+    background-image: none;
+}
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+    opacity: 1;
+}
+.CButton_stateDisabled_54 {
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+    opacity: 1;
+}
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: 0.03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang='ja'],
+.CButton_content_cc[lang='ko'],
+.CButton_content_cc[lang='zh_tw'],
+.CButton_content_cc[lang='zh_sg'],
+.CButton_content_cc[lang='zh_cn'],
+.CButton_content_cc[lang='th'] {
+    font-weight: 400;
+}
+.CButton_base__main_42 .CButton_content_cc,
+.CButton_base__primaryRed_ec .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #600;
+}
+.CButton_base__secondary_50 .CButton_content_cc {
+    color: rgba(254, 254, 236, 0.75);
+}
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #1c2502;
+}
+.CButton_base__extraSmall_27 .CButton_content_cc {
+    font-size: 12rem;
+}
+.CButton_base__small_df .CButton_content_cc {
+    font-size: 14rem;
+}
+.CButton_base__medium_74 .CButton_content_cc {
+    font-size: 15rem;
+}
+.CButton_base__disabled_d9 .CButton_content_cc {
+    opacity: 0.6;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.StatusWarning_base_bb {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    white-space: pre;
+}
+
+.StatusWarning_base__regular_cb {
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+    background: linear-gradient(
+        270deg,
+        rgba(52, 1, 1, 0) 0%,
+        rgba(52, 1, 1, 0.6) 30%,
+        rgba(52, 1, 1, 0.65) 50%,
+        rgba(52, 1, 1, 0.6) 67%,
+        rgba(52, 1, 1, 0) 100%
+    );
+}
+
+.StatusWarning_base__banned_05 {
+    background: url('R.images.historical_battles.gui.maps.icons.common.banBg') no-repeat 50% / contain;
+    color: #e9e2bf;
+    text-shadow: 0 0 14rem #ff0000;
+}
+
+.mediaSmall .StatusWarning_base_bb {
+    font-size: 15rem;
+}
+
+.StatusWarning_content_c4 {
+    max-width: 300rem;
+    padding: 6rem 15rem 8rem;
+    text-align: center;
+}
+
+.mediaSmall .StatusWarning_content_c4 {
+    max-width: 430rem;
+    padding: 8rem 15rem 13rem;
+}
+
+.StatusWarning_border_99 {
+    height: 1rem;
+    background: linear-gradient(
+        270deg,
+        rgba(255, 221, 153, 0) 0%,
+        #ffdd99 30%,
+        #ffdd99 50%,
+        #ffdd99 67%,
+        rgba(255, 221, 153, 0) 100%
+    );
+    filter: drop-shadow(0 0 4rem rgba(255, 127, 0, 0.25)) drop-shadow(0 0 8rem #ff2a00) drop-shadow(0 0 15rem #e52);
+    opacity: 0.5;
+}
+
+.StatusWarning_contentWrapper_16 {
+    display: flex;
+    align-items: center;
+}
+
+.StatusWarning_horizontalBorder_5e {
+    width: 78rem;
+    height: 2rem;
+    padding-right: 8rem;
+    background: linear-gradient(90deg, rgba(255, 221, 153, 0.3) 0.64%, rgba(255, 221, 153, 0) 100%);
+}
+
+.StatusWarning_horizontalBorder__left_14 {
+    padding-left: 8rem;
+    padding-right: 0;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.StatusWarning_base__banned_05 .StatusWarning_horizontalBorder_5e {
+    background: linear-gradient(90deg, rgba(233, 226, 191, 0.3) 0%, rgba(233, 226, 191, 0) 100%);
+}
+
+.BattleTimer_base_19 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.BattleTimer_timer_76 {
+    display: flex;
+    padding: 10rem 0 13rem;
+}
+
+.mediaSmall .BattleTimer_timer_76 {
+    padding: 11rem 0 16rem;
+}
+
+.mediaMedium .BattleTimer_timer_76 {
+    padding: 10rem 0 14rem;
+}
+
+.mediaLarge .BattleTimer_timer_76 {
+    padding: 9rem 0 13rem;
+}
+
+.mediaExtraLarge .BattleTimer_timer_76 {
+    padding: 35rem 0 13rem;
+}
+
+.BattleTimer_timerLabel_52 {
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.mediaSmall .BattleTimer_timerLabel_52 {
+    color: #f2f2f7;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.BattleTimer_timerTime_f2 {
+    width: 40rem;
+    color: #f2f2f7;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.mediaSmall .BattleTimer_timerTime_f2 {
+    width: 45rem;
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.BattleTimer_button_eb {
+    margin-bottom: 11rem;
+}
+
+.mediaSmall .BattleTimer_button_eb {
+    margin-bottom: 13rem;
+}
+
+.Order_base_d2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5rem 32rem;
+    position: relative;
+}
+
+.mediaMedium .Order_base_d2 {
+    padding: 0 10rem 32rem;
+}
+
+.Order_content_21 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 128rem;
+    height: 64rem;
+    border-radius: 2rem;
+    background: linear-gradient(0.65deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
+    position: relative;
+}
+
+.Order_base__active_7b .Order_content_21 {
+    border: 1rem solid #ffb266;
+    box-shadow: inset 0 0 30rem rgba(255, 122, 0, 0.3);
+    background: linear-gradient(0deg, rgba(255, 92, 0, 0.1), rgba(255, 92, 0, 0.1)), rgba(0, 0, 0, 0.6);
+}
+
+.mediaMedium .Order_content_21 {
+    width: 224rem;
+    height: 141rem;
+}
+
+.Order_count_19 {
+    color: #8c8c7e;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    padding-top: 36rem;
+}
+
+.Order_base__active_7b .Order_count_19 {
+    color: #e9e2bf;
+}
+
+.mediaMedium .Order_count_19 {
+    padding-top: 58rem;
+    font-size: 18rem;
+}
+
+.Order_icon_2f {
+    width: 80rem;
+    height: 80rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    filter: brightness(80%);
+    bottom: 14rem;
+}
+
+.mediaMedium .Order_icon_2f {
+    width: 160rem;
+    height: 160rem;
+    bottom: 53rem;
+}
+
+.Order_base__active_7b .Order_icon_2f {
+    filter: brightness(100%);
+}
+
+.Order_icon__x5_3c {
+    background: url('R.images.historical_battles.gui.maps.icons.order.c_80x80.x5') no-repeat 50% / contain;
+}
+
+.mediaMedium .Order_icon__x5_3c {
+    background: url('R.images.historical_battles.gui.maps.icons.order.c_160x160.x5') no-repeat 50% / contain;
+}
+
+.Order_icon__x10_3a {
+    background: url('R.images.historical_battles.gui.maps.icons.order.c_80x80.x10') no-repeat 50% / contain;
+}
+
+.mediaMedium .Order_icon__x10_3a {
+    background: url('R.images.historical_battles.gui.maps.icons.order.c_160x160.x10') no-repeat 50% / contain;
+}
+
+.Order_icon__x15_28 {
+    background: url('R.images.historical_battles.gui.maps.icons.order.c_80x80.x15') no-repeat 50% / contain;
+}
+
+.mediaMedium .Order_icon__x15_28 {
+    background: url('R.images.historical_battles.gui.maps.icons.order.c_160x160.x15') no-repeat 50% / contain;
+}
+
+.Order_activated_d0 {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+    width: 300rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 52%;
+    transform: translateX(-50%);
+}
+
+.mediaMedium .Order_activated_d0 {
+    color: #ffdd99;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    bottom: -5rem;
+}
+
+.Order_text_0a {
+    color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: none;
+    align-items: center;
+    min-height: 50rem;
+    margin-top: 1rem;
+    text-align: center;
+    white-space: pre;
+}
+
+.mediaMedium .Order_text_0a {
+    display: flex;
+}
+
+.Order_checkIcon_88 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 48rem;
+    height: 52rem;
+    background: url('R.images.historical_battles.gui.maps.icons.order.check') no-repeat 50% / contain;
+    bottom: -24rem;
+    z-index: 2;
+}
+
+.Order_spark_98 {
+    width: 100%;
+    height: 40rem;
+    background: url('R.images.historical_battles.gui.maps.icons.matchmaking.spark') no-repeat 50% / contain;
+    position: absolute;
+    bottom: 0;
+}
+
+.mediaMedium .Order_spark_98 {
+    height: 64rem;
+}
+
+.OrderPanel_base_28 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.OrderPanel_header_a9 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    padding-bottom: 18rem;
+}
+
+.mediaMedium .OrderPanel_header_a9 {
+    color: #e9e2bf;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    padding-bottom: 49rem;
+}
+
+.OrderPanel_orders_3e {
+    display: flex;
+    justify-content: center;
+}
+
+.RoleAndVehicleName_base_06 {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.RoleAndVehicleName_text_96 {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    justify-content: center;
+    opacity: 0.3;
+}
+
+.mediaSmall .RoleAndVehicleName_text_96 {
+    color: #f2f2f7;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaLarge .RoleAndVehicleName_text_96 {
+    color: #f2f2f7;
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaExtraLarge .RoleAndVehicleName_text_96 {
+    color: #f2f2f7;
+    font-size: 144rem;
+    font-weight: 700;
+    line-height: 1;
+    line-height: 1.25;
+}
+
+.PreBattleQueueApp_base_c3 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.PreBattleQueueApp_vignette_f5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.historical_battles.gui.maps.icons.backgrounds.vignette') no-repeat 50% / 100%;
+}
+
+.PreBattleQueueApp_header_f4 {
+    width: 1920rem;
+    height: 260rem;
+    padding-top: 14rem;
+    background: url('R.images.historical_battles.gui.maps.icons.matchmaking.shadow_top') no-repeat 50% / contain;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mediaSmall .PreBattleQueueApp_header_f4 {
+    padding-top: 5rem;
+}
+
+.mediaMedium .PreBattleQueueApp_header_f4 {
+    padding-top: 25rem;
+}
+
+.mediaLarge .PreBattleQueueApp_header_f4 {
+    padding-top: 8rem;
+}
+
+.mediaExtraLarge .PreBattleQueueApp_header_f4 {
+    height: 380rem;
+    padding-top: 28rem;
+}
+
+.PreBattleQueueApp_footer_8b {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 160rem;
+    padding-bottom: 18rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.mediaMedium .PreBattleQueueApp_footer_8b {
+    height: 280rem;
+    padding-bottom: 29rem;
+}
+
+.PreBattleQueueApp_sceneWrapper_21 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 0;
+}
+
+.PreBattleQueueApp_shadow_bb {
+    width: 660rem;
+    height: 170rem;
+    background: url('R.images.historical_battles.gui.maps.icons.matchmaking.shadow_bottom_small') no-repeat 50% /
+        contain;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+}
+
+.mediaMedium .PreBattleQueueApp_shadow_bb {
+    width: 920rem;
+    height: 381rem;
+    background: url('R.images.historical_battles.gui.maps.icons.matchmaking.shadow_bottom') no-repeat 50% / contain;
+}

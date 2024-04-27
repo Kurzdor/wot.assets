@@ -7,9 +7,9 @@
     cursor: pointer;
 }
 
-    .TextButton_base__right_39 {
-        flex-direction: row-reverse;
-    }
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
 .TextButton_icon_17 {
     width: 32rem;
     height: 32rem;
@@ -17,22 +17,22 @@
     position: relative;
 }
 .TextButton_icon__back_43,
-    .TextButton_icon__forward_59 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.back');
-        transform: translateY(1rem);
-    }
 .TextButton_icon__forward_59 {
-        transform: rotate(180deg) translateY(1rem);
-    }
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
 .TextButton_icon__close_53 {
-        margin: -1rem 0;
-        background-image: url('R.images.gui.maps.icons.components.text_button.close');
-    }
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
 .TextButton_icon__info_33 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.info');
-    }
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
 .TextButton_glow_a4 {
     width: 100%;
     height: 100%;
@@ -40,72 +40,82 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    transition: opacity .16s;
+    transition: opacity 0.16s;
 }
 .TextButton_icon__back_43 .TextButton_glow_a4,
-    .TextButton_icon__forward_59 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
-    }
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
 .TextButton_icon__close_53 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
 .TextButton_icon__info_33 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
 .TextButton_base_b6:hover .TextButton_glow_a4 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .TextButton_base_b6:active .TextButton_glow_a4 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .TextButton_caption_82 {
     position: relative;
-    transition: color .16s, text-shadow .16s;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
 }
 .TextButton_caption__back_b9,
-    .TextButton_caption__forward_4e,
-    .TextButton_caption__close_36 {
-        color: #FFDD99;
-        text-shadow: 0 0 10rem rgba(255,42,0, 1),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4);
-    }
-.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
-            color: #fffa9f;
-        }
-.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
-            color: #FFDD99;
-        }
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
 .TextButton_caption__info_23 {
-        padding: 0 5rem;
-        color: #CCFFFF;
-        text-shadow: 0 0 12rem rgba(31,68,255, .8),
-            0 0 8rem #00eaff;
-    }
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
 .TextButton_base_b6:hover .TextButton_caption__info_23 {
-            color: #e3ffff;
-            text-shadow: 0 0 12rem rgba(31,68,255, .8),
-                0 0 12rem rgba(0,234,255, 1),
-                0 0 8rem #00eaff;
-        }
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
 .TextButton_base_b6:active .TextButton_caption__info_23 {
-            color: #CCFFFF;
-            text-shadow: 0 0 12rem rgba(31,68,255, .6),
-                0 0 8rem #00eaff;
-        }
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
 .TextButton_goto_e7 {
     color: #7c7c6c;
 }
 .TextButton_base__left_ff .TextButton_goto_e7 {
-        margin-left: 8rem;
-    }
+    margin-left: 8rem;
+}
 .TextButton_base__right_39 .TextButton_goto_e7 {
-        margin-right: 8rem;
-    }
+    margin-right: 8rem;
+}
 .TextButton_shine_e2 {
     width: 90rem;
     height: 40rem;
@@ -113,38 +123,38 @@
     opacity: 0;
     position: absolute;
     top: -4rem;
-    transition: opacity .16s;
+    transition: opacity 0.16s;
     pointer-events: none;
 }
 .TextButton_base__left_ff .TextButton_shine_e2 {
-        left: -4rem;
-    }
+    left: -4rem;
+}
 .TextButton_base__right_39 .TextButton_shine_e2 {
-        right: -4rem;
-        transform: rotate(180deg);
-    }
+    right: -4rem;
+    transform: rotate(180deg);
+}
 .TextButton_base_b6:hover .TextButton_shine_e2 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .TextButton_base_b6:active .TextButton_shine_e2 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .Frame_base_af {
-    border: 1rem solid rgba(255,85,0, .2);
+    border: 1rem solid rgba(255, 85, 0, 0.2);
     position: absolute;
     pointer-events: none;
 }
 
-    .Frame_base__small_f0 {
-        width: 68rem;
-        height: 52rem;
-    }
+.Frame_base__small_f0 {
+    width: 68rem;
+    height: 52rem;
+}
 
-    .Frame_base__medium_05 {
-        width: 100rem;
-        height: 80rem;
-    }
+.Frame_base__medium_05 {
+    width: 100rem;
+    height: 80rem;
+}
 
 .Frame_border_17 {
     width: 100%;
@@ -154,12 +164,12 @@
 }
 
 .Frame_border__top_f7 {
-        top: -1rem;
-    }
+    top: -1rem;
+}
 
 .Frame_border__bottom_52 {
-        bottom: -1rem;
-    }
+    bottom: -1rem;
+}
 
 .Frame_arrow_c3 {
     width: 7rem;
@@ -176,28 +186,30 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    transition: color 0.5s ease-in-out, text-shadow 0.3s ease-in-out;
+    transition:
+        color 0.5s ease-in-out,
+        text-shadow 0.3s ease-in-out;
     cursor: pointer;
 }
 
-    .Tab_base__small_bf {
-        width: 68rem;
-        height: 52rem;
-    }
+.Tab_base__small_bf {
+    width: 68rem;
+    height: 52rem;
+}
 
-    .Tab_base__medium_96 {
-        width: 100rem;
-        height: 80rem;
-    }
+.Tab_base__medium_96 {
+    width: 100rem;
+    height: 80rem;
+}
 
-    .Tab_base_cd:hover {
-        background-color: rgba(255,85,0, 0.06);
-    }
+.Tab_base_cd:hover {
+    background-color: rgba(255, 85, 0, 0.06);
+}
 
-    .Tab_base__active_7e {
-        background-color: rgba(255,85,0, 0.06);
-        cursor: default;
-    }
+.Tab_base__active_7e {
+    background-color: rgba(255, 85, 0, 0.06);
+    cursor: default;
+}
 
 .Tab_highlight_b6 {
     width: 0rem;
@@ -208,38 +220,40 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: opacity 0.5s ease-in-out, width 0.3s ease-out;
+    transition:
+        opacity 0.5s ease-in-out,
+        width 0.3s ease-out;
     transition-delay: 0.1s;
     pointer-events: none;
 }
 
 .Tab_base__active_7e .Tab_highlight_b6 {
-        width: 338rem;
-        height: 168rem;
-        opacity: 1;
-    }
+    width: 338rem;
+    height: 168rem;
+    opacity: 1;
+}
 
 .Tab_icon_28 {
     background-repeat: no-repeat;
     background-size: contain;
-    filter: grayscale(.5) sepia(1);
+    filter: grayscale(0.5) sepia(1);
     pointer-events: none;
 }
 
 .Tab_icon__small_48 {
-        width: 32rem;
-        height: 32rem;
-    }
+    width: 32rem;
+    height: 32rem;
+}
 
 .Tab_icon__medium_73 {
-        width: 64rem;
-        height: 64rem;
-    }
+    width: 64rem;
+    height: 64rem;
+}
 
 .Tab_base_cd:hover .Tab_icon_28,
-    .Tab_base__active_7e .Tab_icon_28 {
-        filter: grayscale(0) sepia(0);
-    }
+.Tab_base__active_7e .Tab_icon_28 {
+    filter: grayscale(0) sepia(0);
+}
 
 .Tab_notification_86 {
     display: flex;
@@ -250,9 +264,12 @@
     padding: 0 3rem 2rem;
     border: 1rem solid #fe4e0f;
     border-radius: 999rem;
-    box-shadow: 0 0 0 1rem rgba(0,0,0, 0.3), 0 0 6rem rgba(254,103,0, 0.2), 0 0 12rem 4rem rgba(249,0,0, 0.3);
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 6rem rgba(254, 103, 0, 0.2),
+        0 0 12rem 4rem rgba(249, 0, 0, 0.3);
     background-image: url('R.images.gui.maps.icons.components.counter.pattern');
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 12rem;
     text-align: center;
     position: absolute;
@@ -265,35 +282,35 @@
 }
 
 .Tab_notification__symbol_9b {
-        width: 14rem;
-    }
+    width: 14rem;
+}
 
 .Tab_notification__symbol_9b.Tab_notification__small_92 {
-            width: 13rem;
-        }
+    width: 13rem;
+}
 
 .Tab_notification__small_92 {
-        min-width: 13rem;
-        height: 13rem;
-        padding: 0 3rem 2rem;
-        font-size: 10rem;
-    }
+    min-width: 13rem;
+    height: 13rem;
+    padding: 0 3rem 2rem;
+    font-size: 10rem;
+}
 
 .Tab_notification__dot_51 {
-        min-width: 0;
-        padding: 0;
-    }
+    min-width: 0;
+    padding: 0;
+}
 
 .Tab_notification__dot_51.Tab_notification__small_92 {
-            width: 6rem;
-            height: 6rem;
-        }
+    width: 6rem;
+    height: 6rem;
+}
 
 .Tab_notification__dot_51.Tab_notification__medium_e6,
-        .Tab_notification__dot_51.Tab_notification__large_6b {
-            width: 8rem;
-            height: 8rem;
-        }
+.Tab_notification__dot_51.Tab_notification__large_6b {
+    width: 8rem;
+    height: 8rem;
+}
 
 .VerticalTabs_base_41 {
     display: flex;
@@ -309,20 +326,20 @@
 
 .VerticalTabs_group_08 {
     padding: 10rem 0;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .VerticalTabs_group__small_69 {
-        width: 68rem;
-    }
+    width: 68rem;
+}
 
 .VerticalTabs_group__medium_68 {
-        width: 100rem;
-    }
+    width: 100rem;
+}
 
 .VerticalTabs_group_08 + .VerticalTabs_group_08 {
-        margin-top: 10rem;
-    }
+    margin-top: 10rem;
+}
 
 .HorizontalBar_base_49 {
     display: flex;
@@ -331,33 +348,34 @@
     position: relative;
 }
 
-    .HorizontalBar_base__nonActive_82 {
-        visibility: hidden;
-    }
+.HorizontalBar_base__nonActive_82 {
+    visibility: hidden;
+}
 
-    .HorizontalBar_base_49 .disable,
-    .HorizontalBar_base_49 .disable:hover {
-        opacity: .3;
-        cursor: default;
-    }
+.HorizontalBar_base_49 .disable,
+.HorizontalBar_base_49 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
 
 .HorizontalBar_leftButton_5f,
 .HorizontalBar_rightButton_03 {
     width: 13rem;
     height: 13rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
     background: no-repeat center / 7rem 5rem;
-    opacity: .5;
+    opacity: 0.5;
     z-index: 1;
     transform: rotate(-90deg);
     transition: opacity 130ms linear;
     cursor: pointer;
 }
 
-.HorizontalBar_leftButton_5f:hover, .HorizontalBar_rightButton_03:hover {
-        opacity: 1;
-    }
+.HorizontalBar_leftButton_5f:hover,
+.HorizontalBar_rightButton_03:hover {
+    opacity: 1;
+}
 
 .HorizontalBar_leftButton_5f {
     background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
@@ -381,9 +399,10 @@
     min-width: 20rem;
     height: 13rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
-    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem 7rem;
-    opacity: .5;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem
+        7rem;
+    opacity: 0.5;
     position: absolute;
     z-index: 1;
     transition: opacity 130ms linear;
@@ -391,8 +410,8 @@
 }
 
 .HorizontalBar_thumb_fd:hover {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 .HorizontalBar_rail_32 {
     height: 0;
@@ -404,9 +423,8 @@
 }
 
 .HorizontalBar_rail_32:hover {
-        opacity: .7;
-    }
-
+    opacity: 0.7;
+}
 
 .HorizontalScroll_base_29 {
     width: 100%;
@@ -431,32 +449,33 @@
     position: relative;
 }
 
-    .VerticalBar_base__nonActive_42 {
-        visibility: hidden;
-    }
+.VerticalBar_base__nonActive_42 {
+    visibility: hidden;
+}
 
-    .VerticalBar_base_f3 .disable,
-    .VerticalBar_base_f3 .disable:hover {
-        opacity: .3;
-        cursor: default;
-    }
+.VerticalBar_base_f3 .disable,
+.VerticalBar_base_f3 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
 
 .VerticalBar_topButton_d7,
 .VerticalBar_bottomButton_06 {
     width: 13rem;
     height: 13rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
     background: no-repeat center / 7rem 5rem;
-    opacity: .5;
+    opacity: 0.5;
     z-index: 1;
     transition: opacity 130ms linear;
     cursor: pointer;
 }
 
-.VerticalBar_topButton_d7:hover, .VerticalBar_bottomButton_06:hover {
-        opacity: 1;
-    }
+.VerticalBar_topButton_d7:hover,
+.VerticalBar_bottomButton_06:hover {
+    opacity: 1;
+}
 
 .VerticalBar_topButton_d7 {
     background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
@@ -474,15 +493,15 @@
 }
 
 .VerticalBar_thumb_32 {
-    display: none;
+    display: flex;
     flex: 0 0 13rem;
     width: 13rem;
     height: 100%;
     min-height: 20rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
     background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
-    opacity: .5;
+    opacity: 0.5;
     position: absolute;
     z-index: 1;
     transition: opacity 130ms linear;
@@ -490,8 +509,8 @@
 }
 
 .VerticalBar_thumb_32:hover {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 .VerticalBar_rail_43 {
     width: 0;
@@ -506,9 +525,8 @@
 }
 
 .VerticalBar_rail_43:hover {
-        opacity: .7;
-    }
-
+    opacity: 0.7;
+}
 
 .VerticalScroll_content_cb {
     height: 100%;
@@ -535,14 +553,14 @@
 }
 
 .PageTitle_title_33 {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 36rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
 .mediaMedium .PageTitle_title_33 {
-        font-size: 56rem;
+    font-size: 56rem;
 }
 
 .FormatText_base_d0 {
@@ -551,7 +569,7 @@
 }
 
 .default_sectionTitleLong_f5 {
-    color: #FEFEEC;
+    color: #fefeec;
     font-size: 24rem;
     font-weight: 400;
     line-height: 1.2;
@@ -559,7 +577,7 @@
 }
 
 .default_sectionTitleSmall_45 {
-    color: #FEFEEC;
+    color: #fefeec;
     font-size: 24rem;
     font-weight: 400;
     line-height: 1.2;
@@ -567,15 +585,15 @@
 }
 
 .default_sectionTitleSmall__biggerMargin_5b {
-        margin-bottom: 26rem;
-    }
+    margin-bottom: 26rem;
+}
 
 .default_sectionTitleSmall__largeMargin_e4 {
-        margin-bottom: 34rem;
-    }
+    margin-bottom: 34rem;
+}
 
 .default_sectionSubtitle_6e {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
@@ -631,12 +649,12 @@
 }
 
 .AboutSection_tableCell_1a + .AboutSection_tableCell_1a {
-        border-top: 1rem rgba(255,255,255, .05) solid;
-    }
+    border-top: 1rem rgba(255, 255, 255, 0.05) solid;
+}
 
 .AboutSection_tableCell__centered_c2 {
-        justify-content: center;
-    }
+    justify-content: center;
+}
 
 .AboutSection_tableCellText_1f {
     margin-bottom: 3rem;
@@ -655,13 +673,13 @@
     position: relative;
 }
 
-    .ExtendedText_base__zeroPadding_25 {
-        padding: 0;
-    }
+.ExtendedText_base__zeroPadding_25 {
+    padding: 0;
+}
 
-    .ExtendedText_base__isTruncationAvailable_5b {
-        width: 100%;
-    }
+.ExtendedText_base__isTruncationAvailable_5b {
+    width: 100%;
+}
 
 .ExtendedText_truncated_97 {
     display: flex;
@@ -671,8 +689,8 @@
 }
 
 .ExtendedText_truncated__hide_31 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .ExtendedText_unTruncated_b8 {
     display: flex;
@@ -683,7 +701,7 @@
     height: 100%;
     justify-content: flex-start;
     align-content: flex-start;
-    color: #FF2717;
+    color: #ff2717;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -696,23 +714,23 @@
 }
 
 .colors_whiteReal_31 {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .colors_white_45 {
-    color: #F2F2F7;
+    color: #f2f2f7;
 }
 
 .colors_whiteOrange_81 {
-    color: #FEFEEC;
+    color: #fefeec;
 }
 
 .colors_whiteSpanish_c3 {
-    color: #E9E2BF;
+    color: #e9e2bf;
 }
 
 .colors_par_5b {
-    color: #8C8C7E;
+    color: #8c8c7e;
 }
 
 .colors_parSecondary_fd {
@@ -720,39 +738,39 @@
 }
 
 .colors_parTertiary_97 {
-    color: #37362E;
+    color: #37362e;
 }
 
 .colors_red_79 {
-    color: #FF2717;
+    color: #ff2717;
 }
 
 .colors_redDark_73 {
-    color: #B70000;
+    color: #b70000;
 }
 
 .colors_yellow_76 {
-    color: #FEAB34;
+    color: #feab34;
 }
 
 .colors_orange_cd {
-    color: #EE7000;
+    color: #ee7000;
 }
 
 .colors_cream_0f {
-    color: #FFDD99;
+    color: #ffdd99;
 }
 
 .colors_brown_82 {
-    color: #CBAC77;
+    color: #cbac77;
 }
 
 .colors_greenBright_68 {
-    color: #80D43A;
+    color: #80d43a;
 }
 
 .colors_green_fa {
-    color: #7AB300;
+    color: #7ab300;
 }
 
 .colors_greenDark_a9 {
@@ -760,27 +778,27 @@
 }
 
 .colors_blueBooster_26 {
-    color: #CCFFFF;
+    color: #ccffff;
 }
 
 .colors_blueTeamkiller_86 {
-    color: #09E2FF;
+    color: #09e2ff;
 }
 
 .colors_cred_35 {
-    color: #CED9D9;
+    color: #ced9d9;
 }
 
 .colors_gold_c3 {
-    color: #FFC363;
+    color: #ffc363;
 }
 
 .colors_bond_ce {
-    color: #C9C9B6;
+    color: #c9c9b6;
 }
 
 .colors_prom_83 {
-    color: #A29B70;
+    color: #a29b70;
 }
 
 .renderers_noBreakWrapper_10 {
@@ -822,8 +840,8 @@
 }
 
 .AddonsSection_column_fb + .AddonsSection_column_fb {
-        margin-left: 15rem;
-    }
+    margin-left: 15rem;
+}
 
 .AddonsSection_text_08 {
     display: flex;
@@ -841,7 +859,7 @@
 }
 
 .mediaMedium .LevelUpSection_text_2a {
-        width: 450rem;
+    width: 450rem;
 }
 
 .LevelUpSection_img_a3 {
@@ -861,13 +879,13 @@
 }
 
 .LevelUpSection_level__left_fa {
-        left: 138rem;
-    }
+    left: 138rem;
+}
 
 .LevelUpSection_level__right_0e {
-        right: 146rem;
-        transform: translate(50%, -50%);
-    }
+    right: 146rem;
+    transform: translate(50%, -50%);
+}
 
 .MainInfoSection_base_81 {
     padding: 0 0 65rem;
@@ -879,8 +897,8 @@
 }
 
 .MainInfoSection_row_c7 + .MainInfoSection_row_c7 {
-        margin-top: 23rem;
-    }
+    margin-top: 23rem;
+}
 
 .MainInfoSection_cell_b3 {
     display: flex;
@@ -889,12 +907,12 @@
 }
 
 .mediaMedium .MainInfoSection_cell_b3 {
-        width: 300rem;
+    width: 300rem;
 }
 
 .MainInfoSection_cell_b3 + .MainInfoSection_cell_b3 {
-        margin-left: 30rem;
-    }
+    margin-left: 30rem;
+}
 
 .MainInfoSection_cellImage_ec {
     width: 58rem;
@@ -911,7 +929,7 @@
 }
 
 .mediaSmall .MainInfoSection_cellContent_bb {
-        font-size: 16rem;
+    font-size: 16rem;
 }
 
 .ProgressionSection_description_1e {
@@ -977,23 +995,23 @@
 .ProgressionSection_tableCell_60 {
     display: flex;
     padding-bottom: 10rem;
-    color: #CBAC77;
+    color: #cbac77;
 }
 
 .ProgressionSection_tableCell__header_a9 {
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        flex: 1;
-    }
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
 
 .ProgressionSection_tableCell__centered_6d {
-        justify-content: center;
-    }
+    justify-content: center;
+}
 
 .ProgressionSection_tableCell__right_98 {
-        justify-content: flex-end;
-    }
+    justify-content: flex-end;
+}
 
 .ReserveCategoriesSection_categoriesText_85 {
     margin-bottom: 34rem;
@@ -1011,8 +1029,8 @@
 }
 
 .ReserveCategoriesSection_categoryColumn_b1 + .ReserveCategoriesSection_categoryColumn_b1 {
-        margin-left: 60rem;
-    }
+    margin-left: 60rem;
+}
 
 .ReserveCategoriesSection_categoryCell_16 {
     display: flex;
@@ -1021,20 +1039,20 @@
 }
 
 .ReserveCategoriesSection_categoryCell__title_1b {
-        color: #E9E2BF;
-        font-size: 15rem;
-        font-weight: 700;
-        line-height: 1.15;
-        margin-bottom: 16rem;
-        padding-bottom: 5rem;
-        border-bottom: 1rem solid rgba(255,255,255, .05);
-    }
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 16rem;
+    padding-bottom: 5rem;
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.05);
+}
 
 .ReserveCategoriesSection_categoryCell__imgContainer_86 {
-        width: 48rem;
-        height: 48rem;
-        margin-right: 10rem;
-    }
+    width: 48rem;
+    height: 48rem;
+    margin-right: 10rem;
+}
 
 .ReserveCategoriesSection_categoryTypeIcon_bb {
     width: 32rem;
@@ -1062,7 +1080,7 @@
 }
 
 .mediaSmall .ReserveCategoriesSection_progressionInfo_57 {
-        width: 450rem;
+    width: 450rem;
 }
 
 .ReserveCategoriesSection_progressionImg_35 {
@@ -1092,7 +1110,7 @@
 
 .ReserveCategoriesSection_progressionTableHeaderText_77 {
     height: 24rem;
-    color: #E9E2BF;
+    color: #e9e2bf;
 }
 
 .ReserveCategoriesSection_progressionTableCell_85 {
@@ -1103,17 +1121,17 @@
 }
 
 .ReserveCategoriesSection_progressionTableCell_85 + .ReserveCategoriesSection_progressionTableCell_85 {
-        border-top: 1rem rgba(255,255,255, .05) solid;
-    }
+    border-top: 1rem rgba(255, 255, 255, 0.05) solid;
+}
 
 .ReserveCategoriesSection_progressionTableCell__accentStart_4f {
-        justify-content: flex-start;
-        color: #E9E2BF;
-    }
+    justify-content: flex-start;
+    color: #e9e2bf;
+}
 
 .ReserveCategoriesSection_progressionTableCell__accent_ea {
-        color: #FEFEEC;
-    }
+    color: #fefeec;
+}
 
 .ReserveCategoriesSection_configuration_a0 {
     display: flex;
@@ -1131,8 +1149,8 @@
 }
 
 .mediaMedium .ReserveCategoriesSection_configurationTable_96 {
-        width: 560rem;
-        padding-right: 26rem;
+    width: 560rem;
+    padding-right: 26rem;
 }
 
 .ReserveCategoriesSection_configurationIcon_4d {
@@ -1147,9 +1165,9 @@
 }
 
 .ReserveCategoriesSection_configurationTableColumn__accent_a6 {
-        min-width: 113rem;
-        color: #E9E2BF;
-    }
+    min-width: 113rem;
+    color: #e9e2bf;
+}
 
 .ReserveCategoriesSection_configurationTableCell_d9 {
     display: flex;
@@ -1158,26 +1176,26 @@
 }
 
 .ReserveCategoriesSection_configurationTableCell_d9 + .ReserveCategoriesSection_configurationTableCell_d9 {
-        border-top: 1rem rgba(255,255,255, .05) solid;
-    }
+    border-top: 1rem rgba(255, 255, 255, 0.05) solid;
+}
 
 .ReserveCategoriesSection_configurationTableCell__start_9e {
-        justify-content: flex-start;
-    }
+    justify-content: flex-start;
+}
 
 .ReserveCategoriesSection_configurationTableCell__centered_32 {
-        justify-content: center;
-    }
+    justify-content: center;
+}
 
 .ReserveCategoriesSection_configurationImgContainer_51 {
     display: none;
 }
 
 .mediaMedium .ReserveCategoriesSection_configurationImgContainer_51 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 .ReserveCategoriesSection_configurationImg_5e {
@@ -1203,8 +1221,8 @@
 }
 
 .RulesSection_descriptionColumn_f3 + .RulesSection_descriptionColumn_f3 {
-        margin-left: 15rem;
-    }
+    margin-left: 15rem;
+}
 
 .RulesSection_descriptionImg_ee {
     height: 170rem;
@@ -1213,8 +1231,8 @@
 }
 
 .RulesSection_text_e7 + .RulesSection_text_e7 {
-        margin-top: 15rem;
-    }
+    margin-top: 15rem;
+}
 
 .RulesSection_list_7b {
     margin-top: 15rem;
@@ -1246,8 +1264,8 @@
 }
 
 .mediaMedium .RulesSection_backToFightText_79 {
-        width: 450rem;
-        margin-right: 0;
+    width: 450rem;
+    margin-right: 0;
 }
 
 .RulesSection_backToFightImg_52 {
@@ -1272,8 +1290,8 @@
 }
 
 .mediaMedium .RulesSection_armorVentilation_d1 {
-        top: 119rem;
-        left: 62rem;
+    top: 119rem;
+    left: 62rem;
 }
 
 .RulesSection_armorSide_19 {
@@ -1282,8 +1300,8 @@
 }
 
 .mediaMedium .RulesSection_armorSide_19 {
-        top: 261rem;
-        left: 103rem;
+    top: 261rem;
+    left: 103rem;
 }
 
 .RulesSection_armorBack_69 {
@@ -1292,8 +1310,8 @@
 }
 
 .mediaMedium .RulesSection_armorBack_69 {
-        top: 261rem;
-        left: 53rem;
+    top: 261rem;
+    left: 53rem;
 }
 
 .RulesSection_armorDoor_9b {
@@ -1302,12 +1320,12 @@
 }
 
 .mediaMedium .RulesSection_armorDoor_9b {
-        top: 261rem;
-        left: 78rem;
+    top: 261rem;
+    left: 78rem;
 }
 
 .SubTitle_base_07 {
-    color: rgba(242,242,247, .7);
+    color: rgba(242, 242, 247, 0.7);
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -1319,8 +1337,8 @@
     font-size: 18rem;
 }
 
-    .mediaMedium .SubTitle_base_07 {
-        font-size: 24rem;
+.mediaMedium .SubTitle_base_07 {
+    font-size: 24rem;
 }
 
 .WinStrategySection_base_b6 {
@@ -1347,29 +1365,31 @@
 }
 
 .mediaMedium .WinStrategySection_img_9f {
-        height: 470rem;
+    height: 470rem;
 }
 
 .WinStrategySection_winText_7d + .WinStrategySection_winText_7d {
-        margin-top: 15rem;
-    }
+    margin-top: 15rem;
+}
 
 .InfoViewApp_base_a5 {
     padding-top: 135rem;
 }
 
-    .InfoViewApp_base__fullScreen_0a {
-        width: 100%;
-        height: 100%;
-        background: radial-gradient(transparent, rgba(0,0,0, .7)) no-repeat center / cover, url('R.images.frontline.gui.maps.bg.info') no-repeat center / cover;
-    }
+.InfoViewApp_base__fullScreen_0a {
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(transparent, rgba(0, 0, 0, 0.7)) no-repeat center / cover,
+        url('R.images.frontline.gui.maps.bg.info') no-repeat center / cover;
+}
 
-    .mediaMedium .InfoViewApp_base_a5 {
-        padding-top: 185rem;
+.mediaMedium .InfoViewApp_base_a5 {
+    padding-top: 185rem;
 }
 
 .InfoViewApp_page_ca {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -1391,7 +1411,7 @@
 }
 
 .mediaLarge .InfoViewApp_pageTitle_5d {
-        top: 88rem;
+    top: 88rem;
 }
 
 .InfoViewApp_closeButton_c4 {
@@ -1405,12 +1425,12 @@
 }
 
 .InfoViewApp_mainContent__padded_64 {
-        padding: 0 20rem;
-    }
+    padding: 0 20rem;
+}
 
 .mediaMedium .InfoViewApp_mainContent_9d {
-        width: 960rem;
-        padding: 0;
+    width: 960rem;
+    padding: 0;
 }
 
 /*
@@ -1424,11 +1444,11 @@
     position: relative;
 }
 .ProgressBar_base__medium_62 {
-        height: 6rem;
-    }
+    height: 6rem;
+}
 .ProgressBar_base__small_df {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_background_51 {
     width: 100%;
     max-width: 8001px;
@@ -1442,16 +1462,15 @@
     left: 0;
 }
 .ProgressBar_background__medium_6e {
-        height: 6rem;
-    }
+    height: 6rem;
+}
 .ProgressBar_background__small_46 {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_lineWrapper_6a {
     display: flex;
     flex: 1;
 }
-
 
 .ProgressBarBlink_base_24 {
     width: 60rem;
@@ -1466,16 +1485,16 @@
     pointer-events: none;
 }
 
-    .ProgressBarBlink_base__medium_ec {
-        width: 42rem;
-        height: 70rem;
-    }
+.ProgressBarBlink_base__medium_ec {
+    width: 42rem;
+    height: 70rem;
+}
 
-    .ProgressBarBlink_base__small_0f {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+.ProgressBarBlink_base__small_0f {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -1487,18 +1506,18 @@
     height: 100%;
     background-color: var(--progress-line-base);
     position: relative;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressLineImpose_base__disabled_cc {
-        background-color: var(--progress-line-disabled);
-    }
+    background-color: var(--progress-line-disabled);
+}
 .ProgressLineImpose_base__finished_d4 {
-        background-color: var(--progress-line-finished);
-    }
+    background-color: var(--progress-line-finished);
+}
 .ProgressLineImpose_base__withoutBounce_56 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressLineImpose_pattern_1c {
     max-width: 8001px;
     background-image: var(--progress-pattern-base);
@@ -1512,19 +1531,19 @@
     left: 1rem;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-disabled);
-        left: 0;
-    }
+    background-image: var(--progress-pattern-disabled);
+    left: 0;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-finished);
-    }
+    background-image: var(--progress-pattern-finished);
+}
 .ProgressLineImpose_gradient_35 {
     max-width: 8001px;
-    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75));
     mix-blend-mode: overlay;
     position: absolute;
     top: 1rem;
@@ -1533,15 +1552,15 @@
     left: 0;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
-        display: none;
-    }
+    display: none;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
-        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
-    }
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5));
+}
 .ProgressLineImpose_glow_a5 {
     width: 60rem;
     max-width: 8001px;
@@ -1556,17 +1575,17 @@
     pointer-events: none;
 }
 .ProgressLineImpose_glow__left_d8 {
-        left: 1rem;
-    }
+    left: 1rem;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
-    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
-        display: none;
-    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+    display: none;
+}
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -1588,7 +1607,7 @@
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1), cubic-bezier(0.21, 0.61, 0.35, 1);
     transition-property: width, transform;
 }
 
@@ -1602,12 +1621,12 @@
     height: 100%;
     position: absolute;
     top: 0;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressBarDeltaGrow_glow_68 {
     width: 0;
     max-width: 8001px;
@@ -1617,12 +1636,12 @@
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 
 .Reward_base_ea {
     display: flex;
@@ -1630,47 +1649,47 @@
     position: relative;
 }
 
-    .Reward_base__s48x48_46,
-    .Reward_base__small_c0 {
-        width: 48rem;
-        height: 48rem;
-    }
+.Reward_base__s48x48_46,
+.Reward_base__small_c0 {
+    width: 48rem;
+    height: 48rem;
+}
 
-    .Reward_base__s80x80_ce,
-    .Reward_base__big_e5 {
-        width: 80rem;
-        height: 80rem;
-    }
+.Reward_base__s80x80_ce,
+.Reward_base__big_e5 {
+    width: 80rem;
+    height: 80rem;
+}
 
-    .Reward_base__s128x100_c3 {
-        width: 128rem;
-        height: 100rem;
-    }
+.Reward_base__s128x100_c3 {
+    width: 128rem;
+    height: 100rem;
+}
 
-    .Reward_base__s180x135_7c {
-        width: 180rem;
-        height: 135rem;
-    }
+.Reward_base__s180x135_7c {
+    width: 180rem;
+    height: 135rem;
+}
 
-    .Reward_base__s232x174_67 {
-        width: 232rem;
-        height: 174rem;
-    }
+.Reward_base__s232x174_67 {
+    width: 232rem;
+    height: 174rem;
+}
 
-    .Reward_base__s296x222_78 {
-        width: 296rem;
-        height: 222rem;
-    }
+.Reward_base__s296x222_78 {
+    width: 296rem;
+    height: 222rem;
+}
 
-    .Reward_base__s400x300_07 {
-        width: 400rem;
-        height: 300rem;
-    }
+.Reward_base__s400x300_07 {
+    width: 400rem;
+    height: 300rem;
+}
 
-    .Reward_base__s600x450_f8 {
-        width: 600rem;
-        height: 450rem;
-    }
+.Reward_base__s600x450_f8 {
+    width: 600rem;
+    height: 450rem;
+}
 
 .Reward_tooltipWrapper_b5 {
     height: 100%;
@@ -1697,43 +1716,43 @@
 }
 
 .Reward_base__s48x48_46 .Reward_overlay_68,
-    .Reward_base__small_c0 .Reward_overlay_68 {
-        width: 96rem;
-        height: 96rem;
-        background-size: 100%;
-        overflow: visible;
-    }
+.Reward_base__small_c0 .Reward_overlay_68 {
+    width: 96rem;
+    height: 96rem;
+    background-size: 100%;
+    overflow: visible;
+}
 
 .Reward_base__s80x80_ce .Reward_overlay_68,
-    .Reward_base__big_e5 .Reward_overlay_68 {
-        width: 128rem;
-        height: 128rem;
-    }
+.Reward_base__big_e5 .Reward_overlay_68 {
+    width: 128rem;
+    height: 128rem;
+}
 
 .Reward_base__s180x135_7c .Reward_overlay_68 {
-        width: 266rem;
-        height: 241rem;
-    }
+    width: 266rem;
+    height: 241rem;
+}
 
 .Reward_base__s232x174_67 .Reward_overlay_68 {
-        width: 344rem;
-        height: 312rem;
-    }
+    width: 344rem;
+    height: 312rem;
+}
 
 .Reward_base__s296x222_78 .Reward_overlay_68 {
-        width: 450rem;
-        height: 408rem;
-    }
+    width: 450rem;
+    height: 408rem;
+}
 
 .Reward_base__s400x300_07 .Reward_overlay_68 {
-        width: 618rem;
-        height: 590rem;
-    }
+    width: 618rem;
+    height: 590rem;
+}
 
 .Reward_base__s600x450_f8 .Reward_overlay_68 {
-        width: 670rem;
-        height: 575rem;
-    }
+    width: 670rem;
+    height: 575rem;
+}
 
 .Reward_highlight_36 {
     width: 100%;
@@ -1757,35 +1776,35 @@
 }
 
 .Reward_base__s48x48_46 .Reward_info_72,
-    .Reward_base__small_c0 .Reward_info_72 {
-        margin: -10rem -10rem 0;
-    }
+.Reward_base__small_c0 .Reward_info_72 {
+    margin: -10rem -10rem 0;
+}
 
 .Reward_info__multi_63 {
-        margin-right: 2rem;
-        text-align: right;
-    }
+    margin-right: 2rem;
+    text-align: right;
+}
 
 .Reward_base__s48x48_46 .Reward_info__multi_63,
-        .Reward_base__small_c0 .Reward_info__multi_63 {
-            margin-right: 0;
-        }
+.Reward_base__small_c0 .Reward_info__multi_63 {
+    margin-right: 0;
+}
 
 .Reward_info__credits_ef {
-        color: #E9E2BF;
-    }
+    color: #e9e2bf;
+}
 
 .Reward_info__gold_36 {
-        color: #FFC363;
-    }
+    color: #ffc363;
+}
 
 .Reward_info__crystal_36 {
-        color: #C9C9B6;
-    }
+    color: #c9c9b6;
+}
 
 .Reward_info__premiumTank_d3 {
-        color: #FFDD99;
-    }
+    color: #ffdd99;
+}
 
 .Reward_timer_d3 {
     background: no-repeat center / contain;
@@ -1794,22 +1813,22 @@
 }
 
 .Reward_base__s48x48_46 .Reward_timer_d3,
-    .Reward_base__small_c0 .Reward_timer_d3 {
-        width: 23rem;
-        height: 23rem;
-        background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
-        top: -6rem;
-        right: -6rem;
-    }
+.Reward_base__small_c0 .Reward_timer_d3 {
+    width: 23rem;
+    height: 23rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
+    top: -6rem;
+    right: -6rem;
+}
 
 .Reward_base__s80x80_ce .Reward_timer_d3,
-    .Reward_base__big_e5 .Reward_timer_d3 {
-        width: 48rem;
-        height: 48rem;
-        background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
-        top: -14rem;
-        right: -14rem;
-    }
+.Reward_base__big_e5 .Reward_timer_d3 {
+    width: 48rem;
+    height: 48rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
+    top: -14rem;
+    right: -14rem;
+}
 
 .Rewards_base_11 {
     display: flex;
@@ -1826,24 +1845,24 @@
     width: 100%;
 }
 
-    .Content_base__infoContainer_5d {
-        padding-top: 10rem;
-    }
+.Content_base__infoContainer_5d {
+    padding-top: 10rem;
+}
 .Content_rewardText_60 {
-    color: rgba(221,222,217, .8);
+    color: rgba(221, 222, 217, 0.8);
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 .mediaMedium .Content_rewardText_60 {
-        font-size: 16rem;
+    font-size: 16rem;
 }
 .Content_progressBar_4d {
     width: 100%;
     margin-bottom: 11rem;
 }
 .mediaMedium .Content_progressBar_4d {
-        margin-bottom: 25rem;
+    margin-bottom: 25rem;
 }
 .Content_levels_aa {
     display: flex;
@@ -1852,23 +1871,23 @@
     margin-bottom: 8rem;
 }
 .Content_levelCurrent_43 {
-    color: #FFC363;
+    color: #ffc363;
     font-size: 20rem;
     font-weight: 400;
     line-height: 1.2;
     font-weight: 700;
 }
 .Content_base__finished_16 .Content_levelCurrent_43 {
-        color: #ddded9;
-        opacity: .5;
-    }
+    color: #ddded9;
+    opacity: 0.5;
+}
 .Content_levelNext_d3 {
     color: #ddded9;
     font-size: 20rem;
     font-weight: 400;
     line-height: 1.2;
     font-weight: 700;
-    opacity: .5;
+    opacity: 0.5;
 }
 .Content_exp_a4 {
     display: flex;
@@ -1880,14 +1899,14 @@
     line-height: 1.2;
 }
 .Content_base__finished_16 .Content_currentPoints_36 {
-        color: #F2F2F7;
-    }
+    color: #f2f2f7;
+}
 .Content_needPoints_91 {
     color: #ddded9;
     font-size: 20rem;
     font-weight: 400;
     line-height: 1.2;
-    opacity: .5;
+    opacity: 0.5;
 }
 .Content_levelIcon_86 {
     width: 24rem;
@@ -1910,34 +1929,35 @@
     animation: Counter_show_be ease-in-out forwards;
 }
 
-    .Counter_base__big_19 {
-        min-width: 21rem;
-        height: 21rem;
-    }
+.Counter_base__big_19 {
+    min-width: 21rem;
+    height: 21rem;
+}
 
-    .Counter_base__small_3b {
-        min-width: 13rem;
-        height: 13rem;
-    }
+.Counter_base__small_3b {
+    min-width: 13rem;
+    height: 13rem;
+}
 
-    .Counter_base__empty_98 {
-        min-width: 6rem;
-        height: 6rem;
-    }
+.Counter_base__empty_98 {
+    min-width: 6rem;
+    height: 6rem;
+}
 
-    .Counter_base__animated_40 {
-        animation-duration: .2s;
-    }
+.Counter_base__animated_40 {
+    animation-duration: 0.2s;
+}
 
-    .Counter_base__hidden_56 {
-        animation-name: Counter_hide_b6;
-    }
+.Counter_base__hidden_56 {
+    animation-name: Counter_hide_b6;
+}
 .Counter_bg_74 {
     border: 1rem solid #fe4e0f;
     border-radius: 7rem;
-    box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
-            0 0 6rem rgba(254,103,0, .2),
-            0 0 12rem 4rem rgba(249,0,0, .3);
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 6rem rgba(254, 103, 0, 0.2),
+        0 0 12rem 4rem rgba(249, 0, 0, 0.3);
     background-image: url('R.images.gui.maps.icons.components.counter.pattern');
     position: absolute;
     top: 0;
@@ -1947,11 +1967,11 @@
     z-index: -1;
 }
 .Counter_base__big_19 .Counter_bg_74 {
-        border-radius: 11rem;
-    }
+    border-radius: 11rem;
+}
 .Counter_base__small_3b .Counter_bg_74 {
-        border-radius: 7rem;
-    }
+    border-radius: 7rem;
+}
 .Counter_value_3e {
     display: flex;
     padding: 0 4rem;
@@ -1961,27 +1981,27 @@
     white-space: nowrap;
 }
 .Counter_base__big_19 .Counter_value_3e {
-        padding: 0 7rem;
-        font-size: 14rem;
-        line-height: 20rem;
-    }
+    padding: 0 7rem;
+    font-size: 14rem;
+    line-height: 20rem;
+}
 .Counter_base__small_3b .Counter_value_3e {
-        font-size: 9rem;
-        line-height: 12rem;
-    }
+    font-size: 9rem;
+    line-height: 12rem;
+}
 .Counter_value__text_d6 {
-        padding: 0 7rem;
-    }
+    padding: 0 7rem;
+}
 .Counter_base__big_19 .Counter_value__text_d6 {
-            padding: 0 10rem;
-        }
+    padding: 0 10rem;
+}
 .Counter_base__small_3b .Counter_value__text_d6 {
-            padding: 0 5rem;
-            font-size: 10rem;
-        }
+    padding: 0 5rem;
+    font-size: 10rem;
+}
 .Counter_base__pattern_71 .Counter_value_3e {
-        display: none;
-    }
+    display: none;
+}
 .Counter_plus_15 {
     position: relative;
     top: -1rem;
@@ -1990,16 +2010,16 @@
     display: none;
 }
 .Counter_base__pattern_71 .Counter_pattern_83 {
-        display: block;
-        border-radius: 50%;
-        background-image: url('R.images.gui.maps.icons.components.counter.pattern');
-        opacity: .8;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
+    display: block;
+    border-radius: 50%;
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 @keyframes Counter_show_be {
     0% {
         transform: scale(0);
@@ -2024,23 +2044,23 @@
 }
 
 .FormatTextWithColorTags_whiteReal_d8 {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .FormatTextWithColorTags_white_b9 {
-    color: #F2F2F7;
+    color: #f2f2f7;
 }
 
 .FormatTextWithColorTags_whiteOrange_ea {
-    color: #FEFEEC;
+    color: #fefeec;
 }
 
 .FormatTextWithColorTags_whiteSpanish_54 {
-    color: #E9E2BF;
+    color: #e9e2bf;
 }
 
 .FormatTextWithColorTags_par_c1 {
-    color: #8C8C7E;
+    color: #8c8c7e;
 }
 
 .FormatTextWithColorTags_parSecondary_4e {
@@ -2048,39 +2068,39 @@
 }
 
 .FormatTextWithColorTags_parTertiary_14 {
-    color: #37362E;
+    color: #37362e;
 }
 
 .FormatTextWithColorTags_red_d9 {
-    color: #FF2717;
+    color: #ff2717;
 }
 
 .FormatTextWithColorTags_redDark_ea {
-    color: #B70000;
+    color: #b70000;
 }
 
 .FormatTextWithColorTags_yellow_48 {
-    color: #FEAB34;
+    color: #feab34;
 }
 
 .FormatTextWithColorTags_orange_ad {
-    color: #EE7000;
+    color: #ee7000;
 }
 
 .FormatTextWithColorTags_cream_96 {
-    color: #FFDD99;
+    color: #ffdd99;
 }
 
 .FormatTextWithColorTags_brown_27 {
-    color: #CBAC77;
+    color: #cbac77;
 }
 
 .FormatTextWithColorTags_greenBright_04 {
-    color: #80D43A;
+    color: #80d43a;
 }
 
 .FormatTextWithColorTags_green_58 {
-    color: #7AB300;
+    color: #7ab300;
 }
 
 .FormatTextWithColorTags_greenDark_af {
@@ -2088,27 +2108,27 @@
 }
 
 .FormatTextWithColorTags_blueBooster_b3 {
-    color: #CCFFFF;
+    color: #ccffff;
 }
 
 .FormatTextWithColorTags_blueTeamkiller_ab {
-    color: #09E2FF;
+    color: #09e2ff;
 }
 
 .FormatTextWithColorTags_cred_d3 {
-    color: #CED9D9;
+    color: #ced9d9;
 }
 
 .FormatTextWithColorTags_gold_28 {
-    color: #FFC363;
+    color: #ffc363;
 }
 
 .FormatTextWithColorTags_bond_74 {
-    color: #C9C9B6;
+    color: #c9c9b6;
 }
 
 .FormatTextWithColorTags_prom_58 {
-    color: #A29B70;
+    color: #a29b70;
 }
 
 .EpicWidget_base_4d {
@@ -2135,105 +2155,106 @@
 }
 
 .EpicWidget_icon__huge_1b {
-        width: 130rem;
-        height: 130rem;
-    }
+    width: 130rem;
+    height: 130rem;
+}
 
 .EpicWidget_icon__big_e5 {
-        width: 72rem;
-        height: 72rem;
-    }
+    width: 72rem;
+    height: 72rem;
+}
 
 .EpicWidget_icon__medium_5c {
-        width: 64rem;
-        height: 64rem;
-    }
+    width: 64rem;
+    height: 64rem;
+}
 
 .EpicWidget_icon__small_bc {
-        width: 40rem;
-        height: 40rem;
-    }
+    width: 40rem;
+    height: 40rem;
+}
 
 .EpicWidget_icon__b0_36,
-    .EpicWidget_icon__b1_9a {
-        top: 147rem;
-    }
+.EpicWidget_icon__b1_9a {
+    top: 147rem;
+}
 
-.EpicWidget_icon__b0__medium_e8, .EpicWidget_icon__b1__medium_19 {
-            top: 103rem;
-    }
+.EpicWidget_icon__b0__medium_e8,
+.EpicWidget_icon__b1__medium_19 {
+    top: 103rem;
+}
 
 .EpicWidget_icon__b0__extraSmall_57,
-    .EpicWidget_icon__b0__small_25,
-    .EpicWidget_icon__b1__extraSmall_b1,
-    .EpicWidget_icon__b1__small_6f {
-            top: 107rem;
-    }
+.EpicWidget_icon__b0__small_25,
+.EpicWidget_icon__b1__extraSmall_b1,
+.EpicWidget_icon__b1__small_6f {
+    top: 107rem;
+}
 
 .EpicWidget_icon__b2_21 {
-        top: 5rem;
-    }
+    top: 5rem;
+}
 
 .EpicWidget_icon__b2__medium_37 {
-            top: -4rem;
-    }
+    top: -4rem;
+}
 
 .EpicWidget_icon__b2__extraSmall_1a,
-    .EpicWidget_icon__b2__small_84 {
-            top: 6rem;
-    }
+.EpicWidget_icon__b2__small_84 {
+    top: 6rem;
+}
 
 .EpicWidget_icon__b3_9c {
-        top: -10rem;
-    }
+    top: -10rem;
+}
 
 .EpicWidget_icon__b3__medium_6d {
-            top: 14rem;
-    }
+    top: 14rem;
+}
 
 .EpicWidget_icon__b3__extraSmall_4f,
-    .EpicWidget_icon__b3__small_ca {
-            top: 0;
-    }
+.EpicWidget_icon__b3__small_ca {
+    top: 0;
+}
 
 .EpicWidget_icon__b4_04 {
-        top: 22rem;
-    }
+    top: 22rem;
+}
 
 .EpicWidget_icon__b4__medium_ba {
-            top: 18rem;
-    }
+    top: 18rem;
+}
 
 .EpicWidget_icon__b4__extraSmall_81,
-    .EpicWidget_icon__b4__small_fe {
-            top: 12rem;
-    }
+.EpicWidget_icon__b4__small_fe {
+    top: 12rem;
+}
 
 .EpicWidget_icon__b5_09 {
-        top: 9rem;
-    }
+    top: 9rem;
+}
 
 .EpicWidget_icon__b5__medium_4a {
-            top: 6rem;
-    }
+    top: 6rem;
+}
 
 .EpicWidget_icon__b5__extraSmall_b1,
-    .EpicWidget_icon__b5__small_00 {
-            top: 10rem;
-    }
+.EpicWidget_icon__b5__small_00 {
+    top: 10rem;
+}
 
 .EpicWidget_icon__b6_04 {
-        top: 3rem;
-    }
+    top: 3rem;
+}
 
 .EpicWidget_icon__b6__medium_d7 {
-            top: 6rem;
-    }
+    top: 6rem;
+}
 
 .EpicWidget_icon__b6__extraSmall_91,
-    .EpicWidget_icon__b6__small_9a {
-            top: 4rem;
-    }
+.EpicWidget_icon__b6__small_9a {
+    top: 4rem;
+}
 
 .EpicWidget_counter_ff {
     position: absolute;
@@ -2242,9 +2263,9 @@
 }
 
 .EpicWidget_counter__huge_a5 {
-        top: 19rem;
-        right: 15rem;
-    }
+    top: 19rem;
+    right: 15rem;
+}
 
 .EpicWidget_level_ca {
     position: absolute;
@@ -2252,68 +2273,70 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 700;
-    text-shadow: 0 0 6rem #000, 0 0 9rem #000;
+    text-shadow:
+        0 0 6rem #000,
+        0 0 9rem #000;
     mask: linear-gradient(rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0));
     mask-repeat: repeat;
 }
 
 .EpicWidget_icon__bg0_2e .EpicWidget_level_ca {
-        color: #8e8d8d;
-    }
+    color: #8e8d8d;
+}
 
 .EpicWidget_icon__bg1_d4 .EpicWidget_level_ca {
-        color: #9d9c9c;
-    }
+    color: #9d9c9c;
+}
 
 .EpicWidget_icon__bg2_5a .EpicWidget_level_ca {
-        color: #cccdda;
-    }
+    color: #cccdda;
+}
 
 .EpicWidget_icon__bg3_c6 .EpicWidget_level_ca {
-        color: #f6e8a1;
-    }
+    color: #f6e8a1;
+}
 
 .EpicWidget_icon__bg4_f9 .EpicWidget_level_ca {
-        color: #f5e79c;
-    }
+    color: #f5e79c;
+}
 
 .EpicWidget_icon__bg5_a5 .EpicWidget_level_ca {
-        color: #f6e9a4;
-    }
+    color: #f6e9a4;
+}
 
 .EpicWidget_level__b0_17,
-    .EpicWidget_level__b1_fd,
-    .EpicWidget_level__b2_cd,
-    .EpicWidget_level__b3_59 {
-        padding-bottom: 10rem;
-    }
+.EpicWidget_level__b1_fd,
+.EpicWidget_level__b2_cd,
+.EpicWidget_level__b3_59 {
+    padding-bottom: 10rem;
+}
 
 .EpicWidget_level__b0__extraSmall_48,
-    .EpicWidget_level__b0__small_57,
-    .EpicWidget_level__b1__extraSmall_e4,
-    .EpicWidget_level__b1__small_10,
-    .EpicWidget_level__b2__extraSmall_fc,
-    .EpicWidget_level__b2__small_50,
-    .EpicWidget_level__b3__extraSmall_3d,
-    .EpicWidget_level__b3__small_76 {
-            padding-bottom: 3rem;
-    }
+.EpicWidget_level__b0__small_57,
+.EpicWidget_level__b1__extraSmall_e4,
+.EpicWidget_level__b1__small_10,
+.EpicWidget_level__b2__extraSmall_fc,
+.EpicWidget_level__b2__small_50,
+.EpicWidget_level__b3__extraSmall_3d,
+.EpicWidget_level__b3__small_76 {
+    padding-bottom: 3rem;
+}
 
 .EpicWidget_icon__huge_1b .EpicWidget_level_ca {
-        font-size: 28rem;
-    }
+    font-size: 28rem;
+}
 
 .EpicWidget_icon__big_e5 .EpicWidget_level_ca {
-        font-size: 18rem;
-    }
+    font-size: 18rem;
+}
 
 .EpicWidget_icon__medium_5c .EpicWidget_level_ca {
-        font-size: 16rem;
-    }
+    font-size: 16rem;
+}
 
 .EpicWidget_icon__small_bc .EpicWidget_level_ca {
-        font-size: 14rem;
-    }
+    font-size: 14rem;
+}
 
 .EpicWidget_subtitle_e4 {
     position: absolute;
@@ -2323,7 +2346,7 @@
     top: auto;
     left: 50%;
     transform: translate(-50%);
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -2331,124 +2354,125 @@
 }
 
 .EpicWidget_subtitle__b0_5d,
-    .EpicWidget_subtitle__b1_f4 {
-        padding-top: 301rem;
-    }
+.EpicWidget_subtitle__b1_f4 {
+    padding-top: 301rem;
+}
 
-.EpicWidget_subtitle__b0__medium_60, .EpicWidget_subtitle__b1__medium_e0 {
-            padding-top: 257rem;
-    }
+.EpicWidget_subtitle__b0__medium_60,
+.EpicWidget_subtitle__b1__medium_e0 {
+    padding-top: 257rem;
+}
 
 .EpicWidget_subtitle__b0__extraSmall_7c,
-    .EpicWidget_subtitle__b0__small_23,
-    .EpicWidget_subtitle__b1__extraSmall_27,
-    .EpicWidget_subtitle__b1__small_ac {
-            color: #8C8C7E;
-            font-size: 14rem;
-            font-weight: 400;
-            line-height: 1.3;
-            padding-top: 200rem;
-            line-height: 16rem;
-    }
+.EpicWidget_subtitle__b0__small_23,
+.EpicWidget_subtitle__b1__extraSmall_27,
+.EpicWidget_subtitle__b1__small_ac {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-top: 200rem;
+    line-height: 16rem;
+}
 
 .EpicWidget_subtitle__b2_44 {
-        padding-top: 155rem;
-    }
+    padding-top: 155rem;
+}
 
 .EpicWidget_subtitle__b2__medium_b2 {
-            padding-top: 142rem;
-    }
+    padding-top: 142rem;
+}
 
 .EpicWidget_subtitle__b2__extraSmall_54,
-    .EpicWidget_subtitle__b2__small_3d {
-            color: #8C8C7E;
-            font-size: 14rem;
-            font-weight: 400;
-            line-height: 1.3;
-            padding-top: 93rem;
-            line-height: 16rem;
-    }
+.EpicWidget_subtitle__b2__small_3d {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-top: 93rem;
+    line-height: 16rem;
+}
 
 .EpicWidget_subtitle__b3_c1 {
-        padding-top: 132rem;
-    }
+    padding-top: 132rem;
+}
 
 .EpicWidget_subtitle__b3__medium_f2 {
-            padding-top: 103rem;
-    }
+    padding-top: 103rem;
+}
 
 .EpicWidget_subtitle__b3__extraSmall_27,
-    .EpicWidget_subtitle__b3__small_2f {
-            color: #8C8C7E;
-            font-size: 14rem;
-            font-weight: 400;
-            line-height: 1.3;
-            padding-top: 82rem;
-            line-height: 16rem;
-    }
+.EpicWidget_subtitle__b3__small_2f {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-top: 82rem;
+    line-height: 16rem;
+}
 
 .EpicWidget_subtitle__b4_fa {
-        padding-top: 95rem;
-    }
+    padding-top: 95rem;
+}
 
 .EpicWidget_subtitle__b4__medium_a9 {
-            color: #8C8C7E;
-            font-size: 14rem;
-            font-weight: 400;
-            line-height: 1.3;
-            padding-top: 87rem;
-    }
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-top: 87rem;
+}
 
 .EpicWidget_subtitle__b4__extraSmall_ba,
-    .EpicWidget_subtitle__b4__small_9b {
-            color: #8C8C7E;
-            font-size: 12rem;
-            font-weight: 400;
-            line-height: 1.3;
-            padding-top: 71rem;
-    }
+.EpicWidget_subtitle__b4__small_9b {
+    color: #8c8c7e;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-top: 71rem;
+}
 
 .EpicWidget_subtitle__b5_67 {
-        padding-top: 78rem;
-    }
+    padding-top: 78rem;
+}
 
 .EpicWidget_subtitle__b5__medium_f2 {
-            color: #8C8C7E;
-            font-size: 14rem;
-            font-weight: 400;
-            line-height: 1.3;
-            padding-top: 63rem;
-    }
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-top: 63rem;
+}
 
 .EpicWidget_subtitle__b5__extraSmall_25,
-    .EpicWidget_subtitle__b5__small_95 {
-            color: #8C8C7E;
-            font-size: 12rem;
-            font-weight: 400;
-            line-height: 1.3;
-            padding-top: 52rem;
-    }
+.EpicWidget_subtitle__b5__small_95 {
+    color: #8c8c7e;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-top: 52rem;
+}
 
 .EpicWidget_subtitle__b6_e7 {
-        padding-top: 61rem;
-    }
+    padding-top: 61rem;
+}
 
 .EpicWidget_subtitle__b6__medium_87 {
-            color: #8C8C7E;
-            font-size: 14rem;
-            font-weight: 400;
-            line-height: 1.3;
-            padding-top: 49rem;
-    }
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-top: 49rem;
+}
 
 .EpicWidget_subtitle__b6__extraSmall_0f,
-    .EpicWidget_subtitle__b6__small_04 {
-            color: #8C8C7E;
-            font-size: 12rem;
-            font-weight: 400;
-            line-height: 1.3;
-            padding-top: 45rem;
-    }
+.EpicWidget_subtitle__b6__small_04 {
+    color: #8c8c7e;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-top: 45rem;
+}
 
 .Emblem_base_40 {
     position: relative;
@@ -2457,29 +2481,29 @@
 .Emblem_icon_01 {
     width: 150rem;
     height: 150rem;
-    background: 50% / cover  no-repeat;
+    background: 50% / cover no-repeat;
     position: relative;
     z-index: 2;
 }
 
 .mediaSmall .Emblem_icon_01 {
-        width: 190rem;
-        height: 190rem;
+    width: 190rem;
+    height: 190rem;
 }
 
 .mediaMedium .Emblem_icon_01 {
-        width: 230rem;
-        height: 230rem;
+    width: 230rem;
+    height: 230rem;
 }
 
 .mediaLarge .Emblem_icon_01 {
-        width: 270rem;
-        height: 270rem;
+    width: 270rem;
+    height: 270rem;
 }
 
 .mediaExtraLarge .Emblem_icon_01 {
-        width: 320rem;
-        height: 320rem;
+    width: 320rem;
+    height: 320rem;
 }
 
 .Emblem_glow_8f {
@@ -2495,23 +2519,23 @@
 }
 
 .mediaSmall .Emblem_glow_8f {
-        width: 420rem;
-        height: 420rem;
+    width: 420rem;
+    height: 420rem;
 }
 
 .mediaMedium .Emblem_glow_8f {
-        width: 557rem;
-        height: 557rem;
+    width: 557rem;
+    height: 557rem;
 }
 
 .mediaLarge .Emblem_glow_8f {
-        width: 656rem;
-        height: 656rem;
+    width: 656rem;
+    height: 656rem;
 }
 
 .mediaExtraLarge .Emblem_glow_8f {
-        width: 775rem;
-        height: 775rem;
+    width: 775rem;
+    height: 775rem;
 }
 
 .Emblem_level_c8 {
@@ -2520,34 +2544,36 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 700;
-    text-shadow: 0 0 6rem #000, 0 0 9rem #000;
+    text-shadow:
+        0 0 6rem #000,
+        0 0 9rem #000;
     mask: linear-gradient(rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0));
     mask-repeat: repeat;
 }
 
 .Emblem_icon__bg0_0b .Emblem_level_c8 {
-        color: #8e8d8d;
-    }
+    color: #8e8d8d;
+}
 
 .Emblem_icon__bg1_ac .Emblem_level_c8 {
-        color: #9d9c9c;
-    }
+    color: #9d9c9c;
+}
 
 .Emblem_icon__bg2_92 .Emblem_level_c8 {
-        color: #cccdda;
-    }
+    color: #cccdda;
+}
 
 .Emblem_icon__bg3_6b .Emblem_level_c8 {
-        color: #f6e8a1;
-    }
+    color: #f6e8a1;
+}
 
 .Emblem_icon__bg4_04 .Emblem_level_c8 {
-        color: #f5e79c;
-    }
+    color: #f5e79c;
+}
 
 .Emblem_icon__bg5_49 .Emblem_level_c8 {
-        color: #f6e9a4;
-    }
+    color: #f6e9a4;
+}
 
 .Emblem_level_c8 {
     font-size: 28rem;
@@ -2555,19 +2581,19 @@
 }
 
 .mediaSmall .Emblem_level_c8 {
-        font-size: 35rem;
+    font-size: 35rem;
 }
 
 .mediaMedium .Emblem_level_c8 {
-        font-size: 43rem;
+    font-size: 43rem;
 }
 
 .mediaLarge .Emblem_level_c8 {
-        font-size: 50rem;
+    font-size: 50rem;
 }
 
 .mediaExtraLarge .Emblem_level_c8 {
-        font-size: 60rem;
+    font-size: 60rem;
 }
 
 @keyframes Emblem_glow-rotation_0f {
@@ -2585,67 +2611,68 @@
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.6);
     position: relative;
     cursor: pointer;
 }
 
-    .CButton_base__main_42,
-    .CButton_base__primary_7f,
-    .CButton_base__primaryGreen_6f,
-    .CButton_base__primaryRed_ec,
-    .CButton_base__secondary_50 {
-        background-size: 100% 100%;
-    }
+.CButton_base__main_42,
+.CButton_base__primary_7f,
+.CButton_base__primaryGreen_6f,
+.CButton_base__primaryRed_ec,
+.CButton_base__secondary_50 {
+    background-size: 100% 100%;
+}
 
-    .CButton_base__main_42 {
-        background-image: url('R.images.gui.maps.icons.components.button.back_main');
-    }
+.CButton_base__main_42 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_main');
+}
 
-    .CButton_base__primary_7f {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
-    }
+.CButton_base__primary_7f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+}
 
-    .CButton_base__primaryGreen_6f {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
-    }
+.CButton_base__primaryGreen_6f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
 
-    .CButton_base__primaryRed_ec {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
-    }
+.CButton_base__primaryRed_ec {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
 
-    .CButton_base__secondary_50 {
-        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
-    }
+.CButton_base__secondary_50 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
 
-    .CButton_base__ghost_ed {
-        border-radius: 3rem;
-        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
-            0 0 0 1rem rgba(255,255,255, .15) inset;
-        background-color: rgba(0,0,0, .15);
-    }
+.CButton_base__ghost_ed {
+    border-radius: 3rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 0 1rem rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
 
-    .CButton_base__extraSmall_27 {
-        min-height: 17rem;
-        padding: 0 16rem;
-    }
+.CButton_base__extraSmall_27 {
+    min-height: 17rem;
+    padding: 0 16rem;
+}
 
-    .CButton_base__small_df,
-    .CButton_base__medium_74 {
-        padding: 0 20rem;
-    }
+.CButton_base__small_df,
+.CButton_base__medium_74 {
+    padding: 0 20rem;
+}
 
-    .CButton_base__small_df {
-        min-height: 18rem;
-    }
+.CButton_base__small_df {
+    min-height: 18rem;
+}
 
-    .CButton_base__medium_74 {
-        min-height: 32rem;
-    }
+.CButton_base__medium_74 {
+    min-height: 32rem;
+}
 
-    .CButton_base__disabled_d9 {
-        cursor: default;
-    }
+.CButton_base__disabled_d9 {
+    cursor: default;
+}
 /* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
 The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
 between 'border-image-width' and 'fill'.
@@ -2661,20 +2688,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
 }
 .CButton_base__main_42 .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+}
 .CButton_base__primary_7f .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+}
 .CButton_base__primaryGreen_6f .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
 .CButton_base__primaryRed_ec .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
 .CButton_base__secondary_50 .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
 .CButton_texture_fe {
     background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
     background-size: 155rem 31rem;
@@ -2691,12 +2718,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 0;
     bottom: 0;
     left: 0;
-    transition: box-shadow .16s ease-in-out;
+    transition: box-shadow 0.16s ease-in-out;
 }
 .CButton_base__focus_83 .CButton_state_11 {
-        border-radius: 2rem;
-        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
-    }
+    border-radius: 2rem;
+    box-shadow: inset 0 0 2rem 1rem rgba(255, 85, 0, 0.2);
+}
 .CButton_stateHighlightHover_ff,
 .CButton_stateHighlightActive_35,
 .CButton_stateDisabled_54 {
@@ -2707,40 +2734,47 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     bottom: 0;
     left: 0;
 }
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-        transition: opacity .16s ease-in-out;
-    }
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
+.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
+.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+    transition: opacity 0.16s ease-in-out;
+}
 .CButton_stateHighlightHover_ff {
-    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+    background-image: linear-gradient(
+        180deg,
+        rgba(252, 248, 235, 0.25) 0%,
+        rgba(252, 248, 235, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
 }
 .CButton_base_40:hover .CButton_stateHighlightHover_ff {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_base_40:active .CButton_stateHighlightHover_ff {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
-        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
-        background-color: rgba(8,6,0, .18);
-        background-image: none;
-    }
+    box-shadow: 0 15rem 12rem 0 rgba(242, 242, 230, 0.11) inset;
+    background-color: rgba(8, 6, 0, 0.18);
+    background-image: none;
+}
 .CButton_stateHighlightActive_35 {
-    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
 }
 .CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_stateDisabled_54 {
-    background-color: rgba(0,0,0, .25);
+    background-color: rgba(0, 0, 0, 0.25);
     background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
     background-size: 15rem;
 }
 .CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_content_cc {
     display: flex;
     align-items: center;
@@ -2748,39 +2782,39 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 700;
     line-height: 1.2;
     text-shadow: 0 -1rem 1rem #000;
-    letter-spacing: .03em;
+    letter-spacing: 0.03em;
     transform: translateY(-1rem);
 }
-.CButton_content_cc[lang=ja],
-    .CButton_content_cc[lang=ko],
-    .CButton_content_cc[lang=zh_tw],
-    .CButton_content_cc[lang=zh_sg],
-    .CButton_content_cc[lang=zh_cn],
-    .CButton_content_cc[lang=th] {
-        font-weight: 400;
-    }
+.CButton_content_cc[lang='ja'],
+.CButton_content_cc[lang='ko'],
+.CButton_content_cc[lang='zh_tw'],
+.CButton_content_cc[lang='zh_sg'],
+.CButton_content_cc[lang='zh_cn'],
+.CButton_content_cc[lang='th'] {
+    font-weight: 400;
+}
 .CButton_base__main_42 .CButton_content_cc,
-    .CButton_base__primaryRed_ec .CButton_content_cc {
-        text-shadow: 0 -1rem 1rem #600;
-    }
+.CButton_base__primaryRed_ec .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #600;
+}
 .CButton_base__secondary_50 .CButton_content_cc {
-        color: rgba(254,254,236, .75);
-    }
+    color: rgba(254, 254, 236, 0.75);
+}
 .CButton_base__primaryGreen_6f .CButton_content_cc {
-        text-shadow: 0 -1rem 1rem #1c2502;
-    }
+    text-shadow: 0 -1rem 1rem #1c2502;
+}
 .CButton_base__extraSmall_27 .CButton_content_cc {
-        font-size: 12rem;
-    }
+    font-size: 12rem;
+}
 .CButton_base__small_df .CButton_content_cc {
-        font-size: 14rem;
-    }
+    font-size: 14rem;
+}
 .CButton_base__medium_74 .CButton_content_cc {
-        font-size: 15rem;
-    }
+    font-size: 15rem;
+}
 .CButton_base__disabled_d9 .CButton_content_cc {
-        opacity: .6;
-    }
+    opacity: 0.6;
+}
 
 .ShopBanner_base_1c {
     display: flex;
@@ -2790,28 +2824,35 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 100%;
     min-width: 560rem;
     padding: 15rem 140rem;
-    background: linear-gradient(to right, transparent, rgba(79,0,0, .1) 15%, rgba(79,0,0, .1) 85%, transparent),
-    url('R.images.frontline.gui.maps.icons.progress.banner_bg') no-repeat top center / contain;
+    background:
+        linear-gradient(to right, transparent, rgba(79, 0, 0, 0.1) 15%, rgba(79, 0, 0, 0.1) 85%, transparent),
+        url('R.images.frontline.gui.maps.icons.progress.banner_bg') no-repeat top center / contain;
     position: relative;
     cursor: pointer;
 }
 
-    .mediaMedium .ShopBanner_base_1c {
-        padding: 20rem 140rem;
+.mediaMedium .ShopBanner_base_1c {
+    padding: 20rem 140rem;
 }
 .ShopBanner_line_0c {
     height: 1rem;
-    background: linear-gradient(to right, transparent, rgba(255,255,255, .2) 30%, rgba(255,255,255, .2) 70%, transparent);
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0.2) 30%,
+        rgba(255, 255, 255, 0.2) 70%,
+        transparent
+    );
     position: absolute;
     right: 0;
     left: 0;
 }
 .ShopBanner_line__top_0d {
-        top: 0;
-    }
+    top: 0;
+}
 .ShopBanner_line__bottom_6f {
-        bottom: 0;
-    }
+    bottom: 0;
+}
 .ShopBanner_desc_5c {
     color: #ddded9;
     font-size: 14rem;
@@ -2820,15 +2861,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-bottom: 12rem;
 }
 .mediaMedium .ShopBanner_desc_5c {
-        margin-bottom: 23rem;
-        font-size: 16rem;
+    margin-bottom: 23rem;
+    font-size: 16rem;
 }
 .ShopBanner_button_9a {
     height: 20rem;
     padding: 0 30rem;
 }
 .mediaMedium .ShopBanner_button_9a {
-        height: 31rem;
+    height: 31rem;
 }
 .ShopBanner_label_0c {
     display: flex;
@@ -2837,20 +2878,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     text-align: center;
 }
 .mediaMedium .ShopBanner_label_0c {
-        min-width: 90rem;
+    min-width: 90rem;
 }
 
 .SubTitle_base_48 {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
     font-size: 18rem;
-    opacity: .7;
+    opacity: 0.7;
 }
 
-    .mediaMedium .SubTitle_base_48 {
-        font-size: 24rem;
+.mediaMedium .SubTitle_base_48 {
+    font-size: 24rem;
 }
 
 .ProgressViewApp_base_3e {
@@ -2870,7 +2911,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaLarge .ProgressViewApp_pageTitle_5f {
-        top: 88rem;
+    top: 88rem;
 }
 
 .ProgressViewApp_subTitle_5e {
@@ -2886,16 +2927,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaSmall .ProgressViewApp_content_73 {
-        max-width: 950rem;
+    max-width: 950rem;
 }
 
 .mediaMedium .ProgressViewApp_content_73 {
-        max-width: 1110rem;
+    max-width: 1110rem;
 }
 
 .ProgressViewApp_content__withBanner_09 {
-        padding-bottom: 40rem;
-    }
+    padding-bottom: 40rem;
+}
 
 .ProgressViewApp_banner_b8 {
     position: absolute;
@@ -2905,7 +2946,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaMedium .ProgressViewApp_banner_b8 {
-        bottom: 7vh;
+    bottom: 7vh;
 }
 
 /* colors*/
@@ -2921,87 +2962,84 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     align-items: stretch;
     width: 66rem;
     height: 66rem;
-    border: 1rem solid rgba(255,255,255, .25);
+    border: 1rem solid rgba(255, 255, 255, 0.25);
     border-radius: 2rem;
-    background: rgba(0,0,0, .3) repeat-y right center;
+    background: rgba(0, 0, 0, 0.3) repeat-y right center;
     color: #e9e2bf;
     font-size: 15rem;
     font-weight: 700;
     position: relative;
     z-index: 2;
-    transition: border linear .16s,
-                background-color linear .16s;
+    transition:
+        border linear 0.16s,
+        background-color linear 0.16s;
     cursor: pointer;
 }
 
 @media (min-width: 1280px) {
-
-.FlatButton_base_36 {
+    .FlatButton_base_36 {
         width: 235rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.progression.buttons_lines')
-}
+        background-image: url('R.images.gui.maps.icons.battlePass.progression.buttons_lines');
     }
+}
 
 @media (min-width: 1600px) {
-
-.FlatButton_base_36 {
-        width: 245rem
-}
+    .FlatButton_base_36 {
+        width: 245rem;
     }
+}
 
 @media (min-width: 1280px) {
-
-.FlatButton_base__small_ec {
-            width: 66rem;
-            background: rgba(0,0,0, .3) repeat-y right center
+    .FlatButton_base__small_ec {
+        width: 66rem;
+        background: rgba(0, 0, 0, 0.3) repeat-y right center;
     }
-    }
+}
 
 @media (min-width: 1600px) {
-
-.FlatButton_base__small_ec {
-            width: 66rem
+    .FlatButton_base__small_ec {
+        width: 66rem;
     }
-    }
+}
 
 @media (min-width: 1920px) {
-
-.FlatButton_base__small_ec {
-            width: 245rem;
-            background-image: url('R.images.gui.maps.icons.battlePass.progression.buttons_lines')
-    }
-    }
-
-.FlatButton_base__big_69 {
+    .FlatButton_base__small_ec {
         width: 245rem;
         background-image: url('R.images.gui.maps.icons.battlePass.progression.buttons_lines');
     }
+}
+
+.FlatButton_base__big_69 {
+    width: 245rem;
+    background-image: url('R.images.gui.maps.icons.battlePass.progression.buttons_lines');
+}
 
 .FlatButton_base__disabled_1e {
-        opacity: .5;
-        cursor: default;
-    }
+    opacity: 0.5;
+    cursor: default;
+}
 
 .FlatButton_base__hover_41 {
-        border-color: rgba(255,255,255, .35);
-        background-color: rgba(0,0,0, .4);
-    }
+    border-color: rgba(255, 255, 255, 0.35);
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
 .FlatButton_base__click_ab {
-        border-color: rgba(255,255,255, .25);
-        background-color: rgba(0,0,0, .3);
-    }
+    border-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(0, 0, 0, 0.3);
+}
 
 .FlatButton_base__highlight_0b {
-        border: 0;
-        box-shadow: 0 0 7rem #ff2a00,
-                    0 2rem 4rem rgba(107, 52, 0, .2) inset;
-        z-index: 1;
-    }
+    border: 0;
+    box-shadow:
+        0 0 7rem #ff2a00,
+        0 2rem 4rem rgba(107, 52, 0, 0.2) inset;
+    z-index: 1;
+}
 
 .FlatButton_base__yellow_3a {
-        background-color: #c67700;
-    }
+    background-color: #c67700;
+}
 
 .FlatButton_highlight_b0 {
     width: 100%;
@@ -3027,26 +3065,26 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .FlatButton_glowInner__duplicate_f7 {
-        width: 190rem;
-        height: 190rem;
-        margin: 56rem 0 0 56rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.progression.shineForAnimation_dark');
-        animation-duration: 18s;
-        animation-direction: reverse;
-    }
+    width: 190rem;
+    height: 190rem;
+    margin: 56rem 0 0 56rem;
+    background-image: url('R.images.gui.maps.icons.battlePass.progression.shineForAnimation_dark');
+    animation-duration: 18s;
+    animation-direction: reverse;
+}
 
 .FlatButton_glow_12 {
     clip-path: polygon(
-                    0% 0%,
-                    0% 100%,
-                    118rem 100%,
-                    118rem 118rem,
-                    184rem 118rem,
-                    184rem 184rem,
-                    118rem 184rem,
-                    118rem 100%,
-                    100% 100%,
-                    100% 0%
+        0% 0%,
+        0% 100%,
+        118rem 100%,
+        118rem 118rem,
+        184rem 118rem,
+        184rem 184rem,
+        118rem 184rem,
+        118rem 100%,
+        100% 100%,
+        100% 0%
     );
     width: 302rem;
     height: 302rem;
@@ -3058,91 +3096,87 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 @media (min-width: 1280px) {
-
-.FlatButton_glow_12 {
-    clip-path: polygon(
-                    0% 0%,
-                    0% 100%,
-                    33.5rem 100%,
-                    33.5rem 118rem,
-                    268.5rem 118rem,
-                    268.5rem 184rem,
-                    33.5rem 184rem,
-                    33.5rem 100%,
-                    100% 100%,
-                    100% 0%
-    )
-}
+    .FlatButton_glow_12 {
+        clip-path: polygon(
+            0% 0%,
+            0% 100%,
+            33.5rem 100%,
+            33.5rem 118rem,
+            268.5rem 118rem,
+            268.5rem 184rem,
+            33.5rem 184rem,
+            33.5rem 100%,
+            100% 100%,
+            100% 0%
+        );
     }
+}
 
 @media (min-width: 1600px) {
-
-.FlatButton_glow_12 {
-    clip-path: polygon(
-                    0% 0%,
-                    0% 100%,
-                    28.5rem 100%,
-                    28.5rem 118rem,
-                    273.5rem 118rem,
-                    273.5rem 184rem,
-                    28.5rem 184rem,
-                    28.5rem 100%,
-                    100% 100%,
-                    100% 0%
-    )
-}
+    .FlatButton_glow_12 {
+        clip-path: polygon(
+            0% 0%,
+            0% 100%,
+            28.5rem 100%,
+            28.5rem 118rem,
+            273.5rem 118rem,
+            273.5rem 184rem,
+            28.5rem 184rem,
+            28.5rem 100%,
+            100% 100%,
+            100% 0%
+        );
     }
+}
 
 @media (min-width: 1280px) {
-
-.FlatButton_base__small_ec .FlatButton_glow_12 {
-    clip-path: polygon(
-                    0% 0%,
-                    0% 100%,
-                    118rem 100%,
-                    118rem 118rem,
-                    184rem 118rem,
-                    184rem 184rem,
-                    118rem 184rem,
-                    118rem 100%,
-                    100% 100%,
-                    100% 0%
-    )
+    .FlatButton_base__small_ec .FlatButton_glow_12 {
+        clip-path: polygon(
+            0% 0%,
+            0% 100%,
+            118rem 100%,
+            118rem 118rem,
+            184rem 118rem,
+            184rem 184rem,
+            118rem 184rem,
+            118rem 100%,
+            100% 100%,
+            100% 0%
+        );
     }
-    }
+}
 
 @media (min-width: 1920px) {
-
-.FlatButton_base__small_ec .FlatButton_glow_12 {
-    clip-path: polygon(
-                    0% 0%,
-                    0% 100%,
-                    28.5rem 100%,
-                    28.5rem 118rem,
-                    273.5rem 118rem,
-                    273.5rem 184rem,
-                    28.5rem 184rem,
-                    28.5rem 100%,
-                    100% 100%,
-                    100% 0%
-    )
+    .FlatButton_base__small_ec .FlatButton_glow_12 {
+        clip-path: polygon(
+            0% 0%,
+            0% 100%,
+            28.5rem 100%,
+            28.5rem 118rem,
+            273.5rem 118rem,
+            273.5rem 184rem,
+            28.5rem 184rem,
+            28.5rem 100%,
+            100% 100%,
+            100% 0%
+        );
     }
-    }
+}
 
 .FlatButton_base__big_69 .FlatButton_glow_12 {
     clip-path: polygon(
-                    0% 0%,
-                    0% 100%,
-                    28.5rem 100%,
-                    28.5rem 118rem,
-                    273.5rem 118rem,
-                    273.5rem 184rem,
-                    28.5rem 184rem,
-                    28.5rem 100%,
-                    100% 100%,
-                    100% 0%
+        0% 0%,
+        0% 100%,
+        28.5rem 100%,
+        28.5rem 118rem,
+        273.5rem 118rem,
+        273.5rem 184rem,
+        28.5rem 184rem,
+        28.5rem 100%,
+        100% 100%,
+        100% 0%
     );
-    }
+}
 
 .FlatButton_content_3f {
     display: flex;
@@ -3158,24 +3192,23 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 @media (min-width: 1280px) {
-
-.FlatButton_content_3f {
+    .FlatButton_content_3f {
         justify-content: flex-start;
-        padding: 0 9rem
-}
+        padding: 0 9rem;
     }
+}
 
 .FlatButton_icon_24 {
     width: 52rem;
     height: 52rem;
     background: no-repeat center / contain;
     filter: brightness(70%);
-    transition: filter linear .16s;
+    transition: filter linear 0.16s;
 }
 
 .FlatButton_base__hover_41 .FlatButton_icon_24 {
-        filter: brightness(100%);
-    }
+    filter: brightness(100%);
+}
 
 .FlatButton_label_a4 {
     display: none;
@@ -3183,58 +3216,54 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 @media (min-width: 1280px) {
-
-.FlatButton_label_a4 {
-        display: flex;
-        flex: 0;
-        margin-left: 10rem;
-        padding-bottom: 3rem
-}
-    }
-
-.FlatButton_base__small_ec .FlatButton_label_a4 {
-        display: none;
-    }
-
-@media (min-width: 1920px) {
-
-.FlatButton_base__small_ec .FlatButton_label_a4 {
-            display: flex
-    }
-    }
-
-.FlatButton_base__big_69 .FlatButton_label_a4 {
+    .FlatButton_label_a4 {
         display: flex;
         flex: 0;
         margin-left: 10rem;
         padding-bottom: 3rem;
     }
+}
+
+.FlatButton_base__small_ec .FlatButton_label_a4 {
+    display: none;
+}
+
+@media (min-width: 1920px) {
+    .FlatButton_base__small_ec .FlatButton_label_a4 {
+        display: flex;
+    }
+}
+
+.FlatButton_base__big_69 .FlatButton_label_a4 {
+    display: flex;
+    flex: 0;
+    margin-left: 10rem;
+    padding-bottom: 3rem;
+}
 
 .FlatButton_count_17 {
     display: none;
 }
 
 @media (min-width: 1280px) {
-
-.FlatButton_count_17 {
+    .FlatButton_count_17 {
         display: flex;
         flex: 0;
         margin-left: 10rem;
         padding-bottom: 3rem;
-        font-size: 36rem
-}
+        font-size: 36rem;
     }
+}
 
 .FlatButton_base__small_ec .FlatButton_count_17 {
-        display: none;
-    }
+    display: none;
+}
 
 @media (min-width: 1920px) {
-
-.FlatButton_base__small_ec .FlatButton_count_17 {
-            display: flex
+    .FlatButton_base__small_ec .FlatButton_count_17 {
+        display: flex;
     }
-    }
+}
 
 .FlatButton_counter_c3 {
     position: absolute;
@@ -3252,26 +3281,25 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: .3s ease opacity;
+    transition: 0.3s ease opacity;
     pointer-events: none;
 }
 
 @media (min-width: 1280px) {
-
-.FlatButton_glowBorder_3e {
+    .FlatButton_glowBorder_3e {
         width: 244rem;
         height: 244rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.progression.flat_button_light')
-}
+        background-image: url('R.images.gui.maps.icons.battlePass.progression.flat_button_light');
     }
+}
 
 .FlatButton_glowBorder__hover_a7 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .FlatButton_base_36:hover .FlatButton_glowBorder__hover_a7 {
-            opacity: 1;
-        }
+    opacity: 1;
+}
 
 .FlatButton_tokensCount_72 {
     display: none;
@@ -3286,15 +3314,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 @media (min-width: 1280px) {
-
-.FlatButton_tokensCount_72 {
-        display: block
-}
+    .FlatButton_tokensCount_72 {
+        display: block;
     }
+}
 
 .FlatButton_disabledBackground_f9 {
     background: url('R.images.gui.maps.icons.battlePass.progression.pattern_disable') repeat;
-    opacity: .05;
+    opacity: 0.05;
     position: absolute;
     top: 0;
     right: 0;
@@ -3320,14 +3347,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
-    .FrontlineReward_base__disable_dc {
-        filter: grayscale(100%);
-        opacity: .5;
-    }
+.FrontlineReward_base__disable_dc {
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
 
-    .FrontlineReward_base__disableBattlePassReward_5a {
-        opacity: .3;
-    }
+.FrontlineReward_base__disableBattlePassReward_5a {
+    opacity: 0.3;
+}
 .FrontlineReward_animWrapper_23 {
     mix-blend-mode: screen;
     position: absolute;
@@ -3388,16 +3415,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
-    .mediaSmall .RewardsCol_base_74 {
-        width: 135rem;
+.mediaSmall .RewardsCol_base_74 {
+    width: 135rem;
 }
 
-    .mediaMedium .RewardsCol_base_74 {
-        width: 144rem;
+.mediaMedium .RewardsCol_base_74 {
+    width: 144rem;
 }
 
-    .mediaLarge .RewardsCol_base_74 {
-        width: 180rem;
+.mediaLarge .RewardsCol_base_74 {
+    width: 180rem;
 }
 
 .RewardsCol_bg_12 {
@@ -3406,7 +3433,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(transparent 0, rgba(0,0,0, .3) 20%, rgba(0,0,0, .3) 80%, transparent 100%);
+    background: linear-gradient(transparent 0, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.3) 80%, transparent 100%);
 }
 
 .RewardsCol_highlight_2b {
@@ -3419,23 +3446,23 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .RewardsCol_highlight__white_a8 {
-        background-image: url('R.images.frontline.gui.maps.icons.rewards.col_bg_1024_white');
-    }
+    background-image: url('R.images.frontline.gui.maps.icons.rewards.col_bg_1024_white');
+}
 
 .mediaSmall .RewardsCol_highlight__white_a8 {
-            background-image: url('R.images.frontline.gui.maps.icons.rewards.col_bg_white');
+    background-image: url('R.images.frontline.gui.maps.icons.rewards.col_bg_white');
 }
 
 .RewardsCol_highlight__gold_c5 {
-        background-image: url('R.images.frontline.gui.maps.icons.rewards.col_bg_1024');
-    }
+    background-image: url('R.images.frontline.gui.maps.icons.rewards.col_bg_1024');
+}
 
 .mediaSmall .RewardsCol_highlight__gold_c5 {
-            background-image: url('R.images.frontline.gui.maps.icons.rewards.col_bg');
+    background-image: url('R.images.frontline.gui.maps.icons.rewards.col_bg');
 }
 
 .RewardsCol_levels_7a {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -3444,13 +3471,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaMedium .RewardsCol_levels_7a {
-        font-size: 24rem;
+    font-size: 24rem;
 }
 
 .RewardsCol_levels__disable_d4 {
-        filter: grayscale(100%);
-        opacity: .5;
-    }
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
 
 .RewardsCol_reward_40 {
     margin-bottom: 22rem;
@@ -3461,7 +3488,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .SubTitle_base_8d {
-    color: rgba(242,242,247, .7);
+    color: rgba(242, 242, 247, 0.7);
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -3473,15 +3500,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 18rem;
 }
 
-    .mediaMedium .SubTitle_base_8d {
-        font-size: 24rem;
+.mediaMedium .SubTitle_base_8d {
+    font-size: 24rem;
 }
 
 .SubTitle_noRewards_f1 {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    color: #7AB300;
+    color: #7ab300;
     position: relative;
 }
 
@@ -3495,7 +3522,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaMedium .SubTitle_icon_0f {
-        bottom: -2rem;
+    bottom: -2rem;
 }
 
 .RewardsViewApp_base_1c {
@@ -3514,7 +3541,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaLarge .RewardsViewApp_pageTitle_61 {
-        top: 88rem;
+    top: 88rem;
 }
 
 .RewardsViewApp_table_32 {
@@ -3543,7 +3570,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Spinner_caption_cf {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 12rem;
     text-align: center;
     white-space: pre;
@@ -3563,7 +3590,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: absolute;
     top: -4rem;
     left: 0;
-    animation: Spinner_spin_f5 .28s linear infinite;
+    animation: Spinner_spin_f5 0.28s linear infinite;
 }
 
 .Spinner_logo_bf {
@@ -3626,7 +3653,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 100%;
     height: 100%;
     background-color: #0f0d0d;
-    opacity: .8;
+    opacity: 0.8;
     position: absolute;
     top: 0;
     left: 0;
@@ -3666,7 +3693,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaMedium .FrontlineContainerViewApp_closeButton_35 {
-        right: 27rem;
+    right: 27rem;
 }
 
 .FrontlineContainerViewApp_tabs_c9 {
@@ -3679,13 +3706,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaMedium .FrontlineContainerViewApp_tabs_c9 {
-        left: 34rem;
+    left: 34rem;
 }
 
 .FrontlineContainerViewApp_content_85 {
     width: 100%;
     height: 100%;
-    background: radial-gradient(transparent, rgba(0,0,0, .7));
+    background: radial-gradient(transparent, rgba(0, 0, 0, 0.7));
     position: relative;
     z-index: 1;
 }
@@ -3700,6 +3727,5 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .FrontlineContainerViewApp_tabContent__visible_3f {
-        display: flex;
-    }
-
+    display: flex;
+}

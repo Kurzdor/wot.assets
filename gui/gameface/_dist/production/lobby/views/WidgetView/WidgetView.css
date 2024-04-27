@@ -1,19 +1,75 @@
-.Widget_base_55 {
+.Label_base_b1 {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+}
+
+.Label_text_52 {
+    color: #fff;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    display: flex;
+    background: #000;
+}
+
+.mediaMedium .Label_text_52 {
+    font-size: 28rem;
+    line-height: 1;
+}
+
+.Label_textGlow_4e {
+    background: none;
+    color: #ffeab2;
+    text-shadow: 0 -1rem 0 #ccdce4;
+    position: absolute;
+}
+
+.Label_base__inProgress_ba .Label_textGlow_4e {
+    text-shadow: 0 -1rem 0 #ffeab2;
+}
+
+.Label_textGlow__inner_7b {
+    color: #000;
+    text-shadow: 0 2rem 1rem #000;
+}
+
+.Label_textWithBlend_07 {
+    display: flex;
+    mix-blend-mode: lighten;
+    position: relative;
+    z-index: 50;
+}
+
+.Label_textMask_f7 {
     width: 100%;
     height: 100%;
+    background-image: url('R.images.battle_royale.gui.maps.widget.font_mask.completed.font_texture');
+    background-position: 50% 50%;
+    mix-blend-mode: multiply;
+    position: absolute;
+}
+
+.Label_base__inProgress_ba .Label_textMask_f7 {
+    background-image: url('R.images.battle_royale.gui.maps.widget.font_mask.in_progress.font_texture');
+}
+
+html {
+    padding: 1rem;
+    overflow: visible;
+}
+
+.Widget_base_55 {
     position: relative;
+    top: -5rem;
     transform: translateY(0rem);
-    transition: transform .12s ease-in-out;
+    transition: transform 0.12s ease-in-out;
     cursor: pointer;
 }
 
-    .Widget_base_55:hover {
-        filter: brightness(1.15);
-        transform: translateY(4rem);
-    }
+.Widget_base_55:hover {
+    filter: brightness(1.15);
+    transform: translateY(4rem);
+}
 
 .Widget_icon_de {
     width: 130rem;
@@ -21,56 +77,62 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-top: -17rem;
 }
 
 .Widget_icon__inProgress_e5 {
-    background: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_in_progress_130_130')
-    no-repeat center / contain;
-    }
+    background: url('R.images.battle_royale.gui.maps.widget.in_progress.main_icon_130') no-repeat center / contain;
+}
 
 .mediaSmall .Widget_icon__inProgress_e5 {
-        background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_in_progress_150_150');
+    background-image: url('R.images.battle_royale.gui.maps.widget.in_progress.main_icon_150');
 }
 
 .Widget_icon__completed_4d {
-    background: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_done_130_130')
-    no-repeat center / contain;
-    }
+    background: url('R.images.battle_royale.gui.maps.widget.completed.main_icon_130') no-repeat center / contain;
+}
 
 .mediaSmall .Widget_icon__completed_4d {
-        background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_done_150_150');
+    background-image: url('R.images.battle_royale.gui.maps.widget.completed.main_icon_150');
+}
+
+.Widget_icon__alertMode_c7 {
+    background: url('R.images.battle_royale.gui.maps.widget.curfew.main_icon_130') no-repeat center / contain;
+}
+
+.mediaSmall .Widget_icon__alertMode_c7 {
+    background-image: url('R.images.battle_royale.gui.maps.widget.curfew.main_icon_150');
 }
 
 .mediaMedium .Widget_icon_de {
-        width: 150rem;
-        height: 150rem;
+    width: 150rem;
+    height: 150rem;
 }
 
-.Widget_level_cc {
-    color: #DBDBDB;
-    font-size: 22rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 10rem;
-    text-shadow: 0 0 5rem #000, 0 3rem 7rem #000, 0 0 10rem #000;
+.Widget_label_be {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20rem;
+    position: relative;
 }
 
-.mediaSmall .Widget_level_cc {
-        color: #DBDBDB;
-        font-size: 24rem;
-        font-weight: 700;
-        line-height: 1.2;
+.mediaMedium .Widget_label_be {
+    margin-bottom: 25rem;
 }
 
-.mediaMedium .Widget_level_cc {
-        margin-bottom: 15rem;
+.mediaMedium .Widget_icon__inProgress_e5 .Widget_label_be {
+    left: -1rem;
+}
+
+.Widget_backgroundImage_04 {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(119.68% 41.91% at 53.33% 52.21%, #fffbe5 0%, #f9e880 25.52%, #fc8a62 100%);
 }
 
 .App_base_06 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 12rem;
+    overflow: hidden;
 }
-

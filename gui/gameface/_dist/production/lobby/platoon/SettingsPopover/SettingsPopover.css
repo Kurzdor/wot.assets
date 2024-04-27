@@ -19,42 +19,42 @@
 }
 
 .PopoverDecorator_arrow__bottom_c3,
-    .PopoverDecorator_arrow__top_6e {
-        width: 301rem;
-        height: 90rem;
-        margin: 0 58rem;
-        background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_top');
-        left: 50%;
-    }
+.PopoverDecorator_arrow__top_6e {
+    width: 301rem;
+    height: 90rem;
+    margin: 0 58rem;
+    background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_top');
+    left: 50%;
+}
 
 .PopoverDecorator_arrow__left_7a,
-    .PopoverDecorator_arrow__right_b6 {
-        width: 84rem;
-        height: 181rem;
-        margin: 58rem 0;
-        background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_left');
-        top: 50%;
-    }
+.PopoverDecorator_arrow__right_b6 {
+    width: 84rem;
+    height: 181rem;
+    margin: 58rem 0;
+    background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_left');
+    top: 50%;
+}
 
 .PopoverDecorator_arrow__left_7a {
-        right: 10rem;
-        transform: scaleX(-1) translateY(-90rem);
-    }
+    right: 10rem;
+    transform: scaleX(-1) translateY(-90rem);
+}
 
 .PopoverDecorator_arrow__right_b6 {
-        left: 10rem;
-        transform: translateY(-90rem);
-    }
+    left: 10rem;
+    transform: translateY(-90rem);
+}
 
 .PopoverDecorator_arrow__top_6e {
-        bottom: 8rem;
-        transform: scaleY(-1) translateX(-150rem);
-    }
+    bottom: 8rem;
+    transform: scaleY(-1) translateX(-150rem);
+}
 
 .PopoverDecorator_arrow__bottom_c3 {
-        top: 8rem;
-        transform: translateX(-150rem);
-    }
+    top: 8rem;
+    transform: translateX(-150rem);
+}
 
 .PopoverDecorator_closeBtn_32 {
     width: 18rem;
@@ -68,13 +68,13 @@
 }
 
 .PopoverDecorator_closeBtn_32:hover {
-        filter: brightness(160%);
-    }
+    filter: brightness(160%);
+}
 
 .PopoverDecorator_closeBtn_32:active {
-        background-image: url('R.images.gui.maps.icons.popovers.close_button_slim_press');
-        filter: brightness(100%);
-    }
+    background-image: url('R.images.gui.maps.icons.popovers.close_button_slim_press');
+    filter: brightness(100%);
+}
 
 .PopoverDecorator_content_f0 {
     position: relative;
@@ -90,4 +90,3 @@
 .SettingsPopover_base_e3 {
     width: 300rem;
 }
-

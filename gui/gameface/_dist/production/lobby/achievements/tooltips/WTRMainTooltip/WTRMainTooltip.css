@@ -4,12 +4,12 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .FormatText_base_d0 {
     display: flex;
@@ -21,23 +21,23 @@
 }
 
 .FormatTextWithColorTags_whiteReal_8a {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .FormatTextWithColorTags_white_16 {
-    color: #F2F2F7;
+    color: #f2f2f7;
 }
 
 .FormatTextWithColorTags_whiteOrange_18 {
-    color: #FEFEEC;
+    color: #fefeec;
 }
 
 .FormatTextWithColorTags_whiteSpanish_10 {
-    color: #E9E2BF;
+    color: #e9e2bf;
 }
 
 .FormatTextWithColorTags_par_ca {
-    color: #8C8C7E;
+    color: #8c8c7e;
 }
 
 .FormatTextWithColorTags_parSecondary_8d {
@@ -45,39 +45,39 @@
 }
 
 .FormatTextWithColorTags_parTertiary_a3 {
-    color: #37362E;
+    color: #37362e;
 }
 
 .FormatTextWithColorTags_red_60 {
-    color: #FF2717;
+    color: #ff2717;
 }
 
 .FormatTextWithColorTags_redDark_03 {
-    color: #B70000;
+    color: #b70000;
 }
 
 .FormatTextWithColorTags_yellow_ad {
-    color: #FEAB34;
+    color: #feab34;
 }
 
 .FormatTextWithColorTags_orange_e4 {
-    color: #EE7000;
+    color: #ee7000;
 }
 
 .FormatTextWithColorTags_cream_cd {
-    color: #FFDD99;
+    color: #ffdd99;
 }
 
 .FormatTextWithColorTags_brown_c8 {
-    color: #CBAC77;
+    color: #cbac77;
 }
 
 .FormatTextWithColorTags_greenBright_f0 {
-    color: #80D43A;
+    color: #80d43a;
 }
 
 .FormatTextWithColorTags_green_c5 {
-    color: #7AB300;
+    color: #7ab300;
 }
 
 .FormatTextWithColorTags_greenDark_af {
@@ -85,31 +85,31 @@
 }
 
 .FormatTextWithColorTags_blueBooster_ac {
-    color: #CCFFFF;
+    color: #ccffff;
 }
 
 .FormatTextWithColorTags_blueTeamkiller_6f {
-    color: #09E2FF;
+    color: #09e2ff;
 }
 
 .FormatTextWithColorTags_cred_4e {
-    color: #CED9D9;
+    color: #ced9d9;
 }
 
 .FormatTextWithColorTags_gold_90 {
-    color: #FFC363;
+    color: #ffc363;
 }
 
 .FormatTextWithColorTags_bond_71 {
-    color: #C9C9B6;
+    color: #c9c9b6;
 }
 
 .FormatTextWithColorTags_prom_dd {
-    color: #A29B70;
+    color: #a29b70;
 }
 
 .Description_description_da {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -176,10 +176,10 @@
     background: linear-gradient(
         360deg,
         rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, .5) 35.31%,
+        rgba(255, 255, 255, 0.5) 35.31%,
         rgba(255, 255, 255, 0) 100%
     );
-    opacity: .3;
+    opacity: 0.3;
     content: '';
     position: absolute;
     top: -174rem;
@@ -193,13 +193,13 @@
 }
 
 .Table_headerCellWrapper__level_f2 {
-        min-width: 138rem;
-    }
+    min-width: 138rem;
+}
 
 .Table_headerCellWrapper__points_44 {
-        min-width: 170rem;
-        margin-right: 30rem;
-    }
+    min-width: 170rem;
+    margin-right: 30rem;
+}
 
 .Table_tableCell_3b {
     display: flex;
@@ -207,25 +207,25 @@
 }
 
 .Table_tableCell__header_a3 + .Table_tableCell__header_a3 {
-            justify-content: flex-end;
-        }
+    justify-content: flex-end;
+}
 
 .Table_tableCell__row_ac {
-        color: #8C8C7E;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
-    }
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
 
 .Table_tableCell__row_ac + .Table_tableCell__row_ac {
-            justify-content: flex-start;
-            width: 40%;
-            height: 25rem;
-        }
+    justify-content: flex-start;
+    width: 40%;
+    height: 25rem;
+}
 
 .Table_row__active_64.Table_tableCell__row_ac {
-            color: #FFDD99;
-        }
+    color: #ffdd99;
+}
 
 .Table_levelCell_62 {
     display: flex;
@@ -242,7 +242,8 @@
 .Table_divider_9f {
     width: 100%;
     height: 1rem;
-    background: linear-gradient(to right, rgba(201,201,182, .2) 33%, transparent 33%, transparent) repeat right / 3rem 1rem;
+    background: linear-gradient(to right, rgba(201, 201, 182, 0.2) 33%, transparent 33%, transparent) repeat right /
+        3rem 1rem;
     mask: linear-gradient(90deg, transparent 2%, #000 30%, #000 70%, transparent 98%);
     margin-top: -1rem;
     opacity: 1;
@@ -276,7 +277,7 @@
 }
 
 .App_title_5e {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
@@ -291,15 +292,15 @@
 }
 
 .App_ratingImageWrapper_f9::before {
-        width: 100%;
-        height: 100%;
-        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, 0) 100%);
-        filter: blur(14px);
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: blur(14px);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 .App_ratingImage_e4 {
     width: 100%;
@@ -307,4 +308,3 @@
     background: url('R.images.gui.maps.icons.achievements.summary.rating.rating_0_0') no-repeat center / contain;
     z-index: 2;
 }
-

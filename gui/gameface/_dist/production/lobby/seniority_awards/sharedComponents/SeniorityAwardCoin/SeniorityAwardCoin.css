@@ -2,27 +2,26 @@
     background: no-repeat center / cover;
 }
 
-    .SeniorityAwardCoin_base__large_86 {
-        width: 300rem;
-        height: 300rem;
-        background-image: url('R.images.gui.maps.icons.seniorityAwards.rewards.sacoin_large');
-    }
+.SeniorityAwardCoin_base__large_86 {
+    width: 300rem;
+    height: 300rem;
+    background-image: url('R.images.gui.maps.icons.seniorityAwards.rewards.sacoin_large');
+}
 
-    .SeniorityAwardCoin_base__medium_f5 {
-        width: 226rem;
-        height: 226rem;
-        background-image: url('R.images.gui.maps.icons.seniorityAwards.rewards.sacoin');
-    }
+.SeniorityAwardCoin_base__medium_f5 {
+    width: 226rem;
+    height: 226rem;
+    background-image: url('R.images.gui.maps.icons.seniorityAwards.rewards.sacoin');
+}
 
-    .SeniorityAwardCoin_base__small_a5 {
-        width: 80rem;
-        height: 80rem;
-        background-image: url('R.images.gui.maps.icons.seniorityAwards.rewards.sacoin_small');
-    }
+.SeniorityAwardCoin_base__small_a5 {
+    width: 80rem;
+    height: 80rem;
+    background-image: url('R.images.gui.maps.icons.seniorityAwards.rewards.sacoin_small');
+}
 
-    .SeniorityAwardCoin_base__extraSmall_a1 {
-        width: 56rem;
-        height: 56rem;
-        background-image: url('R.images.gui.maps.icons.seniorityAwards.rewards.sacoin_extraSmall');
-    }
-
+.SeniorityAwardCoin_base__extraSmall_a1 {
+    width: 56rem;
+    height: 56rem;
+    background-image: url('R.images.gui.maps.icons.seniorityAwards.rewards.sacoin_extraSmall');
+}

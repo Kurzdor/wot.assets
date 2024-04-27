@@ -1,0 +1,117 @@
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FormatTextWithColorTags_blackReal_d5 {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_d8 {
+    color: #ffffff;
+}
+
+.FormatTextWithColorTags_white_b9 {
+    color: #f2f2f7;
+}
+
+.FormatTextWithColorTags_whiteOrange_ea {
+    color: #fefeec;
+}
+
+.FormatTextWithColorTags_whiteSpanish_54 {
+    color: #e9e2bf;
+}
+
+.FormatTextWithColorTags_par_c1 {
+    color: #8c8c7e;
+}
+
+.FormatTextWithColorTags_parSecondary_4e {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_14 {
+    color: #37362e;
+}
+
+.FormatTextWithColorTags_red_d9 {
+    color: #ff2717;
+}
+
+.FormatTextWithColorTags_redDark_ea {
+    color: #b70000;
+}
+
+.FormatTextWithColorTags_yellow_48 {
+    color: #feab34;
+}
+
+.FormatTextWithColorTags_orange_ad {
+    color: #ee7000;
+}
+
+.FormatTextWithColorTags_cream_96 {
+    color: #ffdd99;
+}
+
+.FormatTextWithColorTags_brown_27 {
+    color: #cbac77;
+}
+
+.FormatTextWithColorTags_greenBright_04 {
+    color: #80d43a;
+}
+
+.FormatTextWithColorTags_green_58 {
+    color: #7ab300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_b3 {
+    color: #ccffff;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_ab {
+    color: #09e2ff;
+}
+
+.FormatTextWithColorTags_cred_d3 {
+    color: #ced9d9;
+}
+
+.FormatTextWithColorTags_gold_28 {
+    color: #ffc363;
+}
+
+.FormatTextWithColorTags_bond_74 {
+    color: #c9c9b6;
+}
+
+.FormatTextWithColorTags_prom_58 {
+    color: #a29b70;
+}
+
+.Icon_base_67 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App_base_be {
+    text-align: center;
+}
+
+.App_warningText_fd {
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 11rem;
+}
+
+.App_mainText_8b {
+    justify-content: center;
+    align-items: flex-start;
+}

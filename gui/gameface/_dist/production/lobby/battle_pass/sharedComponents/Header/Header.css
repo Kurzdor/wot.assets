@@ -73,10 +73,10 @@
 .Header_title_09 {
     opacity: 0;
     animation-name: Header_slideUp_83;
-    animation-duration: .8s;
+    animation-duration: 0.8s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
-    animation-delay: .6s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
+    animation-delay: 0.6s;
     animation-iteration-count: 1;
     color: #f2f2f7;
     font-size: 18rem;
@@ -85,36 +85,36 @@
 }
 
 .mediaSmall .Header_title_09 {
-        font-size: 24rem;
+    font-size: 24rem;
 }
 
 .Header_status_74 {
     opacity: 0;
     animation-name: Header_slideUp_83;
-    animation-duration: .8s;
+    animation-duration: 0.8s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
-    animation-delay: .8s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
+    animation-delay: 0.8s;
     animation-iteration-count: 1;
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 36rem;
     font-weight: 700;
     text-align: center;
 }
 
 .mediaSmall .Header_status_74 {
-        font-size: 56rem;
+    font-size: 56rem;
 }
 
 .Header_subtitle_3a {
     opacity: 0;
     animation-name: Header_slideUp_83;
-    animation-duration: .8s;
+    animation-duration: 0.8s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .17, 1);
-    animation-delay: .8s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
+    animation-delay: 0.8s;
     animation-iteration-count: 1;
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 42rem;
     font-weight: 700;
     line-height: 1;
@@ -122,6 +122,5 @@
 }
 
 .mediaSmall .Header_subtitle_3a {
-        font-size: 56rem;
+    font-size: 56rem;
 }
-

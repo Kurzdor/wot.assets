@@ -4,12 +4,12 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .FormatText_base_d0 {
     display: flex;
@@ -40,7 +40,7 @@
     padding: 16rem 17rem 18rem 25rem;
 }
 .Content_title_01 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
@@ -48,7 +48,7 @@
     line-height: 20rem;
 }
 .Content_text_bc {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -56,7 +56,7 @@
     line-height: 18rem;
 }
 .Content_currency_1a {
-    color: #FFC363;
+    color: #ffc363;
 }
 .Content_icon_eb {
     width: 16rem;
@@ -66,7 +66,7 @@
     position: relative;
 }
 .Content_duration_9f {
-    color: #E9E2BF;
+    color: #e9e2bf;
 }
 .Content_separator_9c {
     width: 372rem;
@@ -75,9 +75,8 @@
 }
 .Content_description_b6 {
     margin-top: 8rem;
-    color: #8C8C7E;
+    color: #8c8c7e;
 }
 .Content_highlight_bd {
-    color: #FFDD99;
+    color: #ffdd99;
 }
-

@@ -6,5 +6,6 @@
     (scope
         (const TOOLTIP_SHELL:str = 'hangarShell')
         (const TOOLTIP_EQUIPMENT:str = 'battleRoyaleEquipment')
+        (const TOOLTIP_RESPAWN:str = 'battleRoyaleRespawn')
     )
 )

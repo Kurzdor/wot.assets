@@ -9,11 +9,11 @@
     position: relative;
 }
 .ProgressBar_base__medium_62 {
-        height: 6rem;
-    }
+    height: 6rem;
+}
 .ProgressBar_base__small_df {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_background_51 {
     width: 100%;
     max-width: 8001px;
@@ -27,16 +27,15 @@
     left: 0;
 }
 .ProgressBar_background__medium_6e {
-        height: 6rem;
-    }
+    height: 6rem;
+}
 .ProgressBar_background__small_46 {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_lineWrapper_6a {
     display: flex;
     flex: 1;
 }
-
 
 .ProgressBarBlink_base_24 {
     width: 60rem;
@@ -51,16 +50,16 @@
     pointer-events: none;
 }
 
-    .ProgressBarBlink_base__medium_ec {
-        width: 42rem;
-        height: 70rem;
-    }
+.ProgressBarBlink_base__medium_ec {
+    width: 42rem;
+    height: 70rem;
+}
 
-    .ProgressBarBlink_base__small_0f {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+.ProgressBarBlink_base__small_0f {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -72,18 +71,18 @@
     height: 100%;
     background-color: var(--progress-line-base);
     position: relative;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressLineImpose_base__disabled_cc {
-        background-color: var(--progress-line-disabled);
-    }
+    background-color: var(--progress-line-disabled);
+}
 .ProgressLineImpose_base__finished_d4 {
-        background-color: var(--progress-line-finished);
-    }
+    background-color: var(--progress-line-finished);
+}
 .ProgressLineImpose_base__withoutBounce_56 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressLineImpose_pattern_1c {
     max-width: 8001px;
     background-image: var(--progress-pattern-base);
@@ -97,19 +96,19 @@
     left: 1rem;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-disabled);
-        left: 0;
-    }
+    background-image: var(--progress-pattern-disabled);
+    left: 0;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-finished);
-    }
+    background-image: var(--progress-pattern-finished);
+}
 .ProgressLineImpose_gradient_35 {
     max-width: 8001px;
-    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75));
     mix-blend-mode: overlay;
     position: absolute;
     top: 1rem;
@@ -118,15 +117,15 @@
     left: 0;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
-        display: none;
-    }
+    display: none;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
-        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
-    }
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5));
+}
 .ProgressLineImpose_glow_a5 {
     width: 60rem;
     max-width: 8001px;
@@ -141,17 +140,17 @@
     pointer-events: none;
 }
 .ProgressLineImpose_glow__left_d8 {
-        left: 1rem;
-    }
+    left: 1rem;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
-    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
-        display: none;
-    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+    display: none;
+}
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -173,7 +172,7 @@
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1), cubic-bezier(0.21, 0.61, 0.35, 1);
     transition-property: width, transform;
 }
 
@@ -187,12 +186,12 @@
     height: 100%;
     position: absolute;
     top: 0;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressBarDeltaGrow_glow_68 {
     width: 0;
     max-width: 8001px;
@@ -202,12 +201,12 @@
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 
 .Level_base_9f {
     width: 108rem;
@@ -215,15 +214,15 @@
     position: relative;
 }
 
-    .Level_base__medium_6a {
-        width: 148rem;
-        height: 202rem;
-    }
+.Level_base__medium_6a {
+    width: 148rem;
+    height: 202rem;
+}
 
-    .Level_base__large_ec {
-        width: 194rem;
-        height: 202rem;
-    }
+.Level_base__large_ec {
+    width: 194rem;
+    height: 202rem;
+}
 .Level_progressBarOverlay_39 {
     display: flex;
     flex-direction: column;
@@ -233,7 +232,7 @@
     position: relative;
 }
 .Level_lesson_74 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -243,19 +242,20 @@
     transform: translateX(-50%);
 }
 .Level_lesson__current_dd {
-        color: #E9E2BF;
-    }
+    color: #e9e2bf;
+}
 .Level_base__medium_6a .Level_lesson_74,
-    .Level_base__large_ec .Level_lesson_74 {
-        color: #8C8C7E;
-        font-size: 24rem;
-        font-weight: 400;
-        line-height: 1.2;
-        bottom: 19rem;
-    }
-.Level_base__medium_6a .Level_lesson_74.Level_lesson__current_dd, .Level_base__large_ec .Level_lesson_74.Level_lesson__current_dd {
-            color: #E9E2BF;
-        }
+.Level_base__large_ec .Level_lesson_74 {
+    color: #8c8c7e;
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+    bottom: 19rem;
+}
+.Level_base__medium_6a .Level_lesson_74.Level_lesson__current_dd,
+.Level_base__large_ec .Level_lesson_74.Level_lesson__current_dd {
+    color: #e9e2bf;
+}
 .Level_separator_34 {
     align-self: flex-start;
     width: 1rem;
@@ -266,14 +266,14 @@
     right: 0;
 }
 .Level_separator__first_8c {
-        left: 0;
-    }
+    left: 0;
+}
 .Level_base__medium_6a .Level_separator_34,
-    .Level_base__large_ec .Level_separator_34 {
-        height: 20rem;
-        background-image: url('R.images.gui.maps.icons.bootcamp.progress.line20');
-        top: 95rem;
-    }
+.Level_base__large_ec .Level_separator_34 {
+    height: 20rem;
+    background-image: url('R.images.gui.maps.icons.bootcamp.progress.line20');
+    top: 95rem;
+}
 .Level_done_93 {
     width: 25rem;
     height: 24rem;
@@ -284,12 +284,12 @@
     transform: translateX(-50%);
 }
 .Level_base__medium_6a .Level_done_93,
-    .Level_base__large_ec .Level_done_93 {
-        width: 70rem;
-        height: 64rem;
-        background-image: url('R.images.gui.maps.icons.bootcamp.progress.check_02');
-        bottom: 0;
-    }
+.Level_base__large_ec .Level_done_93 {
+    width: 70rem;
+    height: 64rem;
+    background-image: url('R.images.gui.maps.icons.bootcamp.progress.check_02');
+    bottom: 0;
+}
 .Level_glow_aa {
     width: 56rem;
     height: 56rem;
@@ -309,9 +309,9 @@
     transform: translateX(-50%);
 }
 .Level_base__medium_6a .Level_flare_b5,
-    .Level_base__large_ec .Level_flare_b5 {
-        bottom: 2rem;
-    }
+.Level_base__large_ec .Level_flare_b5 {
+    bottom: 2rem;
+}
 
 .BootcampProgress_base_67 {
     display: flex;
@@ -329,25 +329,25 @@
 }
 
 .BootcampProgress_icon__small_7a {
-        margin: -24rem 0 -25rem;
-    }
+    margin: -24rem 0 -25rem;
+}
 
 .BootcampProgress_icon__medium_1a {
-        width: 300rem;
-        height: 152rem;
-        margin: -33rem 0 -20rem;
-        background: url('R.images.gui.maps.icons.bootcamp.rewards.bcRewards_medium') no-repeat 50% / contain;
-    }
+    width: 300rem;
+    height: 152rem;
+    margin: -33rem 0 -20rem;
+    background: url('R.images.gui.maps.icons.bootcamp.rewards.bcRewards_medium') no-repeat 50% / contain;
+}
 
 .BootcampProgress_icon__large_1b {
-        width: 466rem;
-        height: 234rem;
-        margin: -110rem 0 -30rem;
-        background: url('R.images.gui.maps.icons.bootcamp.rewards.bcRewards_large') no-repeat 50% / contain;
-    }
+    width: 466rem;
+    height: 234rem;
+    margin: -110rem 0 -30rem;
+    background: url('R.images.gui.maps.icons.bootcamp.rewards.bcRewards_large') no-repeat 50% / contain;
+}
 
 .BootcampProgress_status_2a {
-    color: #7AB300;
+    color: #7ab300;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -364,12 +364,12 @@
 }
 
 .BootcampProgress_container__medium_26 {
-        margin: -40rem 0 3rem;
-    }
+    margin: -40rem 0 3rem;
+}
 
 .BootcampProgress_container__large_84 {
-        margin: -100rem 0 -60rem;
-    }
+    margin: -100rem 0 -60rem;
+}
 
 .BootcampProgress_progressionBar_d5 {
     position: absolute;
@@ -379,8 +379,8 @@
 }
 
 .BootcampProgress_progressionBar__large_84 {
-        top: 124rem;
-    }
+    top: 124rem;
+}
 
 .BootcampProgressWidgetApp_base_2d {
     display: flex;
@@ -395,4 +395,3 @@
     margin-top: 25rem;
     position: relative;
 }
-

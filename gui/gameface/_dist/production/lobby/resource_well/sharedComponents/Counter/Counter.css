@@ -5,11 +5,11 @@
     align-items: center;
     margin-top: -70rem;
 }
-    .mediaMedium .Counter_base_8c {
-        margin-top: -80rem;
+.mediaMedium .Counter_base_8c {
+    margin-top: -80rem;
 }
-    .mediaLarge .Counter_base_8c {
-        margin-top: -59rem;
+.mediaLarge .Counter_base_8c {
+    margin-top: -59rem;
 }
 
 .Counter_base_8c.Counter_base__entryPointTooltip_2f {
@@ -23,104 +23,107 @@
 }
 
 .Counter_base__mainScreen_aa .Counter_counterGlow_ae {
-        width: 488rem;
-        height: 108rem;
-        top: -65rem;
-    }
+    width: 488rem;
+    height: 108rem;
+    top: -65rem;
+}
 
 .mediaMedium .Counter_base__mainScreen_aa .Counter_counterGlow_ae {
-            top: -75rem;
+    top: -75rem;
 }
 
 .mediaLarge .Counter_base__mainScreen_aa .Counter_counterGlow_ae {
-            top: -63rem;
+    top: -63rem;
 }
 
 .Counter_base__entryPointTooltip_2f .Counter_counterGlow_ae {
-        width: 300rem;
-        height: 168rem;
-        top: -10rem;
-    }
+    width: 300rem;
+    height: 168rem;
+    top: -10rem;
+}
 
 .Counter_counterBg_d9 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('R.images.gui.maps.icons.resourceWell.counter_bg')  no-repeat center / contain;
+    background: url('R.images.gui.maps.icons.resourceWell.counter_bg') no-repeat center / contain;
     position: relative;
     pointer-events: none;
 }
 
 .Counter_base__mainScreen_aa .Counter_counterBg_d9 {
-        width: 310rem;
-        height: 200rem;
-        top: -40rem;
-    }
+    width: 310rem;
+    height: 200rem;
+    top: -40rem;
+}
 
 .mediaLarge .Counter_base__mainScreen_aa .Counter_counterBg_d9 {
-            top: -50rem;
+    top: -50rem;
 }
 
 .Counter_base__entryPointTooltip_2f .Counter_counterBg_d9 {
-        width: 100%;
-        height: 124rem;
-        padding-bottom: 5rem;
-        text-align: center;
-    }
+    width: 100%;
+    height: 124rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
 
 .Counter_counterNumber_8b {
     pointer-events: auto;
 }
 
 .Counter_counterNumber__less_8b {
-        text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
-    }
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+}
 
 .Counter_base__mainScreen_aa .Counter_counterNumber_8b {
-        color: #FFDD99;
-        font-size: 36rem;
-        font-weight: 700;
-        line-height: 1.1;
-        margin-top: -10rem;
-    }
+    color: #ffdd99;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: -10rem;
+}
 
 .mediaLarge .Counter_base__mainScreen_aa .Counter_counterNumber_8b {
-            font-size: 56rem;
+    font-size: 56rem;
 }
 
 .Counter_base__entryPointTooltip_2f .Counter_counterNumber_8b {
-        color: #FFDD99;
-        font-size: 28rem;
-        font-weight: 700;
-        line-height: 1.1;
-    }
+    color: #ffdd99;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
 
 .Counter_tanksOverText_72 {
-    opacity: .5;
+    opacity: 0.5;
 }
 
 .Counter_base__mainScreen_aa .Counter_tanksOverText_72 {
-        color: #E9E2BF;
-        font-size: 22rem;
-        font-weight: 700;
-        line-height: 1.2;
-        margin-top: -10rem;
-    }
+    color: #e9e2bf;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: -10rem;
+}
 
 .mediaMedium .Counter_base__mainScreen_aa .Counter_tanksOverText_72 {
-            color: #E9E2BF;
-            font-size: 28rem;
-            font-weight: 700;
-            line-height: 1.1;
+    color: #e9e2bf;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .Counter_base__entryPointTooltip_2f .Counter_tanksOverText_72 {
-        color: #E9E2BF;
-        font-size: 28rem;
-        font-weight: 700;
-        line-height: 1.1;
-        margin: 0;
-    }
+    color: #e9e2bf;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+}
 
 .Counter_errorWrapper_a2 {
     display: flex;
@@ -137,11 +140,10 @@
 }
 
 .Counter_errorLines_6e {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 56rem;
     font-weight: 700;
     line-height: 1.1;
     position: relative;
     top: -23rem;
 }
-

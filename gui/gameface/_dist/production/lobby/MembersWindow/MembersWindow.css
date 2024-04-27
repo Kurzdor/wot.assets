@@ -1,0 +1,1203 @@
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.6);
+    position: relative;
+    cursor: pointer;
+}
+
+.CButton_base__main_42,
+.CButton_base__primary_7f,
+.CButton_base__primaryGreen_6f,
+.CButton_base__primaryRed_ec,
+.CButton_base__secondary_50 {
+    background-size: 100% 100%;
+}
+
+.CButton_base__main_42 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_main');
+}
+
+.CButton_base__primary_7f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+
+.CButton_base__primaryGreen_6f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+
+.CButton_base__primaryRed_ec {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+
+.CButton_base__secondary_50 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+
+.CButton_base__ghost_ed {
+    border-radius: 3rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 0 1rem rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.CButton_base__extraSmall_27 {
+    min-height: 17rem;
+    padding: 0 16rem;
+}
+
+.CButton_base__small_df,
+.CButton_base__medium_74 {
+    padding: 0 20rem;
+}
+
+.CButton_base__small_df {
+    min-height: 18rem;
+}
+
+.CButton_base__medium_74 {
+    min-height: 32rem;
+}
+
+.CButton_base__disabled_d9 {
+    cursor: default;
+}
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+}
+.CButton_base__primary_7f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+.CButton_base__secondary_50 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow 0.16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+    border-radius: 2rem;
+    box-shadow: inset 0 0 2rem 1rem rgba(255, 85, 0, 0.2);
+}
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
+.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
+.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+    transition: opacity 0.16s ease-in-out;
+}
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(
+        180deg,
+        rgba(252, 248, 235, 0.25) 0%,
+        rgba(252, 248, 235, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+    opacity: 1;
+}
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+    box-shadow: 0 15rem 12rem 0 rgba(242, 242, 230, 0.11) inset;
+    background-color: rgba(8, 6, 0, 0.18);
+    background-image: none;
+}
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+    opacity: 1;
+}
+.CButton_stateDisabled_54 {
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+    opacity: 1;
+}
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: 0.03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang='ja'],
+.CButton_content_cc[lang='ko'],
+.CButton_content_cc[lang='zh_tw'],
+.CButton_content_cc[lang='zh_sg'],
+.CButton_content_cc[lang='zh_cn'],
+.CButton_content_cc[lang='th'] {
+    font-weight: 400;
+}
+.CButton_base__main_42 .CButton_content_cc,
+.CButton_base__primaryRed_ec .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #600;
+}
+.CButton_base__secondary_50 .CButton_content_cc {
+    color: rgba(254, 254, 236, 0.75);
+}
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #1c2502;
+}
+.CButton_base__extraSmall_27 .CButton_content_cc {
+    font-size: 12rem;
+}
+.CButton_base__small_df .CButton_content_cc {
+    font-size: 14rem;
+}
+.CButton_base__medium_74 .CButton_content_cc {
+    font-size: 15rem;
+}
+.CButton_base__disabled_d9 .CButton_content_cc {
+    opacity: 0.6;
+}
+
+.Button_base_8d {
+    width: 18rem;
+    height: 18rem;
+    margin-top: 6rem;
+    background: center / contain no-repeat;
+    cursor: pointer;
+}
+
+.Button_base__close_b1 {
+    background-image: url('R.images.gui.maps.icons.windows.controls.Window_CloseButton_UpBitmap');
+}
+
+.Button_base__close_b1:hover {
+    background-image: url('R.images.gui.maps.icons.windows.controls.Window_CloseButton_OverBitmap'),
+        url('R.images.gui.maps.icons.windows.controls.Window_CloseButton_UpBitmap');
+}
+
+.Button_base__close_b1:active {
+    background-image: url('R.images.gui.maps.icons.windows.controls.Window_CloseButton_PressBitmap'),
+        url('R.images.gui.maps.icons.windows.controls.Window_CloseButton_UpBitmap');
+}
+
+.Button_base__minimize_f7 {
+    margin-right: 2rem;
+    background-image: url('R.images.gui.maps.icons.windows.controls.minimize_up');
+}
+
+.Button_base__minimize_f7:hover {
+    background-image: url('R.images.gui.maps.icons.windows.controls.minimize_over'),
+        url('R.images.gui.maps.icons.windows.controls.minimize_up');
+}
+
+.Button_base__minimize_f7:active {
+    background-image: url('R.images.gui.maps.icons.windows.controls.minimize_press'),
+        url('R.images.gui.maps.icons.windows.controls.minimize_up');
+}
+
+.Info_base_7b {
+    width: 16rem;
+    height: 16rem;
+    margin: 6rem 0 0 8rem;
+    background: url('R.images.gui.maps.icons.library.InformationIcon') center / contain no-repeat;
+}
+
+.Title_base_44 {
+    display: flex;
+    flex: 1;
+    margin-top: 1rem;
+    margin-right: 20rem;
+    color: #fefeec;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 120%;
+    text-shadow: #000000 0 -1rem;
+}
+
+.Header_base_ff {
+    display: flex;
+    width: 100%;
+    height: 28rem;
+    padding-left: 10rem;
+    padding-right: 6rem;
+    position: relative;
+    cursor: grab;
+}
+
+.Header_base__grabbing_dc {
+    cursor: grabbing;
+}
+
+.Header_icon_6e {
+    width: 23rem;
+    height: 20rem;
+    background: no-repeat center;
+}
+
+.Header_icon__reload_c2 {
+    background-image: url('R.images.gui.maps.icons.library.refresh');
+}
+
+.Header_reloadButton_19 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 10rem;
+    padding: 0;
+}
+
+.WindowDecorator_base_6a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* stylelint-disable declaration-block-no-redundant-longhand-properties */
+    padding-left: var(--outer-shadow-width);
+    padding-top: var(--outer-shadow-width);
+    padding-right: var(--outer-shadow-width);
+    padding-bottom: var(--outer-shadow-width);
+    /* stylelint-enable declaration-block-no-redundant-longhand-properties */
+    overflow: hidden;
+    position: relative;
+}
+
+.WindowDecorator_frame_b5 {
+    border: transparent solid;
+    border-width: 30rem 27rem 43rem 24rem;
+    border-image: url('R.images.gui.maps.icons.windows.window_bg.centered') 30 27 43 24 fill;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.WindowDecorator_frame__focused_af {
+    opacity: 1;
+}
+
+.WindowDecorator_container_1d {
+    position: relative;
+}
+
+.WindowDecorator_contentDecorations_be {
+    border: transparent solid;
+    border-width: 9rem 13rem 11rem;
+    border-image: url('R.images.gui.maps.icons.windows.window_bg.window_form_bg_new') 9 13 11 fill;
+    position: absolute;
+    top: -2rem;
+    right: -2rem;
+    bottom: -2rem;
+    left: -2rem;
+}
+
+.WindowDecorator_content_0b {
+    position: absolute;
+}
+
+.SubView_base_df {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.BonusInfoIcon_bonusInfoIcon_3d {
+    width: 16rem;
+    height: 16rem;
+    margin-left: 8rem;
+    background-size: contain;
+}
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.Header_base_a7 {
+    height: 120rem;
+    padding: 14rem 21rem;
+    background: no-repeat center / contain;
+}
+
+.Header_header_9f {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 19rem;
+}
+
+.Header_label_af {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+}
+
+.Header_description_41 {
+    height: 18rem;
+    margin: 1rem 0 3rem;
+    color: #8c8c7e;
+    font-size: 14rem;
+}
+
+.Header_bonusInfo_3f {
+    display: flex;
+    flex-direction: row;
+}
+
+.Header_bonusesIcon_7a {
+    margin-top: -7rem;
+    position: relative;
+}
+
+.Header_xp_87 {
+    width: 48rem;
+    height: 48rem;
+    background: url('R.images.gui.maps.icons.platoon.common.exp') center / contain no-repeat;
+    position: absolute;
+    right: -10rem;
+}
+
+.Header_credits_82 {
+    width: 48rem;
+    height: 48rem;
+    background: url('R.images.gui.maps.icons.platoon.common.silver') center / contain no-repeat;
+    position: absolute;
+    right: 8rem;
+}
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.Separator_base_98 {
+    pointer-events: none;
+}
+
+.Separator_base__horizontal_34 {
+    width: 100%;
+    height: 1rem;
+}
+
+.Separator_base__vertical_9d {
+    width: 1rem;
+    height: 100%;
+}
+
+.Separator_image_5b {
+    background: center / 100% no-repeat;
+}
+
+.Separator_base__horizontal_34 .Separator_image_5b {
+    width: 100%;
+    height: 144rem;
+    margin: -71rem auto 0;
+}
+
+.Separator_base__vertical_9d .Separator_image_5b {
+    width: 144rem;
+    height: 100%;
+    margin: 0 -71rem;
+}
+
+.ToggleButton_base_b9 {
+    border-radius: 2rem;
+    position: relative;
+}
+
+.ToggleButton_content_85 {
+    font-weight: 300;
+}
+
+.ToggleButton_overlay_0a {
+    border-radius: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.ToggleButton_base__active_68 .ToggleButton_overlay_0a {
+    border: 1rem solid rgba(255, 195, 99, 0.75);
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.6),
+        0 0 7px rgba(238, 112, 0, 0.5);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 42, 0, 0.1) 0%,
+        rgba(255, 42, 0, 0) 0.01%,
+        rgba(255, 127, 0, 0.1) 100%
+    );
+}
+
+.ToggleButton_indicator_85 {
+    width: 40rem;
+    height: 29rem;
+    background: url('R.images.gui.maps.icons.buttons.toggle_indicator') no-repeat center / contain;
+    position: absolute;
+    bottom: -14rem;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, 0);
+    pointer-events: none;
+}
+
+.ToggleButton_base__active_68 .ToggleButton_indicator_85 {
+    background-image: url('R.images.gui.maps.icons.buttons.toggle_indicator_active');
+}
+
+.CommanderControls_left_11 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.CommanderControls_left_11 .CommanderControls_tiersLimit_85 {
+    width: auto;
+}
+
+.CommanderControls_left_11 .CommanderControls_findPlayers_66 {
+    margin-right: 11rem;
+}
+
+.CommanderControls_btnInvite_99 {
+    padding: 4rem 20rem;
+}
+
+.Footer_base_6c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10rem 19rem 20rem;
+}
+
+.Footer_message_55 {
+    margin: 14rem 0 7rem;
+    color: #595950;
+    font-size: 14rem;
+}
+
+.Footer_message__alert_ad {
+    color: #ff2717;
+}
+
+.Bonus_base_00 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 8rem;
+}
+
+.Bonus_currencyImage_61 {
+    width: 40rem;
+    height: 40rem;
+    background: no-repeat 50% / contain;
+}
+
+.Bonus_caption_19 {
+    margin-left: -1rem;
+    margin-top: -17rem;
+    color: #f5f0e5;
+    font-size: 16rem;
+    font-weight: 700;
+    text-shadow:
+        0 0 12rem #ff2a00,
+        0 0 12rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+
+.Bonuses_base_c0 {
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 3 auto;
+    width: 100%;
+    margin: -6rem -3rem 0 0;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.NoBonus_textContainer_18 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 3 auto;
+    width: 100%;
+    height: 36rem;
+    margin: -10rem 2rem 0 10rem;
+}
+
+.NoBonus_textContainer__event_df {
+    margin-top: 0;
+}
+
+.NoBonus_text_08 {
+    display: flex;
+    justify-content: flex-end;
+    color: #8c8c7e;
+}
+
+.NoBonus_icon_0e {
+    width: 40rem;
+    height: 40rem;
+    margin: -4rem 2rem 0 4rem;
+    background: no-repeat 50% / contain;
+}
+
+.NoBonus_icon__event_dd {
+    margin-top: -8rem;
+}
+
+.Header_base_8d {
+    display: flex;
+    justify-content: space-between;
+    height: 68rem;
+    padding: 20rem 10rem;
+    background: url('R.images.historical_battles.gui.maps.icons.membersWindow.platoon_standard_vertical_list') no-repeat
+        50% / contain;
+}
+
+.Header_button_4f {
+    margin-left: 10rem;
+}
+
+.Header_buttonIcon_99 {
+    width: 24rem;
+    height: 18rem;
+    margin: 1rem -10rem 0;
+    background: url('R.images.gui.maps.icons.platoon.members_window.mute_button') no-repeat 50% / contain;
+}
+
+.Header_box_e4 {
+    display: flex;
+}
+
+.NoPlayer_base_88 {
+    width: 160rem;
+    height: 200rem;
+    padding: 0 10rem;
+    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.cards.empty') no-repeat 50% / contain;
+    color: #595950;
+    font-size: 14rem;
+    text-align: center;
+    position: relative;
+}
+
+.NoPlayer_base__disabled_78 {
+    background-image: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.cards.disable');
+}
+
+.NoPlayer_central_3b {
+    position: absolute;
+    top: 65rem;
+}
+
+.NoPlayer_image_50 {
+    width: 44rem;
+    height: 44rem;
+}
+
+.NoPlayer_image__disabled_69 {
+    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.disabled_slot_big') no-repeat 50% /
+        contain;
+}
+
+.NoPlayer_image__empty_a2 {
+    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.empty_slot_big') no-repeat 50% / contain;
+}
+
+.NoPlayer_image__spinner_0a {
+    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.loading_indicator_big') no-repeat 50% /
+        contain;
+    animation: NoPlayer_spinner_9e 1s linear infinite;
+}
+
+.NoPlayer_footer_7d {
+    position: absolute;
+    bottom: 15rem;
+}
+
+@keyframes NoPlayer_spinner_9e {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.WTRInfo_wtr_5e {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+}
+
+.WTRInfo_wtrIcon_a9 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.library.wtrIcon_24') center / contain no-repeat;
+}
+
+.WTRInfo_wtrValue_80 {
+    height: 20rem;
+    margin-left: 2rem;
+    color: #8c8c7e;
+}
+
+.MutedIcon_base_50 {
+    width: 16rem;
+    height: 16rem;
+    background: url('R.images.gui.maps.icons.platoon.members_window.muted') no-repeat 50% / contain;
+}
+
+.TextOverflow_base_3b {
+    flex: 0 1 auto;
+    width: auto;
+    line-height: 1.3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Badge_base_ac {
+    display: flex;
+    justify-content: center;
+    background: no-repeat center / contain;
+}
+
+.Badge_base__default_c9 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.Badge_base__x48_e4 {
+    width: 48rem;
+    height: 48rem;
+}
+
+.PlayerNickname_base_32 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.PlayerNickname_userName_cc {
+    flex: 0 1 auto; /* the only value for correct work */
+}
+
+.PlayerNickname_igrIcon_34 {
+    background: url('R.images.gui.maps.icons.library.premium_igr_big.png') no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_igrIcon_34 {
+    width: 32rem;
+    height: 14rem;
+}
+
+.PlayerNickname_base__x48_84 .PlayerNickname_igrIcon_34 {
+    width: 64rem;
+    height: 28rem;
+}
+
+.PlayerNickname_suffixBadgeWrapper_cc {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.PlayerNickname_suffixBadgeStripe_8a {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: -1;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_suffixBadgeStripe_8a {
+    width: 64rem;
+    height: 24rem;
+    right: 12rem;
+}
+
+.PlayerNickname_base__default_8d.PlayerNickname_base__inverted_34 .PlayerNickname_suffixBadgeStripe_8a {
+    right: auto;
+    left: 12rem;
+    transform: rotateY(180deg);
+}
+
+.PlayerNickname_base__x48_84 .PlayerNickname_suffixBadgeStripe_8a {
+    width: 68rem;
+    height: 28rem;
+    right: 16rem;
+}
+
+.PlayerNickname_base__x48_84.PlayerNickname_base__inverted_34 .PlayerNickname_suffixBadgeStripe_8a {
+    right: auto;
+    left: 16rem;
+    transform: rotateY(180deg);
+}
+
+.PlayerNickname_suffixBadge_bd {
+    background: no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_suffixBadge_bd {
+    width: 24rem;
+    height: 24rem;
+}
+
+.PlayerNickname_base__x48_84 .PlayerNickname_suffixBadge_bd {
+    width: 32rem;
+    height: 32rem;
+}
+
+.PlayerNickname_anonymizedIcon_80 {
+    background: no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_anonymizedIcon_80 {
+    width: 24rem;
+    height: 24rem;
+    background-image: url('R.images.gui.maps.icons.library.eye.png');
+}
+
+.PlayerNickname_base__x48_84 .PlayerNickname_anonymizedIcon_80 {
+    width: 48rem;
+    height: 48rem;
+    background-image: url('R.images.gui.maps.icons.library.eye_48x48.png');
+}
+
+.PlayerName_userName_1e {
+    margin-left: 5rem;
+}
+
+.VehicleDescription_base_6a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    max-width: 100rem;
+    height: 20rem;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.VehicleDescription_base__isProfiledVehicle_93 {
+    color: #feab34;
+}
+
+.VehicleDescription_vehicleType_d1 {
+    width: 24rem;
+    height: 24rem;
+    margin-top: 1rem;
+    background: no-repeat 50% / contain;
+}
+
+.VoiceAnimation_talkingAnimation_44 {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: opacity 500ms;
+    pointer-events: none;
+}
+
+.VoiceAnimation_talkingAnimation__visible_45 {
+    opacity: 1;
+}
+
+.Player_base_dc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 160rem;
+    height: 200rem;
+    background: no-repeat 50% / contain;
+    color: #595950;
+    font-size: 14rem;
+    position: relative;
+}
+
+.Player_topping_a2 {
+    width: 100%;
+    position: relative;
+    top: 1rem;
+}
+
+.Player_topping_a2 > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.Player_toppingBack_7a {
+    width: 130rem;
+    height: 68rem;
+    pointer-events: none;
+}
+
+.Player_topping__isPlayer_64 .Player_toppingBack_7a {
+    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.player_line') no-repeat 50% / contain;
+}
+
+.Player_topping__isCommander_47 .Player_toppingBack_7a {
+    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.commander_line') no-repeat 50% / contain;
+}
+
+.Player_toppingPremiumIcon_a4 {
+    width: 22rem;
+    height: 22rem;
+    background: url('R.images.gui.maps.icons.platoon.members_window.prem') no-repeat 50% / contain;
+}
+
+.Player_toppingPlayerIcon_5a {
+    width: 24rem;
+    height: 24rem;
+}
+
+.Player_topping__isCommander_47 .Player_toppingPlayerIcon_5a {
+    background: url('R.images.gui.maps.icons.platoon.members_window.commander') no-repeat 50% / contain;
+}
+
+.Player_topping__isPlayer_64 .Player_toppingPlayerIcon_5a {
+    background: url('R.images.gui.maps.icons.platoon.members_window.platoon_player') no-repeat 50% / contain;
+}
+
+.Player_voice_5a {
+    width: 208rem;
+    height: 248rem;
+    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.player_muted') no-repeat 50% / contain;
+    position: absolute;
+    top: -33rem;
+    left: -15rem;
+    pointer-events: none;
+}
+
+.Player_mutedContainer_0a {
+    position: absolute;
+    top: 5rem;
+    right: 6rem;
+}
+
+.Player_name_cc {
+    max-width: 150rem;
+    margin-top: 21rem;
+    color: #e9e2bf;
+}
+
+.Player_footer_d6 {
+    margin: 0 10rem;
+    text-align: center;
+    position: absolute;
+    bottom: 15rem;
+}
+
+.Player_readiness_08 {
+    display: none;
+    position: absolute;
+    bottom: -8rem;
+}
+
+.Player_readiness__isReady_02 {
+    display: flex;
+    width: 150rem;
+    height: 16rem;
+    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.ready_bottom') no-repeat 50% / contain;
+}
+
+.Player_vehicleImage_58 {
+    width: 156rem;
+    height: 153.5rem;
+    background: 50% 0 / cover no-repeat;
+    position: absolute;
+    bottom: 0;
+}
+
+.Player_flagImage_a4 {
+    width: 100%;
+    height: 100%;
+    background: top / contain no-repeat;
+    position: absolute;
+    top: 0;
+}
+
+.Vehicle_base_1f {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Vehicle_vehicle_3f {
+    width: 80rem;
+    height: 50rem;
+    background: no-repeat 50% / contain;
+    position: absolute;
+    right: 0;
+}
+
+.WideSlot_base_99 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 401rem;
+    height: 54rem;
+    margin: 5rem 0 6rem;
+    background: no-repeat 50% / contain;
+    color: #595950;
+    font-size: 14rem;
+    position: relative;
+}
+
+.WideSlot_mutedContainer_e3 {
+    width: 16rem;
+    margin-left: 5rem;
+}
+
+.WideSlot_icon_29 {
+    width: 24rem;
+    height: 24rem;
+    background: no-repeat 50% / contain;
+    z-index: 1;
+}
+
+.WideSlot_icon__spinner_e2 {
+    animation: WideSlot_spinner_20 1s linear infinite;
+}
+
+.WideSlot_glow_39 {
+    width: 64rem;
+    height: 52rem;
+    background: url('R.images.historical_battles.gui.maps.icons.membersWindow.glow') no-repeat 50% / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.WideSlot_memberType_f0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.WideSlot_badge_f2 {
+    margin-right: 7rem;
+}
+
+.WideSlot_mainContent_2e {
+    width: 139rem;
+    margin: 0 4rem 0 17rem;
+}
+
+.WideSlot_mainContent__isEmpty_f2 {
+    width: 80%;
+}
+
+.WideSlot_flag_9a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat 50% / contain;
+    pointer-events: none;
+}
+
+.WideSlot_detailsContainer_76 {
+    display: flex;
+    align-items: center;
+    width: 190rem;
+    margin-left: 3rem;
+}
+
+.WideSlot_vehicle_32 {
+    width: 168rem;
+}
+
+.WideSlot_readiness_30 {
+    width: 146rem;
+    height: 15rem;
+    background: url('R.images.gui.maps.icons.platoon.members_window.wide_slot.ready') no-repeat 50% / contain;
+    position: absolute;
+    bottom: -7rem;
+    left: 125rem;
+}
+
+.WideSlot_starIcon_da {
+    width: 9rem;
+    height: 9rem;
+    margin: 5rem 2rem 0 0;
+    background: url('R.images.gui.maps.icons.event.difficultyStarGrey') no-repeat 50% / contain;
+}
+
+.WideSlot_speciality_f3 {
+    width: 16rem;
+    height: 16rem;
+    margin: 1rem 4rem 0 0;
+    background: no-repeat 50% / contain;
+    position: relative;
+    z-index: 1;
+}
+
+.WideSlot_message_05 {
+    color: #ff2717;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    max-width: 170rem;
+    position: absolute;
+    top: 0;
+    right: 11rem;
+    bottom: 0;
+}
+
+@keyframes WideSlot_spinner_20 {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.Slots_base_a8 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 16rem 0 6rem;
+    padding: 0 9rem 0 19rem;
+}
+
+.Slots_base__isHorizontal_28 {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 23rem 0 17rem;
+}
+
+.MembersWindowApp_base_ce {
+    display: flex;
+}
+
+.MembersWindowApp_base__isHorizontal_b4 {
+    width: 783rem;
+    height: 426rem;
+}
+
+.MembersWindowApp_base__isVertical_b1 {
+    width: 680rem;
+    height: 528rem;
+}
+
+.MembersWindowApp_base__isEvent_c0 {
+    width: 680rem;
+    height: 545rem;
+}
+
+.MembersWindowApp_base_ce .MembersWindowApp_chatContainer_be {
+    width: initial;
+}
+.MembersWindowApp_commanderControls_e9 {
+    display: flex;
+    justify-content: space-between;
+    height: 35rem;
+    padding: 0 10rem 15rem 19rem;
+}
+.MembersWindowApp_commanderControls__event_20 {
+    flex-wrap: wrap;
+    height: 38rem;
+    margin-top: 4rem;
+}
+.MembersWindowApp_platoon_3d {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.MembersWindowApp_base__isHorizontal_b4 .MembersWindowApp_platoon_3d {
+    width: 532rem;
+}
+.MembersWindowApp_base__isVertical_b1 .MembersWindowApp_platoon_3d {
+    width: 430rem;
+}
+.MembersWindowApp_base__isEvent_c0 .MembersWindowApp_platoon_3d {
+    width: 430rem;
+}

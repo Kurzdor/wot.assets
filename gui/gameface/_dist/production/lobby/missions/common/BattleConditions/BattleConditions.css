@@ -3,33 +3,33 @@
     font-size: 14rem;
 }
 
-    .BattleConditions_base__big_4a .BattleConditions_description_9c {
-            font-size: 18rem;
-        }
+.BattleConditions_base__big_4a .BattleConditions_description_9c {
+    font-size: 18rem;
+}
 
-    .BattleConditions_base__big_4a .BattleConditions_operator_da {
-            font-size: 18rem;
-        }
+.BattleConditions_base__big_4a .BattleConditions_operator_da {
+    font-size: 18rem;
+}
 
-    .BattleConditions_base__huge_a2 .BattleConditions_description_9c {
-            font-size: 24rem;
-        }
+.BattleConditions_base__huge_a2 .BattleConditions_description_9c {
+    font-size: 24rem;
+}
 
-    .BattleConditions_base__huge_a2 .BattleConditions_operator_da {
-            font-size: 24rem;
-        }
+.BattleConditions_base__huge_a2 .BattleConditions_operator_da {
+    font-size: 24rem;
+}
 
-    .BattleConditions_base__reverse_ad .BattleConditions_condition_26 {
-            flex-direction: column-reverse;
-        }
+.BattleConditions_base__reverse_ad .BattleConditions_condition_26 {
+    flex-direction: column-reverse;
+}
 
-    .BattleConditions_base__bolded_55 .BattleConditions_description_9c {
-            font-weight: 700;
-        }
+.BattleConditions_base__bolded_55 .BattleConditions_description_9c {
+    font-weight: 700;
+}
 
-    .BattleConditions_base__bolded_55 .BattleConditions_operator_da {
-            font-weight: 700;
-        }
+.BattleConditions_base__bolded_55 .BattleConditions_operator_da {
+    font-weight: 700;
+}
 
 .BattleConditions_conditionBlockColumn_46 {
     display: flex;
@@ -68,8 +68,8 @@
 }
 
 .BattleConditions_description_inlineOperator_27 {
-        margin: 0 5rem;
-    }
+    margin: 0 5rem;
+}
 
 .BattleConditions_progress_e2 {
     display: flex;
@@ -79,24 +79,24 @@
 }
 
 .BattleConditions_progress__completed_e8 .BattleConditions_progress_current_dd,
-        .BattleConditions_progress__completed_e8 .BattleConditions_progress_separator_f0,
-        .BattleConditions_progress__completed_e8 .BattleConditions_progress_total_c5 {
-            color: #7ab300;
-        }
+.BattleConditions_progress__completed_e8 .BattleConditions_progress_separator_f0,
+.BattleConditions_progress__completed_e8 .BattleConditions_progress_total_c5 {
+    color: #7ab300;
+}
 
 .BattleConditions_progress_current_dd {
-        display: inline;
-        color: #ffbd30;
-    }
+    display: inline;
+    color: #ffbd30;
+}
 
 .BattleConditions_progress_separator_f0 {
-        display: inline;
-        margin: 0 3rem;
-    }
+    display: inline;
+    margin: 0 3rem;
+}
 
 .BattleConditions_progress_total_c5 {
-        display: inline;
-    }
+    display: inline;
+}
 
 .BattleConditions_progressBarWrapper_b3 {
     margin: 14rem 0;
@@ -117,11 +117,11 @@
     position: relative;
 }
 .ProgressBar_base__medium_62 {
-        height: 6rem;
-    }
+    height: 6rem;
+}
 .ProgressBar_base__small_df {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_background_51 {
     width: 100%;
     max-width: 8001px;
@@ -135,16 +135,15 @@
     left: 0;
 }
 .ProgressBar_background__medium_6e {
-        height: 6rem;
-    }
+    height: 6rem;
+}
 .ProgressBar_background__small_46 {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_lineWrapper_6a {
     display: flex;
     flex: 1;
 }
-
 
 .ProgressBarBlink_base_24 {
     width: 60rem;
@@ -159,16 +158,16 @@
     pointer-events: none;
 }
 
-    .ProgressBarBlink_base__medium_ec {
-        width: 42rem;
-        height: 70rem;
-    }
+.ProgressBarBlink_base__medium_ec {
+    width: 42rem;
+    height: 70rem;
+}
 
-    .ProgressBarBlink_base__small_0f {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+.ProgressBarBlink_base__small_0f {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -180,18 +179,18 @@
     height: 100%;
     background-color: var(--progress-line-base);
     position: relative;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressLineImpose_base__disabled_cc {
-        background-color: var(--progress-line-disabled);
-    }
+    background-color: var(--progress-line-disabled);
+}
 .ProgressLineImpose_base__finished_d4 {
-        background-color: var(--progress-line-finished);
-    }
+    background-color: var(--progress-line-finished);
+}
 .ProgressLineImpose_base__withoutBounce_56 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressLineImpose_pattern_1c {
     max-width: 8001px;
     background-image: var(--progress-pattern-base);
@@ -205,19 +204,19 @@
     left: 1rem;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-disabled);
-        left: 0;
-    }
+    background-image: var(--progress-pattern-disabled);
+    left: 0;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-finished);
-    }
+    background-image: var(--progress-pattern-finished);
+}
 .ProgressLineImpose_gradient_35 {
     max-width: 8001px;
-    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75));
     mix-blend-mode: overlay;
     position: absolute;
     top: 1rem;
@@ -226,15 +225,15 @@
     left: 0;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
-        display: none;
-    }
+    display: none;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
-        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
-    }
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5));
+}
 .ProgressLineImpose_glow_a5 {
     width: 60rem;
     max-width: 8001px;
@@ -249,17 +248,17 @@
     pointer-events: none;
 }
 .ProgressLineImpose_glow__left_d8 {
-        left: 1rem;
-    }
+    left: 1rem;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
-    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
-        display: none;
-    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+    display: none;
+}
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -281,7 +280,7 @@
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1), cubic-bezier(0.21, 0.61, 0.35, 1);
     transition-property: width, transform;
 }
 
@@ -295,12 +294,12 @@
     height: 100%;
     position: absolute;
     top: 0;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressBarDeltaGrow_glow_68 {
     width: 0;
     max-width: 8001px;
@@ -310,10 +309,9 @@
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
-
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}

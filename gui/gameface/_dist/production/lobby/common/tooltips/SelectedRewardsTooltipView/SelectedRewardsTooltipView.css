@@ -4,12 +4,12 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .FormatText_base_d0 {
     display: flex;
@@ -21,23 +21,23 @@
 }
 
 .FormatTextWithColorTags_whiteReal_8a {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .FormatTextWithColorTags_white_16 {
-    color: #F2F2F7;
+    color: #f2f2f7;
 }
 
 .FormatTextWithColorTags_whiteOrange_18 {
-    color: #FEFEEC;
+    color: #fefeec;
 }
 
 .FormatTextWithColorTags_whiteSpanish_10 {
-    color: #E9E2BF;
+    color: #e9e2bf;
 }
 
 .FormatTextWithColorTags_par_ca {
-    color: #8C8C7E;
+    color: #8c8c7e;
 }
 
 .FormatTextWithColorTags_parSecondary_8d {
@@ -45,39 +45,39 @@
 }
 
 .FormatTextWithColorTags_parTertiary_a3 {
-    color: #37362E;
+    color: #37362e;
 }
 
 .FormatTextWithColorTags_red_60 {
-    color: #FF2717;
+    color: #ff2717;
 }
 
 .FormatTextWithColorTags_redDark_03 {
-    color: #B70000;
+    color: #b70000;
 }
 
 .FormatTextWithColorTags_yellow_ad {
-    color: #FEAB34;
+    color: #feab34;
 }
 
 .FormatTextWithColorTags_orange_e4 {
-    color: #EE7000;
+    color: #ee7000;
 }
 
 .FormatTextWithColorTags_cream_cd {
-    color: #FFDD99;
+    color: #ffdd99;
 }
 
 .FormatTextWithColorTags_brown_c8 {
-    color: #CBAC77;
+    color: #cbac77;
 }
 
 .FormatTextWithColorTags_greenBright_f0 {
-    color: #80D43A;
+    color: #80d43a;
 }
 
 .FormatTextWithColorTags_green_c5 {
-    color: #7AB300;
+    color: #7ab300;
 }
 
 .FormatTextWithColorTags_greenDark_af {
@@ -85,27 +85,27 @@
 }
 
 .FormatTextWithColorTags_blueBooster_ac {
-    color: #CCFFFF;
+    color: #ccffff;
 }
 
 .FormatTextWithColorTags_blueTeamkiller_6f {
-    color: #09E2FF;
+    color: #09e2ff;
 }
 
 .FormatTextWithColorTags_cred_4e {
-    color: #CED9D9;
+    color: #ced9d9;
 }
 
 .FormatTextWithColorTags_gold_90 {
-    color: #FFC363;
+    color: #ffc363;
 }
 
 .FormatTextWithColorTags_bond_71 {
-    color: #C9C9B6;
+    color: #c9c9b6;
 }
 
 .FormatTextWithColorTags_prom_dd {
-    color: #A29B70;
+    color: #a29b70;
 }
 
 .Category_base_e5 {
@@ -125,7 +125,7 @@
 }
 
 .Category_title_0e {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
@@ -133,26 +133,32 @@
 }
 
 .Category_rewards_10 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
 .Category_counter_79 {
-    color: #F2F2F7;
+    color: #f2f2f7;
 }
 
 .App_base_ba {
     width: 508rem;
     padding: 20rem 20rem 10rem;
-    box-shadow: inset 0 0 25rem rgba(242, 242, 230, .1);
+    box-shadow: inset 0 0 25rem rgba(242, 242, 230, 0.1);
     background-color: #12110b;
-    background-image: linear-gradient(180deg, rgba(51,51,41, .3) 0%, transparent 15.62%, transparent 88.02%, rgba(51,51,41, .1) 100%);
+    background-image: linear-gradient(
+        180deg,
+        rgba(51, 51, 41, 0.3) 0%,
+        transparent 15.62%,
+        transparent 88.02%,
+        rgba(51, 51, 41, 0.1) 100%
+    );
 }
 
 .App_title_43 {
-    color: rgba(233,226,191, .5);
+    color: rgba(233, 226, 191, 0.5);
     font-size: 22rem;
     font-weight: 700;
     line-height: 1.2;
@@ -160,7 +166,7 @@
 }
 
 .App_description_43 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -171,10 +177,15 @@
     height: 9rem;
     margin: 0 -20rem;
     background: url('R.images.gui.maps.icons.selectableReward.tooltips.divider') repeat-x center left;
-    mask-image: linear-gradient(90deg, transparent 0%, rgba(201,201,182, .2) 38.22%, rgba(201,201,182, .2) 64.56%, transparent 100%);
+    mask-image: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(201, 201, 182, 0.2) 38.22%,
+        rgba(201, 201, 182, 0.2) 64.56%,
+        transparent 100%
+    );
 }
 
 .App_category_c3 {
     margin: 10rem 0;
 }
-

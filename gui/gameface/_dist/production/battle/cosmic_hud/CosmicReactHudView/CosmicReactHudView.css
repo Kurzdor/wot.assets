@@ -17,332 +17,340 @@
     position: relative;
 }
 .mediaMedium .AbilityPanel_ability_9e {
-        --slotSize: 70rem;
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.slot_bg') center center /
-            contain no-repeat;
+    --slotSize: 70rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.slot_bg') center center /
+        contain no-repeat;
 }
 .AbilityPanel_ability_effect_80 {
-        background-color: #f4e1b3;
-        opacity: 0;
-        position: absolute;
-        top: 1rem;
-        right: 2rem;
-        bottom: 1rem;
-        left: 2rem;
-    }
+    background-color: #f4e1b3;
+    opacity: 0;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    bottom: 1rem;
+    left: 2rem;
+}
 .AbilityPanel_ability__shell_e8.AbilityPanel_ability__ready_fd .AbilityPanel_ability_effect_80,
-    .AbilityPanel_ability__acceleration_62.AbilityPanel_ability__ready_fd .AbilityPanel_ability_effect_80,
-    .AbilityPanel_ability__shield_39.AbilityPanel_ability__ready_fd .AbilityPanel_ability_effect_80,
-    .AbilityPanel_ability__black_hole_2f.AbilityPanel_ability__ready_fd .AbilityPanel_ability_effect_80,
-    .AbilityPanel_ability__overcharge_02.AbilityPanel_ability__ready_fd .AbilityPanel_ability_effect_80,
-    .AbilityPanel_ability__power_shot_04.AbilityPanel_ability__ready_fd .AbilityPanel_ability_effect_80,
-    .AbilityPanel_ability__rapid_shelling_6d.AbilityPanel_ability__ready_fd .AbilityPanel_ability_effect_80 {
-        animation: AbilityPanel_flash_a1 .5s ease-in-out;
-    }
+.AbilityPanel_ability__acceleration_62.AbilityPanel_ability__ready_fd .AbilityPanel_ability_effect_80,
+.AbilityPanel_ability__shield_39.AbilityPanel_ability__ready_fd .AbilityPanel_ability_effect_80,
+.AbilityPanel_ability__black_hole_2f.AbilityPanel_ability__ready_fd .AbilityPanel_ability_effect_80,
+.AbilityPanel_ability__overcharge_02.AbilityPanel_ability__ready_fd .AbilityPanel_ability_effect_80,
+.AbilityPanel_ability__power_shot_04.AbilityPanel_ability__ready_fd .AbilityPanel_ability_effect_80,
+.AbilityPanel_ability__rapid_shelling_6d.AbilityPanel_ability__ready_fd .AbilityPanel_ability_effect_80 {
+    animation: AbilityPanel_flash_a1 0.5s ease-in-out;
+}
 .AbilityPanel_ability__rapid_shelling_6d .AbilityPanel_ability_effect_80 {
-        background-color: var(--rapidShellingColor);
-    }
+    background-color: var(--rapidShellingColor);
+}
 .AbilityPanel_ability_overlay_1b {
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_60x58.slot_active') center
-            center / contain no-repeat;
-        opacity: 0;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_60x58.slot_active') center center /
+        contain no-repeat;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 .mediaMedium .AbilityPanel_ability_overlay_1b {
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.slot_active') center
-                center / contain no-repeat;
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.slot_active') center center /
+        contain no-repeat;
 }
 .AbilityPanel_ability_disabledOverlay_41 {
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_60x58.slot_active') center
-        center / 62rem 58rem no-repeat;
-        opacity: 0;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_60x58.slot_active') center center /
+        62rem 58rem no-repeat;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 .mediaMedium .AbilityPanel_ability_disabledOverlay_41 {
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.slot_active') center
-                center / 74rem 72rem no-repeat;
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.slot_active') center center /
+        74rem 72rem no-repeat;
 }
 .AbilityPanel_ability__active_4b .AbilityPanel_ability_overlay_1b {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .AbilityPanel_ability__disabled_81 .AbilityPanel_ability_disabledOverlay_41 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .AbilityPanel_ability__rapid_shelling_6d .AbilityPanel_ability_overlay_1b {
-        display: none;
-    }
+    display: none;
+}
 .AbilityPanel_ability_border_40 {
-        width: 100%;
-        height: 100%;
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.ability_border_full')
-            center center / 55rem 55rem no-repeat;
-        opacity: .5;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+    width: 100%;
+    height: 100%;
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.ability_border_full') center
+        center / 55rem 55rem no-repeat;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .mediaMedium .AbilityPanel_ability_border_40 {
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.ability_border_full')
-                center center / 70rem 70rem no-repeat;
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.ability_border_full') center
+        center / 70rem 70rem no-repeat;
 }
 .AbilityPanel_ability__shell_e8 .AbilityPanel_ability_border_40 {
-        background-image: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_60x58.ability_border_shell');
-    }
+    background-image: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_60x58.ability_border_shell');
+}
 .mediaMedium .AbilityPanel_ability__shell_e8 .AbilityPanel_ability_border_40 {
-            background-image: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.ability_border_shell');
+    background-image: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.ability_border_shell');
 }
 .AbilityPanel_ability__acceleration_62 .AbilityPanel_ability_border_40,
-    .AbilityPanel_ability__shield_39 .AbilityPanel_ability_border_40 {
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_60x58.ability_border') center
-            center / 57rem 56rem no-repeat;
-    }
-.mediaMedium .AbilityPanel_ability__acceleration_62 .AbilityPanel_ability_border_40, .mediaMedium .AbilityPanel_ability__shield_39 .AbilityPanel_ability_border_40 {
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.ability_border')
-                center center / 72rem 68rem no-repeat;
+.AbilityPanel_ability__shield_39 .AbilityPanel_ability_border_40 {
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_60x58.ability_border') center center /
+        57rem 56rem no-repeat;
+}
+.mediaMedium .AbilityPanel_ability__acceleration_62 .AbilityPanel_ability_border_40,
+.mediaMedium .AbilityPanel_ability__shield_39 .AbilityPanel_ability_border_40 {
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.ability_border') center center /
+        72rem 68rem no-repeat;
 }
 .AbilityPanel_ability__black_hole_2f .AbilityPanel_ability_border_40 {
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_60x58.ability_border_black_hole')
-            center center / 55rem 55rem no-repeat;
-    }
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_60x58.ability_border_black_hole')
+        center center / 55rem 55rem no-repeat;
+}
 .mediaMedium .AbilityPanel_ability__black_hole_2f .AbilityPanel_ability_border_40 {
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.ability_border_black_hole')
-                center center / 70rem 70rem no-repeat;
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.ability_border_black_hole')
+        center center / 70rem 70rem no-repeat;
 }
 .AbilityPanel_ability__overcharge_02 .AbilityPanel_ability_border_40 {
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_60x58.ability_border_overcharge')
-            center center / 55rem 55rem no-repeat;
-    }
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_60x58.ability_border_overcharge')
+        center center / 55rem 55rem no-repeat;
+}
 .mediaMedium .AbilityPanel_ability__overcharge_02 .AbilityPanel_ability_border_40 {
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.ability_border_overcharge')
-                center center / 70rem 70rem no-repeat;
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.ability_border_overcharge')
+        center center / 70rem 70rem no-repeat;
 }
 .AbilityPanel_ability__rapid_shelling_6d .AbilityPanel_ability_border_40 {
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_60x58.ability_border_rapid_shelling')
-            center center / 55rem 55rem no-repeat;
-    }
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_60x58.ability_border_rapid_shelling')
+        center center / 55rem 55rem no-repeat;
+}
 .mediaMedium .AbilityPanel_ability__rapid_shelling_6d .AbilityPanel_ability_border_40 {
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.ability_border_rapid_shelling')
-                center center / 70rem 70rem no-repeat;
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.ability_border_rapid_shelling')
+        center center / 70rem 70rem no-repeat;
 }
 .AbilityPanel_ability__power_shot_04 .AbilityPanel_ability_border_40 {
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_60x58.ability_border_power_shot')
-            center center / 55rem 55rem no-repeat;
-    }
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_60x58.ability_border_power_shot')
+        center center / 55rem 55rem no-repeat;
+}
 .mediaMedium .AbilityPanel_ability__power_shot_04 .AbilityPanel_ability_border_40 {
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.ability_border_power_shot')
-                center center / 70rem 70rem no-repeat;
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.size_74x72.ability_border_power_shot')
+        center center / 70rem 70rem no-repeat;
 }
 .AbilityPanel_ability__ready_fd .AbilityPanel_ability_border_40 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .AbilityPanel_ability_keyBind_40 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        opacity: .5;
-        position: absolute;
-        right: 0;
-        bottom: 100%;
-        left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    left: 0;
     color: #f4e1b3;
     font-size: 18rem;
     font-weight: 400;
     line-height: 21rem;
     /* stylelint-disable-next-line unit-blacklist */
-    letter-spacing: .04em;
-    }
+    letter-spacing: 0.04em;
+}
 .AbilityPanel_ability__ready_fd .AbilityPanel_ability_keyBind_40 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .AbilityPanel_ability__active_4b .AbilityPanel_ability_keyBind_40,
-    .AbilityPanel_ability__none_50 .AbilityPanel_ability_keyBind_40 {
-        opacity: .5;
-    }
+.AbilityPanel_ability__none_50 .AbilityPanel_ability_keyBind_40 {
+    opacity: 0.5;
+}
 .AbilityPanel_ability_icon_f2 {
-        width: 100%;
-        height: 100%;
-        background: center center / 48rem 48rem no-repeat;
-        opacity: .5;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+    width: 100%;
+    height: 100%;
+    background: center center / 48rem 48rem no-repeat;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .AbilityPanel_ability_icon_ready_cb {
-            width: 100%;
-            height: 58rem;
-            background: center center / 48rem 48rem no-repeat;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
+    width: 100%;
+    height: 58rem;
+    background: center center / 48rem 48rem no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 .mediaMedium .AbilityPanel_ability_icon_ready_cb {
-                height: 72rem;
+    height: 72rem;
 }
 .AbilityPanel_ability_reloadMask_3a {
-        width: 100%;
-        overflow: hidden;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        transition: height 100ms linear;
-    }
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: height 100ms linear;
+}
 .AbilityPanel_ability_reloadMask_icon_31 {
-            width: var(--slotSize);
-            height: var(--slotSize);
+    width: var(--slotSize);
+    height: var(--slotSize);
 
-            /* A trick to keep the icon centered */
-            border: 1rem solid transparent;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
+    /* A trick to keep the icon centered */
+    border: 1rem solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 .AbilityPanel_ability_reloadMask_background_29 {
-            height: calc(var(--slotSize) - 4rem);
-            background-color: #f4e1b3;
-            opacity: .2;
-            position: absolute;
-            right: 2rem;
-            bottom: 2rem;
-            left: 2rem;
-        }
+    height: calc(var(--slotSize) - 4rem);
+    background-color: #f4e1b3;
+    opacity: 0.2;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+}
 .AbilityPanel_ability_reloadMask_border_20 {
-            display: none;
-            width: var(--slotSize);
-            height: var(--slotSize);
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
+    display: none;
+    width: var(--slotSize);
+    height: var(--slotSize);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 .AbilityPanel_ability__ready_fd .AbilityPanel_ability_reloadMask_3a {
-        height: 100%;
-        animation: AbilityPanel_chargeReset_c5 1ms linear;
-        animation-delay: 0s;
-    }
+    height: 100%;
+    animation: AbilityPanel_chargeReset_c5 1ms linear;
+    animation-delay: 0s;
+}
 .AbilityPanel_ability__ready_fd .AbilityPanel_ability_reloadMask_background_29 {
-        display: none;
-    }
+    display: none;
+}
 .AbilityPanel_ability__shell_e8 {
-        margin-right: 25rem;
-    }
+    margin-right: 25rem;
+}
 .AbilityPanel_ability__acceleration_62 {
-        margin-right: 5rem;
-    }
+    margin-right: 5rem;
+}
 .AbilityPanel_ability__shield_39 {
-        margin-right: 25rem;
-    }
+    margin-right: 25rem;
+}
 .AbilityPanel_ability__shell_e8 .AbilityPanel_ability_icon_f2,
-    .AbilityPanel_ability__shell_e8 .AbilityPanel_ability_reloadMask_icon_31 {
-        /* this icon has different size intentionally */
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.shell_small') center center /
-            18rem 38rem no-repeat;
-    }
-.mediaMedium .AbilityPanel_ability__shell_e8 .AbilityPanel_ability_icon_f2, .mediaMedium .AbilityPanel_ability__shell_e8 .AbilityPanel_ability_reloadMask_icon_31 {
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.shell') center center /
-                48rem 48rem no-repeat;
+.AbilityPanel_ability__shell_e8 .AbilityPanel_ability_reloadMask_icon_31 {
+    /* this icon has different size intentionally */
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.shell_small') center center / 18rem
+        38rem no-repeat;
+}
+.mediaMedium .AbilityPanel_ability__shell_e8 .AbilityPanel_ability_icon_f2,
+.mediaMedium .AbilityPanel_ability__shell_e8 .AbilityPanel_ability_reloadMask_icon_31 {
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.shell') center center / 48rem 48rem
+        no-repeat;
 }
 .AbilityPanel_ability__acceleration_62 .AbilityPanel_ability_icon_f2,
-    .AbilityPanel_ability__acceleration_62 .AbilityPanel_ability_reloadMask_icon_31 {
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.acceleration_small') center
-            center / 40rem 40rem no-repeat;
-    }
-.mediaMedium .AbilityPanel_ability__acceleration_62 .AbilityPanel_ability_icon_f2, .mediaMedium .AbilityPanel_ability__acceleration_62 .AbilityPanel_ability_reloadMask_icon_31 {
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.acceleration') center
-                center / 48rem 48rem no-repeat;
+.AbilityPanel_ability__acceleration_62 .AbilityPanel_ability_reloadMask_icon_31 {
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.acceleration_small') center center /
+        40rem 40rem no-repeat;
+}
+.mediaMedium .AbilityPanel_ability__acceleration_62 .AbilityPanel_ability_icon_f2,
+.mediaMedium .AbilityPanel_ability__acceleration_62 .AbilityPanel_ability_reloadMask_icon_31 {
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.acceleration') center center /
+        48rem 48rem no-repeat;
 }
 .AbilityPanel_ability__shield_39 .AbilityPanel_ability_icon_f2,
-    .AbilityPanel_ability__shield_39 .AbilityPanel_ability_reloadMask_icon_31 {
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.shield_small') center center /
-            40rem 40rem no-repeat;
-    }
-.mediaMedium .AbilityPanel_ability__shield_39 .AbilityPanel_ability_icon_f2, .mediaMedium .AbilityPanel_ability__shield_39 .AbilityPanel_ability_reloadMask_icon_31 {
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.shield') center center /
-                48rem 48rem no-repeat;
+.AbilityPanel_ability__shield_39 .AbilityPanel_ability_reloadMask_icon_31 {
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.shield_small') center center /
+        40rem 40rem no-repeat;
+}
+.mediaMedium .AbilityPanel_ability__shield_39 .AbilityPanel_ability_icon_f2,
+.mediaMedium .AbilityPanel_ability__shield_39 .AbilityPanel_ability_reloadMask_icon_31 {
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.shield') center center / 48rem
+        48rem no-repeat;
 }
 .AbilityPanel_ability__black_hole_2f .AbilityPanel_ability_icon_f2,
-    .AbilityPanel_ability__black_hole_2f .AbilityPanel_ability_reloadMask_icon_31 {
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.black_hole_small') center
-            center / 40rem 40rem no-repeat;
-    }
-.mediaMedium .AbilityPanel_ability__black_hole_2f .AbilityPanel_ability_icon_f2, .mediaMedium .AbilityPanel_ability__black_hole_2f .AbilityPanel_ability_reloadMask_icon_31 {
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.black_hole') center center /
-                48rem 48rem no-repeat;
+.AbilityPanel_ability__black_hole_2f .AbilityPanel_ability_reloadMask_icon_31 {
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.black_hole_small') center center /
+        40rem 40rem no-repeat;
+}
+.mediaMedium .AbilityPanel_ability__black_hole_2f .AbilityPanel_ability_icon_f2,
+.mediaMedium .AbilityPanel_ability__black_hole_2f .AbilityPanel_ability_reloadMask_icon_31 {
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.black_hole') center center / 48rem
+        48rem no-repeat;
 }
 .AbilityPanel_ability__rapid_shelling_6d .AbilityPanel_ability_icon_f2,
-    .AbilityPanel_ability__rapid_shelling_6d .AbilityPanel_ability_reloadMask_icon_31 {
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.rapid_shelling_small') center
-            center / 40rem 40rem no-repeat;
-    }
-.mediaMedium .AbilityPanel_ability__rapid_shelling_6d .AbilityPanel_ability_icon_f2, .mediaMedium .AbilityPanel_ability__rapid_shelling_6d .AbilityPanel_ability_reloadMask_icon_31 {
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.rapid_shelling') center
-                center / 48rem 48rem no-repeat;
+.AbilityPanel_ability__rapid_shelling_6d .AbilityPanel_ability_reloadMask_icon_31 {
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.rapid_shelling_small') center
+        center / 40rem 40rem no-repeat;
+}
+.mediaMedium .AbilityPanel_ability__rapid_shelling_6d .AbilityPanel_ability_icon_f2,
+.mediaMedium .AbilityPanel_ability__rapid_shelling_6d .AbilityPanel_ability_reloadMask_icon_31 {
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.rapid_shelling') center center /
+        48rem 48rem no-repeat;
 }
 .AbilityPanel_ability__power_shot_04 .AbilityPanel_ability_icon_f2,
-    .AbilityPanel_ability__power_shot_04 .AbilityPanel_ability_reloadMask_icon_31 {
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.power_shot_small') center
-            center / 40rem 40rem no-repeat;
-    }
-.mediaMedium .AbilityPanel_ability__power_shot_04 .AbilityPanel_ability_icon_f2, .mediaMedium .AbilityPanel_ability__power_shot_04 .AbilityPanel_ability_reloadMask_icon_31 {
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.power_shot') center
-                center / 48rem 48rem no-repeat;
+.AbilityPanel_ability__power_shot_04 .AbilityPanel_ability_reloadMask_icon_31 {
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.power_shot_small') center center /
+        40rem 40rem no-repeat;
+}
+.mediaMedium .AbilityPanel_ability__power_shot_04 .AbilityPanel_ability_icon_f2,
+.mediaMedium .AbilityPanel_ability__power_shot_04 .AbilityPanel_ability_reloadMask_icon_31 {
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.power_shot') center center / 48rem
+        48rem no-repeat;
 }
 .AbilityPanel_ability__overcharge_02 .AbilityPanel_ability_icon_f2,
-    .AbilityPanel_ability__overcharge_02 .AbilityPanel_ability_reloadMask_icon_31 {
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.overcharge_small') center
-            center / 40rem 40rem no-repeat;
-    }
-.mediaMedium .AbilityPanel_ability__overcharge_02 .AbilityPanel_ability_icon_f2, .mediaMedium .AbilityPanel_ability__overcharge_02 .AbilityPanel_ability_reloadMask_icon_31 {
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.overcharge') center center /
-                48rem 48rem no-repeat;
+.AbilityPanel_ability__overcharge_02 .AbilityPanel_ability_reloadMask_icon_31 {
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.overcharge_small') center center /
+        40rem 40rem no-repeat;
+}
+.mediaMedium .AbilityPanel_ability__overcharge_02 .AbilityPanel_ability_icon_f2,
+.mediaMedium .AbilityPanel_ability__overcharge_02 .AbilityPanel_ability_reloadMask_icon_31 {
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.ability_panel.icons.overcharge') center center / 48rem
+        48rem no-repeat;
 }
 .AbilityPanel_ability_reloading_af {
-        display: flex;
-        justify-content: center;
-        margin-top: 43rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 43rem;
     color: #f4e1b3;
     font-size: 16rem;
     font-weight: 400;
     line-height: 19rem;
-    letter-spacing: .04em;
-    }
+    letter-spacing: 0.04em;
+}
 .mediaMedium .AbilityPanel_ability_reloading_af {
-            margin-top: 58rem;
+    margin-top: 58rem;
 }
 .AbilityPanel_ability__rapid_shelling_6d .AbilityPanel_ability_reloading_af {
-        color: var(--rapidShellingColor);
-    }
+    color: var(--rapidShellingColor);
+}
 .AbilityPanel_ability__rapid_shelling_6d .AbilityPanel_ability_reloadMask_icon_31 {
-        border-left-color: var(--rapidShellingColor);
-        border-top-color: var(--rapidShellingColor);
-        border-right-color: var(--rapidShellingColor);
-    }
+    border-left-color: var(--rapidShellingColor);
+    border-top-color: var(--rapidShellingColor);
+    border-right-color: var(--rapidShellingColor);
+}
 .AbilityPanel_ability__rapid_shelling_6d .AbilityPanel_ability_reloadMask_border_20 {
-        display: flex;
-        border-image: linear-gradient(
-                90deg,
-                #70d4ff 0%,
-                #70d4ff 20%,
-                transparent 20%,
-                transparent 80%,
-                #70d4ff 80%,
-                #70d4ff 100%
-            )
-            1 1 1 stretch;
-        border-image-width: 1rem;
-    }
+    display: flex;
+    border-image: linear-gradient(
+            90deg,
+            #70d4ff 0%,
+            #70d4ff 20%,
+            transparent 20%,
+            transparent 80%,
+            #70d4ff 80%,
+            #70d4ff 100%
+        )
+        1 1 1 stretch;
+    border-image-width: 1rem;
+}
 .AbilityPanel_ability__rapid_shelling_6d .AbilityPanel_ability_reloadMask_background_29 {
-        background-color: var(--rapidShellingColor);
-    }
+    background-color: var(--rapidShellingColor);
+}
 .AbilityPanel_ability__shell_e8 .AbilityPanel_ability_reloadMask_icon_31 {
-        border: 1rem solid #f4e1b3;
-    }
+    border: 1rem solid #f4e1b3;
+}
 @keyframes AbilityPanel_flash_a1 {
     from {
         opacity: 0;
@@ -391,18 +399,20 @@
 .Aim_base_d6 {
     width: 132rem;
     height: 112rem;
-    background: url('R.images.cosmic_event.gui.maps.icons.battle.crosshair.aim_loading') center center / 32rem 32rem no-repeat;
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.crosshair.aim_loading') center center / 32rem 32rem
+        no-repeat;
     position: absolute;
     transform: translate(-50%, -50%);
 }
 
-    .Aim_base__ready_38 {
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.crosshair.static_aim') center center / 32rem 32rem no-repeat;
-    }
+.Aim_base__ready_38 {
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.crosshair.static_aim') center center / 32rem 32rem
+        no-repeat;
+}
 
-    .Aim_base__ready_38 .Aim_corner_9c {
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.crosshair.ghost_corner') 0 0 / 17rem 16rem no-repeat;
-        }
+.Aim_base__ready_38 .Aim_corner_9c {
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.crosshair.ghost_corner') 0 0 / 17rem 16rem no-repeat;
+}
 
 .Aim_corner_9c {
     width: 17rem;
@@ -412,27 +422,27 @@
 }
 
 .Aim_corner__top_left_46 {
-        top: 0;
-        left: 0;
-    }
+    top: 0;
+    left: 0;
+}
 
 .Aim_corner__top_right_37 {
-        top: 0;
-        right: 0;
-        transform: scaleX(-1);
-    }
+    top: 0;
+    right: 0;
+    transform: scaleX(-1);
+}
 
 .Aim_corner__bottom_right_a2 {
-        right: 0;
-        bottom: 0;
-        transform: scaleY(-1) scaleX(-1);
-    }
+    right: 0;
+    bottom: 0;
+    transform: scaleY(-1) scaleX(-1);
+}
 
 .Aim_corner__bottom_left_d9 {
-        bottom: 0;
-        left: 0;
-        transform: scaleY(-1);
-    }
+    bottom: 0;
+    left: 0;
+    transform: scaleY(-1);
+}
 
 .Crosshair_base_64 {
     width: 132rem;
@@ -451,63 +461,64 @@
     top: 20rem;
 }
 .Crosshair_reloading__left_9d {
-        left: 0rem;
-    }
+    left: 0rem;
+}
 .Crosshair_reloading__right_d9 {
-        right: 0rem;
-    }
+    right: 0rem;
+}
 .Crosshair_reloading_bar_9d {
-        width: 4rem;
-        height: 6rem;
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.crosshair.crosshair_loading') bottom left / 4rem
-            6rem repeat-y;
-    }
+    width: 4rem;
+    height: 6rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.crosshair.crosshair_loading') bottom left / 4rem 6rem
+        repeat-y;
+}
 .Crosshair_reloading__ready_9d .Crosshair_reloading_bar_9d {
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.crosshair.crosshair_loaded') bottom left / 4rem
-            6rem repeat-y;
-    }
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.crosshair.crosshair_loaded') bottom left / 4rem 6rem
+        repeat-y;
+}
 .Crosshair_reloading_timeLeft_85 {
-        text-align: right;
-        filter: drop-shadow(0 0 1rem #010326) drop-shadow(0 0 1rem #010326);
-        position: absolute;
-        top: 53rem;
-        right: 100%;
-        transform: translate(-25rem, -50%);
+    text-align: right;
+    filter: drop-shadow(0 0 1rem #010326) drop-shadow(0 0 1rem #010326);
+    position: absolute;
+    top: 53rem;
+    right: 100%;
+    transform: translate(-25rem, -50%);
     color: #ff7354;
     font-size: 18rem;
     font-weight: 400;
     line-height: 21rem;
     /* stylelint-disable-next-line unit-blacklist */
-    letter-spacing: .04em;
-    }
+    letter-spacing: 0.04em;
+}
 .Crosshair_reloading_timeLeft__rapidShelling_4a {
-            min-width: 34rem;
-            padding-bottom: 37rem;
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.crosshair.rapid_shelling') left bottom / 32rem no-repeat;
-            top: 72rem;
-        }
+    min-width: 34rem;
+    padding-bottom: 37rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.crosshair.rapid_shelling') left bottom / 32rem
+        no-repeat;
+    top: 72rem;
+}
 .Crosshair_reloading_timeLeft__powerShot_9a {
-            min-width: 34rem;
-            padding-bottom: 37rem;
-            background: url('R.images.cosmic_event.gui.maps.icons.battle.crosshair.power_shot') left bottom / 32rem no-repeat;
-            top: 72rem;
-        }
+    min-width: 34rem;
+    padding-bottom: 37rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.crosshair.power_shot') left bottom / 32rem no-repeat;
+    top: 72rem;
+}
 .Crosshair_reloading__ready_9d .Crosshair_reloading_timeLeft_85 {
-        color: #f4e1b3;
-        filter: drop-shadow(0 0 1rem #000);
-    }
+    color: #f4e1b3;
+    filter: drop-shadow(0 0 1rem #000);
+}
 .Crosshair_reloading_effect_b8 {
-        width: 10rem;
-        height: 76rem;
-        background-color: #f4e1b3;
-        opacity: 0;
-        position: absolute;
-        top: 0;
-        left: -4rem;
-    }
+    width: 10rem;
+    height: 76rem;
+    background-color: #f4e1b3;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: -4rem;
+}
 .Crosshair_reloading__ready_9d .Crosshair_reloading_effect_b8 {
-        animation: Crosshair_flash_d9 .5s ease-in-out;
-    }
+    animation: Crosshair_flash_d9 0.5s ease-in-out;
+}
 .Crosshair_corner_66 {
     width: 17rem;
     height: 16rem;
@@ -515,31 +526,31 @@
     position: absolute;
 }
 .Crosshair_corner__top_left_86 {
-        top: 0;
-        left: 0;
-    }
+    top: 0;
+    left: 0;
+}
 .Crosshair_corner__top_right_04 {
-        top: 0;
-        right: 0;
-        transform: scaleX(-1);
-    }
+    top: 0;
+    right: 0;
+    transform: scaleX(-1);
+}
 .Crosshair_corner__bottom_right_99 {
-        right: 0;
-        bottom: 0;
-        transform: scaleY(-1) scaleX(-1);
-    }
+    right: 0;
+    bottom: 0;
+    transform: scaleY(-1) scaleX(-1);
+}
 .Crosshair_corner__bottom_left_e3 {
-        bottom: 0;
-        left: 0;
-        transform: scaleY(-1);
-    }
+    bottom: 0;
+    left: 0;
+    transform: scaleY(-1);
+}
 @keyframes Crosshair_flash_d9 {
     from {
         opacity: 0;
     }
 
     30% {
-        opacity: .5;
+        opacity: 0.5;
         transform: scale(1);
     }
 
@@ -563,14 +574,14 @@
     transform: translateX(-50%);
 }
 
-    .mediaMedium .Announcement_base_93 {
-        max-width: 70vw;
-        top: 115rem;
+.mediaMedium .Announcement_base_93 {
+    max-width: 70vw;
+    top: 115rem;
 }
 
-    .Announcement_base__disabled_82 {
-        animation: Announcement_fadeOut_19 1s;
-    }
+.Announcement_base__disabled_82 {
+    animation: Announcement_fadeOut_19 1s;
+}
 .Announcement_fadeOut_19 {
     animation-name: Announcement_fadeOut_19;
     animation-duration: 1s;
@@ -583,24 +594,24 @@
     text-align: center;
 
     /* a hack to fix Gameface paint problem */
-    animation: Announcement_redrawElement_41 .4s infinite;
+    animation: Announcement_redrawElement_41 0.4s infinite;
 }
 .Announcement_announcement_countdown_ef {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0 30rem;
-        font-size: 96rem;
-        position: relative;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30rem;
+    font-size: 96rem;
+    position: relative;
+}
 .Announcement_announcement_countdown_value_fe {
     color: #f4e1b3;
     font-size: 54rem;
     font-weight: 700;
     line-height: 63rem;
-            flex: 1 1 auto;
-        }
+    flex: 1 1 auto;
+}
 .mediaMedium .Announcement_announcement_countdown_value_fe {
     color: #f4e1b3;
     font-size: 96rem;
@@ -608,29 +619,29 @@
     line-height: 113rem;
 }
 .Announcement_announcement_countdown_decoration_9c {
-            width: 18rem;
-            height: 16rem;
-            background: no-repeat center center / contain;
-            position: absolute;
-            top: 55%;
-            transform: translateY(-50%);
-        }
+    width: 18rem;
+    height: 16rem;
+    background: no-repeat center center / contain;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+}
 .Announcement_announcement_countdown_decoration__left_21 {
-                background-image: url('R.images.cosmic_event.gui.maps.icons.battle.match_timer.match_timer_decoration_left');
-                left: 0;
-            }
+    background-image: url('R.images.cosmic_event.gui.maps.icons.battle.match_timer.match_timer_decoration_left');
+    left: 0;
+}
 .Announcement_announcement_countdown_decoration__right_19 {
-                background-image: url('R.images.cosmic_event.gui.maps.icons.battle.match_timer.match_timer_decoration_right');
-                right: 0;
-            }
+    background-image: url('R.images.cosmic_event.gui.maps.icons.battle.match_timer.match_timer_decoration_right');
+    right: 0;
+}
 .Announcement_announcement_title_60 {
     color: #f4e1b3;
     font-size: 26rem;
     font-weight: 400;
     line-height: 30rem;
     /* stylelint-disable-next-line unit-blacklist */
-    letter-spacing: .04em;
-    }
+    letter-spacing: 0.04em;
+}
 .mediaMedium .Announcement_announcement_title_60 {
     color: #f4e1b3;
     font-size: 42rem;
@@ -644,8 +655,8 @@
     font-weight: 400;
     line-height: 30rem;
     /* stylelint-disable-next-line unit-blacklist */
-    letter-spacing: .04em;
-    }
+    letter-spacing: 0.04em;
+}
 .mediaMedium .Announcement_announcement_subtitle_81 {
     color: #f2c572;
     font-size: 42rem;
@@ -654,12 +665,12 @@
     letter-spacing: 0;
 }
 .Announcement_announcement_active_players_76 {
-        display: flex;
-        flex-direction: row;
-    }
+    display: flex;
+    flex-direction: row;
+}
 .Announcement_announcement_active_players_76 span {
-            margin-left: 5rem;
-        }
+    margin-left: 5rem;
+}
 .Announcement_base__show_cf .Announcement_announcement_7c {
     display: flex;
 }
@@ -670,7 +681,7 @@
 }
 @keyframes Announcement_redrawElement_41 {
     from {
-        opacity: .98;
+        opacity: 0.98;
     }
 
     to {
@@ -689,14 +700,14 @@
     position: relative;
 }
 
-    .mediaMedium .ArtefactScanning_base_19 {
-        width: 320rem;
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.scanning.bg') 0 0 / 320rem 36rem no-repeat;
+.mediaMedium .ArtefactScanning_base_19 {
+    width: 320rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.scanning.bg') 0 0 / 320rem 36rem no-repeat;
 }
 
-    .ArtefactScanning_base__show_21 {
-        display: flex;
-    }
+.ArtefactScanning_base__show_21 {
+    display: flex;
+}
 .ArtefactScanning_progressBar_d0 {
     display: flex;
     flex-direction: row;
@@ -707,34 +718,34 @@
     position: relative;
 }
 .mediaMedium .ArtefactScanning_progressBar_d0 {
-        height: 25rem;
-        margin: 6rem 7rem 6rem 6rem;
+    height: 25rem;
+    margin: 6rem 7rem 6rem 6rem;
 }
 .ArtefactScanning_progressBar_progress_a9 {
-        height: 100%;
-        background: url('R.images.cosmic_event.gui.maps.icons.battle.scanning.scanning_progress') 1rem 1rem / 4rem 4rem
-            repeat;
-    }
+    height: 100%;
+    background: url('R.images.cosmic_event.gui.maps.icons.battle.scanning.scanning_progress') 1rem 1rem / 4rem 4rem
+        repeat;
+}
 .ArtefactScanning_progressBar_text_f7 {
     color: #f4e1b3;
     font-size: 18rem;
     font-weight: 700;
     line-height: 21rem;
     /* stylelint-disable-next-line unit-blacklist */
-    letter-spacing: .04em;
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        top: -3rem;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+    letter-spacing: 0.04em;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .mediaMedium .ArtefactScanning_progressBar_text_f7 {
-            top: 0;
+    top: 0;
 }
 .ArtefactScanning_progressBar_text_f7 span {
-            min-width: 45rem;
-        }
+    min-width: 45rem;
+}
 .ArtefactScanning_label_80 {
     display: flex;
     flex-direction: row;
@@ -743,7 +754,7 @@
     font-size: 16rem;
     font-weight: 400;
     line-height: 19rem;
-    letter-spacing: .04em;
+    letter-spacing: 0.04em;
 }
 .mediaMedium .ArtefactScanning_label_80 {
     color: #f4e1b3;
@@ -751,12 +762,12 @@
     font-weight: 400;
     line-height: 21rem;
     /* stylelint-disable-next-line unit-blacklist */
-    letter-spacing: .04em;
-        top: 0;
+    letter-spacing: 0.04em;
+    top: 0;
 }
 .ArtefactScanning_label_80 span {
-        min-width: 9rem;
-    }
+    min-width: 9rem;
+}
 
 .ArenaTimer_base_4c {
     color: #f4e1b3;
@@ -764,7 +775,7 @@
     font-weight: 700;
     line-height: 30rem;
     /* stylelint-disable-next-line unit-blacklist */
-    letter-spacing: .04em;
+    letter-spacing: 0.04em;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -779,15 +790,15 @@
     transform: translateX(-50%);
 }
 
-    .ArenaTimer_base__phase1_b7 {
-        display: flex;
-    }
+.ArenaTimer_base__phase1_b7 {
+    display: flex;
+}
 
-    .ArenaTimer_base__phase2_0b {
-        display: flex;
-        background-image: url('R.images.cosmic_event.gui.maps.icons.battle.match_timer.timer_bg_phase2');
-        color: #f2c572;
-    }
+.ArenaTimer_base__phase2_0b {
+    display: flex;
+    background-image: url('R.images.cosmic_event.gui.maps.icons.battle.match_timer.timer_bg_phase2');
+    color: #f2c572;
+}
 .ArenaTimer_value_6a {
     min-width: 62rem;
     text-align: left;
@@ -801,22 +812,22 @@
     height: 100vh;
     margin: 0;
     background-color: transparent;
-    letter-spacing: .04em;
+    letter-spacing: 0.04em;
     overflow: hidden;
 }
 
-    .CosmicReactHudApp_base__respawning_50 .CosmicReactHudApp_hideWhenRespawning_7f {
-        opacity: 0;
-    }
+.CosmicReactHudApp_base__respawning_50 .CosmicReactHudApp_hideWhenRespawning_7f {
+    opacity: 0;
+}
 
-    .CosmicReactHudApp_base__targeting_03 .CosmicReactHudApp_hideWhenTargeting_45 {
-        opacity: 0;
-    }
+.CosmicReactHudApp_base__targeting_03 .CosmicReactHudApp_hideWhenTargeting_45 {
+    opacity: 0;
+}
 
 .CosmicReactHudApp_hideWhenRespawning_7f,
 .CosmicReactHudApp_hideWhenTargeting_45 {
     opacity: 1;
-    transition: opacity .3s;
+    transition: opacity 0.3s;
 }
 
 .FormatText_base_d0 {
@@ -831,25 +842,25 @@
     align-items: center;
     padding: 20rem 55rem;
     border-radius: 4rem;
-    background-color: rgba(52, 19, 0, .7);
+    background-color: rgba(52, 19, 0, 0.7);
     opacity: 0;
     position: absolute;
     bottom: 40rem;
     left: 50%;
     transform: translateX(-50%);
-    animation: InfoPlate_fadeIn_52 .3s ease-in-out;
+    animation: InfoPlate_fadeIn_52 0.3s ease-in-out;
     animation-fill-mode: forwards;
 }
 
-    .InfoPlate_base_text_15 {
-        color: #f27d16;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
+.InfoPlate_base_text_15 {
+    color: #f27d16;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .InfoPlate_command_11 {
     display: flex;
     justify-content: center;
@@ -868,14 +879,14 @@
     line-height: 1.1;
 }
 .InfoPlate_command_border_54 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0rem 20rem;
-        padding: 2rem;
-        border: 2rem solid #f27d16;
-        border-radius: 6rem;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 20rem;
+    padding: 2rem;
+    border: 2rem solid #f27d16;
+    border-radius: 6rem;
+}
 .InfoPlate_relative_container_83 {
     position: relative;
 }
@@ -955,70 +966,70 @@
     position: relative;
 }
 .MessageLog_Message_dot_65 {
-        width: 4rem;
-        height: 4rem;
-        background-color: #f4e1b3;
-    }
+    width: 4rem;
+    height: 4rem;
+    background-color: #f4e1b3;
+}
 .MessageLog_Message_marsPoints_8a {
     color: #f4e1b3;
     font-size: 26rem;
     font-weight: 700;
     line-height: 30rem;
     /* stylelint-disable-next-line unit-blacklist */
-    letter-spacing: .04em;
-        width: 66rem;
-        margin-right: 10rem;
-        text-align: right;
-    }
+    letter-spacing: 0.04em;
+    width: 66rem;
+    margin-right: 10rem;
+    text-align: right;
+}
 .MessageLog_Message_icon_35 {
-        width: 30rem;
-        height: 30rem;
-        margin-right: 10rem;
-    }
+    width: 30rem;
+    height: 30rem;
+    margin-right: 10rem;
+}
 .MessageLog_Message_type_14 {
     color: #f4e1b3;
     font-size: 18rem;
     font-weight: 400;
     line-height: 21rem;
     /* stylelint-disable-next-line unit-blacklist */
-    letter-spacing: .04em;
-        margin-right: 20rem;
-    }
+    letter-spacing: 0.04em;
+    margin-right: 20rem;
+}
 .MessageLog_Message_effect_f5 {
-        width: 100%;
-        height: 100%;
-        background-color: #f4e1b3;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+    width: 100%;
+    height: 100%;
+    background-color: #f4e1b3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .MessageLog_Message__waiting_b9 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .MessageLog_Message__displayed_ff {
-        animation: MessageLog_slideInOut_11 2400ms ease-in-out;
-        animation-fill-mode: both;
-    }
+    animation: MessageLog_slideInOut_11 2400ms ease-in-out;
+    animation-fill-mode: both;
+}
 .MessageLog_Message__hidden_15 {
-        opacity: 0;
+    opacity: 0;
 
-        /* cannot display:none, they need to take up space */
-        visibility: hidden;
-    }
+    /* cannot display:none, they need to take up space */
+    visibility: hidden;
+}
 .MessageLog_Message__displayed_ff .MessageLog_Message_effect_f5 {
-        animation: MessageLog_flash_f1 400ms ease-in-out;
-        animation-fill-mode: both;
-    }
+    animation: MessageLog_flash_f1 400ms ease-in-out;
+    animation-fill-mode: both;
+}
 .MessageLog_Message__kill_9d {
-        background-image: url('R.images.cosmic_event.gui.maps.icons.battle.messages.message_bg__kill');
-    }
+    background-image: url('R.images.cosmic_event.gui.maps.icons.battle.messages.message_bg__kill');
+}
 .MessageLog_Message__kill_9d .MessageLog_Message_marsPoints_8a,
-    .MessageLog_Message__kill_9d .MessageLog_Message_type_14 {
-        color: #f2c572;
-    }
+.MessageLog_Message__kill_9d .MessageLog_Message_type_14 {
+    color: #f2c572;
+}
 .MessageLog_Message__kill_9d .MessageLog_Message_effect_f5 {
-        background-color: #f2c572;
-    }
+    background-color: #f2c572;
+}
 @keyframes MessageLog_slideInOut_11 {
     from {
         opacity: 0;
@@ -1043,11 +1054,11 @@
 @keyframes MessageLog_flash_f1 {
     20% {
         opacity: 0;
-        transform: scale(.9);
+        transform: scale(0.9);
     }
 
     70% {
-        opacity: .5;
+        opacity: 0.5;
         transform: scale(1);
     }
 
@@ -1068,31 +1079,31 @@
     transform: translateX(-50%);
 }
 
-    .mediaSmall .PickupNotificationSlot_base_2e {
-        bottom: 250rem;
+.mediaSmall .PickupNotificationSlot_base_2e {
+    bottom: 250rem;
 }
 
-    .mediaMedium .PickupNotificationSlot_base_2e {
-        width: 100rem;
-        height: 100rem;
-        background-image: url('R.images.cosmic_event.gui.maps.icons.battle.pickup_notification.bg.bg_100x100');
-        bottom: 270rem;
+.mediaMedium .PickupNotificationSlot_base_2e {
+    width: 100rem;
+    height: 100rem;
+    background-image: url('R.images.cosmic_event.gui.maps.icons.battle.pickup_notification.bg.bg_100x100');
+    bottom: 270rem;
 }
 
-    .mediaLarge .PickupNotificationSlot_base_2e {
-        width: 130rem;
-        height: 130rem;
-        background-image: url('R.images.cosmic_event.gui.maps.icons.battle.pickup_notification.bg.bg_130x130');
-        bottom: 310rem;
+.mediaLarge .PickupNotificationSlot_base_2e {
+    width: 130rem;
+    height: 130rem;
+    background-image: url('R.images.cosmic_event.gui.maps.icons.battle.pickup_notification.bg.bg_130x130');
+    bottom: 310rem;
 }
 
-    .PickupNotificationSlot_base__black_hole_6b,
-    .PickupNotificationSlot_base__rapid_shelling_fb,
-    .PickupNotificationSlot_base__power_shot_41,
-    .PickupNotificationSlot_base__overcharge_a5 {
-        animation: PickupNotificationSlot_blink_3c 1s ease-in-out;
-        animation-fill-mode: both;
-    }
+.PickupNotificationSlot_base__black_hole_6b,
+.PickupNotificationSlot_base__rapid_shelling_fb,
+.PickupNotificationSlot_base__power_shot_41,
+.PickupNotificationSlot_base__overcharge_a5 {
+    animation: PickupNotificationSlot_blink_3c 1s ease-in-out;
+    animation-fill-mode: both;
+}
 .PickupNotificationSlot_effect_e4 {
     display: none;
     background-color: #f4e1b3;
@@ -1172,9 +1183,9 @@
     left: 10rem;
 }
 
-    .mediaMedium .PlayerList_base_97 {
-        width: 280rem;
-        top: 120rem;
+.mediaMedium .PlayerList_base_97 {
+    width: 280rem;
+    top: 120rem;
 }
 .PlayerList_players_e3 {
     display: flex;
@@ -1188,24 +1199,24 @@
     position: absolute;
 }
 .PlayerList_corner__top_left_cc {
-        top: 0;
-        left: 0;
-    }
+    top: 0;
+    left: 0;
+}
 .PlayerList_corner__top_right_c0 {
-        top: 0;
-        right: 0;
-        transform: rotate(90deg);
-    }
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+}
 .PlayerList_corner__bottom_right_38 {
-        right: 0;
-        bottom: 0;
-        transform: rotate(180deg);
-    }
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+}
 .PlayerList_corner__bottom_left_5a {
-        bottom: 0;
-        left: 0;
-        transform: rotate(270deg);
-    }
+    bottom: 0;
+    left: 0;
+    transform: rotate(270deg);
+}
 .PlayerList_playerEntry_ac {
     display: flex;
     flex-direction: row;
@@ -1217,10 +1228,10 @@
     font-weight: 400;
     line-height: 21rem;
     /* stylelint-disable-next-line unit-blacklist */
-    letter-spacing: .04em;
+    letter-spacing: 0.04em;
 }
 .mediaMedium .PlayerList_playerEntry_ac {
-        height: 31rem;
+    height: 31rem;
 }
 .PlayerList_playerEntrySelected_37 {
     background-image: url('R.images.cosmic_event.gui.maps.icons.battle.player_list.player_bg_active');
@@ -1231,7 +1242,7 @@
     text-align: center;
 }
 .mediaMedium .PlayerList_playerRank_66 {
-        width: 30rem;
+    width: 30rem;
 }
 .PlayerList_playerContainer_65 {
     display: flex;
@@ -1258,12 +1269,12 @@
     font-weight: 700;
     line-height: 21rem;
     /* stylelint-disable-next-line unit-blacklist */
-    letter-spacing: .04em;
+    letter-spacing: 0.04em;
     text-align: right;
 }
 .PlayerList_playerEntrySelected_37 .PlayerList_playerScore_d6 {
-        color: #f2c572;
-    }
+    color: #f2c572;
+}
 @media (min-width: 1025rem) {
     .PlayerList_playerList_c6 {
         font-size: 20rem;
@@ -1284,14 +1295,14 @@
     transform: translate(-50%, -50%);
 }
 
-    .PoiMarker_base__visible_52 {
-        opacity: 1;
-        visibility: visible;
-    }
+.PoiMarker_base__visible_52 {
+    opacity: 1;
+    visibility: visible;
+}
 
-    .PoiMarker_base__tooClose_c6 {
-        opacity: .2;
-    }
+.PoiMarker_base__tooClose_c6 {
+    opacity: 0.2;
+}
 .PoiMarker_icon_1b {
     width: 59rem;
     height: 59rem;
@@ -1310,8 +1321,8 @@
     transition: opacity 300ms ease-in;
 }
 .PoiMarker_base__onScreen_c5 .PoiMarker_direction_2b {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .PoiMarker_distance_f5 {
     display: flex;
     flex-direction: row;
@@ -1330,7 +1341,7 @@
     font-weight: 500;
     line-height: 21rem;
     /* stylelint-disable-next-line unit-blacklist */
-    letter-spacing: .04em;
+    letter-spacing: 0.04em;
 }
 
 @keyframes AbilityHint_fadeOut_38 {
@@ -1346,14 +1357,14 @@
     top: 225rem;
     left: 50%;
     transform: translateX(-50%);
-    animation: AbilityHint_fadeOut_38 .3s ease-in-out 2s;
+    animation: AbilityHint_fadeOut_38 0.3s ease-in-out 2s;
     animation-fill-mode: both;
 }
 .mediaMedium .AbilityHint_base_3e {
-        top: 275rem;
+    top: 275rem;
 }
 .mediaLarge .AbilityHint_base_3e {
-        top: 350rem;
+    top: 350rem;
 }
 .AbilityHint_text_48 {
     color: #fbd07f;
@@ -1361,12 +1372,13 @@
     font-weight: 700;
     line-height: 21rem;
     /* stylelint-disable-next-line unit-blacklist */
-    letter-spacing: .04em;
-    text-shadow: 2rem 0 rgba(1,3,38, .06),
-    -2rem 0 rgba(1,3,38, .06),
-    0 2rem rgba(1,3,38, .06),
-    0 -2rem rgba(1,3,38, .06),
-    0 0 8rem #010326;
+    letter-spacing: 0.04em;
+    text-shadow:
+        2rem 0 rgba(1, 3, 38, 0.06),
+        -2rem 0 rgba(1, 3, 38, 0.06),
+        0 2rem rgba(1, 3, 38, 0.06),
+        0 -2rem rgba(1, 3, 38, 0.06),
+        0 0 8rem #010326;
 }
 .AbilityHint_seconds_41 {
     font-size: 26rem;
@@ -1384,13 +1396,15 @@
     transform-origin: top left;
 }
 .VehicleMarkers_vehicleMarker_text_df {
-        color: #e9e2bf;
-        font-size: 18rem;
-        text-align: center;
-        text-shadow: 0 0 4px rgba(255, 127, 0, .25), 0 0 8px #ff2a00, 0 0 15px #e52;
-        transform: translate(-50%, -50%);
-    }
+    color: #e9e2bf;
+    font-size: 18rem;
+    text-align: center;
+    text-shadow:
+        0 0 4px rgba(255, 127, 0, 0.25),
+        0 0 8px #ff2a00,
+        0 0 15px #e52;
+    transform: translate(-50%, -50%);
+}
 .VehicleMarkers_vehicleMarker__visible_17 {
-        visibility: visible;
-    }
-
+    visibility: visible;
+}

@@ -4,12 +4,12 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .FormatText_base_d0 {
     display: flex;
@@ -22,14 +22,14 @@
 }
 
 .Footer_label_36 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
 .Footer_explored_ae {
-    color: #FFC363;
+    color: #ffc363;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -73,7 +73,7 @@
 }
 
 .Content_title_a6 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
@@ -86,16 +86,15 @@
 }
 
 .Content_description_8a {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
 .Content_status_a5 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
-

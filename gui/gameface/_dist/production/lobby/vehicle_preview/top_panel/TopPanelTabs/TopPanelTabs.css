@@ -12,9 +12,9 @@ body {
     flex: 1;
 }
 
-    .Tabs_base__vertical_c0 {
-        flex-direction: row;
-    }
+.Tabs_base__vertical_c0 {
+    flex-direction: row;
+}
 
 .Tabs_list_0a {
     display: flex;
@@ -22,22 +22,22 @@ body {
 }
 
 .Tabs_list__centered_dc {
-        justify-content: center;
-        align-items: center;
-    }
+    justify-content: center;
+    align-items: center;
+}
 
 .Tabs_wrapper_2d {
     display: flex;
 }
 
 .Tabs_wrapper__centered_d8 {
-        justify-content: center;
-        align-items: center;
-    }
+    justify-content: center;
+    align-items: center;
+}
 
 .Tabs_wrapper__vertical_a5 {
-        flex-direction: column;
-    }
+    flex-direction: column;
+}
 
 .Counter_base_9e {
     display: flex;
@@ -48,34 +48,35 @@ body {
     animation: Counter_show_be ease-in-out forwards;
 }
 
-    .Counter_base__big_19 {
-        min-width: 21rem;
-        height: 21rem;
-    }
+.Counter_base__big_19 {
+    min-width: 21rem;
+    height: 21rem;
+}
 
-    .Counter_base__small_3b {
-        min-width: 13rem;
-        height: 13rem;
-    }
+.Counter_base__small_3b {
+    min-width: 13rem;
+    height: 13rem;
+}
 
-    .Counter_base__empty_98 {
-        min-width: 6rem;
-        height: 6rem;
-    }
+.Counter_base__empty_98 {
+    min-width: 6rem;
+    height: 6rem;
+}
 
-    .Counter_base__animated_40 {
-        animation-duration: .2s;
-    }
+.Counter_base__animated_40 {
+    animation-duration: 0.2s;
+}
 
-    .Counter_base__hidden_56 {
-        animation-name: Counter_hide_b6;
-    }
+.Counter_base__hidden_56 {
+    animation-name: Counter_hide_b6;
+}
 .Counter_bg_74 {
     border: 1rem solid #fe4e0f;
     border-radius: 7rem;
-    box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
-            0 0 6rem rgba(254,103,0, .2),
-            0 0 12rem 4rem rgba(249,0,0, .3);
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 6rem rgba(254, 103, 0, 0.2),
+        0 0 12rem 4rem rgba(249, 0, 0, 0.3);
     background-image: url('R.images.gui.maps.icons.components.counter.pattern');
     position: absolute;
     top: 0;
@@ -85,11 +86,11 @@ body {
     z-index: -1;
 }
 .Counter_base__big_19 .Counter_bg_74 {
-        border-radius: 11rem;
-    }
+    border-radius: 11rem;
+}
 .Counter_base__small_3b .Counter_bg_74 {
-        border-radius: 7rem;
-    }
+    border-radius: 7rem;
+}
 .Counter_value_3e {
     display: flex;
     padding: 0 4rem;
@@ -99,27 +100,27 @@ body {
     white-space: nowrap;
 }
 .Counter_base__big_19 .Counter_value_3e {
-        padding: 0 7rem;
-        font-size: 14rem;
-        line-height: 20rem;
-    }
+    padding: 0 7rem;
+    font-size: 14rem;
+    line-height: 20rem;
+}
 .Counter_base__small_3b .Counter_value_3e {
-        font-size: 9rem;
-        line-height: 12rem;
-    }
+    font-size: 9rem;
+    line-height: 12rem;
+}
 .Counter_value__text_d6 {
-        padding: 0 7rem;
-    }
+    padding: 0 7rem;
+}
 .Counter_base__big_19 .Counter_value__text_d6 {
-            padding: 0 10rem;
-        }
+    padding: 0 10rem;
+}
 .Counter_base__small_3b .Counter_value__text_d6 {
-            padding: 0 5rem;
-            font-size: 10rem;
-        }
+    padding: 0 5rem;
+    font-size: 10rem;
+}
 .Counter_base__pattern_71 .Counter_value_3e {
-        display: none;
-    }
+    display: none;
+}
 .Counter_plus_15 {
     position: relative;
     top: -1rem;
@@ -128,16 +129,16 @@ body {
     display: none;
 }
 .Counter_base__pattern_71 .Counter_pattern_83 {
-        display: block;
-        border-radius: 50%;
-        background-image: url('R.images.gui.maps.icons.components.counter.pattern');
-        opacity: .8;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
+    display: block;
+    border-radius: 50%;
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 @keyframes Counter_show_be {
     0% {
         transform: scale(0);
@@ -162,40 +163,40 @@ body {
     align-items: center;
     height: 32rem;
     padding: 0 32rem 1rem;
-    background-color: rgba(0,0,0, .3);
-    color: rgba(255,255,229, .4);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 229, 0.4);
     font-size: 14rem;
     position: relative;
     z-index: 0;
-    transition: color .16s ease-in-out;
+    transition: color 0.16s ease-in-out;
     cursor: pointer;
 }
 
-    .Tab_base_dd:hover {
-        color: #ffdaab;
-    }
+.Tab_base_dd:hover {
+    color: #ffdaab;
+}
 
-    .Tab_base__first_4a {
-        border-top-left-radius: 2rem;
-        border-bottom-left-radius: 2rem;
-    }
+.Tab_base__first_4a {
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
 
-    .Tab_base__last_96 {
-        border-top-right-radius: 2rem;
-        border-bottom-right-radius: 2rem;
-    }
+.Tab_base__last_96 {
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
 
-    .Tab_base__medium_ec {
-        height: 46rem;
-        padding-bottom: 2rem;
-        font-size: 16rem;
-    }
+.Tab_base__medium_ec {
+    height: 46rem;
+    padding-bottom: 2rem;
+    font-size: 16rem;
+}
 
-    .Tab_base__active_5d {
-        color: #ffe0b6;
-        cursor: default;
-        pointer-events: none;
-    }
+.Tab_base__active_5d {
+    color: #ffe0b6;
+    cursor: default;
+    pointer-events: none;
+}
 .Tab_divider_ca {
     width: 1rem;
     height: 100%;
@@ -204,11 +205,11 @@ body {
     position: absolute;
     top: 0;
     right: -1rem;
-    transition: opacity .16s ease-in-out;
+    transition: opacity 0.16s ease-in-out;
 }
 .Tab_divider__show_62 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .Tab_state_6c {
     opacity: 0;
     position: absolute;
@@ -217,18 +218,18 @@ body {
     bottom: 0;
     left: 0;
     z-index: -1;
-    transition: background-color .16s ease-in-out;
+    transition: background-color 0.16s ease-in-out;
     pointer-events: none;
 }
 .Tab_base_dd:hover .Tab_state_6c,
-    .Tab_base__active_5d .Tab_state_6c {
-        background-color: rgba(255,85,0, .06);
-        opacity: 1;
-    }
 .Tab_base__active_5d .Tab_state_6c {
-        border: 1rem solid rgba(255,85,0, .2);
-        opacity: 1;
-    }
+    background-color: rgba(255, 85, 0, 0.06);
+    opacity: 1;
+}
+.Tab_base__active_5d .Tab_state_6c {
+    border: 1rem solid rgba(255, 85, 0, 0.2);
+    opacity: 1;
+}
 .Tab_stateHighlight_1e {
     width: 337rem;
     height: 168rem;
@@ -238,11 +239,11 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: opacity .16s ease-in-out;
+    transition: opacity 0.16s ease-in-out;
 }
 .Tab_base__active_5d .Tab_stateHighlight_1e {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .Tab_stateBorder_64 {
     width: 1rem;
     background: url('R.images.gui.maps.icons.components.tabs.tab.border') 0 50% no-repeat;
@@ -250,17 +251,17 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
-    transition: opacity .16s ease-in-out;
+    transition: opacity 0.16s ease-in-out;
 }
 .Tab_base__active_5d .Tab_stateBorder_64 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .Tab_stateBorder__positionLeft_e7 {
-        left: -1rem;
-    }
+    left: -1rem;
+}
 .Tab_stateBorder__positionRight_db {
-        right: -1rem;
-    }
+    right: -1rem;
+}
 .Tab_counter_e1 {
     position: absolute;
     top: 0;
@@ -276,4 +277,3 @@ body {
 .Content_tabs_0f {
     margin-top: 20rem;
 }
-
