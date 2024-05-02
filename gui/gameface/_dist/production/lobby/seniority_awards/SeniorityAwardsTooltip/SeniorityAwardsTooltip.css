@@ -4,12 +4,12 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.atlases.components.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .App_base_7e {
     width: 420rem;
@@ -18,7 +18,13 @@
     overflow: hidden;
 }
 .App_section_e9 {
-    background: linear-gradient(90deg, transparent, rgba(201,201,182, .07) 37%, rgba(201,201,182, .07) 63%, transparent);
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(201, 201, 182, 0.07) 37%,
+        rgba(201, 201, 182, 0.07) 63%,
+        transparent
+    );
 }
 .App_separator_16 {
     width: 283rem;
@@ -26,7 +32,7 @@
     background: url('R.images.gui.maps.icons.seniorityAwards.tooltips.separator') 50% / contain no-repeat;
 }
 .App_subtitle_dd {
-    color: #7AB300;
+    color: #7ab300;
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
@@ -47,7 +53,7 @@
     position: relative;
 }
 .Description_rank_c5 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
@@ -59,7 +65,7 @@
     left: 0;
 }
 .Description_segment_b3 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
@@ -87,7 +93,7 @@
     width: 398rem;
     height: 269rem;
     background: url('R.images.gui.maps.icons.seniorityAwards.tooltips.effect') bottom / cover no-repeat;
-    opacity: .5;
+    opacity: 0.5;
     mix-blend-mode: overlay;
     position: absolute;
     top: 0;
@@ -109,8 +115,8 @@
     background: url('R.images.gui.maps.icons.seniorityAwards.tooltips.award_1') no-repeat 50% / contain;
 }
 .Header_image__second_c8 {
-        margin-left: 15rem;
-    }
+    margin-left: 15rem;
+}
 .Header_imageContainer_fc {
     position: absolute;
     top: 0;
@@ -118,19 +124,19 @@
     transform: translate(180rem, 33rem);
 }
 .Header_imageContainer__double_b7 {
-        display: flex;
-        transform: translate(135rem, 33rem);
-    }
+    display: flex;
+    transform: translate(135rem, 33rem);
+}
 .Header_topBlock_73 {
     width: 100%;
     height: 120rem;
     margin-bottom: 12rem;
 }
 .Header_topBlock__indent_03 {
-        height: 140rem;
-    }
+    height: 140rem;
+}
 .Header_title_ad {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
@@ -144,4 +150,3 @@
     left: 50%;
     transform: translateX(-50%);
 }
-

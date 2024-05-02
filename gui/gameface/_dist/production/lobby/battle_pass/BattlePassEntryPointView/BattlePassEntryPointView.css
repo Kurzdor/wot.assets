@@ -13,7 +13,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(255,185,50, .5);
+    background-color: rgba(255, 185, 50, 0.5);
     overflow: hidden;
     animation: Blink_shadowAnimation_7c 2.3s ease-out forwards;
     mask-size: contain;
@@ -31,7 +31,7 @@
 
 .Blink_blink_68 {
     height: 160rem;
-    background-image: linear-gradient(0deg, transparent, rgba(255,255,255, .2));
+    background-image: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.2));
     filter: brightness(200%);
 }
 
@@ -41,15 +41,15 @@
     }
 
     50% {
-        opacity: .15;
+        opacity: 0.15;
     }
 
     60% {
-        opacity: .3;
+        opacity: 0.3;
     }
 
     70% {
-        opacity: .15;
+        opacity: 0.15;
     }
 
     100% {
@@ -184,20 +184,20 @@
     top: 62rem;
 }
 .Emblem_progress__small_42 {
-        width: 40rem;
-        top: 50rem;
-    }
+    width: 40rem;
+    top: 50rem;
+}
 .Emblem_progress__completed_69 {
     animation-name: Emblem_hideProgress_b4;
-    animation-duration: .1s;
+    animation-duration: 0.1s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    animation-delay: .6s;
+    animation-delay: 0.6s;
     animation-iteration-count: 1;
-    }
+}
 .Emblem_progress__hidden_6d {
-        display: none;
-    }
+    display: none;
+}
 .Emblem_image_dc {
     display: flex;
     justify-content: center;
@@ -209,17 +209,17 @@
     position: relative;
 }
 .Emblem_image__micro_aa {
-        width: 60rem;
-        height: 60rem;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
+    width: 60rem;
+    height: 60rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 .Emblem_image__small_ce {
-        width: 100rem;
-        height: 100rem;
-        padding-top: 12rem;
-        padding-bottom: 57rem;
-    }
+    width: 100rem;
+    height: 100rem;
+    padding-top: 12rem;
+    padding-bottom: 57rem;
+}
 .Emblem_extra_d4 {
     display: flex;
     justify-content: center;
@@ -234,15 +234,15 @@
     transform: translate(-50%, -50%);
 }
 .Emblem_extra__micro_f7 {
-        width: 60rem;
-        height: 60rem;
-        top: 24rem;
-    }
+    width: 60rem;
+    height: 60rem;
+    top: 24rem;
+}
 .Emblem_extra__small_28 {
-        width: 100rem;
-        height: 100rem;
-        top: 40rem;
-    }
+    width: 100rem;
+    height: 100rem;
+    top: 40rem;
+}
 
 @keyframes Label_hideLevel_61 {
     0% {
@@ -370,7 +370,7 @@
 @keyframes Label_textAppearance_31 {
     from {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     to {
@@ -388,31 +388,31 @@
     position: relative;
 }
 .Label_textWithBlend__show_fa {
-        opacity: 0;
+    opacity: 0;
     animation-name: Label_show_69;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: .3s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
+    animation-delay: 0.3s;
     animation-iteration-count: 1;
-    }
+}
 .Label_textWithBlend__new_4a {
-        opacity: 0;
+    opacity: 0;
     animation-name: Label_show_69;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: .8s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
+    animation-delay: 0.8s;
     animation-iteration-count: 1;
-    }
+}
 .Label_textWithBlend__hide_f1 {
     animation-name: Label_hide_33;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.6, .04, .98, .34);
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
     animation-delay: 0s;
     animation-iteration-count: 1;
-    }
+}
 .Label_textMask_7f {
     width: 100%;
     height: 100%;
@@ -423,106 +423,109 @@
     position: absolute;
 }
 .Label_textMask__gold_71 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.font_texture_gold');
-    }
+    background-image: url('R.images.gui.maps.icons.battlePass.logo.font_texture_gold');
+}
 .Label_textMask__goldContrast_05 {
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.font_texture_gold_contrast');
-    }
+    background-image: url('R.images.gui.maps.icons.battlePass.logo.font_texture_gold_contrast');
+}
 .Label_textMask__animated_38 {
     opacity: 0;
     animation-name: Label_maskAppearance_26;
-    animation-duration: .1s;
+    animation-duration: 0.1s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-delay: 1.3s;
     animation-iteration-count: 1;
-    }
+}
 .Label_textMask__micro_37 {
-        height: 19rem;
-    }
+    height: 19rem;
+}
 .Label_textMask__small_54 {
-        height: 36rem;
-    }
+    height: 36rem;
+}
 .Label_textMask__medium_eb {
-        height: 47rem;
-    }
+    height: 47rem;
+}
 .Label_textMask__large_0a {
-        height: 69rem;
-    }
+    height: 69rem;
+}
 .Label_textMask__extraLarge_4c {
-        height: 83rem;
-        background-position: 50% 9rem;
-    }
+    height: 83rem;
+    background-position: 50% 9rem;
+}
 .Label_text_67 {
     display: flex;
     font-size: 42rem;
     font-weight: 700;
 }
 .Label_text__micro_a4 {
-        font-size: 17rem;
-    }
+    font-size: 17rem;
+}
 .Label_text__small_e0 {
-        font-size: 32rem;
-    }
+    font-size: 32rem;
+}
 .Label_text__large_65 {
-        font-size: 60rem;
-    }
+    font-size: 60rem;
+}
 .Label_text__extraLarge_22 {
-        font-size: 75rem;
-    }
+    font-size: 75rem;
+}
 .Label_text__blended_67 {
-        background: #000;
-        color: #fff;
-    }
+    background: #000;
+    color: #fff;
+}
 .Label_text__filtered_86 {
-        color: #000;
-        text-shadow: 0 1rem 0 #000, 0 4rem 10rem #000, 0 -1rem 2rem #ff9d7266;
-        position: absolute;
-    }
+    color: #000;
+    text-shadow:
+        0 1rem 0 #000,
+        0 4rem 10rem #000,
+        0 -1rem 2rem #ff9d7266;
+    position: absolute;
+}
 .Label_text__rewardScreen_68 {
     opacity: 0;
     mix-blend-mode: normal;
     animation-name: Label_textAppearance_31;
-    animation-duration: .1s;
+    animation-duration: 0.1s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-delay: 1.2s;
     animation-iteration-count: 1;
-    }
+}
 .Label_text__show_95 {
-        opacity: 0;
+    opacity: 0;
     animation-name: Label_show_69;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: .3s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
+    animation-delay: 0.3s;
     animation-iteration-count: 1;
-    }
+}
 .Label_text__hide_37 {
     animation-name: Label_hide_33;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.6, .04, .98, .34);
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
     animation-delay: 0s;
     animation-iteration-count: 1;
-    }
+}
 .Label_text__hideWithDelay_53 {
     animation-name: Label_hide_33;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.6, .04, .98, .34);
-    animation-delay: .8s;
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+    animation-delay: 0.8s;
     animation-iteration-count: 1;
-    }
+}
 .Label_text__new_a0 {
-        opacity: 0;
+    opacity: 0;
     animation-name: Label_show_69;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: .8s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
+    animation-delay: 0.8s;
     animation-iteration-count: 1;
-    }
+}
 
 @keyframes EmblemLabels_hideLevel_be {
     0% {
@@ -625,114 +628,114 @@
     top: 18rem;
 }
 .EmblemLabels_label__small_a3 {
-        top: 12rem;
-    }
+    top: 12rem;
+}
 .EmblemLabels_label__micro_4b {
-        top: 8rem;
-    }
+    top: 8rem;
+}
 .EmblemLabels_label__hasProgress_26 {
-        top: 12rem;
-    }
-.EmblemLabels_label__hasProgress_26[lang=ja],
-        .EmblemLabels_label__hasProgress_26[lang=zh_sg],
-        .EmblemLabels_label__hasProgress_26[lang=zh_cn],
-        .EmblemLabels_label__hasProgress_26[lang=zh_tw] {
-            top: 15rem;
-        }
-.EmblemLabels_label__hasProgress_26[lang=ko] {
-            top: 19rem;
-        }
+    top: 12rem;
+}
+.EmblemLabels_label__hasProgress_26[lang='ja'],
+.EmblemLabels_label__hasProgress_26[lang='zh_sg'],
+.EmblemLabels_label__hasProgress_26[lang='zh_cn'],
+.EmblemLabels_label__hasProgress_26[lang='zh_tw'] {
+    top: 15rem;
+}
+.EmblemLabels_label__hasProgress_26[lang='ko'] {
+    top: 19rem;
+}
 .EmblemLabels_label__hasProgressProgression_77 {
-            top: 12rem;
-        }
-.EmblemLabels_label__hasProgressProgression_77[lang=ja],
-            .EmblemLabels_label__hasProgressProgression_77[lang=zh_sg],
-            .EmblemLabels_label__hasProgressProgression_77[lang=zh_cn],
-            .EmblemLabels_label__hasProgressProgression_77[lang=zh_tw] {
-                top: 20rem;
-            }
-.EmblemLabels_label__hasProgressProgression_77[lang=ko] {
-                top: 20rem;
-            }
+    top: 12rem;
+}
+.EmblemLabels_label__hasProgressProgression_77[lang='ja'],
+.EmblemLabels_label__hasProgressProgression_77[lang='zh_sg'],
+.EmblemLabels_label__hasProgressProgression_77[lang='zh_cn'],
+.EmblemLabels_label__hasProgressProgression_77[lang='zh_tw'] {
+    top: 20rem;
+}
+.EmblemLabels_label__hasProgressProgression_77[lang='ko'] {
+    top: 20rem;
+}
 .EmblemLabels_label__hasProgressSmall_c1 {
-            top: 10rem;
-        }
-.EmblemLabels_label__hasProgressSmall_c1[lang=ja],
-            .EmblemLabels_label__hasProgressSmall_c1[lang=zh_tw],
-            .EmblemLabels_label__hasProgressSmall_c1[lang=zh_sg],
-            .EmblemLabels_label__hasProgressSmall_c1[lang=zh_cn] {
-                top: 11rem;
-            }
-.EmblemLabels_label__hasProgressSmall_c1[lang=ko] {
-                top: 15rem;
-            }
+    top: 10rem;
+}
+.EmblemLabels_label__hasProgressSmall_c1[lang='ja'],
+.EmblemLabels_label__hasProgressSmall_c1[lang='zh_tw'],
+.EmblemLabels_label__hasProgressSmall_c1[lang='zh_sg'],
+.EmblemLabels_label__hasProgressSmall_c1[lang='zh_cn'] {
+    top: 11rem;
+}
+.EmblemLabels_label__hasProgressSmall_c1[lang='ko'] {
+    top: 15rem;
+}
 .EmblemLabels_label__show_3d {
     animation-name: EmblemLabels_showLevel_04;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: .3s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
+    animation-delay: 0.3s;
     animation-iteration-count: 1;
-    }
+}
 .EmblemLabels_label__showSmall_7e {
     animation-name: EmblemLabels_showLevelSmall_2f;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: .3s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
+    animation-delay: 0.3s;
     animation-iteration-count: 1;
-    }
+}
 .EmblemLabels_label__hide_28 {
     animation-name: EmblemLabels_hideLevel_be;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.6, .04, .98, .34);
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
     animation-delay: 0s;
     animation-iteration-count: 1;
-    }
+}
 .EmblemLabels_label_hideSmall_65 {
     animation-name: EmblemLabels_hideLevelSmall_c1;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.6, .04, .98, .34);
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
     animation-delay: 0s;
     animation-iteration-count: 1;
-    }
+}
 .EmblemLabels_label__hideWithDelay_68 {
     animation-name: EmblemLabels_hideLevel_be;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.6, .04, .98, .34);
-    animation-delay: .8s;
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+    animation-delay: 0.8s;
     animation-iteration-count: 1;
-    }
+}
 .EmblemLabels_label__hideWithDelaySmall_36 {
     animation-name: EmblemLabels_hideLevelSmall_c1;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.6, .04, .98, .34);
-    animation-delay: .8s;
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+    animation-delay: 0.8s;
     animation-iteration-count: 1;
-    }
+}
 .EmblemLabels_label__new_d7 {
     animation-name: EmblemLabels_showLevel_04;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: .8s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
+    animation-delay: 0.8s;
     animation-iteration-count: 1;
-    }
+}
 .EmblemLabels_label__newSmall_c1 {
     animation-name: EmblemLabels_showLevelSmall_2f;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: .8s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
+    animation-delay: 0.8s;
     animation-iteration-count: 1;
-    }
+}
 .EmblemLabels_label__disabled_b6 {
-        display: none;
-    }
+    display: none;
+}
 .EmblemLabels_icon_40 {
     width: 70rem;
     height: 70rem;
@@ -740,34 +743,34 @@
     background: no-repeat center / contain;
 }
 .EmblemLabels_icon__small_f3 {
-        width: 50rem;
-        height: 50rem;
-        margin-top: -5rem;
-    }
+    width: 50rem;
+    height: 50rem;
+    margin-top: -5rem;
+}
 .EmblemLabels_icon__micro_cf {
-        width: 30rem;
-        height: 30rem;
-        margin-top: 3.5rem;
-    }
+    width: 30rem;
+    height: 30rem;
+    margin-top: 3.5rem;
+}
 .EmblemLabels_icon__animated_09 {
     animation-name: EmblemLabels_showIcon_d3;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.6, .04, .98, .34);
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
     animation-delay: 1s;
     animation-iteration-count: 1;
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .EmblemLabels_icon__animatedSmall_e4,
-    .EmblemLabels_icon__animatedMicro_10 {
+.EmblemLabels_icon__animatedMicro_10 {
     animation-name: EmblemLabels_showIconSmall_cb;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.6, .04, .98, .34);
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
     animation-delay: 1s;
     animation-iteration-count: 1;
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -780,8 +783,8 @@
     position: relative;
 }
 .ProgressBar_base__small_df {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_background_51 {
     width: 100%;
     max-width: 8001px;
@@ -795,13 +798,12 @@
     left: 0;
 }
 .ProgressBar_background__small_46 {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_lineWrapper_6a {
     display: flex;
     flex: 1;
 }
-
 
 .ProgressBarBlink_base_24 {
     width: 60rem;
@@ -816,11 +818,11 @@
     pointer-events: none;
 }
 
-    .ProgressBarBlink_base__small_0f {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+.ProgressBarBlink_base__small_0f {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -832,18 +834,18 @@
     height: 100%;
     background-color: var(--progress-line-base);
     position: relative;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressLineImpose_base__disabled_cc {
-        background-color: var(--progress-line-disabled);
-    }
+    background-color: var(--progress-line-disabled);
+}
 .ProgressLineImpose_base__finished_d4 {
-        background-color: var(--progress-line-finished);
-    }
+    background-color: var(--progress-line-finished);
+}
 .ProgressLineImpose_base__withoutBounce_56 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressLineImpose_pattern_1c {
     max-width: 8001px;
     background-image: var(--progress-pattern-base);
@@ -857,19 +859,19 @@
     left: 1rem;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-disabled);
-        left: 0;
-    }
+    background-image: var(--progress-pattern-disabled);
+    left: 0;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-finished);
-    }
+    background-image: var(--progress-pattern-finished);
+}
 .ProgressLineImpose_gradient_35 {
     max-width: 8001px;
-    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75));
     mix-blend-mode: overlay;
     position: absolute;
     top: 1rem;
@@ -878,15 +880,15 @@
     left: 0;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
-        display: none;
-    }
+    display: none;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
-        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
-    }
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5));
+}
 .ProgressLineImpose_glow_a5 {
     width: 60rem;
     max-width: 8001px;
@@ -901,17 +903,17 @@
     pointer-events: none;
 }
 .ProgressLineImpose_glow__left_d8 {
-        left: 1rem;
-    }
+    left: 1rem;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
-    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
-        display: none;
-    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+    display: none;
+}
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -933,7 +935,7 @@
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1), cubic-bezier(0.21, 0.61, 0.35, 1);
     transition-property: width, transform;
 }
 
@@ -947,12 +949,12 @@
     height: 100%;
     position: absolute;
     top: 0;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressBarDeltaGrow_glow_68 {
     width: 0;
     max-width: 8001px;
@@ -962,12 +964,12 @@
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 
 @keyframes EmblemProgressBar_hideLevel_1e {
     0% {
@@ -1074,33 +1076,33 @@
     top: 63rem;
 }
 .EmblemProgressBar_base__small_6c {
-        width: 40rem;
-        top: 49rem;
-    }
+    width: 40rem;
+    top: 49rem;
+}
 .EmblemProgressBar_base__completed_6d {
     animation-name: EmblemProgressBar_hideProgress_18;
-    animation-duration: .1s;
+    animation-duration: 0.1s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    animation-delay: .6s;
+    animation-delay: 0.6s;
     animation-iteration-count: 1;
-    }
+}
 .EmblemProgressBar_base__completePostProgression_20 {
     animation-name: EmblemProgressBar_hideProgress_18;
-    animation-duration: .3s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-delay: 0s;
     animation-iteration-count: 1;
-    }
+}
 .EmblemProgressBar_base__hidden_8b {
-        display: none;
-    }
+    display: none;
+}
 
 @keyframes StateNormal_fadeInWithScale_f8 {
     0% {
         opacity: 0;
-        transform: scaleY(.75);
+        transform: scaleY(0.75);
     }
 
     50% {
@@ -1135,12 +1137,12 @@
     }
 
     to {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 }
 @keyframes StateNormal_wrapperOut_a8 {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -1284,7 +1286,7 @@
     }
 
     30% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     100% {
@@ -1319,7 +1321,7 @@
     }
 
     16% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
         transform: scaleY(1.05);
     }
 
@@ -1339,7 +1341,7 @@
 }
 @keyframes StateNormal_flagLevelUpLightOut_dd {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -1357,7 +1359,7 @@
     }
 
     38% {
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -1376,7 +1378,7 @@
 
     38% {
         opacity: 0;
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -1422,12 +1424,12 @@
 @keyframes StateNormal_lightBuyBP_04 {
     0% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     16% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     37% {
@@ -1437,13 +1439,13 @@
 
     100% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateNormal_lightAttention_ec {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -1454,7 +1456,7 @@
 @keyframes StateNormal_lightAttentionSmall_1f {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -1475,12 +1477,12 @@
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateNormal_lightChapterNotChosenSmall_2d {
@@ -1491,12 +1493,12 @@
 
     10% {
         opacity: 1;
-        transform: scale(.5);
+        transform: scale(0.5);
     }
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
@@ -1514,17 +1516,17 @@
 .StateNormal_flag_f8 {
     width: 100rem;
     height: 120rem;
-    background: left top / 100%  no-repeat;
+    background: left top / 100% no-repeat;
     position: absolute;
     top: -1rem;
     z-index: -1;
     transform-origin: top;
 }
 .StateNormal_base__medium_e3 .StateNormal_flag_f8 {
-        width: 142rem;
-        height: 160rem;
-        top: -6rem;
-    }
+    width: 142rem;
+    height: 160rem;
+    top: -6rem;
+}
 .StateNormal_emblem_0f {
     display: flex;
     margin-top: 4rem;
@@ -1538,11 +1540,12 @@
     padding: 0 4rem 2rem;
     border: 1rem solid #fe4e0f;
     border-radius: 7rem;
-    box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
-            0 0 6rem rgba(254,103,0, .2),
-            0 0 12rem 4rem rgba(249,0,0, .3);
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 6rem rgba(254, 103, 0, 0.2),
+        0 0 12rem 4rem rgba(249, 0, 0, 0.3);
     background-image: url('R.images.gui.maps.icons.components.counter.pattern');
-    color: #FEFEEC;
+    color: #fefeec;
     font-size: 11rem;
     line-height: 13rem;
     position: absolute;
@@ -1550,16 +1553,16 @@
     right: 6rem;
     z-index: 1;
 }
-.StateNormal_counter_cd[lang=ja] {
-        padding-top: 2rem;
-    }
-.StateNormal_counter_cd[lang=ko] {
-        padding-top: 4rem;
-    }
+.StateNormal_counter_cd[lang='ja'] {
+    padding-top: 2rem;
+}
+.StateNormal_counter_cd[lang='ko'] {
+    padding-top: 4rem;
+}
 .StateNormal_base__medium_e3 .StateNormal_counter_cd {
-        top: 14rem;
-        right: 13rem;
-    }
+    top: 14rem;
+    right: 13rem;
+}
 .StateNormal_chapterLogoIcon_26 {
     width: 40rem;
     height: 40rem;
@@ -1568,34 +1571,37 @@
     bottom: 20rem;
 }
 .StateNormal_base__medium_e3 .StateNormal_chapterLogoIcon_26 {
-        bottom: 25rem;
-    }
+    bottom: 25rem;
+}
 .StateNormal_base__medium_e3 .StateNormal_chapterLogoIcon_26,
-    .StateNormal_base__smallX2_07 .StateNormal_chapterLogoIcon_26 {
-        width: 50rem;
-        height: 50rem;
-    }
 .StateNormal_base__smallX2_07 .StateNormal_chapterLogoIcon_26 {
-        bottom: -10rem;
-        transform: translateY(-50rem);
-    }
+    width: 50rem;
+    height: 50rem;
+}
+.StateNormal_base__smallX2_07 .StateNormal_chapterLogoIcon_26 {
+    bottom: -10rem;
+    transform: translateY(-50rem);
+}
 .StateNormal_freePoints_37 {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 30rem;
     font-weight: 700;
-    text-shadow: 0 0 15px #e52, 0 0 8px #ff2a00, 0 0 4px rgba(255, 127, 0, .25);
+    text-shadow:
+        0 0 15px #e52,
+        0 0 8px #ff2a00,
+        0 0 4px rgba(255, 127, 0, 0.25);
     position: absolute;
     bottom: 30rem;
 }
 .StateNormal_base__smallX2_07 .StateNormal_freePoints_37 {
-        bottom: -5rem;
-        transform: translateY(-50rem);
-    }
+    bottom: -5rem;
+    transform: translateY(-50rem);
+}
 
 @keyframes StateAttention_fadeInWithScale_b7 {
     0% {
         opacity: 0;
-        transform: scaleY(.75);
+        transform: scaleY(0.75);
     }
 
     50% {
@@ -1630,12 +1636,12 @@
     }
 
     to {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 }
 @keyframes StateAttention_wrapperOut_79 {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -1779,7 +1785,7 @@
     }
 
     30% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     100% {
@@ -1814,7 +1820,7 @@
     }
 
     16% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
         transform: scaleY(1.05);
     }
 
@@ -1834,7 +1840,7 @@
 }
 @keyframes StateAttention_flagLevelUpLightOut_14 {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -1852,7 +1858,7 @@
     }
 
     38% {
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -1871,7 +1877,7 @@
 
     38% {
         opacity: 0;
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -1917,12 +1923,12 @@
 @keyframes StateAttention_lightBuyBP_e7 {
     0% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     16% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     37% {
@@ -1932,13 +1938,13 @@
 
     100% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateAttention_lightAttention_29 {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -1949,7 +1955,7 @@
 @keyframes StateAttention_lightAttentionSmall_9e {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -1970,12 +1976,12 @@
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateAttention_lightChapterNotChosenSmall_4d {
@@ -1986,12 +1992,12 @@
 
     10% {
         opacity: 1;
-        transform: scale(.5);
+        transform: scale(0.5);
     }
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
@@ -2011,7 +2017,7 @@
     animation-name: StateAttention_emblemAttention_7a;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 1s;
     animation-iteration-count: 1;
 }
@@ -2019,7 +2025,7 @@
     animation-name: StateAttention_emblemCopyAttention_ad;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 1s;
     animation-iteration-count: 1;
     width: 100rem;
@@ -2030,15 +2036,15 @@
     top: 10rem;
 }
 .mediaMedium .StateAttention_emblemCopy_17 {
-        width: 130rem;
-        height: 130rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.logo.Main_BP');
+    width: 130rem;
+    height: 130rem;
+    background-image: url('R.images.gui.maps.icons.battlePass.logo.Main_BP');
 }
 
 @keyframes StateBuyBP_fadeInWithScale_b4 {
     0% {
         opacity: 0;
-        transform: scaleY(.75);
+        transform: scaleY(0.75);
     }
 
     50% {
@@ -2073,12 +2079,12 @@
     }
 
     to {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 }
 @keyframes StateBuyBP_wrapperOut_56 {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -2222,7 +2228,7 @@
     }
 
     30% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     100% {
@@ -2257,7 +2263,7 @@
     }
 
     16% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
         transform: scaleY(1.05);
     }
 
@@ -2277,7 +2283,7 @@
 }
 @keyframes StateBuyBP_flagLevelUpLightOut_96 {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -2295,7 +2301,7 @@
     }
 
     38% {
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -2314,7 +2320,7 @@
 
     38% {
         opacity: 0;
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -2360,12 +2366,12 @@
 @keyframes StateBuyBP_lightBuyBP_18 {
     0% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     16% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     37% {
@@ -2375,13 +2381,13 @@
 
     100% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateBuyBP_lightAttention_6f {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -2392,7 +2398,7 @@
 @keyframes StateBuyBP_lightAttentionSmall_e3 {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -2413,12 +2419,12 @@
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateBuyBP_lightChapterNotChosenSmall_13 {
@@ -2429,12 +2435,12 @@
 
     10% {
         opacity: 1;
-        transform: scale(.5);
+        transform: scale(0.5);
     }
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
@@ -2453,7 +2459,7 @@
     animation-name: StateBuyBP_flagBuyBPIn_cc;
     animation-duration: 1.3s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
@@ -2461,7 +2467,7 @@
     animation-name: StateBuyBP_emblemBuyBP_13;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.44, .05, .55, .95);
+    animation-timing-function: cubic-bezier(0.44, 0.05, 0.55, 0.95);
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
@@ -2469,7 +2475,7 @@
 @keyframes StateChapterNotChosen_fadeInWithScale_b1 {
     0% {
         opacity: 0;
-        transform: scaleY(.75);
+        transform: scaleY(0.75);
     }
 
     50% {
@@ -2504,12 +2510,12 @@
     }
 
     to {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 }
 @keyframes StateChapterNotChosen_wrapperOut_32 {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -2653,7 +2659,7 @@
     }
 
     30% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     100% {
@@ -2688,7 +2694,7 @@
     }
 
     16% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
         transform: scaleY(1.05);
     }
 
@@ -2708,7 +2714,7 @@
 }
 @keyframes StateChapterNotChosen_flagLevelUpLightOut_05 {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -2726,7 +2732,7 @@
     }
 
     38% {
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -2745,7 +2751,7 @@
 
     38% {
         opacity: 0;
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -2791,12 +2797,12 @@
 @keyframes StateChapterNotChosen_lightBuyBP_a8 {
     0% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     16% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     37% {
@@ -2806,13 +2812,13 @@
 
     100% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateChapterNotChosen_lightAttention_d9 {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -2823,7 +2829,7 @@
 @keyframes StateChapterNotChosen_lightAttentionSmall_23 {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -2844,12 +2850,12 @@
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateChapterNotChosen_lightChapterNotChosenSmall_3f {
@@ -2860,12 +2866,12 @@
 
     10% {
         opacity: 1;
-        transform: scale(.5);
+        transform: scale(0.5);
     }
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
@@ -2887,7 +2893,7 @@
     animation-name: StateChapterNotChosen_emblemBuyBP_cc;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.44, .05, .55, .95);
+    animation-timing-function: cubic-bezier(0.44, 0.05, 0.55, 0.95);
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
@@ -2895,7 +2901,7 @@
 @keyframes StateComplete_fadeInWithScale_31 {
     0% {
         opacity: 0;
-        transform: scaleY(.75);
+        transform: scaleY(0.75);
     }
 
     50% {
@@ -2930,12 +2936,12 @@
     }
 
     to {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 }
 @keyframes StateComplete_wrapperOut_4b {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -3079,7 +3085,7 @@
     }
 
     30% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     100% {
@@ -3114,7 +3120,7 @@
     }
 
     16% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
         transform: scaleY(1.05);
     }
 
@@ -3134,7 +3140,7 @@
 }
 @keyframes StateComplete_flagLevelUpLightOut_04 {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -3152,7 +3158,7 @@
     }
 
     38% {
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -3171,7 +3177,7 @@
 
     38% {
         opacity: 0;
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -3217,12 +3223,12 @@
 @keyframes StateComplete_lightBuyBP_86 {
     0% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     16% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     37% {
@@ -3232,13 +3238,13 @@
 
     100% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateComplete_lightAttention_8e {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -3249,7 +3255,7 @@
 @keyframes StateComplete_lightAttentionSmall_03 {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -3270,12 +3276,12 @@
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateComplete_lightChapterNotChosenSmall_d6 {
@@ -3286,12 +3292,12 @@
 
     10% {
         opacity: 1;
-        transform: scale(.5);
+        transform: scale(0.5);
     }
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
@@ -3308,26 +3314,26 @@
 }
 .StateComplete_flag_4a {
     animation-name: StateComplete_flagLevelUp_f2;
-    animation-duration: .9s;
+    animation-duration: 0.9s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: .3s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
+    animation-delay: 0.3s;
     animation-iteration-count: 1;
     top: -5rem;
 }
 .StateComplete_emblem_0e {
     animation-name: StateComplete_emblemLevelUp_86;
-    animation-duration: .9s;
+    animation-duration: 0.9s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: .2s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
+    animation-delay: 0.2s;
     animation-iteration-count: 1;
 }
 
 @keyframes StateLevelUp_fadeInWithScale_0b {
     0% {
         opacity: 0;
-        transform: scaleY(.75);
+        transform: scaleY(0.75);
     }
 
     50% {
@@ -3362,12 +3368,12 @@
     }
 
     to {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 }
 @keyframes StateLevelUp_wrapperOut_03 {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -3511,7 +3517,7 @@
     }
 
     30% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     100% {
@@ -3546,7 +3552,7 @@
     }
 
     16% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
         transform: scaleY(1.05);
     }
 
@@ -3566,7 +3572,7 @@
 }
 @keyframes StateLevelUp_flagLevelUpLightOut_25 {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -3584,7 +3590,7 @@
     }
 
     38% {
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -3603,7 +3609,7 @@
 
     38% {
         opacity: 0;
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -3649,12 +3655,12 @@
 @keyframes StateLevelUp_lightBuyBP_86 {
     0% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     16% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     37% {
@@ -3664,13 +3670,13 @@
 
     100% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateLevelUp_lightAttention_64 {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -3681,7 +3687,7 @@
 @keyframes StateLevelUp_lightAttentionSmall_d2 {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -3702,12 +3708,12 @@
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateLevelUp_lightChapterNotChosenSmall_08 {
@@ -3718,12 +3724,12 @@
 
     10% {
         opacity: 1;
-        transform: scale(.5);
+        transform: scale(0.5);
     }
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
@@ -3740,25 +3746,25 @@
 }
 .StateLevelUp_flag_8f {
     animation-name: StateLevelUp_flagLevelUp_fa;
-    animation-duration: .9s;
+    animation-duration: 0.9s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: .3s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
+    animation-delay: 0.3s;
     animation-iteration-count: 1;
 }
 .StateLevelUp_emblem_fe {
     animation-name: StateLevelUp_emblemLevelUp_f4;
-    animation-duration: .9s;
+    animation-duration: 0.9s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
-    animation-delay: .2s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
+    animation-delay: 0.2s;
     animation-iteration-count: 1;
 }
 
 @keyframes StateMouseOut_fadeInWithScale_6c {
     0% {
         opacity: 0;
-        transform: scaleY(.75);
+        transform: scaleY(0.75);
     }
 
     50% {
@@ -3793,12 +3799,12 @@
     }
 
     to {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 }
 @keyframes StateMouseOut_wrapperOut_90 {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -3942,7 +3948,7 @@
     }
 
     30% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     100% {
@@ -3977,7 +3983,7 @@
     }
 
     16% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
         transform: scaleY(1.05);
     }
 
@@ -3997,7 +4003,7 @@
 }
 @keyframes StateMouseOut_flagLevelUpLightOut_d1 {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -4015,7 +4021,7 @@
     }
 
     38% {
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -4034,7 +4040,7 @@
 
     38% {
         opacity: 0;
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -4080,12 +4086,12 @@
 @keyframes StateMouseOut_lightBuyBP_97 {
     0% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     16% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     37% {
@@ -4095,13 +4101,13 @@
 
     100% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateMouseOut_lightAttention_d1 {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -4112,7 +4118,7 @@
 @keyframes StateMouseOut_lightAttentionSmall_d2 {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -4133,12 +4139,12 @@
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateMouseOut_lightChapterNotChosenSmall_a7 {
@@ -4149,12 +4155,12 @@
 
     10% {
         opacity: 1;
-        transform: scale(.5);
+        transform: scale(0.5);
     }
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
@@ -4169,73 +4175,73 @@
     height: 100%;
     position: relative;
     animation-name: StateMouseOut_wrapperOut_90;
-    animation-duration: .3s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
 .StateMouseOut_flag_b0 {
     animation-name: StateMouseOut_flagOut_f8;
-    animation-duration: .2s;
+    animation-duration: 0.2s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
 .StateMouseOut_emblem_cf {
     animation-name: StateMouseOut_emblemOut_ce;
-    animation-duration: .3s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
 .StateMouseOut_chapterLogoIcon_55 {
     animation-name: StateMouseOut_logoIconOutSmall_5a;
-    animation-duration: .3s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
 .StateMouseOut_base__medium_89 .StateMouseOut_chapterLogoIcon_55 {
     animation-name: StateMouseOut_logoIconOut_cd;
-    animation-duration: .3s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
-    }
+}
 .StateMouseOut_base__smallX2_e5 .StateMouseOut_chapterLogoIcon_55 {
     animation-name: StateMouseOut_logoSmallX2IconOut_d7;
-    animation-duration: .3s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
-    }
+}
 .StateMouseOut_freePoints_fb {
     animation-name: StateMouseOut_freePointsOut_d0;
-    animation-duration: .3s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
 .StateMouseOut_base__smallX2_e5 .StateMouseOut_freePoints_fb {
     animation-name: StateMouseOut_freePointsSmallX2Out_6c;
-    animation-duration: .3s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
-    }
+}
 
 @keyframes StateMouseOver_fadeInWithScale_65 {
     0% {
         opacity: 0;
-        transform: scaleY(.75);
+        transform: scaleY(0.75);
     }
 
     50% {
@@ -4270,12 +4276,12 @@
     }
 
     to {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 }
 @keyframes StateMouseOver_wrapperOut_ef {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -4419,7 +4425,7 @@
     }
 
     30% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     100% {
@@ -4454,7 +4460,7 @@
     }
 
     16% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
         transform: scaleY(1.05);
     }
 
@@ -4474,7 +4480,7 @@
 }
 @keyframes StateMouseOver_flagLevelUpLightOut_0b {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -4492,7 +4498,7 @@
     }
 
     38% {
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -4511,7 +4517,7 @@
 
     38% {
         opacity: 0;
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -4557,12 +4563,12 @@
 @keyframes StateMouseOver_lightBuyBP_42 {
     0% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     16% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     37% {
@@ -4572,13 +4578,13 @@
 
     100% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateMouseOver_lightAttention_5d {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -4589,7 +4595,7 @@
 @keyframes StateMouseOver_lightAttentionSmall_8a {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -4610,12 +4616,12 @@
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateMouseOver_lightChapterNotChosenSmall_4e {
@@ -4626,12 +4632,12 @@
 
     10% {
         opacity: 1;
-        transform: scale(.5);
+        transform: scale(0.5);
     }
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
@@ -4646,73 +4652,73 @@
     height: 100%;
     position: relative;
     animation-name: StateMouseOver_wrapperHover_3b;
-    animation-duration: .3s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
 .StateMouseOver_flag_34 {
     animation-name: StateMouseOver_flagHover_8e;
-    animation-duration: .3s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
 .StateMouseOver_emblem_aa {
     animation-name: StateMouseOver_emblemHover_a7;
-    animation-duration: .01s;
+    animation-duration: 0.01s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
 .StateMouseOver_chapterLogoIcon_a8 {
     animation-name: StateMouseOver_logoIconHoverSmall_2c;
-    animation-duration: .2s;
+    animation-duration: 0.2s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
 .StateMouseOver_base__medium_d1 .StateMouseOver_chapterLogoIcon_a8 {
     animation-name: StateMouseOver_logoIconHover_a1;
-    animation-duration: .2s;
+    animation-duration: 0.2s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
-    }
+}
 .StateMouseOver_base__smallX2_b2 .StateMouseOver_chapterLogoIcon_a8 {
     animation-name: StateMouseOver_logoSmallX2IconHover_f6;
-    animation-duration: .2s;
+    animation-duration: 0.2s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
-    }
+}
 .StateMouseOver_freePoints_ff {
     animation-name: StateMouseOver_freePointsHover_64;
-    animation-duration: .2s;
+    animation-duration: 0.2s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
 .StateMouseOver_base__smallX2_b2 .StateMouseOver_freePoints_ff {
     animation-name: StateMouseOver_freePointsSmallX2Hover_a0;
-    animation-duration: .2s;
+    animation-duration: 0.2s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
-    }
+}
 
 @keyframes StateNotTakenRewards_fadeInWithScale_a3 {
     0% {
         opacity: 0;
-        transform: scaleY(.75);
+        transform: scaleY(0.75);
     }
 
     50% {
@@ -4747,12 +4753,12 @@
     }
 
     to {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 }
 @keyframes StateNotTakenRewards_wrapperOut_6c {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -4896,7 +4902,7 @@
     }
 
     30% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     100% {
@@ -4931,7 +4937,7 @@
     }
 
     16% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
         transform: scaleY(1.05);
     }
 
@@ -4951,7 +4957,7 @@
 }
 @keyframes StateNotTakenRewards_flagLevelUpLightOut_16 {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -4969,7 +4975,7 @@
     }
 
     38% {
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -4988,7 +4994,7 @@
 
     38% {
         opacity: 0;
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -5034,12 +5040,12 @@
 @keyframes StateNotTakenRewards_lightBuyBP_ae {
     0% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     16% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     37% {
@@ -5049,13 +5055,13 @@
 
     100% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateNotTakenRewards_lightAttention_4b {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -5066,7 +5072,7 @@
 @keyframes StateNotTakenRewards_lightAttentionSmall_4c {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -5087,12 +5093,12 @@
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateNotTakenRewards_lightChapterNotChosenSmall_f1 {
@@ -5103,12 +5109,12 @@
 
     10% {
         opacity: 1;
-        transform: scale(.5);
+        transform: scale(0.5);
     }
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
@@ -5125,7 +5131,7 @@
 }
 .StateNotTakenRewards_counter_dd {
     animation-name: StateNotTakenRewards_fadeInWithScale_a3;
-    animation-duration: .6s;
+    animation-duration: 0.6s;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
     animation-delay: 0s;
@@ -5144,7 +5150,7 @@
 @keyframes StateShow_fadeInWithScale_ca {
     0% {
         opacity: 0;
-        transform: scaleY(.75);
+        transform: scaleY(0.75);
     }
 
     50% {
@@ -5179,12 +5185,12 @@
     }
 
     to {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 }
 @keyframes StateShow_wrapperOut_f5 {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -5328,7 +5334,7 @@
     }
 
     30% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     100% {
@@ -5363,7 +5369,7 @@
     }
 
     16% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
         transform: scaleY(1.05);
     }
 
@@ -5383,7 +5389,7 @@
 }
 @keyframes StateShow_flagLevelUpLightOut_8e {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -5401,7 +5407,7 @@
     }
 
     38% {
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -5420,7 +5426,7 @@
 
     38% {
         opacity: 0;
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -5466,12 +5472,12 @@
 @keyframes StateShow_lightBuyBP_de {
     0% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     16% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     37% {
@@ -5481,13 +5487,13 @@
 
     100% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateShow_lightAttention_ee {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -5498,7 +5504,7 @@
 @keyframes StateShow_lightAttentionSmall_2e {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -5519,12 +5525,12 @@
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateShow_lightChapterNotChosenSmall_f8 {
@@ -5535,12 +5541,12 @@
 
     10% {
         opacity: 1;
-        transform: scale(.5);
+        transform: scale(0.5);
     }
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
@@ -5557,29 +5563,29 @@
 }
 .StateShow_flag_31 {
     animation-name: StateShow_fadeInWithScale_ca;
-    animation-duration: .55s;
+    animation-duration: 0.55s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.44, .05, .55, .95);
+    animation-timing-function: cubic-bezier(0.44, 0.05, 0.55, 0.95);
     animation-delay: 0s;
     animation-iteration-count: 1;
     opacity: 0;
 }
 .StateShow_emblem_44 {
     animation-name: StateShow_slideUp_f3;
-    animation-duration: .45s;
+    animation-duration: 0.45s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.44, .05, .55, .95);
-    animation-delay: .1s;
+    animation-timing-function: cubic-bezier(0.44, 0.05, 0.55, 0.95);
+    animation-delay: 0.1s;
     animation-iteration-count: 1;
     opacity: 0;
 }
 .StateShow_chapterLogoIcon_66,
 .StateShow_freePoints_36 {
     animation-name: StateShow_slideUp_f3;
-    animation-duration: .45s;
+    animation-duration: 0.45s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.44, .05, .55, .95);
-    animation-delay: .1s;
+    animation-timing-function: cubic-bezier(0.44, 0.05, 0.55, 0.95);
+    animation-delay: 0.1s;
     animation-iteration-count: 1;
     opacity: 0;
 }
@@ -5587,7 +5593,7 @@
 @keyframes StateSwitchChapter_fadeInWithScale_2b {
     0% {
         opacity: 0;
-        transform: scaleY(.75);
+        transform: scaleY(0.75);
     }
 
     50% {
@@ -5622,12 +5628,12 @@
     }
 
     to {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 }
 @keyframes StateSwitchChapter_wrapperOut_e6 {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -5771,7 +5777,7 @@
     }
 
     30% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     100% {
@@ -5806,7 +5812,7 @@
     }
 
     16% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
         transform: scaleY(1.05);
     }
 
@@ -5826,7 +5832,7 @@
 }
 @keyframes StateSwitchChapter_flagLevelUpLightOut_b6 {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -5844,7 +5850,7 @@
     }
 
     38% {
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -5863,7 +5869,7 @@
 
     38% {
         opacity: 0;
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -5909,12 +5915,12 @@
 @keyframes StateSwitchChapter_lightBuyBP_19 {
     0% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     16% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     37% {
@@ -5924,13 +5930,13 @@
 
     100% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateSwitchChapter_lightAttention_2a {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -5941,7 +5947,7 @@
 @keyframes StateSwitchChapter_lightAttentionSmall_24 {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -5962,12 +5968,12 @@
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes StateSwitchChapter_lightChapterNotChosenSmall_c5 {
@@ -5978,12 +5984,12 @@
 
     10% {
         opacity: 1;
-        transform: scale(.5);
+        transform: scale(0.5);
     }
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
@@ -6003,16 +6009,16 @@
     animation-name: StateSwitchChapter_flagSwitchChapter_8a;
     animation-duration: 1.3s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.07, .82, .16, 1);
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.16, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
 .StateSwitchChapter_emblem_d5 {
     animation-name: StateSwitchChapter_slideUp_0d;
-    animation-duration: .45s;
+    animation-duration: 0.45s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.44, .05, .55, .95);
-    animation-delay: .1s;
+    animation-timing-function: cubic-bezier(0.44, 0.05, 0.55, 0.95);
+    animation-delay: 0.1s;
     animation-iteration-count: 1;
     opacity: 0;
 }
@@ -6020,7 +6026,7 @@
 @keyframes Content_fadeInWithScale_fc {
     0% {
         opacity: 0;
-        transform: scaleY(.75);
+        transform: scaleY(0.75);
     }
 
     50% {
@@ -6055,12 +6061,12 @@
     }
 
     to {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 }
 @keyframes Content_wrapperOut_d1 {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -6204,7 +6210,7 @@
     }
 
     30% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     100% {
@@ -6239,7 +6245,7 @@
     }
 
     16% {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
         transform: scaleY(1.05);
     }
 
@@ -6259,7 +6265,7 @@
 }
 @keyframes Content_flagLevelUpLightOut_fe {
     from {
-        filter: brightness(1.35) contrast(.75);
+        filter: brightness(1.35) contrast(0.75);
     }
 
     to {
@@ -6277,7 +6283,7 @@
     }
 
     38% {
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -6296,7 +6302,7 @@
 
     38% {
         opacity: 0;
-        transform: scaleY(.9);
+        transform: scaleY(0.9);
     }
 
     76% {
@@ -6342,12 +6348,12 @@
 @keyframes Content_lightBuyBP_d1 {
     0% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     16% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     37% {
@@ -6357,13 +6363,13 @@
 
     100% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes Content_lightAttention_aa {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -6374,7 +6380,7 @@
 @keyframes Content_lightAttentionSmall_80 {
     0% {
         opacity: 0;
-        transform: scale(.1);
+        transform: scale(0.1);
     }
 
     100% {
@@ -6395,12 +6401,12 @@
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 }
 @keyframes Content_lightChapterNotChosenSmall_12 {
@@ -6411,12 +6417,12 @@
 
     10% {
         opacity: 1;
-        transform: scale(.5);
+        transform: scale(0.5);
     }
 
     90% {
         opacity: 1;
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     100% {
@@ -6438,26 +6444,26 @@ body {
     width: 100rem;
     height: 135rem;
     position: relative;
-    transition: opacity .3s;
+    transition: opacity 0.3s;
     cursor: pointer;
 }
 .mediaMedium .Content_base_81 {
-        width: 142rem;
-        height: 175rem;
+    width: 142rem;
+    height: 175rem;
 }
 .Content_base__smallX2_95 {
-        height: 185rem;
-    }
+    height: 185rem;
+}
 .Content_base__disabled_76,
-    .Content_base__seasonWaiting_7c {
-        cursor: default;
-    }
-.Content_base__disabled_76 {
-        filter: saturate(.3) brightness(.7);
-    }
 .Content_base__seasonWaiting_7c {
-        filter: saturate(.7) brightness(.7);
-    }
+    cursor: default;
+}
+.Content_base__disabled_76 {
+    filter: saturate(0.3) brightness(0.7);
+}
+.Content_base__seasonWaiting_7c {
+    filter: saturate(0.7) brightness(0.7);
+}
 .Content_effects_0d {
     display: flex;
     width: 100%;
@@ -6465,24 +6471,24 @@ body {
     pointer-events: none;
 }
 .Content_effects__normal_cd {
-        filter: saturate(1) brightness(1);
-    }
+    filter: saturate(1) brightness(1);
+}
 .Content_effects__disabled_44 {
-        filter: saturate(.7) brightness(.7);
-    }
+    filter: saturate(0.7) brightness(0.7);
+}
 .Content_effects__seasonWaiting_4d {
-        filter: saturate(.7) brightness(.7);
-    }
+    filter: saturate(0.7) brightness(0.7);
+}
 .Content_componentWrapper_15 {
     display: flex;
     width: 100%;
     height: 100%;
     z-index: 1;
-    transition: opacity .4s;
+    transition: opacity 0.4s;
 }
 .Content_componentWrapper__hidden_7a {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .App_base_f0 {
     display: flex;
@@ -6493,19 +6499,19 @@ body {
 
 .App_light_08 {
     position: absolute;
-    transform: translateY(-20rem) scale(.75);
+    transform: translateY(-20rem) scale(0.75);
 }
 
 .mediaMedium .App_light_08 {
-        transform: translateY(-20rem) scale(1);
+    transform: translateY(-20rem) scale(1);
 }
 
 .App_light__chapterNotChosen_ff {
-        animation: App_lightChapterNotChosenSmall_d9 cubic-bezier(.6, .04, .98, .34) .8s;
-    }
+    animation: App_lightChapterNotChosenSmall_d9 cubic-bezier(0.6, 0.04, 0.98, 0.34) 0.8s;
+}
 
 .mediaMedium .App_light__chapterNotChosen_ff {
-            animation: App_lightChapterNotChosen_3d cubic-bezier(.6, .04, .98, .34) .8s;
+    animation: App_lightChapterNotChosen_3d cubic-bezier(0.6, 0.04, 0.98, 0.34) 0.8s;
 }
 
 @keyframes App_lightChapterNotChosenSmall_d9 {
@@ -6521,12 +6527,12 @@ body {
 
     90% {
         opacity: 1;
-        transform: translateY(-20rem) scale(.75);
+        transform: translateY(-20rem) scale(0.75);
     }
 
     100% {
         opacity: 1;
-        transform: translateY(-20rem) scale(.75);
+        transform: translateY(-20rem) scale(0.75);
     }
 }
 
@@ -6551,4 +6557,3 @@ body {
         transform: translateY(-20rem) scale(1);
     }
 }
-

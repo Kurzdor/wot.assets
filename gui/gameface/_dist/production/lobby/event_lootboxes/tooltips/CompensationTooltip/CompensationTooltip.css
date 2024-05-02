@@ -4,12 +4,12 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.atlases.components.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .Content_base_2d {
     display: flex;
@@ -19,8 +19,14 @@
 }
 
 .Content_baseBackground_1b {
-    background: linear-gradient(90deg, rgba(201, 201, 182, 0) 0%, #C9C9B6 38.22%, #C9C9B6 64.56%, rgba(201, 201, 182, 0) 100%);
-    opacity: .07;
+    background: linear-gradient(
+        90deg,
+        rgba(201, 201, 182, 0) 0%,
+        #c9c9b6 38.22%,
+        #c9c9b6 64.56%,
+        rgba(201, 201, 182, 0) 100%
+    );
+    opacity: 0.07;
     position: absolute;
     top: 0;
     right: -20rem;
@@ -31,9 +37,10 @@
 
 .Content_border_d3 {
     height: 2rem;
-    background: linear-gradient(90deg, transparent 0%, #C9C9B6 38%, #C9C9B6 64%, transparent 100%) repeat-x center / 4rem 2rem;
-    opacity: .2;
-    mask: linear-gradient(to left, transparent, #C9C9B6 50%, #C9C9B6 70%, transparent);
+    background: linear-gradient(90deg, transparent 0%, #c9c9b6 38%, #c9c9b6 64%, transparent 100%) repeat-x center /
+        4rem 2rem;
+    opacity: 0.2;
+    mask: linear-gradient(to left, transparent, #c9c9b6 50%, #c9c9b6 70%, transparent);
     position: absolute;
     right: -20rem;
     left: -20rem;
@@ -41,12 +48,12 @@
 }
 
 .Content_border__top_76 {
-        top: 0;
-    }
+    top: 0;
+}
 
 .Content_border__bot_5e {
-        bottom: 0;
-    }
+    bottom: 0;
+}
 
 .Content_vehicle_c8,
 .Content_compensation_07 {
@@ -91,14 +98,14 @@
 .Content_compensationTitle_2a,
 .Content_vehicleNameLevel_1d,
 .Content_vehicleNameText_a5 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
 .Content_compensationCount_b8 {
-    color: #FFC363;
+    color: #ffc363;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -119,14 +126,14 @@
 }
 
 .Header_title_50 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
 .Header_description_2a {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -149,7 +156,7 @@
 }
 
 .Footer_text_6b {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -162,8 +169,13 @@
     width: 400rem;
     padding: 20rem;
     border-radius: 2rem;
-    background: linear-gradient(180deg, rgba(51, 51, 41, .3) 0%, rgba(51, 51, 41, 0) 15.62%, rgba(51, 51, 41, 0) 88.02%, rgba(51, 51, 41, .1) 100%);
-    color: #8C8C7E;
+    background: linear-gradient(
+        180deg,
+        rgba(51, 51, 41, 0.3) 0%,
+        rgba(51, 51, 41, 0) 15.62%,
+        rgba(51, 51, 41, 0) 88.02%,
+        rgba(51, 51, 41, 0.1) 100%
+    );
+    color: #8c8c7e;
     overflow: hidden;
 }
-

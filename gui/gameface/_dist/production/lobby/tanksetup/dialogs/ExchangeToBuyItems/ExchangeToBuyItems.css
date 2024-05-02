@@ -3,67 +3,68 @@
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.6);
     position: relative;
     cursor: pointer;
 }
 
-    .CButton_base__main_42,
-    .CButton_base__primary_7f,
-    .CButton_base__primaryGreen_6f,
-    .CButton_base__primaryRed_ec,
-    .CButton_base__secondary_50 {
-        background-size: 100% 100%;
-    }
+.CButton_base__main_42,
+.CButton_base__primary_7f,
+.CButton_base__primaryGreen_6f,
+.CButton_base__primaryRed_ec,
+.CButton_base__secondary_50 {
+    background-size: 100% 100%;
+}
 
-    .CButton_base__main_42 {
-        background-image: url('R.images.gui.maps.icons.components.button.back_main');
-    }
+.CButton_base__main_42 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_main');
+}
 
-    .CButton_base__primary_7f {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
-    }
+.CButton_base__primary_7f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+}
 
-    .CButton_base__primaryGreen_6f {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
-    }
+.CButton_base__primaryGreen_6f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
 
-    .CButton_base__primaryRed_ec {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
-    }
+.CButton_base__primaryRed_ec {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
 
-    .CButton_base__secondary_50 {
-        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
-    }
+.CButton_base__secondary_50 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
 
-    .CButton_base__ghost_ed {
-        border-radius: 3rem;
-        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
-            0 0 0 1rem rgba(255,255,255, .15) inset;
-        background-color: rgba(0,0,0, .15);
-    }
+.CButton_base__ghost_ed {
+    border-radius: 3rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 0 1rem rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
 
-    .CButton_base__extraSmall_27 {
-        min-height: 17rem;
-        padding: 0 16rem;
-    }
+.CButton_base__extraSmall_27 {
+    min-height: 17rem;
+    padding: 0 16rem;
+}
 
-    .CButton_base__small_df,
-    .CButton_base__medium_74 {
-        padding: 0 20rem;
-    }
+.CButton_base__small_df,
+.CButton_base__medium_74 {
+    padding: 0 20rem;
+}
 
-    .CButton_base__small_df {
-        min-height: 18rem;
-    }
+.CButton_base__small_df {
+    min-height: 18rem;
+}
 
-    .CButton_base__medium_74 {
-        min-height: 32rem;
-    }
+.CButton_base__medium_74 {
+    min-height: 32rem;
+}
 
-    .CButton_base__disabled_d9 {
-        cursor: default;
-    }
+.CButton_base__disabled_d9 {
+    cursor: default;
+}
 /* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
 The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
 between 'border-image-width' and 'fill'.
@@ -79,20 +80,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
 }
 .CButton_base__main_42 .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+}
 .CButton_base__primary_7f .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+}
 .CButton_base__primaryGreen_6f .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
 .CButton_base__primaryRed_ec .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
 .CButton_base__secondary_50 .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
 .CButton_texture_fe {
     background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
     background-size: 155rem 31rem;
@@ -109,12 +110,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 0;
     bottom: 0;
     left: 0;
-    transition: box-shadow .16s ease-in-out;
+    transition: box-shadow 0.16s ease-in-out;
 }
 .CButton_base__focus_83 .CButton_state_11 {
-        border-radius: 2rem;
-        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
-    }
+    border-radius: 2rem;
+    box-shadow: inset 0 0 2rem 1rem rgba(255, 85, 0, 0.2);
+}
 .CButton_stateHighlightHover_ff,
 .CButton_stateHighlightActive_35,
 .CButton_stateDisabled_54 {
@@ -125,40 +126,47 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     bottom: 0;
     left: 0;
 }
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-        transition: opacity .16s ease-in-out;
-    }
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
+.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
+.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+    transition: opacity 0.16s ease-in-out;
+}
 .CButton_stateHighlightHover_ff {
-    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+    background-image: linear-gradient(
+        180deg,
+        rgba(252, 248, 235, 0.25) 0%,
+        rgba(252, 248, 235, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
 }
 .CButton_base_40:hover .CButton_stateHighlightHover_ff {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_base_40:active .CButton_stateHighlightHover_ff {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
-        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
-        background-color: rgba(8,6,0, .18);
-        background-image: none;
-    }
+    box-shadow: 0 15rem 12rem 0 rgba(242, 242, 230, 0.11) inset;
+    background-color: rgba(8, 6, 0, 0.18);
+    background-image: none;
+}
 .CButton_stateHighlightActive_35 {
-    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
 }
 .CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_stateDisabled_54 {
-    background-color: rgba(0,0,0, .25);
+    background-color: rgba(0, 0, 0, 0.25);
     background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
     background-size: 15rem;
 }
 .CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_content_cc {
     display: flex;
     align-items: center;
@@ -166,39 +174,39 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 700;
     line-height: 1.2;
     text-shadow: 0 -1rem 1rem #000;
-    letter-spacing: .03em;
+    letter-spacing: 0.03em;
     transform: translateY(-1rem);
 }
-.CButton_content_cc[lang=ja],
-    .CButton_content_cc[lang=ko],
-    .CButton_content_cc[lang=zh_tw],
-    .CButton_content_cc[lang=zh_sg],
-    .CButton_content_cc[lang=zh_cn],
-    .CButton_content_cc[lang=th] {
-        font-weight: 400;
-    }
+.CButton_content_cc[lang='ja'],
+.CButton_content_cc[lang='ko'],
+.CButton_content_cc[lang='zh_tw'],
+.CButton_content_cc[lang='zh_sg'],
+.CButton_content_cc[lang='zh_cn'],
+.CButton_content_cc[lang='th'] {
+    font-weight: 400;
+}
 .CButton_base__main_42 .CButton_content_cc,
-    .CButton_base__primaryRed_ec .CButton_content_cc {
-        text-shadow: 0 -1rem 1rem #600;
-    }
+.CButton_base__primaryRed_ec .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #600;
+}
 .CButton_base__secondary_50 .CButton_content_cc {
-        color: rgba(254,254,236, .75);
-    }
+    color: rgba(254, 254, 236, 0.75);
+}
 .CButton_base__primaryGreen_6f .CButton_content_cc {
-        text-shadow: 0 -1rem 1rem #1c2502;
-    }
+    text-shadow: 0 -1rem 1rem #1c2502;
+}
 .CButton_base__extraSmall_27 .CButton_content_cc {
-        font-size: 12rem;
-    }
+    font-size: 12rem;
+}
 .CButton_base__small_df .CButton_content_cc {
-        font-size: 14rem;
-    }
+    font-size: 14rem;
+}
 .CButton_base__medium_74 .CButton_content_cc {
-        font-size: 15rem;
-    }
+    font-size: 15rem;
+}
 .CButton_base__disabled_d9 .CButton_content_cc {
-        opacity: .6;
-    }
+    opacity: 0.6;
+}
 
 .TextButton_base_b6 {
     display: flex;
@@ -209,9 +217,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     cursor: pointer;
 }
 
-    .TextButton_base__right_39 {
-        flex-direction: row-reverse;
-    }
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
 .TextButton_icon_17 {
     width: 32rem;
     height: 32rem;
@@ -219,22 +227,22 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 .TextButton_icon__back_43,
-    .TextButton_icon__forward_59 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.back');
-        transform: translateY(1rem);
-    }
 .TextButton_icon__forward_59 {
-        transform: rotate(180deg) translateY(1rem);
-    }
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
 .TextButton_icon__close_53 {
-        margin: -1rem 0;
-        background-image: url('R.images.gui.maps.icons.components.text_button.close');
-    }
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
 .TextButton_icon__info_33 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.info');
-    }
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
 .TextButton_glow_a4 {
     width: 100%;
     height: 100%;
@@ -242,72 +250,82 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     opacity: 0;
     position: absolute;
     top: 0;
-    transition: opacity .16s;
+    transition: opacity 0.16s;
 }
 .TextButton_icon__back_43 .TextButton_glow_a4,
-    .TextButton_icon__forward_59 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
-    }
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
 .TextButton_icon__close_53 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
 .TextButton_icon__info_33 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
 .TextButton_base_b6:hover .TextButton_glow_a4 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .TextButton_base_b6:active .TextButton_glow_a4 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .TextButton_caption_82 {
     position: relative;
-    transition: color .16s, text-shadow .16s;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
 }
 .TextButton_caption__back_b9,
-    .TextButton_caption__forward_4e,
-    .TextButton_caption__close_36 {
-        color: #FFDD99;
-        text-shadow: 0 0 10rem rgba(255,42,0, 1),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4);
-    }
-.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
-            color: #fffa9f;
-        }
-.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
-            color: #FFDD99;
-        }
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
 .TextButton_caption__info_23 {
-        padding: 0 5rem;
-        color: #CCFFFF;
-        text-shadow: 0 0 12rem rgba(31,68,255, .8),
-            0 0 8rem #00eaff;
-    }
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
 .TextButton_base_b6:hover .TextButton_caption__info_23 {
-            color: #e3ffff;
-            text-shadow: 0 0 12rem rgba(31,68,255, .8),
-                0 0 12rem rgba(0,234,255, 1),
-                0 0 8rem #00eaff;
-        }
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
 .TextButton_base_b6:active .TextButton_caption__info_23 {
-            color: #CCFFFF;
-            text-shadow: 0 0 12rem rgba(31,68,255, .6),
-                0 0 8rem #00eaff;
-        }
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
 .TextButton_goto_e7 {
     color: #7c7c6c;
 }
 .TextButton_base__left_ff .TextButton_goto_e7 {
-        margin-left: 8rem;
-    }
+    margin-left: 8rem;
+}
 .TextButton_base__right_39 .TextButton_goto_e7 {
-        margin-right: 8rem;
-    }
+    margin-right: 8rem;
+}
 .TextButton_shine_e2 {
     width: 90rem;
     height: 40rem;
@@ -315,22 +333,22 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     opacity: 0;
     position: absolute;
     top: -4rem;
-    transition: opacity .16s;
+    transition: opacity 0.16s;
     pointer-events: none;
 }
 .TextButton_base__left_ff .TextButton_shine_e2 {
-        left: -4rem;
-    }
+    left: -4rem;
+}
 .TextButton_base__right_39 .TextButton_shine_e2 {
-        right: -4rem;
-        transform: rotate(180deg);
-    }
+    right: -4rem;
+    transform: rotate(180deg);
+}
 .TextButton_base_b6:hover .TextButton_shine_e2 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .TextButton_base_b6:active .TextButton_shine_e2 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .CurrencyItem_currency_b6 {
     height: 20rem;
@@ -342,26 +360,26 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 14rem;
 }
 
-    .CurrencyItem_currency__credits_eb {
-        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
-        background-position: 0 2rem;
-        color: #ced9d9;
-    }
+.CurrencyItem_currency__credits_eb {
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
+    background-position: 0 2rem;
+    color: #ced9d9;
+}
 
-    .CurrencyItem_currency__gold_af {
-        background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
-        background-position: 0 1rem;
-        color: #ffc363;
-    }
+.CurrencyItem_currency__gold_af {
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
+    background-position: 0 1rem;
+    color: #ffc363;
+}
 
-    .CurrencyItem_currency__crystal_fc {
-        background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
-    }
+.CurrencyItem_currency__crystal_fc {
+    background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
+}
 
-    .CurrencyItem_currency__freeXP_36 {
-        background-image: url('R.images.gui.maps.icons.library.FreeXpIcon_2');
-        background-position: 0 1rem;
-    }
+.CurrencyItem_currency__freeXP_36 {
+    background-image: url('R.images.gui.maps.icons.library.FreeXpIcon_2');
+    background-position: 0 1rem;
+}
 
 .CurrencyBalance_base_97 {
     display: flex;
@@ -380,7 +398,7 @@ body {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: rgba(19,18,16, .6);
+    background-color: rgba(19, 18, 16, 0.6);
     position: relative;
 }
 
@@ -409,12 +427,12 @@ body {
 }
 
 .DialogTemplate_view__show_51 {
-        animation: DialogTemplate_window-in_b6 .5s;
-        animation-fill-mode: both;
-    }
+    animation: DialogTemplate_window-in_b6 0.5s;
+    animation-fill-mode: both;
+}
 
 .DialogTemplate_content_dc {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -422,8 +440,8 @@ body {
 
 .DialogTemplate_line_af {
     height: 1rem;
-    background-color: #FFFFFF;
-    opacity: .1;
+    background-color: #ffffff;
+    opacity: 0.1;
 }
 
 .DialogTemplate_divider_cb {
@@ -432,7 +450,7 @@ body {
 }
 
 .DialogTemplate_footer_2b {
-    color: #C9C9B6;
+    color: #c9c9b6;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -456,8 +474,8 @@ body {
 }
 
 .DialogTemplate_button_f0 + .DialogTemplate_button_f0 {
-        margin-left: 12rem;
-    }
+    margin-left: 12rem;
+}
 
 @keyframes DialogTemplate_window-in_b6 {
     0% {
@@ -478,9 +496,9 @@ body {
     position: relative;
 }
 
-    .Item_base_2f + .Item_base_2f {
-        margin-left: 15rem;
-    }
+.Item_base_2f + .Item_base_2f {
+    margin-left: 15rem;
+}
 
 .Item_highlight_ab {
     width: 492rem;
@@ -491,26 +509,26 @@ body {
 }
 
 .Item_highlight__optionalDevice_2d,
-    .Item_highlight__battleBoosterReplace_3f,
-    .Item_highlight__battleBooster_09,
-    .Item_highlight__builtInEquipment_21,
-    .Item_highlight__battleAbility_2b,
-    .Item_highlight__postProgressionModification_5e {
-        background-image: url('R.images.gui.maps.icons.demountKit.simple_highlight');
-    }
+.Item_highlight__battleBoosterReplace_3f,
+.Item_highlight__battleBooster_09,
+.Item_highlight__builtInEquipment_21,
+.Item_highlight__battleAbility_2b,
+.Item_highlight__postProgressionModification_5e {
+    background-image: url('R.images.gui.maps.icons.demountKit.simple_highlight');
+}
 
 .Item_highlight__equipmentPlus_f1 {
-        background-image: url('R.images.gui.maps.icons.demountKit.equipmentPlus_highlight');
-    }
+    background-image: url('R.images.gui.maps.icons.demountKit.equipmentPlus_highlight');
+}
 
 .Item_highlight__equipmentTrophyBasic_4b,
-    .Item_highlight__equipmentTrophyUpgraded_90 {
-        background-image: url('R.images.gui.maps.icons.demountKit.equipmentTrophyBasic_highlight');
-    }
+.Item_highlight__equipmentTrophyUpgraded_90 {
+    background-image: url('R.images.gui.maps.icons.demountKit.equipmentTrophyBasic_highlight');
+}
 
 .Item_highlight__equipmentModernized_a2 {
-        background-image: url('R.images.gui.maps.icons.demountKit.equipmentModernized_highlight');
-    }
+    background-image: url('R.images.gui.maps.icons.demountKit.equipmentModernized_highlight');
+}
 
 .Item_overlay_ee {
     background: no-repeat center / contain;
@@ -518,54 +536,54 @@ body {
 }
 
 .Item_overlay__battleBooster_4e,
-    .Item_overlay__battleBoosterReplace_e0 {
-        width: 248rem;
-        height: 224rem;
-    }
+.Item_overlay__battleBoosterReplace_e0 {
+    width: 248rem;
+    height: 224rem;
+}
 
 .Item_overlay__battleBoosterReplace_e0 {
-        background-image: url('R.images.gui.maps.icons.artefact.battleBooster_replace_overlay_medium');
-    }
+    background-image: url('R.images.gui.maps.icons.artefact.battleBooster_replace_overlay_medium');
+}
 
 .Item_overlay__battleBooster_4e {
-        background-image: url('R.images.gui.maps.icons.artefact.battleBooster_overlay_medium');
-    }
+    background-image: url('R.images.gui.maps.icons.artefact.battleBooster_overlay_medium');
+}
 
 .Item_overlay__equipmentPlus_a6,
-    .Item_overlay__equipmentTrophyBasic_ac,
-    .Item_overlay__equipmentTrophyUpgraded_32,
-    .Item_overlay__equipmentModernized_1_fd,
-    .Item_overlay__equipmentModernized_2_70,
-    .Item_overlay__equipmentModernized_3_f1 {
-        width: 48rem;
-        height: 47rem;
-        top: 0;
-        left: 0;
-    }
+.Item_overlay__equipmentTrophyBasic_ac,
+.Item_overlay__equipmentTrophyUpgraded_32,
+.Item_overlay__equipmentModernized_1_fd,
+.Item_overlay__equipmentModernized_2_70,
+.Item_overlay__equipmentModernized_3_f1 {
+    width: 48rem;
+    height: 47rem;
+    top: 0;
+    left: 0;
+}
 
 .Item_overlay__equipmentPlus_a6 {
-        background-image: url('R.images.gui.maps.icons.demountKit.equipmentPlus_overlay');
-    }
+    background-image: url('R.images.gui.maps.icons.demountKit.equipmentPlus_overlay');
+}
 
 .Item_overlay__equipmentTrophyBasic_ac {
-        background-image: url('R.images.gui.maps.icons.demountKit.equipmentTrophyBasic_overlay');
-    }
+    background-image: url('R.images.gui.maps.icons.demountKit.equipmentTrophyBasic_overlay');
+}
 
 .Item_overlay__equipmentTrophyUpgraded_32 {
-        background-image: url('R.images.gui.maps.icons.demountKit.equipmentTrophyUpgraded_overlay');
-    }
+    background-image: url('R.images.gui.maps.icons.demountKit.equipmentTrophyUpgraded_overlay');
+}
 
 .Item_overlay__equipmentModernized_1_fd {
-        background-image: url('R.images.gui.maps.icons.demountKit.experimental_level_icon_lvl1');
-    }
+    background-image: url('R.images.gui.maps.icons.demountKit.experimental_level_icon_lvl1');
+}
 
 .Item_overlay__equipmentModernized_2_70 {
-        background-image: url('R.images.gui.maps.icons.demountKit.experimental_level_icon_lvl2');
-    }
+    background-image: url('R.images.gui.maps.icons.demountKit.experimental_level_icon_lvl2');
+}
 
 .Item_overlay__equipmentModernized_3_f1 {
-        background-image: url('R.images.gui.maps.icons.demountKit.experimental_level_icon_lvl3');
-    }
+    background-image: url('R.images.gui.maps.icons.demountKit.experimental_level_icon_lvl3');
+}
 
 .Item_level_90 {
     width: 32rem;
@@ -577,7 +595,7 @@ body {
 }
 
 .Item_postProgressionLevel_ad {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
@@ -600,10 +618,10 @@ body {
 }
 
 .Item_image__postProgression_ca {
-        width: 120rem;
-        height: 120rem;
-        margin: 8rem 30rem;
-    }
+    width: 120rem;
+    height: 120rem;
+    margin: 8rem 30rem;
+}
 
 .Items_base_b1 {
     display: flex;
@@ -615,7 +633,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    color: #C9C9B6;
+    color: #c9c9b6;
     line-height: 22rem;
 }
 
@@ -635,157 +653,157 @@ body {
     z-index: 1;
 }
 .Currency_base__small_af .Currency_icon_c5,
-    .Currency_base__big_bc .Currency_icon_c5,
-    .Currency_base__large_65 .Currency_icon_c5,
-    .Currency_base__extraLarge_4d .Currency_icon_c5 {
-        transform: translateY(3rem);
-    }
+.Currency_base__big_bc .Currency_icon_c5,
+.Currency_base__large_65 .Currency_icon_c5,
+.Currency_base__extraLarge_4d .Currency_icon_c5 {
+    transform: translateY(3rem);
+}
 .Currency_icon__credits-small_9b {
-        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
-    }
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
+}
 .Currency_icon__credits-big_96 {
-        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
-    }
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
+}
 .Currency_icon__credits-large_ac {
-        --icon-height: 48rem;
-        margin-left: -1rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_silver');
-    }
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_silver');
+}
 .Currency_base__large_65 .Currency_icon__credits-large_ac {
-            transform: translateY(4rem);
-        }
+    transform: translateY(4rem);
+}
 .Currency_icon__credits-extraLarge_16 {
-        --icon-height: 80rem;
-        margin-right: -2rem;
-        background-image: url('R.images.gui.maps.icons.library.credits_icon_80x80');
-    }
+    --icon-height: 80rem;
+    margin-right: -2rem;
+    background-image: url('R.images.gui.maps.icons.library.credits_icon_80x80');
+}
 .Currency_icon__gold-small_86 {
-        background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
-    }
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
+}
 .Currency_base__small_af .Currency_icon__gold-small_86 {
-            transform: translateY(2rem);
-        }
+    transform: translateY(2rem);
+}
 .Currency_icon__gold-big_15 {
-        background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
-    }
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
+}
 .Currency_base__big_bc .Currency_icon__gold-big_15 {
-            transform: translateY(4rem);
-        }
+    transform: translateY(4rem);
+}
 .Currency_icon__gold-large_36 {
-        --icon-height: 48rem;
-        margin-left: -1rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_gold');
-    }
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_gold');
+}
 .Currency_base__large_65 .Currency_icon__gold-large_36 {
-            transform: translateY(4rem);
-        }
+    transform: translateY(4rem);
+}
 .Currency_icon__gold-extraLarge_a0 {
-        --icon-height: 80rem;
-        background-image: url('R.images.gui.maps.icons.library.gold_icon_80x80');
-    }
+    --icon-height: 80rem;
+    background-image: url('R.images.gui.maps.icons.library.gold_icon_80x80');
+}
 .Currency_icon__crystal-small_27 {
-        background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
-    }
+    background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
+}
 .Currency_base__small_af .Currency_icon__crystal-small_27 {
-            transform: translateY(2rem);
-        }
+    transform: translateY(2rem);
+}
 .Currency_icon__crystal-big_cd {
-        --icon-height: 22rem;
-        --icon-width: 23rem;
-        background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
-    }
+    --icon-height: 22rem;
+    --icon-width: 23rem;
+    background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
+}
 .Currency_base__big_bc .Currency_icon__crystal-big_cd {
-            transform: translateY(4rem);
-        }
+    transform: translateY(4rem);
+}
 .Currency_icon__crystal-large_d3 {
-        --icon-height: 48rem;
-        margin-left: -1rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_bonds');
-    }
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_bonds');
+}
 .Currency_icon__crystal-extraLarge_09 {
-        --icon-height: 80rem;
-        background-image: url('R.images.gui.maps.icons.library.crystal_80x80');
-    }
+    --icon-height: 80rem;
+    background-image: url('R.images.gui.maps.icons.library.crystal_80x80');
+}
 .Currency_base__extraLarge_4d .Currency_icon__crystal-extraLarge_09 {
-            transform: translateY(7rem);
-        }
+    transform: translateY(7rem);
+}
 .Currency_icon__xp-small_a7 {
-        background-image: url('R.images.gui.maps.icons.library.NormalXpIcon');
-    }
+    background-image: url('R.images.gui.maps.icons.library.NormalXpIcon');
+}
 .Currency_base__small_af .Currency_icon__xp-small_a7 {
-            transform: translateY(1rem);
-        }
+    transform: translateY(1rem);
+}
 .Currency_icon__xp-big_97 {
-        --icon-height: 22rem;
-        --icon-width: 23rem;
-        margin-left: -5rem;
-        background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
-    }
+    --icon-height: 22rem;
+    --icon-width: 23rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
+}
 .Currency_base__big_bc .Currency_icon__xp-big_97 {
-            transform: translateY(2rem);
-        }
+    transform: translateY(2rem);
+}
 .Currency_icon__xp-large_6b {
-        --icon-height: 48rem;
-        margin: 0 -5rem 0 -6rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.exp');
-    }
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.exp');
+}
 .Currency_icon__xp-extraLarge_67 {
-        --icon-height: 80rem;
-        margin: 0 -5rem;
-        background-image: url('R.images.gui.maps.icons.library.xp_tank_icon_80x80');
-    }
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.xp_tank_icon_80x80');
+}
 .Currency_icon__freeXP-small_ca {
-        background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
-    }
+    background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
+}
 .Currency_base__small_af .Currency_icon__freeXP-small_ca {
-            transform: translateY(1rem);
-        }
+    transform: translateY(1rem);
+}
 .Currency_icon__freeXP-big_21 {
-        --icon-height: 24rem;
-        margin-left: -5rem;
-        background-image: url('R.images.gui.maps.icons.library.freeXPIconBig24x24');
-    }
+    --icon-height: 24rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.freeXPIconBig24x24');
+}
 .Currency_icon__freeXP-large_c8 {
-        --icon-height: 48rem;
-        margin: 0 -5rem 0 -6rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.freeExp');
-    }
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.freeExp');
+}
 .Currency_icon__freeXP-extraLarge_58 {
-        --icon-height: 80rem;
-        margin: 0 -5rem;
-        background-image: url('R.images.gui.maps.icons.library.free_xp_icon_80x80');
-    }
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.free_xp_icon_80x80');
+}
 .Currency_base__extraLarge_4d .Currency_icon__freeXP-extraLarge_58 {
-            transform: translateY(4rem);
-        }
+    transform: translateY(4rem);
+}
 .Currency_icon__equipCoin-small_32 {
-        --icon-height: 16rem;
-        margin-right: -2rem;
-        background-image: url('R.images.gui.maps.icons.library.equipCoin_1');
-    }
+    --icon-height: 16rem;
+    margin-right: -2rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoin_1');
+}
 .Currency_base__small_af .Currency_icon__equipCoin-small_32 {
-            transform: translateX(-1rem) translateY(1rem);
-        }
+    transform: translateX(-1rem) translateY(1rem);
+}
 .Currency_icon__equipCoin-big_79 {
-        --icon-height: 24rem;
-        background-image: url('R.images.gui.maps.icons.library.equipCoinBig');
-    }
+    --icon-height: 24rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoinBig');
+}
 .Currency_base__big_bc .Currency_icon__equipCoin-big_79 {
-            transform: translateX(-5rem) translateY(3rem);
-        }
+    transform: translateX(-5rem) translateY(3rem);
+}
 .Currency_icon__equipCoin-large_2c {
-        --icon-height: 48rem;
-        margin-right: 2rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.equipCoin');
-    }
+    --icon-height: 48rem;
+    margin-right: 2rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.equipCoin');
+}
 .Currency_icon__equipCoin-extraLarge_8a {
-        --icon-height: 80rem;
-        margin-right: 8rem;
-        background-image: url('R.images.gui.maps.icons.library.equipCoin_icon_80x80');
-    }
+    --icon-height: 80rem;
+    margin-right: 8rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoin_icon_80x80');
+}
 .Currency_base__extraLarge_4d .Currency_icon__equipCoin-extraLarge_8a {
-            transform: translateX(2rem) translateY(4rem);
-        }
+    transform: translateX(2rem) translateY(4rem);
+}
 .Currency_value_e1 {
     /* font-size inherit does not work here, so 1em means the size does not change */
     /* stylelint-disable-next-line */
@@ -795,56 +813,56 @@ body {
     z-index: 2;
 }
 .Currency_base__small_af .Currency_value_e1 {
-        padding-right: 2rem;
-    }
+    padding-right: 2rem;
+}
 .Currency_base__big_bc .Currency_value_e1 {
-        --font-size: 24rem;
-        padding-right: 5rem;
-        font-weight: 700;
-    }
+    --font-size: 24rem;
+    padding-right: 5rem;
+    font-weight: 700;
+}
 .Currency_base__big_bc .Currency_value_e1 + .Currency_icon_c5 {
-            font-size: 24rem;
-        }
+    font-size: 24rem;
+}
 .Currency_base__large_65 .Currency_value_e1 {
-        --font-size: 36rem;
-        font-weight: 700;
-    }
+    --font-size: 36rem;
+    font-weight: 700;
+}
 .Currency_base__large_65 .Currency_value_e1 + .Currency_icon_c5 {
-            font-size: 36rem;
-        }
+    font-size: 36rem;
+}
 .Currency_base__extraLarge_4d .Currency_value_e1 {
-        --font-size: 56rem;
-        font-weight: 700;
-    }
+    --font-size: 56rem;
+    font-weight: 700;
+}
 .Currency_value__freeXP_cb {
-        color: #F2F2F7;
-    }
+    color: #f2f2f7;
+}
 .Currency_value__credits_76 {
-        color: #CED9D9;
-    }
+    color: #ced9d9;
+}
 .Currency_value__gold_dd {
-        color: #FFC363;
-    }
+    color: #ffc363;
+}
 .Currency_value__xp_b0,
-    .Currency_value__crystal_19,
-    .Currency_value__equipCoin_d0 {
-        color: #C9C9B6;
-    }
+.Currency_value__crystal_19,
+.Currency_value__equipCoin_d0 {
+    color: #c9c9b6;
+}
 .Currency_base__small_af .Currency_value__notEnough_56 {
-            color: #FF2717;
-        }
+    color: #ff2717;
+}
 .Currency_base__big_bc .Currency_value__notEnough_56 {
-            color: #B70000;
-        }
+    color: #b70000;
+}
 .Currency_base__large_65 .Currency_value__notEnough_56 {
-            color: #B70000;
-        }
+    color: #b70000;
+}
 .Currency_base__extraLarge_4d .Currency_value__notEnough_56 {
-            color: #B70000;
-        }
+    color: #b70000;
+}
 .Currency_stock_87 {
     height: 13rem;
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 13rem;
     line-height: 1;
     position: relative;
@@ -852,23 +870,23 @@ body {
     pointer-events: none;
 }
 .Currency_stock__indent_a1 {
-        margin-left: 2rem;
-    }
+    margin-left: 2rem;
+}
 .Currency_base__small_af .Currency_stock_87 {
-        transform: translateY(0rem);
-    }
+    transform: translateY(0rem);
+}
 .Currency_base__big_bc .Currency_stock_87 {
-        transform: translateY(4rem);
-    }
+    transform: translateY(4rem);
+}
 .Currency_base__large_65 .Currency_stock_87 {
-        transform: translateY(10rem);
-    }
+    transform: translateY(10rem);
+}
 .Currency_base__extraLarge_4d .Currency_stock_87 {
-        transform: translateY(18rem);
-    }
+    transform: translateY(18rem);
+}
 .Currency_stock__interactive_93 {
-        pointer-events: auto;
-    }
+    pointer-events: auto;
+}
 .Currency_stockBackground_82 {
     width: 80rem;
     height: 45rem;
@@ -906,10 +924,10 @@ body {
 }
 
 .Alert_highlight__warning_13 {
-        width: 828rem;
-        height: 798rem;
-        background-image: url('R.images.gui.maps.icons.demountKit.warning_highlight');
-    }
+    width: 828rem;
+    height: 798rem;
+    background-image: url('R.images.gui.maps.icons.demountKit.warning_highlight');
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -922,8 +940,8 @@ body {
     position: relative;
 }
 .ProgressBar_base__small_df {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_background_51 {
     width: 100%;
     max-width: 8001px;
@@ -937,13 +955,12 @@ body {
     left: 0;
 }
 .ProgressBar_background__small_46 {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_lineWrapper_6a {
     display: flex;
     flex: 1;
 }
-
 
 .ProgressBarBlink_base_24 {
     width: 60rem;
@@ -958,11 +975,11 @@ body {
     pointer-events: none;
 }
 
-    .ProgressBarBlink_base__small_0f {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+.ProgressBarBlink_base__small_0f {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -974,18 +991,18 @@ body {
     height: 100%;
     background-color: var(--progress-line-base);
     position: relative;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressLineImpose_base__disabled_cc {
-        background-color: var(--progress-line-disabled);
-    }
+    background-color: var(--progress-line-disabled);
+}
 .ProgressLineImpose_base__finished_d4 {
-        background-color: var(--progress-line-finished);
-    }
+    background-color: var(--progress-line-finished);
+}
 .ProgressLineImpose_base__withoutBounce_56 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressLineImpose_pattern_1c {
     max-width: 8001px;
     background-image: var(--progress-pattern-base);
@@ -999,19 +1016,19 @@ body {
     left: 1rem;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-disabled);
-        left: 0;
-    }
+    background-image: var(--progress-pattern-disabled);
+    left: 0;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-finished);
-    }
+    background-image: var(--progress-pattern-finished);
+}
 .ProgressLineImpose_gradient_35 {
     max-width: 8001px;
-    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75));
     mix-blend-mode: overlay;
     position: absolute;
     top: 1rem;
@@ -1020,15 +1037,15 @@ body {
     left: 0;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
-        display: none;
-    }
+    display: none;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
-        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
-    }
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5));
+}
 .ProgressLineImpose_glow_a5 {
     width: 60rem;
     max-width: 8001px;
@@ -1043,17 +1060,17 @@ body {
     pointer-events: none;
 }
 .ProgressLineImpose_glow__left_d8 {
-        left: 1rem;
-    }
+    left: 1rem;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
-    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
-        display: none;
-    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+    display: none;
+}
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -1075,7 +1092,7 @@ body {
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1), cubic-bezier(0.21, 0.61, 0.35, 1);
     transition-property: width, transform;
 }
 
@@ -1089,12 +1106,12 @@ body {
     height: 100%;
     position: absolute;
     top: 0;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressBarDeltaGrow_glow_68 {
     width: 0;
     max-width: 8001px;
@@ -1104,15 +1121,15 @@ body {
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 
 .Durability_base_8c {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -1133,7 +1150,7 @@ body {
 }
 
 .Durability_percentage_a7 {
-    color: #EE7000;
+    color: #ee7000;
     position: absolute;
     right: -15rem;
     bottom: 0;
@@ -1161,7 +1178,7 @@ body {
 }
 
 .ExchangeDialogContent_status_33 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -1170,19 +1187,19 @@ body {
 }
 
 .ExchangeDialogContent_status__notPossible_e1 {
-        color: #EE7000;
-    }
+    color: #ee7000;
+}
 
 .ExchangeDialogContent_status__notRequired_8a {
-        color: #80D43A;
-    }
+    color: #80d43a;
+}
 
 .ExchangeDialogContent_items_72 {
     margin-bottom: 45rem;
 }
 
 .ExchangeDialogContent_title_9f {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 36rem;
     font-weight: 700;
     line-height: 1.1;
@@ -1206,57 +1223,57 @@ body {
     overflow: hidden;
     position: relative;
     z-index: 0;
-    transition: border .3s ease-in-out;
+    transition: border 0.3s ease-in-out;
 }
 
-    .NumericStepper_base__small_11 {
-        width: 73rem;
-        height: 23rem;
-    }
+.NumericStepper_base__small_11 {
+    width: 73rem;
+    height: 23rem;
+}
 
-    .NumericStepper_base__medium_9d {
-        width: 90rem;
-        height: 31rem;
-    }
+.NumericStepper_base__medium_9d {
+    width: 90rem;
+    height: 31rem;
+}
 
-    .NumericStepper_base__large_dc {
-        width: 178rem;
-        height: 49rem;
-    }
+.NumericStepper_base__large_dc {
+    width: 178rem;
+    height: 49rem;
+}
 
-    .NumericStepper_base__isFocus_49 {
-        border-color: #663c1f;
-    }
+.NumericStepper_base__isFocus_49 {
+    border-color: #663c1f;
+}
 
-    .NumericStepper_base__isDisabled_ac {
-        border-color: #22221a;
-    }
+.NumericStepper_base__isDisabled_ac {
+    border-color: #22221a;
+}
 .NumericStepper_inputContainer_e2 {
     display: flex;
     align-items: center;
     flex: 1;
 }
 .NumericStepper_base__small_11 .NumericStepper_input_55 {
-        padding: 0 4rem 2rem 6rem;
-        font-size: 14rem;
-    }
+    padding: 0 4rem 2rem 6rem;
+    font-size: 14rem;
+}
 .NumericStepper_base__medium_9d .NumericStepper_input_55 {
-        padding: 0 8rem 1rem 9rem;
-        font-size: 20rem;
-    }
+    padding: 0 8rem 1rem 9rem;
+    font-size: 20rem;
+}
 .NumericStepper_base__large_dc .NumericStepper_input_55 {
-        padding: 0 12rem 3rem 17rem;
-        font-size: 24rem;
-    }
+    padding: 0 12rem 3rem 17rem;
+    font-size: 24rem;
+}
 .NumericStepper_base__withCurrency-small_de .NumericStepper_input_55 {
-        padding-right: 2rem;
-    }
+    padding-right: 2rem;
+}
 .NumericStepper_base__withCurrency-medium_69 .NumericStepper_input_55 {
-        padding-right: 3rem;
-    }
+    padding-right: 3rem;
+}
 .NumericStepper_base__withCurrency-large_a1 .NumericStepper_input_55 {
-        padding-right: 4rem;
-    }
+    padding-right: 4rem;
+}
 .NumericStepper_input_55 {
     flex: 1;
     border: none;
@@ -1264,56 +1281,66 @@ body {
     color: #8c8c7e;
 }
 .NumericStepper_input__disabled_d8 {
-        color: transparent;
-        text-shadow: 0 0 0 #37362e;
-    }
+    color: transparent;
+    text-shadow: 0 0 0 #37362e;
+}
 .NumericStepper_input__credits_08 {
-        color: #ced9d9;
-    }
+    color: #ced9d9;
+}
 .NumericStepper_input__credits-disabled_3f {
-        color: transparent;
-        text-shadow: 0 0 0 rgba(206,217,217, .3);
-    }
+    color: transparent;
+    text-shadow: 0 0 0 rgba(206, 217, 217, 0.3);
+}
 .NumericStepper_input__gold_14 {
-        color: #ffc363;
-    }
+    color: #ffc363;
+}
 .NumericStepper_input__gold-disabled_c6 {
-        color: transparent;
-        text-shadow: 0 0 0 rgba(255,195,99, .3);
-    }
+    color: transparent;
+    text-shadow: 0 0 0 rgba(255, 195, 99, 0.3);
+}
 .NumericStepper_input__xp_c4,
-    .NumericStepper_input__freeXP_06,
-    .NumericStepper_input__crystal_2e {
-        color: #c9c9b6;
-    }
+.NumericStepper_input__freeXP_06,
+.NumericStepper_input__crystal_2e {
+    color: #c9c9b6;
+}
 .NumericStepper_input__xp-disabled_33,
-    .NumericStepper_input__freeXP-disabled_8b,
-    .NumericStepper_input__crystal-disabled_f8 {
-        color: transparent;
-        text-shadow: 0 0 0 rgba(201,201,182, .3);
-    }
+.NumericStepper_input__freeXP-disabled_8b,
+.NumericStepper_input__crystal-disabled_f8 {
+    color: transparent;
+    text-shadow: 0 0 0 rgba(201, 201, 182, 0.3);
+}
 .NumericStepper_input__withCurrency_3b {
-        font-weight: 700;
-    }
+    font-weight: 700;
+}
 .NumericStepper_base__small_11 .NumericStepper_input__withCurrency_3b {
-            padding-right: 22rem;
-        }
+    padding-right: 22rem;
+}
 .NumericStepper_base__medium_9d .NumericStepper_input__withCurrency_3b {
-            padding-right: 27rem;
-        }
+    padding-right: 27rem;
+}
 .NumericStepper_base__large_dc .NumericStepper_input__withCurrency_3b {
-            padding-right: 32rem;
-        }
-.NumericStepper_base__medium_9d .NumericStepper_input__xp-medium_db, .NumericStepper_base__medium_9d .NumericStepper_input__xp-large_73, .NumericStepper_base__medium_9d .NumericStepper_input__freeXP-medium_2b, .NumericStepper_base__medium_9d .NumericStepper_input__freeXP-large_c9, .NumericStepper_base__medium_9d .NumericStepper_input__crystal-medium_56, .NumericStepper_base__medium_9d .NumericStepper_input__crystal-large_4e {
-            padding-right: 34rem;
-        }
-.NumericStepper_base__large_dc .NumericStepper_input__xp-medium_db, .NumericStepper_base__large_dc .NumericStepper_input__xp-large_73, .NumericStepper_base__large_dc .NumericStepper_input__freeXP-medium_2b, .NumericStepper_base__large_dc .NumericStepper_input__freeXP-large_c9, .NumericStepper_base__large_dc .NumericStepper_input__crystal-medium_56, .NumericStepper_base__large_dc .NumericStepper_input__crystal-large_4e {
-            padding-right: 39rem;
-        }
+    padding-right: 32rem;
+}
+.NumericStepper_base__medium_9d .NumericStepper_input__xp-medium_db,
+.NumericStepper_base__medium_9d .NumericStepper_input__xp-large_73,
+.NumericStepper_base__medium_9d .NumericStepper_input__freeXP-medium_2b,
+.NumericStepper_base__medium_9d .NumericStepper_input__freeXP-large_c9,
+.NumericStepper_base__medium_9d .NumericStepper_input__crystal-medium_56,
+.NumericStepper_base__medium_9d .NumericStepper_input__crystal-large_4e {
+    padding-right: 34rem;
+}
+.NumericStepper_base__large_dc .NumericStepper_input__xp-medium_db,
+.NumericStepper_base__large_dc .NumericStepper_input__xp-large_73,
+.NumericStepper_base__large_dc .NumericStepper_input__freeXP-medium_2b,
+.NumericStepper_base__large_dc .NumericStepper_input__freeXP-large_c9,
+.NumericStepper_base__large_dc .NumericStepper_input__crystal-medium_56,
+.NumericStepper_base__large_dc .NumericStepper_input__crystal-large_4e {
+    padding-right: 39rem;
+}
 .NumericStepper_input_55::selection {
-        background-color: #8c8c7e;
-        color: #242420;
-    }
+    background-color: #8c8c7e;
+    color: #242420;
+}
 .NumericStepper_currency_38 {
     display: flex;
     flex-direction: row;
@@ -1325,121 +1352,131 @@ body {
     z-index: -1;
 }
 .NumericStepper_base__small_11 .NumericStepper_currency_38 {
-        padding-right: 20rem;
-    }
+    padding-right: 20rem;
+}
 .NumericStepper_base__medium_9d .NumericStepper_currency_38 {
-        padding-right: 24rem;
-    }
+    padding-right: 24rem;
+}
 .NumericStepper_base__large_dc .NumericStepper_currency_38 {
-        padding-right: 28rem;
-    }
-.NumericStepper_base__medium_9d .NumericStepper_currency__xp-medium_66, .NumericStepper_base__medium_9d .NumericStepper_currency__xp-large_66, .NumericStepper_base__medium_9d .NumericStepper_currency__freeXP-medium_79, .NumericStepper_base__medium_9d .NumericStepper_currency__freeXP-large_c7, .NumericStepper_base__medium_9d .NumericStepper_currency__crystal-medium_55, .NumericStepper_base__medium_9d .NumericStepper_currency__crystal-large_a4 {
-            padding-right: 31rem;
-        }
-.NumericStepper_base__large_dc .NumericStepper_currency__xp-medium_66, .NumericStepper_base__large_dc .NumericStepper_currency__xp-large_66, .NumericStepper_base__large_dc .NumericStepper_currency__freeXP-medium_79, .NumericStepper_base__large_dc .NumericStepper_currency__freeXP-large_c7, .NumericStepper_base__large_dc .NumericStepper_currency__crystal-medium_55, .NumericStepper_base__large_dc .NumericStepper_currency__crystal-large_a4 {
-            padding-right: 35rem;
-        }
+    padding-right: 28rem;
+}
+.NumericStepper_base__medium_9d .NumericStepper_currency__xp-medium_66,
+.NumericStepper_base__medium_9d .NumericStepper_currency__xp-large_66,
+.NumericStepper_base__medium_9d .NumericStepper_currency__freeXP-medium_79,
+.NumericStepper_base__medium_9d .NumericStepper_currency__freeXP-large_c7,
+.NumericStepper_base__medium_9d .NumericStepper_currency__crystal-medium_55,
+.NumericStepper_base__medium_9d .NumericStepper_currency__crystal-large_a4 {
+    padding-right: 31rem;
+}
+.NumericStepper_base__large_dc .NumericStepper_currency__xp-medium_66,
+.NumericStepper_base__large_dc .NumericStepper_currency__xp-large_66,
+.NumericStepper_base__large_dc .NumericStepper_currency__freeXP-medium_79,
+.NumericStepper_base__large_dc .NumericStepper_currency__freeXP-large_c7,
+.NumericStepper_base__large_dc .NumericStepper_currency__crystal-medium_55,
+.NumericStepper_base__large_dc .NumericStepper_currency__crystal-large_a4 {
+    padding-right: 35rem;
+}
 .NumericStepper_currencyIcon_8e {
     width: 16rem;
     height: 16rem;
     background: 50% / contain no-repeat;
 }
 .NumericStepper_currencyIcon__credits-small_99 {
-        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
-        transform: translateY(4rem);
-    }
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
+    transform: translateY(4rem);
+}
 .NumericStepper_currencyIcon__credits-medium_1a {
-        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
-        transform: translateY(8rem);
-    }
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
+    transform: translateY(8rem);
+}
 .NumericStepper_currencyIcon__credits-large_bc {
-        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
-        transform: translateY(18rem);
-    }
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
+    transform: translateY(18rem);
+}
 .NumericStepper_currencyIcon__gold-small_2a {
-        background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
-        transform: translateY(3rem);
-    }
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
+    transform: translateY(3rem);
+}
 .NumericStepper_currencyIcon__gold-medium_f6 {
-        background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
-        transform: translateY(9rem);
-    }
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
+    transform: translateY(9rem);
+}
 .NumericStepper_currencyIcon__gold-large_d6 {
-        background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
-        transform: translateY(19rem);
-    }
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
+    transform: translateY(19rem);
+}
 .NumericStepper_currencyIcon__crystal-small_b5 {
-        background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
-        transform: translateY(3rem);
-    }
+    background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
+    transform: translateY(3rem);
+}
 .NumericStepper_currencyIcon__crystal-medium_ac {
-        width: 23rem;
-        height: 22rem;
-        background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
-        transform: translateY(6rem);
-    }
+    width: 23rem;
+    height: 22rem;
+    background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
+    transform: translateY(6rem);
+}
 .NumericStepper_currencyIcon__crystal-large_2b {
-        width: 23rem;
-        height: 22rem;
-        background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
-        transform: translate(-1rem, 16rem);
-    }
+    width: 23rem;
+    height: 22rem;
+    background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
+    transform: translate(-1rem, 16rem);
+}
 .NumericStepper_currencyIcon__freeXP-small_4d {
-        background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
-        transform: translateY(3rem);
-    }
+    background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
+    transform: translateY(3rem);
+}
 .NumericStepper_currencyIcon__freeXP-medium_85 {
-        width: 23rem;
-        height: 22rem;
-        background-image: url('R.images.gui.maps.icons.library.freeXpIcon_23x22');
-        transform: translateY(4rem);
-    }
+    width: 23rem;
+    height: 22rem;
+    background-image: url('R.images.gui.maps.icons.library.freeXpIcon_23x22');
+    transform: translateY(4rem);
+}
 .NumericStepper_currencyIcon__freeXP-large_76 {
-        width: 23rem;
-        height: 22rem;
-        background-image: url('R.images.gui.maps.icons.library.freeXpIcon_23x22');
-        transform: translate(-2rem, 14rem);
-    }
+    width: 23rem;
+    height: 22rem;
+    background-image: url('R.images.gui.maps.icons.library.freeXpIcon_23x22');
+    transform: translate(-2rem, 14rem);
+}
 .NumericStepper_currencyIcon__xp-small_73 {
-        background-image: url('R.images.gui.maps.icons.library.XpIcon_1');
-        transform: translateY(3rem);
-    }
+    background-image: url('R.images.gui.maps.icons.library.XpIcon_1');
+    transform: translateY(3rem);
+}
 .NumericStepper_currencyIcon__xp-medium_ef {
-        width: 23rem;
-        height: 22rem;
-        background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
-        transform: translateY(4rem);
-    }
+    width: 23rem;
+    height: 22rem;
+    background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
+    transform: translateY(4rem);
+}
 .NumericStepper_currencyIcon__xp-large_3e {
-        width: 23rem;
-        height: 22rem;
-        background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
-        transform: translate(-2rem, 14rem);
-    }
+    width: 23rem;
+    height: 22rem;
+    background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
+    transform: translate(-2rem, 14rem);
+}
 .NumericStepper_base__isDisabled_ac .NumericStepper_currencyIcon_8e {
-        filter: brightness(.3);
-    }
+    filter: brightness(0.3);
+}
 .NumericStepper_base__small_11 .NumericStepper_dummyValue_0c {
-        padding: 0 4rem 2rem 6rem;
-        font-size: 14rem;
-    }
+    padding: 0 4rem 2rem 6rem;
+    font-size: 14rem;
+}
 .NumericStepper_base__medium_9d .NumericStepper_dummyValue_0c {
-        padding: 0 8rem 1rem 9rem;
-        font-size: 20rem;
-    }
+    padding: 0 8rem 1rem 9rem;
+    font-size: 20rem;
+}
 .NumericStepper_base__large_dc .NumericStepper_dummyValue_0c {
-        padding: 0 12rem 3rem 17rem;
-        font-size: 24rem;
-    }
+    padding: 0 12rem 3rem 17rem;
+    font-size: 24rem;
+}
 .NumericStepper_base__withCurrency-small_de .NumericStepper_dummyValue_0c {
-        padding-right: 2rem;
-    }
+    padding-right: 2rem;
+}
 .NumericStepper_base__withCurrency-medium_69 .NumericStepper_dummyValue_0c {
-        padding-right: 3rem;
-    }
+    padding-right: 3rem;
+}
 .NumericStepper_base__withCurrency-large_a1 .NumericStepper_dummyValue_0c {
-        padding-right: 4rem;
-    }
+    padding-right: 4rem;
+}
 .NumericStepper_dummyValue_0c {
     max-width: 100%;
     white-space: nowrap;
@@ -1456,83 +1493,87 @@ body {
     cursor: pointer;
 }
 @media (min-width: 1920px) {
-.NumericStepper_buttonIncrement_16,
-.NumericStepper_buttonDecrement_c8 {
-        background-size: 200% 400%
+    .NumericStepper_buttonIncrement_16,
+    .NumericStepper_buttonDecrement_c8 {
+        background-size: 200% 400%;
+    }
 }
-    }
-.NumericStepper_buttonIncrement__small_f6, .NumericStepper_buttonDecrement__small_36 {
-        width: 19rem;
-        height: 11rem;
-        background-image: url('R.images.gui.maps.icons.components.numerical_stepper.stepper_small_buttons');
-    }
-.NumericStepper_buttonIncrement__medium_fd, .NumericStepper_buttonDecrement__medium_d1 {
-        width: 27rem;
-        height: 15rem;
-        background-image: url('R.images.gui.maps.icons.components.numerical_stepper.stepper_medium_buttons');
-    }
-.NumericStepper_buttonIncrement__large_56, .NumericStepper_buttonDecrement__large_63 {
-        width: 43rem;
-        height: 24rem;
-        background-image: url('R.images.gui.maps.icons.components.numerical_stepper.stepper_large_buttons');
-    }
-.NumericStepper_buttonIncrement__isDisabled_68, .NumericStepper_buttonDecrement__isDisabled_d9 {
-        cursor: default;
-    }
-.NumericStepper_buttonIncrement__small_f6:hover {
-        background-position: 0 -11rem;
-    }
-.NumericStepper_buttonIncrement__medium_fd:hover {
-        background-position: 0 -15rem;
-    }
-.NumericStepper_buttonIncrement__large_56:hover {
-        background-position: 0 -24rem;
-    }
-.NumericStepper_buttonIncrement__isActive-small_2a,
-    .NumericStepper_buttonIncrement__isActive-small_2a:hover {
-        background-position: 0 -22rem;
-    }
-.NumericStepper_buttonIncrement__isActive-medium_c2,
-    .NumericStepper_buttonIncrement__isActive-medium_c2:hover {
-        background-position: 0 -30rem;
-    }
-.NumericStepper_buttonIncrement__isActive-large_91,
-    .NumericStepper_buttonIncrement__isActive-large_91:hover {
-        background-position: 0 -48rem;
-    }
+.NumericStepper_buttonIncrement__small_f6,
+.NumericStepper_buttonDecrement__small_36 {
+    width: 19rem;
+    height: 11rem;
+    background-image: url('R.images.gui.maps.icons.components.numerical_stepper.stepper_small_buttons');
+}
+.NumericStepper_buttonIncrement__medium_fd,
+.NumericStepper_buttonDecrement__medium_d1 {
+    width: 27rem;
+    height: 15rem;
+    background-image: url('R.images.gui.maps.icons.components.numerical_stepper.stepper_medium_buttons');
+}
+.NumericStepper_buttonIncrement__large_56,
+.NumericStepper_buttonDecrement__large_63 {
+    width: 43rem;
+    height: 24rem;
+    background-image: url('R.images.gui.maps.icons.components.numerical_stepper.stepper_large_buttons');
+}
 .NumericStepper_buttonIncrement__isDisabled_68,
-    .NumericStepper_buttonIncrement__isDisabled_68:hover {
-        background-position: 0 100%;
-    }
+.NumericStepper_buttonDecrement__isDisabled_d9 {
+    cursor: default;
+}
+.NumericStepper_buttonIncrement__small_f6:hover {
+    background-position: 0 -11rem;
+}
+.NumericStepper_buttonIncrement__medium_fd:hover {
+    background-position: 0 -15rem;
+}
+.NumericStepper_buttonIncrement__large_56:hover {
+    background-position: 0 -24rem;
+}
+.NumericStepper_buttonIncrement__isActive-small_2a,
+.NumericStepper_buttonIncrement__isActive-small_2a:hover {
+    background-position: 0 -22rem;
+}
+.NumericStepper_buttonIncrement__isActive-medium_c2,
+.NumericStepper_buttonIncrement__isActive-medium_c2:hover {
+    background-position: 0 -30rem;
+}
+.NumericStepper_buttonIncrement__isActive-large_91,
+.NumericStepper_buttonIncrement__isActive-large_91:hover {
+    background-position: 0 -48rem;
+}
+.NumericStepper_buttonIncrement__isDisabled_68,
+.NumericStepper_buttonIncrement__isDisabled_68:hover {
+    background-position: 0 100%;
+}
 .NumericStepper_buttonDecrement_c8 {
     margin-top: -1rem;
     background-position: 100% 0;
 }
 .NumericStepper_buttonDecrement__small_36:hover {
-        background-position: 100% -11rem;
-    }
+    background-position: 100% -11rem;
+}
 .NumericStepper_buttonDecrement__medium_d1:hover {
-        background-position: 100% -15rem;
-    }
+    background-position: 100% -15rem;
+}
 .NumericStepper_buttonDecrement__large_63:hover {
-        background-position: 100% -24rem;
-    }
+    background-position: 100% -24rem;
+}
 .NumericStepper_buttonDecrement__isActive-small_21,
-    .NumericStepper_buttonDecrement__isActive-small_21:hover {
-        background-position: 100% -22rem;
-    }
+.NumericStepper_buttonDecrement__isActive-small_21:hover {
+    background-position: 100% -22rem;
+}
 .NumericStepper_buttonDecrement__isActive-medium_a3,
-    .NumericStepper_buttonDecrement__isActive-medium_a3:hover {
-        background-position: 100% -30rem;
-    }
+.NumericStepper_buttonDecrement__isActive-medium_a3:hover {
+    background-position: 100% -30rem;
+}
 .NumericStepper_buttonDecrement__isActive-large_8b,
-    .NumericStepper_buttonDecrement__isActive-large_8b:hover {
-        background-position: 100% -48rem;
-    }
+.NumericStepper_buttonDecrement__isActive-large_8b:hover {
+    background-position: 100% -48rem;
+}
 .NumericStepper_buttonDecrement__isDisabled_d9,
-    .NumericStepper_buttonDecrement__isDisabled_d9:hover {
-        background-position: 100% 100%;
-    }
+.NumericStepper_buttonDecrement__isDisabled_d9:hover {
+    background-position: 100% 100%;
+}
 
 .ExchangePanel_base_bd {
     display: flex;
@@ -1549,9 +1590,9 @@ body {
 }
 
 .ExchangePanel_arrow__small_30 {
-        width: 16rem;
-        height: 32rem;
-    }
+    width: 16rem;
+    height: 32rem;
+}
 
 .Layout_base_81 {
     display: flex;
@@ -1563,15 +1604,15 @@ body {
     position: relative;
 }
 
-    .Layout_base__small_cb,
-    .Layout_base__medium_df {
-        width: 1310rem;
-    }
+.Layout_base__small_cb,
+.Layout_base__medium_df {
+    width: 1310rem;
+}
 
-    .Layout_base__large_f6,
-    .Layout_base__huge_d2 {
-        width: 1560rem;
-    }
+.Layout_base__large_f6,
+.Layout_base__huge_d2 {
+    width: 1560rem;
+}
 .Layout_header_46 {
     display: flex;
     justify-content: space-between;
@@ -1579,13 +1620,13 @@ body {
     margin: 10rem 0 20rem;
 }
 .Layout_base__compare_56 .Layout_header_46 {
-        flex-direction: column;
-        align-items: center;
-    }
+    flex-direction: column;
+    align-items: center;
+}
 .Layout_header__small_cb,
-    .Layout_header__tiny_4b {
-        margin: 10rem 0 16rem;
-    }
+.Layout_header__tiny_4b {
+    margin: 10rem 0 16rem;
+}
 .Layout_content_79 {
     display: flex;
     justify-content: space-between;
@@ -1593,34 +1634,34 @@ body {
     width: 100%;
 }
 .Layout_base__compare_56 .Layout_content_79 {
-        justify-content: center;
-        margin-top: 7rem;
-        padding-top: 20rem;
-        padding-bottom: 10rem;
-    }
+    justify-content: center;
+    margin-top: 7rem;
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+}
 .Layout_main_df {
     width: 596rem;
-    border-top: 1rem solid rgba(255,255,255, .1);
-    border-bottom: 1rem solid rgba(255,255,255, .1);
+    border-top: 1rem solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.1);
 }
 .Layout_base__compare_56 .Layout_main_df {
-        width: 902rem;
-    }
+    width: 902rem;
+}
 .Layout_base__small_cb .Layout_main_df,
-    .Layout_base__medium_df .Layout_main_df {
-        width: 902rem;
-    }
+.Layout_base__medium_df .Layout_main_df {
+    width: 902rem;
+}
 .Layout_base__large_f6 .Layout_main_df,
-    .Layout_base__huge_d2 .Layout_main_df {
-        width: 1102rem;
-    }
+.Layout_base__huge_d2 .Layout_main_df {
+    width: 1102rem;
+}
 .Layout_inner_3e {
     margin: 0 -16rem;
 }
 .Layout_base__large_f6 .Layout_inner_3e,
-    .Layout_base__huge_d2 .Layout_inner_3e {
-        margin: 0 -20rem;
-    }
+.Layout_base__huge_d2 .Layout_inner_3e {
+    margin: 0 -20rem;
+}
 .Layout_footer_f4 {
     display: flex;
     flex-direction: column;
@@ -1634,9 +1675,9 @@ body {
     align-items: center;
 }
 
-    .Storage_base__reversed_8f {
-        flex-direction: row-reverse;
-    }
+.Storage_base__reversed_8f {
+    flex-direction: row-reverse;
+}
 
 .Storage_icon_6a {
     width: 30rem;
@@ -1645,42 +1686,42 @@ body {
 }
 
 .Storage_count_7a {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
 .Storage_base__reversed_8f .Storage_count_7a {
-        color: #C9C9B6;
-        font-size: 22rem;
-        font-weight: 700;
-        line-height: 1.2;
-        margin-top: -4rem;
-    }
+    color: #c9c9b6;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: -4rem;
+}
 
 .Storage_count__zero_54 {
-        color: #B70000;
-    }
+    color: #b70000;
+}
 
 .Animation_base_ab {
     display: flex;
     position: relative;
 }
 
-    .Animation_base__withAnimation_41 {
-        opacity: 0;
-        animation: Animation_action-show_f8 .2s forwards;
-    }
+.Animation_base__withAnimation_41 {
+    opacity: 0;
+    animation: Animation_action-show_f8 0.2s forwards;
+}
 
-    .Animation_base__enter_1e {
-        animation: Animation_action-show_f8 .2s forwards;
-    }
+.Animation_base__enter_1e {
+    animation: Animation_action-show_f8 0.2s forwards;
+}
 
-    .Animation_base__exit_88 {
-        animation: Animation_action-hide_44 .2s forwards;
-        pointer-events: none;
-    }
+.Animation_base__exit_88 {
+    animation: Animation_action-hide_44 0.2s forwards;
+    pointer-events: none;
+}
 
 @keyframes Animation_action-show_f8 {
     0% {
@@ -1713,50 +1754,50 @@ body {
     cursor: pointer;
 }
 
-    .Checkbox_base__disabled_08 {
-        pointer-events: none;
-    }
+.Checkbox_base__disabled_08 {
+    pointer-events: none;
+}
 
-    .Checkbox_base__center_52 {
-        align-items: center;
-    }
+.Checkbox_base__center_52 {
+    align-items: center;
+}
 
-    .Checkbox_base__bottom_28 {
-        align-items: flex-end;
-    }
+.Checkbox_base__bottom_28 {
+    align-items: flex-end;
+}
 
 .Checkbox_input_37 {
-    border: 1rem solid rgba(190, 190, 190, .45);
+    border: 1rem solid rgba(190, 190, 190, 0.45);
     border-radius: 2rem;
-    background-color: rgba(0, 0, 0, .3);
-    opacity: .6;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0.6;
     position: relative;
-    transition: background-color .1s linear;
+    transition: background-color 0.1s linear;
 }
 
 .Checkbox_base__mouseDown_45 .Checkbox_input_37 {
-        background-color: rgba(0, 0, 0, .4);
-    }
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
 .Checkbox_base__small_18 .Checkbox_input_37 {
-        width: 12rem;
-        height: 12rem;
-    }
+    width: 12rem;
+    height: 12rem;
+}
 
 .Checkbox_base__medium_12 .Checkbox_input_37 {
-        width: 18rem;
-        height: 18rem;
-    }
+    width: 18rem;
+    height: 18rem;
+}
 
 .Checkbox_base__large_f7 .Checkbox_input_37 {
-        width: 24rem;
-        height: 24rem;
-    }
+    width: 24rem;
+    height: 24rem;
+}
 
 .Checkbox_base__extraLarge_c9 .Checkbox_input_37 {
-        width: 32rem;
-        height: 32rem;
-    }
+    width: 32rem;
+    height: 32rem;
+}
 
 .Checkbox_alertOverlay_52 {
     position: absolute;
@@ -1766,20 +1807,20 @@ body {
     left: -1rem;
     border: 1rem solid #feab34;
     border-radius: 2rem;
-    box-shadow: inset 0 0 9rem rgba(0, 0, 0, .25);
+    box-shadow: inset 0 0 9rem rgba(0, 0, 0, 0.25);
     opacity: 0;
     pointer-events: none;
 }
 
 .Checkbox_base__alert_b7 .Checkbox_alertOverlay_52 {
-        animation: Checkbox_blink_5e 2s ease-in-out infinite;
-    }
+    animation: Checkbox_blink_5e 2s ease-in-out infinite;
+}
 
 .Checkbox_base__alert_b7.Checkbox_base__checked_a2 .Checkbox_alertOverlay_52,
-    .Checkbox_base__alert_b7.Checkbox_base__disabled_08 .Checkbox_alertOverlay_52 {
-        opacity: 0;
-        animation: initial;
-    }
+.Checkbox_base__alert_b7.Checkbox_base__disabled_08 .Checkbox_alertOverlay_52 {
+    opacity: 0;
+    animation: initial;
+}
 
 .Checkbox_inputHoverOverlay_36 {
     position: absolute;
@@ -1789,17 +1830,17 @@ body {
     left: 0;
     background-image: linear-gradient(to top, #201f1c, #494741);
     opacity: 0;
-    transition: opacity .1s linear;
+    transition: opacity 0.1s linear;
     pointer-events: none;
 }
 
 .Checkbox_base_36:hover .Checkbox_inputHoverOverlay_36 {
-        opacity: .8;
-    }
+    opacity: 0.8;
+}
 
 .Checkbox_base_36.Checkbox_base__mouseDown_45:hover .Checkbox_inputHoverOverlay_36 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .Checkbox_highlight_b8 {
     background: no-repeat 50% / contain;
@@ -1808,69 +1849,69 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: opacity .1s linear;
+    transition: opacity 0.1s linear;
     pointer-events: none;
 }
 
 .Checkbox_base__checked_a2 .Checkbox_highlight_b8 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 .Checkbox_base__checked_a2.Checkbox_base__disabled_08 .Checkbox_highlight_b8 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .Checkbox_base__small_18 .Checkbox_highlight_b8 {
-        width: 34rem;
-        height: 34rem;
-    }
+    width: 34rem;
+    height: 34rem;
+}
 
 .Checkbox_base__medium_12 .Checkbox_highlight_b8 {
-        width: 40rem;
-        height: 40rem;
-    }
+    width: 40rem;
+    height: 40rem;
+}
 
 .Checkbox_base__large_f7 .Checkbox_highlight_b8 {
-        width: 46rem;
-        height: 46rem;
-    }
+    width: 46rem;
+    height: 46rem;
+}
 
 .Checkbox_base__extraLarge_c9 .Checkbox_highlight_b8 {
-        width: 54rem;
-        height: 54rem;
-    }
+    width: 54rem;
+    height: 54rem;
+}
 
 .Checkbox_base__main_3a.Checkbox_base__small_18 .Checkbox_highlight_b8 {
-        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_s');
-    }
+    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_s');
+}
 
 .Checkbox_base__main_3a.Checkbox_base__medium_12 .Checkbox_highlight_b8 {
-        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_m');
-    }
+    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_m');
+}
 
 .Checkbox_base__main_3a.Checkbox_base__large_f7 .Checkbox_highlight_b8 {
-        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_l');
-    }
+    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_l');
+}
 
 .Checkbox_base__main_3a.Checkbox_base__extraLarge_c9 .Checkbox_highlight_b8 {
-        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_xl');
-    }
+    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_xl');
+}
 
 .Checkbox_base__primary_ab.Checkbox_base__small_18 .Checkbox_highlight_b8 {
-        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_s_green');
-    }
+    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_s_green');
+}
 
 .Checkbox_base__primary_ab.Checkbox_base__medium_12 .Checkbox_highlight_b8 {
-        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_m_green');
-    }
+    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_m_green');
+}
 
 .Checkbox_base__primary_ab.Checkbox_base__large_f7 .Checkbox_highlight_b8 {
-        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_l_green');
-    }
+    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_l_green');
+}
 
 .Checkbox_base__primary_ab.Checkbox_base__extraLarge_c9 .Checkbox_highlight_b8 {
-        background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_xl_green');
-    }
+    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_xl_green');
+}
 
 .Checkbox_checkmark_60 {
     background: center / contain no-repeat;
@@ -1880,68 +1921,68 @@ body {
 }
 
 .Checkbox_base__checked_a2 .Checkbox_checkmark_60 {
-        /* Using a transition causes the image to blink on appear */
-        animation: Checkbox_fadeIn_1a .1s linear 0 normal forwards;
-    }
+    /* Using a transition causes the image to blink on appear */
+    animation: Checkbox_fadeIn_1a 0.1s linear 0 normal forwards;
+}
 
 .Checkbox_base__checked_a2.Checkbox_base__disabled_08 .Checkbox_checkmark_60 {
-        opacity: .5;
-    }
+    opacity: 0.5;
+}
 
 .Checkbox_base__small_18 .Checkbox_checkmark_60 {
-        width: 11rem;
-        height: 11rem;
-    }
+    width: 11rem;
+    height: 11rem;
+}
 
 .Checkbox_base__medium_12 .Checkbox_checkmark_60 {
-        width: 19rem;
-        height: 20rem;
-        transform: translate(1rem, -4rem);
-    }
+    width: 19rem;
+    height: 20rem;
+    transform: translate(1rem, -4rem);
+}
 
 .Checkbox_base__large_f7 .Checkbox_checkmark_60 {
-        width: 23rem;
-        height: 24rem;
-        transform: translate(3rem, -3rem);
-    }
+    width: 23rem;
+    height: 24rem;
+    transform: translate(3rem, -3rem);
+}
 
 .Checkbox_base__extraLarge_c9 .Checkbox_checkmark_60 {
-        width: 36rem;
-        height: 36rem;
-        transform: translate(2rem, -8rem);
-    }
+    width: 36rem;
+    height: 36rem;
+    transform: translate(2rem, -8rem);
+}
 
 .Checkbox_base__main_3a.Checkbox_base__small_18 .Checkbox_checkmark_60 {
-        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_s');
-    }
+    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_s');
+}
 
 .Checkbox_base__main_3a.Checkbox_base__medium_12 .Checkbox_checkmark_60 {
-        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_m');
-    }
+    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_m');
+}
 
 .Checkbox_base__main_3a.Checkbox_base__large_f7 .Checkbox_checkmark_60 {
-        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_l');
-    }
+    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_l');
+}
 
 .Checkbox_base__main_3a.Checkbox_base__extraLarge_c9 .Checkbox_checkmark_60 {
-        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_xl');
-    }
+    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_xl');
+}
 
 .Checkbox_base__primary_ab.Checkbox_base__small_18 .Checkbox_checkmark_60 {
-        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_s_green');
-    }
+    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_s_green');
+}
 
 .Checkbox_base__primary_ab.Checkbox_base__medium_12 .Checkbox_checkmark_60 {
-        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_m_green');
-    }
+    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_m_green');
+}
 
 .Checkbox_base__primary_ab.Checkbox_base__large_f7 .Checkbox_checkmark_60 {
-        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_l_green');
-    }
+    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_l_green');
+}
 
 .Checkbox_base__primary_ab.Checkbox_base__extraLarge_c9 .Checkbox_checkmark_60 {
-        background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_xl_green');
-    }
+    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_xl_green');
+}
 
 .Checkbox_label_bc {
     display: flex;
@@ -1957,21 +1998,21 @@ body {
     color: #8c8c7e;
     font-size: 14rem;
     line-height: 1.15;
-    transition: color .1s linear;
+    transition: color 0.1s linear;
 }
 
 .Checkbox_base__extraLarge_c9 .Checkbox_labelContent_64 {
-        font-size: 16rem;
-    }
+    font-size: 16rem;
+}
 
 .Checkbox_base_36:hover .Checkbox_labelContent_64 {
-        color: #c8c8b6;
-    }
+    color: #c8c8b6;
+}
 
 .Checkbox_base__disabled_08 .Checkbox_labelContent_64,
-    .Checkbox_base__disabled_08:hover .Checkbox_labelContent_64 {
-        color: #37362e;
-    }
+.Checkbox_base__disabled_08:hover .Checkbox_labelContent_64 {
+    color: #37362e;
+}
 
 @keyframes Checkbox_fadeIn_1a {
     0% {
@@ -2020,8 +2061,8 @@ body {
 }
 
 .Price_price__discount_29 {
-        padding-right: 20rem;
-    }
+    padding-right: 20rem;
+}
 
 .TotalPrice_base_d9 {
     display: flex;
@@ -2029,7 +2070,7 @@ body {
 }
 
 .TotalPrice_message_66 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -2040,8 +2081,8 @@ body {
 }
 
 .TotalPrice_message__hidden_29 {
-        display: none;
-    }
+    display: none;
+}
 
 .TotalPrice_plus_f0 {
     width: 24rem;
@@ -2060,42 +2101,42 @@ body {
     z-index: 1;
 }
 
-    .App_base__tiny_5e {
-        justify-content: center;
-    }
+.App_base__tiny_5e {
+    justify-content: center;
+}
 
-    .App_base__small_1d,
-    .App_base__medium_2a {
-        width: 902rem;
-    }
+.App_base__small_1d,
+.App_base__medium_2a {
+    width: 902rem;
+}
 
-    .App_base__large_8d,
-    .App_base__huge_6d {
-        width: 1102rem;
-    }
+.App_base__large_8d,
+.App_base__huge_6d {
+    width: 1102rem;
+}
 
-    .App_base__dialog_fa {
-        flex-direction: column-reverse;
-    }
+.App_base__dialog_fa {
+    flex-direction: column-reverse;
+}
 .App_storage_d5 {
     display: flex;
     align-items: center;
 }
 .App_storage__medium_51,
-    .App_storage__large_8a,
-    .App_storage__huge_b6 {
-        padding-top: 4rem;
-    }
+.App_storage__large_8a,
+.App_storage__huge_b6 {
+    padding-top: 4rem;
+}
 .App_from_a4 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
     margin-right: 3rem;
 }
 .App_base__dialog_fa .App_from_a4 {
-        display: block;
-    }
+    display: block;
+}
 .App_plus_04 {
     width: 24rem;
     height: 24rem;
@@ -2111,10 +2152,10 @@ body {
     left: 0;
 }
 .App_renewal__dialog_ba {
-        margin-top: 15rem;
-        position: relative;
-        top: 0;
-    }
+    margin-top: 15rem;
+    position: relative;
+    top: 0;
+}
 .App_control_fc {
     margin-left: 20rem;
 }
@@ -2126,8 +2167,8 @@ body {
     top: -2rem;
 }
 .App_totalPrice__mixed_cc {
-        margin-left: 0;
-    }
+    margin-left: 0;
+}
 
 .ExchangeDialogFooter_base_45 {
     display: flex;
@@ -2142,4 +2183,3 @@ body {
 .ExchangeDialogFooter_renewal_e2 {
     margin: 5rem 0 15rem;
 }
-

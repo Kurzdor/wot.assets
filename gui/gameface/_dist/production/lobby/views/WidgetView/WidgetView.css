@@ -9,12 +9,12 @@
     font-weight: 700;
     line-height: 1.2;
     display: flex;
-    background: rgba(0,0,0, .7);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .mediaMedium .Label_text_52 {
-        font-size: 28rem;
-        line-height: 1;
+    font-size: 28rem;
+    line-height: 1;
 }
 
 .Label_textGlow_4e {
@@ -25,13 +25,13 @@
 }
 
 .Label_base__inProgress_ba .Label_textGlow_4e {
-        text-shadow: 0 -1rem 0 #ffeab2;
-    }
+    text-shadow: 0 -1rem 0 #ffeab2;
+}
 
 .Label_textGlow__inner_7b {
-        color: #000;
-        text-shadow: 0 2rem 1rem #000;
-    }
+    color: #000;
+    text-shadow: 0 2rem 1rem #000;
+}
 
 .Label_textWithBlend_07 {
     display: flex;
@@ -50,8 +50,8 @@
 }
 
 .Label_base__inProgress_ba .Label_textMask_f7 {
-        background-image: url('R.images.battle_royale.gui.maps.widget.font_mask.in_progress.font_texture');
-    }
+    background-image: url('R.images.battle_royale.gui.maps.widget.font_mask.in_progress.font_texture');
+}
 
 .Widget_base_55 {
     display: flex;
@@ -62,14 +62,14 @@
     position: relative;
     top: -5rem;
     transform: translateY(0rem);
-    transition: transform .12s ease-in-out;
+    transition: transform 0.12s ease-in-out;
     cursor: pointer;
 }
 
-    .Widget_base_55:hover {
-        filter: brightness(1.15);
-        transform: translateY(4rem);
-    }
+.Widget_base_55:hover {
+    filter: brightness(1.15);
+    transform: translateY(4rem);
+}
 
 .Widget_icon_de {
     width: 130rem;
@@ -82,32 +82,33 @@
 
 .Widget_icon__inProgress_e5 {
     background: url('R.images.battle_royale.gui.maps.widget.in_progress.main_icon_130') no-repeat center / contain;
-    }
+}
 
 .mediaSmall .Widget_icon__inProgress_e5 {
-        background-image: url('R.images.battle_royale.gui.maps.widget.in_progress.main_icon_150');
+    background-image: url('R.images.battle_royale.gui.maps.widget.in_progress.main_icon_150');
 }
 
 .Widget_icon__completed_4d,
-    .Widget_icon__animationWidget_5f {
+.Widget_icon__animationWidget_5f {
     background: url('R.images.battle_royale.gui.maps.widget.completed.main_icon_130') no-repeat center / contain;
-    }
+}
 
-.mediaSmall .Widget_icon__completed_4d, .mediaSmall .Widget_icon__animationWidget_5f {
-        background-image: url('R.images.battle_royale.gui.maps.widget.completed.main_icon_150');
+.mediaSmall .Widget_icon__completed_4d,
+.mediaSmall .Widget_icon__animationWidget_5f {
+    background-image: url('R.images.battle_royale.gui.maps.widget.completed.main_icon_150');
 }
 
 .Widget_icon__alertMode_c7 {
     background: url('R.images.battle_royale.gui.maps.widget.curfew.main_icon_130') no-repeat center / contain;
-    }
+}
 
 .mediaSmall .Widget_icon__alertMode_c7 {
-        background-image: url('R.images.battle_royale.gui.maps.widget.curfew.main_icon_150');
+    background-image: url('R.images.battle_royale.gui.maps.widget.curfew.main_icon_150');
 }
 
 .mediaMedium .Widget_icon_de {
-        width: 150rem;
-        height: 150rem;
+    width: 150rem;
+    height: 150rem;
 }
 
 .Widget_inProgressWidget_6c {
@@ -117,7 +118,7 @@
 }
 
 .mediaSmall .Widget_inProgressWidget_6c {
-        background-image: url('R.images.battle_royale.gui.maps.widget.in_progress.main_icon_150');
+    background-image: url('R.images.battle_royale.gui.maps.widget.in_progress.main_icon_150');
 }
 
 .Widget_inProgressWidget_6c {
@@ -128,14 +129,14 @@
 }
 
 .Widget_icon__animationWidget_5f .Widget_inProgressWidget_6c {
-        clip-path: polygon(51.78% 92.25%, 75.1% 69.23%, 75.22% 9.58%, 26.02% 9.58%, 26.02% 71.24%);
-        animation: Widget_show_79 .8s .2s forwards;
-    }
+    clip-path: polygon(51.78% 92.25%, 75.1% 69.23%, 75.22% 9.58%, 26.02% 9.58%, 26.02% 71.24%);
+    animation: Widget_show_79 0.8s 0.2s forwards;
+}
 
 .mediaMedium .Widget_icon__animationWidget_5f .Widget_inProgressWidget_6c {
-            clip-path: polygon(49.67% 91.61%, 75.17% 67.75%, 75.07% 7.39%, 24.16% 7.39%, 24.16% 67.75%);
-            width: 150rem;
-            height: 150rem;
+    clip-path: polygon(49.67% 91.61%, 75.17% 67.75%, 75.07% 7.39%, 24.16% 7.39%, 24.16% 67.75%);
+    width: 150rem;
+    height: 150rem;
 }
 
 .Widget_flash_98 {
@@ -150,12 +151,12 @@
 }
 
 .Widget_icon__animationWidget_5f .Widget_flash_98 {
-        animation: Widget_show-flash_8c 2.5s .5s;
-    }
+    animation: Widget_show-flash_8c 2.5s 0.5s;
+}
 
 .mediaMedium .Widget_icon__animationWidget_5f .Widget_flash_98 {
-            width: 150rem;
-            height: 150rem;
+    width: 150rem;
+    height: 150rem;
 }
 
 .Widget_label_be {
@@ -167,17 +168,17 @@
 }
 
 .mediaMedium .Widget_label_be {
-        margin-bottom: 25rem;
+    margin-bottom: 25rem;
 }
 
 .mediaMedium .Widget_icon__inProgress_e5 .Widget_label_be {
-            left: -1rem;
+    left: -1rem;
 }
 
 .Widget_icon__animationWidget_5f .Widget_label_be {
-        opacity: 0;
-        animation: Widget_show_79 .5s .2s forwards;
-    }
+    opacity: 0;
+    animation: Widget_show_79 0.5s 0.2s forwards;
+}
 
 .Widget_backgroundImage_04 {
     position: absolute;
@@ -194,11 +195,11 @@
     }
 
     50% {
-        opacity: .5;
+        opacity: 0.5;
     }
 
     70% {
-        opacity: .7;
+        opacity: 0.7;
     }
 
     99% {
@@ -221,11 +222,11 @@
     }
 
     75% {
-        opacity: .8;
+        opacity: 0.8;
     }
 
     80% {
-        opacity: .6;
+        opacity: 0.6;
     }
 
     100% {
@@ -239,4 +240,3 @@
     align-items: flex-start;
     overflow: hidden;
 }
-

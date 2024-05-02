@@ -1,10 +1,10 @@
 /* stylelint-disable */
-[lang=ja],
-[lang=ko],
-[lang=zh_tw],
-[lang=zh_sg],
-[lang=zh_ch],
-[lang=th] {
+[lang='ja'],
+[lang='ko'],
+[lang='zh_tw'],
+[lang='zh_sg'],
+[lang='zh_ch'],
+[lang='th'] {
     overflow-wrap: break-word;
 }
 /* stylelint-enable */
@@ -13,7 +13,13 @@
     flex-direction: column;
     width: 400rem;
     padding: 24rem;
-    background: linear-gradient(180deg, rgba(51, 51, 41, .3) 0%, rgba(51, 51, 41, 0) 15.62%, rgba(51, 51, 41, 0) 88.02%, rgba(51, 51, 41, .1) 100%);
+    background: linear-gradient(
+        180deg,
+        rgba(51, 51, 41, 0.3) 0%,
+        rgba(51, 51, 41, 0) 15.62%,
+        rgba(51, 51, 41, 0) 88.02%,
+        rgba(51, 51, 41, 0.1) 100%
+    );
 }
 .Content_topTitle_d3 {
     margin-bottom: 12rem;
@@ -47,17 +53,17 @@
     margin: 0;
 }
 
-    .TaggedText_paragraph__left_6f {
-        justify-content: flex-start;
-    }
+.TaggedText_paragraph__left_6f {
+    justify-content: flex-start;
+}
 
-    .TaggedText_paragraph__right_01 {
-        justify-content: flex-end;
-    }
+.TaggedText_paragraph__right_01 {
+    justify-content: flex-end;
+}
 
-    .TaggedText_paragraph__center_ab {
-        justify-content: center;
-    }
+.TaggedText_paragraph__center_ab {
+    justify-content: center;
+}
 
 .TaggedText_neutral_f3 {
     color: #cbac77;
@@ -81,10 +87,9 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.atlases.components.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
-
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}

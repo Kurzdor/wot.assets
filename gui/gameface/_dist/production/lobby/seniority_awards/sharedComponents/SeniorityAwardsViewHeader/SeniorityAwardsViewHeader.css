@@ -12,10 +12,10 @@
 }
 
 .FormatGradientText_gradientText__copied_f8 {
-        color: #ddab61;
-        position: absolute;
-        mask-image: linear-gradient(transparent, #fff);
-    }
+    color: #ddab61;
+    position: absolute;
+    mask-image: linear-gradient(transparent, #fff);
+}
 
 .HeaderButton_base_a0 {
     display: flex;
@@ -27,7 +27,7 @@
 }
 
 .HeaderButton_caption_06 {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 16rem;
     line-height: 20rem;
     letter-spacing: 1rem;
@@ -61,7 +61,7 @@
 .SeniorityAwardsViewHeader_light_6e {
     width: 950rem;
     height: 190rem;
-    background-image: radial-gradient(50% 50% at 50% 50%, rgba(40,40,67, .5), transparent);
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(40, 40, 67, 0.5), transparent);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -70,23 +70,23 @@
 }
 
 .mediaSmall .SeniorityAwardsViewHeader_light_6e {
-        width: 1205rem;
-        height: 237rem;
+    width: 1205rem;
+    height: 237rem;
 }
 
 .mediaMedium .SeniorityAwardsViewHeader_light_6e {
-        width: 1165rem;
-        height: 225rem;
+    width: 1165rem;
+    height: 225rem;
 }
 
 .mediaLarge .SeniorityAwardsViewHeader_light_6e {
-        width: 1741rem;
-        height: 285rem;
+    width: 1741rem;
+    height: 285rem;
 }
 
 .mediaExtraLarge .SeniorityAwardsViewHeader_light_6e {
-        width: 2057rem;
-        height: 428rem;
+    width: 2057rem;
+    height: 428rem;
 }
 
 .SeniorityAwardsViewHeader_glow_4c {
@@ -110,16 +110,16 @@
 }
 
 .mediaSmall .SeniorityAwardsViewHeader_line_57 {
-        width: 300rem;
+    width: 300rem;
 }
 
 .mediaLarge .SeniorityAwardsViewHeader_line_57 {
-        width: 493rem;
+    width: 493rem;
 }
 
 .SeniorityAwardsViewHeader_line__inverted_23 {
-        transform: rotate(180deg);
-    }
+    transform: rotate(180deg);
+}
 
 .SeniorityAwardsViewHeader_square_ca {
     width: 8rem;
@@ -138,7 +138,7 @@
 }
 
 .mediaLarge .SeniorityAwardsViewHeader_title_f3 {
-        font-size: 36rem;
+    font-size: 36rem;
 }
 
 .SeniorityAwardsViewHeader_gradientText_2f {
@@ -146,13 +146,13 @@
 }
 
 .SeniorityAwardsViewHeader_gradientText__copied_1e {
-        color: #ddab61;
-        position: absolute;
-        mask-image: linear-gradient(transparent, #fff);
-    }
+    color: #ddab61;
+    position: absolute;
+    mask-image: linear-gradient(transparent, #fff);
+}
 
 .SeniorityAwardsViewHeader_subTitleBox_57 {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 45rem;
     font-weight: 700;
     line-height: 1.1;
@@ -161,11 +161,11 @@
 }
 
 .mediaLarge .SeniorityAwardsViewHeader_subTitleBox_57 {
-        font-size: 73rem;
+    font-size: 73rem;
 }
 
 .mediaExtraLarge .SeniorityAwardsViewHeader_subTitleBox_57 {
-        font-size: 100rem;
+    font-size: 100rem;
 }
 
 .SeniorityAwardsViewHeader_subTitle_27 {
@@ -177,6 +177,5 @@
 }
 
 .mediaLarge .SeniorityAwardsViewHeader_headerButton_50 {
-        margin-top: 13rem;
+    margin-top: 13rem;
 }
-

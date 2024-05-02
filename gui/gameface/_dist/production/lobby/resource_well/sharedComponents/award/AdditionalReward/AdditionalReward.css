@@ -4,7 +4,7 @@
 }
 
 .AdditionalReward_info_51 {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -14,10 +14,10 @@
 }
 
 .mediaMedium .AdditionalReward_info_51 {
-        color: #FFDD99;
-        font-size: 20rem;
-        font-weight: 400;
-        line-height: 1.2;
+    color: #ffdd99;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
 }
 
 .AdditionalReward_infoIco_60 {
@@ -45,18 +45,18 @@
 }
 
 .AdditionalReward_shadow__top_26 {
-        top: -59rem;
-        transform: translateX(-50%) rotate(180deg);
-    }
+    top: -59rem;
+    transform: translateX(-50%) rotate(180deg);
+}
 
 .mediaExtraLarge .AdditionalReward_shadow__top_26 {
-            top: -58rem;
+    top: -58rem;
 }
 
 .AdditionalReward_shadow__bottom_50 {
-        bottom: -59rem;
-        transform: translateX(-50%);
-    }
+    bottom: -59rem;
+    transform: translateX(-50%);
+}
 
 .AdditionalReward_bg_ea {
     position: absolute;
@@ -69,7 +69,7 @@
 }
 
 .mediaLarge .AdditionalReward_bg_ea {
-        background-image: url('R.images.gui.maps.icons.resourceWell.award.bg_m');
+    background-image: url('R.images.gui.maps.icons.resourceWell.award.bg_m');
 }
 
 .AdditionalReward_glow_a2 {
@@ -84,8 +84,8 @@
 }
 
 .mediaLarge .AdditionalReward_glow_a2 {
-        width: 220rem;
-        height: 220rem;
+    width: 220rem;
+    height: 220rem;
 }
 
 .AdditionalReward_reward_37 {
@@ -95,9 +95,9 @@
 }
 
 .mediaLarge .AdditionalReward_reward_37 {
-        width: 670rem;
-        height: 128rem;
-        background-image: url('R.images.gui.maps.icons.resourceWell.award.muzzle_m');
+    width: 670rem;
+    height: 128rem;
+    background-image: url('R.images.gui.maps.icons.resourceWell.award.muzzle_m');
 }
 
 .AdditionalReward_tooltip_6a {
@@ -108,11 +108,11 @@
 }
 
 .mediaLarge .AdditionalReward_tooltip_6a {
-        width: 180rem;
+    width: 180rem;
 }
 
 .AdditionalReward_number_a3 {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 28rem;
     font-weight: 700;
     line-height: 1.1;
@@ -123,7 +123,7 @@
 }
 
 .mediaLarge .AdditionalReward_number_a3 {
-        font-size: 42rem;
+    font-size: 42rem;
 }
 
 .AdditionalReward_texture_4c {
@@ -135,4 +135,3 @@
     background: url('R.images.gui.maps.icons.resourceWell.award.texture') no-repeat center / cover;
     mix-blend-mode: darken;
 }
-

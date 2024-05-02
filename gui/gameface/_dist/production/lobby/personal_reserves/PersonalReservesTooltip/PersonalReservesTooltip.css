@@ -4,12 +4,12 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.atlases.components.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .App_base_7b {
     display: flex;
@@ -18,26 +18,26 @@
     padding-right: 6rem;
 }
 
-    .App_base__disabled_e1 {
-        display: flex;
-        align-items: center;
-        width: 270rem;
-        height: 65rem;
-        padding: 12rem;
-        color: #8C8C7E;
-    }
+.App_base__disabled_e1 {
+    display: flex;
+    align-items: center;
+    width: 270rem;
+    height: 65rem;
+    padding: 12rem;
+    color: #8c8c7e;
+}
 
 .App_reserveBlock_dc {
     display: flex;
 }
 
 .App_reserveBlock_clan_31 {
-        margin-left: 6rem;
-    }
+    margin-left: 6rem;
+}
 
 .App_reserveBlock__disabled_f3 {
-        filter: saturate(0);
-    }
+    filter: saturate(0);
+}
 
 .App_tooltipSlot_cd {
     margin-right: 10rem;
@@ -52,34 +52,35 @@
     animation: Counter_show_be ease-in-out forwards;
 }
 
-    .Counter_base__big_19 {
-        min-width: 21rem;
-        height: 21rem;
-    }
+.Counter_base__big_19 {
+    min-width: 21rem;
+    height: 21rem;
+}
 
-    .Counter_base__small_3b {
-        min-width: 13rem;
-        height: 13rem;
-    }
+.Counter_base__small_3b {
+    min-width: 13rem;
+    height: 13rem;
+}
 
-    .Counter_base__empty_98 {
-        min-width: 6rem;
-        height: 6rem;
-    }
+.Counter_base__empty_98 {
+    min-width: 6rem;
+    height: 6rem;
+}
 
-    .Counter_base__animated_40 {
-        animation-duration: .2s;
-    }
+.Counter_base__animated_40 {
+    animation-duration: 0.2s;
+}
 
-    .Counter_base__hidden_56 {
-        animation-name: Counter_hide_b6;
-    }
+.Counter_base__hidden_56 {
+    animation-name: Counter_hide_b6;
+}
 .Counter_bg_74 {
     border: 1rem solid #fe4e0f;
     border-radius: 7rem;
-    box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
-            0 0 6rem rgba(254,103,0, .2),
-            0 0 12rem 4rem rgba(249,0,0, .3);
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 6rem rgba(254, 103, 0, 0.2),
+        0 0 12rem 4rem rgba(249, 0, 0, 0.3);
     background-image: url('R.images.gui.maps.icons.components.counter.pattern');
     position: absolute;
     top: 0;
@@ -89,11 +90,11 @@
     z-index: -1;
 }
 .Counter_base__big_19 .Counter_bg_74 {
-        border-radius: 11rem;
-    }
+    border-radius: 11rem;
+}
 .Counter_base__small_3b .Counter_bg_74 {
-        border-radius: 7rem;
-    }
+    border-radius: 7rem;
+}
 .Counter_value_3e {
     display: flex;
     padding: 0 4rem;
@@ -103,27 +104,27 @@
     white-space: nowrap;
 }
 .Counter_base__big_19 .Counter_value_3e {
-        padding: 0 7rem;
-        font-size: 14rem;
-        line-height: 20rem;
-    }
+    padding: 0 7rem;
+    font-size: 14rem;
+    line-height: 20rem;
+}
 .Counter_base__small_3b .Counter_value_3e {
-        font-size: 9rem;
-        line-height: 12rem;
-    }
+    font-size: 9rem;
+    line-height: 12rem;
+}
 .Counter_value__text_d6 {
-        padding: 0 7rem;
-    }
+    padding: 0 7rem;
+}
 .Counter_base__big_19 .Counter_value__text_d6 {
-            padding: 0 10rem;
-        }
+    padding: 0 10rem;
+}
 .Counter_base__small_3b .Counter_value__text_d6 {
-            padding: 0 5rem;
-            font-size: 10rem;
-        }
+    padding: 0 5rem;
+    font-size: 10rem;
+}
 .Counter_base__pattern_71 .Counter_value_3e {
-        display: none;
-    }
+    display: none;
+}
 .Counter_plus_15 {
     position: relative;
     top: -1rem;
@@ -132,16 +133,16 @@
     display: none;
 }
 .Counter_base__pattern_71 .Counter_pattern_83 {
-        display: block;
-        border-radius: 50%;
-        background-image: url('R.images.gui.maps.icons.components.counter.pattern');
-        opacity: .8;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
+    display: block;
+    border-radius: 50%;
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 @keyframes Counter_show_be {
     0% {
         transform: scale(0);
@@ -173,7 +174,7 @@
 }
 
 .Countdown_description_8d {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -200,157 +201,157 @@
     z-index: 1;
 }
 .Currency_base__small_af .Currency_icon_c5,
-    .Currency_base__big_bc .Currency_icon_c5,
-    .Currency_base__large_65 .Currency_icon_c5,
-    .Currency_base__extraLarge_4d .Currency_icon_c5 {
-        transform: translateY(3rem);
-    }
+.Currency_base__big_bc .Currency_icon_c5,
+.Currency_base__large_65 .Currency_icon_c5,
+.Currency_base__extraLarge_4d .Currency_icon_c5 {
+    transform: translateY(3rem);
+}
 .Currency_icon__credits-small_9b {
-        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
-    }
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
+}
 .Currency_icon__credits-big_96 {
-        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
-    }
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
+}
 .Currency_icon__credits-large_ac {
-        --icon-height: 48rem;
-        margin-left: -1rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_silver');
-    }
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_silver');
+}
 .Currency_base__large_65 .Currency_icon__credits-large_ac {
-            transform: translateY(4rem);
-        }
+    transform: translateY(4rem);
+}
 .Currency_icon__credits-extraLarge_16 {
-        --icon-height: 80rem;
-        margin-right: -2rem;
-        background-image: url('R.images.gui.maps.icons.library.credits_icon_80x80');
-    }
+    --icon-height: 80rem;
+    margin-right: -2rem;
+    background-image: url('R.images.gui.maps.icons.library.credits_icon_80x80');
+}
 .Currency_icon__gold-small_86 {
-        background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
-    }
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
+}
 .Currency_base__small_af .Currency_icon__gold-small_86 {
-            transform: translateY(2rem);
-        }
+    transform: translateY(2rem);
+}
 .Currency_icon__gold-big_15 {
-        background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
-    }
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
+}
 .Currency_base__big_bc .Currency_icon__gold-big_15 {
-            transform: translateY(4rem);
-        }
+    transform: translateY(4rem);
+}
 .Currency_icon__gold-large_36 {
-        --icon-height: 48rem;
-        margin-left: -1rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_gold');
-    }
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_gold');
+}
 .Currency_base__large_65 .Currency_icon__gold-large_36 {
-            transform: translateY(4rem);
-        }
+    transform: translateY(4rem);
+}
 .Currency_icon__gold-extraLarge_a0 {
-        --icon-height: 80rem;
-        background-image: url('R.images.gui.maps.icons.library.gold_icon_80x80');
-    }
+    --icon-height: 80rem;
+    background-image: url('R.images.gui.maps.icons.library.gold_icon_80x80');
+}
 .Currency_icon__crystal-small_27 {
-        background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
-    }
+    background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
+}
 .Currency_base__small_af .Currency_icon__crystal-small_27 {
-            transform: translateY(2rem);
-        }
+    transform: translateY(2rem);
+}
 .Currency_icon__crystal-big_cd {
-        --icon-height: 22rem;
-        --icon-width: 23rem;
-        background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
-    }
+    --icon-height: 22rem;
+    --icon-width: 23rem;
+    background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
+}
 .Currency_base__big_bc .Currency_icon__crystal-big_cd {
-            transform: translateY(4rem);
-        }
+    transform: translateY(4rem);
+}
 .Currency_icon__crystal-large_d3 {
-        --icon-height: 48rem;
-        margin-left: -1rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_bonds');
-    }
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_bonds');
+}
 .Currency_icon__crystal-extraLarge_09 {
-        --icon-height: 80rem;
-        background-image: url('R.images.gui.maps.icons.library.crystal_80x80');
-    }
+    --icon-height: 80rem;
+    background-image: url('R.images.gui.maps.icons.library.crystal_80x80');
+}
 .Currency_base__extraLarge_4d .Currency_icon__crystal-extraLarge_09 {
-            transform: translateY(7rem);
-        }
+    transform: translateY(7rem);
+}
 .Currency_icon__xp-small_a7 {
-        background-image: url('R.images.gui.maps.icons.library.NormalXpIcon');
-    }
+    background-image: url('R.images.gui.maps.icons.library.NormalXpIcon');
+}
 .Currency_base__small_af .Currency_icon__xp-small_a7 {
-            transform: translateY(1rem);
-        }
+    transform: translateY(1rem);
+}
 .Currency_icon__xp-big_97 {
-        --icon-height: 22rem;
-        --icon-width: 23rem;
-        margin-left: -5rem;
-        background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
-    }
+    --icon-height: 22rem;
+    --icon-width: 23rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
+}
 .Currency_base__big_bc .Currency_icon__xp-big_97 {
-            transform: translateY(2rem);
-        }
+    transform: translateY(2rem);
+}
 .Currency_icon__xp-large_6b {
-        --icon-height: 48rem;
-        margin: 0 -5rem 0 -6rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.exp');
-    }
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.exp');
+}
 .Currency_icon__xp-extraLarge_67 {
-        --icon-height: 80rem;
-        margin: 0 -5rem;
-        background-image: url('R.images.gui.maps.icons.library.xp_tank_icon_80x80');
-    }
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.xp_tank_icon_80x80');
+}
 .Currency_icon__freeXP-small_ca {
-        background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
-    }
+    background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
+}
 .Currency_base__small_af .Currency_icon__freeXP-small_ca {
-            transform: translateY(1rem);
-        }
+    transform: translateY(1rem);
+}
 .Currency_icon__freeXP-big_21 {
-        --icon-height: 24rem;
-        margin-left: -5rem;
-        background-image: url('R.images.gui.maps.icons.library.freeXPIconBig24x24');
-    }
+    --icon-height: 24rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.freeXPIconBig24x24');
+}
 .Currency_icon__freeXP-large_c8 {
-        --icon-height: 48rem;
-        margin: 0 -5rem 0 -6rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.freeExp');
-    }
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.freeExp');
+}
 .Currency_icon__freeXP-extraLarge_58 {
-        --icon-height: 80rem;
-        margin: 0 -5rem;
-        background-image: url('R.images.gui.maps.icons.library.free_xp_icon_80x80');
-    }
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.free_xp_icon_80x80');
+}
 .Currency_base__extraLarge_4d .Currency_icon__freeXP-extraLarge_58 {
-            transform: translateY(4rem);
-        }
+    transform: translateY(4rem);
+}
 .Currency_icon__equipCoin-small_32 {
-        --icon-height: 16rem;
-        margin-right: -2rem;
-        background-image: url('R.images.gui.maps.icons.library.equipCoin_1');
-    }
+    --icon-height: 16rem;
+    margin-right: -2rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoin_1');
+}
 .Currency_base__small_af .Currency_icon__equipCoin-small_32 {
-            transform: translateX(-1rem) translateY(1rem);
-        }
+    transform: translateX(-1rem) translateY(1rem);
+}
 .Currency_icon__equipCoin-big_79 {
-        --icon-height: 24rem;
-        background-image: url('R.images.gui.maps.icons.library.equipCoinBig');
-    }
+    --icon-height: 24rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoinBig');
+}
 .Currency_base__big_bc .Currency_icon__equipCoin-big_79 {
-            transform: translateX(-5rem) translateY(3rem);
-        }
+    transform: translateX(-5rem) translateY(3rem);
+}
 .Currency_icon__equipCoin-large_2c {
-        --icon-height: 48rem;
-        margin-right: 2rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.equipCoin');
-    }
+    --icon-height: 48rem;
+    margin-right: 2rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.equipCoin');
+}
 .Currency_icon__equipCoin-extraLarge_8a {
-        --icon-height: 80rem;
-        margin-right: 8rem;
-        background-image: url('R.images.gui.maps.icons.library.equipCoin_icon_80x80');
-    }
+    --icon-height: 80rem;
+    margin-right: 8rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoin_icon_80x80');
+}
 .Currency_base__extraLarge_4d .Currency_icon__equipCoin-extraLarge_8a {
-            transform: translateX(2rem) translateY(4rem);
-        }
+    transform: translateX(2rem) translateY(4rem);
+}
 .Currency_value_e1 {
     /* font-size inherit does not work here, so 1em means the size does not change */
     /* stylelint-disable-next-line */
@@ -360,56 +361,56 @@
     z-index: 2;
 }
 .Currency_base__small_af .Currency_value_e1 {
-        padding-right: 2rem;
-    }
+    padding-right: 2rem;
+}
 .Currency_base__big_bc .Currency_value_e1 {
-        --font-size: 24rem;
-        padding-right: 5rem;
-        font-weight: 700;
-    }
+    --font-size: 24rem;
+    padding-right: 5rem;
+    font-weight: 700;
+}
 .Currency_base__big_bc .Currency_value_e1 + .Currency_icon_c5 {
-            font-size: 24rem;
-        }
+    font-size: 24rem;
+}
 .Currency_base__large_65 .Currency_value_e1 {
-        --font-size: 36rem;
-        font-weight: 700;
-    }
+    --font-size: 36rem;
+    font-weight: 700;
+}
 .Currency_base__large_65 .Currency_value_e1 + .Currency_icon_c5 {
-            font-size: 36rem;
-        }
+    font-size: 36rem;
+}
 .Currency_base__extraLarge_4d .Currency_value_e1 {
-        --font-size: 56rem;
-        font-weight: 700;
-    }
+    --font-size: 56rem;
+    font-weight: 700;
+}
 .Currency_value__freeXP_cb {
-        color: #F2F2F7;
-    }
+    color: #f2f2f7;
+}
 .Currency_value__credits_76 {
-        color: #CED9D9;
-    }
+    color: #ced9d9;
+}
 .Currency_value__gold_dd {
-        color: #FFC363;
-    }
+    color: #ffc363;
+}
 .Currency_value__xp_b0,
-    .Currency_value__crystal_19,
-    .Currency_value__equipCoin_d0 {
-        color: #C9C9B6;
-    }
+.Currency_value__crystal_19,
+.Currency_value__equipCoin_d0 {
+    color: #c9c9b6;
+}
 .Currency_base__small_af .Currency_value__notEnough_56 {
-            color: #FF2717;
-        }
+    color: #ff2717;
+}
 .Currency_base__big_bc .Currency_value__notEnough_56 {
-            color: #B70000;
-        }
+    color: #b70000;
+}
 .Currency_base__large_65 .Currency_value__notEnough_56 {
-            color: #B70000;
-        }
+    color: #b70000;
+}
 .Currency_base__extraLarge_4d .Currency_value__notEnough_56 {
-            color: #B70000;
-        }
+    color: #b70000;
+}
 .Currency_stock_87 {
     height: 13rem;
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 13rem;
     line-height: 1;
     position: relative;
@@ -417,23 +418,23 @@
     pointer-events: none;
 }
 .Currency_stock__indent_a1 {
-        margin-left: 2rem;
-    }
+    margin-left: 2rem;
+}
 .Currency_base__small_af .Currency_stock_87 {
-        transform: translateY(0rem);
-    }
+    transform: translateY(0rem);
+}
 .Currency_base__big_bc .Currency_stock_87 {
-        transform: translateY(4rem);
-    }
+    transform: translateY(4rem);
+}
 .Currency_base__large_65 .Currency_stock_87 {
-        transform: translateY(10rem);
-    }
+    transform: translateY(10rem);
+}
 .Currency_base__extraLarge_4d .Currency_stock_87 {
-        transform: translateY(18rem);
-    }
+    transform: translateY(18rem);
+}
 .Currency_stock__interactive_93 {
-        pointer-events: auto;
-    }
+    pointer-events: auto;
+}
 .Currency_stockBackground_82 {
     width: 80rem;
     height: 45rem;
@@ -447,7 +448,7 @@
 }
 
 .Quantity_base_e7 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -457,30 +458,33 @@
     text-shadow: 0 0 8rem rgba(0, 0, 0, 0.5);
 }
 
-    .Quantity_base__highlighted_3d {
-        color: #FFDD99;
-        text-shadow: 0px 0px 15px #e52, 0px 0px 8px #ff2a00, 0px 0px 4px rgba(255, 127, 0, 0.25);
-    }
+.Quantity_base__highlighted_3d {
+    color: #ffdd99;
+    text-shadow:
+        0px 0px 15px #e52,
+        0px 0px 8px #ff2a00,
+        0px 0px 4px rgba(255, 127, 0, 0.25);
+}
 
 .Quantity_icon_e5 {
     display: none;
 }
 
 .mediaMedium .Quantity_icon_e5 {
-        display: block;
-        width: 30rem;
-        height: 24rem;
-        margin-right: 2rem;
-        background: url('R.images.gui.maps.icons.buttons.icon_table_comparison_inhangar') center center / cover;
+    display: block;
+    width: 30rem;
+    height: 24rem;
+    margin-right: 2rem;
+    background: url('R.images.gui.maps.icons.buttons.icon_table_comparison_inhangar') center center / cover;
 }
 
 .Quantity_price_5f .Quantity_price_icon_83 {
-        transform: none;
-    }
+    transform: none;
+}
 
 .Quantity_price__discount_41 {
-        margin-right: 14rem;
-    }
+    margin-right: 14rem;
+}
 
 .ReserveCard_base_37 {
     --card-width: 190rem;
@@ -493,138 +497,139 @@
     position: relative;
 }
 
-    .mediaMedium .ReserveCard_base_37 {
-        --card-width: 230rem;
-        --card-height: 230rem;
+.mediaMedium .ReserveCard_base_37 {
+    --card-width: 230rem;
+    --card-height: 230rem;
 }
 
-    .ReserveCard_base__tooltipSize_15 {
-        --card-width: 100rem;
-        --card-height: 100rem;
-        margin-right: 10rem;
-    }
-
-    .ReserveCard_base__doubleSize_fc {
-        --card-height: 385rem;
-    }
-
-    .mediaMedium .ReserveCard_base__doubleSize_fc {
-            --card-height: 475rem;
+.ReserveCard_base__tooltipSize_15 {
+    --card-width: 100rem;
+    --card-height: 100rem;
+    margin-right: 10rem;
 }
 
-    .ReserveCard_base__clan_64 .ReserveCard_activeLight_be {
-            background: url('R.images.gui.maps.icons.personal_reserves.activated_light_clan_activation') no-repeat
-                center center / cover;
-        }
+.ReserveCard_base__doubleSize_fc {
+    --card-height: 385rem;
+}
 
-    .ReserveCard_base__clan_64.ReserveCard_base__tooltipSize_15 .ReserveCard_boosterIcon_37 {
-            width: 80rem;
-            height: 80rem;
-        }
+.mediaMedium .ReserveCard_base__doubleSize_fc {
+    --card-height: 475rem;
+}
 
-    .ReserveCard_base__expiringToday_d3 {
-        border: 1rem solid rgba(255, 170, 51, 0.34);
-    }
+.ReserveCard_base__clan_64 .ReserveCard_activeLight_be {
+    background: url('R.images.gui.maps.icons.personal_reserves.activated_light_clan_activation') no-repeat center center /
+        cover;
+}
 
-    .ReserveCard_base__inactive_20,
-    .ReserveCard_base__disabled_9c {
-        border: 1rem solid rgba(255, 255, 255, 0.1);
-    }
+.ReserveCard_base__clan_64.ReserveCard_base__tooltipSize_15 .ReserveCard_boosterIcon_37 {
+    width: 80rem;
+    height: 80rem;
+}
 
-    .ReserveCard_base__inactive_20 .ReserveCard_timerContainer_65, .ReserveCard_base__disabled_9c .ReserveCard_timerContainer_65 {
-            visibility: hidden;
-        }
+.ReserveCard_base__expiringToday_d3 {
+    border: 1rem solid rgba(255, 170, 51, 0.34);
+}
 
-    .ReserveCard_base__inactive_20.ReserveCard_base__clan_64 .ReserveCard_boosterIcon_37 {
-                opacity: 0.25;
-            }
+.ReserveCard_base__inactive_20,
+.ReserveCard_base__disabled_9c {
+    border: 1rem solid rgba(255, 255, 255, 0.1);
+}
 
-    .ReserveCard_base__inactive_20:hover {
-            cursor: pointer;
-        }
+.ReserveCard_base__inactive_20 .ReserveCard_timerContainer_65,
+.ReserveCard_base__disabled_9c .ReserveCard_timerContainer_65 {
+    visibility: hidden;
+}
 
-    .ReserveCard_base__inactive_20:hover::before {
-                border: 1rem solid rgba(0, 0, 0, 0.2);
-                border-radius: 2rem;
-                content: '';
-                position: absolute;
-                top: -2rem;
-                right: -2rem;
-                bottom: -2rem;
-                left: -2rem;
-            }
+.ReserveCard_base__inactive_20.ReserveCard_base__clan_64 .ReserveCard_boosterIcon_37 {
+    opacity: 0.25;
+}
 
-    .ReserveCard_base__inactive_20:hover .ReserveCard_boosterIcon_37 {
-                opacity: 0.2;
-            }
+.ReserveCard_base__inactive_20:hover {
+    cursor: pointer;
+}
 
-    .ReserveCard_base__inactive_20:hover .ReserveCard_overlay_1c {
-                display: flex;
-                border-radius: 2rem;
-                border-image: radial-gradient(
-                    rgba(255, 255, 255, 0.2) 0%,
-                    rgba(255, 255, 255, 0.1) 5%,
-                    rgba(37, 9, 9, 0) 10%,
-                    rgba(255, 255, 255, 0.1) 95%,
-                    rgba(255, 255, 255, 0.2) 100%
-                );
-                border-image-slice: 1;
-                border-image-width: 1rem;
-                box-shadow: 0rem 0rem 25rem 0rem rgba(255, 255, 255, 0.1) inset;
-            }
+.ReserveCard_base__inactive_20:hover::before {
+    border: 1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    content: '';
+    position: absolute;
+    top: -2rem;
+    right: -2rem;
+    bottom: -2rem;
+    left: -2rem;
+}
 
-    .ReserveCard_base__inactive_20:hover .ReserveCard_plusIcon_27 {
-                background: url('R.images.gui.maps.icons.personal_reserves.plus_icon_hover') center center / cover;
-            }
+.ReserveCard_base__inactive_20:hover .ReserveCard_boosterIcon_37 {
+    opacity: 0.2;
+}
 
-    .ReserveCard_base__disabled_9c {
-        opacity: 0.5;
-    }
+.ReserveCard_base__inactive_20:hover .ReserveCard_overlay_1c {
+    display: flex;
+    border-radius: 2rem;
+    border-image: radial-gradient(
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.1) 5%,
+        rgba(37, 9, 9, 0) 10%,
+        rgba(255, 255, 255, 0.1) 95%,
+        rgba(255, 255, 255, 0.2) 100%
+    );
+    border-image-slice: 1;
+    border-image-width: 1rem;
+    box-shadow: 0rem 0rem 25rem 0rem rgba(255, 255, 255, 0.1) inset;
+}
 
-    .ReserveCard_base__activatedAnimation_aa .ReserveCard_cardFill_15 {
-            transform-origin: bottom center;
-            animation: ReserveCard_fillIn_2b 0.6s;
-            animation-fill-mode: forwards;
-        }
+.ReserveCard_base__inactive_20:hover .ReserveCard_plusIcon_27 {
+    background: url('R.images.gui.maps.icons.personal_reserves.plus_icon_hover') center center / cover;
+}
 
-    .ReserveCard_base__activatedAnimation_aa .ReserveCard_cardFill_border_c0 {
-            animation: ReserveCard_borderBrightness_e5 1s;
-        }
+.ReserveCard_base__disabled_9c {
+    opacity: 0.5;
+}
 
-    .ReserveCard_base__activatedAnimation_aa .ReserveCard_activeLight_be,
-        .ReserveCard_base__activatedAnimation_aa .ReserveCard_activeLight_border_97 {
-            animation: ReserveCard_timerSpark_2f 0.3s;
-        }
+.ReserveCard_base__activatedAnimation_aa .ReserveCard_cardFill_15 {
+    transform-origin: bottom center;
+    animation: ReserveCard_fillIn_2b 0.6s;
+    animation-fill-mode: forwards;
+}
 
-    .ReserveCard_base__activatedAnimation_aa .ReserveCard_timerContainer_65,
-        .ReserveCard_base__activatedAnimation_aa .ReserveCard_boosterIcon_37 {
-            animation: ReserveCard_scaleUpDown_74 0.6s;
-        }
+.ReserveCard_base__activatedAnimation_aa .ReserveCard_cardFill_border_c0 {
+    animation: ReserveCard_borderBrightness_e5 1s;
+}
 
-    .ReserveCard_base__activatedAnimation_aa .ReserveCard_timerContainer_65 {
-            opacity: 0;
-            animation: ReserveCard_fadeIn_50 0.3s;
-            animation-fill-mode: forwards;
-        }
+.ReserveCard_base__activatedAnimation_aa .ReserveCard_activeLight_be,
+.ReserveCard_base__activatedAnimation_aa .ReserveCard_activeLight_border_97 {
+    animation: ReserveCard_timerSpark_2f 0.3s;
+}
 
-    .ReserveCard_base__zeroTime_c0 .ReserveCard_timerContainer_65 {
-            animation: ReserveCard_fadeIn_50 1s alternate infinite;
-        }
+.ReserveCard_base__activatedAnimation_aa .ReserveCard_timerContainer_65,
+.ReserveCard_base__activatedAnimation_aa .ReserveCard_boosterIcon_37 {
+    animation: ReserveCard_scaleUpDown_74 0.6s;
+}
 
-    .ReserveCard_base__gradient_f3 {
-        border: 1px solid #ffb266;
-        border-radius: 2px;
-        box-shadow: 0px 0px 30px 0px rgba(255, 122, 0, 0.3) inset;
-        background: linear-gradient(0deg, rgba(255, 107, 0, 0.1) 0%, rgba(255, 107, 0, 0.1) 100%), rgba(0, 0, 0, 0.4);
-        position: relative;
-    }
+.ReserveCard_base__activatedAnimation_aa .ReserveCard_timerContainer_65 {
+    opacity: 0;
+    animation: ReserveCard_fadeIn_50 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.ReserveCard_base__zeroTime_c0 .ReserveCard_timerContainer_65 {
+    animation: ReserveCard_fadeIn_50 1s alternate infinite;
+}
+
+.ReserveCard_base__gradient_f3 {
+    border: 1px solid #ffb266;
+    border-radius: 2px;
+    box-shadow: 0px 0px 30px 0px rgba(255, 122, 0, 0.3) inset;
+    background: linear-gradient(0deg, rgba(255, 107, 0, 0.1) 0%, rgba(255, 107, 0, 0.1) 100%), rgba(0, 0, 0, 0.4);
+    position: relative;
+}
 
 .ReserveCard_base_37 + .ReserveCard_base_37 {
     margin-top: 5rem;
 }
 
 .mediaMedium .ReserveCard_base_37 + .ReserveCard_base_37 {
-        margin-top: 15rem;
+    margin-top: 15rem;
 }
 
 .ReserveCard_boosterIcon_37 {
@@ -641,14 +646,14 @@
 }
 
 .mediaMedium .ReserveCard_boosterIcon_37 {
-        width: 232rem;
-        height: 174rem;
+    width: 232rem;
+    height: 174rem;
 }
 
 .ReserveCard_base__tooltipSize_15 .ReserveCard_boosterIcon_37 {
-        width: 80rem;
-        height: 80rem;
-    }
+    width: 80rem;
+    height: 80rem;
+}
 
 .ReserveCard_disabledPattern_5d {
     width: 100%;
@@ -677,29 +682,31 @@
     width: 100%;
     height: 100%;
     text-shadow: 0px 0px 14px #00a2ff;
-    color: #FEFEEC;
+    color: #fefeec;
     font-size: 20rem;
     font-weight: 400;
     line-height: 1.2;
     z-index: 999;
 }
 
-.ReserveCard_overlayButton_c6.ReserveCard_overlayClanButton_af, .ReserveCard_overlayClanButton_af.ReserveCard_overlayClanButton_af {
-        text-shadow: 0px 0px 14px rgba(255, 255, 255, 0.5);
-    }
+.ReserveCard_overlayButton_c6.ReserveCard_overlayClanButton_af,
+.ReserveCard_overlayClanButton_af.ReserveCard_overlayClanButton_af {
+    text-shadow: 0px 0px 14px rgba(255, 255, 255, 0.5);
+}
 
-.ReserveCard_overlayButton_light_39, .ReserveCard_overlayClanButton_light_02 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 181rem;
-        height: 181rem;
-        background: url('R.images.gui.maps.icons.personal_reserves.activation.light') center center / cover no-repeat;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+.ReserveCard_overlayButton_light_39,
+.ReserveCard_overlayClanButton_light_02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 181rem;
+    height: 181rem;
+    background: url('R.images.gui.maps.icons.personal_reserves.activation.light') center center / cover no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .ReserveCard_overlayButton_icon_89 {
     width: 48rem;
@@ -718,39 +725,42 @@
 }
 
 .ReserveCard_cardContent_quantity_32 {
-        position: absolute;
-        top: 7rem;
-        right: 14rem;
-    }
+    position: absolute;
+    top: 7rem;
+    right: 14rem;
+}
 
 .ReserveCard_base__tooltipSize_15 .ReserveCard_cardContent_quantity_32 {
-            top: 3rem;
-            right: 8rem;
-        }
+    top: 3rem;
+    right: 8rem;
+}
 
 .ReserveCard_base__tooltipSize_15.ReserveCard_base__active_7e .ReserveCard_cardContent_quantity_32 {
-            display: none;
-        }
+    display: none;
+}
 
 .ReserveCard_cardContent_expiringQuantity_a6 {
-        color: #FEFEEC;
-        font-size: 15rem;
-        font-weight: 700;
-        line-height: 1.15;
-        text-shadow: 0px 0px 15px #e52, 0px 0px 8px #ff2a00, 0px 0px 4px rgba(255, 127, 0, 0.25);
-        position: absolute;
-        top: 30rem;
-        right: 14rem;
-    }
+    color: #fefeec;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    text-shadow:
+        0px 0px 15px #e52,
+        0px 0px 8px #ff2a00,
+        0px 0px 4px rgba(255, 127, 0, 0.25);
+    position: absolute;
+    top: 30rem;
+    right: 14rem;
+}
 
 .ReserveCard_base__tooltipSize_15 .ReserveCard_cardContent_expiringQuantity_a6 {
-            top: 20rem;
-            right: 8rem;
-        }
+    top: 20rem;
+    right: 8rem;
+}
 
 .ReserveCard_base__tooltipSize_15.ReserveCard_base__active_7e .ReserveCard_cardContent_expiringQuantity_a6 {
-            display: none;
-        }
+    display: none;
+}
 
 .ReserveCard_plusIcon_27 {
     width: 48rem;
@@ -762,8 +772,8 @@
 }
 
 .ReserveCard_base__tooltipSize_15 .ReserveCard_plusIcon_27 {
-        display: none;
-    }
+    display: none;
+}
 
 .ReserveCard_cardFill_15 {
     width: var(--card-width);
@@ -774,28 +784,28 @@
 }
 
 .ReserveCard_cardFill_pattern_55 {
-        width: calc(var(--card-width) - 4rem);
-        height: calc(var(--card-height) - 4rem);
-        /* intentionally no cover*/
-        background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_orange') 0 0 / 2rem 2rem repeat;
-        position: absolute;
-        top: 2rem;
-        left: 2rem;
-    }
+    width: calc(var(--card-width) - 4rem);
+    height: calc(var(--card-height) - 4rem);
+    /* intentionally no cover*/
+    background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_orange') 0 0 / 2rem 2rem repeat;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
 
 .ReserveCard_cardFill_borderTop_4f {
-        height: 1rem;
-        background: linear-gradient(
-            90deg,
-            rgba(254, 171, 52, 0) 0%,
-            rgba(254, 171, 52, 0.5) 50%,
-            rgba(254, 171, 52, 0) 100%
-        );
-        position: absolute;
-        top: calc(100% - var(--fillPercentage));
-        right: 2rem;
-        left: 2rem;
-    }
+    height: 1rem;
+    background: linear-gradient(
+        90deg,
+        rgba(254, 171, 52, 0) 0%,
+        rgba(254, 171, 52, 0.5) 50%,
+        rgba(254, 171, 52, 0) 100%
+    );
+    position: absolute;
+    top: calc(100% - var(--fillPercentage));
+    right: 2rem;
+    left: 2rem;
+}
 
 .ReserveCard_timerContainer_65 {
     display: flex;
@@ -808,56 +818,55 @@
     top: 10rem;
     left: 50%;
     transform: translateX(-50%);
-    color: #FEFEEC;
+    color: #fefeec;
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
 }
 
 .mediaMedium .ReserveCard_timerContainer_65 {
-        top: 12rem;
-        color: #FEFEEC;
-        font-size: 22rem;
-        font-weight: 700;
-        line-height: 1.2;
+    top: 12rem;
+    color: #fefeec;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .ReserveCard_base__tooltipSize_15 .ReserveCard_timerContainer_65 {
-        color: #FEFEEC;
-        font-size: 14rem;
-        font-weight: 700;
-        line-height: 1.15;
-        top: 0;
-    }
+    color: #fefeec;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    top: 0;
+}
 
 .ReserveCard_timerContainer_icon_c9 {
-        width: 16rem;
-        height: 16rem;
-        margin-right: 4rem;
-        background: url('R.images.gui.maps.icons.personal_reserves.icon_timer_personal_activation') center center /
-            cover;
-        filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
-        position: relative;
-    }
+    width: 16rem;
+    height: 16rem;
+    margin-right: 4rem;
+    background: url('R.images.gui.maps.icons.personal_reserves.icon_timer_personal_activation') center center / cover;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
+    position: relative;
+}
 
 .mediaMedium .ReserveCard_timerContainer_icon_c9 {
-            top: 2rem;
+    top: 2rem;
 }
 
 .ReserveCard_base__tooltipSize_15 .ReserveCard_timerContainer_icon_c9 {
-            display: none;
-        }
+    display: none;
+}
 
 .ReserveCard_timerContainer_timer_44 {
-        min-width: 30rem;
-    }
+    min-width: 30rem;
+}
 
 .mediaMedium .ReserveCard_timerContainer_timer_44 {
-            min-width: 50rem;
+    min-width: 50rem;
 }
 
 .ReserveCard_bonus_d5 {
-    color: #FEFEEC;
+    color: #fefeec;
     font-size: 24rem;
     font-weight: 700;
     line-height: 1.2;
@@ -868,35 +877,35 @@
 }
 
 .mediaMedium .ReserveCard_bonus_d5 {
-        color: #FEFEEC;
-        font-size: 28rem;
-        font-weight: 700;
-        line-height: 1.1;
+    color: #fefeec;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .ReserveCard_base__tooltipSize_15 .ReserveCard_bonus_d5 {
-        display: none;
-    }
+    display: none;
+}
 
 .ReserveCard_base__tooltipSize_15.ReserveCard_base__active_7e .ReserveCard_bonus_d5 {
-        display: block;
-        right: 5rem;
-        bottom: 7rem;
-        color: #FEFEEC;
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
-    }
+    display: block;
+    right: 5rem;
+    bottom: 7rem;
+    color: #fefeec;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
 
 .ReserveCard_bonusText_b7 {
     color: rgba(233, 226, 191, 0);
 }
 
 .ReserveCard_bonusText__copied_26 {
-        color: #e9e2bf;
-        position: absolute;
-        mask-image: linear-gradient(180deg, #e9e2bf 41.94%, rgba(233, 226, 191, 0) 203.23%);
-    }
+    color: #e9e2bf;
+    position: absolute;
+    mask-image: linear-gradient(180deg, #e9e2bf 41.94%, rgba(233, 226, 191, 0) 203.23%);
+}
 
 .ReserveCard_activeLight_be {
     width: 190rem;
@@ -910,14 +919,14 @@
 }
 
 .mediaMedium .ReserveCard_activeLight_be {
-        width: 230rem;
-        height: 114rem;
+    width: 230rem;
+    height: 114rem;
 }
 
 .ReserveCard_base__tooltipSize_15 .ReserveCard_activeLight_be {
-        width: 100rem;
-        height: 50rem;
-    }
+    width: 100rem;
+    height: 50rem;
+}
 
 .ReserveCard_expiringLight_c0 {
     width: 159rem;
@@ -930,13 +939,13 @@
 }
 
 .mediaMedium .ReserveCard_expiringLight_c0 {
-        left: 231rem;
+    left: 231rem;
 }
 
 .ReserveCard_base__tooltipSize_15 .ReserveCard_expiringLight_c0 {
-        width: 100rem;
-        left: 101rem;
-    }
+    width: 100rem;
+    left: 101rem;
+}
 
 .ReserveCard_expiringIndicator_bb {
     position: absolute;
@@ -946,8 +955,8 @@
 }
 
 .ReserveCard_base__tooltipSize_15 .ReserveCard_expiringIndicator_bb {
-        display: none;
-    }
+    display: none;
+}
 
 @keyframes ReserveCard_fillIn_2b {
     from {
@@ -1006,4 +1015,3 @@
         transform: translate(-50%, -50%) scale(1);
     }
 }
-

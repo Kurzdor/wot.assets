@@ -7,9 +7,9 @@
     cursor: pointer;
 }
 
-    .TextButton_base__right_39 {
-        flex-direction: row-reverse;
-    }
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
 .TextButton_icon_17 {
     width: 32rem;
     height: 32rem;
@@ -17,22 +17,22 @@
     position: relative;
 }
 .TextButton_icon__back_43,
-    .TextButton_icon__forward_59 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.back');
-        transform: translateY(1rem);
-    }
 .TextButton_icon__forward_59 {
-        transform: rotate(180deg) translateY(1rem);
-    }
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
 .TextButton_icon__close_53 {
-        margin: -1rem 0;
-        background-image: url('R.images.gui.maps.icons.components.text_button.close');
-    }
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
 .TextButton_icon__info_33 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.info');
-    }
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
 .TextButton_glow_a4 {
     width: 100%;
     height: 100%;
@@ -40,72 +40,82 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    transition: opacity .16s;
+    transition: opacity 0.16s;
 }
 .TextButton_icon__back_43 .TextButton_glow_a4,
-    .TextButton_icon__forward_59 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
-    }
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
 .TextButton_icon__close_53 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
 .TextButton_icon__info_33 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
 .TextButton_base_b6:hover .TextButton_glow_a4 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .TextButton_base_b6:active .TextButton_glow_a4 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .TextButton_caption_82 {
     position: relative;
-    transition: color .16s, text-shadow .16s;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
 }
 .TextButton_caption__back_b9,
-    .TextButton_caption__forward_4e,
-    .TextButton_caption__close_36 {
-        color: #FFDD99;
-        text-shadow: 0 0 10rem rgba(255,42,0, 1),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4);
-    }
-.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
-            color: #fffa9f;
-        }
-.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
-            color: #FFDD99;
-        }
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
 .TextButton_caption__info_23 {
-        padding: 0 5rem;
-        color: #CCFFFF;
-        text-shadow: 0 0 12rem rgba(31,68,255, .8),
-            0 0 8rem #00eaff;
-    }
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
 .TextButton_base_b6:hover .TextButton_caption__info_23 {
-            color: #e3ffff;
-            text-shadow: 0 0 12rem rgba(31,68,255, .8),
-                0 0 12rem rgba(0,234,255, 1),
-                0 0 8rem #00eaff;
-        }
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
 .TextButton_base_b6:active .TextButton_caption__info_23 {
-            color: #CCFFFF;
-            text-shadow: 0 0 12rem rgba(31,68,255, .6),
-                0 0 8rem #00eaff;
-        }
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
 .TextButton_goto_e7 {
     color: #7c7c6c;
 }
 .TextButton_base__left_ff .TextButton_goto_e7 {
-        margin-left: 8rem;
-    }
+    margin-left: 8rem;
+}
 .TextButton_base__right_39 .TextButton_goto_e7 {
-        margin-right: 8rem;
-    }
+    margin-right: 8rem;
+}
 .TextButton_shine_e2 {
     width: 90rem;
     height: 40rem;
@@ -113,22 +123,22 @@
     opacity: 0;
     position: absolute;
     top: -4rem;
-    transition: opacity .16s;
+    transition: opacity 0.16s;
     pointer-events: none;
 }
 .TextButton_base__left_ff .TextButton_shine_e2 {
-        left: -4rem;
-    }
+    left: -4rem;
+}
 .TextButton_base__right_39 .TextButton_shine_e2 {
-        right: -4rem;
-        transform: rotate(180deg);
-    }
+    right: -4rem;
+    transform: rotate(180deg);
+}
 .TextButton_base_b6:hover .TextButton_shine_e2 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .TextButton_base_b6:active .TextButton_shine_e2 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .Layout_base_81 {
     display: flex;
@@ -140,15 +150,15 @@
     position: relative;
 }
 
-    .Layout_base__small_cb,
-    .Layout_base__medium_df {
-        width: 1310rem;
-    }
+.Layout_base__small_cb,
+.Layout_base__medium_df {
+    width: 1310rem;
+}
 
-    .Layout_base__large_f6,
-    .Layout_base__huge_d2 {
-        width: 1560rem;
-    }
+.Layout_base__large_f6,
+.Layout_base__huge_d2 {
+    width: 1560rem;
+}
 .Layout_header_46 {
     display: flex;
     justify-content: space-between;
@@ -156,13 +166,13 @@
     margin: 10rem 0 20rem;
 }
 .Layout_base__compare_56 .Layout_header_46 {
-        flex-direction: column;
-        align-items: center;
-    }
+    flex-direction: column;
+    align-items: center;
+}
 .Layout_header__small_cb,
-    .Layout_header__tiny_4b {
-        margin: 10rem 0 16rem;
-    }
+.Layout_header__tiny_4b {
+    margin: 10rem 0 16rem;
+}
 .Layout_content_79 {
     display: flex;
     justify-content: space-between;
@@ -170,34 +180,34 @@
     width: 100%;
 }
 .Layout_base__compare_56 .Layout_content_79 {
-        justify-content: center;
-        margin-top: 7rem;
-        padding-top: 20rem;
-        padding-bottom: 10rem;
-    }
+    justify-content: center;
+    margin-top: 7rem;
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+}
 .Layout_main_df {
     width: 596rem;
-    border-top: 1rem solid rgba(255,255,255, .1);
-    border-bottom: 1rem solid rgba(255,255,255, .1);
+    border-top: 1rem solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.1);
 }
 .Layout_base__compare_56 .Layout_main_df {
-        width: 902rem;
-    }
+    width: 902rem;
+}
 .Layout_base__small_cb .Layout_main_df,
-    .Layout_base__medium_df .Layout_main_df {
-        width: 902rem;
-    }
+.Layout_base__medium_df .Layout_main_df {
+    width: 902rem;
+}
 .Layout_base__large_f6 .Layout_main_df,
-    .Layout_base__huge_d2 .Layout_main_df {
-        width: 1102rem;
-    }
+.Layout_base__huge_d2 .Layout_main_df {
+    width: 1102rem;
+}
 .Layout_inner_3e {
     margin: 0 -16rem;
 }
 .Layout_base__large_f6 .Layout_inner_3e,
-    .Layout_base__huge_d2 .Layout_inner_3e {
-        margin: 0 -20rem;
-    }
+.Layout_base__huge_d2 .Layout_inner_3e {
+    margin: 0 -20rem;
+}
 .Layout_footer_f4 {
     display: flex;
     flex-direction: column;
@@ -215,27 +225,27 @@ body {
 
 .SetupApp_base_7b {
     height: 100%;
-    background-color: rgba(0,0,0, .2);
+    background-color: rgba(0, 0, 0, 0.2);
     position: relative;
-    transition: background-color .5s;
+    transition: background-color 0.5s;
 }
 
 .SetupApp_base__shown_a0 {
-        background-color: rgba(0,0,0, .7);
-    }
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
 .SetupApp_base__compare_9d {
-        width: 100%;
-    }
+    width: 100%;
+}
 
 .SetupApp_base__setup_92 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 34rem 0 35rem;
-        overflow: hidden;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 34rem 0 35rem;
+    overflow: hidden;
+}
 
 .SetupApp_close_da {
     position: absolute;
@@ -245,12 +255,12 @@ body {
 }
 
 .SetupApp_close__hidden_5a {
-        display: none;
-    }
+    display: none;
+}
 
 .SetupApp_close__small_61 {
-        top: 47rem;
-    }
+    top: 47rem;
+}
 
 .SetupApp_content_65 {
     flex: 1;
@@ -258,29 +268,29 @@ body {
 }
 
 .SetupApp_content__compare_6e {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-height: calc(258.45rem + 55vh);
-        margin-top: calc(24vh - 173.04rem);
-        padding-top: 34rem;
-        overflow: hidden;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: calc(258.45rem + 55vh);
+    margin-top: calc(24vh - 173.04rem);
+    padding-top: 34rem;
+    overflow: hidden;
+}
 
 .SetupApp_content__invisible_9a {
-        display: none;
-    }
+    display: none;
+}
 
 .SetupApp_content__shown_dd {
-        opacity: 1;
-        animation: SetupApp_show-app_00 .3s ease-out;
-    }
+    opacity: 1;
+    animation: SetupApp_show-app_00 0.3s ease-out;
+}
 
 .SetupApp_content__hidden_78 {
-        opacity: 0;
-        animation: SetupApp_hide-app_29 .3s ease-in;
-    }
+    opacity: 0;
+    animation: SetupApp_hide-app_29 0.3s ease-in;
+}
 
 .SetupApp_panel_42 {
     padding-bottom: 23rem;
@@ -333,10 +343,10 @@ body {
     z-index: -1;
 }
 
-    .BackEffects_shine__enterActive_54 {
-        animation: BackEffects_shine-animation_26 200ms ease-out;
-        animation-fill-mode: forwards;
-    }
+.BackEffects_shine__enterActive_54 {
+    animation: BackEffects_shine-animation_26 200ms ease-out;
+    animation-fill-mode: forwards;
+}
 .BackEffects_sparks_55 {
     opacity: 0;
     position: absolute;
@@ -349,9 +359,9 @@ body {
     background: url('R.images.gui.maps.icons.tanksetup.panel.transitions.sparks') no-repeat center / contain;
 }
 .BackEffects_sparks__enterActive_79 {
-        animation: BackEffects_sparks-animation_ff 400ms ease-out;
-        animation-fill-mode: forwards;
-    }
+    animation: BackEffects_sparks-animation_ff 400ms ease-out;
+    animation-fill-mode: forwards;
+}
 .BackEffects_nut_79 {
     opacity: 0;
     position: absolute;
@@ -366,8 +376,8 @@ body {
     z-index: 1;
 }
 .BackEffects_nut__enterActive_b8 {
-        animation: BackEffects_nut-animation_4a 600ms forwards ease-out;
-    }
+    animation: BackEffects_nut-animation_4a 600ms forwards ease-out;
+}
 .BackEffects_wrench_5a {
     opacity: 0;
     position: absolute;
@@ -382,8 +392,8 @@ body {
     z-index: 1;
 }
 .BackEffects_wrench__enterActive_ca {
-        animation: BackEffects_wrench-animation_58 600ms forwards ease-out;
-    }
+    animation: BackEffects_wrench-animation_58 600ms forwards ease-out;
+}
 @keyframes BackEffects_shine-animation_26 {
     0% {
         opacity: 1;
@@ -392,7 +402,7 @@ body {
 
     100% {
         opacity: 0;
-        transform: translate(-50%, -50%) scale(.3);
+        transform: translate(-50%, -50%) scale(0.3);
     }
 }
 @keyframes BackEffects_sparks-animation_ff {
@@ -414,7 +424,7 @@ body {
 
     100% {
         opacity: 0;
-        transform: translate(-73%, -22%) scale(.8) rotate(-15deg);
+        transform: translate(-73%, -22%) scale(0.8) rotate(-15deg);
     }
 }
 @keyframes BackEffects_wrench-animation_58 {
@@ -425,7 +435,7 @@ body {
 
     100% {
         opacity: 0;
-        transform: translate(-22%, 0%) scale(.8) rotateZ(-30deg);
+        transform: translate(-22%, 0%) scale(0.8) rotateZ(-30deg);
     }
 }
 
@@ -441,9 +451,9 @@ body {
     mask-size: contain;
 }
 
-    .ColorMask_base__enterActive_62 {
-        animation: ColorMask_color-mask-animation_95 1.2s ease-in;
-    }
+.ColorMask_base__enterActive_62 {
+    animation: ColorMask_color-mask-animation_95 1.2s ease-in;
+}
 
 @keyframes ColorMask_color-mask-animation_95 {
     0% {
@@ -564,13 +574,13 @@ body {
     }
 
     60% {
-        filter: sepia(.5) brightness(1.2) contrast(1.2);
+        filter: sepia(0.5) brightness(1.2) contrast(1.2);
         opacity: 1;
         transform: scale(1);
     }
 
     100% {
-        filter: sepia(.5) brightness(1.2) contrast(1.2);
+        filter: sepia(0.5) brightness(1.2) contrast(1.2);
         opacity: 0;
         transform: scale(1.3);
     }
@@ -596,49 +606,51 @@ body {
     }
 }
 .SlotTransitions_base__exitLeft_d8 {
-        animation: SlotTransitions_animation-left_27 200ms ease-in;
-    }
+    animation: SlotTransitions_animation-left_27 200ms ease-in;
+}
 .SlotTransitions_base__exitLeftFade_53 {
-        animation: SlotTransitions_animation-left_27 200ms ease-in,
+    animation:
+        SlotTransitions_animation-left_27 200ms ease-in,
         SlotTransitions_animation-fade_ce 250ms ease-in;
-    }
+}
 .SlotTransitions_base__enterRight_bb {
-        animation: SlotTransitions_animation-right_31 200ms reverse ease-in;
-    }
+    animation: SlotTransitions_animation-right_31 200ms reverse ease-in;
+}
 .SlotTransitions_base__enterRightFade_63 {
-        animation: SlotTransitions_animation-right_31 200ms reverse ease-in,
+    animation:
+        SlotTransitions_animation-right_31 200ms reverse ease-in,
         SlotTransitions_animation-fade_ce 250ms reverse ease-in;
-    }
+}
 .SlotTransitions_base__exitRight_b9 {
-        z-index: 1;
-        animation: SlotTransitions_animation-right_31 200ms ease-in;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-right_31 200ms ease-in;
+}
 .SlotTransitions_base__enterLeft_e9 {
-        z-index: 2;
-        animation: SlotTransitions_animation-left_27 200ms reverse ease-in;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-left_27 200ms reverse ease-in;
+}
 .SlotTransitions_base__exitRightSwap_64 {
-        z-index: 2;
-        animation: SlotTransitions_animation-right-long_bd 200ms ease-in;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-right-long_bd 200ms ease-in;
+}
 .SlotTransitions_base__enterRightSwap_5e {
-        z-index: 1;
-        animation: SlotTransitions_animation-right-long_bd 200ms reverse ease-in;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-right-long_bd 200ms reverse ease-in;
+}
 .SlotTransitions_base__enterLeftSwap_da {
-        z-index: 2;
-        animation: SlotTransitions_animation-left-long_ec 200ms reverse ease-in;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-left-long_ec 200ms reverse ease-in;
+}
 .SlotTransitions_base__exitLeftSwap_c3 {
-        z-index: 1;
-        animation: SlotTransitions_animation-left-long_ec 200ms ease-in;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-left-long_ec 200ms ease-in;
+}
 .SlotTransitions_base__exitFade_4c {
-        animation: SlotTransitions_animation-fade_ce 250ms ease-in;
-    }
+    animation: SlotTransitions_animation-fade_ce 250ms ease-in;
+}
 .SlotTransitions_base__enterFade_77 {
-        animation: SlotTransitions_animation-fade_ce 250ms reverse ease-in;
-    }
+    animation: SlotTransitions_animation-fade_ce 250ms reverse ease-in;
+}
 .SlotTransitions_base_6d {
     display: flex;
     justify-content: center;
@@ -649,270 +661,278 @@ body {
     z-index: 0;
 }
 .SlotTransitions_base__enter_54 {
-        display: none;
-    }
+    display: none;
+}
 .SlotTransitions_base__enterFitting_c7 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation: SlotTransitions_animation-fade_ce 250ms reverse;
-    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: SlotTransitions_animation-fade_ce 250ms reverse;
+}
 .SlotTransitions_baseShells__exitLeft_1e {
-        animation: SlotTransitions_animation-left-shells_0d 200ms ease-in,
+    animation:
+        SlotTransitions_animation-left-shells_0d 200ms ease-in,
         SlotTransitions_animation-fade_ce 250ms ease-in;
-    }
+}
 .SlotTransitions_baseShells__enterRight_66 {
-        animation: SlotTransitions_animation-right-shells_7c 200ms reverse ease-in,
+    animation:
+        SlotTransitions_animation-right-shells_7c 200ms reverse ease-in,
         SlotTransitions_animation-fade_ce 250ms reverse ease-in;
-    }
+}
 .SlotTransitions_baseShells__exitRight_e4 {
-        z-index: 1;
-        animation: SlotTransitions_animation-right-shells_7c 200ms ease-in;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-right-shells_7c 200ms ease-in;
+}
 .SlotTransitions_baseShells__enterLeft_94 {
-        z-index: 2;
-        animation: SlotTransitions_animation-left-shells_0d 200ms reverse ease-in;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-left-shells_0d 200ms reverse ease-in;
+}
 .SlotTransitions_baseShells__exitRightSwap_fd {
-        z-index: 2;
-        animation: SlotTransitions_animation-right-long-shells_41 200ms ease-in;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-right-long-shells_41 200ms ease-in;
+}
 .SlotTransitions_baseShells__enterRightSwap_41 {
-        z-index: 1;
-        animation: SlotTransitions_animation-right-long-shells_41 200ms reverse ease-in;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-right-long-shells_41 200ms reverse ease-in;
+}
 .SlotTransitions_baseShells__enterLeftSwap_19 {
-        z-index: 2;
-        animation: SlotTransitions_animation-left-long-shells_00 200ms reverse ease-in;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-left-long-shells_00 200ms reverse ease-in;
+}
 .SlotTransitions_baseShells__exitLeftSwap_04 {
-        z-index: 1;
-        animation: SlotTransitions_animation-left-long-shells_00 200ms ease-in;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-left-long-shells_00 200ms ease-in;
+}
 .SlotTransitions_baseShells__exitFade_1b {
-        animation: SlotTransitions_animation-fade_ce 250ms ease-in;
-    }
+    animation: SlotTransitions_animation-fade_ce 250ms ease-in;
+}
 .SlotTransitions_baseShells__enterFade_72 {
-        animation: SlotTransitions_animation-fade_ce 250ms reverse ease-in;
-    }
+    animation: SlotTransitions_animation-fade_ce 250ms reverse ease-in;
+}
 .SlotTransitions_baseOptDevices__exitLeft_fe {
-        animation: SlotTransitions_animation-left_27 200ms ease-in;
-    }
+    animation: SlotTransitions_animation-left_27 200ms ease-in;
+}
 .SlotTransitions_baseOptDevices__exitLeftFade_8a {
-        animation: SlotTransitions_animation-left_27 200ms ease-in,
+    animation:
+        SlotTransitions_animation-left_27 200ms ease-in,
         SlotTransitions_animation-fade_ce 250ms ease-in;
-    }
+}
 .SlotTransitions_baseOptDevices__enterRight_5d {
-        animation: SlotTransitions_animation-right_31 200ms reverse ease-in;
-    }
+    animation: SlotTransitions_animation-right_31 200ms reverse ease-in;
+}
 .SlotTransitions_baseOptDevices__enterRightFade_2c {
-        animation: SlotTransitions_animation-right_31 200ms reverse ease-in,
+    animation:
+        SlotTransitions_animation-right_31 200ms reverse ease-in,
         SlotTransitions_animation-fade_ce 250ms reverse ease-in;
-    }
+}
 .SlotTransitions_baseOptDevices__exitRight_72 {
-        z-index: 1;
-        animation: SlotTransitions_animation-right_31 200ms ease-in;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-right_31 200ms ease-in;
+}
 .SlotTransitions_baseOptDevices__enterLeft_0f {
-        z-index: 2;
-        animation: SlotTransitions_animation-left_27 200ms reverse ease-in;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-left_27 200ms reverse ease-in;
+}
 .SlotTransitions_baseOptDevices__exitRightSwap_09 {
-        z-index: 2;
-        animation: SlotTransitions_animation-right-long_bd 200ms ease-in;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-right-long_bd 200ms ease-in;
+}
 .SlotTransitions_baseOptDevices__enterRightSwap_04 {
-        z-index: 1;
-        animation: SlotTransitions_animation-right-long_bd 200ms reverse ease-in;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-right-long_bd 200ms reverse ease-in;
+}
 .SlotTransitions_baseOptDevices__enterLeftSwap_52 {
-        z-index: 2;
-        animation: SlotTransitions_animation-left-long_ec 200ms reverse ease-in;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-left-long_ec 200ms reverse ease-in;
+}
 .SlotTransitions_baseOptDevices__exitLeftSwap_e9 {
-        z-index: 1;
-        animation: SlotTransitions_animation-left-long_ec 200ms ease-in;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-left-long_ec 200ms ease-in;
+}
 .SlotTransitions_baseOptDevices__enterFitting_8b {
-        z-index: 2;
-        animation: SlotTransitions_animation-fitting_24 250ms;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-fitting_24 250ms;
+}
 .SlotTransitions_baseOptDevices__exitFittingRemove_fc {
-        z-index: 1;
-        animation: SlotTransitions_animation-fitting-remove_e0 250ms;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-fitting-remove_e0 250ms;
+}
 .SlotTransitions_baseOptDevices__exitActiveFitting_d0,
-    .SlotTransitions_baseOptDevices__exitFittingRemove_fc {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
+.SlotTransitions_baseOptDevices__exitFittingRemove_fc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 .SlotTransitions_baseOptDevices__exitDestroy_c9 {
-        animation: SlotTransitions_animation-destroy_12 1.4s;
-        animation-timing-function: cubic-bezier(.6, 0, .6, 1);
-    }
+    animation: SlotTransitions_animation-destroy_12 1.4s;
+    animation-timing-function: cubic-bezier(0.6, 0, 0.6, 1);
+}
 .SlotTransitions_baseOptDevices__enterDestroy_19 {
-        animation: SlotTransitions_animation-fade_ce 250ms reverse ease-in;
-    }
+    animation: SlotTransitions_animation-fade_ce 250ms reverse ease-in;
+}
 .SlotTransitions_baseOptDevices__exitDemount_e3 {
-        animation: SlotTransitions_animation-bright-up_8e 1s forwards 0s ease-in,
+    animation:
+        SlotTransitions_animation-bright-up_8e 1s forwards 0s ease-in,
         SlotTransitions_animation-demount_d8 600ms none 1s ease-out;
-    }
+}
 .SlotTransitions_baseOptDevices__enterDemount_8a {
-        animation: SlotTransitions_animation-fade_ce 250ms reverse ease-in;
-    }
+    animation: SlotTransitions_animation-fade_ce 250ms reverse ease-in;
+}
 .SlotTransitions_baseOptDevices__exitFade_10 {
-        animation: SlotTransitions_animation-fade_ce 250ms ease-in;
-    }
+    animation: SlotTransitions_animation-fade_ce 250ms ease-in;
+}
 .SlotTransitions_baseOptDevices__enterFade_cf {
-        animation: SlotTransitions_animation-fade_ce 250ms reverse ease-in;
-    }
+    animation: SlotTransitions_animation-fade_ce 250ms reverse ease-in;
+}
 .SlotTransitions_baseOptDevices__enterDemountFade_57 {
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation: SlotTransitions_animation-fade_ce 600ms 1s reverse ease-out;
-        animation-fill-mode: forwards;
-    }
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: SlotTransitions_animation-fade_ce 600ms 1s reverse ease-out;
+    animation-fill-mode: forwards;
+}
 .SlotTransitions_baseConsumables__exitLeft_d9 {
-        animation: SlotTransitions_animation-left_27 200ms ease-in;
-    }
+    animation: SlotTransitions_animation-left_27 200ms ease-in;
+}
 .SlotTransitions_baseConsumables__exitLeftFade_4f {
-        animation: SlotTransitions_animation-left_27 200ms ease-in,
+    animation:
+        SlotTransitions_animation-left_27 200ms ease-in,
         SlotTransitions_animation-fade_ce 250ms ease-in;
-    }
+}
 .SlotTransitions_baseConsumables__enterRight_02 {
-        animation: SlotTransitions_animation-right_31 200ms reverse ease-in;
-    }
+    animation: SlotTransitions_animation-right_31 200ms reverse ease-in;
+}
 .SlotTransitions_baseConsumables__enterRightFade_c6 {
-        animation: SlotTransitions_animation-right_31 200ms reverse ease-in,
+    animation:
+        SlotTransitions_animation-right_31 200ms reverse ease-in,
         SlotTransitions_animation-fade_ce 250ms reverse ease-in;
-    }
+}
 .SlotTransitions_baseConsumables__exitRight_39 {
-        z-index: 1;
-        animation: SlotTransitions_animation-right_31 200ms ease-in;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-right_31 200ms ease-in;
+}
 .SlotTransitions_baseConsumables__enterLeft_97 {
-        z-index: 2;
-        animation: SlotTransitions_animation-left_27 200ms reverse ease-in;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-left_27 200ms reverse ease-in;
+}
 .SlotTransitions_baseConsumables__exitRightSwap_8a {
-        z-index: 2;
-        animation: SlotTransitions_animation-right-long_bd 200ms ease-in;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-right-long_bd 200ms ease-in;
+}
 .SlotTransitions_baseConsumables__enterRightSwap_28 {
-        z-index: 1;
-        animation: SlotTransitions_animation-right-long_bd 200ms reverse ease-in;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-right-long_bd 200ms reverse ease-in;
+}
 .SlotTransitions_baseConsumables__enterLeftSwap_8e {
-        z-index: 2;
-        animation: SlotTransitions_animation-left-long_ec 200ms reverse ease-in;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-left-long_ec 200ms reverse ease-in;
+}
 .SlotTransitions_baseConsumables__exitLeftSwap_0e {
-        z-index: 1;
-        animation: SlotTransitions_animation-left-long_ec 200ms ease-in;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-left-long_ec 200ms ease-in;
+}
 .SlotTransitions_baseConsumables__enterFitting_13 {
-        z-index: 2;
-        animation: SlotTransitions_animation-fitting_24 250ms;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-fitting_24 250ms;
+}
 .SlotTransitions_baseConsumables__exitFittingRemove_01 {
-        z-index: 1;
-        animation: SlotTransitions_animation-fitting-remove_e0 250ms;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-fitting-remove_e0 250ms;
+}
 .SlotTransitions_baseConsumables__exitActiveFitting_10,
-    .SlotTransitions_baseConsumables__exitFittingRemove_01 {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
+.SlotTransitions_baseConsumables__exitFittingRemove_01 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 .SlotTransitions_baseConsumables__exitFade_5b {
-        animation: SlotTransitions_animation-fade_ce 250ms ease-in;
-    }
+    animation: SlotTransitions_animation-fade_ce 250ms ease-in;
+}
 .SlotTransitions_baseConsumables__enterFade_bd {
-        animation: SlotTransitions_animation-fade_ce 250ms reverse ease-in;
-    }
+    animation: SlotTransitions_animation-fade_ce 250ms reverse ease-in;
+}
 .SlotTransitions_baseBattleAbilities__exitLeft_52 {
-        animation: SlotTransitions_animation-left_27 200ms ease-in;
-    }
+    animation: SlotTransitions_animation-left_27 200ms ease-in;
+}
 .SlotTransitions_baseBattleAbilities__exitLeftFade_a9 {
-        animation: SlotTransitions_animation-left_27 200ms ease-in,
+    animation:
+        SlotTransitions_animation-left_27 200ms ease-in,
         SlotTransitions_animation-fade_ce 250ms ease-in;
-    }
+}
 .SlotTransitions_baseBattleAbilities__enterRight_7b {
-        animation: SlotTransitions_animation-right_31 200ms reverse ease-in;
-    }
+    animation: SlotTransitions_animation-right_31 200ms reverse ease-in;
+}
 .SlotTransitions_baseBattleAbilities__enterRightFade_d3 {
-        animation: SlotTransitions_animation-right_31 200ms reverse ease-in,
+    animation:
+        SlotTransitions_animation-right_31 200ms reverse ease-in,
         SlotTransitions_animation-fade_ce 250ms reverse ease-in;
-    }
+}
 .SlotTransitions_baseBattleAbilities__exitRight_fc {
-        z-index: 1;
-        animation: SlotTransitions_animation-right_31 200ms ease-in;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-right_31 200ms ease-in;
+}
 .SlotTransitions_baseBattleAbilities__enterLeft_97 {
-        z-index: 2;
-        animation: SlotTransitions_animation-left_27 200ms reverse ease-in;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-left_27 200ms reverse ease-in;
+}
 .SlotTransitions_baseBattleAbilities__exitRightSwap_7d {
-        z-index: 2;
-        animation: SlotTransitions_animation-right-long_bd 200ms ease-in;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-right-long_bd 200ms ease-in;
+}
 .SlotTransitions_baseBattleAbilities__enterRightSwap_e5 {
-        z-index: 1;
-        animation: SlotTransitions_animation-right-long_bd 200ms reverse ease-in;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-right-long_bd 200ms reverse ease-in;
+}
 .SlotTransitions_baseBattleAbilities__enterLeftSwap_ca {
-        z-index: 2;
-        animation: SlotTransitions_animation-left-long_ec 200ms reverse ease-in;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-left-long_ec 200ms reverse ease-in;
+}
 .SlotTransitions_baseBattleAbilities__exitLeftSwap_c0 {
-        z-index: 1;
-        animation: SlotTransitions_animation-left-long_ec 200ms ease-in;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-left-long_ec 200ms ease-in;
+}
 .SlotTransitions_baseBattleAbilities__enterFitting_de {
-        z-index: 2;
-        animation: SlotTransitions_animation-fitting_24 250ms;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-fitting_24 250ms;
+}
 .SlotTransitions_baseBattleAbilities__exitFittingRemove_bc {
-        z-index: 1;
-        animation: SlotTransitions_animation-fitting-remove_e0 250ms;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-fitting-remove_e0 250ms;
+}
 .SlotTransitions_baseBattleAbilities__exitActiveFitting_3d,
-    .SlotTransitions_baseBattleAbilities__exitFittingRemove_bc {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
+.SlotTransitions_baseBattleAbilities__exitFittingRemove_bc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 .SlotTransitions_baseBattleAbilities__exitFade_21 {
-        animation: SlotTransitions_animation-fade_ce 250ms ease-in;
-    }
+    animation: SlotTransitions_animation-fade_ce 250ms ease-in;
+}
 .SlotTransitions_baseBattleAbilities__enterFade_15 {
-        animation: SlotTransitions_animation-fade_ce 250ms reverse ease-in;
-    }
+    animation: SlotTransitions_animation-fade_ce 250ms reverse ease-in;
+}
 .SlotTransitions_baseBattleBoosters__enterFitting_56 {
-        z-index: 2;
-        animation: SlotTransitions_animation-fitting_24 250ms;
-    }
+    z-index: 2;
+    animation: SlotTransitions_animation-fitting_24 250ms;
+}
 .SlotTransitions_baseBattleBoosters__exitFittingRemove_e5 {
-        z-index: 1;
-        animation: SlotTransitions_animation-fitting-remove_e0 250ms;
-    }
+    z-index: 1;
+    animation: SlotTransitions_animation-fitting-remove_e0 250ms;
+}
 .SlotTransitions_baseBattleBoosters__exitActiveFitting_f1,
-    .SlotTransitions_baseBattleBoosters__exitFittingRemove_e5 {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-
+.SlotTransitions_baseBattleBoosters__exitFittingRemove_e5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

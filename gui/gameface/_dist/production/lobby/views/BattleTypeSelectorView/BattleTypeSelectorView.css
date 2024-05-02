@@ -29,15 +29,15 @@
 }
 
 .Platoon_text_e7 {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
 .Platoon_base__selected_98 .Platoon_text_e7 {
-        text-shadow: 0 0 14rem #f00;
-    }
+    text-shadow: 0 0 14rem #f00;
+}
 
 .Platoon_container_2a {
     display: flex;
@@ -46,58 +46,58 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    filter: grayscale(63%) brightness(.8);
+    filter: grayscale(63%) brightness(0.8);
     position: relative;
-    transition: filter .2s;
+    transition: filter 0.2s;
 }
 
 .Platoon_container_2a:hover {
-        filter: grayscale(20%) brightness(.8);
-    }
+    filter: grayscale(20%) brightness(0.8);
+}
 
 .Platoon_base__selected_98 .Platoon_container_2a {
-        filter: grayscale(0) brightness(1);
-    }
+    filter: grayscale(0) brightness(1);
+}
 
 .Platoon_bonus_3d {
     width: 29rem;
     height: 18rem;
     background: url('R.images.battle_royale.gui.maps.battleTypeSelector.bonus') no-repeat center / contain;
-    filter: grayscale(63%) brightness(.8);
+    filter: grayscale(63%) brightness(0.8);
     position: absolute;
     top: 3rem;
     right: 4rem;
     mask-image: radial-gradient(rgba(0, 0, 0, 1) 63%, transparent 100%);
-    transition: filter .2s;
+    transition: filter 0.2s;
 }
 
 .Platoon_base__selected_98 .Platoon_bonus_3d {
-        filter: grayscale(0) brightness(200%);
-    }
+    filter: grayscale(0) brightness(200%);
+}
 
 .Platoon_bonus__hide_ac {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .Platoon_bonus__show_57 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 .Platoon_bonus__randomPlatoonAnimate_8c {
     opacity: 0;
     animation-name: Platoon_snow-bonus_5c, Platoon_light-bonus_dc;
-    animation-duration: .5s, .7s;
+    animation-duration: 0.5s, 0.7s;
     animation-fill-mode: forwards, backwards;
     animation-delay: 2.4s;
-    }
+}
 
 .Platoon_bonus__platoonAnimate_5b {
     opacity: 0;
     animation-name: Platoon_snow-bonus_5c, Platoon_light-bonus_dc;
-    animation-duration: .5s, .7s;
+    animation-duration: 0.5s, 0.7s;
     animation-fill-mode: forwards, backwards;
     animation-delay: 2.7s;
-    }
+}
 
 .Platoon_blinkWrapper_89 {
     position: absolute;
@@ -113,7 +113,7 @@
 .Platoon_iconBlink_c4 {
     width: 80rem;
     height: 30rem;
-    background-image: linear-gradient(140deg, rgba(255,255,255, 1));
+    background-image: linear-gradient(140deg, rgba(255, 255, 255, 1));
     filter: brightness(300%);
 }
 
@@ -126,7 +126,7 @@
 }
 
 .Platoon_textBlink_d5 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -135,12 +135,7 @@
     text-align: center;
     filter: brightness(200%);
     position: absolute;
-    mask-image: linear-gradient(
-140deg,
-            transparent 10%,
-            #000 20%,
-            transparent 25%
-);
+    mask-image: linear-gradient(140deg, transparent 10%, #000 20%, transparent 25%);
     mask-repeat: repeat-x;
     mask-size: cover;
 }
@@ -167,7 +162,7 @@
 
 @keyframes Platoon_light-bonus_dc {
     0% {
-        filter: grayscale(63%) brightness(.85);
+        filter: grayscale(63%) brightness(0.85);
     }
 
     50%,
@@ -176,11 +171,11 @@
     }
 
     99% {
-        filter: grayscale(63%) brightness(.85);
+        filter: grayscale(63%) brightness(0.85);
     }
 
     100% {
-        filter: grayscale(63%) brightness(.85);
+        filter: grayscale(63%) brightness(0.85);
     }
 }
 
@@ -194,14 +189,19 @@
     position: relative;
 }
 
-    .HorizontalContainer_base_8b::after {
-        width: 100%;
-        height: 1rem;
-        background-image: linear-gradient(90deg, rgba(204, 124, 99, 0) 10%, rgba(204, 124, 99, .25) 50%, rgba(204, 124, 99, 0)  90%);
-        content: '';
-        position: absolute;
-        bottom: 0;
-    }
+.HorizontalContainer_base_8b::after {
+    width: 100%;
+    height: 1rem;
+    background-image: linear-gradient(
+        90deg,
+        rgba(204, 124, 99, 0) 10%,
+        rgba(204, 124, 99, 0.25) 50%,
+        rgba(204, 124, 99, 0) 90%
+    );
+    content: '';
+    position: absolute;
+    bottom: 0;
+}
 
 .HorizontalContainer_content_0d {
     display: flex;
@@ -215,23 +215,23 @@
     width: 69rem;
     height: 100%;
     background: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0) 100%);
-    opacity: .3;
+    opacity: 0.3;
     content: '';
     position: absolute;
     top: 0;
-        left: -69rem;
-    }
+    left: -69rem;
+}
 
 .HorizontalContainer_content_0d::after {
     width: 69rem;
     height: 100%;
     background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%);
-    opacity: .3;
+    opacity: 0.3;
     content: '';
     position: absolute;
     top: 0;
-        right: -69rem;
-    }
+    right: -69rem;
+}
 
 .Tab_base_47 {
     display: flex;
@@ -246,19 +246,19 @@
     cursor: pointer;
 }
 
-    .Tab_base__inactive_a2 {
-        background: rgba(0, 0, 0, .4);
-        transition: background-color .5s;
-    }
+.Tab_base__inactive_a2 {
+    background: rgba(0, 0, 0, 0.4);
+    transition: background-color 0.5s;
+}
 
-    .Tab_base__inactive_a2:hover {
-            background: rgba(54, 3, 3, .4);
-        }
+.Tab_base__inactive_a2:hover {
+    background: rgba(54, 3, 3, 0.4);
+}
 
-    .Tab_base__active_21 {
-        border-color: rgba(255, 85, 0, .2);
-        background: linear-gradient(0deg, rgba(255, 0, 0, .1) 0%, rgba(255, 0, 0, .1) 100%), rgba(0, 0, 0, .4);
-    }
+.Tab_base__active_21 {
+    border-color: rgba(255, 85, 0, 0.2);
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.1) 0%, rgba(255, 0, 0, 0.1) 100%), rgba(0, 0, 0, 0.4);
+}
 
 .Tab_border_1f {
     width: 100%;
@@ -267,17 +267,17 @@
 }
 
 .Tab_base__active_21 .Tab_border_1f {
-        border-image-source: url('R.images.battle_royale.gui.maps.battleTypeSelector.separator_active');
-        border-image-slice: 1 fill;
-        border-image-width: 1rem;
-    }
+    border-image-source: url('R.images.battle_royale.gui.maps.battleTypeSelector.separator_active');
+    border-image-slice: 1 fill;
+    border-image-width: 1rem;
+}
 
 .Tab_base__active_21 .Tab_light_71 {
-        width: 338rem;
-        height: 168rem;
-        background: url('R.images.gui.maps.icons.components.tabs.tab.highlight') no-repeat center / contain;
-        position: absolute;
-    }
+    width: 338rem;
+    height: 168rem;
+    background: url('R.images.gui.maps.icons.components.tabs.tab.highlight') no-repeat center / contain;
+    position: absolute;
+}
 
 .Tab_separator_60 {
     width: 1rem;
@@ -289,14 +289,13 @@
 }
 
 .Tab_base__active_21 .Tab_separator_60 {
-        width: 0;
-    }
+    width: 0;
+}
 
 .Tab_separator__left_e6 {
-        left: -1rem;
-    }
+    left: -1rem;
+}
 
 .Tab_separator__right_34 {
-        right: -1rem;
-    }
-
+    right: -1rem;
+}

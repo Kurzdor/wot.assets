@@ -4,12 +4,12 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.atlases.components.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .ConversionTooltipBook_base_cb {
     display: flex;
@@ -25,7 +25,7 @@
 }
 
 .ConversionTooltipBook_labelsBlock_a9 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -36,7 +36,7 @@
 
 .ConversionTooltipBook_titleLabel_64 {
     margin-top: 6rem;
-    color: #E9E2BF;
+    color: #e9e2bf;
 }
 
 .ConversionTooltipBook_bottomLabels_b0 {
@@ -46,11 +46,11 @@
 
 .ConversionTooltipBook_nationLabel_e2 {
     margin-right: 5rem;
-    color: #8C8C7E;
+    color: #8c8c7e;
 }
 
 .ConversionTooltipBook_valueLabel_90 {
-    color: #FEFEEC;
+    color: #fefeec;
 }
 
 .ConversionTooltipApp_base_ff {
@@ -61,12 +61,12 @@
     position: relative;
 }
 
-    .ConversionTooltipApp_base__wide_4c {
-        width: 460rem;
-    }
+.ConversionTooltipApp_base__wide_4c {
+    width: 460rem;
+}
 
 .ConversionTooltipApp_header_22 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
@@ -74,7 +74,7 @@
 }
 
 .ConversionTooltipApp_body_5a {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -106,8 +106,7 @@
 }
 
 .ConversionTooltipApp_base__wide_4c .ConversionTooltipApp_divider_61 {
-        width: 360rem;
-        background-image: url('R.images.gui.maps.icons.tooltip.tooltip_perks_divider');
-        left: 20rem;
-    }
-
+    width: 360rem;
+    background-image: url('R.images.gui.maps.icons.tooltip.tooltip_perks_divider');
+    left: 20rem;
+}

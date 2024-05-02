@@ -1,0 +1,1563 @@
+/* stylelint-disable */
+/* stylelint-enable */
+.App_cff_splash_62 {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 110rem;
+    font-weight: 700;
+    line-height: normal;
+}
+.App_cff_splash_small_79 {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 76rem;
+    font-weight: 700;
+    line-height: normal;
+}
+.App_cff_title_89 {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 48rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.App_cff_heading_ce {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 32rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.App_cff_heading_small_15 {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.App_cff_body_2e {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.App_cff_emphasis_23 {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: normal;
+}
+.App_cff_emphasis_small_d1 {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 16rem;
+    font-weight: 700;
+    line-height: normal;
+}
+.App_cff_body_small_05 {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.App_cff_player_bc {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 12rem;
+    font-weight: 600;
+    line-height: normal;
+}
+.App_cff_decorative_title_14 {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.App_cff_decorative_body_5c {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.App_boxImage_55 {
+    width: 100%;
+    height: 100%;
+}
+.App_transparent_b4 {
+    opacity: 0;
+}
+.App_fade_in_b1 {
+    animation-name: App_fade_in_b1;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.App_fade_from_left_0c {
+    animation-name: App_fade_from_left_0c;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.App_fade_from_bottom_fb {
+    animation-name: App_fade_from_bottom_fb;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.App_fade_out_b3 {
+    animation-name: App_fade_out_b3;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.App_fade_to_left_3a {
+    animation-name: App_fade_to_left_3a;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.App_fade_to_bottom_21 {
+    animation-name: App_fade_to_bottom_21;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.App_delay_100_cb {
+    animation-delay: 100ms;
+}
+.App_delay_200_f5 {
+    animation-delay: 200ms;
+}
+.App_delay_300_d3 {
+    animation-delay: 300ms;
+}
+.App_delay_400_e5 {
+    animation-delay: 400ms;
+}
+.App_delay_500_5f {
+    animation-delay: 500ms;
+}
+.App_delay_600_0b {
+    animation-delay: 600ms;
+}
+.App_delay_700_d4 {
+    animation-delay: 700ms;
+}
+.App_delay_800_47 {
+    animation-delay: 800ms;
+}
+.App_delay_1000_80 {
+    animation-delay: 1000ms;
+}
+.App_delay_1250_77 {
+    animation-delay: 1250ms;
+}
+.App_delay_1500_8a {
+    animation-delay: 1500ms;
+}
+.App_delay_3000_4e {
+    animation-delay: 3000ms;
+}
+.App_glitch_a6 {
+    animation-name: App_glitch_a6;
+    animation-duration: 3500ms;
+    animation-iteration-count: infinite;
+}
+@keyframes App_fade_in_b1 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes App_fade_from_left_0c {
+    from {
+        opacity: 0;
+        transform: translateX(-100rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes App_fade_from_bottom_fb {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes App_fade_out_b3 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+@keyframes App_fade_to_left_3a {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-100rem);
+    }
+}
+@keyframes App_fade_to_bottom_21 {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+}
+@keyframes App_glitch_a6 {
+    0% {
+        opacity: 1;
+        transform: none;
+    }
+
+    7% {
+        opacity: 0.75;
+        transform: matrix(1, -0.01, -0.01, 1, 0, 0);
+    }
+
+    10% {
+        opacity: 1;
+        transform: none;
+    }
+
+    27% {
+        opacity: 1;
+        transform: none;
+    }
+
+    30% {
+        opacity: 0.75;
+        transform: matrix(1, -0.01, 0, 1, 0, 0);
+    }
+
+    35% {
+        opacity: 1;
+        transform: none;
+    }
+
+    52% {
+        opacity: 1;
+        transform: none;
+    }
+
+    55% {
+        opacity: 0.75;
+        transform: matrix(1, 0.02, -0.02, 1, 0, 0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: none;
+    }
+
+    72% {
+        opacity: 1;
+        transform: none;
+    }
+
+    75% {
+        opacity: 0.75;
+        transform: matrix(1, -0.04, -0.02, 1, 0, 0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: none;
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes App_glitch1_99 {
+    0% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+
+    7% {
+        opacity: 0.75;
+        transform: translateX(-4rem);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateX(-4rem);
+    }
+
+    27% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+
+    30% {
+        opacity: 0.75;
+        transform: translateX(-4rem);
+    }
+
+    35% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+
+    52% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+
+    55% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(-4rem);
+    }
+
+    72% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+
+    75% {
+        opacity: 0.75;
+        transform: translateX(-4rem);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateX(-4rem);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+}
+@keyframes App_glitch2_0a {
+    0% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+
+    7% {
+        opacity: 0.5;
+        transform: translate(6rem, -1rem);
+    }
+
+    10% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+
+    27% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+
+    30% {
+        opacity: 0.5;
+        transform: translate(2rem, -2rem);
+    }
+
+    35% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+
+    52% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+
+    55% {
+        opacity: 0.5;
+        transform: translate(2rem, -1rem);
+    }
+
+    50% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+
+    72% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+
+    75% {
+        opacity: 0.5;
+        transform: translate(6rem, -6rem);
+    }
+
+    80% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+
+    100% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+}
+@keyframes App_glitch3_b8 {
+    0% {
+        opacity: 1;
+    }
+
+    7% {
+        opacity: 1;
+    }
+
+    8% {
+        opacity: 0.8;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    74% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.3;
+    }
+
+    77% {
+        opacity: 1;
+    }
+}
+/* CFF colors are not defined in JS and SCSS map throws an error, so I hardcoded them */
+.App_CFF_MAIN_b2 {
+    color: #b3f6fe;
+}
+.App_CFF_SUPPORT_5c {
+    color: #03ffff;
+}
+.App_CFF_DONE_d0 {
+    color: #4fff4c;
+}
+.App_CFF_PHASE_d8 {
+    color: #d3ff4c;
+}
+.App_CFF_IMPORTANT_bd {
+    color: #ffde96;
+}
+.App_CFF_HERO_58 {
+    color: #ffb64c;
+}
+.App_CFF_ATTENTION_ed {
+    color: #ed1f36;
+}
+.App_CFF_BACKGROUND_1c {
+    color: #091929;
+}
+.App_CFF_MINE_00 {
+    color: #ff595a;
+}
+.App_CFF_VORTEX_91 {
+    color: #ef3dff;
+}
+.App_CFF_BARRIER_fb {
+    color: #3dbdff;
+}
+.App_CFF_JUMP_86 {
+    color: #3dff91;
+}
+.App_base_88 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    position: relative;
+}
+.App_header_16 {
+    position: absolute;
+    top: 50rem;
+    right: 40rem;
+}
+.App_content_a2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    width: 100%;
+    margin-top: 10%;
+    position: relative;
+}
+.App_content_title_2d {
+    color: #03ffff;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 32rem;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 15rem;
+    font-size: 24rem;
+    text-transform: uppercase;
+    z-index: 10;
+}
+.mediaSmall .App_content_title_2d {
+    font-size: 30rem;
+}
+.mediaMedium .App_content_title_2d {
+    font-size: 36rem;
+}
+.App_content_description_51 {
+    width: 42%;
+    margin-bottom: 20rem;
+    font-size: 14rem;
+    text-align: center;
+    z-index: 10;
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.mediaSmall .App_content_description_51 {
+    font-size: 15rem;
+}
+.mediaMedium .App_content_description_51 {
+    font-size: 18rem;
+}
+.App_content_decoration_a4 {
+    width: 42%;
+    height: 1rem;
+    background-color: #b3f6fe;
+}
+.App_content_image_f8 {
+    width: 363rem;
+    height: 267rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.leaving_screen') center center / contain no-repeat;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+.mediaSmall .App_content_image_f8 {
+    width: 425rem;
+    height: 313rem;
+    top: 26%;
+}
+.mediaMedium .App_content_image_f8 {
+    width: 510rem;
+    height: 376rem;
+}
+.mediaLarge .App_content_image_f8 {
+    top: 32%;
+}
+.App_button_ba {
+    min-width: 132rem;
+    height: 26rem;
+}
+.mediaSmall .App_button_ba {
+    min-width: 150rem;
+}
+.mediaMedium .App_button_ba {
+    min-width: 180rem;
+    height: 30rem;
+}
+
+.Box_mt__XS_0c {
+    margin-top: 4rem;
+}
+.Box_mt__SM_eb {
+    margin-top: 8rem;
+}
+.Box_mt__SMp_cf {
+    margin-top: 10rem;
+}
+.Box_mt__MD_25 {
+    margin-top: 16rem;
+}
+.Box_mt__MDp_49 {
+    margin-top: 20rem;
+}
+.Box_mt__LG_e8 {
+    margin-top: 32rem;
+}
+.Box_mt__XL_83 {
+    margin-top: 64rem;
+}
+
+.Box_mr__XS_7c {
+    margin-right: 4rem;
+}
+
+.Box_mr__SM_08 {
+    margin-right: 8rem;
+}
+
+.Box_mr__SMp_06 {
+    margin-right: 10rem;
+}
+
+.Box_mr__MD_4a {
+    margin-right: 16rem;
+}
+
+.Box_mr__MDp_b6 {
+    margin-right: 20rem;
+}
+
+.Box_mr__LG_d0 {
+    margin-right: 32rem;
+}
+
+.Box_mr__XL_db {
+    margin-right: 64rem;
+}
+
+.Box_mb__XS_bb {
+    margin-bottom: 4rem;
+}
+
+.Box_mb__SM_83 {
+    margin-bottom: 8rem;
+}
+
+.Box_mb__SMp_04 {
+    margin-bottom: 10rem;
+}
+
+.Box_mb__MD_ed {
+    margin-bottom: 16rem;
+}
+
+.Box_mb__MDp_65 {
+    margin-bottom: 20rem;
+}
+
+.Box_mb__LG_c8 {
+    margin-bottom: 32rem;
+}
+
+.Box_mb__XL_f8 {
+    margin-bottom: 64rem;
+}
+
+.Box_ml__XS_8a {
+    margin-left: 4rem;
+}
+
+.Box_ml__SM_e6 {
+    margin-left: 8rem;
+}
+
+.Box_ml__SMp_fb {
+    margin-left: 10rem;
+}
+
+.Box_ml__MD_2b {
+    margin-left: 16rem;
+}
+
+.Box_ml__MDp_c7 {
+    margin-left: 20rem;
+}
+
+.Box_ml__LG_39 {
+    margin-left: 32rem;
+}
+
+.Box_ml__XL_4a {
+    margin-left: 64rem;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* eslint-disable-next-line expectedscss*/
+.Text_paragraph-P10_2c {
+    font-size: 10rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_paragraph-P12_22 {
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Text_paragraph-P14_a7 {
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Text_paragraph-P16_90 {
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Text_paragraph-P18_50 {
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Text_paragraph-P24_33 {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 32rem;
+}
+.Text_heading-H14_8b {
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.Text_heading-H15_9e {
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.Text_heading-H18_b7 {
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H20R_f6 {
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H22_27 {
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H24R_be {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H24_0c {
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H28_78 {
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H36_32 {
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H56_c3 {
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H73_8f {
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H144_a9 {
+    font-size: 144rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.Text_BLACK_REAL_30 {
+    color: #000000;
+}
+.Text_WHITE_REAL_bc {
+    color: #ffffff;
+}
+.Text_WHITE_62 {
+    color: #f2f2f7;
+}
+.Text_WHITE_ORANGE_54 {
+    color: #fefeec;
+}
+.Text_WHITE_SPANISH_df {
+    color: #e9e2bf;
+}
+.Text_PAR_15 {
+    color: #8c8c7e;
+}
+.Text_PAR_SECONDARY_5d {
+    color: #595950;
+}
+.Text_PAR_TERTIARY_c9 {
+    color: #37362e;
+}
+.Text_INFO_RED_30 {
+    color: #ff0000;
+}
+.Text_RED_66 {
+    color: #ff2717;
+}
+.Text_RED_DARK_d8 {
+    color: #b70000;
+}
+.Text_YELLOW_ed {
+    color: #feab34;
+}
+.Text_ORANGE_be {
+    color: #ee7000;
+}
+.Text_CREAM_57 {
+    color: #ffdd99;
+}
+.Text_BROWN_18 {
+    color: #cbac77;
+}
+.Text_GREEN_BRIGHT_3f {
+    color: #80d43a;
+}
+.Text_GREEN_e3 {
+    color: #7ab300;
+}
+.Text_GREEN_DARK_f1 {
+    color: #497212;
+}
+.Text_BLUE_BOOSTER_21 {
+    color: #ccffff;
+}
+.Text_BLUE_TEAMKILLER_ab {
+    color: #09e2ff;
+}
+.Text_CRED_f7 {
+    color: #ced9d9;
+}
+.Text_GOLD_28 {
+    color: #ffc363;
+}
+.Text_BOND_be {
+    color: #c9c9b6;
+}
+.Text_PROM_65 {
+    color: #a29b70;
+}
+
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+.TextButton_icon__forward_59 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
+.TextButton_icon__close_53 {
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
+.TextButton_icon__info_33 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_glow_a4 {
+    opacity: 0;
+}
+.TextButton_caption_82 {
+    position: relative;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
+}
+.TextButton_caption__back_b9,
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
+.TextButton_caption__info_23 {
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+    margin-left: 8rem;
+}
+.TextButton_base__right_39 .TextButton_goto_e7 {
+    margin-right: 8rem;
+}
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity 0.16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+    left: -4rem;
+}
+.TextButton_base__right_39 .TextButton_shine_e2 {
+    right: -4rem;
+    transform: rotate(180deg);
+}
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_shine_e2 {
+    opacity: 0;
+}
+
+/* stylelint-disable */
+/* stylelint-enable */
+.Button_cff_splash_cf {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 110rem;
+    font-weight: 700;
+    line-height: normal;
+}
+.Button_cff_splash_small_90 {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 76rem;
+    font-weight: 700;
+    line-height: normal;
+}
+.Button_cff_title_ce {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 48rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.Button_cff_heading_db {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 32rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.Button_cff_heading_small_34 {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.Button_cff_body_57 {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.Button_cff_emphasis_59 {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: normal;
+}
+.Button_cff_emphasis_small_7e {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 16rem;
+    font-weight: 700;
+    line-height: normal;
+}
+.Button_cff_body_small_de {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.Button_cff_player_f0 {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 12rem;
+    font-weight: 600;
+    line-height: normal;
+}
+.Button_cff_decorative_title_29 {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.Button_cff_decorative_body_4b {
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.Button_boxImage_29 {
+    width: 100%;
+    height: 100%;
+}
+.Button_transparent_6f {
+    opacity: 0;
+}
+.Button_fade_in_66 {
+    animation-name: Button_fade_in_66;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.Button_fade_from_left_43 {
+    animation-name: Button_fade_from_left_43;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.Button_fade_from_bottom_0a {
+    animation-name: Button_fade_from_bottom_0a;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.Button_fade_out_be {
+    animation-name: Button_fade_out_be;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.Button_fade_to_left_78 {
+    animation-name: Button_fade_to_left_78;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.Button_fade_to_bottom_6a {
+    animation-name: Button_fade_to_bottom_6a;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.Button_delay_100_f0 {
+    animation-delay: 100ms;
+}
+.Button_delay_200_88 {
+    animation-delay: 200ms;
+}
+.Button_delay_300_14 {
+    animation-delay: 300ms;
+}
+.Button_delay_400_78 {
+    animation-delay: 400ms;
+}
+.Button_delay_500_c0 {
+    animation-delay: 500ms;
+}
+.Button_delay_600_52 {
+    animation-delay: 600ms;
+}
+.Button_delay_700_80 {
+    animation-delay: 700ms;
+}
+.Button_delay_800_e9 {
+    animation-delay: 800ms;
+}
+.Button_delay_1000_a5 {
+    animation-delay: 1000ms;
+}
+.Button_delay_1250_5f {
+    animation-delay: 1250ms;
+}
+.Button_delay_1500_43 {
+    animation-delay: 1500ms;
+}
+.Button_delay_3000_ae {
+    animation-delay: 3000ms;
+}
+.Button_glitch_d4 {
+    animation-name: Button_glitch_d4;
+    animation-duration: 3500ms;
+    animation-iteration-count: infinite;
+}
+@keyframes Button_fade_in_66 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes Button_fade_from_left_43 {
+    from {
+        opacity: 0;
+        transform: translateX(-100rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes Button_fade_from_bottom_0a {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes Button_fade_out_be {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+@keyframes Button_fade_to_left_78 {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-100rem);
+    }
+}
+@keyframes Button_fade_to_bottom_6a {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+}
+@keyframes Button_glitch_d4 {
+    0% {
+        opacity: 1;
+        transform: none;
+    }
+
+    7% {
+        opacity: 0.75;
+        transform: matrix(1, -0.01, -0.01, 1, 0, 0);
+    }
+
+    10% {
+        opacity: 1;
+        transform: none;
+    }
+
+    27% {
+        opacity: 1;
+        transform: none;
+    }
+
+    30% {
+        opacity: 0.75;
+        transform: matrix(1, -0.01, 0, 1, 0, 0);
+    }
+
+    35% {
+        opacity: 1;
+        transform: none;
+    }
+
+    52% {
+        opacity: 1;
+        transform: none;
+    }
+
+    55% {
+        opacity: 0.75;
+        transform: matrix(1, 0.02, -0.02, 1, 0, 0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: none;
+    }
+
+    72% {
+        opacity: 1;
+        transform: none;
+    }
+
+    75% {
+        opacity: 0.75;
+        transform: matrix(1, -0.04, -0.02, 1, 0, 0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: none;
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes Button_glitch1_db {
+    0% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+
+    7% {
+        opacity: 0.75;
+        transform: translateX(-4rem);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateX(-4rem);
+    }
+
+    27% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+
+    30% {
+        opacity: 0.75;
+        transform: translateX(-4rem);
+    }
+
+    35% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+
+    52% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+
+    55% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(-4rem);
+    }
+
+    72% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+
+    75% {
+        opacity: 0.75;
+        transform: translateX(-4rem);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateX(-4rem);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+}
+@keyframes Button_glitch2_aa {
+    0% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+
+    7% {
+        opacity: 0.5;
+        transform: translate(6rem, -1rem);
+    }
+
+    10% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+
+    27% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+
+    30% {
+        opacity: 0.5;
+        transform: translate(2rem, -2rem);
+    }
+
+    35% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+
+    52% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+
+    55% {
+        opacity: 0.5;
+        transform: translate(2rem, -1rem);
+    }
+
+    50% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+
+    72% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+
+    75% {
+        opacity: 0.5;
+        transform: translate(6rem, -6rem);
+    }
+
+    80% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+
+    100% {
+        opacity: 0.25;
+        transform: translateX(4rem);
+    }
+}
+@keyframes Button_glitch3_a1 {
+    0% {
+        opacity: 1;
+    }
+
+    7% {
+        opacity: 1;
+    }
+
+    8% {
+        opacity: 0.8;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    74% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.3;
+    }
+
+    77% {
+        opacity: 1;
+    }
+}
+/* CFF colors are not defined in JS and SCSS map throws an error, so I hardcoded them */
+.Button_CFF_MAIN_c9 {
+    color: #b3f6fe;
+}
+.Button_CFF_SUPPORT_bd {
+    color: #03ffff;
+}
+.Button_CFF_DONE_8a {
+    color: #4fff4c;
+}
+.Button_CFF_PHASE_5d {
+    color: #d3ff4c;
+}
+.Button_CFF_IMPORTANT_4e {
+    color: #ffde96;
+}
+.Button_CFF_HERO_b3 {
+    color: #ffb64c;
+}
+.Button_CFF_ATTENTION_53 {
+    color: #ed1f36;
+}
+.Button_CFF_BACKGROUND_47 {
+    color: #091929;
+}
+.Button_CFF_MINE_d8 {
+    color: #ff595a;
+}
+.Button_CFF_VORTEX_1d {
+    color: #ef3dff;
+}
+.Button_CFF_BARRIER_b9 {
+    color: #3dbdff;
+}
+.Button_CFF_JUMP_ef {
+    color: #3dff91;
+}
+.Button_base_3d {
+    appearance: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 20rem;
+    border-radius: 2rem;
+    text-align: center;
+    cursor: pointer;
+    translate: background-color 0.3s ease-in-out;
+}
+.Button_base__main_27 {
+    border: 1px solid #03ffff;
+    background-color: rgba(3, 255, 255, 0.4);
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.Button_base__main_27:hover {
+    background-color: rgba(3, 255, 255, 0.55);
+}
+.Button_base__done_03 {
+    border: 1px solid #d3ff4c;
+    background-color: rgba(79, 255, 76, 0.4);
+    color: #d3ff4c;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.Button_base__done_03:hover {
+    background-color: rgba(79, 255, 76, 0.55);
+}
+.Button_base__disabled_7c {
+    /* do not add pointer-events: none here, there is one use case where we need a click on a disabled button. */
+    border: 1px solid #b3f6fe;
+    background: linear-gradient(
+            -45deg,
+            transparent 0%,
+            transparent 45%,
+            rgba(179, 246, 254, 0.2) 45%,
+            rgba(179, 246, 254, 0.2) 55%,
+            transparent 55%,
+            transparent 100%
+        )
+        0 0 / 6rem 6rem;
+    opacity: 0.4;
+    cursor: default;
+    color: #b3f6fe;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: normal;
+}

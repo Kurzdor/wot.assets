@@ -12,8 +12,7 @@
 }
 
 .FormatGradientText_gradientText__copied_f8 {
-        color: #ddab61;
-        position: absolute;
-        mask-image: linear-gradient(transparent, #fff);
-    }
-
+    color: #ddab61;
+    position: absolute;
+    mask-image: linear-gradient(transparent, #fff);
+}

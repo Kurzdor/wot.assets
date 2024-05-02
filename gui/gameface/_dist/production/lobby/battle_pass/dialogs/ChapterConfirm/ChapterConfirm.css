@@ -14,18 +14,18 @@
 }
 
 .mediaMedium .Illustration_chapter_6b {
-        width: 334rem;
-        height: 444rem;
+    width: 334rem;
+    height: 444rem;
 }
 
 .mediaLarge .Illustration_chapter_6b {
-        width: 414rem;
-        height: 550rem;
+    width: 414rem;
+    height: 550rem;
 }
 
 .mediaExtraLarge .Illustration_chapter_6b {
-        width: 608rem;
-        height: 808rem;
+    width: 608rem;
+    height: 808rem;
 }
 
 .Illustration_tank_f9 {
@@ -40,18 +40,18 @@
 }
 
 .mediaMedium .Illustration_tank_f9 {
-        width: 376rem;
-        height: 248rem;
+    width: 376rem;
+    height: 248rem;
 }
 
 .mediaLarge .Illustration_tank_f9 {
-        width: 452rem;
-        height: 298rem;
+    width: 452rem;
+    height: 298rem;
 }
 
 .mediaExtraLarge .Illustration_tank_f9 {
-        width: 608rem;
-        height: 400rem;
+    width: 608rem;
+    height: 400rem;
 }
 
 .App_base_92 {
@@ -61,7 +61,7 @@
 }
 
 .App_title_95 {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 24rem;
     font-weight: 700;
     line-height: 1.2;
@@ -71,21 +71,21 @@
 }
 
 .mediaMedium .App_title_95 {
-        color: #F2F2F7;
-        font-size: 28rem;
-        font-weight: 700;
-        line-height: 1.1;
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .mediaLarge .App_title_95 {
-        color: #F2F2F7;
-        font-size: 36rem;
-        font-weight: 700;
-        line-height: 1.1;
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .App_subTitle_5f {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -94,9 +94,8 @@
 }
 
 .mediaMedium .App_subTitle_5f {
-        color: #E9E2BF;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
+    color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
 }
-

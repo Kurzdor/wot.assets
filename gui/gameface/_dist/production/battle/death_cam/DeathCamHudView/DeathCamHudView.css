@@ -15,12 +15,12 @@
     height: 0%;
     background-color: #000;
     z-index: 2;
-    transition: height .3s;
+    transition: height 0.3s;
 }
 
 .DeathCamUIView_cinemaBar__visible_ab {
-        height: 12.5%;
-    }
+    height: 12.5%;
+}
 
 .DeathCamUIView_notificationWrapper_92 {
     display: flex;
@@ -34,13 +34,15 @@
     flex-direction: column;
     opacity: 0;
     transform: translateY(-20%);
-    transition: opacity .3s ease-in, transform .3s ease-in;
+    transition:
+        opacity 0.3s ease-in,
+        transform 0.3s ease-in;
 }
 
-    .DeathReasonNotification_base__visible_ab {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.DeathReasonNotification_base__visible_ab {
+    opacity: 1;
+    transform: translateY(0);
+}
 .DeathReasonNotification_contentContainer_d2 {
     padding-left: 204rem;
     padding-right: 204rem;
@@ -49,12 +51,12 @@
     border-bottom: 0;
     border-image-source: linear-gradient(to right, rgba(0, 0, 0, 0) 4%, rgba(255, 0, 0, 1), rgba(0, 0, 0, 0) 96%);
     border-image-slice: 1;
-    background-image: radial-gradient(ellipse 50% 100% at 50% 0%, rgba(255, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: radial-gradient(ellipse 50% 100% at 50% 0%, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
     color: #fff;
 }
 .mediaSmall .DeathReasonNotification_contentContainer_d2 {
-        padding-left: 120rem;
-        padding-right: 120rem;
+    padding-left: 120rem;
+    padding-right: 120rem;
 }
 .DeathReasonNotification_destructionContainer_d2 {
     display: flex;
@@ -63,8 +65,8 @@
     font-size: 20rem;
 }
 .mediaSmall .DeathReasonNotification_destructionContainer_d2 {
-        padding: 20rem 0 24rem;
-        font-size: 30rem;
+    padding: 20rem 0 24rem;
+    font-size: 30rem;
 }
 .DeathReasonNotification_spottedContainer_92 {
     display: flex;
@@ -82,12 +84,14 @@
     border: 1rem solid;
     border-image-source: linear-gradient(to right, rgba(0, 0, 0, 0) 4%, rgba(255, 152, 31, 1), rgba(0, 0, 0, 0) 96%);
     border-image-slice: 1;
-    background: radial-gradient(50% 100% at center top, rgba(255, 152, 31, .5) 0%, transparent 100%) no-repeat center/ contain,
-    radial-gradient(50% 100% at center bottom, rgba(255, 152, 31, .5) 0%, transparent 100%) no-repeat center/ contain;
+    background:
+        radial-gradient(50% 100% at center top, rgba(255, 152, 31, 0.5) 0%, transparent 100%) no-repeat center/ contain,
+        radial-gradient(50% 100% at center bottom, rgba(255, 152, 31, 0.5) 0%, transparent 100%) no-repeat center/
+            contain;
     font-size: 16rem;
 }
 .mediaSmall .DeathReasonNotification_spottedContent_a9 {
-        font-size: 20rem;
+    font-size: 20rem;
 }
 .DeathReasonNotification_icon_7f {
     width: 30rem;
@@ -96,8 +100,8 @@
     background: left / cover no-repeat;
 }
 .mediaSmall .DeathReasonNotification_icon_7f {
-        width: 36rem;
-        height: 36rem;
+    width: 36rem;
+    height: 36rem;
 }
 
 .HintContainer_base_53 {
@@ -117,7 +121,7 @@
     border-radius: 4rem;
     background: #000;
     filter: blur(4px);
-    opacity: .25;
+    opacity: 0.25;
     position: absolute;
 }
 
@@ -152,7 +156,6 @@
     text-align: left;
 }
 
-
 .HintButton_base_19 {
     position: relative;
 }
@@ -165,8 +168,8 @@
 }
 
 .HintButton_btnOuter__blink_e7 {
-        border: 2rem solid #ffbd1f;
-    }
+    border: 2rem solid #ffbd1f;
+}
 
 .HintButton_animationContainer_c5 {
     display: flex;
@@ -196,8 +199,8 @@
 }
 
 .HintButton_btnInner__blink_75 {
-        background: #ffbd1f;
-    }
+    background: #ffbd1f;
+}
 
 .FormatText_base_d0 {
     display: flex;
@@ -216,7 +219,9 @@ body {
     color: #fff;
     font-size: 12rem;
     font-weight: 400;
-    text-shadow: 0 0 4rem rgba(0, 0, 0, .5), 0 0 4rem rgba(0, 0, 0, .5);
+    text-shadow:
+        0 0 4rem rgba(0, 0, 0, 0.5),
+        0 0 4rem rgba(0, 0, 0, 0.5);
     visibility: visible;
     position: relative;
     top: 0;
@@ -224,8 +229,8 @@ body {
 }
 
 .MarkerView_base__hidden_c2 {
-        visibility: hidden;
-    }
+    visibility: hidden;
+}
 
 .MarkerView_leaderContainer_41 {
     position: absolute;
@@ -242,18 +247,25 @@ body {
     justify-content: center;
 }
 
-    .Section_base__separator_9d {
-        border-top: 1rem solid;
-        border-image: repeating-linear-gradient(to right, rgba(255, 255, 255, .25), rgba(255, 255, 255, .25) 10rem, transparent 10rem, transparent 14rem) 1;
-    }
+.Section_base__separator_9d {
+    border-top: 1rem solid;
+    border-image: repeating-linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.25),
+            rgba(255, 255, 255, 0.25) 10rem,
+            transparent 10rem,
+            transparent 14rem
+        )
+        1;
+}
 
 .ImpactIndicator_base_bd {
     position: absolute;
     top: -11rem;
 }
 
-    .mediaSmall .ImpactIndicator_base_bd {
-        top: -5rem;
+.mediaSmall .ImpactIndicator_base_bd {
+    top: -5rem;
 }
 
 .ImpactIndicator_shadowedOverlay_5d {
@@ -269,9 +281,9 @@ body {
     position: absolute;
 }
 
-    .mediaSmall .Icon_base_c6 {
-        width: 44rem;
-        height: 44rem;
+.mediaSmall .Icon_base_c6 {
+    width: 44rem;
+    height: 44rem;
 }
 
 .DataLine_base_16 {
@@ -282,12 +294,12 @@ body {
     position: relative;
 }
 
-    .DataLine_base_16 .DataLine_iconContainer__impactAngle_26 {
-        padding-left: 3rem;
-    }
+.DataLine_base_16 .DataLine_iconContainer__impactAngle_26 {
+    padding-left: 3rem;
+}
 
-    .mediaSmall .DataLine_base_16 {
-        font-size: 16rem;
+.mediaSmall .DataLine_base_16 {
+    font-size: 16rem;
 }
 
 .DataLine_iconContainer_c8 {
@@ -297,23 +309,23 @@ body {
 }
 
 .mediaSmall .DataLine_iconContainer_c8 {
-        width: 44rem;
+    width: 44rem;
 }
 
 .mediaSmall .DataLine_iconContainer__wide_20 {
-            width: 41rem;
-        }
+    width: 41rem;
+}
 
 .DataLine_iconContainer__impactAngle_26 {
-        align-self: flex-start;
-        width: 39rem;
-        margin: 2rem 8rem 0 -4rem;
-        position: relative;
-    }
+    align-self: flex-start;
+    width: 39rem;
+    margin: 2rem 8rem 0 -4rem;
+    position: relative;
+}
 
 .mediaSmall .DataLine_iconContainer__impactAngle_26 {
-            width: 48rem;
-            margin: 5rem 3rem 0 -5rem;
+    width: 48rem;
+    margin: 5rem 3rem 0 -5rem;
 }
 
 .DataLine_value_b2 {
@@ -324,51 +336,54 @@ body {
 }
 
 .DataLine_value__unspottedDetailed_4c {
-        margin-right: -17rem;
-    }
+    margin-right: -17rem;
+}
 
 .mediaSmall .DataLine_value__unspottedDetailed_4c {
-            margin-right: -22rem;
+    margin-right: -22rem;
 }
 
 .DataLine_value__unspottedSimple_78 {
-        margin-right: 0rem;
-    }
+    margin-right: 0rem;
+}
 
 .DataLine_orangeGlow_c3 .DataLine_glowElement_16 {
     border: 1rem solid;
     border-image-source: linear-gradient(to right, transparent 4%, #ff981f, transparent 96%);
     border-image-slice: 1;
-    background: radial-gradient(50% 100% at center top, rgba(255, 153, 0, .5) 0%, transparent 100%) no-repeat center/ contain,
-    radial-gradient(50% 100% at center bottom, rgba(255, 153, 0, .5) 0%, transparent 100%) no-repeat center/ contain;
+    background:
+        radial-gradient(50% 100% at center top, rgba(255, 153, 0, 0.5) 0%, transparent 100%) no-repeat center/ contain,
+        radial-gradient(50% 100% at center bottom, rgba(255, 153, 0, 0.5) 0%, transparent 100%) no-repeat center/
+            contain;
     position: absolute;
     top: -1rem;
     right: -1rem;
     bottom: -1rem;
     left: -1rem;
     z-index: -1;
-    }
+}
 
 .DataLine_redGlow_46 .DataLine_glowElement_16 {
     border: 1rem solid;
     border-image-source: linear-gradient(to right, transparent 4%, #ff1f1f, transparent 96%);
     border-image-slice: 1;
-    background: radial-gradient(50% 100% at center top, rgba(255, 0, 0, .5) 0%, transparent 100%) no-repeat center/ contain,
-    radial-gradient(50% 100% at center bottom, rgba(255, 0, 0, .5) 0%, transparent 100%) no-repeat center/ contain;
+    background:
+        radial-gradient(50% 100% at center top, rgba(255, 0, 0, 0.5) 0%, transparent 100%) no-repeat center/ contain,
+        radial-gradient(50% 100% at center bottom, rgba(255, 0, 0, 0.5) 0%, transparent 100%) no-repeat center/ contain;
     position: absolute;
     top: -1rem;
     right: -1rem;
     bottom: -1rem;
     left: -1rem;
     z-index: -1;
-    }
+}
 
 .DataLine_major_1a {
     font-size: 16rem;
 }
 
 .mediaSmall .DataLine_major_1a {
-        font-size: 20rem;
+    font-size: 20rem;
 }
 
 .DataLine_extraHeader_51.DataLine_base_16 {
@@ -378,8 +393,9 @@ body {
     width: 100%;
     height: 17rem;
     padding: 0;
-    border-bottom: 1rem solid rgba(255, 255, 255, .25);
-    background: radial-gradient(100% 100% at 100% 0%, rgba(255, 0, 0, .5) 0%, transparent 100%) center right / 40rem 16rem no-repeat;
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.25);
+    background: radial-gradient(100% 100% at 100% 0%, rgba(255, 0, 0, 0.5) 0%, transparent 100%) center right / 40rem
+        16rem no-repeat;
 }
 
 .DataLine_extraHeader_icon_2e {
@@ -388,12 +404,12 @@ body {
 }
 
 .DataLine_headIconShell_d5 .DataLine_extraHeader_icon_2e {
-        background: url('R.atlases.deathCam.shell') right / contain no-repeat;
-    }
+    background: url('R.atlases.deathCam.shell') right / contain no-repeat;
+}
 
 .DataLine_headIconTank_dc .DataLine_extraHeader_icon_2e {
-        background: url('R.atlases.deathCam.vehicle') right / contain no-repeat;
-    }
+    background: url('R.atlases.deathCam.vehicle') right / contain no-repeat;
+}
 
 .DataLine_additionalShellInfo_25 > .DataLine_additionalShellInfo_25 {
     display: flex;
@@ -420,9 +436,9 @@ body {
     position: relative;
 }
 
-    .CardContainer_base__empty_d1 {
-        margin: 0;
-    }
+.CardContainer_base__empty_d1 {
+    margin: 0;
+}
 
 .CardContainer_children_7a {
     position: relative;
@@ -432,14 +448,14 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    border: 1rem solid rgba(255, 255, 255, .5);
+    border: 1rem solid rgba(255, 255, 255, 0.5);
 }
 
 .CardContainer_background_49 {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, 0.3);
     filter: blur(2px);
 }
 
@@ -469,4 +485,3 @@ body {
     flex-direction: column;
     justify-content: flex-end;
 }
-
