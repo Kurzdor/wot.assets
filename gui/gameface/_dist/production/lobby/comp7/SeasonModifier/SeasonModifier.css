@@ -6,7 +6,7 @@
 }
 
 .App_content_cb {
-    color: rgba(255,255,255, .8);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
@@ -26,4 +26,3 @@
     margin-right: 22rem;
     background: url('R.images.gui.maps.icons.comp7.icons.shield') no-repeat center / cover;
 }
-

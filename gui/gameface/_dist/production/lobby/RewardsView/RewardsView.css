@@ -1,3 +1,20 @@
+.PageTitle_base_ef {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PageTitle_title_33 {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaMedium .PageTitle_title_33 {
+    font-size: 56rem;
+}
+
 .Counter_base_9e {
     display: flex;
     min-width: 14rem;
@@ -7,34 +24,35 @@
     animation: Counter_show_be ease-in-out forwards;
 }
 
-    .Counter_base__big_19 {
-        min-width: 21rem;
-        height: 21rem;
-    }
+.Counter_base__big_19 {
+    min-width: 21rem;
+    height: 21rem;
+}
 
-    .Counter_base__small_3b {
-        min-width: 13rem;
-        height: 13rem;
-    }
+.Counter_base__small_3b {
+    min-width: 13rem;
+    height: 13rem;
+}
 
-    .Counter_base__empty_98 {
-        min-width: 6rem;
-        height: 6rem;
-    }
+.Counter_base__empty_98 {
+    min-width: 6rem;
+    height: 6rem;
+}
 
-    .Counter_base__animated_40 {
-        animation-duration: .2s;
-    }
+.Counter_base__animated_40 {
+    animation-duration: 0.2s;
+}
 
-    .Counter_base__hidden_56 {
-        animation-name: Counter_hide_b6;
-    }
+.Counter_base__hidden_56 {
+    animation-name: Counter_hide_b6;
+}
 .Counter_bg_74 {
     border: 1rem solid #fe4e0f;
     border-radius: 7rem;
-    box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
-            0 0 6rem rgba(254,103,0, .2),
-            0 0 12rem 4rem rgba(249,0,0, .3);
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 6rem rgba(254, 103, 0, 0.2),
+        0 0 12rem 4rem rgba(249, 0, 0, 0.3);
     background-image: url('R.images.gui.maps.icons.components.counter.pattern');
     position: absolute;
     top: 0;
@@ -44,11 +62,11 @@
     z-index: -1;
 }
 .Counter_base__big_19 .Counter_bg_74 {
-        border-radius: 11rem;
-    }
+    border-radius: 11rem;
+}
 .Counter_base__small_3b .Counter_bg_74 {
-        border-radius: 7rem;
-    }
+    border-radius: 7rem;
+}
 .Counter_value_3e {
     display: flex;
     padding: 0 4rem;
@@ -58,27 +76,27 @@
     white-space: nowrap;
 }
 .Counter_base__big_19 .Counter_value_3e {
-        padding: 0 7rem;
-        font-size: 14rem;
-        line-height: 20rem;
-    }
+    padding: 0 7rem;
+    font-size: 14rem;
+    line-height: 20rem;
+}
 .Counter_base__small_3b .Counter_value_3e {
-        font-size: 9rem;
-        line-height: 12rem;
-    }
+    font-size: 9rem;
+    line-height: 12rem;
+}
 .Counter_value__text_d6 {
-        padding: 0 7rem;
-    }
+    padding: 0 7rem;
+}
 .Counter_base__big_19 .Counter_value__text_d6 {
-            padding: 0 10rem;
-        }
+    padding: 0 10rem;
+}
 .Counter_base__small_3b .Counter_value__text_d6 {
-            padding: 0 5rem;
-            font-size: 10rem;
-        }
+    padding: 0 5rem;
+    font-size: 10rem;
+}
 .Counter_base__pattern_71 .Counter_value_3e {
-        display: none;
-    }
+    display: none;
+}
 .Counter_plus_15 {
     position: relative;
     top: -1rem;
@@ -87,16 +105,16 @@
     display: none;
 }
 .Counter_base__pattern_71 .Counter_pattern_83 {
-        display: block;
-        border-radius: 50%;
-        background-image: url('R.images.gui.maps.icons.components.counter.pattern');
-        opacity: .8;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
+    display: block;
+    border-radius: 50%;
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 @keyframes Counter_show_be {
     0% {
         transform: scale(0);
@@ -116,102 +134,38 @@
     }
 }
 
-/* colors*/
-
-/* buttons*/
-
-/* Calculate glow mask according to the button size*/
-
-.FlatButton_base_36 {
+.FlatButton_base_0a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    width: 66rem;
+    width: 245rem;
     height: 66rem;
-    border: 1rem solid rgba(255,255,255, .25);
+    border: 1rem solid rgba(255, 255, 255, 0.25);
     border-radius: 2rem;
-    background: rgba(0,0,0, .3) repeat-y right center;
-    color: #e9e2bf;
-    font-size: 15rem;
-    font-weight: 700;
+    background: url('R.images.frontline.gui.maps.icons.rewards.flatButton.buttons_lines') rgba(0, 0, 0, 0.3) repeat-y
+        right center;
     position: relative;
     z-index: 2;
-    transition: border linear .16s,
-                background-color linear .16s;
+    transition:
+        border linear 0.16s,
+        background-color linear 0.16s;
     cursor: pointer;
 }
 
-@media (min-width: 1280px) {
-
-.FlatButton_base_36 {
-        width: 235rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.progression.buttons_lines')
+.FlatButton_base__hover_ed {
+    border-color: rgba(255, 255, 255, 0.35);
+    background-color: rgba(0, 0, 0, 0.4);
 }
-    }
 
-@media (min-width: 1600px) {
-
-.FlatButton_base_36 {
-        width: 245rem
+.FlatButton_base__highlight_39 {
+    border: 0;
+    box-shadow:
+        0 0 7rem #ff2a00,
+        0 2rem 4rem rgba(107, 52, 0, 0.2) inset;
+    z-index: 1;
 }
-    }
-
-@media (min-width: 1280px) {
-
-.FlatButton_base__small_ec {
-            width: 66rem;
-            background: rgba(0,0,0, .3) repeat-y right center
-    }
-    }
-
-@media (min-width: 1600px) {
-
-.FlatButton_base__small_ec {
-            width: 66rem
-    }
-    }
-
-@media (min-width: 1920px) {
-
-.FlatButton_base__small_ec {
-            width: 245rem;
-            background-image: url('R.images.gui.maps.icons.battlePass.progression.buttons_lines')
-    }
-    }
-
-.FlatButton_base__big_69 {
-        width: 245rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.progression.buttons_lines');
-    }
-
-.FlatButton_base__disabled_1e {
-        opacity: .5;
-        cursor: default;
-    }
-
-.FlatButton_base__hover_41 {
-        border-color: rgba(255,255,255, .35);
-        background-color: rgba(0,0,0, .4);
-    }
-
-.FlatButton_base__click_ab {
-        border-color: rgba(255,255,255, .25);
-        background-color: rgba(0,0,0, .3);
-    }
-
-.FlatButton_base__highlight_0b {
-        border: 0;
-        box-shadow: 0 0 7rem #ff2a00,
-                    0 2rem 4rem rgba(107, 52, 0, .2) inset;
-        z-index: 1;
-    }
-
-.FlatButton_base__yellow_3a {
-        background-color: #c67700;
-    }
-
-.FlatButton_highlight_b0 {
+.FlatButton_highlight_42 {
     width: 100%;
     height: 100%;
     border: 1rem solid #fd9;
@@ -221,40 +175,37 @@
     top: 0;
     left: 0;
 }
-
-.FlatButton_glowInner_cb {
+.FlatButton_glowInner_44 {
     width: 100%;
     height: 100%;
-    background: url('R.images.gui.maps.icons.battlePass.progression.rare_light_large') no-repeat center / contain;
+    background: url('R.images.frontline.gui.maps.icons.rewards.flatButton.rare_light_large') no-repeat center / contain;
     mix-blend-mode: additive;
     overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
-    animation: FlatButton_rotating_25 15s linear infinite;
+    animation: FlatButton_rotating_02 15s linear infinite;
 }
-
-.FlatButton_glowInner__duplicate_f7 {
-        width: 190rem;
-        height: 190rem;
-        margin: 56rem 0 0 56rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.progression.shineForAnimation_dark');
-        animation-duration: 18s;
-        animation-direction: reverse;
-    }
-
-.FlatButton_glow_12 {
+.FlatButton_glowInner__duplicate_9a {
+    width: 190rem;
+    height: 190rem;
+    margin: 56rem 0 0 56rem;
+    background-image: url('R.images.frontline.gui.maps.icons.rewards.flatButton.shineForAnimation_dark');
+    animation-duration: 18s;
+    animation-direction: reverse;
+}
+.FlatButton_glow_cb {
     clip-path: polygon(
-                    0% 0%,
-                    0% 100%,
-                    118rem 100%,
-                    118rem 118rem,
-                    184rem 118rem,
-                    184rem 184rem,
-                    118rem 184rem,
-                    118rem 100%,
-                    100% 100%,
-                    100% 0%
+        0% 0%,
+        0% 100%,
+        28.5rem 100%,
+        28.5rem 118rem,
+        273.5rem 118rem,
+        273.5rem 184rem,
+        28.5rem 184rem,
+        28.5rem 100%,
+        100% 100%,
+        100% 0%
     );
     width: 302rem;
     height: 302rem;
@@ -264,254 +215,61 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
-
-@media (min-width: 1280px) {
-
-.FlatButton_glow_12 {
-    clip-path: polygon(
-                    0% 0%,
-                    0% 100%,
-                    33.5rem 100%,
-                    33.5rem 118rem,
-                    268.5rem 118rem,
-                    268.5rem 184rem,
-                    33.5rem 184rem,
-                    33.5rem 100%,
-                    100% 100%,
-                    100% 0%
-    )
-}
-    }
-
-@media (min-width: 1600px) {
-
-.FlatButton_glow_12 {
-    clip-path: polygon(
-                    0% 0%,
-                    0% 100%,
-                    28.5rem 100%,
-                    28.5rem 118rem,
-                    273.5rem 118rem,
-                    273.5rem 184rem,
-                    28.5rem 184rem,
-                    28.5rem 100%,
-                    100% 100%,
-                    100% 0%
-    )
-}
-    }
-
-@media (min-width: 1280px) {
-
-.FlatButton_base__small_ec .FlatButton_glow_12 {
-    clip-path: polygon(
-                    0% 0%,
-                    0% 100%,
-                    118rem 100%,
-                    118rem 118rem,
-                    184rem 118rem,
-                    184rem 184rem,
-                    118rem 184rem,
-                    118rem 100%,
-                    100% 100%,
-                    100% 0%
-    )
-    }
-    }
-
-@media (min-width: 1920px) {
-
-.FlatButton_base__small_ec .FlatButton_glow_12 {
-    clip-path: polygon(
-                    0% 0%,
-                    0% 100%,
-                    28.5rem 100%,
-                    28.5rem 118rem,
-                    273.5rem 118rem,
-                    273.5rem 184rem,
-                    28.5rem 184rem,
-                    28.5rem 100%,
-                    100% 100%,
-                    100% 0%
-    )
-    }
-    }
-
-.FlatButton_base__big_69 .FlatButton_glow_12 {
-    clip-path: polygon(
-                    0% 0%,
-                    0% 100%,
-                    28.5rem 100%,
-                    28.5rem 118rem,
-                    273.5rem 118rem,
-                    273.5rem 184rem,
-                    28.5rem 184rem,
-                    28.5rem 100%,
-                    100% 100%,
-                    100% 0%
-    );
-    }
-
-.FlatButton_content_3f {
+.FlatButton_content_34 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex: 1;
-    padding: 0;
-    line-height: 1.25;
     position: relative;
     z-index: 1;
     pointer-events: none;
 }
-
-@media (min-width: 1280px) {
-
-.FlatButton_content_3f {
-        justify-content: flex-start;
-        padding: 0 9rem
-}
-    }
-
-.FlatButton_icon_24 {
+.FlatButton_icon_20 {
     width: 52rem;
     height: 52rem;
     background: no-repeat center / contain;
     filter: brightness(70%);
-    transition: filter linear .16s;
+    transition: filter linear 0.16s;
 }
-
-.FlatButton_base__hover_41 .FlatButton_icon_24 {
-        filter: brightness(100%);
-    }
-
-.FlatButton_label_a4 {
-    display: none;
+.FlatButton_base__hover_ed .FlatButton_icon_20 {
+    filter: brightness(100%);
+}
+.FlatButton_label_88 {
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-left: 10rem;
+    padding-bottom: 3rem;
     white-space: pre;
 }
-
-@media (min-width: 1280px) {
-
-.FlatButton_label_a4 {
-        display: flex;
-        flex: 0;
-        margin-left: 10rem;
-        padding-bottom: 3rem
-}
-    }
-
-.FlatButton_base__small_ec .FlatButton_label_a4 {
-        display: none;
-    }
-
-@media (min-width: 1920px) {
-
-.FlatButton_base__small_ec .FlatButton_label_a4 {
-            display: flex
-    }
-    }
-
-.FlatButton_base__big_69 .FlatButton_label_a4 {
-        display: flex;
-        flex: 0;
-        margin-left: 10rem;
-        padding-bottom: 3rem;
-    }
-
-.FlatButton_count_17 {
-    display: none;
-}
-
-@media (min-width: 1280px) {
-
-.FlatButton_count_17 {
-        display: flex;
-        flex: 0;
-        margin-left: 10rem;
-        padding-bottom: 3rem;
-        font-size: 36rem
-}
-    }
-
-.FlatButton_base__small_ec .FlatButton_count_17 {
-        display: none;
-    }
-
-@media (min-width: 1920px) {
-
-.FlatButton_base__small_ec .FlatButton_count_17 {
-            display: flex
-    }
-    }
-
-.FlatButton_counter_c3 {
+.FlatButton_counter_ab {
     position: absolute;
     top: 0;
     right: 0;
     transform: translate(40%, -50%);
 }
-
-.FlatButton_glowBorder_3e {
+.FlatButton_glowBorder_0b {
     width: 92rem;
     height: 92rem;
-    background: url('R.images.gui.maps.icons.battlePass.progression.flat_button_light_small') no-repeat center / contain;
+    background: url('R.images.frontline.gui.maps.icons.rewards.flatButton.flat_button_light_small') no-repeat center /
+        contain;
     mix-blend-mode: additive;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: .3s ease opacity;
+    transition: 0.3s ease opacity;
     pointer-events: none;
 }
-
-@media (min-width: 1280px) {
-
-.FlatButton_glowBorder_3e {
-        width: 244rem;
-        height: 244rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.progression.flat_button_light')
+.FlatButton_glowBorder__hover_b5 {
+    opacity: 0;
 }
-    }
-
-.FlatButton_glowBorder__hover_a7 {
-        opacity: 0;
-    }
-
-.FlatButton_base_36:hover .FlatButton_glowBorder__hover_a7 {
-            opacity: 1;
-        }
-
-.FlatButton_tokensCount_72 {
-    display: none;
-    min-width: 30rem;
-    padding-left: 30rem;
-    background: url('R.images.gui.maps.icons.battlePass.progression.bp_token') no-repeat left bottom / 24rem 24rem;
-    font-size: 22rem;
-    position: absolute;
-    top: 17rem;
-    right: 20rem;
-    pointer-events: auto;
+.FlatButton_base_0a:hover .FlatButton_glowBorder__hover_b5 {
+    opacity: 1;
 }
-
-@media (min-width: 1280px) {
-
-.FlatButton_tokensCount_72 {
-        display: block
-}
-    }
-
-.FlatButton_disabledBackground_f9 {
-    background: url('R.images.gui.maps.icons.battlePass.progression.pattern_disable') repeat;
-    opacity: .05;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-}
-
-@keyframes FlatButton_rotating_25 {
+@keyframes FlatButton_rotating_02 {
     from {
         transform: rotate(0deg);
     }
@@ -521,70 +279,53 @@
     }
 }
 
-.PageTitle_base_ef {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.PageTitle_title_33 {
-    color: #F2F2F7;
-    font-size: 36rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.mediaMedium .PageTitle_title_33 {
-        font-size: 56rem;
-}
-
 .Reward_base_ea {
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-    .Reward_base__s48x48_46,
-    .Reward_base__small_c0 {
-        width: 48rem;
-        height: 48rem;
-    }
+.Reward_base__s48x48_46,
+.Reward_base__small_c0 {
+    width: 48rem;
+    height: 48rem;
+}
 
-    .Reward_base__s80x80_ce,
-    .Reward_base__big_e5 {
-        width: 80rem;
-        height: 80rem;
-    }
+.Reward_base__s80x80_ce,
+.Reward_base__big_e5 {
+    width: 80rem;
+    height: 80rem;
+}
 
-    .Reward_base__s128x100_c3 {
-        width: 128rem;
-        height: 100rem;
-    }
+.Reward_base__s128x100_c3 {
+    width: 128rem;
+    height: 100rem;
+}
 
-    .Reward_base__s180x135_7c {
-        width: 180rem;
-        height: 135rem;
-    }
+.Reward_base__s180x135_7c {
+    width: 180rem;
+    height: 135rem;
+}
 
-    .Reward_base__s232x174_67 {
-        width: 232rem;
-        height: 174rem;
-    }
+.Reward_base__s232x174_67 {
+    width: 232rem;
+    height: 174rem;
+}
 
-    .Reward_base__s296x222_78 {
-        width: 296rem;
-        height: 222rem;
-    }
+.Reward_base__s296x222_78 {
+    width: 296rem;
+    height: 222rem;
+}
 
-    .Reward_base__s400x300_07 {
-        width: 400rem;
-        height: 300rem;
-    }
+.Reward_base__s400x300_07 {
+    width: 400rem;
+    height: 300rem;
+}
 
-    .Reward_base__s600x450_f8 {
-        width: 600rem;
-        height: 450rem;
-    }
+.Reward_base__s600x450_f8 {
+    width: 600rem;
+    height: 450rem;
+}
 
 .Reward_tooltipWrapper_b5 {
     height: 100%;
@@ -611,43 +352,43 @@
 }
 
 .Reward_base__s48x48_46 .Reward_overlay_68,
-    .Reward_base__small_c0 .Reward_overlay_68 {
-        width: 96rem;
-        height: 96rem;
-        background-size: 100%;
-        overflow: visible;
-    }
+.Reward_base__small_c0 .Reward_overlay_68 {
+    width: 96rem;
+    height: 96rem;
+    background-size: 100%;
+    overflow: visible;
+}
 
 .Reward_base__s80x80_ce .Reward_overlay_68,
-    .Reward_base__big_e5 .Reward_overlay_68 {
-        width: 128rem;
-        height: 128rem;
-    }
+.Reward_base__big_e5 .Reward_overlay_68 {
+    width: 128rem;
+    height: 128rem;
+}
 
 .Reward_base__s180x135_7c .Reward_overlay_68 {
-        width: 266rem;
-        height: 241rem;
-    }
+    width: 266rem;
+    height: 241rem;
+}
 
 .Reward_base__s232x174_67 .Reward_overlay_68 {
-        width: 344rem;
-        height: 312rem;
-    }
+    width: 344rem;
+    height: 312rem;
+}
 
 .Reward_base__s296x222_78 .Reward_overlay_68 {
-        width: 450rem;
-        height: 408rem;
-    }
+    width: 450rem;
+    height: 408rem;
+}
 
 .Reward_base__s400x300_07 .Reward_overlay_68 {
-        width: 618rem;
-        height: 590rem;
-    }
+    width: 618rem;
+    height: 590rem;
+}
 
 .Reward_base__s600x450_f8 .Reward_overlay_68 {
-        width: 670rem;
-        height: 575rem;
-    }
+    width: 670rem;
+    height: 575rem;
+}
 
 .Reward_highlight_36 {
     width: 100%;
@@ -671,35 +412,35 @@
 }
 
 .Reward_base__s48x48_46 .Reward_info_72,
-    .Reward_base__small_c0 .Reward_info_72 {
-        margin: -10rem -10rem 0;
-    }
+.Reward_base__small_c0 .Reward_info_72 {
+    margin: -10rem -10rem 0;
+}
 
 .Reward_info__multi_63 {
-        margin-right: 2rem;
-        text-align: right;
-    }
+    margin-right: 2rem;
+    text-align: right;
+}
 
 .Reward_base__s48x48_46 .Reward_info__multi_63,
-        .Reward_base__small_c0 .Reward_info__multi_63 {
-            margin-right: 0;
-        }
+.Reward_base__small_c0 .Reward_info__multi_63 {
+    margin-right: 0;
+}
 
 .Reward_info__credits_ef {
-        color: #CED9D9;
-    }
+    color: #ced9d9;
+}
 
 .Reward_info__gold_36 {
-        color: #FFC363;
-    }
+    color: #ffc363;
+}
 
 .Reward_info__crystal_36 {
-        color: #C9C9B6;
-    }
+    color: #c9c9b6;
+}
 
 .Reward_info__premiumTank_d3 {
-        color: #FFDD99;
-    }
+    color: #ffdd99;
+}
 
 .Reward_timer_d3 {
     background: no-repeat center / contain;
@@ -708,22 +449,22 @@
 }
 
 .Reward_base__s48x48_46 .Reward_timer_d3,
-    .Reward_base__small_c0 .Reward_timer_d3 {
-        width: 23rem;
-        height: 23rem;
-        background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
-        top: -6rem;
-        right: -6rem;
-    }
+.Reward_base__small_c0 .Reward_timer_d3 {
+    width: 23rem;
+    height: 23rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
+    top: -6rem;
+    right: -6rem;
+}
 
 .Reward_base__s80x80_ce .Reward_timer_d3,
-    .Reward_base__big_e5 .Reward_timer_d3 {
-        width: 48rem;
-        height: 48rem;
-        background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
-        top: -14rem;
-        right: -14rem;
-    }
+.Reward_base__big_e5 .Reward_timer_d3 {
+    width: 48rem;
+    height: 48rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
+    top: -14rem;
+    right: -14rem;
+}
 
 .FrontlineReward_base_e2 {
     display: flex;
@@ -732,14 +473,14 @@
     position: relative;
 }
 
-    .FrontlineReward_base__disable_dc {
-        filter: grayscale(100%);
-        opacity: .5;
-    }
+.FrontlineReward_base__disable_dc {
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
 
-    .FrontlineReward_base__disableBattlePassReward_5a {
-        opacity: .3;
-    }
+.FrontlineReward_base__disableBattlePassReward_5a {
+    opacity: 0.3;
+}
 .FrontlineReward_animWrapper_23 {
     mix-blend-mode: screen;
     position: absolute;
@@ -800,16 +541,16 @@
     position: relative;
 }
 
-    .mediaSmall .RewardsCol_base_74 {
-        width: 135rem;
+.mediaSmall .RewardsCol_base_74 {
+    width: 135rem;
 }
 
-    .mediaMedium .RewardsCol_base_74 {
-        width: 144rem;
+.mediaMedium .RewardsCol_base_74 {
+    width: 144rem;
 }
 
-    .mediaLarge .RewardsCol_base_74 {
-        width: 180rem;
+.mediaLarge .RewardsCol_base_74 {
+    width: 180rem;
 }
 
 .RewardsCol_bg_12 {
@@ -818,7 +559,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(transparent 0, rgba(0,0,0, .3) 20%, rgba(0,0,0, .3) 80%, transparent 100%);
+    background: linear-gradient(transparent 0, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.3) 80%, transparent 100%);
 }
 
 .RewardsCol_highlight_2b {
@@ -831,23 +572,23 @@
 }
 
 .RewardsCol_highlight__white_a8 {
-        background-image: url('R.images.frontline.gui.maps.icons.rewards.col_bg_1024_white');
-    }
+    background-image: url('R.images.frontline.gui.maps.icons.rewards.col_bg_1024_white');
+}
 
 .mediaSmall .RewardsCol_highlight__white_a8 {
-            background-image: url('R.images.frontline.gui.maps.icons.rewards.col_bg_white');
+    background-image: url('R.images.frontline.gui.maps.icons.rewards.col_bg_white');
 }
 
 .RewardsCol_highlight__gold_c5 {
-        background-image: url('R.images.frontline.gui.maps.icons.rewards.col_bg_1024');
-    }
+    background-image: url('R.images.frontline.gui.maps.icons.rewards.col_bg_1024');
+}
 
 .mediaSmall .RewardsCol_highlight__gold_c5 {
-            background-image: url('R.images.frontline.gui.maps.icons.rewards.col_bg');
+    background-image: url('R.images.frontline.gui.maps.icons.rewards.col_bg');
 }
 
 .RewardsCol_levels_7a {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -856,13 +597,13 @@
 }
 
 .mediaMedium .RewardsCol_levels_7a {
-        font-size: 24rem;
+    font-size: 24rem;
 }
 
 .RewardsCol_levels__disable_d4 {
-        filter: grayscale(100%);
-        opacity: .5;
-    }
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
 
 .RewardsCol_reward_40 {
     margin-bottom: 22rem;
@@ -873,7 +614,7 @@
 }
 
 .SubTitle_base_8d {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -885,15 +626,15 @@
     font-size: 18rem;
 }
 
-    .mediaMedium .SubTitle_base_8d {
-        font-size: 24rem;
+.mediaMedium .SubTitle_base_8d {
+    font-size: 24rem;
 }
 
 .SubTitle_noRewards_f1 {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    color: #7AB300;
+    color: #7ab300;
     position: relative;
 }
 
@@ -907,7 +648,7 @@
 }
 
 .mediaMedium .SubTitle_icon_0f {
-        bottom: -2rem;
+    bottom: -2rem;
 }
 
 .RewardsViewApp_base_1c {
@@ -926,7 +667,7 @@
 }
 
 .mediaLarge .RewardsViewApp_pageTitle_61 {
-        top: 88rem;
+    top: 88rem;
 }
 
 .RewardsViewApp_table_32 {
@@ -944,4 +685,3 @@
     bottom: 30rem;
     left: 0;
 }
-

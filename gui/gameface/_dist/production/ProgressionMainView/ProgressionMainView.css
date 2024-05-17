@@ -7,9 +7,9 @@
     cursor: pointer;
 }
 
-    .TextButton_base__right_39 {
-        flex-direction: row-reverse;
-    }
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
 .TextButton_icon_17 {
     width: 32rem;
     height: 32rem;
@@ -17,22 +17,22 @@
     position: relative;
 }
 .TextButton_icon__back_43,
-    .TextButton_icon__forward_59 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.back');
-        transform: translateY(1rem);
-    }
 .TextButton_icon__forward_59 {
-        transform: rotate(180deg) translateY(1rem);
-    }
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
 .TextButton_icon__close_53 {
-        margin: -1rem 0;
-        background-image: url('R.images.gui.maps.icons.components.text_button.close');
-    }
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
 .TextButton_icon__info_33 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.info');
-    }
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
 .TextButton_glow_a4 {
     width: 100%;
     height: 100%;
@@ -40,72 +40,82 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    transition: opacity .16s;
+    transition: opacity 0.16s;
 }
 .TextButton_icon__back_43 .TextButton_glow_a4,
-    .TextButton_icon__forward_59 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
-    }
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
 .TextButton_icon__close_53 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
 .TextButton_icon__info_33 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
 .TextButton_base_b6:hover .TextButton_glow_a4 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .TextButton_base_b6:active .TextButton_glow_a4 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .TextButton_caption_82 {
     position: relative;
-    transition: color .16s, text-shadow .16s;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
 }
 .TextButton_caption__back_b9,
-    .TextButton_caption__forward_4e,
-    .TextButton_caption__close_36 {
-        color: #FFDD99;
-        text-shadow: 0 0 10rem rgba(255,42,0, 1),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4);
-    }
-.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
-            color: #fffa9f;
-        }
-.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
-            color: #FFDD99;
-        }
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
 .TextButton_caption__info_23 {
-        padding: 0 5rem;
-        color: #CCFFFF;
-        text-shadow: 0 0 12rem rgba(31,68,255, .8),
-            0 0 8rem #00eaff;
-    }
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
 .TextButton_base_b6:hover .TextButton_caption__info_23 {
-            color: #e3ffff;
-            text-shadow: 0 0 12rem rgba(31,68,255, .8),
-                0 0 12rem rgba(0,234,255, 1),
-                0 0 8rem #00eaff;
-        }
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
 .TextButton_base_b6:active .TextButton_caption__info_23 {
-            color: #CCFFFF;
-            text-shadow: 0 0 12rem rgba(31,68,255, .6),
-                0 0 8rem #00eaff;
-        }
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
 .TextButton_goto_e7 {
     color: #7c7c6c;
 }
 .TextButton_base__left_ff .TextButton_goto_e7 {
-        margin-left: 8rem;
-    }
+    margin-left: 8rem;
+}
 .TextButton_base__right_39 .TextButton_goto_e7 {
-        margin-right: 8rem;
-    }
+    margin-right: 8rem;
+}
 .TextButton_shine_e2 {
     width: 90rem;
     height: 40rem;
@@ -113,22 +123,22 @@
     opacity: 0;
     position: absolute;
     top: -4rem;
-    transition: opacity .16s;
+    transition: opacity 0.16s;
     pointer-events: none;
 }
 .TextButton_base__left_ff .TextButton_shine_e2 {
-        left: -4rem;
-    }
+    left: -4rem;
+}
 .TextButton_base__right_39 .TextButton_shine_e2 {
-        right: -4rem;
-        transform: rotate(180deg);
-    }
+    right: -4rem;
+    transform: rotate(180deg);
+}
 .TextButton_base_b6:hover .TextButton_shine_e2 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .TextButton_base_b6:active .TextButton_shine_e2 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .Reward_base_ea {
     display: flex;
@@ -136,47 +146,47 @@
     position: relative;
 }
 
-    .Reward_base__s48x48_46,
-    .Reward_base__small_c0 {
-        width: 48rem;
-        height: 48rem;
-    }
+.Reward_base__s48x48_46,
+.Reward_base__small_c0 {
+    width: 48rem;
+    height: 48rem;
+}
 
-    .Reward_base__s80x80_ce,
-    .Reward_base__big_e5 {
-        width: 80rem;
-        height: 80rem;
-    }
+.Reward_base__s80x80_ce,
+.Reward_base__big_e5 {
+    width: 80rem;
+    height: 80rem;
+}
 
-    .Reward_base__s128x100_c3 {
-        width: 128rem;
-        height: 100rem;
-    }
+.Reward_base__s128x100_c3 {
+    width: 128rem;
+    height: 100rem;
+}
 
-    .Reward_base__s180x135_7c {
-        width: 180rem;
-        height: 135rem;
-    }
+.Reward_base__s180x135_7c {
+    width: 180rem;
+    height: 135rem;
+}
 
-    .Reward_base__s232x174_67 {
-        width: 232rem;
-        height: 174rem;
-    }
+.Reward_base__s232x174_67 {
+    width: 232rem;
+    height: 174rem;
+}
 
-    .Reward_base__s296x222_78 {
-        width: 296rem;
-        height: 222rem;
-    }
+.Reward_base__s296x222_78 {
+    width: 296rem;
+    height: 222rem;
+}
 
-    .Reward_base__s400x300_07 {
-        width: 400rem;
-        height: 300rem;
-    }
+.Reward_base__s400x300_07 {
+    width: 400rem;
+    height: 300rem;
+}
 
-    .Reward_base__s600x450_f8 {
-        width: 600rem;
-        height: 450rem;
-    }
+.Reward_base__s600x450_f8 {
+    width: 600rem;
+    height: 450rem;
+}
 
 .Reward_tooltipWrapper_b5 {
     height: 100%;
@@ -203,43 +213,43 @@
 }
 
 .Reward_base__s48x48_46 .Reward_overlay_68,
-    .Reward_base__small_c0 .Reward_overlay_68 {
-        width: 96rem;
-        height: 96rem;
-        background-size: 100%;
-        overflow: visible;
-    }
+.Reward_base__small_c0 .Reward_overlay_68 {
+    width: 96rem;
+    height: 96rem;
+    background-size: 100%;
+    overflow: visible;
+}
 
 .Reward_base__s80x80_ce .Reward_overlay_68,
-    .Reward_base__big_e5 .Reward_overlay_68 {
-        width: 128rem;
-        height: 128rem;
-    }
+.Reward_base__big_e5 .Reward_overlay_68 {
+    width: 128rem;
+    height: 128rem;
+}
 
 .Reward_base__s180x135_7c .Reward_overlay_68 {
-        width: 266rem;
-        height: 241rem;
-    }
+    width: 266rem;
+    height: 241rem;
+}
 
 .Reward_base__s232x174_67 .Reward_overlay_68 {
-        width: 344rem;
-        height: 312rem;
-    }
+    width: 344rem;
+    height: 312rem;
+}
 
 .Reward_base__s296x222_78 .Reward_overlay_68 {
-        width: 450rem;
-        height: 408rem;
-    }
+    width: 450rem;
+    height: 408rem;
+}
 
 .Reward_base__s400x300_07 .Reward_overlay_68 {
-        width: 618rem;
-        height: 590rem;
-    }
+    width: 618rem;
+    height: 590rem;
+}
 
 .Reward_base__s600x450_f8 .Reward_overlay_68 {
-        width: 670rem;
-        height: 575rem;
-    }
+    width: 670rem;
+    height: 575rem;
+}
 
 .Reward_highlight_36 {
     width: 100%;
@@ -263,35 +273,35 @@
 }
 
 .Reward_base__s48x48_46 .Reward_info_72,
-    .Reward_base__small_c0 .Reward_info_72 {
-        margin: -10rem -10rem 0;
-    }
+.Reward_base__small_c0 .Reward_info_72 {
+    margin: -10rem -10rem 0;
+}
 
 .Reward_info__multi_63 {
-        margin-right: 2rem;
-        text-align: right;
-    }
+    margin-right: 2rem;
+    text-align: right;
+}
 
 .Reward_base__s48x48_46 .Reward_info__multi_63,
-        .Reward_base__small_c0 .Reward_info__multi_63 {
-            margin-right: 0;
-        }
+.Reward_base__small_c0 .Reward_info__multi_63 {
+    margin-right: 0;
+}
 
 .Reward_info__credits_ef {
-        color: #CED9D9;
-    }
+    color: #ced9d9;
+}
 
 .Reward_info__gold_36 {
-        color: #FFC363;
-    }
+    color: #ffc363;
+}
 
 .Reward_info__crystal_36 {
-        color: #C9C9B6;
-    }
+    color: #c9c9b6;
+}
 
 .Reward_info__premiumTank_d3 {
-        color: #FFDD99;
-    }
+    color: #ffdd99;
+}
 
 .Reward_timer_d3 {
     background: no-repeat center / contain;
@@ -300,22 +310,22 @@
 }
 
 .Reward_base__s48x48_46 .Reward_timer_d3,
-    .Reward_base__small_c0 .Reward_timer_d3 {
-        width: 23rem;
-        height: 23rem;
-        background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
-        top: -6rem;
-        right: -6rem;
-    }
+.Reward_base__small_c0 .Reward_timer_d3 {
+    width: 23rem;
+    height: 23rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
+    top: -6rem;
+    right: -6rem;
+}
 
 .Reward_base__s80x80_ce .Reward_timer_d3,
-    .Reward_base__big_e5 .Reward_timer_d3 {
-        width: 48rem;
-        height: 48rem;
-        background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
-        top: -14rem;
-        right: -14rem;
-    }
+.Reward_base__big_e5 .Reward_timer_d3 {
+    width: 48rem;
+    height: 48rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
+    top: -14rem;
+    right: -14rem;
+}
 
 @keyframes Separator_add-blur_81 {
     from {
@@ -323,7 +333,7 @@
     }
 
     to {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
@@ -362,21 +372,21 @@
 }
 
 .Separator_base__completedBattleQuests_12 .Separator_separator__left_58 {
-            background: linear-gradient(270deg, #ffc061 0%, rgba(203, 73, 0, 0) 100%);
-        }
+    background: linear-gradient(270deg, #ffc061 0%, rgba(203, 73, 0, 0) 100%);
+}
 
 .Separator_base__inProgressBattleQuests_1e .Separator_separator__left_58 {
-            background: linear-gradient(270deg, rgba(255, 255, 255, .4) 0%, rgba(255, 255, 255, .03) 100%);
-        }
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.03) 100%);
+}
 
 .Separator_base__condition_2b .Separator_separator__left_58 {
-            background: linear-gradient(90deg, rgba(108, 108, 108, .15) 0%, #6c6c6c 102.66%);
-        }
+    background: linear-gradient(90deg, rgba(108, 108, 108, 0.15) 0%, #6c6c6c 102.66%);
+}
 
 .Separator_base__awards_9b .Separator_separator__left_58 {
-            margin: 0 10rem 2.5rem 2.5rem;
-            background: linear-gradient(270deg, #fff -2.27%, rgba(255, 255, 255, .1) 100%);
-        }
+    margin: 0 10rem 2.5rem 2.5rem;
+    background: linear-gradient(270deg, #fff -2.27%, rgba(255, 255, 255, 0.1) 100%);
+}
 
 .Separator_base__completed_36 .Separator_separator__left_58::after {
     position: absolute;
@@ -386,14 +396,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(270deg, #81ea30 -2.27%, rgba(129, 234, 48, .1) 100%);
+    background: linear-gradient(270deg, #81ea30 -2.27%, rgba(129, 234, 48, 0.1) 100%);
     opacity: 0;
     content: '';
     animation-name: Separator_show_89;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-            }
+}
 
 .Separator_base__completedWasVisited_2f .Separator_separator__left_58::after {
     position: absolute;
@@ -403,28 +413,28 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(270deg, #81ea30 -2.27%, rgba(129, 234, 48, .1) 100%);
+    background: linear-gradient(270deg, #81ea30 -2.27%, rgba(129, 234, 48, 0.1) 100%);
     opacity: 0;
     content: '';
-                opacity: 1;
-            }
+    opacity: 1;
+}
 
 .Separator_base__completedBattleQuests_12 .Separator_separator__right_e9 {
-            background: linear-gradient(90deg, #ffc061 0%, rgba(203, 73, 0, 0) 100%);
-        }
+    background: linear-gradient(90deg, #ffc061 0%, rgba(203, 73, 0, 0) 100%);
+}
 
 .Separator_base__inProgressBattleQuests_1e .Separator_separator__right_e9 {
-            background: linear-gradient(90deg, rgba(255, 255, 255, .4) 0%, rgba(255, 255, 255, .03) 100%);
-        }
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.03) 100%);
+}
 
 .Separator_base__condition_2b .Separator_separator__right_e9 {
-            background: linear-gradient(270deg, rgba(108, 108, 108, .15) 0%, #6c6c6c 102.66%);
-        }
+    background: linear-gradient(270deg, rgba(108, 108, 108, 0.15) 0%, #6c6c6c 102.66%);
+}
 
 .Separator_base__awards_9b .Separator_separator__right_e9 {
-            margin: 0 3rem 2.5rem 10rem;
-            background: linear-gradient(90deg, #fff -2.27%, rgba(255, 255, 255, .1) 100%);
-        }
+    margin: 0 3rem 2.5rem 10rem;
+    background: linear-gradient(90deg, #fff -2.27%, rgba(255, 255, 255, 0.1) 100%);
+}
 
 .Separator_base__completed_36 .Separator_separator__right_e9::after {
     position: absolute;
@@ -434,14 +444,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #81ea30 -2.27%, rgba(129, 234, 48, .1) 100%);
+    background: linear-gradient(90deg, #81ea30 -2.27%, rgba(129, 234, 48, 0.1) 100%);
     opacity: 0;
     content: '';
     animation-name: Separator_show_89;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-            }
+}
 
 .Separator_base__completedWasVisited_2f .Separator_separator__right_e9::after {
     position: absolute;
@@ -451,31 +461,31 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #81ea30 -2.27%, rgba(129, 234, 48, .1) 100%);
+    background: linear-gradient(90deg, #81ea30 -2.27%, rgba(129, 234, 48, 0.1) 100%);
     opacity: 0;
     content: '';
-                opacity: 1;
-            }
+    opacity: 1;
+}
 
 .Separator_ellipse_fc {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    filter: blur(.5rem);
-    opacity: .5;
+    filter: blur(0.5rem);
+    opacity: 0.5;
     position: absolute;
     top: -1rem;
-    right: -.5rem;
+    right: -0.5rem;
 }
 
 .Separator_base__awards_9b .Separator_separator__left_58 .Separator_ellipse_fc,
-        .Separator_base__inProgressBattleQuests_1e .Separator_separator__left_58 .Separator_ellipse_fc {
-            background: #F2F2F7;
-        }
+.Separator_base__inProgressBattleQuests_1e .Separator_separator__left_58 .Separator_ellipse_fc {
+    background: #f2f2f7;
+}
 
 .Separator_base__completed_36 .Separator_separator__left_58 .Separator_ellipse_fc {
-            background: #b5ff92;
-        }
+    background: #b5ff92;
+}
 
 .Separator_base__completedBattleQuests_12 .Separator_separator__left_58 .Separator_ellipse_fc {
     width: 6rem;
@@ -484,20 +494,20 @@
     filter: blur(1rem);
     top: -2.5rem;
     right: -1.5rem;
-        }
+}
 
 .Separator_separator__right_e9 .Separator_ellipse_fc {
-        left: -.5rem;
-    }
+    left: -0.5rem;
+}
 
 .Separator_base__awards_9b .Separator_separator__right_e9 .Separator_ellipse_fc,
-        .Separator_base__inProgressBattleQuests_1e .Separator_separator__right_e9 .Separator_ellipse_fc {
-            background: #F2F2F7;
-        }
+.Separator_base__inProgressBattleQuests_1e .Separator_separator__right_e9 .Separator_ellipse_fc {
+    background: #f2f2f7;
+}
 
 .Separator_base__completed_36 .Separator_separator__right_e9 .Separator_ellipse_fc {
-            background: #b5ff92;
-        }
+    background: #b5ff92;
+}
 
 .Separator_base__completedBattleQuests_12 .Separator_separator__right_e9 .Separator_ellipse_fc {
     width: 6rem;
@@ -506,8 +516,8 @@
     filter: blur(1rem);
     top: -2.5rem;
     right: -1.5rem;
-            left: -1.5rem;
-        }
+    left: -1.5rem;
+}
 
 .Separator_firstLayer_21 {
     width: 1rem;
@@ -515,70 +525,70 @@
     border-radius: 50%;
     position: absolute;
     top: -1rem;
-    right: .5rem;
+    right: 0.5rem;
 }
 
 .Separator_base__awards_9b .Separator_separator__left_58 .Separator_firstLayer_21,
-        .Separator_base__inProgressBattleQuests_1e .Separator_separator__left_58 .Separator_firstLayer_21 {
-            background: #FFFFFF;
-        }
+.Separator_base__inProgressBattleQuests_1e .Separator_separator__left_58 .Separator_firstLayer_21 {
+    background: #ffffff;
+}
 
 .Separator_base__completed_36 .Separator_separator__left_58 .Separator_firstLayer_21 {
-            background: #b5ff92;
-        }
+    background: #b5ff92;
+}
 
 .Separator_base__completedBattleQuests_12 .Separator_separator__left_58 .Separator_firstLayer_21 {
     width: 4rem;
     height: 4rem;
     background: #ffad32;
-    filter: blur(.5rem);
+    filter: blur(0.5rem);
     top: 1.5rem;
     right: 1.5rem;
-        }
+}
 
 .Separator_separator__right_e9 .Separator_firstLayer_21 {
-        left: -.5rem;
-    }
+    left: -0.5rem;
+}
 
 .Separator_base__awards_9b .Separator_separator__right_e9 .Separator_firstLayer_21,
-        .Separator_base__inProgressBattleQuests_1e .Separator_separator__right_e9 .Separator_firstLayer_21 {
-            background: #FFFFFF;
-        }
+.Separator_base__inProgressBattleQuests_1e .Separator_separator__right_e9 .Separator_firstLayer_21 {
+    background: #ffffff;
+}
 
 .Separator_base__completed_36 .Separator_separator__right_e9 .Separator_firstLayer_21 {
-            background: #b5ff92;
-        }
+    background: #b5ff92;
+}
 
 .Separator_base__completedBattleQuests_12 .Separator_separator__right_e9 .Separator_firstLayer_21 {
     width: 4rem;
     height: 4rem;
     background: #ffad32;
-    filter: blur(.5rem);
+    filter: blur(0.5rem);
     top: 1.5rem;
     right: 1.5rem;
-            left: 1.5rem;
-        }
+    left: 1.5rem;
+}
 
 .Separator_base__completedBattleQuests_12 .Separator_separator__left_58 .Separator_secondLayer_d1 {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    background: #E9E2BF;
+    background: #e9e2bf;
     position: absolute;
     top: -1rem;
     right: 1rem;
-        }
+}
 
 .Separator_base__completedBattleQuests_12 .Separator_separator__right_e9 .Separator_secondLayer_d1 {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    background: #E9E2BF;
+    background: #e9e2bf;
     position: absolute;
     top: -1rem;
     right: 1rem;
-            left: 1rem;
-        }
+    left: 1rem;
+}
 
 @keyframes TaskBattle_add-blur_f3 {
     from {
@@ -586,7 +596,7 @@
     }
 
     to {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
@@ -617,10 +627,10 @@
     flex-direction: column;
     width: 240rem;
     height: 180rem;
-    border: 1rem solid rgba(255, 255, 255, .15);
+    border: 1rem solid rgba(255, 255, 255, 0.15);
     border-radius: 5rem;
     border-bottom: 0;
-    background: linear-gradient(180deg, rgba(26, 26, 26, .3) 92.64%, rgba(26, 26, 26, 0) 100%);
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0.3) 92.64%, rgba(26, 26, 26, 0) 100%);
     position: relative;
 }
 
@@ -629,29 +639,29 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-    }
+}
 
 .TaskBattle_base__completedWasVisited_dd {
-    border-color: rgba(137, 167, 1, .2);
-    box-shadow: inset 0 19rem 30rem  rgba(137, 167, 1, .1);
-    }
+    border-color: rgba(137, 167, 1, 0.2);
+    box-shadow: inset 0 19rem 30rem rgba(137, 167, 1, 0.1);
+}
 
 .TaskBattle_base__mediaMediumHeight_7e {
-        width: 300rem;
-        height: 200rem;
-    }
+    width: 300rem;
+    height: 200rem;
+}
 
 .TaskBattle_base_8c + .TaskBattle_base_8c {
-        margin-left: 10rem;
-    }
+    margin-left: 10rem;
+}
 
 .mediaLarge .TaskBattle_base_8c + .TaskBattle_base_8c {
-            margin-left: 20rem;
+    margin-left: 20rem;
 }
 
 .mediaLarge .TaskBattle_base_8c {
-        width: 300rem;
-        height: 200rem;
+    width: 300rem;
+    height: 200rem;
 }
 
 .TaskBattle_taskType_5e {
@@ -667,11 +677,11 @@
 }
 
 .TaskBattle_base__mediaMediumHeight_7e .TaskBattle_conditions_bb {
-        width: 260rem;
-    }
+    width: 260rem;
+}
 
 .mediaLarge .TaskBattle_conditions_bb {
-        width: 260rem;
+    width: 260rem;
 }
 
 .TaskBattle_awards_1f {
@@ -685,18 +695,18 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-    }
+}
 
 .TaskBattle_base__completedWasVisited_dd .TaskBattle_awards_1f {
-        opacity: .5;
-    }
+    opacity: 0.5;
+}
 
 .TaskBattle_base__mediaMediumHeight_7e .TaskBattle_awards_1f {
-        width: 300rem;
-    }
+    width: 300rem;
+}
 
 .mediaLarge .TaskBattle_awards_1f {
-        width: 300rem;
+    width: 300rem;
 }
 
 .TaskBattle_awardsList_e8 {
@@ -706,18 +716,18 @@
 }
 
 .TaskBattle_award_98 + .TaskBattle_award_98 {
-        margin-left: 15rem;
-    }
+    margin-left: 15rem;
+}
 
 @keyframes TaskBattle_add-shadow_23 {
     from {
-        border-color: rgba(255, 255, 255, .15);
+        border-color: rgba(255, 255, 255, 0.15);
         box-shadow: none;
     }
 
     to {
-    border-color: rgba(137, 167, 1, .2);
-    box-shadow: inset 0 19rem 30rem  rgba(137, 167, 1, .1);
+        border-color: rgba(137, 167, 1, 0.2);
+        box-shadow: inset 0 19rem 30rem rgba(137, 167, 1, 0.1);
     }
 }
 
@@ -737,8 +747,8 @@
     position: relative;
 }
 .ProgressBar_base__small_df {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_background_51 {
     width: 100%;
     max-width: 8001px;
@@ -752,13 +762,12 @@
     left: 0;
 }
 .ProgressBar_background__small_46 {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_lineWrapper_6a {
     display: flex;
     flex: 1;
 }
-
 
 .ProgressBarBlink_base_24 {
     width: 60rem;
@@ -773,11 +782,11 @@
     pointer-events: none;
 }
 
-    .ProgressBarBlink_base__small_0f {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+.ProgressBarBlink_base__small_0f {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -789,18 +798,18 @@
     height: 100%;
     background-color: var(--progress-line-base);
     position: relative;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressLineImpose_base__disabled_cc {
-        background-color: var(--progress-line-disabled);
-    }
+    background-color: var(--progress-line-disabled);
+}
 .ProgressLineImpose_base__finished_d4 {
-        background-color: var(--progress-line-finished);
-    }
+    background-color: var(--progress-line-finished);
+}
 .ProgressLineImpose_base__withoutBounce_56 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressLineImpose_pattern_1c {
     max-width: 8001px;
     background-image: var(--progress-pattern-base);
@@ -814,19 +823,19 @@
     left: 1rem;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-disabled);
-        left: 0;
-    }
+    background-image: var(--progress-pattern-disabled);
+    left: 0;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-finished);
-    }
+    background-image: var(--progress-pattern-finished);
+}
 .ProgressLineImpose_gradient_35 {
     max-width: 8001px;
-    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75));
     mix-blend-mode: overlay;
     position: absolute;
     top: 1rem;
@@ -835,15 +844,15 @@
     left: 0;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
-        display: none;
-    }
+    display: none;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
-        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
-    }
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5));
+}
 .ProgressLineImpose_glow_a5 {
     width: 60rem;
     max-width: 8001px;
@@ -858,17 +867,17 @@
     pointer-events: none;
 }
 .ProgressLineImpose_glow__left_d8 {
-        left: 1rem;
-    }
+    left: 1rem;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
-    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
-        display: none;
-    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+    display: none;
+}
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -890,7 +899,7 @@
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1), cubic-bezier(0.21, 0.61, 0.35, 1);
     transition-property: width, transform;
 }
 
@@ -904,12 +913,12 @@
     height: 100%;
     position: absolute;
     top: 0;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressBarDeltaGrow_glow_68 {
     width: 0;
     max-width: 8001px;
@@ -919,12 +928,12 @@
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 
 @keyframes Progression_add-blur_b7 {
     from {
@@ -932,7 +941,7 @@
     }
 
     to {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
@@ -961,14 +970,14 @@
 }
 
 .Progression_base__completedWasVisited_95 {
-        display: none;
-    }
+    display: none;
+}
 
 .Progression_progression_85 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
@@ -976,64 +985,64 @@
 }
 
 .mediaLarge .Progression_progression_85 {
-        color: #F2F2F7;
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .Progression_base__completed_ef .Progression_progression_85 {
     animation-name: Progression_hide_d1;
-    animation-duration: .8s;
+    animation-duration: 0.8s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-    }
+}
 
 .Progression_progressionNumerical_15 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
     height: 20rem;
     margin: 1rem 0 6rem;
-    transition: height .8s;
+    transition: height 0.8s;
 }
 
 .Progression_progressionNumerical__mediaMediumHeight_04 {
-        color: #F2F2F7;
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
-    }
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
 
 .mediaLarge .Progression_progressionNumerical_15 {
-        color: #F2F2F7;
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .Progression_base__completed_ef .Progression_progressionNumerical_15 {
     animation-name: Progression_finish-color_fb;
-    animation-duration: .8s;
+    animation-duration: 0.8s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-        height: 0rem;
-    }
+    height: 0rem;
+}
 
 .Progression_currentValue__inProgress_2b {
-        color: #FEAB34;
-    }
+    color: #feab34;
+}
 
 .Progression_base__completed_ef .Progression_currentValue_a3 {
     animation-name: Progression_finish-color_fb;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-    }
+}
 
 .Progression_separator_ad {
     margin: 0 5rem;
@@ -1044,42 +1053,42 @@
     width: 140rem;
     height: 5rem;
     margin: 3rem 0;
-    transition: height .7s;
+    transition: height 0.7s;
 }
 
 .Progression_base__completed_ef .Progression_progressBar_7b {
     animation-name: Progression_hide_d1;
-    animation-duration: .7s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-        height: 0rem;
-    }
+    height: 0rem;
+}
 
 .Progression_progressBar__mediaMediumHeight_07 {
-        display: block;
-    }
+    display: block;
+}
 
 .mediaLarge .Progression_progressBar_7b {
-        display: block;
+    display: block;
 }
 
 @keyframes Progression_finish-color_fb {
     from {
-        color: #FEAB34;
+        color: #feab34;
     }
 
     to {
-        color: #7AB300;
+        color: #7ab300;
     }
 }
 
 @keyframes Progression_default-color_11 {
     from {
-        color: #FEAB34;
+        color: #feab34;
     }
 
     to {
-        color: #F2F2F7;
+        color: #f2f2f7;
     }
 }
 
@@ -1089,7 +1098,7 @@
     }
 
     to {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
@@ -1126,7 +1135,7 @@
 }
 
 .TaskCondition_text_d5 {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -1139,19 +1148,19 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-    }
+}
 
 .TaskCondition_text__completedWasVisited_d0 {
-        color: #7AB300;
-    }
+    color: #7ab300;
+}
 
 @keyframes TaskCondition_update-condition_db {
     from {
-        color: #F2F2F7;
+        color: #f2f2f7;
     }
 
     to {
-        color: #7AB300;
+        color: #7ab300;
     }
 }
 
@@ -1161,7 +1170,7 @@
     }
 
     to {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
@@ -1195,7 +1204,7 @@
 .TaskType_ellipse_f4 {
     width: 228rem;
     height: 125rem;
-    background: url('R.images.battle_royale_progression.gui.maps.progression.ellipse')  no-repeat center / contain;
+    background: url('R.images.battle_royale_progression.gui.maps.progression.ellipse') no-repeat center / contain;
     position: absolute;
     top: -47rem;
     z-index: 1;
@@ -1206,11 +1215,11 @@
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-    }
+}
 
 .TaskType_base__completedWasVisited_8a .TaskType_ellipse_f4 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .TaskType_typeIcon_0f {
     width: 32rem;
@@ -1225,11 +1234,11 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-    }
+}
 
 .TaskType_base__completedWasVisited_8a .TaskType_typeIcon_0f {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .TaskType_completedIcon_02 {
     width: 32rem;
@@ -1247,11 +1256,11 @@
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-    }
+}
 
 .TaskType_base__completedWasVisited_8a .TaskType_completedIcon_02 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 @keyframes TaskType_slide-down_7d {
     from {
@@ -1271,7 +1280,7 @@
     }
 
     to {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
@@ -1305,26 +1314,26 @@
 }
 
 .mediaMedium .BattleQuests_base_f5 {
-        margin-top: 0;
+    margin-top: 0;
 }
 
 .BattleQuests_base__mediumHeight_26 {
-        height: 300rem;
-        margin-top: 0;
-    }
+    height: 300rem;
+    margin-top: 0;
+}
 
 .mediaLargeHeight .BattleQuests_base__mediumHeight_26 {
-            margin-top: 50rem;
+    margin-top: 50rem;
 }
 
 .BattleQuests_base__mediaLarge_6e {
-        height: 300rem;
-        margin-top: 40rem;
-    }
+    height: 300rem;
+    margin-top: 40rem;
+}
 
 .mediaExtraLarge .BattleQuests_base_f5 {
-        height: 300rem;
-        margin-top: 40rem;
+    height: 300rem;
+    margin-top: 40rem;
 }
 
 .BattleQuests_body_32 {
@@ -1337,19 +1346,19 @@
 }
 
 .BattleQuests_body__hideContent_a4 {
-        width: 490rem;
-    }
+    width: 490rem;
+}
 
 .BattleQuests_base__specifySize_3e .BattleQuests_body__hideContent_a4 {
-            width: 990rem;
-        }
+    width: 990rem;
+}
 
 .BattleQuests_base__mediumHeight_26 .BattleQuests_body_32 {
-        width: 1230rem;
-    }
+    width: 1230rem;
+}
 
 .mediaLarge .BattleQuests_body_32 {
-        width: 1260rem;
+    width: 1260rem;
 }
 
 .Countdown_base_fe {
@@ -1364,7 +1373,7 @@
 }
 
 .Countdown_description_8d {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -1376,7 +1385,7 @@
     }
 
     to {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
@@ -1416,58 +1425,58 @@
 }
 
 .Timer_base__small_d3 .Timer_block_d4 {
-        margin: 0 10rem 3rem;
-    }
+    margin: 0 10rem 3rem;
+}
 
 .Timer_base__big_68 .Timer_block_d4 {
-        margin: 0;
-    }
+    margin: 0;
+}
 
 .Timer_base__small_d3 .Timer_text_29 {
-        color: #F2F2F7;
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
-        display: block;
-    }
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: block;
+}
 
 .Timer_base__big_68 .Timer_text_29 {
-        display: none;
-    }
+    display: none;
+}
 
 .Timer_base__small_d3 .Timer_bgCountdown_72 {
-        display: none;
-    }
+    display: none;
+}
 
 .Timer_base__big_68 .Timer_bgCountdown_72 {
-        display: block;
-        width: 280rem;
-        height: 190rem;
-        background: url('R.images.battle_royale_progression.gui.maps.progression.bg_big_timer') no-repeat center / contain;
-        position: absolute;
-        top: -75rem;
-        left: -73rem;
-    }
+    display: block;
+    width: 280rem;
+    height: 190rem;
+    background: url('R.images.battle_royale_progression.gui.maps.progression.bg_big_timer') no-repeat center / contain;
+    position: absolute;
+    top: -75rem;
+    left: -73rem;
+}
 
 .Timer_base__small_d3 .Timer_description_90 {
-        color: #FFDD99;
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
-    }
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
 
 .Timer_base__big_68 .Timer_description_90 {
-        color: #FFDD99;
-        font-size: 24rem;
-        font-weight: 400;
-        line-height: 1.2;
-        margin-bottom: 3rem;
-    }
+    color: #ffdd99;
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+}
 
 .Timer_base__big_68 .Timer_countdown_b2 {
-        margin-right: 5rem;
-        position: relative;
-    }
+    margin-right: 5rem;
+    position: relative;
+}
 
 @keyframes InformText_add-blur_ef {
     from {
@@ -1475,7 +1484,7 @@
     }
 
     to {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
@@ -1507,7 +1516,7 @@
 }
 
 .InformText_title_43 {
-    color: #FEFEEC;
+    color: #fefeec;
     font-size: 24rem;
     font-weight: 700;
     line-height: 1.2;
@@ -1516,25 +1525,25 @@
 }
 
 .mediaLarge .InformText_title_43 {
-        color: #FEFEEC;
-        font-size: 36rem;
-        font-weight: 700;
-        line-height: 1.1;
-        margin-bottom: 28rem;
+    color: #fefeec;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 28rem;
 }
 
 .InformText_text_73 {
-    color: #FEFEEC;
+    color: #fefeec;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
 .mediaSmall .InformText_text_73 {
-        color: #FEFEEC;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
+    color: #fefeec;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
 }
 
 @keyframes InformBlock_add-blur_9c {
@@ -1543,7 +1552,7 @@
     }
 
     to {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
@@ -1573,16 +1582,17 @@
 }
 
 .InformBlock_base__completed_b7,
-    .InformBlock_base__allCompletedTasksVisited_5b {
-        margin: 0;
-    }
+.InformBlock_base__allCompletedTasksVisited_5b {
+    margin: 0;
+}
 
-.mediaLarge .InformBlock_base__completed_b7, .mediaLarge .InformBlock_base__allCompletedTasksVisited_5b {
-            width: 585rem;
+.mediaLarge .InformBlock_base__completed_b7,
+.mediaLarge .InformBlock_base__allCompletedTasksVisited_5b {
+    width: 585rem;
 }
 
 .mediaLarge .InformBlock_base_07 {
-        margin-bottom: 7rem;
+    margin-bottom: 7rem;
 }
 
 .InformBlock_body_5e {
@@ -1598,16 +1608,16 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-delay: 2.2s;
-        flex-direction: column;
-    }
+    flex-direction: column;
+}
 
 .InformBlock_base__allCompletedTasksVisited_5b .InformBlock_body_5e {
     animation-name: InformBlock_show_aa;
     animation-duration: 0s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-        flex-direction: column;
-    }
+    flex-direction: column;
+}
 
 @keyframes TimerWithQuestsTotal_add-blur_72 {
     from {
@@ -1615,7 +1625,7 @@
     }
 
     to {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
@@ -1652,7 +1662,7 @@
 }
 
 .mediaSmallWidth .TimerWithQuestsTotal_body_ba {
-        justify-content: center;
+    justify-content: center;
 }
 
 .TimerWithQuestsTotal_timerBlock_a3 {
@@ -1663,14 +1673,14 @@
 }
 
 .TimerWithQuestsTotal_text_c3 {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
 .TimerWithQuestsTotal_description_60 {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -1681,16 +1691,16 @@
 }
 
 .TimerWithQuestsTotal_separatorBlock__show_2b {
-        display: block;
-        flex: 1 1 auto;
-        margin-bottom: -4rem;
-        position: relative;
-    }
+    display: block;
+    flex: 1 1 auto;
+    margin-bottom: -4rem;
+    position: relative;
+}
 
 .TimerWithQuestsTotal_separator_62 {
     height: 1rem;
     background: rgba(255, 255, 255, 1);
-    opacity: .2;
+    opacity: 0.2;
     position: relative;
 }
 
@@ -1698,20 +1708,20 @@
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background: #F2F2F7;
-    filter: blur(.5rem);
-    opacity: .5;
+    background: #f2f2f7;
+    filter: blur(0.5rem);
+    opacity: 0.5;
     position: absolute;
     top: -1rem;
 }
 
 .TimerWithQuestsTotal_ellipse__left_cb {
-        right: -.5rem;
-    }
+    right: -0.5rem;
+}
 
 .TimerWithQuestsTotal_ellipse__right_9d {
-        left: -.5rem;
-    }
+    left: -0.5rem;
+}
 
 .TimerWithQuestsTotal_totalBlock_8d {
     display: flex;
@@ -1719,7 +1729,7 @@
 }
 
 .TimerWithQuestsTotal_currentCount_97 {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
@@ -1728,7 +1738,7 @@
 
 .TimerWithQuestsTotal_slash_18,
 .TimerWithQuestsTotal_total_91 {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -1774,14 +1784,14 @@
 }
 
 .ScrollArea_content__scroll_77 {
-        flex-direction: row;
-        margin-top: 0;
-        position: absolute;
-        top: 7rem;
-        left: 0;
-        transform: translateX(0);
-        transition: transform .5s ease-in-out;
-    }
+    flex-direction: row;
+    margin-top: 0;
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
 
 .ScrollArea_button_e1 {
     position: absolute;
@@ -1790,31 +1800,31 @@
 }
 
 .ScrollArea_button__active_62 {
-        display: block;
-    }
+    display: block;
+}
 
 .ScrollArea_button__hidden_2a {
-        display: none;
-    }
+    display: none;
+}
 
 .ScrollArea_button__forward_16 {
-        right: -40rem;
-    }
+    right: -40rem;
+}
 
 .mediaSmall .ScrollArea_button__forward_16 {
-            right: -50rem;
+    right: -50rem;
 }
 
 .ScrollArea_button__back_bf {
-        left: -40rem;
-    }
+    left: -40rem;
+}
 
 .mediaSmall .ScrollArea_button__back_bf {
-            left: -50rem;
+    left: -50rem;
 }
 
 .mediaLarge .ScrollArea_button_e1 {
-        top: 83rem;
+    top: 83rem;
 }
 
 .ScrollArea_buttonBack_15,
@@ -1822,29 +1832,31 @@
     width: 24rem;
     height: 48rem;
     background: url('R.images.battle_royale_progression.gui.maps.progression.arrow_button') no-repeat center / contain;
-    opacity: .8;
+    opacity: 0.8;
     cursor: pointer;
 }
 
-.ScrollArea_buttonBack_15:hover, .ScrollArea_buttonForward_ff:hover {
-        opacity: 1;
-    }
+.ScrollArea_buttonBack_15:hover,
+.ScrollArea_buttonForward_ff:hover {
+    opacity: 1;
+}
 
-.ScrollArea_button__locked_f0 .ScrollArea_buttonBack_15, .ScrollArea_button__locked_f0 .ScrollArea_buttonForward_ff {
-        background-image: url('R.images.battle_royale_progression.gui.maps.progression.arrow_button_locked');
-        filter: brightness(2);
-        transform: rotate(180deg);
-        cursor: default;
-        pointer-events: none;
-    }
+.ScrollArea_button__locked_f0 .ScrollArea_buttonBack_15,
+.ScrollArea_button__locked_f0 .ScrollArea_buttonForward_ff {
+    background-image: url('R.images.battle_royale_progression.gui.maps.progression.arrow_button_locked');
+    filter: brightness(2);
+    transform: rotate(180deg);
+    cursor: default;
+    pointer-events: none;
+}
 
 .ScrollArea_buttonBack_15 {
     transform: rotate(180deg);
 }
 
 .ScrollArea_button__locked_f0 .ScrollArea_buttonBack_15 {
-        transform: rotate(0);
-    }
+    transform: rotate(0);
+}
 
 @keyframes TaskBattleList_add-blur_90 {
     from {
@@ -1852,7 +1864,7 @@
     }
 
     to {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
@@ -1885,17 +1897,17 @@
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
     animation-delay: 1.5s;
-    }
+}
 
 .TaskBattleList_base__allCompletedTasksVisited_ab {
     animation-name: TaskBattleList_hidden-tasks-list_82;
     animation-duration: 0s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-    }
+}
 
 .mediaLarge .TaskBattleList_base_72 {
-        margin: 0;
+    margin: 0;
 }
 
 .TaskBattleList_timerWithQuestsTotal_60 {
@@ -1903,11 +1915,11 @@
 }
 
 .mediaMedium .TaskBattleList_timerWithQuestsTotal_60 {
-        margin: 5rem 0 3rem;
+    margin: 5rem 0 3rem;
 }
 
 .mediaLarge .TaskBattleList_timerWithQuestsTotal_60 {
-        margin: 0 0 11rem;
+    margin: 0 0 11rem;
 }
 
 .TaskBattleList_timer_bc {
@@ -1915,11 +1927,11 @@
 }
 
 .mediaMedium .TaskBattleList_timer_bc {
-        margin: 9rem 0 3rem;
+    margin: 9rem 0 3rem;
 }
 
 .mediaLarge .TaskBattleList_timer_bc {
-        margin: 0 0 -11rem;
+    margin: 0 0 -11rem;
 }
 
 .TaskBattleList_taskList_16 {
@@ -1965,34 +1977,34 @@
     transition: opacity 1500ms;
 }
 .mediaLarge .Header_header_ba {
-        top: 50rem;
+    top: 50rem;
 }
 .Header_header__fast_5d {
-        transition: none;
-    }
+    transition: none;
+}
 .Header_header__inProgress_2f {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .Header_header__hide_29 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .Header_header__completed_d9 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .Header_header__show_c0 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .Header_title_15 {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 36rem;
     font-weight: 700;
     line-height: 1.1;
 }
 .mediaMedium .Header_title_15 {
-        color: #F2F2F7;
-        font-size: 56rem;
-        font-weight: 700;
-        line-height: 1.1;
+    color: #f2f2f7;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 .Header_subtitleContainer_73 {
     display: flex;
@@ -2003,7 +2015,7 @@
     z-index: 8;
 }
 .Header_subTitle_fa {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -2011,17 +2023,17 @@
     line-height: 2;
 }
 .mediaMedium .Header_subTitle_fa {
-        color: #E9E2BF;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
-        line-height: 2;
+    color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    line-height: 2;
 }
 .Header_subTitle_fa + .Header_subTitle_fa {
-        justify-content: center;
-        align-items: center;
-        margin-top: -18rem;
-    }
+    justify-content: center;
+    align-items: center;
+    margin-top: -18rem;
+}
 
 .Infotip_infotip_af {
     width: 40rem;
@@ -2038,33 +2050,34 @@
     position: relative;
 }
 
-    .HorizontalBar_base__nonActive_82 {
-        visibility: hidden;
-    }
+.HorizontalBar_base__nonActive_82 {
+    visibility: hidden;
+}
 
-    .HorizontalBar_base_49 .disable,
-    .HorizontalBar_base_49 .disable:hover {
-        opacity: .3;
-        cursor: default;
-    }
+.HorizontalBar_base_49 .disable,
+.HorizontalBar_base_49 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
 
 .HorizontalBar_leftButton_5f,
 .HorizontalBar_rightButton_03 {
     width: 13rem;
     height: 13rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
     background: no-repeat center / 7rem 5rem;
-    opacity: .5;
+    opacity: 0.5;
     z-index: 1;
     transform: rotate(-90deg);
     transition: opacity 130ms linear;
     cursor: pointer;
 }
 
-.HorizontalBar_leftButton_5f:hover, .HorizontalBar_rightButton_03:hover {
-        opacity: 1;
-    }
+.HorizontalBar_leftButton_5f:hover,
+.HorizontalBar_rightButton_03:hover {
+    opacity: 1;
+}
 
 .HorizontalBar_leftButton_5f {
     background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
@@ -2088,9 +2101,10 @@
     min-width: 20rem;
     height: 13rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
-    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem 7rem;
-    opacity: .5;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem
+        7rem;
+    opacity: 0.5;
     position: absolute;
     z-index: 1;
     transition: opacity 130ms linear;
@@ -2098,8 +2112,8 @@
 }
 
 .HorizontalBar_thumb_fd:hover {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 .HorizontalBar_rail_32 {
     height: 0;
@@ -2111,9 +2125,8 @@
 }
 
 .HorizontalBar_rail_32:hover {
-        opacity: .7;
-    }
-
+    opacity: 0.7;
+}
 
 .HorizontalScroll_base_29 {
     width: 100%;
@@ -2138,32 +2151,33 @@
     position: relative;
 }
 
-    .VerticalBar_base__nonActive_42 {
-        visibility: hidden;
-    }
+.VerticalBar_base__nonActive_42 {
+    visibility: hidden;
+}
 
-    .VerticalBar_base_f3 .disable,
-    .VerticalBar_base_f3 .disable:hover {
-        opacity: .3;
-        cursor: default;
-    }
+.VerticalBar_base_f3 .disable,
+.VerticalBar_base_f3 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
 
 .VerticalBar_topButton_d7,
 .VerticalBar_bottomButton_06 {
     width: 13rem;
     height: 13rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
     background: no-repeat center / 7rem 5rem;
-    opacity: .5;
+    opacity: 0.5;
     z-index: 1;
     transition: opacity 130ms linear;
     cursor: pointer;
 }
 
-.VerticalBar_topButton_d7:hover, .VerticalBar_bottomButton_06:hover {
-        opacity: 1;
-    }
+.VerticalBar_topButton_d7:hover,
+.VerticalBar_bottomButton_06:hover {
+    opacity: 1;
+}
 
 .VerticalBar_topButton_d7 {
     background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
@@ -2187,9 +2201,9 @@
     height: 100%;
     min-height: 20rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
     background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
-    opacity: .5;
+    opacity: 0.5;
     position: absolute;
     z-index: 1;
     transition: opacity 130ms linear;
@@ -2197,8 +2211,8 @@
 }
 
 .VerticalBar_thumb_32:hover {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 .VerticalBar_rail_43 {
     width: 0;
@@ -2213,9 +2227,8 @@
 }
 
 .VerticalBar_rail_43:hover {
-        opacity: .7;
-    }
-
+    opacity: 0.7;
+}
 
 .VerticalScroll_content_cb {
     height: 100%;
@@ -2244,16 +2257,17 @@
     transition: opacity 500ms;
 }
 .LevelLabel_activeGlow__completed_95 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .LevelLabel_activeGlow__fast_12 {
-        opacity: 1;
-        transition: none;
-    }
+    opacity: 1;
+    transition: none;
+}
 .LevelLabel_activeGlow_28 {
     width: 134rem;
     height: 134rem;
-    background: url('R.images.battle_royale_progression.gui.maps.progression.bg_rare_light_current') no-repeat center / cover;
+    background: url('R.images.battle_royale_progression.gui.maps.progression.bg_rare_light_current') no-repeat center /
+        cover;
     mix-blend-mode: screen;
     position: absolute;
     top: 51%;
@@ -2262,11 +2276,11 @@
     transition-delay: 1100ms;
 }
 .LevelLabel_level_b3 {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
-    opacity: .5;
+    opacity: 0.5;
     position: absolute;
     bottom: 8rem;
     left: 50%;
@@ -2275,28 +2289,30 @@
     transition-delay: 1100ms;
 }
 .LevelLabel_level__completed_81 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .LevelLabel_level__active_ae {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .LevelLabel_levelCurrent_9d {
     opacity: 0;
     transition: opacity 500ms;
 }
 .LevelLabel_levelCurrent__completed_81 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .LevelLabel_levelCurrent__fast_87 {
-        opacity: 1;
-        transition: none;
-    }
+    opacity: 1;
+    transition: none;
+}
 .LevelLabel_levelCurrent_9d {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 36rem;
     font-weight: 700;
     line-height: 1.1;
-    text-shadow: 0 0 16rem #ff2e00, 0 0 4rem rgba(168, 30, 0, .5);
+    text-shadow:
+        0 0 16rem #ff2e00,
+        0 0 4rem rgba(168, 30, 0, 0.5);
     position: absolute;
     bottom: 11rem;
     left: 50%;
@@ -2311,39 +2327,41 @@
     position: relative;
 }
 
-    .mediaMedium .LevelCard_base_f6 {
-        width: 200rem;
+.mediaMedium .LevelCard_base_f6 {
+    width: 200rem;
 }
 .LevelCard_bgCompleted_83 {
     opacity: 0;
     transition: opacity 500ms;
 }
 .LevelCard_bgCompleted__completed_91 {
-        opacity: .9;
-    }
+    opacity: 0.9;
+}
 .LevelCard_bgCompleted__fast_47 {
-        opacity: .9;
-        transition: none;
-    }
+    opacity: 0.9;
+    transition: none;
+}
 .LevelCard_bgCompleted_83 {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: radial-gradient(78.04% 100% at 50% 100%, rgba(240, 218, 191, .23) 0%, rgba(90, 90, 90, 0) 100%);
+    background: radial-gradient(78.04% 100% at 50% 100%, rgba(240, 218, 191, 0.23) 0%, rgba(90, 90, 90, 0) 100%);
     transition-delay: 1100ms;
 }
 .LevelCard_completedIconContainer_2d {
     opacity: 0;
     transform: translateY(-20rem);
-    transition: opacity 500ms, transform 500ms;
+    transition:
+        opacity 500ms,
+        transform 500ms;
 }
 .LevelCard_completedIconContainer__completed_03,
-    .LevelCard_completedIconContainer__prevLevel_14 {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.LevelCard_completedIconContainer__prevLevel_14 {
+    opacity: 1;
+    transform: translateY(0);
+}
 .LevelCard_completedIconContainer_2d {
     position: absolute;
     top: 0;
@@ -2353,7 +2371,8 @@
 .LevelCard_completedIcon_c3 {
     width: 24rem;
     height: 24rem;
-    background: url('R.images.battle_royale_progression.gui.maps.progression.icon_now_rewards_title') no-repeat center / cover;
+    background: url('R.images.battle_royale_progression.gui.maps.progression.icon_now_rewards_title') no-repeat center /
+        cover;
     position: absolute;
     top: 0;
     left: 50%;
@@ -2364,7 +2383,7 @@
     height: 9rem;
     border: 3rem solid #24ff00;
     filter: blur(7px);
-    opacity: .7;
+    opacity: 0.7;
     position: absolute;
     top: 6rem;
     left: 50%;
@@ -2373,23 +2392,23 @@
 .LevelCard_border_ec {
     width: 1rem;
     height: 36rem;
-    background: linear-gradient(0deg, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
     position: absolute;
     bottom: 0;
     left: 0;
 }
 .LevelCard_border__right_89 {
-        right: 0;
-        left: auto;
-    }
+    right: 0;
+    left: auto;
+}
 
 .LevelCards_base_70 {
     display: flex;
     padding-right: 40rem;
 }
 
-    .mediaMedium .LevelCards_base_70 {
-        padding-right: 160rem;
+.mediaMedium .LevelCards_base_70 {
+    padding-right: 160rem;
 }
 
 .Rewards_base_10 {
@@ -2397,16 +2416,16 @@
     transition: opacity 500ms;
 }
 
-    .Rewards_base__completed_4f {
-        opacity: .5;
-    }
+.Rewards_base__completed_4f {
+    opacity: 0.5;
+}
 
-    .Rewards_base__fast_d9 {
-        opacity: .5;
-        transition: none;
-    }
+.Rewards_base__fast_d9 {
+    opacity: 0.5;
+    transition: none;
+}
 
-    .Rewards_base_10 {
+.Rewards_base_10 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2418,14 +2437,14 @@
     transition-delay: 1100ms;
 }
 
-    .Rewards_base__wide_52 {
-        width: 100%;
-    }
+.Rewards_base__wide_52 {
+    width: 100%;
+}
 .Rewards_reward_dc {
     margin: 10rem;
 }
 .mediaMedium .Rewards_reward_dc {
-        margin: 5rem;
+    margin: 5rem;
 }
 
 .FormatTextWithColorTags_blackReal_3c {
@@ -2433,23 +2452,23 @@
 }
 
 .FormatTextWithColorTags_whiteReal_8a {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .FormatTextWithColorTags_white_16 {
-    color: #F2F2F7;
+    color: #f2f2f7;
 }
 
 .FormatTextWithColorTags_whiteOrange_18 {
-    color: #FEFEEC;
+    color: #fefeec;
 }
 
 .FormatTextWithColorTags_whiteSpanish_10 {
-    color: #E9E2BF;
+    color: #e9e2bf;
 }
 
 .FormatTextWithColorTags_par_ca {
-    color: #8C8C7E;
+    color: #8c8c7e;
 }
 
 .FormatTextWithColorTags_parSecondary_8d {
@@ -2457,39 +2476,39 @@
 }
 
 .FormatTextWithColorTags_parTertiary_a3 {
-    color: #37362E;
+    color: #37362e;
 }
 
 .FormatTextWithColorTags_red_60 {
-    color: #FF2717;
+    color: #ff2717;
 }
 
 .FormatTextWithColorTags_redDark_03 {
-    color: #B70000;
+    color: #b70000;
 }
 
 .FormatTextWithColorTags_yellow_ad {
-    color: #FEAB34;
+    color: #feab34;
 }
 
 .FormatTextWithColorTags_orange_e4 {
-    color: #EE7000;
+    color: #ee7000;
 }
 
 .FormatTextWithColorTags_cream_cd {
-    color: #FFDD99;
+    color: #ffdd99;
 }
 
 .FormatTextWithColorTags_brown_c8 {
-    color: #CBAC77;
+    color: #cbac77;
 }
 
 .FormatTextWithColorTags_greenBright_f0 {
-    color: #80D43A;
+    color: #80d43a;
 }
 
 .FormatTextWithColorTags_green_c5 {
-    color: #7AB300;
+    color: #7ab300;
 }
 
 .FormatTextWithColorTags_greenDark_af {
@@ -2497,34 +2516,34 @@
 }
 
 .FormatTextWithColorTags_blueBooster_ac {
-    color: #CCFFFF;
+    color: #ccffff;
 }
 
 .FormatTextWithColorTags_blueTeamkiller_6f {
-    color: #09E2FF;
+    color: #09e2ff;
 }
 
 .FormatTextWithColorTags_cred_4e {
-    color: #CED9D9;
+    color: #ced9d9;
 }
 
 .FormatTextWithColorTags_gold_90 {
-    color: #FFC363;
+    color: #ffc363;
 }
 
 .FormatTextWithColorTags_bond_71 {
-    color: #C9C9B6;
+    color: #c9c9b6;
 }
 
 .FormatTextWithColorTags_prom_dd {
-    color: #A29B70;
+    color: #a29b70;
 }
 
 /* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
 
 .FormatTextWithColorTags_parNoWidth_5a {
     width: 0;
-    color: #8C8C7E;
+    color: #8c8c7e;
 }
 
 .RewardCard_base_90 {
@@ -2536,75 +2555,77 @@
     position: relative;
 }
 
-    .RewardCard_base__mediaMedium_5e,
-    .RewardCard_base__mediaLarge_d7 {
-        width: 200rem;
-        height: 318rem;
-    }
+.RewardCard_base__mediaMedium_5e,
+.RewardCard_base__mediaLarge_d7 {
+    width: 200rem;
+    height: 318rem;
+}
 
-    .RewardCard_base__mediaExtraExtraLarge_54 {
-        width: 200rem;
-        height: 475rem;
-    }
+.RewardCard_base__mediaExtraExtraLarge_54 {
+    width: 200rem;
+    height: 475rem;
+}
 .RewardCard_activeBlock_f0 {
     opacity: 0;
     transition: opacity 500ms;
 }
 .RewardCard_activeBlock__completed_0e {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .RewardCard_activeBlock__fast_8a {
-        opacity: 1;
-        transition: none;
-    }
+    opacity: 1;
+    transition: none;
+}
 .RewardCard_activeBlock_f0 {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: url('R.images.battle_royale_progression.gui.maps.progression.bg_current_small') no-repeat center -60rem / cover;
+    background: url('R.images.battle_royale_progression.gui.maps.progression.bg_current_small') no-repeat center -60rem /
+        cover;
     transition-delay: 1100ms;
 }
 .mediaMedium .RewardCard_activeBlock_f0 {
-        background: url('R.images.battle_royale_progression.gui.maps.progression.bg_current_large') no-repeat center -60rem / cover;
+    background: url('R.images.battle_royale_progression.gui.maps.progression.bg_current_large') no-repeat center -60rem /
+        cover;
 }
 .RewardCard_bgCompleted_0c {
     opacity: 0;
     transition: opacity 500ms;
 }
 .RewardCard_bgCompleted__completed_02 {
-        opacity: .9;
-    }
+    opacity: 0.9;
+}
 .RewardCard_bgCompleted__fast_19 {
-        opacity: .9;
-        transition: none;
-    }
+    opacity: 0.9;
+    transition: none;
+}
 .RewardCard_bgCompleted_0c {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: radial-gradient(126.66% 103.83% at 50% 0%, rgba(254, 228, 198, .15) 0%, rgba(49, 49, 49, 0) 100%);
+    background: radial-gradient(126.66% 103.83% at 50% 0%, rgba(254, 228, 198, 0.15) 0%, rgba(49, 49, 49, 0) 100%);
     transition-delay: 1100ms;
 }
 .RewardCard_pointsBorder_c9 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 12rem;
     font-weight: 400;
     line-height: 1.3;
-    opacity: .5;
+    opacity: 0.5;
     position: absolute;
     top: 5rem;
     left: 0;
     transform: translateX(-50%);
 }
 .RewardCard_pointsBorder__right_ad {
-        right: 0;
-        left: auto;
-        transform: translateX(50%);
-    }
+    right: 0;
+    left: auto;
+    transform: translateX(50%);
+}
 .RewardCard_pointsContainer_9e {
     display: flex;
     flex-direction: row;
@@ -2615,7 +2636,7 @@
     transform: translateX(-50%);
 }
 .RewardCard_points_bc {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -2624,28 +2645,29 @@
 .RewardCard_token_e8 {
     width: 16rem;
     height: 16rem;
-    background: url('R.images.battle_royale_progression.gui.maps.progression.token_battle_royale') no-repeat center / cover;
+    background: url('R.images.battle_royale_progression.gui.maps.progression.token_battle_royale') no-repeat center /
+        cover;
 }
 .RewardCard_border_41 {
     width: 1rem;
     height: 90%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
     position: absolute;
     top: 24rem;
     left: 0;
 }
 .RewardCard_border__right_25 {
-        right: 0;
-        left: auto;
-    }
+    right: 0;
+    left: auto;
+}
 
 .RewardCards_base_bc {
     display: flex;
     padding-right: 40rem;
 }
 
-    .mediaMedium .RewardCards_base_bc {
-        padding-right: 160rem;
+.mediaMedium .RewardCards_base_bc {
+    padding-right: 160rem;
 }
 
 /*
@@ -2685,12 +2707,12 @@
     transition: opacity 500ms;
 }
 .Container_progressWrapper__completed_25 {
-        opacity: .7;
-    }
+    opacity: 0.7;
+}
 .Container_progressWrapper__fast_68 {
-        opacity: .7;
-        transition: none;
-    }
+    opacity: 0.7;
+    transition: none;
+}
 .Container_progressWrapper_be {
     display: flex;
     margin: -30rem 0;
@@ -2706,20 +2728,20 @@
     margin: -3rem -1rem;
     border-radius: 2rem;
     background: #000;
-    opacity: .5;
+    opacity: 0.5;
 }
 
 .Content_base_f0 {
     display: flex;
     align-items: center;
     opacity: 0;
-    transition: opacity .03s;
+    transition: opacity 0.03s;
 }
 
-    .Content_base__centered_35,
-    .Content_base__layoutReady_bf {
-        opacity: 1;
-    }
+.Content_base__centered_35,
+.Content_base__layoutReady_bf {
+    opacity: 1;
+}
 .Content_horizontalContent_5b {
     display: flex;
     flex-direction: column;
@@ -2728,32 +2750,32 @@
     position: relative;
 }
 .mediaMedium .Content_horizontalContent_5b {
-        margin-top: 35rem;
+    margin-top: 35rem;
 }
 .mediaLarge .Content_horizontalContent_5b {
-        margin-top: 60rem;
+    margin-top: 60rem;
 }
 .Content_wrapper_d7 {
     padding-left: 20rem;
     overflow-x: visible;
 }
 .mediaMedium .Content_wrapper_d7 {
-        padding-left: 80rem;
+    padding-left: 80rem;
 }
 .Content_base__centered_35 .Content_wrapper_d7 {
-        justify-content: center;
-        margin-left: 10rem;
-    }
+    justify-content: center;
+    margin-left: 10rem;
+}
 .mediaMedium .Content_base__centered_35 .Content_wrapper_d7 {
-            margin-left: 40rem;
+    margin-left: 40rem;
 }
 .Content_horizontalBarVerticalScrollBar_0e {
     padding-left: 20rem;
     padding-right: 20rem;
 }
 .mediaMedium .Content_horizontalBarVerticalScrollBar_0e {
-        padding-left: 80rem;
-        padding-right: 80rem;
+    padding-left: 80rem;
+    padding-right: 80rem;
 }
 .Content_progress_87 {
     height: 13rem;
@@ -2766,32 +2788,32 @@
     position: absolute;
 }
 .mediaMedium .Content_progressArea_35 {
-        padding-right: 160rem;
+    padding-right: 160rem;
 }
 
 .ScrollDrag_base_dd {
     cursor: grab;
 }
 
-    .ScrollDrag_base__grabbing_db {
-        cursor: move;
-    }
+.ScrollDrag_base__grabbing_db {
+    cursor: move;
+}
 
 .Progression_base_c1 {
     opacity: 1;
     transition: opacity 500ms;
 }
 
-    .Progression_base__completed_5c {
-        opacity: .7;
-    }
+.Progression_base__completed_5c {
+    opacity: 0.7;
+}
 
-    .Progression_base__fast_78 {
-        opacity: .7;
-        transition: none;
-    }
+.Progression_base__fast_78 {
+    opacity: 0.7;
+    transition: none;
+}
 
-    .Progression_base_c1 {
+.Progression_base_c1 {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -2800,32 +2822,32 @@
     transition-duration: 1500ms;
 }
 
-    .mediaMedium .Progression_base_c1 {
-        margin-bottom: -18rem;
-        padding-top: 0;
+.mediaMedium .Progression_base_c1 {
+    margin-bottom: -18rem;
+    padding-top: 0;
 }
 .Progression_shadow_af {
     width: 445rem;
     height: 876rem;
-    background: radial-gradient(42% 42% at 0% 50.08%, rgba(0, 0, 0, .88) 0%, rgba(0, 0, 0, 0) 100%);
+    background: radial-gradient(42% 42% at 0% 50.08%, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0) 100%);
     opacity: 0;
     position: absolute;
     top: -300rem;
     z-index: 3;
-    transition: opacity .3s ease-in;
+    transition: opacity 0.3s ease-in;
     pointer-events: none;
 }
 .Progression_shadow__left_bc {
-        left: 0;
-    }
+    left: 0;
+}
 .Progression_shadow__right_c6 {
-        right: 0;
-        transform: rotate(180deg);
-    }
+    right: 0;
+    transform: rotate(180deg);
+}
 .Progression_shadow__visible_de {
-        opacity: 1;
-        transition: opacity .3s ease-out;
-    }
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+}
 
 body {
     overflow: hidden;
@@ -2839,7 +2861,7 @@ body {
     background-color: #000;
     position: relative;
     animation-name: App_windowIn_5f;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: both;
 }
 .App_bgContainer_8b {
@@ -2865,7 +2887,7 @@ body {
     bottom: 0;
     left: 0;
     background: url('R.images.battle_royale_progression.gui.maps.progression.noise') repeat center / cover;
-    opacity: .1;
+    opacity: 0.1;
     mix-blend-mode: soft-light;
 }
 .App_shade_2f {
@@ -2874,23 +2896,29 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.5);
     transition: background 1500ms;
 }
 .App_shade__fast_3e {
-        transition: none;
-    }
+    transition: none;
+}
 .App_shade__completed_d4 {
-        background: rgba(0, 0, 0, .3);
-    }
+    background: rgba(0, 0, 0, 0.3);
+}
 .App_bottomShadow_e2 {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 36%, rgba(0, 0, 0, .39) 45%, rgba(0, 0, 0, .73) 57%, rgba(0, 0, 0, .8) 100%);
-    opacity: .7;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 36%,
+        rgba(0, 0, 0, 0.39) 45%,
+        rgba(0, 0, 0, 0.73) 57%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+    opacity: 0.7;
 }
 .App_buttonClose_0c {
     position: absolute;
@@ -2920,13 +2948,13 @@ body {
     padding-bottom: 40rem;
 }
 .App_mainContent__largeHeight_ea {
-        justify-content: flex-start;
-    }
+    justify-content: flex-start;
+}
 .App_battleQuests_01 {
     z-index: 2;
 }
 .mediaExtraLarge .App_battleQuests_01 {
-        margin: 46rem;
+    margin: 46rem;
 }
 @keyframes App_windowIn_5f {
     from {
@@ -2950,4 +2978,3 @@ body {
     height: 100%;
     overflow: hidden;
 }
-

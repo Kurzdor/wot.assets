@@ -72,7 +72,7 @@
     position: relative;
 }
 .VehicleCount_text_91 {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -82,11 +82,11 @@
     position: relative;
 }
 .VehicleCount_text__alert_2f {
-        color: #EE7000;
-    }
+    color: #ee7000;
+}
 .VehicleCount_text__finished_4c {
-        color: #F2F2F7;
-    }
+    color: #f2f2f7;
+}
 .VehicleCount_textCounter_17 {
     margin: -4rem 0 0 5rem;
     font-size: 18rem;
@@ -126,10 +126,9 @@
 }
 .VehicleCount_animations__enter_d7 {
     opacity: 0;
-    animation: VehicleCount_fadeIn_40 .4s cubic-bezier(.47, 0, .75, .72) 0s forwards;
-    }
+    animation: VehicleCount_fadeIn_40 0.4s cubic-bezier(0.47, 0, 0.75, 0.72) 0s forwards;
+}
 .VehicleCount_animations__exit_2b {
     opacity: 1;
-    animation: VehicleCount_fadeOut_a2 .3s ease-out 0s forwards;
-    }
-
+    animation: VehicleCount_fadeOut_a2 0.3s ease-out 0s forwards;
+}

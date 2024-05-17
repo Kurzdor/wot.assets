@@ -4,13 +4,13 @@
     position: relative;
 }
 
-    .ExtendedText_base__zeroPadding_25 {
-        padding: 0;
-    }
+.ExtendedText_base__zeroPadding_25 {
+    padding: 0;
+}
 
-    .ExtendedText_base__isTruncationAvailable_5b {
-        width: 100%;
-    }
+.ExtendedText_base__isTruncationAvailable_5b {
+    width: 100%;
+}
 
 .ExtendedText_truncated_97 {
     display: flex;
@@ -20,8 +20,8 @@
 }
 
 .ExtendedText_truncated__hide_31 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .ExtendedText_unTruncated_b8 {
     display: flex;
@@ -32,7 +32,7 @@
     height: 100%;
     justify-content: flex-start;
     align-content: flex-start;
-    color: #FF2717;
+    color: #ff2717;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -45,23 +45,23 @@
 }
 
 .colors_whiteReal_31 {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .colors_white_45 {
-    color: #F2F2F7;
+    color: #f2f2f7;
 }
 
 .colors_whiteOrange_81 {
-    color: #FEFEEC;
+    color: #fefeec;
 }
 
 .colors_whiteSpanish_c3 {
-    color: #E9E2BF;
+    color: #e9e2bf;
 }
 
 .colors_par_5b {
-    color: #8C8C7E;
+    color: #8c8c7e;
 }
 
 .colors_parSecondary_fd {
@@ -69,39 +69,39 @@
 }
 
 .colors_parTertiary_97 {
-    color: #37362E;
+    color: #37362e;
 }
 
 .colors_red_79 {
-    color: #FF2717;
+    color: #ff2717;
 }
 
 .colors_redDark_73 {
-    color: #B70000;
+    color: #b70000;
 }
 
 .colors_yellow_76 {
-    color: #FEAB34;
+    color: #feab34;
 }
 
 .colors_orange_cd {
-    color: #EE7000;
+    color: #ee7000;
 }
 
 .colors_cream_0f {
-    color: #FFDD99;
+    color: #ffdd99;
 }
 
 .colors_brown_82 {
-    color: #CBAC77;
+    color: #cbac77;
 }
 
 .colors_greenBright_68 {
-    color: #80D43A;
+    color: #80d43a;
 }
 
 .colors_green_fa {
-    color: #7AB300;
+    color: #7ab300;
 }
 
 .colors_greenDark_a9 {
@@ -109,27 +109,27 @@
 }
 
 .colors_blueBooster_26 {
-    color: #CCFFFF;
+    color: #ccffff;
 }
 
 .colors_blueTeamkiller_86 {
-    color: #09E2FF;
+    color: #09e2ff;
 }
 
 .colors_cred_35 {
-    color: #CED9D9;
+    color: #ced9d9;
 }
 
 .colors_gold_c3 {
-    color: #FFC363;
+    color: #ffc363;
 }
 
 .colors_bond_ce {
-    color: #C9C9B6;
+    color: #c9c9b6;
 }
 
 .colors_prom_83 {
-    color: #A29B70;
+    color: #a29b70;
 }
 
 .renderers_noBreakWrapper_10 {
@@ -153,21 +153,25 @@
 }
 
 .Background_base_94 {
-    width: 100%;
-    height: 100%;
-    background: no-repeat 50% / cover;
     position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat 50% / cover;
 }
 
-    .Background_base__blur_69 {
-        filter: blur(12px);
-    }
+.Background_base__blur_69 {
+    filter: blur(12px);
+}
 
 .Background_vignette_79 {
-    width: 100%;
-    height: 100%;
-    background: url('R.images.story_mode.gui.maps.icons.common.vignette') no-repeat 50% / 100%;
     position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.story_mode.gui.maps.icons.common.vignette') no-repeat 50% / 100%;
 }
 
 .Background_preloader_7d {
@@ -180,31 +184,56 @@
     align-items: center;
     width: 158rem;
     height: 50rem;
-    border-style: solid;
-    border-image: 6 fill / 6rem stretch;
-    background: no-repeat 50% / 100% 100%;
     cursor: pointer;
 }
 
-    .BattleButton_base__normal_27 {
-        border-image-source: url('R.images.story_mode.gui.maps.icons.common.battle_button.normal');
-    }
+.BattleButton_base__disabled_23 {
+    cursor: default;
+}
 
-    .BattleButton_base__hovered_6a {
-        border-image-source: url('R.images.story_mode.gui.maps.icons.common.battle_button.hover');
-    }
+.BattleButton_bg_bf {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-style: solid;
+    border-image: 6 fill / 6rem stretch;
+    background: no-repeat 50% / 100% 100%;
+}
 
-    .BattleButton_base__pressed_e7 {
-        border-image-source: url('R.images.story_mode.gui.maps.icons.common.battle_button.down');
-    }
+.BattleButton_bg__base_d9 {
+    border-image-source: url('R.images.story_mode.gui.maps.icons.common.battle_button.normal');
+}
 
-    .BattleButton_base__disabled_23 {
-        border-image-source: url('R.images.story_mode.gui.maps.icons.common.battle_button.disabled');
-        cursor: default;
-    }
+.BattleButton_base__disabled_23 .BattleButton_bg__base_d9 {
+    border-image-source: url('R.images.story_mode.gui.maps.icons.common.battle_button.disabled');
+}
+
+.BattleButton_bg__hovered_ed {
+    border-image-source: url('R.images.story_mode.gui.maps.icons.common.battle_button.hover');
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.BattleButton_base__hovered_6a .BattleButton_bg__hovered_ed {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.BattleButton_bg__pressed_76 {
+    border-image-source: url('R.images.story_mode.gui.maps.icons.common.battle_button.down');
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.BattleButton_base__pressed_e7 .BattleButton_bg__pressed_76 {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
 
 .BattleButton_label_29 {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 24rem;
     font-weight: 700;
     line-height: 1.2;
@@ -213,22 +242,12 @@
     filter: drop-shadow(-1rem -1rem 1rem #300);
 }
 
-.BattleButton_label__disabled_b8 {
-        opacity: 0.8;
-    }
-
-.BattleButton_preloadHovered_70 {
-    display: none;
-    background-image: url('R.images.story_mode.gui.maps.icons.common.battle_button.hover');
-}
-
-.BattleButton_preloadDown_e9 {
-    display: none;
-    background-image: url('R.images.story_mode.gui.maps.icons.common.battle_button.down');
+.BattleButton_base__disabled_23 .BattleButton_label_29 {
+    opacity: 0.8;
 }
 
 .Loading_container_76 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
@@ -263,12 +282,16 @@
 
 .Lore_content_63 {
     width: 100%;
-    height: 330rem;
+    height: 310rem;
     position: relative;
 }
 
 .mediaLarge .Lore_content_63 {
-        height: 380rem;
+    height: 374rem;
+}
+
+.mediaExtraLarge .Lore_content_63 {
+    height: 435rem;
 }
 
 .Lore_glow_68 {
@@ -281,76 +304,90 @@
 }
 
 .Lore_glow__top_b7 {
-        top: 0;
-        transform: translate(-50%, -50%);
-    }
+    top: 0;
+    transform: translate(-50%, -50%);
+}
 
 .Lore_glow__bottom_f7 {
-        opacity: 0.6;
-        bottom: 0;
-        transform: translate(-50%, 50%);
-    }
+    opacity: 0.6;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+}
 
 .Lore_line_43 {
-    width: 1688rem;
-    height: 950rem;
+    width: 1600rem;
+    height: 901rem;
     background: url('R.images.story_mode.gui.maps.icons.common.lore.line_extraSmall') no-repeat 50% / cover;
     position: absolute;
-    top: -343rem;
+    top: -326rem;
     left: 50%;
     transform: translate(-50%);
 }
 
+.mediaMedium .Lore_line_43 {
+    top: -324rem;
+}
+
 .mediaLarge .Lore_line_43 {
-        width: 1920rem;
-        height: 1080rem;
-        background-image: url('R.images.story_mode.gui.maps.icons.common.lore.line_large');
-        top: -390rem;
+    width: 1920rem;
+    height: 1080rem;
+    background-image: url('R.images.story_mode.gui.maps.icons.common.lore.line_large');
+    top: -388rem;
+}
+
+.mediaExtraLarge .Lore_line_43 {
+    width: 2224rem;
+    height: 1251rem;
+    background-image: url('R.images.story_mode.gui.maps.icons.common.lore.line_extraLarge');
+    top: -448rem;
 }
 
 .Lore_photos_ba {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    width: 434rem;
-    height: 310rem;
-    margin-left: -235rem;
-    margin-top: 9rem;
+    width: 448rem;
+    height: 353rem;
+    margin-left: -243rem;
+    margin-top: -24rem;
     background: no-repeat 50% / cover;
 }
 
 .mediaSmall .Lore_photos_ba {
-        width: 546rem;
-        height: 385rem;
-        margin-left: -304rem;
-        margin-top: -28rem;
+    width: 558rem;
+    height: 440rem;
+    margin-left: -295rem;
+    margin-top: -69rem;
 }
 
 .mediaMedium .Lore_photos_ba {
-        margin-left: -313rem;
-        margin-top: -24rem;
+    width: 650rem;
+    height: 513rem;
+    margin-left: -355rem;
+    margin-top: -105rem;
 }
 
 .mediaLarge .Lore_photos_ba {
-        width: 700rem;
-        height: 500rem;
-        margin-left: -391rem;
-        margin-top: -65rem;
+    width: 790rem;
+    height: 624rem;
+    margin-left: -434rem;
+    margin-top: -129rem;
 }
 
 .mediaExtraLarge .Lore_photos_ba {
-        margin-left: -392rem;
-        margin-top: -53rem;
+    width: 1000rem;
+    height: 790rem;
+    margin-left: -522rem;
+    margin-top: -171rem;
 }
 
 .Lore_text_6e {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
     width: 430rem;
-    margin-left: 20rem;
-    white-space: pre-wrap;
+    margin-left: 36rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -358,23 +395,40 @@
 }
 
 .mediaSmall .Lore_text_6e {
-        color: #8C8C7E;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
-        width: 560rem;
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    width: 520rem;
+    margin-left: 57rem;
 }
 
-.mediaSmall .Lore_text_6e {
-        width: 580rem;
+.mediaMedium .Lore_text_6e {
+    width: 600rem;
+    margin-left: 56rem;
 }
 
 .mediaLarge .Lore_text_6e {
-        color: #8C8C7E;
-        font-size: 20rem;
-        font-weight: 400;
-        line-height: 1.2;
-        width: 700rem;
+    color: #8c8c7e;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 700rem;
+    margin-left: 68rem;
+}
+
+.mediaExtraLarge .Lore_text_6e {
+    color: #8c8c7e;
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 870rem;
+    margin-left: 84rem;
+}
+
+.Lore_textLine_f8 {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .PrebattleWindowApp_base_52 {
@@ -395,23 +449,33 @@
 }
 
 .mediaMedium .PrebattleWindowApp_header_bb {
-        top: 53rem;
+    top: 48rem;
 }
 
 .mediaLarge .PrebattleWindowApp_header_bb {
-        top: 68rem;
+    top: 68rem;
 }
 
 .PrebattleWindowApp_stage_8e {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 28rem;
     font-weight: 700;
     line-height: 1.1;
+    line-height: 1.2;
     opacity: 0.7;
 }
 
+.mediaExtraLarge .PrebattleWindowApp_stage_8e {
+    color: #e9e2bf;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: -2rem;
+    line-height: 1.2;
+}
+
 .PrebattleWindowApp_title_2e {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 36rem;
     font-weight: 700;
     line-height: 1.1;
@@ -419,44 +483,70 @@
 }
 
 .mediaMedium .PrebattleWindowApp_title_2e {
-        color: #F2F2F7;
-        font-size: 56rem;
-        font-weight: 700;
-        line-height: 1.1;
-        margin-top: 1rem;
+    color: #f2f2f7;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 1rem;
+}
+
+.mediaExtraLarge .PrebattleWindowApp_title_2e {
+    color: #f2f2f7;
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .PrebattleWindowApp_task_83 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 16rem;
+    margin-top: 17rem;
 }
 
 .mediaMedium .PrebattleWindowApp_task_83 {
-        color: #8C8C7E;
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
-        margin-top: 34rem;
+    color: #8c8c7e;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 18rem;
 }
 
-.PrebattleWindowApp_icon_00 {
+.mediaLarge .PrebattleWindowApp_task_83 {
+    margin-top: 17rem;
+}
+
+.mediaExtraLarge .PrebattleWindowApp_task_83 {
+    color: #8c8c7e;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 39rem;
+}
+
+.PrebattleWindowApp_attackIcon_2c {
     width: 58rem;
     height: 58rem;
     margin-top: 4rem;
-    background: url('R.images.story_mode.gui.maps.icons.prebattle.attack') no-repeat 50% / cover;
+    background: url('R.images.story_mode.gui.maps.icons.prebattle.icons.attack') no-repeat 50% / cover;
+}
+
+.PrebattleWindowApp_flagIcon_9d {
+    width: 51rem;
+    height: 52rem;
+    margin-top: 4rem;
+    background: url('R.images.story_mode.gui.maps.icons.prebattle.icons.flag') no-repeat 50% / cover;
 }
 
 .PrebattleWindowApp_battleButton_e0 {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    bottom: 51rem;
+    bottom: 50rem;
 }
 
 .PrebattleWindowApp_continueButton_93 {
@@ -473,19 +563,19 @@
     right: 0;
     bottom: 0;
     left: 0;
-    top: 105rem;
+    top: 100rem;
 }
 
 .mediaMedium .PrebattleWindowApp_lore_b6 {
-        top: 144rem;
+    top: 94rem;
 }
 
 .mediaLarge .PrebattleWindowApp_lore_b6 {
-        top: 84rem;
+    top: 110rem;
 }
 
 .mediaExtraLarge .PrebattleWindowApp_lore_b6 {
-        top: 118rem;
+    top: 118rem;
 }
 
 .PrebattleWindowApp_loading_04 {
@@ -494,4 +584,3 @@
     transform: translate(-50%);
     bottom: 45rem;
 }
-

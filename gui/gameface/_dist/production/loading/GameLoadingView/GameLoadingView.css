@@ -15,8 +15,8 @@
 }
 
 .Background_bg__invisible_8b {
-        display: none;
-    }
+    display: none;
+}
 
 .Background_image_78 {
     display: none;
@@ -33,7 +33,7 @@
     width: 100%;
     height: 100%;
     background-color: #000;
-    opacity: .3;
+    opacity: 0.3;
     position: absolute;
     top: 0;
     left: 0;
@@ -53,34 +53,34 @@
 }
 
 .ContentFooter_title_60 {
-    filter: drop-shadow(0 4rem 4rem rgba(0,0,0, .25));
+    filter: drop-shadow(0 4rem 4rem rgba(0, 0, 0, 0.25));
     margin-bottom: 4rem;
     font-size: 36rem;
     font-weight: 700;
 }
 
 @media (min-width: 1366px) and (min-height: 768px) {
-
-.ContentFooter_title_60 {
+    .ContentFooter_title_60 {
         margin-bottom: 13rem;
-        font-size: 56rem
-}
+        font-size: 56rem;
     }
+}
 
 .ContentFooter_title__only_63 {
-        margin-bottom: 23rem;
-    }
+    margin-bottom: 23rem;
+}
 
 @media (min-width: 1366px) and (min-height: 768px) {
-
-.ContentFooter_title__only_63 {
-            margin-bottom: 37rem;
-            font-size: 36rem
+    .ContentFooter_title__only_63 {
+        margin-bottom: 37rem;
+        font-size: 36rem;
     }
-    }
+}
 
 .ContentFooter_description_cb {
-    filter: drop-shadow(0 4rem 4rem rgba(0,0,0, .25));
+    filter: drop-shadow(0 4rem 4rem rgba(0, 0, 0, 0.25));
+    display: inline;
+    flex-wrap: wrap;
     width: 680rem;
     margin-bottom: 33rem;
     font-size: 15rem;
@@ -88,46 +88,43 @@
 }
 
 @media (min-width: 1366px) and (min-height: 768px) {
-
-.ContentFooter_description_cb {
+    .ContentFooter_description_cb {
         margin-bottom: 60rem;
-        font-size: 20rem
-}
+        font-size: 20rem;
     }
+}
 
 .ContentFooter_progressBar_e3 {
     margin-bottom: 60rem;
 }
 
 @media (min-width: 1366px) and (min-height: 768px) {
-
-.ContentFooter_progressBar_e3 {
-        margin-bottom: 80rem
-}
+    .ContentFooter_progressBar_e3 {
+        margin-bottom: 80rem;
     }
+}
 
 .ContentFooter_progressBar__alwaysOnTop_c5 {
-        z-index: 2;
-    }
+    z-index: 2;
+}
 
 .ContentFooter_statusText_7b {
-    filter: drop-shadow(0 4rem 4rem rgba(0,0,0, .25));
+    filter: drop-shadow(0 4rem 4rem rgba(0, 0, 0, 0.25));
     margin-bottom: 4rem;
     font-size: 14rem;
     font-weight: 800;
 }
 
 @media (min-width: 1366px) and (min-height: 768px) {
-
-.ContentFooter_statusText_7b {
+    .ContentFooter_statusText_7b {
         margin-bottom: 13rem;
-        font-size: 18rem
-}
+        font-size: 18rem;
     }
+}
 
 .ContentFooter_statusText__alwaysOnTop_90 {
-        z-index: 2;
-    }
+    z-index: 2;
+}
 
 .LogoSlide_base_66 {
     width: 100vw;
@@ -158,14 +155,13 @@
 }
 
 @media (min-width: 1366px) and (min-height: 768px) {
-
-.LogoSlide_logo_80 {
+    .LogoSlide_logo_80 {
         width: 800rem;
         height: 400rem;
         margin-top: 0;
-        background: url('img://gui/maps/loading/login_logo_big.png') no-repeat center / cover
-}
+        background: url('img://gui/maps/loading/login_logo_big.png') no-repeat center / cover;
     }
+}
 
 .LogoSlide_awards_62 {
     width: 763rem;
@@ -226,12 +222,11 @@
 }
 
 @media (min-width: 1366px) and (min-height: 768px) {
-
-.Content_contentFooter_f1 {
+    .Content_contentFooter_f1 {
         right: 108rem;
-        left: 108rem
-}
+        left: 108rem;
     }
+}
 
 .Content_fairPlayMessage_23 {
     position: absolute;
@@ -244,13 +239,12 @@
 }
 
 @media (min-width: 1366px) and (min-height: 768px) {
-
-.Content_fairPlayMessage_23 {
+    .Content_fairPlayMessage_23 {
         width: 1920rem;
         height: 1080rem;
-        background: url('img://gui/maps/loading/fair_play_message_big.png') no-repeat center / cover
-}
+        background: url('img://gui/maps/loading/fair_play_message_big.png') no-repeat center / cover;
     }
+}
 
 .Content_vignette_14 {
     width: 100vw;
@@ -260,8 +254,8 @@
 }
 
 .Content_vignette__invisible_9d {
-        display: none;
-    }
+    display: none;
+}
 
 .Content_info_22 {
     display: flex;
@@ -276,41 +270,38 @@
 }
 
 @media (min-width: 1366px) and (min-height: 768px) {
-
-.Content_info_22 {
-        top: calc(50vh + 160rem)
-}
+    .Content_info_22 {
+        top: calc(50vh + 160rem);
     }
+}
 
 .Content_info__default_1a {
-        height: 55rem;
-        color: #8c8c7e;
-        top: auto;
-        bottom: 5rem;
-    }
+    height: 55rem;
+    color: #8c8c7e;
+    top: auto;
+    bottom: 5rem;
+}
 
 @media (min-width: 1366px) and (min-height: 768px) {
-
-.Content_info__default_1a {
-            height: 75rem;
-            top: auto
+    .Content_info__default_1a {
+        height: 75rem;
+        top: auto;
     }
-    }
+}
 
 .Content_info__korea_f1 {
-        font-size: 32rem;
-    }
+    font-size: 32rem;
+}
 
 @media (min-width: 1600px) and (min-height: 900px) {
-
-.Content_info__korea_f1 {
-            font-size: 50rem
+    .Content_info__korea_f1 {
+        font-size: 50rem;
     }
-    }
+}
 
 .Content_info__china_7b {
-        color: #fefeec;
-    }
+    color: #fefeec;
+}
 
 @keyframes Content_fadeIn_e5 {
     from {
@@ -348,16 +339,16 @@
 }
 
 .App_dimmer__visible_38 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 .App_dimmer__fadeOut_3b {
-        animation: App_fadeOut_0e linear;
-    }
+    animation: App_fadeOut_0e linear;
+}
 
 .App_dimmer__fadeIn_c3 {
-        animation: App_fadeIn_a0 linear;
-    }
+    animation: App_fadeIn_a0 linear;
+}
 
 @keyframes App_fadeIn_a0 {
     from {
@@ -378,4 +369,3 @@
         opacity: 0;
     }
 }
-

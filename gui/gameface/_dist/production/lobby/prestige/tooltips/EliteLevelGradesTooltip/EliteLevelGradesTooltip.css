@@ -4,12 +4,12 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.atlases.components.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .FormatText_base_d0 {
     display: flex;
@@ -29,7 +29,7 @@
 }
 
 .App_header_31 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
@@ -37,7 +37,7 @@
 }
 
 .App_body_e5 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -48,8 +48,8 @@
 }
 
 .App_extended_0d .App_progress_85 {
-        margin: 102rem 11rem 0;
-    }
+    margin: 102rem 11rem 0;
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -62,8 +62,8 @@
     position: relative;
 }
 .ProgressBar_base__small_df {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_background_51 {
     width: 100%;
     max-width: 8001px;
@@ -77,13 +77,12 @@
     left: 0;
 }
 .ProgressBar_background__small_46 {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_lineWrapper_6a {
     display: flex;
     flex: 1;
 }
-
 
 .ProgressBarBlink_base_24 {
     width: 60rem;
@@ -98,11 +97,11 @@
     pointer-events: none;
 }
 
-    .ProgressBarBlink_base__small_0f {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+.ProgressBarBlink_base__small_0f {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -114,18 +113,18 @@
     height: 100%;
     background-color: var(--progress-line-base);
     position: relative;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressLineImpose_base__disabled_cc {
-        background-color: var(--progress-line-disabled);
-    }
+    background-color: var(--progress-line-disabled);
+}
 .ProgressLineImpose_base__finished_d4 {
-        background-color: var(--progress-line-finished);
-    }
+    background-color: var(--progress-line-finished);
+}
 .ProgressLineImpose_base__withoutBounce_56 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressLineImpose_pattern_1c {
     max-width: 8001px;
     background-image: var(--progress-pattern-base);
@@ -139,19 +138,19 @@
     left: 1rem;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-disabled);
-        left: 0;
-    }
+    background-image: var(--progress-pattern-disabled);
+    left: 0;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-finished);
-    }
+    background-image: var(--progress-pattern-finished);
+}
 .ProgressLineImpose_gradient_35 {
     max-width: 8001px;
-    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75));
     mix-blend-mode: overlay;
     position: absolute;
     top: 1rem;
@@ -160,15 +159,15 @@
     left: 0;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
-        display: none;
-    }
+    display: none;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
-        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
-    }
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5));
+}
 .ProgressLineImpose_glow_a5 {
     width: 60rem;
     max-width: 8001px;
@@ -183,17 +182,17 @@
     pointer-events: none;
 }
 .ProgressLineImpose_glow__left_d8 {
-        left: 1rem;
-    }
+    left: 1rem;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
-    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
-        display: none;
-    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+    display: none;
+}
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -215,7 +214,7 @@
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1), cubic-bezier(0.21, 0.61, 0.35, 1);
     transition-property: width, transform;
 }
 
@@ -229,12 +228,12 @@
     height: 100%;
     position: absolute;
     top: 0;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressBarDeltaGrow_glow_68 {
     width: 0;
     max-width: 8001px;
@@ -244,12 +243,12 @@
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 
 .PrestigeProgressLabel_base_85 {
     display: flex;
@@ -263,57 +262,57 @@
     background: no-repeat center / contain;
 }
 .PrestigeProgressLabel_base__extraSmall_06 .PrestigeProgressLabel_letter_e2 {
-        width: 6rem;
-        height: 12rem;
-    }
+    width: 6rem;
+    height: 12rem;
+}
 .PrestigeProgressLabel_base__extraSmall_06 .PrestigeProgressLabel_letter__s1_65 {
-            width: 5rem;
-        }
+    width: 5rem;
+}
 .PrestigeProgressLabel_base__small_72 .PrestigeProgressLabel_letter_e2 {
-        width: 9rem;
-        height: 19rem;
-    }
+    width: 9rem;
+    height: 19rem;
+}
 .PrestigeProgressLabel_base__small_72 .PrestigeProgressLabel_letter__s1_65 {
-            width: 8rem;
-        }
+    width: 8rem;
+}
 .PrestigeProgressLabel_base__small_72 .PrestigeProgressLabel_letter__s4_f4 {
-            width: 10rem;
-        }
+    width: 10rem;
+}
 .PrestigeProgressLabel_base__smallExtended_c9 .PrestigeProgressLabel_letter_e2 {
-        width: 16rem;
-        height: 33rem;
-    }
+    width: 16rem;
+    height: 33rem;
+}
 .PrestigeProgressLabel_base__smallExtended_c9 .PrestigeProgressLabel_letter__s1_65 {
-            width: 12rem;
-        }
+    width: 12rem;
+}
 .PrestigeProgressLabel_base__medium_03 .PrestigeProgressLabel_letter_e2 {
-        width: 23rem;
-        height: 48rem;
-    }
+    width: 23rem;
+    height: 48rem;
+}
 .PrestigeProgressLabel_base__medium_03 .PrestigeProgressLabel_letter__s1_65 {
-            width: 17rem;
-        }
+    width: 17rem;
+}
 .PrestigeProgressLabel_base__mediumExtended_9f .PrestigeProgressLabel_letter_e2 {
-        width: 39rem;
-        height: 88rem;
-    }
+    width: 39rem;
+    height: 88rem;
+}
 .PrestigeProgressLabel_base__mediumExtended_9f .PrestigeProgressLabel_letter__s1_65 {
-            width: 32rem;
-        }
+    width: 32rem;
+}
 .PrestigeProgressLabel_base__large_d2 .PrestigeProgressLabel_letter_e2 {
-        width: 53rem;
-        height: 120rem;
-    }
+    width: 53rem;
+    height: 120rem;
+}
 .PrestigeProgressLabel_base__large_d2 .PrestigeProgressLabel_letter__s1_65 {
-            width: 43rem;
-        }
+    width: 43rem;
+}
 .PrestigeProgressLabel_base__extraLarge_34 .PrestigeProgressLabel_letter_e2 {
-        width: 77rem;
-        height: 176rem;
-    }
+    width: 77rem;
+    height: 176rem;
+}
 .PrestigeProgressLabel_base__extraLarge_34 .PrestigeProgressLabel_letter__s1_65 {
-            width: 62rem;
-        }
+    width: 62rem;
+}
 
 .PrestigeProgressSymbol_base_f8 {
     display: flex;
@@ -323,72 +322,72 @@
     position: relative;
 }
 
-    .PrestigeProgressSymbol_base__extraSmall_05 {
-        width: 48rem;
-        height: 48rem;
-    }
+.PrestigeProgressSymbol_base__extraSmall_05 {
+    width: 48rem;
+    height: 48rem;
+}
 
-    .PrestigeProgressSymbol_base__small_1c {
-        width: 72rem;
-        height: 72rem;
-    }
+.PrestigeProgressSymbol_base__small_1c {
+    width: 72rem;
+    height: 72rem;
+}
 
-    .PrestigeProgressSymbol_base__smallExtended_e0 {
-        width: 115rem;
-        height: 84rem;
-    }
+.PrestigeProgressSymbol_base__smallExtended_e0 {
+    width: 115rem;
+    height: 84rem;
+}
 
-    .PrestigeProgressSymbol_base__medium_24 {
-        width: 170rem;
-        height: 124rem;
-    }
+.PrestigeProgressSymbol_base__medium_24 {
+    width: 170rem;
+    height: 124rem;
+}
 
-    .PrestigeProgressSymbol_base__mediumExtended_11 {
-        width: 296rem;
-        height: 222rem;
-    }
+.PrestigeProgressSymbol_base__mediumExtended_11 {
+    width: 296rem;
+    height: 222rem;
+}
 
-    .PrestigeProgressSymbol_base__large_3c {
-        width: 400rem;
-        height: 300rem;
-    }
+.PrestigeProgressSymbol_base__large_3c {
+    width: 400rem;
+    height: 300rem;
+}
 
-    .PrestigeProgressSymbol_base__extraLarge_a7 {
-        width: 600rem;
-        height: 450rem;
-    }
+.PrestigeProgressSymbol_base__extraLarge_a7 {
+    width: 600rem;
+    height: 450rem;
+}
 .PrestigeProgressSymbol_icon_af {
     background: no-repeat center / contain;
     position: absolute;
 }
 .PrestigeProgressSymbol_base__extraSmall_05 .PrestigeProgressSymbol_icon_af {
-        width: 48rem;
-        height: 48rem;
-    }
+    width: 48rem;
+    height: 48rem;
+}
 .PrestigeProgressSymbol_base__small_1c .PrestigeProgressSymbol_icon_af {
-        width: 72rem;
-        height: 72rem;
-    }
+    width: 72rem;
+    height: 72rem;
+}
 .PrestigeProgressSymbol_base__smallExtended_e0 .PrestigeProgressSymbol_icon_af {
-        width: 115rem;
-        height: 84rem;
-    }
+    width: 115rem;
+    height: 84rem;
+}
 .PrestigeProgressSymbol_base__medium_24 .PrestigeProgressSymbol_icon_af {
-        width: 170rem;
-        height: 124rem;
-    }
+    width: 170rem;
+    height: 124rem;
+}
 .PrestigeProgressSymbol_base__mediumExtended_11 .PrestigeProgressSymbol_icon_af {
-        width: 296rem;
-        height: 222rem;
-    }
+    width: 296rem;
+    height: 222rem;
+}
 .PrestigeProgressSymbol_base__large_3c .PrestigeProgressSymbol_icon_af {
-        width: 400rem;
-        height: 300rem;
-    }
+    width: 400rem;
+    height: 300rem;
+}
 .PrestigeProgressSymbol_base__extraLarge_a7 .PrestigeProgressSymbol_icon_af {
-        width: 600rem;
-        height: 450rem;
-    }
+    width: 600rem;
+    height: 450rem;
+}
 
 .Progress_base_a7 {
     padding: 0 16rem 38rem;
@@ -406,13 +405,13 @@
 }
 
 .Progress_reached_a0 .Progress_emblem_6b {
-        opacity: .3;
-    }
+    opacity: 0.3;
+}
 
 .Progress_lastReached_6a .Progress_emblem_6b {
-        opacity: 1;
-        top: -9rem;
-    }
+    opacity: 1;
+    top: -9rem;
+}
 
 .Progress_glow_c9 {
     width: 179rem;
@@ -427,7 +426,7 @@
 }
 
 .Progress_level_a3 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -436,18 +435,17 @@
 }
 
 .Progress_reached_a0 .Progress_level_a3 {
-        color: #FEAB34;
-    }
+    color: #feab34;
+}
 
 .Progress_notch_71 {
     width: 1rem;
     height: 6rem;
-    background-color: #E9E2BF;
+    background-color: #e9e2bf;
     position: absolute;
     top: -2rem;
 }
 
 .Progress_reached_a0 .Progress_notch_71 {
-        background-color: #fec94d;
-    }
-
+    background-color: #fec94d;
+}

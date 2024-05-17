@@ -7,9 +7,9 @@
     cursor: pointer;
 }
 
-    .TextButton_base__right_39 {
-        flex-direction: row-reverse;
-    }
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
 .TextButton_icon_17 {
     width: 32rem;
     height: 32rem;
@@ -17,22 +17,22 @@
     position: relative;
 }
 .TextButton_icon__back_43,
-    .TextButton_icon__forward_59 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.back');
-        transform: translateY(1rem);
-    }
 .TextButton_icon__forward_59 {
-        transform: rotate(180deg) translateY(1rem);
-    }
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
 .TextButton_icon__close_53 {
-        margin: -1rem 0;
-        background-image: url('R.images.gui.maps.icons.components.text_button.close');
-    }
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
 .TextButton_icon__info_33 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.info');
-    }
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
 .TextButton_glow_a4 {
     width: 100%;
     height: 100%;
@@ -40,72 +40,82 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    transition: opacity .16s;
+    transition: opacity 0.16s;
 }
 .TextButton_icon__back_43 .TextButton_glow_a4,
-    .TextButton_icon__forward_59 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
-    }
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
 .TextButton_icon__close_53 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
 .TextButton_icon__info_33 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
 .TextButton_base_b6:hover .TextButton_glow_a4 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .TextButton_base_b6:active .TextButton_glow_a4 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .TextButton_caption_82 {
     position: relative;
-    transition: color .16s, text-shadow .16s;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
 }
 .TextButton_caption__back_b9,
-    .TextButton_caption__forward_4e,
-    .TextButton_caption__close_36 {
-        color: #FFDD99;
-        text-shadow: 0 0 10rem rgba(255,42,0, 1),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4);
-    }
-.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
-            color: #fffa9f;
-        }
-.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
-            color: #FFDD99;
-        }
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
 .TextButton_caption__info_23 {
-        padding: 0 5rem;
-        color: #CCFFFF;
-        text-shadow: 0 0 12rem rgba(31,68,255, .8),
-            0 0 8rem #00eaff;
-    }
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
 .TextButton_base_b6:hover .TextButton_caption__info_23 {
-            color: #e3ffff;
-            text-shadow: 0 0 12rem rgba(31,68,255, .8),
-                0 0 12rem rgba(0,234,255, 1),
-                0 0 8rem #00eaff;
-        }
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
 .TextButton_base_b6:active .TextButton_caption__info_23 {
-            color: #CCFFFF;
-            text-shadow: 0 0 12rem rgba(31,68,255, .6),
-                0 0 8rem #00eaff;
-        }
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
 .TextButton_goto_e7 {
     color: #7c7c6c;
 }
 .TextButton_base__left_ff .TextButton_goto_e7 {
-        margin-left: 8rem;
-    }
+    margin-left: 8rem;
+}
 .TextButton_base__right_39 .TextButton_goto_e7 {
-        margin-right: 8rem;
-    }
+    margin-right: 8rem;
+}
 .TextButton_shine_e2 {
     width: 90rem;
     height: 40rem;
@@ -113,22 +123,22 @@
     opacity: 0;
     position: absolute;
     top: -4rem;
-    transition: opacity .16s;
+    transition: opacity 0.16s;
     pointer-events: none;
 }
 .TextButton_base__left_ff .TextButton_shine_e2 {
-        left: -4rem;
-    }
+    left: -4rem;
+}
 .TextButton_base__right_39 .TextButton_shine_e2 {
-        right: -4rem;
-        transform: rotate(180deg);
-    }
+    right: -4rem;
+    transform: rotate(180deg);
+}
 .TextButton_base_b6:hover .TextButton_shine_e2 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .TextButton_base_b6:active .TextButton_shine_e2 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 /* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
@@ -136,8 +146,8 @@
     padding-top: 54rem;
 }
 .mediaMedium .page_heading_05 {
-        padding-top: 63rem;
-        padding-bottom: 9rem;
+    padding-top: 63rem;
+    padding-bottom: 9rem;
 }
 .page_close_a4 {
     position: absolute;
@@ -145,10 +155,10 @@
     right: 29rem;
 }
 .mediaMedium .page_close_a4 {
-        top: 63rem;
+    top: 63rem;
 }
 .mediaLarge .page_close_a4 {
-        right: 40rem;
+    right: 40rem;
 }
 
 .App_base_96 {
@@ -183,7 +193,7 @@
 }
 
 .Spinner_caption_cf {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 12rem;
     text-align: center;
     white-space: pre;
@@ -203,7 +213,7 @@
     position: absolute;
     top: -4rem;
     left: 0;
-    animation: Spinner_spin_f5 .28s linear infinite;
+    animation: Spinner_spin_f5 0.28s linear infinite;
 }
 
 .Spinner_logo_bf {
@@ -231,67 +241,72 @@
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.6);
     position: relative;
     cursor: pointer;
 }
 
-    .CButton_base__main_42,
-    .CButton_base__primary_7f,
-    .CButton_base__primaryGreen_6f,
-    .CButton_base__primaryRed_ec,
-    .CButton_base__secondary_50 {
-        background-size: 100% 100%;
-    }
+.CButton_base__main_42,
+.CButton_base__primary_7f,
+.CButton_base__primaryGreen_6f,
+.CButton_base__primaryRed_ec,
+.CButton_base__secondary_50 {
+    background-size: 100% 100%;
+}
 
-    .CButton_base__main_42 {
-        background-image: url('R.images.gui.maps.icons.components.button.back_main');
-    }
+.CButton_base__main_42 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_main');
+}
 
-    .CButton_base__primary_7f {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
-    }
+.CButton_base__primary_7f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+}
 
-    .CButton_base__primaryGreen_6f {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
-    }
+.CButton_base__primaryGreen_6f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
 
-    .CButton_base__primaryRed_ec {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
-    }
+.CButton_base__primaryRed_ec {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
 
-    .CButton_base__secondary_50 {
-        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
-    }
+.CButton_base__secondary_50 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
 
-    .CButton_base__ghost_ed {
-        border-radius: 3rem;
-        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
-            0 0 0 1rem rgba(255,255,255, .15) inset;
-        background-color: rgba(0,0,0, .15);
-    }
+.CButton_base__ghost_ed {
+    border-radius: 3rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 0 1rem rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
 
-    .CButton_base__extraSmall_27 {
-        min-height: 17rem;
-        padding: 0 16rem;
-    }
+.CButton_base__extraSmall_27 {
+    min-height: 17rem;
+    padding: 0 16rem;
+}
 
-    .CButton_base__small_df,
-    .CButton_base__medium_74 {
-        padding: 0 20rem;
-    }
+.CButton_base__small_df,
+.CButton_base__medium_74 {
+    padding: 0 20rem;
+}
 
-    .CButton_base__small_df {
-        min-height: 18rem;
-    }
+.CButton_base__small_df {
+    min-height: 18rem;
+}
 
-    .CButton_base__medium_74 {
-        min-height: 32rem;
-    }
+.CButton_base__medium_74 {
+    min-height: 32rem;
+}
 
-    .CButton_base__disabled_d9 {
-        cursor: default;
-    }
+.CButton_base__large_5c {
+    min-height: 48rem;
+}
+
+.CButton_base__disabled_d9 {
+    cursor: default;
+}
 /* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
 The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
 between 'border-image-width' and 'fill'.
@@ -307,20 +322,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
 }
 .CButton_base__main_42 .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+}
 .CButton_base__primary_7f .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+}
 .CButton_base__primaryGreen_6f .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
 .CButton_base__primaryRed_ec .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
 .CButton_base__secondary_50 .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
 .CButton_texture_fe {
     background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
     background-size: 155rem 31rem;
@@ -337,12 +352,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 0;
     bottom: 0;
     left: 0;
-    transition: box-shadow .16s ease-in-out;
+    transition: box-shadow 0.16s ease-in-out;
 }
 .CButton_base__focus_83 .CButton_state_11 {
-        border-radius: 2rem;
-        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
-    }
+    border-radius: 2rem;
+    box-shadow: inset 0 0 2rem 1rem rgba(255, 85, 0, 0.2);
+}
 .CButton_stateHighlightHover_ff,
 .CButton_stateHighlightActive_35,
 .CButton_stateDisabled_54 {
@@ -353,40 +368,47 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     bottom: 0;
     left: 0;
 }
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-        transition: opacity .16s ease-in-out;
-    }
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
+.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
+.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+    transition: opacity 0.16s ease-in-out;
+}
 .CButton_stateHighlightHover_ff {
-    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+    background-image: linear-gradient(
+        180deg,
+        rgba(252, 248, 235, 0.25) 0%,
+        rgba(252, 248, 235, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
 }
 .CButton_base_40:hover .CButton_stateHighlightHover_ff {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_base_40:active .CButton_stateHighlightHover_ff {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
-        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
-        background-color: rgba(8,6,0, .18);
-        background-image: none;
-    }
+    box-shadow: 0 15rem 12rem 0 rgba(242, 242, 230, 0.11) inset;
+    background-color: rgba(8, 6, 0, 0.18);
+    background-image: none;
+}
 .CButton_stateHighlightActive_35 {
-    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
 }
 .CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_stateDisabled_54 {
-    background-color: rgba(0,0,0, .25);
+    background-color: rgba(0, 0, 0, 0.25);
     background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
     background-size: 15rem;
 }
 .CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_content_cc {
     display: flex;
     align-items: center;
@@ -394,39 +416,42 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 700;
     line-height: 1.2;
     text-shadow: 0 -1rem 1rem #000;
-    letter-spacing: .03em;
+    letter-spacing: 0.03em;
     transform: translateY(-1rem);
 }
-.CButton_content_cc[lang=ja],
-    .CButton_content_cc[lang=ko],
-    .CButton_content_cc[lang=zh_tw],
-    .CButton_content_cc[lang=zh_sg],
-    .CButton_content_cc[lang=zh_cn],
-    .CButton_content_cc[lang=th] {
-        font-weight: 400;
-    }
+.CButton_content_cc[lang='ja'],
+.CButton_content_cc[lang='ko'],
+.CButton_content_cc[lang='zh_tw'],
+.CButton_content_cc[lang='zh_sg'],
+.CButton_content_cc[lang='zh_cn'],
+.CButton_content_cc[lang='th'] {
+    font-weight: 400;
+}
 .CButton_base__main_42 .CButton_content_cc,
-    .CButton_base__primaryRed_ec .CButton_content_cc {
-        text-shadow: 0 -1rem 1rem #600;
-    }
+.CButton_base__primaryRed_ec .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #600;
+}
 .CButton_base__secondary_50 .CButton_content_cc {
-        color: rgba(254,254,236, .75);
-    }
+    color: rgba(254, 254, 236, 0.75);
+}
 .CButton_base__primaryGreen_6f .CButton_content_cc {
-        text-shadow: 0 -1rem 1rem #1c2502;
-    }
+    text-shadow: 0 -1rem 1rem #1c2502;
+}
 .CButton_base__extraSmall_27 .CButton_content_cc {
-        font-size: 12rem;
-    }
+    font-size: 12rem;
+}
 .CButton_base__small_df .CButton_content_cc {
-        font-size: 14rem;
-    }
+    font-size: 14rem;
+}
 .CButton_base__medium_74 .CButton_content_cc {
-        font-size: 15rem;
-    }
+    font-size: 15rem;
+}
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
+}
 .CButton_base__disabled_d9 .CButton_content_cc {
-        opacity: .6;
-    }
+    opacity: 0.6;
+}
 
 .HorizontalBar_base_49 {
     display: flex;
@@ -435,33 +460,34 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
-    .HorizontalBar_base__nonActive_82 {
-        visibility: hidden;
-    }
+.HorizontalBar_base__nonActive_82 {
+    visibility: hidden;
+}
 
-    .HorizontalBar_base_49 .disable,
-    .HorizontalBar_base_49 .disable:hover {
-        opacity: .3;
-        cursor: default;
-    }
+.HorizontalBar_base_49 .disable,
+.HorizontalBar_base_49 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
 
 .HorizontalBar_leftButton_5f,
 .HorizontalBar_rightButton_03 {
     width: 13rem;
     height: 13rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
     background: no-repeat center / 7rem 5rem;
-    opacity: .5;
+    opacity: 0.5;
     z-index: 1;
     transform: rotate(-90deg);
     transition: opacity 130ms linear;
     cursor: pointer;
 }
 
-.HorizontalBar_leftButton_5f:hover, .HorizontalBar_rightButton_03:hover {
-        opacity: 1;
-    }
+.HorizontalBar_leftButton_5f:hover,
+.HorizontalBar_rightButton_03:hover {
+    opacity: 1;
+}
 
 .HorizontalBar_leftButton_5f {
     background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
@@ -485,9 +511,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     min-width: 20rem;
     height: 13rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
-    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem 7rem;
-    opacity: .5;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem
+        7rem;
+    opacity: 0.5;
     position: absolute;
     z-index: 1;
     transition: opacity 130ms linear;
@@ -495,8 +522,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .HorizontalBar_thumb_fd:hover {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 .HorizontalBar_rail_32 {
     height: 0;
@@ -508,9 +535,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .HorizontalBar_rail_32:hover {
-        opacity: .7;
-    }
-
+    opacity: 0.7;
+}
 
 .HorizontalScroll_base_29 {
     width: 100%;
@@ -535,32 +561,33 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
-    .VerticalBar_base__nonActive_42 {
-        visibility: hidden;
-    }
+.VerticalBar_base__nonActive_42 {
+    visibility: hidden;
+}
 
-    .VerticalBar_base_f3 .disable,
-    .VerticalBar_base_f3 .disable:hover {
-        opacity: .3;
-        cursor: default;
-    }
+.VerticalBar_base_f3 .disable,
+.VerticalBar_base_f3 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
 
 .VerticalBar_topButton_d7,
 .VerticalBar_bottomButton_06 {
     width: 13rem;
     height: 13rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
     background: no-repeat center / 7rem 5rem;
-    opacity: .5;
+    opacity: 0.5;
     z-index: 1;
     transition: opacity 130ms linear;
     cursor: pointer;
 }
 
-.VerticalBar_topButton_d7:hover, .VerticalBar_bottomButton_06:hover {
-        opacity: 1;
-    }
+.VerticalBar_topButton_d7:hover,
+.VerticalBar_bottomButton_06:hover {
+    opacity: 1;
+}
 
 .VerticalBar_topButton_d7 {
     background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
@@ -584,9 +611,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 100%;
     min-height: 20rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
     background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
-    opacity: .5;
+    opacity: 0.5;
     position: absolute;
     z-index: 1;
     transition: opacity 130ms linear;
@@ -594,8 +621,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .VerticalBar_thumb_32:hover {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 .VerticalBar_rail_43 {
     width: 0;
@@ -610,9 +637,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .VerticalBar_rail_43:hover {
-        opacity: .7;
-    }
-
+    opacity: 0.7;
+}
 
 .VerticalScroll_content_cb {
     height: 100%;
@@ -635,19 +661,19 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .grid_container_c5 {
     width: 704rem;
 }
-    .mediaSmall .grid_container_c5 {
-        width: 1060rem;
+.mediaSmall .grid_container_c5 {
+    width: 1060rem;
 }
-    .mediaLarge .grid_container_c5 {
-        width: 1440rem;
+.mediaLarge .grid_container_c5 {
+    width: 1440rem;
 }
 .grid_header_56 {
     display: flex;
     align-items: center;
 }
 .grid_header_56 > *:last-child {
-        margin-left: 20rem;
-    }
+    margin-left: 20rem;
+}
 .grid_row_3d {
     display: flex;
 }
@@ -655,10 +681,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex: 1 1 100%;
 }
 .grid_cell_62 + .grid_cell_62 {
-        margin-left: 20rem;
-    }
+    margin-left: 20rem;
+}
 .mediaSmall .grid_cell_62 + .grid_cell_62 {
-            margin-left: 32rem;
+    margin-left: 32rem;
 }
 
 .FormatText_base_d0 {
@@ -671,23 +697,23 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .FormatTextWithColorTags_whiteReal_8a {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .FormatTextWithColorTags_white_16 {
-    color: #F2F2F7;
+    color: #f2f2f7;
 }
 
 .FormatTextWithColorTags_whiteOrange_18 {
-    color: #FEFEEC;
+    color: #fefeec;
 }
 
 .FormatTextWithColorTags_whiteSpanish_10 {
-    color: #E9E2BF;
+    color: #e9e2bf;
 }
 
 .FormatTextWithColorTags_par_ca {
-    color: #8C8C7E;
+    color: #8c8c7e;
 }
 
 .FormatTextWithColorTags_parSecondary_8d {
@@ -695,39 +721,39 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .FormatTextWithColorTags_parTertiary_a3 {
-    color: #37362E;
+    color: #37362e;
 }
 
 .FormatTextWithColorTags_red_60 {
-    color: #FF2717;
+    color: #ff2717;
 }
 
 .FormatTextWithColorTags_redDark_03 {
-    color: #B70000;
+    color: #b70000;
 }
 
 .FormatTextWithColorTags_yellow_ad {
-    color: #FEAB34;
+    color: #feab34;
 }
 
 .FormatTextWithColorTags_orange_e4 {
-    color: #EE7000;
+    color: #ee7000;
 }
 
 .FormatTextWithColorTags_cream_cd {
-    color: #FFDD99;
+    color: #ffdd99;
 }
 
 .FormatTextWithColorTags_brown_c8 {
-    color: #CBAC77;
+    color: #cbac77;
 }
 
 .FormatTextWithColorTags_greenBright_f0 {
-    color: #80D43A;
+    color: #80d43a;
 }
 
 .FormatTextWithColorTags_green_c5 {
-    color: #7AB300;
+    color: #7ab300;
 }
 
 .FormatTextWithColorTags_greenDark_af {
@@ -735,34 +761,34 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .FormatTextWithColorTags_blueBooster_ac {
-    color: #CCFFFF;
+    color: #ccffff;
 }
 
 .FormatTextWithColorTags_blueTeamkiller_6f {
-    color: #09E2FF;
+    color: #09e2ff;
 }
 
 .FormatTextWithColorTags_cred_4e {
-    color: #CED9D9;
+    color: #ced9d9;
 }
 
 .FormatTextWithColorTags_gold_90 {
-    color: #FFC363;
+    color: #ffc363;
 }
 
 .FormatTextWithColorTags_bond_71 {
-    color: #C9C9B6;
+    color: #c9c9b6;
 }
 
 .FormatTextWithColorTags_prom_dd {
-    color: #A29B70;
+    color: #a29b70;
 }
 
 /* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
 
 .FormatTextWithColorTags_parNoWidth_5a {
     width: 0;
-    color: #8C8C7E;
+    color: #8c8c7e;
 }
 
 .ActiveSeasonState_base_55 {
@@ -779,100 +805,100 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaLarge .ActiveSeasonState_calendarIcon_df {
-        width: 14rem;
-        height: 16rem;
-        background-image: url('R.images.gui.maps.icons.comp7.icons.calendar_14x16');
+    width: 14rem;
+    height: 16rem;
+    background-image: url('R.images.gui.maps.icons.comp7.icons.calendar_14x16');
 }
 
 .ActiveSeasonState_divider_5b {
     width: 2rem;
     height: 17rem;
     margin: 2rem 12rem 0;
-    background-color: rgba(255,255,255, .5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .ScheduleSubheading_base_f7 {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
     text-align: center;
 }
-    .mediaLarge .ScheduleSubheading_base_f7 {
-        color: #FFFFFF;
-        font-size: 20rem;
-        font-weight: 400;
-        line-height: 1.2;
+.mediaLarge .ScheduleSubheading_base_f7 {
+    color: #ffffff;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
 }
 
 .typography_h1_e1 {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 56rem;
     font-weight: 700;
     line-height: 1.1;
 }
-    .mediaLarge .typography_h1_e1 {
-        color: #FFFFFF;
-        font-size: 73rem;
-        font-weight: 700;
-        line-height: 1.1;
+.mediaLarge .typography_h1_e1 {
+    color: #ffffff;
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .typography_h2_18 {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
 .mediaSmall .typography_h2_18 {
-        color: #FFFFFF;
-        font-size: 22rem;
-        font-weight: 700;
-        line-height: 1.2;
+    color: #ffffff;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .mediaLarge .typography_h2_18 {
-        color: #FFFFFF;
-        font-size: 28rem;
-        font-weight: 700;
-        line-height: 1.1;
+    color: #ffffff;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .typography_h3_79 {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
 .mediaSmall .typography_h3_79 {
-        color: #FFFFFF;
-        font-size: 22rem;
-        font-weight: 700;
-        line-height: 1.2;
+    color: #ffffff;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .mediaLarge .typography_h3_79 {
-        color: #FFFFFF;
-        font-size: 28rem;
-        font-weight: 700;
-        line-height: 1.1;
+    color: #ffffff;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .typography_paragraphText_f5 {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
-    opacity: .6;
+    opacity: 0.6;
 }
 
 .mediaMedium .typography_paragraphText_f5 {
-        color: #FFFFFF;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
+    color: #ffffff;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
 }
 
 .Banner_base_a0 {
@@ -881,18 +907,18 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     align-items: flex-start;
     padding: 144rem 0 80rem;
 }
-    .mediaSmall .Banner_base_a0 {
-        padding: 189rem 0 90rem;
+.mediaSmall .Banner_base_a0 {
+    padding: 189rem 0 90rem;
 }
-    .mediaMedium .Banner_base_a0 {
-        padding-top: 171rem;
-        padding-bottom: 110rem;
+.mediaMedium .Banner_base_a0 {
+    padding-top: 171rem;
+    padding-bottom: 110rem;
 }
-    .mediaLarge .Banner_base_a0 {
-        padding: 190rem 0 170rem;
+.mediaLarge .Banner_base_a0 {
+    padding: 190rem 0 170rem;
 }
-    .mediaExtraLarge .Banner_base_a0 {
-        padding: 320rem 0 180rem;
+.mediaExtraLarge .Banner_base_a0 {
+    padding: 320rem 0 180rem;
 }
 
 .Banner_h3_80 {
@@ -900,10 +926,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaSmall .Banner_h3_80 {
-        color: #FFFFFF;
-        font-size: 24rem;
-        font-weight: 700;
-        line-height: 1.2;
+    color: #ffffff;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .Banner_date_db {
@@ -911,26 +937,26 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaSmall .Banner_date_db {
-        margin: 32rem 0 71rem;
+    margin: 32rem 0 71rem;
 }
 
 .WatchVideo_base_98 {
     display: flex;
     align-items: center;
     padding: 4rem 20rem 4rem 11rem;
-    border: 1rem solid rgba(255, 255, 255, .1);
+    border: 1rem solid rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
     background: rgba(0, 0, 0, 0.15);
     position: relative;
     cursor: pointer;
 }
 
-    .WatchVideo_base_98:hover .WatchVideo_backdrop_40 {
-        opacity: 1;
-    }
+.WatchVideo_base_98:hover .WatchVideo_backdrop_40 {
+    opacity: 1;
+}
 
 .WatchVideo_backdrop_40 {
-    background: rgba(255, 255, 255, .03);
+    background: rgba(255, 255, 255, 0.03);
     opacity: 0;
     position: absolute;
     top: 0;
@@ -946,67 +972,67 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .WatchVideo_text_92 {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
 }
 
 .mediaSmall .WatchVideo_text_92 {
-        color: #FFFFFF;
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
+    color: #ffffff;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .WatchVideo_videoButton_57 + .WatchVideo_text_92 {
-        margin-left: 7rem;
-    }
+    margin-left: 7rem;
+}
 
 .Introduction_row_38 + .Introduction_row_38 {
-        margin-top: 20rem;
-    }
-        .mediaSmall .Introduction_row_38 + .Introduction_row_38 {
-            margin-top: 32rem;
+    margin-top: 20rem;
+}
+.mediaSmall .Introduction_row_38 + .Introduction_row_38 {
+    margin-top: 32rem;
 }
 .Introduction_h2_a8 {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 22rem;
     line-height: 1;
 }
 .mediaSmall .Introduction_h2_a8 {
-        font-size: 36rem;
+    font-size: 36rem;
 }
 .mediaLarge .Introduction_h2_a8 {
-        font-size: 48rem;
+    font-size: 48rem;
 }
 .Introduction_tag_b9 {
     transform: translateY(1rem);
 }
 .mediaSmall .Introduction_tag_b9 {
-        transform: translateY(5rem);
+    transform: translateY(5rem);
 }
 .mediaLarge .Introduction_tag_b9 {
-        transform: translateY(7rem);
+    transform: translateY(7rem);
 }
 .Introduction_seasonText_ff {
     margin-top: 16rem;
 }
 .mediaLarge .Introduction_seasonText_ff {
-        margin-top: 24rem;
+    margin-top: 24rem;
 }
 .Introduction_introContainer_02 {
     width: 100%;
     height: 240rem;
-    background-color: rgba(16,20,35, .4);
+    background-color: rgba(16, 20, 35, 0.4);
     position: relative;
     z-index: 0;
 }
 .mediaSmall .Introduction_introContainer_02 {
-        height: 316rem;
+    height: 316rem;
 }
 .mediaLarge .Introduction_introContainer_02 {
-        height: 430rem;
+    height: 430rem;
 }
 .Introduction_introBackgroundWrapper_60 {
     width: 704rem;
@@ -1016,12 +1042,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     bottom: 0;
 }
 .mediaSmall .Introduction_introBackgroundWrapper_60 {
-        width: 1060rem;
-        height: 457rem;
+    width: 1060rem;
+    height: 457rem;
 }
 .mediaLarge .Introduction_introBackgroundWrapper_60 {
-        width: 1440rem;
-        height: 621rem;
+    width: 1440rem;
+    height: 621rem;
 }
 .Introduction_introBackground_a7 {
     width: 803rem;
@@ -1035,10 +1061,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     pointer-events: none;
 }
 .mediaSmall .Introduction_introBackground_a7 {
-        width: 100%;
-        height: 100%;
-        left: auto;
-        transform: translateX(0);
+    width: 100%;
+    height: 100%;
+    left: auto;
+    transform: translateX(0);
 }
 .Introduction_introDescription_5e {
     display: flex;
@@ -1053,8 +1079,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 50%;
 }
 .mediaSmall .Introduction_introDescription_5e {
-        padding-left: 16rem;
-        padding-right: 32rem;
+    padding-left: 16rem;
+    padding-right: 32rem;
 }
 
 /* delay should be set always separately only for appearance effect, not hiding */
@@ -1074,7 +1100,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 
     100% {
-        opacity: .75;
+        opacity: 0.75;
     }
 }
 @keyframes Main_fadeInHalf_e2 {
@@ -1083,7 +1109,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 
     100% {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 @keyframes Main_fadeOut_b9 {
@@ -1133,7 +1159,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 
     100% {
-        opacity: .2;
+        opacity: 0.2;
         transform: translateY(0);
     }
 }
@@ -1170,7 +1196,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 
     100% {
-        opacity: .8;
+        opacity: 0.8;
     }
 }
 @keyframes Main_blink_fa {
@@ -1179,7 +1205,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 
     50% {
-        opacity: .2;
+        opacity: 0.2;
     }
 
     100% {
@@ -1206,10 +1232,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     mask-image: linear-gradient(to bottom, transparent, #000 10%, #000 90%, transparent);
 }
 .mediaMedium .Main_areaBaseWrapper_81 {
-        mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent);
 }
 .mediaExtraLarge .Main_areaBaseWrapper_81 {
-        mask-image: linear-gradient(to bottom, transparent, #000 10%, #000 90%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, #000 10%, #000 90%, transparent);
 }
 .Main_content_e4 {
     display: flex;
@@ -1218,14 +1244,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: no-repeat top / contain;
 }
 .Main_content__first_49 {
-        background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.bg_first');
-    }
+    background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.bg_first');
+}
 .Main_content__second_82 {
-        background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.bg_second');
-    }
+    background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.bg_second');
+}
 .Main_content__third_74 {
-        background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.bg_third');
-    }
+    background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.bg_third');
+}
 .Main_scrollBar_0a {
     height: 84vh;
     position: absolute;
@@ -1234,26 +1260,26 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translateY(-45%);
 }
 .mediaMedium .Main_scrollBar_0a {
-        transform: translateY(-46%);
+    transform: translateY(-46%);
 }
 .mediaLarge .Main_scrollBar_0a {
-        height: 86vh;
-        transform: translateY(-46%);
+    height: 86vh;
+    transform: translateY(-46%);
 }
 .mediaExtraLarge .Main_scrollBar_0a {
-        transform: translateY(-48%);
+    transform: translateY(-48%);
 }
 .Main_banner_44 {
     margin-bottom: 32rem;
 }
 .mediaLarge .Main_banner_44 {
-        margin-bottom: 0;
+    margin-bottom: 0;
 }
 .Main_section_87 {
     margin-bottom: 50rem;
 }
 .mediaMedium .Main_section_87 {
-        margin-bottom: 68rem;
+    margin-bottom: 68rem;
 }
 .Main_button_8b {
     opacity: 0;
@@ -1267,12 +1293,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-bottom: 80rem;
 }
 .mediaMedium .Main_button_8b {
-        height: 32rem;
-        margin-top: 100rem;
-        margin-bottom: 120rem;
+    height: 32rem;
+    margin-top: 100rem;
+    margin-bottom: 120rem;
 }
 .mediaExtraLarge .Main_button_8b {
-        margin-bottom: 140rem;
+    margin-bottom: 140rem;
 }
 .Main_container__1_64 {
     opacity: 0;
@@ -1280,38 +1306,38 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-duration: 450ms;
     animation-fill-mode: forwards;
     animation-delay: 450ms;
-        }
+}
 .Main_container__2_bb {
     opacity: 0;
     animation-name: Main_slideUpIn_df;
     animation-duration: 450ms;
     animation-fill-mode: forwards;
     animation-delay: 900ms;
-        }
+}
 .Main_container__3_31 {
     opacity: 0;
     animation-name: Main_slideUpIn_df;
     animation-duration: 450ms;
     animation-fill-mode: forwards;
     animation-delay: 1350ms;
-        }
+}
 .Main_container__4_f6 {
     opacity: 0;
     animation-name: Main_slideUpIn_df;
     animation-duration: 450ms;
     animation-fill-mode: forwards;
     animation-delay: 1800ms;
-        }
+}
 .Main_container__5_d0 {
     opacity: 0;
     animation-name: Main_slideUpIn_df;
     animation-duration: 450ms;
     animation-fill-mode: forwards;
     animation-delay: 2250ms;
-        }
+}
 
 .Tag_base_b1 {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -1319,25 +1345,25 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     border-radius: 2rem;
 }
 
-    .Tag_base__new_6b {
-        background-color: #c93303;
-    }
+.Tag_base__new_6b {
+    background-color: #c93303;
+}
 
-    .Tag_base__changed_95 {
-        background-color: #2e7228;
-    }
+.Tag_base__changed_95 {
+    background-color: #2e7228;
+}
 
-    .Tag_base__seasonUpdate_2c {
-        background-color: #285772;
-    }
+.Tag_base__seasonUpdate_2c {
+    background-color: #285772;
+}
 
-    .Tag_base__revamped_5c {
-        background-color: #5a2872;
-    }
+.Tag_base__revamped_5c {
+    background-color: #5a2872;
+}
 
-    .Tag_base__returned_6d {
-        background-color: #447228;
-    }
+.Tag_base__returned_6d {
+    background-color: #447228;
+}
 
 .Map_base_71 {
     width: 220rem;
@@ -1346,17 +1372,18 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
     z-index: 0;
 }
-    .mediaSmall .Map_base_71 {
-        width: 332rem;
-        height: 240rem;
+.mediaSmall .Map_base_71 {
+    width: 332rem;
+    height: 240rem;
 }
-    .mediaLarge .Map_base_71 {
-        width: 458rem;
-        height: 330rem;
+.mediaLarge .Map_base_71 {
+    width: 458rem;
+    height: 330rem;
 }
 
 .Map_gradient_81 {
-    background: radial-gradient(143% 140% at 1% 100%, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, 0) 100%) no-repeat center / contain;
+    background: radial-gradient(143% 140% at 1% 100%, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%) no-repeat center /
+        contain;
     position: absolute;
     top: 0;
     right: 0;
@@ -1375,11 +1402,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaSmall .Map_content_66 {
-        padding: 18rem;
+    padding: 18rem;
 }
 
 .mediaLarge .Map_content_66 {
-        padding: 20rem;
+    padding: 20rem;
 }
 
 .Map_nameContainer_a3 {
@@ -1390,18 +1417,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Map_name_70 {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
-    text-shadow: 0 4rem 4rem rgba(0, 0, 0, .4), 0 4rem 4rem rgba(0, 0, 0, .25);
+    text-shadow:
+        0 4rem 4rem rgba(0, 0, 0, 0.4),
+        0 4rem 4rem rgba(0, 0, 0, 0.25);
 }
 
 .mediaSmall .Map_name_70 {
-        color: #FFFFFF;
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
+    color: #ffffff;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .Map_stamp_37 {
@@ -1420,43 +1449,43 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaSmall .Map_stamp_37 {
-        padding: 6rem 22rem;
+    padding: 6rem 22rem;
 }
 
 .mediaSmall .Map_stamp_37 {
-        font-size: 15rem;
+    font-size: 15rem;
 }
 
 .mediaLarge .Map_stamp_37 {
-        font-size: 20rem;
+    font-size: 20rem;
 }
 
 .Map_stamp__removed_46 {
-        border-color: #FF2717;
-        background-color: rgba(183, 0, 0, .1);
-        color: #FF2717;
-        font-size: 18rem;
-    }
+    border-color: #ff2717;
+    background-color: rgba(183, 0, 0, 0.1);
+    color: #ff2717;
+    font-size: 18rem;
+}
 
 .mediaSmall .Map_stamp__removed_46 {
-            font-size: 22rem;
+    font-size: 22rem;
 }
 
 .mediaLarge .Map_stamp__removed_46 {
-            font-size: 28rem;
+    font-size: 28rem;
 }
 
 .Map_stamp__underDevelopment_2b {
-        border-color: #FFFFFF;
-        background-color: rgba(255, 255, 255, .1);
-        color: #FFFFFF;
-    }
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
 
 .MapChanges_header_5c {
     margin-bottom: 16rem;
 }
-    .mediaSmall .MapChanges_header_5c {
-        margin-bottom: 28rem;
+.mediaSmall .MapChanges_header_5c {
+    margin-bottom: 28rem;
 }
 
 .MapChanges_legend_43 {
@@ -1473,17 +1502,17 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 .mediaMedium .SeasonalChanges_row_35 {
-        align-items: center;
+    align-items: center;
 }
 .SeasonalChanges_divider_29 {
     width: 100%;
     height: 1rem;
     margin: 20rem 0;
     background: linear-gradient(to right, transparent, #fff 50%, transparent);
-    opacity: .1;
+    opacity: 0.1;
 }
 .mediaLarge .SeasonalChanges_divider_29 {
-        margin: 50rem 0;
+    margin: 50rem 0;
 }
 .SeasonalChanges_image_6d {
     width: 90rem;
@@ -1494,21 +1523,21 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
 }
 .mediaMedium .SeasonalChanges_image_6d {
-        width: 135rem;
-        height: 101.25rem;
+    width: 135rem;
+    height: 101.25rem;
 }
 .mediaLarge .SeasonalChanges_image_6d {
-        width: 180rem;
-        height: 135rem;
-        top: 50%;
-        transform: translateY(-50%);
+    width: 180rem;
+    height: 135rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .SeasonalChanges_row__shopUpdates_dd .SeasonalChanges_image_6d {
-        background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.improvedAiming');
-    }
+    background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.improvedAiming');
+}
 .SeasonalChanges_row__trainingRoom_bb .SeasonalChanges_image_6d {
-        background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.trainingRoom');
-    }
+    background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.trainingRoom');
+}
 .SeasonalChanges_rowContainer_58 {
     display: flex;
     flex-direction: column;
@@ -1516,10 +1545,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding-left: 102rem;
 }
 .mediaMedium .SeasonalChanges_rowContainer_58 {
-        padding-left: 147rem;
+    padding-left: 147rem;
 }
 .mediaLarge .SeasonalChanges_rowContainer_58 {
-        padding-left: 192rem;
+    padding-left: 192rem;
 }
 .SeasonalChanges_headingContainer_03 {
     display: flex;
@@ -1527,13 +1556,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     align-items: center;
 }
 .SeasonalChanges_row__trainingRoom_bb .SeasonalChanges_headingContainer_03 {
-        margin-top: -12rem;
-    }
+    margin-top: -12rem;
+}
 .SeasonalChanges_heading_70 {
     margin-right: 12rem;
 }
 .mediaMedium .SeasonalChanges_heading_70 {
-        margin-right: 20rem;
+    margin-right: 20rem;
 }
 .SeasonalChanges_headingTag_c9 {
     margin: 12rem 0;
@@ -1542,7 +1571,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding-bottom: 16rem;
 }
 .mediaSmall .SeasonalChanges_columnContainer_83 {
-        padding-bottom: 30rem;
+    padding-bottom: 30rem;
 }
 .SeasonalChanges_tournamentsContainer_1b {
     display: flex;
@@ -1552,64 +1581,64 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: url('R.images.gui.maps.icons.comp7.whatsNewView.tournaments_bg') no-repeat center top / cover;
 }
 .mediaSmall .SeasonalChanges_tournamentsContainer_1b {
-        padding: 0 40rem 30rem;
+    padding: 0 40rem 30rem;
 }
 .mediaLarge .SeasonalChanges_tournamentsContainer_1b {
-        padding-left: 60rem;
-        padding-right: 60rem;
+    padding-left: 60rem;
+    padding-right: 60rem;
 }
 
 .VehicleName_base_3b {
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: #ffffff;
     position: relative;
 }
 
-    .VehicleName_base__24x24_a7,
-    .VehicleName_base__24x24_metal_92 {
-        font-size: 14rem;
-    }
+.VehicleName_base__24x24_a7,
+.VehicleName_base__24x24_metal_92 {
+    font-size: 14rem;
+}
 
-    .VehicleName_base__48x48_6a {
-        font-size: 22rem;
-        font-weight: 700;
-    }
+.VehicleName_base__48x48_6a {
+    font-size: 22rem;
+    font-weight: 700;
+}
 
-    .VehicleName_base__64x64_d2 {
-        font-size: 22rem;
-        font-weight: 700;
-    }
+.VehicleName_base__64x64_d2 {
+    font-size: 22rem;
+    font-weight: 700;
+}
 
-    .VehicleName_base__83x74_ba {
-        font-size: 24rem;
-        font-weight: 700;
-    }
+.VehicleName_base__83x74_ba {
+    font-size: 24rem;
+    font-weight: 700;
+}
 
 .VehicleName_vehicleTypeContainer_f2 {
     position: relative;
 }
 
 .VehicleName_base__24x24_a7 .VehicleName_vehicleTypeContainer_f2,
-    .VehicleName_base__24x24_metal_92 .VehicleName_vehicleTypeContainer_f2 {
-        width: 24rem;
-    }
+.VehicleName_base__24x24_metal_92 .VehicleName_vehicleTypeContainer_f2 {
+    width: 24rem;
+}
 
 .VehicleName_base__48x48_6a .VehicleName_vehicleTypeContainer_f2 {
-        width: 48rem;
-    }
+    width: 48rem;
+}
 
 .VehicleName_base__60x54_08 .VehicleName_vehicleTypeContainer_f2 {
-        width: 40rem;
-    }
+    width: 40rem;
+}
 
 .VehicleName_base__64x64_d2 .VehicleName_vehicleTypeContainer_f2 {
-        width: 64rem;
-    }
+    width: 64rem;
+}
 
 .VehicleName_base__83x74_ba .VehicleName_vehicleTypeContainer_f2 {
-        width: 55rem;
-    }
+    width: 55rem;
+}
 
 .VehicleName_vehicleType_c3 {
     background: no-repeat center / contain;
@@ -1620,30 +1649,30 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .VehicleName_base__24x24_a7 .VehicleName_vehicleType_c3,
-    .VehicleName_base__24x24_metal_92 .VehicleName_vehicleType_c3 {
-        width: 24rem;
-        height: 24rem;
-    }
+.VehicleName_base__24x24_metal_92 .VehicleName_vehicleType_c3 {
+    width: 24rem;
+    height: 24rem;
+}
 
 .VehicleName_base__48x48_6a .VehicleName_vehicleType_c3 {
-        width: 48rem;
-        height: 48rem;
-    }
+    width: 48rem;
+    height: 48rem;
+}
 
 .VehicleName_base__60x54_08 .VehicleName_vehicleType_c3 {
-        width: 60rem;
-        height: 54rem;
-    }
+    width: 60rem;
+    height: 54rem;
+}
 
 .VehicleName_base__64x64_d2 .VehicleName_vehicleType_c3 {
-        width: 64rem;
-        height: 64rem;
-    }
+    width: 64rem;
+    height: 64rem;
+}
 
 .VehicleName_base__83x74_ba .VehicleName_vehicleType_c3 {
-        width: 83rem;
-        height: 74rem;
-    }
+    width: 83rem;
+    height: 74rem;
+}
 
 .VehicleRole_base_04 {
     display: flex;
@@ -1651,20 +1680,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
-    .VehicleRole_base__22x22_d4 {
-        color: #FEAB34;
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
-    }
+.VehicleRole_base__22x22_d4 {
+    color: #feab34;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
 
 .VehicleRole_iconContainer_0e {
     position: relative;
 }
 
 .VehicleRole_base__22x22_d4 .VehicleRole_iconContainer_0e {
-        width: 22rem;
-    }
+    width: 22rem;
+}
 
 .VehicleRole_icon_61 {
     background: no-repeat center / contain;
@@ -1675,9 +1704,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .VehicleRole_base__22x22_d4 .VehicleRole_icon_61 {
-        width: 22rem;
-        height: 22rem;
-    }
+    width: 22rem;
+    height: 22rem;
+}
 
 .Vehicle_base_ae {
     display: flex;
@@ -1686,17 +1715,17 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: no-repeat center / contain;
     position: relative;
 }
-    .mediaSmall .Vehicle_base_ae {
-        width: 332rem;
-        height: 240rem;
+.mediaSmall .Vehicle_base_ae {
+    width: 332rem;
+    height: 240rem;
 }
-    .mediaLarge .Vehicle_base_ae {
-        width: 458rem;
-        height: 330rem;
+.mediaLarge .Vehicle_base_ae {
+    width: 458rem;
+    height: 330rem;
 }
 
 .Vehicle_gradient_8b {
-    background: radial-gradient(143% 140% at 1% 100%, rgba(0,0,0, .4), transparent) no-repeat center / contain;
+    background: radial-gradient(143% 140% at 1% 100%, rgba(0, 0, 0, 0.4), transparent) no-repeat center / contain;
     position: absolute;
     top: 0;
     right: 0;
@@ -1714,23 +1743,23 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaSmall .Vehicle_details_7d {
-        padding: 0 0 14rem 18rem;
+    padding: 0 0 14rem 18rem;
 }
 
 .mediaLarge .Vehicle_details_7d {
-        padding: 0 0 18rem 22rem;
+    padding: 0 0 18rem 22rem;
 }
 
 .Vehicle_shortName_02,
 .Vehicle_level_e9 {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 16rem;
     font-weight: 700;
     line-height: 17rem;
 }
 
 .mediaSmall .Vehicle_vehicleName_7c {
-        margin-bottom: 4rem;
+    margin-bottom: 4rem;
 }
 
 .Vehicle_typeIcon_20.Vehicle_type_01 {
@@ -1745,4 +1774,3 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .VehiclesForRent_header_2e {
     margin-bottom: 28rem;
 }
-

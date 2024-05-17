@@ -1,0 +1,217 @@
+.DogTag_base_2b {
+    width: 200rem;
+    height: 120rem;
+    position: relative;
+}
+
+.DogTag_base__big_95 {
+    width: 400rem;
+    height: 240rem;
+}
+
+.DogTag_engraving_eb,
+.DogTag_background_7f {
+    width: 100%;
+    height: 100%;
+    background: center / contain no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.AnimatedDogTag_base_9e {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200rem;
+    height: 120rem;
+    position: relative;
+}
+
+.AnimatedDogTag_base__small_ce {
+    width: 300rem;
+    height: 180rem;
+}
+
+.AnimatedDogTag_base__medium_13 {
+    width: 400rem;
+    height: 240rem;
+}
+
+.AnimatedDogTag_base__large_04 {
+    width: 500rem;
+    height: 300rem;
+}
+
+.AnimatedDogTag_shadow_24 {
+    width: 200rem;
+    height: 134rem;
+    background: url('R.images.gui.maps.icons.dogtags.icons.tocken_shadow') no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.AnimatedDogTag_base__small_ce .AnimatedDogTag_shadow_24 {
+    width: 300rem;
+    height: 200rem;
+}
+
+.AnimatedDogTag_base__medium_13 .AnimatedDogTag_shadow_24 {
+    width: 406rem;
+    height: 270rem;
+}
+
+.AnimatedDogTag_base__large_04 .AnimatedDogTag_shadow_24 {
+    width: 508rem;
+    height: 338rem;
+}
+
+.AnimatedDogTag_backplateBox_a8 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.AnimatedDogTag_backplate_2d {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 26rem;
+    background: no-repeat center / contain;
+    transform: translateY(50%) rotate(4deg);
+}
+
+.AnimatedDogTag_base__extraSmall_64 .AnimatedDogTag_backplate_2d {
+    transform: translateY(57%) rotate(4deg);
+}
+
+.AnimatedDogTag_base__small_ce .AnimatedDogTag_backplate_2d {
+    padding-top: 40rem;
+}
+
+.AnimatedDogTag_base__medium_13 .AnimatedDogTag_backplate_2d {
+    padding-top: 54rem;
+}
+
+.AnimatedDogTag_base__large_04 .AnimatedDogTag_backplate_2d {
+    padding-top: 64rem;
+}
+
+.AnimatedDogTag_dogTag_34 {
+    width: 100%;
+    height: 100%;
+}
+
+.AnimatedDogTag_videoBox_10 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.AnimatedDogTag_base__extraSmall_64 .AnimatedDogTag_videoBox_10 {
+    transform: scale(0.5);
+}
+
+.AnimatedDogTag_base__small_ce .AnimatedDogTag_videoBox_10 {
+    transform: scale(0.75);
+}
+
+.AnimatedDogTag_base__medium_13 .AnimatedDogTag_videoBox_10 {
+    transform: scale(1);
+}
+
+.AnimatedDogTag_base__large_04 .AnimatedDogTag_videoBox_10 {
+    transform: scale(1.25);
+}
+
+.AnimatedDogTag_video_e4 {
+    width: 800rem;
+    height: 600rem;
+}
+
+.Counter_base_29 {
+    display: flex;
+    align-items: center;
+    color: rgba(201, 200, 196, 0.8);
+    filter: drop-shadow(0 2rem 3rem #000) drop-shadow(0 2rem 3rem rgba(0, 0, 0, 0.3));
+    mix-blend-mode: hard-light;
+}
+
+.Counter_base__extraSmall_f8 {
+    flex-direction: column;
+}
+
+.Counter_text_73 {
+    max-width: 100rem;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 17rem;
+    text-align: right;
+    white-space: pre-wrap;
+    position: relative;
+}
+
+.Counter_base__extraSmall_f8 .Counter_text_73 {
+    max-width: initial;
+    white-space: normal;
+}
+
+.Counter_base__medium_78 .Counter_text_73 {
+    font-size: 20rem;
+    line-height: 22rem;
+}
+
+.Counter_base__large_88 .Counter_text_73 {
+    font-size: 25rem;
+    line-height: 27rem;
+}
+
+.Counter_count_ee {
+    padding-bottom: 4rem;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+}
+
+.Counter_base__small_52 .Counter_count_ee {
+    margin-left: 10rem;
+    font-size: 37rem;
+}
+
+.Counter_base__medium_78 .Counter_count_ee {
+    margin-left: 16rem;
+    font-size: 50rem;
+}
+
+.Counter_base__large_88 .Counter_count_ee {
+    margin-left: 20rem;
+    font-size: 62rem;
+}
+
+.App_base_71 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 100rem;
+    overflow: hidden;
+}

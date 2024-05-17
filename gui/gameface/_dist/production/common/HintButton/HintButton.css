@@ -1,4 +1,3 @@
-
 .HintButton_base_19 {
     position: relative;
 }
@@ -11,8 +10,8 @@
 }
 
 .HintButton_btnOuter__blink_e7 {
-        border: 2rem solid #ffbd1f;
-    }
+    border: 2rem solid #ffbd1f;
+}
 
 .HintButton_animationContainer_c5 {
     display: flex;
@@ -42,6 +41,5 @@
 }
 
 .HintButton_btnInner__blink_75 {
-        background: #ffbd1f;
-    }
-
+    background: #ffbd1f;
+}

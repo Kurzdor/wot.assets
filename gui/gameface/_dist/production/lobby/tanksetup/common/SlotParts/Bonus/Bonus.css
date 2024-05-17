@@ -7,9 +7,9 @@
     left: 0;
 }
 
-    .Bonus_base__fitting_d1 {
-        opacity: .5;
-    }
+.Bonus_base__fitting_d1 {
+    opacity: 0.5;
+}
 .Bonus_icon_3b {
     width: 96rem;
     height: 96rem;
@@ -17,28 +17,27 @@
     position: absolute;
 }
 .Bonus_icon__battleBooster_66 {
-        top: -14rem;
-        left: -20rem;
-    }
+    top: -14rem;
+    left: -20rem;
+}
 .Bonus_icon__battleBoosterReplace_8d {
-        top: -12rem;
-        left: -20rem;
-    }
+    top: -12rem;
+    left: -20rem;
+}
 .Bonus_icon__equipmentPlus_48 {
-        top: -28rem;
-        left: -20rem;
-    }
+    top: -28rem;
+    left: -20rem;
+}
 .Bonus_icon__builtInEquipment_77 {
-        top: -21rem;
-        left: -23rem;
-    }
+    top: -21rem;
+    left: -23rem;
+}
 .Bonus_icon__equipmentModernized_76 {
-        top: -23rem;
-        left: -19rem;
-    }
+    top: -23rem;
+    left: -19rem;
+}
 .Bonus_icon__equipmentTrophyBasic_a4,
-    .Bonus_icon__equipmentTrophyUpgraded_6d {
-        top: -23rem;
-        left: -19rem;
-    }
-
+.Bonus_icon__equipmentTrophyUpgraded_6d {
+    top: -23rem;
+    left: -19rem;
+}

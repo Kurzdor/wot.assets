@@ -15,12 +15,12 @@
     height: 0%;
     background-color: #000;
     z-index: 2;
-    transition: height .3s;
+    transition: height 0.3s;
 }
 
 .DeathCamUIView_cinemaBar__visible_ab {
-        height: 12.5%;
-    }
+    height: 12.5%;
+}
 
 .DeathCamUIView_notificationWrapper_92 {
     display: flex;
@@ -34,13 +34,15 @@
     flex-direction: column;
     opacity: 0;
     transform: translateY(-20%);
-    transition: opacity .3s ease-in, transform .3s ease-in;
+    transition:
+        opacity 0.3s ease-in,
+        transform 0.3s ease-in;
 }
 
-    .DeathReasonNotification_base__visible_ab {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.DeathReasonNotification_base__visible_ab {
+    opacity: 1;
+    transform: translateY(0);
+}
 .DeathReasonNotification_contentContainer_d2 {
     padding-left: 204rem;
     padding-right: 204rem;
@@ -49,12 +51,12 @@
     border-bottom: 0;
     border-image-source: linear-gradient(to right, rgba(0, 0, 0, 0) 4%, rgba(255, 0, 0, 1), rgba(0, 0, 0, 0) 96%);
     border-image-slice: 1;
-    background-image: radial-gradient(ellipse 50% 100% at 50% 0%, rgba(255, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: radial-gradient(ellipse 50% 100% at 50% 0%, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
     color: #fff;
 }
 .mediaSmall .DeathReasonNotification_contentContainer_d2 {
-        padding-left: 120rem;
-        padding-right: 120rem;
+    padding-left: 120rem;
+    padding-right: 120rem;
 }
 .DeathReasonNotification_destructionContainer_d2 {
     display: flex;
@@ -63,8 +65,8 @@
     font-size: 20rem;
 }
 .mediaSmall .DeathReasonNotification_destructionContainer_d2 {
-        padding: 20rem 0 24rem;
-        font-size: 30rem;
+    padding: 20rem 0 24rem;
+    font-size: 30rem;
 }
 .DeathReasonNotification_spottedContainer_92 {
     display: flex;
@@ -82,12 +84,14 @@
     border: 1rem solid;
     border-image-source: linear-gradient(to right, rgba(0, 0, 0, 0) 4%, rgba(255, 152, 31, 1), rgba(0, 0, 0, 0) 96%);
     border-image-slice: 1;
-    background: radial-gradient(50% 100% at center top, rgba(255, 152, 31, .5) 0%, transparent 100%) no-repeat center/ contain,
-    radial-gradient(50% 100% at center bottom, rgba(255, 152, 31, .5) 0%, transparent 100%) no-repeat center/ contain;
+    background:
+        radial-gradient(50% 100% at center top, rgba(255, 152, 31, 0.5) 0%, transparent 100%) no-repeat center/ contain,
+        radial-gradient(50% 100% at center bottom, rgba(255, 152, 31, 0.5) 0%, transparent 100%) no-repeat center/
+            contain;
     font-size: 16rem;
 }
 .mediaSmall .DeathReasonNotification_spottedContent_a9 {
-        font-size: 20rem;
+    font-size: 20rem;
 }
 .DeathReasonNotification_icon_7f {
     width: 30rem;
@@ -96,8 +100,8 @@
     background: left / cover no-repeat;
 }
 .mediaSmall .DeathReasonNotification_icon_7f {
-        width: 36rem;
-        height: 36rem;
+    width: 36rem;
+    height: 36rem;
 }
 
 .HintContainer_base_53 {
@@ -117,7 +121,7 @@
     border-radius: 4rem;
     background: #000;
     filter: blur(4px);
-    opacity: .25;
+    opacity: 0.25;
     position: absolute;
 }
 
@@ -152,7 +156,6 @@
     text-align: left;
 }
 
-
 .HintButton_base_19 {
     position: relative;
 }
@@ -165,8 +168,8 @@
 }
 
 .HintButton_btnOuter__blink_e7 {
-        border: 2rem solid #ffbd1f;
-    }
+    border: 2rem solid #ffbd1f;
+}
 
 .HintButton_animationContainer_c5 {
     display: flex;
@@ -196,11 +199,10 @@
 }
 
 .HintButton_btnInner__blink_75 {
-        background: #ffbd1f;
-    }
+    background: #ffbd1f;
+}
 
 .FormatText_base_d0 {
     display: flex;
     flex-wrap: wrap;
 }
-

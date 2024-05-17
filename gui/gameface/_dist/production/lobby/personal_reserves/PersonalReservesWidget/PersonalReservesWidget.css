@@ -20,64 +20,70 @@ html {
 }
 
 .App_entryIcon_d6 .App_counter_3a {
-        color: #CCFFFF;
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-width: 28rem;
-        height: 16rem;
-        border: 1rem solid rgba(255, 255, 255, .07);
-        border-radius: 2rem;
-        box-shadow: -1rem -1rem 1rem rgba(0, 0, 0, .25);
-        background: radial-gradient(100% 98.78% at 0% 100%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .2) 100%), #0c4261;
-        line-height: 18rem;
-        text-shadow: 0rem -1rem 1rem rgba(0, 0, 0, .5);
-        position: absolute;
-        right: 8rem;
-        bottom: 3rem;
-    }
+    color: #ccffff;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 28rem;
+    height: 16rem;
+    border: 1rem solid rgba(255, 255, 255, 0.07);
+    border-radius: 2rem;
+    box-shadow: -1rem -1rem 1rem rgba(0, 0, 0, 0.25);
+    background: radial-gradient(100% 98.78% at 0% 100%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%), #0c4261;
+    line-height: 18rem;
+    text-shadow: 0rem -1rem 1rem rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 8rem;
+    bottom: 3rem;
+}
 
 .App_entryIcon_d6 .App_counter_3a .App_counter_content_32 {
-            padding: 0 2rem 2rem;
-        }
+    padding: 0 2rem 2rem;
+}
 
 .App_entryIcon__hasNonExpiringBoosters_76 {
-        background: url('R.images.gui.maps.icons.personal_reserves.entry_icon_boosters') -3rem center / cover;
-    }
+    background: url('R.images.gui.maps.icons.personal_reserves.entry_icon_boosters') -3rem center / cover;
+}
 
 .App_entryIcon__hasExpiringBoostersAfterToday_fa {
-        background: url('R.images.gui.maps.icons.personal_reserves.entry_icon_expiring') -3rem center / cover;
-    }
+    background: url('R.images.gui.maps.icons.personal_reserves.entry_icon_expiring') -3rem center / cover;
+}
 
 .App_entryIcon__hasExpiringBoostersAfterToday_fa .App_counter_3a {
-            color: #FFDD99;
-            font-size: 14rem;
-            font-weight: 400;
-            line-height: 1.3;
-            line-height: 18rem;
-            text-shadow: 0px 0px 15px #e52, 0px 0px 8px #ff2a00, 0px 0px 4px rgba(255, 127, 0, 0.25);
-        }
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    line-height: 18rem;
+    text-shadow:
+        0px 0px 15px #e52,
+        0px 0px 8px #ff2a00,
+        0px 0px 4px rgba(255, 127, 0, 0.25);
+}
 
 .App_entryIcon__hasExpiringBoostersToday_82 {
-        background: url('R.images.gui.maps.icons.personal_reserves.entry_icon_expiring_today') -3rem center / cover;
-    }
+    background: url('R.images.gui.maps.icons.personal_reserves.entry_icon_expiring_today') -3rem center / cover;
+}
 
 .App_entryIcon__hasExpiringBoostersToday_82 .App_counter_3a {
-            color: #FEFEEC;
-            font-size: 14rem;
-            font-weight: 400;
-            line-height: 1.3;
-            background: radial-gradient(104% 137.07% at 0% 100%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .2) 100%), #212121;
-            line-height: 18rem;
-            text-shadow: 0px 0px 15px #e52, 0px 0px 8px #ff2a00, 0px 0px 4px rgba(255, 127, 0, 0.25);
-        }
+    color: #fefeec;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    background: radial-gradient(104% 137.07% at 0% 100%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%), #212121;
+    line-height: 18rem;
+    text-shadow:
+        0px 0px 15px #e52,
+        0px 0px 8px #ff2a00,
+        0px 0px 4px rgba(255, 127, 0, 0.25);
+}
 
 .App_entryIcon__disabled_e9 {
-        filter: saturate(0);
-    }
+    filter: saturate(0);
+}
 
 .App_reserveBlocksContainer_46 {
     display: flex;
@@ -92,8 +98,8 @@ html {
 }
 
 .App_reserveBlock__disabled_79 {
-        filter: saturate(0);
-    }
+    filter: saturate(0);
+}
 
 .App_reserveButton_89 {
     margin-right: 2rem;
@@ -111,71 +117,78 @@ html {
     width: 8rem;
     height: 38rem;
     border-radius: 5rem;
-    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.3), 0px -1px 2px rgba(255, 255, 255, 0.07), inset 0px 0px 0px 1px #44412b;
+    box-shadow:
+        -1px 1px 2px rgba(0, 0, 0, 0.3),
+        0px -1px 2px rgba(255, 255, 255, 0.07),
+        inset 0px 0px 0px 1px #44412b;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #211f16;
     position: relative;
 }
 
-    .ReserveIcon_base__disabled_99 {
-        opacity: 0.7;
-    }
+.ReserveIcon_base__disabled_99 {
+    opacity: 0.7;
+}
 
-    .ReserveIcon_base__active_93 {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #211f16;
-    }
+.ReserveIcon_base__active_93 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #211f16;
+}
 
-    .ReserveIcon_base__clan_7b .ReserveIcon_fill_48 {
-            background: radial-gradient(100% 3rem at 50% 0%, rgba(225, 255, 186, 0.2), transparent 100%),
-                linear-gradient(180deg, #496019 0%, #1f3b1b 100%);
-        }
+.ReserveIcon_base__clan_7b .ReserveIcon_fill_48 {
+    background: radial-gradient(100% 3rem at 50% 0%, rgba(225, 255, 186, 0.2), transparent 100%),
+        linear-gradient(180deg, #496019 0%, #1f3b1b 100%);
+}
 
-    .ReserveIcon_base__clan_7b .ReserveIcon_fill_pattern_03 {
-                background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_green') 0 0 / 2rem 2rem repeat;
-            }
+.ReserveIcon_base__clan_7b .ReserveIcon_fill_pattern_03 {
+    background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_green') 0 0 / 2rem 2rem repeat;
+}
 
-    .ReserveIcon_base__clan_7b .ReserveIcon_fill_border_14 {
-                border-color: #41711b;
-            }
+.ReserveIcon_base__clan_7b .ReserveIcon_fill_border_14 {
+    border-color: #41711b;
+}
 
-    .ReserveIcon_base__clan_7b .ReserveIcon_minutesLeft_fe {
-            text-shadow: -1rem -1rem 0rem #1f3b1b,
-                1rem 1rem 0rem #1f3b1b,
-                -1rem 1rem 0rem #1f3b1b,
-                1rem -1rem 0rem #1f3b1b;
-        }
+.ReserveIcon_base__clan_7b .ReserveIcon_minutesLeft_fe {
+    text-shadow:
+        -1rem -1rem 0rem #1f3b1b,
+        1rem 1rem 0rem #1f3b1b,
+        -1rem 1rem 0rem #1f3b1b,
+        1rem -1rem 0rem #1f3b1b;
+}
 
-    .ReserveIcon_base__event_b6 .ReserveIcon_fill_48 {
-            background: radial-gradient(100% 3rem at 50% 0%, rgba(249, 255, 186, 0.2), transparent 100%),
-                linear-gradient(180deg, #98752f 0%, #72500f 100%);
-        }
+.ReserveIcon_base__event_b6 .ReserveIcon_fill_48 {
+    background: radial-gradient(100% 3rem at 50% 0%, rgba(249, 255, 186, 0.2), transparent 100%),
+        linear-gradient(180deg, #98752f 0%, #72500f 100%);
+}
 
-    .ReserveIcon_base__event_b6 .ReserveIcon_fill_pattern_03 {
-                background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_orange') 0 0 / 2rem 2rem repeat;
-            }
+.ReserveIcon_base__event_b6 .ReserveIcon_fill_pattern_03 {
+    background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_orange') 0 0 / 2rem 2rem repeat;
+}
 
-    .ReserveIcon_base__event_b6 .ReserveIcon_fill_border_14 {
-                border-color: #8e4501;
-            }
+.ReserveIcon_base__event_b6 .ReserveIcon_fill_border_14 {
+    border-color: #8e4501;
+}
 
-    .ReserveIcon_base__event_b6 .ReserveIcon_minutesLeft_fe {
-            text-shadow: -1rem -1rem 0rem #583a00,
-                1rem 1rem 0rem #583a00,
-                -1rem 1rem 0rem #583a00,
-                1rem -1rem 0rem #583a00;
-        }
+.ReserveIcon_base__event_b6 .ReserveIcon_minutesLeft_fe {
+    text-shadow:
+        -1rem -1rem 0rem #583a00,
+        1rem 1rem 0rem #583a00,
+        -1rem 1rem 0rem #583a00,
+        1rem -1rem 0rem #583a00;
+}
 
-    .ReserveIcon_base__medium_6d {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 38rem;
-        height: 38rem;
-        border-radius: 5rem;
-        box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.3), 0px -1px 2px rgba(255, 255, 255, 0.07);
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #211f16;
-        overflow: hidden;
-        position: relative;
-    }
+.ReserveIcon_base__medium_6d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38rem;
+    height: 38rem;
+    border-radius: 5rem;
+    box-shadow:
+        -1px 1px 2px rgba(0, 0, 0, 0.3),
+        0px -1px 2px rgba(255, 255, 255, 0.07);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #211f16;
+    overflow: hidden;
+    position: relative;
+}
 
 .ReserveIcon_minutesLeft_fe {
     display: flex;
@@ -183,10 +196,14 @@ html {
     align-items: center;
     width: 100%;
     height: 16rem;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 14rem;
     font-weight: 300;
-    text-shadow: -1rem -1rem 0rem #05334e, 1rem 1rem 0rem #05334e, -1rem 1rem 0rem #05334e, 1rem -1rem 0rem #05334e;
+    text-shadow:
+        -1rem -1rem 0rem #05334e,
+        1rem 1rem 0rem #05334e,
+        -1rem 1rem 0rem #05334e,
+        1rem -1rem 0rem #05334e;
     position: absolute;
     bottom: 4rem;
     z-index: 3;
@@ -194,9 +211,9 @@ html {
 }
 
 .ReserveIcon_minutesLeft__smallMinutes_42 {
-        font-size: 12rem;
-        font-weight: 100;
-    }
+    font-size: 12rem;
+    font-weight: 100;
+}
 
 .ReserveIcon_icon_aa {
     display: block;
@@ -206,9 +223,11 @@ html {
 }
 
 .ReserveIcon_icon__active_f5 {
-        margin-bottom: 7rem;
-        animation: ReserveIcon_fadeIn_74 0.5s, ReserveIcon_moveUp_11 0.5s;
-    }
+    margin-bottom: 7rem;
+    animation:
+        ReserveIcon_fadeIn_74 0.5s,
+        ReserveIcon_moveUp_11 0.5s;
+}
 
 .ReserveIcon_fill_48 {
     display: block;
@@ -229,39 +248,39 @@ html {
 }
 
 .ReserveIcon_fill_wrapper_76 {
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-        bottom: 2rem;
-        left: 2rem;
-    }
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+}
 
 .ReserveIcon_fill_wrapper__medium_c3 {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 
 .ReserveIcon_fill_pattern_03 {
-        width: 100%;
-        height: 100%;
-        box-shadow: 0 1rem rgba(255, 255, 255, 0.03) inset;
-        background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_blue') 0 0 / 2rem 2rem repeat;
-        mask-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
-    }
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1rem rgba(255, 255, 255, 0.03) inset;
+    background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_blue') 0 0 / 2rem 2rem repeat;
+    mask-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+}
 
 .ReserveIcon_fill_border_14 {
-        border: 1rem solid #0e5075;
-        border-radius: 0 0 5rem 5rem;
-        border-top: 0;
-        position: absolute;
-        top: 0;
-        right: -2rem;
-        bottom: -2rem;
-        left: -2rem;
-    }
+    border: 1rem solid #0e5075;
+    border-radius: 0 0 5rem 5rem;
+    border-top: 0;
+    position: absolute;
+    top: 0;
+    right: -2rem;
+    bottom: -2rem;
+    left: -2rem;
+}
 
 @keyframes ReserveIcon_fillIn_ae {
     from {
@@ -292,4 +311,3 @@ html {
         transform: translateY(0);
     }
 }
-

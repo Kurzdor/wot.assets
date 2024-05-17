@@ -4,12 +4,12 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.atlases.components.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .FormatText_base_d0 {
     display: flex;
@@ -25,9 +25,9 @@
     position: relative;
 }
 
-    .CrewHeaderTooltipApp_base_e2 > * {
-        position: relative;
-    }
+.CrewHeaderTooltipApp_base_e2 > * {
+    position: relative;
+}
 
 .CrewHeaderTooltipApp_bodyTexture_e9 {
     width: 364rem;
@@ -42,7 +42,7 @@
     height: 134rem;
     position: absolute;
     bottom: 0rem;
-    left: calc(var(--base-width)*0.5);
+    left: calc(var(--base-width) * 0.5);
     transform: translateX(-50%);
 }
 
@@ -51,7 +51,7 @@
 }
 
 .CrewHeaderTooltipApp_heading_6d {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 24rem;
     font-weight: 700;
     line-height: 1.2;
@@ -68,17 +68,17 @@
 }
 
 .CrewHeaderTooltipApp_bonus_c5 .CrewHeaderTooltipApp_bonus_icon_51 {
-        width: 16rem;
-        height: 16rem;
-        margin-right: 3rem;
-    }
+    width: 16rem;
+    height: 16rem;
+    margin-right: 3rem;
+}
 
 .CrewHeaderTooltipApp_bonus_c5 .CrewHeaderTooltipApp_bonus_label_b5 {
-        color: #FFDD99;
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
-    }
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
 
 .CrewHeaderTooltipApp_boost_64 {
     display: flex;
@@ -91,69 +91,69 @@
     background: linear-gradient(
         90deg,
         rgba(201, 201, 182, 0) 0%,
-        rgba(201, 201, 182, .1) 38.22%,
-        rgba(201, 201, 182, .07) 64.56%,
+        rgba(201, 201, 182, 0.1) 38.22%,
+        rgba(201, 201, 182, 0.07) 64.56%,
         rgba(201, 201, 182, 0) 100%
     );
     position: relative;
 }
 
 .CrewHeaderTooltipApp_boost_64 .CrewHeaderTooltipApp_topDivider_1f {
-        position: absolute;
-        top: 0rem;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+    position: absolute;
+    top: 0rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .CrewHeaderTooltipApp_boost_64 .CrewHeaderTooltipApp_bottomDivider_30 {
-        position: absolute;
-        bottom: 0rem;
-        left: 50%;
-        transform: translate(-50%, 50%);
-    }
+    position: absolute;
+    bottom: 0rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
 
 .CrewHeaderTooltipApp_boost_64 .CrewHeaderTooltipApp_boost_wrapper_02 {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-end;
-        height: 60rem;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 60rem;
+}
 
 .CrewHeaderTooltipApp_boost_64 .CrewHeaderTooltipApp_boost_wrapper_02 .CrewHeaderTooltipApp_boost_label_79 {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            margin-right: 6rem;
-            margin-bottom: -5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 6rem;
+    margin-bottom: -5rem;
 
-            color: #FEFEEC;
+    color: #fefeec;
 
-            font-size: 73rem;
+    font-size: 73rem;
 
-            font-weight: 700;
+    font-weight: 700;
 
-            line-height: 1.1;
-        }
+    line-height: 1.1;
+}
 
 .CrewHeaderTooltipApp_boost_64 .CrewHeaderTooltipApp_boost_wrapper_02 .CrewHeaderTooltipApp_boost_XP_icon_6f {
-            display: flex;
-            align-items: flex-end;
-            width: 115rem;
-            height: 114rem;
-            margin: -25rem;
-        }
+    display: flex;
+    align-items: flex-end;
+    width: 115rem;
+    height: 114rem;
+    margin: -25rem;
+}
 
 .CrewHeaderTooltipApp_boost_64 .CrewHeaderTooltipApp_perFiveMinutes_fe {
-        color: #8C8C7E;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
-    }
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
 
 .CrewHeaderTooltipApp_description_d9 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -172,37 +172,36 @@
 }
 
 .CrewHeaderTooltipApp_status__active_2b {
-        color: #80D43A;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
-    }
+    color: #80d43a;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
 
 .CrewHeaderTooltipApp_status__inactive_f8 {
-        color: #CBAC77;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
-    }
+    color: #cbac77;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
 
 .CrewHeaderTooltipApp_status__unavailable_3d {
-        color: #FEAB34;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
-    }
+    color: #feab34;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
 
 .CrewHeaderTooltipApp_status_64 .CrewHeaderTooltipApp_status_description_0c {
-        color: #8C8C7E;
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
-    }
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
 
 .CrewHeaderTooltipApp_status_64 .CrewHeaderTooltipApp_status_description_0c .CrewHeaderTooltipApp_textAccent_c2 {
-            color: #E9E2BF;
-            font-size: 14rem;
-            font-weight: 400;
-            line-height: 1.3;
-        }
-
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}

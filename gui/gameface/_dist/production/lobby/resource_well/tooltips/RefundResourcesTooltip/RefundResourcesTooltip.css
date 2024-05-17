@@ -8,8 +8,14 @@
     min-height: 145rem;
     border: 1rem solid #f2f2e61a;
     border-radius: 2rem;
-    background: linear-gradient(180deg, rgba(51, 51, 41, .3) 0%, rgba(51, 51, 41, 0) 16%, rgba(51, 51, 41, 0) 88%, rgba(51, 51, 41, .1) 100%),
-    linear-gradient(0deg, #030200, #030200);
+    background: linear-gradient(
+            180deg,
+            rgba(51, 51, 41, 0.3) 0%,
+            rgba(51, 51, 41, 0) 16%,
+            rgba(51, 51, 41, 0) 88%,
+            rgba(51, 51, 41, 0.1) 100%
+        ),
+        linear-gradient(0deg, #030200, #030200);
 }
 
 .Content_content_b9 {
@@ -17,7 +23,7 @@
 }
 
 .Content_title_17 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
@@ -25,14 +31,14 @@
 }
 
 .Content_markableText_70 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
 .Content_descriptionBlock_c4 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -44,10 +50,9 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.atlases.components.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
-
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}

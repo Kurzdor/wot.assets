@@ -10,7 +10,7 @@
 }
 
 .Countdown_description_8d {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -33,7 +33,7 @@
 }
 
 .App_title_ab {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
@@ -41,24 +41,24 @@
 }
 
 .App_subtitle_6a {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
 .App_subtitle__premium_a2 {
-        color: #FFDD99;
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
-    }
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
 
 .App_subtitle_6a .App_expirable_df {
-        margin-left: 5rem;
-        color: #EE7000;
-        text-shadow: 0 0 14rem #f00;
-    }
+    margin-left: 5rem;
+    color: #ee7000;
+    text-shadow: 0 0 14rem #f00;
+}
 
 .App_icon_49 {
     align-self: center;
@@ -74,22 +74,28 @@
 }
 
 .App_effect_15 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
     padding: 15rem 25rem;
-    background: linear-gradient(90deg, transparent 0%, rgba(201,201,182, .07) 38.22%, rgba(201,201,182, .07) 64.56%, transparent 100%);
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(201, 201, 182, 0.07) 38.22%,
+        rgba(201, 201, 182, 0.07) 64.56%,
+        transparent 100%
+    );
     text-align: center;
 }
 
 .App_effect_15 .App_bonus_8f {
-        color: #FFDD99;
-        font-weight: 700;
-    }
+    color: #ffdd99;
+    font-weight: 700;
+}
 
 .App_stock_88 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -102,63 +108,63 @@
 }
 
 .App_stockItem_63:first-child {
-        margin-top: 0;
-    }
+    margin-top: 0;
+}
 
 .App_stockItem_63 .App_stockAmount_1a {
-        color: #FFFFFF;
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
-        z-index: 1;
-    }
+    color: #ffffff;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    z-index: 1;
+}
 
 .App_stockItem_63 .App_stockAmount_1a:first-child {
-            justify-content: flex-end;
-            width: 76rem;
-        }
+    justify-content: flex-end;
+    width: 76rem;
+}
 
 .App_stockItem_63 .App_stockAmount__cost_0a {
-            color: #FFC363;
-        }
+    color: #ffc363;
+}
 
 .App_stockItem_63 .App_stockAmount__depot_10 {
-            color: #E9E2BF;
-        }
+    color: #e9e2bf;
+}
 
 .App_stockItem_63 .App_stockAmount__expiration_9d {
-            color: #E9E2BF;
-        }
+    color: #e9e2bf;
+}
 
 .App_stockItem_63 .App_stockIcon_53 {
-        width: 24rem;
-        height: 24rem;
-        margin-right: 20rem;
-        z-index: 1;
-    }
+    width: 24rem;
+    height: 24rem;
+    margin-right: 20rem;
+    z-index: 1;
+}
 
 .App_stockItem_63 .App_stockIcon__cost_f7 {
-            width: 16rem;
-            height: 16rem;
-            margin-left: 4rem;
-            transform: translateY(2rem);
-        }
+    width: 16rem;
+    height: 16rem;
+    margin-left: 4rem;
+    transform: translateY(2rem);
+}
 
 .App_stockItem_63 .App_stockIcon__depot_2b {
-            width: 30rem;
-            height: 24rem;
-            margin-left: -4rem;
-            margin-right: 19rem;
-            margin-bottom: -5rem;
-            transform: translateY(-3rem);
-        }
+    width: 30rem;
+    height: 24rem;
+    margin-left: -4rem;
+    margin-right: 19rem;
+    margin-bottom: -5rem;
+    transform: translateY(-3rem);
+}
 
 .App_stockItem_63 .App_stockIcon__expiration_ba {
-            width: 19rem;
-            height: 19rem;
-            margin-left: 3rem;
-            transform: translateY(1rem);
-        }
+    width: 19rem;
+    height: 19rem;
+    margin-left: 3rem;
+    transform: translateY(1rem);
+}
 
 .App_description_39 {
     margin-top: 6rem;
@@ -167,19 +173,19 @@
 }
 
 .App_description_39 .App_descriptionTitle_8d {
-        color: #E9E2BF;
-        font-size: 15rem;
-        font-weight: 700;
-        line-height: 1.15;
-        margin-bottom: 4rem;
-    }
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 4rem;
+}
 
 .App_description_39 .App_descriptionText_c4 {
-        color: #8C8C7E;
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
-    }
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
 
 .TooltipDecorator_base_c9 {
     display: flex;
@@ -187,10 +193,9 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.atlases.components.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
-
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}

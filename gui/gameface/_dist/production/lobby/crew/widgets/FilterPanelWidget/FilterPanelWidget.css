@@ -3,67 +3,72 @@
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.6);
     position: relative;
     cursor: pointer;
 }
 
-    .CButton_base__main_42,
-    .CButton_base__primary_7f,
-    .CButton_base__primaryGreen_6f,
-    .CButton_base__primaryRed_ec,
-    .CButton_base__secondary_50 {
-        background-size: 100% 100%;
-    }
+.CButton_base__main_42,
+.CButton_base__primary_7f,
+.CButton_base__primaryGreen_6f,
+.CButton_base__primaryRed_ec,
+.CButton_base__secondary_50 {
+    background-size: 100% 100%;
+}
 
-    .CButton_base__main_42 {
-        background-image: url('R.images.gui.maps.icons.components.button.back_main');
-    }
+.CButton_base__main_42 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_main');
+}
 
-    .CButton_base__primary_7f {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
-    }
+.CButton_base__primary_7f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+}
 
-    .CButton_base__primaryGreen_6f {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
-    }
+.CButton_base__primaryGreen_6f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
 
-    .CButton_base__primaryRed_ec {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
-    }
+.CButton_base__primaryRed_ec {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
 
-    .CButton_base__secondary_50 {
-        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
-    }
+.CButton_base__secondary_50 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
 
-    .CButton_base__ghost_ed {
-        border-radius: 3rem;
-        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
-            0 0 0 1rem rgba(255,255,255, .15) inset;
-        background-color: rgba(0,0,0, .15);
-    }
+.CButton_base__ghost_ed {
+    border-radius: 3rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 0 1rem rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
 
-    .CButton_base__extraSmall_27 {
-        min-height: 17rem;
-        padding: 0 16rem;
-    }
+.CButton_base__extraSmall_27 {
+    min-height: 17rem;
+    padding: 0 16rem;
+}
 
-    .CButton_base__small_df,
-    .CButton_base__medium_74 {
-        padding: 0 20rem;
-    }
+.CButton_base__small_df,
+.CButton_base__medium_74 {
+    padding: 0 20rem;
+}
 
-    .CButton_base__small_df {
-        min-height: 18rem;
-    }
+.CButton_base__small_df {
+    min-height: 18rem;
+}
 
-    .CButton_base__medium_74 {
-        min-height: 32rem;
-    }
+.CButton_base__medium_74 {
+    min-height: 32rem;
+}
 
-    .CButton_base__disabled_d9 {
-        cursor: default;
-    }
+.CButton_base__large_5c {
+    min-height: 48rem;
+}
+
+.CButton_base__disabled_d9 {
+    cursor: default;
+}
 /* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
 The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
 between 'border-image-width' and 'fill'.
@@ -79,20 +84,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
 }
 .CButton_base__main_42 .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+}
 .CButton_base__primary_7f .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+}
 .CButton_base__primaryGreen_6f .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
 .CButton_base__primaryRed_ec .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
 .CButton_base__secondary_50 .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
 .CButton_texture_fe {
     background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
     background-size: 155rem 31rem;
@@ -109,12 +114,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 0;
     bottom: 0;
     left: 0;
-    transition: box-shadow .16s ease-in-out;
+    transition: box-shadow 0.16s ease-in-out;
 }
 .CButton_base__focus_83 .CButton_state_11 {
-        border-radius: 2rem;
-        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
-    }
+    border-radius: 2rem;
+    box-shadow: inset 0 0 2rem 1rem rgba(255, 85, 0, 0.2);
+}
 .CButton_stateHighlightHover_ff,
 .CButton_stateHighlightActive_35,
 .CButton_stateDisabled_54 {
@@ -125,40 +130,47 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     bottom: 0;
     left: 0;
 }
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-        transition: opacity .16s ease-in-out;
-    }
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
+.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
+.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+    transition: opacity 0.16s ease-in-out;
+}
 .CButton_stateHighlightHover_ff {
-    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+    background-image: linear-gradient(
+        180deg,
+        rgba(252, 248, 235, 0.25) 0%,
+        rgba(252, 248, 235, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
 }
 .CButton_base_40:hover .CButton_stateHighlightHover_ff {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_base_40:active .CButton_stateHighlightHover_ff {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
-        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
-        background-color: rgba(8,6,0, .18);
-        background-image: none;
-    }
+    box-shadow: 0 15rem 12rem 0 rgba(242, 242, 230, 0.11) inset;
+    background-color: rgba(8, 6, 0, 0.18);
+    background-image: none;
+}
 .CButton_stateHighlightActive_35 {
-    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
 }
 .CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_stateDisabled_54 {
-    background-color: rgba(0,0,0, .25);
+    background-color: rgba(0, 0, 0, 0.25);
     background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
     background-size: 15rem;
 }
 .CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_content_cc {
     display: flex;
     align-items: center;
@@ -166,39 +178,42 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 700;
     line-height: 1.2;
     text-shadow: 0 -1rem 1rem #000;
-    letter-spacing: .03em;
+    letter-spacing: 0.03em;
     transform: translateY(-1rem);
 }
-.CButton_content_cc[lang=ja],
-    .CButton_content_cc[lang=ko],
-    .CButton_content_cc[lang=zh_tw],
-    .CButton_content_cc[lang=zh_sg],
-    .CButton_content_cc[lang=zh_cn],
-    .CButton_content_cc[lang=th] {
-        font-weight: 400;
-    }
+.CButton_content_cc[lang='ja'],
+.CButton_content_cc[lang='ko'],
+.CButton_content_cc[lang='zh_tw'],
+.CButton_content_cc[lang='zh_sg'],
+.CButton_content_cc[lang='zh_cn'],
+.CButton_content_cc[lang='th'] {
+    font-weight: 400;
+}
 .CButton_base__main_42 .CButton_content_cc,
-    .CButton_base__primaryRed_ec .CButton_content_cc {
-        text-shadow: 0 -1rem 1rem #600;
-    }
+.CButton_base__primaryRed_ec .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #600;
+}
 .CButton_base__secondary_50 .CButton_content_cc {
-        color: rgba(254,254,236, .75);
-    }
+    color: rgba(254, 254, 236, 0.75);
+}
 .CButton_base__primaryGreen_6f .CButton_content_cc {
-        text-shadow: 0 -1rem 1rem #1c2502;
-    }
+    text-shadow: 0 -1rem 1rem #1c2502;
+}
 .CButton_base__extraSmall_27 .CButton_content_cc {
-        font-size: 12rem;
-    }
+    font-size: 12rem;
+}
 .CButton_base__small_df .CButton_content_cc {
-        font-size: 14rem;
-    }
+    font-size: 14rem;
+}
 .CButton_base__medium_74 .CButton_content_cc {
-        font-size: 15rem;
-    }
+    font-size: 15rem;
+}
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
+}
 .CButton_base__disabled_d9 .CButton_content_cc {
-        opacity: .6;
-    }
+    opacity: 0.6;
+}
 
 .Counter_base_9e {
     display: flex;
@@ -209,34 +224,35 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation: Counter_show_be ease-in-out forwards;
 }
 
-    .Counter_base__big_19 {
-        min-width: 21rem;
-        height: 21rem;
-    }
+.Counter_base__big_19 {
+    min-width: 21rem;
+    height: 21rem;
+}
 
-    .Counter_base__small_3b {
-        min-width: 13rem;
-        height: 13rem;
-    }
+.Counter_base__small_3b {
+    min-width: 13rem;
+    height: 13rem;
+}
 
-    .Counter_base__empty_98 {
-        min-width: 6rem;
-        height: 6rem;
-    }
+.Counter_base__empty_98 {
+    min-width: 6rem;
+    height: 6rem;
+}
 
-    .Counter_base__animated_40 {
-        animation-duration: .2s;
-    }
+.Counter_base__animated_40 {
+    animation-duration: 0.2s;
+}
 
-    .Counter_base__hidden_56 {
-        animation-name: Counter_hide_b6;
-    }
+.Counter_base__hidden_56 {
+    animation-name: Counter_hide_b6;
+}
 .Counter_bg_74 {
     border: 1rem solid #fe4e0f;
     border-radius: 7rem;
-    box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
-            0 0 6rem rgba(254,103,0, .2),
-            0 0 12rem 4rem rgba(249,0,0, .3);
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 6rem rgba(254, 103, 0, 0.2),
+        0 0 12rem 4rem rgba(249, 0, 0, 0.3);
     background-image: url('R.images.gui.maps.icons.components.counter.pattern');
     position: absolute;
     top: 0;
@@ -246,11 +262,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     z-index: -1;
 }
 .Counter_base__big_19 .Counter_bg_74 {
-        border-radius: 11rem;
-    }
+    border-radius: 11rem;
+}
 .Counter_base__small_3b .Counter_bg_74 {
-        border-radius: 7rem;
-    }
+    border-radius: 7rem;
+}
 .Counter_value_3e {
     display: flex;
     padding: 0 4rem;
@@ -260,27 +276,27 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     white-space: nowrap;
 }
 .Counter_base__big_19 .Counter_value_3e {
-        padding: 0 7rem;
-        font-size: 14rem;
-        line-height: 20rem;
-    }
+    padding: 0 7rem;
+    font-size: 14rem;
+    line-height: 20rem;
+}
 .Counter_base__small_3b .Counter_value_3e {
-        font-size: 9rem;
-        line-height: 12rem;
-    }
+    font-size: 9rem;
+    line-height: 12rem;
+}
 .Counter_value__text_d6 {
-        padding: 0 7rem;
-    }
+    padding: 0 7rem;
+}
 .Counter_base__big_19 .Counter_value__text_d6 {
-            padding: 0 10rem;
-        }
+    padding: 0 10rem;
+}
 .Counter_base__small_3b .Counter_value__text_d6 {
-            padding: 0 5rem;
-            font-size: 10rem;
-        }
+    padding: 0 5rem;
+    font-size: 10rem;
+}
 .Counter_base__pattern_71 .Counter_value_3e {
-        display: none;
-    }
+    display: none;
+}
 .Counter_plus_15 {
     position: relative;
     top: -1rem;
@@ -289,16 +305,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: none;
 }
 .Counter_base__pattern_71 .Counter_pattern_83 {
-        display: block;
-        border-radius: 50%;
-        background-image: url('R.images.gui.maps.icons.components.counter.pattern');
-        opacity: .8;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
+    display: block;
+    border-radius: 50%;
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 @keyframes Counter_show_be {
     0% {
         transform: scale(0);
@@ -334,15 +350,17 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .ToggleButton_base__active_05 .ToggleButton_overlay_76 {
-        border: 1rem solid rgba(255, 195, 99, .75);
-        box-shadow: 0 0 0 1rem rgba(0, 0, 0, .6), 0 0 7px rgba(238, 112, 0, .5);
-        background: linear-gradient(
-            180deg,
-            rgba(255, 42, 0, .1) 0%,
-            rgba(255, 42, 0, 0) .01%,
-            rgba(255, 127, 0, .1) 100%
-        );
-    }
+    border: 1rem solid rgba(255, 195, 99, 0.75);
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.6),
+        0 0 7px rgba(238, 112, 0, 0.5);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 42, 0, 0.1) 0%,
+        rgba(255, 42, 0, 0) 0.01%,
+        rgba(255, 127, 0, 0.1) 100%
+    );
+}
 
 .ToggleButton_button_14 {
     padding: 0;
@@ -360,8 +378,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .ToggleButton_base__active_05 .ToggleButton_indicator_c2 {
-        background-image: url('R.images.gui.maps.icons.buttons.toggle_indicator_active');
-    }
+    background-image: url('R.images.gui.maps.icons.buttons.toggle_indicator_active');
+}
 
 .ToggleButton_counter_86 {
     position: absolute;
@@ -404,10 +422,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 24rem;
 }
 
-    .ToggleIcon_base__small_3e {
-        width: 30rem;
-        height: 20rem;
-    }
+.ToggleIcon_base__small_3e {
+    width: 30rem;
+    height: 20rem;
+}
 
 .ToggleIcon_icon_e7 {
     position: absolute;
@@ -424,43 +442,43 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     align-items: center;
     width: 34rem;
     height: 24rem;
-    color: #FEFEEC;
+    color: #fefeec;
     font-size: 11rem;
     font-weight: 400;
 }
 
-    .VehicleTier_base__small_fc {
-        width: 30rem;
-        height: 20rem;
-    }
+.VehicleTier_base__small_fc {
+    width: 30rem;
+    height: 20rem;
+}
 
 .ToggleButtonIcon_icon__vehicleType_83 {
-        background-size: 9rem 12rem;
-    }
-    .ToggleButtonIcon_icon__nation_c1,
-    .ToggleButtonIcon_icon__vehicleGradePrimary_d6 {
-        background-size: 26rem 16rem;
-    }
-    .ToggleButtonIcon_icon__tankmanRole_4b {
-        background-size: 14rem 14rem;
-        opacity: .6;
-    }
-    .ToggleButtonIcon_icon__selected_ca .ToggleButtonIcon_icon__tankmanRole_4b {
-            opacity: 1;
-        }
-    .ToggleButtonIcon_icon__tankmanKind_5e,
-    .ToggleButtonIcon_icon__vehicleGradeElite_26,
-    .ToggleButtonIcon_icon__locationRecruit_3b,
-    .ToggleButtonIcon_icon__locationTankman_f6 {
-        background-size: 24rem 24rem;
-    }
-    .ToggleButtonIcon_icon__personalDataType_a8,
-    .ToggleButtonIcon_icon__tankmanKindDismissed_86 {
-        background-size: 34rem 24rem;
-    }
-    .ToggleButtonIcon_icon__vehicleGradePremium_11 {
-        background-size: 20rem 17rem;
-    }
+    background-size: 9rem 12rem;
+}
+.ToggleButtonIcon_icon__nation_c1,
+.ToggleButtonIcon_icon__vehicleGradePrimary_d6 {
+    background-size: 26rem 16rem;
+}
+.ToggleButtonIcon_icon__tankmanRole_4b {
+    background-size: 14rem 14rem;
+    opacity: 0.6;
+}
+.ToggleButtonIcon_icon__selected_ca .ToggleButtonIcon_icon__tankmanRole_4b {
+    opacity: 1;
+}
+.ToggleButtonIcon_icon__tankmanKind_5e,
+.ToggleButtonIcon_icon__vehicleGradeElite_26,
+.ToggleButtonIcon_icon__locationRecruit_3b,
+.ToggleButtonIcon_icon__locationTankman_f6 {
+    background-size: 24rem 24rem;
+}
+.ToggleButtonIcon_icon__personalDataType_a8,
+.ToggleButtonIcon_icon__tankmanKindDismissed_86 {
+    background-size: 34rem 24rem;
+}
+.ToggleButtonIcon_icon__vehicleGradePremium_11 {
+    background-size: 20rem 17rem;
+}
 
 .FilterToggleGroup_base_69 {
     display: flex;
@@ -485,33 +503,33 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .FilterToggleGroup_toggle_d4 + .FilterToggleGroup_toggle_d4 {
-        margin-left: 6rem;
-    }
+    margin-left: 6rem;
+}
 
 .FilterToggleGroup_base__inPopup_11 .FilterToggleGroup_toggle_d4 {
-        width: 30rem;
-        height: 20rem;
-        margin: 0 15rem 14rem 0;
-    }
+    width: 30rem;
+    height: 20rem;
+    margin: 0 15rem 14rem 0;
+}
 
 .NumberRange_base_5e {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    color: #8C8C7E;
+    color: #8c8c7e;
 }
 
-    .NumberRange_base__animation_79 {
-        animation: NumberRange_blinkAnim_71 cubic-bezier(.45, .05, .55, .95) infinite 2s;
-    }
+.NumberRange_base__animation_79 {
+    animation: NumberRange_blinkAnim_71 cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite 2s;
+}
 
 .NumberRange_from_70 {
-    color: #E9E2BF;
+    color: #e9e2bf;
 }
 
 .NumberRange_from__red_f8 {
-        color: #FF2717;
-    }
+    color: #ff2717;
+}
 
 .NumberRange_separator_c0 {
     padding: 0 2rem;
@@ -570,42 +588,42 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .PopoverDecorator_arrow__bottom_c3,
-    .PopoverDecorator_arrow__top_6e {
-        width: 301rem;
-        height: 90rem;
-        margin: 0 58rem;
-        background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_top');
-        left: 50%;
-    }
+.PopoverDecorator_arrow__top_6e {
+    width: 301rem;
+    height: 90rem;
+    margin: 0 58rem;
+    background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_top');
+    left: 50%;
+}
 
 .PopoverDecorator_arrow__left_7a,
-    .PopoverDecorator_arrow__right_b6 {
-        width: 84rem;
-        height: 181rem;
-        margin: 58rem 0;
-        background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_left');
-        top: 50%;
-    }
+.PopoverDecorator_arrow__right_b6 {
+    width: 84rem;
+    height: 181rem;
+    margin: 58rem 0;
+    background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_left');
+    top: 50%;
+}
 
 .PopoverDecorator_arrow__left_7a {
-        right: 10rem;
-        transform: scaleX(-1) translateY(-90rem);
-    }
+    right: 10rem;
+    transform: scaleX(-1) translateY(-90rem);
+}
 
 .PopoverDecorator_arrow__right_b6 {
-        left: 10rem;
-        transform: translateY(-90rem);
-    }
+    left: 10rem;
+    transform: translateY(-90rem);
+}
 
 .PopoverDecorator_arrow__top_6e {
-        bottom: 8rem;
-        transform: scaleY(-1) translateX(-150rem);
-    }
+    bottom: 8rem;
+    transform: scaleY(-1) translateX(-150rem);
+}
 
 .PopoverDecorator_arrow__bottom_c3 {
-        top: 8rem;
-        transform: translateX(-150rem);
-    }
+    top: 8rem;
+    transform: translateX(-150rem);
+}
 
 .PopoverDecorator_closeBtn_32 {
     width: 18rem;
@@ -619,13 +637,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .PopoverDecorator_closeBtn_32:hover {
-        filter: brightness(160%);
-    }
+    filter: brightness(160%);
+}
 
 .PopoverDecorator_closeBtn_32:active {
-        background-image: url('R.images.gui.maps.icons.popovers.close_button_slim_press');
-        filter: brightness(100%);
-    }
+    background-image: url('R.images.gui.maps.icons.popovers.close_button_slim_press');
+    filter: brightness(100%);
+}
 
 .PopoverDecorator_content_f0 {
     position: relative;
@@ -647,7 +665,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 0;
     bottom: 0;
     left: 0;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 12rem;
     font-weight: 400;
     line-height: 1.3;
@@ -662,7 +680,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .PopupButton_popupButtonLabel_ed {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -682,8 +700,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .PopupButton_buttonIcon__isHighlighted_84 {
-        filter: drop-shadow(0 0 15rem #ee5003) drop-shadow(0 0 6rem rgba(255, 42, 0, .5));
-    }
+    filter: drop-shadow(0 0 15rem #ee5003) drop-shadow(0 0 6rem rgba(255, 42, 0, 0.5));
+}
 
 .PopupButton_discountAlert_c8 {
     position: absolute;
@@ -720,87 +738,93 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 100%;
     border: 1rem solid #464538;
     border-radius: 2rem;
-    box-shadow: inset 0 0 1rem #000, inset 0 0 8rem #000;
+    box-shadow:
+        inset 0 0 1rem #000,
+        inset 0 0 8rem #000;
     position: relative;
-    transition: border .3s ease-in-out;
+    transition: border 0.3s ease-in-out;
     cursor: text;
 }
 
-    .InputControl_base__focused_aa {
-        border-color: #626156;
-    }
+.InputControl_base__focused_aa {
+    border-color: #626156;
+}
 
-    .InputControl_base__alert_22 {
-        border-color: #EE7000;
-        box-shadow: inset 0 0 1rem #000, inset 0 0 8rem #000,
-            inset 0 0 6rem #8d0d03;
-    }
+.InputControl_base__alert_22 {
+    border-color: #ee7000;
+    box-shadow:
+        inset 0 0 1rem #000,
+        inset 0 0 8rem #000,
+        inset 0 0 6rem #8d0d03;
+}
 
-    .InputControl_base__error_ff {
-        border-color: #FF2717;
-        box-shadow: inset 0 0 1rem #000, inset 0 0 8rem #000,
-            inset 0 0 6rem #8d0d03;
-    }
+.InputControl_base__error_ff {
+    border-color: #ff2717;
+    box-shadow:
+        inset 0 0 1rem #000,
+        inset 0 0 8rem #000,
+        inset 0 0 6rem #8d0d03;
+}
 
-    .InputControl_base__done_a7 {
-        border-color: #7AB300;
-    }
+.InputControl_base__done_a7 {
+    border-color: #7ab300;
+}
 
-    .InputControl_base__disabled_f8 {
-        cursor: default;
-    }
+.InputControl_base__disabled_f8 {
+    cursor: default;
+}
 
 .InputControl_input_93 {
     flex: 1;
     border: none;
     background-color: transparent;
-    color: #8C8C7E;
+    color: #8c8c7e;
     position: relative;
     z-index: 1;
 }
 
 .InputControl_base__small_85 .InputControl_input_93 {
     font-size: 12rem;
-        padding: 1rem 4rem 2rem 8rem;
-    }
+    padding: 1rem 4rem 2rem 8rem;
+}
 
 .InputControl_base__medium_a2 .InputControl_input_93 {
     font-size: 14rem;
-        padding: 1rem 4rem 2rem 8rem;
-    }
+    padding: 1rem 4rem 2rem 8rem;
+}
 
 .InputControl_base__large_32 .InputControl_input_93 {
     font-size: 16rem;
-        padding: 4rem 6rem 5rem 12rem;
-    }
+    padding: 4rem 6rem 5rem 12rem;
+}
 
 .InputControl_base__withIcon_9e.InputControl_base__small_85 .InputControl_input__search_85 {
-            padding-left: 20rem;
-        }
+    padding-left: 20rem;
+}
 
 .InputControl_base__withIcon_9e.InputControl_base__medium_a2 .InputControl_input__search_85 {
-            padding-left: 24rem;
-        }
+    padding-left: 24rem;
+}
 
 .InputControl_base__withIcon_9e.InputControl_base__large_32 .InputControl_input__search_85 {
-            padding-left: 36rem;
-        }
+    padding-left: 36rem;
+}
 
 .InputControl_base__disabled_f8 .InputControl_input_93 {
-        color: #37362E;
-        pointer-events: none;
-    }
+    color: #37362e;
+    pointer-events: none;
+}
 
 .InputControl_input_93::selection {
-        background-color: #8C8C7E;
-        color: #37362E;
-    }
+    background-color: #8c8c7e;
+    color: #37362e;
+}
 
 .InputControl_disabled_78 {
     width: 100%;
     height: 100%;
     background: url('R.images.gui.maps.icons.library.disabled_pattern') center / 9rem;
-    opacity: .8;
+    opacity: 0.8;
     position: absolute;
 }
 
@@ -813,32 +837,32 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .InputControl_base__small_85 .InputControl_placeholder_e3 {
     font-size: 12rem;
-    }
+}
 
 .InputControl_base__medium_a2 .InputControl_placeholder_e3 {
     font-size: 14rem;
-    }
+}
 
 .InputControl_base__large_32 .InputControl_placeholder_e3 {
     font-size: 16rem;
-        left: 12rem;
-    }
+    left: 12rem;
+}
 
 .InputControl_base__withIcon_9e.InputControl_base__small_85 .InputControl_placeholder__search_d5 {
-            left: 20rem;
-        }
+    left: 20rem;
+}
 
 .InputControl_base__withIcon_9e.InputControl_base__medium_a2 .InputControl_placeholder__search_d5 {
-            left: 24rem;
-        }
+    left: 24rem;
+}
 
 .InputControl_base__withIcon_9e.InputControl_base__large_32 .InputControl_placeholder__search_d5 {
-            left: 36rem;
-        }
+    left: 36rem;
+}
 
 .InputControl_base__disabled_f8 .InputControl_placeholder_e3 {
-        color: #37362E;
-    }
+    color: #37362e;
+}
 
 .InputControl_icon_13 {
     background: no-repeat center / contain;
@@ -849,27 +873,27 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .InputControl_base__small_85 .InputControl_icon__search_57 {
-            width: 8rem;
-            height: 8rem;
-        }
+    width: 8rem;
+    height: 8rem;
+}
 
 .InputControl_base__medium_a2 .InputControl_icon__search_57 {
-            width: 10rem;
-            height: 10rem;
-        }
+    width: 10rem;
+    height: 10rem;
+}
 
 .InputControl_base__large_32 .InputControl_icon__search_57 {
-            width: 16rem;
-            height: 16rem;
-            left: 12rem;
-        }
+    width: 16rem;
+    height: 16rem;
+    left: 12rem;
+}
 
 .InputControl_base__disabled_f8 .InputControl_icon_13 {
-        opacity: .5;
-    }
+    opacity: 0.5;
+}
 
 .InputControl_clear_bb {
-    opacity: .6;
+    opacity: 0.6;
     position: absolute;
     right: 4rem;
     z-index: 1;
@@ -877,39 +901,39 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .InputControl_clear_bb:hover {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 .InputControl_base__small_85 .InputControl_clear_bb {
-        width: 12rem;
-        height: 12rem;
-        background: url('R.images.gui.maps.icons.components.input.close_small') no-repeat center / 8rem;
-    }
+    width: 12rem;
+    height: 12rem;
+    background: url('R.images.gui.maps.icons.components.input.close_small') no-repeat center / 8rem;
+}
 
 .InputControl_base__medium_a2 .InputControl_clear_bb {
-        width: 14rem;
-        height: 14rem;
-        background: url('R.images.gui.maps.icons.components.input.close_medium') no-repeat center / 10rem;
-    }
+    width: 14rem;
+    height: 14rem;
+    background: url('R.images.gui.maps.icons.components.input.close_medium') no-repeat center / 10rem;
+}
 
 .InputControl_base__large_32 .InputControl_clear_bb {
-        width: 20rem;
-        height: 20rem;
-        background: url('R.images.gui.maps.icons.components.input.close_large') no-repeat center / 16rem;
-        right: 6rem;
-    }
+    width: 20rem;
+    height: 20rem;
+    background: url('R.images.gui.maps.icons.components.input.close_large') no-repeat center / 16rem;
+    right: 6rem;
+}
 
 .HelperMessage_base_1e {
     display: flex;
     width: 100%;
     opacity: 0;
-    transition: opacity ease .2s;
+    transition: opacity ease 0.2s;
     pointer-events: none;
 }
 
-    .HelperMessage_base__shown_ab {
-        opacity: 1;
-    }
+.HelperMessage_base__shown_ab {
+    opacity: 1;
+}
 
 .HelperMessage_icon_10 {
     width: 16rem;
@@ -923,38 +947,38 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .HelperMessage_message__alert_b5 {
-        color: #EE7000;
-    }
+    color: #ee7000;
+}
 
 .HelperMessage_message__error_45 {
-        color: #FF2717;
-    }
+    color: #ff2717;
+}
 
 .HelperMessage_message__done_2b {
-        color: #7AB300;
-    }
+    color: #7ab300;
+}
 
 .Input_base_cd {
     display: flex;
     flex-direction: column;
     width: 100%;
     border-radius: 2rem;
-    box-shadow: 0 0 1rem rgba(0,0,0, .6);
-    background-color: rgba(23,23,15, .8);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+    background-color: rgba(23, 23, 15, 0.8);
     position: relative;
 }
 
-    .Input_base__small_c7 {
-        height: 18rem;
-    }
+.Input_base__small_c7 {
+    height: 18rem;
+}
 
-    .Input_base__medium_1f {
-        height: 24rem;
-    }
+.Input_base__medium_1f {
+    height: 24rem;
+}
 
-    .Input_base__large_11 {
-        height: 32rem;
-    }
+.Input_base__large_11 {
+    height: 32rem;
+}
 
 .Input_helper_ea {
     height: 100%;
@@ -969,7 +993,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     justify-content: space-between;
     align-items: center;
     padding-bottom: 10rem;
-    border-bottom: 1rem solid rgba(255,255,255, .1);
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.1);
 }
 
 .FilterPanelWidgetApp_titleWrapper_1b {
@@ -979,12 +1003,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .FilterPanelWidgetApp_title_ad {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
     margin-right: 5rem;
-    opacity: .9;
+    opacity: 0.9;
 }
 
 .FilterPanelWidgetApp_filters_0d {
@@ -1006,11 +1030,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 24rem;
     margin: 0 15rem;
     background: linear-gradient(180deg, transparent 0%, #d9d9d9 50%, transparent 100%);
-    opacity: .35;
+    opacity: 0.35;
 }
 
 .FilterPanelWidgetApp_filterLabel_5b {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -1020,20 +1044,19 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .FilterPanelWidgetApp_base__tankChange_ff .FilterPanelWidgetApp_filterLabel_5b {
-        padding-left: 30rem;
-    }
+    padding-left: 30rem;
+}
 
 .FilterPanelWidgetApp_base__memberChange_18 .FilterPanelWidgetApp_popupButtonWrapper_4c,
-    .FilterPanelWidgetApp_base__personalData_1d .FilterPanelWidgetApp_popupButtonWrapper_4c,
-    .FilterPanelWidgetApp_base__tankChange_ff .FilterPanelWidgetApp_popupButtonWrapper_4c {
-        padding-left: 15rem;
-    }
+.FilterPanelWidgetApp_base__personalData_1d .FilterPanelWidgetApp_popupButtonWrapper_4c,
+.FilterPanelWidgetApp_base__tankChange_ff .FilterPanelWidgetApp_popupButtonWrapper_4c {
+    padding-left: 15rem;
+}
 
 .FilterPanelWidgetApp_search_0e {
     width: 162rem;
 }
 
 .FilterPanelWidgetApp_base__tankChange_ff .FilterPanelWidgetApp_search_0e {
-        width: 198rem;
-    }
-
+    width: 198rem;
+}

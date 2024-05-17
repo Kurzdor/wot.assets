@@ -15,8 +15,8 @@
     cursor: pointer;
 }
 .AnimationControls_base__disabled_86 .AnimationControls_icon_03 {
-        background-image: url('R.images.event_lootboxes.gui.maps.openBox.icon_show_video');
-    }
+    background-image: url('R.images.event_lootboxes.gui.maps.openBox.icon_show_video');
+}
 .AnimationControls_glow_f3 {
     width: 40rem;
     height: 50rem;
@@ -26,29 +26,29 @@
     top: 50%;
     left: 5rem;
     transform: translateY(-50%);
-    transition: opacity .16s;
+    transition: opacity 0.16s;
 }
 .AnimationControls_base_c8:hover .AnimationControls_glow_f3 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .AnimationControls_text_95 {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 12rem;
     line-height: 14rem;
-    text-shadow: 0 0 10rem rgba(255,42,0, 1),
-        0 0 10rem rgba(255,42,0, .4),
-        0 0 10rem rgba(255,42,0, .4),
-        0 0 2rem rgba(255,42,0, .4),
-        0 0 1rem rgba(255,42,0, .4),
-        0 0 2rem rgba(255,42,0, .4),
-        0 0 1rem rgba(255,42,0, .4);
-    transition: color .16s;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+    transition: color 0.16s;
     cursor: pointer;
 }
 .AnimationControls_base_c8:hover .AnimationControls_text_95 {
-        color: #fffa9f;
-    }
+    color: #fffa9f;
+}
 .AnimationControls_base_c8:active .AnimationControls_text_95 {
-        color: #fd9;
-    }
-
+    color: #fd9;
+}

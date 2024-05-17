@@ -8,6 +8,7 @@
 .App_base_79 {
     width: 100%;
     height: 100%;
+    overflow: hidden;
     position: relative;
     cursor: pointer;
 }
@@ -20,45 +21,45 @@
     left: 0;
 }
 .App_layer__logo_90 {
-            background-image: url('R.images.gui.maps.icons.comp7.tournaments.logo');
-        }
+    background-image: url('R.images.gui.maps.icons.comp7.tournaments.logo');
+}
 .App_base__extended_1f .App_layer__logo_90 {
-                background-image: url('R.images.gui.maps.icons.comp7.tournaments.logo_extended');
-            }
+    background-image: url('R.images.gui.maps.icons.comp7.tournaments.logo_extended');
+}
 .App_layer__scene_6d {
-            background-image: url('R.images.gui.maps.icons.comp7.tournaments.scene');
-        }
+    background-image: url('R.images.gui.maps.icons.comp7.tournaments.scene');
+}
 .App_base__extended_1f .App_layer__scene_6d {
-                background-image: url('R.images.gui.maps.icons.comp7.tournaments.scene_extended');
-            }
+    background-image: url('R.images.gui.maps.icons.comp7.tournaments.scene_extended');
+}
 .App_layer__shadow_6c {
-            background-image: url('R.images.gui.maps.icons.comp7.tournaments.shadow');
-        }
+    background-image: url('R.images.gui.maps.icons.comp7.tournaments.shadow');
+}
 .App_base__extended_1f .App_layer__shadow_6c {
-                background-image: url('R.images.gui.maps.icons.comp7.tournaments.shadow_extended');
-            }
+    background-image: url('R.images.gui.maps.icons.comp7.tournaments.shadow_extended');
+}
 .App_layer__logo_90 {
-        transition: transform 1s cubic-bezier(.07, .82, .17, 1);
-    }
+    transition: transform 1s cubic-bezier(0.07, 0.82, 0.17, 1);
+}
 .App_base_79:hover .App_layer__logo_90 {
-            transform: translateY(-8rem);
-        }
+    transform: translateY(-8rem);
+}
 .App_base__extended_1f:hover .App_layer__logo_90 {
-            transform: translateY(-16rem);
-        }
+    transform: translateY(-16rem);
+}
 .App_layer__scene_6d {
-        transition: transform 2s cubic-bezier(.07, .82, .17, 1);
-    }
+    transition: transform 2s cubic-bezier(0.07, 0.82, 0.17, 1);
+}
 .App_base_79:hover .App_layer__scene_6d {
-            transform: translateX(-2rem) translateY(-1rem);
-        }
+    transform: translateX(-2rem) translateY(-1rem);
+}
 .App_base__extended_1f .App_layer__scene_6d {
-            transition: transform 5s cubic-bezier(.07, .82, .17, 1);
-            mask-image: linear-gradient(to bottom, #000 70%, transparent);
-        }
+    transition: transform 5s cubic-bezier(0.07, 0.82, 0.17, 1);
+    mask-image: linear-gradient(to bottom, #000 70%, transparent);
+}
 .App_base__extended_1f:hover .App_layer__scene_6d {
-            transform: translateX(-4rem) translateY(-3rem);
-        }
+    transform: translateX(-4rem) translateY(-3rem);
+}
 .App_particles_a8 {
     width: 170rem;
     height: 103rem;
@@ -69,9 +70,9 @@
     transform: translateX(-50%);
 }
 .App_base__extended_1f .App_particles_a8 {
-        width: 210rem;
-        height: 127rem;
-    }
+    width: 210rem;
+    height: 127rem;
+}
 .App_content_60 {
     display: flex;
     flex-direction: column;
@@ -82,22 +83,21 @@
     position: relative;
 }
 .App_base__extended_1f .App_content_60 {
-        padding: 0 14rem 20rem;
-    }
+    padding: 0 14rem 20rem;
+}
 .App_heading_ae,
 .App_text_a5 {
     justify-content: center;
 }
 .App_heading_ae {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 15rem;
     font-weight: 700;
 }
 .App_base__extended_1f .App_heading_ae {
-        margin-bottom: 4rem;
-    }
+    margin-bottom: 4rem;
+}
 .App_text_a5 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
 }
-

@@ -4,12 +4,12 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.atlases.components.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .RerollTooltipContent_base_a9 {
     width: 240rem;
@@ -34,14 +34,14 @@
 }
 
 .RerollTooltipContent_desc_timeLeft_2a {
-        display: inline;
-        color: #e9e2bf;
-    }
+    display: inline;
+    color: #e9e2bf;
+}
 
 .RerollTooltipContent_desc_42 span {
-        height: 18rem;
-        margin: 0 2rem;
-    }
+    height: 18rem;
+    margin: 0 2rem;
+}
 
 .RerollTooltipContent_available_63 {
     display: flex;
@@ -53,20 +53,19 @@
 }
 
 .RerollTooltipContent_available_icon_cf {
-        width: 24rem;
-        height: 24rem;
-        margin: 1rem 2rem 0 -6rem;
-        background-image: url('R.images.gui.maps.icons.missions.daily.widgets.clock_icon_s');
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
+    width: 24rem;
+    height: 24rem;
+    margin: 1rem 2rem 0 -6rem;
+    background-image: url('R.images.gui.maps.icons.missions.daily.widgets.clock_icon_s');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 
 .RerollTooltipContent_available_timeLeft_13 {
-        margin-left: 4rem;
-    }
+    margin-left: 4rem;
+}
 
 body {
     margin: 0;
     line-height: normal;
 }
-

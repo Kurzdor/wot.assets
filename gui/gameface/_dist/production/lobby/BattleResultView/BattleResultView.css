@@ -1,69 +1,100 @@
+.Background_base_94 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat 50% / cover;
+}
+
+.Background_base__blur_69 {
+    filter: blur(12px);
+}
+
+.Background_vignette_79 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.story_mode.gui.maps.icons.common.vignette') no-repeat 50% / 100%;
+}
+
+.Background_preloader_7d {
+    display: none;
+}
+
 .CButton_base_40 {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.6);
     position: relative;
     cursor: pointer;
 }
 
-    .CButton_base__main_42,
-    .CButton_base__primary_7f,
-    .CButton_base__primaryGreen_6f,
-    .CButton_base__primaryRed_ec,
-    .CButton_base__secondary_50 {
-        background-size: 100% 100%;
-    }
+.CButton_base__main_42,
+.CButton_base__primary_7f,
+.CButton_base__primaryGreen_6f,
+.CButton_base__primaryRed_ec,
+.CButton_base__secondary_50 {
+    background-size: 100% 100%;
+}
 
-    .CButton_base__main_42 {
-        background-image: url('R.images.gui.maps.icons.components.button.back_main');
-    }
+.CButton_base__main_42 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_main');
+}
 
-    .CButton_base__primary_7f {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
-    }
+.CButton_base__primary_7f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+}
 
-    .CButton_base__primaryGreen_6f {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
-    }
+.CButton_base__primaryGreen_6f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
 
-    .CButton_base__primaryRed_ec {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
-    }
+.CButton_base__primaryRed_ec {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
 
-    .CButton_base__secondary_50 {
-        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
-    }
+.CButton_base__secondary_50 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
 
-    .CButton_base__ghost_ed {
-        border-radius: 3rem;
-        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
-            0 0 0 1rem rgba(255,255,255, .15) inset;
-        background-color: rgba(0,0,0, .15);
-    }
+.CButton_base__ghost_ed {
+    border-radius: 3rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 0 1rem rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
 
-    .CButton_base__extraSmall_27 {
-        min-height: 17rem;
-        padding: 0 16rem;
-    }
+.CButton_base__extraSmall_27 {
+    min-height: 17rem;
+    padding: 0 16rem;
+}
 
-    .CButton_base__small_df,
-    .CButton_base__medium_74 {
-        padding: 0 20rem;
-    }
+.CButton_base__small_df,
+.CButton_base__medium_74 {
+    padding: 0 20rem;
+}
 
-    .CButton_base__small_df {
-        min-height: 18rem;
-    }
+.CButton_base__small_df {
+    min-height: 18rem;
+}
 
-    .CButton_base__medium_74 {
-        min-height: 32rem;
-    }
+.CButton_base__medium_74 {
+    min-height: 32rem;
+}
 
-    .CButton_base__disabled_d9 {
-        cursor: default;
-    }
+.CButton_base__large_5c {
+    min-height: 48rem;
+}
+
+.CButton_base__disabled_d9 {
+    cursor: default;
+}
 /* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
 The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
 between 'border-image-width' and 'fill'.
@@ -79,20 +110,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
 }
 .CButton_base__main_42 .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+}
 .CButton_base__primary_7f .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+}
 .CButton_base__primaryGreen_6f .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
 .CButton_base__primaryRed_ec .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
 .CButton_base__secondary_50 .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
 .CButton_texture_fe {
     background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
     background-size: 155rem 31rem;
@@ -109,12 +140,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 0;
     bottom: 0;
     left: 0;
-    transition: box-shadow .16s ease-in-out;
+    transition: box-shadow 0.16s ease-in-out;
 }
 .CButton_base__focus_83 .CButton_state_11 {
-        border-radius: 2rem;
-        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
-    }
+    border-radius: 2rem;
+    box-shadow: inset 0 0 2rem 1rem rgba(255, 85, 0, 0.2);
+}
 .CButton_stateHighlightHover_ff,
 .CButton_stateHighlightActive_35,
 .CButton_stateDisabled_54 {
@@ -125,40 +156,47 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     bottom: 0;
     left: 0;
 }
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-        transition: opacity .16s ease-in-out;
-    }
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
+.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
+.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+    transition: opacity 0.16s ease-in-out;
+}
 .CButton_stateHighlightHover_ff {
-    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+    background-image: linear-gradient(
+        180deg,
+        rgba(252, 248, 235, 0.25) 0%,
+        rgba(252, 248, 235, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
 }
 .CButton_base_40:hover .CButton_stateHighlightHover_ff {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_base_40:active .CButton_stateHighlightHover_ff {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
-        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
-        background-color: rgba(8,6,0, .18);
-        background-image: none;
-    }
+    box-shadow: 0 15rem 12rem 0 rgba(242, 242, 230, 0.11) inset;
+    background-color: rgba(8, 6, 0, 0.18);
+    background-image: none;
+}
 .CButton_stateHighlightActive_35 {
-    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
 }
 .CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_stateDisabled_54 {
-    background-color: rgba(0,0,0, .25);
+    background-color: rgba(0, 0, 0, 0.25);
     background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
     background-size: 15rem;
 }
 .CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_content_cc {
     display: flex;
     align-items: center;
@@ -166,39 +204,42 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 700;
     line-height: 1.2;
     text-shadow: 0 -1rem 1rem #000;
-    letter-spacing: .03em;
+    letter-spacing: 0.03em;
     transform: translateY(-1rem);
 }
-.CButton_content_cc[lang=ja],
-    .CButton_content_cc[lang=ko],
-    .CButton_content_cc[lang=zh_tw],
-    .CButton_content_cc[lang=zh_sg],
-    .CButton_content_cc[lang=zh_cn],
-    .CButton_content_cc[lang=th] {
-        font-weight: 400;
-    }
+.CButton_content_cc[lang='ja'],
+.CButton_content_cc[lang='ko'],
+.CButton_content_cc[lang='zh_tw'],
+.CButton_content_cc[lang='zh_sg'],
+.CButton_content_cc[lang='zh_cn'],
+.CButton_content_cc[lang='th'] {
+    font-weight: 400;
+}
 .CButton_base__main_42 .CButton_content_cc,
-    .CButton_base__primaryRed_ec .CButton_content_cc {
-        text-shadow: 0 -1rem 1rem #600;
-    }
+.CButton_base__primaryRed_ec .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #600;
+}
 .CButton_base__secondary_50 .CButton_content_cc {
-        color: rgba(254,254,236, .75);
-    }
+    color: rgba(254, 254, 236, 0.75);
+}
 .CButton_base__primaryGreen_6f .CButton_content_cc {
-        text-shadow: 0 -1rem 1rem #1c2502;
-    }
+    text-shadow: 0 -1rem 1rem #1c2502;
+}
 .CButton_base__extraSmall_27 .CButton_content_cc {
-        font-size: 12rem;
-    }
+    font-size: 12rem;
+}
 .CButton_base__small_df .CButton_content_cc {
-        font-size: 14rem;
-    }
+    font-size: 14rem;
+}
 .CButton_base__medium_74 .CButton_content_cc {
-        font-size: 15rem;
-    }
+    font-size: 15rem;
+}
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
+}
 .CButton_base__disabled_d9 .CButton_content_cc {
-        opacity: .6;
-    }
+    opacity: 0.6;
+}
 
 .TextButton_base_b6 {
     display: flex;
@@ -209,9 +250,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     cursor: pointer;
 }
 
-    .TextButton_base__right_39 {
-        flex-direction: row-reverse;
-    }
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
 .TextButton_icon_17 {
     width: 32rem;
     height: 32rem;
@@ -219,22 +260,22 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 .TextButton_icon__back_43,
-    .TextButton_icon__forward_59 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.back');
-        transform: translateY(1rem);
-    }
 .TextButton_icon__forward_59 {
-        transform: rotate(180deg) translateY(1rem);
-    }
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
 .TextButton_icon__close_53 {
-        margin: -1rem 0;
-        background-image: url('R.images.gui.maps.icons.components.text_button.close');
-    }
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
 .TextButton_icon__info_33 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.info');
-    }
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
 .TextButton_glow_a4 {
     width: 100%;
     height: 100%;
@@ -242,72 +283,82 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     opacity: 0;
     position: absolute;
     top: 0;
-    transition: opacity .16s;
+    transition: opacity 0.16s;
 }
 .TextButton_icon__back_43 .TextButton_glow_a4,
-    .TextButton_icon__forward_59 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
-    }
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
 .TextButton_icon__close_53 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
 .TextButton_icon__info_33 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
 .TextButton_base_b6:hover .TextButton_glow_a4 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .TextButton_base_b6:active .TextButton_glow_a4 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .TextButton_caption_82 {
     position: relative;
-    transition: color .16s, text-shadow .16s;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
 }
 .TextButton_caption__back_b9,
-    .TextButton_caption__forward_4e,
-    .TextButton_caption__close_36 {
-        color: #FFDD99;
-        text-shadow: 0 0 10rem rgba(255,42,0, 1),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4);
-    }
-.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
-            color: #fffa9f;
-        }
-.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
-            color: #FFDD99;
-        }
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
 .TextButton_caption__info_23 {
-        padding: 0 5rem;
-        color: #CCFFFF;
-        text-shadow: 0 0 12rem rgba(31,68,255, .8),
-            0 0 8rem #00eaff;
-    }
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
 .TextButton_base_b6:hover .TextButton_caption__info_23 {
-            color: #e3ffff;
-            text-shadow: 0 0 12rem rgba(31,68,255, .8),
-                0 0 12rem rgba(0,234,255, 1),
-                0 0 8rem #00eaff;
-        }
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
 .TextButton_base_b6:active .TextButton_caption__info_23 {
-            color: #CCFFFF;
-            text-shadow: 0 0 12rem rgba(31,68,255, .6),
-                0 0 8rem #00eaff;
-        }
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
 .TextButton_goto_e7 {
     color: #7c7c6c;
 }
 .TextButton_base__left_ff .TextButton_goto_e7 {
-        margin-left: 8rem;
-    }
+    margin-left: 8rem;
+}
 .TextButton_base__right_39 .TextButton_goto_e7 {
-        margin-right: 8rem;
-    }
+    margin-right: 8rem;
+}
 .TextButton_shine_e2 {
     width: 90rem;
     height: 40rem;
@@ -315,43 +366,21 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     opacity: 0;
     position: absolute;
     top: -4rem;
-    transition: opacity .16s;
+    transition: opacity 0.16s;
     pointer-events: none;
 }
 .TextButton_base__left_ff .TextButton_shine_e2 {
-        left: -4rem;
-    }
+    left: -4rem;
+}
 .TextButton_base__right_39 .TextButton_shine_e2 {
-        right: -4rem;
-        transform: rotate(180deg);
-    }
+    right: -4rem;
+    transform: rotate(180deg);
+}
 .TextButton_base_b6:hover .TextButton_shine_e2 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .TextButton_base_b6:active .TextButton_shine_e2 {
-        opacity: 0;
-    }
-
-.Background_base_94 {
-    width: 100%;
-    height: 100%;
-    background: no-repeat 50% / cover;
-    position: absolute;
-}
-
-    .Background_base__blur_69 {
-        filter: blur(12px);
-    }
-
-.Background_vignette_79 {
-    width: 100%;
-    height: 100%;
-    background: url('R.images.story_mode.gui.maps.icons.common.vignette') no-repeat 50% / 100%;
-    position: absolute;
-}
-
-.Background_preloader_7d {
-    display: none;
+    opacity: 0;
 }
 
 .ExtendedText_base_71 {
@@ -360,13 +389,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
-    .ExtendedText_base__zeroPadding_25 {
-        padding: 0;
-    }
+.ExtendedText_base__zeroPadding_25 {
+    padding: 0;
+}
 
-    .ExtendedText_base__isTruncationAvailable_5b {
-        width: 100%;
-    }
+.ExtendedText_base__isTruncationAvailable_5b {
+    width: 100%;
+}
 
 .ExtendedText_truncated_97 {
     display: flex;
@@ -376,8 +405,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .ExtendedText_truncated__hide_31 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .ExtendedText_unTruncated_b8 {
     display: flex;
@@ -388,7 +417,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 100%;
     justify-content: flex-start;
     align-content: flex-start;
-    color: #FF2717;
+    color: #ff2717;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -401,23 +430,23 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .colors_whiteReal_31 {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .colors_white_45 {
-    color: #F2F2F7;
+    color: #f2f2f7;
 }
 
 .colors_whiteOrange_81 {
-    color: #FEFEEC;
+    color: #fefeec;
 }
 
 .colors_whiteSpanish_c3 {
-    color: #E9E2BF;
+    color: #e9e2bf;
 }
 
 .colors_par_5b {
-    color: #8C8C7E;
+    color: #8c8c7e;
 }
 
 .colors_parSecondary_fd {
@@ -425,39 +454,39 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .colors_parTertiary_97 {
-    color: #37362E;
+    color: #37362e;
 }
 
 .colors_red_79 {
-    color: #FF2717;
+    color: #ff2717;
 }
 
 .colors_redDark_73 {
-    color: #B70000;
+    color: #b70000;
 }
 
 .colors_yellow_76 {
-    color: #FEAB34;
+    color: #feab34;
 }
 
 .colors_orange_cd {
-    color: #EE7000;
+    color: #ee7000;
 }
 
 .colors_cream_0f {
-    color: #FFDD99;
+    color: #ffdd99;
 }
 
 .colors_brown_82 {
-    color: #CBAC77;
+    color: #cbac77;
 }
 
 .colors_greenBright_68 {
-    color: #80D43A;
+    color: #80d43a;
 }
 
 .colors_green_fa {
-    color: #7AB300;
+    color: #7ab300;
 }
 
 .colors_greenDark_a9 {
@@ -465,27 +494,27 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .colors_blueBooster_26 {
-    color: #CCFFFF;
+    color: #ccffff;
 }
 
 .colors_blueTeamkiller_86 {
-    color: #09E2FF;
+    color: #09e2ff;
 }
 
 .colors_cred_35 {
-    color: #CED9D9;
+    color: #ced9d9;
 }
 
 .colors_gold_c3 {
-    color: #FFC363;
+    color: #ffc363;
 }
 
 .colors_bond_ce {
-    color: #C9C9B6;
+    color: #c9c9b6;
 }
 
 .colors_prom_83 {
-    color: #A29B70;
+    color: #a29b70;
 }
 
 .renderers_noBreakWrapper_10 {
@@ -508,6 +537,47 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     overflow-wrap: normal;
 }
 
+.BattleResultDifficultyInfo_base_c2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    bottom: 102rem;
+}
+
+.mediaMedium .BattleResultDifficultyInfo_base_c2 {
+    bottom: 135rem;
+}
+
+.mediaLarge .BattleResultDifficultyInfo_base_c2 {
+    bottom: 143rem;
+}
+
+.BattleResultDifficultyInfo_icon_64 {
+    width: 16rem;
+    height: 16rem;
+    background: url('R.images.gui.maps.icons.dogtags.icons.icon_info') no-repeat 50% / contain;
+}
+
+.mediaMedium .BattleResultDifficultyInfo_icon_64 {
+    margin-top: 3rem;
+}
+
+.BattleResultDifficultyInfo_text_dc {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    position: relative;
+}
+
+.mediaMedium .BattleResultDifficultyInfo_text_dc {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
 .BattleResultMissionProgress_base_c0 {
     display: flex;
     flex-direction: column;
@@ -515,8 +585,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 128rem;
 }
 
-    .mediaMedium .BattleResultMissionProgress_base_c0 {
-        width: 194rem;
+.mediaMedium .BattleResultMissionProgress_base_c0 {
+    width: 194rem;
+}
+
+.mediaMedium .BattleResultMissionProgress_base__withRewards_0e {
+    width: 128rem;
+}
+
+.mediaExtraLarge .BattleResultMissionProgress_base__withRewards_0e {
+    width: 194rem;
 }
 
 .BattleResultMissionProgress_icon_91 {
@@ -527,13 +605,25 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaMedium .BattleResultMissionProgress_icon_91 {
-        width: 264rem;
-        height: 264rem;
-        margin-top: -74rem;
+    width: 264rem;
+    height: 264rem;
+    margin-top: -74rem;
+}
+
+.mediaMedium .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_icon_91 {
+    width: 176rem;
+    height: 176rem;
+    margin: -44rem 0 -63rem;
+}
+
+.mediaExtraLarge .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_icon_91 {
+    width: 264rem;
+    height: 264rem;
+    margin-top: -74rem;
 }
 
 .BattleResultMissionProgress_value_1f {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 22rem;
     font-weight: 700;
     line-height: 1.2;
@@ -543,15 +633,31 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaMedium .BattleResultMissionProgress_value_1f {
-        color: #FFDD99;
-        font-size: 28rem;
-        font-weight: 700;
-        line-height: 1.1;
-        margin-top: -31rem;
+    color: #ffdd99;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: -31rem;
+}
+
+.mediaMedium .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_value_1f {
+    color: #ffdd99;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: -3rem 0 30rem -65rem;
+}
+
+.mediaExtraLarge .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_value_1f {
+    color: #ffdd99;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: -31rem;
 }
 
 .BattleResultMissionProgress_slash_85 {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -559,15 +665,31 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaMedium .BattleResultMissionProgress_slash_85 {
-        color: #FFDD99;
-        font-size: 20rem;
-        font-weight: 400;
-        line-height: 1.2;
-        margin-top: -55rem;
+    color: #ffdd99;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: -55rem;
+}
+
+.mediaMedium .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_slash_85 {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: -49rem 0 28rem;
+}
+
+.mediaExtraLarge .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_slash_85 {
+    color: #ffdd99;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: -55rem;
 }
 
 .BattleResultMissionProgress_total_f2 {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -576,30 +698,89 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaMedium .BattleResultMissionProgress_total_f2 {
-        color: #FFDD99;
-        font-size: 20rem;
-        font-weight: 400;
-        line-height: 1.2;
-        margin-top: -51rem;
+    color: #ffdd99;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: -51rem;
+}
+
+.mediaMedium .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_total_f2 {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: -47rem 0 30rem 65rem;
+}
+
+.mediaExtraLarge .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_total_f2 {
+    color: #ffdd99;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: -51rem;
 }
 
 .BattleResultMissionProgress_name_6f {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
     width: 90rem;
     margin-top: -28rem;
-    opacity: .8;
+    opacity: 0.8;
 }
 
 .mediaMedium .BattleResultMissionProgress_name_6f {
-        color: #FFDD99;
-        font-size: 20rem;
-        font-weight: 400;
-        line-height: 1.2;
-        width: 130rem;
-        margin-top: -17rem;
+    color: #ffdd99;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 130rem;
+    margin-top: -17rem;
+}
+
+.mediaMedium .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_name_6f {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 90rem;
+    margin-top: -28rem;
+}
+
+.mediaExtraLarge .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_name_6f {
+    color: #ffdd99;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 130rem;
+    margin-top: -17rem;
+}
+
+.NumberAnimation_base_f8 {
+    display: flex;
+    color: #f2f2f7;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.NumberAnimation_base__finalBounce_17 {
+    animation: NumberAnimation_bounce_8f 0.2s ease-in-out;
+}
+
+@keyframes NumberAnimation_bounce_8f {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .BattleResultProgress_base_47 {
@@ -607,10 +788,19 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex-direction: column;
     align-items: center;
     width: 128rem;
+    z-index: 2;
 }
 
-    .mediaMedium .BattleResultProgress_base_47 {
-        width: 194rem;
+.mediaMedium .BattleResultProgress_base_47 {
+    width: 194rem;
+}
+
+.mediaMedium .BattleResultProgress_base__withRewards_cd {
+    width: 128rem;
+}
+
+.mediaExtraLarge .BattleResultProgress_base__withRewards_cd {
+    width: 194rem;
 }
 
 .BattleResultProgress_icon_60 {
@@ -620,12 +810,22 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaMedium .BattleResultProgress_icon_60 {
-        width: 128rem;
-        height: 128rem;
+    width: 128rem;
+    height: 128rem;
+}
+
+.mediaMedium .BattleResultProgress_base__withRewards_cd .BattleResultProgress_icon_60 {
+    width: 90rem;
+    height: 90rem;
+}
+
+.mediaExtraLarge .BattleResultProgress_base__withRewards_cd .BattleResultProgress_icon_60 {
+    width: 128rem;
+    height: 128rem;
 }
 
 .BattleResultProgress_value_fc {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 22rem;
     font-weight: 700;
     line-height: 1.2;
@@ -633,38 +833,396 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaMedium .BattleResultProgress_value_fc {
-        color: #F2F2F7;
-        font-size: 28rem;
-        font-weight: 700;
-        line-height: 1.1;
-        margin-top: -32rem;
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: -32rem;
+}
+
+.mediaMedium .BattleResultProgress_base__withRewards_cd .BattleResultProgress_value_fc {
+    color: #f2f2f7;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: -24rem 0 30rem;
+}
+
+.mediaExtraLarge .BattleResultProgress_base__withRewards_cd .BattleResultProgress_value_fc {
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: -32rem;
 }
 
 .BattleResultProgress_name_c2 {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
     width: 90rem;
     margin-top: -28rem;
-    opacity: .8;
+    opacity: 0.8;
 }
 
 .mediaMedium .BattleResultProgress_name_c2 {
-        color: #F2F2F7;
-        font-size: 20rem;
-        font-weight: 400;
-        line-height: 1.2;
-        width: 130rem;
-        margin-top: -17rem;
+    color: #f2f2f7;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 130rem;
+    margin-top: -17rem;
 }
 
-.BattleResultProgressLevels_base_61 {
+.mediaMedium .BattleResultProgress_base__withRewards_cd .BattleResultProgress_name_c2 {
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 90rem;
+    margin-top: -28rem;
+}
+
+.mediaExtraLarge .BattleResultProgress_base__withRewards_cd .BattleResultProgress_name_c2 {
+    color: #f2f2f7;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 130rem;
+    margin-top: -17rem;
+}
+
+.Reward_base_ea {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.Reward_base__s48x48_46,
+.Reward_base__small_c0 {
+    width: 48rem;
+    height: 48rem;
+}
+
+.Reward_base__s80x80_ce,
+.Reward_base__big_e5 {
+    width: 80rem;
+    height: 80rem;
+}
+
+.Reward_base__s128x100_c3 {
+    width: 128rem;
+    height: 100rem;
+}
+
+.Reward_base__s180x135_7c {
+    width: 180rem;
+    height: 135rem;
+}
+
+.Reward_base__s232x174_67 {
+    width: 232rem;
+    height: 174rem;
+}
+
+.Reward_base__s296x222_78 {
+    width: 296rem;
+    height: 222rem;
+}
+
+.Reward_base__s400x300_07 {
+    width: 400rem;
+    height: 300rem;
+}
+
+.Reward_base__s600x450_f8 {
+    width: 600rem;
+    height: 450rem;
+}
+
+.Reward_tooltipWrapper_b5 {
+    height: 100%;
+}
+
+.Reward_icon_df {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.Reward_overlay_68 {
+    background: no-repeat center / 100%;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.Reward_base__s48x48_46 .Reward_overlay_68,
+.Reward_base__small_c0 .Reward_overlay_68 {
+    width: 96rem;
+    height: 96rem;
+    background-size: 100%;
+    overflow: visible;
+}
+
+.Reward_base__s80x80_ce .Reward_overlay_68,
+.Reward_base__big_e5 .Reward_overlay_68 {
+    width: 128rem;
+    height: 128rem;
+}
+
+.Reward_base__s180x135_7c .Reward_overlay_68 {
+    width: 266rem;
+    height: 241rem;
+}
+
+.Reward_base__s232x174_67 .Reward_overlay_68 {
+    width: 344rem;
+    height: 312rem;
+}
+
+.Reward_base__s296x222_78 .Reward_overlay_68 {
+    width: 450rem;
+    height: 408rem;
+}
+
+.Reward_base__s400x300_07 .Reward_overlay_68 {
+    width: 618rem;
+    height: 590rem;
+}
+
+.Reward_base__s600x450_f8 .Reward_overlay_68 {
+    width: 670rem;
+    height: 575rem;
+}
+
+.Reward_highlight_36 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 0;
+}
+
+.Reward_image_89 {
+    position: relative;
+}
+
+.Reward_info_72 {
+    margin-top: -13rem;
+    color: #e9e2bf;
+    font-size: 14rem;
+    line-height: 18rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_info_72,
+.Reward_base__small_c0 .Reward_info_72 {
+    margin: -10rem -10rem 0;
+}
+
+.Reward_info__multi_63 {
+    margin-right: 2rem;
+    text-align: right;
+}
+
+.Reward_base__s48x48_46 .Reward_info__multi_63,
+.Reward_base__small_c0 .Reward_info__multi_63 {
+    margin-right: 0;
+}
+
+.Reward_info__credits_ef {
+    color: #ced9d9;
+}
+
+.Reward_info__gold_36 {
+    color: #ffc363;
+}
+
+.Reward_info__crystal_36 {
+    color: #c9c9b6;
+}
+
+.Reward_info__premiumTank_d3 {
+    color: #ffdd99;
+}
+
+.Reward_timer_d3 {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_timer_d3,
+.Reward_base__small_c0 .Reward_timer_d3 {
+    width: 23rem;
+    height: 23rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
+    top: -6rem;
+    right: -6rem;
+}
+
+.Reward_base__s80x80_ce .Reward_timer_d3,
+.Reward_base__big_e5 .Reward_timer_d3 {
+    width: 48rem;
+    height: 48rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
+    top: -14rem;
+    right: -14rem;
+}
+
+.BattleResultRewards_base_ae {
+    width: 100vw;
+    height: 285rem;
+    margin-top: -28rem;
+    position: relative;
+}
+
+.mediaMedium .BattleResultRewards_base_ae {
+    margin-top: 105rem;
+}
+
+.mediaLarge .BattleResultRewards_base_ae {
+    margin-top: 154rem;
+}
+
+.mediaExtraLarge .BattleResultRewards_base_ae {
+    margin-top: 254rem;
+}
+
+.BattleResultRewards_rewards_c2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
     display: flex;
-    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 93rem;
+    z-index: 2;
+}
+
+.mediaMedium .BattleResultRewards_rewards_c2 {
+    top: -21rem;
+}
+
+.mediaLarge .BattleResultRewards_rewards_c2 {
+    top: 27rem;
+}
+
+.mediaExtraLarge .BattleResultRewards_rewards_c2 {
+    top: -62rem;
+}
+
+.BattleResultRewards_main_69 {
+    display: flex;
+}
+
+.BattleResultRewards_other_01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16rem;
+}
+
+.mediaMedium .BattleResultRewards_other_01 {
+    margin-top: 32rem;
+}
+
+.BattleResultRewards_otherText_4c {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 16rem;
+    text-align: center;
+}
+
+.mediaMedium .BattleResultRewards_otherText_4c {
+    margin-top: 30rem;
+}
+
+.BattleResultRewards_otherRewards_cc {
+    margin: -5rem 12rem 0;
+}
+
+.mediaMedium .BattleResultRewards_otherRewards_cc {
+    margin: -23rem 12rem 0;
+}
+
+.BattleResultRewards_ribbon_78 {
+    width: 1920rem;
+    height: 500rem;
+    background: url('R.images.gui.maps.icons.mapbox.awardsView.ribbon_regular') no-repeat 50% / contain;
+    position: absolute;
+    top: -70rem;
+    left: 50%;
+    transform: translate(-50%) scale(0.7);
+}
+
+.mediaMedium .BattleResultRewards_ribbon_78 {
+    top: -170rem;
+    transform: translate(-50%) scale(0.84);
+}
+
+.mediaLarge .BattleResultRewards_ribbon_78 {
+    top: -132rem;
+    transform: translate(-50%);
+}
+
+.mediaExtraLarge .BattleResultRewards_ribbon_78 {
+    top: -220rem;
+}
+
+.MainReward_base_1f {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 5rem;
+}
+
+.mediaMedium .MainReward_base_1f {
+    margin: 0 10rem;
+}
+
+.MainReward_value_1d {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.mediaMedium .MainReward_value_1d {
+    font-size: 73rem;
+}
+
+.MainReward_value__freeXP_8c {
+    color: #c9c9b6;
+}
+
+.MainReward_value__credits_ff {
+    color: #ced9d9;
+}
+
+.MainReward_icon_6a {
+    margin-top: 7rem;
+    background: no-repeat 50% / contain;
+}
+
+.mediaMedium .MainReward_icon_6a {
+    margin-top: 10rem;
 }
 
 .BattleResultVehicle_base_03 {
@@ -682,21 +1240,21 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaSmall .BattleResultVehicle_back_97 {
-        right: -20rem;
+    right: -20rem;
 }
 
 .mediaMedium .BattleResultVehicle_back_97 {
-        right: 0;
+    right: 0;
 }
 
 .mediaLarge .BattleResultVehicle_back_97 {
-        width: 900rem;
-        height: 378rem;
-        right: -90rem;
+    width: 900rem;
+    height: 378rem;
+    right: -90rem;
 }
 
 .mediaExtraLarge .BattleResultVehicle_back_97 {
-        right: 0;
+    right: 0;
 }
 
 .BattleResultVehicle_back_97 {
@@ -704,15 +1262,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaLarge .BattleResultVehicle_back_97 {
-        background-image: url('R.images.story_mode.gui.maps.icons.battleResult.vehicle.large.background_lose');
+    background-image: url('R.images.story_mode.gui.maps.icons.battleResult.vehicle.large.background_lose');
 }
 
 .BattleResultVehicle_base__victory_20 .BattleResultVehicle_back_97 {
-        background-image: url('R.images.story_mode.gui.maps.icons.battleResult.vehicle.background_win');
-    }
+    background-image: url('R.images.story_mode.gui.maps.icons.battleResult.vehicle.background_win');
+}
 
 .mediaLarge .BattleResultVehicle_base__victory_20 .BattleResultVehicle_back_97 {
-            background-image: url('R.images.story_mode.gui.maps.icons.battleResult.vehicle.large.background_win');
+    background-image: url('R.images.story_mode.gui.maps.icons.battleResult.vehicle.large.background_win');
 }
 
 .BattleResultVehicle_fore_23 {
@@ -724,21 +1282,21 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaSmall .BattleResultVehicle_fore_23 {
-        right: -20rem;
+    right: -20rem;
 }
 
 .mediaMedium .BattleResultVehicle_fore_23 {
-        right: 0;
+    right: 0;
 }
 
 .mediaLarge .BattleResultVehicle_fore_23 {
-        width: 900rem;
-        height: 378rem;
-        right: -90rem;
+    width: 900rem;
+    height: 378rem;
+    right: -90rem;
 }
 
 .mediaExtraLarge .BattleResultVehicle_fore_23 {
-        right: 0;
+    right: 0;
 }
 
 .BattleResultVehicle_fore_23 {
@@ -746,66 +1304,43 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaLarge .BattleResultVehicle_fore_23 {
-        background-image: url('R.images.story_mode.gui.maps.icons.battleResult.vehicle.large.foreground_lose');
+    background-image: url('R.images.story_mode.gui.maps.icons.battleResult.vehicle.large.foreground_lose');
 }
 
 .BattleResultVehicle_base__victory_20 .BattleResultVehicle_fore_23 {
-        background-image: url('R.images.story_mode.gui.maps.icons.battleResult.vehicle.foreground_win');
-    }
+    background-image: url('R.images.story_mode.gui.maps.icons.battleResult.vehicle.foreground_win');
+}
 
 .mediaLarge .BattleResultVehicle_base__victory_20 .BattleResultVehicle_fore_23 {
-            background-image: url('R.images.story_mode.gui.maps.icons.battleResult.vehicle.large.foreground_win');
+    background-image: url('R.images.story_mode.gui.maps.icons.battleResult.vehicle.large.foreground_win');
 }
 
 .BattleResultVehicle_vehicle_19 {
     width: 360rem;
     height: 270rem;
-    background: url('R.images.story_mode.gui.maps.icons.battleResult.vehicle.vehicle') no-repeat 50% / contain;
+    background: no-repeat 50% / contain;
     position: absolute;
-    right: 30rem;
-    bottom: -44rem;
+    right: 16rem;
+    bottom: -45rem;
 }
 
 .mediaSmall .BattleResultVehicle_vehicle_19 {
-        right: 80rem;
+    right: 80rem;
 }
 
 .mediaMedium .BattleResultVehicle_vehicle_19 {
-        right: 100rem;
+    right: 100rem;
 }
 
 .mediaLarge .BattleResultVehicle_vehicle_19 {
-        width: 600rem;
-        height: 450rem;
-        background-image: url('R.images.story_mode.gui.maps.icons.battleResult.vehicle.large.vehicle');
-        right: 60rem;
-        bottom: -82rem;
+    width: 600rem;
+    height: 450rem;
+    right: 60rem;
+    bottom: -82rem;
 }
 
 .mediaExtraLarge .BattleResultVehicle_vehicle_19 {
-        right: 150rem;
-}
-
-.BattleResultVehicle_vehicleName_a1 {
-    color: #F2F2F7;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-    text-align: right;
-    position: absolute;
-    right: 40rem;
-    bottom: 57rem;
-}
-
-.BattleResultVehicle_playerStatus_f1 {
-    color: #F2F2F7;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    text-align: right;
-    position: absolute;
-    right: 40rem;
-    bottom: 34rem;
+    right: 150rem;
 }
 
 .BattleResultViewApp_base_15 {
@@ -817,23 +1352,37 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     overflow: hidden;
 }
 
-.BattleResultViewApp_back_f2 {
-    width: 100%;
-    height: 100%;
-    background: url('R.images.story_mode.gui.maps.icons.battleResult.dark_lose') 50% / 100%;
+.BattleResultViewApp_sparks_7e {
     position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.story_mode.gui.maps.icons.battleResult.sparks') no-repeat 50% / cover;
+    mix-blend-mode: screen;
+}
+
+.BattleResultViewApp_shatter_a2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    pointer-events: none;
+}
+
+.BattleResultViewApp_back_f2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.story_mode.gui.maps.icons.battleResult.dark_lose') 50% / 100%;
 }
 
 .BattleResultViewApp_base__victory_bd .BattleResultViewApp_back_f2 {
-        background-image: url('R.images.story_mode.gui.maps.icons.battleResult.dark_win');
-    }
-
-.BattleResultViewApp_sparks_7e {
-    width: 100%;
-    height: 100%;
-    background: url('R.images.story_mode.gui.maps.icons.battleResult.sparks') no-repeat 50% / cover;
-    mix-blend-mode: screen;
-    position: absolute;
+    background-image: url('R.images.story_mode.gui.maps.icons.battleResult.dark_win');
 }
 
 .BattleResultViewApp_shadowCenter_fd {
@@ -846,48 +1395,62 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: url('R.images.story_mode.gui.maps.icons.battleResult.text_back') no-repeat 50% / contain;
 }
 
-.BattleResultViewApp_shadowTop_67 {
+.BattleResultViewApp_titleGlow_05 {
     width: 1920rem;
     height: 660rem;
     background: url('R.images.story_mode.gui.maps.icons.common.defeat_back') no-repeat 50% / 100%;
+    mix-blend-mode: screen;
     position: absolute;
 }
 
-.BattleResultViewApp_base__victory_bd .BattleResultViewApp_shadowTop_67 {
-        background-image: url('R.images.story_mode.gui.maps.icons.common.victory_back');
-    }
+.BattleResultViewApp_base__victory_bd .BattleResultViewApp_titleGlow_05 {
+    background-image: url('R.images.story_mode.gui.maps.icons.common.victory_back');
+}
+
+.BattleResultViewApp_flash_bb {
+    width: 632rem;
+    height: 125rem;
+    margin-top: -120rem;
+    background: url('R.images.story_mode.gui.maps.icons.battleResult.flash') no-repeat 50% / contain;
+    opacity: 0;
+    mix-blend-mode: screen;
+}
+
+.mediaExtraLarge .BattleResultViewApp_flash_bb {
+    margin-top: -156rem;
+}
+
+.BattleResultViewApp_container_b8 {
+    z-index: 0;
+}
 
 .BattleResultViewApp_title_0e {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 73rem;
     font-weight: 700;
     line-height: 1.1;
     margin-top: 72rem;
-    mask-image: linear-gradient(0deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, 1) 50%);
+    mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1) 65%);
 }
 
 .mediaLarge .BattleResultViewApp_title_0e {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 96rem;
     font-weight: 700;
-    line-height: 1.1;
-        margin-top: 80rem;
+    line-height: 1;
+    margin-top: 86rem;
 }
 
 .mediaExtraLarge .BattleResultViewApp_title_0e {
-        color: #F2F2F7;
-        font-size: 144rem;
-        font-weight: 700;
-        line-height: 1;
-        margin-top: 100rem;
+    color: #f2f2f7;
+    font-size: 144rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 100rem;
 }
 
-.BattleResultViewApp_base__victory_bd .BattleResultViewApp_title_0e {
-        animation: BattleResultViewApp_fadeIn_48 2s linear;
-    }
-
 .BattleResultViewApp_subTitle_7b {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
@@ -895,40 +1458,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaLarge .BattleResultViewApp_subTitle_7b {
-        margin-top: 2rem;
+    margin-top: 6rem;
 }
 
 .mediaExtraLarge .BattleResultViewApp_subTitle_7b {
-        color: #F2F2F7;
-        font-size: 28rem;
-        font-weight: 700;
-        line-height: 1.1;
-        margin-top: 23rem;
-}
-
-.BattleResultViewApp_subTitle_7b {
-    z-index: 0;
-}
-
-/* doesn't work without it. Subtitle suddenly disappears. */
-
-.BattleResultViewApp_base__victory_bd .BattleResultViewApp_subTitle_7b {
-        animation: BattleResultViewApp_fadeIn_48 2s linear;
-    }
-
-.BattleResultViewApp_flash_bb {
-    width: 632rem;
-    height: 125rem;
-    margin-top: -126rem;
-    background: url('R.images.story_mode.gui.maps.icons.battleResult.flash') no-repeat 50% / contain;
-
-    /* doesn't work without it. Flash suddenly disappears. */
-    z-index: 0;
-    animation: BattleResultViewApp_fadeIn_48 1s linear;
-}
-
-.mediaExtraLarge .BattleResultViewApp_flash_bb {
-        margin-top: -156rem;
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 23rem;
 }
 
 .BattleResultViewApp_close_41 {
@@ -937,23 +1475,39 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 28rem;
 }
 
+.BattleResultViewApp_buttonWrapper_b4 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 39rem;
+    left: 0;
+}
+
+.mediaMedium .BattleResultViewApp_buttonWrapper_b4 {
+    bottom: 71rem;
+}
+
+.mediaLarge .BattleResultViewApp_buttonWrapper_b4 {
+    bottom: 79rem;
+}
+
 .BattleResultViewApp_button_cf {
     width: 160rem;
     height: 32rem;
+    position: relative;
+}
+
+.BattleResultViewApp_footer_0e {
     position: absolute;
-    bottom: 38rem;
-}
-
-.mediaMedium .BattleResultViewApp_button_cf {
-        bottom: 70rem;
-}
-
-.mediaLarge .BattleResultViewApp_button_cf {
-        bottom: 78rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .BattleResultViewApp_infoName_6e {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
@@ -963,7 +1517,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .BattleResultViewApp_infoDescription_bc {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -972,13 +1526,41 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 40rem;
 }
 
-@keyframes BattleResultViewApp_fadeIn_48 {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+.BattleResultViewApp_vehicleName_7a {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: right;
+    position: absolute;
+    right: 40rem;
+    bottom: 57rem;
 }
 
+.BattleResultViewApp_playerStatus_ae {
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: right;
+    position: absolute;
+    right: 40rem;
+    bottom: 34rem;
+}
+
+.BattleResultViewApp_centerBlock_d9 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.BattleResultViewApp_progress_a6 {
+    display: flex;
+    margin-top: 2rem;
+}

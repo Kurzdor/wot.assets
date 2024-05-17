@@ -1,0 +1,308 @@
+@keyframes App_blinking_68 {
+    0% {
+        filter: brightness(2);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
+}
+
+@keyframes App_FirstShow_ba {
+    0% {
+        opacity: 0;
+        top: -81rem;
+    }
+
+    90% {
+        opacity: 1;
+        top: -81rem;
+    }
+
+    100% {
+        opacity: 1;
+        top: 5rem;
+    }
+}
+
+@keyframes App_blinker_0d {
+    0% {
+        transform: rotate(45deg) translate(-200rem, 0rem);
+    }
+
+    30% {
+        transform: rotate(45deg) translate(200rem, 0rem);
+    }
+
+    100% {
+        transform: rotate(45deg) translate(200rem, 0rem);
+    }
+}
+
+@keyframes App_shine_a0 {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(53%);
+    }
+}
+
+@keyframes App_shineAppear_76 {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    13% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    63% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(53%);
+    }
+}
+
+@keyframes App_bgAppear_5a {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.App_base_64 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46rem;
+    height: 81rem;
+    position: relative;
+}
+
+.App_base__big_aa {
+    width: 66rem;
+    height: 113rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.App_flag_5e {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.liveOps.entryPoint.flag') no-repeat center / cover;
+    position: absolute;
+    transition: filter 200ms cubic-bezier(0.17, 0.67, 0.82, 0.76);
+}
+
+.App_base__big_aa .App_flag_5e {
+    background-image: url('R.images.gui.maps.icons.liveOps.entryPoint.flag_big');
+}
+
+.App_base__firstShow_ba .App_flag_5e {
+    animation: App_FirstShow_ba 600ms cubic-bezier(0.44, 0.88, 0.61, 1.23);
+}
+
+.App_base__firstShowBig_0c .App_flag_5e {
+    transform-origin: center top;
+    animation: App_bgAppear_5a 0.2s cubic-bezier(0.6, 0.04, 0.98, 0.34) 0.2s backwards;
+}
+
+.App_base__preEvent_8f .App_flag_5e,
+.App_base__eventActive_00 .App_flag_5e {
+    filter: brightness(1) grayscale(0);
+}
+
+.App_base__postEvent_cc .App_flag_5e {
+    filter: brightness(0.8) grayscale(1);
+}
+
+.App_flagHover_10 {
+    width: 46rem;
+    height: 81rem;
+    background: url('R.images.gui.maps.icons.liveOps.entryPoint.flag_hover') no-repeat center / cover;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.App_base__big_aa .App_flagHover_10 {
+    width: 66rem;
+    height: 113rem;
+    background-image: url('R.images.gui.maps.icons.liveOps.entryPoint.flag_hover_big');
+    mix-blend-mode: overlay;
+}
+
+.App_base_64:hover .App_flagHover_10 {
+    opacity: 1;
+}
+
+.App_content_bb {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.App_base__firstShow_ba .App_content_bb {
+    animation: App_FirstShow_ba 600ms cubic-bezier(0.44, 0.88, 0.61, 1.23);
+}
+
+.App_base__firstShowBig_0c .App_content_bb {
+    animation: App_bgAppear_5a 0.2s cubic-bezier(0.6, 0.04, 0.98, 0.34) 0.2s backwards;
+}
+
+.App_calendarIcon_d5 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.liveOps.entryPoint.calendar') no-repeat center / cover;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: top 200ms cubic-bezier(0.17, 0.67, 0.82, 0.76);
+    pointer-events: none;
+}
+
+.App_base__big_aa .App_calendarIcon_d5 {
+    width: 40rem;
+    height: 40rem;
+    background-image: url('R.images.gui.maps.icons.liveOps.entryPoint.calendar_big');
+    top: 42%;
+}
+
+.App_base__eventActive_00 .App_calendarIcon_d5 {
+    animation: App_blinking_68 500ms cubic-bezier(0.45, 0.88, 0.69, 0.83);
+    animation-delay: 200ms;
+}
+
+.App_base__preEvent_8f .App_calendarIcon_d5,
+.App_base__postEvent_cc .App_calendarIcon_d5 {
+    top: 30%;
+}
+
+.App_statusIcon_29 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 30rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    transition:
+        bottom 0.2s ease-in-out,
+        opacity 0.2s ease-in-out;
+    pointer-events: none;
+}
+
+.App_base__big_aa .App_statusIcon_29 {
+    bottom: 43rem;
+}
+
+.App_base__eventActive_00 .App_statusIcon_29 {
+    opacity: 0;
+    bottom: 0;
+}
+
+.App_base__preEvent_8f .App_statusIcon_29 {
+    width: 38rem;
+    height: 38rem;
+    background-image: url('R.images.gui.maps.icons.liveOps.icons.time_ico');
+    opacity: 1;
+}
+
+.App_base__postEvent_cc .App_statusIcon_29 {
+    width: 32rem;
+    height: 32rem;
+    background-image: url('R.images.gui.maps.icons.liveOps.icons.done_ico');
+    opacity: 1;
+}
+
+.App_blinkShape_2f {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 99%, 0 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    mask-image: linear-gradient(180deg, transparent 0%, #000000 50%);
+    pointer-events: none;
+}
+
+.App_base__big_aa .App_blinkShape_2f {
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 99%, 0 0);
+}
+
+.App_base_64:hover .App_blinkShape_2f {
+    mask-image: none;
+}
+
+.App_blink_20 {
+    width: 14rem;
+    height: 300rem;
+    background: #1ae0b1;
+    filter: blur(7px);
+    opacity: 0.5;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 99;
+    transform: rotate(45deg) translate(-200rem, 0rem);
+    transform-origin: center;
+    animation: App_blinker_0d 6s linear 4s infinite;
+}
+
+.App_shine_a0 {
+    width: 80rem;
+    height: 128rem;
+    background: url('R.images.gui.maps.icons.liveOps.entryPoint.shine') no-repeat center / contain;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: -52rem;
+    animation: App_shine_a0 2s linear 0.8s infinite alternate backwards;
+    pointer-events: none;
+}
+
+.App_shine__left_72 {
+    left: -38rem;
+}
+
+.App_shine__right_a8 {
+    right: -38rem;
+    animation-direction: alternate-reverse;
+}
+
+.App_shine__appear_6c {
+    animation: App_shineAppear_76 0.8s ease-out 0.2s both;
+}
