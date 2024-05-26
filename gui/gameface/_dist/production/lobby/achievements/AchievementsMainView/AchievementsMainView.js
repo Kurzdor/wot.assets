@@ -80,11 +80,11 @@
                         v = o.smallWidth,
                         E = o.extraSmallWidth,
                         w = o.extraLargeHeight,
-                        f = o.largeHeight,
-                        b = o.mediumHeight,
+                        b = o.largeHeight,
+                        f = o.mediumHeight,
                         p = o.smallHeight,
                         L = o.extraSmallHeight,
-                        x = { extraLarge: w, large: f, medium: b, small: p, extraSmall: L };
+                        x = { extraLarge: w, large: b, medium: f, small: p, extraSmall: L };
                     if (r.extraLarge || r.large || r.medium || r.small || r.extraSmall) {
                         if (r.extraLarge && l) return t;
                         if (r.large && c) return t;
@@ -101,8 +101,8 @@
                             !(r.extraLargeWidth || r.largeWidth || r.mediumWidth || r.smallWidth || r.extraSmallWidth)
                         ) {
                             if (r.extraLargeHeight && w) return t;
-                            if (r.largeHeight && f) return t;
-                            if (r.mediumHeight && b) return t;
+                            if (r.largeHeight && b) return t;
+                            if (r.mediumHeight && f) return t;
                             if (r.smallHeight && p) return t;
                             if (r.extraSmallHeight && L) return t;
                         }
@@ -446,22 +446,22 @@
                                 v = g[0],
                                 E = g[1],
                                 w = (0, n.useState)(() => h(l, c, u)),
-                                f = w[0],
-                                b = w[1];
+                                b = w[0],
+                                f = w[1];
                             return (
                                 (0, n.useEffect)(() => {
-                                    m.current ? b(h(v, c, u)) : (m.current = !0);
+                                    m.current ? f(h(v, c, u)) : (m.current = !0);
                                 }, [u, v, c]),
                                 (0, n.useEffect)(() => {
                                     E(l);
                                 }, [l]),
                                 (0, n.useEffect)(
                                     () => () => {
-                                        f.externalModel.dispose(), _.current.forEach((e) => e());
+                                        b.externalModel.dispose(), _.current.forEach((e) => e());
                                     },
-                                    [f],
+                                    [b],
                                 ),
-                                s().createElement(r.Provider, { value: f }, d)
+                                s().createElement(r.Provider, { value: b }, d)
                             );
                         },
                         () => (0, n.useContext)(r),
@@ -676,12 +676,12 @@
                         getSize: () => _,
                         getViewGlobalPosition: () => m,
                         isEventHandled: () => L,
-                        isFocused: () => b,
+                        isFocused: () => f,
                         pxToRem: () => E,
                         remToPx: () => w,
                         resize: () => h,
                         sendEvent: () => s.qP,
-                        setAnimateWindow: () => f,
+                        setAnimateWindow: () => b,
                         setEventHandled: () => p,
                         setInputPaddingsRem: () => l,
                         setSidePaddingsRem: () => u,
@@ -728,10 +728,10 @@
                 function w(e) {
                     return viewEnv.remToPx(e);
                 }
-                function f(e, t) {
+                function b(e, t) {
                     viewEnv.setAnimateWindow(e, t);
                 }
-                function b() {
+                function f() {
                     return viewEnv.isFocused();
                 }
                 function p() {
@@ -1214,8 +1214,8 @@
                         } else viewEnv.handleViewEvent({ __Type: r, type: e });
                         var a;
                     },
-                    f = () => w(o.CLOSE),
-                    b = (e, t) => {
+                    b = () => w(o.CLOSE),
+                    f = (e, t) => {
                         e.keyCode === _.n.ESCAPE && t();
                     };
                 var p = r(7572);
@@ -1230,7 +1230,7 @@
                         DateFormatType: u,
                         makeGlobalBoundingBox: v,
                         sendMoveEvent: (e) => w(o.MOVE, { isMouseEvent: !0, on: e }),
-                        sendCloseEvent: f,
+                        sendCloseEvent: b,
                         sendClosePopOverEvent: () => w(o.POP_OVER, { on: !1 }),
                         sendShowContextMenuEvent: (e, t, r = 0) => {
                             w(o.CONTEXT_MENU, { isMouseEvent: !0, contentID: e, on: !0, decoratorID: r, args: t });
@@ -1260,13 +1260,13 @@
                             });
                         },
                         addEscapeListener: (e) => {
-                            const t = (t) => b(t, e);
+                            const t = (t) => f(t, e);
                             return (
                                 window.addEventListener('keydown', t), () => window.removeEventListener('keydown', t)
                             );
                         },
                         closeOnEsc: (e) => {
-                            b(e, f);
+                            f(e, b);
                         },
                         handleViewEvent: w,
                         onBindingsReady: E,
@@ -1371,7 +1371,7 @@
                         w.apply(this, arguments)
                     );
                 }
-                const f = {
+                const b = {
                         [v.fd.ExtraSmall]: '',
                         [v.fd.Small]: g().SMALL_WIDTH,
                         [v.fd.Medium]: `${g().SMALL_WIDTH} ${g().MEDIUM_WIDTH}`,
@@ -1379,7 +1379,7 @@
                         [v.fd.ExtraLarge]:
                             `${g().SMALL_WIDTH} ${g().MEDIUM_WIDTH} ${g().LARGE_WIDTH} ${g().EXTRA_LARGE_WIDTH}`,
                     },
-                    b = {
+                    f = {
                         [v.Aq.ExtraSmall]: '',
                         [v.Aq.Small]: g().SMALL_HEIGHT,
                         [v.Aq.Medium]: `${g().SMALL_HEIGHT} ${g().MEDIUM_HEIGHT}`,
@@ -1410,7 +1410,7 @@
                             s = n.mediaWidth,
                             o = n.mediaHeight,
                             l = n.mediaSize;
-                        return i().createElement('div', w({ className: h()(r, f[s], b[o], p[l]) }, a), t);
+                        return i().createElement('div', w({ className: h()(r, b[s], f[o], p[l]) }, a), t);
                     },
                     x = ['children'];
                 const S = (e) => {
@@ -1433,8 +1433,8 @@
                 })(O || (O = {}));
                 var k = r(7522),
                     T = r(7030);
-                const M = (0, a.lazy)(() => Promise.all([r.e(549), r.e(423), r.e(328)]).then(r.bind(r, 4442))),
-                    A = (0, a.lazy)(() => Promise.all([r.e(549), r.e(423), r.e(248)]).then(r.bind(r, 6413))),
+                const M = (0, a.lazy)(() => Promise.all([r.e(549), r.e(36), r.e(154)]).then(r.bind(r, 7910))),
+                    A = (0, a.lazy)(() => Promise.all([r.e(549), r.e(36), r.e(248)]).then(r.bind(r, 6413))),
                     H = { [O.SUMMARY]: M, [O.ACHIEVEMENTS]: A },
                     R = i().memo(({ viewType: e }) => {
                         const t = H[e],
@@ -1539,18 +1539,18 @@
         (__webpack_require__.e = (e) =>
             Promise.all(Object.keys(__webpack_require__.f).reduce((t, r) => (__webpack_require__.f[r](e, t), t), []))),
         (__webpack_require__.u = (e) =>
-            423 === e
-                ? 'chunks/lobby/d46b76264ab552334e6f.js'
-                : 328 === e
-                  ? 'chunks/lobby/6be537f6f35dceac1d03.js'
+            36 === e
+                ? 'chunks/lobby/d67d2344571cb156debb.js'
+                : 154 === e
+                  ? 'chunks/lobby/38b874bdb26fa6a7bce9.js'
                   : 248 === e
-                    ? 'chunks/lobby/9575fb3e52259294e94d.js'
+                    ? 'chunks/lobby/f80a5785376e071cd193.js'
                     : void 0),
         (__webpack_require__.miniCssF = (e) =>
-            328 === e
-                ? 'chunks/lobby/6be537f6f35dceac1d03.css'
+            154 === e
+                ? 'chunks/lobby/38b874bdb26fa6a7bce9.css'
                 : 248 === e
-                  ? 'chunks/lobby/9575fb3e52259294e94d.css'
+                  ? 'chunks/lobby/f80a5785376e071cd193.css'
                   : 'lobby/achievements/AchievementsMainView/AchievementsMainView.css'),
         (__webpack_require__.g = (function () {
             if ('object' == typeof globalThis) return globalThis;
@@ -1667,7 +1667,7 @@
             installedCssChunks[e]
                 ? t.push(installedCssChunks[e])
                 : 0 !== installedCssChunks[e] &&
-                  { 248: 1, 328: 1 }[e] &&
+                  { 154: 1, 248: 1 }[e] &&
                   t.push(
                       (installedCssChunks[e] = loadStylesheet(e).then(
                           () => {

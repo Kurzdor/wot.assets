@@ -1666,8 +1666,8 @@
                         Z = U === _.mu.Active,
                         H = s === I.TOOLTIP;
                     (0, a.useEffect)(() => {
-                        j <= 0 && p && p();
-                    }, [p, j]);
+                        Z && j <= 0 && p && p();
+                    }, [p, j, Z]);
                     const X = (G || W) && !Z,
                         Y = Z && x - n < 5;
                     (0, a.useEffect)(() => {

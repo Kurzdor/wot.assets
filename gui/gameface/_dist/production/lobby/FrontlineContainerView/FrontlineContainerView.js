@@ -1633,13 +1633,13 @@
                         addPreloadTexture: () => b,
                         children: () => r,
                         displayStatus: () => D,
-                        displayStatusIs: () => G,
+                        displayStatusIs: () => z,
                         events: () => v,
                         extraSize: () => W,
                         forceTriggerMouseMove: () => $,
                         freezeTextureBeforeResize: () => T,
                         getBrowserTexturePath: () => S,
-                        getDisplayStatus: () => z,
+                        getDisplayStatus: () => G,
                         getScale: () => P,
                         getSize: () => k,
                         getViewGlobalPosition: () => N,
@@ -1858,10 +1858,10 @@
                 function $() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function z() {
+                function G() {
                     return viewEnv.getShowingStatus();
                 }
-                const G = Object.keys(D).reduce((e, t) => ((e[t] = () => viewEnv.getShowingStatus() === D[t]), e), {}),
+                const z = Object.keys(D).reduce((e, t) => ((e[t] = () => viewEnv.getShowingStatus() === D[t]), e), {}),
                     W = {
                         set: (e, t) => {
                             viewEnv.setExtraSizeRem(e, t);
@@ -2740,12 +2740,13 @@
             },
             3310: (e, t, u) => {
                 'use strict';
-                u.d(t, { s: () => m });
+                u.d(t, { s: () => d });
                 var n = u(3649),
                     a = u(6799),
                     r = u(6960),
                     s = u(9053);
-                const i = s.u6
+                const i = new RegExp('[฀-๿][ัำ-ฺ็-๎]*', 'gu'),
+                    o = s.u6
                         ? (e) => {
                               const t = [];
                               return (
@@ -2764,7 +2765,10 @@
                                                           e,
                                                           /\S\s+/g,
                                                           (e) => {
-                                                              t.push(...e.split(''));
+                                                              var u;
+                                                              R.strings.settings.LANGUAGE_CODE().toLowerCase() === s.Co
+                                                                  ? t.push(...((u = e), u.match(i) || []))
+                                                                  : t.push(...e.split(''));
                                                           },
                                                           (e) => {
                                                               t.push(e[0]);
@@ -2788,14 +2792,14 @@
                               for (; u; ) n.push(e.slice(a, t.lastIndex)), (a = t.lastIndex), (u = t.exec(e));
                               return a !== e.length && n.push(e.slice(a)), n;
                           },
-                    o = (e, t = '') => {
+                    l = (e, t = '') => {
                         const u = [];
                         return (
                             (0, r.Z)(
                                 e,
                                 /(\n+|[\xa0\ufeff]+)/g,
                                 (e) => {
-                                    u.push({ blockType: s.kH.Word, colorTag: t, childList: i(e) });
+                                    u.push({ blockType: s.kH.Word, colorTag: t, childList: o(e) });
                                 },
                                 (e) => {
                                     const n = e[0],
@@ -2825,27 +2829,27 @@
                             u
                         );
                     },
-                    l = (e, t, u = '') => {
+                    c = (e, t, u = '') => {
                         const n = [];
                         return (
                             (0, r.Z)(
                                 e,
                                 /(?:%\(|{)(.*?)[)}][sd]?/g,
                                 (e) => {
-                                    n.push(...o(e, u));
+                                    n.push(...l(e, u));
                                 },
                                 (e) => {
                                     const a = e[1],
                                         r = void 0 === t[a] ? e[0] : t[a];
                                     'string' == typeof r || 'number' == typeof r
-                                        ? n.push(...o(String(r), u))
+                                        ? n.push(...l(String(r), u))
                                         : n.push({ blockType: s.kH.Binding, colorTag: u, childList: [r] });
                                 },
                             ),
                             n
                         );
                     },
-                    c = (e, t) => {
+                    m = (e, t) => {
                         if (!e) return [t];
                         const u = [],
                             n = Object.assign({}, t, { childList: t.childList.splice(0, 1) });
@@ -2857,7 +2861,7 @@
                         }
                         return t.childList.length > 0 && u.push(t), u;
                     },
-                    m = (e, t = {}) => {
+                    d = (e, t = {}) => {
                         if (!e) return [];
                         const u = ((e) => {
                             const t = [];
@@ -2865,8 +2869,8 @@
                             return (
                                 e.forEach((e) => {
                                     e.blockType === s.kH.NoBreakSymbol
-                                        ? ((u = !0), t.push(...c(t.pop(), e)))
-                                        : (u ? t.push(...c(t.pop(), e)) : t.push(e), (u = !1));
+                                        ? ((u = !0), t.push(...m(t.pop(), e)))
+                                        : (u ? t.push(...m(t.pop(), e)) : t.push(e), (u = !1));
                                 }),
                                 t
                             );
@@ -2878,10 +2882,10 @@
                                         e,
                                         /(?:%\(|{)(\w*)(?:_[Oo]pen|_Start)(?:\)s|})([\s\S]*?)(?:%\(|{)\w*(?:_[Cc]lose|_End)(?:\)s|})/g,
                                         (e) => {
-                                            u.push(...l(e, t));
+                                            u.push(...c(e, t));
                                         },
                                         (e) => {
-                                            u.push(...l(e[2], t, e[1]));
+                                            u.push(...c(e[2], t, e[1]));
                                         },
                                     ),
                                     u
@@ -3033,7 +3037,16 @@
             9053: (e, t, u) => {
                 'use strict';
                 let n, a, r;
-                u.d(t, { YA: () => i, aF: () => l, bF: () => o, dz: () => s, kH: () => n, u6: () => c, v2: () => a }),
+                u.d(t, {
+                    Co: () => c,
+                    YA: () => i,
+                    aF: () => l,
+                    bF: () => o,
+                    dz: () => s,
+                    kH: () => n,
+                    u6: () => m,
+                    v2: () => a,
+                }),
                     (function (e) {
                         (e[(e.Word = 0)] = 'Word'),
                             (e[(e.LineBreak = 1)] = 'LineBreak'),
@@ -3052,9 +3065,8 @@
                     i = '...',
                     o = 'data-block-type',
                     l = { [r.NBSP]: n.NoBreakSymbol, [r.ZWNBSP]: n.NoBreakSymbol, [r.NEW_LINE]: n.LineBreak },
-                    c = ['zh_cn', 'zh_sg', 'zh_tw', 'ja', 'th'].includes(
-                        R.strings.settings.LANGUAGE_CODE().toLowerCase(),
-                    );
+                    c = 'th',
+                    m = ['zh_cn', 'zh_sg', 'zh_tw', 'ja', c].includes(R.strings.settings.LANGUAGE_CODE().toLowerCase());
             },
             597: (e, t, u) => {
                 'use strict';
@@ -3679,7 +3691,7 @@
                     H = u(5983),
                     U = u(8154);
                 const $ = R.strings.fl_common.tab,
-                    z = (0, r.memo)(({ children: e, id: t }) => {
+                    G = (0, r.memo)(({ children: e, id: t }) => {
                         const u = M('model', L.None).tabs,
                             n = (0, r.useMemo)(() => {
                                 const e = u.map(({ value: e }) => e).find((e) => e.id === t);
@@ -3699,7 +3711,7 @@
                             }, [t, u]);
                         return n ? s().createElement(U.l, n, e) : e;
                     });
-                var G = u(3403),
+                var z = u(3403),
                     W = u(3977),
                     V = u(4389),
                     j = u(2406);
@@ -3774,7 +3786,7 @@
                         [j.o]: s().createElement(j.M, null),
                         [W.F]: s().createElement(W.D, null),
                     },
-                    ee = (0, G.Pi)(({ resId: e, className: t }) => {
+                    ee = (0, z.Pi)(({ resId: e, className: t }) => {
                         const u = _().model.subViewActive.get();
                         if (!J[e]) throw new Error('View with specified id not found. ' + e);
                         return s().createElement(
@@ -3832,7 +3844,7 @@
                                     size: e >= O.cJ.Small ? 'medium' : 'small',
                                     active: n,
                                     onClick: l,
-                                    WrapperElement: z,
+                                    WrapperElement: G,
                                 }),
                             ),
                             s().createElement(
@@ -4449,15 +4461,15 @@
                     H = 'disable',
                     U = () => {},
                     $ = { pending: !1, offset: 0 },
-                    z = (e) => {
+                    G = (e) => {
                         var t;
                         return 0.9 * (null != (t = e.getWrapperSize()) ? t : 0);
                     },
-                    G = (e, t) => {
+                    z = (e, t) => {
                         e.contentRef.current && t(e.contentRef.current);
                     },
                     W = (e, t) => Math.max(20, e.offsetHeight * t),
-                    V = (0, i.memo)(({ api: e, classNames: t = {}, getStepByRailClick: u = z, onDrag: n = U }) => {
+                    V = (0, i.memo)(({ api: e, classNames: t = {}, getStepByRailClick: u = G, onDrag: n = U }) => {
                         const a = (0, i.useRef)(null),
                             r = (0, i.useRef)(null),
                             s = (0, i.useRef)(null),
@@ -4515,14 +4527,14 @@
                                     })(d);
                             }),
                             w = p(() => {
-                                G(e, () => {
+                                z(e, () => {
                                     C(), b();
                                 });
                             });
                         (0, i.useEffect)(() => (0, _.v)(w)),
                             (0, i.useEffect)(() => {
                                 const t = () => {
-                                    G(e, () => {
+                                    z(e, () => {
                                         b();
                                     });
                                 };
@@ -4550,7 +4562,7 @@
                                         h($);
                                     }),
                                     u = g.O.client.events.mouse.move(([t]) => {
-                                        G(e, (u) => {
+                                        z(e, (u) => {
                                             const a = l.current,
                                                 r = c.current,
                                                 s = e.getContainerSize();
@@ -4608,7 +4620,7 @@
                                                 ? h({ pending: !0, offset: t.screenY - n.getBoundingClientRect().y })
                                                 : ((a = t.screenY > n.getBoundingClientRect().y ? B.Prev : B.Next),
                                                   c.current &&
-                                                      G(e, (t) => {
+                                                      z(e, (t) => {
                                                           if (!t) return;
                                                           const n = u(e),
                                                               r = e.clampPosition(t, t.scrollTop + n * a);
@@ -5395,8 +5407,8 @@
                             text: R.strings.fl_info_page.reserveCategories.scenarios.random.text(),
                         },
                     ],
-                    ze = 'ScenariosSection_progressionTableCell_71',
-                    Ge = (0, i.forwardRef)((e, t) =>
+                    Ge = 'ScenariosSection_progressionTableCell_71',
+                    ze = (0, i.forwardRef)((e, t) =>
                         o().createElement(
                             'div',
                             { ref: t },
@@ -5479,7 +5491,7 @@
                                                 { key: n, className: 'ScenariosSection_progressionTableColumn_3d' },
                                                 o().createElement(
                                                     'div',
-                                                    { className: ze },
+                                                    { className: Ge },
                                                     o().createElement('div', {
                                                         className: 'ScenariosSection_progressionTableHeaderIcon_4c',
                                                         style: { backgroundImage: `url(${t})` },
@@ -5496,7 +5508,7 @@
                                                         {
                                                             key: t,
                                                             className: d()(
-                                                                ze,
+                                                                Ge,
                                                                 !n &&
                                                                     'ScenariosSection_progressionTableCell__accentStart_76',
                                                             ),
@@ -5589,7 +5601,7 @@
                             ),
                         ),
                     ),
-                    We = (0, i.memo)(Ge),
+                    We = (0, i.memo)(ze),
                     Ve = R.strings.fl_info_page.subTitle,
                     je = R.strings.menu.dateTime.months,
                     Ze = (0, i.memo)(({ startTimestamp: e, endTimestamp: t }) => {
@@ -6202,8 +6214,8 @@
                         '--progress-delta-color': e.delta.color,
                         '--progress-delta-shadow': e.delta.shadow,
                     });
-                var z = u(7515);
-                const G = (e, t, u) => ('number' == typeof u ? ((0, z.u)(0, t, u) / t) * 100 : e),
+                var G = u(7515);
+                const z = (e, t, u) => ('number' == typeof u ? ((0, G.u)(0, t, u) / t) * 100 : e),
                     W = {
                         bgImageBase: 'R.images.gui.maps.icons.components.progress_bar.pattern_grey',
                         line: { bgColorBase: '#f50', bgColorDisabled: 'transparent', bgColorFinished: '#59a011' },
@@ -6243,8 +6255,8 @@
                         }) => {
                             const f = ((e, t, u) =>
                                 (0, n.useMemo)(() => {
-                                    const n = ((0, z.u)(0, t, e) / t) * 100;
-                                    return { value: n, deltaFrom: G(n, t, u) };
+                                    const n = ((0, G.u)(0, t, e) / t) * 100;
+                                    return { value: n, deltaFrom: z(n, t, u) };
                                 }, [u, t, e]))(l, e, c);
                             return a().createElement(
                                 'div',

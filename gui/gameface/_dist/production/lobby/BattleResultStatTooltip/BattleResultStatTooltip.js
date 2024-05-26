@@ -1231,7 +1231,8 @@
                         for (; r; ) o !== r.index && t(u.slice(o, r.index)), n(r), (o = e.lastIndex), (r = e.exec(u));
                         o !== u.length && t(u.slice(o));
                     },
-                    q = M
+                    q = new RegExp('[฀-๿][ัำ-ฺ็-๎]*', 'gu'),
+                    z = M
                         ? (u) => {
                               const e = [];
                               return (
@@ -1250,7 +1251,10 @@
                                                           u,
                                                           /\S\s+/g,
                                                           (u) => {
-                                                              e.push(...u.split(''));
+                                                              var t;
+                                                              'th' === R.strings.settings.LANGUAGE_CODE().toLowerCase()
+                                                                  ? e.push(...((t = u), t.match(q) || []))
+                                                                  : e.push(...u.split(''));
                                                           },
                                                           (u) => {
                                                               e.push(u[0]);
@@ -1274,14 +1278,14 @@
                               for (; t; ) n.push(u.slice(r, e.lastIndex)), (r = e.lastIndex), (t = e.exec(u));
                               return r !== u.length && n.push(u.slice(r)), n;
                           },
-                    z = (u, e = '') => {
+                    G = (u, e = '') => {
                         const t = [];
                         return (
                             U(
                                 u,
                                 /(\n+|[\xa0\ufeff]+)/g,
                                 (u) => {
-                                    t.push({ blockType: O.Word, colorTag: e, childList: q(u) });
+                                    t.push({ blockType: O.Word, colorTag: e, childList: z(u) });
                                 },
                                 (u) => {
                                     const n = u[0],
@@ -1318,20 +1322,20 @@
                                 u,
                                 /(?:%\(|{)(.*?)[)}][sd]?/g,
                                 (u) => {
-                                    n.push(...z(u, t));
+                                    n.push(...G(u, t));
                                 },
                                 (u) => {
                                     const r = u[1],
                                         o = void 0 === e[r] ? u[0] : e[r];
                                     'string' == typeof o || 'number' == typeof o
-                                        ? n.push(...z(String(o), t))
+                                        ? n.push(...G(String(o), t))
                                         : n.push({ blockType: O.Binding, colorTag: t, childList: [o] });
                                 },
                             ),
                             n
                         );
                     },
-                    G = (u, e) => {
+                    H = (u, e) => {
                         if (!u) return [e];
                         const t = [],
                             n = Object.assign({}, e, { childList: e.childList.splice(0, 1) });
@@ -1343,7 +1347,7 @@
                         }
                         return e.childList.length > 0 && t.push(e), t;
                     },
-                    H = (u, e = {}) => {
+                    Y = (u, e = {}) => {
                         if (!u) return [];
                         const t = ((u) => {
                             const e = [];
@@ -1351,8 +1355,8 @@
                             return (
                                 u.forEach((u) => {
                                     u.blockType === O.NoBreakSymbol
-                                        ? ((t = !0), e.push(...G(e.pop(), u)))
-                                        : (t ? e.push(...G(e.pop(), u)) : e.push(u), (t = !1));
+                                        ? ((t = !0), e.push(...H(e.pop(), u)))
+                                        : (t ? e.push(...H(e.pop(), u)) : e.push(u), (t = !1));
                                 }),
                                 e
                             );
@@ -1398,12 +1402,12 @@
                             );
                         })(t);
                     },
-                    Y = (u, e) => !u || u.offsetTop + u.offsetHeight > e,
-                    $ = (u, e) => u.offsetLeft + u.offsetWidth - e,
-                    Z = (u, e, t) => {
+                    $ = (u, e) => !u || u.offsetTop + u.offsetHeight > e,
+                    Z = (u, e) => u.offsetLeft + u.offsetWidth - e,
+                    X = (u, e, t) => {
                         if (!u || !u.textContent) return [!1, 0];
                         if (u.offsetLeft > e) return [!1, 0];
-                        const n = $(u, e),
+                        const n = Z(u, e),
                             r = u.textContent.length,
                             o = u.offsetWidth / r,
                             i = Math.ceil(n / o);
@@ -1414,7 +1418,7 @@
                         const a = Math.max(t + i, 0);
                         return r < a ? [!1, 0] : [!0, a];
                     },
-                    X = (u, e, t, n, r, o) => {
+                    Q = (u, e, t, n, r, o) => {
                         let i = -1,
                             s = null;
                         for (let E = t; E >= 0; E--) {
@@ -1423,7 +1427,7 @@
                             if (A === O.LineBreak || A === O.NewLine || A === O.Binding) continue;
                             const F = t.textContent || '';
                             if (!(t.childElementCount > 1)) {
-                                const u = Z(t, n, r),
+                                const u = X(t, n, r),
                                     A = u[0],
                                     l = u[1];
                                 if (!A) {
@@ -1439,7 +1443,7 @@
                                 const u = t.children,
                                     A = e[E],
                                     l = A.props.children,
-                                    c = X(u, l, u.length - 1, n, r, o),
+                                    c = Q(u, l, u.length - 1, n, r, o),
                                     d = c[0],
                                     D = c[1];
                                 if (!(d < 0)) {
@@ -1452,7 +1456,7 @@
                         }
                         return [i, s];
                     },
-                    Q = a().memo(
+                    J = a().memo(
                         ({
                             text: u,
                             classMix: e,
@@ -1470,7 +1474,7 @@
                                 D = (0, i.useState)({ elementList: [], isTruncated: !1, isTruncateFinished: !1 }),
                                 B = D[0],
                                 _ = D[1],
-                                C = (0, i.useMemo)(() => H(u, n), [n, u]),
+                                C = (0, i.useMemo)(() => Y(u, n), [n, u]),
                                 p = (0, i.useMemo)(() => {
                                     if (
                                         o &&
@@ -1494,19 +1498,19 @@
                                                 const i = t.height,
                                                     a = t.width,
                                                     s = o.lastElementChild;
-                                                if (!Y(s, i) && $(s, a) <= 0) return [r, !1];
+                                                if (!$(s, i) && Z(s, a) <= 0) return [r, !1];
                                                 const E = o.children,
                                                     A = ((u, e) => {
                                                         let t = 0,
                                                             n = u.length - 1;
                                                         for (; n - t >= 0; ) {
                                                             const r = t + Math.ceil(0.5 * (n - t));
-                                                            Y(u[r], e) ? (n = r - 1) : (t = r + 1);
+                                                            $(u[r], e) ? (n = r - 1) : (t = r + 1);
                                                         }
                                                         return t - 1;
                                                     })(E, i);
                                                 if (A < 0) return [r, !1];
-                                                const F = X(E, r, A, a, n.length, n),
+                                                const F = Q(E, r, A, a, n.length, n),
                                                     l = F[0],
                                                     c = F[1];
                                                 return c && (r.splice(l, 1, c), r.splice(l + 1)), [r, !0];
@@ -1569,9 +1573,9 @@
                             );
                         },
                     );
-                var J = t(3403);
-                let uu;
-                function eu() {
+                var uu = t(3403);
+                let eu;
+                function tu() {
                     return !1;
                 }
                 !(function (u) {
@@ -1580,17 +1584,17 @@
                         (u.KILLS = 'kills'),
                         (u.DAMAGE = 'damage'),
                         (u.ARMOR_USE = 'armorUse');
-                })(uu || (uu = {})),
+                })(eu || (eu = {})),
                     console.log;
-                var tu = t(9174);
-                function nu(u, e) {
+                var nu = t(9174);
+                function ru(u, e) {
                     (null == e || e > u.length) && (e = u.length);
                     for (var t = 0, n = new Array(e); t < e; t++) n[t] = u[t];
                     return n;
                 }
-                const ru = (u) => (0 === u ? window : window.subViews.get(u));
-                var ou = t(3946);
-                const iu = ((u, e) => {
+                const ou = (u) => (0 === u ? window : window.subViews.get(u));
+                var iu = t(3946);
+                const au = ((u, e) => {
                         const t = (0, i.createContext)({});
                         return [
                             function ({ mode: u = 'real', options: n, children: r, mocks: s }) {
@@ -1600,7 +1604,7 @@
                                         const i = (function ({
                                                 initializer: u = !0,
                                                 rootId: e = 0,
-                                                getRoot: t = ru,
+                                                getRoot: t = ou,
                                                 context: n = 'model',
                                             } = {}) {
                                                 const r = new Map();
@@ -1660,7 +1664,7 @@
                                                                         (t = (function (u, e) {
                                                                             if (u) {
                                                                                 if ('string' == typeof u)
-                                                                                    return nu(u, e);
+                                                                                    return ru(u, e);
                                                                                 var t = Object.prototype.toString
                                                                                     .call(u)
                                                                                     .slice(8, -1);
@@ -1674,7 +1678,7 @@
                                                                                             /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(
                                                                                                 t,
                                                                                             )
-                                                                                          ? nu(u, e)
+                                                                                          ? ru(u, e)
                                                                                           : void 0
                                                                                 );
                                                                             }
@@ -1718,8 +1722,8 @@
                                                         root: u.primitives(['stat']),
                                                         detailedStats: u.array('detailedStats', []),
                                                     },
-                                                    t = (0, ou.Om)(() => e.detailedStats.get(), { equals: eu }),
-                                                    n = (0, ou.Om)(() => t().length);
+                                                    t = (0, iu.Om)(() => e.detailedStats.get(), { equals: tu }),
+                                                    n = (0, iu.Om)(() => t().length);
                                                 return Object.assign({}, e, {
                                                     computes: { getDetailedStats: t, getDetailedStatsLength: n },
                                                 });
@@ -1730,11 +1734,11 @@
                                                 observableModel: {
                                                     array: (e, t) => {
                                                         const n = null != t ? t : s(e),
-                                                            r = tu.LO.box(n, { equals: eu });
+                                                            r = nu.LO.box(n, { equals: tu });
                                                         return (
                                                             'real' === u &&
                                                                 a.subscribe(
-                                                                    (0, tu.aD)((u) => r.set(u)),
+                                                                    (0, nu.aD)((u) => r.set(u)),
                                                                     e,
                                                                 ),
                                                             r
@@ -1742,11 +1746,11 @@
                                                     },
                                                     object: (e, t) => {
                                                         const n = null != t ? t : s(e),
-                                                            r = tu.LO.box(n, { equals: eu });
+                                                            r = nu.LO.box(n, { equals: tu });
                                                         return (
                                                             'real' === u &&
                                                                 a.subscribe(
-                                                                    (0, tu.aD)((u) => r.set(u)),
+                                                                    (0, nu.aD)((u) => r.set(u)),
                                                                     e,
                                                                 ),
                                                             r
@@ -1756,13 +1760,13 @@
                                                         const n = s(t);
                                                         if (Array.isArray(e)) {
                                                             const r = e.reduce(
-                                                                (u, e) => ((u[e] = tu.LO.box(n[e], {})), u),
+                                                                (u, e) => ((u[e] = nu.LO.box(n[e], {})), u),
                                                                 {},
                                                             );
                                                             return (
                                                                 'real' === u &&
                                                                     a.subscribe(
-                                                                        (0, tu.aD)((u) => {
+                                                                        (0, nu.aD)((u) => {
                                                                             e.forEach((e) => {
                                                                                 r[e].set(u[e]);
                                                                             });
@@ -1776,13 +1780,13 @@
                                                             const r = e,
                                                                 o = Object.entries(r),
                                                                 i = o.reduce(
-                                                                    (u, [e, t]) => ((u[t] = tu.LO.box(n[e], {})), u),
+                                                                    (u, [e, t]) => ((u[t] = nu.LO.box(n[e], {})), u),
                                                                     {},
                                                                 );
                                                             return (
                                                                 'real' === u &&
                                                                     a.subscribe(
-                                                                        (0, tu.aD)((u) => {
+                                                                        (0, nu.aD)((u) => {
                                                                             o.forEach(([e, t]) => {
                                                                                 i[t].set(u[e]);
                                                                             });
@@ -1830,9 +1834,9 @@
                             () => (0, i.useContext)(t),
                         ];
                     })(0, function () {}),
-                    au = iu[0],
-                    su = iu[1],
-                    Eu = {
+                    su = au[0],
+                    Eu = au[1],
+                    Au = {
                         base: 'BattleResultStatTooltipApp_base_11',
                         base__missions: 'BattleResultStatTooltipApp_base__missions_61',
                         header: 'BattleResultStatTooltipApp_header_03',
@@ -1847,21 +1851,21 @@
                         value: 'BattleResultStatTooltipApp_value_1f',
                         values: 'BattleResultStatTooltipApp_values_4c',
                     },
-                    Au = 'info',
-                    Fu = (0, J.Pi)(() => {
-                        const u = su().model,
+                    Fu = 'info',
+                    lu = (0, uu.Pi)(() => {
+                        const u = Eu().model,
                             e = u.root.stat.get(),
                             t = u.computes.getDetailedStatsLength(),
                             n = u.computes.getDetailedStats(),
                             o = R.strings.sm_lobby.tooltips.battleResultStat.$dyn(e);
                         return a().createElement(
                             'div',
-                            { className: r()(Eu.base, Eu[`base__${e}`]) },
+                            { className: r()(Au.base, Au[`base__${e}`]) },
                             a().createElement(
                                 'div',
-                                { className: Eu.header },
+                                { className: Au.header },
                                 a().createElement('div', {
-                                    className: r()(Eu.icon, Eu[`icon__${e}`]),
+                                    className: r()(Au.icon, Au[`icon__${e}`]),
                                     style: {
                                         backgroundImage: `url(${R.images.story_mode.gui.maps.icons.battleResult.tooltips.$dyn(e)})`,
                                     },
@@ -1871,35 +1875,35 @@
                                     null,
                                     a().createElement(
                                         'div',
-                                        { className: r()(Eu.heading, Eu[`heading__${e}`]) },
+                                        { className: r()(Au.heading, Au[`heading__${e}`]) },
                                         o.$dyn('header'),
                                     ),
-                                    e === uu.MISSIONS && a().createElement(Q, { text: o.$dyn(Au), classMix: Eu.info }),
+                                    e === eu.MISSIONS && a().createElement(J, { text: o.$dyn(Fu), classMix: Au.info }),
                                 ),
                             ),
-                            e !== uu.MISSIONS && a().createElement(Q, { classMix: Eu.info, text: o.$dyn(Au) }),
+                            e !== eu.MISSIONS && a().createElement(J, { classMix: Au.info, text: o.$dyn(Fu) }),
                             t &&
                                 a().createElement(
                                     'div',
                                     null,
-                                    a().createElement('div', { className: Eu.divider }),
+                                    a().createElement('div', { className: Au.divider }),
                                     a().createElement(
                                         'div',
-                                        { className: Eu.detailed },
+                                        { className: Au.detailed },
                                         ((i = n),
                                         (s = ({ value: u, text: e }, t) =>
                                             a().createElement(
                                                 'div',
-                                                { key: `${t}_${u}`, className: Eu.values },
+                                                { key: `${t}_${u}`, className: Au.values },
                                                 a().createElement(
                                                     'div',
-                                                    { className: Eu.value },
+                                                    { className: Au.value },
                                                     ((u) => {
                                                         const e = Math.floor(u);
                                                         return d.Z5.getNumberFormat(e, d.B3.INTEGRAL);
                                                     })(u),
                                                 ),
-                                                a().createElement(Q, { text: e, classMix: Eu.detailedStat }),
+                                                a().createElement(J, { text: e, classMix: Au.detailedStat }),
                                             )),
                                         Array.isArray(i)
                                             ? i.map(s)
@@ -1911,7 +1915,7 @@
                     });
                 engine.whenReady.then(() => {
                     c().render(
-                        a().createElement(au, null, a().createElement(F, null, a().createElement(Fu, null))),
+                        a().createElement(su, null, a().createElement(F, null, a().createElement(lu, null))),
                         document.getElementById('root'),
                     );
                 });

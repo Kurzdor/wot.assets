@@ -3345,21 +3345,23 @@
                         base__extraSmall: 'Tooltip_base__extraSmall_ca',
                         base__teamPoint: 'Tooltip_base__teamPoint_a6',
                         base__bottom: 'Tooltip_base__bottom_02',
+                        base__visible: 'Tooltip_base__visible_57',
                         image: 'Tooltip_image_94',
                     },
-                    tt = (0, r.memo)(({ image: e, isLeft: u, isBottom: t, isTeamPoint: a }) => {
-                        const n = (0, r.useMemo)(() => ({ backgroundImage: `url(${e})` }), [e]),
-                            o = j(['base'], ut),
-                            i = Y()(
-                                o.base,
+                    tt = (0, r.memo)(({ image: e, isLeft: u, isBottom: t, isTeamPoint: a, isVisible: n }) => {
+                        const o = (0, r.useMemo)(() => ({ backgroundImage: `url(${e})` }), [e]),
+                            i = j(['base'], ut),
+                            l = Y()(
+                                i.base,
                                 ut['base__' + (u ? 'left' : 'right')],
                                 a && ut.base__teamPoint,
                                 t && ut.base__bottom,
+                                n && ut.base__visible,
                             );
                         return s().createElement(
                             'div',
-                            { className: i },
-                            s().createElement('div', { className: ut.image, style: n }),
+                            { className: l },
+                            s().createElement('div', { className: ut.image, style: o }),
                         );
                     }),
                     at = {
@@ -3469,12 +3471,12 @@
                                         { className: at.title },
                                         k,
                                         l &&
-                                            (A || _) &&
                                             s().createElement(tt, {
                                                 image: o,
                                                 isLeft: u,
                                                 isTeamPoint: p,
                                                 isBottom: g.current,
+                                                isVisible: A || _,
                                             }),
                                     ),
                                 ),

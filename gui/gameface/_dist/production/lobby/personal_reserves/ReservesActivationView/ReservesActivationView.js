@@ -1745,8 +1745,8 @@
                         q = H === _.mu.Active,
                         Y = l === I.TOOLTIP;
                     (0, a.useEffect)(() => {
-                        V <= 0 && v && v();
-                    }, [v, V]);
+                        q && V <= 0 && v && v();
+                    }, [v, V, q]);
                     const Z = ($ || j) && !q,
                         K = q && y - r < 5;
                     (0, a.useEffect)(() => {

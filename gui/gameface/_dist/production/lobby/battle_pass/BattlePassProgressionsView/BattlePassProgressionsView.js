@@ -4498,7 +4498,7 @@
                                         ),
                                     ),
                                 ),
-                                o().createElement(Uu.i, { place: Uu.Z.PROGRESSION }),
+                                !M && o().createElement(Uu.i, { place: Uu.Z.PROGRESSION }),
                                 o().createElement(
                                     'div',
                                     { className: ua },

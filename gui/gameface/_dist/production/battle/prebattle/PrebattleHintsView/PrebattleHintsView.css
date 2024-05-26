@@ -91,19 +91,27 @@
 }
 
 .HintBackground_image__crop_57 {
+    transform: translate(-50%, -50%) scale(0.63);
     width: 2560rem;
     height: 1440rem;
     background: no-repeat center / 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.55);
 }
 
-.mediaMedium .HintBackground_image__crop_57 {
-    transform: translate(-50%, -50%) scale(0.7);
+.mediaMediumWidth .HintBackground_image__crop_57 {
+    transform: translate(-50%, -50%) scale(0.75);
 }
 
-.mediaLarge .HintBackground_image__crop_57 {
+.mediaMediumHeight .HintBackground_image__crop_57 {
+    transform: translate(-50%, -50%) scale(0.75);
+}
+
+.mediaLargeWidth .HintBackground_image__crop_57 {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.mediaLargeHeight .HintBackground_image__crop_57 {
     transform: translate(-50%, -50%) scale(1);
 }
 

@@ -1121,6 +1121,7 @@
 }
 
 .Tooltip_base_7a {
+    display: none;
     padding: 23rem 25rem 27rem;
     border-image: url('R.atlases.components.tooltip_background') 24 fill / 24rem;
     position: absolute;
@@ -1152,6 +1153,10 @@
 .Tooltip_base__bottom_02 {
     top: auto;
     bottom: 18rem;
+}
+
+.Tooltip_base__visible_57 {
+    display: flex;
 }
 
 .Tooltip_image_94 {

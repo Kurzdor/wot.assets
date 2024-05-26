@@ -2048,7 +2048,8 @@
                         for (; r; ) o !== r.index && t(u.slice(o, r.index)), n(r), (o = e.lastIndex), (r = e.exec(u));
                         o !== u.length && t(u.slice(o));
                     },
-                    pu = Au
+                    pu = new RegExp('[฀-๿][ัำ-ฺ็-๎]*', 'gu'),
+                    gu = Au
                         ? (u) => {
                               const e = [];
                               return (
@@ -2067,7 +2068,10 @@
                                                           u,
                                                           /\S\s+/g,
                                                           (u) => {
-                                                              e.push(...u.split(''));
+                                                              var t;
+                                                              'th' === R.strings.settings.LANGUAGE_CODE().toLowerCase()
+                                                                  ? e.push(...((t = u), t.match(pu) || []))
+                                                                  : e.push(...u.split(''));
                                                           },
                                                           (u) => {
                                                               e.push(u[0]);
@@ -2091,14 +2095,14 @@
                               for (; t; ) n.push(u.slice(r, e.lastIndex)), (r = e.lastIndex), (t = e.exec(u));
                               return r !== u.length && n.push(u.slice(r)), n;
                           },
-                    gu = (u, e = '') => {
+                    hu = (u, e = '') => {
                         const t = [];
                         return (
                             Cu(
                                 u,
                                 /(\n+|[\xa0\ufeff]+)/g,
                                 (u) => {
-                                    t.push({ blockType: au.Word, colorTag: e, childList: pu(u) });
+                                    t.push({ blockType: au.Word, colorTag: e, childList: gu(u) });
                                 },
                                 (u) => {
                                     const n = u[0],
@@ -2128,27 +2132,27 @@
                             t
                         );
                     },
-                    hu = (u, e, t = '') => {
+                    bu = (u, e, t = '') => {
                         const n = [];
                         return (
                             Cu(
                                 u,
                                 /(?:%\(|{)(.*?)[)}][sd]?/g,
                                 (u) => {
-                                    n.push(...gu(u, t));
+                                    n.push(...hu(u, t));
                                 },
                                 (u) => {
                                     const r = u[1],
                                         o = void 0 === e[r] ? u[0] : e[r];
                                     'string' == typeof o || 'number' == typeof o
-                                        ? n.push(...gu(String(o), t))
+                                        ? n.push(...hu(String(o), t))
                                         : n.push({ blockType: au.Binding, colorTag: t, childList: [o] });
                                 },
                             ),
                             n
                         );
                     },
-                    bu = (u, e) => {
+                    vu = (u, e) => {
                         if (!u) return [e];
                         const t = [],
                             n = Object.assign({}, e, { childList: e.childList.splice(0, 1) });
@@ -2160,7 +2164,7 @@
                         }
                         return e.childList.length > 0 && t.push(e), t;
                     },
-                    vu = (u, e = {}) => {
+                    wu = (u, e = {}) => {
                         if (!u) return [];
                         const t = ((u) => {
                             const e = [];
@@ -2168,8 +2172,8 @@
                             return (
                                 u.forEach((u) => {
                                     u.blockType === au.NoBreakSymbol
-                                        ? ((t = !0), e.push(...bu(e.pop(), u)))
-                                        : (t ? e.push(...bu(e.pop(), u)) : e.push(u), (t = !1));
+                                        ? ((t = !0), e.push(...vu(e.pop(), u)))
+                                        : (t ? e.push(...vu(e.pop(), u)) : e.push(u), (t = !1));
                                 }),
                                 e
                             );
@@ -2181,10 +2185,10 @@
                                         u,
                                         /(?:%\(|{)(\w*)(?:_[Oo]pen|_Start)(?:\)s|})([\s\S]*?)(?:%\(|{)\w*(?:_[Cc]lose|_End)(?:\)s|})/g,
                                         (u) => {
-                                            t.push(...hu(u, e));
+                                            t.push(...bu(u, e));
                                         },
                                         (u) => {
-                                            t.push(...hu(u[2], e, u[1]));
+                                            t.push(...bu(u[2], e, u[1]));
                                         },
                                     ),
                                     t
@@ -2215,12 +2219,12 @@
                             );
                         })(t);
                     },
-                    wu = (u, e) => !u || u.offsetTop + u.offsetHeight > e,
-                    fu = (u, e) => u.offsetLeft + u.offsetWidth - e,
-                    Tu = (u, e, t) => {
+                    fu = (u, e) => !u || u.offsetTop + u.offsetHeight > e,
+                    Tu = (u, e) => u.offsetLeft + u.offsetWidth - e,
+                    Ru = (u, e, t) => {
                         if (!u || !u.textContent) return [!1, 0];
                         if (u.offsetLeft > e) return [!1, 0];
-                        const n = fu(u, e),
+                        const n = Tu(u, e),
                             r = u.textContent.length,
                             o = u.offsetWidth / r,
                             s = Math.ceil(n / o);
@@ -2231,7 +2235,7 @@
                         const i = Math.max(t + s, 0);
                         return r < i ? [!1, 0] : [!0, i];
                     },
-                    Ru = (u, e, t, n, r, o) => {
+                    yu = (u, e, t, n, r, o) => {
                         let s = -1,
                             a = null;
                         for (let E = t; E >= 0; E--) {
@@ -2240,7 +2244,7 @@
                             if (c === au.LineBreak || c === au.NewLine || c === au.Binding) continue;
                             const l = t.textContent || '';
                             if (!(t.childElementCount > 1)) {
-                                const u = Tu(t, n, r),
+                                const u = Ru(t, n, r),
                                     c = u[0],
                                     A = u[1];
                                 if (!c) {
@@ -2256,7 +2260,7 @@
                                 const u = t.children,
                                     c = e[E],
                                     A = c.props.children,
-                                    F = Ru(u, A, u.length - 1, n, r, o),
+                                    F = yu(u, A, u.length - 1, n, r, o),
                                     d = F[0],
                                     _ = F[1];
                                 if (!(d < 0)) {
@@ -2269,7 +2273,7 @@
                         }
                         return [s, a];
                     },
-                    yu = i().memo(
+                    Pu = i().memo(
                         ({
                             text: u,
                             classMix: e,
@@ -2287,7 +2291,7 @@
                                 _ = (0, s.useState)({ elementList: [], isTruncated: !1, isTruncateFinished: !1 }),
                                 D = _[0],
                                 B = _[1],
-                                m = (0, s.useMemo)(() => vu(u, n), [n, u]),
+                                m = (0, s.useMemo)(() => wu(u, n), [n, u]),
                                 C = (0, s.useMemo)(() => {
                                     if (
                                         o &&
@@ -2311,19 +2315,19 @@
                                                 const s = t.height,
                                                     i = t.width,
                                                     a = o.lastElementChild;
-                                                if (!wu(a, s) && fu(a, i) <= 0) return [r, !1];
+                                                if (!fu(a, s) && Tu(a, i) <= 0) return [r, !1];
                                                 const E = o.children,
                                                     c = ((u, e) => {
                                                         let t = 0,
                                                             n = u.length - 1;
                                                         for (; n - t >= 0; ) {
                                                             const r = t + Math.ceil(0.5 * (n - t));
-                                                            wu(u[r], e) ? (n = r - 1) : (t = r + 1);
+                                                            fu(u[r], e) ? (n = r - 1) : (t = r + 1);
                                                         }
                                                         return t - 1;
                                                     })(E, s);
                                                 if (c < 0) return [r, !1];
-                                                const l = Ru(E, r, c, i, n.length, n),
+                                                const l = yu(E, r, c, i, n.length, n),
                                                     A = l[0],
                                                     F = l[1];
                                                 return F && (r.splice(A, 1, F), r.splice(A + 1)), [r, !0];
@@ -2386,8 +2390,8 @@
                             );
                         },
                     );
-                var Pu = t(8613);
-                function ku(u = 0) {
+                var ku = t(8613);
+                function Ou(u = 0) {
                     let e = u;
                     const t = Math.trunc(e / 86400);
                     e -= 86400 * t;
@@ -2396,15 +2400,15 @@
                     const r = Math.trunc(e / 60);
                     return (e -= 60 * r), { days: t, hours: n, minutes: r, seconds: e };
                 }
-                Date.now(), Pu.Ew.getRegionalDateTime, Pu.Ew.getFormattedDateTime;
-                const Ou = () => {};
-                let Su;
+                Date.now(), ku.Ew.getRegionalDateTime, ku.Ew.getFormattedDateTime;
+                const Su = () => {};
+                let Nu;
                 b.Sw.instance,
                     (function (u) {
                         (u.None = 'None'), (u.Shallow = 'Shallow'), (u.Deep = 'Deep');
-                    })(Su || (Su = {})),
+                    })(Nu || (Nu = {})),
                     b.Sw.instance;
-                const Nu = (u = 0, e, t = 0, n = Ou) => {
+                const xu = (u = 0, e, t = 0, n = Su) => {
                         const r = (0, s.useState)(u),
                             o = r[0],
                             i = r[1];
@@ -2428,7 +2432,7 @@
                             o
                         );
                     },
-                    xu = (u, e, t) => {
+                    Lu = (u, e, t) => {
                         const n = u.days,
                             r = u.hours,
                             o = u.minutes;
@@ -2456,12 +2460,12 @@
                                         { hours: r, minutes: o },
                                     );
                     },
-                    Lu = R.strings.sm_lobby.tooltips.task,
-                    Iu = (0, Z.Pi)(() => {
+                    Iu = R.strings.sm_lobby.tooltips.task,
+                    Mu = (0, Z.Pi)(() => {
                         const u = su().model,
                             e = ((u, e = !1, t = !1) => {
-                                const n = Nu(u, 1);
-                                return { timeString: xu(ku(n), e, t), secondsLeft: n, isEndingSoon: n < 300 };
+                                const n = xu(u, 1);
+                                return { timeString: Lu(Ou(n), e, t), secondsLeft: n, isEndingSoon: n < 300 };
                             })(u.primitives.secondsBeforeUnlock.get()).timeString,
                             t = u.primitives.taskState.get(),
                             n = t === Q.COMPLETED,
@@ -2476,16 +2480,16 @@
                                 ),
                             },
                             i().createElement('div', { className: 'TaskState_statusIcon_38' }),
-                            n && i().createElement('div', null, Lu.completed()),
-                            t === Q.UNCOMPLETED && i().createElement('div', null, Lu.active()),
+                            n && i().createElement('div', null, Iu.completed()),
+                            t === Q.UNCOMPLETED && i().createElement('div', null, Iu.active()),
                             o &&
-                                i().createElement(yu, {
-                                    text: Lu.locked(),
+                                i().createElement(Pu, {
+                                    text: Iu.locked(),
                                     binding: { timer: i().createElement('div', { className: 'TaskState_time_d7' }, e) },
                                 }),
                         );
                     }),
-                    Mu = (0, Z.Pi)(() => {
+                    Uu = (0, Z.Pi)(() => {
                         const u = su().model,
                             e = u.primitives,
                             t = e.title,
@@ -2504,12 +2508,12 @@
                                     data: u.computes.getRewards(),
                                 }),
                             i().createElement('div', { className: 'TaskTooltipApp_dots_59' }),
-                            i().createElement(Iu, null),
+                            i().createElement(Mu, null),
                         );
                     });
                 engine.whenReady.then(() => {
                     F().render(
-                        i().createElement(ou, null, i().createElement(l, null, i().createElement(Mu, null))),
+                        i().createElement(ou, null, i().createElement(l, null, i().createElement(Uu, null))),
                         document.getElementById('root'),
                     );
                 });
