@@ -6,29 +6,29 @@
     margin-top: 50rem;
     color: #fff;
 }
-    .mediaMedium .Header_base_81 {
-        margin-top: 70rem;
+.mediaMedium .Header_base_81 {
+    margin-top: 70rem;
 }
-    .mediaLarge .Header_base_81 {
-        margin-top: 75rem;
+.mediaLarge .Header_base_81 {
+    margin-top: 75rem;
 }
-    .mediaExtraLarge .Header_base_81 {
-        margin-top: 105rem;
+.mediaExtraLarge .Header_base_81 {
+    margin-top: 105rem;
 }
 
 .Header_title_e6 {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 56rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
 .mediaMedium .Header_title_e6 {
-        font-size: 73rem;
+    font-size: 73rem;
 }
 
 .Header_timerText_26 {
-    color: ;
+    color:;
     font-size: 20rem;
     font-weight: 400;
     line-height: 1.2;
@@ -47,4 +47,3 @@
     margin: 0 8rem -6rem 0;
     background: url('R.images.gui_lootboxes.gui.maps.welcomeScreen.time') no-repeat center / 100%;
 }
-

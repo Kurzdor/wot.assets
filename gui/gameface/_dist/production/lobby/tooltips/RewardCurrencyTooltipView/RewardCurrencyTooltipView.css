@@ -4,12 +4,12 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .Content_base_27 {
     display: flex;
@@ -25,8 +25,14 @@
     background: url('R.images.gui.maps.icons.battlePass.tooltips.Devider_points') 50% / contain no-repeat;
 }
 .Content_whiteGradient_83 {
-    background: linear-gradient(90deg, rgba(201, 201, 182, 0) 0%, #c9c9b6 38.22%, #c9c9b6 64.56%, rgba(201, 201, 182, 0) 100%);
-    opacity: .07;
+    background: linear-gradient(
+        90deg,
+        rgba(201, 201, 182, 0) 0%,
+        #c9c9b6 38.22%,
+        #c9c9b6 64.56%,
+        rgba(201, 201, 182, 0) 100%
+    );
+    opacity: 0.07;
     position: absolute;
     top: 0;
     right: 0;
@@ -34,7 +40,7 @@
     left: 0;
 }
 .Content_title_7d {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
@@ -42,7 +48,7 @@
 .Content_description_aa {
     margin-top: 15rem;
     position: relative;
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -78,23 +84,23 @@
     position: relative;
 }
 .Content_base__credits_03 .Content_icon_f9 {
-        background-image: url('R.images.gui.maps.icons.library.credits_icon_80x80');
-    }
+    background-image: url('R.images.gui.maps.icons.library.credits_icon_80x80');
+}
 .Content_base__crystal_f5 .Content_icon_f9 {
-        background-image: url('R.images.gui.maps.icons.library.crystal_80x80');
-    }
+    background-image: url('R.images.gui.maps.icons.library.crystal_80x80');
+}
 .Content_base__xp_cb .Content_icon_f9 {
-        background-image: url('R.images.gui.maps.icons.library.xp_tank_icon_80x80');
-    }
+    background-image: url('R.images.gui.maps.icons.library.xp_tank_icon_80x80');
+}
 .Content_base__battlePassPoints_9c .Content_icon_f9 {
-        background-image: url('R.images.gui.maps.icons.battlePass.tooltips.points_80');
-    }
+    background-image: url('R.images.gui.maps.icons.battlePass.tooltips.points_80');
+}
 .Content_base__brcoin_13 .Content_icon_f9 {
-        background-image: url('R.images.gui.maps.icons.battleRoyale.currency.proxy_80');
-    }
+    background-image: url('R.images.gui.maps.icons.battleRoyale.currency.proxy_80');
+}
 .Content_base__brProgressionToken_b5 .Content_icon_f9 {
-        background-image: url('R.images.gui.maps.icons.missions.tokens.c_80x80.token_battle_royale');
-    }
+    background-image: url('R.images.gui.maps.icons.missions.tokens.c_80x80.token_battle_royale');
+}
 .Content_premiumFooter_1c {
     display: flex;
     flex-direction: row;
@@ -108,13 +114,13 @@
     margin-left: 5rem;
     margin-top: 2rem;
     margin-right: 5rem;
-    background: url('R.images.gui.maps.icons.battleRoyale.battleResult.battle_reward.icon_prem') no-repeat center / contain;
+    background: url('R.images.gui.maps.icons.battleRoyale.battleResult.battle_reward.icon_prem') no-repeat center /
+        contain;
 }
 .Content_premiumText_1b {
-    color: #CBAC77;
+    color: #cbac77;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
     margin-left: 5rem;
 }
-

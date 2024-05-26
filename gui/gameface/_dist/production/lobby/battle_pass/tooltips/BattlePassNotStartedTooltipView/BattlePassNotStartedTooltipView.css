@@ -4,12 +4,12 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .Content_base_52 {
     line-height: normal;
@@ -52,4 +52,3 @@
     color: #8c8c7e;
     font-size: 14rem;
 }
-

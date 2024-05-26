@@ -20,37 +20,39 @@ html {
     background: no-repeat center / cover;
     filter: brightness(1);
     transform: scale(1);
-    transition: filter .5s cubic-bezier(.07, .82, .17, 1), transform .5s cubic-bezier(.07, .82, .17, 1);
+    transition:
+        filter 0.5s cubic-bezier(0.07, 0.82, 0.17, 1),
+        transform 0.5s cubic-bezier(0.07, 0.82, 0.17, 1);
 }
 
 .EntryPointContent_base_d2:hover .EntryPointContent_bg_47 {
-        filter: brightness(1.05);
-        transform: scale(1.03);
-    }
+    filter: brightness(1.05);
+    transform: scale(1.03);
+}
 
 .EntryPointContent_base__frozen_2c .EntryPointContent_bg_47 {
-        filter: brightness(1) grayscale(100%);
-    }
+    filter: brightness(1) grayscale(100%);
+}
 
 .EntryPointContent_base__frozen_2c.EntryPointContent_base_d2:hover .EntryPointContent_bg_47 {
-        filter: brightness(1.05) grayscale(100%);
-    }
+    filter: brightness(1.05) grayscale(100%);
+}
 
 .EntryPointContent_base__big_e3 .EntryPointContent_bg_47 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.big');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.big');
+}
 
 .EntryPointContent_base__wideSmall_7c .EntryPointContent_bg_47 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.wideSmall');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.wideSmall');
+}
 
 .EntryPointContent_base__thinSmall_b8 .EntryPointContent_bg_47 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.thinSmall');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.thinSmall');
+}
 
 .EntryPointContent_base__thinExtraSmall_05 .EntryPointContent_bg_47 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.thinExtraSmall');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.thinExtraSmall');
+}
 
 .EntryPointContent_stroke_49 {
     width: 100%;
@@ -62,20 +64,20 @@ html {
 }
 
 .EntryPointContent_base__big_e3 .EntryPointContent_stroke_49 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.big_stroke');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.big_stroke');
+}
 
 .EntryPointContent_base__wideSmall_7c .EntryPointContent_stroke_49 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.wideSmall_stroke');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.wideSmall_stroke');
+}
 
 .EntryPointContent_base__thinSmall_b8 .EntryPointContent_stroke_49 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.thinSmall_stroke');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.thinSmall_stroke');
+}
 
 .EntryPointContent_base__thinExtraSmall_05 .EntryPointContent_stroke_49 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.thinExtraSmall_stroke');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.thinExtraSmall_stroke');
+}
 
 .EntryPointContent_highlight_02 {
     width: 100%;
@@ -87,20 +89,20 @@ html {
 }
 
 .EntryPointContent_base__big_e3 .EntryPointContent_highlight_02 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.big_highlight');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.big_highlight');
+}
 
 .EntryPointContent_base__wideSmall_7c .EntryPointContent_highlight_02 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.wideSmall_highlight');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.wideSmall_highlight');
+}
 
 .EntryPointContent_base__thinSmall_b8 .EntryPointContent_highlight_02 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.thinSmall_highlight');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.thinSmall_highlight');
+}
 
 .EntryPointContent_base__thinExtraSmall_05 .EntryPointContent_highlight_02 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.thinExtraSmall_highlight');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.thinExtraSmall_highlight');
+}
 
 .EntryPointContent_hoverEffect_58 {
     display: none;
@@ -114,39 +116,39 @@ html {
 }
 
 .EntryPointContent_base_d2:hover .EntryPointContent_hoverEffect_58 {
-        display: flex;
-    }
+    display: flex;
+}
 
 .EntryPointContent_base__big_e3 .EntryPointContent_hoverEffect_58 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.big_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.big_hover');
+}
 
 .EntryPointContent_base__wideSmall_7c .EntryPointContent_hoverEffect_58 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.wideSmall_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.wideSmall_hover');
+}
 
 .EntryPointContent_base__thinSmall_b8 .EntryPointContent_hoverEffect_58 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.thinSmall_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.thinSmall_hover');
+}
 
 .EntryPointContent_base__thinExtraSmall_05 .EntryPointContent_hoverEffect_58 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.thinExtraSmall_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.entryPoint.thinExtraSmall_hover');
+}
 
 .EntryPointContent_frozen_06 {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, 0.4);
     opacity: 1;
     position: absolute;
     top: 0;
     left: 0;
-    transition: opacity .5s cubic-bezier(.07, .82, .17, 1);
+    transition: opacity 0.5s cubic-bezier(0.07, 0.82, 0.17, 1);
 }
 
 .EntryPointContent_base_d2:hover .EntryPointContent_frozen_06 {
-        opacity: .8;
-    }
+    opacity: 0.8;
+}
 
 .EntryPointContent_particles_ef {
     position: absolute;
@@ -158,24 +160,24 @@ html {
 }
 
 .EntryPointContent_base__thinExtraSmall_05 .EntryPointContent_particlesSwf_21 {
-        width: 160rem;
-        height: 112rem;
-    }
+    width: 160rem;
+    height: 112rem;
+}
 
 .EntryPointContent_base__thinSmall_b8 .EntryPointContent_particlesSwf_21 {
-        width: 220rem;
-        height: 112rem;
-    }
+    width: 220rem;
+    height: 112rem;
+}
 
 .EntryPointContent_base__wideSmall_7c .EntryPointContent_particlesSwf_21 {
-        width: 300rem;
-        height: 112rem;
-    }
+    width: 300rem;
+    height: 112rem;
+}
 
 .EntryPointContent_base__big_e3 .EntryPointContent_particlesSwf_21 {
-        width: 300rem;
-        height: 150rem;
-    }
+    width: 300rem;
+    height: 150rem;
+}
 
 .EntryPointContent_content_7b {
     display: flex;
@@ -191,79 +193,82 @@ html {
 }
 
 .EntryPointContent_title_6c {
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: 700;
     letter-spacing: 1rem;
 }
 
 .EntryPointContent_base__thinExtraSmall_05 .EntryPointContent_title_6c {
-        margin-top: -6rem;
-        font-size: 15rem;
-    }
+    margin-top: -6rem;
+    font-size: 15rem;
+}
 
 .EntryPointContent_base__thinSmall_b8 .EntryPointContent_title_6c {
-        margin-top: -6rem;
-        font-size: 18rem;
-    }
+    margin-top: -6rem;
+    font-size: 18rem;
+}
 
 .EntryPointContent_base__wideSmall_7c .EntryPointContent_title_6c {
-        margin-top: -6rem;
-        font-size: 22rem;
-    }
+    margin-top: -6rem;
+    font-size: 22rem;
+}
 
 .EntryPointContent_base__big_e3 .EntryPointContent_title_6c {
-        margin-top: -4rem;
-        font-size: 24rem;
-    }
+    margin-top: -4rem;
+    font-size: 24rem;
+}
 
 .EntryPointContent_info_da {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 16rem;
     text-align: center;
 }
 
 .EntryPointContent_base__thinExtraSmall_05 .EntryPointContent_info_da {
-        margin-top: -2rem;
-        font-size: 12rem;
-    }
+    margin-top: -2rem;
+    font-size: 12rem;
+}
 
 .EntryPointContent_base__thinSmall_b8 .EntryPointContent_info_da,
-    .EntryPointContent_base__wideSmall_7c .EntryPointContent_info_da {
-        margin-top: -2rem;
-    }
+.EntryPointContent_base__wideSmall_7c .EntryPointContent_info_da {
+    margin-top: -2rem;
+}
 
 .EntryPointContent_base__big_e3 .EntryPointContent_info_da {
-        margin-top: 2rem;
-    }
+    margin-top: 2rem;
+}
 
 .EntryPointContent_seasonDate_e6 {
     padding-left: 21rem;
-    color: #FFDD99;
+    color: #ffdd99;
     text-align: center;
-    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
     position: absolute;
     z-index: 1;
 }
 
 .EntryPointContent_base__thinExtraSmall_05 .EntryPointContent_seasonDate_e6 {
-        font-size: 12rem;
-        bottom: 7rem;
-    }
+    font-size: 12rem;
+    bottom: 7rem;
+}
 
 .EntryPointContent_base__thinSmall_b8 .EntryPointContent_seasonDate_e6 {
-        font-size: 16rem;
-        bottom: 6rem;
-    }
+    font-size: 16rem;
+    bottom: 6rem;
+}
 
 .EntryPointContent_base__wideSmall_7c .EntryPointContent_seasonDate_e6 {
-        font-size: 16rem;
-        bottom: 6rem;
-    }
+    font-size: 16rem;
+    bottom: 6rem;
+}
 
 .EntryPointContent_base__big_e3 .EntryPointContent_seasonDate_e6 {
-        font-size: 16rem;
-        bottom: 11rem;
-    }
+    font-size: 16rem;
+    bottom: 11rem;
+}
 
 .EntryPointContent_seasonDateTimeIcon_a1 {
     width: 37rem;
@@ -275,6 +280,5 @@ html {
 }
 
 .EntryPointContent_base__thinExtraSmall_05 .EntryPointContent_seasonDateTimeIcon_a1 {
-        top: -11rem;
-    }
-
+    top: -11rem;
+}

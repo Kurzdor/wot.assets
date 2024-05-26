@@ -14,157 +14,157 @@
     z-index: 1;
 }
 .Currency_base__small_af .Currency_icon_c5,
-    .Currency_base__big_bc .Currency_icon_c5,
-    .Currency_base__large_65 .Currency_icon_c5,
-    .Currency_base__extraLarge_4d .Currency_icon_c5 {
-        transform: translateY(3rem);
-    }
+.Currency_base__big_bc .Currency_icon_c5,
+.Currency_base__large_65 .Currency_icon_c5,
+.Currency_base__extraLarge_4d .Currency_icon_c5 {
+    transform: translateY(3rem);
+}
 .Currency_icon__credits-small_9b {
-        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
-    }
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
+}
 .Currency_icon__credits-big_96 {
-        background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
-    }
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
+}
 .Currency_icon__credits-large_ac {
-        --icon-height: 48rem;
-        margin-left: -1rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_silver');
-    }
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_silver');
+}
 .Currency_base__large_65 .Currency_icon__credits-large_ac {
-            transform: translateY(4rem);
-        }
+    transform: translateY(4rem);
+}
 .Currency_icon__credits-extraLarge_16 {
-        --icon-height: 80rem;
-        margin-right: -2rem;
-        background-image: url('R.images.gui.maps.icons.library.credits_icon_80x80');
-    }
+    --icon-height: 80rem;
+    margin-right: -2rem;
+    background-image: url('R.images.gui.maps.icons.library.credits_icon_80x80');
+}
 .Currency_icon__gold-small_86 {
-        background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
-    }
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
+}
 .Currency_base__small_af .Currency_icon__gold-small_86 {
-            transform: translateY(2rem);
-        }
+    transform: translateY(2rem);
+}
 .Currency_icon__gold-big_15 {
-        background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
-    }
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
+}
 .Currency_base__big_bc .Currency_icon__gold-big_15 {
-            transform: translateY(4rem);
-        }
+    transform: translateY(4rem);
+}
 .Currency_icon__gold-large_36 {
-        --icon-height: 48rem;
-        margin-left: -1rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_gold');
-    }
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_gold');
+}
 .Currency_base__large_65 .Currency_icon__gold-large_36 {
-            transform: translateY(4rem);
-        }
+    transform: translateY(4rem);
+}
 .Currency_icon__gold-extraLarge_a0 {
-        --icon-height: 80rem;
-        background-image: url('R.images.gui.maps.icons.library.gold_icon_80x80');
-    }
+    --icon-height: 80rem;
+    background-image: url('R.images.gui.maps.icons.library.gold_icon_80x80');
+}
 .Currency_icon__crystal-small_27 {
-        background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
-    }
+    background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
+}
 .Currency_base__small_af .Currency_icon__crystal-small_27 {
-            transform: translateY(2rem);
-        }
+    transform: translateY(2rem);
+}
 .Currency_icon__crystal-big_cd {
-        --icon-height: 22rem;
-        --icon-width: 23rem;
-        background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
-    }
+    --icon-height: 22rem;
+    --icon-width: 23rem;
+    background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
+}
 .Currency_base__big_bc .Currency_icon__crystal-big_cd {
-            transform: translateY(4rem);
-        }
+    transform: translateY(4rem);
+}
 .Currency_icon__crystal-large_d3 {
-        --icon-height: 48rem;
-        margin-left: -1rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_bonds');
-    }
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_bonds');
+}
 .Currency_icon__crystal-extraLarge_09 {
-        --icon-height: 80rem;
-        background-image: url('R.images.gui.maps.icons.library.crystal_80x80');
-    }
+    --icon-height: 80rem;
+    background-image: url('R.images.gui.maps.icons.library.crystal_80x80');
+}
 .Currency_base__extraLarge_4d .Currency_icon__crystal-extraLarge_09 {
-            transform: translateY(7rem);
-        }
+    transform: translateY(7rem);
+}
 .Currency_icon__xp-small_a7 {
-        background-image: url('R.images.gui.maps.icons.library.NormalXpIcon');
-    }
+    background-image: url('R.images.gui.maps.icons.library.NormalXpIcon');
+}
 .Currency_base__small_af .Currency_icon__xp-small_a7 {
-            transform: translateY(1rem);
-        }
+    transform: translateY(1rem);
+}
 .Currency_icon__xp-big_97 {
-        --icon-height: 22rem;
-        --icon-width: 23rem;
-        margin-left: -5rem;
-        background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
-    }
+    --icon-height: 22rem;
+    --icon-width: 23rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
+}
 .Currency_base__big_bc .Currency_icon__xp-big_97 {
-            transform: translateY(2rem);
-        }
+    transform: translateY(2rem);
+}
 .Currency_icon__xp-large_6b {
-        --icon-height: 48rem;
-        margin: 0 -5rem 0 -6rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.exp');
-    }
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.exp');
+}
 .Currency_icon__xp-extraLarge_67 {
-        --icon-height: 80rem;
-        margin: 0 -5rem;
-        background-image: url('R.images.gui.maps.icons.library.xp_tank_icon_80x80');
-    }
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.xp_tank_icon_80x80');
+}
 .Currency_icon__freeXP-small_ca {
-        background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
-    }
+    background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
+}
 .Currency_base__small_af .Currency_icon__freeXP-small_ca {
-            transform: translateY(1rem);
-        }
+    transform: translateY(1rem);
+}
 .Currency_icon__freeXP-big_21 {
-        --icon-height: 24rem;
-        margin-left: -5rem;
-        background-image: url('R.images.gui.maps.icons.library.freeXPIconBig24x24');
-    }
+    --icon-height: 24rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.freeXPIconBig24x24');
+}
 .Currency_icon__freeXP-large_c8 {
-        --icon-height: 48rem;
-        margin: 0 -5rem 0 -6rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.freeExp');
-    }
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.freeExp');
+}
 .Currency_icon__freeXP-extraLarge_58 {
-        --icon-height: 80rem;
-        margin: 0 -5rem;
-        background-image: url('R.images.gui.maps.icons.library.free_xp_icon_80x80');
-    }
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.free_xp_icon_80x80');
+}
 .Currency_base__extraLarge_4d .Currency_icon__freeXP-extraLarge_58 {
-            transform: translateY(4rem);
-        }
+    transform: translateY(4rem);
+}
 .Currency_icon__equipCoin-small_32 {
-        --icon-height: 16rem;
-        margin-right: -2rem;
-        background-image: url('R.images.gui.maps.icons.library.equipCoin_1');
-    }
+    --icon-height: 16rem;
+    margin-right: -2rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoin_1');
+}
 .Currency_base__small_af .Currency_icon__equipCoin-small_32 {
-            transform: translateX(-1rem) translateY(1rem);
-        }
+    transform: translateX(-1rem) translateY(1rem);
+}
 .Currency_icon__equipCoin-big_79 {
-        --icon-height: 24rem;
-        background-image: url('R.images.gui.maps.icons.library.equipCoinBig');
-    }
+    --icon-height: 24rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoinBig');
+}
 .Currency_base__big_bc .Currency_icon__equipCoin-big_79 {
-            transform: translateX(-5rem) translateY(3rem);
-        }
+    transform: translateX(-5rem) translateY(3rem);
+}
 .Currency_icon__equipCoin-large_2c {
-        --icon-height: 48rem;
-        margin-right: 2rem;
-        background-image: url('R.images.gui.maps.shop.rewards.c_48x48.equipCoin');
-    }
+    --icon-height: 48rem;
+    margin-right: 2rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.equipCoin');
+}
 .Currency_icon__equipCoin-extraLarge_8a {
-        --icon-height: 80rem;
-        margin-right: 8rem;
-        background-image: url('R.images.gui.maps.icons.library.equipCoin_icon_80x80');
-    }
+    --icon-height: 80rem;
+    margin-right: 8rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoin_icon_80x80');
+}
 .Currency_base__extraLarge_4d .Currency_icon__equipCoin-extraLarge_8a {
-            transform: translateX(2rem) translateY(4rem);
-        }
+    transform: translateX(2rem) translateY(4rem);
+}
 .Currency_value_e1 {
     /* font-size inherit does not work here, so 1em means the size does not change */
     /* stylelint-disable-next-line */
@@ -174,56 +174,56 @@
     z-index: 2;
 }
 .Currency_base__small_af .Currency_value_e1 {
-        padding-right: 2rem;
-    }
+    padding-right: 2rem;
+}
 .Currency_base__big_bc .Currency_value_e1 {
-        --font-size: 24rem;
-        padding-right: 5rem;
-        font-weight: 700;
-    }
+    --font-size: 24rem;
+    padding-right: 5rem;
+    font-weight: 700;
+}
 .Currency_base__big_bc .Currency_value_e1 + .Currency_icon_c5 {
-            font-size: 24rem;
-        }
+    font-size: 24rem;
+}
 .Currency_base__large_65 .Currency_value_e1 {
-        --font-size: 36rem;
-        font-weight: 700;
-    }
+    --font-size: 36rem;
+    font-weight: 700;
+}
 .Currency_base__large_65 .Currency_value_e1 + .Currency_icon_c5 {
-            font-size: 36rem;
-        }
+    font-size: 36rem;
+}
 .Currency_base__extraLarge_4d .Currency_value_e1 {
-        --font-size: 56rem;
-        font-weight: 700;
-    }
+    --font-size: 56rem;
+    font-weight: 700;
+}
 .Currency_value__freeXP_cb {
-        color: #F2F2F7;
-    }
+    color: #f2f2f7;
+}
 .Currency_value__credits_76 {
-        color: #CED9D9;
-    }
+    color: #ced9d9;
+}
 .Currency_value__gold_dd {
-        color: #FFC363;
-    }
+    color: #ffc363;
+}
 .Currency_value__xp_b0,
-    .Currency_value__crystal_19,
-    .Currency_value__equipCoin_d0 {
-        color: #C9C9B6;
-    }
+.Currency_value__crystal_19,
+.Currency_value__equipCoin_d0 {
+    color: #c9c9b6;
+}
 .Currency_base__small_af .Currency_value__notEnough_56 {
-            color: #FF2717;
-        }
+    color: #ff2717;
+}
 .Currency_base__big_bc .Currency_value__notEnough_56 {
-            color: #B70000;
-        }
+    color: #b70000;
+}
 .Currency_base__large_65 .Currency_value__notEnough_56 {
-            color: #B70000;
-        }
+    color: #b70000;
+}
 .Currency_base__extraLarge_4d .Currency_value__notEnough_56 {
-            color: #B70000;
-        }
+    color: #b70000;
+}
 .Currency_stock_87 {
     height: 13rem;
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 13rem;
     line-height: 1;
     position: relative;
@@ -231,23 +231,23 @@
     pointer-events: none;
 }
 .Currency_stock__indent_a1 {
-        margin-left: 2rem;
-    }
+    margin-left: 2rem;
+}
 .Currency_base__small_af .Currency_stock_87 {
-        transform: translateY(0rem);
-    }
+    transform: translateY(0rem);
+}
 .Currency_base__big_bc .Currency_stock_87 {
-        transform: translateY(4rem);
-    }
+    transform: translateY(4rem);
+}
 .Currency_base__large_65 .Currency_stock_87 {
-        transform: translateY(10rem);
-    }
+    transform: translateY(10rem);
+}
 .Currency_base__extraLarge_4d .Currency_stock_87 {
-        transform: translateY(18rem);
-    }
+    transform: translateY(18rem);
+}
 .Currency_stock__interactive_93 {
-        pointer-events: auto;
-    }
+    pointer-events: auto;
+}
 .Currency_stockBackground_82 {
     width: 80rem;
     height: 45rem;
@@ -266,9 +266,9 @@
     position: relative;
 }
 
-    .CurrencyResolver_base__insufficient_91 {
-        color: #ed2415;
-    }
+.CurrencyResolver_base__insufficient_91 {
+    color: #ed2415;
+}
 .CurrencyResolver_icon_12 {
     --icon-height: 16rem;
     --icon-width: var(--icon-height);
@@ -285,78 +285,78 @@
 }
 /* the size of .stock and .icon need to be identical to properly align to center when line-height > 1 */
 .CurrencyResolver_icon_12 + .CurrencyResolver_stock_26 {
-        height: 16rem;
-    }
+    height: 16rem;
+}
 .CurrencyResolver_icon__small_31 {
-        background-image: url('R.images.gui.maps.icons.battleRoyale.currency.proxy_16');
-    }
+    background-image: url('R.images.gui.maps.icons.battleRoyale.currency.proxy_16');
+}
 .CurrencyResolver_icon__large_99 {
-        --icon-height: 48rem;
-        background-image: url('R.images.gui.maps.icons.battleRoyale.currency.proxy_48');
-    }
+    --icon-height: 48rem;
+    background-image: url('R.images.gui.maps.icons.battleRoyale.currency.proxy_48');
+}
 .CurrencyResolver_icon__large_99 + .CurrencyResolver_stock_26 {
-            height: 48rem;
-        }
+    height: 48rem;
+}
 .CurrencyResolver_icon__extraLarge_ed {
-        --icon-height: 80rem;
-        background-image: url('R.images.gui.maps.icons.battleRoyale.currency.proxy_80');
-    }
+    --icon-height: 80rem;
+    background-image: url('R.images.gui.maps.icons.battleRoyale.currency.proxy_80');
+}
 .CurrencyResolver_icon__extraLarge_ed + .CurrencyResolver_stock_26 {
-            height: 80rem;
-        }
+    height: 80rem;
+}
 .CurrencyResolver_icon__big_94 {
-        --icon-height: 24rem;
-        margin-top: 2rem;
-        background-image: url('R.images.gui.maps.icons.battleRoyale.currency.proxy_24');
-    }
+    --icon-height: 24rem;
+    margin-top: 2rem;
+    background-image: url('R.images.gui.maps.icons.battleRoyale.currency.proxy_24');
+}
 .CurrencyResolver_value_52 {
     /* font-size inherit does not work here, so 1em means the size does not change */
     /* stylelint-disable-next-line */
     --font-size: 1em;
     min-height: 16rem;
-    color: #CED9D9;
+    color: #ced9d9;
     font-size: var(--font-size);
     position: relative;
     z-index: 2;
 }
 .CurrencyResolver_value__small_7b {
-        padding-right: 2rem;
-    }
+    padding-right: 2rem;
+}
 .CurrencyResolver_value__big_6a {
-        --font-size: 24rem;
-        padding-right: 5rem;
-        font-weight: 700;
-    }
+    --font-size: 24rem;
+    padding-right: 5rem;
+    font-weight: 700;
+}
 .CurrencyResolver_value__big_6a + .CurrencyResolver_icon_12 {
-            font-size: 24rem;
-        }
+    font-size: 24rem;
+}
 .CurrencyResolver_value__large_eb {
-        --font-size: 36rem;
-        font-weight: 700;
-    }
+    --font-size: 36rem;
+    font-weight: 700;
+}
 .CurrencyResolver_value__large_eb + .CurrencyResolver_icon_12 {
-            font-size: 36rem;
-            transform: translateY(3rem);
-        }
+    font-size: 36rem;
+    transform: translateY(3rem);
+}
 .CurrencyResolver_value__extraLarge_94 {
-        --font-size: 56rem;
-        font-weight: 700;
-    }
+    --font-size: 56rem;
+    font-weight: 700;
+}
 .CurrencyResolver_value__extraLarge_94 + .CurrencyResolver_icon_12 {
-            font-size: 56rem;
-        }
+    font-size: 56rem;
+}
 .CurrencyResolver_value__notEnough_51.CurrencyResolver_value__small_7b {
-            color: #FF2717;
-        }
+    color: #ff2717;
+}
 .CurrencyResolver_value__notEnough_51.CurrencyResolver_value__big_6a {
-            color: #B70000;
-        }
+    color: #b70000;
+}
 .CurrencyResolver_value__notEnough_51.CurrencyResolver_value__large_eb {
-            color: #B70000;
-        }
+    color: #b70000;
+}
 .CurrencyResolver_value__notEnough_51.CurrencyResolver_value__extraLarge_94 {
-            color: #B70000;
-        }
+    color: #b70000;
+}
 .CurrencyResolver_stock_26 {
     display: flex;
     flex-direction: column;
@@ -370,24 +370,24 @@
     pointer-events: none;
 }
 .CurrencyResolver_stock__indent_ef {
-        margin-left: 3rem;
-    }
+    margin-left: 3rem;
+}
 .CurrencyResolver_stock__sizeBig_86 {
-        transform: translateY(4rem);
-    }
+    transform: translateY(4rem);
+}
 .CurrencyResolver_stock__sizeLarge_4f {
-        transform: translateY(11rem);
-    }
+    transform: translateY(11rem);
+}
 .CurrencyResolver_stock__sizeLarge_4f .CurrencyResolver_stockBackground_b3 {
-            top: 2rem;
-        }
+    top: 2rem;
+}
 .CurrencyResolver_stock__indent_ef.CurrencyResolver_stock__sizeLarge_4f {
-        margin-left: 0rem;
-        margin-right: 3rem;
-    }
+    margin-left: 0rem;
+    margin-right: 3rem;
+}
 .CurrencyResolver_stock__interactive_2c {
-        pointer-events: auto;
-    }
+    pointer-events: auto;
+}
 .CurrencyResolver_stockBackground_b3 {
     width: 80rem;
     height: 45rem;
@@ -410,8 +410,8 @@
 }
 
 .PriceResolver_price__discount_d0 {
-        padding-right: 20rem;
-    }
+    padding-right: 20rem;
+}
 
 .FormatText_base_d0 {
     display: flex;
@@ -423,23 +423,23 @@
 }
 
 .FormatTextWithColorTags_whiteReal_d8 {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .FormatTextWithColorTags_white_b9 {
-    color: #F2F2F7;
+    color: #f2f2f7;
 }
 
 .FormatTextWithColorTags_whiteOrange_ea {
-    color: #FEFEEC;
+    color: #fefeec;
 }
 
 .FormatTextWithColorTags_whiteSpanish_54 {
-    color: #E9E2BF;
+    color: #e9e2bf;
 }
 
 .FormatTextWithColorTags_par_c1 {
-    color: #8C8C7E;
+    color: #8c8c7e;
 }
 
 .FormatTextWithColorTags_parSecondary_4e {
@@ -447,39 +447,39 @@
 }
 
 .FormatTextWithColorTags_parTertiary_14 {
-    color: #37362E;
+    color: #37362e;
 }
 
 .FormatTextWithColorTags_red_d9 {
-    color: #FF2717;
+    color: #ff2717;
 }
 
 .FormatTextWithColorTags_redDark_ea {
-    color: #B70000;
+    color: #b70000;
 }
 
 .FormatTextWithColorTags_yellow_48 {
-    color: #FEAB34;
+    color: #feab34;
 }
 
 .FormatTextWithColorTags_orange_ad {
-    color: #EE7000;
+    color: #ee7000;
 }
 
 .FormatTextWithColorTags_cream_96 {
-    color: #FFDD99;
+    color: #ffdd99;
 }
 
 .FormatTextWithColorTags_brown_27 {
-    color: #CBAC77;
+    color: #cbac77;
 }
 
 .FormatTextWithColorTags_greenBright_04 {
-    color: #80D43A;
+    color: #80d43a;
 }
 
 .FormatTextWithColorTags_green_58 {
-    color: #7AB300;
+    color: #7ab300;
 }
 
 .FormatTextWithColorTags_greenDark_af {
@@ -487,27 +487,27 @@
 }
 
 .FormatTextWithColorTags_blueBooster_b3 {
-    color: #CCFFFF;
+    color: #ccffff;
 }
 
 .FormatTextWithColorTags_blueTeamkiller_ab {
-    color: #09E2FF;
+    color: #09e2ff;
 }
 
 .FormatTextWithColorTags_cred_d3 {
-    color: #CED9D9;
+    color: #ced9d9;
 }
 
 .FormatTextWithColorTags_gold_28 {
-    color: #FFC363;
+    color: #ffc363;
 }
 
 .FormatTextWithColorTags_bond_74 {
-    color: #C9C9B6;
+    color: #c9c9b6;
 }
 
 .FormatTextWithColorTags_prom_58 {
-    color: #A29B70;
+    color: #a29b70;
 }
 
 .PriceBlock_base_c0 {
@@ -520,7 +520,7 @@
 .PriceBlock_label_3f {
     width: 115rem;
     text-align: center;
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -540,8 +540,14 @@
     background: url('R.images.gui.maps.icons.battlePass.tooltips.Devider_points') 50% / contain no-repeat;
 }
 .RentPrice_whiteGradient_5b {
-    background: linear-gradient(90deg, rgba(201, 201, 182, 0) 0%, #c9c9b6 38.22%, #c9c9b6 64.56%, rgba(201, 201, 182, 0) 100%);
-    opacity: .07;
+    background: linear-gradient(
+        90deg,
+        rgba(201, 201, 182, 0) 0%,
+        #c9c9b6 38.22%,
+        #c9c9b6 64.56%,
+        rgba(201, 201, 182, 0) 100%
+    );
+    opacity: 0.07;
     position: absolute;
     top: 0;
     right: 0;
@@ -549,7 +555,7 @@
     left: 0;
 }
 .RentPrice_title_4c {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
@@ -557,7 +563,7 @@
 .RentPrice_description_07 {
     margin-top: 15rem;
     position: relative;
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -573,7 +579,7 @@
 .RentPrice_descriptionBottom_23 {
     margin-top: 15rem;
     position: relative;
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -599,9 +605,8 @@
 .RentPrice_priceLabel_5a {
     width: 146rem;
     text-align: center;
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
-

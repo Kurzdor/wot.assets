@@ -5,10 +5,9 @@
     max-height: 18rem;
     opacity: 0;
     overflow: hidden;
-    transition: opacity ease .2s;
+    transition: opacity ease 0.2s;
 }
 
-    .ShortenedText_base__shown_af {
-        opacity: 1;
-    }
-
+.ShortenedText_base__shown_af {
+    opacity: 1;
+}

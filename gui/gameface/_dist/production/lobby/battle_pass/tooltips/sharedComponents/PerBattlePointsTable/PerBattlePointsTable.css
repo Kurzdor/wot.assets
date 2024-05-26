@@ -57,13 +57,12 @@
     font-size: 14rem;
 }
 .styles_label__table_9e {
-        justify-content: flex-start;
-        color: #8c8c7e;
-    }
+    justify-content: flex-start;
+    color: #8c8c7e;
+}
 .styles_pointsColumn_20 {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-right: 25rem;
 }
-

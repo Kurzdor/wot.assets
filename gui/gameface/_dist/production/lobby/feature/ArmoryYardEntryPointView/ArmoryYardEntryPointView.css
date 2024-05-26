@@ -30,12 +30,12 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    transition: opacity .15s linear;
+    transition: opacity 0.15s linear;
 }
 
 .Flag_hoverSequence__visible_53 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 .Flag_background_66 {
     width: 100%;
@@ -48,8 +48,8 @@ body {
 }
 
 .Flag_background__disabled_76 {
-        background: url('R.images.armory_yard.gui.maps.icons.entry_point.flag_disabled') no-repeat center / cover;
-    }
+    background: url('R.images.armory_yard.gui.maps.icons.entry_point.flag_disabled') no-repeat center / cover;
+}
 
 .Flag_content_4d {
     display: flex;
@@ -65,8 +65,8 @@ body {
 }
 
 .Flag_anchor__disabled_71 {
-        background: url('R.images.armory_yard.gui.maps.icons.entry_point.anchor_disabled') no-repeat center / cover;
-    }
+    background: url('R.images.armory_yard.gui.maps.icons.entry_point.anchor_disabled') no-repeat center / cover;
+}
 
 .Flag_progression_e2 {
     display: flex;
@@ -78,18 +78,18 @@ body {
 }
 
 .Flag_progression__text_91 {
-        color: #f6d392;
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
-        text-shadow: 0 1rem 6rem rgba(0, 0, 0, .4);
-    }
+    color: #f6d392;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    text-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.4);
+}
 
 .Flag_progression__gradient_77 {
-        color: #eaca91;
-        position: absolute;
-        mask-image: linear-gradient(transparent, #fff);
-    }
+    color: #eaca91;
+    position: absolute;
+    mask-image: linear-gradient(transparent, #fff);
+}
 
 .Flag_icon_02 {
     width: 32rem;
@@ -112,7 +112,7 @@ body {
     top: -15rem;
     left: 0;
     z-index: 0;
-    animation: App_fadeIn_ce .6s cubic-bezier(.5, 0, .5, 1) forwards .1s;
+    animation: App_fadeIn_ce 0.6s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.1s;
 }
 
 @keyframes App_fadeIn_ce {
@@ -129,4 +129,3 @@ body {
         top: 0rem;
     }
 }
-

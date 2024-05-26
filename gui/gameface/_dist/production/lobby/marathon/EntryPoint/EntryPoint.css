@@ -14,11 +14,11 @@ body {
     position: relative;
 }
 .ProgressBar_base__medium_62 {
-        height: 6rem;
-    }
+    height: 6rem;
+}
 .ProgressBar_base__small_df {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_background_51 {
     width: 100%;
     max-width: 8001px;
@@ -32,16 +32,15 @@ body {
     left: 0;
 }
 .ProgressBar_background__medium_6e {
-        height: 6rem;
-    }
+    height: 6rem;
+}
 .ProgressBar_background__small_46 {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_lineWrapper_6a {
     display: flex;
     flex: 1;
 }
-
 
 .ProgressBarBlink_base_24 {
     width: 60rem;
@@ -56,16 +55,16 @@ body {
     pointer-events: none;
 }
 
-    .ProgressBarBlink_base__medium_ec {
-        width: 42rem;
-        height: 70rem;
-    }
+.ProgressBarBlink_base__medium_ec {
+    width: 42rem;
+    height: 70rem;
+}
 
-    .ProgressBarBlink_base__small_0f {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+.ProgressBarBlink_base__small_0f {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -77,18 +76,18 @@ body {
     height: 100%;
     background-color: var(--progress-line-base);
     position: relative;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressLineImpose_base__disabled_cc {
-        background-color: var(--progress-line-disabled);
-    }
+    background-color: var(--progress-line-disabled);
+}
 .ProgressLineImpose_base__finished_d4 {
-        background-color: var(--progress-line-finished);
-    }
+    background-color: var(--progress-line-finished);
+}
 .ProgressLineImpose_base__withoutBounce_56 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressLineImpose_pattern_1c {
     max-width: 8001px;
     background-image: var(--progress-pattern-base);
@@ -102,19 +101,19 @@ body {
     left: 1rem;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-disabled);
-        left: 0;
-    }
+    background-image: var(--progress-pattern-disabled);
+    left: 0;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-finished);
-    }
+    background-image: var(--progress-pattern-finished);
+}
 .ProgressLineImpose_gradient_35 {
     max-width: 8001px;
-    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75));
     mix-blend-mode: overlay;
     position: absolute;
     top: 1rem;
@@ -123,15 +122,15 @@ body {
     left: 0;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
-        display: none;
-    }
+    display: none;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
-        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
-    }
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5));
+}
 .ProgressLineImpose_glow_a5 {
     width: 60rem;
     max-width: 8001px;
@@ -146,17 +145,17 @@ body {
     pointer-events: none;
 }
 .ProgressLineImpose_glow__left_d8 {
-        left: 1rem;
-    }
+    left: 1rem;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
-    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
-        display: none;
-    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+    display: none;
+}
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -178,7 +177,7 @@ body {
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1), cubic-bezier(0.21, 0.61, 0.35, 1);
     transition-property: width, transform;
 }
 
@@ -192,12 +191,12 @@ body {
     height: 100%;
     position: absolute;
     top: 0;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressBarDeltaGrow_glow_68 {
     width: 0;
     max-width: 8001px;
@@ -207,12 +206,12 @@ body {
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 
 .ProgressionBlock_base_0c {
     display: flex;
@@ -223,21 +222,21 @@ body {
     position: relative;
 }
 
-    .ProgressionBlock_base__thinSmall_1b {
-        width: 80rem;
-    }
+.ProgressionBlock_base__thinSmall_1b {
+    width: 80rem;
+}
 
-    .ProgressionBlock_base__thinExtraSmall_79 {
-        width: 50rem;
-    }
+.ProgressionBlock_base__thinExtraSmall_79 {
+    width: 50rem;
+}
 
-    .ProgressionBlock_base__postProgression_eb {
-        width: 269rem;
-    }
+.ProgressionBlock_base__postProgression_eb {
+    width: 269rem;
+}
 
-    .ProgressionBlock_base__postProgression_eb.ProgressionBlock_base__thinExtraSmall_79 {
-            width: 140rem;
-        }
+.ProgressionBlock_base__postProgression_eb.ProgressionBlock_base__thinExtraSmall_79 {
+    width: 140rem;
+}
 
 .ProgressionBlock_box_85 {
     display: flex;
@@ -248,38 +247,38 @@ body {
 }
 
 .ProgressionBlock_base__thinSmall_1b .ProgressionBlock_box_85,
-    .ProgressionBlock_base__thinExtraSmall_79 .ProgressionBlock_box_85 {
-        padding-bottom: 5rem;
-    }
+.ProgressionBlock_base__thinExtraSmall_79 .ProgressionBlock_box_85 {
+    padding-bottom: 5rem;
+}
 
 .ProgressionBlock_box__post_09 {
-        justify-content: center;
-    }
+    justify-content: center;
+}
 
 .ProgressionBlock_text_3e {
     display: flex;
     padding-left: 0;
-    color: rgba(254,254,236, .5);
+    color: rgba(254, 254, 236, 0.5);
     font-size: 14rem;
     line-height: 1.3;
 }
 
 .ProgressionBlock_base__thinSmall_1b .ProgressionBlock_text_3e {
-        padding-left: 3rem;
-        font-size: 13rem;
-    }
+    padding-left: 3rem;
+    font-size: 13rem;
+}
 
 .ProgressionBlock_base__thinExtraSmall_79 .ProgressionBlock_text_3e {
-        display: none;
-    }
+    display: none;
+}
 
 .ProgressionBlock_text__done_3c {
-        color: #80D43A;
-    }
+    color: #80d43a;
+}
 
 .ProgressionBlock_value__active_f9 {
-        color: #F2F2F7;
-    }
+    color: #f2f2f7;
+}
 
 .ProgressionBlock_icon_7c {
     width: 21rem;
@@ -299,40 +298,40 @@ body {
 }
 
 .ProgressionBlock_iconImg__award_68 {
-        background-image: url('R.images.gui.maps.icons.marathon.icons.award');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.icons.award');
+}
 
 .ProgressionBlock_iconImg__blocked_damage_68,
-    .ProgressionBlock_iconImg__damage_block_a0 {
-        background-image: url('R.images.gui.maps.icons.marathon.icons.blocked_damage');
-    }
+.ProgressionBlock_iconImg__damage_block_a0 {
+    background-image: url('R.images.gui.maps.icons.marathon.icons.blocked_damage');
+}
 
 .ProgressionBlock_iconImg__experience_d5,
-    .ProgressionBlock_iconImg__originalXP_41 {
-        background-image: url('R.images.gui.maps.icons.marathon.icons.exp');
-    }
+.ProgressionBlock_iconImg__originalXP_41 {
+    background-image: url('R.images.gui.maps.icons.marathon.icons.exp');
+}
 
 .ProgressionBlock_iconImg__damage_bb {
-        background-image: url('R.images.gui.maps.icons.marathon.icons.damage');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.icons.damage');
+}
 
 .ProgressionBlock_iconImg__win_b7,
-    .ProgressionBlock_iconImg__top_fd {
-        background-image: url('R.images.gui.maps.icons.marathon.icons.top');
-    }
+.ProgressionBlock_iconImg__top_fd {
+    background-image: url('R.images.gui.maps.icons.marathon.icons.top');
+}
 
 .ProgressionBlock_iconImg__top3_5d,
-    .ProgressionBlock_iconImg__battles_7e {
-        background-image: url('R.images.gui.maps.icons.marathon.icons.top3');
-    }
+.ProgressionBlock_iconImg__battles_7e {
+    background-image: url('R.images.gui.maps.icons.marathon.icons.top3');
+}
 
 .ProgressionBlock_iconImg__kill_vehicles_b3 {
-        background-image: url('R.images.gui.maps.icons.marathon.icons.kill_vehicles');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.icons.kill_vehicles');
+}
 
 .ProgressionBlock_iconImg__wins_83 {
-        background-image: url('R.images.gui.maps.icons.marathon.icons.wins');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.icons.wins');
+}
 
 .ProgressionBlock_progress_f8 {
     width: 100%;
@@ -351,9 +350,9 @@ body {
     left: 0;
 }
 
-    .PostProgression_base__big_2f {
-        bottom: 14rem;
-    }
+.PostProgression_base__big_2f {
+    bottom: 14rem;
+}
 
 .PostProgression_progress_77 {
     display: flex;
@@ -375,7 +374,7 @@ body {
 }
 
 .PostProgression_iconText_b1 {
-    color: #80D43A;
+    color: #80d43a;
     font-size: 14rem;
 }
 
@@ -391,17 +390,17 @@ body {
     pointer-events: none;
 }
 
-    .Progression_base__big_b0 {
-        padding: 0 15rem;
-        bottom: 14rem;
-    }
+.Progression_base__big_b0 {
+    padding: 0 15rem;
+    bottom: 14rem;
+}
 
 .Progression_box_06 {
     display: flex;
 }
 
 .Progression_separator_d0 {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 10rem;
     font-weight: 400;
     line-height: 1.2;
@@ -415,8 +414,8 @@ body {
 }
 
 .Progression_base__thinExtraSmall_d5 .Progression_separator_d0 {
-        margin: 0 3rem;
-    }
+    margin: 0 3rem;
+}
 
 .FormatText_base_d0 {
     display: flex;
@@ -429,25 +428,25 @@ body {
     position: relative;
 }
 
-    .StageText_base__wideSmall_20 {
-        margin-bottom: 0;
-    }
+.StageText_base__wideSmall_20 {
+    margin-bottom: 0;
+}
 
-    .StageText_base__finished_ac {
-        display: flex;
-        margin-bottom: 0;
-        position: absolute;
-        bottom: 8rem;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+.StageText_base__finished_ac {
+    display: flex;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
-    .StageText_base__finished_ac.StageText_base__small_4c {
-            bottom: 0;
-        }
+.StageText_base__finished_ac.StageText_base__small_4c {
+    bottom: 0;
+}
 
 .StageText_text_0e {
-    color: #FEFEEC;
+    color: #fefeec;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -456,39 +455,41 @@ body {
 }
 
 .StageText_base__small_4c .StageText_text_0e {
-        font-size: 12rem;
-        line-height: 14rem;
-    }
+    font-size: 12rem;
+    line-height: 14rem;
+}
 
 .StageText_text__name_4d {
-        font-weight: 700;
-    }
+    font-weight: 700;
+}
 
 .StageText_text__date_47,
-    .StageText_text__active_f8 {
-        color: #FFDD99;
-    }
+.StageText_text__active_f8 {
+    color: #ffdd99;
+}
 
-.StageText_text__dateActive_6b, .StageText_text__activeActive_91 {
-            font-weight: 700;
-        }
+.StageText_text__dateActive_6b,
+.StageText_text__activeActive_91 {
+    font-weight: 700;
+}
 
 .StageText_finishedText_c4 {
     justify-content: center;
     align-items: center;
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 14rem;
     line-height: 16rem;
 }
 
 .StageText_finishedText__discount_0e {
-        margin-top: -1rem;
-        color: #E9E2BF;
-        font-weight: 700;
-        text-shadow: 0 0 4px rgba(255,127,0, .25),
-            0 0 8px #ff2a00,
-            0 0 15px #e52;
-    }
+    margin-top: -1rem;
+    color: #e9e2bf;
+    font-weight: 700;
+    text-shadow:
+        0 0 4px rgba(255, 127, 0, 0.25),
+        0 0 8px #ff2a00,
+        0 0 15px #e52;
+}
 
 .StageText_icon_ad {
     width: 12rem;
@@ -502,8 +503,8 @@ body {
 }
 
 .StageText_base__small_4c .StageText_icon_ad {
-        margin-top: -2rem;
-    }
+    margin-top: -2rem;
+}
 
 .StageText_label_41 {
     display: flex;
@@ -519,20 +520,20 @@ body {
 }
 
 .StageText_stageWrapper__indent_cc {
-        padding-right: 12rem;
-    }
+    padding-right: 12rem;
+}
 
 .StageText_base__small_4c .StageText_stageWrapper_5c {
-        max-width: 270rem;
-        padding: 0 4rem;
-        bottom: 8rem;
-    }
+    max-width: 270rem;
+    padding: 0 4rem;
+    bottom: 8rem;
+}
 
 .StageText_shadow_49 {
     width: 310rem;
     height: 40rem;
     background: url('R.images.gui.maps.icons.marathon.shadow') no-repeat 50% / contain;
-    opacity: .5;
+    opacity: 0.5;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -546,42 +547,43 @@ body {
     position: relative;
 }
 
-    .SubTitle_base__thinExtraSmall_ab {
-        margin-left: 0;
-    }
+.SubTitle_base__thinExtraSmall_ab {
+    margin-left: 0;
+}
 
-    .SubTitle_base__notStarted_c8.SubTitle_base__thinExtraSmall_ab {
-        margin-left: 16rem;
-    }
+.SubTitle_base__notStarted_c8.SubTitle_base__thinExtraSmall_ab {
+    margin-left: 16rem;
+}
 
-    .SubTitle_base__hidden_7b {
-        opacity: 0;
-    }
+.SubTitle_base__hidden_7b {
+    opacity: 0;
+}
 
 .SubTitle_title_a9 {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 14rem;
     line-height: 18rem;
-    text-shadow: 0 0 4px rgba(255,127,0, .25),
-                     0 0 8px #ff2a00,
-                     0 0 15px #e52;
+    text-shadow:
+        0 0 4px rgba(255, 127, 0, 0.25),
+        0 0 8px #ff2a00,
+        0 0 15px #e52;
     position: relative;
     z-index: 1;
 }
 
 .SubTitle_base__thinSmall_41 .SubTitle_title_a9,
-    .SubTitle_base__thinExtraSmall_ab .SubTitle_title_a9 {
-        font-size: 12rem;
-    }
+.SubTitle_base__thinExtraSmall_ab .SubTitle_title_a9 {
+    font-size: 12rem;
+}
 
 .SubTitle_title__discount_cb {
-        font-weight: 700;
-    }
+    font-weight: 700;
+}
 
 .SubTitle_base__finished_86 .SubTitle_title_a9 {
-        justify-content: center;
-        line-height: 18rem;
-    }
+    justify-content: center;
+    line-height: 18rem;
+}
 
 .SubTitle_icon_f1 {
     width: 38rem;
@@ -594,14 +596,14 @@ body {
 }
 
 .SubTitle_base__thinExtraSmall_ab.SubTitle_base__finished_86 .SubTitle_icon_f1 {
-        display: none;
-    }
+    display: none;
+}
 
 .SubTitle_shadow_ee {
     width: 315rem;
     height: 55rem;
     background: url('R.images.gui.maps.icons.marathon.shadow_dark') no-repeat 50% / contain;
-    opacity: .7;
+    opacity: 0.7;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -632,35 +634,35 @@ body {
     width: 100%;
     height: 100%;
     background: no-repeat center / cover;
-    animation: EntryPointApp_zoom-out_45 .6s cubic-bezier(.82, .01, 1, 1) forwards;
+    animation: EntryPointApp_zoom-out_45 0.6s cubic-bezier(0.82, 0.01, 1, 1) forwards;
 }
 .EntryPointApp_base_25:hover .EntryPointApp_bg_27 {
-        animation: EntryPointApp_zoom-in_bc 1.2s cubic-bezier(0, 0, .17, .99) forwards;
-    }
+    animation: EntryPointApp_zoom-in_bc 1.2s cubic-bezier(0, 0, 0.17, 0.99) forwards;
+}
 .EntryPointApp_base__big_93 .EntryPointApp_bg_27 {
-        background-image: url('R.images.gui.maps.icons.marathon.banner');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.banner');
+}
 .EntryPointApp_base__wideSmall_89 .EntryPointApp_bg_27 {
-        background-image: url('R.images.gui.maps.icons.marathon.banner_wide_small');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.banner_wide_small');
+}
 .EntryPointApp_base__thinSmall_6a .EntryPointApp_bg_27 {
-        background-image: url('R.images.gui.maps.icons.marathon.banner_thin_small');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.banner_thin_small');
+}
 .EntryPointApp_base__thinExtraSmall_8a .EntryPointApp_bg_27 {
-        background-image: url('R.images.gui.maps.icons.marathon.banner_thin_extra_small');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.banner_thin_extra_small');
+}
 .EntryPointApp_base__big_93 .EntryPointApp_bg__post_15 {
-        background-image: url('R.images.gui.maps.icons.marathon.banner_post');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.banner_post');
+}
 .EntryPointApp_base__wideSmall_89 .EntryPointApp_bg__post_15 {
-        background-image: url('R.images.gui.maps.icons.marathon.banner_post_wide_small');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.banner_post_wide_small');
+}
 .EntryPointApp_base__thinSmall_6a .EntryPointApp_bg__post_15 {
-        background-image: url('R.images.gui.maps.icons.marathon.banner_post_thin_small');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.banner_post_thin_small');
+}
 .EntryPointApp_base__thinExtraSmall_8a .EntryPointApp_bg__post_15 {
-        background-image: url('R.images.gui.maps.icons.marathon.banner_post_thin_extra_small');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.banner_post_thin_extra_small');
+}
 .EntryPointApp_stroke_fc {
     width: 100%;
     height: 100%;
@@ -670,17 +672,17 @@ body {
     left: 0;
 }
 .EntryPointApp_base__big_93 .EntryPointApp_stroke_fc {
-        background-image: url('R.images.gui.maps.icons.marathon.big_stroke');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.big_stroke');
+}
 .EntryPointApp_base__wideSmall_89 .EntryPointApp_stroke_fc {
-        background-image: url('R.images.gui.maps.icons.marathon.wideSmall_stroke');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.wideSmall_stroke');
+}
 .EntryPointApp_base__thinSmall_6a .EntryPointApp_stroke_fc {
-        background-image: url('R.images.gui.maps.icons.marathon.thinSmall_stroke');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.thinSmall_stroke');
+}
 .EntryPointApp_base__thinExtraSmall_8a .EntryPointApp_stroke_fc {
-        background-image: url('R.images.gui.maps.icons.marathon.thinExtraSmall_stroke');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.thinExtraSmall_stroke');
+}
 .EntryPointApp_bgHighlight_73 {
     width: 100%;
     height: 100%;
@@ -689,23 +691,23 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    animation: EntryPointApp_fade-in_9c .6s cubic-bezier(.82, .01, 1, 1) forwards;
+    animation: EntryPointApp_fade-in_9c 0.6s cubic-bezier(0.82, 0.01, 1, 1) forwards;
 }
 .EntryPointApp_base__big_93 .EntryPointApp_bgHighlight_73 {
-        background-image: url('R.images.gui.maps.icons.marathon.hover');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.hover');
+}
 .EntryPointApp_base__wideSmall_89 .EntryPointApp_bgHighlight_73 {
-        background-image: url('R.images.gui.maps.icons.marathon.hover_wide_small');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.hover_wide_small');
+}
 .EntryPointApp_base__thinSmall_6a .EntryPointApp_bgHighlight_73 {
-        background-image: url('R.images.gui.maps.icons.marathon.hover_thin_small');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.hover_thin_small');
+}
 .EntryPointApp_base__thinExtraSmall_8a .EntryPointApp_bgHighlight_73 {
-        background-image: url('R.images.gui.maps.icons.marathon.hover_thin_extra_small');
-    }
+    background-image: url('R.images.gui.maps.icons.marathon.hover_thin_extra_small');
+}
 .EntryPointApp_base_25:hover .EntryPointApp_bgHighlight_73 {
-        animation: EntryPointApp_fade-out_33 .3s cubic-bezier(.82, .01, 1, 1) forwards;
-    }
+    animation: EntryPointApp_fade-out_33 0.3s cubic-bezier(0.82, 0.01, 1, 1) forwards;
+}
 .EntryPointApp_sparkles_bf {
     width: 180rem;
     height: 140rem;
@@ -721,34 +723,34 @@ body {
     transform: translateX(-50%);
 }
 .EntryPointApp_base__wideSmall_89 .EntryPointApp_subTitleWrapper_17 {
-        bottom: 9rem;
-    }
+    bottom: 9rem;
+}
 .EntryPointApp_base__thinSmall_6a .EntryPointApp_subTitleWrapper_17,
-    .EntryPointApp_base__thinExtraSmall_8a .EntryPointApp_subTitleWrapper_17 {
-        margin-bottom: 3rem;
-        bottom: 5rem;
-    }
+.EntryPointApp_base__thinExtraSmall_8a .EntryPointApp_subTitleWrapper_17 {
+    margin-bottom: 3rem;
+    bottom: 5rem;
+}
 .EntryPointApp_subTitleWrapper__alert_49 {
-        position: absolute;
-        top: 8rem;
-        left: 16rem;
-        transform: none;
-    }
+    position: absolute;
+    top: 8rem;
+    left: 16rem;
+    transform: none;
+}
 .EntryPointApp_base__thinExtraSmall_8a .EntryPointApp_subTitleWrapper__alert_49 {
-            top: 5rem;
-            left: 25rem;
-        }
+    top: 5rem;
+    left: 25rem;
+}
 .EntryPointApp_subTitleWrapper__finished_d8 {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        bottom: auto;
-        left: auto;
-        transform: none;
-    }
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+}
 .EntryPointApp_base__wideSmall_89 .EntryPointApp_subTitleWrapper__finished_d8 {
-            bottom: 3rem;
-        }
+    bottom: 3rem;
+}
 .EntryPointApp_discount_09 {
     padding: 6rem 6rem 0 0;
     position: absolute;
@@ -756,17 +758,18 @@ body {
     right: 0;
 }
 .EntryPointApp_base__big_93 .EntryPointApp_discount_09 {
-        padding: 8rem 8rem 0 0;
-    }
+    padding: 8rem 8rem 0 0;
+}
 .EntryPointApp_discountText_2f {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
     font-weight: 700;
-    text-shadow: 0 0 4px rgba(255,127,0, .25),
-                 0 0 8px #ff2a00,
-                 0 0 15px #e52;
+    text-shadow:
+        0 0 4px rgba(255, 127, 0, 0.25),
+        0 0 8px #ff2a00,
+        0 0 15px #e52;
 }
 .EntryPointApp_discountLight_9d {
     width: 180rem;
@@ -784,8 +787,8 @@ body {
     margin-bottom: 22rem;
 }
 .EntryPointApp_base__notStarted_5b .EntryPointApp_mainTitleWrapper_b1 {
-        margin-bottom: 0;
-    }
+    margin-bottom: 0;
+}
 .EntryPointApp_titleWrapper_ba {
     display: flex;
     justify-content: center;
@@ -793,23 +796,23 @@ body {
     z-index: 1;
 }
 .EntryPointApp_base__thinExtraSmall_8a .EntryPointApp_titleWrapper_ba {
-        margin-bottom: 3rem;
-    }
+    margin-bottom: 3rem;
+}
 .EntryPointApp_title_e0 {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 22rem;
     font-weight: 700;
     line-height: 1.2;
     display: flex;
     padding: 0 5rem;
-    text-shadow: 0 2rem 4rem rgba(0,0,0, .5);
+    text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
 }
 .EntryPointApp_base__thinSmall_6a .EntryPointApp_title_e0 {
-        font-size: 18rem;
-    }
+    font-size: 18rem;
+}
 .EntryPointApp_base__thinExtraSmall_8a .EntryPointApp_title_e0 {
-        font-size: 15rem;
-    }
+    font-size: 15rem;
+}
 .EntryPointApp_highlight_d1 {
     width: 400rem;
     height: 98rem;
@@ -855,4 +858,3 @@ body {
         opacity: 1;
     }
 }
-

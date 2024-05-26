@@ -17,71 +17,75 @@
 }
 
 .Resource_resourceIcon__gold_ed {
-            background-image: url('R.images.gui.maps.icons.resourceWell.confirm.gold');
-        }
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.gold');
+}
 
 .Resource_resourceIcon__credits_34 {
-            background-image: url('R.images.gui.maps.icons.resourceWell.confirm.credits');
-        }
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.credits');
+}
 
 .Resource_resourceIcon__freeXP_7d {
-            background-image: url('R.images.gui.maps.icons.resourceWell.confirm.freeXP');
-        }
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.freeXP');
+}
 
 .Resource_resourceIcon__crystal_55 {
-            background-image: url('R.images.gui.maps.icons.resourceWell.confirm.crystal');
-        }
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.crystal');
+}
 
 .Resource_resourceIcon__intelligence_5c {
-            background-image: url('R.images.gui.maps.icons.resourceWell.confirm.intelligence');
-        }
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.intelligence');
+}
 
 .Resource_resourceIcon__ussr_80 {
-            background-image: url('R.images.gui.maps.icons.resourceWell.confirm.ussr');
-        }
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.ussr');
+}
 
 .Resource_resourceIcon__germany_37 {
-            background-image: url('R.images.gui.maps.icons.resourceWell.confirm.germany');
-        }
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.germany');
+}
 
 .Resource_resourceIcon__china_70 {
-            background-image: url('R.images.gui.maps.icons.resourceWell.confirm.china');
-        }
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.china');
+}
 
 .Resource_resourceIcon__czech_1a {
-            background-image: url('R.images.gui.maps.icons.resourceWell.confirm.czech');
-        }
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.czech');
+}
 
 .Resource_resourceIcon__france_98 {
-            background-image: url('R.images.gui.maps.icons.resourceWell.confirm.france');
-        }
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.france');
+}
 
 .Resource_resourceIcon__italy_e0 {
-            background-image: url('R.images.gui.maps.icons.resourceWell.confirm.italy');
-        }
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.italy');
+}
 
 .Resource_resourceIcon__japan_1c {
-            background-image: url('R.images.gui.maps.icons.resourceWell.confirm.japan');
-        }
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.japan');
+}
 
 .Resource_resourceIcon__poland_f0 {
-            background-image: url('R.images.gui.maps.icons.resourceWell.confirm.poland');
-        }
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.poland');
+}
 
 .Resource_resourceIcon__sweden_37 {
-            background-image: url('R.images.gui.maps.icons.resourceWell.confirm.sweden');
-        }
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.sweden');
+}
 
 .Resource_resourceIcon__uk_0a {
-            background-image: url('R.images.gui.maps.icons.resourceWell.confirm.uk');
-        }
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.uk');
+}
 
 .Resource_resourceIcon__usa_00 {
-            background-image: url('R.images.gui.maps.icons.resourceWell.confirm.usa');
-        }
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.usa');
+}
+
+.Resource_resourceIcon__premium_plus_46 {
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.premium_plus');
+}
 
 .Resource_counter_fe {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -90,23 +94,22 @@
 }
 
 .Resource_counter__noCurrency_5e {
-        right: 20rem;
-    }
+    right: 20rem;
+}
 
 .Resource_counter__crystal_75,
-    .Resource_counter__freeXP_68 {
-        color: #C9C9B6;
-    }
+.Resource_counter__freeXP_68 {
+    color: #c9c9b6;
+}
 
 .Resource_counter__gold_8e {
-        color: #FEAB34;
-    }
+    color: #feab34;
+}
 
 .Resource_counter__credits_65 {
-        color: #ced9d9;
-    }
+    color: #ced9d9;
+}
 
 .Resource_count_7c {
     display: flex;
 }
-

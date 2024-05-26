@@ -4,20 +4,30 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .Content_base_4d {
     width: 360rem;
     max-height: 600rem;
     padding: 15rem;
     border-radius: 2rem;
-    box-shadow: 0 1rem 12rem 0 rgba(0, 0, 0, 0.15), 0 0 1rem 0 #000, 0 0 25rem 0 rgba(242, 242, 230, 0.1) inset;
-    background: linear-gradient(180deg, rgba(51, 51, 41, 0.06) 0%, rgba(44, 44, 36, 0) 13.02%, rgba(7, 7, 6, 0) 85.94%, rgba(51, 51, 41, 0.02) 100%), #12110b;
+    box-shadow:
+        0 1rem 12rem 0 rgba(0, 0, 0, 0.15),
+        0 0 1rem 0 #000,
+        0 0 25rem 0 rgba(242, 242, 230, 0.1) inset;
+    background: linear-gradient(
+            180deg,
+            rgba(51, 51, 41, 0.06) 0%,
+            rgba(44, 44, 36, 0) 13.02%,
+            rgba(7, 7, 6, 0) 85.94%,
+            rgba(51, 51, 41, 0.02) 100%
+        ),
+        #12110b;
     overflow: hidden;
     position: relative;
     z-index: 100;
@@ -35,7 +45,7 @@
 }
 
 .Content_titleHeader_ae {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
@@ -43,12 +53,12 @@
 }
 
 .Content_titleHeader__second_ef {
-        color: #E9E2BF;
-        font-size: 14rem;
-        font-weight: 700;
-        line-height: 1.15;
-        margin: 0 0 5rem;
-    }
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0 0 5rem;
+}
 
 .Content_imageWrapper_09 {
     display: flex;
@@ -65,7 +75,7 @@
 
 .Content_titleDescription_e3,
 .Content_elementDescription_22 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -89,10 +99,9 @@
 }
 
 .Content_element__wrap_70 {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-    }
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}

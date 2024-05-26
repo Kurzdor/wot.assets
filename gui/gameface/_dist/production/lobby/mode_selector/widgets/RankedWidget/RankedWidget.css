@@ -8,23 +8,23 @@
 }
 
 .FormatTextWithColorTags_whiteReal_d8 {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .FormatTextWithColorTags_white_b9 {
-    color: #F2F2F7;
+    color: #f2f2f7;
 }
 
 .FormatTextWithColorTags_whiteOrange_ea {
-    color: #FEFEEC;
+    color: #fefeec;
 }
 
 .FormatTextWithColorTags_whiteSpanish_54 {
-    color: #E9E2BF;
+    color: #e9e2bf;
 }
 
 .FormatTextWithColorTags_par_c1 {
-    color: #8C8C7E;
+    color: #8c8c7e;
 }
 
 .FormatTextWithColorTags_parSecondary_4e {
@@ -32,39 +32,39 @@
 }
 
 .FormatTextWithColorTags_parTertiary_14 {
-    color: #37362E;
+    color: #37362e;
 }
 
 .FormatTextWithColorTags_red_d9 {
-    color: #FF2717;
+    color: #ff2717;
 }
 
 .FormatTextWithColorTags_redDark_ea {
-    color: #B70000;
+    color: #b70000;
 }
 
 .FormatTextWithColorTags_yellow_48 {
-    color: #FEAB34;
+    color: #feab34;
 }
 
 .FormatTextWithColorTags_orange_ad {
-    color: #EE7000;
+    color: #ee7000;
 }
 
 .FormatTextWithColorTags_cream_96 {
-    color: #FFDD99;
+    color: #ffdd99;
 }
 
 .FormatTextWithColorTags_brown_27 {
-    color: #CBAC77;
+    color: #cbac77;
 }
 
 .FormatTextWithColorTags_greenBright_04 {
-    color: #80D43A;
+    color: #80d43a;
 }
 
 .FormatTextWithColorTags_green_58 {
-    color: #7AB300;
+    color: #7ab300;
 }
 
 .FormatTextWithColorTags_greenDark_af {
@@ -72,27 +72,27 @@
 }
 
 .FormatTextWithColorTags_blueBooster_b3 {
-    color: #CCFFFF;
+    color: #ccffff;
 }
 
 .FormatTextWithColorTags_blueTeamkiller_ab {
-    color: #09E2FF;
+    color: #09e2ff;
 }
 
 .FormatTextWithColorTags_cred_d3 {
-    color: #CED9D9;
+    color: #ced9d9;
 }
 
 .FormatTextWithColorTags_gold_28 {
-    color: #FFC363;
+    color: #ffc363;
 }
 
 .FormatTextWithColorTags_bond_74 {
-    color: #C9C9B6;
+    color: #c9c9b6;
 }
 
 .FormatTextWithColorTags_prom_58 {
-    color: #A29B70;
+    color: #a29b70;
 }
 
 .BonusBattles_base_1b {
@@ -120,8 +120,8 @@
 }
 
 .BonusBattles_divider__right_08 {
-        transform: scaleX(-1);
-    }
+    transform: scaleX(-1);
+}
 
 .BonusBattles_icon_2c {
     width: 16rem;
@@ -130,7 +130,7 @@
 }
 
 .BonusBattles_amount_a2 {
-    color: #FEFEEC;
+    color: #fefeec;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -150,18 +150,18 @@
 }
 
 .Rank_icon__small_92 {
-        width: 42rem;
-        height: 56rem;
-    }
+    width: 42rem;
+    height: 56rem;
+}
 
 .Rank_icon__large_65 {
-        width: 80rem;
-        height: 110rem;
-    }
+    width: 80rem;
+    height: 110rem;
+}
 
 .Rank_icon__next_89 {
-        filter: saturate(0);
-    }
+    filter: saturate(0);
+}
 
 .Rank_frame_88 {
     width: 74rem;
@@ -172,42 +172,42 @@
 }
 
 .Rank_frame__small_33 {
-        width: 50rem;
-        height: 64rem;
-        top: -4rem;
-        left: -4rem;
-    }
+    width: 50rem;
+    height: 64rem;
+    top: -4rem;
+    left: -4rem;
+}
 
 .Rank_frame__large_c7 {
-        width: 100rem;
-        height: 130rem;
-        top: -10rem;
-        left: -10rem;
-    }
+    width: 100rem;
+    height: 130rem;
+    top: -10rem;
+    left: -10rem;
+}
 
 .Rank_unburnable_65 {
     background: url('R.images.gui.maps.icons.rankedBattles.ranks.unburnable.small') no-repeat 50% / contain;
 }
 
 .Rank_unburnable__small_76 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.ranks.unburnable.tiny');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.ranks.unburnable.tiny');
+}
 
 .Rank_unburnable__large_20 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.ranks.unburnable.medium');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.ranks.unburnable.medium');
+}
 
 .Rank_shield_13 {
     background: url('R.images.gui.maps.icons.rankedBattles.ranks.shields.small') no-repeat 50% / contain;
 }
 
 .Rank_shield__small_36 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.ranks.shields.tiny');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.ranks.shields.tiny');
+}
 
 .Rank_shield__large_b2 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.ranks.shields.medium');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.ranks.shields.medium');
+}
 
 .Rank_hp_3a {
     color: #000000;
@@ -227,30 +227,30 @@
 }
 
 .Rank_hp__small_dd {
-        color: #000000;
-        font-size: 12rem;
-        font-weight: 400;
-        line-height: 1.3;
-        width: 16rem;
-        height: 18rem;
-        background-image: url('R.images.gui.maps.icons.rankedBattles.ranks.shields.plate.empty.tiny');
-        font-weight: 700;
-        top: -8rem;
-        right: -7rem;
-    }
+    color: #000000;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 16rem;
+    height: 18rem;
+    background-image: url('R.images.gui.maps.icons.rankedBattles.ranks.shields.plate.empty.tiny');
+    font-weight: 700;
+    top: -8rem;
+    right: -7rem;
+}
 
 .Rank_hp__large_7e {
-        color: #000000;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
-        width: 24rem;
-        height: 28rem;
-        background-image: url('R.images.gui.maps.icons.rankedBattles.ranks.shields.plate.empty.medium');
-        font-weight: 700;
-        top: -16rem;
-        right: -14rem;
-    }
+    color: #000000;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    width: 24rem;
+    height: 28rem;
+    background-image: url('R.images.gui.maps.icons.rankedBattles.ranks.shields.plate.empty.medium');
+    font-weight: 700;
+    top: -16rem;
+    right: -14rem;
+}
 
 .Rank_hpValue_9f {
     margin-top: -2rem;
@@ -266,30 +266,30 @@
     pointer-events: auto;
 }
 
-    .Division_base__extraSmall_1a {
-        width: 166rem;
-        height: 64rem;
-    }
+.Division_base__extraSmall_1a {
+    width: 166rem;
+    height: 64rem;
+}
 
-    .Division_base__small_34 {
-        width: 240rem;
-        height: 64rem;
-    }
+.Division_base__small_34 {
+    width: 240rem;
+    height: 64rem;
+}
 
-    .Division_base__smedium_98 {
-        width: 240rem;
-        height: 100rem;
-    }
+.Division_base__smedium_98 {
+    width: 240rem;
+    height: 100rem;
+}
 
-    .Division_base__medium_08 {
-        width: 290rem;
-        height: 100rem;
-    }
+.Division_base__medium_08 {
+    width: 290rem;
+    height: 100rem;
+}
 
-    .Division_base__large_7d {
-        width: 240rem;
-        height: 130rem;
-    }
+.Division_base__large_7d {
+    width: 240rem;
+    height: 130rem;
+}
 
 .Division_steps_31 {
     display: flex;
@@ -298,30 +298,30 @@
 }
 
 .Division_steps__wide_6b {
-        margin: 0 25rem;
-    }
+    margin: 0 25rem;
+}
 
 .Division_steps__side_8c {
-        margin-left: -50rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-100%, -50%);
-    }
+    margin-left: -50rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+}
 
 .Division_base__extraSmall_1a .Division_steps__side_8c,
-        .Division_base__small_34 .Division_steps__side_8c {
-            margin-left: -30rem;
-        }
+.Division_base__small_34 .Division_steps__side_8c {
+    margin-left: -30rem;
+}
 
 .Division_base__medium_08 .Division_steps__side_8c,
-        .Division_base__smedium_98 .Division_steps__side_8c {
-            margin-left: -40rem;
-        }
+.Division_base__smedium_98 .Division_steps__side_8c {
+    margin-left: -40rem;
+}
 
 .Division_base__large_7d .Division_steps__side_8c {
-            margin-left: -51rem;
-        }
+    margin-left: -51rem;
+}
 
 .Division_step_54 {
     width: 100rem;
@@ -331,19 +331,19 @@
 }
 
 .Division_step__notReceived_d3 {
-        background-image: url('R.images.gui.maps.icons.mode_selector.common.ranks_step_disabled_big');
-    }
+    background-image: url('R.images.gui.maps.icons.mode_selector.common.ranks_step_disabled_big');
+}
 
 .Division_step__small_b3 {
-        width: 50rem;
-        height: 55rem;
-        margin: 0 -21rem;
-        background-image: url('R.images.gui.maps.icons.mode_selector.common.ranks_step_normal_small');
-    }
+    width: 50rem;
+    height: 55rem;
+    margin: 0 -21rem;
+    background-image: url('R.images.gui.maps.icons.mode_selector.common.ranks_step_normal_small');
+}
 
 .Division_step__small_b3.Division_step__notReceived_d3 {
-            background-image: url('R.images.gui.maps.icons.mode_selector.common.ranks_step_disabled_small');
-        }
+    background-image: url('R.images.gui.maps.icons.mode_selector.common.ranks_step_disabled_small');
+}
 
 .RankedStat_base_29 {
     width: 50rem;
@@ -352,10 +352,10 @@
     pointer-events: auto;
 }
 
-    .RankedStat_base__large_6b {
-        width: 64rem;
-        height: 64rem;
-    }
+.RankedStat_base__large_6b {
+    width: 64rem;
+    height: 64rem;
+}
 
 .RankedStat_icon_83 {
     width: 50rem;
@@ -364,27 +364,27 @@
 }
 
 .RankedStat_icon__efficiency_9e {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.stats.c_50.efficiency');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.stats.c_50.efficiency');
+}
 
 .RankedStat_icon__efficiency__large_44 {
-            width: 64rem;
-            height: 64rem;
-            background-image: url('R.images.gui.maps.icons.rankedBattles.stats.c_64.efficiency');
-        }
+    width: 64rem;
+    height: 64rem;
+    background-image: url('R.images.gui.maps.icons.rankedBattles.stats.c_64.efficiency');
+}
 
 .RankedStat_icon__position_6f {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.stats.c_50.position');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.stats.c_50.position');
+}
 
 .RankedStat_icon__position__large_40 {
-            width: 64rem;
-            height: 64rem;
-            background-image: url('R.images.gui.maps.icons.rankedBattles.stats.c_64.position');
-        }
+    width: 64rem;
+    height: 64rem;
+    background-image: url('R.images.gui.maps.icons.rankedBattles.stats.c_64.position');
+}
 
 .RankedStat_value_cb {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 24rem;
     font-weight: 700;
     line-height: 1.2;
@@ -392,35 +392,37 @@
     top: auto;
     left: 50%;
     transform: translate(-50%);
-    text-shadow: 0 0 12rem rgba(242,242,247, .5),
-        0 0 7rem rgba(242,242,247, .5);
+    text-shadow:
+        0 0 12rem rgba(242, 242, 247, 0.5),
+        0 0 7rem rgba(242, 242, 247, 0.5);
     bottom: -3rem;
 }
 
 .RankedStat_value__medium_dc {
-        color: #FEFEEC;
-        font-size: 14rem;
-        font-weight: 700;
-        line-height: 1.15;
-        bottom: 2rem;
-    }
+    color: #fefeec;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    bottom: 2rem;
+}
 
 .RankedStat_value__small_0a {
-        color: #FEFEEC;
-        font-size: 14rem;
-        font-weight: 700;
-        line-height: 1.15;
-        bottom: 14rem;
-    }
+    color: #fefeec;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    bottom: 14rem;
+}
 
 .RankedStat_delta_ff {
-    color: #80D43A;
+    color: #80d43a;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
     display: flex;
-    text-shadow: 0 0 12rem rgba(128,212,58, .5),
-        0 0 7rem rgba(128,212,58, .5);
+    text-shadow:
+        0 0 12rem rgba(128, 212, 58, 0.5),
+        0 0 7rem rgba(128, 212, 58, 0.5);
     position: absolute;
     bottom: -3rem;
     left: 50%;
@@ -428,26 +430,27 @@
 }
 
 .RankedStat_delta__medium_89 {
-        color: #80D43A;
-        font-size: 12rem;
-        font-weight: 400;
-        line-height: 1.3;
-        bottom: 4rem;
-    }
+    color: #80d43a;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    bottom: 4rem;
+}
 
 .RankedStat_delta__small_ab {
-        color: #80D43A;
-        font-size: 12rem;
-        font-weight: 400;
-        line-height: 1.3;
-        bottom: 15rem;
-    }
+    color: #80d43a;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    bottom: 15rem;
+}
 
 .RankedStat_delta__minus_71 {
-        color: #FF2717;
-        text-shadow: 0 0 12rem rgba(255,39,23, .5),
-            0 0 7rem rgba(255,39,23, .5);
-    }
+    color: #ff2717;
+    text-shadow:
+        0 0 12rem rgba(255, 39, 23, 0.5),
+        0 0 7rem rgba(255, 39, 23, 0.5);
+}
 
 .RankedStat_arrow_97 {
     width: 11rem;
@@ -457,8 +460,8 @@
 }
 
 .RankedStat_arrow__minus_e1 {
-        background-image: url('R.images.gui.maps.icons.rankedBattles.league.delta_minus');
-    }
+    background-image: url('R.images.gui.maps.icons.rankedBattles.league.delta_minus');
+}
 
 .League_base_18 {
     display: flex;
@@ -470,33 +473,33 @@
     pointer-events: auto;
 }
 
-    .League_base__extraSmall_c7,
-    .League_base__tiny_d4 {
-        align-items: flex-start;
-        width: 166rem;
-        height: 64rem;
-    }
+.League_base__extraSmall_c7,
+.League_base__tiny_d4 {
+    align-items: flex-start;
+    width: 166rem;
+    height: 64rem;
+}
 
-    .League_base__small_30 {
-        align-items: flex-start;
-        width: 240rem;
-        height: 64rem;
-    }
+.League_base__small_30 {
+    align-items: flex-start;
+    width: 240rem;
+    height: 64rem;
+}
 
-    .League_base__smedium_5e {
-        width: 240rem;
-        height: 100rem;
-    }
+.League_base__smedium_5e {
+    width: 240rem;
+    height: 100rem;
+}
 
-    .League_base__medium_15 {
-        width: 290rem;
-        height: 100rem;
-    }
+.League_base__medium_15 {
+    width: 290rem;
+    height: 100rem;
+}
 
-    .League_base__large_1b {
-        width: 240rem;
-        height: 130rem;
-    }
+.League_base__large_1b {
+    width: 240rem;
+    height: 130rem;
+}
 .League_icon_dd {
     width: 100rem;
     height: 100rem;
@@ -504,22 +507,22 @@
     background: no-repeat 50% / contain;
 }
 .League_base__small_30 .League_icon_dd,
-    .League_base__extraSmall_c7 .League_icon_dd,
-    .League_base__tiny_d4 .League_icon_dd {
-        width: 64rem;
-        height: 64rem;
-        margin: 0;
-    }
+.League_base__extraSmall_c7 .League_icon_dd,
+.League_base__tiny_d4 .League_icon_dd {
+    width: 64rem;
+    height: 64rem;
+    margin: 0;
+}
 .League_base__large_1b .League_icon_dd {
-        width: 130rem;
-        height: 130rem;
-        margin: 0 5rem;
-    }
+    width: 130rem;
+    height: 130rem;
+    margin: 0 5rem;
+}
 .League_base__extraLarge_31 .League_icon_dd {
-        width: 130rem;
-        height: 130rem;
-        margin: 0 16rem;
-    }
+    width: 130rem;
+    height: 130rem;
+    margin: 0 16rem;
+}
 
 .RankedWidget_base_9c {
     display: flex;
@@ -532,173 +535,177 @@
 }
 
 .RankedWidget_qualBattles_ec {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
-    text-shadow: 0 1rem 2rem #000000,
-                0 0 3rem #000000;
+    text-shadow:
+        0 1rem 2rem #000000,
+        0 0 3rem #000000;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .RankedWidget_qualBattles__b0_8a,
-    .RankedWidget_qualBattles__b1_a1 {
-        top: 125rem;
-    }
+.RankedWidget_qualBattles__b1_a1 {
+    top: 125rem;
+}
 
-.RankedWidget_qualBattles__b0__medium_0e, .RankedWidget_qualBattles__b1__medium_66 {
-            top: 70rem;
-    }
+.RankedWidget_qualBattles__b0__medium_0e,
+.RankedWidget_qualBattles__b1__medium_66 {
+    top: 70rem;
+}
 
 .RankedWidget_qualBattles__b0__extraSmall_3f,
-    .RankedWidget_qualBattles__b0__small_9d,
-    .RankedWidget_qualBattles__b1__extraSmall_e5,
-    .RankedWidget_qualBattles__b1__small_b6 {
-            color: #E9E2BF;
-            font-size: 12rem;
-            font-weight: 400;
-            line-height: 1.3;
-            top: 94rem;
-    }
+.RankedWidget_qualBattles__b0__small_9d,
+.RankedWidget_qualBattles__b1__extraSmall_e5,
+.RankedWidget_qualBattles__b1__small_b6 {
+    color: #e9e2bf;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    top: 94rem;
+}
 
 .RankedWidget_qualBattles__b2_f8 {
-        top: 60rem;
-    }
+    top: 60rem;
+}
 
 .RankedWidget_qualBattles__b2__medium_a4 {
-            top: 57rem;
-    }
+    top: 57rem;
+}
 
 .RankedWidget_qualBattles__b2__extraSmall_8b,
-    .RankedWidget_qualBattles__b2__small_d8 {
-            color: #E9E2BF;
-            font-size: 12rem;
-            font-weight: 400;
-            line-height: 1.3;
-            top: 33rem;
-    }
+.RankedWidget_qualBattles__b2__small_d8 {
+    color: #e9e2bf;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    top: 33rem;
+}
 
 .RankedWidget_qualBattles__b3_1c {
-        top: 55rem;
-    }
+    top: 55rem;
+}
 
 .RankedWidget_qualBattles__b3__medium_ef {
-            color: #E9E2BF;
-            font-size: 14rem;
-            font-weight: 400;
-            line-height: 1.3;
-            top: 45rem;
-    }
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    top: 45rem;
+}
 
 .RankedWidget_qualBattles__b3__extraSmall_28,
-    .RankedWidget_qualBattles__b3__small_9f {
-            color: #E9E2BF;
-            font-size: 12rem;
-            font-weight: 400;
-            line-height: 1.3;
-            top: 30rem;
-    }
+.RankedWidget_qualBattles__b3__small_9f {
+    color: #e9e2bf;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    top: 30rem;
+}
 
 .RankedWidget_qualBattles__b4_f5 {
-        color: #E9E2BF;
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
-        top: 32rem;
-    }
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    top: 32rem;
+}
 
 .RankedWidget_qualBattles__b4__medium_65 {
-            top: 26rem;
-    }
+    top: 26rem;
+}
 
 .RankedWidget_qualBattles__b4__extraSmall_4e,
-    .RankedWidget_qualBattles__b4__small_9e {
-            color: #E9E2BF;
-            font-size: 12rem;
-            font-weight: 400;
-            line-height: 1.3;
-            top: 22rem;
-    }
+.RankedWidget_qualBattles__b4__small_9e {
+    color: #e9e2bf;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    top: 22rem;
+}
 
 .RankedWidget_ranks__b0_7d,
-    .RankedWidget_ranks__b1_fc {
-        margin-top: 146rem;
-    }
+.RankedWidget_ranks__b1_fc {
+    margin-top: 146rem;
+}
 
-.RankedWidget_ranks__b0__medium_db, .RankedWidget_ranks__b1__medium_57 {
-            margin-top: 104rem;
-    }
+.RankedWidget_ranks__b0__medium_db,
+.RankedWidget_ranks__b1__medium_57 {
+    margin-top: 104rem;
+}
 
 .RankedWidget_ranks__b0__extraSmall_a9,
-    .RankedWidget_ranks__b0__small_45,
-    .RankedWidget_ranks__b1__extraSmall_1e,
-    .RankedWidget_ranks__b1__small_6c {
-            margin-top: 112rem;
-    }
+.RankedWidget_ranks__b0__small_45,
+.RankedWidget_ranks__b1__extraSmall_1e,
+.RankedWidget_ranks__b1__small_6c {
+    margin-top: 112rem;
+}
 
 .RankedWidget_ranks__b2_f5 {
-        margin-top: 10rem;
-    }
+    margin-top: 10rem;
+}
 
 .RankedWidget_ranks__b2__medium_7e {
-            margin-top: 25rem;
-    }
+    margin-top: 25rem;
+}
 
 .RankedWidget_ranks__b2__extraSmall_ff,
-    .RankedWidget_ranks__b2__small_8d {
-            margin-top: 12rem;
-    }
+.RankedWidget_ranks__b2__small_8d {
+    margin-top: 12rem;
+}
 
 .RankedWidget_ranks__b3_77 {
-        margin-top: 7rem;
-    }
+    margin-top: 7rem;
+}
 
 .RankedWidget_ranks__b3__medium_29 {
-            margin-top: 13rem;
-    }
+    margin-top: 13rem;
+}
 
 .RankedWidget_ranks__b3__extraSmall_fb,
-    .RankedWidget_ranks__b3__small_cb {
-            margin-top: 2rem;
-    }
+.RankedWidget_ranks__b3__small_cb {
+    margin-top: 2rem;
+}
 
 .RankedWidget_ranks__b4_80 {
-        margin-top: 12rem;
-    }
+    margin-top: 12rem;
+}
 
 .RankedWidget_ranks__b4__medium_ff {
-            margin-top: 7rem;
-    }
+    margin-top: 7rem;
+}
 
 .RankedWidget_ranks__b4__extraSmall_f2,
-    .RankedWidget_ranks__b4__small_38 {
-            margin-top: 1rem;
-            transform: scale(.75);
-    }
+.RankedWidget_ranks__b4__small_38 {
+    margin-top: 1rem;
+    transform: scale(0.75);
+}
 
-.RankedWidget_ranks__qual__b0__medium_79, .RankedWidget_ranks__qual__b1__medium_24 {
-                margin-top: 90rem;
-    }
+.RankedWidget_ranks__qual__b0__medium_79,
+.RankedWidget_ranks__qual__b1__medium_24 {
+    margin-top: 90rem;
+}
 
 .RankedWidget_ranks__qual__b2__medium_cf {
-                margin-top: 23rem;
-    }
+    margin-top: 23rem;
+}
 
 .RankedWidget_ranks__qual__b3__extraLarge_b0,
-    .RankedWidget_ranks__qual__b3__large_12 {
-                margin-top: 20rem;
-    }
+.RankedWidget_ranks__qual__b3__large_12 {
+    margin-top: 20rem;
+}
 
 .RankedWidget_ranks__qual__b3__medium_f9 {
-                margin-top: 26rem;
-    }
+    margin-top: 26rem;
+}
 
 .RankedWidget_ranks__qual__b3__extraSmall_be,
-    .RankedWidget_ranks__qual__b3__small_07 {
-                margin-top: 10rem;
-    }
+.RankedWidget_ranks__qual__b3__small_07 {
+    margin-top: 10rem;
+}
 
 .RankedWidget_bonus_35 {
     position: absolute;
@@ -708,41 +715,41 @@
 }
 
 .RankedWidget_bonus__b0_8d,
-    .RankedWidget_bonus__b1_3d {
-        bottom: 302rem;
-    }
+.RankedWidget_bonus__b1_3d {
+    bottom: 302rem;
+}
 
 .RankedWidget_bonus__b0__extraSmall_78,
-    .RankedWidget_bonus__b0__small_bc,
-    .RankedWidget_bonus__b1__extraSmall_f0,
-    .RankedWidget_bonus__b1__small_d2 {
-            bottom: 181rem;
-    }
+.RankedWidget_bonus__b0__small_bc,
+.RankedWidget_bonus__b1__extraSmall_f0,
+.RankedWidget_bonus__b1__small_d2 {
+    bottom: 181rem;
+}
 
-.RankedWidget_bonus__b0__medium_68, .RankedWidget_bonus__b1__medium_80 {
-            bottom: 226rem;
-    }
+.RankedWidget_bonus__b0__medium_68,
+.RankedWidget_bonus__b1__medium_80 {
+    bottom: 226rem;
+}
 
 .RankedWidget_bonus__b2_42 {
-        bottom: 118rem;
-    }
+    bottom: 118rem;
+}
 
 .RankedWidget_bonus__b2__extraSmall_63,
-    .RankedWidget_bonus__b2__small_cb {
-            bottom: 80rem;
-    }
+.RankedWidget_bonus__b2__small_cb {
+    bottom: 80rem;
+}
 
 .RankedWidget_bonus__b2__medium_ee {
-            bottom: 81rem;
-    }
+    bottom: 81rem;
+}
 
 .RankedWidget_bonus__b5__extraSmall_c8,
-    .RankedWidget_bonus__b5__small_c0 {
-            bottom: 13rem;
-    }
+.RankedWidget_bonus__b5__small_c0 {
+    bottom: 13rem;
+}
 
 .RankedWidget_bonus__b6__extraSmall_b1,
-    .RankedWidget_bonus__b6__small_08 {
-            bottom: 7rem;
-    }
-
+.RankedWidget_bonus__b6__small_08 {
+    bottom: 7rem;
+}

@@ -4,9 +4,9 @@
     align-items: center;
 }
 
-    .FrontlineConfirmIconsApp_base__extended_b0 {
-        margin-bottom: -4rem;
-    }
+.FrontlineConfirmIconsApp_base__extended_b0 {
+    margin-bottom: -4rem;
+}
 
 .FrontlineConfirmIconsApp_icon_a9 {
     width: 180rem;
@@ -15,6 +15,5 @@
 }
 
 .FrontlineConfirmIconsApp_icon_a9 + .FrontlineConfirmIconsApp_icon_a9 {
-        margin-left: 40rem;
-    }
-
+    margin-left: 40rem;
+}

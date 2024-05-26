@@ -5,9 +5,9 @@
     transition: opacity ease-in-out;
 }
 
-    .FadingCoverViewApp_base__visible_7c {
-        opacity: 1;
-    }
+.FadingCoverViewApp_base__visible_7c {
+    opacity: 1;
+}
 
 .FadingCoverViewApp_background_86 {
     position: absolute;
@@ -17,4 +17,3 @@
     left: 0;
     background: #000000 no-repeat 50% / cover;
 }
-

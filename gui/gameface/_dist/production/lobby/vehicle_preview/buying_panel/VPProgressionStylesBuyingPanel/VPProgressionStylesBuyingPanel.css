@@ -11,72 +11,72 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    transform: scale(.95);
-    transition: transform .15s ease-in-out;
+    transform: scale(0.95);
+    transition: transform 0.15s ease-in-out;
 }
 .SwitcherBullet_base__selected_70 .SwitcherBullet_container_6e {
-        transform: scale(1);
-    }
+    transform: scale(1);
+}
 .SwitcherBullet_container__text_b3 {
     width: 100rem;
     height: 34rem;
-        flex: 1;
-        transform: scale(1);
-    }
+    flex: 1;
+    transform: scale(1);
+}
 .SwitcherBullet_finishedHover_37 {
     width: 50rem;
     height: 34rem;
     background: 50% / cover no-repeat;
     position: absolute;
-    transition: opacity .15s ease-in-out;
+    transition: opacity 0.15s ease-in-out;
     background-image: url('R.images.gui.maps.icons.components.switcher.finished_small_hover');
     opacity: 0;
     z-index: 1;
     pointer-events: none;
 }
 .SwitcherBullet_base__finished_dd.SwitcherBullet_base__hover_2a .SwitcherBullet_finishedHover_37 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .SwitcherBullet_iconSmall_b7 {
     width: 115rem;
     height: 114rem;
     background: 50% / cover no-repeat;
     position: absolute;
-    transition: opacity .15s ease-in-out;
+    transition: opacity 0.15s ease-in-out;
     opacity: 0;
 }
 .SwitcherBullet_base__afterCurrent_cd .SwitcherBullet_iconSmall_b7 {
-        background-image: url('R.images.gui.maps.icons.components.switcher.empty');
-        opacity: .6;
-    }
+    background-image: url('R.images.gui.maps.icons.components.switcher.empty');
+    opacity: 0.6;
+}
 .SwitcherBullet_base__afterCurrent_cd.SwitcherBullet_base__hover_2a .SwitcherBullet_iconSmall_b7 {
-        opacity: .8;
-    }
+    opacity: 0.8;
+}
 .SwitcherBullet_base__finished_dd .SwitcherBullet_iconSmall_b7 {
-        background-image: url('R.images.gui.maps.icons.components.switcher.finished_small');
-        opacity: 1;
-    }
+    background-image: url('R.images.gui.maps.icons.components.switcher.finished_small');
+    opacity: 1;
+}
 .SwitcherBullet_base__selected_70 .SwitcherBullet_iconSmall_b7 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .SwitcherBullet_iconBig_dc {
     width: 150rem;
     height: 148rem;
     background: 50% / cover no-repeat;
     position: absolute;
-    transition: opacity .15s ease-in-out;
+    transition: opacity 0.15s ease-in-out;
     opacity: 0;
     pointer-events: none;
 }
 .SwitcherBullet_base__selected_70 .SwitcherBullet_iconBig_dc {
-        background-image: url('R.images.gui.maps.icons.components.switcher.selected_empty');
-        opacity: 1;
-    }
+    background-image: url('R.images.gui.maps.icons.components.switcher.selected_empty');
+    opacity: 1;
+}
 .SwitcherBullet_base__currentSelected_24 .SwitcherBullet_iconBig_dc,
-    .SwitcherBullet_base__selected_70.SwitcherBullet_base__finished_dd .SwitcherBullet_iconBig_dc {
-        background-image: url('R.images.gui.maps.icons.components.switcher.current_big');
-        opacity: 1;
-    }
+.SwitcherBullet_base__selected_70.SwitcherBullet_base__finished_dd .SwitcherBullet_iconBig_dc {
+    background-image: url('R.images.gui.maps.icons.components.switcher.current_big');
+    opacity: 1;
+}
 .SwitcherBullet_iconText_11 {
     width: 120rem;
     height: 54rem;
@@ -86,17 +86,17 @@
     pointer-events: none;
 }
 .SwitcherBullet_base__finished_dd .SwitcherBullet_iconText_11,
-    .SwitcherBullet_base__afterCurrent_cd .SwitcherBullet_iconText_11 {
-        background-image: url('R.images.gui.maps.icons.components.switcher.emptyText');
-        opacity: 1;
-    }
+.SwitcherBullet_base__afterCurrent_cd .SwitcherBullet_iconText_11 {
+    background-image: url('R.images.gui.maps.icons.components.switcher.emptyText');
+    opacity: 1;
+}
 .SwitcherBullet_base__currentSelected_24 .SwitcherBullet_iconText_11,
-    .SwitcherBullet_base__selected_70 .SwitcherBullet_iconText_11 {
-        width: 160rem;
-        height: 94rem;
-        background-image: url('R.images.gui.maps.icons.components.switcher.currentText');
-        opacity: 1;
-    }
+.SwitcherBullet_base__selected_70 .SwitcherBullet_iconText_11 {
+    width: 160rem;
+    height: 94rem;
+    background-image: url('R.images.gui.maps.icons.components.switcher.currentText');
+    opacity: 1;
+}
 .SwitcherBullet_iconTextGlow_25 {
     width: 220rem;
     height: 154rem;
@@ -105,46 +105,46 @@
     pointer-events: none;
 }
 .SwitcherBullet_base__finished_dd .SwitcherBullet_iconTextGlow_25,
-    .SwitcherBullet_base__afterCurrent_cd .SwitcherBullet_iconTextGlow_25 {
-        opacity: 1;
-    }
+.SwitcherBullet_base__afterCurrent_cd .SwitcherBullet_iconTextGlow_25 {
+    opacity: 1;
+}
 .SwitcherBullet_clickArea_ed {
     width: 51rem;
     height: 51rem;
     background: 50% / cover no-repeat;
     position: absolute;
-    transition: opacity .15s ease-in-out;
+    transition: opacity 0.15s ease-in-out;
     z-index: 15;
     cursor: pointer;
 }
 .SwitcherBullet_base__selected_70 .SwitcherBullet_clickArea_ed,
-    .SwitcherBullet_base__disabled_b9 .SwitcherBullet_clickArea_ed {
-        cursor: auto;
-        pointer-events: none;
-    }
+.SwitcherBullet_base__disabled_b9 .SwitcherBullet_clickArea_ed {
+    cursor: auto;
+    pointer-events: none;
+}
 .SwitcherBullet_container__text_b3 .SwitcherBullet_clickArea_ed {
     width: 100rem;
     height: 34rem;
     background: 50% / cover no-repeat;
     position: absolute;
-    transition: opacity .15s ease-in-out;
-    }
+    transition: opacity 0.15s ease-in-out;
+}
 .SwitcherBullet_disabled_b5 {
     width: 115rem;
     height: 115rem;
     background: 50% / cover no-repeat;
     position: absolute;
-    transition: opacity .15s ease-in-out;
+    transition: opacity 0.15s ease-in-out;
     background-image: url('R.images.gui.maps.icons.components.switcher.disable');
     opacity: 0;
     pointer-events: none;
 }
 .SwitcherBullet_base__disabled_b9 .SwitcherBullet_disabled_b5 {
-        opacity: 1;
-        z-index: 2;
-        cursor: default;
-        pointer-events: auto;
-    }
+    opacity: 1;
+    z-index: 2;
+    cursor: default;
+    pointer-events: auto;
+}
 .SwitcherBullet_number_b4 {
     width: 29rem;
     height: 29rem;
@@ -157,10 +157,13 @@
 }
 .SwitcherBullet_currentText_f9 {
     width: 90rem;
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 12rem;
     text-align: center;
-    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 12rem #e52;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 12rem #e52;
     position: absolute;
     bottom: 10rem;
     left: 50%;
@@ -181,15 +184,15 @@
     transform: translate(-50%, -50%);
 }
 .SwitcherBullet_base__selected_70 .SwitcherBullet_text_37 {
-        color: #563002;
-        text-shadow: 0px 1px 0px rgba(255, 252, 222, .4);
-    }
+    color: #563002;
+    text-shadow: 0px 1px 0px rgba(255, 252, 222, 0.4);
+}
 .SwitcherBullet_texture_1e {
     width: 100rem;
     height: 34rem;
     background: 50% / cover no-repeat;
     position: absolute;
-    transition: opacity .15s ease-in-out;
+    transition: opacity 0.15s ease-in-out;
     background-image: url('R.images.gui.maps.icons.components.switcher.currentTextTexture');
     background-size: contain;
     mix-blend-mode: multiply;
@@ -203,40 +206,46 @@
     width: 19rem;
     height: 2rem;
     margin: 0 4rem;
-    background-color: rgba(255,166,62, .4);
-    transition: background-color .15s ease-in-out,
-    box-shadow .15s ease-in-out,
-    transform .15s ease-in-out;
+    background-color: rgba(255, 166, 62, 0.4);
+    transition:
+        background-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out,
+        transform 0.15s ease-in-out;
 }
 
-    .SwitcherSeparator_base__isBeforeSelectedBullet_e0,
-    .SwitcherSeparator_base__notAnimated_58 {
-        box-shadow: 0 0 4rem rgba(255,127,0, .25), 0 0 8rem rgba(255,42,0, 1), 0 0 12rem rgba(238,85,34, 1);
-        background-color: #ffa63e;
-    }
+.SwitcherSeparator_base__isBeforeSelectedBullet_e0,
+.SwitcherSeparator_base__notAnimated_58 {
+    box-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem rgba(255, 42, 0, 1),
+        0 0 12rem rgba(238, 85, 34, 1);
+    background-color: #ffa63e;
+}
 
-    .SwitcherSeparator_base__scaled_57 {
-        transform: scaleX(.6);
-    }
+.SwitcherSeparator_base__scaled_57 {
+    transform: scaleX(0.6);
+}
 
-    .SwitcherSeparator_base__rightTransformOrigin_16 {
-        transform-origin: right;
-    }
+.SwitcherSeparator_base__rightTransformOrigin_16 {
+    transform-origin: right;
+}
 
-    .SwitcherSeparator_base__leftTransformOrigin_7f {
-        transform-origin: left;
-    }
+.SwitcherSeparator_base__leftTransformOrigin_7f {
+    transform-origin: left;
+}
 
-    .SwitcherSeparator_base__transitionTransformOrigin_b2 {
-        transition: background-color .15s ease-in-out,
-    box-shadow .15s ease-in-out,
-    transform .15s ease-in-out, transform-origin .15s ease-in-out;
-    }
+.SwitcherSeparator_base__transitionTransformOrigin_b2 {
+    transition:
+        background-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out,
+        transform 0.15s ease-in-out,
+        transform-origin 0.15s ease-in-out;
+}
 
-    .SwitcherSeparator_base__notAnimated_58 {
-        width: 13rem;
-        margin: 0 6rem;
-    }
+.SwitcherSeparator_base__notAnimated_58 {
+    width: 13rem;
+    margin: 0 6rem;
+}
 
 .Switcher_base_7a {
     display: flex;
@@ -245,26 +254,26 @@
     opacity: 0;
 }
 
-    .Switcher_base__hasCurrentText_6f {
-        padding-bottom: 38rem;
-    }
+.Switcher_base__hasCurrentText_6f {
+    padding-bottom: 38rem;
+}
 
-    .Switcher_base__small_6a {
-        transform: scale(.8);
-    }
+.Switcher_base__small_6a {
+    transform: scale(0.8);
+}
 
-    .Switcher_base__isVisible_43 {
-        opacity: 1;
-    }
+.Switcher_base__isVisible_43 {
+    opacity: 1;
+}
 
 .Content_base_47 {
     background: url('R.images.gui.maps.icons.vehPreview.progressionStyles.buyingPanelBg') 0 0 / contain no-repeat;
     opacity: 0;
 }
 
-    .Content_base__shown_3f {
-        opacity: 1;
-    }
+.Content_base__shown_3f {
+    opacity: 1;
+}
 
 .Content_content_54 {
     display: flex;
@@ -278,14 +287,14 @@
 
 .Content_notification_6e {
     margin-bottom: 25rem;
-    color: #C9C9B6;
+    color: #c9c9b6;
 }
 
 .Content_base__small_fa .Content_notification_6e {
-        width: 400rem;
-        margin-bottom: 10rem;
-        text-align: center;
-    }
+    width: 400rem;
+    margin-bottom: 10rem;
+    text-align: center;
+}
 
 .Content_notificationIcon_f8 {
     margin-left: 9rem;
@@ -299,4 +308,3 @@ html {
 body {
     margin: 1rem;
 }
-

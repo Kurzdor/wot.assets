@@ -1,0 +1,64 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.App_base_4c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300rem;
+    height: auto;
+    background: url('R.images.gui.maps.icons.missions.tooltip.subscription_locked_reward') no-repeat center / cover;
+}
+
+.App_content_74 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 250rem;
+    height: auto;
+    margin: 20rem;
+    z-index: 5;
+}
+
+.App_header_f9 {
+    color: #f2f2f7;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 5rem;
+}
+
+.App_subheader_b2 {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15rem;
+}
+
+.App_icon_ba {
+    width: 16rem;
+    height: 16rem;
+    margin: 2rem 5rem 0 0;
+    background: url('R.images.gui.maps.icons.crewHeader.wot_plus_small_tooltip_logo') no-repeat center / cover;
+}
+
+.App_description_cd {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}

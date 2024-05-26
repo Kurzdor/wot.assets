@@ -4,13 +4,13 @@
     position: relative;
 }
 
-    .ExtendedText_base__zeroPadding_25 {
-        padding: 0;
-    }
+.ExtendedText_base__zeroPadding_25 {
+    padding: 0;
+}
 
-    .ExtendedText_base__isTruncationAvailable_5b {
-        width: 100%;
-    }
+.ExtendedText_base__isTruncationAvailable_5b {
+    width: 100%;
+}
 
 .ExtendedText_truncated_97 {
     display: flex;
@@ -20,8 +20,8 @@
 }
 
 .ExtendedText_truncated__hide_31 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .ExtendedText_unTruncated_b8 {
     display: flex;
@@ -32,7 +32,7 @@
     height: 100%;
     justify-content: flex-start;
     align-content: flex-start;
-    color: #FF2717;
+    color: #ff2717;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -45,23 +45,23 @@
 }
 
 .colors_whiteReal_31 {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .colors_white_45 {
-    color: #F2F2F7;
+    color: #f2f2f7;
 }
 
 .colors_whiteOrange_81 {
-    color: #FEFEEC;
+    color: #fefeec;
 }
 
 .colors_whiteSpanish_c3 {
-    color: #E9E2BF;
+    color: #e9e2bf;
 }
 
 .colors_par_5b {
-    color: #8C8C7E;
+    color: #8c8c7e;
 }
 
 .colors_parSecondary_fd {
@@ -69,39 +69,39 @@
 }
 
 .colors_parTertiary_97 {
-    color: #37362E;
+    color: #37362e;
 }
 
 .colors_red_79 {
-    color: #FF2717;
+    color: #ff2717;
 }
 
 .colors_redDark_73 {
-    color: #B70000;
+    color: #b70000;
 }
 
 .colors_yellow_76 {
-    color: #FEAB34;
+    color: #feab34;
 }
 
 .colors_orange_cd {
-    color: #EE7000;
+    color: #ee7000;
 }
 
 .colors_cream_0f {
-    color: #FFDD99;
+    color: #ffdd99;
 }
 
 .colors_brown_82 {
-    color: #CBAC77;
+    color: #cbac77;
 }
 
 .colors_greenBright_68 {
-    color: #80D43A;
+    color: #80d43a;
 }
 
 .colors_green_fa {
-    color: #7AB300;
+    color: #7ab300;
 }
 
 .colors_greenDark_a9 {
@@ -109,27 +109,27 @@
 }
 
 .colors_blueBooster_26 {
-    color: #CCFFFF;
+    color: #ccffff;
 }
 
 .colors_blueTeamkiller_86 {
-    color: #09E2FF;
+    color: #09e2ff;
 }
 
 .colors_cred_35 {
-    color: #CED9D9;
+    color: #ced9d9;
 }
 
 .colors_gold_c3 {
-    color: #FFC363;
+    color: #ffc363;
 }
 
 .colors_bond_ce {
-    color: #C9C9B6;
+    color: #c9c9b6;
 }
 
 .colors_prom_83 {
-    color: #A29B70;
+    color: #a29b70;
 }
 
 .renderers_noBreakWrapper_10 {
@@ -154,39 +154,39 @@
 
 .Points_icon_7c {
     margin-left: 6rem;
-    background: url('R.images.frontline.gui.maps.icons.point') no-repeat 50%/contain;
+    background: url('R.images.frontline.gui.maps.icons.point') no-repeat 50% / contain;
 }
 
 .Points_icon__small_8d {
-        width: 16rem;
-        height: 16rem;
-    }
+    width: 16rem;
+    height: 16rem;
+}
 
 .Points_icon__normal_9d {
-        width: 26rem;
-        height: 24rem;
-    }
+    width: 26rem;
+    height: 24rem;
+}
 
 .Points_label_db {
     display: flex;
 }
 
 .Points_label__white_d3 {
-        color: #f2f1e1;
-    }
+    color: #f2f1e1;
+}
 
 .Points_label__brown_c0 {
-        color: #CBAC77;
-    }
+    color: #cbac77;
+}
 
 .Points_label__red_22 {
-        color: #FF2717;
-    }
+    color: #ff2717;
+}
 
 /* common*/
 /* skills page*/
 .SkillsSubTitle_base_92 {
-    color: rgba(242,242,247, .7);
+    color: rgba(242, 242, 247, 0.7);
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -198,7 +198,7 @@
     font-size: 18rem;
 }
 .mediaMedium .SkillsSubTitle_base_92 {
-        font-size: 24rem;
+    font-size: 24rem;
 }
 .SkillsSubTitle_points_c8 {
     width: 1rem;
@@ -211,14 +211,14 @@
 }
 
 .PageTitle_title_33 {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 36rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
 .mediaMedium .PageTitle_title_33 {
-        font-size: 56rem;
+    font-size: 56rem;
 }
 
 .CategoryTitle_base_fe {
@@ -227,7 +227,7 @@
 }
 
 .CategoryTitle_title_49 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -236,14 +236,14 @@
 }
 
 .CategoryTitle_base__uppercase_60 .CategoryTitle_title_49 {
-        color: #F2F2F7;
-        font-size: 12rem;
-        font-weight: 700;
-        top: -1rem;
-    }
+    color: #f2f2f7;
+    font-size: 12rem;
+    font-weight: 700;
+    top: -1rem;
+}
 
 .mediaMedium .CategoryTitle_base__uppercase_60 .CategoryTitle_title_49 {
-            font-size: 14rem;
+    font-size: 14rem;
 }
 
 .CategoryTitle_icon_f2 {
@@ -255,26 +255,26 @@
 }
 
 .CategoryTitle_base__uppercase_60 .CategoryTitle_icon_f2 {
-        margin: 0 -4rem 0 -7rem;
-        transform: none;
-    }
+    margin: 0 -4rem 0 -7rem;
+    transform: none;
+}
 
 .mediaSmall .CategoryTitle_base__uppercase_60 .CategoryTitle_icon_f2 {
-            width: 48rem;
-            height: 48rem;
-            margin: 0 -6rem 0 -13rem;
+    width: 48rem;
+    height: 48rem;
+    margin: 0 -6rem 0 -13rem;
 }
 
 .mediaMedium .CategoryTitle_base__uppercase_60 .CategoryTitle_icon_f2 {
-            width: 64rem;
-            height: 64rem;
-            margin: 0 -8rem 0 -17rem;
+    width: 64rem;
+    height: 64rem;
+    margin: 0 -8rem 0 -17rem;
 }
 
 .mediaLarge .CategoryTitle_base__uppercase_60 .CategoryTitle_icon_f2 {
-            width: 80rem;
-            height: 80rem;
-            margin: 0 -10rem 0 -21rem;
+    width: 80rem;
+    height: 80rem;
+    margin: 0 -10rem 0 -21rem;
 }
 
 /* common*/
@@ -284,17 +284,17 @@
     flex-direction: column;
 }
 .Category_title_42 {
-    opacity: .5;
-    transition: opacity .16s;
+    opacity: 0.5;
+    transition: opacity 0.16s;
 }
 .Category_base_b6:hover .Category_title_42 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .Category_base__active_fa .Category_title_42 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .mediaMedium .Category_title_42 {
-        margin-bottom: -8rem;
+    margin-bottom: -8rem;
 }
 .Category_skills_f9 {
     display: flex;
@@ -309,14 +309,14 @@
 .ActivatedLabel_activatedIcon_c6 {
     width: 20rem;
     height: 20rem;
-    background: url('R.images.frontline.gui.maps.icons.check.large') no-repeat 50%/contain;
+    background: url('R.images.frontline.gui.maps.icons.check.large') no-repeat 50% / contain;
     position: absolute;
     top: 1rem;
     left: -3rem;
 }
 
 .ActivatedLabel_activated_00 {
-    color: #7AB300;
+    color: #7ab300;
 }
 
 /* common*/
@@ -327,33 +327,34 @@
     width: 168rem;
     height: 136rem;
     margin: 0 16rem 8rem 0;
-    border: 1rem solid rgba(255,255,255, .1);
+    border: 1rem solid rgba(255, 255, 255, 0.1);
     border-radius: 2rem;
-    background-color: rgba(0,0,0, .45);
+    background-color: rgba(0, 0, 0, 0.45);
     position: relative;
-    transition: background-color .16s;
+    transition: background-color 0.16s;
     cursor: pointer;
 }
 .Skill_base__hovered_c7 {
-        background-color: rgba(0,0,0, .6);
-    }
+    background-color: rgba(0, 0, 0, 0.6);
+}
 .Skill_base__selected_33 {
-        border-color: transparent #b18933;
-        box-shadow: inset 0 0 38rem 2px rgba(255,98,36, .25),
-        0 0 12rem 5rem rgba(255,98,36, .35);
-        background-color: rgba(0,0,0, .45);
-    }
+    border-color: transparent #b18933;
+    box-shadow:
+        inset 0 0 38rem 2px rgba(255, 98, 36, 0.25),
+        0 0 12rem 5rem rgba(255, 98, 36, 0.35);
+    background-color: rgba(0, 0, 0, 0.45);
+}
 .mediaSmall .Skill_base_63 {
-        width: 240rem;
-        margin: 0 32rem 16rem 0;
+    width: 240rem;
+    margin: 0 32rem 16rem 0;
 }
 .mediaMedium .Skill_base_63 {
-        width: 256rem;
-        height: 160rem;
+    width: 256rem;
+    height: 160rem;
 }
 .mediaLarge .Skill_base_63 {
-        width: 270rem;
-        height: 188rem;
+    width: 270rem;
+    height: 188rem;
 }
 .Skill_activeBg_3f {
     position: absolute;
@@ -362,8 +363,9 @@
     bottom: -1rem;
     left: -1rem;
     border-radius: 2rem;
-    background: linear-gradient(to right, #b18933, #f1c453, #b18933) no-repeat left top / 100% 1rem,
-    linear-gradient(to right, #b18933, #f1c453, #b18933) no-repeat left bottom / 100% 1rem;
+    background:
+        linear-gradient(to right, #b18933, #f1c453, #b18933) no-repeat left top / 100% 1rem,
+        linear-gradient(to right, #b18933, #f1c453, #b18933) no-repeat left bottom / 100% 1rem;
 }
 .Skill_activatedBg_a7 {
     position: absolute;
@@ -389,15 +391,17 @@
     top: 8rem;
     left: 50%;
     transform: translateX(-50%);
-    transition: opacity .16s, filter .16s;
+    transition:
+        opacity 0.16s,
+        filter 0.16s;
 }
 .mediaMedium .Skill_icon_c0 {
-        width: 100rem;
-        height: 100rem;
+    width: 100rem;
+    height: 100rem;
 }
 .mediaLarge .Skill_icon_c0 {
-        width: 128rem;
-        height: 128rem;
+    width: 128rem;
+    height: 128rem;
 }
 .Skill_info_18 {
     position: absolute;
@@ -406,97 +410,98 @@
     z-index: 1;
 }
 .Skill_base__disabled_a9 .Skill_info_18 {
-        opacity: .5;
-    }
+    opacity: 0.5;
+}
 .mediaMedium .Skill_info_18 {
-        bottom: 14rem;
-        left: 16rem;
+    bottom: 14rem;
+    left: 16rem;
 }
 .Skill_title_21 {
     margin-bottom: 1rem;
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
 }
 .mediaMedium .Skill_title_21 {
-        font-size: 16rem;
+    font-size: 16rem;
 }
 .Skill_activatedLabel_8c {
     font-size: 13rem;
 }
 .Skill_price_91 {
     padding-right: 5rem;
-    color: #CBAC77;
+    color: #cbac77;
 }
 .Skill_base__disabled_a9 .Skill_price_91 {
-        color: #B70000;
-    }
+    color: #b70000;
+}
 
 .CButton_base_40 {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.6);
     position: relative;
     cursor: pointer;
 }
 
-    .CButton_base__main_42,
-    .CButton_base__primary_7f,
-    .CButton_base__primaryGreen_6f,
-    .CButton_base__primaryRed_ec,
-    .CButton_base__secondary_50 {
-        background-size: 100% 100%;
-    }
+.CButton_base__main_42,
+.CButton_base__primary_7f,
+.CButton_base__primaryGreen_6f,
+.CButton_base__primaryRed_ec,
+.CButton_base__secondary_50 {
+    background-size: 100% 100%;
+}
 
-    .CButton_base__main_42 {
-        background-image: url('R.images.gui.maps.icons.components.button.back_main');
-    }
+.CButton_base__main_42 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_main');
+}
 
-    .CButton_base__primary_7f {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
-    }
+.CButton_base__primary_7f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+}
 
-    .CButton_base__primaryGreen_6f {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
-    }
+.CButton_base__primaryGreen_6f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
 
-    .CButton_base__primaryRed_ec {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
-    }
+.CButton_base__primaryRed_ec {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
 
-    .CButton_base__secondary_50 {
-        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
-    }
+.CButton_base__secondary_50 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
 
-    .CButton_base__ghost_ed {
-        border-radius: 3rem;
-        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
-            0 0 0 1rem rgba(255,255,255, .15) inset;
-        background-color: rgba(0,0,0, .15);
-    }
+.CButton_base__ghost_ed {
+    border-radius: 3rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 0 1rem rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
 
-    .CButton_base__extraSmall_27 {
-        min-height: 17rem;
-        padding: 0 16rem;
-    }
+.CButton_base__extraSmall_27 {
+    min-height: 17rem;
+    padding: 0 16rem;
+}
 
-    .CButton_base__small_df,
-    .CButton_base__medium_74 {
-        padding: 0 20rem;
-    }
+.CButton_base__small_df,
+.CButton_base__medium_74 {
+    padding: 0 20rem;
+}
 
-    .CButton_base__small_df {
-        min-height: 18rem;
-    }
+.CButton_base__small_df {
+    min-height: 18rem;
+}
 
-    .CButton_base__medium_74 {
-        min-height: 32rem;
-    }
+.CButton_base__medium_74 {
+    min-height: 32rem;
+}
 
-    .CButton_base__disabled_d9 {
-        cursor: default;
-    }
+.CButton_base__disabled_d9 {
+    cursor: default;
+}
 /* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
 The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
 between 'border-image-width' and 'fill'.
@@ -512,20 +517,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
 }
 .CButton_base__main_42 .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+}
 .CButton_base__primary_7f .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+}
 .CButton_base__primaryGreen_6f .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
 .CButton_base__primaryRed_ec .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
 .CButton_base__secondary_50 .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
 .CButton_texture_fe {
     background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
     background-size: 155rem 31rem;
@@ -542,12 +547,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 0;
     bottom: 0;
     left: 0;
-    transition: box-shadow .16s ease-in-out;
+    transition: box-shadow 0.16s ease-in-out;
 }
 .CButton_base__focus_83 .CButton_state_11 {
-        border-radius: 2rem;
-        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
-    }
+    border-radius: 2rem;
+    box-shadow: inset 0 0 2rem 1rem rgba(255, 85, 0, 0.2);
+}
 .CButton_stateHighlightHover_ff,
 .CButton_stateHighlightActive_35,
 .CButton_stateDisabled_54 {
@@ -558,40 +563,47 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     bottom: 0;
     left: 0;
 }
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-        transition: opacity .16s ease-in-out;
-    }
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
+.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
+.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+    transition: opacity 0.16s ease-in-out;
+}
 .CButton_stateHighlightHover_ff {
-    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+    background-image: linear-gradient(
+        180deg,
+        rgba(252, 248, 235, 0.25) 0%,
+        rgba(252, 248, 235, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
 }
 .CButton_base_40:hover .CButton_stateHighlightHover_ff {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_base_40:active .CButton_stateHighlightHover_ff {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
-        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
-        background-color: rgba(8,6,0, .18);
-        background-image: none;
-    }
+    box-shadow: 0 15rem 12rem 0 rgba(242, 242, 230, 0.11) inset;
+    background-color: rgba(8, 6, 0, 0.18);
+    background-image: none;
+}
 .CButton_stateHighlightActive_35 {
-    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
 }
 .CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_stateDisabled_54 {
-    background-color: rgba(0,0,0, .25);
+    background-color: rgba(0, 0, 0, 0.25);
     background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
     background-size: 15rem;
 }
 .CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_content_cc {
     display: flex;
     align-items: center;
@@ -599,39 +611,39 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 700;
     line-height: 1.2;
     text-shadow: 0 -1rem 1rem #000;
-    letter-spacing: .03em;
+    letter-spacing: 0.03em;
     transform: translateY(-1rem);
 }
-.CButton_content_cc[lang=ja],
-    .CButton_content_cc[lang=ko],
-    .CButton_content_cc[lang=zh_tw],
-    .CButton_content_cc[lang=zh_sg],
-    .CButton_content_cc[lang=zh_cn],
-    .CButton_content_cc[lang=th] {
-        font-weight: 400;
-    }
+.CButton_content_cc[lang='ja'],
+.CButton_content_cc[lang='ko'],
+.CButton_content_cc[lang='zh_tw'],
+.CButton_content_cc[lang='zh_sg'],
+.CButton_content_cc[lang='zh_cn'],
+.CButton_content_cc[lang='th'] {
+    font-weight: 400;
+}
 .CButton_base__main_42 .CButton_content_cc,
-    .CButton_base__primaryRed_ec .CButton_content_cc {
-        text-shadow: 0 -1rem 1rem #600;
-    }
+.CButton_base__primaryRed_ec .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #600;
+}
 .CButton_base__secondary_50 .CButton_content_cc {
-        color: rgba(254,254,236, .75);
-    }
+    color: rgba(254, 254, 236, 0.75);
+}
 .CButton_base__primaryGreen_6f .CButton_content_cc {
-        text-shadow: 0 -1rem 1rem #1c2502;
-    }
+    text-shadow: 0 -1rem 1rem #1c2502;
+}
 .CButton_base__extraSmall_27 .CButton_content_cc {
-        font-size: 12rem;
-    }
+    font-size: 12rem;
+}
 .CButton_base__small_df .CButton_content_cc {
-        font-size: 14rem;
-    }
+    font-size: 14rem;
+}
 .CButton_base__medium_74 .CButton_content_cc {
-        font-size: 15rem;
-    }
+    font-size: 15rem;
+}
 .CButton_base__disabled_d9 .CButton_content_cc {
-        opacity: .6;
-    }
+    opacity: 0.6;
+}
 
 .FormatText_base_d0 {
     display: flex;
@@ -659,20 +671,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     cursor: pointer;
 }
 
-    .LevelTab_base__active_dc {
-        color: #FFDD99;
-        text-shadow: 0 0 12rem #ff7f00;
-    }
+.LevelTab_base__active_dc {
+    color: #ffdd99;
+    text-shadow: 0 0 12rem #ff7f00;
+}
 
-    .LevelTab_base_48:hover {
-        color: #E9E2BF;
-    }
+.LevelTab_base_48:hover {
+    color: #e9e2bf;
+}
 
 .LevelTab_label_17 {
     justify-content: center;
     width: 16rem;
     font-size: 15rem;
-    transition: color .16s;
+    transition: color 0.16s;
     pointer-events: none;
 }
 
@@ -687,12 +699,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 .mediaSmall .SkillParam_base_bf {
-        width: 303rem;
+    width: 303rem;
 }
 .mediaMedium .SkillParam_base_bf {
-        width: 310rem;
-        padding-left: 87rem;
-        font-size: 16rem;
+    width: 310rem;
+    padding-left: 87rem;
+    font-size: 16rem;
 }
 .SkillParam_valueWrapper_bd {
     display: flex;
@@ -724,14 +736,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     height: 3rem;
     margin-top: 8rem;
-    background-color: rgba(255,255,255, .3);
+    background-color: rgba(255, 255, 255, 0.3);
     position: relative;
 }
 .SkillParam_progressDot_56 {
     width: 3rem;
     height: 100%;
     border-radius: 0 2rem 2rem 0;
-    box-shadow: 2rem 0 10rem 1rem rgba(255,147,0, .5);
+    box-shadow: 2rem 0 10rem 1rem rgba(255, 147, 0, 0.5);
     background-color: #fff1ce;
     position: absolute;
     top: 0;
@@ -753,7 +765,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .SkillParam_progressDelta_a3 {
     background-color: #8ec63f;
-    transition: width .16s;
+    transition: width 0.16s;
 }
 
 /* common*/
@@ -772,19 +784,25 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Levels_tabsBorder_68 {
     width: 100%;
     height: 1rem;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255, .1) 30%, rgba(255,255,255, .1) 70%, transparent);
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1) 30%,
+        rgba(255, 255, 255, 0.1) 70%,
+        transparent
+    );
     position: absolute;
     left: 0;
 }
 .Levels_tabsBorder__top_ee {
-        top: 0;
-    }
+    top: 0;
+}
 .Levels_tabsBorder__bottom_56 {
-        bottom: 0;
-    }
+    bottom: 0;
+}
 .Levels_tabsLabel_c3 {
     padding: 7rem 0;
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     line-height: 1.4;
 }
@@ -797,7 +815,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 80rem;
 }
 .mediaLarge .Levels_tab_d1 {
-        width: 90rem;
+    width: 90rem;
 }
 .Levels_arrow_13 {
     width: 8rem;
@@ -806,11 +824,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: absolute;
     top: 13rem;
     right: 0;
-    transition: background-image .16s;
+    transition: background-image 0.16s;
 }
 .Levels_arrow__active_b0 {
-        background-image: url('R.images.frontline.gui.maps.icons.arrow.skillParamHover');
-    }
+    background-image: url('R.images.frontline.gui.maps.icons.arrow.skillParamHover');
+}
 .Levels_caret_87 {
     width: 102rem;
     height: 60rem;
@@ -819,7 +837,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: absolute;
     top: -5rem;
     transform: translateX(-11rem);
-    transition: left .16s cubic-bezier(0, .58, .98, 1) .16s;
+    transition: left 0.16s cubic-bezier(0, 0.58, 0.98, 1) 0.16s;
     pointer-events: none;
 }
 .Levels_params_33 {
@@ -839,10 +857,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaMedium .Details_icon_2a {
-        display: flex;
-        flex: 1;
-        align-self: center;
-        background: no-repeat 50%/contain;
+    display: flex;
+    flex: 1;
+    align-self: center;
+    background: no-repeat 50% / contain;
 }
 
 .Details_description_93 {
@@ -850,7 +868,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Details_title_24 {
-    color: #FEFEEC;
+    color: #fefeec;
     font-size: 20rem;
     font-weight: 400;
     line-height: 1.2;
@@ -860,7 +878,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Details_category_79 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -868,7 +886,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Details_text_5a {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -877,10 +895,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaMedium .Details_text_5a {
-        color: #8C8C7E;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
 }
 
 .Details_footer_31 {
@@ -889,7 +907,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 40rem;
     margin-top: 20rem;
     padding-top: 20rem;
-    border-top: 1rem solid rgba(254,254,236, .1);
+    border-top: 1rem solid rgba(254, 254, 236, 0.1);
     position: relative;
 }
 
@@ -916,10 +934,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex-direction: column;
     justify-content: center;
     padding-top: 40rem;
-    color: #F2F2F7;
+    color: #f2f2f7;
 }
 .mediaMedium .SkillsViewApp_base_d5 {
-        padding-top: 122rem;
+    padding-top: 122rem;
 }
 .SkillsViewApp_pageTitle_36 {
     position: absolute;
@@ -928,7 +946,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translate(-50%);
 }
 .mediaLarge .SkillsViewApp_pageTitle_36 {
-        top: 88rem;
+    top: 88rem;
 }
 .SkillsViewApp_pageTitle_36 {
     z-index: 1;
@@ -938,7 +956,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding-left: 120rem;
 }
 .mediaMedium .SkillsViewApp_content_0f {
-        padding-left: 174rem;
+    padding-left: 174rem;
 }
 .SkillsViewApp_wrapper_3c {
     display: flex;
@@ -958,7 +976,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 17rem;
 }
 .mediaMedium .SkillsViewApp_category_29 {
-        top: -23rem;
+    top: -23rem;
 }
 .SkillsViewApp_detailsWrapper_43 {
     display: flex;
@@ -967,27 +985,39 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 345rem;
     height: 554rem;
     padding: 0 28rem 22rem;
-    background: linear-gradient(to bottom, transparent 0, rgba(0,0,0, .6) 15%, rgba(0,0,0, .6) 65%, transparent 100%);
+    background: linear-gradient(
+        to bottom,
+        transparent 0,
+        rgba(0, 0, 0, 0.6) 15%,
+        rgba(0, 0, 0, 0.6) 65%,
+        transparent 100%
+    );
     position: relative;
     top: 17rem;
 }
 .mediaSmall .SkillsViewApp_detailsWrapper_43 {
-        width: 410rem;
-        height: 600rem;
-        padding: 0 42rem 35rem;
+    width: 410rem;
+    height: 600rem;
+    padding: 0 42rem 35rem;
 }
 .mediaMedium .SkillsViewApp_detailsWrapper_43 {
-        height: 750rem;
-        background-image: linear-gradient(to bottom, transparent 0, rgba(0,0,0, .55) 25%, rgba(0,0,0, .55) 65%, transparent 100%);
-        top: -23rem;
+    height: 750rem;
+    background-image: linear-gradient(
+        to bottom,
+        transparent 0,
+        rgba(0, 0, 0, 0.55) 25%,
+        rgba(0, 0, 0, 0.55) 65%,
+        transparent 100%
+    );
+    top: -23rem;
 }
 .mediaLarge .SkillsViewApp_detailsWrapper_43 {
-        height: 865rem;
-        padding-bottom: 90rem;
+    height: 865rem;
+    padding-bottom: 90rem;
 }
 .mediaMedium .SkillsViewApp_details_e8 {
-        justify-content: flex-end;
-        height: 100%;
+    justify-content: flex-end;
+    height: 100%;
 }
 .SkillsViewApp_footerWrapper_22 {
     position: absolute;
@@ -995,15 +1025,21 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 30rem;
 }
 .mediaSmall .SkillsViewApp_footerWrapper_22 {
-        left: 0;
+    left: 0;
 }
 .mediaMedium .SkillsViewApp_footerWrapper_22 {
-        left: 40rem;
+    left: 40rem;
 }
 .SkillsViewApp_footerBg_98 {
     width: 100%;
     height: 1rem;
-    background-image: linear-gradient(to right, transparent, rgba(255,255,255, .2) 30%, rgba(255,255,255, .2) 70%, transparent);
+    background-image: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0.2) 30%,
+        rgba(255, 255, 255, 0.2) 70%,
+        transparent
+    );
     position: absolute;
     top: 0;
     left: 0;
@@ -1011,21 +1047,27 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .SkillsViewApp_footer_0e {
     width: 535rem;
     padding: 10rem 22rem;
-    background: linear-gradient(to right, transparent, rgba(255,255,255, .07) 15%, rgba(255,255,255, .07) 85%, transparent);
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0.07) 15%,
+        rgba(255, 255, 255, 0.07) 85%,
+        transparent
+    );
     position: relative;
 }
 .mediaSmall .SkillsViewApp_footer_0e {
-        width: 785rem;
-        padding: 20rem;
+    width: 785rem;
+    padding: 20rem;
 }
 .mediaMedium .SkillsViewApp_footer_0e {
-        width: 835rem;
+    width: 835rem;
 }
 .mediaLarge .SkillsViewApp_footer_0e {
-        width: 870rem;
+    width: 870rem;
 }
 .SkillsViewApp_footerText_54 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -1036,4 +1078,3 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
     top: 2rem;
 }
-

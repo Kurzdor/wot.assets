@@ -5,44 +5,47 @@
     background: url('R.images.historical_battles.gui.maps.icons.entry.text_shadow') no-repeat 50% / 162rem 30rem;
 }
 
-    .EventCountdown_base__ban_dd {
-        position: relative;
-        top: -9rem;
-    }
+.EventCountdown_base__ban_dd {
+    position: relative;
+    top: -9rem;
+}
 
-    .EventCountdown_base__ban_dd,
-    .EventCountdown_base__extraSmall_06 {
-        top: -10rem;
-    }
+.EventCountdown_base__ban_dd,
+.EventCountdown_base__extraSmall_06 {
+    top: -10rem;
+}
 
-    .EventCountdown_base__medium_ba {
-        background-size: 162rem 22.4rem;
-    }
+.EventCountdown_base__medium_ba {
+    background-size: 162rem 22.4rem;
+}
 
-    .EventCountdown_base__small_36 {
-        background-size: 118rem 22.4rem;
-    }
+.EventCountdown_base__small_36 {
+    background-size: 118rem 22.4rem;
+}
 
-    .EventCountdown_base__extraSmall_06 {
-        background-size: 86.4rem 22.4rem;
-    }
+.EventCountdown_base__extraSmall_06 {
+    background-size: 86.4rem 22.4rem;
+}
 .EventCountdown_text_09 {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
     margin-left: -6rem;
-    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
 }
 .EventCountdown_base__extraSmall_06 .EventCountdown_text_09 {
-        margin-left: -7rem;
-        font-size: 12rem;
-    }
+    margin-left: -7rem;
+    font-size: 12rem;
+}
 .EventCountdown_base__ban_dd .EventCountdown_text_09 {
-        margin-left: 6rem;
-        color: #FF0000;
-        text-shadow: 0 0 20rem #FF0000;
-    }
+    margin-left: 6rem;
+    color: #ff0000;
+    text-shadow: 0 0 20rem #ff0000;
+}
 .EventCountdown_icon_c5 {
     width: 37rem;
     height: 37rem;
@@ -52,26 +55,29 @@
     top: 1rem;
 }
 .EventCountdown_base__ban_dd .EventCountdown_icon_c5 {
-        width: 16rem;
-        height: 16rem;
-        margin-left: 0;
-        background-image: url('R.images.historical_battles.gui.maps.icons.entry.ban');
-        top: 0;
-    }
+    width: 16rem;
+    height: 16rem;
+    margin-left: 0;
+    background-image: url('R.images.historical_battles.gui.maps.icons.entry.ban');
+    top: 0;
+}
 .EventCountdown_countdown_58 {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
     margin-left: 4rem;
-    text-shadow: 0 0 4rem rgba(255, 127, 0, .25), 0 0 8rem #ff2a00, 0 0 15rem #e52;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
 }
 .EventCountdown_base__ban_dd .EventCountdown_countdown_58 {
-        text-shadow: unset;
-    }
+    text-shadow: unset;
+}
 .EventCountdown_base__extraSmall_06 .EventCountdown_countdown_58 {
-        font-size: 12rem;
-    }
+    font-size: 12rem;
+}
 
 .EntryPointApp_base_a4 {
     overflow-y: hidden;
@@ -79,78 +85,78 @@
     left: 1rem;
 }
 
-    .EntryPointApp_base__extraSmall_c9 {
+.EntryPointApp_base__extraSmall_c9 {
     width: 160rem;
     height: 112rem;
-    }
+}
 
-    .EntryPointApp_base__small_95 {
+.EntryPointApp_base__small_95 {
     width: 220rem;
     height: 112rem;
-    }
+}
 
-    .EntryPointApp_base__medium_04 {
+.EntryPointApp_base__medium_04 {
     width: 300rem;
     height: 112rem;
-    }
+}
 
-    .EntryPointApp_base__big_99 {
+.EntryPointApp_base__big_99 {
     width: 300rem;
     height: 150rem;
-    }
+}
 
 .EntryPointApp_base__extraSmall_c9 .EntryPointApp_container_88 {
     width: 160rem;
     height: 112rem;
-    }
+}
 
 .EntryPointApp_base__small_95 .EntryPointApp_container_88 {
     width: 220rem;
     height: 112rem;
-    }
+}
 
 .EntryPointApp_base__medium_04 .EntryPointApp_container_88 {
     width: 300rem;
     height: 112rem;
-    }
+}
 
 .EntryPointApp_base__big_99 .EntryPointApp_container_88 {
     width: 300rem;
     height: 150rem;
-    }
+}
 
 .EntryPointApp_container_88 {
     position: absolute;
-    top: .1rem;
-    right: .1rem;
-    bottom: .1rem;
-    left: .1rem;
+    top: 0.1rem;
+    right: 0.1rem;
+    bottom: 0.1rem;
+    left: 0.1rem;
     cursor: pointer;
 }
 
 .EntryPointApp_container__announce_cd {
-        cursor: default;
-    }
+    cursor: default;
+}
 
 .EntryPointApp_base__extraSmall_c9 .EntryPointApp_background_7e {
     width: 160rem;
     height: 112rem;
-    }
+}
 
 .EntryPointApp_base__small_95 .EntryPointApp_background_7e {
     width: 220rem;
     height: 112rem;
-    }
+}
 
 .EntryPointApp_base__medium_04 .EntryPointApp_background_7e {
     width: 300rem;
     height: 112rem;
-    }
+}
 
 .EntryPointApp_base__big_99 .EntryPointApp_background_7e {
     width: 300rem;
     height: 150rem;
-    }
+}
 
 .EntryPointApp_background_7e {
     background: no-repeat 50% / cover;
@@ -158,26 +164,26 @@
 }
 
 .EntryPointApp_base__extraSmall_c9 .EntryPointApp_background_7e {
-        background-image: url('swf://gui/flash/animations/historicalBattles/banner_160_112.swf');
-    }
+    background-image: url('swf://gui/flash/animations/historicalBattles/banner_160_112.swf');
+}
 
 .EntryPointApp_base__small_95 .EntryPointApp_background_7e {
-        background-image: url('swf://gui/flash/animations/historicalBattles/banner_220_112.swf');
-    }
+    background-image: url('swf://gui/flash/animations/historicalBattles/banner_220_112.swf');
+}
 
 .EntryPointApp_base__medium_04 .EntryPointApp_background_7e {
-        background-image: url('swf://gui/flash/animations/historicalBattles/banner_300_112.swf');
-    }
+    background-image: url('swf://gui/flash/animations/historicalBattles/banner_300_112.swf');
+}
 
 .EntryPointApp_base__big_99 .EntryPointApp_background_7e {
-        background-image: url('swf://gui/flash/animations/historicalBattles/banner_300_150.swf');
-    }
+    background-image: url('swf://gui/flash/animations/historicalBattles/banner_300_150.swf');
+}
 
 .EntryPointApp_title_ca {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    color: rgba(255,255,255,.7);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 24rem;
     font-weight: 700;
     line-height: 1.2;
@@ -186,19 +192,19 @@
 }
 
 .EntryPointApp_base__extraSmall_c9 .EntryPointApp_title_ca {
-        margin-top: 6rem;
-        font-size: 15rem;
-    }
+    margin-top: 6rem;
+    font-size: 15rem;
+}
 
 .EntryPointApp_base__small_95 .EntryPointApp_title_ca {
-        margin-top: 9rem;
-        font-size: 18rem;
-    }
+    margin-top: 9rem;
+    font-size: 18rem;
+}
 
 .EntryPointApp_base__medium_04 .EntryPointApp_title_ca {
-        margin-top: 9rem;
-        font-size: 22rem;
-    }
+    margin-top: 9rem;
+    font-size: 22rem;
+}
 
 .EntryPointApp_shadow_8a {
     position: absolute;
@@ -219,16 +225,16 @@
 }
 
 .EntryPointApp_base__extraSmall_c9 .EntryPointApp_countdown_81 {
-        bottom: 7rem;
-    }
+    bottom: 7rem;
+}
 
 .EntryPointApp_base__medium_04 .EntryPointApp_countdown_81 {
-        bottom: 6rem;
-    }
+    bottom: 6rem;
+}
 
 .EntryPointApp_base__small_95 .EntryPointApp_countdown_81 {
-        bottom: 7rem;
-    }
+    bottom: 7rem;
+}
 
 .EntryPointApp_hover_f0 {
     position: absolute;
@@ -241,50 +247,50 @@
 .EntryPointApp_base__extraSmall_c9 .EntryPointApp_hover_f0 {
     width: 160rem;
     height: 112rem;
-    }
+}
 
 .EntryPointApp_base__small_95 .EntryPointApp_hover_f0 {
     width: 220rem;
     height: 112rem;
-    }
+}
 
 .EntryPointApp_base__medium_04 .EntryPointApp_hover_f0 {
     width: 300rem;
     height: 112rem;
-    }
+}
 
 .EntryPointApp_base__big_99 .EntryPointApp_hover_f0 {
     width: 300rem;
     height: 150rem;
-    }
+}
 
 .EntryPointApp_hover_f0 {
     background: no-repeat 50% / cover;
     opacity: 0;
     mix-blend-mode: screen;
-    transition: opacity .16s ease-in-out;
+    transition: opacity 0.16s ease-in-out;
     pointer-events: none;
 }
 
 .EntryPointApp_base__hover_22 .EntryPointApp_hover_f0 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 .EntryPointApp_base__extraSmall_c9 .EntryPointApp_hover_f0 {
-        background-image: url('R.images.historical_battles.gui.maps.icons.entry.hover_160x112');
-    }
+    background-image: url('R.images.historical_battles.gui.maps.icons.entry.hover_160x112');
+}
 
 .EntryPointApp_base__small_95 .EntryPointApp_hover_f0 {
-        background-image: url('R.images.historical_battles.gui.maps.icons.entry.hover_220x112');
-    }
+    background-image: url('R.images.historical_battles.gui.maps.icons.entry.hover_220x112');
+}
 
 .EntryPointApp_base__medium_04 .EntryPointApp_hover_f0 {
-        background-image: url('R.images.historical_battles.gui.maps.icons.entry.hover_300x112');
-    }
+    background-image: url('R.images.historical_battles.gui.maps.icons.entry.hover_300x112');
+}
 
 .EntryPointApp_base__big_99 .EntryPointApp_hover_f0 {
-        background-image: url('R.images.historical_battles.gui.maps.icons.entry.hover_300x150');
-    }
+    background-image: url('R.images.historical_battles.gui.maps.icons.entry.hover_300x150');
+}
 
 .EntryPointApp_mask_04,
 .EntryPointApp_animation_76 {
@@ -297,8 +303,8 @@
 }
 
 .EntryPointApp_base__extraLarge_74 .EntryPointApp_mask_04 {
-        mask-size: 200%;
-    }
+    mask-size: 200%;
+}
 
 .EntryPointApp_animation_76 {
     mix-blend-mode: screen;
@@ -313,14 +319,14 @@
     right: 0;
     bottom: 0;
     left: 0;
-    border: 1rem solid rgba(242,242,247, .15);
+    border: 1rem solid rgba(242, 242, 247, 0.15);
 }
 
 .EntryPointApp_border__animation_78 {
-        border-image: url('R.images.historical_battles.gui.maps.icons.entry.border_300_150') 24 fill / 24rem;
-        mix-blend-mode: screen;
-        animation: EntryPointApp_fade-out_72 7s ease 2s forwards;
-    }
+    border-image: url('R.images.historical_battles.gui.maps.icons.entry.border_300_150') 24 fill / 24rem;
+    mix-blend-mode: screen;
+    animation: EntryPointApp_fade-out_72 7s ease 2s forwards;
+}
 
 @keyframes EntryPointApp_fade-out_72 {
     0% {
@@ -332,7 +338,7 @@
     }
 
     40% {
-        opacity: .3;
+        opacity: 0.3;
     }
 
     55% {
@@ -340,7 +346,7 @@
     }
 
     70% {
-        opacity: .3;
+        opacity: 0.3;
     }
 
     85% {
@@ -355,26 +361,25 @@
 .EntryPointApp_performanceRisk_fa {
     width: 42rem;
     height: 42rem;
-    background: linear-gradient(135deg, #2f3c42 0, rgba(47,60,66, 0) 50%) no-repeat 50% / contain;
+    background: linear-gradient(135deg, #2f3c42 0, rgba(47, 60, 66, 0) 50%) no-repeat 50% / contain;
     position: absolute;
     top: 1rem;
     left: 1rem;
 }
 
 .EntryPointApp_performanceRisk_fa .EntryPointApp_icon_bb {
-        width: 16rem;
-        height: 16rem;
-        background: no-repeat 50% / contain;
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
-    }
+    width: 16rem;
+    height: 16rem;
+    background: no-repeat 50% / contain;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
 
 .EntryPointApp_performanceRisk_fa .EntryPointApp_icon__mediumRisk_51 {
-            background-image: url('R.images.gui.maps.icons.library.alertIcon');
-        }
+    background-image: url('R.images.gui.maps.icons.library.alertIcon');
+}
 
 .EntryPointApp_performanceRisk_fa .EntryPointApp_icon__highRisk_d0 {
-            background-image: url('R.images.gui.maps.icons.library.CancelIcon_1');
-        }
-
+    background-image: url('R.images.gui.maps.icons.library.CancelIcon_1');
+}

@@ -19,42 +19,42 @@
 }
 
 .PopoverDecorator_arrow__bottom_c3,
-    .PopoverDecorator_arrow__top_6e {
-        width: 301rem;
-        height: 90rem;
-        margin: 0 58rem;
-        background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_top');
-        left: 50%;
-    }
+.PopoverDecorator_arrow__top_6e {
+    width: 301rem;
+    height: 90rem;
+    margin: 0 58rem;
+    background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_top');
+    left: 50%;
+}
 
 .PopoverDecorator_arrow__left_7a,
-    .PopoverDecorator_arrow__right_b6 {
-        width: 84rem;
-        height: 181rem;
-        margin: 58rem 0;
-        background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_left');
-        top: 50%;
-    }
+.PopoverDecorator_arrow__right_b6 {
+    width: 84rem;
+    height: 181rem;
+    margin: 58rem 0;
+    background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_left');
+    top: 50%;
+}
 
 .PopoverDecorator_arrow__left_7a {
-        right: 10rem;
-        transform: scaleX(-1) translateY(-90rem);
-    }
+    right: 10rem;
+    transform: scaleX(-1) translateY(-90rem);
+}
 
 .PopoverDecorator_arrow__right_b6 {
-        left: 10rem;
-        transform: translateY(-90rem);
-    }
+    left: 10rem;
+    transform: translateY(-90rem);
+}
 
 .PopoverDecorator_arrow__top_6e {
-        bottom: 8rem;
-        transform: scaleY(-1) translateX(-150rem);
-    }
+    bottom: 8rem;
+    transform: scaleY(-1) translateX(-150rem);
+}
 
 .PopoverDecorator_arrow__bottom_c3 {
-        top: 8rem;
-        transform: translateX(-150rem);
-    }
+    top: 8rem;
+    transform: translateX(-150rem);
+}
 
 .PopoverDecorator_closeBtn_32 {
     width: 18rem;
@@ -68,13 +68,13 @@
 }
 
 .PopoverDecorator_closeBtn_32:hover {
-        filter: brightness(160%);
-    }
+    filter: brightness(160%);
+}
 
 .PopoverDecorator_closeBtn_32:active {
-        background-image: url('R.images.gui.maps.icons.popovers.close_button_slim_press');
-        filter: brightness(100%);
-    }
+    background-image: url('R.images.gui.maps.icons.popovers.close_button_slim_press');
+    filter: brightness(100%);
+}
 
 .PopoverDecorator_content_f0 {
     position: relative;
@@ -95,7 +95,7 @@
 }
 
 .App_title_09 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
@@ -152,48 +152,66 @@
     cursor: pointer;
 }
 
-    .ToggleButton_base__button_cb.ToggleButton_base__active_a6 {
+.ToggleButton_base__button_cb.ToggleButton_base__active_a6 {
     border-image: linear-gradient(90deg, #ac802c 0%, #eece63 48.95%, #efd065 48.96%, #ae842e 100%) 1 1 1 stretch;
     border-image-width: 1rem;
-    box-shadow: 0 0 0 1rem rgba(0, 0, 0, .6), 0 0 7rem rgba(250, 112, 0, .6);
-    background: linear-gradient(180deg, rgba(255,42,0, .1) 0%, rgba(255,42,0, 0) .01%, rgba(255,128,0, .1) 100%);
-        }
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.6),
+        0 0 7rem rgba(250, 112, 0, 0.6);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 42, 0, 0.1) 0%,
+        rgba(255, 42, 0, 0) 0.01%,
+        rgba(255, 128, 0, 0.1) 100%
+    );
+}
 
-    .ToggleButton_base__button_cb.ToggleButton_base__active_a6:hover {
-                box-shadow: 0 0 0 1rem rgba(0,0,0, .6), 0 0 7rem rgba(250,112,0, .6), inset 0 0 40rem rgba(255,255,255, .1);
-            }
+.ToggleButton_base__button_cb.ToggleButton_base__active_a6:hover {
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.6),
+        0 0 7rem rgba(250, 112, 0, 0.6),
+        inset 0 0 40rem rgba(255, 255, 255, 0.1);
+}
 
-    .ToggleButton_base__slot_98 {
-        min-width: 80rem;
-        min-height: 80rem;
-        border: 1rem solid rgba(255,255,255, .15);
-        background: rgba(0,0,0, .1);
-    }
+.ToggleButton_base__slot_98 {
+    min-width: 80rem;
+    min-height: 80rem;
+    border: 1rem solid rgba(255, 255, 255, 0.15);
+    background: rgba(0, 0, 0, 0.1);
+}
 
-    .ToggleButton_base__slot_98:hover {
-            background: radial-gradient(rgba(0,0,0, 0) 10%, rgba(150,150,150, .1));
-        }
+.ToggleButton_base__slot_98:hover {
+    background: radial-gradient(rgba(0, 0, 0, 0) 10%, rgba(150, 150, 150, 0.1));
+}
 
-    .ToggleButton_base__slot_98:active,.ToggleButton_base__slot_98  {
-            box-shadow: none;
-            background: rgba(0,0,0, .2);
-        }
+.ToggleButton_base__slot_98:active,
+.ToggleButton_base__slot_98 {
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.2);
+}
 
-    .ToggleButton_base__slot_98.ToggleButton_base__active_a6 {
+.ToggleButton_base__slot_98.ToggleButton_base__active_a6 {
     border-image: linear-gradient(90deg, #ac802c 0%, #eece63 48.95%, #efd065 48.96%, #ae842e 100%) 1 1 1 stretch;
     border-image-width: 1rem;
-    box-shadow: 0 0 0 1rem rgba(0, 0, 0, .6), 0 0 7rem rgba(250, 112, 0, .6);
-    background: linear-gradient(180deg, rgba(255,42,0, .1) 0%, rgba(255,42,0, 0) .01%, rgba(255,128,0, .1) 100%);
-        }
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.6),
+        0 0 7rem rgba(250, 112, 0, 0.6);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 42, 0, 0.1) 0%,
+        rgba(255, 42, 0, 0) 0.01%,
+        rgba(255, 128, 0, 0.1) 100%
+    );
+}
 
-    .ToggleButton_base__slot_98.ToggleButton_base__active_a6:active {
-                background: rgba(0,0,0, .2);
-            }
+.ToggleButton_base__slot_98.ToggleButton_base__active_a6:active {
+    background: rgba(0, 0, 0, 0.2);
+}
 
-    .ToggleButton_base__disabled_19 {
-        cursor: initial;
-        pointer-events: none;
-    }
+.ToggleButton_base__disabled_19 {
+    cursor: initial;
+    pointer-events: none;
+}
 
 .ToggleButton_texture_f1 {
     position: absolute;
@@ -219,47 +237,49 @@
 }
 
 .ToggleButton_background__main_68 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+}
 
 .ToggleButton_background__primary_a9 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+}
 
 .ToggleButton_background__primaryGreen_4f {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
 
 .ToggleButton_background__primaryRed_ca {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
 
 .ToggleButton_background__secondary_b2 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
 
 .ToggleButton_background__ghost_d6 {
-        border-radius: 3rem;
-        box-shadow: 0 0 0 1rem rgba(0,0,0, .3), 0 0 0 1rem rgba(255,255,255, .15) inset;
-        background-color: rgba(0,0,0, .15);
-    }
+    border-radius: 3rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 0 1rem rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
 
 .ToggleButton_content_63 {
     color: #f1f0e0;
     font-size: 13rem;
     font-weight: 300;
     text-align: center;
-    text-shadow: 0 -1rem 2rem rgba(0,0,0, .7);
+    text-shadow: 0 -1rem 2rem rgba(0, 0, 0, 0.7);
 }
 
 .ToggleButton_base__slot_98 .ToggleButton_content_63 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1 auto;
-        position: relative;
-        z-index: -1;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 auto;
+    position: relative;
+    z-index: -1;
+}
 
 .ToggleButton_overlay_23 {
     position: absolute;
@@ -273,26 +293,26 @@
 }
 
 .ToggleButton_base__disabled_19 .ToggleButton_overlay_23 {
-        margin: -1rem;
-        background: url('R.images.gui.maps.icons.buttons.toggle_disable') repeat;
-    }
+    margin: -1rem;
+    background: url('R.images.gui.maps.icons.buttons.toggle_disable') repeat;
+}
 
 .ToggleButton_base__button_cb .ToggleButton_overlay_23 {
-        background-color: rgba(255,255,255, .04);
-    }
+    background-color: rgba(255, 255, 255, 0.04);
+}
 
 .ToggleButton_base__button_cb:hover .ToggleButton_overlay_23 {
-        box-shadow: inset 0 0 40rem rgba(255,255,255, .1);
-    }
+    box-shadow: inset 0 0 40rem rgba(255, 255, 255, 0.1);
+}
 
 .ToggleButton_base__button_cb:active .ToggleButton_overlay_23 {
-        box-shadow: none;
-        background: rgba(0,0,0, .2);
-    }
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.2);
+}
 
 .ToggleButton_base__button_cb.ToggleButton_base__active_a6:active .ToggleButton_overlay_23 {
-        background: rgba(0,0,0, .2);
-    }
+    background: rgba(0, 0, 0, 0.2);
+}
 
 .ToggleButton_indicator_a7 {
     /* This Needs to be an even number otherwise translate(-50%) makes it at half a pixel position and causes sub pixel blurring */
@@ -309,22 +329,22 @@
 }
 
 .ToggleButton_base__slot_98 .ToggleButton_indicator_a7 {
-        width: 64rem;
-        height: 32rem;
-        background-image: none;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        position: absolute;
-        bottom: -17rem;
-    }
+    width: 64rem;
+    height: 32rem;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: -17rem;
+}
 
 .ToggleButton_base__slot_98.ToggleButton_base__active_a6 .ToggleButton_indicator_a7 {
-        background-image: url('R.images.gui.maps.icons.buttons.toggle_check');
-    }
+    background-image: url('R.images.gui.maps.icons.buttons.toggle_check');
+}
 
 .ToggleButton_base__button_cb.ToggleButton_base__active_a6 .ToggleButton_indicator_a7 {
-        background-image: url('R.images.gui.maps.icons.buttons.toggle_switcher_on');
-    }
+    background-image: url('R.images.gui.maps.icons.buttons.toggle_switcher_on');
+}
 
 .Toggle_base_df {
     box-shadow: 0 0 0 1rem #000;
@@ -335,4 +355,3 @@
     height: 16rem;
     background: no-repeat center / contain;
 }
-

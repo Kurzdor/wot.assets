@@ -7,9 +7,9 @@
     cursor: pointer;
 }
 
-    .TextButton_base__right_39 {
-        flex-direction: row-reverse;
-    }
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
 .TextButton_icon_17 {
     width: 32rem;
     height: 32rem;
@@ -17,22 +17,22 @@
     position: relative;
 }
 .TextButton_icon__back_43,
-    .TextButton_icon__forward_59 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.back');
-        transform: translateY(1rem);
-    }
 .TextButton_icon__forward_59 {
-        transform: rotate(180deg) translateY(1rem);
-    }
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
 .TextButton_icon__close_53 {
-        margin: -1rem 0;
-        background-image: url('R.images.gui.maps.icons.components.text_button.close');
-    }
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
 .TextButton_icon__info_33 {
-        margin: -1rem -5rem;
-        background-image: url('R.images.gui.maps.icons.components.text_button.info');
-    }
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
 .TextButton_glow_a4 {
     width: 100%;
     height: 100%;
@@ -40,72 +40,82 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    transition: opacity .16s;
+    transition: opacity 0.16s;
 }
 .TextButton_icon__back_43 .TextButton_glow_a4,
-    .TextButton_icon__forward_59 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
-    }
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
 .TextButton_icon__close_53 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
 .TextButton_icon__info_33 .TextButton_glow_a4 {
-        background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
-    }
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
 .TextButton_base_b6:hover .TextButton_glow_a4 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .TextButton_base_b6:active .TextButton_glow_a4 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .TextButton_caption_82 {
     position: relative;
-    transition: color .16s, text-shadow .16s;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
 }
 .TextButton_caption__back_b9,
-    .TextButton_caption__forward_4e,
-    .TextButton_caption__close_36 {
-        color: #FFDD99;
-        text-shadow: 0 0 10rem rgba(255,42,0, 1),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 10rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4),
-            0 0 2rem rgba(255,42,0, .4),
-            0 0 1rem rgba(255,42,0, .4);
-    }
-.TextButton_base_b6:hover .TextButton_caption__back_b9, .TextButton_base_b6:hover .TextButton_caption__forward_4e, .TextButton_base_b6:hover .TextButton_caption__close_36 {
-            color: #fffa9f;
-        }
-.TextButton_base_b6:active .TextButton_caption__back_b9, .TextButton_base_b6:active .TextButton_caption__forward_4e, .TextButton_base_b6:active .TextButton_caption__close_36 {
-            color: #FFDD99;
-        }
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
 .TextButton_caption__info_23 {
-        padding: 0 5rem;
-        color: #CCFFFF;
-        text-shadow: 0 0 12rem rgba(31,68,255, .8),
-            0 0 8rem #00eaff;
-    }
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
 .TextButton_base_b6:hover .TextButton_caption__info_23 {
-            color: #e3ffff;
-            text-shadow: 0 0 12rem rgba(31,68,255, .8),
-                0 0 12rem rgba(0,234,255, 1),
-                0 0 8rem #00eaff;
-        }
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
 .TextButton_base_b6:active .TextButton_caption__info_23 {
-            color: #CCFFFF;
-            text-shadow: 0 0 12rem rgba(31,68,255, .6),
-                0 0 8rem #00eaff;
-        }
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
 .TextButton_goto_e7 {
     color: #7c7c6c;
 }
 .TextButton_base__left_ff .TextButton_goto_e7 {
-        margin-left: 8rem;
-    }
+    margin-left: 8rem;
+}
 .TextButton_base__right_39 .TextButton_goto_e7 {
-        margin-right: 8rem;
-    }
+    margin-right: 8rem;
+}
 .TextButton_shine_e2 {
     width: 90rem;
     height: 40rem;
@@ -113,22 +123,22 @@
     opacity: 0;
     position: absolute;
     top: -4rem;
-    transition: opacity .16s;
+    transition: opacity 0.16s;
     pointer-events: none;
 }
 .TextButton_base__left_ff .TextButton_shine_e2 {
-        left: -4rem;
-    }
+    left: -4rem;
+}
 .TextButton_base__right_39 .TextButton_shine_e2 {
-        right: -4rem;
-        transform: rotate(180deg);
-    }
+    right: -4rem;
+    transform: rotate(180deg);
+}
 .TextButton_base_b6:hover .TextButton_shine_e2 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .TextButton_base_b6:active .TextButton_shine_e2 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .Reward_base_ea {
     display: flex;
@@ -136,47 +146,47 @@
     position: relative;
 }
 
-    .Reward_base__s48x48_46,
-    .Reward_base__small_c0 {
-        width: 48rem;
-        height: 48rem;
-    }
+.Reward_base__s48x48_46,
+.Reward_base__small_c0 {
+    width: 48rem;
+    height: 48rem;
+}
 
-    .Reward_base__s80x80_ce,
-    .Reward_base__big_e5 {
-        width: 80rem;
-        height: 80rem;
-    }
+.Reward_base__s80x80_ce,
+.Reward_base__big_e5 {
+    width: 80rem;
+    height: 80rem;
+}
 
-    .Reward_base__s128x100_c3 {
-        width: 128rem;
-        height: 100rem;
-    }
+.Reward_base__s128x100_c3 {
+    width: 128rem;
+    height: 100rem;
+}
 
-    .Reward_base__s180x135_7c {
-        width: 180rem;
-        height: 135rem;
-    }
+.Reward_base__s180x135_7c {
+    width: 180rem;
+    height: 135rem;
+}
 
-    .Reward_base__s232x174_67 {
-        width: 232rem;
-        height: 174rem;
-    }
+.Reward_base__s232x174_67 {
+    width: 232rem;
+    height: 174rem;
+}
 
-    .Reward_base__s296x222_78 {
-        width: 296rem;
-        height: 222rem;
-    }
+.Reward_base__s296x222_78 {
+    width: 296rem;
+    height: 222rem;
+}
 
-    .Reward_base__s400x300_07 {
-        width: 400rem;
-        height: 300rem;
-    }
+.Reward_base__s400x300_07 {
+    width: 400rem;
+    height: 300rem;
+}
 
-    .Reward_base__s600x450_f8 {
-        width: 600rem;
-        height: 450rem;
-    }
+.Reward_base__s600x450_f8 {
+    width: 600rem;
+    height: 450rem;
+}
 
 .Reward_tooltipWrapper_b5 {
     height: 100%;
@@ -203,43 +213,43 @@
 }
 
 .Reward_base__s48x48_46 .Reward_overlay_68,
-    .Reward_base__small_c0 .Reward_overlay_68 {
-        width: 96rem;
-        height: 96rem;
-        background-size: 100%;
-        overflow: visible;
-    }
+.Reward_base__small_c0 .Reward_overlay_68 {
+    width: 96rem;
+    height: 96rem;
+    background-size: 100%;
+    overflow: visible;
+}
 
 .Reward_base__s80x80_ce .Reward_overlay_68,
-    .Reward_base__big_e5 .Reward_overlay_68 {
-        width: 128rem;
-        height: 128rem;
-    }
+.Reward_base__big_e5 .Reward_overlay_68 {
+    width: 128rem;
+    height: 128rem;
+}
 
 .Reward_base__s180x135_7c .Reward_overlay_68 {
-        width: 266rem;
-        height: 241rem;
-    }
+    width: 266rem;
+    height: 241rem;
+}
 
 .Reward_base__s232x174_67 .Reward_overlay_68 {
-        width: 344rem;
-        height: 312rem;
-    }
+    width: 344rem;
+    height: 312rem;
+}
 
 .Reward_base__s296x222_78 .Reward_overlay_68 {
-        width: 450rem;
-        height: 408rem;
-    }
+    width: 450rem;
+    height: 408rem;
+}
 
 .Reward_base__s400x300_07 .Reward_overlay_68 {
-        width: 618rem;
-        height: 590rem;
-    }
+    width: 618rem;
+    height: 590rem;
+}
 
 .Reward_base__s600x450_f8 .Reward_overlay_68 {
-        width: 670rem;
-        height: 575rem;
-    }
+    width: 670rem;
+    height: 575rem;
+}
 
 .Reward_highlight_36 {
     width: 100%;
@@ -263,35 +273,35 @@
 }
 
 .Reward_base__s48x48_46 .Reward_info_72,
-    .Reward_base__small_c0 .Reward_info_72 {
-        margin: -10rem -10rem 0;
-    }
+.Reward_base__small_c0 .Reward_info_72 {
+    margin: -10rem -10rem 0;
+}
 
 .Reward_info__multi_63 {
-        margin-right: 2rem;
-        text-align: right;
-    }
+    margin-right: 2rem;
+    text-align: right;
+}
 
 .Reward_base__s48x48_46 .Reward_info__multi_63,
-        .Reward_base__small_c0 .Reward_info__multi_63 {
-            margin-right: 0;
-        }
+.Reward_base__small_c0 .Reward_info__multi_63 {
+    margin-right: 0;
+}
 
 .Reward_info__credits_ef {
-        color: #E9E2BF;
-    }
+    color: #e9e2bf;
+}
 
 .Reward_info__gold_36 {
-        color: #FFC363;
-    }
+    color: #ffc363;
+}
 
 .Reward_info__crystal_36 {
-        color: #C9C9B6;
-    }
+    color: #c9c9b6;
+}
 
 .Reward_info__premiumTank_d3 {
-        color: #FFDD99;
-    }
+    color: #ffdd99;
+}
 
 .Reward_timer_d3 {
     background: no-repeat center / contain;
@@ -300,22 +310,22 @@
 }
 
 .Reward_base__s48x48_46 .Reward_timer_d3,
-    .Reward_base__small_c0 .Reward_timer_d3 {
-        width: 23rem;
-        height: 23rem;
-        background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
-        top: -6rem;
-        right: -6rem;
-    }
+.Reward_base__small_c0 .Reward_timer_d3 {
+    width: 23rem;
+    height: 23rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
+    top: -6rem;
+    right: -6rem;
+}
 
 .Reward_base__s80x80_ce .Reward_timer_d3,
-    .Reward_base__big_e5 .Reward_timer_d3 {
-        width: 48rem;
-        height: 48rem;
-        background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
-        top: -14rem;
-        right: -14rem;
-    }
+.Reward_base__big_e5 .Reward_timer_d3 {
+    width: 48rem;
+    height: 48rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
+    top: -14rem;
+    right: -14rem;
+}
 
 @keyframes Separator_add-blur_31 {
     from {
@@ -323,7 +333,7 @@
     }
 
     to {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
@@ -362,21 +372,21 @@
 }
 
 .Separator_base__completedBattleQuests_ca .Separator_separator__left_45 {
-            background: linear-gradient(270deg, #ffc061 0%, rgba(203, 73, 0, 0) 100%);
-        }
+    background: linear-gradient(270deg, #ffc061 0%, rgba(203, 73, 0, 0) 100%);
+}
 
 .Separator_base__inProgressBattleQuests_f5 .Separator_separator__left_45 {
-            background: linear-gradient(270deg, rgba(255, 255, 255, .4) 0%, rgba(255, 255, 255, .03) 100%);
-        }
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.03) 100%);
+}
 
 .Separator_base__condition_c3 .Separator_separator__left_45 {
-            background: linear-gradient(90deg, rgba(108, 108, 108, .15) 0%, #6c6c6c 102.66%);
-        }
+    background: linear-gradient(90deg, rgba(108, 108, 108, 0.15) 0%, #6c6c6c 102.66%);
+}
 
 .Separator_base__awards_fb .Separator_separator__left_45 {
-            margin: 0 10rem 2.5rem 2.5rem;
-            background: linear-gradient(270deg, #fff -2.27%, rgba(255, 255, 255, .1) 100%);
-        }
+    margin: 0 10rem 2.5rem 2.5rem;
+    background: linear-gradient(270deg, #fff -2.27%, rgba(255, 255, 255, 0.1) 100%);
+}
 
 .Separator_base__completed_76 .Separator_separator__left_45::after {
     position: absolute;
@@ -386,14 +396,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(270deg, #81ea30 -2.27%, rgba(129, 234, 48, .1) 100%);
+    background: linear-gradient(270deg, #81ea30 -2.27%, rgba(129, 234, 48, 0.1) 100%);
     opacity: 0;
     content: '';
     animation-name: Separator_show_7e;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-            }
+}
 
 .Separator_base__completedWasVisited_03 .Separator_separator__left_45::after {
     position: absolute;
@@ -403,28 +413,28 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(270deg, #81ea30 -2.27%, rgba(129, 234, 48, .1) 100%);
+    background: linear-gradient(270deg, #81ea30 -2.27%, rgba(129, 234, 48, 0.1) 100%);
     opacity: 0;
     content: '';
-                opacity: 1;
-            }
+    opacity: 1;
+}
 
 .Separator_base__completedBattleQuests_ca .Separator_separator__right_e1 {
-            background: linear-gradient(90deg, #ffc061 0%, rgba(203, 73, 0, 0) 100%);
-        }
+    background: linear-gradient(90deg, #ffc061 0%, rgba(203, 73, 0, 0) 100%);
+}
 
 .Separator_base__inProgressBattleQuests_f5 .Separator_separator__right_e1 {
-            background: linear-gradient(90deg, rgba(255, 255, 255, .4) 0%, rgba(255, 255, 255, .03) 100%);
-        }
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.03) 100%);
+}
 
 .Separator_base__condition_c3 .Separator_separator__right_e1 {
-            background: linear-gradient(270deg, rgba(108, 108, 108, .15) 0%, #6c6c6c 102.66%);
-        }
+    background: linear-gradient(270deg, rgba(108, 108, 108, 0.15) 0%, #6c6c6c 102.66%);
+}
 
 .Separator_base__awards_fb .Separator_separator__right_e1 {
-            margin: 0 3rem 2.5rem 10rem;
-            background: linear-gradient(90deg, #fff -2.27%, rgba(255, 255, 255, .1) 100%);
-        }
+    margin: 0 3rem 2.5rem 10rem;
+    background: linear-gradient(90deg, #fff -2.27%, rgba(255, 255, 255, 0.1) 100%);
+}
 
 .Separator_base__completed_76 .Separator_separator__right_e1::after {
     position: absolute;
@@ -434,14 +444,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #81ea30 -2.27%, rgba(129, 234, 48, .1) 100%);
+    background: linear-gradient(90deg, #81ea30 -2.27%, rgba(129, 234, 48, 0.1) 100%);
     opacity: 0;
     content: '';
     animation-name: Separator_show_7e;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-            }
+}
 
 .Separator_base__completedWasVisited_03 .Separator_separator__right_e1::after {
     position: absolute;
@@ -451,31 +461,31 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #81ea30 -2.27%, rgba(129, 234, 48, .1) 100%);
+    background: linear-gradient(90deg, #81ea30 -2.27%, rgba(129, 234, 48, 0.1) 100%);
     opacity: 0;
     content: '';
-                opacity: 1;
-            }
+    opacity: 1;
+}
 
 .Separator_ellipse_75 {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    filter: blur(.5rem);
-    opacity: .5;
+    filter: blur(0.5rem);
+    opacity: 0.5;
     position: absolute;
     top: -1rem;
-    right: -.5rem;
+    right: -0.5rem;
 }
 
 .Separator_base__awards_fb .Separator_separator__left_45 .Separator_ellipse_75,
-        .Separator_base__inProgressBattleQuests_f5 .Separator_separator__left_45 .Separator_ellipse_75 {
-            background: #F2F2F7;
-        }
+.Separator_base__inProgressBattleQuests_f5 .Separator_separator__left_45 .Separator_ellipse_75 {
+    background: #f2f2f7;
+}
 
 .Separator_base__completed_76 .Separator_separator__left_45 .Separator_ellipse_75 {
-            background: #b5ff92;
-        }
+    background: #b5ff92;
+}
 
 .Separator_base__completedBattleQuests_ca .Separator_separator__left_45 .Separator_ellipse_75 {
     width: 6rem;
@@ -484,20 +494,20 @@
     filter: blur(1rem);
     top: -2.5rem;
     right: -1.5rem;
-        }
+}
 
 .Separator_separator__right_e1 .Separator_ellipse_75 {
-        left: -.5rem;
-    }
+    left: -0.5rem;
+}
 
 .Separator_base__awards_fb .Separator_separator__right_e1 .Separator_ellipse_75,
-        .Separator_base__inProgressBattleQuests_f5 .Separator_separator__right_e1 .Separator_ellipse_75 {
-            background: #F2F2F7;
-        }
+.Separator_base__inProgressBattleQuests_f5 .Separator_separator__right_e1 .Separator_ellipse_75 {
+    background: #f2f2f7;
+}
 
 .Separator_base__completed_76 .Separator_separator__right_e1 .Separator_ellipse_75 {
-            background: #b5ff92;
-        }
+    background: #b5ff92;
+}
 
 .Separator_base__completedBattleQuests_ca .Separator_separator__right_e1 .Separator_ellipse_75 {
     width: 6rem;
@@ -506,8 +516,8 @@
     filter: blur(1rem);
     top: -2.5rem;
     right: -1.5rem;
-            left: -1.5rem;
-        }
+    left: -1.5rem;
+}
 
 .Separator_firstLayer_9d {
     width: 1rem;
@@ -515,70 +525,70 @@
     border-radius: 50%;
     position: absolute;
     top: -1rem;
-    right: .5rem;
+    right: 0.5rem;
 }
 
 .Separator_base__awards_fb .Separator_separator__left_45 .Separator_firstLayer_9d,
-        .Separator_base__inProgressBattleQuests_f5 .Separator_separator__left_45 .Separator_firstLayer_9d {
-            background: #FFFFFF;
-        }
+.Separator_base__inProgressBattleQuests_f5 .Separator_separator__left_45 .Separator_firstLayer_9d {
+    background: #ffffff;
+}
 
 .Separator_base__completed_76 .Separator_separator__left_45 .Separator_firstLayer_9d {
-            background: #b5ff92;
-        }
+    background: #b5ff92;
+}
 
 .Separator_base__completedBattleQuests_ca .Separator_separator__left_45 .Separator_firstLayer_9d {
     width: 4rem;
     height: 4rem;
     background: #ffad32;
-    filter: blur(.5rem);
+    filter: blur(0.5rem);
     top: 1.5rem;
     right: 1.5rem;
-        }
+}
 
 .Separator_separator__right_e1 .Separator_firstLayer_9d {
-        left: -.5rem;
-    }
+    left: -0.5rem;
+}
 
 .Separator_base__awards_fb .Separator_separator__right_e1 .Separator_firstLayer_9d,
-        .Separator_base__inProgressBattleQuests_f5 .Separator_separator__right_e1 .Separator_firstLayer_9d {
-            background: #FFFFFF;
-        }
+.Separator_base__inProgressBattleQuests_f5 .Separator_separator__right_e1 .Separator_firstLayer_9d {
+    background: #ffffff;
+}
 
 .Separator_base__completed_76 .Separator_separator__right_e1 .Separator_firstLayer_9d {
-            background: #b5ff92;
-        }
+    background: #b5ff92;
+}
 
 .Separator_base__completedBattleQuests_ca .Separator_separator__right_e1 .Separator_firstLayer_9d {
     width: 4rem;
     height: 4rem;
     background: #ffad32;
-    filter: blur(.5rem);
+    filter: blur(0.5rem);
     top: 1.5rem;
     right: 1.5rem;
-            left: 1.5rem;
-        }
+    left: 1.5rem;
+}
 
 .Separator_base__completedBattleQuests_ca .Separator_separator__left_45 .Separator_secondLayer_b9 {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    background: #E9E2BF;
+    background: #e9e2bf;
     position: absolute;
     top: -1rem;
     right: 1rem;
-        }
+}
 
 .Separator_base__completedBattleQuests_ca .Separator_separator__right_e1 .Separator_secondLayer_b9 {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    background: #E9E2BF;
+    background: #e9e2bf;
     position: absolute;
     top: -1rem;
     right: 1rem;
-            left: 1rem;
-        }
+    left: 1rem;
+}
 
 @keyframes TaskBattle_add-blur_ef {
     from {
@@ -586,7 +596,7 @@
     }
 
     to {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
@@ -617,10 +627,10 @@
     flex-direction: column;
     width: 240rem;
     height: 180rem;
-    border: 1rem solid rgba(255, 255, 255, .15);
+    border: 1rem solid rgba(255, 255, 255, 0.15);
     border-radius: 5rem;
     border-bottom: 0;
-    background: linear-gradient(180deg, rgba(26, 26, 26, .3) 92.64%, rgba(26, 26, 26, 0) 100%);
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0.3) 92.64%, rgba(26, 26, 26, 0) 100%);
     position: relative;
 }
 
@@ -629,29 +639,29 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-    }
+}
 
 .TaskBattle_base__completedWasVisited_7d {
-    border-color: rgba(137, 167, 1, .2);
-    box-shadow: inset 0 19rem 30rem  rgba(137, 167, 1, .1);
-    }
+    border-color: rgba(137, 167, 1, 0.2);
+    box-shadow: inset 0 19rem 30rem rgba(137, 167, 1, 0.1);
+}
 
 .TaskBattle_base__mediaMediumHeight_00 {
-        width: 300rem;
-        height: 200rem;
-    }
+    width: 300rem;
+    height: 200rem;
+}
 
 .TaskBattle_base_28 + .TaskBattle_base_28 {
-        margin-left: 10rem;
-    }
+    margin-left: 10rem;
+}
 
 .mediaLarge .TaskBattle_base_28 + .TaskBattle_base_28 {
-            margin-left: 20rem;
+    margin-left: 20rem;
 }
 
 .mediaLarge .TaskBattle_base_28 {
-        width: 300rem;
-        height: 200rem;
+    width: 300rem;
+    height: 200rem;
 }
 
 .TaskBattle_taskType_45 {
@@ -667,11 +677,11 @@
 }
 
 .TaskBattle_base__mediaMediumHeight_00 .TaskBattle_conditions_8f {
-        width: 260rem;
-    }
+    width: 260rem;
+}
 
 .mediaLarge .TaskBattle_conditions_8f {
-        width: 260rem;
+    width: 260rem;
 }
 
 .TaskBattle_awards_e2 {
@@ -685,18 +695,18 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-    }
+}
 
 .TaskBattle_base__completedWasVisited_7d .TaskBattle_awards_e2 {
-        opacity: .5;
-    }
+    opacity: 0.5;
+}
 
 .TaskBattle_base__mediaMediumHeight_00 .TaskBattle_awards_e2 {
-        width: 300rem;
-    }
+    width: 300rem;
+}
 
 .mediaLarge .TaskBattle_awards_e2 {
-        width: 300rem;
+    width: 300rem;
 }
 
 .TaskBattle_awardsList_b5 {
@@ -706,18 +716,18 @@
 }
 
 .TaskBattle_award_b8 + .TaskBattle_award_b8 {
-        margin-left: 15rem;
-    }
+    margin-left: 15rem;
+}
 
 @keyframes TaskBattle_add-shadow_d9 {
     from {
-        border-color: rgba(255, 255, 255, .15);
+        border-color: rgba(255, 255, 255, 0.15);
         box-shadow: none;
     }
 
     to {
-    border-color: rgba(137, 167, 1, .2);
-    box-shadow: inset 0 19rem 30rem  rgba(137, 167, 1, .1);
+        border-color: rgba(137, 167, 1, 0.2);
+        box-shadow: inset 0 19rem 30rem rgba(137, 167, 1, 0.1);
     }
 }
 
@@ -737,11 +747,11 @@
     position: relative;
 }
 .ProgressBar_base__medium_62 {
-        height: 6rem;
-    }
+    height: 6rem;
+}
 .ProgressBar_base__small_df {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_background_51 {
     width: 100%;
     max-width: 8001px;
@@ -755,16 +765,15 @@
     left: 0;
 }
 .ProgressBar_background__medium_6e {
-        height: 6rem;
-    }
+    height: 6rem;
+}
 .ProgressBar_background__small_46 {
-        height: 2rem;
-    }
+    height: 2rem;
+}
 .ProgressBar_lineWrapper_6a {
     display: flex;
     flex: 1;
 }
-
 
 .ProgressBarBlink_base_24 {
     width: 60rem;
@@ -779,16 +788,16 @@
     pointer-events: none;
 }
 
-    .ProgressBarBlink_base__medium_ec {
-        width: 42rem;
-        height: 70rem;
-    }
+.ProgressBarBlink_base__medium_ec {
+    width: 42rem;
+    height: 70rem;
+}
 
-    .ProgressBarBlink_base__small_0f {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+.ProgressBarBlink_base__small_0f {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -800,18 +809,18 @@
     height: 100%;
     background-color: var(--progress-line-base);
     position: relative;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressLineImpose_base__disabled_cc {
-        background-color: var(--progress-line-disabled);
-    }
+    background-color: var(--progress-line-disabled);
+}
 .ProgressLineImpose_base__finished_d4 {
-        background-color: var(--progress-line-finished);
-    }
+    background-color: var(--progress-line-finished);
+}
 .ProgressLineImpose_base__withoutBounce_56 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressLineImpose_pattern_1c {
     max-width: 8001px;
     background-image: var(--progress-pattern-base);
@@ -825,19 +834,19 @@
     left: 1rem;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-disabled);
-        left: 0;
-    }
+    background-image: var(--progress-pattern-disabled);
+    left: 0;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
-        background-image: var(--progress-pattern-finished);
-    }
+    background-image: var(--progress-pattern-finished);
+}
 .ProgressLineImpose_gradient_35 {
     max-width: 8001px;
-    background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75));
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75));
     mix-blend-mode: overlay;
     position: absolute;
     top: 1rem;
@@ -846,15 +855,15 @@
     left: 0;
 }
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
-        top: 0;
-        bottom: 0;
-    }
+    top: 0;
+    bottom: 0;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
-        display: none;
-    }
+    display: none;
+}
 .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
-        background-image: linear-gradient(90deg, rgba(0,0,0, .5), rgba(255,255,255, .75), rgba(0,0,0, .5));
-    }
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5));
+}
 .ProgressLineImpose_glow_a5 {
     width: 60rem;
     max-width: 8001px;
@@ -869,17 +878,17 @@
     pointer-events: none;
 }
 .ProgressLineImpose_glow__left_d8 {
-        left: 1rem;
-    }
+    left: 1rem;
+}
 .ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
-    .ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
-        display: none;
-    }
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+    display: none;
+}
 .ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
-        width: 44rem;
-        height: 43rem;
-        background-image: var(--progress-glow-small);
-    }
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
 
 /*
     Gameface can't calculate gradient biggest than 8128px
@@ -901,7 +910,7 @@
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1), cubic-bezier(.21, .61, .35, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1), cubic-bezier(0.21, 0.61, 0.35, 1);
     transition-property: width, transform;
 }
 
@@ -915,12 +924,12 @@
     height: 100%;
     position: absolute;
     top: 0;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 .ProgressBarDeltaGrow_glow_68 {
     width: 0;
     max-width: 8001px;
@@ -930,12 +939,12 @@
     position: absolute;
     bottom: 0;
     transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, .92, 1);
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
     transition-property: width;
 }
 .ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
-        transition-timing-function: cubic-bezier(1, 0, .75, .75);
-    }
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
 
 @keyframes Progression_add-blur_f8 {
     from {
@@ -943,7 +952,7 @@
     }
 
     to {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
@@ -972,14 +981,14 @@
 }
 
 .Progression_base__completedWasVisited_62 {
-        display: none;
-    }
+    display: none;
+}
 
 .Progression_progression_34 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
@@ -987,64 +996,64 @@
 }
 
 .mediaLarge .Progression_progression_34 {
-        color: #F2F2F7;
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .Progression_base__completed_14 .Progression_progression_34 {
     animation-name: Progression_hide_ca;
-    animation-duration: .8s;
+    animation-duration: 0.8s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-    }
+}
 
 .Progression_progressionNumerical_20 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
     height: 20rem;
     margin: 1rem 0 6rem;
-    transition: height .8s;
+    transition: height 0.8s;
 }
 
 .Progression_progressionNumerical__mediaMediumHeight_4b {
-        color: #F2F2F7;
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
-    }
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
 
 .mediaLarge .Progression_progressionNumerical_20 {
-        color: #F2F2F7;
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .Progression_base__completed_14 .Progression_progressionNumerical_20 {
     animation-name: Progression_finish-color_78;
-    animation-duration: .8s;
+    animation-duration: 0.8s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-        height: 0rem;
-    }
+    height: 0rem;
+}
 
 .Progression_currentValue__inProgress_a3 {
-        color: #FEAB34;
-    }
+    color: #feab34;
+}
 
 .Progression_base__completed_14 .Progression_currentValue_05 {
     animation-name: Progression_finish-color_78;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-    }
+}
 
 .Progression_separator_49 {
     margin: 0 5rem;
@@ -1055,42 +1064,42 @@
     width: 140rem;
     height: 5rem;
     margin: 3rem 0;
-    transition: height .7s;
+    transition: height 0.7s;
 }
 
 .Progression_base__completed_14 .Progression_progressBar_37 {
     animation-name: Progression_hide_ca;
-    animation-duration: .7s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-        height: 0rem;
-    }
+    height: 0rem;
+}
 
 .Progression_progressBar__mediaMediumHeight_7f {
-        display: block;
-    }
+    display: block;
+}
 
 .mediaLarge .Progression_progressBar_37 {
-        display: block;
+    display: block;
 }
 
 @keyframes Progression_finish-color_78 {
     from {
-        color: #FEAB34;
+        color: #feab34;
     }
 
     to {
-        color: #7AB300;
+        color: #7ab300;
     }
 }
 
 @keyframes Progression_default-color_92 {
     from {
-        color: #FEAB34;
+        color: #feab34;
     }
 
     to {
-        color: #F2F2F7;
+        color: #f2f2f7;
     }
 }
 
@@ -1100,7 +1109,7 @@
     }
 
     to {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
@@ -1137,7 +1146,7 @@
 }
 
 .TaskCondition_text_9b {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -1150,19 +1159,19 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-    }
+}
 
 .TaskCondition_text__completedWasVisited_eb {
-        color: #7AB300;
-    }
+    color: #7ab300;
+}
 
 @keyframes TaskCondition_update-condition_e3 {
     from {
-        color: #F2F2F7;
+        color: #f2f2f7;
     }
 
     to {
-        color: #7AB300;
+        color: #7ab300;
     }
 }
 
@@ -1172,7 +1181,7 @@
     }
 
     to {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
@@ -1206,7 +1215,7 @@
 .TaskType_ellipse_f9 {
     width: 228rem;
     height: 125rem;
-    background: url('R.images.historical_battles.gui.maps.icons.progression.ellipse')  no-repeat center / contain;
+    background: url('R.images.historical_battles.gui.maps.icons.progression.ellipse') no-repeat center / contain;
     position: absolute;
     top: -47rem;
     z-index: 1;
@@ -1217,11 +1226,11 @@
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-    }
+}
 
 .TaskType_base__completedWasVisited_b0 .TaskType_ellipse_f9 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .TaskType_typeIcon_64 {
     width: 32rem;
@@ -1236,11 +1245,11 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-    }
+}
 
 .TaskType_base__completedWasVisited_b0 .TaskType_typeIcon_64 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .TaskType_completedIcon_fc {
     width: 32rem;
@@ -1258,11 +1267,11 @@
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
-    }
+}
 
 .TaskType_base__completedWasVisited_b0 .TaskType_completedIcon_fc {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 @keyframes TaskType_slide-down_cc {
     from {
@@ -1277,274 +1286,274 @@
 }
 
 .Box_mt__XS_0c {
-            margin-top: 4rem;
-        }
-        .Box_mt__SM_eb {
-            margin-top: 8rem;
-        }
-        .Box_mt__SMp_cf {
-            margin-top: 10rem;
-        }
-        .Box_mt__MD_25 {
-            margin-top: 16rem;
-        }
-        .Box_mt__MDp_49 {
-            margin-top: 20rem;
-        }
-        .Box_mt__LG_e8 {
-            margin-top: 32rem;
-        }
-        .Box_mt__XL_83 {
-            margin-top: 64rem;
-        }
+    margin-top: 4rem;
+}
+.Box_mt__SM_eb {
+    margin-top: 8rem;
+}
+.Box_mt__SMp_cf {
+    margin-top: 10rem;
+}
+.Box_mt__MD_25 {
+    margin-top: 16rem;
+}
+.Box_mt__MDp_49 {
+    margin-top: 20rem;
+}
+.Box_mt__LG_e8 {
+    margin-top: 32rem;
+}
+.Box_mt__XL_83 {
+    margin-top: 64rem;
+}
 
 .Box_mr__XS_7c {
-            margin-right: 4rem;
-        }
+    margin-right: 4rem;
+}
 
 .Box_mr__SM_08 {
-            margin-right: 8rem;
-        }
+    margin-right: 8rem;
+}
 
 .Box_mr__SMp_06 {
-            margin-right: 10rem;
-        }
+    margin-right: 10rem;
+}
 
 .Box_mr__MD_4a {
-            margin-right: 16rem;
-        }
+    margin-right: 16rem;
+}
 
 .Box_mr__MDp_b6 {
-            margin-right: 20rem;
-        }
+    margin-right: 20rem;
+}
 
 .Box_mr__LG_d0 {
-            margin-right: 32rem;
-        }
+    margin-right: 32rem;
+}
 
 .Box_mr__XL_db {
-            margin-right: 64rem;
-        }
+    margin-right: 64rem;
+}
 
 .Box_mb__XS_bb {
-            margin-bottom: 4rem;
-        }
+    margin-bottom: 4rem;
+}
 
 .Box_mb__SM_83 {
-            margin-bottom: 8rem;
-        }
+    margin-bottom: 8rem;
+}
 
 .Box_mb__SMp_04 {
-            margin-bottom: 10rem;
-        }
+    margin-bottom: 10rem;
+}
 
 .Box_mb__MD_ed {
-            margin-bottom: 16rem;
-        }
+    margin-bottom: 16rem;
+}
 
 .Box_mb__MDp_65 {
-            margin-bottom: 20rem;
-        }
+    margin-bottom: 20rem;
+}
 
 .Box_mb__LG_c8 {
-            margin-bottom: 32rem;
-        }
+    margin-bottom: 32rem;
+}
 
 .Box_mb__XL_f8 {
-            margin-bottom: 64rem;
-        }
+    margin-bottom: 64rem;
+}
 
 .Box_ml__XS_8a {
-            margin-left: 4rem;
-        }
+    margin-left: 4rem;
+}
 
 .Box_ml__SM_e6 {
-            margin-left: 8rem;
-        }
+    margin-left: 8rem;
+}
 
 .Box_ml__SMp_fb {
-            margin-left: 10rem;
-        }
+    margin-left: 10rem;
+}
 
 .Box_ml__MD_2b {
-            margin-left: 16rem;
-        }
+    margin-left: 16rem;
+}
 
 .Box_ml__MDp_c7 {
-            margin-left: 20rem;
-        }
+    margin-left: 20rem;
+}
 
 .Box_ml__LG_39 {
-            margin-left: 32rem;
-        }
+    margin-left: 32rem;
+}
 
 .Box_ml__XL_4a {
-            margin-left: 64rem;
-        }
+    margin-left: 64rem;
+}
 
 /* eslint-disable-next-line expectedscss*/
 .Text_paragraph-P10_2c {
-        font-size: 10rem;
-        font-weight: 400;
-        line-height: 1.2;
+    font-size: 10rem;
+    font-weight: 400;
+    line-height: 1.2;
 }
 .Text_paragraph-P12_22 {
-        font-size: 12rem;
-        font-weight: 400;
-        line-height: 1.3;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
 }
 .Text_paragraph-P14_a7 {
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
 }
 .Text_paragraph-P16_90 {
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
 }
 .Text_paragraph-P18_50 {
-        font-size: 18rem;
-        font-weight: 400;
-        line-height: 1.25;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
 }
 .Text_paragraph-P24_33 {
-        font-size: 24rem;
-        font-weight: 400;
-        line-height: 32rem;
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 32rem;
 }
 .Text_heading-H14_8b {
-        font-size: 14rem;
-        font-weight: 700;
-        line-height: 1.15;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
 }
 .Text_heading-H15_9e {
-        font-size: 15rem;
-        font-weight: 700;
-        line-height: 1.15;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
 }
 .Text_heading-H18_b7 {
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 .Text_heading-H20R_f6 {
-        font-size: 20rem;
-        font-weight: 400;
-        line-height: 1.2;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
 }
 .Text_heading-H22_27 {
-        font-size: 22rem;
-        font-weight: 700;
-        line-height: 1.2;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 .Text_heading-H24R_be {
-        font-size: 24rem;
-        font-weight: 400;
-        line-height: 1.2;
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
 }
 .Text_heading-H24_0c {
-        font-size: 24rem;
-        font-weight: 700;
-        line-height: 1.2;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 .Text_heading-H28_78 {
-        font-size: 28rem;
-        font-weight: 700;
-        line-height: 1.1;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 .Text_heading-H36_32 {
-        font-size: 36rem;
-        font-weight: 700;
-        line-height: 1.1;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 .Text_heading-H56_c3 {
-        font-size: 56rem;
-        font-weight: 700;
-        line-height: 1.1;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 .Text_heading-H73_8f {
-        font-size: 73rem;
-        font-weight: 700;
-        line-height: 1.1;
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 .Text_heading-H144_a9 {
-        font-size: 144rem;
-        font-weight: 700;
-        line-height: 1;
+    font-size: 144rem;
+    font-weight: 700;
+    line-height: 1;
 }
 .Text_BLACK_REAL_30 {
-        color: #000000;
-    }
+    color: #000000;
+}
 .Text_WHITE_REAL_bc {
-        color: #FFFFFF;
-    }
+    color: #ffffff;
+}
 .Text_WHITE_62 {
-        color: #F2F2F7;
-    }
+    color: #f2f2f7;
+}
 .Text_WHITE_ORANGE_54 {
-        color: #FEFEEC;
-    }
+    color: #fefeec;
+}
 .Text_WHITE_SPANISH_df {
-        color: #E9E2BF;
-    }
+    color: #e9e2bf;
+}
 .Text_PAR_15 {
-        color: #8C8C7E;
-    }
+    color: #8c8c7e;
+}
 .Text_PAR_SECONDARY_5d {
-        color: #595950;
-    }
+    color: #595950;
+}
 .Text_PAR_TERTIARY_c9 {
-        color: #37362E;
-    }
+    color: #37362e;
+}
 .Text_INFO_RED_30 {
-        color: #FF0000;
-    }
+    color: #ff0000;
+}
 .Text_RED_66 {
-        color: #FF2717;
-    }
+    color: #ff2717;
+}
 .Text_RED_DARK_d8 {
-        color: #B70000;
-    }
+    color: #b70000;
+}
 .Text_YELLOW_ed {
-        color: #FEAB34;
-    }
+    color: #feab34;
+}
 .Text_ORANGE_be {
-        color: #EE7000;
-    }
+    color: #ee7000;
+}
 .Text_CREAM_57 {
-        color: #FFDD99;
-    }
+    color: #ffdd99;
+}
 .Text_BROWN_18 {
-        color: #CBAC77;
-    }
+    color: #cbac77;
+}
 .Text_GREEN_BRIGHT_3f {
-        color: #80D43A;
-    }
+    color: #80d43a;
+}
 .Text_GREEN_e3 {
-        color: #7AB300;
-    }
+    color: #7ab300;
+}
 .Text_GREEN_DARK_f1 {
-        color: #497212;
-    }
+    color: #497212;
+}
 .Text_BLUE_BOOSTER_21 {
-        color: #CCFFFF;
-    }
+    color: #ccffff;
+}
 .Text_BLUE_TEAMKILLER_ab {
-        color: #09E2FF;
-    }
+    color: #09e2ff;
+}
 .Text_CRED_f7 {
-        color: #CED9D9;
-    }
+    color: #ced9d9;
+}
 .Text_GOLD_28 {
-        color: #FFC363;
-    }
+    color: #ffc363;
+}
 .Text_BOND_be {
-        color: #C9C9B6;
-    }
+    color: #c9c9b6;
+}
 .Text_PROM_65 {
-        color: #A29B70;
-    }
+    color: #a29b70;
+}
 
 .Header_base_32 {
     display: flex;
@@ -1554,8 +1563,8 @@
     pointer-events: none;
 }
 
-    .mediaLarge .Header_base_32 {
-        height: 100rem;
+.mediaLarge .Header_base_32 {
+    height: 100rem;
 }
 .Header_header_ea {
     width: 100%;
@@ -1563,52 +1572,52 @@
     transition: opacity 1500ms;
 }
 .Header_header__fast_03 {
-        transition: none;
-    }
+    transition: none;
+}
 .Header_header__inProgress_18 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .Header_header__hide_02 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .Header_header__completed_80 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .Header_header__show_90 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .Header_title_dd {
     text-align: center;
     position: relative;
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 36rem;
     font-weight: 700;
     line-height: 1.1;
     z-index: 2;
 }
 .mediaMedium .Header_title_dd {
-        color: #F2F2F7;
-        font-size: 56rem;
-        font-weight: 700;
-        line-height: 1.1;
+    color: #f2f2f7;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 .Header_subTitle_fd {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
     margin-top: 4rem;
 }
 .mediaMedium .Header_subTitle_fd {
-        color: #E9E2BF;
-        font-size: 16rem;
-        font-weight: 400;
-        line-height: 1.25;
+    color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
 }
 .Header_shadowBg_1c {
     height: 200rem;
-    background: url('R.images.historical_battles.gui.maps.icons.progression.ellipse_shadow')  no-repeat center / contain;
-    opacity: .6;
+    background: url('R.images.historical_battles.gui.maps.icons.progression.ellipse_shadow') no-repeat center / contain;
+    opacity: 0.6;
     position: relative;
     top: 180rem;
     z-index: 1;
@@ -1621,33 +1630,34 @@
     position: relative;
 }
 
-    .HorizontalBar_base__nonActive_82 {
-        visibility: hidden;
-    }
+.HorizontalBar_base__nonActive_82 {
+    visibility: hidden;
+}
 
-    .HorizontalBar_base_49 .disable,
-    .HorizontalBar_base_49 .disable:hover {
-        opacity: .3;
-        cursor: default;
-    }
+.HorizontalBar_base_49 .disable,
+.HorizontalBar_base_49 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
 
 .HorizontalBar_leftButton_5f,
 .HorizontalBar_rightButton_03 {
     width: 13rem;
     height: 13rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
     background: no-repeat center / 7rem 5rem;
-    opacity: .5;
+    opacity: 0.5;
     z-index: 1;
     transform: rotate(-90deg);
     transition: opacity 130ms linear;
     cursor: pointer;
 }
 
-.HorizontalBar_leftButton_5f:hover, .HorizontalBar_rightButton_03:hover {
-        opacity: 1;
-    }
+.HorizontalBar_leftButton_5f:hover,
+.HorizontalBar_rightButton_03:hover {
+    opacity: 1;
+}
 
 .HorizontalBar_leftButton_5f {
     background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
@@ -1671,9 +1681,10 @@
     min-width: 20rem;
     height: 13rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
-    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem 7rem;
-    opacity: .5;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem
+        7rem;
+    opacity: 0.5;
     position: absolute;
     z-index: 1;
     transition: opacity 130ms linear;
@@ -1681,8 +1692,8 @@
 }
 
 .HorizontalBar_thumb_fd:hover {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 .HorizontalBar_rail_32 {
     height: 0;
@@ -1694,9 +1705,8 @@
 }
 
 .HorizontalBar_rail_32:hover {
-        opacity: .7;
-    }
-
+    opacity: 0.7;
+}
 
 .HorizontalScroll_base_29 {
     width: 100%;
@@ -1721,32 +1731,33 @@
     position: relative;
 }
 
-    .VerticalBar_base__nonActive_42 {
-        visibility: hidden;
-    }
+.VerticalBar_base__nonActive_42 {
+    visibility: hidden;
+}
 
-    .VerticalBar_base_f3 .disable,
-    .VerticalBar_base_f3 .disable:hover {
-        opacity: .3;
-        cursor: default;
-    }
+.VerticalBar_base_f3 .disable,
+.VerticalBar_base_f3 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
 
 .VerticalBar_topButton_d7,
 .VerticalBar_bottomButton_06 {
     width: 13rem;
     height: 13rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
     background: no-repeat center / 7rem 5rem;
-    opacity: .5;
+    opacity: 0.5;
     z-index: 1;
     transition: opacity 130ms linear;
     cursor: pointer;
 }
 
-.VerticalBar_topButton_d7:hover, .VerticalBar_bottomButton_06:hover {
-        opacity: 1;
-    }
+.VerticalBar_topButton_d7:hover,
+.VerticalBar_bottomButton_06:hover {
+    opacity: 1;
+}
 
 .VerticalBar_topButton_d7 {
     background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
@@ -1770,9 +1781,9 @@
     height: 100%;
     min-height: 20rem;
     border: 1rem solid #7e7b68;
-    box-shadow: inset 0 0 1rem rgba(255,255,190, .3);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
     background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
-    opacity: .5;
+    opacity: 0.5;
     position: absolute;
     z-index: 1;
     transition: opacity 130ms linear;
@@ -1780,8 +1791,8 @@
 }
 
 .VerticalBar_thumb_32:hover {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 .VerticalBar_rail_43 {
     width: 0;
@@ -1796,9 +1807,8 @@
 }
 
 .VerticalBar_rail_43:hover {
-        opacity: .7;
-    }
-
+    opacity: 0.7;
+}
 
 .VerticalScroll_content_cb {
     height: 100%;
@@ -1828,12 +1838,12 @@
     transition: opacity 500ms;
 }
 .LevelLabel_levelBackground__completed_89 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .LevelLabel_levelBackground__fast_66 {
-        opacity: 1;
-        transition: none;
-    }
+    opacity: 1;
+    transition: none;
+}
 .LevelLabel_levelBackground_72 {
     width: 76rem;
     height: 76rem;
@@ -1847,22 +1857,22 @@
     transition-delay: 1100ms;
 }
 .LevelLabel_levelBackground__last_e4 {
-        background: url('R.images.historical_battles.gui.maps.icons.progression.stages.feature') no-repeat center / cover;
-        right: 0;
-        left: auto;
-        transform: translateX(50%);
-    }
+    background: url('R.images.historical_battles.gui.maps.icons.progression.stages.feature') no-repeat center / cover;
+    right: 0;
+    left: auto;
+    transform: translateX(50%);
+}
 .LevelLabel_base__completed_4b .LevelLabel_levelBackground_72 {
-        background: url('R.images.historical_battles.gui.maps.icons.progression.stages.done') no-repeat center / cover;
-    }
+    background: url('R.images.historical_battles.gui.maps.icons.progression.stages.done') no-repeat center / cover;
+}
 .LevelLabel_base__active_64 .LevelLabel_levelBackground_72 {
-        background: url('R.images.historical_battles.gui.maps.icons.progression.stages.active') no-repeat center / cover;
-    }
+    background: url('R.images.historical_battles.gui.maps.icons.progression.stages.active') no-repeat center / cover;
+}
 .LevelLabel_hover_d0 {
     width: 76rem;
     height: 76rem;
     background: url('R.images.historical_battles.gui.maps.icons.progression.stages.hover') no-repeat center / cover;
-    opacity: .2;
+    opacity: 0.2;
     position: absolute;
     bottom: -43rem;
     left: 0;
@@ -1871,11 +1881,13 @@
     transition-delay: 1100ms;
 }
 .LevelLabel_level_e5 {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
-    text-shadow: 0 0 10rem rgba(255, 221, 153, .4), 0 1rem 0 rgba(0, 0, 0, .5);
+    text-shadow:
+        0 0 10rem rgba(255, 221, 153, 0.4),
+        0 1rem 0 rgba(0, 0, 0, 0.5);
     position: absolute;
     bottom: -13rem;
     left: 0;
@@ -1885,35 +1897,39 @@
     transition-delay: 1100ms;
 }
 .LevelLabel_base__completed_4b .LevelLabel_level_e5 {
-        opacity: .5;
-    }
+    opacity: 0.5;
+}
 .LevelLabel_level__last_18 {
-        right: 0;
-        left: auto;
-        transform: translateX(50%);
-    }
+    right: 0;
+    left: auto;
+    transform: translateX(50%);
+}
 
 .MainReward_base_39 {
     width: 180rem;
     height: 135rem;
-    background: url('R.images.historical_battles.gui.maps.icons.progression.rewards.main_reward') no-repeat center / cover;
+    background: url('R.images.historical_battles.gui.maps.icons.progression.rewards.main_reward') no-repeat center /
+        cover;
     transition: transform 0.3s ease-in-out;
 }
 
-    .MainReward_base_39:hover {
-        transform: scale(1.06);
-    }
+.MainReward_base_39:hover {
+    transform: scale(1.06);
+}
 
-    .MainReward_base__completed_26 {
-        opacity: .5;
-    }
+.MainReward_base__completed_26 {
+    opacity: 0.5;
+}
 
 .MainReward_finished_7f {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
-    text-shadow: 0 0 15rem #e52, 0 0 8rem #ff2a00, 0 0 4rem rgba(255, 127, 0, 0.25);
+    text-shadow:
+        0 0 15rem #e52,
+        0 0 8rem #ff2a00,
+        0 0 4rem rgba(255, 127, 0, 0.25);
     position: absolute;
     bottom: 18rem;
     left: 50%;
@@ -1926,67 +1942,68 @@
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-    box-shadow: 0 0 0 1rem rgba(0,0,0, .6);
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.6);
     position: relative;
     cursor: pointer;
 }
 
-    .CButton_base__main_42,
-    .CButton_base__primary_7f,
-    .CButton_base__primaryGreen_6f,
-    .CButton_base__primaryRed_ec,
-    .CButton_base__secondary_50 {
-        background-size: 100% 100%;
-    }
+.CButton_base__main_42,
+.CButton_base__primary_7f,
+.CButton_base__primaryGreen_6f,
+.CButton_base__primaryRed_ec,
+.CButton_base__secondary_50 {
+    background-size: 100% 100%;
+}
 
-    .CButton_base__main_42 {
-        background-image: url('R.images.gui.maps.icons.components.button.back_main');
-    }
+.CButton_base__main_42 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_main');
+}
 
-    .CButton_base__primary_7f {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary');
-    }
+.CButton_base__primary_7f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+}
 
-    .CButton_base__primaryGreen_6f {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
-    }
+.CButton_base__primaryGreen_6f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
 
-    .CButton_base__primaryRed_ec {
-        background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
-    }
+.CButton_base__primaryRed_ec {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
 
-    .CButton_base__secondary_50 {
-        background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
-    }
+.CButton_base__secondary_50 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
 
-    .CButton_base__ghost_ed {
-        border-radius: 3rem;
-        box-shadow: 0 0 0 1rem rgba(0,0,0, .3),
-            0 0 0 1rem rgba(255,255,255, .15) inset;
-        background-color: rgba(0,0,0, .15);
-    }
+.CButton_base__ghost_ed {
+    border-radius: 3rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 0 1rem rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
 
-    .CButton_base__extraSmall_27 {
-        min-height: 17rem;
-        padding: 0 16rem;
-    }
+.CButton_base__extraSmall_27 {
+    min-height: 17rem;
+    padding: 0 16rem;
+}
 
-    .CButton_base__small_df,
-    .CButton_base__medium_74 {
-        padding: 0 20rem;
-    }
+.CButton_base__small_df,
+.CButton_base__medium_74 {
+    padding: 0 20rem;
+}
 
-    .CButton_base__small_df {
-        min-height: 18rem;
-    }
+.CButton_base__small_df {
+    min-height: 18rem;
+}
 
-    .CButton_base__medium_74 {
-        min-height: 32rem;
-    }
+.CButton_base__medium_74 {
+    min-height: 32rem;
+}
 
-    .CButton_base__disabled_d9 {
-        cursor: default;
-    }
+.CButton_base__disabled_d9 {
+    cursor: default;
+}
 /* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
 The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
 between 'border-image-width' and 'fill'.
@@ -2002,20 +2019,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
 }
 .CButton_base__main_42 .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+}
 .CButton_base__primary_7f .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+}
 .CButton_base__primaryGreen_6f .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
 .CButton_base__primaryRed_ec .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
 .CButton_base__secondary_50 .CButton_back_e5 {
-        border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
-    }
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
 .CButton_texture_fe {
     background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
     background-size: 155rem 31rem;
@@ -2032,12 +2049,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 0;
     bottom: 0;
     left: 0;
-    transition: box-shadow .16s ease-in-out;
+    transition: box-shadow 0.16s ease-in-out;
 }
 .CButton_base__focus_83 .CButton_state_11 {
-        border-radius: 2rem;
-        box-shadow: inset 0 0 2rem 1rem rgba(255,85,0, .2);
-    }
+    border-radius: 2rem;
+    box-shadow: inset 0 0 2rem 1rem rgba(255, 85, 0, 0.2);
+}
 .CButton_stateHighlightHover_ff,
 .CButton_stateHighlightActive_35,
 .CButton_stateDisabled_54 {
@@ -2048,40 +2065,47 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     bottom: 0;
     left: 0;
 }
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff, .CButton_base__firstHover_d5 .CButton_stateHighlightActive_35, .CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-        transition: opacity .16s ease-in-out;
-    }
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
+.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
+.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+    transition: opacity 0.16s ease-in-out;
+}
 .CButton_stateHighlightHover_ff {
-    background-image: linear-gradient(180deg, rgba(252,248,235, .25) 0%, rgba(252,248,235, .1) 50%, rgba(255,255,255, 0) 100%);
+    background-image: linear-gradient(
+        180deg,
+        rgba(252, 248, 235, 0.25) 0%,
+        rgba(252, 248, 235, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
 }
 .CButton_base_40:hover .CButton_stateHighlightHover_ff {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_base_40:active .CButton_stateHighlightHover_ff {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 .CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
-        box-shadow: 0 15rem 12rem 0 rgba(242,242,230, .11) inset;
-        background-color: rgba(8,6,0, .18);
-        background-image: none;
-    }
+    box-shadow: 0 15rem 12rem 0 rgba(242, 242, 230, 0.11) inset;
+    background-color: rgba(8, 6, 0, 0.18);
+    background-image: none;
+}
 .CButton_stateHighlightActive_35 {
-    background-image: linear-gradient(180deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .15) 100%);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
 }
 .CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_stateDisabled_54 {
-    background-color: rgba(0,0,0, .25);
+    background-color: rgba(0, 0, 0, 0.25);
     background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
     background-size: 15rem;
 }
 .CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 .CButton_content_cc {
     display: flex;
     align-items: center;
@@ -2089,39 +2113,39 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 700;
     line-height: 1.2;
     text-shadow: 0 -1rem 1rem #000;
-    letter-spacing: .03em;
+    letter-spacing: 0.03em;
     transform: translateY(-1rem);
 }
-.CButton_content_cc[lang=ja],
-    .CButton_content_cc[lang=ko],
-    .CButton_content_cc[lang=zh_tw],
-    .CButton_content_cc[lang=zh_sg],
-    .CButton_content_cc[lang=zh_cn],
-    .CButton_content_cc[lang=th] {
-        font-weight: 400;
-    }
+.CButton_content_cc[lang='ja'],
+.CButton_content_cc[lang='ko'],
+.CButton_content_cc[lang='zh_tw'],
+.CButton_content_cc[lang='zh_sg'],
+.CButton_content_cc[lang='zh_cn'],
+.CButton_content_cc[lang='th'] {
+    font-weight: 400;
+}
 .CButton_base__main_42 .CButton_content_cc,
-    .CButton_base__primaryRed_ec .CButton_content_cc {
-        text-shadow: 0 -1rem 1rem #600;
-    }
+.CButton_base__primaryRed_ec .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #600;
+}
 .CButton_base__secondary_50 .CButton_content_cc {
-        color: rgba(254,254,236, .75);
-    }
+    color: rgba(254, 254, 236, 0.75);
+}
 .CButton_base__primaryGreen_6f .CButton_content_cc {
-        text-shadow: 0 -1rem 1rem #1c2502;
-    }
+    text-shadow: 0 -1rem 1rem #1c2502;
+}
 .CButton_base__extraSmall_27 .CButton_content_cc {
-        font-size: 12rem;
-    }
+    font-size: 12rem;
+}
 .CButton_base__small_df .CButton_content_cc {
-        font-size: 14rem;
-    }
+    font-size: 14rem;
+}
 .CButton_base__medium_74 .CButton_content_cc {
-        font-size: 15rem;
-    }
+    font-size: 15rem;
+}
 .CButton_base__disabled_d9 .CButton_content_cc {
-        opacity: .6;
-    }
+    opacity: 0.6;
+}
 
 .Vehicle_base_00 {
     display: flex;
@@ -2135,15 +2159,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Vehicle_base__small_59 .Vehicle_type_4c {
-        top: -7rem;
-    }
+    top: -7rem;
+}
 
 .Vehicle_type__bigIcon_e1 {
-        width: 83rem;
-        height: 73rem;
-        margin: 0 -10rem;
-        top: -20rem;
-    }
+    width: 83rem;
+    height: 73rem;
+    margin: 0 -10rem;
+    top: -20rem;
+}
 
 .Vehicle_nation_4b {
     width: 25rem;
@@ -2154,45 +2178,45 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Vehicle_level_d7 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 24rem;
     font-weight: 700;
     line-height: 1.2;
 }
 
 .Vehicle_base__small_59 .Vehicle_level_d7 {
-        color: #FFDD99;
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
-    }
+    color: #ffdd99;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
 
 .Vehicle_name_1b {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 24rem;
     font-weight: 700;
     line-height: 1.2;
 }
 
 .Vehicle_base__small_59 .Vehicle_name_1b {
-        color: #FFC363;
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
-    }
+    color: #ffc363;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
 
 .TankReward_base_22 {
     position: relative;
 }
 
-    .TankReward_base_22:hover .TankReward_vehicleInfo_20,
-        .TankReward_base_22:hover .TankReward_hoverBg_34 {
-            opacity: 1;
-        }
+.TankReward_base_22:hover .TankReward_vehicleInfo_20,
+.TankReward_base_22:hover .TankReward_hoverBg_34 {
+    opacity: 1;
+}
 
-    .TankReward_base__completed_0b:hover .TankReward_hoverBg_34 {
-                opacity: 0;
-            }
+.TankReward_base__completed_0b:hover .TankReward_hoverBg_34 {
+    opacity: 0;
+}
 
 .TankReward_vehicleInfo_20 {
     display: flex;
@@ -2207,7 +2231,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .TankReward_tankBg_c6 {
     width: 180rem;
     height: 135rem;
-    background: url('R.images.historical_battles.gui.maps.icons.progression.rewards.tank_reward') no-repeat center / cover;
+    background: url('R.images.historical_battles.gui.maps.icons.progression.rewards.tank_reward') no-repeat center /
+        cover;
     position: relative;
     z-index: 1;
     transition: transform 0.3s ease-in-out;
@@ -2215,19 +2240,22 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .TankReward_base__completed_0b .TankReward_tankBg_c6 {
-        opacity: .5;
-    }
+    opacity: 0.5;
+}
 
 .TankReward_base_22:hover .TankReward_tankBg_c6 {
-        transform: scale(1.06);
-    }
+    transform: scale(1.06);
+}
 
 .TankReward_finished_d6 {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
-    text-shadow: 0 0 15rem #e52, 0 0 8rem #ff2a00, 0 0 4rem rgba(255, 127, 0, 0.25);
+    text-shadow:
+        0 0 15rem #e52,
+        0 0 8rem #ff2a00,
+        0 0 4rem rgba(255, 127, 0, 0.25);
     position: absolute;
     bottom: 18rem;
     left: 50%;
@@ -2247,15 +2275,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .TankReward_discountContainer_54 .TankReward_buyButton_23 {
-        min-height: 24rem;
-        margin-left: 34rem;
-        z-index: 4;
-    }
+    min-height: 24rem;
+    margin-left: 34rem;
+    z-index: 4;
+}
 
 .TankReward_discountLight_84 {
     width: 200rem;
     height: 36rem;
-    background: url('R.images.historical_battles.gui.maps.icons.progression.rewards.reward_light_discount') no-repeat center / cover;
+    background: url('R.images.historical_battles.gui.maps.icons.progression.rewards.reward_light_discount') no-repeat
+        center / cover;
     position: absolute;
     left: -40rem;
     z-index: 3;
@@ -2279,7 +2308,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .TankReward_discountCount_ed {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 15rem;
     font-weight: 700;
     text-shadow: 0 0 8rem rgba(255, 129, 13, 0.64);
@@ -2296,12 +2325,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition: opacity 500ms;
 }
 .LevelCard_blockBackground__completed_ef {
-        opacity: .9;
-    }
+    opacity: 0.9;
+}
 .LevelCard_blockBackground__fast_f9 {
-        opacity: .9;
-        transition: none;
-    }
+    opacity: 0.9;
+    transition: none;
+}
 .LevelCard_blockBackground_e1 {
     position: absolute;
     top: 0;
@@ -2309,28 +2338,30 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     bottom: 0;
     left: 0;
     margin-bottom: 3rem;
-    background: url('R.images.historical_battles.gui.maps.icons.progression.highlights.default') no-repeat center / cover;
+    background: url('R.images.historical_battles.gui.maps.icons.progression.highlights.default') no-repeat center /
+        cover;
     opacity: 1;
     transition-delay: 1100ms;
 }
 .LevelCard_blockBackground__active_d3 {
-        background: url('R.images.historical_battles.gui.maps.icons.progression.highlights.active') no-repeat 50% 100% / cover;
-    }
+    background: url('R.images.historical_battles.gui.maps.icons.progression.highlights.active') no-repeat 50% 100% /
+        cover;
+}
 .LevelCard_blockBackground__completed_ef {
-        background: url('R.images.historical_battles.gui.maps.icons.progression.highlights.done') no-repeat center / cover;
-    }
+    background: url('R.images.historical_battles.gui.maps.icons.progression.highlights.done') no-repeat center / cover;
+}
 .LevelCard_border_7c {
     width: 1rem;
     height: 36rem;
-    background: linear-gradient(180deg, rgba(239, 189, 112, 0) 0%, rgba(239, 189, 112, .2) 100%);
+    background: linear-gradient(180deg, rgba(239, 189, 112, 0) 0%, rgba(239, 189, 112, 0.2) 100%);
     position: absolute;
     bottom: 26rem;
     left: 0;
 }
 .LevelCard_border__right_50 {
-        right: 0;
-        left: auto;
-    }
+    right: 0;
+    left: auto;
+}
 .LevelCard_mainRewardContainer_f9 {
     position: absolute;
     top: -66rem;
@@ -2345,8 +2376,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding-right: 80rem;
 }
 
-    .mediaMedium .LevelCards_base_a1 {
-        padding-right: 100rem;
+.mediaMedium .LevelCards_base_a1 {
+    padding-right: 100rem;
 }
 
 .Rewards_base_24 {
@@ -2354,16 +2385,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition: opacity 500ms;
 }
 
-    .Rewards_base__completed_87 {
-        opacity: .5;
-    }
+.Rewards_base__completed_87 {
+    opacity: 0.5;
+}
 
-    .Rewards_base__fast_8f {
-        opacity: .5;
-        transition: none;
-    }
+.Rewards_base__fast_8f {
+    opacity: 0.5;
+    transition: none;
+}
 
-    .Rewards_base_24 {
+.Rewards_base_24 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -2375,14 +2406,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition-delay: 1100ms;
 }
 
-    .Rewards_base__wide_f9 {
-        width: 100%;
-    }
+.Rewards_base__wide_f9 {
+    width: 100%;
+}
 .Rewards_reward_8d {
     margin: 2rem;
 }
 .Rewards_opacity_dd {
-    opacity: .5;
+    opacity: 0.5;
 }
 
 .RewardCard_base_b6 {
@@ -2398,12 +2429,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition: opacity 500ms;
 }
 .RewardCard_background__completed_0f {
-        opacity: .9;
-    }
+    opacity: 0.9;
+}
 .RewardCard_background__fast_ec {
-        opacity: .9;
-        transition: none;
-    }
+    opacity: 0.9;
+    transition: none;
+}
 .RewardCard_background_3b {
     position: absolute;
     top: 0;
@@ -2411,34 +2442,35 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     bottom: 0;
     left: 0;
     margin-top: 2rem;
-    background: url('R.images.historical_battles.gui.maps.icons.progression.highlights.default') no-repeat center / cover;
+    background: url('R.images.historical_battles.gui.maps.icons.progression.highlights.default') no-repeat center /
+        cover;
     opacity: 1;
     transform: scaleY(-1);
     transition-delay: 1100ms;
     pointer-events: none;
 }
 .RewardCard_background__completed_0f {
-        background: url('R.images.historical_battles.gui.maps.icons.progression.highlights.done') no-repeat center / cover;
-    }
+    background: url('R.images.historical_battles.gui.maps.icons.progression.highlights.done') no-repeat center / cover;
+}
 .RewardCard_background__active_44 {
-        background: url('R.images.historical_battles.gui.maps.icons.progression.highlights.active') no-repeat center / cover;
-    }
+    background: url('R.images.historical_battles.gui.maps.icons.progression.highlights.active') no-repeat center / cover;
+}
 .RewardCard_pointsBorder_94 {
     color: #efbd70;
     font-size: 12rem;
     font-weight: 400;
     line-height: 1.3;
-    opacity: .5;
+    opacity: 0.5;
     position: absolute;
     top: 20rem;
     left: 0;
     transform: translateX(-50%);
 }
 .RewardCard_pointsBorder__right_4e {
-        right: 0;
-        left: auto;
-        transform: translateX(50%);
-    }
+    right: 0;
+    left: auto;
+    transform: translateX(50%);
+}
 .RewardCard_pointsContainer_7e {
     display: flex;
     flex-direction: row;
@@ -2449,7 +2481,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translateX(-50%);
 }
 .RewardCard_points_6a {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -2458,23 +2490,24 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .RewardCard_border_0e {
     width: 1rem;
     height: 50%;
-    background: linear-gradient(180deg, rgba(239, 189, 112, .2) 0%, rgba(239, 189, 112, 0) 100%), linear-gradient(180deg, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, rgba(239, 189, 112, 0.2) 0%, rgba(239, 189, 112, 0) 100%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
     position: absolute;
     top: 39rem;
     left: 0;
 }
 .RewardCard_border__right_99 {
-        right: 0;
-        left: auto;
-    }
+    right: 0;
+    left: auto;
+}
 
 .RewardCards_base_eb {
     display: flex;
     padding-right: 80rem;
 }
 
-    .mediaMedium .RewardCards_base_eb {
-        padding-right: 100rem;
+.mediaMedium .RewardCards_base_eb {
+    padding-right: 100rem;
 }
 
 /*
@@ -2514,12 +2547,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition: opacity 500ms;
 }
 .Container_progressWrapper__completed_b5 {
-        opacity: .7;
-    }
+    opacity: 0.7;
+}
 .Container_progressWrapper__fast_d4 {
-        opacity: .7;
-        transition: none;
-    }
+    opacity: 0.7;
+    transition: none;
+}
 .Container_progressWrapper_c4 {
     display: flex;
     margin: -30rem 0;
@@ -2535,20 +2568,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin: -3rem -1rem;
     border-radius: 2rem;
     background: #000;
-    opacity: .5;
+    opacity: 0.5;
 }
 
 .Content_base_a5 {
     display: flex;
     align-items: center;
     opacity: 0;
-    transition: opacity .03s;
+    transition: opacity 0.03s;
 }
 
-    .Content_base__centered_0c,
-    .Content_base__layoutReady_a7 {
-        opacity: 1;
-    }
+.Content_base__centered_0c,
+.Content_base__layoutReady_a7 {
+    opacity: 1;
+}
 .Content_horizontalContent_f9 {
     display: flex;
     flex-direction: column;
@@ -2557,32 +2590,32 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 .mediaMedium .Content_horizontalContent_f9 {
-        margin-top: 35rem;
+    margin-top: 35rem;
 }
 .mediaLarge .Content_horizontalContent_f9 {
-        margin-top: 60rem;
+    margin-top: 60rem;
 }
 .Content_wrapper_63 {
     padding-left: 40rem;
     overflow-x: visible;
 }
 .mediaMedium .Content_wrapper_63 {
-        padding-left: 50rem;
+    padding-left: 50rem;
 }
 .Content_base__centered_0c .Content_wrapper_63 {
-        justify-content: center;
-        margin-left: 10rem;
-    }
+    justify-content: center;
+    margin-left: 10rem;
+}
 .mediaMedium .Content_base__centered_0c .Content_wrapper_63 {
-            margin-left: 40rem;
+    margin-left: 40rem;
 }
 .Content_horizontalBarVerticalScrollBar_66 {
     padding-left: 40rem;
     padding-right: 40rem;
 }
 .mediaMedium .Content_horizontalBarVerticalScrollBar_66 {
-        padding-left: 50rem;
-        padding-right: 50rem;
+    padding-left: 50rem;
+    padding-right: 50rem;
 }
 .Content_progress_d5 {
     height: 13rem;
@@ -2596,32 +2629,32 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: absolute;
 }
 .mediaMedium .Content_progressArea_38 {
-        padding-right: 100rem;
+    padding-right: 100rem;
 }
 
 .ScrollDrag_base_e7 {
     cursor: grab;
 }
 
-    .ScrollDrag_base__grabbing_75 {
-        cursor: move;
-    }
+.ScrollDrag_base__grabbing_75 {
+    cursor: move;
+}
 
 .Progression_base_36 {
     opacity: 1;
     transition: opacity 500ms;
 }
 
-    .Progression_base__completed_7a {
-        opacity: .7;
-    }
+.Progression_base__completed_7a {
+    opacity: 0.7;
+}
 
-    .Progression_base__fast_ce {
-        opacity: .7;
-        transition: none;
-    }
+.Progression_base__fast_ce {
+    opacity: 0.7;
+    transition: none;
+}
 
-    .Progression_base_36 {
+.Progression_base_36 {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -2630,25 +2663,25 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Progression_shadow_f6 {
     width: 445rem;
     height: 876rem;
-    background: radial-gradient(42% 42% at 0% 50.08%, rgba(0, 0, 0, .88) 0%, rgba(0, 0, 0, 0) 100%);
+    background: radial-gradient(42% 42% at 0% 50.08%, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0) 100%);
     opacity: 0;
     position: absolute;
     top: -300rem;
     z-index: 1;
-    transition: opacity .3s ease-in;
+    transition: opacity 0.3s ease-in;
     pointer-events: none;
 }
 .Progression_shadow__left_d0 {
-        left: 0;
-    }
+    left: 0;
+}
 .Progression_shadow__right_6d {
-        right: 0;
-        transform: rotate(180deg);
-    }
+    right: 0;
+    transform: rotate(180deg);
+}
 .Progression_shadow__visible_ff {
-        opacity: 1;
-        transition: opacity .3s ease-out;
-    }
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+}
 
 .HBCoin_base_d8 {
     display: flex;
@@ -2657,165 +2690,173 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .HBCoin_label__defence_a3 {
-        color: #bdfbff;
-    }
+    color: #bdfbff;
+}
 
 .HBCoin_label__counterattack_e6 {
-        color: #FFDD99;
-    }
+    color: #ffdd99;
+}
 
 .HBCoin_label__offence_3e {
-        color: #F2F2F7;
-    }
+    color: #f2f2f7;
+}
 
 .HBCoin_label__counterattackGlow_e3 {
-        text-shadow: 0 0 4rem rgba(255,127,0, .25),
-            0 0 8rem #ff2a00,
-            0 0 15rem #e52;
-    }
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+}
 
 .HBCoin_label__offenceGlow_7c {
-        text-shadow: 0 0 4rem rgba(255,127,0, .25),
-            0 0 8rem #ff2a00,
-            0 0 15rem #e52;
-    }
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+}
 
 .HBCoin_label__defenceGlow_78 {
-        text-shadow: 0 0 4rem rgba(0,31,185, .25),
-            0 0 8rem #0075ff,
-            0 0 15rem #00c2ff;
-    }
+    text-shadow:
+        0 0 4rem rgba(0, 31, 185, 0.25),
+        0 0 8rem #0075ff,
+        0 0 15rem #00c2ff;
+}
 
 .HBCoin_label_7f {
     text-shadow: none;
 }
 
 .HBCoin_label__animated_82 {
-        transition: text-shadow .2s, font-size .2s ease-out;
-    }
+    transition:
+        text-shadow 0.2s,
+        font-size 0.2s ease-out;
+}
 
 .HBCoin_label__notEnough_0e {
-        color: #FF2717;
-    }
+    color: #ff2717;
+}
 
 .HBCoin_label__sizeP14_c0 {
-        color: #8C8C7E;
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
-        padding-bottom: 2rem;
-    }
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-bottom: 2rem;
+}
 
 .HBCoin_label__sizeH15_73 {
-        color: #E9E2BF;
-        font-size: 15rem;
-        font-weight: 700;
-        line-height: 1.15;
-        padding-bottom: 2rem;
-    }
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    padding-bottom: 2rem;
+}
 
 .HBCoin_label__sizeH18_f6 {
-        color: #FFDD99;
-        font-size: 18rem;
-        font-weight: 700;
-        line-height: 1.1;
-        padding-bottom: 4rem;
-    }
+    color: #ffdd99;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding-bottom: 4rem;
+}
 
 .HBCoin_label__sizeH22_9c {
-        color: #CED9D9;
-        font-size: 22rem;
-        font-weight: 700;
-        line-height: 1.2;
-        padding-bottom: 3rem;
-    }
+    color: #ced9d9;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    padding-bottom: 3rem;
+}
 
 .HBCoin_label__sizeH24_b0 {
-        color: #FFDD99;
-        font-size: 24rem;
-        font-weight: 700;
-        line-height: 1.2;
-        padding-bottom: 5rem;
-    }
+    color: #ffdd99;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    padding-bottom: 5rem;
+}
 
 .HBCoin_label__sizeH28_6d {
-        color: #F2F2F7;
-        font-size: 28rem;
-        font-weight: 700;
-        line-height: 1.1;
-        padding-bottom: 5rem;
-    }
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding-bottom: 5rem;
+}
 
 .HBCoin_label__sizeH36_10 {
-        color: #F2F2F7;
-        font-size: 36rem;
-        font-weight: 700;
-        line-height: 1.1;
-        padding-bottom: 7rem;
-    }
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding-bottom: 7rem;
+}
 
 .HBCoin_label__sizeH42_4f {
-        padding-bottom: 7rem;
-        font-size: 42rem;
-        font-weight: 700;
-        line-height: 1.1;
-    }
+    padding-bottom: 7rem;
+    font-size: 42rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
 
 .HBCoin_label__sizeH56_88 {
-        padding-bottom: 7rem;
-        font-size: 56rem;
-        font-weight: 700;
-        line-height: 1.1;
-    }
+    padding-bottom: 7rem;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
 
 .HBCoin_label__sizeH73_c1 {
-        color: #F2F2F7;
-        font-size: 73rem;
-        font-weight: 700;
-        line-height: 1.1;
-        padding-bottom: 16rem;
-    }
+    color: #f2f2f7;
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding-bottom: 16rem;
+}
 
 .HBCoin_label__progression_08 {
-        color: #FFDD99;
-    }
+    color: #ffdd99;
+}
 
 .HBCoin_icon_27 {
     background: no-repeat 50% / contain;
 }
 
 .HBCoin_icon__animated_17 {
-        transition: width  .2s linear, height .2s linear, margin-left .2s;
-    }
+    transition:
+        width 0.2s linear,
+        height 0.2s linear,
+        margin-left 0.2s;
+}
 
 .HBCoin_icon__size16x16_6b {
-        width: 16rem;
-        height: 16rem;
-        margin-left: 3rem;
-    }
+    width: 16rem;
+    height: 16rem;
+    margin-left: 3rem;
+}
 
 .HBCoin_icon__size24x24_35 {
-        width: 24rem;
-        height: 24rem;
-        margin-left: 3rem;
-    }
+    width: 24rem;
+    height: 24rem;
+    margin-left: 3rem;
+}
 
 .HBCoin_icon__size32x32_70 {
-        width: 32rem;
-        height: 32rem;
-        margin-left: 5rem;
-    }
+    width: 32rem;
+    height: 32rem;
+    margin-left: 5rem;
+}
 
 .HBCoin_icon__size48x48_42 {
-        width: 48rem;
-        height: 48rem;
-        margin-left: 10rem;
-    }
+    width: 48rem;
+    height: 48rem;
+    margin-left: 10rem;
+}
 
 .HBCoin_icon__size134x134_4d {
-        width: 134rem;
-        height: 134rem;
-    }
+    width: 134rem;
+    height: 134rem;
+}
 
 .HBCoin_stockBg_25 {
     width: 80rem;
@@ -2828,15 +2869,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .HBCoin_stockBg__sizeH18_9b {
-        bottom: -12rem;
-    }
+    bottom: -12rem;
+}
 
 .HBCoin_stockBg__sizeH22_5a {
-        bottom: -11rem;
-    }
+    bottom: -11rem;
+}
 
 .mediaExtraLarge .HBCoin_stockBg_25 {
-        bottom: -10rem;
+    bottom: -10rem;
 }
 
 body {
@@ -2851,7 +2892,7 @@ body {
     background-color: #000;
     position: relative;
     animation-name: App_windowIn_8e;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: both;
 }
 .App_bgContainer_f4 {
@@ -2870,11 +2911,12 @@ body {
     background: url('R.images.historical_battles.gui.maps.icons.backgrounds.progression_bg') no-repeat 40% 50% / cover;
 }
 .mediaSmall .App_bg_40 {
-        background: url('R.images.historical_battles.gui.maps.icons.backgrounds.progression_bg') no-repeat center / cover;
+    background: url('R.images.historical_battles.gui.maps.icons.backgrounds.progression_bg') no-repeat center / cover;
 }
 .App_base__finished_2d .App_bg_40 {
-        background: url('R.images.historical_battles.gui.maps.icons.backgrounds.progression_bg_finished') no-repeat center / cover;
-    }
+    background: url('R.images.historical_battles.gui.maps.icons.backgrounds.progression_bg_finished') no-repeat center /
+        cover;
+}
 .App_desk_56 {
     width: 95vh;
     height: 95vh;
@@ -2886,12 +2928,12 @@ body {
     bottom: 0;
 }
 .mediaSmall .App_desk_56 {
-        width: 100vh;
-        height: 100vh;
-        right: 40rem;
+    width: 100vh;
+    height: 100vh;
+    right: 40rem;
 }
 .mediaLarge .App_desk_56 {
-        right: 70rem;
+    right: 70rem;
 }
 .App_vignette_11 {
     position: absolute;
@@ -2900,7 +2942,7 @@ body {
     bottom: 0;
     left: 0;
     background: url('R.images.historical_battles.gui.maps.icons.backgrounds.vignette') no-repeat 50% / 100%;
-    opacity: .8;
+    opacity: 0.8;
 }
 .App_bottomShadow_b3 {
     position: absolute;
@@ -2908,8 +2950,14 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 36%, rgba(0, 0, 0, .39) 45%, rgba(0, 0, 0, .8) 60%, rgba(0, 0, 0, 1) 100%);
-    opacity: .8;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 36%,
+        rgba(0, 0, 0, 0.39) 45%,
+        rgba(0, 0, 0, 0.8) 60%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    opacity: 0.8;
 }
 .App_buttonClose_0a {
     position: absolute;
@@ -2945,14 +2993,14 @@ body {
     bottom: 0;
 }
 .mediaMedium .App_mainContent_b7 {
-        margin-top: 4rem;
-        padding-top: 0;
+    margin-top: 4rem;
+    padding-top: 0;
 }
 .App_battleQuests_59 {
     z-index: 2;
 }
 .mediaExtraLarge .App_battleQuests_59 {
-        margin: 46rem;
+    margin: 46rem;
 }
 @keyframes App_windowIn_8e {
     from {
@@ -2976,4 +3024,3 @@ body {
     height: 100%;
     overflow: hidden;
 }
-

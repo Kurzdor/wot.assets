@@ -4,12 +4,12 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .Content_base_d9 {
     display: flex;
@@ -26,8 +26,8 @@
 }
 
 .Content_base__unreceived_ef .Content_image_65 {
-        display: none;
-    }
+    display: none;
+}
 
 .Content_titleBase_aa {
     display: flex;
@@ -40,16 +40,16 @@
 }
 
 .Content_title_69 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
     text-align: center;
-    opacity: .5;
+    opacity: 0.5;
 }
 
 .Content_itemName_a1 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
@@ -64,8 +64,8 @@
 }
 
 .Content_base__unreceived_ef .Content_separator__hidden_7f {
-            display: none;
-        }
+    display: none;
+}
 
 .Content_status_16 {
     display: flex;
@@ -73,14 +73,15 @@
     align-items: center;
     width: 100%;
     height: 40rem;
-    background: url('R.images.gui.maps.icons.collections.tooltips.status_background_received') center / contain no-repeat;
+    background: url('R.images.gui.maps.icons.collections.tooltips.status_background_received') center / contain
+        no-repeat;
 }
 
 .Content_base__unreceived_ef .Content_status_16 {
-        height: 70rem;
-        padding-bottom: 23rem;
-        background-image: url('R.images.gui.maps.icons.collections.tooltips.status_background_unreceived');
-    }
+    height: 70rem;
+    padding-bottom: 23rem;
+    background-image: url('R.images.gui.maps.icons.collections.tooltips.status_background_unreceived');
+}
 
 .Content_statusImage_4a {
     width: 36rem;
@@ -89,11 +90,11 @@
 }
 
 .Content_base__unreceived_ef .Content_statusImage_4a {
-        background-image: url('R.images.gui.maps.icons.collections.tooltips.status_icon_unreceived');
-    }
+    background-image: url('R.images.gui.maps.icons.collections.tooltips.status_icon_unreceived');
+}
 
 .Content_statusTitle_50 {
-    color: #80D43A;
+    color: #80d43a;
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
@@ -101,14 +102,14 @@
 }
 
 .Content_base__unreceived_ef .Content_statusTitle_50 {
-        color: #FFDD99;
-        font-size: 14rem;
-        font-weight: 700;
-        line-height: 1.15;
-    }
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
 
 .Content_description_00 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -119,6 +120,5 @@
 }
 
 .Content_base__unreceived_ef .Content_description_00 {
-        display: inline;
-    }
-
+    display: inline;
+}

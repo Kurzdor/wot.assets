@@ -4,12 +4,12 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .App_base_7b {
     display: flex;
@@ -18,26 +18,26 @@
     padding-right: 6rem;
 }
 
-    .App_base__disabled_e1 {
-        display: flex;
-        align-items: center;
-        width: 270rem;
-        height: 65rem;
-        padding: 12rem;
-        color: #8C8C7E;
-    }
+.App_base__disabled_e1 {
+    display: flex;
+    align-items: center;
+    width: 270rem;
+    height: 65rem;
+    padding: 12rem;
+    color: #8c8c7e;
+}
 
 .App_reserveBlock_dc {
     display: flex;
 }
 
 .App_reserveBlock_clan_31 {
-        margin-left: 6rem;
-    }
+    margin-left: 6rem;
+}
 
 .App_reserveBlock__disabled_f3 {
-        filter: saturate(0);
-    }
+    filter: saturate(0);
+}
 
 .App_tooltipSlot_cd {
     margin-right: 10rem;
@@ -52,57 +52,57 @@
     width: 100rem;
     height: 100rem;
     padding: 1rem;
-    border: 1rem solid rgba(255, 255, 255, .15);
+    border: 1rem solid rgba(255, 255, 255, 0.15);
     border-radius: 2rem;
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, 0.4);
     position: relative;
 }
 
-    .TooltipSlot_base__clan_3e .TooltipSlot_fillPattern_9d {
-            background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_green_medium') center center / cover;
-        }
+.TooltipSlot_base__clan_3e .TooltipSlot_fillPattern_9d {
+    background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_green_medium') center center / cover;
+}
 
-    .TooltipSlot_base__clan_3e .TooltipSlot_cardFill_3b {
-            border: 1rem solid #496019;
-        }
+.TooltipSlot_base__clan_3e .TooltipSlot_cardFill_3b {
+    border: 1rem solid #496019;
+}
 
-    .TooltipSlot_base__clan_3e .TooltipSlot_activeLight_85 {
-            background: url('R.images.gui.maps.icons.personal_reserves.activated_light_clan') center center / cover;
-        }
+.TooltipSlot_base__clan_3e .TooltipSlot_activeLight_85 {
+    background: url('R.images.gui.maps.icons.personal_reserves.activated_light_clan') center center / cover;
+}
 
-    .TooltipSlot_base__clan_3e .TooltipSlot_timerIcon_ac {
-            background: url('R.images.gui.maps.icons.personal_reserves.icon_timer_clan_tooltip') center center / cover;
-        }
+.TooltipSlot_base__clan_3e .TooltipSlot_timerIcon_ac {
+    background: url('R.images.gui.maps.icons.personal_reserves.icon_timer_clan_tooltip') center center / cover;
+}
 
-    .TooltipSlot_base__event_80 .TooltipSlot_fillPattern_9d {
-            background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_orange_medium') center center / cover;
-        }
+.TooltipSlot_base__event_80 .TooltipSlot_fillPattern_9d {
+    background: url('R.images.gui.maps.icons.personal_reserves.bg_fill_orange_medium') center center / cover;
+}
 
-    .TooltipSlot_base__event_80 .TooltipSlot_cardFill_3b {
-            border: 1rem solid #98752f;
-        }
+.TooltipSlot_base__event_80 .TooltipSlot_cardFill_3b {
+    border: 1rem solid #98752f;
+}
 
-    .TooltipSlot_base__event_80 .TooltipSlot_activeLight_85 {
-            background: url('R.images.gui.maps.icons.personal_reserves.activated_light_event') center center / cover;
-        }
+.TooltipSlot_base__event_80 .TooltipSlot_activeLight_85 {
+    background: url('R.images.gui.maps.icons.personal_reserves.activated_light_event') center center / cover;
+}
 
-    .TooltipSlot_base__event_80 .TooltipSlot_timerIcon_ac {
-            background: url('R.images.gui.maps.icons.personal_reserves.icon_timer_event_tooltip') center center / cover;
-        }
+.TooltipSlot_base__event_80 .TooltipSlot_timerIcon_ac {
+    background: url('R.images.gui.maps.icons.personal_reserves.icon_timer_event_tooltip') center center / cover;
+}
 
-    .TooltipSlot_base__inactive_24 {
-        border: 1rem solid rgba(255, 255, 255, .1);
-        background: rgba(255, 255, 255, .02);
-    }
+.TooltipSlot_base__inactive_24 {
+    border: 1rem solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+}
 
-    .TooltipSlot_base__inactive_24 .TooltipSlot_boosterIcon_b0 {
-            opacity: .5;
-        }
+.TooltipSlot_base__inactive_24 .TooltipSlot_boosterIcon_b0 {
+    opacity: 0.5;
+}
 
-    .TooltipSlot_base__inactive_24.TooltipSlot_base__clan_3e {
-            background: url('R.images.gui.maps.icons.personal_reserves.clan_icon') no-repeat center center / contain;
-            background-size: 35rem 50rem;
-        }
+.TooltipSlot_base__inactive_24.TooltipSlot_base__clan_3e {
+    background: url('R.images.gui.maps.icons.personal_reserves.clan_icon') no-repeat center center / contain;
+    background-size: 35rem 50rem;
+}
 
 .TooltipSlot_boosterIcon_b0 {
     width: 80rem;
@@ -122,7 +122,7 @@
 }
 
 .TooltipSlot_boosterCount_fb {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -145,20 +145,20 @@
 }
 
 .TooltipSlot_cardFill_borderGradient_7e {
-        width: 100rem;
-        height: 100rem;
-        border-image: linear-gradient(
-            to right,
-            rgba(255, 255, 255, .2) 0%,
-            rgba(255, 255, 255, 0) 50%,
-            rgba(255, 255, 255, .2) 100%
-        );
-        border-image-slice: 1;
-        border-image-width: 1rem;
-        position: absolute;
-        top: -1rem;
-        left: -1rem;
-    }
+    width: 100rem;
+    height: 100rem;
+    border-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 255, 255, 0.2) 100%
+    );
+    border-image-slice: 1;
+    border-image-width: 1rem;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+}
 
 .TooltipSlot_fillPattern_9d {
     width: 100%;
@@ -167,7 +167,7 @@
 }
 
 .TooltipSlot_timer_9b {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
@@ -189,7 +189,7 @@
 }
 
 .TooltipSlot_multiplier_7f {
-    color: #FEFEEC;
+    color: #fefeec;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -210,22 +210,22 @@
 }
 
 .TooltipSlot_activeLight_border_19 {
-        width: 100rem;
-        height: 1rem;
-        border-image: linear-gradient(
-            to right,
-            rgba(255, 255, 255, 0) 0%,
-            rgba(255, 255, 255, .2) 40%,
-            rgba(255, 255, 255, 1) 50%,
-            rgba(255, 255, 255, .2) 60%,
-            rgba(255, 255, 255, 0) 100%
-        );
-        border-image-slice: 1;
-        border-image-width: 1rem;
-        position: absolute;
-        top: -1rem;
-        left: 0;
-    }
+    width: 100rem;
+    height: 1rem;
+    border-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 40%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0.2) 60%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    border-image-slice: 1;
+    border-image-width: 1rem;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+}
 
 .TooltipSlot_paidHighlight_07 {
     width: 64rem;
@@ -234,12 +234,11 @@
     border-image-slice: 1;
     background: radial-gradient(
         circle at top right,
-        rgba(255, 195, 99, .4) 0%,
-        rgba(255, 195, 99, .1) 50%,
+        rgba(255, 195, 99, 0.4) 0%,
+        rgba(255, 195, 99, 0.1) 50%,
         rgba(255, 195, 99, 0) 100%
     );
     position: absolute;
     top: -1rem;
     right: -1rem;
 }
-

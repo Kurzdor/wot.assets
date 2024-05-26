@@ -4,34 +4,36 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .Column_base_a8 {
     flex: 1 1 auto;
     position: relative;
 }
 
-    .Column_base__notFirstColumn_74::after {
-            width: 1rem;
-            height: 100%;
-            background: linear-gradient(to bottom, transparent 50%, rgba(18, 17, 11, 1) 50%),
-                linear-gradient(180deg, #c9c9b6 100%);
-            background-size: 4rem 3rem, 100% 100%;
-            opacity: .2;
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 10;
-        }
+.Column_base__notFirstColumn_74::after {
+    width: 1rem;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, rgba(18, 17, 11, 1) 50%),
+        linear-gradient(180deg, #c9c9b6 100%);
+    background-size:
+        4rem 3rem,
+        100% 100%;
+    opacity: 0.2;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
 
 .Column_battleType_38 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
@@ -52,16 +54,18 @@
     height: 1rem;
     background: linear-gradient(to right, transparent 50%, rgba(18, 17, 11, 1) 50%),
         linear-gradient(270deg, #c9c9b6 0%, #12110b 100%);
-    background-size: 3rem 2rem, 100% 100%;
-    opacity: .2;
+    background-size:
+        3rem 2rem,
+        100% 100%;
+    opacity: 0.2;
     position: relative;
     z-index: 1;
 }
 
 .Column_base__notFirstColumn_74 .Column_separator_99 {
-        background-image: linear-gradient(to left, transparent 50%, rgba(18, 17, 11, 1) 50%),
-            linear-gradient(90deg, #c9c9b6 0%, #12110b 100%);
-    }
+    background-image: linear-gradient(to left, transparent 50%, rgba(18, 17, 11, 1) 50%),
+        linear-gradient(90deg, #c9c9b6 0%, #12110b 100%);
+}
 
 .Column_row_97 {
     display: flex;
@@ -73,8 +77,8 @@
 }
 
 .Column_row__last_4d {
-        margin-bottom: 6rem;
-    }
+    margin-bottom: 6rem;
+}
 
 .Column_pointContainer_30 {
     display: flex;
@@ -83,7 +87,7 @@
 }
 
 .Column_point_1b {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -91,7 +95,7 @@
 }
 
 .Column_place_90 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -101,11 +105,12 @@
     width: 16rem;
     height: 16rem;
     margin-top: 1rem;
-    background: url('R.images.battle_royale_progression.gui.maps.progression.token_battle_royale') no-repeat center / cover;
+    background: url('R.images.battle_royale_progression.gui.maps.progression.token_battle_royale') no-repeat center /
+        cover;
 }
 
 .Column_dash_3c {
-    color: #FFDD99;
+    color: #ffdd99;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -147,26 +152,28 @@
     background: url('R.images.battle_royale.gui.maps.tooltips.schedule_bg') no-repeat center / cover;
 }
 
-    .Schedule_base_f8::after,
-    .Schedule_base_f8::before {
-        width: 100%;
-        height: 1rem;
-        background: linear-gradient(to right, transparent 50%, rgba(18, 17, 11, 1) 50%),
-                 linear-gradient(270deg, #12110b 0%, #c9c9b6 50%, #12110b 100%);
-        background-size: 3rem 2rem, 100% 100%;
-        opacity: .2;
-        content: '';
-        position: relative;
-        left: 0;
-    }
+.Schedule_base_f8::after,
+.Schedule_base_f8::before {
+    width: 100%;
+    height: 1rem;
+    background: linear-gradient(to right, transparent 50%, rgba(18, 17, 11, 1) 50%),
+        linear-gradient(270deg, #12110b 0%, #c9c9b6 50%, #12110b 100%);
+    background-size:
+        3rem 2rem,
+        100% 100%;
+    opacity: 0.2;
+    content: '';
+    position: relative;
+    left: 0;
+}
 
-    .Schedule_base_f8::after {
-        bottom: 0;
-    }
+.Schedule_base_f8::after {
+    bottom: 0;
+}
 
-    .Schedule_base_f8::before {
-        top: 0;
-    }
+.Schedule_base_f8::before {
+    top: 0;
+}
 
 .Schedule_container_28 {
     margin: 10rem 0;
@@ -185,7 +192,7 @@
 }
 
 .Schedule_text_83 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -201,7 +208,7 @@
 }
 
 .Schedule_period_6e {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -210,14 +217,14 @@
 }
 
 .Schedule_period__today_17 {
-        color: #E9E2BF;
-        font-size: 14rem;
-        font-weight: 400;
-        line-height: 1.3;
-    }
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
 
 .Schedule_description_83 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -240,32 +247,32 @@
 .Footer_icon_4d {
     width: 16rem;
     height: 16rem;
-    margin-top: .4rem;
+    margin-top: 0.4rem;
     margin-right: 5rem;
     background: no-repeat center / cover;
 }
 
 .Footer_base__high_74 .Footer_icon_4d {
-        background-image: url('R.images.gui.maps.icons.library.CancelIcon_1');
-    }
+    background-image: url('R.images.gui.maps.icons.library.CancelIcon_1');
+}
 
 .Footer_base__medium_6a .Footer_icon_4d {
-        background-image: url('R.images.gui.maps.icons.library.alertIcon');
-    }
+    background-image: url('R.images.gui.maps.icons.library.alertIcon');
+}
 
 .Footer_base__low_f3 .Footer_icon_4d {
-        background-image: url('R.images.gui.maps.icons.library.attentionIcon1');
-    }
+    background-image: url('R.images.gui.maps.icons.library.attentionIcon1');
+}
 
 .Footer_text_45 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
 .Footer_description_4a {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -281,18 +288,19 @@
     width: 100%;
     height: 80rem;
     padding: 20rem 0;
-    background: url('R.images.gui.maps.icons.battleRoyale.backgrounds.widget_tooltip_background') no-repeat center/ cover;
+    background: url('R.images.gui.maps.icons.battleRoyale.backgrounds.widget_tooltip_background') no-repeat center/
+        cover;
     position: relative;
 }
 
 .Header_base__completed_39 .Header_completedIcon_4f {
-        width: 250rem;
-        height: 79rem;
-        background: url('R.images.battle_royale.gui.maps.tooltips.check_mark') no-repeat center/ cover;
-        position: absolute;
-        top: 28rem;
-        left: 45rem;
-    }
+    width: 250rem;
+    height: 79rem;
+    background: url('R.images.battle_royale.gui.maps.tooltips.check_mark') no-repeat center/ cover;
+    position: absolute;
+    top: 28rem;
+    left: 45rem;
+}
 
 .Header_description_b1 {
     width: 318rem;
@@ -300,26 +308,26 @@
 }
 
 .Header_base__completed_39 .Header_description_b1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: -10rem;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -10rem;
+}
 
 .Header_subtitle_33 {
     display: none;
 }
 
 .Header_base__completed_39 .Header_subtitle_33 {
-        display: block;
-        color: #FEFEEC;
-        font-size: 15rem;
-        font-weight: 700;
-        line-height: 1.15;
-    }
+    display: block;
+    color: #fefeec;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
 
 .Header_title_62 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
@@ -327,13 +335,12 @@
 }
 
 .Header_text_23 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
 .Header_base__completed_39 .Header_text_23 {
-        text-align: center;
-    }
-
+    text-align: center;
+}

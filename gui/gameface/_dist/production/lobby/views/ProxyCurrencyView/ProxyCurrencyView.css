@@ -21,18 +21,18 @@
     width: 260rem;
     height: 66rem;
     background: url('R.images.gui.maps.icons.battleRoyale.hangar.storeBg') no-repeat center / cover;
-    opacity: .7;
+    opacity: 0.7;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
-    transition: opacity .2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .App_currency_29:hover + .App_background_0f,
-    .App_background_0f:hover {
-        opacity: 1;
-    }
+.App_background_0f:hover {
+    opacity: 1;
+}
 
 .App_currency_29 {
     display: flex;
@@ -43,7 +43,7 @@
 }
 
 .App_value_b4 {
-    color: #CED9D9;
+    color: #ced9d9;
     font-size: 22rem;
     font-weight: 700;
     line-height: 1.2;
@@ -58,7 +58,7 @@
 }
 
 .App_link_2e {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
@@ -68,10 +68,9 @@
     padding-right: 16rem;
     position: relative;
     z-index: 2;
-    transition: text-shadow .2s ease-in-out;
+    transition: text-shadow 0.2s ease-in-out;
 }
 
 .App_link_2e:hover {
-        text-shadow: 0 0 14rem #f00;
-    }
-
+    text-shadow: 0 0 14rem #f00;
+}

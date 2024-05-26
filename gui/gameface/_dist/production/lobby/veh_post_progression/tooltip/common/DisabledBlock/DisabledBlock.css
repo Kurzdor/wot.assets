@@ -3,7 +3,7 @@
 }
 
 .DisabledBlock_warningTitle_e9 {
-    color: #EE7000;
+    color: #ee7000;
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
@@ -17,4 +17,3 @@
     margin-right: 5rem;
     background: url('R.images.gui.maps.icons.library.alertIcon') no-repeat 50% / contain;
 }
-

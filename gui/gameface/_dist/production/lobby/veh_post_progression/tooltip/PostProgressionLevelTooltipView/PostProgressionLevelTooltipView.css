@@ -11,7 +11,7 @@
 }
 
 .Content_base_21 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -22,7 +22,7 @@
 }
 
 .Content_title_d8 {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
@@ -38,11 +38,11 @@
 }
 
 .Content_accent_9e {
-    color: #FFDD99;
+    color: #ffdd99;
 }
 
 .Content_unit_53 {
-    color: #80D43A;
+    color: #80d43a;
 }
 
 .TooltipDecorator_base_c9 {
@@ -51,10 +51,9 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
-
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}

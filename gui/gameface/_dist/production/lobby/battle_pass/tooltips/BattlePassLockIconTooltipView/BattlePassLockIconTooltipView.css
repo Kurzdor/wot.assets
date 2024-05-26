@@ -26,26 +26,26 @@
     line-height: normal;
 }
 .Content_title_3c {
-    color: #F2F2F7;
+    color: #f2f2f7;
     font-size: 24rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 15rem;
-    letter-spacing: .6rem;
+    letter-spacing: 0.6rem;
 }
 .Content_description1_09 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
-    letter-spacing: .3rem;
+    letter-spacing: 0.3rem;
 }
 .Content_description2_d4 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
-    letter-spacing: .3rem;
+    letter-spacing: 0.3rem;
     margin-top: 20rem;
 }
 
@@ -55,10 +55,9 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
-
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}

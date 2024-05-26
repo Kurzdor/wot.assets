@@ -4,12 +4,12 @@
 }
 
 .TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
-        padding: 4rem 6rem 8rem;
-        border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
-        border-image-slice: 24 fill;
-        border-image-width: 24rem;
-        position: relative;
-    }
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
 
 .FormatText_base_d0 {
     display: flex;
@@ -17,19 +17,25 @@
 }
 
 .HbSpecialVehiclesTooltipApp_base_cd {
-    border: 1rem solid rgba(242,242,230, .1);
+    border: 1rem solid rgba(242, 242, 230, 0.1);
     background-color: #12110b;
 }
 
 .HbSpecialVehiclesTooltipApp_content_49 {
     padding: 14rem 18rem;
-    background: linear-gradient(180deg, rgba(51,51,41, .3) 0%, rgba(51,51,41, 0) 15.5%, rgba(51,51,41, 0) 88%, rgba(51,51,41, .1) 100%);
+    background: linear-gradient(
+        180deg,
+        rgba(51, 51, 41, 0.3) 0%,
+        rgba(51, 51, 41, 0) 15.5%,
+        rgba(51, 51, 41, 0) 88%,
+        rgba(51, 51, 41, 0.1) 100%
+    );
     width: 392rem;
     padding: 16rem 20rem 20rem;
 }
 
 .HbSpecialVehiclesTooltipApp_header_6e {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
@@ -38,7 +44,7 @@
 
 .HbSpecialVehiclesTooltipApp_description_e3,
 .HbSpecialVehiclesTooltipApp_footer_00 {
-    color: #8C8C7E;
+    color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -52,14 +58,14 @@
 }
 
 .HbSpecialVehiclesTooltipApp_highlightedSilver_af {
-    color: #E9E2BF;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
 .HbSpecialVehiclesTooltipApp_highlightedGold_61 {
-    color: #FFC363;
+    color: #ffc363;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -78,13 +84,13 @@
     position: relative;
 }
 
-    .ExtendedText_base__zeroPadding_25 {
-        padding: 0;
-    }
+.ExtendedText_base__zeroPadding_25 {
+    padding: 0;
+}
 
-    .ExtendedText_base__isTruncationAvailable_5b {
-        width: 100%;
-    }
+.ExtendedText_base__isTruncationAvailable_5b {
+    width: 100%;
+}
 
 .ExtendedText_truncated_97 {
     display: flex;
@@ -94,8 +100,8 @@
 }
 
 .ExtendedText_truncated__hide_31 {
-        opacity: 0;
-    }
+    opacity: 0;
+}
 
 .ExtendedText_unTruncated_b8 {
     display: flex;
@@ -106,7 +112,7 @@
     height: 100%;
     justify-content: flex-start;
     align-content: flex-start;
-    color: #FF2717;
+    color: #ff2717;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -119,23 +125,23 @@
 }
 
 .colors_whiteReal_31 {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .colors_white_45 {
-    color: #F2F2F7;
+    color: #f2f2f7;
 }
 
 .colors_whiteOrange_81 {
-    color: #FEFEEC;
+    color: #fefeec;
 }
 
 .colors_whiteSpanish_c3 {
-    color: #E9E2BF;
+    color: #e9e2bf;
 }
 
 .colors_par_5b {
-    color: #8C8C7E;
+    color: #8c8c7e;
 }
 
 .colors_parSecondary_fd {
@@ -143,39 +149,39 @@
 }
 
 .colors_parTertiary_97 {
-    color: #37362E;
+    color: #37362e;
 }
 
 .colors_red_79 {
-    color: #FF2717;
+    color: #ff2717;
 }
 
 .colors_redDark_73 {
-    color: #B70000;
+    color: #b70000;
 }
 
 .colors_yellow_76 {
-    color: #FEAB34;
+    color: #feab34;
 }
 
 .colors_orange_cd {
-    color: #EE7000;
+    color: #ee7000;
 }
 
 .colors_cream_0f {
-    color: #FFDD99;
+    color: #ffdd99;
 }
 
 .colors_brown_82 {
-    color: #CBAC77;
+    color: #cbac77;
 }
 
 .colors_greenBright_68 {
-    color: #80D43A;
+    color: #80d43a;
 }
 
 .colors_green_fa {
-    color: #7AB300;
+    color: #7ab300;
 }
 
 .colors_greenDark_a9 {
@@ -183,27 +189,27 @@
 }
 
 .colors_blueBooster_26 {
-    color: #CCFFFF;
+    color: #ccffff;
 }
 
 .colors_blueTeamkiller_86 {
-    color: #09E2FF;
+    color: #09e2ff;
 }
 
 .colors_cred_35 {
-    color: #CED9D9;
+    color: #ced9d9;
 }
 
 .colors_gold_c3 {
-    color: #FFC363;
+    color: #ffc363;
 }
 
 .colors_bond_ce {
-    color: #C9C9B6;
+    color: #c9c9b6;
 }
 
 .colors_prom_83 {
-    color: #A29B70;
+    color: #a29b70;
 }
 
 .renderers_noBreakWrapper_10 {
@@ -220,4 +226,3 @@
     flex: 1;
     width: 100%;
 }
-
