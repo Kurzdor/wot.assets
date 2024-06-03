@@ -157,7 +157,7 @@
                             (e.ghost = 'ghost');
                     })(n || (n = {})),
                     (function (e) {
-                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium');
+                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium'), (e.large = 'large');
                     })(a || (a = {}));
             },
             9987: (e, t, u) => {
@@ -415,7 +415,7 @@
                         i(
                             {
                                 ref: v,
-                                onClick:
+                                onMouseDown:
                                     ((b = E.props.onClick),
                                     (e) => {
                                         p && (A(), _ && _(e), b && b(e));
@@ -1415,9 +1415,9 @@
                 u.d(t, { N: () => r });
                 var n = u(4483),
                     a = u(6179);
-                function r(e, t, u) {
-                    const r = (0, a.useMemo)(() => (0, n.Z)(u, e), t);
-                    return (0, a.useEffect)(() => r.cancel, [r]), r;
+                function r(e, t, u, r = !1) {
+                    const s = (0, a.useMemo)(() => (0, n.Z)(u, r, e), t);
+                    return (0, a.useEffect)(() => s.cancel, [s]), s;
                 }
             },
             2133: (e, t, u) => {
@@ -4669,8 +4669,8 @@
                     m = s().memo(function ({ from: e, to: t, className: u }) {
                         return s().createElement(
                             'div',
-                            { className: a()(o, 0 === e && i, u) },
-                            s().createElement('div', { className: a()(l, 0 === e && t > 0 && c) }, e),
+                            { className: a()(o, e <= 0 && i, u) },
+                            s().createElement('div', { className: a()(l, e <= 0 && t > 0 && c) }, e),
                             e !== t &&
                                 s().createElement(
                                     s().Fragment,
@@ -5809,6 +5809,7 @@
                     base__extraSmall: 'CButton_base__extraSmall_27',
                     base__small: 'CButton_base__small_df',
                     base__medium: 'CButton_base__medium_74',
+                    base__large: 'CButton_base__large_5c',
                     base__disabled: 'CButton_base__disabled_d9',
                     back: 'CButton_back_e5',
                     texture: 'CButton_texture_fe',

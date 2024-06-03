@@ -20,8 +20,8 @@
                     soundClick: v,
                     onMouseEnter: E,
                     onMouseMove: h,
-                    onMouseDown: m,
-                    onMouseUp: b,
+                    onMouseDown: b,
+                    onMouseUp: m,
                     onMouseLeave: w,
                     onClick: p,
                 }) => {
@@ -64,15 +64,15 @@
                         ),
                         B = (0, r.useCallback)(
                             (e) => {
-                                d || (b && b(e), C(!1));
+                                d || (m && m(e), C(!1));
                             },
-                            [d, b],
+                            [d, m],
                         ),
                         F = (0, r.useCallback)(
                             (e) => {
-                                d || (null !== v && (0, o.G)(v), m && m(e), n && S(), C(!0));
+                                d || (null !== v && (0, o.G)(v), b && b(e), n && S(), C(!0));
                             },
-                            [d, v, m, S, n],
+                            [d, v, b, S, n],
                         ),
                         U = (0, r.useCallback)(
                             (e) => {
@@ -155,7 +155,7 @@
                             (e.ghost = 'ghost');
                     })(i || (i = {})),
                     (function (e) {
-                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium');
+                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium'), (e.large = 'large');
                     })(a || (a = {}));
             },
             6373: (e, t, n) => {
@@ -330,12 +330,12 @@
                         freezeTextureBeforeResize: () => h,
                         getBrowserTexturePath: () => c,
                         getDisplayStatus: () => k,
-                        getScale: () => m,
+                        getScale: () => b,
                         getSize: () => u,
                         getViewGlobalPosition: () => E,
                         isEventHandled: () => O,
                         isFocused: () => g,
-                        pxToRem: () => b,
+                        pxToRem: () => m,
                         remToPx: () => w,
                         resize: () => v,
                         sendEvent: () => r.qP,
@@ -377,10 +377,10 @@
                 function h() {
                     viewEnv.freezeTextureBeforeResize();
                 }
-                function m() {
+                function b() {
                     return viewEnv.getScale();
                 }
-                function b(e) {
+                function m(e) {
                     return viewEnv.pxToRem(e);
                 }
                 function w(e) {
@@ -635,7 +635,7 @@
                 const __WEBPACK_DEFAULT_EXPORT__ = ViewModel;
             },
             9916: (e, t, n) => {
-                n.d(t, { ry: () => b });
+                n.d(t, { ry: () => m });
                 class i {
                     constructor() {
                         (this.entries = []),
@@ -704,8 +704,8 @@
                     }
                     s.done ? t(_) : Promise.resolve(_).then(i, a);
                 }
-                const m = (e) => ({ __Type: 'GFBoundingBox', x: e.x, y: e.y, width: e.width, height: e.height }),
-                    b = (function () {
+                const b = (e) => ({ __Type: 'GFBoundingBox', x: e.x, y: e.y, width: e.width, height: e.height }),
+                    m = (function () {
                         var e,
                             t =
                                 ((e = function* () {
@@ -786,7 +786,7 @@
                         RealFormatType: c,
                         TimeFormatType: d,
                         DateFormatType: l,
-                        makeGlobalBoundingBox: m,
+                        makeGlobalBoundingBox: b,
                         sendMoveEvent: (e) => w(s.MOVE, { isMouseEvent: !0, on: e }),
                         sendCloseEvent: p,
                         sendClosePopOverEvent: () => w(s.POP_OVER, { on: !1 }),
@@ -812,7 +812,7 @@
                                 decoratorID: i || R.invalid('resId'),
                                 targetID: a,
                                 direction: t,
-                                bbox: m(E),
+                                bbox: b(E),
                                 on: !0,
                                 args: o,
                             });
@@ -827,7 +827,7 @@
                             g(e, p);
                         },
                         handleViewEvent: w,
-                        onBindingsReady: b,
+                        onBindingsReady: m,
                         onLayoutReady: () =>
                             new Promise((e) => {
                                 requestAnimationFrame(() => {
@@ -894,6 +894,7 @@
                     base__extraSmall: 'CButton_base__extraSmall_27',
                     base__small: 'CButton_base__small_df',
                     base__medium: 'CButton_base__medium_74',
+                    base__large: 'CButton_base__large_5c',
                     base__disabled: 'CButton_base__disabled_d9',
                     back: 'CButton_back_e5',
                     texture: 'CButton_texture_fe',

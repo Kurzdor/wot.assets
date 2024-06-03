@@ -425,7 +425,7 @@
             7572: (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
                 __webpack_require__.d(__webpack_exports__, { Z: () => __WEBPACK_DEFAULT_EXPORT__ });
                 var _DataTracker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1358),
-                    _index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4179);
+                    _index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9916);
                 class ViewModel {
                     constructor(path, watchingFields = []) {
                         (this.dataTracker = void 0),
@@ -464,8 +464,8 @@
                 }
                 const __WEBPACK_DEFAULT_EXPORT__ = ViewModel;
             },
-            4179: (u, e, t) => {
-                t.d(e, { B3: () => a, Z5: () => r, ry: () => _ });
+            9916: (u, e, t) => {
+                t.d(e, { B3: () => D, Z5: () => r.Z5, ry: () => d });
                 class E {
                     constructor() {
                         (this.entries = []),
@@ -506,20 +506,8 @@
                 E.__instance = void 0;
                 const A = E;
                 var F = t(1358);
-                const r = {
-                        getNumberFormat: (u, e) => systemLocale.getNumberFormat(u, e),
-                        getRealFormat: (u, e) => systemLocale.getRealFormat(u, e),
-                        getTimeFormat: (u, e) => systemLocale.getTimeFormat(u, e),
-                        getDateFormat: (u, e) => systemLocale.getDateFormat(u, e),
-                        toUpperCase: (u) => systemLocale.toUpperCase(u),
-                        toLowerCase: (u) => systemLocale.toUpperCase(u),
-                    },
-                    n = {
-                        getNumberFormat: (u) => userLocale.getNumberFormat(u),
-                        getTimeFormat: (u, e, t) => userLocale.getTimeFormat(u, e, void 0 === t || t),
-                        getTimeString: (u, e, t) => userLocale.getTimeString(u, e, void 0 === t || t),
-                    };
-                let D;
+                var r = t(8613);
+                let n;
                 !(function (u) {
                     (u[(u.UNDEFINED = 0)] = 'UNDEFINED'),
                         (u[(u.TOOLTIP = 1)] = 'TOOLTIP'),
@@ -529,15 +517,15 @@
                         (u[(u.MOVE = 16)] = 'MOVE'),
                         (u[(u.CLOSE = 32)] = 'CLOSE'),
                         (u[(u.MINIMIZE = 64)] = 'MINIMIZE');
-                })(D || (D = {}));
-                const a = Object.freeze({ INTEGRAL: 0, GOLD: 1 }),
-                    o = Object.freeze({ FRACTIONAL: 0, WO_ZERO_DIGITS: 1 }),
-                    i = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1 }),
-                    B = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1, YEAR_MONTH: 2 });
-                var C = t(5521),
-                    s = t(3138);
-                const l = ['args'];
-                function c(u, e, t, E, A, F, r) {
+                })(n || (n = {}));
+                const D = Object.freeze({ INTEGRAL: 0, GOLD: 1 }),
+                    a = Object.freeze({ FRACTIONAL: 0, WO_ZERO_DIGITS: 1 }),
+                    o = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1 }),
+                    i = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1, YEAR_MONTH: 2 });
+                var B = t(5521),
+                    C = t(3138);
+                const s = ['args'];
+                function l(u, e, t, E, A, F, r) {
                     try {
                         var n = u[F](r),
                             D = n.value;
@@ -546,8 +534,8 @@
                     }
                     n.done ? e(D) : Promise.resolve(D).then(E, A);
                 }
-                const d = (u) => ({ __Type: 'GFBoundingBox', x: u.x, y: u.y, width: u.width, height: u.height }),
-                    _ = (function () {
+                const c = (u) => ({ __Type: 'GFBoundingBox', x: u.x, y: u.y, width: u.width, height: u.height }),
+                    d = (function () {
                         var u,
                             e =
                                 ((u = function* () {
@@ -564,10 +552,10 @@
                                     return new Promise(function (E, A) {
                                         var F = u.apply(e, t);
                                         function r(u) {
-                                            c(F, E, A, r, n, 'next', u);
+                                            l(F, E, A, r, n, 'next', u);
                                         }
                                         function n(u) {
-                                            c(F, E, A, r, n, 'throw', u);
+                                            l(F, E, A, r, n, 'throw', u);
                                         }
                                         r(void 0);
                                     });
@@ -576,7 +564,7 @@
                             return e.apply(this, arguments);
                         };
                     })(),
-                    m = (u, e) => {
+                    _ = (u, e) => {
                         const t = 'GFViewEventProxy';
                         if (void 0 !== e) {
                             const A = e.args,
@@ -588,7 +576,7 @@
                                         F = Object.keys(u);
                                     for (E = 0; E < F.length; E++) (t = F[E]), e.indexOf(t) >= 0 || (A[t] = u[t]);
                                     return A;
-                                })(e, l);
+                                })(e, s);
                             void 0 !== A
                                 ? viewEnv.handleViewEvent(
                                       Object.assign({ __Type: t, type: u }, F, {
@@ -614,62 +602,62 @@
                         } else viewEnv.handleViewEvent({ __Type: t, type: u });
                         var E;
                     },
-                    v = () => m(D.CLOSE),
-                    p = (u, e) => {
-                        u.keyCode === C.n.ESCAPE && e();
+                    m = () => _(n.CLOSE),
+                    v = (u, e) => {
+                        u.keyCode === B.n.ESCAPE && e();
                     };
-                var h = t(7572);
-                const g = A.instance,
-                    b = {
+                var p = t(7572);
+                const h = A.instance,
+                    g = {
                         DataTracker: F.Z,
-                        ViewModel: h.Z,
-                        ViewEventType: D,
-                        NumberFormatType: a,
-                        RealFormatType: o,
-                        TimeFormatType: i,
-                        DateFormatType: B,
-                        makeGlobalBoundingBox: d,
-                        sendMoveEvent: (u) => m(D.MOVE, { isMouseEvent: !0, on: u }),
-                        sendCloseEvent: v,
-                        sendClosePopOverEvent: () => m(D.POP_OVER, { on: !1 }),
+                        ViewModel: p.Z,
+                        ViewEventType: n,
+                        NumberFormatType: D,
+                        RealFormatType: a,
+                        TimeFormatType: o,
+                        DateFormatType: i,
+                        makeGlobalBoundingBox: c,
+                        sendMoveEvent: (u) => _(n.MOVE, { isMouseEvent: !0, on: u }),
+                        sendCloseEvent: m,
+                        sendClosePopOverEvent: () => _(n.POP_OVER, { on: !1 }),
                         sendShowContextMenuEvent: (u, e, t = 0) => {
-                            m(D.CONTEXT_MENU, { isMouseEvent: !0, contentID: u, on: !0, decoratorID: t, args: e });
+                            _(n.CONTEXT_MENU, { isMouseEvent: !0, contentID: u, on: !0, decoratorID: t, args: e });
                         },
                         sendShowPopOverEvent: (u, e, t, E, A = R.invalid('resId'), F) => {
-                            const r = s.O.view.getViewGlobalPosition(),
-                                n = t.getBoundingClientRect(),
-                                a = n.x,
-                                o = n.y,
-                                i = n.width,
-                                B = n.height,
-                                C = {
-                                    x: s.O.view.pxToRem(a) + r.x,
-                                    y: s.O.view.pxToRem(o) + r.y,
-                                    width: s.O.view.pxToRem(i),
-                                    height: s.O.view.pxToRem(B),
+                            const r = C.O.view.getViewGlobalPosition(),
+                                D = t.getBoundingClientRect(),
+                                a = D.x,
+                                o = D.y,
+                                i = D.width,
+                                B = D.height,
+                                s = {
+                                    x: C.O.view.pxToRem(a) + r.x,
+                                    y: C.O.view.pxToRem(o) + r.y,
+                                    width: C.O.view.pxToRem(i),
+                                    height: C.O.view.pxToRem(B),
                                 };
-                            m(D.POP_OVER, {
+                            _(n.POP_OVER, {
                                 isMouseEvent: !0,
                                 contentID: u,
                                 decoratorID: E || R.invalid('resId'),
                                 targetID: A,
                                 direction: e,
-                                bbox: d(C),
+                                bbox: c(s),
                                 on: !0,
                                 args: F,
                             });
                         },
                         addEscapeListener: (u) => {
-                            const e = (e) => p(e, u);
+                            const e = (e) => v(e, u);
                             return (
                                 window.addEventListener('keydown', e), () => window.removeEventListener('keydown', e)
                             );
                         },
                         closeOnEsc: (u) => {
-                            p(u, v);
+                            v(u, m);
                         },
-                        handleViewEvent: m,
-                        onBindingsReady: _,
+                        handleViewEvent: _,
+                        onBindingsReady: d,
                         onLayoutReady: () =>
                             new Promise((u) => {
                                 requestAnimationFrame(() => {
@@ -678,9 +666,9 @@
                                     });
                                 });
                             }),
-                        isTooltipShown: () => viewEnv.isWindowShownByViewEvent(D.TOOLTIP),
-                        isContextMenuShown: () => viewEnv.isWindowShownByViewEvent(D.CONTEXT_MENU),
-                        isPopOverShown: () => viewEnv.isWindowShownByViewEvent(D.POP_OVER),
+                        isTooltipShown: () => viewEnv.isWindowShownByViewEvent(n.TOOLTIP),
+                        isContextMenuShown: () => viewEnv.isWindowShownByViewEvent(n.CONTEXT_MENU),
+                        isPopOverShown: () => viewEnv.isWindowShownByViewEvent(n.POP_OVER),
                         dumpViewModel: function u(e) {
                             const t = {};
                             if ('object' != typeof e) return e;
@@ -698,11 +686,27 @@
                                 }
                             return t;
                         },
-                        ClickOutsideManager: g,
-                        SystemLocale: r,
-                        UserLocale: n,
+                        ClickOutsideManager: h,
+                        SystemLocale: r.Z5,
+                        UserLocale: r.cy,
                     };
-                window.ViewEnvHelper = b;
+                window.ViewEnvHelper = g;
+            },
+            8613: (u, e, t) => {
+                t.d(e, { Z5: () => E, cy: () => A });
+                const E = {
+                        getNumberFormat: (u, e) => systemLocale.getNumberFormat(u, e),
+                        getRealFormat: (u, e) => systemLocale.getRealFormat(u, e),
+                        getTimeFormat: (u, e) => systemLocale.getTimeFormat(u, e),
+                        getDateFormat: (u, e) => systemLocale.getDateFormat(u, e),
+                        toUpperCase: (u) => systemLocale.toUpperCase(u),
+                        toLowerCase: (u) => systemLocale.toUpperCase(u),
+                    },
+                    A = {
+                        getNumberFormat: (u) => userLocale.getNumberFormat(u),
+                        getTimeFormat: (u, e, t) => userLocale.getTimeFormat(u, e, void 0 === t || t),
+                        getTimeString: (u, e, t) => userLocale.getTimeString(u, e, void 0 === t || t),
+                    };
             },
             9453: (u, e, t) => {
                 var E = t(6179),
@@ -1262,7 +1266,7 @@
                         );
                     },
                     uu = (u, e) => `level_${u}_${e}`;
-                var eu = t(4179);
+                var eu = t(9916);
                 class tu extends A().PureComponent {
                     render() {
                         let u;

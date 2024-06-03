@@ -62,6 +62,10 @@
     min-height: 32rem;
 }
 
+.CButton_base__large_5c {
+    min-height: 48rem;
+}
+
 .CButton_base__disabled_d9 {
     cursor: default;
 }
@@ -203,6 +207,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_base__medium_74 .CButton_content_cc {
     font-size: 15rem;
+}
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
 }
 .CButton_base__disabled_d9 .CButton_content_cc {
     opacity: 0.6;
@@ -348,98 +355,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .TextButton_base_b6:active .TextButton_shine_e2 {
     opacity: 0;
-}
-
-.PageTitle_base_ef {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.PageTitle_title_33 {
-    color: #f2f2f7;
-    font-size: 36rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.mediaMedium .PageTitle_title_33 {
-    font-size: 56rem;
-}
-
-.PaginationRender_base_75 {
-    display: flex;
-    color: #8c8c7e;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    justify-content: center;
-    border: 1rem solid rgba(233, 226, 191, 0.3);
-    border-radius: 2rem;
-    line-height: 1.1;
-    position: relative;
-    cursor: pointer;
-}
-
-.PaginationRender_base_75:hover {
-    border-color: rgba(233, 226, 191, 0.5);
-    color: #e9e2bf;
-}
-
-.PaginationRender_base__completed_69 {
-    border-color: rgba(128, 212, 58, 0.3);
-    color: #80d43a;
-}
-
-.PaginationRender_base__completed_69:hover {
-    border-color: rgba(128, 212, 58, 0.5);
-    color: #80d43a;
-}
-
-.PaginationRender_base__inaccessible_55 {
-    border-color: rgba(255, 39, 23, 0.3);
-    color: #ff2717;
-}
-
-.PaginationRender_base__inaccessible_55:hover {
-    border-color: rgba(255, 39, 23, 0.5);
-    color: #ff2717;
-}
-
-.PaginationRender_base__selected_e1 {
-    border-color: transparent;
-    color: #e9e2bf;
-}
-
-.PaginationRender_base__selected_e1:hover {
-    border-color: transparent;
-    color: #e9e2bf;
-}
-
-.PaginationRender_selectedImage_58 {
-    width: 48rem;
-    height: 38rem;
-    background: url('R.images.gui.maps.icons.components.pagination.item_select') no-repeat center / contain;
-    opacity: 0.7;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.PaginationList_base_94 {
-    display: flex;
-    flex-direction: row;
-}
-
-.PaginationList_item_58 {
-    width: 30rem;
-    height: 20rem;
-    margin-right: 10rem;
-}
-
-.PaginationList_item__last_ec {
-    margin-right: 0;
 }
 
 .ExtendedText_base_71 {
@@ -596,224 +511,277 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     overflow-wrap: normal;
 }
 
-.WelcomeSlider_base_08 {
-    display: flex;
-    flex: 1;
-}
-
-.WelcomeSlider_pagination_a8 > div:first-child {
-    margin-right: 20rem;
-}
-
-.WelcomeSlider_sliderArrow_b1 {
-    display: flex;
-    align-items: center;
+.WelcomeViewApp_base_14 {
+    width: 100%;
     height: 100%;
-}
-
-.WelcomeSlider_sliderArrowIcon_cc {
-    width: 74rem;
-    height: 142rem;
-    background: url('R.images.frontline.gui.maps.welcome_page.arrow') no-repeat center / cover;
-    opacity: 0.8;
-    cursor: pointer;
-}
-
-.WelcomeSlider_sliderArrowIcon_cc:hover {
-    opacity: 1;
-}
-
-.WelcomeSlider_sliderArrowIcon__right_c4 {
-    transform: rotate(180deg);
-}
-
-.WelcomeSlider_sliderArrowIcon__disabled_57 {
-    background: url('R.images.frontline.gui.maps.welcome_page.arrow_disabled') no-repeat center / cover;
-    opacity: 1;
-    pointer-events: none;
-}
-
-.WelcomeSlider_slider_23 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 86rem 0 61rem;
+    background: url('R.images.story_mode.gui.maps.icons.welcomeScreen.bg') no-repeat 50% / cover;
 }
 
-.WelcomeSlider_slider__fullWidth_c0 {
+.WelcomeViewApp_container_0d {
     width: 100%;
+    height: 100%;
+    position: relative;
 }
 
-.mediaMedium .WelcomeSlider_slider_23 {
-    margin: 70rem 0 86rem;
-}
-
-.mediaLarge .WelcomeSlider_slider_23 {
-    margin: 133rem 0 161rem;
-}
-
-.WelcomeSlider_sliderContent_4d {
-    display: flex;
-    justify-content: space-between;
-}
-
-.WelcomeSlider_slider__fullWidth_c0 .WelcomeSlider_sliderContent_4d {
-    width: 100%;
-}
-
-.WelcomeSlider_slide_9c {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250rem;
-}
-
-.mediaMedium .WelcomeSlider_slide_9c {
-    width: 310rem;
-}
-
-.WelcomeSlider_slideTitle_a9 {
-    color: #e9e2bf;
-    font-size: 15rem;
-    font-weight: 700;
-    line-height: 1.15;
-    margin: 21rem 0 10rem;
-}
-
-.mediaMedium .WelcomeSlider_slideTitle_a9 {
-    color: #e9e2bf;
-    font-size: 18rem;
+.WelcomeViewApp_header_b3 {
+    color: #f2f2f7;
+    font-size: 36rem;
     font-weight: 700;
     line-height: 1.1;
-    margin: 26rem 0 11rem;
+    text-shadow:
+        0 0 16px rgba(0, 0, 0, 0.5),
+        0 0 50px #000000;
 }
 
-.mediaLarge .WelcomeSlider_slideTitle_a9 {
-    margin: 26rem 0 11rem;
+.mediaLarge .WelcomeViewApp_header_b3 {
+    color: #f2f2f7;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
-.WelcomeSlider_slideDescription_c1 {
+.mediaExtraLarge .WelcomeViewApp_header_b3 {
+    font-size: 73rem;
+}
+
+.WelcomeViewApp_subheader_a6 {
+    color: #e9e2bf;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 10rem;
+}
+
+.mediaExtraLarge .WelcomeViewApp_subheader_a6 {
+    color: #e9e2bf;
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.WelcomeViewApp_content_57 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    margin-top: -8rem;
+}
+
+.mediaSmall .WelcomeViewApp_content_57 {
+    margin-top: -6rem;
+}
+
+.mediaMedium .WelcomeViewApp_content_57 {
+    margin-top: -14rem;
+}
+
+.mediaLarge .WelcomeViewApp_content_57 {
+    margin-top: -10rem;
+}
+
+.mediaExtraLarge .WelcomeViewApp_content_57 {
+    margin-top: -18rem;
+}
+
+.WelcomeViewApp_icon_d5 {
+    width: 220rem;
+    height: 220rem;
+    background: no-repeat 50% / contain;
+}
+
+.mediaSmall .WelcomeViewApp_icon_d5 {
+    width: 270rem;
+    height: 270rem;
+}
+
+.mediaMedium .WelcomeViewApp_icon_d5 {
+    width: 320rem;
+    height: 320rem;
+}
+
+.mediaExtraLarge .WelcomeViewApp_icon_d5 {
+    width: 400rem;
+    height: 400rem;
+}
+
+.WelcomeViewApp_icon__image1_a5 {
+    background-image: url('R.images.story_mode.gui.maps.icons.welcomeScreen.card_1_extraSmall');
+}
+
+.mediaSmall .WelcomeViewApp_icon__image1_a5 {
+    background-image: url('R.images.story_mode.gui.maps.icons.welcomeScreen.card_1_small');
+}
+
+.mediaMedium .WelcomeViewApp_icon__image1_a5 {
+    background-image: url('R.images.story_mode.gui.maps.icons.welcomeScreen.card_1_medium');
+}
+
+.mediaExtraLarge .WelcomeViewApp_icon__image1_a5 {
+    background-image: url('R.images.story_mode.gui.maps.icons.welcomeScreen.card_1_extraLarge');
+}
+
+.WelcomeViewApp_icon__image2_ea {
+    background-image: url('R.images.story_mode.gui.maps.icons.welcomeScreen.card_2_extraSmall');
+}
+
+.mediaSmall .WelcomeViewApp_icon__image2_ea {
+    background-image: url('R.images.story_mode.gui.maps.icons.welcomeScreen.card_2_small');
+}
+
+.mediaMedium .WelcomeViewApp_icon__image2_ea {
+    background-image: url('R.images.story_mode.gui.maps.icons.welcomeScreen.card_2_medium');
+}
+
+.mediaExtraLarge .WelcomeViewApp_icon__image2_ea {
+    background-image: url('R.images.story_mode.gui.maps.icons.welcomeScreen.card_2_extraLarge');
+}
+
+.WelcomeViewApp_icon__image3_3a {
+    background-image: url('R.images.story_mode.gui.maps.icons.welcomeScreen.card_3_extraSmall');
+}
+
+.mediaSmall .WelcomeViewApp_icon__image3_3a {
+    background-image: url('R.images.story_mode.gui.maps.icons.welcomeScreen.card_3_small');
+}
+
+.mediaMedium .WelcomeViewApp_icon__image3_3a {
+    background-image: url('R.images.story_mode.gui.maps.icons.welcomeScreen.card_3_medium');
+}
+
+.mediaExtraLarge .WelcomeViewApp_icon__image3_3a {
+    background-image: url('R.images.story_mode.gui.maps.icons.welcomeScreen.card_3_extraLarge');
+}
+
+.WelcomeViewApp_infoBlock_e5 {
+    width: 240rem;
+    margin: 0 26rem;
+    text-align: center;
+}
+
+.mediaSmall .WelcomeViewApp_infoBlock_e5 {
+    width: 300rem;
+    margin: 0 58rem;
+}
+
+.mediaMedium .WelcomeViewApp_infoBlock_e5 {
+    width: 380rem;
+    margin: 0 50rem;
+}
+
+.mediaExtraLarge .WelcomeViewApp_infoBlock_e5 {
+    width: 420rem;
+    margin: 0 100rem;
+}
+
+.WelcomeViewApp_title_9f {
+    color: #e9e2bf;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 12rem;
+}
+
+.mediaSmall .WelcomeViewApp_title_9f {
+    margin-top: 18rem;
+}
+
+.mediaLarge .WelcomeViewApp_title_9f {
+    color: #e9e2bf;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 20rem;
+}
+
+.mediaExtraLarge .WelcomeViewApp_title_9f {
+    color: #e9e2bf;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.WelcomeViewApp_subTitle_05 {
     color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
+    margin-top: 14rem;
 }
 
-.mediaMedium .WelcomeSlider_slideDescription_c1 {
+.mediaSmall .WelcomeViewApp_subTitle_05 {
     color: #8c8c7e;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
-    padding: 0 10rem;
+    margin-top: 18rem;
 }
 
-.WelcomeSlider_slideImg_c0 {
-    width: 180rem;
-    height: 180rem;
-    background: no-repeat center / cover;
-}
-
-.mediaMedium .WelcomeSlider_slideImg_c0 {
-    width: 226rem;
-    height: 226rem;
-}
-
-.WelcomeViewApp_base_4a {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000;
-    background-image: linear-gradient(
-            to top,
-            transparent,
-            rgba(0, 0, 0, 0.45) 15%,
-            rgba(0, 0, 0, 0.45) 30%,
-            transparent 50%
-        ),
-        radial-gradient(transparent, rgba(0, 0, 0, 0.7)), url('R.images.frontline.gui.maps.bg.info');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-.WelcomeViewApp_page_4a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 628rem;
-    padding: 0 64rem;
-}
-
-.mediaSmall .WelcomeViewApp_page_4a {
-    width: 1246rem;
-    padding: 0 126rem;
-}
-
-.mediaMedium .WelcomeViewApp_page_4a {
-    width: 1400rem;
-    height: 708rem;
-    padding: 0 121rem;
-}
-
-.mediaLarge .WelcomeViewApp_page_4a {
-    width: 1520rem;
-    height: 880rem;
-    padding: 0 182rem;
-}
-
-.mediaExtraLarge .WelcomeViewApp_page_4a {
-    width: 1610rem;
-    height: 960rem;
-}
-
-.WelcomeViewApp_pageTitle_3e {
-    margin-top: -10rem;
-}
-
-.mediaMedium .WelcomeViewApp_pageTitle_3e {
-    margin-top: -14rem;
-}
-
-.mediaLarge .WelcomeViewApp_pageTitle_3e {
-    margin-top: -15rem;
-}
-
-.WelcomeViewApp_pageSubtitle_17 {
-    color: #8c8c7e;
-    font-size: 18rem;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-top: 6rem;
-}
-
-.mediaLarge .WelcomeViewApp_pageSubtitle_17 {
-    color: #8c8c7e;
+.mediaMedium .WelcomeViewApp_subTitle_05 {
     font-size: 20rem;
+    line-height: 24rem;
+}
+
+.mediaLarge .WelcomeViewApp_subTitle_05 {
+    margin-top: 20rem;
+}
+
+.mediaExtraLarge .WelcomeViewApp_subTitle_05 {
+    color: #8c8c7e;
+    font-size: 24rem;
     font-weight: 400;
-    line-height: 1.2;
-    margin-top: 16rem;
+    line-height: 32rem;
+    margin-top: 24rem;
 }
 
-.WelcomeViewApp_closeButton_d3 {
+.WelcomeViewApp_bottomContainer_fd {
     position: absolute;
-    top: 30rem;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+}
+
+.WelcomeViewApp_topContainer_a0 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 61rem;
+}
+
+.mediaLarge .WelcomeViewApp_topContainer_a0 {
+    top: 126rem;
+}
+
+.mediaExtraLarge .WelcomeViewApp_topContainer_a0 {
+    top: 154rem;
+}
+
+.WelcomeViewApp_btn_01 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    min-width: 160rem;
+    bottom: 80rem;
+}
+
+.mediaMedium .WelcomeViewApp_btn_01 {
+    bottom: 100rem;
+}
+
+.mediaLarge .WelcomeViewApp_btn_01 {
+    bottom: 128rem;
+}
+
+.mediaExtraLarge .WelcomeViewApp_btn_01 {
+    bottom: 202rem;
+}
+
+.WelcomeViewApp_closeBtn_dc {
+    position: absolute;
+    top: 31rem;
     right: 28rem;
-}
-
-.mediaLarge .WelcomeViewApp_closeButton_d3 {
-    right: 38rem;
-}
-
-.WelcomeViewApp_bottomBtnContainer_a9 {
-    display: flex;
-    justify-content: center;
-}
-
-.WelcomeViewApp_bottomCloseBtn_55 {
-    width: 158rem;
+    z-index: 1;
 }

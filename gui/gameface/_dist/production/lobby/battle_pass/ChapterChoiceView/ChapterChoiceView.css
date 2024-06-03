@@ -140,6 +140,41 @@
     opacity: 0;
 }
 
+.Identity_base_56 {
+    pointer-events: none;
+}
+
+.Identity_base__chapter_choice_df {
+    position: absolute;
+    top: 20rem;
+    right: 20rem;
+    z-index: 2;
+}
+
+.Identity_base__progression_1c {
+    margin: -3rem 10rem 0 0;
+}
+
+.mediaMedium .Identity_base__progression_1c {
+    margin: -18rem 20rem 0 0;
+}
+
+.mediaLarge .Identity_base__progression_1c {
+    margin-top: 0;
+}
+
+.Identity_identityImage_69 {
+    width: 202rem;
+    height: 94rem;
+    background: url('R.images.gui.maps.icons.battlePass.identity.identity_small') center / contain no-repeat;
+}
+
+.mediaMedium .Identity_identityImage_69 {
+    width: 300rem;
+    height: 140rem;
+    background-image: url('R.images.gui.maps.icons.battlePass.identity.identity');
+}
+
 .App_base_26 {
     display: flex;
     justify-content: center;
@@ -1979,6 +2014,14 @@
     opacity: 1;
 }
 
+.Chapter_crewTitle_71 {
+    margin-top: 12rem;
+}
+
+.Chapter_crewSubtitle_f3 {
+    color: #f2f2f7;
+}
+
 .Chapter_vehicleInHangar_61 {
     width: 24rem;
     height: 24rem;
@@ -3010,6 +3053,10 @@
     min-height: 32rem;
 }
 
+.CButton_base__large_5c {
+    min-height: 48rem;
+}
+
 .CButton_base__disabled_d9 {
     cursor: default;
 }
@@ -3151,6 +3198,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_base__medium_74 .CButton_content_cc {
     font-size: 15rem;
+}
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
 }
 .CButton_base__disabled_d9 .CButton_content_cc {
     opacity: 0.6;

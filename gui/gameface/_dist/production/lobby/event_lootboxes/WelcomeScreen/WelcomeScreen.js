@@ -1339,6 +1339,7 @@
                     base__extraSmall: 'CButton_base__extraSmall_27',
                     base__small: 'CButton_base__small_df',
                     base__medium: 'CButton_base__medium_74',
+                    base__large: 'CButton_base__large_5c',
                     base__disabled: 'CButton_base__disabled_d9',
                     back: 'CButton_back_e5',
                     texture: 'CButton_texture_fe',
@@ -1361,7 +1362,7 @@
                         (u.ghost = 'ghost');
                 })(J || (J = {})),
                     (function (u) {
-                        (u.extraSmall = 'extraSmall'), (u.small = 'small'), (u.medium = 'medium');
+                        (u.extraSmall = 'extraSmall'), (u.small = 'small'), (u.medium = 'medium'), (u.large = 'large');
                     })(uu || (uu = {}));
                 const eu = ({
                     children: u,
@@ -2050,23 +2051,22 @@
                         }
                     }, [e, u, t, r]);
                 }
-                const d = ({ mixClass: u, soundClick: e = 'play', soundHover: t, onCloseCallback: i }) => {
-                    const o = (0, n.useCallback)(() => {
-                        i && i(), (0, a.Sy)();
-                    }, [i]);
-                    var A;
-                    (A = o), C(B.n.ESCAPE, A);
-                    const s = E()('CloseBtn_base_0e', u);
+                const d = ({ mixClass: u, soundClick: e = 'play', onCloseCallback: t }) => {
+                    const i = (0, n.useCallback)(() => {
+                        t && t(), (0, a.Sy)();
+                    }, [t]);
+                    var o;
+                    (o = i), C(B.n.ESCAPE, o);
+                    const A = E()('CloseBtn_base_0e', u);
                     return r().createElement(
                         'div',
-                        { className: s },
+                        { className: A },
                         r().createElement(l, {
                             caption: R.strings.menu.viewHeader.closeBtn.label(),
                             type: 'close',
                             side: 'right',
                             soundClick: e,
-                            soundHover: t,
-                            onClick: o,
+                            onClick: i,
                         }),
                     );
                 };

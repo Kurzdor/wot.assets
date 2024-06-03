@@ -1199,6 +1199,14 @@
     left: 45rem;
 }
 
+.InfoViewApp_closeButtonCaption_10 {
+    display: none;
+}
+
+.mediaSmall .InfoViewApp_closeButtonCaption_10 {
+    display: block;
+}
+
 .InfoViewApp_mainContent_9d {
     width: 820rem;
 }

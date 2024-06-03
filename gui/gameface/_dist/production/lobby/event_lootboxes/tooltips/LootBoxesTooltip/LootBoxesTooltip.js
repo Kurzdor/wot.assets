@@ -967,8 +967,9 @@
                         'gum',
                     );
                 const b = R.strings.event_lootboxes.tooltips.infoType,
-                    h = ({ index: u, probability: e, guaranteedLimit: t, isGuaranteedBonus: n }) => {
-                        const F = `${u + 1}. ${n ? b.probabilityPremium() : b.probability()}`,
+                    h = ({ index: u, probability: e, guaranteedLimit: t }) => {
+                        const n = 3 === u,
+                            F = `${u + 1}. ${n ? b.probabilityPremium() : b.probability()}`,
                             A = `${e}%`;
                         return E().createElement(
                             'div',
@@ -1057,7 +1058,6 @@
                                             index: t,
                                             probability: e.probability,
                                             guaranteedLimit: u,
-                                            isGuaranteedBonus: e.isGuaranteedBonus,
                                         }),
                                         E().createElement(O, { type: e.rewardType, rewards: e.rewards }),
                                     ),

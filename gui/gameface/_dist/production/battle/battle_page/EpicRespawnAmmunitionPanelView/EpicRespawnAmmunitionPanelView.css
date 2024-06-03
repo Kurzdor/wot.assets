@@ -715,6 +715,7 @@ body {
 .TopLabel_base_7f {
     display: flex;
     justify-content: center;
+    align-items: center;
     visibility: hidden;
     position: relative;
 }
@@ -724,9 +725,6 @@ body {
 }
 
 .TopLabel_text_d0 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: rgba(255, 245, 226, 0.5);
     font-size: 11rem;
 }
@@ -747,7 +745,7 @@ body {
 }
 
 .TopLabel_text__truncated_29 {
-    max-width: 36rem;
+    max-width: 32rem;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -1068,6 +1066,7 @@ body {
 
 .KeyLabel_base_ec {
     width: auto;
+    max-width: 36rem;
     padding: 0 3rem;
     border: 1rem solid transparent;
     border-radius: 2rem;
@@ -1847,6 +1846,10 @@ body {
     min-height: 32rem;
 }
 
+.CButton_base__large_5c {
+    min-height: 48rem;
+}
+
 .CButton_base__disabled_d9 {
     cursor: default;
 }
@@ -1988,6 +1991,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_base__medium_74 .CButton_content_cc {
     font-size: 15rem;
+}
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
 }
 .CButton_base__disabled_d9 .CButton_content_cc {
     opacity: 0.6;
@@ -2273,7 +2279,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: url('R.images.gui.maps.icons.library.unlimited') 0 0 / contain no-repeat;
     position: absolute;
     bottom: -1rem;
-    left: 21rem;
+    left: 10rem;
     pointer-events: none;
 }
 

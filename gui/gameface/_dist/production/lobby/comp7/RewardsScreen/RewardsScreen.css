@@ -1,143 +1,105 @@
-.TextButton_base_b6 {
+.FormatText_base_d0 {
     display: flex;
-    align-items: center;
-    padding: 0 3rem;
-    font-size: 12rem;
-    position: relative;
-    cursor: pointer;
+    flex-wrap: wrap;
 }
 
-.TextButton_base__right_39 {
-    flex-direction: row-reverse;
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
 }
-.TextButton_icon_17 {
-    width: 32rem;
-    height: 32rem;
-    background: no-repeat center / contain;
-    position: relative;
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #ffffff;
 }
-.TextButton_icon__back_43,
-.TextButton_icon__forward_59 {
-    margin: -1rem -5rem;
-    background-image: url('R.images.gui.maps.icons.components.text_button.back');
-    transform: translateY(1rem);
+
+.FormatTextWithColorTags_white_16 {
+    color: #f2f2f7;
 }
-.TextButton_icon__forward_59 {
-    transform: rotate(180deg) translateY(1rem);
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #fefeec;
 }
-.TextButton_icon__close_53 {
-    margin: -1rem 0;
-    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #e9e2bf;
 }
-.TextButton_icon__info_33 {
-    margin: -1rem -5rem;
-    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+
+.FormatTextWithColorTags_par_ca {
+    color: #8c8c7e;
 }
-.TextButton_glow_a4 {
-    width: 100%;
-    height: 100%;
-    background: no-repeat center / contain;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    transition: opacity 0.16s;
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
 }
-.TextButton_icon__back_43 .TextButton_glow_a4,
-.TextButton_icon__forward_59 .TextButton_glow_a4 {
-    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362e;
 }
-.TextButton_icon__close_53 .TextButton_glow_a4 {
-    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+
+.FormatTextWithColorTags_red_60 {
+    color: #ff2717;
 }
-.TextButton_icon__info_33 .TextButton_glow_a4 {
-    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #b70000;
 }
-.TextButton_base_b6:hover .TextButton_glow_a4 {
-    opacity: 1;
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #feab34;
 }
-.TextButton_base_b6:active .TextButton_glow_a4 {
-    opacity: 0;
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #ee7000;
 }
-.TextButton_caption_82 {
-    position: relative;
-    transition:
-        color 0.16s,
-        text-shadow 0.16s;
-}
-.TextButton_caption__back_b9,
-.TextButton_caption__forward_4e,
-.TextButton_caption__close_36 {
-    color: #ffdd99;
-    text-shadow:
-        0 0 10rem rgba(255, 42, 0, 1),
-        0 0 10rem rgba(255, 42, 0, 0.4),
-        0 0 10rem rgba(255, 42, 0, 0.4),
-        0 0 2rem rgba(255, 42, 0, 0.4),
-        0 0 1rem rgba(255, 42, 0, 0.4),
-        0 0 2rem rgba(255, 42, 0, 0.4),
-        0 0 1rem rgba(255, 42, 0, 0.4);
-}
-.TextButton_base_b6:hover .TextButton_caption__back_b9,
-.TextButton_base_b6:hover .TextButton_caption__forward_4e,
-.TextButton_base_b6:hover .TextButton_caption__close_36 {
-    color: #fffa9f;
-}
-.TextButton_base_b6:active .TextButton_caption__back_b9,
-.TextButton_base_b6:active .TextButton_caption__forward_4e,
-.TextButton_base_b6:active .TextButton_caption__close_36 {
+
+.FormatTextWithColorTags_cream_cd {
     color: #ffdd99;
 }
-.TextButton_caption__info_23 {
-    padding: 0 5rem;
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #cbac77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80d43a;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7ab300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
     color: #ccffff;
-    text-shadow:
-        0 0 12rem rgba(31, 68, 255, 0.8),
-        0 0 8rem #00eaff;
 }
-.TextButton_base_b6:hover .TextButton_caption__info_23 {
-    color: #e3ffff;
-    text-shadow:
-        0 0 12rem rgba(31, 68, 255, 0.8),
-        0 0 12rem rgba(0, 234, 255, 1),
-        0 0 8rem #00eaff;
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09e2ff;
 }
-.TextButton_base_b6:active .TextButton_caption__info_23 {
-    color: #ccffff;
-    text-shadow:
-        0 0 12rem rgba(31, 68, 255, 0.6),
-        0 0 8rem #00eaff;
+
+.FormatTextWithColorTags_cred_4e {
+    color: #ced9d9;
 }
-.TextButton_goto_e7 {
-    color: #7c7c6c;
+
+.FormatTextWithColorTags_gold_90 {
+    color: #ffc363;
 }
-.TextButton_base__left_ff .TextButton_goto_e7 {
-    margin-left: 8rem;
+
+.FormatTextWithColorTags_bond_71 {
+    color: #c9c9b6;
 }
-.TextButton_base__right_39 .TextButton_goto_e7 {
-    margin-right: 8rem;
+
+.FormatTextWithColorTags_prom_dd {
+    color: #a29b70;
 }
-.TextButton_shine_e2 {
-    width: 90rem;
-    height: 40rem;
-    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
-    opacity: 0;
-    position: absolute;
-    top: -4rem;
-    transition: opacity 0.16s;
-    pointer-events: none;
-}
-.TextButton_base__left_ff .TextButton_shine_e2 {
-    left: -4rem;
-}
-.TextButton_base__right_39 .TextButton_shine_e2 {
-    right: -4rem;
-    transform: rotate(180deg);
-}
-.TextButton_base_b6:hover .TextButton_shine_e2 {
-    opacity: 1;
-}
-.TextButton_base_b6:active .TextButton_shine_e2 {
-    opacity: 0;
+
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8c8c7e;
 }
 
 .RankEmblem_base_ec {
@@ -641,204 +603,236 @@
     bottom: 50rem;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
-/* should be percentage of screen width */
-@keyframes Background_fadeIn_b6 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes Background_fadeInThreeQuarters_35 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0.75;
-    }
-}
-@keyframes Background_fadeInHalf_38 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0.5;
-    }
-}
-@keyframes Background_fadeOut_4b {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes Background_fadeInWithScale_bd {
-    0% {
-        opacity: 0;
-        transform: scale(1.2);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-@keyframes Background_slideUp_02 {
-    0% {
-        opacity: 0;
-        transform: translateY(50%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes Background_scale_d6 {
-    0% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-@keyframes Background_raysAppearance_69 {
-    0% {
-        opacity: 0;
-        transform: translateY(20rem);
-    }
-
-    100% {
-        opacity: 0.2;
-        transform: translateY(0);
-    }
-}
-@keyframes Background_rotate_9c {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-@keyframes Background_reverse-rotate_f7 {
-    from {
-        transform: rotate(360deg);
-    }
-
-    to {
-        transform: rotate(0deg);
-    }
-}
-@keyframes Background_glowAppearance_54 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes Background_highlightAppearance_0a {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0.8;
-    }
-}
-@keyframes Background_blink_d3 {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.2;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes Background_slideUpIn_6e {
-    from {
-        opacity: 0;
-        transform: translateY(50rem);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.Background_base_71 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.TextButton_base_b6 {
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #0d1227;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
 }
-.Background_content_d5 {
+
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+.TextButton_icon__forward_59 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
+.TextButton_icon__close_53 {
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
+.TextButton_icon__info_33 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
     position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    transition: opacity 0.16s;
 }
-.Background_background_d5 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: no-repeat center / cover;
+.TextButton_icon__back_43 .TextButton_glow_a4,
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_glow_a4 {
+    opacity: 0;
+}
+.TextButton_caption_82 {
+    position: relative;
     transition:
-        filter 1s,
-        transform 1s;
+        color 0.16s,
+        text-shadow 0.16s;
 }
-.Background_background__blurred_74 {
-    filter: blur(10px);
-    mix-blend-mode: normal;
+.TextButton_caption__back_b9,
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
 }
-
-.QualificationBackground_base_81 {
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
+.TextButton_caption__info_23 {
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+    margin-left: 8rem;
+}
+.TextButton_base__right_39 .TextButton_goto_e7 {
+    margin-right: 8rem;
+}
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: no-repeat center / cover;
-    transition:
-        filter 1s,
-        transform 1s;
+    top: -4rem;
+    transition: opacity 0.16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+    left: -4rem;
+}
+.TextButton_base__right_39 .TextButton_shine_e2 {
+    right: -4rem;
+    transform: rotate(180deg);
+}
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_shine_e2 {
+    opacity: 0;
 }
 
-.QualificationBackground_base__blurred_79 {
-    filter: blur(10px);
-    mix-blend-mode: normal;
+.AppContainer_base_1f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50rem;
+    padding-bottom: 50rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.mediaLarge .AppContainer_base_1f {
+    padding-bottom: 80rem;
+}
+.mediaExtraLarge .AppContainer_base_1f {
+    padding-top: 100rem;
+    padding-bottom: 100rem;
 }
 
-.QualificationBackground_qualification_cf {
+.AppContainer_close_4d {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: no-repeat center / cover;
+    top: 40rem;
+    right: 40rem;
+    z-index: 1;
+}
+
+.AppHeader_base_e4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #f2f2f7;
+    position: relative;
+}
+
+.AppHeader_description_7a {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaMedium .AppHeader_description_7a {
+    color: #f2f2f7;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.AppHeader_title_92 {
+    margin-top: 8rem;
+    margin-bottom: 16rem;
+    text-align: center;
+    white-space: pre-wrap;
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaMedium .AppHeader_title_92 {
+    color: #f2f2f7;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 4rem;
+}
+
+.mediaExtraLarge .AppHeader_title_92 {
+    color: #f2f2f7;
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.AppHeader_subTitle_c6 {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaMedium .AppHeader_subTitle_c6 {
+    color: #f2f2f7;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .CButton_base_40 {
@@ -903,6 +897,10 @@
 
 .CButton_base__medium_74 {
     min-height: 32rem;
+}
+
+.CButton_base__large_5c {
+    min-height: 48rem;
 }
 
 .CButton_base__disabled_d9 {
@@ -1047,6 +1045,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_base__medium_74 .CButton_content_cc {
     font-size: 15rem;
 }
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
+}
 .CButton_base__disabled_d9 .CButton_content_cc {
     opacity: 0.6;
 }
@@ -1055,20 +1056,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-bottom: 50rem;
-    transition: opacity 0.5s linear;
-}
-.mediaLarge .Buttons_base_c8 {
-    padding-bottom: 80rem;
-}
-.mediaExtraLarge .Buttons_base_c8 {
-    padding-bottom: 100rem;
-}
-.Buttons_base__idle_d3 .Buttons_base_c8 {
-    opacity: 0;
-}
-.Buttons_base__showFooter_75 .Buttons_base_c8 {
-    opacity: 1;
 }
 
 .Buttons_button_f3 {
@@ -1084,172 +1071,118 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-left: 24rem;
 }
 
-.FormatText_base_d0 {
-    display: flex;
-    flex-wrap: wrap;
+.ScreenBackground_base_ad {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0d1227;
 }
 
-.FormatTextWithColorTags_blackReal_3c {
-    color: #000000;
+.ScreenBackground_layer_32 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat center / cover;
+    transition: filter 1s;
 }
 
-.FormatTextWithColorTags_whiteReal_8a {
-    color: #ffffff;
+.ScreenBackground_layer__blurred_52 {
+    filter: blur(10px);
 }
 
-.FormatTextWithColorTags_white_16 {
-    color: #f2f2f7;
+.DivisionApp_achievement_ff {
+    flex: 1 1 auto;
+    position: relative;
+    top: -56rem;
+}
+.mediaLarge .DivisionApp_achievement_ff {
+    top: -25rem;
+}
+.mediaExtraLarge .DivisionApp_achievement_ff {
+    top: -20rem;
 }
 
-.FormatTextWithColorTags_whiteOrange_18 {
-    color: #fefeec;
-}
-
-.FormatTextWithColorTags_whiteSpanish_10 {
-    color: #e9e2bf;
-}
-
-.FormatTextWithColorTags_par_ca {
-    color: #8c8c7e;
-}
-
-.FormatTextWithColorTags_parSecondary_8d {
-    color: #595950;
-}
-
-.FormatTextWithColorTags_parTertiary_a3 {
-    color: #37362e;
-}
-
-.FormatTextWithColorTags_red_60 {
-    color: #ff2717;
-}
-
-.FormatTextWithColorTags_redDark_03 {
-    color: #b70000;
-}
-
-.FormatTextWithColorTags_yellow_ad {
-    color: #feab34;
-}
-
-.FormatTextWithColorTags_orange_e4 {
-    color: #ee7000;
-}
-
-.FormatTextWithColorTags_cream_cd {
-    color: #ffdd99;
-}
-
-.FormatTextWithColorTags_brown_c8 {
-    color: #cbac77;
-}
-
-.FormatTextWithColorTags_greenBright_f0 {
-    color: #80d43a;
-}
-
-.FormatTextWithColorTags_green_c5 {
-    color: #7ab300;
-}
-
-.FormatTextWithColorTags_greenDark_af {
-    color: #497212;
-}
-
-.FormatTextWithColorTags_blueBooster_ac {
-    color: #ccffff;
-}
-
-.FormatTextWithColorTags_blueTeamkiller_6f {
-    color: #09e2ff;
-}
-
-.FormatTextWithColorTags_cred_4e {
-    color: #ced9d9;
-}
-
-.FormatTextWithColorTags_gold_90 {
-    color: #ffc363;
-}
-
-.FormatTextWithColorTags_bond_71 {
-    color: #c9c9b6;
-}
-
-.FormatTextWithColorTags_prom_dd {
-    color: #a29b70;
-}
-
-/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
-
-.FormatTextWithColorTags_parNoWidth_5a {
-    width: 0;
-    color: #8c8c7e;
-}
-
-.Header_base_2f {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.DivisionApp_content_cc {
+    flex: 1 1 auto;
     width: 100%;
-    color: #f2f2f7;
+}
+
+.QualificationBackground_rankBg_f2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat center / cover;
+    filter: blur(0px);
+    opacity: 0;
+    transition:
+        filter 1s,
+        opacity 1s;
+}
+
+.QualificationBackground_rankBg__blurred_dd {
+    filter: blur(10px);
+}
+
+.QualificationBackground_rankBg__active_e5 {
+    opacity: 1;
+}
+
+.QualificationBackground_qualification_57 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat center / cover;
+}
+
+.QualificationApp_header_0b {
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.5s linear;
+}
+
+.showHeader .QualificationApp_header_0b {
+    opacity: 1;
+}
+
+.QualificationApp_qualificationRank_8e {
+    flex: 1 1 auto;
     position: relative;
 }
 
-.Header_description_08 {
-    color: #f2f2f7;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
+.QualificationApp_rewardList_6a {
+    flex: 1 1 auto;
+    position: relative;
 }
 
-.mediaMedium .Header_description_08 {
-    color: #f2f2f7;
-    font-size: 24rem;
-    font-weight: 700;
-    line-height: 1.2;
+.mediaSmall .QualificationApp_rewardList_6a {
+    top: -25rem;
 }
 
-.Header_title_16 {
-    color: #f2f2f7;
-    font-size: 36rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-top: 8rem;
-    margin-bottom: 16rem;
-    text-align: center;
-    white-space: pre-wrap;
+.mediaExtraLarge .QualificationApp_rewardList_6a {
+    top: -45rem;
 }
 
-.mediaMedium .Header_title_16 {
-    color: #f2f2f7;
-    font-size: 56rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-top: 4rem;
+.mediaExtraLarge .QualificationApp_rewardList__singleMainReward_43 {
+    top: -120rem;
 }
 
-.mediaExtraLarge .Header_title_16 {
-    color: #f2f2f7;
-    font-size: 73rem;
-    font-weight: 700;
-    line-height: 1.1;
+.QualificationApp_buttons_35 {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    pointer-events: none;
 }
 
-.Header_subTitle_97 {
-    color: #f2f2f7;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-    display: inline;
-}
-
-.mediaMedium .Header_subTitle_97 {
-    color: #f2f2f7;
-    font-size: 24rem;
-    font-weight: 700;
-    line-height: 1.2;
+.showFooter .QualificationApp_buttons_35 {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* delay should be set always separately only for appearance effect, not hiding */
@@ -1415,97 +1348,99 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation: QualificationBattleItem_blink_3b 1.5s linear 1s forwards infinite;
 }
 
-.BattleItem_base_da {
+.BattleItem_base_a2 {
     width: 68rem;
     height: 68rem;
     position: relative;
 }
-.mediaMedium .BattleItem_base_da {
+.mediaMedium .BattleItem_base_a2 {
     width: 80rem;
     height: 80rem;
 }
 
-.BattleItem_item_45 {
+.BattleItem_item_ee {
     position: absolute;
 }
 
-.QualificationRank_base_ab {
+.QualificationRank_base_6e {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     padding-bottom: 20rem;
-    transition: opacity 0.5s linear;
 }
-.mediaMedium .QualificationRank_base_ab {
+.mediaMedium .QualificationRank_base_6e {
     padding-bottom: 30rem;
 }
-.mediaLarge .QualificationRank_base_ab {
+.mediaLarge .QualificationRank_base_6e {
     padding-bottom: 0;
 }
-.QualificationRank_base__idle_06 {
+
+.QualificationRank_rank_a0 {
+    display: flex;
+    justify-content: center;
     opacity: 0;
+    transition: opacity 0.5s linear;
 }
-.QualificationRank_base__openingContent_32 {
+
+.openingContent .QualificationRank_rank_a0 {
     opacity: 1;
 }
 
-.QualificationRank_rank_d8 {
-    display: flex;
-    justify-content: center;
-}
-
-.QualificationRank_rankAnimation_95 {
+.QualificationRank_rankAnimation_18 {
     width: 320rem;
     height: 320rem;
 }
 
-.mediaLarge .QualificationRank_rankAnimation_95 {
+.mediaLarge .QualificationRank_rankAnimation_18 {
     width: 420rem;
     height: 420rem;
 }
 
-.mediaExtraLarge .QualificationRank_rankAnimation_95 {
+.mediaExtraLarge .QualificationRank_rankAnimation_18 {
     width: 600rem;
     height: 600rem;
 }
 
-.QualificationRank_battleList_c1 {
+.QualificationRank_battleList_12 {
     display: flex;
     justify-content: center;
     margin-bottom: 35rem;
-}
-
-.mediaMedium .QualificationRank_battleList_c1 {
-    margin: 35rem 0 80rem;
-}
-
-.mediaLarge .QualificationRank_battleList_c1 {
-    margin: 15rem 0 110rem;
-}
-
-.mediaExtraLarge .QualificationRank_battleList_c1 {
-    margin: 40rem 0 90rem;
-}
-
-.QualificationRank_battleItem_63 + .QualificationRank_battleItem_63 {
-    margin-left: -13rem;
-}
-
-.mediaMedium .QualificationRank_battleItem_63 + .QualificationRank_battleItem_63 {
-    margin-left: 0;
-}
-
-.QualificationRank_notice_93 {
-    margin-top: 10rem;
+    opacity: 0;
     transition: opacity 0.5s linear;
 }
 
-.QualificationRank_base__idle_06 .QualificationRank_notice_93 {
-    opacity: 0;
+.showBattlesList .QualificationRank_battleList_12 {
+    opacity: 1;
 }
 
-.QualificationRank_base__showFooter_2f .QualificationRank_notice_93 {
+.mediaMedium .QualificationRank_battleList_12 {
+    margin: 35rem 0 80rem;
+}
+
+.mediaLarge .QualificationRank_battleList_12 {
+    margin: 15rem 0 110rem;
+}
+
+.mediaExtraLarge .QualificationRank_battleList_12 {
+    margin: 40rem 0 90rem;
+}
+
+.QualificationRank_battleItem_a9 + .QualificationRank_battleItem_a9 {
+    margin-left: -13rem;
+}
+
+.mediaMedium .QualificationRank_battleItem_a9 + .QualificationRank_battleItem_a9 {
+    margin-left: 0;
+}
+
+.QualificationRank_notice_b3 {
+    margin-top: 10rem;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.showFooter .QualificationRank_notice_b3 {
     opacity: 1;
 }
 
@@ -1844,10 +1779,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .AnimatedReward_base_09.AnimatedReward_entering_44 {
     opacity: 0;
     transform: scale(1.15);
+    pointer-events: none;
 }
 .AnimatedReward_base_09.AnimatedReward_entered_ef {
     opacity: 1;
     transform: scale(1);
+    pointer-events: auto;
 }
 
 .AdditionalRewards_base_fd {
@@ -2366,103 +2303,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     justify-content: center;
     width: 100%;
     height: 100%;
-    padding-top: 65rem;
-}
-.mediaSmall .RewardList_base_63 {
-    padding-top: 75rem;
-}
-.mediaMedium .RewardList_base_63 {
-    padding-top: 65rem;
-}
-.mediaLarge .RewardList_base_63 {
-    padding-top: 110rem;
-}
-.mediaExtraLarge .RewardList_base_63 {
-    padding-top: 150rem;
-}
-.RewardList_base__singleMainReward_32 {
-    padding-top: 40rem;
-}
-.mediaSmall .RewardList_base__singleMainReward_32 {
-    padding-top: 85rem;
-}
-.mediaMedium .RewardList_base__singleMainReward_32 {
-    padding-top: 65rem;
-}
-.mediaLarge .RewardList_base__singleMainReward_32 {
-    padding-top: 55rem;
-}
-.mediaExtraLarge .RewardList_base__singleMainReward_32 {
-    padding-top: 230rem;
-}
-.RewardList_base__shopInfo_0a {
-    padding-top: 20rem;
-    position: relative;
-    z-index: 0;
-}
-.mediaSmall .RewardList_base__shopInfo_0a {
-    padding-top: 32rem;
-}
-.mediaMedium .RewardList_base__shopInfo_0a {
-    padding-top: 57rem;
-}
-.mediaLarge .RewardList_base__shopInfo_0a {
-    padding-top: 95rem;
-}
-.mediaExtraLarge .RewardList_base__shopInfo_0a {
-    padding-top: 218rem;
 }
 .RewardList_additional_c9 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 165rem;
-}
-.mediaSmall .RewardList_additional_c9 {
-    padding-top: 155rem;
-}
-.mediaMedium .RewardList_additional_c9 {
-    padding-top: 110rem;
-}
-.mediaLarge .RewardList_additional_c9 {
-    padding-top: 124rem;
-}
-.mediaExtraLarge .RewardList_additional_c9 {
-    padding-top: 165rem;
-}
-.RewardList_base__singleMainReward_32 .RewardList_additional_c9 {
-    margin-bottom: 10rem;
-    padding-top: 80rem;
-}
-.mediaSmall .RewardList_base__singleMainReward_32 .RewardList_additional_c9 {
-    padding-top: 80rem;
-}
-.mediaLarge .RewardList_base__singleMainReward_32 .RewardList_additional_c9 {
-    padding-top: 60rem;
-}
-.mediaExtraLarge .RewardList_base__singleMainReward_32 .RewardList_additional_c9 {
-    padding-top: 100rem;
-}
-.RewardList_base__shopInfo_0a .RewardList_additional_c9 {
-    margin-bottom: 57rem;
-    padding-top: 42rem;
-}
-.mediaSmall .RewardList_base__shopInfo_0a .RewardList_additional_c9 {
-    margin-bottom: 40rem;
-    padding-top: 46rem;
-}
-.mediaMedium .RewardList_base__shopInfo_0a .RewardList_additional_c9 {
-    margin-bottom: 43rem;
-    padding-top: 53rem;
-}
-.mediaLarge .RewardList_base__shopInfo_0a .RewardList_additional_c9 {
-    margin-bottom: 38rem;
-    padding-top: 78rem;
-}
-.mediaExtraLarge .RewardList_base__shopInfo_0a .RewardList_additional_c9 {
-    margin-bottom: 115rem;
-    padding-top: 120rem;
 }
 .RewardList_additionalTitle_27 {
     opacity: 0;
@@ -2476,22 +2322,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
-    margin-bottom: 10rem;
     animation-delay: var(--additionalTitleDelay);
 }
 .mediaMedium .RewardList_additionalTitle_27 {
-    margin-bottom: 20rem;
     font-size: 15rem;
-}
-.RewardList_base__shopInfo_0a .RewardList_additionalTitle_27 {
-    margin-bottom: 12rem;
 }
 .mediaMedium .RewardList_base__shopInfo_0a .RewardList_additionalTitle_27 {
-    margin-bottom: 10rem;
     font-size: 15rem;
-}
-.mediaLarge .RewardList_base__shopInfo_0a .RewardList_additionalTitle_27 {
-    margin-bottom: 20rem;
 }
 .RewardList_shopInfoContainer_ab {
     opacity: 0;
@@ -2503,234 +2340,750 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-iteration-count: 1;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
-/* should be percentage of screen width */
-@keyframes App_fadeIn_1d {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+.BaseRewardList_base_ed {
+    padding-top: 65rem;
 }
-@keyframes App_fadeInThreeQuarters_e1 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0.75;
-    }
+.mediaSmall .BaseRewardList_base_ed {
+    padding-top: 75rem;
 }
-@keyframes App_fadeInHalf_cc {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0.5;
-    }
+.mediaMedium .BaseRewardList_base_ed {
+    padding-top: 65rem;
 }
-@keyframes App_fadeOut_cf {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
+.mediaLarge .BaseRewardList_base_ed {
+    padding-top: 110rem;
 }
-@keyframes App_fadeInWithScale_6d {
-    0% {
-        opacity: 0;
-        transform: scale(1.2);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+.mediaExtraLarge .BaseRewardList_base_ed {
+    padding-top: 150rem;
 }
-@keyframes App_slideUp_56 {
-    0% {
-        opacity: 0;
-        transform: translateY(50%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.BaseRewardList_base__singleMainReward_4c {
+    padding-top: 40rem;
 }
-@keyframes App_scale_0a {
-    0% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-    }
+.mediaSmall .BaseRewardList_base__singleMainReward_4c {
+    padding-top: 85rem;
 }
-@keyframes App_raysAppearance_55 {
-    0% {
-        opacity: 0;
-        transform: translateY(20rem);
-    }
-
-    100% {
-        opacity: 0.2;
-        transform: translateY(0);
-    }
+.mediaMedium .BaseRewardList_base__singleMainReward_4c {
+    padding-top: 65rem;
 }
-@keyframes App_rotate_0d {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
+.mediaLarge .BaseRewardList_base__singleMainReward_4c {
+    padding-top: 55rem;
 }
-@keyframes App_reverse-rotate_ce {
-    from {
-        transform: rotate(360deg);
-    }
-
-    to {
-        transform: rotate(0deg);
-    }
+.mediaExtraLarge .BaseRewardList_base__singleMainReward_4c {
+    padding-top: 230rem;
 }
-@keyframes App_glowAppearance_14 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes App_highlightAppearance_27 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0.8;
-    }
-}
-@keyframes App_blink_82 {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.2;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes App_slideUpIn_6c {
-    from {
-        opacity: 0;
-        transform: translateY(50rem);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.App_base_39 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+.BaseRewardList_base__shopInfo_78 {
+    padding-top: 20rem;
     position: relative;
+    z-index: 0;
 }
-.App_close_03 {
-    position: absolute;
-    top: 40rem;
-    right: 40rem;
+.mediaSmall .BaseRewardList_base__shopInfo_78 {
+    padding-top: 32rem;
 }
-.App_contentWrapper_a4 {
+.mediaMedium .BaseRewardList_base__shopInfo_78 {
+    padding-top: 57rem;
+}
+.mediaLarge .BaseRewardList_base__shopInfo_78 {
+    padding-top: 95rem;
+}
+.mediaExtraLarge .BaseRewardList_base__shopInfo_78 {
+    padding-top: 218rem;
+}
+
+.BaseRewardList_additionalContainer_bd {
+    padding-top: 165rem;
+}
+
+.mediaSmall .BaseRewardList_additionalContainer_bd {
+    padding-top: 155rem;
+}
+
+.mediaMedium .BaseRewardList_additionalContainer_bd {
+    padding-top: 110rem;
+}
+
+.mediaLarge .BaseRewardList_additionalContainer_bd {
+    padding-top: 124rem;
+}
+
+.mediaExtraLarge .BaseRewardList_additionalContainer_bd {
+    padding-top: 165rem;
+}
+
+.BaseRewardList_base__singleMainReward_4c .BaseRewardList_additionalContainer_bd {
+    margin-bottom: 10rem;
+    padding-top: 80rem;
+}
+
+.mediaSmall .BaseRewardList_base__singleMainReward_4c .BaseRewardList_additionalContainer_bd {
+    padding-top: 80rem;
+}
+
+.mediaLarge .BaseRewardList_base__singleMainReward_4c .BaseRewardList_additionalContainer_bd {
+    padding-top: 60rem;
+}
+
+.mediaExtraLarge .BaseRewardList_base__singleMainReward_4c .BaseRewardList_additionalContainer_bd {
+    padding-top: 100rem;
+}
+
+.BaseRewardList_base__shopInfo_78 .BaseRewardList_additionalContainer_bd {
+    margin-bottom: 57rem;
+    padding-top: 42rem;
+}
+
+.mediaSmall .BaseRewardList_base__shopInfo_78 .BaseRewardList_additionalContainer_bd {
+    margin-bottom: 40rem;
+    padding-top: 46rem;
+}
+
+.mediaMedium .BaseRewardList_base__shopInfo_78 .BaseRewardList_additionalContainer_bd {
+    margin-bottom: 43rem;
+    padding-top: 53rem;
+}
+
+.mediaLarge .BaseRewardList_base__shopInfo_78 .BaseRewardList_additionalContainer_bd {
+    margin-bottom: 38rem;
+    padding-top: 78rem;
+}
+
+.mediaExtraLarge .BaseRewardList_base__shopInfo_78 .BaseRewardList_additionalContainer_bd {
+    margin-bottom: 115rem;
+    padding-top: 120rem;
+}
+
+.BaseRewardList_additionalTitle_b7 {
+    margin-bottom: 10rem;
+}
+
+.mediaMedium .BaseRewardList_additionalTitle_b7 {
+    margin-bottom: 20rem;
+}
+
+.BaseRewardList_base__shopInfo_78 .BaseRewardList_additionalTitle_b7 {
+    margin-bottom: 12rem;
+}
+
+.mediaMedium .BaseRewardList_base__shopInfo_78 .BaseRewardList_additionalTitle_b7 {
+    margin-bottom: 10rem;
+}
+
+.mediaLarge .BaseRewardList_base__shopInfo_78 .BaseRewardList_additionalTitle_b7 {
+    margin-bottom: 20rem;
+}
+
+.RankApp_content_ee {
     flex: 1 1 auto;
     width: 100%;
 }
-.App_content_b2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding-top: 50rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-.mediaExtraLarge .App_content_b2 {
-    padding-top: 100rem;
-}
-.App_header_c7 {
-    transition: opacity 0.5s linear;
-}
-.App_base__idle_8d .App_header_c7 {
-    opacity: 0;
-}
-.App_base__showHeader_dc .App_header_c7 {
-    opacity: 1;
-}
-.App_achievement_7c {
+
+.RankApp_achievement_ea {
     flex: 1 1 auto;
     position: relative;
     top: -56rem;
 }
-.mediaLarge .App_achievement_7c {
+
+.mediaLarge .RankApp_achievement_ea {
     top: -25rem;
 }
-.mediaExtraLarge .App_achievement_7c {
+
+.mediaExtraLarge .RankApp_achievement_ea {
     top: -20rem;
 }
-.App_rewardList_7e {
+
+.RankApp_rewardList_2d {
     flex: 1 1 auto;
     position: relative;
 }
-.mediaSmall .App_rewardList_7e {
+
+.mediaSmall .RankApp_rewardList_2d {
     top: -25rem;
 }
-.mediaExtraLarge .App_rewardList_7e {
+
+.mediaExtraLarge .RankApp_rewardList_2d {
     top: -45rem;
 }
-.mediaExtraLarge .App_rewardList__singleMainReward_ce {
+
+.mediaExtraLarge .RankApp_rewardList__singleMainReward_89 {
     top: -120rem;
 }
-.App_rewardsWithInfo_bb {
+
+.SelectedRewardsApp_content_fb {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+.SelectedRewardsApp_rewardList_95 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 auto;
+}
+
+.SelectedRewardsApp_mainRewards_87 {
+    position: relative;
+    top: -40rem;
+}
+
+.mediaMedium .SelectedRewardsApp_mainRewards_87 {
+    top: -50rem;
+}
+
+.mediaExtraLarge .SelectedRewardsApp_mainRewards_87 {
+    top: -70rem;
+}
+
+.SelectedRewardsApp_rewardList__singleMainReward_de .SelectedRewardsApp_mainRewards_87 {
+    top: -15rem;
+}
+
+.mediaMedium .SelectedRewardsApp_rewardList__singleMainReward_de .SelectedRewardsApp_mainRewards_87 {
+    top: -40rem;
+}
+
+.mediaLarge .SelectedRewardsApp_rewardList__singleMainReward_de .SelectedRewardsApp_mainRewards_87 {
+    top: -10rem;
+}
+
+.mediaExtraLarge .SelectedRewardsApp_rewardList__singleMainReward_de .SelectedRewardsApp_mainRewards_87 {
+    top: -60rem;
+}
+
+.SelectedRewardsApp_rewardLabel_9f {
+    bottom: 0;
+}
+
+.TokensRewardsApp_content_ef {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+.TokensRewardsApp_rewardList_88 {
     flex: 1 1 auto;
     position: relative;
 }
-.mediaSmall .App_rewardsWithInfo_bb {
+
+.mediaSmall .TokensRewardsApp_rewardList_88 {
     top: -25rem;
 }
-.mediaExtraLarge .App_rewardsWithInfo_bb {
+
+.mediaExtraLarge .TokensRewardsApp_rewardList_88 {
     top: -45rem;
 }
-.mediaExtraLarge .App_rewardsWithInfo__singleMainReward_85 {
+
+.mediaExtraLarge .TokensRewardsApp_rewardList__singleMainReward_f3 {
     top: -120rem;
 }
-.App_qualificationRank_5c {
-    flex: 1 1 auto;
-    position: relative;
-    z-index: -1;
-    transition: opacity 0.5s linear;
+
+.LaceDivider_base_1a {
+    display: flex;
+    align-items: center;
+    min-width: 180rem;
 }
-.App_base__idle_8d .App_qualificationRank_5c {
+
+.LaceDivider_lace_7f {
+    display: flex;
+    flex: 1 1;
+    opacity: 0.2;
+}
+
+.LaceDivider_peak_f2 {
+    flex: 0 0 auto;
+    width: 43rem;
+    height: 14rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.venzel_white_43x14') no-repeat center / cover;
+}
+
+.LaceDivider_peak__right_43 {
+    transform: rotateY(180deg);
+}
+
+.LaceDivider_line_0d {
+    flex: 1 1 auto;
+    background: linear-gradient(
+        180deg,
+        transparent 3rem,
+        #c0deef 3rem,
+        #c0deef 4rem,
+        transparent 4rem,
+        transparent 6rem,
+        #c0deef 6rem,
+        #c0deef 7rem,
+        transparent 7rem
+    );
+    background-size: 1rem 14rem;
+}
+
+.SeasonResult_base_e5 {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.SeasonResult_animatedContainer_b7 {
+    width: 48rem;
+    height: 32rem;
+    position: relative;
+}
+
+.SeasonResult_rank_47,
+.SeasonResult_seasonPointsCounter_18 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.SeasonResult_rank_47 {
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.showResultsRanks .SeasonResult_rank_47 {
+    opacity: 1;
+}
+
+.hideResultsRanks .SeasonResult_rank_47 {
     opacity: 0;
 }
-.App_base__openingContent_eb .App_qualificationRank_5c {
+
+.SeasonResult_seasonPointsCounter_18 {
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.showSeasonPoints .SeasonResult_seasonPointsCounter_18 {
     opacity: 1;
+}
+
+.SeasonResult_count_d8 {
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 28rem;
+}
+
+.SeasonResult_icon_43 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / cover;
+}
+
+.SeasonResult_container_75 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8rem;
+}
+
+.SeasonResult_result_cc {
+    font-size: 16rem;
+}
+
+.SeasonResult_seasonName_5d {
+    color: #86a1b6;
+    font-size: 14rem;
+    text-shadow:
+        0 0 4rem #000,
+        0 0 8rem #021a3a,
+        0 0 8rem #888eb2;
+}
+
+.YearResult_base_13 {
+    display: flex;
+    align-items: center;
+}
+
+.YearResult_counter_64 {
+    display: flex;
+    align-items: center;
+}
+
+.YearResult_count_8d {
+    color: #ffffff;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 28rem;
+}
+
+.YearResult_icon_e8 {
+    width: 48rem;
+    height: 48rem;
+    position: relative;
+}
+
+.YearResult_iconBg_ee {
+    width: 48rem;
+    height: 48rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.season_points_48x48') no-repeat center / cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.YearResult_description_60 {
+    margin-left: 8rem;
+    color: #86a1b6;
+    font-size: 14rem;
+    text-shadow:
+        0 0 4rem #000,
+        0 0 8rem #021a3a,
+        0 0 8rem #888eb2;
+}
+
+.SeasonsResultsHeading_base_ac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.showResultsRanks .SeasonsResultsHeading_base_ac {
+    opacity: 1;
+}
+
+.SeasonsResultsHeading_plus_b0 {
+    width: 24rem;
+    height: 24rem;
+    margin: 0 20rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.plus_24x24') no-repeat center / cover;
+}
+
+.SeasonsResultsHeading_divider_e9 {
+    width: 1rem;
+    height: 60rem;
+    margin: 0 32rem;
+    background: linear-gradient(180deg, transparent, #6e84a8 50%, transparent);
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.yearResult .SeasonsResultsHeading_divider_e9 {
+    opacity: 1;
+}
+
+.SeasonsResultsHeading_yearResult_5f {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.yearResult .SeasonsResultsHeading_yearResult_5f {
+    opacity: 1;
+}
+
+.YearlyAwardsBackground_base_10 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #050b13;
+}
+
+.YearlyAwardsBackground_background_53,
+.YearlyAwardsBackground_baseVehicleBg_02,
+.YearlyAwardsBackground_highlightedVehicleBg_4b {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat center / 1537rem 768rem;
+}
+
+.mediaMedium .YearlyAwardsBackground_background_53,
+.mediaMedium .YearlyAwardsBackground_baseVehicleBg_02,
+.mediaMedium .YearlyAwardsBackground_highlightedVehicleBg_4b {
+    background-size: 1800rem 900rem;
+}
+
+.mediaLarge .YearlyAwardsBackground_background_53,
+.mediaLarge .YearlyAwardsBackground_baseVehicleBg_02,
+.mediaLarge .YearlyAwardsBackground_highlightedVehicleBg_4b {
+    background-size: 2332rem 1164rem;
+}
+
+.mediaExtraLarge .YearlyAwardsBackground_background_53,
+.mediaExtraLarge .YearlyAwardsBackground_baseVehicleBg_02,
+.mediaExtraLarge .YearlyAwardsBackground_highlightedVehicleBg_4b {
+    background-size: cover;
+}
+
+.YearlyAwardsBackground_baseVehicleBg_02 {
+    background-image: url('R.images.gui.maps.icons.comp7.backgrounds.yearly_vehicle_bg');
+}
+
+.YearlyAwardsBackground_highlightedVehicleBg_4b {
+    background-image: url('R.images.gui.maps.icons.comp7.backgrounds.active_yearly_vehicle_bg');
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.changeVehicleBg .YearlyAwardsBackground_highlightedVehicleBg_4b {
+    opacity: 1;
+}
+
+.YearlyAwardsApp_content_30 {
+    flex: 1 1 auto;
+    width: 100%;
+    z-index: 1;
+}
+
+.YearlyAwardsApp_header_5e {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.showHeader .YearlyAwardsApp_header_5e {
+    opacity: 1;
+}
+
+.YearlyAwardsApp_laceBase_27 {
+    width: 800rem;
+}
+
+.mediaSmall .YearlyAwardsApp_laceBase_27 {
+    width: 850rem;
+}
+
+.mediaMedium .YearlyAwardsApp_laceBase_27 {
+    width: 900rem;
+}
+
+.mediaLarge .YearlyAwardsApp_laceBase_27 {
+    width: 960rem;
+}
+
+.mediaExtraLarge .YearlyAwardsApp_laceBase_27 {
+    width: 1200rem;
+}
+
+.YearlyAwardsApp_laceContainer_b5 {
+    filter: drop-shadow(0 5rem 10rem #70a9ff);
+    opacity: 0.5;
+    transform: translateY(4rem);
+}
+
+.mediaMedium .YearlyAwardsApp_laceContainer_b5 {
+    transform: translateY(6rem);
+}
+
+.mediaExtraLarge .YearlyAwardsApp_laceContainer_b5 {
+    transform: translateY(8rem);
+}
+
+.YearlyAwardsApp_titleInner_d7 {
+    padding: 0 36rem;
+}
+
+.mediaMedium .YearlyAwardsApp_titleInner_d7 {
+    padding: 0 50rem;
+}
+
+.YearlyAwardsApp_yearlyVehicle_f1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 1 auto;
+    margin-bottom: 46rem;
+    opacity: 0;
+    position: relative;
+    transition: opacity 0.5s linear;
+    pointer-events: none;
+}
+
+.mediaMedium .YearlyAwardsApp_yearlyVehicle_f1 {
+    margin-bottom: 56rem;
+}
+
+.mediaLarge .YearlyAwardsApp_yearlyVehicle_f1 {
+    margin-bottom: 76rem;
+}
+
+.mediaExtraLarge .YearlyAwardsApp_yearlyVehicle_f1 {
+    margin-bottom: 146rem;
+}
+
+.showContent .YearlyAwardsApp_yearlyVehicle_f1 {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.YearlyAwardsApp_rewardList_fa {
+    flex: 1 1 auto;
+}
+
+.YearlyAwardsApp_mainRewards_bc {
+    position: relative;
+    top: -60rem;
+}
+
+.mediaSmall .YearlyAwardsApp_mainRewards_bc {
+    top: -50rem;
+}
+
+.mediaMedium .YearlyAwardsApp_mainRewards_bc {
+    top: -60rem;
+}
+
+.mediaLarge .YearlyAwardsApp_mainRewards_bc {
+    top: -60rem;
+}
+
+.mediaExtraLarge .YearlyAwardsApp_mainRewards_bc {
+    top: -110rem;
+}
+
+.YearlyAwardsApp_rewardInfo_44 {
+    font-size: 20rem;
+    font-weight: 700;
+}
+
+.mediaLarge .YearlyAwardsApp_rewardInfo_44 {
+    font-size: 28rem;
+}
+
+.YearlyAwardsApp_rewardList__singleMainReward_8a .YearlyAwardsApp_ribbon_f1 {
+    top: 60rem;
+}
+
+.YearlyAwardsApp_additionalRewardsContainer_08 {
+    position: relative;
+    bottom: -20rem;
+}
+
+.mediaSmall .YearlyAwardsApp_additionalRewardsContainer_08 {
+    bottom: -20rem;
+}
+
+.mediaMedium .YearlyAwardsApp_additionalRewardsContainer_08 {
+    bottom: -30rem;
+}
+
+.mediaLarge .YearlyAwardsApp_additionalRewardsContainer_08 {
+    bottom: -40rem;
+}
+
+.mediaExtraLarge .YearlyAwardsApp_additionalRewardsContainer_08 {
+    bottom: -20rem;
+}
+
+.YearlyAwardsApp_additionalTitle_1e {
+    margin-bottom: 20rem;
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+}
+
+.YearlyAwardsApp_reward_ea {
+    padding: 0 10rem;
+}
+
+.mediaMedium .YearlyAwardsApp_reward_ea {
+    padding: 0 14rem;
+}
+
+.YearlyAwardsApp_yearlyVehicle_f1 .YearlyAwardsApp_vehicleName_e8 {
+    margin-bottom: 12rem;
+    font-size: 28rem;
+}
+
+.YearlyAwardsApp_buttons_7e {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    pointer-events: none;
+}
+
+.showButtons .YearlyAwardsApp_buttons_7e {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.VehicleName_base_3b {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.VehicleName_base__24x24_a7,
+.VehicleName_base__24x24_metal_92 {
+    font-size: 14rem;
+}
+
+.VehicleName_base__48x48_6a {
+    font-size: 22rem;
+    font-weight: 700;
+}
+
+.VehicleName_base__64x64_d2 {
+    font-size: 22rem;
+    font-weight: 700;
+}
+
+.VehicleName_base__83x74_ba {
+    font-size: 24rem;
+    font-weight: 700;
+}
+
+.VehicleName_vehicleTypeContainer_f2 {
+    position: relative;
+}
+
+.VehicleName_base__24x24_a7 .VehicleName_vehicleTypeContainer_f2,
+.VehicleName_base__24x24_metal_92 .VehicleName_vehicleTypeContainer_f2 {
+    width: 24rem;
+}
+
+.VehicleName_base__48x48_6a .VehicleName_vehicleTypeContainer_f2 {
+    width: 48rem;
+}
+
+.VehicleName_base__60x54_08 .VehicleName_vehicleTypeContainer_f2 {
+    width: 40rem;
+}
+
+.VehicleName_base__64x64_d2 .VehicleName_vehicleTypeContainer_f2 {
+    width: 64rem;
+}
+
+.VehicleName_base__83x74_ba .VehicleName_vehicleTypeContainer_f2 {
+    width: 55rem;
+}
+
+.VehicleName_vehicleType_c3 {
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.VehicleName_base__24x24_a7 .VehicleName_vehicleType_c3,
+.VehicleName_base__24x24_metal_92 .VehicleName_vehicleType_c3 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.VehicleName_base__48x48_6a .VehicleName_vehicleType_c3 {
+    width: 48rem;
+    height: 48rem;
+}
+
+.VehicleName_base__60x54_08 .VehicleName_vehicleType_c3 {
+    width: 60rem;
+    height: 54rem;
+}
+
+.VehicleName_base__64x64_d2 .VehicleName_vehicleType_c3 {
+    width: 64rem;
+    height: 64rem;
+}
+
+.VehicleName_base__83x74_ba .VehicleName_vehicleType_c3 {
+    width: 83rem;
+    height: 74rem;
 }

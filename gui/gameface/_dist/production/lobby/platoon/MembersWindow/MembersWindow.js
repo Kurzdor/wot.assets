@@ -809,6 +809,7 @@
                         base__extraSmall: 'CButton_base__extraSmall_27',
                         base__small: 'CButton_base__small_df',
                         base__medium: 'CButton_base__medium_74',
+                        base__large: 'CButton_base__large_5c',
                         base__disabled: 'CButton_base__disabled_d9',
                         back: 'CButton_back_e5',
                         texture: 'CButton_texture_fe',
@@ -831,7 +832,7 @@
                         (e.ghost = 'ghost');
                 })(D || (D = {})),
                     (function (e) {
-                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium');
+                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium'), (e.large = 'large');
                     })(C || (C = {}));
                 const B = ({
                     children: e,
@@ -1898,13 +1899,13 @@
                                       ),
                               );
                     },
-                    ou = (e) => {
-                        const u = (0, i.useRef)();
+                    ou = (e, u) => {
+                        const t = (0, i.useRef)();
                         return (
                             (0, i.useEffect)(() => {
-                                u.current = e;
-                            }, [e]),
-                            u.current
+                                (u && !u(e)) || (t.current = e);
+                            }, [u, e]),
+                            t.current
                         );
                     };
                 var su = t(281);

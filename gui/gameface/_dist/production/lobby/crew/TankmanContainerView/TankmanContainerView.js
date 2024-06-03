@@ -157,7 +157,7 @@
                             (e.ghost = 'ghost');
                     })(n || (n = {})),
                     (function (e) {
-                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium');
+                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium'), (e.large = 'large');
                     })(r || (r = {}));
             },
             9987: (e, t, a) => {
@@ -645,7 +645,7 @@
                         o(
                             {
                                 ref: v,
-                                onClick:
+                                onMouseDown:
                                     ((f = g.props.onClick),
                                     (e) => {
                                         E && (h(), _ && _(e), f && f(e));
@@ -3281,12 +3281,32 @@
             },
             3310: (e, t, a) => {
                 'use strict';
-                a.d(t, { s: () => d });
+                a.d(t, { s: () => _ });
                 var n = a(3649),
                     r = a(6799),
                     s = a(6960),
                     i = a(9053);
-                const l = i.u6
+                const l = new RegExp('[฀-๿][ัำ-ฺ็-๎]*', 'gu'),
+                    o = (e) => {
+                        const t = [];
+                        return (
+                            (0, s.Z)(
+                                e,
+                                /\S\s+/g,
+                                (e) => {
+                                    var a;
+                                    R.strings.settings.LANGUAGE_CODE().toLowerCase() === i.Co
+                                        ? t.push(...((a = e), a.match(l) || []))
+                                        : t.push(...e.split(''));
+                                },
+                                (e) => {
+                                    t.push(e[0]);
+                                },
+                            ),
+                            t
+                        );
+                    },
+                    u = i.u6
                         ? (e) => {
                               const t = [];
                               return (
@@ -3297,24 +3317,7 @@
                                           t.push(e);
                                       },
                                       (e) => {
-                                          t.push(
-                                              ...((e) => {
-                                                  const t = [];
-                                                  return (
-                                                      (0, s.Z)(
-                                                          e,
-                                                          /\S\s+/g,
-                                                          (e) => {
-                                                              t.push(...e.split(''));
-                                                          },
-                                                          (e) => {
-                                                              t.push(e[0]);
-                                                          },
-                                                      ),
-                                                      t
-                                                  );
-                                              })(e[0]),
-                                          );
+                                          t.push(...o(e[0]));
                                       },
                                   ),
                                   t
@@ -3329,14 +3332,14 @@
                               for (; a; ) n.push(e.slice(r, t.lastIndex)), (r = t.lastIndex), (a = t.exec(e));
                               return r !== e.length && n.push(e.slice(r)), n;
                           },
-                    o = (e, t = '') => {
+                    c = (e, t = '') => {
                         const a = [];
                         return (
                             (0, s.Z)(
                                 e,
                                 /(\n+|[\xa0\ufeff]+)/g,
                                 (e) => {
-                                    a.push({ blockType: i.kH.Word, colorTag: t, childList: l(e) });
+                                    a.push({ blockType: i.kH.Word, colorTag: t, childList: u(e) });
                                 },
                                 (e) => {
                                     const n = e[0],
@@ -3366,27 +3369,27 @@
                             a
                         );
                     },
-                    u = (e, t, a = '') => {
+                    d = (e, t, a = '') => {
                         const n = [];
                         return (
                             (0, s.Z)(
                                 e,
                                 /(?:%\(|{)(.*?)[)}][sd]?/g,
                                 (e) => {
-                                    n.push(...o(e, a));
+                                    n.push(...c(e, a));
                                 },
                                 (e) => {
                                     const r = e[1],
                                         s = void 0 === t[r] ? e[0] : t[r];
                                     'string' == typeof s || 'number' == typeof s
-                                        ? n.push(...o(String(s), a))
+                                        ? n.push(...c(String(s), a))
                                         : n.push({ blockType: i.kH.Binding, colorTag: a, childList: [s] });
                                 },
                             ),
                             n
                         );
                     },
-                    c = (e, t) => {
+                    m = (e, t) => {
                         if (!e) return [t];
                         const a = [],
                             n = Object.assign({}, t, { childList: t.childList.splice(0, 1) });
@@ -3398,7 +3401,7 @@
                         }
                         return t.childList.length > 0 && a.push(t), a;
                     },
-                    d = (e, t = {}) => {
+                    _ = (e, t = {}) => {
                         if (!e) return [];
                         const a = ((e) => {
                             const t = [];
@@ -3406,8 +3409,8 @@
                             return (
                                 e.forEach((e) => {
                                     e.blockType === i.kH.NoBreakSymbol
-                                        ? ((a = !0), t.push(...c(t.pop(), e)))
-                                        : (a ? t.push(...c(t.pop(), e)) : t.push(e), (a = !1));
+                                        ? ((a = !0), t.push(...m(t.pop(), e)))
+                                        : (a ? t.push(...m(t.pop(), e)) : t.push(e), (a = !1));
                                 }),
                                 t
                             );
@@ -3419,10 +3422,10 @@
                                         e,
                                         /(?:%\(|{)(\w*)(?:_[Oo]pen|_Start)(?:\)s|})([\s\S]*?)(?:%\(|{)\w*(?:_[Cc]lose|_End)(?:\)s|})/g,
                                         (e) => {
-                                            a.push(...u(e, t));
+                                            a.push(...d(e, t));
                                         },
                                         (e) => {
-                                            a.push(...u(e[2], t, e[1]));
+                                            a.push(...d(e[2], t, e[1]));
                                         },
                                     ),
                                     a
@@ -3574,7 +3577,16 @@
             9053: (e, t, a) => {
                 'use strict';
                 let n, r, s;
-                a.d(t, { YA: () => l, aF: () => u, bF: () => o, dz: () => i, kH: () => n, u6: () => c, v2: () => r }),
+                a.d(t, {
+                    Co: () => c,
+                    YA: () => l,
+                    aF: () => u,
+                    bF: () => o,
+                    dz: () => i,
+                    kH: () => n,
+                    u6: () => d,
+                    v2: () => r,
+                }),
                     (function (e) {
                         (e[(e.Word = 0)] = 'Word'),
                             (e[(e.LineBreak = 1)] = 'LineBreak'),
@@ -3593,9 +3605,8 @@
                     l = '...',
                     o = 'data-block-type',
                     u = { [s.NBSP]: n.NoBreakSymbol, [s.ZWNBSP]: n.NoBreakSymbol, [s.NEW_LINE]: n.LineBreak },
-                    c = ['zh_cn', 'zh_sg', 'zh_tw', 'ja', 'th'].includes(
-                        R.strings.settings.LANGUAGE_CODE().toLowerCase(),
-                    );
+                    c = 'th',
+                    d = ['zh_cn', 'zh_sg', 'zh_tw', 'ja', c].includes(R.strings.settings.LANGUAGE_CODE().toLowerCase());
             },
             597: (e, t, a) => {
                 'use strict';
@@ -5006,8 +5017,8 @@
                     m = i().memo(function ({ from: e, to: t, className: a }) {
                         return i().createElement(
                             'div',
-                            { className: r()(l, 0 === e && o, a) },
-                            i().createElement('div', { className: r()(u, 0 === e && t > 0 && c) }, e),
+                            { className: r()(l, e <= 0 && o, a) },
+                            i().createElement('div', { className: r()(u, e <= 0 && t > 0 && c) }, e),
                             e !== t &&
                                 i().createElement(
                                     i().Fragment,
@@ -6127,15 +6138,15 @@
                     });
                 var U = a(4385),
                     q = a(5139);
-                function Y(e, t, a) {
-                    const r = (0, n.useMemo)(
+                function Y(e, t, a, r = !1) {
+                    const s = (0, n.useMemo)(
                         () =>
                             (function (e, t, a) {
                                 return void 0 === a ? (0, q.Z)(e, t, !1) : (0, q.Z)(e, a, !1 !== t);
-                            })(a, e),
+                            })(a, r, e),
                         t,
                     );
-                    return (0, n.useEffect)(() => r.cancel, [r]), r;
+                    return (0, n.useEffect)(() => s.cancel, [s]), s;
                 }
                 var X = a(7078),
                     K = a(2603),
@@ -10377,6 +10388,7 @@
                     base__extraSmall: 'CButton_base__extraSmall_27',
                     base__small: 'CButton_base__small_df',
                     base__medium: 'CButton_base__medium_74',
+                    base__large: 'CButton_base__large_5c',
                     base__disabled: 'CButton_base__disabled_d9',
                     back: 'CButton_back_e5',
                     texture: 'CButton_texture_fe',

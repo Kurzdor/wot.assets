@@ -19,6 +19,7 @@
                     base__extraSmall: 'CButton_base__extraSmall_27',
                     base__small: 'CButton_base__small_df',
                     base__medium: 'CButton_base__medium_74',
+                    base__large: 'CButton_base__large_5c',
                     base__disabled: 'CButton_base__disabled_d9',
                     back: 'CButton_back_e5',
                     texture: 'CButton_texture_fe',
@@ -43,9 +44,9 @@
                     soundClick: m,
                     onMouseEnter: d,
                     onMouseMove: f,
-                    onMouseDown: h,
-                    onMouseUp: v,
-                    onMouseLeave: g,
+                    onMouseDown: g,
+                    onMouseUp: h,
+                    onMouseLeave: v,
                     onClick: p,
                 }) => {
                     const C = (0, o.useRef)(null),
@@ -87,21 +88,21 @@
                         ),
                         j = (0, o.useCallback)(
                             (e) => {
-                                u || (v && v(e), H(!1));
+                                u || (h && h(e), H(!1));
                             },
-                            [u, v],
+                            [u, h],
                         ),
                         D = (0, o.useCallback)(
                             (e) => {
-                                u || (null !== m && (0, r.G)(m), h && h(e), a && G(), H(!0));
+                                u || (null !== m && (0, r.G)(m), g && g(e), a && G(), H(!0));
                             },
-                            [u, m, h, G, a],
+                            [u, m, g, G, a],
                         ),
                         F = (0, o.useCallback)(
                             (e) => {
-                                u || (g && g(e), H(!1));
+                                u || (v && v(e), H(!1));
                             },
-                            [u, g],
+                            [u, v],
                         ),
                         P = n()(
                             l.base,
@@ -178,7 +179,7 @@
                             (e.ghost = 'ghost');
                     })(s || (s = {})),
                     (function (e) {
-                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium');
+                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium'), (e.large = 'large');
                     })(n || (n = {}));
             },
             7727: (e, t, a) => {

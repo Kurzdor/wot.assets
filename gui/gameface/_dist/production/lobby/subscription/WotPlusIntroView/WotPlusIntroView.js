@@ -1129,23 +1129,22 @@
                     U = [b.ExtraLarge, b.Large, b.Medium, b.Small, b.ExtraSmall],
                     j = (u, e) =>
                         Object.keys(u).reduce((t, r) => {
-                            const a = String(r);
-                            if (a in t) return t;
-                            if (G(a)) {
-                                const r = a.split('_').slice(0, -1).join('_');
-                                if (r in t) return t;
+                            if (r in t) return t;
+                            if (G(r)) {
+                                const a = r.split('_').slice(0, -1).join('_');
+                                if (a in t) return t;
                                 const n = U.indexOf(e),
                                     i = (-1 !== n ? I.slice(n) : [])
-                                        .map((u) => r + '_' + u)
+                                        .map((u) => a + '_' + u)
                                         .find((e) => void 0 !== u[e]),
                                     E = i ? u[i] : void 0;
-                                return (t[r] = void 0 !== E ? E : u[r]), t;
+                                return (t[a] = void 0 !== E ? E : u[a]), t;
                             }
-                            const n = u[a];
+                            const a = u[r];
                             return (
-                                void 0 === n ||
-                                    ((u, e) => I.some((t) => void 0 !== e[`${u}_${t}`]))(a, u) ||
-                                    (t[a] = n),
+                                void 0 === a ||
+                                    ((u, e) => I.some((t) => void 0 !== e[`${u}_${t}`]))(r, u) ||
+                                    (t[r] = a),
                                 t
                             );
                         }, {}),
@@ -1159,7 +1158,7 @@
                             }
                         )(u, e);
                         return a().memo((e) =>
-                            Object.keys(e).some((u) => G(String(u)) && void 0 !== e[u])
+                            Object.keys(e).some((u) => G(u) && void 0 !== e[u])
                                 ? a().createElement(t, e)
                                 : a().createElement(u, e),
                         );
@@ -1345,6 +1344,7 @@
                     base__extraSmall: 'CButton_base__extraSmall_27',
                     base__small: 'CButton_base__small_df',
                     base__medium: 'CButton_base__medium_74',
+                    base__large: 'CButton_base__large_5c',
                     base__disabled: 'CButton_base__disabled_d9',
                     back: 'CButton_back_e5',
                     texture: 'CButton_texture_fe',
@@ -1367,7 +1367,7 @@
                         (u.ghost = 'ghost');
                 })(uu || (uu = {})),
                     (function (u) {
-                        (u.extraSmall = 'extraSmall'), (u.small = 'small'), (u.medium = 'medium');
+                        (u.extraSmall = 'extraSmall'), (u.small = 'small'), (u.medium = 'medium'), (u.large = 'large');
                     })(eu || (eu = {}));
                 const tu = ({
                     children: u,

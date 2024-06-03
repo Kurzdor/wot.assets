@@ -1534,7 +1534,27 @@
                         for (; r; ) o !== r.index && t(u.slice(o, r.index)), n(r), (o = e.lastIndex), (r = e.exec(u));
                         o !== u.length && t(u.slice(o));
                     },
-                    Bu = ru
+                    Bu = new RegExp('[฀-๿][ัำ-ฺ็-๎]*', 'gu'),
+                    _u = (u) => {
+                        const e = [];
+                        return (
+                            Du(
+                                u,
+                                /\S\s+/g,
+                                (u) => {
+                                    var t;
+                                    'th' === R.strings.settings.LANGUAGE_CODE().toLowerCase()
+                                        ? e.push(...((t = u), t.match(Bu) || []))
+                                        : e.push(...u.split(''));
+                                },
+                                (u) => {
+                                    e.push(u[0]);
+                                },
+                            ),
+                            e
+                        );
+                    },
+                    Cu = ru
                         ? (u) => {
                               const e = [];
                               return (
@@ -1545,24 +1565,7 @@
                                           e.push(u);
                                       },
                                       (u) => {
-                                          e.push(
-                                              ...((u) => {
-                                                  const e = [];
-                                                  return (
-                                                      Du(
-                                                          u,
-                                                          /\S\s+/g,
-                                                          (u) => {
-                                                              e.push(...u.split(''));
-                                                          },
-                                                          (u) => {
-                                                              e.push(u[0]);
-                                                          },
-                                                      ),
-                                                      e
-                                                  );
-                                              })(u[0]),
-                                          );
+                                          e.push(..._u(u[0]));
                                       },
                                   ),
                                   e
@@ -1577,14 +1580,14 @@
                               for (; t; ) n.push(u.slice(r, e.lastIndex)), (r = e.lastIndex), (t = e.exec(u));
                               return r !== u.length && n.push(u.slice(r)), n;
                           },
-                    _u = (u, e = '') => {
+                    pu = (u, e = '') => {
                         const t = [];
                         return (
                             Du(
                                 u,
                                 /(\n+|[\xa0\ufeff]+)/g,
                                 (u) => {
-                                    t.push({ blockType: uu.Word, colorTag: e, childList: Bu(u) });
+                                    t.push({ blockType: uu.Word, colorTag: e, childList: Cu(u) });
                                 },
                                 (u) => {
                                     const n = u[0],
@@ -1614,27 +1617,27 @@
                             t
                         );
                     },
-                    Cu = (u, e, t = '') => {
+                    mu = (u, e, t = '') => {
                         const n = [];
                         return (
                             Du(
                                 u,
                                 /(?:%\(|{)(.*?)[)}][sd]?/g,
                                 (u) => {
-                                    n.push(..._u(u, t));
+                                    n.push(...pu(u, t));
                                 },
                                 (u) => {
                                     const r = u[1],
                                         o = void 0 === e[r] ? u[0] : e[r];
                                     'string' == typeof o || 'number' == typeof o
-                                        ? n.push(..._u(String(o), t))
+                                        ? n.push(...pu(String(o), t))
                                         : n.push({ blockType: uu.Binding, colorTag: t, childList: [o] });
                                 },
                             ),
                             n
                         );
                     },
-                    pu = (u, e) => {
+                    hu = (u, e) => {
                         if (!u) return [e];
                         const t = [],
                             n = Object.assign({}, e, { childList: e.childList.splice(0, 1) });
@@ -1646,7 +1649,7 @@
                         }
                         return e.childList.length > 0 && t.push(e), t;
                     },
-                    mu = (u, e = {}) => {
+                    bu = (u, e = {}) => {
                         if (!u) return [];
                         const t = ((u) => {
                             const e = [];
@@ -1654,8 +1657,8 @@
                             return (
                                 u.forEach((u) => {
                                     u.blockType === uu.NoBreakSymbol
-                                        ? ((t = !0), e.push(...pu(e.pop(), u)))
-                                        : (t ? e.push(...pu(e.pop(), u)) : e.push(u), (t = !1));
+                                        ? ((t = !0), e.push(...hu(e.pop(), u)))
+                                        : (t ? e.push(...hu(e.pop(), u)) : e.push(u), (t = !1));
                                 }),
                                 e
                             );
@@ -1667,10 +1670,10 @@
                                         u,
                                         /(?:%\(|{)(\w*)(?:_[Oo]pen|_Start)(?:\)s|})([\s\S]*?)(?:%\(|{)\w*(?:_[Cc]lose|_End)(?:\)s|})/g,
                                         (u) => {
-                                            t.push(...Cu(u, e));
+                                            t.push(...mu(u, e));
                                         },
                                         (u) => {
-                                            t.push(...Cu(u[2], e, u[1]));
+                                            t.push(...mu(u[2], e, u[1]));
                                         },
                                     ),
                                     t
@@ -1679,12 +1682,12 @@
                         );
                         return du(t);
                     },
-                    hu = (u, e) => !u || u.offsetTop + u.offsetHeight > e,
-                    bu = (u, e) => u.offsetLeft + u.offsetWidth - e,
-                    vu = (u, e, t) => {
+                    vu = (u, e) => !u || u.offsetTop + u.offsetHeight > e,
+                    gu = (u, e) => u.offsetLeft + u.offsetWidth - e,
+                    wu = (u, e, t) => {
                         if (!u || !u.textContent) return [!1, 0];
                         if (u.offsetLeft > e) return [!1, 0];
-                        const n = bu(u, e),
+                        const n = gu(u, e),
                             r = u.textContent.length,
                             o = u.offsetWidth / r,
                             i = Math.ceil(n / o);
@@ -1695,7 +1698,7 @@
                         const a = Math.max(t + i, 0);
                         return r < a ? [!1, 0] : [!0, a];
                     },
-                    gu = (u, e, t, n, r, o) => {
+                    fu = (u, e, t, n, r, o) => {
                         let i = -1,
                             s = null;
                         for (let l = t; l >= 0; l--) {
@@ -1704,7 +1707,7 @@
                             if (c === uu.LineBreak || c === uu.NewLine || c === uu.Binding) continue;
                             const E = t.textContent || '';
                             if (!(t.childElementCount > 1)) {
-                                const u = vu(t, n, r),
+                                const u = wu(t, n, r),
                                     c = u[0],
                                     A = u[1];
                                 if (!c) {
@@ -1720,7 +1723,7 @@
                                 const u = t.children,
                                     c = e[l],
                                     A = c.props.children,
-                                    F = gu(u, A, u.length - 1, n, r, o),
+                                    F = fu(u, A, u.length - 1, n, r, o),
                                     d = F[0],
                                     D = F[1];
                                 if (!(d < 0)) {
@@ -1733,31 +1736,31 @@
                         }
                         return [i, s];
                     },
-                    wu = (u, e, t, n = '...') => {
+                    ku = (u, e, t, n = '...') => {
                         const r = [...e],
                             o = u.current;
                         if (!o) return [r, !1];
                         const i = t.height,
                             a = t.width,
                             s = o.lastElementChild;
-                        if (!hu(s, i) && bu(s, a) <= 0) return [r, !1];
+                        if (!vu(s, i) && gu(s, a) <= 0) return [r, !1];
                         const l = o.children,
                             c = ((u, e) => {
                                 let t = 0,
                                     n = u.length - 1;
                                 for (; n - t >= 0; ) {
                                     const r = t + Math.ceil(0.5 * (n - t));
-                                    hu(u[r], e) ? (n = r - 1) : (t = r + 1);
+                                    vu(u[r], e) ? (n = r - 1) : (t = r + 1);
                                 }
                                 return t - 1;
                             })(l, i);
                         if (c < 0) return [r, !1];
-                        const E = gu(l, r, c, a, n.length, n),
+                        const E = fu(l, r, c, a, n.length, n),
                             A = E[0],
                             F = E[1];
                         return F && (r.splice(A, 1, F), r.splice(A + 1)), [r, !0];
                     },
-                    fu = a().memo(
+                    yu = a().memo(
                         ({
                             text: u,
                             classMix: e,
@@ -1775,7 +1778,7 @@
                                 D = (0, i.useState)({ elementList: [], isTruncated: !1, isTruncateFinished: !1 }),
                                 B = D[0],
                                 _ = D[1],
-                                C = (0, i.useMemo)(() => mu(u, n), [n, u]),
+                                C = (0, i.useMemo)(() => bu(u, n), [n, u]),
                                 p = (0, i.useMemo)(() => {
                                     if (
                                         o &&
@@ -1792,7 +1795,7 @@
                                     (u) => {
                                         (d.current.width = u.contentRect.width),
                                             (d.current.height = u.contentRect.height);
-                                        const e = wu(F, C, d.current, A),
+                                        const e = ku(F, C, d.current, A),
                                             n = e[0],
                                             r = e[1];
                                         _({ elementList: n, isTruncated: r, isTruncateFinished: !0 }), t && t(r);
@@ -1837,7 +1840,7 @@
                             );
                         },
                     ),
-                    ku = {
+                    Tu = {
                         base: 'SkillIcon_base_43',
                         base__small: 'SkillIcon_base__small_d0',
                         base__c_22x22: 'SkillIcon_base__c_22x22_14',
@@ -1846,7 +1849,7 @@
                         base__big: 'SkillIcon_base__big_ae',
                         base__dialogs: 'SkillIcon_base__dialogs_e5',
                     };
-                let yu;
+                let Ou;
                 !(function (u) {
                     (u.c14x14 = 'small'),
                         (u.c22x22 = 'c_22x22'),
@@ -1854,17 +1857,17 @@
                         (u.c36x36_flat = 'c_36x36_flat'),
                         (u.c52x52 = 'big'),
                         (u.c180x135 = 'dialogs');
-                })(yu || (yu = {}));
-                const Tu = a().memo(function ({ iconName: u, size: e = yu.c24x24, className: t }) {
+                })(Ou || (Ou = {}));
+                const xu = a().memo(function ({ iconName: u, size: e = Ou.c24x24, className: t }) {
                         var n;
                         return a().createElement('div', {
                             style: {
                                 backgroundImage: `url(${null == (n = R.images.gui.maps.icons.tankmen.skills.$dyn(e)) ? void 0 : n.$dyn(u)})`,
                             },
-                            className: r()(ku.base, ku[`base__${e}`], t),
+                            className: r()(Tu.base, Tu[`base__${e}`], t),
                         });
                     }),
-                    Ou = {
+                    Lu = {
                         base: 'TankmanSkill_base_84',
                         base__big: 'TankmanSkill_base__big_a0',
                         background: 'TankmanSkill_background_e5',
@@ -1876,88 +1879,88 @@
                         disabledIcon: 'TankmanSkill_disabledIcon_25',
                         disabled: 'TankmanSkill_disabled_ba',
                     };
-                let xu;
+                let Pu;
                 !(function (u) {
                     (u.Big = 'big'), (u.Small = 'small');
-                })(xu || (xu = {}));
-                const Lu = { [xu.Big]: yu.c22x22, [xu.Small]: yu.c14x14 };
-                var Pu;
+                })(Pu || (Pu = {}));
+                const Su = { [Pu.Big]: Ou.c22x22, [Pu.Small]: Ou.c14x14 };
+                var Ru;
                 !(function (u) {
                     (u.Grey = 'grey'), (u.LightYellow = 'lightYellow'), (u.Yellow = 'yellow'), (u.Red = 'red');
-                })(Pu || (Pu = {}));
-                const Su = (u, e, t) =>
+                })(Ru || (Ru = {}));
+                const Nu = (u, e, t) =>
                         u === O.Possible || u === O.New
-                            ? Pu.LightYellow
+                            ? Ru.LightYellow
                             : u === O.Irrelevant
-                              ? Pu.Grey
+                              ? Ru.Grey
                               : -1 === e
                                 ? u === O.Learning
-                                    ? Pu.Yellow
-                                    : Pu.Grey
+                                    ? Ru.Yellow
+                                    : Ru.Grey
                                 : e < 1
                                   ? t
-                                      ? Pu.Grey
-                                      : Pu.Red
+                                      ? Ru.Grey
+                                      : Ru.Red
                                   : u === O.Learning
-                                    ? Pu.Yellow
-                                    : Pu.Grey,
-                    Ru = a().memo(function ({ icon: u, type: e, size: t, efficiency: n = 1, hasInstruction: o = !1 }) {
+                                    ? Ru.Yellow
+                                    : Ru.Grey,
+                    Mu = a().memo(function ({ icon: u, type: e, size: t, efficiency: n = 1, hasInstruction: o = !1 }) {
                         const i = (!o && -1 === n) || e === O.Irrelevant;
                         return a().createElement(
                             'div',
-                            { className: r()(Ou.base, Ou[`base__${t}`]) },
+                            { className: r()(Lu.base, Lu[`base__${t}`]) },
                             a().createElement('div', {
-                                className: r()(Ou.background, Ou[`background__${Su(e, n, o)}`]),
+                                className: r()(Lu.background, Lu[`background__${Nu(e, n, o)}`]),
                             }),
                             u &&
                                 a().createElement(
                                     'div',
-                                    { className: Ou.container },
-                                    a().createElement(Tu, {
+                                    { className: Lu.container },
+                                    a().createElement(xu, {
                                         iconName: u,
-                                        size: Lu[t],
-                                        className: r()(i && Ou.disabledIcon),
+                                        size: Su[t],
+                                        className: r()(i && Lu.disabledIcon),
                                     }),
-                                    i && a().createElement('div', { className: Ou.disabled }),
+                                    i && a().createElement('div', { className: Lu.disabled }),
                                 ),
                         );
                     }),
-                    Nu = 'FreePerk_base_51',
-                    Mu = 'FreePerk_icon_ff',
-                    Iu = 'FreePerk_perkLevel_ba',
-                    Wu = 'FreePerk_perkLevel__available_3b',
-                    ju = 'FreePerk_perkLevel__inProgress_5b',
-                    Vu = 'FreePerk_multiple_ee',
-                    zu = 'FreePerk_partly_12',
-                    Uu = ({ count: u, text: e, perkLevel: t = Hu }) => {
+                    Iu = 'FreePerk_base_51',
+                    Wu = 'FreePerk_icon_ff',
+                    ju = 'FreePerk_perkLevel_ba',
+                    Vu = 'FreePerk_perkLevel__available_3b',
+                    zu = 'FreePerk_perkLevel__inProgress_5b',
+                    Uu = 'FreePerk_multiple_ee',
+                    Gu = 'FreePerk_partly_12',
+                    qu = ({ count: u, text: e, perkLevel: t = $u }) => {
                         if (0 === u) return null;
-                        const n = t < Hu;
+                        const n = t < $u;
                         return a().createElement(
                             'div',
-                            { className: Nu },
+                            { className: Iu },
                             a().createElement(
                                 'div',
-                                { className: Mu },
-                                a().createElement(Ru, { icon: 'new_skill', size: xu.Big, type: O.New }),
+                                { className: Wu },
+                                a().createElement(Mu, { icon: 'new_skill', size: Pu.Big, type: O.New }),
                             ),
                             u > 1 &&
-                                a().createElement(fu, {
-                                    classMix: Vu,
+                                a().createElement(yu, {
+                                    classMix: Uu,
                                     text: R.strings.tooltips.perkAvailable.multiple(),
                                     binding: { amount: u },
                                 }),
-                            a().createElement('div', { className: r()(Iu, n ? ju : Wu) }, e),
+                            a().createElement('div', { className: r()(ju, n ? zu : Vu) }, e),
                             0 !== t &&
                                 n &&
-                                a().createElement('div', { className: zu }, R.strings.tooltips.perkAvailable.partly()),
+                                a().createElement('div', { className: Gu }, R.strings.tooltips.perkAvailable.partly()),
                         );
                     },
-                    Gu = 'PerkAvailableTooltipApp_base_8b',
-                    qu = 'PerkAvailableTooltipApp_header_ca',
-                    Yu = 'PerkAvailableTooltipApp_divider_9e',
-                    Ku = 'PerkAvailableTooltipApp_perks_2b',
-                    Hu = 100,
-                    Zu = () => {
+                    Yu = 'PerkAvailableTooltipApp_base_8b',
+                    Ku = 'PerkAvailableTooltipApp_header_ca',
+                    Hu = 'PerkAvailableTooltipApp_divider_9e',
+                    Zu = 'PerkAvailableTooltipApp_perks_2b',
+                    $u = 100,
+                    Xu = () => {
                         const u = T().model,
                             e = u.lastPerkLevel.get(),
                             t = u.perkCount.get(),
@@ -1966,27 +1969,27 @@
                             o = (1 === t || e || (t > 1 && !e)) && !n;
                         return a().createElement(
                             'div',
-                            { className: Gu },
+                            { className: Yu },
                             a().createElement(
                                 m,
-                                { classNames: { divider: Yu } },
-                                a().createElement('div', { className: qu }, R.strings.tooltips.perkAvailable.header()),
+                                { classNames: { divider: Hu } },
+                                a().createElement('div', { className: Ku }, R.strings.tooltips.perkAvailable.header()),
                             ),
                             a().createElement(
                                 'div',
-                                { className: Ku },
-                                a().createElement(Uu, {
+                                { className: Zu },
+                                a().createElement(qu, {
                                     count: u.zeroPerkCount.get(),
                                     text: R.strings.tooltips.perkAvailable.zeroPerk(),
                                 }),
-                                r && a().createElement(Uu, { count: n ? t : t - 1, text: _(Hu) }),
-                                o && a().createElement(Uu, { count: 1, text: _(e), perkLevel: e }),
+                                r && a().createElement(qu, { count: n ? t : t - 1, text: _($u) }),
+                                o && a().createElement(qu, { count: 1, text: _(e), perkLevel: e }),
                             ),
                         );
                     };
                 engine.whenReady.then(() => {
                     d().render(
-                        a().createElement(A, null, a().createElement(y, null, a().createElement(Zu, null))),
+                        a().createElement(A, null, a().createElement(y, null, a().createElement(Xu, null))),
                         document.getElementById('root'),
                     );
                 });

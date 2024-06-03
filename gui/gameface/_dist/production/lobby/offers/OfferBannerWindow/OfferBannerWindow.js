@@ -161,8 +161,8 @@
                     },
                     f = ['args'];
                 const w = 2,
-                    h = 16,
-                    b = 32,
+                    b = 16,
+                    h = 32,
                     g = 64,
                     y = (u, e) => {
                         const t = 'GFViewEventProxy';
@@ -202,13 +202,13 @@
                     },
                     O = {
                         close(u) {
-                            y('popover' === u ? w : b);
+                            y('popover' === u ? w : h);
                         },
                         minimize() {
                             y(g);
                         },
                         move(u) {
-                            y(h, { isMouseEvent: !0, on: u });
+                            y(b, { isMouseEvent: !0, on: u });
                         },
                     };
                 function T(u) {
@@ -810,7 +810,7 @@
                 };
                 var f = t(483),
                     w = t.n(f);
-                function h() {
+                function b() {
                     const u = (0, n.useRef)(0);
                     var e;
                     return (
@@ -839,7 +839,7 @@
                         )
                     );
                 }
-                const b = ['children'];
+                const h = ['children'];
                 const g = r().createContext(null),
                     y = (u) => {
                         let e = u.children,
@@ -851,7 +851,7 @@
                                     o = Object.keys(u);
                                 for (n = 0; n < o.length; n++) (t = o[n]), e.indexOf(t) >= 0 || (r[t] = u[t]);
                                 return r;
-                            })(u, b);
+                            })(u, h);
                         return r().createElement(g.Provider, { value: t }, e);
                     };
                 function O(u) {
@@ -879,6 +879,7 @@
                         base__extraSmall: 'CButton_base__extraSmall_27',
                         base__small: 'CButton_base__small_df',
                         base__medium: 'CButton_base__medium_74',
+                        base__large: 'CButton_base__large_5c',
                         base__disabled: 'CButton_base__disabled_d9',
                         back: 'CButton_back_e5',
                         texture: 'CButton_texture_fe',
@@ -901,7 +902,7 @@
                         (u.ghost = 'ghost');
                 })(x || (x = {})),
                     (function (u) {
-                        (u.extraSmall = 'extraSmall'), (u.small = 'small'), (u.medium = 'medium');
+                        (u.extraSmall = 'extraSmall'), (u.small = 'small'), (u.medium = 'medium'), (u.large = 'large');
                     })(M || (M = {}));
                 const P = ({
                     children: u,
@@ -926,9 +927,9 @@
                         v = (0, n.useState)(!1),
                         p = v[0],
                         f = v[1],
-                        h = (0, n.useState)(!1),
-                        b = h[0],
-                        g = h[1],
+                        b = (0, n.useState)(!1),
+                        h = b[0],
+                        g = b[1],
                         y = (0, n.useCallback)(() => {
                             i || (_.current && (_.current.focus(), m(!0)));
                         }, [i]),
@@ -982,7 +983,7 @@
                                 [k[`base__${e}`]]: e,
                                 [k.base__focus]: C,
                                 [k.base__highlightActive]: p,
-                                [k.base__firstHover]: b,
+                                [k.base__firstHover]: h,
                             },
                             a,
                         ),
@@ -1131,22 +1132,22 @@
                                 return r;
                             })(u, H);
                         const w = (0, n.useRef)({ timeoutId: 0, isVisible: !1, prevTarget: null, hideTimerId: null }),
-                            h = (0, n.useMemo)(() => m || l().resId, [m]),
-                            b = (0, n.useCallback)(() => {
+                            b = (0, n.useMemo)(() => m || l().resId, [m]),
+                            h = (0, n.useCallback)(() => {
                                 (w.current.isVisible && w.current.timeoutId) ||
-                                    (z(t, B, { isMouseEvent: !0, on: !0, arguments: V(r) }, h),
+                                    (z(t, B, { isMouseEvent: !0, on: !0, arguments: V(r) }, b),
                                     v && v(),
                                     (w.current.isVisible = !0));
-                            }, [t, B, r, h, v]),
+                            }, [t, B, r, b, v]),
                             g = (0, n.useCallback)(() => {
                                 if (w.current.isVisible || w.current.timeoutId) {
                                     const u = w.current.timeoutId;
                                     u > 0 && (clearTimeout(u), (w.current.timeoutId = 0)),
-                                        z(t, B, { on: !1 }, h),
+                                        z(t, B, { on: !1 }, b),
                                         w.current.isVisible && p && p(),
                                         (w.current.isVisible = !1);
                                 }
-                            }, [t, B, h, p]),
+                            }, [t, B, b, p]),
                             y = (0, n.useCallback)((u) => {
                                 w.current.isVisible &&
                                     ((w.current.prevTarget = document.elementFromPoint(u.clientX, u.clientY)),
@@ -1187,7 +1188,7 @@
                                               (u) => {
                                                   (u.clientX === window.innerWidth &&
                                                       u.clientY === window.innerHeight) ||
-                                                      ((w.current.timeoutId = window.setTimeout(b, F ? 100 : 400)),
+                                                      ((w.current.timeoutId = window.setTimeout(h, F ? 100 : 400)),
                                                       o && o(u),
                                                       O && O(u));
                                               }),
@@ -1356,7 +1357,7 @@
                                 _ = (0, n.useState)(!0),
                                 d = _[0],
                                 C = _[1],
-                                m = h(),
+                                m = b(),
                                 v = () => {
                                     m.run(() => {
                                         const u = D.current,
@@ -1559,8 +1560,8 @@
                     pu = 'OfferBannerContent_lip_c1',
                     fu = 'OfferBannerContent_giftText_9d',
                     wu = 'OfferBannerContent_offerText_54',
-                    hu = 'OfferBannerContent_descriptionText_a8',
-                    bu = 'OfferBannerContent_storageText_4a',
+                    bu = 'OfferBannerContent_descriptionText_a8',
+                    hu = 'OfferBannerContent_storageText_4a',
                     gu = 'OfferBannerContent_button_97',
                     yu = 'OfferBannerContent_cButton_01',
                     Ou = () => {
@@ -1592,9 +1593,9 @@
                             r().createElement('div', { className: pu }),
                             r().createElement('div', { className: vu }),
                             t
-                                ? r().createElement('div', { className: hu }, t)
+                                ? r().createElement('div', { className: bu }, t)
                                 : r().createElement(du, { text: E, align: 'center', classMix: wu }),
-                            r().createElement('div', { className: bu }, R.strings.offers.banner.selectNowOrLater()),
+                            r().createElement('div', { className: hu }, R.strings.offers.banner.selectNowOrLater()),
                             r().createElement(
                                 'div',
                                 { className: gu },

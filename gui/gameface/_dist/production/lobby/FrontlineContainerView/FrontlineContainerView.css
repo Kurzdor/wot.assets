@@ -1400,6 +1400,14 @@
     left: 45rem;
 }
 
+.InfoViewApp_closeButtonCaption_10 {
+    display: none;
+}
+
+.mediaSmall .InfoViewApp_closeButtonCaption_10 {
+    display: block;
+}
+
 .InfoViewApp_mainContent_9d {
     width: 820rem;
 }
@@ -2639,6 +2647,10 @@
     min-height: 32rem;
 }
 
+.CButton_base__large_5c {
+    min-height: 48rem;
+}
+
 .CButton_base__disabled_d9 {
     cursor: default;
 }
@@ -2781,6 +2793,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_base__medium_74 .CButton_content_cc {
     font-size: 15rem;
 }
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
+}
 .CButton_base__disabled_d9 .CButton_content_cc {
     opacity: 0.6;
 }
@@ -2917,25 +2932,17 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     bottom: 7vh;
 }
 
-/* colors*/
-
-/* buttons*/
-
-/* Calculate glow mask according to the button size*/
-
-.FlatButton_base_36 {
+.FlatButton_base_0a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    width: 66rem;
+    width: 245rem;
     height: 66rem;
     border: 1rem solid rgba(255, 255, 255, 0.25);
     border-radius: 2rem;
-    background: rgba(0, 0, 0, 0.3) repeat-y right center;
-    color: #e9e2bf;
-    font-size: 15rem;
-    font-weight: 700;
+    background: url('R.images.frontline.gui.maps.icons.rewards.flatButton.buttons_lines') rgba(0, 0, 0, 0.3) repeat-y
+        right center;
     position: relative;
     z-index: 2;
     transition:
@@ -2944,72 +2951,19 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     cursor: pointer;
 }
 
-@media (min-width: 1280px) {
-    .FlatButton_base_36 {
-        width: 235rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.progression.buttons_lines');
-    }
-}
-
-@media (min-width: 1600px) {
-    .FlatButton_base_36 {
-        width: 245rem;
-    }
-}
-
-@media (min-width: 1280px) {
-    .FlatButton_base__small_ec {
-        width: 66rem;
-        background: rgba(0, 0, 0, 0.3) repeat-y right center;
-    }
-}
-
-@media (min-width: 1600px) {
-    .FlatButton_base__small_ec {
-        width: 66rem;
-    }
-}
-
-@media (min-width: 1920px) {
-    .FlatButton_base__small_ec {
-        width: 245rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.progression.buttons_lines');
-    }
-}
-
-.FlatButton_base__big_69 {
-    width: 245rem;
-    background-image: url('R.images.gui.maps.icons.battlePass.progression.buttons_lines');
-}
-
-.FlatButton_base__disabled_1e {
-    opacity: 0.5;
-    cursor: default;
-}
-
-.FlatButton_base__hover_41 {
+.FlatButton_base__hover_ed {
     border-color: rgba(255, 255, 255, 0.35);
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.FlatButton_base__click_ab {
-    border-color: rgba(255, 255, 255, 0.25);
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.FlatButton_base__highlight_0b {
+.FlatButton_base__highlight_39 {
     border: 0;
     box-shadow:
         0 0 7rem #ff2a00,
         0 2rem 4rem rgba(107, 52, 0, 0.2) inset;
     z-index: 1;
 }
-
-.FlatButton_base__yellow_3a {
-    background-color: #c67700;
-}
-
-.FlatButton_highlight_b0 {
+.FlatButton_highlight_42 {
     width: 100%;
     height: 100%;
     border: 1rem solid #fd9;
@@ -3019,119 +2973,26 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 0;
     left: 0;
 }
-
-.FlatButton_glowInner_cb {
+.FlatButton_glowInner_44 {
     width: 100%;
     height: 100%;
-    background: url('R.images.gui.maps.icons.battlePass.progression.rare_light_large') no-repeat center / contain;
+    background: url('R.images.frontline.gui.maps.icons.rewards.flatButton.rare_light_large') no-repeat center / contain;
     mix-blend-mode: additive;
     overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
-    animation: FlatButton_rotating_25 15s linear infinite;
+    animation: FlatButton_rotating_02 15s linear infinite;
 }
-
-.FlatButton_glowInner__duplicate_f7 {
+.FlatButton_glowInner__duplicate_9a {
     width: 190rem;
     height: 190rem;
     margin: 56rem 0 0 56rem;
-    background-image: url('R.images.gui.maps.icons.battlePass.progression.shineForAnimation_dark');
+    background-image: url('R.images.frontline.gui.maps.icons.rewards.flatButton.shineForAnimation_dark');
     animation-duration: 18s;
     animation-direction: reverse;
 }
-
-.FlatButton_glow_12 {
-    clip-path: polygon(
-        0% 0%,
-        0% 100%,
-        118rem 100%,
-        118rem 118rem,
-        184rem 118rem,
-        184rem 184rem,
-        118rem 184rem,
-        118rem 100%,
-        100% 100%,
-        100% 0%
-    );
-    width: 302rem;
-    height: 302rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-}
-
-@media (min-width: 1280px) {
-    .FlatButton_glow_12 {
-        clip-path: polygon(
-            0% 0%,
-            0% 100%,
-            33.5rem 100%,
-            33.5rem 118rem,
-            268.5rem 118rem,
-            268.5rem 184rem,
-            33.5rem 184rem,
-            33.5rem 100%,
-            100% 100%,
-            100% 0%
-        );
-    }
-}
-
-@media (min-width: 1600px) {
-    .FlatButton_glow_12 {
-        clip-path: polygon(
-            0% 0%,
-            0% 100%,
-            28.5rem 100%,
-            28.5rem 118rem,
-            273.5rem 118rem,
-            273.5rem 184rem,
-            28.5rem 184rem,
-            28.5rem 100%,
-            100% 100%,
-            100% 0%
-        );
-    }
-}
-
-@media (min-width: 1280px) {
-    .FlatButton_base__small_ec .FlatButton_glow_12 {
-        clip-path: polygon(
-            0% 0%,
-            0% 100%,
-            118rem 100%,
-            118rem 118rem,
-            184rem 118rem,
-            184rem 184rem,
-            118rem 184rem,
-            118rem 100%,
-            100% 100%,
-            100% 0%
-        );
-    }
-}
-
-@media (min-width: 1920px) {
-    .FlatButton_base__small_ec .FlatButton_glow_12 {
-        clip-path: polygon(
-            0% 0%,
-            0% 100%,
-            28.5rem 100%,
-            28.5rem 118rem,
-            273.5rem 118rem,
-            273.5rem 184rem,
-            28.5rem 184rem,
-            28.5rem 100%,
-            100% 100%,
-            100% 0%
-        );
-    }
-}
-
-.FlatButton_base__big_69 .FlatButton_glow_12 {
+.FlatButton_glow_cb {
     clip-path: polygon(
         0% 0%,
         0% 100%,
@@ -3144,106 +3005,54 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         100% 100%,
         100% 0%
     );
+    width: 302rem;
+    height: 302rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
 }
-
-.FlatButton_content_3f {
+.FlatButton_content_34 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex: 1;
-    padding: 0;
-    line-height: 1.25;
     position: relative;
     z-index: 1;
     pointer-events: none;
 }
-
-@media (min-width: 1280px) {
-    .FlatButton_content_3f {
-        justify-content: flex-start;
-        padding: 0 9rem;
-    }
-}
-
-.FlatButton_icon_24 {
+.FlatButton_icon_20 {
     width: 52rem;
     height: 52rem;
     background: no-repeat center / contain;
     filter: brightness(70%);
     transition: filter linear 0.16s;
 }
-
-.FlatButton_base__hover_41 .FlatButton_icon_24 {
+.FlatButton_base__hover_ed .FlatButton_icon_20 {
     filter: brightness(100%);
 }
-
-.FlatButton_label_a4 {
-    display: none;
-    white-space: pre;
-}
-
-@media (min-width: 1280px) {
-    .FlatButton_label_a4 {
-        display: flex;
-        flex: 0;
-        margin-left: 10rem;
-        padding-bottom: 3rem;
-    }
-}
-
-.FlatButton_base__small_ec .FlatButton_label_a4 {
-    display: none;
-}
-
-@media (min-width: 1920px) {
-    .FlatButton_base__small_ec .FlatButton_label_a4 {
-        display: flex;
-    }
-}
-
-.FlatButton_base__big_69 .FlatButton_label_a4 {
-    display: flex;
-    flex: 0;
+.FlatButton_label_88 {
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
     margin-left: 10rem;
     padding-bottom: 3rem;
+    white-space: pre;
 }
-
-.FlatButton_count_17 {
-    display: none;
-}
-
-@media (min-width: 1280px) {
-    .FlatButton_count_17 {
-        display: flex;
-        flex: 0;
-        margin-left: 10rem;
-        padding-bottom: 3rem;
-        font-size: 36rem;
-    }
-}
-
-.FlatButton_base__small_ec .FlatButton_count_17 {
-    display: none;
-}
-
-@media (min-width: 1920px) {
-    .FlatButton_base__small_ec .FlatButton_count_17 {
-        display: flex;
-    }
-}
-
-.FlatButton_counter_c3 {
+.FlatButton_counter_ab {
     position: absolute;
     top: 0;
     right: 0;
     transform: translate(40%, -50%);
 }
-
-.FlatButton_glowBorder_3e {
+.FlatButton_glowBorder_0b {
     width: 92rem;
     height: 92rem;
-    background: url('R.images.gui.maps.icons.battlePass.progression.flat_button_light_small') no-repeat center / contain;
+    background: url('R.images.frontline.gui.maps.icons.rewards.flatButton.flat_button_light_small') no-repeat center /
+        contain;
     mix-blend-mode: additive;
     position: absolute;
     top: 50%;
@@ -3252,53 +3061,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition: 0.3s ease opacity;
     pointer-events: none;
 }
-
-@media (min-width: 1280px) {
-    .FlatButton_glowBorder_3e {
-        width: 244rem;
-        height: 244rem;
-        background-image: url('R.images.gui.maps.icons.battlePass.progression.flat_button_light');
-    }
-}
-
-.FlatButton_glowBorder__hover_a7 {
+.FlatButton_glowBorder__hover_b5 {
     opacity: 0;
 }
-
-.FlatButton_base_36:hover .FlatButton_glowBorder__hover_a7 {
+.FlatButton_base_0a:hover .FlatButton_glowBorder__hover_b5 {
     opacity: 1;
 }
-
-.FlatButton_tokensCount_72 {
-    display: none;
-    min-width: 30rem;
-    padding-left: 30rem;
-    background: url('R.images.gui.maps.icons.battlePass.progression.bp_token') no-repeat left bottom / 24rem 24rem;
-    font-size: 22rem;
-    position: absolute;
-    top: 17rem;
-    right: 20rem;
-    pointer-events: auto;
-}
-
-@media (min-width: 1280px) {
-    .FlatButton_tokensCount_72 {
-        display: block;
-    }
-}
-
-.FlatButton_disabledBackground_f9 {
-    background: url('R.images.gui.maps.icons.battlePass.progression.pattern_disable') repeat;
-    opacity: 0.05;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-}
-
-@keyframes FlatButton_rotating_25 {
+@keyframes FlatButton_rotating_02 {
     from {
         transform: rotate(0deg);
     }

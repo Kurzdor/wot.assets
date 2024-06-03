@@ -2,7 +2,7 @@
     'use strict';
     var e,
         t = {
-            399: (e, t, n) => {
+            6399: (e, t, n) => {
                 var r = {};
                 n.r(r),
                     n.d(r, { mouse: () => P, off: () => k, on: () => O, onResize: () => C, onScaleUpdated: () => S });
@@ -45,11 +45,11 @@
                         setSidePaddingsRem: () => I,
                         whenTutorialReady: () => se,
                     });
-                var s = n(179),
+                var s = n(6179),
                     u = n.n(s),
                     l = n(493),
                     c = n.n(l),
-                    d = n(483),
+                    d = n(6483),
                     v = n.n(d);
                 function m(e) {
                     engine.call('PlaySound', e);
@@ -65,6 +65,7 @@
                     base__extraSmall: 'CButton_base__extraSmall_27',
                     base__small: 'CButton_base__small_df',
                     base__medium: 'CButton_base__medium_74',
+                    base__large: 'CButton_base__large_5c',
                     base__disabled: 'CButton_base__disabled_d9',
                     back: 'CButton_back_e5',
                     texture: 'CButton_texture_fe',
@@ -77,7 +78,7 @@
                     base__highlightActive: 'CButton_base__highlightActive_b2',
                     content: 'CButton_content_cc',
                 };
-                let g, f;
+                let g, _;
                 !(function (e) {
                     (e.main = 'main'),
                         (e.primary = 'primary'),
@@ -87,9 +88,9 @@
                         (e.ghost = 'ghost');
                 })(g || (g = {})),
                     (function (e) {
-                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium');
-                    })(f || (f = {}));
-                const _ = ({
+                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium'), (e.large = 'large');
+                    })(_ || (_ = {}));
+                const f = ({
                     children: e,
                     size: t,
                     isFocused: n,
@@ -100,8 +101,8 @@
                     soundClick: l,
                     onMouseEnter: c,
                     onMouseMove: d,
-                    onMouseDown: f,
-                    onMouseUp: _,
+                    onMouseDown: _,
+                    onMouseUp: f,
                     onMouseLeave: p,
                     onClick: h,
                 }) => {
@@ -144,15 +145,15 @@
                         ),
                         V = (0, s.useCallback)(
                             (e) => {
-                                o || (_ && _(e), O(!1));
+                                o || (f && f(e), O(!1));
                             },
-                            [o, _],
+                            [o, f],
                         ),
                         j = (0, s.useCallback)(
                             (e) => {
-                                o || (null !== l && m(l), f && f(e), n && A(), O(!0));
+                                o || (null !== l && m(l), _ && _(e), n && A(), O(!0));
                             },
-                            [o, l, f, A, n],
+                            [o, l, _, A, n],
                         ),
                         H = (0, s.useCallback)(
                             (e) => {
@@ -220,14 +221,14 @@
                         )
                     );
                 };
-                _.defaultProps = { type: g.primary, isFocused: !1, soundHover: 'highlight', soundClick: 'play' };
-                const p = (0, s.memo)(_);
-                var h = n(403);
+                f.defaultProps = { type: g.primary, isFocused: !1, soundHover: 'highlight', soundClick: 'play' };
+                const p = (0, s.memo)(f);
+                var h = n(3403);
                 function w() {
                     return !1;
                 }
                 console.log;
-                var y = n(174);
+                var y = n(9174);
                 function E(e) {
                     return (t) => (
                         engine.on(e, t),
@@ -677,10 +678,10 @@
                                     m = d[1],
                                     b = (0, s.useState)(() => l(e, r, a)),
                                     g = b[0],
-                                    f = b[1];
+                                    _ = b[1];
                                 return (
                                     (0, s.useEffect)(() => {
-                                        c.current ? f(l(v, r, a)) : (c.current = !0);
+                                        c.current ? _(l(v, r, a)) : (c.current = !0);
                                     }, [a, v, r]),
                                     (0, s.useEffect)(() => {
                                         m(e);
@@ -697,7 +698,7 @@
                             () => (0, s.useContext)(n),
                         ];
                     })(0, ({ externalModel: e }) => ({
-                        handleExitClick: e.createCallbackNoArgs('onQuit'),
+                        exit: e.createCallbackNoArgs('onQuit'),
                         loaded: e.createCallbackNoArgs('onLoaded'),
                     })),
                     ve = de[0],
@@ -735,9 +736,9 @@
                                         p,
                                         {
                                             type: g.primary,
-                                            size: f.medium,
+                                            size: _.medium,
                                             mixClass: 'OnboardingQueueViewApp_button_2f',
-                                            onClick: t.handleExitClick,
+                                            onClick: t.exit,
                                         },
                                         R.strings.sm_lobby.onboardingQueue.skipButton(),
                                     ),
@@ -822,6 +823,6 @@
                 n = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             n.forEach(t.bind(null, 0)), (n.push = t.bind(null, n.push.bind(n)));
         })();
-    var o = r.O(void 0, [503], () => r(399));
+    var o = r.O(void 0, [503], () => r(6399));
     o = r.O(o);
 })();

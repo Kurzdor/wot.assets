@@ -49,7 +49,7 @@
                         S = l.mediumHeight,
                         x = l.smallHeight,
                         y = l.extraSmallHeight,
-                        E = { extraLarge: b, large: w, medium: S, small: x, extraSmall: y };
+                        O = { extraLarge: b, large: w, medium: S, small: x, extraSmall: y };
                     if (n.extraLarge || n.large || n.medium || n.small || n.extraSmall) {
                         if (n.extraLarge && s) return t;
                         if (n.large && c) return t;
@@ -57,11 +57,11 @@
                         if (n.small && d) return t;
                         if (n.extraSmall && g) return t;
                     } else {
-                        if (n.extraLargeWidth && m) return (0, r.H)(t, n, E);
-                        if (n.largeWidth && h) return (0, r.H)(t, n, E);
-                        if (n.mediumWidth && p) return (0, r.H)(t, n, E);
-                        if (n.smallWidth && v) return (0, r.H)(t, n, E);
-                        if (n.extraSmallWidth && f) return (0, r.H)(t, n, E);
+                        if (n.extraLargeWidth && m) return (0, r.H)(t, n, O);
+                        if (n.largeWidth && h) return (0, r.H)(t, n, O);
+                        if (n.mediumWidth && p) return (0, r.H)(t, n, O);
+                        if (n.smallWidth && v) return (0, r.H)(t, n, O);
+                        if (n.extraSmallWidth && f) return (0, r.H)(t, n, O);
                         if (
                             !(n.extraLargeWidth || n.largeWidth || n.mediumWidth || n.smallWidth || n.extraSmallWidth)
                         ) {
@@ -571,10 +571,10 @@
                         displayStatusIs: () => k,
                         events: () => i.U,
                         extraSize: () => j,
-                        forceTriggerMouseMove: () => E,
+                        forceTriggerMouseMove: () => O,
                         freezeTextureBeforeResize: () => p,
                         getBrowserTexturePath: () => c,
-                        getDisplayStatus: () => O,
+                        getDisplayStatus: () => E,
                         getScale: () => v,
                         getSize: () => g,
                         getViewGlobalPosition: () => h,
@@ -643,10 +643,10 @@
                 function y() {
                     return viewEnv.isEventHandled();
                 }
-                function E() {
+                function O() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function O() {
+                function E() {
                     return viewEnv.getShowingStatus();
                 }
                 const k = Object.keys(r.W).reduce(
@@ -1033,8 +1033,9 @@
                                     { equals: r.jv },
                                 ),
                                 m = (0, o.Om)(() => c.get().length),
-                                h = (0, o.Om)((e) => g(e).specifications.length),
-                                p = (0, o.Om)(
+                                h = (0, o.Om)(() => i.UI(c.get(), (e) => e.intCD), { equals: r.jv }),
+                                p = (0, o.Om)((e) => g(e).specifications.length),
+                                v = (0, o.Om)(
                                     (e, t) => {
                                         const n = g(e),
                                             a = i.U2(n.specifications, t);
@@ -1043,7 +1044,7 @@
                                     },
                                     { equals: r.jv },
                                 ),
-                                v = (0, o.Om)(
+                                f = (0, o.Om)(
                                     (e, t) => {
                                         const n = g(e),
                                             a = i.U2(n.price.price, t);
@@ -1052,7 +1053,7 @@
                                     },
                                     { equals: r.jv },
                                 ),
-                                f = (0, o.Om)(
+                                b = (0, o.Om)(
                                     (e, t) => {
                                         const n = g(e),
                                             a = i.U2(n.price.defPrice, t);
@@ -1061,9 +1062,9 @@
                                     },
                                     { equals: r.jv },
                                 ),
-                                b = (0, o.Om)((e) => g(e).price.price.length),
-                                w = (0, o.Om)((e) => g(e).price.defPrice.length),
-                                S = (0, o.Om)(() => {
+                                w = (0, o.Om)((e) => g(e).price.price.length),
+                                S = (0, o.Om)((e) => g(e).price.defPrice.length),
+                                x = (0, o.Om)(() => {
                                     const e = u.get().selectedSlot,
                                         t = i.U2(d.get(), 0);
                                     if (!t) throw Error('No section group found');
@@ -1083,14 +1084,15 @@
                                     shells: {
                                         length: m,
                                         shell: g,
-                                        specificationsLength: h,
-                                        specification: p,
-                                        price: v,
-                                        priceLength: b,
-                                        defPriceLength: w,
-                                        defPrice: f,
+                                        specificationsLength: p,
+                                        specification: v,
+                                        price: f,
+                                        priceLength: w,
+                                        defPriceLength: S,
+                                        defPrice: b,
+                                        ids: h,
                                     },
-                                    selectedSlotSpecialization: S,
+                                    selectedSlotSpecialization: x,
                                 }),
                             });
                         },

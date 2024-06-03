@@ -166,12 +166,12 @@
                         freezeTextureBeforeResize: () => _,
                         getBrowserTexturePath: () => r,
                         getDisplayStatus: () => p,
-                        getScale: () => c,
+                        getScale: () => l,
                         getSize: () => D,
                         getViewGlobalPosition: () => C,
                         isEventHandled: () => b,
                         isFocused: () => m,
-                        pxToRem: () => l,
+                        pxToRem: () => c,
                         remToPx: () => d,
                         resize: () => B,
                         sendEvent: () => A.qP,
@@ -213,10 +213,10 @@
                 function _() {
                     viewEnv.freezeTextureBeforeResize();
                 }
-                function c() {
+                function l() {
                     return viewEnv.getScale();
                 }
-                function l(u) {
+                function c(u) {
                     return viewEnv.pxToRem(u);
                 }
                 function d(u) {
@@ -589,9 +589,9 @@
             72: (u, e, t) => {
                 t.d(e, {
                     Eu: () => a,
-                    KE: () => l,
+                    KE: () => c,
                     Kv: () => i,
-                    P3: () => c,
+                    P3: () => l,
                     SU: () => w,
                     SW: () => C,
                     Sy: () => B,
@@ -698,14 +698,14 @@
                     _ = (u, e, t = 0) => {
                         s(F.B0.CONTEXT_MENU, { isMouseEvent: !0, contentID: u, on: !0, decoratorID: t, args: e });
                     },
-                    c = (u, e, t, n, A = R.invalid('resId'), o) => {
+                    l = (u, e, t, n, A = R.invalid('resId'), o) => {
                         const r = E.O.view.getViewGlobalPosition(),
                             a = t.getBoundingClientRect(),
                             D = a.x,
                             B = a.y,
                             C = a.width,
                             _ = a.height,
-                            c = {
+                            l = {
                                 x: E.O.view.pxToRem(D) + r.x,
                                 y: E.O.view.pxToRem(B) + r.y,
                                 width: E.O.view.pxToRem(C),
@@ -717,12 +717,12 @@
                             decoratorID: n || R.invalid('resId'),
                             targetID: A,
                             direction: e,
-                            bbox: i(c),
+                            bbox: i(l),
                             on: !0,
                             args: o,
                         });
                     },
-                    l = () => viewEnv.isWindowShownByViewEvent(F.B0.TOOLTIP),
+                    c = () => viewEnv.isWindowShownByViewEvent(F.B0.TOOLTIP),
                     d = () => viewEnv.isWindowShownByViewEvent(F.B0.CONTEXT_MENU),
                     v = () => viewEnv.isWindowShownByViewEvent(F.B0.POP_OVER),
                     m = (u, e) => {
@@ -821,8 +821,8 @@
                             B = void 0 !== r && r,
                             C = u.ignoreMouseClick,
                             _ = void 0 !== C && C,
-                            c = u.decoratorId,
-                            l = void 0 === c ? 0 : c,
+                            l = u.decoratorId,
+                            c = void 0 === l ? 0 : l,
                             d = u.isEnabled,
                             v = void 0 === d || d,
                             m = u.targetId,
@@ -860,19 +860,19 @@
                             ),
                             y = (0, n.useCallback)(() => {
                                 (g.current.isVisible && g.current.timeoutId) ||
-                                    (D(t, l, { isMouseEvent: !0, on: !0, arguments: s(E) }, f),
+                                    (D(t, c, { isMouseEvent: !0, on: !0, arguments: s(E) }, f),
                                     b && b(),
                                     (g.current.isVisible = !0));
-                            }, [t, l, E, f, b]),
+                            }, [t, c, E, f, b]),
                             O = (0, n.useCallback)(() => {
                                 if (g.current.isVisible || g.current.timeoutId) {
                                     const u = g.current.timeoutId;
                                     u > 0 && (clearTimeout(u), (g.current.timeoutId = 0)),
-                                        D(t, l, { on: !1 }, f),
+                                        D(t, c, { on: !1 }, f),
                                         g.current.isVisible && h && h(),
                                         (g.current.isVisible = !1);
                                 }
-                            }, [t, l, f, h]),
+                            }, [t, c, f, h]),
                             k = (0, n.useCallback)((u) => {
                                 g.current.isVisible &&
                                     ((g.current.prevTarget = document.elementFromPoint(u.clientX, u.clientY)),
@@ -950,8 +950,8 @@
                         _.apply(this, arguments)
                     );
                 }
-                const c = R.views.common.tooltip_window.simple_tooltip_content,
-                    l = (u) => {
+                const l = R.views.common.tooltip_window.simple_tooltip_content,
+                    c = (u) => {
                         let e = u.children,
                             t = u.body,
                             F = u.header,
@@ -978,7 +978,7 @@
                                 {
                                     contentId:
                                         ((s = null == i ? void 0 : i.hasHtmlContent),
-                                        s ? c.SimpleTooltipHtmlContent('resId') : c.SimpleTooltipContent('resId')),
+                                        s ? l.SimpleTooltipHtmlContent('resId') : l.SimpleTooltipContent('resId')),
                                     decoratorId: R.views.common.tooltip_window.tooltip_window.TooltipWindow('resId'),
                                     args: a,
                                 },
@@ -1019,6 +1019,7 @@
                     base__extraSmall: 'CButton_base__extraSmall_27',
                     base__small: 'CButton_base__small_df',
                     base__medium: 'CButton_base__medium_74',
+                    base__large: 'CButton_base__large_5c',
                     base__disabled: 'CButton_base__disabled_d9',
                     back: 'CButton_back_e5',
                     texture: 'CButton_texture_fe',
@@ -1041,7 +1042,7 @@
                         (u.ghost = 'ghost');
                 })(p || (p = {})),
                     (function (u) {
-                        (u.extraSmall = 'extraSmall'), (u.small = 'small'), (u.medium = 'medium');
+                        (u.extraSmall = 'extraSmall'), (u.small = 'small'), (u.medium = 'medium'), (u.large = 'large');
                     })(g || (g = {}));
                 const f = ({
                     children: u,
@@ -1057,9 +1058,9 @@
                     onMouseDown: B,
                     onMouseUp: C,
                     onMouseLeave: _,
-                    onClick: c,
+                    onClick: l,
                 }) => {
-                    const l = (0, n.useRef)(null),
+                    const c = (0, n.useRef)(null),
                         d = (0, n.useState)(t),
                         v = d[0],
                         m = d[1],
@@ -1070,19 +1071,19 @@
                         O = y[0],
                         k = y[1],
                         T = (0, n.useCallback)(() => {
-                            o || (l.current && (l.current.focus(), m(!0)));
+                            o || (c.current && (c.current.focus(), m(!0)));
                         }, [o]),
                         M = (0, n.useCallback)(
                             (u) => {
-                                v && null !== l.current && !l.current.contains(u.target) && m(!1);
+                                v && null !== c.current && !c.current.contains(u.target) && m(!1);
                             },
                             [v],
                         ),
                         x = (0, n.useCallback)(
                             (u) => {
-                                o || (c && c(u));
+                                o || (l && l(u));
                             },
-                            [o, c],
+                            [o, l],
                         ),
                         P = (0, n.useCallback)(
                             (u) => {
@@ -1143,7 +1144,7 @@
                         E().createElement(
                             'div',
                             {
-                                ref: l,
+                                ref: c,
                                 className: V,
                                 onMouseEnter: P,
                                 onMouseMove: S,
@@ -1185,7 +1186,7 @@
                     );
                     return n
                         ? E().createElement(
-                              l,
+                              c,
                               { body: R.strings.event_lootboxes.storageScreen.tooltip.offBoxes.content() },
                               E().createElement('div', null, F),
                           )

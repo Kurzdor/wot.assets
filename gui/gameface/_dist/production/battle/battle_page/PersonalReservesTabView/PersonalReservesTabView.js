@@ -2018,8 +2018,8 @@
                             O = b === bu.Active,
                             P = o === me.TOOLTIP;
                         (0, r.useEffect)(() => {
-                            T <= 0 && l && l();
-                        }, [l, T]);
+                            O && T <= 0 && l && l();
+                        }, [l, T, O]);
                         const M = (y || L) && !O,
                             k = O && C - a < 5;
                         (0, r.useEffect)(() => {

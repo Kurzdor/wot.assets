@@ -1,0 +1,34 @@
+.Identity_base_56 {
+    pointer-events: none;
+}
+
+.Identity_base__chapter_choice_df {
+    position: absolute;
+    top: 20rem;
+    right: 20rem;
+    z-index: 2;
+}
+
+.Identity_base__progression_1c {
+    margin: -3rem 10rem 0 0;
+}
+
+.mediaMedium .Identity_base__progression_1c {
+    margin: -18rem 20rem 0 0;
+}
+
+.mediaLarge .Identity_base__progression_1c {
+    margin-top: 0;
+}
+
+.Identity_identityImage_69 {
+    width: 202rem;
+    height: 94rem;
+    background: url('R.images.gui.maps.icons.battlePass.identity.identity_small') center / contain no-repeat;
+}
+
+.mediaMedium .Identity_identityImage_69 {
+    width: 300rem;
+    height: 140rem;
+    background-image: url('R.images.gui.maps.icons.battlePass.identity.identity');
+}

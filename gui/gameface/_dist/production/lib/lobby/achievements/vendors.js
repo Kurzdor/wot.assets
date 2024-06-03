@@ -27,7 +27,7 @@
                     return this.payload || [];
                 }
             }
-            class c extends (/^(|2)73$/.test(n.j) ? s : null) {
+            class c extends (/^((27|5|7|70)3|637)$/.test(n.j) ? s : null) {
                 constructor(e) {
                     super(),
                         (this.done = !0),
@@ -67,7 +67,7 @@
                             (this.v0 = null));
                 }
             }
-            class f extends (/^(|2)73$/.test(n.j) ? c : null) {
+            class f extends (/^((27|5|7|70)3|637)$/.test(n.j) ? c : null) {
                 constructor(e) {
                     super(0),
                         (this._string = null),
@@ -98,7 +98,7 @@
                 }
             }
             const d = { dependencies: null };
-            class p extends (/^(|2)73$/.test(n.j) ? s : null) {
+            class p extends (/^((27|5|7|70)3|637)$/.test(n.j) ? s : null) {
                 constructor(e) {
                     super(), (this.source = e), this.setValue(e);
                 }
@@ -134,7 +134,7 @@
                     t && (0, r.S6)(t, (e) => this.add(e));
                 }
             }
-            class h extends (/^(|2)73$/.test(n.j) ? p : null) {
+            class h extends (/^((27|5|7|70)3|637)$/.test(n.j) ? p : null) {
                 constructor(e) {
                     super(e);
                 }
@@ -255,7 +255,7 @@
         },
         9738: (e, t, n) => {
             'use strict';
-            n.d(t, { Globals: () => r.OH, useSpring: () => Te, useTransition: () => ke });
+            n.d(t, { Globals: () => r.OH, useSpring: () => Te, useSprings: () => we, useTransition: () => ke });
             var r = n(2810),
                 i = n(6179),
                 o = n(1686);
@@ -346,7 +346,7 @@
                     }
                     return i;
                 },
-                y = /^(|2)73$/.test(n.j)
+                y = /^((27|5|7|70)3|637)$/.test(n.j)
                     ? ['config', 'onProps', 'onStart', 'onChange', 'onPause', 'onResume', 'onRest']
                     : null,
                 g = {
@@ -455,7 +455,7 @@
                         n && (e.frequency = void 0);
                 } else e.duration = void 0;
             }
-            const P = /^(|2)73$/.test(n.j) ? [] : null;
+            const P = /^((27|5|7|70)3|637)$/.test(n.j) ? [] : null;
             class U {
                 constructor() {
                     (this.changed = !1),
@@ -654,7 +654,7 @@
                 $ = (e) => (4 & e[z]) > 0,
                 q = (e, t) => (t ? (e[z] |= 3) : (e[z] &= -3)),
                 H = (e, t) => (t ? (e[z] |= 4) : (e[z] &= -5));
-            class K extends (/^(|2)73$/.test(n.j) ? V : null) {
+            class K extends (/^((27|5|7|70)3|637)$/.test(n.j) ? V : null) {
                 constructor(e, t) {
                     if (
                         (super(),
@@ -1099,7 +1099,9 @@
             function Z(e, t) {
                 (0, r.rU)(e, (e, n) => null != e && t.add(n));
             }
-            const ee = /^(|2)73$/.test(n.j) ? ['onStart', 'onRest', 'onChange', 'onPause', 'onResume'] : null;
+            const ee = /^((27|5|7|70)3|637)$/.test(n.j)
+                ? ['onStart', 'onRest', 'onChange', 'onPause', 'onResume']
+                : null;
             function te(e, t, n) {
                 e.animation[n] = t[n] !== h(t, n) ? p(t[n], e.key) : void 0;
             }
@@ -1108,7 +1110,7 @@
                 null == (r = (i = e.animation)[t]) || r.call(i, ...n),
                     null == (o = (a = e.defaultProps)[t]) || o.call(a, ...n);
             }
-            const re = /^(|2)73$/.test(n.j) ? ['onStart', 'onChange', 'onRest'] : null;
+            const re = /^((27|5|7|70)3|637)$/.test(n.j) ? ['onStart', 'onChange', 'onRest'] : null;
             let ie = 1;
             class oe {
                 constructor(e, t) {
@@ -2411,7 +2413,12 @@
         },
         7006: (e, t, n) => {
             'use strict';
-            n.d(t, { animated: () => x, useSpring: () => r.useSpring, useTransition: () => r.useTransition });
+            n.d(t, {
+                animated: () => x,
+                useSpring: () => r.useSpring,
+                useSprings: () => r.useSprings,
+                useTransition: () => r.useTransition,
+            });
             var r = n(9738),
                 i = n(493),
                 o = n(2810),
@@ -8808,7 +8815,7 @@
         9769: (e, t, n) => {
             'use strict';
             n.d(t, { A: () => r });
-            const r = /^(273|548|761|924)$/.test(n.j)
+            const r = /^(273|53|548|761|924)$/.test(n.j)
                 ? null
                 : [
                       0, 128, 256, 384, 592, 688, 768, 880, 1024, 1280, 1328, 1424, 1536, 1792, 1872, 1920, 1984, 2048,
@@ -8842,7 +8849,7 @@
         },
         1281: (e, t, n) => {
             'use strict';
-            if ((n.d(t, { D4: () => S }), 273 != n.j)) var r = n(9769);
+            if ((n.d(t, { D4: () => S }), !/^(27|5)3$/.test(n.j))) var r = n(9769);
             const i = {
                 'BB2:108120': 1817,
                 'BP2:OO': 790,
@@ -9329,7 +9336,7 @@
                 'UW1:く': 13,
                 'UW4:私': 12,
             };
-            if (273 != n.j) var o = n(6906);
+            if (!/^(27|5)3$/.test(n.j)) var o = n(6906);
             function a(e, t) {
                 var n = ('undefined' != typeof Symbol && e[Symbol.iterator]) || e['@@iterator'];
                 if (n) return (n = n.call(e)).next.bind(n);
@@ -9581,7 +9588,7 @@
                         e.head.appendChild(n);
                 }
             }
-            if (273 != n.j) var b = n(3759);
+            if (!/^(27|5)3$/.test(n.j)) var b = n(3759);
             function _(e, t) {
                 var n = ('undefined' != typeof Symbol && e[Symbol.iterator]) || e['@@iterator'];
                 if (n) return (n = n.call(e)).next.bind(n);
@@ -13773,6 +13780,12 @@
                         return r.useSpring;
                     },
                 }),
+                n.o(r, 'useSprings') &&
+                    n.d(t, {
+                        useSprings: function () {
+                            return r.useSprings;
+                        },
+                    }),
                 n.o(r, 'useTransition') &&
                     n.d(t, {
                         useTransition: function () {

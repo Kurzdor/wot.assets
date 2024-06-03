@@ -62,6 +62,10 @@
     min-height: 32rem;
 }
 
+.CButton_base__large_5c {
+    min-height: 48rem;
+}
+
 .CButton_base__disabled_d9 {
     cursor: default;
 }
@@ -203,6 +207,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_base__medium_74 .CButton_content_cc {
     font-size: 15rem;
+}
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
 }
 .CButton_base__disabled_d9 .CButton_content_cc {
     opacity: 0.6;
@@ -748,7 +755,19 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Header_nickName_e1 {
-    margin-top: -3rem;
+    transform: translateY(-3.5rem);
+}
+
+.mediaMedium .Header_nickName_e1 {
+    transform: translateY(-5rem);
+}
+
+.mediaLarge .Header_nickName_e1 {
+    transform: translateY(-4.5rem);
+}
+
+.mediaExtraLarge .Header_nickName_e1 {
+    transform: translateY(-7rem);
 }
 
 .Header_clanTag_21 {
@@ -820,17 +839,28 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .LaceDivider_base_1a {
     display: flex;
-    width: 115rem;
+    align-items: center;
+    min-width: 180rem;
 }
 
-.LaceDivider_divider_cf {
-    width: 43rem;
-    height: 14rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.venzel_white_43x14') no-repeat center / cover;
+.LaceDivider_lace_7f {
+    display: flex;
+    flex: 1 1;
     opacity: 0.2;
 }
 
-.LaceDivider_divider__center_c9 {
+.LaceDivider_peak_f2 {
+    flex: 0 0 auto;
+    width: 43rem;
+    height: 14rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.venzel_white_43x14') no-repeat center / cover;
+}
+
+.LaceDivider_peak__right_43 {
+    transform: rotateY(180deg);
+}
+
+.LaceDivider_line_0d {
     flex: 1 1 auto;
     background: linear-gradient(
         180deg,
@@ -844,10 +874,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transparent 7rem
     );
     background-size: 1rem 14rem;
-}
-
-.LaceDivider_divider__right_e8 {
-    transform: rotateY(180deg);
 }
 
 .RankEmblem_base_ec {

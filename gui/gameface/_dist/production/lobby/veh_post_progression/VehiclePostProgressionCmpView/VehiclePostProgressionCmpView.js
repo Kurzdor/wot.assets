@@ -156,7 +156,7 @@
                             (e.ghost = 'ghost');
                     })(a || (a = {})),
                     (function (e) {
-                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium');
+                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium'), (e.large = 'large');
                     })(r || (r = {}));
             },
             7405: (e, u, t) => {
@@ -1161,13 +1161,13 @@
             2790: (e, u, t) => {
                 t.d(u, { Z: () => r });
                 var a = t(6179);
-                const r = (e) => {
-                    const u = (0, a.useRef)();
+                const r = (e, u) => {
+                    const t = (0, a.useRef)();
                     return (
                         (0, a.useEffect)(() => {
-                            u.current = e;
-                        }, [e]),
-                        u.current
+                            (u && !u(e)) || (t.current = e);
+                        }, [u, e]),
+                        t.current
                     );
                 };
             },
@@ -1734,7 +1734,7 @@
                 }
                 var E = t(9924);
                 var F = t(2569),
-                    A = t(8012),
+                    A = t(8136),
                     m = t(583),
                     b = t(3457);
                 const D = 'CompareControl_base_cd',
@@ -1900,7 +1900,7 @@
                         );
                     };
             },
-            8012: (e, u, t) => {
+            8136: (e, u, t) => {
                 t.d(u, { r: () => qu });
                 var a = t(9338),
                     r = t(2344),
@@ -3169,9 +3169,7 @@
                             isTooltipEnabled: e !== _.Received,
                         });
                     });
-                function lu(e) {
-                    return `${e}%`;
-                }
+                var lu = t(5135);
                 const cu = {
                         base: 'Caret_base_07',
                         sector: 'Caret_sector_be',
@@ -3209,37 +3207,40 @@
                             caretPositionY: o = 0,
                         }) => {
                             const s = (0, r.D9)(e),
-                                l = (0, r.D9)(a),
+                                l = (0, r.D9)(a, (e) => e >= 0),
                                 c = s && !e,
-                                _ = !s && e,
+                                _ = !s && e && l !== a,
                                 d = c ? l || 0 : a,
-                                F = E()(du, e && mu, _ && Fu, c && Au),
-                                A = (0, i.useMemo)(
+                                F = (0, i.useMemo)(
                                     () => ({ height: bu(t), width: bu(u), transform: `translate(${bu(d)}, ${bu(o)})` }),
                                     [t, u, d, o],
                                 );
                             return n().createElement(
                                 'div',
-                                { className: F },
-                                n().createElement('div', { className: Eu, style: A }, n().createElement(_u, null)),
+                                { className: E()(du, e && mu, _ && Fu, c && Au) },
+                                n().createElement('div', { className: Eu, style: F }, n().createElement(_u, null)),
                             );
                         },
                     ),
                     Cu = 'SelectionFrame_base_46',
                     pu = 'SelectionFrame_hoverCaretWrapper_a0',
                     gu = 'SelectionFrame_hoverCaretWrapper__visible_ca',
-                    Bu = (0, i.memo)(({ selectedIdx: e, hoveredIdx: u, length: t }) => {
+                    Bu = ({ selectedIdx: e, hoveredIdx: u, length: t }) => {
                         const a = -1 !== e,
                             r = Math.floor(100 / t),
                             o = 100 * e,
                             s = (0, i.useCallback)(
-                                (e) => ({ width: lu(r), transform: `translateX(${lu(100 * e)})` }),
+                                (e) => ({ width: (0, lu.Q)(r), transform: `translateX(${(0, lu.Q)(100 * e)})` }),
                                 [r],
                             );
                         return n().createElement(
                             'div',
                             { className: Cu },
-                            n().createElement(Du, { isVisible: a, caretWidth: lu(r), caretPositionX: lu(o) }),
+                            n().createElement(Du, {
+                                isVisible: a,
+                                caretWidth: (0, lu.Q)(r),
+                                caretPositionX: (0, lu.Q)(o),
+                            }),
                             Array(t)
                                 .fill(null)
                                 .map((e, t) =>
@@ -3250,7 +3251,7 @@
                                     ),
                                 ),
                         );
-                    }),
+                    },
                     vu = {
                         base: 'PairModification_base_7a',
                         base__interactiveStateSelectedFaded: 'PairModification_base__interactiveStateSelectedFaded_8e',
@@ -3715,6 +3716,12 @@
                 }
                 t.d(u, { F4: () => r, ws: () => a });
             },
+            5135: (e, u, t) => {
+                function a(e) {
+                    return `${e}%`;
+                }
+                t.d(u, { Q: () => a });
+            },
             8247: (e, u, t) => {
                 let a;
                 t.d(u, { e: () => a }),
@@ -3757,6 +3764,7 @@
                     base__extraSmall: 'CButton_base__extraSmall_27',
                     base__small: 'CButton_base__small_df',
                     base__medium: 'CButton_base__medium_74',
+                    base__large: 'CButton_base__large_5c',
                     base__disabled: 'CButton_base__disabled_d9',
                     back: 'CButton_back_e5',
                     texture: 'CButton_texture_fe',

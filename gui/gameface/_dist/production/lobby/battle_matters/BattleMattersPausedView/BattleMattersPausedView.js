@@ -62,8 +62,8 @@
                         getViewGlobalPosition: () => D,
                         isEventHandled: () => z,
                         isFocused: () => F,
-                        pxToRem: () => G,
-                        remToPx: () => B,
+                        pxToRem: () => B,
+                        remToPx: () => G,
                         resize: () => W,
                         sendEvent: () => T,
                         setAnimateWindow: () => U,
@@ -250,7 +250,7 @@
                 }
                 function D(e = 'rem') {
                     const t = viewEnv.getViewGlobalPositionRem();
-                    return 'rem' === e ? t : { x: B(t.x), y: B(t.y) };
+                    return 'rem' === e ? t : { x: G(t.x), y: G(t.y) };
                 }
                 function I() {
                     viewEnv.freezeTextureBeforeResize();
@@ -258,10 +258,10 @@
                 function N() {
                     return viewEnv.getScale();
                 }
-                function G(e) {
+                function B(e) {
                     return viewEnv.pxToRem(e);
                 }
-                function B(e) {
+                function G(e) {
                     return viewEnv.remToPx(e);
                 }
                 function U(e, t) {
@@ -1046,7 +1046,7 @@
                 function N(e) {
                     engine.call('PlaySound', e);
                 }
-                const G = {
+                const B = {
                     base: 'CButton_base_40',
                     base__main: 'CButton_base__main_42',
                     base__primary: 'CButton_base__primary_7f',
@@ -1057,6 +1057,7 @@
                     base__extraSmall: 'CButton_base__extraSmall_27',
                     base__small: 'CButton_base__small_df',
                     base__medium: 'CButton_base__medium_74',
+                    base__large: 'CButton_base__large_5c',
                     base__disabled: 'CButton_base__disabled_d9',
                     back: 'CButton_back_e5',
                     texture: 'CButton_texture_fe',
@@ -1069,7 +1070,7 @@
                     base__highlightActive: 'CButton_base__highlightActive_b2',
                     content: 'CButton_content_cc',
                 };
-                let B, U;
+                let G, U;
                 !(function (e) {
                     (e.main = 'main'),
                         (e.primary = 'primary'),
@@ -1077,9 +1078,9 @@
                         (e.primaryRed = 'primaryRed'),
                         (e.secondary = 'secondary'),
                         (e.ghost = 'ghost');
-                })(B || (B = {})),
+                })(G || (G = {})),
                     (function (e) {
-                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium');
+                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium'), (e.large = 'large');
                     })(U || (U = {}));
                 const F = ({
                     children: e,
@@ -1153,18 +1154,18 @@
                             [o, h],
                         ),
                         D = f()(
-                            G.base,
-                            G[`base__${i}`],
+                            B.base,
+                            B[`base__${i}`],
                             {
-                                [G.base__disabled]: o,
-                                [G[`base__${t}`]]: t,
-                                [G.base__focus]: w,
-                                [G.base__highlightActive]: L,
-                                [G.base__firstHover]: y,
+                                [B.base__disabled]: o,
+                                [B[`base__${t}`]]: t,
+                                [B.base__focus]: w,
+                                [B.base__highlightActive]: L,
+                                [B.base__firstHover]: y,
                             },
                             s,
                         ),
-                        I = f()(G.state, G.state__default);
+                        I = f()(B.state, B.state__default);
                     return (
                         (0, a.useEffect)(
                             () => (
@@ -1190,29 +1191,29 @@
                                 onMouseLeave: W,
                                 onClick: k,
                             },
-                            i !== B.ghost &&
+                            i !== G.ghost &&
                                 n().createElement(
                                     n().Fragment,
                                     null,
-                                    n().createElement('div', { className: G.back }),
-                                    n().createElement('span', { className: G.texture }),
+                                    n().createElement('div', { className: B.back }),
+                                    n().createElement('span', { className: B.texture }),
                                 ),
                             n().createElement(
                                 'span',
                                 { className: I },
-                                n().createElement('span', { className: G.stateDisabled }),
-                                n().createElement('span', { className: G.stateHighlightHover }),
-                                n().createElement('span', { className: G.stateHighlightActive }),
+                                n().createElement('span', { className: B.stateDisabled }),
+                                n().createElement('span', { className: B.stateHighlightHover }),
+                                n().createElement('span', { className: B.stateHighlightActive }),
                             ),
                             n().createElement(
                                 'span',
-                                { className: G.content, lang: R.strings.settings.LANGUAGE_CODE() },
+                                { className: B.content, lang: R.strings.settings.LANGUAGE_CODE() },
                                 e,
                             ),
                         )
                     );
                 };
-                F.defaultProps = { type: B.primary, isFocused: !1, soundHover: 'highlight', soundClick: 'play' };
+                F.defaultProps = { type: G.primary, isFocused: !1, soundHover: 'highlight', soundClick: 'play' };
                 const j = (0, a.memo)(F);
                 var z = r(521);
                 r(916);

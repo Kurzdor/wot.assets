@@ -37,10 +37,10 @@
                         displayStatusIs: () => G,
                         events: () => h,
                         extraSize: () => K,
-                        forceTriggerMouseMove: () => U,
+                        forceTriggerMouseMove: () => W,
                         freezeTextureBeforeResize: () => N,
                         getBrowserTexturePath: () => T,
-                        getDisplayStatus: () => W,
+                        getDisplayStatus: () => U,
                         getScale: () => I,
                         getSize: () => S,
                         getViewGlobalPosition: () => P,
@@ -256,10 +256,10 @@
                 function V() {
                     return viewEnv.isEventHandled();
                 }
-                function U() {
+                function W() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function W() {
+                function U() {
                     return viewEnv.getShowingStatus();
                 }
                 const G = Object.keys(f).reduce((u, e) => ((u[e] = () => viewEnv.getShowingStatus() === f[e]), u), {}),
@@ -1101,7 +1101,7 @@
                         A
                     );
                 };
-                let V, U, W, G;
+                let V, W, U, G;
                 y.Sw.instance,
                     (function (u) {
                         (u.FAKE_MODIFIER = 'fakeModifier'),
@@ -1146,7 +1146,6 @@
                             (u.ENV_MODULE_DAMAGE_CHANCE = 'envModuleDamageChance'),
                             (u.REPAIR_SPEED = 'repairSpeed'),
                             (u.VISION_MIN_RADIUS = 'visionMinRadius'),
-                            (u.VISION_MAX_RADIUS = 'visionMaxRadius'),
                             (u.VISION_TIME = 'visionTime'),
                             (u.EQUIPMENT_COOLDOWN = 'equipmentCooldown'),
                             (u.INVISIBILITY_FACTOR_AT_SHOT = 'invisibilityFactorAtShot'),
@@ -1170,10 +1169,10 @@
                             (u.DEVIATION = 'deviation'),
                             (u.LOGIC = 'logic'),
                             (u.HORSEPOWER = 'horsepower');
-                    })(U || (U = {})),
+                    })(W || (W = {})),
                     (function (u) {
                         (u.UNDEFINED = 'undefined'), (u.VAL = 'val'), (u.MUL = 'mul'), (u.ADD = 'add');
-                    })(W || (W = {})),
+                    })(U || (U = {})),
                     (function (u) {
                         (u.UNDEFINED = 'undefined'), (u.POSITIVE = 'positive'), (u.NEGATIVE = 'negative');
                     })(G || (G = {}));
@@ -1303,38 +1302,38 @@
                 const $ = {
                     generalOverrides: [
                         {
-                            condition: K.useType.oneOf(W.MUL),
+                            condition: K.useType.oneOf(U.MUL),
                             valueConverter: q.multiplierToPercent,
                             numberOfDecimals: 0,
                             formatter: z.percent,
                         },
                         {
-                            condition: j(K.useType.oneOf(W.MUL), K.value.isPositiveInteger),
+                            condition: j(K.useType.oneOf(U.MUL), K.value.isPositiveInteger),
                             valueConverter: q.default,
                             numberOfDecimals: 0,
                             prefixForPositiveValue: '',
                             formatter: z.multiplier,
                         },
-                        { condition: K.useType.oneOf(W.VAL), prefixForPositiveValue: '' },
+                        { condition: K.useType.oneOf(U.VAL), prefixForPositiveValue: '' },
                     ],
                     defaultPrefixForPositiveValue: '+',
                     physTypes: {
-                        [U.UNDEFINED]: { overrides: [], defaultNumberOfDecimals: 2, defaultFormatter: z.default },
-                        [U.RADIANS]: {
+                        [W.UNDEFINED]: { overrides: [], defaultNumberOfDecimals: 2, defaultFormatter: z.default },
+                        [W.RADIANS]: {
                             overrides: [
-                                { condition: K.useType.oneOf(W.ADD, W.VAL), valueConverter: q.radiansToDegrees },
+                                { condition: K.useType.oneOf(U.ADD, U.VAL), valueConverter: q.radiansToDegrees },
                             ],
                             defaultNumberOfDecimals: 0,
                             defaultFormatter: z.degree,
                         },
-                        [U.DEGREES]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.degree },
-                        [U.HIT_POINTS]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.hitpoints },
-                        [U.METERS_PER_SECOND]: {
+                        [W.DEGREES]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.degree },
+                        [W.HIT_POINTS]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.hitpoints },
+                        [W.METERS_PER_SECOND]: {
                             overrides: [
                                 {
                                     condition: j(
                                         K.modificationType.oneOf(V.FW_MAX_SPEED, V.BK_MAX_SPEED),
-                                        K.useType.oneOf(W.VAL, W.ADD),
+                                        K.useType.oneOf(U.VAL, U.ADD),
                                     ),
                                     valueConverter: q.metPerSecondToKmPerHour,
                                     formatter: z.kmPerHour,
@@ -1343,18 +1342,18 @@
                             defaultNumberOfDecimals: 0,
                             defaultFormatter: z.metersPerSecond,
                         },
-                        [U.KILOMETERS_PER_HOUR]: {
+                        [W.KILOMETERS_PER_HOUR]: {
                             overrides: [],
                             defaultNumberOfDecimals: 0,
                             defaultFormatter: z.kmPerHour,
                         },
-                        [U.MILLIMETERS]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.millimeters },
-                        [U.SECONDS]: {
+                        [W.MILLIMETERS]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.millimeters },
+                        [W.SECONDS]: {
                             overrides: [
                                 {
                                     condition: j(
                                         K.modificationType.oneOf(V.BATTLE_LENGTH),
-                                        K.useType.oneOf(W.VAL, W.ADD),
+                                        K.useType.oneOf(U.VAL, U.ADD),
                                     ),
                                     formatter: z.time,
                                 },
@@ -1362,13 +1361,13 @@
                             defaultNumberOfDecimals: 2,
                             defaultFormatter: z.seconds,
                         },
-                        [U.MINUTES]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.minutes },
-                        [U.METERS]: {
+                        [W.MINUTES]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.minutes },
+                        [W.METERS]: {
                             overrides: [
                                 {
                                     condition: j(
                                         K.modificationType.oneOf(V.VISION_MIN_RADIUS),
-                                        K.useType.oneOf(W.VAL, W.ADD),
+                                        K.useType.oneOf(U.VAL, U.ADD),
                                     ),
                                     numberOfDecimals: 0,
                                 },
@@ -1376,10 +1375,10 @@
                             defaultNumberOfDecimals: 2,
                             defaultFormatter: z.meters,
                         },
-                        [U.RADIANS_PER_SECOND]: {
+                        [W.RADIANS_PER_SECOND]: {
                             overrides: [
                                 {
-                                    condition: K.useType.oneOf(W.VAL, W.ADD),
+                                    condition: K.useType.oneOf(U.VAL, U.ADD),
                                     valueConverter: q.radiansPerSecondToDegreesPerSecond,
                                     formatter: z.degreesPerSecond,
                                 },
@@ -1387,20 +1386,20 @@
                             defaultNumberOfDecimals: 0,
                             defaultFormatter: z.degreesPerSecond,
                         },
-                        [U.DEGREES_PER_SECOND]: {
+                        [W.DEGREES_PER_SECOND]: {
                             overrides: [],
                             defaultNumberOfDecimals: 0,
                             defaultFormatter: z.degreesPerSecond,
                         },
-                        [U.METER_PER_SECOND_SQUARED]: {
+                        [W.METER_PER_SECOND_SQUARED]: {
                             overrides: [],
                             defaultNumberOfDecimals: 2,
                             defaultFormatter: z.meterPerSecondSquared,
                         },
-                        [U.PROBABILITY]: {
+                        [W.PROBABILITY]: {
                             overrides: [
                                 {
-                                    condition: K.useType.oneOf(W.VAL, W.ADD),
+                                    condition: K.useType.oneOf(U.VAL, U.ADD),
                                     valueConverter: q.probabilityToPercent,
                                     formatter: z.percent,
                                 },
@@ -1408,17 +1407,17 @@
                             defaultNumberOfDecimals: 0,
                             defaultFormatter: z.percent,
                         },
-                        [U.DEVIATION]: {
+                        [W.DEVIATION]: {
                             overrides: [
                                 {
-                                    condition: K.useType.oneOf(W.VAL),
+                                    condition: K.useType.oneOf(U.VAL),
                                     valueConverter: q.probabilityToPercent,
                                     numberOfDecimals: 0,
                                     prefixForPositiveValue: '',
                                     formatter: z.deviation,
                                 },
                                 {
-                                    condition: K.useType.oneOf(W.ADD),
+                                    condition: K.useType.oneOf(U.ADD),
                                     valueConverter: q.probabilityToPercent,
                                     numberOfDecimals: 0,
                                     formatter: z.percent,
@@ -1427,8 +1426,8 @@
                             defaultNumberOfDecimals: 2,
                             defaultFormatter: z.default,
                         },
-                        [U.HORSEPOWER]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.horsepower },
-                        [U.LOGIC]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.logic },
+                        [W.HORSEPOWER]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.horsepower },
+                        [W.LOGIC]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.logic },
                     },
                 };
                 function Y(u, e) {
@@ -1470,7 +1469,7 @@
                 class X {
                     constructor() {
                         (this.formatRestriction = (u, e) => {
-                            const t = Object.assign({}, u, { value: e, useType: W.VAL });
+                            const t = Object.assign({}, u, { value: e, useType: U.VAL });
                             return this.formatModifier(t);
                         }),
                             (this.formatModifier = (u) => {
@@ -1478,7 +1477,7 @@
                                 if (
                                     (void 0 === e &&
                                         (console.warn('Not found formatter for physicalType', u.physicalType),
-                                        (e = $.physTypes[U.UNDEFINED])),
+                                        (e = $.physTypes[W.UNDEFINED])),
                                     void 0 === e)
                                 )
                                     throw Error(`Not found formatter for physicalType=${u.physicalType.toString()}`);
@@ -1504,7 +1503,7 @@
                     J = 'ModifierParameter_paramName_9a',
                     uu = (u) => R.strings.battle_modifiers.modifier.name.$dyn(u),
                     eu = ({ value: u }) => {
-                        if (u.useType === W.UNDEFINED)
+                        if (u.useType === U.UNDEFINED)
                             return i().createElement(
                                 'div',
                                 { className: Q },

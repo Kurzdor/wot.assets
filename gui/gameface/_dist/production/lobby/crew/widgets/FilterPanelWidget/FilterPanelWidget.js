@@ -156,7 +156,7 @@
                             (e.ghost = 'ghost');
                     })(n || (n = {})),
                     (function (e) {
-                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium');
+                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium'), (e.large = 'large');
                     })(o || (o = {}));
             },
             9987: (e, u, t) => {
@@ -411,7 +411,7 @@
                         s(
                             {
                                 ref: m,
-                                onClick:
+                                onMouseDown:
                                     ((p = F.props.onClick),
                                     (e) => {
                                         D && (B(), d && d(e), p && p(e));
@@ -1808,8 +1808,8 @@
                     _ = a().memo(function ({ from: e, to: u, className: t }) {
                         return a().createElement(
                             'div',
-                            { className: o()(i, 0 === e && s, t) },
-                            a().createElement('div', { className: o()(l, 0 === e && u > 0 && c) }, e),
+                            { className: o()(i, e <= 0 && s, t) },
+                            a().createElement('div', { className: o()(l, e <= 0 && u > 0 && c) }, e),
                             e !== u &&
                                 a().createElement(
                                     a().Fragment,
@@ -2747,6 +2747,7 @@
                     base__extraSmall: 'CButton_base__extraSmall_27',
                     base__small: 'CButton_base__small_df',
                     base__medium: 'CButton_base__medium_74',
+                    base__large: 'CButton_base__large_5c',
                     base__disabled: 'CButton_base__disabled_d9',
                     back: 'CButton_back_e5',
                     texture: 'CButton_texture_fe',

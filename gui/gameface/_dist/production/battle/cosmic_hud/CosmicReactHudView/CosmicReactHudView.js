@@ -1986,16 +1986,14 @@
                         let i = [...e.messageQueue];
                         const l = Math.min(r, i.length);
                         let s = e.lastMessageId;
-                        const n = i
-                            .slice(0, l)
-                            .map((e) =>
-                                Object.assign({}, e, {
-                                    timeOfDisplay: u,
-                                    timeOfLeave: u + 2300,
-                                    positionIndex: t++,
-                                    id: ++s,
-                                }),
-                            );
+                        const n = i.slice(0, l).map((e) =>
+                            Object.assign({}, e, {
+                                timeOfDisplay: u,
+                                timeOfLeave: u + 2300,
+                                positionIndex: t++,
+                                id: ++s,
+                            }),
+                        );
                         a.push(...n), (i = i.slice(l));
                         const o = i.length > 0 || a.length > 0;
                         return Object.assign({}, e, {

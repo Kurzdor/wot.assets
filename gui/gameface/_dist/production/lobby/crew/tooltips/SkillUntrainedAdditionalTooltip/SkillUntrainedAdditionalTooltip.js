@@ -286,7 +286,10 @@
                     Z = { view: a, client: i };
                 var ee = t(6179),
                     ne = t.n(ee);
-                function te() {
+                const te = (e) => {
+                    (0, ee.useEffect)(e, []);
+                };
+                function re() {
                     const e = (0, ee.useRef)(0);
                     var n;
                     return (
@@ -315,15 +318,15 @@
                         )
                     );
                 }
-                const re = {
+                const ie = {
                         base: 'TooltipDecorator_base_c9',
                         'base__theme-default': 'TooltipDecorator_base__theme-default_6d',
                         decorator: 'TooltipDecorator_decorator_3d',
                     },
-                    ie = ['children', 'className', 'theme'];
-                function oe() {
+                    oe = ['children', 'className', 'theme'];
+                function ae() {
                     return (
-                        (oe =
+                        (ae =
                             Object.assign ||
                             function (e) {
                                 for (var n = 1; n < arguments.length; n++) {
@@ -332,10 +335,10 @@
                                 }
                                 return e;
                             }),
-                        oe.apply(this, arguments)
+                        ae.apply(this, arguments)
                     );
                 }
-                const ae = ne().forwardRef(function (e, n) {
+                const se = ne().forwardRef(function (e, n) {
                     let t = e.children,
                         r = e.className,
                         i = e.theme,
@@ -348,12 +351,11 @@
                                 o = Object.keys(e);
                             for (r = 0; r < o.length; r++) (t = o[r]), n.indexOf(t) >= 0 || (i[t] = e[t]);
                             return i;
-                        })(e, ie);
-                    const s = te(),
+                        })(e, oe);
+                    const s = re(),
                         l = ne().useRef(null);
-                    var c;
                     return (
-                        (c = () => {
+                        te(() => {
                             s.run(() => {
                                 const e = l.current;
                                 if (!e) return;
@@ -369,24 +371,23 @@
                                 });
                             });
                         }),
-                        (0, ee.useEffect)(c, []),
                         ne().createElement(
                             'div',
-                            oe({}, a, {
-                                className: u()(re.base, re[`base__theme-${o}`], r),
+                            ae({}, a, {
+                                className: u()(ie.base, ie[`base__theme-${o}`], r),
                                 ref: function (e) {
                                     (l.current = e), 'function' == typeof n ? n(e) : n && (n.current = e);
                                 },
                             }),
-                            ne().createElement('div', { className: re.decorator }, t),
+                            ne().createElement('div', { className: ie.decorator }, t),
                         )
                     );
                 });
-                var se = t(493),
-                    ue = t.n(se);
-                function le() {}
+                var ue = t(493),
+                    le = t.n(ue);
+                function ce() {}
                 console.log;
-                const ce = [
+                const de = [
                     'src',
                     'className',
                     'autoplay',
@@ -396,9 +397,9 @@
                     'keyframesNameConfig',
                     'onClick',
                 ];
-                function de() {
+                function ve() {
                     return (
-                        (de =
+                        (ve =
                             Object.assign ||
                             function (e) {
                                 for (var n = 1; n < arguments.length; n++) {
@@ -407,10 +408,10 @@
                                 }
                                 return e;
                             }),
-                        de.apply(this, arguments)
+                        ve.apply(this, arguments)
                     );
                 }
-                const ve = (0, ee.forwardRef)(function (e, n) {
+                const me = (0, ee.forwardRef)(function (e, n) {
                         let t = e.src,
                             r = e.className,
                             i = e.autoplay,
@@ -429,10 +430,17 @@
                                     o = Object.keys(e);
                                 for (r = 0; r < o.length; r++) (t = o[r]), n.indexOf(t) >= 0 || (i[t] = e[t]);
                                 return i;
-                            })(e, ce);
+                            })(e, de);
                         const m = n,
                             f = (0, ee.useRef)(null);
                         return (
+                            te(() =>
+                                Z.view.events.onDisplayChanged((e, n) => {
+                                    var t, r;
+                                    n === T.hidden && (null == (t = f.current) || t.pause());
+                                    n === T.shown && (null == (r = f.current) || r.play());
+                                }),
+                            ),
                             (0, ee.useEffect)(
                                 () =>
                                     ((e) => {
@@ -467,7 +475,7 @@
                                     const e = {
                                             changeTimeHandlers: [],
                                             changeKeyframeHandlers: [],
-                                            changeTimeLoop: le,
+                                            changeTimeLoop: ce,
                                         },
                                         n = () => {
                                             let n = 0;
@@ -642,50 +650,50 @@
                             }, []),
                             ne().createElement(
                                 'video',
-                                de({ src: t, className: r, style: a, loop: u, ref: f, onClick: d }, v),
+                                ve({ src: t, className: r, style: a, loop: u, ref: f, onClick: d }, v),
                             )
                         );
                     }),
-                    me = (0, ee.memo)(ve);
-                var fe = t(3403);
-                const ge = 'SkillUntrainedHeader_base_74',
-                    pe = 'SkillUntrainedHeader_gradient_03',
-                    he = 'SkillUntrainedHeader_icon_21',
-                    we = 'SkillUntrainedHeader_header_96',
-                    ye = (0, ee.memo)(({ className: e }) =>
+                    fe = (0, ee.memo)(me);
+                var ge = t(3403);
+                const pe = 'SkillUntrainedHeader_base_74',
+                    he = 'SkillUntrainedHeader_gradient_03',
+                    we = 'SkillUntrainedHeader_icon_21',
+                    ye = 'SkillUntrainedHeader_header_96',
+                    Ee = (0, ee.memo)(({ className: e }) =>
                         ne().createElement(
                             'div',
-                            { className: u()(ge, e) },
-                            ne().createElement('div', { className: pe }),
+                            { className: u()(pe, e) },
                             ne().createElement('div', { className: he }),
-                            ne().createElement('div', { className: we }, R.strings.tooltips.skill.untrained.header()),
+                            ne().createElement('div', { className: we }),
+                            ne().createElement('div', { className: ye }, R.strings.tooltips.skill.untrained.header()),
                         ),
                     ),
-                    Ee = 'SkillUntrainedAdditionalApp_base_a7',
-                    be = 'SkillUntrainedAdditionalApp_movie_74',
-                    Te = 'SkillUntrainedAdditionalApp_header_db',
-                    _e = 'SkillUntrainedAdditionalApp_description_93',
-                    Pe = (0, fe.Pi)(() =>
+                    be = 'SkillUntrainedAdditionalApp_base_a7',
+                    Te = 'SkillUntrainedAdditionalApp_movie_74',
+                    _e = 'SkillUntrainedAdditionalApp_header_db',
+                    Pe = 'SkillUntrainedAdditionalApp_description_93',
+                    Se = (0, ge.Pi)(() =>
                         ne().createElement(
                             'div',
-                            { className: Ee },
-                            ne().createElement(ye, { className: Te }),
-                            ne().createElement(me, {
+                            { className: be },
+                            ne().createElement(Ee, { className: _e }),
+                            ne().createElement(fe, {
                                 loop: !0,
                                 autoplay: !0,
                                 src: R.videos.animations.advancedHints.skillUntrainedPenalty(),
-                                className: be,
+                                className: Te,
                             }),
                             ne().createElement(
                                 'div',
-                                { className: _e },
+                                { className: Pe },
                                 R.strings.tooltips.skill.untrained.additional(),
                             ),
                         ),
                     );
                 engine.whenReady.then(() => {
-                    ue().render(
-                        ne().createElement(ae, null, ne().createElement(Pe, null)),
+                    le().render(
+                        ne().createElement(se, null, ne().createElement(Se, null)),
                         document.getElementById('root'),
                     );
                 });

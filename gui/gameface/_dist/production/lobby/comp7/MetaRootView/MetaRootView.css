@@ -517,6 +517,10 @@ body {
     min-height: 32rem;
 }
 
+.CButton_base__large_5c {
+    min-height: 48rem;
+}
+
 .CButton_base__disabled_d9 {
     cursor: default;
 }
@@ -658,6 +662,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_base__medium_74 .CButton_content_cc {
     font-size: 15rem;
+}
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
 }
 .CButton_base__disabled_d9 .CButton_content_cc {
     opacity: 0.6;
@@ -5289,11 +5296,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     z-index: 1;
     pointer-events: none;
 }
-.ShopPage_rewardImage_ee {
+.ShopPage_rewardContainer_22 {
     position: absolute;
     top: 42%;
     left: 34%;
     transform: translate(-50%, -50%);
+}
+.ShopPage_rewardBase_a8 {
+    pointer-events: auto;
 }
 .ShopPage_rewardHighlight_52 {
     width: 100vw;
@@ -9335,17 +9345,28 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .LaceDivider_base_1a {
     display: flex;
-    width: 115rem;
+    align-items: center;
+    min-width: 180rem;
 }
 
-.LaceDivider_divider_cf {
-    width: 43rem;
-    height: 14rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.venzel_white_43x14') no-repeat center / cover;
+.LaceDivider_lace_7f {
+    display: flex;
+    flex: 1 1;
     opacity: 0.2;
 }
 
-.LaceDivider_divider__center_c9 {
+.LaceDivider_peak_f2 {
+    flex: 0 0 auto;
+    width: 43rem;
+    height: 14rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.venzel_white_43x14') no-repeat center / cover;
+}
+
+.LaceDivider_peak__right_43 {
+    transform: rotateY(180deg);
+}
+
+.LaceDivider_line_0d {
     flex: 1 1 auto;
     background: linear-gradient(
         180deg,
@@ -9359,10 +9380,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transparent 7rem
     );
     background-size: 1rem 14rem;
-}
-
-.LaceDivider_divider__right_e8 {
-    transform: rotateY(180deg);
 }
 
 @keyframes CardFooter_blink_d3 {
@@ -9680,32 +9697,32 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 0;
 }
 
-.SeasonCard_laceDivider_68 {
+.SeasonCard_laceBase_19 {
     width: 196rem;
 }
 
-.mediaSmall .SeasonCard_laceDivider_68 {
+.mediaSmall .SeasonCard_laceBase_19 {
     width: 276rem;
 }
 
-.mediaMedium .SeasonCard_laceDivider_68 {
+.mediaMedium .SeasonCard_laceBase_19 {
     width: 326rem;
 }
 
-.mediaLarge .SeasonCard_laceDivider_68 {
+.mediaLarge .SeasonCard_laceBase_19 {
     width: 356rem;
 }
 
-.mediaExtraLarge .SeasonCard_laceDivider_68 {
+.mediaExtraLarge .SeasonCard_laceBase_19 {
     width: 416rem;
 }
 
-.SeasonCard_laceDividerInner_72 {
+.SeasonCard_laceContainer_48 {
     filter: none;
     opacity: 0.2;
 }
 
-.SeasonCard_laceDividerInner__active_82 {
+.SeasonCard_laceContainer__active_6d {
     filter: drop-shadow(0 1rem 5rem #0059ff);
     opacity: 0.5;
 }

@@ -1,3 +1,29 @@
+.Background_base_94 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat 50% / cover;
+}
+
+.Background_base__blur_69 {
+    filter: blur(12px);
+}
+
+.Background_vignette_79 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.story_mode.gui.maps.icons.common.vignette') no-repeat 50% / 100%;
+}
+
+.Background_preloader_7d {
+    display: none;
+}
+
 .CButton_base_40 {
     display: flex;
     justify-content: center;
@@ -60,6 +86,10 @@
 
 .CButton_base__medium_74 {
     min-height: 32rem;
+}
+
+.CButton_base__large_5c {
+    min-height: 48rem;
 }
 
 .CButton_base__disabled_d9 {
@@ -203,6 +233,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_base__medium_74 .CButton_content_cc {
     font-size: 15rem;
+}
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
 }
 .CButton_base__disabled_d9 .CButton_content_cc {
     opacity: 0.6;
@@ -348,28 +381,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .TextButton_base_b6:active .TextButton_shine_e2 {
     opacity: 0;
-}
-
-.Background_base_94 {
-    width: 100%;
-    height: 100%;
-    background: no-repeat 50% / cover;
-    position: absolute;
-}
-
-.Background_base__blur_69 {
-    filter: blur(12px);
-}
-
-.Background_vignette_79 {
-    width: 100%;
-    height: 100%;
-    background: url('R.images.story_mode.gui.maps.icons.common.vignette') no-repeat 50% / 100%;
-    position: absolute;
-}
-
-.Background_preloader_7d {
-    display: none;
 }
 
 .ExtendedText_base_71 {
@@ -526,6 +537,47 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     overflow-wrap: normal;
 }
 
+.BattleResultDifficultyInfo_base_c2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    bottom: 102rem;
+}
+
+.mediaMedium .BattleResultDifficultyInfo_base_c2 {
+    bottom: 135rem;
+}
+
+.mediaLarge .BattleResultDifficultyInfo_base_c2 {
+    bottom: 143rem;
+}
+
+.BattleResultDifficultyInfo_icon_64 {
+    width: 16rem;
+    height: 16rem;
+    background: url('R.images.gui.maps.icons.dogtags.icons.icon_info') no-repeat 50% / contain;
+}
+
+.mediaMedium .BattleResultDifficultyInfo_icon_64 {
+    margin-top: 3rem;
+}
+
+.BattleResultDifficultyInfo_text_dc {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    position: relative;
+}
+
+.mediaMedium .BattleResultDifficultyInfo_text_dc {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
 .BattleResultMissionProgress_base_c0 {
     display: flex;
     flex-direction: column;
@@ -537,6 +589,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 194rem;
 }
 
+.mediaMedium .BattleResultMissionProgress_base__withRewards_0e {
+    width: 128rem;
+}
+
+.mediaExtraLarge .BattleResultMissionProgress_base__withRewards_0e {
+    width: 194rem;
+}
+
 .BattleResultMissionProgress_icon_91 {
     width: 176rem;
     height: 176rem;
@@ -545,6 +605,18 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaMedium .BattleResultMissionProgress_icon_91 {
+    width: 264rem;
+    height: 264rem;
+    margin-top: -74rem;
+}
+
+.mediaMedium .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_icon_91 {
+    width: 176rem;
+    height: 176rem;
+    margin: -44rem 0 -63rem;
+}
+
+.mediaExtraLarge .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_icon_91 {
     width: 264rem;
     height: 264rem;
     margin-top: -74rem;
@@ -568,6 +640,22 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: -31rem;
 }
 
+.mediaMedium .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_value_1f {
+    color: #ffdd99;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: -3rem 0 30rem -65rem;
+}
+
+.mediaExtraLarge .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_value_1f {
+    color: #ffdd99;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: -31rem;
+}
+
 .BattleResultMissionProgress_slash_85 {
     color: #ffdd99;
     font-size: 14rem;
@@ -577,6 +665,22 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaMedium .BattleResultMissionProgress_slash_85 {
+    color: #ffdd99;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: -55rem;
+}
+
+.mediaMedium .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_slash_85 {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: -49rem 0 28rem;
+}
+
+.mediaExtraLarge .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_slash_85 {
     color: #ffdd99;
     font-size: 20rem;
     font-weight: 400;
@@ -594,6 +698,22 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaMedium .BattleResultMissionProgress_total_f2 {
+    color: #ffdd99;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: -51rem;
+}
+
+.mediaMedium .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_total_f2 {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: -47rem 0 30rem 65rem;
+}
+
+.mediaExtraLarge .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_total_f2 {
     color: #ffdd99;
     font-size: 20rem;
     font-weight: 400;
@@ -620,14 +740,66 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: -17rem;
 }
 
+.mediaMedium .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_name_6f {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 90rem;
+    margin-top: -28rem;
+}
+
+.mediaExtraLarge .BattleResultMissionProgress_base__withRewards_0e .BattleResultMissionProgress_name_6f {
+    color: #ffdd99;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 130rem;
+    margin-top: -17rem;
+}
+
+.NumberAnimation_base_f8 {
+    display: flex;
+    color: #f2f2f7;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.NumberAnimation_base__finalBounce_17 {
+    animation: NumberAnimation_bounce_8f 0.2s ease-in-out;
+}
+
+@keyframes NumberAnimation_bounce_8f {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 .BattleResultProgress_base_47 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 128rem;
+    z-index: 2;
 }
 
 .mediaMedium .BattleResultProgress_base_47 {
+    width: 194rem;
+}
+
+.mediaMedium .BattleResultProgress_base__withRewards_cd {
+    width: 128rem;
+}
+
+.mediaExtraLarge .BattleResultProgress_base__withRewards_cd {
     width: 194rem;
 }
 
@@ -642,6 +814,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 128rem;
 }
 
+.mediaMedium .BattleResultProgress_base__withRewards_cd .BattleResultProgress_icon_60 {
+    width: 90rem;
+    height: 90rem;
+}
+
+.mediaExtraLarge .BattleResultProgress_base__withRewards_cd .BattleResultProgress_icon_60 {
+    width: 128rem;
+    height: 128rem;
+}
+
 .BattleResultProgress_value_fc {
     color: #f2f2f7;
     font-size: 22rem;
@@ -651,6 +833,22 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaMedium .BattleResultProgress_value_fc {
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: -32rem;
+}
+
+.mediaMedium .BattleResultProgress_base__withRewards_cd .BattleResultProgress_value_fc {
+    color: #f2f2f7;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: -24rem 0 30rem;
+}
+
+.mediaExtraLarge .BattleResultProgress_base__withRewards_cd .BattleResultProgress_value_fc {
     color: #f2f2f7;
     font-size: 28rem;
     font-weight: 700;
@@ -677,12 +875,354 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: -17rem;
 }
 
-.BattleResultProgressLevels_base_61 {
+.mediaMedium .BattleResultProgress_base__withRewards_cd .BattleResultProgress_name_c2 {
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 90rem;
+    margin-top: -28rem;
+}
+
+.mediaExtraLarge .BattleResultProgress_base__withRewards_cd .BattleResultProgress_name_c2 {
+    color: #f2f2f7;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 130rem;
+    margin-top: -17rem;
+}
+
+.Reward_base_ea {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.Reward_base__s48x48_46,
+.Reward_base__small_c0 {
+    width: 48rem;
+    height: 48rem;
+}
+
+.Reward_base__s80x80_ce,
+.Reward_base__big_e5 {
+    width: 80rem;
+    height: 80rem;
+}
+
+.Reward_base__s128x100_c3 {
+    width: 128rem;
+    height: 100rem;
+}
+
+.Reward_base__s180x135_7c {
+    width: 180rem;
+    height: 135rem;
+}
+
+.Reward_base__s232x174_67 {
+    width: 232rem;
+    height: 174rem;
+}
+
+.Reward_base__s296x222_78 {
+    width: 296rem;
+    height: 222rem;
+}
+
+.Reward_base__s400x300_07 {
+    width: 400rem;
+    height: 300rem;
+}
+
+.Reward_base__s600x450_f8 {
+    width: 600rem;
+    height: 450rem;
+}
+
+.Reward_tooltipWrapper_b5 {
+    height: 100%;
+}
+
+.Reward_icon_df {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.Reward_overlay_68 {
+    background: no-repeat center / 100%;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.Reward_base__s48x48_46 .Reward_overlay_68,
+.Reward_base__small_c0 .Reward_overlay_68 {
+    width: 96rem;
+    height: 96rem;
+    background-size: 100%;
+    overflow: visible;
+}
+
+.Reward_base__s80x80_ce .Reward_overlay_68,
+.Reward_base__big_e5 .Reward_overlay_68 {
+    width: 128rem;
+    height: 128rem;
+}
+
+.Reward_base__s180x135_7c .Reward_overlay_68 {
+    width: 266rem;
+    height: 241rem;
+}
+
+.Reward_base__s232x174_67 .Reward_overlay_68 {
+    width: 344rem;
+    height: 312rem;
+}
+
+.Reward_base__s296x222_78 .Reward_overlay_68 {
+    width: 450rem;
+    height: 408rem;
+}
+
+.Reward_base__s400x300_07 .Reward_overlay_68 {
+    width: 618rem;
+    height: 590rem;
+}
+
+.Reward_base__s600x450_f8 .Reward_overlay_68 {
+    width: 670rem;
+    height: 575rem;
+}
+
+.Reward_highlight_36 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 0;
+}
+
+.Reward_image_89 {
+    position: relative;
+}
+
+.Reward_info_72 {
+    margin-top: -13rem;
+    color: #e9e2bf;
+    font-size: 14rem;
+    line-height: 18rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_info_72,
+.Reward_base__small_c0 .Reward_info_72 {
+    margin: -10rem -10rem 0;
+}
+
+.Reward_info__multi_63 {
+    margin-right: 2rem;
+    text-align: right;
+}
+
+.Reward_base__s48x48_46 .Reward_info__multi_63,
+.Reward_base__small_c0 .Reward_info__multi_63 {
+    margin-right: 0;
+}
+
+.Reward_info__credits_ef {
+    color: #ced9d9;
+}
+
+.Reward_info__gold_36 {
+    color: #ffc363;
+}
+
+.Reward_info__crystal_36 {
+    color: #c9c9b6;
+}
+
+.Reward_info__premiumTank_d3 {
+    color: #ffdd99;
+}
+
+.Reward_timer_d3 {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_timer_d3,
+.Reward_base__small_c0 .Reward_timer_d3 {
+    width: 23rem;
+    height: 23rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
+    top: -6rem;
+    right: -6rem;
+}
+
+.Reward_base__s80x80_ce .Reward_timer_d3,
+.Reward_base__big_e5 .Reward_timer_d3 {
+    width: 48rem;
+    height: 48rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
+    top: -14rem;
+    right: -14rem;
+}
+
+.BattleResultRewards_base_ae {
+    width: 100vw;
+    height: 285rem;
+    margin-top: -28rem;
+    position: relative;
+}
+
+.mediaMedium .BattleResultRewards_base_ae {
+    margin-top: 105rem;
+}
+
+.mediaLarge .BattleResultRewards_base_ae {
+    margin-top: 154rem;
+}
+
+.mediaExtraLarge .BattleResultRewards_base_ae {
+    margin-top: 254rem;
+}
+
+.BattleResultRewards_rewards_c2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
     display: flex;
-    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 93rem;
+    z-index: 2;
+}
+
+.mediaMedium .BattleResultRewards_rewards_c2 {
+    top: -21rem;
+}
+
+.mediaLarge .BattleResultRewards_rewards_c2 {
+    top: 27rem;
+}
+
+.mediaExtraLarge .BattleResultRewards_rewards_c2 {
+    top: -62rem;
+}
+
+.BattleResultRewards_main_69 {
+    display: flex;
+}
+
+.BattleResultRewards_other_01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16rem;
+}
+
+.mediaMedium .BattleResultRewards_other_01 {
+    margin-top: 32rem;
+}
+
+.BattleResultRewards_otherText_4c {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 16rem;
+    text-align: center;
+}
+
+.mediaMedium .BattleResultRewards_otherText_4c {
+    margin-top: 30rem;
+}
+
+.BattleResultRewards_otherRewards_cc {
+    margin: -5rem 12rem 0;
+}
+
+.mediaMedium .BattleResultRewards_otherRewards_cc {
+    margin: -23rem 12rem 0;
+}
+
+.BattleResultRewards_ribbon_78 {
+    width: 1920rem;
+    height: 500rem;
+    background: url('R.images.gui.maps.icons.mapbox.awardsView.ribbon_regular') no-repeat 50% / contain;
+    position: absolute;
+    top: -70rem;
+    left: 50%;
+    transform: translate(-50%) scale(0.7);
+}
+
+.mediaMedium .BattleResultRewards_ribbon_78 {
+    top: -170rem;
+    transform: translate(-50%) scale(0.84);
+}
+
+.mediaLarge .BattleResultRewards_ribbon_78 {
+    top: -132rem;
+    transform: translate(-50%);
+}
+
+.mediaExtraLarge .BattleResultRewards_ribbon_78 {
+    top: -220rem;
+}
+
+.MainReward_base_1f {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 5rem;
+}
+
+.mediaMedium .MainReward_base_1f {
+    margin: 0 10rem;
+}
+
+.MainReward_value_1d {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.mediaMedium .MainReward_value_1d {
+    font-size: 73rem;
+}
+
+.MainReward_value__freeXP_8c {
+    color: #c9c9b6;
+}
+
+.MainReward_value__credits_ff {
+    color: #ced9d9;
+}
+
+.MainReward_icon_6a {
+    margin-top: 7rem;
+    background: no-repeat 50% / contain;
+}
+
+.mediaMedium .MainReward_icon_6a {
+    margin-top: 10rem;
 }
 
 .BattleResultVehicle_base_03 {
@@ -778,10 +1318,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .BattleResultVehicle_vehicle_19 {
     width: 360rem;
     height: 270rem;
-    background: url('R.images.story_mode.gui.maps.icons.battleResult.vehicle.vehicle') no-repeat 50% / contain;
+    background: no-repeat 50% / contain;
     position: absolute;
-    right: 30rem;
-    bottom: -44rem;
+    right: 16rem;
+    bottom: -45rem;
 }
 
 .mediaSmall .BattleResultVehicle_vehicle_19 {
@@ -795,35 +1335,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .mediaLarge .BattleResultVehicle_vehicle_19 {
     width: 600rem;
     height: 450rem;
-    background-image: url('R.images.story_mode.gui.maps.icons.battleResult.vehicle.large.vehicle');
     right: 60rem;
     bottom: -82rem;
 }
 
 .mediaExtraLarge .BattleResultVehicle_vehicle_19 {
     right: 150rem;
-}
-
-.BattleResultVehicle_vehicleName_a1 {
-    color: #f2f2f7;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-    text-align: right;
-    position: absolute;
-    right: 40rem;
-    bottom: 57rem;
-}
-
-.BattleResultVehicle_playerStatus_f1 {
-    color: #f2f2f7;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    text-align: right;
-    position: absolute;
-    right: 40rem;
-    bottom: 34rem;
 }
 
 .BattleResultViewApp_base_15 {
@@ -835,23 +1352,37 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     overflow: hidden;
 }
 
-.BattleResultViewApp_back_f2 {
-    width: 100%;
-    height: 100%;
-    background: url('R.images.story_mode.gui.maps.icons.battleResult.dark_lose') 50% / 100%;
+.BattleResultViewApp_sparks_7e {
     position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.story_mode.gui.maps.icons.battleResult.sparks') no-repeat 50% / cover;
+    mix-blend-mode: screen;
+}
+
+.BattleResultViewApp_shatter_a2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    pointer-events: none;
+}
+
+.BattleResultViewApp_back_f2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.story_mode.gui.maps.icons.battleResult.dark_lose') 50% / 100%;
 }
 
 .BattleResultViewApp_base__victory_bd .BattleResultViewApp_back_f2 {
     background-image: url('R.images.story_mode.gui.maps.icons.battleResult.dark_win');
-}
-
-.BattleResultViewApp_sparks_7e {
-    width: 100%;
-    height: 100%;
-    background: url('R.images.story_mode.gui.maps.icons.battleResult.sparks') no-repeat 50% / cover;
-    mix-blend-mode: screen;
-    position: absolute;
 }
 
 .BattleResultViewApp_shadowCenter_fd {
@@ -864,15 +1395,33 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: url('R.images.story_mode.gui.maps.icons.battleResult.text_back') no-repeat 50% / contain;
 }
 
-.BattleResultViewApp_shadowTop_67 {
+.BattleResultViewApp_titleGlow_05 {
     width: 1920rem;
     height: 660rem;
     background: url('R.images.story_mode.gui.maps.icons.common.defeat_back') no-repeat 50% / 100%;
+    mix-blend-mode: screen;
     position: absolute;
 }
 
-.BattleResultViewApp_base__victory_bd .BattleResultViewApp_shadowTop_67 {
+.BattleResultViewApp_base__victory_bd .BattleResultViewApp_titleGlow_05 {
     background-image: url('R.images.story_mode.gui.maps.icons.common.victory_back');
+}
+
+.BattleResultViewApp_flash_bb {
+    width: 632rem;
+    height: 125rem;
+    margin-top: -120rem;
+    background: url('R.images.story_mode.gui.maps.icons.battleResult.flash') no-repeat 50% / contain;
+    opacity: 0;
+    mix-blend-mode: screen;
+}
+
+.mediaExtraLarge .BattleResultViewApp_flash_bb {
+    margin-top: -156rem;
+}
+
+.BattleResultViewApp_container_b8 {
+    z-index: 0;
 }
 
 .BattleResultViewApp_title_0e {
@@ -881,15 +1430,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 700;
     line-height: 1.1;
     margin-top: 72rem;
-    mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%);
+    mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1) 65%);
 }
 
 .mediaLarge .BattleResultViewApp_title_0e {
     color: #f2f2f7;
     font-size: 96rem;
     font-weight: 700;
-    line-height: 1.1;
-    margin-top: 80rem;
+    line-height: 1;
+    margin-top: 86rem;
 }
 
 .mediaExtraLarge .BattleResultViewApp_title_0e {
@@ -898,10 +1447,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 700;
     line-height: 1;
     margin-top: 100rem;
-}
-
-.BattleResultViewApp_base__victory_bd .BattleResultViewApp_title_0e {
-    animation: BattleResultViewApp_fadeIn_48 2s linear;
 }
 
 .BattleResultViewApp_subTitle_7b {
@@ -913,7 +1458,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaLarge .BattleResultViewApp_subTitle_7b {
-    margin-top: 2rem;
+    margin-top: 6rem;
 }
 
 .mediaExtraLarge .BattleResultViewApp_subTitle_7b {
@@ -924,50 +1469,41 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: 23rem;
 }
 
-.BattleResultViewApp_subTitle_7b {
-    z-index: 0;
-}
-
-/* doesn't work without it. Subtitle suddenly disappears. */
-
-.BattleResultViewApp_base__victory_bd .BattleResultViewApp_subTitle_7b {
-    animation: BattleResultViewApp_fadeIn_48 2s linear;
-}
-
-.BattleResultViewApp_flash_bb {
-    width: 632rem;
-    height: 125rem;
-    margin-top: -126rem;
-    background: url('R.images.story_mode.gui.maps.icons.battleResult.flash') no-repeat 50% / contain;
-
-    /* doesn't work without it. Flash suddenly disappears. */
-    z-index: 0;
-    animation: BattleResultViewApp_fadeIn_48 1s linear;
-}
-
-.mediaExtraLarge .BattleResultViewApp_flash_bb {
-    margin-top: -156rem;
-}
-
 .BattleResultViewApp_close_41 {
     position: absolute;
     top: 31rem;
     right: 28rem;
 }
 
+.BattleResultViewApp_buttonWrapper_b4 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 39rem;
+    left: 0;
+}
+
+.mediaMedium .BattleResultViewApp_buttonWrapper_b4 {
+    bottom: 71rem;
+}
+
+.mediaLarge .BattleResultViewApp_buttonWrapper_b4 {
+    bottom: 79rem;
+}
+
 .BattleResultViewApp_button_cf {
     width: 160rem;
     height: 32rem;
+    position: relative;
+}
+
+.BattleResultViewApp_footer_0e {
     position: absolute;
-    bottom: 38rem;
-}
-
-.mediaMedium .BattleResultViewApp_button_cf {
-    bottom: 70rem;
-}
-
-.mediaLarge .BattleResultViewApp_button_cf {
-    bottom: 78rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .BattleResultViewApp_infoName_6e {
@@ -990,12 +1526,41 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 40rem;
 }
 
-@keyframes BattleResultViewApp_fadeIn_48 {
-    from {
-        opacity: 0;
-    }
+.BattleResultViewApp_vehicleName_7a {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: right;
+    position: absolute;
+    right: 40rem;
+    bottom: 57rem;
+}
 
-    to {
-        opacity: 1;
-    }
+.BattleResultViewApp_playerStatus_ae {
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: right;
+    position: absolute;
+    right: 40rem;
+    bottom: 34rem;
+}
+
+.BattleResultViewApp_centerBlock_d9 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.BattleResultViewApp_progress_a6 {
+    display: flex;
+    margin-top: 2rem;
 }

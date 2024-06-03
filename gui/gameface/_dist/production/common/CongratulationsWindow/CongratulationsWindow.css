@@ -1,3 +1,29 @@
+.Background_base_94 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat 50% / cover;
+}
+
+.Background_base__blur_69 {
+    filter: blur(12px);
+}
+
+.Background_vignette_79 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.story_mode.gui.maps.icons.common.vignette') no-repeat 50% / 100%;
+}
+
+.Background_preloader_7d {
+    display: none;
+}
+
 .CButton_base_40 {
     display: flex;
     justify-content: center;
@@ -60,6 +86,10 @@
 
 .CButton_base__medium_74 {
     min-height: 32rem;
+}
+
+.CButton_base__large_5c {
+    min-height: 48rem;
 }
 
 .CButton_base__disabled_d9 {
@@ -203,6 +233,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_base__medium_74 .CButton_content_cc {
     font-size: 15rem;
+}
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
 }
 .CButton_base__disabled_d9 .CButton_content_cc {
     opacity: 0.6;
@@ -350,28 +383,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     opacity: 0;
 }
 
-.Background_base_94 {
-    width: 100%;
-    height: 100%;
-    background: no-repeat 50% / cover;
-    position: absolute;
-}
-
-.Background_base__blur_69 {
-    filter: blur(12px);
-}
-
-.Background_vignette_79 {
-    width: 100%;
-    height: 100%;
-    background: url('R.images.story_mode.gui.maps.icons.common.vignette') no-repeat 50% / 100%;
-    position: absolute;
-}
-
-.Background_preloader_7d {
-    display: none;
-}
-
 @keyframes CongratulationsWindowApp_fadeIn_6e {
     0% {
         opacity: 0;
@@ -379,18 +390,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
     100% {
         opacity: 1;
-    }
-}
-
-@keyframes CongratulationsWindowApp_fadeInWithScale_c1 {
-    0% {
-        opacity: 0;
-        transform: scale(1.2);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
     }
 }
 
@@ -460,6 +459,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 49rem;
 }
 
+.mediaExtraLarge .CongratulationsWindowApp_subTitle_04 {
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    top: 93rem;
+}
+
 .CongratulationsWindowApp_title_dc {
     position: absolute;
     left: 50%;
@@ -486,18 +493,19 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 83rem;
 }
 
+.mediaExtraLarge .CongratulationsWindowApp_title_dc {
+    color: #f2f2f7;
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+    top: 128rem;
+}
+
 .CongratulationsWindowApp_medal_d6 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
-    animation-name: CongratulationsWindowApp_fadeInWithScale_c1;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
-    animation-delay: 0.6s;
-    animation-iteration-count: 1;
 }
 
 .CongratulationsWindowApp_medalImage_67 {
@@ -508,14 +516,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 400rem;
     height: 300rem;
     margin-top: -44rem;
-    background: url('R.images.gui.maps.icons.achievement.c_400x300.onboardingMedal') no-repeat 50% / contain;
+    background: no-repeat 50% / contain;
 }
 
 .mediaMedium .CongratulationsWindowApp_medalImage_67 {
     width: 600rem;
     height: 450rem;
     margin-top: -66rem;
-    background-image: url('R.images.gui.maps.icons.achievement.c_600x450.onboardingMedal');
 }
 
 .CongratulationsWindowApp_medalName_2d {
@@ -564,18 +571,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     bottom: 81rem;
 }
 
+.mediaExtraLarge .CongratulationsWindowApp_continueButton_39 {
+    bottom: 101rem;
+}
+
 .CongratulationsWindowApp_ribbon_6d {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
-    animation-name: CongratulationsWindowApp_slideUp_2d;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
-    animation-delay: 0.4s;
-    animation-iteration-count: 1;
 }
 
 .CongratulationsWindowApp_ribbonImage_aa {

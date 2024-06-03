@@ -86,6 +86,33 @@
     flex-wrap: wrap;
 }
 
+.HeaderInfo_base_ed {
+    width: 24rem;
+    height: 24rem;
+}
+
+.HeaderInfo_base__disabled_36 {
+    opacity: 0.5;
+}
+
+.HeaderInfo_button_a2 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.event_lootboxes.gui.maps.popover.info') no-repeat center / cover;
+}
+
+.HeaderInfo_button_a2:hover {
+    background-image: url('R.images.event_lootboxes.gui.maps.popover.info_hover');
+}
+
+.HeaderInfo_button_a2:active {
+    background-image: url('R.images.event_lootboxes.gui.maps.popover.info_down');
+}
+
+.HeaderInfo_base__disabled_36 .HeaderInfo_button_a2 {
+    pointer-events: none;
+}
+
 .Header_base_0a {
     display: flex;
     flex-direction: row;
@@ -189,6 +216,10 @@
 
 .CButton_base__medium_74 {
     min-height: 32rem;
+}
+
+.CButton_base__large_5c {
+    min-height: 48rem;
 }
 
 .CButton_base__disabled_d9 {
@@ -333,6 +364,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_base__medium_74 .CButton_content_cc {
     font-size: 15rem;
 }
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
+}
 .CButton_base__disabled_d9 .CButton_content_cc {
     opacity: 0.6;
 }
@@ -399,7 +433,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     justify-content: flex-start;
     align-items: center;
     width: 450rem;
-    padding: 24rem 8rem 0;
+    height: 160rem;
+    margin-left: 8rem;
+    padding-top: 24rem;
 }
 
 .ButtonContent_mainRewardInfo_9a {
@@ -416,10 +452,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 16rem;
 }
 
-.ButtonContent_mainRewardInfo_text_3e {
-    justify-content: center;
-}
-
 .ButtonContent_mainRewardCount_d0 {
     color: #e9e2bf;
     font-size: 24rem;
@@ -434,7 +466,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 16rem;
     margin-left: 4rem;
     background: url('R.images.event_lootboxes.gui.maps.entryPoint.info') no-repeat center / cover;
-    margin-top: 8rem;
 }
 
 .ButtonContent_alertIcon_5b {

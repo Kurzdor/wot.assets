@@ -1976,12 +1976,32 @@
             },
             3310: (e, u, t) => {
                 'use strict';
-                t.d(u, { s: () => _ });
+                t.d(u, { s: () => E });
                 var n = t(3649),
                     a = t(6799),
                     r = t(6960),
                     i = t(9053);
-                const s = i.u6
+                const s = new RegExp('[฀-๿][ัำ-ฺ็-๎]*', 'gu'),
+                    o = (e) => {
+                        const u = [];
+                        return (
+                            (0, r.Z)(
+                                e,
+                                /\S\s+/g,
+                                (e) => {
+                                    var t;
+                                    R.strings.settings.LANGUAGE_CODE().toLowerCase() === i.Co
+                                        ? u.push(...((t = e), t.match(s) || []))
+                                        : u.push(...e.split(''));
+                                },
+                                (e) => {
+                                    u.push(e[0]);
+                                },
+                            ),
+                            u
+                        );
+                    },
+                    l = i.u6
                         ? (e) => {
                               const u = [];
                               return (
@@ -1992,24 +2012,7 @@
                                           u.push(e);
                                       },
                                       (e) => {
-                                          u.push(
-                                              ...((e) => {
-                                                  const u = [];
-                                                  return (
-                                                      (0, r.Z)(
-                                                          e,
-                                                          /\S\s+/g,
-                                                          (e) => {
-                                                              u.push(...e.split(''));
-                                                          },
-                                                          (e) => {
-                                                              u.push(e[0]);
-                                                          },
-                                                      ),
-                                                      u
-                                                  );
-                                              })(e[0]),
-                                          );
+                                          u.push(...o(e[0]));
                                       },
                                   ),
                                   u
@@ -2024,14 +2027,14 @@
                               for (; t; ) n.push(e.slice(a, u.lastIndex)), (a = u.lastIndex), (t = u.exec(e));
                               return a !== e.length && n.push(e.slice(a)), n;
                           },
-                    o = (e, u = '') => {
+                    c = (e, u = '') => {
                         const t = [];
                         return (
                             (0, r.Z)(
                                 e,
                                 /(\n+|[\xa0\ufeff]+)/g,
                                 (e) => {
-                                    t.push({ blockType: i.kH.Word, colorTag: u, childList: s(e) });
+                                    t.push({ blockType: i.kH.Word, colorTag: u, childList: l(e) });
                                 },
                                 (e) => {
                                     const n = e[0],
@@ -2061,27 +2064,27 @@
                             t
                         );
                     },
-                    l = (e, u, t = '') => {
+                    _ = (e, u, t = '') => {
                         const n = [];
                         return (
                             (0, r.Z)(
                                 e,
                                 /(?:%\(|{)(.*?)[)}][sd]?/g,
                                 (e) => {
-                                    n.push(...o(e, t));
+                                    n.push(...c(e, t));
                                 },
                                 (e) => {
                                     const a = e[1],
                                         r = void 0 === u[a] ? e[0] : u[a];
                                     'string' == typeof r || 'number' == typeof r
-                                        ? n.push(...o(String(r), t))
+                                        ? n.push(...c(String(r), t))
                                         : n.push({ blockType: i.kH.Binding, colorTag: t, childList: [r] });
                                 },
                             ),
                             n
                         );
                     },
-                    c = (e, u) => {
+                    d = (e, u) => {
                         if (!e) return [u];
                         const t = [],
                             n = Object.assign({}, u, { childList: u.childList.splice(0, 1) });
@@ -2093,7 +2096,7 @@
                         }
                         return u.childList.length > 0 && t.push(u), t;
                     },
-                    _ = (e, u = {}) => {
+                    E = (e, u = {}) => {
                         if (!e) return [];
                         const t = ((e) => {
                             const u = [];
@@ -2101,8 +2104,8 @@
                             return (
                                 e.forEach((e) => {
                                     e.blockType === i.kH.NoBreakSymbol
-                                        ? ((t = !0), u.push(...c(u.pop(), e)))
-                                        : (t ? u.push(...c(u.pop(), e)) : u.push(e), (t = !1));
+                                        ? ((t = !0), u.push(...d(u.pop(), e)))
+                                        : (t ? u.push(...d(u.pop(), e)) : u.push(e), (t = !1));
                                 }),
                                 u
                             );
@@ -2114,10 +2117,10 @@
                                         e,
                                         /(?:%\(|{)(\w*)(?:_[Oo]pen|_Start)(?:\)s|})([\s\S]*?)(?:%\(|{)\w*(?:_[Cc]lose|_End)(?:\)s|})/g,
                                         (e) => {
-                                            t.push(...l(e, u));
+                                            t.push(..._(e, u));
                                         },
                                         (e) => {
-                                            t.push(...l(e[2], u, e[1]));
+                                            t.push(..._(e[2], u, e[1]));
                                         },
                                     ),
                                     t
@@ -2269,7 +2272,16 @@
             9053: (e, u, t) => {
                 'use strict';
                 let n, a, r;
-                t.d(u, { YA: () => s, aF: () => l, bF: () => o, dz: () => i, kH: () => n, u6: () => c, v2: () => a }),
+                t.d(u, {
+                    Co: () => c,
+                    YA: () => s,
+                    aF: () => l,
+                    bF: () => o,
+                    dz: () => i,
+                    kH: () => n,
+                    u6: () => _,
+                    v2: () => a,
+                }),
                     (function (e) {
                         (e[(e.Word = 0)] = 'Word'),
                             (e[(e.LineBreak = 1)] = 'LineBreak'),
@@ -2288,9 +2300,8 @@
                     s = '...',
                     o = 'data-block-type',
                     l = { [r.NBSP]: n.NoBreakSymbol, [r.ZWNBSP]: n.NoBreakSymbol, [r.NEW_LINE]: n.LineBreak },
-                    c = ['zh_cn', 'zh_sg', 'zh_tw', 'ja', 'th'].includes(
-                        R.strings.settings.LANGUAGE_CODE().toLowerCase(),
-                    );
+                    c = 'th',
+                    _ = ['zh_cn', 'zh_sg', 'zh_tw', 'ja', c].includes(R.strings.settings.LANGUAGE_CODE().toLowerCase());
             },
             597: (e, u, t) => {
                 'use strict';
@@ -2763,6 +2774,7 @@
                     base__extraSmall: 'CButton_base__extraSmall_27',
                     base__small: 'CButton_base__small_df',
                     base__medium: 'CButton_base__medium_74',
+                    base__large: 'CButton_base__large_5c',
                     base__disabled: 'CButton_base__disabled_d9',
                     back: 'CButton_back_e5',
                     texture: 'CButton_texture_fe',
@@ -2785,7 +2797,7 @@
                         (e.ghost = 'ghost');
                 })(J || (J = {})),
                     (function (e) {
-                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium');
+                        (e.extraSmall = 'extraSmall'), (e.small = 'small'), (e.medium = 'medium'), (e.large = 'large');
                     })(Q || (Q = {}));
                 const ee = ({
                     children: e,

@@ -1533,7 +1533,7 @@
                             Q(
                                 {
                                     ref: d,
-                                    onClick:
+                                    onMouseDown:
                                         ((B = A.props.onClick),
                                         (u) => {
                                             l && (D(), F && F(u), B && B(u));
@@ -1602,10 +1602,10 @@
                         );
                         const a = g()('App_base_0c', e > 0 && 'App_base__hasBoxes_5e'),
                             E = (0, n.useCallback)(() => {
-                                o(), W('ev_cosmic_lootbox_play');
+                                o(), W(R.sounds.yes1());
                             }, [o]),
                             F = (0, n.useCallback)(() => {
-                                W('ev_cosmic_lootbox_highlight');
+                                W(R.sounds.highlight());
                             }, []);
                         return r().createElement(
                             'div',

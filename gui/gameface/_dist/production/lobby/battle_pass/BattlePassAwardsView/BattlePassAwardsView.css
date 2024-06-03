@@ -728,6 +728,10 @@ body {
     min-height: 32rem;
 }
 
+.CButton_base__large_5c {
+    min-height: 48rem;
+}
+
 .CButton_base__disabled_d9 {
     cursor: default;
 }
@@ -869,6 +873,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_base__medium_74 .CButton_content_cc {
     font-size: 15rem;
+}
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
 }
 .CButton_base__disabled_d9 .CButton_content_cc {
     opacity: 0.6;
@@ -1595,6 +1602,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 380rem;
 }
 
+.mediaMedium .Reward_base__wide_fa .Reward_title_3d {
+    position: relative;
+    top: -24rem;
+}
+
+.mediaLarge .Reward_base__wide_fa .Reward_title_3d {
+    position: static;
+}
+
 .Reward_count_22 {
     opacity: 0;
     animation-name: Reward_fadeIn_f4;
@@ -1988,16 +2004,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
-.RewardsApp_saturate_be {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
-    mix-blend-mode: saturation;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
 .RewardsApp_overlay_88 {
     background-color: rgba(17, 17, 17, 0.3);
     position: absolute;
@@ -2064,6 +2070,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translateY(-37rem);
 }
 
+.mediaMedium .RewardsApp_rewards__additionalCentring_f7 {
+    transform: translateY(-10rem);
+}
+
+.mediaLarge .RewardsApp_rewards__additionalCentring_f7 {
+    transform: translateY(-37rem);
+}
+
 .RewardsApp_additionalRewards_ba {
     width: 100%;
     margin-top: 30rem;
@@ -2080,6 +2094,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: -19rem;
 }
 
+.mediaMedium .RewardsApp_additionalRewards__diffTop_ff {
+    padding-top: 15rem;
+}
+
 .mediaLarge .RewardsApp_additionalRewards__diffTop_ff {
     margin-top: 35rem;
 }
@@ -2093,11 +2111,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaLarge .RewardsApp_base__buyWithLevels_ae .RewardsApp_additionalRewards_ba {
-    margin-top: 80rem;
+    margin-top: 45rem;
 }
 
 .RewardsApp_additionalRewards__animateSlide_6c {
     transition: transform 0.3s ease-in-out 0.3s;
+}
+
+.mediaMedium .RewardsApp_additionalRewards__indentS_b4 {
+    margin-top: -10rem;
 }
 
 .mediaLarge .RewardsApp_additionalRewards__indentS_b4 {

@@ -1149,7 +1149,7 @@
                     q = ['zh_cn', 'zh_sg', 'zh_tw', 'ja', 'th'].includes(
                         R.strings.settings.LANGUAGE_CODE().toLowerCase(),
                     ),
-                    K = {
+                    G = {
                         blackReal: 'colors_blackReal_fc',
                         whiteReal: 'colors_whiteReal_31',
                         white: 'colors_white_45',
@@ -1174,7 +1174,7 @@
                         bond: 'colors_bond_ce',
                         prom: 'colors_prom_83',
                     },
-                    G = 'renderers_noBreakWrapper_10',
+                    K = 'renderers_noBreakWrapper_10',
                     H = 'renderers_lineBreak_b5',
                     Y = 'renderers_newLine_bd',
                     Z = 'renderers_word_f3',
@@ -1182,10 +1182,10 @@
                     X = ({ elementList: u, textBlock: e, key: t }) => {
                         const n = e.colorTag;
                         return n
-                            ? K[n]
+                            ? G[n]
                                 ? a().createElement(
                                       'span',
-                                      { key: t, 'data-block-type': e.blockType, className: r()(Z, K[n]) },
+                                      { key: t, 'data-block-type': e.blockType, className: r()(Z, G[n]) },
                                       u,
                                   )
                                 : a().createElement(
@@ -1209,7 +1209,7 @@
                         [j.NewLine]: ({ elementList: u, key: e }) =>
                             a().createElement('span', { key: e, 'data-block-type': j.NewLine, className: Y }, u),
                         [j.NoBreakWrapper]: ({ elementList: u, key: e }) =>
-                            a().createElement('span', { key: e, 'data-block-type': j.NoBreakWrapper, className: G }, u),
+                            a().createElement('span', { key: e, 'data-block-type': j.NoBreakWrapper, className: K }, u),
                     },
                     J = (u, e, t) => {
                         const n = [];
@@ -1254,7 +1254,27 @@
                         for (; r; ) o !== r.index && t(u.slice(o, r.index)), n(r), (o = e.lastIndex), (r = e.exec(u));
                         o !== u.length && t(u.slice(o));
                     },
-                    tu = q
+                    tu = new RegExp('[฀-๿][ัำ-ฺ็-๎]*', 'gu'),
+                    nu = (u) => {
+                        const e = [];
+                        return (
+                            eu(
+                                u,
+                                /\S\s+/g,
+                                (u) => {
+                                    var t;
+                                    'th' === R.strings.settings.LANGUAGE_CODE().toLowerCase()
+                                        ? e.push(...((t = u), t.match(tu) || []))
+                                        : e.push(...u.split(''));
+                                },
+                                (u) => {
+                                    e.push(u[0]);
+                                },
+                            ),
+                            e
+                        );
+                    },
+                    ru = q
                         ? (u) => {
                               const e = [];
                               return (
@@ -1265,24 +1285,7 @@
                                           e.push(u);
                                       },
                                       (u) => {
-                                          e.push(
-                                              ...((u) => {
-                                                  const e = [];
-                                                  return (
-                                                      eu(
-                                                          u,
-                                                          /\S\s+/g,
-                                                          (u) => {
-                                                              e.push(...u.split(''));
-                                                          },
-                                                          (u) => {
-                                                              e.push(u[0]);
-                                                          },
-                                                      ),
-                                                      e
-                                                  );
-                                              })(u[0]),
-                                          );
+                                          e.push(...nu(u[0]));
                                       },
                                   ),
                                   e
@@ -1297,14 +1300,14 @@
                               for (; t; ) n.push(u.slice(r, e.lastIndex)), (r = e.lastIndex), (t = e.exec(u));
                               return r !== u.length && n.push(u.slice(r)), n;
                           },
-                    nu = (u, e = '') => {
+                    ou = (u, e = '') => {
                         const t = [];
                         return (
                             eu(
                                 u,
                                 /(\n+|[\xa0\ufeff]+)/g,
                                 (u) => {
-                                    t.push({ blockType: j.Word, colorTag: e, childList: tu(u) });
+                                    t.push({ blockType: j.Word, colorTag: e, childList: ru(u) });
                                 },
                                 (u) => {
                                     const n = u[0],
@@ -1334,27 +1337,27 @@
                             t
                         );
                     },
-                    ru = (u, e, t = '') => {
+                    iu = (u, e, t = '') => {
                         const n = [];
                         return (
                             eu(
                                 u,
                                 /(?:%\(|{)(.*?)[)}][sd]?/g,
                                 (u) => {
-                                    n.push(...nu(u, t));
+                                    n.push(...ou(u, t));
                                 },
                                 (u) => {
                                     const r = u[1],
                                         o = void 0 === e[r] ? u[0] : e[r];
                                     'string' == typeof o || 'number' == typeof o
-                                        ? n.push(...nu(String(o), t))
+                                        ? n.push(...ou(String(o), t))
                                         : n.push({ blockType: j.Binding, colorTag: t, childList: [o] });
                                 },
                             ),
                             n
                         );
                     },
-                    ou = (u, e) => {
+                    au = (u, e) => {
                         if (!u) return [e];
                         const t = [],
                             n = Object.assign({}, e, { childList: e.childList.splice(0, 1) });
@@ -1366,7 +1369,7 @@
                         }
                         return e.childList.length > 0 && t.push(e), t;
                     },
-                    iu = (u, e = {}) => {
+                    su = (u, e = {}) => {
                         if (!u) return [];
                         const t = ((u) => {
                             const e = [];
@@ -1374,8 +1377,8 @@
                             return (
                                 u.forEach((u) => {
                                     u.blockType === j.NoBreakSymbol
-                                        ? ((t = !0), e.push(...ou(e.pop(), u)))
-                                        : (t ? e.push(...ou(e.pop(), u)) : e.push(u), (t = !1));
+                                        ? ((t = !0), e.push(...au(e.pop(), u)))
+                                        : (t ? e.push(...au(e.pop(), u)) : e.push(u), (t = !1));
                                 }),
                                 e
                             );
@@ -1387,10 +1390,10 @@
                                         u,
                                         /(?:%\(|{)(\w*)(?:_[Oo]pen|_Start)(?:\)s|})([\s\S]*?)(?:%\(|{)\w*(?:_[Cc]lose|_End)(?:\)s|})/g,
                                         (u) => {
-                                            t.push(...ru(u, e));
+                                            t.push(...iu(u, e));
                                         },
                                         (u) => {
-                                            t.push(...ru(u[2], e, u[1]));
+                                            t.push(...iu(u[2], e, u[1]));
                                         },
                                     ),
                                     t
@@ -1399,12 +1402,12 @@
                         );
                         return uu(t);
                     },
-                    au = (u, e) => !u || u.offsetTop + u.offsetHeight > e,
-                    su = (u, e) => u.offsetLeft + u.offsetWidth - e,
-                    Eu = (u, e, t) => {
+                    Eu = (u, e) => !u || u.offsetTop + u.offsetHeight > e,
+                    cu = (u, e) => u.offsetLeft + u.offsetWidth - e,
+                    Au = (u, e, t) => {
                         if (!u || !u.textContent) return [!1, 0];
                         if (u.offsetLeft > e) return [!1, 0];
-                        const n = su(u, e),
+                        const n = cu(u, e),
                             r = u.textContent.length,
                             o = u.offsetWidth / r,
                             i = Math.ceil(n / o);
@@ -1415,7 +1418,7 @@
                         const a = Math.max(t + i, 0);
                         return r < a ? [!1, 0] : [!0, a];
                     },
-                    cu = (u, e, t, n, r, o) => {
+                    Fu = (u, e, t, n, r, o) => {
                         let i = -1,
                             s = null;
                         for (let E = t; E >= 0; E--) {
@@ -1424,7 +1427,7 @@
                             if (c === j.LineBreak || c === j.NewLine || c === j.Binding) continue;
                             const A = t.textContent || '';
                             if (!(t.childElementCount > 1)) {
-                                const u = Eu(t, n, r),
+                                const u = Au(t, n, r),
                                     c = u[0],
                                     F = u[1];
                                 if (!c) {
@@ -1440,7 +1443,7 @@
                                 const u = t.children,
                                     c = e[E],
                                     F = c.props.children,
-                                    l = cu(u, F, u.length - 1, n, r, o),
+                                    l = Fu(u, F, u.length - 1, n, r, o),
                                     d = l[0],
                                     D = l[1];
                                 if (!(d < 0)) {
@@ -1453,31 +1456,31 @@
                         }
                         return [i, s];
                     },
-                    Au = (u, e, t, n = '...') => {
+                    lu = (u, e, t, n = '...') => {
                         const r = [...e],
                             o = u.current;
                         if (!o) return [r, !1];
                         const i = t.height,
                             a = t.width,
                             s = o.lastElementChild;
-                        if (!au(s, i) && su(s, a) <= 0) return [r, !1];
+                        if (!Eu(s, i) && cu(s, a) <= 0) return [r, !1];
                         const E = o.children,
                             c = ((u, e) => {
                                 let t = 0,
                                     n = u.length - 1;
                                 for (; n - t >= 0; ) {
                                     const r = t + Math.ceil(0.5 * (n - t));
-                                    au(u[r], e) ? (n = r - 1) : (t = r + 1);
+                                    Eu(u[r], e) ? (n = r - 1) : (t = r + 1);
                                 }
                                 return t - 1;
                             })(E, i);
                         if (c < 0) return [r, !1];
-                        const A = cu(E, r, c, a, n.length, n),
+                        const A = Fu(E, r, c, a, n.length, n),
                             F = A[0],
                             l = A[1];
                         return l && (r.splice(F, 1, l), r.splice(F + 1)), [r, !0];
                     },
-                    Fu = a().memo(
+                    du = a().memo(
                         ({
                             text: u,
                             classMix: e,
@@ -1495,7 +1498,7 @@
                                 D = (0, i.useState)({ elementList: [], isTruncated: !1, isTruncateFinished: !1 }),
                                 B = D[0],
                                 C = D[1],
-                                _ = (0, i.useMemo)(() => iu(u, n), [n, u]),
+                                _ = (0, i.useMemo)(() => su(u, n), [n, u]),
                                 p = (0, i.useMemo)(() => {
                                     if (
                                         o &&
@@ -1512,7 +1515,7 @@
                                     (u) => {
                                         (d.current.width = u.contentRect.width),
                                             (d.current.height = u.contentRect.height);
-                                        const e = Au(l, _, d.current, F),
+                                        const e = lu(l, _, d.current, F),
                                             n = e[0],
                                             r = e[1];
                                         C({ elementList: n, isTruncated: r, isTruncateFinished: !0 }), t && t(r);
@@ -1557,35 +1560,35 @@
                             );
                         },
                     ),
-                    lu = 'Divided_base_06',
-                    du = 'Divided_divider_64',
-                    Du = (0, i.memo)(({ children: u, classNames: e }) =>
+                    Du = 'Divided_base_06',
+                    Bu = 'Divided_divider_64',
+                    Cu = (0, i.memo)(({ children: u, classNames: e }) =>
                         a().createElement(
                             'div',
-                            { className: lu },
+                            { className: Du },
                             u,
-                            a().createElement('div', { className: r()(du, null == e ? void 0 : e.divider) }),
+                            a().createElement('div', { className: r()(Bu, null == e ? void 0 : e.divider) }),
                         ),
                     );
-                function Bu() {}
-                function Cu() {
+                function _u() {}
+                function pu() {
                     return !1;
                 }
                 console.log;
-                var _u = t(9174);
-                function pu(u, e) {
+                var mu = t(9174);
+                function hu(u, e) {
                     var t = ('undefined' != typeof Symbol && u[Symbol.iterator]) || u['@@iterator'];
                     if (t) return (t = t.call(u)).next.bind(t);
                     if (
                         Array.isArray(u) ||
                         (t = (function (u, e) {
                             if (!u) return;
-                            if ('string' == typeof u) return mu(u, e);
+                            if ('string' == typeof u) return vu(u, e);
                             var t = Object.prototype.toString.call(u).slice(8, -1);
                             'Object' === t && u.constructor && (t = u.constructor.name);
                             if ('Map' === t || 'Set' === t) return Array.from(u);
                             if ('Arguments' === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t))
-                                return mu(u, e);
+                                return vu(u, e);
                         })(u)) ||
                         (e && u && 'number' == typeof u.length)
                     ) {
@@ -1599,13 +1602,13 @@
                         'Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.',
                     );
                 }
-                function mu(u, e) {
+                function vu(u, e) {
                     (null == e || e > u.length) && (e = u.length);
                     for (var t = 0, n = new Array(e); t < e; t++) n[t] = u[t];
                     return n;
                 }
-                const hu = (u) => (0 === u ? window : window.subViews.get(u));
-                const vu = ((u, e) => {
+                const fu = (u) => (0 === u ? window : window.subViews.get(u));
+                const wu = ((u, e) => {
                         const t = (0, i.createContext)({});
                         return [
                             function ({ mode: n = 'real', options: r, children: s, mocks: E }) {
@@ -1615,7 +1618,7 @@
                                         const a = (function ({
                                                 initializer: u = !0,
                                                 rootId: e = 0,
-                                                getRoot: t = hu,
+                                                getRoot: t = fu,
                                                 context: n = 'model',
                                             } = {}) {
                                                 const r = new Map();
@@ -1662,7 +1665,7 @@
                                                         };
                                                     },
                                                     dispose: function () {
-                                                        for (var u, t = pu(r.keys()); !(u = t()).done; ) i(u.value, e);
+                                                        for (var u, t = hu(r.keys()); !(u = t()).done; ) i(u.value, e);
                                                     },
                                                     unsubscribe: i,
                                                 };
@@ -1686,11 +1689,11 @@
                                                 observableModel: {
                                                     array: (u, e) => {
                                                         const n = null != e ? e : E(u),
-                                                            r = _u.LO.box(n, { equals: Cu });
+                                                            r = mu.LO.box(n, { equals: pu });
                                                         return (
                                                             'real' === t &&
                                                                 s.subscribe(
-                                                                    (0, _u.aD)((u) => r.set(u)),
+                                                                    (0, mu.aD)((u) => r.set(u)),
                                                                     u,
                                                                 ),
                                                             r
@@ -1698,11 +1701,11 @@
                                                     },
                                                     object: (u, e) => {
                                                         const n = null != e ? e : E(u),
-                                                            r = _u.LO.box(n, { equals: Cu });
+                                                            r = mu.LO.box(n, { equals: pu });
                                                         return (
                                                             'real' === t &&
                                                                 s.subscribe(
-                                                                    (0, _u.aD)((u) => r.set(u)),
+                                                                    (0, mu.aD)((u) => r.set(u)),
                                                                     u,
                                                                 ),
                                                             r
@@ -1712,13 +1715,13 @@
                                                         const n = E(e);
                                                         if (Array.isArray(u)) {
                                                             const r = u.reduce(
-                                                                (u, e) => ((u[e] = _u.LO.box(n[e], {})), u),
+                                                                (u, e) => ((u[e] = mu.LO.box(n[e], {})), u),
                                                                 {},
                                                             );
                                                             return (
                                                                 'real' === t &&
                                                                     s.subscribe(
-                                                                        (0, _u.aD)((e) => {
+                                                                        (0, mu.aD)((e) => {
                                                                             u.forEach((u) => {
                                                                                 r[u].set(e[u]);
                                                                             });
@@ -1732,13 +1735,13 @@
                                                             const r = u,
                                                                 o = Object.entries(r),
                                                                 i = o.reduce(
-                                                                    (u, [e, t]) => ((u[t] = _u.LO.box(n[e], {})), u),
+                                                                    (u, [e, t]) => ((u[t] = mu.LO.box(n[e], {})), u),
                                                                     {},
                                                                 );
                                                             return (
                                                                 'real' === t &&
                                                                     s.subscribe(
-                                                                        (0, _u.aD)((u) => {
+                                                                        (0, mu.aD)((u) => {
                                                                             o.forEach(([e, t]) => {
                                                                                 i[t].set(u[e]);
                                                                             });
@@ -1785,10 +1788,10 @@
                             },
                             () => (0, i.useContext)(t),
                         ];
-                    })(({ observableModel: u }) => u.primitives(['vehTypeName', 'nationName']), Bu),
-                    fu = vu[0],
-                    wu = vu[1],
-                    bu = {
+                    })(({ observableModel: u }) => u.primitives(['vehTypeName', 'nationName']), _u),
+                    bu = wu[0],
+                    gu = wu[1],
+                    yu = {
                         base: 'ContentItem_base_e7',
                         text: 'ContentItem_text_07',
                         icon: 'ContentItem_icon_78',
@@ -1796,73 +1799,73 @@
                         icon__credits: 'ContentItem_icon__credits_7a',
                         icon__transfer: 'ContentItem_icon__transfer_a1',
                     };
-                let gu;
+                let ku;
                 !(function (u) {
                     (u.Experience = 'experience'), (u.Credits = 'credits'), (u.Transfer = 'transfer');
-                })(gu || (gu = {}));
-                const yu = ({ itemType: u }) =>
+                })(ku || (ku = {}));
+                const Tu = ({ itemType: u }) =>
                         a().createElement(
                             'div',
-                            { className: bu.base },
-                            a().createElement('div', { className: r()(bu.icon, bu[`icon__${u}`]) }),
+                            { className: yu.base },
+                            a().createElement('div', { className: r()(yu.icon, yu[`icon__${u}`]) }),
                             a().createElement(
                                 'div',
-                                { className: bu.text },
+                                { className: yu.text },
                                 R.strings.tooltips.premiumVehicle.content.$dyn(u),
                             ),
                         ),
-                    ku = 'PremiumVehicleTooltipApp_base_78',
-                    Tu = 'PremiumVehicleTooltipApp_flash_4a',
-                    Ou = 'PremiumVehicleTooltipApp_header_9a',
-                    xu = 'PremiumVehicleTooltipApp_caption_e7',
-                    Lu = 'PremiumVehicleTooltipApp_contentHeader_77',
-                    Pu = 'PremiumVehicleTooltipApp_info_da',
-                    Ru = 'PremiumVehicleTooltipApp_infoIcon_88',
-                    Nu = 'PremiumVehicleTooltipApp_infoText_56',
-                    Su = 'PremiumVehicleTooltipApp_content_30',
-                    Mu = (0, D.Pi)(() => {
-                        const u = wu().model;
+                    Ou = 'PremiumVehicleTooltipApp_base_78',
+                    xu = 'PremiumVehicleTooltipApp_flash_4a',
+                    Lu = 'PremiumVehicleTooltipApp_header_9a',
+                    Pu = 'PremiumVehicleTooltipApp_caption_e7',
+                    Ru = 'PremiumVehicleTooltipApp_contentHeader_77',
+                    Nu = 'PremiumVehicleTooltipApp_info_da',
+                    Su = 'PremiumVehicleTooltipApp_infoIcon_88',
+                    Mu = 'PremiumVehicleTooltipApp_infoText_56',
+                    Iu = 'PremiumVehicleTooltipApp_content_30',
+                    Vu = (0, D.Pi)(() => {
+                        const u = gu().model;
                         return a().createElement(
                             'div',
-                            { className: ku },
-                            a().createElement('div', { className: Tu }),
+                            { className: Ou },
+                            a().createElement('div', { className: xu }),
                             a().createElement(
-                                Du,
+                                Cu,
                                 null,
-                                a().createElement('div', { className: Ou }, R.strings.tooltips.premiumVehicle.header()),
-                                a().createElement(Fu, {
-                                    classMix: xu,
+                                a().createElement('div', { className: Lu }, R.strings.tooltips.premiumVehicle.header()),
+                                a().createElement(du, {
+                                    classMix: Pu,
                                     text: R.strings.tooltips.premiumVehicle.caption(),
                                     binding: { vehType: u.vehTypeName.get(), nation: u.nationName.get() },
                                 }),
                             ),
                             a().createElement(
-                                Du,
+                                Cu,
                                 null,
                                 a().createElement(
                                     'div',
-                                    { className: Lu },
+                                    { className: Ru },
                                     R.strings.tooltips.premiumVehicle.content.header(),
                                 ),
                                 a().createElement(
                                     'div',
-                                    { className: Su },
-                                    a().createElement(yu, { itemType: gu.Experience }),
-                                    a().createElement(yu, { itemType: gu.Credits }),
-                                    a().createElement(yu, { itemType: gu.Transfer }),
+                                    { className: Iu },
+                                    a().createElement(Tu, { itemType: ku.Experience }),
+                                    a().createElement(Tu, { itemType: ku.Credits }),
+                                    a().createElement(Tu, { itemType: ku.Transfer }),
                                 ),
                             ),
                             a().createElement(
                                 'div',
-                                { className: Pu },
-                                a().createElement('div', { className: Ru }),
-                                a().createElement('div', { className: Nu }, R.strings.tooltips.premiumVehicle.info()),
+                                { className: Nu },
+                                a().createElement('div', { className: Su }),
+                                a().createElement('div', { className: Mu }, R.strings.tooltips.premiumVehicle.info()),
                             ),
                         );
                     });
                 engine.whenReady.then(() => {
                     d().render(
-                        a().createElement(F, null, a().createElement(fu, null, a().createElement(Mu, null))),
+                        a().createElement(F, null, a().createElement(bu, null, a().createElement(Vu, null))),
                         document.getElementById('root'),
                     );
                 });

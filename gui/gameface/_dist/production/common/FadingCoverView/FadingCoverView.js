@@ -536,8 +536,7 @@
                             c = t.fadingOutComplete,
                             f = (0, s.useState)(!1),
                             g = f[0],
-                            m = f[1],
-                            b = v()(ve, g && fe);
+                            m = f[1];
                         return (
                             (0, s.useEffect)(() => {
                                 const e = setTimeout(
@@ -550,7 +549,7 @@
                             }, [d, c, l, i, a]),
                             u().createElement(
                                 'div',
-                                { className: b, style: { transitionDuration: `${l ? i : a}s` } },
+                                { className: v()(ve, g && fe), style: { transitionDuration: `${l ? i : a}s` } },
                                 u().createElement('div', { className: ge, style: me(o) }),
                             )
                         );

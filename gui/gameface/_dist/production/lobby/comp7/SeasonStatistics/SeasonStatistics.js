@@ -1097,6 +1097,7 @@
                     base__extraSmall: 'CButton_base__extraSmall_27',
                     base__small: 'CButton_base__small_df',
                     base__medium: 'CButton_base__medium_74',
+                    base__large: 'CButton_base__large_5c',
                     base__disabled: 'CButton_base__disabled_d9',
                     back: 'CButton_back_e5',
                     texture: 'CButton_texture_fe',
@@ -1119,7 +1120,7 @@
                         (u.ghost = 'ghost');
                 })(W || (W = {})),
                     (function (u) {
-                        (u.extraSmall = 'extraSmall'), (u.small = 'small'), (u.medium = 'medium');
+                        (u.extraSmall = 'extraSmall'), (u.small = 'small'), (u.medium = 'medium'), (u.large = 'large');
                     })($ || ($ = {}));
                 const V = ({
                     children: u,
@@ -2424,39 +2425,92 @@
                         for (let a = 0; a < u; a++) t.push(e(a));
                         return t;
                     },
-                    de = 'LaceDivider_base_1a',
-                    De = 'LaceDivider_divider_cf',
-                    _e = 'LaceDivider_divider__center_c9',
-                    me = 'LaceDivider_divider__right_e8',
-                    Be = ({ children: u, className: e, classNames: t }) =>
+                    de = {
+                        base: 'LaceDivider_base_1a',
+                        lace: 'LaceDivider_lace_7f',
+                        peak: 'LaceDivider_peak_f2',
+                        peak__right: 'LaceDivider_peak__right_43',
+                        line: 'LaceDivider_line_0d',
+                    },
+                    De = ({ children: u, className: e, classNames: t }) =>
                         n().createElement(
                             'div',
-                            { className: h()(de, e) },
-                            n().createElement('div', { className: h()(De, null == t ? void 0 : t.divider) }),
-                            n().createElement('div', { className: h()(De, _e, null == t ? void 0 : t.divider) }),
+                            { className: h()(de.base, e) },
+                            n().createElement(
+                                'div',
+                                {
+                                    className: h()(
+                                        de.lace,
+                                        de.lace__left,
+                                        null == t ? void 0 : t.lace,
+                                        null == t ? void 0 : t.leftLace,
+                                    ),
+                                },
+                                n().createElement('div', {
+                                    className: h()(
+                                        de.peak,
+                                        de.peak__left,
+                                        null == t ? void 0 : t.peak,
+                                        null == t ? void 0 : t.leftPeak,
+                                    ),
+                                }),
+                                n().createElement('div', {
+                                    className: h()(
+                                        de.line,
+                                        de.line__left,
+                                        null == t ? void 0 : t.line,
+                                        null == t ? void 0 : t.leftLine,
+                                    ),
+                                }),
+                            ),
                             u,
-                            n().createElement('div', { className: h()(De, _e, null == t ? void 0 : t.divider) }),
-                            n().createElement('div', { className: h()(De, me, null == t ? void 0 : t.divider) }),
+                            n().createElement(
+                                'div',
+                                {
+                                    className: h()(
+                                        de.lace,
+                                        de.lace__right,
+                                        null == t ? void 0 : t.lace,
+                                        null == t ? void 0 : t.rightLace,
+                                    ),
+                                },
+                                n().createElement('div', {
+                                    className: h()(
+                                        de.line,
+                                        de.line__right,
+                                        null == t ? void 0 : t.line,
+                                        null == t ? void 0 : t.rightLine,
+                                    ),
+                                }),
+                                n().createElement('div', {
+                                    className: h()(
+                                        de.peak,
+                                        de.peak__right,
+                                        null == t ? void 0 : t.peak,
+                                        null == t ? void 0 : t.rightPeak,
+                                    ),
+                                }),
+                            ),
                         );
-                let Ce, he;
+                let _e, me;
                 !(function (u) {
                     (u[(u.A = 1)] = 'A'),
                         (u[(u.B = 2)] = 'B'),
                         (u[(u.C = 3)] = 'C'),
                         (u[(u.D = 4)] = 'D'),
                         (u[(u.E = 5)] = 'E');
-                })(Ce || (Ce = {})),
+                })(_e || (_e = {})),
                     (function (u) {
                         (u[(u.Achieved = 0)] = 'Achieved'),
                             (u[(u.Current = 1)] = 'Current'),
                             (u[(u.Inactive = 2)] = 'Inactive');
-                    })(he || (he = {}));
-                const ge = R.strings.comp7.division,
-                    ve = { [Ce.A]: 'A', [Ce.B]: 'B', [Ce.C]: 'C', [Ce.D]: 'D', [Ce.E]: 'E' },
-                    pe = (u) => ge.$dyn(ve[u]),
-                    be = [eu.First, eu.Second, eu.Third, eu.Fourth],
-                    fe = (u) => be.includes(u);
-                let we;
+                    })(me || (me = {}));
+                const Be = R.strings.comp7.division,
+                    Ce = { [_e.A]: 'A', [_e.B]: 'B', [_e.C]: 'C', [_e.D]: 'D', [_e.E]: 'E' },
+                    he = (u) => Be.$dyn(Ce[u]),
+                    ge = [eu.First, eu.Second, eu.Third, eu.Fourth],
+                    ve = (u) => ge.includes(u);
+                let pe;
                 !(function (u) {
                     (u[(u.x22 = 22)] = 'x22'),
                         (u[(u.x40 = 40)] = 'x40'),
@@ -2470,17 +2524,17 @@
                         (u[(u.x320 = 320)] = 'x320'),
                         (u[(u.x420 = 420)] = 'x420'),
                         (u[(u.x600 = 600)] = 'x600');
-                })(we || (we = {}));
-                const xe = 'RankEmblem_base_ec',
-                    ye = ({ rank: u, size: e, division: t, seasonName: r, className: i }) => {
+                })(pe || (pe = {}));
+                const be = 'RankEmblem_base_ec',
+                    fe = ({ rank: u, size: e, division: t, seasonName: r, className: i }) => {
                         const s = (0, a.useMemo)(() => {
                             const a = R.images.gui.maps.icons.comp7.ranks.$dyn(r).$num(e),
-                                n = fe(u) && void 0 !== t ? `_${pe(t)}` : '';
+                                n = ve(u) && void 0 !== t ? `_${he(t)}` : '';
                             return { backgroundImage: `url(${a.$dyn(`${au(u)}${n}`)})`, '--imageSize': `${e}rem` };
                         }, [r, e, u, t]);
-                        return n().createElement('div', { className: h()(xe, i), style: s });
+                        return n().createElement('div', { className: h()(be, i), style: s });
                     },
-                    Se = {
+                    we = {
                         [eu.First]: 'first',
                         [eu.Second]: 'second',
                         [eu.Third]: 'third',
@@ -2488,8 +2542,8 @@
                         [eu.Fifth]: 'fifth',
                         [eu.Sixth]: 'sixth',
                     },
-                    Te = (u) => ((u, e) => `${u.$dyn(Se[e])}`)(R.strings.comp7.rank, u),
-                    Le = {
+                    xe = (u) => ((u, e) => `${u.$dyn(we[e])}`)(R.strings.comp7.rank, u),
+                    ye = {
                         base: 'SeasonPoint_base_a1',
                         base__x24: 'SeasonPoint_base__x24_b6',
                         base__x32: 'SeasonPoint_base__x32_f0',
@@ -2498,28 +2552,28 @@
                         icon: 'SeasonPoint_icon_b6',
                         base__notAchieved: 'SeasonPoint_base__notAchieved_02',
                     };
-                let ke;
+                let Se;
                 !(function (u) {
                     (u.x24 = 'x24'), (u.x32 = 'x32'), (u.x48 = 'x48'), (u.x62 = 'x62');
-                })(ke || (ke = {}));
-                const Ne = R.images.gui.maps.icons.comp7.icons,
-                    Oe = ({ state: u, season: e, className: t, size: a = ke.x48 }) =>
+                })(Se || (Se = {}));
+                const Te = R.images.gui.maps.icons.comp7.icons,
+                    Le = ({ state: u, season: e, className: t, size: a = Se.x48 }) =>
                         n().createElement(
                             'div',
-                            { className: h()(Le.base, Le[`base__${a}`], Le[`base__${u}`], t) },
+                            { className: h()(ye.base, ye[`base__${a}`], ye[`base__${u}`], t) },
                             n().createElement('div', {
-                                className: Le.icon,
+                                className: ye.icon,
                                 style: {
                                     backgroundImage:
                                         'notAchieved' === u
-                                            ? `url(${Ne.$dyn(`season_point_notAchieved_${a}`)})`
-                                            : `url(${Ne.$dyn(`season_point_${e}_${a}`)})`,
+                                            ? `url(${Te.$dyn(`season_point_notAchieved_${a}`)})`
+                                            : `url(${Te.$dyn(`season_point_${e}_${a}`)})`,
                                 },
                             }),
                         ),
-                    Me = { base__notAchieved: 'Point_base__notAchieved_29' },
-                    Re = (u) => (u >= p.Large ? ke.x62 : ke.x48),
-                    Pe = (0, U.Pi)(({ pointIndex: u, className: e }) => {
+                    ke = { base__notAchieved: 'Point_base__notAchieved_29' },
+                    Ne = (u) => (u >= p.Large ? Se.x62 : Se.x48),
+                    Oe = (0, U.Pi)(({ pointIndex: u, className: e }) => {
                         const t = Cu().model.root.get(),
                             a = t.season,
                             r = t.achievedSeasonPoints,
@@ -2535,16 +2589,16 @@
                             n().createElement(
                                 'div',
                                 null,
-                                n().createElement(Oe, {
+                                n().createElement(Le, {
                                     state: s,
                                     season: a,
-                                    className: h()(e, Me[`base__${s}`]),
-                                    size: Re(i),
+                                    className: h()(e, ke[`base__${s}`]),
+                                    size: Ne(i),
                                 }),
                             ),
                         );
                     }),
-                    He = {
+                    Me = {
                         '--pageContentWidth': '78vw',
                         base: 'Rating_base_05',
                         shine: 'Rating_shine_53',
@@ -2563,8 +2617,8 @@
                         point: 'Rating_point_b1',
                         pointDescription: 'Rating_pointDescription_24',
                     },
-                    Ie = R.strings.comp7.seasonStatistics,
-                    We = (0, U.Pi)(({ className: u }) => {
+                    Re = R.strings.comp7.seasonStatistics,
+                    Pe = (0, U.Pi)(({ className: u }) => {
                         const e = Cu().model,
                             t = w().mediaSize,
                             a = hu(),
@@ -2577,72 +2631,72 @@
                             c = r.seasonPointsLimit,
                             A = ((u) =>
                                 u >= p.ExtraLarge
-                                    ? we.x600
+                                    ? pe.x600
                                     : u >= p.Large
-                                      ? we.x320
+                                      ? pe.x320
                                       : u >= p.Medium
-                                        ? we.x260
-                                        : we.x200)(t);
+                                        ? pe.x260
+                                        : pe.x200)(t);
                         return n().createElement(
                             'div',
-                            { className: h()(He.base, u, a.computes.getAnimationStepStyles(He)) },
-                            n().createElement('div', { className: He.shine }),
+                            { className: h()(Me.base, u, a.computes.getAnimationStepStyles(Me)) },
+                            n().createElement('div', { className: Me.shine }),
                             n().createElement(
                                 'div',
-                                { className: He.title },
-                                ((u) => Iu(R.strings.comp7.rank.text(), { rank: Te(u) }))(i),
+                                { className: Me.title },
+                                ((u) => Iu(R.strings.comp7.rank.text(), { rank: xe(u) }))(i),
                             ),
                             n().createElement(
                                 'div',
-                                { className: h()(He.subTitle, !fe(i) && He.subTitle__hide) },
-                                ((u) => Iu(ge.text(), { division: pe(u) }))(s),
+                                { className: h()(Me.subTitle, !ve(i) && Me.subTitle__hide) },
+                                ((u) => Iu(Be.text(), { division: he(u) }))(s),
                             ),
                             n().createElement(
                                 'div',
-                                { className: He.rank },
-                                n().createElement(ye, { seasonName: l, rank: i, division: s, size: A }),
+                                { className: Me.rank },
+                                n().createElement(fe, { seasonName: l, rank: i, division: s, size: A }),
                             ),
                             n().createElement(
                                 'div',
-                                { className: He.content },
-                                n().createElement('div', { className: He.score }, o),
+                                { className: Me.content },
+                                n().createElement('div', { className: Me.score }, o),
                                 n().createElement(
                                     'div',
-                                    { className: He.scoreDescription },
-                                    Ie.description.finalScore(),
+                                    { className: Me.scoreDescription },
+                                    Re.description.finalScore(),
                                 ),
-                                n().createElement(Be, { className: He.laceDivider }),
+                                n().createElement(De, { className: Me.laceDivider }),
                                 n().createElement(
                                     'div',
-                                    { className: He.seasonPoints },
-                                    Fe(c, (u) => n().createElement(Pe, { key: u, pointIndex: u, className: He.point })),
+                                    { className: Me.seasonPoints },
+                                    Fe(c, (u) => n().createElement(Oe, { key: u, pointIndex: u, className: Me.point })),
                                 ),
                                 n().createElement(oe, {
-                                    text: Ie.description.seasonPoint(E),
+                                    text: Re.description.seasonPoint(E),
                                     binding: { points: E },
-                                    classMix: He.pointDescription,
+                                    classMix: Me.pointDescription,
                                 }),
                             ),
                         );
                     }),
-                    $e = 'HeaderSection_base_71',
-                    Ve = 'HeaderSection_line_37',
-                    Ge = 'HeaderSection_line__leftSide_fd',
-                    Ue = 'HeaderSection_line__left_fa',
-                    ze = 'HeaderSection_line__right_d3',
-                    je = 'HeaderSection_line__rightSide_74',
-                    qe = 'HeaderSection_text_55',
-                    Ke = ({ text: u, className: e }) =>
+                    He = 'HeaderSection_base_71',
+                    Ie = 'HeaderSection_line_37',
+                    We = 'HeaderSection_line__leftSide_fd',
+                    $e = 'HeaderSection_line__left_fa',
+                    Ve = 'HeaderSection_line__right_d3',
+                    Ge = 'HeaderSection_line__rightSide_74',
+                    Ue = 'HeaderSection_text_55',
+                    ze = ({ text: u, className: e }) =>
                         n().createElement(
                             'div',
-                            { className: h()($e, e) },
-                            n().createElement('div', { className: h()(Ve, Ge) }),
-                            n().createElement('div', { className: h()(Ve, Ue) }),
-                            n().createElement('div', { className: qe }, u),
-                            n().createElement('div', { className: h()(Ve, ze) }),
-                            n().createElement('div', { className: h()(Ve, je) }),
+                            { className: h()(He, e) },
+                            n().createElement('div', { className: h()(Ie, We) }),
+                            n().createElement('div', { className: h()(Ie, $e) }),
+                            n().createElement('div', { className: Ue }, u),
+                            n().createElement('div', { className: h()(Ie, Ve) }),
+                            n().createElement('div', { className: h()(Ie, Ge) }),
                         );
-                class Ye extends n().PureComponent {
+                class je extends n().PureComponent {
                     render() {
                         let u;
                         if ('gold' === this.props.format) u = Z.B3.GOLD;
@@ -2651,90 +2705,90 @@
                         return void 0 !== this.props.value && void 0 !== e ? e : null;
                     }
                 }
-                let Ze;
-                (Ye.defaultProps = { format: 'integral' }),
+                let qe;
+                (je.defaultProps = { format: 'integral' }),
                     (function (u) {
                         (u.Battles = 'battles'),
                             (u.Damage = 'damage'),
                             (u.MaxPrestigePoints = 'maxPrestigePoints'),
                             (u.MaxFrags = 'maxFrags'),
                             (u.WinSeries = 'winSeries');
-                    })(Ze || (Ze = {}));
-                var Xe = t(7030);
-                const Qe = R.strings.comp7,
-                    Je = ({ value: u, isPercentage: e = !1, fractionDigits: t = 2 }) =>
+                    })(qe || (qe = {}));
+                var Ke = t(7030);
+                const Ye = R.strings.comp7,
+                    Ze = ({ value: u, isPercentage: e = !1, fractionDigits: t = 2 }) =>
                         -1 === u
-                            ? Qe.dash()
+                            ? Ye.dash()
                             : ((u, e, t) => {
                                   const a =
                                       Number.isInteger(u) || Number.isInteger(10 * u)
                                           ? Z.Z5.getRealFormat(u, Z.Gr.WO_ZERO_DIGITS)
                                           : Z.Z5.getRealFormat(parseFloat(u.toFixed(t)), Z.Gr.FRACTIONAL);
-                                  return e ? Iu(Qe.percentage(), { percentageValue: a }) : a;
+                                  return e ? Iu(Ye.percentage(), { percentageValue: a }) : a;
                               })(u, e, t),
-                    ut = 'LineDivider_base_01',
-                    et = 'LineDivider_divider_e1',
-                    tt = 'LineDivider_divider__center_ce',
-                    at = 'LineDivider_divider__right_0f',
-                    nt = ({ className: u }) =>
+                    Xe = 'LineDivider_base_01',
+                    Qe = 'LineDivider_divider_e1',
+                    Je = 'LineDivider_divider__center_ce',
+                    ut = 'LineDivider_divider__right_0f',
+                    et = ({ className: u }) =>
                         n().createElement(
                             'div',
-                            { className: h()(ut, u) },
-                            n().createElement('div', { className: et }),
-                            n().createElement('div', { className: h()(et, tt) }),
-                            n().createElement('div', { className: h()(et, at) }),
+                            { className: h()(Xe, u) },
+                            n().createElement('div', { className: Qe }),
+                            n().createElement('div', { className: h()(Qe, Je) }),
+                            n().createElement('div', { className: h()(Qe, ut) }),
                         ),
-                    rt = 'Card_base_4f',
-                    it = 'Card_icon_83',
-                    st = 'Card_mainValue_a7',
-                    ot = 'Card_mainDescription_8e',
-                    lt = 'Card_divider_f6',
-                    Et = 'Card_additional_7f',
-                    ct = R.strings.comp7.seasonStatistics.section.statistics,
-                    At = R.images.gui.maps.icons.comp7.seasonStatistics,
-                    Ft = (u, e) => {
+                    tt = 'Card_base_4f',
+                    at = 'Card_icon_83',
+                    nt = 'Card_mainValue_a7',
+                    rt = 'Card_mainDescription_8e',
+                    it = 'Card_divider_f6',
+                    st = 'Card_additional_7f',
+                    ot = R.strings.comp7.seasonStatistics.section.statistics,
+                    lt = R.images.gui.maps.icons.comp7.seasonStatistics,
+                    Et = (u, e) => {
                         switch (u) {
-                            case Ze.Battles:
-                                return Je({ value: e, isPercentage: !0 });
-                            case Ze.Damage:
+                            case qe.Battles:
+                                return Ze({ value: e, isPercentage: !0 });
+                            case qe.Damage:
                                 return Math.trunc(e);
                             default:
-                                return Je({ value: e });
+                                return Ze({ value: e });
                         }
                     },
-                    dt = (0, U.Pi)(({ index: u, className: e }) => {
+                    ct = (0, U.Pi)(({ index: u, className: e }) => {
                         const t = Cu().model,
                             a = hu(),
                             r = t.computes.summaryStatistic(u),
                             i = r.type,
                             s = r.main,
                             o = r.additional,
-                            l = ct.$dyn(i),
+                            l = ot.$dyn(i),
                             E = t.computes.summaryItemDelay(a.computes.stepDelay(du.ShowSummary)),
-                            c = (0, Xe.useSpring)({
+                            c = (0, Ke.useSpring)({
                                 from: { opacity: 0 },
                                 to: { opacity: 1 },
                                 delay: E * u,
                                 pause: !a.computes.isStepActive(du.ShowSummary),
                             });
                         return n().createElement(
-                            Xe.animated.div,
-                            { className: h()(rt, e), style: c },
+                            Ke.animated.div,
+                            { className: h()(tt, e), style: c },
                             n().createElement('div', {
-                                className: it,
-                                style: { backgroundImage: `url(${At.$dyn(i)})` },
+                                className: at,
+                                style: { backgroundImage: `url(${lt.$dyn(i)})` },
                             }),
-                            n().createElement('div', { className: st }, n().createElement(Ye, { value: s })),
-                            n().createElement(oe, { text: l.$dyn('main'), classMix: ot }),
-                            n().createElement(nt, { className: lt }),
+                            n().createElement('div', { className: nt }, n().createElement(je, { value: s })),
+                            n().createElement(oe, { text: l.$dyn('main'), classMix: rt }),
+                            n().createElement(et, { className: it }),
                             n().createElement(oe, {
                                 text: String(l.$dyn('additional')),
-                                classMix: Et,
-                                binding: { additional: Ft(i, o) },
+                                classMix: st,
+                                binding: { additional: Et(i, o) },
                             }),
                         );
                     }),
-                    Dt = {
+                    At = {
                         base: 'Summary_base_f1',
                         header: 'Summary_header_80',
                         base__idle: 'Summary_base__idle_55',
@@ -2744,91 +2798,91 @@
                         separator: 'Summary_separator_fe',
                         base__showVehicles: 'Summary_base__showVehicles_d9',
                     },
-                    _t = (0, U.Pi)(({ className: u }) => {
+                    Ft = (0, U.Pi)(({ className: u }) => {
                         const e = Cu().model,
                             t = hu();
                         return n().createElement(
                             'div',
-                            { className: h()(Dt.base, u, t.computes.getAnimationStepStyles(Dt)) },
-                            n().createElement(Ke, {
-                                className: Dt.header,
+                            { className: h()(At.base, u, t.computes.getAnimationStepStyles(At)) },
+                            n().createElement(ze, {
+                                className: At.header,
                                 text: R.strings.comp7.seasonStatistics.section.statistics.title(),
                             }),
                             n().createElement(
                                 'div',
-                                { className: Dt.cards },
+                                { className: At.cards },
                                 Fe(e.computes.summaryStatisticsLength(), (u) =>
                                     n().createElement(
                                         n().Fragment,
                                         { key: u },
-                                        n().createElement('div', { className: Dt.separator }),
-                                        n().createElement(dt, { index: u, className: Dt.card }),
+                                        n().createElement('div', { className: At.separator }),
+                                        n().createElement(ct, { index: u, className: At.card }),
                                     ),
                                 ),
-                                n().createElement('div', { className: Dt.separator }),
+                                n().createElement('div', { className: At.separator }),
                             ),
                         );
                     }),
-                    mt = 'VehicleCard_base_76',
-                    Bt = 'VehicleCard_back_23',
-                    Ct = 'VehicleCard_params_cd',
-                    ht = 'VehicleCard_vehicleName_9e',
-                    gt = 'VehicleCard_propsWrapper_e0',
-                    vt = 'VehicleCard_propsName_f3',
-                    pt = 'VehicleCard_separator_f3',
-                    bt = 'VehicleCard_value_28',
-                    ft = 'VehicleCard_icon_df',
-                    wt = R.images.gui.maps.shop.vehicles,
-                    xt = R.images.gui.maps.icons.comp7.seasonStatistics,
-                    yt = R.strings.comp7.seasonStatistics.section.vehicles,
-                    St = (0, U.Pi)(({ index: u }) => {
+                    dt = 'VehicleCard_base_76',
+                    Dt = 'VehicleCard_back_23',
+                    _t = 'VehicleCard_params_cd',
+                    mt = 'VehicleCard_vehicleName_9e',
+                    Bt = 'VehicleCard_propsWrapper_e0',
+                    Ct = 'VehicleCard_propsName_f3',
+                    ht = 'VehicleCard_separator_f3',
+                    gt = 'VehicleCard_value_28',
+                    vt = 'VehicleCard_icon_df',
+                    pt = R.images.gui.maps.shop.vehicles,
+                    bt = R.images.gui.maps.icons.comp7.seasonStatistics,
+                    ft = R.strings.comp7.seasonStatistics.section.vehicles,
+                    wt = (0, U.Pi)(({ index: u }) => {
                         const e = Cu().model,
                             t = w().mediaSize,
                             a = hu(),
                             r = e.computes.vehicleStatistic(u),
                             i = r
-                                ? ((u) => (u >= p.Large ? wt.c_360x270 : wt.c_180x135))(t).$dyn(r.vehicleInfo.techName)
-                                : ((u) => (u >= p.Large ? xt.no_vehicle_360x270() : xt.no_vehicle_180x135()))(t),
-                            s = a.computes.stepDelay(du.ShowVehicles) / Lt,
-                            o = (0, Xe.useSpring)({
+                                ? ((u) => (u >= p.Large ? pt.c_360x270 : pt.c_180x135))(t).$dyn(r.vehicleInfo.techName)
+                                : ((u) => (u >= p.Large ? bt.no_vehicle_360x270() : bt.no_vehicle_180x135()))(t),
+                            s = a.computes.stepDelay(du.ShowVehicles) / yt,
+                            o = (0, Ke.useSpring)({
                                 from: { opacity: 0 },
                                 to: { opacity: 1 },
                                 delay: s * u,
                                 pause: !a.computes.isStepActive(du.ShowVehicles),
                             });
                         return n().createElement(
-                            Xe.animated.div,
-                            { className: mt, style: o },
-                            n().createElement('div', { className: Bt }, u + 1),
+                            Ke.animated.div,
+                            { className: dt, style: o },
+                            n().createElement('div', { className: Dt }, u + 1),
                             n().createElement(
                                 'div',
-                                { className: Ct },
-                                n().createElement('div', { className: ht }, r ? r.vehicleInfo.name : yt.noVehicles()),
+                                { className: _t },
+                                n().createElement('div', { className: mt }, r ? r.vehicleInfo.name : ft.noVehicles()),
                                 n().createElement(
                                     'div',
-                                    { className: gt },
-                                    n().createElement('div', { className: vt }, yt.battles()),
-                                    n().createElement('div', { className: pt }),
-                                    n().createElement('div', { className: bt }, r ? r.battles : yt.noData()),
+                                    { className: Bt },
+                                    n().createElement('div', { className: Ct }, ft.battles()),
+                                    n().createElement('div', { className: ht }),
+                                    n().createElement('div', { className: gt }, r ? r.battles : ft.noData()),
                                 ),
                                 n().createElement(
                                     'div',
-                                    { className: gt },
-                                    n().createElement('div', { className: vt }, yt.wins()),
-                                    n().createElement('div', { className: pt }),
+                                    { className: Bt },
+                                    n().createElement('div', { className: Ct }, ft.wins()),
+                                    n().createElement('div', { className: ht }),
                                     r
                                         ? n().createElement(
                                               'div',
-                                              { className: bt },
-                                              Je({ value: r.winsPercent, isPercentage: !0 }),
+                                              { className: gt },
+                                              Ze({ value: r.winsPercent, isPercentage: !0 }),
                                           )
-                                        : n().createElement('div', { className: bt }, yt.noData()),
+                                        : n().createElement('div', { className: gt }, ft.noData()),
                                 ),
                             ),
-                            n().createElement('div', { className: ft, style: { backgroundImage: `url(${i})` } }),
+                            n().createElement('div', { className: vt, style: { backgroundImage: `url(${i})` } }),
                         );
                     }),
-                    Tt = {
+                    xt = {
                         base: 'Vehicles_base_1f',
                         header: 'Vehicles_header_8a',
                         base__idle: 'Vehicles_base__idle_8a',
@@ -2836,26 +2890,26 @@
                         cards: 'Vehicles_cards_1d',
                         vehiclePlace: 'Vehicles_vehiclePlace_b6',
                     },
-                    Lt = 3,
-                    kt = (0, U.Pi)(() => {
+                    yt = 3,
+                    St = (0, U.Pi)(() => {
                         const u = hu();
                         return n().createElement(
                             'div',
-                            { className: h()(Tt.base, u.computes.getAnimationStepStyles(Tt)) },
-                            n().createElement(Ke, {
-                                className: Tt.header,
+                            { className: h()(xt.base, u.computes.getAnimationStepStyles(xt)) },
+                            n().createElement(ze, {
+                                className: xt.header,
                                 text: R.strings.comp7.seasonStatistics.section.vehicles.title(),
                             }),
                             n().createElement(
                                 'div',
-                                { className: Tt.cards },
-                                Fe(Lt, (u) => n().createElement(St, { key: u, index: u })),
+                                { className: xt.cards },
+                                Fe(yt, (u) => n().createElement(wt, { key: u, index: u })),
                             ),
-                            n().createElement('div', { className: Tt.vehiclePlace }),
+                            n().createElement('div', { className: xt.vehiclePlace }),
                         );
                     }),
-                    Nt = R.strings.comp7.seasonStatistics,
-                    Ot = (0, U.Pi)(() => {
+                    Tt = R.strings.comp7.seasonStatistics,
+                    Lt = (0, U.Pi)(() => {
                         const u = Cu(),
                             e = u.controls,
                             t = u.model,
@@ -2870,12 +2924,12 @@
                             n().createElement(
                                 'div',
                                 { className: gu.content },
-                                n().createElement(We, { className: gu.rating }),
+                                n().createElement(Pe, { className: gu.rating }),
                                 n().createElement(
                                     'div',
                                     { className: gu.statistics },
-                                    n().createElement(_t, { className: gu.summary }),
-                                    n().createElement(kt, null),
+                                    n().createElement(Ft, { className: gu.summary }),
+                                    n().createElement(St, null),
                                 ),
                             ),
                             n().createElement(
@@ -2884,7 +2938,7 @@
                                 n().createElement(
                                     G,
                                     { type: W.primary, size: 'medium', onClick: e.close, mixClass: gu.button },
-                                    Nt.button.$dyn(au(i)),
+                                    Tt.button.$dyn(au(i)),
                                 ),
                             ),
                             n().createElement(uu, { className: gu.close, onClose: e.close }),
@@ -2892,7 +2946,7 @@
                     });
                 engine.whenReady.then(() => {
                     P().render(
-                        n().createElement(Bu, null, n().createElement(O, null, n().createElement(Ot, null))),
+                        n().createElement(Bu, null, n().createElement(O, null, n().createElement(Lt, null))),
                         document.getElementById('root'),
                     );
                 });

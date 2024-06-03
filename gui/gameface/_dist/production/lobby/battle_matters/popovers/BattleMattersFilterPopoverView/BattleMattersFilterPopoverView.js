@@ -1379,7 +1379,7 @@
                         (u.ghost = 'ghost');
                 })(J || (J = {})),
                     (function (u) {
-                        (u.extraSmall = 'extraSmall'), (u.small = 'small'), (u.medium = 'medium');
+                        (u.extraSmall = 'extraSmall'), (u.small = 'small'), (u.medium = 'medium'), (u.large = 'large');
                     })(uu || (uu = {}));
                 const eu = {
                     base: 'ToggleButton_base_2c',

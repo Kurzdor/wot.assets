@@ -6464,6 +6464,12 @@ body {
 .Content_base__seasonWaiting_7c {
     filter: saturate(0.7) brightness(0.7);
 }
+.Content_base__chapterNotChosen_dd {
+    height: 105rem;
+}
+.mediaMedium .Content_base__chapterNotChosen_dd {
+    height: 135rem;
+}
 .Content_effects_0d {
     display: flex;
     width: 100%;

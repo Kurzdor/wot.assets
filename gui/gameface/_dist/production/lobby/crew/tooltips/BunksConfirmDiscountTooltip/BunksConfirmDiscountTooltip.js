@@ -1374,7 +1374,27 @@
                         for (; r; ) o !== r.index && t(u.slice(o, r.index)), n(r), (o = e.lastIndex), (r = e.exec(u));
                         o !== u.length && t(u.slice(o));
                     },
-                    au = X
+                    au = new RegExp('[฀-๿][ัำ-ฺ็-๎]*', 'gu'),
+                    su = (u) => {
+                        const e = [];
+                        return (
+                            iu(
+                                u,
+                                /\S\s+/g,
+                                (u) => {
+                                    var t;
+                                    'th' === R.strings.settings.LANGUAGE_CODE().toLowerCase()
+                                        ? e.push(...((t = u), t.match(au) || []))
+                                        : e.push(...u.split(''));
+                                },
+                                (u) => {
+                                    e.push(u[0]);
+                                },
+                            ),
+                            e
+                        );
+                    },
+                    cu = X
                         ? (u) => {
                               const e = [];
                               return (
@@ -1385,24 +1405,7 @@
                                           e.push(u);
                                       },
                                       (u) => {
-                                          e.push(
-                                              ...((u) => {
-                                                  const e = [];
-                                                  return (
-                                                      iu(
-                                                          u,
-                                                          /\S\s+/g,
-                                                          (u) => {
-                                                              e.push(...u.split(''));
-                                                          },
-                                                          (u) => {
-                                                              e.push(u[0]);
-                                                          },
-                                                      ),
-                                                      e
-                                                  );
-                                              })(u[0]),
-                                          );
+                                          e.push(...su(u[0]));
                                       },
                                   ),
                                   e
@@ -1417,14 +1420,14 @@
                               for (; t; ) n.push(u.slice(r, e.lastIndex)), (r = e.lastIndex), (t = e.exec(u));
                               return r !== u.length && n.push(u.slice(r)), n;
                           },
-                    su = (u, e = '') => {
+                    Eu = (u, e = '') => {
                         const t = [];
                         return (
                             iu(
                                 u,
                                 /(\n+|[\xa0\ufeff]+)/g,
                                 (u) => {
-                                    t.push({ blockType: G.Word, colorTag: e, childList: au(u) });
+                                    t.push({ blockType: G.Word, colorTag: e, childList: cu(u) });
                                 },
                                 (u) => {
                                     const n = u[0],
@@ -1454,27 +1457,27 @@
                             t
                         );
                     },
-                    cu = (u, e, t = '') => {
+                    lu = (u, e, t = '') => {
                         const n = [];
                         return (
                             iu(
                                 u,
                                 /(?:%\(|{)(.*?)[)}][sd]?/g,
                                 (u) => {
-                                    n.push(...su(u, t));
+                                    n.push(...Eu(u, t));
                                 },
                                 (u) => {
                                     const r = u[1],
                                         o = void 0 === e[r] ? u[0] : e[r];
                                     'string' == typeof o || 'number' == typeof o
-                                        ? n.push(...su(String(o), t))
+                                        ? n.push(...Eu(String(o), t))
                                         : n.push({ blockType: G.Binding, colorTag: t, childList: [o] });
                                 },
                             ),
                             n
                         );
                     },
-                    Eu = (u, e) => {
+                    Fu = (u, e) => {
                         if (!u) return [e];
                         const t = [],
                             n = Object.assign({}, e, { childList: e.childList.splice(0, 1) });
@@ -1486,7 +1489,7 @@
                         }
                         return e.childList.length > 0 && t.push(e), t;
                     },
-                    lu = (u, e = {}) => {
+                    Au = (u, e = {}) => {
                         if (!u) return [];
                         const t = ((u) => {
                             const e = [];
@@ -1494,8 +1497,8 @@
                             return (
                                 u.forEach((u) => {
                                     u.blockType === G.NoBreakSymbol
-                                        ? ((t = !0), e.push(...Eu(e.pop(), u)))
-                                        : (t ? e.push(...Eu(e.pop(), u)) : e.push(u), (t = !1));
+                                        ? ((t = !0), e.push(...Fu(e.pop(), u)))
+                                        : (t ? e.push(...Fu(e.pop(), u)) : e.push(u), (t = !1));
                                 }),
                                 e
                             );
@@ -1507,10 +1510,10 @@
                                         u,
                                         /(?:%\(|{)(\w*)(?:_[Oo]pen|_Start)(?:\)s|})([\s\S]*?)(?:%\(|{)\w*(?:_[Cc]lose|_End)(?:\)s|})/g,
                                         (u) => {
-                                            t.push(...cu(u, e));
+                                            t.push(...lu(u, e));
                                         },
                                         (u) => {
-                                            t.push(...cu(u[2], e, u[1]));
+                                            t.push(...lu(u[2], e, u[1]));
                                         },
                                     ),
                                     t
@@ -1519,12 +1522,12 @@
                         );
                         return ou(t);
                     },
-                    Fu = (u, e) => !u || u.offsetTop + u.offsetHeight > e,
-                    Au = (u, e) => u.offsetLeft + u.offsetWidth - e,
-                    _u = (u, e, t) => {
+                    _u = (u, e) => !u || u.offsetTop + u.offsetHeight > e,
+                    du = (u, e) => u.offsetLeft + u.offsetWidth - e,
+                    Du = (u, e, t) => {
                         if (!u || !u.textContent) return [!1, 0];
                         if (u.offsetLeft > e) return [!1, 0];
-                        const n = Au(u, e),
+                        const n = du(u, e),
                             r = u.textContent.length,
                             o = u.offsetWidth / r,
                             i = Math.ceil(n / o);
@@ -1535,7 +1538,7 @@
                         const a = Math.max(t + i, 0);
                         return r < a ? [!1, 0] : [!0, a];
                     },
-                    du = (u, e, t, n, r, o) => {
+                    Bu = (u, e, t, n, r, o) => {
                         let i = -1,
                             s = null;
                         for (let c = t; c >= 0; c--) {
@@ -1544,7 +1547,7 @@
                             if (E === G.LineBreak || E === G.NewLine || E === G.Binding) continue;
                             const l = t.textContent || '';
                             if (!(t.childElementCount > 1)) {
-                                const u = _u(t, n, r),
+                                const u = Du(t, n, r),
                                     E = u[0],
                                     F = u[1];
                                 if (!E) {
@@ -1560,7 +1563,7 @@
                                 const u = t.children,
                                     E = e[c],
                                     F = E.props.children,
-                                    A = du(u, F, u.length - 1, n, r, o),
+                                    A = Bu(u, F, u.length - 1, n, r, o),
                                     _ = A[0],
                                     d = A[1];
                                 if (!(_ < 0)) {
@@ -1573,31 +1576,31 @@
                         }
                         return [i, s];
                     },
-                    Du = (u, e, t, n = '...') => {
+                    Cu = (u, e, t, n = '...') => {
                         const r = [...e],
                             o = u.current;
                         if (!o) return [r, !1];
                         const i = t.height,
                             a = t.width,
                             s = o.lastElementChild;
-                        if (!Fu(s, i) && Au(s, a) <= 0) return [r, !1];
+                        if (!_u(s, i) && du(s, a) <= 0) return [r, !1];
                         const c = o.children,
                             E = ((u, e) => {
                                 let t = 0,
                                     n = u.length - 1;
                                 for (; n - t >= 0; ) {
                                     const r = t + Math.ceil(0.5 * (n - t));
-                                    Fu(u[r], e) ? (n = r - 1) : (t = r + 1);
+                                    _u(u[r], e) ? (n = r - 1) : (t = r + 1);
                                 }
                                 return t - 1;
                             })(c, i);
                         if (E < 0) return [r, !1];
-                        const l = du(c, r, E, a, n.length, n),
+                        const l = Bu(c, r, E, a, n.length, n),
                             F = l[0],
                             A = l[1];
                         return A && (r.splice(F, 1, A), r.splice(F + 1)), [r, !0];
                     },
-                    Bu = a().memo(
+                    pu = a().memo(
                         ({
                             text: u,
                             classMix: e,
@@ -1615,7 +1618,7 @@
                                 d = (0, i.useState)({ elementList: [], isTruncated: !1, isTruncateFinished: !1 }),
                                 D = d[0],
                                 B = d[1],
-                                C = (0, i.useMemo)(() => lu(u, n), [n, u]),
+                                C = (0, i.useMemo)(() => Au(u, n), [n, u]),
                                 p = (0, i.useMemo)(() => {
                                     if (
                                         o &&
@@ -1632,7 +1635,7 @@
                                     (u) => {
                                         (_.current.width = u.contentRect.width),
                                             (_.current.height = u.contentRect.height);
-                                        const e = Du(A, C, _.current, F),
+                                        const e = Cu(A, C, _.current, F),
                                             n = e[0],
                                             r = e[1];
                                         B({ elementList: n, isTruncated: r, isTruncateFinished: !0 }), t && t(r);
@@ -1677,25 +1680,25 @@
                             );
                         },
                     );
-                function Cu() {}
-                function pu() {
+                function gu() {}
+                function hu() {
                     return !1;
                 }
                 console.log;
-                var gu = t(9174);
-                function hu(u, e) {
+                var mu = t(9174);
+                function vu(u, e) {
                     var t = ('undefined' != typeof Symbol && u[Symbol.iterator]) || u['@@iterator'];
                     if (t) return (t = t.call(u)).next.bind(t);
                     if (
                         Array.isArray(u) ||
                         (t = (function (u, e) {
                             if (!u) return;
-                            if ('string' == typeof u) return mu(u, e);
+                            if ('string' == typeof u) return bu(u, e);
                             var t = Object.prototype.toString.call(u).slice(8, -1);
                             'Object' === t && u.constructor && (t = u.constructor.name);
                             if ('Map' === t || 'Set' === t) return Array.from(u);
                             if ('Arguments' === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t))
-                                return mu(u, e);
+                                return bu(u, e);
                         })(u)) ||
                         (e && u && 'number' == typeof u.length)
                     ) {
@@ -1709,13 +1712,13 @@
                         'Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.',
                     );
                 }
-                function mu(u, e) {
+                function bu(u, e) {
                     (null == e || e > u.length) && (e = u.length);
                     for (var t = 0, n = new Array(e); t < e; t++) n[t] = u[t];
                     return n;
                 }
-                const vu = (u) => (0 === u ? window : window.subViews.get(u));
-                const bu = ((u, e) => {
+                const fu = (u) => (0 === u ? window : window.subViews.get(u));
+                const wu = ((u, e) => {
                         const t = (0, i.createContext)({});
                         return [
                             function ({ mode: n = 'real', options: r, children: s, mocks: c }) {
@@ -1725,7 +1728,7 @@
                                         const a = (function ({
                                                 initializer: u = !0,
                                                 rootId: e = 0,
-                                                getRoot: t = vu,
+                                                getRoot: t = fu,
                                                 context: n = 'model',
                                             } = {}) {
                                                 const r = new Map();
@@ -1772,7 +1775,7 @@
                                                         };
                                                     },
                                                     dispose: function () {
-                                                        for (var u, t = hu(r.keys()); !(u = t()).done; ) i(u.value, e);
+                                                        for (var u, t = vu(r.keys()); !(u = t()).done; ) i(u.value, e);
                                                     },
                                                     unsubscribe: i,
                                                 };
@@ -1796,11 +1799,11 @@
                                                 observableModel: {
                                                     array: (u, e) => {
                                                         const n = null != e ? e : c(u),
-                                                            r = gu.LO.box(n, { equals: pu });
+                                                            r = mu.LO.box(n, { equals: hu });
                                                         return (
                                                             'real' === t &&
                                                                 s.subscribe(
-                                                                    (0, gu.aD)((u) => r.set(u)),
+                                                                    (0, mu.aD)((u) => r.set(u)),
                                                                     u,
                                                                 ),
                                                             r
@@ -1808,11 +1811,11 @@
                                                     },
                                                     object: (u, e) => {
                                                         const n = null != e ? e : c(u),
-                                                            r = gu.LO.box(n, { equals: pu });
+                                                            r = mu.LO.box(n, { equals: hu });
                                                         return (
                                                             'real' === t &&
                                                                 s.subscribe(
-                                                                    (0, gu.aD)((u) => r.set(u)),
+                                                                    (0, mu.aD)((u) => r.set(u)),
                                                                     u,
                                                                 ),
                                                             r
@@ -1822,13 +1825,13 @@
                                                         const n = c(e);
                                                         if (Array.isArray(u)) {
                                                             const r = u.reduce(
-                                                                (u, e) => ((u[e] = gu.LO.box(n[e], {})), u),
+                                                                (u, e) => ((u[e] = mu.LO.box(n[e], {})), u),
                                                                 {},
                                                             );
                                                             return (
                                                                 'real' === t &&
                                                                     s.subscribe(
-                                                                        (0, gu.aD)((e) => {
+                                                                        (0, mu.aD)((e) => {
                                                                             u.forEach((u) => {
                                                                                 r[u].set(e[u]);
                                                                             });
@@ -1842,13 +1845,13 @@
                                                             const r = u,
                                                                 o = Object.entries(r),
                                                                 i = o.reduce(
-                                                                    (u, [e, t]) => ((u[t] = gu.LO.box(n[e], {})), u),
+                                                                    (u, [e, t]) => ((u[t] = mu.LO.box(n[e], {})), u),
                                                                     {},
                                                                 );
                                                             return (
                                                                 'real' === t &&
                                                                     s.subscribe(
-                                                                        (0, gu.aD)((u) => {
+                                                                        (0, mu.aD)((u) => {
                                                                             o.forEach(([e, t]) => {
                                                                                 i[t].set(u[e]);
                                                                             });
@@ -1895,22 +1898,22 @@
                             },
                             () => (0, i.useContext)(t),
                         ];
-                    })(({ observableModel: u }) => u.primitives(['bunksCount', 'oldCost', 'newCost', 'isEnough']), Cu),
-                    fu = bu[0],
-                    wu = bu[1],
-                    yu = 'BunksConfirmDiscountTooltipApp_base_f7',
-                    ku = 'BunksConfirmDiscountTooltipApp_title_b1',
-                    Tu = () => {
-                        const u = wu().model;
+                    })(({ observableModel: u }) => u.primitives(['bunksCount', 'oldCost', 'newCost', 'isEnough']), gu),
+                    yu = wu[0],
+                    ku = wu[1],
+                    Tu = 'BunksConfirmDiscountTooltipApp_base_f7',
+                    Ou = 'BunksConfirmDiscountTooltipApp_title_b1',
+                    xu = () => {
+                        const u = ku().model;
                         return a().createElement(
                             'div',
-                            { className: yu },
+                            { className: Tu },
                             a().createElement(
                                 'div',
-                                { className: ku },
+                                { className: Ou },
                                 R.strings.crew.barracks.enlarge.discountTooltip.header(),
                             ),
-                            a().createElement(Bu, {
+                            a().createElement(pu, {
                                 text: R.strings.crew.barracks.enlarge.discountTooltip.previousCost(),
                                 binding: {
                                     currency: a().createElement(h, {
@@ -1922,7 +1925,7 @@
                                     bunksCount: u.bunksCount.get(),
                                 },
                             }),
-                            a().createElement(Bu, {
+                            a().createElement(pu, {
                                 text: R.strings.crew.barracks.enlarge.discountTooltip.newCost(),
                                 binding: {
                                     currency: a().createElement(h, {
@@ -1938,7 +1941,7 @@
                     };
                 engine.whenReady.then(() => {
                     _().render(
-                        a().createElement(F, null, a().createElement(fu, null, a().createElement(Tu, null))),
+                        a().createElement(F, null, a().createElement(yu, null, a().createElement(xu, null))),
                         document.getElementById('root'),
                     );
                 });

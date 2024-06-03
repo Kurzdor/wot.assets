@@ -66,7 +66,7 @@
                         h = n.mediumHeight,
                         g = n.smallHeight,
                         w = n.extraSmallHeight,
-                        v = { extraLarge: c, large: m, medium: h, small: g, extraSmall: w };
+                        p = { extraLarge: c, large: m, medium: h, small: g, extraSmall: w };
                     if (t.extraLarge || t.large || t.medium || t.small || t.extraSmall) {
                         if (t.extraLarge && F) return e;
                         if (t.large && A) return e;
@@ -74,11 +74,11 @@
                         if (t.small && s) return e;
                         if (t.extraSmall && D) return e;
                     } else {
-                        if (t.extraLargeWidth && l) return (0, E.H)(e, t, v);
-                        if (t.largeWidth && B) return (0, E.H)(e, t, v);
-                        if (t.mediumWidth && d) return (0, E.H)(e, t, v);
-                        if (t.smallWidth && C) return (0, E.H)(e, t, v);
-                        if (t.extraSmallWidth && _) return (0, E.H)(e, t, v);
+                        if (t.extraLargeWidth && l) return (0, E.H)(e, t, p);
+                        if (t.largeWidth && B) return (0, E.H)(e, t, p);
+                        if (t.mediumWidth && d) return (0, E.H)(e, t, p);
+                        if (t.smallWidth && C) return (0, E.H)(e, t, p);
+                        if (t.extraSmallWidth && _) return (0, E.H)(e, t, p);
                         if (
                             !(t.extraLargeWidth || t.largeWidth || t.mediumWidth || t.smallWidth || t.extraSmallWidth)
                         ) {
@@ -226,6 +226,8 @@
                             (u.CrewBooks = 'crewBooks'),
                             (u.Customizations = 'customizations'),
                             (u.CreditsFactor = 'creditsFactor'),
+                            (u.Tankman = 'tankman'),
+                            (u.Tankwoman = 'tankwoman'),
                             (u.TankmenXp = 'tankmenXP'),
                             (u.TankmenXpFactor = 'tankmenXPFactor'),
                             (u.FreeXpFactor = 'freeXPFactor'),
@@ -245,18 +247,17 @@
                             (u.BpCoin = 'bpcoin'),
                             (u.BattlaPassFinalAchievement = 'dossier_achievement'),
                             (u.BattleBadge = 'dossier_badge'),
-                            (u.NewYearAlbumsAccess = 'newYearAlbumsAccess'),
-                            (u.NewYearFillers = 'ny22Fillers'),
                             (u.NewYearInvoice = 'newYearInvoice'),
-                            (u.NewYearToyFragments = 'ny22ToyFragments'),
                             (u.NewYearSlot = 'newYearSlot'),
                             (u.BonusX5 = 'battle_bonus_x5'),
                             (u.CrewBonusX3 = 'crew_bonus_x3'),
                             (u.Vehicles = 'vehicles'),
                             (u.EpicSelectToken = 'epicSelectToken'),
                             (u.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
+                            (u.DeluxeGift = 'deluxe_gift'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
-                            (u.OptionalDevice = 'optionalDevice');
+                            (u.OptionalDevice = 'optionalDevice'),
+                            (u.EquipCoin = 'equipCoin');
                     })(i || (i = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -295,7 +296,8 @@
                             (u.RankedBonusBattles = 'rankedBonusBattles'),
                             (u.BattlePassPoints = 'battlePassPoints'),
                             (u.BattleBadge = 'dossier_badge'),
-                            (u.BattleAchievement = 'dossier_achievement');
+                            (u.BattleAchievement = 'dossier_achievement'),
+                            (u.EquipCoin = 'equipCoin');
                     })(E || (E = {})),
                     (function (u) {
                         (u.Big = 'big'),
@@ -308,6 +310,7 @@
                             (u.S180x135 = 's180x135'),
                             (u.S128x100 = 's128x100'),
                             (u.S80x80 = 's80x80'),
+                            (u.S64x64 = 's64x64'),
                             (u.S48x48 = 's48x48');
                     })(r || (r = {})),
                     (function (u) {
@@ -330,7 +333,9 @@
                             (u.PROGRESSION_STYLE_UPGRADED_1 = 'progressionStyleUpgraded_1'),
                             (u.PROGRESSION_STYLE_UPGRADED_2 = 'progressionStyleUpgraded_2'),
                             (u.PROGRESSION_STYLE_UPGRADED_3 = 'progressionStyleUpgraded_3'),
-                            (u.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4');
+                            (u.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4'),
+                            (u.PROGRESSION_STYLE_UPGRADED_5 = 'progressionStyleUpgraded_5'),
+                            (u.PROGRESSION_STYLE_UPGRADED_6 = 'progressionStyleUpgraded_6');
                     })(n || (n = {})),
                     (function (u) {
                         u.BATTLE_BOOSTER = 'battleBooster';
@@ -348,7 +353,9 @@
                             (u.PROGRESSION_STYLE_UPGRADED_1 = 'progressionStyleUpgraded_1'),
                             (u.PROGRESSION_STYLE_UPGRADED_2 = 'progressionStyleUpgraded_2'),
                             (u.PROGRESSION_STYLE_UPGRADED_3 = 'progressionStyleUpgraded_3'),
-                            (u.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4');
+                            (u.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4'),
+                            (u.PROGRESSION_STYLE_UPGRADED_5 = 'progressionStyleUpgraded_5'),
+                            (u.PROGRESSION_STYLE_UPGRADED_6 = 'progressionStyleUpgraded_6');
                     })(A || (A = {}));
             },
             729: (u, e, t) => {
@@ -380,19 +387,18 @@
                     i.E4.BattleBadge,
                     i.E4.BonusX5,
                     i.E4.CrewBonusX3,
-                    i.E4.NewYearFillers,
                     i.E4.NewYearInvoice,
                     i.E4.EpicSelectToken,
                     i.E4.Comp7TokenWeeklyReward,
+                    i.E4.DeluxeGift,
                     i.E4.BattleBoosterGift,
                     i.E4.OptionalDevice,
-                    i.E4.FragmentAntimatter,
-                    i.E4.CosmicLootbox,
                     i.E4.Gold,
                     i.E4.Credits,
                     i.E4.Crystal,
                     i.E4.FreeXp,
                     i.E4.BattlePassPoints,
+                    i.E4.EquipCoin,
                     i.E4.PremiumPlus,
                     i.E4.Premium,
                     i.h2.Small,
@@ -574,13 +580,13 @@
                         addPreloadTexture: () => n,
                         children: () => i,
                         displayStatus: () => E.W,
-                        displayStatusIs: () => T,
+                        displayStatusIs: () => S,
                         events: () => r.U,
-                        extraSize: () => f,
-                        forceTriggerMouseMove: () => v,
+                        extraSize: () => T,
+                        forceTriggerMouseMove: () => p,
                         freezeTextureBeforeResize: () => d,
                         getBrowserTexturePath: () => A,
-                        getDisplayStatus: () => p,
+                        getDisplayStatus: () => v,
                         getScale: () => C,
                         getSize: () => D,
                         getViewGlobalPosition: () => B,
@@ -594,7 +600,7 @@
                         setEventHandled: () => g,
                         setInputPaddingsRem: () => F,
                         setSidePaddingsRem: () => s,
-                        whenTutorialReady: () => S,
+                        whenTutorialReady: () => f,
                     });
                 var i = t(3722),
                     E = t(6112),
@@ -649,17 +655,17 @@
                 function w() {
                     return viewEnv.isEventHandled();
                 }
-                function v() {
+                function p() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function p() {
+                function v() {
                     return viewEnv.getShowingStatus();
                 }
-                const T = Object.keys(E.W).reduce(
+                const S = Object.keys(E.W).reduce(
                         (u, e) => ((u[e] = () => viewEnv.getShowingStatus() === E.W[e]), u),
                         {},
                     ),
-                    f = {
+                    T = {
                         set: (u, e) => {
                             viewEnv.setExtraSizeRem(u, e);
                         },
@@ -667,7 +673,7 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    S = Promise.all([
+                    f = Promise.all([
                         new Promise((u) => {
                             window.isDomBuilt ? u() : r.U.onDomBuilt(u);
                         }),
@@ -1075,7 +1081,7 @@
                     };
                 var g = t(7572);
                 const w = E.instance,
-                    v = {
+                    p = {
                         DataTracker: r.Z,
                         ViewModel: g.Z,
                         ViewEventType: n,
@@ -1157,7 +1163,7 @@
                         SystemLocale: a.Z5,
                         UserLocale: a.cy,
                     };
-                window.ViewEnvHelper = v;
+                window.ViewEnvHelper = p;
             },
             8613: (u, e, t) => {
                 t.d(e, { Ew: () => r, Z5: () => i, cy: () => E });
@@ -1226,13 +1232,16 @@
                 })(i || (i = {}));
             },
             5216: (u, e, t) => {
-                let i;
+                let i, E;
                 !(function (u) {
                     (u.Active = 'active'),
                         (u.Paused = 'paused'),
                         (u.Completed = 'completed'),
                         (u.NotStarted = 'notStarted');
-                })(i || (i = {}));
+                })(i || (i = {})),
+                    (function (u) {
+                        (u.Vehicle = 'vehicle'), (u.Style = 'style'), (u.Tankman = 'tankman');
+                    })(E || (E = {}));
             },
             5287: () => {},
             1609: () => {},
