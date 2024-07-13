@@ -293,15 +293,11 @@
     justify-content: flex-end;
     align-items: center;
     height: 85rem;
-    padding-bottom: 25rem;
+    padding-bottom: 35rem;
 }
-.Status_base__completedResettable_61 {
-    height: 74rem;
-    padding-bottom: 10rem;
-}
+.Status_base__completedResettable_61,
 .Status_base__completedFinal_81 {
     height: 74rem;
-    padding-bottom: 14rem;
 }
 .Status_progress_f1 {
     display: flex;
@@ -316,10 +312,11 @@
     transition-delay: 0s;
 }
 .Status_progressLevel_9a {
-    color: #ffdd99;
+    color: #8c8c7e;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
+    display: flex;
     margin-bottom: 6rem;
     line-height: 20rem;
     text-align: center;
@@ -337,7 +334,7 @@
     height: 32rem;
     background: url('R.images.gui.maps.icons.components.countdown.clock') center center / cover;
     opacity: 1;
-    bottom: 10rem;
+    bottom: 30rem;
     transition-delay: 0.2s;
 }
 .Status_base__completedFinal_81 .Status_statusIcon_bf {
@@ -345,8 +342,118 @@
     height: 24rem;
     background: url('R.images.gui.maps.icons.library.check') center center / cover;
     opacity: 1;
-    bottom: 14rem;
+    bottom: 34rem;
     transition-delay: 0.2s;
+}
+.Status_infiniteIcon_3b {
+    width: 18rem;
+    height: 20rem;
+    margin-top: 2rem;
+    background: url('R.images.fun_random.gui.maps.icons.feature.quest.infinity_grey') center center / cover;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #ffffff;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #f2f2f7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #fefeec;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #e9e2bf;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8c8c7e;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362e;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #ff2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #b70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #feab34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #ee7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #ffdd99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #cbac77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80d43a;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7ab300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #ccffff;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09e2ff;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #ced9d9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #ffc363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #c9c9b6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #a29b70;
+}
+
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8c8c7e;
 }
 
 @keyframes App_fadeInWithScale_72 {
@@ -401,14 +508,9 @@ body {
     flex-direction: column;
     align-items: center;
     width: 360rem;
-    height: 135rem;
+    height: 147rem;
     position: relative;
     cursor: pointer;
-}
-.App_base__completedResettable_78 .App_animContainer_b4,
-.App_base__completedFinal_76 .App_animContainer_b4,
-.App_base__disabled_e8 .App_animContainer_b4 {
-    height: 120rem;
 }
 .App_backgroundWrapper_0b {
     position: absolute;
@@ -422,11 +524,6 @@ body {
 }
 .App_base_59:hover .App_backgroundWrapper_0b {
     transform: translateY(5rem);
-}
-.App_base__completedResettable_78 .App_backgroundWrapper_0b,
-.App_base__completedFinal_76 .App_backgroundWrapper_0b,
-.App_base__disabled_e8 .App_backgroundWrapper_0b {
-    height: 120rem;
 }
 .App_base__completedResettable_78 .App_backgroundWrapper_0b {
     filter: saturate(0);

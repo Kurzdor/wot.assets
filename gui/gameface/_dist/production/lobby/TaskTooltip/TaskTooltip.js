@@ -80,18 +80,21 @@
                 t.r(e),
                     t.d(e, {
                         events: () => n,
-                        getMouseGlobalPosition: () => o,
-                        getSize: () => r,
-                        graphicsQuality: () => s,
+                        getMouseGlobalPosition: () => s,
+                        getSize: () => o,
+                        graphicsQuality: () => i,
+                        playSound: () => r.G,
+                        setRTPC: () => r.E,
                     });
-                var n = t(527);
-                function r(u = 'px') {
+                var n = t(527),
+                    r = t(2493);
+                function o(u = 'px') {
                     return 'rem' === u ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function o(u = 'px') {
+                function s(u = 'px') {
                     return 'rem' === u ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const s = {
+                const i = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -102,6 +105,19 @@
                     viewEnv.setTrackMouseOnStage(u);
                 }
                 t.d(e, { R: () => n });
+            },
+            2493: (u, e, t) => {
+                function n(u) {
+                    engine.call('PlaySound', u).catch((e) => {
+                        console.error(`playSound('${u}'): `, e);
+                    });
+                }
+                function r(u, e) {
+                    engine.call('SetRTPCGlobal', u, e).catch((t) => {
+                        console.error(`setRTPC('${u}', '${e}'): `, t);
+                    });
+                }
+                t.d(e, { E: () => r, G: () => n });
             },
             2472: (u, e, t) => {
                 function n(u) {
@@ -115,9 +131,17 @@
                 t.d(e, { E: () => n });
             },
             3138: (u, e, t) => {
-                t.d(e, { O: () => r });
+                t.d(e, { O: () => o });
+                var n = t(5959),
+                    r = t(514);
+                const o = { view: t(7641), client: n, sound: r.ZP };
+            },
+            514: (u, e, t) => {
+                t.d(e, { ZP: () => s });
                 var n = t(5959);
-                const r = { view: t(7641), client: n };
+                const r = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    o = Object.keys(r).reduce((u, e) => ((u[e] = () => (0, n.playSound)(r[e])), u), {}),
+                    s = { play: Object.assign({}, o, { sound: n.playSound }), setRTPC: n.setRTPC };
             },
             3722: (u, e, t) => {
                 function n(u, e, t = 1) {

@@ -267,18 +267,21 @@
                 F.r(e),
                     F.d(e, {
                         events: () => A,
-                        getMouseGlobalPosition: () => B,
-                        getSize: () => E,
-                        graphicsQuality: () => D,
+                        getMouseGlobalPosition: () => D,
+                        getSize: () => B,
+                        graphicsQuality: () => t,
+                        playSound: () => E.G,
+                        setRTPC: () => E.E,
                     });
-                var A = F(527);
-                function E(u = 'px') {
+                var A = F(527),
+                    E = F(2493);
+                function B(u = 'px') {
                     return 'rem' === u ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function B(u = 'px') {
+                function D(u = 'px') {
                     return 'rem' === u ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const D = {
+                const t = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -289,6 +292,19 @@
                     viewEnv.setTrackMouseOnStage(u);
                 }
                 F.d(e, { R: () => A });
+            },
+            2493: (u, e, F) => {
+                function A(u) {
+                    engine.call('PlaySound', u).catch((e) => {
+                        console.error(`playSound('${u}'): `, e);
+                    });
+                }
+                function E(u, e) {
+                    engine.call('SetRTPCGlobal', u, e).catch((F) => {
+                        console.error(`setRTPC('${u}', '${e}'): `, F);
+                    });
+                }
+                F.d(e, { E: () => E, G: () => A });
             },
             2472: (u, e, F) => {
                 function A(u) {
@@ -302,9 +318,17 @@
                 F.d(e, { E: () => A });
             },
             3138: (u, e, F) => {
-                F.d(e, { O: () => E });
+                F.d(e, { O: () => B });
+                var A = F(5959),
+                    E = F(514);
+                const B = { view: F(7641), client: A, sound: E.ZP };
+            },
+            514: (u, e, F) => {
+                F.d(e, { ZP: () => D });
                 var A = F(5959);
-                const E = { view: F(7641), client: A };
+                const E = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    B = Object.keys(E).reduce((u, e) => ((u[e] = () => (0, A.playSound)(E[e])), u), {}),
+                    D = { play: Object.assign({}, B, { sound: A.playSound }), setRTPC: A.setRTPC };
             },
             3722: (u, e, F) => {
                 function A(u, e, F = 1) {
@@ -366,7 +390,7 @@
                         setEventHandled: () => v,
                         setInputPaddingsRem: () => i,
                         setSidePaddingsRem: () => n,
-                        whenTutorialReady: () => H,
+                        whenTutorialReady: () => p,
                     });
                 var A = F(3722),
                     E = F(6112),
@@ -439,7 +463,7 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    H = Promise.all([
+                    p = Promise.all([
                         new Promise((u) => {
                             window.isDomBuilt ? u() : B.U.onDomBuilt(u);
                         }),

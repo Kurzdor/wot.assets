@@ -41,7 +41,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: url('R.images.gui.maps.icons.library.white_bg') no-repeat 50% / 100%;
+    background: url('R.images.gui.maps.icons.library.white_bg') no-repeat 50% / 100% 100%;
 }
 
 .GradientDecorator_divider_13 {

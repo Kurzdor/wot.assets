@@ -1,0 +1,157 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.App_base_0a {
+    align-items: center;
+    width: 400rem;
+    padding: 18rem 20rem 20rem;
+    overflow: hidden;
+}
+
+.App_background_17 {
+    width: 100%;
+    height: 100rem;
+    background: no-repeat left / contain;
+    opacity: 0.5;
+    position: absolute;
+    top: 4rem;
+    left: 6rem;
+    z-index: -1;
+}
+
+.App_title_69 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: left;
+    z-index: 1;
+}
+
+.App_text_7b {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 4rem;
+}
+
+.App_description_f1 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 26rem;
+}
+
+.App_advantages_75 {
+    margin-top: 10rem;
+}
+
+.App_separator_51 {
+    width: 100%;
+    height: 1rem;
+    margin-top: 10rem;
+    background: linear-gradient(
+        90deg,
+        rgba(201, 201, 182, 0) 0%,
+        #c9c9b6 33.33%,
+        #c9c9b6 66.67%,
+        rgba(201, 201, 182, 0) 100%
+    );
+    opacity: 0.2;
+}
+
+.App_status_31 {
+    margin-top: 20rem;
+    text-align: center;
+}
+
+.App_status__inBattle_24 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.App_status__ready_88 {
+    color: #7ab300;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.App_status__notReady_5b {
+    color: #ff2717;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.Advantages_overlay_21 .Advantages_base_26 {
+    margin-top: 10rem;
+}
+.Advantages_overlay_21 .Advantages_icon_45 {
+    width: 90rem;
+    height: 90rem;
+    top: -23rem;
+    left: -23rem;
+}
+.Advantages_overlay_21 .Advantages_text_19 {
+    margin-left: 50rem;
+    color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 700;
+}
+
+.Advantage_base_66 {
+    display: flex;
+    flex-direction: row;
+    height: 40rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.mediaMedium .Advantage_base_66 {
+    margin-top: 10rem;
+}
+
+.Advantage_icon_0f {
+    width: 70rem;
+    height: 70rem;
+    background: no-repeat 50% / contain;
+    position: absolute;
+    top: -13rem;
+    left: -13rem;
+    pointer-events: none;
+}
+
+.mediaMedium .Advantage_icon_0f {
+    width: 90rem;
+    height: 90rem;
+    top: -23rem;
+    left: -23rem;
+}
+
+.Advantage_text_c2 {
+    display: block;
+    align-self: center;
+    margin-left: 40rem;
+    color: #8c8c7e;
+    font-size: 14rem;
+}
+
+.mediaMedium .Advantage_text_c2 {
+    margin-left: 48rem;
+    font-size: 16rem;
+}

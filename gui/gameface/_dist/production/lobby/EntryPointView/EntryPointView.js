@@ -97,18 +97,21 @@
                 t.r(e),
                     t.d(e, {
                         events: () => n,
-                        getMouseGlobalPosition: () => a,
-                        getSize: () => r,
-                        graphicsQuality: () => i,
+                        getMouseGlobalPosition: () => i,
+                        getSize: () => a,
+                        graphicsQuality: () => o,
+                        playSound: () => r.G,
+                        setRTPC: () => r.E,
                     });
-                var n = t(527);
-                function r(u = 'px') {
+                var n = t(527),
+                    r = t(2493);
+                function a(u = 'px') {
                     return 'rem' === u ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function a(u = 'px') {
+                function i(u = 'px') {
                     return 'rem' === u ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const i = {
+                const o = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -120,6 +123,20 @@
                     viewEnv.setTrackMouseOnStage(u);
                 }
                 t.d(e, { R: () => n });
+            },
+            2493: (u, e, t) => {
+                'use strict';
+                function n(u) {
+                    engine.call('PlaySound', u).catch((e) => {
+                        console.error(`playSound('${u}'): `, e);
+                    });
+                }
+                function r(u, e) {
+                    engine.call('SetRTPCGlobal', u, e).catch((t) => {
+                        console.error(`setRTPC('${u}', '${e}'): `, t);
+                    });
+                }
+                t.d(e, { E: () => r, G: () => n });
             },
             2472: (u, e, t) => {
                 'use strict';
@@ -135,9 +152,18 @@
             },
             3138: (u, e, t) => {
                 'use strict';
-                t.d(e, { O: () => r });
+                t.d(e, { O: () => a });
+                var n = t(5959),
+                    r = t(514);
+                const a = { view: t(7641), client: n, sound: r.ZP };
+            },
+            514: (u, e, t) => {
+                'use strict';
+                t.d(e, { ZP: () => i });
                 var n = t(5959);
-                const r = { view: t(7641), client: n };
+                const r = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    a = Object.keys(r).reduce((u, e) => ((u[e] = () => (0, n.playSound)(r[e])), u), {}),
+                    i = { play: Object.assign({}, a, { sound: n.playSound }), setRTPC: n.setRTPC };
             },
             3722: (u, e, t) => {
                 'use strict';
@@ -999,7 +1025,7 @@
                         [p.Large]: `${C().SMALL} ${C().MEDIUM} ${C().LARGE}`,
                         [p.ExtraLarge]: `${C().SMALL} ${C().MEDIUM} ${C().LARGE} ${C().EXTRA_LARGE}`,
                     },
-                    T = (u) => {
+                    S = (u) => {
                         let e = u.children,
                             t = u.className,
                             a = (function (u, e) {
@@ -1082,7 +1108,7 @@
                             l = i.mediaSize;
                         return r().createElement('div', v({ className: B()(t, y[o], x[s], L[l]) }, a), e);
                     },
-                    S = ['children'],
+                    T = ['children'],
                     k = (u) => {
                         let e = u.children,
                             t = (function (u, e) {
@@ -1093,8 +1119,8 @@
                                     a = Object.keys(u);
                                 for (n = 0; n < a.length; n++) (t = a[n]), e.indexOf(t) >= 0 || (r[t] = u[t]);
                                 return r;
-                            })(u, S);
-                        return r().createElement(D, null, r().createElement(T, t, e));
+                            })(u, T);
+                        return r().createElement(D, null, r().createElement(S, t, e));
                     };
                 var O = t(493),
                     M = t.n(O);
@@ -1766,8 +1792,8 @@
                         for (; r; ) a !== r.index && t(u.slice(a, r.index)), n(r), (a = e.lastIndex), (r = e.exec(u));
                         a !== u.length && t(u.slice(a));
                     },
-                    Tu = new RegExp('[฀-๿][ัำ-ฺ็-๎]*', 'gu'),
-                    Su = pu
+                    Su = new RegExp('[฀-๿][ัำ-ฺ็-๎]*', 'gu'),
+                    Tu = pu
                         ? (u) => {
                               const e = [];
                               return (
@@ -1788,7 +1814,7 @@
                                                           (u) => {
                                                               var t;
                                                               'th' === R.strings.settings.LANGUAGE_CODE().toLowerCase()
-                                                                  ? e.push(...((t = u), t.match(Tu) || []))
+                                                                  ? e.push(...((t = u), t.match(Su) || []))
                                                                   : e.push(...u.split(''));
                                                           },
                                                           (u) => {
@@ -1820,7 +1846,7 @@
                                 u,
                                 /(\n+|[\xa0\ufeff]+)/g,
                                 (u) => {
-                                    t.push({ blockType: _u.Word, colorTag: e, childList: Su(u) });
+                                    t.push({ blockType: _u.Word, colorTag: e, childList: Tu(u) });
                                 },
                                 (u) => {
                                     const n = u[0],
@@ -2109,7 +2135,9 @@
                         },
                     );
                 function ju(u) {
-                    engine.call('PlaySound', u);
+                    engine.call('PlaySound', u).catch((e) => {
+                        console.error('[lib/sounds.js] playSound(', u, '): ', e);
+                    });
                 }
                 const Vu = {
                     playHighlight() {

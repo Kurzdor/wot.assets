@@ -1,8 +1,8 @@
 (() => {
     'use strict';
     var __webpack_modules__ = {
-            67: (u, e, t) => {
-                t.d(e, { O: () => q });
+            768: (u, e, t) => {
+                t.d(e, { O: () => X });
                 var r = {};
                 t.r(r),
                     t.d(r, { mouse: () => D, off: () => l, on: () => F, onResize: () => E, onScaleUpdated: () => A });
@@ -10,12 +10,14 @@
                 t.r(i),
                     t.d(i, {
                         events: () => r,
-                        getMouseGlobalPosition: () => m,
-                        getSize: () => c,
-                        graphicsQuality: () => _,
+                        getMouseGlobalPosition: () => B,
+                        getSize: () => _,
+                        graphicsQuality: () => C,
+                        playSound: () => c,
+                        setRTPC: () => m,
                     });
                 var a = {};
-                t.r(a), t.d(a, { getBgUrl: () => C, getTextureUrl: () => B });
+                t.r(a), t.d(a, { getBgUrl: () => p, getTextureUrl: () => v });
                 var n = {};
                 function o(u) {
                     return (e) => (
@@ -30,31 +32,31 @@
                 }
                 t.r(n),
                     t.d(n, {
-                        addModelObserver: () => b,
-                        addPreloadTexture: () => w,
+                        addModelObserver: () => N,
+                        addPreloadTexture: () => S,
                         children: () => a,
-                        displayStatus: () => f,
-                        displayStatusIs: () => G,
-                        events: () => h,
-                        extraSize: () => K,
-                        forceTriggerMouseMove: () => W,
-                        freezeTextureBeforeResize: () => N,
-                        getBrowserTexturePath: () => T,
-                        getDisplayStatus: () => U,
-                        getScale: () => I,
-                        getSize: () => S,
-                        getViewGlobalPosition: () => P,
-                        isEventHandled: () => V,
-                        isFocused: () => k,
-                        pxToRem: () => x,
-                        remToPx: () => L,
-                        resize: () => y,
-                        sendEvent: () => p,
-                        setAnimateWindow: () => M,
-                        setEventHandled: () => H,
-                        setInputPaddingsRem: () => O,
-                        setSidePaddingsRem: () => R,
-                        whenTutorialReady: () => j,
+                        displayStatus: () => w,
+                        displayStatusIs: () => z,
+                        events: () => O,
+                        extraSize: () => Y,
+                        forceTriggerMouseMove: () => $,
+                        freezeTextureBeforeResize: () => k,
+                        getBrowserTexturePath: () => P,
+                        getDisplayStatus: () => q,
+                        getScale: () => H,
+                        getSize: () => x,
+                        getViewGlobalPosition: () => M,
+                        isEventHandled: () => K,
+                        isFocused: () => G,
+                        pxToRem: () => V,
+                        remToPx: () => W,
+                        resize: () => L,
+                        sendEvent: () => R,
+                        setAnimateWindow: () => U,
+                        setEventHandled: () => j,
+                        setInputPaddingsRem: () => y,
+                        setSidePaddingsRem: () => I,
+                        whenTutorialReady: () => Z,
                     });
                 const E = o('clientResized'),
                     A = o('self.onScaleUpdated'),
@@ -125,25 +127,38 @@
                             },
                         });
                     })();
-                function c(u = 'px') {
+                function c(u) {
+                    engine.call('PlaySound', u).catch((e) => {
+                        console.error(`playSound('${u}'): `, e);
+                    });
+                }
+                function m(u, e) {
+                    engine.call('SetRTPCGlobal', u, e).catch((t) => {
+                        console.error(`setRTPC('${u}', '${e}'): `, t);
+                    });
+                }
+                function _(u = 'px') {
                     return 'rem' === u ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function m(u = 'px') {
+                function B(u = 'px') {
                     return 'rem' === u ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const _ = {
-                    isLow: () => 1 === viewEnv.getGraphicsQuality(),
-                    isHigh: () => 0 === viewEnv.getGraphicsQuality(),
-                    get: () => viewEnv.getGraphicsQuality(),
-                };
-                function B(u, e, t = 1) {
+                const C = {
+                        isLow: () => 1 === viewEnv.getGraphicsQuality(),
+                        isHigh: () => 0 === viewEnv.getGraphicsQuality(),
+                        get: () => viewEnv.getGraphicsQuality(),
+                    },
+                    f = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    h = Object.keys(f).reduce((u, e) => ((u[e] = () => c(f[e])), u), {}),
+                    g = { play: Object.assign({}, h, { sound: c }), setRTPC: m };
+                function v(u, e, t = 1) {
                     return viewEnv.getChildTexturePath(u, e.width, e.height, t);
                 }
-                function C(u, e, t) {
-                    return `url(${B(u, e, t)})`;
+                function p(u, e, t) {
+                    return `url(${v(u, e, t)})`;
                 }
-                const f = { showing: 0, shown: 1, hiding: 2, hidden: 3 },
-                    h = {
+                const w = { showing: 0, shown: 1, hiding: 2, hidden: 3 },
+                    O = {
                         onTextureFrozen: o('self.onTextureFrozen'),
                         onTextureReady: o('self.onTextureReady'),
                         onDomBuilt: o('self.onDomBuilt'),
@@ -159,8 +174,8 @@
                             onRequestPosition: o('children.requestPosition'),
                         },
                     },
-                    g = ['args'],
-                    v = (u, e) => {
+                    T = ['args'],
+                    b = (u, e) => {
                         const t = 'GFViewEventProxy';
                         if (void 0 !== e) {
                             const i = e.args,
@@ -172,7 +187,7 @@
                                         a = Object.keys(u);
                                     for (r = 0; r < a.length; r++) (t = a[r]), e.indexOf(t) >= 0 || (i[t] = u[t]);
                                     return i;
-                                })(e, g);
+                                })(e, T);
                             return void 0 !== i
                                 ? viewEnv.handleViewEvent(
                                       Object.assign({ __Type: t, type: u }, a, {
@@ -196,74 +211,74 @@
                         return viewEnv.handleViewEvent({ __Type: t, type: u });
                         var r;
                     },
-                    p = {
+                    R = {
                         close(u) {
-                            v('popover' === u ? 2 : 32);
+                            b('popover' === u ? 2 : 32);
                         },
                         minimize() {
-                            v(64);
+                            b(64);
                         },
                         move(u) {
-                            v(16, { isMouseEvent: !0, on: u });
+                            b(16, { isMouseEvent: !0, on: u });
                         },
                     };
-                function w(u) {
+                function S(u) {
                     viewEnv.addPreloadTexture(u);
                 }
-                function O(u) {
+                function y(u) {
                     viewEnv.setHitAreaPaddingsRem(u, u, u, u, 15);
                 }
-                function T(u, e, t, r = 1) {
+                function P(u, e, t, r = 1) {
                     return viewEnv.getWebBrowserTexturePath(u, e, t, r);
                 }
-                function b(u, e, t) {
+                function N(u, e, t) {
                     return viewEnv.addDataChangedCallback(u, e, t);
                 }
-                function R(u) {
+                function I(u) {
                     viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, 15);
                 }
-                function S(u = 'px') {
+                function x(u = 'px') {
                     return 'rem' === u ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
                 }
-                function y(u, e, t = 'px') {
+                function L(u, e, t = 'px') {
                     return 'rem' === t ? viewEnv.resizeViewRem(u, e) : viewEnv.resizeViewPx(u, e);
                 }
-                function P(u = 'rem') {
+                function M(u = 'rem') {
                     const e = viewEnv.getViewGlobalPositionRem();
-                    return 'rem' === u ? e : { x: L(e.x), y: L(e.y) };
-                }
-                function N() {
-                    viewEnv.freezeTextureBeforeResize();
-                }
-                function I() {
-                    return viewEnv.getScale();
-                }
-                function x(u) {
-                    return viewEnv.pxToRem(u);
-                }
-                function L(u) {
-                    return viewEnv.remToPx(u);
-                }
-                function M(u, e) {
-                    viewEnv.setAnimateWindow(u, e);
+                    return 'rem' === u ? e : { x: W(e.x), y: W(e.y) };
                 }
                 function k() {
-                    return viewEnv.isFocused();
+                    viewEnv.freezeTextureBeforeResize();
                 }
                 function H() {
+                    return viewEnv.getScale();
+                }
+                function V(u) {
+                    return viewEnv.pxToRem(u);
+                }
+                function W(u) {
+                    return viewEnv.remToPx(u);
+                }
+                function U(u, e) {
+                    viewEnv.setAnimateWindow(u, e);
+                }
+                function G() {
+                    return viewEnv.isFocused();
+                }
+                function j() {
                     return viewEnv.setEventHandled();
                 }
-                function V() {
+                function K() {
                     return viewEnv.isEventHandled();
                 }
-                function W() {
+                function $() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function U() {
+                function q() {
                     return viewEnv.getShowingStatus();
                 }
-                const G = Object.keys(f).reduce((u, e) => ((u[e] = () => viewEnv.getShowingStatus() === f[e]), u), {}),
-                    K = {
+                const z = Object.keys(w).reduce((u, e) => ((u[e] = () => viewEnv.getShowingStatus() === w[e]), u), {}),
+                    Y = {
                         set: (u, e) => {
                             viewEnv.setExtraSizeRem(u, e);
                         },
@@ -271,17 +286,17 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    j = Promise.all([
+                    Z = Promise.all([
                         new Promise((u) => {
-                            window.isDomBuilt ? u() : h.onDomBuilt(u);
+                            window.isDomBuilt ? u() : O.onDomBuilt(u);
                         }),
                         engine.whenReady,
                     ]),
-                    q = { view: n, client: i };
+                    X = { view: n, client: i, sound: g };
             },
             358: (u, e, t) => {
                 t.d(e, { Z: () => a });
-                var r = t(67);
+                var r = t(768);
                 class i {
                     constructor() {
                         (this._callbacks = void 0),
@@ -483,7 +498,7 @@
                             (u.SYMBOL = 'Symbol'),
                             (u.SYMBOL_LOCK = 'SymbolLock');
                     })(D || (D = {}));
-                var c = t(67);
+                var c = t(768);
                 const m = ['args'];
                 function _(u, e, t, r, i, a, n) {
                     try {
@@ -685,7 +700,7 @@
                             ? u
                             : null
                         : u;
-                var n = t(67);
+                var n = t(768);
                 const o = {
                     extraLarge: { weight: 4, width: 2560, height: 1440 },
                     large: { weight: 3, width: 1920, height: 1080 },
@@ -1176,95 +1191,95 @@
                     (function (u) {
                         (u.UNDEFINED = 'undefined'), (u.POSITIVE = 'positive'), (u.NEGATIVE = 'negative');
                     })(G || (G = {}));
-                class K {}
-                (K.useType = {
+                class j {}
+                (j.useType = {
                     oneOf:
                         (...u) =>
                         (e) =>
                             u.some((u) => e.useType === u),
                 }),
-                    (K.modificationType = {
+                    (j.modificationType = {
                         oneOf:
                             (...u) =>
                             (e) =>
                                 u.some((u) => e.modificationType === u),
                     }),
-                    (K.value = { isPositiveInteger: (u) => u.value >= 1 && Number.isInteger(u.value) });
-                const j =
+                    (j.value = { isPositiveInteger: (u) => u.value >= 1 && Number.isInteger(u.value) });
+                const K =
                     (...u) =>
                     (e) =>
                         0 !== u.length && u.every((u) => u(e));
+                class $ {}
+                ($.multiplierToPercent = (u) => 100 * u - 100),
+                    ($.radiansToDegrees = (u) => u * (180 / Math.PI)),
+                    ($.metPerSecondToKmPerHour = (u) => 3.6 * u),
+                    ($.radiansPerSecondToDegreesPerSecond = (u) => u * (180 / Math.PI)),
+                    ($.probabilityToPercent = (u) => 100 * u),
+                    ($.default = (u) => u);
                 class q {}
-                (q.multiplierToPercent = (u) => 100 * u - 100),
-                    (q.radiansToDegrees = (u) => u * (180 / Math.PI)),
-                    (q.metPerSecondToKmPerHour = (u) => 3.6 * u),
-                    (q.radiansPerSecondToDegreesPerSecond = (u) => u * (180 / Math.PI)),
-                    (q.probabilityToPercent = (u) => 100 * u),
-                    (q.default = (u) => u);
-                class z {}
-                (z.percent = (u, e, t) => {
-                    const r = z.default(u, e, t);
+                (q.percent = (u, e, t) => {
+                    const r = q.default(u, e, t);
                     return S(b(R.strings.modifier_formatter.modifier.format.percentage(), { value: r }));
                 }),
-                    (z.multiplier = (u, e, t) => {
-                        const r = z.default(u, e, t);
+                    (q.multiplier = (u, e, t) => {
+                        const r = q.default(u, e, t);
                         return S(b(R.strings.modifier_formatter.modifier.format.multiplier(), { value: r }));
                     }),
-                    (z.hitpoints = (u, e, t) => {
-                        const r = z.default(u, e, t);
+                    (q.hitpoints = (u, e, t) => {
+                        const r = q.default(u, e, t);
                         return S(b(R.strings.modifier_formatter.modifier.format.hitpoints(), { value: r }));
                     }),
-                    (z.seconds = (u, e, t) => {
-                        const r = z.default(u, e, t);
+                    (q.seconds = (u, e, t) => {
+                        const r = q.default(u, e, t);
                         return S(b(R.strings.modifier_formatter.modifier.format.seconds(), { value: r }));
                     }),
-                    (z.minutes = (u, e, t) => {
-                        const r = z.default(u, e, t);
+                    (q.minutes = (u, e, t) => {
+                        const r = q.default(u, e, t);
                         return S(b(R.strings.modifier_formatter.modifier.format.minutes(), { value: r }));
                     }),
-                    (z.deviation = (u, e, t) => {
-                        const r = z.default(u, e, t);
+                    (q.deviation = (u, e, t) => {
+                        const r = q.default(u, e, t);
                         return S(b(R.strings.modifier_formatter.modifier.format.deviation(), { value: r }));
                     }),
-                    (z.millimeters = (u, e, t) => {
-                        const r = z.default(u, e, t);
+                    (q.millimeters = (u, e, t) => {
+                        const r = q.default(u, e, t);
                         return S(b(R.strings.modifier_formatter.modifier.format.millimeters(), { value: r }));
                     }),
-                    (z.degree = (u, e, t) => {
-                        const r = z.default(u, e, t);
+                    (q.degree = (u, e, t) => {
+                        const r = q.default(u, e, t);
                         return S(b(R.strings.modifier_formatter.modifier.format.degrees(), { value: r }));
                     }),
-                    (z.meters = (u, e, t) => {
-                        const r = z.default(u, e, t);
+                    (q.meters = (u, e, t) => {
+                        const r = q.default(u, e, t);
                         return S(b(R.strings.modifier_formatter.modifier.format.meters(), { value: r }));
                     }),
-                    (z.kmPerHour = (u, e, t) => {
-                        const r = z.default(u, e, t);
+                    (q.kmPerHour = (u, e, t) => {
+                        const r = q.default(u, e, t);
                         return S(b(R.strings.modifier_formatter.modifier.format.km_per_hour(), { value: r }));
                     }),
-                    (z.metersPerSecond = (u, e, t) => {
-                        const r = z.default(u, e, t);
+                    (q.metersPerSecond = (u, e, t) => {
+                        const r = q.default(u, e, t);
                         return S(b(R.strings.modifier_formatter.modifier.format.meters_per_second(), { value: r }));
                     }),
-                    (z.degreesPerSecond = (u, e, t) => {
-                        const r = z.default(u, e, t);
+                    (q.degreesPerSecond = (u, e, t) => {
+                        const r = q.default(u, e, t);
                         return S(b(R.strings.modifier_formatter.modifier.format.degrees_per_second(), { value: r }));
                     }),
-                    (z.meterPerSecondSquared = (u, e, t) => {
-                        const r = z.default(u, e, t);
+                    (q.meterPerSecondSquared = (u, e, t) => {
+                        const r = q.default(u, e, t);
                         return S(
                             b(R.strings.modifier_formatter.modifier.format.meter_per_second_squared(), { value: r }),
                         );
                     }),
-                    (z.horsepower = (u, e, t) => {
-                        const r = z.default(u, e, t);
+                    (q.horsepower = (u, e, t) => {
+                        const r = q.default(u, e, t);
                         return S(b(R.strings.modifier_formatter.modifier.format.horsepower(), { value: r }));
                     }),
-                    (z.logic = (u) =>
+                    (q.logic = (u) =>
                         u
                             ? R.strings.modifier_formatter.modifier.format.logic.on()
                             : S(R.strings.modifier_formatter.modifier.format.logic.off())),
-                    (z.time = (u, e, t) => {
+                    (q.time = (u, e, t) => {
                         const r = u >= 0 ? t : '-',
                             i = ((u, e = !0) =>
                                 u.days > 7 && e
@@ -1291,7 +1306,7 @@
                             );
                         return S(`${r}${i}`);
                     }),
-                    (z.default = (u, e, t) => {
+                    (q.default = (u, e, t) => {
                         const r = u >= 0 ? t : '',
                             i = ((u, e) => {
                                 const t = Math.pow(10, e);
@@ -1299,135 +1314,135 @@
                             })(u, e);
                         return `${r}${y.Z5.getRealFormat(i, y.Gr.WO_ZERO_DIGITS)}`;
                     });
-                const $ = {
+                const z = {
                     generalOverrides: [
                         {
-                            condition: K.useType.oneOf(U.MUL),
-                            valueConverter: q.multiplierToPercent,
+                            condition: j.useType.oneOf(U.MUL),
+                            valueConverter: $.multiplierToPercent,
                             numberOfDecimals: 0,
-                            formatter: z.percent,
+                            formatter: q.percent,
                         },
                         {
-                            condition: j(K.useType.oneOf(U.MUL), K.value.isPositiveInteger),
-                            valueConverter: q.default,
+                            condition: K(j.useType.oneOf(U.MUL), j.value.isPositiveInteger),
+                            valueConverter: $.default,
                             numberOfDecimals: 0,
                             prefixForPositiveValue: '',
-                            formatter: z.multiplier,
+                            formatter: q.multiplier,
                         },
-                        { condition: K.useType.oneOf(U.VAL), prefixForPositiveValue: '' },
+                        { condition: j.useType.oneOf(U.VAL), prefixForPositiveValue: '' },
                     ],
                     defaultPrefixForPositiveValue: '+',
                     physTypes: {
-                        [W.UNDEFINED]: { overrides: [], defaultNumberOfDecimals: 2, defaultFormatter: z.default },
+                        [W.UNDEFINED]: { overrides: [], defaultNumberOfDecimals: 2, defaultFormatter: q.default },
                         [W.RADIANS]: {
                             overrides: [
-                                { condition: K.useType.oneOf(U.ADD, U.VAL), valueConverter: q.radiansToDegrees },
+                                { condition: j.useType.oneOf(U.ADD, U.VAL), valueConverter: $.radiansToDegrees },
                             ],
                             defaultNumberOfDecimals: 0,
-                            defaultFormatter: z.degree,
+                            defaultFormatter: q.degree,
                         },
-                        [W.DEGREES]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.degree },
-                        [W.HIT_POINTS]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.hitpoints },
+                        [W.DEGREES]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.degree },
+                        [W.HIT_POINTS]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.hitpoints },
                         [W.METERS_PER_SECOND]: {
                             overrides: [
                                 {
-                                    condition: j(
-                                        K.modificationType.oneOf(V.FW_MAX_SPEED, V.BK_MAX_SPEED),
-                                        K.useType.oneOf(U.VAL, U.ADD),
+                                    condition: K(
+                                        j.modificationType.oneOf(V.FW_MAX_SPEED, V.BK_MAX_SPEED),
+                                        j.useType.oneOf(U.VAL, U.ADD),
                                     ),
-                                    valueConverter: q.metPerSecondToKmPerHour,
-                                    formatter: z.kmPerHour,
+                                    valueConverter: $.metPerSecondToKmPerHour,
+                                    formatter: q.kmPerHour,
                                 },
                             ],
                             defaultNumberOfDecimals: 0,
-                            defaultFormatter: z.metersPerSecond,
+                            defaultFormatter: q.metersPerSecond,
                         },
                         [W.KILOMETERS_PER_HOUR]: {
                             overrides: [],
                             defaultNumberOfDecimals: 0,
-                            defaultFormatter: z.kmPerHour,
+                            defaultFormatter: q.kmPerHour,
                         },
-                        [W.MILLIMETERS]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.millimeters },
+                        [W.MILLIMETERS]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.millimeters },
                         [W.SECONDS]: {
                             overrides: [
                                 {
-                                    condition: j(
-                                        K.modificationType.oneOf(V.BATTLE_LENGTH),
-                                        K.useType.oneOf(U.VAL, U.ADD),
+                                    condition: K(
+                                        j.modificationType.oneOf(V.BATTLE_LENGTH),
+                                        j.useType.oneOf(U.VAL, U.ADD),
                                     ),
-                                    formatter: z.time,
+                                    formatter: q.time,
                                 },
                             ],
                             defaultNumberOfDecimals: 2,
-                            defaultFormatter: z.seconds,
+                            defaultFormatter: q.seconds,
                         },
-                        [W.MINUTES]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.minutes },
+                        [W.MINUTES]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.minutes },
                         [W.METERS]: {
                             overrides: [
                                 {
-                                    condition: j(
-                                        K.modificationType.oneOf(V.VISION_MIN_RADIUS),
-                                        K.useType.oneOf(U.VAL, U.ADD),
+                                    condition: K(
+                                        j.modificationType.oneOf(V.VISION_MIN_RADIUS),
+                                        j.useType.oneOf(U.VAL, U.ADD),
                                     ),
                                     numberOfDecimals: 0,
                                 },
                             ],
                             defaultNumberOfDecimals: 2,
-                            defaultFormatter: z.meters,
+                            defaultFormatter: q.meters,
                         },
                         [W.RADIANS_PER_SECOND]: {
                             overrides: [
                                 {
-                                    condition: K.useType.oneOf(U.VAL, U.ADD),
-                                    valueConverter: q.radiansPerSecondToDegreesPerSecond,
-                                    formatter: z.degreesPerSecond,
+                                    condition: j.useType.oneOf(U.VAL, U.ADD),
+                                    valueConverter: $.radiansPerSecondToDegreesPerSecond,
+                                    formatter: q.degreesPerSecond,
                                 },
                             ],
                             defaultNumberOfDecimals: 0,
-                            defaultFormatter: z.degreesPerSecond,
+                            defaultFormatter: q.degreesPerSecond,
                         },
                         [W.DEGREES_PER_SECOND]: {
                             overrides: [],
                             defaultNumberOfDecimals: 0,
-                            defaultFormatter: z.degreesPerSecond,
+                            defaultFormatter: q.degreesPerSecond,
                         },
                         [W.METER_PER_SECOND_SQUARED]: {
                             overrides: [],
                             defaultNumberOfDecimals: 2,
-                            defaultFormatter: z.meterPerSecondSquared,
+                            defaultFormatter: q.meterPerSecondSquared,
                         },
                         [W.PROBABILITY]: {
                             overrides: [
                                 {
-                                    condition: K.useType.oneOf(U.VAL, U.ADD),
-                                    valueConverter: q.probabilityToPercent,
-                                    formatter: z.percent,
+                                    condition: j.useType.oneOf(U.VAL, U.ADD),
+                                    valueConverter: $.probabilityToPercent,
+                                    formatter: q.percent,
                                 },
                             ],
                             defaultNumberOfDecimals: 0,
-                            defaultFormatter: z.percent,
+                            defaultFormatter: q.percent,
                         },
                         [W.DEVIATION]: {
                             overrides: [
                                 {
-                                    condition: K.useType.oneOf(U.VAL),
-                                    valueConverter: q.probabilityToPercent,
+                                    condition: j.useType.oneOf(U.VAL),
+                                    valueConverter: $.probabilityToPercent,
                                     numberOfDecimals: 0,
                                     prefixForPositiveValue: '',
-                                    formatter: z.deviation,
+                                    formatter: q.deviation,
                                 },
                                 {
-                                    condition: K.useType.oneOf(U.ADD),
-                                    valueConverter: q.probabilityToPercent,
+                                    condition: j.useType.oneOf(U.ADD),
+                                    valueConverter: $.probabilityToPercent,
                                     numberOfDecimals: 0,
-                                    formatter: z.percent,
+                                    formatter: q.percent,
                                 },
                             ],
                             defaultNumberOfDecimals: 2,
-                            defaultFormatter: z.default,
+                            defaultFormatter: q.default,
                         },
-                        [W.HORSEPOWER]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.horsepower },
-                        [W.LOGIC]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: z.logic },
+                        [W.HORSEPOWER]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.horsepower },
+                        [W.LOGIC]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.logic },
                     },
                 };
                 function Y(u, e) {
@@ -1473,19 +1488,19 @@
                             return this.formatModifier(t);
                         }),
                             (this.formatModifier = (u) => {
-                                let e = $.physTypes[u.physicalType];
+                                let e = z.physTypes[u.physicalType];
                                 if (
                                     (void 0 === e &&
                                         (console.warn('Not found formatter for physicalType', u.physicalType),
-                                        (e = $.physTypes[W.UNDEFINED])),
+                                        (e = z.physTypes[W.UNDEFINED])),
                                     void 0 === e)
                                 )
                                     throw Error(`Not found formatter for physicalType=${u.physicalType.toString()}`);
                                 let t = e.defaultFormatter,
-                                    r = q.default,
+                                    r = $.default,
                                     i = e.defaultNumberOfDecimals,
-                                    a = $.defaultPrefixForPositiveValue;
-                                for (var n = 0, o = [$.generalOverrides, e.overrides]; n < o.length; n++)
+                                    a = z.defaultPrefixForPositiveValue;
+                                for (var n = 0, o = [z.generalOverrides, e.overrides]; n < o.length; n++)
                                     for (var s, E = Y(o[n]); !(s = E()).done; ) {
                                         const e = s.value;
                                         var A, F;

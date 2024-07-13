@@ -80,18 +80,21 @@
                 t.r(u),
                     t.d(u, {
                         events: () => a,
-                        getMouseGlobalPosition: () => n,
-                        getSize: () => i,
-                        graphicsQuality: () => r,
+                        getMouseGlobalPosition: () => r,
+                        getSize: () => n,
+                        graphicsQuality: () => s,
+                        playSound: () => i.G,
+                        setRTPC: () => i.E,
                     });
-                var a = t(527);
-                function i(e = 'px') {
+                var a = t(527),
+                    i = t(2493);
+                function n(e = 'px') {
                     return 'rem' === e ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function n(e = 'px') {
+                function r(e = 'px') {
                     return 'rem' === e ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const r = {
+                const s = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -102,6 +105,19 @@
                     viewEnv.setTrackMouseOnStage(e);
                 }
                 t.d(u, { R: () => a });
+            },
+            2493: (e, u, t) => {
+                function a(e) {
+                    engine.call('PlaySound', e).catch((u) => {
+                        console.error(`playSound('${e}'): `, u);
+                    });
+                }
+                function i(e, u) {
+                    engine.call('SetRTPCGlobal', e, u).catch((t) => {
+                        console.error(`setRTPC('${e}', '${u}'): `, t);
+                    });
+                }
+                t.d(u, { E: () => i, G: () => a });
             },
             2472: (e, u, t) => {
                 function a(e) {
@@ -115,9 +131,17 @@
                 t.d(u, { E: () => a });
             },
             3138: (e, u, t) => {
-                t.d(u, { O: () => i });
+                t.d(u, { O: () => n });
+                var a = t(5959),
+                    i = t(514);
+                const n = { view: t(7641), client: a, sound: i.ZP };
+            },
+            514: (e, u, t) => {
+                t.d(u, { ZP: () => r });
                 var a = t(5959);
-                const i = { view: t(7641), client: a };
+                const i = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    n = Object.keys(i).reduce((e, u) => ((e[u] = () => (0, a.playSound)(i[u])), e), {}),
+                    r = { play: Object.assign({}, n, { sound: a.playSound }), setRTPC: a.setRTPC };
             },
             3722: (e, u, t) => {
                 function a(e, u, t = 1) {
@@ -161,11 +185,11 @@
                         displayStatus: () => i.W,
                         displayStatusIs: () => f,
                         events: () => n.U,
-                        extraSize: () => w,
-                        forceTriggerMouseMove: () => v,
+                        extraSize: () => y,
+                        forceTriggerMouseMove: () => h,
                         freezeTextureBeforeResize: () => m,
                         getBrowserTexturePath: () => l,
-                        getDisplayStatus: () => h,
+                        getDisplayStatus: () => v,
                         getScale: () => d,
                         getSize: () => A,
                         getViewGlobalPosition: () => D,
@@ -179,7 +203,7 @@
                         setEventHandled: () => g,
                         setInputPaddingsRem: () => o,
                         setSidePaddingsRem: () => E,
-                        whenTutorialReady: () => y,
+                        whenTutorialReady: () => w,
                     });
                 var a = t(3722),
                     i = t(6112),
@@ -234,17 +258,17 @@
                 function b() {
                     return viewEnv.isEventHandled();
                 }
-                function v() {
+                function h() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function h() {
+                function v() {
                     return viewEnv.getShowingStatus();
                 }
                 const f = Object.keys(i.W).reduce(
                         (e, u) => ((e[u] = () => viewEnv.getShowingStatus() === i.W[u]), e),
                         {},
                     ),
-                    w = {
+                    y = {
                         set: (e, u) => {
                             viewEnv.setExtraSizeRem(e, u);
                         },
@@ -252,7 +276,7 @@
                             viewEnv.getExtraSizeRem(e, u);
                         },
                     },
-                    y = Promise.all([
+                    w = Promise.all([
                         new Promise((e) => {
                             window.isDomBuilt ? e() : n.U.onDomBuilt(e);
                         }),
@@ -602,8 +626,8 @@
                         e.keyCode === F.n.ESCAPE && u();
                     };
                 var b = t(7572);
-                const v = i.instance,
-                    h = {
+                const h = i.instance,
+                    v = {
                         DataTracker: n.Z,
                         ViewModel: b.Z,
                         ViewEventType: s,
@@ -681,11 +705,11 @@
                                 }
                             return t;
                         },
-                        ClickOutsideManager: v,
+                        ClickOutsideManager: h,
                         SystemLocale: r.Z5,
                         UserLocale: r.cy,
                     };
-                window.ViewEnvHelper = h;
+                window.ViewEnvHelper = v;
             },
             8613: (e, u, t) => {
                 t.d(u, { Ew: () => n, Z5: () => a, cy: () => i });
@@ -829,14 +853,14 @@
                     },
                     g = (e, u, t) => (t < e ? e : t > u ? u : t);
                 var b = t(3138);
-                const v = [];
-                function h(e) {
+                const h = [];
+                function v(e) {
                     const u = (0, n.useRef)(e);
                     return (
                         (0, n.useLayoutEffect)(() => {
                             u.current = e;
                         }),
-                        (0, n.useCallback)((...e) => (0, u.current)(...e), v)
+                        (0, n.useCallback)((...e) => (0, u.current)(...e), h)
                     );
                 }
                 function f(e, u, t = []) {
@@ -851,10 +875,12 @@
                         i,
                     ];
                 }
-                function w(e) {
-                    engine.call('PlaySound', e);
+                function y(e) {
+                    engine.call('PlaySound', e).catch((u) => {
+                        console.error('[lib/sounds.js] playSound(', e, '): ', u);
+                    });
                 }
-                function y(e, u) {
+                function w(e, u) {
                     (null == u || u > e.length) && (u = e.length);
                     for (var t = 0, a = new Array(u); t < u; t++) a[t] = e[t];
                     return a;
@@ -908,7 +934,7 @@
                                                             Array.isArray(e) ||
                                                             (t = (function (e, u) {
                                                                 if (e) {
-                                                                    if ('string' == typeof e) return y(e, u);
+                                                                    if ('string' == typeof e) return w(e, u);
                                                                     var t = Object.prototype.toString
                                                                         .call(e)
                                                                         .slice(8, -1);
@@ -922,7 +948,7 @@
                                                                                 /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(
                                                                                     t,
                                                                                 )
-                                                                              ? y(e, u)
+                                                                              ? w(e, u)
                                                                               : void 0
                                                                     );
                                                                 }
@@ -1050,7 +1076,7 @@
                                     },
                                     [C, _, c.step],
                                 ),
-                                v = (0, n.useCallback)(
+                                h = (0, n.useCallback)(
                                     (e) => {
                                         0 !== e.deltaY && g(a(e)),
                                             E.current && F.trigger('mouseWheel', e, d.scrollPosition, u(E.current));
@@ -1081,7 +1107,7 @@
                                         }),
                                     [C, d.scrollPosition.goal],
                                 ),
-                                w = h(() => {
+                                y = v(() => {
                                     const e = E.current;
                                     if (!e) return;
                                     const u = s(e, d.scrollPosition.goal);
@@ -1108,17 +1134,17 @@
                                                 : (console.warn('getBounds: contentRef.current is null'), [0, 0]),
                                         stepTimeout: c.step.clampedArrowStepTimeout,
                                         clampPosition: s,
-                                        handleMouseWheel: v,
+                                        handleMouseWheel: h,
                                         applyScroll: C,
                                         applyStepTo: g,
                                         contentRef: E,
                                         wrapperRef: A,
                                         scrollPosition: B,
                                         animationScroll: d,
-                                        recalculateContent: w,
+                                        recalculateContent: y,
                                         events: { on: F.on, off: F.off },
                                     }),
-                                    [d.scrollPosition, C, g, F.off, F.on, w, v, B, c.step.clampedArrowStepTimeout],
+                                    [d.scrollPosition, C, g, F.off, F.on, y, h, B, c.step.clampedArrowStepTimeout],
                                 )
                             );
                         };
@@ -1192,7 +1218,7 @@
                                         }
                                     })(A);
                             },
-                            _ = h(() => {
+                            _ = v(() => {
                                 (() => {
                                     const u = E.current,
                                         t = l.current,
@@ -1263,17 +1289,17 @@
                                 };
                             }, [e, D.offset, D.pending, a, d]);
                         const C = f((u) => e.applyStepTo(u), A, [e]),
-                            v = C[0],
-                            y = C[1];
+                            h = C[0],
+                            w = C[1];
                         (0, n.useEffect)(
                             () => (
-                                document.addEventListener('mouseup', y, !0),
-                                () => document.removeEventListener('mouseup', y, !0)
+                                document.addEventListener('mouseup', w, !0),
+                                () => document.removeEventListener('mouseup', w, !0)
                             ),
-                            [y],
+                            [w],
                         );
                         const T = (e) => {
-                            e.target.classList.contains(O) || w('highlight');
+                            e.target.classList.contains(O) || y('highlight');
                         };
                         return r().createElement(
                             'div',
@@ -1281,9 +1307,9 @@
                             r().createElement('div', {
                                 className: c()('HorizontalBar_leftButton_5f', u.leftButton),
                                 onMouseDown: (e) => {
-                                    e.target.classList.contains(O) || 0 !== e.button || (w('play'), v(P.Next));
+                                    e.target.classList.contains(O) || 0 !== e.button || (y('play'), h(P.Next));
                                 },
-                                onMouseUp: y,
+                                onMouseUp: w,
                                 ref: s,
                                 onMouseEnter: T,
                             }),
@@ -1295,7 +1321,7 @@
                                         const a = E.current;
                                         a &&
                                             0 === u.button &&
-                                            (w('play'),
+                                            (y('play'),
                                             u.target === a
                                                 ? d({ pending: !0, offset: u.screenX - a.getBoundingClientRect().x })
                                                 : ((u) => {
@@ -1315,9 +1341,9 @@
                             r().createElement('div', {
                                 className: c()('HorizontalBar_rightButton_03', u.rightButton),
                                 onMouseDown: (e) => {
-                                    e.target.classList.contains(O) || 0 !== e.button || (w('play'), v(P.Prev));
+                                    e.target.classList.contains(O) || 0 !== e.button || (y('play'), h(P.Prev));
                                 },
-                                onMouseUp: y,
+                                onMouseUp: w,
                                 ref: o,
                                 onMouseEnter: T,
                             }),
@@ -1414,7 +1440,7 @@
                                 },
                                 [a],
                             ),
-                            B = h(() => {
+                            B = v(() => {
                                 const u = E.current,
                                     t = l.current,
                                     a = e.getWrapperSize(),
@@ -1428,7 +1454,7 @@
                                     r
                                 );
                             }),
-                            _ = h(() => {
+                            _ = v(() => {
                                 const u = l.current,
                                     t = E.current,
                                     a = e.getWrapperSize(),
@@ -1454,7 +1480,7 @@
                                         }
                                     })(A);
                             }),
-                            C = h(() => {
+                            C = v(() => {
                                 Z(e, () => {
                                     B(), _();
                                 });
@@ -1510,9 +1536,9 @@
                                     u(), t();
                                 };
                             }, [e, D.offset, D.pending, a, d]);
-                        const v = f((u) => e.applyStepTo(u), A, [e]),
-                            y = v[0],
-                            T = v[1];
+                        const h = f((u) => e.applyStepTo(u), A, [e]),
+                            w = h[0],
+                            T = h[1];
                         (0, n.useEffect)(
                             () => (
                                 document.addEventListener('mouseup', T, !0),
@@ -1521,7 +1547,7 @@
                             [T],
                         );
                         const S = (e) => {
-                            e.target.classList.contains(Y) || w('highlight');
+                            e.target.classList.contains(Y) || y('highlight');
                         };
                         return r().createElement(
                             'div',
@@ -1529,7 +1555,7 @@
                             r().createElement('div', {
                                 className: c()('VerticalBar_topButton_d7', u.topButton),
                                 onMouseDown: (e) => {
-                                    e.target.classList.contains(Y) || 0 !== e.button || (w('play'), y(P.Next));
+                                    e.target.classList.contains(Y) || 0 !== e.button || (y('play'), w(P.Next));
                                 },
                                 ref: s,
                                 onMouseEnter: S,
@@ -1543,7 +1569,7 @@
                                         var i;
                                         a &&
                                             0 === u.button &&
-                                            (w('play'),
+                                            (y('play'),
                                             u.target === a
                                                 ? d({ pending: !0, offset: u.screenY - a.getBoundingClientRect().y })
                                                 : ((i = u.screenY > a.getBoundingClientRect().y ? P.Prev : P.Next),
@@ -1564,7 +1590,7 @@
                             r().createElement('div', {
                                 className: c()('VerticalBar_bottomButton_06', u.bottomButton),
                                 onMouseDown: (e) => {
-                                    e.target.classList.contains(Y) || 0 !== e.button || (w('play'), y(P.Prev));
+                                    e.target.classList.contains(Y) || 0 !== e.button || (y('play'), w(P.Prev));
                                 },
                                 onMouseUp: T,
                                 ref: o,
@@ -1672,7 +1698,7 @@
                             (this._onMouseEnter = (e) => (u) => {
                                 e && e(u),
                                     this.setState({ hover: !0 }),
-                                    this.props.soundHover && w(this.props.soundHover);
+                                    this.props.soundHover && y(this.props.soundHover);
                             }),
                             (this._onMouseLeave = (e) => (u) => {
                                 e && e(u), this.setState({ hover: !1, click: !1 });
@@ -1680,7 +1706,7 @@
                             (this._onMouseDown = (e) => (u) => {
                                 e && e(u),
                                     this.setState({ click: !0 }),
-                                    this.props.soundClick && w(this.props.soundClick);
+                                    this.props.soundClick && y(this.props.soundClick);
                             }),
                             (this._onMouseUp = (e) => (u) => {
                                 e && e(u), this.setState({ click: !1 });
@@ -2059,145 +2085,145 @@
                     })),
                     ge = pe[0],
                     be = pe[1],
-                    ve = R.strings.battle_royale_infopage,
-                    he = {
-                        title: ve.mosaic.title(),
+                    he = R.strings.battle_royale_infopage,
+                    ve = {
+                        title: he.mosaic.title(),
                         mosaic: [
                             {
                                 imagePath: 'R.images.battle_royale.gui.maps.infopage.mosaic.general',
-                                title: ve.mosaic.info1.title(),
-                                subtitle: ve.mosaic.info1.subtitle(),
+                                title: he.mosaic.info1.title(),
+                                subtitle: he.mosaic.info1.subtitle(),
                             },
                             {
                                 imagePath: 'R.images.battle_royale.gui.maps.infopage.mosaic.economic',
-                                title: ve.mosaic.info2.title(),
-                                subtitle: ve.mosaic.info2.subtitle(),
+                                title: he.mosaic.info2.title(),
+                                subtitle: he.mosaic.info2.subtitle(),
                             },
                             {
                                 imagePath: 'R.images.battle_royale.gui.maps.infopage.mosaic.progression',
-                                title: ve.mosaic.info3.title(),
-                                subtitle: ve.mosaic.info3.subtitle(),
+                                title: he.mosaic.info3.title(),
+                                subtitle: he.mosaic.info3.subtitle(),
                             },
                             {
                                 imagePath: 'R.images.battle_royale.gui.maps.infopage.mosaic.respawn',
-                                title: ve.mosaic.info4.title(),
-                                subtitle: ve.mosaic.info4.subtitle(),
+                                title: he.mosaic.info4.title(),
+                                subtitle: he.mosaic.info4.subtitle(),
                             },
                         ],
                     },
                     fe = {
-                        title: ve.maps.title(),
-                        subtitle: ve.maps.subtitle(),
+                        title: he.maps.title(),
+                        subtitle: he.maps.subtitle(),
                         images: [
                             {
                                 imagePath: 'R.images.battle_royale.gui.maps.infopage.maps.arzagir',
-                                title: ve.maps.map1.title(),
+                                title: he.maps.map1.title(),
                             },
                             {
                                 imagePath: 'R.images.battle_royale.gui.maps.infopage.maps.zone',
-                                title: ve.maps.map2.title(),
+                                title: he.maps.map2.title(),
                             },
                             {
                                 imagePath: 'R.images.battle_royale.gui.maps.infopage.maps.firnulfir',
-                                title: ve.maps.map3.title(),
+                                title: he.maps.map3.title(),
                             },
                         ],
                     },
-                    we = {
-                        title: ve.generalDescription.title(),
-                        subtitle: ve.generalDescription.subtitle(),
-                        accent: ve.generalDescription.accent(),
-                    },
                     ye = {
-                        title: ve.towerBlock.title(),
-                        subtitle: ve.towerBlock.subtitle(),
+                        title: he.generalDescription.title(),
+                        subtitle: he.generalDescription.subtitle(),
+                        accent: he.generalDescription.accent(),
+                    },
+                    we = {
+                        title: he.towerBlock.title(),
+                        subtitle: he.towerBlock.subtitle(),
                         loots: [
                             {
                                 imagePath: 'R.images.battle_royale.gui.maps.infopage.tower.euipment',
-                                title: ve.towerBlock.ammunition.title(),
-                                subtitle: ve.towerBlock.ammunition.subtitle(),
+                                title: he.towerBlock.ammunition.title(),
+                                subtitle: he.towerBlock.ammunition.subtitle(),
                             },
                             {
                                 imagePath: 'R.images.battle_royale.gui.maps.infopage.tower.ammunition',
-                                title: ve.towerBlock.euipment.title(),
-                                subtitle: ve.towerBlock.euipment.subtitle(),
+                                title: he.towerBlock.euipment.title(),
+                                subtitle: he.towerBlock.euipment.subtitle(),
                             },
                             {
                                 imagePath: 'R.images.battle_royale.gui.maps.infopage.tower.cargo',
-                                title: ve.towerBlock.cargo.title(),
-                                subtitle: ve.towerBlock.cargo.subtitle(),
+                                title: he.towerBlock.cargo.title(),
+                                subtitle: he.towerBlock.cargo.subtitle(),
                             },
                             {
                                 imagePath: 'R.images.battle_royale.gui.maps.infopage.tower.trophies',
-                                title: ve.towerBlock.trophies.title(),
-                                subtitle: ve.towerBlock.trophies.subtitle(),
+                                title: he.towerBlock.trophies.title(),
+                                subtitle: he.towerBlock.trophies.subtitle(),
                             },
                         ],
                     },
                     Te = {
-                        title: ve.zones.title(),
-                        subtitle: ve.zones.subtitle(),
+                        title: he.zones.title(),
+                        subtitle: he.zones.subtitle(),
                         images: [
                             {
                                 imagePath: 'R.images.battle_royale.gui.maps.infopage.zones.yellowZone',
-                                title: ve.zones.zoneYellow.title(),
-                                subtitle: ve.zones.zoneYellow.subtitle(),
+                                title: he.zones.zoneYellow.title(),
+                                subtitle: he.zones.zoneYellow.subtitle(),
                             },
                             {
                                 imagePath: 'R.images.battle_royale.gui.maps.infopage.zones.redZone',
-                                title: ve.zones.zoneRed.title(),
-                                subtitle: ve.zones.zoneRed.subtitle(),
+                                title: he.zones.zoneRed.title(),
+                                subtitle: he.zones.zoneRed.subtitle(),
                             },
                         ],
                     },
                     Pe = {
-                        title: ve.sectorDetails.title(),
-                        textBlock: [{ text: ve.sectorDetails.subtitle() }],
+                        title: he.sectorDetails.title(),
+                        textBlock: [{ text: he.sectorDetails.subtitle() }],
                         imagePath: 'R.images.battle_royale.gui.maps.infopage.sector',
                     },
                     Se = {
-                        title: ve.radarDetails.title(),
-                        textBlock: [{ text: ve.radarDetails.text1() }, { text: ve.radarDetails.text2() }],
+                        title: he.radarDetails.title(),
+                        textBlock: [{ text: he.radarDetails.text1() }, { text: he.radarDetails.text2() }],
                         imagePath: 'R.images.battle_royale.gui.maps.infopage.radar',
                     },
                     ke = {
-                        title: ve.progressionDetails.title(),
+                        title: he.progressionDetails.title(),
                         textBlock: [
-                            { text: ve.progressionDetails.subtitle() },
-                            { subtitle: ve.progressionDetails.title2(), text: ve.progressionDetails.subtitle2() },
+                            { text: he.progressionDetails.subtitle() },
+                            { subtitle: he.progressionDetails.title2(), text: he.progressionDetails.subtitle2() },
                         ],
                         imagePath: 'R.images.battle_royale.gui.maps.infopage.progression',
                     },
-                    Ne = {
-                        title: ve.battleTasksDetails.title(),
-                        textBlock: [{ text: ve.battleTasksDetails.subtitle() }],
+                    Re = {
+                        title: he.battleTasksDetails.title(),
+                        textBlock: [{ text: he.battleTasksDetails.subtitle() }],
                         imagePath: 'R.images.battle_royale.gui.maps.infopage.battleTasks',
                     },
-                    Re = {
-                        title: ve.shopDetails.title(),
-                        textBlock: [{ text: ve.shopDetails.text1() }, { text: ve.shopDetails.text2() }],
+                    Ne = {
+                        title: he.shopDetails.title(),
+                        textBlock: [{ text: he.shopDetails.text1() }, { text: he.shopDetails.text2() }],
                         imagePath: 'R.images.battle_royale.gui.maps.infopage.shop',
                     },
-                    xe = { title: ve.articleBP.title(), subtitle: ve.articleBP.subtitle() },
+                    xe = { title: he.articleBP.title(), subtitle: he.articleBP.subtitle() },
                     Oe = {
-                        title: ve.pointsBPDetailsSettings.title(),
-                        textBlock: [{ text: ve.pointsBPDetailsSettings.subtitle() }],
+                        title: he.pointsBPDetailsSettings.title(),
+                        textBlock: [{ text: he.pointsBPDetailsSettings.subtitle() }],
                         imagePath: 'R.images.battle_royale.gui.maps.infopage.pointsBP',
                     },
                     Me = {
-                        title: ve.respawn.title(),
+                        title: he.respawn.title(),
                         textBlock: [
-                            { text: ve.respawn.text() },
-                            { subtitle: ve.respawn.block1.title(), text: ve.respawn.block1.subtitle() },
-                            { subtitle: ve.respawn.block2.title(), text: ve.respawn.block2.subtitle() },
+                            { text: he.respawn.text() },
+                            { subtitle: he.respawn.block1.title(), text: he.respawn.block1.subtitle() },
+                            { subtitle: he.respawn.block2.title(), text: he.respawn.block2.subtitle() },
                         ],
                         imagePath: 'R.images.battle_royale.gui.maps.infopage.respawn',
                     },
-                    Le = { title: ve.tableBPDetailsSettings.title(), subtitle: ve.tableBPDetailsSettings.subtitle() },
-                    Ie = { title: ve.pointsSHDetailsSettings.title(), subtitle: ve.pointsSHDetailsSettings.subtitle() },
+                    Le = { title: he.tableBPDetailsSettings.title(), subtitle: he.tableBPDetailsSettings.subtitle() },
+                    Ie = { title: he.pointsSHDetailsSettings.title(), subtitle: he.pointsSHDetailsSettings.subtitle() },
                     Ue = {
-                        title: ve.marauders.title(),
-                        textBlock: [{ text: ve.marauders.text() }],
+                        title: he.marauders.title(),
+                        textBlock: [{ text: he.marauders.text() }],
                         imagePath: 'R.images.battle_royale.gui.maps.infopage.marauders',
                     },
                     We = {
@@ -2433,9 +2459,9 @@
                                 'div',
                                 {
                                     onClick: () => {
-                                        w('play'), n();
+                                        y('play'), n();
                                     },
-                                    onMouseEnter: () => w('highlight'),
+                                    onMouseEnter: () => y('highlight'),
                                     className: 'Header_container_bf',
                                 },
                                 r().createElement('div', { className: 'Header_preview_7c' }),
@@ -2756,7 +2782,7 @@
                         return void 0 !== this.props.value && void 0 !== u ? u : null;
                     }
                 }
-                let bu, vu, hu, fu, wu, yu, Tu;
+                let bu, hu, vu, fu, yu, wu, Tu;
                 var Pu, Su, ku;
                 (gu.defaultProps = { format: 'integral' }),
                     cu.Items,
@@ -2807,14 +2833,14 @@
                     (ku.NotStarted = 'notStarted'),
                     (function (e) {
                         (e.Vehicle = 'vehicle'), (e.Style = 'style'), (e.Tankman = 'tankman');
-                    })(vu || (vu = {})),
+                    })(hu || (hu = {})),
                     (function (e) {
                         (e.Micro = 'micro'), (e.Small = 'small'), (e.Medium = 'medium');
-                    })(hu || (hu = {})),
+                    })(vu || (vu = {})),
                     (function (e) {
                         (e.ACTIVE = 'active'), (e.COMPLETED = 'completed'), (e.NOT_CHOSEN = 'notChosen');
                     })(fu || (fu = {})),
-                    ((Su = wu || (wu = {})).AwaitSeason = 'awaitSeason'),
+                    ((Su = yu || (yu = {})).AwaitSeason = 'awaitSeason'),
                     (Su.Bought = 'bought'),
                     (Su.Free = 'free'),
                     (Su.Completed = 'completed'),
@@ -2827,13 +2853,13 @@
                             (e.ShowLevel = 'show'),
                             (e.HideLevel = 'hide'),
                             (e.HideLevelWithDelay = 'hideWithDelay');
-                    })(yu || (yu = {})),
+                    })(wu || (wu = {})),
                     ((Pu = Tu || (Tu = {})).style = 'style'),
                     (Pu.tankman = 'tankman'),
                     Tu.style,
                     Tu.tankman;
-                const Nu = R.strings.battle_royale_vehicles,
-                    Ru = 'light',
+                const Ru = R.strings.battle_royale_vehicles,
+                    Nu = 'light',
                     xu = 'medium',
                     Ou = 'heavy',
                     Mu = 'ussr',
@@ -2847,61 +2873,61 @@
                     Hu = [
                         {
                             imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.repairKit',
-                            title: Nu.abilities.repairKit(),
-                            description: Nu.abilities.repairKitDescription(),
+                            title: Ru.abilities.repairKit(),
+                            description: Ru.abilities.repairKitDescription(),
                         },
                         {
                             imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.recoveryKit',
-                            title: Nu.abilities.recoveryKit(),
-                            description: Nu.abilities.recoveryKitDescription(),
+                            title: Ru.abilities.recoveryKit(),
+                            description: Ru.abilities.recoveryKitDescription(),
                         },
                     ],
                     qu = {
                         [Mu]: {
-                            name: Nu.tanks.ussr.title(),
-                            description: Nu.tanks.ussr.description(),
+                            name: Ru.tanks.ussr.title(),
+                            description: Ru.tanks.ussr.description(),
                             tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.ussr',
                             imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.ussr',
                             abilities: [
                                 ...Hu,
                                 {
                                     imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.minefield',
-                                    title: Nu.abilities.minefield(),
-                                    description: Nu.abilities.minefieldDescription(),
+                                    title: Ru.abilities.minefield(),
+                                    description: Ru.abilities.minefieldDescription(),
                                 },
                                 {
                                     imagePath:
                                         'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.recoveryZone',
-                                    title: Nu.abilities.recoveryZone(),
-                                    description: Nu.abilities.recoveryZoneDescription(),
+                                    title: Ru.abilities.recoveryZone(),
+                                    description: Ru.abilities.recoveryZoneDescription(),
                                 },
                             ],
                             vehicleType: Ou,
                         },
                         [Lu]: {
-                            name: Nu.tanks.germany.title(),
-                            description: Nu.tanks.germany.description(),
+                            name: Ru.tanks.germany.title(),
+                            description: Ru.tanks.germany.description(),
                             tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.germany',
                             imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.germany',
                             abilities: [
                                 ...Hu,
                                 {
                                     imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.nitro',
-                                    title: Nu.abilities.nitro(),
-                                    description: Nu.abilities.nitroDescription(),
+                                    title: Ru.abilities.nitro(),
+                                    description: Ru.abilities.nitroDescription(),
                                 },
                                 {
                                     imagePath:
                                         'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.recoveryDot',
-                                    title: Nu.abilities.recoveryDot(),
-                                    description: Nu.abilities.recoveryDotDescription(),
+                                    title: Ru.abilities.recoveryDot(),
+                                    description: Ru.abilities.recoveryDotDescription(),
                                 },
                             ],
                             vehicleType: Ou,
                         },
                         usa: {
-                            name: Nu.tanks.usa.title(),
-                            description: Nu.tanks.usa.description(),
+                            name: Ru.tanks.usa.title(),
+                            description: Ru.tanks.usa.description(),
                             tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.usa',
                             imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.usa',
                             abilities: [
@@ -2909,61 +2935,61 @@
                                 {
                                     imagePath:
                                         'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.extremeConcentration',
-                                    title: Nu.abilities.extremeConcentration(),
-                                    description: Nu.abilities.extremeConcentrationDescription(),
+                                    title: Ru.abilities.extremeConcentration(),
+                                    description: Ru.abilities.extremeConcentrationDescription(),
                                 },
                                 {
                                     imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.trap',
-                                    title: Nu.abilities.trap(),
-                                    description: Nu.abilities.trapDescription(),
+                                    title: Ru.abilities.trap(),
+                                    description: Ru.abilities.trapDescription(),
                                 },
                             ],
                             vehicleType: xu,
                         },
                         [Iu]: {
-                            name: Nu.tanks.britain.title(),
-                            description: Nu.tanks.britain.description(),
+                            name: Ru.tanks.britain.title(),
+                            description: Ru.tanks.britain.description(),
                             tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.britain',
                             imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.britain',
                             abilities: [
                                 ...Hu,
                                 {
                                     imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.rustCloud',
-                                    title: Nu.abilities.rustCloud(),
-                                    description: Nu.abilities.rustCloudDescription(),
+                                    title: Ru.abilities.rustCloud(),
+                                    description: Ru.abilities.rustCloudDescription(),
                                 },
                                 {
                                     imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.berserk',
-                                    title: Nu.abilities.berserk(),
-                                    description: Nu.abilities.berserkDescription(),
+                                    title: Ru.abilities.berserk(),
+                                    description: Ru.abilities.berserkDescription(),
                                 },
                             ],
                             vehicleType: xu,
                         },
                         [Uu]: {
-                            name: Nu.tanks.france.title(),
-                            description: Nu.tanks.france.description(),
+                            name: Ru.tanks.france.title(),
+                            description: Ru.tanks.france.description(),
                             tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.france',
                             imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.france',
                             abilities: [
                                 ...Hu,
                                 {
                                     imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.airstrike',
-                                    title: Nu.abilities.airstrike(),
-                                    description: Nu.abilities.airstrikeDescription(),
+                                    title: Ru.abilities.airstrike(),
+                                    description: Ru.abilities.airstrikeDescription(),
                                 },
                                 {
                                     imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.brander',
-                                    title: Nu.abilities.brander(),
-                                    description: Nu.abilities.branderDescription(),
+                                    title: Ru.abilities.brander(),
+                                    description: Ru.abilities.branderDescription(),
                                 },
                             ],
-                            vehicleType: Ru,
+                            vehicleType: Nu,
                             hasCN360Image: !0,
                         },
                         [Wu]: {
-                            name: Nu.tanks.china.title(),
-                            description: Nu.tanks.china.description(),
+                            name: Ru.tanks.china.title(),
+                            description: Ru.tanks.china.description(),
                             tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.china',
                             imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.china',
                             abilities: [
@@ -2971,21 +2997,21 @@
                                 {
                                     imagePath:
                                         'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.corrodingShot',
-                                    title: Nu.abilities.corrodingShot(),
-                                    description: Nu.abilities.corrodingShotDescription(),
+                                    title: Ru.abilities.corrodingShot(),
+                                    description: Ru.abilities.corrodingShotDescription(),
                                 },
                                 {
                                     imagePath:
                                         'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.clingBrander',
-                                    title: Nu.abilities.clingBrander(),
-                                    description: Nu.abilities.clingBranderDescription(),
+                                    title: Ru.abilities.clingBrander(),
+                                    description: Ru.abilities.clingBranderDescription(),
                                 },
                             ],
-                            vehicleType: Ru,
+                            vehicleType: Nu,
                         },
                         [zu]: {
-                            name: Nu.tanks.poland.title(),
-                            description: Nu.tanks.poland.description(),
+                            name: Ru.tanks.poland.title(),
+                            description: Ru.tanks.poland.description(),
                             tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.poland',
                             imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.poland',
                             abilities: [
@@ -2993,35 +3019,35 @@
                                 {
                                     imagePath:
                                         'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.thunderStrike',
-                                    title: Nu.abilities.thunderStrike(),
-                                    description: Nu.abilities.thunderStrikeDescription(),
+                                    title: Ru.abilities.thunderStrike(),
+                                    description: Ru.abilities.thunderStrikeDescription(),
                                 },
                                 {
                                     imagePath:
                                         'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.shotPassion',
-                                    title: Nu.abilities.shotPassion(),
-                                    description: Nu.abilities.shotPassionDescription(),
+                                    title: Ru.abilities.shotPassion(),
+                                    description: Ru.abilities.shotPassionDescription(),
                                 },
                             ],
                             vehicleType: xu,
                         },
                         [Gu]: {
-                            name: Nu.tanks.sweden.title(),
-                            description: Nu.tanks.sweden.description(),
+                            name: Ru.tanks.sweden.title(),
+                            description: Ru.tanks.sweden.description(),
                             tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.sweden',
                             imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.sweden',
                             abilities: [
                                 ...Hu,
                                 {
                                     imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.fireCircle',
-                                    title: Nu.abilities.fireCircle(),
-                                    description: Nu.abilities.fireCircleDescription(),
+                                    title: Ru.abilities.fireCircle(),
+                                    description: Ru.abilities.fireCircleDescription(),
                                 },
                                 {
                                     imagePath:
                                         'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.adaptationHealthRestore',
-                                    title: Nu.abilities.adaptationHealthRestore(),
-                                    description: Nu.abilities.adaptationHealthRestoreDescription(),
+                                    title: Ru.abilities.adaptationHealthRestore(),
+                                    description: Ru.abilities.adaptationHealthRestoreDescription(),
                                 },
                             ],
                             vehicleType: Ou,
@@ -3079,7 +3105,7 @@
                                             {
                                                 className: c()(Yu.tab, u === a && Yu.tab__active),
                                                 key: a,
-                                                onClick: () => (t(a), void w('yes1')),
+                                                onClick: () => (t(a), void y('yes1')),
                                             },
                                             r().createElement('img', {
                                                 className: Yu.tabImage,
@@ -3177,8 +3203,8 @@
                                     r().createElement(
                                         'div',
                                         { className: We.container },
-                                        r().createElement(eu, { title: ve.title(), subtitle: ve.subtitle() }),
-                                        r().createElement(uu, { description: he }),
+                                        r().createElement(eu, { title: he.title(), subtitle: he.subtitle() }),
+                                        r().createElement(uu, { description: ve }),
                                         r().createElement('div', { className: We.divider }),
                                         r().createElement(je, {
                                             description: fe,
@@ -3187,7 +3213,7 @@
                                         }),
                                         r().createElement('div', { className: We.divider }),
                                         r().createElement(je, {
-                                            description: we,
+                                            description: ye,
                                             classNames: { alignCenter: We.alignCenter },
                                         }),
                                         r().createElement(Zu, null),
@@ -3197,7 +3223,7 @@
                                             classNames: { titleStyling: We.respawnTitle, image: We.respawn },
                                         }),
                                         r().createElement('div', { className: We.divider }),
-                                        r().createElement(lu, { description: ye }),
+                                        r().createElement(lu, { description: we }),
                                         r().createElement(Xe, {
                                             description: Ue,
                                             className: We.maraudersContainer,
@@ -3224,7 +3250,7 @@
                                                     classNames: { image: We.progression },
                                                 }),
                                                 r().createElement(Xe, {
-                                                    description: Ne,
+                                                    description: Re,
                                                     smallImage: !0,
                                                     classNames: { titleStyling: We.titleStyling, image: We.battleTask },
                                                     reverse: !0,
@@ -3236,7 +3262,7 @@
                                                 r().createElement(su, null),
                                             ),
                                         r().createElement('div', { className: We.divider }),
-                                        r().createElement(Xe, { description: Re, classNames: { image: We.shop } }),
+                                        r().createElement(Xe, { description: Ne, classNames: { image: We.shop } }),
                                         r().createElement('div', { className: We.divider }),
                                         u.bp.get().length > 0 &&
                                             r().createElement(
@@ -3263,7 +3289,7 @@
                                         r().createElement(
                                             'div',
                                             { className: We.footer },
-                                            r().createElement(C, { text: ve.footer() }),
+                                            r().createElement(C, { text: he.footer() }),
                                         ),
                                     ),
                                 ),

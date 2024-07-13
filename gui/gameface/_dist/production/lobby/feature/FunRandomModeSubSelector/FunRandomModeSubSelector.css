@@ -526,22 +526,6 @@
     right: -14rem;
 }
 
-.Rewards_base_26 {
-    display: flex;
-}
-
-.Rewards_base__vertical_9f {
-    flex-direction: column;
-}
-
-.Rewards_reward_7b {
-    margin: 0 10rem;
-}
-
-.Rewards_reward__vertical_c6 {
-    margin: 15rem 0;
-}
-
 .FormatText_base_d0 {
     display: flex;
     flex-wrap: wrap;
@@ -1060,16 +1044,16 @@
     pointer-events: none;
     height: 100%;
     border-radius: 3rem;
-    background: url('R.images.gui.maps.icons.mode_selector.common.hover') no-repeat 50% / 100%;
+    background: url('R.images.gui.maps.icons.mode_selector.common.hover') no-repeat 50% / 100% 100%;
     opacity: 0;
     mix-blend-mode: screen;
     transition: opacity 0.3s easeOut;
+    transition-delay: 0.15s;
     pointer-events: none;
 }
 
 .CardWrapper_hover__anim_10 {
     opacity: 1;
-    transition-delay: 0.15s;
 }
 
 .CardWrapper_animBg_f3 {
@@ -1167,11 +1151,11 @@
     background: #000000 no-repeat 50%;
     transform: scale(1);
     transition: transform 0.3s easeOut;
+    transition-delay: 0.15s;
 }
 
 .CardWrapper_background__anim_34 {
     transform: scale(1.03);
-    transition-delay: 0.15s;
 }
 
 .CardWrapper_background__empty_bb {
@@ -1196,13 +1180,13 @@
     transition:
         transform 0.3s easeOut,
         opacity 0.3s easeOut;
+    transition-delay: 0.15s;
     pointer-events: none;
 }
 
 .CardWrapper_info__anim_81 {
     opacity: 1;
     transform: translateY(0rem);
-    transition-delay: 0.15s;
     cursor: pointer;
     pointer-events: auto;
 }
@@ -1237,12 +1221,12 @@
     right: 0;
     bottom: 0;
     transition: opacity 0.3s easeOut;
+    transition-delay: 0.15s;
     pointer-events: none;
 }
 
 .CardWrapper_infoCorner__anim_ba {
     opacity: 1;
-    transition-delay: 0.15s;
 }
 
 .CardWrapper_children_88 {

@@ -97,18 +97,21 @@
                 u.r(t),
                     u.d(t, {
                         events: () => i,
-                        getMouseGlobalPosition: () => a,
-                        getSize: () => r,
-                        graphicsQuality: () => o,
+                        getMouseGlobalPosition: () => o,
+                        getSize: () => a,
+                        graphicsQuality: () => n,
+                        playSound: () => r.G,
+                        setRTPC: () => r.E,
                     });
-                var i = u(527);
-                function r(e = 'px') {
+                var i = u(527),
+                    r = u(493);
+                function a(e = 'px') {
                     return 'rem' === e ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function a(e = 'px') {
+                function o(e = 'px') {
                     return 'rem' === e ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const o = {
+                const n = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -120,6 +123,20 @@
                     viewEnv.setTrackMouseOnStage(e);
                 }
                 u.d(t, { R: () => i });
+            },
+            493: (e, t, u) => {
+                'use strict';
+                function i(e) {
+                    engine.call('PlaySound', e).catch((t) => {
+                        console.error(`playSound('${e}'): `, t);
+                    });
+                }
+                function r(e, t) {
+                    engine.call('SetRTPCGlobal', e, t).catch((u) => {
+                        console.error(`setRTPC('${e}', '${t}'): `, u);
+                    });
+                }
+                u.d(t, { E: () => r, G: () => i });
             },
             472: (e, t, u) => {
                 'use strict';
@@ -135,9 +152,18 @@
             },
             138: (e, t, u) => {
                 'use strict';
-                u.d(t, { O: () => r });
+                u.d(t, { O: () => a });
+                var i = u(959),
+                    r = u(514);
+                const a = { view: u(641), client: i, sound: r.ZP };
+            },
+            514: (e, t, u) => {
+                'use strict';
+                u.d(t, { ZP: () => o });
                 var i = u(959);
-                const r = { view: u(641), client: i };
+                const r = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    a = Object.keys(r).reduce((e, t) => ((e[t] = () => (0, i.playSound)(r[t])), e), {}),
+                    o = { play: Object.assign({}, a, { sound: i.playSound }), setRTPC: i.setRTPC };
             },
             722: (e, t, u) => {
                 'use strict';
@@ -1094,10 +1120,12 @@
                         })(e, M);
                     return o().createElement(p, null, o().createElement(k, u, t));
                 };
-                var N = u(493),
+                var N = u(986),
                     I = u.n(N);
                 function H(e) {
-                    engine.call('PlaySound', e);
+                    engine.call('PlaySound', e).catch((t) => {
+                        console.error('[lib/sounds.js] playSound(', e, '): ', t);
+                    });
                 }
                 const W = {
                         base: 'TextButton_base_b6',

@@ -80,18 +80,21 @@
                 F.r(e),
                     F.d(e, {
                         events: () => A,
-                        getMouseGlobalPosition: () => t,
-                        getSize: () => E,
-                        graphicsQuality: () => n,
+                        getMouseGlobalPosition: () => n,
+                        getSize: () => t,
+                        graphicsQuality: () => D,
+                        playSound: () => E.G,
+                        setRTPC: () => E.E,
                     });
-                var A = F(527);
-                function E(u = 'px') {
+                var A = F(527),
+                    E = F(2493);
+                function t(u = 'px') {
                     return 'rem' === u ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function t(u = 'px') {
+                function n(u = 'px') {
                     return 'rem' === u ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const n = {
+                const D = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -102,6 +105,19 @@
                     viewEnv.setTrackMouseOnStage(u);
                 }
                 F.d(e, { R: () => A });
+            },
+            2493: (u, e, F) => {
+                function A(u) {
+                    engine.call('PlaySound', u).catch((e) => {
+                        console.error(`playSound('${u}'): `, e);
+                    });
+                }
+                function E(u, e) {
+                    engine.call('SetRTPCGlobal', u, e).catch((F) => {
+                        console.error(`setRTPC('${u}', '${e}'): `, F);
+                    });
+                }
+                F.d(e, { E: () => E, G: () => A });
             },
             2472: (u, e, F) => {
                 function A(u) {
@@ -115,9 +131,17 @@
                 F.d(e, { E: () => A });
             },
             3138: (u, e, F) => {
-                F.d(e, { O: () => E });
+                F.d(e, { O: () => t });
+                var A = F(5959),
+                    E = F(514);
+                const t = { view: F(7641), client: A, sound: E.ZP };
+            },
+            514: (u, e, F) => {
+                F.d(e, { ZP: () => n });
                 var A = F(5959);
-                const E = { view: F(7641), client: A };
+                const E = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    t = Object.keys(E).reduce((u, e) => ((u[e] = () => (0, A.playSound)(E[e])), u), {}),
+                    n = { play: Object.assign({}, t, { sound: A.playSound }), setRTPC: A.setRTPC };
             },
             3722: (u, e, F) => {
                 function A(u, e, F = 1) {
@@ -162,16 +186,16 @@
                         displayStatusIs: () => g,
                         events: () => t.U,
                         extraSize: () => f,
-                        forceTriggerMouseMove: () => p,
+                        forceTriggerMouseMove: () => b,
                         freezeTextureBeforeResize: () => _,
                         getBrowserTexturePath: () => i,
                         getDisplayStatus: () => m,
-                        getScale: () => d,
+                        getScale: () => c,
                         getSize: () => C,
                         getViewGlobalPosition: () => s,
-                        isEventHandled: () => b,
+                        isEventHandled: () => p,
                         isFocused: () => w,
-                        pxToRem: () => c,
+                        pxToRem: () => d,
                         remToPx: () => l,
                         resize: () => a,
                         sendEvent: () => n.qP,
@@ -213,10 +237,10 @@
                 function _() {
                     viewEnv.freezeTextureBeforeResize();
                 }
-                function d() {
+                function c() {
                     return viewEnv.getScale();
                 }
-                function c(u) {
+                function d(u) {
                     return viewEnv.pxToRem(u);
                 }
                 function l(u) {
@@ -231,10 +255,10 @@
                 function h() {
                     return viewEnv.setEventHandled();
                 }
-                function b() {
+                function p() {
                     return viewEnv.isEventHandled();
                 }
-                function p() {
+                function b() {
                     viewEnv.forceTriggerMouseMove();
                 }
                 function m() {
@@ -488,7 +512,7 @@
                 const __WEBPACK_DEFAULT_EXPORT__ = ViewModel;
             },
             9916: (u, e, F) => {
-                F.d(e, { ry: () => c });
+                F.d(e, { ry: () => d });
                 class A {
                     constructor() {
                         (this.entries = []),
@@ -557,8 +581,8 @@
                     }
                     D.done ? e(B) : Promise.resolve(B).then(A, E);
                 }
-                const d = (u) => ({ __Type: 'GFBoundingBox', x: u.x, y: u.y, width: u.width, height: u.height }),
-                    c = (function () {
+                const c = (u) => ({ __Type: 'GFBoundingBox', x: u.x, y: u.y, width: u.width, height: u.height }),
+                    d = (function () {
                         var u,
                             e =
                                 ((u = function* () {
@@ -630,8 +654,8 @@
                         u.keyCode === C.n.ESCAPE && e();
                     };
                 var h = F(7572);
-                const b = E.instance,
-                    p = {
+                const p = E.instance,
+                    b = {
                         DataTracker: t.Z,
                         ViewModel: h.Z,
                         ViewEventType: D,
@@ -639,7 +663,7 @@
                         RealFormatType: i,
                         TimeFormatType: r,
                         DateFormatType: o,
-                        makeGlobalBoundingBox: d,
+                        makeGlobalBoundingBox: c,
                         sendMoveEvent: (u) => l(D.MOVE, { isMouseEvent: !0, on: u }),
                         sendCloseEvent: v,
                         sendClosePopOverEvent: () => l(D.POP_OVER, { on: !1 }),
@@ -665,7 +689,7 @@
                                 decoratorID: A || R.invalid('resId'),
                                 targetID: E,
                                 direction: e,
-                                bbox: d(s),
+                                bbox: c(s),
                                 on: !0,
                                 args: t,
                             });
@@ -680,7 +704,7 @@
                             w(u, v);
                         },
                         handleViewEvent: l,
-                        onBindingsReady: c,
+                        onBindingsReady: d,
                         onLayoutReady: () =>
                             new Promise((u) => {
                                 requestAnimationFrame(() => {
@@ -709,11 +733,11 @@
                                 }
                             return F;
                         },
-                        ClickOutsideManager: b,
+                        ClickOutsideManager: p,
                         SystemLocale: n.Z5,
                         UserLocale: n.cy,
                     };
-                window.ViewEnvHelper = p;
+                window.ViewEnvHelper = b;
             },
             8613: (u, e, F) => {
                 F.d(e, { Z5: () => A, cy: () => E });

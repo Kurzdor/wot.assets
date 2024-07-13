@@ -80,18 +80,21 @@
                 t.r(e),
                     t.d(e, {
                         events: () => A,
-                        getMouseGlobalPosition: () => E,
-                        getSize: () => F,
-                        graphicsQuality: () => n,
+                        getMouseGlobalPosition: () => n,
+                        getSize: () => E,
+                        graphicsQuality: () => r,
+                        playSound: () => F.G,
+                        setRTPC: () => F.E,
                     });
-                var A = t(527);
-                function F(u = 'px') {
+                var A = t(527),
+                    F = t(2493);
+                function E(u = 'px') {
                     return 'rem' === u ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function E(u = 'px') {
+                function n(u = 'px') {
                     return 'rem' === u ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const n = {
+                const r = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -102,6 +105,19 @@
                     viewEnv.setTrackMouseOnStage(u);
                 }
                 t.d(e, { R: () => A });
+            },
+            2493: (u, e, t) => {
+                function A(u) {
+                    engine.call('PlaySound', u).catch((e) => {
+                        console.error(`playSound('${u}'): `, e);
+                    });
+                }
+                function F(u, e) {
+                    engine.call('SetRTPCGlobal', u, e).catch((t) => {
+                        console.error(`setRTPC('${u}', '${e}'): `, t);
+                    });
+                }
+                t.d(e, { E: () => F, G: () => A });
             },
             2472: (u, e, t) => {
                 function A(u) {
@@ -115,9 +131,17 @@
                 t.d(e, { E: () => A });
             },
             3138: (u, e, t) => {
-                t.d(e, { O: () => F });
+                t.d(e, { O: () => E });
+                var A = t(5959),
+                    F = t(514);
+                const E = { view: t(7641), client: A, sound: F.ZP };
+            },
+            514: (u, e, t) => {
+                t.d(e, { ZP: () => n });
                 var A = t(5959);
-                const F = { view: t(7641), client: A };
+                const F = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    E = Object.keys(F).reduce((u, e) => ((u[e] = () => (0, A.playSound)(F[e])), u), {}),
+                    n = { play: Object.assign({}, E, { sound: A.playSound }), setRTPC: A.setRTPC };
             },
             3722: (u, e, t) => {
                 function A(u, e, t = 1) {
@@ -163,10 +187,10 @@
                         events: () => E.U,
                         extraSize: () => b,
                         forceTriggerMouseMove: () => h,
-                        freezeTextureBeforeResize: () => _,
+                        freezeTextureBeforeResize: () => c,
                         getBrowserTexturePath: () => a,
                         getDisplayStatus: () => g,
-                        getScale: () => c,
+                        getScale: () => _,
                         getSize: () => s,
                         getViewGlobalPosition: () => C,
                         isEventHandled: () => p,
@@ -210,10 +234,10 @@
                     const e = viewEnv.getViewGlobalPositionRem();
                     return 'rem' === u ? e : { x: d(e.x), y: d(e.y) };
                 }
-                function _() {
+                function c() {
                     viewEnv.freezeTextureBeforeResize();
                 }
-                function c() {
+                function _() {
                     return viewEnv.getScale();
                 }
                 function l(u) {
@@ -525,7 +549,7 @@
                 var s = t(5521),
                     B = t(3138);
                 const C = ['args'];
-                function _(u, e, t, A, F, E, n) {
+                function c(u, e, t, A, F, E, n) {
                     try {
                         var r = u[E](n),
                             i = r.value;
@@ -534,7 +558,7 @@
                     }
                     r.done ? e(i) : Promise.resolve(i).then(A, F);
                 }
-                const c = (u) => ({ __Type: 'GFBoundingBox', x: u.x, y: u.y, width: u.width, height: u.height }),
+                const _ = (u) => ({ __Type: 'GFBoundingBox', x: u.x, y: u.y, width: u.width, height: u.height }),
                     l = (function () {
                         var u,
                             e =
@@ -552,10 +576,10 @@
                                     return new Promise(function (A, F) {
                                         var E = u.apply(e, t);
                                         function n(u) {
-                                            _(E, A, F, n, r, 'next', u);
+                                            c(E, A, F, n, r, 'next', u);
                                         }
                                         function r(u) {
-                                            _(E, A, F, n, r, 'throw', u);
+                                            c(E, A, F, n, r, 'throw', u);
                                         }
                                         n(void 0);
                                     });
@@ -616,7 +640,7 @@
                         RealFormatType: a,
                         TimeFormatType: o,
                         DateFormatType: D,
-                        makeGlobalBoundingBox: c,
+                        makeGlobalBoundingBox: _,
                         sendMoveEvent: (u) => d(r.MOVE, { isMouseEvent: !0, on: u }),
                         sendCloseEvent: v,
                         sendClosePopOverEvent: () => d(r.POP_OVER, { on: !1 }),
@@ -642,7 +666,7 @@
                                 decoratorID: A || R.invalid('resId'),
                                 targetID: F,
                                 direction: e,
-                                bbox: c(C),
+                                bbox: _(C),
                                 on: !0,
                                 args: E,
                             });
@@ -748,14 +772,14 @@
                 }
                 const B = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'],
                     C = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1e3];
-                function _(u) {
+                function c(u) {
                     let e = '';
                     for (let t = C.length - 1; t >= 0; t--) for (; u >= C[t]; ) (e += B[t]), (u -= C[t]);
                     return e;
                 }
                 ['ko', 'no'].includes(R.strings.settings.LANGUAGE_CODE());
                 t(3138);
-                const c = (u = 1) => {
+                const _ = (u = 1) => {
                         const e = new Error().stack;
                         let t,
                             A = R.invalid('resId');
@@ -784,7 +808,7 @@
                             }))(u, (u, e) => `${u}.${e}.value`),
                     p = (u) => {
                         const e = ((u) => {
-                                const e = c(),
+                                const e = _(),
                                     t = e.caller,
                                     A = e.resId,
                                     F = window.__feature && window.__feature !== t && t ? `subViews.${t}` : '';
@@ -812,7 +836,7 @@
                 const f = (u = 'model', e = g.Deep) => {
                     const t = (0, A.useState)(0),
                         F = (t[0], t[1]),
-                        E = (0, A.useMemo)(() => c(), []),
+                        E = (0, A.useMemo)(() => _(), []),
                         n = E.caller,
                         r = E.resId,
                         i = (0, A.useMemo)(
@@ -875,50 +899,52 @@
                     N = 'App_map_3b',
                     V = 'App_vehicle_0f',
                     I = 'App_credits_9c',
-                    U = 'App_experience_44',
-                    G = 'App_crystals_47',
+                    G = 'App_experience_44',
+                    U = 'App_crystals_47',
                     W = 'App_upperGlow_f9',
                     q = 'App_upperGlowFadeOut_81',
-                    K = 'App_vehicleIcon_c5';
-                function j(u) {
-                    engine.call('PlaySound', u);
+                    j = 'App_vehicleIcon_c5';
+                function K(u) {
+                    engine.call('PlaySound', u).catch((e) => {
+                        console.error('[lib/sounds.js] playSound(', u, '): ', e);
+                    });
                 }
-                const z = R.images.gui.maps.icons.battleNotifier,
-                    $ = {
+                const $ = R.images.gui.maps.icons.battleNotifier,
+                    z = {
                         'AT-SPG': {
-                            [b.Victory]: z.AT_SPG_victory(),
-                            [b.Draw]: z.AT_SPG_draw(),
-                            [b.Defeat]: z.AT_SPG_defeat(),
+                            [b.Victory]: $.AT_SPG_victory(),
+                            [b.Draw]: $.AT_SPG_draw(),
+                            [b.Defeat]: $.AT_SPG_defeat(),
                         },
                         heavyTank: {
-                            [b.Victory]: z.heavyTank_victory(),
-                            [b.Draw]: z.heavyTank_draw(),
-                            [b.Defeat]: z.heavyTank_defeat(),
+                            [b.Victory]: $.heavyTank_victory(),
+                            [b.Draw]: $.heavyTank_draw(),
+                            [b.Defeat]: $.heavyTank_defeat(),
                         },
                         lightTank: {
-                            [b.Victory]: z.lightTank_victory(),
-                            [b.Draw]: z.lightTank_draw(),
-                            [b.Defeat]: z.lightTank_defeat(),
+                            [b.Victory]: $.lightTank_victory(),
+                            [b.Draw]: $.lightTank_draw(),
+                            [b.Defeat]: $.lightTank_defeat(),
                         },
                         mediumTank: {
-                            [b.Victory]: z.mediumTank_victory(),
-                            [b.Draw]: z.mediumTank_draw(),
-                            [b.Defeat]: z.mediumTank_defeat(),
+                            [b.Victory]: $.mediumTank_victory(),
+                            [b.Draw]: $.mediumTank_draw(),
+                            [b.Defeat]: $.mediumTank_defeat(),
                         },
-                        SPG: { [b.Victory]: z.SPG_victory(), [b.Draw]: z.SPG_draw(), [b.Defeat]: z.SPG_defeat() },
+                        SPG: { [b.Victory]: $.SPG_victory(), [b.Draw]: $.SPG_draw(), [b.Defeat]: $.SPG_defeat() },
                     },
                     H = {
-                        [b.Victory]: z.upper_glow_victory(),
-                        [b.Draw]: z.upper_glow_draw(),
-                        [b.Defeat]: z.upper_glow_defeat(),
+                        [b.Victory]: $.upper_glow_victory(),
+                        [b.Draw]: $.upper_glow_draw(),
+                        [b.Defeat]: $.upper_glow_defeat(),
                     },
                     Y = {
-                        [b.Victory]: z.line_glow_victory(),
-                        [b.Draw]: z.line_glow_draw(),
-                        [b.Defeat]: z.line_glow_defeat(),
+                        [b.Victory]: $.line_glow_victory(),
+                        [b.Draw]: $.line_glow_draw(),
+                        [b.Defeat]: $.line_glow_defeat(),
                     },
-                    Z = { credits: z.creditsIcon(), experience: z.experienceIcon(), crystals: z.crystalIcon() },
-                    X = z.back_shadow(),
+                    Z = { credits: $.creditsIcon(), experience: $.experienceIcon(), crystals: $.crystalIcon() },
+                    X = $.back_shadow(),
                     Q = {
                         [b.Victory]: R.sounds.battle_results_victory(),
                         [b.Draw]: R.sounds.battle_results_draw(),
@@ -929,7 +955,7 @@
                         [b.Draw]: R.strings.ingame_gui.battle_notifier.tie(),
                         [b.Defeat]: R.strings.ingame_gui.battle_notifier.lose(),
                     },
-                    uu = (u = 'SPG', e = b.Draw) => $[u][e],
+                    uu = (u = 'SPG', e = b.Draw) => z[u][e],
                     eu = (u = b.Draw) => ({ backgroundImage: `url(${H[u]})` }),
                     tu = (u = b.Draw) => ({ backgroundImage: `url(${Y[u]})` }),
                     Au = (u) => ({ backgroundImage: `url(${Z[u]})` }),
@@ -946,10 +972,10 @@
                             D = u.experienceAmount,
                             B = u.crystalAmount,
                             C = u.onResultShown,
-                            c = (0, A.useRef)(null),
+                            _ = (0, A.useRef)(null),
                             l = (0, A.useCallback)(
                                 (u) => {
-                                    u.target === c.current && C();
+                                    u.target === _.current && C();
                                 },
                                 [C],
                             ),
@@ -960,27 +986,27 @@
                             p = `${m.getHours()}:${s(m.getMinutes())}`,
                             h = `+ ${D}`,
                             g = `${o >= 0 ? '+' : ''} ${o}`,
-                            z = `+ ${B}`,
-                            $ = '' !== E && '' !== n;
+                            $ = `+ ${B}`,
+                            z = '' !== E && '' !== n;
                         return (
                             (0, A.useEffect)(() => {
-                                if (!$) return;
-                                j(Q[e]);
+                                if (!z) return;
+                                K(Q[e]);
                                 const u = setTimeout(() => {
-                                        j(R.sounds.battle_results_stats());
+                                        K(R.sounds.battle_results_stats());
                                     }, 500),
                                     t = setTimeout(() => {
-                                        j(R.sounds.battle_results_rollout());
+                                        K(R.sounds.battle_results_rollout());
                                     }, 2e3);
                                 return () => {
                                     clearTimeout(u), clearTimeout(t);
                                 };
                             }),
-                            $ &&
+                            z &&
                                 F().createElement(
                                     'div',
                                     { key: t, className: i()(y, { [k]: d, [P]: v }) },
-                                    F().createElement('div', { className: T, style: Fu, onAnimationEnd: l, ref: c }),
+                                    F().createElement('div', { className: T, style: Fu, onAnimationEnd: l, ref: _ }),
                                     F().createElement('div', { className: W, style: eu(e) }),
                                     F().createElement('div', { className: q, style: eu(e) }),
                                     F().createElement('div', { className: O, style: tu(e) }),
@@ -990,14 +1016,14 @@
                                     F().createElement(
                                         'div',
                                         { className: i()(M, V) },
-                                        F().createElement('div', null, _(r)),
-                                        F().createElement('img', { className: K, src: uu(a, e) }),
+                                        F().createElement('div', null, c(r)),
+                                        F().createElement('img', { className: j, src: uu(a, e) }),
                                         F().createElement('div', null, n),
                                     ),
                                     F().createElement('div', { className: i()(L, I), style: Au('credits') }, g),
-                                    F().createElement('div', { className: i()(L, U), style: Au('experience') }, h),
+                                    F().createElement('div', { className: i()(L, G), style: Au('experience') }, h),
                                     0 !== B &&
-                                        F().createElement('div', { className: i()(L, G), style: Au('crystals') }, z),
+                                        F().createElement('div', { className: i()(L, U), style: Au('crystals') }, $),
                                 )
                         );
                     };

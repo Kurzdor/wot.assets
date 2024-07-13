@@ -1,0 +1,43 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.App_base_61 {
+    width: 330rem;
+    padding: 18rem 19rem 24rem 20rem;
+}
+
+.App_text_67 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: block;
+}
+
+.App_alert_8e {
+    color: #ee7000;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    margin: 15rem 0 7rem;
+    font-weight: 700;
+}
+
+.App_alert_icon_5a {
+    width: 16rem;
+    height: 16rem;
+    margin-right: 4rem;
+    background: url('R.images.gui.maps.icons.library.alertIcon') no-repeat left / contain;
+}

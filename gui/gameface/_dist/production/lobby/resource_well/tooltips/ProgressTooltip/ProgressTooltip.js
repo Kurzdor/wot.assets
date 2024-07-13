@@ -80,18 +80,21 @@
                 n.r(t),
                     n.d(t, {
                         events: () => r,
-                        getMouseGlobalPosition: () => i,
-                        getSize: () => o,
-                        graphicsQuality: () => a,
+                        getMouseGlobalPosition: () => a,
+                        getSize: () => i,
+                        graphicsQuality: () => s,
+                        playSound: () => o.G,
+                        setRTPC: () => o.E,
                     });
-                var r = n(527);
-                function o(e = 'px') {
+                var r = n(527),
+                    o = n(2493);
+                function i(e = 'px') {
                     return 'rem' === e ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function i(e = 'px') {
+                function a(e = 'px') {
                     return 'rem' === e ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const a = {
+                const s = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -102,6 +105,19 @@
                     viewEnv.setTrackMouseOnStage(e);
                 }
                 n.d(t, { R: () => r });
+            },
+            2493: (e, t, n) => {
+                function r(e) {
+                    engine.call('PlaySound', e).catch((t) => {
+                        console.error(`playSound('${e}'): `, t);
+                    });
+                }
+                function o(e, t) {
+                    engine.call('SetRTPCGlobal', e, t).catch((n) => {
+                        console.error(`setRTPC('${e}', '${t}'): `, n);
+                    });
+                }
+                n.d(t, { E: () => o, G: () => r });
             },
             2472: (e, t, n) => {
                 function r(e) {
@@ -115,9 +131,17 @@
                 n.d(t, { E: () => r });
             },
             3138: (e, t, n) => {
-                n.d(t, { O: () => o });
+                n.d(t, { O: () => i });
+                var r = n(5959),
+                    o = n(514);
+                const i = { view: n(7641), client: r, sound: o.ZP };
+            },
+            514: (e, t, n) => {
+                n.d(t, { ZP: () => a });
                 var r = n(5959);
-                const o = { view: n(7641), client: r };
+                const o = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    i = Object.keys(o).reduce((e, t) => ((e[t] = () => (0, r.playSound)(o[t])), e), {}),
+                    a = { play: Object.assign({}, i, { sound: r.playSound }), setRTPC: r.setRTPC };
             },
             3722: (e, t, n) => {
                 function r(e, t, n = 1) {
@@ -913,9 +937,9 @@
                         decorator: 'TooltipDecorator_decorator_3d',
                     },
                     K = ['children', 'className', 'theme'];
-                function z() {
+                function G() {
                     return (
-                        (z =
+                        (G =
                             Object.assign ||
                             function (e) {
                                 for (var t = 1; t < arguments.length; t++) {
@@ -924,10 +948,10 @@
                                 }
                                 return e;
                             }),
-                        z.apply(this, arguments)
+                        G.apply(this, arguments)
                     );
                 }
-                const G = o().forwardRef(function (e, t) {
+                const z = o().forwardRef(function (e, t) {
                         let n = e.children,
                             i = e.className,
                             a = e.theme,
@@ -964,7 +988,7 @@
                             (0, r.useEffect)(u, []),
                             o().createElement(
                                 'div',
-                                z({}, _, {
+                                G({}, _, {
                                     className: c()(j.base, j[`base__theme-${s}`], i),
                                     ref: function (e) {
                                         (l.current = e), 'function' == typeof t ? t(e) : t && (t.current = e);
@@ -974,9 +998,9 @@
                             )
                         );
                     }),
-                    H = () => o().createElement(G, null, o().createElement(W, null));
+                    $ = () => o().createElement(z, null, o().createElement(W, null));
                 engine.whenReady.then(() => {
-                    a().render(o().createElement(H, null), document.getElementById('root'));
+                    a().render(o().createElement($, null), document.getElementById('root'));
                 });
             },
         },

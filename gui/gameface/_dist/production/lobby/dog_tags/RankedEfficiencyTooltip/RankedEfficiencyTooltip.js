@@ -80,18 +80,21 @@
                 t.r(e),
                     t.d(e, {
                         events: () => E,
-                        getMouseGlobalPosition: () => A,
-                        getSize: () => F,
-                        graphicsQuality: () => n,
+                        getMouseGlobalPosition: () => n,
+                        getSize: () => A,
+                        graphicsQuality: () => i,
+                        playSound: () => F.G,
+                        setRTPC: () => F.E,
                     });
-                var E = t(527);
-                function F(u = 'px') {
+                var E = t(527),
+                    F = t(2493);
+                function A(u = 'px') {
                     return 'rem' === u ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function A(u = 'px') {
+                function n(u = 'px') {
                     return 'rem' === u ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const n = {
+                const i = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -102,6 +105,19 @@
                     viewEnv.setTrackMouseOnStage(u);
                 }
                 t.d(e, { R: () => E });
+            },
+            2493: (u, e, t) => {
+                function E(u) {
+                    engine.call('PlaySound', u).catch((e) => {
+                        console.error(`playSound('${u}'): `, e);
+                    });
+                }
+                function F(u, e) {
+                    engine.call('SetRTPCGlobal', u, e).catch((t) => {
+                        console.error(`setRTPC('${u}', '${e}'): `, t);
+                    });
+                }
+                t.d(e, { E: () => F, G: () => E });
             },
             2472: (u, e, t) => {
                 function E(u) {
@@ -115,9 +131,17 @@
                 t.d(e, { E: () => E });
             },
             3138: (u, e, t) => {
-                t.d(e, { O: () => F });
+                t.d(e, { O: () => A });
+                var E = t(5959),
+                    F = t(514);
+                const A = { view: t(7641), client: E, sound: F.ZP };
+            },
+            514: (u, e, t) => {
+                t.d(e, { ZP: () => n });
                 var E = t(5959);
-                const F = { view: t(7641), client: E };
+                const F = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    A = Object.keys(F).reduce((u, e) => ((u[e] = () => (0, E.playSound)(F[e])), u), {}),
+                    n = { play: Object.assign({}, A, { sound: E.playSound }), setRTPC: E.setRTPC };
             },
             3722: (u, e, t) => {
                 function E(u, e, t = 1) {
@@ -179,7 +203,7 @@
                         setEventHandled: () => w,
                         setInputPaddingsRem: () => r,
                         setSidePaddingsRem: () => D,
-                        whenTutorialReady: () => O,
+                        whenTutorialReady: () => y,
                     });
                 var E = t(3722),
                     F = t(6112),
@@ -252,7 +276,7 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    O = Promise.all([
+                    y = Promise.all([
                         new Promise((u) => {
                             window.isDomBuilt ? u() : A.U.onDomBuilt(u);
                         }),
@@ -872,8 +896,8 @@
                 const g = 'Body_base_53',
                     f = 'Body_title_54',
                     b = 'Body_description_fe',
-                    O = 'Body_description__last_cc',
-                    y = 'Body_listHeader_15',
+                    y = 'Body_description__last_cc',
+                    O = 'Body_listHeader_15',
                     T = 'Body_listColumnHeader_39',
                     k = 'Body_list_3b',
                     P = 'Body_listRow_41',
@@ -896,7 +920,7 @@
                                       const t = _.Z5.getRealFormat(u, _.Gr.WO_ZERO_DIGITS).replace(/\s/g, ' ');
                                       return e === p.PERCENTAGE ? `${t} %` : t;
                                   })(E, p.PERCENTAGE),
-                    W = () => {
+                    G = () => {
                         const u = window.model.items,
                             e = u.length > 0,
                             t = r()(x, N);
@@ -904,14 +928,14 @@
                             'div',
                             { className: g },
                             F().createElement('div', { className: f }, V.title()),
-                            F().createElement('div', { className: r()(b, !e && O) }, V.description()),
+                            F().createElement('div', { className: r()(b, !e && y) }, V.description()),
                             e &&
                                 F().createElement(
                                     F().Fragment,
                                     null,
                                     F().createElement(
                                         'div',
-                                        { className: y },
+                                        { className: O },
                                         F().createElement('div', { className: T }, V.season()),
                                         F().createElement('div', { className: T }, V.efficiency()),
                                     ),
@@ -951,9 +975,9 @@
                                 ),
                         );
                     },
-                    G = () => F().createElement(C, null, F().createElement(W, null));
+                    W = () => F().createElement(C, null, F().createElement(G, null));
                 engine.whenReady.then(() => {
-                    n().render(F().createElement(G, null), document.getElementById('root'));
+                    n().render(F().createElement(W, null), document.getElementById('root'));
                 });
             },
         },

@@ -1,29 +1,28 @@
-html {
+body {
     height: 100%;
+    overflow: hidden;
     position: relative;
 }
 
-body {
-    overflow: hidden;
-}
-
-.BtnModules_base_75 {
+.Button_base_8c {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 238rem;
     height: 44rem;
+    margin-top: 15rem;
     background: url('R.images.gui.maps.icons.battleRoyale.hangar.btnModulesSmall') no-repeat 100% 100% / 100% 100%;
     position: relative;
     cursor: pointer;
 }
 
-.mediaMedium .BtnModules_base_75 {
+.mediaMedium .Button_base_8c {
     height: 50rem;
+    margin-top: 20rem;
     background-image: url('R.images.gui.maps.icons.battleRoyale.hangar.btnModulesBig');
 }
 
-.BtnModules_glow_95 {
+.Button_glow_a6 {
     width: 393rem;
     height: 108rem;
     background: url('R.images.gui.maps.icons.battleRoyale.hangar.btnModulesGlow') no-repeat 100% 100% / 100% 100%;
@@ -37,106 +36,139 @@ body {
     pointer-events: none;
 }
 
-.BtnModules_base_75:hover .BtnModules_glow_95 {
+.Button_base_8c:hover .Button_glow_a6 {
     opacity: 1;
 }
 
-.BtnModules_label_ba {
-    padding-left: 16rem;
+.Button_label_3d {
     color: #e9e2bf;
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
+    padding-left: 16rem;
     pointer-events: none;
 }
 
-.Spec_base_a5 {
+.Section_base_bd {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 100%;
+    height: 4rem;
+    border-radius: 4rem;
+    position: relative;
+}
+
+.Section_base_bd + .Section_base_bd {
+    margin-left: 2rem;
+}
+
+.Section_defaultSection_8c {
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    background-color: #54544d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.Section_filledSection_7e {
+    height: 4rem;
+    border-radius: 3rem 0 0 3rem;
+    background-color: #e9e2bf;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.Section_filledSection_7e::after {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10rem 2rem rgba(233, 12, 12, 0.6);
+    content: '';
+}
+
+.Section_filledSection__fullSection_09 {
+    border-radius: 3rem;
+}
+
+.Parameter_base_c0 {
+    width: 100%;
+    margin-top: 7rem;
+}
+
+.mediaMedium .Parameter_base_c0 {
+    margin-top: 15rem;
+}
+
+.Parameter_paramType_40 {
+    display: flex;
     justify-content: flex-start;
-    margin-top: 4rem;
+    align-items: center;
+    margin-bottom: 3rem;
 }
 
-.mediaMedium .Spec_base_a5 {
-    margin-top: 12rem;
+.Parameter_iconContainer_93 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.Spec_label_d9 {
-    color: #8c8c7e;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
+.Parameter_wrapper_b9 {
+    width: 24rem;
+    height: 24rem;
+    margin-right: 5rem;
+    position: relative;
 }
 
-.mediaMedium .Spec_label_d9 {
+.Parameter_type_20 {
+    width: 53rem;
+    height: 53rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.Parameter_text_db {
     color: #8c8c7e;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
+    text-shadow: -3rem 0 5rem #000;
 }
 
-.Spec_icon_58 {
-    width: 72rem;
-    height: 72rem;
-    margin: -26rem -7rem -22rem -22rem;
-    background: no-repeat 100% 100% / 100% 100%;
-}
-
-.mediaMedium .Spec_icon_58 {
-    width: 96rem;
-    height: 96rem;
-    margin: -36rem -24rem -34rem -34rem;
-}
-
-.SpecsBlock_base_46 {
+.Parameter_paramValuesContainer_e5 {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.SpecsBlock_title_d3 {
-    color: #e9e2bf;
-    font-size: 14rem;
-    font-weight: 700;
-    line-height: 1.15;
-}
-
-.mediaMedium .SpecsBlock_title_d3 {
-    color: #e9e2bf;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.SpecsBlock_specs_a1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 12rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    padding: 0 1rem;
+    border: 1rem solid #37362e;
+    border-radius: 8rem;
+    background: #000;
 }
 
 .App_base_e7 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     width: 349rem;
-    padding: 8rem 0 13rem 88rem;
+    margin-top: 5rem;
+    padding: 0 0 14rem 88rem;
     background: url('R.images.gui.maps.icons.battleRoyale.hangar.vehicleFeaturesBg') no-repeat center / cover;
     overflow: hidden;
     position: relative;
 }
 
 .mediaMedium .App_base_e7 {
-    padding-bottom: 26rem;
+    margin-top: 10rem;
+    padding: 1rem 0 33rem 88rem;
 }
 
-.App_delimiter_b8 {
-    width: 243rem;
-    height: 1rem;
-    margin: 16rem 0 16rem -1rem;
-    background-color: #d1d1d11a;
-}
-
-.App_btnModules_f9 {
-    margin-top: 20rem;
+.App_container_87 {
+    width: 238rem;
 }

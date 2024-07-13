@@ -80,18 +80,21 @@
                 n.r(t),
                     n.d(t, {
                         events: () => o,
-                        getMouseGlobalPosition: () => a,
-                        getSize: () => r,
-                        graphicsQuality: () => i,
+                        getMouseGlobalPosition: () => i,
+                        getSize: () => a,
+                        graphicsQuality: () => s,
+                        playSound: () => r.G,
+                        setRTPC: () => r.E,
                     });
-                var o = n(527);
-                function r(e = 'px') {
+                var o = n(527),
+                    r = n(2493);
+                function a(e = 'px') {
                     return 'rem' === e ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function a(e = 'px') {
+                function i(e = 'px') {
                     return 'rem' === e ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const i = {
+                const s = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -102,6 +105,19 @@
                     viewEnv.setTrackMouseOnStage(e);
                 }
                 n.d(t, { R: () => o });
+            },
+            2493: (e, t, n) => {
+                function o(e) {
+                    engine.call('PlaySound', e).catch((t) => {
+                        console.error(`playSound('${e}'): `, t);
+                    });
+                }
+                function r(e, t) {
+                    engine.call('SetRTPCGlobal', e, t).catch((n) => {
+                        console.error(`setRTPC('${e}', '${t}'): `, n);
+                    });
+                }
+                n.d(t, { E: () => r, G: () => o });
             },
             2472: (e, t, n) => {
                 function o(e) {
@@ -115,9 +131,17 @@
                 n.d(t, { E: () => o });
             },
             3138: (e, t, n) => {
-                n.d(t, { O: () => r });
+                n.d(t, { O: () => a });
+                var o = n(5959),
+                    r = n(514);
+                const a = { view: n(7641), client: o, sound: r.ZP };
+            },
+            514: (e, t, n) => {
+                n.d(t, { ZP: () => i });
                 var o = n(5959);
-                const r = { view: n(7641), client: o };
+                const r = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    a = Object.keys(r).reduce((e, t) => ((e[t] = () => (0, o.playSound)(r[t])), e), {}),
+                    i = { play: Object.assign({}, a, { sound: o.playSound }), setRTPC: o.setRTPC };
             },
             3722: (e, t, n) => {
                 function o(e, t, n = 1) {
@@ -1231,13 +1255,13 @@
                                       Object.assign(
                                           {
                                               onMouseEnter:
-                                                  ((M = t.props.onMouseEnter),
+                                                  ((R = t.props.onMouseEnter),
                                                   (e) => {
                                                       (e.clientX === window.innerWidth &&
                                                           e.clientY === window.innerHeight) ||
                                                           ((T.current.timeoutId = window.setTimeout(P, u ? 100 : 400)),
                                                           a && a(e),
-                                                          M && M(e));
+                                                          R && R(e));
                                                   }),
                                               onMouseLeave: ((e) => (t) => {
                                                   k(), null == i || i(t), null == e || e(t);
@@ -1254,7 +1278,7 @@
                                   )
                                 : t
                         );
-                        var M;
+                        var R;
                     };
                 var D = n(7030);
                 const F = (0, o.createContext)(null);
@@ -1264,7 +1288,7 @@
                     return e;
                 }
                 const V = [s.Solo, s.RandomPlatoon, s.Platoon],
-                    H = {
+                    j = {
                         list: V,
                         getId: (e) => {
                             const t = V.indexOf(e);
@@ -1273,7 +1297,7 @@
                         },
                         isSelected: (e, t) => t === V[e],
                     },
-                    j = {
+                    H = {
                         base: 'Platoon_base_52',
                         icon: 'Platoon_icon_e9',
                         text: 'Platoon_text_e7',
@@ -1298,11 +1322,11 @@
                         short: { randomPlatoon: 0, platoon: 380 },
                         full: { solo: 0, randomPlatoon: 330, platoon: 585 },
                     },
-                    K = {
+                    G = {
                         short: { randomPlatoon: 0, platoon: 300 },
                         full: { solo: 0, randomPlatoon: 240, platoon: 530 },
                     },
-                    G = {
+                    K = {
                         short: {
                             icon: { randomPlatoon: 480, platoon: 380 },
                             text: { randomPlatoon: 480, platoon: 380 },
@@ -1341,15 +1365,15 @@
                                     b.start(() =>
                                         Object.assign({}, Y, {
                                             to: { maskPosition: '155rem 0rem' },
-                                            config: { duration: G[d.tabsAnimationType.get()].text[e] },
+                                            config: { duration: K[d.tabsAnimationType.get()].text[e] },
                                             delay: z[d.tabsAnimationType.get()][e],
                                         }),
                                     ),
                                         h.start(() =>
                                             Object.assign({}, $, {
                                                 to: { transform: 'translate(105rem, 105rem) rotate(140deg)' },
-                                                config: { duration: G[d.tabsAnimationType.get()].icon[e] },
-                                                delay: K[d.tabsAnimationType.get()][e],
+                                                config: { duration: K[d.tabsAnimationType.get()].icon[e] },
+                                                delay: G[d.tabsAnimationType.get()][e],
                                             }),
                                         );
                                 },
@@ -1382,40 +1406,40 @@
                                 },
                                 r().createElement(
                                     'div',
-                                    { className: x()(j.base, H.isSelected(i.active, e) && j.base__selected) },
+                                    { className: x()(H.base, j.isSelected(i.active, e) && H.base__selected) },
                                     r().createElement(
                                         'div',
-                                        { className: j.container },
+                                        { className: H.container },
                                         r().createElement(
                                             'div',
-                                            { className: j.icon, style: { backgroundImage: `url(${W.$dyn(e)})` } },
+                                            { className: H.icon, style: { backgroundImage: `url(${W.$dyn(e)})` } },
                                             r().createElement(
                                                 'div',
                                                 {
-                                                    className: j.blinkWrapper,
+                                                    className: H.blinkWrapper,
                                                     style: { maskImage: `url(${q.$dyn(e)})` },
                                                 },
-                                                r().createElement(D.animated.div, { style: p, className: j.iconBlink }),
+                                                r().createElement(D.animated.div, { style: p, className: H.iconBlink }),
                                             ),
                                         ),
                                         r().createElement(
                                             'div',
-                                            { className: j.textContainer },
-                                            r().createElement('div', { className: j.text }, _),
-                                            r().createElement(D.animated.div, { style: m, className: j.textBlink }, _),
+                                            { className: H.textContainer },
+                                            r().createElement('div', { className: H.text }, _),
+                                            r().createElement(D.animated.div, { style: m, className: H.textBlink }, _),
                                         ),
                                     ),
                                     t &&
                                         r().createElement('div', {
                                             className: x()(
-                                                j.bonus,
-                                                j[
+                                                H.bonus,
+                                                H[
                                                     'bonus__' +
                                                         ((f = d.wasHintHidden.get()),
                                                         (y = d.animationState.get()),
                                                         f && y !== l.IdleBlink ? 'hide' : 'show')
                                                 ],
-                                                o && j[`bonus__${e}Animate`],
+                                                o && H[`bonus__${e}Animate`],
                                             ),
                                         }),
                                 ),
@@ -1424,7 +1448,9 @@
                         var f, y;
                     });
                 function J(e) {
-                    engine.call('PlaySound', e);
+                    engine.call('PlaySound', e).catch((t) => {
+                        console.error('[lib/sounds.js] playSound(', e, '): ', t);
+                    });
                 }
                 const ee = {
                         base: 'Tab_base_47',
@@ -1482,7 +1508,7 @@
                         n = e.model,
                         o = r().useCallback(
                             (e) => {
-                                t.select(H.list[e]);
+                                t.select(j.list[e]);
                             },
                             [t],
                         ),
@@ -1532,7 +1558,7 @@
                             { className: 'App_base_2c' },
                             r().createElement(
                                 te,
-                                { currentTabId: H.getId(n.selectedTab.get()), onChangeId: o },
+                                { currentTabId: j.getId(n.selectedTab.get()), onChangeId: o },
                                 r().createElement(
                                     te.HorizontalContainer,
                                     null,

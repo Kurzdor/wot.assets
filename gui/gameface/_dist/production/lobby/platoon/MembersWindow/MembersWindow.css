@@ -123,17 +123,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateHighlightHover_ff,
 .CButton_stateHighlightActive_35,
 .CButton_stateDisabled_54 {
-    opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-}
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
-.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
-.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-    transition: opacity 0.16s ease-in-out;
 }
 .CButton_stateHighlightHover_ff {
     background-image: linear-gradient(
@@ -142,6 +136,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         rgba(252, 248, 235, 0.1) 50%,
         rgba(255, 255, 255, 0) 100%
     );
+    opacity: 0;
 }
 .CButton_base_40:hover .CButton_stateHighlightHover_ff {
     opacity: 1;
@@ -159,6 +154,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_stateHighlightActive_35 {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+    opacity: 0;
 }
 .CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
     opacity: 1;
@@ -166,10 +162,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateDisabled_54 {
     background-color: rgba(0, 0, 0, 0.25);
     background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
-    background-size: 15rem;
+    background-size: 15rem 15rem;
+    visibility: hidden;
 }
 .CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-    opacity: 1;
+    visibility: inherit;
 }
 .CButton_content_cc {
     display: flex;
@@ -420,6 +417,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 48rem;
     background: url('R.images.gui.maps.icons.platoon.common.silver') center / contain no-repeat;
     position: absolute;
+    right: -10rem;
+}
+
+.Header_base__fullBonuses_2f .Header_credits_82 {
     right: 8rem;
 }
 
@@ -619,8 +620,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .TextOverflow_base_3b {
-    flex: 0 1 auto;
-    width: auto;
+    max-width: 100%;
     line-height: 1.3;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -635,7 +635,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     box-shadow:
         inset 0 0 1rem #000,
         inset 0 0 8rem #000;
-    transition: background 0.3s ease-in-out;
+    position: relative;
     cursor: pointer;
 }
 
@@ -647,13 +647,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 32rem;
 }
 
-.DropDownControl_base__over_e7 {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
-}
-
-.DropDownControl_base__down_1c,
-.DropDownControl_base__open_e3 {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.4) 100%);
+.DropDownControl_base__disabled_37 {
+    cursor: default;
 }
 
 .DropDownControl_base__focused_63 {
@@ -663,9 +658,28 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .DropDownControl_base__selected_46 {
     border-color: #7ab300;
 }
-
-.DropDownControl_base__disabled_37 {
-    cursor: default;
+.DropDownControl_stateHighlight_16 {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+.DropDownControl_base__over_e7 .DropDownControl_stateHighlight_16 {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 1;
+}
+.DropDownControl_base__down_1c .DropDownControl_stateHighlight_16,
+.DropDownControl_base__open_e3 .DropDownControl_stateHighlight_16 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.4) 100%);
+    opacity: 1;
 }
 .DropDownControl_label_12 {
     display: flex;
@@ -721,7 +735,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0;
     position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+.DropDownControl_base__over_e7 .DropDownControl_gradient_b5 {
+    opacity: 1;
 }
 .DropDownControl_disabled_4e {
     width: 100%;
@@ -1596,43 +1617,6 @@ so we just add specificity to css classes here
     background: top / contain no-repeat;
     position: absolute;
     top: 0;
-}
-
-.RankEmblem_base_ec {
-    width: var(--imageSize);
-    height: var(--imageSize);
-    background: no-repeat center / cover;
-}
-
-.Comp7Content_base_f9 {
-    display: flex;
-    flex-direction: column;
-}
-
-.Comp7Content_scoreContainer_f9 {
-    color: #ffdd99;
-    font-size: 12rem;
-    font-weight: 400;
-    line-height: 1.3;
-    display: flex;
-    text-shadow:
-        0 0 4rem rgba(255, 127, 0, 0.25),
-        0 0 8rem #ff2a00,
-        0 0 15rem #e52;
-}
-
-.Comp7Content_score_e7 {
-    display: flex;
-    align-items: center;
-    padding-right: 10rem;
-}
-
-.Comp7Content_icon_0f {
-    margin: 2rem 4rem 0;
-}
-
-.Comp7Content_base__general_aa .Comp7Content_icon_0f {
-    margin: 2rem 1rem 0 -2rem;
 }
 
 /*////////////*/

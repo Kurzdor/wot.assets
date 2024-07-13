@@ -97,18 +97,21 @@
                 r.r(t),
                     r.d(t, {
                         events: () => i,
-                        getMouseGlobalPosition: () => a,
-                        getSize: () => n,
-                        graphicsQuality: () => o,
+                        getMouseGlobalPosition: () => o,
+                        getSize: () => a,
+                        graphicsQuality: () => l,
+                        playSound: () => n.G,
+                        setRTPC: () => n.E,
                     });
-                var i = r(527);
-                function n(e = 'px') {
+                var i = r(527),
+                    n = r(2493);
+                function a(e = 'px') {
                     return 'rem' === e ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function a(e = 'px') {
+                function o(e = 'px') {
                     return 'rem' === e ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const o = {
+                const l = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -120,6 +123,20 @@
                     viewEnv.setTrackMouseOnStage(e);
                 }
                 r.d(t, { R: () => i });
+            },
+            2493: (e, t, r) => {
+                'use strict';
+                function i(e) {
+                    engine.call('PlaySound', e).catch((t) => {
+                        console.error(`playSound('${e}'): `, t);
+                    });
+                }
+                function n(e, t) {
+                    engine.call('SetRTPCGlobal', e, t).catch((r) => {
+                        console.error(`setRTPC('${e}', '${t}'): `, r);
+                    });
+                }
+                r.d(t, { E: () => n, G: () => i });
             },
             2472: (e, t, r) => {
                 'use strict';
@@ -135,9 +152,18 @@
             },
             3138: (e, t, r) => {
                 'use strict';
-                r.d(t, { O: () => n });
+                r.d(t, { O: () => a });
+                var i = r(5959),
+                    n = r(514);
+                const a = { view: r(7641), client: i, sound: n.ZP };
+            },
+            514: (e, t, r) => {
+                'use strict';
+                r.d(t, { ZP: () => o });
                 var i = r(5959);
-                const n = { view: r(7641), client: i };
+                const n = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    a = Object.keys(n).reduce((e, t) => ((e[t] = () => (0, i.playSound)(n[t])), e), {}),
+                    o = { play: Object.assign({}, a, { sound: i.playSound }), setRTPC: i.setRTPC };
             },
             3722: (e, t, r) => {
                 'use strict';
@@ -203,7 +229,7 @@
                         setEventHandled: () => p,
                         setInputPaddingsRem: () => s,
                         setSidePaddingsRem: () => u,
-                        whenTutorialReady: () => M,
+                        whenTutorialReady: () => y,
                     });
                 var i = r(3722),
                     n = r(6112),
@@ -276,7 +302,7 @@
                             viewEnv.getExtraSizeRem(e, t);
                         },
                     },
-                    M = Promise.all([
+                    y = Promise.all([
                         new Promise((e) => {
                             window.isDomBuilt ? e() : a.U.onDomBuilt(e);
                         }),
@@ -1014,9 +1040,9 @@
                         return { mediaSize: n, mediaWidth: a, mediaHeight: o, remScreenWidth: t, remScreenHeight: r };
                     },
                     T = ['children', 'className'];
-                function M() {
+                function y() {
                     return (
-                        (M =
+                        (y =
                             Object.assign ||
                             function (e) {
                                 for (var t = 1; t < arguments.length; t++) {
@@ -1025,10 +1051,10 @@
                                 }
                                 return e;
                             }),
-                        M.apply(this, arguments)
+                        y.apply(this, arguments)
                     );
                 }
-                const y = {
+                const M = {
                         [x.ExtraSmall]: '',
                         [x.Small]: p().SMALL_WIDTH,
                         [x.Medium]: `${p().SMALL_WIDTH} ${p().MEDIUM_WIDTH}`,
@@ -1065,7 +1091,7 @@
                             o = a.mediaWidth,
                             l = a.mediaHeight,
                             s = a.mediaSize;
-                        return n().createElement('div', M({ className: b()(r, y[o], k[l], P[s]) }, i), t);
+                        return n().createElement('div', y({ className: b()(r, M[o], k[l], P[s]) }, i), t);
                     },
                     W = ['children'],
                     I = (e) => {
@@ -1233,13 +1259,13 @@
                                       Object.assign(
                                           {
                                               onMouseEnter:
-                                                  ((M = t.props.onMouseEnter),
+                                                  ((y = t.props.onMouseEnter),
                                                   (e) => {
                                                       (e.clientX === window.innerWidth &&
                                                           e.clientY === window.innerHeight) ||
                                                           ((L.current.timeoutId = window.setTimeout(S, c ? 100 : 400)),
                                                           a && a(e),
-                                                          M && M(e));
+                                                          y && y(e));
                                                   }),
                                               onMouseLeave: ((e) => (t) => {
                                                   O(), null == o || o(t), null == e || e(t);
@@ -1256,7 +1282,7 @@
                                   )
                                 : t
                         );
-                        var M;
+                        var y;
                     };
                 let V, j;
                 !(function (e) {
@@ -1271,12 +1297,12 @@
                 }
                 console.log;
                 var q = r(9174);
-                function K(e, t) {
+                function $(e, t) {
                     (null == t || t > e.length) && (t = e.length);
                     for (var r = 0, i = new Array(t); r < t; r++) i[r] = e[r];
                     return i;
                 }
-                const $ = (e) => (0 === e ? window : window.subViews.get(e)),
+                const K = (e) => (0 === e ? window : window.subViews.get(e)),
                     Y = ((e, t) => {
                         const r = (0, i.createContext)({});
                         return [
@@ -1287,7 +1313,7 @@
                                         const a = (function ({
                                                 initializer: e = !0,
                                                 rootId: t = 0,
-                                                getRoot: r = $,
+                                                getRoot: r = K,
                                                 context: i = 'model',
                                             } = {}) {
                                                 const n = new Map();
@@ -1347,7 +1373,7 @@
                                                                         (r = (function (e, t) {
                                                                             if (e) {
                                                                                 if ('string' == typeof e)
-                                                                                    return K(e, t);
+                                                                                    return $(e, t);
                                                                                 var r = Object.prototype.toString
                                                                                     .call(e)
                                                                                     .slice(8, -1);
@@ -1361,7 +1387,7 @@
                                                                                             /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(
                                                                                                 r,
                                                                                             )
-                                                                                          ? K(e, t)
+                                                                                          ? $(e, t)
                                                                                           : void 0
                                                                                 );
                                                                             }

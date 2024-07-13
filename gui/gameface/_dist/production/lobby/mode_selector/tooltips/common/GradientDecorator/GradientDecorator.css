@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 12rem 0 18rem;
-    background: url('R.images.gui.maps.icons.library.white_bg') no-repeat 50% / 100%;
+    background: url('R.images.gui.maps.icons.library.white_bg') no-repeat 50% / 100% 100%;
     position: relative;
 }
 

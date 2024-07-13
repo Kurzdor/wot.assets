@@ -2,7 +2,7 @@
     'use strict';
     var __webpack_modules__ = {
             3495: (e, u, t) => {
-                t.d(u, { Y: () => E });
+                t.d(u, { Y: () => m });
                 var a = t(3138),
                     n = t(6179),
                     r = t(1043),
@@ -11,7 +11,7 @@
                     l = o.width,
                     s = o.height,
                     c = Object.assign({ width: l, height: s }, (0, i.T)(l, s, r.j)),
-                    E = (0, n.createContext)(c);
+                    m = (0, n.createContext)(c);
             },
             1039: (e, u, t) => {
                 t(3138), t(6536), t(6179), t(3495), t(1043), t(5262);
@@ -36,8 +36,8 @@
                         l = o.extraLarge,
                         s = o.large,
                         c = o.medium,
-                        E = o.small,
-                        m = o.extraSmall,
+                        m = o.small,
+                        E = o.extraSmall,
                         d = o.extraLargeWidth,
                         A = o.largeWidth,
                         F = o.mediumWidth,
@@ -46,15 +46,15 @@
                         g = o.extraLargeHeight,
                         C = o.largeHeight,
                         B = o.mediumHeight,
-                        _ = o.smallHeight,
-                        f = o.extraSmallHeight,
-                        v = { extraLarge: g, large: C, medium: B, small: _, extraSmall: f };
+                        f = o.smallHeight,
+                        _ = o.extraSmallHeight,
+                        v = { extraLarge: g, large: C, medium: B, small: f, extraSmall: _ };
                     if (t.extraLarge || t.large || t.medium || t.small || t.extraSmall) {
                         if (t.extraLarge && l) return u;
                         if (t.large && s) return u;
                         if (t.medium && c) return u;
-                        if (t.small && E) return u;
-                        if (t.extraSmall && m) return u;
+                        if (t.small && m) return u;
+                        if (t.extraSmall && E) return u;
                     } else {
                         if (t.extraLargeWidth && d) return (0, n.H)(u, t, v);
                         if (t.largeWidth && A) return (0, n.H)(u, t, v);
@@ -67,8 +67,8 @@
                             if (t.extraLargeHeight && g) return u;
                             if (t.largeHeight && C) return u;
                             if (t.mediumHeight && B) return u;
-                            if (t.smallHeight && _) return u;
-                            if (t.extraSmallHeight && f) return u;
+                            if (t.smallHeight && f) return u;
+                            if (t.extraSmallHeight && _) return u;
                         }
                     }
                     return null;
@@ -268,18 +268,21 @@
                 t.r(u),
                     t.d(u, {
                         events: () => a,
-                        getMouseGlobalPosition: () => r,
-                        getSize: () => n,
-                        graphicsQuality: () => i,
+                        getMouseGlobalPosition: () => i,
+                        getSize: () => r,
+                        graphicsQuality: () => o,
+                        playSound: () => n.G,
+                        setRTPC: () => n.E,
                     });
-                var a = t(527);
-                function n(e = 'px') {
+                var a = t(527),
+                    n = t(2493);
+                function r(e = 'px') {
                     return 'rem' === e ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function r(e = 'px') {
+                function i(e = 'px') {
                     return 'rem' === e ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const i = {
+                const o = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -290,6 +293,19 @@
                     viewEnv.setTrackMouseOnStage(e);
                 }
                 t.d(u, { R: () => a });
+            },
+            2493: (e, u, t) => {
+                function a(e) {
+                    engine.call('PlaySound', e).catch((u) => {
+                        console.error(`playSound('${e}'): `, u);
+                    });
+                }
+                function n(e, u) {
+                    engine.call('SetRTPCGlobal', e, u).catch((t) => {
+                        console.error(`setRTPC('${e}', '${u}'): `, t);
+                    });
+                }
+                t.d(u, { E: () => n, G: () => a });
             },
             2472: (e, u, t) => {
                 function a(e) {
@@ -303,9 +319,17 @@
                 t.d(u, { E: () => a });
             },
             3138: (e, u, t) => {
-                t.d(u, { O: () => n });
+                t.d(u, { O: () => r });
+                var a = t(5959),
+                    n = t(514);
+                const r = { view: t(7641), client: a, sound: n.ZP };
+            },
+            514: (e, u, t) => {
+                t.d(u, { ZP: () => i });
                 var a = t(5959);
-                const n = { view: t(7641), client: a };
+                const n = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    r = Object.keys(n).reduce((e, u) => ((e[u] = () => (0, a.playSound)(n[u])), e), {}),
+                    i = { play: Object.assign({}, r, { sound: a.playSound }), setRTPC: a.setRTPC };
             },
             3722: (e, u, t) => {
                 function a(e, u, t = 1) {
@@ -355,18 +379,18 @@
                         getBrowserTexturePath: () => s,
                         getDisplayStatus: () => p,
                         getScale: () => h,
-                        getSize: () => m,
+                        getSize: () => E,
                         getViewGlobalPosition: () => A,
-                        isEventHandled: () => f,
+                        isEventHandled: () => _,
                         isFocused: () => B,
                         pxToRem: () => D,
                         remToPx: () => g,
                         resize: () => d,
                         sendEvent: () => i.qP,
                         setAnimateWindow: () => C,
-                        setEventHandled: () => _,
+                        setEventHandled: () => f,
                         setInputPaddingsRem: () => l,
-                        setSidePaddingsRem: () => E,
+                        setSidePaddingsRem: () => m,
                         whenTutorialReady: () => S,
                     });
                 var a = t(3722),
@@ -385,10 +409,10 @@
                 function c(e, u, t) {
                     return viewEnv.addDataChangedCallback(e, u, t);
                 }
-                function E(e) {
+                function m(e) {
                     viewEnv.setHitAreaPaddingsRem(e.top, e.right, e.bottom, e.left, 15);
                 }
-                function m(e = 'px') {
+                function E(e = 'px') {
                     return 'rem' === e ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
                 }
                 function d(e, u, t = 'px') {
@@ -416,10 +440,10 @@
                 function B() {
                     return viewEnv.isFocused();
                 }
-                function _() {
+                function f() {
                     return viewEnv.setEventHandled();
                 }
-                function f() {
+                function _() {
                     return viewEnv.isEventHandled();
                 }
                 function v() {
@@ -824,8 +848,8 @@
                 const l = Object.freeze({ INTEGRAL: 0, GOLD: 1 }),
                     s = Object.freeze({ FRACTIONAL: 0, WO_ZERO_DIGITS: 1 }),
                     c = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1 }),
-                    E = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1, YEAR_MONTH: 2 });
-                var m = t(5521),
+                    m = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1, YEAR_MONTH: 2 });
+                var E = t(5521),
                     d = t(3138);
                 const A = ['args'];
                 function F(e, u, t, a, n, r, i) {
@@ -914,19 +938,19 @@
                         var a;
                     },
                     B = () => C(o.CLOSE),
-                    _ = (e, u) => {
-                        e.keyCode === m.n.ESCAPE && u();
+                    f = (e, u) => {
+                        e.keyCode === E.n.ESCAPE && u();
                     };
-                var f = t(7572);
+                var _ = t(7572);
                 const v = n.instance,
                     p = {
                         DataTracker: r.Z,
-                        ViewModel: f.Z,
+                        ViewModel: _.Z,
                         ViewEventType: o,
                         NumberFormatType: l,
                         RealFormatType: s,
                         TimeFormatType: c,
-                        DateFormatType: E,
+                        DateFormatType: m,
                         makeGlobalBoundingBox: h,
                         sendMoveEvent: (e) => C(o.MOVE, { isMouseEvent: !0, on: e }),
                         sendCloseEvent: B,
@@ -939,13 +963,13 @@
                                 l = t.getBoundingClientRect(),
                                 s = l.x,
                                 c = l.y,
-                                E = l.width,
-                                m = l.height,
+                                m = l.width,
+                                E = l.height,
                                 A = {
                                     x: d.O.view.pxToRem(s) + i.x,
                                     y: d.O.view.pxToRem(c) + i.y,
-                                    width: d.O.view.pxToRem(E),
-                                    height: d.O.view.pxToRem(m),
+                                    width: d.O.view.pxToRem(m),
+                                    height: d.O.view.pxToRem(E),
                                 };
                             C(o.POP_OVER, {
                                 isMouseEvent: !0,
@@ -959,13 +983,13 @@
                             });
                         },
                         addEscapeListener: (e) => {
-                            const u = (u) => _(u, e);
+                            const u = (u) => f(u, e);
                             return (
                                 window.addEventListener('keydown', u), () => window.removeEventListener('keydown', u)
                             );
                         },
                         closeOnEsc: (e) => {
-                            _(e, B);
+                            f(e, B);
                         },
                         handleViewEvent: C,
                         onBindingsReady: D,
@@ -1031,11 +1055,11 @@
                         Array.isArray(e) ||
                         (t = (function (e, u) {
                             if (!e) return;
-                            if ('string' == typeof e) return E(e, u);
+                            if ('string' == typeof e) return m(e, u);
                             var t = Object.prototype.toString.call(e).slice(8, -1);
                             'Object' === t && e.constructor && (t = e.constructor.name);
                             if ('Map' === t || 'Set' === t) return Array.from(e);
-                            if ('Arguments' === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)) return E(e, u);
+                            if ('Arguments' === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)) return m(e, u);
                         })(e)) ||
                         (u && e && 'number' == typeof e.length)
                     ) {
@@ -1049,24 +1073,24 @@
                         'Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.',
                     );
                 }
-                function E(e, u) {
+                function m(e, u) {
                     (null == u || u > e.length) && (u = e.length);
                     for (var t = 0, a = new Array(u); t < u; t++) a[t] = e[t];
                     return a;
                 }
-                const m = (e) => (0 === e ? window : window.subViews.get(e));
+                const E = (e) => (0 === e ? window : window.subViews.get(e));
                 var d = t(2290);
                 const A = ((e, u) => {
                         const t = (0, o.createContext)({});
                         return [
-                            function ({ mode: a = 'real', options: r, children: E, mocks: d }) {
+                            function ({ mode: a = 'real', options: r, children: m, mocks: d }) {
                                 const A = (0, o.useRef)([]),
                                     F = (t, a, r) => {
                                         var o;
                                         const l = (function ({
                                                 initializer: e = !0,
                                                 rootId: u = 0,
-                                                getRoot: t = m,
+                                                getRoot: t = E,
                                                 context: a = 'model',
                                             } = {}) {
                                                 const n = new Map();
@@ -1118,7 +1142,7 @@
                                                     unsubscribe: r,
                                                 };
                                             })(a),
-                                            E =
+                                            m =
                                                 'real' === t
                                                     ? l
                                                     : Object.assign({}, l, {
@@ -1128,19 +1152,19 @@
                                                                   : () => {},
                                                       }),
                                             d = (e) =>
-                                                'mocks' === t ? (null == r ? void 0 : r.getter(e)) : E.readByPath(e),
+                                                'mocks' === t ? (null == r ? void 0 : r.getter(e)) : m.readByPath(e),
                                             F = (e) => A.current.push(e),
                                             h = e({
                                                 mode: t,
                                                 readByPath: d,
-                                                externalModel: E,
+                                                externalModel: m,
                                                 observableModel: {
                                                     array: (e, u) => {
                                                         const a = null != u ? u : d(e),
                                                             r = n.LO.box(a, { equals: i });
                                                         return (
                                                             'real' === t &&
-                                                                E.subscribe(
+                                                                m.subscribe(
                                                                     (0, n.aD)((e) => r.set(e)),
                                                                     e,
                                                                 ),
@@ -1152,7 +1176,7 @@
                                                             r = n.LO.box(a, { equals: i });
                                                         return (
                                                             'real' === t &&
-                                                                E.subscribe(
+                                                                m.subscribe(
                                                                     (0, n.aD)((e) => r.set(e)),
                                                                     e,
                                                                 ),
@@ -1168,7 +1192,7 @@
                                                             );
                                                             return (
                                                                 'real' === t &&
-                                                                    E.subscribe(
+                                                                    m.subscribe(
                                                                         (0, n.aD)((u) => {
                                                                             e.forEach((e) => {
                                                                                 r[e].set(u[e]);
@@ -1188,7 +1212,7 @@
                                                                 );
                                                             return (
                                                                 'real' === t &&
-                                                                    E.subscribe(
+                                                                    m.subscribe(
                                                                         (0, n.aD)((e) => {
                                                                             i.forEach(([u, t]) => {
                                                                                 o[t].set(e[u]);
@@ -1203,11 +1227,11 @@
                                                 },
                                                 cleanup: F,
                                             }),
-                                            D = { mode: t, model: h, externalModel: E, cleanup: F };
+                                            D = { mode: t, model: h, externalModel: m, cleanup: F };
                                         return {
                                             model: h,
                                             controls: 'mocks' === t && r ? r.controls(D) : u(D),
-                                            externalModel: E,
+                                            externalModel: m,
                                             mode: t,
                                         };
                                     },
@@ -1216,22 +1240,22 @@
                                     g = D[0],
                                     C = D[1],
                                     B = (0, o.useState)(() => F(a, r, d)),
-                                    _ = B[0],
-                                    f = B[1];
+                                    f = B[0],
+                                    _ = B[1];
                                 return (
                                     (0, o.useEffect)(() => {
-                                        h.current ? f(F(g, r, d)) : (h.current = !0);
+                                        h.current ? _(F(g, r, d)) : (h.current = !0);
                                     }, [d, g, r]),
                                     (0, o.useEffect)(() => {
                                         C(a);
                                     }, [a]),
                                     (0, o.useEffect)(
                                         () => () => {
-                                            _.externalModel.dispose(), A.current.forEach((e) => e());
+                                            f.externalModel.dispose(), A.current.forEach((e) => e());
                                         },
-                                        [_],
+                                        [f],
                                     ),
-                                    l().createElement(t.Provider, { value: _ }, E)
+                                    l().createElement(t.Provider, { value: f }, m)
                                 );
                             },
                             () => (0, o.useContext)(t),
@@ -1306,30 +1330,30 @@
                                         isAdvanced: u.marker.get().isAdvanced,
                                     };
                                 }),
-                                E = (0, r.Om)(() => u.marker.get().isMarkerVisible),
-                                m = (0, r.Om)(() => E() || u.leaderVisible.get()),
-                                A = (0, r.Om)(() => !!E() && u.tableVisible.get()),
+                                m = (0, r.Om)(() => u.marker.get().isMarkerVisible),
+                                E = (0, r.Om)(() => m() || u.leaderVisible.get()),
+                                A = (0, r.Om)(() => !!m() && u.tableVisible.get()),
                                 F = (0, r.Om)(() => o().length),
                                 h = (0, r.Om)((e) => o()[e]),
                                 D = (0, r.Om)((e, u) => h(e).animationParams[u]),
                                 g = (0, r.Om)((e) => h(e).fullHeight),
                                 C = (0, r.Om)((e) => h(e).basicHeight),
                                 B = (0, r.Om)((e) => h(e).sections.length),
-                                _ = (0, r.Om)((e, u) => h(e).sections[u]),
-                                f = (0, r.Om)((e, u) => _(e, u).lines.length),
-                                v = (0, r.Om)((e, u) => _(e, u).fullHeight),
-                                p = (0, r.Om)((e, u, t) => _(e, u).lines[t]),
+                                f = (0, r.Om)((e, u) => h(e).sections[u]),
+                                _ = (0, r.Om)((e, u) => f(e, u).lines.length),
+                                v = (0, r.Om)((e, u) => f(e, u).fullHeight),
+                                p = (0, r.Om)((e, u, t) => f(e, u).lines[t]),
                                 w = (0, r.Om)(() =>
                                     o().some((e) =>
                                         e.sections.some((e) => e.lines.some((e) => 'angleImpact' === e.name)),
                                     ),
                                 ),
-                                b = (0, r.Om)((e, u) => _(e, u).hasTopSeparator);
+                                b = (0, r.Om)((e, u) => f(e, u).hasTopSeparator);
                             return Object.assign({}, u, {
                                 table: l,
                                 computes: {
                                     table: {
-                                        getLeaderVisibility: m,
+                                        getLeaderVisibility: E,
                                         getProgressProps: c,
                                         getData: t,
                                         getCardsCount: F,
@@ -1344,7 +1368,7 @@
                                     },
                                     section: {
                                         getHeight: v,
-                                        getLinesCount: f,
+                                        getLinesCount: _,
                                         getLine: p,
                                         getAngles: s,
                                         getHasTopSeparator: b,
@@ -1379,8 +1403,8 @@
                 const l = 'MarkerView_base_1b',
                     s = 'MarkerView_base__hidden_c2';
                 var c = t(1433);
-                const E = (e) => e * e,
-                    m = 'Leader_base_ea';
+                const m = (e) => e * e,
+                    E = 'Leader_base_ea';
                 var d = t(7030);
                 const A = (0, r.Pi)(() => {
                         const e = (0, o.t)(),
@@ -1439,12 +1463,12 @@
                         const D = (0, d.useSpring)({
                             from: { width: '0rem' },
                             to: { width: r ? `${c.d2}rem` : '0rem' },
-                            config: { duration: c.zn, easing: E },
+                            config: { duration: c.zn, easing: m },
                             onRest: () => t(r),
                         });
                         return n().createElement(
                             d.animated.div,
-                            { style: D, className: m },
+                            { style: D, className: E },
                             n().createElement('canvas', { ref: i, width: c.d2 * s, height: c.Cb * s }),
                         );
                     }),
@@ -1458,8 +1482,8 @@
                 const g = 'Section_base_d7',
                     C = 'Section_base__separator_9d';
                 var B = t(9916);
-                const _ = 31,
-                    f = Math.ceil(42),
+                const f = 31,
+                    _ = Math.ceil(42),
                     v = (e) => (Math.PI * e) / 180,
                     p = 'ImpactIndicator_base_bd',
                     w = 'ImpactIndicator_shadowedOverlay_5d';
@@ -1480,8 +1504,8 @@
                             l = (0, a.useRef)(null),
                             s = (0, a.useRef)(null),
                             c = ((0, i.GS)().mediaSize === i.cJ.ExtraSmall ? 0.9 : 1) * viewEnv.getScale(),
-                            E = 48 * c,
-                            m = 84 * c,
+                            m = 48 * c,
+                            E = 84 * c,
                             d = (function () {
                                 var e,
                                     a =
@@ -1490,14 +1514,14 @@
                                             const e = l.current.getContext('2d'),
                                                 a = s.current.getContext('2d');
                                             if (!e || !a) return;
-                                            (e.canvas.width = E),
-                                                (e.canvas.height = m),
-                                                (a.canvas.width = E),
-                                                (a.canvas.height = m),
+                                            (e.canvas.width = m),
+                                                (e.canvas.height = E),
+                                                (a.canvas.width = m),
+                                                (a.canvas.height = E),
                                                 e.scale(c, c),
                                                 a.scale(c, c),
-                                                e.clearRect(0, 0, E, m),
-                                                a.clearRect(0, 0, E, m),
+                                                e.clearRect(0, 0, m, E),
+                                                a.clearRect(0, 0, m, E),
                                                 (e.strokeStyle = 'white'),
                                                 (e.fillStyle = 'white'),
                                                 (a.strokeStyle = 'white'),
@@ -1509,10 +1533,10 @@
                                                 e.save(),
                                                     e.beginPath(),
                                                     (e.fillStyle = '#4c4c4c'),
-                                                    e.moveTo(6, f),
-                                                    e.arc(6, f, _, v(-90), -u),
-                                                    e.moveTo(6, f),
-                                                    e.arc(6, f, _, v(90), u, !0),
+                                                    e.moveTo(6, _),
+                                                    e.arc(6, _, f, v(-90), -u),
+                                                    e.moveTo(6, _),
+                                                    e.arc(6, _, f, v(90), u, !0),
                                                     e.fill(),
                                                     e.restore();
                                             })(e, n),
@@ -1520,10 +1544,10 @@
                                                     e.save(),
                                                         e.beginPath(),
                                                         (e.fillStyle = '#7b7b7b'),
-                                                        e.moveTo(6, f),
-                                                        e.arc(6, f, _, -u, -t),
-                                                        e.moveTo(6, f),
-                                                        e.arc(6, f, _, u, t, !0),
+                                                        e.moveTo(6, _),
+                                                        e.arc(6, _, f, -u, -t),
+                                                        e.moveTo(6, _),
+                                                        e.arc(6, _, f, u, t, !0),
                                                         e.fill(),
                                                         e.restore();
                                                 })(e, n, i),
@@ -1531,8 +1555,8 @@
                                                     e.save(),
                                                         e.beginPath(),
                                                         (e.fillStyle = '#bfbfbf'),
-                                                        e.moveTo(6, f),
-                                                        e.arc(6, f, _, -u, u),
+                                                        e.moveTo(6, _),
+                                                        e.arc(6, _, f, -u, u),
                                                         e.fill(),
                                                         e.restore();
                                                 })(e, i),
@@ -1540,19 +1564,19 @@
                                                     e.save(),
                                                         (e.fillStyle = '#dcdcdc'),
                                                         e.beginPath(),
-                                                        e.moveTo(6, f),
-                                                        e.arc(6, f, _, v(0), u),
+                                                        e.moveTo(6, _),
+                                                        e.arc(6, _, f, v(0), u),
                                                         e.fill(),
                                                         e.restore();
                                                 })(a, o),
                                                 ((e) => {
-                                                    e.fillRect(4, f, 34, 1);
+                                                    e.fillRect(4, _, 34, 1);
                                                 })(a),
                                                 ((e, u) => {
                                                     e.save();
                                                     const t = Math.cos(u),
                                                         a = Math.sin(u);
-                                                    e.transform(t, a, -a, t, 6, f),
+                                                    e.transform(t, a, -a, t, 6, _),
                                                         ((e) => {
                                                             for (let u = 0; u < 7.75; u++)
                                                                 e.fillRect(4 * u, 0, 2, 1), e.moveTo(4 * u + 2, 0);
@@ -1579,7 +1603,7 @@
                                                 })(a, o),
                                                 ((e) => {
                                                     e.save();
-                                                    const u = f - 33,
+                                                    const u = _ - 33,
                                                         t = 66 / 9,
                                                         a = u + 0.5,
                                                         n = a + 1.5,
@@ -1621,28 +1645,28 @@
                             n().createElement(
                                 'div',
                                 { className: p },
-                                n().createElement('canvas', { ref: l, width: E, height: m }),
-                                n().createElement('canvas', { ref: s, width: E, height: m, className: w }),
+                                n().createElement('canvas', { ref: l, width: m, height: E }),
+                                n().createElement('canvas', { ref: s, width: m, height: E, className: w }),
                             )
                         );
                     }),
-                    x = 'Icon_base_c6';
-                var y = t(3138);
+                    y = 'Icon_base_c6';
+                var x = t(3138);
                 let P;
                 !(function (e) {
                     (e.Small = 'small'), (e.Medium = 'medium');
                 })(P || (P = {}));
                 const O = R.atlases.deathCam,
-                    L = ({ name: e, value: u, impactMode: t, isKillerUnspotted: r }) => {
+                    I = ({ name: e, value: u, impactMode: t, isKillerUnspotted: r }) => {
                         const i =
                                 (() => {
-                                    const e = (0, a.useState)(y.O.view.getScale()),
+                                    const e = (0, a.useState)(x.O.view.getScale()),
                                         u = e[0],
                                         t = e[1];
                                     return (
                                         (0, a.useEffect)(() => {
                                             const e = () => {
-                                                t(y.O.view.getScale());
+                                                t(x.O.view.getScale());
                                             };
                                             return (
                                                 window.addEventListener('resize', e),
@@ -1663,7 +1687,7 @@
                             let a = e;
                             return 'shellType' === e
                                 ? n().createElement('div', {
-                                      className: x,
+                                      className: y,
                                       style: { backgroundImage: `url(${o.$dyn(u.toString())})` },
                                   })
                                 : ('deathReason' === e
@@ -1672,17 +1696,27 @@
                                         ? (a = t)
                                         : 'shootDistance' === e && r && (a = 'unspotted'),
                                   n().createElement('div', {
-                                      className: x,
+                                      className: y,
                                       style: { backgroundImage: `url(${null == (l = O[a]) ? void 0 : l.call(O)})` },
                                   }));
                         }
                     };
-                var I = t(4969),
+                var L = t(4969),
                     T = t(3649);
-                const H = R.strings.death_cam.marker,
-                    M = ['shellArmorAngleGain', 'shellDamageRandomizationFactor', 'damageDistanceModifier'],
-                    k = ['shootDistance'];
-                I.kb.crew, I.kb.detonation, I.kb.ignition;
+                const M = R.strings.death_cam.marker,
+                    H = ['shellArmorAngleGain', 'shellDamageRandomizationFactor', 'damageDistanceModifier'],
+                    k = [
+                        'shellDamageEffective',
+                        'shellDamageBasic',
+                        'shellDamageRandomizationFactor',
+                        'damageDistanceModifier',
+                        'shellDamageBurst',
+                        'shellDamageLossProtectionHe',
+                        'shellDamageLossProtectionSpallLiner',
+                        'shellDamageLossDistance',
+                    ],
+                    Q = ['shootDistance'];
+                L.kb.crew, L.kb.detonation, L.kb.ignition;
                 var N;
                 !(function (e) {
                     (e.ARMOR_PIERCING = 'ARMOR_PIERCING'),
@@ -1691,26 +1725,60 @@
                         (e.HOLLOW_CHARGE = 'HOLLOW_CHARGE'),
                         (e.HIGH_EXPLOSIVE = 'HIGH_EXPLOSIVE');
                 })(N || (N = {}));
-                const Q = {
-                        [I.gC.armorPiercing]: N.ARMOR_PIERCING,
-                        [I.gC.armorPiercingPremium]: N.ARMOR_PIERCING,
-                        [I.gC.armorPiercingCr]: N.ARMOR_PIERCING_CR,
-                        [I.gC.armorPiercingCrPremium]: N.ARMOR_PIERCING_CR,
-                        [I.gC.highExplosive]: N.HIGH_EXPLOSIVE,
-                        [I.gC.highExplosivePremium]: N.HIGH_EXPLOSIVE,
-                        [I.gC.highExplosiveModern]: N.HIGH_EXPLOSIVE,
-                        [I.gC.highExplosiveSpg]: N.HIGH_EXPLOSIVE,
-                        [I.gC.highExplosiveSpgStun]: N.HIGH_EXPLOSIVE,
-                        [I.gC.highExplosiveModernPremium]: N.HIGH_EXPLOSIVE,
-                        [I.gC.hollowCharge]: N.HOLLOW_CHARGE,
-                        [I.gC.hollowChargePremium]: N.HOLLOW_CHARGE,
+                const j = {
+                        [L.gC.armorPiercing]: N.ARMOR_PIERCING,
+                        [L.gC.armorPiercingPremium]: N.ARMOR_PIERCING,
+                        [L.gC.armorPiercingCr]: N.ARMOR_PIERCING_CR,
+                        [L.gC.armorPiercingCrPremium]: N.ARMOR_PIERCING_CR,
+                        [L.gC.highExplosive]: N.HIGH_EXPLOSIVE,
+                        [L.gC.highExplosivePremium]: N.HIGH_EXPLOSIVE,
+                        [L.gC.highExplosiveModern]: N.HIGH_EXPLOSIVE,
+                        [L.gC.highExplosiveSpg]: N.HIGH_EXPLOSIVE,
+                        [L.gC.highExplosiveSpgStun]: N.HIGH_EXPLOSIVE,
+                        [L.gC.highExplosiveModernPremium]: N.HIGH_EXPLOSIVE,
+                        [L.gC.hollowCharge]: N.HOLLOW_CHARGE,
+                        [L.gC.hollowChargePremium]: N.HOLLOW_CHARGE,
                     },
-                    j = (e, u = !1) => {
+                    W = (e, u = !1) => {
                         const t = R.strings.item_types.shell[u ? 'kindsAbbreviation' : 'kinds'],
-                            a = Q[e];
+                            a = j[e];
                         return t[a] ? t[a]() : (console.error('No text for shell type', e), '');
                     },
-                    W = {
+                    G = (e, u, t, a, n, r, i, o) => {
+                        let l = String(u);
+                        'number' == typeof u &&
+                            ((l = ((e, u) =>
+                                k.includes(e) ? (u < 0 ? Math.abs(u).toFixed(1) : u.toFixed(1)) : String(u))(e, u)),
+                            H.includes(e) && u > 0
+                                ? (l = (0, T.uF)(M.value.signPositive(), { value: l }))
+                                : u < 0 && (l = (0, T.uF)(M.value.signNegative(), { value: l })));
+                        let s = String(l);
+                        if (
+                            ('angleRicochet' === e && u >= 90) ||
+                            ('angleRicochet' === e &&
+                                c.HE.includes(n) &&
+                                (a === L.pE.penetration || a === L.pE.nonPenetrationDamage)) ||
+                            ('angleRicochet' === e && i)
+                        )
+                            s = M.value.notAffected();
+                        else if (t && 'damageDistanceModifier' === e) s = M.value.unspotted();
+                        else {
+                            if (t && Q.includes(e)) return '';
+                            'shellPenetrationEffective' === e && a !== L.pE.penetration
+                                ? (s = M.value.failed())
+                                : ('armorRelative' === e && 0 === r) || ('angleFailure' === e && u >= o)
+                                  ? (s = M.value.dashes())
+                                  : 'angleImpact' === e
+                                    ? (s = M.value.angle.exact())
+                                    : 'angleRicochet' === e || 'angleFailure' === e
+                                      ? (s = M.value.angle.more())
+                                      : 'caliberRule' === e
+                                        ? (s = M.value.applied())
+                                        : 'deathReason' === e && (s = M.paramName.deathReason[u]());
+                        }
+                        return (0, T.uF)(s, { value: l });
+                    },
+                    V = {
                         base: 'DataLine_base_16',
                         iconContainer__impactAngle: 'DataLine_iconContainer__impactAngle_26',
                         iconContainer: 'DataLine_iconContainer_c8',
@@ -1728,8 +1796,8 @@
                         headIconTank: 'DataLine_headIconTank_dc',
                         additionalShellInfo: 'DataLine_additionalShellInfo_25',
                     },
-                    G = 'ColoredText_unit_3b',
-                    V = ({ text: e }) => {
+                    z = 'ColoredText_unit_3b',
+                    U = ({ text: e }) => {
                         const u = /{colorTagOpen}([^{]*){colorTagClose}/g,
                             t = e.split(u);
                         if (t.length <= 1) return n().createElement(n().Fragment, null, e);
@@ -1737,154 +1805,123 @@
                             r = u.exec(e).pop();
                         return (
                             t.forEach((e) =>
-                                a.push(e === r ? n().createElement('div', { className: G, key: e }, e) : e),
+                                a.push(e === r ? n().createElement('div', { className: z, key: e }, e) : e),
                             ),
                             n().createElement(n().Fragment, null, a)
                         );
                     };
-                var z = t(2290);
-                const U = (0, r.Pi)(({ cardId: e, sectionId: u, lineId: t, isAdvancedLinesVisible: a }) => {
+                var K = t(2290);
+                const q = (0, r.Pi)(({ cardId: e, sectionId: u, lineId: t, isAdvancedLinesVisible: a }) => {
                         const r = (0, o.t)().model,
                             i = r.valueWidth,
                             l = r.computes,
                             s = l.section,
-                            E = l.table,
-                            m = l.getCommonDataLineProps,
+                            m = l.table,
+                            E = l.getCommonDataLineProps,
                             d = s.getLine(e, u, t),
                             A = d.name,
                             F = d.value,
                             h = d.effects,
                             g = d.height,
-                            C = m(),
+                            C = E(),
                             B = C.isKillerUnspotted,
-                            _ = C.impactMode,
-                            f = C.shellType,
+                            f = C.impactMode,
+                            _ = C.shellType,
                             v = C.shellIcon,
                             p = C.armorNominal,
                             w = C.is3CaliberRuleApplied,
                             b = C.angleRicochet,
                             S = h.has(c.Qm.HeadIconShell) || h.has(c.Qm.HeadIconTank),
-                            x = S ? g - c.h - c.YF : g,
-                            y = D()(W.base, [[...h].map((e) => W[e])]),
+                            y = S ? g - c.h - c.YF : g,
+                            x = D()(V.base, [[...h].map((e) => V[e])]),
                             O = D()(
-                                W.iconContainer,
-                                'angleImpact' === A && W.iconContainer__impactAngle,
-                                E.getHasAngleIndicator() && W.iconContainer__wide,
+                                V.iconContainer,
+                                'angleImpact' === A && V.iconContainer__impactAngle,
+                                m.getHasAngleIndicator() && V.iconContainer__wide,
                             ),
-                            N = D()(
-                                W.value,
+                            T = D()(
+                                V.value,
                                 'shootDistance' === A &&
                                     B &&
-                                    (model.marker.isSimplified ? W.value__unspottedSimple : W.value__unspottedDetailed),
+                                    (model.marker.isSimplified ? V.value__unspottedSimple : V.value__unspottedDetailed),
                             ),
-                            Q = (({ name: e, value: u, impactMode: t, armorNominal: a, isKillerUnspotted: n }) => {
+                            H = (({ name: e, value: u, impactMode: t, armorNominal: a, isKillerUnspotted: n }) => {
                                 var r;
                                 const i = () => {
-                                    const u = H.paramName,
+                                    const u = M.paramName,
                                         t = e;
                                     return u[t] ? u[t]() : (console.error('No text for Parameter Name', e), '');
                                 };
                                 switch (e) {
                                     case 'deathReason': {
-                                        const e = H.paramName.deathReason,
+                                        const e = M.paramName.deathReason,
                                             t = u;
                                         return e[t] ? e[t]() : (console.error('No text for death reason', u), '');
                                     }
                                     case 'shellType':
-                                        return j(u);
+                                        return W(u);
                                     case 'armorRelative':
                                         var o;
-                                        return 0 === a ? (null != (o = H.paramName.nonArmored()) ? o : '') : i();
+                                        return 0 === a ? (null != (o = M.paramName.nonArmored()) ? o : '') : i();
                                     case 'shellDamageEffective':
-                                        return null != (r = H.paramName.shellDamageEffective[t]()) ? r : '';
+                                        return null != (r = M.paramName.shellDamageEffective[t]()) ? r : '';
                                     case 'caliberRule':
-                                        return u === I.fE.TwoCaliber
-                                            ? H.paramName.is2CaliberRuleApplied()
-                                            : H.paramName.is3CaliberRuleApplied();
+                                        return u === L.fE.TwoCaliber
+                                            ? M.paramName.is2CaliberRuleApplied()
+                                            : M.paramName.is3CaliberRuleApplied();
                                     case 'shootDistance':
-                                        return n ? H.paramName.shootDistanceUnspotted() : H.paramName.shootDistance();
+                                        return n ? M.paramName.shootDistanceUnspotted() : M.paramName.shootDistance();
                                     default:
                                         return i();
                                 }
-                            })({ name: A, value: F, impactMode: _, armorNominal: p, isKillerUnspotted: B }),
-                            G = R.images.gui.maps.icons.shell.$dyn(P.Small);
+                            })({ name: A, value: F, impactMode: f, armorNominal: p, isKillerUnspotted: B }),
+                            k = R.images.gui.maps.icons.shell.$dyn(P.Small);
                         return n().createElement(
                             n().Fragment,
                             null,
                             S &&
                                 n().createElement(
                                     'div',
-                                    { className: D()(W.extraHeader, y) },
-                                    n().createElement('div', { className: W.extraHeader_icon }),
+                                    { className: D()(V.extraHeader, x) },
+                                    n().createElement('div', { className: V.extraHeader_icon }),
                                 ),
                             n().createElement(
                                 'div',
-                                { className: y, style: { height: `${x}rem` } },
-                                (0, z.f8)(h) &&
+                                { className: x, style: { height: `${y}rem` } },
+                                (0, K.f8)(h) &&
                                     !(h.has(c.Qm.Advanced) && !a) &&
-                                    n().createElement('div', { className: W.glowElement }),
+                                    n().createElement('div', { className: V.glowElement }),
                                 n().createElement(
                                     'div',
                                     { className: O },
                                     h.has(c.Qm.Icon) &&
-                                        n().createElement(L, {
+                                        n().createElement(I, {
                                             name: A,
                                             value: 'shellType' === A ? v : F,
-                                            impactMode: _,
+                                            impactMode: f,
                                             isKillerUnspotted: B,
                                         }),
                                 ),
                                 !['shellType', 'deathReason'].includes(A) &&
                                     n().createElement(
                                         'div',
-                                        { className: N, style: { width: i.get() } },
-                                        ((e, u, t, a, n, r, i, o) => {
-                                            let l = String(u);
-                                            'number' == typeof u &&
-                                                (M.includes(e) && u > 0
-                                                    ? (l = (0, T.uF)(H.value.signPositive(), { value: u }))
-                                                    : u < 0 &&
-                                                      (l = (0, T.uF)(H.value.signNegative(), { value: Math.abs(u) })));
-                                            let s = String(l);
-                                            if (
-                                                ('angleRicochet' === e && u >= 90) ||
-                                                ('angleRicochet' === e && c.HE.includes(n) && a === I.pE.penetration) ||
-                                                ('angleRicochet' === e && i)
-                                            )
-                                                s = H.value.notAffected();
-                                            else if (t && 'damageDistanceModifier' === e) s = H.value.unspotted();
-                                            else {
-                                                if (t && k.includes(e)) return '';
-                                                'shellPenetrationEffective' === e && a !== I.pE.penetration
-                                                    ? (s = H.value.failed())
-                                                    : ('armorRelative' === e && 0 === r) ||
-                                                        ('angleFailure' === e && u >= o)
-                                                      ? (s = H.value.dashes())
-                                                      : 'angleImpact' === e
-                                                        ? (s = H.value.angle.exact())
-                                                        : 'angleRicochet' === e || 'angleFailure' === e
-                                                          ? (s = H.value.angle.more())
-                                                          : 'caliberRule' === e
-                                                            ? (s = H.value.applied())
-                                                            : 'deathReason' === e && (s = H.paramName.deathReason[u]());
-                                            }
-                                            return (0, T.uF)(s, { value: l });
-                                        })(A, F, B, _, f, p, w, b),
+                                        { className: T, style: { width: i.get() } },
+                                        G(A, F, B, f, _, p, w, b),
                                     ),
-                                n().createElement(V, { text: Q }),
+                                n().createElement(U, { text: H }),
                                 h.has(c.Qm.AdditionalShellInfo) &&
                                     n().createElement(
                                         'div',
                                         {
-                                            className: W.additionalShellInfo,
-                                            style: { backgroundImage: `url(${G.$dyn(v)})` },
+                                            className: V.additionalShellInfo,
+                                            style: { backgroundImage: `url(${k.$dyn(v)})` },
                                         },
-                                        j(f, !0),
+                                        W(_, !0),
                                     ),
                             ),
                         );
                     }),
-                    K = (0, r.Pi)(({ cardId: e, sectionId: u, isAdvancedLinesVisible: t }) => {
+                    $ = (0, r.Pi)(({ cardId: e, sectionId: u, isAdvancedLinesVisible: t }) => {
                         const a = (0, o.t)().model.computes.section,
                             r = a.getLinesCount(e, u),
                             i = a.getHasTopSeparator(e, u),
@@ -1894,7 +1931,7 @@
                             'div',
                             { key: `${e}:${u}`, className: s, style: { height: `${l}rem` } },
                             F(r, (a) =>
-                                n().createElement(U, {
+                                n().createElement(q, {
                                     key: `${e}:${u}:${a}`,
                                     cardId: e,
                                     sectionId: u,
@@ -1904,32 +1941,32 @@
                             ),
                         );
                     }),
-                    q = 'CardAnimation_card_3d',
-                    $ = (0, r.Pi)(({ cardId: e, bottomToTop: u = !1, isExpanding: t }) => {
+                    Y = 'CardAnimation_card_3d',
+                    X = (0, r.Pi)(({ cardId: e, bottomToTop: u = !1, isExpanding: t }) => {
                         const r = (0, o.t)(),
                             i = r.model,
                             l = i.marker,
                             s = i.computes,
                             c = s.table,
-                            E = s.card,
-                            m = r.controls.setLeaderVisibility,
+                            m = s.card,
+                            E = r.controls.setLeaderVisibility,
                             A = c.getVisibility(),
                             h = l.get().isAdvanced && !l.get().isSimplified,
                             D = A && h === t ? 'advanced' : 'basic',
-                            g = E.getAnimationParams(e, D),
+                            g = m.getAnimationParams(e, D),
                             C = g.dimensionsIncreaseDelay,
                             B = g.contentIncreaseDelay,
-                            _ = g.contentDecreaseDelay,
-                            f = g.dimensionsDecreaseDelay,
+                            f = g.contentDecreaseDelay,
+                            _ = g.dimensionsDecreaseDelay,
                             v = g.duration;
                         let p = 0;
-                        A && (p = h ? E.getFullHeight(e) : E.getBasicHeight(e));
-                        const w = t ? B : _,
-                            b = t ? C : f,
+                        A && (p = h ? m.getFullHeight(e) : m.getBasicHeight(e));
+                        const w = t ? B : f,
+                            b = t ? C : _,
                             S = (0, a.useState)(A && t),
-                            x = S[0],
-                            y = S[1],
-                            P = A ? 0 : E.getFullHeight(e),
+                            y = S[0],
+                            x = S[1],
+                            P = A ? 0 : m.getFullHeight(e),
                             R = (0, a.useRef)(!0);
                         (0, a.useEffect)(
                             () => () => {
@@ -1943,58 +1980,58 @@
                                     : `polygon(0rem 0rem, 100% 0rem, 100% ${p - 0.1}rem, 0rem ${p - 0.1}rem)`,
                                 delay: w,
                                 config: { duration: v },
-                                onRest: () => R.current && y(h),
-                                onStart: () => h && t && y(!0),
+                                onRest: () => R.current && x(h),
+                                onStart: () => h && t && x(!0),
                             }).clipPath,
-                            L = (0, d.useSpring)({
+                            I = (0, d.useSpring)({
                                 height: `${p}rem`,
                                 delay: b,
                                 config: { duration: v },
-                                onRest: () => !u && m(A),
+                                onRest: () => !u && E(A),
                             }).height;
                         return n().createElement(
                             d.animated.div,
-                            { style: { clipPath: O, height: L } },
+                            { style: { clipPath: O, height: I } },
                             n().createElement(
                                 'div',
-                                { className: q },
-                                F(E.getSectionsCount(e), (u) =>
-                                    n().createElement(K, {
+                                { className: Y },
+                                F(m.getSectionsCount(e), (u) =>
+                                    n().createElement($, {
                                         key: `${e}:${u}`,
                                         cardId: e,
                                         sectionId: u,
-                                        isAdvancedLinesVisible: x,
+                                        isAdvancedLinesVisible: y,
                                     }),
                                 ),
                             ),
                         );
                     }),
-                    Y = 'CardContainer_base_da',
-                    X = 'CardContainer_base__empty_d1',
-                    Z = 'CardContainer_children_7a',
-                    J = 'CardContainer_border_d6',
-                    ee = 'CardContainer_background_49',
-                    ue = ({ isEmpty: e, children: u }) =>
+                    Z = 'CardContainer_base_da',
+                    J = 'CardContainer_base__empty_d1',
+                    ee = 'CardContainer_children_7a',
+                    ue = 'CardContainer_border_d6',
+                    te = 'CardContainer_background_49',
+                    ae = ({ isEmpty: e, children: u }) =>
                         n().createElement(
                             'div',
-                            { className: D()(Y, e && X) },
-                            n().createElement('div', { className: J }),
-                            n().createElement('div', { className: ee }),
-                            n().createElement('div', { className: Z }, u),
+                            { className: D()(Z, e && J) },
+                            n().createElement('div', { className: ue }),
+                            n().createElement('div', { className: te }),
+                            n().createElement('div', { className: ee }, u),
                         ),
-                    te = 'Progress_base_42',
-                    ae = 'Progress_bar_72',
-                    ne = 'Progress_ending_c8',
-                    re = (0, r.Pi)(({ isVisible: e = !0 }) => {
+                    ne = 'Progress_base_42',
+                    re = 'Progress_bar_72',
+                    ie = 'Progress_ending_c8',
+                    oe = (0, r.Pi)(({ isVisible: e = !0 }) => {
                         var u, t;
                         const r = (0, o.t)().model.computes.table.getProgressProps(),
                             i = r.phaseTimePassed,
                             l = r.phaseDuration,
                             s = r.isAdvanced,
-                            E = (0, a.useRef)(null),
-                            m = viewEnv.pxToRem(null != (u = null == (t = E.current) ? void 0 : t.scrollWidth) ? u : 0),
-                            A = m - 8,
-                            F = l ? (m * i) / l : A,
+                            m = (0, a.useRef)(null),
+                            E = viewEnv.pxToRem(null != (u = null == (t = m.current) ? void 0 : t.scrollWidth) ? u : 0),
+                            A = E - 8,
+                            F = l ? (E * i) / l : A,
                             h = (0, d.useSpring)({
                                 pause: s,
                                 from: { width: `${F}rem` },
@@ -2004,13 +2041,13 @@
                             D = (0, d.useSpring)({ opacity: Number(e), config: { duration: c.zn } }).opacity;
                         return n().createElement(
                             d.animated.div,
-                            { className: te, style: { opacity: D }, ref: E },
-                            n().createElement(d.animated.div, { className: ae, style: { width: h } }),
-                            n().createElement('div', { className: ne }),
+                            { className: ne, style: { opacity: D }, ref: m },
+                            n().createElement(d.animated.div, { className: re, style: { width: h } }),
+                            n().createElement('div', { className: ie }),
                         );
                     }),
-                    ie = 'DataTable_top_8f',
-                    oe = (0, r.Pi)(() => {
+                    le = 'DataTable_top_8f',
+                    se = (0, r.Pi)(() => {
                         const e = (0, o.t)(),
                             u = e.model,
                             t = u.marker,
@@ -2018,26 +2055,26 @@
                             i = r.table,
                             l = r.card,
                             s = e.controls.setValueWidth,
-                            E = t.get().isAdvanced,
-                            m = i.getVisibility(),
+                            m = t.get().isAdvanced,
+                            E = i.getVisibility(),
                             d = (0, a.useRef)(null),
                             A = (0, a.useRef)(null),
                             h = (0, a.useRef)(0),
-                            D = (0, a.useMemo)(() => Number(m) + Number(E) >= h.current, [m, E]),
+                            D = (0, a.useMemo)(() => Number(E) + Number(m) >= h.current, [E, m]),
                             g = (0, a.useState)(!1),
                             C = g[0],
                             B = g[1],
-                            _ = (0, a.useState)(!1),
-                            f = _[0],
-                            v = _[1];
-                        !f && s('unset'),
+                            f = (0, a.useState)(!1),
+                            _ = f[0],
+                            v = f[1];
+                        !_ && s('unset'),
                             (0, a.useEffect)(() => {
-                                h.current = Number(m) + Number(E);
-                            }, [m, E]),
+                                h.current = Number(E) + Number(m);
+                            }, [E, m]),
                             (0, a.useEffect)(() => {
-                                const e = setTimeout(() => B(m), m ? c.zn : 0);
+                                const e = setTimeout(() => B(E), E ? c.zn : 0);
                                 return () => clearTimeout(e);
-                            }, [m]),
+                            }, [E]),
                             (0, a.useEffect)(
                                 () =>
                                     ((e) => {
@@ -2060,7 +2097,7 @@
                                                 (e =
                                                     null == (u = d.current)
                                                         ? void 0
-                                                        : u.getElementsByClassName(W.value))
+                                                        : u.getElementsByClassName(V.value))
                                                 ? e
                                                 : [],
                                         );
@@ -2070,23 +2107,23 @@
                                         ),
                                             v(!0);
                                     }),
-                                [s, m],
+                                [s, E],
                             );
                         const p = l.getFullHeight(0);
                         return n().createElement(
                             'div',
                             {
                                 ref: d,
-                                style: { marginTop: f ? c.ut - p + 'rem' : void 0, marginLeft: `${c.oP + 4}rem` },
+                                style: { marginTop: _ ? c.ut - p + 'rem' : void 0, marginLeft: `${c.oP + 4}rem` },
                             },
                             n().createElement(
                                 'div',
-                                { className: ie, style: { height: `${p}rem` } },
-                                n().createElement(re, { isVisible: C }),
+                                { className: le, style: { height: `${p}rem` } },
+                                n().createElement(oe, { isVisible: C }),
                                 n().createElement(
-                                    ue,
+                                    ae,
                                     null,
-                                    n().createElement($, { cardId: 0, bottomToTop: !0, isExpanding: D }),
+                                    n().createElement(X, { cardId: 0, bottomToTop: !0, isExpanding: D }),
                                 ),
                             ),
                             n().createElement(
@@ -2095,9 +2132,9 @@
                                 F(i.getCardsCount() - 1, (e) => {
                                     const u = e + 1;
                                     return n().createElement(
-                                        ue,
-                                        { isEmpty: !(Boolean(l.getBasicHeight(u)) || E), key: e },
-                                        n().createElement($, { cardId: u, isExpanding: D }),
+                                        ae,
+                                        { isEmpty: !(Boolean(l.getBasicHeight(u)) || m), key: e },
+                                        n().createElement(X, { cardId: u, isExpanding: D }),
                                     );
                                 }),
                             ),
@@ -2115,7 +2152,7 @@
                             'data-bind-style-top': `parseFloat({{model.marker.base.posy}} + ${c.xS})+"rem"`,
                         },
                         n().createElement(A, null),
-                        n().createElement(oe, { key: u.marker.get().phase + e }),
+                        n().createElement(se, { key: u.marker.get().phase + e }),
                     );
                 });
             },
@@ -2128,13 +2165,13 @@
                     Qm: () => h,
                     SA: () => n,
                     YF: () => d,
-                    d2: () => E,
+                    d2: () => m,
                     h: () => A,
                     lG: () => c,
                     oP: () => l,
                     ut: () => s,
                     xS: () => o,
-                    zn: () => m,
+                    zn: () => E,
                 });
                 var a = t(4969);
                 const n = 15,
@@ -2144,8 +2181,8 @@
                     l = n + 64,
                     s = r - 64,
                     c = 2,
-                    E = l + c + 2,
-                    m = 300,
+                    m = l + c + 2,
+                    E = 300,
                     d = 1,
                     A = 16,
                     F = {
@@ -2175,55 +2212,55 @@
             },
             2290: (e, u, t) => {
                 t.d(u, { f8: () => l, uz: () => C });
-                var a = t(4969),
-                    n = t(1433),
-                    r = t(1043),
-                    i = t(5262);
+                var a = t(1043),
+                    n = t(5262),
+                    r = t(4969),
+                    i = t(1433);
                 const o = {
-                        [a.pE.penetration]: {
-                            [a.nz.killer]: [
+                        [r.pE.penetration]: {
+                            [r.nz.killer]: [
                                 [
                                     [
                                         {
                                             name: 'shellType',
-                                            effects: new Set([n.Qm.Major, n.Qm.Icon, n.Qm.HeadIconShell]),
+                                            effects: new Set([i.Qm.Major, i.Qm.Icon, i.Qm.HeadIconShell]),
                                         },
                                     ],
                                 ],
                                 [
                                     [
-                                        { name: 'shellCaliber', effects: new Set([n.Qm.Major, n.Qm.Icon]) },
-                                        { name: 'caliberRule', effects: new Set([n.Qm.OrangeGlow, n.Qm.Advanced]) },
+                                        { name: 'shellCaliber', effects: new Set([i.Qm.Major, i.Qm.Icon]) },
+                                        { name: 'caliberRule', effects: new Set([i.Qm.OrangeGlow, i.Qm.Advanced]) },
                                     ],
                                 ],
                                 [
                                     [
-                                        { name: 'shellDamageBasic', effects: new Set([n.Qm.Advanced]) },
-                                        { name: 'shellVelocityBasic', effects: new Set([n.Qm.Advanced]) },
+                                        { name: 'shellDamageBasic', effects: new Set([i.Qm.Advanced]) },
+                                        { name: 'shellVelocityBasic', effects: new Set([i.Qm.Advanced]) },
                                     ],
                                 ],
                             ],
-                            [a.nz.trajectory]: [
+                            [r.nz.trajectory]: [
                                 [
                                     [
                                         {
                                             name: 'shootDistance',
-                                            effects: new Set([n.Qm.Major, n.Qm.Icon, n.Qm.HeadIconShell]),
+                                            effects: new Set([i.Qm.Major, i.Qm.Icon, i.Qm.HeadIconShell]),
                                         },
                                     ],
                                 ],
                                 [
-                                    [{ name: 'shellPenetrationEffective', effects: new Set([n.Qm.Major, n.Qm.Icon]) }],
-                                    [{ name: 'shellPenetrationBasic', effects: new Set([n.Qm.Advanced]) }],
+                                    [{ name: 'shellPenetrationEffective', effects: new Set([i.Qm.Major, i.Qm.Icon]) }],
+                                    [{ name: 'shellPenetrationBasic', effects: new Set([i.Qm.Advanced]) }],
                                 ],
-                                [[{ name: 'shellType', effects: new Set([n.Qm.Major, n.Qm.Icon]) }]],
+                                [[{ name: 'shellType', effects: new Set([i.Qm.Major, i.Qm.Icon]) }]],
                             ],
-                            [a.nz.impact]: [
+                            [r.nz.impact]: [
                                 [
                                     [
                                         {
                                             name: 'shellPenetrationEffective',
-                                            effects: new Set([n.Qm.Icon, n.Qm.Major, n.Qm.HeadIconShell]),
+                                            effects: new Set([i.Qm.Icon, i.Qm.Major, i.Qm.HeadIconShell]),
                                         },
                                     ],
                                 ],
@@ -2231,19 +2268,19 @@
                                     [
                                         {
                                             name: 'armorRelative',
-                                            effects: new Set([n.Qm.Major, n.Qm.Icon, n.Qm.HeadIconTank]),
+                                            effects: new Set([i.Qm.Major, i.Qm.Icon, i.Qm.HeadIconTank]),
                                         },
                                     ],
                                     [
-                                        { name: 'armorNominal', effects: new Set([n.Qm.Advanced]) },
-                                        { name: 'shellArmorAngleGain', effects: new Set([n.Qm.Advanced]) },
+                                        { name: 'armorNominal', effects: new Set([i.Qm.Advanced]) },
+                                        { name: 'shellArmorAngleGain', effects: new Set([i.Qm.Advanced]) },
                                     ],
                                     [
-                                        { name: 'angleImpact', effects: new Set([n.Qm.Icon, n.Qm.Advanced]) },
-                                        { name: 'angleFailure', effects: new Set([n.Qm.Advanced]) },
+                                        { name: 'angleImpact', effects: new Set([i.Qm.Icon, i.Qm.Advanced]) },
+                                        { name: 'angleFailure', effects: new Set([i.Qm.Advanced]) },
                                         {
                                             name: 'angleRicochet',
-                                            effects: new Set([n.Qm.Advanced, n.Qm.AdditionalShellInfo]),
+                                            effects: new Set([i.Qm.Advanced, i.Qm.AdditionalShellInfo]),
                                         },
                                     ],
                                 ],
@@ -2252,61 +2289,56 @@
                                         {
                                             name: 'shellDamageEffective',
                                             effects: new Set([
-                                                n.Qm.Major,
-                                                n.Qm.Icon,
-                                                n.Qm.Advanced,
-                                                n.Qm.HeadIconShell,
+                                                i.Qm.Major,
+                                                i.Qm.Icon,
+                                                i.Qm.Advanced,
+                                                i.Qm.HeadIconShell,
                                             ]),
                                         },
                                     ],
                                     [
-                                        { name: 'shellDamageBasic', effects: new Set([n.Qm.Advanced]) },
-                                        { name: 'shellDamageRandomizationFactor', effects: new Set([n.Qm.Advanced]) },
-                                        { name: 'damageDistanceModifier', effects: new Set([n.Qm.Advanced]) },
+                                        { name: 'shellDamageBasic', effects: new Set([i.Qm.Advanced]) },
+                                        { name: 'shellDamageRandomizationFactor', effects: new Set([i.Qm.Advanced]) },
+                                        { name: 'damageDistanceModifier', effects: new Set([i.Qm.Advanced]) },
                                     ],
                                 ],
-                                [[{ name: 'deathReason', effects: new Set([n.Qm.RedGlow, n.Qm.Icon, n.Qm.Major]) }]],
+                                [[{ name: 'deathReason', effects: new Set([i.Qm.RedGlow, i.Qm.Icon, i.Qm.Major]) }]],
                             ],
                         },
-                        [a.pE.legacyHE]: {
-                            [a.nz.killer]: [
+                        [r.pE.nonPenetrationDamage]: {
+                            [r.nz.killer]: [
                                 [
                                     [
                                         {
                                             name: 'shellType',
-                                            effects: new Set([n.Qm.Icon, n.Qm.Major, n.Qm.HeadIconShell]),
+                                            effects: new Set([i.Qm.Major, i.Qm.Icon, i.Qm.HeadIconShell]),
                                         },
                                     ],
                                 ],
-                                [
-                                    [{ name: 'shellCaliber', effects: new Set([n.Qm.Major, n.Qm.Icon]) }],
-                                    [
-                                        { name: 'shellDamageBasic', effects: new Set([n.Qm.Advanced]) },
-                                        { name: 'shellVelocityBasic', effects: new Set([n.Qm.Advanced]) },
-                                    ],
-                                ],
+                                [[{ name: 'shellCaliber', effects: new Set([i.Qm.Major, i.Qm.Icon]) }]],
+                                [[{ name: 'shellVelocityBasic', effects: new Set([i.Qm.Advanced]) }]],
                             ],
-                            [a.nz.trajectory]: [
+                            [r.nz.trajectory]: [
                                 [
                                     [
                                         {
                                             name: 'shootDistance',
-                                            effects: new Set([n.Qm.Major, n.Qm.Icon, n.Qm.HeadIconShell]),
+                                            effects: new Set([i.Qm.Major, i.Qm.Icon, i.Qm.HeadIconShell]),
                                         },
                                     ],
                                 ],
                                 [
-                                    [{ name: 'shellPenetrationEffective', effects: new Set([n.Qm.Major, n.Qm.Icon]) }],
-                                    [{ name: 'shellPenetrationBasic', effects: new Set([n.Qm.Advanced]) }],
-                                    [{ name: 'shellType', effects: new Set([n.Qm.Major, n.Qm.Icon]) }],
+                                    [{ name: 'shellPenetrationEffective', effects: new Set([i.Qm.Major, i.Qm.Icon]) }],
+                                    [{ name: 'shellPenetrationBasic', effects: new Set([i.Qm.Advanced]) }],
                                 ],
+                                [[{ name: 'shellType', effects: new Set([i.Qm.Major, i.Qm.Icon]) }]],
                             ],
-                            [a.nz.impact]: [
+                            [r.nz.impact]: [
                                 [
                                     [
                                         {
                                             name: 'shellPenetrationEffective',
-                                            effects: new Set([n.Qm.Major, n.Qm.Icon, n.Qm.HeadIconShell]),
+                                            effects: new Set([i.Qm.Icon, i.Qm.Major, i.Qm.HeadIconShell]),
                                         },
                                     ],
                                 ],
@@ -2314,62 +2346,52 @@
                                     [
                                         {
                                             name: 'shellDamageEffective',
-                                            effects: new Set([n.Qm.Major, n.Qm.Icon, n.Qm.HeadIconShell]),
-                                        },
-                                    ],
-                                    [{ name: 'shellDamageBurst', effects: new Set([n.Qm.Advanced]) }],
-                                    [
-                                        { name: 'shellDamageRandomizationFactor', effects: new Set([n.Qm.Advanced]) },
-                                        { name: 'shellDamageLossDistance', effects: new Set([n.Qm.Advanced]) },
-                                        { name: 'shellDamageLossProtectionHe', effects: new Set([n.Qm.Advanced]) },
-                                        {
-                                            name: 'shellDamageLossProtectionSpallLiner',
-                                            effects: new Set([n.Qm.Advanced]),
+                                            effects: new Set([i.Qm.Major, i.Qm.Icon, i.Qm.HeadIconShell]),
                                         },
                                     ],
                                 ],
-                                [[{ name: 'deathReason', effects: new Set([n.Qm.RedGlow, n.Qm.Icon, n.Qm.Major]) }]],
+                                [[{ name: 'deathReason', effects: new Set([i.Qm.RedGlow, i.Qm.Icon, i.Qm.Major]) }]],
                             ],
                         },
-                        [a.pE.modernHE]: {
-                            [a.nz.killer]: [
+                        [r.pE.legacyHE]: {
+                            [r.nz.killer]: [
                                 [
                                     [
                                         {
                                             name: 'shellType',
-                                            effects: new Set([n.Qm.Major, n.Qm.Icon, n.Qm.HeadIconShell]),
+                                            effects: new Set([i.Qm.Icon, i.Qm.Major, i.Qm.HeadIconShell]),
                                         },
                                     ],
                                 ],
                                 [
-                                    [{ name: 'shellCaliber', effects: new Set([n.Qm.Major, n.Qm.Icon]) }],
+                                    [{ name: 'shellCaliber', effects: new Set([i.Qm.Major, i.Qm.Icon]) }],
                                     [
-                                        { name: 'shellDamageBasic', effects: new Set([n.Qm.Advanced]) },
-                                        { name: 'shellVelocityBasic', effects: new Set([n.Qm.Advanced]) },
+                                        { name: 'shellDamageBasic', effects: new Set([i.Qm.Advanced]) },
+                                        { name: 'shellVelocityBasic', effects: new Set([i.Qm.Advanced]) },
                                     ],
                                 ],
                             ],
-                            [a.nz.trajectory]: [
+                            [r.nz.trajectory]: [
                                 [
                                     [
                                         {
                                             name: 'shootDistance',
-                                            effects: new Set([n.Qm.Major, n.Qm.Icon, n.Qm.HeadIconShell]),
+                                            effects: new Set([i.Qm.Major, i.Qm.Icon, i.Qm.HeadIconShell]),
                                         },
                                     ],
                                 ],
                                 [
-                                    [{ name: 'shellPenetrationEffective', effects: new Set([n.Qm.Major, n.Qm.Icon]) }],
-                                    [{ name: 'shellPenetrationBasic', effects: new Set([n.Qm.Advanced]) }],
-                                    [{ name: 'shellType', effects: new Set([n.Qm.Major, n.Qm.Icon]) }],
+                                    [{ name: 'shellPenetrationEffective', effects: new Set([i.Qm.Major, i.Qm.Icon]) }],
+                                    [{ name: 'shellPenetrationBasic', effects: new Set([i.Qm.Advanced]) }],
+                                    [{ name: 'shellType', effects: new Set([i.Qm.Major, i.Qm.Icon]) }],
                                 ],
                             ],
-                            [a.nz.impact]: [
+                            [r.nz.impact]: [
                                 [
                                     [
                                         {
                                             name: 'shellPenetrationEffective',
-                                            effects: new Set([n.Qm.Major, n.Qm.Icon, n.Qm.HeadIconShell]),
+                                            effects: new Set([i.Qm.Major, i.Qm.Icon, i.Qm.HeadIconShell]),
                                         },
                                     ],
                                 ],
@@ -2377,39 +2399,102 @@
                                     [
                                         {
                                             name: 'shellDamageEffective',
-                                            effects: new Set([n.Qm.Major, n.Qm.Icon, n.Qm.HeadIconShell]),
+                                            effects: new Set([i.Qm.Major, i.Qm.Icon, i.Qm.HeadIconShell]),
                                         },
                                     ],
-                                    [{ name: 'shellDamageBurst', effects: new Set([n.Qm.Advanced]) }],
+                                    [{ name: 'shellDamageBurst', effects: new Set([i.Qm.Advanced]) }],
                                     [
-                                        { name: 'shellDamageRandomizationFactor', effects: new Set([n.Qm.Advanced]) },
-                                        { name: 'shellDamageLossProtectionHe', effects: new Set([n.Qm.Advanced]) },
+                                        { name: 'shellDamageRandomizationFactor', effects: new Set([i.Qm.Advanced]) },
+                                        { name: 'shellDamageLossDistance', effects: new Set([i.Qm.Advanced]) },
+                                        { name: 'shellDamageLossProtectionHe', effects: new Set([i.Qm.Advanced]) },
                                         {
                                             name: 'shellDamageLossProtectionSpallLiner',
-                                            effects: new Set([n.Qm.Advanced]),
+                                            effects: new Set([i.Qm.Advanced]),
                                         },
                                     ],
                                 ],
-                                [[{ name: 'deathReason', effects: new Set([n.Qm.RedGlow, n.Qm.Icon, n.Qm.Major]) }]],
+                                [[{ name: 'deathReason', effects: new Set([i.Qm.RedGlow, i.Qm.Icon, i.Qm.Major]) }]],
+                            ],
+                        },
+                        [r.pE.modernHE]: {
+                            [r.nz.killer]: [
+                                [
+                                    [
+                                        {
+                                            name: 'shellType',
+                                            effects: new Set([i.Qm.Major, i.Qm.Icon, i.Qm.HeadIconShell]),
+                                        },
+                                    ],
+                                ],
+                                [
+                                    [{ name: 'shellCaliber', effects: new Set([i.Qm.Major, i.Qm.Icon]) }],
+                                    [
+                                        { name: 'shellDamageBasic', effects: new Set([i.Qm.Advanced]) },
+                                        { name: 'shellVelocityBasic', effects: new Set([i.Qm.Advanced]) },
+                                    ],
+                                ],
+                            ],
+                            [r.nz.trajectory]: [
+                                [
+                                    [
+                                        {
+                                            name: 'shootDistance',
+                                            effects: new Set([i.Qm.Major, i.Qm.Icon, i.Qm.HeadIconShell]),
+                                        },
+                                    ],
+                                ],
+                                [
+                                    [{ name: 'shellPenetrationEffective', effects: new Set([i.Qm.Major, i.Qm.Icon]) }],
+                                    [{ name: 'shellPenetrationBasic', effects: new Set([i.Qm.Advanced]) }],
+                                    [{ name: 'shellType', effects: new Set([i.Qm.Major, i.Qm.Icon]) }],
+                                ],
+                            ],
+                            [r.nz.impact]: [
+                                [
+                                    [
+                                        {
+                                            name: 'shellPenetrationEffective',
+                                            effects: new Set([i.Qm.Major, i.Qm.Icon, i.Qm.HeadIconShell]),
+                                        },
+                                    ],
+                                ],
+                                [
+                                    [
+                                        {
+                                            name: 'shellDamageEffective',
+                                            effects: new Set([i.Qm.Major, i.Qm.Icon, i.Qm.HeadIconShell]),
+                                        },
+                                    ],
+                                    [{ name: 'shellDamageBurst', effects: new Set([i.Qm.Advanced]) }],
+                                    [
+                                        { name: 'shellDamageRandomizationFactor', effects: new Set([i.Qm.Advanced]) },
+                                        { name: 'shellDamageLossProtectionHe', effects: new Set([i.Qm.Advanced]) },
+                                        {
+                                            name: 'shellDamageLossProtectionSpallLiner',
+                                            effects: new Set([i.Qm.Advanced]),
+                                        },
+                                    ],
+                                ],
+                                [[{ name: 'deathReason', effects: new Set([i.Qm.RedGlow, i.Qm.Icon, i.Qm.Major]) }]],
                             ],
                         },
                     },
-                    l = (e) => e.has(n.Qm.OrangeGlow) || e.has(n.Qm.RedGlow),
+                    l = (e) => e.has(i.Qm.OrangeGlow) || e.has(i.Qm.RedGlow),
                     s = ['deathReason', 'armorNominal'],
                     c = ['angleRicochet', 'angleFailure', 'angleImpact'],
-                    E = () => (0, i.T)(viewEnv.getClientSizeRem().width, viewEnv.getClientSizeRem().height, r.j),
-                    m = (e) => {
+                    m = () => (0, n.T)(viewEnv.getClientSizeRem().width, viewEnv.getClientSizeRem().height, a.j),
+                    E = (e) => {
                         const u = e.map((e) => ({
                                 hasTopSeparator: e.hasTopSeparator,
                                 fullHeight: 0,
                                 basicHeight: 0,
                                 lines: e.lines.map((u) =>
                                     ((e, u) => {
-                                        const t = !E().extraSmall,
-                                            a = n.Ac[t ? 'big' : 'small'];
-                                        return e.effects.has(n.Qm.HeadIconShell) || e.effects.has(n.Qm.HeadIconTank)
+                                        const t = !m().extraSmall,
+                                            a = i.Ac[t ? 'big' : 'small'];
+                                        return e.effects.has(i.Qm.HeadIconShell) || e.effects.has(i.Qm.HeadIconTank)
                                             ? Object.assign({}, e, { height: a.head + a.major + 1 })
-                                            : e.effects.has(n.Qm.Major) || l(e.effects) || u
+                                            : e.effects.has(i.Qm.Major) || l(e.effects) || u
                                               ? Object.assign({}, e, { height: a.major })
                                               : Object.assign({}, e, { height: a.inner });
                                     })(u, 1 === e.lines.length),
@@ -2418,8 +2503,8 @@
                             t = B(u);
                         return {
                             sections: t,
-                            fullHeight: f(t, !0),
-                            basicHeight: f(t, !1),
+                            fullHeight: _(t, !0),
+                            basicHeight: _(t, !1),
                             animationParams: {
                                 basic: {
                                     proportion: 0,
@@ -2442,14 +2527,14 @@
                     },
                     d = (e, u, t) => {
                         const a = t.slice(0, u + 1).reduce((e, u) => e + u.animationParams.basic.duration, 0),
-                            r = t.slice(0, u + 1).reduce((e, u) => e + u.animationParams.advanced.duration, 0),
-                            i = n.zn - a,
-                            o = n.zn - r;
+                            n = t.slice(0, u + 1).reduce((e, u) => e + u.animationParams.advanced.duration, 0),
+                            r = i.zn - a,
+                            o = i.zn - n;
                         return (
-                            (e.animationParams.basic.contentDecreaseDelay = i),
-                            (e.animationParams.basic.dimensionsDecreaseDelay = i + n.zn),
+                            (e.animationParams.basic.contentDecreaseDelay = r),
+                            (e.animationParams.basic.dimensionsDecreaseDelay = r + i.zn),
                             (e.animationParams.advanced.contentDecreaseDelay = o),
-                            (e.animationParams.advanced.dimensionsDecreaseDelay = o + n.zn),
+                            (e.animationParams.advanced.dimensionsDecreaseDelay = o + i.zn),
                             e
                         );
                     },
@@ -2457,14 +2542,14 @@
                         const a = (e) =>
                                 t[u - 1].animationParams[e].duration +
                                 t[u - 1].animationParams[e].dimensionsIncreaseDelay,
-                            r = Math.round(0 === u ? 0 : a('basic')),
-                            i = Math.round(0 === u ? 0 : a('advanced')),
-                            o = r + n.zn,
-                            l = i + n.zn;
+                            n = Math.round(0 === u ? 0 : a('basic')),
+                            r = Math.round(0 === u ? 0 : a('advanced')),
+                            o = n + i.zn,
+                            l = r + i.zn;
                         return (
-                            (e.animationParams.basic.dimensionsIncreaseDelay = r),
+                            (e.animationParams.basic.dimensionsIncreaseDelay = n),
                             (e.animationParams.basic.contentIncreaseDelay = o),
-                            (e.animationParams.advanced.dimensionsIncreaseDelay = i),
+                            (e.animationParams.advanced.dimensionsIncreaseDelay = r),
                             (e.animationParams.advanced.contentIncreaseDelay = l),
                             e
                         );
@@ -2476,13 +2561,13 @@
                         return e
                             .map((e) => {
                                 const u = e.fullHeight - e.basicHeight,
-                                    r = e.basicHeight / t,
-                                    i = a ? u / a : 1;
+                                    n = e.basicHeight / t,
+                                    r = a ? u / a : 1;
                                 return (
-                                    (e.animationParams.basic.proportion = r),
-                                    (e.animationParams.basic.duration = r * n.zn),
-                                    (e.animationParams.advanced.proportion = i),
-                                    (e.animationParams.advanced.duration = i * n.zn),
+                                    (e.animationParams.basic.proportion = n),
+                                    (e.animationParams.basic.duration = n * i.zn),
+                                    (e.animationParams.advanced.proportion = r),
+                                    (e.animationParams.advanced.duration = r * i.zn),
                                     e
                                 );
                             })
@@ -2508,87 +2593,87 @@
                             [],
                         ),
                     g = (e) => 0 !== e.length,
-                    C = (e, u, t, r, i) => {
+                    C = (e, u, t, a, n) => {
                         const l = (t) => (
-                                (('shootDistance' === t.name && r) ||
-                                    ('shellPenetrationEffective' === t.name && u !== a.pE.penetration) ||
+                                (('shootDistance' === t.name && a) ||
+                                    ('shellPenetrationEffective' === t.name && u !== r.pE.penetration) ||
                                     ('armorRelative' === t.name && 0 === e.armorNominal)) &&
-                                    t.effects.add(n.Qm.OrangeGlow),
-                                (('shellPenetrationEffective' === t.name && u === a.pE.penetration) ||
+                                    t.effects.add(i.Qm.OrangeGlow),
+                                (('shellPenetrationEffective' === t.name && u === r.pE.penetration) ||
                                     'shellDamageEffective' === t.name) &&
-                                    t.effects.add(n.Qm.RedGlow).add(n.Qm.Major),
+                                    t.effects.add(i.Qm.RedGlow).add(i.Qm.Major),
                                 t
                             ),
-                            E = (u) => ({ name: u.name, value: e[u.name], effects: new Set([...u.effects]) }),
+                            m = (u) => ({ name: u.name, value: e[u.name], effects: new Set([...u.effects]) }),
                             d = o[u][t]
                                 .map((u) =>
                                     u.map((u, o) => ({
                                         hasTopSeparator: Boolean(o),
                                         lines: u
                                             .filter((u) =>
-                                                ((e, u, t, r, i) => {
-                                                    if (t === a.nz.trajectory)
-                                                        if (r) {
+                                                ((e, u, t, a, n) => {
+                                                    if (t === r.nz.trajectory)
+                                                        if (a) {
                                                             if (
                                                                 'shellPenetrationEffective' === u.name ||
                                                                 'shellPenetrationBasic' === u.name
                                                             )
                                                                 return !1;
-                                                        } else 'shellType' === u.name && u.effects.add(n.Qm.Advanced);
+                                                        } else 'shellType' === u.name && u.effects.add(i.Qm.Advanced);
                                                     return 'caliberRule' === u.name
-                                                        ? e[u.name] !== a.fE.None
+                                                        ? e[u.name] !== r.fE.None
                                                         : (!c.includes(u.name) || 0 !== e.armorNominal) &&
                                                               !(
                                                                   'damageDistanceModifier' === u.name &&
                                                                   (!e.hasDistanceFalloff ||
-                                                                      (0 === e.damageDistanceModifier && !i))
+                                                                      (0 === e.damageDistanceModifier && !n))
                                                               ) &&
                                                               !(
                                                                   'shellArmorAngleGain' === u.name &&
                                                                   0 === e.armorNominal
                                                               ) &&
                                                               (e[u.name] || !s.includes(u.name));
-                                                })(e, u, t, i, r),
+                                                })(e, u, t, n, a),
                                             )
-                                            .map(E)
+                                            .map(m)
                                             .map(l),
                                     })),
                                 )
                                 .map(h)
                                 .map(D)
                                 .filter(g)
-                                .map(m),
+                                .map(E),
                             A = d[0],
                             C = d.slice(1);
                         return [...F([A]), ...F(C)];
                     },
                     B = (e) => {
-                        const u = !E().extraSmall ? 'big' : 'small';
+                        const u = !m().extraSmall ? 'big' : 'small';
                         return e.map((e) =>
                             Object.assign({}, e, {
-                                fullHeight: _(e.lines, u, e.hasTopSeparator),
-                                basicHeight: _(
-                                    e.lines.filter((e) => !e.effects.has(n.Qm.Advanced)),
+                                fullHeight: f(e.lines, u, e.hasTopSeparator),
+                                basicHeight: f(
+                                    e.lines.filter((e) => !e.effects.has(i.Qm.Advanced)),
                                     u,
                                     e.hasTopSeparator,
                                 ),
                             }),
                         );
                     },
-                    _ = (e, u, t) => {
+                    f = (e, u, t) => {
                         const a = Number(t);
                         return 1 === e.length &&
-                            (e[0].effects.has(n.Qm.HeadIconTank) || e[0].effects.has(n.Qm.HeadIconShell))
-                            ? a + n.h + n.YF + n.Ac[u].major
+                            (e[0].effects.has(i.Qm.HeadIconTank) || e[0].effects.has(i.Qm.HeadIconShell))
+                            ? a + i.h + i.YF + i.Ac[u].major
                             : 1 === e.length
-                              ? a + n.Ac[u].major
+                              ? a + i.Ac[u].major
                               : 0 === e.length
                                 ? 0
-                                : a + e.length * n.Ac[u].inner + 2 * n.Ac[u].sectionPadding;
+                                : a + e.length * i.Ac[u].inner + 2 * i.Ac[u].sectionPadding;
                     },
-                    f = (e, u) => {
+                    _ = (e, u) => {
                         const t = e.reduce((e, t) => e + t[u ? 'fullHeight' : 'basicHeight'], 0);
-                        return t ? t + 2 * n.YF : 0;
+                        return t ? t + 2 * i.YF : 0;
                     };
             },
             4969: (e, u, t) => {
@@ -2598,7 +2683,10 @@
                         (e.killer = 'killer'), (e.trajectory = 'trajectory'), (e.impact = 'impact');
                     })(a || (a = {})),
                     (function (e) {
-                        (e.penetration = 'penetration'), (e.legacyHE = 'legacyHE'), (e.modernHE = 'modernHE');
+                        (e.penetration = 'penetration'),
+                            (e.nonPenetrationDamage = 'nonPenetrationDamage'),
+                            (e.legacyHE = 'legacyHE'),
+                            (e.modernHE = 'modernHE');
                     })(n || (n = {})),
                     (function (e) {
                         (e.None = 'None'), (e.TwoCaliber = 'TwoCaliber'), (e.ThreeCaliber = 'ThreeCaliber');

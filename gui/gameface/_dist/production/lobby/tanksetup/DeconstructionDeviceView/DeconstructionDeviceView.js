@@ -76,6 +76,7 @@
                             (e.crystal = 'crystal'),
                             (e.xp = 'xp'),
                             (e.freeXP = 'freeXP'),
+                            (e.eliteXP = 'eliteXP'),
                             (e.equipCoin = 'equipCoin');
                     })(r || (r = {})),
                     (function (e) {
@@ -214,18 +215,21 @@
                 t.r(u),
                     t.d(u, {
                         events: () => n,
-                        getMouseGlobalPosition: () => a,
-                        getSize: () => r,
-                        graphicsQuality: () => o,
+                        getMouseGlobalPosition: () => o,
+                        getSize: () => a,
+                        graphicsQuality: () => i,
+                        playSound: () => r.G,
+                        setRTPC: () => r.E,
                     });
-                var n = t(527);
-                function r(e = 'px') {
+                var n = t(527),
+                    r = t(2493);
+                function a(e = 'px') {
                     return 'rem' === e ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function a(e = 'px') {
+                function o(e = 'px') {
                     return 'rem' === e ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const o = {
+                const i = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -237,6 +241,20 @@
                     viewEnv.setTrackMouseOnStage(e);
                 }
                 t.d(u, { R: () => n });
+            },
+            2493: (e, u, t) => {
+                'use strict';
+                function n(e) {
+                    engine.call('PlaySound', e).catch((u) => {
+                        console.error(`playSound('${e}'): `, u);
+                    });
+                }
+                function r(e, u) {
+                    engine.call('SetRTPCGlobal', e, u).catch((t) => {
+                        console.error(`setRTPC('${e}', '${u}'): `, t);
+                    });
+                }
+                t.d(u, { E: () => r, G: () => n });
             },
             2472: (e, u, t) => {
                 'use strict';
@@ -252,9 +270,18 @@
             },
             3138: (e, u, t) => {
                 'use strict';
-                t.d(u, { O: () => r });
+                t.d(u, { O: () => a });
+                var n = t(5959),
+                    r = t(514);
+                const a = { view: t(7641), client: n, sound: r.ZP };
+            },
+            514: (e, u, t) => {
+                'use strict';
+                t.d(u, { ZP: () => o });
                 var n = t(5959);
-                const r = { view: t(7641), client: n };
+                const r = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    a = Object.keys(r).reduce((e, u) => ((e[u] = () => (0, n.playSound)(r[u])), e), {}),
+                    o = { play: Object.assign({}, a, { sound: n.playSound }), setRTPC: n.setRTPC };
             },
             3722: (e, u, t) => {
                 'use strict';
@@ -1214,7 +1241,9 @@
                     return o().createElement(p, null, o().createElement(P, t, u));
                 };
                 function I(e) {
-                    engine.call('PlaySound', e);
+                    engine.call('PlaySound', e).catch((u) => {
+                        console.error('[lib/sounds.js] playSound(', e, '): ', u);
+                    });
                 }
                 const V = {
                         base: 'TextButton_base_b6',
@@ -1337,14 +1366,14 @@
                     }
                 }
                 G.defaultProps = { side: 'left', type: 'back', soundHover: 'highlight', soundClick: 'play' };
-                var U = t(5521),
-                    $ = t(9916);
+                var $ = t(5521),
+                    U = t(9916);
                 const j = (e) => {
                     console.error(e.type + ': useKeydownListener hook :: Callback is not defined');
                 };
-                function K(e = U.n.NONE, u = j, t = !1, n = !1) {
+                function X(e = $.n.NONE, u = j, t = !1, n = !1) {
                     (0, a.useEffect)(() => {
-                        if (e !== U.n.NONE)
+                        if (e !== $.n.NONE)
                             return (
                                 window.addEventListener('keydown', r, t),
                                 () => {
@@ -1359,9 +1388,9 @@
                         }
                     }, [u, e, t, n]);
                 }
-                var X = t(3403);
-                const Y = (e, u, t) => (t < e ? e : t > u ? u : t);
-                function Z() {
+                var K = t(3403);
+                const Z = (e, u, t) => (t < e ? e : t > u ? u : t);
+                function Y() {
                     return !1;
                 }
                 console.log;
@@ -1505,7 +1534,7 @@
                                                 observableModel: {
                                                     array: (e, u) => {
                                                         const n = null != u ? u : s(e),
-                                                            r = Q.LO.box(n, { equals: Z });
+                                                            r = Q.LO.box(n, { equals: Y });
                                                         return (
                                                             'real' === t &&
                                                                 i.subscribe(
@@ -1517,7 +1546,7 @@
                                                     },
                                                     object: (e, u) => {
                                                         const n = null != u ? u : s(e),
-                                                            r = Q.LO.box(n, { equals: Z });
+                                                            r = Q.LO.box(n, { equals: Y });
                                                         return (
                                                             'real' === t &&
                                                                 i.subscribe(
@@ -1626,7 +1655,7 @@
                                     const e =
                                         u.currencies.equipCoinsNeededForUpgrade.get() -
                                         u.currencies.equipCoinsForDeconstruction.get();
-                                    return Y(0, e, e);
+                                    return Z(0, e, e);
                                 }),
                                 o = (0, ae.Om)(() => t() + n() > 0 && 0 === a()),
                                 i = (0, ae.Om)((e) => u.modules[e].get().length),
@@ -1636,7 +1665,7 @@
                                         if (!n) throw Error(`No slot found with index: ${e}`);
                                         return Object.assign({}, n);
                                     },
-                                    { equals: Z },
+                                    { equals: Y },
                                 ),
                                 l = (0, ae.Om)((e, u) => s(e, u).bonuses.items.length),
                                 c = (0, ae.Om)(
@@ -1645,7 +1674,7 @@
                                         if (!n) throw Error(`No slot found with index: ${n}`);
                                         return Object.assign({}, n);
                                     },
-                                    { equals: Z },
+                                    { equals: Y },
                                 ),
                                 E = (0, ae.Om)((e, u) => {
                                     const t = l(e, u);
@@ -1672,7 +1701,7 @@
                                             }
                                         })(n.values, ({ valueKey: e }) => e === n.localeName);
                                     },
-                                    { equals: Z },
+                                    { equals: Y },
                                 );
                             return Object.assign({}, u, {
                                 computes: {
@@ -1824,7 +1853,7 @@
                             const n = u(e),
                                 r = n[0],
                                 a = n[1];
-                            return a <= r ? 0 : Y(r, a, t);
+                            return a <= r ? 0 : Z(r, a, t);
                         };
                         return (s = {}) => {
                             const l = s.settings,
@@ -2033,7 +2062,7 @@
                                 if (!(n && u && t && r)) return;
                                 const a = e.animationScroll.scrollPosition.get(),
                                     o = Math.min(1, n / r),
-                                    c = Y(0, 1, a / (r - n)),
+                                    c = Z(0, 1, a / (r - n)),
                                     _ = (u.offsetWidth - He(u, o)) * c;
                                 (t.style.transform = `translateX(${0 | _}px)`),
                                     ((e) => {
@@ -2245,13 +2274,13 @@
                         getDirection: (e) => (e.deltaY > 1 ? ve.Next : ve.Prev),
                     }),
                     Ge = 'VerticalBar_base_f3',
-                    Ue = 'VerticalBar_base__nonActive_42',
-                    $e = 'VerticalBar_topButton_d7',
+                    $e = 'VerticalBar_base__nonActive_42',
+                    Ue = 'VerticalBar_topButton_d7',
                     je = 'VerticalBar_bottomButton_06',
-                    Ke = 'VerticalBar_track_df',
-                    Xe = 'VerticalBar_thumb_32',
-                    Ye = 'VerticalBar_rail_43',
-                    Ze = 'disable',
+                    Xe = 'VerticalBar_track_df',
+                    Ke = 'VerticalBar_thumb_32',
+                    Ze = 'VerticalBar_rail_43',
+                    Ye = 'disable',
                     Qe = () => {},
                     Je = { pending: !1, offset: 0 },
                     eu = (e) => {
@@ -2290,7 +2319,7 @@
                                     (u.style.height = `${tu(t, o)}px`),
                                     (u.style.display = 'flex'),
                                     r.current &&
-                                        (1 === o ? r.current.classList.add(Ue) : r.current.classList.remove(Ue)),
+                                        (1 === o ? r.current.classList.add($e) : r.current.classList.remove($e)),
                                     o
                                 );
                             }),
@@ -2302,21 +2331,21 @@
                                 if (!(n && u && t && r)) return;
                                 const a = e.animationScroll.scrollPosition.get(),
                                     o = Math.min(1, n / r),
-                                    c = Y(0, 1, a / (r - n)),
+                                    c = Z(0, 1, a / (r - n)),
                                     _ = (u.offsetHeight - tu(u, o)) * c;
                                 (t.style.transform = `translateY(${0 | _}px)`),
                                     ((e) => {
                                         if (i.current && s.current && l.current && E.current) {
                                             if (0 === Math.round(e))
-                                                return i.current.classList.add(Ze), void s.current.classList.remove(Ze);
+                                                return i.current.classList.add(Ye), void s.current.classList.remove(Ye);
                                             if (
                                                 ((u = l.current),
                                                 (t = E.current),
                                                 e - (u.offsetHeight - t.offsetHeight) >= -0.5)
                                             )
-                                                return i.current.classList.remove(Ze), void s.current.classList.add(Ze);
+                                                return i.current.classList.remove(Ye), void s.current.classList.add(Ye);
                                             var u, t;
-                                            i.current.classList.remove(Ze), s.current.classList.remove(Ze);
+                                            i.current.classList.remove(Ye), s.current.classList.remove(Ye);
                                         }
                                     })(_);
                             }),
@@ -2387,15 +2416,15 @@
                             [p],
                         );
                         const v = (e) => {
-                            e.target.classList.contains(Ze) || I('highlight');
+                            e.target.classList.contains(Ye) || I('highlight');
                         };
                         return o().createElement(
                             'div',
                             { className: f()(Ge, u.base), ref: r, onWheel: e.handleMouseWheel },
                             o().createElement('div', {
-                                className: f()($e, u.topButton),
+                                className: f()(Ue, u.topButton),
                                 onMouseDown: (e) => {
-                                    e.target.classList.contains(Ze) || 0 !== e.button || (I('play'), h(ve.Next));
+                                    e.target.classList.contains(Ye) || 0 !== e.button || (I('play'), h(ve.Next));
                                 },
                                 ref: i,
                                 onMouseEnter: v,
@@ -2403,7 +2432,7 @@
                             o().createElement(
                                 'div',
                                 {
-                                    className: f()(Ke, u.track),
+                                    className: f()(Xe, u.track),
                                     onMouseDown: (u) => {
                                         const n = E.current;
                                         if (n && 0 === u.button)
@@ -2424,13 +2453,13 @@
                                     ref: l,
                                     onMouseEnter: v,
                                 },
-                                o().createElement('div', { ref: E, className: f()(Xe, u.thumb) }),
-                                o().createElement('div', { className: f()(Ye, u.rail) }),
+                                o().createElement('div', { ref: E, className: f()(Ke, u.thumb) }),
+                                o().createElement('div', { className: f()(Ze, u.rail) }),
                             ),
                             o().createElement('div', {
                                 className: f()(je, u.bottomButton),
                                 onMouseDown: (e) => {
-                                    e.target.classList.contains(Ze) || 0 !== e.button || (I('play'), h(ve.Prev));
+                                    e.target.classList.contains(Ye) || 0 !== e.button || (I('play'), h(ve.Prev));
                                 },
                                 onMouseUp: p,
                                 ref: s,
@@ -2525,7 +2554,7 @@
                             Object.assign(
                                 {
                                     __Type: 'GFViewEventProxy',
-                                    type: $.B0.TOOLTIP,
+                                    type: U.B0.TOOLTIP,
                                     contentID: e,
                                     decoratorID: u,
                                     targetID: n,
@@ -2866,7 +2895,7 @@
                         base__shown: 'Options_base__shown_84',
                         'options-show': 'Options_options-show_5a',
                     },
-                    Uu = o().memo(
+                    $u = o().memo(
                         ({ itemsInStorage: e, price: u, isMounted: t, possibleZeroCount: n, show: r = !0 }) => {
                             let a = null;
                             return (
@@ -2889,7 +2918,7 @@
                             );
                         },
                     );
-                let $u;
+                let Uu;
                 !(function (e) {
                     (e.None = ''),
                         (e.Tiny = 'tiny'),
@@ -2897,9 +2926,9 @@
                         (e.Medium = 'medium'),
                         (e.Large = 'large'),
                         (e.Huge = 'huge');
-                })($u || ($u = {}));
+                })(Uu || (Uu = {}));
                 const ju = { calcValue: 0, isPositive: !0, valueKey: 'default' },
-                    Ku = ({ values: e, localeName: u }) => {
+                    Xu = ({ values: e, localeName: u }) => {
                         const t = e.filter(({ value: { valueKey: e } = {} }) => e === u).pop();
                         if (!t) return ju;
                         const n = t.value,
@@ -2907,14 +2936,14 @@
                             a = 'mul' === n.valueType ? 100 * (r - 1) : r;
                         return { calcValue: a, isPositive: a > 0, valueKey: n.valueKey };
                     },
-                    Xu = 'Bonus_base_46',
-                    Yu = 'Bonus_text_d9',
-                    Zu = 'Unit_base_18',
+                    Ku = 'Bonus_base_46',
+                    Zu = 'Bonus_text_d9',
+                    Yu = 'Unit_base_18',
                     Qu = 'Unit_base__special_90',
                     Ju = 'Unit_glow_03',
                     et = R.strings.tank_setup.kpi.bonus.valueTypes,
                     ut = R.strings.tank_setup.kpi.bonus.valueTypes.default(),
-                    tt = (0, X.Pi)(({ slotIndex: e, bonusIndex: u, groupType: t }) => {
+                    tt = (0, K.Pi)(({ slotIndex: e, bonusIndex: u, groupType: t }) => {
                         const n = ce().model,
                             r = n.computes.slot(e, t).activeSpecsMask,
                             a = n.computes.bonusValue(e, u, t);
@@ -2925,12 +2954,12 @@
                             c = Boolean(r),
                             E = 'mul' === i ? 100 * (s - 1) : s,
                             _ = E > 0 ? '+' : '',
-                            d = $.Z5.getRealFormat(E, $.Gr.WO_ZERO_DIGITS),
+                            d = U.Z5.getRealFormat(E, U.Gr.WO_ZERO_DIGITS),
                             A = et.$dyn(l),
                             F = `${d}${A ? ` ${A}` : ut}`;
                         return o().createElement(
                             'div',
-                            { className: f()(Zu, c && Qu) },
+                            { className: f()(Yu, c && Qu) },
                             o().createElement('span', null, o().createElement('span', { className: Ju }), _ + F),
                         );
                     }),
@@ -2940,24 +2969,24 @@
                         if (!r) return null;
                         const a = n.computes.bonusVisibleLinesCount(e, u, t),
                             i = ((e, u = !1) =>
-                                u || Ku(e).isPositive
+                                u || Xu(e).isPositive
                                     ? R.strings.tank_setup.kpi.bonus.positive.$dyn(e.localeName)
                                     : R.strings.tank_setup.kpi.bonus.negative.$dyn(e.localeName))(r);
                         return i && a
                             ? o().createElement(
                                   'span',
-                                  { className: Xu },
+                                  { className: Ku },
                                   o().createElement(tt, { slotIndex: e, bonusIndex: u, groupType: t }),
                                   ' ',
                                   a &&
                                       i &&
                                       o().createElement(
                                           'span',
-                                          { className: Yu },
+                                          { className: Zu },
                                           o().createElement(Ru.n, {
                                               linesCount: a,
                                               blocks: (0, Ru.D)(i),
-                                              mediaSize: $u.Medium,
+                                              mediaSize: Uu.Medium,
                                           }),
                                       ),
                               )
@@ -2968,7 +2997,7 @@
                     ot = 'Bonuses_text_91',
                     it = 'Bonuses_effect_5f',
                     st = 'Bonuses_icon_b6',
-                    lt = (0, X.Pi)(({ index: e, groupType: u }) => {
+                    lt = (0, K.Pi)(({ index: e, groupType: u }) => {
                         const t = ce().model,
                             n = t.computes.slot(e, u);
                         if (!n) return null;
@@ -2992,7 +3021,7 @@
                                         'span',
                                         { className: ot },
                                         o().createElement(Ru.n, {
-                                            mediaSize: $u.Medium,
+                                            mediaSize: Uu.Medium,
                                             linesCount: a,
                                             blocks: (0, Ru.D)(r),
                                         }),
@@ -3028,7 +3057,7 @@
                     ft = 'EquipmentSlot_countText_a8',
                     bt = 'EquipmentSlot_select_34',
                     wt = 'EquipmentSlot_glow_43',
-                    yt = (0, X.Pi)(({ index: e, groupType: u, className: t }) => {
+                    yt = (0, K.Pi)(({ index: e, groupType: u, className: t }) => {
                         const n = ce(),
                             r = n.model,
                             a = n.controls,
@@ -3085,7 +3114,7 @@
                                         'div',
                                         { className: Bt },
                                         o().createElement(Ru.n, {
-                                            mediaSize: $u.Medium,
+                                            mediaSize: Uu.Medium,
                                             linesCount: 3,
                                             blocks: (0, Ru.D)(systemLocale.toUpperCase(l)),
                                         }),
@@ -3099,7 +3128,7 @@
                                         o().createElement(
                                             'div',
                                             { className: ht },
-                                            o().createElement(Uu, { itemsInStorage: d, show: !0 }),
+                                            o().createElement($u, { itemsInStorage: d, show: !0 }),
                                         ),
                                     Boolean(D) && o().createElement('div', { className: pt }, o().createElement(Ou, F)),
                                     o().createElement(
@@ -3133,7 +3162,7 @@
                     xt = 'EquipmentGroup_base_b9',
                     St = 'EquipmentGroup_slotsContainer_da',
                     Tt = 'EquipmentGroup_slot_db',
-                    kt = (0, X.Pi)(({ groupType: e }) => {
+                    kt = (0, K.Pi)(({ groupType: e }) => {
                         const u = ce().model.modules[e].get();
                         return o().createElement(
                             'div',
@@ -3238,8 +3267,8 @@
                     zt = 'EquipmentHeader_label_3d',
                     qt = 'EquipmentHeader_vehicleNameLabel_db',
                     Gt = 'EquipmentHeader_vehicleInfo_95',
-                    Ut = R.strings.tank_setup.deconstructionDeviceView,
-                    $t = (0, X.Pi)(({ text: e, value: u, isHidden: t, showVehicleInfo: n }) => {
+                    $t = R.strings.tank_setup.deconstructionDeviceView,
+                    Ut = (0, K.Pi)(({ text: e, value: u, isHidden: t, showVehicleInfo: n }) => {
                         const r = ce().model;
                         return o().createElement(
                             'div',
@@ -3256,7 +3285,7 @@
                                     o().createElement(
                                         o().Fragment,
                                         null,
-                                        o().createElement('div', { className: qt }, Ut.header.activeVehicle()),
+                                        o().createElement('div', { className: qt }, $t.header.activeVehicle()),
                                         o().createElement(
                                             'div',
                                             { className: Gt },
@@ -3267,17 +3296,17 @@
                         );
                     }),
                     jt = 'CurrencyBlock_base_46',
-                    Kt = 'CurrencyBlock_currency_1c',
-                    Xt = o().memo(function ({ text: e, value: u, currencyType: t, labelClassName: n }) {
+                    Xt = 'CurrencyBlock_currency_1c',
+                    Kt = o().memo(function ({ text: e, value: u, currencyType: t, labelClassName: n }) {
                         return o().createElement(
                             'div',
                             { className: jt },
-                            o().createElement('div', { className: f()(Kt, n) }, e),
+                            o().createElement('div', { className: f()(Xt, n) }, e),
                             o().createElement(su.F, { size: Ae.et.big, type: t, value: u }),
                         );
                     }),
-                    Yt = 'Content_base_8f',
-                    Zt = 'Content_headerContainer_7b',
+                    Zt = 'Content_base_8f',
+                    Yt = 'Content_headerContainer_7b',
                     Qt = 'Content_topHeader_28',
                     Jt = 'Content_header_db',
                     en = 'Content_currencyBlock_09',
@@ -3286,7 +3315,7 @@
                     nn = 'Content_bar_a4',
                     rn = 'Content_gap_3b',
                     an = R.strings.tank_setup.deconstructionDeviceView,
-                    on = (0, X.Pi)(() => {
+                    on = (0, K.Pi)(() => {
                         const e = ce().model,
                             u = e.computes.getModulesCountInStorage(),
                             t = e.computes.getModulesCountOnVehicles(),
@@ -3321,19 +3350,19 @@
                             }, [n, t]),
                             o().createElement(
                                 'div',
-                                { className: Yt },
+                                { className: Zt },
                                 o().createElement(
                                     'div',
-                                    { className: Zt },
+                                    { className: Yt },
                                     o().createElement(
                                         'div',
                                         { className: Qt },
-                                        o().createElement($t, { text: an.header.inStorage(), value: u, isHidden: l }),
+                                        o().createElement(Ut, { text: an.header.inStorage(), value: u, isHidden: l }),
                                     ),
                                     o().createElement(
                                         'div',
                                         { className: Qt },
-                                        o().createElement($t, {
+                                        o().createElement(Ut, {
                                             text: an.header.onVehicles(),
                                             value: t,
                                             showVehicleInfo: !0,
@@ -3343,7 +3372,7 @@
                                     o().createElement(
                                         'div',
                                         { className: en },
-                                        o().createElement(Xt, {
+                                        o().createElement(Kt, {
                                             text: an.available(),
                                             value: e.currencies.equipCoinsOnAccount.get(),
                                             currencyType: Ae.V2.equipCoin,
@@ -3371,7 +3400,7 @@
                                                 o().createElement(
                                                     'div',
                                                     { className: Jt, ref: i },
-                                                    o().createElement($t, {
+                                                    o().createElement(Ut, {
                                                         text: an.header.onVehicles(),
                                                         value: t,
                                                         showVehicleInfo: !0,
@@ -3417,7 +3446,6 @@
                         stateHighlightHover: 'CButton_stateHighlightHover_ff',
                         stateHighlightActive: 'CButton_stateHighlightActive_35',
                         stateDisabled: 'CButton_stateDisabled_54',
-                        base__firstHover: 'CButton_base__firstHover_d5',
                         base__highlightActive: 'CButton_base__highlightActive_b2',
                         content: 'CButton_content_cc',
                     },
@@ -3443,78 +3471,19 @@
                             B = D[1],
                             g = (0, a.useState)(!1),
                             h = g[0],
-                            p = g[1],
-                            v = (0, a.useState)(!1),
-                            b = v[0],
-                            w = v[1],
-                            y = (0, a.useCallback)(() => {
-                                r || (m.current && (m.current.focus(), B(!0)));
-                            }, [r]),
-                            x = (0, a.useCallback)(
-                                (e) => {
-                                    C && null !== m.current && !m.current.contains(e.target) && B(!1);
-                                },
-                                [C],
-                            ),
-                            S = (0, a.useCallback)(
-                                (e) => {
-                                    r || (F && F(e));
-                                },
-                                [r, F],
-                            ),
-                            T = (0, a.useCallback)(
-                                (e) => {
-                                    r || (null !== s && I(s), c && c(e), w(!0));
-                                },
-                                [r, s, c],
-                            ),
-                            k = (0, a.useCallback)(
-                                (e) => {
-                                    E && E(e);
-                                },
-                                [E],
-                            ),
-                            M = (0, a.useCallback)(
-                                (e) => {
-                                    r || (d && d(e), p(!1));
-                                },
-                                [r, d],
-                            ),
-                            L = (0, a.useCallback)(
-                                (e) => {
-                                    r || (null !== l && I(l), _ && _(e), t && y(), p(!0));
-                                },
-                                [r, l, _, y, t],
-                            ),
-                            N = (0, a.useCallback)(
-                                (e) => {
-                                    r || (A && A(e), p(!1));
-                                },
-                                [r, A],
-                            ),
-                            O = f()(
-                                cn.base,
-                                cn[`base__${n}`],
-                                {
-                                    [cn.base__disabled]: r,
-                                    [cn[`base__${u}`]]: u,
-                                    [cn.base__focus]: C,
-                                    [cn.base__highlightActive]: h,
-                                    [cn.base__firstHover]: b,
-                                },
-                                i,
-                            ),
-                            P = f()(cn.state, cn.state__default);
+                            p = g[1];
                         return (
-                            (0, a.useEffect)(
-                                () => (
-                                    document.addEventListener('mousedown', x),
+                            (0, a.useEffect)(() => {
+                                function e(e) {
+                                    C && null !== m.current && !m.current.contains(e.target) && B(!1);
+                                }
+                                return (
+                                    document.addEventListener('mousedown', e),
                                     () => {
-                                        document.removeEventListener('mousedown', x);
+                                        document.removeEventListener('mousedown', e);
                                     }
-                                ),
-                                [x],
-                            ),
+                                );
+                            }, [C]),
                             (0, a.useEffect)(() => {
                                 B(t);
                             }, [t]),
@@ -3522,13 +3491,37 @@
                                 'div',
                                 {
                                     ref: m,
-                                    className: O,
-                                    onMouseEnter: T,
-                                    onMouseMove: k,
-                                    onMouseUp: M,
-                                    onMouseDown: L,
-                                    onMouseLeave: N,
-                                    onClick: S,
+                                    className: f()(
+                                        cn.base,
+                                        cn[`base__${n}`],
+                                        r && cn.base__disabled,
+                                        u && cn[`base__${u}`],
+                                        C && cn.base__focus,
+                                        h && cn.base__highlightActive,
+                                        i,
+                                    ),
+                                    onMouseEnter: function (e) {
+                                        r || (null !== s && I(s), c && c(e));
+                                    },
+                                    onMouseMove: function (e) {
+                                        E && E(e);
+                                    },
+                                    onMouseUp: function (e) {
+                                        r || (d && d(e), p(!1));
+                                    },
+                                    onMouseDown: function (e) {
+                                        r ||
+                                            (null !== l && I(l),
+                                            _ && _(e),
+                                            t && (r || (m.current && (m.current.focus(), B(!0)))),
+                                            p(!0));
+                                    },
+                                    onMouseLeave: function (e) {
+                                        r || (A && A(e), p(!1));
+                                    },
+                                    onClick: function (e) {
+                                        r || (F && F(e));
+                                    },
                                 },
                                 n !== sn.ghost &&
                                     o().createElement(
@@ -3539,7 +3532,7 @@
                                     ),
                                 o().createElement(
                                     'span',
-                                    { className: P },
+                                    { className: f()(cn.state, cn.state__default) },
                                     o().createElement('span', { className: cn.stateDisabled }),
                                     o().createElement('span', { className: cn.stateHighlightHover }),
                                     o().createElement('span', { className: cn.stateHighlightActive }),
@@ -3553,7 +3546,7 @@
                         );
                     };
                 En.defaultProps = { type: sn.primary, isFocused: !1, soundHover: 'highlight', soundClick: 'play' };
-                const _n = (0, a.memo)(En),
+                const _n = En,
                     dn = {
                         blackReal: 'FormatTextWithColorTags_blackReal_d5',
                         whiteReal: 'FormatTextWithColorTags_whiteReal_d8',
@@ -3687,7 +3680,7 @@
                     Ln = 'Footer_btnHangar_26',
                     Nn = 'Footer_button_0f',
                     On = R.strings.tank_setup.deconstructionDeviceView,
-                    Rn = (0, X.Pi)(() => {
+                    Rn = (0, K.Pi)(() => {
                         const e = ce(),
                             u = e.model,
                             t = e.controls,
@@ -3724,7 +3717,7 @@
                                     o().createElement(
                                         'div',
                                         { className: kn },
-                                        o().createElement(Xt, {
+                                        o().createElement(Kt, {
                                             text: On.footer.willReceive(),
                                             value: u.currencies.equipCoinsForDeconstruction.get(),
                                             currencyType: Ae.V2.equipCoin,
@@ -3788,12 +3781,12 @@
                             o().createElement(Dn, { text: qn.subTitle.$dyn(`${t}`), binding: r, classMix: Vn }),
                         );
                     },
-                    Un = (0, X.Pi)(() => {
+                    $n = (0, K.Pi)(() => {
                         const e = ce().controls;
                         var u;
                         return (
                             (u = e.close),
-                            K(U.n.ESCAPE, u),
+                            X($.n.ESCAPE, u),
                             o().createElement(
                                 'div',
                                 { className: Ee },
@@ -3816,7 +3809,7 @@
                     });
                 engine.whenReady.then(() => {
                     s().render(
-                        o().createElement(W, null, o().createElement(le, null, o().createElement(Un, null))),
+                        o().createElement(W, null, o().createElement(le, null, o().createElement($n, null))),
                         document.getElementById('root'),
                     );
                 });
@@ -4016,6 +4009,10 @@
                     'icon__freeXP-big': 'Currency_icon__freeXP-big_21',
                     'icon__freeXP-large': 'Currency_icon__freeXP-large_c8',
                     'icon__freeXP-extraLarge': 'Currency_icon__freeXP-extraLarge_58',
+                    'icon__eliteXP-small': 'Currency_icon__eliteXP-small_45',
+                    'icon__eliteXP-big': 'Currency_icon__eliteXP-big_c0',
+                    'icon__eliteXP-large': 'Currency_icon__eliteXP-large_1b',
+                    'icon__eliteXP-extraLarge': 'Currency_icon__eliteXP-extraLarge_9b',
                     'icon__equipCoin-small': 'Currency_icon__equipCoin-small_32',
                     'icon__equipCoin-big': 'Currency_icon__equipCoin-big_79',
                     'icon__equipCoin-large': 'Currency_icon__equipCoin-large_2c',
@@ -4027,6 +4024,7 @@
                     value__xp: 'Currency_value__xp_b0',
                     value__crystal: 'Currency_value__crystal_19',
                     value__equipCoin: 'Currency_value__equipCoin_d0',
+                    value__eliteXP: 'Currency_value__eliteXP_62',
                     value__notEnough: 'Currency_value__notEnough_56',
                     stock: 'Currency_stock_87',
                     stock__indent: 'Currency_stock__indent_a1',

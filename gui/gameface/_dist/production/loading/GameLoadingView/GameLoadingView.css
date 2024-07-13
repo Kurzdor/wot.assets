@@ -249,8 +249,11 @@
 .Content_vignette_14 {
     width: 100vw;
     height: 100vh;
-    background: url('img://gui/maps/loading/vignette_loading.png') no-repeat center / 100%;
+    background: url('img://gui/maps/loading/vignette_loading.png') no-repeat center / 100% 100%;
     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .Content_vignette__invisible_9d {

@@ -116,18 +116,21 @@
                 n.r(t),
                     n.d(t, {
                         events: () => r,
-                        getMouseGlobalPosition: () => i,
-                        getSize: () => o,
-                        graphicsQuality: () => a,
+                        getMouseGlobalPosition: () => a,
+                        getSize: () => i,
+                        graphicsQuality: () => s,
+                        playSound: () => o.G,
+                        setRTPC: () => o.E,
                     });
-                var r = n(527);
-                function o(e = 'px') {
+                var r = n(527),
+                    o = n(2493);
+                function i(e = 'px') {
                     return 'rem' === e ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function i(e = 'px') {
+                function a(e = 'px') {
                     return 'rem' === e ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const a = {
+                const s = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -138,6 +141,19 @@
                     viewEnv.setTrackMouseOnStage(e);
                 }
                 n.d(t, { R: () => r });
+            },
+            2493: (e, t, n) => {
+                function r(e) {
+                    engine.call('PlaySound', e).catch((t) => {
+                        console.error(`playSound('${e}'): `, t);
+                    });
+                }
+                function o(e, t) {
+                    engine.call('SetRTPCGlobal', e, t).catch((n) => {
+                        console.error(`setRTPC('${e}', '${t}'): `, n);
+                    });
+                }
+                n.d(t, { E: () => o, G: () => r });
             },
             2472: (e, t, n) => {
                 function r(e) {
@@ -151,9 +167,17 @@
                 n.d(t, { E: () => r });
             },
             3138: (e, t, n) => {
-                n.d(t, { O: () => o });
+                n.d(t, { O: () => i });
+                var r = n(5959),
+                    o = n(514);
+                const i = { view: n(7641), client: r, sound: o.ZP };
+            },
+            514: (e, t, n) => {
+                n.d(t, { ZP: () => a });
                 var r = n(5959);
-                const o = { view: n(7641), client: r };
+                const o = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    i = Object.keys(o).reduce((e, t) => ((e[t] = () => (0, r.playSound)(o[t])), e), {}),
+                    a = { play: Object.assign({}, i, { sound: r.playSound }), setRTPC: r.setRTPC };
             },
             3722: (e, t, n) => {
                 function r(e, t, n = 1) {
@@ -416,7 +440,9 @@
             },
             7727: (e, t, n) => {
                 function r(e) {
-                    engine.call('PlaySound', e);
+                    engine.call('PlaySound', e).catch((t) => {
+                        console.error('[lib/sounds.js] playSound(', e, '): ', t);
+                    });
                 }
                 n.d(t, { G: () => r });
             },
@@ -1317,8 +1343,8 @@
                     U = 'VerticalBar_topButton_d7',
                     I = 'VerticalBar_bottomButton_06',
                     G = 'VerticalBar_track_df',
-                    q = 'VerticalBar_thumb_32',
-                    j = 'VerticalBar_rail_43',
+                    j = 'VerticalBar_thumb_32',
+                    q = 'VerticalBar_rail_43',
                     K = 'disable',
                     Y = () => {},
                     X = { pending: !1, offset: 0 },
@@ -1491,8 +1517,8 @@
                                     ref: p,
                                     onMouseEnter: k,
                                 },
-                                l().createElement('div', { ref: g, className: a()(q, t.thumb) }),
-                                l().createElement('div', { className: a()(j, t.rail) }),
+                                l().createElement('div', { ref: g, className: a()(j, t.thumb) }),
+                                l().createElement('div', { className: a()(q, t.rail) }),
                             ),
                             l().createElement('div', {
                                 className: a()(I, t.bottomButton),

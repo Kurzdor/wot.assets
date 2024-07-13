@@ -520,6 +520,30 @@
 .Currency_base__extraLarge_4d .Currency_icon__freeXP-extraLarge_58 {
     transform: translateY(4rem);
 }
+.Currency_icon__eliteXP-small_45 {
+    background-image: url('R.images.gui.maps.icons.library.EliteXpIcon-2');
+}
+.Currency_base__small_af .Currency_icon__eliteXP-small_45 {
+    transform: translateY(1rem);
+}
+.Currency_icon__eliteXP-big_c0 {
+    --icon-height: 24rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.EliteXpIconBig');
+}
+.Currency_icon__eliteXP-large_1b {
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.icons.library.elite_exp_48x48');
+}
+.Currency_icon__eliteXP-extraLarge_9b {
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.elite_exp_80x80');
+}
+.Currency_base__extraLarge_4d .Currency_icon__eliteXP-extraLarge_9b {
+    transform: translateY(4rem);
+}
 .Currency_icon__equipCoin-small_32 {
     --icon-height: 16rem;
     margin-right: -2rem;
@@ -589,7 +613,8 @@
 }
 .Currency_value__xp_b0,
 .Currency_value__crystal_19,
-.Currency_value__equipCoin_d0 {
+.Currency_value__equipCoin_d0,
+.Currency_value__eliteXP_62 {
     color: #c9c9b6;
 }
 .Currency_base__small_af .Currency_value__notEnough_56 {
@@ -1033,17 +1058,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateHighlightHover_ff,
 .CButton_stateHighlightActive_35,
 .CButton_stateDisabled_54 {
-    opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-}
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
-.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
-.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-    transition: opacity 0.16s ease-in-out;
 }
 .CButton_stateHighlightHover_ff {
     background-image: linear-gradient(
@@ -1052,6 +1071,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         rgba(252, 248, 235, 0.1) 50%,
         rgba(255, 255, 255, 0) 100%
     );
+    opacity: 0;
 }
 .CButton_base_40:hover .CButton_stateHighlightHover_ff {
     opacity: 1;
@@ -1069,6 +1089,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_stateHighlightActive_35 {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+    opacity: 0;
 }
 .CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
     opacity: 1;
@@ -1076,10 +1097,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateDisabled_54 {
     background-color: rgba(0, 0, 0, 0.25);
     background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
-    background-size: 15rem;
+    background-size: 15rem 15rem;
+    visibility: hidden;
 }
 .CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-    opacity: 1;
+    visibility: inherit;
 }
 .CButton_content_cc {
     display: flex;
@@ -1126,8 +1148,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .TextOverflow_base_3b {
-    flex: 0 1 auto;
-    width: auto;
+    max-width: 100%;
     line-height: 1.3;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1261,11 +1282,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     text-shadow: 0 0 0 rgba(255, 195, 99, 0.3);
 }
 .NumericStepper_input__xp_c4,
+.NumericStepper_input__eliteXP_85,
 .NumericStepper_input__freeXP_06,
 .NumericStepper_input__crystal_2e {
     color: #c9c9b6;
 }
 .NumericStepper_input__xp-disabled_33,
+.NumericStepper_input__eliteXP-disabled_a7,
 .NumericStepper_input__freeXP-disabled_8b,
 .NumericStepper_input__crystal-disabled_f8 {
     color: transparent;
@@ -1285,6 +1308,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .NumericStepper_base__medium_9d .NumericStepper_input__xp-medium_db,
 .NumericStepper_base__medium_9d .NumericStepper_input__xp-large_73,
+.NumericStepper_base__medium_9d .NumericStepper_input__eliteXP-medium_49,
+.NumericStepper_base__medium_9d .NumericStepper_input__eliteXP-large_e5,
 .NumericStepper_base__medium_9d .NumericStepper_input__freeXP-medium_2b,
 .NumericStepper_base__medium_9d .NumericStepper_input__freeXP-large_c9,
 .NumericStepper_base__medium_9d .NumericStepper_input__crystal-medium_56,
@@ -1293,6 +1318,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .NumericStepper_base__large_dc .NumericStepper_input__xp-medium_db,
 .NumericStepper_base__large_dc .NumericStepper_input__xp-large_73,
+.NumericStepper_base__large_dc .NumericStepper_input__eliteXP-medium_49,
+.NumericStepper_base__large_dc .NumericStepper_input__eliteXP-large_e5,
 .NumericStepper_base__large_dc .NumericStepper_input__freeXP-medium_2b,
 .NumericStepper_base__large_dc .NumericStepper_input__freeXP-large_c9,
 .NumericStepper_base__large_dc .NumericStepper_input__crystal-medium_56,
@@ -1324,6 +1351,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .NumericStepper_base__medium_9d .NumericStepper_currency__xp-medium_66,
 .NumericStepper_base__medium_9d .NumericStepper_currency__xp-large_66,
+.NumericStepper_base__medium_9d .NumericStepper_currency__eliteXP-medium_68,
+.NumericStepper_base__medium_9d .NumericStepper_currency__eliteXP-large_84,
 .NumericStepper_base__medium_9d .NumericStepper_currency__freeXP-medium_79,
 .NumericStepper_base__medium_9d .NumericStepper_currency__freeXP-large_c7,
 .NumericStepper_base__medium_9d .NumericStepper_currency__crystal-medium_55,
@@ -1332,6 +1361,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .NumericStepper_base__large_dc .NumericStepper_currency__xp-medium_66,
 .NumericStepper_base__large_dc .NumericStepper_currency__xp-large_66,
+.NumericStepper_base__large_dc .NumericStepper_currency__eliteXP-medium_68,
+.NumericStepper_base__large_dc .NumericStepper_currency__eliteXP-large_84,
 .NumericStepper_base__large_dc .NumericStepper_currency__freeXP-medium_79,
 .NumericStepper_base__large_dc .NumericStepper_currency__freeXP-large_c7,
 .NumericStepper_base__large_dc .NumericStepper_currency__crystal-medium_55,
@@ -1413,6 +1444,22 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 23rem;
     height: 22rem;
     background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
+    transform: translate(-2rem, 14rem);
+}
+.NumericStepper_currencyIcon__eliteXP-small_58 {
+    background-image: url('R.images.gui.maps.icons.library.EliteXpIcon-2');
+    transform: translateY(3rem);
+}
+.NumericStepper_currencyIcon__eliteXP-medium_e5 {
+    width: 23rem;
+    height: 22rem;
+    background-image: url('R.images.gui.maps.icons.library.EliteXpIconBig');
+    transform: translateY(4rem);
+}
+.NumericStepper_currencyIcon__eliteXP-large_3f {
+    width: 23rem;
+    height: 22rem;
+    background-image: url('R.images.gui.maps.icons.library.EliteXpIconBig');
     transform: translate(-2rem, 14rem);
 }
 .NumericStepper_base__isDisabled_ac .NumericStepper_currencyIcon_8e {

@@ -171,7 +171,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: url('R.images.story_mode.gui.maps.icons.common.vignette') no-repeat 50% / 100%;
+    background: url('R.images.story_mode.gui.maps.icons.common.vignette') no-repeat 50% / 100% 100%;
 }
 
 .Background_preloader_7d {

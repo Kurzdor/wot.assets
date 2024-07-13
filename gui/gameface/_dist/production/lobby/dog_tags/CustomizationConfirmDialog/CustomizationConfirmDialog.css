@@ -123,17 +123,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateHighlightHover_ff,
 .CButton_stateHighlightActive_35,
 .CButton_stateDisabled_54 {
-    opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-}
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
-.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
-.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-    transition: opacity 0.16s ease-in-out;
 }
 .CButton_stateHighlightHover_ff {
     background-image: linear-gradient(
@@ -142,6 +136,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         rgba(252, 248, 235, 0.1) 50%,
         rgba(255, 255, 255, 0) 100%
     );
+    opacity: 0;
 }
 .CButton_base_40:hover .CButton_stateHighlightHover_ff {
     opacity: 1;
@@ -159,6 +154,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_stateHighlightActive_35 {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+    opacity: 0;
 }
 .CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
     opacity: 1;
@@ -166,10 +162,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateDisabled_54 {
     background-color: rgba(0, 0, 0, 0.25);
     background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
-    background-size: 15rem;
+    background-size: 15rem 15rem;
+    visibility: hidden;
 }
 .CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-    opacity: 1;
+    visibility: inherit;
 }
 .CButton_content_cc {
     display: flex;
@@ -399,7 +396,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .DogTags_dogtags_bottom_20 {
     height: 66%;
     border-radius: 50rem;
-    background: url('R.images.gui.maps.icons.dogtags.big.backgrounds.background_0_0') no-repeat center / 100%;
+    background: url('R.images.gui.maps.icons.dogtags.big.backgrounds.background_0_0') no-repeat center / 100% 100%;
     position: relative;
 }
 .DogTags_dogtags_top_a9 {
@@ -419,7 +416,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 100%;
     height: 100%;
     border-radius: 50rem;
-    background-size: 100%;
+    background-size: 100% 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -430,7 +427,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background-image: url('R.images.gui.maps.icons.dogtags.icons.rank_shadow');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 80%;
+    background-size: 80% 80%;
     position: absolute;
     top: 7rem;
     left: 0;
@@ -478,7 +475,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     align-items: center;
     width: 100%;
     height: 100%;
-    background-size: 100%;
+    background-size: 100% 100%;
     position: absolute;
     top: 0;
     right: 0;
@@ -492,7 +489,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .DogTags_shadow_03 {
     width: 100%;
     height: 100%;
-    background: url('R.images.gui.maps.icons.dogtags.icons.tocken_shadow') no-repeat 0 0 / 100%;
+    background: url('R.images.gui.maps.icons.dogtags.icons.tocken_shadow') no-repeat 0 0 / 100% 100%;
     position: absolute;
     top: 7rem;
     left: 1rem;
@@ -508,7 +505,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 80%;
     height: 35%;
     position: absolute;
-    bottom: 9%;
+    bottom: 15%;
     left: 50%;
     transform: translate(-50%, 0);
 }

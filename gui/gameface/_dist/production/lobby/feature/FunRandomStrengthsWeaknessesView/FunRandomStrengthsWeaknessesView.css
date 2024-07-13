@@ -1,0 +1,86 @@
+.App_base_8a {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.App_panel_34 {
+    width: 282rem;
+    padding: 0 24rem 15rem 50rem;
+    background: url('R.images.fun_random.gui.maps.icons.feature.strengths_weaknesses.bg') no-repeat 100% 100% / cover;
+}
+
+.mediaMedium .App_panel_34 {
+    width: 347rem;
+    padding: 10rem 30rem 15rem 76rem;
+}
+
+.App_title_5f {
+    margin: 24rem 0 10rem;
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 20rem;
+}
+
+.App_separator_2e {
+    align-self: flex-end;
+    width: 222rem;
+    height: 1rem;
+    margin-top: 15rem;
+    background: url('R.images.fun_random.gui.maps.icons.feature.strengths_weaknesses.separator') no-repeat 100% 100% /
+        contain;
+    opacity: 0.5;
+}
+
+.mediaMedium .App_separator_2e {
+    width: 243rem;
+    opacity: 1;
+}
+
+.App_itemList_8c {
+    margin-left: -6rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.Advantage_base_66 {
+    display: flex;
+    flex-direction: row;
+    height: 40rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.mediaMedium .Advantage_base_66 {
+    margin-top: 10rem;
+}
+
+.Advantage_icon_0f {
+    width: 70rem;
+    height: 70rem;
+    background: no-repeat 50% / contain;
+    position: absolute;
+    top: -13rem;
+    left: -13rem;
+    pointer-events: none;
+}
+
+.mediaMedium .Advantage_icon_0f {
+    width: 90rem;
+    height: 90rem;
+    top: -23rem;
+    left: -23rem;
+}
+
+.Advantage_text_c2 {
+    display: block;
+    align-self: center;
+    margin-left: 40rem;
+    color: #8c8c7e;
+    font-size: 14rem;
+}
+
+.mediaMedium .Advantage_text_c2 {
+    margin-left: 48rem;
+    font-size: 16rem;
+}

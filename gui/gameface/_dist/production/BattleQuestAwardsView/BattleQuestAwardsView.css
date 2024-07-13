@@ -123,17 +123,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateHighlightHover_ff,
 .CButton_stateHighlightActive_35,
 .CButton_stateDisabled_54 {
-    opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-}
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
-.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
-.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-    transition: opacity 0.16s ease-in-out;
 }
 .CButton_stateHighlightHover_ff {
     background-image: linear-gradient(
@@ -142,6 +136,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         rgba(252, 248, 235, 0.1) 50%,
         rgba(255, 255, 255, 0) 100%
     );
+    opacity: 0;
 }
 .CButton_base_40:hover .CButton_stateHighlightHover_ff {
     opacity: 1;
@@ -159,6 +154,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_stateHighlightActive_35 {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+    opacity: 0;
 }
 .CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
     opacity: 1;
@@ -166,10 +162,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateDisabled_54 {
     background-color: rgba(0, 0, 0, 0.25);
     background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
-    background-size: 15rem;
+    background-size: 15rem 15rem;
+    visibility: hidden;
 }
 .CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-    opacity: 1;
+    visibility: inherit;
 }
 .CButton_content_cc {
     display: flex;
@@ -544,7 +541,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: -14rem;
 }
 
-@keyframes AwardsList_raysAppearance_fa {
+@keyframes AwardsList_raysAppearance_09 {
     0% {
         transform: translateY(20rem);
     }
@@ -554,7 +551,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
-@keyframes AwardsList_rotate_78 {
+@keyframes AwardsList_rotate_f5 {
     0% {
         transform: rotate(0deg);
     }
@@ -564,25 +561,26 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
-.AwardsList_base_1f {
+.AwardsList_base_5c {
     position: relative;
 }
 
-.AwardsList_container_18 {
+.AwardsList_container_cd {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.AwardsList_value_af {
+.AwardsList_value_e2 {
     color: #ffdd99;
     font-size: 24rem;
     font-weight: 400;
     line-height: 1.2;
-    margin-top: -37rem;
+    margin-top: -34rem;
+    position: relative;
 }
 
-.mediaLarge .AwardsList_value_af {
+.mediaLarge .AwardsList_value_e2 {
     color: #ffdd99;
     font-size: 36rem;
     font-weight: 700;
@@ -591,13 +589,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 400;
 }
 
-.AwardsList_reward_33 {
+.AwardsList_reward_17 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.AwardsList_label_02 {
+.AwardsList_label_72 {
     color: #e9e2bf;
     font-size: 12rem;
     font-weight: 400;
@@ -605,21 +603,21 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: 5rem;
 }
 
-.mediaSmall .AwardsList_label_02 {
+.mediaSmall .AwardsList_label_72 {
     color: #e9e2bf;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
-.mediaLarge .AwardsList_label_02 {
+.mediaLarge .AwardsList_label_72 {
     color: #e9e2bf;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
 }
 
-@keyframes BackGround_raysAppearance_85 {
+@keyframes BackGround_raysAppearance_11 {
     0% {
         transform: translateY(20rem);
     }
@@ -629,7 +627,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
-@keyframes BackGround_rotate_18 {
+@keyframes BackGround_rotate_03 {
     0% {
         transform: rotate(0deg);
     }
@@ -639,7 +637,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
-.BackGround_base_16 {
+.BackGround_base_1b {
     position: absolute;
     top: 0;
     right: 0;
@@ -650,7 +648,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     align-items: center;
 }
 
-.BackGround_bgContainer_4f {
+.BackGround_bgContainer_d0 {
     position: absolute;
     top: 0;
     right: 0;
@@ -658,37 +656,17 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
 }
 
-.BackGround_bg_5a {
+.BackGround_bg_60 {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: url('R.images.battle_royale_progression.gui.maps.backgrounds.main_bg') no-repeat center / cover;
+    background: url('R.images.comp7_light_progression.gui.maps.backgrounds.main_bg') no-repeat center / cover;
     filter: blur(6.5px);
 }
 
-.BackGround_noise_26 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: url('R.images.battle_royale_progression.gui.maps.progression.noise') repeat center / cover;
-    opacity: 0.1;
-    mix-blend-mode: soft-light;
-}
-
-.BackGround_shade_6e {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.BackGround_bottomShadow_4c {
+.BackGround_bottomShadow_f5 {
     position: absolute;
     top: 0;
     right: 0;
@@ -701,10 +679,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         rgba(0, 0, 0, 0.73) 57%,
         rgba(0, 0, 0, 0.8) 100%
     );
-    opacity: 0.7;
+    opacity: 0.3;
 }
 
-.BackGround_awardsContainer_39 {
+.BackGround_awardsContainer_65 {
     position: absolute;
     top: 0;
     right: 0;
@@ -716,7 +694,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 200rem;
 }
 
-.BackGround_glowContainer_e8 {
+.BackGround_glowContainer_69 {
     position: absolute;
     top: 0;
     right: 0;
@@ -728,11 +706,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: -105rem;
 }
 
-.mediaMedium .BackGround_glowContainer_e8 {
+.mediaMedium .BackGround_glowContainer_69 {
     top: -135rem;
 }
 
-.BackGround_ribbon_fe {
+.BackGround_ribbon_e0 {
     width: 1366rem;
     height: 356rem;
     background: no-repeat center / contain;
@@ -740,42 +718,42 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     z-index: 10;
 }
 
-.BackGround_base__inProgress_b9 .BackGround_ribbon_fe {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.red_ribbon_1366');
+.BackGround_base__inProgress_ce .BackGround_ribbon_e0 {
+    background-image: url('R.images.comp7_light_progression.gui.maps.battleQuestAwards.red_ribbon_1366');
 }
 
-.mediaMedium .BackGround_base__inProgress_b9 .BackGround_ribbon_fe {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.red_ribbon_1600');
+.mediaMedium .BackGround_base__inProgress_ce .BackGround_ribbon_e0 {
+    background-image: url('R.images.comp7_light_progression.gui.maps.battleQuestAwards.red_ribbon_1600');
 }
 
-.mediaLarge .BackGround_base__inProgress_b9 .BackGround_ribbon_fe {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.red_ribbon_1920');
+.mediaLarge .BackGround_base__inProgress_ce .BackGround_ribbon_e0 {
+    background-image: url('R.images.comp7_light_progression.gui.maps.battleQuestAwards.red_ribbon_1920');
 }
 
-.BackGround_base__completed_2a .BackGround_ribbon_fe {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.gold_ribbon_1366');
+.BackGround_base__completed_24 .BackGround_ribbon_e0 {
+    background-image: url('R.images.comp7_light_progression.gui.maps.battleQuestAwards.gold_ribbon_1366');
 }
 
-.mediaMedium .BackGround_base__completed_2a .BackGround_ribbon_fe {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.gold_ribbon_1600');
+.mediaMedium .BackGround_base__completed_24 .BackGround_ribbon_e0 {
+    background-image: url('R.images.comp7_light_progression.gui.maps.battleQuestAwards.gold_ribbon_1600');
 }
 
-.mediaLarge .BackGround_base__completed_2a .BackGround_ribbon_fe {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.gold_ribbon_1920');
+.mediaLarge .BackGround_base__completed_24 .BackGround_ribbon_e0 {
+    background-image: url('R.images.comp7_light_progression.gui.maps.battleQuestAwards.gold_ribbon_1920');
 }
 
-.mediaMedium .BackGround_ribbon_fe {
+.mediaMedium .BackGround_ribbon_e0 {
     width: 1600rem;
     height: 417rem;
 }
 
-.mediaLarge .BackGround_ribbon_fe {
+.mediaLarge .BackGround_ribbon_e0 {
     width: 1920rem;
     height: 500rem;
 }
 
-.BackGround_gradientLine_b1 {
-    animation-name: BackGround_raysAppearance_85, BackGround_rotate_18;
+.BackGround_gradientLine_13 {
+    animation-name: BackGround_raysAppearance_11, BackGround_rotate_03;
     animation-duration: 1.5s, 120s;
     animation-fill-mode: forwards, forwards;
     animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1), linear;
@@ -783,22 +761,22 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-iteration-count: 1, infinite;
     width: 700rem;
     height: 700rem;
-    background: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.radial_lines') no-repeat top / cover;
+    background: url('R.images.comp7_light_progression.gui.maps.battleQuestAwards.radial_lines') no-repeat top / cover;
     mix-blend-mode: screen;
     position: absolute;
 }
 
-.mediaMedium .BackGround_gradientLine_b1 {
+.mediaMedium .BackGround_gradientLine_13 {
     width: 900rem;
     height: 900rem;
 }
 
-.mediaExtraLarge .BackGround_gradientLine_b1 {
+.mediaExtraLarge .BackGround_gradientLine_13 {
     width: 1000rem;
     height: 1000rem;
 }
 
-.BackGround_glow_89 {
+.BackGround_glow_72 {
     width: 600rem;
     height: 600rem;
     background: no-repeat top / cover;
@@ -806,61 +784,61 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     z-index: 5;
 }
 
-.BackGround_base__inProgress_b9 .BackGround_glow_89 {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.glow_in_progress');
+.BackGround_base__inProgress_ce .BackGround_glow_72 {
+    background-image: url('R.images.comp7_light_progression.gui.maps.battleQuestAwards.glow_in_progress');
     mix-blend-mode: overlay;
 }
 
-.BackGround_base__completed_2a .BackGround_glow_89 {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.glow_done');
+.BackGround_base__completed_24 .BackGround_glow_72 {
+    background-image: url('R.images.comp7_light_progression.gui.maps.battleQuestAwards.glow_done');
     mix-blend-mode: screen;
 }
 
-.mediaLarge .BackGround_glow_89 {
+.mediaLarge .BackGround_glow_72 {
     width: 800rem;
     height: 800rem;
 }
 
-.BackGround_base__completed_2a .BackGround_splash_e1 {
+.BackGround_base__completed_24 .BackGround_splash_78 {
     width: 500rem;
     height: 500rem;
-    background: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.splash') no-repeat top / cover;
+    background: url('R.images.comp7_light_progression.gui.maps.battleQuestAwards.splash') no-repeat top / cover;
     mix-blend-mode: screen;
     position: absolute;
     z-index: 5;
 }
 
-.mediaLarge .BackGround_base__completed_2a .BackGround_splash_e1 {
+.mediaLarge .BackGround_base__completed_24 .BackGround_splash_78 {
     width: 900rem;
     height: 900rem;
 }
 
-.BackGround_base__completed_2a .BackGround_glowSmall_5f {
+.BackGround_base__completed_24 .BackGround_glowSmall_07 {
     width: 600rem;
     height: 600rem;
-    background: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.glow_small') no-repeat top / cover;
+    background: url('R.images.comp7_light_progression.gui.maps.battleQuestAwards.glow_small') no-repeat top / cover;
     opacity: 0.5;
     mix-blend-mode: screen;
     position: absolute;
     z-index: 5;
 }
 
-.mediaLarge .BackGround_glowSmall_5f {
+.mediaLarge .BackGround_glowSmall_07 {
     width: 800rem;
     height: 800rem;
 }
 
-.BattleIcon_base_cd {
+.BattleIcon_base_0e {
     position: relative;
 }
 
-.BattleIcon_block_0d {
+.BattleIcon_block_ad {
     width: 500rem;
     height: 500rem;
     position: relative;
 }
 
-.BattleIcon_icon_f7 {
+.BattleIcon_icon_9f {
     width: 130rem;
     height: 130rem;
     background: no-repeat center / contain;
@@ -870,23 +848,23 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     z-index: 10;
 }
 
-.BattleIcon_base__completed_6e .BattleIcon_icon_f7 {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_done_130_130');
+.BattleIcon_base__completed_23 .BattleIcon_icon_9f {
+    background-image: url('R.images.gui.maps.icons.comp7.widget.completed.main_icon_130');
 }
 
-.mediaLarge .BattleIcon_base__completed_6e .BattleIcon_icon_f7 {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_done_150_150');
+.mediaLarge .BattleIcon_base__completed_23 .BattleIcon_icon_9f {
+    background-image: url('R.images.gui.maps.icons.comp7.widget.completed.main_icon_150');
 }
 
-.BattleIcon_base__inProgress_32 .BattleIcon_icon_f7 {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_in_progress_130_130');
+.BattleIcon_base__inProgress_d2 .BattleIcon_icon_9f {
+    background-image: url('R.images.gui.maps.icons.comp7.widget.in_progress.main_icon_130');
 }
 
-.mediaLarge .BattleIcon_base__inProgress_32 .BattleIcon_icon_f7 {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_in_progress_150_150');
+.mediaLarge .BattleIcon_base__inProgress_d2 .BattleIcon_icon_9f {
+    background-image: url('R.images.gui.maps.icons.comp7.widget.in_progress.main_icon_150');
 }
 
-.mediaLarge .BattleIcon_icon_f7 {
+.mediaLarge .BattleIcon_icon_9f {
     width: 150rem;
     height: 150rem;
     top: 165rem;
@@ -898,41 +876,41 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex-wrap: wrap;
 }
 
-.Header_base_05 {
+.Header_base_69 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.Header_subTitle_65 {
+.Header_subTitle_96 {
     color: #e9e2bf;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
-.mediaLarge .Header_subTitle_65 {
+.mediaLarge .Header_subTitle_96 {
     color: #e9e2bf;
     font-size: 24rem;
     font-weight: 700;
     line-height: 1.2;
 }
 
-.Header_title_03 {
+.Header_title_ff {
     color: #f2f2f7;
     font-size: 56rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
-.mediaLarge .Header_title_03 {
+.mediaLarge .Header_title_ff {
     color: #f2f2f7;
     font-size: 73rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
-@keyframes App_raysAppearance_d2 {
+@keyframes App_raysAppearance_59 {
     0% {
         transform: translateY(20rem);
     }
@@ -942,7 +920,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
-@keyframes App_rotate_7a {
+@keyframes App_rotate_ff {
     0% {
         transform: rotate(0deg);
     }
@@ -956,7 +934,7 @@ body {
     overflow: hidden;
 }
 
-.App_base_4e {
+.App_base_cc {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -965,10 +943,10 @@ body {
     height: 100%;
     background-color: #2e2e2e;
     position: relative;
-    animation: App_windowIn_f3 0.5s both;
+    animation: App_windowIn_90 0.5s both;
 }
 
-.App_content_92 {
+.App_content_bd {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -976,81 +954,81 @@ body {
     height: 100%;
 }
 
-.App_buttonClose_fc {
+.App_buttonClose_e4 {
     position: absolute;
     top: 40rem;
     right: 30rem;
 }
 
-.App_buttonApprove_44 {
+.App_buttonApprove_18 {
     position: absolute;
     bottom: 50rem;
     z-index: 15;
 }
 
-.mediaMedium .App_buttonApprove_44 {
+.mediaMedium .App_buttonApprove_18 {
     bottom: 70rem;
 }
 
-.mediaLarge .App_buttonApprove_44 {
+.mediaLarge .App_buttonApprove_18 {
     bottom: 90rem;
 }
 
-.App_buttonSize_c6 {
+.App_buttonSize_f6 {
     width: 180rem;
     margin: 8rem 57rem;
 }
 
-.App_battleIcon_e2 {
+.App_battleIcon_76 {
     margin-left: -25rem;
     position: absolute;
     top: -155rem;
 }
 
-.mediaMedium .App_battleIcon_e2 {
+.mediaMedium .App_battleIcon_76 {
     top: -135rem;
 }
 
-.mediaLarge .App_battleIcon_e2 {
+.mediaLarge .App_battleIcon_76 {
     top: -120rem;
 }
 
-.mediaExtraLarge .App_battleIcon_e2 {
+.mediaExtraLarge .App_battleIcon_76 {
     top: -100rem;
 }
 
-.App_awards_75 {
+.App_awards_7c {
     margin-top: 50rem;
     position: relative;
     z-index: 15;
 }
 
-.mediaSmall .App_awards_75 {
+.mediaSmall .App_awards_7c {
     margin-top: 100rem;
 }
 
-.mediaMedium .App_awards_75 {
+.mediaMedium .App_awards_7c {
     margin-top: 30rem;
 }
 
-.App_header_e4 {
+.App_header_7b {
     position: absolute;
     top: 180rem;
 }
 
-.mediaMedium .App_header_e4 {
+.mediaMedium .App_header_7b {
     top: 200rem;
 }
 
-.mediaLarge .App_header_e4 {
+.mediaLarge .App_header_7b {
     top: 220rem;
 }
 
-.mediaExtraLarge .App_header_e4 {
+.mediaExtraLarge .App_header_7b {
     top: 250rem;
 }
 
-@keyframes App_windowIn_f3 {
+@keyframes App_windowIn_90 {
     from {
         opacity: 0;
     }

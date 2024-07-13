@@ -20,7 +20,6 @@
 .Content_base_2e {
     display: flex;
     flex-direction: column;
-    align-items: start;
     width: 264rem;
     padding: 17rem 20rem;
 }

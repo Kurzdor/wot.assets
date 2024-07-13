@@ -80,18 +80,21 @@
                 t.r(e),
                     t.d(e, {
                         events: () => n,
-                        getMouseGlobalPosition: () => o,
-                        getSize: () => r,
-                        graphicsQuality: () => i,
+                        getMouseGlobalPosition: () => i,
+                        getSize: () => o,
+                        graphicsQuality: () => a,
+                        playSound: () => r.G,
+                        setRTPC: () => r.E,
                     });
-                var n = t(527);
-                function r(u = 'px') {
+                var n = t(527),
+                    r = t(2493);
+                function o(u = 'px') {
                     return 'rem' === u ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function o(u = 'px') {
+                function i(u = 'px') {
                     return 'rem' === u ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const i = {
+                const a = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -102,6 +105,19 @@
                     viewEnv.setTrackMouseOnStage(u);
                 }
                 t.d(e, { R: () => n });
+            },
+            2493: (u, e, t) => {
+                function n(u) {
+                    engine.call('PlaySound', u).catch((e) => {
+                        console.error(`playSound('${u}'): `, e);
+                    });
+                }
+                function r(u, e) {
+                    engine.call('SetRTPCGlobal', u, e).catch((t) => {
+                        console.error(`setRTPC('${u}', '${e}'): `, t);
+                    });
+                }
+                t.d(e, { E: () => r, G: () => n });
             },
             2472: (u, e, t) => {
                 function n(u) {
@@ -115,9 +131,17 @@
                 t.d(e, { E: () => n });
             },
             3138: (u, e, t) => {
-                t.d(e, { O: () => r });
+                t.d(e, { O: () => o });
+                var n = t(5959),
+                    r = t(514);
+                const o = { view: t(7641), client: n, sound: r.ZP };
+            },
+            514: (u, e, t) => {
+                t.d(e, { ZP: () => i });
                 var n = t(5959);
-                const r = { view: t(7641), client: n };
+                const r = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    o = Object.keys(r).reduce((u, e) => ((u[e] = () => (0, n.playSound)(r[e])), u), {}),
+                    i = { play: Object.assign({}, o, { sound: n.playSound }), setRTPC: n.setRTPC };
             },
             3722: (u, e, t) => {
                 function n(u, e, t = 1) {
@@ -1340,8 +1364,8 @@
                         z.apply(this, arguments)
                     );
                 }
-                const U = R.views.common.tooltip_window.simple_tooltip_content,
-                    G = (u) => {
+                const G = R.views.common.tooltip_window.simple_tooltip_content,
+                    U = (u) => {
                         let e = u.children,
                             t = u.body,
                             n = u.header,
@@ -1368,7 +1392,7 @@
                                 {
                                     contentId:
                                         ((E = null == s ? void 0 : s.hasHtmlContent),
-                                        E ? U.SimpleTooltipHtmlContent('resId') : U.SimpleTooltipContent('resId')),
+                                        E ? G.SimpleTooltipHtmlContent('resId') : G.SimpleTooltipContent('resId')),
                                     decoratorId: R.views.common.tooltip_window.tooltip_window.TooltipWindow('resId'),
                                     args: c,
                                 },
@@ -1395,7 +1419,7 @@
                 const Y = ({ children: u, tooltipArgs: e, className: t }) => {
                     if (!e) return u;
                     const n = a().createElement('div', { className: t }, u);
-                    if (e.header || e.body) return a().createElement(G, e, n);
+                    if (e.header || e.body) return a().createElement(U, e, n);
                     const r = e.contentId;
                     return r ? a().createElement(M, q({}, e, { contentId: r }), n) : a().createElement(j, e, n);
                 };
@@ -1860,10 +1884,9 @@
                 })(Ou || (Ou = {}));
                 const xu = a().memo(function ({ iconName: u, size: e = Ou.c24x24, className: t }) {
                         var n;
+                        const o = null == (n = R.images.gui.maps.icons.tankmen.skills.$dyn(e)) ? void 0 : n.$dyn(u);
                         return a().createElement('div', {
-                            style: {
-                                backgroundImage: `url(${null == (n = R.images.gui.maps.icons.tankmen.skills.$dyn(e)) ? void 0 : n.$dyn(u)})`,
-                            },
+                            style: null !== o ? { backgroundImage: `url(${o})` } : void 0,
                             className: r()(Tu.base, Tu[`base__${e}`], t),
                         });
                     }),
@@ -1930,8 +1953,8 @@
                     ju = 'FreePerk_perkLevel_ba',
                     Vu = 'FreePerk_perkLevel__available_3b',
                     zu = 'FreePerk_perkLevel__inProgress_5b',
-                    Uu = 'FreePerk_multiple_ee',
-                    Gu = 'FreePerk_partly_12',
+                    Gu = 'FreePerk_multiple_ee',
+                    Uu = 'FreePerk_partly_12',
                     qu = ({ count: u, text: e, perkLevel: t = $u }) => {
                         if (0 === u) return null;
                         const n = t < $u;
@@ -1945,14 +1968,14 @@
                             ),
                             u > 1 &&
                                 a().createElement(yu, {
-                                    classMix: Uu,
+                                    classMix: Gu,
                                     text: R.strings.tooltips.perkAvailable.multiple(),
                                     binding: { amount: u },
                                 }),
                             a().createElement('div', { className: r()(ju, n ? zu : Vu) }, e),
                             0 !== t &&
                                 n &&
-                                a().createElement('div', { className: Gu }, R.strings.tooltips.perkAvailable.partly()),
+                                a().createElement('div', { className: Uu }, R.strings.tooltips.perkAvailable.partly()),
                         );
                     },
                     Yu = 'PerkAvailableTooltipApp_base_8b',

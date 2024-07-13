@@ -1,0 +1,223 @@
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.App_base_d6 {
+    min-width: 363rem;
+    margin-bottom: 20rem;
+}
+
+.App_heading_03 {
+    width: 100%;
+    margin-bottom: 15rem;
+    padding-left: 23rem;
+}
+
+.App_header_dd {
+    width: 100%;
+    padding: 20rem 15rem 20rem 0;
+    background: url('R.images.gui.maps.icons.comp7.icons.widget_tooltip_background') no-repeat center/ cover;
+    position: relative;
+}
+
+.App_base__completed_6f .App_completedIcon_80 {
+    width: 250rem;
+    height: 79rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.check_mark') no-repeat center/ cover;
+    position: absolute;
+    bottom: -28rem;
+    left: 45rem;
+}
+
+.App_description_19 {
+    width: 318rem;
+    margin: 15rem 0 5rem;
+}
+
+.App_base__completed_6f .App_description_19 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -10rem;
+}
+
+.App_subtitle_b4 {
+    display: none;
+}
+
+.App_base__completed_6f .App_subtitle_b4 {
+    display: block;
+    color: #fefeec;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 10rem;
+}
+
+.App_title_53 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+}
+
+.App_text_ea {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.App_base__completed_6f .App_text_ea {
+    text-align: center;
+}
+
+.Column_base_0a {
+    flex: 1 1 auto;
+    position: relative;
+}
+
+.Column_base__first_77::after {
+    width: 1rem;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, rgba(18, 17, 11, 1) 50%),
+        linear-gradient(180deg, #c9c9b6 100%);
+    background-size:
+        4rem 3rem,
+        100% 100%;
+    opacity: 0.2;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.Column_battleType_fd {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    padding: 0 25rem;
+    position: relative;
+}
+
+.Column_base__first_77 .Column_battleType_fd {
+    justify-content: flex-end;
+}
+
+.Column_cell_15 {
+    justify-content: center;
+    position: relative;
+}
+
+.Column_separator_9f {
+    width: 100%;
+    height: 1rem;
+    background: linear-gradient(to left, transparent 50%, rgba(18, 17, 11, 1) 50%),
+        linear-gradient(90deg, #c9c9b6 0%, #12110b 100%);
+    background-size:
+        3rem 2rem,
+        100% 100%;
+    opacity: 0.2;
+    position: relative;
+}
+
+.Column_base__first_77 .Column_separator_9f {
+    background-image: linear-gradient(to right, transparent 50%, rgba(18, 17, 11, 1) 50%),
+        linear-gradient(270deg, #c9c9b6 0%, #12110b 100%);
+}
+
+.Column_row_a1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32rem;
+    margin: 5rem 0;
+    padding: 0 25rem;
+    position: relative;
+}
+
+.Column_base__first_77 .Column_row_a1 {
+    justify-content: space-between;
+}
+
+.Column_pointContainer_ac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+}
+
+.Column_base__first_77 .Column_pointContainer_ac {
+    margin-left: 30rem;
+}
+
+.Column_point_2a {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-right: 5rem;
+}
+
+.Column_place_70 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Column_reward_9c {
+    width: 16rem;
+    height: 16rem;
+    margin-top: 1rem;
+    background: url('R.images.gui.maps.icons.missions.tokens.c_16x16.token_comp7_light') no-repeat center / cover;
+}
+
+.Column_dash_be {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-right: 15rem;
+}
+
+.Table_base_8f {
+    width: 100%;
+    position: relative;
+}
+
+.Table_battleTypeBg_c6 {
+    width: 100%;
+    height: 32rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.battleType_bg') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Table_table_12 {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}

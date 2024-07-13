@@ -890,6 +890,14 @@ body {
     cursor: default;
 }
 
+.Container_base__noBG_69 {
+    background-image: none;
+}
+
+.Container_base__noBG_69:hover {
+    background-image: none;
+}
+
 .Bonus_base_dd {
     width: 54rem;
     height: 54rem;
@@ -1900,17 +1908,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateHighlightHover_ff,
 .CButton_stateHighlightActive_35,
 .CButton_stateDisabled_54 {
-    opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-}
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
-.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
-.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-    transition: opacity 0.16s ease-in-out;
 }
 .CButton_stateHighlightHover_ff {
     background-image: linear-gradient(
@@ -1919,6 +1921,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         rgba(252, 248, 235, 0.1) 50%,
         rgba(255, 255, 255, 0) 100%
     );
+    opacity: 0;
 }
 .CButton_base_40:hover .CButton_stateHighlightHover_ff {
     opacity: 1;
@@ -1936,6 +1939,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_stateHighlightActive_35 {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+    opacity: 0;
 }
 .CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
     opacity: 1;
@@ -1943,10 +1947,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateDisabled_54 {
     background-color: rgba(0, 0, 0, 0.25);
     background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
-    background-size: 15rem;
+    background-size: 15rem 15rem;
+    visibility: hidden;
 }
 .CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-    opacity: 1;
+    visibility: inherit;
 }
 .CButton_content_cc {
     display: flex;
@@ -2339,9 +2344,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Shells_shell_3f {
     display: flex;
 }
-.Shells_shell__compressed_2e {
-    margin-left: -17rem;
-}
 
 .ShellsSection_base_08 {
     display: flex;
@@ -2424,6 +2426,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .ShellsSection_base_08 {
     isolation: isolate;
+}
+
+.ShellsSection_base__noBG_0a {
+    background-image: none;
+}
+
+.ShellsSection_base__noBG_0a:hover {
+    background-image: none;
 }
 
 .ShellsSection_label_38 {
@@ -4445,6 +4455,30 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Currency_base__extraLarge_4d .Currency_icon__freeXP-extraLarge_58 {
     transform: translateY(4rem);
 }
+.Currency_icon__eliteXP-small_45 {
+    background-image: url('R.images.gui.maps.icons.library.EliteXpIcon-2');
+}
+.Currency_base__small_af .Currency_icon__eliteXP-small_45 {
+    transform: translateY(1rem);
+}
+.Currency_icon__eliteXP-big_c0 {
+    --icon-height: 24rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.EliteXpIconBig');
+}
+.Currency_icon__eliteXP-large_1b {
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.icons.library.elite_exp_48x48');
+}
+.Currency_icon__eliteXP-extraLarge_9b {
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.elite_exp_80x80');
+}
+.Currency_base__extraLarge_4d .Currency_icon__eliteXP-extraLarge_9b {
+    transform: translateY(4rem);
+}
 .Currency_icon__equipCoin-small_32 {
     --icon-height: 16rem;
     margin-right: -2rem;
@@ -4514,7 +4548,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .Currency_value__xp_b0,
 .Currency_value__crystal_19,
-.Currency_value__equipCoin_d0 {
+.Currency_value__equipCoin_d0,
+.Currency_value__eliteXP_62 {
     color: #c9c9b6;
 }
 .Currency_base__small_af .Currency_value__notEnough_56 {
@@ -6161,7 +6196,7 @@ in JS 8000 reserved like anchor for start optimization
 .Shell_count_ed {
     width: 115rem;
     color: #f2f2f7;
-    font-size: 56rem;
+    font-size: 36rem;
     font-weight: 700;
     text-align: center;
     overflow: hidden;
@@ -6171,14 +6206,14 @@ in JS 8000 reserved like anchor for start optimization
 }
 .Shell_base__tiny_a9 .Shell_count_ed {
     width: auto;
-    font-size: 36rem;
+    font-size: 28rem;
     right: 5rem;
     bottom: 5rem;
 }
 .Shell_base__large_aa .Shell_count_ed,
 .Shell_base__huge_a8 .Shell_count_ed {
     width: 145rem;
-    font-size: 73rem;
+    font-size: 56rem;
     right: 0;
     bottom: 20rem;
 }

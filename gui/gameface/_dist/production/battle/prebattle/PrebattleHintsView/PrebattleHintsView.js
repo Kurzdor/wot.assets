@@ -97,18 +97,21 @@
                 t.r(u),
                     t.d(u, {
                         events: () => i,
-                        getMouseGlobalPosition: () => a,
-                        getSize: () => n,
-                        graphicsQuality: () => r,
+                        getMouseGlobalPosition: () => r,
+                        getSize: () => a,
+                        graphicsQuality: () => s,
+                        playSound: () => n.G,
+                        setRTPC: () => n.E,
                     });
-                var i = t(527);
-                function n(e = 'px') {
+                var i = t(527),
+                    n = t(2493);
+                function a(e = 'px') {
                     return 'rem' === e ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function a(e = 'px') {
+                function r(e = 'px') {
                     return 'rem' === e ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const r = {
+                const s = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -120,6 +123,20 @@
                     viewEnv.setTrackMouseOnStage(e);
                 }
                 t.d(u, { R: () => i });
+            },
+            2493: (e, u, t) => {
+                'use strict';
+                function i(e) {
+                    engine.call('PlaySound', e).catch((u) => {
+                        console.error(`playSound('${e}'): `, u);
+                    });
+                }
+                function n(e, u) {
+                    engine.call('SetRTPCGlobal', e, u).catch((t) => {
+                        console.error(`setRTPC('${e}', '${u}'): `, t);
+                    });
+                }
+                t.d(u, { E: () => n, G: () => i });
             },
             2472: (e, u, t) => {
                 'use strict';
@@ -135,9 +152,18 @@
             },
             3138: (e, u, t) => {
                 'use strict';
-                t.d(u, { O: () => n });
+                t.d(u, { O: () => a });
+                var i = t(5959),
+                    n = t(514);
+                const a = { view: t(7641), client: i, sound: n.ZP };
+            },
+            514: (e, u, t) => {
+                'use strict';
+                t.d(u, { ZP: () => r });
                 var i = t(5959);
-                const n = { view: t(7641), client: i };
+                const n = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    a = Object.keys(n).reduce((e, u) => ((e[u] = () => (0, i.playSound)(n[u])), e), {}),
+                    r = { play: Object.assign({}, a, { sound: i.playSound }), setRTPC: i.setRTPC };
             },
             3722: (e, u, t) => {
                 'use strict';
@@ -203,7 +229,7 @@
                         setEventHandled: () => b,
                         setInputPaddingsRem: () => l,
                         setSidePaddingsRem: () => o,
-                        whenTutorialReady: () => f,
+                        whenTutorialReady: () => y,
                     });
                 var i = t(3722),
                     n = t(6112),
@@ -276,7 +302,7 @@
                             viewEnv.getExtraSizeRem(e, u);
                         },
                     },
-                    f = Promise.all([
+                    y = Promise.all([
                         new Promise((e) => {
                             window.isDomBuilt ? e() : a.U.onDomBuilt(e);
                         }),
@@ -1017,10 +1043,10 @@
                             })(e);
                         return { mediaSize: n, mediaWidth: a, mediaHeight: r, remScreenWidth: u, remScreenHeight: t };
                     },
-                    f = ['children', 'className'];
-                function y() {
+                    y = ['children', 'className'];
+                function f() {
                     return (
-                        (y =
+                        (f =
                             Object.assign ||
                             function (e) {
                                 for (var u = 1; u < arguments.length; u++) {
@@ -1029,7 +1055,7 @@
                                 }
                                 return e;
                             }),
-                        y.apply(this, arguments)
+                        f.apply(this, arguments)
                     );
                 }
                 const N = {
@@ -1064,12 +1090,12 @@
                                     a = Object.keys(e);
                                 for (i = 0; i < a.length; i++) (t = a[i]), u.indexOf(t) >= 0 || (n[t] = e[t]);
                                 return n;
-                            })(e, f);
+                            })(e, y);
                         const a = x(),
                             r = a.mediaWidth,
                             s = a.mediaHeight,
                             l = a.mediaSize;
-                        return n().createElement('div', y({ className: B()(t, N[r], L[s], H[l]) }, i), u);
+                        return n().createElement('div', f({ className: B()(t, N[r], L[s], H[l]) }, i), u);
                     },
                     O = ['children'];
                 const T = (e) => {
@@ -1110,10 +1136,10 @@
                         'gum',
                     );
                 })();
-                var U = t(9916),
-                    G = t(8613);
-                Date.now(), G.Ew.getRegionalDateTime, G.Ew.getFormattedDateTime;
-                const z = () => {
+                var G = t(9916),
+                    U = t(8613);
+                Date.now(), U.Ew.getRegionalDateTime, U.Ew.getFormattedDateTime;
+                const j = () => {
                     const e = r.O.view.getSize('rem'),
                         u = (0, i.useState)({ height: e.height, width: e.width }),
                         t = u[0],
@@ -1133,12 +1159,12 @@
                         t
                     );
                 };
-                U.Sw.instance;
-                let j;
+                G.Sw.instance;
+                let z;
                 !(function (e) {
                     (e.None = 'None'), (e.Shallow = 'Shallow'), (e.Deep = 'Deep');
-                })(j || (j = {}));
-                U.Sw.instance;
+                })(z || (z = {}));
+                G.Sw.instance;
                 const $ = (e, u, t) => {
                         const i = e.height / e.width > u.height / u.width ? e.height / u.height : e.width / u.width,
                             n = t.x * i,
@@ -1438,8 +1464,8 @@
                     ve = 'NewbieHint02_keys_25',
                     pe = 'NewbieHint02_firing_97',
                     xe = 'NewbieHint02_camera_c5',
-                    fe = 'NewbieHint02_turret_a8',
-                    ye = { width: 2560, height: 1440 },
+                    ye = 'NewbieHint02_turret_a8',
+                    fe = { width: 2560, height: 1440 },
                     Ne = {
                         [w.ExtraSmall]: { x: 703, y: 812 },
                         [w.Small]: { x: 703, y: 812 },
@@ -1488,10 +1514,10 @@
                     Pe = 'common_label__center_24',
                     We = 'common_title_cd',
                     Ie = 'common_info_09',
-                    Ue = { width: 2560, height: 1440 },
-                    Ge = { x: 1148, y: 525 },
-                    ze = { x: 1028, y: 940 },
-                    je = { x: 1660, y: 537 },
+                    Ge = { width: 2560, height: 1440 },
+                    Ue = { x: 1148, y: 525 },
+                    je = { x: 1028, y: 940 },
+                    ze = { x: 1660, y: 537 },
                     $e = 'NewbieHint05_label_88',
                     Ve = 'NewbieHint05_label__left_4f',
                     qe = 'NewbieHint05_title_c1',
@@ -1570,8 +1596,8 @@
                     vu = 'NewbieHint08_title_b3',
                     pu = 'NewbieHint10_label_c7',
                     xu = 'NewbieHint10_label__left_0b',
-                    fu = 'NewbieHint10_label__top_89',
-                    yu = 'NewbieHint10_title_43',
+                    yu = 'NewbieHint10_label__top_89',
+                    fu = 'NewbieHint10_title_43',
                     Nu = 'NewbieHint10_info_3d',
                     Lu = 'NewbieHint10_label__right_40',
                     Ru = { width: 2560, height: 1440 },
@@ -1584,10 +1610,10 @@
                     Pu = { x: 953, y: 485 },
                     Wu = 'NewbieHint12_label_cb',
                     Iu = 'NewbieHint12_label__left_d9',
-                    Uu = 'NewbieHint12_title_03',
-                    Gu = 'NewbieHint12_info_12',
-                    zu = 'NewbieHint12_notPenetrated_f5',
-                    ju = 'NewbieHint12_penetrated_c4',
+                    Gu = 'NewbieHint12_title_03',
+                    Uu = 'NewbieHint12_info_12',
+                    ju = 'NewbieHint12_notPenetrated_f5',
+                    zu = 'NewbieHint12_penetrated_c4',
                     $u = { width: 2560, height: 1440 },
                     Vu = { x: 920, y: 390 },
                     qu = { x: 920, y: 640 },
@@ -1611,7 +1637,7 @@
                 })(Xu || (Xu = {}));
                 const Qu = {
                         [Xu.NewbieHint1]: () => {
-                            const e = z(),
+                            const e = j(),
                                 u = V(e, De, ge),
                                 t = V(e, De, Be);
                             return n().createElement(
@@ -1657,12 +1683,12 @@
                             );
                         },
                         [Xu.NewbieHint2]: () => {
-                            const e = z(),
+                            const e = j(),
                                 u = x().mediaSize,
-                                t = V(e, ye, Ne[u]),
-                                i = V(e, ye, Le[u]),
-                                a = V(e, ye, Re[u]),
-                                r = V(e, ye, He[u]);
+                                t = V(e, fe, Ne[u]),
+                                i = V(e, fe, Le[u]),
+                                a = V(e, fe, Re[u]),
+                                r = V(e, fe, He[u]);
                             return n().createElement(
                                 Q,
                                 {
@@ -1707,7 +1733,7 @@
                                 n().createElement(
                                     'div',
                                     { className: B()(be, Ce), style: r },
-                                    n().createElement('div', { className: fe }),
+                                    n().createElement('div', { className: ye }),
                                     n().createElement(
                                         'div',
                                         { className: we },
@@ -1717,7 +1743,7 @@
                             );
                         },
                         [Xu.NewbieHint3]: () => {
-                            const e = z(),
+                            const e = j(),
                                 u = x().mediaSize,
                                 t = V(e, Oe, Te[u]),
                                 i = Oe.height - e.height < 200;
@@ -1747,10 +1773,10 @@
                             );
                         },
                         [Xu.NewbieHint4]: () => {
-                            const e = z(),
-                                u = V(e, Ue, Ge),
-                                t = V(e, Ue, ze),
-                                i = V(e, Ue, je),
+                            const e = j(),
+                                u = V(e, Ge, Ue),
+                                t = V(e, Ge, je),
+                                i = V(e, Ge, ze),
                                 a = B()(ke, Me);
                             return n().createElement(
                                 Q,
@@ -1808,7 +1834,7 @@
                             );
                         },
                         [Xu.NewbieHint5]: () => {
-                            const e = z(),
+                            const e = j(),
                                 u = x().mediaSize,
                                 t = V(e, uu, tu[u]),
                                 i = V(e, uu, iu[u]),
@@ -1884,7 +1910,7 @@
                             );
                         },
                         [Xu.NewbieHint6]: () => {
-                            const e = z(),
+                            const e = j(),
                                 u = $(e, ou, Au),
                                 t = $(e, ou, du),
                                 i = $(e, ou, mu),
@@ -1958,7 +1984,7 @@
                             );
                         },
                         [Xu.NewbieHint7]: () => {
-                            const e = z(),
+                            const e = j(),
                                 u = gu.map(({ point: u, style: t }) => ({ point: $(e, Du, u), style: t }));
                             return n().createElement(
                                 Q,
@@ -2056,7 +2082,7 @@
                             ),
                         [Xu.NewbieHint10]: () => {
                             const e = x().mediaSize,
-                                u = z(),
+                                u = j(),
                                 t = e <= w.ExtraSmall,
                                 i = t ? Hu : Ru,
                                 a = t ? ku : Tu,
@@ -2087,10 +2113,10 @@
                                 }),
                                 n().createElement(
                                     'div',
-                                    { className: B()(pu, xu, fu), style: s },
+                                    { className: B()(pu, xu, yu), style: s },
                                     n().createElement(
                                         'div',
-                                        { className: yu },
+                                        { className: fu },
                                         R.strings.prebattle.hints.hint10.penetration.header(),
                                     ),
                                     n().createElement(
@@ -2101,10 +2127,10 @@
                                 ),
                                 n().createElement(
                                     'div',
-                                    { className: B()(pu, xu, fu), style: l },
+                                    { className: B()(pu, xu, yu), style: l },
                                     n().createElement(
                                         'div',
-                                        { className: yu },
+                                        { className: fu },
                                         R.strings.prebattle.hints.hint10.spread.header(),
                                     ),
                                     n().createElement(
@@ -2115,10 +2141,10 @@
                                 ),
                                 n().createElement(
                                     'div',
-                                    { className: B()(pu, Lu, fu), style: E },
+                                    { className: B()(pu, Lu, yu), style: E },
                                     n().createElement(
                                         'div',
-                                        { className: yu },
+                                        { className: fu },
                                         R.strings.prebattle.hints.hint10.reloading.header(),
                                     ),
                                     n().createElement(
@@ -2130,7 +2156,7 @@
                             );
                         },
                         [Xu.NewbieHint12]: () => {
-                            const e = z(),
+                            const e = j(),
                                 u = $(e, $u, qu),
                                 t = $(e, $u, Vu),
                                 i = B()(Wu, Iu);
@@ -2149,12 +2175,12 @@
                                     { className: i, style: t },
                                     n().createElement(
                                         'div',
-                                        { className: Uu },
+                                        { className: Gu },
                                         R.strings.prebattle.hints.hint12.notPenetrated.header(),
                                     ),
                                     n().createElement(
                                         'div',
-                                        { className: B()(Gu, zu) },
+                                        { className: B()(Uu, ju) },
                                         R.strings.prebattle.hints.hint12.notPenetrated.description(),
                                     ),
                                 ),
@@ -2163,19 +2189,19 @@
                                     { className: i, style: u },
                                     n().createElement(
                                         'div',
-                                        { className: Uu },
+                                        { className: Gu },
                                         R.strings.prebattle.hints.hint12.penetrated.header(),
                                     ),
                                     n().createElement(
                                         'div',
-                                        { className: B()(Gu, ju) },
+                                        { className: B()(Uu, zu) },
                                         R.strings.prebattle.hints.hint12.penetrated.description(),
                                     ),
                                 ),
                             );
                         },
                         [Xu.NewbieHint13]: () => {
-                            const e = z(),
+                            const e = j(),
                                 u = $(e, Ku, Yu),
                                 t = $(e, Ku, Zu),
                                 i = B()(ke, Pe);

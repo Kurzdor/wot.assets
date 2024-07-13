@@ -377,18 +377,21 @@
                 i.r(t),
                     i.d(t, {
                         events: () => n,
-                        getMouseGlobalPosition: () => a,
-                        getSize: () => r,
-                        graphicsQuality: () => o,
+                        getMouseGlobalPosition: () => o,
+                        getSize: () => a,
+                        graphicsQuality: () => s,
+                        playSound: () => r.G,
+                        setRTPC: () => r.E,
                     });
-                var n = i(527);
-                function r(e = 'px') {
+                var n = i(527),
+                    r = i(2493);
+                function a(e = 'px') {
                     return 'rem' === e ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function a(e = 'px') {
+                function o(e = 'px') {
                     return 'rem' === e ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const o = {
+                const s = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -399,6 +402,19 @@
                     viewEnv.setTrackMouseOnStage(e);
                 }
                 i.d(t, { R: () => n });
+            },
+            2493: (e, t, i) => {
+                function n(e) {
+                    engine.call('PlaySound', e).catch((t) => {
+                        console.error(`playSound('${e}'): `, t);
+                    });
+                }
+                function r(e, t) {
+                    engine.call('SetRTPCGlobal', e, t).catch((i) => {
+                        console.error(`setRTPC('${e}', '${t}'): `, i);
+                    });
+                }
+                i.d(t, { E: () => r, G: () => n });
             },
             2472: (e, t, i) => {
                 function n(e) {
@@ -412,9 +428,17 @@
                 i.d(t, { E: () => n });
             },
             3138: (e, t, i) => {
-                i.d(t, { O: () => r });
+                i.d(t, { O: () => a });
+                var n = i(5959),
+                    r = i(514);
+                const a = { view: i(7641), client: n, sound: r.ZP };
+            },
+            514: (e, t, i) => {
+                i.d(t, { ZP: () => o });
                 var n = i(5959);
-                const r = { view: i(7641), client: n };
+                const r = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    a = Object.keys(r).reduce((e, t) => ((e[t] = () => (0, n.playSound)(r[t])), e), {}),
+                    o = { play: Object.assign({}, a, { sound: n.playSound }), setRTPC: n.setRTPC };
             },
             3722: (e, t, i) => {
                 function n(e, t, i = 1) {
@@ -458,7 +482,7 @@
                         displayStatus: () => r.W,
                         displayStatusIs: () => y,
                         events: () => a.U,
-                        extraSize: () => L,
+                        extraSize: () => k,
                         forceTriggerMouseMove: () => O,
                         freezeTextureBeforeResize: () => m,
                         getBrowserTexturePath: () => d,
@@ -476,7 +500,7 @@
                         setEventHandled: () => b,
                         setInputPaddingsRem: () => l,
                         setSidePaddingsRem: () => c,
-                        whenTutorialReady: () => k,
+                        whenTutorialReady: () => S,
                     });
                 var n = i(3722),
                     r = i(6112),
@@ -541,7 +565,7 @@
                         (e, t) => ((e[t] = () => viewEnv.getShowingStatus() === r.W[t]), e),
                         {},
                     ),
-                    L = {
+                    k = {
                         set: (e, t) => {
                             viewEnv.setExtraSizeRem(e, t);
                         },
@@ -549,7 +573,7 @@
                             viewEnv.getExtraSizeRem(e, t);
                         },
                     },
-                    k = Promise.all([
+                    S = Promise.all([
                         new Promise((e) => {
                             window.isDomBuilt ? e() : a.U.onDomBuilt(e);
                         }),
@@ -611,7 +635,13 @@
                         },
                     };
             },
+            4598: (e, t, i) => {
+                console.log;
+            },
             6536: (e, t, i) => {
+                i(6179);
+            },
+            3815: (e, t, i) => {
                 i(6179);
             },
             8526: (e, t, i) => {
@@ -669,7 +699,9 @@
             },
             7727: (e, t, i) => {
                 function n(e) {
-                    engine.call('PlaySound', e);
+                    engine.call('PlaySound', e).catch((t) => {
+                        console.error('[lib/sounds.js] playSound(', e, '): ', t);
+                    });
                 }
                 i.d(t, { G: () => n });
             },
@@ -1030,7 +1062,7 @@
                 })(n || (n = {}));
             },
             9152: (e, t, i) => {
-                i(6483), i(8089), i(8526), i(5521), i(7727), i(6179), i(1922);
+                i(6483), i(8089), i(4598), i(3815), i(8526), i(5521), i(7727), i(6179), i(1922);
             },
             7476: (e, t, i) => {
                 i.d(t, { Z: () => n });

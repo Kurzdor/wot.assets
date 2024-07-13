@@ -207,6 +207,7 @@
     padding-bottom: 78rem;
     background: left top / cover no-repeat;
     position: relative;
+    pointer-events: auto;
 }
 .Emblem_image__micro_aa {
     width: 60rem;
@@ -1569,6 +1570,7 @@
     background: no-repeat center / contain;
     position: absolute;
     bottom: 20rem;
+    pointer-events: auto;
 }
 .StateNormal_base__medium_e3 .StateNormal_chapterLogoIcon_26 {
     bottom: 25rem;
@@ -6446,6 +6448,7 @@ body {
     position: relative;
     transition: opacity 0.3s;
     cursor: pointer;
+    pointer-events: none;
 }
 .mediaMedium .Content_base_81 {
     width: 142rem;
@@ -6463,12 +6466,6 @@ body {
 }
 .Content_base__seasonWaiting_7c {
     filter: saturate(0.7) brightness(0.7);
-}
-.Content_base__chapterNotChosen_dd {
-    height: 105rem;
-}
-.mediaMedium .Content_base__chapterNotChosen_dd {
-    height: 135rem;
 }
 .Content_effects_0d {
     display: flex;
