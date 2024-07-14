@@ -322,19 +322,19 @@ body {
 .Content_regularRewards_1d {
     display: flex;
     flex-direction: row;
-    margin-top: 180rem;
+    margin-top: 220rem;
     position: absolute;
     top: 50%;
     left: auto;
 }
 .mediaSmall .Content_regularRewards_1d {
-    margin-top: 220rem;
-}
-.mediaMedium .Content_regularRewards_1d {
     margin-top: 240rem;
 }
+.mediaMedium .Content_regularRewards_1d {
+    margin-top: 245rem;
+}
 .mediaLarge .Content_regularRewards_1d {
-    margin-top: 320rem;
+    margin-top: 335rem;
 }
 
 .Reward_base_ea {
@@ -755,12 +755,9 @@ body {
     font-size: 36rem;
 }
 
-.MainReward_label_d7 {
-    color: #e9e2bf;
-    font-size: 22rem;
-    font-weight: 700;
-    line-height: 1.2;
+.MainReward_labelCont_8d {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 222rem;
@@ -771,8 +768,19 @@ body {
     transform: translate(-50%, 100%);
 }
 
-.mediaLarge .MainReward_label_d7 {
+.mediaLarge .MainReward_labelCont_8d {
     width: 300rem;
+}
+
+.MainReward_label_d7 {
+    color: #e9e2bf;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.MainReward_labelText_92 {
+    margin-top: 13rem;
 }
 
 .MainReward_tip_22 {
@@ -780,7 +788,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 24rem;
-    margin-top: 10rem;
+    margin-top: -6rem;
 }
 
 .MainReward_rentReward_63 {

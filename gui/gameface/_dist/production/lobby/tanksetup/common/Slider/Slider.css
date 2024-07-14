@@ -53,8 +53,6 @@ in JS 8000 reserved like anchor for start optimization
     height: 100%;
     background-color: var(--progress-line-base);
     position: relative;
-    transition-timing-function: cubic-bezier(1, 0, 0.92, 1.39);
-    transition-property: width;
 }
 .EditableProgress_base__disabled_44 .EditableProgress_line_11 {
     background-color: var(--progress-line-disabled);
@@ -93,9 +91,6 @@ in JS 8000 reserved like anchor for start optimization
     top: 0;
     bottom: 0;
     left: 0;
-    transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, 0.92, 1.39), cubic-bezier(0.21, 0.61, 0.35, 1);
-    transition-property: width, transform;
 }
 .EditableProgress_gradient_e7 {
     max-width: 8001px;

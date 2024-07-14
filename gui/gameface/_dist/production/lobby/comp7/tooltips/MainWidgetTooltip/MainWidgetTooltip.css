@@ -23,7 +23,7 @@
     align-items: center;
     width: 398rem;
     padding: 15rem 0 20rem;
-    background: #070707 url('R.images.gui.maps.icons.comp7.backgrounds.widget_tooltip_bg') no-repeat top / contain;
+    background: #070707 url('R.images.comp7.gui.maps.icons.comp7.backgrounds.widget_tooltip_bg') no-repeat top / contain;
     color: #fff;
     overflow: hidden;
 }
@@ -67,7 +67,7 @@
 .App_rays_e2 {
     width: 398rem;
     height: 430rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.rays') no-repeat top / contain;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.rays') no-repeat top / contain;
     mix-blend-mode: screen;
     position: absolute;
     top: 40%;
@@ -547,7 +547,7 @@
     width: 150rem;
     height: 150rem;
     margin: 10rem 0 16rem;
-    background: url('R.images.gui.maps.icons.comp7.ranks.c_150.qualification') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.ranks.c_150.qualification') no-repeat center / cover;
     position: relative;
 }
 
@@ -561,7 +561,7 @@
 .QualificationContent_dash_65 {
     width: 66rem;
     height: 32rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.light_dash') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.light_dash') no-repeat center / cover;
 }
 
 .QualificationContent_dash__right_b2 {
@@ -590,7 +590,7 @@
 .QualificationContent_battleIcon_3e {
     width: 45rem;
     height: 46rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.battles_45x46') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.battles_45x46') no-repeat center / cover;
     position: absolute;
     top: 50%;
     left: 50%;

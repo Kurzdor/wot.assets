@@ -1740,7 +1740,7 @@
                             });
                     })();
             },
-            860: (e, t, n) => {
+            358: (e, t, n) => {
                 'use strict';
                 n.d(t, { Z: () => u });
                 var r = n(67);
@@ -1802,7 +1802,7 @@
             572: (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
                 'use strict';
                 __webpack_require__.d(__webpack_exports__, { Z: () => __WEBPACK_DEFAULT_EXPORT__ });
-                var _DataTracker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(860),
+                var _DataTracker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(358),
                     _index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(114);
                 class ViewModel {
                     constructor(path, watchingFields = []) {
@@ -1884,7 +1884,7 @@
                 }
                 r.__instance = void 0;
                 const o = r;
-                var u = n(860);
+                var u = n(358);
                 const i = {
                         getNumberFormat: (e, t) => systemLocale.getNumberFormat(e, t),
                         getRealFormat: (e, t) => systemLocale.getRealFormat(e, t),

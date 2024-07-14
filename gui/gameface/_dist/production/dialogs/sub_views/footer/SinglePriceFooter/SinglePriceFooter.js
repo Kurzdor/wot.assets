@@ -156,8 +156,8 @@
                         },
                     },
                     m = ['args'];
-                const g = 2,
-                    v = 16,
+                const v = 2,
+                    g = 16,
                     w = 32,
                     p = 64,
                     h = (u, e) => {
@@ -198,13 +198,13 @@
                     },
                     b = {
                         close(u) {
-                            h('popover' === u ? g : w);
+                            h('popover' === u ? v : w);
                         },
                         minimize() {
                             h(p);
                         },
                         move(u) {
-                            h(v, { isMouseEvent: !0, on: u });
+                            h(g, { isMouseEvent: !0, on: u });
                         },
                     };
                 function f(u) {
@@ -611,8 +611,8 @@
                         } else viewEnv.handleViewEvent({ __Type: A, type: u });
                         var F;
                     },
-                    g = () => m(D.CLOSE),
-                    v = (u, e) => {
+                    v = () => m(D.CLOSE),
+                    g = (u, e) => {
                         u.keyCode === C.n.ESCAPE && e();
                     };
                 var w = A(572);
@@ -627,7 +627,7 @@
                         DateFormatType: B,
                         makeGlobalBoundingBox: l,
                         sendMoveEvent: (u) => m(D.MOVE, { isMouseEvent: !0, on: u }),
-                        sendCloseEvent: g,
+                        sendCloseEvent: v,
                         sendClosePopOverEvent: () => m(D.POP_OVER, { on: !1 }),
                         sendShowContextMenuEvent: (u, e, A = 0) => {
                             m(D.CONTEXT_MENU, { isMouseEvent: !0, contentID: u, on: !0, decoratorID: A, args: e });
@@ -657,13 +657,13 @@
                             });
                         },
                         addEscapeListener: (u) => {
-                            const e = (e) => v(e, u);
+                            const e = (e) => g(e, u);
                             return (
                                 window.addEventListener('keydown', e), () => window.removeEventListener('keydown', e)
                             );
                         },
                         closeOnEsc: (u) => {
-                            v(u, g);
+                            g(u, v);
                         },
                         handleViewEvent: m,
                         onBindingsReady: d,
@@ -701,7 +701,7 @@
                     };
                 window.ViewEnvHelper = h;
             },
-            819: (u, e, A) => {
+            228: (u, e, A) => {
                 var F = A(179),
                     E = A.n(F),
                     t = A(493),
@@ -866,7 +866,7 @@
                         return A;
                     });
                 }
-                const g = (u, e, A = {}, F = 0) => {
+                const v = (u, e, A = {}, F = 0) => {
                         viewEnv.handleViewEvent(
                             Object.assign(
                                 {
@@ -880,7 +880,7 @@
                             ),
                         );
                     },
-                    v = (u) => {
+                    g = (u) => {
                         let e = u.children,
                             A = u.contentId,
                             E = u.args,
@@ -896,8 +896,8 @@
                             s = void 0 === C ? 0 : C,
                             _ = u.isEnabled,
                             c = void 0 === _ || _,
-                            v = u.targetId,
-                            w = void 0 === v ? 0 : v,
+                            g = u.targetId,
+                            w = void 0 === g ? 0 : g,
                             p = u.onShow,
                             h = u.onHide,
                             b = (function (u, e) {
@@ -913,7 +913,7 @@
                             T = (0, F.useMemo)(() => w || l().resId, [w]),
                             y = (0, F.useCallback)(() => {
                                 (f.current.isVisible && f.current.timeoutId) ||
-                                    (g(A, s, { isMouseEvent: !0, on: !0, arguments: m(E) }, T),
+                                    (v(A, s, { isMouseEvent: !0, on: !0, arguments: m(E) }, T),
                                     p && p(),
                                     (f.current.isVisible = !0));
                             }, [A, s, E, T, p]),
@@ -921,7 +921,7 @@
                                 if (f.current.isVisible || f.current.timeoutId) {
                                     const u = f.current.timeoutId;
                                     u > 0 && (clearTimeout(u), (f.current.timeoutId = 0)),
-                                        g(A, s, { on: !1 }, T),
+                                        v(A, s, { on: !1 }, T),
                                         f.current.isVisible && h && h(),
                                         (f.current.isVisible = !1);
                                 }
@@ -1228,49 +1228,51 @@
                     });
                 let j;
                 !(function (u) {
-                    (u.backport = 'backport'), (u.unbound = 'unbound'), (u.normal = 'normal'), (u.absent = 'absent');
+                    (u.backport = 'backport'), (u.normal = 'normal'), (u.absent = 'absent');
                 })(j || (j = {}));
-                const Y = (u, e) => ({
-                        isEnabled: u !== j.absent,
-                        args: e,
-                        contentId: R.views.dialogs.common.DialogTemplateGenericTooltip('resId'),
-                        decoratorId:
-                            u === j.unbound
-                                ? R.views.common.tooltip_window.tooltip_window.TooltipWindow('resId')
-                                : void 0,
-                        ignoreShowDelay: u === j.backport,
-                        ignoreMouseClick: !0,
-                    }),
-                    $ = {
+                const Y = {
                         base: 'SinglePriceApp_base_d6',
                         text: 'SinglePriceApp_text_ef',
                         currency: 'SinglePriceApp_currency_bb',
                         currency__big: 'SinglePriceApp_currency__big_a1',
-                        currency__discount: 'SinglePriceApp_currency__discount_14',
                     },
-                    X = () => {
+                    $ = () => {
                         const u = U().text,
                             e = U('model.cost'),
                             A = U('model.tooltip'),
-                            F = Y(A.type, void 0),
-                            t = D()($.currency, $[`currency__${e.size}`], e.isDiscount && $.currency__discount);
+                            F =
+                                ((t = A.type),
+                                (n = void 0),
+                                {
+                                    isEnabled: t !== j.absent,
+                                    args: n,
+                                    contentId: R.views.dialogs.common.DialogTemplateGenericTooltip('resId'),
+                                    decoratorId:
+                                        t === j.normal
+                                            ? R.views.common.tooltip_window.tooltip_window.TooltipWindow('resId')
+                                            : void 0,
+                                    ignoreShowDelay: t === j.backport,
+                                    ignoreMouseClick: !0,
+                                });
+                        var t, n;
+                        const r = D()(Y.currency, Y[`currency__${e.size}`]);
                         return E().createElement(
                             'div',
-                            { className: $.base },
-                            E().createElement('div', { className: $.text }, E().createElement(K, { text: u })),
+                            { className: Y.base },
+                            E().createElement('div', { className: Y.text }, E().createElement(K, { text: u })),
                             E().createElement(
-                                v,
+                                g,
                                 F,
-                                E().createElement('div', { className: t }, E().createElement(c, e)),
+                                E().createElement('div', { className: r }, E().createElement(c, e)),
                             ),
                         );
                     };
                 engine.whenReady.then(() => {
-                    n().render(E().createElement(X, null), document.getElementById('root'));
+                    n().render(E().createElement($, null), document.getElementById('root'));
                 });
             },
             917: (u, e, A) => {
-                A(819);
+                A(228);
             },
         },
         __webpack_module_cache__ = {},

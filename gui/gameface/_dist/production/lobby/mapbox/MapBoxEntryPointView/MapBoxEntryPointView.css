@@ -122,10 +122,10 @@ html {
 .Content_highlight_e6 {
     width: 100%;
     height: 100%;
-    border-image-source: url('R.images.gui.maps.icons.comp7.banner.border');
+    border-image-source: url('R.images.comp7.gui.maps.icons.comp7.banner.border');
     border-image-slice: 1 fill;
     border-image-width: 1rem;
-    background: url('R.images.gui.maps.icons.comp7.banner.highlight') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.banner.highlight') no-repeat center / cover;
     filter: brightness(0.6);
     opacity: 0.6;
     position: absolute;

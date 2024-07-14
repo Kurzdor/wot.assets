@@ -1,0 +1,13 @@
+.App_base_ae {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #0d0d0c;
+    color: #fff;
+}
+
+.App_base_ae:hover {
+    cursor: pointer;
+}

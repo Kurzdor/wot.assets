@@ -988,7 +988,7 @@
                             : e;
                         var O;
                     };
-                var v = t(581);
+                var v = t(403);
                 let g;
                 !(function (u) {
                     (u[(u.left = 0)] = 'left'), (u[(u.right = 1)] = 'right');
@@ -1124,36 +1124,27 @@
                     });
                 let L;
                 !(function (u) {
-                    (u.backport = 'backport'), (u.unbound = 'unbound'), (u.normal = 'normal'), (u.absent = 'absent');
+                    (u.backport = 'backport'), (u.normal = 'normal'), (u.absent = 'absent');
                 })(L || (L = {}));
-                const S = (u, e) => ({
-                    isEnabled: u !== L.absent,
-                    args: e,
-                    contentId: R.views.dialogs.common.DialogTemplateGenericTooltip('resId'),
-                    decoratorId:
-                        u === L.unbound ? R.views.common.tooltip_window.tooltip_window.TooltipWindow('resId') : void 0,
-                    ignoreShowDelay: u === L.backport,
-                    ignoreMouseClick: !0,
-                });
-                function N() {}
-                function I() {
+                function S() {}
+                function N() {
                     return !1;
                 }
                 console.log;
-                var U = t(174),
-                    W = t(67);
-                function V(u, e) {
+                var I = t(174),
+                    U = t(67);
+                function W(u, e) {
                     var t = ('undefined' != typeof Symbol && u[Symbol.iterator]) || u['@@iterator'];
                     if (t) return (t = t.call(u)).next.bind(t);
                     if (
                         Array.isArray(u) ||
                         (t = (function (u, e) {
                             if (!u) return;
-                            if ('string' == typeof u) return q(u, e);
+                            if ('string' == typeof u) return V(u, e);
                             var t = Object.prototype.toString.call(u).slice(8, -1);
                             'Object' === t && u.constructor && (t = u.constructor.name);
                             if ('Map' === t || 'Set' === t) return Array.from(u);
-                            if ('Arguments' === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)) return q(u, e);
+                            if ('Arguments' === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)) return V(u, e);
                         })(u)) ||
                         (e && u && 'number' == typeof u.length)
                     ) {
@@ -1167,13 +1158,13 @@
                         'Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.',
                     );
                 }
-                function q(u, e) {
+                function V(u, e) {
                     (null == e || e > u.length) && (e = u.length);
                     for (var t = 0, A = new Array(e); t < e; t++) A[t] = u[t];
                     return A;
                 }
-                const j = (u) => (0 === u ? window : window.subViews.get(u));
-                const z = ((u, e) => {
+                const q = (u) => (0 === u ? window : window.subViews.get(u));
+                const j = ((u, e) => {
                         const t = (0, A.createContext)({});
                         return [
                             function ({ mode: E = 'real', options: n, children: r, mocks: o }) {
@@ -1183,7 +1174,7 @@
                                         const n = (function ({
                                                 initializer: u = !0,
                                                 rootId: e = 0,
-                                                getRoot: t = j,
+                                                getRoot: t = q,
                                                 context: A = 'model',
                                             } = {}) {
                                                 const F = new Map();
@@ -1213,7 +1204,7 @@
                                                 return {
                                                     subscribe: (t, E) => {
                                                         const r = 'string' == typeof E ? `${A}.${E}` : A,
-                                                            o = W.O.view.addModelObserver(r, e, !0);
+                                                            o = U.O.view.addModelObserver(r, e, !0);
                                                         return F.set(o, t), u && t(n(E)), o;
                                                     },
                                                     readByPath: n,
@@ -1230,7 +1221,7 @@
                                                         };
                                                     },
                                                     dispose: function () {
-                                                        for (var u, t = V(F.keys()); !(u = t()).done; ) E(u.value, e);
+                                                        for (var u, t = W(F.keys()); !(u = t()).done; ) E(u.value, e);
                                                     },
                                                     unsubscribe: E,
                                                 };
@@ -1254,11 +1245,11 @@
                                                 observableModel: {
                                                     array: (u, e) => {
                                                         const A = null != e ? e : o(u),
-                                                            F = U.LO.box(A, { equals: I });
+                                                            F = I.LO.box(A, { equals: N });
                                                         return (
                                                             'real' === t &&
                                                                 r.subscribe(
-                                                                    (0, U.aD)((u) => F.set(u)),
+                                                                    (0, I.aD)((u) => F.set(u)),
                                                                     u,
                                                                 ),
                                                             F
@@ -1266,11 +1257,11 @@
                                                     },
                                                     object: (u, e) => {
                                                         const A = null != e ? e : o(u),
-                                                            F = U.LO.box(A, { equals: I });
+                                                            F = I.LO.box(A, { equals: N });
                                                         return (
                                                             'real' === t &&
                                                                 r.subscribe(
-                                                                    (0, U.aD)((u) => F.set(u)),
+                                                                    (0, I.aD)((u) => F.set(u)),
                                                                     u,
                                                                 ),
                                                             F
@@ -1280,13 +1271,13 @@
                                                         const A = o(e);
                                                         if (Array.isArray(u)) {
                                                             const F = u.reduce(
-                                                                (u, e) => ((u[e] = U.LO.box(A[e], {})), u),
+                                                                (u, e) => ((u[e] = I.LO.box(A[e], {})), u),
                                                                 {},
                                                             );
                                                             return (
                                                                 'real' === t &&
                                                                     r.subscribe(
-                                                                        (0, U.aD)((e) => {
+                                                                        (0, I.aD)((e) => {
                                                                             u.forEach((u) => {
                                                                                 F[u].set(e[u]);
                                                                             });
@@ -1300,13 +1291,13 @@
                                                             const F = u,
                                                                 E = Object.entries(F),
                                                                 n = E.reduce(
-                                                                    (u, [e, t]) => ((u[t] = U.LO.box(A[e], {})), u),
+                                                                    (u, [e, t]) => ((u[t] = I.LO.box(A[e], {})), u),
                                                                     {},
                                                                 );
                                                             return (
                                                                 'real' === t &&
                                                                     r.subscribe(
-                                                                        (0, U.aD)((u) => {
+                                                                        (0, I.aD)((u) => {
                                                                             E.forEach(([e, t]) => {
                                                                                 n[t].set(u[e]);
                                                                             });
@@ -1359,19 +1350,19 @@
                                 cost: u.object('cost'),
                                 tooltip: u.object('tooltip'),
                             }),
-                        N,
+                        S,
                     ),
-                    G = z[0],
-                    K = z[1],
-                    H = {
+                    z = j[0],
+                    G = j[1],
+                    K = {
                         base: 'SinglePriceApp_base_55',
                         text: 'SinglePriceApp_text_d5',
                         currency: 'SinglePriceApp_currency_9c',
                         currency__big: 'SinglePriceApp_currency__big_a5',
                     };
-                function Y() {
+                function H() {
                     return (
-                        (Y =
+                        (H =
                             Object.assign ||
                             function (u) {
                                 for (var e = 1; e < arguments.length; e++) {
@@ -1380,27 +1371,41 @@
                                 }
                                 return u;
                             }),
-                        Y.apply(this, arguments)
+                        H.apply(this, arguments)
                     );
                 }
-                const X = (0, v.Pi)(function ({ tooltipRootId: u }) {
-                    const e = K().model,
-                        t = S(e.tooltip.get().type, void 0),
-                        A = e.cost.get(),
-                        E = n()(H.currency, H[`currency__${A.size}`]);
+                const Y = (0, v.Pi)(function ({ tooltipRootId: u }) {
+                    const e = G().model,
+                        t =
+                            ((A = e.tooltip.get().type),
+                            (E = void 0),
+                            {
+                                isEnabled: A !== L.absent,
+                                args: E,
+                                contentId: R.views.dialogs.common.DialogTemplateGenericTooltip('resId'),
+                                decoratorId:
+                                    A === L.normal
+                                        ? R.views.common.tooltip_window.tooltip_window.TooltipWindow('resId')
+                                        : void 0,
+                                ignoreShowDelay: A === L.backport,
+                                ignoreMouseClick: !0,
+                            });
+                    var A, E;
+                    const r = e.cost.get(),
+                        o = n()(K.currency, K[`currency__${r.size}`]);
                     return F().createElement(
                         'div',
-                        { className: H.base },
-                        F().createElement('div', { className: H.text }, F().createElement(M, { text: e.text.get() })),
+                        { className: K.base },
+                        F().createElement('div', { className: K.text }, F().createElement(M, { text: e.text.get() })),
                         F().createElement(
                             d,
-                            Y({}, t, { targetId: u }),
-                            F().createElement('div', { className: E }, F().createElement(s, A)),
+                            H({}, t, { targetId: u }),
+                            F().createElement('div', { className: o }, F().createElement(s, r)),
                         ),
                     );
                 });
                 F().memo(function ({ rootId: u = R.views.dialogs.widgets.SinglePrice('resId') }) {
-                    return F().createElement(G, { options: { rootId: u } }, F().createElement(X, { tooltipRootId: u }));
+                    return F().createElement(z, { options: { rootId: u } }, F().createElement(Y, { tooltipRootId: u }));
                 });
             },
         },

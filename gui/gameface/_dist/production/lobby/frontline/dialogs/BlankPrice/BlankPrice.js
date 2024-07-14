@@ -701,7 +701,7 @@
                     };
                 window.ViewEnvHelper = b;
             },
-            656: (u, e, t) => {
+            464: (u, e, t) => {
                 var A = t(179),
                     F = t.n(A),
                     n = t(493),
@@ -877,7 +877,7 @@
                     };
                 let B;
                 !(function (u) {
-                    (u.backport = 'backport'), (u.unbound = 'unbound'), (u.normal = 'normal'), (u.absent = 'absent');
+                    (u.backport = 'backport'), (u.normal = 'normal'), (u.absent = 'absent');
                 })(B || (B = {}));
                 let C;
                 !(function (u) {
@@ -1006,44 +1006,48 @@
                             a
                         );
                     },
-                    f =
-                        (r.Sw.instance,
-                        (u, e) => ({
-                            isEnabled: u !== B.absent,
-                            args: e,
-                            contentId: R.views.dialogs.common.DialogTemplateGenericTooltip('resId'),
-                            decoratorId:
-                                u === B.unbound
-                                    ? R.views.common.tooltip_window.tooltip_window.TooltipWindow('resId')
-                                    : void 0,
-                            ignoreShowDelay: u === B.backport,
-                            ignoreMouseClick: !0,
-                        })),
-                    g = 'BlankPriceApp_base_f0',
-                    T = 'BlankPriceApp_text_9f',
-                    O = 'BlankPriceApp_blank_e9',
-                    M = 'BlankPriceApp_icon_0c',
-                    k = () => {
+                    f = (r.Sw.instance, 'BlankPriceApp_base_f0'),
+                    g = 'BlankPriceApp_text_9f',
+                    T = 'BlankPriceApp_blank_e9',
+                    O = 'BlankPriceApp_icon_0c',
+                    M = () => {
                         const u = b().count,
-                            e = (0, A.useMemo)(() => f(B.backport, void 0), []);
+                            e = (0, A.useMemo)(() => {
+                                return (
+                                    (u = B.backport),
+                                    (e = void 0),
+                                    {
+                                        isEnabled: u !== B.absent,
+                                        args: e,
+                                        contentId: R.views.dialogs.common.DialogTemplateGenericTooltip('resId'),
+                                        decoratorId:
+                                            u === B.normal
+                                                ? R.views.common.tooltip_window.tooltip_window.TooltipWindow('resId')
+                                                : void 0,
+                                        ignoreShowDelay: u === B.backport,
+                                        ignoreMouseClick: !0,
+                                    }
+                                );
+                                var u, e;
+                            }, []);
                         return F().createElement(
                             'div',
-                            { className: g },
-                            F().createElement('div', { className: T }, R.strings.dialogs.common.cost()),
+                            { className: f },
+                            F().createElement('div', { className: g }, R.strings.dialogs.common.cost()),
                             F().createElement(
                                 s,
                                 e,
                                 F().createElement(
                                     'div',
-                                    { className: O },
+                                    { className: T },
                                     u,
-                                    F().createElement('div', { className: M }),
+                                    F().createElement('div', { className: O }),
                                 ),
                             ),
                         );
                     };
                 engine.whenReady.then(() => {
-                    E().render(F().createElement(k, null), document.getElementById('root'));
+                    E().render(F().createElement(M, null), document.getElementById('root'));
                 });
             },
         },
@@ -1122,6 +1126,6 @@
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             t.forEach(e.bind(null, 0)), (t.push = e.bind(null, t.push.bind(t)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [678], () => __webpack_require__(656));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [678], () => __webpack_require__(464));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

@@ -1978,7 +1978,7 @@
                     ne = 'HowToGetVehicles_title_3b',
                     Ee = 'HowToGetVehicles_image_35',
                     ae = R.strings.comp7.noVehicles.howTo,
-                    ie = R.images.gui.maps.icons.comp7.no_vehicles,
+                    ie = R.images.comp7.gui.maps.icons.comp7.no_vehicles,
                     Ae = ['tasks', 'premium', 'reserves'],
                     Fe = ({ levelsStr: u }) =>
                         n().createElement(

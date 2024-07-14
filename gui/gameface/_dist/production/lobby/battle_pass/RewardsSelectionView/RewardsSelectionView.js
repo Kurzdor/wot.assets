@@ -2076,7 +2076,7 @@
                     };
                 window.ViewEnvHelper = B;
             },
-            9914: (e, t, u) => {
+            3571: (e, t, u) => {
                 'use strict';
                 var n = u(6179),
                     r = u.n(n),
@@ -3439,7 +3439,6 @@
                         (e.TankmenXpFactor = 'tankmenXPFactor'),
                         (e.FreeXpFactor = 'freeXPFactor'),
                         (e.BattleToken = 'battleToken'),
-                        (e.HBVehicleUnlock = 'hbUnlockVehicles'),
                         (e.PremiumUniversal = 'premium_universal'),
                         (e.Gold = 'gold'),
                         (e.Credits = 'credits'),
@@ -3466,13 +3465,10 @@
                         (e.EpicSelectToken = 'epicSelectToken'),
                         (e.CollectionItem = 'collectionItem'),
                         (e.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
+                        (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
-                        (e.MayEntitlement100 = 'historical_battles_100'),
-                        (e.HistoricalBattleDiscount25 = 'historical_battles_25'),
-                        (e.HistoricalBattleDiscount50 = 'historical_battles_50'),
-                        (e.HistoricalBattleDiscount75 = 'historical_battles_75');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
                 })(Ze || (Ze = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -4467,6 +4463,6 @@
                 u = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             u.forEach(t.bind(null, 0)), (u.push = t.bind(null, u.push.bind(u)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [519], () => __webpack_require__(9914));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [519], () => __webpack_require__(3571));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

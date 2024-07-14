@@ -1450,6 +1450,133 @@ html {
     transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
 }
 
+.Transition_base_9d {
+    position: relative;
+}
+
+.Transition_component_8c {
+    animation: Transition_fadeIn_b1 0.5s backwards ease-in;
+}
+
+.Transition_lock_40 {
+    width: 48rem;
+    height: 48rem;
+    background: url('R.images.gui.maps.icons.missions.commonIcons.lock_mission_48') no-repeat center / contain;
+    opacity: 1;
+    position: absolute;
+    left: 10rem;
+    z-index: 10;
+    animation: Transition_zoomOut_8b 0.4s ease-out forwards;
+}
+
+.Transition_lock__big_91 {
+    width: 60rem;
+    height: 60rem;
+    margin: 5rem 0 0 10rem;
+    background-image: url('R.images.gui.maps.icons.missions.commonIcons.lock_mission_60');
+}
+
+.Transition_background_6b {
+    width: 47rem;
+    height: 50rem;
+    background: url('R.images.gui.maps.icons.missions.icons.rewardGlow') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    left: 10rem;
+    animation: Transition_fadeInBg_d6 0.5s ease-out forwards;
+}
+
+.Transition_background__big_74 {
+    width: 77rem;
+    height: 81rem;
+}
+
+@keyframes Transition_fadeInBg_d6 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Transition_fadeIn_b1 {
+    0% {
+        filter: brightness(0.65) saturate(0.6);
+        opacity: 0.7;
+    }
+
+    100% {
+        filter: brightness(1) saturate(1);
+        opacity: 1;
+    }
+}
+
+@keyframes Transition_zoomOut_8b {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    99% {
+        opacity: 0;
+        transform: scale(1.6);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.BonusReward_base_31 {
+    display: flex;
+    position: relative;
+}
+
+.BonusReward_base__locked_58 {
+    filter: brightness(0.65) saturate(0.6);
+    opacity: 0.7;
+}
+
+.BonusReward_subscriptionRewardBackground_63 {
+    width: 47rem;
+    height: 50rem;
+    background: url('R.images.gui.maps.icons.missions.icons.rewardGlow') no-repeat center / contain;
+    position: absolute;
+}
+
+.BonusReward_subscriptionRewardBackground__big_bd {
+    width: 77rem;
+    height: 81rem;
+}
+
+.BonusReward_subscriptionRewardBackground__animated_54 {
+    background: none;
+}
+
+.BonusReward_lockedIcon_29 {
+    width: 48rem;
+    height: 48rem;
+    background: url('R.images.gui.maps.icons.missions.commonIcons.lock_mission_48') no-repeat center / contain;
+    position: absolute;
+    top: 2rem;
+    z-index: 10;
+}
+
+.BonusReward_lockedIcon__big_ea {
+    width: 60rem;
+    height: 60rem;
+    margin: 5rem 0 0 10rem;
+    background-image: url('R.images.gui.maps.icons.missions.commonIcons.lock_mission_60');
+}
+
+.BonusReward_reward_63 {
+    margin: 0 10rem;
+    position: relative;
+}
+
 .Content_base_63 {
     display: flex;
     flex-direction: column;
@@ -1458,6 +1585,7 @@ html {
     height: 100%;
     transform: translateY(-5rem);
 }
+
 .mediaMedium .Content_base_63 {
     transform: translateY(0rem);
 }
@@ -1592,6 +1720,7 @@ html {
     margin: 9rem 0 0;
 }
 .Content_rewards_67 {
+    display: flex;
     position: absolute;
     bottom: 46rem;
 }
@@ -1819,7 +1948,8 @@ html {
     width: 480rem;
     height: 384rem;
 }
-.Card_base__done_63 {
+.Card_base__done_63,
+.Card_base__undoneSubscription_46 {
     border-color: rgba(137, 167, 1, 0.25);
     box-shadow: inset 0 0 24rem rgba(137, 167, 1, 0.05);
     background-color: rgba(137, 167, 1, 0.05);
@@ -1840,7 +1970,8 @@ html {
     top: -1rem;
     left: 0;
 }
-.Card_base__done_63 .Card_borderTop_a2 {
+.Card_borderTop_a2 .Card_base__done_63,
+.Card_base__undoneSubscription_46 .Card_borderTop_a2 {
     background-image: linear-gradient(90deg, transparent, rgba(129, 234, 48, 0.3), transparent);
 }
 .Card_base__prem_ce .Card_borderTop_a2 {
@@ -1970,6 +2101,7 @@ html {
     opacity: 0.3;
 }
 .Card_rewardsWrapper_d9 {
+    display: flex;
     align-items: center;
     margin-bottom: 23rem;
     position: relative;
@@ -2042,7 +2174,8 @@ html {
     background-image: url('R.images.gui.maps.icons.missions.icons.PM_arrow');
     background-size: 14rem 38rem;
 }
-.mediaMedium .Card_arrow__done_04 {
+.mediaMedium .Card_arrow__done_04,
+.mediaMedium .Card_arrow__undoneSubscription_0b {
     background-image: url('R.images.gui.maps.icons.missions.icons.PM_arrow_completed');
 }
 .mediaLarge .Card_arrow_18 {
@@ -2051,7 +2184,8 @@ html {
 .mediaExtraLarge .Card_arrow_18 {
     width: 50rem;
 }
-.Card_arrow__done_04 {
+.Card_arrow__done_04,
+.Card_arrow__undoneSubscription_0b {
     background-image: url('R.images.gui.maps.icons.missions.icons.PM_arrow_completed_small');
 }
 @keyframes Card_border-anim_26 {

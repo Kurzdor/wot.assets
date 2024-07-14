@@ -1395,7 +1395,7 @@
                         height: 170,
                         frameCount: 136,
                         chunk: { count: 1, rows: 20, columns: 7 },
-                        getChunkPath: () => 'R.images.gui.maps.icons.comp7.banner.particles_sequence',
+                        getChunkPath: () => 'R.images.comp7.gui.maps.icons.comp7.banner.particles_sequence',
                     },
                     Du = (function (u) {
                         const e = u.chunk,

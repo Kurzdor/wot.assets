@@ -2324,7 +2324,6 @@
                         (e.TankmenXpFactor = 'tankmenXPFactor'),
                         (e.FreeXpFactor = 'freeXPFactor'),
                         (e.BattleToken = 'battleToken'),
-                        (e.HBVehicleUnlock = 'hbUnlockVehicles'),
                         (e.PremiumUniversal = 'premium_universal'),
                         (e.Gold = 'gold'),
                         (e.Credits = 'credits'),
@@ -2351,13 +2350,10 @@
                         (e.EpicSelectToken = 'epicSelectToken'),
                         (e.CollectionItem = 'collectionItem'),
                         (e.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
+                        (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
-                        (e.MayEntitlement100 = 'historical_battles_100'),
-                        (e.HistoricalBattleDiscount25 = 'historical_battles_25'),
-                        (e.HistoricalBattleDiscount50 = 'historical_battles_50'),
-                        (e.HistoricalBattleDiscount75 = 'historical_battles_75');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
                 })(ue || (ue = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -2470,7 +2466,6 @@
                     ue.TankmenXpFactor,
                     ue.FreeXpFactor,
                     ue.BattleToken,
-                    ue.HBVehicleUnlock,
                     ue.PremiumUniversal,
                     ue.NaturalCover,
                     ue.BpCoin,
@@ -2483,6 +2478,7 @@
                     ue.NewYearInvoice,
                     ue.EpicSelectToken,
                     ue.Comp7TokenWeeklyReward,
+                    ue.Comp7TokenCouponReward,
                     ue.BattleBoosterGift,
                     ue.CosmicLootboxCommon,
                     ue.CosmicLootboxSilver,
@@ -3173,8 +3169,8 @@
                             B = d === ie.Active,
                             v = C === ee.Marathon,
                             w = de(F) === J.style,
-                            S = uu.chapter.fullNameUppercased.$num(e),
-                            L = uu.chapter.fullName.quoted.$num(e),
+                            S = uu.chapter.fullNameUppercased.$num(e) || `chapter/fullNameUppercased/${e}`,
+                            L = uu.chapter.fullName.quoted.$num(e) || `chapter/fullName/quoted/${e}`,
                             P = h()(Je.base, Je[`base__${d}`], Je[`base__${t}`]);
                         return r().createElement(
                             xe.i,
@@ -3211,8 +3207,8 @@
                                             ),
                                         ),
                                     r().createElement('div', { className: Je.bgHover }),
-                                    B && r().createElement('div', { className: Je.frame }),
                                 ),
+                                B && r().createElement('div', { className: Je.frame }),
                                 r().createElement(
                                     'div',
                                     { className: Je.content },

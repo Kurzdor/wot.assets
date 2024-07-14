@@ -1139,7 +1139,6 @@
                             (e.TankmenXpFactor = 'tankmenXPFactor'),
                             (e.FreeXpFactor = 'freeXPFactor'),
                             (e.BattleToken = 'battleToken'),
-                            (e.HBVehicleUnlock = 'hbUnlockVehicles'),
                             (e.PremiumUniversal = 'premium_universal'),
                             (e.Gold = 'gold'),
                             (e.Credits = 'credits'),
@@ -1166,13 +1165,10 @@
                             (e.EpicSelectToken = 'epicSelectToken'),
                             (e.CollectionItem = 'collectionItem'),
                             (e.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
+                            (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (e.BattleBoosterGift = 'battleBooster_gift'),
                             (e.CosmicLootboxSilver = 'lootBoxToken'),
-                            (e.CosmicLootboxCommon = 'cosmic_2024_2'),
-                            (e.MayEntitlement100 = 'historical_battles_100'),
-                            (e.HistoricalBattleDiscount25 = 'historical_battles_25'),
-                            (e.HistoricalBattleDiscount50 = 'historical_battles_50'),
-                            (e.HistoricalBattleDiscount75 = 'historical_battles_75');
+                            (e.CosmicLootboxCommon = 'cosmic_2024_2');
                     })(j || (j = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -1285,7 +1281,6 @@
                         j.TankmenXpFactor,
                         j.FreeXpFactor,
                         j.BattleToken,
-                        j.HBVehicleUnlock,
                         j.PremiumUniversal,
                         j.NaturalCover,
                         j.BpCoin,
@@ -1298,6 +1293,7 @@
                         j.NewYearInvoice,
                         j.EpicSelectToken,
                         j.Comp7TokenWeeklyReward,
+                        j.Comp7TokenCouponReward,
                         j.BattleBoosterGift,
                         j.CosmicLootboxCommon,
                         j.CosmicLootboxSilver,
@@ -1324,8 +1320,7 @@
                             r = e.icon,
                             s = e.item,
                             o = e.dogTagType,
-                            i = e.iconSmall,
-                            l = ((e) => {
+                            i = ((e) => {
                                 switch (e) {
                                     case Y.S600x450:
                                         return 'c_600x450';
@@ -1362,9 +1357,6 @@
                                 return 'big' === u
                                     ? e.iconBig.replace('..', 'img://gui')
                                     : e.iconSmall.replace('..', 'img://gui');
-                            case 'hbUnlockVehicles':
-                            default:
-                                return `R.images.gui.maps.icons.quests.bonuses.${u}.${t}`;
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -1376,8 +1368,6 @@
                                 return `R.images.gui.maps.icons.quests.bonuses.${u}.${r}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${u}.${r}`;
-                            case 'entitlements':
-                                return `R.images.gui.maps.icons.quests.bonuses.${u}.${i}`;
                             case 'dogTagComponents':
                                 return ((e, u, t) => {
                                     const n = re[e];
@@ -1394,9 +1384,9 @@
                                     );
                                 })(o, u, r);
                             case 'dossier_badge':
-                                return `R.images.gui.maps.icons.quests.bonuses.badges.${l}.${r}`;
+                                return `R.images.gui.maps.icons.quests.bonuses.badges.${i}.${r}`;
                             case 'dossier_achievement':
-                                return `R.images.gui.maps.icons.achievement.${l}.${r}`;
+                                return `R.images.gui.maps.icons.achievement.${i}.${r}`;
                             case 'xp':
                             case 'xpFactor':
                                 return `R.images.gui.maps.icons.quests.bonuses.${u}.exp`;
@@ -1412,7 +1402,9 @@
                             case 'styleProgressToken':
                                 return `R.images.gui.maps.icons.quests.bonuses.${u}.style_3d`;
                             case 'collectionItem':
-                                return `R.images.gui.maps.icons.collectionItems.${l}.${r}`;
+                                return `R.images.gui.maps.icons.collectionItems.${i}.${r}`;
+                            default:
+                                return `R.images.gui.maps.icons.quests.bonuses.${u}.${t}`;
                         }
                     },
                     ie = (e, u, t) => {

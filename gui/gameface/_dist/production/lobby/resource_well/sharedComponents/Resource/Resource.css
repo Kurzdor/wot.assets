@@ -80,6 +80,10 @@
     background-image: url('R.images.gui.maps.icons.resourceWell.confirm.usa');
 }
 
+.Resource_resourceIcon__premium_plus_46 {
+    background-image: url('R.images.gui.maps.icons.resourceWell.confirm.premium_plus');
+}
+
 .Resource_counter_fe {
     color: #e9e2bf;
     font-size: 14rem;

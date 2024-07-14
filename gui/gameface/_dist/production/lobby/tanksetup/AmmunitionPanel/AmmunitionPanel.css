@@ -527,10 +527,6 @@ body {
     overflow: hidden;
 }
 
-.SetupApp_content__invisible_9a {
-    display: none;
-}
-
 .SetupApp_content__shown_dd {
     opacity: 1;
     animation: SetupApp_show-app_00 0.3s ease-out;
@@ -2631,13 +2627,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: url('R.images.gui.maps.icons.tanksetup.panel.slot_glow') no-repeat center / contain;
     position: absolute;
     pointer-events: none;
-    display: none;
+    display: flex;
     bottom: -23rem;
     transform: translateX(-50%);
     transition: opacity linear 0.2s;
-}
-.SlotGlow_glow__initialized_8d {
-    display: flex;
 }
 .SlotGlow_glow__shown_f2 {
     opacity: 1;

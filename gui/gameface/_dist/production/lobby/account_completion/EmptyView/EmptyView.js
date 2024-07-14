@@ -701,7 +701,7 @@
                     };
                 window.ViewEnvHelper = p;
             },
-            167: (u, e, t) => {
+            804: (u, e, t) => {
                 var n = t(179),
                     i = t.n(n),
                     r = t(493),
@@ -939,10 +939,7 @@
                 })(v || (v = {}));
                 var p = t(364);
                 Date.now();
-                function f(u) {
-                    engine.call('PlaySound', u);
-                }
-                const b = (u = 1) => {
+                const f = (u = 1) => {
                         const e = new Error().stack;
                         let t,
                             n = R.invalid('resId');
@@ -956,22 +953,22 @@
                             { caller: t, stack: e, resId: n }
                         );
                     },
-                    x = (u, e) => u.split('.').reduce((u, e) => u && u[e], e),
-                    O = (u) => u && 'ArrayItem' === u.__proto__.constructor.name,
-                    T = (u, e) => (u.length > 0 ? `${u}.${e}` : e),
-                    S = (u) =>
+                    b = (u, e) => u.split('.').reduce((u, e) => u && u[e], e),
+                    x = (u) => u && 'ArrayItem' === u.__proto__.constructor.name,
+                    O = (u, e) => (u.length > 0 ? `${u}.${e}` : e),
+                    T = (u) =>
                         ((u, e) =>
                             u.split('.').reduce((u, t) => {
-                                const n = x(`${u}.${t}`, window);
-                                return O(n) ? e(u, t, n) : `${u}.${t}`;
+                                const n = b(`${u}.${t}`, window);
+                                return x(n) ? e(u, t, n) : `${u}.${t}`;
                             }))(u, (u, e) => `${u}.${e}.value`),
-                    y = (u) => {
+                    S = (u) => {
                         const e = ((u) => {
-                                const e = b(),
+                                const e = f(),
                                     t = e.caller,
                                     n = e.resId,
                                     i = window.__feature && window.__feature !== t && t ? `subViews.${t}` : '';
-                                return { modelPrefix: i, modelPath: T(i, u || ''), resId: n };
+                                return { modelPrefix: i, modelPath: O(i, u || ''), resId: n };
                             })(),
                             t = e.modelPrefix,
                             n = u.split('.');
@@ -979,23 +976,23 @@
                             const u = [n[0]];
                             return (
                                 n.reduce((e, n) => {
-                                    const i = x(T(t, `${e}.${n}`), window);
-                                    return O(i) ? (u.push(i.id), `${e}.${n}.value`) : (u.push(n), `${e}.${n}`);
+                                    const i = b(O(t, `${e}.${n}`), window);
+                                    return x(i) ? (u.push(i.id), `${e}.${n}.value`) : (u.push(n), `${e}.${n}`);
                                 }),
                                 u.reduce((u, e) => u + '.' + e)
                             );
                         }
                         return '';
                     },
-                    M = p.Sw.instance;
-                let k;
+                    y = p.Sw.instance;
+                let M;
                 !(function (u) {
                     (u.None = 'None'), (u.Shallow = 'Shallow'), (u.Deep = 'Deep');
-                })(k || (k = {}));
-                const L = (u = 'model', e = k.Deep) => {
+                })(M || (M = {}));
+                const k = (u = 'model', e = M.Deep) => {
                     const t = (0, n.useState)(0),
                         i = (t[0], t[1]),
-                        r = (0, n.useMemo)(() => b(), []),
+                        r = (0, n.useMemo)(() => f(), []),
                         a = r.caller,
                         A = r.resId,
                         F = (0, n.useMemo)(
@@ -1004,10 +1001,10 @@
                         ),
                         E = (0, n.useState)(() =>
                             ((u) => {
-                                const e = x(u, window);
+                                const e = b(u, window);
                                 for (const u in e) 'function' == typeof e[u] && (e[u] = e[u].bind(e));
-                                return O(e) ? e.value : e;
-                            })(S(F)),
+                                return x(e) ? e.value : e;
+                            })(T(F)),
                         ),
                         o = E[0],
                         s = E[1],
@@ -1016,39 +1013,39 @@
                         m(() => {
                             if (
                                 ('boolean' == typeof e &&
-                                    ((e = e ? k.Deep : k.None),
+                                    ((e = e ? M.Deep : M.None),
                                     console.warn(
                                         'Boolean key for useModel "tracking" param is deprecated. Use ModelTracking enum values instead!',
                                     )),
-                                e !== k.None)
+                                e !== M.None)
                             ) {
                                 const t = (u) => {
                                         ((u) => u && 'CoherentArrayProxy' === u.__proto__.constructor.name)(u) &&
-                                        e === k.Deep
+                                        e === M.Deep
                                             ? (u === o && i((u) => u + 1), s(u))
                                             : s(Object.assign([], u));
                                     },
-                                    n = y(u);
-                                D.current = M.addCallback(n, t, A, e === k.Deep);
+                                    n = S(u);
+                                D.current = y.addCallback(n, t, A, e === M.Deep);
                             }
                         }),
                         (0, n.useEffect)(() => {
-                            if (e !== k.None)
+                            if (e !== M.None)
                                 return () => {
-                                    M.removeCallback(D.current, A);
+                                    y.removeCallback(D.current, A);
                                 };
                         }, [A, e]),
                         o
                     );
                 };
                 p.Sw.instance;
-                var P = t(521);
-                const N = (u) => {
+                var L = t(521);
+                const P = (u) => {
                     console.error(u.type + ': useKeydownListener hook :: Callback is not defined');
                 };
-                function H(u = P.n.NONE, e = N, t = !1) {
+                function N(u = L.n.NONE, e = P, t = !1) {
                     (0, n.useEffect)(() => {
-                        if (u !== P.n.NONE)
+                        if (u !== L.n.NONE)
                             return (
                                 window.addEventListener('keydown', n, t),
                                 () => {
@@ -1063,8 +1060,11 @@
                         }
                     }, [e, u, t]);
                 }
-                var W = t(483),
-                    U = t.n(W);
+                var H = t(483),
+                    W = t.n(H);
+                function U(u) {
+                    engine.call('PlaySound', u);
+                }
                 const I = {
                         base: 'TextButton_base_b6',
                         base__right: 'TextButton_base__right_39',
@@ -1118,7 +1118,7 @@
                             (this._onMouseEnter = (u) => (e) => {
                                 u && u(e),
                                     this.setState({ hover: !0 }),
-                                    this.props.soundHover && f(this.props.soundHover);
+                                    this.props.soundHover && U(this.props.soundHover);
                             }),
                             (this._onMouseLeave = (u) => (e) => {
                                 u && u(e), this.setState({ hover: !1, click: !1 });
@@ -1126,7 +1126,7 @@
                             (this._onMouseDown = (u) => (e) => {
                                 u && u(e),
                                     this.setState({ click: !0 }),
-                                    this.props.soundClick && f(this.props.soundClick);
+                                    this.props.soundClick && U(this.props.soundClick);
                             }),
                             (this._onMouseUp = (u) => (e) => {
                                 u && u(e), this.setState({ click: !1 });
@@ -1158,11 +1158,11 @@
                                     for (n = 0; n < r.length; n++) (t = r[n]), e.indexOf(t) >= 0 || (i[t] = u[t]);
                                     return i;
                                 })(u, V)),
-                            l = U()(I.base, I[`base__${a}`], I[`base__${r}`], null == A ? void 0 : A.base),
-                            B = U()(I.icon, I[`icon__${a}`], I[`icon__${r}`], null == A ? void 0 : A.icon),
-                            c = U()(I.glow, null == A ? void 0 : A.glow),
-                            _ = U()(I.caption, I[`caption__${a}`], null == A ? void 0 : A.caption),
-                            d = U()(I.goto, null == A ? void 0 : A.goto);
+                            l = W()(I.base, I[`base__${a}`], I[`base__${r}`], null == A ? void 0 : A.base),
+                            B = W()(I.icon, I[`icon__${a}`], I[`icon__${r}`], null == A ? void 0 : A.icon),
+                            c = W()(I.glow, null == A ? void 0 : A.glow),
+                            _ = W()(I.caption, I[`caption__${a}`], null == A ? void 0 : A.caption),
+                            d = W()(I.goto, null == A ? void 0 : A.goto);
                         return i().createElement(
                             'div',
                             j(
@@ -1207,7 +1207,7 @@
                                     },
                                     [t, A, r, a],
                                 );
-                            H(P.n.ESCAPE, F);
+                            N(L.n.ESCAPE, F);
                             const E = (function (u, e, t) {
                                 const i = (0, n.useContext)(d);
                                 let r = Object.entries(i).filter(([u, e]) => !0 === e && u in s);
@@ -1215,7 +1215,7 @@
                                     t && (r = r.filter((u) => t.includes(u[0]))),
                                     u.reduce((u, t) => {
                                         const n = r.map((u) =>
-                                            U()(
+                                            W()(
                                                 e[((u, e) => u + '__' + e)(t, u[0])],
                                                 e[
                                                     ((u, e) => {
@@ -1225,7 +1225,7 @@
                                                 ],
                                             ),
                                         );
-                                        return (u[t] = U()(e[t], ...n)), u;
+                                        return (u[t] = W()(e[t], ...n)), u;
                                     }, {})
                                 );
                             })(['base'], z);
@@ -1262,7 +1262,7 @@
                     );
                 }
                 const Y = () => {
-                    const u = G({}, L());
+                    const u = G({}, k());
                     return i().createElement(q, u);
                 };
                 var $;
@@ -1349,6 +1349,6 @@
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             t.forEach(e.bind(null, 0)), (t.push = e.bind(null, t.push.bind(t)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [235], () => __webpack_require__(167));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [235], () => __webpack_require__(804));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

@@ -533,7 +533,6 @@
                             (e.TankmenXpFactor = 'tankmenXPFactor'),
                             (e.FreeXpFactor = 'freeXPFactor'),
                             (e.BattleToken = 'battleToken'),
-                            (e.HBVehicleUnlock = 'hbUnlockVehicles'),
                             (e.PremiumUniversal = 'premium_universal'),
                             (e.Gold = 'gold'),
                             (e.Credits = 'credits'),
@@ -560,13 +559,10 @@
                             (e.EpicSelectToken = 'epicSelectToken'),
                             (e.CollectionItem = 'collectionItem'),
                             (e.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
+                            (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (e.BattleBoosterGift = 'battleBooster_gift'),
                             (e.CosmicLootboxSilver = 'lootBoxToken'),
-                            (e.CosmicLootboxCommon = 'cosmic_2024_2'),
-                            (e.MayEntitlement100 = 'historical_battles_100'),
-                            (e.HistoricalBattleDiscount25 = 'historical_battles_25'),
-                            (e.HistoricalBattleDiscount50 = 'historical_battles_50'),
-                            (e.HistoricalBattleDiscount75 = 'historical_battles_75');
+                            (e.CosmicLootboxCommon = 'cosmic_2024_2');
                     })(n || (n = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -687,7 +683,6 @@
                         s.E4.TankmenXpFactor,
                         s.E4.FreeXpFactor,
                         s.E4.BattleToken,
-                        s.E4.HBVehicleUnlock,
                         s.E4.PremiumUniversal,
                         s.E4.NaturalCover,
                         s.E4.BpCoin,
@@ -700,6 +695,7 @@
                         s.E4.NewYearInvoice,
                         s.E4.EpicSelectToken,
                         s.E4.Comp7TokenWeeklyReward,
+                        s.E4.Comp7TokenCouponReward,
                         s.E4.BattleBoosterGift,
                         s.E4.CosmicLootboxCommon,
                         s.E4.CosmicLootboxSilver,
@@ -726,8 +722,7 @@
                             a = e.icon,
                             o = e.item,
                             i = e.dogTagType,
-                            l = e.iconSmall,
-                            c = ((e) => {
+                            l = ((e) => {
                                 switch (e) {
                                     case s.h2.S600x450:
                                         return 'c_600x450';
@@ -764,9 +759,6 @@
                                 return 'big' === u
                                     ? e.iconBig.replace('..', 'img://gui')
                                     : e.iconSmall.replace('..', 'img://gui');
-                            case 'hbUnlockVehicles':
-                            default:
-                                return `R.images.gui.maps.icons.quests.bonuses.${u}.${t}`;
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -778,8 +770,6 @@
                                 return `R.images.gui.maps.icons.quests.bonuses.${u}.${a}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${u}.${a}`;
-                            case 'entitlements':
-                                return `R.images.gui.maps.icons.quests.bonuses.${u}.${l}`;
                             case 'dogTagComponents':
                                 return ((e, u, t) => {
                                     const n = d[e];
@@ -796,9 +786,9 @@
                                     );
                                 })(i, u, a);
                             case 'dossier_badge':
-                                return `R.images.gui.maps.icons.quests.bonuses.badges.${c}.${a}`;
+                                return `R.images.gui.maps.icons.quests.bonuses.badges.${l}.${a}`;
                             case 'dossier_achievement':
-                                return `R.images.gui.maps.icons.achievement.${c}.${a}`;
+                                return `R.images.gui.maps.icons.achievement.${l}.${a}`;
                             case 'xp':
                             case 'xpFactor':
                                 return `R.images.gui.maps.icons.quests.bonuses.${u}.exp`;
@@ -814,7 +804,9 @@
                             case 'styleProgressToken':
                                 return `R.images.gui.maps.icons.quests.bonuses.${u}.style_3d`;
                             case 'collectionItem':
-                                return `R.images.gui.maps.icons.collectionItems.${c}.${a}`;
+                                return `R.images.gui.maps.icons.collectionItems.${l}.${a}`;
+                            default:
+                                return `R.images.gui.maps.icons.quests.bonuses.${u}.${t}`;
                         }
                     },
                     A = (e, u, t) => {
@@ -2648,10 +2640,10 @@
                 U.defaultProps = { side: 'left', type: 'back', soundHover: 'highlight', soundClick: 'play' };
                 var H = t(5521);
                 t(4179);
-                const $ = (e) => {
+                const G = (e) => {
                     console.error(e.type + ': useKeydownListener hook :: Callback is not defined');
                 };
-                function G(e = H.n.NONE, u = $, t = !1) {
+                function $(e = H.n.NONE, u = G, t = !1) {
                     (0, r.useEffect)(() => {
                         if (e !== H.n.NONE)
                             return (
@@ -2669,7 +2661,7 @@
                     }, [u, e, t]);
                 }
                 function W(e) {
-                    G(H.n.ESCAPE, e);
+                    $(H.n.ESCAPE, e);
                 }
                 var z = t(903);
                 var j = t(9525),
@@ -3167,7 +3159,7 @@
                                 : a().createElement(Ne, Ue({ key: `${r}-${u}` }, c));
                         },
                     ),
-                    $e = (e) => ({
+                    Ge = (e) => ({
                         '--progress-base': `url(${e.bgImageBase})`,
                         '--progress-line-base': e.line.bgColorBase,
                         '--progress-line-disabled': e.line.bgColorDisabled,
@@ -3180,7 +3172,7 @@
                         '--progress-delta-color': e.delta.color,
                         '--progress-delta-shadow': e.delta.shadow,
                     }),
-                    Ge = {
+                    $e = {
                         bgImageBase: 'R.images.gui.maps.icons.components.progress_bar.pattern_grey',
                         line: { bgColorBase: '#f50', bgColorDisabled: 'transparent', bgColorFinished: '#59a011' },
                         pattern: {
@@ -3201,7 +3193,7 @@
                         }
                         return e;
                     },
-                    ze = Ge,
+                    ze = $e,
                     je = {
                         freezed: !1,
                         withStack: !1,
@@ -3231,7 +3223,7 @@
                                 }, [t, u, e]))(l, e, c);
                             return a().createElement(
                                 'div',
-                                { className: o()(ce.base, ce[`base__${t}`]), style: $e(u) },
+                                { className: o()(ce.base, ce[`base__${t}`]), style: Ge(u) },
                                 !i && a().createElement(_e, { size: t }),
                                 a().createElement(He, {
                                     size: t,
@@ -3264,7 +3256,7 @@
                         glow__right: 'LevelProgressBar_glow__right_55',
                     },
                     Ze = Object.assign({}, je, { freezed: !0, type: de.Simple }),
-                    Ke = (0, r.memo)(({ size: e = Ee.Default, value: u, slideValue: t, maximum: n, theme: r = Ge }) => {
+                    Ke = (0, r.memo)(({ size: e = Ee.Default, value: u, slideValue: t, maximum: n, theme: r = $e }) => {
                         const s = u >= n ? n : u;
                         return a().createElement(
                             'div',
@@ -3697,8 +3689,8 @@
                                 a().createElement(ku, { type: 'gold', size: 'big', value: u }),
                             ),
                         ),
-                    $u = R.strings.battle_pass.battlePassBuyView,
-                    Gu = (0, h.Pi)(() => {
+                    Gu = R.strings.battle_pass.battlePassBuyView,
+                    $u = (0, h.Pi)(() => {
                         const e = k(),
                             u = e.model,
                             t = e.controls,
@@ -3717,9 +3709,9 @@
                                 },
                                 [e],
                             );
-                            G(H.n.ENTER, u);
+                            $(H.n.ENTER, u);
                         })(t.buy),
-                            G(H.n.SPACE, t.back),
+                            $(H.n.SPACE, t.back),
                             W(t.back);
                         const _ = {
                             backgroundImage: `url(${(0, z.wD)(R.images.gui.maps.icons.battlePass.backgrounds.chapter, c.get())})`,
@@ -3742,8 +3734,8 @@
                                 { className: Z },
                                 a().createElement(q.D, {
                                     chapter: c.get(),
-                                    buyBP: $u.confirmAnyNumber.title(),
-                                    subTitle: $u.confirmAnyNumber.descr(),
+                                    buyBP: Gu.confirmAnyNumber.title(),
+                                    subTitle: Gu.confirmAnyNumber.descr(),
                                     className: J,
                                 }),
                                 a().createElement(
@@ -3882,7 +3874,7 @@
                             t = e.controls;
                         return 'rewardsState' === u.main.state.get()
                             ? a().createElement(zu, { options: ct }, a().createElement(lt, { back: t.showConfirmAny }))
-                            : a().createElement(Gu, null);
+                            : a().createElement($u, null);
                     });
                 engine.whenReady.then(() => {
                     C().render(
@@ -4690,8 +4682,8 @@
                         getDirection: (e) => (e.deltaY > 1 ? B.Next : B.Prev),
                     }),
                     H = 'VerticalBar_base_f3',
-                    $ = 'VerticalBar_base__nonActive_42',
-                    G = 'VerticalBar_topButton_d7',
+                    G = 'VerticalBar_base__nonActive_42',
+                    $ = 'VerticalBar_topButton_d7',
                     W = 'VerticalBar_bottomButton_06',
                     z = 'VerticalBar_track_df',
                     j = 'VerticalBar_thumb_32',
@@ -4734,7 +4726,7 @@
                                 return (
                                     (u.style.height = `${Q(t, s)}px`),
                                     u.classList.add(j),
-                                    r.current && (1 === s ? r.current.classList.add($) : r.current.classList.remove($)),
+                                    r.current && (1 === s ? r.current.classList.add(G) : r.current.classList.remove(G)),
                                     s
                                 );
                             }),
@@ -4842,7 +4834,7 @@
                             'div',
                             { className: s()(H, u.base), ref: r, onWheel: e.handleMouseWheel },
                             l().createElement('div', {
-                                className: s()(G, u.topButton),
+                                className: s()($, u.topButton),
                                 onMouseDown: (e) => {
                                     e.target.classList.contains(V) || 0 !== e.button || ((0, _.G)('play'), y(B.Next));
                                 },

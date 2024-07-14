@@ -3151,55 +3151,56 @@
     height: 100%;
     background: url('R.images.gui.maps.icons.battlePass.chapter_choice.active') no-repeat center / cover;
     position: absolute;
+    z-index: 0;
 }
 
 .Chapter_base__small_32 .Chapter_frame_58 {
-    width: 200rem;
+    width: 205rem;
     height: 265rem;
 }
 
 .mediaSmall .Chapter_base__small_32 .Chapter_frame_58 {
-    width: 245rem;
+    width: 249rem;
     height: 325rem;
 }
 
 .mediaMedium .Chapter_base__small_32 .Chapter_frame_58 {
-    width: 300rem;
+    width: 306rem;
     height: 375rem;
 }
 
 .mediaLarge .Chapter_base__small_32 .Chapter_frame_58 {
-    width: 360rem;
-    height: 420rem;
+    width: 347rem;
+    height: 482rem;
 }
 
 .mediaExtraLarge .Chapter_base__small_32 .Chapter_frame_58 {
-    width: 490rem;
+    width: 492rem;
     height: 600rem;
 }
 
 .Chapter_base__medium_e2 .Chapter_frame_58 {
-    width: 235rem;
+    width: 237rem;
     height: 310rem;
 }
 
 .mediaSmall .Chapter_base__medium_e2 .Chapter_frame_58 {
-    width: 245rem;
+    width: 248rem;
     height: 325rem;
 }
 
 .mediaMedium .Chapter_base__medium_e2 .Chapter_frame_58 {
-    width: 340rem;
+    width: 343rem;
     height: 435rem;
 }
 
 .mediaLarge .Chapter_base__medium_e2 .Chapter_frame_58 {
-    width: 420rem;
+    width: 425rem;
     height: 535rem;
 }
 
 .mediaExtraLarge .Chapter_base__medium_e2 .Chapter_frame_58 {
-    width: 610rem;
+    width: 615rem;
     height: 810rem;
 }
 

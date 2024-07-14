@@ -1090,7 +1090,7 @@
                         );
                     };
             },
-            2623: (u, e, t) => {
+            365: (u, e, t) => {
                 'use strict';
                 var r = t(6179),
                     n = t.n(r);
@@ -1669,9 +1669,8 @@
                             }, [u, e, t, n]),
                             i
                         );
-                    };
-                U.Sw.instance;
-                const du = cu;
+                    },
+                    du = (U.Sw.instance, cu);
                 let Bu;
                 !(function (u) {
                     (u.mainScreen = 'mainScreen'), (u.entryPointTooltip = 'entryPointTooltip');
@@ -2171,6 +2170,6 @@
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             t.forEach(e.bind(null, 0)), (t.push = e.bind(null, t.push.bind(t)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [52], () => __webpack_require__(2623));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [52], () => __webpack_require__(365));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

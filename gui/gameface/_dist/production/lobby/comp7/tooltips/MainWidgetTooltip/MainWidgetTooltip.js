@@ -944,7 +944,7 @@
                 })(M || (M = {}));
                 const N = ({ rank: u, size: e, division: t, className: a }) => {
                         const o = (0, n.useMemo)(() => {
-                            const n = R.images.gui.maps.icons.comp7.ranks.$num(e),
+                            const n = R.images.comp7.gui.maps.icons.comp7.ranks.$num(e),
                                 r = S(u) && void 0 !== t ? `_${x(t)}` : '';
                             return { backgroundImage: `url(${n.$dyn(`${O(u)}${r}`)})`, '--imageSize': `${e}rem` };
                         }, [u, e, t]);

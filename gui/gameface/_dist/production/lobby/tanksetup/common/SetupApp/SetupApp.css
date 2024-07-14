@@ -278,10 +278,6 @@ body {
     overflow: hidden;
 }
 
-.SetupApp_content__invisible_9a {
-    display: none;
-}
-
 .SetupApp_content__shown_dd {
     opacity: 1;
     animation: SetupApp_show-app_00 0.3s ease-out;

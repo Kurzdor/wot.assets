@@ -795,7 +795,7 @@
                     };
                 window.ViewEnvHelper = w;
             },
-            7058: (u, e, t) => {
+            584: (u, e, t) => {
                 'use strict';
                 var r = t(6179),
                     _ = t.n(r);
@@ -1774,27 +1774,27 @@
                     (bu.WEEK_DAY_TIME = 'week-day-time'),
                     (bu.YEAR = 'year'),
                     (bu.DATE_YEAR = 'date-year');
-                function vu(u) {
+                Date.now();
+                let vu;
+                function wu(u) {
                     engine.call('PlaySound', u);
                 }
-                Date.now();
-                const wu = {
-                    playHighlight() {
-                        vu('highlight');
-                    },
-                    playClick() {
-                        vu('play');
-                    },
-                    playYes() {
-                        vu('yes1');
-                    },
-                };
-                let Su;
                 mu.Sw.instance,
                     (function (u) {
                         (u.None = 'None'), (u.Shallow = 'Shallow'), (u.Deep = 'Deep');
-                    })(Su || (Su = {})),
+                    })(vu || (vu = {})),
                     mu.Sw.instance;
+                const Su = {
+                    playHighlight() {
+                        wu('highlight');
+                    },
+                    playClick() {
+                        wu('play');
+                    },
+                    playYes() {
+                        wu('yes1');
+                    },
+                };
                 var fu = t(3403),
                     xu = t(7030);
                 const Tu = 'wideSmall',
@@ -2620,10 +2620,10 @@
                             })(),
                             v = Mu[`${b.width}*${b.height}`],
                             w = (0, r.useCallback)(() => {
-                                wu.playYes(), t.action();
+                                Su.playYes(), t.action();
                             }, [t]),
                             S = (0, r.useCallback)(() => {
-                                wu.playHighlight(), p(!0);
+                                Su.playHighlight(), p(!0);
                             }, []),
                             f = (0, r.useCallback)(() => {
                                 p(!1);
@@ -2849,6 +2849,6 @@
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             t.forEach(e.bind(null, 0)), (t.push = e.bind(null, t.push.bind(t)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [503], () => __webpack_require__(7058));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [503], () => __webpack_require__(584));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

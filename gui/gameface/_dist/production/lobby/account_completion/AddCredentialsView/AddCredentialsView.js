@@ -35,7 +35,7 @@
                         displayStatus: () => m,
                         displayStatusIs: () => V,
                         events: () => C,
-                        extraSize: () => q,
+                        extraSize: () => Y,
                         forceTriggerMouseMove: () => W,
                         freezeTextureBeforeResize: () => y,
                         getBrowserTexturePath: () => x,
@@ -53,7 +53,7 @@
                         setEventHandled: () => H,
                         setInputPaddingsRem: () => T,
                         setSidePaddingsRem: () => M,
-                        whenTutorialReady: () => Y,
+                        whenTutorialReady: () => q,
                     });
                 const l = o('clientResized'),
                     E = { down: o('mousedown'), up: o('mouseup'), move: o('mousemove') };
@@ -263,7 +263,7 @@
                     return viewEnv.getShowingStatus();
                 }
                 const V = Object.keys(m).reduce((u, e) => ((u[e] = () => viewEnv.getShowingStatus() === m[e]), u), {}),
-                    q = {
+                    Y = {
                         set: (u, e) => {
                             viewEnv.setExtraSizeRem(u, e);
                         },
@@ -271,7 +271,7 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    Y = Promise.all([
+                    q = Promise.all([
                         new Promise((u) => {
                             window.isDomBuilt ? u() : C.onDomBuilt(u);
                         }),
@@ -1167,7 +1167,7 @@
                     'onShow',
                     'onHide',
                 ];
-                function q(u) {
+                function Y(u) {
                     return Object.entries(u || {}).map(([u, e]) => {
                         const t = { __Type: 'GFValueProxy', name: u };
                         switch (typeof e) {
@@ -1185,7 +1185,7 @@
                         return t;
                     });
                 }
-                const Y = (u, e, t = {}, n = 0) => {
+                const q = (u, e, t = {}, n = 0) => {
                         viewEnv.handleViewEvent(
                             Object.assign(
                                 {
@@ -1232,7 +1232,7 @@
                             w = (0, n.useMemo)(() => C || h().resId, [C]),
                             v = (0, n.useCallback)(() => {
                                 (b.current.isVisible && b.current.timeoutId) ||
-                                    (Y(t, F, { isMouseEvent: !0, on: !0, arguments: q(a) }, w),
+                                    (q(t, F, { isMouseEvent: !0, on: !0, arguments: Y(a) }, w),
                                     B && B(),
                                     (b.current.isVisible = !0));
                             }, [t, F, a, w, B]),
@@ -1240,7 +1240,7 @@
                                 if (b.current.isVisible || b.current.timeoutId) {
                                     const u = b.current.timeoutId;
                                     u > 0 && (clearTimeout(u), (b.current.timeoutId = 0)),
-                                        Y(t, F, { on: !1 }, w),
+                                        q(t, F, { on: !1 }, w),
                                         b.current.isVisible && g && g(),
                                         (b.current.isVisible = !1);
                                 }
@@ -1584,8 +1584,8 @@
                                     $ && Cu.base__withIcon,
                                     A,
                                 ),
-                                q = (0, n.useMemo)(() => (_ ? { backgroundImage: `url(${_})` } : null), [_]),
-                                Y = y()(Cu.input, Cu[`input__${t}`], F),
+                                Y = (0, n.useMemo)(() => (_ ? { backgroundImage: `url(${_})` } : null), [_]),
+                                q = y()(Cu.input, Cu[`input__${t}`], F),
                                 z = y()(Cu.icon, Cu[`icon__${t}`]),
                                 j = y()(Cu.placeholder, Cu[`placeholder__${t}`]);
                             return a().createElement(
@@ -1600,10 +1600,10 @@
                                     onClick: W,
                                 },
                                 !O && a().createElement('div', { className: Cu.disabled }),
-                                q && a().createElement('div', { style: q, className: z }),
+                                Y && a().createElement('div', { style: Y, className: z }),
                                 a().createElement('input', {
                                     ref: R,
-                                    className: Y,
+                                    className: q,
                                     type: Fu[t],
                                     value: e,
                                     onChange: k,
@@ -1788,8 +1788,8 @@
                             (0, n.useEffect)(() => {
                                 N(d);
                             }, [d, o]);
-                        const q = (0, n.useCallback)((u) => h && h(u), [h]),
-                            Y = (0, n.useCallback)(
+                        const Y = (0, n.useCallback)((u) => h && h(u), [h]),
+                            q = (0, n.useCallback)(
                                 (u) => {
                                     L.disableHighlightOnFocus && I && N(!1), p && p(u);
                                 },
@@ -1818,7 +1818,7 @@
                             su = y()(hu.base, hu[`base__${l}`], hu[`base__${o}`], T);
                         return a().createElement(
                             'div',
-                            { id: e, className: su, onMouseEnter: q, onMouseDown: j, onMouseUp: z, onMouseLeave: X },
+                            { id: e, className: su, onMouseEnter: Y, onMouseDown: j, onMouseUp: z, onMouseLeave: X },
                             a().createElement(
                                 tu,
                                 { tooltipArgs: c },
@@ -1837,7 +1837,7 @@
                                             selectOnFocus: L.selectOnFocus,
                                             isFocused: B,
                                             classMix: x,
-                                            onFocus: Y,
+                                            onFocus: q,
                                             onChange: H,
                                             onClear: $,
                                         },
@@ -2008,8 +2008,8 @@
                         Vu.apply(this, arguments)
                     );
                 }
-                const qu = { debounceTime: 0 },
-                    Yu = (0, n.memo)(
+                const Yu = { debounceTime: 0 },
+                    qu = (0, n.memo)(
                         ({
                             name: u,
                             value: e,
@@ -2055,7 +2055,7 @@
                                             onChange: p,
                                             error: d ? '' : t,
                                             variant: d ? Eu : ou,
-                                            options: qu,
+                                            options: Yu,
                                         },
                                         g,
                                     ),
@@ -2095,7 +2095,6 @@
                             (u.TankmenXpFactor = 'tankmenXPFactor'),
                             (u.FreeXpFactor = 'freeXPFactor'),
                             (u.BattleToken = 'battleToken'),
-                            (u.HBVehicleUnlock = 'hbUnlockVehicles'),
                             (u.PremiumUniversal = 'premium_universal'),
                             (u.Gold = 'gold'),
                             (u.Credits = 'credits'),
@@ -2122,13 +2121,10 @@
                             (u.EpicSelectToken = 'epicSelectToken'),
                             (u.CollectionItem = 'collectionItem'),
                             (u.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
+                            (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
                             (u.CosmicLootboxSilver = 'lootBoxToken'),
-                            (u.CosmicLootboxCommon = 'cosmic_2024_2'),
-                            (u.MayEntitlement100 = 'historical_battles_100'),
-                            (u.HistoricalBattleDiscount25 = 'historical_battles_25'),
-                            (u.HistoricalBattleDiscount50 = 'historical_battles_50'),
-                            (u.HistoricalBattleDiscount75 = 'historical_battles_75');
+                            (u.CosmicLootboxCommon = 'cosmic_2024_2');
                     })(ju || (ju = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -2241,7 +2237,6 @@
                         ju.TankmenXpFactor,
                         ju.FreeXpFactor,
                         ju.BattleToken,
-                        ju.HBVehicleUnlock,
                         ju.PremiumUniversal,
                         ju.NaturalCover,
                         ju.BpCoin,
@@ -2254,6 +2249,7 @@
                         ju.NewYearInvoice,
                         ju.EpicSelectToken,
                         ju.Comp7TokenWeeklyReward,
+                        ju.Comp7TokenCouponReward,
                         ju.BattleBoosterGift,
                         ju.CosmicLootboxCommon,
                         ju.CosmicLootboxSilver,
@@ -2270,8 +2266,7 @@
                             s = u.icon,
                             r = u.item,
                             o = u.dogTagType,
-                            i = u.iconSmall,
-                            l = ((u) => {
+                            i = ((u) => {
                                 switch (u) {
                                     case Ku.S600x450:
                                         return 'c_600x450';
@@ -2308,9 +2303,6 @@
                                 return 'big' === e
                                     ? u.iconBig.replace('..', 'img://gui')
                                     : u.iconSmall.replace('..', 'img://gui');
-                            case 'hbUnlockVehicles':
-                            default:
-                                return `R.images.gui.maps.icons.quests.bonuses.${e}.${t}`;
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -2322,8 +2314,6 @@
                                 return `R.images.gui.maps.icons.quests.bonuses.${e}.${s}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${e}.${s}`;
-                            case 'entitlements':
-                                return `R.images.gui.maps.icons.quests.bonuses.${e}.${i}`;
                             case 'dogTagComponents':
                                 return ((u, e, t) => {
                                     const n = se[u];
@@ -2340,9 +2330,9 @@
                                     );
                                 })(o, e, s);
                             case 'dossier_badge':
-                                return `R.images.gui.maps.icons.quests.bonuses.badges.${l}.${s}`;
+                                return `R.images.gui.maps.icons.quests.bonuses.badges.${i}.${s}`;
                             case 'dossier_achievement':
-                                return `R.images.gui.maps.icons.achievement.${l}.${s}`;
+                                return `R.images.gui.maps.icons.achievement.${i}.${s}`;
                             case 'xp':
                             case 'xpFactor':
                                 return `R.images.gui.maps.icons.quests.bonuses.${e}.exp`;
@@ -2358,7 +2348,9 @@
                             case 'styleProgressToken':
                                 return `R.images.gui.maps.icons.quests.bonuses.${e}.style_3d`;
                             case 'collectionItem':
-                                return `R.images.gui.maps.icons.collectionItems.${l}.${s}`;
+                                return `R.images.gui.maps.icons.collectionItems.${i}.${s}`;
+                            default:
+                                return `R.images.gui.maps.icons.quests.bonuses.${e}.${t}`;
                         }
                     },
                     ie = (u, e, t) => {
@@ -3164,7 +3156,7 @@
                         'onConfirmClicked',
                         'onWarningTimer',
                     ];
-                const qe = (0, n.memo)((u) => {
+                const Ye = (0, n.memo)((u) => {
                         let e = u.title,
                             t = u.subTitle,
                             s = u.isTitleOnly,
@@ -3248,7 +3240,7 @@
                             ),
                         );
                     }),
-                    Ye = {
+                    qe = {
                         field: 'AddCredentialsViewApp_field_a4',
                         password: 'AddCredentialsViewApp_password_da',
                         password__small: 'AddCredentialsViewApp_password__small_a2',
@@ -3362,7 +3354,7 @@
                             [F, r],
                         ),
                         B = '' !== _,
-                        g = $(['reward', 'password'], Ye);
+                        g = $(['reward', 'password'], qe);
                     return (
                         (0, n.useEffect)(() => {
                             D.current &&
@@ -3371,7 +3363,7 @@
                                     : r && c.errorMessage && ((D.current = !1), F[1].onFocusChange(!0)));
                         }, [F, E.errorMessage, c.errorMessage, r]),
                         a().createElement(
-                            qe,
+                            Ye,
                             je({}, l, F[d], {
                                 isConfirmEnabled: o,
                                 onConfirmClicked: m,
@@ -3384,7 +3376,7 @@
                                     title: s,
                                 }),
                             }),
-                            a().createElement(Yu, je({}, E, F[0], { classMix: Ye.field, isErrorVisible: !B })),
+                            a().createElement(qu, je({}, E, F[0], { classMix: qe.field, isErrorVisible: !B })),
                             r && a().createElement(he, je({}, c, F[1], { classMix: g.password, isErrorVisible: !B })),
                         )
                     );

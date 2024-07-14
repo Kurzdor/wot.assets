@@ -25,9 +25,9 @@
                 t.r(a),
                     t.d(a, {
                         events: () => r,
-                        getMouseGlobalPosition: () => C,
+                        getMouseGlobalPosition: () => m,
                         getSize: () => d,
-                        graphicsQuality: () => m,
+                        graphicsQuality: () => C,
                     });
                 var n = {};
                 t.r(n), t.d(n, { getBgUrl: () => g, getTextureUrl: () => c });
@@ -152,10 +152,10 @@
                 function d(u = 'px') {
                     return 'rem' === u ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function C(u = 'px') {
+                function m(u = 'px') {
                     return 'rem' === u ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const m = {
+                const C = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -407,12 +407,12 @@
                         D = r.mediumWidth,
                         B = r.smallWidth,
                         d = r.extraSmallWidth,
-                        C = r.extraLargeHeight,
-                        m = r.largeHeight,
+                        m = r.extraLargeHeight,
+                        C = r.largeHeight,
                         c = r.mediumHeight,
                         g = r.smallHeight,
                         h = r.extraSmallHeight,
-                        f = { extraLarge: C, large: m, medium: c, small: g, extraSmall: h };
+                        f = { extraLarge: m, large: C, medium: c, small: g, extraSmall: h };
                     if (t.extraLarge || t.large || t.medium || t.small || t.extraSmall) {
                         if (t.extraLarge && a) return e;
                         if (t.large && n) return e;
@@ -428,8 +428,8 @@
                         if (
                             !(t.extraLargeWidth || t.largeWidth || t.mediumWidth || t.smallWidth || t.extraSmallWidth)
                         ) {
-                            if (t.extraLargeHeight && C) return e;
-                            if (t.largeHeight && m) return e;
+                            if (t.extraLargeHeight && m) return e;
+                            if (t.largeHeight && C) return e;
                             if (t.mediumHeight && c) return e;
                             if (t.smallHeight && g) return e;
                             if (t.extraSmallHeight && h) return e;
@@ -480,7 +480,7 @@
                     ou = t.n(lu),
                     su = t(926),
                     Du = t.n(su);
-                let Bu, du, Cu;
+                let Bu, du, mu;
                 !(function (u) {
                     (u[(u.ExtraSmall = Y.extraSmall.width)] = 'ExtraSmall'),
                         (u[(u.Small = Y.small.width)] = 'Small'),
@@ -501,8 +501,8 @@
                             (u[(u.Medium = Y.medium.height)] = 'Medium'),
                             (u[(u.Large = Y.large.height)] = 'Large'),
                             (u[(u.ExtraLarge = Y.extraLarge.height)] = 'ExtraLarge');
-                    })(Cu || (Cu = {}));
-                const mu = () => {
+                    })(mu || (mu = {}));
+                const Cu = () => {
                         const u = (0, i.useContext)(nu),
                             e = u.width,
                             t = u.height,
@@ -541,17 +541,17 @@
                             n = ((u) => {
                                 switch (!0) {
                                     case u.extraLargeHeight:
-                                        return Cu.ExtraLarge;
+                                        return mu.ExtraLarge;
                                     case u.largeHeight:
-                                        return Cu.Large;
+                                        return mu.Large;
                                     case u.mediumHeight:
-                                        return Cu.Medium;
+                                        return mu.Medium;
                                     case u.smallHeight:
-                                        return Cu.Small;
+                                        return mu.Small;
                                     case u.extraSmallHeight:
-                                        return Cu.ExtraSmall;
+                                        return mu.ExtraSmall;
                                     default:
-                                        return console.error('Unreachable media context resolution'), Cu.ExtraSmall;
+                                        return console.error('Unreachable media context resolution'), mu.ExtraSmall;
                                 }
                             })(u);
                         return { mediaSize: r, mediaWidth: a, mediaHeight: n, remScreenWidth: e, remScreenHeight: t };
@@ -579,11 +579,11 @@
                         [du.ExtraLarge]: `${Du().SMALL_WIDTH} ${Du().MEDIUM_WIDTH} ${Du().LARGE_WIDTH} ${Du().EXTRA_LARGE_WIDTH}`,
                     },
                     fu = {
-                        [Cu.ExtraSmall]: '',
-                        [Cu.Small]: Du().SMALL_HEIGHT,
-                        [Cu.Medium]: `${Du().SMALL_HEIGHT} ${Du().MEDIUM_HEIGHT}`,
-                        [Cu.Large]: `${Du().SMALL_HEIGHT} ${Du().MEDIUM_HEIGHT} ${Du().LARGE_HEIGHT}`,
-                        [Cu.ExtraLarge]: `${Du().SMALL_HEIGHT} ${Du().MEDIUM_HEIGHT} ${Du().LARGE_HEIGHT} ${Du().EXTRA_LARGE_HEIGHT}`,
+                        [mu.ExtraSmall]: '',
+                        [mu.Small]: Du().SMALL_HEIGHT,
+                        [mu.Medium]: `${Du().SMALL_HEIGHT} ${Du().MEDIUM_HEIGHT}`,
+                        [mu.Large]: `${Du().SMALL_HEIGHT} ${Du().MEDIUM_HEIGHT} ${Du().LARGE_HEIGHT}`,
+                        [mu.ExtraLarge]: `${Du().SMALL_HEIGHT} ${Du().MEDIUM_HEIGHT} ${Du().LARGE_HEIGHT} ${Du().EXTRA_LARGE_HEIGHT}`,
                     },
                     vu = {
                         [Bu.ExtraSmall]: '',
@@ -604,7 +604,7 @@
                                 for (r = 0; r < n.length; r++) (t = n[r]), e.indexOf(t) >= 0 || (a[t] = u[t]);
                                 return a;
                             })(u, cu);
-                        const a = mu(),
+                        const a = Cu(),
                             n = a.mediaWidth,
                             A = a.mediaHeight,
                             i = a.mediaSize;
@@ -673,8 +673,8 @@
                             D = void 0 === s ? a - 1 : s,
                             B = u.loop,
                             d = void 0 === B ? Hu : B,
-                            C = u.state,
-                            m = void 0 === C ? Mu : C,
+                            m = u.state,
+                            C = void 0 === m ? Mu : m,
                             c = u.onAnimationDone,
                             g = u.onAnimationComplete,
                             h = u.poster,
@@ -696,7 +696,7 @@
                                     t = (t) => {
                                         e.clearRect(0, 0, u.width, u.height), e.drawImage(t.img, -t.x, -t.y);
                                     };
-                                switch (m) {
+                                switch (C) {
                                     case 'play':
                                         return (function () {
                                             const u = Ou(o, D, r),
@@ -729,7 +729,7 @@
                                     default:
                                         return console.error('[CanvasSequence] Unreachable state!');
                                 }
-                            }, [E, r, o, D, d, n, g, c, h, m]),
+                            }, [E, r, o, D, d, n, g, c, h, C]),
                             F().createElement('canvas', Tu({}, f, { width: e, height: t, ref: v }))
                         );
                     }),
@@ -985,22 +985,22 @@
                                     D = s[0],
                                     B = s[1],
                                     d = (0, i.useState)(() => l(r, a, A)),
-                                    C = d[0],
-                                    m = d[1];
+                                    m = d[0],
+                                    C = d[1];
                                 return (
                                     (0, i.useEffect)(() => {
-                                        o.current ? m(l(D, a, A)) : (o.current = !0);
+                                        o.current ? C(l(D, a, A)) : (o.current = !0);
                                     }, [A, D, a]),
                                     (0, i.useEffect)(() => {
                                         B(r);
                                     }, [r]),
                                     (0, i.useEffect)(
                                         () => () => {
-                                            C.externalModel.dispose(), E.current.forEach((u) => u());
+                                            m.externalModel.dispose(), E.current.forEach((u) => u());
                                         },
-                                        [C],
+                                        [m],
                                     ),
-                                    F().createElement(t.Provider, { value: C }, n)
+                                    F().createElement(t.Provider, { value: m }, n)
                                 );
                             },
                             () => (0, i.useContext)(t),
@@ -1116,7 +1116,7 @@
                         height: 170,
                         frameCount: 136,
                         chunk: { count: 1, rows: 20, columns: 7 },
-                        getChunkPath: () => 'R.images.gui.maps.icons.comp7.banner.particles_sequence',
+                        getChunkPath: () => 'R.images.comp7.gui.maps.icons.comp7.banner.particles_sequence',
                     },
                     Fe = (function (u) {
                         const e = u.chunk,
@@ -1150,9 +1150,9 @@
                                     D = (0, i.useState)(null != (a = u.frameTime) ? a : Lu),
                                     B = D[0],
                                     d = D[1],
-                                    C = (0, i.useState)(null != (n = u.loop) ? n : Hu),
-                                    m = C[0],
-                                    c = C[1],
+                                    m = (0, i.useState)(null != (n = u.loop) ? n : Hu),
+                                    C = m[0],
+                                    c = m[1],
                                     g = (0, i.useRef)(o),
                                     h = (0, i.useCallback)((u) => {
                                         s(u), E('play');
@@ -1172,7 +1172,7 @@
                                         state: F,
                                         initialFrameIndex: o,
                                         frameTime: B,
-                                        loop: m,
+                                        loop: C,
                                         onAnimate: (0, i.useCallback)((e, t) => {
                                             (g.current = e), null == u.onAnimate || u.onAnimate(e, t);
                                         }, e),
@@ -1192,7 +1192,7 @@
                                     pause: w,
                                 };
                             })(),
-                            D = mu().mediaSize,
+                            D = Cu().mediaSize,
                             B = !n && D <= Bu.Medium ? ue.Small : ue.Big;
                         return F().createElement(
                             'div',

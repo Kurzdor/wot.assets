@@ -721,7 +721,7 @@
                     };
                 window.ViewEnvHelper = f;
             },
-            994: (u, e, t) => {
+            322: (u, e, t) => {
                 'use strict';
                 var E = t(179),
                     A = t.n(E);
@@ -1170,22 +1170,8 @@
                             }, [u, e, t, A]),
                             r
                         );
-                    };
-                function eu(u) {
-                    engine.call('PlaySound', u);
-                }
-                const tu = {
-                        playHighlight() {
-                            eu('highlight');
-                        },
-                        playClick() {
-                            eu('play');
-                        },
-                        playYes() {
-                            eu('yes1');
-                        },
                     },
-                    Eu = (u = 1) => {
+                    eu = (u = 1) => {
                         const e = new Error().stack;
                         let t,
                             E = R.invalid('resId');
@@ -1199,22 +1185,22 @@
                             { caller: t, stack: e, resId: E }
                         );
                     },
-                    Au = (u, e) => u.split('.').reduce((u, e) => u && u[e], e),
-                    Fu = (u) => u && 'ArrayItem' === u.__proto__.constructor.name,
-                    ru = (u, e) => (u.length > 0 ? `${u}.${e}` : e),
-                    au = (u) =>
+                    tu = (u, e) => u.split('.').reduce((u, e) => u && u[e], e),
+                    Eu = (u) => u && 'ArrayItem' === u.__proto__.constructor.name,
+                    Au = (u, e) => (u.length > 0 ? `${u}.${e}` : e),
+                    Fu = (u) =>
                         ((u, e) =>
                             u.split('.').reduce((u, t) => {
-                                const E = Au(`${u}.${t}`, window);
-                                return Fu(E) ? e(u, t, E) : `${u}.${t}`;
+                                const E = tu(`${u}.${t}`, window);
+                                return Eu(E) ? e(u, t, E) : `${u}.${t}`;
                             }))(u, (u, e) => `${u}.${e}.value`),
-                    nu = (u) => {
+                    ru = (u) => {
                         const e = ((u) => {
-                                const e = Eu(),
+                                const e = eu(),
                                     t = e.caller,
                                     E = e.resId,
                                     A = window.__feature && window.__feature !== t && t ? `subViews.${t}` : '';
-                                return { modelPrefix: A, modelPath: ru(A, u || ''), resId: E };
+                                return { modelPrefix: A, modelPath: Au(A, u || ''), resId: E };
                             })(),
                             t = e.modelPrefix,
                             E = u.split('.');
@@ -1222,23 +1208,23 @@
                             const u = [E[0]];
                             return (
                                 E.reduce((e, E) => {
-                                    const A = Au(ru(t, `${e}.${E}`), window);
-                                    return Fu(A) ? (u.push(A.id), `${e}.${E}.value`) : (u.push(E), `${e}.${E}`);
+                                    const A = tu(Au(t, `${e}.${E}`), window);
+                                    return Eu(A) ? (u.push(A.id), `${e}.${E}.value`) : (u.push(E), `${e}.${E}`);
                                 }),
                                 u.reduce((u, e) => u + '.' + e)
                             );
                         }
                         return '';
                     },
-                    iu = q.Sw.instance;
-                let Du;
+                    au = q.Sw.instance;
+                let nu;
                 !(function (u) {
                     (u.None = 'None'), (u.Shallow = 'Shallow'), (u.Deep = 'Deep');
-                })(Du || (Du = {}));
-                const Bu = (u = 'model', e = Du.Deep) => {
+                })(nu || (nu = {}));
+                const iu = (u = 'model', e = nu.Deep) => {
                         const t = (0, E.useState)(0),
                             A = (t[0], t[1]),
-                            F = (0, E.useMemo)(() => Eu(), []),
+                            F = (0, E.useMemo)(() => eu(), []),
                             r = F.caller,
                             a = F.resId,
                             n = (0, E.useMemo)(
@@ -1247,10 +1233,10 @@
                             ),
                             i = (0, E.useState)(() =>
                                 ((u) => {
-                                    const e = Au(u, window);
+                                    const e = tu(u, window);
                                     for (const u in e) 'function' == typeof e[u] && (e[u] = e[u].bind(e));
-                                    return Fu(e) ? e.value : e;
-                                })(au(n)),
+                                    return Eu(e) ? e.value : e;
+                                })(Fu(n)),
                             ),
                             D = i[0],
                             B = i[1],
@@ -1259,32 +1245,46 @@
                             _(() => {
                                 if (
                                     ('boolean' == typeof e &&
-                                        ((e = e ? Du.Deep : Du.None),
+                                        ((e = e ? nu.Deep : nu.None),
                                         console.warn(
                                             'Boolean key for useModel "tracking" param is deprecated. Use ModelTracking enum values instead!',
                                         )),
-                                    e !== Du.None)
+                                    e !== nu.None)
                                 ) {
                                     const t = (u) => {
                                             ((u) => u && 'CoherentArrayProxy' === u.__proto__.constructor.name)(u) &&
-                                            e === Du.Deep
+                                            e === nu.Deep
                                                 ? (u === D && A((u) => u + 1), B(u))
                                                 : B(Object.assign([], u));
                                         },
-                                        E = nu(u);
-                                    l.current = iu.addCallback(E, t, a, e === Du.Deep);
+                                        E = ru(u);
+                                    l.current = au.addCallback(E, t, a, e === nu.Deep);
                                 }
                             }),
                             (0, E.useEffect)(() => {
-                                if (e !== Du.None)
+                                if (e !== nu.None)
                                     return () => {
-                                        iu.removeCallback(l.current, a);
+                                        au.removeCallback(l.current, a);
                                     };
                             }, [a, e]),
                             D
                         );
                     },
-                    lu = (q.Sw.instance, uu);
+                    Du = (q.Sw.instance, uu);
+                function Bu(u) {
+                    engine.call('PlaySound', u);
+                }
+                const lu = {
+                    playHighlight() {
+                        Bu('highlight');
+                    },
+                    playClick() {
+                        Bu('play');
+                    },
+                    playYes() {
+                        Bu('yes1');
+                    },
+                };
                 let su;
                 !(function (u) {
                     (u.Personal = 'personal'), (u.Clan = 'clan'), (u.Event = 'event');
@@ -1359,7 +1359,7 @@
                         fontSize: i = Su.Large,
                     }) => {
                         const D = (0, E.useContext)(o).width <= 1600,
-                            B = lu(t, 1),
+                            B = Du(t, 1),
                             l = Q(B),
                             s = Math.ceil((B / n) * 100),
                             C = B > 0,
@@ -1399,19 +1399,19 @@
                     Tu = R.images.gui.maps.icons.personal_reserves.booster_clan_inactive(),
                     Ou = (u, e) => u.some((u) => u.reserveType === e && u.inactivationTime > 0),
                     Ru = () => {
-                        tu.playHighlight();
+                        lu.playHighlight();
                     },
                     yu = () => {
-                        const u = Bu('model', Du.Shallow),
+                        const u = iu('model', nu.Shallow),
                             e = u.totalReserves,
                             t = u.totalLimitedReserves,
-                            E = Bu('model.disabledCategories', Du.Shallow).map((u) => u.value),
-                            F = Bu('model.reserves', Du.Shallow).map((u) => u.value),
+                            E = iu('model.disabledCategories', nu.Shallow).map((u) => u.value),
+                            F = iu('model.reserves', nu.Shallow).map((u) => u.value),
                             r = Ou(F, k.Personal),
                             a = Ou(F, k.Clan),
                             n = Ou(F, k.Event),
                             i = Math.max(...F.map((u) => Math.floor((1e3 * u.inactivationTime - Date.now()) / 1e3))),
-                            D = Q(lu(i, 1)),
+                            D = Q(Du(i, 1)),
                             B = D.minutes + 60 * D.hours > 99 ? Su.Small : Su.Large,
                             l = r || a || n,
                             s = (u, e, t = !1) => {
@@ -1561,6 +1561,6 @@
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             t.forEach(e.bind(null, 0)), (t.push = e.bind(null, t.push.bind(t)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [242], () => __webpack_require__(994));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [242], () => __webpack_require__(322));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

@@ -331,7 +331,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
 }
 
@@ -383,6 +383,7 @@
     align-items: center;
     align-content: flex-start;
     width: 202rem;
+    min-height: 48rem;
     overflow: hidden;
 }
 

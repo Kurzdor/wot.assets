@@ -756,7 +756,7 @@
                     };
                 window.ViewEnvHelper = f;
             },
-            1373: (u, e, t) => {
+            3601: (u, e, t) => {
                 'use strict';
                 var a = t(6179),
                     r = t.n(a);
@@ -1286,22 +1286,8 @@
                     (z.YEAR = 'year'),
                     (z.DATE_YEAR = 'date-year');
                 var Y = t(4179);
-                function X(u) {
-                    engine.call('PlaySound', u);
-                }
                 Date.now();
-                const Z = {
-                        playHighlight() {
-                            X('highlight');
-                        },
-                        playClick() {
-                            X('play');
-                        },
-                        playYes() {
-                            X('yes1');
-                        },
-                    },
-                    Q = (u = 1) => {
+                const X = (u = 1) => {
                         const e = new Error().stack;
                         let t,
                             a = R.invalid('resId');
@@ -1315,118 +1301,131 @@
                             { caller: t, stack: e, resId: a }
                         );
                     },
-                    J = (u, e) => u.split('.').reduce((u, e) => u && u[e], e),
-                    uu = (u) => u && 'ArrayItem' === u.__proto__.constructor.name,
-                    eu = (u, e) => (u.length > 0 ? `${u}.${e}` : e),
-                    tu = Y.Sw.instance;
-                let au;
+                    Z = (u, e) => u.split('.').reduce((u, e) => u && u[e], e),
+                    Q = (u) => u && 'ArrayItem' === u.__proto__.constructor.name,
+                    J = (u, e) => (u.length > 0 ? `${u}.${e}` : e),
+                    uu = Y.Sw.instance;
+                let eu;
                 !(function (u) {
                     (u.None = 'None'), (u.Shallow = 'Shallow'), (u.Deep = 'Deep');
-                })(au || (au = {}));
-                const ru = (u = 'model', e = au.Deep) => {
-                        const t = (0, a.useState)(0),
-                            r = (t[0], t[1]),
-                            n = (0, a.useMemo)(() => Q(), []),
-                            i = n.caller,
-                            A = n.resId,
-                            E = (0, a.useMemo)(
-                                () => (window.__feature && window.__feature !== i ? `subViews.${i}.${u}` : u),
-                                [i, u],
+                })(eu || (eu = {}));
+                const tu = (u = 'model', e = eu.Deep) => {
+                    const t = (0, a.useState)(0),
+                        r = (t[0], t[1]),
+                        n = (0, a.useMemo)(() => X(), []),
+                        i = n.caller,
+                        A = n.resId,
+                        E = (0, a.useMemo)(
+                            () => (window.__feature && window.__feature !== i ? `subViews.${i}.${u}` : u),
+                            [i, u],
+                        ),
+                        F = (0, a.useState)(() =>
+                            ((u) => {
+                                const e = Z(u, window);
+                                for (const u in e) 'function' == typeof e[u] && (e[u] = e[u].bind(e));
+                                return Q(e) ? e.value : e;
+                            })(
+                                ((u) =>
+                                    ((u, e) =>
+                                        u.split('.').reduce((u, e) => {
+                                            const t = Z(`${u}.${e}`, window);
+                                            return Q(t) ? ((u, e) => `${u}.${e}.value`)(u, e) : `${u}.${e}`;
+                                        }))(u))(E),
                             ),
-                            F = (0, a.useState)(() =>
-                                ((u) => {
-                                    const e = J(u, window);
-                                    for (const u in e) 'function' == typeof e[u] && (e[u] = e[u].bind(e));
-                                    return uu(e) ? e.value : e;
-                                })(
-                                    ((u) =>
-                                        ((u, e) =>
-                                            u.split('.').reduce((u, e) => {
-                                                const t = J(`${u}.${e}`, window);
-                                                return uu(t) ? ((u, e) => `${u}.${e}.value`)(u, e) : `${u}.${e}`;
-                                            }))(u))(E),
-                                ),
-                            ),
-                            s = F[0],
-                            o = F[1],
-                            l = (0, a.useRef)(-1);
-                        return (
-                            C(() => {
-                                if (
-                                    ('boolean' == typeof e &&
-                                        ((e = e ? au.Deep : au.None),
-                                        console.warn(
-                                            'Boolean key for useModel "tracking" param is deprecated. Use ModelTracking enum values instead!',
-                                        )),
-                                    e !== au.None)
-                                ) {
-                                    const t = (u) => {
-                                            ((u) => u && 'CoherentArrayProxy' === u.__proto__.constructor.name)(u) &&
-                                            e === au.Deep
-                                                ? (u === s && r((u) => u + 1), o(u))
-                                                : o(Object.assign([], u));
-                                        },
-                                        a = ((u) => {
-                                            const e = ((u) => {
-                                                    const e = Q(),
-                                                        t = e.caller,
-                                                        a = e.resId,
-                                                        r =
-                                                            window.__feature && window.__feature !== t && t
-                                                                ? `subViews.${t}`
-                                                                : '';
-                                                    return { modelPrefix: r, modelPath: eu(r, ''), resId: a };
-                                                })(),
-                                                t = e.modelPrefix,
-                                                a = u.split('.');
-                                            if (a.length > 0) {
-                                                const u = [a[0]];
-                                                return (
-                                                    a.reduce((e, a) => {
-                                                        const r = J(eu(t, `${e}.${a}`), window);
-                                                        return uu(r)
-                                                            ? (u.push(r.id), `${e}.${a}.value`)
-                                                            : (u.push(a), `${e}.${a}`);
-                                                    }),
-                                                    u.reduce((u, e) => u + '.' + e)
-                                                );
-                                            }
-                                            return '';
-                                        })(u);
-                                    l.current = tu.addCallback(a, t, A, e === au.Deep);
-                                }
-                            }),
-                            (0, a.useEffect)(() => {
-                                if (e !== au.None)
-                                    return () => {
-                                        tu.removeCallback(l.current, A);
-                                    };
-                            }, [A, e]),
-                            s
-                        );
-                    },
-                    nu =
-                        (Y.Sw.instance,
-                        {
-                            base: 'App_base_21',
-                            base__single: 'App_base__single_c6',
-                            bg: 'App_bg_20',
-                            base__disabled: 'App_base__disabled_ca',
-                            base__announce: 'App_base__announce_4b',
-                            shadow: 'App_shadow_2b',
-                            highlight: 'App_highlight_af',
-                            overlay: 'App_overlay_7b',
-                            particles: 'App_particles_ad',
-                            content: 'App_content_42',
-                            base__active: 'App_base__active_61',
-                            labels: 'App_labels_29',
-                            title: 'App_title_c2',
-                            subtitle: 'App_subtitle_3a',
-                            info: 'App_info_6b',
-                            seasonDate: 'App_seasonDate_95',
-                            seasonDateIcon: 'App_seasonDateIcon_7b',
-                            seasonDateText: 'App_seasonDateText_6e',
+                        ),
+                        s = F[0],
+                        o = F[1],
+                        l = (0, a.useRef)(-1);
+                    return (
+                        C(() => {
+                            if (
+                                ('boolean' == typeof e &&
+                                    ((e = e ? eu.Deep : eu.None),
+                                    console.warn(
+                                        'Boolean key for useModel "tracking" param is deprecated. Use ModelTracking enum values instead!',
+                                    )),
+                                e !== eu.None)
+                            ) {
+                                const t = (u) => {
+                                        ((u) => u && 'CoherentArrayProxy' === u.__proto__.constructor.name)(u) &&
+                                        e === eu.Deep
+                                            ? (u === s && r((u) => u + 1), o(u))
+                                            : o(Object.assign([], u));
+                                    },
+                                    a = ((u) => {
+                                        const e = ((u) => {
+                                                const e = X(),
+                                                    t = e.caller,
+                                                    a = e.resId,
+                                                    r =
+                                                        window.__feature && window.__feature !== t && t
+                                                            ? `subViews.${t}`
+                                                            : '';
+                                                return { modelPrefix: r, modelPath: J(r, ''), resId: a };
+                                            })(),
+                                            t = e.modelPrefix,
+                                            a = u.split('.');
+                                        if (a.length > 0) {
+                                            const u = [a[0]];
+                                            return (
+                                                a.reduce((e, a) => {
+                                                    const r = Z(J(t, `${e}.${a}`), window);
+                                                    return Q(r)
+                                                        ? (u.push(r.id), `${e}.${a}.value`)
+                                                        : (u.push(a), `${e}.${a}`);
+                                                }),
+                                                u.reduce((u, e) => u + '.' + e)
+                                            );
+                                        }
+                                        return '';
+                                    })(u);
+                                l.current = uu.addCallback(a, t, A, e === eu.Deep);
+                            }
                         }),
+                        (0, a.useEffect)(() => {
+                            if (e !== eu.None)
+                                return () => {
+                                    uu.removeCallback(l.current, A);
+                                };
+                        }, [A, e]),
+                        s
+                    );
+                };
+                function au(u) {
+                    engine.call('PlaySound', u);
+                }
+                Y.Sw.instance;
+                const ru = {
+                        playHighlight() {
+                            au('highlight');
+                        },
+                        playClick() {
+                            au('play');
+                        },
+                        playYes() {
+                            au('yes1');
+                        },
+                    },
+                    nu = {
+                        base: 'App_base_21',
+                        base__single: 'App_base__single_c6',
+                        bg: 'App_bg_20',
+                        base__disabled: 'App_base__disabled_ca',
+                        base__announce: 'App_base__announce_4b',
+                        shadow: 'App_shadow_2b',
+                        highlight: 'App_highlight_af',
+                        overlay: 'App_overlay_7b',
+                        particles: 'App_particles_ad',
+                        content: 'App_content_42',
+                        base__active: 'App_base__active_61',
+                        labels: 'App_labels_29',
+                        title: 'App_title_c2',
+                        subtitle: 'App_subtitle_3a',
+                        info: 'App_info_6b',
+                        seasonDate: 'App_seasonDate_95',
+                        seasonDateIcon: 'App_seasonDateIcon_7b',
+                        seasonDateText: 'App_seasonDateText_6e',
+                    },
                     iu = R.strings.battle_royale.banner;
                 function Au() {
                     return (
@@ -1461,7 +1460,7 @@
                         };
                     })(Fu),
                     ou = () => {
-                        const u = ru(),
+                        const u = tu(),
                             e = u.state,
                             t = void 0 === e ? k.Active : e,
                             n = u.timestamp,
@@ -1528,10 +1527,10 @@
                             {
                                 className: h()(nu.base, nu[`base__${t}`], i && nu.base__single),
                                 onClick: () => {
-                                    X(R.sounds.yes()), A();
+                                    au(R.sounds.yes()), A();
                                 },
                                 onMouseEnter: () => {
-                                    Z.playHighlight(), o(!0), E.play();
+                                    ru.playHighlight(), o(!0), E.play();
                                 },
                                 onMouseLeave: () => {
                                     o(!1), E.stop();
@@ -1739,6 +1738,6 @@
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             t.forEach(e.bind(null, 0)), (t.push = e.bind(null, t.push.bind(t)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [503], () => __webpack_require__(1373));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [503], () => __webpack_require__(3601));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

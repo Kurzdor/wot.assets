@@ -759,7 +759,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     --screwOffset: 15rem;
     width: 5rem;
     height: 5rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.screw') no-repeat center / contain;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.screw') no-repeat center / contain;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -890,7 +890,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: url('R.images.gui.maps.icons.comp7.icons.rowsDivider') no-repeat bottom center / 840rem 70rem;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.rowsDivider') no-repeat bottom center / 840rem 70rem;
 }
 
 .RowsDivider_rankText_96 {
@@ -913,7 +913,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Header_separator_14 {
     width: 2rem;
     height: 100%;
-    background: url('R.images.gui.maps.icons.comp7.icons.header_separator') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.header_separator') no-repeat center / cover;
 }
 .Header_cell_0e {
     display: flex;
@@ -1079,13 +1079,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     color: rgba(255, 255, 255, 0.4);
 }
 .Row_order__first_53 {
-    background-image: url('R.images.gui.maps.icons.comp7.icons.first');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.icons.first');
 }
 .Row_order__second_cb {
-    background-image: url('R.images.gui.maps.icons.comp7.icons.second');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.icons.second');
 }
 .Row_order__third_c6 {
-    background-image: url('R.images.gui.maps.icons.comp7.icons.third');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.icons.third');
 }
 .Row_playerContainer_9e {
     display: flex;
@@ -1146,16 +1146,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .Leaderboard_shadow__left_ee {
     width: 150rem;
-    background-image: url('R.images.gui.maps.icons.comp7.icons.shadow_left_side');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.icons.shadow_left_side');
 }
 .Leaderboard_shadow__center_37 {
     flex: 1;
-    background-image: url('R.images.gui.maps.icons.comp7.icons.shadow_middle');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.icons.shadow_middle');
     background-repeat: repeat;
 }
 .Leaderboard_shadow__right_ee {
     width: 150rem;
-    background-image: url('R.images.gui.maps.icons.comp7.icons.shadow_right_side');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.icons.shadow_right_side');
 }
 .Leaderboard_area_c7 {
     width: 100%;
@@ -1193,7 +1193,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     cursor: pointer;
 }
 .Pagination_pageButton__active_0b {
-    border-image-source: url('R.images.gui.maps.icons.comp7.icons.pageButtonBg');
+    border-image-source: url('R.images.comp7.gui.maps.icons.comp7.icons.pageButtonBg');
     border-image-slice: 1 fill;
     box-shadow:
         0 0 15rem #ee5003,
@@ -1486,7 +1486,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .RankTabs_rankTabHighlight_c1 {
     width: 223rem;
     height: 164rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.rankTabHighlight') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.rankTabHighlight') no-repeat center / cover;
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -1624,7 +1624,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .NoRecordsState_image_fe {
     width: 540rem;
     height: 380rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.leaderboardRanks') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.leaderboardRanks') no-repeat center / cover;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1668,7 +1668,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .LastUpdateNote_infoIcon_5c {
     width: 24rem;
     height: 24rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.infoIcon') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.infoIcon') no-repeat center / cover;
 }
 
 .ActiveSeasonState_base_55 {
@@ -1680,14 +1680,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 21rem;
     height: 21rem;
     margin-right: 8rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.calendar') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.calendar') no-repeat center / cover;
     transform: translateY(2rem);
 }
 
 .mediaLarge .ActiveSeasonState_calendarIcon_df {
     width: 14rem;
     height: 16rem;
-    background-image: url('R.images.gui.maps.icons.comp7.icons.calendar_14x16');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.icons.calendar_14x16');
 }
 
 .ActiveSeasonState_divider_5b {
@@ -1981,7 +1981,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .RatingScore_rankInactivityIcon_05 {
     width: 42rem;
     height: 43rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.timer') no-repeat center / contain;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.timer') no-repeat center / contain;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2147,7 +2147,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .ItemFooter_background_bf {
     width: 100%;
     padding-bottom: 18.67%;
-    background: url('R.images.gui.maps.icons.comp7.icons.footerBg') no-repeat center / contain;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.footerBg') no-repeat center / contain;
     position: absolute;
     top: 0;
     left: 0;
@@ -2155,7 +2155,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .ItemFooter_divider_bb {
     width: 100%;
     height: 2rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.footerDivider') no-repeat center;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.footerDivider') no-repeat center;
     background-size: 100% 100%;
     position: absolute;
     top: 0;
@@ -2164,7 +2164,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .ItemFooter_light_79 {
     width: 81rem;
     height: 38rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.footerLight') no-repeat center / contain;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.footerLight') no-repeat center / contain;
     position: absolute;
     top: 2rem;
     left: 50%;
@@ -2183,7 +2183,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Parallax_base_c9 {
     width: 100%;
     height: 100%;
-    background: url('R.images.gui.maps.icons.comp7.qualificationParallax.c_6') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.qualificationParallax.c_6') no-repeat center / cover;
     overflow: hidden;
     position: relative;
 }
@@ -3015,7 +3015,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .FutureRankStatus_lock_d0 {
     width: 49rem;
     height: 64rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.lockBig') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.lockBig') no-repeat center / cover;
     position: absolute;
     top: 0;
     left: 50%;
@@ -3836,26 +3836,26 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 200rem;
     margin-top: 15rem;
     margin-bottom: 16rem;
-    background: url('R.images.gui.maps.icons.comp7.ranks.c_200.qualification') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.ranks.c_200.qualification') no-repeat center / cover;
 }
 .mediaMedium .Qualification_qualificationEmblem_e2 {
     width: 280rem;
     height: 280rem;
     margin-bottom: 8rem;
-    background-image: url('R.images.gui.maps.icons.comp7.ranks.c_260.qualification');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.ranks.c_260.qualification');
 }
 .mediaLarge .Qualification_qualificationEmblem_e2 {
     width: 420rem;
     height: 420rem;
     margin-bottom: -4rem;
-    background-image: url('R.images.gui.maps.icons.comp7.ranks.c_420.qualification');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.ranks.c_420.qualification');
 }
 .mediaExtraLarge .Qualification_qualificationEmblem_e2 {
     width: 600rem;
     height: 600rem;
     margin-top: 20rem;
     margin-bottom: -10rem;
-    background-image: url('R.images.gui.maps.icons.comp7.ranks.c_600.qualification');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.ranks.c_600.qualification');
 }
 .Qualification_battlesProgression_51 {
     margin: 14rem 0 32rem;
@@ -3917,7 +3917,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 33rem;
     height: 33rem;
     margin: 2rem 0 0 -10rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.timer') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.timer') no-repeat center / cover;
     filter: drop-shadow(0rem 0rem 4rem rgba(255, 127, 0, 0.25)) drop-shadow(0rem 0rem 8rem #ff2a00)
         drop-shadow(0rem 0rem 15rem #e52);
     position: absolute;
@@ -3929,7 +3929,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 48rem;
     height: 48rem;
     margin: 2rem 0 0 -10rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.timer_48x48') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.timer_48x48') no-repeat center / cover;
 }
 .Qualification_conditionContainer_c4 {
     display: flex;
@@ -3950,7 +3950,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 16rem;
     height: 16rem;
     margin-left: 5rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.infoIcon_16x16') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.infoIcon_16x16') no-repeat center / cover;
     transform: translateY(2rem);
 }
 .Qualification_rewardsButton_db {
@@ -4684,7 +4684,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Heading_lock_a8 {
     width: 11rem;
     height: 14rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.lockExtraSmall') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.lockExtraSmall') no-repeat center / cover;
     position: absolute;
     bottom: 2rem;
     left: 50%;
@@ -4963,7 +4963,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .MainReward_highlight_06 {
     width: 100%;
     height: 100%;
-    background: url('R.images.gui.maps.icons.comp7.icons.blue_highlight') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.blue_highlight') no-repeat center / cover;
     animation:
         MainReward_glowAppearance_20 linear 0.7s both,
         MainReward_rotate_8c 80s linear infinite;
@@ -5081,7 +5081,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 17rem;
     margin-top: 2rem;
     margin-right: 5rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.done') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.done') no-repeat center / cover;
 }
 
 /* delay should be set always separately only for appearance effect, not hiding */
@@ -5327,353 +5327,465 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-bottom: 44rem;
 }
 
-.Progress_base_d5 {
+.Prompt_base_74 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.Progress_counter_3b {
-    color: rgba(254, 254, 236, 0.5);
-    font-size: 24rem;
-    font-weight: 700;
-    line-height: 1.2;
-    flex-wrap: nowrap;
+.Prompt_defaultText_05 {
+    color: rgba(255, 255, 255, 0.4);
 }
 
-.mediaMedium .Progress_counter_3b {
-    font-size: 40rem;
+.Prompt_defaultText__done_b0 {
+    color: #80d43a;
+    opacity: 0.7;
 }
 
-.mediaExtraLarge .Progress_counter_3b {
-    font-size: 56rem;
-}
-
-.Progress_current_fd {
-    color: #ffffff;
-}
-
-.Progress_progressBar_d2 {
-    width: 110rem;
-    padding: 12rem 0;
-}
-
-.mediaMedium .Progress_progressBar_d2 {
-    width: 172rem;
-    padding: 16rem 0;
-}
-
-.mediaExtraLarge .Progress_progressBar_d2 {
-    width: 192rem;
-    padding: 36rem 0;
-}
-
-.QuestCard_base_27 {
+.LevelCard_base_cd {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 164rem;
-    height: 380rem;
-    padding-top: 52rem;
-    padding-bottom: 14rem;
+    width: 158rem;
+    height: 55rem;
     position: relative;
 }
-.mediaSmall .QuestCard_base_27 {
-    width: 180rem;
-}
-.mediaMedium .QuestCard_base_27 {
-    width: 240rem;
-    height: 460rem;
-    padding-top: 0;
-    padding-bottom: 60rem;
-}
-.mediaLarge .QuestCard_base_27 {
-    width: 300rem;
-    height: 500rem;
-}
-.mediaExtraLarge .QuestCard_base_27 {
-    height: 530rem;
-    padding-bottom: 20rem;
-}
 
-.QuestCard_highlight_08 {
-    width: 518rem;
-    height: 554rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.active_quest_highlight') no-repeat center / contain;
+.mediaLarge .LevelCard_base_cd {
+    width: 187rem;
+}
+.LevelCard_bgCompleted_e8 {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.LevelCard_bgCompleted__completed_53 {
+    opacity: 0.9;
+}
+.LevelCard_bgCompleted__fast_2a {
+    opacity: 0.9;
+    transition: none;
+}
+.LevelCard_bgCompleted_e8 {
     position: absolute;
-    top: 65%;
-    left: 60%;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(78.04% 100% at 50% 100%, rgba(240, 218, 191, 0.23) 0%, rgba(90, 90, 90, 0) 100%);
+    transition-delay: 1100ms;
 }
-
-.mediaMedium .QuestCard_highlight_08 {
-    width: 720rem;
-    height: 640rem;
-    top: 55%;
-    left: 56%;
-}
-
-.mediaExtraLarge .QuestCard_highlight_08 {
-    width: 836rem;
-    height: 894rem;
-    top: 53%;
-    left: 60%;
-}
-
-.QuestCard_icon_81 {
-    width: 124rem;
-    height: 124rem;
-    background: no-repeat center / contain;
+.LevelCard_completedIconContainer_28 {
+    opacity: 0;
+    transform: translateY(-20rem);
     transition:
-        transform 0.4s ease-in-out,
-        opacity 0.4s ease-in-out;
+        opacity 500ms,
+        transform 500ms;
+}
+.LevelCard_completedIconContainer__completed_47,
+.LevelCard_completedIconContainer__prevLevel_05 {
+    opacity: 1;
+    transform: translateY(0);
+}
+.LevelCard_completedIconContainer_28 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition-delay: 1100ms;
+}
+.LevelCard_completedIcon_40 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.comp7.gui.maps.icons.comp7.progression.icon_now_rewards_title') no-repeat center / cover;
+    position: absolute;
+    top: -8rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.LevelCard_completedIconGlow_27 {
+    width: 9rem;
+    height: 9rem;
+    border: 3rem solid #24ff00;
+    filter: blur(7px);
+    opacity: 0.7;
+    position: absolute;
+    top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.LevelCard_border_b4 {
+    width: 1rem;
+    height: 36rem;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.LevelCard_border__right_c1 {
+    right: 0;
+    left: auto;
 }
 
-.mediaMedium .QuestCard_icon_81 {
-    width: 180rem;
-    height: 180rem;
-    margin-top: -2rem;
-}
-
-.mediaLarge .QuestCard_icon_81 {
-    width: 234rem;
-    height: 234rem;
-    margin-top: -2rem;
-}
-
-.mediaExtraLarge .QuestCard_icon_81 {
-    width: 240rem;
-    height: 240rem;
-    margin-top: -40rem;
-}
-
-.QuestCard_base__completed_e3 .QuestCard_icon_81,
-.QuestCard_base__locked_e9 .QuestCard_icon_81 {
-    mask-image: linear-gradient(180deg, #fff 21%, rgba(255, 255, 255, 0.52) 44.5%, transparent 83%);
-    transform: translateY(35rem);
-}
-
-.mediaMedium .QuestCard_base__completed_e3 .QuestCard_icon_81,
-.mediaMedium .QuestCard_base__locked_e9 .QuestCard_icon_81 {
-    transform: translateY(50rem);
-}
-
-.mediaExtraLarge .QuestCard_base__completed_e3 .QuestCard_icon_81,
-.mediaExtraLarge .QuestCard_base__locked_e9 .QuestCard_icon_81 {
-    transform: translateY(50rem);
-}
-
-.QuestCard_base__completed_e3 .QuestCard_icon_81 {
-    opacity: 0.25;
-}
-
-.QuestCard_base__locked_e9 .QuestCard_icon_81 {
-    opacity: 0.55;
-}
-
-.QuestCard_content_36 {
+.LevelLabel_base_10 {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex: 1;
-    margin-top: -30rem;
-    transition: opacity 0.4s ease-in-out;
+    width: 100%;
 }
-
-.mediaMedium .QuestCard_content_36 {
-    margin-top: -48rem;
+.LevelLabel_activeGlow_6d {
+    opacity: 0;
+    transition: opacity 500ms;
 }
-
-.mediaExtraLarge .QuestCard_content_36 {
-    margin-top: -72rem;
+.LevelLabel_activeGlow__completed_b9 {
+    opacity: 1;
 }
-
-.QuestCard_base__completed_e3 .QuestCard_content_36 {
-    opacity: 0.2;
+.LevelLabel_activeGlow__fast_5a {
+    opacity: 1;
+    transition: none;
 }
-
-.QuestCard_progress_63 {
-    transition: opacity 0.4s ease-in-out;
+.LevelLabel_activeGlow_6d {
+    width: 100%;
+    height: 134rem;
+    background: url('R.images.comp7.gui.maps.icons.comp7.progression.bg_rare_light_current') no-repeat center / cover;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-70%);
+    transition-delay: 1100ms;
 }
-
-.QuestCard_base__locked_e9 .QuestCard_progress_63 {
-    opacity: 0.6;
-}
-
-.QuestCard_description_ba {
-    color: #fefeec;
+.LevelLabel_level_4c {
+    color: #f2f2f7;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
-    flex: 1;
-    padding: 0;
-    text-align: center;
-    opacity: 0.88;
-    transition: opacity 0.4s ease-in-out;
+    opacity: 0.5;
+    position: relative;
+    bottom: 2rem;
+    transition: opacity 500ms;
+    transition-delay: 1100ms;
 }
-
-.mediaMedium .QuestCard_description_ba {
-    color: #fefeec;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    padding: 0 30rem;
+.LevelLabel_level__completed_c4 {
+    opacity: 1;
 }
-
-.mediaLarge .QuestCard_description_ba {
-    padding: 0 40rem;
+.LevelLabel_level__active_85 {
+    opacity: 0;
 }
-
-.mediaExtraLarge .QuestCard_description_ba {
-    padding: 0 24rem;
-}
-
-.QuestCard_base__locked_e9 .QuestCard_description_ba {
-    opacity: 0.77;
-}
-
-.QuestCard_reward_d5 {
-    margin: 0 5rem;
-}
-
-.mediaMedium .QuestCard_reward_d5 {
-    margin: 0 11rem;
-}
-
-.QuestCard_status_26 {
-    margin-top: 30rem;
-}
-
-.mediaMedium .QuestCard_status_26 {
-    margin-top: 37rem;
-}
-
-.mediaExtraLarge .QuestCard_status_26 {
-    margin-top: 46rem;
-}
-
-.Status_base_78 {
-    display: flex;
-}
-
-.Status_base__locked_1f {
-    opacity: 0.77;
-}
-
-.Status_icon_9c {
+.LevelLabel_tokenIcon_67 {
     width: 18rem;
     height: 18rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.flag') no-repeat center / contain;
+    background: url('R.images.gui.maps.icons.quests.bonuses.small.comp7TokenWeeklyReward') no-repeat center / cover;
+    z-index: 1;
+}
+.LevelLabel_tokenIcon__active_7a {
+    width: 40rem;
+    height: 40rem;
+    margin-left: 4rem;
+}
+.LevelLabel_levelCurrent_ce {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.LevelLabel_levelCurrent__completed_97 {
+    opacity: 1;
+}
+.LevelLabel_levelCurrent__fast_d8 {
+    opacity: 1;
+    transition: none;
+}
+.LevelLabel_levelCurrent_ce {
+    color: #ffdd99;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-right: -8rem;
+    text-shadow:
+        0 0 16rem #ff2e00,
+        0 0 4rem rgba(168, 30, 0, 0.5);
+    position: relative;
+    bottom: 4rem;
+    transition-delay: 1100ms;
 }
 
-.Status_base__locked_1f .Status_icon_9c {
-    width: 14rem;
-    height: 18rem;
-    margin-right: 2rem;
-    background-image: url('R.images.gui.maps.icons.comp7.icons.lockMedium');
-}
-
-.Status_base__completed_66 .Status_icon_9c {
-    width: 16rem;
-    height: 17rem;
-    margin-top: 2rem;
-    background-image: url('R.images.gui.maps.icons.comp7.icons.done');
-}
-
-.Status_text_b3 {
-    color: #cbac77;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-left: 6rem;
-}
-
-.Status_base__locked_1f .Status_text_b3 {
-    color: #ffffff;
-}
-
-.Status_base__completed_66 .Status_text_b3 {
-    color: #80d43a;
-}
-
-.QuestsList_base_a9 {
+.LevelCards_base_b9 {
     display: flex;
 }
 
-.mediaSmall .QuestsList_card_f7 {
-    margin: 0 11rem;
-}
-
-.mediaMedium .QuestsList_card_f7 {
-    margin: 0;
-}
-
-.mediaExtraLarge .QuestsList_card_f7 {
-    margin: 0 22rem;
-}
-
-.Separator_base_f3 {
+.RewardCard_base_1f {
     display: flex;
     flex-direction: column;
-    pointer-events: none;
-}
-
-.Separator_line_03 {
-    flex: 1;
-    width: 1rem;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, #fff 50%, rgba(255, 255, 255, 0.2) 100%);
-    opacity: 0.2;
-}
-
-.Separator_line__top_ba {
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.2), #fff);
-}
-
-.mediaMedium .Separator_line__top_ba {
-    flex: none;
-    height: 163rem;
-}
-
-.mediaLarge .Separator_line__top_ba {
-    height: 217rem;
-}
-
-.mediaExtraLarge .Separator_line__top_ba {
-    height: 200rem;
-}
-
-.Separator_line__bottom_95 {
-    background-image: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0.2));
-}
-
-.Separator_arrowContainer_f9 {
-    height: 70rem;
+    align-items: center;
+    width: 158rem;
+    height: 145rem;
     position: relative;
 }
 
-.Separator_arrow_3d {
-    width: 90rem;
-    height: 80rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.arrow') no-repeat center / contain;
+.RewardCard_base__mediaLarge_1a {
+    width: 187rem;
+    height: 232rem;
+}
+
+.RewardCard_base__mediaExtraExtraLarge_c5 {
+    height: 232rem;
+}
+
+.mediaExtraLarge .RewardCard_base_1f {
+    width: 187rem;
+    height: 232rem;
+}
+.RewardCard_activeBlock_0f {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.RewardCard_activeBlock__completed_7c {
+    opacity: 1;
+}
+.RewardCard_activeBlock__fast_1a {
+    opacity: 1;
+    transition: none;
+}
+.RewardCard_activeBlock_0f {
     position: absolute;
-    top: 50%;
-    left: 12rem;
-    transform: translate(-100%, -50%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.comp7.gui.maps.icons.comp7.progression.bg_current_small') no-repeat center -60rem / cover;
+    transition-delay: 1100ms;
+}
+.RewardCard_bgCompleted_3c {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.RewardCard_bgCompleted__completed_c9 {
+    opacity: 0.9;
+}
+.RewardCard_bgCompleted__fast_93 {
+    opacity: 0.9;
+    transition: none;
+}
+.RewardCard_bgCompleted_3c {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(126.66% 103.83% at 50% 0%, rgba(254, 228, 198, 0.15) 0%, rgba(49, 49, 49, 0) 100%);
+    transition-delay: 1100ms;
+}
+.RewardCard_border_ab {
+    width: 1rem;
+    height: 90%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.RewardCard_border__right_55 {
+    right: 0;
+    left: auto;
 }
 
-.mediaExtraLarge .Separator_arrow_3d {
-    height: 76rem;
-    background-image: url('R.images.gui.maps.icons.comp7.icons.arrow_large');
+.Rewards_base_76 {
+    opacity: 1;
+    transition: opacity 500ms;
 }
 
-.Separator_base__highlighted_6a .Separator_arrow_3d {
-    background-image: url('R.images.gui.maps.icons.comp7.icons.arrow_highlighted');
+.Rewards_base__completed_f5 {
+    opacity: 0.5;
 }
 
-.mediaExtraLarge .Separator_base__highlighted_6a .Separator_arrow_3d {
-    background-image: url('R.images.gui.maps.icons.comp7.icons.arrow_highlighted_large');
+.Rewards_base__fast_3c {
+    opacity: 0.5;
+    transition: none;
+}
+
+.Rewards_base_76 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    padding-top: 7rem;
+    transition-delay: 1100ms;
+}
+
+.Rewards_base__wide_f7 {
+    width: 100%;
+}
+.Rewards_reward_24 {
+    margin: 10rem;
+}
+
+.RewardCards_base_07 {
+    display: flex;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.OptimizedProgressBar_base_1f {
+    width: 100%;
+    padding: 30rem 0;
+    overflow: hidden;
+}
+.OptimizedProgressBar_wrapper_ab {
+    position: relative;
+}
+.OptimizedProgressBar_line_ef {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.OptimizedProgressBar_background_ce {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 8001px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Container_base_31 {
+    display: flex;
+}
+.Container_progressWrapper_e1 {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+.Container_progressWrapper__completed_9e {
+    opacity: 0.7;
+}
+.Container_progressWrapper__fast_af {
+    opacity: 0.7;
+    transition: none;
+}
+.Container_progressWrapper_e1 {
+    display: flex;
+    margin: -30rem 0;
+    padding: 0 2rem;
+    position: relative;
+}
+.Container_bg_d7 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: -3rem -1rem;
+    border-radius: 2rem;
+    background: #000;
+    opacity: 0.5;
+}
+
+.Content_base_d5 {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.03s;
+}
+
+.Content_base__centered_e6,
+.Content_base__layoutReady_84 {
+    opacity: 1;
+}
+.Content_horizontalContent_91 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10rem;
+    position: relative;
+}
+.Content_wrapper_d8 {
+    overflow-x: visible;
+}
+.Content_progress_35 {
+    height: 13rem;
+    position: relative;
+    z-index: 1;
+}
+.Content_progressArea_68 {
+    display: flex;
+    position: absolute;
+}
+
+.ScrollDrag_base_bd {
+    cursor: grab;
+}
+
+.ScrollDrag_base__grabbing_1f {
+    cursor: move;
+}
+
+@keyframes Progression_add-blur_31 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+@keyframes Progression_hide_32 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+@keyframes Progression_show_89 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.Progression_base_d2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Progression_contentWrapper_6f {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.Progression_progressionContentWrapper_59 {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+.Progression_progressionContentWrapper__completed_a7 {
+    opacity: 0.7;
+}
+.Progression_progressionContentWrapper__fast_58 {
+    opacity: 0.7;
+    transition: none;
+}
+.Progression_progressionContentWrapper_59 {
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    position: relative;
+    transition-duration: 1500ms;
+}
+.mediaMedium .Progression_progressionContentWrapper_59 {
+    margin-bottom: -18rem;
+}
+.Progression_prompt_7b {
+    margin: 9rem 0 14rem;
+}
+.mediaMedium .Progression_prompt_7b {
+    margin: 38rem 0 14rem;
+}
+.mediaExtraLarge .Progression_prompt_7b {
+    margin: 54rem 0 14rem;
 }
 
 .Countdown_base_fe {
@@ -5694,101 +5806,814 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.3;
 }
 
-.ResetStatus_base_25 {
-    color: #ffffff;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
-.mediaMedium .ResetStatus_base_25 {
-    font-size: 16rem;
-}
-.mediaExtraLarge .ResetStatus_base_25 {
-    font-size: 20rem;
+@keyframes Separator_add-blur_ba {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.5;
+    }
 }
 
-.ResetStatus_text_83 {
+@keyframes Separator_hide_0e {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes Separator_show_ca {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.Separator_base_81 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.Separator_separator_9e {
+    flex: 1 1 auto;
+    height: 1rem;
+    position: relative;
+}
+
+.Separator_base__completedBattleQuests_ef .Separator_separator__left_74 {
+    background: linear-gradient(270deg, #ffc061 0%, rgba(203, 73, 0, 0) 100%);
+}
+
+.Separator_base__inProgressBattleQuests_4d .Separator_separator__left_74 {
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.03) 100%);
+}
+
+.Separator_base__condition_d9 .Separator_separator__left_74 {
+    background: linear-gradient(90deg, rgba(108, 108, 108, 0.15) 0%, #6c6c6c 102.66%);
+}
+
+.Separator_base__awards_d6 .Separator_separator__left_74 {
+    margin: 0 10rem 2.5rem 2.5rem;
+    background: linear-gradient(270deg, #fff -2.27%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+.Separator_separator__left_74 .Separator_base__lockedByNoXVehicles_00,
+.Separator_separator__left_74 .Separator_base__lockedByInactiveSeason_66,
+.Separator_base__lockedByPreviousQuest_75 .Separator_separator__left_74 {
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.01) 100%);
+}
+
+.Separator_base__completed_5f .Separator_separator__left_74::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #81ea30 -2.27%, rgba(129, 234, 48, 0.1) 100%);
+    opacity: 0;
+    content: '';
+    animation-name: Separator_show_ca;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+.Separator_base__completedBattleQuests_ef .Separator_separator__right_3d {
+    background: linear-gradient(90deg, #ffc061 0%, rgba(203, 73, 0, 0) 100%);
+}
+
+.Separator_base__inProgressBattleQuests_4d .Separator_separator__right_3d {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.03) 100%);
+}
+
+.Separator_base__condition_d9 .Separator_separator__right_3d {
+    background: linear-gradient(270deg, rgba(108, 108, 108, 0.15) 0%, #6c6c6c 102.66%);
+}
+
+.Separator_base__awards_d6 .Separator_separator__right_3d {
+    margin: 0 3rem 2.5rem 10rem;
+    background: linear-gradient(90deg, #fff -2.27%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+.Separator_separator__right_3d .Separator_base__lockedByNoXVehicles_00,
+.Separator_separator__right_3d .Separator_base__lockedByInactiveSeason_66,
+.Separator_base__lockedByPreviousQuest_75 .Separator_separator__right_3d {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.01) 100%);
+}
+
+.Separator_base__completed_5f .Separator_separator__right_3d::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #81ea30 -2.27%, rgba(129, 234, 48, 0.1) 100%);
+    opacity: 0;
+    content: '';
+    animation-name: Separator_show_ca;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+.Separator_ellipse_c0 {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    filter: blur(0.5rem);
+    opacity: 0.5;
+    position: absolute;
+    top: -1rem;
+    right: -0.5rem;
+}
+
+.Separator_base__awards_d6 .Separator_separator__left_74 .Separator_ellipse_c0,
+.Separator_base__inProgressBattleQuests_4d .Separator_separator__left_74 .Separator_ellipse_c0 {
+    background: #f2f2f7;
+}
+
+.Separator_base__completed_5f .Separator_separator__left_74 .Separator_ellipse_c0 {
+    background: #b5ff92;
+}
+
+.Separator_base__completedBattleQuests_ef .Separator_separator__left_74 .Separator_ellipse_c0 {
+    width: 6rem;
+    height: 6rem;
+    background: #af2000;
+    filter: blur(1rem);
+    top: -2.5rem;
+    right: -1.5rem;
+}
+
+.Separator_separator__right_3d .Separator_ellipse_c0 {
+    left: -0.5rem;
+}
+
+.Separator_base__awards_d6 .Separator_separator__right_3d .Separator_ellipse_c0,
+.Separator_base__inProgressBattleQuests_4d .Separator_separator__right_3d .Separator_ellipse_c0 {
+    background: #f2f2f7;
+}
+
+.Separator_base__completed_5f .Separator_separator__right_3d .Separator_ellipse_c0 {
+    background: #b5ff92;
+}
+
+.Separator_base__completedBattleQuests_ef .Separator_separator__right_3d .Separator_ellipse_c0 {
+    width: 6rem;
+    height: 6rem;
+    background: #af2000;
+    filter: blur(1rem);
+    top: -2.5rem;
+    right: -1.5rem;
+    left: -1.5rem;
+}
+
+.Separator_firstLayer_34 {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -1rem;
+    right: 0.5rem;
+}
+
+.Separator_base__awards_d6 .Separator_separator__left_74 .Separator_firstLayer_34,
+.Separator_base__inProgressBattleQuests_4d .Separator_separator__left_74 .Separator_firstLayer_34 {
+    background: #ffffff;
+}
+
+.Separator_base__completed_5f .Separator_separator__left_74 .Separator_firstLayer_34 {
+    background: #b5ff92;
+}
+
+.Separator_base__completedBattleQuests_ef .Separator_separator__left_74 .Separator_firstLayer_34 {
+    width: 4rem;
+    height: 4rem;
+    background: #ffad32;
+    filter: blur(0.5rem);
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.Separator_separator__right_3d .Separator_firstLayer_34 {
+    left: -0.5rem;
+}
+
+.Separator_base__awards_d6 .Separator_separator__right_3d .Separator_firstLayer_34,
+.Separator_base__inProgressBattleQuests_4d .Separator_separator__right_3d .Separator_firstLayer_34 {
+    background: #ffffff;
+}
+
+.Separator_base__completed_5f .Separator_separator__right_3d .Separator_firstLayer_34 {
+    background: #b5ff92;
+}
+
+.Separator_base__completedBattleQuests_ef .Separator_separator__right_3d .Separator_firstLayer_34 {
+    width: 4rem;
+    height: 4rem;
+    background: #ffad32;
+    filter: blur(0.5rem);
+    top: 1.5rem;
+    right: 1.5rem;
+    left: 1.5rem;
+}
+
+.Separator_base__completedBattleQuests_ef .Separator_separator__left_74 .Separator_secondLayer_54 {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #e9e2bf;
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
+}
+
+.Separator_base__completedBattleQuests_ef .Separator_separator__right_3d .Separator_secondLayer_54 {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #e9e2bf;
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
+    left: 1rem;
+}
+
+@keyframes Timer_add-blur_c0 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+
+@keyframes Timer_hide_7d {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes Timer_show_1b {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.Timer_base_ad {
+    display: flex;
+}
+
+.Timer_timer_4c {
+    width: 100%;
+}
+
+.Timer_block_de {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.ResetStatus_timer_0b {
+.Timer_base__small_5a .Timer_block_de {
+    margin: 0 10rem 3rem;
+}
+
+.Timer_base__big_03 .Timer_block_de {
+    margin: 0;
+}
+
+.Timer_base__small_5a .Timer_text_35 {
+    color: #fefeec;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: block;
+}
+
+.Timer_base__big_03 .Timer_text_35 {
+    display: none;
+}
+
+.Timer_base__small_5a .Timer_bgCountdown_86 {
+    display: none;
+}
+
+.Timer_base__big_03 .Timer_bgCountdown_86 {
+    display: block;
+    width: 280rem;
+    height: 190rem;
+    background: url('R.images.comp7.gui.maps.icons.comp7.progression.bg_big_timer') no-repeat center / contain;
+    position: absolute;
+    top: -75rem;
+    left: -73rem;
+}
+
+.Timer_base__small_5a .Timer_description_bc {
     color: #ffdd99;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
-.mediaMedium .ResetStatus_timer_0b {
-    font-size: 16rem;
-}
-
-.mediaExtraLarge .ResetStatus_timer_0b {
-    font-size: 20rem;
-}
-
-.mediaExtraLarge .ResetStatus_icon_9c {
-    transform: translateY(2rem);
-}
-
-.TokenPoint_base_fb {
-    color: #ffffff;
-    font-size: 14rem;
+.Timer_base__big_03 .Timer_description_bc {
+    color: #ffdd99;
+    font-size: 24rem;
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+}
+
+.Timer_base__big_03 .Timer_countdown_e1 {
+    margin-right: 5rem;
+    position: relative;
+}
+
+.ResetStatus_base_25 {
+    width: 980rem;
+    min-height: 32rem;
+}
+
+.ResetStatus_base__ended_5e {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 216rem;
+}
+
+.mediaMedium .ResetStatus_base__ended_5e {
+    min-height: 253rem;
+}
+
+.ResetStatus_endedTextTitle_20 {
+    color: #fefeec;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 28rem;
+}
+
+.mediaLarge .ResetStatus_endedTextTitle_20 {
+    color: #fefeec;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.ResetStatus_endedTextSubtitle_6e {
+    color: #fefeec;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 4rem;
+}
+
+.Progress_base_d5 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.TokenPoint_tokenValue_b8 {
+.Progress_counter_3b {
+    color: rgba(254, 254, 236, 1);
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    flex-wrap: nowrap;
+    line-height: 20rem;
+}
+
+.Progress_current_fd {
+    color: #feab34;
+}
+
+.Progress_progressBar_d2 {
+    width: 140rem;
+    padding: 7rem 0;
+}
+
+@keyframes TaskBattle_add-blur_68 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+
+@keyframes TaskBattle_hide_e0 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes TaskBattle_show_4d {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.TaskBattle_nextArrowWrapper_bb {
     display: flex;
-    margin-top: 3rem;
-    opacity: 0.3;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-.TokenPoint_tokenValue__hide_6e {
-    animation: TokenPoint_fadeOut_33 1s forwards;
+.TaskBattle_nextArrow_32 {
+    width: 28rem;
+    height: 50rem;
+    background: url('R.images.comp7.gui.maps.icons.comp7.weekly_quests.arrow') no-repeat center / contain;
 }
 
-.TokenPoint_tokenIcon_0d {
-    width: 18rem;
-    height: 18rem;
-    margin-top: 1rem;
-    background: url('R.images.gui.maps.icons.quests.bonuses.small.comp7TokenWeeklyReward') no-repeat center / cover;
+.TaskBattle_nextArrow__completed_0d {
+    background: url('R.images.comp7.gui.maps.icons.comp7.weekly_quests.arrow_highlighted') no-repeat center / contain;
 }
 
-.TokenPoint_serif_c1 {
-    width: 1rem;
-    height: 34rem;
-    background-image: linear-gradient(
-        transparent,
-        rgba(255, 255, 255, 0.2) 8rem,
-        transparent 8rem,
-        transparent 26rem,
-        rgba(255, 255, 255, 0.2) 26rem,
-        transparent
-    );
+.TaskBattle_nextArrow__active_0a {
+    background: url('R.images.comp7.gui.maps.icons.comp7.weekly_quests.arrow_highlighted') no-repeat center / contain;
 }
 
-.TokenPoint_rewards_46 {
-    margin-top: 3rem;
+.mediaMedium .TaskBattle_nextArrow_32 {
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
-.mediaExtraLarge .TokenPoint_rewards_46 {
-    margin-top: 10rem;
+.TaskBattle_base_44 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 268rem;
+    height: 136rem;
+    border: 1rem solid rgba(255, 255, 255, 0.15);
+    border-radius: 5rem;
+    border-bottom: 0;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0.3) 92.64%, rgba(26, 26, 26, 0) 100%);
+    position: relative;
 }
 
-.TokenPoint_rewards__passed_97 {
+.TaskBattle_base__completed_96 {
+    animation-name: TaskBattle_add-shadow_a9;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+.TaskBattle_base__lockedByNoXVehicles_65,
+.TaskBattle_base__lockedByInactiveSeason_b0,
+.TaskBattle_base__lockedByPreviousQuest_34 {
+    border-color: rgba(255, 255, 255, 0.07);
+    box-shadow: none;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0.15) 92.64%, rgba(26, 26, 26, 0) 100%);
+}
+
+.TaskBattle_base__mediaMediumHeight_96 {
+    width: 268rem;
+    height: 176rem;
+}
+
+.TaskBattle_base_44 + .TaskBattle_base_44 {
+    margin-left: 10rem;
+}
+
+.mediaLarge .TaskBattle_base_44 + .TaskBattle_base_44 {
+    margin-left: 20rem;
+}
+
+.mediaMedium .TaskBattle_base_44 {
+    width: 268rem;
+    height: 176rem;
+}
+
+.TaskBattle_taskType_94 {
+    position: absolute;
+    top: -17rem;
+}
+
+.TaskBattle_conditions_2d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220rem;
+}
+
+.TaskBattle_base__mediaMediumHeight_96 .TaskBattle_conditions_2d {
+    width: 260rem;
+}
+
+.mediaLarge .TaskBattle_conditions_2d {
+    width: 260rem;
+}
+
+.TaskBattle_description_f6 {
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    justify-content: center;
+    align-items: center;
+    max-width: 200rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.TaskBattle_description__completed_a2 {
+    animation-name: TaskBattle_update-condition_a0;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+.TaskBattle_description__completedWasVisited_42 {
+    color: #7ab300;
+}
+
+.TaskBattle_awards_0a {
+    width: 265rem;
+    position: absolute;
+    bottom: -25rem;
+}
+
+.TaskBattle_base__completed_96 .TaskBattle_awards_0a {
+    animation-name: TaskBattle_add-blur_68;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+.TaskBattle_base__completedWasVisited_8a .TaskBattle_awards_0a {
+    opacity: 0.5;
+}
+
+.TaskBattle_base__mediaMediumHeight_96 .TaskBattle_awards_0a {
+    width: 265rem;
+}
+
+.mediaLarge .TaskBattle_awards_0a {
+    width: 265rem;
+}
+
+.TaskBattle_awardsList_bf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TaskBattle_award_8b + .TaskBattle_award_8b {
+    margin-left: 15rem;
+}
+
+@keyframes TaskBattle_update-condition_a0 {
+    from {
+        color: #f2f2f7;
+    }
+
+    to {
+        color: #7ab300;
+    }
+}
+
+@keyframes TaskBattle_add-shadow_a9 {
+    from {
+        border-color: rgba(255, 255, 255, 0.15);
+        box-shadow: none;
+    }
+
+    to {
+        border-color: rgba(137, 167, 1, 0.2);
+        box-shadow: inset 0 19rem 30rem rgba(137, 167, 1, 0.1);
+    }
+}
+
+@keyframes TaskType_add-blur_1d {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+
+@keyframes TaskType_hide_4e {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes TaskType_show_a3 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.TaskType_base_d9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.TaskType_ellipse_95 {
+    width: 228rem;
+    height: 125rem;
+    background: url('R.images.comp7.gui.maps.icons.comp7.weekly_quests.ellipse') no-repeat center / contain;
+    position: absolute;
+    top: -47rem;
+    z-index: 1;
+}
+
+.TaskType_base__completed_00 .TaskType_ellipse_95 {
+    animation-name: TaskType_hide_4e;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+.TaskType_ellipse_95 .TaskType_base__completedWasVisited_28,
+.TaskType_ellipse_95 .TaskType_base__lockedByNoXVehicles_99,
+.TaskType_ellipse_95 .TaskType_base__lockedByInactiveSeason_c5,
+.TaskType_base__lockedByPreviousQuest_42 .TaskType_ellipse_95 {
+    opacity: 0;
+}
+
+.TaskType_typeIcon_0c {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+    z-index: 5;
+}
+
+.TaskType_base__completed_00 .TaskType_typeIcon_0c {
+    opacity: 0;
+}
+
+.TaskType_typeIcon_0c .TaskType_base__lockedByNoXVehicles_99,
+.TaskType_typeIcon_0c .TaskType_base__lockedByInactiveSeason_c5,
+.TaskType_base__lockedByPreviousQuest_42 .TaskType_typeIcon_0c {
     opacity: 0.4;
 }
 
-.TokenPoint_reward_85 {
-    margin: 0 5rem;
+.TaskType_completedIcon_cf {
+    width: 32rem;
+    height: 32rem;
+    background: url('R.images.comp7.gui.maps.icons.comp7.weekly_quests.completed') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
 
-@keyframes TokenPoint_fadeOut_33 {
+.TaskType_base__completed_00 .TaskType_completedIcon_cf {
+    opacity: 1;
+}
+
+.TaskType_lockIcon_20 {
+    width: 18rem;
+    height: 18rem;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.lockMedium') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 22rem;
+    left: 25%;
+    z-index: 5;
+}
+
+.TaskType_lockIcon_20 .TaskType_base__lockedByNoXVehicles_99,
+.TaskType_lockIcon_20 .TaskType_base__lockedByInactiveSeason_c5,
+.TaskType_base__lockedByPreviousQuest_42 .TaskType_lockIcon_20 {
+    animation-name: TaskType_slide-down_53;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+@keyframes TaskType_slide-down_53 {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes TaskBattleList_add-blur_67 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+
+@keyframes TaskBattleList_hide_56 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes TaskBattleList_show_f9 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* delay should be set always separately only for appearance effect, not hiding */
+
+/* should be percentage of screen width */
+
+@keyframes TaskBattleList_fadeIn_38 {
     0% {
-        opacity: 0.3;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes TaskBattleList_fadeInThreeQuarters_b4 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.75;
+    }
+}
+
+@keyframes TaskBattleList_fadeInHalf_5a {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes TaskBattleList_fadeOut_f6 {
+    0% {
+        opacity: 1;
     }
 
     100% {
@@ -5796,156 +6621,214 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
-.TokenPoint_rewardsWrapper_79 {
+@keyframes TaskBattleList_fadeInWithScale_0a {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes TaskBattleList_slideUp_dd {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes TaskBattleList_scale_d4 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes TaskBattleList_raysAppearance_32 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes TaskBattleList_rotate_3f {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes TaskBattleList_reverse-rotate_56 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes TaskBattleList_glowAppearance_55 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes TaskBattleList_highlightAppearance_7c {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes TaskBattleList_blink_1d {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes TaskBattleList_slideUpIn_33 {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.TaskBattleList_base__completed_e6 {
+    animation-name: TaskBattleList_hidden-tasks-list_39;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+.mediaLarge .TaskBattleList_base_c6 {
+    margin: 0;
+}
+
+.TaskBattleList_scroll_73 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10rem;
     position: relative;
 }
 
-.TokenPoint_iconDone_24 {
-    width: 17rem;
-    height: 17rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.done') no-repeat center / cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    transform: translate3d(-50%, -50%, 0);
+.TaskBattleList_timerWithQuestsTotal_39 {
+    margin: -10rem 0 8rem;
 }
 
-.TokenProgress_base_d7 {
+.mediaMedium .TaskBattleList_timerWithQuestsTotal_39 {
+    margin: 5rem 0 3rem;
+}
+
+.mediaLarge .TaskBattleList_timerWithQuestsTotal_39 {
+    margin: 0 0 11rem;
+}
+
+.TaskBattleList_timer_fe {
+    margin: -10rem 0 5rem;
+}
+
+.mediaMedium .TaskBattleList_timer_fe {
+    margin: 9rem 0 3rem;
+}
+
+.mediaLarge .TaskBattleList_timer_fe {
+    margin: 0 0 -11rem;
+}
+
+.TaskBattleList_taskList_d4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TaskBattleList_scrollContainer_e0 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 830rem;
-}
-.mediaSmall .TokenProgress_base_d7 {
-    width: 930rem;
-}
-.mediaMedium .TokenProgress_base_d7 {
-    width: 1080rem;
-}
-.mediaLarge .TokenProgress_base_d7 {
-    width: 1360rem;
-}
-.mediaExtraLarge .TokenProgress_base_d7 {
-    width: 1400rem;
 }
 
-.TokenProgress_content_8d {
+.TaskBattleList_areaContainer_fb {
+    display: flex;
+    overflow: visible;
+}
+
+.TaskBattleList_areaWrapper_04 {
     display: flex;
     width: 100%;
-    margin-bottom: 20rem;
-    padding: 30rem 0 0 30rem;
+    padding: 26rem 0 42rem;
+    overflow-x: visible;
+    mask-image: none;
 }
 
-.mediaSmall .TokenProgress_content_8d {
-    padding-left: 0;
+.mediaMedium .TaskBattleList_areaWrapper_04 {
+    padding: 26rem 0 52rem;
 }
 
-.mediaMedium .TokenProgress_content_8d {
-    margin-bottom: 20rem;
+.mediaLarge .TaskBattleList_areaWrapper_04 {
+    padding: 26rem 0 56rem;
 }
 
-.mediaLarge .TokenProgress_content_8d {
-    margin-bottom: 38rem;
+.mediaExtraLarge .TaskBattleList_areaWrapper_04 {
+    padding: 26rem 0 68rem;
 }
 
-.mediaExtraLarge .TokenProgress_content_8d {
-    margin-bottom: 60rem;
-}
+@keyframes TaskBattleList_hidden-tasks-list_39 {
+    0% {
+        height: 100%;
+        opacity: 1;
+    }
 
-.TokenProgress_progress_7f {
-    flex: 1;
-    margin-right: 20rem;
-    position: relative;
-}
+    40% {
+        height: 70%;
+        opacity: 0;
+    }
 
-.mediaSmall .TokenProgress_progress_7f {
-    margin-right: 25rem;
-}
-
-.TokenProgress_progressBar_56 {
-    margin: 0 -1rem;
-    padding: 2rem 0;
-    border-top: 1rem solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1rem solid rgba(255, 255, 255, 0.2);
-}
-
-.TokenProgress_points_75 {
-    width: 100%;
-    position: absolute;
-}
-
-.TokenProgress_point_55 {
-    position: absolute;
-    top: -30rem;
-    left: 0;
-    transform: translateX(-50%);
-}
-
-.TokenProgress_currentTokenValue_44 {
-    color: #ffffff;
-    font-size: 24rem;
-    font-weight: 700;
-    line-height: 1.2;
-    display: flex;
-    margin-bottom: 2rem;
-    position: absolute;
-    top: -40rem;
-    left: 0;
-    transform: translateX(-50%);
-}
-
-.mediaMedium .TokenProgress_currentTokenValue_44 {
-    font-size: 28rem;
-    top: -45rem;
-}
-
-.TokenProgress_tokenIcon_5e {
-    width: 33rem;
-    height: 33rem;
-    margin: 0 -6rem 0 -1rem;
-    background: url('R.images.gui.maps.icons.quests.bonuses.small.comp7TokenWeeklyReward') no-repeat center / cover;
-}
-
-.mediaMedium .TokenProgress_tokenIcon_5e {
-    width: 40rem;
-    height: 40rem;
-    margin-top: -1rem;
-}
-
-.TokenProgress_finalRewards_7d {
-    position: relative;
-    top: -32rem;
-}
-
-.TokenProgress_finalRewards__passed_ac {
-    opacity: 0.4;
-}
-
-.TokenProgress_description_b8 {
-    color: rgba(255, 255, 255, 0.4);
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    display: flex;
-}
-
-.mediaLarge .TokenProgress_description_b8 {
-    color: rgba(255, 255, 255, 0.4);
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-}
-
-.TokenProgress_description__done_75 {
-    color: #80d43a;
-}
-
-.TokenProgress_iconDone_8f {
-    width: 17rem;
-    height: 17rem;
-    margin-top: 2rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.done') no-repeat center / cover;
+    50%,
+    100% {
+        height: 0%;
+        opacity: 0;
+    }
 }
 
 /* delay should be set always separately only for appearance effect, not hiding */
@@ -6103,13 +6986,34 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     justify-content: center;
     align-items: center;
     flex: 1 1;
-    width: 78vw;
+    width: 1024rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 7.5%,
+        rgba(255, 255, 255, 1) 11%,
+        rgba(255, 255, 255, 1) 89%,
+        rgba(255, 255, 255, 0) 92.5%
+    );
+}
+.mediaSmall .WeeklyQuestsPage_content_cc {
+    width: 1366rem;
+}
+.mediaMedium .WeeklyQuestsPage_content_cc {
+    width: 1600rem;
 }
 .mediaLarge .WeeklyQuestsPage_content_cc {
-    padding-top: 10rem;
+    width: 1920rem;
 }
 .mediaExtraLarge .WeeklyQuestsPage_content_cc {
-    padding: 0;
+    mask-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 7%,
+        rgba(255, 255, 255, 1) 9%,
+        rgba(255, 255, 255, 1) 91%,
+        rgba(255, 255, 255, 0) 93%
+    );
+    width: 2560rem;
 }
 .WeeklyQuestsPage_questsList_78 {
     margin-top: -55rem;
@@ -6130,29 +7034,28 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: 7vh;
     margin-bottom: 11vh;
 }
-.WeeklyQuestsPage_progression_25 {
-    margin-bottom: 10rem;
-}
-.mediaMedium .WeeklyQuestsPage_progression_25 {
-    margin-bottom: 10rem;
-}
-.mediaLarge .WeeklyQuestsPage_progression_25 {
-    margin-bottom: 20rem;
-}
-.mediaExtraLarge .WeeklyQuestsPage_progression_25 {
-    margin-bottom: 2vh;
-}
 .WeeklyQuestsPage_resetStatus_8a {
-    margin-top: 4rem;
+    margin-top: 17rem;
+    margin-bottom: -2rem;
 }
 .mediaMedium .WeeklyQuestsPage_resetStatus_8a {
-    margin-top: 8rem;
-}
-.mediaLarge .WeeklyQuestsPage_resetStatus_8a {
-    margin-top: 24rem;
+    width: 1260rem;
 }
 .mediaExtraLarge .WeeklyQuestsPage_resetStatus_8a {
-    margin-top: 30rem;
+    margin-bottom: 20rem;
+}
+.WeeklyQuestsPage_progression_25 {
+    padding-top: 12rem;
+    overflow-y: hidden;
+}
+.mediaMedium .WeeklyQuestsPage_progression_25 {
+    padding-top: 33rem;
+}
+.mediaLarge .WeeklyQuestsPage_progression_25 {
+    padding-top: 64rem;
+}
+.mediaExtraLarge .WeeklyQuestsPage_progression_25 {
+    padding-top: 75rem;
 }
 
 .VehicleName_base_3b {
@@ -6291,25 +7194,25 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .SeasonPoint_base__x24_b6 .SeasonPoint_highlight_87 {
     width: 48rem;
     height: 48rem;
-    background-image: url('R.images.gui.maps.icons.comp7.icons.season_point_highlight_x48');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.icons.season_point_highlight_x48');
 }
 
 .SeasonPoint_base__x32_f0 .SeasonPoint_highlight_87 {
     width: 64rem;
     height: 64rem;
-    background-image: url('R.images.gui.maps.icons.comp7.icons.season_point_highlight_x64');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.icons.season_point_highlight_x64');
 }
 
 .SeasonPoint_base__x48_8a .SeasonPoint_highlight_87 {
     width: 72rem;
     height: 72rem;
-    background-image: url('R.images.gui.maps.icons.comp7.icons.season_point_highlight_x72');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.icons.season_point_highlight_x72');
 }
 
 .SeasonPoint_base__x62_b1 .SeasonPoint_highlight_87 {
     width: 96rem;
     height: 96rem;
-    background-image: url('R.images.gui.maps.icons.comp7.icons.season_point_highlight_x96');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.icons.season_point_highlight_x96');
 }
 
 .SeasonPoint_icon_b6 {
@@ -6354,7 +7257,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .RewardsStatus_icon_9f {
     width: 8rem;
     height: 2rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.venzel_8x2') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.venzel_8x2') no-repeat center / cover;
 }
 
 .RewardsStatus_line_d8 {
@@ -6388,15 +7291,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .RewardsStatus_base__guaranteed_4f .RewardsStatus_statusIcon_72,
 .RewardsStatus_base__claimed_0f .RewardsStatus_statusIcon_72 {
-    background-image: url('R.images.gui.maps.icons.comp7.icons.check_icon_20x20');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.icons.check_icon_20x20');
 }
 
 .RewardsStatus_base__notAvailable_b1 .RewardsStatus_statusIcon_72 {
-    background-image: url('R.images.gui.maps.icons.comp7.icons.lock_20x20');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.icons.lock_20x20');
 }
 
 .RewardsStatus_base__possible_67 .RewardsStatus_statusIcon_72 {
-    background-image: url('R.images.gui.maps.icons.comp7.icons.flag_20x20');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.icons.flag_20x20');
 }
 
 .RewardsStatus_description_f6 {
@@ -6463,7 +7366,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CardContent_bigLock_fb {
     width: 112rem;
     height: 199rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.lock_231x412') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.lock_231x412') no-repeat center / cover;
     filter: brightness(1.7);
     opacity: 0;
     position: absolute;
@@ -6497,7 +7400,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CardContent_lock_a5 {
     width: 16rem;
     height: 25rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.lock_16x25') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.lock_16x25') no-repeat center / cover;
     filter: brightness(1.7);
     opacity: 0;
     position: absolute;
@@ -6511,7 +7414,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .mediaMedium .CardContent_lock_a5 {
     width: 24rem;
     height: 39rem;
-    background-image: url('R.images.gui.maps.icons.comp7.icons.lock_24x39');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.icons.lock_24x39');
     bottom: 145rem;
 }
 
@@ -6599,7 +7502,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CardContent_vehicleImage_a2 {
     width: 303rem;
     height: 250rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.vehicle_941x777') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.vehicle_941x777') no-repeat center / cover;
     pointer-events: none;
 }
 
@@ -6979,7 +7882,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CardContent_peak_05 {
     width: 42rem;
     height: 14rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.venzel_42x14') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.venzel_42x14') no-repeat center / cover;
 }
 
 .CardContent_lines_f4 {
@@ -7238,7 +8141,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Cards_highlight_28 {
     width: 694rem;
     height: 518rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.selected_card_highlight') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.selected_card_highlight') no-repeat center / cover;
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -7703,7 +8606,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     justify-content: center;
     align-items: center;
     height: 46rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.blue_highlight_750x46') no-repeat center / 750rem 46rem;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.blue_highlight_750x46') no-repeat center / 750rem 46rem;
     position: relative;
 }
 
@@ -8163,19 +9066,19 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 .App_base__qualification_73 {
-    background-image: url('R.images.gui.maps.icons.comp7.backgrounds.qualification');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.backgrounds.qualification');
 }
 .App_base__progression_3b {
-    background-image: url('R.images.gui.maps.icons.comp7.backgrounds.comp7_bg_progression');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.backgrounds.comp7_bg_progression');
 }
 .App_base__leaderboard_da {
-    background-image: url('R.images.gui.maps.icons.comp7.backgrounds.leaderboard_bg');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.backgrounds.leaderboard_bg');
 }
 .App_base__rankRewards_55 {
-    background-image: url('R.images.gui.maps.icons.comp7.backgrounds.rewards_bg');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.backgrounds.rewards_bg');
 }
 .App_base__weeklyQuests_58 {
-    background-image: url('R.images.gui.maps.icons.comp7.backgrounds.quests_bg');
+    background-image: url('R.images.comp7.gui.maps.icons.comp7.backgrounds.quests_bg');
 }
 .App_viewContainer_81 {
     width: 100%;

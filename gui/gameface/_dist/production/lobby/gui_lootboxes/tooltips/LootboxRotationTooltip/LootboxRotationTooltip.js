@@ -39,7 +39,6 @@
                             (u.TankmenXpFactor = 'tankmenXPFactor'),
                             (u.FreeXpFactor = 'freeXPFactor'),
                             (u.BattleToken = 'battleToken'),
-                            (u.HBVehicleUnlock = 'hbUnlockVehicles'),
                             (u.PremiumUniversal = 'premium_universal'),
                             (u.Gold = 'gold'),
                             (u.Credits = 'credits'),
@@ -66,13 +65,10 @@
                             (u.EpicSelectToken = 'epicSelectToken'),
                             (u.CollectionItem = 'collectionItem'),
                             (u.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
+                            (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
                             (u.CosmicLootboxSilver = 'lootBoxToken'),
-                            (u.CosmicLootboxCommon = 'cosmic_2024_2'),
-                            (u.MayEntitlement100 = 'historical_battles_100'),
-                            (u.HistoricalBattleDiscount25 = 'historical_battles_25'),
-                            (u.HistoricalBattleDiscount50 = 'historical_battles_50'),
-                            (u.HistoricalBattleDiscount75 = 'historical_battles_75');
+                            (u.CosmicLootboxCommon = 'cosmic_2024_2');
                     })(n || (n = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -188,7 +184,6 @@
                     n.E4.TankmenXpFactor,
                     n.E4.FreeXpFactor,
                     n.E4.BattleToken,
-                    n.E4.HBVehicleUnlock,
                     n.E4.PremiumUniversal,
                     n.E4.NaturalCover,
                     n.E4.BpCoin,
@@ -201,6 +196,7 @@
                     n.E4.NewYearInvoice,
                     n.E4.EpicSelectToken,
                     n.E4.Comp7TokenWeeklyReward,
+                    n.E4.Comp7TokenCouponReward,
                     n.E4.BattleBoosterGift,
                     n.E4.CosmicLootboxCommon,
                     n.E4.CosmicLootboxSilver,
@@ -432,9 +428,9 @@
                             d = u.decoratorId,
                             _ = void 0 === d ? 0 : d,
                             m = u.isEnabled,
-                            v = void 0 === m || m,
-                            p = u.targetId,
-                            b = void 0 === p ? 0 : p,
+                            p = void 0 === m || m,
+                            v = u.targetId,
+                            b = void 0 === v ? 0 : v,
                             g = u.onShow,
                             h = u.onHide,
                             w = (function (u, e) {
@@ -483,8 +479,8 @@
                                 );
                             }, []),
                             (0, r.useEffect)(() => {
-                                !1 === v && T();
-                            }, [v, T]),
+                                !1 === p && T();
+                            }, [p, T]),
                             (0, r.useEffect)(
                                 () => (
                                     window.addEventListener('mouseleave', T),
@@ -494,7 +490,7 @@
                                 ),
                                 [T],
                             ),
-                            v
+                            p
                                 ? (0, r.cloneElement)(
                                       e,
                                       Object.assign(
@@ -691,13 +687,13 @@
                         getSize: () => D,
                         getViewGlobalPosition: () => l,
                         isEventHandled: () => b,
-                        isFocused: () => v,
+                        isFocused: () => p,
                         pxToRem: () => d,
                         remToPx: () => _,
                         resize: () => B,
                         sendEvent: () => o.qP,
                         setAnimateWindow: () => m,
-                        setEventHandled: () => p,
+                        setEventHandled: () => v,
                         setInputPaddingsRem: () => F,
                         setSidePaddingsRem: () => s,
                         whenTutorialReady: () => P,
@@ -746,10 +742,10 @@
                 function m(u, e) {
                     viewEnv.setAnimateWindow(u, e);
                 }
-                function v() {
+                function p() {
                     return viewEnv.isFocused();
                 }
-                function p() {
+                function v() {
                     return viewEnv.setEventHandled();
                 }
                 function b() {
@@ -1208,7 +1204,7 @@
                             return e.apply(this, arguments);
                         };
                     })(),
-                    v = (u, e) => {
+                    p = (u, e) => {
                         const t = 'GFViewEventProxy';
                         if (void 0 !== e) {
                             const E = e.args,
@@ -1246,7 +1242,7 @@
                         } else viewEnv.handleViewEvent({ __Type: t, type: u });
                         var n;
                     },
-                    p = () => v(F.CLOSE),
+                    v = () => p(F.CLOSE),
                     b = (u, e) => {
                         u.keyCode === l.n.ESCAPE && e();
                     };
@@ -1261,11 +1257,11 @@
                         TimeFormatType: D,
                         DateFormatType: B,
                         makeGlobalBoundingBox: _,
-                        sendMoveEvent: (u) => v(F.MOVE, { isMouseEvent: !0, on: u }),
-                        sendCloseEvent: p,
-                        sendClosePopOverEvent: () => v(F.POP_OVER, { on: !1 }),
+                        sendMoveEvent: (u) => p(F.MOVE, { isMouseEvent: !0, on: u }),
+                        sendCloseEvent: v,
+                        sendClosePopOverEvent: () => p(F.POP_OVER, { on: !1 }),
                         sendShowContextMenuEvent: (u, e, t = 0) => {
-                            v(F.CONTEXT_MENU, { isMouseEvent: !0, contentID: u, on: !0, decoratorID: t, args: e });
+                            p(F.CONTEXT_MENU, { isMouseEvent: !0, contentID: u, on: !0, decoratorID: t, args: e });
                         },
                         sendShowPopOverEvent: (u, e, t, n, E = R.invalid('resId'), r) => {
                             const o = c.O.view.getViewGlobalPosition(),
@@ -1280,7 +1276,7 @@
                                     width: c.O.view.pxToRem(s),
                                     height: c.O.view.pxToRem(D),
                                 };
-                            v(F.POP_OVER, {
+                            p(F.POP_OVER, {
                                 isMouseEvent: !0,
                                 contentID: u,
                                 decoratorID: n || R.invalid('resId'),
@@ -1298,9 +1294,9 @@
                             );
                         },
                         closeOnEsc: (u) => {
-                            b(u, p);
+                            b(u, v);
                         },
-                        handleViewEvent: v,
+                        handleViewEvent: p,
                         onBindingsReady: m,
                         onLayoutReady: () =>
                             new Promise((u) => {
@@ -1393,7 +1389,7 @@
                     },
                     D = R.strings.gui_lootboxes.probabilitiesOverlay,
                     B = ({ name: u, vehicleName: e, status: t, tooltipArgs: n }) => {
-                        const r = R.images.gui_lootboxes.gui.maps.rotation.vehicles.$dyn(`${(0, A.BN)(u)}`);
+                        const r = R.images.gui_lootboxes.gui.maps.rewards.vehicles.$dyn(`${(0, A.BN)(u)}`);
                         return o().createElement(
                             'div',
                             { className: E()(s.base, s[`base__${t}`]) },
@@ -1561,8 +1557,8 @@
                             : u.value
                         : u;
                 }
-                var v = t(3946),
-                    p = t(9409);
+                var p = t(3946),
+                    v = t(9409);
                 const b = ((u, e) => {
                         const t = (0, o.createContext)({});
                         return [
@@ -1692,9 +1688,9 @@
                                                         compensation: u.object('compensation'),
                                                         vehicleStageList: u.array('vehicleStageList'),
                                                     },
-                                                    t = (0, v.Om)(() => e.vehicleStageList.get(), { equals: c }),
-                                                    n = (0, v.Om)(() => e.vehicleStageList.get().length),
-                                                    E = (0, v.Om)(
+                                                    t = (0, p.Om)(() => e.vehicleStageList.get(), { equals: c }),
+                                                    n = (0, p.Om)(() => e.vehicleStageList.get().length),
+                                                    E = (0, p.Om)(
                                                         (u) =>
                                                             (function (u, e) {
                                                                 var t;
@@ -1707,18 +1703,18 @@
                                                             })(t(), u),
                                                         { equals: c },
                                                     ),
-                                                    r = (0, v.Om)(
+                                                    r = (0, p.Om)(
                                                         (u) => {
                                                             const t = E(u);
                                                             return t
                                                                 ? ((n = t),
                                                                   (r = (t) => {
-                                                                      let n = p.H.Available;
+                                                                      let n = v.H.Available;
                                                                       return (
                                                                           t.inInventory || t.wasSold
-                                                                              ? (n = p.H.Received)
+                                                                              ? (n = v.H.Received)
                                                                               : u >= e.root.get().stageRotation &&
-                                                                                (n = p.H.Unavailable),
+                                                                                (n = v.H.Unavailable),
                                                                           Object.assign({}, t, { status: n })
                                                                       );
                                                                   }),
@@ -1732,7 +1728,7 @@
                                                         },
                                                         { equals: c },
                                                     ),
-                                                    o = (0, v.Om)((u) => {
+                                                    o = (0, p.Om)((u) => {
                                                         if (u === n() - 1) {
                                                             const t = (function (u, e) {
                                                                 for (let t = 0; t < u.length; t++) {

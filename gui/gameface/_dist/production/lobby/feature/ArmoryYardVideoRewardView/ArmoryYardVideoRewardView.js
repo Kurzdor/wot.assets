@@ -756,7 +756,7 @@
                     };
                 window.ViewEnvHelper = f;
             },
-            6241: (u, e, t) => {
+            230: (u, e, t) => {
                 'use strict';
                 var r = t(6179),
                     a = t.n(r);
@@ -1121,10 +1121,7 @@
                 var U = t(3403);
                 let G, V;
                 var j;
-                function $(u) {
-                    engine.call('PlaySound', u);
-                }
-                let z;
+                let $;
                 !(function (u) {
                     (u[(u.left = 0)] = 'left'), (u[(u.right = 1)] = 'right');
                 })(G || (G = {})),
@@ -1159,9 +1156,9 @@
                     N.Sw.instance,
                     (function (u) {
                         (u.None = 'None'), (u.Shallow = 'Shallow'), (u.Deep = 'Deep');
-                    })(z || (z = {})),
+                    })($ || ($ = {})),
                     N.Sw.instance;
-                const K = (u) => {
+                const z = (u) => {
                         const e = (0, r.useRef)();
                         return (
                             (0, r.useEffect)(() => {
@@ -1170,13 +1167,13 @@
                             e.current
                         );
                     },
-                    q = (u) => {
+                    K = (u) => {
                         if (!u) return !1;
                         const e = u.videoHeight,
                             t = u.videoWidth;
                         return Boolean(e && t);
                     },
-                    Y = a().memo(function ({
+                    q = a().memo(function ({
                         src: u,
                         className: e,
                         autoPlay: t,
@@ -1191,7 +1188,7 @@
                     }) {
                         const c = (0, r.useRef)(null),
                             d = ((u) => {
-                                const e = (0, r.useState)(q(u ? u.current : null)),
+                                const e = (0, r.useState)(K(u ? u.current : null)),
                                     t = e[0],
                                     a = e[1];
                                 return (
@@ -1199,7 +1196,7 @@
                                         let e = 0;
                                         const t = () => {
                                             e = requestAnimationFrame(() => {
-                                                q(u ? u.current : null) ? a(!0) : t();
+                                                K(u ? u.current : null) ? a(!0) : t();
                                             });
                                         };
                                         return (
@@ -1213,7 +1210,7 @@
                                     t
                                 );
                             })(c),
-                            D = K(E),
+                            D = z(E),
                             _ = f(),
                             B = _.remScreenWidth,
                             m = _.remScreenHeight,
@@ -1269,18 +1266,18 @@
                             )
                         );
                     });
-                function X() {
+                function Y() {
                     return !1;
                 }
                 console.log;
-                var Z = t(9174);
-                function Q(u, e) {
+                var X = t(9174);
+                function Z(u, e) {
                     (null == e || e > u.length) && (e = u.length);
                     for (var t = 0, r = new Array(e); t < e; t++) r[t] = u[t];
                     return r;
                 }
-                const J = (u) => (0 === u ? window : window.subViews.get(u)),
-                    uu = ((u, e) => {
+                const Q = (u) => (0 === u ? window : window.subViews.get(u)),
+                    J = ((u, e) => {
                         const t = (0, r.createContext)({});
                         return [
                             function ({ mode: u = 'real', options: n, children: E, mocks: s }) {
@@ -1290,7 +1287,7 @@
                                         const n = (function ({
                                                 initializer: u = !0,
                                                 rootId: e = 0,
-                                                getRoot: t = J,
+                                                getRoot: t = Q,
                                                 context: r = 'model',
                                             } = {}) {
                                                 const a = new Map();
@@ -1350,7 +1347,7 @@
                                                                         (t = (function (u, e) {
                                                                             if (u) {
                                                                                 if ('string' == typeof u)
-                                                                                    return Q(u, e);
+                                                                                    return Z(u, e);
                                                                                 var t = Object.prototype.toString
                                                                                     .call(u)
                                                                                     .slice(8, -1);
@@ -1364,7 +1361,7 @@
                                                                                             /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(
                                                                                                 t,
                                                                                             )
-                                                                                          ? Q(u, e)
+                                                                                          ? Z(u, e)
                                                                                           : void 0
                                                                                 );
                                                                             }
@@ -1413,11 +1410,11 @@
                                                 observableModel: {
                                                     array: (e, t) => {
                                                         const r = null != t ? t : s(e),
-                                                            a = Z.LO.box(r, { equals: X });
+                                                            a = X.LO.box(r, { equals: Y });
                                                         return (
                                                             'real' === u &&
                                                                 E.subscribe(
-                                                                    (0, Z.aD)((u) => a.set(u)),
+                                                                    (0, X.aD)((u) => a.set(u)),
                                                                     e,
                                                                 ),
                                                             a
@@ -1425,11 +1422,11 @@
                                                     },
                                                     object: (e, t) => {
                                                         const r = null != t ? t : s(e),
-                                                            a = Z.LO.box(r, { equals: X });
+                                                            a = X.LO.box(r, { equals: Y });
                                                         return (
                                                             'real' === u &&
                                                                 E.subscribe(
-                                                                    (0, Z.aD)((u) => a.set(u)),
+                                                                    (0, X.aD)((u) => a.set(u)),
                                                                     e,
                                                                 ),
                                                             a
@@ -1439,13 +1436,13 @@
                                                         const r = s(t);
                                                         if (Array.isArray(e)) {
                                                             const a = e.reduce(
-                                                                (u, e) => ((u[e] = Z.LO.box(r[e], {})), u),
+                                                                (u, e) => ((u[e] = X.LO.box(r[e], {})), u),
                                                                 {},
                                                             );
                                                             return (
                                                                 'real' === u &&
                                                                     E.subscribe(
-                                                                        (0, Z.aD)((u) => {
+                                                                        (0, X.aD)((u) => {
                                                                             e.forEach((e) => {
                                                                                 a[e].set(u[e]);
                                                                             });
@@ -1459,13 +1456,13 @@
                                                             const a = e,
                                                                 n = Object.entries(a),
                                                                 i = n.reduce(
-                                                                    (u, [e, t]) => ((u[t] = Z.LO.box(r[e], {})), u),
+                                                                    (u, [e, t]) => ((u[t] = X.LO.box(r[e], {})), u),
                                                                     {},
                                                                 );
                                                             return (
                                                                 'real' === u &&
                                                                     E.subscribe(
-                                                                        (0, Z.aD)((u) => {
+                                                                        (0, X.aD)((u) => {
                                                                             n.forEach(([e, t]) => {
                                                                                 i[t].set(u[e]);
                                                                             });
@@ -1518,31 +1515,34 @@
                         videoStarted: u.createCallbackNoArgs('onVideoStarted'),
                         onError: u.createCallback((u) => ({ errorFilePath: u }), 'onError'),
                     })),
-                    eu = uu[0],
-                    tu = uu[1],
-                    ru = {
-                        base: 'CButton_base_40',
-                        base__main: 'CButton_base__main_42',
-                        base__primary: 'CButton_base__primary_7f',
-                        base__primaryGreen: 'CButton_base__primaryGreen_6f',
-                        base__primaryRed: 'CButton_base__primaryRed_ec',
-                        base__secondary: 'CButton_base__secondary_50',
-                        base__ghost: 'CButton_base__ghost_ed',
-                        base__extraSmall: 'CButton_base__extraSmall_27',
-                        base__small: 'CButton_base__small_df',
-                        base__medium: 'CButton_base__medium_74',
-                        base__disabled: 'CButton_base__disabled_d9',
-                        back: 'CButton_back_e5',
-                        texture: 'CButton_texture_fe',
-                        state: 'CButton_state_11',
-                        base__focus: 'CButton_base__focus_83',
-                        stateHighlightHover: 'CButton_stateHighlightHover_ff',
-                        stateHighlightActive: 'CButton_stateHighlightActive_35',
-                        stateDisabled: 'CButton_stateDisabled_54',
-                        base__firstHover: 'CButton_base__firstHover_d5',
-                        base__highlightActive: 'CButton_base__highlightActive_b2',
-                        content: 'CButton_content_cc',
-                    };
+                    uu = J[0],
+                    eu = J[1];
+                function tu(u) {
+                    engine.call('PlaySound', u);
+                }
+                const ru = {
+                    base: 'CButton_base_40',
+                    base__main: 'CButton_base__main_42',
+                    base__primary: 'CButton_base__primary_7f',
+                    base__primaryGreen: 'CButton_base__primaryGreen_6f',
+                    base__primaryRed: 'CButton_base__primaryRed_ec',
+                    base__secondary: 'CButton_base__secondary_50',
+                    base__ghost: 'CButton_base__ghost_ed',
+                    base__extraSmall: 'CButton_base__extraSmall_27',
+                    base__small: 'CButton_base__small_df',
+                    base__medium: 'CButton_base__medium_74',
+                    base__disabled: 'CButton_base__disabled_d9',
+                    back: 'CButton_back_e5',
+                    texture: 'CButton_texture_fe',
+                    state: 'CButton_state_11',
+                    base__focus: 'CButton_base__focus_83',
+                    stateHighlightHover: 'CButton_stateHighlightHover_ff',
+                    stateHighlightActive: 'CButton_stateHighlightActive_35',
+                    stateDisabled: 'CButton_stateDisabled_54',
+                    base__firstHover: 'CButton_base__firstHover_d5',
+                    base__highlightActive: 'CButton_base__highlightActive_b2',
+                    content: 'CButton_content_cc',
+                };
                 let au, nu;
                 !(function (u) {
                     (u.main = 'main'),
@@ -1598,7 +1598,7 @@
                         ),
                         y = (0, r.useCallback)(
                             (u) => {
-                                i || (null !== s && $(s), o && o(u), p(!0));
+                                i || (null !== s && tu(s), o && o(u), p(!0));
                             },
                             [i, s, o],
                         ),
@@ -1616,7 +1616,7 @@
                         ),
                         O = (0, r.useCallback)(
                             (u) => {
-                                i || (null !== A && $(A), F && F(u), t && L(), w(!0));
+                                i || (null !== A && tu(A), F && F(u), t && L(), w(!0));
                             },
                             [i, A, F, L, t],
                         ),
@@ -1694,7 +1694,7 @@
                     lu = 'Footer_button_fd',
                     Fu = R.strings.armory_yard.videoRewardView,
                     cu = (0, U.Pi)(() => {
-                        const u = tu(),
+                        const u = eu(),
                             e = u.model,
                             t = u.controls,
                             r = e.root.get(),
@@ -1762,7 +1762,7 @@
                             a().createElement('span', { className: 'Header_subTitle_56' }, du.subTitle()),
                         ),
                     _u = (0, U.Pi)(() => {
-                        const u = tu(),
+                        const u = eu(),
                             e = u.controls,
                             t = u.model.root.get(),
                             n = t.isWindowAccessible,
@@ -1806,7 +1806,7 @@
                                 a().createElement('div', { className: 'App_bottom_bg1_7a' }),
                             ),
                             i &&
-                                a().createElement(Y, {
+                                a().createElement(q, {
                                     src: R.videos.armory_yard.$dyn(i),
                                     className: 'App_video_da',
                                     isPaused: !n || l,
@@ -1841,7 +1841,7 @@
                     });
                 engine.whenReady.then(() => {
                     k().render(
-                        a().createElement(eu, null, a().createElement(O, null, a().createElement(_u, null))),
+                        a().createElement(uu, null, a().createElement(O, null, a().createElement(_u, null))),
                         document.getElementById('root'),
                     );
                 });
@@ -1923,6 +1923,6 @@
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             t.forEach(e.bind(null, 0)), (t.push = e.bind(null, t.push.bind(t)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [503], () => __webpack_require__(6241));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [503], () => __webpack_require__(230));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

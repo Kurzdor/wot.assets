@@ -2414,6 +2414,46 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 400rem;
 }
 
+.ReserveStockBlock_base__premium_73 {
+    background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.piggybank_premium_340') center center /
+        cover no-repeat;
+}
+
+.mediaMedium .ReserveStockBlock_base__premium_73 {
+    background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.piggybank_premium_360') center center /
+        cover no-repeat;
+}
+
+.ReserveStockBlock_base__subscription_47 {
+    background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.piggybank_subscription_340') center center /
+        cover no-repeat;
+}
+
+.mediaMedium .ReserveStockBlock_base__subscription_47 {
+    background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.piggybank_subscription_360') center center /
+        cover no-repeat;
+}
+
+.ReserveStockBlock_base__allActive_a6 {
+    background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.piggybank_allActive_340') center center /
+        cover no-repeat;
+}
+
+.mediaMedium .ReserveStockBlock_base__allActive_a6 {
+    background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.piggybank_allActive_360') center center /
+        cover no-repeat;
+}
+
+.ReserveStockBlock_base__allDisabled_6b {
+    background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.piggybank_allDisabled_340') center center /
+        cover no-repeat;
+}
+
+.mediaMedium .ReserveStockBlock_base__allDisabled_6b {
+    background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.piggybank_allDisabled_360') center center /
+        cover no-repeat;
+}
+
 .ReserveStockBlock_base_background_ee {
     background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.piggybank_340') center center / cover
         no-repeat;
@@ -2581,6 +2621,29 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     z-index: 1;
 }
 
+.ReserveStockBlock_currencyContainer_ed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ReserveStockBlock_divider_64 {
+    width: 2rem;
+    height: 70rem;
+    background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.divider') center center / cover no-repeat;
+}
+
+.ReserveStockBlock_disabled_f3 {
+    color: #ee7000;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    padding-left: 25rem;
+    background: url('R.images.gui.maps.icons.library.alertBigIcon') left center / 24rem 24rem no-repeat;
+    text-shadow: 0 0 14rem #f00;
+}
+
 .ReserveStockBlock_disabledSubtitle_87 {
     justify-content: center;
     color: #8c8c7e;
@@ -2626,7 +2689,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: url('R.images.gui.maps.icons.account_dashboard.icon_lock') center center / cover no-repeat;
     position: absolute;
     top: -75rem;
-    left: 15rem;
+    left: 45rem;
 }
 
 .ReserveStockBlock_cornerHighlight_74 {
@@ -2680,6 +2743,95 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         no-repeat;
     position: absolute;
     left: -24rem;
+}
+
+.ReserveCurrency_base_e0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 49%;
+    height: 80rem;
+    position: relative;
+}
+
+.ReserveCurrency_currencyHeader_5d {
+    margin-bottom: 5rem;
+    color: #e9e2bf;
+    font-size: 12rem;
+}
+
+.mediaMedium .ReserveCurrency_currencyHeader_5d {
+    font-size: 16rem;
+}
+
+.ReserveCurrency_currencyHeader__disabled_94 {
+    margin-bottom: 22rem;
+}
+
+.ReserveCurrency_currencyLocker_47 {
+    width: 90%;
+    height: 70rem;
+    background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.lock_icon') center center / cover no-repeat;
+    mix-blend-mode: exclusion;
+    position: absolute;
+    top: -22rem;
+}
+
+.ReserveCurrency_currencyValue_6a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ReserveCurrency_currencyValue__locked_c0 {
+    margin-top: 27rem;
+}
+
+.mediaMedium .ReserveCurrency_currencyValue__locked_c0 {
+    margin-top: 23rem;
+}
+
+.ReserveCurrency_currencyCheckmark_eb {
+    width: 16rem;
+    height: 16rem;
+    background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.icon_check') center center / cover
+        no-repeat;
+}
+
+.ReserveCurrency_disabledWrapper_99 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200rem;
+    height: 80rem;
+    position: absolute;
+    top: -6rem;
+}
+
+.mediaMedium .ReserveCurrency_disabledWrapper_99 {
+    top: -4rem;
+}
+
+.ReserveCurrency_disabledBg_ed {
+    width: 200rem;
+    height: 80rem;
+    background: url('R.images.gui.maps.icons.account_dashboard.reserve_stock.disabled_bg') center center / cover
+        no-repeat;
+    opacity: 0.4;
+    position: absolute;
+}
+
+.ReserveCurrency_disabled_a9 {
+    color: #ee7000;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    width: 16rem;
+    height: 20rem;
+    padding-left: 25rem;
+    background: url('R.images.gui.maps.icons.library.alertBigIcon') left center / 24rem 24rem no-repeat;
+    text-shadow: 0 0 14rem #f00;
 }
 
 .AccountDashboardApp_base_b3 {

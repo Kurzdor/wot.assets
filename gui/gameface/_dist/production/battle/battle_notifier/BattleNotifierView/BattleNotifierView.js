@@ -701,7 +701,7 @@
                     };
                 window.ViewEnvHelper = f;
             },
-            198: (u, e, t) => {
+            804: (u, e, t) => {
                 var A = t(179),
                     F = t.n(A),
                     E = t(493),
@@ -757,11 +757,8 @@
                     return e;
                 }
                 ['ko', 'no'].includes(R.strings.settings.LANGUAGE_CODE());
-                function c(u) {
-                    engine.call('PlaySound', u);
-                }
                 t(67);
-                const l = (u = 1) => {
+                const c = (u = 1) => {
                         const e = new Error().stack;
                         let t,
                             A = R.invalid('resId');
@@ -775,26 +772,26 @@
                             { caller: t, stack: e, resId: A }
                         );
                     },
-                    d = (u, e) => u.split('.').reduce((u, e) => u && u[e], e),
-                    v = (u) => {
+                    l = (u, e) => u.split('.').reduce((u, e) => u && u[e], e),
+                    d = (u) => {
                         const e = (0, A.useRef)(!1);
                         e.current || (u(), (e.current = !0));
                     },
-                    w = (u) => u && 'ArrayItem' === u.__proto__.constructor.name,
-                    m = (u, e) => (u.length > 0 ? `${u}.${e}` : e),
-                    p = (u) =>
+                    v = (u) => u && 'ArrayItem' === u.__proto__.constructor.name,
+                    w = (u, e) => (u.length > 0 ? `${u}.${e}` : e),
+                    m = (u) =>
                         ((u, e) =>
                             u.split('.').reduce((u, t) => {
-                                const A = d(`${u}.${t}`, window);
-                                return w(A) ? e(u, t, A) : `${u}.${t}`;
+                                const A = l(`${u}.${t}`, window);
+                                return v(A) ? e(u, t, A) : `${u}.${t}`;
                             }))(u, (u, e) => `${u}.${e}.value`),
-                    h = (u) => {
+                    p = (u) => {
                         const e = ((u) => {
-                                const e = l(),
+                                const e = c(),
                                     t = e.caller,
                                     A = e.resId,
                                     F = window.__feature && window.__feature !== t && t ? `subViews.${t}` : '';
-                                return { modelPrefix: F, modelPath: m(F, u || ''), resId: A };
+                                return { modelPrefix: F, modelPath: w(F, u || ''), resId: A };
                             })(),
                             t = e.modelPrefix,
                             A = u.split('.');
@@ -802,23 +799,23 @@
                             const u = [A[0]];
                             return (
                                 A.reduce((e, A) => {
-                                    const F = d(m(t, `${e}.${A}`), window);
-                                    return w(F) ? (u.push(F.id), `${e}.${A}.value`) : (u.push(A), `${e}.${A}`);
+                                    const F = l(w(t, `${e}.${A}`), window);
+                                    return v(F) ? (u.push(F.id), `${e}.${A}.value`) : (u.push(A), `${e}.${A}`);
                                 }),
                                 u.reduce((u, e) => u + '.' + e)
                             );
                         }
                         return '';
                     },
-                    f = o.Sw.instance;
-                let b;
+                    h = o.Sw.instance;
+                let f;
                 !(function (u) {
                     (u.None = 'None'), (u.Shallow = 'Shallow'), (u.Deep = 'Deep');
-                })(b || (b = {}));
-                const g = (u = 'model', e = b.Deep) => {
+                })(f || (f = {}));
+                const b = (u = 'model', e = f.Deep) => {
                     const t = (0, A.useState)(0),
                         F = (t[0], t[1]),
-                        E = (0, A.useMemo)(() => l(), []),
+                        E = (0, A.useMemo)(() => c(), []),
                         n = E.caller,
                         r = E.resId,
                         i = (0, A.useMemo)(
@@ -827,118 +824,121 @@
                         ),
                         D = (0, A.useState)(() =>
                             ((u) => {
-                                const e = d(u, window);
+                                const e = l(u, window);
                                 for (const u in e) 'function' == typeof e[u] && (e[u] = e[u].bind(e));
-                                return w(e) ? e.value : e;
-                            })(p(i)),
+                                return v(e) ? e.value : e;
+                            })(m(i)),
                         ),
                         a = D[0],
                         o = D[1],
                         s = (0, A.useRef)(-1);
                     return (
-                        v(() => {
+                        d(() => {
                             if (
                                 ('boolean' == typeof e &&
-                                    ((e = e ? b.Deep : b.None),
+                                    ((e = e ? f.Deep : f.None),
                                     console.warn(
                                         'Boolean key for useModel "tracking" param is deprecated. Use ModelTracking enum values instead!',
                                     )),
-                                e !== b.None)
+                                e !== f.None)
                             ) {
                                 const t = (u) => {
                                         ((u) => u && 'CoherentArrayProxy' === u.__proto__.constructor.name)(u) &&
-                                        e === b.Deep
+                                        e === f.Deep
                                             ? (u === a && F((u) => u + 1), o(u))
                                             : o(Object.assign([], u));
                                     },
-                                    A = h(u);
-                                s.current = f.addCallback(A, t, r, e === b.Deep);
+                                    A = p(u);
+                                s.current = h.addCallback(A, t, r, e === f.Deep);
                             }
                         }),
                         (0, A.useEffect)(() => {
-                            if (e !== b.None)
+                            if (e !== f.None)
                                 return () => {
-                                    f.removeCallback(s.current, r);
+                                    h.removeCallback(s.current, r);
                                 };
                         }, [r, e]),
                         a
                     );
                 };
                 o.Sw.instance;
-                let T;
+                let g;
                 !(function (u) {
                     (u[(u.Defeat = -1)] = 'Defeat'), (u[(u.Draw = 0)] = 'Draw'), (u[(u.Victory = 1)] = 'Victory');
-                })(T || (T = {}));
-                const y = 'App_base_3c',
-                    O = 'App_backShadow_1e',
-                    k = 'App_resultBackground_6f',
-                    P = 'App_base__victory_a3',
-                    M = 'App_base__defeat_1e',
-                    S = 'App_resultBackgroundFadeOut_e8',
-                    N = 'App_result_50',
-                    L = 'App_upperStatBase_f1',
-                    x = 'App_lowerStatBase_4d',
-                    U = 'App_map_3b',
-                    I = 'App_vehicle_0f',
-                    V = 'App_credits_9c',
-                    G = 'App_experience_44',
-                    H = 'App_crystals_47',
-                    K = 'App_upperGlow_f9',
-                    W = 'App_upperGlowFadeOut_81',
-                    q = 'App_vehicleIcon_c5',
-                    j = R.images.gui.maps.icons.battleNotifier,
+                })(g || (g = {}));
+                const T = 'App_base_3c',
+                    y = 'App_backShadow_1e',
+                    O = 'App_resultBackground_6f',
+                    k = 'App_base__victory_a3',
+                    P = 'App_base__defeat_1e',
+                    M = 'App_resultBackgroundFadeOut_e8',
+                    S = 'App_result_50',
+                    N = 'App_upperStatBase_f1',
+                    L = 'App_lowerStatBase_4d',
+                    x = 'App_map_3b',
+                    U = 'App_vehicle_0f',
+                    I = 'App_credits_9c',
+                    V = 'App_experience_44',
+                    G = 'App_crystals_47',
+                    H = 'App_upperGlow_f9',
+                    K = 'App_upperGlowFadeOut_81',
+                    W = 'App_vehicleIcon_c5';
+                function q(u) {
+                    engine.call('PlaySound', u);
+                }
+                const j = R.images.gui.maps.icons.battleNotifier,
                     z = {
                         'AT-SPG': {
-                            [T.Victory]: j.AT_SPG_victory(),
-                            [T.Draw]: j.AT_SPG_draw(),
-                            [T.Defeat]: j.AT_SPG_defeat(),
+                            [g.Victory]: j.AT_SPG_victory(),
+                            [g.Draw]: j.AT_SPG_draw(),
+                            [g.Defeat]: j.AT_SPG_defeat(),
                         },
                         heavyTank: {
-                            [T.Victory]: j.heavyTank_victory(),
-                            [T.Draw]: j.heavyTank_draw(),
-                            [T.Defeat]: j.heavyTank_defeat(),
+                            [g.Victory]: j.heavyTank_victory(),
+                            [g.Draw]: j.heavyTank_draw(),
+                            [g.Defeat]: j.heavyTank_defeat(),
                         },
                         lightTank: {
-                            [T.Victory]: j.lightTank_victory(),
-                            [T.Draw]: j.lightTank_draw(),
-                            [T.Defeat]: j.lightTank_defeat(),
+                            [g.Victory]: j.lightTank_victory(),
+                            [g.Draw]: j.lightTank_draw(),
+                            [g.Defeat]: j.lightTank_defeat(),
                         },
                         mediumTank: {
-                            [T.Victory]: j.mediumTank_victory(),
-                            [T.Draw]: j.mediumTank_draw(),
-                            [T.Defeat]: j.mediumTank_defeat(),
+                            [g.Victory]: j.mediumTank_victory(),
+                            [g.Draw]: j.mediumTank_draw(),
+                            [g.Defeat]: j.mediumTank_defeat(),
                         },
-                        SPG: { [T.Victory]: j.SPG_victory(), [T.Draw]: j.SPG_draw(), [T.Defeat]: j.SPG_defeat() },
+                        SPG: { [g.Victory]: j.SPG_victory(), [g.Draw]: j.SPG_draw(), [g.Defeat]: j.SPG_defeat() },
                     },
                     $ = {
-                        [T.Victory]: j.upper_glow_victory(),
-                        [T.Draw]: j.upper_glow_draw(),
-                        [T.Defeat]: j.upper_glow_defeat(),
+                        [g.Victory]: j.upper_glow_victory(),
+                        [g.Draw]: j.upper_glow_draw(),
+                        [g.Defeat]: j.upper_glow_defeat(),
                     },
                     Y = {
-                        [T.Victory]: j.line_glow_victory(),
-                        [T.Draw]: j.line_glow_draw(),
-                        [T.Defeat]: j.line_glow_defeat(),
+                        [g.Victory]: j.line_glow_victory(),
+                        [g.Draw]: j.line_glow_draw(),
+                        [g.Defeat]: j.line_glow_defeat(),
                     },
                     Z = { credits: j.creditsIcon(), experience: j.experienceIcon(), crystals: j.crystalIcon() },
                     X = j.back_shadow(),
                     Q = {
-                        [T.Victory]: R.sounds.battle_results_victory(),
-                        [T.Draw]: R.sounds.battle_results_draw(),
-                        [T.Defeat]: R.sounds.battle_results_defeat(),
+                        [g.Victory]: R.sounds.battle_results_victory(),
+                        [g.Draw]: R.sounds.battle_results_draw(),
+                        [g.Defeat]: R.sounds.battle_results_defeat(),
                     },
                     J = {
-                        [T.Victory]: R.strings.ingame_gui.battle_notifier.win(),
-                        [T.Draw]: R.strings.ingame_gui.battle_notifier.tie(),
-                        [T.Defeat]: R.strings.ingame_gui.battle_notifier.lose(),
+                        [g.Victory]: R.strings.ingame_gui.battle_notifier.win(),
+                        [g.Draw]: R.strings.ingame_gui.battle_notifier.tie(),
+                        [g.Defeat]: R.strings.ingame_gui.battle_notifier.lose(),
                     },
-                    uu = (u = 'SPG', e = T.Draw) => z[u][e],
-                    eu = (u = T.Draw) => ({ backgroundImage: `url(${$[u]})` }),
-                    tu = (u = T.Draw) => ({ backgroundImage: `url(${Y[u]})` }),
+                    uu = (u = 'SPG', e = g.Draw) => z[u][e],
+                    eu = (u = g.Draw) => ({ backgroundImage: `url(${$[u]})` }),
+                    tu = (u = g.Draw) => ({ backgroundImage: `url(${Y[u]})` }),
                     Au = (u) => ({ backgroundImage: `url(${Z[u]})` }),
                     Fu = { backgroundImage: `url(${X})` },
                     Eu = () => {
-                        const u = g(),
+                        const u = b(),
                             e = u.battleResult,
                             t = u.battleStartTime,
                             E = u.mapName,
@@ -949,31 +949,31 @@
                             o = u.experienceAmount,
                             B = u.crystalAmount,
                             _ = u.onResultShown,
-                            l = (0, A.useRef)(null),
-                            d = (0, A.useCallback)(
+                            c = (0, A.useRef)(null),
+                            l = (0, A.useCallback)(
                                 (u) => {
-                                    u.target === l.current && _();
+                                    u.target === c.current && _();
                                 },
                                 [_],
                             ),
-                            v = e === T.Victory,
-                            w = e === T.Defeat,
-                            m = J[e],
-                            p = new Date(1e3 * t),
-                            h = `${p.getHours()}:${s(p.getMinutes())}`,
-                            f = `+ ${o}`,
-                            b = `${a >= 0 ? '+' : ''} ${a}`,
+                            d = e === g.Victory,
+                            v = e === g.Defeat,
+                            w = J[e],
+                            m = new Date(1e3 * t),
+                            p = `${m.getHours()}:${s(m.getMinutes())}`,
+                            h = `+ ${o}`,
+                            f = `${a >= 0 ? '+' : ''} ${a}`,
                             j = `+ ${B}`,
                             z = '' !== E && '' !== n;
                         return (
                             (0, A.useEffect)(() => {
                                 if (!z) return;
-                                c(Q[e]);
+                                q(Q[e]);
                                 const u = setTimeout(() => {
-                                        c(R.sounds.battle_results_stats());
+                                        q(R.sounds.battle_results_stats());
                                     }, 500),
                                     t = setTimeout(() => {
-                                        c(R.sounds.battle_results_rollout());
+                                        q(R.sounds.battle_results_rollout());
                                     }, 2e3);
                                 return () => {
                                     clearTimeout(u), clearTimeout(t);
@@ -982,25 +982,25 @@
                             z &&
                                 F().createElement(
                                     'div',
-                                    { key: t, className: i()(y, { [P]: v, [M]: w }) },
-                                    F().createElement('div', { className: O, style: Fu, onAnimationEnd: d, ref: l }),
+                                    { key: t, className: i()(T, { [k]: d, [P]: v }) },
+                                    F().createElement('div', { className: y, style: Fu, onAnimationEnd: l, ref: c }),
+                                    F().createElement('div', { className: H, style: eu(e) }),
                                     F().createElement('div', { className: K, style: eu(e) }),
-                                    F().createElement('div', { className: W, style: eu(e) }),
-                                    F().createElement('div', { className: k, style: tu(e) }),
-                                    F().createElement('div', { className: S, style: tu(e) }),
-                                    F().createElement('div', { className: N }, m),
-                                    F().createElement('div', { className: i()(L, U) }, h + ' ' + E),
+                                    F().createElement('div', { className: O, style: tu(e) }),
+                                    F().createElement('div', { className: M, style: tu(e) }),
+                                    F().createElement('div', { className: S }, w),
+                                    F().createElement('div', { className: i()(N, x) }, p + ' ' + E),
                                     F().createElement(
                                         'div',
-                                        { className: i()(L, I) },
+                                        { className: i()(N, U) },
                                         F().createElement('div', null, C(r)),
-                                        F().createElement('img', { className: q, src: uu(D, e) }),
+                                        F().createElement('img', { className: W, src: uu(D, e) }),
                                         F().createElement('div', null, n),
                                     ),
-                                    F().createElement('div', { className: i()(x, V), style: Au('credits') }, b),
-                                    F().createElement('div', { className: i()(x, G), style: Au('experience') }, f),
+                                    F().createElement('div', { className: i()(L, I), style: Au('credits') }, f),
+                                    F().createElement('div', { className: i()(L, V), style: Au('experience') }, h),
                                     0 !== B &&
-                                        F().createElement('div', { className: i()(x, H), style: Au('crystals') }, j),
+                                        F().createElement('div', { className: i()(L, G), style: Au('crystals') }, j),
                                 )
                         );
                     };
@@ -1085,6 +1085,6 @@
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             t.forEach(e.bind(null, 0)), (t.push = e.bind(null, t.push.bind(t)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [532], () => __webpack_require__(198));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [532], () => __webpack_require__(804));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

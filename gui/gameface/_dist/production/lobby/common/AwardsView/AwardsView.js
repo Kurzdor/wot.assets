@@ -18,7 +18,7 @@
             },
             67: (e, u, t) => {
                 'use strict';
-                t.d(u, { O: () => j });
+                t.d(u, { O: () => V });
                 var a = {};
                 t.r(a), t.d(a, { mouse: () => c, onResize: () => l });
                 var r = {};
@@ -69,7 +69,7 @@
                         setEventHandled: () => H,
                         setInputPaddingsRem: () => T,
                         setSidePaddingsRem: () => M,
-                        whenTutorialReady: () => V,
+                        whenTutorialReady: () => j,
                     });
                 const l = s('clientResized'),
                     E = { down: s('mousedown'), up: s('mouseup'), move: s('mousemove') };
@@ -287,13 +287,13 @@
                             viewEnv.getExtraSizeRem(e, u);
                         },
                     },
-                    V = Promise.all([
+                    j = Promise.all([
                         new Promise((e) => {
                             window.isDomBuilt ? e() : B.onDomBuilt(e);
                         }),
                         engine.whenReady,
                     ]),
-                    j = { view: i, client: r };
+                    V = { view: i, client: r };
             },
             521: (e, u, t) => {
                 'use strict';
@@ -721,7 +721,7 @@
                     };
                 window.ViewEnvHelper = v;
             },
-            737: (e, u, t) => {
+            452: (e, u, t) => {
                 'use strict';
                 var a = t(179),
                     r = t.n(a);
@@ -1259,9 +1259,9 @@
                         'soundClick',
                         'soundHover',
                     ];
-                function V() {
+                function j() {
                     return (
-                        (V =
+                        (j =
                             Object.assign ||
                             function (e) {
                                 for (var u = 1; u < arguments.length; u++) {
@@ -1270,10 +1270,10 @@
                                 }
                                 return e;
                             }),
-                        V.apply(this, arguments)
+                        j.apply(this, arguments)
                     );
                 }
-                class j extends r().PureComponent {
+                class V extends r().PureComponent {
                     constructor(...e) {
                         super(...e),
                             (this.state = { hover: !1, click: !1 }),
@@ -1327,7 +1327,7 @@
                             D = C()(Y.goto, null == s ? void 0 : s.goto);
                         return r().createElement(
                             'div',
-                            V(
+                            j(
                                 {
                                     className: d,
                                     onMouseEnter: this._onMouseEnter(o),
@@ -1347,7 +1347,7 @@
                         );
                     }
                 }
-                j.defaultProps = { side: 'left', type: 'back', soundHover: 'highlight', soundClick: 'play' };
+                V.defaultProps = { side: 'left', type: 'back', soundHover: 'highlight', soundClick: 'play' };
                 let z;
                 !(function (e) {
                     (e[(e.left = 0)] = 'left'), (e[(e.right = 1)] = 'right');
@@ -1581,7 +1581,6 @@
                         (e.TankmenXpFactor = 'tankmenXPFactor'),
                         (e.FreeXpFactor = 'freeXPFactor'),
                         (e.BattleToken = 'battleToken'),
-                        (e.HBVehicleUnlock = 'hbUnlockVehicles'),
                         (e.PremiumUniversal = 'premium_universal'),
                         (e.Gold = 'gold'),
                         (e.Credits = 'credits'),
@@ -1608,13 +1607,10 @@
                         (e.EpicSelectToken = 'epicSelectToken'),
                         (e.CollectionItem = 'collectionItem'),
                         (e.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
+                        (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
-                        (e.MayEntitlement100 = 'historical_battles_100'),
-                        (e.HistoricalBattleDiscount25 = 'historical_battles_25'),
-                        (e.HistoricalBattleDiscount50 = 'historical_battles_50'),
-                        (e.HistoricalBattleDiscount75 = 'historical_battles_75');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
                 })(de || (de = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -1737,7 +1733,6 @@
                         de.TankmenXpFactor,
                         de.FreeXpFactor,
                         de.BattleToken,
-                        de.HBVehicleUnlock,
                         de.PremiumUniversal,
                         de.NaturalCover,
                         de.BpCoin,
@@ -1750,6 +1745,7 @@
                         de.NewYearInvoice,
                         de.EpicSelectToken,
                         de.Comp7TokenWeeklyReward,
+                        de.Comp7TokenCouponReward,
                         de.BattleBoosterGift,
                         de.CosmicLootboxCommon,
                         de.CosmicLootboxSilver,
@@ -1766,8 +1762,7 @@
                             n = e.icon,
                             i = e.item,
                             s = e.dogTagType,
-                            o = e.iconSmall,
-                            l = ((e) => {
+                            o = ((e) => {
                                 switch (e) {
                                     case Fe.S600x450:
                                         return 'c_600x450';
@@ -1804,9 +1799,6 @@
                                 return 'big' === u
                                     ? e.iconBig.replace('..', 'img://gui')
                                     : e.iconSmall.replace('..', 'img://gui');
-                            case 'hbUnlockVehicles':
-                            default:
-                                return `R.images.gui.maps.icons.quests.bonuses.${u}.${t}`;
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -1818,8 +1810,6 @@
                                 return `R.images.gui.maps.icons.quests.bonuses.${u}.${n}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${u}.${n}`;
-                            case 'entitlements':
-                                return `R.images.gui.maps.icons.quests.bonuses.${u}.${o}`;
                             case 'dogTagComponents':
                                 return ((e, u, t) => {
                                     const a = be[e];
@@ -1836,9 +1826,9 @@
                                     );
                                 })(s, u, n);
                             case 'dossier_badge':
-                                return `R.images.gui.maps.icons.quests.bonuses.badges.${l}.${n}`;
+                                return `R.images.gui.maps.icons.quests.bonuses.badges.${o}.${n}`;
                             case 'dossier_achievement':
-                                return `R.images.gui.maps.icons.achievement.${l}.${n}`;
+                                return `R.images.gui.maps.icons.achievement.${o}.${n}`;
                             case 'xp':
                             case 'xpFactor':
                                 return `R.images.gui.maps.icons.quests.bonuses.${u}.exp`;
@@ -1854,7 +1844,9 @@
                             case 'styleProgressToken':
                                 return `R.images.gui.maps.icons.quests.bonuses.${u}.style_3d`;
                             case 'collectionItem':
-                                return `R.images.gui.maps.icons.collectionItems.${l}.${n}`;
+                                return `R.images.gui.maps.icons.collectionItems.${o}.${n}`;
+                            default:
+                                return `R.images.gui.maps.icons.quests.bonuses.${u}.${t}`;
                         }
                     },
                     Se = (e, u, t) => {
@@ -2311,7 +2303,7 @@
                         fadeIn: 'AdditionalRewards_fadeIn_06',
                         fadeInWithScale: 'AdditionalRewards_fadeInWithScale_9a',
                     },
-                    Ve = () => {
+                    je = () => {
                         const e = ie('model', ne.None),
                             u = e.mainRewards,
                             t = e.additionalRewards.items,
@@ -2396,7 +2388,7 @@
                             ),
                         );
                     },
-                    je = 'MainReward_base_08',
+                    Ve = 'MainReward_base_08',
                     ze = 'MainReward_reward_7c',
                     Xe = 'MainReward_reward__quadruple_19',
                     Ke = 'MainReward_imageWrapper_0a',
@@ -2426,7 +2418,7 @@
                                 return '';
                             },
                             E = (e, u) => ({ backgroundImage: `url(${Te(e, u)})` }),
-                            c = C()(je, t && Je, a && Ze, n && tu);
+                            c = C()(Ve, t && Je, a && Ze, n && tu);
                         return r().createElement(
                             'div',
                             { className: c },
@@ -2507,7 +2499,7 @@
                             r().createElement(
                                 'div',
                                 { className: lu },
-                                r().createElement(j, {
+                                r().createElement(V, {
                                     caption: R.strings.menu.viewHeader.closeBtn.label(),
                                     type: 'close',
                                     side: 'right',
@@ -2532,7 +2524,7 @@
                                         r().createElement('div', { className: d }),
                                         l && r().createElement(su, null),
                                     ),
-                                    E && r().createElement(Ve, null),
+                                    E && r().createElement(je, null),
                                 ),
                                 r().createElement(
                                     'div',
@@ -2626,6 +2618,6 @@
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             t.forEach(u.bind(null, 0)), (t.push = u.bind(null, t.push.bind(t)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [127], () => __webpack_require__(737));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [127], () => __webpack_require__(452));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

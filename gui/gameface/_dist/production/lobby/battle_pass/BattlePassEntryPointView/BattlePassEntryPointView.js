@@ -1404,7 +1404,7 @@
                     };
                 window.ViewEnvHelper = D;
             },
-            3452: (e, t, u) => {
+            6194: (e, t, u) => {
                 'use strict';
                 var a = u(6179),
                     r = u.n(a),
@@ -2388,25 +2388,25 @@
                         (e.DATE_YEAR = 'date-year');
                 })(Fe || (Fe = {}));
                 Date.now();
-                function Ce(e) {
-                    engine.call('PlaySound', e);
-                }
                 ce.Sw.instance;
-                let Be;
+                let Ce;
                 !(function (e) {
                     (e.None = 'None'), (e.Shallow = 'Shallow'), (e.Deep = 'Deep');
-                })(Be || (Be = {}));
+                })(Ce || (Ce = {}));
                 ce.Sw.instance;
-                const be = ge,
-                    Se = [];
-                function De(e) {
+                const Be = ge,
+                    be = [];
+                function Se(e) {
                     const t = (0, a.useRef)(e);
                     return (
                         (0, a.useLayoutEffect)(() => {
                             t.current = e;
                         }),
-                        (0, a.useCallback)((...e) => (0, t.current)(...e), Se)
+                        (0, a.useCallback)((...e) => (0, t.current)(...e), be)
                     );
+                }
+                function De(e) {
+                    engine.call('PlaySound', e);
                 }
                 let fe, ve, we, Le;
                 !(function (e) {
@@ -2460,8 +2460,8 @@
                     Me = 'Blink_base_88',
                     Ie = 'Blink_shadowWrapper_49',
                     xe = 'Blink_blinkWrapper_33',
-                    Ne = 'Blink_blinkInner_82',
-                    Re = 'Blink_blink_68',
+                    Re = 'Blink_blinkInner_82',
+                    Ne = 'Blink_blink_68',
                     ke = (0, Y.Pi)(({ isInfinite: e = !1, children: t }) => {
                         const u = ie().model.root.get().isSmall,
                             a = e ? 'infinite' : 1;
@@ -2485,8 +2485,8 @@
                                 },
                                 r().createElement(
                                     'div',
-                                    { className: Ne, style: { animationIterationCount: a } },
-                                    r().createElement('div', { className: Re }),
+                                    { className: Re, style: { animationIterationCount: a } },
+                                    r().createElement('div', { className: Ne }),
                                 ),
                             ),
                             t,
@@ -2515,7 +2515,6 @@
                         (e.TankmenXpFactor = 'tankmenXPFactor'),
                         (e.FreeXpFactor = 'freeXPFactor'),
                         (e.BattleToken = 'battleToken'),
-                        (e.HBVehicleUnlock = 'hbUnlockVehicles'),
                         (e.PremiumUniversal = 'premium_universal'),
                         (e.Gold = 'gold'),
                         (e.Credits = 'credits'),
@@ -2542,13 +2541,10 @@
                         (e.EpicSelectToken = 'epicSelectToken'),
                         (e.CollectionItem = 'collectionItem'),
                         (e.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
+                        (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
-                        (e.MayEntitlement100 = 'historical_battles_100'),
-                        (e.HistoricalBattleDiscount25 = 'historical_battles_25'),
-                        (e.HistoricalBattleDiscount50 = 'historical_battles_50'),
-                        (e.HistoricalBattleDiscount75 = 'historical_battles_75');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
                 })(We || (We = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -2670,7 +2666,6 @@
                     We.TankmenXpFactor,
                     We.FreeXpFactor,
                     We.BattleToken,
-                    We.HBVehicleUnlock,
                     We.PremiumUniversal,
                     We.NaturalCover,
                     We.BpCoin,
@@ -2683,6 +2678,7 @@
                     We.NewYearInvoice,
                     We.EpicSelectToken,
                     We.Comp7TokenWeeklyReward,
+                    We.Comp7TokenCouponReward,
                     We.BattleBoosterGift,
                     We.CosmicLootboxCommon,
                     We.CosmicLootboxSilver,
@@ -2830,7 +2826,7 @@
                         const t = (0, a.useMemo)(() => ({ emblem: _t }), []);
                         return (
                             (0, a.useEffect)(() => {
-                                Ce('bp_attention_widget');
+                                De('bp_attention_widget');
                             }, []),
                             r().createElement(
                                 'div',
@@ -3077,7 +3073,7 @@
                                 });
                             }, [u, t]),
                             w = (0, a.useCallback)(() => {
-                                Ce('bp_levelup_widget'),
+                                De('bp_levelup_widget'),
                                     p(!0),
                                     A({
                                         from: t > u.level ? 99 : 0,
@@ -3150,8 +3146,8 @@
                             r().createElement(it, It({}, e, { stateClasses: a, duration: 200 })),
                         );
                     },
-                    Nt = 'StateMouseOver_base_95',
-                    Rt = 'StateMouseOver_flag_34',
+                    Rt = 'StateMouseOver_base_95',
+                    Nt = 'StateMouseOver_flag_34',
                     kt = 'StateMouseOver_emblem_aa',
                     Ht = 'StateMouseOver_chapterLogoIcon_a8',
                     Ut = 'StateMouseOver_base__medium_d1',
@@ -3174,14 +3170,14 @@
                 const jt = (e) => {
                         const t = e.scale,
                             u = L().mediaSize,
-                            n = { emblem: kt, flag: Rt, chapterLogoIcon: Ht, freePoints: Gt };
+                            n = { emblem: kt, flag: Nt, chapterLogoIcon: Ht, freePoints: Gt };
                         return (
                             (0, a.useEffect)(() => {
-                                Ce('highlight');
+                                De('highlight');
                             }, []),
                             r().createElement(
                                 'div',
-                                { className: b()(Nt, u <= f.Small && 2 === t && Wt, u > f.Small && Ut) },
+                                { className: b()(Rt, u <= f.Small && 2 === t && Wt, u > f.Small && Ut) },
                                 r().createElement(it, $t({}, e, { stateClasses: n })),
                             )
                         );
@@ -3258,7 +3254,7 @@
                                 [],
                             );
                         (0, a.useEffect)(() => {
-                            Ce(t || u === Ze.Tj.NOT_CHOSEN ? 'bp_show_widget' : 'bp_show_widget_02');
+                            De(t || u === Ze.Tj.NOT_CHOSEN ? 'bp_show_widget' : 'bp_show_widget_02');
                         }, [t, u]);
                         const o = u === Ze.Tj.COMPLETED;
                         return r().createElement(
@@ -3501,8 +3497,8 @@
                             M = T[0],
                             I = T[1],
                             x = (0, a.useState)(h),
-                            N = x[0],
-                            R = x[1],
+                            R = x[0],
+                            N = x[1],
                             k = (0, a.useState)(d),
                             H = k[0],
                             U = k[1],
@@ -3525,7 +3521,7 @@
                                 return (e) => u(e);
                             })('collection'),
                             K = s !== _e.DISABLED,
-                            Z = be(q),
+                            Z = Be(q),
                             Q = (() => {
                                 const e = (0, a.useState)(i.O.view.getScale()),
                                     t = e[0],
@@ -3590,7 +3586,7 @@
                                     I(iu.MOUSE_OUT),
                                     V([]),
                                     $(!1),
-                                    Ce('play'),
+                                    De('play'),
                                     Y({
                                         item: ve.BattlePassCollectionEntryPoint,
                                         action: we.Click,
@@ -3610,12 +3606,12 @@
                                 U(d);
                             }, [d, A, c]),
                             (0, a.useEffect)(() => {
-                                h !== N && R(h);
-                            }, [N, h, M]);
-                        const Ae = De(() => {
+                                h !== R && N(h);
+                            }, [R, h, M]);
+                        const Ae = Se(() => {
                                 I(iu.MOUSE_OVER), V([]);
                             }),
-                            ge = De(() => {
+                            ge = Se(() => {
                                 I(iu.MOUSE_OUT), V([]);
                             }),
                             pe = ((e, t, u, r) => {
@@ -3677,7 +3673,7 @@
                                         z(!1);
                                     }, 800));
                             }, [Z, q]);
-                        const Be = (0, a.useCallback)(() => {
+                        const Ce = (0, a.useCallback)(() => {
                                 (M === Eu(O, H, o, l) &&
                                     M !== iu.LEVEL_UP &&
                                     M !== iu.LEVEL_DOWN &&
@@ -3685,15 +3681,15 @@
                                     M !== iu.SHOW) ||
                                     V((e) => (e.length > 1 ? (I(e[1]), e.slice(1)) : (U(se.NORMAL), [])));
                             }, [V, O, H, o, l, M]),
-                            Se = (0, a.useMemo)(() => {
+                            be = (0, a.useMemo)(() => {
                                 const e = Ee(),
                                     t = {
                                         chapterID: g,
                                         isSmall: _,
                                         isMouseOver: G,
                                         progressInfo: { level: o, to: c, from: c },
-                                        hasBattlePass: N,
-                                        onFinish: Be,
+                                        hasBattlePass: R,
+                                        onFinish: Ce,
                                         progressionState: e,
                                         notChosenRewardCount: F,
                                         isSeasonWaiting: s === _e.SEASON_WAITING,
@@ -3741,7 +3737,7 @@
                                     case iu.CHAPTER_NOT_CHOSEN:
                                         return r().createElement(Ct, _u({}, t, { isFirstShow: O }));
                                 }
-                            }, [Ee, g, _, G, o, c, N, Be, F, s, B, S, Q, q, D, w, M, l, v, E, O]);
+                            }, [Ee, g, _, G, o, c, R, Ce, F, s, B, S, Q, q, D, w, M, l, v, E, O]);
                         return r().createElement(
                             he,
                             { contentId: ue, decoratorId: ae, args: re },
@@ -3760,7 +3756,7 @@
                                     r().createElement(
                                         'div',
                                         { className: b()(su.componentWrapper, X && su.componentWrapper__hidden) },
-                                        Se,
+                                        be,
                                     ),
                                 ),
                             ),
@@ -4448,6 +4444,6 @@
                 u = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             u.forEach(t.bind(null, 0)), (u.push = t.bind(null, u.push.bind(u)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [519], () => __webpack_require__(3452));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [519], () => __webpack_require__(6194));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

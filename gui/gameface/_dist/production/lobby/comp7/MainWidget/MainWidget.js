@@ -1445,7 +1445,7 @@
                 })(du || (du = {}));
                 const Bu = ({ rank: u, size: e, division: t, className: a }) => {
                         const i = (0, n.useMemo)(() => {
-                            const n = R.images.gui.maps.icons.comp7.ranks.$num(e),
+                            const n = R.images.comp7.gui.maps.icons.comp7.ranks.$num(e),
                                 r = Du(u) && void 0 !== t ? `_${Eu(t)}` : '';
                             return { backgroundImage: `url(${n.$dyn(`${Au(u)}${r}`)})`, '--imageSize': `${e}rem` };
                         }, [u, e, t]);

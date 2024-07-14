@@ -252,7 +252,7 @@
 .Progress_dash_32 {
     width: 66rem;
     height: 31rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.light_dash') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.light_dash') no-repeat center / cover;
 }
 .Progress_dash__right_fb {
     transform: rotate(180deg);
@@ -369,7 +369,7 @@
 .QualificationCounter_dash_e2 {
     width: 66rem;
     height: 32rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.light_dash') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.light_dash') no-repeat center / cover;
 }
 .QualificationCounter_dash__right_3e {
     transform: rotate(180deg);
@@ -383,7 +383,7 @@
 .QualificationCounter_battleIcon_2e {
     width: 42rem;
     height: 42rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.battles_42x42') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.battles_42x42') no-repeat center / cover;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -408,7 +408,7 @@
     align-items: center;
 }
 .Qualification_qualificationEmblem_01 {
-    background: url('R.images.gui.maps.icons.comp7.ranks.c_150.qualification') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.ranks.c_150.qualification') no-repeat center / cover;
 }
 .Qualification_ratingCalculation_8f {
     display: flex;
@@ -424,7 +424,7 @@
     width: 33rem;
     height: 33rem;
     margin: -7rem -5rem 0 -10rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.timer') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.timer') no-repeat center / cover;
     filter: drop-shadow(0rem 0rem 4rem rgba(255, 127, 0, 0.25)) drop-shadow(0rem 0rem 8rem #ff2a00);
 }
 
@@ -440,7 +440,7 @@
 .Warning_lighting_e0 {
     width: 111rem;
     height: 58rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.lighting') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.lighting') no-repeat center / cover;
     opacity: 0.6;
     position: absolute;
     top: -12rem;
@@ -463,7 +463,7 @@
     width: 30rem;
     height: 30rem;
     margin: 0 -10rem -2rem -5rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.timer') no-repeat center / cover;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.timer') no-repeat center / cover;
     position: relative;
 }
 

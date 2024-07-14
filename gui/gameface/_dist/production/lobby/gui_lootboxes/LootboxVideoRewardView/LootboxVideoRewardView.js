@@ -731,13 +731,6 @@
                             (u.SYMBOL_LOCK = 'SymbolLock');
                     })(a || (a = {}));
             },
-            7727: (u, e, t) => {
-                'use strict';
-                function r(u) {
-                    engine.call('PlaySound', u);
-                }
-                t.d(e, { G: () => r });
-            },
             3649: (u, e, t) => {
                 'use strict';
                 let r;
@@ -1105,7 +1098,7 @@
                     };
                 window.ViewEnvHelper = f;
             },
-            6224: (u, e, t) => {
+            3373: (u, e, t) => {
                 'use strict';
                 var r = t(7739),
                     a = t(6179),
@@ -1210,9 +1203,11 @@
                         }
                     }, [e, u, t]);
                 }
-                var f = t(7727),
-                    p = t(3403),
-                    x = t(9883);
+                function f(u) {
+                    engine.call('PlaySound', u);
+                }
+                var p = t(3403),
+                    x = t(3644);
                 function L() {
                     return !1;
                 }
@@ -1540,7 +1535,7 @@
                         ),
                         T = (0, a.useCallback)(
                             (u) => {
-                                i || (null !== o && (0, f.G)(o), l && l(u), x(!0));
+                                i || (null !== o && f(o), l && l(u), x(!0));
                             },
                             [i, o, l],
                         ),
@@ -1558,7 +1553,7 @@
                         ),
                         H = (0, a.useCallback)(
                             (u) => {
-                                i || (null !== A && (0, f.G)(A), d && d(u), t && L(), w(!0));
+                                i || (null !== A && f(A), d && d(u), t && L(), w(!0));
                             },
                             [i, A, d, L, t],
                         ),
@@ -1759,7 +1754,7 @@
                                     setTimeout(() => {
                                         c(!1);
                                     }, 350),
-                                    (0, f.G)(R.sounds.ny2024_video_lootbox_tank_default()));
+                                    f(R.sounds.ny2024_video_lootbox_tank_default()));
                             }, [i]),
                             (P = e.close),
                             b(v.n.ESCAPE, P),
@@ -1821,7 +1816,7 @@
                     );
                 });
             },
-            9883: (u, e, t) => {
+            3644: (u, e, t) => {
                 'use strict';
                 t.d(e, { n: () => c });
                 var r = t(6483),
@@ -1847,7 +1842,6 @@
                 var o = t(4179);
                 let A;
                 Date.now(),
-                    t(7727),
                     t(3138),
                     t(6536),
                     o.Sw.instance,
@@ -2042,6 +2036,6 @@
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             t.forEach(e.bind(null, 0)), (t.push = e.bind(null, t.push.bind(t)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [503], () => __webpack_require__(6224));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [503], () => __webpack_require__(3373));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

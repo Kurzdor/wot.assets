@@ -701,7 +701,7 @@
                     };
                 window.ViewEnvHelper = p;
             },
-            395: (u, e, t) => {
+            703: (u, e, t) => {
                 var r = t(179),
                     n = t.n(r),
                     i = t(493),
@@ -1227,20 +1227,9 @@
                     );
                 let X;
                 !(function (u) {
-                    (u.backport = 'backport'), (u.unbound = 'unbound'), (u.normal = 'normal'), (u.absent = 'absent');
+                    (u.backport = 'backport'), (u.normal = 'normal'), (u.absent = 'absent');
                 })(X || (X = {}));
-                const Z = (u, e) => ({
-                        isEnabled: u !== X.absent,
-                        args: e,
-                        contentId: R.views.dialogs.common.DialogTemplateGenericTooltip('resId'),
-                        decoratorId:
-                            u === X.unbound
-                                ? R.views.common.tooltip_window.tooltip_window.TooltipWindow('resId')
-                                : void 0,
-                        ignoreShowDelay: u === X.backport,
-                        ignoreMouseClick: !0,
-                    }),
-                    Q = {
+                const Z = {
                         base: 'CurrencyItem_base_32',
                         base__credits: 'CurrencyItem_base__credits_39',
                         base__gold: 'CurrencyItem_base__gold_bb',
@@ -1249,22 +1238,36 @@
                         base__freeXP: 'CurrencyItem_base__freeXP_03',
                         base__equipCoin: 'CurrencyItem_base__equipCoin_fd',
                     },
-                    J = ({ value: u, currencyType: e, isWGMAvailable: t, tooltip: r }) => {
+                    Q = ({ value: u, currencyType: e, isWGMAvailable: t, tooltip: r }) => {
                         const i = e === P.gold ? 'gold' : 'integral',
-                            a = Z(r.type, { currency: e });
+                            a =
+                                ((A = r.type),
+                                (F = { currency: e }),
+                                {
+                                    isEnabled: A !== X.absent,
+                                    args: F,
+                                    contentId: R.views.dialogs.common.DialogTemplateGenericTooltip('resId'),
+                                    decoratorId:
+                                        A === X.normal
+                                            ? R.views.common.tooltip_window.tooltip_window.TooltipWindow('resId')
+                                            : void 0,
+                                    ignoreShowDelay: A === X.backport,
+                                    ignoreMouseClick: !0,
+                                });
+                        var A, F;
                         return n().createElement(
                             V,
                             a,
                             n().createElement(
                                 'span',
-                                { className: I()(Q.base, Q[`base__${e}`]) },
-                                n().createElement('div', { className: Q.icon }),
+                                { className: I()(Z.base, Z[`base__${e}`]) },
+                                n().createElement('div', { className: Z.icon }),
                                 t ? n().createElement(G, { value: u, format: i }) : n().createElement($, null),
                             ),
                         );
                     },
-                    uu = 'MoneyBalanceApp_base_80',
-                    eu = () => {
+                    J = 'MoneyBalanceApp_base_80',
+                    uu = () => {
                         const u = L(),
                             e = u.gold,
                             t = u.credits,
@@ -1279,9 +1282,9 @@
                             l = L('model.equipCoinTooltip');
                         return n().createElement(
                             'div',
-                            { className: uu },
+                            { className: J },
                             -1 !== r &&
-                                n().createElement(J, {
+                                n().createElement(Q, {
                                     key: P.crystal,
                                     value: r,
                                     currencyType: P.crystal,
@@ -1289,7 +1292,7 @@
                                     tooltip: F,
                                 }),
                             -1 !== e &&
-                                n().createElement(J, {
+                                n().createElement(Q, {
                                     key: P.gold,
                                     value: e,
                                     currencyType: P.gold,
@@ -1297,7 +1300,7 @@
                                     tooltip: E,
                                 }),
                             -1 !== t &&
-                                n().createElement(J, {
+                                n().createElement(Q, {
                                     key: P.credits,
                                     value: t,
                                     currencyType: P.credits,
@@ -1305,7 +1308,7 @@
                                     tooltip: o,
                                 }),
                             -1 !== i &&
-                                n().createElement(J, {
+                                n().createElement(Q, {
                                     key: P.freeXP,
                                     value: i,
                                     currencyType: P.freeXP,
@@ -1313,7 +1316,7 @@
                                     tooltip: s,
                                 }),
                             -1 !== a &&
-                                n().createElement(J, {
+                                n().createElement(Q, {
                                     key: P.equipCoin,
                                     value: a,
                                     currencyType: P.equipCoin,
@@ -1324,7 +1327,7 @@
                     };
                 engine.whenReady.then(() => {
                     a().render(
-                        n().createElement(h, null, n().createElement(eu, null)),
+                        n().createElement(h, null, n().createElement(uu, null)),
                         document.getElementById('root'),
                     );
                 });
@@ -1406,6 +1409,6 @@
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             t.forEach(e.bind(null, 0)), (t.push = e.bind(null, t.push.bind(t)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [573], () => __webpack_require__(395));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [573], () => __webpack_require__(703));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

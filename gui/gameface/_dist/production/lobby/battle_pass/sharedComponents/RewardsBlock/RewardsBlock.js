@@ -254,7 +254,6 @@
                             (u.TankmenXpFactor = 'tankmenXPFactor'),
                             (u.FreeXpFactor = 'freeXPFactor'),
                             (u.BattleToken = 'battleToken'),
-                            (u.HBVehicleUnlock = 'hbUnlockVehicles'),
                             (u.PremiumUniversal = 'premium_universal'),
                             (u.Gold = 'gold'),
                             (u.Credits = 'credits'),
@@ -281,13 +280,10 @@
                             (u.EpicSelectToken = 'epicSelectToken'),
                             (u.CollectionItem = 'collectionItem'),
                             (u.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
+                            (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
                             (u.CosmicLootboxSilver = 'lootBoxToken'),
-                            (u.CosmicLootboxCommon = 'cosmic_2024_2'),
-                            (u.MayEntitlement100 = 'historical_battles_100'),
-                            (u.HistoricalBattleDiscount25 = 'historical_battles_25'),
-                            (u.HistoricalBattleDiscount50 = 'historical_battles_50'),
-                            (u.HistoricalBattleDiscount75 = 'historical_battles_75');
+                            (u.CosmicLootboxCommon = 'cosmic_2024_2');
                     })(i || (i = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -403,7 +399,6 @@
                     i.E4.TankmenXpFactor,
                     i.E4.FreeXpFactor,
                     i.E4.BattleToken,
-                    i.E4.HBVehicleUnlock,
                     i.E4.PremiumUniversal,
                     i.E4.NaturalCover,
                     i.E4.BpCoin,
@@ -416,6 +411,7 @@
                     i.E4.NewYearInvoice,
                     i.E4.EpicSelectToken,
                     i.E4.Comp7TokenWeeklyReward,
+                    i.E4.Comp7TokenCouponReward,
                     i.E4.BattleBoosterGift,
                     i.E4.CosmicLootboxCommon,
                     i.E4.CosmicLootboxSilver,
@@ -614,7 +610,7 @@
                         setEventHandled: () => g,
                         setInputPaddingsRem: () => F,
                         setSidePaddingsRem: () => s,
-                        whenTutorialReady: () => f,
+                        whenTutorialReady: () => T,
                     });
                 var i = t(3722),
                     r = t(6112),
@@ -687,7 +683,7 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    f = Promise.all([
+                    T = Promise.all([
                         new Promise((u) => {
                             window.isDomBuilt ? u() : E.U.onDomBuilt(u);
                         }),

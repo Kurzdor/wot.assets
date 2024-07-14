@@ -3359,7 +3359,7 @@
                         );
                     };
             },
-            952: (e, t, n) => {
+            5562: (e, t, n) => {
                 var a = {};
                 n.r(a),
                     n.d(a, {
@@ -10076,7 +10076,6 @@
                         close__small: 'SetupApp_close__small_61',
                         content: 'SetupApp_content_65',
                         content__compare: 'SetupApp_content__compare_6e',
-                        content__invisible: 'SetupApp_content__invisible_9a',
                         content__shown: 'SetupApp_content__shown_dd',
                         'show-app': 'SetupApp_show-app_00',
                         content__hidden: 'SetupApp_content__hidden_78',
@@ -10110,29 +10109,26 @@
                                     );
                             }, [v]);
                         const f = u()(_.base, a && _.base__shown, g ? _.base__compare : _.base__setup),
-                            A = u()(
-                                _.content,
-                                g && _.content__compare,
-                                !a && !h.current && _.content__invisible,
-                                _['content__' + (a ? 'shown' : 'hidden')],
-                            ),
-                            C = u()(_.close, E && _[`close__${E}`], !a && _.close__hidden);
+                            A = u()(_.content, g && _.content__compare, _['content__' + (a ? 'shown' : 'hidden')]),
+                            C = !a && !h.current,
+                            F = u()(_.close, E && _[`close__${E}`]);
                         return c().createElement(
                             'div',
                             { className: f },
                             g && c().createElement('div', { className: _.back }),
                             n,
-                            c().createElement(
-                                'div',
-                                { id: 'setup-app-close-btn', className: C },
-                                c().createElement(r.A, {
-                                    caption: R.strings.menu.viewHeader.closeBtn.label(),
-                                    type: 'close',
-                                    side: 'right',
-                                    onClick: p,
-                                }),
-                            ),
-                            c().createElement('div', { id: 'setup-content', ref: b, className: A }, e),
+                            a &&
+                                c().createElement(
+                                    'div',
+                                    { id: 'setup-app-close-btn', className: F },
+                                    c().createElement(r.A, {
+                                        caption: R.strings.menu.viewHeader.closeBtn.label(),
+                                        type: 'close',
+                                        side: 'right',
+                                        onClick: p,
+                                    }),
+                                ),
+                            !C && c().createElement('div', { id: 'setup-content', ref: b, className: A }, e),
                             t && c().createElement('div', { className: _.panel }, t),
                         );
                     };
@@ -10967,6 +10963,6 @@
                 n = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             n.forEach(t.bind(null, 0)), (n.push = t.bind(null, n.push.bind(n)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [727], () => __webpack_require__(952));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [727], () => __webpack_require__(5562));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();
