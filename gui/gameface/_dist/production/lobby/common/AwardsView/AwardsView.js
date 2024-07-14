@@ -1610,7 +1610,8 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.RacesPoint = 'races_point');
                 })(de || (de = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -1751,7 +1752,7 @@
                         de.CosmicLootboxSilver,
                     ],
                     pe = [de.Gold, de.Credits, de.Crystal, de.FreeXp],
-                    we = [de.BattlePassPoints],
+                    we = [de.BattlePassPoints, de.RacesPoint],
                     ve = [de.PremiumPlus, de.Premium],
                     be = ['engravings', 'backgrounds'],
                     fe = ['engraving', 'background'],
@@ -1796,9 +1797,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${u}.${n}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === u
-                                    ? e.iconBig.replace('..', 'img://gui')
-                                    : e.iconSmall.replace('..', 'img://gui');
+                                return ((e, u) => {
+                                    switch (u) {
+                                        case Fe.Big:
+                                            return e.iconBig.replace('..', 'img://gui');
+                                        case Fe.Small:
+                                            return e.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${u}.${e.icon}`;
+                                    }
+                                })(e, u);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':

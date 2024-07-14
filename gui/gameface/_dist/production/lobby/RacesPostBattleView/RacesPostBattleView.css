@@ -1,0 +1,3058 @@
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+.TextButton_icon__forward_59 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
+.TextButton_icon__close_53 {
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
+.TextButton_icon__info_33 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_glow_a4 {
+    opacity: 0;
+}
+.TextButton_caption_82 {
+    position: relative;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
+}
+.TextButton_caption__back_b9,
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
+.TextButton_caption__info_23 {
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+    margin-left: 8rem;
+}
+.TextButton_base__right_39 .TextButton_goto_e7 {
+    margin-right: 8rem;
+}
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity 0.16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+    left: -4rem;
+}
+.TextButton_base__right_39 .TextButton_shine_e2 {
+    right: -4rem;
+    transform: rotate(180deg);
+}
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_shine_e2 {
+    opacity: 0;
+}
+
+.App_base_9e {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: url('R.images.races.gui.maps.icons.postBattle.postBattleBg') no-repeat center / cover;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.App_base__victory_4b {
+    background-image: url('R.images.races.gui.maps.icons.postBattle.postBattleBgVictory');
+}
+
+.App_header_01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70rem;
+    margin-top: 30rem;
+}
+
+.App_switchView_c0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 336rem;
+    height: 32rem;
+}
+
+.mediaMedium .App_switchView_c0 {
+    width: 500rem;
+    height: 45rem;
+}
+
+.App_close_7b {
+    display: flex;
+    position: absolute;
+    right: 32rem;
+}
+
+.App_footer_59 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75rem;
+    position: absolute;
+    bottom: 40rem;
+}
+
+.App_battleInfo_34 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 54rem;
+    padding: 7rem;
+    background: rgba(18, 18, 18, 0.4);
+    position: absolute;
+    bottom: 10rem;
+    left: 10rem;
+}
+
+.App_finishTime_ca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App_finishText_7c {
+    color: rgba(153, 153, 153, 1);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-right: 5rem;
+}
+
+.App_finishTimeStamp_68 {
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.App_racesInfo_4e {
+    color: #f2f2f7;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.App_button_92 {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(242, 242, 242, 1);
+    position: relative;
+}
+
+.App_texture_a2 {
+    width: 100%;
+    height: 100%;
+    background-image: url('R.images.races.gui.maps.icons.hangar.Carousel.bgDisabled');
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.App_texture_a2:hover {
+    opacity: 0;
+}
+
+.App_leaveButton_66 {
+    color: #000000;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    min-width: 160rem;
+    height: 32rem;
+    padding-bottom: 3rem;
+    border: none;
+    border-left: 4rem solid #ff5000;
+    outline: none;
+    background-repeat: repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.App_leaveButton_66:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    background-image: url('R.images.races.gui.maps.icons.hangar.Carousel.bgDisabled');
+}
+
+.App_leaveButton_container_57 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box_mt__XS_0c {
+    margin-top: 4rem;
+}
+.Box_mt__SM_eb {
+    margin-top: 8rem;
+}
+.Box_mt__SMp_cf {
+    margin-top: 10rem;
+}
+.Box_mt__MD_25 {
+    margin-top: 16rem;
+}
+.Box_mt__MDp_49 {
+    margin-top: 20rem;
+}
+.Box_mt__LG_e8 {
+    margin-top: 32rem;
+}
+.Box_mt__XL_83 {
+    margin-top: 64rem;
+}
+
+.Box_mr__XS_7c {
+    margin-right: 4rem;
+}
+
+.Box_mr__SM_08 {
+    margin-right: 8rem;
+}
+
+.Box_mr__SMp_06 {
+    margin-right: 10rem;
+}
+
+.Box_mr__MD_4a {
+    margin-right: 16rem;
+}
+
+.Box_mr__MDp_b6 {
+    margin-right: 20rem;
+}
+
+.Box_mr__LG_d0 {
+    margin-right: 32rem;
+}
+
+.Box_mr__XL_db {
+    margin-right: 64rem;
+}
+
+.Box_mb__XS_bb {
+    margin-bottom: 4rem;
+}
+
+.Box_mb__SM_83 {
+    margin-bottom: 8rem;
+}
+
+.Box_mb__SMp_04 {
+    margin-bottom: 10rem;
+}
+
+.Box_mb__MD_ed {
+    margin-bottom: 16rem;
+}
+
+.Box_mb__MDp_65 {
+    margin-bottom: 20rem;
+}
+
+.Box_mb__LG_c8 {
+    margin-bottom: 32rem;
+}
+
+.Box_mb__XL_f8 {
+    margin-bottom: 64rem;
+}
+
+.Box_ml__XS_8a {
+    margin-left: 4rem;
+}
+
+.Box_ml__SM_e6 {
+    margin-left: 8rem;
+}
+
+.Box_ml__SMp_fb {
+    margin-left: 10rem;
+}
+
+.Box_ml__MD_2b {
+    margin-left: 16rem;
+}
+
+.Box_ml__MDp_c7 {
+    margin-left: 20rem;
+}
+
+.Box_ml__LG_39 {
+    margin-left: 32rem;
+}
+
+.Box_ml__XL_4a {
+    margin-left: 64rem;
+}
+
+/* eslint-disable-next-line expectedscss*/
+.Text_paragraph-P10_2c {
+    font-size: 10rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_paragraph-P12_22 {
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Text_paragraph-P14_a7 {
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Text_paragraph-P16_90 {
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Text_paragraph-P18_50 {
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Text_paragraph-P24_33 {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 32rem;
+}
+.Text_heading-H14_8b {
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.Text_heading-H15_9e {
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.Text_heading-H18_b7 {
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H20R_f6 {
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H22_27 {
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H24R_be {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H24_0c {
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H28_78 {
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H36_32 {
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H56_c3 {
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H73_8f {
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H144_a9 {
+    font-size: 144rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.Text_BLACK_REAL_30 {
+    color: #000000;
+}
+.Text_WHITE_REAL_bc {
+    color: #ffffff;
+}
+.Text_WHITE_62 {
+    color: #f2f2f7;
+}
+.Text_WHITE_ORANGE_54 {
+    color: #fefeec;
+}
+.Text_WHITE_SPANISH_df {
+    color: #e9e2bf;
+}
+.Text_PAR_15 {
+    color: #8c8c7e;
+}
+.Text_PAR_SECONDARY_5d {
+    color: #595950;
+}
+.Text_PAR_TERTIARY_c9 {
+    color: #37362e;
+}
+.Text_INFO_RED_30 {
+    color: #ff0000;
+}
+.Text_RED_66 {
+    color: #ff2717;
+}
+.Text_RED_DARK_d8 {
+    color: #b70000;
+}
+.Text_YELLOW_ed {
+    color: #feab34;
+}
+.Text_ORANGE_be {
+    color: #ee7000;
+}
+.Text_CREAM_57 {
+    color: #ffdd99;
+}
+.Text_BROWN_18 {
+    color: #cbac77;
+}
+.Text_GREEN_BRIGHT_3f {
+    color: #80d43a;
+}
+.Text_GREEN_e3 {
+    color: #7ab300;
+}
+.Text_GREEN_DARK_f1 {
+    color: #497212;
+}
+.Text_BLUE_BOOSTER_21 {
+    color: #ccffff;
+}
+.Text_BLUE_TEAMKILLER_ab {
+    color: #09e2ff;
+}
+.Text_CRED_f7 {
+    color: #ced9d9;
+}
+.Text_GOLD_28 {
+    color: #ffc363;
+}
+.Text_BOND_be {
+    color: #c9c9b6;
+}
+.Text_PROM_65 {
+    color: #a29b70;
+}
+
+.HeaderTab_base_53 {
+    color: #f2f2f7;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32rem;
+    border-top: 4rem solid rgba(255, 255, 255, 0.3);
+    background: rgba(18, 18, 18, 0.6);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.mediaMedium .HeaderTab_base_53 {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+    height: 44rem;
+}
+
+.HeaderTab_base_53:hover {
+    border-top: 4rem solid rgba(255, 255, 255, 0.45);
+    background: rgba(18, 18, 18, 0.3);
+}
+
+.HeaderTab_base__active_fd {
+    color: #000000;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    border-top: 4rem solid #ff5000;
+    background: rgba(255, 255, 255, 1);
+}
+
+.mediaMedium .HeaderTab_base__active_fd {
+    color: #000000;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.HeaderTab_base__active_fd:hover {
+    border-top: 4rem solid rgba(210, 90, 18, 1);
+    background: rgba(255, 255, 255, 1);
+    cursor: default;
+}
+
+.HeaderTab_content_0a {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    position: relative;
+}
+
+.HeaderTab_text_98 {
+    margin: 3rem 24rem 4rem;
+}
+
+.mediaMedium .HeaderTab_text_98 {
+    margin: 6rem 24rem 8rem;
+}
+
+.HeaderTab_texture_97 {
+    width: 100%;
+    height: 100%;
+    background-image: url('R.images.races.gui.maps.icons.hangar.Carousel.bgDisabled');
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Reward_base_ea {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.Reward_base__s48x48_46,
+.Reward_base__small_c0 {
+    width: 48rem;
+    height: 48rem;
+}
+
+.Reward_base__s80x80_ce,
+.Reward_base__big_e5 {
+    width: 80rem;
+    height: 80rem;
+}
+
+.Reward_base__s128x100_c3 {
+    width: 128rem;
+    height: 100rem;
+}
+
+.Reward_base__s180x135_7c {
+    width: 180rem;
+    height: 135rem;
+}
+
+.Reward_base__s232x174_67 {
+    width: 232rem;
+    height: 174rem;
+}
+
+.Reward_base__s296x222_78 {
+    width: 296rem;
+    height: 222rem;
+}
+
+.Reward_base__s400x300_07 {
+    width: 400rem;
+    height: 300rem;
+}
+
+.Reward_base__s600x450_f8 {
+    width: 600rem;
+    height: 450rem;
+}
+
+.Reward_tooltipWrapper_b5 {
+    height: 100%;
+}
+
+.Reward_icon_df {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.Reward_overlay_68 {
+    background: no-repeat center / 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.Reward_base__s48x48_46 .Reward_overlay_68,
+.Reward_base__small_c0 .Reward_overlay_68 {
+    width: 96rem;
+    height: 96rem;
+    background-size: 100%;
+    overflow: visible;
+}
+
+.Reward_base__s80x80_ce .Reward_overlay_68,
+.Reward_base__big_e5 .Reward_overlay_68 {
+    width: 128rem;
+    height: 128rem;
+}
+
+.Reward_base__s180x135_7c .Reward_overlay_68 {
+    width: 266rem;
+    height: 241rem;
+}
+
+.Reward_base__s232x174_67 .Reward_overlay_68 {
+    width: 344rem;
+    height: 312rem;
+}
+
+.Reward_base__s296x222_78 .Reward_overlay_68 {
+    width: 450rem;
+    height: 408rem;
+}
+
+.Reward_base__s400x300_07 .Reward_overlay_68 {
+    width: 618rem;
+    height: 590rem;
+}
+
+.Reward_base__s600x450_f8 .Reward_overlay_68 {
+    width: 670rem;
+    height: 575rem;
+}
+
+.Reward_highlight_36 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 0;
+}
+
+.Reward_image_89 {
+    position: relative;
+}
+
+.Reward_info_72 {
+    margin-top: -13rem;
+    color: #e9e2bf;
+    font-size: 14rem;
+    line-height: 18rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_info_72,
+.Reward_base__small_c0 .Reward_info_72 {
+    margin: -10rem -10rem 0;
+}
+
+.Reward_info__multi_63 {
+    margin-right: 2rem;
+    text-align: right;
+}
+
+.Reward_base__s48x48_46 .Reward_info__multi_63,
+.Reward_base__small_c0 .Reward_info__multi_63 {
+    margin-right: 0;
+}
+
+.Reward_info__credits_ef {
+    color: #e9e2bf;
+}
+
+.Reward_info__gold_36 {
+    color: #ffc363;
+}
+
+.Reward_info__crystal_36 {
+    color: #c9c9b6;
+}
+
+.Reward_info__premiumTank_d3 {
+    color: #ffdd99;
+}
+
+.Reward_timer_d3 {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_timer_d3,
+.Reward_base__small_c0 .Reward_timer_d3 {
+    width: 23rem;
+    height: 23rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
+    top: -6rem;
+    right: -6rem;
+}
+
+.Reward_base__s80x80_ce .Reward_timer_d3,
+.Reward_base__big_e5 .Reward_timer_d3 {
+    width: 48rem;
+    height: 48rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
+    top: -14rem;
+    right: -14rem;
+}
+
+.App_base_cd {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+}
+
+.App_bg_fb,
+.App_completedBg_76 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.App_bg_fb {
+    background: url('R.images.races.gui.maps.icons.progression.common_bg') no-repeat center / cover;
+}
+
+.App_completedBg_76 {
+    background: url('R.images.races.gui.maps.icons.progression.progression.completedBg') no-repeat center / cover;
+}
+
+.App_completedContainer_88 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 230rem;
+    position: relative;
+}
+
+.mediaMedium .App_completedContainer_88 {
+    height: 250rem;
+}
+
+.mediaLarge .App_completedContainer_88 {
+    height: 390rem;
+}
+
+.App_flagContainer_ac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700rem;
+    height: 100%;
+    position: relative;
+}
+
+.mediaMedium .App_flagContainer_ac {
+    width: 950rem;
+}
+
+.mediaLarge .App_flagContainer_ac {
+    width: 1300rem;
+}
+
+.App_flag_5e {
+    width: 100%;
+    height: 170rem;
+    background: url('R.images.races.gui.maps.icons.progression.progression.flag') no-repeat center / cover;
+    position: absolute;
+}
+
+.mediaMedium .App_flag_5e {
+    width: 100%;
+    height: 250rem;
+}
+
+.mediaLarge .App_flag_5e {
+    width: 100%;
+    height: 290rem;
+}
+
+.App_textContainer_0e {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50rem;
+    z-index: 2;
+}
+
+.mediaMedium .App_textContainer_0e {
+    margin-top: -60rem;
+}
+
+.mediaLarge .App_textContainer_0e {
+    margin-top: -90rem;
+}
+
+.App_text_07 {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    z-index: 2;
+}
+
+.mediaMedium .App_text_07 {
+    color: #f2f2f7;
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.App_shine_f4 {
+    width: 400rem;
+    height: 256rem;
+    background: url('R.images.races.gui.maps.icons.progression.progression.text_glow') no-repeat center / cover;
+    opacity: 0.8;
+    position: absolute;
+    top: -22rem;
+    left: 155rem;
+}
+
+.mediaMedium .App_shine_f4 {
+    top: 0rem;
+    left: 280rem;
+}
+
+.mediaLarge .App_shine_f4 {
+    top: 55rem;
+    left: 450rem;
+}
+
+.App_questsContainer_8e {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.App_progression_f9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300rem;
+    border-top: 1rem solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(0deg, rgba(18, 18, 18, 0.74), rgba(18, 18, 18, 0.74)),
+        radial-gradient(330.26% 100% at 50.03% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 15.05%);
+    position: relative;
+}
+
+.mediaMedium .App_progression_f9 {
+    height: 430rem;
+}
+
+.mediaLarge .App_progression_f9 {
+    height: 450rem;
+}
+
+.mediaExtraLarge .App_progression_f9 {
+    height: 650rem;
+}
+
+.Countdown_base_fe {
+    display: flex;
+    align-items: center;
+}
+
+.Countdown_icon_8b {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+}
+
+.Countdown_description_8d {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.DailyQuests_base_db {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 860rem;
+    height: 220rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.mediaLarge .DailyQuests_base_db {
+    width: 940rem;
+    height: 250rem;
+}
+
+.DailyQuests_questsDone_3e {
+    color: #f2f2f7;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.mediaLarge .DailyQuests_questsDone_3e {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.DailyQuests_timer_c9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DailyQuests_line_8b {
+    display: flex;
+    width: 295rem;
+    height: 11rem;
+    background: url('R.images.races.gui.maps.icons.progression.dailyQuests.counterFrame') center / cover;
+}
+
+.mediaLarge .DailyQuests_line_8b {
+    width: 320rem;
+}
+
+.DailyQuests_timerContent_e5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10rem;
+    position: relative;
+}
+
+.mediaLarge .DailyQuests_timerContent_e5 {
+    margin: 0 20rem;
+}
+
+.DailyQuests_timerText_67 {
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.DailyQuests_quests_65 {
+    width: 100%;
+    margin-top: 15rem;
+}
+
+.Quests_base_b1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.Quests_quest_90 {
+    display: flex;
+    position: relative;
+}
+
+.ViewDecorator_base_aa {
+    width: 100%;
+    height: 100%;
+    background: no-repeat 50% / cover;
+}
+.ViewDecorator_container_98 {
+    visibility: hidden;
+}
+.ViewDecorator_container__shown_da {
+    visibility: visible;
+}
+.ViewDecorator_leftBlock_63 {
+    position: absolute;
+    top: 31rem;
+    left: 15rem;
+    z-index: 1;
+}
+.ViewDecorator_leftBlock__small_6a {
+    top: 11rem;
+    left: 10rem;
+}
+.ViewDecorator_rightBlock_71 {
+    position: absolute;
+    top: 31rem;
+    right: 16rem;
+    z-index: 1;
+}
+.ViewDecorator_rightBlock__small_ef {
+    top: 11rem;
+    right: 8rem;
+}
+.ViewDecorator_view_9e {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header_base_c4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100rem;
+    padding: 0 20rem;
+    position: relative;
+}
+
+.Header_about_a6 {
+    display: flex;
+}
+
+.Header_header_60 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mediaExtraLarge .Header_header_60 {
+    margin-top: 40rem;
+}
+
+.Header_title_42 {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+}
+
+.mediaLarge .Header_title_42 {
+    color: #f2f2f7;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.Header_subTitle_ee {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+}
+
+.mediaLarge .Header_subTitle_ee {
+    color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.Header_close_e1 {
+    display: flex;
+}
+
+.HorizontalBar_base_49 {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+    position: relative;
+}
+
+.HorizontalBar_base__nonActive_82 {
+    visibility: hidden;
+}
+
+.HorizontalBar_base_49 .disable,
+.HorizontalBar_base_49 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover,
+.HorizontalBar_rightButton_03:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem
+        7rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
+    opacity: 0.7;
+}
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.VerticalBar_base_f3 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+.VerticalBar_base__nonActive_42 {
+    visibility: hidden;
+}
+
+.VerticalBar_base_f3 .disable,
+.VerticalBar_base_f3 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.VerticalBar_topButton_d7,
+.VerticalBar_bottomButton_06 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_d7:hover,
+.VerticalBar_bottomButton_06:hover {
+    opacity: 1;
+}
+
+.VerticalBar_topButton_d7 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_06 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_df {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32 {
+    display: flex;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32:hover {
+    opacity: 1;
+}
+
+.VerticalBar_rail_43 {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_43:hover {
+    opacity: 0.7;
+}
+
+.VerticalScroll_content_cb {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_f8 {
+    display: flex;
+}
+
+.VerticalScroll_bar_1e {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_af {
+    flex: 1;
+}
+
+.LevelLabel_base_e0 {
+    display: flex;
+    width: 100%;
+}
+.LevelLabel_activeGlow_bd {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.LevelLabel_activeGlow__completed_68 {
+    opacity: 1;
+}
+.LevelLabel_activeGlow__fast_00 {
+    opacity: 1;
+    transition: none;
+}
+.LevelLabel_activeGlow_bd {
+    width: 134rem;
+    height: 134rem;
+    background: url('R.images.races.gui.maps.icons.progression.progression.bg_rare_light_current') no-repeat center /
+        cover;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
+    transition-delay: 1100ms;
+}
+.LevelLabel_level_87 {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 12rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 500ms;
+    transition-delay: 1100ms;
+}
+.LevelLabel_level__completed_6b {
+    opacity: 1;
+}
+.LevelLabel_level__active_eb {
+    opacity: 0;
+}
+.LevelLabel_levelCurrent_7c {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.LevelLabel_levelCurrent__completed_f1 {
+    opacity: 1;
+}
+.LevelLabel_levelCurrent__fast_7f {
+    opacity: 1;
+    transition: none;
+}
+.LevelLabel_levelCurrent_7c {
+    color: #ffdd99;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-shadow:
+        0 0 16rem #ff2e00,
+        0 0 4rem rgba(168, 30, 0, 0.5);
+    position: absolute;
+    bottom: 11rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition-delay: 1100ms;
+}
+
+.LevelCard_base_64 {
+    display: flex;
+    width: 180rem;
+    height: 55rem;
+    position: relative;
+}
+
+.mediaMedium .LevelCard_base_64 {
+    width: 200rem;
+}
+.LevelCard_bgCompleted_7f {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.LevelCard_bgCompleted__completed_d6 {
+    opacity: 0.9;
+}
+.LevelCard_bgCompleted__fast_67 {
+    opacity: 0.9;
+    transition: none;
+}
+.LevelCard_bgCompleted_7f {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.races.gui.maps.icons.progression.progression.bg_texture_top') no-repeat center / cover;
+    transition-delay: 1100ms;
+}
+.mediaMedium .LevelCard_bgCompleted_7f {
+    background: url('R.images.races.gui.maps.icons.progression.progression.bg_texture_top_large') no-repeat center /
+        cover;
+}
+.LevelCard_completedIconContainer_03 {
+    opacity: 0;
+    transform: translateY(-20rem);
+    transition:
+        opacity 500ms,
+        transform 500ms;
+}
+.LevelCard_completedIconContainer__completed_5b,
+.LevelCard_completedIconContainer__prevLevel_34 {
+    opacity: 1;
+    transform: translateY(0);
+}
+.LevelCard_completedIconContainer_03 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition-delay: 1100ms;
+}
+.LevelCard_completedIcon_7f {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.battle_royale_progression.gui.maps.progression.icon_now_rewards_title') no-repeat center /
+        cover;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.LevelCard_completedIconGlow_ce {
+    width: 9rem;
+    height: 9rem;
+    border: 3rem solid #24ff00;
+    filter: blur(7px);
+    opacity: 0.7;
+    position: absolute;
+    top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.LevelCard_border_8f {
+    width: 1rem;
+    height: 36rem;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.LevelCard_border__right_6a {
+    right: 0;
+    left: auto;
+}
+
+.LevelCards_base_49 {
+    display: flex;
+    padding-right: 40rem;
+}
+
+.mediaMedium .LevelCards_base_49 {
+    padding-right: 160rem;
+}
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #ffffff;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #f2f2f7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #fefeec;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #e9e2bf;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8c8c7e;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362e;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #ff2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #b70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #feab34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #ee7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #ffdd99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #cbac77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80d43a;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7ab300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #ccffff;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09e2ff;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #ced9d9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #ffc363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #c9c9b6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #a29b70;
+}
+
+.Rewards_base_8a {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.Rewards_base__completed_b3 {
+    opacity: 0.5;
+}
+
+.Rewards_base__fast_50 {
+    opacity: 0.5;
+    transition: none;
+}
+
+.Rewards_base_8a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    padding-top: 20rem;
+    transition-delay: 1100ms;
+}
+
+.Rewards_base__wide_c4 {
+    width: 100%;
+}
+
+.Rewards_base__completed_b3 {
+    opacity: 0.25;
+}
+.Rewards_reward_16 {
+    margin: 10rem;
+}
+.mediaMedium .Rewards_reward_16 {
+    margin: 5rem;
+}
+
+.RewardCard_base_36 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180rem;
+    height: 190rem;
+    position: relative;
+}
+
+.mediaMedium .RewardCard_base_36 {
+    width: 200rem;
+    height: 318rem;
+}
+
+.mediaExtraLarge .RewardCard_base_36 {
+    width: 200rem;
+    height: 475rem;
+}
+.RewardCard_activeBlock_d6 {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.RewardCard_activeBlock__completed_03 {
+    opacity: 1;
+}
+.RewardCard_activeBlock__fast_58 {
+    opacity: 1;
+    transition: none;
+}
+.RewardCard_activeBlock_d6 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition-delay: 1100ms;
+}
+.RewardCard_bgCompleted_eb {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.RewardCard_bgCompleted__completed_30 {
+    opacity: 0.9;
+}
+.RewardCard_bgCompleted__fast_01 {
+    opacity: 0.9;
+    transition: none;
+}
+.RewardCard_bgCompleted_eb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.races.gui.maps.icons.progression.progression.bg_texture') no-repeat center -60rem / cover;
+    transition-delay: 1100ms;
+}
+.mediaMedium .RewardCard_bgCompleted_eb {
+    background: url('R.images.races.gui.maps.icons.progression.progression.bg_texture_large') no-repeat center -60rem / cover;
+}
+.RewardCard_bgShadow_74 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.RewardCard_pointsBorder_61 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    opacity: 0.5;
+    position: absolute;
+    top: 5rem;
+    left: 0rem;
+    transform: translateX(-80%);
+}
+.RewardCard_pointsBorder__right_b2 {
+    right: 20rem;
+    left: auto;
+    transform: translateX(50%);
+}
+.RewardCard_pointsBorder__left_bd {
+    left: 10rem;
+}
+.RewardCard_pointsContainer_82 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.RewardCard_points_5f {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-right: 5rem;
+}
+.RewardCard_token_b7 {
+    width: 16rem;
+    height: 16rem;
+    background: url('R.images.races.gui.maps.icons.progression.progression.token') no-repeat center / cover;
+}
+.RewardCard_border_ad {
+    width: 1rem;
+    height: 90%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    top: 24rem;
+    left: 0;
+}
+.RewardCard_border__right_c9 {
+    right: 0;
+    left: auto;
+}
+
+.RewardCards_base_da {
+    display: flex;
+    padding-right: 40rem;
+}
+
+.mediaMedium .RewardCards_base_da {
+    padding-right: 160rem;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBar_base_45 {
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+.ProgressBar_base__medium_62 {
+    height: 6rem;
+}
+.ProgressBar_base__small_df {
+    height: 2rem;
+}
+.ProgressBar_background_51 {
+    width: 100%;
+    max-width: 8001px;
+    height: 100%;
+    background-image: var(--progress-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ProgressBar_background__medium_6e {
+    height: 6rem;
+}
+.ProgressBar_background__small_46 {
+    height: 2rem;
+}
+.ProgressBar_lineWrapper_6a {
+    display: flex;
+    flex: 1;
+}
+
+.ProgressBarBlink_base_24 {
+    width: 60rem;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    pointer-events: none;
+}
+
+.ProgressBarBlink_base__medium_ec {
+    width: 42rem;
+    height: 70rem;
+}
+
+.ProgressBarBlink_base__small_0f {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressLineImpose_base_80 {
+    max-width: 8001px;
+    height: 100%;
+    background-color: var(--progress-line-base);
+    position: relative;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressLineImpose_base__disabled_cc {
+    background-color: var(--progress-line-disabled);
+}
+.ProgressLineImpose_base__finished_d4 {
+    background-color: var(--progress-line-finished);
+}
+.ProgressLineImpose_base__withoutBounce_56 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+.ProgressLineImpose_pattern_1c {
+    max-width: 8001px;
+    background-image: var(--progress-pattern-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
+    top: 0;
+    bottom: 0;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
+    background-image: var(--progress-pattern-disabled);
+    left: 0;
+}
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
+    background-image: var(--progress-pattern-finished);
+}
+.ProgressLineImpose_gradient_35 {
+    max-width: 8001px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75));
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
+    top: 0;
+    bottom: 0;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
+    display: none;
+}
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5));
+}
+.ProgressLineImpose_glow_a5 {
+    width: 60rem;
+    max-width: 8001px;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.ProgressLineImpose_glow__left_d8 {
+    left: 1rem;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+    display: none;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaSimple_base_6c {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ProgressBarDeltaSimple_delta_99 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1), cubic-bezier(0.21, 0.61, 0.35, 1);
+    transition-property: width, transform;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaGrow_base_7e {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+.ProgressBarDeltaGrow_glow_68 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.OptimizedProgressBar_base_1f {
+    width: 100%;
+    padding: 30rem 0;
+    overflow: hidden;
+}
+.OptimizedProgressBar_wrapper_ab {
+    position: relative;
+}
+.OptimizedProgressBar_line_ef {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.OptimizedProgressBar_background_ce {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 8001px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Container_base_ff {
+    display: flex;
+}
+.Container_progressWrapper_c7 {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+.Container_progressWrapper__completed_74 {
+    opacity: 0.7;
+}
+.Container_progressWrapper__fast_7d {
+    opacity: 0.7;
+    transition: none;
+}
+.Container_progressWrapper_c7 {
+    display: flex;
+    margin: -30rem 0;
+    padding: 0 2rem;
+    position: relative;
+}
+.Container_bg_5d {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: -3rem -1rem;
+    border-radius: 2rem;
+    opacity: 0.5;
+}
+
+.Content_base_ee {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.03s;
+}
+
+.Content_base__centered_2a,
+.Content_base__layoutReady_56 {
+    opacity: 1;
+}
+.Content_horizontalContent_f4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+.Content_wrapper_a0 {
+    padding-left: 20rem;
+    overflow-x: visible;
+}
+.mediaMedium .Content_wrapper_a0 {
+    padding-left: 80rem;
+}
+.Content_base__centered_2a .Content_wrapper_a0 {
+    justify-content: center;
+    margin-left: 10rem;
+}
+.mediaMedium .Content_base__centered_2a .Content_wrapper_a0 {
+    margin-left: 40rem;
+}
+.Content_horizontalBarVerticalScrollBar_4e {
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+.mediaMedium .Content_horizontalBarVerticalScrollBar_4e {
+    padding-left: 80rem;
+    padding-right: 80rem;
+}
+.Content_progress_72 {
+    height: 13rem;
+    position: relative;
+    z-index: 1;
+}
+.Content_progressArea_ee {
+    display: flex;
+    padding-right: 40rem;
+    position: absolute;
+}
+.mediaMedium .Content_progressArea_ee {
+    padding-right: 160rem;
+}
+
+.ScrollDrag_base_39 {
+    cursor: grab;
+}
+
+.ScrollDrag_base__grabbing_1c {
+    cursor: move;
+}
+
+.Progression_base_a8 {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.Progression_base__fast_da {
+    opacity: 0.7;
+    transition: none;
+}
+
+.Progression_base_a8 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5rem;
+    position: relative;
+    transition-duration: 1500ms;
+}
+
+.mediaMedium .Progression_base_a8 {
+    padding-top: 0;
+}
+.Progression_shadow_37 {
+    width: 400rem;
+    height: 630rem;
+    background: radial-gradient(42% 42% at 0% 50.08%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0;
+    position: absolute;
+    top: -220rem;
+    z-index: 1;
+    transition: opacity 0.3s ease-in;
+    pointer-events: none;
+}
+.mediaMedium .Progression_shadow_37 {
+    width: 700rem;
+    height: 700rem;
+    top: -280rem;
+}
+.Progression_shadow__left_4a {
+    left: 0;
+}
+.Progression_shadow__right_8f {
+    right: 0;
+    transform: rotate(180deg);
+}
+.Progression_shadow__visible_ab {
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+}
+
+@keyframes Progression_add-blur_9d {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+
+@keyframes Progression_hide_e9 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes Progression_show_f1 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.Progression_base_53 {
+    display: flex;
+}
+
+.Progression_progression_11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f7;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    flex-direction: column;
+}
+
+.mediaLarge .Progression_progression_11 {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.Progression_base__completed_34 .Progression_progression_11 {
+    animation-name: Progression_hide_e9;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.2s;
+}
+
+.Progression_progressionNumerical_e6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f7;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    height: 20rem;
+    margin: 1rem 0 2rem;
+    transition: height 0.8s;
+}
+
+.mediaLarge .Progression_progressionNumerical_e6 {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.Progression_base__completed_34 .Progression_progressionNumerical_e6 {
+    animation-name: Progression_finish-color_a8;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+.Progression_currentValue__inProgress_65 {
+    color: #feab34;
+}
+
+.Progression_base__completed_34 .Progression_currentValue_ae {
+    animation-name: Progression_finish-color_a8;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+.Progression_separator_aa {
+    margin: 0 5rem;
+}
+
+.Progression_progressBar_37 {
+    display: block;
+    width: 140rem;
+    height: 5rem;
+    margin: 1rem 0;
+    transition: height 0.7s;
+}
+
+.mediaLarge .Progression_progressBar_37 {
+    margin: 7rem 0;
+}
+
+.Progression_base__completed_34 .Progression_progressBar_37 {
+    animation-name: Progression_hide_e9;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.2s;
+}
+
+@keyframes Progression_finish-color_a8 {
+    from {
+        color: #feab34;
+    }
+
+    to {
+        color: #7ab300;
+    }
+}
+
+@keyframes Progression_default-color_1d {
+    from {
+        color: #feab34;
+    }
+
+    to {
+        color: #f2f2f7;
+    }
+}
+
+.Quest_base_69 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 280rem;
+    height: 166rem;
+    background: rgba(18, 18, 18, 0.65);
+    position: relative;
+    animation-fill-mode: both;
+}
+
+.mediaLarge .Quest_base_69 {
+    width: 300rem;
+    height: 200rem;
+}
+.Quest_topLine_e5 {
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.Quest_border_9e {
+    width: 0;
+    height: 4rem;
+    background: #7ab30099;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    animation-fill-mode: both;
+}
+.Quest_base__recentlyCompleted_15 .Quest_border_9e {
+    width: 100%;
+    animation: Quest_fadeOut_63 1s ease-in-out;
+}
+.Quest_base__completed_37 .Quest_border_9e {
+    width: 100%;
+    background: #7ab30099;
+}
+.Quest_base__normal_c3 .Quest_border_9e {
+    width: 100%;
+    background: linear-gradient(90deg, #ff5000 35%, #772500 50%, #ff5000 65%);
+}
+.Quest_borderShine_a5 {
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    top: -8rem;
+    left: -10rem;
+}
+.Quest_base__recentlyCompleted_15 .Quest_borderShine_a5 {
+    background: url('R.images.races.gui.maps.icons.progression.dailyQuests.flare') no-repeat center / cover;
+    opacity: 0;
+    left: 270rem;
+    animation: Quest_borderShine_a5 1s ease-in-out;
+}
+.mediaLarge .Quest_base__recentlyCompleted_15 .Quest_borderShine_a5 {
+    left: 290rem;
+}
+.Quest_borderBlinkLine_4c {
+    width: 0;
+    height: 2rem;
+    background: url('R.images.races.gui.maps.icons.progression.dailyQuests.blinkLine') no-repeat center / cover;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    z-index: 5;
+    animation-fill-mode: both;
+}
+.Quest_base__recentlyCompleted_15 .Quest_borderBlinkLine_4c {
+    width: 100%;
+    opacity: 0;
+    animation: Quest_fadeOutLine_71 1.3s ease-in-out;
+}
+.Quest_questLogo_23 {
+    opacity: 1;
+    position: absolute;
+    top: -13rem;
+    left: 123rem;
+    z-index: 5;
+    animation-fill-mode: both;
+}
+.mediaLarge .Quest_questLogo_23 {
+    left: 136rem;
+}
+.Quest_questIcon_56 {
+    width: 28rem;
+    height: 28rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 6;
+    animation-fill-mode: both;
+}
+.Quest_base__recentlyCompleted_15 .Quest_questIcon_56 {
+    opacity: 1;
+    animation: Quest_showIcon_df 2.2s ease-in-out;
+}
+.Quest_questIconShine_e5 {
+    width: 130rem;
+    height: 70rem;
+    background: url('R.images.races.gui.maps.icons.progression.dailyQuests.glowComleted') no-repeat center / cover;
+    position: absolute;
+    top: -28rem;
+    left: -50rem;
+    z-index: 5;
+}
+.Quest_base__recentlyCompleted_15 .Quest_questIconShine_e5 {
+    opacity: 1;
+    animation: Quest_showShine_cf 2.6s ease-in-out;
+}
+.Quest_description_17 {
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 91rem;
+}
+.mediaLarge .Quest_description_17 {
+    width: 300rem;
+    height: 126rem;
+}
+.Quest_condition_db {
+    margin-top: 10rem;
+    padding: 0 15rem;
+    color: rgba(122, 179, 0, 1);
+    text-align: center;
+    animation-fill-mode: both;
+}
+.Quest_base__recentlyCompleted_15 .Quest_condition_db {
+    color: rgba(122, 179, 0, 1);
+    animation: Quest_changeDescriptionColor_7e 2.2s ease-in-out;
+}
+.Quest_base__normal_c3 .Quest_condition_db {
+    color: #f2f2f7;
+}
+.Quest_centerText_4b {
+    justify-content: center;
+}
+.Quest_descriptionBgShine_65 {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(110.72% 100% at 50% 100%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 64.67%);
+    position: absolute;
+    top: 4rem;
+}
+.Quest_progression_fe {
+    display: flex;
+    height: 34rem;
+    animation-fill-mode: both;
+}
+.mediaLarge .Quest_progression_fe {
+    margin-top: 10rem;
+}
+.Quest_base__recentlyCompleted_15 .Quest_progression_fe {
+    height: 0rem;
+    animation: Quest_hideProgression_a6 2.2s ease-in-out;
+}
+.Quest_rewards_3c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70rem;
+    border-top: 1rem solid #535353;
+    opacity: 0.3;
+}
+.Quest_base__normal_c3 .Quest_rewards_3c {
+    opacity: 1;
+}
+.Quest_racesPointsText_65 {
+    color: #f2f2f7;
+}
+.Quest_rewardImage_40 {
+    margin-bottom: 5rem;
+}
+@keyframes Quest_fadeOut_63 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+@keyframes Quest_fadeOutLine_71 {
+    0% {
+        width: 0%;
+        opacity: 1;
+    }
+
+    78% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes Quest_hideProgression_a6 {
+    0% {
+        height: 34rem;
+    }
+
+    80% {
+        height: 34rem;
+    }
+
+    100% {
+        height: 0;
+    }
+}
+@keyframes Quest_showIcon_df {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    85% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Quest_showShine_cf {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Quest_borderShine_a5 {
+    0% {
+        opacity: 1;
+        left: -10rem;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    99% {
+        left: 100%;
+    }
+
+    100% {
+        opacity: 0;
+        left: 100%;
+    }
+}
+@keyframes Quest_changeDescriptionColor_7e {
+    0% {
+        color: #f2f2f7;
+    }
+
+    85% {
+        color: #f2f2f7;
+    }
+
+    100% {
+        color: rgba(122, 179, 0, 1);
+    }
+}
+
+.PersonalTab_base_c4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 860rem;
+    height: 90%;
+    overflow: hidden;
+}
+
+.mediaMedium .PersonalTab_base_c4 {
+    width: 1200rem;
+}
+.PersonalTab_marginLeft_da {
+    margin-left: 10rem;
+}
+.PersonalTab_flag_14 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150rem;
+    margin-top: 20rem;
+    position: relative;
+}
+.mediaMedium .PersonalTab_flag_14 {
+    height: 230rem;
+    margin-top: 30rem;
+}
+.PersonalTab_flagIcon_04 {
+    display: flex;
+    width: 600rem;
+    height: 140rem;
+    background: url('R.images.races.gui.maps.icons.postBattle.flag_small') no-repeat center / cover;
+    position: absolute;
+    transform: translateY(10rem);
+}
+.PersonalTab_flag__animate_ac .PersonalTab_flagIcon_04 {
+    animation: PersonalTab_fadeAnimation_9d 0.7s ease-in-out;
+}
+.mediaMedium .PersonalTab_flagIcon_04 {
+    width: 1200rem;
+    height: 235rem;
+    background-image: url('R.images.races.gui.maps.icons.postBattle.flag');
+    transform: translateY(20rem);
+}
+.PersonalTab_winnerText_f3,
+.PersonalTab_timeText_d8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.PersonalTab_flag__animate_ac .PersonalTab_winnerText_f3,
+.PersonalTab_flag__animate_ac .PersonalTab_timeText_d8 {
+    animation: PersonalTab_fadeAnimationText_dd 1.1s ease-in-out;
+}
+.PersonalTab_winnerText_f3 {
+    margin-top: -20rem;
+}
+.PersonalTab_text_06 {
+    color: #f2f2f7;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 5rem;
+    position: relative;
+    z-index: 1;
+}
+.mediaMedium .PersonalTab_text_06 {
+    color: #f2f2f7;
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.PersonalTab_timeText_d8 {
+    color: #f2f2f7;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    z-index: 1;
+}
+.mediaMedium .PersonalTab_timeText_d8 {
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.PersonalTab_shine_93 {
+    width: 400rem;
+    height: 256rem;
+    background: url('R.images.races.gui.maps.icons.progression.progression.text_glow') no-repeat center / cover;
+    opacity: 0.7;
+    position: absolute;
+    top: -71rem;
+}
+.PersonalTab_flag__animate_ac .PersonalTab_shine_93 {
+    animation: PersonalTab_shineSlide_e7 1.4s ease-in-out;
+}
+.mediaMedium .PersonalTab_shine_93 {
+    top: -55rem;
+}
+.PersonalTab_points_e7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 120rem;
+    height: 120rem;
+    overflow: hidden;
+    position: relative;
+}
+.mediaLarge .PersonalTab_points_e7 {
+    margin-top: 55rem;
+}
+.PersonalTab_pointsIcon_9f {
+    display: flex;
+    width: 120rem;
+    height: 120rem;
+    background: url('R.images.races.gui.maps.icons.postBattle.points_icon') no-repeat center / cover;
+    mask-image: linear-gradient(180deg, #000 40.44%, rgba(0, 0, 0, 0) 74.86%);
+    position: absolute;
+}
+.PersonalTab_pointsDescription_c5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.PersonalTab_count_af {
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    z-index: 1;
+}
+.PersonalTab_label_66 {
+    color: #f2f2f7;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.PersonalTab_quests_a6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 170rem;
+    margin-top: 35rem;
+}
+.mediaLarge .PersonalTab_quests_a6 {
+    height: 200rem;
+    margin-top: 65rem;
+}
+.PersonalTab_infoMessage_37 {
+    color: #f2f2f7;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    margin-top: 35rem;
+    padding: 10rem 24rem;
+    background: rgba(18, 18, 18, 0.6);
+}
+.mediaLarge .PersonalTab_infoMessage_37 {
+    margin-top: 65rem;
+}
+@keyframes PersonalTab_fadeAnimation_9d {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes PersonalTab_fadeAnimationText_dd {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes PersonalTab_shineSlide_e7 {
+    0% {
+        opacity: 0;
+        transform: translateX(-70rem);
+    }
+
+    30% {
+        opacity: 0;
+        transform: translateX(-70rem);
+    }
+
+    100% {
+        opacity: 0.7;
+        transform: translateX(0rem);
+    }
+}
+
+.TeamTab_base_2e {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 944rem;
+    height: 432rem;
+    margin-top: 20rem;
+}
+
+.mediaMedium .TeamTab_base_2e {
+    width: 960rem;
+}
+.TeamTab_leaderBoard_2a,
+.TeamTab_playerInfo_7e {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 460rem;
+    height: 100%;
+    background: rgba(18, 18, 18, 0.6);
+}
+.TeamTab_header_7a {
+    color: rgb(153, 153, 153);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    width: 100%;
+    height: 48rem;
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.05);
+    background: radial-gradient(
+        89.4% 138.54% at 50% 138.54%,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0) 64.67%
+    );
+}
+.TeamTab_row_1b {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10rem;
+}
+.TeamTab_position_04 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75rem;
+    height: 100%;
+}
+.TeamTab_position__board_25 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.15);
+}
+.TeamTab_player__selected_33 .TeamTab_position__board_25 {
+    padding-left: 6rem;
+    border-left: 4rem solid rgb(255, 80, 0);
+}
+.TeamTab_playerRow_69 {
+    width: 245rem;
+    height: 100%;
+}
+.TeamTab_actions_03 {
+    width: 389rem;
+    height: 100%;
+}
+.TeamTab_positionIcon_21 {
+    display: flex;
+    width: 32rem;
+    height: 32rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.TeamTab_time_7d,
+.TeamTab_points_f4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70rem;
+    height: 100%;
+}
+.TeamTab_border_1c {
+    border-right: 1rem solid rgba(255, 255, 255, 0.05);
+}
+.TeamTab_player__selected_33 .TeamTab_border_1c {
+    border-right: 1rem solid rgba(0, 0, 0, 0.25);
+}
+.TeamTab_time__board_4a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TeamTab_points__board_4d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0) 48.67%);
+}
+.TeamTab_players_75 {
+    display: flex;
+    flex-direction: column;
+}
+.TeamTab_player_50 {
+    color: #f2f2f7;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    width: 100%;
+    height: 48rem;
+    position: relative;
+    cursor: pointer;
+}
+.TeamTab_player_50:hover {
+    background: rgba(242, 242, 247, 0.08);
+}
+.TeamTab_player__current_63 {
+    background: rgba(242, 242, 247, 0.08);
+}
+.TeamTab_player__selected_33 {
+    color: #000000;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    background: rgb(242, 242, 242);
+}
+.TeamTab_player__selected_33:hover {
+    background: rgb(242, 242, 242);
+}
+.TeamTab_texture_fe {
+    width: 100%;
+    height: 100%;
+    background-image: url('R.images.races.gui.maps.icons.hangar.Carousel.bgDisabled');
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.TeamTab_texture_fe:hover {
+    opacity: 0;
+}
+.TeamTab_player__current_63 .TeamTab_texture_fe,
+.TeamTab_player__selected_33 .TeamTab_texture_fe {
+    opacity: 0.35;
+}
+.TeamTab_playerInfoHeader_10 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 117rem;
+    padding-left: 20rem;
+    background: radial-gradient(
+        89.4% 138.54% at 50% 138.54%,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0) 64.67%
+    );
+}
+.TeamTab_vehicleIcon_13 {
+    display: flex;
+    width: 98rem;
+    height: 72rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.TeamTab_description_2f {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 15rem;
+}
+.TeamTab_playerNickname_d5 {
+    color: #f2f2f7;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 5rem;
+}
+.TeamTab_vehicleName_2c {
+    color: rgb(153, 153, 153);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.TeamTab_playerInfoTableHeader_5c {
+    color: rgb(153, 153, 153);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    width: 100%;
+    height: 48rem;
+    border-top: 1rem solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.15);
+}
+.TeamTab_action_b0 {
+    color: #f2f2f7;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    width: 100%;
+    height: 38rem;
+}
+.TeamTab_actionRow_4f {
+    width: 315rem;
+    height: 100%;
+}
+.TeamTab_actionIconContainer_3b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75rem;
+    background: rgba(0, 0, 0, 0.15);
+    position: relative;
+}

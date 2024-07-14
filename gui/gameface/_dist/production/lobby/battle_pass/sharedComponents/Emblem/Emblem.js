@@ -199,8 +199,8 @@
                                 L = f[1],
                                 S = v === i.S.End,
                                 P = v === i.S.Idle,
-                                x = v === i.S.Grow,
-                                $ = v === i.S.Shrink,
+                                $ = v === i.S.Grow,
+                                x = v === i.S.Shrink,
                                 M = (0, n.useCallback)(
                                     (e) => {
                                         L(e), p && p(e);
@@ -218,14 +218,14 @@
                                 if (!l)
                                     return P
                                         ? B(i.S.Grow, a)
-                                        : x
+                                        : $
                                           ? B(i.S.Shrink, e)
-                                          : $
+                                          : x
                                             ? B(i.S.End, e)
                                             : void (S && u && u());
-                            }, [B, l, S, x, P, $, u, a, e]);
-                            const C = (0, n.useMemo)(() => Object.assign({ width: '100%' }, b(e), c(w)), [w, e]),
-                                y = (0, n.useMemo)(() => Object.assign({ width: '0%' }, b(e), c(w)), [w, e]),
+                            }, [B, l, S, $, P, x, u, a, e]);
+                            const y = (0, n.useMemo)(() => Object.assign({ width: '100%' }, b(e), c(w)), [w, e]),
+                                C = (0, n.useMemo)(() => Object.assign({ width: '0%' }, b(e), c(w)), [w, e]),
                                 k = (0, n.useMemo)(() => Object.assign({ width: '0%' }, d(w, t), b(e)), [t, w, e]),
                                 I = (0, n.useMemo)(
                                     () => Object.assign({ width: `${Math.abs(h - t)}%` }, d(w, t), b(e)),
@@ -238,7 +238,7 @@
                                 { style: P ? k : I, className: O },
                                 r().createElement(
                                     'div',
-                                    { style: $ ? y : C, className: m.Z.glow },
+                                    { style: x ? C : y, className: m.Z.glow },
                                     r().createElement(_.$, { size: g }),
                                 ),
                             );
@@ -628,14 +628,19 @@
                 };
             },
             903: (e, a, l) => {
-                l.d(a, { wD: () => t });
+                l.d(a, { FL: () => s, wD: () => t });
                 l(8546);
                 const t = (e, a, l = '') => {
-                    const t = l.length > 0 ? `_${l}` : l,
-                        s = e.$dyn(`c_${a}${t}`),
-                        o = e.$dyn(`common${t}`);
-                    return s || o;
-                };
+                        const t = l.length > 0 ? `_${l}` : l,
+                            s = e.$dyn(`c_${a}${t}`),
+                            o = e.$dyn(`common${t}`);
+                        return s || o;
+                    },
+                    s = (e, a, l, s) => {
+                        const o = R.images.gui.maps.icons.battlePass.logo,
+                            n = t(o, e, `emblem${s ? '_BP' : ''}${l ? '_open' : ''}${a}`);
+                        return n ? { backgroundImage: `url(${n})` } : void 0;
+                    };
             },
             323: (e, a, l) => {
                 var t = l(6483),
@@ -762,19 +767,19 @@
                                 : l === m.$u.Micro && ((v = 'Micro'), (L = '__micro'));
                             const S = t === m.Bq.SwitchedChapterRightNow,
                                 P = t === m.Bq.CompletedRightNow,
-                                x = ((e, a, l, t, s) => (e || s ? a || !l : a || !t))(w, p, E, h, f),
-                                $ = !f && !w;
+                                $ = ((e, a, l, t, s) => (e || s ? a || !l : a || !t))(w, p, E, h, f),
+                                x = !f && !w;
                             return n().createElement(
                                 n().Fragment,
                                 null,
-                                x
+                                $
                                     ? n().createElement('div', {
                                           className: s()(c.icon, L && c[`icon${L}`], P && c[`icon__animated${v}`]),
                                           style: {
                                               backgroundImage: `url(${(() => {
                                                   const e = R.images.gui.maps.icons.battlePass.logo,
                                                       a = d(r, l);
-                                                  if ($) {
+                                                  if (x) {
                                                       if (p) return e.tank.$dyn(`tank_${a}`);
                                                       if (!h) return e.$dyn('not_chosen');
                                                   }
@@ -891,47 +896,49 @@
                         l = e.size,
                         t = e.battlePassState,
                         o = e.hasBattlePass,
-                        _ = e.isChapterChosen,
-                        i = e.hasBeenActive,
-                        c = void 0 !== i && i,
-                        d = e.isChapterSelection,
-                        g = void 0 !== d && d,
-                        h = e.isOpen,
-                        E = void 0 !== h && h,
-                        w = e.isProgression,
-                        f = void 0 !== w && w,
-                        v = e.showProgressBar,
-                        L = void 0 === v || v,
-                        S = e.chapterType;
-                    let P = '',
-                        x = '';
+                        i = e.isChapterChosen,
+                        c = e.hasBeenActive,
+                        d = void 0 !== c && c,
+                        g = e.isChapterSelection,
+                        h = void 0 !== g && g,
+                        E = e.isOpen,
+                        w = void 0 !== E && E,
+                        f = e.isProgression,
+                        v = void 0 !== f && f,
+                        L = e.showProgressBar,
+                        S = void 0 === L || L,
+                        P = e.chapterType,
+                        $ = e.chapterID;
+                    let x = '',
+                        M = '',
+                        B = '';
                     l === m.$u.Small
-                        ? ((P = 'Small'), (x = '__small'))
-                        : l === m.$u.Micro && ((P = 'Micro'), (x = '__micro'));
-                    const $ = E ? 'Open' : '',
-                        M = t === m.Bq.CompletedRightNow,
-                        B = o || t === m.Bq.Bought,
-                        C = (t === m.Bq.Completed || M) && B,
-                        y = (t === m.Bq.Completed || M) && !B,
-                        k = C || y,
-                        I = s()(
+                        ? ((x = 'Small'), (M = '__small'), (B = '_small'))
+                        : l === m.$u.Micro && ((x = 'Micro'), (M = '__micro'), (B = '_micro'));
+                    const y = w ? 'Open' : '',
+                        C = t === m.Bq.CompletedRightNow,
+                        k = o || t === m.Bq.Bought,
+                        I = (t === m.Bq.Completed || C) && k,
+                        O = (t === m.Bq.Completed || C) && !k,
+                        D = I || O,
+                        F = s()(
                             r.image,
-                            r[`image${x}`],
-                            E && r[`image__open${P}`],
-                            B && r[`image__battlePass${P}${$}`],
-                            t === m.Bq.AwaitSeason && r[`image__seasonWaiting${P}`],
-                            y && r[`image__completedFree${P}${$}`],
+                            r[`image${M}`],
+                            w && r[`image__open${x}`],
+                            k && r[`image__battlePass${x}${y}`],
+                            t === m.Bq.AwaitSeason && r[`image__seasonWaiting${x}`],
+                            O && r[`image__completedFree${x}${y}`],
                         ),
-                        O = s()(r[`${S}`], r[`${S}${x}`]),
-                        D = void 0 !== a.from,
-                        A = L && ((D && _) || c);
+                        A = s()(r[`${P}`], r[`${P}${M}`]),
+                        N = void 0 !== a.from,
+                        z = S && ((N && i) || d);
                     return n().createElement(
                         'div',
                         { className: r.base },
-                        n().createElement('div', { className: O }),
+                        n().createElement('div', { className: A }),
                         n().createElement(
                             'div',
-                            { className: I },
+                            { className: F, style: (0, _.FL)($, B, w, k) },
                             t !== m.Bq.AwaitSeason &&
                                 n().createElement(
                                     n().Fragment,
@@ -940,24 +947,24 @@
                                         b,
                                         p(
                                             {
-                                                hasProgression: D,
-                                                isGolden: B,
-                                                isProgressionCompleted: k,
-                                                isChapterChosen: _,
-                                                hasBeenActive: c,
-                                                isChapterSelection: g,
-                                                isProgression: f,
+                                                hasProgression: N,
+                                                isGolden: k,
+                                                isProgressionCompleted: D,
+                                                isChapterChosen: i,
+                                                hasBeenActive: d,
+                                                isChapterSelection: h,
+                                                isProgression: v,
                                             },
                                             e,
                                             a,
                                         ),
                                     ),
-                                    A &&
+                                    z &&
                                         n().createElement(u, {
                                             key: a.to,
                                             progression: a,
-                                            showProgressionCompleted: M,
-                                            isProgressionCompleted: k,
+                                            showProgressionCompleted: C,
+                                            isProgressionCompleted: D,
                                             size: l,
                                         }),
                                 ),

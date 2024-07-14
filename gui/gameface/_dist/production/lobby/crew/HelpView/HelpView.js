@@ -1879,9 +1879,12 @@
                                         arrowOffset:
                                             ((o = e), o === s.extraSmall.width ? 0 : o === s.small.width ? 15 : 30),
                                     },
-                                    n.computes.getSlides().map((e) => ({
-                                        render: () => i().createElement(ye, { title: e.title, sections: e.sections }),
-                                    })),
+                                    n.computes
+                                        .getSlides()
+                                        .map((e) => ({
+                                            render: () =>
+                                                i().createElement(ye, { title: e.title, sections: e.sections }),
+                                        })),
                                 ),
                                 i().createElement(_e, {
                                     classNames: { base: Pe },

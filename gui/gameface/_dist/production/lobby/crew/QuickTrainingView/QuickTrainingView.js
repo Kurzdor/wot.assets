@@ -7411,23 +7411,25 @@
                         return r().createElement(
                             'div',
                             { id: 'crew_widget_slots_list', className: A()(_n, u) },
-                            a.computes.getSlots().map((t, u) =>
-                                r().createElement(
-                                    mn,
-                                    En({}, t, {
-                                        layoutInfo: e,
-                                        key: `slot_${u}_${t.tankman.tankmanID}`,
-                                        isSelected:
-                                            !e.isCurrentLayoutHangar &&
-                                            (a.computes.isSlotSelected(t.slotIdx) || a.computes.isTankmanMode()),
-                                        isAnySlotSelected: a.computes.isAnySlotSelected(),
-                                        isDisabled: g(t.tankman.tankmanID),
-                                        blinkSlotStyle: d,
-                                        blinkTankmanStyle: s,
-                                        qtTankmanIconStyle: _,
-                                    }),
+                            a.computes
+                                .getSlots()
+                                .map((t, u) =>
+                                    r().createElement(
+                                        mn,
+                                        En({}, t, {
+                                            layoutInfo: e,
+                                            key: `slot_${u}_${t.tankman.tankmanID}`,
+                                            isSelected:
+                                                !e.isCurrentLayoutHangar &&
+                                                (a.computes.isSlotSelected(t.slotIdx) || a.computes.isTankmanMode()),
+                                            isAnySlotSelected: a.computes.isAnySlotSelected(),
+                                            isDisabled: g(t.tankman.tankmanID),
+                                            blinkSlotStyle: d,
+                                            blinkTankmanStyle: s,
+                                            qtTankmanIconStyle: _,
+                                        }),
+                                    ),
                                 ),
-                            ),
                         );
                     }),
                     pn = (0, a.Pi)(() => {

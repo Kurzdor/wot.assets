@@ -1995,9 +1995,12 @@
                         (e.PLAY = 'play'), (e.STOP = 'stop');
                     })(Ge || (Ge = {}));
                 const Ue = ({ onClose: e }) => {
-                        const u = (0, a.useCallback)(() => {
-                            e(Ie.Mouse);
-                        }, [e]);
+                        const u = (0, a.useCallback)(
+                            (u) => {
+                                u.stopPropagation(), e(Ie.Mouse);
+                            },
+                            [e],
+                        );
                         return (
                             Pe(
                                 (0, a.useCallback)(() => {

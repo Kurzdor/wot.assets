@@ -1299,7 +1299,8 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.RacesPoint = 'races_point');
                 })(K || (K = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -1454,7 +1455,7 @@
                         K.CosmicLootboxSilver,
                     ],
                     le = [K.Gold, K.Credits, K.Crystal, K.FreeXp],
-                    ne = [K.BattlePassPoints],
+                    ne = [K.BattlePassPoints, K.RacesPoint],
                     he = [K.PremiumPlus, K.Premium],
                     de = (e) =>
                         se.includes(e)
@@ -1509,9 +1510,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${t}.${r}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === t
-                                    ? e.iconBig.replace('..', 'img://gui')
-                                    : e.iconSmall.replace('..', 'img://gui');
+                                return ((e, t) => {
+                                    switch (t) {
+                                        case Z.Big:
+                                            return e.iconBig.replace('..', 'img://gui');
+                                        case Z.Small:
+                                            return e.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${t}.${e.icon}`;
+                                    }
+                                })(e, t);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':

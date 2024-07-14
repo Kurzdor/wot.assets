@@ -989,7 +989,8 @@
                             (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
                             (u.CosmicLootboxSilver = 'lootBoxToken'),
-                            (u.CosmicLootboxCommon = 'cosmic_2024_2');
+                            (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                            (u.RacesPoint = 'races_point');
                     })(S || (S = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1120,11 +1121,11 @@
                         S.CosmicLootboxSilver,
                     ],
                     G = [S.Gold, S.Credits, S.Crystal, S.FreeXp],
-                    q = [S.BattlePassPoints],
+                    q = [S.BattlePassPoints, S.RacesPoint],
                     Y = [S.PremiumPlus, S.Premium],
                     H = ['engravings', 'backgrounds'],
                     V = ['engraving', 'background'],
-                    j = (u, e = M.Small) => {
+                    $ = (u, e = M.Small) => {
                         const t = u.name,
                             n = u.type,
                             r = u.value,
@@ -1165,9 +1166,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${e}.${E}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === e
-                                    ? u.iconBig.replace('..', 'img://gui')
-                                    : u.iconSmall.replace('..', 'img://gui');
+                                return ((u, e) => {
+                                    switch (e) {
+                                        case M.Big:
+                                            return u.iconBig.replace('..', 'img://gui');
+                                        case M.Small:
+                                            return u.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${e}.${u.icon}`;
+                                    }
+                                })(u, e);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -1218,9 +1226,9 @@
                                 return `R.images.gui.maps.icons.quests.bonuses.${e}.${t}`;
                         }
                     },
-                    $ = 'premVehicle',
+                    j = 'premVehicle',
                     z = 'rentVehicle',
-                    W = [$, z, 'default'],
+                    W = [j, z, 'default'],
                     X = [[10], [8, 9], [6, 7], [1, 5]],
                     K = ((u, e) => {
                         const t = (0, o.createContext)({});
@@ -1356,7 +1364,7 @@
                                                                     bonuses: f(u.bonuses, (u) => {
                                                                         return Object.assign(
                                                                             {
-                                                                                image: j(u, M.Small),
+                                                                                image: $(u, M.Small),
                                                                                 valueType:
                                                                                     ((e = u.name),
                                                                                     L.includes(e)
@@ -2065,7 +2073,7 @@
                             { className: vu.base },
                             ((u, e) => {
                                 switch (u) {
-                                    case $:
+                                    case j:
                                         return ((u) =>
                                             a().createElement(
                                                 'div',

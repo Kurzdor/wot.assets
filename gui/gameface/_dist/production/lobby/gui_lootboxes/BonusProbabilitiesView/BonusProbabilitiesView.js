@@ -69,7 +69,8 @@
                             (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
                             (u.CosmicLootboxSilver = 'lootBoxToken'),
-                            (u.CosmicLootboxCommon = 'cosmic_2024_2');
+                            (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                            (u.RacesPoint = 'races_point');
                     })(r || (r = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -208,7 +209,7 @@
                         o.E4.CosmicLootboxSilver,
                     ],
                     s = [o.E4.Gold, o.E4.Credits, o.E4.Crystal, o.E4.FreeXp],
-                    l = [o.E4.BattlePassPoints],
+                    l = [o.E4.BattlePassPoints, o.E4.RacesPoint],
                     c = [o.E4.PremiumPlus, o.E4.Premium],
                     E = (u) =>
                         i.includes(u)
@@ -263,9 +264,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${e}.${a}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === e
-                                    ? u.iconBig.replace('..', 'img://gui')
-                                    : u.iconSmall.replace('..', 'img://gui');
+                                return ((u, e) => {
+                                    switch (e) {
+                                        case o.h2.Big:
+                                            return u.iconBig.replace('..', 'img://gui');
+                                        case o.h2.Small:
+                                            return u.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${e}.${u.icon}`;
+                                    }
+                                })(u, e);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -614,13 +622,13 @@
                             })(u, o);
                         const w = (0, a.useRef)({ timeoutId: 0, isVisible: !1, prevTarget: null, hideTimerId: null }),
                             S = (0, a.useMemo)(() => h || (0, r.F)().resId, [h]),
-                            x = (0, a.useCallback)(() => {
+                            R = (0, a.useCallback)(() => {
                                 (w.current.isVisible && w.current.timeoutId) ||
                                     (s(t, B, { isMouseEvent: !0, on: !0, arguments: i(n) }, S),
                                     b && b(),
                                     (w.current.isVisible = !0));
                             }, [t, B, n, S, b]),
-                            R = (0, a.useCallback)(() => {
+                            x = (0, a.useCallback)(() => {
                                 if (w.current.isVisible || w.current.timeoutId) {
                                     const u = w.current.timeoutId;
                                     u > 0 && (clearTimeout(u), (w.current.timeoutId = 0)),
@@ -634,7 +642,7 @@
                                     ((w.current.prevTarget = document.elementFromPoint(u.clientX, u.clientY)),
                                     (w.current.hideTimerId = window.setTimeout(() => {
                                         const e = document.elementFromPoint(u.clientX, u.clientY);
-                                        e && !e.isSameNode(w.current.prevTarget) && R();
+                                        e && !e.isSameNode(w.current.prevTarget) && x();
                                     }, 200)));
                             }, []);
                         return (
@@ -649,16 +657,16 @@
                                 );
                             }, []),
                             (0, a.useEffect)(() => {
-                                !1 === g && R();
-                            }, [g, R]),
+                                !1 === g && x();
+                            }, [g, x]),
                             (0, a.useEffect)(
                                 () => (
-                                    window.addEventListener('mouseleave', R),
+                                    window.addEventListener('mouseleave', x),
                                     () => {
-                                        window.removeEventListener('mouseleave', R), R();
+                                        window.removeEventListener('mouseleave', x), x();
                                     }
                                 ),
-                                [R],
+                                [x],
                             ),
                             g
                                 ? (0, a.cloneElement)(
@@ -670,18 +678,18 @@
                                                   (u) => {
                                                       (u.clientX === window.innerWidth &&
                                                           u.clientY === window.innerHeight) ||
-                                                          ((w.current.timeoutId = window.setTimeout(x, F ? 100 : 400)),
+                                                          ((w.current.timeoutId = window.setTimeout(R, F ? 100 : 400)),
                                                           l && l(u),
                                                           P && P(u));
                                                   }),
                                               onMouseLeave: ((u) => (e) => {
-                                                  R(), null == c || c(e), null == u || u(e);
+                                                  x(), null == c || c(e), null == u || u(e);
                                               })(e.props.onMouseLeave),
                                               onClick: ((u) => (e) => {
-                                                  !1 === m && R(), null == A || A(e), null == u || u(e);
+                                                  !1 === m && x(), null == A || A(e), null == u || u(e);
                                               })(e.props.onClick),
                                               onMouseDown: ((u) => (e) => {
-                                                  !1 === m && R(), null == E || E(e), null == u || u(e);
+                                                  !1 === m && x(), null == E || E(e), null == u || u(e);
                                               })(e.props.onMouseDown),
                                           },
                                           f,
@@ -2782,13 +2790,13 @@
                     fu = 'HorizontalBar_base__nonActive_82',
                     wu = 'disable',
                     Su = { pending: !1, offset: 0 },
-                    xu = (u) => {
+                    Ru = (u) => {
                         var e;
                         return 0.9 * (null != (e = u.getWrapperSize()) ? e : 0);
                     },
-                    Ru = () => {},
+                    xu = () => {},
                     yu = (u, e) => Math.max(20, u.offsetWidth * e),
-                    Pu = (0, a.memo)(({ api: u, classNames: e = {}, getStepByRailClick: t = xu, onDrag: r = Ru }) => {
+                    Pu = (0, a.memo)(({ api: u, classNames: e = {}, getStepByRailClick: t = Ru, onDrag: r = xu }) => {
                         const n = (0, a.useRef)(null),
                             i = (0, a.useRef)(null),
                             s = (0, a.useRef)(null),
@@ -2853,7 +2861,7 @@
                                         const e = () => {
                                             m();
                                         };
-                                        let t = Ru;
+                                        let t = xu;
                                         const r = () => {
                                             t(), (t = Fu(_));
                                         };

@@ -2353,7 +2353,8 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.RacesPoint = 'races_point');
                 })(ue || (ue = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -2487,6 +2488,7 @@
                     ue.Crystal,
                     ue.FreeXp,
                     ue.BattlePassPoints,
+                    ue.RacesPoint,
                     ue.PremiumPlus,
                     ue.Premium;
                 let ie, le;
@@ -2507,24 +2509,33 @@
                         return u || console.warn('Unknown FinalReward key: ', e), u;
                     };
                 var me = t(3561);
-                function Ee() {
+                const Ee = (e) => ({
+                    level: (null == e ? void 0 : e.currentLevel) || 0,
+                    to: null == e ? void 0 : e.levelProgression,
+                    from: null == e ? void 0 : e.levelProgression,
+                });
+                let Ae;
+                !(function (e) {
+                    (e.Small = 'small'), (e.Medium = 'medium'), (e.Large = 'large');
+                })(Ae || (Ae = {}));
+                function Fe() {
                     return !1;
                 }
                 console.log;
-                var Ae = t(9174);
-                function Fe(e, u) {
+                var Ce = t(9174);
+                function be(e, u) {
                     var t = ('undefined' != typeof Symbol && e[Symbol.iterator]) || e['@@iterator'];
                     if (t) return (t = t.call(e)).next.bind(t);
                     if (
                         Array.isArray(e) ||
                         (t = (function (e, u) {
                             if (!e) return;
-                            if ('string' == typeof e) return Ce(e, u);
+                            if ('string' == typeof e) return De(e, u);
                             var t = Object.prototype.toString.call(e).slice(8, -1);
                             'Object' === t && e.constructor && (t = e.constructor.name);
                             if ('Map' === t || 'Set' === t) return Array.from(e);
                             if ('Arguments' === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t))
-                                return Ce(e, u);
+                                return De(e, u);
                         })(e)) ||
                         (u && e && 'number' == typeof e.length)
                     ) {
@@ -2538,14 +2549,14 @@
                         'Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.',
                     );
                 }
-                function Ce(e, u) {
+                function De(e, u) {
                     (null == u || u > e.length) && (u = e.length);
                     for (var t = 0, a = new Array(u); t < u; t++) a[t] = e[t];
                     return a;
                 }
-                const be = (e) => (0 === e ? window : window.subViews.get(e));
-                var De = t(3946);
-                const he = ((e, u) => {
+                const he = (e) => (0 === e ? window : window.subViews.get(e));
+                var ge = t(3946);
+                const Be = ((e, u) => {
                         const t = (0, a.createContext)({});
                         return [
                             function ({ mode: n = 'real', options: s, children: i, mocks: l }) {
@@ -2555,7 +2566,7 @@
                                         const s = (function ({
                                                 initializer: e = !0,
                                                 rootId: u = 0,
-                                                getRoot: t = be,
+                                                getRoot: t = he,
                                                 context: a = 'model',
                                             } = {}) {
                                                 const r = new Map();
@@ -2602,7 +2613,7 @@
                                                         };
                                                     },
                                                     dispose: function () {
-                                                        for (var e, t = Fe(r.keys()); !(e = t()).done; ) n(e.value, u);
+                                                        for (var e, t = be(r.keys()); !(e = t()).done; ) n(e.value, u);
                                                     },
                                                     unsubscribe: n,
                                                 };
@@ -2626,11 +2637,11 @@
                                                 observableModel: {
                                                     array: (e, u) => {
                                                         const a = null != u ? u : l(e),
-                                                            r = Ae.LO.box(a, { equals: Ee });
+                                                            r = Ce.LO.box(a, { equals: Fe });
                                                         return (
                                                             'real' === t &&
                                                                 i.subscribe(
-                                                                    (0, Ae.aD)((e) => r.set(e)),
+                                                                    (0, Ce.aD)((e) => r.set(e)),
                                                                     e,
                                                                 ),
                                                             r
@@ -2638,11 +2649,11 @@
                                                     },
                                                     object: (e, u) => {
                                                         const a = null != u ? u : l(e),
-                                                            r = Ae.LO.box(a, { equals: Ee });
+                                                            r = Ce.LO.box(a, { equals: Fe });
                                                         return (
                                                             'real' === t &&
                                                                 i.subscribe(
-                                                                    (0, Ae.aD)((e) => r.set(e)),
+                                                                    (0, Ce.aD)((e) => r.set(e)),
                                                                     e,
                                                                 ),
                                                             r
@@ -2652,13 +2663,13 @@
                                                         const a = l(u);
                                                         if (Array.isArray(e)) {
                                                             const r = e.reduce(
-                                                                (e, u) => ((e[u] = Ae.LO.box(a[u], {})), e),
+                                                                (e, u) => ((e[u] = Ce.LO.box(a[u], {})), e),
                                                                 {},
                                                             );
                                                             return (
                                                                 'real' === t &&
                                                                     i.subscribe(
-                                                                        (0, Ae.aD)((u) => {
+                                                                        (0, Ce.aD)((u) => {
                                                                             e.forEach((e) => {
                                                                                 r[e].set(u[e]);
                                                                             });
@@ -2672,13 +2683,13 @@
                                                             const r = e,
                                                                 n = Object.entries(r),
                                                                 o = n.reduce(
-                                                                    (e, [u, t]) => ((e[t] = Ae.LO.box(a[u], {})), e),
+                                                                    (e, [u, t]) => ((e[t] = Ce.LO.box(a[u], {})), e),
                                                                     {},
                                                                 );
                                                             return (
                                                                 'real' === t &&
                                                                     i.subscribe(
-                                                                        (0, Ae.aD)((e) => {
+                                                                        (0, Ce.aD)((e) => {
                                                                             n.forEach(([u, t]) => {
                                                                                 o[t].set(e[u]);
                                                                             });
@@ -2733,9 +2744,9 @@
                                     collectionEntryPoint: e.object('collectionEntryPoint'),
                                     chapters: u,
                                 },
-                                a = (0, De.Om)(() => K(u.get(), ({ chapterState: e }) => e === ie.Active)),
-                                r = (0, De.Om)(() => Z(u.get(), ({ chapterState: e }) => e === ie.Completed)),
-                                n = (0, De.Om)((e) =>
+                                a = (0, ge.Om)(() => K(u.get(), ({ chapterState: e }) => e === ie.Active)),
+                                r = (0, ge.Om)(() => Z(u.get(), ({ chapterState: e }) => e === ie.Completed)),
+                                n = (0, ge.Om)((e) =>
                                     (function (e, u) {
                                         for (let t = 0; t < e.length; t++) {
                                             const a = X(e[t]);
@@ -2743,8 +2754,8 @@
                                         }
                                     })(u.get(), (u) => u.chapterID === e),
                                 ),
-                                o = (0, De.Om)(() => Y(u.get(), (e) => e), { equals: Ee }),
-                                s = (0, De.Om)((e) => K(t.chapters.get(), (u) => u.chapterType === e), { equals: Ee });
+                                o = (0, ge.Om)(() => Y(u.get(), (e) => e), { equals: Fe }),
+                                s = (0, ge.Om)((e) => K(t.chapters.get(), (u) => u.chapterType === e), { equals: Fe });
                             return Object.assign({}, t, {
                                 computes: {
                                     getChapterById: n,
@@ -2769,28 +2780,20 @@
                             openCollection: e.createCallbackNoArgs('collectionEntryPoint.openCollection'),
                         }),
                     ),
-                    ge = he[0],
-                    Be = he[1],
-                    pe = (e) => ({
-                        level: (null == e ? void 0 : e.currentLevel) || 0,
-                        to: null == e ? void 0 : e.levelProgression,
-                        from: null == e ? void 0 : e.levelProgression,
-                    });
-                let ve;
-                !(function (e) {
-                    (e.Small = 'small'), (e.Medium = 'medium'), (e.Large = 'large');
-                })(ve || (ve = {}));
-                const we = {
-                    base: 'App_base_26',
-                    backgroundBlur: 'App_backgroundBlur_26',
-                    background: 'App_background_6b',
-                    infoButtons: 'App_infoButtons_78',
-                    header: 'App_header_41',
-                    flags: 'App_flags_d9',
-                    chapters: 'App_chapters_8a',
-                    chapters__medium: 'App_chapters__medium_d5',
-                    chapters__small: 'App_chapters__small_9c',
-                };
+                    pe = Be[0],
+                    ve = Be[1],
+                    we = {
+                        base: 'App_base_26',
+                        backgroundBlur: 'App_backgroundBlur_26',
+                        background: 'App_background_6b',
+                        background__hasMarathon: 'App_background__hasMarathon_e7',
+                        infoButtons: 'App_infoButtons_78',
+                        header: 'App_header_41',
+                        flags: 'App_flags_d9',
+                        chapters: 'App_chapters_8a',
+                        chapters__medium: 'App_chapters__medium_d5',
+                        chapters__small: 'App_chapters__small_9c',
+                    };
                 var fe = t(9766);
                 const Se = {
                         base: 'Preview_base_1f',
@@ -3055,7 +3058,7 @@
                     Ze = 'Shield_emblem_59',
                     Ke = 'Shield_chapterLogoIcon_4b',
                     Qe = (0, Q.Pi)(({ size: e, chapterID: u = 0, progression: t }) => {
-                        const a = Be().model.computes.getChapterById(u);
+                        const a = ve().model.computes.getChapterById(u);
                         if (!a) return null;
                         const n = a.isBought,
                             o = a.chapterState,
@@ -3141,8 +3144,8 @@
                     );
                 }
                 const uu = R.strings.battle_pass,
-                    tu = (0, Q.Pi)(({ chapterID: e, progression: u, chapterSize: t = ve.Medium }) => {
-                        const n = Be(),
+                    tu = (0, Q.Pi)(({ chapterID: e, progression: u, chapterSize: t = Ae.Medium }) => {
+                        const n = ve(),
                             o = n.model,
                             s = n.controls,
                             i = f().mediaSize,
@@ -3442,7 +3445,7 @@
                         const t = (0, a.useState)(!1),
                             n = t[0],
                             o = t[1],
-                            s = Be(),
+                            s = ve(),
                             i = s.model,
                             l = s.controls,
                             _ = (0, lu.useSpring)({
@@ -3519,7 +3522,7 @@
                     Su = 'Header_freePointsIcon_be',
                     Lu = R.strings.battle_pass.chapterChoice.freePoints,
                     Pu = (0, Q.Pi)(({ title: e, description: u }) => {
-                        const t = Be().model,
+                        const t = ve().model,
                             a = t.root.get().freePoints,
                             n = !t.computes.isCompleted() && a > 0;
                         return r().createElement(
@@ -3569,7 +3572,7 @@
                 }
                 const Tu = R.strings.battle_pass,
                     Iu = (0, Q.Pi)(() => {
-                        const e = Be(),
+                        const e = ve(),
                             u = e.model,
                             t = e.controls,
                             a = u.root.get(),
@@ -3607,7 +3610,7 @@
                                     r().createElement(hu, {
                                         key: t,
                                         chapterId: e.chapterID,
-                                        progression: pe(u.computes.getChapterById(e.chapterID)),
+                                        progression: Ee(u.computes.getChapterById(e.chapterID)),
                                     }),
                                 ),
                             ),
@@ -3662,7 +3665,7 @@
                     },
                     zu = R.strings.battle_pass,
                     ju = (0, Q.Pi)(() => {
-                        const e = Be(),
+                        const e = ve(),
                             u = e.model,
                             t = e.controls,
                             n = u.root.get(),
@@ -3680,7 +3683,7 @@
                             C = t.takeRewards,
                             b = t.close,
                             D = u.computes.getChapters(),
-                            g = ((e) => (e < 3 ? ve.Large : e > 4 ? ve.Small : ve.Medium))(D.length),
+                            g = ((e) => (e < 3 ? Ae.Large : e > 4 ? Ae.Small : Ae.Medium))(D.length),
                             B = D.findIndex((e) => e.chapterType === ee.Marathon),
                             p = u.collectionEntryPoint.get(),
                             v = p.collectionItemCount,
@@ -3719,11 +3722,30 @@
                             T = u.computes.hasActive() ? zu.chapterChoice.activeTitle() : zu.chapterChoice.title(),
                             I = M ? J.tankman : J.style,
                             O = zu.chapterChoice.description.$dyn(I) || '',
-                            R = u.computes.isCompleted();
+                            R = u.computes.isCompleted(),
+                            H = () => ({
+                                pointsCount: s,
+                                notChosenRewardCount: o,
+                                coinCount: i,
+                                collectionItemCount: v,
+                                maxCollectionItemCount: f,
+                                newCollectionItemCount: w,
+                                isBPFirstEnter: S,
+                                isCollectionsEnabled: L,
+                                isAwardDisabled: !_,
+                                isPointsLocked: !l,
+                                onPointsClick: E,
+                                onCoinClick: A,
+                                onTakeRewardsClick: C,
+                                onCollectionClick: c,
+                                hasMarathon: u.computes.hasChapter(ee.Marathon),
+                                hasResource: u.computes.hasChapter(ee.Resource),
+                            }),
+                            $ = h()(we.background, H().hasMarathon && we.background__hasMarathon);
                         return r().createElement(
                             'div',
                             { className: we.base },
-                            r().createElement('div', { className: we.background }),
+                            r().createElement('div', { className: $ }),
                             R
                                 ? r().createElement(
                                       r().Fragment,
@@ -3753,28 +3775,7 @@
                                           { className: we.header },
                                           r().createElement(Pu, { title: T, description: O }),
                                       ),
-                                      r().createElement(
-                                          'div',
-                                          { className: we.flags },
-                                          r().createElement(me.Z, {
-                                              pointsCount: s,
-                                              notChosenRewardCount: o,
-                                              coinCount: i,
-                                              collectionItemCount: v,
-                                              maxCollectionItemCount: f,
-                                              newCollectionItemCount: w,
-                                              isBPFirstEnter: S,
-                                              isCollectionsEnabled: L,
-                                              isAwardDisabled: !_,
-                                              isPointsLocked: !l,
-                                              onPointsClick: E,
-                                              onCoinClick: A,
-                                              onTakeRewardsClick: C,
-                                              onCollectionClick: c,
-                                              hasMarathon: u.computes.hasChapter(ee.Marathon),
-                                              hasResource: u.computes.hasChapter(ee.Resource),
-                                          }),
-                                      ),
+                                      r().createElement('div', { className: we.flags }, r().createElement(me.Z, H())),
                                       r().createElement(
                                           'div',
                                           { className: N },
@@ -3786,7 +3787,7 @@
                                                   r().createElement(tu, {
                                                       chapterID: e,
                                                       chapterSize: g,
-                                                      progression: pe(u.computes.getChapterById(e)),
+                                                      progression: Ee(u.computes.getChapterById(e)),
                                                   }),
                                               ),
                                           ),
@@ -3796,14 +3797,14 @@
                     });
                 engine.whenReady.then(() => {
                     I().render(
-                        r().createElement(N, null, r().createElement(ge, null, r().createElement(ju, null))),
+                        r().createElement(N, null, r().createElement(pe, null, r().createElement(ju, null))),
                         document.getElementById('root'),
                     );
                 });
             },
             903: (e, u, t) => {
                 'use strict';
-                t.d(u, { OH: () => l, TZ: () => i, cs: () => o, fW: () => s, wD: () => n });
+                t.d(u, { FL: () => s, OH: () => _, TZ: () => l, cs: () => o, fW: () => i, wD: () => n });
                 var a = t(8546);
                 const r = (e) => {
                         switch (e) {
@@ -3827,15 +3828,20 @@
                             s = `${r(t)}${o}`;
                         return { backgroundImage: `url(${n(a, e, s)})` };
                     },
-                    s = (e, u) => {
+                    s = (e, u, t, a) => {
+                        const r = R.images.gui.maps.icons.battlePass.logo,
+                            o = n(r, e, `emblem${a ? '_BP' : ''}${t ? '_open' : ''}${u}`);
+                        return o ? { backgroundImage: `url(${o})` } : void 0;
+                    },
+                    i = (e, u) => {
                         const t = R.images.gui.maps.icons.battlePass.logo.flag,
                             a = r(u);
                         return { backgroundImage: `url(${n(t, e, a)})` };
                     },
-                    i = (e) => ({
+                    l = (e) => ({
                         backgroundImage: `url(${n(R.images.gui.maps.icons.battlePass.chapter_choice.commander, e)})`,
                     }),
-                    l = (e) => ({
+                    _ = (e) => ({
                         backgroundImage: `url(${n(R.images.gui.maps.icons.battlePass.chapter_choice.tank, e)})`,
                     });
             },
@@ -4496,47 +4502,49 @@
                         t = e.size,
                         a = e.battlePassState,
                         n = e.hasBattlePass,
-                        i = e.isChapterChosen,
-                        l = e.hasBeenActive,
-                        c = void 0 !== l && l,
-                        d = e.isChapterSelection,
-                        E = void 0 !== d && d,
-                        A = e.isOpen,
-                        b = void 0 !== A && A,
-                        D = e.isProgression,
-                        h = void 0 !== D && D,
-                        g = e.showProgressBar,
-                        B = void 0 === g || g,
-                        p = e.chapterType;
-                    let v = '',
-                        w = '';
+                        l = e.isChapterChosen,
+                        c = e.hasBeenActive,
+                        d = void 0 !== c && c,
+                        E = e.isChapterSelection,
+                        A = void 0 !== E && E,
+                        b = e.isOpen,
+                        D = void 0 !== b && b,
+                        h = e.isProgression,
+                        g = void 0 !== h && h,
+                        B = e.showProgressBar,
+                        p = void 0 === B || B,
+                        v = e.chapterType,
+                        w = e.chapterID;
+                    let f = '',
+                        S = '',
+                        L = '';
                     t === _.$u.Small
-                        ? ((v = 'Small'), (w = '__small'))
-                        : t === _.$u.Micro && ((v = 'Micro'), (w = '__micro'));
-                    const f = b ? 'Open' : '',
-                        S = a === _.Bq.CompletedRightNow,
-                        L = n || a === _.Bq.Bought,
-                        P = (a === _.Bq.Completed || S) && L,
-                        k = (a === _.Bq.Completed || S) && !L,
-                        y = P || k,
-                        x = r()(
+                        ? ((f = 'Small'), (S = '__small'), (L = '_small'))
+                        : t === _.$u.Micro && ((f = 'Micro'), (S = '__micro'), (L = '_micro'));
+                    const P = D ? 'Open' : '',
+                        k = a === _.Bq.CompletedRightNow,
+                        y = n || a === _.Bq.Bought,
+                        x = (a === _.Bq.Completed || k) && y,
+                        M = (a === _.Bq.Completed || k) && !y,
+                        N = x || M,
+                        T = r()(
                             s.image,
-                            s[`image${w}`],
-                            b && s[`image__open${v}`],
-                            L && s[`image__battlePass${v}${f}`],
-                            a === _.Bq.AwaitSeason && s[`image__seasonWaiting${v}`],
-                            k && s[`image__completedFree${v}${f}`],
+                            s[`image${S}`],
+                            D && s[`image__open${f}`],
+                            y && s[`image__battlePass${f}${P}`],
+                            a === _.Bq.AwaitSeason && s[`image__seasonWaiting${f}`],
+                            M && s[`image__completedFree${f}${P}`],
                         ),
-                        M = r()(s[`${p}`], s[`${p}${w}`]),
-                        N = void 0 !== u.from,
-                        T = B && ((N && i) || c);
+                        I = r()(s[`${v}`], s[`${v}${S}`]),
+                        O = void 0 !== u.from,
+                        R = p && ((O && l) || d);
                     return o().createElement(
                         'div',
                         { className: s.base },
-                        o().createElement('div', { className: M }),
+                        o().createElement('div', { className: I }),
                         o().createElement(
                             'div',
-                            { className: x },
+                            { className: T, style: (0, i.FL)(w, L, D, y) },
                             a !== _.Bq.AwaitSeason &&
                                 o().createElement(
                                     o().Fragment,
@@ -4545,24 +4553,24 @@
                                         m,
                                         C(
                                             {
-                                                hasProgression: N,
-                                                isGolden: L,
-                                                isProgressionCompleted: y,
-                                                isChapterChosen: i,
-                                                hasBeenActive: c,
-                                                isChapterSelection: E,
-                                                isProgression: h,
+                                                hasProgression: O,
+                                                isGolden: y,
+                                                isProgressionCompleted: N,
+                                                isChapterChosen: l,
+                                                hasBeenActive: d,
+                                                isChapterSelection: A,
+                                                isProgression: g,
                                             },
                                             e,
                                             u,
                                         ),
                                     ),
-                                    T &&
+                                    R &&
                                         o().createElement(F, {
                                             key: u.to,
                                             progression: u,
-                                            showProgressionCompleted: S,
-                                            isProgressionCompleted: y,
+                                            showProgressionCompleted: k,
+                                            isProgressionCompleted: N,
                                             size: t,
                                         }),
                                 ),

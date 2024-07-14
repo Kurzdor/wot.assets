@@ -562,7 +562,8 @@
                             (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (e.BattleBoosterGift = 'battleBooster_gift'),
                             (e.CosmicLootboxSilver = 'lootBoxToken'),
-                            (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                            (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                            (e.RacesPoint = 'races_point');
                     })(r || (r = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -701,7 +702,7 @@
                         s.E4.CosmicLootboxSilver,
                     ],
                     o = [s.E4.Gold, s.E4.Credits, s.E4.Crystal, s.E4.FreeXp],
-                    l = [s.E4.BattlePassPoints],
+                    l = [s.E4.BattlePassPoints, s.E4.RacesPoint],
                     c = [s.E4.PremiumPlus, s.E4.Premium],
                     E = (e) =>
                         i.includes(e)
@@ -756,9 +757,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${u}.${a}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === u
-                                    ? e.iconBig.replace('..', 'img://gui')
-                                    : e.iconSmall.replace('..', 'img://gui');
+                                return ((e, u) => {
+                                    switch (u) {
+                                        case s.h2.Big:
+                                            return e.iconBig.replace('..', 'img://gui');
+                                        case s.h2.Small:
+                                            return e.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${u}.${e.icon}`;
+                                    }
+                                })(e, u);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -3169,25 +3177,24 @@
                 iu.defaultProps = { isEnough: !0 };
                 const ou = a().memo(iu),
                     lu = 'Price_base_d1',
-                    cu = 'Price_divider_2d',
-                    Eu = { left: ru.gold, right: ru.freeXP },
+                    cu = { left: ru.gold, right: ru.freeXP },
+                    Eu =
+                        (R.strings.battle_pass.battlePassBuyView.card,
+                        (0, f.Pi)(({ chapterID: e, className: u }) => {
+                            const t = G().model.computes.findCurrencyByType(e, cu.left),
+                                r = !1;
+                            return t
+                                ? a().createElement(
+                                      'div',
+                                      { className: i()(lu, u) },
+                                      t && a().createElement(ou, { type: cu.left, size: tu.small, value: t.value }),
+                                      t && r,
+                                      r,
+                                  )
+                                : null;
+                        })),
                     du = R.strings.battle_pass.battlePassBuyView.card,
-                    _u = (0, f.Pi)(({ chapterID: e, className: u }) => {
-                        const t = G().model.computes,
-                            r = t.findCurrencyByType(e, Eu.left),
-                            n = t.findCurrencyByType(e, Eu.right);
-                        return r || n
-                            ? a().createElement(
-                                  'div',
-                                  { className: i()(lu, u) },
-                                  r && a().createElement(ou, { type: Eu.left, size: tu.small, value: r.value }),
-                                  r && n && a().createElement('div', { className: cu }, du.priceDivider()),
-                                  n && a().createElement(ou, { type: Eu.right, size: tu.small, value: n.value }),
-                              )
-                            : null;
-                    }),
-                    mu = R.strings.battle_pass.battlePassBuyView.card,
-                    Au = (0, f.Pi)(
+                    _u = (0, f.Pi)(
                         ({
                             chapterID: e = 1,
                             animationOrder: u = 0,
@@ -3268,121 +3275,121 @@
                                 ),
                                 A
                                     ? a().createElement(Ae, { className: De.state })
-                                    : a().createElement(_u, { chapterID: e, className: De.price }),
+                                    : a().createElement(Eu, { chapterID: e, className: De.price }),
                                 h &&
                                     a().createElement(
                                         'div',
                                         { className: De.chapterActiveText },
-                                        mu.activeChapter.text(),
+                                        du.activeChapter.text(),
                                     ),
                             );
                         },
                     );
-                var Fu = t(3457),
-                    Du = t(3815),
-                    Cu = t(7030);
-                const Bu = 'ShopOfferCard_base_3a',
-                    gu = 'ShopOfferCard_base__wide_1c',
-                    pu = 'ShopOfferCard_background_44',
-                    hu = 'ShopOfferCard_shopOfferBorder_25',
-                    fu = 'ShopOfferCard_illustrationWrapper_94',
-                    vu = 'ShopOfferCard_illustration_0c',
-                    bu = 'ShopOfferCard_illustration__wide_c6',
-                    wu = 'ShopOfferCard_backgroundAsset_a4',
-                    yu = 'ShopOfferCard_backgroundColor_45',
-                    Su = 'ShopOfferCard_shopOfferDiscount_a1',
-                    Ru = 'ShopOfferCard_timer_42',
-                    Pu = 'ShopOfferCard_content_ce',
-                    ku = 'ShopOfferCard_title_4d',
-                    Tu = 'ShopOfferCard_base__highlighted_42',
-                    Nu = 'ShopOfferCard_description_1c',
-                    xu = 'ShopOfferCard_buttonContainer_99',
-                    Lu = 'ShopOfferCard_button_d0',
-                    Mu = 'ShopOfferCard_warningOverlay_90',
-                    Ou = R.strings.battle_pass.battlePassBuyView.card,
-                    Iu = (0, f.Pi)(({ isWarningHighlighted: e = !1, isWide: u = !1 }) => {
+                var mu = t(3457),
+                    Au = t(3815),
+                    Fu = t(7030);
+                const Du = 'ShopOfferCard_base_3a',
+                    Cu = 'ShopOfferCard_base__wide_1c',
+                    Bu = 'ShopOfferCard_background_44',
+                    gu = 'ShopOfferCard_shopOfferBorder_25',
+                    pu = 'ShopOfferCard_illustrationWrapper_94',
+                    hu = 'ShopOfferCard_illustration_0c',
+                    fu = 'ShopOfferCard_illustration__wide_c6',
+                    vu = 'ShopOfferCard_backgroundAsset_a4',
+                    bu = 'ShopOfferCard_backgroundColor_45',
+                    wu = 'ShopOfferCard_shopOfferDiscount_a1',
+                    yu = 'ShopOfferCard_timer_42',
+                    Su = 'ShopOfferCard_content_ce',
+                    Ru = 'ShopOfferCard_title_4d',
+                    Pu = 'ShopOfferCard_base__highlighted_42',
+                    ku = 'ShopOfferCard_description_1c',
+                    Tu = 'ShopOfferCard_buttonContainer_99',
+                    Nu = 'ShopOfferCard_button_d0',
+                    xu = 'ShopOfferCard_warningOverlay_90',
+                    Lu = R.strings.battle_pass.battlePassBuyView.card,
+                    Mu = (0, f.Pi)(({ isWarningHighlighted: e = !1, isWide: u = !1 }) => {
                         const t = G(),
                             r = t.controls,
                             n = t.model.main.shopOfferTimeLeft.get(),
                             s = (0, c.GS)().mediaSize < c.cJ.Medium,
-                            o = (0, Du.z)(() => {
+                            o = (0, Au.z)(() => {
                                 $.$.playClick(), r.shopOffer();
                             }),
-                            l = (0, Du.z)(() => {
+                            l = (0, Au.z)(() => {
                                 (0, $.G)('bp_highlight');
                             }),
-                            E = (0, Cu.useTransition)(e, {
+                            E = (0, Fu.useTransition)(e, {
                                 from: { opacity: 0 },
                                 enter: { opacity: 1 },
                                 leave: { opacity: 0 },
                                 config: { duration: 200 },
                             }),
-                            d = i()(Bu, e && Tu, u && gu);
+                            d = i()(Du, e && Pu, u && Cu);
                         return a().createElement(
                             'div',
                             { className: d, onClick: o, onMouseEnter: l },
                             a().createElement(
                                 'div',
-                                { className: pu },
+                                { className: Bu },
                                 a().createElement(
                                     'div',
-                                    { className: fu },
-                                    a().createElement('div', { className: i()(vu, u && bu) }),
+                                    { className: pu },
+                                    a().createElement('div', { className: i()(hu, u && fu) }),
                                 ),
-                                a().createElement('div', { className: hu }),
+                                a().createElement('div', { className: gu }),
+                                a().createElement('div', { className: vu }),
+                                a().createElement('div', { className: bu }),
                                 a().createElement('div', { className: wu }),
-                                a().createElement('div', { className: yu }),
-                                a().createElement('div', { className: Su }),
-                                E((e, u) => u && a().createElement(Cu.animated.div, { style: e, className: Mu })),
+                                E((e, u) => u && a().createElement(Fu.animated.div, { style: e, className: xu })),
                             ),
                             n
-                                ? a().createElement('div', { className: Ru }, a().createElement(xe, { expireTime: n }))
+                                ? a().createElement('div', { className: yu }, a().createElement(xe, { expireTime: n }))
                                 : '',
                             a().createElement(
                                 'div',
-                                { className: Pu },
+                                { className: Su },
+                                a().createElement(
+                                    'div',
+                                    { className: Ru },
+                                    u ? Lu.title.shopOfferWide() : Lu.title.shopOffer(),
+                                ),
                                 a().createElement(
                                     'div',
                                     { className: ku },
-                                    u ? Ou.title.shopOfferWide() : Ou.title.shopOffer(),
+                                    e ? Lu.shopOfferWaning() : Lu.descr.shopOffer(),
                                 ),
                                 a().createElement(
                                     'div',
-                                    { className: Nu },
-                                    e ? Ou.shopOfferWaning() : Ou.descr.shopOffer(),
-                                ),
-                                a().createElement(
-                                    'div',
-                                    { className: xu },
+                                    { className: Tu },
                                     a().createElement(
-                                        Fu.u5,
+                                        mu.u5,
                                         {
-                                            type: Fu.L$.main,
-                                            size: s ? Fu.qE.small : Fu.qE.medium,
-                                            mixClass: Lu,
+                                            type: mu.L$.main,
+                                            size: s ? mu.qE.small : mu.qE.medium,
+                                            mixClass: Nu,
                                             onClick: o,
                                             disabled: e,
                                         },
-                                        Ou.button.shopOffer(),
+                                        Lu.button.shopOffer(),
                                     ),
                                 ),
                             ),
                         );
                     }),
-                    Hu = 'CardAppearTransition_base_2e',
-                    Uu = ({ animationOrder: e = 0, children: u }) => {
+                    Ou = 'CardAppearTransition_base_2e',
+                    Iu = ({ animationOrder: e = 0, children: u }) => {
                         const t = 600 + 100 * e;
                         (0, n.useEffect)(() => je(() => (0, $.G)('bp_buy_pass_01'), t), [t]);
                         const r = (0, n.useMemo)(() => ({ animationDelay: `${t}ms` }), [t]);
-                        return a().createElement('div', { style: r, className: Hu }, u);
+                        return a().createElement('div', { style: r, className: Ou }, u);
                     },
-                    Wu = 'ExtraContent_base_4d',
-                    Gu = 'ExtraContent_cardsWrapper_31',
-                    $u = 'ExtraContent_cards_b2',
-                    zu = 'ExtraContent_card__isShopOfferAvailable_25',
-                    Vu = 'ExtraContent_card_4c',
-                    qu = 'ExtraContent_card__extra_fe',
-                    ju = (0, f.Pi)(() => {
+                    Hu = 'ExtraContent_base_4d',
+                    Uu = 'ExtraContent_cardsWrapper_31',
+                    Wu = 'ExtraContent_cards_b2',
+                    Gu = 'ExtraContent_card__isShopOfferAvailable_25',
+                    $u = 'ExtraContent_card_4c',
+                    zu = 'ExtraContent_card__extra_fe',
+                    Vu = (0, f.Pi)(() => {
                         const e = (0, n.useState)(!1),
                             u = e[0],
                             t = e[1],
@@ -3399,34 +3406,34 @@
                             }, []);
                         return a().createElement(
                             'div',
-                            { className: Wu },
+                            { className: Hu },
                             a().createElement(
                                 'div',
-                                { className: Gu },
+                                { className: Uu },
                                 s &&
                                     a().createElement(
                                         'div',
-                                        { className: i()(Vu, zu) },
+                                        { className: i()($u, Gu) },
                                         a().createElement(
-                                            Uu,
+                                            Iu,
                                             null,
-                                            a().createElement(Iu, { isWarningHighlighted: u, isWide: c }),
+                                            a().createElement(Mu, { isWarningHighlighted: u, isWide: c }),
                                         ),
                                     ),
                                 a().createElement(
                                     'div',
-                                    { className: $u },
+                                    { className: Wu },
                                     O.DZ(
                                         l,
                                         (e) => !(e.chapterType === H._U.Marathon),
                                         (e, u) =>
                                             a().createElement(
                                                 'div',
-                                                { key: e.packageID, className: Vu },
+                                                { key: e.packageID, className: $u },
                                                 a().createElement(
-                                                    Uu,
+                                                    Iu,
                                                     { animationOrder: u + 1 },
-                                                    a().createElement(Au, {
+                                                    a().createElement(_u, {
                                                         chapterID: e.chapterID,
                                                         isShopOfferAvailable: s,
                                                         animationOrder: u + 1,
@@ -3445,11 +3452,11 @@
                                 (e) =>
                                     a().createElement(
                                         'div',
-                                        { key: e.packageID, className: i()(Vu, qu) },
+                                        { key: e.packageID, className: i()($u, zu) },
                                         a().createElement(
-                                            Uu,
+                                            Iu,
                                             { animationOrder: l.length + 1 },
-                                            a().createElement(Au, {
+                                            a().createElement(_u, {
                                                 chapterID: e.chapterID,
                                                 isShopOfferAvailable: !1,
                                                 isMarathon: !0,
@@ -3462,8 +3469,8 @@
                             ),
                         );
                     }),
-                    Yu = R.strings.battle_pass.battlePassBuyView,
-                    Xu = (0, f.Pi)(({ onClose: e }) => {
+                    qu = R.strings.battle_pass.battlePassBuyView,
+                    ju = (0, f.Pi)(({ onClose: e }) => {
                         const u = G().model.computes.firstChapter();
                         return (
                             Q(e),
@@ -3487,51 +3494,51 @@
                                 a().createElement(
                                     'div',
                                     { className: ne },
-                                    a().createElement('div', { className: ae }, Yu.title()),
-                                    a().createElement('div', { className: se }, Yu.descr()),
+                                    a().createElement('div', { className: ae }, qu.title()),
+                                    a().createElement('div', { className: se }, qu.descr()),
                                 ),
-                                a().createElement(ju, null),
+                                a().createElement(Vu, null),
                             )
                         );
                     });
-                var Zu = t(280),
-                    Ku = t(2862),
-                    Qu = t(5739);
-                var Ju = t(7264),
-                    et = t(3942),
-                    ut = t(9525);
-                const tt = 'ChapterWarning_base_fe',
-                    rt = 'ChapterWarning_base__isMulticurrency_be',
-                    nt = 'ChapterWarning_lip_a0',
-                    at = 'ChapterWarning_message_62',
-                    st = 'ChapterWarning_icon_d2',
-                    it = R.strings.battle_pass.battlePassBuyView.confirm,
-                    ot = ({ className: e, isMulticurrency: u, isDisabled: t = !1 }) =>
+                var Yu = t(280),
+                    Xu = t(2862),
+                    Zu = t(5739);
+                var Ku = t(7264),
+                    Qu = t(3942),
+                    Ju = t(9525);
+                const et = 'ChapterWarning_base_fe',
+                    ut = 'ChapterWarning_base__isMulticurrency_be',
+                    tt = 'ChapterWarning_lip_a0',
+                    rt = 'ChapterWarning_message_62',
+                    nt = 'ChapterWarning_icon_d2',
+                    at = R.strings.battle_pass.battlePassBuyView.confirm,
+                    st = ({ className: e, isMulticurrency: u, isDisabled: t = !1 }) =>
                         a().createElement(
                             'div',
-                            { className: i()(tt, e, u && rt) },
-                            a().createElement('div', { className: nt }),
+                            { className: i()(et, e, u && ut) },
+                            a().createElement('div', { className: tt }),
                             a().createElement(
                                 'div',
-                                { className: at },
-                                a().createElement('span', { className: st }),
-                                t ? it.shopOfferWarningDisabledChapter() : it.shopOfferWarningNoActiveChapter(),
+                                { className: rt },
+                                a().createElement('span', { className: nt }),
+                                t ? at.shopOfferWarningDisabledChapter() : at.shopOfferWarningNoActiveChapter(),
                             ),
                         );
-                let lt;
+                let it;
                 !(function (e) {
                     (e[(e.LEFT = 0)] = 'LEFT'),
                         (e[(e.WHEEL = 1)] = 'WHEEL'),
                         (e[(e.RIGHT = 2)] = 'RIGHT'),
                         (e[(e.FOURTH = 3)] = 'FOURTH'),
                         (e[(e.FIFTH = 4)] = 'FIFTH');
-                })(lt || (lt = {}));
-                var ct = t(1856);
-                let Et;
+                })(it || (it = {}));
+                var ot = t(1856);
+                let lt;
                 !(function (e) {
                     (e.Small = 'small'), (e.Medium = 'medium');
-                })(Et || (Et = {}));
-                const dt = {
+                })(lt || (lt = {}));
+                const ct = {
                         base: 'RadioButton_base_d9',
                         base__disabled: 'RadioButton_base__disabled_84',
                         input: 'RadioButton_input_24',
@@ -3552,7 +3559,7 @@
                         base__checkMousedown: 'RadioButton_base__checkMousedown_83',
                         label: 'RadioButton_label_7f',
                     },
-                    _t = [
+                    Et = [
                         'children',
                         'labelRenderer',
                         'value',
@@ -3572,9 +3579,9 @@
                         'onFocus',
                         'onBlur',
                     ];
-                function mt() {
+                function dt() {
                     return (
-                        (mt =
+                        (dt =
                             Object.assign ||
                             function (e) {
                                 for (var u = 1; u < arguments.length; u++) {
@@ -3583,10 +3590,10 @@
                                 }
                                 return e;
                             }),
-                        mt.apply(this, arguments)
+                        dt.apply(this, arguments)
                     );
                 }
-                const At = (0, n.memo)((e) => {
+                const _t = (0, n.memo)((e) => {
                         let u = e.children,
                             t = e.labelRenderer,
                             r = e.value,
@@ -3596,7 +3603,7 @@
                             c = e.disabled,
                             E = void 0 !== c && c,
                             d = e.size,
-                            _ = void 0 === d ? Et.Medium : d,
+                            _ = void 0 === d ? lt.Medium : d,
                             m = e.label,
                             A = e.soundHover,
                             F = void 0 === A ? 'highlight' : A,
@@ -3618,7 +3625,7 @@
                                     a = Object.keys(e);
                                 for (r = 0; r < a.length; r++) (t = a[r]), u.indexOf(t) >= 0 || (n[t] = e[t]);
                                 return n;
-                            })(e, _t);
+                            })(e, Et);
                         const S = r === s,
                             R = (0, n.useState)(!1),
                             P = R[0],
@@ -3660,7 +3667,7 @@
                             G = (0, n.useCallback)(
                                 (e) => {
                                     if (!E) {
-                                        const u = e.button === lt.LEFT;
+                                        const u = e.button === it.LEFT;
                                         u && k(!0), u && h && h(r, e), C && (0, $.G)(C), l && H();
                                     }
                                 },
@@ -3696,41 +3703,41 @@
                                 },
                                 [E, w, r],
                             ),
-                            X = i()(dt.base, dt[`base__${_}`], {
-                                [dt.base__blank]: !S && !N,
-                                [dt.base__blankHover]: !S && N && !P,
-                                [dt.base__blankMousedown]: !S && N && P,
-                                [dt.base__check]: S && !N,
-                                [dt.base__checkHover]: S && N && !P,
-                                [dt.base__checkMousedown]: S && N && P,
-                                [dt.base__focused]: M,
-                                [dt.base__disabled]: E,
+                            X = i()(ct.base, ct[`base__${_}`], {
+                                [ct.base__blank]: !S && !N,
+                                [ct.base__blankHover]: !S && N && !P,
+                                [ct.base__blankMousedown]: !S && N && P,
+                                [ct.base__check]: S && !N,
+                                [ct.base__checkHover]: S && N && !P,
+                                [ct.base__checkMousedown]: S && N && P,
+                                [ct.base__focused]: M,
+                                [ct.base__disabled]: E,
                             }),
                             Z = (0, n.useMemo)(
                                 () => ({ isHovered: N, isMouseDown: P, isFocused: M, isChecked: S }),
                                 [N, P, M, S],
                             ),
-                            K = (0, n.useRef)(dt.blank),
-                            Q = (0, n.useRef)(dt.blankHover),
-                            J = (0, n.useRef)(dt.blankMousedown),
-                            ee = (0, n.useRef)(dt.check),
-                            ue = (0, n.useRef)(dt.checkHover),
-                            te = (0, n.useRef)(dt.checkMousedown);
+                            K = (0, n.useRef)(ct.blank),
+                            Q = (0, n.useRef)(ct.blankHover),
+                            J = (0, n.useRef)(ct.blankMousedown),
+                            ee = (0, n.useRef)(ct.check),
+                            ue = (0, n.useRef)(ct.checkHover),
+                            te = (0, n.useRef)(ct.checkMousedown);
                         return (
                             (0, n.useEffect)(
-                                (0, ct.v)(() => {
-                                    (K.current = i()(dt.blank, dt.transition)),
-                                        (Q.current = i()(dt.blankHover, dt.transition)),
-                                        (J.current = i()(dt.blankMousedown, dt.transition)),
-                                        (ee.current = i()(dt.check, dt.transition)),
-                                        (ue.current = i()(dt.checkHover, dt.transition)),
-                                        (te.current = i()(dt.checkMousedown, dt.transition));
+                                (0, ot.v)(() => {
+                                    (K.current = i()(ct.blank, ct.transition)),
+                                        (Q.current = i()(ct.blankHover, ct.transition)),
+                                        (J.current = i()(ct.blankMousedown, ct.transition)),
+                                        (ee.current = i()(ct.check, ct.transition)),
+                                        (ue.current = i()(ct.checkHover, ct.transition)),
+                                        (te.current = i()(ct.checkMousedown, ct.transition));
                                 }),
                                 [],
                             ),
                             a().createElement(
                                 'div',
-                                mt(
+                                dt(
                                     {
                                         ref: I,
                                         className: X,
@@ -3746,7 +3753,7 @@
                                 ),
                                 a().createElement(
                                     'div',
-                                    { className: dt.input },
+                                    { className: ct.input },
                                     a().createElement('div', { className: K.current }),
                                     a().createElement('div', { className: Q.current }),
                                     a().createElement('div', { className: J.current }),
@@ -3754,92 +3761,66 @@
                                     a().createElement('div', { className: ue.current }),
                                     a().createElement('div', { className: te.current }),
                                 ),
-                                a().createElement('div', { className: dt.label }, m || u || (t && t(Z))),
+                                a().createElement('div', { className: ct.label }, m || u || (t && t(Z))),
                             )
                         );
                     }),
-                    Ft = 'CurrencyRadioButton_currency_80',
-                    Dt = (0, f.Pi)(({ currencyType: e, value: u, priceID: t, currentPriceID: r, onClick: n }) =>
-                        a().createElement(
-                            At,
-                            {
-                                value: t,
-                                currentValue: r,
-                                onClick: () => {
-                                    n(t);
-                                },
-                            },
+                    mt = 'CurrencyRadioButton_currency_80',
+                    At =
+                        ((0, f.Pi)(({ currencyType: e, value: u, priceID: t, currentPriceID: r, onClick: n }) =>
                             a().createElement(
-                                'div',
-                                { className: Ft },
-                                a().createElement(ou, { type: e, size: tu.big, value: u }),
+                                _t,
+                                {
+                                    value: t,
+                                    currentValue: r,
+                                    onClick: () => {
+                                        n(t);
+                                    },
+                                },
+                                a().createElement(
+                                    'div',
+                                    { className: mt },
+                                    a().createElement(ou, { type: e, size: tu.big, value: u }),
+                                ),
                             ),
                         ),
-                    ),
-                    Ct = 'Price_base_70',
-                    Bt = 'Price_label_84',
-                    gt = 'Price_label__isMulticurrency_b4',
-                    pt = 'Price_priceDivider_b4',
-                    ht = R.strings.battle_pass.battlePassBuyView,
-                    ft = { left: ru.gold, right: ru.freeXP },
-                    vt = (0, f.Pi)(({ className: e }) => {
+                        'Price_base_70'),
+                    Ft = 'Price_label_84',
+                    Dt = R.strings.battle_pass.battlePassBuyView,
+                    Ct = { left: ru.gold, right: ru.freeXP },
+                    Bt = (0, f.Pi)(({ className: e }) => {
                         const u = G(),
                             t = u.model,
                             r = u.controls,
-                            s = t.priceID.get(),
-                            o = t.computes.prices(),
-                            l = o.find((e) => e.currencyType === ft.left),
-                            c = o.find((e) => e.currencyType === ft.right);
+                            s = t.priceID.get();
+                        t.computes.prices().find((e) => e.currencyType === Ct.left);
                         return (
                             (0, n.useEffect)(() => {
                                 s || r.setPriceID(t.confirm.compoundPriceDefaultID.get());
                             }, [r, s, t.confirm.compoundPriceDefaultID]),
                             a().createElement(
                                 'div',
-                                { className: i()(Ct, e) },
-                                l && c
-                                    ? a().createElement(
-                                          a().Fragment,
-                                          null,
-                                          a().createElement('div', { className: i()(Bt, gt) }, ht.multicurrencyPrice()),
-                                          a().createElement(Dt, {
-                                              currencyType: ft.left,
-                                              value: l.value,
-                                              priceID: l.priceID,
-                                              currentPriceID: s,
-                                              onClick: r.setPriceID,
-                                          }),
-                                          a().createElement('div', { className: pt }, ht.priceDivider()),
-                                          a().createElement(Dt, {
-                                              currencyType: ft.right,
-                                              value: c.value,
-                                              priceID: c.priceID,
-                                              currentPriceID: s,
-                                              onClick: r.setPriceID,
-                                          }),
-                                      )
-                                    : a().createElement(
-                                          a().Fragment,
-                                          null,
-                                          a().createElement('div', { className: Bt }, ht.price()),
-                                          a().createElement(ou, {
-                                              type: ru.gold,
-                                              size: tu.big,
-                                              value: t.confirm.price.get(),
-                                          }),
-                                      ),
+                                { className: i()(At, e) },
+                                a().createElement(
+                                    a().Fragment,
+                                    null,
+                                    a().createElement('div', { className: Ft }, Dt.price()),
+                                    a().createElement(ou, {
+                                        type: ru.gold,
+                                        size: tu.big,
+                                        value: t.confirm.price.get(),
+                                    }),
+                                ),
                             )
                         );
                     }),
-                    bt = 'Footer_base_9a',
-                    wt = 'Footer_base__isMulticurrency_33',
-                    yt = 'Footer_divider_5e',
-                    St = 'Footer_price_b6',
-                    Rt = 'Footer_warning_de',
-                    Pt = 'Footer_buttons_32',
-                    kt = 'Footer_chapterWarning_c1',
-                    Tt = R.strings.battle_pass.battlePassBuyView,
-                    Nt = (0, f.Pi)(({ onBackClick: e }) => {
+                    gt = 'Footer_base_9a',
+                    pt = 'Footer_price_b6',
+                    ht = 'Footer_warning_de',
+                    ft = 'Footer_buttons_32',
+                    vt = 'Footer_chapterWarning_c1',
+                    bt = R.strings.battle_pass.battlePassBuyView,
+                    wt = (0, f.Pi)(({ onBackClick: e }) => {
                         const u = G(),
                             t = u.model,
                             r = u.controls,
@@ -3847,32 +3828,27 @@
                             s = n.chapterID,
                             o = n.isActive,
                             l = t.main,
-                            E = l.isWalletAvailable,
-                            d = l.isShopOfferAvailable,
-                            _ = t.computes.isMulticurrency(),
-                            m = t.computes.isTypedChapter(s.get(), H._U.Marathon),
-                            A = t.computes.isDisabled(s.get()),
-                            F = (0, c.GS)().mediaSize,
-                            D = !m && d.get();
+                            c = l.isWalletAvailable,
+                            E = l.isShopOfferAvailable,
+                            d = t.computes.isTypedChapter(s.get(), H._U.Marathon),
+                            _ = t.computes.isDisabled(s.get()),
+                            m = !d && E.get();
                         return a().createElement(
                             'div',
-                            { className: i()(bt, _ && wt) },
-                            F >= c.cJ.Large && a().createElement('div', { className: yt }),
-                            a().createElement(vt, { className: St }),
-                            D && a().createElement('div', { className: Rt }, Tt.confirm.shopOfferWarning()),
-                            a().createElement(ut._, {
+                            { className: i()(gt) },
+                            a().createElement(Bt, { className: pt }),
+                            m && a().createElement('div', { className: ht }, bt.confirm.shopOfferWarning()),
+                            a().createElement(Ju._, {
                                 onAccept: r.buy,
                                 onCancel: e,
-                                isWalletAvailable: E.get(),
-                                buttonAcceptText: Tt.btnBuy(),
-                                className: Pt,
-                                isMulticurrency: _,
+                                isWalletAvailable: c.get(),
+                                buttonAcceptText: bt.btnBuy(),
+                                className: ft,
                             }),
-                            !o.get() &&
-                                a().createElement(ot, { isMulticurrency: _, className: i()(D && kt), isDisabled: A }),
+                            !o.get() && a().createElement(st, { className: i()(m && vt), isDisabled: _ }),
                         );
                     }),
-                    xt = {
+                    yt = {
                         base: 'ConfirmBuyViewContent_base_e3',
                         fadeIn: 'ConfirmBuyViewContent_fadeIn_bd',
                         control: 'ConfirmBuyViewContent_control_17',
@@ -3882,7 +3858,6 @@
                         content__activeChapterWarning: 'ConfirmBuyViewContent_content__activeChapterWarning_60',
                         backgroundCommanderWrapper: 'ConfirmBuyViewContent_backgroundCommanderWrapper_31',
                         backgroundCommander: 'ConfirmBuyViewContent_backgroundCommander_19',
-                        backgroundCommander__large: 'ConfirmBuyViewContent_backgroundCommander__large_a2',
                         descriptionText: 'ConfirmBuyViewContent_descriptionText_c2',
                         priorityRewards: 'ConfirmBuyViewContent_priorityRewards_0c',
                         background: 'ConfirmBuyViewContent_background_73',
@@ -3896,9 +3871,9 @@
                         rotate: 'ConfirmBuyViewContent_rotate_2c',
                         'fade-in': 'ConfirmBuyViewContent_fade-in_b0',
                     };
-                function Lt() {
+                function St() {
                     return (
-                        (Lt =
+                        (St =
                             Object.assign ||
                             function (e) {
                                 for (var u = 1; u < arguments.length; u++) {
@@ -3907,10 +3882,10 @@
                                 }
                                 return e;
                             }),
-                        Lt.apply(this, arguments)
+                        St.apply(this, arguments)
                     );
                 }
-                const Mt = (e) => ({
+                const Rt = (e) => ({
                         from: { opacity: 0 },
                         to: { opacity: 1 },
                         delay: 400 + 100 * e,
@@ -3919,8 +3894,8 @@
                             (0, $.G)('bp_reward');
                         },
                     }),
-                    Ot = R.strings.battle_pass.battlePassBuyView,
-                    It = (0, f.Pi)(({ onBack: e }) => {
+                    Pt = R.strings.battle_pass.battlePassBuyView,
+                    kt = (0, f.Pi)(({ onBack: e }) => {
                         const u = G(),
                             t = u.model,
                             r = u.controls,
@@ -3933,11 +3908,11 @@
                             m = (0, c.GS)(),
                             A = m.remScreenHeight,
                             F = m.mediaSize,
-                            D = (0, Cu.useSpring)(Mt(E.length)),
+                            D = (0, Fu.useSpring)(Rt(E.length)),
                             C = {
-                                backgroundImage: `url(${(0, ie.wD)(R.images.gui.maps.icons.battlePass.backgrounds.chapter, o.get())})`,
+                                backgroundImage: `url(${(0, ie.wD)(R.images.gui.maps.icons.battlePass.backgrounds.confirm, o.get())})`,
                             },
-                            B = (0, Du.z)(() => {
+                            B = (0, Au.z)(() => {
                                 e();
                             });
                         Q(B),
@@ -3951,79 +3926,80 @@
                                 K(Y.n.ENTER, u);
                             })(r.buy),
                             K(Y.n.SPACE, r.buy);
-                        const g = F < c.cJ.Medium ? Ku.h2.Small : Ku.h2.Big;
+                        const g = F < c.cJ.Medium ? Xu.h2.Small : Xu.h2.Big,
+                            p = !t.computes.isTypedChapter(o.get(), H._U.Marathon) && _.get();
                         return a().createElement(
                             'div',
-                            { className: xt.base },
+                            { className: yt.base },
                             a().createElement(
                                 'div',
-                                { className: xt.control },
+                                { className: yt.control },
                                 a().createElement(j, {
                                     caption: R.strings.menu.viewHeader.backBtn.label(),
                                     onClick: B,
-                                    goto: Ot.confirm.backBtnText(),
+                                    goto: Pt.confirm.backBtnText(),
                                 }),
                             ),
-                            a().createElement('div', { className: xt.background, style: C }),
+                            a().createElement('div', { className: yt.background, style: C }),
                             a().createElement(
                                 'div',
                                 {
                                     className: i()(
-                                        xt.content,
-                                        _.get() && xt.content__warning,
-                                        !l && xt.content__activeChapterWarning,
+                                        yt.content,
+                                        p && yt.content__warning,
+                                        !l && yt.content__activeChapterWarning,
                                     ),
                                 },
                                 a().createElement(
                                     'div',
-                                    { className: xt.backgroundCommanderWrapper },
+                                    { className: yt.backgroundCommanderWrapper },
                                     a().createElement('div', {
                                         className: i()(
-                                            xt.backgroundCommander,
-                                            A >= 1200 && A < 1440 && xt.backgroundCommander__large,
+                                            yt.backgroundCommander,
+                                            A >= 1200 && A < 1440 && yt.backgroundCommander__large,
                                         ),
                                         style: {
                                             backgroundImage: `url(${(0, ie.wD)(R.images.gui.maps.icons.battlePass.buy.confirm.commander, o.get())})`,
                                         },
                                     }),
                                 ),
-                                a().createElement(et.D, { chapter: o.get(), buyBP: Ot.confirm.title() }),
-                                a().createElement('div', { className: xt.descriptionText }, Ot.confirm.description()),
+                                a().createElement(Qu.D, { chapter: o.get(), buyBP: Pt.confirm.title() }),
+                                a().createElement('div', { className: yt.descriptionText }, Pt.confirm.description()),
                                 a().createElement(
                                     'div',
-                                    { className: xt.priorityRewards },
+                                    { className: yt.priorityRewards },
                                     O.UI(E, (e, u) =>
                                         a().createElement(
-                                            Ju.d,
-                                            { animationConfig: Mt(u), key: `${e.item}_${u}` },
-                                            a().createElement(Qu.Q, Lt({}, (0, Fe.$n)(e, g), { className: xt.reward })),
+                                            Ku.d,
+                                            { animationConfig: Rt(u), key: `${e.item}_${u}` },
+                                            a().createElement(Zu.Q, St({}, (0, Fe.$n)(e, g), { className: yt.reward })),
                                         ),
                                     ),
                                 ),
                                 d > 0
                                     ? a().createElement(
-                                          Cu.animated.div,
+                                          Fu.animated.div,
                                           { style: D },
                                           a().createElement(
-                                              Fu.u5,
+                                              mu.u5,
                                               {
-                                                  type: Fu.L$.ghost,
-                                                  size: Fu.qE.medium,
-                                                  mixClass: xt.rewardBtn,
+                                                  type: mu.L$.ghost,
+                                                  size: mu.qE.medium,
+                                                  mixClass: yt.rewardBtn,
                                                   onClick: r.showRewards,
                                               },
-                                              a().createElement(Zu.z, {
-                                                  text: Ot.confirmAnyNumber.moreRewards(),
+                                              a().createElement(Yu.z, {
+                                                  text: Pt.confirmAnyNumber.moreRewards(),
                                                   binding: { count: d },
                                               }),
                                           ),
                                       )
-                                    : a().createElement('div', { className: xt.indentBlock }),
-                                a().createElement(Nt, { onBackClick: B }),
+                                    : a().createElement('div', { className: yt.indentBlock }),
+                                a().createElement(wt, { onBackClick: B }),
                             ),
                         );
                     }),
-                    Ht = M()(({ observableModel: e }) => {
+                    Tt = M()(({ observableModel: e }) => {
                         const u = {
                                 levels: e.primitives(['fromLevel', 'toLevel', 'chapterID', 'packageState']),
                                 nowRewards: e.array('nowRewards.items'),
@@ -4033,72 +4009,72 @@
                             r = (0, I.Om)(() => u.futureRewards.get(), { equals: P });
                         return Object.assign({}, u, { computes: { nowRewards: t, futureRewards: r } });
                     }, y),
-                    Ut = Ht[0],
-                    Wt = Ht[1];
-                var Gt = t(3862),
-                    $t = t(9430),
-                    zt = t(9791);
-                const Vt = 'Content_base_27',
-                    qt = 'Content_base__center_f5',
-                    jt = 'Content_mainContent_dd',
-                    Yt = R.strings.battle_pass.battlePassBuyView.reward,
-                    Xt = ({ fromLevel: e, toLevel: u, nowRewards: t, futureRewards: r }) => {
+                    Nt = Tt[0],
+                    xt = Tt[1];
+                var Lt = t(3862),
+                    Mt = t(9430),
+                    Ot = t(9791);
+                const It = 'Content_base_27',
+                    Ht = 'Content_base__center_f5',
+                    Ut = 'Content_mainContent_dd',
+                    Wt = R.strings.battle_pass.battlePassBuyView.reward,
+                    Gt = ({ fromLevel: e, toLevel: u, nowRewards: t, futureRewards: r }) => {
                         const n = ((e, u) =>
                                 e < u
-                                    ? { title: Yt.titleNowRewards(), completedSteps: `${e} - ${u}` }
-                                    : { title: Yt.titleNowRewardsSingle(), completedSteps: `${u}` })(e, u),
+                                    ? { title: Wt.titleNowRewards(), completedSteps: `${e} - ${u}` }
+                                    : { title: Wt.titleNowRewardsSingle(), completedSteps: `${u}` })(e, u),
                             s = n.title,
                             o = n.completedSteps,
                             l = (!r.length && t.length < 10) || (!t.length && r.length < 10);
                         return a().createElement(
-                            zt.z,
-                            { className: i()(Vt, l && qt) },
+                            Ot.z,
+                            { className: i()(It, l && Ht) },
                             a().createElement(
                                 'div',
-                                { className: jt },
+                                { className: Ut },
                                 t.length > 0 &&
-                                    a().createElement($t.r, { title: s, iconType: Gt.Q.now, rewards: t, steps: o }),
+                                    a().createElement(Mt.r, { title: s, iconType: Lt.Q.now, rewards: t, steps: o }),
                                 r.length > 0 &&
-                                    a().createElement($t.r, {
-                                        title: Yt.titleFutureRewards(),
-                                        iconType: Gt.Q.future,
+                                    a().createElement(Mt.r, {
+                                        title: Wt.titleFutureRewards(),
+                                        iconType: Lt.Q.future,
                                         rewards: r,
                                     }),
                             ),
                         );
                     },
-                    Zt = 'RewardsViewContent_base_eb',
-                    Kt = 'RewardsViewContent_background_89',
-                    Qt = 'RewardsViewContent_shadow_d6',
-                    Jt = 'RewardsViewContent_back_05',
-                    er = 'RewardsViewContent_content_9f',
-                    ur = 'RewardsViewContent_header_0b',
-                    tr = 'RewardsViewContent_title_8b',
-                    rr = 'RewardsViewContent_description_4e',
-                    nr = 'RewardsViewContent_footerButton_f4',
-                    ar = R.strings.battle_pass.battlePassBuyView.reward,
-                    sr = (0, f.Pi)(({ onBack: e }) => {
-                        const u = Wt().model,
+                    $t = 'RewardsViewContent_base_eb',
+                    zt = 'RewardsViewContent_background_89',
+                    Vt = 'RewardsViewContent_shadow_d6',
+                    qt = 'RewardsViewContent_back_05',
+                    jt = 'RewardsViewContent_content_9f',
+                    Yt = 'RewardsViewContent_header_0b',
+                    Xt = 'RewardsViewContent_title_8b',
+                    Zt = 'RewardsViewContent_description_4e',
+                    Kt = 'RewardsViewContent_footerButton_f4',
+                    Qt = R.strings.battle_pass.battlePassBuyView.reward,
+                    Jt = (0, f.Pi)(({ onBack: e }) => {
+                        const u = xt().model,
                             t = u.levels,
                             r = t.fromLevel,
                             n = t.toLevel,
                             s = t.chapterID;
                         Q(e);
                         const i = {
-                            backgroundImage: `url(${(0, ie.wD)(R.images.gui.maps.icons.battlePass.backgrounds.chapter, s.get())})`,
+                            backgroundImage: `url(${(0, ie.wD)(R.images.gui.maps.icons.battlePass.backgrounds.rewards, s.get())})`,
                         };
                         return a().createElement(
                             'div',
-                            { className: Zt },
+                            { className: $t },
                             a().createElement(
                                 'div',
-                                { className: Kt },
+                                { className: zt },
                                 a().createElement(J.N, { chapter: s.get(), isCurrent: !0, customBackgroundStyle: i }),
                             ),
-                            a().createElement('div', { className: Qt }),
+                            a().createElement('div', { className: Vt }),
                             a().createElement(
                                 'div',
-                                { className: Jt },
+                                { className: qt },
                                 a().createElement(j, {
                                     caption: R.strings.menu.viewHeader.backBtn.label(),
                                     onClick: e,
@@ -4106,36 +4082,36 @@
                             ),
                             a().createElement(
                                 'div',
-                                { className: ur },
+                                { className: Yt },
                                 a().createElement(
                                     'div',
-                                    { className: tr },
-                                    a().createElement(Zu.z, {
-                                        text: ar.chapter(),
+                                    { className: Xt },
+                                    a().createElement(Yu.z, {
+                                        text: Qt.chapter(),
                                         binding: { chapterName: (0, Fe.pC)(s.get(), !0) },
                                     }),
                                 ),
-                                a().createElement('div', { className: rr }, ar.titleBattlePass()),
+                                a().createElement('div', { className: Zt }, Qt.titleBattlePass()),
                             ),
                             a().createElement(
                                 'div',
-                                { className: er },
-                                a().createElement(Xt, {
+                                { className: jt },
+                                a().createElement(Gt, {
                                     nowRewards: u.computes.nowRewards(),
                                     futureRewards: u.computes.futureRewards(),
                                     toLevel: n.get(),
                                     fromLevel: r.get(),
                                 }),
                                 a().createElement(
-                                    Fu.u5,
-                                    { type: Fu.L$.secondary, size: Fu.qE.medium, mixClass: nr, onClick: e },
-                                    ar.backBtn(),
+                                    mu.u5,
+                                    { type: mu.L$.secondary, size: mu.qE.medium, mixClass: Kt, onClick: e },
+                                    Qt.backBtn(),
                                 ),
                             ),
                         );
                     }),
-                    ir = { context: 'model.rewards' },
-                    or = (0, f.Pi)(() => {
+                    er = { context: 'model.rewards' },
+                    ur = (0, f.Pi)(() => {
                         const e = G(),
                             u = e.model,
                             t = e.controls,
@@ -4147,22 +4123,22 @@
                             r)
                         ) {
                             case h:
-                                return a().createElement(Xu, { onClose: t.back });
+                                return a().createElement(ju, { onClose: t.back });
                             case 'confirmState':
-                                return a().createElement(It, { onBack: t.back });
+                                return a().createElement(kt, { onBack: t.back });
                             case 'rewardsState':
                                 return a().createElement(
-                                    Ut,
-                                    { options: ir },
-                                    a().createElement(sr, { onBack: t.showConfirm }),
+                                    Nt,
+                                    { options: er },
+                                    a().createElement(Jt, { onBack: t.showConfirm }),
                                 );
                             default:
-                                return a().createElement(Xu, { onClose: t.back });
+                                return a().createElement(ju, { onClose: t.back });
                         }
                     });
                 engine.whenReady.then(() => {
                     g().render(
-                        a().createElement(W, null, a().createElement(C, { className: p }, a().createElement(or, null))),
+                        a().createElement(W, null, a().createElement(C, { className: p }, a().createElement(ur, null))),
                         document.getElementById('root'),
                     );
                 });

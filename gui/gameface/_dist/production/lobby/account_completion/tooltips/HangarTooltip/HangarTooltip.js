@@ -38,7 +38,7 @@
                         extraSize: () => Y,
                         forceTriggerMouseMove: () => W,
                         freezeTextureBeforeResize: () => M,
-                        getBrowserTexturePath: () => R,
+                        getBrowserTexturePath: () => T,
                         getDisplayStatus: () => $,
                         getScale: () => L,
                         getSize: () => S,
@@ -51,7 +51,7 @@
                         sendEvent: () => b,
                         setAnimateWindow: () => I,
                         setEventHandled: () => H,
-                        setInputPaddingsRem: () => T,
+                        setInputPaddingsRem: () => R,
                         setSidePaddingsRem: () => O,
                         whenTutorialReady: () => V,
                     });
@@ -210,10 +210,10 @@
                 function f(u) {
                     viewEnv.addPreloadTexture(u);
                 }
-                function T(u) {
+                function R(u) {
                     viewEnv.setHitAreaPaddingsRem(u, u, u, u, 15);
                 }
-                function R(u, e, t, r = 1) {
+                function T(u, e, t, r = 1) {
                     return viewEnv.getWebBrowserTexturePath(u, e, t, r);
                 }
                 function P(u, e, t) {
@@ -1219,7 +1219,8 @@
                             (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
                             (u.CosmicLootboxSilver = 'lootBoxToken'),
-                            (u.CosmicLootboxCommon = 'cosmic_2024_2');
+                            (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                            (u.RacesPoint = 'races_point');
                     })(j || (j = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1350,7 +1351,7 @@
                         j.CosmicLootboxSilver,
                     ],
                     tu = [j.Gold, j.Credits, j.Crystal, j.FreeXp],
-                    ru = [j.BattlePassPoints],
+                    ru = [j.BattlePassPoints, j.RacesPoint],
                     nu = [j.PremiumPlus, j.Premium],
                     au = ['engravings', 'backgrounds'],
                     iu = ['engraving', 'background'],
@@ -1395,9 +1396,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${e}.${a}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === e
-                                    ? u.iconBig.replace('..', 'img://gui')
-                                    : u.iconSmall.replace('..', 'img://gui');
+                                return ((u, e) => {
+                                    switch (e) {
+                                        case K.Big:
+                                            return u.iconBig.replace('..', 'img://gui');
+                                        case K.Small:
+                                            return u.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${e}.${u.icon}`;
+                                    }
+                                })(u, e);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -1555,7 +1563,7 @@
                                         (w.current.isVisible = !1);
                                 }
                             }, [t, c, v, p]),
-                            T = (0, r.useCallback)((u) => {
+                            R = (0, r.useCallback)((u) => {
                                 w.current.isVisible &&
                                     ((w.current.prevTarget = document.elementFromPoint(u.clientX, u.clientY)),
                                     (w.current.hideTimerId = window.setTimeout(() => {
@@ -1566,9 +1574,9 @@
                         (0, r.useEffect)(() => {
                             const u = w.current.hideTimerId;
                             return (
-                                document.addEventListener('wheel', T, { capture: !0 }),
+                                document.addEventListener('wheel', R, { capture: !0 }),
                                 () => {
-                                    document.removeEventListener('wheel', T, { capture: !0 }),
+                                    document.removeEventListener('wheel', R, { capture: !0 }),
                                         u && window.clearTimeout(u);
                                 }
                             );
@@ -1591,13 +1599,13 @@
                                   Object.assign(
                                       {
                                           onMouseEnter:
-                                              ((R = e.props.onMouseEnter),
+                                              ((T = e.props.onMouseEnter),
                                               (u) => {
                                                   (u.clientX === window.innerWidth &&
                                                       u.clientY === window.innerHeight) ||
                                                       ((w.current.timeoutId = window.setTimeout(b, F ? 100 : 400)),
                                                       a && a(u),
-                                                      R && R(u));
+                                                      T && T(u));
                                               }),
                                           onMouseLeave: ((u) => (e) => {
                                               f(), null == i || i(e), null == u || u(e);
@@ -1613,7 +1621,7 @@
                                   ),
                               )
                             : e;
-                        var R;
+                        var T;
                     },
                     lu = ['children'];
                 function Bu() {
@@ -1982,7 +1990,7 @@
                         );
                     },
                     fu = 'LargeStringFormat_base_35',
-                    Tu = (0, r.memo)(({ text: u, classMix: e }) => {
+                    Ru = (0, r.memo)(({ text: u, classMix: e }) => {
                         const t = s()(fu, e);
                         return n().createElement(
                             'div',
@@ -1990,7 +1998,7 @@
                             u.split('').map((u, e) => n().createElement(r.Fragment, { key: `${e}-${u}` }, u)),
                         );
                     }),
-                    Ru = 'HangarApp_base_3b',
+                    Tu = 'HangarApp_base_3b',
                     Pu = 'HangarApp_base__large_db',
                     Ou = 'HangarApp_title_75',
                     Su = 'HangarApp_title__large_24',
@@ -2012,12 +2020,12 @@
                             o = Boolean(i),
                             F = (0, r.useMemo)(
                                 () => ({
-                                    email: n().createElement(Tu, { classMix: Mu, text: i }),
+                                    email: n().createElement(Ru, { classMix: Mu, text: i }),
                                     holder: n().createElement('div', { className: Lu }, E),
                                 }),
                                 [i, E],
                             ),
-                            D = s()(Ru, A && Pu),
+                            D = s()(Tu, A && Pu),
                             l = s()(Ou, o && Su),
                             B = s()(ku, Boolean(E) && Nu);
                         return n().createElement(

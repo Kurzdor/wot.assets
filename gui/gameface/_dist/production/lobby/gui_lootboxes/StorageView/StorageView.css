@@ -656,15 +656,34 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     justify-content: center;
     width: 363rem;
 }
-.BoxRadioButtons_openButton_c4 {
-    width: 160rem;
-    height: 32rem;
+.BoxRadioButtons_button_27 {
+    margin: 0 10rem;
 }
-.BoxRadioButtons_openButtonMargin_f5 {
-    margin-left: 27rem;
+.BoxRadioButtons_warningText_71 {
+    color: #8c8c7e;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 473rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
 }
-.BoxRadioButtons_radioButton_7d {
-    color: #f2f2f7;
+.mediaSmall .BoxRadioButtons_warningText_71 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.mediaLarge .BoxRadioButtons_warningText_71 {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.CheckButton_base_48 {
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -678,73 +697,307 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     box-shadow: inset 0rem 0rem 40rem rgba(255, 255, 255, 0.1);
     background: rgba(0, 0, 0, 0.1);
     text-shadow: 0rem -1rem 2rem rgba(0, 0, 0, 0.7);
+    position: relative;
     z-index: 10;
     cursor: pointer;
 }
-.BoxRadioButtons_oneUnit_0b {
-    margin-right: 20rem;
+
+.CheckButton_base__disabled_9f {
+    cursor: default;
+    pointer-events: none;
 }
-.BoxRadioButtons_radioButtonAsset_2c {
+.CheckButton_border_74 {
+    width: 108rem;
+    height: 61rem;
     background: no-repeat center / cover;
     position: absolute;
     z-index: 5;
 }
-.BoxRadioButtons_radioButtonAsset__bg_85 {
+.CheckButton_base_48:hover .CheckButton_border__normal_25 {
+    background-image: url('R.images.gui_lootboxes.gui.maps.storage.border_checkbox_selected');
+    animation: CheckButton_button-hover_86 0.2s ease-in;
+}
+.CheckButton_border__checked_c6 {
+    background-image: url('R.images.gui_lootboxes.gui.maps.storage.border_checkbox_selected');
+}
+.CheckButton_bg_67 {
     width: 78rem;
     height: 31rem;
+    background: no-repeat center / cover;
+    position: absolute;
+}
+.CheckButton_base_48:hover .CheckButton_bg__normal_59 {
+    background-image: url('R.images.gui_lootboxes.gui.maps.storage.bg_checkbox_selected');
+    animation: CheckButton_button-hover_86 0.2s ease-in;
+}
+.CheckButton_bg__checked_2b {
     background-image: url('R.images.gui_lootboxes.gui.maps.storage.bg_checkbox_selected');
 }
-.BoxRadioButtons_radioButtonAsset__border_bf {
-    width: 108rem;
-    height: 61rem;
-    background-image: url('R.images.gui_lootboxes.gui.maps.storage.border_checkbox_selected');
-    bottom: -14rem;
+.CheckButton_bg__disabled_b2 {
+    background-image: url('R.images.gui_lootboxes.gui.maps.storage.disabled_button_texture');
+    opacity: 0.6;
 }
-.BoxRadioButtons_radioButtonAsset__checked_eb {
-    width: 64rem;
-    height: 32rem;
+.CheckButton_content__disabled_52 {
+    opacity: 0.4;
+}
+.CheckButton_check_36 {
+    width: 50rem;
+    height: 20rem;
+    background: no-repeat center / cover;
     background-image: url('R.images.gui_lootboxes.gui.maps.storage.icon_checkbox_selected');
-    bottom: -15rem;
+    position: absolute;
+    bottom: -10rem;
+    z-index: 5;
 }
-.BoxRadioButtons_oneUnitBg_39 {
+@keyframes CheckButton_button-hover_86 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.MasterKeyButtonGroup_base_be {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.MasterKeyButtonGroup_divider_76 {
+    width: 70rem;
+    height: 80rem;
+    background: no-repeat center / cover;
+    background-image: url('R.images.gui_lootboxes.gui.maps.storage.orange_arrow');
+    position: absolute;
+    left: 195rem;
+}
+
+.MasterKeyButtonGroup_divider__second_1d {
+    left: 415rem;
+}
+
+.MasterKeyButtonGroup_openButton_b9 {
+    width: 160rem;
+    height: 32rem;
+    margin-left: 20rem;
+}
+
+.MasterKeyButtonGroup_openButton__single_38 {
+    margin-left: 0;
+}
+
+.MasterKeyButtonGroup_buttonsGroup_aa {
+    display: flex;
+    margin: 0 15rem;
+}
+
+.MasterKeyButtonGroup_keyIcon_73 {
+    width: 14rem;
+    height: 14rem;
+    background: no-repeat center / cover;
+    background-image: url('R.images.gui_lootboxes.gui.maps.storage.currencyKey.common_key');
+    position: relative;
+}
+
+.NormalButtonGroup_base_17 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.NormalButtonGroup_divider_78 {
+    width: 70rem;
+    height: 80rem;
+    background: no-repeat center / cover;
+    background-image: url('R.images.gui_lootboxes.gui.maps.storage.orange_arrow');
+    position: absolute;
+    left: 185rem;
+}
+
+.NormalButtonGroup_divider__second_58 {
+    left: 395rem;
+}
+
+.NormalButtonGroup_openButton_85 {
+    width: 160rem;
+    height: 32rem;
+}
+
+.NormalButtonGroup_buttonsGroup_39 {
+    display: flex;
+    margin-right: 10rem;
+}
+
+.BacklitTransparentButton_base_ec {
+    display: flex;
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    transition: box-shadow 0.15s;
+    cursor: pointer;
+}
+
+.BacklitTransparentButton_base_ec::after,
+.BacklitTransparentButton_base_ec::before {
+    width: 100%;
+    height: 1rem;
+    background: linear-gradient(
+        90deg,
+        rgba(172, 128, 44, 0) 0%,
+        #eece63 48.95%,
+        #efd065 48.96%,
+        rgba(174, 132, 46, 0) 100%
+    );
+    opacity: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.15s;
+}
+
+.BacklitTransparentButton_base_ec::before {
+    top: auto;
+    bottom: 0;
+}
+
+.BacklitTransparentButton_base_ec:hover {
+    box-shadow:
+        0 0 12rem 4rem rgba(255, 42, 0, 0.15),
+        0 0 12rem 4rem rgba(255, 42, 0, 0.15) inset;
+}
+
+.BacklitTransparentButton_base_ec:hover::after,
+.BacklitTransparentButton_base_ec:hover::before {
+    opacity: 1;
+}
+
+.BacklitTransparentButton_base_ec:active,
+.BacklitTransparentButton_base_ec:focus {
+    box-shadow:
+        0 0 12rem 4rem rgba(255, 42, 0, 0.07),
+        0 0 12rem 4rem rgba(255, 42, 0, 0.07) inset;
+}
+
+.BacklitTransparentButton_base_ec:active::after,
+.BacklitTransparentButton_base_ec:active::before,
+.BacklitTransparentButton_base_ec:focus::after,
+.BacklitTransparentButton_base_ec:focus::before {
+    opacity: 0.5;
+}
+
+.BacklitTransparentButton_content_f5 {
+    display: flex;
+    align-items: center;
+    padding: 5rem 20rem;
+    border: 1rem rgba(255, 255, 255, 0.15) solid;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.mediaMedium .BacklitTransparentButton_content_f5 {
+    padding: 10rem 22rem;
+}
+
+.mediaLarge .BacklitTransparentButton_content_f5 {
+    padding: 10rem 36rem;
+}
+
+.BacklitTransparentButton_cornersHolder_67 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
     left: 0;
 }
-.BoxRadioButtons_oneUnitBorder_89 {
-    left: -15rem;
+
+.BacklitTransparentButton_corners_4b {
+    width: 5rem;
+    height: 100%;
+    position: relative;
 }
-.BoxRadioButtons_oneUnitButtonChecked_dd {
-    left: 7rem;
+
+.BacklitTransparentButton_corners__right_96 {
+    transform: scaleX(-1);
 }
-.BoxRadioButtons_allUnitsBg_3c {
-    left: 99rem;
+
+.BacklitTransparentButton_corners_4b::before,
+.BacklitTransparentButton_corners_4b::after {
+    width: 5rem;
+    height: 5rem;
+    background: url('R.images.gui_lootboxes.gui.maps.shared.corner') no-repeat center / cover;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-.BoxRadioButtons_allUnitsBorder_54 {
-    left: 83rem;
+
+.BacklitTransparentButton_corners_4b::after {
+    top: auto;
+    bottom: 0;
+    transform: scaleY(-1);
 }
-.BoxRadioButtons_allUnitsButtonChecked_14 {
-    left: 106rem;
-}
-.BoxRadioButtons_warningText_71 {
-    color: #8c8c7e;
+
+.BacklitTransparentButton_title_29 {
+    color: #e9e2bf;
     font-size: 12rem;
     font-weight: 400;
     line-height: 1.3;
-    width: 473rem;
-    text-align: center;
-    position: absolute;
-    bottom: 54rem;
+    text-transform: uppercase;
 }
-.mediaSmall .BoxRadioButtons_warningText_71 {
-    color: #8c8c7e;
+
+.mediaMedium .BacklitTransparentButton_title_29 {
+    color: #e9e2bf;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.mediaLarge .BacklitTransparentButton_title_29 {
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
-.mediaLarge .BoxRadioButtons_warningText_71 {
-    color: #8c8c7e;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
+
+.BacklitTransparentButton_icon_e6 {
+    width: 16rem;
+    height: 16rem;
+    margin-right: 6rem;
+    background: url('R.images.gui_lootboxes.gui.maps.bonusProbabilities.probabilities_cream_16') no-repeat center /
+        contain;
+}
+
+.mediaLarge .BacklitTransparentButton_icon_e6 {
+    width: 25rem;
+    height: 25rem;
+    background-image: url('R.images.gui_lootboxes.gui.maps.bonusProbabilities.probabilities_cream_24');
+}
+
+.BacklitTransparentButton_background_13 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui_lootboxes.gui.maps.shared.glow_orange') no-repeat center / cover;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.16s;
+}
+
+.BacklitTransparentButton_base_ec:hover .BacklitTransparentButton_background_13 {
+    opacity: 1;
+}
+
+.BacklitTransparentButton_base_ec:active .BacklitTransparentButton_background_13,
+.BacklitTransparentButton_base_ec:focus .BacklitTransparentButton_background_13 {
+    opacity: 0.5;
 }
 
 .BoxRewards_base_05 {
@@ -763,6 +1016,93 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 428rem;
 }
 
+.BoxRewards_content_b6 {
+    display: block;
+}
+
+.BoxRewards_frame_30 {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 22rem;
+}
+
+.mediaMedium .BoxRewards_frame_30 {
+    height: 27rem;
+}
+
+.mediaLarge .BoxRewards_frame_30 {
+    height: 31rem;
+}
+
+.BoxRewards_frame__bottom_4e {
+    align-items: flex-start;
+    height: auto;
+    margin-top: 8rem;
+}
+
+.BoxRewards_frameContent_f1 {
+    height: 100%;
+    margin: 0 5rem;
+}
+
+.BoxRewards_corner_88 {
+    flex: 1 0;
+    min-width: 15rem;
+    height: 15rem;
+    border: 0 rgba(255, 255, 255, 0.2) solid;
+    border-left-width: 1rem;
+    border-top-width: 1rem;
+    position: relative;
+}
+
+.mediaMedium .BoxRewards_corner_88 {
+    min-width: 18rem;
+    height: 18rem;
+}
+
+.mediaLarge .BoxRewards_corner_88 {
+    min-width: 21rem;
+    height: 21rem;
+}
+
+.BoxRewards_corner_88::before,
+.BoxRewards_corner_88::after {
+    background-color: rgba(255, 255, 255, 0.5);
+    content: '';
+    position: absolute;
+}
+
+.BoxRewards_corner_88::before {
+    width: 1rem;
+    height: 5rem;
+    bottom: 0;
+    left: -1rem;
+}
+
+.BoxRewards_corner_88::after {
+    width: 5rem;
+    height: 1rem;
+    top: -1rem;
+    right: 0;
+}
+
+.BoxRewards_corner__topLeft_e5 {
+    flex: 0;
+}
+
+.BoxRewards_corner__topRight_dd {
+    transform: scaleX(-1);
+}
+
+.BoxRewards_corner__bottomLeft_11 {
+    transform: scaleY(-1);
+}
+
+.BoxRewards_corner__bottomRight_7a {
+    transform: scale(-1, -1);
+}
+
 .BoxRewards_possibleRewardsInfoWrapper_8e {
     z-index: 100;
 }
@@ -772,7 +1112,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 12rem;
     font-weight: 400;
     line-height: 1.3;
-    margin: 80rem 0 8rem 24rem;
 }
 
 .mediaSmall .BoxRewards_possibleRewardsHeader_42 {
@@ -780,11 +1119,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
-    margin: 72rem 0 16rem 24rem;
-}
-
-.mediaMedium .BoxRewards_possibleRewardsHeader_42 {
-    margin: 128rem 0 16rem 24rem;
 }
 
 .mediaLarge .BoxRewards_possibleRewardsHeader_42 {
@@ -792,11 +1126,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
-    margin: 165rem 0 16rem 32rem;
-}
-
-.mediaExtraLarge .BoxRewards_possibleRewardsHeader_42 {
-    margin-bottom: 32rem;
 }
 
 .BoxRewards_possibleRewardsImagesWrapper_d8 {
@@ -1391,8 +1720,22 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 106rem;
     background-image: url('R.images.gui_lootboxes.gui.maps.lootboxes.c_160x106.default');
 }
+.LootboxCard_infinite_85 {
+    width: 22rem;
+    height: 13rem;
+    background: url('R.images.gui_lootboxes.gui.maps.storage.carousel.infinityCarusel') no-repeat center / contain;
+    position: absolute;
+    top: 11rem;
+    right: 7rem;
+}
+.mediaMedium .LootboxCard_infinite_85 {
+    width: 30rem;
+    height: 12rem;
+    top: 12rem;
+    right: 4rem;
+}
 .LootboxCard_count_f7 {
-    color: #ffffff;
+    color: #fefeec;
     font-size: 12rem;
     position: absolute;
     top: 6rem;
@@ -1460,6 +1803,159 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 50%;
     z-index: 4;
     transform: translateX(-50%);
+}
+
+.CurrencyKey_base_53 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 22rem;
+}
+
+.CurrencyKey_icon_85 {
+    width: 16rem;
+    height: 16rem;
+    margin-right: 6rem;
+    background: no-repeat center / contain;
+}
+
+.CurrencyKey_value_29 {
+    color: #ffdd99;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.CurrencyKeyList_base_2d {
+    position: relative;
+}
+
+.CurrencyKeyList_base_2d::before {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #21232d 0%, rgba(54, 59, 78, 0) 100%);
+    opacity: 0.3;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.CurrencyKeyList_base_2d::after {
+    width: 100%;
+    height: 1rem;
+    background: linear-gradient(270deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.1;
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+}
+
+.CurrencyKeyList_wrapper_1e {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 260rem;
+    height: 33rem;
+    margin-right: 16rem;
+}
+
+.mediaMedium .CurrencyKeyList_wrapper_1e {
+    height: 36rem;
+    margin-top: 9rem;
+}
+
+.TriggerHint_base_e5 {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    transition:
+        opacity 0.25s ease-in-out,
+        visibility 0.25s ease-in-out;
+}
+
+.TriggerHint_base__hidden_4e {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.TriggerHint_selection_13 {
+    width: 100%;
+    height: 33rem;
+    border: 1rem #fd9 solid;
+    filter: drop-shadow(0 0 4rem rgba(255, 127, 0, 0.25)) drop-shadow(0 0 8rem #ff2a00) drop-shadow(0 0 15rem #e52);
+}
+
+.mediaMedium .TriggerHint_selection_13 {
+    height: 45rem;
+}
+
+.TriggerHint_info_36 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 105rem;
+    background: linear-gradient(
+        0deg,
+        rgba(52, 1, 1, 0) 0%,
+        rgba(52, 1, 1, 0.6) 30.59%,
+        rgba(52, 1, 1, 0.65) 49.25%,
+        rgba(52, 1, 1, 0.6) 67.49%,
+        rgba(52, 1, 1, 0) 99.55%
+    );
+    text-align: center;
+    position: relative;
+    pointer-events: none;
+}
+
+.TriggerHint_text_59 {
+    color: #fd9;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20rem;
+    filter: drop-shadow(0 0 4rem rgba(255, 127, 0, 0.25)) drop-shadow(0 0 8rem #ff2a00) drop-shadow(0 0 15rem #e52);
+    overflow-wrap: break-word;
+}
+
+.TriggerHint_arrowHolder_c0 {
+    width: 129rem;
+    height: 124rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.TriggerHint_arrow_6c {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui_lootboxes.gui.maps.storage.currencyKey.trigger_hint') no-repeat center / contain;
+    animation: TriggerHint_fadeUp_f3 infinite ease-in-out 1.4s;
+}
+
+@keyframes TriggerHint_fadeUp_f3 {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    70%,
+    90% {
+        opacity: 1;
+        transform: translateY(-35rem);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-35rem);
+    }
 }
 
 .Counter_base_82 {
@@ -1744,9 +2240,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .App_info_5d {
     position: absolute;
-    top: 102rem;
-    right: 33rem;
+    top: 50rem;
+    right: 24rem;
     z-index: 10;
+}
+.mediaMedium .App_info_5d {
+    top: 60rem;
 }
 .App_bg_10 {
     width: 100%;
@@ -1827,21 +2326,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .App_possibleRewardsWrapper_6e {
     position: absolute;
-    top: 125rem;
-    right: 17rem;
+    top: 140rem;
+    right: 16rem;
     z-index: 10;
 }
 .mediaSmall .App_possibleRewardsWrapper_6e {
-    top: 127rem;
-    right: 16rem;
-}
-.mediaMedium .App_possibleRewardsWrapper_6e {
-    top: 109rem;
-    right: 16rem;
-}
-.mediaLarge .App_possibleRewardsWrapper_6e {
-    top: 108rem;
-    right: 16rem;
+    top: 200rem;
 }
 .mediaExtraLarge .App_possibleRewardsWrapper_6e {
     top: 350rem;
@@ -1929,4 +2419,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .mediaMedium .App_buyButtonWrapper_6b {
     height: 150rem;
     bottom: 20rem;
+}
+.App_currencyWrapper_bb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
 }

@@ -39,13 +39,13 @@
                         k = (0, i.useCallback)(() => {
                             c || (h.current && (h.current.focus(), b(!0)));
                         }, [c]),
-                        x = (0, i.useCallback)(
+                        P = (0, i.useCallback)(
                             (e) => {
                                 C && null !== h.current && !h.current.contains(e.target) && b(!1);
                             },
                             [C],
                         ),
-                        P = (0, i.useCallback)(
+                        x = (0, i.useCallback)(
                             (e) => {
                                 c || (D && D(e));
                             },
@@ -97,12 +97,12 @@
                     return (
                         (0, i.useEffect)(
                             () => (
-                                document.addEventListener('mousedown', x),
+                                document.addEventListener('mousedown', P),
                                 () => {
-                                    document.removeEventListener('mousedown', x);
+                                    document.removeEventListener('mousedown', P);
                                 }
                             ),
-                            [x],
+                            [P],
                         ),
                         (0, i.useEffect)(() => {
                             b(t);
@@ -117,7 +117,7 @@
                                 onMouseUp: L,
                                 onMouseDown: N,
                                 onMouseLeave: I,
-                                onClick: P,
+                                onClick: x,
                             },
                             n !== l.L.ghost &&
                                 s().createElement(
@@ -433,7 +433,8 @@
                             (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (e.BattleBoosterGift = 'battleBooster_gift'),
                             (e.CosmicLootboxSilver = 'lootBoxToken'),
-                            (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                            (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                            (e.RacesPoint = 'races_point');
                     })(n || (n = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -580,7 +581,7 @@
                         s.E4.CosmicLootboxSilver,
                     ],
                     l = [s.E4.Gold, s.E4.Credits, s.E4.Crystal, s.E4.FreeXp],
-                    c = [s.E4.BattlePassPoints],
+                    c = [s.E4.BattlePassPoints, s.E4.RacesPoint],
                     d = [s.E4.PremiumPlus, s.E4.Premium],
                     E = (e) =>
                         o.includes(e)
@@ -635,9 +636,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${u}.${a}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === u
-                                    ? e.iconBig.replace('..', 'img://gui')
-                                    : e.iconSmall.replace('..', 'img://gui');
+                                return ((e, u) => {
+                                    switch (u) {
+                                        case s.h2.Big:
+                                            return e.iconBig.replace('..', 'img://gui');
+                                        case s.h2.Small:
+                                            return e.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${u}.${e.icon}`;
+                                    }
+                                })(e, u);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -3117,14 +3125,14 @@
                                     [a, E, o, e],
                                 );
                             if (F) return null;
-                            const x = i()(
+                            const P = i()(
                                 'ProgressBarDeltaGrow_base_7e',
                                 d,
                                 E && 0 === o && 'ProgressBarDeltaGrow_base__withoutBounce_b5',
                             );
                             return r().createElement(
                                 'div',
-                                { style: B ? k : R, className: x },
+                                { style: B ? k : R, className: P },
                                 r().createElement(
                                     'div',
                                     { style: h ? y : v, className: 'ProgressBarDeltaGrow_glow_68' },
@@ -3186,10 +3194,10 @@
                             );
                         },
                     ),
-                    x = ['onComplete', 'onEndAnimation'];
-                function P() {
+                    P = ['onComplete', 'onEndAnimation'];
+                function x() {
                     return (
-                        (P =
+                        (x =
                             Object.assign ||
                             function (e) {
                                 for (var u = 1; u < arguments.length; u++) {
@@ -3198,7 +3206,7 @@
                                 }
                                 return e;
                             }),
-                        P.apply(this, arguments)
+                        x.apply(this, arguments)
                     );
                 }
                 const O = (0, n.memo)((e) => {
@@ -3212,7 +3220,7 @@
                                     a = Object.keys(e);
                                 for (n = 0; n < a.length; n++) (t = a[n]), u.indexOf(t) >= 0 || (r[t] = e[t]);
                                 return r;
-                            })(e, x);
+                            })(e, P);
                         const i = (0, n.useState)(!1),
                             s = i[0],
                             o = i[1],
@@ -3222,9 +3230,9 @@
                             }, [s, u, t, a.to]);
                         switch (a.animationSettings.type) {
                             case _.Simple:
-                                return r().createElement(v, P({}, a, { onEndAnimation: l, isComplete: s }));
+                                return r().createElement(v, x({}, a, { onEndAnimation: l, isComplete: s }));
                             case _.Growing:
-                                return r().createElement(k, P({}, a, { onEndAnimation: l, isComplete: s }));
+                                return r().createElement(k, x({}, a, { onEndAnimation: l, isComplete: s }));
                             default:
                                 return null;
                         }

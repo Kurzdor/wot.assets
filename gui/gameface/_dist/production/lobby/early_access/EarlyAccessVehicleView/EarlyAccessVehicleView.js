@@ -1956,9 +1956,12 @@
                         (e.PLAY = 'play'), (e.STOP = 'stop');
                     })(Xe || (Xe = {}));
                 const Ye = ({ onClose: e }) => {
-                        const u = (0, a.useCallback)(() => {
-                                e(je.Mouse);
-                            }, [e]),
+                        const u = (0, a.useCallback)(
+                                (u) => {
+                                    u.stopPropagation(), e(je.Mouse);
+                                },
+                                [e],
+                            ),
                             t = (0, a.useCallback)(() => {
                                 e(je.Keyboard);
                             }, [e]);

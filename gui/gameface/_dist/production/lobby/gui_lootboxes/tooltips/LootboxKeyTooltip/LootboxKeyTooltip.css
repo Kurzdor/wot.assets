@@ -1,0 +1,195 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.App_base_e7 {
+    width: 508rem;
+    padding: 20rem;
+    box-shadow: inset 0 0 25rem rgba(242, 242, 230, 0.1);
+    background-color: #12110b;
+    background-image: linear-gradient(
+        180deg,
+        rgba(51, 51, 41, 0.3) 0%,
+        transparent 15.62%,
+        transparent 88.02%,
+        rgba(51, 51, 41, 0.1) 100%
+    );
+}
+
+.App_title_44 {
+    color: #e9e2bf;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10rem;
+}
+
+.App_description_95 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 10rem;
+    white-space: pre-wrap;
+}
+
+.App_description__list_cf {
+    padding-left: 15rem;
+}
+
+.App_footer_1b {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+}
+
+.App_divider_94 {
+    height: 9rem;
+    margin: 0 -20rem;
+    background: url('R.images.gui_lootboxes.gui.maps.storage.tooltipDividerPart') repeat-x center left;
+    mask-image: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(201, 201, 182, 0.2) 38.22%,
+        rgba(201, 201, 182, 0.2) 64.56%,
+        transparent 100%
+    );
+}
+
+.App_category_0a {
+    margin: 10rem 0;
+}
+
+.App_currencyWrapper_81 {
+    margin-left: 10rem;
+}
+
+.CurrencyKey_base_53 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 22rem;
+}
+
+.CurrencyKey_icon_85 {
+    width: 16rem;
+    height: 16rem;
+    margin-right: 6rem;
+    background: no-repeat center / contain;
+}
+
+.CurrencyKey_value_29 {
+    color: #ffdd99;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #ffffff;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #f2f2f7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #fefeec;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #e9e2bf;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8c8c7e;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362e;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #ff2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #b70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #feab34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #ee7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #ffdd99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #cbac77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80d43a;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7ab300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #ccffff;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09e2ff;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #ced9d9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #ffc363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #c9c9b6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #a29b70;
+}

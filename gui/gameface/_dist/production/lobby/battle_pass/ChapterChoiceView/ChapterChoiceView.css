@@ -1487,6 +1487,10 @@
     height: 120%;
 }
 
+.App_background__hasMarathon_e7 {
+    background-image: url('R.images.gui.maps.icons.battlePass.backgrounds.marathon');
+}
+
 .App_infoButtons_78 {
     display: flex;
     flex-direction: column;

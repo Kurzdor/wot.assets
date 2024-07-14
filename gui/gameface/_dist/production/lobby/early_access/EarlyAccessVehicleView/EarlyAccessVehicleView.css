@@ -480,6 +480,7 @@
     padding: 20rem 30rem 0;
     position: absolute;
     top: 0;
+    z-index: 1;
 }
 
 .mediaMedium .Header_base_9c {
@@ -2506,12 +2507,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .mediaSmall .App_tankViewButtons_4c {
     right: 378rem;
-    bottom: 204rem;
+    bottom: 214rem;
 }
 .mediaMedium .App_tankViewButtons_4c {
     width: 160rem;
     right: 460rem;
-    bottom: 211rem;
+    bottom: 221rem;
 }
 .mediaLarge .App_tankViewButtons_4c {
     right: 590rem;

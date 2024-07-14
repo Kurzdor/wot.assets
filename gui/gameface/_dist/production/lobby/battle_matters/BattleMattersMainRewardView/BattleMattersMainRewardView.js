@@ -1969,20 +1969,22 @@
                                 a().createElement(
                                     su,
                                     { onLoaded: n.increaseLoadedAssetsCount },
-                                    t.computes.getVehicles().map((u, e) =>
-                                        a().createElement(
-                                            'div',
-                                            { key: u.vehCD, className: h()(vu.reward, vu[`reward__${e + 1}`]) },
+                                    t.computes
+                                        .getVehicles()
+                                        .map((u, e) =>
                                             a().createElement(
-                                                Iu,
-                                                Uu({}, u, {
-                                                    index: e,
-                                                    onPreview: n.preview,
-                                                    onLoaded: n.increaseLoadedAssetsCount,
-                                                }),
+                                                'div',
+                                                { key: u.vehCD, className: h()(vu.reward, vu[`reward__${e + 1}`]) },
+                                                a().createElement(
+                                                    Iu,
+                                                    Uu({}, u, {
+                                                        index: e,
+                                                        onPreview: n.preview,
+                                                        onLoaded: n.increaseLoadedAssetsCount,
+                                                    }),
+                                                ),
                                             ),
                                         ),
-                                    ),
                                 ),
                                 a().createElement('div', { className: vu.shadow }),
                                 a().createElement('div', { className: vu.title }, Gu.title()),

@@ -2821,20 +2821,22 @@
                         return o().createElement(
                             'div',
                             { className: Ku },
-                            e.computes.getVehicles().map((e, u) =>
-                                o().createElement(
-                                    'div',
-                                    { key: e.vehCD, className: p()(qu, (u + 1) % 3 == 0 && Zu) },
-                                    o().createElement(Yu, {
-                                        vehicleName: e.vehName,
-                                        vehicleType: e.vehType,
-                                        nation: e.nation,
-                                        level: e.level,
-                                        vehicleCD: e.vehCD,
-                                        userName: e.userName,
-                                    }),
+                            e.computes
+                                .getVehicles()
+                                .map((e, u) =>
+                                    o().createElement(
+                                        'div',
+                                        { key: e.vehCD, className: p()(qu, (u + 1) % 3 == 0 && Zu) },
+                                        o().createElement(Yu, {
+                                            vehicleName: e.vehName,
+                                            vehicleType: e.vehType,
+                                            nation: e.nation,
+                                            level: e.level,
+                                            vehicleCD: e.vehCD,
+                                            userName: e.userName,
+                                        }),
+                                    ),
                                 ),
-                            ),
                         );
                     }),
                     Qu = 'DefaultView_base_e8',

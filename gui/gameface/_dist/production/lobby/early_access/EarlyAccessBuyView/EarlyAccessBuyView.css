@@ -423,6 +423,7 @@
     padding: 20rem 30rem 0;
     position: absolute;
     top: 0;
+    z-index: 1;
 }
 
 .mediaMedium .Header_base_9c {

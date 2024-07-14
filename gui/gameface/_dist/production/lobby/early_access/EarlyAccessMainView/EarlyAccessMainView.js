@@ -1323,9 +1323,12 @@
                         (e.PLAY = 'play'), (e.STOP = 'stop');
                     })(ee || (ee = {}));
                 const ue = ({ onClose: e }) => {
-                        const u = (0, a.useCallback)(() => {
-                                e(K.Mouse);
-                            }, [e]),
+                        const u = (0, a.useCallback)(
+                                (u) => {
+                                    u.stopPropagation(), e(K.Mouse);
+                                },
+                                [e],
+                            ),
                             t = (0, a.useCallback)(() => {
                                 e(K.Keyboard);
                             }, [e]);
@@ -1971,7 +1974,8 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.RacesPoint = 'races_point');
                 })(ou || (ou = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -2112,7 +2116,7 @@
                         ou.CosmicLootboxSilver,
                     ],
                     Fu = [ou.Gold, ou.Credits, ou.Crystal, ou.FreeXp],
-                    Du = [ou.BattlePassPoints],
+                    Du = [ou.BattlePassPoints, ou.RacesPoint],
                     gu = [ou.PremiumPlus, ou.Premium],
                     pu = ['engravings', 'backgrounds'],
                     Bu = ['engraving', 'background'],
@@ -2157,9 +2161,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${u}.${a}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === u
-                                    ? e.iconBig.replace('..', 'img://gui')
-                                    : e.iconSmall.replace('..', 'img://gui');
+                                return ((e, u) => {
+                                    switch (u) {
+                                        case lu.Big:
+                                            return e.iconBig.replace('..', 'img://gui');
+                                        case lu.Small:
+                                            return e.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${u}.${e.icon}`;
+                                    }
+                                })(e, u);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':

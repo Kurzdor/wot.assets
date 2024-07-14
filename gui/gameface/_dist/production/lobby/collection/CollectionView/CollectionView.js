@@ -1319,7 +1319,8 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.RacesPoint = 'races_point');
                 })(J || (J = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -1460,7 +1461,7 @@
                         J.CosmicLootboxSilver,
                     ],
                     se = [J.Gold, J.Credits, J.Crystal, J.FreeXp],
-                    le = [J.BattlePassPoints],
+                    le = [J.BattlePassPoints, J.RacesPoint],
                     ce = [J.PremiumPlus, J.Premium],
                     de = ['engravings', 'backgrounds'],
                     he = ['engraving', 'background'],
@@ -1505,9 +1506,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${t}.${r}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === t
-                                    ? e.iconBig.replace('..', 'img://gui')
-                                    : e.iconSmall.replace('..', 'img://gui');
+                                return ((e, t) => {
+                                    switch (t) {
+                                        case te.Big:
+                                            return e.iconBig.replace('..', 'img://gui');
+                                        case te.Small:
+                                            return e.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${t}.${e.icon}`;
+                                    }
+                                })(e, t);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -5148,20 +5156,22 @@
                                 ? n().createElement(
                                       n().Fragment,
                                       null,
-                                      i.slice(0, 1).map(
-                                          (e, t) => (
-                                              a && W(R.sounds.collection_pb_reward()),
-                                              n().createElement(
-                                                  ji,
-                                                  Vi({}, e, {
-                                                      key: t,
-                                                      size: te.Small,
-                                                      image: e.getImage(te.Small),
-                                                      classNames: { info: e.valueType === ue.MULTI ? Yi : void 0 },
-                                                  }),
-                                              )
+                                      i
+                                          .slice(0, 1)
+                                          .map(
+                                              (e, t) => (
+                                                  a && W(R.sounds.collection_pb_reward()),
+                                                  n().createElement(
+                                                      ji,
+                                                      Vi({}, e, {
+                                                          key: t,
+                                                          size: te.Small,
+                                                          image: e.getImage(te.Small),
+                                                          classNames: { info: e.valueType === ue.MULTI ? Yi : void 0 },
+                                                      }),
+                                                  )
+                                              ),
                                           ),
-                                      ),
                                       n().createElement(ji, {
                                           name: 'more',
                                           image: Ge(s),

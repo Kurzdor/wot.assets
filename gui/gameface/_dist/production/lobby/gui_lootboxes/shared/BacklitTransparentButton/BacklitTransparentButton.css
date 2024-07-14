@@ -1,0 +1,167 @@
+.BacklitTransparentButton_base_ec {
+    display: flex;
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    transition: box-shadow 0.15s;
+    cursor: pointer;
+}
+
+.BacklitTransparentButton_base_ec::after,
+.BacklitTransparentButton_base_ec::before {
+    width: 100%;
+    height: 1rem;
+    background: linear-gradient(
+        90deg,
+        rgba(172, 128, 44, 0) 0%,
+        #eece63 48.95%,
+        #efd065 48.96%,
+        rgba(174, 132, 46, 0) 100%
+    );
+    opacity: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.15s;
+}
+
+.BacklitTransparentButton_base_ec::before {
+    top: auto;
+    bottom: 0;
+}
+
+.BacklitTransparentButton_base_ec:hover {
+    box-shadow:
+        0 0 12rem 4rem rgba(255, 42, 0, 0.15),
+        0 0 12rem 4rem rgba(255, 42, 0, 0.15) inset;
+}
+
+.BacklitTransparentButton_base_ec:hover::after,
+.BacklitTransparentButton_base_ec:hover::before {
+    opacity: 1;
+}
+
+.BacklitTransparentButton_base_ec:active,
+.BacklitTransparentButton_base_ec:focus {
+    box-shadow:
+        0 0 12rem 4rem rgba(255, 42, 0, 0.07),
+        0 0 12rem 4rem rgba(255, 42, 0, 0.07) inset;
+}
+
+.BacklitTransparentButton_base_ec:active::after,
+.BacklitTransparentButton_base_ec:active::before,
+.BacklitTransparentButton_base_ec:focus::after,
+.BacklitTransparentButton_base_ec:focus::before {
+    opacity: 0.5;
+}
+
+.BacklitTransparentButton_content_f5 {
+    display: flex;
+    align-items: center;
+    padding: 5rem 20rem;
+    border: 1rem rgba(255, 255, 255, 0.15) solid;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.mediaMedium .BacklitTransparentButton_content_f5 {
+    padding: 10rem 22rem;
+}
+
+.mediaLarge .BacklitTransparentButton_content_f5 {
+    padding: 10rem 36rem;
+}
+
+.BacklitTransparentButton_cornersHolder_67 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.BacklitTransparentButton_corners_4b {
+    width: 5rem;
+    height: 100%;
+    position: relative;
+}
+
+.BacklitTransparentButton_corners__right_96 {
+    transform: scaleX(-1);
+}
+
+.BacklitTransparentButton_corners_4b::before,
+.BacklitTransparentButton_corners_4b::after {
+    width: 5rem;
+    height: 5rem;
+    background: url('R.images.gui_lootboxes.gui.maps.shared.corner') no-repeat center / cover;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.BacklitTransparentButton_corners_4b::after {
+    top: auto;
+    bottom: 0;
+    transform: scaleY(-1);
+}
+
+.BacklitTransparentButton_title_29 {
+    color: #e9e2bf;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.mediaMedium .BacklitTransparentButton_title_29 {
+    color: #e9e2bf;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.mediaLarge .BacklitTransparentButton_title_29 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.BacklitTransparentButton_icon_e6 {
+    width: 16rem;
+    height: 16rem;
+    margin-right: 6rem;
+    background: url('R.images.gui_lootboxes.gui.maps.bonusProbabilities.probabilities_cream_16') no-repeat center /
+        contain;
+}
+
+.mediaLarge .BacklitTransparentButton_icon_e6 {
+    width: 25rem;
+    height: 25rem;
+    background-image: url('R.images.gui_lootboxes.gui.maps.bonusProbabilities.probabilities_cream_24');
+}
+
+.BacklitTransparentButton_background_13 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui_lootboxes.gui.maps.shared.glow_orange') no-repeat center / cover;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.16s;
+}
+
+.BacklitTransparentButton_base_ec:hover .BacklitTransparentButton_background_13 {
+    opacity: 1;
+}
+
+.BacklitTransparentButton_base_ec:active .BacklitTransparentButton_background_13,
+.BacklitTransparentButton_base_ec:focus .BacklitTransparentButton_background_13 {
+    opacity: 0.5;
+}

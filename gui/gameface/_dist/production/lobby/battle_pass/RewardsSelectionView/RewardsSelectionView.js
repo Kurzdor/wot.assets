@@ -3468,7 +3468,8 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.RacesPoint = 'races_point');
                 })(Ze || (Ze = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -4348,10 +4349,9 @@
                                     }),
                                 [],
                             );
-                        const v = ((e) => {
-                            const t = R.images.gui.maps.icons.battlePass.backgrounds;
-                            return { backgroundImage: `url(${B(t.chapter, e)})` };
-                        })(o);
+                        const v = {
+                            backgroundImage: `url(${B(R.images.gui.maps.icons.battlePass.backgrounds.rewards, o)})`,
+                        };
                         return r().createElement(
                             'div',
                             { className: l()(Ou, d && Hu), style: v },

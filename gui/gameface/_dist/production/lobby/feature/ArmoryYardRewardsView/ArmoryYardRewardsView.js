@@ -1062,7 +1062,7 @@
                         [p.Large]: `${h().SMALL} ${h().MEDIUM} ${h().LARGE}`,
                         [p.ExtraLarge]: `${h().SMALL} ${h().MEDIUM} ${h().LARGE} ${h().EXTRA_LARGE}`,
                     },
-                    M = (u) => {
+                    P = (u) => {
                         let e = u.children,
                             t = u.className,
                             r = (function (u, e) {
@@ -1080,7 +1080,7 @@
                             o = n.mediaSize;
                         return a().createElement('div', T({ className: C()(t, S[i], y[s], x[o]) }, r), e);
                     },
-                    P = ['children'],
+                    M = ['children'],
                     O = (u) => {
                         let e = u.children,
                             t = (function (u, e) {
@@ -1091,8 +1091,8 @@
                                     n = Object.keys(u);
                                 for (r = 0; r < n.length; r++) (t = n[r]), e.indexOf(t) >= 0 || (a[t] = u[t]);
                                 return a;
-                            })(u, P);
-                        return a().createElement(B, null, a().createElement(M, t, e));
+                            })(u, M);
+                        return a().createElement(B, null, a().createElement(P, t, e));
                     };
                 var L = t(493),
                     k = t.n(L);
@@ -1323,7 +1323,8 @@
                             (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
                             (u.CosmicLootboxSilver = 'lootBoxToken'),
-                            (u.CosmicLootboxCommon = 'cosmic_2024_2');
+                            (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                            (u.RacesPoint = 'races_point');
                     })(au || (au = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1454,7 +1455,7 @@
                         au.CosmicLootboxSilver,
                     ],
                     Fu = [au.Gold, au.Credits, au.Crystal, au.FreeXp],
-                    cu = [au.BattlePassPoints],
+                    cu = [au.BattlePassPoints, au.RacesPoint],
                     Du = [au.PremiumPlus, au.Premium],
                     du = ['engravings', 'backgrounds'],
                     _u = ['engraving', 'background'],
@@ -1516,9 +1517,16 @@
                                             return `R.images.gui.maps.icons.blueprints.fragment.${e}.${n}`;
                                         case 'tokens':
                                         case 'battleToken':
-                                            return 'big' === e
-                                                ? u.iconBig.replace('..', 'img://gui')
-                                                : u.iconSmall.replace('..', 'img://gui');
+                                            return ((u, e) => {
+                                                switch (e) {
+                                                    case iu.Big:
+                                                        return u.iconBig.replace('..', 'img://gui');
+                                                    case iu.Small:
+                                                        return u.iconSmall.replace('..', 'img://gui');
+                                                    default:
+                                                        return `R.images.gui.maps.icons.quests.bonuses.${e}.${u.icon}`;
+                                                }
+                                            })(u, e);
                                         case 'lootBoxToken':
                                         case 'customizations':
                                         case 'styleProgress':
@@ -2099,7 +2107,7 @@
                     );
                 }
                 const xu = R.views.common.tooltip_window.simple_tooltip_content,
-                    Mu = (u) => {
+                    Pu = (u) => {
                         let e = u.children,
                             t = u.body,
                             n = u.header,
@@ -2136,9 +2144,9 @@
                         );
                         var A;
                     };
-                function Pu() {
+                function Mu() {
                     return (
-                        (Pu =
+                        (Mu =
                             Object.assign ||
                             function (u) {
                                 for (var e = 1; e < arguments.length; e++) {
@@ -2147,18 +2155,18 @@
                                 }
                                 return u;
                             }),
-                        Pu.apply(this, arguments)
+                        Mu.apply(this, arguments)
                     );
                 }
                 const Ou = ({ children: u, tooltipArgs: e, className: t }) => {
                         if (!e) return u;
                         const r = a().createElement('div', { className: t }, u);
-                        if (e.header || e.body) return a().createElement(Mu, e, r);
+                        if (e.header || e.body) return a().createElement(Pu, e, r);
                         const n = e.contentId,
                             i = e.args,
                             s = null == i ? void 0 : i.contentId;
                         return n || s
-                            ? a().createElement(bu, Pu({}, e, { contentId: n || s }), r)
+                            ? a().createElement(bu, Mu({}, e, { contentId: n || s }), r)
                             : a().createElement(Tu, e, r);
                     },
                     Lu = {
@@ -2586,13 +2594,13 @@
                             },
                             [i, o, l],
                         ),
-                        M = (0, r.useCallback)(
+                        P = (0, r.useCallback)(
                             (u) => {
                                 A && A(u);
                             },
                             [A],
                         ),
-                        P = (0, r.useCallback)(
+                        M = (0, r.useCallback)(
                             (u) => {
                                 i || (c && c(u), v(!1));
                             },
@@ -2642,8 +2650,8 @@
                                 ref: _,
                                 className: k,
                                 onMouseEnter: x,
-                                onMouseMove: M,
-                                onMouseUp: P,
+                                onMouseMove: P,
+                                onMouseUp: M,
                                 onMouseDown: O,
                                 onMouseLeave: L,
                                 onClick: y,
