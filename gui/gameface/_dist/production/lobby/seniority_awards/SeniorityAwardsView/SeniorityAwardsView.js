@@ -270,9 +270,9 @@
                         addPreloadTexture: () => w,
                         children: () => a,
                         displayStatus: () => _,
-                        displayStatusIs: () => z,
+                        displayStatusIs: () => $,
                         events: () => B,
-                        extraSize: () => $,
+                        extraSize: () => z,
                         forceTriggerMouseMove: () => G,
                         freezeTextureBeforeResize: () => L,
                         getBrowserTexturePath: () => R,
@@ -499,8 +499,8 @@
                 function V() {
                     return viewEnv.getShowingStatus();
                 }
-                const z = Object.keys(_).reduce((e, u) => ((e[u] = () => viewEnv.getShowingStatus() === _[u]), e), {}),
-                    $ = {
+                const $ = Object.keys(_).reduce((e, u) => ((e[u] = () => viewEnv.getShowingStatus() === _[u]), e), {}),
+                    z = {
                         set: (e, u) => {
                             viewEnv.setExtraSizeRem(e, u);
                         },
@@ -1411,9 +1411,9 @@
                         'soundClick',
                         'soundHover',
                     ];
-                function z() {
+                function $() {
                     return (
-                        (z =
+                        ($ =
                             Object.assign ||
                             function (e) {
                                 for (var u = 1; u < arguments.length; u++) {
@@ -1422,10 +1422,10 @@
                                 }
                                 return e;
                             }),
-                        z.apply(this, arguments)
+                        $.apply(this, arguments)
                     );
                 }
-                class $ extends o().PureComponent {
+                class z extends o().PureComponent {
                     constructor(...e) {
                         super(...e),
                             (this.state = { hover: !1, click: !1 }),
@@ -1479,7 +1479,7 @@
                             _ = p()(G.goto, null == s ? void 0 : s.goto);
                         return o().createElement(
                             'div',
-                            z(
+                            $(
                                 {
                                     className: d,
                                     onMouseEnter: this._onMouseEnter(i),
@@ -1499,7 +1499,7 @@
                         );
                     }
                 }
-                $.defaultProps = { side: 'left', type: 'back', soundHover: 'highlight', soundClick: 'play' };
+                z.defaultProps = { side: 'left', type: 'back', soundHover: 'highlight', soundClick: 'play' };
                 const j = (e, u) => {
                     let t;
                     const n = setTimeout(() => {
@@ -2048,7 +2048,8 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.RacesPoint = 'races_point');
                 })(Oe || (Oe = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -2142,7 +2143,7 @@
                             (e.PROGRESSION_STYLE_UPGRADED_3 = 'progressionStyleUpgraded_3'),
                             (e.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4');
                     })(Ve || (Ve = {}));
-                class ze extends o().PureComponent {
+                class $e extends o().PureComponent {
                     render() {
                         let e;
                         if ('gold' === this.props.format) e = q.B3.GOLD;
@@ -2151,8 +2152,8 @@
                         return void 0 !== this.props.value && void 0 !== u ? u : null;
                     }
                 }
-                ze.defaultProps = { format: 'integral' };
-                const $e = [
+                $e.defaultProps = { format: 'integral' };
+                const ze = [
                         Oe.Items,
                         Oe.Equipment,
                         Oe.Xp,
@@ -2189,7 +2190,7 @@
                         Oe.CosmicLootboxSilver,
                     ],
                     je = [Oe.Gold, Oe.Credits, Oe.Crystal, Oe.FreeXp],
-                    Ye = [Oe.BattlePassPoints],
+                    Ye = [Oe.BattlePassPoints, Oe.RacesPoint],
                     qe = [Oe.PremiumPlus, Oe.Premium],
                     Xe = ['engravings', 'backgrounds'],
                     Ke = ['engraving', 'background'],
@@ -2234,9 +2235,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${u}.${a}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === u
-                                    ? e.iconBig.replace('..', 'img://gui')
-                                    : e.iconSmall.replace('..', 'img://gui');
+                                return ((e, u) => {
+                                    switch (u) {
+                                        case He.Big:
+                                            return e.iconBig.replace('..', 'img://gui');
+                                        case He.Small:
+                                            return e.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${u}.${e.icon}`;
+                                    }
+                                })(e, u);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -2443,7 +2451,7 @@
                                                 }
                                                 case Ue.CURRENCY:
                                                 case Ue.NUMBER:
-                                                    return o().createElement(ze, {
+                                                    return o().createElement($e, {
                                                         format: 'integral',
                                                         value: Number(e),
                                                     });
@@ -2457,7 +2465,7 @@
                                         })(
                                             u,
                                             ((i = t),
-                                            $e.includes(i)
+                                            ze.includes(i)
                                                 ? Ue.MULTI
                                                 : je.includes(i)
                                                   ? Ue.CURRENCY
@@ -2906,8 +2914,8 @@
                     }),
                     Gu = 'HorizontalBar_base_49',
                     Vu = 'HorizontalBar_base__nonActive_82',
-                    zu = 'HorizontalBar_leftButton_5f',
-                    $u = 'HorizontalBar_rightButton_03',
+                    $u = 'HorizontalBar_leftButton_5f',
+                    zu = 'HorizontalBar_rightButton_03',
                     ju = 'HorizontalBar_track_0d',
                     Yu = 'HorizontalBar_thumb_fd',
                     qu = 'HorizontalBar_rail_32',
@@ -3052,7 +3060,7 @@
                             'div',
                             { className: p()(Gu, u.base), ref: r, onWheel: e.handleMouseWheel },
                             o().createElement('div', {
-                                className: p()(zu, u.leftButton),
+                                className: p()($u, u.leftButton),
                                 onMouseDown: (e) => {
                                     e.target.classList.contains(Xu) || 0 !== e.button || (W('play'), C(Iu.Next));
                                 },
@@ -3086,7 +3094,7 @@
                                 o().createElement('div', { className: p()(qu, u.rail) }),
                             ),
                             o().createElement('div', {
-                                className: p()($u, u.rightButton),
+                                className: p()(zu, u.rightButton),
                                 onMouseDown: (e) => {
                                     e.target.classList.contains(Xu) || 0 !== e.button || (W('play'), C(Iu.Prev));
                                 },
@@ -3503,8 +3511,8 @@
                     Wt = 'Vehicles_scrollLeftButton_28',
                     Gt = 'Vehicles_scrollRightButton_4d',
                     Vt = 'Vehicles_scrollTrack_bd',
-                    zt = 'Vehicles_item_16',
-                    $t = 'Vehicles_item__offset_ab',
+                    $t = 'Vehicles_item_16',
+                    zt = 'Vehicles_item__offset_ab',
                     jt = 'Vehicles_item__big_85',
                     Yt = 'Vehicles_bar_5d',
                     qt = 'Vehicles_bar__visible_8b';
@@ -3627,7 +3635,7 @@
                                                             {
                                                                 key: e.vehicleCD,
                                                                 ref: (e) => (D.current[u] = e),
-                                                                className: p()(zt, $t, t && jt),
+                                                                className: p()($t, zt, t && jt),
                                                             },
                                                             o().createElement(
                                                                 Lt,
@@ -4165,7 +4173,7 @@
                             k ? W() : I(!0);
                         }),
                             K(Y.n.ESCAPE, V);
-                        const z = () => {
+                        const $ = () => {
                                 k ? W() : G(true);
                             },
                             X = (0, a.useCallback)(() => {
@@ -4176,7 +4184,7 @@
                                 }
                                 return 0;
                             }, [h, b]);
-                        Z({ [Y.n.ENTER]: z, [Y.n.SPACE]: z });
+                        Z({ [Y.n.ENTER]: $, [Y.n.SPACE]: $ });
                         const Q = (0, a.useCallback)((e) => c(e), []),
                             J = (0, a.useCallback)(() => {
                                 d(kn.ShowFooter), D(P.value === pe.Ribbon);
@@ -4216,7 +4224,7 @@
                                         o().createElement(
                                             'div',
                                             { className: p()(Ln.textButton, Ln.textButton__close) },
-                                            o().createElement($, {
+                                            o().createElement(z, {
                                                 caption: Nn.textButton.close(),
                                                 type: 'close',
                                                 side: 'right',
@@ -4227,7 +4235,7 @@
                                             o().createElement(
                                                 'div',
                                                 { className: p()(Ln.textButton, Ln.textButton__back) },
-                                                o().createElement($, {
+                                                o().createElement(z, {
                                                     caption: Nn.textButton.back(),
                                                     goto: Nn.textButton.goto(),
                                                     type: 'back',

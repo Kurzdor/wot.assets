@@ -1,0 +1,39 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+/* RACES */
+.AbilityTooltipApp_base_12 {
+    display: flex;
+    width: 428rem;
+    overflow: hidden;
+    position: relative;
+}
+.AbilityTooltipApp_content_0d {
+    flex: 1;
+    padding: 20rem 16rem;
+    border: 1px solid #3b3b3b;
+    background: #121212f2;
+}
+.AbilityTooltipApp_title_23 {
+    color: #f2f2f2;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    padding-bottom: 7rem;
+}
+.AbilityTooltipApp_description_ce {
+    color: #808080;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}

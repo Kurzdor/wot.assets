@@ -35,7 +35,7 @@
                         displayStatus: () => m,
                         displayStatusIs: () => V,
                         events: () => C,
-                        extraSize: () => Y,
+                        extraSize: () => q,
                         forceTriggerMouseMove: () => W,
                         freezeTextureBeforeResize: () => y,
                         getBrowserTexturePath: () => x,
@@ -53,7 +53,7 @@
                         setEventHandled: () => H,
                         setInputPaddingsRem: () => T,
                         setSidePaddingsRem: () => M,
-                        whenTutorialReady: () => q,
+                        whenTutorialReady: () => Y,
                     });
                 const l = o('clientResized'),
                     E = { down: o('mousedown'), up: o('mouseup'), move: o('mousemove') };
@@ -263,7 +263,7 @@
                     return viewEnv.getShowingStatus();
                 }
                 const V = Object.keys(m).reduce((u, e) => ((u[e] = () => viewEnv.getShowingStatus() === m[e]), u), {}),
-                    Y = {
+                    q = {
                         set: (u, e) => {
                             viewEnv.setExtraSizeRem(u, e);
                         },
@@ -271,7 +271,7 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    q = Promise.all([
+                    Y = Promise.all([
                         new Promise((u) => {
                             window.isDomBuilt ? u() : C.onDomBuilt(u);
                         }),
@@ -1167,7 +1167,7 @@
                     'onShow',
                     'onHide',
                 ];
-                function Y(u) {
+                function q(u) {
                     return Object.entries(u || {}).map(([u, e]) => {
                         const t = { __Type: 'GFValueProxy', name: u };
                         switch (typeof e) {
@@ -1185,7 +1185,7 @@
                         return t;
                     });
                 }
-                const q = (u, e, t = {}, n = 0) => {
+                const Y = (u, e, t = {}, n = 0) => {
                         viewEnv.handleViewEvent(
                             Object.assign(
                                 {
@@ -1232,7 +1232,7 @@
                             w = (0, n.useMemo)(() => C || h().resId, [C]),
                             v = (0, n.useCallback)(() => {
                                 (b.current.isVisible && b.current.timeoutId) ||
-                                    (q(t, F, { isMouseEvent: !0, on: !0, arguments: Y(a) }, w),
+                                    (Y(t, F, { isMouseEvent: !0, on: !0, arguments: q(a) }, w),
                                     B && B(),
                                     (b.current.isVisible = !0));
                             }, [t, F, a, w, B]),
@@ -1240,7 +1240,7 @@
                                 if (b.current.isVisible || b.current.timeoutId) {
                                     const u = b.current.timeoutId;
                                     u > 0 && (clearTimeout(u), (b.current.timeoutId = 0)),
-                                        q(t, F, { on: !1 }, w),
+                                        Y(t, F, { on: !1 }, w),
                                         b.current.isVisible && g && g(),
                                         (b.current.isVisible = !1);
                                 }
@@ -1584,8 +1584,8 @@
                                     $ && Cu.base__withIcon,
                                     A,
                                 ),
-                                Y = (0, n.useMemo)(() => (_ ? { backgroundImage: `url(${_})` } : null), [_]),
-                                q = y()(Cu.input, Cu[`input__${t}`], F),
+                                q = (0, n.useMemo)(() => (_ ? { backgroundImage: `url(${_})` } : null), [_]),
+                                Y = y()(Cu.input, Cu[`input__${t}`], F),
                                 z = y()(Cu.icon, Cu[`icon__${t}`]),
                                 j = y()(Cu.placeholder, Cu[`placeholder__${t}`]);
                             return a().createElement(
@@ -1600,10 +1600,10 @@
                                     onClick: W,
                                 },
                                 !O && a().createElement('div', { className: Cu.disabled }),
-                                Y && a().createElement('div', { style: Y, className: z }),
+                                q && a().createElement('div', { style: q, className: z }),
                                 a().createElement('input', {
                                     ref: R,
-                                    className: q,
+                                    className: Y,
                                     type: Fu[t],
                                     value: e,
                                     onChange: k,
@@ -1788,8 +1788,8 @@
                             (0, n.useEffect)(() => {
                                 N(d);
                             }, [d, o]);
-                        const Y = (0, n.useCallback)((u) => h && h(u), [h]),
-                            q = (0, n.useCallback)(
+                        const q = (0, n.useCallback)((u) => h && h(u), [h]),
+                            Y = (0, n.useCallback)(
                                 (u) => {
                                     L.disableHighlightOnFocus && I && N(!1), p && p(u);
                                 },
@@ -1818,7 +1818,7 @@
                             su = y()(hu.base, hu[`base__${l}`], hu[`base__${o}`], T);
                         return a().createElement(
                             'div',
-                            { id: e, className: su, onMouseEnter: Y, onMouseDown: j, onMouseUp: z, onMouseLeave: X },
+                            { id: e, className: su, onMouseEnter: q, onMouseDown: j, onMouseUp: z, onMouseLeave: X },
                             a().createElement(
                                 tu,
                                 { tooltipArgs: c },
@@ -1837,7 +1837,7 @@
                                             selectOnFocus: L.selectOnFocus,
                                             isFocused: B,
                                             classMix: x,
-                                            onFocus: q,
+                                            onFocus: Y,
                                             onChange: H,
                                             onClear: $,
                                         },
@@ -2008,8 +2008,8 @@
                         Vu.apply(this, arguments)
                     );
                 }
-                const Yu = { debounceTime: 0 },
-                    qu = (0, n.memo)(
+                const qu = { debounceTime: 0 },
+                    Yu = (0, n.memo)(
                         ({
                             name: u,
                             value: e,
@@ -2055,7 +2055,7 @@
                                             onChange: p,
                                             error: d ? '' : t,
                                             variant: d ? Eu : ou,
-                                            options: Yu,
+                                            options: qu,
                                         },
                                         g,
                                     ),
@@ -2124,7 +2124,8 @@
                             (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
                             (u.CosmicLootboxSilver = 'lootBoxToken'),
-                            (u.CosmicLootboxCommon = 'cosmic_2024_2');
+                            (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                            (u.RacesPoint = 'races_point');
                     })(ju || (ju = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -2255,7 +2256,7 @@
                         ju.CosmicLootboxSilver,
                     ],
                     te = [ju.Gold, ju.Credits, ju.Crystal, ju.FreeXp],
-                    ne = [ju.BattlePassPoints],
+                    ne = [ju.BattlePassPoints, ju.RacesPoint],
                     ae = [ju.PremiumPlus, ju.Premium],
                     se = ['engravings', 'backgrounds'],
                     re = ['engraving', 'background'],
@@ -2300,9 +2301,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${e}.${s}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === e
-                                    ? u.iconBig.replace('..', 'img://gui')
-                                    : u.iconSmall.replace('..', 'img://gui');
+                                return ((u, e) => {
+                                    switch (e) {
+                                        case Ku.Big:
+                                            return u.iconBig.replace('..', 'img://gui');
+                                        case Ku.Small:
+                                            return u.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${e}.${u.icon}`;
+                                    }
+                                })(u, e);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -3156,7 +3164,7 @@
                         'onConfirmClicked',
                         'onWarningTimer',
                     ];
-                const Ye = (0, n.memo)((u) => {
+                const qe = (0, n.memo)((u) => {
                         let e = u.title,
                             t = u.subTitle,
                             s = u.isTitleOnly,
@@ -3240,7 +3248,7 @@
                             ),
                         );
                     }),
-                    qe = {
+                    Ye = {
                         field: 'AddCredentialsViewApp_field_a4',
                         password: 'AddCredentialsViewApp_password_da',
                         password__small: 'AddCredentialsViewApp_password__small_a2',
@@ -3354,7 +3362,7 @@
                             [F, r],
                         ),
                         B = '' !== _,
-                        g = $(['reward', 'password'], qe);
+                        g = $(['reward', 'password'], Ye);
                     return (
                         (0, n.useEffect)(() => {
                             D.current &&
@@ -3363,7 +3371,7 @@
                                     : r && c.errorMessage && ((D.current = !1), F[1].onFocusChange(!0)));
                         }, [F, E.errorMessage, c.errorMessage, r]),
                         a().createElement(
-                            Ye,
+                            qe,
                             je({}, l, F[d], {
                                 isConfirmEnabled: o,
                                 onConfirmClicked: m,
@@ -3376,7 +3384,7 @@
                                     title: s,
                                 }),
                             }),
-                            a().createElement(qu, je({}, E, F[0], { classMix: qe.field, isErrorVisible: !B })),
+                            a().createElement(Yu, je({}, E, F[0], { classMix: Ye.field, isErrorVisible: !B })),
                             r && a().createElement(he, je({}, c, F[1], { classMix: g.password, isErrorVisible: !B })),
                         )
                     );

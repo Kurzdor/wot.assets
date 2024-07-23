@@ -1704,7 +1704,8 @@
                         (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.CosmicLootboxSilver = 'lootBoxToken'),
-                        (u.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (u.RacesPoint = 'races_point');
                 })(fu || (fu = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1845,7 +1846,7 @@
                         fu.CosmicLootboxSilver,
                     ],
                     Ou = [fu.Gold, fu.Credits, fu.Crystal, fu.FreeXp],
-                    Nu = [fu.BattlePassPoints],
+                    Nu = [fu.BattlePassPoints, fu.RacesPoint],
                     ku = [fu.PremiumPlus, fu.Premium],
                     Iu = ['engravings', 'backgrounds'],
                     Uu = ['engraving', 'background'],
@@ -1890,9 +1891,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${e}.${n}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === e
-                                    ? u.iconBig.replace('..', 'img://gui')
-                                    : u.iconSmall.replace('..', 'img://gui');
+                                return ((u, e) => {
+                                    switch (e) {
+                                        case Tu.Big:
+                                            return u.iconBig.replace('..', 'img://gui');
+                                        case Tu.Small:
+                                            return u.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${e}.${u.icon}`;
+                                    }
+                                })(u, e);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -3069,6 +3077,8 @@
                                                     return { backgroundImage: `url(${ct}.customizations.${e}.${d})` };
                                                 case 'tmanToken':
                                                     return { backgroundImage: `url(${ct}.tankman.${e}.${d})` };
+                                                case 'vehicles':
+                                                    return { backgroundImage: `url(${ct}.vehicles.${e}.${d})` };
                                                 case 'items':
                                                     return {
                                                         backgroundImage: `url(R.images.gui.maps.icons.quests.bonuses.${e}.${d})`,
@@ -3173,7 +3183,7 @@
                         rotate: 'RewardsApp_rotate_72',
                     },
                     Tt = R.strings.battle_pass,
-                    St = R.images.gui.maps.icons.battlePass.backgrounds.chapter,
+                    St = R.images.gui.maps.icons.battlePass.backgrounds.rewards,
                     yt = (u, e) => {
                         switch (u) {
                             case I.BUY_BATTLE_PASS:

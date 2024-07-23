@@ -562,7 +562,8 @@
                             (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (e.BattleBoosterGift = 'battleBooster_gift'),
                             (e.CosmicLootboxSilver = 'lootBoxToken'),
-                            (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                            (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                            (e.RacesPoint = 'races_point');
                     })(n || (n = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -701,7 +702,7 @@
                         s.E4.CosmicLootboxSilver,
                     ],
                     i = [s.E4.Gold, s.E4.Credits, s.E4.Crystal, s.E4.FreeXp],
-                    l = [s.E4.BattlePassPoints],
+                    l = [s.E4.BattlePassPoints, s.E4.RacesPoint],
                     c = [s.E4.PremiumPlus, s.E4.Premium],
                     E = (e) =>
                         o.includes(e)
@@ -756,9 +757,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${u}.${a}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === u
-                                    ? e.iconBig.replace('..', 'img://gui')
-                                    : e.iconSmall.replace('..', 'img://gui');
+                                return ((e, u) => {
+                                    switch (u) {
+                                        case s.h2.Big:
+                                            return e.iconBig.replace('..', 'img://gui');
+                                        case s.h2.Small:
+                                            return e.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${u}.${e.icon}`;
+                                    }
+                                })(e, u);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -2640,10 +2648,10 @@
                 U.defaultProps = { side: 'left', type: 'back', soundHover: 'highlight', soundClick: 'play' };
                 var H = t(5521);
                 t(4179);
-                const G = (e) => {
+                const $ = (e) => {
                     console.error(e.type + ': useKeydownListener hook :: Callback is not defined');
                 };
-                function $(e = H.n.NONE, u = G, t = !1) {
+                function G(e = H.n.NONE, u = $, t = !1) {
                     (0, r.useEffect)(() => {
                         if (e !== H.n.NONE)
                             return (
@@ -2661,7 +2669,7 @@
                     }, [u, e, t]);
                 }
                 function W(e) {
-                    $(H.n.ESCAPE, e);
+                    G(H.n.ESCAPE, e);
                 }
                 var z = t(903);
                 var j = t(9525),
@@ -3159,7 +3167,7 @@
                                 : a().createElement(Ne, Ue({ key: `${r}-${u}` }, c));
                         },
                     ),
-                    Ge = (e) => ({
+                    $e = (e) => ({
                         '--progress-base': `url(${e.bgImageBase})`,
                         '--progress-line-base': e.line.bgColorBase,
                         '--progress-line-disabled': e.line.bgColorDisabled,
@@ -3172,7 +3180,7 @@
                         '--progress-delta-color': e.delta.color,
                         '--progress-delta-shadow': e.delta.shadow,
                     }),
-                    $e = {
+                    Ge = {
                         bgImageBase: 'R.images.gui.maps.icons.components.progress_bar.pattern_grey',
                         line: { bgColorBase: '#f50', bgColorDisabled: 'transparent', bgColorFinished: '#59a011' },
                         pattern: {
@@ -3193,7 +3201,7 @@
                         }
                         return e;
                     },
-                    ze = $e,
+                    ze = Ge,
                     je = {
                         freezed: !1,
                         withStack: !1,
@@ -3223,7 +3231,7 @@
                                 }, [t, u, e]))(l, e, c);
                             return a().createElement(
                                 'div',
-                                { className: o()(ce.base, ce[`base__${t}`]), style: Ge(u) },
+                                { className: o()(ce.base, ce[`base__${t}`]), style: $e(u) },
                                 !i && a().createElement(_e, { size: t }),
                                 a().createElement(He, {
                                     size: t,
@@ -3256,7 +3264,7 @@
                         glow__right: 'LevelProgressBar_glow__right_55',
                     },
                     Ze = Object.assign({}, je, { freezed: !0, type: de.Simple }),
-                    Ke = (0, r.memo)(({ size: e = Ee.Default, value: u, slideValue: t, maximum: n, theme: r = $e }) => {
+                    Ke = (0, r.memo)(({ size: e = Ee.Default, value: u, slideValue: t, maximum: n, theme: r = Ge }) => {
                         const s = u >= n ? n : u;
                         return a().createElement(
                             'div',
@@ -3689,8 +3697,8 @@
                                 a().createElement(ku, { type: 'gold', size: 'big', value: u }),
                             ),
                         ),
-                    Gu = R.strings.battle_pass.battlePassBuyView,
-                    $u = (0, h.Pi)(() => {
+                    $u = R.strings.battle_pass.battlePassBuyView,
+                    Gu = (0, h.Pi)(() => {
                         const e = k(),
                             u = e.model,
                             t = e.controls,
@@ -3709,12 +3717,12 @@
                                 },
                                 [e],
                             );
-                            $(H.n.ENTER, u);
+                            G(H.n.ENTER, u);
                         })(t.buy),
-                            $(H.n.SPACE, t.back),
+                            G(H.n.SPACE, t.back),
                             W(t.back);
                         const _ = {
-                            backgroundImage: `url(${(0, z.wD)(R.images.gui.maps.icons.battlePass.backgrounds.chapter, c.get())})`,
+                            backgroundImage: `url(${(0, z.wD)(R.images.gui.maps.icons.battlePass.backgrounds.rewards, c.get())})`,
                         };
                         return a().createElement(
                             'div',
@@ -3734,8 +3742,8 @@
                                 { className: Z },
                                 a().createElement(q.D, {
                                     chapter: c.get(),
-                                    buyBP: Gu.confirmAnyNumber.title(),
-                                    subTitle: Gu.confirmAnyNumber.descr(),
+                                    buyBP: $u.confirmAnyNumber.title(),
+                                    subTitle: $u.confirmAnyNumber.descr(),
                                     className: J,
                                 }),
                                 a().createElement(
@@ -3816,7 +3824,7 @@
                             s = t.fromLevel;
                         W(e);
                         const o = {
-                            backgroundImage: `url(${(0, z.wD)(R.images.gui.maps.icons.battlePass.backgrounds.chapter, n.get())})`,
+                            backgroundImage: `url(${(0, z.wD)(R.images.gui.maps.icons.battlePass.backgrounds.rewards, n.get())})`,
                         };
                         return a().createElement(
                             'div',
@@ -3874,7 +3882,7 @@
                             t = e.controls;
                         return 'rewardsState' === u.main.state.get()
                             ? a().createElement(zu, { options: ct }, a().createElement(lt, { back: t.showConfirmAny }))
-                            : a().createElement($u, null);
+                            : a().createElement(Gu, null);
                     });
                 engine.whenReady.then(() => {
                     C().render(
@@ -4682,8 +4690,8 @@
                         getDirection: (e) => (e.deltaY > 1 ? B.Next : B.Prev),
                     }),
                     H = 'VerticalBar_base_f3',
-                    G = 'VerticalBar_base__nonActive_42',
-                    $ = 'VerticalBar_topButton_d7',
+                    $ = 'VerticalBar_base__nonActive_42',
+                    G = 'VerticalBar_topButton_d7',
                     W = 'VerticalBar_bottomButton_06',
                     z = 'VerticalBar_track_df',
                     j = 'VerticalBar_thumb_32',
@@ -4726,7 +4734,7 @@
                                 return (
                                     (u.style.height = `${Q(t, s)}px`),
                                     u.classList.add(j),
-                                    r.current && (1 === s ? r.current.classList.add(G) : r.current.classList.remove(G)),
+                                    r.current && (1 === s ? r.current.classList.add($) : r.current.classList.remove($)),
                                     s
                                 );
                             }),
@@ -4834,7 +4842,7 @@
                             'div',
                             { className: s()(H, u.base), ref: r, onWheel: e.handleMouseWheel },
                             l().createElement('div', {
-                                className: s()($, u.topButton),
+                                className: s()(G, u.topButton),
                                 onMouseDown: (e) => {
                                     e.target.classList.contains(V) || 0 !== e.button || ((0, _.G)('play'), y(B.Next));
                                 },

@@ -1888,7 +1888,7 @@
                         };
                         Y({ [V.n.ENTER]: s, [V.n.SPACE]: s });
                         const o = {
-                            backgroundImage: `url(${eu(R.images.gui.maps.icons.battlePass.backgrounds.chapter, e)})`,
+                            backgroundImage: `url(${eu(R.images.gui.maps.icons.battlePass.backgrounds.rewards, e)})`,
                         };
                         return r().createElement(
                             'div',

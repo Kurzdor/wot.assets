@@ -726,7 +726,7 @@ body {
 }
 .BattlePassProgressionsViewContent_base__marathon_80 {
     --widget-size: 418rem;
-    background-color: #131012;
+    background-color: #12171e;
     background-position: 100% 50%;
     background-size: 1640rem 820rem;
 }
@@ -773,12 +773,9 @@ body {
     align-items: center;
     width: var(--widget-size);
     position: absolute;
-    top: 50%;
+    top: 55%;
     right: 30rem;
-    transform: translateY(40%);
-}
-.mediaSmall .BattlePassProgressionsViewContent_extraChapterWidget_e2 {
-    transform: translateY(50%);
+    transform: translateY(70%);
 }
 .mediaMedium .BattlePassProgressionsViewContent_extraChapterWidget_e2 {
     transform: translateY(80%);
@@ -819,11 +816,10 @@ body {
 .ExtraChapterWidget_base_61 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     max-width: 100%;
     padding: 10rem 0;
     position: relative;
-    z-index: 1;
 }
 
 .ExtraChapterWidget_glow_e7 {
@@ -838,28 +834,58 @@ body {
     pointer-events: none;
 }
 
+.ExtraChapterWidget_tankmen_0d {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 150rem;
+    position: relative;
+}
+
 .ExtraChapterWidget_vehicle_dc {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    align-self: flex-start;
     min-width: 150rem;
-    height: 100%;
     position: relative;
 }
 
 .ExtraChapterWidget_vehicleCaption_39 {
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
     color: #ffc363;
     font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
     font-weight: 700;
     line-height: 17rem;
 }
 
 .mediaMedium .ExtraChapterWidget_vehicleCaption_39 {
     margin-top: 11rem;
-    margin-bottom: 4rem;
+    color: #ffc363;
     font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.ExtraChapterWidget_tankmenCaption_c6 {
+    margin-bottom: 13rem;
+    color: #ffc363;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    font-weight: 700;
+    line-height: 17rem;
+}
+
+.mediaMedium .ExtraChapterWidget_tankmenCaption_c6 {
+    margin-top: 10rem;
+    color: #ffc363;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .ExtraChapterWidget_vehicleBg_ce {
@@ -951,7 +977,148 @@ body {
     transform: translateY(0rem);
 }
 
+.Sonar_base_8f {
+    width: 280rem;
+    height: 160rem;
+    overflow: hidden;
+    position: relative;
+    pointer-events: none;
+}
+.Sonar_back_6b {
+    width: 280rem;
+    height: 160rem;
+    background: radial-gradient(37.13% 55.24% at 50% 50%, #d54c1b 0%, rgba(213, 76, 27, 0) 100%);
+    position: absolute;
+    z-index: -2;
+}
+.Sonar_emitter_50 {
+    width: 24rem;
+    height: 24rem;
+    border-radius: 9999rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Sonar_wave_1e {
+    width: 100%;
+    height: 100%;
+    border: 3rem solid #d54c1b;
+    border-radius: 9999rem;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.Sonar_wave__0_7a {
+    animation: Sonar_sonarWave_6b 3s 0s linear infinite;
+}
+.Sonar_wave__1_aa {
+    animation: Sonar_sonarWave_6b 3s 0.3s linear infinite;
+}
+.Sonar_wave__2_5d {
+    animation: Sonar_sonarWave_6b 3s 0.6s linear infinite;
+}
+.Sonar_wave__3_67 {
+    animation: Sonar_sonarWave_6b 3s 0.9s linear infinite;
+}
+.Sonar_wave__4_cd {
+    animation: Sonar_sonarWave_6b 3s 1.2s linear infinite;
+}
+.Sonar_wave__5_08 {
+    animation: Sonar_sonarWave_6b 3s 1.5s linear infinite;
+}
+.Sonar_wave__6_0b {
+    animation: Sonar_sonarWave_6b 3s 1.8s linear infinite;
+}
+.Sonar_wave__7_b6 {
+    animation: Sonar_sonarWave_6b 3s 2.1s linear infinite;
+}
+.Sonar_wave__8_3b {
+    animation: Sonar_sonarWave_6b 3s 2.4s linear infinite;
+}
+.Sonar_wave__9_16 {
+    animation: Sonar_sonarWave_6b 3s 2.7s linear infinite;
+}
+.Sonar_wave__10_09 {
+    animation: Sonar_sonarWave_6b 3s 3s linear infinite;
+}
+@keyframes Sonar_sonarWave_6b {
+    0% {
+        opacity: 0.4;
+    }
+
+    100% {
+        width: 1000%;
+        height: 1000%;
+        opacity: 0;
+    }
+}
+
+.Sound_base_9f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68rem;
+    opacity: 0.7;
+    position: relative;
+    z-index: 0;
+    transition: opacity 0.25s ease-out;
+    cursor: pointer;
+}
+
+.Sound_base__hovered_39 {
+    opacity: 1;
+}
+
+.mediaSmall .Sound_base_9f {
+    height: 72rem;
+}
+.Sound_content_7a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.25s ease-out;
+}
+.Sound_icoContainer_b7 {
+    width: 35rem;
+    height: 26rem;
+    opacity: 0.7;
+    position: relative;
+    transition: opacity 0.25s ease-out;
+}
+.Sound_base__active_d7 .Sound_icoContainer_b7 {
+    opacity: 1;
+}
+.Sound_ico_d2 {
+    width: 100rem;
+    height: 100rem;
+    background: url('R.images.gui.maps.icons.battlePass.icons.voice') no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.Sound_sonar_ef {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out;
+}
+.Sound_sonar__show_f5 {
+    opacity: 1;
+}
+
 .Separator_base_c5 {
+    align-self: center;
     width: 55rem;
     height: 100rem;
     position: relative;
@@ -968,22 +1135,297 @@ body {
     pointer-events: none;
 }
 
+.Separator_preview_44,
+.Separator_sound_8b {
+    position: absolute;
+    top: -30rem;
+}
+
 .Separator_preview_44 {
     width: 60rem;
     height: 60rem;
-    position: absolute;
-    top: -15rem;
-    left: 54%;
-    transform: translate(-50%, -50%);
+    transform: translate(-100%, -100%);
 }
 
-.mediaMedium .Separator_preview_44 {
-    top: -30rem;
+.Separator_sound_8b {
+    width: 60rem;
+    height: 68rem;
+    transform: translate(100%, -100%);
+}
+
+.Box_mt__XS_0c {
+    margin-top: 4rem;
+}
+.Box_mt__SM_eb {
+    margin-top: 8rem;
+}
+.Box_mt__SMp_cf {
+    margin-top: 10rem;
+}
+.Box_mt__MD_25 {
+    margin-top: 16rem;
+}
+.Box_mt__MDp_49 {
+    margin-top: 20rem;
+}
+.Box_mt__LG_e8 {
+    margin-top: 32rem;
+}
+.Box_mt__XL_83 {
+    margin-top: 64rem;
+}
+
+.Box_mr__XS_7c {
+    margin-right: 4rem;
+}
+
+.Box_mr__SM_08 {
+    margin-right: 8rem;
+}
+
+.Box_mr__SMp_06 {
+    margin-right: 10rem;
+}
+
+.Box_mr__MD_4a {
+    margin-right: 16rem;
+}
+
+.Box_mr__MDp_b6 {
+    margin-right: 20rem;
+}
+
+.Box_mr__LG_d0 {
+    margin-right: 32rem;
+}
+
+.Box_mr__XL_db {
+    margin-right: 64rem;
+}
+
+.Box_mb__XS_bb {
+    margin-bottom: 4rem;
+}
+
+.Box_mb__SM_83 {
+    margin-bottom: 8rem;
+}
+
+.Box_mb__SMp_04 {
+    margin-bottom: 10rem;
+}
+
+.Box_mb__MD_ed {
+    margin-bottom: 16rem;
+}
+
+.Box_mb__MDp_65 {
+    margin-bottom: 20rem;
+}
+
+.Box_mb__LG_c8 {
+    margin-bottom: 32rem;
+}
+
+.Box_mb__XL_f8 {
+    margin-bottom: 64rem;
+}
+
+.Box_ml__XS_8a {
+    margin-left: 4rem;
+}
+
+.Box_ml__SM_e6 {
+    margin-left: 8rem;
+}
+
+.Box_ml__SMp_fb {
+    margin-left: 10rem;
+}
+
+.Box_ml__MD_2b {
+    margin-left: 16rem;
+}
+
+.Box_ml__MDp_c7 {
+    margin-left: 20rem;
+}
+
+.Box_ml__LG_39 {
+    margin-left: 32rem;
+}
+
+.Box_ml__XL_4a {
+    margin-left: 64rem;
 }
 
 .FormatText_base_d0 {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* eslint-disable-next-line expectedscss*/
+.Text_paragraph-P10_2c {
+    font-size: 10rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_paragraph-P12_22 {
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Text_paragraph-P14_a7 {
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Text_paragraph-P16_90 {
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Text_paragraph-P18_50 {
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Text_paragraph-P24_33 {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 32rem;
+}
+.Text_heading-H14_8b {
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.Text_heading-H15_9e {
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.Text_heading-H18_b7 {
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H20R_f6 {
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H22_27 {
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H24R_be {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H24_0c {
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H28_78 {
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H36_32 {
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H56_c3 {
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H73_8f {
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H144_a9 {
+    font-size: 144rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.Text_BLACK_REAL_30 {
+    color: #000000;
+}
+.Text_WHITE_REAL_bc {
+    color: #ffffff;
+}
+.Text_WHITE_62 {
+    color: #f2f2f7;
+}
+.Text_WHITE_ORANGE_54 {
+    color: #fefeec;
+}
+.Text_WHITE_SPANISH_df {
+    color: #e9e2bf;
+}
+.Text_PAR_15 {
+    color: #8c8c7e;
+}
+.Text_PAR_SECONDARY_5d {
+    color: #595950;
+}
+.Text_PAR_TERTIARY_c9 {
+    color: #37362e;
+}
+.Text_INFO_RED_30 {
+    color: #ff0000;
+}
+.Text_RED_66 {
+    color: #ff2717;
+}
+.Text_RED_DARK_d8 {
+    color: #b70000;
+}
+.Text_YELLOW_ed {
+    color: #feab34;
+}
+.Text_ORANGE_be {
+    color: #ee7000;
+}
+.Text_CREAM_57 {
+    color: #ffdd99;
+}
+.Text_BROWN_18 {
+    color: #cbac77;
+}
+.Text_GREEN_BRIGHT_3f {
+    color: #80d43a;
+}
+.Text_GREEN_e3 {
+    color: #7ab300;
+}
+.Text_GREEN_DARK_f1 {
+    color: #497212;
+}
+.Text_BLUE_BOOSTER_21 {
+    color: #ccffff;
+}
+.Text_BLUE_TEAMKILLER_ab {
+    color: #09e2ff;
+}
+.Text_CRED_f7 {
+    color: #ced9d9;
+}
+.Text_GOLD_28 {
+    color: #ffc363;
+}
+.Text_BOND_be {
+    color: #c9c9b6;
+}
+.Text_PROM_65 {
+    color: #a29b70;
 }
 
 .StyleDescription_base_b1 {
@@ -992,14 +1434,17 @@ body {
 
 .StyleDescription_title_9e {
     margin-bottom: 4rem;
-    color: rgba(242, 242, 247, 0.9);
+    color: rgba(254, 254, 236, 0.9);
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
 .mediaMedium .StyleDescription_title_9e {
+    color: rgba(254, 254, 236, 0.9);
     font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .StyleDescription_subTitle_99 {
@@ -1012,7 +1457,10 @@ body {
 }
 
 .mediaMedium .StyleDescription_subTitle_99 {
+    color: #fefeec;
     font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
 }
 
 .StyleDescription_subTitleTextWrapper_36 {
@@ -1052,16 +1500,26 @@ body {
 .StyleDescription_lockIcon_6e {
     width: 46rem;
     height: 46rem;
-    margin: -14rem -11rem -16rem -17rem;
+    margin: -14rem -11rem 0 -17rem;
     background: url('R.images.gui.maps.icons.battlePass.progression.icon_lock') no-repeat center / contain;
+}
+
+.mediaMedium .StyleDescription_lockIcon_6e {
+    margin-top: -12rem;
 }
 
 .VehicleInfo_base_45 {
     display: flex;
-    color: #f2f2f7;
+    color: #fefeec;
     font-size: 22rem;
     font-weight: 700;
     line-height: 1.2;
+}
+.mediaMedium .VehicleInfo_base_45 {
+    color: #fefeec;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .VehicleInfo_type_2e {
@@ -1072,7 +1530,7 @@ body {
 }
 
 .mediaMedium .VehicleInfo_type_2e {
-    margin: -9rem -12rem -13rem;
+    margin: -18rem -12rem -13rem;
 }
 
 .CButton_base_40 {

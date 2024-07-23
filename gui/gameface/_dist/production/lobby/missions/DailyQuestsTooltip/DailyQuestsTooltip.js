@@ -1511,7 +1511,8 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.RacesPoint = 'races_point');
                 })(F || (F = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -1962,8 +1963,8 @@
                         F.CosmicLootboxCommon,
                         F.CosmicLootboxSilver,
                     ],
-                    G = [F.Gold, F.Credits, F.Crystal, F.FreeXp],
-                    $ = [F.BattlePassPoints],
+                    $ = [F.Gold, F.Credits, F.Crystal, F.FreeXp],
+                    G = [F.BattlePassPoints, F.RacesPoint],
                     z = [F.PremiumPlus, F.Premium],
                     q = ['engravings', 'backgrounds'],
                     j = ['engraving', 'background'],
@@ -2008,9 +2009,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${u}.${s}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === u
-                                    ? e.iconBig.replace('..', 'img://gui')
-                                    : e.iconSmall.replace('..', 'img://gui');
+                                return ((e, u) => {
+                                    switch (u) {
+                                        case D.Big:
+                                            return e.iconBig.replace('..', 'img://gui');
+                                        case D.Small:
+                                            return e.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${u}.${e.icon}`;
+                                    }
+                                })(e, u);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -2451,13 +2459,14 @@
                                     ((u = e.name),
                                     U.includes(u)
                                         ? B.MULTI
-                                        : G.includes(u)
+                                        : $.includes(u)
                                           ? B.CURRENCY
-                                          : $.includes(u)
+                                          : G.includes(u)
                                             ? B.NUMBER
                                             : z.includes(u)
                                               ? B.PREMIUM_PLUS
                                               : B.STRING),
+                                special: e.overlayType,
                             };
                             var u;
                         });

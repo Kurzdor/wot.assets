@@ -1582,7 +1582,8 @@
                             (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
                             (u.CosmicLootboxSilver = 'lootBoxToken'),
-                            (u.CosmicLootboxCommon = 'cosmic_2024_2');
+                            (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                            (u.RacesPoint = 'races_point');
                     })(lu || (lu = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1715,6 +1716,7 @@
                     lu.Crystal,
                     lu.FreeXp,
                     lu.BattlePassPoints,
+                    lu.RacesPoint,
                     lu.PremiumPlus,
                     lu.Premium;
                 const mu = ['engravings', 'backgrounds'],
@@ -1760,9 +1762,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${e}.${s}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === e
-                                    ? u.iconBig.replace('..', 'img://gui')
-                                    : u.iconSmall.replace('..', 'img://gui');
+                                return ((u, e) => {
+                                    switch (e) {
+                                        case cu.Big:
+                                            return u.iconBig.replace('..', 'img://gui');
+                                        case cu.Small:
+                                            return u.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${e}.${u.icon}`;
+                                    }
+                                })(u, e);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':

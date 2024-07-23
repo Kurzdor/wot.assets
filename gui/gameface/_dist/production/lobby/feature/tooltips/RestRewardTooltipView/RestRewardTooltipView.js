@@ -881,7 +881,8 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.RacesPoint = 'races_point');
                 })(p || (p = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -1022,7 +1023,7 @@
                         p.CosmicLootboxSilver,
                     ],
                     y = [p.Gold, p.Credits, p.Crystal, p.FreeXp],
-                    S = [p.BattlePassPoints],
+                    S = [p.BattlePassPoints, p.RacesPoint],
                     k = [p.PremiumPlus, p.Premium],
                     M = ['engravings', 'backgrounds'],
                     D = ['engraving', 'background'],
@@ -1067,9 +1068,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${t}.${s}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === t
-                                    ? e.iconBig.replace('..', 'img://gui')
-                                    : e.iconSmall.replace('..', 'img://gui');
+                                return ((e, t) => {
+                                    switch (t) {
+                                        case g.Big:
+                                            return e.iconBig.replace('..', 'img://gui');
+                                        case g.Small:
+                                            return e.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${t}.${e.icon}`;
+                                    }
+                                })(e, t);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -1402,7 +1410,7 @@
                         V.apply(this, arguments)
                     );
                 }
-                const j = ({ children: e, tooltipArgs: t, className: n }) => {
+                const $ = ({ children: e, tooltipArgs: t, className: n }) => {
                         if (!t) return e;
                         const r = a().createElement('div', { className: n }, e);
                         if (t.header || t.body) return a().createElement(Y, t, r);
@@ -1413,7 +1421,7 @@
                             ? a().createElement(C, V({}, t, { contentId: o || i }), r)
                             : a().createElement(x, t, r);
                     },
-                    $ = {
+                    j = {
                         base: 'Reward_base_ea',
                         base__s48x48: 'Reward_base__s48x48_46',
                         base__small: 'Reward_base__small_c0',
@@ -1511,31 +1519,31 @@
                             })(i, c);
                         return a().createElement(
                             'div',
-                            { className: o()($.base, $[`base__${r}`], u), style: l },
+                            { className: o()(j.base, j[`base__${r}`], u), style: l },
                             a().createElement(
-                                j,
-                                { tooltipArgs: d, className: $.tooltipWrapper },
+                                $,
+                                { tooltipArgs: d, className: j.tooltipWrapper },
                                 a().createElement(
                                     a().Fragment,
                                     null,
                                     a().createElement(
                                         'div',
-                                        { className: o()($.image, null == _ ? void 0 : _.image) },
+                                        { className: o()(j.image, null == _ ? void 0 : _.image) },
                                         E &&
                                             a().createElement('div', {
-                                                className: o()($.highlight, null == _ ? void 0 : _.highlight),
+                                                className: o()(j.highlight, null == _ ? void 0 : _.highlight),
                                                 style: {
                                                     backgroundImage: `url(R.images.gui.maps.icons.quests.bonuses.${r}.${E}_highlight)`,
                                                 },
                                             }),
                                         t &&
                                             a().createElement('div', {
-                                                className: o()($.icon, null == _ ? void 0 : _.rewardIcon),
+                                                className: o()(j.icon, null == _ ? void 0 : _.rewardIcon),
                                                 style: { backgroundImage: `url(${t})` },
                                             }),
                                         p &&
                                             a().createElement('div', {
-                                                className: o()($.overlay, null == _ ? void 0 : _.overlay),
+                                                className: o()(j.overlay, null == _ ? void 0 : _.overlay),
                                                 style: {
                                                     backgroundImage: `url(R.images.gui.maps.icons.quests.bonuses.${r}.${p}_overlay)`,
                                                 },
@@ -1546,9 +1554,9 @@
                                             'div',
                                             {
                                                 className: o()(
-                                                    $.info,
-                                                    $[`info__${e}`],
-                                                    c === w.MULTI && $.info__multi,
+                                                    j.info,
+                                                    j[`info__${e}`],
+                                                    c === w.MULTI && j.info__multi,
                                                     null == _ ? void 0 : _.info,
                                                 ),
                                             },
@@ -1558,10 +1566,10 @@
                             ),
                             n &&
                                 a().createElement(
-                                    j,
+                                    $,
                                     { tooltipArgs: m },
                                     a().createElement('div', {
-                                        className: o()($.timer, null == _ ? void 0 : _.periodicIcon),
+                                        className: o()(j.timer, null == _ ? void 0 : _.periodicIcon),
                                     }),
                                 ),
                         );

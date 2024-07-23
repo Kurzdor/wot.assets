@@ -351,7 +351,8 @@
                             (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (e.BattleBoosterGift = 'battleBooster_gift'),
                             (e.CosmicLootboxSilver = 'lootBoxToken'),
-                            (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                            (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                            (e.RacesPoint = 'races_point');
                     })(n || (n = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -498,7 +499,7 @@
                         o.E4.CosmicLootboxSilver,
                     ],
                     c = [o.E4.Gold, o.E4.Credits, o.E4.Crystal, o.E4.FreeXp],
-                    u = [o.E4.BattlePassPoints],
+                    u = [o.E4.BattlePassPoints, o.E4.RacesPoint],
                     d = [o.E4.PremiumPlus, o.E4.Premium],
                     _ = (e) =>
                         l.includes(e)
@@ -553,9 +554,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${t}.${i}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === t
-                                    ? e.iconBig.replace('..', 'img://gui')
-                                    : e.iconSmall.replace('..', 'img://gui');
+                                return ((e, t) => {
+                                    switch (t) {
+                                        case o.h2.Big:
+                                            return e.iconBig.replace('..', 'img://gui');
+                                        case o.h2.Small:
+                                            return e.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${t}.${e.icon}`;
+                                    }
+                                })(e, t);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -888,8 +896,8 @@
                             f = e.targetId,
                             R = void 0 === f ? 0 : f,
                             S = e.onShow,
-                            T = e.onHide,
-                            P = (function (e, t) {
+                            P = e.onHide,
+                            T = (function (e, t) {
                                 if (null == e) return {};
                                 var r,
                                     n,
@@ -911,10 +919,10 @@
                                     const e = O.current.timeoutId;
                                     e > 0 && (clearTimeout(e), (O.current.timeoutId = 0)),
                                         l(r, v, { on: !1 }, y),
-                                        O.current.isVisible && T && T(),
+                                        O.current.isVisible && P && P(),
                                         (O.current.isVisible = !1);
                                 }
-                            }, [r, v, y, T]),
+                            }, [r, v, y, P]),
                             L = (0, i.useCallback)((e) => {
                                 O.current.isVisible &&
                                     ((O.current.prevTarget = document.elementFromPoint(e.clientX, e.clientY)),
@@ -970,7 +978,7 @@
                                                   !1 === E && x(), null == d || d(t), null == e || e(t);
                                               })(t.props.onMouseDown),
                                           },
-                                          P,
+                                          T,
                                       ),
                                   )
                                 : t
@@ -1362,13 +1370,13 @@
                         addPreloadTexture: () => o,
                         children: () => n,
                         displayStatus: () => a.W,
-                        displayStatusIs: () => P,
+                        displayStatusIs: () => T,
                         events: () => i.U,
                         extraSize: () => O,
                         forceTriggerMouseMove: () => S,
                         freezeTextureBeforeResize: () => h,
                         getBrowserTexturePath: () => c,
-                        getDisplayStatus: () => T,
+                        getDisplayStatus: () => P,
                         getScale: () => E,
                         getSize: () => _,
                         getViewGlobalPosition: () => g,
@@ -1440,10 +1448,10 @@
                 function S() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function T() {
+                function P() {
                     return viewEnv.getShowingStatus();
                 }
-                const P = Object.keys(a.W).reduce(
+                const T = Object.keys(a.W).reduce(
                         (e, t) => ((e[t] = () => viewEnv.getShowingStatus() === a.W[t]), e),
                         {},
                     ),
@@ -1973,11 +1981,11 @@
                     S = (e, t) => {
                         e.keyCode === g.n.ESCAPE && t();
                     };
-                var T = r(7572);
-                const P = a.instance,
+                var P = r(7572);
+                const T = a.instance,
                     O = {
                         DataTracker: i.Z,
-                        ViewModel: T.Z,
+                        ViewModel: P.Z,
                         ViewEventType: l,
                         NumberFormatType: u,
                         RealFormatType: d,
@@ -2053,7 +2061,7 @@
                                 }
                             return r;
                         },
-                        ClickOutsideManager: P,
+                        ClickOutsideManager: T,
                         SystemLocale: s,
                         UserLocale: o,
                     };
@@ -2283,8 +2291,8 @@
                     onMouseDown: b,
                     children: f,
                     soundHover: S,
-                    soundClick: T,
-                    counter: P,
+                    soundClick: P,
+                    counter: T,
                     tokensCount: O = 0,
                 }) => {
                     const y = (0, n.useState)(!1),
@@ -2332,7 +2340,7 @@
                                 _ || (C(e, t), 0 === t.button && N(!1));
                             })(w),
                             onClick: ((e) => (t) => {
-                                _ || ((0, u.G)(T), C(e, t));
+                                _ || ((0, u.G)(P), C(e, t));
                             })(E),
                         },
                         m &&
@@ -2363,12 +2371,12 @@
                                         : a().createElement('div', { className: d.count }, t),
                                     a().createElement('div', { className: d.label }, e),
                                 ),
-                            Boolean(P) &&
+                            Boolean(T) &&
                                 !_ &&
                                 a().createElement(
                                     'div',
                                     { className: d.counter },
-                                    a().createElement(l.A, { value: P }),
+                                    a().createElement(l.A, { value: T }),
                                 ),
                             O > 0 &&
                                 a().createElement(
@@ -2402,11 +2410,11 @@
                     b = r(2862),
                     f = r(5415),
                     S = r(1558);
-                let T;
+                let P;
                 !(function (e) {
                     (e.Static = 'static'), (e.Claimable = 'claimable');
-                })(T || (T = {}));
-                var P = r(5989);
+                })(P || (P = {}));
+                var T = r(5989);
                 const O = (0, n.memo)(
                         ({
                             claimState: e,
@@ -2420,7 +2428,7 @@
                             isBattlePassRewardDisable: d,
                             classMix: _,
                         }) => {
-                            const m = e === T.Claimable;
+                            const m = e === P.Claimable;
                             return a().createElement(
                                 'div',
                                 {
@@ -2438,7 +2446,7 @@
                                         a().createElement('div', { className: 'FrontlineReward_glow_0d' }),
                                         a().createElement('div', { className: 'FrontlineReward_glowReverse_42' }),
                                     ),
-                                a().createElement(P.I, {
+                                a().createElement(T.I, {
                                     item: i.ob.RewardTooltip,
                                     info: t,
                                     parentScreen: i.RM.RewardsView,

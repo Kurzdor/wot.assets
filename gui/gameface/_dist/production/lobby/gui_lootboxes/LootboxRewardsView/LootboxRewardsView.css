@@ -292,6 +292,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 1;
     transform: translate(-50%, -50%);
 }
 .Content_stars_45 {
@@ -311,6 +312,7 @@ body {
     position: absolute;
     top: 50%;
     left: auto;
+    z-index: 2;
     transform: translateY(-50%);
 }
 .mediaMedium .Content_mainRewards_73 {
@@ -1213,13 +1215,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .Header_blinkAnimate1_cf {
     position: absolute;
-    top: -131rem;
+    top: -157rem;
     left: auto;
     transform: translateX(38rem);
     animation: Header_movingX_short_78 0.28s linear 0.78s forwards;
 }
 .mediaMedium .Header_blinkAnimate1_cf {
-    top: -168rem;
+    top: -202rem;
     transform: translateX(55rem);
     animation: Header_movingX_medium_80 0.28s linear 0.78s forwards;
 }
@@ -1417,6 +1419,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Header_accent_7a {
     color: #ffdd99;
 }
+.Header_count_98 {
+    opacity: 0;
+    animation: Header_slideUp_0c 0.4s cubic-bezier(0.07, 0.82, 0.17, 1) 0.5s forwards;
+    margin-top: 8rem;
+    color: #ffdd99;
+    font-size: 20rem;
+}
 
 @keyframes App_fadeOut_5e {
     from {
@@ -1498,9 +1507,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .App_bg_5d {
     width: 100vw;
     height: 100vh;
-    background:
-        url('R.images.gui_lootboxes.gui.maps.rewards.bgTop') no-repeat top center / contain,
-        url('R.images.gui_lootboxes.gui.maps.rewards.bgBottom') no-repeat bottom center / contain;
+    background: url('R.images.gui_lootboxes.gui.maps.rewards.bgBottom') no-repeat bottom center / contain;
     position: absolute;
     top: 0;
     left: 0;

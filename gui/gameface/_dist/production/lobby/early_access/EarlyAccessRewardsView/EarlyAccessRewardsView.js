@@ -238,7 +238,7 @@
                         setEventHandled: () => h,
                         setInputPaddingsRem: () => o,
                         setSidePaddingsRem: () => A,
-                        whenTutorialReady: () => x,
+                        whenTutorialReady: () => R,
                     });
                 var r = t(3722),
                     a = t(6112),
@@ -311,7 +311,7 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    x = Promise.all([
+                    R = Promise.all([
                         new Promise((u) => {
                             window.isDomBuilt ? u() : n.U.onDomBuilt(u);
                         }),
@@ -1345,7 +1345,8 @@
                             (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
                             (u.CosmicLootboxSilver = 'lootBoxToken'),
-                            (u.CosmicLootboxCommon = 'cosmic_2024_2');
+                            (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                            (u.RacesPoint = 'races_point');
                     })(Z || (Z = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1476,7 +1477,7 @@
                         Z.CosmicLootboxSilver,
                     ],
                     iu = [Z.Gold, Z.Credits, Z.Crystal, Z.FreeXp],
-                    su = [Z.BattlePassPoints],
+                    su = [Z.BattlePassPoints, Z.RacesPoint],
                     ou = [Z.PremiumPlus, Z.Premium],
                     Eu = ['engravings', 'backgrounds'],
                     lu = ['engraving', 'background'],
@@ -1521,9 +1522,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${e}.${n}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === e
-                                    ? u.iconBig.replace('..', 'img://gui')
-                                    : u.iconSmall.replace('..', 'img://gui');
+                                return ((u, e) => {
+                                    switch (e) {
+                                        case uu.Big:
+                                            return u.iconBig.replace('..', 'img://gui');
+                                        case uu.Small:
+                                            return u.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${e}.${u.icon}`;
+                                    }
+                                })(u, e);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -1879,8 +1887,8 @@
                     vu = pu[1],
                     wu = 'Content_base_24',
                     fu = 'Content_ribbon_c0',
-                    xu = 'Content_ribbon__onlyRegular_96',
-                    Ru = 'Content_mainRewards_65',
+                    Ru = 'Content_ribbon__onlyRegular_96',
+                    xu = 'Content_mainRewards_65',
                     Su = 'Content_regularRewards_e8',
                     Tu = 'Content_regularRewards__onlyRegular_d2',
                     Mu = [
@@ -2491,7 +2499,7 @@
                             n = u.computes.hasRegularRewards(),
                             i = u.computes.hasRegularRewardsOnly(),
                             s = u.computes.getRewardsShowDelay(),
-                            o = p()(fu, i && xu),
+                            o = p()(fu, i && Ru),
                             E = p()(Su, i && Tu);
                         return a().createElement(
                             'div',
@@ -2500,7 +2508,7 @@
                             r &&
                                 a().createElement(
                                     'div',
-                                    { className: Ru },
+                                    { className: xu },
                                     e.map((u, e) => a().createElement(Qu, { key: u.name, reward: u, index: e })),
                                 ),
                             n &&
@@ -2803,8 +2811,8 @@
                         XS: { mt: pe.mt__XS, mr: pe.mr__XS, mb: pe.mb__XS, ml: pe.ml__XS },
                     },
                     fe = (Object.keys(we), ['mt', 'mr', 'mb', 'ml']),
-                    xe = { mt: 'marginTop', mr: 'marginRight', mb: 'marginBottom', ml: 'marginLeft' },
-                    Re = he((u) => {
+                    Re = { mt: 'marginTop', mr: 'marginRight', mb: 'marginBottom', ml: 'marginLeft' },
+                    xe = he((u) => {
                         let e = u.className,
                             t = u.width,
                             n = u.height,
@@ -2835,8 +2843,8 @@
                                       (v && 'space-around') ||
                                       void 0
                                     : w,
-                            x = u.alignItems,
-                            R = void 0 === x ? (C ? 'flex-start' : g && 'center') || (h && 'flex-end') || void 0 : x,
+                            R = u.alignItems,
+                            x = void 0 === R ? (C ? 'flex-start' : g && 'center') || (h && 'flex-end') || void 0 : R,
                             S = u.alignSelf,
                             T = u.wrap,
                             M = u.flexWrap,
@@ -2866,7 +2874,7 @@
                                     r = ((u) =>
                                         fe.reduce((e, t) => {
                                             const r = u[t];
-                                            return 'number' == typeof r && (e[xe[t]] = r + 'rem'), e;
+                                            return 'number' == typeof r && (e[Re[t]] = r + 'rem'), e;
                                         }, {}))(u);
                                 return {
                                     computedStyle: Object.assign({}, k, r, {
@@ -2874,15 +2882,15 @@
                                         height: void 0 !== n && 'number' == typeof n ? n + 'rem' : n,
                                         flex: N,
                                         alignSelf: S,
-                                        display: B || R ? 'flex' : void 0,
+                                        display: B || x ? 'flex' : void 0,
                                         flexDirection: B,
                                         flexWrap: L,
                                         justifyContent: f,
-                                        alignItems: R,
+                                        alignItems: x,
                                     }),
                                     computedClassNames: e,
                                 };
-                            }, [t, n, o, l, _, F, k, N, S, B, L, f, R]),
+                            }, [t, n, o, l, _, F, k, N, S, B, L, f, x]),
                             G = U.computedStyle,
                             W = U.computedClassNames;
                         return a().createElement('div', ve({ className: p()(pe.base, ...W, e), style: G }, H), I);
@@ -3047,7 +3055,7 @@
                             g = C.computedStyle,
                             h = C.colorClassName;
                         return a().createElement(
-                            Re,
+                            xe,
                             Pe(
                                 {
                                     className: p()(Oe.base, t && Oe[t], h, n),

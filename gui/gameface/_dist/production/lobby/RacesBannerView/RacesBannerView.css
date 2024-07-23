@@ -1,0 +1,206 @@
+body {
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.App_base_79 {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.App_base__disabled_56 {
+    cursor: auto;
+}
+.App_bg_35 {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    background: url('R.images.races.gui.maps.icons.races_banner.c_160x112') no-repeat center / cover;
+    filter: brightness(1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    transition:
+        filter 0.5s cubic-bezier(0.07, 0.82, 0.17, 1),
+        transform 0.5s cubic-bezier(0.07, 0.82, 0.17, 1);
+}
+.mediaMedium .App_bg_35 {
+    background-image: url('R.images.races.gui.maps.icons.races_banner.c_220x112');
+}
+.mediaLarge .App_bg_35 {
+    background-image: url('R.images.races.gui.maps.icons.races_banner.c_300x150');
+}
+.App_base_79:hover .App_bg_35 {
+    filter: brightness(1.05);
+    transform: scale(1.03);
+}
+.App_base__disabled_56 .App_bg_35 {
+    filter: brightness(1) grayscale(100%);
+}
+.App_base__disabled_56:hover .App_bg_35 {
+    filter: brightness(1.05) grayscale(100%);
+}
+.App_shadow_61 {
+    width: 100%;
+    height: 100%;
+    border: 1rem solid rgba(255, 255, 255, 0.25);
+    border-radius: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.3) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.App_highlight_b2 {
+    width: 100%;
+    height: 100%;
+    border-image-source: url('R.images.races.gui.maps.icons.races_banner.border');
+    border-image-slice: 1 fill;
+    border-image-width: 1rem;
+    background: url('R.images.races.gui.maps.icons.races_banner.highlight') no-repeat center / cover;
+    filter: brightness(0.6);
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.App_base_79:hover .App_highlight_b2 {
+    filter: none;
+    opacity: 1;
+}
+.App_overlay_80 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s cubic-bezier(0.07, 0.82, 0.17, 1);
+}
+.App_base_79:hover .App_overlay_80 {
+    opacity: 0.8;
+}
+.App_particles_c4 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    width: 160rem;
+    height: 112rem;
+    mix-blend-mode: screen;
+}
+.mediaMedium .App_particles_c4 {
+    width: 220rem;
+}
+.mediaLarge .App_particles_c4 {
+    width: 300rem;
+    height: 150rem;
+}
+.App_content_4d {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.App_title_8b {
+    color: #f2f2f7;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-top: -6rem;
+    text-align: center;
+    letter-spacing: 1rem;
+}
+.App_base__disabled_56 .App_title_8b {
+    color: #bbb;
+}
+.App_base__disabled_56:hover .App_title_8b {
+    color: #f2f2f7;
+}
+.mediaMedium .App_title_8b {
+    font-size: 18rem;
+}
+.mediaLarge .App_title_8b {
+    margin-top: -8rem;
+    font-size: 24rem;
+}
+.App_disabled_a9 {
+    color: #bbb;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 150rem;
+    margin-top: -3rem;
+    margin-bottom: -16rem;
+    text-align: center;
+}
+.App_base_79:hover .App_disabled_a9 {
+    color: #f2f2f7;
+}
+.mediaMedium .App_disabled_a9 {
+    max-width: 200rem;
+    font-size: 16rem;
+}
+.mediaLarge .App_disabled_a9 {
+    max-width: 280rem;
+    margin-top: 2rem;
+}
+.App_finishSoon_76 {
+    width: 100%;
+    height: 45rem;
+    background: url('R.images.races.gui.maps.icons.races_banner.finish_160') no-repeat center bottom / cover;
+    mix-blend-mode: screen;
+    position: absolute;
+    bottom: 0;
+}
+.mediaMedium .App_finishSoon_76 {
+    background-image: url('R.images.races.gui.maps.icons.races_banner.finish_220');
+}
+.mediaLarge .App_finishSoon_76 {
+    background-image: url('R.images.races.gui.maps.icons.races_banner.finish_300');
+}
+.App_date_58 {
+    color: #ffdd99;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-left: 21rem;
+    text-align: center;
+    position: absolute;
+    bottom: 7rem;
+}
+.mediaMedium .App_date_58 {
+    font-size: 14rem;
+}
+.mediaLarge .App_date_58 {
+    bottom: 12rem;
+}
+.App_date_58 .App_base__finishSoon_43 {
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+}
+.App_clockIcon_0e {
+    width: 38rem;
+    height: 38rem;
+    background: url('R.images.gui.maps.icons.library.ClockIcon_1') no-repeat center / contain;
+    position: absolute;
+    top: 60%;
+    left: -10rem;
+    transform: translateY(-50%);
+}

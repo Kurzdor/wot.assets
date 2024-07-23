@@ -1306,7 +1306,8 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.RacesPoint = 'races_point');
                 })(K || (K = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -1775,9 +1776,9 @@
                         K.CosmicLootboxSilver,
                     ],
                     ye = [K.Gold, K.Credits, K.Crystal, K.FreeXp],
-                    Pe = [K.BattlePassPoints],
-                    Te = [K.PremiumPlus, K.Premium],
-                    Re = ['engravings', 'backgrounds'],
+                    Pe = [K.BattlePassPoints, K.RacesPoint],
+                    Re = [K.PremiumPlus, K.Premium],
+                    Te = ['engravings', 'backgrounds'],
                     Me = ['engraving', 'background'],
                     ke = (e, t = Q.Small) => {
                         const u = e.name,
@@ -1820,9 +1821,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${t}.${a}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === t
-                                    ? e.iconBig.replace('..', 'img://gui')
-                                    : e.iconSmall.replace('..', 'img://gui');
+                                return ((e, t) => {
+                                    switch (t) {
+                                        case Q.Big:
+                                            return e.iconBig.replace('..', 'img://gui');
+                                        case Q.Small:
+                                            return e.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${t}.${e.icon}`;
+                                    }
+                                })(e, t);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -1836,7 +1844,7 @@
                                 return `R.images.gui.maps.icons.crewBooks.books.${t}.${a}`;
                             case 'dogTagComponents':
                                 return ((e, t, u) => {
-                                    const i = Re[e];
+                                    const i = Te[e];
                                     if (i) {
                                         const r = R.images.gui.maps.icons.dogtags.$dyn(t).$dyn(i),
                                             a = r.$dyn(u);
@@ -3051,7 +3059,7 @@
                                                           ? J.CURRENCY
                                                           : Pe.includes(t)
                                                             ? J.NUMBER
-                                                            : Te.includes(t)
+                                                            : Re.includes(t)
                                                               ? J.PREMIUM_PLUS
                                                               : J.STRING),
                                                 special: e.overlayType,
@@ -3820,8 +3828,8 @@
                     Lt = 'VerticalBar_bottomButton_06',
                     yt = 'VerticalBar_track_df',
                     Pt = 'VerticalBar_thumb_32',
-                    Tt = 'VerticalBar_rail_43',
-                    Rt = 'disable',
+                    Rt = 'VerticalBar_rail_43',
+                    Tt = 'disable',
                     Mt = () => {},
                     kt = { pending: !1, offset: 0 },
                     Ot = (e) => {
@@ -3878,15 +3886,15 @@
                                     ((e) => {
                                         if (n.current && l.current && s.current && h.current) {
                                             if (0 === e)
-                                                return n.current.classList.add(Rt), void l.current.classList.remove(Rt);
+                                                return n.current.classList.add(Tt), void l.current.classList.remove(Tt);
                                             if (
                                                 ((t = s.current),
                                                 (u = h.current),
                                                 e - (t.offsetHeight - u.offsetHeight) >= -0.5)
                                             )
-                                                return n.current.classList.remove(Rt), void l.current.classList.add(Rt);
+                                                return n.current.classList.remove(Tt), void l.current.classList.add(Tt);
                                             var t, u;
-                                            n.current.classList.remove(Rt), l.current.classList.remove(Rt);
+                                            n.current.classList.remove(Tt), l.current.classList.remove(Tt);
                                         }
                                     })(c);
                             }),
@@ -3962,7 +3970,7 @@
                             [C],
                         );
                         const w = (e) => {
-                            e.target.classList.contains(Rt) || H('highlight');
+                            e.target.classList.contains(Tt) || H('highlight');
                         };
                         return o().createElement(
                             'div',
@@ -3970,7 +3978,7 @@
                             o().createElement('div', {
                                 className: B()(bt, t.topButton),
                                 onMouseDown: (e) => {
-                                    e.target.classList.contains(Rt) || 0 !== e.button || (H('play'), D(at.Next));
+                                    e.target.classList.contains(Tt) || 0 !== e.button || (H('play'), D(at.Next));
                                 },
                                 ref: n,
                                 onMouseEnter: w,
@@ -4000,12 +4008,12 @@
                                     onMouseEnter: w,
                                 },
                                 o().createElement('div', { ref: h, className: t.thumb }),
-                                o().createElement('div', { className: B()(Tt, t.rail) }),
+                                o().createElement('div', { className: B()(Rt, t.rail) }),
                             ),
                             o().createElement('div', {
                                 className: B()(Lt, t.bottomButton),
                                 onMouseDown: (e) => {
-                                    e.target.classList.contains(Rt) || 0 !== e.button || (H('play'), D(at.Prev));
+                                    e.target.classList.contains(Tt) || 0 !== e.button || (H('play'), D(at.Prev));
                                 },
                                 onMouseUp: C,
                                 ref: l,

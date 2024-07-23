@@ -29,7 +29,7 @@
                 }
                 t.r(s),
                     t.d(s, {
-                        addModelObserver: () => P,
+                        addModelObserver: () => T,
                         addPreloadTexture: () => f,
                         children: () => o,
                         displayStatus: () => B,
@@ -38,7 +38,7 @@
                         extraSize: () => $,
                         forceTriggerMouseMove: () => Y,
                         freezeTextureBeforeResize: () => k,
-                        getBrowserTexturePath: () => T,
+                        getBrowserTexturePath: () => P,
                         getDisplayStatus: () => V,
                         getScale: () => N,
                         getSize: () => y,
@@ -213,10 +213,10 @@
                 function R(u) {
                     viewEnv.setHitAreaPaddingsRem(u, u, u, u, 15);
                 }
-                function T(u, e, t, n = 1) {
+                function P(u, e, t, n = 1) {
                     return viewEnv.getWebBrowserTexturePath(u, e, t, n);
                 }
-                function P(u, e, t) {
+                function T(u, e, t) {
                     return viewEnv.addDataChangedCallback(u, e, t);
                 }
                 function O(u) {
@@ -1027,15 +1027,15 @@
                     w = g[1],
                     h = 'BattleCondition_base_c0',
                     f = 'BattleCondition_description_f0',
-                    T = 'BattleCondition_icon_54',
-                    P = ({ iconKey: u, titleData: e }) => {
+                    P = 'BattleCondition_icon_54',
+                    T = ({ iconKey: u, titleData: e }) => {
                         const t = {
                             backgroundImage: `url(R.images.gui.maps.icons.quests.battleCondition.c_128.icon_battle_condition_${u}_128x128)`,
                         };
                         return i().createElement(
                             'div',
                             { className: h },
-                            i().createElement('div', { className: T, style: t }),
+                            i().createElement('div', { className: P, style: t }),
                             i().createElement('div', { className: f }, e),
                         );
                     },
@@ -1064,7 +1064,7 @@
                         i().createElement(
                             'div',
                             { className: y },
-                            u.map(({ value: u }, e) => i().createElement(P, M({ key: e }, u))),
+                            u.map(({ value: u }, e) => i().createElement(T, M({ key: e }, u))),
                         ),
                     );
                 let N;
@@ -1137,7 +1137,8 @@
                         (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.CosmicLootboxSilver = 'lootBoxToken'),
-                        (u.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (u.RacesPoint = 'races_point');
                 })(I || (I = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1380,13 +1381,13 @@
                                   Object.assign(
                                       {
                                           onMouseEnter:
-                                              ((T = e.props.onMouseEnter),
+                                              ((P = e.props.onMouseEnter),
                                               (u) => {
                                                   (u.clientX === window.innerWidth &&
                                                       u.clientY === window.innerHeight) ||
                                                       ((g.current.timeoutId = window.setTimeout(w, A ? 100 : 400)),
                                                       r && r(u),
-                                                      T && T(u));
+                                                      P && P(u));
                                               }),
                                           onMouseLeave: ((u) => (e) => {
                                               h(), null == o || o(e), null == u || u(e);
@@ -1402,7 +1403,7 @@
                                   ),
                               )
                             : e;
-                        var T;
+                        var P;
                     },
                     H = ['children'];
                 function W() {
@@ -1570,7 +1571,7 @@
                         I.CosmicLootboxSilver,
                     ],
                     ou = [I.Gold, I.Credits, I.Crystal, I.FreeXp],
-                    su = [I.BattlePassPoints],
+                    su = [I.BattlePassPoints, I.RacesPoint],
                     iu = [I.PremiumPlus, I.Premium],
                     au = ['engravings', 'backgrounds'],
                     Eu = ['engraving', 'background'],
@@ -1615,9 +1616,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${e}.${o}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === e
-                                    ? u.iconBig.replace('..', 'img://gui')
-                                    : u.iconSmall.replace('..', 'img://gui');
+                                return ((u, e) => {
+                                    switch (e) {
+                                        case U.Big:
+                                            return u.iconBig.replace('..', 'img://gui');
+                                        case U.Small:
+                                            return u.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${e}.${u.icon}`;
+                                    }
+                                })(u, e);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
@@ -1948,7 +1956,7 @@
                     hu = 'App_title_70',
                     fu = 'App_description_11',
                     Ru = 'App_separator_d1',
-                    Tu = (0, D.Pi)(() => {
+                    Pu = (0, D.Pi)(() => {
                         const u = w().model,
                             e = u.root.get(),
                             t = e.postBattleCondition,
@@ -1969,7 +1977,7 @@
                     });
                 engine.whenReady.then(() => {
                     _().render(
-                        i().createElement(b, null, i().createElement(F, null, i().createElement(Tu, null))),
+                        i().createElement(b, null, i().createElement(F, null, i().createElement(Pu, null))),
                         document.getElementById('root'),
                     );
                 });

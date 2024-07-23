@@ -787,7 +787,7 @@
                         useHorizontalScrollApi: () => Jt,
                     });
                 var n = {};
-                t.r(n), t.d(n, { Area: () => kr, Bar: () => Tr, Default: () => Lr, useVerticalScrollApi: () => Fr });
+                t.r(n), t.d(n, { Area: () => Rr, Bar: () => Tr, Default: () => Lr, useVerticalScrollApi: () => Fr });
                 var a = t(179),
                     o = t.n(a);
                 const s = (e, u, t) =>
@@ -1826,7 +1826,7 @@
                               })(e, u);
                     },
                     Le = 'FormatText_base_d0',
-                    ke = ({ binding: e, text: u = '', classMix: t, alignment: r = be.left }) =>
+                    Re = ({ binding: e, text: u = '', classMix: t, alignment: r = be.left }) =>
                         null === u
                             ? (console.error("FormatText was supplied with 'null'"), null)
                             : o().createElement(
@@ -1845,7 +1845,7 @@
                                       ),
                                   ),
                               ),
-                    Re = 'ErrorScreen_base_51',
+                    ke = 'ErrorScreen_base_51',
                     Pe = 'ErrorScreen_icon_24',
                     Ne = 'ErrorScreen_title_e0',
                     Oe = 'ErrorScreen_description_15',
@@ -1855,10 +1855,10 @@
                         const e = de().controls;
                         return o().createElement(
                             'div',
-                            { className: Re },
+                            { className: ke },
                             o().createElement('div', { className: Pe }),
-                            o().createElement(ke, { classMix: Ne, text: He.title() }),
-                            o().createElement(ke, { classMix: Oe, text: He.description() }),
+                            o().createElement(Re, { classMix: Ne, text: He.title() }),
+                            o().createElement(Re, { classMix: Oe, text: He.description() }),
                             o().createElement(ve, { mixClass: Ie, onClick: e.close }, He.button()),
                         );
                     }),
@@ -2050,7 +2050,7 @@
                             'div',
                             { className: p()($e, e) },
                             r
-                                ? o().createElement(ke, {
+                                ? o().createElement(Re, {
                                       text: Qe.footer.actionText.active(),
                                       binding: {
                                           infoIcon: o().createElement(
@@ -2247,8 +2247,8 @@
                                 className: p()(Fu, u && Cu, a && gu),
                             },
                             e
-                                ? o().createElement(ke, { classMix: Du, text: yu.title() })
-                                : o().createElement(ke, {
+                                ? o().createElement(Re, { classMix: Du, text: yu.title() })
+                                : o().createElement(Re, {
                                       classMix: Du,
                                       text: yu.titleDiscount(),
                                       binding: { vehicleLevel: s },
@@ -2260,7 +2260,7 @@
                             o().createElement(
                                 'div',
                                 { className: bu },
-                                o().createElement(ke, {
+                                o().createElement(Re, {
                                     classMix: fu,
                                     text: yu.rewardsAvailabilityCounter(),
                                     binding: { rewardsSelected: r, rewardsAvailable: 1 },
@@ -2312,8 +2312,8 @@
                     }),
                     Mu = 'default',
                     Lu = 'search',
-                    ku = 'email',
-                    Ru = 'password',
+                    Ru = 'email',
+                    ku = 'password',
                     Pu = 'normal',
                     Nu = 'disabled',
                     Ou = 'alert',
@@ -2321,16 +2321,16 @@
                     Hu = 'medium',
                     Wu = {
                         [Mu]: '',
-                        [ku]: R.strings.common.input.placeholder.email(),
+                        [Ru]: R.strings.common.input.placeholder.email(),
                         [Lu]: R.strings.common.input.placeholder.search(),
-                        [Ru]: R.strings.common.input.placeholder.password(),
+                        [ku]: R.strings.common.input.placeholder.password(),
                     },
-                    Uu = { [Mu]: 'text', [ku]: 'text', [Lu]: 'text', [Ru]: 'password' },
-                    Gu = { [Mu]: '', [ku]: 'Invalid email', [Lu]: '', [Ru]: '' },
+                    Uu = { [Mu]: 'text', [Ru]: 'text', [Lu]: 'text', [ku]: 'password' },
+                    Gu = { [Mu]: '', [Ru]: 'Invalid email', [Lu]: '', [ku]: '' },
                     zu = R.images.gui.maps.icons.components.input;
                 function Vu(e, u) {
                     return (
-                        u !== ku ||
+                        u !== Ru ||
                         (function (e) {
                             const u = e.match(
                                 /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
@@ -2410,13 +2410,13 @@
                                     },
                                     [x, B],
                                 ),
-                                k = (0, a.useCallback)(
+                                R = (0, a.useCallback)(
                                     (e) => {
                                         x && ((S.current.mouseOver = !0), A && A(e));
                                     },
                                     [x, A],
                                 ),
-                                R = (0, a.useCallback)(
+                                k = (0, a.useCallback)(
                                     (e) => {
                                         x &&
                                             y.current &&
@@ -2465,10 +2465,10 @@
                                 {
                                     id: e,
                                     className: W,
-                                    onMouseEnter: k,
+                                    onMouseEnter: R,
                                     onMouseDown: P,
                                     onMouseUp: N,
-                                    onMouseLeave: R,
+                                    onMouseLeave: k,
                                     onClick: O,
                                 },
                                 !x && o().createElement('div', { className: $u.disabled }),
@@ -2611,15 +2611,15 @@
                             })(e, Ku);
                         const M = (0, a.useState)(c),
                             L = M[0],
-                            k = M[1],
-                            R = (0, a.useState)(m),
-                            P = R[0],
-                            N = R[1],
+                            R = M[1],
+                            k = (0, a.useState)(m),
+                            P = k[0],
+                            N = k[1],
                             O = (0, a.useMemo)(() => Object.assign({}, Qu, B), [B]),
                             I = (0, a.useRef)({ debounceTimeout: 0, isChangeHandled: !0, value: c, type: r }),
                             H = (0, a.useCallback)((e) => {
                                 e !== I.current.value &&
-                                    ((I.current.value = e), (I.current.isChangeHandled = !1), k(e));
+                                    ((I.current.value = e), (I.current.isChangeHandled = !1), R(e));
                             }, []),
                             W = (0, a.useCallback)(
                                 (e) => {
@@ -2653,7 +2653,7 @@
                                 (z(I.current.value), (I.current.isChangeHandled = !0));
                         }, [L, z]),
                             (0, a.useEffect)(() => {
-                                I.current.isChangeHandled && c !== I.current.value && ((I.current.value = c), k(c)),
+                                I.current.isChangeHandled && c !== I.current.value && ((I.current.value = c), R(c)),
                                     (I.current.type = r);
                             }, [c, r]),
                             (0, a.useEffect)(() => {
@@ -2987,17 +2987,17 @@
                                         ? o().createElement(
                                               'span',
                                               { className: At[e] },
-                                              o().createElement(ke, { text: E, binding: u }),
+                                              o().createElement(Re, { text: E, binding: u }),
                                           )
                                         : o().createElement(
                                               'span',
                                               { style: r(e) },
-                                              o().createElement(ke, { text: E, binding: u }),
+                                              o().createElement(Re, { text: E, binding: u }),
                                           ));
                             }
                             s = mt.exec(e);
                         }
-                        return o().createElement(ke, { text: i, classMix: t, binding: n });
+                        return o().createElement(Re, { text: i, classMix: t, binding: n });
                     }),
                     Bt = 'SearchDetails_base_62',
                     gt = 'SearchDetails_shown_5a',
@@ -3020,7 +3020,7 @@
                         return o().createElement(
                             'div',
                             { className: Bt },
-                            o().createElement(ke, { classMix: gt, text: xt.shown() }),
+                            o().createElement(Re, { classMix: gt, text: xt.shown() }),
                             o().createElement(
                                 'div',
                                 { className: p()(ht, !a && pt) },
@@ -3064,7 +3064,7 @@
                             'div',
                             { className: st },
                             r.isCompensation
-                                ? o().createElement(ke, {
+                                ? o().createElement(Re, {
                                       classMix: _t,
                                       text: Mt.allTheVehiclesHaveBeenExplored(),
                                       binding: { vehicleLevel: mu(r.vehicleLevel) },
@@ -3102,8 +3102,8 @@
                                   ),
                         );
                     }),
-                    kt = 'Header_base_7b',
-                    Rt = 'Header_title_2e',
+                    Rt = 'Header_base_7b',
+                    kt = 'Header_title_2e',
                     Pt = 'Header_categories_ab',
                     Nt = 'Title_base_e5',
                     Ot = 'Title_title_46',
@@ -3119,8 +3119,8 @@
                     Ut = () =>
                         o().createElement(
                             'div',
-                            { className: kt },
-                            o().createElement(Wt, { className: Rt }),
+                            { className: Rt },
+                            o().createElement(Wt, { className: kt }),
                             o().createElement(Tu, { className: Pt }),
                             o().createElement(Lt, null),
                         ),
@@ -3909,12 +3909,12 @@
                             o().createElement(
                                 'div',
                                 { className: p()(Mr.area, n) },
-                                o().createElement(kr, { className: s, classNames: i, api: d }, e),
+                                o().createElement(Rr, { className: s, classNames: i, api: d }, e),
                             ),
                             o().createElement(Tr, { getStepByRailClick: l, api: u, onDrag: c, classNames: E }),
                         );
                     },
-                    kr = ({ className: e, classNames: u, children: t, api: r }) => (
+                    Rr = ({ className: e, classNames: u, children: t, api: r }) => (
                         (0, a.useEffect)(() => Q(r.recalculateContent)),
                         o().createElement(
                             'div',
@@ -3926,8 +3926,8 @@
                             ),
                         )
                     );
-                kr.Default = Lr;
-                const Rr = { Vertical: n, Horizontal: r };
+                Rr.Default = Lr;
+                const kr = { Vertical: n, Horizontal: r };
                 let Pr;
                 !(function (e) {
                     (e[(e.WithoutScroll = 0)] = 'WithoutScroll'),
@@ -3995,7 +3995,8 @@
                             (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (e.BattleBoosterGift = 'battleBooster_gift'),
                             (e.CosmicLootboxSilver = 'lootBoxToken'),
-                            (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                            (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                            (e.RacesPoint = 'races_point');
                     })(Or || (Or = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -4128,6 +4129,7 @@
                     Or.Crystal,
                     Or.FreeXp,
                     Or.BattlePassPoints,
+                    Or.RacesPoint,
                     Or.PremiumPlus,
                     Or.Premium;
                 const Vr = (e, u, t) => {
@@ -4220,7 +4222,7 @@
                                         o().createElement('div', { className: tn }),
                                         o().createElement('div', { className: rn }, r),
                                     ),
-                                o().createElement(ke, {
+                                o().createElement(Re, {
                                     text: R.strings.winback.winbackSelectableRewardView.bluePrintReward.value(),
                                     binding: { value: n },
                                     classMix: nn,
@@ -4440,9 +4442,9 @@
                             ),
                         );
                     };
-                function kn() {
+                function Rn() {
                     return (
-                        (kn =
+                        (Rn =
                             Object.assign ||
                             function (e) {
                                 for (var u = 1; u < arguments.length; u++) {
@@ -4451,10 +4453,10 @@
                                 }
                                 return e;
                             }),
-                        kn.apply(this, arguments)
+                        Rn.apply(this, arguments)
                     );
                 }
-                const Rn = (e) => ({ old: e.oldPrice, new: e.newPrice }),
+                const kn = (e) => ({ old: e.oldPrice, new: e.newPrice }),
                     Pn = (e) => ({ old: e.oldExp, new: e.newExp }),
                     Nn = (0, Z.Pi)(({ className: e }) => {
                         const u = de().model,
@@ -4472,7 +4474,7 @@
                                     })(e);
                                     return o().createElement(
                                         an,
-                                        kn({ key: u }, t, { isSelected: t.isSelected, index: t.index }),
+                                        Rn({ key: u }, t, { isSelected: t.isSelected, index: t.index }),
                                     );
                                 }
                                 {
@@ -4520,7 +4522,7 @@
                                         r
                                             ? o().createElement(fn, {
                                                   vehicle: a,
-                                                  price: Rn(s),
+                                                  price: kn(s),
                                                   experience: Pn(s),
                                                   className: sn,
                                               })
@@ -4615,11 +4617,11 @@
                                       o().Fragment,
                                       null,
                                       o().createElement(
-                                          Rr.Vertical.Area,
+                                          kr.Vertical.Area,
                                           { api: r },
                                           o().createElement(Nn, { className: Kn }),
                                       ),
-                                      o().createElement(Rr.Vertical.Bar, {
+                                      o().createElement(kr.Vertical.Bar, {
                                           api: r,
                                           classNames: { base: Zn, thumb: Qn, rail: Jn },
                                       }),

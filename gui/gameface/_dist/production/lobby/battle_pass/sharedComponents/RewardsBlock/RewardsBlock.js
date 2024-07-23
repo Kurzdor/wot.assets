@@ -89,7 +89,7 @@
                         h = n.mediumHeight,
                         g = n.smallHeight,
                         w = n.extraSmallHeight,
-                        v = { extraLarge: c, large: m, medium: h, small: g, extraSmall: w };
+                        p = { extraLarge: c, large: m, medium: h, small: g, extraSmall: w };
                     if (t.extraLarge || t.large || t.medium || t.small || t.extraSmall) {
                         if (t.extraLarge && F) return e;
                         if (t.large && A) return e;
@@ -97,11 +97,11 @@
                         if (t.small && s) return e;
                         if (t.extraSmall && D) return e;
                     } else {
-                        if (t.extraLargeWidth && l) return (0, r.H)(e, t, v);
-                        if (t.largeWidth && B) return (0, r.H)(e, t, v);
-                        if (t.mediumWidth && C) return (0, r.H)(e, t, v);
-                        if (t.smallWidth && d) return (0, r.H)(e, t, v);
-                        if (t.extraSmallWidth && _) return (0, r.H)(e, t, v);
+                        if (t.extraLargeWidth && l) return (0, r.H)(e, t, p);
+                        if (t.largeWidth && B) return (0, r.H)(e, t, p);
+                        if (t.mediumWidth && C) return (0, r.H)(e, t, p);
+                        if (t.smallWidth && d) return (0, r.H)(e, t, p);
+                        if (t.extraSmallWidth && _) return (0, r.H)(e, t, p);
                         if (
                             !(t.extraLargeWidth || t.largeWidth || t.mediumWidth || t.smallWidth || t.extraSmallWidth)
                         ) {
@@ -283,7 +283,8 @@
                             (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
                             (u.CosmicLootboxSilver = 'lootBoxToken'),
-                            (u.CosmicLootboxCommon = 'cosmic_2024_2');
+                            (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                            (u.RacesPoint = 'races_point');
                     })(i || (i = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -420,6 +421,7 @@
                     i.E4.Crystal,
                     i.E4.FreeXp,
                     i.E4.BattlePassPoints,
+                    i.E4.RacesPoint,
                     i.E4.PremiumPlus,
                     i.E4.Premium;
             },
@@ -593,10 +595,10 @@
                         displayStatusIs: () => P,
                         events: () => E.U,
                         extraSize: () => S,
-                        forceTriggerMouseMove: () => v,
+                        forceTriggerMouseMove: () => p,
                         freezeTextureBeforeResize: () => C,
                         getBrowserTexturePath: () => A,
-                        getDisplayStatus: () => p,
+                        getDisplayStatus: () => v,
                         getScale: () => d,
                         getSize: () => D,
                         getViewGlobalPosition: () => B,
@@ -665,10 +667,10 @@
                 function w() {
                     return viewEnv.isEventHandled();
                 }
-                function v() {
+                function p() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function p() {
+                function v() {
                     return viewEnv.getShowingStatus();
                 }
                 const P = Object.keys(r.W).reduce(
@@ -1138,8 +1140,8 @@
                         u.keyCode === l.n.ESCAPE && e();
                     };
                 var w = t(7572);
-                const v = r.instance,
-                    p = {
+                const p = r.instance,
+                    v = {
                         DataTracker: E.Z,
                         ViewModel: w.Z,
                         ViewEventType: F,
@@ -1217,11 +1219,11 @@
                                 }
                             return t;
                         },
-                        ClickOutsideManager: v,
+                        ClickOutsideManager: p,
                         SystemLocale: a,
                         UserLocale: n,
                     };
-                window.ViewEnvHelper = p;
+                window.ViewEnvHelper = v;
             },
             930: (u, e, t) => {
                 let i, r;

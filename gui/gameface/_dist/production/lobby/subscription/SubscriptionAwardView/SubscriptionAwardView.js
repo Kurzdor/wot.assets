@@ -1711,7 +1711,8 @@
                         (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.CosmicLootboxSilver = 'lootBoxToken'),
-                        (u.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (u.RacesPoint = 'races_point');
                 })(Fu || (Fu = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1854,6 +1855,7 @@
                     Fu.Crystal,
                     Fu.FreeXp,
                     Fu.BattlePassPoints,
+                    Fu.RacesPoint,
                     Fu.PremiumPlus,
                     Fu.Premium;
                 const gu = ['engravings', 'backgrounds'],
@@ -1899,9 +1901,16 @@
                                 return `R.images.gui.maps.icons.blueprints.fragment.${e}.${a}`;
                             case 'tokens':
                             case 'battleToken':
-                                return 'big' === e
-                                    ? u.iconBig.replace('..', 'img://gui')
-                                    : u.iconSmall.replace('..', 'img://gui');
+                                return ((u, e) => {
+                                    switch (e) {
+                                        case Du.Big:
+                                            return u.iconBig.replace('..', 'img://gui');
+                                        case Du.Small:
+                                            return u.iconSmall.replace('..', 'img://gui');
+                                        default:
+                                            return `R.images.gui.maps.icons.quests.bonuses.${e}.${u.icon}`;
+                                    }
+                                })(u, e);
                             case 'lootBoxToken':
                             case 'customizations':
                             case 'styleProgress':
