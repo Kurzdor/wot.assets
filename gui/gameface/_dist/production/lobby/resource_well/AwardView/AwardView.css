@@ -929,18 +929,18 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .App_rewardImg_39 {
     width: 400rem;
     height: 300rem;
-    background: url('R.images.gui.maps.icons.resourceWell.vehicles.R196_Object_452K_400x300') no-repeat center / contain;
+    background: url('R.images.gui.maps.icons.resourceWell.vehicles.RW5_GB114_400x300') no-repeat center / contain;
 }
 .mediaMedium .App_rewardImg_39 {
     width: 600rem;
     height: 450rem;
-    background-image: url('R.images.gui.maps.icons.resourceWell.vehicles.R196_Object_452K_600x450');
+    background-image: url('R.images.gui.maps.icons.resourceWell.vehicles.RW5_GB114_600x450');
 }
 .App_rewardImg__3d_93 {
-    background-image: url('R.images.gui.maps.icons.resourceWell.vehicles.R196_Object_452K_400x300_3d');
+    background-image: url('R.images.gui.maps.icons.resourceWell.vehicles.RW5_GB114_400x300_3d');
 }
 .mediaMedium .App_rewardImg__3d_93 {
-    background-image: url('R.images.gui.maps.icons.resourceWell.vehicles.R196_Object_452K_600x450_3d');
+    background-image: url('R.images.gui.maps.icons.resourceWell.vehicles.RW5_GB114_600x450_3d');
 }
 .App_close_ef {
     position: absolute;

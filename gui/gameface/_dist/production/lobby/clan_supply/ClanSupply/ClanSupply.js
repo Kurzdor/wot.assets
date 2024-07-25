@@ -3077,15 +3077,23 @@
                         point: 'StageIcon_point_5c',
                         number: 'StageIcon_number_bc',
                     },
-                    zu = ({ isPremium: e, svgNumberPath: u, isOnMap: t, status: a, isSelected: n, scale: s }) => {
-                        const o = t ? 64 : 45,
-                            i = a === Fe.Available;
+                    zu = ({
+                        isPremium: e,
+                        svgNumberPath: u,
+                        isOnMap: t,
+                        status: a,
+                        isSelected: n,
+                        scale: s,
+                        isHovered: o,
+                    }) => {
+                        const i = t ? 64 : 45,
+                            l = a === Fe.Available;
                         return r().createElement(
                             'svg',
                             {
                                 width: 31 * s,
-                                height: o * s,
-                                viewBox: `0 0 31 ${o}`,
+                                height: i * s,
+                                viewBox: `0 0 31 ${i}`,
                                 fill: 'none',
                                 className: p()(
                                     qu.base,
@@ -3097,7 +3105,7 @@
                             },
                             r().createElement(
                                 'defs',
-                                null,
+                                { key: `${n && 'selected'}${o && 'hovered'}${a}` },
                                 r().createElement(
                                     'linearGradient',
                                     {
@@ -3151,7 +3159,7 @@
                                               d: 'M28 11H3V35L15.5 41L28 35V11Z',
                                           }),
                                           t &&
-                                              i &&
+                                              l &&
                                               r().createElement('path', {
                                                   d: 'M28 11H3V35L15.5 41L28 35V11Z',
                                                   fill: 'url(#gradient-back-premium)',
@@ -3186,7 +3194,7 @@
                                               d: 'M28 12H3V36.5L15.5 42L28 36.5V12Z',
                                           }),
                                           t &&
-                                              i &&
+                                              l &&
                                               r().createElement('path', {
                                                   d: 'M28 12H3V36.5L15.5 42L28 36.5V12Z',
                                                   fill: 'url(#gradient-back)',
@@ -3255,7 +3263,10 @@
                             c = Vu[u].svgPath,
                             E = (0, a.useRef)(null),
                             C = i.computes.nextDisabledPremiumStages(),
-                            m = n && C.includes(u);
+                            m = n && C.includes(u),
+                            d = (0, a.useState)(!1),
+                            _ = d[0],
+                            A = d[1];
                         return (
                             (0, a.useEffect)(() => {
                                 const e = E.current;
@@ -3273,7 +3284,12 @@
                                     onClick: () => {
                                         e || ($('tabb'), l.selectStage(u));
                                     },
-                                    onMouseEnter: () => $('highlight'),
+                                    onMouseEnter: () => {
+                                        $('highlight'), A(!0);
+                                    },
+                                    onMouseLeave: () => {
+                                        A(!1);
+                                    },
                                 },
                                 r().createElement('div', { className: ju.highlight }),
                                 r().createElement('div', { className: ju.highlightPoint }),
@@ -3296,6 +3312,7 @@
                                     isOnMap: !0,
                                     isSelected: e,
                                     scale: s,
+                                    isHovered: _,
                                 }),
                             )
                         );
