@@ -1,0 +1,2258 @@
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+.TextButton_icon__forward_59 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
+.TextButton_icon__close_53 {
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
+.TextButton_icon__info_33 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_glow_a4 {
+    opacity: 0;
+}
+.TextButton_caption_82 {
+    position: relative;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
+}
+.TextButton_caption__back_b9,
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
+.TextButton_caption__info_23 {
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+    margin-left: 8rem;
+}
+.TextButton_base__right_39 .TextButton_goto_e7 {
+    margin-right: 8rem;
+}
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity 0.16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+    left: -4rem;
+}
+.TextButton_base__right_39 .TextButton_shine_e2 {
+    right: -4rem;
+    transform: rotate(180deg);
+}
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_shine_e2 {
+    opacity: 0;
+}
+
+.App_base_7d {
+    width: 100%;
+    height: 100%;
+    padding: 11rem 23rem 23rem;
+    color: #fff;
+    position: relative;
+}
+
+.mediaSmall .App_base_7d {
+    padding: 15rem 28rem 34rem;
+}
+
+.mediaMedium .App_base_7d {
+    padding: 18rem 24rem 40rem;
+}
+
+.mediaLarge .App_base_7d {
+    padding: 29rem 33rem 50rem;
+}
+
+.mediaExtraLarge .App_base_7d {
+    padding: 30rem 33rem 47rem;
+}
+
+.App_header_51 {
+    margin-bottom: 23rem;
+}
+
+.mediaSmall .App_header_51 {
+    margin-bottom: 27rem;
+}
+
+.mediaMedium .App_header_51 {
+    margin-bottom: 30rem;
+}
+
+.mediaLarge .App_header_51 {
+    margin-bottom: 25rem;
+}
+
+.mediaExtraLarge .App_header_51 {
+    margin-bottom: 37rem;
+}
+
+.App_quest_14 {
+    width: 100%;
+    margin-bottom: 9rem;
+}
+
+.mediaSmall .App_quest_14 {
+    margin-bottom: 11rem;
+}
+
+.mediaMedium .App_quest_14 {
+    margin-bottom: 13rem;
+}
+
+.mediaLarge .App_quest_14 {
+    margin-bottom: 18rem;
+}
+
+.mediaExtraLarge .App_quest_14 {
+    margin-bottom: 16rem;
+}
+
+.App_quest_14:last-child {
+    margin-bottom: 0;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Header_base_5c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Header_title_60 {
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.mediaMedium .Header_title_60 {
+    margin-bottom: 11rem;
+}
+
+.mediaLarge .Header_title_60 {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaExtraLarge .Header_title_60 {
+    margin-bottom: 8rem;
+}
+
+.Header_subTitle_de {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+}
+
+.mediaLarge .Header_subTitle_de {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.mediaExtraLarge .Header_subTitle_de {
+    color: #8c8c7e;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.Header_eventBalance_ce {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.mediaLarge .Header_eventBalance_ce {
+    color: #ffdd99;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.mediaExtraLarge .Header_eventBalance_ce {
+    margin-bottom: 3rem;
+    font-size: 22rem;
+}
+
+.Header_icon_e5 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.wot_anniversary.mainView.eventCoin') no-repeat center / contain;
+}
+
+.mediaLarge .Header_icon_e5 {
+    width: 28rem;
+    height: 28rem;
+}
+
+.mediaExtraLarge .Header_icon_e5 {
+    width: 32rem;
+    height: 32rem;
+    margin-bottom: 1rem;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBar_base_45 {
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+.ProgressBar_base__small_df {
+    height: 2rem;
+}
+.ProgressBar_background_51 {
+    width: 100%;
+    max-width: 8001px;
+    height: 100%;
+    background-image: var(--progress-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ProgressBar_background__small_46 {
+    height: 2rem;
+}
+.ProgressBar_lineWrapper_6a {
+    display: flex;
+    flex: 1;
+}
+
+.ProgressBarBlink_base_24 {
+    width: 60rem;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    pointer-events: none;
+}
+
+.ProgressBarBlink_base__small_0f {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressLineImpose_base_80 {
+    max-width: 8001px;
+    height: 100%;
+    background-color: var(--progress-line-base);
+    position: relative;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressLineImpose_base__disabled_cc {
+    background-color: var(--progress-line-disabled);
+}
+.ProgressLineImpose_base__finished_d4 {
+    background-color: var(--progress-line-finished);
+}
+.ProgressLineImpose_base__withoutBounce_56 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+.ProgressLineImpose_pattern_1c {
+    max-width: 8001px;
+    background-image: var(--progress-pattern-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
+    top: 0;
+    bottom: 0;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
+    background-image: var(--progress-pattern-disabled);
+    left: 0;
+}
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
+    background-image: var(--progress-pattern-finished);
+}
+.ProgressLineImpose_gradient_35 {
+    max-width: 8001px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75));
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
+    top: 0;
+    bottom: 0;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
+    display: none;
+}
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5));
+}
+.ProgressLineImpose_glow_a5 {
+    width: 60rem;
+    max-width: 8001px;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.ProgressLineImpose_glow__left_d8 {
+    left: 1rem;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+    display: none;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaSimple_base_6c {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ProgressBarDeltaSimple_delta_99 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1), cubic-bezier(0.21, 0.61, 0.35, 1);
+    transition-property: width, transform;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaGrow_base_7e {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+.ProgressBarDeltaGrow_glow_68 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+
+.Quest_quest_12 {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 7rem;
+}
+
+.mediaMedium .Quest_quest_12 {
+    margin-bottom: 9rem;
+}
+
+.mediaExtraLarge .Quest_quest_12 {
+    margin-bottom: 13rem;
+}
+
+.Quest_title_38 {
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    flex: 1;
+}
+
+.mediaMedium .Quest_title_38 {
+    color: #f2f2f7;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.mediaExtraLarge .Quest_title_38 {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.Quest_statusWrapper_e4 {
+    margin-left: 4rem;
+    position: relative;
+}
+
+.mediaLarge .Quest_statusWrapper_e4 {
+    margin-left: 6rem;
+}
+
+.Quest_status_22 {
+    color: #80d43a;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-left: 16rem;
+}
+
+.mediaMedium .Quest_status_22 {
+    color: #80d43a;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.mediaExtraLarge .Quest_status_22 {
+    color: #80d43a;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.Quest_statusIcon_0c {
+    width: 16rem;
+    height: 16rem;
+    background: url('R.images.gui.maps.icons.wot_anniversary.mainView.check') no-repeat center / contain;
+    content: '';
+    position: absolute;
+    top: 2rem;
+    left: -3rem;
+}
+
+.mediaMedium .Quest_statusIcon_0c {
+    width: 18rem;
+    height: 18rem;
+}
+
+.mediaExtraLarge .Quest_statusIcon_0c {
+    top: 4rem;
+}
+
+.Quest_scoreWrapper_37 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 30rem;
+}
+
+.mediaMedium .Quest_scoreWrapper_37 {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-left: 41rem;
+}
+
+.mediaExtraLarge .Quest_scoreWrapper_37 {
+    color: #8c8c7e;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-left: 46rem;
+}
+
+.Quest_currentScore_0f {
+    color: #e9e2bf;
+}
+
+.Quest_separatorScore_df {
+    margin: 0 3rem;
+    color: #7b7b78;
+}
+
+.Quest_totalScore_f0 {
+    color: #8c8c7e;
+}
+
+.Quest_progressBar_4a {
+    width: 100%;
+    padding-left: 3rem;
+}
+
+.HorizontalBar_base_49 {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+    position: relative;
+}
+
+.HorizontalBar_base__nonActive_82 {
+    visibility: hidden;
+}
+
+.HorizontalBar_base_49 .disable,
+.HorizontalBar_base_49 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover,
+.HorizontalBar_rightButton_03:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem
+        7rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
+    opacity: 0.7;
+}
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.VerticalBar_base_f3 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+.VerticalBar_base__nonActive_42 {
+    visibility: hidden;
+}
+
+.VerticalBar_base_f3 .disable,
+.VerticalBar_base_f3 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.VerticalBar_topButton_d7,
+.VerticalBar_bottomButton_06 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_d7:hover,
+.VerticalBar_bottomButton_06:hover {
+    opacity: 1;
+}
+
+.VerticalBar_topButton_d7 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_06 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_df {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32 {
+    display: none;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32:hover {
+    opacity: 1;
+}
+
+.VerticalBar_rail_43 {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_43:hover {
+    opacity: 0.7;
+}
+
+.VerticalScroll_content_cb {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_f8 {
+    display: flex;
+}
+
+.VerticalScroll_bar_1e {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_af {
+    flex: 1;
+}
+
+.ScrollWithLips_verticalArea_be {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ScrollWithLips_verticalArea__scroll_15 {
+    width: 250rem;
+}
+
+.mediaMedium .ScrollWithLips_verticalArea__scroll_15 {
+    width: 300rem;
+}
+
+.mediaLarge .ScrollWithLips_verticalArea__scroll_15 {
+    width: 350rem;
+}
+
+.mediaExtraLarge .ScrollWithLips_verticalArea__scroll_15 {
+    width: 400rem;
+}
+.ScrollWithLips_base_26 {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+    position: relative;
+}
+.ScrollWithLips_topDecoration_b2,
+.ScrollWithLips_bottomDecoration_60 {
+    width: 300rem;
+    height: 176rem;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+.mediaMedium .ScrollWithLips_topDecoration_b2,
+.mediaMedium .ScrollWithLips_bottomDecoration_60 {
+    width: 350rem;
+}
+.mediaLarge .ScrollWithLips_topDecoration_b2,
+.mediaLarge .ScrollWithLips_bottomDecoration_60 {
+    width: 385rem;
+}
+.mediaExtraLarge .ScrollWithLips_topDecoration_b2,
+.mediaExtraLarge .ScrollWithLips_bottomDecoration_60 {
+    width: 430rem;
+}
+.ScrollWithLips_topDecoration_b2 {
+    top: -100rem;
+}
+.ScrollWithLips_bottomDecoration_60 {
+    bottom: -92rem;
+}
+.ScrollWithLips_topBorder_7c,
+.ScrollWithLips_bottomBorder_da {
+    width: 100%;
+    height: 2rem;
+    background: url('R.images.gui.maps.icons.wot_anniversary.mainView.border') no-repeat center / contain;
+    position: absolute;
+}
+.ScrollWithLips_topBorder_7c {
+    top: 88rem;
+}
+.ScrollWithLips_bottomBorder_da {
+    bottom: 88rem;
+    transform: rotate(180deg);
+}
+.ScrollWithLips_topShadow_da,
+.ScrollWithLips_bottomShadow_be {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.wot_anniversary.mainView.lip') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 0.3s ease-out;
+    pointer-events: none;
+}
+.ScrollWithLips_topShadow__show_e4,
+.ScrollWithLips_bottomShadow__show_24 {
+    opacity: 1;
+}
+.ScrollWithLips_bottomShadow_be {
+    transform: rotate(180deg);
+}
+.ScrollWithLips_verticalContent_4b {
+    width: 100%;
+}
+.ScrollWithLips_content_f4 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.ScrollWithLips_lip_4f {
+    width: 864rem;
+    height: 176rem;
+    border-radius: 1px;
+    background: no-repeat center / cover;
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+    pointer-events: none;
+}
+.ScrollWithLips_lip__top_37 {
+    top: -1rem;
+    transform: translate(-50%, -50%);
+}
+.ScrollWithLips_lip__bottom_3c {
+    bottom: 0;
+    transform: translate(-50%, 50%) rotate(180deg);
+}
+.ScrollWithLips_scroll_80 {
+    margin-left: 14rem;
+    padding-bottom: 8rem;
+}
+.mediaMedium .ScrollWithLips_scroll_80 {
+    margin-left: 18rem;
+}
+.mediaExtraLarge .ScrollWithLips_scroll_80 {
+    margin-left: 13rem;
+}
+.ScrollWithLips_topButton_ad,
+.ScrollWithLips_bottomButton_e3 {
+    border: 1px solid rgba(233, 226, 191, 0.4);
+    border-radius: 1rem;
+}
+.ScrollWithLips_track_e3 {
+    margin: 0 0 1rem;
+}
+.ScrollWithLips_thumb_e0 {
+    border: 1px solid rgba(233, 226, 191, 0.4);
+    border-radius: 1px;
+    background-color: rgba(62, 62, 62, 0.35);
+}
+.ScrollWithLips_rail_cf {
+    border: 1px solid rgba(233, 226, 191, 0.4);
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.CustomButton_base_0d {
+    color: #ffffff;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100rem;
+    height: 30rem;
+    isolation: isolate;
+    position: relative;
+    cursor: pointer;
+}
+
+.CustomButton_base__medium_66 {
+    color: #ffffff;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    height: 42rem;
+}
+
+.CustomButton_base__large_ee {
+    height: 61rem;
+    font-size: 20rem;
+}
+
+.CustomButton_base__disabled_6b {
+    color: rgba(179, 179, 179, 0.8);
+    cursor: auto;
+}
+.CustomButton_text_f0 {
+    padding-left: 15rem;
+    padding-right: 15rem;
+    z-index: 1;
+    transform: translateY(-1rem);
+}
+.CustomButton_base__large_ee .CustomButton_text_f0 {
+    padding-left: 30rem;
+    padding-right: 30rem;
+    transform: none;
+}
+.CustomButton_bg_c7 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(90deg, #f27705, #f29b07);
+    pointer-events: none;
+}
+.CustomButton_base__disabled_6b .CustomButton_bg_c7 {
+    background: #f26d05 url('R.images.gui.maps.icons.wot_anniversary.mainView.button.disabledTexture');
+}
+.CustomButton_bg__start_a4 {
+    mask: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.bgMaskStartSmall') left center / 26rem 100%;
+}
+.CustomButton_base__medium_66 .CustomButton_bg__start_a4 {
+    mask-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.bgMaskStartMedium');
+    mask-size: 40rem 100%;
+}
+.CustomButton_base__large_ee .CustomButton_bg__start_a4 {
+    mask-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.bgMaskStart');
+    mask-size: 60rem 100%;
+}
+.CustomButton_bg__center_92 {
+    background-position-x: 26rem;
+    mask: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.bgMaskCenterSmall') 52rem center / 100% 100%
+        no-repeat;
+    transform: translateX(-26rem);
+}
+.CustomButton_base__medium_66 .CustomButton_bg__center_92 {
+    background-position-x: 40rem;
+    mask-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.bgMaskCenterMedium');
+    mask-position: 80rem center;
+    transform: translateX(-40rem);
+}
+.CustomButton_base__large_ee .CustomButton_bg__center_92 {
+    background-position-x: 60rem;
+    mask-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.bgMaskCenter');
+    mask-position: 120rem center;
+    transform: translateX(-60rem);
+}
+.CustomButton_bg__end_dc {
+    mask: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.bgMaskEndSmall') right center / 26rem 100%;
+}
+.CustomButton_base__medium_66 .CustomButton_bg__end_dc {
+    mask-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.bgMaskEndMedium');
+    mask-size: 40rem 100%;
+}
+.CustomButton_base__large_ee .CustomButton_bg__end_dc {
+    mask-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.bgMaskEnd');
+    mask-size: 60rem 100%;
+}
+.CustomButton_outline_c8 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f2ae07;
+    pointer-events: none;
+}
+.CustomButton_outline__start_7d {
+    mask: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.outlineMaskStartSmall') left center / 26rem 100%;
+}
+.CustomButton_base__medium_66 .CustomButton_outline__start_7d {
+    mask-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.outlineMaskStartMedium');
+    mask-size: 40rem 100%;
+}
+.CustomButton_base__large_ee .CustomButton_outline__start_7d {
+    mask-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.outlineMaskStart');
+    mask-size: 60rem 100%;
+}
+.CustomButton_outline__center_c7 {
+    background-position-x: 26rem;
+    mask: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.outlineMaskCenterSmall') 52rem center / 100% 100%
+        no-repeat;
+    transform: translateX(-26rem);
+}
+.CustomButton_base__medium_66 .CustomButton_outline__center_c7 {
+    background-position-x: 40rem;
+    mask-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.outlineMaskCenterMedium');
+    mask-position: 80rem;
+    transform: translateX(-40rem);
+}
+.CustomButton_base__large_ee .CustomButton_outline__center_c7 {
+    background-position-x: 60rem;
+    mask-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.outlineMaskCenter');
+    mask-position: 120rem center;
+    transform: translateX(-60rem);
+}
+.CustomButton_outline__end_88 {
+    mask: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.outlineMaskEndSmall') right center / 26rem 100%;
+}
+.CustomButton_base__medium_66 .CustomButton_outline__end_88 {
+    mask-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.outlineMaskEndMedium');
+    mask-size: 40rem 100%;
+}
+.CustomButton_base__large_ee .CustomButton_outline__end_88 {
+    mask-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.button.outlineMaskEnd');
+    mask-size: 60rem 100%;
+}
+.CustomButton_hover_02,
+.CustomButton_active_af {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.CustomButton_bg__center_92 .CustomButton_hover_02,
+.CustomButton_bg__center_92 .CustomButton_active_af {
+    transform: translateX(26rem);
+}
+.CustomButton_base__medium_66 .CustomButton_bg__center_92 .CustomButton_hover_02,
+.CustomButton_base__medium_66 .CustomButton_bg__center_92 .CustomButton_active_af {
+    transform: translateX(40rem);
+}
+.CustomButton_base__large_ee .CustomButton_bg__center_92 .CustomButton_hover_02,
+.CustomButton_base__large_ee .CustomButton_bg__center_92 .CustomButton_active_af {
+    transform: translateX(60rem);
+}
+.CustomButton_hover_02 {
+    background-image: linear-gradient(90deg, #f29b07, #f27705);
+}
+.CustomButton_base_0d:hover .CustomButton_hover_02 {
+    opacity: 1;
+}
+.CustomButton_active_af {
+    background-color: #f27005;
+}
+.CustomButton_base__active_ed .CustomButton_active_af {
+    opacity: 1;
+}
+
+.StatusText_base_3d {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.mediaExtraLarge .StatusText_base_3d {
+    color: #8c8c7e;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.StatusText_base__completed_7e,
+.StatusText_base__completedAll_e7 {
+    color: #80d43a;
+}
+.mediaExtraLarge .StatusText_base__completed_7e,
+.mediaExtraLarge .StatusText_base__completedAll_e7 {
+    color: #80d43a;
+}
+
+.StatusText_icon_83 {
+    margin-right: 2rem;
+}
+
+.StatusText_base__completed_7e .StatusText_icon_83 {
+    width: 16rem;
+    height: 16rem;
+    margin-top: 1rem;
+    background: url('R.images.gui.maps.icons.wot_anniversary.mainView.icons.completed_16x16') no-repeat center / contain;
+}
+
+.mediaExtraLarge .StatusText_base__completed_7e .StatusText_icon_83 {
+    width: 18rem;
+    height: 18rem;
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.icons.completed_18x18');
+    transform: translateY(2rem);
+}
+
+.StatusText_base__completedAll_e7 .StatusText_icon_83 {
+    width: 16rem;
+    height: 16rem;
+    margin-top: 1rem;
+    background: url('R.images.gui.maps.icons.wot_anniversary.mainView.icons.completedAll_16x16') no-repeat center /
+        contain;
+}
+
+.mediaSmall .StatusText_base__completedAll_e7 .StatusText_icon_83 {
+    margin-top: 2rem;
+}
+
+.mediaExtraLarge .StatusText_base__completedAll_e7 .StatusText_icon_83 {
+    width: 18rem;
+    height: 18rem;
+    margin-top: 4rem;
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.icons.completedAll_18x18');
+}
+
+.StatusText_base__waiting_ac .StatusText_icon_83 {
+    width: 25rem;
+    height: 24rem;
+    margin: -2rem 2rem -12rem 0;
+    background: url('R.images.gui.maps.icons.wot_anniversary.mainView.icons.waiting') no-repeat center / contain;
+    animation: StatusText_rotation_dd 1s linear infinite;
+}
+
+.mediaExtraLarge .StatusText_base__waiting_ac .StatusText_icon_83 {
+    margin-top: 1rem;
+}
+
+@keyframes StatusText_rotation_dd {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.Footer_base_d4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.AnimationWrapper_step_1b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.AnimationWrapper_step__hidden_34 {
+    pointer-events: none;
+}
+
+.Quest_base_cc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1rem solid;
+    border-radius: 3rem;
+    position: relative;
+}
+
+.Quest_base__locked_1f {
+    border-color: rgba(255, 255, 255, 0.07);
+}
+
+.Quest_base__available_d8 {
+    border-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(29, 29, 29, 0.8);
+}
+
+.Quest_base__collected_d9 {
+    border-color: rgba(136, 233, 77, 0.2);
+    box-shadow: inset 0 4rem 20rem rgba(143, 255, 0, 0.2);
+    background-color: rgba(66, 84, 44, 0.5);
+}
+
+.Quest_reward_18 {
+    width: 48rem;
+    height: 48rem;
+    background: no-repeat center / contain;
+}
+
+.mediaExtraLarge .Quest_reward_18 {
+    width: 64rem;
+    height: 64rem;
+}
+
+.Quest_base__locked_1f .Quest_reward_18 {
+    opacity: 0.7;
+}
+
+.Quest_base__collected_d9 .Quest_reward_18 {
+    opacity: 0.5;
+}
+
+.Quest_lockedBg_38 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.wot_anniversary.mainView.bgLocked') repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.Quest_base__locked_1f .Quest_lockedBg_38 {
+    opacity: 1;
+}
+
+.Quest_iconState_a0 {
+    width: 20rem;
+    height: 22rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Quest_base__locked_1f .Quest_iconState_a0 {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.icons.questLocked');
+}
+
+.Quest_base__collected_d9 .Quest_iconState_a0 {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.icons.questCompleted');
+}
+
+.Quests_base_92 {
+    display: flex;
+    position: relative;
+}
+
+.Quests_quest_c1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55rem;
+    height: 55rem;
+    position: relative;
+}
+
+.mediaMedium .Quests_quest_c1 {
+    width: 60rem;
+    height: 60rem;
+}
+
+.mediaExtraLarge .Quests_quest_c1 {
+    width: 75rem;
+    height: 75rem;
+}
+
+.Quests_divider_62 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 100%;
+}
+
+.mediaLarge .Quests_divider_62 {
+    width: 20rem;
+}
+
+.mediaExtraLarge .Quests_divider_62 {
+    width: 30rem;
+}
+
+.Quests_divider_62::before {
+    width: 10rem;
+    height: 1rem;
+    background-color: rgba(150, 150, 150, 0.3);
+    content: '';
+}
+
+.mediaExtraLarge .Quests_divider_62::before {
+    width: 14rem;
+}
+
+.App_base_0f {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50rem;
+    position: relative;
+}
+.mediaMedium .App_base_0f {
+    padding-bottom: 70rem;
+}
+.mediaLarge .App_base_0f {
+    padding-bottom: 80rem;
+}
+.mediaExtraLarge .App_base_0f {
+    padding-bottom: 99rem;
+}
+.App_title_c3 {
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+.mediaMedium .App_title_c3 {
+    color: #f2f2f7;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 10rem;
+}
+.mediaLarge .App_title_c3 {
+    margin-bottom: 15rem;
+}
+.mediaExtraLarge .App_title_c3 {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 20rem;
+}
+.App_quests_02 {
+    position: relative;
+    z-index: 1;
+}
+.App_footer_05 {
+    height: 50rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.mediaMedium .App_footer_05 {
+    height: 70rem;
+}
+.mediaLarge .App_footer_05 {
+    height: 80rem;
+}
+.mediaExtraLarge .App_footer_05 {
+    height: 99rem;
+}
+
+.Counter_base_a8 {
+    display: flex;
+}
+
+.Counter_current_85 {
+    color: #e9e2bf;
+}
+
+.Counter_separator_f8 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    color: #7b7b78;
+}
+
+.Counter_total_ec {
+    color: #8c8c7e;
+}
+
+.Quest_base_ae {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Quest_description_86 {
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.mediaMedium .Quest_description_86 {
+    margin-bottom: 10rem;
+    font-size: 16rem;
+}
+
+.mediaExtraLarge .Quest_description_86 {
+    font-size: 18rem;
+}
+
+.Quest_completionsCounter_2f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+    color: #595950;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.mediaMedium .Quest_completionsCounter_2f {
+    font-size: 22rem;
+}
+
+.mediaExtraLarge .Quest_completionsCounter_2f {
+    margin-bottom: 15rem;
+    font-size: 24rem;
+}
+
+.Quest_progressBar_44 {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15rem;
+}
+
+.Quest_progressCounter_3d {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.mediaMedium .Quest_progressCounter_3d {
+    font-size: 16rem;
+}
+
+.mediaExtraLarge .Quest_progressCounter_3d {
+    font-size: 18rem;
+}
+
+.Quest_timer_1a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30rem;
+}
+
+.mediaMedium .Quest_timer_1a {
+    margin-bottom: 40rem;
+}
+
+.Quest_countdown_b2 {
+    margin-left: 5rem;
+}
+
+.Reward_base_41 {
+    width: 48rem;
+    height: 48rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.mediaLarge .Reward_base_41 {
+    width: 64rem;
+    height: 64rem;
+}
+.mediaExtraLarge .Reward_base_41 {
+    width: 80rem;
+    height: 80rem;
+}
+
+.Reward_count_bf {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    position: absolute;
+    right: -5rem;
+    bottom: -3rem;
+}
+
+.Rewards_base_26 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Rewards_rewards_e4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45rem;
+}
+
+.mediaMedium .Rewards_rewards_e4 {
+    margin-bottom: 50rem;
+}
+
+.Rewards_reward_f3 + .Rewards_reward_f3 {
+    margin-left: 20rem;
+}
+
+.mediaSmall .Rewards_reward_f3 + .Rewards_reward_f3 {
+    margin-left: 30rem;
+}
+
+.mediaLarge .Rewards_reward_f3 + .Rewards_reward_f3 {
+    margin-left: 25rem;
+}
+
+.Rewards_infoText_34 {
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+.Rewards_button_5b {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 42rem;
+}
+
+.mediaExtraLarge .Rewards_button_5b {
+    height: 60rem;
+}
+
+.Countdown_base_fe {
+    display: flex;
+    align-items: center;
+}
+
+.Countdown_icon_8b {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+}
+
+.Countdown_description_8d {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Timer_base_05 {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.Timer_text_d0 {
+    color: #ffc363;
+    font-size: 16rem;
+    font-weight: 700;
+}
+
+.mediaLarge .Timer_text_d0 {
+    font-size: 18rem;
+    line-height: 1.2;
+}
+
+.mediaExtraLarge .Timer_text_d0 {
+    font-size: 20rem;
+}
+
+.App_base_4a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20rem 25rem;
+}
+.App_title_72 {
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 8rem;
+    position: relative;
+}
+.mediaLarge .App_title_72 {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.App_titleIcon_00 {
+    width: 14rem;
+    height: 14rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(100%, -50%);
+}
+.mediaLarge .App_titleIcon_00 {
+    width: 18rem;
+    height: 18rem;
+}
+.App_infoIcon_fa {
+    width: 14rem;
+    height: 14rem;
+    margin-left: 10rem;
+    background: url('R.images.gui.maps.icons.wot_anniversary.mainView.icons.info_14x14') no-repeat center / contain;
+    filter: drop-shadow(0rem 0rem 7rem rgba(0, 162, 255, 0.4)) drop-shadow(0rem 0rem 7rem #00a2ff);
+    transform: translate(0, 4rem);
+}
+.mediaLarge .App_infoIcon_fa {
+    width: 18rem;
+    height: 18rem;
+    margin-left: 12rem;
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.icons.info_18x18');
+    transform: translate(0, 6rem);
+}
+.App_questCompletedText_ad {
+    margin-bottom: 40rem;
+}
+.mediaMedium .App_questCompletedText_ad {
+    margin-bottom: 55rem;
+    padding: 0 10rem;
+}
+.App_quest_9e {
+    margin-bottom: 35rem;
+    padding-top: 20rem;
+}
+.mediaSmall .App_quest_9e {
+    margin-bottom: 45rem;
+}
+.mediaMedium .App_quest_9e {
+    margin-bottom: 55rem;
+    padding-top: 30rem;
+}
+.mediaLarge .App_quest_9e {
+    margin-bottom: 60rem;
+    padding-top: 25rem;
+}
+.mediaExtraLarge .App_quest_9e {
+    margin-bottom: 84rem;
+}
+.App_timer_a1 {
+    margin-bottom: 10rem;
+    text-align: center;
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.mediaLarge .App_timer_a1 {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 15rem;
+}
+.mediaExtraLarge .App_timer_a1 {
+    color: #8c8c7e;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.App_timer__cycleEnded_4c {
+    margin-bottom: 50rem;
+}
+.mediaMedium .App_timer__cycleEnded_4c {
+    margin-bottom: 65rem;
+}
+
+.StoreButton_base_6c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155rem;
+    height: 84rem;
+    padding-right: 5rem;
+    position: relative;
+    cursor: pointer;
+}
+.mediaMedium .StoreButton_base_6c {
+    width: 210rem;
+    height: 115rem;
+    padding-right: 0;
+}
+.mediaLarge .StoreButton_base_6c {
+    width: 215rem;
+    height: 118rem;
+    padding-right: 5rem;
+}
+.mediaExtraLarge .StoreButton_base_6c {
+    width: 300rem;
+    height: 164rem;
+}
+
+.StoreButton_bg_0d {
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.StoreButton_bg__normal_f3 {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.storeButton.normal');
+}
+
+.StoreButton_bg__hover_ed {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.storeButton.hover');
+    opacity: 0;
+}
+
+.StoreButton_base_6c:hover .StoreButton_bg__hover_ed {
+    opacity: 1;
+}
+
+.StoreButton_content_fa {
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    z-index: 1;
+}
+
+.mediaMedium .StoreButton_content_fa {
+    font-size: 18rem;
+}
+
+.mediaExtraLarge .StoreButton_content_fa {
+    font-size: 26rem;
+}
+
+.StoreButton_eventCoins_ca {
+    display: flex;
+    align-items: center;
+    color: #ffdd99;
+    font-size: 16rem;
+}
+
+.mediaMedium .StoreButton_eventCoins_ca {
+    font-size: 20rem;
+}
+
+.mediaExtraLarge .StoreButton_eventCoins_ca {
+    font-size: 28rem;
+}
+
+.StoreButton_icon_b2 {
+    width: 24rem;
+    height: 24rem;
+    margin-right: -4rem;
+    background: url('R.images.gui.maps.icons.wot_anniversary.mainView.eventCoin') no-repeat center / contain;
+}
+
+.mediaSmall .StoreButton_icon_b2 {
+    width: 28rem;
+    height: 28rem;
+}
+
+.mediaMedium .StoreButton_icon_b2 {
+    width: 32rem;
+    height: 32rem;
+}
+
+.mediaLarge .StoreButton_icon_b2 {
+    width: 36rem;
+    height: 36rem;
+}
+
+.mediaExtraLarge .StoreButton_icon_b2 {
+    width: 48rem;
+    height: 48rem;
+}
+
+.StoreButton_mdash_e9 {
+    padding-left: 5rem;
+    transform: translateY(-2rem);
+}
+
+.mediaExtraLarge .StoreButton_mdash_e9 {
+    transform: translateY(-3rem);
+}
+
+.App_base_99 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.App_background_5c {
+    background: #001d2e no-repeat 50% 50% / 1324rem 1068rem;
+    position: absolute;
+    top: -124rem;
+    right: 0;
+    bottom: -35rem;
+    left: 0;
+}
+
+.mediaSmall .App_background_5c {
+    background-size: 1664rem 1068rem;
+}
+
+.mediaMedium .App_background_5c {
+    background-size: 1900rem 1200rem;
+}
+
+.mediaLarge .App_background_5c {
+    background-size: 2220rem 1380rem;
+}
+
+.mediaExtraLarge .App_background_5c {
+    background-size: 2860rem 1740rem;
+}
+
+.App_base__deer_d1 .App_background_5c {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.backgrounds.deer.s1024');
+}
+
+.mediaSmall .App_base__deer_d1 .App_background_5c {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.backgrounds.deer.s1366');
+}
+
+.mediaMedium .App_base__deer_d1 .App_background_5c {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.backgrounds.deer.s1600');
+}
+
+.mediaLarge .App_base__deer_d1 .App_background_5c {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.backgrounds.deer.s1920');
+}
+
+.mediaExtraLarge .App_base__deer_d1 .App_background_5c {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.backgrounds.deer.s2560');
+}
+
+.App_base__cat_3d .App_background_5c {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.backgrounds.cat.s1024');
+}
+
+.mediaSmall .App_base__cat_3d .App_background_5c {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.backgrounds.cat.s1366');
+}
+
+.mediaMedium .App_base__cat_3d .App_background_5c {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.backgrounds.cat.s1600');
+}
+
+.mediaLarge .App_base__cat_3d .App_background_5c {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.backgrounds.cat.s1920');
+}
+
+.mediaExtraLarge .App_base__cat_3d .App_background_5c {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.backgrounds.cat.s2560');
+}
+
+.App_base__mouse_3f .App_background_5c {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.backgrounds.mouse.s1024');
+}
+
+.mediaSmall .App_base__mouse_3f .App_background_5c {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.backgrounds.mouse.s1366');
+}
+
+.mediaMedium .App_base__mouse_3f .App_background_5c {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.backgrounds.mouse.s1600');
+}
+
+.mediaLarge .App_base__mouse_3f .App_background_5c {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.backgrounds.mouse.s1920');
+}
+
+.mediaExtraLarge .App_base__mouse_3f .App_background_5c {
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.mainView.backgrounds.mouse.s2560');
+}
+
+.App_infoButton_82 {
+    position: absolute;
+    top: 23rem;
+    left: 20rem;
+    z-index: 1;
+}
+
+.mediaMedium .App_infoButton_82 {
+    top: 43rem;
+    left: 40rem;
+}
+
+.mediaLarge .App_infoButton_82 {
+    top: 53rem;
+}
+
+.App_header_d5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20rem;
+}
+
+.mediaSmall .App_header_d5 {
+    padding-top: 25rem;
+}
+
+.mediaLarge .App_header_d5 {
+    padding-top: 30rem;
+}
+
+.mediaExtraLarge .App_header_d5 {
+    padding-top: 35rem;
+}
+
+.App_eventDuration_24 {
+    color: #fefeec;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 5rem;
+    opacity: 0.8;
+}
+
+.mediaLarge .App_eventDuration_24 {
+    color: #fefeec;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 10rem;
+}
+
+.App_title_7d {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaLarge .App_title_7d {
+    color: #f2f2f7;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaExtraLarge .App_title_7d {
+    color: #f2f2f7;
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.App_content_f5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1024rem;
+    height: 100%;
+    position: relative;
+}
+
+.mediaSmall .App_content_f5 {
+    max-width: 1366rem;
+}
+
+.mediaMedium .App_content_f5 {
+    max-width: 1600rem;
+}
+
+.mediaLarge .App_content_f5 {
+    max-width: 1920rem;
+}
+
+.mediaExtraLarge .App_content_f5 {
+    max-width: 2560rem;
+}
+
+.App_storeButton_b3 {
+    position: absolute;
+    right: 9rem;
+    bottom: calc(50vh + 210rem);
+}
+
+.mediaSmall .App_storeButton_b3 {
+    bottom: calc(50vh + 203rem);
+}
+
+.mediaMedium .App_storeButton_b3 {
+    right: 6rem;
+    bottom: calc(50vh + 228rem);
+}
+
+.mediaLarge .App_storeButton_b3 {
+    right: 45rem;
+    bottom: calc(50vh + 303rem);
+}
+
+.mediaExtraLarge .App_storeButton_b3 {
+    bottom: calc(50vh + 442rem);
+}
+
+.mediaSmall .App_base__mouse_3f .App_storeButton_b3 {
+    bottom: calc(50vh + 166rem);
+}
+
+.mediaMedium .App_base__mouse_3f .App_storeButton_b3 {
+    bottom: calc(50vh + 224rem);
+}
+
+.mediaLarge .App_base__mouse_3f .App_storeButton_b3 {
+    right: 25rem;
+    bottom: calc(50vh + 303rem);
+}
+
+.mediaExtraLarge .App_base__mouse_3f .App_storeButton_b3 {
+    right: 89rem;
+    bottom: calc(50vh + 357rem);
+}
+
+.App_mascotQuests_5e {
+    width: 300rem;
+    height: 360rem;
+    position: absolute;
+    top: calc(50vh - 200rem);
+    left: 34rem;
+}
+
+.mediaSmall .App_mascotQuests_5e {
+    width: 330rem;
+    height: 375rem;
+    top: calc(50vh - 206rem);
+    left: 19rem;
+}
+
+.mediaMedium .App_mascotQuests_5e {
+    width: 350rem;
+    height: 440rem;
+    top: calc(50vh - 168rem);
+    left: 50rem;
+}
+
+.mediaLarge .App_mascotQuests_5e {
+    width: 410rem;
+    height: 470rem;
+    top: calc(50vh - 204rem);
+    left: 96rem;
+}
+
+.mediaExtraLarge .App_mascotQuests_5e {
+    width: 480rem;
+    height: 535rem;
+    top: calc(50vh - 191rem);
+    left: 135rem;
+}
+
+.App_dailyQuests_fc {
+    width: 320rem;
+    height: 310rem;
+    position: absolute;
+    top: calc(50vh - 176rem);
+    right: 42rem;
+}
+
+.mediaSmall .App_dailyQuests_fc {
+    width: 330rem;
+    height: 330rem;
+    top: calc(50vh - 175rem);
+    right: 202rem;
+}
+
+.mediaMedium .App_dailyQuests_fc {
+    width: 375rem;
+    height: 390rem;
+    top: calc(50vh - 198rem);
+    right: 240rem;
+}
+
+.mediaLarge .App_dailyQuests_fc {
+    width: 445rem;
+    height: 490rem;
+    top: calc(50vh - 283rem);
+    right: 379rem;
+}
+
+.mediaExtraLarge .App_dailyQuests_fc {
+    width: 495rem;
+    height: 520rem;
+    top: calc(50vh - 334rem);
+    right: 607rem;
+}
+
+.mediaMedium .App_base__mouse_3f .App_dailyQuests_fc {
+    right: 245rem;
+}
+
+.mediaLarge .App_base__mouse_3f .App_dailyQuests_fc {
+    right: 379rem;
+}
+
+.mediaExtraLarge .App_base__mouse_3f .App_dailyQuests_fc {
+    right: 602rem;
+}
+
+.App_base__cat_3d .App_dailyQuests_fc {
+    right: 37rem;
+}
+
+.mediaSmall .App_base__cat_3d .App_dailyQuests_fc {
+    right: 202rem;
+}
+
+.mediaMedium .App_base__cat_3d .App_dailyQuests_fc {
+    right: 245rem;
+}
+
+.mediaLarge .App_base__cat_3d .App_dailyQuests_fc {
+    right: 379rem;
+}
+
+.mediaExtraLarge .App_base__cat_3d .App_dailyQuests_fc {
+    right: 612rem;
+}
+
+.App_loginQuests_83 {
+    width: 690rem;
+    height: 130rem;
+}
+
+.mediaMedium .App_loginQuests_83 {
+    width: 760rem;
+    height: 160rem;
+}
+
+.mediaLarge .App_loginQuests_83 {
+    width: 900rem;
+    height: 180rem;
+}
+
+.mediaExtraLarge .App_loginQuests_83 {
+    width: 1100rem;
+    height: 220rem;
+}

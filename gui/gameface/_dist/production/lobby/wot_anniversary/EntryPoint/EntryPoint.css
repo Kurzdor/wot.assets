@@ -1,0 +1,170 @@
+body {
+    margin: 1rem;
+    overflow: hidden;
+}
+
+html {
+    overflow: hidden;
+}
+
+.EventCoins_base_72 {
+    display: flex;
+    flex-direction: row;
+}
+
+.EventCoins_icon_15 {
+    width: 16rem;
+    height: 16rem;
+    background: no-repeat center / contain url('R.images.gui.maps.icons.wot_anniversary.entryPointWidget.eventCoin');
+}
+
+.EventCoins_count_a8 {
+    color: #ffffff;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.Logo_base_25 {
+    width: 280rem;
+    height: 280rem;
+    background: no-repeat center / contain url('R.images.gui.maps.icons.wot_anniversary.entryPointWidget.eventLogoBig');
+}
+
+.Logo_base__small_3d {
+    width: 170rem;
+    height: 150rem;
+    background-image: url('R.images.gui.maps.icons.wot_anniversary.entryPointWidget.eventLogoSmall');
+}
+
+.Status_base_af {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: none;
+}
+
+.Status_title_c4 {
+    color: #ffffff;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    max-width: 244rem;
+    padding-bottom: 8rem;
+    line-height: 26rem;
+    text-align: center;
+    text-shadow: 0 0 14px rgba(255, 255, 255, 0.5);
+}
+
+.Status_base__sizeSmall_f1 .Status_title_c4 {
+    color: #ffffff;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding-bottom: 6rem;
+}
+
+.Status_subTitle_d3 {
+    color: #fefeec;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    min-height: 34rem;
+    padding: 0 40rem;
+    text-align: center;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+}
+
+.Status_base__sizeSmall_f1 .Status_subTitle_d3 {
+    color: #fefeec;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    min-height: 28rem;
+    padding: 0 8rem;
+}
+
+.App_base_42 {
+    width: 280rem;
+    height: 280rem;
+    overflow: hidden;
+}
+
+.App_base__sizeSmall_a3 {
+    width: 170rem;
+    height: 150rem;
+}
+
+.App_logo_54 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.4s cubic-bezier(0.64, 0.04, 0.35, 1);
+}
+
+.App_logo__hover_a1 {
+    transform: scale(1.04);
+}
+
+.App_status_f4 {
+    position: absolute;
+    bottom: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.App_progressionBlock_07 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 10rem);
+}
+
+.App_eventCoins_18 {
+    position: absolute;
+    top: 60rem;
+    right: 10rem;
+}
+
+.App_base__sizeSmall_a3 .App_eventCoins_18 {
+    top: 36rem;
+    right: 5rem;
+}
+
+.App_hitAreaContainer_ba {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.App_hitAreaTop_a5 {
+    width: 50rem;
+    height: 30rem;
+    position: relative;
+    top: 0;
+    left: 55%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.App_base__sizeSmall_a3 .App_hitAreaTop_a5 {
+    width: 50rem;
+    height: 26rem;
+}
+
+.App_hitAreaBottom_4b {
+    width: 210rem;
+    height: 210rem;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+}
+
+.App_base__sizeSmall_a3 .App_hitAreaBottom_4b {
+    width: 150rem;
+    height: 120rem;
+}
