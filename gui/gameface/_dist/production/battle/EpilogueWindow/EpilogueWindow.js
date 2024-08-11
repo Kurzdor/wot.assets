@@ -97,18 +97,21 @@
                 t.r(e),
                     t.d(e, {
                         events: () => E,
-                        getMouseGlobalPosition: () => A,
-                        getSize: () => r,
-                        graphicsQuality: () => a,
+                        getMouseGlobalPosition: () => a,
+                        getSize: () => A,
+                        graphicsQuality: () => F,
+                        playSound: () => r.G,
+                        setRTPC: () => r.E,
                     });
-                var E = t(527);
-                function r(u = 'px') {
+                var E = t(527),
+                    r = t(2493);
+                function A(u = 'px') {
                     return 'rem' === u ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function A(u = 'px') {
+                function a(u = 'px') {
                     return 'rem' === u ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const a = {
+                const F = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -120,6 +123,20 @@
                     viewEnv.setTrackMouseOnStage(u);
                 }
                 t.d(e, { R: () => E });
+            },
+            2493: (u, e, t) => {
+                'use strict';
+                function E(u) {
+                    engine.call('PlaySound', u).catch((e) => {
+                        console.error(`playSound('${u}'): `, e);
+                    });
+                }
+                function r(u, e) {
+                    engine.call('SetRTPCGlobal', u, e).catch((t) => {
+                        console.error(`setRTPC('${u}', '${e}'): `, t);
+                    });
+                }
+                t.d(e, { E: () => r, G: () => E });
             },
             2472: (u, e, t) => {
                 'use strict';
@@ -135,9 +152,18 @@
             },
             3138: (u, e, t) => {
                 'use strict';
-                t.d(e, { O: () => r });
+                t.d(e, { O: () => A });
+                var E = t(5959),
+                    r = t(514);
+                const A = { view: t(7641), client: E, sound: r.ZP };
+            },
+            514: (u, e, t) => {
+                'use strict';
+                t.d(e, { ZP: () => a });
                 var E = t(5959);
-                const r = { view: t(7641), client: E };
+                const r = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    A = Object.keys(r).reduce((u, e) => ((u[e] = () => (0, E.playSound)(r[e])), u), {}),
+                    a = { play: Object.assign({}, A, { sound: E.playSound }), setRTPC: E.setRTPC };
             },
             3722: (u, e, t) => {
                 'use strict';
@@ -1035,14 +1061,14 @@
                         [w.Large]: `${g().SMALL_WIDTH} ${g().MEDIUM_WIDTH} ${g().LARGE_WIDTH}`,
                         [w.ExtraLarge]: `${g().SMALL_WIDTH} ${g().MEDIUM_WIDTH} ${g().LARGE_WIDTH} ${g().EXTRA_LARGE_WIDTH}`,
                     },
-                    S = {
+                    y = {
                         [b.ExtraSmall]: '',
                         [b.Small]: g().SMALL_HEIGHT,
                         [b.Medium]: `${g().SMALL_HEIGHT} ${g().MEDIUM_HEIGHT}`,
                         [b.Large]: `${g().SMALL_HEIGHT} ${g().MEDIUM_HEIGHT} ${g().LARGE_HEIGHT}`,
                         [b.ExtraLarge]: `${g().SMALL_HEIGHT} ${g().MEDIUM_HEIGHT} ${g().LARGE_HEIGHT} ${g().EXTRA_LARGE_HEIGHT}`,
                     },
-                    y = {
+                    S = {
                         [v.ExtraSmall]: '',
                         [v.Small]: g().SMALL,
                         [v.Medium]: `${g().SMALL} ${g().MEDIUM}`,
@@ -1065,7 +1091,7 @@
                             a = A.mediaWidth,
                             F = A.mediaHeight,
                             n = A.mediaSize;
-                        return r().createElement('div', x({ className: m()(t, L[a], S[F], y[n]) }, E), e);
+                        return r().createElement('div', x({ className: m()(t, L[a], y[F], S[n]) }, E), e);
                     },
                     M = ['children'],
                     T = (u) => {
@@ -1084,7 +1110,9 @@
                 var k = t(493),
                     H = t.n(k);
                 function P(u) {
-                    engine.call('PlaySound', u);
+                    engine.call('PlaySound', u).catch((e) => {
+                        console.error('[lib/sounds.js] playSound(', u, '): ', e);
+                    });
                 }
                 const W = {
                     base: 'CButton_base_40',
@@ -1106,7 +1134,6 @@
                     stateHighlightHover: 'CButton_stateHighlightHover_ff',
                     stateHighlightActive: 'CButton_stateHighlightActive_35',
                     stateDisabled: 'CButton_stateDisabled_54',
-                    base__firstHover: 'CButton_base__firstHover_d5',
                     base__highlightActive: 'CButton_base__highlightActive_b2',
                     content: 'CButton_content_cc',
                 };
@@ -1144,78 +1171,19 @@
                         h = d[1],
                         g = (0, E.useState)(!1),
                         v = g[0],
-                        w = g[1],
-                        b = (0, E.useState)(!1),
-                        f = b[0],
-                        p = b[1],
-                        x = (0, E.useCallback)(() => {
-                            a || (c.current && (c.current.focus(), h(!0)));
-                        }, [a]),
-                        L = (0, E.useCallback)(
-                            (u) => {
-                                _ && null !== c.current && !c.current.contains(u.target) && h(!1);
-                            },
-                            [_],
-                        ),
-                        S = (0, E.useCallback)(
-                            (u) => {
-                                a || (C && C(u));
-                            },
-                            [a, C],
-                        ),
-                        y = (0, E.useCallback)(
-                            (u) => {
-                                a || (null !== n && P(n), D && D(u), p(!0));
-                            },
-                            [a, n, D],
-                        ),
-                        O = (0, E.useCallback)(
-                            (u) => {
-                                o && o(u);
-                            },
-                            [o],
-                        ),
-                        M = (0, E.useCallback)(
-                            (u) => {
-                                a || (l && l(u), w(!1));
-                            },
-                            [a, l],
-                        ),
-                        T = (0, E.useCallback)(
-                            (u) => {
-                                a || (null !== i && P(i), s && s(u), t && x(), w(!0));
-                            },
-                            [a, i, s, x, t],
-                        ),
-                        k = (0, E.useCallback)(
-                            (u) => {
-                                a || (B && B(u), w(!1));
-                            },
-                            [a, B],
-                        ),
-                        H = m()(
-                            W.base,
-                            W[`base__${A}`],
-                            {
-                                [W.base__disabled]: a,
-                                [W[`base__${e}`]]: e,
-                                [W.base__focus]: _,
-                                [W.base__highlightActive]: v,
-                                [W.base__firstHover]: f,
-                            },
-                            F,
-                        ),
-                        I = m()(W.state, W.state__default);
+                        w = g[1];
                     return (
-                        (0, E.useEffect)(
-                            () => (
-                                document.addEventListener('mousedown', L),
+                        (0, E.useEffect)(() => {
+                            function u(u) {
+                                _ && null !== c.current && !c.current.contains(u.target) && h(!1);
+                            }
+                            return (
+                                document.addEventListener('mousedown', u),
                                 () => {
-                                    document.removeEventListener('mousedown', L);
+                                    document.removeEventListener('mousedown', u);
                                 }
-                            ),
-                            [L],
-                        ),
+                            );
+                        }, [_]),
                         (0, E.useEffect)(() => {
                             h(t);
                         }, [t]),
@@ -1223,13 +1191,37 @@
                             'div',
                             {
                                 ref: c,
-                                className: H,
-                                onMouseEnter: y,
-                                onMouseMove: O,
-                                onMouseUp: M,
-                                onMouseDown: T,
-                                onMouseLeave: k,
-                                onClick: S,
+                                className: m()(
+                                    W.base,
+                                    W[`base__${A}`],
+                                    a && W.base__disabled,
+                                    e && W[`base__${e}`],
+                                    _ && W.base__focus,
+                                    v && W.base__highlightActive,
+                                    F,
+                                ),
+                                onMouseEnter: function (u) {
+                                    a || (null !== n && P(n), D && D(u));
+                                },
+                                onMouseMove: function (u) {
+                                    o && o(u);
+                                },
+                                onMouseUp: function (u) {
+                                    a || (l && l(u), w(!1));
+                                },
+                                onMouseDown: function (u) {
+                                    a ||
+                                        (null !== i && P(i),
+                                        s && s(u),
+                                        t && (a || (c.current && (c.current.focus(), h(!0)))),
+                                        w(!0));
+                                },
+                                onMouseLeave: function (u) {
+                                    a || (B && B(u), w(!1));
+                                },
+                                onClick: function (u) {
+                                    a || (C && C(u));
+                                },
                             },
                             A !== N.ghost &&
                                 r().createElement(
@@ -1240,7 +1232,7 @@
                                 ),
                             r().createElement(
                                 'span',
-                                { className: I },
+                                { className: m()(W.state, W.state__default) },
                                 r().createElement('span', { className: W.stateDisabled }),
                                 r().createElement('span', { className: W.stateHighlightHover }),
                                 r().createElement('span', { className: W.stateHighlightActive }),
@@ -1254,15 +1246,15 @@
                     );
                 };
                 G.defaultProps = { type: N.primary, isFocused: !1, soundHover: 'highlight', soundClick: 'play' };
-                const U = (0, E.memo)(G);
-                var z = t(5521);
+                const U = G;
+                var j = t(5521);
                 t(9916);
-                const j = (u) => {
+                const z = (u) => {
                     console.error(u.type + ': useKeydownListener hook :: Callback is not defined');
                 };
-                function V(u = z.n.NONE, e = j, t = !1, r = !1) {
+                function V(u = j.n.NONE, e = z, t = !1, r = !1) {
                     (0, E.useEffect)(() => {
-                        if (u !== z.n.NONE)
+                        if (u !== j.n.NONE)
                             return (
                                 window.addEventListener('keydown', E, t),
                                 () => {
@@ -1277,8 +1269,8 @@
                         }
                     }, [e, u, t, r]);
                 }
-                var q = t(3403);
-                const $ = (0, E.memo)(
+                var $ = t(3403);
+                const q = (0, E.memo)(
                     ({ className: u, backgroundPath: e, onLoaded: t, showVignette: E = !0, showBlur: A = !1 }) =>
                         r().createElement(
                             'div',
@@ -1662,7 +1654,7 @@
                     Du = nu[1],
                     ou = R.images.story_mode.gui.maps.icons.epilogue,
                     su = R.strings.sm_battle.epilogue.text(),
-                    lu = (0, q.Pi)(() => {
+                    lu = (0, $.Pi)(() => {
                         const u = Du().controls;
                         return (
                             ((u) => {
@@ -1672,12 +1664,12 @@
                                     },
                                     [u],
                                 );
-                                V(z.n.ENTER, e, !0);
+                                V(j.n.ENTER, e, !0);
                             })(u.close),
                             r().createElement(
                                 'div',
                                 { className: 'EpilogueWindowApp_base_0c' },
-                                r().createElement($, {
+                                r().createElement(q, {
                                     backgroundPath: R.images.story_mode.gui.maps.icons.epilogue.background(),
                                     onLoaded: u.loaded,
                                 }),

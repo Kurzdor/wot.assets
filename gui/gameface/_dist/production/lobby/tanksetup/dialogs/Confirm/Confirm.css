@@ -123,17 +123,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateHighlightHover_ff,
 .CButton_stateHighlightActive_35,
 .CButton_stateDisabled_54 {
-    opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-}
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
-.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
-.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-    transition: opacity 0.16s ease-in-out;
 }
 .CButton_stateHighlightHover_ff {
     background-image: linear-gradient(
@@ -142,6 +136,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         rgba(252, 248, 235, 0.1) 50%,
         rgba(255, 255, 255, 0) 100%
     );
+    opacity: 0;
 }
 .CButton_base_40:hover .CButton_stateHighlightHover_ff {
     opacity: 1;
@@ -159,6 +154,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_stateHighlightActive_35 {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+    opacity: 0;
 }
 .CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
     opacity: 1;
@@ -166,10 +162,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateDisabled_54 {
     background-color: rgba(0, 0, 0, 0.25);
     background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
-    background-size: 15rem;
+    background-size: 15rem 15rem;
+    visibility: hidden;
 }
 .CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-    opacity: 1;
+    visibility: inherit;
 }
 .CButton_content_cc {
     display: flex;
@@ -775,6 +772,30 @@ body {
 .Currency_base__extraLarge_4d .Currency_icon__freeXP-extraLarge_58 {
     transform: translateY(4rem);
 }
+.Currency_icon__eliteXP-small_45 {
+    background-image: url('R.images.gui.maps.icons.library.EliteXpIcon-2');
+}
+.Currency_base__small_af .Currency_icon__eliteXP-small_45 {
+    transform: translateY(1rem);
+}
+.Currency_icon__eliteXP-big_c0 {
+    --icon-height: 24rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.EliteXpIconBig');
+}
+.Currency_icon__eliteXP-large_1b {
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.icons.library.elite_exp_48x48');
+}
+.Currency_icon__eliteXP-extraLarge_9b {
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.elite_exp_80x80');
+}
+.Currency_base__extraLarge_4d .Currency_icon__eliteXP-extraLarge_9b {
+    transform: translateY(4rem);
+}
 .Currency_icon__equipCoin-small_32 {
     --icon-height: 16rem;
     margin-right: -2rem;
@@ -844,7 +865,8 @@ body {
 }
 .Currency_value__xp_b0,
 .Currency_value__crystal_19,
-.Currency_value__equipCoin_d0 {
+.Currency_value__equipCoin_d0,
+.Currency_value__eliteXP_62 {
     color: #c9c9b6;
 }
 .Currency_base__small_af .Currency_value__notEnough_56 {
@@ -1681,6 +1703,33 @@ body {
     margin-bottom: 0;
 }
 
+.ExchangeRate_base_76 {
+    animation-name: ExchangeRate_fadeIn_14;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+.ExchangeRate_baseHidden_12 {
+    animation-name: ExchangeRate_fadeOut_92;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    pointer-events: none;
+}
+
+@keyframes ExchangeRate_fadeIn_14 {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes ExchangeRate_fadeOut_92 {
+    to {
+        opacity: 0;
+    }
+}
+
 .Alert_base_42 {
     width: 180rem;
     height: 135rem;
@@ -1990,7 +2039,7 @@ body {
     transform: translateY(4rem);
 }
 
-.NumericStepper_base_35 {
+.NumericStepper_base_98 {
     display: flex;
     align-items: center;
     border: 1rem solid #454437;
@@ -2003,122 +2052,129 @@ body {
     transition: border 0.3s ease-in-out;
 }
 
-.NumericStepper_base__small_11 {
+.NumericStepper_base__small_e3 {
     width: 73rem;
     height: 23rem;
 }
 
-.NumericStepper_base__medium_9d {
+.NumericStepper_base__medium_7f {
     width: 90rem;
     height: 31rem;
 }
 
-.NumericStepper_base__large_dc {
+.NumericStepper_base__large_87 {
     width: 178rem;
     height: 49rem;
 }
 
-.NumericStepper_base__isFocus_49 {
+.NumericStepper_base__isFocus_d0 {
     border-color: #663c1f;
 }
 
-.NumericStepper_base__isDisabled_ac {
+.NumericStepper_base__isDisabled_06 {
     border-color: #22221a;
 }
-.NumericStepper_inputContainer_e2 {
+.NumericStepper_inputContainer_87 {
     display: flex;
     align-items: center;
     flex: 1;
 }
-.NumericStepper_base__small_11 .NumericStepper_input_55 {
+.NumericStepper_base__small_e3 .NumericStepper_input_ef {
     padding: 0 4rem 2rem 6rem;
     font-size: 14rem;
 }
-.NumericStepper_base__medium_9d .NumericStepper_input_55 {
+.NumericStepper_base__medium_7f .NumericStepper_input_ef {
     padding: 0 8rem 1rem 9rem;
     font-size: 20rem;
 }
-.NumericStepper_base__large_dc .NumericStepper_input_55 {
+.NumericStepper_base__large_87 .NumericStepper_input_ef {
     padding: 0 12rem 3rem 17rem;
     font-size: 24rem;
 }
-.NumericStepper_base__withCurrency-small_de .NumericStepper_input_55 {
+.NumericStepper_base__withCurrency-small_a3 .NumericStepper_input_ef {
     padding-right: 2rem;
 }
-.NumericStepper_base__withCurrency-medium_69 .NumericStepper_input_55 {
+.NumericStepper_base__withCurrency-medium_28 .NumericStepper_input_ef {
     padding-right: 3rem;
 }
-.NumericStepper_base__withCurrency-large_a1 .NumericStepper_input_55 {
+.NumericStepper_base__withCurrency-large_2b .NumericStepper_input_ef {
     padding-right: 4rem;
 }
-.NumericStepper_input_55 {
+.NumericStepper_input_ef {
     flex: 1;
     border: none;
     background: transparent;
     color: #8c8c7e;
 }
-.NumericStepper_input__disabled_d8 {
+.NumericStepper_input__disabled_83 {
     color: transparent;
     text-shadow: 0 0 0 #37362e;
 }
-.NumericStepper_input__credits_08 {
+.NumericStepper_input__credits_d6 {
     color: #ced9d9;
 }
-.NumericStepper_input__credits-disabled_3f {
+.NumericStepper_input__credits-disabled_57 {
     color: transparent;
     text-shadow: 0 0 0 rgba(206, 217, 217, 0.3);
 }
-.NumericStepper_input__gold_14 {
+.NumericStepper_input__gold_21 {
     color: #ffc363;
 }
-.NumericStepper_input__gold-disabled_c6 {
+.NumericStepper_input__gold-disabled_1c {
     color: transparent;
     text-shadow: 0 0 0 rgba(255, 195, 99, 0.3);
 }
-.NumericStepper_input__xp_c4,
-.NumericStepper_input__freeXP_06,
-.NumericStepper_input__crystal_2e {
+.NumericStepper_input__xp_df,
+.NumericStepper_input__freeXP_53,
+.NumericStepper_input__crystal_64 {
     color: #c9c9b6;
 }
-.NumericStepper_input__xp-disabled_33,
-.NumericStepper_input__freeXP-disabled_8b,
-.NumericStepper_input__crystal-disabled_f8 {
+.NumericStepper_input__xp-disabled_4a,
+.NumericStepper_input__freeXP-disabled_29,
+.NumericStepper_input__crystal-disabled_52 {
     color: transparent;
     text-shadow: 0 0 0 rgba(201, 201, 182, 0.3);
 }
-.NumericStepper_input__withCurrency_3b {
+.NumericStepper_input__withCurrency_81 {
     font-weight: 700;
 }
-.NumericStepper_base__small_11 .NumericStepper_input__withCurrency_3b {
+.NumericStepper_base__small_e3 .NumericStepper_input__withCurrency_81 {
     padding-right: 22rem;
 }
-.NumericStepper_base__medium_9d .NumericStepper_input__withCurrency_3b {
+.NumericStepper_base__medium_7f .NumericStepper_input__withCurrency_81 {
     padding-right: 27rem;
 }
-.NumericStepper_base__large_dc .NumericStepper_input__withCurrency_3b {
+.NumericStepper_base__large_87 .NumericStepper_input__withCurrency_81 {
     padding-right: 32rem;
 }
-.NumericStepper_base__medium_9d .NumericStepper_input__xp-medium_db,
-.NumericStepper_base__medium_9d .NumericStepper_input__xp-large_73,
-.NumericStepper_base__medium_9d .NumericStepper_input__freeXP-medium_2b,
-.NumericStepper_base__medium_9d .NumericStepper_input__freeXP-large_c9,
-.NumericStepper_base__medium_9d .NumericStepper_input__crystal-medium_56,
-.NumericStepper_base__medium_9d .NumericStepper_input__crystal-large_4e {
+.NumericStepper_base__medium_7f .NumericStepper_input__xp-medium_4c,
+.NumericStepper_base__medium_7f .NumericStepper_input__xp-large_5e,
+.NumericStepper_base__medium_7f .NumericStepper_input__freeXP-medium_ee,
+.NumericStepper_base__medium_7f .NumericStepper_input__freeXP-large_05,
+.NumericStepper_base__medium_7f .NumericStepper_input__crystal-medium_ef,
+.NumericStepper_base__medium_7f .NumericStepper_input__crystal-large_28 {
     padding-right: 34rem;
 }
-.NumericStepper_base__large_dc .NumericStepper_input__xp-medium_db,
-.NumericStepper_base__large_dc .NumericStepper_input__xp-large_73,
-.NumericStepper_base__large_dc .NumericStepper_input__freeXP-medium_2b,
-.NumericStepper_base__large_dc .NumericStepper_input__freeXP-large_c9,
-.NumericStepper_base__large_dc .NumericStepper_input__crystal-medium_56,
-.NumericStepper_base__large_dc .NumericStepper_input__crystal-large_4e {
+.NumericStepper_base__large_87 .NumericStepper_input__xp-medium_4c,
+.NumericStepper_base__large_87 .NumericStepper_input__xp-large_5e,
+.NumericStepper_base__large_87 .NumericStepper_input__freeXP-medium_ee,
+.NumericStepper_base__large_87 .NumericStepper_input__freeXP-large_05,
+.NumericStepper_base__large_87 .NumericStepper_input__crystal-medium_ef,
+.NumericStepper_base__large_87 .NumericStepper_input__crystal-large_28 {
     padding-right: 39rem;
 }
-.NumericStepper_input_55::selection {
+.NumericStepper_input__error_d8 {
+    color: #f00;
+}
+.NumericStepper_input__disabled_83.NumericStepper_input__error_d8 {
+    color: transparent;
+    text-shadow: 0 0 0 #f00a;
+}
+.NumericStepper_input_ef::selection {
     background-color: #8c8c7e;
     color: #242420;
 }
-.NumericStepper_currency_38 {
+.NumericStepper_currency_31 {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -2128,130 +2184,130 @@ body {
     left: 0;
     z-index: -1;
 }
-.NumericStepper_base__small_11 .NumericStepper_currency_38 {
+.NumericStepper_base__small_e3 .NumericStepper_currency_31 {
     padding-right: 20rem;
 }
-.NumericStepper_base__medium_9d .NumericStepper_currency_38 {
+.NumericStepper_base__medium_7f .NumericStepper_currency_31 {
     padding-right: 24rem;
 }
-.NumericStepper_base__large_dc .NumericStepper_currency_38 {
+.NumericStepper_base__large_87 .NumericStepper_currency_31 {
     padding-right: 28rem;
 }
-.NumericStepper_base__medium_9d .NumericStepper_currency__xp-medium_66,
-.NumericStepper_base__medium_9d .NumericStepper_currency__xp-large_66,
-.NumericStepper_base__medium_9d .NumericStepper_currency__freeXP-medium_79,
-.NumericStepper_base__medium_9d .NumericStepper_currency__freeXP-large_c7,
-.NumericStepper_base__medium_9d .NumericStepper_currency__crystal-medium_55,
-.NumericStepper_base__medium_9d .NumericStepper_currency__crystal-large_a4 {
+.NumericStepper_base__medium_7f .NumericStepper_currency__xp-medium_1d,
+.NumericStepper_base__medium_7f .NumericStepper_currency__xp-large_e1,
+.NumericStepper_base__medium_7f .NumericStepper_currency__freeXP-medium_fa,
+.NumericStepper_base__medium_7f .NumericStepper_currency__freeXP-large_6d,
+.NumericStepper_base__medium_7f .NumericStepper_currency__crystal-medium_15,
+.NumericStepper_base__medium_7f .NumericStepper_currency__crystal-large_02 {
     padding-right: 31rem;
 }
-.NumericStepper_base__large_dc .NumericStepper_currency__xp-medium_66,
-.NumericStepper_base__large_dc .NumericStepper_currency__xp-large_66,
-.NumericStepper_base__large_dc .NumericStepper_currency__freeXP-medium_79,
-.NumericStepper_base__large_dc .NumericStepper_currency__freeXP-large_c7,
-.NumericStepper_base__large_dc .NumericStepper_currency__crystal-medium_55,
-.NumericStepper_base__large_dc .NumericStepper_currency__crystal-large_a4 {
+.NumericStepper_base__large_87 .NumericStepper_currency__xp-medium_1d,
+.NumericStepper_base__large_87 .NumericStepper_currency__xp-large_e1,
+.NumericStepper_base__large_87 .NumericStepper_currency__freeXP-medium_fa,
+.NumericStepper_base__large_87 .NumericStepper_currency__freeXP-large_6d,
+.NumericStepper_base__large_87 .NumericStepper_currency__crystal-medium_15,
+.NumericStepper_base__large_87 .NumericStepper_currency__crystal-large_02 {
     padding-right: 35rem;
 }
-.NumericStepper_currencyIcon_8e {
+.NumericStepper_currencyIcon_5a {
     width: 16rem;
     height: 16rem;
     background: 50% / contain no-repeat;
 }
-.NumericStepper_currencyIcon__credits-small_99 {
+.NumericStepper_currencyIcon__credits-small_05 {
     background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
     transform: translateY(4rem);
 }
-.NumericStepper_currencyIcon__credits-medium_1a {
+.NumericStepper_currencyIcon__credits-medium_ec {
     background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
     transform: translateY(8rem);
 }
-.NumericStepper_currencyIcon__credits-large_bc {
+.NumericStepper_currencyIcon__credits-large_d4 {
     background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
     transform: translateY(18rem);
 }
-.NumericStepper_currencyIcon__gold-small_2a {
+.NumericStepper_currencyIcon__gold-small_52 {
     background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
     transform: translateY(3rem);
 }
-.NumericStepper_currencyIcon__gold-medium_f6 {
+.NumericStepper_currencyIcon__gold-medium_77 {
     background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
     transform: translateY(9rem);
 }
-.NumericStepper_currencyIcon__gold-large_d6 {
+.NumericStepper_currencyIcon__gold-large_c1 {
     background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
     transform: translateY(19rem);
 }
-.NumericStepper_currencyIcon__crystal-small_b5 {
+.NumericStepper_currencyIcon__crystal-small_69 {
     background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
     transform: translateY(3rem);
 }
-.NumericStepper_currencyIcon__crystal-medium_ac {
+.NumericStepper_currencyIcon__crystal-medium_20 {
     width: 23rem;
     height: 22rem;
     background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
     transform: translateY(6rem);
 }
-.NumericStepper_currencyIcon__crystal-large_2b {
+.NumericStepper_currencyIcon__crystal-large_fa {
     width: 23rem;
     height: 22rem;
     background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
     transform: translate(-1rem, 16rem);
 }
-.NumericStepper_currencyIcon__freeXP-small_4d {
+.NumericStepper_currencyIcon__freeXP-small_5c {
     background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
     transform: translateY(3rem);
 }
-.NumericStepper_currencyIcon__freeXP-medium_85 {
+.NumericStepper_currencyIcon__freeXP-medium_27 {
     width: 23rem;
     height: 22rem;
     background-image: url('R.images.gui.maps.icons.library.freeXpIcon_23x22');
     transform: translateY(4rem);
 }
-.NumericStepper_currencyIcon__freeXP-large_76 {
+.NumericStepper_currencyIcon__freeXP-large_27 {
     width: 23rem;
     height: 22rem;
     background-image: url('R.images.gui.maps.icons.library.freeXpIcon_23x22');
     transform: translate(-2rem, 14rem);
 }
-.NumericStepper_currencyIcon__xp-small_73 {
+.NumericStepper_currencyIcon__xp-small_e9 {
     background-image: url('R.images.gui.maps.icons.library.XpIcon_1');
     transform: translateY(3rem);
 }
-.NumericStepper_currencyIcon__xp-medium_ef {
+.NumericStepper_currencyIcon__xp-medium_20 {
     width: 23rem;
     height: 22rem;
     background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
     transform: translateY(4rem);
 }
-.NumericStepper_currencyIcon__xp-large_3e {
+.NumericStepper_currencyIcon__xp-large_8e {
     width: 23rem;
     height: 22rem;
     background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
     transform: translate(-2rem, 14rem);
 }
-.NumericStepper_base__isDisabled_ac .NumericStepper_currencyIcon_8e {
+.NumericStepper_base__isDisabled_06 .NumericStepper_currencyIcon_5a {
     filter: brightness(0.3);
 }
-.NumericStepper_base__small_11 .NumericStepper_dummyValue_0c {
+.NumericStepper_base__small_e3 .NumericStepper_dummyValue_0c {
     padding: 0 4rem 2rem 6rem;
     font-size: 14rem;
 }
-.NumericStepper_base__medium_9d .NumericStepper_dummyValue_0c {
+.NumericStepper_base__medium_7f .NumericStepper_dummyValue_0c {
     padding: 0 8rem 1rem 9rem;
     font-size: 20rem;
 }
-.NumericStepper_base__large_dc .NumericStepper_dummyValue_0c {
+.NumericStepper_base__large_87 .NumericStepper_dummyValue_0c {
     padding: 0 12rem 3rem 17rem;
     font-size: 24rem;
 }
-.NumericStepper_base__withCurrency-small_de .NumericStepper_dummyValue_0c {
+.NumericStepper_base__withCurrency-small_a3 .NumericStepper_dummyValue_0c {
     padding-right: 2rem;
 }
-.NumericStepper_base__withCurrency-medium_69 .NumericStepper_dummyValue_0c {
+.NumericStepper_base__withCurrency-medium_28 .NumericStepper_dummyValue_0c {
     padding-right: 3rem;
 }
-.NumericStepper_base__withCurrency-large_a1 .NumericStepper_dummyValue_0c {
+.NumericStepper_base__withCurrency-large_2b .NumericStepper_dummyValue_0c {
     padding-right: 4rem;
 }
 .NumericStepper_dummyValue_0c {
@@ -2260,102 +2316,295 @@ body {
     opacity: 0;
     overflow: hidden;
 }
-.NumericStepper_control_ab {
+.NumericStepper_control_b0 {
     display: flex;
     flex-direction: column;
 }
-.NumericStepper_buttonIncrement_16,
-.NumericStepper_buttonDecrement_c8 {
+.NumericStepper_buttonIncrement_48,
+.NumericStepper_buttonDecrement_e6 {
     background-repeat: no-repeat;
     cursor: pointer;
 }
 @media (min-width: 1920px) {
-    .NumericStepper_buttonIncrement_16,
-    .NumericStepper_buttonDecrement_c8 {
+    .NumericStepper_buttonIncrement_48,
+    .NumericStepper_buttonDecrement_e6 {
         background-size: 200% 400%;
     }
 }
-.NumericStepper_buttonIncrement__small_f6,
-.NumericStepper_buttonDecrement__small_36 {
+.NumericStepper_buttonIncrement__small_a8,
+.NumericStepper_buttonDecrement__small_25 {
     width: 19rem;
     height: 11rem;
     background-image: url('R.images.gui.maps.icons.components.numerical_stepper.stepper_small_buttons');
 }
-.NumericStepper_buttonIncrement__medium_fd,
-.NumericStepper_buttonDecrement__medium_d1 {
+.NumericStepper_buttonIncrement__medium_2e,
+.NumericStepper_buttonDecrement__medium_b0 {
     width: 27rem;
     height: 15rem;
     background-image: url('R.images.gui.maps.icons.components.numerical_stepper.stepper_medium_buttons');
 }
-.NumericStepper_buttonIncrement__large_56,
-.NumericStepper_buttonDecrement__large_63 {
+.NumericStepper_buttonIncrement__large_37,
+.NumericStepper_buttonDecrement__large_f9 {
     width: 43rem;
     height: 24rem;
     background-image: url('R.images.gui.maps.icons.components.numerical_stepper.stepper_large_buttons');
 }
-.NumericStepper_buttonIncrement__isDisabled_68,
-.NumericStepper_buttonDecrement__isDisabled_d9 {
+.NumericStepper_buttonIncrement__isDisabled_6b,
+.NumericStepper_buttonDecrement__isDisabled_a3 {
     cursor: default;
 }
-.NumericStepper_buttonIncrement__small_f6:hover {
+.NumericStepper_buttonIncrement__small_a8:hover {
     background-position: 0 -11rem;
 }
-.NumericStepper_buttonIncrement__medium_fd:hover {
+.NumericStepper_buttonIncrement__medium_2e:hover {
     background-position: 0 -15rem;
 }
-.NumericStepper_buttonIncrement__large_56:hover {
+.NumericStepper_buttonIncrement__large_37:hover {
     background-position: 0 -24rem;
 }
-.NumericStepper_buttonIncrement__isActive-small_2a,
-.NumericStepper_buttonIncrement__isActive-small_2a:hover {
+.NumericStepper_buttonIncrement__isActive-small_6e,
+.NumericStepper_buttonIncrement__isActive-small_6e:hover {
     background-position: 0 -22rem;
 }
-.NumericStepper_buttonIncrement__isActive-medium_c2,
-.NumericStepper_buttonIncrement__isActive-medium_c2:hover {
+.NumericStepper_buttonIncrement__isActive-medium_cd,
+.NumericStepper_buttonIncrement__isActive-medium_cd:hover {
     background-position: 0 -30rem;
 }
-.NumericStepper_buttonIncrement__isActive-large_91,
-.NumericStepper_buttonIncrement__isActive-large_91:hover {
+.NumericStepper_buttonIncrement__isActive-large_8b,
+.NumericStepper_buttonIncrement__isActive-large_8b:hover {
     background-position: 0 -48rem;
 }
-.NumericStepper_buttonIncrement__isDisabled_68,
-.NumericStepper_buttonIncrement__isDisabled_68:hover {
+.NumericStepper_buttonIncrement__isDisabled_6b,
+.NumericStepper_buttonIncrement__isDisabled_6b:hover {
     background-position: 0 100%;
 }
-.NumericStepper_buttonDecrement_c8 {
+.NumericStepper_buttonDecrement_e6 {
     margin-top: -1rem;
     background-position: 100% 0;
 }
-.NumericStepper_buttonDecrement__small_36:hover {
+.NumericStepper_buttonDecrement__small_25:hover {
     background-position: 100% -11rem;
 }
-.NumericStepper_buttonDecrement__medium_d1:hover {
+.NumericStepper_buttonDecrement__medium_b0:hover {
     background-position: 100% -15rem;
 }
-.NumericStepper_buttonDecrement__large_63:hover {
+.NumericStepper_buttonDecrement__large_f9:hover {
     background-position: 100% -24rem;
 }
-.NumericStepper_buttonDecrement__isActive-small_21,
-.NumericStepper_buttonDecrement__isActive-small_21:hover {
+.NumericStepper_buttonDecrement__isActive-small_a0,
+.NumericStepper_buttonDecrement__isActive-small_a0:hover {
     background-position: 100% -22rem;
 }
-.NumericStepper_buttonDecrement__isActive-medium_a3,
-.NumericStepper_buttonDecrement__isActive-medium_a3:hover {
+.NumericStepper_buttonDecrement__isActive-medium_df,
+.NumericStepper_buttonDecrement__isActive-medium_df:hover {
     background-position: 100% -30rem;
 }
-.NumericStepper_buttonDecrement__isActive-large_8b,
-.NumericStepper_buttonDecrement__isActive-large_8b:hover {
+.NumericStepper_buttonDecrement__isActive-large_ac,
+.NumericStepper_buttonDecrement__isActive-large_ac:hover {
     background-position: 100% -48rem;
 }
-.NumericStepper_buttonDecrement__isDisabled_d9,
-.NumericStepper_buttonDecrement__isDisabled_d9:hover {
+.NumericStepper_buttonDecrement__isDisabled_a3,
+.NumericStepper_buttonDecrement__isDisabled_a3:hover {
     background-position: 100% 100%;
+}
+
+.CurrencyStepper_base_8f {
+    position: relative;
+}
+
+.CurrencyStepper_label_9b {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 9rem;
+}
+
+.CurrencyStepper_limit_7c {
+    color: rgba(255, 221, 153, 0.5);
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -24rem;
+    left: 0;
+}
+
+.CurrencyStepper_limit_7c .CurrencyStepper_limitIcon_bf {
+    width: 14rem;
+    height: 14rem;
+    margin-left: 5rem;
+    background: url('R.images.gui.maps.icons.personalExchangeRates.limit.info_1') no-repeat center / 100%;
+    opacity: 0.5;
+}
+
+.CurrencyStepper_limit__exceeded_5d {
+    color: #ee7000;
+}
+
+.CurrencyStepper_limit__exceeded_5d .CurrencyStepper_limitIcon_bf {
+    background-image: url('R.images.gui.maps.icons.personalExchangeRates.limit.info_2');
+    opacity: 1;
+}
+
+.CurrencyStepper_limit__right_08 {
+    flex-direction: row-reverse;
+    top: 0;
+    right: -15rem;
+    bottom: 0;
+    left: auto;
+    transform: translateX(100%);
+}
+
+.CurrencyStepper_limit__right_08 .CurrencyStepper_limitIcon_bf {
+    margin: 0 5rem 0 0;
+}
+
+.CurrencyStepper_limitWrapper__enter_90 {
+    opacity: 0;
+    animation-name: CurrencyStepper_fadeIn_f3;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+.CurrencyStepper_limitWrapper__exit_15 {
+    animation-name: CurrencyStepper_fadeOut_56;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes CurrencyStepper_fadeIn_f3 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes CurrencyStepper_fadeOut_56 {
+    to {
+        opacity: 0;
+    }
+}
+
+.CurrencyStepper_restriction_67 {
+    margin-left: -8rem;
+    transform: translateY(5rem);
+}
+
+.CurrencyStepper_limit__right_08 .CurrencyStepper_restriction_67 {
+    transform: translateY(0);
+}
+
+.CurrencyStepper_restrictionIcon_6f {
+    background-image: url('R.images.gui.maps.icons.personalExchangeRates.limit.info_button');
+}
+
+.CurrencyStepper_restriction_67 .CurrencyStepper_restrictionIconGlow_02 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_glow_button');
+}
+
+.ExceededMessage_wrapper_0d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.ExceededMessage_base_1b {
+    color: #ee7000;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.ExceededMessage_base_1b .ExceededMessage_limitIcon_46 {
+    width: 14rem;
+    height: 14rem;
+    margin-left: 5rem;
+    background: url('R.images.gui.maps.icons.personalExchangeRates.limit.info_2') no-repeat center / 100%;
+}
+
+.ExceededMessage_base_1b + .ExceededMessage_base_1b {
+    position: absolute;
+}
+
+.ExceededMessage_base_1b + .ExceededMessage_base_1b + .ExceededMessage_base_1b {
+    display: none;
+}
+
+.ExceededMessage_hidden_4b {
+    visibility: hidden;
+}
+
+.ExceededMessage_limitWrapper__enter_0a {
+    opacity: 0;
+    animation-name: ExceededMessage_fadeIn_d0;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 0.1s;
+    animation-iteration-count: 1;
+}
+
+.ExceededMessage_limitWrapper__exit_bc {
+    animation-name: ExceededMessage_fadeOut_bd;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes ExceededMessage_fadeIn_d0 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes ExceededMessage_fadeOut_bd {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.ExceededMessage_restriction_33 {
+    margin-left: 1rem;
+    margin-right: -10rem;
+}
+
+.ExceededMessage_restrictionIcon_f1 {
+    background-image: url('R.images.gui.maps.icons.personalExchangeRates.limit.info_button');
+}
+
+.ExceededMessage_restriction_33 .ExceededMessage_restrictionIconGlow_04 {
+    background-image: url('R.images.gui.maps.icons.personalExchangeRates.limit.info_button');
 }
 
 .ExchangePanel_base_bd {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    position: relative;
 }
 
 .ExchangePanel_arrow_62 {
@@ -2369,6 +2618,10 @@ body {
 .ExchangePanel_arrow__small_30 {
     width: 16rem;
     height: 32rem;
+}
+
+.ExchangePanel_excluded_02 {
+    margin-top: 20rem;
 }
 
 .ExchangeDialogFooter_base_45 {

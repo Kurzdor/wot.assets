@@ -40,6 +40,34 @@
     pointer-events: none;
 }
 
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
+}
+
 .colors_blackReal_fc {
     color: #000000;
 }
@@ -148,7 +176,7 @@
 }
 
 .renderers_word_f3 {
-    white-space: nowrap;
+    white-space: pre;
     overflow-wrap: normal;
 }
 
@@ -196,6 +224,10 @@
     pointer-events: none;
 }
 
+.TankmanFolder_folder__postProgression_07 {
+    background-image: url('R.images.gui.maps.icons.tankmen.crew.frames.folder_post_progression');
+}
+
 .TankmanFolder_photoFrame_ae {
     width: 240rem;
     height: 210rem;
@@ -211,6 +243,31 @@
     background-image: url('R.images.gui.maps.icons.tankmen.crew.frames.photo_frame_big');
     top: 20rem;
     left: 56rem;
+}
+
+.TankmanFolder_veteranBlick_14 {
+    width: 88rem;
+    height: 232rem;
+    mix-blend-mode: additive;
+    position: absolute;
+    top: -32rem;
+    left: 49rem;
+}
+
+.TankmanFolder_veteranFrame_9c {
+    width: 280rem;
+    height: 240rem;
+    mix-blend-mode: additive;
+    position: absolute;
+    top: 9rem;
+    left: 78rem;
+}
+
+.TankmanFolder_base__big_60 .TankmanFolder_veteranFrame_9c {
+    width: 320rem;
+    height: 376rem;
+    top: -7rem;
+    left: 31rem;
 }
 
 .TankmanFolder_icon_74 {
@@ -364,17 +421,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateHighlightHover_ff,
 .CButton_stateHighlightActive_35,
 .CButton_stateDisabled_54 {
-    opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-}
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
-.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
-.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-    transition: opacity 0.16s ease-in-out;
 }
 .CButton_stateHighlightHover_ff {
     background-image: linear-gradient(
@@ -383,6 +434,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         rgba(252, 248, 235, 0.1) 50%,
         rgba(255, 255, 255, 0) 100%
     );
+    opacity: 0;
 }
 .CButton_base_40:hover .CButton_stateHighlightHover_ff {
     opacity: 1;
@@ -400,6 +452,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_stateHighlightActive_35 {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+    opacity: 0;
 }
 .CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
     opacity: 1;
@@ -407,10 +460,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateDisabled_54 {
     background-color: rgba(0, 0, 0, 0.25);
     background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
-    background-size: 15rem;
+    background-size: 15rem 15rem;
+    visibility: hidden;
 }
 .CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-    opacity: 1;
+    visibility: inherit;
 }
 .CButton_content_cc {
     display: flex;
@@ -458,7 +512,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .RetrainAndEfficiency_base_71 {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
@@ -486,15 +539,21 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-left: 14rem;
 }
 
+.mediaExtraLarge .RetrainAndEfficiency_skillsEfficiencyLabel_45 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
 .RetrainAndEfficiency_skillsEfficiencyLabel__red_e9 {
     color: #ff2717;
 }
 
 .RetrainAndEfficiency_skillsEfficiencyRateContainer_5c {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .RetrainAndEfficiency_skillsEfficiencyNumber_9a {
@@ -502,6 +561,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
+}
+
+.mediaExtraLarge .RetrainAndEfficiency_skillsEfficiencyNumber_9a {
+    color: #e9e2bf;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .RetrainAndEfficiency_skillsEfficiencyNumber__red_a1 {
@@ -520,99 +586,152 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 2rem;
 }
 
+.mediaExtraLarge .RetrainAndEfficiency_skillsEfficiencyInfoIcon_76 {
+    background-image: url('R.images.gui.maps.icons.tankmen.crew.information_big');
+}
+
 .CurrentVehicleTrain_base_22 {
     display: flex;
-    flex-direction: row;
     height: 20rem;
-    position: relative;
 }
+
 .CurrentVehicleTrain_currentVehicle_9d {
-    color: rgba(242, 242, 247, 0.6);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
 }
+
+.mediaExtraLarge .CurrentVehicleTrain_currentVehicle_9d {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
 .CurrentVehicleTrain_currentVehicleName_19 {
     color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
 }
+
+.mediaExtraLarge .CurrentVehicleTrain_currentVehicleName_19 {
+    color: #e9e2bf;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
 .CurrentVehicleTrain_currentVehicleName__isPremium_86 {
     color: #ffc363;
 }
+
 .CurrentVehicleTrain_retrainContainer_6a {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    position: relative;
 }
+
 .CurrentVehicleTrain_retrainBtnContainer_00 {
     width: 120rem;
     height: 20rem;
     margin-left: 12rem;
-    position: relative;
 }
-.CurrentVehicleTrain_discountIcon_04 {
-    width: 80rem;
-    height: 45rem;
-    background: url('R.images.gui.maps.icons.tankmen.crew.discount_retrain') no-repeat center / contain;
-    position: absolute;
-    top: -13rem;
-    right: -35rem;
-}
-.CurrentVehicleTrain_discountIcon__forText_d9 {
-    top: -10rem;
-    right: -30rem;
-}
+
 .CurrentVehicleTrain_retrainBtn_3e {
-    width: 120rem;
-    height: 20rem;
-}
-.CurrentVehicleTrain_frameGlow_80 {
-    width: 120rem;
-    height: 20rem;
+    width: 100%;
+    height: 100%;
     border: 1rem solid #ffdd99;
-    border-radius: 2rem;
-    filter: drop-shadow(0 0 4rem rgba(255, 127, 0, 0.25)) drop-shadow(0 0 8rem #ff2a00) drop-shadow(0 0 15rem #e52);
-    position: absolute;
-    top: 1rem;
-    left: 0;
+    box-shadow:
+        0 0 4rem 0 rgba(255, 127, 0, 0.25),
+        0 0 8rem 0 rgba(255, 42, 0, 0.5),
+        0 0 15rem 0 rgba(238, 85, 34, 0.3);
 }
+
 .CurrentVehicleTrain_discountContainer_24 {
     display: flex;
     position: relative;
 }
+
 .CurrentVehicleTrain_discountText_45 {
     color: #ffdd99;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
-    display: flex;
     margin-left: 14rem;
     position: relative;
 }
 
+.CurrentVehicleTrain_retrainDiscountIcon_91,
+.CurrentVehicleTrain_penaltyDiscountIcon_33 {
+    width: 80rem;
+    height: 45rem;
+    background: url('R.images.gui.maps.icons.tankmen.crew.discount_retrain') no-repeat center / contain;
+    position: absolute;
+    z-index: -1;
+}
+
+.CurrentVehicleTrain_penaltyDiscountIcon_33 {
+    top: -13rem;
+    right: -35rem;
+}
+
+.CurrentVehicleTrain_retrainDiscountIcon_91 {
+    top: -10rem;
+    right: -30rem;
+}
+
 .Name_base_2d {
-    color: #f2f2f7;
-    font-size: 28rem;
-    font-weight: 700;
-    line-height: 1.1;
     display: flex;
+    margin-top: 4rem;
     position: relative;
 }
 
 .mediaMedium .Name_base_2d {
-    font-size: 36rem;
+    margin-top: 2rem;
 }
 
-.Name_label_31 {
-    line-height: 1.2;
+.mediaExtraLarge .Name_base_2d {
+    margin-top: 6rem;
+}
+
+.Name_labelWrapper_a0 {
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaMedium .Name_labelWrapper_a0 {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.Name_labelWrapper_a0 {
+    position: relative;
+}
+
+.Name_labelHiglight_7d {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-shadow:
+        0 0 14rem rgba(255, 153, 0, 1),
+        0 0 4rem rgba(251, 120, 0, 0.63);
+    opacity: 0.8;
 }
 
 .Name_voiceButton_00 {
     width: 34rem;
     height: 24rem;
     position: absolute;
-    top: 50%;
-    right: -14rem;
-    transform: translate(100%, -50%);
+    top: -3rem;
+    right: -48rem;
 }
 
 .Name_soundIcon_2a {
@@ -621,22 +740,88 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: url('R.images.gui.maps.icons.tankmen.crew.sound') no-repeat center / contain;
 }
 
+.Name_animationGlow_08 {
+    width: 778rem;
+    height: 438rem;
+    background: url('R.images.gui.maps.icons.crew.profile.glow_spot_white') no-repeat center / contain;
+    position: absolute;
+    top: -200rem;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.RoleIcon_base_51 {
+    background: no-repeat center / contain;
+}
+
+.RoleIcon_base__small_68 {
+    width: 13rem;
+    height: 13rem;
+}
+
+.RoleIcon_base__c_14x14_8f {
+    width: 14rem;
+    height: 14rem;
+}
+
+.RoleIcon_base__c_18x18_0b {
+    width: 18rem;
+    height: 18rem;
+}
+
+.RoleIcon_base__c_24x24_new_fe,
+.RoleIcon_base__c_24x24_52 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.RoleIcon_base__c_30x30_red_85,
+.RoleIcon_base__c_30x30_e9 {
+    width: 30rem;
+    height: 30rem;
+}
+
+.RoleIcon_base__c_40x40_99 {
+    width: 40rem;
+    height: 40rem;
+}
+
+.RoleIcon_base__medium_5d {
+    width: 33rem;
+    height: 33rem;
+}
+
+.RoleIcon_base__white_2a {
+    width: 44rem;
+    height: 44rem;
+}
+
+.RoleIcon_base__big_b4 {
+    width: 60rem;
+    height: 60rem;
+}
+
 .Role_base_e0 {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    position: relative;
+    height: 24rem;
+}
+
+.mediaMedium .Role_base_e0 {
+    margin-top: 0;
+}
+
+.mediaExtraLarge .Role_base_e0 {
+    align-items: center;
 }
 
 .Role_role_2a {
     display: flex;
+    align-items: center;
 }
 
-.Role_roleIcon_e6 {
-    width: 18rem;
-    height: 18rem;
-    margin: 2rem 6rem 0 0;
-    background: no-repeat center / contain;
+.mediaExtraLarge .Role_role_2a {
+    align-items: flex-end;
 }
 
 .Role_roleName_79 {
@@ -644,63 +829,132 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
+    margin: 2rem 6rem;
+}
+
+.mediaExtraLarge .Role_roleName_79 {
+    color: #e9e2bf;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 1rem;
 }
 
 .Role_commanderFeature_e2 {
     display: flex;
     align-items: center;
-    height: 18rem;
-    margin-top: 2rem;
 }
 
-.Role_sense_21 {
-    width: 24rem;
-    height: 24rem;
-    background: url('R.images.gui.maps.icons.tankmen.skills.medium.commander_sixthSense') no-repeat center / contain;
-}
-
+.Role_sense_21,
 .Role_commanderBonus_99 {
     width: 24rem;
     height: 24rem;
-    background: url('R.images.gui.maps.icons.tankmen.skills.medium.commander_bonus') no-repeat center / contain;
+    background: no-repeat center / contain;
+}
+
+.mediaExtraLarge .Role_sense_21,
+.mediaExtraLarge .Role_commanderBonus_99 {
+    width: 34rem;
+    height: 34rem;
+}
+
+.Role_sense_21 {
+    background-image: url('R.images.gui.maps.icons.tankmen.skills.medium.commander_sixthSense');
+}
+
+.mediaExtraLarge .Role_sense_21 {
+    background-image: url('R.images.gui.maps.icons.tankmen.skills.big.commander_sixthSense');
+}
+
+.Role_commanderBonus_99 {
+    background-image: url('R.images.gui.maps.icons.tankmen.skills.medium.commander_bonus');
+}
+
+.mediaExtraLarge .Role_commanderBonus_99 {
+    background-image: url('R.images.gui.maps.icons.tankmen.skills.big.commander_bonus');
+}
+
+.FlagIcon_base_25 {
+    background: no-repeat top center / cover;
+}
+
+.FlagIcon_base__c_1080x454_6c {
+    width: 1080rem;
+    height: 454rem;
+}
+
+.FlagIcon_base__c_240x118_92 {
+    width: 240rem;
+    height: 118rem;
+}
+
+.FlagIcon_base__c_155x31_41 {
+    width: 155rem;
+    height: 31rem;
+}
+
+.VehicleTypeIcon_base_80 {
+    background: no-repeat center / contain;
+}
+
+.VehicleTypeIcon_base__big_01 {
+    width: 83rem;
+    height: 74rem;
+}
+
+.VehicleTypeIcon_base__c_44x44_80 {
+    width: 44rem;
+    height: 44rem;
+}
+
+.VehicleTypeIcon_base__c_48x48_specSlot_c4 {
+    width: 48rem;
+    height: 48rem;
+}
+
+.VehicleTypeIcon_base__c_60x54_08 {
+    width: 60rem;
+    height: 54rem;
 }
 
 .SpecializationSlots_base_1a {
     display: flex;
+    margin: 7rem 0 15rem;
 }
 
-.SpecializationSlots_frame_85 {
+.mediaExtraLarge .SpecializationSlots_base_1a {
+    margin: 5rem 0 21rem;
+}
+
+.SpecializationSlots_frame_85,
+.SpecializationSlots_frameChange_c6 {
     display: flex;
-    width: 150rem;
+    width: 170rem;
     height: 33rem;
     border: 1rem solid rgba(242, 242, 247, 0.1);
     border-radius: 2rem;
     position: relative;
 }
 
-.SpecializationSlots_frame__first_23 {
+.SpecializationSlots_frameChange_c6 {
     margin-right: 10rem;
     cursor: pointer;
 }
 
-.SpecializationSlots_frame__crewLocked_de {
-    cursor: default;
-}
-
-.SpecializationSlots_darkFrame_34 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: none;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.SpecializationSlots_frame__hover_06 .SpecializationSlots_darkFrame_34 {
+.SpecializationSlots_frameChange_c6:hover .SpecializationSlots_darkFrame_34 {
     display: block;
 }
 
+.SpecializationSlots_frameChange_c6:hover .SpecializationSlots_shadow_4a,
+.SpecializationSlots_frameChange_c6:hover .SpecializationSlots_arrows_6e {
+    display: flex;
+}
+
+.SpecializationSlots_frameChange_c6:hover .SpecializationSlots_info_7c {
+    display: none;
+}
+
+.SpecializationSlots_darkFrame_34,
 .SpecializationSlots_shadow_4a {
     position: absolute;
     top: 0;
@@ -708,11 +962,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     bottom: 0;
     left: 0;
     display: none;
-    background: rgba(0, 0, 0, 0.4);
 }
 
-.SpecializationSlots_frame__hover_06 .SpecializationSlots_shadow_4a {
-    display: flex;
+.SpecializationSlots_darkFrame_34 {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.SpecializationSlots_shadow_4a {
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .SpecializationSlots_arrows_6e {
@@ -721,10 +978,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: absolute;
     top: -3rem;
     left: 7rem;
-}
-
-.SpecializationSlots_frame__hover_06 .SpecializationSlots_arrows_6e {
-    display: flex;
 }
 
 .SpecializationSlots_arrowsIcon_fc {
@@ -763,7 +1016,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .SpecializationSlots_vehicleTypeIcon_77 {
     width: 48rem;
     height: 48rem;
-    background: no-repeat center / contain;
     position: relative;
     left: -10rem;
 }
@@ -775,14 +1027,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     pointer-events: none;
 }
 
-.SpecializationSlots_frame__hover_06 .SpecializationSlots_info_7c {
-    display: none;
-}
-
 .SpecializationSlots_flag_84 {
-    width: 148rem;
-    height: 31rem;
-    background: no-repeat center / cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -809,285 +1054,607 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .SpecializationSlots_premVehicleTypeIcon_c9 {
     width: 28rem;
     height: 28rem;
-    background: no-repeat center / contain;
     background-size: 48rem 48rem;
     position: relative;
     top: -5rem;
 }
 
-.TankmanInfoApp_base_8a {
+.TankmanInfoApp_base_bc {
     display: flex;
-    flex-direction: row;
-    min-width: 550rem;
+    height: 232rem;
+    padding-left: 24rem;
     position: relative;
 }
 
-.mediaMedium .TankmanInfoApp_base_8a {
-    min-width: 878rem;
+.mediaMedium .TankmanInfoApp_base_bc {
+    height: 244rem;
+    padding-left: 330rem;
 }
 
-.TankmanInfoApp_tankmanFolder_2d {
+.mediaExtraLarge .TankmanInfoApp_base_bc {
+    height: 282rem;
+    padding-left: 344rem;
+}
+
+.TankmanInfoApp_tankmanFolder_6d {
     display: none;
-    position: relative;
 }
 
-.mediaMedium .TankmanInfoApp_tankmanFolder_2d {
+.mediaMedium .TankmanInfoApp_tankmanFolder_6d {
     display: flex;
+    position: absolute;
+    top: -65rem;
+    left: 0;
 }
 
-.TankmanInfoApp_descriptionBlock_f2 {
+.mediaExtraLarge .TankmanInfoApp_tankmanFolder_6d {
+    top: -44rem;
+}
+
+.TankmanInfoApp_descriptionBlock_00 {
     display: flex;
     flex-direction: column;
 }
 
-.mediaMedium .TankmanInfoApp_descriptionBlock_f2 {
-    margin: 63rem 0 0 -33rem;
-}
-
-.mediaLarge .TankmanInfoApp_descriptionBlock_f2 {
-    margin-left: -31rem;
-}
-
-.TankmanInfoApp_role_71 {
-    margin-top: -1rem;
-}
-
-.mediaMedium .TankmanInfoApp_role_71 {
-    margin-top: 0;
-}
-
-.TankmanInfoApp_name_68 {
-    margin-top: 2rem;
-}
-
-.mediaMedium .TankmanInfoApp_name_68 {
-    margin-top: -1rem;
-}
-
-.TankmanInfoApp_description_a6 {
-    color: rgba(242, 242, 247, 0.5);
+.TankmanInfoApp_description_3c {
+    color: rgba(242, 242, 247, 0.6);
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
-    width: 550rem;
-    height: 60rem;
+    width: 544rem;
+    max-height: 60rem;
     margin-top: 6rem;
 }
 
-.mediaMedium .TankmanInfoApp_description_a6 {
+.mediaMedium .TankmanInfoApp_description_3c {
+    width: 526rem;
     margin-top: 9rem;
 }
 
-.mediaExtraLarge .TankmanInfoApp_description_a6 {
-    width: 668rem;
-    height: 65rem;
+.mediaLarge .TankmanInfoApp_description_3c {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    width: 662rem;
+}
+
+.mediaExtraLarge .TankmanInfoApp_description_3c {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 952rem;
     font-size: 16rem;
 }
 
-.TankmanInfoApp_currentVehicle_06 {
-    margin-top: 13rem;
-}
-
-.TankmanInfoApp_nativeVehicle_5c {
+.TankmanInfoApp_specializationLabel_a3 {
     color: rgba(242, 242, 247, 0.6);
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
+    margin-top: 29rem;
+}
+
+.mediaMedium .TankmanInfoApp_specializationLabel_a3 {
     margin-top: 27rem;
 }
 
-.TankmanInfoApp_nativeVehicle__withDescription_03 {
-    margin-top: 14rem;
+.mediaExtraLarge .TankmanInfoApp_specializationLabel_a3 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 25rem;
 }
 
-.mediaExtraLarge .TankmanInfoApp_nativeVehicle__withDescription_03 {
-    margin-top: 10rem;
+.TankmanInfoApp_specializationLabel__withDescription_2e {
+    margin-top: 21rem;
 }
 
-.TankmanInfoApp_slots_a1 {
-    margin-top: 9rem;
+.mediaMedium .TankmanInfoApp_specializationLabel__withDescription_2e {
+    margin-top: 21rem;
 }
 
-.TankmanInfoWrapper_base_5a {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+.mediaExtraLarge .TankmanInfoApp_specializationLabel__withDescription_2e {
+    margin-top: 25rem;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBar_base_45 {
     width: 100%;
-    height: 100%;
-    margin: 80rem 0 0 425rem;
+    height: 12rem;
     position: relative;
 }
-
-.mediaSmall .TankmanInfoWrapper_base_5a {
-    align-items: center;
-    margin-left: 0;
+.ProgressBar_base__small_df {
+    height: 2rem;
 }
-
-.mediaMedium .TankmanInfoWrapper_base_5a {
-    margin-top: 47rem;
-}
-
-.mediaLarge .TankmanInfoWrapper_base_5a {
-    margin-top: 73rem;
-}
-
-.mediaExtraLarge .TankmanInfoWrapper_base_5a {
-    margin-top: 145rem;
-}
-.TankmanInfoWrapper_content_b4 {
-    display: flex;
-    flex-direction: column;
-    width: 602rem;
+.ProgressBar_background_51 {
+    width: 100%;
+    max-width: 8001px;
     height: 100%;
-    position: relative;
-}
-.mediaMedium .TankmanInfoWrapper_content_b4 {
-    width: 944rem;
-}
-.mediaLarge .TankmanInfoWrapper_content_b4 {
-    width: 1060rem;
-}
-.TankmanInfoWrapper_tankmanInfo_80 {
+    background-image: var(--progress-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
     position: absolute;
     top: 0;
     left: 0;
 }
-.mediaSmall .TankmanInfoWrapper_tankmanInfo_80 {
-    left: 24rem;
+.ProgressBar_background__small_46 {
+    height: 2rem;
 }
-.mediaMedium .TankmanInfoWrapper_tankmanInfo_80 {
-    left: 3rem;
+.ProgressBar_lineWrapper_6a {
+    display: flex;
+    flex: 1;
 }
-.mediaLarge .TankmanInfoWrapper_tankmanInfo_80 {
-    left: 9rem;
+
+.ProgressBarBlink_base_24 {
+    width: 60rem;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    pointer-events: none;
 }
-.TankmanInfoWrapper_children_66 {
+
+.ProgressBarBlink_base__small_0f {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressLineImpose_base_80 {
+    max-width: 8001px;
+    height: 100%;
+    background-color: var(--progress-line-base);
+    position: relative;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressLineImpose_base__disabled_cc {
+    background-color: var(--progress-line-disabled);
+}
+.ProgressLineImpose_base__finished_d4 {
+    background-color: var(--progress-line-finished);
+}
+.ProgressLineImpose_base__withoutBounce_56 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+.ProgressLineImpose_pattern_1c {
+    max-width: 8001px;
+    background-image: var(--progress-pattern-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
+    top: 0;
+    bottom: 0;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
+    background-image: var(--progress-pattern-disabled);
+    left: 0;
+}
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
+    background-image: var(--progress-pattern-finished);
+}
+.ProgressLineImpose_gradient_35 {
+    max-width: 8001px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75));
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
+    top: 0;
+    bottom: 0;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
+    display: none;
+}
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5));
+}
+.ProgressLineImpose_glow_a5 {
+    width: 60rem;
+    max-width: 8001px;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.ProgressLineImpose_glow__left_d8 {
+    left: 1rem;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+    display: none;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaSimple_base_6c {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ProgressBarDeltaSimple_delta_99 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1), cubic-bezier(0.21, 0.61, 0.35, 1);
+    transition-property: width, transform;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaGrow_base_7e {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+.ProgressBarDeltaGrow_glow_68 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #ffffff;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #f2f2f7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #fefeec;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #e9e2bf;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8c8c7e;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362e;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #ff2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #b70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #feab34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #ee7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #ffdd99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #cbac77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80d43a;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7ab300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #ccffff;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09e2ff;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #ced9d9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #ffc363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #c9c9b6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #a29b70;
+}
+
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8c8c7e;
+}
+
+.PostProgressionWidget_base_6f {
+    display: flex;
+    width: 178rem;
+    height: 38rem;
+    border: 1rem solid rgba(255, 255, 255, 0.1);
+    border-radius: 4rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    top: 324rem;
+    right: 24rem;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.PostProgressionWidget_base_6f:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mediaMedium .PostProgressionWidget_base_6f {
+    width: 270rem;
+    top: 376rem;
+    right: 50rem;
+}
+
+.mediaLarge .PostProgressionWidget_base_6f {
+    width: 312rem;
+    height: 42rem;
+    top: 421rem;
+    right: 48rem;
+}
+
+.mediaExtraLarge .PostProgressionWidget_base_6f {
+    width: 388rem;
+    height: 46rem;
+    top: 458rem;
+    right: 92rem;
+}
+
+.PostProgressionWidget_animationGlow_13 {
+    width: 778rem;
+    height: 438rem;
+    background: url('R.images.gui.maps.icons.crew.profile.glow_spot_white') no-repeat center / contain;
+    position: absolute;
+    top: -200rem;
+    left: -270rem;
+    pointer-events: none;
+}
+
+.PostProgressionWidget_animationReflectionWrapper_cd {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 4rem;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.PostProgressionWidget_animationReflection_05 {
+    width: 140rem;
+    height: 42rem;
+    background: url('R.images.gui.maps.icons.crew.profile.glow_line_white') no-repeat center / contain;
+    position: absolute;
+    top: -1rem;
+    left: -140rem;
+}
+
+.PostProgressionWidget_progress_64 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-height: calc(100vh - 362rem);
-    margin: 247rem 0 0 -24rem;
-    position: relative;
-}
-.mediaSmall .TankmanInfoWrapper_children_66 {
-    margin-left: 0;
-}
-.mediaMedium .TankmanInfoWrapper_children_66 {
-    max-height: calc(100vh - 413rem);
-    margin-top: 331rem;
-}
-.mediaLarge .TankmanInfoWrapper_children_66 {
-    max-height: calc(100vh - 449rem);
-    margin-top: 341rem;
-}
-.mediaExtraLarge .TankmanInfoWrapper_children_66 {
-    max-height: calc(100vh - 521rem);
+    width: 118rem;
+    margin: 6rem 0 0 9rem;
 }
 
-.ButtonWithDiscountIndicator_base_6c {
-    display: flex;
-    position: relative;
+.mediaMedium .PostProgressionWidget_progress_64 {
+    width: 188rem;
+    margin: 3rem 0 0 15rem;
 }
 
-.ButtonWithDiscountIndicator_discountIndicator_a5 {
-    display: flex;
-    width: 122rem;
-    height: 42rem;
-    background: url('R.images.gui.maps.icons.crew.discount') no-repeat 50% / contain;
+.mediaLarge .PostProgressionWidget_progress_64 {
+    width: 224rem;
+    margin-top: 5rem;
+}
+
+.mediaExtraLarge .PostProgressionWidget_progress_64 {
+    width: 292rem;
+}
+
+.PostProgressionWidget_label_80 {
+    color: #8c8c7e;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.mediaMedium .PostProgressionWidget_label_80 {
+    font-size: 14rem;
+}
+
+.mediaExtraLarge .PostProgressionWidget_label_80 {
+    font-size: 16rem;
+}
+
+.PostProgressionWidget_xpIcon_ab {
+    width: 18rem;
+    height: 18rem;
+    background: url('R.images.gui.maps.icons.library.XpCostIcon_2') no-repeat center / contain;
+}
+
+.mediaMedium .PostProgressionWidget_xpIcon_ab {
+    margin-top: 2rem;
+}
+
+.mediaExtraLarge .PostProgressionWidget_xpIcon_ab {
+    margin-top: 3rem;
+}
+
+.PostProgressionWidget_progressBar_f6 {
+    margin-top: 1rem;
+}
+
+.mediaMedium .PostProgressionWidget_progressBar_f6 {
+    margin-top: 3rem;
+}
+
+.mediaExtraLarge .PostProgressionWidget_progressBar_f6 {
+    margin-top: 6rem;
+}
+
+.PostProgressionWidget_icon_34 {
+    width: 48rem;
+    height: 48rem;
+    background: no-repeat center / cover;
     position: absolute;
-    bottom: -21rem;
+    right: 0;
+    bottom: -1rem;
+    pointer-events: none;
+}
+
+.mediaMedium .PostProgressionWidget_icon_34 {
+    width: 70rem;
+    height: 70rem;
+    right: -7rem;
+    bottom: -7rem;
+}
+
+.mediaLarge .PostProgressionWidget_icon_34 {
+    right: -1rem;
+}
+
+.mediaExtraLarge .PostProgressionWidget_icon_34 {
+    width: 80rem;
+    height: 80rem;
+}
+
+.PostProgressionWidget_warning_6d {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 172rem;
+    height: 100%;
+    position: absolute;
+    bottom: -1rem;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.PostProgressionWidget_warningGlow_d3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.gui.maps.icons.crew.postProgression.widget_glow_small') no-repeat center / contain;
+}
+
+.mediaLarge .PostProgressionWidget_warningGlow_d3 {
+    background-image: url('R.images.gui.maps.icons.crew.postProgression.widget_glow_large');
+}
+
+.mediaExtraLarge .PostProgressionWidget_warningGlow_d3 {
+    background-image: url('R.images.gui.maps.icons.crew.postProgression.widget_glow_extra_large');
+}
+
+.PostProgressionWidget_warningIcon_b5 {
+    width: 23rem;
+    height: 20rem;
+    margin-bottom: -9rem;
+    background: url('R.images.gui.maps.icons.crew.postProgression.warning_icon') no-repeat center / contain;
+    z-index: 1;
     pointer-events: none;
-}
-
-.ButtonWithDiscountIndicator_discountIndicator__small_d6 {
-    width: 41rem;
-    height: 42rem;
-    margin-left: -20rem;
-    background: url('R.images.gui.maps.icons.crew.discountSmall') no-repeat 50% / contain;
-    transform: none;
-}
-
-.Buttons_base_ec {
-    display: flex;
-    flex-direction: row;
-    height: 24rem;
-    margin: -1rem 2rem 0 0;
-}
-
-.mediaMedium .Buttons_base_ec {
-    margin: -2rem 0 0;
-}
-
-.Buttons_increaseBtnContainer_e9 {
-    margin-right: 12rem;
-    position: relative;
-}
-
-.mediaMedium .Buttons_increaseBtnContainer_e9 {
-    margin-right: 10rem;
-}
-
-.mediaLarge .Buttons_increaseBtnContainer_e9 {
-    margin-right: 12rem;
-}
-
-.Buttons_increaseButton_75 {
-    min-width: 130rem;
-    height: 100%;
-    padding: 0 15rem;
-    position: relative;
-}
-
-.mediaMedium .Buttons_increaseButton_75 {
-    min-width: 130rem;
-}
-
-.mediaLarge .Buttons_increaseButton_75 {
-    min-width: 147rem;
-}
-
-.Buttons_resetButton_0a {
-    min-width: 130rem;
-    height: 100%;
-    padding: 0 15rem;
-    position: relative;
-}
-
-.mediaMedium .Buttons_resetButton_0a {
-    min-width: 130rem;
-}
-
-.mediaLarge .Buttons_resetButton_0a {
-    min-width: 147rem;
-}
-
-.Buttons_resetButton__disabled_b9 {
-    opacity: 0.6;
-    pointer-events: none;
-}
-
-.Buttons_resetButton__small_fb {
-    min-width: 34rem;
-    padding: 0;
-}
-
-.Buttons_resetIcon_fa {
-    width: 24rem;
-    height: 24rem;
-    margin-top: 2rem;
-    background: url('R.images.gui.maps.icons.tankmen.crew.refresh') no-repeat center / contain;
-}
-
-.Buttons_resetButton__disabled_b9 .Buttons_resetIcon_fa {
-    opacity: 0.5;
-}
-
-.Buttons_buttonWrapper_de {
-    display: flex;
 }
 
 .HorizontalBar_base_49 {
@@ -1295,138 +1862,356 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex: 1;
 }
 
-.ScrollWithLips_base_81 {
+.ScrollWithLips_base_a2 {
     width: 100%;
     position: relative;
 }
 
-.ScrollWithLips_fadeTop_3d {
-    display: flex;
-    height: 20rem;
-    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0) 100%);
-    opacity: 0.2;
-    position: absolute;
-    right: 0;
-    left: 0;
-    pointer-events: none;
-    top: -1rem;
-}
-
-.ScrollWithLips_fadeBottom_44 {
-    display: flex;
-    height: 20rem;
-    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0) 100%);
-    opacity: 0.2;
-    position: absolute;
-    right: 0;
-    left: 0;
-    pointer-events: none;
-    bottom: -1rem;
-    transform: rotate(180deg);
-}
-
-.ScrollWithLips_bar_52 {
+.ScrollWithLips_bar_67 {
     position: absolute;
     top: 0;
     right: -27rem;
 }
 
-.ScrollWithLips_content_fb {
+.ScrollWithLips_content_6d {
     height: auto;
     max-height: 100%;
 }
 
-.RoleIcon_base_51 {
+.ScrollWithLips_fadeContainerTop_6d {
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: -1rem;
+}
+
+.ScrollWithLips_fadeContainerBottom_43 {
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.ScrollWithLips_fade_5e {
+    width: 100%;
+    height: 30rem;
+    background: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.5) 40%,
+        rgba(0, 0, 0, 0.3) 60%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    opacity: 0.3;
+}
+
+.Countdown_base_fe {
+    display: flex;
+    align-items: center;
+}
+
+.Countdown_icon_8b {
+    width: 32rem;
+    height: 32rem;
     background: no-repeat center / contain;
 }
 
-.RoleIcon_base__small_68 {
-    width: 13rem;
-    height: 13rem;
+.Countdown_description_8d {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
 }
 
-.RoleIcon_base__c_14x14_8f {
-    width: 14rem;
-    height: 14rem;
-}
-
-.RoleIcon_base__c_18x18_0b {
-    width: 18rem;
-    height: 18rem;
-}
-
-.RoleIcon_base__c_24x24_new_fe,
-.RoleIcon_base__c_24x24_52 {
-    width: 24rem;
-    height: 24rem;
-}
-
-.RoleIcon_base__c_30x30_red_85,
-.RoleIcon_base__c_30x30_e9 {
-    width: 30rem;
-    height: 30rem;
-}
-
-.RoleIcon_base__medium_5d {
-    width: 33rem;
-    height: 33rem;
-}
-
-.RoleIcon_base__white_2a {
-    width: 44rem;
-    height: 44rem;
-}
-
-.RoleIcon_base__big_b4 {
-    width: 60rem;
-    height: 60rem;
-}
-
-.SkillRoleIcon_base_6b {
+.ButtonWithDiscountIndicator_base_6c {
     display: flex;
-    opacity: 0.3;
     position: relative;
 }
 
-.Frame_base_05 {
+.ButtonWithDiscountIndicator_discountIndicator_a5 {
+    display: flex;
+    width: 122rem;
+    height: 42rem;
+    background: url('R.images.gui.maps.icons.crew.discount') no-repeat 50% / contain;
+    position: absolute;
+    bottom: -21rem;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.ButtonWithDiscountIndicator_discountIndicator__small_d6 {
+    width: 41rem;
+    height: 42rem;
+    margin-left: -20rem;
+    background: url('R.images.gui.maps.icons.crew.discountSmall') no-repeat 50% / contain;
+    transform: none;
+}
+
+.ButtonsSection_base_9a {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30rem;
+    padding-right: 24rem;
+}
+
+.mediaMedium .ButtonsSection_base_9a {
+    padding-right: 50rem;
+}
+
+.mediaLarge .ButtonsSection_base_9a {
+    margin-top: 40rem;
+    padding-right: 48rem;
+}
+
+.mediaExtraLarge .ButtonsSection_base_9a {
+    margin-top: 40rem;
+    padding-right: 92rem;
+}
+
+.ButtonsSection_base__withBonusRoles_e6 {
+    margin-top: 14rem;
+}
+
+.mediaMedium .ButtonsSection_base__withBonusRoles_e6 {
+    margin-top: 20rem;
+}
+
+.mediaExtraLarge .ButtonsSection_base__withBonusRoles_e6 {
+    margin-top: 40rem;
+}
+
+.ButtonsSection_increaseBtnContainer_6b {
+    margin-right: 12rem;
+}
+
+.mediaMedium .ButtonsSection_increaseBtnContainer_6b {
+    margin-right: 10rem;
+}
+
+.mediaLarge .ButtonsSection_increaseBtnContainer_6b {
+    margin-right: 16rem;
+}
+
+.mediaExtraLarge .ButtonsSection_increaseBtnContainer_6b {
+    margin-right: 20rem;
+}
+
+.ButtonsSection_resetBtnContainer_6f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ButtonsSection_increaseButton_6b,
+.ButtonsSection_resetButton_f2 {
+    width: 130rem;
+    height: 24rem;
+    border-radius: 1rem;
+}
+
+.mediaLarge .ButtonsSection_increaseButton_6b,
+.mediaLarge .ButtonsSection_resetButton_f2 {
+    width: 148rem;
+    height: 30rem;
+}
+
+.mediaExtraLarge .ButtonsSection_increaseButton_6b,
+.mediaExtraLarge .ButtonsSection_resetButton_f2 {
+    width: 184rem;
+    height: 36rem;
+}
+
+.ButtonsSection_increaseButton__accented_a2,
+.ButtonsSection_resetButton__accented_57 {
+    border: 1rem solid #ffdd99;
+    box-shadow:
+        0 0 4rem 0 rgba(255, 127, 0, 0.25),
+        inset 0 0 8rem 0 rgba(255, 42, 0, 0.5),
+        0 0 15rem 0 rgba(238, 85, 34, 0.3);
+}
+
+.ButtonsSection_increaseButton__accented_a2 {
+    border-color: rgba(255, 221, 153, 0.5);
+}
+
+.ButtonsSection_resetButton__disabled_da {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.ButtonsSection_countdown_df {
+    margin: 2rem 0 0 -5rem;
+}
+
+.mediaLarge .ButtonsSection_countdown_df {
+    margin-top: 4rem;
+}
+
+.ButtonsSection_countdownIcon_ff {
+    margin-top: 2rem;
+}
+
+.ButtonsSection_countdownText_a0 {
+    color: #ffdd99;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+}
+
+.QualificationIcon_base_54 {
+    display: none;
+}
+
+.mediaMedium .QualificationIcon_base_54 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 37rem;
+    margin-right: 14rem;
+}
+
+.mediaLarge .QualificationIcon_base_54 {
+    margin-right: 12rem;
+}
+
+.mediaExtraLarge .QualificationIcon_base_54 {
+    width: 40rem;
+    margin-right: 18rem;
+}
+
+.QualificationIcon_base__main_a0 {
+    position: absolute;
+}
+
+.mediaMedium .QualificationIcon_base__main_a0 {
+    margin-right: 0;
+    left: 0;
+}
+
+.mediaExtraLarge .QualificationIcon_base__main_a0 {
+    left: 34rem;
+}
+
+.QualificationIcon_icon_10 {
+    opacity: 0.3;
+}
+
+.QualificationIcon_counters_3a {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -1rem;
+}
+
+.mediaExtraLarge .QualificationIcon_counters_3a {
+    letter-spacing: 0;
+}
+
+.QualificationIcon_current_cd {
+    color: #ffdd99;
+}
+
+.AvailableSkill_base_70 {
+    width: 26rem;
+    height: 26rem;
+    align-self: center;
+    background: url('R.images.gui.maps.icons.crew.profile.plus_icon') no-repeat center / contain;
+    filter: drop-shadow(0 0 32rem #e52) drop-shadow(0 0 30rem rgba(255, 42, 0, 0.8))
+        drop-shadow(0 0 8rem rgba(255, 127, 0, 0.25));
+}
+
+.mediaExtraLarge .AvailableSkill_base_70 {
+    width: 38rem;
+    height: 38rem;
+    background-image: url('R.images.gui.maps.icons.crew.profile.plus_icon_big');
+}
+
+.Animations_base_45 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.Animations_childrenWrapper_01 {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    border: 1rem solid;
-    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
-.Frame_base__gray_7b {
-    border-color: rgba(255, 255, 255, 0.2);
+.Animations_unlockAnimationWrapper_e5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.Frame_base__gray_7b.Frame_base__disabled_39 {
-    border-color: rgba(255, 255, 255, 0.1);
+.Animations_glow_89 {
+    width: 500rem;
+    height: 280rem;
+    background: url('R.images.gui.maps.icons.crew.profile.glow_orange') no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
 }
 
-.Frame_base__red_4c {
-    border-color: rgba(255, 39, 23, 0.6);
+.Animations_base__bonus_34 .Animations_glow_89 {
+    width: 84rem;
+    height: 56rem;
+    background-image: url('R.images.gui.maps.icons.crew.profile.bonus_glow.small');
 }
 
-.Frame_base__red_4c.Frame_base__disabled_39 {
-    border-color: rgba(255, 39, 23, 0.4);
+.mediaMedium .Animations_base__bonus_34 .Animations_glow_89 {
+    width: 130rem;
+    background-image: url('R.images.gui.maps.icons.crew.profile.bonus_glow.medium');
 }
 
-.Frame_base__yellow_b9 {
-    border-color: #feab34;
+.mediaLarge .Animations_base__bonus_34 .Animations_glow_89 {
+    width: 148rem;
+    background-image: url('R.images.gui.maps.icons.crew.profile.bonus_glow.large');
+}
+
+.mediaExtraLarge .Animations_base__bonus_34 .Animations_glow_89 {
+    width: 184rem;
+    height: 80rem;
+    background-image: url('R.images.gui.maps.icons.crew.profile.bonus_glow.extraLarge');
+}
+
+.EmptySkill_base_38 {
+    align-self: center;
+    width: 18rem;
+    height: 22rem;
+    background: url('R.images.gui.maps.icons.crew.profile.lock') no-repeat center / contain;
+}
+
+.mediaExtraLarge .EmptySkill_base_38 {
+    width: 22rem;
+    height: 26rem;
+    background-image: url('R.images.gui.maps.icons.crew.profile.lock_big');
 }
 
 .SkillIcon_base_43 {
     display: flex;
     background: no-repeat center / contain;
     position: relative;
-}
-
-.SkillIcon_base__small_d0 {
-    width: 14rem;
-    height: 14rem;
 }
 
 .SkillIcon_base__c_22x22_14 {
@@ -1449,141 +2234,70 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 52rem;
 }
 
+.SkillIcon_base__c_80x80_79 {
+    width: 80rem;
+    height: 80rem;
+}
+
+.SkillIcon_base__c_120x90_8c {
+    width: 120rem;
+    height: 90rem;
+}
+
 .SkillIcon_base__dialogs_e5 {
     width: 180rem;
     height: 135rem;
 }
 
-.MainInfo_base_a2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.SelectedSkill_base_53 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
-.mediaMedium .MainInfo_skillIcon_1a {
-    bottom: 16rem;
+
+.SelectedSkill_base__main_dc {
+    justify-content: center;
 }
-.MainInfo_base__disabled_e2 .MainInfo_skillIcon_1a {
-    opacity: 0.5;
+
+.mediaMedium .SelectedSkill_base__main_dc {
+    justify-content: flex-start;
+    padding-top: 8rem;
 }
-.MainInfo_base__blocked_47 .MainInfo_skillIcon_1a {
-    opacity: 0.3;
+
+.mediaExtraLarge .SelectedSkill_base__main_dc {
+    padding-top: 4rem;
 }
-.MainInfo_skillName_63 {
-    color: #f2f2f7;
+
+.SelectedSkill_name_79 {
+    color: #ffffff;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
-    display: none;
-    justify-content: center;
-    line-height: 120%;
+    padding: 0 6rem;
+    line-height: 18rem;
     text-align: center;
-    opacity: 0.5;
-    position: absolute;
-    top: 61rem;
-    right: 5rem;
-    left: 5rem;
 }
-.MainInfo_base__inProgress_29 .MainInfo_skillName_63,
-.MainInfo_base__learned_1e .MainInfo_skillName_63,
-.MainInfo_base__hover_1e .MainInfo_skillName_63 {
-    opacity: 0.8;
+
+.SelectedSkill_name__progress_64 {
+    color: #ffdd99;
 }
-.MainInfo_base__inProgress_29 .MainInfo_skillName_63 {
-    color: #e9e2bf;
-}
-.MainInfo_base__disabled_e2 .MainInfo_skillName_63 {
-    opacity: 0.5;
-}
-.MainInfo_base__blocked_47 .MainInfo_skillName_63 {
-    opacity: 0.3;
-}
-.mediaMedium .MainInfo_skillName_63 {
+
+.SkillContent_base_7b {
     display: flex;
 }
 
-.StateBg_base_2d {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.StateBg_progressBar_eb {
-    background-color: rgba(255, 92, 0, 0.5);
-    position: absolute;
-    right: 1rem;
-    bottom: 0;
-    left: 1rem;
-}
-
-.StateBg_base__isLowEfficiency_2c .StateBg_progressBar_eb {
-    background-color: rgba(255, 17, 0, 0.2);
-}
-
-.StateBg_disabledPattern_ab {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    bottom: 1rem;
-    left: 1rem;
-    background: rgba(0, 0, 0, 0.3) url('R.images.gui.maps.icons.library.disabled_pattern_27x27') center;
+.SkillContent_base__disabled_34 {
     opacity: 0.5;
 }
 
-.StateBg_backPlate_05 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.StateBg_base__learned_77 .StateBg_backPlate_05 {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.StateBg_base__inProgress_f7 .StateBg_backPlate_05 {
-    box-shadow: inset 0 0 30rem rgba(255, 122, 0, 0.3);
-    background: linear-gradient(0deg, rgba(255, 92, 0, 0.1), rgba(255, 92, 0, 0.1)), rgba(0, 0, 0, 0.6);
-}
-
-.StateBg_base__isLowEfficiency_2c .StateBg_backPlate_05,
-.StateBg_base__inProgress_f7.StateBg_base__isLowEfficiency_2c .StateBg_backPlate_05 {
-    box-shadow: inset 0 0 20rem rgba(255, 17, 0, 0.5);
-}
-
-.StateBg_base__isLowEfficiency_2c.StateBg_base__inProgress_f7 .StateBg_backPlate_05 {
-    background: none;
-}
-
-.StateBg_hover_38 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-.StateBg_base__inProgress_f7 .StateBg_hover_38 {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
 .Skill_base_8e {
+    display: flex;
+    justify-content: center;
     width: 84rem;
     height: 80rem;
+    border: 1rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 4rem;
     position: relative;
-}
-
-.Skill_base__clickable_6c {
-    cursor: pointer;
 }
 
 .mediaMedium .Skill_base_8e {
@@ -1594,343 +2308,552 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .mediaLarge .Skill_base_8e {
     width: 148rem;
 }
-.Skill_progressText_df {
-    color: #feab34;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
+
+.mediaExtraLarge .Skill_base_8e {
+    width: 184rem;
+    height: 128rem;
+}
+
+.Skill_base_8e.Skill_base__bonus_8a {
+    border: none;
+}
+
+.Skill_base_8e.Skill_base__bonus_8a,
+.Skill_base_8e .Skill_bonusBorder_4e {
+    width: 84rem;
+    height: 56rem;
+}
+
+.mediaMedium .Skill_base_8e.Skill_base__bonus_8a,
+.mediaMedium .Skill_base_8e .Skill_bonusBorder_4e {
+    width: 130rem;
+}
+
+.mediaLarge .Skill_base_8e.Skill_base__bonus_8a,
+.mediaLarge .Skill_base_8e .Skill_bonusBorder_4e {
+    width: 148rem;
+}
+
+.mediaExtraLarge .Skill_base_8e.Skill_base__bonus_8a,
+.mediaExtraLarge .Skill_base_8e .Skill_bonusBorder_4e {
+    width: 184rem;
+    height: 80rem;
+}
+
+.Skill_base__withAnimation_38 {
+    transition: all 0.6s ease-in-out;
+    pointer-events: none;
+}
+
+.Skill_base__progress_1f {
+    border-color: rgba(255, 221, 153, 0.6);
+    box-shadow:
+        0 0 4rem 0 rgba(255, 127, 0, 0.25),
+        inset 0 0 8rem 0 rgba(255, 42, 0, 0.5),
+        0 0 15rem 0 rgba(238, 85, 34, 0.3);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.Skill_base__progress_1f.Skill_base__selected_d2 {
+    border-color: rgba(249, 201, 111, 0.5);
+    box-shadow: none;
+    background-color: rgba(255, 140, 109, 0.15);
+}
+
+.Skill_base__disabled_9d,
+.Skill_base__enabled_fd {
+    cursor: pointer;
+}
+
+.Skill_base__disabled_9d.Skill_base__full_33 {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.Skill_base__enabled_fd.Skill_base__full_33.Skill_base__selected_d2 {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.Skill_base__enabled_fd.Skill_base__full_33.Skill_base__selected_d2:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.Skill_base__enabled_fd.Skill_base__progress_1f:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.Skill_base__enabled_fd.Skill_base__progress_1f.Skill_base__selected_d2:hover {
+    background-color: rgba(255, 189, 171, 0.24);
+}
+
+.Skill_base__enabled_fd.Skill_base__progress_1f.Skill_base__inefficient_2d {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.Skill_base__enabled_fd.Skill_base__progress_1f.Skill_base__inefficient_2d:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.Skill_base__enabled_fd.Skill_base__progress_1f.Skill_base__selected_d2.Skill_base__inefficient_2d,
+.Skill_base__enabled_fd.Skill_base__progress_1f.Skill_base__selected_d2.Skill_base__inefficient_2d:hover,
+.Skill_base__enabled_fd.Skill_base__full_33.Skill_base__selected_d2.Skill_base__inefficient_2d,
+.Skill_base__enabled_fd.Skill_base__full_33.Skill_base__selected_d2.Skill_base__inefficient_2d:hover {
+    border-color: rgba(255, 39, 23, 0.6);
+    box-shadow: inset 0 0 40rem 0 rgba(255, 0, 0, 0.2);
+}
+
+.Skill_bonusBorder_4e {
     position: absolute;
     top: 0;
-    right: 3rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 1rem;
+    background: url('R.images.gui.maps.icons.crew.profile.dashed_default_small') no-repeat center / contain;
 }
-.Skill_progressText__lowEfficiency_f9 {
+
+.mediaMedium .Skill_bonusBorder_4e {
+    background-image: url('R.images.gui.maps.icons.crew.profile.dashed_default_medium');
+}
+
+.mediaLarge .Skill_bonusBorder_4e {
+    background-image: url('R.images.gui.maps.icons.crew.profile.dashed_default_large');
+}
+
+.mediaExtraLarge .Skill_bonusBorder_4e {
+    background-image: url('R.images.gui.maps.icons.crew.profile.dashed_default_extraLarge');
+}
+
+.Skill_bonusBorder__progress_12 {
+    background-image: url('R.images.gui.maps.icons.crew.profile.dashed_active_small');
+}
+
+.mediaMedium .Skill_bonusBorder__progress_12 {
+    background-image: url('R.images.gui.maps.icons.crew.profile.dashed_active_medium');
+}
+
+.mediaLarge .Skill_bonusBorder__progress_12 {
+    background-image: url('R.images.gui.maps.icons.crew.profile.dashed_active_large');
+}
+
+.mediaExtraLarge .Skill_bonusBorder__progress_12 {
+    background-image: url('R.images.gui.maps.icons.crew.profile.dashed_active_extraLarge');
+}
+
+.Skill_bonusBorder__inefficient_27 {
+    background-image: url('R.images.gui.maps.icons.crew.profile.dashed_untrained_small');
+}
+
+.mediaMedium .Skill_bonusBorder__inefficient_27 {
+    background-image: url('R.images.gui.maps.icons.crew.profile.dashed_untrained_medium');
+}
+
+.mediaLarge .Skill_bonusBorder__inefficient_27 {
+    background-image: url('R.images.gui.maps.icons.crew.profile.dashed_untrained_large');
+}
+
+.mediaExtraLarge .Skill_bonusBorder__inefficient_27 {
+    background-image: url('R.images.gui.maps.icons.crew.profile.dashed_untrained_extraLarge');
+}
+
+.Skill_progressLayer_5b {
+    height: 100%;
+    background-color: rgba(255, 92, 0, 0.2);
+    position: absolute;
+    left: 0;
+}
+
+.Skill_progressLayer__inefficient_dd {
+    background-color: rgba(255, 39, 23, 0.15);
+}
+
+.Skill_progressLayer__disabled_0a {
+    background-color: rgba(255, 92, 0, 0.15);
+}
+
+.Skill_progressLayer__full_5a {
+    background-color: rgba(255, 92, 0, 0.1);
+}
+
+.Skill_progressLayer__full_5a.Skill_progressLayer__disabled_0a {
+    background-color: rgba(255, 92, 0, 0.05);
+}
+
+.Skill_disabledLayer_76 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 4rem;
+    background: url('R.images.gui.maps.icons.library.disabled_pattern') center / 9rem;
     opacity: 0.5;
 }
-.Skill_zeroSkill_b3 {
-    width: 46rem;
-    height: 46rem;
-    background: url('R.images.gui.maps.icons.tankmen.crew.zeroskill') no-repeat center / contain;
+
+.Skill_topContent_d1 {
     position: absolute;
     top: 0;
     right: 0;
 }
 
-.SkillsRow_base_1e {
-    display: flex;
-    flex-direction: row;
-    position: relative;
+.Skill_levelLabel_07 {
+    color: #feab34;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    padding: 1rem 2rem 0 0;
 }
-.SkillsRow_skill_df + .SkillsRow_skill_df {
-    margin-left: 10rem;
+
+.mediaMedium .Skill_levelLabel_07 {
+    padding: 2rem 4rem 0 0;
 }
-.mediaLarge .SkillsRow_skill_df + .SkillsRow_skill_df {
-    margin-left: 12rem;
+
+.mediaExtraLarge .Skill_levelLabel_07 {
+    padding: 4rem 6rem 0 0;
 }
-.SkillsRow_emptySkill_b5 {
-    width: 84rem;
-    height: 80rem;
-    margin-left: 10rem;
-    border-radius: 2rem;
-    background-color: rgba(0, 0, 0, 0.08);
-    position: relative;
+
+.Skill_levelLabel__full_58 {
+    color: #ffdd99;
 }
-.mediaMedium .SkillsRow_emptySkill_b5 {
-    width: 130rem;
-    height: 100rem;
+
+.Skill_levelLabel__inefficient_58 {
+    opacity: 0.5;
 }
-.mediaLarge .SkillsRow_emptySkill_b5 {
-    width: 148rem;
-    margin-left: 12rem;
+
+.Skill_zeroIcon_2a {
+    width: 46rem;
+    height: 46rem;
+    background: url('R.images.gui.maps.icons.tankmen.crew.zeroskill') no-repeat center / contain;
+}
+
+.Skill_zeroIcon__disabled_68 {
+    opacity: 0.6;
+}
+
+.Skill_directiveIcon_4f {
+    width: 46rem;
+    height: 46rem;
+    background: url('R.images.gui.maps.icons.crew.profile.directiveIcon') no-repeat center / contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.mediaExtraLarge .Skill_directiveIcon_4f {
+    background-image: url('R.images.gui.maps.icons.crew.profile.directiveIcon_big');
+}
+
+.Skill_directiveIcon__progress_f6 {
+    background-image: url('R.images.gui.maps.icons.crew.profile.directiveProgressIcon');
+}
+
+.mediaExtraLarge .Skill_directiveIcon__progress_f6 {
+    background-image: url('R.images.gui.maps.icons.crew.profile.directiveProgressIcon_big');
 }
 
 .SkillsGroup_base_1e {
     display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.SkillsGroup_title_5c {
-    position: relative;
-}
-
-.mediaMedium .SkillsGroup_title_5c {
-    margin-left: 50rem;
-}
-
-.SkillsGroup_qualificationContainer_18 {
-    display: flex;
-    flex-direction: row;
-    height: 19rem;
-    position: relative;
-}
-
-.mediaLarge .SkillsGroup_qualificationContainer_18 {
-    height: 21rem;
-}
-
-.SkillsGroup_alertIcon_77 {
-    width: 24rem;
-    height: 24rem;
-    margin: -3rem 4rem 0 0;
-    background: url('R.images.gui.maps.icons.library.alertBigIcon') no-repeat center / cover;
-}
-
-.mediaLarge .SkillsGroup_alertIcon_77 {
-    margin-top: -1rem;
-}
-
-.SkillsGroup_qualification_90 {
-    color: rgba(242, 242, 247, 0.6);
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
-
-.mediaLarge .SkillsGroup_qualification_90 {
-    font-size: 16rem;
-}
-
-.SkillsGroup_qualification__locked_57 {
-    color: #ee7000;
-}
-
-.SkillsGroup_container_04 {
-    display: flex;
-    align-items: center;
-    margin-top: 6rem;
-    position: relative;
-}
-
-.mediaLarge .SkillsGroup_container_04 {
-    margin-top: 8rem;
-}
-
-.SkillsGroup_rowsContainer_a3 {
-    display: flex;
-    flex-direction: column;
-}
-
-.SkillsGroup_row_ad + .SkillsGroup_row_ad {
-    margin-top: 10rem;
-}
-
-.mediaMedium .SkillsGroup_row_ad + .SkillsGroup_row_ad {
-    margin-top: 6rem;
-}
-
-.mediaLarge .SkillsGroup_row_ad + .SkillsGroup_row_ad {
-    margin-top: 10rem;
-}
-
-.SkillsGroup_roleIcon_b0 {
-    display: none;
-    margin-right: 20rem;
-}
-
-.mediaMedium .SkillsGroup_roleIcon_b0 {
-    display: flex;
-}
-
-.SkillsGroupsList_base_1d {
-    flex: 1;
-    margin-bottom: 20rem;
-    position: relative;
-}
-
-.SkillsGroupsList_base__manyRoles_ba {
-    margin-bottom: 5rem;
-}
-
-.mediaMedium .SkillsGroupsList_base__manyRoles_ba {
-    margin-bottom: 10rem;
-}
-
-.mediaLarge .SkillsGroupsList_base__manyRoles_ba {
-    margin-bottom: 20rem;
-}
-
-.mediaMedium .SkillsGroupsList_scroll_e3 {
-    margin-left: 1rem;
-}
-
-.SkillsGroupsList_group_ed + .SkillsGroupsList_group_ed {
-    margin-top: 7rem;
-}
-
-.mediaLarge .SkillsGroupsList_group_ed + .SkillsGroupsList_group_ed {
-    margin-top: 17rem;
-}
-
-.SkillsStateInfo_base_de {
-    display: flex;
     align-items: center;
     position: relative;
 }
 
-.SkillsStateInfo_state_56 {
-    color: #feab34;
-    font-size: 14rem;
-    font-weight: 700;
-    line-height: 1.15;
-}
-
-.SkillsStateInfo_state__allSkills_a6,
-.SkillsStateInfo_state__reduced_ec,
-.SkillsStateInfo_state__training_60 {
-    color: #fefeec;
-}
-
-.SkillsStateInfo_state__disabled_ed,
-.SkillsStateInfo_state__locked_19 {
-    color: #ffc3be;
-    text-shadow:
-        #ff2717 0 0 20rem,
-        #ff2717 0 0 20rem;
-}
-
-.mediaMedium .SkillsStateInfo_state_56 {
-    font-size: 18rem;
-}
-
-.SkillsStateInfo_gradient_44 {
-    width: 200rem;
-    height: 30rem;
-    background: radial-gradient(70% 75% at 50% 0%, rgba(255, 0, 0, 0.2) 0%, rgba(255, 0, 30, 0) 85%);
-    position: absolute;
-    top: -15rem;
-    left: -25rem;
-}
-
-.mediaMedium .SkillsStateInfo_gradient_44 {
-    width: 250rem;
-    height: 40rem;
-    top: -23rem;
-}
-
-.mediaLarge .SkillsStateInfo_gradient_44 {
-    height: 50rem;
-    top: -31rem;
-}
-
-.SkillsStateInfo_countContainer_da {
-    display: flex;
-    align-items: flex-end;
-    position: absolute;
-    right: -12rem;
-    bottom: 0;
-    transform: translateX(100%);
-}
-
-.SkillsStateInfo_count_87 {
-    color: #fefeec;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-    position: relative;
-    top: -1rem;
-}
-
-.mediaMedium .SkillsStateInfo_count_87 {
-    font-size: 24rem;
-    top: 0;
-}
-
-.SkillsStateInfo_skillIcon_e2 {
-    width: 18rem;
-    height: 18rem;
-    margin-left: 6rem;
-    margin-bottom: 1rem;
-    background: url('R.images.gui.maps.icons.tankmen.skills.medium.new_skill') center / contain;
-    position: relative;
-}
-
-.mediaMedium .SkillsStateInfo_skillIcon_e2 {
-    width: 24rem;
-    height: 24rem;
-}
-
-.SkillsStateInfo_spinGlow_23 {
-    width: 60rem;
-    height: 60rem;
-    background: url('R.images.gui.maps.icons.tankmen.crew.glow') center / contain;
-    mix-blend-mode: screen;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    animation: SkillsStateInfo_rotation_58 20s linear infinite;
-    pointer-events: none;
-}
-
-.mediaMedium .SkillsStateInfo_spinGlow_23 {
-    width: 100rem;
-    height: 100rem;
-}
-
-@keyframes SkillsStateInfo_rotation_58 {
-    from {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-
-    to {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
-
-.SkillsMatrix_base_2a {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    max-height: 100%;
-    padding: 0 23rem 0 24rem;
-    background: linear-gradient(
+.SkillsGroup_base__main_7d {
+    padding: 20rem 24rem;
+    background-image: linear-gradient(
         90deg,
         rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.08) 15%,
-        rgba(255, 255, 255, 0.08) 85%,
+        rgba(255, 255, 255, 0.05) 13.47%,
+        rgba(255, 255, 255, 0.05) 84.3%,
         rgba(255, 255, 255, 0) 100%
     );
-    position: relative;
 }
 
-.SkillsMatrix_base__red_fe {
-    background: linear-gradient(
+.mediaMedium .SkillsGroup_base__main_7d {
+    padding: 30rem 50rem;
+}
+
+.mediaLarge .SkillsGroup_base__main_7d {
+    padding: 30rem 48rem;
+}
+
+.mediaExtraLarge .SkillsGroup_base__main_7d {
+    padding: 40rem 92rem;
+}
+
+.SkillsGroup_base__main_7d.SkillsGroup_base__untrained_b4 {
+    background-image: linear-gradient(
         90deg,
         rgba(255, 98, 98, 0) 0%,
-        rgba(255, 98, 98, 0.08) 15%,
-        rgba(255, 98, 98, 0.08) 85%,
+        rgba(255, 98, 98, 0.1) 13.47%,
+        rgba(255, 98, 98, 0.1) 84.3%,
         rgba(255, 98, 98, 0) 100%
     );
 }
 
-.mediaMedium .SkillsMatrix_base_2a {
-    padding: 0 57rem 0 5rem;
+.SkillsGroup_base__bonus_9f + .SkillsGroup_base__bonus_9f {
+    margin-top: 10rem;
 }
 
-.SkillsMatrix_topContainer_09 {
+.mediaMedium .SkillsGroup_base__bonus_9f + .SkillsGroup_base__bonus_9f {
+    margin-top: 20rem;
+}
+
+.mediaLarge .SkillsGroup_base__bonus_9f + .SkillsGroup_base__bonus_9f {
+    margin-top: 24rem;
+}
+
+.mediaExtraLarge .SkillsGroup_base__bonus_9f + .SkillsGroup_base__bonus_9f {
+    margin-top: 34rem;
+}
+
+.SkillsGroup_skillsRow_02 {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 41rem;
-    padding-top: 4rem;
+}
+
+.SkillsGroup_untrainedLayer_fb {
+    width: 330rem;
+    height: 90rem;
+    background: radial-gradient(48.99% 74.61% at 50% 0%, rgba(255, 0, 0, 0.2) 0%, rgba(255, 0, 30, 0) 85.07%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mediaLarge .SkillsGroup_untrainedLayer_fb {
+    width: 500rem;
+    height: 128rem;
+}
+
+.SkillsGroup_connectorLine_4b {
+    width: 8rem;
+    height: 1rem;
+    margin: 0 1rem;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.mediaLarge .SkillsGroup_connectorLine_4b {
+    width: 14rem;
+}
+
+.mediaExtraLarge .SkillsGroup_connectorLine_4b {
+    width: 18rem;
+}
+
+.SkillsGroup_connectorLine__long_92 {
+    width: 100rem;
+    margin: 0 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mediaMedium .SkillsGroup_connectorLine__long_92 {
+    width: 146rem;
+}
+
+.mediaLarge .SkillsGroup_connectorLine__long_92 {
+    width: 176rem;
+}
+
+.mediaExtraLarge .SkillsGroup_connectorLine__long_92 {
+    width: 220rem;
+}
+
+.SkillsGroup_directive_7c {
+    width: 52rem;
+    height: 52rem;
+    align-self: flex-start;
+    margin-left: 10rem;
+    border-radius: 4rem;
+    background:
+        no-repeat center / contain,
+        rgba(255, 255, 255, 0.05);
+}
+
+.mediaLarge .SkillsGroup_directive_7c {
+    margin-left: 16rem;
+}
+
+.mediaExtraLarge .SkillsGroup_directive_7c {
+    width: 80rem;
+    height: 80rem;
+    margin-left: 20rem;
+}
+
+.SkillsGroupTitle_base_e4 {
+    margin-bottom: 13rem;
+    padding-left: 25rem;
+}
+
+.mediaMedium .SkillsGroupTitle_base_e4 {
+    margin-bottom: 12rem;
+    padding-left: 50rem;
+}
+
+.mediaLarge .SkillsGroupTitle_base_e4 {
+    margin-bottom: 10rem;
+    padding-left: 48rem;
+}
+
+.mediaExtraLarge .SkillsGroupTitle_base_e4 {
+    padding-left: 92rem;
+}
+
+.SkillsGroupTitle_base__withBonus_b1 {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 15rem;
+    padding: 0;
+}
+
+.mediaMedium .SkillsGroupTitle_base__withBonus_b1 {
+    height: 20rem;
+    margin-top: 12rem;
+}
+
+.mediaLarge .SkillsGroupTitle_base__withBonus_b1 {
+    margin-top: 24rem;
+}
+
+.mediaExtraLarge .SkillsGroupTitle_base__withBonus_b1 {
+    height: 29rem;
+    margin-top: 35rem;
+    padding-left: 58rem;
+}
+
+.SkillsGroupTitle_titleText_06 {
+    color: #ffffff;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    opacity: 0.8;
+}
+
+.mediaMedium .SkillsGroupTitle_titleText_06 {
+    color: #ffffff;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaExtraLarge .SkillsGroupTitle_titleText_06 {
+    color: #ffffff;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.SkillsGroupTitle_titleText__untrained_a7 {
+    color: #ffc3be !important;
+    text-shadow: 0 0 14rem #ff0000;
+    opacity: 1;
+}
+
+.SkillsGroupTitle_infoIcon_b4 {
+    width: 14rem;
+    height: 14rem;
+    margin: 0 0 1rem 6rem;
+    background: url('R.images.gui.maps.icons.crew.profile.info') no-repeat center / contain;
+}
+
+.mediaExtraLarge .SkillsGroupTitle_infoIcon_b4 {
+    margin: 0 0 4rem 8rem;
+}
+
+.SkillsMatrix_base_2a {
+    margin-top: 36rem;
+}
+
+.mediaMedium .SkillsMatrix_base_2a {
+    margin-top: 42rem;
+}
+
+.mediaLarge .SkillsMatrix_base_2a {
+    margin-top: 65rem;
+}
+
+.mediaExtraLarge .SkillsMatrix_base_2a {
+    margin-top: 53rem;
+}
+
+.SkillsMatrix_scrollableSection_24 {
+    margin-left: 24rem;
+    padding-right: 58rem;
+}
+
+.mediaMedium .SkillsMatrix_scrollableSection_24 {
+    margin-left: 0;
+    padding-right: 54rem;
+}
+
+.mediaLarge .SkillsMatrix_scrollableSection_24 {
+    padding-right: 50rem;
+}
+
+.mediaExtraLarge .SkillsMatrix_scrollableSection_24 {
+    margin-left: 34rem;
+    padding-right: 136rem;
+}
+
+.SkillsMatrix_bonusScrollBar_b7 {
+    padding: 4rem 0;
+    right: -10rem;
+}
+
+.mediaMedium .SkillsMatrix_bonusScrollBar_b7 {
+    right: -4rem;
+}
+
+.mediaLarge .SkillsMatrix_bonusScrollBar_b7 {
+    right: -2rem;
+}
+
+.mediaExtraLarge .SkillsMatrix_bonusScrollBar_b7 {
+    right: -10rem;
+}
+
+.SkillsMatrix_bonusScrollContent_06 {
+    height: auto;
+    max-height: 130rem;
+}
+
+.mediaMedium .SkillsMatrix_bonusScrollContent_06 {
+    max-height: 160rem;
+}
+
+.mediaLarge .SkillsMatrix_bonusScrollContent_06 {
+    max-height: 270rem;
+}
+
+.mediaExtraLarge .SkillsMatrix_bonusScrollContent_06 {
+    max-height: 390rem;
+}
+
+.PersonalFileViewApp_base_23 {
+    display: flex;
+    padding-left: 378rem;
+}
+
+.mediaSmall .PersonalFileViewApp_base_23 {
+    justify-content: center;
+    padding-left: 0;
+}
+
+.PersonalFileViewApp_content_ad {
+    width: 602rem;
+    padding-top: 80rem;
     position: relative;
 }
 
-.mediaMedium .SkillsMatrix_topContainer_09 {
-    height: 53rem;
-    padding-left: 50rem;
-    padding-top: 12rem;
+.mediaMedium .PersonalFileViewApp_content_ad {
+    width: 930rem;
+    padding-top: 110rem;
 }
 
-.mediaLarge .SkillsMatrix_topContainer_09 {
-    height: 69rem;
+.mediaLarge .PersonalFileViewApp_content_ad {
+    width: 1064rem;
+    padding-top: 136rem;
 }
 
-.SkillsMatrix_skillsStateInfo_2e {
-    margin-top: 1rem;
-}
-
-.mediaMedium .SkillsMatrix_skillsStateInfo_2e {
-    margin-top: 2rem;
+.mediaExtraLarge .PersonalFileViewApp_content_ad {
+    width: 1388rem;
+    padding-top: 144rem;
 }

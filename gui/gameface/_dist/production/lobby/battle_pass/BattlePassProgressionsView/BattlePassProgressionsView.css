@@ -163,7 +163,7 @@ body {
 }
 .BattlePassProgressionsViewContent_base__extra_e2 {
     --widget-size: 418rem;
-    background-color: #1e2628;
+    background-color: #151d2c;
     background-position: 100% 50%;
     background-size: 1640rem 820rem;
 }
@@ -177,11 +177,11 @@ body {
 }
 .mediaLarge .BattlePassProgressionsViewContent_base__extra_e2 {
     --widget-size: 689rem;
-    background-size: 2880rem 1440rem;
+    background-size: 2800rem 1440rem;
 }
 .mediaExtraLarge .BattlePassProgressionsViewContent_base__extra_e2 {
     --widget-size: 931rem;
-    background-size: 3840rem 2160rem;
+    background-size: 3800rem 1900rem;
 }
 .BattlePassProgressionsViewContent_header_76 {
     margin-top: 32rem;
@@ -201,7 +201,7 @@ body {
     margin-top: -50rem;
 }
 .BattlePassProgressionsViewContent_progression__extraChapter_01 {
-    margin-right: var(--widget-size);
+    margin-right: calc(var(--widget-size) - 50rem);
 }
 .BattlePassProgressionsViewContent_extraChapterWidget_e2 {
     display: flex;
@@ -211,7 +211,7 @@ body {
     width: var(--widget-size);
     position: absolute;
     top: 51%;
-    right: 30rem;
+    right: 0;
 }
 .mediaMedium .BattlePassProgressionsViewContent_extraChapterWidget_e2 {
     top: 55%;
@@ -371,17 +371,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateHighlightHover_ff,
 .CButton_stateHighlightActive_35,
 .CButton_stateDisabled_54 {
-    opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-}
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
-.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
-.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-    transition: opacity 0.16s ease-in-out;
 }
 .CButton_stateHighlightHover_ff {
     background-image: linear-gradient(
@@ -390,6 +384,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         rgba(252, 248, 235, 0.1) 50%,
         rgba(255, 255, 255, 0) 100%
     );
+    opacity: 0;
 }
 .CButton_base_40:hover .CButton_stateHighlightHover_ff {
     opacity: 1;
@@ -407,6 +402,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_stateHighlightActive_35 {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+    opacity: 0;
 }
 .CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
     opacity: 1;
@@ -414,10 +410,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateDisabled_54 {
     background-color: rgba(0, 0, 0, 0.25);
     background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
-    background-size: 15rem;
+    background-size: 15rem 15rem;
+    visibility: hidden;
 }
 .CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-    opacity: 1;
+    visibility: inherit;
 }
 .CButton_content_cc {
     display: flex;
@@ -768,6 +765,95 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     opacity: 0;
 }
 
+.TankName_base_f1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    line-height: 1.3;
+}
+
+.TankName_base__sizeMedium_3a {
+    color: #fefeec;
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.TankName_base__sizBig_a9 {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.TankName_base__typeWhite_32 {
+    color: #f2f2f7;
+}
+
+.TankName_base__typeWhiteSpanish_e2 {
+    color: #e9e2bf;
+}
+
+.TankName_base__typeWhiteOrange_ac {
+    color: #fefeec;
+}
+
+.TankName_base__typeColored_bc .TankName_level_bb {
+    color: #e9e2bf;
+}
+
+.TankName_type_3c {
+    width: 42rem;
+    height: 38rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+
+.TankName_type__extraSmall_80 {
+    margin: 0 -9rem;
+    top: -8rem;
+}
+
+.TankName_type__medium_ff {
+    top: -16rem;
+}
+
+.TankName_type__big_9a {
+    top: -10rem;
+}
+
+.TankName_type__medium_ff,
+.TankName_type__big_9a {
+    width: 83rem;
+    height: 73rem;
+    margin: 0 -23rem;
+}
+
+.TankName_type__eliteExtraSmall_74 {
+    margin: 0 -6rem;
+}
+
+.TankName_type__eliteMedium_10 {
+    margin: 0 -16rem;
+}
+
+.TankName_type__eliteBig_ac {
+    margin: 0 -13rem;
+}
+
+.TankName_base__typeColored_bc .TankName_name_56 {
+    color: #8c8c7e;
+}
+
+.TankName_premiumIGR_25 {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 3rem 0 -2rem;
+    background: url('R.images.gui.maps.icons.library.premium_igr_ico') no-repeat center / contain;
+    position: relative;
+    top: 5rem;
+}
+
 .AdditionalRewardInfo_rewardText_6f {
     display: flex;
     min-width: 200rem;
@@ -831,6 +917,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-bottom: 4rem;
     font-size: 18rem;
 }
+.StyleDescription_rewardTitle__singleReward_e6 {
+    margin: 3rem;
+}
+.mediaMedium .StyleDescription_rewardTitle__singleReward_e6 {
+    margin-bottom: 4rem;
+}
+.mediaLarge .StyleDescription_rewardTitle__singleReward_e6 {
+    margin-top: 5rem;
+    font-size: 15rem;
+}
 
 .StyleDescription_title_60 {
     color: #fefeec;
@@ -841,6 +937,54 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .mediaMedium .StyleDescription_title_60 {
     font-size: 28rem;
+}
+
+.StyleDescription_title__singleReward_4b {
+    color: #fefeec;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 7rem;
+}
+
+.mediaMedium .StyleDescription_title__singleReward_4b {
+    margin-bottom: 10rem;
+}
+
+.StyleDescription_vehicleTitle_f3 {
+    color: #ffdd99;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    display: flex;
+    align-items: flex-start;
+}
+
+.mediaMedium .StyleDescription_vehicleTitle_f3 {
+    font-size: 18rem;
+}
+
+.StyleDescription_vehicleName_42 {
+    margin-top: 1rem;
+    line-height: 1.15;
+}
+
+.StyleDescription_vehicleTypeIcon_f7 {
+    width: 60rem;
+    height: 54rem;
+    margin: -9rem -12rem;
+}
+
+.StyleDescription_vehicleInHangar_7a {
+    width: 30rem;
+    height: 26rem;
+    margin: -5rem -3rem;
+    background: url('R.images.gui.maps.icons.battlePass.progression.hasVehicle') no-repeat center / contain;
+    pointer-events: auto;
+}
+
+.mediaMedium .StyleDescription_vehicleInHangar_7a {
+    margin-top: -2rem;
 }
 
 .StyleDescription_remark_0e {
@@ -1158,7 +1302,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-bottom: -13rem;
 }
 
-.ExtraChapterWidget_base_61 {
+.ExtraChapterWidget_base_61,
+.ExtraChapterWidget_widgetWrapper_00 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1169,18 +1314,22 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     z-index: 1;
 }
 
+.mediaMedium .ExtraChapterWidget_base__styleReward_78,
+.mediaMedium .ExtraChapterWidget_widgetWrapper__styleReward_c7 {
+    padding: 3rem 0;
+}
+
+.mediaLarge .ExtraChapterWidget_base__styleReward_78,
+.mediaLarge .ExtraChapterWidget_widgetWrapper__styleReward_c7 {
+    padding: 20rem 0;
+}
+
 .ExtraChapterWidget_widgetWrapper_00 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    padding: 10rem 0;
-    position: relative;
-    z-index: 1;
+    flex-direction: row;
 }
 
 .ExtraChapterWidget_glow_e7 {
-    width: 522rem;
+    width: 418rem;
     height: 166rem;
     background: radial-gradient(50% 50% at 50% 50%, rgba(13, 13, 13, 0.5) 54%, transparent 100%);
     position: absolute;
@@ -1189,6 +1338,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     z-index: -1;
     transform: translate(-50%, -50%);
     pointer-events: none;
+}
+
+.ExtraChapterWidget_glow__styleReward_40 {
+    width: 200%;
+    top: 60%;
 }
 
 .ExtraChapterWidget_content_a7 {
@@ -1215,7 +1369,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-left: 10rem;
 }
 
-.ExtraChapterWidget_content__vehicle_c6 {
+.ExtraChapterWidget_content__singleReward_5f {
     align-items: center;
 }
 
@@ -1551,6 +1705,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding-bottom: 78rem;
     background: left top / cover no-repeat;
     position: relative;
+    pointer-events: auto;
 }
 .Emblem_image__micro_aa {
     width: 60rem;
@@ -2700,7 +2855,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Label_base_05 {
-    color: #8c8c7e;
+    color: #e9e2bf;
     font-size: 12rem;
     font-weight: 400;
     line-height: 1.3;
@@ -2710,16 +2865,18 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 42rem;
     font-weight: 700;
     text-align: center;
+    letter-spacing: 0.2rem;
     white-space: pre-wrap;
+    opacity: 0.7;
     position: absolute;
     top: 74rem;
     right: 3rem;
     left: 3rem;
     z-index: 5;
+    transition: opacity 0.3s linear;
 }
 .mediaMedium .Label_base_05 {
     display: flex;
-    transition: color 0.3s linear;
 }
 .Label_base__big_3c {
     color: #fefeec;
@@ -2729,6 +2886,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     height: 65rem;
     color: rgba(254, 254, 236, 0.5);
+    opacity: 1;
     top: 86rem;
     transition: color 0.3s linear;
 }
@@ -2744,8 +2902,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     text-shadow:
         0 0 4rem rgba(255, 127, 0, 0.25),
         0 0 15rem rgba(238, 85, 34, 0.7);
+    opacity: 1;
 }
 .Label_base__hover_51 {
+    opacity: 1;
+}
+.Label_base__hover_51.Label_base__big_3c {
     color: #e9e2bf;
 }
 .Label_base__hover_51.Label_base__gold_dc {
@@ -3304,85 +3466,37 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 280rem;
 }
 
-.PointAward_locked_7c,
-.PointAward_lockedHover_80 {
+.PointAward_locked_7c {
     width: 24rem;
     height: 24rem;
-    background: no-repeat center / contain;
+    background: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_small_s') no-repeat center / contain;
+    opacity: 0.7;
     position: absolute;
     bottom: 3rem;
     z-index: 3;
     transition: opacity 0.3s linear;
 }
 
-.mediaMedium .PointAward_locked_7c,
-.mediaMedium .PointAward_lockedHover_80 {
+.mediaMedium .PointAward_locked_7c {
+    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_small_m');
     bottom: 4rem;
 }
 
-.PointAward_locked__hidden_bb,
-.PointAward_lockedHover__hidden_17 {
-    display: none;
-}
-
-.PointAward_base__big_dc .PointAward_locked_7c,
-.PointAward_base__big_dc .PointAward_lockedHover_80 {
+.PointAward_base__big_dc .PointAward_locked_7c {
     width: 32rem;
     height: 32rem;
+    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_big_s');
     bottom: 8rem;
 }
 
-.mediaMedium .PointAward_base__big_dc .PointAward_locked_7c,
-.mediaMedium .PointAward_base__big_dc .PointAward_lockedHover_80 {
+.mediaMedium .PointAward_base__big_dc .PointAward_locked_7c {
     width: 48rem;
     height: 48rem;
+    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_big_m');
     bottom: 13rem;
 }
 
-.PointAward_base__big_dc .PointAward_locked__hidden_bb,
-.PointAward_base__big_dc .PointAward_lockedHover__hidden_17 {
-    display: none;
-}
-
-.PointAward_locked_7c {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_small_s');
-    opacity: 1;
-}
-
-.mediaMedium .PointAward_locked_7c {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_small_m');
-}
-
-.PointAward_base__big_dc .PointAward_locked_7c {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_big_s');
-}
-
-.mediaMedium .PointAward_base__big_dc .PointAward_locked_7c {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_big_m');
-}
-
 .PointAward_base__hover_50 .PointAward_locked_7c {
-    opacity: 0;
-}
-
-.PointAward_lockedHover_80 {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_small_s');
-    opacity: 0;
-}
-
-.mediaMedium .PointAward_lockedHover_80 {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_small_m');
-}
-
-.PointAward_base__big_dc .PointAward_lockedHover_80 {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_big_s');
-}
-
-.mediaMedium .PointAward_base__big_dc .PointAward_lockedHover_80 {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_big_m');
-}
-
-.PointAward_base__hover_50 .PointAward_lockedHover_80 {
     opacity: 1;
 }
 
@@ -3428,41 +3542,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .AwardsWrapper_base__big_6b .AwardsWrapper_award__last_b0 {
     margin-right: 0;
-}
-
-.Identity_base_56 {
-    pointer-events: none;
-}
-
-.Identity_base__chapter_choice_df {
-    position: absolute;
-    top: 20rem;
-    right: 20rem;
-    z-index: 2;
-}
-
-.Identity_base__progression_1c {
-    margin: -3rem 10rem 0 0;
-}
-
-.mediaMedium .Identity_base__progression_1c {
-    margin: -18rem 20rem 0 0;
-}
-
-.mediaLarge .Identity_base__progression_1c {
-    margin-top: 0;
-}
-
-.Identity_identityImage_69 {
-    width: 202rem;
-    height: 94rem;
-    background: url('R.images.gui.maps.icons.battlePass.identity.identity_small') center / contain no-repeat;
-}
-
-.mediaMedium .Identity_identityImage_69 {
-    width: 300rem;
-    height: 140rem;
-    background-image: url('R.images.gui.maps.icons.battlePass.identity.identity');
 }
 
 /* vertical offset for positioning progression's progressbar at the center of screen */
@@ -5539,10 +5618,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Reward_info_72 {
-    margin-top: -13rem;
     color: #e9e2bf;
     font-size: 14rem;
-    line-height: 18rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: -13rem;
     text-align: center;
     z-index: 1;
 }
@@ -5576,6 +5656,27 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .Reward_info__premiumTank_d3 {
     color: #ffdd99;
+}
+
+.Reward_title_36 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 80rem;
+    margin: -13rem -16rem 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.mediaMedium .Reward_title_36 {
+    max-width: 100rem;
+    margin-left: -10rem;
+    margin-right: -10rem;
 }
 
 .Reward_timer_d3 {

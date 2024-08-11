@@ -80,18 +80,21 @@
                 n.r(t),
                     n.d(t, {
                         events: () => o,
-                        getMouseGlobalPosition: () => r,
-                        getSize: () => i,
-                        graphicsQuality: () => a,
+                        getMouseGlobalPosition: () => a,
+                        getSize: () => r,
+                        graphicsQuality: () => s,
+                        playSound: () => i.G,
+                        setRTPC: () => i.E,
                     });
-                var o = n(527);
-                function i(e = 'px') {
+                var o = n(527),
+                    i = n(2493);
+                function r(e = 'px') {
                     return 'rem' === e ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function r(e = 'px') {
+                function a(e = 'px') {
                     return 'rem' === e ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const a = {
+                const s = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -102,6 +105,19 @@
                     viewEnv.setTrackMouseOnStage(e);
                 }
                 n.d(t, { R: () => o });
+            },
+            2493: (e, t, n) => {
+                function o(e) {
+                    engine.call('PlaySound', e).catch((t) => {
+                        console.error(`playSound('${e}'): `, t);
+                    });
+                }
+                function i(e, t) {
+                    engine.call('SetRTPCGlobal', e, t).catch((n) => {
+                        console.error(`setRTPC('${e}', '${t}'): `, n);
+                    });
+                }
+                n.d(t, { E: () => i, G: () => o });
             },
             2472: (e, t, n) => {
                 function o(e) {
@@ -115,9 +131,17 @@
                 n.d(t, { E: () => o });
             },
             3138: (e, t, n) => {
-                n.d(t, { O: () => i });
+                n.d(t, { O: () => r });
+                var o = n(5959),
+                    i = n(514);
+                const r = { view: n(7641), client: o, sound: i.ZP };
+            },
+            514: (e, t, n) => {
+                n.d(t, { ZP: () => a });
                 var o = n(5959);
-                const i = { view: n(7641), client: o };
+                const i = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    r = Object.keys(i).reduce((e, t) => ((e[t] = () => (0, o.playSound)(i[t])), e), {}),
+                    a = { play: Object.assign({}, r, { sound: o.playSound }), setRTPC: o.setRTPC };
             },
             3722: (e, t, n) => {
                 function o(e, t, n = 1) {
@@ -171,8 +195,8 @@
                         getViewGlobalPosition: () => m,
                         isEventHandled: () => y,
                         isFocused: () => b,
-                        pxToRem: () => w,
-                        remToPx: () => p,
+                        pxToRem: () => p,
+                        remToPx: () => w,
                         resize: () => v,
                         sendEvent: () => a.qP,
                         setAnimateWindow: () => g,
@@ -208,7 +232,7 @@
                 }
                 function m(e = 'rem') {
                     const t = viewEnv.getViewGlobalPositionRem();
-                    return 'rem' === e ? t : { x: p(t.x), y: p(t.y) };
+                    return 'rem' === e ? t : { x: w(t.x), y: w(t.y) };
                 }
                 function E() {
                     viewEnv.freezeTextureBeforeResize();
@@ -216,10 +240,10 @@
                 function h() {
                     return viewEnv.getScale();
                 }
-                function w(e) {
+                function p(e) {
                     return viewEnv.pxToRem(e);
                 }
-                function p(e) {
+                function w(e) {
                     return viewEnv.remToPx(e);
                 }
                 function g(e, t) {
@@ -465,7 +489,7 @@
                 const __WEBPACK_DEFAULT_EXPORT__ = ViewModel;
             },
             9916: (e, t, n) => {
-                n.d(t, { Gr: () => l, Z5: () => a.Z5, ry: () => w });
+                n.d(t, { Gr: () => l, Z5: () => a.Z5, ry: () => p });
                 class o {
                     constructor() {
                         (this.entries = []),
@@ -535,7 +559,7 @@
                     s.done ? t(c) : Promise.resolve(c).then(o, i);
                 }
                 const h = (e) => ({ __Type: 'GFBoundingBox', x: e.x, y: e.y, width: e.width, height: e.height }),
-                    w = (function () {
+                    p = (function () {
                         var e,
                             t =
                                 ((e = function* () {
@@ -564,7 +588,7 @@
                             return t.apply(this, arguments);
                         };
                     })(),
-                    p = (e, t) => {
+                    w = (e, t) => {
                         const n = 'GFViewEventProxy';
                         if (void 0 !== t) {
                             const i = t.args,
@@ -602,7 +626,7 @@
                         } else viewEnv.handleViewEvent({ __Type: n, type: e });
                         var o;
                     },
-                    g = () => p(s.CLOSE),
+                    g = () => w(s.CLOSE),
                     b = (e, t) => {
                         e.keyCode === u.n.ESCAPE && t();
                     };
@@ -617,11 +641,11 @@
                         TimeFormatType: d,
                         DateFormatType: _,
                         makeGlobalBoundingBox: h,
-                        sendMoveEvent: (e) => p(s.MOVE, { isMouseEvent: !0, on: e }),
+                        sendMoveEvent: (e) => w(s.MOVE, { isMouseEvent: !0, on: e }),
                         sendCloseEvent: g,
-                        sendClosePopOverEvent: () => p(s.POP_OVER, { on: !1 }),
+                        sendClosePopOverEvent: () => w(s.POP_OVER, { on: !1 }),
                         sendShowContextMenuEvent: (e, t, n = 0) => {
-                            p(s.CONTEXT_MENU, { isMouseEvent: !0, contentID: e, on: !0, decoratorID: n, args: t });
+                            w(s.CONTEXT_MENU, { isMouseEvent: !0, contentID: e, on: !0, decoratorID: n, args: t });
                         },
                         sendShowPopOverEvent: (e, t, n, o, i = R.invalid('resId'), r) => {
                             const a = v.O.view.getViewGlobalPosition(),
@@ -636,7 +660,7 @@
                                     width: v.O.view.pxToRem(_),
                                     height: v.O.view.pxToRem(u),
                                 };
-                            p(s.POP_OVER, {
+                            w(s.POP_OVER, {
                                 isMouseEvent: !0,
                                 contentID: e,
                                 decoratorID: o || R.invalid('resId'),
@@ -656,8 +680,8 @@
                         closeOnEsc: (e) => {
                             b(e, g);
                         },
-                        handleViewEvent: p,
-                        onBindingsReady: w,
+                        handleViewEvent: w,
+                        onBindingsReady: p,
                         onLayoutReady: () =>
                             new Promise((e) => {
                                 requestAnimationFrame(() => {
@@ -781,9 +805,9 @@
                         })(e, u);
                     const E = d(),
                         h = i().useRef(null);
-                    var w;
+                    var p;
                     return (
-                        (w = () => {
+                        (p = () => {
                             E.run(() => {
                                 const e = h.current;
                                 if (!e) return;
@@ -799,7 +823,7 @@
                                 });
                             });
                         }),
-                        (0, o.useEffect)(w, []),
+                        (0, o.useEffect)(p, []),
                         i().createElement(
                             'div',
                             v({}, m, {
@@ -813,16 +837,16 @@
                     );
                 });
                 var E = n(9916);
-                let h, w, p, g, b;
+                let h, p, w, g, b;
                 !(function (e) {
                     (e[(e.Engraving = 0)] = 'Engraving'), (e[(e.Background = 1)] = 'Background');
                 })(h || (h = {})),
                     (function (e) {
                         (e[(e.Equipped = 0)] = 'Equipped'), (e[(e.Locked = 1)] = 'Locked'), (e[(e.Open = 2)] = 'Open');
-                    })(w || (w = {})),
+                    })(p || (p = {})),
                     (function (e) {
                         (e.Engraving = 'engraving'), (e.Background = 'background'), (e.All = 'all');
-                    })(p || (p = {})),
+                    })(w || (w = {})),
                     (function (e) {
                         (e.Dedication = 'dedication'),
                             (e.Skill = 'skill'),

@@ -3,7 +3,6 @@
     flex-wrap: wrap;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .App_base_79 {
     width: 100%;

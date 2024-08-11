@@ -80,18 +80,21 @@
                 A.r(e),
                     A.d(e, {
                         events: () => E,
-                        getMouseGlobalPosition: () => D,
-                        getSize: () => F,
-                        graphicsQuality: () => t,
+                        getMouseGlobalPosition: () => t,
+                        getSize: () => D,
+                        graphicsQuality: () => n,
+                        playSound: () => F.G,
+                        setRTPC: () => F.E,
                     });
-                var E = A(527);
-                function F(u = 'px') {
+                var E = A(527),
+                    F = A(2493);
+                function D(u = 'px') {
                     return 'rem' === u ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function D(u = 'px') {
+                function t(u = 'px') {
                     return 'rem' === u ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const t = {
+                const n = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -102,6 +105,19 @@
                     viewEnv.setTrackMouseOnStage(u);
                 }
                 A.d(e, { R: () => E });
+            },
+            2493: (u, e, A) => {
+                function E(u) {
+                    engine.call('PlaySound', u).catch((e) => {
+                        console.error(`playSound('${u}'): `, e);
+                    });
+                }
+                function F(u, e) {
+                    engine.call('SetRTPCGlobal', u, e).catch((A) => {
+                        console.error(`setRTPC('${u}', '${e}'): `, A);
+                    });
+                }
+                A.d(e, { E: () => F, G: () => E });
             },
             2472: (u, e, A) => {
                 function E(u) {
@@ -115,9 +131,17 @@
                 A.d(e, { E: () => E });
             },
             3138: (u, e, A) => {
-                A.d(e, { O: () => F });
+                A.d(e, { O: () => D });
+                var E = A(5959),
+                    F = A(514);
+                const D = { view: A(7641), client: E, sound: F.ZP };
+            },
+            514: (u, e, A) => {
+                A.d(e, { ZP: () => t });
                 var E = A(5959);
-                const F = { view: A(7641), client: E };
+                const F = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    D = Object.keys(F).reduce((u, e) => ((u[e] = () => (0, E.playSound)(F[e])), u), {}),
+                    t = { play: Object.assign({}, D, { sound: E.playSound }), setRTPC: E.setRTPC };
             },
             3722: (u, e, A) => {
                 function E(u, e, A = 1) {
@@ -901,9 +925,9 @@
                     );
                 });
                 var O = A(9916),
-                    T = A(8613);
-                Date.now(), T.Ew.getRegionalDateTime, T.Ew.getFormattedDateTime;
-                const y = (u = 1) => {
+                    y = A(8613);
+                Date.now(), y.Ew.getRegionalDateTime, y.Ew.getFormattedDateTime;
+                const T = (u = 1) => {
                         const e = new Error().stack;
                         let A,
                             E = R.invalid('resId');
@@ -917,22 +941,22 @@
                             { caller: A, stack: e, resId: E }
                         );
                     },
-                    k = (u, e) => u.split('.').reduce((u, e) => u && u[e], e),
-                    x = (u) => {
+                    P = (u, e) => u.split('.').reduce((u, e) => u && u[e], e),
+                    k = (u) => {
                         const e = (0, E.useRef)(!1);
                         e.current || (u(), (e.current = !0));
                     },
-                    P = (u) => u && 'ArrayItem' === u.__proto__.constructor.name,
+                    x = (u) => u && 'ArrayItem' === u.__proto__.constructor.name,
                     S = (u, e) => (u.length > 0 ? `${u}.${e}` : e),
                     M = (u) =>
                         ((u, e) =>
                             u.split('.').reduce((u, A) => {
-                                const E = k(`${u}.${A}`, window);
-                                return P(E) ? e(u, A, E) : `${u}.${A}`;
+                                const E = P(`${u}.${A}`, window);
+                                return x(E) ? e(u, A, E) : `${u}.${A}`;
                             }))(u, (u, e) => `${u}.${e}.value`),
                     L = (u) => {
                         const e = ((u) => {
-                                const e = y(),
+                                const e = T(),
                                     A = e.caller,
                                     E = e.resId,
                                     F = window.__feature && window.__feature !== A && A ? `subViews.${A}` : '';
@@ -944,8 +968,8 @@
                             const u = [E[0]];
                             return (
                                 E.reduce((e, E) => {
-                                    const F = k(S(A, `${e}.${E}`), window);
-                                    return P(F) ? (u.push(F.id), `${e}.${E}.value`) : (u.push(E), `${e}.${E}`);
+                                    const F = P(S(A, `${e}.${E}`), window);
+                                    return x(F) ? (u.push(F.id), `${e}.${E}.value`) : (u.push(E), `${e}.${E}`);
                                 }),
                                 u.reduce((u, e) => u + '.' + e)
                             );
@@ -960,7 +984,7 @@
                 const V = (u = 'model', e = I.Deep) => {
                         const A = (0, E.useState)(0),
                             F = (A[0], A[1]),
-                            D = (0, E.useMemo)(() => y(), []),
+                            D = (0, E.useMemo)(() => T(), []),
                             t = D.caller,
                             n = D.resId,
                             B = (0, E.useMemo)(
@@ -969,16 +993,16 @@
                             ),
                             r = (0, E.useState)(() =>
                                 ((u) => {
-                                    const e = k(u, window);
+                                    const e = P(u, window);
                                     for (const u in e) 'function' == typeof e[u] && (e[u] = e[u].bind(e));
-                                    return P(e) ? e.value : e;
+                                    return x(e) ? e.value : e;
                                 })(M(B)),
                             ),
                             C = r[0],
                             i = r[1],
                             o = (0, E.useRef)(-1);
                         return (
-                            x(() => {
+                            k(() => {
                                 if (
                                     ('boolean' == typeof e &&
                                         ((e = e ? I.Deep : I.None),
@@ -1008,10 +1032,10 @@
                     },
                     U = (O.Sw.instance, 'AlertTooltipApp_base_a5'),
                     W = 'AlertTooltipApp_header_0e',
-                    q = 'AlertTooltipApp_description_2e',
-                    z = 'AlertTooltipApp_alertIcon_2c',
-                    j = 'AlertTooltipApp_alert_af',
-                    K = () => {
+                    j = 'AlertTooltipApp_description_2e',
+                    q = 'AlertTooltipApp_alertIcon_2c',
+                    z = 'AlertTooltipApp_alert_af',
+                    G = () => {
                         const u = V(),
                             e = u.header,
                             A = u.body,
@@ -1023,19 +1047,19 @@
                                 'div',
                                 { className: U },
                                 F().createElement('div', { className: W }, e),
-                                F().createElement('div', { className: q }, F().createElement(w, { text: A })),
+                                F().createElement('div', { className: j }, F().createElement(w, { text: A })),
                                 E &&
                                     F().createElement(
                                         'div',
-                                        { className: j },
-                                        F().createElement('span', { className: z }),
+                                        { className: z },
+                                        F().createElement('span', { className: q }),
                                         F().createElement('div', null, F().createElement(w, { text: E })),
                                     ),
                             ),
                         );
                     };
                 engine.whenReady.then(() => {
-                    t().render(F().createElement(K, null), document.getElementById('root'));
+                    t().render(F().createElement(G, null), document.getElementById('root'));
                 });
             },
         },

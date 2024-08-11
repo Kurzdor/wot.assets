@@ -130,6 +130,7 @@
     padding-bottom: 78rem;
     background: left top / cover no-repeat;
     position: relative;
+    pointer-events: auto;
 }
 .Emblem_image__micro_aa {
     width: 60rem;

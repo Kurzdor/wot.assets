@@ -482,10 +482,11 @@
 }
 
 .Reward_info_72 {
-    margin-top: -13rem;
     color: #e9e2bf;
     font-size: 14rem;
-    line-height: 18rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: -13rem;
     text-align: center;
     z-index: 1;
 }
@@ -519,6 +520,27 @@
 
 .Reward_info__premiumTank_d3 {
     color: #ffdd99;
+}
+
+.Reward_title_36 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 80rem;
+    margin: -13rem -16rem 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.mediaMedium .Reward_title_36 {
+    max-width: 100rem;
+    margin-left: -10rem;
+    margin-right: -10rem;
 }
 
 .Reward_timer_d3 {
@@ -652,18 +674,8 @@
 
 .Timer_countdown_1d {
     display: flex;
-    justify-content: center;
     align-items: center;
     position: relative;
-}
-
-.Timer_highlight_a6 {
-    width: 338rem;
-    height: 168rem;
-    background: url('R.images.gui.maps.icons.components.tabs.tab.highlight') no-repeat 10rem center / cover;
-    opacity: 0.6;
-    position: absolute;
-    top: -69rem;
 }
 
 .Timer_description_05 {
@@ -671,6 +683,7 @@
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
+    align-items: center;
     padding-left: 5rem;
 }
 
@@ -698,6 +711,7 @@
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
+    display: flex;
     width: 100%;
     margin: 24rem 0 16rem;
     padding: 0 20rem 0 24rem;
@@ -734,6 +748,13 @@
     height: 16rem;
     margin: 3rem 4rem;
     background: url('R.images.gui.maps.icons.library.InformationIcon') center / contain no-repeat;
+}
+
+.ActiveModeContent_infiniteIcon_0e {
+    width: 18rem;
+    height: 20rem;
+    margin-top: 3rem;
+    background: url('R.images.fun_random.gui.maps.icons.feature.quest.infinity_grey') center center / cover;
 }
 
 .CompletedModeContent_base_da {

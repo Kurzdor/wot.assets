@@ -3,7 +3,6 @@ body {
     overflow: hidden;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .App_base_e9 {
     width: 100%;
@@ -146,11 +145,12 @@ body {
 }
 .mediaMedium .App_info_2e {
     max-width: 200rem;
-    font-size: 16rem;
+    font-size: 14rem;
 }
 .mediaLarge .App_info_2e {
     max-width: 280rem;
     margin-top: 2rem;
+    font-size: 16rem;
 }
 .App_base__single_4f .App_info_2e {
     max-width: 280rem;

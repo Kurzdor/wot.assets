@@ -16,22 +16,24 @@
                     EXTRA_LARGE: 'mediaExtraLarge',
                 };
             },
-            5067: (u, e, t) => {
+            9768: (u, e, t) => {
                 'use strict';
-                t.d(e, { O: () => X });
+                t.d(e, { O: () => eu });
                 var E = {};
                 t.r(E),
-                    t.d(E, { mouse: () => o, off: () => s, on: () => l, onResize: () => i, onScaleUpdated: () => D });
+                    t.d(E, { mouse: () => B, off: () => s, on: () => l, onResize: () => i, onScaleUpdated: () => D });
                 var A = {};
                 t.r(A),
                     t.d(A, {
                         events: () => E,
-                        getMouseGlobalPosition: () => c,
-                        getSize: () => C,
-                        graphicsQuality: () => d,
+                        getMouseGlobalPosition: () => _,
+                        getSize: () => d,
+                        graphicsQuality: () => m,
+                        playSound: () => C,
+                        setRTPC: () => c,
                     });
                 var r = {};
-                t.r(r), t.d(r, { getBgUrl: () => m, getTextureUrl: () => _ });
+                t.r(r), t.d(r, { getBgUrl: () => p, getTextureUrl: () => w });
                 var F = {};
                 function a(u) {
                     return (e) => (
@@ -46,38 +48,38 @@
                 }
                 t.r(F),
                     t.d(F, {
-                        addModelObserver: () => O,
-                        addPreloadTexture: () => S,
+                        addModelObserver: () => k,
+                        addPreloadTexture: () => R,
                         children: () => r,
-                        displayStatus: () => h,
-                        displayStatusIs: () => K,
-                        events: () => g,
-                        extraSize: () => q,
-                        forceTriggerMouseMove: () => V,
-                        freezeTextureBeforeResize: () => k,
-                        getBrowserTexturePath: () => M,
-                        getDisplayStatus: () => j,
-                        getScale: () => P,
-                        getSize: () => R,
-                        getViewGlobalPosition: () => H,
-                        isEventHandled: () => z,
-                        isFocused: () => G,
-                        pxToRem: () => W,
-                        remToPx: () => N,
-                        resize: () => I,
-                        sendEvent: () => L,
-                        setAnimateWindow: () => U,
-                        setEventHandled: () => $,
-                        setInputPaddingsRem: () => T,
-                        setSidePaddingsRem: () => y,
-                        whenTutorialReady: () => Y,
+                        displayStatus: () => f,
+                        displayStatusIs: () => Q,
+                        events: () => x,
+                        extraSize: () => J,
+                        forceTriggerMouseMove: () => X,
+                        freezeTextureBeforeResize: () => G,
+                        getBrowserTexturePath: () => I,
+                        getDisplayStatus: () => Z,
+                        getScale: () => $,
+                        getSize: () => W,
+                        getViewGlobalPosition: () => U,
+                        isEventHandled: () => Y,
+                        isFocused: () => K,
+                        pxToRem: () => z,
+                        remToPx: () => j,
+                        resize: () => N,
+                        sendEvent: () => M,
+                        setAnimateWindow: () => V,
+                        setEventHandled: () => q,
+                        setInputPaddingsRem: () => P,
+                        setSidePaddingsRem: () => H,
+                        whenTutorialReady: () => uu,
                     });
                 const i = a('clientResized'),
                     D = a('self.onScaleUpdated'),
                     l = (u, e) => engine.on(u, e),
                     s = (u, e) => engine.off(u, e),
-                    B = { down: a('mousedown'), up: a('mouseup'), move: a('mousemove') };
-                const o = (function () {
+                    o = { down: a('mousedown'), up: a('mouseup'), move: a('mousemove') };
+                const B = (function () {
                     const u = { listeners: 0, enabled: !0, initialized: !1 };
                     function e() {
                         u.enabled && n(!1);
@@ -104,7 +106,7 @@
                                     u.listeners += 1;
                                     let A = !0;
                                     const r = `mouse${e}`,
-                                        F = B[e]((u) => t([u, 'outside']));
+                                        F = o[e]((u) => t([u, 'outside']));
                                     function a(u) {
                                         t([u, 'inside']);
                                     }
@@ -141,25 +143,38 @@
                         },
                     });
                 })();
-                function C(u = 'px') {
+                function C(u) {
+                    engine.call('PlaySound', u).catch((e) => {
+                        console.error(`playSound('${u}'): `, e);
+                    });
+                }
+                function c(u, e) {
+                    engine.call('SetRTPCGlobal', u, e).catch((t) => {
+                        console.error(`setRTPC('${u}', '${e}'): `, t);
+                    });
+                }
+                function d(u = 'px') {
                     return 'rem' === u ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function c(u = 'px') {
+                function _(u = 'px') {
                     return 'rem' === u ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const d = {
-                    isLow: () => 1 === viewEnv.getGraphicsQuality(),
-                    isHigh: () => 0 === viewEnv.getGraphicsQuality(),
-                    get: () => viewEnv.getGraphicsQuality(),
-                };
-                function _(u, e, t = 1) {
+                const m = {
+                        isLow: () => 1 === viewEnv.getGraphicsQuality(),
+                        isHigh: () => 0 === viewEnv.getGraphicsQuality(),
+                        get: () => viewEnv.getGraphicsQuality(),
+                    },
+                    h = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    g = Object.keys(h).reduce((u, e) => ((u[e] = () => C(h[e])), u), {}),
+                    v = { play: Object.assign({}, g, { sound: C }), setRTPC: c };
+                function w(u, e, t = 1) {
                     return viewEnv.getChildTexturePath(u, e.width, e.height, t);
                 }
-                function m(u, e, t) {
-                    return `url(${_(u, e, t)})`;
+                function p(u, e, t) {
+                    return `url(${w(u, e, t)})`;
                 }
-                const h = { showing: 0, shown: 1, hiding: 2, hidden: 3 },
-                    g = {
+                const f = { showing: 0, shown: 1, hiding: 2, hidden: 3 },
+                    x = {
                         onTextureFrozen: a('self.onTextureFrozen'),
                         onTextureReady: a('self.onTextureReady'),
                         onDomBuilt: a('self.onDomBuilt'),
@@ -175,12 +190,12 @@
                             onRequestPosition: a('children.requestPosition'),
                         },
                     },
-                    v = ['args'];
-                const w = 2,
-                    p = 16,
-                    f = 32,
-                    x = 64,
-                    b = (u, e) => {
+                    b = ['args'];
+                const L = 2,
+                    S = 16,
+                    T = 32,
+                    y = 64,
+                    O = (u, e) => {
                         const t = 'GFViewEventProxy';
                         if (void 0 !== e) {
                             const A = e.args,
@@ -192,7 +207,7 @@
                                         r = Object.keys(u);
                                     for (E = 0; E < r.length; E++) (t = r[E]), e.indexOf(t) >= 0 || (A[t] = u[t]);
                                     return A;
-                                })(e, v);
+                                })(e, b);
                             return void 0 !== A
                                 ? viewEnv.handleViewEvent(
                                       Object.assign({ __Type: t, type: u }, r, {
@@ -216,74 +231,74 @@
                         return viewEnv.handleViewEvent({ __Type: t, type: u });
                         var E;
                     },
-                    L = {
+                    M = {
                         close(u) {
-                            b('popover' === u ? w : f);
+                            O('popover' === u ? L : T);
                         },
                         minimize() {
-                            b(x);
+                            O(y);
                         },
                         move(u) {
-                            b(p, { isMouseEvent: !0, on: u });
+                            O(S, { isMouseEvent: !0, on: u });
                         },
                     };
-                function S(u) {
+                function R(u) {
                     viewEnv.addPreloadTexture(u);
                 }
-                function T(u) {
+                function P(u) {
                     viewEnv.setHitAreaPaddingsRem(u, u, u, u, 15);
                 }
-                function M(u, e, t, E = 1) {
+                function I(u, e, t, E = 1) {
                     return viewEnv.getWebBrowserTexturePath(u, e, t, E);
                 }
-                function O(u, e, t) {
+                function k(u, e, t) {
                     return viewEnv.addDataChangedCallback(u, e, t);
                 }
-                function y(u) {
+                function H(u) {
                     viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, 15);
                 }
-                function R(u = 'px') {
+                function W(u = 'px') {
                     return 'rem' === u ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
                 }
-                function I(u, e, t = 'px') {
+                function N(u, e, t = 'px') {
                     return 'rem' === t ? viewEnv.resizeViewRem(u, e) : viewEnv.resizeViewPx(u, e);
                 }
-                function H(u = 'rem') {
+                function U(u = 'rem') {
                     const e = viewEnv.getViewGlobalPositionRem();
-                    return 'rem' === u ? e : { x: N(e.x), y: N(e.y) };
-                }
-                function k() {
-                    viewEnv.freezeTextureBeforeResize();
-                }
-                function P() {
-                    return viewEnv.getScale();
-                }
-                function W(u) {
-                    return viewEnv.pxToRem(u);
-                }
-                function N(u) {
-                    return viewEnv.remToPx(u);
-                }
-                function U(u, e) {
-                    viewEnv.setAnimateWindow(u, e);
+                    return 'rem' === u ? e : { x: j(e.x), y: j(e.y) };
                 }
                 function G() {
-                    return viewEnv.isFocused();
+                    viewEnv.freezeTextureBeforeResize();
                 }
                 function $() {
+                    return viewEnv.getScale();
+                }
+                function z(u) {
+                    return viewEnv.pxToRem(u);
+                }
+                function j(u) {
+                    return viewEnv.remToPx(u);
+                }
+                function V(u, e) {
+                    viewEnv.setAnimateWindow(u, e);
+                }
+                function K() {
+                    return viewEnv.isFocused();
+                }
+                function q() {
                     return viewEnv.setEventHandled();
                 }
-                function z() {
+                function Y() {
                     return viewEnv.isEventHandled();
                 }
-                function V() {
+                function X() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function j() {
+                function Z() {
                     return viewEnv.getShowingStatus();
                 }
-                const K = Object.keys(h).reduce((u, e) => ((u[e] = () => viewEnv.getShowingStatus() === h[e]), u), {}),
-                    q = {
+                const Q = Object.keys(f).reduce((u, e) => ((u[e] = () => viewEnv.getShowingStatus() === f[e]), u), {}),
+                    J = {
                         set: (u, e) => {
                             viewEnv.setExtraSizeRem(u, e);
                         },
@@ -291,13 +306,13 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    Y = Promise.all([
+                    uu = Promise.all([
                         new Promise((u) => {
-                            window.isDomBuilt ? u() : g.onDomBuilt(u);
+                            window.isDomBuilt ? u() : x.onDomBuilt(u);
                         }),
                         engine.whenReady,
                     ]),
-                    X = { view: F, client: A };
+                    eu = { view: F, client: A, sound: v };
             },
             5521: (u, e, t) => {
                 'use strict';
@@ -353,7 +368,7 @@
             1358: (u, e, t) => {
                 'use strict';
                 t.d(e, { Z: () => r });
-                var E = t(5067);
+                var E = t(9768);
                 class A {
                     constructor() {
                         (this._callbacks = void 0),
@@ -512,8 +527,8 @@
                     D = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1 }),
                     l = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1, YEAR_MONTH: 2 });
                 var s = t(5521),
-                    B = t(5067);
-                const o = ['args'];
+                    o = t(9768);
+                const B = ['args'];
                 function C(u, e, t, E, A, r, F) {
                     try {
                         var a = u[r](F),
@@ -565,7 +580,7 @@
                                         r = Object.keys(u);
                                     for (E = 0; E < r.length; E++) (t = r[E]), e.indexOf(t) >= 0 || (A[t] = u[t]);
                                     return A;
-                                })(e, o);
+                                })(e, B);
                             void 0 !== A
                                 ? viewEnv.handleViewEvent(
                                       Object.assign({ __Type: t, type: u }, r, {
@@ -613,17 +628,17 @@
                             _(a.CONTEXT_MENU, { isMouseEvent: !0, contentID: u, on: !0, decoratorID: t, args: e });
                         },
                         sendShowPopOverEvent: (u, e, t, E, A = R.invalid('resId'), r) => {
-                            const F = B.O.view.getViewGlobalPosition(),
+                            const F = o.O.view.getViewGlobalPosition(),
                                 n = t.getBoundingClientRect(),
                                 i = n.x,
                                 D = n.y,
                                 l = n.width,
                                 s = n.height,
-                                o = {
-                                    x: B.O.view.pxToRem(i) + F.x,
-                                    y: B.O.view.pxToRem(D) + F.y,
-                                    width: B.O.view.pxToRem(l),
-                                    height: B.O.view.pxToRem(s),
+                                B = {
+                                    x: o.O.view.pxToRem(i) + F.x,
+                                    y: o.O.view.pxToRem(D) + F.y,
+                                    width: o.O.view.pxToRem(l),
+                                    height: o.O.view.pxToRem(s),
                                 };
                             _(a.POP_OVER, {
                                 isMouseEvent: !0,
@@ -631,7 +646,7 @@
                                 decoratorID: E || R.invalid('resId'),
                                 targetID: A,
                                 direction: e,
-                                bbox: c(o),
+                                bbox: c(B),
                                 on: !0,
                                 args: r,
                             });
@@ -716,7 +731,7 @@
                             ? u
                             : null
                         : u;
-                var F = t(5067);
+                var F = t(9768);
                 const a = {
                     extraLarge: { weight: 4, width: 2560, height: 1440 },
                     large: { weight: 3, width: 1920, height: 1080 },
@@ -793,8 +808,8 @@
                 const D = F.O.client.getSize('rem'),
                     l = D.width,
                     s = D.height,
-                    B = Object.assign({ width: l, height: s }, i(l, s, a)),
-                    o = (0, E.createContext)(B),
+                    o = Object.assign({ width: l, height: s }, i(l, s, a)),
+                    B = (0, E.createContext)(o),
                     C = ['children'];
                 const c = (u) => {
                     let e = u.children,
@@ -807,7 +822,7 @@
                             for (E = 0; E < r.length; E++) (t = r[E]), e.indexOf(t) >= 0 || (A[t] = u[t]);
                             return A;
                         })(u, C);
-                    const A = (0, E.useContext)(o),
+                    const A = (0, E.useContext)(B),
                         F = A.extraLarge,
                         a = A.large,
                         n = A.medium,
@@ -815,7 +830,7 @@
                         D = A.extraSmall,
                         l = A.extraLargeWidth,
                         s = A.largeWidth,
-                        B = A.mediumWidth,
+                        o = A.mediumWidth,
                         c = A.smallWidth,
                         d = A.extraSmallWidth,
                         _ = A.extraLargeHeight,
@@ -833,7 +848,7 @@
                     } else {
                         if (t.extraLargeWidth && l) return r(e, t, w);
                         if (t.largeWidth && s) return r(e, t, w);
-                        if (t.mediumWidth && B) return r(e, t, w);
+                        if (t.mediumWidth && o) return r(e, t, w);
                         if (t.smallWidth && c) return r(e, t, w);
                         if (t.extraSmallWidth && d) return r(e, t, w);
                         if (
@@ -871,7 +886,7 @@
                         e.current || (u(), (e.current = !0));
                     },
                     _ = ({ children: u }) => {
-                        const e = (0, E.useContext)(o),
+                        const e = (0, E.useContext)(B),
                             t = (0, E.useState)(e),
                             r = t[0],
                             n = t[1],
@@ -895,7 +910,7 @@
                                 [D, l],
                             );
                         const s = (0, E.useMemo)(() => Object.assign({}, r), [r]);
-                        return A().createElement(o.Provider, { value: s }, u);
+                        return A().createElement(B.Provider, { value: s }, u);
                     };
                 var m = t(6483),
                     h = t.n(m),
@@ -924,7 +939,7 @@
                             (u[(u.ExtraLarge = a.extraLarge.height)] = 'ExtraLarge');
                     })(f || (f = {}));
                 const x = () => {
-                        const u = (0, E.useContext)(o),
+                        const u = (0, E.useContext)(B),
                             e = u.width,
                             t = u.height,
                             A = ((u) => {
@@ -1006,7 +1021,7 @@
                         [f.Large]: `${v().SMALL_HEIGHT} ${v().MEDIUM_HEIGHT} ${v().LARGE_HEIGHT}`,
                         [f.ExtraLarge]: `${v().SMALL_HEIGHT} ${v().MEDIUM_HEIGHT} ${v().LARGE_HEIGHT} ${v().EXTRA_LARGE_HEIGHT}`,
                     },
-                    M = {
+                    y = {
                         [w.ExtraSmall]: '',
                         [w.Small]: v().SMALL,
                         [w.Medium]: `${v().SMALL} ${v().MEDIUM}`,
@@ -1029,10 +1044,10 @@
                             F = r.mediaWidth,
                             a = r.mediaHeight,
                             n = r.mediaSize;
-                        return A().createElement('div', L({ className: h()(t, S[F], T[a], M[n]) }, E), e);
+                        return A().createElement('div', L({ className: h()(t, S[F], T[a], y[n]) }, E), e);
                     },
-                    y = ['children'];
-                const I = (u) => {
+                    M = ['children'];
+                const P = (u) => {
                     let e = u.children,
                         t = (function (u, e) {
                             if (null == u) return {};
@@ -1042,15 +1057,15 @@
                                 r = Object.keys(u);
                             for (E = 0; E < r.length; E++) (t = r[E]), e.indexOf(t) >= 0 || (A[t] = u[t]);
                             return A;
-                        })(u, y);
+                        })(u, M);
                     return A().createElement(_, null, A().createElement(O, t, e));
                 };
-                var H = t(493),
-                    k = t.n(H);
-                let P, W, N;
+                var I = t(493),
+                    k = t.n(I);
+                let H, W, N;
                 !(function (u) {
                     (u.Personal = 'personal'), (u.Clan = 'clan'), (u.Event = 'event');
-                })(P || (P = {})),
+                })(H || (H = {})),
                     (function (u) {
                         (u[(u.Inactive = 0)] = 'Inactive'), (u[(u.Active = 1)] = 'Active'), (u[(u.Used = 2)] = 'Used');
                     })(W || (W = {})),
@@ -1073,14 +1088,14 @@
                     (u[(u.left = 0)] = 'left'), (u[(u.right = 1)] = 'right');
                 })(G || (G = {}));
                 const z = (u) => u.replace(/&nbsp;/g, ' '),
-                    V = (u, e, t) => {
+                    j = (u, e, t) => {
                         if (t % 2) {
                             const t = u.pop();
                             return [...u, t + e];
                         }
                         return [...u, e];
                     },
-                    j = (u, e, t) => {
+                    V = (u, e, t) => {
                         if (0 === t) return [e];
                         if (t % 2) return [...u, ' ' === e ? ' ' : e];
                         {
@@ -1088,7 +1103,7 @@
                             return [...u, t + e];
                         }
                     },
-                    K = (u, e, t = G.left) => u.split(e).reduce(t === G.left ? V : j, []),
+                    K = (u, e, t = G.left) => u.split(e).reduce(t === G.left ? j : V, []),
                     q = (() => {
                         const u = new RegExp(
                             /[\(\u2E80-\u2E99\u2E9B-\u2EF3\u2F00-\u2FD5\u3005\u3007\u3021-\u3029\u3038-\u303B\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFA6D\uFA70-\uFAD9\u{16FE2}\u{16FE3}\u{16FF0}\u{16FF1}\u{20000}-\u{2A6DF}\u{2A700}-\u{2B738}\u{2B740}-\u{2B81D}\u{2B820}-\u{2CEA1}\u{2CEB0}-\u{2EBE0}\u{2F800}-\u{2FA1D}\u{30000}-\u{3134A}]?[\u3002\uFF01\uFF0C\uFF1A\uFF1B\uFF1F]?[ %\+\x2D-9A-Za-\{\}\xA0\xC0-\u0237\u2013\u2014\u2026]+[\)\u2E80-\u2E99\u2E9B-\u2EF3\u2F00-\u2FD5\u3002\u3005\u3007\u3021-\u3029\u3038-\u303B\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFA6D\uFA70-\uFAD9\uFF01\uFF0C\uFF1A\uFF1B\uFF1F\u{16FE2}\u{16FE3}\u{16FF0}\u{16FF1}\u{20000}-\u{2A6DF}\u{2A700}-\u{2B738}\u{2B740}-\u{2B81D}\u{2B820}-\u{2CEA1}\u{2CEB0}-\u{2EBE0}\u{2F800}-\u{2FA1D}\u{30000}-\u{3134A}]?[\u3002\uFF01\uFF0C\uFF1A\uFF1B\uFF1F]?/gmu
@@ -1214,11 +1229,11 @@
                         return '';
                     },
                     su = Z.Sw.instance;
-                let Bu;
+                let ou;
                 !(function (u) {
                     (u.None = 'None'), (u.Shallow = 'Shallow'), (u.Deep = 'Deep');
-                })(Bu || (Bu = {}));
-                const ou = (u = 'model', e = Bu.Deep) => {
+                })(ou || (ou = {}));
+                const Bu = (u = 'model', e = ou.Deep) => {
                         const t = (0, E.useState)(0),
                             A = (t[0], t[1]),
                             r = (0, E.useMemo)(() => Fu(), []),
@@ -1242,24 +1257,24 @@
                             d(() => {
                                 if (
                                     ('boolean' == typeof e &&
-                                        ((e = e ? Bu.Deep : Bu.None),
+                                        ((e = e ? ou.Deep : ou.None),
                                         console.warn(
                                             'Boolean key for useModel "tracking" param is deprecated. Use ModelTracking enum values instead!',
                                         )),
-                                    e !== Bu.None)
+                                    e !== ou.None)
                                 ) {
                                     const t = (u) => {
                                             ((u) => u && 'CoherentArrayProxy' === u.__proto__.constructor.name)(u) &&
-                                            e === Bu.Deep
+                                            e === ou.Deep
                                                 ? (u === D && A((u) => u + 1), l(u))
                                                 : l(Object.assign([], u));
                                         },
                                         E = lu(u);
-                                    s.current = su.addCallback(E, t, a, e === Bu.Deep);
+                                    s.current = su.addCallback(E, t, a, e === ou.Deep);
                                 }
                             }),
                             (0, E.useEffect)(() => {
-                                if (e !== Bu.None)
+                                if (e !== ou.None)
                                     return () => {
                                         su.removeCallback(s.current, a);
                                     };
@@ -1269,7 +1284,9 @@
                     },
                     Cu = (Z.Sw.instance, ru);
                 function cu(u) {
-                    engine.call('PlaySound', u);
+                    engine.call('PlaySound', u).catch((e) => {
+                        console.error('[lib/sounds.js] playSound(', u, '): ', e);
+                    });
                 }
                 const du = {
                     playHighlight() {
@@ -1286,7 +1303,7 @@
                 !(function (u) {
                     (u.Personal = 'personal'), (u.Clan = 'clan'), (u.Event = 'event');
                 })(_u || (_u = {}));
-                const mu = { [P.Personal]: _u.Personal, [P.Event]: _u.Event, [P.Clan]: _u.Clan };
+                const mu = { [H.Personal]: _u.Personal, [H.Event]: _u.Event, [H.Clan]: _u.Clan };
                 function hu(u, e) {
                     const t = mu[e];
                     return u.some((u) => u.categoryType === t && u.isDisabled);
@@ -1301,9 +1318,9 @@
                     Lu = 'App_entryIcon__disabled_e9',
                     Su = 'App_reserveBlocksContainer_46',
                     Tu = 'App_reserveBlock_c0',
-                    Mu = 'App_reserveBlock__disabled_79',
+                    yu = 'App_reserveBlock__disabled_79',
                     Ou = 'App_reserveButton_89',
-                    yu = 'FormatText_base_d0',
+                    Mu = 'FormatText_base_d0',
                     Ru = ({ binding: u, text: e = '', classMix: t, alignment: r = G.left, formatWithBrackets: F }) => {
                         if (null === e) return console.error("FormatText was supplied with 'null'"), null;
                         const a = F && u ? $(e, u) : e;
@@ -1313,7 +1330,7 @@
                             a.split('\n').map((e, F) =>
                                 A().createElement(
                                     'div',
-                                    { className: h()(yu, t), key: `${e}-${F}` },
+                                    { className: h()(Mu, t), key: `${e}-${F}` },
                                     ((u, e, t) =>
                                         u.split(/%\((.*?)\)(?:[sd])?/g).map((u) => (t && u in t ? t[u] : X(u, e))))(
                                         e,
@@ -1324,7 +1341,7 @@
                             ),
                         );
                     },
-                    Iu = (u = 0, e = 1, t, A, r = !1) => {
+                    Pu = (u = 0, e = 1, t, A, r = !1) => {
                         const F = (0, E.useState)(u),
                             a = F[0],
                             n = F[1];
@@ -1347,7 +1364,7 @@
                             a
                         );
                     },
-                    Hu = {
+                    Iu = {
                         base: 'ReserveIcon_base_26',
                         base__disabled: 'ReserveIcon_base__disabled_99',
                         base__active: 'ReserveIcon_base__active_93',
@@ -1368,39 +1385,39 @@
                         fill_wrapper__medium: 'ReserveIcon_fill_wrapper__medium_c3',
                     },
                     ku = R.strings.personal_reserves.hangarEntry.minute();
-                let Pu;
+                let Hu;
                 !(function (u) {
                     (u.Small = 'Small'), (u.Large = 'Large');
-                })(Pu || (Pu = {}));
+                })(Hu || (Hu = {}));
                 const Wu = ({
                         activeIcon: u,
                         inactiveIcon: e,
                         secondsLeft: t,
                         className: r,
-                        reserveType: F = P.Personal,
+                        reserveType: F = H.Personal,
                         isDisabled: a = !1,
                         totalDuration: n = 3600,
-                        fontSize: i = Pu.Large,
+                        fontSize: i = Hu.Large,
                     }) => {
-                        const D = (0, E.useContext)(o).width <= 1600,
-                            l = Iu(t, 1, 0),
+                        const D = (0, E.useContext)(B).width <= 1600,
+                            l = Pu(t, 1, 0),
                             s = Eu(l),
-                            B = Math.ceil((l / n) * 100),
+                            o = Math.ceil((l / n) * 100),
                             C = l > 0,
                             c = h()(
-                                D ? Hu.base : Hu.base__medium,
-                                F === P.Clan && Hu.base__clan,
-                                F === P.Event && Hu.base__event,
-                                C && a && Hu.base__disabled,
-                                C && Hu.base__active,
+                                D ? Iu.base : Iu.base__medium,
+                                F === H.Clan && Iu.base__clan,
+                                F === H.Event && Iu.base__event,
+                                C && a && Iu.base__disabled,
+                                C && Iu.base__active,
                                 r,
                             ),
-                            d = h()(Hu.icon, C && Hu.icon__active),
+                            d = h()(Iu.icon, C && Iu.icon__active),
                             _ = s.minutes + 60 * s.hours,
-                            m = h()(Hu.minutesLeft, (_ > 99 || i === Pu.Small) && Hu.minutesLeft__smallMinutes);
+                            m = h()(Iu.minutesLeft, (_ > 99 || i === Hu.Small) && Iu.minutesLeft__smallMinutes);
                         return A().createElement(
                             'div',
-                            { className: c, style: { '--height': `${B}%` } },
+                            { className: c, style: { '--height': `${o}%` } },
                             !D && A().createElement('img', { src: C ? u : e, alt: '', className: d }),
                             C &&
                                 A().createElement(
@@ -1409,12 +1426,12 @@
                                     !D && A().createElement(Ru, { binding: { minutesLeft: _ }, text: ku, classMix: m }),
                                     A().createElement(
                                         'div',
-                                        { className: h()(D ? Hu.fill_wrapper : Hu.fill_wrapper__medium) },
+                                        { className: h()(D ? Iu.fill_wrapper : Iu.fill_wrapper__medium) },
                                         A().createElement(
                                             'div',
-                                            { className: Hu.fill },
-                                            D && A().createElement('div', { className: Hu.fill_border }),
-                                            A().createElement('div', { className: Hu.fill_pattern }),
+                                            { className: Iu.fill },
+                                            D && A().createElement('div', { className: Iu.fill_border }),
+                                            A().createElement('div', { className: Iu.fill_pattern }),
                                         ),
                                     ),
                                 ),
@@ -1426,22 +1443,22 @@
                         du.playHighlight();
                     },
                     $u = () => {
-                        const u = ou('model', Bu.Shallow),
+                        const u = Bu('model', ou.Shallow),
                             e = u.totalReserves,
                             t = u.totalLimitedReserves,
                             E = u.expiringReserveWillExpireSoon,
-                            r = ou('model.disabledCategories', Bu.Shallow).map((u) => u.value),
-                            F = ou('model.reserves', Bu.Shallow).map((u) => u.value),
-                            a = Uu(F, P.Personal),
-                            n = Uu(F, P.Clan),
-                            i = Uu(F, P.Event),
+                            r = Bu('model.disabledCategories', ou.Shallow).map((u) => u.value),
+                            F = Bu('model.reserves', ou.Shallow).map((u) => u.value),
+                            a = Uu(F, H.Personal),
+                            n = Uu(F, H.Clan),
+                            i = Uu(F, H.Event),
                             D = Math.max(...F.map((u) => Math.floor((1e3 * u.inactivationTime - Date.now()) / 1e3))),
                             l = Eu(Cu(D, 1)),
-                            s = l.minutes + 60 * l.hours > 99 ? Pu.Small : Pu.Large,
-                            B = a || n || i,
-                            o = (u, e, t = !1) => {
+                            s = l.minutes + 60 * l.hours > 99 ? Hu.Small : Hu.Large,
+                            o = a || n || i,
+                            B = (u, e, t = !1) => {
                                 if (0 === e.length) return null;
-                                const E = h()(Tu, t && Mu);
+                                const E = h()(Tu, t && yu);
                                 return A().createElement(
                                     'div',
                                     { className: E },
@@ -1453,7 +1470,7 @@
                                             F = e.iconId.replace('_premium', ''),
                                             a = R.images.gui.maps.icons.personal_reserves.$dyn(F + '_active'),
                                             n = R.images.gui.maps.icons.personal_reserves.$dyn(F + '_inactive'),
-                                            i = u === P.Clan && r <= 0;
+                                            i = u === H.Clan && r <= 0;
                                         return A().createElement(
                                             'div',
                                             { key: E },
@@ -1477,7 +1494,7 @@
                         return A().createElement(
                             'div',
                             { className: gu, onMouseOver: Gu },
-                            !B &&
+                            !o &&
                                 A().createElement(
                                     'div',
                                     { className: d },
@@ -1492,29 +1509,29 @@
                                 'div',
                                 { className: Su },
                                 (a || n) &&
-                                    o(
-                                        P.Personal,
-                                        F.filter((u) => u.reserveType === P.Personal),
-                                        hu(r, P.Personal),
+                                    B(
+                                        H.Personal,
+                                        F.filter((u) => u.reserveType === H.Personal),
+                                        hu(r, H.Personal),
                                     ),
                                 i &&
-                                    o(
-                                        P.Event,
-                                        F.filter((u) => u.reserveType === P.Event),
-                                        hu(r, P.Event),
+                                    B(
+                                        H.Event,
+                                        F.filter((u) => u.reserveType === H.Event),
+                                        hu(r, H.Event),
                                     ),
                                 n &&
-                                    o(
-                                        P.Clan,
-                                        F.filter((u) => u.reserveType === P.Clan),
-                                        hu(r, P.Clan),
+                                    B(
+                                        H.Clan,
+                                        F.filter((u) => u.reserveType === H.Clan),
+                                        hu(r, H.Clan),
                                     ),
                             ),
                         );
                     };
                 engine.whenReady.then(() => {
                     k().render(
-                        A().createElement(I, null, A().createElement($u, null)),
+                        A().createElement(P, null, A().createElement($u, null)),
                         document.getElementById('root'),
                     );
                 });

@@ -1,21 +1,3 @@
-.Countdown_base_fe {
-    display: flex;
-    align-items: center;
-}
-
-.Countdown_icon_8b {
-    width: 32rem;
-    height: 32rem;
-    background: no-repeat center / contain;
-}
-
-.Countdown_description_8d {
-    color: #ffdd99;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
-
 .TextButton_base_b6 {
     display: flex;
     align-items: center;
@@ -158,305 +140,346 @@
     opacity: 0;
 }
 
-.Complete_base_c3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
+/* card transitions/animations*/
+/* card activation animations*/
+/* card edge transitions/animations*/
+/* infinite title transitions/animations*/
+/* infinite quest animations*/
+/* infinite cards transitions*/
+/* completed screen transitions/animation*/
+@keyframes Card_completed-congrats_46 {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
 
-.Complete_resetTimer_66 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 9rem;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+@keyframes Card_completed-glow_0d {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 10rem);
+    }
 
-.mediaMedium .Complete_resetTimer_66 {
-    margin-top: 17rem;
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
 }
+@keyframes Card_card-show_73 {
+    0% {
+        opacity: 0;
+        top: 65%;
+        left: 50%;
+    }
 
-.Complete_timer_b6 {
-    color: #ffdd99;
-    font-size: 24rem;
-    font-weight: 400;
-    line-height: 1.2;
-    margin-top: -5rem;
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
 }
+@keyframes Card_card-show-presentment_f6 {
+    0% {
+        opacity: 0;
+        top: 200%;
+        left: 10%;
+    }
 
-.Complete_flashline_22 {
-    width: 408rem;
-    height: 12rem;
-    margin-top: 10rem;
-    margin-right: 4rem;
-    background: url('R.images.fun_random.gui.maps.icons.feature.progression.flashline') no-repeat;
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
 }
+@keyframes Card_edge_8b {
+    50% {
+        transform: translate(-1%, -5%) rotate(-2deg);
+    }
 
-.Complete_flashline__left_a9 {
-    margin-left: 9rem;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+    100% {
+        transform: translate(-1%, -10%) rotate(-4deg);
+    }
 }
+@keyframes Card_dissolve_d6 {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
 
-.Complete_title_21 {
-    color: #f2f2f7;
-    font-size: 24rem;
-    font-weight: 700;
-    line-height: 1.2;
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
 }
+@keyframes Card_blink-edge_8f {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scaleY(1);
+    }
 
-.mediaMedium .Complete_title_21 {
-    color: #f2f2f7;
-    font-size: 36rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
+    12.5% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(0.25, 2);
+    }
 
-.Complete_description_20 {
-    color: #e9e2bf;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-top: 9rem;
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -100%) scale(0.01, 3);
+    }
 }
+@keyframes Card_blink_00 {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
 
-.mediaMedium .Complete_description_20 {
-    color: #e9e2bf;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-top: 13rem;
-}
+    12.5% {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.25, 2);
+    }
 
-.Congratulation_base_58 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.01, 3);
+    }
 }
+@keyframes Card_show-down_14 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
 
-.Congratulation_title_42 {
-    color: #80d43a;
-    font-size: 36rem;
-    font-weight: 700;
-    line-height: 1.1;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+@keyframes Card_show-up_9a {
+    0% {
+        opacity: 0;
+        transform: translateY(30rem);
+    }
 
-.mediaLarge .Congratulation_title_42 {
-    color: #80d43a;
-    font-size: 56rem;
-    font-weight: 700;
-    line-height: 1.1;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+@keyframes Card_show_40 {
+    0% {
+        opacity: 0;
+    }
 
-.Congratulation_description_b8 {
-    color: #e9e2bf;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-top: 8rem;
+    100% {
+        opacity: 1;
+    }
 }
+@keyframes Card_hide_3a {
+    0% {
+        opacity: 1;
+    }
 
-.mediaLarge .Congratulation_description_b8 {
-    margin-top: 16rem;
+    100% {
+        opacity: 0;
+    }
 }
+@keyframes Card_showGlow_a5 {
+    0% {
+        opacity: 0;
+    }
 
-/*
-    Gameface can't calculate gradient biggest than 8128px
-    in JS 8000 reserved like anchor for start optimization
-*/
-/* stylelint-disable-line */
-.ProgressBar_base_45 {
-    width: 100%;
-    height: 12rem;
-    position: relative;
+    100% {
+        opacity: 0.7;
+    }
 }
-.ProgressBar_base__small_df {
-    height: 2rem;
+@keyframes Card_hideGlow_25 {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
-.ProgressBar_background_51 {
-    width: 100%;
-    max-width: 8001px;
-    height: 100%;
-    background-image: var(--progress-base);
-    background-repeat: repeat;
-    background-position: 0 50%;
-    background-size: 3rem 10rem;
+@keyframes Card_pointFadeOut_e0 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+@keyframes Card_pointFadeIn_01 {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Card_first2void_8a {
+    0% {
+        opacity: 1;
+        transform: translate(0%, 0%) rotate(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+}
+@keyframes Card_second2firstTranslate_f3 {
+    0% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+}
+@keyframes Card_second2firstRotate_22 {
+    0% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0);
+    }
+}
+@keyframes Card_third2second_a9 {
+    0% {
+        transform: translate(0%, 3%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+}
+/* asset paths*/
+.Card_base_74 {
+    width: 143rem;
+    height: 261rem;
+}
+.Card_base__big_79 {
+    width: 220rem;
+    height: 400rem;
+}
+.Card_glow_c0 {
     position: absolute;
     top: 0;
-    left: 0;
-}
-.ProgressBar_background__small_46 {
-    height: 2rem;
-}
-.ProgressBar_lineWrapper_6a {
-    display: flex;
-    flex: 1;
-}
-
-.ProgressBarBlink_base_24 {
-    width: 60rem;
-    height: 100rem;
-    background-image: var(--progress-glow);
-    background-size: contain;
-    mix-blend-mode: lighten;
-    position: absolute;
-    top: 50%;
     right: 0;
-    transform: translate(50%, -50%);
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 145%;
+    height: 135.5%;
+    background: url('R.images.fun_random.gui.maps.icons.feature.progression.cards.glow_active') 0 0 / 100% 100%
+        no-repeat;
+    opacity: 0.7;
+    top: -16.2%;
+    left: 50%;
+    transform: translateX(-50%);
     pointer-events: none;
 }
-
-.ProgressBarBlink_base__small_0f {
-    width: 44rem;
-    height: 43rem;
-    background-image: var(--progress-glow-small);
+.Card_base__active_5a .Card_glow_c0,
+.Card_base__animation_hiding_glow_89 .Card_glow_c0,
+.Card_base__animation_showing_glow_6b .Card_glow_c0 {
+    display: block;
 }
-
-/*
-    Gameface can't calculate gradient biggest than 8128px
-    in JS 8000 reserved like anchor for start optimization
-*/
-/* stylelint-disable-line */
-.ProgressLineImpose_base_80 {
-    max-width: 8001px;
-    height: 100%;
-    background-color: var(--progress-line-base);
-    position: relative;
-    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
-    transition-property: width;
+.Card_base__animation_showing_glow_6b .Card_glow_c0 {
+    opacity: 0;
+    animation: Card_showGlow_a5 0.05s ease-in forwards;
 }
-.ProgressLineImpose_base__disabled_cc {
-    background-color: var(--progress-line-disabled);
+.Card_base__animation_hiding_glow_89 .Card_glow_c0 {
+    opacity: 0.7;
+    animation: Card_hideGlow_25 0.15s ease-in 0.1s forwards;
 }
-.ProgressLineImpose_base__finished_d4 {
-    background-color: var(--progress-line-finished);
-}
-.ProgressLineImpose_base__withoutBounce_56 {
-    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
-}
-.ProgressLineImpose_pattern_1c {
-    max-width: 8001px;
-    background-image: var(--progress-pattern-base);
-    background-repeat: repeat;
-    background-position: 0 50%;
-    background-size: 3rem 10rem;
+.Card_particles_f2 {
+    display: none;
+    width: 100%;
+    height: 10%;
+    background: url('R.images.fun_random.gui.maps.icons.feature.progression.cards.particles') 0 0 / 100% 100% no-repeat;
+    opacity: 1;
+    mix-blend-mode: screen;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    bottom: 1rem;
-    left: 1rem;
+    top: 22%;
+    z-index: 2;
+    pointer-events: none;
 }
-.ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
-    top: 0;
-    bottom: 0;
+.Card_base__detaching_f9 .Card_particles_f2,
+.Card_base__detaching_active_d5 .Card_particles_f2 {
+    display: block;
+    opacity: 0;
+    animation: Card_dissolve_d6 0.3s 0.5s ease-out forwards;
 }
-.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
-    background-image: var(--progress-pattern-disabled);
-    left: 0;
-}
-.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
-    background-image: var(--progress-pattern-finished);
-}
-.ProgressLineImpose_gradient_35 {
-    max-width: 8001px;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75));
+.Card_blink_00 {
+    width: 85%;
+    height: 1%;
+    background: linear-gradient(45deg, transparent 0%, rgba(218, 155, 82, 0.38) 38%, #da6a52 100%);
+    filter: blur(15rem);
+    opacity: 0;
     mix-blend-mode: overlay;
     position: absolute;
-    top: 1rem;
-    right: 0;
-    bottom: 1rem;
-    left: 0;
+    top: 27.86%;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+    transform-origin: top left;
 }
-.ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
-    top: 0;
-    bottom: 0;
+.Card_base__detaching_f9 .Card_blink_00 {
+    animation: Card_blink_00 0.2s 0.5s ease-in forwards;
 }
-.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
-    display: none;
-}
-.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5));
-}
-.ProgressLineImpose_glow_a5 {
-    width: 60rem;
-    max-width: 8001px;
-    height: 100rem;
-    background-image: var(--progress-glow);
-    background-size: contain;
-    mix-blend-mode: lighten;
+.Card_image_62 {
     position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 192rem;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    filter: drop-shadow(0 0 20rem rgba(0, 0, 0, 0.45)) contrast(80%);
+    top: 69rem;
+    z-index: 1;
     pointer-events: none;
 }
-.ProgressLineImpose_glow__left_d8 {
-    left: 1rem;
+.Card_base__active_5a .Card_image_62 {
+    filter: none;
 }
-.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
-.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
-    display: none;
+.Card_base__big_79 .Card_image_62 {
+    height: 295rem;
+    top: 105rem;
 }
-.ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
-    width: 44rem;
-    height: 43rem;
-    background-image: var(--progress-glow-small);
-}
-
-/*
-    Gameface can't calculate gradient biggest than 8128px
-    in JS 8000 reserved like anchor for start optimization
-*/
-/* stylelint-disable-line */
-.ProgressBarDeltaSimple_base_6c {
-    width: 0;
-    height: 100%;
+.Card_shadow_17 {
     position: absolute;
     top: 0;
-}
-.ProgressBarDeltaSimple_delta_99 {
-    width: 0;
-    max-width: 8001px;
-    height: 100%;
-    box-shadow: var(--progress-delta-shadow);
-    background-color: var(--progress-delta-color);
-    position: absolute;
+    right: 0;
     bottom: 0;
-    transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, 0.92, 1), cubic-bezier(0.21, 0.61, 0.35, 1);
-    transition-property: width, transform;
-}
-
-/*
-    Gameface can't calculate gradient biggest than 8128px
-    in JS 8000 reserved like anchor for start optimization
-*/
-/* stylelint-disable-line */
-.ProgressBarDeltaGrow_base_7e {
-    width: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    mask-position: 0 0;
+    mask-size: 100% 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
-    transition-property: width;
-}
-.ProgressBarDeltaGrow_base__withoutBounce_b5 {
-    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
-}
-.ProgressBarDeltaGrow_glow_68 {
-    width: 0;
-    max-width: 8001px;
-    height: 100%;
-    box-shadow: var(--progress-delta-shadow);
-    background-color: var(--progress-delta-color);
-    position: absolute;
-    bottom: 0;
-    transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
-    transition-property: width;
-}
-.ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
-    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+    z-index: 2;
+    pointer-events: none;
 }
 
 .Reward_base_ea {
@@ -583,10 +606,11 @@
 }
 
 .Reward_info_72 {
-    margin-top: -13rem;
     color: #e9e2bf;
     font-size: 14rem;
-    line-height: 18rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: -13rem;
     text-align: center;
     z-index: 1;
 }
@@ -622,6 +646,27 @@
     color: #ffdd99;
 }
 
+.Reward_title_36 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 80rem;
+    margin: -13rem -16rem 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.mediaMedium .Reward_title_36 {
+    max-width: 100rem;
+    margin-left: -10rem;
+    margin-right: -10rem;
+}
+
 .Reward_timer_d3 {
     background: no-repeat center / contain;
     position: absolute;
@@ -646,20 +691,1034 @@
     right: -14rem;
 }
 
-.Rewards_base_26 {
+/* card transitions/animations*/
+/* card activation animations*/
+/* card edge transitions/animations*/
+/* infinite title transitions/animations*/
+/* infinite quest animations*/
+/* infinite cards transitions*/
+/* completed screen transitions/animation*/
+@keyframes CardContent_completed-congrats_1b {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes CardContent_completed-glow_9a {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+@keyframes CardContent_card-show_d9 {
+    0% {
+        opacity: 0;
+        top: 65%;
+        left: 50%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes CardContent_card-show-presentment_a3 {
+    0% {
+        opacity: 0;
+        top: 200%;
+        left: 10%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes CardContent_edge_f0 {
+    50% {
+        transform: translate(-1%, -5%) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(-1%, -10%) rotate(-4deg);
+    }
+}
+@keyframes CardContent_dissolve_a8 {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+@keyframes CardContent_blink-edge_c8 {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scaleY(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -100%) scale(0.01, 3);
+    }
+}
+@keyframes CardContent_blink_31 {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.01, 3);
+    }
+}
+@keyframes CardContent_show-down_ff {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes CardContent_show-up_d3 {
+    0% {
+        opacity: 0;
+        transform: translateY(30rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes CardContent_show_c9 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes CardContent_hide_cb {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes CardContent_showGlow_60 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+@keyframes CardContent_hideGlow_96 {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes CardContent_pointFadeOut_69 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+@keyframes CardContent_pointFadeIn_91 {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes CardContent_first2void_b7 {
+    0% {
+        opacity: 1;
+        transform: translate(0%, 0%) rotate(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+}
+@keyframes CardContent_second2firstTranslate_b5 {
+    0% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+}
+@keyframes CardContent_second2firstRotate_e0 {
+    0% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0);
+    }
+}
+@keyframes CardContent_third2second_54 {
+    0% {
+        transform: translate(0%, 3%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+}
+/* asset paths*/
+.CardContent_base_67 {
     display: flex;
-}
-
-.Rewards_base__vertical_9f {
     flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 55%;
+    position: relative;
+}
+.CardContent_rewards_ef {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 1rem;
+    padding: 11% 0;
+    z-index: 1;
+}
+.CardContent_base__big_61 .CardContent_rewards_ef {
+    padding-block: 8.5%;
+    margin-left: 0;
+}
+.CardContent_rewardSlot_e7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52rem;
+    height: 52rem;
+    margin: 2rem;
+    background: url('R.images.fun_random.gui.maps.icons.feature.progression.cards.reward_background') 0 0 / 100% 100%
+        no-repeat;
+}
+.CardContent_base__big_61 .CardContent_rewardSlot_e7 {
+    width: 84rem;
+    height: 84rem;
+    margin: 2rem;
+}
+.CardContent_reward_3f {
+    transition: opacity 0.2s 0.6s ease-out;
+}
+.CardContent_base__detached_05 .CardContent_reward_3f,
+.CardContent_base__detaching_52 .CardContent_reward_3f,
+.CardContent_base__detaching_active_97 .CardContent_reward_3f,
+.CardContent_base__deactivating_ae .CardContent_reward_3f {
+    opacity: 0.5;
+}
+.CardContent_base__small_8d .CardContent_rewardInfo_14 {
+    color: #37362e;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: -15rem;
+    font-weight: 700;
+}
+.CardContent_base__big_61 .CardContent_rewardInfo_14 {
+    color: #37362e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: -16rem;
+    font-weight: 700;
+}
+.CardContent_rewardImage_f8 {
+    bottom: 5rem;
+}
+.CardContent_base__big_61 .CardContent_rewardImage_f8 {
+    bottom: 0;
+}
+.CardContent_rewardImage__battleToken_ee {
+    bottom: 0;
+}
+.CardContent_base__ordinary_57 .CardContent_cardNumber_bc {
+    color: #656565;
+}
+.CardContent_base__unusual_a6 .CardContent_cardNumber_bc {
+    color: #606636;
+}
+.CardContent_base__rare_f8 .CardContent_cardNumber_bc {
+    color: #556486;
+}
+.CardContent_base__legendary_a8 .CardContent_cardNumber_bc {
+    color: #9a6f10;
+}
+.CardContent_base__epic_6c .CardContent_cardNumber_bc {
+    color: #826796;
+}
+.CardContent_cardNumber_bc {
+    margin-top: 4rem;
+    font-size: 12rem;
+    font-weight: 700;
+    line-height: 20rem;
+    text-align: center;
+    z-index: 1;
+}
+.CardContent_base__big_61 .CardContent_cardNumber_bc {
+    margin-top: 2rem;
+    font-size: 18rem;
+    line-height: 28rem;
+}
+.CardContent_infinity_56 {
+    width: 18rem;
+    height: 10rem;
+    margin-top: 6rem;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+}
+.CardContent_base__big_61 .CardContent_infinity_56 {
+    width: 24rem;
+    height: 13rem;
+    margin-top: 9rem;
+}
+.CardContent_shadow_35 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    mask-position: 0 0;
+    mask-size: 100% 100%;
+    display: none;
+    height: 192rem;
+    top: auto;
+    z-index: 2;
+    pointer-events: none;
+}
+.CardContent_base__inactive_22 .CardContent_shadow_35 {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.CardContent_base__big_61 .CardContent_shadow_35 {
+    height: 295rem;
+}
+.CardContent_base__detached_05 .CardContent_shadow_35,
+.CardContent_base__detaching_52 .CardContent_shadow_35,
+.CardContent_base__deactivating_ae .CardContent_shadow_35,
+.CardContent_base__inactive_22 .CardContent_shadow_35 {
+    display: block;
+}
+.CardContent_pattern_13 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('R.images.fun_random.gui.maps.icons.feature.progression.cards.pattern');
+    top: auto;
+    bottom: 0;
+    z-index: 2;
+    pointer-events: none;
+    mask-position: 0 0;
+    mask-size: 100% 100%;
 }
 
-.Rewards_reward_7b {
-    margin: 0 10rem;
+/* card transitions/animations*/
+/* card activation animations*/
+/* card edge transitions/animations*/
+/* infinite title transitions/animations*/
+/* infinite quest animations*/
+/* infinite cards transitions*/
+/* completed screen transitions/animation*/
+@keyframes CardEdge_completed-congrats_24 {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes CardEdge_completed-glow_85 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+@keyframes CardEdge_card-show_32 {
+    0% {
+        opacity: 0;
+        top: 65%;
+        left: 50%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes CardEdge_card-show-presentment_c0 {
+    0% {
+        opacity: 0;
+        top: 200%;
+        left: 10%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes CardEdge_edge_42 {
+    50% {
+        transform: translate(-1%, -5%) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(-1%, -10%) rotate(-4deg);
+    }
+}
+@keyframes CardEdge_dissolve_77 {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+@keyframes CardEdge_blink-edge_3e {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scaleY(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -100%) scale(0.01, 3);
+    }
+}
+@keyframes CardEdge_blink_9c {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.01, 3);
+    }
+}
+@keyframes CardEdge_show-down_1f {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes CardEdge_show-up_48 {
+    0% {
+        opacity: 0;
+        transform: translateY(30rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes CardEdge_show_eb {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes CardEdge_hide_a5 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes CardEdge_showGlow_5e {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+@keyframes CardEdge_hideGlow_71 {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes CardEdge_pointFadeOut_75 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+@keyframes CardEdge_pointFadeIn_0b {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes CardEdge_first2void_af {
+    0% {
+        opacity: 1;
+        transform: translate(0%, 0%) rotate(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+}
+@keyframes CardEdge_second2firstTranslate_79 {
+    0% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+}
+@keyframes CardEdge_second2firstRotate_39 {
+    0% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0);
+    }
+}
+@keyframes CardEdge_third2second_40 {
+    0% {
+        transform: translate(0%, 3%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+}
+/* asset paths*/
+.CardEdge_base_be {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 77rem;
+    padding-top: 4rem;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    filter: drop-shadow(0 -5rem 5rem rgba(0, 0, 0, 0.45)) contrast(80%);
+    top: 0;
+    z-index: 2;
+    transform-origin: 50% 50%;
+    pointer-events: none;
+}
+.CardEdge_base__active_7b {
+    filter: none;
+}
+.CardEdge_base__big_b5 {
+    height: 118rem;
+    padding-top: 11rem;
+}
+.CardEdge_base__detached_e9,
+.CardEdge_base__deactivating_15 {
+    background-size: 100% 100%;
+    transform: translate(-1%, -10%) rotate(-4deg);
+}
+.CardEdge_base__detaching_44,
+.CardEdge_base__detaching_active_77 {
+    background-size: 100% 100%;
+    animation: CardEdge_edge_42 0.15s 0.4s cubic-bezier(0, 0.01, 0.68, 0.99) forwards;
+}
+.CardEdge_pattern_ff {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('R.images.fun_random.gui.maps.icons.feature.progression.cards.pattern');
+    z-index: 2;
+    pointer-events: none;
+    mask-position: 0 0;
+    mask-size: 100% 100%;
+}
+.CardEdge_base__ordinary_1c .CardEdge_pointsTitle_ea {
+    color: #656565;
+}
+.CardEdge_base__unusual_75 .CardEdge_pointsTitle_ea {
+    color: #606636;
+}
+.CardEdge_base__rare_8f .CardEdge_pointsTitle_ea {
+    color: #556486;
+}
+.CardEdge_base__legendary_cf .CardEdge_pointsTitle_ea {
+    color: #9a6f10;
+}
+.CardEdge_base__epic_28 .CardEdge_pointsTitle_ea {
+    color: #826796;
+}
+.CardEdge_pointsTitle_ea {
+    font-size: 12rem;
+    font-weight: 700;
+    line-height: 21rem;
+    text-align: center;
+}
+.CardEdge_base__big_b5 .CardEdge_pointsTitle_ea {
+    font-size: 17rem;
+}
+.CardEdge_pointsValue_67 {
+    margin-top: -5rem;
+    color: #e9e2bf;
+    font-size: 36rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 100%;
+    text-align: center;
+    text-shadow: 0 0 7rem rgba(0, 0, 0, 0.34);
+}
+.CardEdge_base__big_b5 .CardEdge_pointsValue_67 {
+    margin-top: -4rem;
+    font-size: 60rem;
+}
+.CardEdge_blinkEdge_cc {
+    width: 85%;
+    height: 5%;
+    background: linear-gradient(135deg, transparent 0%, rgba(218, 155, 82, 0.38) 38%, #da6a52 100%);
+    filter: blur(15rem);
+    opacity: 0;
+    mix-blend-mode: overlay;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -100%);
+    transform-origin: bottom left;
+}
+.CardEdge_base__detaching_44 .CardEdge_blinkEdge_cc {
+    animation: CardEdge_blink-edge_3e 0.2s 0.5s ease-in forwards;
+}
+.CardEdge_shadow_8b {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    mask-position: 0 0;
+    mask-size: 100% 100%;
+    display: none;
+    height: 77rem;
+    z-index: 2;
+    pointer-events: none;
+}
+.CardEdge_base__inactive_e8 .CardEdge_shadow_8b {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.CardEdge_base__big_b5 .CardEdge_shadow_8b {
+    height: 118rem;
+}
+.CardEdge_base__detached_e9 .CardEdge_shadow_8b,
+.CardEdge_base__detaching_44 .CardEdge_shadow_8b,
+.CardEdge_base__deactivating_15 .CardEdge_shadow_8b,
+.CardEdge_base__inactive_e8 .CardEdge_shadow_8b {
+    display: block;
 }
 
-.Rewards_reward__vertical_c6 {
-    margin: 15rem 0;
+.CardsFan_base_fa {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.CardsFan_cardHolder_86 {
+    width: 143rem;
+    height: 261rem;
+    position: relative;
+}
+
+.CardsFan_base__big_70 .CardsFan_cardHolder_86 {
+    width: 220rem;
+    height: 400rem;
+}
+
+.CardsFan_card_31 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 1s;
+}
+
+.CardsFan_base__final_1a .CardsFan_card_31 {
+    transition-delay: 0.5s;
+}
+
+.CardsFan_card__active_02 {
+    z-index: 2;
+}
+
+.CardsFan_cardHidden_4c {
+    display: none;
+}
+
+.CardsProgression_base_a3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.CardsProgression_cardsFan_3e {
+    width: 100%;
+}
+
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.6);
+    position: relative;
+    cursor: pointer;
+}
+
+.CButton_base__main_42,
+.CButton_base__primary_7f,
+.CButton_base__primaryGreen_6f,
+.CButton_base__primaryRed_ec,
+.CButton_base__secondary_50 {
+    background-size: 100% 100%;
+}
+
+.CButton_base__main_42 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_main');
+}
+
+.CButton_base__primary_7f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+
+.CButton_base__primaryGreen_6f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+
+.CButton_base__primaryRed_ec {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+
+.CButton_base__secondary_50 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+
+.CButton_base__ghost_ed {
+    border-radius: 3rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 0 1rem rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.CButton_base__extraSmall_27 {
+    min-height: 17rem;
+    padding: 0 16rem;
+}
+
+.CButton_base__small_df,
+.CButton_base__medium_74 {
+    padding: 0 20rem;
+}
+
+.CButton_base__small_df {
+    min-height: 18rem;
+}
+
+.CButton_base__medium_74 {
+    min-height: 32rem;
+}
+
+.CButton_base__large_5c {
+    min-height: 48rem;
+}
+
+.CButton_base__disabled_d9 {
+    cursor: default;
+}
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+}
+.CButton_base__primary_7f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+.CButton_base__secondary_50 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow 0.16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+    border-radius: 2rem;
+    box-shadow: inset 0 0 2rem 1rem rgba(255, 85, 0, 0.2);
+}
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(
+        180deg,
+        rgba(252, 248, 235, 0.25) 0%,
+        rgba(252, 248, 235, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0;
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+    opacity: 1;
+}
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+    box-shadow: 0 15rem 12rem 0 rgba(242, 242, 230, 0.11) inset;
+    background-color: rgba(8, 6, 0, 0.18);
+    background-image: none;
+}
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+    opacity: 0;
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+    opacity: 1;
+}
+.CButton_stateDisabled_54 {
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem 15rem;
+    visibility: hidden;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+    visibility: inherit;
+}
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: 0.03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang='ja'],
+.CButton_content_cc[lang='ko'],
+.CButton_content_cc[lang='zh_tw'],
+.CButton_content_cc[lang='zh_sg'],
+.CButton_content_cc[lang='zh_cn'],
+.CButton_content_cc[lang='th'] {
+    font-weight: 400;
+}
+.CButton_base__main_42 .CButton_content_cc,
+.CButton_base__primaryRed_ec .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #600;
+}
+.CButton_base__secondary_50 .CButton_content_cc {
+    color: rgba(254, 254, 236, 0.75);
+}
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #1c2502;
+}
+.CButton_base__extraSmall_27 .CButton_content_cc {
+    font-size: 12rem;
+}
+.CButton_base__small_df .CButton_content_cc {
+    font-size: 14rem;
+}
+.CButton_base__medium_74 .CButton_content_cc {
+    font-size: 15rem;
+}
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
+}
+.CButton_base__disabled_d9 .CButton_content_cc {
+    opacity: 0.6;
+}
+
+.Countdown_base_fe {
+    display: flex;
+    align-items: center;
+}
+
+.Countdown_icon_8b {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+}
+
+.Countdown_description_8d {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
 }
 
 .FormatText_base_d0 {
@@ -667,386 +1726,4013 @@
     flex-wrap: wrap;
 }
 
-.FormatTextWithColorTags_blackReal_3c {
-    color: #000000;
-}
+/* card transitions/animations*/
+/* card activation animations*/
+/* card edge transitions/animations*/
+/* infinite title transitions/animations*/
+/* infinite quest animations*/
+/* infinite cards transitions*/
+/* completed screen transitions/animation*/
+@keyframes Timer_completed-congrats_a2 {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
 
-.FormatTextWithColorTags_whiteReal_8a {
-    color: #ffffff;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+@keyframes Timer_completed-glow_51 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 10rem);
+    }
 
-.FormatTextWithColorTags_white_16 {
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+@keyframes Timer_card-show_28 {
+    0% {
+        opacity: 0;
+        top: 65%;
+        left: 50%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes Timer_card-show-presentment_07 {
+    0% {
+        opacity: 0;
+        top: 200%;
+        left: 10%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes Timer_edge_b4 {
+    50% {
+        transform: translate(-1%, -5%) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(-1%, -10%) rotate(-4deg);
+    }
+}
+@keyframes Timer_dissolve_e2 {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+@keyframes Timer_blink-edge_41 {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scaleY(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -100%) scale(0.01, 3);
+    }
+}
+@keyframes Timer_blink_32 {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.01, 3);
+    }
+}
+@keyframes Timer_show-down_0c {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Timer_show-up_28 {
+    0% {
+        opacity: 0;
+        transform: translateY(30rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Timer_show_ea {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Timer_hide_72 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes Timer_showGlow_d3 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+@keyframes Timer_hideGlow_9a {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes Timer_pointFadeOut_24 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+@keyframes Timer_pointFadeIn_a4 {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Timer_first2void_5a {
+    0% {
+        opacity: 1;
+        transform: translate(0%, 0%) rotate(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+}
+@keyframes Timer_second2firstTranslate_6c {
+    0% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+}
+@keyframes Timer_second2firstRotate_3f {
+    0% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0);
+    }
+}
+@keyframes Timer_third2second_6d {
+    0% {
+        transform: translate(0%, 3%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+}
+/* asset paths*/
+.Timer_base_77 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+        opacity 0.3s ease-out 0.5s,
+        transform 0.3s ease-out 0.5s;
+}
+.Timer_base__hide_e9 {
+    opacity: 0;
+    transform: translateY(20rem);
+}
+.Timer_base_77 {
     color: #f2f2f7;
+
+    font-size: 14rem;
+
+    font-weight: 400;
+
+    line-height: 1.3;
+}
+.mediaLargeHeight .Timer_base_77 {
+    margin-bottom: 8rem;
+}
+.Timer_titleSeparatorLeft_23,
+.Timer_titleSeparatorRight_6f {
+    display: flex;
+    align-items: center;
+    width: 355rem;
+    height: 4rem;
+    margin: 1rem 16rem 0;
+}
+.Timer_titleSeparatorLeft_23 > .Timer_line_d3,
+.Timer_titleSeparatorRight_6f > .Timer_line_d3 {
+    flex: 1;
+    height: 3rem;
+    border: 1rem solid;
+    border-left: none;
+    border-right: none;
+    opacity: 0.4;
+}
+.Timer_titleSeparatorLeft_23 > .Timer_point_f4,
+.Timer_titleSeparatorRight_6f > .Timer_point_f4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 4rem;
+    box-shadow: 0 0 12rem rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.Timer_titleSeparatorLeft_23 > .Timer_point_f4::after,
+.Timer_titleSeparatorRight_6f > .Timer_point_f4::after {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 6rem #ffffff;
+    background-color: #ffffff;
+    content: '';
+}
+.Timer_titleSeparatorLeft_23 > .Timer_line_d3 {
+    border-image-source: linear-gradient(-90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(-90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+.Timer_titleSeparatorRight_6f > .Timer_line_d3 {
+    border-image-source: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+.Timer_questsRenewTimerTitle_4c {
+    align-items: center;
 }
 
-.FormatTextWithColorTags_whiteOrange_18 {
-    color: #fefeec;
+/* card transitions/animations*/
+/* card activation animations*/
+/* card edge transitions/animations*/
+/* infinite title transitions/animations*/
+/* infinite quest animations*/
+/* infinite cards transitions*/
+/* completed screen transitions/animation*/
+@keyframes CompletedProgression_completed-congrats_e7 {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+@keyframes CompletedProgression_completed-glow_84 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 10rem);
+    }
 
-.FormatTextWithColorTags_whiteSpanish_10 {
-    color: #e9e2bf;
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
 }
+@keyframes CompletedProgression_card-show_e3 {
+    0% {
+        opacity: 0;
+        top: 65%;
+        left: 50%;
+    }
 
-.FormatTextWithColorTags_par_ca {
-    color: #8c8c7e;
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
 }
+@keyframes CompletedProgression_card-show-presentment_ba {
+    0% {
+        opacity: 0;
+        top: 200%;
+        left: 10%;
+    }
 
-.FormatTextWithColorTags_parSecondary_8d {
-    color: #595950;
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
 }
+@keyframes CompletedProgression_edge_e9 {
+    50% {
+        transform: translate(-1%, -5%) rotate(-2deg);
+    }
 
-.FormatTextWithColorTags_parTertiary_a3 {
-    color: #37362e;
+    100% {
+        transform: translate(-1%, -10%) rotate(-4deg);
+    }
 }
+@keyframes CompletedProgression_dissolve_8c {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
 
-.FormatTextWithColorTags_red_60 {
-    color: #ff2717;
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
 }
+@keyframes CompletedProgression_blink-edge_72 {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scaleY(1);
+    }
 
-.FormatTextWithColorTags_redDark_03 {
-    color: #b70000;
+    12.5% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -100%) scale(0.01, 3);
+    }
 }
+@keyframes CompletedProgression_blink_09 {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
 
-.FormatTextWithColorTags_yellow_ad {
-    color: #feab34;
+    12.5% {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.01, 3);
+    }
 }
+@keyframes CompletedProgression_show-down_84 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
 
-.FormatTextWithColorTags_orange_e4 {
-    color: #ee7000;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+@keyframes CompletedProgression_show-up_ec {
+    0% {
+        opacity: 0;
+        transform: translateY(30rem);
+    }
 
-.FormatTextWithColorTags_cream_cd {
-    color: #ffdd99;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+@keyframes CompletedProgression_show_16 {
+    0% {
+        opacity: 0;
+    }
 
-.FormatTextWithColorTags_brown_c8 {
-    color: #cbac77;
+    100% {
+        opacity: 1;
+    }
 }
+@keyframes CompletedProgression_hide_c2 {
+    0% {
+        opacity: 1;
+    }
 
-.FormatTextWithColorTags_greenBright_f0 {
-    color: #80d43a;
+    100% {
+        opacity: 0;
+    }
 }
+@keyframes CompletedProgression_showGlow_04 {
+    0% {
+        opacity: 0;
+    }
 
-.FormatTextWithColorTags_green_c5 {
-    color: #7ab300;
+    100% {
+        opacity: 0.7;
+    }
 }
+@keyframes CompletedProgression_hideGlow_c3 {
+    0% {
+        opacity: 0.7;
+    }
 
-.FormatTextWithColorTags_greenDark_af {
-    color: #497212;
+    100% {
+        opacity: 0;
+    }
 }
+@keyframes CompletedProgression_pointFadeOut_aa {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
-.FormatTextWithColorTags_blueBooster_ac {
-    color: #ccffff;
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
 }
+@keyframes CompletedProgression_pointFadeIn_37 {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
 
-.FormatTextWithColorTags_blueTeamkiller_6f {
-    color: #09e2ff;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+@keyframes CompletedProgression_first2void_74 {
+    0% {
+        opacity: 1;
+        transform: translate(0%, 0%) rotate(0);
+    }
 
-.FormatTextWithColorTags_cred_4e {
-    color: #ced9d9;
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
 }
+@keyframes CompletedProgression_second2firstTranslate_44 {
+    0% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
 
-.FormatTextWithColorTags_gold_90 {
-    color: #ffc363;
+    100% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
 }
+@keyframes CompletedProgression_second2firstRotate_37 {
+    0% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
 
-.FormatTextWithColorTags_bond_71 {
-    color: #c9c9b6;
+    100% {
+        transform: translate(0%, 0%) rotate(0);
+    }
 }
+@keyframes CompletedProgression_third2second_90 {
+    0% {
+        transform: translate(0%, 3%) rotate(-5deg);
+    }
 
-.FormatTextWithColorTags_prom_dd {
-    color: #a29b70;
+    100% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
 }
-
-/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
-
-.FormatTextWithColorTags_parNoWidth_5a {
-    width: 0;
-    color: #8c8c7e;
+/* asset paths*/
+.CompletedProgression_base_c2 {
+    width: 100%;
+    height: 100%;
 }
-
-.Stage_base_99 {
+.CompletedProgression_container_ad {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex: 2;
-    width: auto;
-    height: 231rem;
-    position: relative;
-}
-
-.Stage_rewards_6b {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 104rem;
-    height: 104rem;
-    margin-top: -44rem;
-    position: absolute;
-}
-
-.mediaMedium .Stage_rewards_6b {
     justify-content: center;
-    margin-top: -20rem;
+    align-items: center;
+    width: 100%;
+    margin-top: 10rem;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    opacity: 0;
+    position: absolute;
+    top: 220rem;
+    transform: translateY(0);
 }
-
-.Stage_reward_29 {
-    margin: 4rem 8rem;
+.CompletedProgression_base__final_14 .CompletedProgression_container_ad {
+    animation: CompletedProgression_show-up_ec 0.8s ease-out 2.4s forwards;
 }
-
-.Stage_points_8c {
-    color: #8c8c7e;
+.CompletedProgression_base__final_14.CompletedProgression_base__static_32 .CompletedProgression_container_ad {
+    animation-duration: 0s;
+    animation-delay: 0s;
+}
+.CompletedProgression_base__resettable_5c .CompletedProgression_container_ad {
+    top: 160rem;
+}
+.CompletedProgression_base__resettable_5c.CompletedProgression_base__large_40 .CompletedProgression_container_ad {
+    top: 210rem;
+}
+.CompletedProgression_base__resettable_5c.CompletedProgression_base__extraLarge_0e .CompletedProgression_container_ad {
+    top: 305rem;
+}
+.CompletedProgression_base__medium_a7 .CompletedProgression_container_ad,
+.CompletedProgression_base__large_40 .CompletedProgression_container_ad,
+.CompletedProgression_base__extraLarge_0e .CompletedProgression_container_ad {
+    top: 300rem;
+}
+.CompletedProgression_icon_00 {
+    width: 96rem;
+    height: 96rem;
+    background: 0 0 / 100% 100% no-repeat;
+    opacity: 0;
+    mask: linear-gradient(#000000 0%, transparent 100%) 0 0 / 100% 100%;
+    position: absolute;
+    top: -70rem;
+    z-index: -1;
+}
+.CompletedProgression_base__final_14 .CompletedProgression_icon_00 {
+    animation: CompletedProgression_show-up_ec 0.8s ease-out 2.4s forwards;
+}
+.CompletedProgression_base__final_14.CompletedProgression_base__static_32 .CompletedProgression_icon_00 {
+    animation-duration: 0s;
+    animation-delay: 0s;
+}
+.CompletedProgression_base__medium_a7 .CompletedProgression_icon_00,
+.CompletedProgression_base__large_40 .CompletedProgression_icon_00,
+.CompletedProgression_base__extraLarge_0e .CompletedProgression_icon_00 {
+    width: 136rem;
+    height: 136rem;
+    top: -100rem;
+}
+.CompletedProgression_glow_a4 {
+    width: 800rem;
+    height: 500rem;
+    background: url('R.images.fun_random.gui.maps.icons.feature.progression.congrats_glow') 0 0 / 100% 100% no-repeat;
+    opacity: 0;
+    position: absolute;
+    top: -173rem;
+    left: 50%;
+    z-index: -1;
+    pointer-events: none;
+}
+.CompletedProgression_base__final_14 .CompletedProgression_glow_a4 {
+    animation: CompletedProgression_completed-glow_84 0.8s ease-out 3.2s forwards;
+}
+.CompletedProgression_base__final_14.CompletedProgression_base__static_32 .CompletedProgression_glow_a4 {
+    animation-duration: 0s;
+    animation-delay: 0s;
+}
+.CompletedProgression_base__medium_a7 .CompletedProgression_glow_a4,
+.CompletedProgression_base__large_40 .CompletedProgression_glow_a4,
+.CompletedProgression_base__extraLarge_0e .CompletedProgression_glow_a4 {
+    width: 1200rem;
+    height: 800rem;
+    top: -265rem;
+}
+.CompletedProgression_title_ff {
+    color: #ffdd99;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    line-height: 100%;
+    text-transform: uppercase;
+    opacity: 1;
+    position: relative;
+    transform: translateY(0);
+}
+.CompletedProgression_base__medium_a7 .CompletedProgression_title_ff,
+.CompletedProgression_base__large_40 .CompletedProgression_title_ff,
+.CompletedProgression_base__extraLarge_0e .CompletedProgression_title_ff {
+    font-size: 40rem;
+}
+.CompletedProgression_base__final_14.CompletedProgression_base__static_32 .CompletedProgression_title_ff {
+    animation-duration: 0s;
+    animation-delay: 0s;
+}
+.CompletedProgression_congrats_9f {
+    color: #f2f2f7;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+    line-height: 100%;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -55rem;
+}
+.CompletedProgression_base__medium_a7 .CompletedProgression_congrats_9f,
+.CompletedProgression_base__large_40 .CompletedProgression_congrats_9f,
+.CompletedProgression_base__extraLarge_0e .CompletedProgression_congrats_9f {
+    font-size: 100rem;
+    bottom: -100rem;
+}
+.CompletedProgression_congratsSubtitle_57 {
+    color: #80d43a;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
-    width: 104rem;
-    margin-top: 75rem;
     text-align: center;
-    opacity: 0.6;
+    opacity: 0;
+    position: absolute;
+    bottom: -80rem;
+}
+.CompletedProgression_base__final_14 .CompletedProgression_congratsSubtitle_57 {
+    animation: CompletedProgression_completed-congrats_e7 0.5s ease-out 3.2s forwards;
+}
+.CompletedProgression_base__final_14.CompletedProgression_base__static_32 .CompletedProgression_congratsSubtitle_57 {
+    animation-duration: 0s;
+    animation-delay: 0s;
+}
+.CompletedProgression_base__medium_a7 .CompletedProgression_congratsSubtitle_57,
+.CompletedProgression_base__large_40 .CompletedProgression_congratsSubtitle_57,
+.CompletedProgression_base__extraLarge_0e .CompletedProgression_congratsSubtitle_57 {
+    font-size: 24rem;
+    bottom: -140rem;
+}
+.CompletedProgression_timer_68 {
+    opacity: 0;
+    position: absolute;
+    top: 130rem;
+}
+.CompletedProgression_base__final_14 .CompletedProgression_timer_68 {
+    animation: CompletedProgression_completed-congrats_e7 0.5s ease-out 3.2s forwards;
+}
+.CompletedProgression_base__final_14.CompletedProgression_base__static_32 .CompletedProgression_timer_68 {
+    animation-duration: 0s;
+    animation-delay: 0s;
+}
+.CompletedProgression_base__medium_a7 .CompletedProgression_timer_68 {
+    top: 240rem;
+}
+.CompletedProgression_base__large_40 .CompletedProgression_timer_68,
+.CompletedProgression_base__extraLarge_0e .CompletedProgression_timer_68 {
+    top: 230rem;
+}
+.CompletedProgression_button_5a {
+    width: 150rem;
+    height: 32rem;
+    font-size: 15rem;
+    opacity: 0;
+    bottom: 30rem;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+.CompletedProgression_base__final_14 .CompletedProgression_button_5a {
+    animation: CompletedProgression_show_16 0.8s ease-out 2.4s forwards;
+}
+.CompletedProgression_base__final_14.CompletedProgression_base__static_32 .CompletedProgression_button_5a {
+    animation-duration: 0s;
+    animation-delay: 0s;
+}
+.CompletedProgression_base_c2 .CompletedProgression_button_5a {
+    position: absolute;
 }
 
-.mediaMedium .Stage_points_8c {
-    color: #8c8c7e;
-    font-size: 18rem;
-    font-weight: 400;
-    line-height: 1.25;
-}
+/* card transitions/animations*/
+/* card activation animations*/
+/* card edge transitions/animations*/
+/* infinite title transitions/animations*/
+/* infinite quest animations*/
+/* infinite cards transitions*/
+/* completed screen transitions/animation*/
+@keyframes Header_completed-congrats_69 {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
 
-.Stage_base__current_60 .Stage_points_8c {
-    color: #8c8c7e;
-    font-size: 18rem;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Header_completed-glow_31 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+@keyframes Header_card-show_89 {
+    0% {
+        opacity: 0;
+        top: 65%;
+        left: 50%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes Header_card-show-presentment_72 {
+    0% {
+        opacity: 0;
+        top: 200%;
+        left: 10%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes Header_edge_14 {
+    50% {
+        transform: translate(-1%, -5%) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(-1%, -10%) rotate(-4deg);
+    }
+}
+@keyframes Header_dissolve_ae {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+@keyframes Header_blink-edge_de {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scaleY(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -100%) scale(0.01, 3);
+    }
+}
+@keyframes Header_blink_8c {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.01, 3);
+    }
+}
+@keyframes Header_show-down_f0 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Header_show-up_bd {
+    0% {
+        opacity: 0;
+        transform: translateY(30rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Header_show_eb {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Header_hide_e1 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes Header_showGlow_94 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+@keyframes Header_hideGlow_af {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes Header_pointFadeOut_0a {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+@keyframes Header_pointFadeIn_bb {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Header_first2void_b4 {
+    0% {
+        opacity: 1;
+        transform: translate(0%, 0%) rotate(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+}
+@keyframes Header_second2firstTranslate_97 {
+    0% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+}
+@keyframes Header_second2firstRotate_49 {
+    0% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0);
+    }
+}
+@keyframes Header_third2second_49 {
+    0% {
+        transform: translate(0%, 3%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+}
+/* asset paths*/
+.Header_base_d2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10rem;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 1;
+    transform: translateY(0);
+    transition:
+        opacity 0.3s ease-out 0.5s,
+        transform 0.3s ease-out 0.5s;
+}
+.Header_base__hide_ef {
+    opacity: 0;
+    transform: translateY(20rem);
+}
+.Header_title_dd {
+    color: #f2f2f7;
+    font-size: 28rem;
     font-weight: 700;
     line-height: 1.1;
+}
+.mediaMedium .Header_title_dd {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Header_title_dd {
+    line-height: 100%;
+    text-transform: uppercase;
     opacity: 1;
+    position: relative;
+}
+.Header_title__faded_ff {
+    opacity: 0;
+}
+.Header_base__medium_fd .Header_title_dd,
+.Header_base__large_30 .Header_title_dd,
+.Header_base__extraLarge_98 .Header_title_dd {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Header_base__active_b3 .Header_title_dd {
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.mediaMedium .Header_base__active_b3 .Header_title_dd {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Header_congratsSubtitle_a8 {
+    color: #80d43a;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-top: 12rem;
+    text-align: center;
+    position: relative;
+    transform: translateY(0);
+    transition:
+        opacity 0.3s ease-out 0.5s,
+        transform 0.3s ease-out 0.5s;
+}
+.Header_base__medium_fd .Header_congratsSubtitle_a8,
+.Header_base__large_30 .Header_congratsSubtitle_a8,
+.Header_base__extraLarge_98 .Header_congratsSubtitle_a8 {
+    font-size: 40rem;
 }
 
-.mediaMedium .Stage_base__current_60 .Stage_points_8c {
+/* card transitions/animations*/
+/* card activation animations*/
+/* card edge transitions/animations*/
+/* infinite title transitions/animations*/
+/* infinite quest animations*/
+/* infinite cards transitions*/
+/* completed screen transitions/animation*/
+@keyframes InfiniteCard_completed-congrats_d4 {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteCard_completed-glow_e5 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+@keyframes InfiniteCard_card-show_fe {
+    0% {
+        opacity: 0;
+        top: 65%;
+        left: 50%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes InfiniteCard_card-show-presentment_24 {
+    0% {
+        opacity: 0;
+        top: 200%;
+        left: 10%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes InfiniteCard_edge_75 {
+    50% {
+        transform: translate(-1%, -5%) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(-1%, -10%) rotate(-4deg);
+    }
+}
+@keyframes InfiniteCard_dissolve_bd {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+@keyframes InfiniteCard_blink-edge_df {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scaleY(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -100%) scale(0.01, 3);
+    }
+}
+@keyframes InfiniteCard_blink_4b {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.01, 3);
+    }
+}
+@keyframes InfiniteCard_show-down_ce {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteCard_show-up_4b {
+    0% {
+        opacity: 0;
+        transform: translateY(30rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteCard_show_5a {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes InfiniteCard_hide_b2 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes InfiniteCard_showGlow_47 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+@keyframes InfiniteCard_hideGlow_19 {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes InfiniteCard_pointFadeOut_50 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+@keyframes InfiniteCard_pointFadeIn_aa {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteCard_first2void_95 {
+    0% {
+        opacity: 1;
+        transform: translate(0%, 0%) rotate(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+}
+@keyframes InfiniteCard_second2firstTranslate_3d {
+    0% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+}
+@keyframes InfiniteCard_second2firstRotate_50 {
+    0% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0);
+    }
+}
+@keyframes InfiniteCard_third2second_38 {
+    0% {
+        transform: translate(0%, 3%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+}
+/* asset paths*/
+.InfiniteCard_base_b8 {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    animation: InfiniteCard_card-show_fe 0.4s ease-in 0.6s forwards;
+}
+.mediaMedium .InfiniteCard_base_b8 {
+    transform: translate(-50%, -50%);
+}
+.InfiniteCard_base__first_89 {
+    animation-delay: 2.7s;
+}
+.InfiniteCard_base__second_68 {
+    animation-delay: 2.35s;
+}
+.InfiniteCard_base__third_1c {
+    animation-delay: 2s;
+}
+.InfiniteCard_base__fourth_c1 {
+    animation-name: InfiniteCard_show_5a;
+    animation-delay: 2.7s;
+}
+.InfiniteCard_base__presentment_64 {
+    animation: InfiniteCard_card-show-presentment_24 0.35s ease-out 0.6s forwards;
+}
+.InfiniteCard_base__presentment_64.InfiniteCard_base__first_89 {
+    animation-delay: 1.1s;
+}
+.InfiniteCard_base__presentment_64.InfiniteCard_base__second_68 {
+    animation-delay: 0.8s;
+}
+.InfiniteCard_base__presentment_64.InfiniteCard_base__third_1c {
+    animation-delay: 0.5s;
+}
+.InfiniteCard_base__presentment_64.InfiniteCard_base__fourth_c1 {
+    animation-name: InfiniteCard_show_5a;
+    animation-delay: 1s;
+}
+.InfiniteCard_base_b8 .InfiniteCard_shadow_9c {
+    display: none;
+}
+.InfiniteCard_cardWrapper_1f {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.InfiniteCard_base__first_89 .InfiniteCard_cardWrapper_1f {
+    transform: translate(0%, 0%) rotate(0);
+}
+.InfiniteCard_base__first_89 .InfiniteCard_cardWrapper__enter_ab {
+    animation: InfiniteCard_first2void_95 0.8s ease-in 1.4s forwards;
+}
+.InfiniteCard_base__first_89 .InfiniteCard_cardWrapper__enterDone_d5 {
+    display: none;
+}
+.InfiniteCard_base__second_68 .InfiniteCard_cardWrapper_1f {
+    transform: translate(6%, 1%) rotate(3deg);
+}
+.InfiniteCard_base__second_68 .InfiniteCard_cardWrapper__enter_ab {
+    animation:
+        InfiniteCard_second2firstTranslate_3d 0.3s ease-in forwards,
+        InfiniteCard_second2firstRotate_50 0.3s ease-in 1.1s forwards;
+}
+.InfiniteCard_base__second_68 .InfiniteCard_cardWrapper__enterDone_d5 {
+    transform: translate(0%, 0%) rotate(0);
+}
+.InfiniteCard_base__third_1c .InfiniteCard_cardWrapper_1f {
+    transform: translate(0%, 3%) rotate(-5deg);
+}
+.InfiniteCard_base__third_1c .InfiniteCard_cardWrapper__enter_ab {
+    animation: InfiniteCard_third2second_38 0.3s ease-in 1.1s forwards;
+}
+.InfiniteCard_base__third_1c .InfiniteCard_cardWrapper__enterDone_d5 {
+    transform: translate(6%, 1%) rotate(3deg);
+}
+.InfiniteCard_base__fourth_c1 .InfiniteCard_cardWrapper_1f {
+    transform: translate(0%, 3%) rotate(-5deg);
+}
+.InfiniteCard_shadow_9c {
+    opacity: 0;
+}
+
+.InfiniteCards_base_39 {
+    width: 220rem;
+    position: relative;
+    bottom: 26rem;
+}
+
+.InfiniteCards_base__big_1a {
+    width: 320rem;
+    bottom: 0;
+}
+
+.Quest_base_24 {
+    display: flex;
+    padding: 18rem;
+    border: 1rem solid rgba(255, 255, 255, 0.1);
+    border-radius: 5rem;
+}
+
+.mediaLargeHeight .Quest_base_24 {
+    padding: 20rem 24rem 12rem;
+}
+
+.Quest_base__completed_19 {
+    box-shadow: 0 0 39rem 0 rgba(128, 212, 58, 0.5) inset;
+}
+
+.Quest_base__single_quest_2b {
+    padding: 20rem;
+    border: none;
+    box-shadow: none;
+}
+
+.Quest_base__infinite_3e {
+    width: 478rem;
+    height: 136rem;
+    border: none;
+}
+
+.Quest_base__cursor_grab_c0 {
+    cursor: default;
+}
+
+.Quest_conditionIcon_13 {
+    display: flex;
+}
+
+.Quest_questIcon_2e {
+    width: 24rem;
+    height: 24rem;
+    background: center / contain no-repeat;
+    opacity: 0.5;
+}
+
+.mediaSmall .Quest_questIcon_2e {
+    width: 32rem;
+    height: 32rem;
+}
+
+.Quest_base__single_quest_2b .Quest_questIcon_2e {
+    width: 32rem;
+    height: 32rem;
+}
+
+.mediaLargeWidth .Quest_questIcon_2e {
+    width: 64rem;
+    height: 64rem;
+}
+
+.Quest_questContent_01 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    margin-left: 16rem;
+}
+
+.Quest_base__big_f0 .Quest_questContent_01 {
+    margin-left: 20rem;
+}
+
+.Quest_base__infinite_3e .Quest_base__big_f0 .Quest_questContent_01 {
+    margin-left: 4rem;
+}
+
+.Quest_questProgress_40 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 0;
     color: #8c8c7e;
-    font-size: 24rem;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 15.6rem;
+}
+
+.Quest_base__big_f0 .Quest_questProgress_40 {
+    font-size: 14rem;
+    line-height: 18.2rem;
+}
+
+.mediaLargeWidth .Quest_base__big_f0 .Quest_questProgress_40 {
+    font-size: 16rem;
+}
+
+.Quest_base__single_quest_2b .Quest_questProgress_40 {
+    font-size: 12rem;
+    line-height: 15.6rem;
+}
+
+.Quest_questProgressCurrent_93 {
+    color: #e9e2bf;
+}
+
+.Quest_base__completed_19 .Quest_questProgressCurrent_93 {
+    color: #8c8c7e;
+}
+
+.Quest_questTitle_07 {
+    flex: 1;
+    padding: 2rem 0;
+
+    color: #f2f2f7;
+
+    font-size: 14rem;
+
+    font-weight: 700;
+
+    line-height: 1.15;
+}
+
+.Quest_base__big_f0 .Quest_questTitle_07 {
+    color: #f2f2f7;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.mediaLargeWidth .Quest_base__big_f0 .Quest_questTitle_07 {
+    color: #f2f2f7;
+    font-size: 22rem;
     font-weight: 700;
     line-height: 1.2;
 }
 
-.Stage_index_e2 {
-    color: #8c8c7e;
-    font-size: 12rem;
-    font-weight: 400;
-    line-height: 1.3;
-    opacity: 0.5;
-    position: absolute;
-    bottom: 30rem;
+.Quest_base__completed_19 .Quest_questTitle_07 {
+    color: #80d43a;
 }
 
-.mediaMedium .Stage_index_e2 {
+.Quest_base__single_quest_2b .Quest_questTitle_07 {
+    color: #f2f2f7;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.Quest_questPoints_88 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 0;
+    height: 36rem;
+}
+
+.Quest_base__big_f0 .Quest_questPoints_88 {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Quest_base__single_quest_2b .Quest_questPoints_88 {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Quest_questPoint_ef {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0 5rem 0 0;
+}
+
+.Quest_questPointTitle_e9 {
+    display: flex;
+    align-items: flex-end;
+    white-space: nowrap;
+
+    color: #8c8c7e;
+
+    font-size: 12rem;
+
+    font-weight: 400;
+
+    line-height: 1.3;
+}
+
+.Quest_base__big_f0 .Quest_questPointTitle_e9 {
     color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
-.Stage_base__done_17 .Stage_index_e2,
-.Stage_base__current_60 .Stage_index_e2 {
-    opacity: 1;
+.mediaLargeWidth .Quest_base__big_f0 .Quest_questPointTitle_e9 {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
 }
 
-.Stage_check_f9 {
-    align-content: center;
-    width: 104rem;
+.Quest_base__single_quest_2b .Quest_questPointTitle_e9 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Quest_questPointScore_dc {
+    padding-left: 2rem;
+    white-space: nowrap;
+    position: relative;
+
+    color: #ffdd99;
+
+    font-size: 15rem;
+
+    font-weight: 700;
+
+    line-height: 1.15;
+}
+
+.mediaLargeWidth .Quest_questPointScore_dc {
+    color: #ffdd99;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    top: -1rem;
+}
+
+.Quest_base__single_quest_2b .Quest_questPointScore_dc {
+    color: #ffdd99;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.Quest_base__completed_19 .Quest_questPointScore_dc {
+    color: #80d43a;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.mediaLargeWidth .Quest_base__completed_19 .Quest_questPointScore_dc {
+    color: #80d43a;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    top: -1rem;
+}
+
+.Quest_questPointBreak_ae {
+    display: none;
+    width: 10rem;
     height: 24rem;
-    margin-top: 85rem;
-    background: url('R.images.gui.maps.icons.library.check') no-repeat center;
+    margin: 0 5rem;
+    background: url('R.images.fun_random.gui.maps.icons.feature.quest.vector_190') no-repeat center;
 }
 
-.Stage_doneGlowTop_05 {
-    width: 212rem;
-    height: 170rem;
-    background: url('R.images.fun_random.gui.maps.icons.feature.progression.done_top') no-repeat center / cover;
-    position: absolute;
-    top: -44rem;
+.Quest_base__big_f0 .Quest_questPointBreak_ae {
+    display: block;
 }
 
-.Stage_doneGlowBottom_1c {
-    width: 212rem;
-    height: 63rem;
-    background: url('R.images.fun_random.gui.maps.icons.feature.progression.done_bottom') no-repeat center / cover;
-    position: absolute;
-    bottom: 30rem;
+.Quest_base__single_quest_2b .Quest_questPointBreak_ae {
+    display: block;
 }
 
-.Stage_separator_46 {
-    width: 2rem;
-    height: 100%;
-    position: absolute;
-    left: 0;
-}
+/* card transitions/animations*/
+/* card activation animations*/
+/* card edge transitions/animations*/
+/* infinite title transitions/animations*/
+/* infinite quest animations*/
+/* infinite cards transitions*/
+/* completed screen transitions/animation*/
+@keyframes InfiniteQuestCondition_completed-congrats_8a {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
 
-.Stage_separatorDark_ce {
-    width: 1rem;
-    height: 100%;
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.1) 50%,
-        rgba(255, 255, 255, 0) 100%
-    );
-    position: absolute;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+@keyframes InfiniteQuestCondition_completed-glow_ce {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 10rem);
+    }
 
-.Stage_separatorLight_28 {
-    width: 1rem;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 48.96%, rgba(0, 0, 0, 0) 100%);
-    position: absolute;
-    left: 1rem;
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
 }
+@keyframes InfiniteQuestCondition_card-show_07 {
+    0% {
+        opacity: 0;
+        top: 65%;
+        left: 50%;
+    }
 
-.Progression_base_7b {
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes InfiniteQuestCondition_card-show-presentment_3f {
+    0% {
+        opacity: 0;
+        top: 200%;
+        left: 10%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes InfiniteQuestCondition_edge_6a {
+    50% {
+        transform: translate(-1%, -5%) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(-1%, -10%) rotate(-4deg);
+    }
+}
+@keyframes InfiniteQuestCondition_dissolve_69 {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+@keyframes InfiniteQuestCondition_blink-edge_f8 {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scaleY(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -100%) scale(0.01, 3);
+    }
+}
+@keyframes InfiniteQuestCondition_blink_8d {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.01, 3);
+    }
+}
+@keyframes InfiniteQuestCondition_show-down_23 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteQuestCondition_show-up_37 {
+    0% {
+        opacity: 0;
+        transform: translateY(30rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteQuestCondition_show_36 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes InfiniteQuestCondition_hide_cd {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes InfiniteQuestCondition_showGlow_c6 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+@keyframes InfiniteQuestCondition_hideGlow_78 {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes InfiniteQuestCondition_pointFadeOut_c1 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+@keyframes InfiniteQuestCondition_pointFadeIn_42 {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteQuestCondition_first2void_1f {
+    0% {
+        opacity: 1;
+        transform: translate(0%, 0%) rotate(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+}
+@keyframes InfiniteQuestCondition_second2firstTranslate_b6 {
+    0% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+}
+@keyframes InfiniteQuestCondition_second2firstRotate_0a {
+    0% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0);
+    }
+}
+@keyframes InfiniteQuestCondition_third2second_a5 {
+    0% {
+        transform: translate(0%, 3%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+}
+/* asset paths*/
+.InfiniteQuestCondition_base_a3 {
+    padding: 20rem 20rem 0 16rem;
+    border-top: 1rem solid rgba(242, 242, 247, 0.1);
+}
+.InfiniteQuestCondition_conditionsDescription_c8 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-right: 5rem;
+    line-height: 18rem;
+}
+.InfiniteQuestCondition_conditionsPoints_1c {
     display: flex;
+    align-items: center;
+}
+.InfiniteQuestCondition_conditionsPointsItem_64 {
+    color: #8c8c7e;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    line-height: 100%;
+}
+.InfiniteQuestCondition_currentPoint_2a {
+    width: 20rem;
+    height: 22rem;
     position: relative;
 }
-
-.Progression_progress_67 {
-    display: flex;
-    width: 100%;
+.InfiniteQuestCondition_currentPointItem_27 {
+    color: #ffdd99;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    line-height: 100%;
+    text-shadow: 0 0 14rem rgba(242, 242, 247, 0.5);
     position: absolute;
-    top: 126rem;
+    right: 0;
+}
+.InfiniteQuestCondition_currentPointItem__enter_d5 {
+    opacity: 0;
+    animation: InfiniteQuestCondition_pointFadeIn_42 0.4s ease-in 4s forwards;
+}
+.InfiniteQuestCondition_currentPointItem__exit_3a {
+    opacity: 1;
+    animation: InfiniteQuestCondition_pointFadeOut_c1 0.4s ease-out 4s forwards;
 }
 
-.Progression_stages_15 {
+/* card transitions/animations*/
+/* card activation animations*/
+/* card edge transitions/animations*/
+/* infinite title transitions/animations*/
+/* infinite quest animations*/
+/* infinite cards transitions*/
+/* completed screen transitions/animation*/
+@keyframes InfiniteQuest_completed-congrats_db {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteQuest_completed-glow_4e {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+@keyframes InfiniteQuest_card-show_4c {
+    0% {
+        opacity: 0;
+        top: 65%;
+        left: 50%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes InfiniteQuest_card-show-presentment_b2 {
+    0% {
+        opacity: 0;
+        top: 200%;
+        left: 10%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes InfiniteQuest_edge_cc {
+    50% {
+        transform: translate(-1%, -5%) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(-1%, -10%) rotate(-4deg);
+    }
+}
+@keyframes InfiniteQuest_dissolve_ef {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+@keyframes InfiniteQuest_blink-edge_2a {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scaleY(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -100%) scale(0.01, 3);
+    }
+}
+@keyframes InfiniteQuest_blink_55 {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.01, 3);
+    }
+}
+@keyframes InfiniteQuest_show-down_4d {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteQuest_show-up_3d {
+    0% {
+        opacity: 0;
+        transform: translateY(30rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteQuest_show_2a {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes InfiniteQuest_hide_64 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes InfiniteQuest_showGlow_2c {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+@keyframes InfiniteQuest_hideGlow_16 {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes InfiniteQuest_pointFadeOut_45 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+@keyframes InfiniteQuest_pointFadeIn_b3 {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteQuest_first2void_b7 {
+    0% {
+        opacity: 1;
+        transform: translate(0%, 0%) rotate(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+}
+@keyframes InfiniteQuest_second2firstTranslate_16 {
+    0% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+}
+@keyframes InfiniteQuest_second2firstRotate_bd {
+    0% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0);
+    }
+}
+@keyframes InfiniteQuest_third2second_f2 {
+    0% {
+        transform: translate(0%, 3%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+}
+/* asset paths*/
+.InfiniteQuest_base_9e {
     display: flex;
-    width: 100%;
+    width: 478rem;
+    min-height: 136rem;
+    padding: 20rem;
+    border: none;
+    border-radius: 5rem;
 }
-
-.Quest_base_24 {
+.InfiniteQuest_conditionIcon_ed {
+    display: flex;
+}
+.InfiniteQuest_questContent_fe {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 484rem;
-    position: relative;
-}
-
-.mediaMedium .Quest_base_24 {
-    width: 600rem;
-}
-
-.mediaLarge .Quest_base_24 {
-    width: 700rem;
-}
-
-.Quest_borderBox_ed {
+    flex: 1;
     width: 100%;
     height: 100%;
-    border: 1rem solid rgba(255, 255, 255, 0.15);
-    border-radius: 5rem;
-    box-shadow: inset 0 0 30rem rgba(255, 255, 255, 0.03);
-    background: rgba(26, 26, 26, 0.25);
-    mask: linear-gradient(0deg, transparent 0%, #000 100%, #000 0%, transparent 100%);
-    position: absolute;
-    top: 0;
-    left: 0rem;
-    z-index: -1;
+    margin-left: 16rem;
 }
-
-.Quest_conditions_d5 {
+.InfiniteQuest_questProgress_e6 {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 0;
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 15.6rem;
 }
-
-.Quest_questIcon_2e {
-    width: 48rem;
-    height: 48rem;
-    margin-top: 32rem;
-    background: center / contain no-repeat;
+.InfiniteQuest_questProgressCurrent_28 {
+    width: 18rem;
+    position: relative;
 }
-
-.mediaLarge .Quest_questIcon_2e {
-    width: 80rem;
-    height: 80rem;
-    margin-top: 50rem;
+.InfiniteQuest_questProgressCurrentItem_f4 {
+    color: #e9e2bf;
+    position: absolute;
+    right: 0;
 }
-
-.Quest_questName_bf {
-    color: #ffffff;
-    font-size: 24rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-top: 8rem;
-    padding: 0 45rem;
-    text-align: center;
+.InfiniteQuest_questProgressCurrentItem__enter_eb {
+    opacity: 0;
+    animation: InfiniteQuest_show_2a 0.4s ease-in 4s forwards;
 }
-
-.mediaMedium .Quest_questName_bf {
-    color: #ffffff;
-    font-size: 36rem;
-    font-weight: 700;
-    line-height: 1.1;
+.InfiniteQuest_questProgressCurrentItem__exit_f3 {
+    opacity: 1;
+    animation: InfiniteQuest_hide_64 0.4s ease-out 4s forwards;
 }
-
-.mediaLarge .Quest_questName_bf {
-    color: #ffffff;
-    font-size: 36rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-top: 16rem;
-}
-
-.Quest_questPoints_88 {
-    color: #c9c9b6;
-    font-size: 24rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-top: 8rem;
-}
-
-.mediaMedium .Quest_questPoints_88 {
-    color: #c9c9b6;
+.InfiniteQuest_questTitle_cd {
+    flex: 1;
+    padding: 2rem 0;
+    color: #f2f2f7;
     font-size: 28rem;
     font-weight: 700;
     line-height: 1.1;
 }
+.InfiniteQuest_questPoints_6e {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0;
+    height: 36rem;
+}
+.InfiniteQuest_questPoint_fa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0 5rem 0 0;
+}
+.InfiniteQuest_questPointTitle_40 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    white-space: nowrap;
+}
+.InfiniteQuest_questPointScore_88 {
+    padding-left: 5rem;
+    white-space: nowrap;
+    color: #ffdd99;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.InfiniteQuest_questPointBreak_8a {
+    display: block;
+    width: 10rem;
+    height: 36rem;
+    margin: 0 5rem;
+    background: url('R.images.fun_random.gui.maps.icons.feature.quest.vector_190') no-repeat center;
+}
+.InfiniteQuest_infinity_b3 {
+    width: 22rem;
+    height: 19rem;
+    background-image: url('R.images.fun_random.gui.maps.icons.feature.quest.infinity');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 44rem 37rem;
+}
 
-.mediaLarge .Quest_questPoints_88 {
-    color: #e9e2bf;
+/* card transitions/animations*/
+/* card activation animations*/
+/* card edge transitions/animations*/
+/* infinite title transitions/animations*/
+/* infinite quest animations*/
+/* infinite cards transitions*/
+/* completed screen transitions/animation*/
+@keyframes InfiniteTitle_completed-congrats_f8 {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteTitle_completed-glow_25 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+@keyframes InfiniteTitle_card-show_1e {
+    0% {
+        opacity: 0;
+        top: 65%;
+        left: 50%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes InfiniteTitle_card-show-presentment_f8 {
+    0% {
+        opacity: 0;
+        top: 200%;
+        left: 10%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes InfiniteTitle_edge_8e {
+    50% {
+        transform: translate(-1%, -5%) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(-1%, -10%) rotate(-4deg);
+    }
+}
+@keyframes InfiniteTitle_dissolve_8f {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+@keyframes InfiniteTitle_blink-edge_6f {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scaleY(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -100%) scale(0.01, 3);
+    }
+}
+@keyframes InfiniteTitle_blink_82 {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.01, 3);
+    }
+}
+@keyframes InfiniteTitle_show-down_1b {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteTitle_show-up_d7 {
+    0% {
+        opacity: 0;
+        transform: translateY(30rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteTitle_show_47 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes InfiniteTitle_hide_e7 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes InfiniteTitle_showGlow_74 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+@keyframes InfiniteTitle_hideGlow_68 {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes InfiniteTitle_pointFadeOut_93 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+@keyframes InfiniteTitle_pointFadeIn_a3 {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteTitle_first2void_67 {
+    0% {
+        opacity: 1;
+        transform: translate(0%, 0%) rotate(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+}
+@keyframes InfiniteTitle_second2firstTranslate_ea {
+    0% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+}
+@keyframes InfiniteTitle_second2firstRotate_07 {
+    0% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0);
+    }
+}
+@keyframes InfiniteTitle_third2second_2e {
+    0% {
+        transform: translate(0%, 3%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+}
+/* asset paths*/
+.InfiniteTitle_base_90 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    padding-top: 30rem;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+.InfiniteTitle_base__shown_67 {
+    opacity: 0;
+    animation: InfiniteTitle_show-down_1b 0.4s ease-in 0.6s forwards;
+}
+.InfiniteTitle_glow_b3 {
+    width: 800rem;
+    height: 500rem;
+    background: url('R.images.fun_random.gui.maps.icons.feature.progression.congrats_glow') 0 0 / 100% 100% no-repeat;
+    opacity: 0;
+    position: absolute;
+    top: -190rem;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+}
+.InfiniteTitle_glow__show_5c {
+    animation:
+        InfiniteTitle_show_47 0.3s ease-in 0.5s forwards,
+        InfiniteTitle_hide_e7 0.5s ease-in 1.8s forwards;
+}
+.InfiniteTitle_base__medium_69 .InfiniteTitle_glow_b3,
+.InfiniteTitle_base__large_64 .InfiniteTitle_glow_b3,
+.InfiniteTitle_base__extraLarge_78 .InfiniteTitle_glow_b3 {
+    width: 1200rem;
+    height: 800rem;
+    top: -300rem;
+}
+.InfiniteTitle_title_2c {
+    color: #ffdd99;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 12rem auto 0;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.InfiniteTitle_base__medium_69 .InfiniteTitle_title_2c,
+.InfiniteTitle_base__large_64 .InfiniteTitle_title_2c,
+.InfiniteTitle_base__extraLarge_78 .InfiniteTitle_title_2c {
+    font-size: 24rem;
+}
+.InfiniteTitle_mainHeader_64 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    opacity: 0;
+    animation: InfiniteTitle_show_47 0.5s ease-in 0.1s forwards;
+}
+.InfiniteTitle_congrats_6f {
+    transform: translateY(0);
+    transition:
+        opacity 0.5s ease-in 1s,
+        transform 0.5s ease-in 1s;
+}
+.InfiniteTitle_congrats__hidden_0b {
+    opacity: 0;
+    transform: translateY(30rem);
+}
+.InfiniteTitle_subtitle_e9 {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    line-height: 100%;
+    position: relative;
+}
+.InfiniteTitle_subtitle__uppercase_e0 {
+    text-transform: uppercase;
+}
+.InfiniteTitle_subtitle__faded_a3 {
+    opacity: 0;
+}
+.InfiniteTitle_base__medium_69 .InfiniteTitle_subtitle_e9,
+.InfiniteTitle_base__large_64 .InfiniteTitle_subtitle_e9,
+.InfiniteTitle_base__extraLarge_78 .InfiniteTitle_subtitle_e9 {
+    font-size: 73rem;
+}
+.InfiniteTitle_congratsSubtitle_c7 {
+    color: #80d43a;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-top: 12rem;
+    text-align: center;
+    position: relative;
+    transform: translateY(0);
+    transition:
+        opacity 0.5s ease-in 1s,
+        transform 0.5s ease-in 1s;
+}
+.InfiniteTitle_congratsSubtitle__hidden_40 {
+    opacity: 0;
+    transform: translateY(-20rem);
+}
+.InfiniteTitle_base__medium_69 .InfiniteTitle_congratsSubtitle_c7,
+.InfiniteTitle_base__large_64 .InfiniteTitle_congratsSubtitle_c7,
+.InfiniteTitle_base__extraLarge_78 .InfiniteTitle_congratsSubtitle_c7 {
+    font-size: 20rem;
+}
+
+/* card transitions/animations*/
+/* card activation animations*/
+/* card edge transitions/animations*/
+/* infinite title transitions/animations*/
+/* infinite quest animations*/
+/* infinite cards transitions*/
+/* completed screen transitions/animation*/
+@keyframes InfiniteProgression_completed-congrats_18 {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteProgression_completed-glow_6d {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+@keyframes InfiniteProgression_card-show_fb {
+    0% {
+        opacity: 0;
+        top: 65%;
+        left: 50%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes InfiniteProgression_card-show-presentment_a5 {
+    0% {
+        opacity: 0;
+        top: 200%;
+        left: 10%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes InfiniteProgression_edge_10 {
+    50% {
+        transform: translate(-1%, -5%) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(-1%, -10%) rotate(-4deg);
+    }
+}
+@keyframes InfiniteProgression_dissolve_23 {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+@keyframes InfiniteProgression_blink-edge_d6 {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scaleY(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -100%) scale(0.01, 3);
+    }
+}
+@keyframes InfiniteProgression_blink_b9 {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.01, 3);
+    }
+}
+@keyframes InfiniteProgression_show-down_73 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteProgression_show-up_84 {
+    0% {
+        opacity: 0;
+        transform: translateY(30rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteProgression_show_c1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes InfiniteProgression_hide_87 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes InfiniteProgression_showGlow_0f {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+@keyframes InfiniteProgression_hideGlow_fa {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes InfiniteProgression_pointFadeOut_74 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+@keyframes InfiniteProgression_pointFadeIn_07 {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes InfiniteProgression_first2void_92 {
+    0% {
+        opacity: 1;
+        transform: translate(0%, 0%) rotate(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+}
+@keyframes InfiniteProgression_second2firstTranslate_fb {
+    0% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+}
+@keyframes InfiniteProgression_second2firstRotate_86 {
+    0% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0);
+    }
+}
+@keyframes InfiniteProgression_third2second_77 {
+    0% {
+        transform: translate(0%, 3%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+}
+/* asset paths*/
+.InfiniteProgression_base_e3 {
+    width: 100%;
+    height: 100%;
+}
+.InfiniteProgression_content_68 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.InfiniteProgression_questContainer_fe {
+    margin-left: 32rem;
+    border: 1rem solid rgba(255, 255, 255, 0.1);
+    border-radius: 5rem;
+    background-color: rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    position: relative;
+    animation: InfiniteProgression_show-up_84 0.4s ease-in 0.6s forwards;
+}
+.InfiniteProgression_base__medium_ba .InfiniteProgression_questContainer_fe,
+.InfiniteProgression_base__large_52 .InfiniteProgression_questContainer_fe,
+.InfiniteProgression_base__extraLarge_da .InfiniteProgression_questContainer_fe {
+    margin-left: 50rem;
+}
+.InfiniteProgression_questCondition_b5 {
+    margin: 10rem 24rem 24rem 20rem;
+}
+
+/* card transitions/animations*/
+/* card activation animations*/
+/* card edge transitions/animations*/
+/* infinite title transitions/animations*/
+/* infinite quest animations*/
+/* infinite cards transitions*/
+/* completed screen transitions/animation*/
+@keyframes CurrentPoints_completed-congrats_56 {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes CurrentPoints_completed-glow_aa {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+@keyframes CurrentPoints_card-show_9d {
+    0% {
+        opacity: 0;
+        top: 65%;
+        left: 50%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes CurrentPoints_card-show-presentment_89 {
+    0% {
+        opacity: 0;
+        top: 200%;
+        left: 10%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes CurrentPoints_edge_b5 {
+    50% {
+        transform: translate(-1%, -5%) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(-1%, -10%) rotate(-4deg);
+    }
+}
+@keyframes CurrentPoints_dissolve_01 {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+@keyframes CurrentPoints_blink-edge_d5 {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scaleY(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -100%) scale(0.01, 3);
+    }
+}
+@keyframes CurrentPoints_blink_23 {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.01, 3);
+    }
+}
+@keyframes CurrentPoints_show-down_54 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes CurrentPoints_show-up_87 {
+    0% {
+        opacity: 0;
+        transform: translateY(30rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes CurrentPoints_show_9d {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes CurrentPoints_hide_1f {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes CurrentPoints_showGlow_d5 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+@keyframes CurrentPoints_hideGlow_e7 {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes CurrentPoints_pointFadeOut_a3 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+@keyframes CurrentPoints_pointFadeIn_ee {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes CurrentPoints_first2void_2f {
+    0% {
+        opacity: 1;
+        transform: translate(0%, 0%) rotate(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+}
+@keyframes CurrentPoints_second2firstTranslate_b5 {
+    0% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+}
+@keyframes CurrentPoints_second2firstRotate_77 {
+    0% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0);
+    }
+}
+@keyframes CurrentPoints_third2second_c3 {
+    0% {
+        transform: translate(0%, 3%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+}
+/* asset paths*/
+.CurrentPoints_base_85 {
+    position: relative;
+}
+.CurrentPoints_prev_d0 {
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    animation: CurrentPoints_pointFadeOut_a3 0.4s ease-out forwards;
+}
+.CurrentPoints_current_5c {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    animation: CurrentPoints_show_9d 0.4s ease-in forwards;
+}
+.CurrentPoints_text_63 {
+    opacity: 0;
+}
+
+/* card transitions/animations*/
+/* card activation animations*/
+/* card edge transitions/animations*/
+/* infinite title transitions/animations*/
+/* infinite quest animations*/
+/* infinite cards transitions*/
+/* completed screen transitions/animation*/
+@keyframes QuestsList_completed-congrats_35 {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes QuestsList_completed-glow_56 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+@keyframes QuestsList_card-show_e9 {
+    0% {
+        opacity: 0;
+        top: 65%;
+        left: 50%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes QuestsList_card-show-presentment_98 {
+    0% {
+        opacity: 0;
+        top: 200%;
+        left: 10%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes QuestsList_edge_c5 {
+    50% {
+        transform: translate(-1%, -5%) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(-1%, -10%) rotate(-4deg);
+    }
+}
+@keyframes QuestsList_dissolve_c5 {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+@keyframes QuestsList_blink-edge_8d {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scaleY(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -100%) scale(0.01, 3);
+    }
+}
+@keyframes QuestsList_blink_22 {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.01, 3);
+    }
+}
+@keyframes QuestsList_show-down_71 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes QuestsList_show-up_43 {
+    0% {
+        opacity: 0;
+        transform: translateY(30rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes QuestsList_show_4a {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes QuestsList_hide_fd {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes QuestsList_showGlow_33 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+@keyframes QuestsList_hideGlow_83 {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes QuestsList_pointFadeOut_94 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+@keyframes QuestsList_pointFadeIn_c0 {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes QuestsList_first2void_29 {
+    0% {
+        opacity: 1;
+        transform: translate(0%, 0%) rotate(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+}
+@keyframes QuestsList_second2firstTranslate_2a {
+    0% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+}
+@keyframes QuestsList_second2firstRotate_81 {
+    0% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0);
+    }
+}
+@keyframes QuestsList_third2second_a8 {
+    0% {
+        transform: translate(0%, 3%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+}
+/* asset paths*/
+.QuestsList_base_db {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+        opacity 0.3s ease-out 0.5s,
+        transform 0.3s ease-out 0.5s;
+}
+.QuestsList_base__hide_e1 {
+    opacity: 0;
+    transform: translateY(20rem);
+}
+.QuestsList_toQuestsUpdate_5a {
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.mediaLargeHeight .QuestsList_toQuestsUpdate_5a {
+    margin-bottom: 8rem;
+}
+.QuestsList_oneQuest_a8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1rem solid rgba(255, 255, 255, 0.1);
+    border-radius: 5rem;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.QuestsList_oneQuest__completed_e1 {
+    box-shadow: 0 0 39rem 0 rgba(128, 212, 58, 0.5) inset;
+}
+.QuestsList_severalQuests_49 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.QuestsList_questsList_37 {
+    display: flex;
+    justify-content: center;
+}
+.QuestsList_quest_3a {
+    width: 220rem;
+    height: 160rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.mediaSmallWidth .QuestsList_quest_3a {
+    width: 320rem;
+    height: 160rem;
+}
+.QuestsList_base__bigQuests_86 .QuestsList_quest_3a {
+    width: 350rem;
+    height: 138rem;
+}
+.mediaLargeWidth .QuestsList_base__bigQuests_86 .QuestsList_quest_3a {
+    width: 386rem;
+    height: 167rem;
+}
+.QuestsList_severalQuests_49 .QuestsList_quest_3a {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.QuestsList_oneQuest_a8 .QuestsList_quest_3a {
+    width: 423rem;
+    height: 151rem;
+    border: none;
+    box-shadow: none;
+}
+.mediaLargeHeight .QuestsList_oneQuest_a8 .QuestsList_quest_3a {
+    width: 423rem;
+    height: 167rem;
+}
+.QuestsList_currentProgress_db {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+.QuestsList_oneQuest_a8 .QuestsList_currentProgress_db {
+    flex-direction: column;
+    height: 60%;
+    margin-top: 8rem;
+    padding: 0 20rem;
+    border-left: 1rem solid rgba(255, 255, 255, 0.1);
+}
+.QuestsList_base__minScreen_22 .QuestsList_oneQuest_a8 .QuestsList_currentProgress_db {
+    margin-top: 0;
+}
+.QuestsList_currentProgressTitle_50 {
+    align-items: center;
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.mediaMediumWidth .QuestsList_currentProgressTitle_50 {
+    font-size: 20rem;
+}
+.QuestsList_oneQuest_a8 .QuestsList_currentProgressTitle_50 {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.QuestsList_currentProgressPoints_6a {
+    display: flex;
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.mediaMediumWidth .QuestsList_currentProgressPoints_6a {
+    font-size: 20rem;
+}
+.QuestsList_oneQuest_a8 .QuestsList_currentProgressPoints_6a {
+    color: #8c8c7e;
     font-size: 36rem;
     font-weight: 700;
     line-height: 1.1;
 }
+.QuestsList_currentProgressPointsEarned_17 {
+    padding-left: 2rem;
+    color: #ffdd99;
+}
 
-.App_base_80 {
+/* card transitions/animations*/
+/* card activation animations*/
+/* card edge transitions/animations*/
+/* infinite title transitions/animations*/
+/* infinite quest animations*/
+/* infinite cards transitions*/
+/* completed screen transitions/animation*/
+@keyframes RandomRewardsButton_completed-congrats_5c {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes RandomRewardsButton_completed-glow_df {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+@keyframes RandomRewardsButton_card-show_18 {
+    0% {
+        opacity: 0;
+        top: 65%;
+        left: 50%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes RandomRewardsButton_card-show-presentment_e3 {
+    0% {
+        opacity: 0;
+        top: 200%;
+        left: 10%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes RandomRewardsButton_edge_ce {
+    50% {
+        transform: translate(-1%, -5%) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(-1%, -10%) rotate(-4deg);
+    }
+}
+@keyframes RandomRewardsButton_dissolve_e0 {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+@keyframes RandomRewardsButton_blink-edge_59 {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scaleY(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -100%) scale(0.01, 3);
+    }
+}
+@keyframes RandomRewardsButton_blink_bf {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.01, 3);
+    }
+}
+@keyframes RandomRewardsButton_show-down_ca {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes RandomRewardsButton_show-up_da {
+    0% {
+        opacity: 0;
+        transform: translateY(30rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes RandomRewardsButton_show_e9 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes RandomRewardsButton_hide_69 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes RandomRewardsButton_showGlow_39 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+@keyframes RandomRewardsButton_hideGlow_59 {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes RandomRewardsButton_pointFadeOut_a7 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+@keyframes RandomRewardsButton_pointFadeIn_5c {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes RandomRewardsButton_first2void_72 {
+    0% {
+        opacity: 1;
+        transform: translate(0%, 0%) rotate(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+}
+@keyframes RandomRewardsButton_second2firstTranslate_c6 {
+    0% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+}
+@keyframes RandomRewardsButton_second2firstRotate_78 {
+    0% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0);
+    }
+}
+@keyframes RandomRewardsButton_third2second_24 {
+    0% {
+        transform: translate(0%, 3%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+}
+/* asset paths*/
+.RandomRewardsButton_base_e6 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+.RandomRewardsButton_base_e6:hover {
+    cursor: pointer;
+}
+.RandomRewardsButton_randomRewardsImage_1a {
+    width: 126rem;
+    height: 70rem;
+    background: no-repeat center / contain;
+    position: relative;
+    top: 10rem;
+}
+.mediaMediumHeight .RandomRewardsButton_randomRewardsImage_1a {
+    width: 160rem;
+    height: 100rem;
+}
+.mediaLargeHeight .RandomRewardsButton_randomRewardsImage_1a {
+    width: 234rem;
+    height: 130rem;
+}
+.RandomRewardsButton_randomRewardsImage_1a::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background: radial-gradient(ellipse, rgba(255, 255, 255, 0.3) 0%, transparent 50%, transparent 100%);
+    opacity: 0;
+    content: '';
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+.RandomRewardsButton_base_e6:hover .RandomRewardsButton_randomRewardsImage_1a::after {
+    opacity: 1;
+}
+.RandomRewardsButton_randomRewardsText_d7 {
+    color: #ffc363;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+    text-shadow:
+        0 0 1.07em #e52,
+        0 0 0.57em #ff2a00,
+        0 0 0.29em #ff7f0040;
+}
+
+/* card transitions/animations*/
+/* card activation animations*/
+/* card edge transitions/animations*/
+/* infinite title transitions/animations*/
+/* infinite quest animations*/
+/* infinite cards transitions*/
+/* completed screen transitions/animation*/
+@keyframes App_completed-congrats_9b {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes App_completed-glow_20 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+@keyframes App_card-show_dd {
+    0% {
+        opacity: 0;
+        top: 65%;
+        left: 50%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes App_card-show-presentment_ea {
+    0% {
+        opacity: 0;
+        top: 200%;
+        left: 10%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+}
+@keyframes App_edge_13 {
+    50% {
+        transform: translate(-1%, -5%) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(-1%, -10%) rotate(-4deg);
+    }
+}
+@keyframes App_dissolve_0b {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+@keyframes App_blink-edge_38 {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scaleY(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -100%) scale(0.01, 3);
+    }
+}
+@keyframes App_blink_6d {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+
+    12.5% {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.25, 2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.01, 3);
+    }
+}
+@keyframes App_show-down_5e {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes App_show-up_6e {
+    0% {
+        opacity: 0;
+        transform: translateY(30rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes App_show_1d {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes App_hide_cf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes App_showGlow_cc {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+@keyframes App_hideGlow_eb {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes App_pointFadeOut_ae {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+@keyframes App_pointFadeIn_56 {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes App_first2void_a9 {
+    0% {
+        opacity: 1;
+        transform: translate(0%, 0%) rotate(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+}
+@keyframes App_second2firstTranslate_53 {
+    0% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+}
+@keyframes App_second2firstRotate_23 {
+    0% {
+        transform: translate(6%, 0%) rotate(3deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0);
+    }
+}
+@keyframes App_third2second_31 {
+    0% {
+        transform: translate(0%, 3%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(6%, 1%) rotate(3deg);
+    }
+}
+/* asset paths*/
+.App_base_80 {
+    display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
-
+.App_base__cursor_default_d8 {
+    cursor: default;
+}
+.App_base__cursor_grab_75 {
+    cursor: grab;
+}
+.App_base__cursor_grabbing_b5 {
+    cursor: grabbing;
+}
 .App_close_ec {
     position: absolute;
     top: 30rem;
     right: 25rem;
+    z-index: 1;
 }
-
 .mediaMedium .App_close_ec {
     top: 40rem;
     right: 40rem;
 }
-
 .App_info_30 {
     position: absolute;
     top: 30rem;
     left: 25rem;
+    z-index: 1;
 }
-
 .mediaMedium .App_info_30 {
     top: 40rem;
     left: 40rem;
 }
-
+.App_debugButton_4a {
+    position: absolute;
+    top: 30rem;
+    left: 55rem;
+    z-index: 1;
+}
+.mediaMedium .App_debugButton_4a {
+    top: 40rem;
+    left: 170rem;
+}
 .App_bg_04 {
     width: 100%;
     height: 100%;
@@ -1056,113 +5742,113 @@
     left: 0;
     z-index: -1;
 }
-
 .App_header_2e {
-    color: #f2f2f7;
-    font-size: 36rem;
-    font-weight: 700;
-    line-height: 1.1;
+    padding-top: 30rem;
 }
-
-.mediaLarge .App_header_2e {
-    color: #f2f2f7;
-    font-size: 56rem;
-    font-weight: 700;
-    line-height: 1.1;
+.mediaMedium .App_header_2e {
+    padding-top: 40rem;
 }
-
-.mediaExtraLarge .App_header_2e {
-    color: #f2f2f7;
-    font-size: 73rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.App_content_c2 {
+.App_progressionContainer_9a {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.App_complete_aa {
-    display: flex;
-    align-items: center;
-}
-
-.App_progression_00 {
-    display: flex;
-    flex-direction: column;
-    width: 992rem;
-    margin-top: 60rem;
-}
-
-.mediaMedium .App_progression_00 {
-    width: 1415rem;
-    margin-top: 20rem;
-}
-
-.App_base__completedFinal_cb .App_progression_00 {
-    margin-top: 100rem;
-}
-
-.App_resetTimer_94 {
-    color: #ffdd99;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.App_resetText_07 {
-    margin-left: 5rem;
-    margin-top: 7rem;
-}
-
-.App_footer_b1 {
-    display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
-    opacity: 0.8;
+    height: 100%;
+    mask-image: radial-gradient(ellipse at top, #000000 70%, transparent 90%, transparent 100%);
 }
-
-.App_footer__hidden_7b {
+.mediaExtraLargeWidth .App_progressionContainer_9a {
+    mask-image: radial-gradient(ellipse at top, #000000 50%, transparent 80%, transparent 100%);
+}
+.App_base__completed_5b .App_progressionContainer_9a {
+    mask-image: linear-gradient(#000000 80%, rgba(0, 0, 0, 0.1) 100%);
+}
+.App_ordinaryProgression_be {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-height: 900rem;
+}
+.mediaLargeHeight .App_ordinaryProgression_be {
+    max-height: 1100rem;
+}
+.App_questsList_7c {
+    width: 100%;
+}
+.mediaLargeHeight .App_questsList_7c {
+    padding-top: 24rem;
+}
+.App_cardProgressionContainer_f2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.App_cardProgression_0e {
+    flex: 1;
+    margin-bottom: 70rem;
+    transform: translateY(0);
+    transition: transform 0.5s 2.5s;
+}
+.mediaMediumHeight .App_cardProgression_0e {
+    margin-top: 30rem;
+    margin-bottom: 220rem;
+}
+.mediaLargeHeight .App_cardProgression_0e {
+    margin-bottom: 170rem;
+}
+.App_base__completed_5b .App_cardProgression_0e {
+    transform: translateY(160rem);
+}
+.App_base__completed_5b.App_base__completedAnimated_42 .App_cardProgression_0e {
+    transform: translateY(0);
+}
+.App_fadeBackground_35 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    pointer-events: none;
+}
+.App_fadeLeft_74 {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.6) 10%, transparent 40%, transparent 100%);
+}
+.mediaExtraLargeWidth .App_fadeLeft_74 {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.6) 15%, transparent 60%, transparent 100%);
+}
+.App_fadeRight_e0 {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.6) 10%, transparent 40%, transparent 100%);
+}
+.mediaExtraLargeWidth .App_fadeRight_e0 {
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.6) 15%, transparent 60%, transparent 100%);
+}
+.App_toRandomRewards_2a {
+    position: absolute;
+    bottom: 10rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition:
+        opacity 0.3s ease-out 0.5s,
+        transform 0.3s ease-out 0.5s;
+}
+.App_base__completedAnimated_42 .App_toRandomRewards_2a {
     opacity: 0;
+    transform: translate(-50%, 20rem);
 }
-
-.App_footerText_e7 {
-    color: #8c8c7e;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
+.mediaLargeHeight .App_toRandomRewards_2a {
+    bottom: 20rem;
 }
-
-.App_infoIcon_37 {
-    width: 24rem;
-    height: 24rem;
-    margin-right: 5rem;
-    background: url('R.images.gui.maps.icons.library.info') no-repeat center center;
-    background-size: contain;
-}
-
-.App_quest_96 {
-    display: flex;
-    margin-top: 24rem;
-}
-
-.mediaMedium .App_quest_96 {
-    margin-top: 47rem;
-}
-
-.mediaLarge .App_quest_96 {
-    margin-top: 35rem;
-}
-
-.App_conditions_fb {
-    display: flex;
-    justify-content: center;
+.App_completedProgression_79 {
     width: 100%;
+    height: 100%;
+    position: absolute;
 }

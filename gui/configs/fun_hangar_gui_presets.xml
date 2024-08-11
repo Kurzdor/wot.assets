@@ -2,13 +2,26 @@
   <presets>
     <preset>
       <name>	standard	</name>
-      <basePreset>	default	</basePreset>
+      <basePreset>	random	</basePreset>
       <components>
+        <component>
+          <name>	alertMessage	</name>
+          <visible>	True	</visible>
+        </component>
         <component>
           <name>	carousel	</name>
           <visible>	True	</visible>
           <type>	funRandomTankCarousel	</type>
           <layout>	TankCarouselUI	</layout>
+        </component>
+        <component>
+          <name>	headerWidget	</name>
+          <visible>	True	</visible>
+          <type>	FunRandomHangarWidget	</type>
+        </component>
+        <component>
+          <name>	headerQuestFlags	</name>
+          <visible>	False	</visible>
         </component>
       </components>
     </preset>

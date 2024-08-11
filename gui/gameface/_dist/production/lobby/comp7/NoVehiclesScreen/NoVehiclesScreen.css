@@ -140,7 +140,6 @@
     opacity: 0;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .page_heading_05 {
     padding-top: 54rem;
@@ -325,7 +324,6 @@
     line-height: 1.2;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes App_fadeIn_42 {
     0% {

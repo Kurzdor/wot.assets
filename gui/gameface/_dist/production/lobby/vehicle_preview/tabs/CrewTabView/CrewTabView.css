@@ -1,0 +1,944 @@
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+.ExtendedText_base__zeroPadding_25 {
+    padding: 0;
+}
+
+.ExtendedText_base__isTruncationAvailable_5b {
+    width: 100%;
+}
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+    opacity: 0;
+}
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #ff2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #ffffff;
+}
+
+.colors_white_45 {
+    color: #f2f2f7;
+}
+
+.colors_whiteOrange_81 {
+    color: #fefeec;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #e9e2bf;
+}
+
+.colors_par_5b {
+    color: #8c8c7e;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362e;
+}
+
+.colors_red_79 {
+    color: #ff2717;
+}
+
+.colors_redDark_73 {
+    color: #b70000;
+}
+
+.colors_yellow_76 {
+    color: #feab34;
+}
+
+.colors_orange_cd {
+    color: #ee7000;
+}
+
+.colors_cream_0f {
+    color: #ffdd99;
+}
+
+.colors_brown_82 {
+    color: #cbac77;
+}
+
+.colors_greenBright_68 {
+    color: #80d43a;
+}
+
+.colors_green_fa {
+    color: #7ab300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #ccffff;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09e2ff;
+}
+
+.colors_cred_35 {
+    color: #ced9d9;
+}
+
+.colors_gold_c3 {
+    color: #ffc363;
+}
+
+.colors_bond_ce {
+    color: #c9c9b6;
+}
+
+.colors_prom_83 {
+    color: #a29b70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.renderers_word_f3 {
+    white-space: pre;
+    overflow-wrap: normal;
+}
+
+.SkillIcon_base_43 {
+    display: flex;
+    background: no-repeat center / contain;
+    position: relative;
+}
+
+.SkillIcon_base__c_22x22_14 {
+    width: 22rem;
+    height: 22rem;
+}
+
+.SkillIcon_base__medium_d0 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.SkillIcon_base__c_36x36_flat_7e {
+    width: 36rem;
+    height: 36rem;
+}
+
+.SkillIcon_base__big_ae {
+    width: 52rem;
+    height: 52rem;
+}
+
+.SkillIcon_base__c_80x80_79 {
+    width: 80rem;
+    height: 80rem;
+}
+
+.SkillIcon_base__c_120x90_8c {
+    width: 120rem;
+    height: 90rem;
+}
+
+.SkillIcon_base__dialogs_e5 {
+    width: 180rem;
+    height: 135rem;
+}
+
+.Header_base_bf {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.mediaMediumHeight .Header_base_bf {
+    display: flex;
+}
+
+.Header_title_ea {
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    max-width: 295rem;
+    margin-left: 5rem;
+}
+
+.Header_base__noSkill_66 .Header_title_ea {
+    margin-bottom: 10rem;
+}
+
+.Header_noCrew_96 {
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    max-width: 244rem;
+}
+
+.Header_base__noSkill_66 .Header_noCrew_96 {
+    margin-bottom: 10rem;
+}
+
+.Header_skill_3f {
+    left: -4rem;
+}
+
+.Dog_base_87 {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+.Dog_dogIcon_15 {
+    width: 108rem;
+    height: 70rem;
+    background: url('R.images.gui.maps.icons.tankmen.icons.big.ussr_dog_1') no-repeat center / contain;
+    clip-path: inset(10rem 0 0 0);
+}
+
+.mediaLarge .Dog_dogIcon_15 {
+    height: 80rem;
+}
+
+.Dog_name_d5 {
+    color: #c9c9b6;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 4rem;
+}
+
+.RoleIcon_base_51 {
+    background: no-repeat center / contain;
+}
+
+.RoleIcon_base__small_68 {
+    width: 13rem;
+    height: 13rem;
+}
+
+.RoleIcon_base__c_14x14_8f {
+    width: 14rem;
+    height: 14rem;
+}
+
+.RoleIcon_base__c_18x18_0b {
+    width: 18rem;
+    height: 18rem;
+}
+
+.RoleIcon_base__c_24x24_new_fe,
+.RoleIcon_base__c_24x24_52 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.RoleIcon_base__c_30x30_red_85,
+.RoleIcon_base__c_30x30_e9 {
+    width: 30rem;
+    height: 30rem;
+}
+
+.RoleIcon_base__c_40x40_99 {
+    width: 40rem;
+    height: 40rem;
+}
+
+.RoleIcon_base__medium_5d {
+    width: 33rem;
+    height: 33rem;
+}
+
+.RoleIcon_base__white_2a {
+    width: 44rem;
+    height: 44rem;
+}
+
+.RoleIcon_base__big_b4 {
+    width: 60rem;
+    height: 60rem;
+}
+
+.EmptySlot_base_33 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.EmptySlot_role_00 {
+    opacity: 0.6;
+}
+
+.EmptySlot_roleName_52 {
+    color: #c9c9b6;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    flex: 1;
+    margin-left: 20rem;
+    text-overflow: ellipsis;
+    text-shadow: 0 0 8rem #333;
+}
+
+.EfficiencyIndicator_base_34 {
+    display: flex;
+    justify-content: center;
+    width: 32rem;
+    height: 22rem;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    pointer-events: auto;
+}
+
+.EfficiencyIndicator_base__big_a1 {
+    align-items: center;
+    height: 26rem;
+}
+
+.EfficiencyIndicator_base__large_dc {
+    align-items: center;
+    width: auto;
+    height: 32rem;
+    padding: 0 2rem;
+}
+
+.EfficiencyIndicator_base__large_dc.EfficiencyIndicator_base__untrained_cd {
+    width: 42rem;
+}
+
+.EfficiencyIndicator_percent_6b {
+    margin-top: 2rem;
+    text-shadow:
+        0 0 12rem rgba(255, 0, 0, 0.7),
+        0 0 8rem rgba(226, 0, 0, 0.7);
+    position: relative;
+    color: #ffc3be;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.EfficiencyIndicator_percent__full_30 {
+    color: #ffffff;
+    text-shadow:
+        0 0 15rem rgb(238, 85, 34),
+        0 0 8rem rgba(254, 171, 52, 0.6),
+        0 0 4rem rgba(255, 127, 0, 0.25);
+    letter-spacing: -1rem;
+}
+
+.EfficiencyIndicator_base__big_a1 .EfficiencyIndicator_percent_6b {
+    position: relative;
+    top: -1rem;
+}
+
+.EfficiencyIndicator_base__large_dc .EfficiencyIndicator_percent_6b {
+    font-size: 22rem;
+    position: relative;
+    top: -2rem;
+}
+
+.EfficiencyIndicator_icon_da {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.untrained') no-repeat center / 44rem 36rem;
+}
+
+.AcceleratedTrainingIcon_base_4f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 16rem;
+    height: 16rem;
+    pointer-events: auto;
+}
+
+.AcceleratedTrainingIcon_icon_45 {
+    width: 34rem;
+    height: 34rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.speedXpIcon') no-repeat center / contain;
+}
+
+.AnimatedLostSkill_base_55 {
+    display: flex;
+    position: relative;
+}
+
+.AnimatedLostSkill_base__c_24x24_d5 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.AnimatedLostSkill_base__c_44x44_72 {
+    width: 44rem;
+    height: 44rem;
+}
+
+.AnimatedLostSkill_icon_d4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.AnimatedLostSkill_base__c_24x24_d5 .AnimatedLostSkill_icon_d4 {
+    position: absolute;
+    top: -20rem;
+    right: -20rem;
+    bottom: -20rem;
+    left: -20rem;
+}
+
+.AnimatedLostSkill_base__c_44x44_72 .AnimatedLostSkill_icon_d4 {
+    position: absolute;
+    top: -26rem;
+    right: -26rem;
+    bottom: -26rem;
+    left: -26rem;
+}
+
+.AnimatedNewSkill_base_0f {
+    width: 24rem;
+    height: 24rem;
+}
+
+.Skill_base_1f {
+    display: flex;
+    position: relative;
+}
+
+.Skill_base__c_24x24_29 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.Skill_base__c_44x44_5a {
+    width: 44rem;
+    height: 44rem;
+}
+
+.Skill_background_02 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.Skill_base__borderLightYellow_09 .Skill_background_02 {
+    border-color: #ffdd99;
+}
+
+.Skill_base__borderYellow_3e .Skill_background_02 {
+    border-color: #feab34;
+}
+
+.Skill_base__borderRed_d2 .Skill_background_02 {
+    border-color: #ff2717;
+}
+
+.Skill_base__typeBonus_23 .Skill_background_02 {
+    border: none;
+    background: no-repeat 0 / cover;
+}
+
+.Skill_base__disabled_85 .Skill_background_02 {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.6;
+}
+
+.Skill_base__disabled_85.Skill_base__borderYellow_3e .Skill_background_02 {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.Skill_newSkillHighLight_44 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    background: #ff5c00;
+    opacity: 0.25;
+}
+
+.Skill_icon_b0 {
+    position: absolute;
+}
+
+.Skill_base__disabled_85 .Skill_icon_b0 {
+    opacity: 0.3;
+}
+
+.Skill_base__c_24x24_29 .Skill_icon_b0 {
+    width: 22rem;
+    height: 22rem;
+    top: 1rem;
+    left: 1rem;
+}
+
+.Skill_base__c_44x44_5a .Skill_icon_b0 {
+    width: 34rem;
+    height: 34rem;
+    top: 5rem;
+    left: 5rem;
+}
+
+.Skill_disabledOverlay_3b {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    background: url('R.images.gui.maps.icons.crew.skillsFrame.disabled') center / cover;
+}
+
+.LostLevelAnimation_base_f6 {
+    display: flex;
+    align-items: center;
+    width: 0;
+    position: relative;
+}
+
+.LostLevelAnimation_level_f0 {
+    color: #feab34;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    position: absolute;
+}
+
+.LostLevelAnimation_level__skillLost_a2 {
+    color: #ff2717;
+}
+
+.LostLevelAnimation_level__skillBlur_24 {
+    text-shadow: 0 0 20rem rgba(255, 255, 255, 0.9);
+    filter: blur(5rem);
+    opacity: 0;
+}
+
+.LostLevelAnimation_base__c_24x24_1c .LostLevelAnimation_level_f0 {
+    left: 4rem;
+}
+
+.LostLevelAnimation_base__c_44x44_44 .LostLevelAnimation_level_f0 {
+    font-size: 24rem;
+    left: 6rem;
+}
+
+.SkillLevel_base_d2 {
+    color: #feab34;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.SkillLevel_base__highlighted_e3 {
+    color: #fefeec;
+    text-shadow:
+        0 0 15rem #e52,
+        0 0 8rem #ff2a00,
+        0 0 4rem rgba(255, 127, 0, 0.25);
+}
+
+.Row_base_bb {
+    display: flex;
+    align-items: center;
+}
+
+.Row_skill_fb {
+    overflow: hidden;
+}
+
+.Row_skill_fb + .Row_skill_fb {
+    margin-left: 2rem;
+}
+
+.Row_base__c_44x44_4f .Row_skill_fb + .Row_skill_fb {
+    margin-left: 4rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseNoMargins_13 .Row_skill_fb + .Row_skill_fb {
+    margin-left: -1rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOverlap_2c .Row_skill_fb + .Row_skill_fb {
+    margin-left: 0;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseReducedMargins_3b .Row_skill_fb + .Row_skill_fb {
+    margin-left: 1rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOverlap_2c .Row_skill_fb {
+    width: 20rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOverlap_2c .Row_skill__last_0a,
+.Row_base__c_24x24_16.Row_base__collapseOverlap_2c .Row_skill__lastLearnedSkill_6c {
+    width: 24rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOverlap_2c .Row_skill__lastLearnedSkill_6c {
+    margin-right: 2rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOnlyLearningOverlap_19 .Row_skill__stateLearning_5d {
+    width: 20rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOnlyLearningOverlap_19
+    .Row_skill__stateLearning_5d
+    + .Row_skill__stateLearning_5d {
+    margin-left: 0;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOnlyLearningOverlap_19 .Row_skill_fb.Row_skill__last_0a {
+    width: 24rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlap_10 .Row_skill_fb {
+    width: 19rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithLevel_90 .Row_skill_fb,
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithEfficiency_90 .Row_skill_fb {
+    width: 15rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithLevelAndEfficiency_4e .Row_skill_fb {
+    width: 14rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlap_10 .Row_skill__last_0a,
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithLevel_90 .Row_skill__last_0a,
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithEfficiency_90 .Row_skill__last_0a,
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithLevelAndEfficiency_4e .Row_skill__last_0a {
+    width: 24rem;
+}
+
+.Row_base__c_24x24_16 .Row_level_56 {
+    margin-left: 4rem;
+    position: relative;
+    top: -1rem;
+}
+
+.Row_base__c_44x44_4f .Row_level_56 {
+    margin-left: 6rem;
+    font-size: 24rem;
+}
+
+.Row_acceleratedTrainingIcon_c7 {
+    margin-left: 9rem;
+}
+
+.Row_lostSkill_32 {
+    margin-left: 2rem;
+}
+
+.Row_base__c_44x44_4f .Row_lostSkill_32 {
+    margin-left: 4rem;
+}
+
+.Skills_base_ec {
+    display: flex;
+    align-items: center;
+}
+
+.Skills_efficiency_d0 {
+    margin-right: 4rem;
+}
+
+.Skills_base__c_44x44_c0 .Skills_efficiency_d0 {
+    margin-right: 8rem;
+}
+
+.Skills_rows_e8 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Skills_bonusRow_4a {
+    margin-top: 2rem;
+}
+
+.Skills_base__c_44x44_c0 .Skills_bonusRow_4a {
+    margin-top: 4rem;
+}
+
+.TankmanIcon_base_f9 {
+    background: no-repeat center / contain;
+}
+
+.TankmanIcon_base__big_98 {
+    width: 158rem;
+    height: 118rem;
+}
+
+.TankmanIcon_base__small_b2,
+.TankmanIcon_base__barracks_62 {
+    width: 100rem;
+    height: 60rem;
+}
+
+.TankmanIcon_base__special_3f {
+    width: 444rem;
+    height: 300rem;
+}
+
+.TankmanIcon_base__c_204x256_97 {
+    width: 204rem;
+    height: 256rem;
+}
+
+.WidgetTankmanIcon_icon_0f {
+    width: 108rem;
+    height: 80rem;
+}
+
+.WidgetTankmanIcon_icon__small_24 {
+    width: 100rem;
+    height: 60rem;
+}
+
+.WidgetTankmanIcon_icon__cropped_bd {
+    margin-top: -10rem;
+    clip-path: inset(10rem 0 0 0);
+}
+
+.Tankman_base_dd {
+    display: flex;
+    align-items: flex-end;
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Tankman_hitBox_47 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.Tankman_tankmanIcon_f7 {
+    pointer-events: none;
+}
+
+.Tankman_block_09 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 260rem;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 110rem;
+    pointer-events: none;
+}
+
+.Tankman_info_11 {
+    display: flex;
+    max-width: 100%;
+}
+
+.Tankman_roles_6c {
+    display: flex;
+    margin-left: 3rem;
+}
+
+.Tankman_role_b4 {
+    margin-right: 5rem;
+    opacity: 0.4;
+}
+
+.Tankman_name_db {
+    color: #c9c9b6;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    flex: 1;
+    margin-left: 1rem;
+    text-overflow: ellipsis;
+    text-shadow: 0 0 8rem #333;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Tankman_skills_7b {
+    margin-top: 6rem;
+    pointer-events: auto;
+}
+
+.Tankmen_base_d3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Tankmen_slot_1a {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 61rem;
+    padding-bottom: 1rem;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.55) 15%,
+        rgba(0, 0, 0, 0.4) 55%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    position: relative;
+}
+
+.mediaLarge .Tankmen_slot_1a {
+    height: 71rem;
+}
+
+.Tankmen_slot__withBonusSkills_13 {
+    height: 81rem;
+}
+
+.mediaLarge .Tankmen_slot__withBonusSkills_13 {
+    height: 91rem;
+}
+
+.Tankmen_divider_8b {
+    width: 100%;
+    height: 1rem;
+    background: linear-gradient(
+        270deg,
+        rgba(255, 255, 255, 0) 0%,
+        #ffffff 15%,
+        #ffffff 55%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0.1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.CrewTabApp_base_af {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 370rem;
+    position: relative;
+}
+
+.mediaMediumHeight .CrewTabApp_list_5a {
+    margin-top: 5rem;
+}
+
+.CrewTabApp_crewLocked_eb {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.CrewTabApp_lockIcon_03 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.library.lock_gray') no-repeat center / contain;
+    top: 2rem;
+}

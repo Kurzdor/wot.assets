@@ -141,11 +141,14 @@
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .BackButton_base_a6 {
     position: absolute;
     top: 75rem;
@@ -283,17 +286,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateHighlightHover_ff,
 .CButton_stateHighlightActive_35,
 .CButton_stateDisabled_54 {
-    opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-}
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
-.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
-.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-    transition: opacity 0.16s ease-in-out;
 }
 .CButton_stateHighlightHover_ff {
     background-image: linear-gradient(
@@ -302,6 +299,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         rgba(252, 248, 235, 0.1) 50%,
         rgba(255, 255, 255, 0) 100%
     );
+    opacity: 0;
 }
 .CButton_base_40:hover .CButton_stateHighlightHover_ff {
     opacity: 1;
@@ -319,6 +317,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_stateHighlightActive_35 {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+    opacity: 0;
 }
 .CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
     opacity: 1;
@@ -326,10 +325,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateDisabled_54 {
     background-color: rgba(0, 0, 0, 0.25);
     background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
-    background-size: 15rem;
+    background-size: 15rem 15rem;
+    visibility: hidden;
 }
 .CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-    opacity: 1;
+    visibility: inherit;
 }
 .CButton_content_cc {
     display: flex;
@@ -805,6 +805,30 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Currency_base__extraLarge_4d .Currency_icon__freeXP-extraLarge_58 {
     transform: translateY(4rem);
 }
+.Currency_icon__eliteXP-small_45 {
+    background-image: url('R.images.gui.maps.icons.library.EliteXpIcon-2');
+}
+.Currency_base__small_af .Currency_icon__eliteXP-small_45 {
+    transform: translateY(1rem);
+}
+.Currency_icon__eliteXP-big_c0 {
+    --icon-height: 24rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.EliteXpIconBig');
+}
+.Currency_icon__eliteXP-large_1b {
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.icons.library.elite_exp_48x48');
+}
+.Currency_icon__eliteXP-extraLarge_9b {
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.elite_exp_80x80');
+}
+.Currency_base__extraLarge_4d .Currency_icon__eliteXP-extraLarge_9b {
+    transform: translateY(4rem);
+}
 .Currency_icon__equipCoin-small_32 {
     --icon-height: 16rem;
     margin-right: -2rem;
@@ -874,7 +898,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .Currency_value__xp_b0,
 .Currency_value__crystal_19,
-.Currency_value__equipCoin_d0 {
+.Currency_value__equipCoin_d0,
+.Currency_value__eliteXP_62 {
     color: #c9c9b6;
 }
 .Currency_base__small_af .Currency_value__notEnough_56 {
@@ -1032,11 +1057,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .Footer_base_0d {
     display: flex;
     flex-direction: column;
@@ -1092,11 +1120,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .Header_base_fa {
     display: flex;
     padding-bottom: 18rem;
@@ -1414,11 +1445,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .ProgressionLevelIcon_base_c3 {
     display: flex;
 }
@@ -1452,11 +1486,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .Slot_base_a9 {
     width: 82rem;
     height: 82rem;
@@ -1633,11 +1670,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .Slots_slot_44 {
     margin: 0 16rem 16rem 0;
 }
@@ -1651,11 +1691,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .Title_base_0d {
     display: flex;
     align-items: flex-end;
@@ -1717,11 +1760,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .Season_base_cb {
     position: relative;
 }
@@ -1751,11 +1797,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .Seasons_base_d0 {
     display: flex;
     background: url('R.images.gui.maps.icons.customization.gf_customization_cart.slots') 50% 100% / 100% 100% no-repeat;
@@ -1787,6 +1836,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     (min-width: 3400px) {
     .Seasons_lip_93 {
         width: 1273rem;
+    }
+}
+@media (min-width: 1700px) and (max-height: 899px), (min-width: 3400px) and (max-height: 1799px) {
+    .Seasons_lip_93 {
+        width: 1017rem;
     }
 }
 .Seasons_lip__top_bd {
@@ -1823,6 +1877,10 @@ body {
 
 /* $resolution-height * 2*/
 
+/* $resolution-height - 1px*/
+
+/* $resolution-height-scale - 1px*/
+
 /* $resolution-small-width * 2*/
 
 /* $resolution-big-width * 2*/
@@ -1832,6 +1890,8 @@ body {
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+
+/* media*/
 
 .CustomizationCartApp_base_b8 {
     display: flex;
@@ -1887,6 +1947,12 @@ body {
     }
 }
 
+@media (min-width: 1700px) and (max-height: 899px), (min-width: 3400px) and (max-height: 1799px) {
+    .CustomizationCartApp_header_f5 {
+        width: 997rem;
+    }
+}
+
 .CustomizationCartApp_seasons_e0 {
     flex: 0 auto;
     width: 800rem;
@@ -1911,6 +1977,12 @@ body {
     (min-width: 3400px) {
     .CustomizationCartApp_seasons_e0 {
         width: 1253rem;
+    }
+}
+
+@media (min-width: 1700px) and (max-height: 899px), (min-width: 3400px) and (max-height: 1799px) {
+    .CustomizationCartApp_seasons_e0 {
+        width: 997rem;
     }
 }
 
@@ -1941,5 +2013,11 @@ body {
     (min-width: 3400px) {
     .CustomizationCartApp_footer_9d {
         width: 1253rem;
+    }
+}
+
+@media (min-width: 1700px) and (max-height: 899px), (min-width: 3400px) and (max-height: 1799px) {
+    .CustomizationCartApp_footer_9d {
+        width: 997rem;
     }
 }

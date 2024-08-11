@@ -85,6 +85,34 @@
     pointer-events: none;
 }
 
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
+}
+
 .colors_blackReal_fc {
     color: #000000;
 }
@@ -193,7 +221,7 @@
 }
 
 .renderers_word_f3 {
-    white-space: nowrap;
+    white-space: pre;
     overflow-wrap: normal;
 }
 
@@ -214,7 +242,7 @@
     color: rgba(242, 242, 247, 1);
 }
 
-.Description_retrainPrice_3c {
+.Description_efficiencyAfterRetrain_2f {
     color: #f2f2f7;
     font-size: 18rem;
     font-weight: 700;
@@ -224,26 +252,37 @@
     position: relative;
 }
 
-.Description_retrainPrice_3c.Description_animate_1f .Description_retrainPriceGlow_a9 {
-    animation: Description_glowInAnimation_50 0.3s;
-}
-
-.Description_retrainPrice__highlighted_3e {
+.Description_efficiencyAfterRetrain__highlighted_71 {
     color: #ffdd99;
 }
 
-.Description_retrainPrice__selected_b8 {
+.Description_efficiencyAfterRetrain__selected_41 {
     opacity: 1;
 }
 
-.Description_retrainPriceGlow_a9 {
-    width: 100rem;
-    height: 100rem;
-    background: url('R.images.gui.maps.icons.crew.cardGlow.retrainDebuffGlow') no-repeat center / contain;
-    opacity: 0;
+.Description_efficiencyAfterRetrainValue_f4 {
+    position: relative;
+}
+
+.Description_efficiencyAfterRetrainGlow_cb {
+    width: 125rem;
+    height: 70rem;
+    background: no-repeat center / contain;
     position: absolute;
-    top: -39rem;
-    left: -37rem;
+    top: -23rem;
+    left: -47rem;
+}
+
+.Description_efficiencyAfterRetrainGlow__increase_84 {
+    background-image: url('R.images.gui.maps.icons.crew.cardGlow.increaseGlow');
+}
+
+.Description_efficiencyAfterRetrainGlow__decrease_24 {
+    background-image: url('R.images.gui.maps.icons.crew.cardGlow.decreaseGlow');
+}
+
+.Description_efficiencyAfterRetrainValuePercents_29 {
+    position: relative;
 }
 
 .Description_bonusSkill_0d {
@@ -315,24 +354,6 @@
     margin-top: -7rem;
 }
 
-@keyframes Description_glowInAnimation_50 {
-    0% {
-        opacity: 0;
-    }
-
-    10% {
-        opacity: 0.35;
-    }
-
-    90% {
-        opacity: 0.35;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
 .FormatText_base_d0 {
     display: flex;
     flex-wrap: wrap;
@@ -342,11 +363,6 @@
     display: flex;
     background: no-repeat center / contain;
     position: relative;
-}
-
-.SkillIcon_base__small_d0 {
-    width: 14rem;
-    height: 14rem;
 }
 
 .SkillIcon_base__c_22x22_14 {
@@ -367,6 +383,16 @@
 .SkillIcon_base__big_ae {
     width: 52rem;
     height: 52rem;
+}
+
+.SkillIcon_base__c_80x80_79 {
+    width: 80rem;
+    height: 80rem;
+}
+
+.SkillIcon_base__c_120x90_8c {
+    width: 120rem;
+    height: 90rem;
 }
 
 .SkillIcon_base__dialogs_e5 {
@@ -513,6 +539,30 @@
 .Currency_base__extraLarge_4d .Currency_icon__freeXP-extraLarge_58 {
     transform: translateY(4rem);
 }
+.Currency_icon__eliteXP-small_45 {
+    background-image: url('R.images.gui.maps.icons.library.EliteXpIcon-2');
+}
+.Currency_base__small_af .Currency_icon__eliteXP-small_45 {
+    transform: translateY(1rem);
+}
+.Currency_icon__eliteXP-big_c0 {
+    --icon-height: 24rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.EliteXpIconBig');
+}
+.Currency_icon__eliteXP-large_1b {
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.icons.library.elite_exp_48x48');
+}
+.Currency_icon__eliteXP-extraLarge_9b {
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.elite_exp_80x80');
+}
+.Currency_base__extraLarge_4d .Currency_icon__eliteXP-extraLarge_9b {
+    transform: translateY(4rem);
+}
 .Currency_icon__equipCoin-small_32 {
     --icon-height: 16rem;
     margin-right: -2rem;
@@ -582,7 +632,8 @@
 }
 .Currency_value__xp_b0,
 .Currency_value__crystal_19,
-.Currency_value__equipCoin_d0 {
+.Currency_value__equipCoin_d0,
+.Currency_value__eliteXP_62 {
     color: #c9c9b6;
 }
 .Currency_base__small_af .Currency_value__notEnough_56 {
@@ -686,7 +737,6 @@
     border-radius: 6rem;
     background: rgba(255, 255, 255, 0.04);
     position: relative;
-    cursor: pointer;
     mask-size: contain;
 }
 
@@ -699,17 +749,20 @@
     border: 1rem solid rgba(249, 201, 111, 0.5);
     box-shadow: 0 0 8rem 0 rgba(255, 0, 0, 0.28);
     background: rgba(255, 140, 109, 0.15);
-    cursor: default;
+}
+
+.PriceCard_base__hoverEnabled_18:hover {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.PriceCard_base__hoverEnabled_18:hover .PriceCard_hoverRays_75 {
+    visibility: visible;
 }
 
 .PriceCard_base__disabled_9c {
     background: rgba(0, 0, 0, 0.25);
     opacity: 0.5;
-    cursor: default;
-}
-
-.PriceCard_base__hover_7d {
-    background: rgba(255, 255, 255, 0.1);
 }
 
 .PriceCard_tooltip_69 {
@@ -741,6 +794,7 @@
         rgba(255, 255, 255, 0) 100%
     );
     filter: blur(5rem);
+    visibility: hidden;
 }
 
 .PriceCard_disabledPattern_a7 {
@@ -753,6 +807,24 @@
     border-radius: 6rem;
     background: url('R.images.gui.maps.icons.library.disabled_pattern') center / 9rem;
     opacity: 1;
+}
+
+.PriceCard_discountPattern_d5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 238rem;
+    height: 318rem;
+    background: url('R.images.gui.maps.icons.common.components.price_card.perk_reset.dot_texture') no-repeat center /
+        contain;
+}
+
+.mediaMedium .PriceCard_discountPattern_d5 {
+    width: 298rem;
+    height: 398rem;
+    background-image: url('R.images.gui.maps.icons.common.components.price_card.perk_reset.dot_texture_big');
 }
 
 .PriceCard_title_98 {
@@ -821,8 +893,30 @@
     left: 0;
 }
 
+.PriceCard_price__specialDiscount_12 {
+    color: #ffdd99;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
 .PriceCard_base__small_b0 .PriceCard_price_13 {
     bottom: 15rem;
+}
+
+.PriceCard_bottomGlow_a3 {
+    width: 238rem;
+    height: 109rem;
+    background: url('R.images.gui.maps.icons.common.components.price_card.perk_reset.bottom_glow') no-repeat center /
+        contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.mediaMedium .PriceCard_bottomGlow_a3 {
+    width: 298rem;
+    background-image: url('R.images.gui.maps.icons.common.components.price_card.perk_reset.bottom_glow_big');
 }
 
 .PriceListApp_base_7d {

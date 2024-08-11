@@ -55,8 +55,8 @@
                         A = n.large,
                         o = n.medium,
                         s = n.small,
-                        D = n.extraSmall,
-                        l = n.extraLargeWidth,
+                        l = n.extraSmall,
+                        D = n.extraLargeWidth,
                         B = n.largeWidth,
                         d = n.mediumWidth,
                         C = n.smallWidth,
@@ -72,9 +72,9 @@
                         if (t.large && A) return e;
                         if (t.medium && o) return e;
                         if (t.small && s) return e;
-                        if (t.extraSmall && D) return e;
+                        if (t.extraSmall && l) return e;
                     } else {
-                        if (t.extraLargeWidth && l) return (0, E.H)(e, t, p);
+                        if (t.extraLargeWidth && D) return (0, E.H)(e, t, p);
                         if (t.largeWidth && B) return (0, E.H)(e, t, p);
                         if (t.mediumWidth && d) return (0, E.H)(e, t, p);
                         if (t.smallWidth && C) return (0, E.H)(e, t, p);
@@ -209,7 +209,7 @@
                 t(6483), t(6179), t(3415), t(2862), t(729), t(1609);
             },
             2862: (u, e, t) => {
-                let i, E, r, a, n, F, A;
+                let i, E, r, a, n, F, A, o;
                 t.d(e, { E4: () => i, h2: () => r }),
                     (function (u) {
                         (u.Items = 'items'),
@@ -356,7 +356,10 @@
                             (u.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4'),
                             (u.PROGRESSION_STYLE_UPGRADED_5 = 'progressionStyleUpgraded_5'),
                             (u.PROGRESSION_STYLE_UPGRADED_6 = 'progressionStyleUpgraded_6');
-                    })(A || (A = {}));
+                    })(A || (A = {})),
+                    (function (u) {
+                        (u[(u.Engraving = 0)] = 'Engraving'), (u[(u.Background = 1)] = 'Background');
+                    })(o || (o = {}));
             },
             729: (u, e, t) => {
                 t(2372), t(6179);
@@ -501,18 +504,21 @@
                 t.r(e),
                     t.d(e, {
                         events: () => i,
-                        getMouseGlobalPosition: () => r,
-                        getSize: () => E,
-                        graphicsQuality: () => a,
+                        getMouseGlobalPosition: () => a,
+                        getSize: () => r,
+                        graphicsQuality: () => n,
+                        playSound: () => E.G,
+                        setRTPC: () => E.E,
                     });
-                var i = t(527);
-                function E(u = 'px') {
+                var i = t(527),
+                    E = t(2493);
+                function r(u = 'px') {
                     return 'rem' === u ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function r(u = 'px') {
+                function a(u = 'px') {
                     return 'rem' === u ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const a = {
+                const n = {
                     isLow: () => 1 === viewEnv.getGraphicsQuality(),
                     isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                     get: () => viewEnv.getGraphicsQuality(),
@@ -523,6 +529,19 @@
                     viewEnv.setTrackMouseOnStage(u);
                 }
                 t.d(e, { R: () => i });
+            },
+            2493: (u, e, t) => {
+                function i(u) {
+                    engine.call('PlaySound', u).catch((e) => {
+                        console.error(`playSound('${u}'): `, e);
+                    });
+                }
+                function E(u, e) {
+                    engine.call('SetRTPCGlobal', u, e).catch((t) => {
+                        console.error(`setRTPC('${u}', '${e}'): `, t);
+                    });
+                }
+                t.d(e, { E: () => E, G: () => i });
             },
             2472: (u, e, t) => {
                 function i(u) {
@@ -536,9 +555,17 @@
                 t.d(e, { E: () => i });
             },
             3138: (u, e, t) => {
-                t.d(e, { O: () => E });
+                t.d(e, { O: () => r });
+                var i = t(5959),
+                    E = t(514);
+                const r = { view: t(7641), client: i, sound: E.ZP };
+            },
+            514: (u, e, t) => {
+                t.d(e, { ZP: () => a });
                 var i = t(5959);
-                const E = { view: t(7641), client: i };
+                const E = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    r = Object.keys(E).reduce((u, e) => ((u[e] = () => (0, i.playSound)(E[e])), u), {}),
+                    a = { play: Object.assign({}, r, { sound: i.playSound }), setRTPC: i.setRTPC };
             },
             3722: (u, e, t) => {
                 function i(u, e, t = 1) {
@@ -588,13 +615,13 @@
                         getBrowserTexturePath: () => A,
                         getDisplayStatus: () => v,
                         getScale: () => C,
-                        getSize: () => D,
+                        getSize: () => l,
                         getViewGlobalPosition: () => B,
                         isEventHandled: () => w,
                         isFocused: () => h,
                         pxToRem: () => _,
                         remToPx: () => c,
-                        resize: () => l,
+                        resize: () => D,
                         sendEvent: () => a.qP,
                         setAnimateWindow: () => m,
                         setEventHandled: () => g,
@@ -621,10 +648,10 @@
                 function s(u) {
                     viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, 15);
                 }
-                function D(u = 'px') {
+                function l(u = 'px') {
                     return 'rem' === u ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
                 }
-                function l(u, e, t = 'px') {
+                function D(u, e, t = 'px') {
                     return 'rem' === t ? viewEnv.resizeViewRem(u, e) : viewEnv.resizeViewPx(u, e);
                 }
                 function B(u = 'rem') {
@@ -995,8 +1022,8 @@
                     A = Object.freeze({ FRACTIONAL: 0, WO_ZERO_DIGITS: 1 }),
                     o = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1 }),
                     s = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1, YEAR_MONTH: 2 });
-                var D = t(5521),
-                    l = t(3138);
+                var l = t(5521),
+                    D = t(3138);
                 const B = ['args'];
                 function d(u, e, t, i, E, r, a) {
                     try {
@@ -1077,7 +1104,7 @@
                     },
                     m = () => c(n.CLOSE),
                     h = (u, e) => {
-                        u.keyCode === D.n.ESCAPE && e();
+                        u.keyCode === l.n.ESCAPE && e();
                     };
                 var g = t(7572);
                 const w = E.instance,
@@ -1097,17 +1124,17 @@
                             c(n.CONTEXT_MENU, { isMouseEvent: !0, contentID: u, on: !0, decoratorID: t, args: e });
                         },
                         sendShowPopOverEvent: (u, e, t, i, E = R.invalid('resId'), r) => {
-                            const a = l.O.view.getViewGlobalPosition(),
+                            const a = D.O.view.getViewGlobalPosition(),
                                 F = t.getBoundingClientRect(),
                                 A = F.x,
                                 o = F.y,
                                 s = F.width,
-                                D = F.height,
+                                l = F.height,
                                 B = {
-                                    x: l.O.view.pxToRem(A) + a.x,
-                                    y: l.O.view.pxToRem(o) + a.y,
-                                    width: l.O.view.pxToRem(s),
-                                    height: l.O.view.pxToRem(D),
+                                    x: D.O.view.pxToRem(A) + a.x,
+                                    y: D.O.view.pxToRem(o) + a.y,
+                                    width: D.O.view.pxToRem(s),
+                                    height: D.O.view.pxToRem(l),
                                 };
                             c(n.POP_OVER, {
                                 isMouseEvent: !0,
@@ -1193,7 +1220,7 @@
                 i.style, i.tankman;
             },
             2893: (u, e, t) => {
-                t(2862), t(729), t(5216), t(8546), t(930), t(7044), t(3649);
+                t(2862), t(729), t(5216), t(7044), t(3649), t(8546), t(930);
             },
             8546: (u, e, t) => {
                 let i, E, r, a;

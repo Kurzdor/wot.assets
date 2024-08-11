@@ -208,7 +208,6 @@
     transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .Progress_base_2e {
     width: 86rem;
@@ -354,7 +353,6 @@
     color: #8c8c7e;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .QualificationCounter_base_fb {
     display: flex;
@@ -395,7 +393,6 @@
     transform: translateY(-1rem);
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .Qualification_base_46 {
     display: flex;
@@ -421,7 +418,6 @@
     filter: drop-shadow(0rem 0rem 4rem rgba(255, 127, 0, 0.25)) drop-shadow(0rem 0rem 8rem #ff2a00);
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .Warning_base_a5 {
     display: flex;

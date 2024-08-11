@@ -14,7 +14,7 @@ body {
 }
 
 .App_base__disabled_ca,
-.App_base__postevent_8c {
+.App_base__postEvent_ec {
     border-color: rgba(255, 255, 255, 0.25);
     box-shadow: inset 0 0 8rem rgba(0, 0, 0, 0.05);
 }
@@ -26,10 +26,7 @@ body {
         url('R.images.gui.maps.icons.battleRoyale.banner.c_160x112') no-repeat center / cover;
     filter: brightness(1);
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: -1;
-    transform: scale(1);
     transition:
         filter 0.5s cubic-bezier(0.07, 0.82, 0.17, 1),
         transform 0.5s cubic-bezier(0.07, 0.82, 0.17, 1);
@@ -37,10 +34,6 @@ body {
 .mediaMedium .App_bg_20 {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.25)),
         url('R.images.gui.maps.icons.battleRoyale.banner.c_220x112');
-}
-.mediaLarge .App_bg_20 {
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.25)),
-        url('R.images.gui.maps.icons.battleRoyale.banner.c_300x150');
 }
 .App_base_21:hover .App_bg_20 {
     filter: brightness(1.05);
@@ -50,7 +43,7 @@ body {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.25)),
         url('R.images.gui.maps.icons.battleRoyale.banner.c_300x112');
 }
-.mediaLarge .App_base__single_c6 .App_bg_20 {
+.mediaLarge .App_bg_20 {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.25)),
         url('R.images.gui.maps.icons.battleRoyale.banner.c_300x150');
 }
@@ -61,25 +54,16 @@ body {
     opacity: 0.8;
     mix-blend-mode: screen;
     position: absolute;
-    top: 0;
-    left: 0;
     transition: opacity 0.4s;
 }
 .App_base_21:hover .App_highlight_af {
     opacity: 1;
 }
-.App_highlight_af .App_base__disabled_ca,
-.App_base__postevent_8c .App_highlight_af {
-    background: none;
-}
 .App_overlay_7b {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    opacity: 1;
     position: absolute;
-    top: 0;
-    left: 0;
     transition: opacity 0.5s cubic-bezier(0.07, 0.82, 0.17, 1);
 }
 .App_base_21:hover .App_overlay_7b {
@@ -97,26 +81,18 @@ body {
 }
 .App_content_42 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-    position: relative;
-}
-.mediaMedium .App_content_42 {
-    justify-content: flex-start;
-}
-.App_base__single_c6 .App_content_42 {
-    justify-content: flex-start;
+    padding: 0 3rem;
 }
 .App_title_c2 {
     color: #ffffff;
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
-    margin-top: -9rem;
-    text-align: center;
     text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
     letter-spacing: 1rem;
 }
@@ -125,77 +101,101 @@ body {
     font-size: 22rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-top: 37rem;
     letter-spacing: 0;
-}
-.App_base__single_c6 .App_title_c2 {
-    color: #ffffff;
-    font-size: 24rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-top: 35rem;
 }
 .mediaLarge .App_title_c2 {
     color: #ffffff;
     font-size: 24rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-top: 55rem;
+}
+.App_base__single_c6 .App_title_c2 {
+    color: #ffffff;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.App_description_88 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    margin-top: 20rem;
+}
+.mediaMedium .App_description_88 {
+    margin-top: 16rem;
+}
+.App_base__disabled_ca .App_description_88 {
+    margin-top: 17rem;
+}
+.App_base__single_c6 .App_description_88 {
+    margin-top: 14rem;
+}
+.mediaMedium .App_base__single_c6 .App_description_88 {
+    margin-top: 15rem;
+}
+.App_subtitle_3a {
+    color: #ffffff;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+    text-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+}
+.mediaSmall .App_subtitle_3a {
+    color: #ffffff;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.App_base__single_c6 .App_subtitle_3a {
+    color: #ffffff;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
 }
 .App_seasonDate_95 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: #ffdd99;
-    position: absolute;
-    bottom: 8rem;
-}
-.mediaMedium .App_seasonDate_95 {
-    bottom: 5rem;
+    margin-bottom: 8rem;
 }
 .App_base__disabled_ca .App_seasonDate_95 {
-    bottom: 5rem;
+    margin-bottom: 5rem;
+    background: url('R.images.gui.maps.icons.battleRoyale.banner.ribbonsBgRedLarge') no-repeat center / cover;
 }
-.mediaMedium .App_base__disabled_ca .App_seasonDate_95 {
-    bottom: 5rem;
-}
-.App_base__disabled_ca .App_seasonDateIcon_7b {
+.App_seasonDateIcon_7b {
     width: 24rem;
     height: 24rem;
-    margin-top: 1rem;
     background: url('R.images.gui.maps.icons.battleRoyale.banner.lockStatus') no-repeat center / contain;
-    position: relative;
-    z-index: 2;
-}
-.App_base__disabled_ca .App_ribbon_4e {
-    width: 100%;
-    height: 100%;
-    background: url('R.images.gui.maps.icons.battleRoyale.banner.ribbonsBgRedLarge') no-repeat center / cover;
-    position: absolute;
-    top: 1rem;
-    z-index: 1;
 }
 .App_seasonDateText_6e {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
     text-align: center;
     text-shadow:
         0 0 4rem rgba(255, 127, 0, 0.25),
         0 0 8rem #ff2a00,
         0 0 15rem #e52;
-    position: relative;
-    z-index: 2;
-    color: #ffdd99;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
 }
 .mediaMedium .App_seasonDateText_6e {
     color: #ffdd99;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
-    margin-bottom: 3rem;
 }
-.App_base__postevent_8c .App_seasonDateText_6e {
+.App_base__postEvent_ec .App_seasonDateText_6e {
     text-shadow: none;
+}
+.App_base__disabled_ca .App_seasonDateText_6e {
+    margin-bottom: 2rem;
+}
+.mediaMedium .App_base__disabled_ca .App_seasonDateText_6e {
+    margin-bottom: 4rem;
 }

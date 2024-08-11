@@ -66,6 +66,34 @@
     pointer-events: none;
 }
 
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
+}
+
 .colors_blackReal_fc {
     color: #000000;
 }
@@ -174,7 +202,7 @@
 }
 
 .renderers_word_f3 {
-    white-space: nowrap;
+    white-space: pre;
     overflow-wrap: normal;
 }
 
@@ -182,11 +210,6 @@
     display: flex;
     background: no-repeat center / contain;
     position: relative;
-}
-
-.SkillIcon_base__small_d0 {
-    width: 14rem;
-    height: 14rem;
 }
 
 .SkillIcon_base__c_22x22_14 {
@@ -209,6 +232,16 @@
     height: 52rem;
 }
 
+.SkillIcon_base__c_80x80_79 {
+    width: 80rem;
+    height: 80rem;
+}
+
+.SkillIcon_base__c_120x90_8c {
+    width: 120rem;
+    height: 90rem;
+}
+
 .SkillIcon_base__dialogs_e5 {
     width: 180rem;
     height: 135rem;
@@ -216,11 +249,6 @@
 
 .TankmanSkill_base_84 {
     position: relative;
-    width: 16rem;
-    height: 16rem;
-}
-
-.TankmanSkill_base__big_a0 {
     width: 24rem;
     height: 24rem;
 }
@@ -252,18 +280,13 @@
 }
 
 .TankmanSkill_container_84 {
-    width: 14rem;
-    height: 14rem;
+    width: 22rem;
+    height: 22rem;
     background: no-repeat 50% / contain;
     position: absolute;
     top: 1rem;
     left: 1rem;
     pointer-events: none;
-}
-
-.TankmanSkill_base__big_a0 .TankmanSkill_container_84 {
-    width: 22rem;
-    height: 22rem;
 }
 
 .TankmanSkill_disabledIcon_25 {

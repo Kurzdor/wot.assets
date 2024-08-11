@@ -140,7 +140,6 @@
     opacity: 0;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .page_heading_05 {
     padding-top: 54rem;
@@ -361,17 +360,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateHighlightHover_ff,
 .CButton_stateHighlightActive_35,
 .CButton_stateDisabled_54 {
-    opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-}
-.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
-.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
-.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
-    transition: opacity 0.16s ease-in-out;
 }
 .CButton_stateHighlightHover_ff {
     background-image: linear-gradient(
@@ -380,6 +373,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         rgba(252, 248, 235, 0.1) 50%,
         rgba(255, 255, 255, 0) 100%
     );
+    opacity: 0;
 }
 .CButton_base_40:hover .CButton_stateHighlightHover_ff {
     opacity: 1;
@@ -397,6 +391,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .CButton_stateHighlightActive_35 {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+    opacity: 0;
 }
 .CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
     opacity: 1;
@@ -404,10 +399,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CButton_stateDisabled_54 {
     background-color: rgba(0, 0, 0, 0.25);
     background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
-    background-size: 15rem;
+    background-size: 15rem 15rem;
+    visibility: hidden;
 }
 .CButton_base__disabled_d9 .CButton_stateDisabled_54 {
-    opacity: 1;
+    visibility: inherit;
 }
 .CButton_content_cc {
     display: flex;
@@ -1071,7 +1067,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 50%;
+    width: 44%;
     height: 100%;
     padding-left: 10rem;
     padding-right: 20rem;
@@ -1083,7 +1079,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding-right: 32rem;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes Main_fadeIn_46 {
     0% {
@@ -1492,100 +1487,243 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-bottom: 14rem;
 }
 
-.SeasonalChanges_base_5c {
-    align-items: stretch;
-    width: 100%;
-}
-.SeasonalChanges_row_35 {
+.Modifiers_base_c3 {
     display: flex;
-    align-items: flex-start;
-    position: relative;
+    justify-content: center;
+    width: 100%;
+    background: rgba(18, 74, 169, 0.09) url('R.images.gui.maps.icons.comp7.whatsNewView.blueGlow_1440x543') no-repeat
+        center / cover;
+    overflow: hidden;
 }
-.mediaMedium .SeasonalChanges_row_35 {
+
+.Modifiers_tableContainer_9a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 40rem;
+    padding-bottom: 68rem;
+}
+
+.mediaSmall .Modifiers_tableContainer_9a {
+    width: 80%;
+    padding-top: 58rem;
+    padding-bottom: 78rem;
+}
+
+.mediaLarge .Modifiers_tableContainer_9a {
+    width: 70%;
+}
+
+.Modifiers_tableHeadingWrapper_b3 {
+    display: flex;
     align-items: center;
 }
-.SeasonalChanges_divider_29 {
+
+.Modifiers_tableHeadingWrapper_b3,
+.Modifiers_section_c3 {
+    width: 90%;
+}
+
+.mediaSmall .Modifiers_tableHeadingWrapper_b3,
+.mediaSmall .Modifiers_section_c3 {
     width: 100%;
-    height: 1rem;
-    margin: 20rem 0;
-    background: linear-gradient(to right, transparent, #fff 50%, transparent);
-    opacity: 0.1;
 }
-.mediaLarge .SeasonalChanges_divider_29 {
-    margin: 50rem 0;
+
+.Modifiers_headingIcon_3c {
+    width: 58rem;
+    height: 76rem;
+    margin-right: 24rem;
+    background: url('R.images.gui.maps.icons.comp7.whatsNewView.modifier_58x76') no-repeat center / cover;
 }
-.SeasonalChanges_image_6d {
-    width: 90rem;
-    height: 67.5rem;
-    background: no-repeat center / cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.Modifiers_sectionTitle_e5 {
+    flex: 0 1 auto;
+    margin-right: 20rem;
 }
-.mediaMedium .SeasonalChanges_image_6d {
-    width: 135rem;
-    height: 101.25rem;
-}
-.mediaLarge .SeasonalChanges_image_6d {
-    width: 180rem;
-    height: 135rem;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.SeasonalChanges_row__shopUpdates_dd .SeasonalChanges_image_6d {
-    background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.improvedAiming');
-}
-.SeasonalChanges_row__trainingRoom_bb .SeasonalChanges_image_6d {
-    background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.trainingRoom');
-}
-.SeasonalChanges_rowContainer_58 {
+
+.Modifiers_tableHeading_86 {
     display: flex;
     flex-direction: column;
     flex: 1 1;
-    padding-left: 102rem;
 }
-.mediaMedium .SeasonalChanges_rowContainer_58 {
-    padding-left: 147rem;
+
+.Modifiers_description_e3 {
+    margin-top: 8rem;
 }
-.mediaLarge .SeasonalChanges_rowContainer_58 {
-    padding-left: 192rem;
-}
-.SeasonalChanges_headingContainer_03 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.SeasonalChanges_row__trainingRoom_bb .SeasonalChanges_headingContainer_03 {
-    margin-top: -12rem;
-}
-.SeasonalChanges_heading_70 {
-    margin-right: 12rem;
-}
-.mediaMedium .SeasonalChanges_heading_70 {
-    margin-right: 20rem;
-}
-.SeasonalChanges_headingTag_c9 {
-    margin: 12rem 0;
-}
-.SeasonalChanges_columnContainer_83 {
-    padding-bottom: 16rem;
-}
-.mediaSmall .SeasonalChanges_columnContainer_83 {
-    padding-bottom: 30rem;
-}
-.SeasonalChanges_tournamentsContainer_1b {
+
+.Modifiers_section_c3 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 0 28rem 16rem;
-    background: url('R.images.gui.maps.icons.comp7.whatsNewView.tournaments_bg') no-repeat center top / cover;
+    margin-top: 36rem;
 }
-.mediaSmall .SeasonalChanges_tournamentsContainer_1b {
-    padding: 0 40rem 30rem;
+
+.Modifiers_columnName_38 {
+    display: none;
 }
-.mediaLarge .SeasonalChanges_tournamentsContainer_1b {
-    padding-left: 60rem;
-    padding-right: 60rem;
+
+.mediaSmall .Modifiers_columnName_38 {
+    display: flex;
+}
+
+.Modifiers_columnName_38 {
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    position: relative;
+}
+
+.mediaMedium .Modifiers_columnName_38 {
+    color: #f2f2f7;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.Modifiers_row_c0 {
+    display: flex;
+    position: relative;
+}
+
+.Modifiers_row_c0 + .Modifiers_row_c0 {
+    margin-top: 20rem;
+}
+
+.Modifiers_row__heading_7a {
+    align-items: center;
+    height: 56rem;
+    margin-bottom: -8rem;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06) 87%, transparent);
+    color: #ffffff;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.Modifiers_dividerContainer_6c {
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    top: 100%;
+    transform: translateY(12rem);
+    mask-image: linear-gradient(to right, #000 33.33%, transparent 33.33%, transparent);
+    mask-repeat: repeat;
+    mask-size: 3rem 1rem;
+}
+
+.Modifiers_dividerGradient_e7 {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, transparent, #c9c9b6 72%, #c9c9b6 90%, transparent);
+    opacity: 0.2;
+}
+
+.Modifiers_column_b1 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.Modifiers_column__first_bd {
+    flex-basis: 330rem;
+}
+
+.Modifiers_column__second_dc,
+.Modifiers_column__third_bb,
+.Modifiers_column__fourth_c0 {
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 100%;
+}
+
+.Modifiers_glow_54 {
+    display: flex;
+    width: 30rem;
+    height: 30rem;
+    filter: blur(20px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mediaSmall .Modifiers_glow_54 {
+    width: 125rem;
+}
+
+.Modifiers_glow__green_8b {
+    background: rgba(17, 92, 60, 0.6);
+}
+
+.Modifiers_glow__blue_22 {
+    background: rgba(51, 103, 204, 0.6);
+}
+
+.Modifiers_verticalGlow_6d {
+    display: flex;
+    width: 400%;
+    height: 450rem;
+    background: url('R.images.gui.maps.icons.comp7.whatsNewView.blueGlow_294x381') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 60%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.Modifiers_columnIcon_92 {
+    width: 40rem;
+    height: 40rem;
+    background: no-repeat center / cover;
+    position: relative;
+}
+
+.Modifiers_columnIcon__random_c0 {
+    background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.random');
+}
+
+.Modifiers_columnIcon__previousSeason_44 {
+    background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.previousSeason');
+}
+
+.Modifiers_columnIcon__currentSeason_4e {
+    background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.currentSeason');
+}
+
+.Modifiers_positiveValue_95 {
+    color: #80d43a;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.mediaMedium .Modifiers_positiveValue_95 {
+    color: #80d43a;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.NewVehicles_base_d3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.NewVehicles_row_9f {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: -40rem;
+}
+
+.NewVehicles_header_e7 {
+    margin-bottom: 16rem;
+}
+
+.mediaSmall .NewVehicles_header_e7 {
+    margin-bottom: 28rem;
 }
 
 .VehicleName_base_3b {
@@ -1672,6 +1810,211 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .VehicleName_base__83x74_ba .VehicleName_vehicleType_c3 {
     width: 83rem;
     height: 74rem;
+}
+
+.Vehicle_base_af {
+    display: flex;
+    justify-content: flex-end;
+    width: 132rem;
+    height: 98rem;
+    margin-right: 8rem;
+    margin-bottom: 60rem;
+    background: no-repeat left / cover;
+    position: relative;
+}
+.mediaSmall .Vehicle_base_af {
+    width: 204rem;
+    height: 160rem;
+}
+.mediaLarge .Vehicle_base_af {
+    width: 280rem;
+}
+
+.Vehicle_vehicle_0b {
+    width: 140rem;
+    height: 102rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mediaSmall .Vehicle_vehicle_0b {
+    width: 230rem;
+    height: 168rem;
+}
+
+.mediaLarge .Vehicle_vehicle_0b {
+    width: 260rem;
+    height: 190rem;
+}
+
+.Vehicle_shortName_53,
+.Vehicle_level_18 {
+    color: #ffffff;
+    font-size: 13rem;
+    font-weight: 700;
+    line-height: 17rem;
+}
+
+.mediaSmall .Vehicle_shortName_53,
+.mediaSmall .Vehicle_level_18 {
+    font-size: 16rem;
+}
+
+.Vehicle_vehicleName_2b {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.Vehicle_typeIcon_ed.Vehicle_type_3a {
+    width: 28rem;
+    height: 28rem;
+}
+
+.Vehicle_perk_69 {
+    width: 40rem;
+    height: 40rem;
+    margin: -5rem -5rem 0 0;
+    background: no-repeat center / cover;
+    position: relative;
+}
+
+.mediaSmall .Vehicle_perk_69 {
+    width: 56rem;
+    height: 56rem;
+}
+
+.mediaLarge .Vehicle_perk_69 {
+    margin: 14rem 20rem 0 0;
+}
+
+.SeasonalChanges_base_5c {
+    align-items: stretch;
+    width: 100%;
+}
+.SeasonalChanges_row_35 {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+.SeasonalChanges_row__assaultTankDestroyer_93,
+.SeasonalChanges_row__shopUpdates_dd {
+    padding-top: 26rem;
+}
+.mediaLarge .SeasonalChanges_row__assaultTankDestroyer_93,
+.mediaLarge .SeasonalChanges_row__shopUpdates_dd {
+    padding-top: 20rem;
+}
+.SeasonalChanges_divider_29 {
+    width: 100%;
+    height: 1rem;
+    margin: 20rem 0;
+    background: linear-gradient(to right, transparent, #fff 50%, transparent);
+    opacity: 0.1;
+}
+.mediaLarge .SeasonalChanges_divider_29 {
+    margin: 32rem 0;
+}
+.SeasonalChanges_image_6d {
+    display: flex;
+    width: 68rem;
+    height: 68rem;
+    background: no-repeat center / cover;
+}
+.mediaMedium .SeasonalChanges_image_6d {
+    width: 100rem;
+    height: 100rem;
+}
+.SeasonalChanges_row__assaultTankDestroyer_93 .SeasonalChanges_image_6d {
+    background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.assaultTankDestroyer');
+}
+.SeasonalChanges_row__reconFlight_bc .SeasonalChanges_image_6d {
+    background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.reconFlight');
+}
+.SeasonalChanges_row__shopUpdates_dd .SeasonalChanges_image_6d {
+    background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.stealthExhaustUnit');
+}
+.SeasonalChanges_row__trainingRoom_bb .SeasonalChanges_image_6d {
+    background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.trainingRoom');
+}
+.SeasonalChanges_rowContainer_58 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    padding-left: 20rem;
+}
+.SeasonalChanges_headingContainer_03 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.SeasonalChanges_row__trainingRoom_bb .SeasonalChanges_headingContainer_03 {
+    margin-top: -12rem;
+}
+.mediaLarge .SeasonalChanges_row__trainingRoom_bb .SeasonalChanges_headingContainer_03 {
+    margin-top: 0;
+}
+.SeasonalChanges_heading_70 {
+    margin-right: 12rem;
+}
+.mediaMedium .SeasonalChanges_heading_70 {
+    margin-right: 20rem;
+}
+.SeasonalChanges_headingTag_c9 {
+    margin: 12rem 0;
+}
+.SeasonalChanges_columnContainer_83 {
+    padding-bottom: 24rem;
+}
+.mediaSmall .SeasonalChanges_columnContainer_83 {
+    padding-bottom: 30rem;
+}
+.SeasonalChanges_tournamentsContainer_1b {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 8rem 28rem 0;
+    background: no-repeat center top / cover;
+    position: relative;
+}
+.mediaSmall .SeasonalChanges_tournamentsContainer_1b {
+    padding: 12rem 40rem 0;
+}
+.mediaLarge .SeasonalChanges_tournamentsContainer_1b {
+    padding-left: 60rem;
+    padding-top: 20rem;
+    padding-right: 60rem;
+}
+.SeasonalChanges_tournamentsContainer__ratingUpdate_d4 {
+    background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.ratingUpdate');
+}
+.SeasonalChanges_tournamentsContainer__tournaments_d8 {
+    justify-content: flex-end;
+    padding: 0 28rem 24rem;
+    background-image: url('R.images.gui.maps.icons.comp7.whatsNewView.tournaments_bg');
+}
+.mediaSmall .SeasonalChanges_tournamentsContainer__tournaments_d8 {
+    padding: 0 40rem 30rem;
+}
+.mediaLarge .SeasonalChanges_tournamentsContainer__tournaments_d8 {
+    padding: 0 40rem 55rem;
+}
+.SeasonalChanges_tournamentsContainer__ratingUpdate_d4 .SeasonalChanges_ranks_1d {
+    display: flex;
+    background: url('R.images.gui.maps.icons.comp7.whatsNewView.ranks') no-repeat center top / contain;
+    position: absolute;
+    top: 150rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.mediaSmall .SeasonalChanges_tournamentsContainer__ratingUpdate_d4 .SeasonalChanges_ranks_1d {
+    top: 100rem;
 }
 
 .VehicleRole_base_04 {
