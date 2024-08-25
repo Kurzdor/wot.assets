@@ -2092,6 +2092,7 @@
                             isLowEfficiency: t,
                             isGroupSkill: n,
                             isAnyMemberWithLowEfficiency: o,
+                            isAnyMemberUntrained: i,
                         }) =>
                             r().createElement(
                                 p,
@@ -2102,16 +2103,16 @@
                                     r().createElement(
                                         'div',
                                         null,
-                                        ((u, e, t, n) => {
-                                            const r = u
+                                        ((u, e, t, n, r) => {
+                                            const o = u
                                                 ? R.strings.tooltips.perks.info.group
                                                 : R.strings.tooltips.perks.info.single;
-                                            return e < 100 && (t || n)
-                                                ? r.both()
+                                            return (e < 100 && (t || n)) || (t && r) || (u && r && n)
+                                                ? o.both()
                                                 : t || n
-                                                  ? r.lowEfficiency()
-                                                  : r.lowLevel();
-                                        })(n, e, t, o),
+                                                  ? o.lowEfficiency()
+                                                  : o.lowLevel();
+                                        })(n, e, t, o, i),
                                     ),
                                     r().createElement(
                                         'div',
@@ -2165,6 +2166,7 @@
                                     isLowEfficiency: s,
                                     isGroupSkill: u.isGroupSkill.get(),
                                     isAnyMemberWithLowEfficiency: u.isAnyMemberWithLowEfficiency.get(),
+                                    isAnyMemberUntrained: u.isAnyMemberUntrained.get(),
                                 }),
                             r().createElement(Xu, { skillType: n, isZeroPerk: u.isZeroPerk.get() }),
                             i &&
