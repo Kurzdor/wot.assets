@@ -4674,7 +4674,12 @@
                         const u = (0, n.useRef)(null),
                             a = (0, n.useRef)(null),
                             r = (0, n.useRef)(null),
-                            i = (0, n.useRef)({ isImmediate: !1, previousBeforeShift: 0, previousAfterShift: 0 }),
+                            i = (0, n.useRef)({
+                                isImmediate: !1,
+                                isAnimationActive: !0,
+                                previousBeforeShift: 0,
+                                previousAfterShift: 0,
+                            }),
                             l = (0, lu.useSpring)(() => ({
                                 from: { opacity: 0 },
                                 to: { opacity: 1 },
@@ -4714,30 +4719,35 @@
                                         if (e && u.current && a.current && r.current) {
                                             const e = i.current,
                                                 t = e.isImmediate,
-                                                n = e.previousBeforeShift,
-                                                l = e.previousAfterShift,
-                                                o = u.current.getBoundingClientRect(),
-                                                c = a.current.getBoundingClientRect(),
-                                                d = r.current.getBoundingClientRect(),
-                                                _ = ra(d.left - o.right - n),
-                                                m = ra(d.right - c.left + l);
+                                                n = e.isAnimationActive,
+                                                l = e.previousBeforeShift,
+                                                o = e.previousAfterShift,
+                                                c = u.current.getBoundingClientRect(),
+                                                d = a.current.getBoundingClientRect(),
+                                                _ = r.current.getBoundingClientRect(),
+                                                m = t && n,
+                                                E = m ? l : ra(_.left - c.right - l),
+                                                g = m ? o : ra(_.right - d.left + o);
                                             (i.current.isImmediate = !0),
-                                                (i.current.previousBeforeShift = _),
-                                                (i.current.previousAfterShift = m),
+                                                (i.current.previousBeforeShift = E),
+                                                (i.current.previousAfterShift = g),
                                                 t || s.start({ reset: !0, pause: !1 }),
                                                 f.start({
-                                                    from: { x: -n },
-                                                    to: { x: -_ },
+                                                    from: { x: -l },
+                                                    to: { x: -E },
                                                     config: { duration: 500, easing: an },
                                                     delay: 0,
                                                     immediate: t,
                                                 }),
                                                 A.start({
-                                                    from: { x: l, opacity: 0 },
-                                                    to: { x: m, opacity: 1 },
+                                                    from: { x: o, opacity: 0 },
+                                                    to: { x: g, opacity: 1 },
                                                     config: { duration: 500, easing: an },
                                                     delay: 0,
                                                     immediate: t,
+                                                    onRest: () => {
+                                                        i.current.isAnimationActive = !1;
+                                                    },
                                                 });
                                         }
                                     })(),

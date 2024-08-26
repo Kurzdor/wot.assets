@@ -5228,7 +5228,12 @@
                         const t = (0, a.useRef)(null),
                             n = (0, a.useRef)(null),
                             r = (0, a.useRef)(null),
-                            i = (0, a.useRef)({ isImmediate: !1, previousBeforeShift: 0, previousAfterShift: 0 }),
+                            i = (0, a.useRef)({
+                                isImmediate: !1,
+                                isAnimationActive: !0,
+                                previousBeforeShift: 0,
+                                previousAfterShift: 0,
+                            }),
                             s = (0, ou.useSpring)(() => ({
                                 from: { opacity: 0 },
                                 to: { opacity: 1 },
@@ -5268,30 +5273,35 @@
                                         if (e && t.current && n.current && r.current) {
                                             const e = i.current,
                                                 u = e.isImmediate,
-                                                a = e.previousBeforeShift,
-                                                s = e.previousAfterShift,
-                                                l = t.current.getBoundingClientRect(),
-                                                c = n.current.getBoundingClientRect(),
-                                                _ = r.current.getBoundingClientRect(),
-                                                d = Zt(_.left - l.right - a),
-                                                E = Zt(_.right - c.left + s);
+                                                a = e.isAnimationActive,
+                                                s = e.previousBeforeShift,
+                                                l = e.previousAfterShift,
+                                                c = t.current.getBoundingClientRect(),
+                                                _ = n.current.getBoundingClientRect(),
+                                                d = r.current.getBoundingClientRect(),
+                                                E = u && a,
+                                                m = E ? s : Zt(d.left - c.right - s),
+                                                F = E ? l : Zt(d.right - _.left + l);
                                             (i.current.isImmediate = !0),
-                                                (i.current.previousBeforeShift = d),
-                                                (i.current.previousAfterShift = E),
+                                                (i.current.previousBeforeShift = m),
+                                                (i.current.previousAfterShift = F),
                                                 u || o.start({ reset: !0, pause: !1 }),
                                                 g.start({
-                                                    from: { x: -a },
-                                                    to: { x: -d },
+                                                    from: { x: -s },
+                                                    to: { x: -m },
                                                     config: { duration: 500, easing: Xu.qb },
                                                     delay: 0,
                                                     immediate: u,
                                                 }),
                                                 A.start({
-                                                    from: { x: s, opacity: 0 },
-                                                    to: { x: E, opacity: 1 },
+                                                    from: { x: l, opacity: 0 },
+                                                    to: { x: F, opacity: 1 },
                                                     config: { duration: 500, easing: Xu.qb },
                                                     delay: 0,
                                                     immediate: u,
+                                                    onRest: () => {
+                                                        i.current.isAnimationActive = !1;
+                                                    },
                                                 });
                                         }
                                     })(),

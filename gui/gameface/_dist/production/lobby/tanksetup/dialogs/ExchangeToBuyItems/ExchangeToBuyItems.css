@@ -1319,7 +1319,8 @@ body {
 }
 .NumericStepper_base__large_87 .NumericStepper_input_ef {
     padding: 0 12rem 3rem 17rem;
-    font-size: 24rem;
+    font-size: 22rem;
+    line-height: 26rem;
 }
 .NumericStepper_base__withCurrency-small_a3 .NumericStepper_input_ef {
     padding-right: 2rem;
@@ -1529,7 +1530,8 @@ body {
 }
 .NumericStepper_base__large_87 .NumericStepper_dummyValue_0c {
     padding: 0 12rem 3rem 17rem;
-    font-size: 24rem;
+    font-size: 22rem;
+    line-height: 26rem;
 }
 .NumericStepper_base__withCurrency-small_a3 .NumericStepper_dummyValue_0c {
     padding-right: 2rem;

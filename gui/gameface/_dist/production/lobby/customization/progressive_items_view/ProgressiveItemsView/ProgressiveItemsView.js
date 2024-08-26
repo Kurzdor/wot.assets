@@ -1240,199 +1240,180 @@
                     },
                     uu = () => {},
                     eu = (u, e) => Math.max(20, u.offsetWidth * e),
-                    tu = (0, o.memo)(
-                        ({
-                            api: u,
-                            classNames: e = {},
-                            getStepByRailClick: t = J,
-                            onDrag: n = uu,
-                            onClick: r = uu,
-                        }) => {
-                            const s = (0, o.useRef)(null),
-                                l = (0, o.useRef)(null),
-                                c = (0, o.useRef)(null),
-                                E = (0, o.useRef)(null),
-                                A = (0, o.useRef)(null),
-                                F = u.stepTimeout || 100,
-                                m = (0, o.useState)(Q),
-                                d = m[0],
-                                D = m[1],
-                                B = (0, o.useCallback)(
-                                    (u) => {
-                                        D(u),
-                                            A.current &&
-                                                n({ type: u.pending ? 'dragStart' : 'dragEnd', thumb: A.current });
-                                    },
-                                    [n],
-                                ),
-                                _ = () => {
-                                    const e = E.current,
-                                        t = A.current,
-                                        n = u.getWrapperSize(),
-                                        r = u.getContainerSize();
-                                    if (!(n && e && t && r)) return;
-                                    const a = u.animationScroll.scrollPosition.get(),
-                                        o = Math.min(1, n / r),
-                                        i = k(0, 1, a / (r - n)),
-                                        s = (e.offsetWidth - eu(e, o)) * i;
-                                    (t.style.transform = `translateX(${0 | s}px)`),
-                                        ((u) => {
-                                            if (l.current && c.current && E.current && A.current) {
-                                                if (0 === u)
-                                                    return (
-                                                        l.current.classList.add(Z), void c.current.classList.remove(Z)
-                                                    );
-                                                if (
-                                                    ((e = E.current),
-                                                    (t = A.current),
-                                                    u - (e.offsetWidth - t.offsetWidth) >= -0.5)
-                                                )
-                                                    return (
-                                                        l.current.classList.remove(Z), void c.current.classList.add(Z)
-                                                    );
-                                                var e, t;
-                                                l.current.classList.remove(Z), c.current.classList.remove(Z);
-                                            }
-                                        })(s);
+                    tu = (0, o.memo)(({ api: u, classNames: e = {}, getStepByRailClick: t = J, onDrag: n = uu }) => {
+                        const r = (0, o.useRef)(null),
+                            s = (0, o.useRef)(null),
+                            l = (0, o.useRef)(null),
+                            c = (0, o.useRef)(null),
+                            E = (0, o.useRef)(null),
+                            A = u.stepTimeout || 100,
+                            F = (0, o.useState)(Q),
+                            m = F[0],
+                            d = F[1],
+                            D = (0, o.useCallback)(
+                                (u) => {
+                                    d(u),
+                                        E.current && n({ type: u.pending ? 'dragStart' : 'dragEnd', thumb: E.current });
                                 },
-                                C = T(() => {
-                                    (() => {
-                                        const e = A.current,
-                                            t = E.current,
-                                            n = u.getWrapperSize(),
-                                            r = u.getContainerSize();
-                                        if (!(r && e && n && t)) return;
-                                        const a = Math.min(1, n / r);
-                                        (e.style.width = `${eu(t, a)}px`),
-                                            (e.style.display = 'flex'),
-                                            s.current &&
-                                                (1 === a ? s.current.classList.add(U) : s.current.classList.remove(U));
-                                    })(),
-                                        _();
-                                });
-                            (0, o.useEffect)(() => S(C)),
-                                (0, o.useEffect)(
-                                    () =>
-                                        S(() => {
-                                            const e = () => {
-                                                _();
-                                            };
-                                            let t = uu;
-                                            const n = () => {
-                                                t(), (t = S(C));
-                                            };
-                                            return (
-                                                u.events.on('recalculateContent', C),
-                                                u.events.on('rest', e),
-                                                u.events.on('change', e),
-                                                u.events.on('resizeHandled', n),
-                                                () => {
-                                                    t(),
-                                                        u.events.off('recalculateContent', C),
-                                                        u.events.off('rest', e),
-                                                        u.events.off('change', e),
-                                                        u.events.off('resizeHandled', n);
-                                                }
-                                            );
-                                        }),
-                                    [u],
-                                ),
-                                (0, o.useEffect)(() => {
-                                    if (!d.pending) return;
-                                    const e = a.O.client.events.mouse.move(([e, t]) => {
-                                            var r;
-                                            const a = u.contentRef.current,
-                                                o = u.wrapperRef.current;
-                                            if (!a || !o) return;
-                                            const i = E.current,
-                                                s = A.current;
-                                            if (!i || !s) return;
-                                            if ('inside' === t && e.clientX < 0) return;
-                                            const l = e.clientX - d.offset - i.getBoundingClientRect().x,
-                                                c = (l / i.offsetWidth) * (null != (r = u.getContainerSize()) ? r : 0);
-                                            u.scrollPosition.start({
-                                                scrollPosition: u.clampPosition(a, c),
-                                                reset: !0,
-                                                immediate: !0,
-                                                from: { scrollPosition: u.animationScroll.scrollPosition.get() },
-                                            }),
-                                                n({ type: 'dragging', thumb: s, thumbOffset: l, contentOffset: c });
-                                        }),
-                                        t = a.O.client.events.mouse.up(() => {
-                                            e(), B(Q);
-                                        });
-                                    return () => {
-                                        e(), t();
-                                    };
-                                }, [u, d.offset, d.pending, n, B]);
-                            const g = P(
-                                    (e) => {
-                                        u.applyStepTo(e), r(e);
-                                    },
-                                    F,
-                                    [u],
-                                ),
-                                f = g[0],
-                                p = g[1];
+                                [n],
+                            ),
+                            B = () => {
+                                const e = c.current,
+                                    t = E.current,
+                                    n = u.getWrapperSize(),
+                                    r = u.getContainerSize();
+                                if (!(n && e && t && r)) return;
+                                const a = u.animationScroll.scrollPosition.get(),
+                                    o = Math.min(1, n / r),
+                                    i = k(0, 1, a / (r - n)),
+                                    A = (e.offsetWidth - eu(e, o)) * i;
+                                (t.style.transform = `translateX(${0 | A}px)`),
+                                    ((u) => {
+                                        if (s.current && l.current && c.current && E.current) {
+                                            if (0 === u)
+                                                return s.current.classList.add(Z), void l.current.classList.remove(Z);
+                                            if (
+                                                ((e = c.current),
+                                                (t = E.current),
+                                                u - (e.offsetWidth - t.offsetWidth) >= -0.5)
+                                            )
+                                                return s.current.classList.remove(Z), void l.current.classList.add(Z);
+                                            var e, t;
+                                            s.current.classList.remove(Z), l.current.classList.remove(Z);
+                                        }
+                                    })(A);
+                            },
+                            _ = T(() => {
+                                (() => {
+                                    const e = E.current,
+                                        t = c.current,
+                                        n = u.getWrapperSize(),
+                                        a = u.getContainerSize();
+                                    if (!(a && e && n && t)) return;
+                                    const o = Math.min(1, n / a);
+                                    (e.style.width = `${eu(t, o)}px`),
+                                        (e.style.display = 'flex'),
+                                        r.current &&
+                                            (1 === o ? r.current.classList.add(U) : r.current.classList.remove(U));
+                                })(),
+                                    B();
+                            });
+                        (0, o.useEffect)(() => S(_)),
                             (0, o.useEffect)(
-                                () => (
-                                    document.addEventListener('mouseup', p, !0),
-                                    () => document.removeEventListener('mouseup', p, !0)
-                                ),
-                                [p],
-                            );
-                            const h = (u) => {
-                                u.target.classList.contains(Z) || N('highlight');
-                            };
-                            return i().createElement(
+                                () =>
+                                    S(() => {
+                                        const e = () => {
+                                            B();
+                                        };
+                                        let t = uu;
+                                        const n = () => {
+                                            t(), (t = S(_));
+                                        };
+                                        return (
+                                            u.events.on('recalculateContent', _),
+                                            u.events.on('rest', e),
+                                            u.events.on('change', e),
+                                            u.events.on('resizeHandled', n),
+                                            () => {
+                                                t(),
+                                                    u.events.off('recalculateContent', _),
+                                                    u.events.off('rest', e),
+                                                    u.events.off('change', e),
+                                                    u.events.off('resizeHandled', n);
+                                            }
+                                        );
+                                    }),
+                                [u],
+                            ),
+                            (0, o.useEffect)(() => {
+                                if (!m.pending) return;
+                                const e = a.O.client.events.mouse.move(([e, t]) => {
+                                        var r;
+                                        const a = u.contentRef.current,
+                                            o = u.wrapperRef.current;
+                                        if (!a || !o) return;
+                                        const i = c.current,
+                                            s = E.current;
+                                        if (!i || !s) return;
+                                        if ('inside' === t && e.clientX < 0) return;
+                                        const l = e.clientX - m.offset - i.getBoundingClientRect().x,
+                                            A = (l / i.offsetWidth) * (null != (r = u.getContainerSize()) ? r : 0);
+                                        u.scrollPosition.start({
+                                            scrollPosition: u.clampPosition(a, A),
+                                            reset: !0,
+                                            immediate: !0,
+                                            from: { scrollPosition: u.animationScroll.scrollPosition.get() },
+                                        }),
+                                            n({ type: 'dragging', thumb: s, thumbOffset: l, contentOffset: A });
+                                    }),
+                                    t = a.O.client.events.mouse.up(() => {
+                                        e(), D(Q);
+                                    });
+                                return () => {
+                                    e(), t();
+                                };
+                            }, [u, m.offset, m.pending, n, D]);
+                        const C = P((e) => u.applyStepTo(e), A, [u]),
+                            g = C[0],
+                            f = C[1];
+                        (0, o.useEffect)(
+                            () => (
+                                document.addEventListener('mouseup', f, !0),
+                                () => document.removeEventListener('mouseup', f, !0)
+                            ),
+                            [f],
+                        );
+                        const p = (u) => {
+                            u.target.classList.contains(Z) || N('highlight');
+                        };
+                        return i().createElement(
+                            'div',
+                            { className: y()($, e.base), ref: r, onWheel: u.handleMouseWheel },
+                            i().createElement('div', {
+                                className: y()(G, e.leftButton),
+                                onMouseDown: (u) => {
+                                    u.target.classList.contains(Z) || 0 !== u.button || (N('play'), g(H.Next));
+                                },
+                                onMouseUp: f,
+                                ref: s,
+                                onMouseEnter: p,
+                            }),
+                            i().createElement(
                                 'div',
-                                { className: y()($, e.base), ref: s, onWheel: u.handleMouseWheel },
-                                i().createElement('div', {
-                                    className: y()(G, e.leftButton),
-                                    onMouseDown: (u) => {
-                                        u.target.classList.contains(Z) || 0 !== u.button || (N('play'), f(H.Next));
+                                {
+                                    className: y()(Y, e.track),
+                                    onMouseDown: (e) => {
+                                        const n = E.current;
+                                        if (n && 0 === e.button)
+                                            if ((N('play'), e.target === n))
+                                                D({ pending: !0, offset: e.screenX - n.getBoundingClientRect().x });
+                                            else {
+                                                ((e) => {
+                                                    const n = E.current,
+                                                        r = u.contentRef.current;
+                                                    if (!n || !r) return;
+                                                    const a = t(u);
+                                                    u.applyScroll(u.animationScroll.scrollPosition.get() + a * e);
+                                                })(e.screenX > n.getBoundingClientRect().x ? H.Prev : H.Next);
+                                            }
                                     },
-                                    onMouseUp: p,
-                                    ref: l,
-                                    onMouseEnter: h,
-                                }),
-                                i().createElement(
-                                    'div',
-                                    {
-                                        className: y()(Y, e.track),
-                                        onMouseDown: (e) => {
-                                            const n = A.current;
-                                            if (n && 0 === e.button)
-                                                if ((N('play'), e.target === n))
-                                                    B({ pending: !0, offset: e.screenX - n.getBoundingClientRect().x });
-                                                else {
-                                                    ((e) => {
-                                                        const n = A.current,
-                                                            r = u.contentRef.current;
-                                                        if (!n || !r) return;
-                                                        const a = t(u);
-                                                        u.applyScroll(u.animationScroll.scrollPosition.get() + a * e);
-                                                    })(e.screenX > n.getBoundingClientRect().x ? H.Prev : H.Next);
-                                                }
-                                        },
-                                        ref: E,
-                                        onMouseEnter: h,
-                                    },
-                                    i().createElement('div', { ref: A, className: y()(K, e.thumb) }),
-                                    i().createElement('div', { className: y()(X, e.rail) }),
-                                ),
-                                i().createElement('div', {
-                                    className: y()(q, e.rightButton),
-                                    onMouseDown: (u) => {
-                                        u.target.classList.contains(Z) || 0 !== u.button || (N('play'), f(H.Prev));
-                                    },
-                                    onMouseUp: p,
                                     ref: c,
-                                    onMouseEnter: h,
-                                }),
-                            );
-                        },
-                    ),
+                                    onMouseEnter: p,
+                                },
+                                i().createElement('div', { ref: E, className: y()(K, e.thumb) }),
+                                i().createElement('div', { className: y()(X, e.rail) }),
+                            ),
+                            i().createElement('div', {
+                                className: y()(q, e.rightButton),
+                                onMouseDown: (u) => {
+                                    u.target.classList.contains(Z) || 0 !== u.button || (N('play'), g(H.Prev));
+                                },
+                                onMouseUp: f,
+                                ref: l,
+                                onMouseEnter: p,
+                            }),
+                        );
+                    }),
                     nu = {
                         base: 'HorizontalScroll_base_29',
                         wrapper: 'HorizontalScroll_wrapper_1e',

@@ -1573,13 +1573,13 @@
             36 === e
                 ? 'chunks/lobby/68cab0edd205e8deca20.js'
                 : 154 === e
-                  ? 'chunks/lobby/e08f53724b7d94d194e1.js'
+                  ? 'chunks/lobby/d35c0bba18b5ca630f4a.js'
                   : 805 === e
                     ? 'chunks/lobby/c842d067cdbb910e6989.js'
                     : void 0),
         (__webpack_require__.miniCssF = (e) =>
             154 === e
-                ? 'chunks/lobby/e08f53724b7d94d194e1.css'
+                ? 'chunks/lobby/d35c0bba18b5ca630f4a.css'
                 : 805 === e
                   ? 'chunks/lobby/c842d067cdbb910e6989.css'
                   : 'lobby/achievements/AchievementsMainView/AchievementsMainView.css'),
