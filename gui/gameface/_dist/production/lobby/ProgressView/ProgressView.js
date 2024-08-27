@@ -39,13 +39,13 @@
                         k = (0, i.useCallback)(() => {
                             c || (h.current && (h.current.focus(), b(!0)));
                         }, [c]),
-                        P = (0, i.useCallback)(
+                        x = (0, i.useCallback)(
                             (e) => {
                                 C && null !== h.current && !h.current.contains(e.target) && b(!1);
                             },
                             [C],
                         ),
-                        x = (0, i.useCallback)(
+                        P = (0, i.useCallback)(
                             (e) => {
                                 c || (D && D(e));
                             },
@@ -97,12 +97,12 @@
                     return (
                         (0, i.useEffect)(
                             () => (
-                                document.addEventListener('mousedown', P),
+                                document.addEventListener('mousedown', x),
                                 () => {
-                                    document.removeEventListener('mousedown', P);
+                                    document.removeEventListener('mousedown', x);
                                 }
                             ),
-                            [P],
+                            [x],
                         ),
                         (0, i.useEffect)(() => {
                             b(t);
@@ -117,7 +117,7 @@
                                 onMouseUp: L,
                                 onMouseDown: N,
                                 onMouseLeave: I,
-                                onClick: x,
+                                onClick: P,
                             },
                             n !== l.L.ghost &&
                                 s().createElement(
@@ -433,8 +433,7 @@
                             (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (e.BattleBoosterGift = 'battleBooster_gift'),
                             (e.CosmicLootboxSilver = 'lootBoxToken'),
-                            (e.CosmicLootboxCommon = 'cosmic_2024_2'),
-                            (e.RacesPoint = 'races_point');
+                            (e.CosmicLootboxCommon = 'cosmic_2024_2');
                     })(n || (n = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -581,7 +580,7 @@
                         s.E4.CosmicLootboxSilver,
                     ],
                     l = [s.E4.Gold, s.E4.Credits, s.E4.Crystal, s.E4.FreeXp],
-                    c = [s.E4.BattlePassPoints, s.E4.RacesPoint],
+                    c = [s.E4.BattlePassPoints],
                     d = [s.E4.PremiumPlus, s.E4.Premium],
                     E = (e) =>
                         o.includes(e)
@@ -3125,14 +3124,14 @@
                                     [a, E, o, e],
                                 );
                             if (F) return null;
-                            const P = i()(
+                            const x = i()(
                                 'ProgressBarDeltaGrow_base_7e',
                                 d,
                                 E && 0 === o && 'ProgressBarDeltaGrow_base__withoutBounce_b5',
                             );
                             return r().createElement(
                                 'div',
-                                { style: B ? k : R, className: P },
+                                { style: B ? k : R, className: x },
                                 r().createElement(
                                     'div',
                                     { style: h ? y : v, className: 'ProgressBarDeltaGrow_glow_68' },
@@ -3194,10 +3193,10 @@
                             );
                         },
                     ),
-                    P = ['onComplete', 'onEndAnimation'];
-                function x() {
+                    x = ['onComplete', 'onEndAnimation'];
+                function P() {
                     return (
-                        (x =
+                        (P =
                             Object.assign ||
                             function (e) {
                                 for (var u = 1; u < arguments.length; u++) {
@@ -3206,7 +3205,7 @@
                                 }
                                 return e;
                             }),
-                        x.apply(this, arguments)
+                        P.apply(this, arguments)
                     );
                 }
                 const O = (0, n.memo)((e) => {
@@ -3220,7 +3219,7 @@
                                     a = Object.keys(e);
                                 for (n = 0; n < a.length; n++) (t = a[n]), u.indexOf(t) >= 0 || (r[t] = e[t]);
                                 return r;
-                            })(e, P);
+                            })(e, x);
                         const i = (0, n.useState)(!1),
                             s = i[0],
                             o = i[1],
@@ -3230,9 +3229,9 @@
                             }, [s, u, t, a.to]);
                         switch (a.animationSettings.type) {
                             case _.Simple:
-                                return r().createElement(v, x({}, a, { onEndAnimation: l, isComplete: s }));
+                                return r().createElement(v, P({}, a, { onEndAnimation: l, isComplete: s }));
                             case _.Growing:
-                                return r().createElement(k, x({}, a, { onEndAnimation: l, isComplete: s }));
+                                return r().createElement(k, P({}, a, { onEndAnimation: l, isComplete: s }));
                             default:
                                 return null;
                         }

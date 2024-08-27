@@ -611,6 +611,359 @@
     line-height: 1.1;
 }
 
+@keyframes App_fadeIn_fa {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes App_fadeOut_b6 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes App_translateRightWithFadeIn_cc {
+    0% {
+        opacity: 0;
+        transform: translateX(-50rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
+@keyframes App_translateLeftWithFadeOut_1f {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50rem);
+    }
+}
+@keyframes App_translateTopWithFadeIn_cb {
+    0% {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+@keyframes App_translateTopWithFadeOut_0d {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-50rem);
+    }
+}
+@keyframes App_translateBottomWithFadeIn_e0 {
+    0% {
+        opacity: 0;
+        transform: translateY(-50rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+@keyframes App_translateBottomWithFadeOut_57 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+}
+.App_base_2b {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.early_access.vehileView.vignette.small') no-repeat center/cover;
+    overflow-y: hidden;
+    position: relative;
+}
+.mediaMedium .App_base_2b {
+    background: url('R.images.gui.maps.icons.early_access.vehileView.vignette.big') no-repeat center/cover;
+}
+.App_net_dd {
+    width: 100%;
+    height: 459rem;
+    background: url('R.images.gui.maps.icons.early_access.vehileView.net') no-repeat left bottom / cover;
+    position: absolute;
+    bottom: -83rem;
+    left: 0;
+}
+.mediaMedium .App_net_dd {
+    bottom: -77rem;
+}
+.mediaLarge .App_net_dd {
+    bottom: -35rem;
+}
+.App_header_7b {
+    z-index: 1;
+    animation-name: App_translateBottomWithFadeIn_e0;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.App_header__hide_2e {
+    animation-name: App_translateTopWithFadeOut_0d;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-duration: 0.1s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.47, 1);
+}
+.App_buyTokensWidget_b1 {
+    width: 270rem;
+    height: 143rem;
+    background: url('R.images.gui.maps.icons.early_access.widgets.tokens') no-repeat center/cover;
+    position: absolute;
+    top: 17rem;
+    right: 0;
+}
+.mediaMedium .App_buyTokensWidget_b1 {
+    width: 367rem;
+    height: 192rem;
+    background-image: url('R.images.gui.maps.icons.early_access.widgets.tokens_large');
+    top: 37rem;
+    right: -10rem;
+}
+.mediaLarge .App_buyTokensWidget_b1 {
+    right: 0;
+}
+.App_buyTokensWidget_b1 {
+    animation-name: App_translateBottomWithFadeIn_e0;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.App_buyTokensWidget__hide_67 {
+    animation-name: App_translateTopWithFadeOut_0d;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-duration: 0.1s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.47, 1);
+}
+.App_flag_c5 {
+    width: 570rem;
+    height: 227rem;
+    background: no-repeat center / cover;
+    position: absolute;
+    left: calc(50vw - 285rem);
+}
+.mediaMedium .App_flag_c5 {
+    width: 1080rem;
+    height: 454rem;
+    left: calc(50vw - 540rem);
+}
+.App_flag_c5 {
+    animation-name: App_translateBottomWithFadeIn_e0;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.App_flag__hide_66 {
+    animation-name: App_translateTopWithFadeOut_0d;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-duration: 0.1s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.47, 1);
+}
+.App_content_63 {
+    display: flex;
+    width: 100%;
+}
+.App_description_bf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 420rem;
+    height: 320rem;
+    margin-left: 42rem;
+    margin-top: -123rem;
+    animation-name: App_translateRightWithFadeIn_cc;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.mediaSmall .App_description_bf {
+    margin-left: 143.5rem;
+    margin-top: -100rem;
+}
+.mediaMedium .App_description_bf {
+    width: 545rem;
+    height: 404rem;
+    margin-left: 130rem;
+    margin-top: -60rem;
+}
+.mediaLarge .App_description_bf {
+    margin-left: 181rem;
+}
+.mediaExtraLarge .App_description_bf {
+    margin-left: 324rem;
+    margin-top: 45rem;
+}
+.App_description__hide_57 {
+    animation-name: App_translateLeftWithFadeOut_1f;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-duration: 0.1s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.47, 1);
+}
+.App_tankViewButtons_4c {
+    display: flex;
+    justify-content: space-between;
+    width: 140rem;
+    position: absolute;
+    right: 30%;
+    bottom: 202rem;
+    z-index: 1;
+}
+.mediaSmall .App_tankViewButtons_4c {
+    right: 378rem;
+    bottom: 214rem;
+}
+.mediaMedium .App_tankViewButtons_4c {
+    width: 160rem;
+    right: 460rem;
+    bottom: 221rem;
+}
+.mediaLarge .App_tankViewButtons_4c {
+    right: 590rem;
+    bottom: 246rem;
+}
+.mediaExtraLarge .App_tankViewButtons_4c {
+    width: 180rem;
+    right: 790rem;
+    bottom: 360rem;
+}
+.App_tankViewButtons_4c {
+    animation-name: App_fadeIn_fa;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.App_tankViewButtons__hide_96 {
+    animation-name: App_fadeOut_b6;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.App_tankViewButtons__onlyCompare_de {
+    width: auto;
+    right: 32%;
+}
+.mediaSmall .App_tankViewButtons__onlyCompare_de {
+    right: 413rem;
+}
+.mediaMedium .App_tankViewButtons__onlyCompare_de {
+    width: auto;
+    right: 505rem;
+}
+.mediaLarge .App_tankViewButtons__onlyCompare_de {
+    right: 635rem;
+}
+.mediaExtraLarge .App_tankViewButtons__onlyCompare_de {
+    width: auto;
+    right: 845rem;
+}
+.App_carouselWithWidget_9d {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: -14rem;
+    position: absolute;
+    bottom: 0;
+}
+.mediaMedium .App_carouselWithWidget_9d {
+    margin-bottom: 0;
+}
+.App_carouselWithWidget_9d {
+    animation-name: App_translateTopWithFadeIn_cb;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.App_carouselWithWidget__hide_3d {
+    animation-name: App_translateBottomWithFadeOut_57;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-duration: 0.1s;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.47, 1);
+}
+.App_carousel_56 {
+    max-width: calc(100vw - 270rem);
+    margin-bottom: 20rem;
+    position: relative;
+}
+.mediaSmall .App_carousel_56 {
+    max-width: calc(100vw - 283.5rem);
+    margin-left: 13.5rem;
+}
+.mediaMedium .App_carousel_56 {
+    max-width: calc(100vw - 345rem);
+    margin-left: 0;
+    margin-bottom: 39rem;
+}
+.mediaLarge .App_carousel_56 {
+    max-width: calc(100vw - 396rem);
+    margin-left: 51rem;
+}
+.mediaExtraLarge .App_carousel_56 {
+    max-width: calc(100vw - 539rem);
+    margin-left: 194rem;
+}
+.App_questWidgetWrapper_64 {
+    width: 270rem;
+    height: 233rem;
+    position: relative;
+}
+.mediaMedium .App_questWidgetWrapper_64 {
+    width: 345rem;
+    height: 295rem;
+    margin-right: -10rem;
+}
+.mediaLarge .App_questWidgetWrapper_64 {
+    margin-right: 0;
+}
+
 .QuestWidget_base_fb {
     display: flex;
     justify-content: center;
@@ -1029,7 +1382,7 @@
     flex: 1;
 }
 
-.TankName_base_59 {
+.TankName_base_8a {
     display: flex;
     align-items: center;
     min-width: 168rem;
@@ -1038,7 +1391,7 @@
     background: url('R.images.gui.maps.icons.early_access.carousel.text_bg') no-repeat left center / contain;
 }
 
-.TankName_level_05 {
+.TankName_level_f8 {
     color: #fefeec;
     font-size: 14rem;
     font-weight: 400;
@@ -1046,7 +1399,7 @@
     opacity: 0.9;
 }
 
-.TankName_type_0d {
+.TankName_type_80 {
     width: 42rem;
     height: 38rem;
     margin: 18rem -10rem 0rem;
@@ -1055,11 +1408,11 @@
     top: -7rem;
 }
 
-.TankName_type__elite_65 {
+.TankName_type__elite_82 {
     margin: 18rem -6rem 0rem;
 }
 
-.TankName_name_da {
+.TankName_name_49 {
     color: #fefeec;
     font-size: 14rem;
     font-weight: 400;
@@ -1067,7 +1420,7 @@
     opacity: 0.9;
 }
 
-.CardContent_imgWrapper_28 {
+.CardContent_imgWrapper_fb {
     width: 100%;
     height: 100%;
     padding: 0rem 34rem 9rem 55rem;
@@ -1076,7 +1429,7 @@
     left: 0;
 }
 
-.CardContent_vehicleImg_fb {
+.CardContent_vehicleImg_f8 {
     width: 180rem;
     height: 135rem;
     background: no-repeat center / cover;
@@ -1088,16 +1441,16 @@
         height 0.2s;
 }
 
-.CardContent_vehicleImg__withOpacity_77 {
+.CardContent_vehicleImg__withOpacity_2d {
     opacity: 0.8;
 }
 
-.CardContent_vehicleImg__selected_c4 {
+.CardContent_vehicleImg__selected_fc {
     width: 194rem;
     height: 146rem;
 }
 
-.CardContent_base_3a:hover .CardContent_vehicleImg_fb {
+.CardContent_base_c8:hover .CardContent_vehicleImg_f8 {
     opacity: 1;
 }
 
@@ -1108,13 +1461,13 @@
     bottom: 20rem;
 }
 
-.CardContent_vehicleName_e2 {
+.CardContent_vehicleName_78 {
     position: absolute;
     bottom: 10rem;
     left: 8rem;
 }
 
-.CardContent_postProgressImg_7c {
+.CardContent_postProgressImg_a3 {
     width: 36rem;
     height: 36rem;
     background: url('R.images.gui.maps.icons.early_access.icons.postProgression') no-repeat center / cover;
@@ -1123,7 +1476,7 @@
     right: 0;
 }
 
-.CardContent_vehiclePrice_dd {
+.CardContent_vehiclePrice_fa {
     color: #ffffff;
     font-size: 18rem;
     font-weight: 700;
@@ -1135,11 +1488,11 @@
         0 0 5rem rgba(74, 136, 255, 0.6);
 }
 
-.CardContent_vehiclePrice__withOpacity_a3 {
+.CardContent_vehiclePrice__withOpacity_16 {
     opacity: 0.7;
 }
 
-.CardContent_vehiclePrice__purchasable_13 {
+.CardContent_vehiclePrice__purchasable_2a {
     color: #ffffff;
     font-size: 14rem;
     font-weight: 400;
@@ -1150,7 +1503,7 @@
     opacity: 0.7;
 }
 
-.CardContent_token_25 {
+.CardContent_token_e6 {
     width: 16rem;
     height: 16rem;
     background: url('R.images.gui.maps.icons.early_access.tokens.c_16x16') no-repeat center / cover;
@@ -1159,18 +1512,18 @@
     right: 2rem;
 }
 
-.CardContent_token__purchasable_37 {
+.CardContent_token__purchasable_f0 {
     background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
     top: 3rem;
 }
 
-.CardContent_token__inInventory_71 {
+.CardContent_token__inInventory_f5 {
     width: 30rem;
     height: 24rem;
     background-image: url('R.images.gui.maps.icons.library.storage_icon');
 }
 
-.Pointer_base_74 {
+.Pointer_base_1b {
     display: flex;
     justify-content: center;
     width: 59rem;
@@ -1180,7 +1533,7 @@
     visibility: hidden;
 }
 
-.Pointer_pointerBg_18 {
+.Pointer_pointerBg_2a {
     width: 100%;
     height: 100%;
     background: url('R.images.gui.maps.icons.early_access.carousel.progress_bar.pointer') no-repeat center / cover;
@@ -1189,11 +1542,11 @@
     left: 0;
 }
 
-.Pointer_pointerBg__stick_6f {
+.Pointer_pointerBg__stick_25 {
     background-image: url('R.images.gui.maps.icons.early_access.carousel.progress_bar.pointer_stick');
 }
 
-.Pointer_pointerText_35 {
+.Pointer_pointerText_67 {
     color: #ffdd99;
     font-size: 24rem;
     font-weight: 700;
@@ -1201,27 +1554,7 @@
     text-shadow: 0 0 7rem #f50;
 }
 
-.VehicleProgress_base_ca {
-    height: 8rem;
-    overflow: visible;
-    position: relative;
-}
-
-.VehicleProgress_progressBg_ed {
-    width: 100%;
-    height: 100%;
-    background: url('R.images.gui.maps.icons.early_access.carousel.progress_bar.bg') no-repeat center / cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: background 0.2s ease;
-}
-
-.VehicleProgress_progressBg__done_97 {
-    background-image: url('R.images.gui.maps.icons.early_access.carousel.progress_bar.bg_done');
-}
-
-.VehicleProgress_defaultShadow_cd {
+.ProgressLine_defaultShadow_79 {
     height: 13rem;
     background: url('R.images.gui.maps.icons.early_access.carousel.progress_bar.shadow_progress_gray') no-repeat center /
         cover;
@@ -1231,35 +1564,7 @@
     transition-property: width;
 }
 
-.VehicleProgress_doneShadow_a5 {
-    width: 100%;
-    height: 13rem;
-    background: url('R.images.gui.maps.icons.early_access.carousel.progress_bar.shadow_done') no-repeat center / cover;
-    position: absolute;
-    top: -13rem;
-    left: 0;
-}
-
-.VehicleProgress_progressLine_f3 {
-    height: 4rem;
-    background: url('R.images.gui.maps.icons.early_access.carousel.progress_bar.bg_progress') no-repeat center / cover;
-    position: absolute;
-    top: 2rem;
-    transition-delay: 1000ms;
-    transition-property: width;
-}
-
-.VehicleProgress_progressShadow_8b {
-    height: 13rem;
-    background: url('R.images.gui.maps.icons.early_access.carousel.progress_bar.shadow_progress') no-repeat center /
-        cover;
-    position: absolute;
-    top: -13rem;
-    left: 0;
-    transition-property: width;
-}
-
-.VehicleProgress_yellowProgress_fa {
+.ProgressLine_yellowProgress_7f {
     height: 84rem;
     background: url('R.images.gui.maps.icons.early_access.carousel.progress_bar.yellow_progress') no-repeat center /
         cover;
@@ -1269,14 +1574,62 @@
     transition-property: width;
 }
 
-.VehicleProgress_pointerCentering_00 {
+.ProgressLine_progressShadow_2d {
+    height: 13rem;
+    background: url('R.images.gui.maps.icons.early_access.carousel.progress_bar.shadow_progress') no-repeat center /
+        cover;
+    position: absolute;
+    top: -13rem;
+    left: 0;
+    transition-property: width;
+}
+
+.ProgressLine_progressLine_0d {
+    height: 4rem;
+    background: url('R.images.gui.maps.icons.early_access.carousel.progress_bar.bg_progress') no-repeat center / cover;
+    position: absolute;
+    top: 2rem;
+    transition-delay: 1000ms;
+    transition-property: width;
+}
+
+.VehicleProgress_base_3c {
+    height: 8rem;
+    overflow: visible;
+    position: relative;
+}
+
+.VehicleProgress_progressBg_1b {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.early_access.carousel.progress_bar.bg') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background 0.2s ease;
+}
+
+.VehicleProgress_progressBg__done_4a {
+    background-image: url('R.images.gui.maps.icons.early_access.carousel.progress_bar.bg_done');
+}
+
+.VehicleProgress_doneShadow_57 {
+    width: 100%;
+    height: 13rem;
+    background: url('R.images.gui.maps.icons.early_access.carousel.progress_bar.shadow_done') no-repeat center / cover;
+    position: absolute;
+    top: -13rem;
+    left: 0;
+}
+
+.VehicleProgress_pointerCentering_ca {
     margin-left: -30rem;
     position: absolute;
     top: -43rem;
-    transition: opacity 0.5s;
+    transition: opacity 2.5s;
 }
 
-.VehicleProgress_pointerCentering__show_54 {
+.VehicleProgress_pointerCentering__show_ab {
     opacity: 1;
     visibility: visible;
 }
@@ -1342,13 +1695,16 @@
     background: url('R.images.gui.maps.icons.early_access.carousel.card_separator') no-repeat top / cover;
 }
 
-.VehicleCarousel_base_f8 {
+.VehicleCarousel_base_73 {
     max-width: 100%;
 }
-.VehicleCarousel_vehicleCarouselWrapper_0b {
-    mask: radial-gradient(circle, #ffffff 75%, transparent 95%);
+.VehicleCarousel_vehicleCarouselWrapper_ea {
+    mask: radial-gradient(circle, #ffffff 85%, transparent 99%);
 }
-.VehicleCarousel_arrow_59 {
+.mediaSmall .VehicleCarousel_vehicleCarouselWrapper_ea {
+    mask: radial-gradient(circle, #ffffff 80%, transparent 97%);
+}
+.VehicleCarousel_arrow_56 {
     width: 24rem;
     height: 48rem;
     background: url('R.images.gui.maps.icons.early_access.carousel.arrow') no-repeat center / cover;
@@ -1356,50 +1712,50 @@
     bottom: 60rem;
     cursor: pointer;
 }
-.VehicleCarousel_arrow__enabled_06:hover {
+.VehicleCarousel_arrow__enabled_b8:hover {
     background-image: url('R.images.gui.maps.icons.early_access.carousel.arrow_hover');
 }
-.VehicleCarousel_arrow__left_ff {
+.VehicleCarousel_arrow__left_d1 {
     left: 10rem;
     transform: translateY(7rem);
 }
-.mediaSmall .VehicleCarousel_arrow__left_ff {
+.mediaSmall .VehicleCarousel_arrow__left_d1 {
     left: 30rem;
 }
-.VehicleCarousel_arrow__right_09 {
+.VehicleCarousel_arrow__right_da {
     right: 30rem;
     transform: rotate(180deg) translateY(-7rem);
 }
-.VehicleCarousel_arrow__disabled_84 {
+.VehicleCarousel_arrow__disabled_c4 {
     background-image: url('R.images.gui.maps.icons.early_access.carousel.arrow_disabled');
 }
-.VehicleCarousel_arrow__hidden_60 {
+.VehicleCarousel_arrow__hidden_6f {
     display: none;
 }
-.VehicleCarousel_vehicleCardsSlider_be {
+.VehicleCarousel_vehicleCardsSlider_09 {
     display: flex;
     align-items: flex-end;
     padding-top: 17rem;
 }
-.VehicleCarousel_vehicleCardsSlider__transition_0d {
+.VehicleCarousel_vehicleCardsSlider__transition_fb {
     transition: transform 250ms ease-in-out;
 }
-.VehicleCarousel_scrollBar_92 {
+.VehicleCarousel_scrollBar_e2 {
     display: none;
 }
-.VehicleCarousel_borderCard_f8 {
+.VehicleCarousel_borderCard_32 {
     height: 168rem;
     background: no-repeat top / cover;
 }
-.VehicleCarousel_borderCard__left_92 {
+.VehicleCarousel_borderCard__left_23 {
     width: 42rem;
     background-image: url('R.images.gui.maps.icons.early_access.carousel.bg_left_small');
 }
-.mediaSmall .VehicleCarousel_borderCard__left_92 {
+.mediaSmall .VehicleCarousel_borderCard__left_23 {
     width: 130rem;
     background-image: url('R.images.gui.maps.icons.early_access.carousel.bg_left');
 }
-.VehicleCarousel_borderCard__right_89 {
+.VehicleCarousel_borderCard__right_23 {
     width: 130rem;
     background-image: url('R.images.gui.maps.icons.early_access.carousel.bg_right');
 }
@@ -1910,30 +2266,30 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translateY(17rem);
 }
 
-.BuyProgress_base_dc {
+.BuyProgress_base_15 {
     padding: 18rem 0 31rem 15rem;
     background: no-repeat top / cover;
 }
-.mediaMedium .BuyProgress_base_dc {
+.mediaMedium .BuyProgress_base_15 {
     padding: 22rem 0 37rem 27rem;
 }
 
 /* INVENTORY */
 
-.BuyProgress_inInventory_66 {
+.BuyProgress_inInventory_b8 {
     display: flex;
     align-items: flex-start;
     margin-top: 2rem;
 }
 
-.BuyProgress_checkIcon_3f {
+.BuyProgress_checkIcon_a2 {
     width: 14rem;
     height: 14rem;
     margin: 8rem 5rem 0 0;
     background: url('R.images.gui.maps.icons.missions.commonIcons.check_16') no-repeat center/contain;
 }
 
-.BuyProgress_checkText_5d {
+.BuyProgress_checkText_f1 {
     margin-top: 3rem;
     color: #80d43a;
     font-size: 14rem;
@@ -1941,42 +2297,42 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.3;
 }
 
-.mediaMedium .BuyProgress_checkText_5d {
+.mediaMedium .BuyProgress_checkText_f1 {
     color: #80d43a;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
 }
 
-.BuyProgress_showInHangarButton_db {
+.BuyProgress_showInHangarButton_10 {
     margin-left: 58rem;
 }
 
 /* PURCHASABLE */
 
-.BuyProgress_purchasable_bc {
+.BuyProgress_purchasable_56 {
     display: flex;
     align-items: center;
 }
 
-.BuyProgress_buyButton_43 {
+.BuyProgress_buyButton_99 {
     width: 160rem;
     margin-left: 24rem;
 }
 
 /* UNREACHED */
 
-.BuyProgress_unReached_59 {
+.BuyProgress_unReached_6c {
     display: flex;
     align-items: center;
     margin-top: 2rem;
 }
 
-.mediaMedium .BuyProgress_unReached_59 {
+.mediaMedium .BuyProgress_unReached_6c {
     margin-top: -3rem;
 }
 
-.BuyProgress_unReachedText_ee {
+.BuyProgress_unReachedText_7e {
     display: flex;
     align-items: center;
 
@@ -1989,19 +2345,19 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.3;
 }
 
-.mediaMedium .BuyProgress_unReachedText_ee {
+.mediaMedium .BuyProgress_unReachedText_7e {
     color: #c9c9b6;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
 }
 
-.BuyProgress_remainTokens_12 {
+.BuyProgress_remainTokens_65 {
     margin-left: 4rem;
     margin-bottom: 2rem;
     text-shadow:
         0 0 8rem #97ffec80,
-        0 0 5px #4a88ff99;
+        0 0 5rem #4a88ff99;
 
     color: #ffffff;
 
@@ -2012,7 +2368,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.25;
 }
 
-.mediaMedium .BuyProgress_remainTokens_12 {
+.mediaMedium .BuyProgress_remainTokens_65 {
     margin-bottom: 0;
     color: #ffffff;
     font-size: 18rem;
@@ -2020,50 +2376,50 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.1;
 }
 
-.BuyProgress_lockIcon_8b {
+.BuyProgress_lockIcon_11 {
     width: 21rem;
     height: 27rem;
     margin-right: 10rem;
     background: url('R.images.gui.maps.icons.early_access.lock.small') no-repeat center/cover;
 }
 
-.mediaMedium .BuyProgress_lockIcon_8b {
+.mediaMedium .BuyProgress_lockIcon_11 {
     width: 31rem;
     height: 39rem;
     margin-right: 18rem;
     background: url('R.images.gui.maps.icons.early_access.lock.big') no-repeat center/cover;
 }
 
-.ResearchCondition_base_56 {
+.ResearchCondition_base_dd {
     width: 100%;
     padding: 0 0 15rem;
 }
 
-.mediaMedium .ResearchCondition_base_56 {
+.mediaMedium .ResearchCondition_base_dd {
     padding: 12rem 0 19rem;
 }
 
-.ResearchCondition_header_13 {
+.ResearchCondition_header_2b {
     display: flex;
     align-items: center;
     flex: 1;
 }
 
-.ResearchCondition_headerText_7c {
+.ResearchCondition_headerText_e4 {
     color: #fefeec;
     font-size: 14rem;
     font-weight: 700;
     line-height: 1.15;
 }
 
-.mediaMedium .ResearchCondition_headerText_7c {
+.mediaMedium .ResearchCondition_headerText_e4 {
     color: #fefeec;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
-.ResearchCondition_headerBorder_57 {
+.ResearchCondition_headerBorder_85 {
     flex: 1;
     height: 1rem;
     margin-left: 9rem;
@@ -2071,106 +2427,102 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.mediaMedium .ResearchCondition_headerBorder_57 {
+.mediaMedium .ResearchCondition_headerBorder_85 {
     margin-left: 15rem;
 }
 
-.ResearchCondition_content_50 {
+.ResearchCondition_content_2c {
     display: flex;
     align-items: center;
     margin-left: 12rem;
     margin-top: 11rem;
 }
 
-.mediaMedium .ResearchCondition_content_50 {
+.mediaMedium .ResearchCondition_content_2c {
     margin-left: 27rem;
     margin-top: 15rem;
 }
 
-.ResearchCondition_tokensValueWithIcon_9c {
+.ResearchCondition_tokensValueWithIcon_85 {
     display: flex;
     align-items: flex-end;
     margin: 0 10rem 3rem;
     position: relative;
 }
 
-.mediaMedium .ResearchCondition_tokensValueWithIcon_9c {
+.mediaMedium .ResearchCondition_tokensValueWithIcon_85 {
     align-items: stretch;
     margin-right: 15rem;
 }
 
-.ResearchCondition_tokensValue_ac {
-    margin-right: 4rem;
-
+.ResearchCondition_tokensValue_e5 {
     color: #f2f2f7;
-
     font-size: 24rem;
-
     font-weight: 700;
-
     line-height: 1.2;
+    margin-right: 4rem;
 }
 
-.mediaMedium .ResearchCondition_tokensValue_ac {
+.mediaMedium .ResearchCondition_tokensValue_e5 {
     color: #f2f2f7;
     font-size: 36rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
-.ResearchCondition_tokensIcon_3a {
+.ResearchCondition_tokensIcon_b5 {
     width: 24rem;
     height: 24rem;
     background: url('R.images.gui.maps.icons.early_access.tokens.c_24x24') no-repeat center / contain;
 }
 
-.mediaMedium .ResearchCondition_tokensIcon_3a {
+.mediaMedium .ResearchCondition_tokensIcon_b5 {
     width: 32rem;
     height: 32rem;
     margin: 6rem 0 0 4rem;
-    background: url('R.images.gui.maps.icons.early_access.tokens.c_32x32') no-repeat center / contain;
+    background-image: url('R.images.gui.maps.icons.early_access.tokens.c_32x32');
 }
 
-.ResearchCondition_experienceTextValue_92 {
+.ResearchCondition_experienceTextValue_c0 {
     display: flex;
     align-items: flex-end;
     padding: 3rem 0 3rem 10rem;
 }
 
-.mediaMedium .ResearchCondition_experienceTextValue_92 {
+.mediaMedium .ResearchCondition_experienceTextValue_c0 {
     padding: 10rem 0 10rem 15rem;
 }
 
-.ResearchCondition_experienceTextValue_92 {
+.ResearchCondition_experienceTextValue_c0 {
     border-left: 1rem solid rgba(255, 255, 255, 0.2);
 }
 
-.ResearchCondition_experienceText_a6 {
+.ResearchCondition_experienceText_64 {
     color: #c9c9b6;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
-.mediaMedium .ResearchCondition_experienceText_a6 {
+.mediaMedium .ResearchCondition_experienceText_64 {
     color: #c9c9b6;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
 }
 
-.ResearchCondition_experienceValue_75 {
+.ResearchCondition_experienceValue_10 {
+    color: #c9c9b6;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
     display: flex;
     align-items: center;
     margin-left: 4rem;
-    color: #c9c9b6;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
     text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
 }
 
-.ResearchCondition_experienceIcon_e3 {
+.ResearchCondition_experienceIcon_9b {
     width: 16rem;
     height: 16rem;
     margin: 2rem 0 0 2rem;
@@ -2264,354 +2616,4 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 400;
     line-height: 1.25;
     margin: 18rem 0 17rem 27rem;
-}
-
-@keyframes App_fadeIn_fa {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes App_fadeOut_b6 {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes App_translateRightWithFadeIn_cc {
-    0% {
-        opacity: 0;
-        transform: translateX(-50rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0rem);
-    }
-}
-@keyframes App_translateLeftWithFadeOut_1f {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateX(-50rem);
-    }
-}
-@keyframes App_translateTopWithFadeIn_cb {
-    0% {
-        opacity: 0;
-        transform: translateY(50rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0rem);
-    }
-}
-@keyframes App_translateTopWithFadeOut_0d {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(-50rem);
-    }
-}
-@keyframes App_translateBottomWithFadeIn_e0 {
-    0% {
-        opacity: 0;
-        transform: translateY(-50rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0rem);
-    }
-}
-@keyframes App_translateBottomWithFadeOut_57 {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(50rem);
-    }
-}
-.App_base_2b {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background: url('R.images.gui.maps.icons.early_access.vehileView.vignette.small') no-repeat center/cover;
-    overflow-y: hidden;
-    position: relative;
-}
-.mediaMedium .App_base_2b {
-    background: url('R.images.gui.maps.icons.early_access.vehileView.vignette.big') no-repeat center/cover;
-}
-.App_net_dd {
-    width: 100%;
-    height: 459rem;
-    background: url('R.images.gui.maps.icons.early_access.vehileView.net') no-repeat left bottom / cover;
-    position: absolute;
-    bottom: -83rem;
-    left: 0;
-}
-.mediaMedium .App_net_dd {
-    bottom: -77rem;
-}
-.mediaLarge .App_net_dd {
-    bottom: -35rem;
-}
-.App_header_7b {
-    z-index: 1;
-    animation-name: App_translateBottomWithFadeIn_e0;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-}
-.App_header__hide_2e {
-    animation-name: App_translateTopWithFadeOut_0d;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-    animation-duration: 0.1s;
-    animation-timing-function: cubic-bezier(0.07, 0.82, 0.47, 1);
-}
-.App_buyTokensWidget_b1 {
-    width: 270rem;
-    height: 143rem;
-    background: url('R.images.gui.maps.icons.early_access.widgets.tokens') no-repeat center/cover;
-    position: absolute;
-    top: 17rem;
-    right: 0;
-}
-.mediaMedium .App_buyTokensWidget_b1 {
-    width: 367rem;
-    height: 192rem;
-    background-image: url('R.images.gui.maps.icons.early_access.widgets.tokens_large');
-    top: 37rem;
-    right: -10rem;
-}
-.mediaLarge .App_buyTokensWidget_b1 {
-    right: 0;
-}
-.App_buyTokensWidget_b1 {
-    animation-name: App_translateBottomWithFadeIn_e0;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-}
-.App_buyTokensWidget__hide_67 {
-    animation-name: App_translateTopWithFadeOut_0d;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-    animation-duration: 0.1s;
-    animation-timing-function: cubic-bezier(0.07, 0.82, 0.47, 1);
-}
-.App_flag_c5 {
-    width: 570rem;
-    height: 227rem;
-    background: no-repeat center / cover;
-    position: absolute;
-    left: calc(50vw - 285rem);
-}
-.mediaMedium .App_flag_c5 {
-    width: 1080rem;
-    height: 454rem;
-    left: calc(50vw - 540rem);
-}
-.App_flag_c5 {
-    animation-name: App_translateBottomWithFadeIn_e0;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-}
-.App_flag__hide_66 {
-    animation-name: App_translateTopWithFadeOut_0d;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-    animation-duration: 0.1s;
-    animation-timing-function: cubic-bezier(0.07, 0.82, 0.47, 1);
-}
-.App_content_63 {
-    display: flex;
-    width: 100%;
-}
-.App_description_bf {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    width: 420rem;
-    height: 320rem;
-    margin-left: 42rem;
-    margin-top: -123rem;
-    animation-name: App_translateRightWithFadeIn_cc;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-}
-.mediaSmall .App_description_bf {
-    margin-left: 143.5rem;
-    margin-top: -100rem;
-}
-.mediaMedium .App_description_bf {
-    width: 545rem;
-    height: 404rem;
-    margin-left: 130rem;
-    margin-top: -60rem;
-}
-.mediaLarge .App_description_bf {
-    margin-left: 181rem;
-}
-.mediaExtraLarge .App_description_bf {
-    margin-left: 324rem;
-    margin-top: 45rem;
-}
-.App_description__hide_57 {
-    animation-name: App_translateLeftWithFadeOut_1f;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-    animation-duration: 0.1s;
-    animation-timing-function: cubic-bezier(0.07, 0.82, 0.47, 1);
-}
-.App_tankViewButtons_4c {
-    display: flex;
-    justify-content: space-between;
-    width: 140rem;
-    position: absolute;
-    right: 30%;
-    bottom: 202rem;
-    z-index: 1;
-}
-.mediaSmall .App_tankViewButtons_4c {
-    right: 378rem;
-    bottom: 214rem;
-}
-.mediaMedium .App_tankViewButtons_4c {
-    width: 160rem;
-    right: 460rem;
-    bottom: 221rem;
-}
-.mediaLarge .App_tankViewButtons_4c {
-    right: 590rem;
-    bottom: 246rem;
-}
-.mediaExtraLarge .App_tankViewButtons_4c {
-    width: 180rem;
-    right: 790rem;
-    bottom: 360rem;
-}
-.App_tankViewButtons_4c {
-    animation-name: App_fadeIn_fa;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-}
-.App_tankViewButtons__hide_96 {
-    animation-name: App_fadeOut_b6;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-}
-.App_tankViewButtons__onlyCompare_de {
-    width: auto;
-    right: 32%;
-}
-.mediaSmall .App_tankViewButtons__onlyCompare_de {
-    right: 413rem;
-}
-.mediaMedium .App_tankViewButtons__onlyCompare_de {
-    width: auto;
-    right: 505rem;
-}
-.mediaLarge .App_tankViewButtons__onlyCompare_de {
-    right: 635rem;
-}
-.mediaExtraLarge .App_tankViewButtons__onlyCompare_de {
-    width: auto;
-    right: 845rem;
-}
-.App_carouselWithWidget_9d {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 100%;
-    margin-bottom: -14rem;
-    position: absolute;
-    bottom: 0;
-}
-.mediaMedium .App_carouselWithWidget_9d {
-    margin-bottom: 0;
-}
-.App_carouselWithWidget_9d {
-    animation-name: App_translateTopWithFadeIn_cb;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-}
-.App_carouselWithWidget__hide_3d {
-    animation-name: App_translateBottomWithFadeOut_57;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-    animation-duration: 0.1s;
-    animation-timing-function: cubic-bezier(0.07, 0.82, 0.47, 1);
-}
-.App_carousel_56 {
-    max-width: calc(100vw - 270rem);
-    margin-bottom: 20rem;
-    position: relative;
-}
-.mediaSmall .App_carousel_56 {
-    margin-left: 13.5rem;
-}
-.mediaMedium .App_carousel_56 {
-    max-width: calc(100vw - 345rem);
-    margin-left: 0;
-    margin-bottom: 39rem;
-}
-.mediaLarge .App_carousel_56 {
-    margin-left: 51rem;
-}
-.mediaExtraLarge .App_carousel_56 {
-    margin-left: 194rem;
-}
-.App_questWidgetWrapper_64 {
-    width: 270rem;
-    height: 233rem;
-    position: relative;
-}
-.mediaMedium .App_questWidgetWrapper_64 {
-    width: 345rem;
-    height: 295rem;
-    margin-right: -10rem;
-}
-.mediaLarge .App_questWidgetWrapper_64 {
-    margin-right: 0;
 }

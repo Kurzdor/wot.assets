@@ -2280,18 +2280,10 @@
                     xe = 'TimeLeft_base_cf',
                     we = 'TimeLeft_base__small_7c',
                     Se = 'TimeLeft_icon_5d',
-                    Ne = ({
-                        index: e,
-                        text: t,
-                        isSmall: u = !1,
-                        classMix: a,
-                        tooltipId: _,
-                        isTooltipEnabled: r = !0,
-                        modeName: i = '',
-                    }) =>
+                    Ne = ({ index: e, text: t, isSmall: u = !1, classMix: a, tooltipId: _, modeName: r = '' }) =>
                         n().createElement(
                             ve.t,
-                            { isEnabled: r, args: _ ? { tooltipId: _, modeName: i } : { tooltipId: ge.GN, index: e } },
+                            { args: _ ? { tooltipId: _, modeName: r } : { tooltipId: ge.GN, index: e } },
                             n().createElement(
                                 'div',
                                 { className: s()(xe, u && we, a) },
@@ -2725,7 +2717,6 @@
                     'children',
                     'onHoverChanged',
                     'calendarTooltip',
-                    'isCalendarTooltipEnabled',
                     'widgetComponent',
                     'battlePassState',
                     'isDisabled',
@@ -2765,28 +2756,26 @@
                             l = e.onHoverChanged,
                             c = e.calendarTooltip,
                             m = void 0 === c ? '' : c,
-                            d = e.isCalendarTooltipEnabled,
-                            b = void 0 === d || d,
-                            g = e.widgetComponent,
-                            E = e.battlePassState,
-                            A = e.isDisabled,
-                            C = e.timeLeft,
-                            F = e.rewardList,
-                            p = e.statusActive,
-                            B = e.divider,
-                            D = void 0 === B ? ' ' : B,
-                            v = e.belowStatusComponent,
-                            h = e.nameSuffixComponent,
-                            f = e.forceShowIcon,
+                            d = e.widgetComponent,
+                            b = e.battlePassState,
+                            g = e.isDisabled,
+                            E = e.timeLeft,
+                            A = e.rewardList,
+                            C = e.statusActive,
+                            F = e.divider,
+                            p = void 0 === F ? ' ' : F,
+                            B = e.belowStatusComponent,
+                            D = e.nameSuffixComponent,
+                            v = e.forceShowIcon,
+                            h = void 0 !== v && v,
+                            f = e.hideStatus,
                             x = void 0 !== f && f,
-                            w = e.hideStatus,
-                            S = void 0 !== w && w,
-                            N = e.noWidgetSizes,
-                            k = void 0 === N ? [de.Id.B5, de.Id.B6] : N,
-                            y = e.classNames,
-                            T = e.resourceFolderGetter,
-                            L = void 0 === T ? de.d6 : T,
-                            W = (function (e, t) {
+                            w = e.noWidgetSizes,
+                            S = void 0 === w ? [de.Id.B5, de.Id.B6] : w,
+                            N = e.classNames,
+                            k = e.resourceFolderGetter,
+                            y = void 0 === k ? de.d6 : k,
+                            T = (function (e, t) {
                                 if (null == e) return {};
                                 var u,
                                     a,
@@ -2795,8 +2784,8 @@
                                 for (a = 0; a < r.length; a++) (u = r[a]), t.indexOf(u) >= 0 || (_[u] = e[u]);
                                 return _;
                             })(e, qe);
-                        const M = (0, Be.O)(),
-                            P = (0, me.Z)(
+                        const L = (0, Be.O)(),
+                            W = (0, me.Z)(
                                 [
                                     ...(0, de.Hp)(
                                         'base',
@@ -2814,154 +2803,153 @@
                                 ],
                                 Ve,
                             ),
-                            I = ne('model', re.None),
-                            O = I.onItemClicked,
-                            $ = I.onInfoClicked,
-                            H = W.resourcesFolderName,
-                            z = W.size,
-                            V = W.isSelected,
-                            j = W.showWidget,
-                            q = W.isNew,
-                            G = W.modeName,
-                            Y = W.index,
-                            Z = (0, Be.B)(l),
-                            K = Z[0],
-                            X = Z[1],
-                            Q = (0, r.useMemo)(() => je.S4[z][M], [z, M]),
-                            J = (0, r.useMemo)(() => {
-                                const e = L(H);
+                            M = ne('model', re.None),
+                            P = M.onItemClicked,
+                            I = M.onInfoClicked,
+                            O = T.resourcesFolderName,
+                            $ = T.size,
+                            H = T.isSelected,
+                            z = T.showWidget,
+                            V = T.isNew,
+                            j = T.modeName,
+                            q = T.index,
+                            G = (0, Be.B)(l),
+                            Y = G[0],
+                            Z = G[1],
+                            K = (0, r.useMemo)(() => je.S4[$][L], [$, L]),
+                            X = (0, r.useMemo)(() => {
+                                const e = y(O);
                                 if (null !== e) {
-                                    const t = e.$dyn(`icon_${Q}`);
+                                    const t = e.$dyn(`icon_${K}`);
                                     if (void 0 !== t) return { backgroundImage: `url(${t})` };
                                 }
-                            }, [L, H, Q]),
-                            ee = j || V,
-                            te = je.Hi.includes(z),
-                            ue = z === de.Id.B1,
-                            ae = z === de.Id.B2,
-                            _e = z === de.Id.B3,
-                            ie = je.u_.includes(z),
-                            se = !k.includes(z) && j && g,
-                            oe = ee && !te,
-                            le = K && !te && !ee,
-                            ce = K || (V && p),
-                            be = M !== de.Cg.Big,
-                            ge = F && F.length > 0 && !a && ie,
-                            Ee = (0, r.useMemo)(
+                            }, [y, O, K]),
+                            Q = z || H,
+                            J = je.Hi.includes($),
+                            ee = $ === de.Id.B1,
+                            te = $ === de.Id.B2,
+                            ue = $ === de.Id.B3,
+                            ae = je.u_.includes($),
+                            _e = !S.includes($) && z && d,
+                            ie = Q && !J,
+                            se = Y && !J && !Q,
+                            oe = Y || (H && C),
+                            le = L !== de.Cg.Big,
+                            ce = A && A.length > 0 && !a && ae,
+                            be = (0, r.useMemo)(
                                 () =>
-                                    A
+                                    g
                                         ? R.strings.ranked_battles.rankedBattlesUnreachableView.subtitleText()
-                                        : p || u || void 0,
-                                [A, p, u],
+                                        : C || u || void 0,
+                                [g, C, u],
                             ),
-                            Ae = (0, r.useMemo)(
-                                () => (ie || _e ? a || '' : void 0 === a ? '' : a.replace('\n', ' ')),
-                                [ie, a, _e],
+                            ge = (0, r.useMemo)(
+                                () => (ae || ue ? a || '' : void 0 === a ? '' : a.replace('\n', ' ')),
+                                [ae, a, ue],
                             );
-                        let Ce = '';
-                        ue && _ === Ee ? i && (Ce = (0, U.z4)(i)) : (Ce = (0, U.z4)(_ + D + i));
-                        const Fe = s()(
+                        let Ee = '';
+                        ee && _ === be ? i && (Ee = (0, U.z4)(i)) : (Ee = (0, U.z4)(_ + p + i));
+                        const Ae = s()(
                                 Ve.icon,
-                                Ve[`icon__${Q}`],
-                                P[`icon__${z}`],
-                                !te && Ve.icon__animPrepare,
-                                oe && P[`icon__static__${z}`],
-                                le && P[`icon__anim__${z}`],
+                                Ve[`icon__${K}`],
+                                W[`icon__${$}`],
+                                !J && Ve.icon__animPrepare,
+                                ie && W[`icon__static__${$}`],
+                                se && W[`icon__anim__${$}`],
                             ),
-                            De = s()(Ve.mask, P[`mask__${z}`], oe && Ve.mask__static, le && Ve.mask__anim),
-                            ve = s()(
-                                P.subtitle,
-                                P[`subtitle__${z}`],
-                                (u || !te) && Ve.subtitle__normal,
-                                !ie && Ve.subtitle__noReward,
-                                p && te && Ve.subtitle__statusActive,
-                                p && ee && Ve.subtitle__staticPrepare,
-                                ce && Ve.subtitle__anim,
-                                A && Ve.subtitle__disable,
-                                null == y ? void 0 : y.subtitle,
+                            Ce = s()(Ve.mask, W[`mask__${$}`], ie && Ve.mask__static, se && Ve.mask__anim),
+                            Fe = s()(
+                                W.subtitle,
+                                W[`subtitle__${$}`],
+                                (u || !J) && Ve.subtitle__normal,
+                                !ae && Ve.subtitle__noReward,
+                                C && J && Ve.subtitle__statusActive,
+                                C && Q && Ve.subtitle__staticPrepare,
+                                oe && Ve.subtitle__anim,
+                                g && Ve.subtitle__disable,
+                                null == N ? void 0 : N.subtitle,
                             ),
-                            he = s()(
+                            De = s()(
                                 Ve.statusDescription,
-                                ae && Ve.statusDescription__position,
-                                ie && Ve.statusDescription__color,
+                                te && Ve.statusDescription__position,
+                                ae && Ve.statusDescription__color,
                             ),
-                            xe = s()(P.footer, (K || V) && !j && _e && Ve.footer__anim, null == y ? void 0 : y.footer),
-                            we = s()(P.formatText, P[`formatText__${z}`]),
-                            Se = s()(Ve.darken, j && Ve.darken__show),
-                            ke = s()(
+                            ve = s()(W.footer, (Y || H) && !z && ue && Ve.footer__anim, null == N ? void 0 : N.footer),
+                            he = s()(W.formatText, W[`formatText__${$}`]),
+                            xe = s()(Ve.darken, z && Ve.darken__show),
+                            we = s()(
                                 Ve.widgetOverlay,
-                                !se && Ve.widgetOverlay__hide,
-                                null == y ? void 0 : y.widgetOverlay,
+                                !_e && Ve.widgetOverlay__hide,
+                                null == N ? void 0 : N.widgetOverlay,
                             );
                         return n().createElement(
                             'div',
-                            { className: s()(P.base, P[`base__${z}`]) },
+                            { className: s()(W.base, W[`base__${$}`]) },
                             n().createElement(
                                 fe,
-                                Ge({ onHoverChanged: X, isDisabled: A }, W, {
-                                    onItemClicked: O,
-                                    onInfoClicked: $,
-                                    resourceFolderGetter: L,
+                                Ge({ onHoverChanged: Z, isDisabled: g }, T, {
+                                    onItemClicked: P,
+                                    onInfoClicked: I,
+                                    resourceFolderGetter: y,
                                 }),
-                                ge && n().createElement(Ue, { size: z, rewardsList: F }),
+                                ce && n().createElement(Ue, { size: $, rewardsList: A }),
                                 a &&
                                     n().createElement(
                                         'div',
-                                        { className: s()(P.statusNotActive, P[`statusNotActive__${z}`]) },
-                                        n().createElement(pe.B, { text: Ae, classMix: we }),
+                                        { className: s()(W.statusNotActive, W[`statusNotActive__${$}`]) },
+                                        n().createElement(pe.B, { text: ge, classMix: he }),
                                     ),
-                                n().createElement('div', { className: Se }),
-                                g && n().createElement('div', { className: ke }, g),
+                                n().createElement('div', { className: xe }),
+                                d && n().createElement('div', { className: we }, d),
                                 o,
-                                (!se || x) &&
+                                (!_e || h) &&
                                     n().createElement(
                                         'div',
-                                        { className: De },
-                                        n().createElement('div', { className: Fe, style: J }),
+                                        { className: Ce },
+                                        n().createElement('div', { className: Ae, style: X }),
                                     ),
                                 n().createElement(
                                     'div',
-                                    { className: s()(Ve.name, P.name, P[`name__${z}`], null == y ? void 0 : y.name) },
+                                    { className: s()(Ve.name, W.name, W[`name__${$}`], null == N ? void 0 : N.name) },
                                     t,
-                                    h,
+                                    D,
                                 ),
                                 n().createElement(
                                     'div',
-                                    { className: ve },
-                                    !S && (!ae || A) && n().createElement(pe.B, { classMix: we, text: Ee || '' }),
-                                    Ce &&
-                                        ie &&
-                                        !A &&
-                                        (!se || ie) &&
+                                    { className: Fe },
+                                    !x && (!te || g) && n().createElement(pe.B, { classMix: he, text: be || '' }),
+                                    Ee &&
+                                        ae &&
+                                        !g &&
+                                        (!_e || ae) &&
                                         n().createElement(
                                             'div',
-                                            { className: he },
-                                            n().createElement(pe.B, { classMix: we, text: Ce }),
+                                            { className: De },
+                                            n().createElement(pe.B, { classMix: he, text: Ee }),
                                         ),
                                     n().createElement(
                                         'div',
-                                        { className: s()(Ve.belowStatus, null == y ? void 0 : y.belowStatus) },
-                                        v,
+                                        { className: s()(Ve.belowStatus, null == N ? void 0 : N.belowStatus) },
+                                        B,
                                     ),
                                 ),
                                 i &&
                                     n().createElement(
                                         'div',
-                                        { className: xe },
-                                        n().createElement(pe.B, { classMix: we, text: (0, U.z4)(i) }),
+                                        { className: ve },
+                                        n().createElement(pe.B, { classMix: he, text: (0, U.z4)(i) }),
                                     ),
-                                C &&
-                                    !q &&
+                                E &&
+                                    !V &&
                                     n().createElement(Ne, {
-                                        index: Y,
-                                        text: C,
-                                        isSmall: be,
-                                        classMix: s()(Ve.timeLeft, be && Ve.timeLeft__small),
+                                        index: q,
+                                        text: E,
+                                        isSmall: le,
+                                        classMix: s()(Ve.timeLeft, le && Ve.timeLeft__small),
                                         tooltipId: m,
-                                        isTooltipEnabled: b,
-                                        modeName: G,
+                                        modeName: j,
                                     }),
-                                n().createElement(Te, { modeName: G, isDisabled: A, battlePassState: E }),
+                                n().createElement(Te, { modeName: j, isDisabled: g, battlePassState: b }),
                             ),
                         );
                     },
@@ -5659,8 +5647,6 @@
                                 return n().createElement(Ca, H_({ calendarTooltip: ge.hg, widget: u }, r));
                             case 9:
                                 return n().createElement(O_, H_({ widget: u }, r));
-                            case 10:
-                                return n().createElement(Ye, H_({}, r, { isCalendarTooltipEnabled: !1 }));
                             default:
                                 return n().createElement(Ye, r);
                         }

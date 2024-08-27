@@ -943,13 +943,14 @@
                                     autoplay: !0,
                                     onError: o,
                                 }),
-                            c().createElement(ue, null, c().createElement('div', { className: je }, n)),
-                            c().createElement(
-                                'div',
-                                { className: Ne },
-                                c().createElement('div', { className: ze }),
-                                c().createElement('div', { className: He }, t),
-                            ),
+                            n && c().createElement(ue, null, c().createElement('div', { className: je }, n)),
+                            t &&
+                                c().createElement(
+                                    'div',
+                                    { className: Ne },
+                                    c().createElement('div', { className: ze }),
+                                    c().createElement('div', { className: He }, t),
+                                ),
                         );
                     }),
                     Fe = 'CrewPerksAdditionalApp_base_aa',

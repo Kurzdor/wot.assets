@@ -87,6 +87,18 @@ body {
     left: 197rem;
 }
 
+.App_sense_91 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.tankmen.skills.medium.commander_sixthSense') no-repeat center / contain;
+    position: relative;
+    bottom: 2rem;
+}
+
+.App_role_d7 {
+    display: flex;
+}
+
 .Box_mt__XS_0c {
     margin-top: 4rem;
 }

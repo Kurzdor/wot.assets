@@ -2084,6 +2084,7 @@
                             i = R.images.gui.maps.icons.crystalsInfo.earn,
                             s = (0, n.useMemo)(
                                 () => ({
+                                    level11: a().createElement(We, { text: r.level.descriptionContent.level11() }),
                                     level10: a().createElement(We, { text: r.level.descriptionContent.level10() }),
                                     level9: a().createElement(We, { text: r.level.descriptionContent.level9() }),
                                 }),

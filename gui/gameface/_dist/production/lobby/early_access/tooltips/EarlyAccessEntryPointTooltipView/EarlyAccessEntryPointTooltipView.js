@@ -2540,38 +2540,55 @@
                         lockedUntilQuestsComplete: l,
                         minVehicleLvl: F,
                         maxVehicleLvl: D,
+                        nation: m,
+                        vehicleType: c,
                     }) => {
-                        const m = n !== cu.Active && n !== cu.Completed,
-                            c = t === vu.POST_PROGRESSION,
-                            _ = Ce(A - u),
-                            d = {
-                                backgroundImage: `url( R.images.gui.maps.icons.early_access.tooltips.entryPoint.chapterBackgrounds.c_${r ? 5 : e + 1}${m ? '_disabled' : ''})`,
+                        const _ = n !== cu.Active && n !== cu.Completed,
+                            d = t === vu.POST_PROGRESSION,
+                            B = Ce(A - u),
+                            C = {
+                                backgroundImage: `url( R.images.gui.maps.icons.early_access.tooltips.entryPoint.chapterBackgrounds.c_${r ? 5 : e + 1}${_ ? '_disabled' : ''})`,
                             },
-                            B = c ? je.chapter.postProgressionTitle() : je.chapter.title(),
-                            C = (0, i.useMemo)(
-                                () =>
-                                    c
-                                        ? {
-                                              text: je.chapter.postProgressionSubTitle(),
-                                              binding: { minLvl: pe(F), maxLvl: pe(D) },
-                                          }
-                                        : _.days <= 0
-                                          ? { text: je.chapter.waitForNext(), binding: { time: $e(_) } }
-                                          : { text: je.chapter.since(), binding: Object.assign({}, be(A)) },
-                                [A, c, D, F, _],
-                            ),
-                            g = a()(xe, m && we),
-                            h = {
-                                backgroundImage: `url(${_.days > 0 || c ? R.images.gui.maps.icons.early_access.tooltips.entryPoint.lockerDisabled() : R.images.gui.maps.icons.early_access.tooltips.entryPoint.header.lastHoursIcon()})`,
+                            g = d ? je.chapter.postProgressionTitle() : je.chapter.title(),
+                            h = (0, i.useMemo)(() => {
+                                return d
+                                    ? {
+                                          text: je.chapter.postProgressionSubTitle(),
+                                          binding: {
+                                              text: o().createElement(Du, {
+                                                  text: R.strings.early_access.vehicleInfo.postprogression.vehicleType.$dyn(
+                                                      ((u = c), u.replace(/-/g, '_')),
+                                                  ),
+                                                  format: {
+                                                      binding: {
+                                                          vehicleInfo: o().createElement(Du, {
+                                                              text: R.strings.early_access.vehicleInfo.body(),
+                                                              format: {
+                                                                  binding: { nation: m, minLvl: pe(F), maxLvl: pe(D) },
+                                                              },
+                                                          }),
+                                                      },
+                                                  },
+                                              }),
+                                          },
+                                      }
+                                    : B.days <= 0
+                                      ? { text: je.chapter.waitForNext(), binding: { time: $e(B) } }
+                                      : { text: je.chapter.since(), binding: Object.assign({}, be(A)) };
+                                var u;
+                            }, [A, d, D, F, m, B, c]),
+                            p = a()(xe, _ && we),
+                            b = {
+                                backgroundImage: `url(${B.days > 0 || d ? R.images.gui.maps.icons.early_access.tooltips.entryPoint.lockerDisabled() : R.images.gui.maps.icons.early_access.tooltips.entryPoint.header.lastHoursIcon()})`,
                             },
-                            p = a()(Ge, _.days <= 0 && !c && Ue);
+                            f = a()(Ge, B.days <= 0 && !d && Ue);
                         return o().createElement(
                             'div',
-                            { className: fe, style: d },
+                            { className: fe, style: C },
                             o().createElement('div', { className: ve }),
                             o().createElement(Du, {
-                                className: g,
-                                text: B,
+                                className: p,
+                                text: g,
                                 format: { binding: { number: pe(e + 1) } },
                             }),
                             n === cu.Active &&
@@ -2620,11 +2637,11 @@
                                 o().createElement(
                                     'div',
                                     { className: Ie },
-                                    o().createElement('div', { className: We, style: h }),
+                                    o().createElement('div', { className: We, style: b }),
                                     o().createElement(Du, {
-                                        className: p,
-                                        text: C.text,
-                                        format: { binding: C.binding },
+                                        className: f,
+                                        text: h.text,
+                                        format: { binding: h.binding },
                                     }),
                                 ),
                         );

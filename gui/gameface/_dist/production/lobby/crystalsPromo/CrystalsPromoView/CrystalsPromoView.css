@@ -799,7 +799,7 @@
 
 .HowToEarn_modsList_89 {
     display: flex;
-    margin-left: 50rem;
+    justify-content: center;
     margin-top: 40rem;
 }
 
@@ -839,7 +839,7 @@
 }
 
 .HowToEarn_mod__medium_fe {
-    margin: 0 50rem;
+    margin-left: 50rem;
 }
 
 .HowToEarn_mod__general_47 {

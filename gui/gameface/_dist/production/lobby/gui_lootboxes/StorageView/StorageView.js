@@ -1355,7 +1355,7 @@
                         }
                     },
                     G = (e, u, t = M.left) => e.split(u).reduce(t === M.left ? P : H, []),
-                    U = (() => {
+                    W = (() => {
                         const e = new RegExp(
                             /[\(\u2E80-\u2E99\u2E9B-\u2EF3\u2F00-\u2FD5\u3005\u3007\u3021-\u3029\u3038-\u303B\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFA6D\uFA70-\uFAD9\u{16FE2}\u{16FE3}\u{16FF0}\u{16FF1}\u{20000}-\u{2A6DF}\u{2A700}-\u{2B738}\u{2B740}-\u{2B81D}\u{2B820}-\u{2CEA1}\u{2CEB0}-\u{2EBE0}\u{2F800}-\u{2FA1D}\u{30000}-\u{3134A}]?[\u3002\uFF01\uFF0C\uFF1A\uFF1B\uFF1F]?[ %\+\x2D-9A-Za-\{\}\xA0\xC0-\u0237\u2013\u2014\u2026]+[\)\u2E80-\u2E99\u2E9B-\u2EF3\u2F00-\u2FD5\u3002\u3005\u3007\u3021-\u3029\u3038-\u303B\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFA6D\uFA70-\uFAD9\uFF01\uFF0C\uFF1A\uFF1B\uFF1F\u{16FE2}\u{16FE3}\u{16FF0}\u{16FF1}\u{20000}-\u{2A6DF}\u{2A700}-\u{2B738}\u{2B740}-\u{2B81D}\u{2B820}-\u{2CEA1}\u{2CEB0}-\u{2EBE0}\u{2F800}-\u{2FA1D}\u{30000}-\u{3134A}]?[\u3002\uFF01\uFF0C\uFF1A\uFF1B\uFF1F]?/gmu
                                 .source +
@@ -1376,7 +1376,7 @@
                                 .replace(/ /g, ' ')
                                 .match(e);
                     })(),
-                    W = ['zh_cn', 'zh_sg', 'zh_tw'];
+                    U = ['zh_cn', 'zh_sg', 'zh_tw'];
                 let z;
                 !(function (e) {
                     (e.SHORT_DATE = 'short-date'),
@@ -1454,8 +1454,8 @@
                                                       ? t[e]
                                                       : ((e, u = M.left) => {
                                                             const t = R.strings.settings.LANGUAGE_CODE().toLowerCase();
-                                                            return W.includes(t)
-                                                                ? U(e)
+                                                            return U.includes(t)
+                                                                ? W(e)
                                                                 : ((e, u = M.left) => {
                                                                       let t = [];
                                                                       const n =
@@ -2461,10 +2461,10 @@
                         stage__2: 'BoxRewards_stage__2_9d',
                         stage__3: 'BoxRewards_stage__3_2e',
                     };
-                function Ue(e) {
+                function We(e) {
                     return e;
                 }
-                function We() {
+                function Ue() {
                     return !1;
                 }
                 console.log;
@@ -2620,10 +2620,10 @@
                                                         () =>
                                                             Ve(u.lootboxes.get(), (e) =>
                                                                 Object.assign({}, e, {
-                                                                    bonusGroups: Ve(e.bonusGroups, Ue),
+                                                                    bonusGroups: Ve(e.bonusGroups, We),
                                                                 }),
                                                             ),
-                                                        { equals: We },
+                                                        { equals: Ue },
                                                     ),
                                                     n = (0, Ye.Om)(
                                                         () => {
@@ -2646,7 +2646,7 @@
                                                                   })
                                                                 : void 0;
                                                         },
-                                                        { equals: We },
+                                                        { equals: Ue },
                                                     );
                                                 return Object.assign({}, u, {
                                                     computes: {
@@ -2662,7 +2662,7 @@
                                                 observableModel: {
                                                     array: (u, t) => {
                                                         const n = null != t ? t : s(u),
-                                                            r = ze.LO.box(n, { equals: We });
+                                                            r = ze.LO.box(n, { equals: Ue });
                                                         return (
                                                             'real' === e &&
                                                                 a.subscribe(
@@ -2674,7 +2674,7 @@
                                                     },
                                                     object: (u, t) => {
                                                         const n = null != t ? t : s(u),
-                                                            r = ze.LO.box(n, { equals: We });
+                                                            r = ze.LO.box(n, { equals: Ue });
                                                         return (
                                                             'real' === e &&
                                                                 a.subscribe(
@@ -3771,8 +3771,8 @@
                         disabled: 'LootboxCard_disabled_db',
                         check: 'LootboxCard_check_4f',
                     },
-                    Uu = (e) => (e < 0.5 ? 4 * e * e * e : (e - 1) * (2 * e - 2) * (2 * e - 2) + 1),
-                    Wu = R.strings.lootboxes,
+                    Wu = (e) => (e < 0.5 ? 4 * e * e * e : (e - 1) * (2 * e - 2) * (2 * e - 2) + 1),
+                    Uu = R.strings.lootboxes,
                     zu = s().memo(
                         ({
                             descriptionKey: e,
@@ -3792,7 +3792,7 @@
                                 D = F[0],
                                 B = F[1],
                                 C = (0, E.GS)().mediaSize,
-                                p = null != (d = Wu.userName.$dyn(e)) ? d : Wu.userName.default(),
+                                p = null != (d = Uu.userName.$dyn(e)) ? d : Uu.userName.default(),
                                 g = l()(
                                     Gu.base,
                                     o && Gu.base__selected,
@@ -3806,13 +3806,13 @@
                                     enter: { opacity: 1 },
                                     leave: { opacity: 0 },
                                     delay: 0,
-                                    config: { duration: 300, easing: Uu },
+                                    config: { duration: 300, easing: Wu },
                                 }),
                                 f = (0, lu.useSpring)({
                                     from: { x: 0, opacity: 0 },
                                     to: { x: 0, opacity: 1 },
                                     delay: 0,
-                                    config: { duration: 300, easing: Uu },
+                                    config: { duration: 300, easing: Wu },
                                 }),
                                 x = (0, a.useCallback)(
                                     (e, u) =>
@@ -4381,8 +4381,7 @@
                             (e[(e.TO_SHOP = 1)] = 'TO_SHOP'),
                             (e[(e.TO_NY_CUSTOMIZATION = 2)] = 'TO_NY_CUSTOMIZATION'),
                             (e[(e.TO_SHARDS = 3)] = 'TO_SHARDS'),
-                            (e[(e.TO_REFERRAL = 4)] = 'TO_REFERRAL'),
-                            (e[(e.TO_CUSTOM = 5)] = 'TO_CUSTOM');
+                            (e[(e.TO_REFERRAL = 4)] = 'TO_REFERRAL');
                     })(At || (At = {}));
                 const Ft = {
                         StorageViewing: _t.STORAGE_VIEWING,
@@ -4517,9 +4516,9 @@
                             P = (0, a.useState)(d),
                             H = P[0],
                             G = P[1],
-                            U = (0, a.useState)(!1),
-                            W = U[0],
-                            z = U[1],
+                            W = (0, a.useState)(!1),
+                            U = W[0],
+                            z = W[1],
                             j = (0, a.useState)(Ft.Opening),
                             $ = j[0],
                             K = j[1],
@@ -4703,7 +4702,7 @@
                                                             },
                                                         }),
                                                         s().createElement('div', {
-                                                            className: l()(wt, L === u && W && yt),
+                                                            className: l()(wt, L === u && U && yt),
                                                             style: {
                                                                 backgroundImage: `url('R.images.gui_lootboxes.gui.maps.storage.boxes.${e}_open')`,
                                                             },
@@ -5153,8 +5152,7 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
-                        (e.RacesPoint = 'races_point');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
                 })(o || (o = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -5289,7 +5287,6 @@
                     o.Crystal,
                     o.FreeXp,
                     o.BattlePassPoints,
-                    o.RacesPoint,
                     o.PremiumPlus,
                     o.Premium,
                     ((y = B || (B = {})).Active = 'active'),

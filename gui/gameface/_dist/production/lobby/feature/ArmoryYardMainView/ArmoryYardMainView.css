@@ -823,7 +823,6 @@
     width: 44rem;
     height: 44rem;
     margin-top: 10rem;
-    background-image: url('R.images.armory_yard.gui.maps.icons.token.s44');
 }
 
 .ChapterToken_base__disabled_70 .ChapterToken_icon_9a {
@@ -837,6 +836,14 @@
     width: 32rem;
     height: 40rem;
     margin-top: 12rem;
+}
+
+.ChapterToken_icon__freeToken_7b {
+    background-image: url('R.images.armory_yard.gui.maps.icons.token.sf28');
+}
+
+.mediaMedium .ChapterToken_icon__freeToken_7b {
+    background-image: url('R.images.armory_yard.gui.maps.icons.token.sf44');
 }
 
 .ChapterToken_progress_54 {
@@ -1548,10 +1555,19 @@
     z-index: 1;
 }
 
+.QuestToken_icon__freeToken_81 {
+    background-image: url('R.images.armory_yard.gui.maps.icons.token.sf14');
+}
+
 .mediaMedium .QuestToken_icon_c0 {
     width: 18rem;
     height: 20rem;
     background-image: url('R.images.armory_yard.gui.maps.icons.token.s20');
+}
+
+.mediaMedium .QuestToken_icon__freeToken_81 {
+    width: 20rem;
+    background-image: url('R.images.armory_yard.gui.maps.icons.token.sf20');
 }
 
 .Reward_base_ea {
@@ -2385,12 +2401,24 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 119rem;
 }
 
+.Banner_defaultBannerArt__freeToken_06 {
+    height: 122rem;
+    background-image: url('R.images.armory_yard.gui.maps.icons.banner.small.default_banner_token_art');
+    right: 102rem;
+}
+
 .mediaMedium .Banner_defaultBannerArt_c3 {
     width: 318rem;
     height: 186rem;
     background: url('R.images.armory_yard.gui.maps.icons.banner.big.default_banner_art') center / contain no-repeat;
     top: -41rem;
     right: 178rem;
+}
+
+.mediaMedium .Banner_defaultBannerArt__freeToken_06 {
+    height: 206rem;
+    background-image: url('R.images.armory_yard.gui.maps.icons.banner.big.default_banner_token_art');
+    right: 170rem;
 }
 
 .Banner_hoverBannerGlow_2f {
@@ -2451,12 +2479,24 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: 119rem;
 }
 
+.Banner_hoverBannerArt__freeToken_d2 {
+    height: 122rem;
+    background-image: url('R.images.armory_yard.gui.maps.icons.banner.small.hover_banner_token_art');
+    right: 102rem;
+}
+
 .mediaMedium .Banner_hoverBannerArt_db {
     width: 318rem;
     height: 186rem;
     background: url('R.images.armory_yard.gui.maps.icons.banner.big.hover_banner_art') center / contain no-repeat;
     top: -41rem;
     right: 178rem;
+}
+
+.mediaMedium .Banner_hoverBannerArt__freeToken_d2 {
+    height: 206rem;
+    background-image: url('R.images.armory_yard.gui.maps.icons.banner.big.hover_banner_token_art');
+    right: 170rem;
 }
 
 .Banner_content_58 {

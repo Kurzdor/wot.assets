@@ -2048,8 +2048,7 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
-                        (e.RacesPoint = 'races_point');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
                 })(Oe || (Oe = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -2190,7 +2189,7 @@
                         Oe.CosmicLootboxSilver,
                     ],
                     je = [Oe.Gold, Oe.Credits, Oe.Crystal, Oe.FreeXp],
-                    Ye = [Oe.BattlePassPoints, Oe.RacesPoint],
+                    Ye = [Oe.BattlePassPoints],
                     qe = [Oe.PremiumPlus, Oe.Premium],
                     Xe = ['engravings', 'backgrounds'],
                     Ke = ['engraving', 'background'],

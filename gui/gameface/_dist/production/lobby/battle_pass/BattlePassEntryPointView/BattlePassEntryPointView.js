@@ -2544,8 +2544,7 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
-                        (e.RacesPoint = 'races_point');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
                 })(We || (We = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -2688,7 +2687,6 @@
                     We.Crystal,
                     We.FreeXp,
                     We.BattlePassPoints,
-                    We.RacesPoint,
                     We.PremiumPlus,
                     We.Premium;
                 let Ye, Ke;

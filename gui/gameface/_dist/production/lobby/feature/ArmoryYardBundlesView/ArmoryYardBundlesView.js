@@ -1298,9 +1298,9 @@
                             M = u.flexWrap,
                             L = void 0 === M ? (S ? 'wrap' : void 0) : M,
                             P = u.grow,
-                            R = u.shrink,
-                            O = u.flex,
-                            k = void 0 === O ? (P || R ? `${P ? 1 : 0} ${R ? 1 : 0} auto` : void 0) : O,
+                            O = u.shrink,
+                            R = u.flex,
+                            k = void 0 === R ? (P || O ? `${P ? 1 : 0} ${O ? 1 : 0} auto` : void 0) : R,
                             N = u.style,
                             H = u.children,
                             I = (function (u, e) {
@@ -2072,7 +2072,7 @@
                     };
                 yu.defaultProps = { isEnough: !0 };
                 const Tu = n().memo(yu);
-                let Su, Mu, Lu, Pu, Ru, Ou, ku, Nu;
+                let Su, Mu, Lu, Pu, Ou, Ru, ku, Nu;
                 !(function (u) {
                     (u.Items = 'items'),
                         (u.Equipment = 'equipment'),
@@ -2122,8 +2122,7 @@
                         (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.CosmicLootboxSilver = 'lootBoxToken'),
-                        (u.CosmicLootboxCommon = 'cosmic_2024_2'),
-                        (u.RacesPoint = 'races_point');
+                        (u.CosmicLootboxCommon = 'cosmic_2024_2');
                 })(Su || (Su = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -2198,10 +2197,10 @@
                             (u.PROGRESSION_STYLE_UPGRADED_2 = 'progressionStyleUpgraded_2'),
                             (u.PROGRESSION_STYLE_UPGRADED_3 = 'progressionStyleUpgraded_3'),
                             (u.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4');
-                    })(Ru || (Ru = {})),
+                    })(Ou || (Ou = {})),
                     (function (u) {
                         u.BATTLE_BOOSTER = 'battleBooster';
-                    })(Ou || (Ou = {})),
+                    })(Ru || (Ru = {})),
                     (function (u) {
                         (u.BATTLE_BOOSTER = 'battleBooster'),
                             (u.BATTLE_BOOSTER_REPLACE = 'battleBoosterReplace'),
@@ -2992,8 +2991,8 @@
                             ),
                         );
                     }),
-                    Re = 'Header_subtitle_4b',
-                    Oe = 'Header_subtitle__bottom_cf',
+                    Oe = 'Header_subtitle_4b',
+                    Re = 'Header_subtitle__bottom_cf',
                     ke = R.strings.armory_yard.bundles,
                     Ne = 'WHITE_ORANGE',
                     He = n().memo(({ currentLevel: u }) =>
@@ -3010,24 +3009,24 @@
                                 K,
                                 { className: 'Header_subtitleWrapper_12' },
                                 n().createElement(ee, {
-                                    className: C()(Re, 'Header_subtitle__one_57'),
+                                    className: C()(Oe, 'Header_subtitle__one_57'),
                                     text: ke.subtitleOne(),
                                     color: Ne,
                                 }),
                                 n().createElement(ee, {
-                                    className: Re,
+                                    className: Oe,
                                     text: ke.subtitleOptions(),
                                     format: {
                                         binding: {
                                             firstSubtitle: n().createElement(ee, {
-                                                className: C()(Re, Oe),
+                                                className: C()(Oe, Re),
                                                 text: ke.subtitleTwo(),
                                                 color: Ne,
                                             }),
                                             secondSubtitle:
                                                 u > 0
                                                     ? n().createElement(ee, {
-                                                          className: C()(Re, Oe),
+                                                          className: C()(Oe, Re),
                                                           text: ke.subtitleThree(),
                                                           color: Ne,
                                                       })

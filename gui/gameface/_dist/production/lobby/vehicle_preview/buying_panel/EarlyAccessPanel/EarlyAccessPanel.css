@@ -301,6 +301,20 @@
     align-items: center;
 }
 
+.App_blockedIcon_78 {
+    width: 154rem;
+    height: 46rem;
+    background: url('R.images.gui.maps.icons.library.EaSoonIcon') no-repeat center / contain;
+    position: relative;
+}
+
+.App_titleCentered_9f {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 5rem;
+}
+
 html {
     overflow: hidden;
 }

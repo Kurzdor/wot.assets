@@ -351,8 +351,7 @@
                             (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (e.BattleBoosterGift = 'battleBooster_gift'),
                             (e.CosmicLootboxSilver = 'lootBoxToken'),
-                            (e.CosmicLootboxCommon = 'cosmic_2024_2'),
-                            (e.RacesPoint = 'races_point');
+                            (e.CosmicLootboxCommon = 'cosmic_2024_2');
                     })(n || (n = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -499,7 +498,7 @@
                         o.E4.CosmicLootboxSilver,
                     ],
                     c = [o.E4.Gold, o.E4.Credits, o.E4.Crystal, o.E4.FreeXp],
-                    u = [o.E4.BattlePassPoints, o.E4.RacesPoint],
+                    u = [o.E4.BattlePassPoints],
                     d = [o.E4.PremiumPlus, o.E4.Premium],
                     _ = (e) =>
                         l.includes(e)
@@ -896,8 +895,8 @@
                             f = e.targetId,
                             R = void 0 === f ? 0 : f,
                             S = e.onShow,
-                            P = e.onHide,
-                            T = (function (e, t) {
+                            T = e.onHide,
+                            P = (function (e, t) {
                                 if (null == e) return {};
                                 var r,
                                     n,
@@ -919,10 +918,10 @@
                                     const e = O.current.timeoutId;
                                     e > 0 && (clearTimeout(e), (O.current.timeoutId = 0)),
                                         l(r, v, { on: !1 }, y),
-                                        O.current.isVisible && P && P(),
+                                        O.current.isVisible && T && T(),
                                         (O.current.isVisible = !1);
                                 }
-                            }, [r, v, y, P]),
+                            }, [r, v, y, T]),
                             L = (0, i.useCallback)((e) => {
                                 O.current.isVisible &&
                                     ((O.current.prevTarget = document.elementFromPoint(e.clientX, e.clientY)),
@@ -978,7 +977,7 @@
                                                   !1 === E && x(), null == d || d(t), null == e || e(t);
                                               })(t.props.onMouseDown),
                                           },
-                                          T,
+                                          P,
                                       ),
                                   )
                                 : t
@@ -1370,13 +1369,13 @@
                         addPreloadTexture: () => o,
                         children: () => n,
                         displayStatus: () => a.W,
-                        displayStatusIs: () => T,
+                        displayStatusIs: () => P,
                         events: () => i.U,
                         extraSize: () => O,
                         forceTriggerMouseMove: () => S,
                         freezeTextureBeforeResize: () => h,
                         getBrowserTexturePath: () => c,
-                        getDisplayStatus: () => P,
+                        getDisplayStatus: () => T,
                         getScale: () => E,
                         getSize: () => _,
                         getViewGlobalPosition: () => g,
@@ -1448,10 +1447,10 @@
                 function S() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function P() {
+                function T() {
                     return viewEnv.getShowingStatus();
                 }
-                const T = Object.keys(a.W).reduce(
+                const P = Object.keys(a.W).reduce(
                         (e, t) => ((e[t] = () => viewEnv.getShowingStatus() === a.W[t]), e),
                         {},
                     ),
@@ -1981,11 +1980,11 @@
                     S = (e, t) => {
                         e.keyCode === g.n.ESCAPE && t();
                     };
-                var P = r(7572);
-                const T = a.instance,
+                var T = r(7572);
+                const P = a.instance,
                     O = {
                         DataTracker: i.Z,
-                        ViewModel: P.Z,
+                        ViewModel: T.Z,
                         ViewEventType: l,
                         NumberFormatType: u,
                         RealFormatType: d,
@@ -2061,7 +2060,7 @@
                                 }
                             return r;
                         },
-                        ClickOutsideManager: T,
+                        ClickOutsideManager: P,
                         SystemLocale: s,
                         UserLocale: o,
                     };
@@ -2291,8 +2290,8 @@
                     onMouseDown: b,
                     children: f,
                     soundHover: S,
-                    soundClick: P,
-                    counter: T,
+                    soundClick: T,
+                    counter: P,
                     tokensCount: O = 0,
                 }) => {
                     const y = (0, n.useState)(!1),
@@ -2340,7 +2339,7 @@
                                 _ || (C(e, t), 0 === t.button && N(!1));
                             })(w),
                             onClick: ((e) => (t) => {
-                                _ || ((0, u.G)(P), C(e, t));
+                                _ || ((0, u.G)(T), C(e, t));
                             })(E),
                         },
                         m &&
@@ -2371,12 +2370,12 @@
                                         : a().createElement('div', { className: d.count }, t),
                                     a().createElement('div', { className: d.label }, e),
                                 ),
-                            Boolean(T) &&
+                            Boolean(P) &&
                                 !_ &&
                                 a().createElement(
                                     'div',
                                     { className: d.counter },
-                                    a().createElement(l.A, { value: T }),
+                                    a().createElement(l.A, { value: P }),
                                 ),
                             O > 0 &&
                                 a().createElement(
@@ -2410,11 +2409,11 @@
                     b = r(2862),
                     f = r(5415),
                     S = r(1558);
-                let P;
+                let T;
                 !(function (e) {
                     (e.Static = 'static'), (e.Claimable = 'claimable');
-                })(P || (P = {}));
-                var T = r(5989);
+                })(T || (T = {}));
+                var P = r(5989);
                 const O = (0, n.memo)(
                         ({
                             claimState: e,
@@ -2428,7 +2427,7 @@
                             isBattlePassRewardDisable: d,
                             classMix: _,
                         }) => {
-                            const m = e === P.Claimable;
+                            const m = e === T.Claimable;
                             return a().createElement(
                                 'div',
                                 {
@@ -2446,7 +2445,7 @@
                                         a().createElement('div', { className: 'FrontlineReward_glow_0d' }),
                                         a().createElement('div', { className: 'FrontlineReward_glowReverse_42' }),
                                     ),
-                                a().createElement(T.I, {
+                                a().createElement(P.I, {
                                     item: i.ob.RewardTooltip,
                                     info: t,
                                     parentScreen: i.RM.RewardsView,

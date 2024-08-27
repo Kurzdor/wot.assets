@@ -1,559 +1,3 @@
-.Box_mt__XS_0c {
-    margin-top: 4rem;
-}
-.Box_mt__SM_eb {
-    margin-top: 8rem;
-}
-.Box_mt__SMp_cf {
-    margin-top: 10rem;
-}
-.Box_mt__MD_25 {
-    margin-top: 16rem;
-}
-.Box_mt__MDp_49 {
-    margin-top: 20rem;
-}
-.Box_mt__LG_e8 {
-    margin-top: 32rem;
-}
-.Box_mt__XL_83 {
-    margin-top: 64rem;
-}
-
-.Box_mr__XS_7c {
-    margin-right: 4rem;
-}
-
-.Box_mr__SM_08 {
-    margin-right: 8rem;
-}
-
-.Box_mr__SMp_06 {
-    margin-right: 10rem;
-}
-
-.Box_mr__MD_4a {
-    margin-right: 16rem;
-}
-
-.Box_mr__MDp_b6 {
-    margin-right: 20rem;
-}
-
-.Box_mr__LG_d0 {
-    margin-right: 32rem;
-}
-
-.Box_mr__XL_db {
-    margin-right: 64rem;
-}
-
-.Box_mb__XS_bb {
-    margin-bottom: 4rem;
-}
-
-.Box_mb__SM_83 {
-    margin-bottom: 8rem;
-}
-
-.Box_mb__SMp_04 {
-    margin-bottom: 10rem;
-}
-
-.Box_mb__MD_ed {
-    margin-bottom: 16rem;
-}
-
-.Box_mb__MDp_65 {
-    margin-bottom: 20rem;
-}
-
-.Box_mb__LG_c8 {
-    margin-bottom: 32rem;
-}
-
-.Box_mb__XL_f8 {
-    margin-bottom: 64rem;
-}
-
-.Box_ml__XS_8a {
-    margin-left: 4rem;
-}
-
-.Box_ml__SM_e6 {
-    margin-left: 8rem;
-}
-
-.Box_ml__SMp_fb {
-    margin-left: 10rem;
-}
-
-.Box_ml__MD_2b {
-    margin-left: 16rem;
-}
-
-.Box_ml__MDp_c7 {
-    margin-left: 20rem;
-}
-
-.Box_ml__LG_39 {
-    margin-left: 32rem;
-}
-
-.Box_ml__XL_4a {
-    margin-left: 64rem;
-}
-
-.FormatText_base_d0 {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* eslint-disable-next-line expectedscss*/
-.Text_paragraph-P10_2c {
-    font-size: 10rem;
-    font-weight: 400;
-    line-height: 1.2;
-}
-.Text_paragraph-P12_22 {
-    font-size: 12rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
-.Text_paragraph-P14_a7 {
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
-.Text_paragraph-P16_90 {
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-}
-.Text_paragraph-P18_50 {
-    font-size: 18rem;
-    font-weight: 400;
-    line-height: 1.25;
-}
-.Text_paragraph-P24_33 {
-    font-size: 24rem;
-    font-weight: 400;
-    line-height: 32rem;
-}
-.Text_heading-H14_8b {
-    font-size: 14rem;
-    font-weight: 700;
-    line-height: 1.15;
-}
-.Text_heading-H15_9e {
-    font-size: 15rem;
-    font-weight: 700;
-    line-height: 1.15;
-}
-.Text_heading-H18_b7 {
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-.Text_heading-H20R_f6 {
-    font-size: 20rem;
-    font-weight: 400;
-    line-height: 1.2;
-}
-.Text_heading-H22_27 {
-    font-size: 22rem;
-    font-weight: 700;
-    line-height: 1.2;
-}
-.Text_heading-H24R_be {
-    font-size: 24rem;
-    font-weight: 400;
-    line-height: 1.2;
-}
-.Text_heading-H24_0c {
-    font-size: 24rem;
-    font-weight: 700;
-    line-height: 1.2;
-}
-.Text_heading-H28_78 {
-    font-size: 28rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-.Text_heading-H36_32 {
-    font-size: 36rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-.Text_heading-H56_c3 {
-    font-size: 56rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-.Text_heading-H73_8f {
-    font-size: 73rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-.Text_heading-H144_a9 {
-    font-size: 144rem;
-    font-weight: 700;
-    line-height: 1;
-}
-.Text_BLACK_REAL_30 {
-    color: #000000;
-}
-.Text_WHITE_REAL_bc {
-    color: #ffffff;
-}
-.Text_WHITE_62 {
-    color: #f2f2f7;
-}
-.Text_WHITE_ORANGE_54 {
-    color: #fefeec;
-}
-.Text_WHITE_SPANISH_df {
-    color: #e9e2bf;
-}
-.Text_PAR_15 {
-    color: #8c8c7e;
-}
-.Text_PAR_SECONDARY_5d {
-    color: #595950;
-}
-.Text_PAR_TERTIARY_c9 {
-    color: #37362e;
-}
-.Text_INFO_RED_30 {
-    color: #ff0000;
-}
-.Text_RED_66 {
-    color: #ff2717;
-}
-.Text_RED_DARK_d8 {
-    color: #b70000;
-}
-.Text_YELLOW_ed {
-    color: #feab34;
-}
-.Text_ORANGE_be {
-    color: #ee7000;
-}
-.Text_CREAM_57 {
-    color: #ffdd99;
-}
-.Text_BROWN_18 {
-    color: #cbac77;
-}
-.Text_GREEN_BRIGHT_3f {
-    color: #80d43a;
-}
-.Text_GREEN_e3 {
-    color: #7ab300;
-}
-.Text_GREEN_DARK_f1 {
-    color: #497212;
-}
-.Text_BLUE_BOOSTER_21 {
-    color: #ccffff;
-}
-.Text_BLUE_TEAMKILLER_ab {
-    color: #09e2ff;
-}
-.Text_CRED_f7 {
-    color: #ced9d9;
-}
-.Text_GOLD_28 {
-    color: #ffc363;
-}
-.Text_BOND_be {
-    color: #c9c9b6;
-}
-.Text_PROM_65 {
-    color: #a29b70;
-}
-
-.TextButton_base_b6 {
-    display: flex;
-    align-items: center;
-    padding: 0 3rem;
-    font-size: 12rem;
-    position: relative;
-    cursor: pointer;
-}
-
-.TextButton_base__right_39 {
-    flex-direction: row-reverse;
-}
-.TextButton_icon_17 {
-    width: 32rem;
-    height: 32rem;
-    background: no-repeat center / contain;
-    position: relative;
-}
-.TextButton_icon__back_43,
-.TextButton_icon__forward_59 {
-    margin: -1rem -5rem;
-    background-image: url('R.images.gui.maps.icons.components.text_button.back');
-    transform: translateY(1rem);
-}
-.TextButton_icon__forward_59 {
-    transform: rotate(180deg) translateY(1rem);
-}
-.TextButton_icon__close_53 {
-    margin: -1rem 0;
-    background-image: url('R.images.gui.maps.icons.components.text_button.close');
-}
-.TextButton_icon__info_33 {
-    margin: -1rem -5rem;
-    background-image: url('R.images.gui.maps.icons.components.text_button.info');
-}
-.TextButton_glow_a4 {
-    width: 100%;
-    height: 100%;
-    background: no-repeat center / contain;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    transition: opacity 0.16s;
-}
-.TextButton_icon__back_43 .TextButton_glow_a4,
-.TextButton_icon__forward_59 .TextButton_glow_a4 {
-    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
-}
-.TextButton_icon__close_53 .TextButton_glow_a4 {
-    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
-}
-.TextButton_icon__info_33 .TextButton_glow_a4 {
-    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
-}
-.TextButton_base_b6:hover .TextButton_glow_a4 {
-    opacity: 1;
-}
-.TextButton_base_b6:active .TextButton_glow_a4 {
-    opacity: 0;
-}
-.TextButton_caption_82 {
-    position: relative;
-    transition:
-        color 0.16s,
-        text-shadow 0.16s;
-}
-.TextButton_caption__back_b9,
-.TextButton_caption__forward_4e,
-.TextButton_caption__close_36 {
-    color: #ffdd99;
-    text-shadow:
-        0 0 10rem rgba(255, 42, 0, 1),
-        0 0 10rem rgba(255, 42, 0, 0.4),
-        0 0 10rem rgba(255, 42, 0, 0.4),
-        0 0 2rem rgba(255, 42, 0, 0.4),
-        0 0 1rem rgba(255, 42, 0, 0.4),
-        0 0 2rem rgba(255, 42, 0, 0.4),
-        0 0 1rem rgba(255, 42, 0, 0.4);
-}
-.TextButton_base_b6:hover .TextButton_caption__back_b9,
-.TextButton_base_b6:hover .TextButton_caption__forward_4e,
-.TextButton_base_b6:hover .TextButton_caption__close_36 {
-    color: #fffa9f;
-}
-.TextButton_base_b6:active .TextButton_caption__back_b9,
-.TextButton_base_b6:active .TextButton_caption__forward_4e,
-.TextButton_base_b6:active .TextButton_caption__close_36 {
-    color: #ffdd99;
-}
-.TextButton_caption__info_23 {
-    padding: 0 5rem;
-    color: #ccffff;
-    text-shadow:
-        0 0 12rem rgba(31, 68, 255, 0.8),
-        0 0 8rem #00eaff;
-}
-.TextButton_base_b6:hover .TextButton_caption__info_23 {
-    color: #e3ffff;
-    text-shadow:
-        0 0 12rem rgba(31, 68, 255, 0.8),
-        0 0 12rem rgba(0, 234, 255, 1),
-        0 0 8rem #00eaff;
-}
-.TextButton_base_b6:active .TextButton_caption__info_23 {
-    color: #ccffff;
-    text-shadow:
-        0 0 12rem rgba(31, 68, 255, 0.6),
-        0 0 8rem #00eaff;
-}
-.TextButton_goto_e7 {
-    color: #7c7c6c;
-}
-.TextButton_base__left_ff .TextButton_goto_e7 {
-    margin-left: 8rem;
-}
-.TextButton_base__right_39 .TextButton_goto_e7 {
-    margin-right: 8rem;
-}
-.TextButton_shine_e2 {
-    width: 90rem;
-    height: 40rem;
-    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
-    opacity: 0;
-    position: absolute;
-    top: -4rem;
-    transition: opacity 0.16s;
-    pointer-events: none;
-}
-.TextButton_base__left_ff .TextButton_shine_e2 {
-    left: -4rem;
-}
-.TextButton_base__right_39 .TextButton_shine_e2 {
-    right: -4rem;
-    transform: rotate(180deg);
-}
-.TextButton_base_b6:hover .TextButton_shine_e2 {
-    opacity: 1;
-}
-.TextButton_base_b6:active .TextButton_shine_e2 {
-    opacity: 0;
-}
-
-.Header_base_9c {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    padding: 20rem 30rem 0;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-}
-
-.mediaMedium .Header_base_9c {
-    padding: 27rem 42rem 0;
-}
-
-.Header_container_21 {
-    width: 100%;
-    position: relative;
-}
-
-.Header_infoLinkWithBackButton_5f {
-    position: absolute;
-}
-
-.Header_mainText_d6 {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
-.Header_closeLink_df {
-    position: absolute;
-    right: 0;
-}
-
-.InfoLinkWithBackButton_base_1e {
-    display: flex;
-    flex-direction: column;
-}
-
-.mediaMedium .InfoLinkWithBackButton_base_1e {
-    flex-direction: row-reverse;
-}
-
-.mediaMedium .InfoLinkWithBackButton_backButton_f7 {
-    margin-right: 12rem;
-}
-
-.MainText_base_a4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: -5rem;
-}
-.mediaMedium .MainText_base_a4 {
-    margin-top: 0;
-}
-.mediaExtraLarge .MainText_base_a4 {
-    margin-top: 10rem;
-}
-
-.MainText_subtitle_d1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8rem;
-}
-
-.MainText_featureState_a2 {
-    color: #f2f2f7;
-    font-size: 15rem;
-    font-weight: 700;
-    line-height: 1.15;
-    opacity: 0.8;
-}
-
-.mediaMedium .MainText_featureState_a2 {
-    color: #f2f2f7;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.MainText_date_8b {
-    color: #f2f2f7;
-    font-size: 15rem;
-    font-weight: 700;
-    line-height: 1.15;
-    opacity: 0.8;
-}
-
-.mediaMedium .MainText_date_8b {
-    color: #f2f2f7;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.MainText_separator_cb {
-    width: 2rem;
-    height: 12rem;
-    margin: 0 12rem;
-    background-color: #ffffff;
-    opacity: 0.2;
-}
-
-.mediaMedium .MainText_separator_cb {
-    height: 20rem;
-}
-
-.MainText_gradientText_86 {
-    position: relative;
-}
-
-.MainText_title_09 {
-    color: #f2f2f7;
-    font-size: 28rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-top: -4rem;
-}
-
-.mediaMedium .MainText_title_09 {
-    margin-top: 2rem;
-    color: #f2f2f7;
-    font-size: 36rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.mediaExtraLarge .MainText_title_09 {
-    color: #f2f2f7;
-    font-size: 56rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
 .CButton_base_40 {
     display: flex;
     justify-content: center;
@@ -1026,6 +470,281 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translateY(17rem);
 }
 
+.Box_mt__XS_0c {
+    margin-top: 4rem;
+}
+.Box_mt__SM_eb {
+    margin-top: 8rem;
+}
+.Box_mt__SMp_cf {
+    margin-top: 10rem;
+}
+.Box_mt__MD_25 {
+    margin-top: 16rem;
+}
+.Box_mt__MDp_49 {
+    margin-top: 20rem;
+}
+.Box_mt__LG_e8 {
+    margin-top: 32rem;
+}
+.Box_mt__XL_83 {
+    margin-top: 64rem;
+}
+
+.Box_mr__XS_7c {
+    margin-right: 4rem;
+}
+
+.Box_mr__SM_08 {
+    margin-right: 8rem;
+}
+
+.Box_mr__SMp_06 {
+    margin-right: 10rem;
+}
+
+.Box_mr__MD_4a {
+    margin-right: 16rem;
+}
+
+.Box_mr__MDp_b6 {
+    margin-right: 20rem;
+}
+
+.Box_mr__LG_d0 {
+    margin-right: 32rem;
+}
+
+.Box_mr__XL_db {
+    margin-right: 64rem;
+}
+
+.Box_mb__XS_bb {
+    margin-bottom: 4rem;
+}
+
+.Box_mb__SM_83 {
+    margin-bottom: 8rem;
+}
+
+.Box_mb__SMp_04 {
+    margin-bottom: 10rem;
+}
+
+.Box_mb__MD_ed {
+    margin-bottom: 16rem;
+}
+
+.Box_mb__MDp_65 {
+    margin-bottom: 20rem;
+}
+
+.Box_mb__LG_c8 {
+    margin-bottom: 32rem;
+}
+
+.Box_mb__XL_f8 {
+    margin-bottom: 64rem;
+}
+
+.Box_ml__XS_8a {
+    margin-left: 4rem;
+}
+
+.Box_ml__SM_e6 {
+    margin-left: 8rem;
+}
+
+.Box_ml__SMp_fb {
+    margin-left: 10rem;
+}
+
+.Box_ml__MD_2b {
+    margin-left: 16rem;
+}
+
+.Box_ml__MDp_c7 {
+    margin-left: 20rem;
+}
+
+.Box_ml__LG_39 {
+    margin-left: 32rem;
+}
+
+.Box_ml__XL_4a {
+    margin-left: 64rem;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* eslint-disable-next-line expectedscss*/
+.Text_paragraph-P10_2c {
+    font-size: 10rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_paragraph-P12_22 {
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Text_paragraph-P14_a7 {
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Text_paragraph-P16_90 {
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Text_paragraph-P18_50 {
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Text_paragraph-P24_33 {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 32rem;
+}
+.Text_heading-H14_8b {
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.Text_heading-H15_9e {
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.Text_heading-H18_b7 {
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H20R_f6 {
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H22_27 {
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H24R_be {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H24_0c {
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H28_78 {
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H36_32 {
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H56_c3 {
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H73_8f {
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H144_a9 {
+    font-size: 144rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.Text_BLACK_REAL_30 {
+    color: #000000;
+}
+.Text_WHITE_REAL_bc {
+    color: #ffffff;
+}
+.Text_WHITE_62 {
+    color: #f2f2f7;
+}
+.Text_WHITE_ORANGE_54 {
+    color: #fefeec;
+}
+.Text_WHITE_SPANISH_df {
+    color: #e9e2bf;
+}
+.Text_PAR_15 {
+    color: #8c8c7e;
+}
+.Text_PAR_SECONDARY_5d {
+    color: #595950;
+}
+.Text_PAR_TERTIARY_c9 {
+    color: #37362e;
+}
+.Text_INFO_RED_30 {
+    color: #ff0000;
+}
+.Text_RED_66 {
+    color: #ff2717;
+}
+.Text_RED_DARK_d8 {
+    color: #b70000;
+}
+.Text_YELLOW_ed {
+    color: #feab34;
+}
+.Text_ORANGE_be {
+    color: #ee7000;
+}
+.Text_CREAM_57 {
+    color: #ffdd99;
+}
+.Text_BROWN_18 {
+    color: #cbac77;
+}
+.Text_GREEN_BRIGHT_3f {
+    color: #80d43a;
+}
+.Text_GREEN_e3 {
+    color: #7ab300;
+}
+.Text_GREEN_DARK_f1 {
+    color: #497212;
+}
+.Text_BLUE_BOOSTER_21 {
+    color: #ccffff;
+}
+.Text_BLUE_TEAMKILLER_ab {
+    color: #09e2ff;
+}
+.Text_CRED_f7 {
+    color: #ced9d9;
+}
+.Text_GOLD_28 {
+    color: #ffc363;
+}
+.Text_BOND_be {
+    color: #c9c9b6;
+}
+.Text_PROM_65 {
+    color: #a29b70;
+}
+
 .PurchaseConfirm_base_c0 {
     display: flex;
     flex-direction: column;
@@ -1200,6 +919,287 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .SuccessWindow_button_24 {
     width: 170rem;
+}
+
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+.TextButton_icon__forward_59 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
+.TextButton_icon__close_53 {
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
+.TextButton_icon__info_33 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_glow_a4 {
+    opacity: 0;
+}
+.TextButton_caption_82 {
+    position: relative;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
+}
+.TextButton_caption__back_b9,
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
+.TextButton_caption__info_23 {
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+    margin-left: 8rem;
+}
+.TextButton_base__right_39 .TextButton_goto_e7 {
+    margin-right: 8rem;
+}
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity 0.16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+    left: -4rem;
+}
+.TextButton_base__right_39 .TextButton_shine_e2 {
+    right: -4rem;
+    transform: rotate(180deg);
+}
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_shine_e2 {
+    opacity: 0;
+}
+
+.Header_base_9c {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20rem 30rem 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.mediaMedium .Header_base_9c {
+    padding: 27rem 42rem 0;
+}
+
+.Header_container_21 {
+    width: 100%;
+    position: relative;
+}
+
+.Header_infoLinkWithBackButton_5f {
+    position: absolute;
+}
+
+.Header_mainText_d6 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.Header_closeLink_df {
+    position: absolute;
+    right: 0;
+}
+
+.InfoLinkWithBackButton_base_1e {
+    display: flex;
+    flex-direction: column;
+}
+
+.mediaMedium .InfoLinkWithBackButton_base_1e {
+    flex-direction: row-reverse;
+}
+
+.mediaMedium .InfoLinkWithBackButton_backButton_f7 {
+    margin-right: 12rem;
+}
+
+.MainText_base_a4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5rem;
+}
+.mediaMedium .MainText_base_a4 {
+    margin-top: 0;
+}
+.mediaExtraLarge .MainText_base_a4 {
+    margin-top: 10rem;
+}
+
+.MainText_subtitle_d1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.MainText_featureState_a2 {
+    color: #f2f2f7;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    opacity: 0.8;
+}
+
+.mediaMedium .MainText_featureState_a2 {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.MainText_date_8b {
+    color: #f2f2f7;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    opacity: 0.8;
+}
+
+.mediaMedium .MainText_date_8b {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.MainText_separator_cb {
+    width: 2rem;
+    height: 12rem;
+    margin: 0 12rem;
+    background-color: #ffffff;
+    opacity: 0.2;
+}
+
+.mediaMedium .MainText_separator_cb {
+    height: 20rem;
+}
+
+.MainText_gradientText_86 {
+    position: relative;
+}
+
+.MainText_title_09 {
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: -4rem;
+}
+
+.mediaMedium .MainText_title_09 {
+    margin-top: 2rem;
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaExtraLarge .MainText_title_09 {
+    color: #f2f2f7;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .HorizontalBar_base_49 {
@@ -1407,7 +1407,296 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex: 1;
 }
 
-.CardContent_base_f8 {
+.VehiclePreview_base_8c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1300rem;
+}
+
+.VehiclePreview_previewHeader_99 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40rem;
+}
+
+.VehiclePreview_previewLine_73 {
+    flex: 1;
+    max-width: 180rem;
+    height: 1rem;
+    margin-right: 16rem;
+    background: linear-gradient(270deg, #fff -1.26%, rgba(255, 255, 255, 0) 97.91%);
+    opacity: 0.15;
+}
+
+.VehiclePreview_previewLine__right_04 {
+    margin-left: 16rem;
+    margin-right: 0rem;
+    transform: rotate(180deg);
+}
+
+.VehiclePreview_previewTitle_35 {
+    color: rgba(254, 254, 236, 0.6);
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.VehiclePreview_tokensNeed_cc {
+    color: #c9c9b6;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.VehiclePreview_arrow_2c {
+    width: 24rem;
+    height: 48rem;
+    background: url('R.images.gui.maps.icons.early_access.carousel.arrow') no-repeat center / cover;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.VehiclePreview_arrow__enabled_61:hover {
+    background-image: url('R.images.gui.maps.icons.early_access.carousel.arrow_hover');
+}
+
+.VehiclePreview_arrow__left_16 {
+    left: 10rem;
+    transform: translateY(-50%);
+}
+
+.mediaMedium .VehiclePreview_arrow__left_16 {
+    left: 30rem;
+}
+
+.VehiclePreview_arrow__right_cb {
+    right: 30rem;
+    transform: rotate(180deg) translateY(50%);
+}
+
+.VehiclePreview_arrow__disabled_eb {
+    background-image: url('R.images.gui.maps.icons.early_access.carousel.arrow_disabled');
+}
+
+.VehiclePreview_arrow__hidden_20 {
+    display: none;
+}
+
+.VehiclePreview_previewBody_9b {
+    width: 870rem;
+    margin-bottom: 16rem;
+    position: relative;
+}
+
+.mediaMedium .VehiclePreview_previewBody_9b {
+    width: 1320rem;
+}
+
+.VehiclePreview_scrollWrapper_1a {
+    display: flex;
+}
+
+.VehiclePreview_scrollWrapper__centered_0c {
+    justify-content: center;
+}
+
+.VehiclePreview_horizontalContent_e2 {
+    display: flex;
+}
+
+.VehiclePreview_vehicleCardWrapper_f4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.VehiclePreview_vehicleCardWrapper__defaultCursor_78 {
+    cursor: default;
+}
+
+.VehiclePreview_progressPosition_89 {
+    margin-top: -6rem;
+}
+
+.VehiclePreview_previewFooter_99 {
+    max-width: 870rem;
+    height: 1rem;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0.01%, #fff 48.5%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.15;
+}
+
+.VehiclePreview_previewFooter__withMargin_05 {
+    margin-bottom: 70rem;
+}
+
+.mediaMedium .VehiclePreview_previewFooter__withMargin_05 {
+    margin-bottom: 28rem;
+}
+
+.mediaLarge .VehiclePreview_previewFooter__withMargin_05 {
+    margin-bottom: 95rem;
+}
+
+.VehiclePreviewCard_base_aa {
+    width: 150rem;
+    height: 270rem;
+    overflow: hidden;
+    position: relative;
+    transition: width 0.5s;
+}
+
+.mediaMedium .VehiclePreviewCard_base_aa {
+    width: 190rem;
+    height: 390rem;
+}
+
+.VehiclePreviewCard_base__selected_e5 {
+    width: 270rem;
+}
+
+.mediaMedium .VehiclePreviewCard_base__selected_e5 {
+    width: 270rem;
+}
+
+.VehiclePreviewCard_cardBg_8d {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.early_access.buy_tokens.card_small.bg') no-repeat center / cover;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease-out;
+}
+
+.mediaMedium .VehiclePreviewCard_cardBg_8d {
+    background-image: url('R.images.gui.maps.icons.early_access.buy_tokens.card_big.bg');
+}
+
+.VehiclePreviewCard_cardBg__net_d2 {
+    background-image: url('R.images.gui.maps.icons.early_access.buy_tokens.card_small.net');
+}
+
+.mediaMedium .VehiclePreviewCard_cardBg__net_d2 {
+    background-image: url('R.images.gui.maps.icons.early_access.buy_tokens.card_big.net');
+}
+
+.VehiclePreviewCard_base__selected_e5 .VehiclePreviewCard_cardBg_8d {
+    opacity: 1;
+}
+
+.VehiclePreviewCard_cardLockImage_c2 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.early_access.buy_tokens.card_small.lock') no-repeat;
+    background-position: bottom right;
+    background-size: 60rem 83rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.mediaMedium .VehiclePreviewCard_cardLockImage_c2 {
+    background-image: url('R.images.gui.maps.icons.early_access.buy_tokens.card_big.lock');
+    background-size: 92rem 134rem;
+}
+
+.VehiclePreviewCard_cardSeparator_b9 {
+    width: 1rem;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.early_access.buy_tokens.card_small.separator') no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+
+.VehiclePreviewCard_cardSeparator__left_03 {
+    left: 0;
+}
+
+.VehiclePreviewCard_cardSeparator__right_40 {
+    right: 0;
+}
+
+.mediaMedium .VehiclePreviewCard_cardSeparator_b9 {
+    height: 390rem;
+    background-image: url('R.images.gui.maps.icons.early_access.buy_tokens.card_big.separator');
+}
+
+.VehiclePreviewCard_postProgression_e5 {
+    width: 36rem;
+    height: 36rem;
+    background: url('R.images.gui.maps.icons.early_access.icons.postProgression') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.VehiclePreviewCard_cardShadow_2f {
+    width: 46rem;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.early_access.buy_tokens.card_small.shadow') no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.mediaMedium .VehiclePreviewCard_cardShadow_2f {
+    background-image: url('R.images.gui.maps.icons.early_access.buy_tokens.card_big.shadow');
+}
+
+.VehiclePreviewCard_cardStrokeWrapper_ec {
+    display: flex;
+    align-items: flex-end;
+    width: 146rem;
+    height: 8rem;
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    transition: width 0.5s;
+}
+
+.mediaMedium .VehiclePreviewCard_cardStrokeWrapper_ec {
+    width: 186rem;
+}
+
+.VehiclePreviewCard_base__selected_e5 .VehiclePreviewCard_cardStrokeWrapper_ec {
+    width: 266rem;
+}
+
+.VehiclePreviewCard_strokeBorder_06 {
+    width: 33rem;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.early_access.buy_tokens.stroke_border') no-repeat center / cover;
+}
+
+.VehiclePreviewCard_strokeBorder__right_b5 {
+    transform: scaleX(-1);
+}
+
+.VehiclePreviewCard_stroke_fd {
+    width: 80rem;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.early_access.buy_tokens.stroke') no-repeat center / cover;
+    transition: width 0.5s;
+}
+
+.mediaMedium .VehiclePreviewCard_stroke_fd {
+    width: 120rem;
+}
+
+.VehiclePreviewCard_base__selected_e5 .VehiclePreviewCard_stroke_fd {
+    width: 200rem;
+}
+
+.VehiclePreviewCard_cardContent_e9 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1416,11 +1705,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding-top: 9rem;
 }
 
-.mediaMedium .CardContent_base_f8 {
+.mediaMedium .VehiclePreviewCard_cardContent_e9 {
     padding-top: 23rem;
 }
 
-.CardContent_tankType_35 {
+.VehiclePreviewCard_tankType_f1 {
     width: 36rem;
     height: 36rem;
     background: no-repeat center / cover;
@@ -1428,25 +1717,25 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition: opacity 0.3s ease-out;
 }
 
-.mediaMedium .CardContent_tankType_35 {
+.mediaMedium .VehiclePreviewCard_tankType_f1 {
     width: 48rem;
     height: 48rem;
 }
 
-.CardContent_base__selected_e7 .CardContent_tankType_35 {
+.VehiclePreviewCard_cardContent__selected_6b .VehiclePreviewCard_tankType_f1 {
     opacity: 1;
 }
 
-.CardContent_tankTierWrapper_bc {
+.VehiclePreviewCard_tankTierWrapper_51 {
     margin-bottom: 160rem;
     position: relative;
 }
 
-.mediaMedium .CardContent_tankTierWrapper_bc {
+.mediaMedium .VehiclePreviewCard_tankTierWrapper_51 {
     margin-bottom: 227rem;
 }
 
-.CardContent_tankTier_28 {
+.VehiclePreviewCard_tankTier_88 {
     color: #ffffff;
     font-size: 15rem;
     font-weight: 700;
@@ -1456,11 +1745,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition: opacity 0.3s ease-out;
 }
 
-.CardContent_base__selected_e7 .CardContent_tankTier_28 {
+.VehiclePreviewCard_cardContent__selected_6b .VehiclePreviewCard_tankTier_88 {
     opacity: 1;
 }
 
-.CardContent_tankImg_4e {
+.VehiclePreviewCard_tankImg_84 {
     width: 180rem;
     height: 135rem;
     background: no-repeat center / cover;
@@ -1476,17 +1765,17 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity 0.3s ease-out;
 }
 
-.mediaMedium .CardContent_tankImg_4e {
+.mediaMedium .VehiclePreviewCard_tankImg_84 {
     bottom: 119rem;
 }
 
-.CardContent_base__selected_e7 .CardContent_tankImg_4e {
+.VehiclePreviewCard_cardContent__selected_6b .VehiclePreviewCard_tankImg_84 {
     width: 204rem;
     height: 153rem;
     opacity: 1;
 }
 
-.CardContent_tankName_ea {
+.VehiclePreviewCard_tankName_de {
     color: #ffffff;
     font-size: 14rem;
     font-weight: 700;
@@ -1496,208 +1785,52 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition: opacity 0.3s ease-out;
 }
 
-.mediaMedium .CardContent_tankName_ea {
+.mediaMedium .VehiclePreviewCard_tankName_de {
     margin-bottom: 48rem;
 }
 
-.CardContent_base__selected_e7 .CardContent_tankName_ea {
+.VehiclePreviewCard_cardContent__selected_6b .VehiclePreviewCard_tankName_de {
     opacity: 1;
 }
 
-.VehiclePreviewCard_base_8b {
-    width: 150rem;
-    height: 270rem;
-    overflow: hidden;
-    position: relative;
-    transition: width 0.5s;
-}
-
-.mediaMedium .VehiclePreviewCard_base_8b {
-    width: 190rem;
-    height: 390rem;
-}
-
-.VehiclePreviewCard_base__selected_9f {
-    width: 270rem;
-}
-
-.mediaMedium .VehiclePreviewCard_base__selected_9f {
-    width: 270rem;
-}
-
-.VehiclePreviewCard_cardBg_d1 {
-    width: 100%;
-    height: 100%;
-    background: url('R.images.gui.maps.icons.early_access.buy_tokens.card_small.bg') no-repeat center / cover;
-    opacity: 0.2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: opacity 0.3s ease-out;
-}
-
-.mediaMedium .VehiclePreviewCard_cardBg_d1 {
-    background-image: url('R.images.gui.maps.icons.early_access.buy_tokens.card_big.bg');
-}
-
-.VehiclePreviewCard_cardBg__net_6b {
-    background-image: url('R.images.gui.maps.icons.early_access.buy_tokens.card_small.net');
-}
-
-.mediaMedium .VehiclePreviewCard_cardBg__net_6b {
-    background-image: url('R.images.gui.maps.icons.early_access.buy_tokens.card_big.net');
-}
-
-.VehiclePreviewCard_base__selected_9f .VehiclePreviewCard_cardBg_d1 {
-    opacity: 1;
-}
-
-.VehiclePreviewCard_cardLockImage_3d {
-    width: 100%;
-    height: 100%;
-    background: url('R.images.gui.maps.icons.early_access.buy_tokens.card_small.lock') no-repeat;
-    background-position: bottom right;
-    background-size: 60rem 83rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.mediaMedium .VehiclePreviewCard_cardLockImage_3d {
-    background-image: url('R.images.gui.maps.icons.early_access.buy_tokens.card_big.lock');
-    background-size: 92rem 134rem;
-}
-
-.VehiclePreviewCard_cardSeparator_e9 {
-    width: 1rem;
-    height: 100%;
-    background: url('R.images.gui.maps.icons.early_access.buy_tokens.card_small.separator') no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-}
-
-.VehiclePreviewCard_cardSeparator__left_57 {
-    left: 0;
-}
-
-.VehiclePreviewCard_cardSeparator__right_9c {
-    right: 0;
-}
-
-.mediaMedium .VehiclePreviewCard_cardSeparator_e9 {
-    height: 390rem;
-    background-image: url('R.images.gui.maps.icons.early_access.buy_tokens.card_big.separator');
-}
-
-.VehiclePreviewCard_postProgression_f1 {
-    width: 36rem;
-    height: 36rem;
-    background: url('R.images.gui.maps.icons.early_access.icons.postProgression') no-repeat center / cover;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.VehiclePreviewCard_cardShadow_b0 {
-    width: 46rem;
-    height: 100%;
-    background: url('R.images.gui.maps.icons.early_access.buy_tokens.card_small.shadow') no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-}
-
-.mediaMedium .VehiclePreviewCard_cardShadow_b0 {
-    background-image: url('R.images.gui.maps.icons.early_access.buy_tokens.card_big.shadow');
-}
-
-.VehiclePreviewCard_cardStrokeWrapper_48 {
-    display: flex;
-    align-items: flex-end;
-    width: 146rem;
-    height: 8rem;
-    position: absolute;
-    bottom: 0;
-    left: 2rem;
-    transition: width 0.5s;
-}
-
-.mediaMedium .VehiclePreviewCard_cardStrokeWrapper_48 {
-    width: 186rem;
-}
-
-.VehiclePreviewCard_base__selected_9f .VehiclePreviewCard_cardStrokeWrapper_48 {
-    width: 266rem;
-}
-
-.VehiclePreviewCard_strokeBorder_22 {
-    width: 33rem;
-    height: 100%;
-    background: url('R.images.gui.maps.icons.early_access.buy_tokens.stroke_border') no-repeat center / cover;
-}
-
-.VehiclePreviewCard_strokeBorder__right_ed {
-    transform: scaleX(-1);
-}
-
-.VehiclePreviewCard_stroke_a6 {
-    width: 80rem;
-    height: 1rem;
-    background: url('R.images.gui.maps.icons.early_access.buy_tokens.stroke') no-repeat center / cover;
-    transition: width 0.5s;
-}
-
-.mediaMedium .VehiclePreviewCard_stroke_a6 {
-    width: 120rem;
-}
-
-.VehiclePreviewCard_base__selected_9f .VehiclePreviewCard_stroke_a6 {
-    width: 200rem;
-}
-
-.VehicleProgress_base_c7 {
+.VehicleProgress_base_c8 {
     display: flex;
     flex-direction: column;
     width: 140rem;
     transition: width 0.5s;
 }
 
-.mediaMedium .VehicleProgress_base_c7 {
+.mediaMedium .VehicleProgress_base_c8 {
     width: 180rem;
 }
 
-.VehicleProgress_base__selected_2d {
+.VehicleProgress_base__selected_45 {
     width: 260rem;
 }
 
-.mediaMedium .VehicleProgress_base__selected_2d {
+.mediaMedium .VehicleProgress_base__selected_45 {
     width: 260rem;
 }
 
-.VehicleProgress_progressWrapper_d3 {
+.VehicleProgress_progressWrapper_03 {
     width: 100%;
     height: 3rem;
     margin-bottom: 7rem;
     position: relative;
 }
 
-.VehicleProgress_progress_d0 {
+.VehicleProgress_progress_a5 {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.2);
     transition: width 0.5s;
 }
 
-.VehicleProgress_progress__done_0b {
+.VehicleProgress_progress__done_27 {
     border: 1rem solid rgba(144, 224, 26, 1);
 }
 
-.VehicleProgress_shadow_98 {
+.VehicleProgress_shadow_28 {
     width: 100%;
     height: 20rem;
     background: url('R.images.gui.maps.icons.early_access.buy_tokens.shadow_default') no-repeat center / cover;
@@ -1706,11 +1839,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
 }
 
-.VehicleProgress_shadow__done_7a {
+.VehicleProgress_shadow__done_e9 {
     background-image: url('R.images.gui.maps.icons.early_access.buy_tokens.shadow_done');
 }
 
-.VehicleProgress_progressShadow_1e {
+.VehicleProgress_progressShadow_f3 {
     height: 20rem;
     background: url('R.images.gui.maps.icons.early_access.buy_tokens.shadow_progress') no-repeat center / cover;
     position: absolute;
@@ -1719,7 +1852,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition: width 0.2s;
 }
 
-.VehicleProgress_progressLine_39 {
+.VehicleProgress_progressLine_f0 {
     height: 100%;
     background-color: #fd9;
     position: absolute;
@@ -1727,12 +1860,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition: width 0.2s;
 }
 
-.VehicleProgress_progressLine__count_72 {
+.VehicleProgress_progressLine__count_da {
     border: 1rem solid rgba(255, 113, 0, 1);
     background-color: rgba(255, 202, 153, 0.6);
 }
 
-.VehicleProgress_vehiclePriceWrapper_84 {
+.VehicleProgress_vehiclePriceWrapper_00 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -1741,12 +1874,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding-left: 10rem;
 }
 
-.VehicleProgress_vehiclePrice_c9 {
+.VehicleProgress_vehiclePrice_3e {
     display: flex;
     align-items: center;
 }
 
-.VehicleProgress_vehicleBalanceText_15 {
+.VehicleProgress_vehicleBalanceText_63 {
     color: #ffffff;
     font-size: 15rem;
     font-weight: 700;
@@ -1757,8 +1890,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         0 0 4rem rgba(74, 136, 255, 0.6);
 }
 
-.VehicleProgress_vehicleCountText_ba,
-.VehicleProgress_vehiclePriceText_d6 {
+.VehicleProgress_vehicleCountText_7e,
+.VehicleProgress_vehiclePriceText_ee {
     color: #ffdd99;
     font-size: 15rem;
     font-weight: 700;
@@ -1770,8 +1903,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         0 0 2rem rgba(255, 127, 0, 0.35);
 }
 
-.VehicleProgress_vehicleCountText__done_c3,
-.VehicleProgress_vehiclePriceText__done_6d {
+.VehicleProgress_vehicleCountText__done_78,
+.VehicleProgress_vehiclePriceText__done_f5 {
     color: #ffffff;
     font-size: 15rem;
     font-weight: 700;
@@ -1781,8 +1914,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         0 0 4rem rgba(74, 136, 255, 0.6);
 }
 
-.VehicleProgress_vehicleCountText__locked_00,
-.VehicleProgress_vehiclePriceText__locked_8f {
+.VehicleProgress_vehicleCountText__locked_a3,
+.VehicleProgress_vehiclePriceText__locked_7b {
     color: #ffffff;
     font-size: 15rem;
     font-weight: 700;
@@ -1791,144 +1924,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     opacity: 0.25;
 }
 
-.VehicleProgress_vehiclePriceIcon_1c {
+.VehicleProgress_vehiclePriceIcon_cf {
     width: 16rem;
     height: 16rem;
     background: url('R.images.gui.maps.icons.early_access.tokens.c_16x16') no-repeat center / contain;
 }
 
-.VehiclePreview_base_f0 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1300rem;
-}
-
-.VehiclePreview_previewHeader_98 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40rem;
-}
-
-.VehiclePreview_previewLine_46 {
-    width: 232rem;
-    height: 1rem;
-    margin-right: 16rem;
-    background: linear-gradient(270deg, #fff -1.26%, rgba(255, 255, 255, 0) 97.91%);
-    opacity: 0.15;
-}
-
-.VehiclePreview_previewLine__right_2b {
-    margin-left: 16rem;
-    margin-right: 0rem;
-    transform: rotate(180deg);
-}
-
-.VehiclePreview_previewTitle_d5 {
-    color: rgba(254, 254, 236, 0.6);
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-}
-
-.VehiclePreview_tokensNeed_90 {
-    color: #c9c9b6;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.VehiclePreview_arrow_bc {
-    width: 24rem;
-    height: 48rem;
-    background: url('R.images.gui.maps.icons.early_access.carousel.arrow') no-repeat center / cover;
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-}
-
-.VehiclePreview_arrow__enabled_77:hover {
-    background-image: url('R.images.gui.maps.icons.early_access.carousel.arrow_hover');
-}
-
-.VehiclePreview_arrow__left_5b {
-    left: 10rem;
-    transform: translateY(-50%);
-}
-
-.mediaMedium .VehiclePreview_arrow__left_5b {
-    left: 30rem;
-}
-
-.VehiclePreview_arrow__right_19 {
-    right: 30rem;
-    transform: rotate(180deg) translateY(50%);
-}
-
-.VehiclePreview_arrow__disabled_a2 {
-    background-image: url('R.images.gui.maps.icons.early_access.carousel.arrow_disabled');
-}
-
-.VehiclePreview_arrow__hidden_23 {
-    display: none;
-}
-
-.VehiclePreview_previewBody_4f {
-    width: 870rem;
-    margin-bottom: 16rem;
-    position: relative;
-}
-
-.mediaMedium .VehiclePreview_previewBody_4f {
-    width: 1320rem;
-}
-
-.VehiclePreview_scrollWrapper_23 {
-    display: flex;
-}
-
-.VehiclePreview_scrollWrapper__centered_27 {
-    justify-content: center;
-}
-
-.VehiclePreview_horizontalContent_bd {
-    display: flex;
-}
-
-.VehiclePreview_vehicleCardWrapper_8b {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.VehiclePreview_vehicleCardWrapper__defaultCursor_7c {
-    cursor: default;
-}
-
-.VehiclePreview_progressPosition_af {
-    margin-top: -6rem;
-}
-
-.VehiclePreview_previewFooter_81 {
-    width: 1030rem;
-    height: 1rem;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0.01%, #fff 48.5%, rgba(255, 255, 255, 0) 100%);
-    opacity: 0.15;
-}
-
-.VehiclePreview_previewFooter__withMargin_d8 {
-    margin-bottom: 70rem;
-}
-
-.mediaMedium .VehiclePreview_previewFooter__withMargin_d8 {
-    margin-bottom: 28rem;
-}
-
-.mediaLarge .VehiclePreview_previewFooter__withMargin_d8 {
-    margin-bottom: 95rem;
-}
-
-.TokensStepper_base_36 {
+.TokensStepper_base_3d {
     display: flex;
     align-items: center;
     width: 140rem;
@@ -1941,23 +1943,23 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition: border 150ms ease-in-out;
 }
 
-.TokensStepper_base__focused_fc {
-    border-color: #5a9889;
+.TokensStepper_base__focused_0f {
+    border-color: #81aab3;
 }
 
-.TokensStepper_currency_fc {
+.TokensStepper_currency_7c {
     display: flex;
     align-items: center;
     flex: 0;
 }
 
-.TokensStepper_inputWrapper_f2 {
+.TokensStepper_inputWrapper_1e {
     display: flex;
     flex: 0;
     padding: 0 9rem 0 6rem;
 }
 
-.TokensStepper_input_d0 {
+.TokensStepper_input_b4 {
     display: flex;
     height: 24rem;
     border: none;
@@ -1969,95 +1971,95 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 22rem;
 }
 
-.TokensStepper_input_d0::selection {
+.TokensStepper_input_b4::selection {
     background-color: #8c8c7e;
     color: #242420;
 }
 
-.TokensStepper_input__disabled_7e {
+.TokensStepper_input__disabled_0a {
     width: 100%;
 }
 
-.TokensStepper_currencyIcon_c7 {
+.TokensStepper_currencyIcon_8f {
     width: 24rem;
     height: 24rem;
     background: url('R.images.gui.maps.icons.early_access.tokens.c_24x24') no-repeat center / contain;
 }
 
-.TokensStepper_controls_24 {
+.TokensStepper_controls_36 {
     display: flex;
     flex-direction: column;
 }
 
-.TokensStepper_btn_2c {
+.TokensStepper_btn_da {
     width: 27rem;
     height: 15rem;
     background: url('R.images.gui.maps.icons.components.numerical_stepper.stepper_medium_buttons') no-repeat;
     cursor: pointer;
 }
 
-.mediaLargeWidth .TokensStepper_btn_2c {
+.mediaLargeWidth .TokensStepper_btn_da {
     background-size: 200% 400%;
 }
 
-.TokensStepper_btnIncrement_43 {
+.TokensStepper_btnIncrement_26 {
     background-position-x: 0;
     background-position-y: 0;
 }
 
-.TokensStepper_btnIncrement_43:hover {
+.TokensStepper_btnIncrement_26:hover {
     background-position-y: -15rem;
 }
 
-.TokensStepper_btnIncrement_43:active {
+.TokensStepper_btnIncrement_26:active {
     background-position-y: -30rem;
 }
 
-.TokensStepper_btnIncrement__disabled_a3,
-.TokensStepper_btnIncrement__disabled_a3:hover {
+.TokensStepper_btnIncrement__disabled_2d,
+.TokensStepper_btnIncrement__disabled_2d:hover {
     background-position-y: -45rem;
     cursor: default;
 }
 
-.TokensStepper_btnDecrement_b8 {
+.TokensStepper_btnDecrement_9b {
     background-position-x: 100%;
     background-position-y: 0;
 }
 
-.TokensStepper_btnDecrement_b8:hover {
+.TokensStepper_btnDecrement_9b:hover {
     background-position-y: -15rem;
 }
 
-.TokensStepper_btnDecrement_b8:active {
+.TokensStepper_btnDecrement_9b:active {
     background-position-y: -30rem;
 }
 
-.TokensStepper_btnDecrement__disabled_97,
-.TokensStepper_btnDecrement__disabled_97:hover {
+.TokensStepper_btnDecrement__disabled_80,
+.TokensStepper_btnDecrement__disabled_80:hover {
     background-position-y: -45rem;
     cursor: default;
 }
 
-.VehicleTokens_base_59 {
+.VehicleTokens_base_88 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.VehicleTokens_purchaseHeaderWrapper_6f {
+.VehicleTokens_purchaseHeaderWrapper_ff {
     display: flex;
     justify-content: flex-end;
     width: 100%;
     margin-bottom: 25rem;
 }
 
-.VehicleTokens_purchaseHeader_c0 {
+.VehicleTokens_purchaseHeader_2e {
     display: flex;
     align-items: center;
     margin-right: 10rem;
 }
 
-.VehicleTokens_purchaseHeaderText_ca {
+.VehicleTokens_purchaseHeaderText_3c {
     color: #fefeec;
     font-size: 16rem;
     font-weight: 400;
@@ -2066,19 +2068,65 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     opacity: 0.5;
 }
 
-.VehicleTokens_purchaseWrapperFooter_96 {
+.VehicleTokens_purchaseWrapperFooter_1a {
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-.VehicleTokens_button_4f {
+.VehicleTokens_button_7f {
     width: 160rem;
     height: 32rem;
 }
 
-.VehicleTokens_button__withMargin_1e {
+.VehicleTokens_button__withMargin_d5 {
     margin-right: 20rem;
+}
+
+.VehicleContent_vehicleFooter_f8 {
+    display: flex;
+    align-items: center;
+    height: 40rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+}
+
+.VehicleContent_vehicleFooter__bg_27 {
+    width: 840rem;
+    height: 175rem;
+    background: url('R.images.gui.maps.icons.early_access.buy_tokens.footer_shadow') no-repeat center / cover;
+    bottom: -45rem;
+}
+
+.VehicleContent_footerText_c6 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-right: 5rem;
+    opacity: 0.5;
+}
+
+.VehicleContent_infoIcon_25 {
+    width: 14rem;
+    height: 14rem;
+    background: url('R.images.gui.maps.icons.dogtags.icons.info_icon_section_title') no-repeat center / cover;
+    cursor: pointer;
+}
+
+.VehicleContent_vehicleTokens_e7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 58rem;
+}
+
+.mediaLarge .VehicleContent_vehicleTokens_e7 {
+    bottom: 71rem;
 }
 
 @keyframes App_slideDown_87 {
@@ -2106,50 +2154,4 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
     animation-iteration-count: 1;
-}
-
-.App_vehicleFooter_f2 {
-    display: flex;
-    align-items: center;
-    height: 40rem;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    z-index: -1;
-    transform: translateX(-50%);
-}
-
-.App_vehicleFooter__bg_2e {
-    width: 840rem;
-    height: 175rem;
-    background: url('R.images.gui.maps.icons.early_access.buy_tokens.footer_shadow') no-repeat center / cover;
-    bottom: -45rem;
-}
-
-.App_footerText_e8 {
-    color: #e9e2bf;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-right: 5rem;
-    opacity: 0.5;
-}
-
-.App_infoIcon_90 {
-    width: 14rem;
-    height: 14rem;
-    background: url('R.images.gui.maps.icons.dogtags.icons.info_icon_section_title') no-repeat center / cover;
-    cursor: pointer;
-}
-
-.App_vehicleTokens_0e {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    bottom: 58rem;
-}
-
-.mediaLarge .App_vehicleTokens_0e {
-    bottom: 71rem;
 }

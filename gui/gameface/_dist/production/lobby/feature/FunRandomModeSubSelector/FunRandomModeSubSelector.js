@@ -1293,8 +1293,7 @@
                             (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (e.BattleBoosterGift = 'battleBooster_gift'),
                             (e.CosmicLootboxSilver = 'lootBoxToken'),
-                            (e.CosmicLootboxCommon = 'cosmic_2024_2'),
-                            (e.RacesPoint = 'races_point');
+                            (e.CosmicLootboxCommon = 'cosmic_2024_2');
                     })(J || (J = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -1425,7 +1424,7 @@
                         J.CosmicLootboxSilver,
                     ],
                     ie = [J.Gold, J.Credits, J.Crystal, J.FreeXp],
-                    oe = [J.BattlePassPoints, J.RacesPoint],
+                    oe = [J.BattlePassPoints],
                     le = [J.PremiumPlus, J.Premium],
                     ce = ['engravings', 'backgrounds'],
                     Ee = ['engraving', 'background'],
@@ -3937,21 +3936,10 @@
                             ),
                         );
                     },
-                    Rt = ({
-                        index: e,
-                        text: u,
-                        isSmall: t = !1,
-                        classMix: a,
-                        tooltipId: r,
-                        isTooltipEnabled: s = !0,
-                        modeName: i = '',
-                    }) =>
+                    Rt = ({ index: e, text: u, isSmall: t = !1, classMix: a, tooltipId: r, modeName: s = '' }) =>
                         n().createElement(
                             Du,
-                            {
-                                isEnabled: s,
-                                args: r ? { tooltipId: r, modeName: i } : { tooltipId: 'calendarTooltip', index: e },
-                            },
+                            { args: r ? { tooltipId: r, modeName: s } : { tooltipId: 'calendarTooltip', index: e } },
                             n().createElement(
                                 'div',
                                 { className: B()('TimeLeft_base_cf', t && 'TimeLeft_base__small_7c', a) },

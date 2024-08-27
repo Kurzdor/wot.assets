@@ -1094,8 +1094,8 @@
                             })(u, M);
                         return n().createElement(D, null, n().createElement(I, t, e));
                     };
-                var P = t(493),
-                    L = t.n(P);
+                var L = t(493),
+                    P = t.n(L);
                 function k(u) {
                     engine.call('PlaySound', u);
                 }
@@ -1294,8 +1294,7 @@
                         (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.CosmicLootboxSilver = 'lootBoxToken'),
-                        (u.CosmicLootboxCommon = 'cosmic_2024_2'),
-                        (u.RacesPoint = 'races_point');
+                        (u.CosmicLootboxCommon = 'cosmic_2024_2');
                 })(Y || (Y = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1439,7 +1438,7 @@
                         Y.CosmicLootboxSilver,
                     ],
                     ru = [Y.Gold, Y.Credits, Y.Crystal, Y.FreeXp],
-                    su = [Y.BattlePassPoints, Y.RacesPoint],
+                    su = [Y.BattlePassPoints],
                     lu = [Y.PremiumPlus, Y.Premium],
                     cu = ['engravings', 'backgrounds'],
                     Eu = ['engraving', 'background'],
@@ -2067,7 +2066,7 @@
                         Ou.apply(this, arguments)
                     );
                 }
-                const Pu = (0, a.memo)(function (u) {
+                const Lu = (0, a.memo)(function (u) {
                         let e = u.width,
                             t = u.height,
                             i = u.getImageSource,
@@ -2108,7 +2107,7 @@
                                     case 'play':
                                         return (function () {
                                             const u = Nu(E, m, i),
-                                                e = Lu(E, m),
+                                                e = Pu(E, m),
                                                 a = window.setInterval(() => {
                                                     const n = e(),
                                                         i = u.get(n);
@@ -2141,7 +2140,7 @@
                             n().createElement('canvas', Ou({}, p, { width: e, height: t, ref: h }))
                         );
                     }),
-                    Lu = (u, e) => {
+                    Pu = (u, e) => {
                         let t = u;
                         return () => {
                             const a = t;
@@ -3003,7 +3002,7 @@
                                     n().createElement(
                                         'div',
                                         { className: 'Content_sunShine_30' },
-                                        n().createElement(Pu, {
+                                        n().createElement(Lu, {
                                             width: Be.width,
                                             height: Be.height,
                                             frameCount: Be.frameCount,
@@ -3136,13 +3135,13 @@
                             },
                             [o, l, A, f, t],
                         ),
-                        P = (0, a.useCallback)(
+                        L = (0, a.useCallback)(
                             (u) => {
                                 o || (d && d(u), v(!1));
                             },
                             [o, d],
                         ),
-                        L = B()(
+                        P = B()(
                             he.base,
                             he[`base__${i}`],
                             {
@@ -3172,12 +3171,12 @@
                             'div',
                             {
                                 ref: _,
-                                className: L,
+                                className: P,
                                 onMouseEnter: y,
                                 onMouseMove: I,
                                 onMouseUp: M,
                                 onMouseDown: O,
-                                onMouseLeave: P,
+                                onMouseLeave: L,
                                 onClick: S,
                             },
                             i !== ve.ghost &&
@@ -3310,13 +3309,13 @@
                         }
                         return n().createElement(ce, { text: s, classMix: t, binding: o });
                     });
-                let Pe;
+                let Le;
                 !(function (u) {
                     (u.Simple = 'simpleKey'), (u.Lockpick = 'lockpick');
-                })(Pe || (Pe = {}));
-                const Le = R.strings.gui_lootboxes,
+                })(Le || (Le = {}));
+                const Pe = R.strings.gui_lootboxes,
                     ke = (0, z.Pi)(({ lootboxName: u, lootBoxOpenCount: e, keyType: t }) => {
-                        const a = t === Pe.Lockpick;
+                        const a = t === Le.Lockpick;
                         return n().createElement(
                             'div',
                             { className: 'Header_base_f3' },
@@ -3325,12 +3324,12 @@
                                 { className: 'Header_blinkAnimate1_cf' },
                                 n().createElement('div', { className: 'Header_blinkAnimate2_7d' }),
                             ),
-                            n().createElement('div', { className: 'Header_title_3a' }, Le.rewards.header.title()),
+                            n().createElement('div', { className: 'Header_title_3a' }, Pe.rewards.header.title()),
                             n().createElement(
                                 'div',
                                 { className: 'Header_subTitle_1e' },
                                 n().createElement(Oe, {
-                                    text: Le.rewards.header.subTitle(),
+                                    text: Pe.rewards.header.subTitle(),
                                     binding: { lootboxName: u },
                                 }),
                             ),
@@ -3342,7 +3341,7 @@
                             a &&
                                 n().createElement(Oe, {
                                     classMix: 'Header_count_98',
-                                    text: Le.lootboxesWithKeys.lbOpenCount(e),
+                                    text: Pe.lootboxesWithKeys.lbOpenCount(e),
                                     binding: { count: e },
                                 }),
                         );
@@ -3821,7 +3820,7 @@
                     };
                 var $e;
                 engine.whenReady.then(() => {
-                    L().render(
+                    P().render(
                         n().createElement(
                             yu,
                             { mode: 'real', mocks: We },

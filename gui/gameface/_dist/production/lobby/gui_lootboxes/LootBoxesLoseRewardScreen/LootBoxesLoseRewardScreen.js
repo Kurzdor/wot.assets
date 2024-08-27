@@ -1558,7 +1558,6 @@
                     (Fu.BattleBoosterGift = 'battleBooster_gift'),
                     (Fu.CosmicLootboxSilver = 'lootBoxToken'),
                     (Fu.CosmicLootboxCommon = 'cosmic_2024_2'),
-                    (Fu.RacesPoint = 'races_point'),
                     (function (u) {
                         (u.Gold = 'gold'),
                             (u.Credits = 'credits'),
@@ -1692,7 +1691,6 @@
                     uu.Crystal,
                     uu.FreeXp,
                     uu.BattlePassPoints,
-                    uu.RacesPoint,
                     uu.PremiumPlus,
                     uu.Premium,
                     (function (u) {
