@@ -934,6 +934,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 44rem;
 }
 
+.VehicleTypeIcon_base__c_48x48_specSlot_c4 {
+    width: 48rem;
+    height: 48rem;
+}
+
 .VehicleTypeIcon_base__c_60x54_08 {
     width: 60rem;
     height: 54rem;

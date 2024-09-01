@@ -340,6 +340,34 @@
     pointer-events: none;
 }
 
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
+}
+
 .colors_blackReal_fc {
     color: #000000;
 }
@@ -448,7 +476,7 @@
 }
 
 .renderers_word_f3 {
-    white-space: nowrap;
+    white-space: pre;
     overflow-wrap: normal;
 }
 

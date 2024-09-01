@@ -141,11 +141,14 @@
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .BackButton_base_a6 {
     position: absolute;
     top: 75rem;
@@ -1054,11 +1057,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .Footer_base_0d {
     display: flex;
     flex-direction: column;
@@ -1114,11 +1120,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .Header_base_fa {
     display: flex;
     padding-bottom: 18rem;
@@ -1436,11 +1445,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .ProgressionLevelIcon_base_c3 {
     display: flex;
 }
@@ -1474,11 +1486,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .Slot_base_a9 {
     width: 82rem;
     height: 82rem;
@@ -1655,11 +1670,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .Slots_slot_44 {
     margin: 0 16rem 16rem 0;
 }
@@ -1673,11 +1691,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .Title_base_0d {
     display: flex;
     align-items: flex-end;
@@ -1739,11 +1760,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .Season_base_cb {
     position: relative;
 }
@@ -1773,11 +1797,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 /* $resolution-height * 2*/
+/* $resolution-height - 1px*/
+/* $resolution-height-scale - 1px*/
 /* $resolution-small-width * 2*/
 /* $resolution-big-width * 2*/
 /* MIN_SCREEN_WIDTH * 2 - 1px*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+/* media*/
 .Seasons_base_d0 {
     display: flex;
     background: url('R.images.gui.maps.icons.customization.gf_customization_cart.slots') 50% 100% / 100% 100% no-repeat;
@@ -1809,6 +1836,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     (min-width: 3400px) {
     .Seasons_lip_93 {
         width: 1273rem;
+    }
+}
+@media (min-width: 1700px) and (max-height: 899px), (min-width: 3400px) and (max-height: 1799px) {
+    .Seasons_lip_93 {
+        width: 1017rem;
     }
 }
 .Seasons_lip__top_bd {
@@ -1845,6 +1877,10 @@ body {
 
 /* $resolution-height * 2*/
 
+/* $resolution-height - 1px*/
+
+/* $resolution-height-scale - 1px*/
+
 /* $resolution-small-width * 2*/
 
 /* $resolution-big-width * 2*/
@@ -1854,6 +1890,8 @@ body {
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_BEFORE_SCALE?*/
 
 /* MIN_SCREEN_HEIGHT * 2 - PANEL_HEIGHT_AFTER_SCALE? - 1px*/
+
+/* media*/
 
 .CustomizationCartApp_base_b8 {
     display: flex;
@@ -1909,6 +1947,12 @@ body {
     }
 }
 
+@media (min-width: 1700px) and (max-height: 899px), (min-width: 3400px) and (max-height: 1799px) {
+    .CustomizationCartApp_header_f5 {
+        width: 997rem;
+    }
+}
+
 .CustomizationCartApp_seasons_e0 {
     flex: 0 auto;
     width: 800rem;
@@ -1933,6 +1977,12 @@ body {
     (min-width: 3400px) {
     .CustomizationCartApp_seasons_e0 {
         width: 1253rem;
+    }
+}
+
+@media (min-width: 1700px) and (max-height: 899px), (min-width: 3400px) and (max-height: 1799px) {
+    .CustomizationCartApp_seasons_e0 {
+        width: 997rem;
     }
 }
 
@@ -1963,5 +2013,11 @@ body {
     (min-width: 3400px) {
     .CustomizationCartApp_footer_9d {
         width: 1253rem;
+    }
+}
+
+@media (min-width: 1700px) and (max-height: 899px), (min-width: 3400px) and (max-height: 1799px) {
+    .CustomizationCartApp_footer_9d {
+        width: 997rem;
     }
 }

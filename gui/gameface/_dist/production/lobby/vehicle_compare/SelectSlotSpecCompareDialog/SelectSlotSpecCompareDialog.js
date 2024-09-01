@@ -148,9 +148,9 @@
                         isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                         get: () => viewEnv.getGraphicsQuality(),
                     },
-                    h = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
-                    g = Object.keys(h).reduce((u, e) => ((u[e] = () => B(h[e])), u), {}),
-                    v = { play: Object.assign({}, g, { sound: B }), setRTPC: C };
+                    g = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    h = Object.keys(g).reduce((u, e) => ((u[e] = () => B(g[e])), u), {}),
+                    v = { play: Object.assign({}, h, { sound: B }), setRTPC: C };
                 function p(u, e, t = 1) {
                     return viewEnv.getChildTexturePath(u, e.width, e.height, t);
                 }
@@ -587,14 +587,14 @@
                         var n;
                     },
                     m = () => _(o.CLOSE),
-                    h = (u, e) => {
+                    g = (u, e) => {
                         u.keyCode === l.n.ESCAPE && e();
                     };
-                var g = t(572);
+                var h = t(572);
                 const v = a.instance,
                     p = {
                         DataTracker: i.Z,
-                        ViewModel: g.Z,
+                        ViewModel: h.Z,
                         ViewEventType: o,
                         NumberFormatType: E,
                         RealFormatType: s,
@@ -632,13 +632,13 @@
                             });
                         },
                         addEscapeListener: (u) => {
-                            const e = (e) => h(e, u);
+                            const e = (e) => g(e, u);
                             return (
                                 window.addEventListener('keydown', e), () => window.removeEventListener('keydown', e)
                             );
                         },
                         closeOnEsc: (u) => {
-                            h(u, m);
+                            g(u, m);
                         },
                         handleViewEvent: _,
                         onBindingsReady: d,
@@ -813,10 +813,10 @@
                         d = a.extraSmallWidth,
                         _ = a.extraLargeHeight,
                         m = a.largeHeight,
-                        h = a.mediumHeight,
-                        g = a.smallHeight,
+                        g = a.mediumHeight,
+                        h = a.smallHeight,
                         v = a.extraSmallHeight,
-                        p = { extraLarge: _, large: m, medium: h, small: g, extraSmall: v };
+                        p = { extraLarge: _, large: m, medium: g, small: h, extraSmall: v };
                     if (t.extraLarge || t.large || t.medium || t.small || t.extraSmall) {
                         if (t.extraLarge && r) return e;
                         if (t.large && o) return e;
@@ -834,8 +834,8 @@
                         ) {
                             if (t.extraLargeHeight && _) return e;
                             if (t.largeHeight && m) return e;
-                            if (t.mediumHeight && h) return e;
-                            if (t.smallHeight && g) return e;
+                            if (t.mediumHeight && g) return e;
+                            if (t.smallHeight && h) return e;
                             if (t.extraSmallHeight && v) return e;
                         }
                     }
@@ -891,8 +891,8 @@
                         return a().createElement(c.Provider, { value: l }, u);
                     };
                 var m = t(493),
-                    h = t.n(m);
-                let g, v;
+                    g = t.n(m);
+                let h, v;
                 !(function (u) {
                     (u.main = 'main'),
                         (u.primary = 'primary'),
@@ -900,7 +900,7 @@
                         (u.primaryRed = 'primaryRed'),
                         (u.secondary = 'secondary'),
                         (u.ghost = 'ghost');
-                })(g || (g = {})),
+                })(h || (h = {})),
                     (function (u) {
                         (u.extraSmall = 'extraSmall'), (u.small = 'small'), (u.medium = 'medium'), (u.large = 'large');
                     })(v || (v = {}));
@@ -1120,9 +1120,9 @@
                             d = (0, n.useState)(t),
                             _ = d[0],
                             m = d[1],
-                            h = (0, n.useState)(!1),
-                            v = h[0],
-                            p = h[1];
+                            g = (0, n.useState)(!1),
+                            v = g[0],
+                            p = g[1];
                         return (
                             (0, n.useEffect)(() => {
                                 function u(u) {
@@ -1174,7 +1174,7 @@
                                         r || (B && B(u));
                                     },
                                 },
-                                i !== g.ghost &&
+                                i !== h.ghost &&
                                     a().createElement(
                                         a().Fragment,
                                         null,
@@ -1196,7 +1196,7 @@
                             )
                         );
                     };
-                Y.defaultProps = { type: g.primary, isFocused: !1, soundHover: 'highlight', soundClick: 'play' };
+                Y.defaultProps = { type: h.primary, isFocused: !1, soundHover: 'highlight', soundClick: 'play' };
                 const X = Y,
                     Z = {
                         base: 'TextButton_base_b6',
@@ -1386,8 +1386,8 @@
                             d = u.targetId,
                             _ = void 0 === d ? 0 : d,
                             m = u.onShow,
-                            h = u.onHide,
-                            g = (function (u, e) {
+                            g = u.onHide,
+                            h = (function (u, e) {
                                 if (null == u) return {};
                                 var t,
                                     n,
@@ -1409,10 +1409,10 @@
                                     const u = v.current.timeoutId;
                                     u > 0 && (clearTimeout(u), (v.current.timeoutId = 0)),
                                         nu(t, c, { on: !1 }, p),
-                                        v.current.isVisible && h && h(),
+                                        v.current.isVisible && g && g(),
                                         (v.current.isVisible = !1);
                                 }
-                            }, [t, c, p, h]),
+                            }, [t, c, p, g]),
                             f = (0, n.useCallback)((u) => {
                                 v.current.isVisible &&
                                     ((v.current.prevTarget = document.elementFromPoint(u.clientX, u.clientY)),
@@ -1467,7 +1467,7 @@
                                               !1 === l && b(), null == o || o(e), null == u || u(e);
                                           })(e.props.onMouseDown),
                                       },
-                                      g,
+                                      h,
                                   ),
                               )
                             : e;
@@ -1641,7 +1641,7 @@
                         );
                     },
                     mu = 'CurrencyBalance_base_97',
-                    hu = ({ credits: u, golds: e, crystals: t, freexp: n, isWalletAvailable: i }) =>
+                    gu = ({ credits: u, golds: e, crystals: t, freexp: n, isWalletAvailable: i }) =>
                         a().createElement(
                             'div',
                             { className: mu },
@@ -1650,7 +1650,7 @@
                             a().createElement(_u, { value: u, currencyType: Du.credits, isWalletAvailable: i }),
                             a().createElement(_u, { value: n, currencyType: Du.freeXP, isWalletAvailable: i }),
                         ),
-                    gu = 'DialogTemplate_base_bb',
+                    hu = 'DialogTemplate_base_bb',
                     vu = 'DialogTemplate_control_3e',
                     pu = 'DialogTemplate_closeButton_2c',
                     wu = 'DialogTemplate_view_78',
@@ -1695,18 +1695,18 @@
                             d = c.crystals,
                             _ = c.freexp,
                             m = c.onAcceptClicked,
-                            h = c.onCancelClicked,
-                            g = c.onExit,
+                            g = c.onCancelClicked,
+                            h = c.onExit,
                             v = c.isWalletAvailable,
                             p = (0, n.useCallback)(() => {
                                 m();
                             }, [m]),
                             w = (0, n.useCallback)(() => {
-                                h();
-                            }, [h]),
-                            b = (0, n.useCallback)(() => {
                                 g();
-                            }, [g]);
+                            }, [g]),
+                            b = (0, n.useCallback)(() => {
+                                h();
+                            }, [h]);
                         Au({ [Fu.n.ESCAPE]: b });
                         const f = (0, n.useCallback)(
                             (u) => {
@@ -1736,7 +1736,7 @@
                                 a().createElement(
                                     a().Fragment,
                                     null,
-                                    a().createElement(hu, {
+                                    a().createElement(gu, {
                                         credits: B,
                                         golds: C,
                                         crystals: d,
@@ -1765,7 +1765,7 @@
                                 );
                         return a().createElement(
                             'div',
-                            { className: gu },
+                            { className: hu },
                             a().createElement(
                                 'div',
                                 { className: vu },
@@ -1788,6 +1788,7 @@
                                 a().createElement('div', { className: y }),
                                 t && a().createElement('div', { className: ku }, t),
                                 a().createElement('div', { className: Tu }, k, T),
+                                a().createElement('div', { id: 'dialog-template-footer' }),
                             ),
                         );
                     },
@@ -2025,8 +2026,8 @@
                             }, []),
                             E = (0, n.useContext)(c),
                             s = E.small || E.extraSmall ? v.small : v.medium,
-                            A = (0, n.useMemo)(() => ({ size: s, type: g.primary, disabled: e.current === i }), [i, s]),
-                            F = (0, n.useMemo)(() => ({ size: s, type: g.secondary }), [s]);
+                            A = (0, n.useMemo)(() => ({ size: s, type: h.primary, disabled: e.current === i }), [i, s]),
+                            F = (0, n.useMemo)(() => ({ size: s, type: h.secondary }), [s]);
                         return a().createElement(Mu, {
                             parentId: 'select-slot-spec',
                             buttonAccept: A,
@@ -2043,7 +2044,7 @@
                         });
                     };
                 engine.whenReady.then(() => {
-                    h().render(
+                    g().render(
                         a().createElement(_, null, a().createElement(Ce, null)),
                         document.getElementById('root'),
                     );

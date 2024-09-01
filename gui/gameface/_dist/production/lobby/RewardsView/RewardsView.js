@@ -277,7 +277,7 @@
                     })(n || (n = {}));
             },
             2862: (e, t, r) => {
-                let n, a, i, s, o, l, c;
+                let n, a, i, s, o, l, c, u;
                 r.d(t, { $h: () => s, A2: () => l, E4: () => n, h2: () => i, kK: () => o, sh: () => c }),
                     (function (e) {
                         (e.Items = 'items'),
@@ -424,7 +424,10 @@
                             (e.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4'),
                             (e.PROGRESSION_STYLE_UPGRADED_5 = 'progressionStyleUpgraded_5'),
                             (e.PROGRESSION_STYLE_UPGRADED_6 = 'progressionStyleUpgraded_6');
-                    })(c || (c = {}));
+                    })(c || (c = {})),
+                    (function (e) {
+                        (e[(e.Engraving = 0)] = 'Engraving'), (e[(e.Background = 1)] = 'Background');
+                    })(u || (u = {}));
             },
             1558: (e, t, r) => {
                 r.d(t, { c$: () => w, m9: () => b, i2: () => v, ry: () => h, pI: () => E, p3: () => _ });
@@ -2504,6 +2507,7 @@
                         info__gold: 'Reward_info__gold_36',
                         info__crystal: 'Reward_info__crystal_36',
                         info__premiumTank: 'Reward_info__premiumTank_d3',
+                        title: 'Reward_title_36',
                         timer: 'Reward_timer_d3',
                     },
                     d = ({
@@ -2514,48 +2518,49 @@
                         special: i,
                         value: d,
                         valueType: _,
-                        style: m,
-                        className: g,
-                        classNames: h,
-                        tooltipArgs: E,
-                        periodicIconTooltipArgs: p,
+                        title: m,
+                        style: g,
+                        className: h,
+                        classNames: E,
+                        tooltipArgs: p,
+                        periodicIconTooltipArgs: w,
                     }) => {
-                        const w = (0, c.c$)(n, i),
-                            v = (0, c.i2)(i),
-                            b = (0, c.m9)(d, _);
+                        const v = (0, c.c$)(n, i),
+                            b = (0, c.i2)(i),
+                            f = (0, c.m9)(d, _);
                         return s().createElement(
                             'div',
-                            { className: a()(u.base, u[`base__${n}`], g), style: m },
+                            { className: a()(u.base, u[`base__${n}`], h), style: g },
                             s().createElement(
                                 o.l,
-                                { tooltipArgs: E, className: u.tooltipWrapper },
+                                { tooltipArgs: p, className: u.tooltipWrapper },
                                 s().createElement(
                                     s().Fragment,
                                     null,
                                     s().createElement(
                                         'div',
-                                        { className: a()(u.image, null == h ? void 0 : h.image) },
-                                        w &&
+                                        { className: a()(u.image, null == E ? void 0 : E.image) },
+                                        v &&
                                             s().createElement('div', {
-                                                className: a()(u.highlight, null == h ? void 0 : h.highlight),
+                                                className: a()(u.highlight, null == E ? void 0 : E.highlight),
                                                 style: {
-                                                    backgroundImage: `url(R.images.gui.maps.icons.quests.bonuses.${n}.${w}_highlight)`,
+                                                    backgroundImage: `url(R.images.gui.maps.icons.quests.bonuses.${n}.${v}_highlight)`,
                                                 },
                                             }),
                                         t &&
                                             s().createElement('div', {
-                                                className: a()(u.icon, null == h ? void 0 : h.rewardIcon),
+                                                className: a()(u.icon, null == E ? void 0 : E.rewardIcon),
                                                 style: { backgroundImage: `url(${t})` },
                                             }),
-                                        v &&
+                                        b &&
                                             s().createElement('div', {
-                                                className: a()(u.overlay, null == h ? void 0 : h.overlay),
+                                                className: a()(u.overlay, null == E ? void 0 : E.overlay),
                                                 style: {
-                                                    backgroundImage: `url(R.images.gui.maps.icons.quests.bonuses.${n}.${v}_overlay)`,
+                                                    backgroundImage: `url(R.images.gui.maps.icons.quests.bonuses.${n}.${b}_overlay)`,
                                                 },
                                             }),
                                     ),
-                                    b &&
+                                    f &&
                                         s().createElement(
                                             'div',
                                             {
@@ -2563,19 +2568,20 @@
                                                     u.info,
                                                     u[`info__${e}`],
                                                     _ === l.$h.MULTI && u.info__multi,
-                                                    null == h ? void 0 : h.info,
+                                                    null == E ? void 0 : E.info,
                                                 ),
                                             },
-                                            b,
+                                            f,
                                         ),
+                                    m && s().createElement('div', { className: u.title }, m),
                                 ),
                             ),
                             r &&
                                 s().createElement(
                                     o.l,
-                                    { tooltipArgs: p },
+                                    { tooltipArgs: w },
                                     s().createElement('div', {
-                                        className: a()(u.timer, null == h ? void 0 : h.periodicIcon),
+                                        className: a()(u.timer, null == E ? void 0 : E.periodicIcon),
                                     }),
                                 ),
                         );

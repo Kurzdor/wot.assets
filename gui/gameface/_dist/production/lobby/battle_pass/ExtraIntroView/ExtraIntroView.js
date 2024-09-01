@@ -1075,7 +1075,7 @@
                         [p.Large]: `${v().SMALL} ${v().MEDIUM} ${v().LARGE}`,
                         [p.ExtraLarge]: `${v().SMALL} ${v().MEDIUM} ${v().LARGE} ${v().EXTRA_LARGE}`,
                     },
-                    M = (u) => {
+                    O = (u) => {
                         let e = u.children,
                             t = u.className,
                             a = (function (u, e) {
@@ -1093,7 +1093,7 @@
                             A = r.mediaSize;
                         return n().createElement('div', y({ className: h()(t, L[i], S[E], T[A]) }, a), e);
                     },
-                    O = ['children'];
+                    M = ['children'];
                 const k = (u) => {
                     let e = u.children,
                         t = (function (u, e) {
@@ -1104,8 +1104,8 @@
                                 r = Object.keys(u);
                             for (a = 0; a < r.length; a++) (t = r[a]), e.indexOf(t) >= 0 || (n[t] = u[t]);
                             return n;
-                        })(u, O);
-                    return n().createElement(_, null, n().createElement(M, t, e));
+                        })(u, M);
+                    return n().createElement(_, null, n().createElement(O, t, e));
                 };
                 var H = t(493),
                     N = t.n(H);
@@ -1503,6 +1503,7 @@
                         base__sizBig: 'TankName_base__sizBig_a9',
                         base__typeWhite: 'TankName_base__typeWhite_32',
                         base__typeWhiteSpanish: 'TankName_base__typeWhiteSpanish_e2',
+                        base__typeWhiteOrange: 'TankName_base__typeWhiteOrange_ac',
                         base__typeColored: 'TankName_base__typeColored_bc',
                         level: 'TankName_level_bb',
                         type: 'TankName_type_3c',
@@ -1520,7 +1521,10 @@
                     (u.extraSmall = 'extraSmall'), (u.medium = 'medium'), (u.big = 'big');
                 })(_u || (_u = {})),
                     (function (u) {
-                        (u.colored = 'colored'), (u.white = 'white'), (u.whiteSpanish = 'whiteSpanish');
+                        (u.colored = 'colored'),
+                            (u.white = 'white'),
+                            (u.whiteSpanish = 'whiteSpanish'),
+                            (u.whiteOrange = 'whiteOrange');
                     })(mu || (mu = {}));
                 const hu = ({
                     isElite: u,
@@ -1549,7 +1553,7 @@
                                 du[`type__${E}`],
                                 null == o ? void 0 : o.typeIcon,
                             ),
-                            style: { backgroundImage: `url(${B})` },
+                            style: a ? { backgroundImage: `url(${B})` } : void 0,
                         }),
                         Cu(i, 'premiumIGR') && n().createElement('div', { className: du.premiumIGR }),
                         n().createElement('div', { className: h()(du.name, null == o ? void 0 : o.name) }, s ? t : e),
@@ -1787,8 +1791,8 @@
                     Lu = 'App_base_4d',
                     Su = 'App_base__visible_f0',
                     Tu = 'App_close_53',
-                    Mu = 'App_header_b6',
-                    Ou = 'App_content_16',
+                    Ou = 'App_header_b6',
+                    Mu = 'App_content_16',
                     ku = 'App_confirm_99',
                     Ru = 'Header_base_f4',
                     Hu = 'Header_title_0a',
@@ -1887,7 +1891,7 @@
                             ),
                             n().createElement(
                                 'div',
-                                { className: Mu },
+                                { className: Ou },
                                 n().createElement(Pu, {
                                     title: zu.title(),
                                     description: n().createElement(au, { text: zu.titleDescription(), binding: C }),
@@ -1895,7 +1899,7 @@
                             ),
                             n().createElement(
                                 'div',
-                                { className: Ou },
+                                { className: Mu },
                                 n().createElement($u, {
                                     title: zu.freeProgression(),
                                     name: i.vehicleName,

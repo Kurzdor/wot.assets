@@ -2636,8 +2636,8 @@
                                 ),
                             ),
                         );
-                let cu, Eu, Au, Fu, Du, mu, du;
-                var Bu, _u, Cu, pu;
+                let cu, Eu, Au, Fu, Du, mu, du, Bu;
+                var _u, Cu, pu, gu;
                 !(function (e) {
                     (e.Items = 'items'),
                         (e.Equipment = 'equipment'),
@@ -2726,24 +2726,40 @@
                             (e.BattleAchievement = 'dossier_achievement'),
                             (e.EquipCoin = 'equipCoin');
                     })(Eu || (Eu = {})),
-                    ((pu = Au || (Au = {})).Big = 'big'),
-                    (pu.Small = 'small'),
-                    (pu.Mini = 'mini'),
-                    (pu.S600x450 = 's600x450'),
-                    (pu.S400x300 = 's400x300'),
-                    (pu.S296x222 = 's296x222'),
-                    (pu.S232x174 = 's232x174'),
-                    (pu.S180x135 = 's180x135'),
-                    (pu.S128x100 = 's128x100'),
-                    (pu.S80x80 = 's80x80'),
-                    (pu.S64x64 = 's64x64'),
-                    (pu.S48x48 = 's48x48'),
-                    ((Cu = Fu || (Fu = {})).MULTI = 'multi'),
-                    (Cu.CURRENCY = 'currency'),
-                    (Cu.PREMIUM_PLUS = 'premium_plus'),
-                    (Cu.NUMBER = 'number'),
-                    (Cu.STRING = 'string'),
-                    ((_u = Du || (Du = {})).BATTLE_BOOSTER = 'battleBooster'),
+                    ((gu = Au || (Au = {})).Big = 'big'),
+                    (gu.Small = 'small'),
+                    (gu.Mini = 'mini'),
+                    (gu.S600x450 = 's600x450'),
+                    (gu.S400x300 = 's400x300'),
+                    (gu.S296x222 = 's296x222'),
+                    (gu.S232x174 = 's232x174'),
+                    (gu.S180x135 = 's180x135'),
+                    (gu.S128x100 = 's128x100'),
+                    (gu.S80x80 = 's80x80'),
+                    (gu.S64x64 = 's64x64'),
+                    (gu.S48x48 = 's48x48'),
+                    ((pu = Fu || (Fu = {})).MULTI = 'multi'),
+                    (pu.CURRENCY = 'currency'),
+                    (pu.PREMIUM_PLUS = 'premium_plus'),
+                    (pu.NUMBER = 'number'),
+                    (pu.STRING = 'string'),
+                    ((Cu = Du || (Du = {})).BATTLE_BOOSTER = 'battleBooster'),
+                    (Cu.BATTLE_BOOSTER_REPLACE = 'battleBoosterReplace'),
+                    (Cu.BUILT_IN_EQUIPMENT = 'builtInEquipment'),
+                    (Cu.EQUIPMENT_PLUS = 'equipmentPlus'),
+                    (Cu.EQUIPMENT_TROPHY_BASIC = 'equipmentTrophyBasic'),
+                    (Cu.EQUIPMENT_TROPHY_UPGRADED = 'equipmentTrophyUpgraded'),
+                    (Cu.EQUIPMENT_MODERNIZED_UPGRADED_1 = 'equipmentModernized_1'),
+                    (Cu.EQUIPMENT_MODERNIZED_UPGRADED_2 = 'equipmentModernized_2'),
+                    (Cu.EQUIPMENT_MODERNIZED_UPGRADED_3 = 'equipmentModernized_3'),
+                    (Cu.PROGRESSION_STYLE_UPGRADED_1 = 'progressionStyleUpgraded_1'),
+                    (Cu.PROGRESSION_STYLE_UPGRADED_2 = 'progressionStyleUpgraded_2'),
+                    (Cu.PROGRESSION_STYLE_UPGRADED_3 = 'progressionStyleUpgraded_3'),
+                    (Cu.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4'),
+                    (Cu.PROGRESSION_STYLE_UPGRADED_5 = 'progressionStyleUpgraded_5'),
+                    (Cu.PROGRESSION_STYLE_UPGRADED_6 = 'progressionStyleUpgraded_6'),
+                    ((mu || (mu = {})).BATTLE_BOOSTER = 'battleBooster'),
+                    ((_u = du || (du = {})).BATTLE_BOOSTER = 'battleBooster'),
                     (_u.BATTLE_BOOSTER_REPLACE = 'battleBoosterReplace'),
                     (_u.BUILT_IN_EQUIPMENT = 'builtInEquipment'),
                     (_u.EQUIPMENT_PLUS = 'equipmentPlus'),
@@ -2758,23 +2774,10 @@
                     (_u.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4'),
                     (_u.PROGRESSION_STYLE_UPGRADED_5 = 'progressionStyleUpgraded_5'),
                     (_u.PROGRESSION_STYLE_UPGRADED_6 = 'progressionStyleUpgraded_6'),
-                    ((mu || (mu = {})).BATTLE_BOOSTER = 'battleBooster'),
-                    ((Bu = du || (du = {})).BATTLE_BOOSTER = 'battleBooster'),
-                    (Bu.BATTLE_BOOSTER_REPLACE = 'battleBoosterReplace'),
-                    (Bu.BUILT_IN_EQUIPMENT = 'builtInEquipment'),
-                    (Bu.EQUIPMENT_PLUS = 'equipmentPlus'),
-                    (Bu.EQUIPMENT_TROPHY_BASIC = 'equipmentTrophyBasic'),
-                    (Bu.EQUIPMENT_TROPHY_UPGRADED = 'equipmentTrophyUpgraded'),
-                    (Bu.EQUIPMENT_MODERNIZED_UPGRADED_1 = 'equipmentModernized_1'),
-                    (Bu.EQUIPMENT_MODERNIZED_UPGRADED_2 = 'equipmentModernized_2'),
-                    (Bu.EQUIPMENT_MODERNIZED_UPGRADED_3 = 'equipmentModernized_3'),
-                    (Bu.PROGRESSION_STYLE_UPGRADED_1 = 'progressionStyleUpgraded_1'),
-                    (Bu.PROGRESSION_STYLE_UPGRADED_2 = 'progressionStyleUpgraded_2'),
-                    (Bu.PROGRESSION_STYLE_UPGRADED_3 = 'progressionStyleUpgraded_3'),
-                    (Bu.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4'),
-                    (Bu.PROGRESSION_STYLE_UPGRADED_5 = 'progressionStyleUpgraded_5'),
-                    (Bu.PROGRESSION_STYLE_UPGRADED_6 = 'progressionStyleUpgraded_6');
-                class gu extends r().PureComponent {
+                    (function (e) {
+                        (e[(e.Engraving = 0)] = 'Engraving'), (e[(e.Background = 1)] = 'Background');
+                    })(Bu || (Bu = {}));
+                class bu extends r().PureComponent {
                     render() {
                         let e;
                         e = 'gold' === this.props.format ? oe.B3.GOLD : oe.B3.INTEGRAL;
@@ -2782,9 +2785,9 @@
                         return void 0 !== this.props.value && void 0 !== u ? u : null;
                     }
                 }
-                let bu, hu, vu, fu, yu, wu, Tu;
-                var Pu, Su, ku;
-                (gu.defaultProps = { format: 'integral' }),
+                let hu, vu, fu, yu, wu, Tu, Pu;
+                var Su, ku, Ru;
+                (bu.defaultProps = { format: 'integral' }),
                     cu.Items,
                     cu.Equipment,
                     cu.Xp,
@@ -2827,233 +2830,233 @@
                     cu.Premium,
                     Au.Small,
                     Au.Big,
-                    ((ku = bu || (bu = {})).Active = 'active'),
-                    (ku.Paused = 'paused'),
-                    (ku.Completed = 'completed'),
-                    (ku.NotStarted = 'notStarted'),
+                    ((Ru = hu || (hu = {})).Active = 'active'),
+                    (Ru.Paused = 'paused'),
+                    (Ru.Completed = 'completed'),
+                    (Ru.NotStarted = 'notStarted'),
                     (function (e) {
                         (e.Vehicle = 'vehicle'), (e.Style = 'style'), (e.Tankman = 'tankman');
-                    })(hu || (hu = {})),
-                    (function (e) {
-                        (e.Micro = 'micro'), (e.Small = 'small'), (e.Medium = 'medium');
                     })(vu || (vu = {})),
                     (function (e) {
-                        (e.ACTIVE = 'active'), (e.COMPLETED = 'completed'), (e.NOT_CHOSEN = 'notChosen');
+                        (e.Micro = 'micro'), (e.Small = 'small'), (e.Medium = 'medium');
                     })(fu || (fu = {})),
-                    ((Su = yu || (yu = {})).AwaitSeason = 'awaitSeason'),
-                    (Su.Bought = 'bought'),
-                    (Su.Free = 'free'),
-                    (Su.Completed = 'completed'),
-                    (Su.CompletedRightNow = 'completedRightNow'),
-                    (Su.SwitchedChapterRightNow = 'switchedChapterRightNow'),
-                    (Su.NoVehiclesBase = 'noVehiclesBase'),
-                    (Su.ChapterNotChosen = 'chapterNotChosen'),
+                    (function (e) {
+                        (e.ACTIVE = 'active'), (e.COMPLETED = 'completed'), (e.NOT_CHOSEN = 'notChosen');
+                    })(yu || (yu = {})),
+                    ((ku = wu || (wu = {})).AwaitSeason = 'awaitSeason'),
+                    (ku.Bought = 'bought'),
+                    (ku.Free = 'free'),
+                    (ku.Completed = 'completed'),
+                    (ku.CompletedRightNow = 'completedRightNow'),
+                    (ku.SwitchedChapterRightNow = 'switchedChapterRightNow'),
+                    (ku.NoVehiclesBase = 'noVehiclesBase'),
+                    (ku.ChapterNotChosen = 'chapterNotChosen'),
                     (function (e) {
                         (e.None = ''),
                             (e.ShowLevel = 'show'),
                             (e.HideLevel = 'hide'),
                             (e.HideLevelWithDelay = 'hideWithDelay');
-                    })(wu || (wu = {})),
-                    ((Pu = Tu || (Tu = {})).style = 'style'),
-                    (Pu.tankman = 'tankman'),
-                    Tu.style,
-                    Tu.tankman;
-                const Ru = R.strings.battle_royale_vehicles,
-                    Nu = 'light',
-                    xu = 'medium',
-                    Ou = 'heavy',
-                    Mu = 'ussr',
-                    Lu = 'germany',
-                    Iu = 'britain',
-                    Uu = 'france',
-                    Wu = 'china',
-                    zu = 'poland',
-                    Gu = 'sweden',
-                    Vu = [Mu, Lu, 'usa', Iu, Uu, Wu, zu, Gu],
-                    Hu = [
+                    })(Tu || (Tu = {})),
+                    ((Su = Pu || (Pu = {})).style = 'style'),
+                    (Su.tankman = 'tankman'),
+                    Pu.style,
+                    Pu.tankman;
+                const Nu = R.strings.battle_royale_vehicles,
+                    xu = 'light',
+                    Ou = 'medium',
+                    Mu = 'heavy',
+                    Lu = 'ussr',
+                    Iu = 'germany',
+                    Uu = 'britain',
+                    Wu = 'france',
+                    zu = 'china',
+                    Gu = 'poland',
+                    Vu = 'sweden',
+                    Hu = [Lu, Iu, 'usa', Uu, Wu, zu, Gu, Vu],
+                    qu = [
                         {
                             imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.repairKit',
-                            title: Ru.abilities.repairKit(),
-                            description: Ru.abilities.repairKitDescription(),
+                            title: Nu.abilities.repairKit(),
+                            description: Nu.abilities.repairKitDescription(),
                         },
                         {
                             imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.recoveryKit',
-                            title: Ru.abilities.recoveryKit(),
-                            description: Ru.abilities.recoveryKitDescription(),
+                            title: Nu.abilities.recoveryKit(),
+                            description: Nu.abilities.recoveryKitDescription(),
                         },
                     ],
-                    qu = {
-                        [Mu]: {
-                            name: Ru.tanks.ussr.title(),
-                            description: Ru.tanks.ussr.description(),
+                    Yu = {
+                        [Lu]: {
+                            name: Nu.tanks.ussr.title(),
+                            description: Nu.tanks.ussr.description(),
                             tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.ussr',
                             imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.ussr',
                             abilities: [
-                                ...Hu,
+                                ...qu,
                                 {
                                     imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.minefield',
-                                    title: Ru.abilities.minefield(),
-                                    description: Ru.abilities.minefieldDescription(),
+                                    title: Nu.abilities.minefield(),
+                                    description: Nu.abilities.minefieldDescription(),
                                 },
                                 {
                                     imagePath:
                                         'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.recoveryZone',
-                                    title: Ru.abilities.recoveryZone(),
-                                    description: Ru.abilities.recoveryZoneDescription(),
+                                    title: Nu.abilities.recoveryZone(),
+                                    description: Nu.abilities.recoveryZoneDescription(),
                                 },
                             ],
-                            vehicleType: Ou,
+                            vehicleType: Mu,
                         },
-                        [Lu]: {
-                            name: Ru.tanks.germany.title(),
-                            description: Ru.tanks.germany.description(),
+                        [Iu]: {
+                            name: Nu.tanks.germany.title(),
+                            description: Nu.tanks.germany.description(),
                             tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.germany',
                             imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.germany',
                             abilities: [
-                                ...Hu,
+                                ...qu,
                                 {
                                     imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.nitro',
-                                    title: Ru.abilities.nitro(),
-                                    description: Ru.abilities.nitroDescription(),
+                                    title: Nu.abilities.nitro(),
+                                    description: Nu.abilities.nitroDescription(),
                                 },
                                 {
                                     imagePath:
                                         'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.recoveryDot',
-                                    title: Ru.abilities.recoveryDot(),
-                                    description: Ru.abilities.recoveryDotDescription(),
+                                    title: Nu.abilities.recoveryDot(),
+                                    description: Nu.abilities.recoveryDotDescription(),
+                                },
+                            ],
+                            vehicleType: Mu,
+                        },
+                        usa: {
+                            name: Nu.tanks.usa.title(),
+                            description: Nu.tanks.usa.description(),
+                            tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.usa',
+                            imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.usa',
+                            abilities: [
+                                ...qu,
+                                {
+                                    imagePath:
+                                        'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.extremeConcentration',
+                                    title: Nu.abilities.extremeConcentration(),
+                                    description: Nu.abilities.extremeConcentrationDescription(),
+                                },
+                                {
+                                    imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.trap',
+                                    title: Nu.abilities.trap(),
+                                    description: Nu.abilities.trapDescription(),
                                 },
                             ],
                             vehicleType: Ou,
                         },
-                        usa: {
-                            name: Ru.tanks.usa.title(),
-                            description: Ru.tanks.usa.description(),
-                            tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.usa',
-                            imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.usa',
-                            abilities: [
-                                ...Hu,
-                                {
-                                    imagePath:
-                                        'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.extremeConcentration',
-                                    title: Ru.abilities.extremeConcentration(),
-                                    description: Ru.abilities.extremeConcentrationDescription(),
-                                },
-                                {
-                                    imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.trap',
-                                    title: Ru.abilities.trap(),
-                                    description: Ru.abilities.trapDescription(),
-                                },
-                            ],
-                            vehicleType: xu,
-                        },
-                        [Iu]: {
-                            name: Ru.tanks.britain.title(),
-                            description: Ru.tanks.britain.description(),
+                        [Uu]: {
+                            name: Nu.tanks.britain.title(),
+                            description: Nu.tanks.britain.description(),
                             tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.britain',
                             imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.britain',
                             abilities: [
-                                ...Hu,
+                                ...qu,
                                 {
                                     imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.rustCloud',
-                                    title: Ru.abilities.rustCloud(),
-                                    description: Ru.abilities.rustCloudDescription(),
+                                    title: Nu.abilities.rustCloud(),
+                                    description: Nu.abilities.rustCloudDescription(),
                                 },
                                 {
                                     imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.berserk',
-                                    title: Ru.abilities.berserk(),
-                                    description: Ru.abilities.berserkDescription(),
+                                    title: Nu.abilities.berserk(),
+                                    description: Nu.abilities.berserkDescription(),
                                 },
                             ],
-                            vehicleType: xu,
+                            vehicleType: Ou,
                         },
-                        [Uu]: {
-                            name: Ru.tanks.france.title(),
-                            description: Ru.tanks.france.description(),
+                        [Wu]: {
+                            name: Nu.tanks.france.title(),
+                            description: Nu.tanks.france.description(),
                             tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.france',
                             imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.france',
                             abilities: [
-                                ...Hu,
+                                ...qu,
                                 {
                                     imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.airstrike',
-                                    title: Ru.abilities.airstrike(),
-                                    description: Ru.abilities.airstrikeDescription(),
+                                    title: Nu.abilities.airstrike(),
+                                    description: Nu.abilities.airstrikeDescription(),
                                 },
                                 {
                                     imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.brander',
-                                    title: Ru.abilities.brander(),
-                                    description: Ru.abilities.branderDescription(),
+                                    title: Nu.abilities.brander(),
+                                    description: Nu.abilities.branderDescription(),
                                 },
                             ],
-                            vehicleType: Nu,
+                            vehicleType: xu,
                             hasCN360Image: !0,
                         },
-                        [Wu]: {
-                            name: Ru.tanks.china.title(),
-                            description: Ru.tanks.china.description(),
+                        [zu]: {
+                            name: Nu.tanks.china.title(),
+                            description: Nu.tanks.china.description(),
                             tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.china',
                             imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.china',
                             abilities: [
-                                ...Hu,
+                                ...qu,
                                 {
                                     imagePath:
                                         'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.corrodingShot',
-                                    title: Ru.abilities.corrodingShot(),
-                                    description: Ru.abilities.corrodingShotDescription(),
+                                    title: Nu.abilities.corrodingShot(),
+                                    description: Nu.abilities.corrodingShotDescription(),
                                 },
                                 {
                                     imagePath:
                                         'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.clingBrander',
-                                    title: Ru.abilities.clingBrander(),
-                                    description: Ru.abilities.clingBranderDescription(),
-                                },
-                            ],
-                            vehicleType: Nu,
-                        },
-                        [zu]: {
-                            name: Ru.tanks.poland.title(),
-                            description: Ru.tanks.poland.description(),
-                            tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.poland',
-                            imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.poland',
-                            abilities: [
-                                ...Hu,
-                                {
-                                    imagePath:
-                                        'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.thunderStrike',
-                                    title: Ru.abilities.thunderStrike(),
-                                    description: Ru.abilities.thunderStrikeDescription(),
-                                },
-                                {
-                                    imagePath:
-                                        'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.shotPassion',
-                                    title: Ru.abilities.shotPassion(),
-                                    description: Ru.abilities.shotPassionDescription(),
+                                    title: Nu.abilities.clingBrander(),
+                                    description: Nu.abilities.clingBranderDescription(),
                                 },
                             ],
                             vehicleType: xu,
                         },
                         [Gu]: {
-                            name: Ru.tanks.sweden.title(),
-                            description: Ru.tanks.sweden.description(),
-                            tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.sweden',
-                            imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.sweden',
+                            name: Nu.tanks.poland.title(),
+                            description: Nu.tanks.poland.description(),
+                            tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.poland',
+                            imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.poland',
                             abilities: [
-                                ...Hu,
+                                ...qu,
                                 {
-                                    imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.fireCircle',
-                                    title: Ru.abilities.fireCircle(),
-                                    description: Ru.abilities.fireCircleDescription(),
+                                    imagePath:
+                                        'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.thunderStrike',
+                                    title: Nu.abilities.thunderStrike(),
+                                    description: Nu.abilities.thunderStrikeDescription(),
                                 },
                                 {
                                     imagePath:
-                                        'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.adaptationHealthRestore',
-                                    title: Ru.abilities.adaptationHealthRestore(),
-                                    description: Ru.abilities.adaptationHealthRestoreDescription(),
+                                        'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.shotPassion',
+                                    title: Nu.abilities.shotPassion(),
+                                    description: Nu.abilities.shotPassionDescription(),
                                 },
                             ],
                             vehicleType: Ou,
                         },
+                        [Vu]: {
+                            name: Nu.tanks.sweden.title(),
+                            description: Nu.tanks.sweden.description(),
+                            tabImagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.slots.sweden',
+                            imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.sweden',
+                            abilities: [
+                                ...qu,
+                                {
+                                    imagePath: 'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.fireCircle',
+                                    title: Nu.abilities.fireCircle(),
+                                    description: Nu.abilities.fireCircleDescription(),
+                                },
+                                {
+                                    imagePath:
+                                        'R.images.battle_royale.gui.maps.infopage.vehicles.abilities.adaptationHealthRestore',
+                                    title: Nu.abilities.adaptationHealthRestore(),
+                                    description: Nu.abilities.adaptationHealthRestoreDescription(),
+                                },
+                            ],
+                            vehicleType: Mu,
+                        },
                     },
-                    Yu = {
+                    ju = {
                         header: 'Vehicles_header_44',
                         tab: 'Vehicles_tab_9a',
                         tabGlow: 'Vehicles_tabGlow_26',
@@ -3076,95 +3079,95 @@
                         image: 'Vehicles_image_40',
                         type: 'Vehicles_type_b9',
                     },
-                    ju = [];
-                for (var Xu = 0, Ku = Object.entries(qu); Xu < Ku.length; Xu++) {
-                    const e = Ku[Xu][1];
-                    ju.push(e.imagePath);
+                    Xu = [];
+                for (var Ku = 0, Zu = Object.entries(Yu); Ku < Zu.length; Ku++) {
+                    const e = Zu[Ku][1];
+                    Xu.push(e.imagePath);
                 }
-                const Zu = () => {
+                const $u = () => {
                         const e = (0, n.useState)(0),
                             u = e[0],
                             t = e[1];
                         var a;
                         return (
                             (a = () => {
-                                ju.map((e) => {
+                                Xu.map((e) => {
                                     new Image().src = e;
                                 });
                             }),
                             (0, n.useEffect)(a, []),
                             r().createElement(
                                 'div',
-                                { className: Yu.base },
+                                { className: ju.base },
                                 r().createElement(
                                     'div',
-                                    { className: Yu.header },
-                                    Vu.map((e, a) =>
+                                    { className: ju.header },
+                                    Hu.map((e, a) =>
                                         r().createElement(
                                             'div',
                                             {
-                                                className: c()(Yu.tab, u === a && Yu.tab__active),
+                                                className: c()(ju.tab, u === a && ju.tab__active),
                                                 key: a,
                                                 onClick: () => (t(a), void y('yes1')),
                                             },
                                             r().createElement('img', {
-                                                className: Yu.tabImage,
-                                                src: qu[e].tabImagePath,
-                                                alt: qu[e].name,
+                                                className: ju.tabImage,
+                                                src: Yu[e].tabImagePath,
+                                                alt: Yu[e].name,
                                             }),
-                                            r().createElement('div', { className: Yu.tabTitle }, qu[e].name),
-                                            r().createElement('div', { className: c()(Yu.tabGlow, Yu.tabGlow__upper) }),
+                                            r().createElement('div', { className: ju.tabTitle }, Yu[e].name),
+                                            r().createElement('div', { className: c()(ju.tabGlow, ju.tabGlow__upper) }),
                                             r().createElement('div', {
-                                                className: c()(Yu.tabGlow, Yu.tabGlow__bottom),
+                                                className: c()(ju.tabGlow, ju.tabGlow__bottom),
                                             }),
                                         ),
                                     ),
                                 ),
                                 r().createElement(
                                     'div',
-                                    { className: Yu.body },
+                                    { className: ju.body },
                                     r().createElement(
                                         'div',
-                                        { className: Yu.description },
+                                        { className: ju.description },
                                         r().createElement('img', {
-                                            className: Yu.image,
-                                            src: qu[Vu[u]].imagePath,
-                                            alt: qu[Vu[u]].name,
+                                            className: ju.image,
+                                            src: Yu[Hu[u]].imagePath,
+                                            alt: Yu[Hu[u]].name,
                                         }),
                                         r().createElement(
                                             'div',
-                                            { className: Yu.text },
+                                            { className: ju.text },
                                             r().createElement(
                                                 'div',
-                                                { className: Yu.title },
+                                                { className: ju.title },
                                                 r().createElement('img', {
-                                                    className: Yu.type,
-                                                    src: `R.images.battle_royale.gui.maps.infopage.vehicles.vehicleTypes.${qu[Vu[u]].vehicleType}`,
+                                                    className: ju.type,
+                                                    src: `R.images.battle_royale.gui.maps.infopage.vehicles.vehicleTypes.${Yu[Hu[u]].vehicleType}`,
                                                 }),
-                                                r().createElement('div', { className: Yu.titleText }, qu[Vu[u]].name),
+                                                r().createElement('div', { className: ju.titleText }, Yu[Hu[u]].name),
                                             ),
-                                            r().createElement('div', { className: Yu.subtitle }, qu[Vu[u]].description),
+                                            r().createElement('div', { className: ju.subtitle }, Yu[Hu[u]].description),
                                         ),
                                     ),
                                     r().createElement(
                                         'div',
-                                        { className: Yu.container },
-                                        qu[Vu[u]].abilities.map((e) =>
+                                        { className: ju.container },
+                                        Yu[Hu[u]].abilities.map((e) =>
                                             r().createElement(
                                                 'div',
-                                                { key: e.title, className: Yu.abilitiesItem },
+                                                { key: e.title, className: ju.abilitiesItem },
                                                 r().createElement('img', {
-                                                    className: Yu.abilitiesImage,
+                                                    className: ju.abilitiesImage,
                                                     src: e.imagePath,
                                                     alt: e.title,
                                                 }),
                                                 r().createElement(
                                                     'div',
-                                                    { className: Yu.abilitiesText },
-                                                    r().createElement('div', { className: Yu.abilitiesTitle }, e.title),
+                                                    { className: ju.abilitiesText },
+                                                    r().createElement('div', { className: ju.abilitiesTitle }, e.title),
                                                     r().createElement(
                                                         'div',
-                                                        { className: Yu.abilitiesSubtitle },
+                                                        { className: ju.abilitiesSubtitle },
                                                         r().createElement(qe, { text: e.description }),
                                                     ),
                                                 ),
@@ -3175,7 +3178,7 @@
                             )
                         );
                     },
-                    $u = (0, Ee.Pi)(() => {
+                    Qu = (0, Ee.Pi)(() => {
                         const e = be(),
                             u = e.model,
                             t = e.controls,
@@ -3216,7 +3219,7 @@
                                             description: ye,
                                             classNames: { alignCenter: We.alignCenter },
                                         }),
-                                        r().createElement(Zu, null),
+                                        r().createElement($u, null),
                                         r().createElement(Xe, {
                                             description: Me,
                                             className: We.respawnContainer,
@@ -3298,7 +3301,7 @@
                     });
                 engine.whenReady.then(() => {
                     o().render(
-                        r().createElement(ge, null, r().createElement($u, null)),
+                        r().createElement(ge, null, r().createElement(Qu, null)),
                         document.getElementById('root'),
                     );
                 });

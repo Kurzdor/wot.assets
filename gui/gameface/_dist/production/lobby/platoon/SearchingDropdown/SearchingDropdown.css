@@ -387,7 +387,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Separator_image_5b {
-    background: center / 100% no-repeat;
+    background: no-repeat center / 100% 100%;
 }
 
 .Separator_base__horizontal_34 .Separator_image_5b {

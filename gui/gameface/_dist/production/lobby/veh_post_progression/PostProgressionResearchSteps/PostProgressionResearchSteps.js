@@ -1749,6 +1749,7 @@
                             r().createElement('div', { className: x }),
                             t && r().createElement('div', { className: ve }, t),
                             r().createElement('div', { className: pe }, O, S),
+                            r().createElement('div', { id: 'dialog-template-footer' }),
                         ),
                     );
                 };

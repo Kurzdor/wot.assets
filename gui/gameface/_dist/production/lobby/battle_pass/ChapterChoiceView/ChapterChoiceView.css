@@ -140,41 +140,6 @@
     opacity: 0;
 }
 
-.Identity_base_56 {
-    pointer-events: none;
-}
-
-.Identity_base__chapter_choice_df {
-    position: absolute;
-    top: 20rem;
-    right: 20rem;
-    z-index: 2;
-}
-
-.Identity_base__progression_1c {
-    margin: -3rem 10rem 0 0;
-}
-
-.mediaMedium .Identity_base__progression_1c {
-    margin: -18rem 20rem 0 0;
-}
-
-.mediaLarge .Identity_base__progression_1c {
-    margin-top: 0;
-}
-
-.Identity_identityImage_69 {
-    width: 202rem;
-    height: 94rem;
-    background: url('R.images.gui.maps.icons.battlePass.identity.identity_small') center / contain no-repeat;
-}
-
-.mediaMedium .Identity_identityImage_69 {
-    width: 300rem;
-    height: 140rem;
-    background-image: url('R.images.gui.maps.icons.battlePass.identity.identity');
-}
-
 .App_base_26 {
     display: flex;
     justify-content: center;
@@ -415,6 +380,10 @@
 
 .TankName_base__typeWhiteSpanish_e2 {
     color: #e9e2bf;
+}
+
+.TankName_base__typeWhiteOrange_ac {
+    color: #fefeec;
 }
 
 .TankName_base__typeColored_bc .TankName_level_bb {
@@ -2024,21 +1993,12 @@
 }
 
 .Chapter_vehicleInHangar_61 {
-    width: 24rem;
-    height: 24rem;
-    margin: -1rem 0 5rem;
-    background: url('R.images.gui.maps.icons.battlePass.chapter_choice.hasVehicle') no-repeat center / contain;
-}
-
-.mediaMedium .Chapter_vehicleInHangar_61 {
-    width: 26rem;
+    width: 30rem;
     height: 26rem;
-}
-
-.mediaLarge .Chapter_vehicleInHangar_61 {
-    width: 32rem;
-    height: 32rem;
-    margin-top: -6rem;
+    margin: -5rem 0 5rem;
+    background: url('R.images.gui.maps.icons.battlePass.chapter_choice.hasVehicle') no-repeat center / contain;
+    cursor: pointer;
+    pointer-events: auto;
 }
 
 .Background_base_67 {
@@ -2260,7 +2220,7 @@
 }
 
 .Label_base_05 {
-    color: #8c8c7e;
+    color: #e9e2bf;
     font-size: 12rem;
     font-weight: 400;
     line-height: 1.3;
@@ -2270,16 +2230,18 @@
     height: 42rem;
     font-weight: 700;
     text-align: center;
+    letter-spacing: 0.2rem;
     white-space: pre-wrap;
+    opacity: 0.7;
     position: absolute;
     top: 74rem;
     right: 3rem;
     left: 3rem;
     z-index: 5;
+    transition: opacity 0.3s linear;
 }
 .mediaMedium .Label_base_05 {
     display: flex;
-    transition: color 0.3s linear;
 }
 .Label_base__big_3c {
     color: #fefeec;
@@ -2289,6 +2251,7 @@
     display: flex;
     height: 65rem;
     color: rgba(254, 254, 236, 0.5);
+    opacity: 1;
     top: 86rem;
     transition: color 0.3s linear;
 }
@@ -2304,8 +2267,12 @@
     text-shadow:
         0 0 4rem rgba(255, 127, 0, 0.25),
         0 0 15rem rgba(238, 85, 34, 0.7);
+    opacity: 1;
 }
 .Label_base__hover_51 {
+    opacity: 1;
+}
+.Label_base__hover_51.Label_base__big_3c {
     color: #e9e2bf;
 }
 .Label_base__hover_51.Label_base__gold_dc {
@@ -2864,85 +2831,37 @@
     height: 280rem;
 }
 
-.PointAward_locked_7c,
-.PointAward_lockedHover_80 {
+.PointAward_locked_7c {
     width: 24rem;
     height: 24rem;
-    background: no-repeat center / contain;
+    background: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_small_s') no-repeat center / contain;
+    opacity: 0.7;
     position: absolute;
     bottom: 3rem;
     z-index: 3;
     transition: opacity 0.3s linear;
 }
 
-.mediaMedium .PointAward_locked_7c,
-.mediaMedium .PointAward_lockedHover_80 {
+.mediaMedium .PointAward_locked_7c {
+    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_small_m');
     bottom: 4rem;
 }
 
-.PointAward_locked__hidden_bb,
-.PointAward_lockedHover__hidden_17 {
-    display: none;
-}
-
-.PointAward_base__big_dc .PointAward_locked_7c,
-.PointAward_base__big_dc .PointAward_lockedHover_80 {
+.PointAward_base__big_dc .PointAward_locked_7c {
     width: 32rem;
     height: 32rem;
+    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_big_s');
     bottom: 8rem;
 }
 
-.mediaMedium .PointAward_base__big_dc .PointAward_locked_7c,
-.mediaMedium .PointAward_base__big_dc .PointAward_lockedHover_80 {
+.mediaMedium .PointAward_base__big_dc .PointAward_locked_7c {
     width: 48rem;
     height: 48rem;
+    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_big_m');
     bottom: 13rem;
 }
 
-.PointAward_base__big_dc .PointAward_locked__hidden_bb,
-.PointAward_base__big_dc .PointAward_lockedHover__hidden_17 {
-    display: none;
-}
-
-.PointAward_locked_7c {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_small_s');
-    opacity: 1;
-}
-
-.mediaMedium .PointAward_locked_7c {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_small_m');
-}
-
-.PointAward_base__big_dc .PointAward_locked_7c {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_big_s');
-}
-
-.mediaMedium .PointAward_base__big_dc .PointAward_locked_7c {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_big_m');
-}
-
 .PointAward_base__hover_50 .PointAward_locked_7c {
-    opacity: 0;
-}
-
-.PointAward_lockedHover_80 {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_small_s');
-    opacity: 0;
-}
-
-.mediaMedium .PointAward_lockedHover_80 {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_small_m');
-}
-
-.PointAward_base__big_dc .PointAward_lockedHover_80 {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_big_s');
-}
-
-.mediaMedium .PointAward_base__big_dc .PointAward_lockedHover_80 {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_big_m');
-}
-
-.PointAward_base__hover_50 .PointAward_lockedHover_80 {
     opacity: 1;
 }
 

@@ -1571,17 +1571,17 @@
             Promise.all(Object.keys(__webpack_require__.f).reduce((t, r) => (__webpack_require__.f[r](e, t), t), []))),
         (__webpack_require__.u = (e) =>
             36 === e
-                ? 'chunks/lobby/9fe03d2224fbb366a6f5.js'
+                ? 'chunks/lobby/68cab0edd205e8deca20.js'
                 : 154 === e
-                  ? 'chunks/lobby/637c2be724677b7f929b.js'
+                  ? 'chunks/lobby/d35c0bba18b5ca630f4a.js'
                   : 805 === e
-                    ? 'chunks/lobby/3b022902bdccd604e902.js'
+                    ? 'chunks/lobby/c842d067cdbb910e6989.js'
                     : void 0),
         (__webpack_require__.miniCssF = (e) =>
             154 === e
-                ? 'chunks/lobby/637c2be724677b7f929b.css'
+                ? 'chunks/lobby/d35c0bba18b5ca630f4a.css'
                 : 805 === e
-                  ? 'chunks/lobby/3b022902bdccd604e902.css'
+                  ? 'chunks/lobby/c842d067cdbb910e6989.css'
                   : 'lobby/achievements/AchievementsMainView/AchievementsMainView.css'),
         (__webpack_require__.g = (function () {
             if ('object' == typeof globalThis) return globalThis;

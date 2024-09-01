@@ -178,8 +178,8 @@
                     },
                     D = ['args'];
                 const B = 2,
-                    U = 16,
-                    k = 32,
+                    k = 16,
+                    U = 32,
                     I = 64,
                     N = (e, t) => {
                         const n = 'GFViewEventProxy';
@@ -219,13 +219,13 @@
                     },
                     C = {
                         close(e) {
-                            N('popover' === e ? B : k);
+                            N('popover' === e ? B : U);
                         },
                         minimize() {
                             N(I);
                         },
                         move(e) {
-                            N(U, { isMouseEvent: !0, on: e });
+                            N(k, { isMouseEvent: !0, on: e });
                         },
                     };
                 function M(e) {
@@ -399,7 +399,7 @@
                 });
                 var pe = n(986),
                     me = n.n(pe);
-                let ve, Ee, ge, fe, _e, Pe, be, Te;
+                let ve, Ee, ge, fe, _e, Pe, be, Te, ye;
                 !(function (e) {
                     (e.Items = 'items'),
                         (e.Equipment = 'equipment'),
@@ -547,32 +547,35 @@
                             (e.PROGRESSION_STYLE_UPGRADED_6 = 'progressionStyleUpgraded_6');
                     })(be || (be = {})),
                     (function (e) {
+                        (e[(e.Engraving = 0)] = 'Engraving'), (e[(e.Background = 1)] = 'Background');
+                    })(Te || (Te = {})),
+                    (function (e) {
                         (e[(e.Inactive = 0)] = 'Inactive'),
                             (e[(e.Active = 1)] = 'Active'),
                             (e[(e.Canceled = 2)] = 'Canceled');
-                    })(Te || (Te = {}));
-                var ye = n(515);
-                function he(e) {
+                    })(ye || (ye = {}));
+                var he = n(515);
+                function Se(e) {
                     return e;
                 }
-                function Se() {
+                function we() {
                     return !1;
                 }
                 console.log;
-                var we = n(174);
-                function Re(e, t) {
+                var Re = n(174);
+                function Oe(e, t) {
                     var n = ('undefined' != typeof Symbol && e[Symbol.iterator]) || e['@@iterator'];
                     if (n) return (n = n.call(e)).next.bind(n);
                     if (
                         Array.isArray(e) ||
                         (n = (function (e, t) {
                             if (!e) return;
-                            if ('string' == typeof e) return Oe(e, t);
+                            if ('string' == typeof e) return xe(e, t);
                             var n = Object.prototype.toString.call(e).slice(8, -1);
                             'Object' === n && e.constructor && (n = e.constructor.name);
                             if ('Map' === n || 'Set' === n) return Array.from(e);
                             if ('Arguments' === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))
-                                return Oe(e, t);
+                                return xe(e, t);
                         })(e)) ||
                         (t && e && 'number' == typeof e.length)
                     ) {
@@ -586,14 +589,14 @@
                         'Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.',
                     );
                 }
-                function Oe(e, t) {
+                function xe(e, t) {
                     (null == t || t > e.length) && (t = e.length);
                     for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
                     return r;
                 }
-                const xe = (e) => (0 === e ? window : window.subViews.get(e));
-                var Ae = n(946);
-                const De = ((e, t) => {
+                const Ae = (e) => (0 === e ? window : window.subViews.get(e));
+                var De = n(946);
+                const Be = ((e, t) => {
                         const n = (0, ie.createContext)({});
                         return [
                             function ({ mode: r = 'real', options: o, children: i, mocks: a }) {
@@ -603,7 +606,7 @@
                                         const a = (function ({
                                                 initializer: e = !0,
                                                 rootId: t = 0,
-                                                getRoot: n = xe,
+                                                getRoot: n = Ae,
                                                 context: r = 'model',
                                             } = {}) {
                                                 const o = new Map();
@@ -650,7 +653,7 @@
                                                         };
                                                     },
                                                     dispose: function () {
-                                                        for (var e, n = Re(o.keys()); !(e = n()).done; ) i(e.value, t);
+                                                        for (var e, n = Oe(o.keys()); !(e = n()).done; ) i(e.value, t);
                                                     },
                                                     unsubscribe: i,
                                                 };
@@ -674,11 +677,11 @@
                                                 observableModel: {
                                                     array: (e, t) => {
                                                         const r = null != t ? t : u(e),
-                                                            o = we.LO.box(r, { equals: Se });
+                                                            o = Re.LO.box(r, { equals: we });
                                                         return (
                                                             'real' === n &&
                                                                 l.subscribe(
-                                                                    (0, we.aD)((e) => o.set(e)),
+                                                                    (0, Re.aD)((e) => o.set(e)),
                                                                     e,
                                                                 ),
                                                             o
@@ -686,11 +689,11 @@
                                                     },
                                                     object: (e, t) => {
                                                         const r = null != t ? t : u(e),
-                                                            o = we.LO.box(r, { equals: Se });
+                                                            o = Re.LO.box(r, { equals: we });
                                                         return (
                                                             'real' === n &&
                                                                 l.subscribe(
-                                                                    (0, we.aD)((e) => o.set(e)),
+                                                                    (0, Re.aD)((e) => o.set(e)),
                                                                     e,
                                                                 ),
                                                             o
@@ -700,13 +703,13 @@
                                                         const r = u(t);
                                                         if (Array.isArray(e)) {
                                                             const o = e.reduce(
-                                                                (e, t) => ((e[t] = we.LO.box(r[t], {})), e),
+                                                                (e, t) => ((e[t] = Re.LO.box(r[t], {})), e),
                                                                 {},
                                                             );
                                                             return (
                                                                 'real' === n &&
                                                                     l.subscribe(
-                                                                        (0, we.aD)((t) => {
+                                                                        (0, Re.aD)((t) => {
                                                                             e.forEach((e) => {
                                                                                 o[e].set(t[e]);
                                                                             });
@@ -720,13 +723,13 @@
                                                             const o = e,
                                                                 i = Object.entries(o),
                                                                 a = i.reduce(
-                                                                    (e, [t, n]) => ((e[n] = we.LO.box(r[t], {})), e),
+                                                                    (e, [t, n]) => ((e[n] = Re.LO.box(r[t], {})), e),
                                                                     {},
                                                                 );
                                                             return (
                                                                 'real' === n &&
                                                                     l.subscribe(
-                                                                        (0, we.aD)((e) => {
+                                                                        (0, Re.aD)((e) => {
                                                                             i.forEach(([t, n]) => {
                                                                                 a[n].set(e[t]);
                                                                             });
@@ -780,122 +783,122 @@
                                     bonuses: e.array('bonuses', []),
                                     primitives: e.primitives(['nextCharge', 'expirationDate']),
                                 },
-                                n = (0, Ae.Om)(
+                                n = (0, De.Om)(
                                     () => {
                                         return (
                                             (e = t.bonuses.get()),
-                                            (n = he),
+                                            (n = Se),
                                             Array.isArray(e)
                                                 ? e.map(n)
                                                 : e.map((e, t, r) => n(null == e ? void 0 : e.value, t, r))
                                         );
                                         var e, n;
                                     },
-                                    { equals: Se },
+                                    { equals: we },
                                 );
                             return Object.assign({ computes: { getBonuses: n } }, t);
                         },
                         () => {},
                     ),
-                    Be = De[0],
-                    Ue = De[1],
-                    ke = 'WotPlusTooltipApp_base_e0',
-                    Ie = 'WotPlusTooltipApp_headerBlock_55',
-                    Ne = 'WotPlusTooltipApp_headerTitle_8e',
-                    Ce = 'WotPlusTooltipApp_headerDesc_f7',
-                    Me = 'WotPlusTooltipApp_decorator_a3',
-                    Ge = 'WotPlusTooltipApp_gridBase_b7',
-                    Le = 'WotPlusTooltipApp_gridElement_18',
-                    ze = 'WotPlusTooltipApp_bonusImg_2a',
-                    Fe = 'WotPlusTooltipApp_bonusName_f0',
-                    je = 'WotPlusTooltipApp_statusBlock_d8',
-                    qe = 'WotPlusTooltipApp_status_e3',
-                    Xe = 'WotPlusTooltipApp_status__activated_ca',
-                    We = 'WotPlusTooltipApp_status__suspended_a8',
-                    Ye = 'WotPlusTooltipApp_description_bd',
-                    Qe = 'WotPlusTooltipApp_chargeBlock_69',
-                    Ve = 'WotPlusTooltipApp_chargeText_54',
-                    He = 'WotPlusTooltipApp_chargeTime_29',
-                    $e = () => R.strings.subscription.subscriptionCardTooltip,
-                    Ze = { [Te.Inactive]: $e().desc.available(), [Te.Canceled]: $e().desc.canceled() },
-                    Je = {
-                        [Te.Active]: $e().active(),
-                        [Te.Inactive]: $e().available(),
-                        [Te.Canceled]: $e().canceled(),
+                    ke = Be[0],
+                    Ue = Be[1],
+                    Ie = 'WotPlusTooltipApp_base_e0',
+                    Ne = 'WotPlusTooltipApp_headerBlock_55',
+                    Ce = 'WotPlusTooltipApp_headerTitle_8e',
+                    Me = 'WotPlusTooltipApp_headerDesc_f7',
+                    Ge = 'WotPlusTooltipApp_decorator_a3',
+                    Le = 'WotPlusTooltipApp_gridBase_b7',
+                    ze = 'WotPlusTooltipApp_gridElement_18',
+                    Fe = 'WotPlusTooltipApp_bonusImg_2a',
+                    je = 'WotPlusTooltipApp_bonusName_f0',
+                    qe = 'WotPlusTooltipApp_statusBlock_d8',
+                    Xe = 'WotPlusTooltipApp_status_e3',
+                    We = 'WotPlusTooltipApp_status__activated_ca',
+                    Ye = 'WotPlusTooltipApp_status__suspended_a8',
+                    Qe = 'WotPlusTooltipApp_description_bd',
+                    Ve = 'WotPlusTooltipApp_chargeBlock_69',
+                    He = 'WotPlusTooltipApp_chargeText_54',
+                    $e = 'WotPlusTooltipApp_chargeTime_29',
+                    Ze = () => R.strings.subscription.subscriptionCardTooltip,
+                    Je = { [ye.Inactive]: Ze().desc.available(), [ye.Canceled]: Ze().desc.canceled() },
+                    Ke = {
+                        [ye.Active]: Ze().active(),
+                        [ye.Inactive]: Ze().available(),
+                        [ye.Canceled]: Ze().canceled(),
                     },
-                    Ke = () => R.images.gui.maps.icons.subscription.tooltip,
-                    et = (e) => {
+                    et = () => R.images.gui.maps.icons.subscription.tooltip,
+                    tt = (e) => {
                         const t = e.state,
                             n = e.nextCharge,
                             r = e.expirationDate;
-                        return t === Te.Active && n
+                        return t === ye.Active && n
                             ? ae().createElement(
                                   'div',
-                                  { className: Qe },
-                                  ae().createElement('span', { className: Ve }, $e().chargeTime()),
-                                  ae().createElement('span', { className: He }, n),
+                                  { className: Ve },
+                                  ae().createElement('span', { className: He }, Ze().chargeTime()),
+                                  ae().createElement('span', { className: $e }, n),
                               )
-                            : [Te.Canceled, Te.Active].includes(t) && r
+                            : [ye.Canceled, ye.Active].includes(t) && r
                               ? ae().createElement(
                                     'div',
-                                    { className: Qe },
-                                    ae().createElement('span', { className: Ve }, $e().activeUntil()),
-                                    ae().createElement('span', { className: He }, r),
+                                    { className: Ve },
+                                    ae().createElement('span', { className: He }, Ze().activeUntil()),
+                                    ae().createElement('span', { className: $e }, r),
                                 )
                               : null;
                     },
-                    tt = (0, ye.Pi)(() => {
+                    nt = (0, he.Pi)(() => {
                         const e = Ue().model,
                             t = e.root.get().state,
                             n = e.primitives.nextCharge.get(),
                             r = e.primitives.expirationDate.get(),
-                            o = l()(qe, t === Te.Active && Xe, t === Te.Canceled && We),
+                            o = l()(Xe, t === ye.Active && We, t === ye.Canceled && Ye),
                             i = ((e) => e.map((e) => ({ name: e.name, value: e.label, valueType: fe.STRING })))(
                                 e.computes.getBonuses(),
                             );
                         return ae().createElement(
                             'div',
-                            { className: ke },
+                            { className: Ie },
                             ae().createElement(
                                 'div',
-                                { className: Ie },
-                                ae().createElement('span', { className: Ne }, $e().headerTitle()),
-                                ae().createElement('span', { className: Ce }, $e().headerDescription()),
+                                { className: Ne },
+                                ae().createElement('span', { className: Ce }, Ze().headerTitle()),
+                                ae().createElement('span', { className: Me }, Ze().headerDescription()),
                             ),
                             ae().createElement(
                                 'div',
-                                { className: Me },
+                                { className: Ge },
                                 ae().createElement(
                                     'div',
-                                    { className: Ge, style: { '--column-size': Math.ceil(i.length / 2) } },
+                                    { className: Le, style: { '--column-size': Math.ceil(i.length / 2) } },
                                     i.map(
                                         (e, t) =>
-                                            e.name in Ke() &&
+                                            e.name in et() &&
                                             ae().createElement(
                                                 'div',
-                                                { className: Le, key: t },
+                                                { className: ze, key: t },
                                                 ae().createElement('div', {
-                                                    className: ze,
-                                                    style: { backgroundImage: `url(${Ke()[e.name]()})` },
+                                                    className: Fe,
+                                                    style: { backgroundImage: `url(${et()[e.name]()})` },
                                                 }),
-                                                ae().createElement('span', { className: Fe }, e.value),
+                                                ae().createElement('span', { className: je }, e.value),
                                             ),
                                     ),
                                 ),
                             ),
                             ae().createElement(
                                 'div',
-                                { className: je },
-                                ae().createElement('span', { className: o }, Je[t]),
-                                ae().createElement(et, { state: t, nextCharge: n, expirationDate: r }),
-                                t !== Te.Active && ae().createElement('span', { className: Ye }, Ze[t]),
+                                { className: qe },
+                                ae().createElement('span', { className: o }, Ke[t]),
+                                ae().createElement(tt, { state: t, nextCharge: n, expirationDate: r }),
+                                t !== ye.Active && ae().createElement('span', { className: Qe }, Je[t]),
                             ),
                         );
                     }),
-                    nt = (0, ie.memo)(tt);
+                    rt = (0, ie.memo)(nt);
                 engine.whenReady.then(() => {
                     me().render(
-                        ae().createElement(de, null, ae().createElement(Be, null, ae().createElement(nt, null))),
+                        ae().createElement(de, null, ae().createElement(ke, null, ae().createElement(rt, null))),
                         document.getElementById('root'),
                     );
                 });

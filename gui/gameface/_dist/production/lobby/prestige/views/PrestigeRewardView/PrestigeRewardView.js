@@ -949,7 +949,7 @@
             },
             370: (u, e, t) => {
                 'use strict';
-                t.d(e, { U: () => d });
+                t.d(e, { U: () => C });
                 var r = t(483),
                     n = t.n(r),
                     a = t(373),
@@ -973,7 +973,11 @@
                         [s.U.Small]: 'c_9x19',
                         [s.U.ExtraSmall]: 'c_6x12',
                     },
-                    l = {
+                    l = (u) => {
+                        const e = u === s.U.MediumExtended ? s.U.Large : u;
+                        return R.images.gui.maps.icons.prestige.emblem.$dyn(A[e]);
+                    },
+                    D = {
                         base: 'PrestigeProgressLabel_base_85',
                         letter: 'PrestigeProgressLabel_letter_e2',
                         base__extraSmall: 'PrestigeProgressLabel_base__extraSmall_06',
@@ -986,25 +990,25 @@
                         base__large: 'PrestigeProgressLabel_base__large_d2',
                         base__extraLarge: 'PrestigeProgressLabel_base__extraLarge_34',
                     },
-                    D = ({ label: u, type: e, size: t }) => {
+                    c = ({ label: u, type: e, size: t }) => {
                         const r = e === i.C.ENAMEL ? i.C.GOLD : e,
                             a = t === s.U.MediumExtended ? s.U.Large : t,
                             E = `R.images.gui.maps.icons.prestige.emblemFont.${F[a]}.${r}`;
                         return o().createElement(
                             'div',
-                            { className: n()(l.base, l[`base__${t}`]) },
+                            { className: n()(D.base, D[`base__${t}`]) },
                             u
                                 .split('')
                                 .map((u, e) =>
                                     o().createElement('div', {
                                         key: e,
-                                        className: n()(l.letter, l[`letter__s${u}`]),
+                                        className: n()(D.letter, D[`letter__s${u}`]),
                                         style: { backgroundImage: `url(${E}.c_${u})` },
                                     }),
                                 ),
                         );
                     },
-                    c = {
+                    B = {
                         base: 'PrestigeProgressSymbol_base_f8',
                         base__extraSmall: 'PrestigeProgressSymbol_base__extraSmall_05',
                         base__small: 'PrestigeProgressSymbol_base__small_1c',
@@ -1015,29 +1019,27 @@
                         base__extraLarge: 'PrestigeProgressSymbol_base__extraLarge_a7',
                         icon: 'PrestigeProgressSymbol_icon_af',
                     },
-                    B = R.strings.prestige.tooltip.eliteLevel,
-                    d = ({ emblem: u, size: e, showLevel: t = !0, isTooltipEnabled: r = !1 }) => {
+                    d = R.strings.prestige.tooltip.eliteLevel,
+                    C = ({ emblem: u, size: e, showLevel: t = !0, isTooltipEnabled: r = !1 }) => {
                         const E = ((u, e) => {
+                            if (u.type === i.C.MAXIMUM) return l(e).$dyn(i.C.MAXIMUM);
                             if (u.type === i.C.UNDEFINED || u.grade < 1) return;
-                            const t = e === s.U.MediumExtended ? s.U.Large : e,
-                                r = R.images.gui.maps.icons.prestige.emblem.$dyn(A[t]);
-                            if (u.type === i.C.MAXIMUM) return r.$dyn(i.C.MAXIMUM);
-                            const n = u.grade <= 4 ? u.grade : 4;
-                            return r.$dyn(u.type).$dyn(`c_${n}`);
+                            const t = u.grade <= 4 ? u.grade : 4;
+                            return l(e).$dyn(u.type).$dyn(`c_${t}`);
                         })(u, e);
                         if (!E) return null;
-                        const F = t && u.type !== i.C.MAXIMUM;
+                        const s = t && u.type !== i.C.MAXIMUM;
                         return o().createElement(
                             a.i,
-                            { header: B.title(), body: B.body(), isEnabled: r },
+                            { header: d.title(), body: d.body(), isEnabled: r },
                             o().createElement(
                                 'div',
-                                { className: n()(c.base, c[`base__${e}`]) },
+                                { className: n()(B.base, B[`base__${e}`]) },
                                 o().createElement('div', {
-                                    className: c.icon,
+                                    className: B.icon,
                                     style: { backgroundImage: `url(${E})` },
                                 }),
-                                F && o().createElement(D, { label: u.level.toString(), type: u.type, size: e }),
+                                s && o().createElement(c, { label: u.level.toString(), type: u.type, size: e }),
                             ),
                         );
                     };

@@ -897,14 +897,6 @@ body {
     cursor: default;
 }
 
-.Container_base__noBG_69 {
-    background-image: none;
-}
-
-.Container_base__noBG_69:hover {
-    background-image: none;
-}
-
 .Bonus_base_dd {
     width: 54rem;
     height: 54rem;
@@ -2351,6 +2343,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Shells_shell_3f {
     display: flex;
 }
+.Shells_shell__compressed_2e {
+    margin-left: -17rem;
+}
 
 .ShellsSection_base_08 {
     display: flex;
@@ -2433,14 +2428,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .ShellsSection_base_08 {
     isolation: isolate;
-}
-
-.ShellsSection_base__noBG_0a {
-    background-image: none;
-}
-
-.ShellsSection_base__noBG_0a:hover {
-    background-image: none;
 }
 
 .ShellsSection_label_38 {
@@ -2717,6 +2704,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .TankName_base__typeWhiteSpanish_e2 {
     color: #e9e2bf;
+}
+
+.TankName_base__typeWhiteOrange_ac {
+    color: #fefeec;
 }
 
 .TankName_base__typeColored_bc .TankName_level_bb {

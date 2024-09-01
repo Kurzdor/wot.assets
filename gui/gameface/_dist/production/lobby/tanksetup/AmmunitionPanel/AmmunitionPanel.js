@@ -1861,7 +1861,7 @@
                         getTimeString: (e, u, t) => userLocale.getTimeString(e, u, void 0 === t || t),
                     };
             },
-            4727: (e, u, t) => {
+            1684: (e, u, t) => {
                 'use strict';
                 var n = t(7739),
                     a = t(6179),
@@ -2654,9 +2654,9 @@
                                 ),
                             )
                         );
-                    });
-                var Xe = t(6063),
-                    Ve = t(7626);
+                    }),
+                    Xe = 'notUsableSection';
+                var Ve = t(7626);
                 const Ze = 'Section_base_8a',
                     Ke = 'Section_label_73',
                     Ye = 'Section_counter_8a',
@@ -3266,38 +3266,36 @@
                             groupIndex: f,
                             sectionIndex: v,
                         }) => {
-                            const S = (0, N.t)().model,
-                                w = S.computes.slots.slot(f, v, u),
-                                x = w.imageSource,
-                                y = w.isInstalled,
-                                I = w.itemInstalledSetupIdx,
-                                k = w.isMountedMoreThanOne,
-                                O = w.overlayType,
-                                R = w.keyName,
-                                L = w.categoryImgSource,
-                                M = w.withAttention,
-                                P = w.id,
-                                H = w.intCD,
-                                $ = d === Pe.w.Setup,
-                                G = !(0, be.s$)(d),
-                                j = !(0, be.iN)(d),
-                                z = d === Pe.w.Compare,
-                                W = $ && r && G,
-                                U = (0, a.useRef)(!1),
-                                q = (0, a.useRef)(null),
-                                X = -1 === H,
-                                V = S.computes.isQFGMode();
+                            const S = (0, N.t)().model.computes.slots.slot(f, v, u),
+                                w = S.imageSource,
+                                x = S.isInstalled,
+                                y = S.itemInstalledSetupIdx,
+                                I = S.isMountedMoreThanOne,
+                                k = S.overlayType,
+                                O = S.keyName,
+                                R = S.categoryImgSource,
+                                L = S.withAttention,
+                                M = S.id,
+                                P = S.intCD,
+                                H = d === Pe.w.Setup,
+                                $ = !(0, be.s$)(d),
+                                G = !(0, be.iN)(d),
+                                j = d === Pe.w.Compare,
+                                z = H && r && $,
+                                W = (0, a.useRef)(!1),
+                                U = (0, a.useRef)(null),
+                                q = -1 === P;
                             (0, a.useEffect)(() => {
-                                if (!U.current && r && n)
+                                if (!W.current && r && n)
                                     return T(() => {
-                                        o && o(q, e, P), (U.current = !0);
+                                        o && o(U, e, M), (W.current = !0);
                                     });
-                                U.current = !0;
-                            }, [P, r, n, o, e]),
+                                W.current = !0;
+                            }, [M, r, n, o, e]),
                                 (0, a.useEffect)(() => {
-                                    n && !V && c(q);
-                                }, [n, c, V]);
-                            const Z = ((e) => {
+                                    n && c(U);
+                                }, [n, c]);
+                            const X = ((e) => {
                                     const u = (0, a.useRef)(-1),
                                         t = (0, a.useCallback)(
                                             (t) => {
@@ -3312,65 +3310,65 @@
                                             [e],
                                         );
                                     return (0, a.useEffect)(() => () => clearTimeout(u.current), []), t;
-                                })((0, a.useCallback)(() => (!n && G && !s && l(e, P), Xe.C3), [P, G, n, s, l, e])),
-                                K = (0, a.useCallback)(() => {
-                                    E || V || Z('');
-                                }, [Z, E, V]),
-                                Y = (0, a.useCallback)(() => {
-                                    j && !n && !D && !E && mu.$.playHighlight();
-                                }, [n, D, E, j]);
+                                })((0, a.useCallback)(() => (!n && $ && !s && l(e, M), 500), [M, $, n, s, l, e])),
+                                V = (0, a.useCallback)(() => {
+                                    E || X('');
+                                }, [X, E]),
+                                Z = (0, a.useCallback)(() => {
+                                    G && !n && !D && !E && mu.$.playHighlight();
+                                }, [n, D, E, G]);
                             (0, a.useEffect)(() => {
                                 C && mu.$.playHighlight();
                             }, [C]);
-                            const J = (0, a.useCallback)(() => {
-                                    null == _ || _(P, e);
-                                }, [P, _, e]),
-                                Q = $ && !y,
-                                ee = Boolean(F && C === F),
-                                ue = F && (W || z),
-                                te = `${e}-slot-${P}`,
-                                ne = L && L.length > 0,
-                                ae = ne ? { backgroundImage: `url(${L})` } : {},
-                                ie = {
+                            const K = (0, a.useCallback)(() => {
+                                    null == _ || _(M, e);
+                                }, [M, _, e]),
+                                Y = H && !x,
+                                J = Boolean(F && C === F),
+                                Q = F && (z || j),
+                                ee = `${e}-slot-${M}`,
+                                ue = R && R.length > 0,
+                                te = ue ? { backgroundImage: `url(${R})` } : {},
+                                ne = {
                                     id: F,
                                     containerRef: b,
-                                    isEnabled: !X,
-                                    onClick: K,
+                                    isEnabled: !q,
+                                    onClick: V,
                                     isUpdateAvailable: Boolean(D),
                                     handleAction: g,
                                     forceCenterX: p,
                                     blockOnGrabIds: h,
                                 },
-                                se = {
-                                    isEmpty: X,
-                                    intCD: H,
+                                ae = {
+                                    isEmpty: q,
+                                    intCD: P,
                                     slotType: e,
                                     slotIndex: u,
-                                    imageSource: x,
+                                    imageSource: w,
                                     isDisabled: E,
-                                    isInstalled: y,
-                                    id: P,
-                                    itemInstalledSetupIdx: I,
-                                    isMountedMoreThanOne: k,
+                                    isInstalled: x,
+                                    id: M,
+                                    itemInstalledSetupIdx: y,
+                                    isMountedMoreThanOne: I,
                                     contextMenuDisabled: B,
                                     isSetupSwitching: s,
                                 };
                             return i().createElement(
                                 'div',
-                                { className: zu, onMouseEnter: Y, id: te },
-                                (r || z) &&
-                                    !y &&
+                                { className: zu, onMouseEnter: Z, id: ee },
+                                (r || j) &&
+                                    !x &&
                                     i().createElement(
                                         'div',
                                         { className: Uu },
-                                        i().createElement(ju, { id: `close-${te}`, show: !D, onClick: J }),
+                                        i().createElement(ju, { id: `close-${ee}`, show: !D, onClick: K }),
                                     ),
                                 i().createElement(
                                     Mu,
-                                    { slotType: e, slotId: P, isEnabled: !D && (0, be.qG)(d) },
+                                    { slotType: e, slotId: M, isEnabled: !D && (0, be.qG)(d) },
                                     i().createElement(
                                         'div',
-                                        { ref: q },
+                                        { ref: U },
                                         i().createElement(
                                             Du.W,
                                             {
@@ -3380,38 +3378,37 @@
                                                 isBorderActive: Boolean(m),
                                                 panelType: d,
                                                 isDisabled: E,
-                                                isPotentialDrop: ee,
-                                                withBackground: !V,
-                                                onClick: ue ? void 0 : K,
+                                                isPotentialDrop: J,
+                                                onClick: Q ? void 0 : V,
                                             },
-                                            G &&
+                                            $ &&
                                                 i().createElement(
                                                     'div',
                                                     { className: Wu },
-                                                    i().createElement(Ru, { text: R, show: Boolean(r), panelType: d }),
+                                                    i().createElement(Ru, { text: O, show: Boolean(r), panelType: d }),
                                                 ),
                                             i().createElement(
                                                 bu.J,
-                                                { when: Boolean(ue), wrapper: yu, withProps: ie },
+                                                { when: Boolean(Q), wrapper: yu, withProps: ne },
                                                 i().createElement(
                                                     bu.J,
-                                                    { when: G, wrapper: tt, withProps: se },
+                                                    { when: $, wrapper: tt, withProps: ae },
                                                     i().createElement(gu.c, {
-                                                        imageSource: x,
+                                                        imageSource: w,
                                                         isIncompatible: A,
-                                                        overlayType: O,
+                                                        overlayType: k,
                                                         level: t,
-                                                        isTemporary: Q,
-                                                        withAttention: M,
+                                                        isTemporary: Y,
+                                                        withAttention: L,
                                                     }),
                                                 ),
                                             ),
-                                            ne &&
+                                            ue &&
                                                 i().createElement(
                                                     i().Fragment,
                                                     null,
                                                     i().createElement('span', { className: Xu }),
-                                                    i().createElement('span', { className: Vu, style: ae }),
+                                                    i().createElement('span', { className: Vu, style: te }),
                                                 ),
                                             E && i().createElement('div', { className: qu }),
                                         ),
@@ -3664,8 +3661,7 @@
                             p = g.selectedSection,
                             C = g.selectedSlot,
                             h = g.syncInitiator,
-                            B = F.computes.isQFGMode(),
-                            f = (0, a.useCallback)(
+                            B = (0, a.useCallback)(
                                 (e, u) => {
                                     b.dragDropSwap({
                                         sectionType: n,
@@ -3675,39 +3671,39 @@
                                 },
                                 [b, n],
                             ),
-                            v = p === n,
-                            S = n === De.YN,
-                            w = v ? C : -1,
-                            x = `${n}-${D}slots`,
-                            y = (0, Ve.UW)({
-                                baseId: x,
+                            f = p === n,
+                            v = n === De.YN,
+                            S = f ? C : -1,
+                            w = `${n}-${D}slots`,
+                            x = (0, Ve.UW)({
+                                baseId: w,
                                 slotsLength: D,
-                                handleSwap: f,
+                                handleSwap: B,
                                 setIsExitBlocked: _,
                                 syncInitiator: h,
                             }),
-                            I = y.handleGrabberAction,
-                            T = y.dragState,
-                            k = y.getForceCenterX;
+                            y = x.handleGrabberAction,
+                            I = x.dragState,
+                            T = x.getForceCenterX;
                         (0, a.useEffect)(() => {
-                            v && -1 !== w && E.current && s(E, p, w);
-                        }, [s, v, p, w]);
-                        const O = (e, u) => {
-                                if ((o || B || mu.$.playClick(), 'number' != typeof u))
+                            f && -1 !== S && E.current && s(E, p, S);
+                        }, [s, f, p, S]);
+                        const k = (e, u) => {
+                                if ((o || mu.$.playClick(), 'number' != typeof u))
                                     return console.warn('selectedSlot is not a number');
                                 b.sectionSelect({ selectedSlot: u, selectedSection: e });
                             },
-                            R = (e) => {
+                            O = (e) => {
                                 E.current = e ? e.current : null;
                             },
-                            L = (e, u) => {
+                            R = (e, u) => {
                                 b.slotClear({ slotId: e, sectionType: u });
                             };
                         return i().createElement(
                             'div',
-                            { id: x, ref: m, className: r()(gt, n) },
+                            { id: w, ref: m, className: r()(gt, n) },
                             ae(D, (e) => {
-                                const r = !S && D > 1 ? `${x}-${e}` : '';
+                                const r = !v && D > 1 ? `${w}-${e}` : '';
                                 return i().createElement(
                                     a.Fragment,
                                     { key: `slot ${u}-${t}-${e}` },
@@ -3720,20 +3716,20 @@
                                                 sectionIndex: t,
                                                 slotIndex: e,
                                                 sectionType: n,
-                                                isSectionSelected: v,
+                                                isSectionSelected: f,
                                                 isDisabled: o,
-                                                contextMenuDisabled: S,
+                                                contextMenuDisabled: v,
                                                 slotType: n,
                                                 onActiveSlotChanged: s,
-                                                onSlotSelected: O,
-                                                onActiveSlotRefChanged: R,
-                                                onSlotClear: L,
+                                                onSlotSelected: k,
+                                                onActiveSlotRefChanged: O,
+                                                onSlotClear: R,
                                                 grabberId: r,
                                                 containerRef: m,
-                                                forceLeftUpdate: k(r),
-                                                activeDragId: T.activeDragId,
-                                                handleGrabberAction: I,
-                                                potentialDropId: T.potentialDropId,
+                                                forceLeftUpdate: T(r),
+                                                activeDragId: I.activeDragId,
+                                                handleGrabberAction: y,
+                                                potentialDropId: I.potentialDropId,
                                                 blockOnGrabIds: l,
                                                 isSetupSwitching: c,
                                                 isChangeSetupIndex: c,
@@ -3849,7 +3845,7 @@
                     return i().createElement(
                         'div',
                         {
-                            id: d ? Xe.CF : v,
+                            id: d ? Xe : v,
                             ref: F,
                             className: r()(
                                 Ze,
@@ -4091,14 +4087,12 @@
                             m = (0, N.t)().model,
                             A = m.computes.slots.length(u, t),
                             F = m.computes.slots.slot(u, t, n),
-                            b = !a && A > 1 ? `${o}-${F.id}` : '',
-                            D = m.computes.isQFGMode(),
-                            g = !a && 0 !== n && !D;
+                            b = !a && A > 1 ? `${o}-${F.id}` : '';
                         return (0, be.j2)(F)
                             ? null
                             : i().createElement(
                                   'div',
-                                  { key: F.id, className: r()(Tt, g && kt) },
+                                  { key: F.id, className: r()(Tt, !a && 0 !== n && kt) },
                                   a
                                       ? i().createElement(It, Rt({}, F, { onSlotSelected: s }))
                                       : i().createElement(
@@ -4230,7 +4224,6 @@
                         base__dragInActive: 'ShellsSection_base__dragInActive_96',
                         base__toggle: 'ShellsSection_base__toggle_bd',
                         base__disabled: 'ShellsSection_base__disabled_7e',
-                        base__noBG: 'ShellsSection_base__noBG_0a',
                         label: 'ShellsSection_label_38',
                         attention: 'ShellsSection_attention_7e',
                         blinking: 'ShellsSection_blinking_57',
@@ -4265,24 +4258,22 @@
                                 C = t === Pe.w.Compare,
                                 h = t === Pe.w.Prebattle && e === De.g9,
                                 B = D === e || h,
-                                f = A.computes.isQFGMode(),
-                                v = (0, a.useCallback)(() => {
+                                f = (0, a.useCallback)(() => {
                                     n(p, D, 0);
                                 }, [n, D]),
-                                S = (0, Ve.Tu)(e, u),
-                                w = S.selfId,
-                                x = S.blockOnGrabIds,
-                                y = ((e) => Ht.includes(e))(t) && !s && b,
-                                I = A.computes.slots.filteredLength(E, m),
-                                T = !C && t !== Pe.w.Battle && t !== Pe.w.Respawn;
+                                v = (0, Ve.Tu)(e, u),
+                                S = v.selfId,
+                                w = v.blockOnGrabIds,
+                                x = ((e) => Ht.includes(e))(t) && !s && b,
+                                y = A.computes.slots.filteredLength(E, m),
+                                I = !C && t !== Pe.w.Battle && t !== Pe.w.Respawn;
                             return i().createElement(
                                 'div',
                                 {
-                                    id: c ? Xe.CF : w,
+                                    id: c ? Xe : S,
                                     className: r()(
                                         Pt.base,
                                         l,
-                                        f && Pt.base__noBG,
                                         Pt[`base__${t}`],
                                         !o && B && Pt.base__selected,
                                         C && Pt.base__compare,
@@ -4290,8 +4281,8 @@
                                     ),
                                     ref: p,
                                 },
-                                y && i().createElement('div', { className: Pt.attention }),
-                                T &&
+                                x && i().createElement('div', { className: Pt.attention }),
+                                I &&
                                     i().createElement(
                                         'div',
                                         { className: Pt.label },
@@ -4302,24 +4293,24 @@
                                             panelType: t,
                                         }),
                                     ),
-                                y &&
+                                x &&
                                     i().createElement('div', {
                                         className: r()(
                                             Pt.border,
-                                            2 === I && Pt.border__double,
-                                            3 === I && Pt.border__triple,
+                                            2 === y && Pt.border__double,
+                                            3 === y && Pt.border__triple,
                                         ),
                                     }),
                                 i().createElement(Nt, {
                                     groupIndex: E,
                                     sectionIndex: m,
                                     panelType: t,
-                                    onSelected: v,
+                                    onSelected: f,
                                     isSelected: B,
                                     isCompare: C,
                                     syncInitiator: g,
-                                    blockOnGrabIds: x,
-                                    isDisabled: s || f,
+                                    blockOnGrabIds: w,
+                                    isDisabled: s,
                                     isSetupSwitching: c,
                                     setIsExitBlocked: _,
                                 }),
@@ -4488,62 +4479,52 @@
                                 o = (0, N.t)().model,
                                 l = o.root.get().isDisabled,
                                 c = o.computes.groups.group(e);
-                            return o.computes.groups.isGroupEmpty(e)
-                                ? null
-                                : i().createElement(
-                                      'div',
-                                      { key: c.groupId, className: en.base },
-                                      i().createElement(
-                                          'div',
-                                          { className: en.wrapper },
-                                          i().createElement(
-                                              Fe,
-                                              ((e, u) => ({ index: e.currentIndex, setSetupSwitching: u }))(c, n),
-                                              i().createElement(
-                                                  zt,
-                                                  un({}, u, { groupIndex: e, isChangeSetupIndex: t }),
-                                              ),
-                                          ),
-                                          c.setupSelector.isSwitchEnabled &&
-                                              i().createElement(
-                                                  'div',
-                                                  {
-                                                      className: r()(
-                                                          s.switch,
-                                                          (0, be.iN)(u.panelType) && en.switch__battle,
-                                                      ),
-                                                  },
-                                                  i().createElement(ce._, {
-                                                      states: c.setupSelector.states,
-                                                      onClick: a,
-                                                      totalCount: c.totalCount,
-                                                      currentIndex: c.currentIndex,
-                                                      groupId: c.groupId,
-                                                      isDisabled: u.isDisabled,
-                                                  }),
-                                                  c.setupSelector.isPrebattleSwitchDisabled &&
-                                                      i().createElement(
-                                                          le,
-                                                          {
-                                                              header: tn.title(),
-                                                              body: String(tn.desc.$dyn(`c_${c.groupId}`)),
-                                                          },
-                                                          i().createElement('div', {
-                                                              className: en.prebattleSwitchIndicator,
-                                                          }),
-                                                      ),
-                                              ),
-                                      ),
-                                      ((_ = c),
-                                      ((d = u.panelType) === Pe.w.Battle || d === Pe.w.Respawn) &&
-                                          _.setupSelector.isSwitchEnabled &&
-                                          nn(_) &&
-                                          i().createElement(
-                                              'div',
-                                              { className: r()(en.hint, l && en.hint__disabled) },
-                                              i().createElement(Qt, { hotKeys: nn(c) }),
-                                          )),
-                                  );
+                            return i().createElement(
+                                'div',
+                                { key: c.groupId, className: en.base },
+                                i().createElement(
+                                    'div',
+                                    { className: en.wrapper },
+                                    i().createElement(
+                                        Fe,
+                                        ((e, u) => ({ index: e.currentIndex, setSetupSwitching: u }))(c, n),
+                                        i().createElement(zt, un({}, u, { groupIndex: e, isChangeSetupIndex: t })),
+                                    ),
+                                    c.setupSelector.isSwitchEnabled &&
+                                        i().createElement(
+                                            'div',
+                                            { className: r()(s.switch, (0, be.iN)(u.panelType) && en.switch__battle) },
+                                            i().createElement(ce._, {
+                                                states: c.setupSelector.states,
+                                                onClick: a,
+                                                totalCount: c.totalCount,
+                                                currentIndex: c.currentIndex,
+                                                groupId: c.groupId,
+                                                isDisabled: u.isDisabled,
+                                            }),
+                                            c.setupSelector.isPrebattleSwitchDisabled &&
+                                                i().createElement(
+                                                    le,
+                                                    {
+                                                        header: tn.title(),
+                                                        body: String(tn.desc.$dyn(`c_${c.groupId}`)),
+                                                    },
+                                                    i().createElement('div', {
+                                                        className: en.prebattleSwitchIndicator,
+                                                    }),
+                                                ),
+                                        ),
+                                ),
+                                ((_ = c),
+                                ((d = u.panelType) === Pe.w.Battle || d === Pe.w.Respawn) &&
+                                    _.setupSelector.isSwitchEnabled &&
+                                    nn(_) &&
+                                    i().createElement(
+                                        'div',
+                                        { className: r()(en.hint, l && en.hint__disabled) },
+                                        i().createElement(Qt, { hotKeys: nn(c) }),
+                                    )),
+                            );
                             var _, d;
                         },
                     ),
@@ -4928,13 +4909,6 @@
                             (e.DropExit = 'exit');
                     })(a || (a = {}));
             },
-            6063: (e, u, t) => {
-                'use strict';
-                t.d(u, { C3: () => n, CF: () => a, L0: () => i });
-                const n = 500,
-                    a = 'notUsableSection',
-                    i = 'FunRandomQuickFireGuns';
-            },
             4301: (e, u, t) => {
                 'use strict';
                 t.d(u, { iN: () => i, j2: () => a, qG: () => s, s$: () => r });
@@ -5098,15 +5072,14 @@
             },
             3220: (e, u, t) => {
                 'use strict';
-                t.d(u, { k: () => _, t: () => d });
+                t.d(u, { k: () => c, t: () => _ });
                 var n = t(3215),
                     a = t(9480),
                     i = t(3946),
                     s = t(4598),
-                    r = t(6063),
-                    o = t(4301),
-                    l = t(7626);
-                const c = (0, n.q)()(
+                    r = t(4301),
+                    o = t(7626);
+                const l = (0, n.q)()(
                         ({ observableModel: e }) => {
                             const u = {
                                     root: e.object(),
@@ -5116,9 +5089,8 @@
                                     sectionGroups: e.array('ammunitionPanel.sectionGroups'),
                                     lastSlotAction: e.object('lastSlotAction'),
                                 },
-                                t = (0, i.Om)(() => u.root.get().modeName === r.L0),
-                                n = (0, i.Om)(() => u.sectionGroups.get().length),
-                                c = (0, i.Om)(
+                                t = (0, i.Om)(() => u.sectionGroups.get().length),
+                                n = (0, i.Om)(
                                     (e) => {
                                         const t = a.U2(u.sectionGroups.get(), e);
                                         if (!t) throw Error(`No ammunition section group found with index: ${e}`);
@@ -5135,51 +5107,45 @@
                                     },
                                     { equals: s.jv },
                                 ),
-                                _ = (0, i.Om)((e) => {
-                                    if (0 === E(e)) return !0;
-                                    const u = c(e),
-                                        t = a.u4(u.sections, (e, u) => e + u.slots.length, 0);
-                                    return 0 === t;
-                                }),
-                                d = (0, i.Om)(() => a.u4(u.sectionGroups.get(), (e, u) => e + u.sections.length, 0)),
-                                E = (0, i.Om)((e) => c(e).sections.length),
-                                m = (0, i.Om)(
+                                l = (0, i.Om)(() => a.u4(u.sectionGroups.get(), (e, u) => e + u.sections.length, 0)),
+                                c = (0, i.Om)((e) => n(e).sections.length),
+                                _ = (0, i.Om)(
                                     (e, u) => {
-                                        const t = c(e),
-                                            n = a.U2(t.sections, u);
-                                        if (!n) throw Error(`No ammunition section found with index: ${u}`);
-                                        return n;
+                                        const t = n(e),
+                                            i = a.U2(t.sections, u);
+                                        if (!i) throw Error(`No ammunition section found with index: ${u}`);
+                                        return i;
                                     },
                                     { equals: s.jv },
                                 ),
-                                A = (0, i.Om)((e, u) => m(e, u).slots.length),
-                                F = (0, i.Om)((e, u) => {
-                                    const t = m(e, u).slots;
-                                    return a.hX(t, (e) => Boolean(e) && !(0, o.j2)(e)).length;
+                                d = (0, i.Om)((e, u) => _(e, u).slots.length),
+                                E = (0, i.Om)((e, u) => {
+                                    const t = _(e, u).slots;
+                                    return a.hX(t, (e) => Boolean(e) && !(0, r.j2)(e)).length;
                                 }),
-                                b = (0, i.Om)((e, u) => {
-                                    const t = m(e, u).slots;
+                                m = (0, i.Om)((e, u) => {
+                                    const t = _(e, u).slots;
                                     return a.G(t, (e) => e.intCD > 0);
                                 }),
-                                D = (0, i.Om)(
+                                A = (0, i.Om)(
                                     (e, u, t) => {
-                                        const n = m(e, u),
+                                        const n = _(e, u),
                                             i = a.U2(n.slots, t);
                                         if (!i) throw Error(`No ammunition slot found with index: ${t}`);
                                         return i;
                                     },
                                     { equals: s.jv },
                                 ),
-                                g = (0, i.Om)(
+                                F = (0, i.Om)(
                                     (e) => {
-                                        const u = c(e).sections;
-                                        return a.v(u, (e) => (0, l.YR)(e.type));
+                                        const u = n(e).sections;
+                                        return a.v(u, (e) => (0, o.YR)(e.type));
                                     },
                                     { equals: s.jv },
                                 ),
-                                p = (0, i.Om)(
+                                b = (0, i.Om)(
                                     (e, u, t) => {
-                                        const n = D(e, u, t);
+                                        const n = A(e, u, t);
                                         if (!n) throw Error(`No ammunition slot found with index: ${t}`);
                                         if (!n.specializations) throw Error('Selected slot have no specializations');
                                         return Object.assign({}, n.specializations, {
@@ -5192,11 +5158,10 @@
                                 );
                             return Object.assign({}, u, {
                                 computes: {
-                                    groups: { length: n, group: c, isGroupEmpty: _ },
-                                    sections: { allSectionsLength: d, length: E, section: m, IDs: g },
-                                    slots: { length: A, filteredLength: F, slot: D, existFilled: b },
-                                    specializations: p,
-                                    isQFGMode: t,
+                                    groups: { length: t, group: n },
+                                    sections: { allSectionsLength: l, length: c, section: _, IDs: F },
+                                    slots: { length: d, filteredLength: E, slot: A, existFilled: m },
+                                    specializations: b,
                                 },
                             });
                         },
@@ -5225,8 +5190,8 @@
                             escKeyDown: e.createCallbackNoArgs('onEscKeyDown'),
                         }),
                     ),
-                    _ = c[0],
-                    d = c[1];
+                    c = l[0],
+                    _ = l[1];
             },
             1922: (e, u, t) => {
                 'use strict';
@@ -5289,9 +5254,9 @@
             8253: (e, u, t) => {
                 'use strict';
                 t.d(u, { W: () => o });
-                var n = t(6483),
+                var n = t(6179),
                     a = t.n(n),
-                    i = t(6179),
+                    i = t(6483),
                     s = t.n(i);
                 const r = {
                         base: 'Container_base_9a',
@@ -5304,7 +5269,6 @@
                         base__dragInActive: 'Container_base__dragInActive_e5',
                         base__toggle: 'Container_base__toggle_94',
                         base__disabled: 'Container_base__disabled_22',
-                        base__noBG: 'Container_base__noBG_69',
                     },
                     o = ({
                         activeDragId: e,
@@ -5315,26 +5279,17 @@
                         panelType: o,
                         isDisabled: l,
                         isPotentialDrop: c,
-                        withBackground: _ = !0,
-                        onClick: d,
+                        onClick: _,
                     }) => {
-                        const E = t && !c && !n;
-                        return s().createElement(
-                            'div',
-                            {
-                                className: a()(
-                                    r.base,
-                                    !e && r[`base__${o}`],
-                                    u && r[`base__${u}`],
-                                    E && r.base__selected,
-                                    c && r['base__dragIn' + (t ? 'Active' : '')],
-                                    !_ && r.base__noBG,
-                                    l && r.base__disabled,
-                                ),
-                                onClick: d,
-                            },
-                            i,
+                        const d = s()(
+                            r.base,
+                            !e && r[`base__${o}`],
+                            u && r[`base__${u}`],
+                            t && !c && !n && r.base__selected,
+                            c && r['base__dragIn' + (t ? 'Active' : '')],
+                            l && r.base__disabled,
                         );
+                        return a().createElement('div', { className: d, onClick: _ }, i);
                     };
             },
             8598: (e, u, t) => {
@@ -6121,6 +6076,6 @@
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             t.forEach(u.bind(null, 0)), (t.push = u.bind(null, t.push.bind(t)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [727], () => __webpack_require__(4727));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [727], () => __webpack_require__(1684));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

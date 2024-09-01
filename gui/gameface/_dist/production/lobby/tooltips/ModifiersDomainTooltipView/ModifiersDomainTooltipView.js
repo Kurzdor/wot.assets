@@ -49,10 +49,10 @@
                         isEventHandled: () => K,
                         isFocused: () => G,
                         pxToRem: () => V,
-                        remToPx: () => W,
+                        remToPx: () => U,
                         resize: () => L,
                         sendEvent: () => R,
-                        setAnimateWindow: () => U,
+                        setAnimateWindow: () => W,
                         setEventHandled: () => j,
                         setInputPaddingsRem: () => y,
                         setSidePaddingsRem: () => I,
@@ -245,7 +245,7 @@
                 }
                 function M(u = 'rem') {
                     const e = viewEnv.getViewGlobalPositionRem();
-                    return 'rem' === u ? e : { x: W(e.x), y: W(e.y) };
+                    return 'rem' === u ? e : { x: U(e.x), y: U(e.y) };
                 }
                 function k() {
                     viewEnv.freezeTextureBeforeResize();
@@ -256,10 +256,10 @@
                 function V(u) {
                     return viewEnv.pxToRem(u);
                 }
-                function W(u) {
+                function U(u) {
                     return viewEnv.remToPx(u);
                 }
-                function U(u, e) {
+                function W(u, e) {
                     viewEnv.setAnimateWindow(u, e);
                 }
                 function G() {
@@ -1116,7 +1116,7 @@
                         A
                     );
                 };
-                let V, W, U, G;
+                let V, U, W, G;
                 y.Sw.instance,
                     (function (u) {
                         (u.FAKE_MODIFIER = 'fakeModifier'),
@@ -1142,6 +1142,7 @@
                             (u.NORMALIZATION_ANGLE = 'normalizationAngle'),
                             (u.RICOCHET_ANGLE = 'ricochetAngle'),
                             (u.ENGINE_POWER = 'enginePower'),
+                            (u.ENGINE_FIRE_FACTOR = 'engineFireFactor'),
                             (u.FW_MAX_SPEED = 'fwMaxSpeed'),
                             (u.BK_MAX_SPEED = 'bkMaxSpeed'),
                             (u.ROTATION_SPEED_ON_STILL = 'rotationSpeedOnStill'),
@@ -1161,10 +1162,12 @@
                             (u.ENV_MODULE_DAMAGE_CHANCE = 'envModuleDamageChance'),
                             (u.REPAIR_SPEED = 'repairSpeed'),
                             (u.VISION_MIN_RADIUS = 'visionMinRadius'),
+                            (u.VISION_MAX_RADIUS = 'visionMaxRadius'),
                             (u.VISION_TIME = 'visionTime'),
                             (u.EQUIPMENT_COOLDOWN = 'equipmentCooldown'),
                             (u.INVISIBILITY_FACTOR_AT_SHOT = 'invisibilityFactorAtShot'),
-                            (u.VEHICLE_AOI_RADIUS = 'vehicleAoIRadius');
+                            (u.VEHICLE_AOI_RADIUS = 'vehicleAoIRadius'),
+                            (u.DEVICE_DAMAGE_FIRST = 'deviceDamageFirst');
                     })(V || (V = {})),
                     (function (u) {
                         (u.UNDEFINED = 'undefined'),
@@ -1184,10 +1187,10 @@
                             (u.DEVIATION = 'deviation'),
                             (u.LOGIC = 'logic'),
                             (u.HORSEPOWER = 'horsepower');
-                    })(W || (W = {})),
+                    })(U || (U = {})),
                     (function (u) {
                         (u.UNDEFINED = 'undefined'), (u.VAL = 'val'), (u.MUL = 'mul'), (u.ADD = 'add');
-                    })(U || (U = {})),
+                    })(W || (W = {})),
                     (function (u) {
                         (u.UNDEFINED = 'undefined'), (u.POSITIVE = 'positive'), (u.NEGATIVE = 'negative');
                     })(G || (G = {}));
@@ -1317,38 +1320,38 @@
                 const z = {
                     generalOverrides: [
                         {
-                            condition: j.useType.oneOf(U.MUL),
+                            condition: j.useType.oneOf(W.MUL),
                             valueConverter: $.multiplierToPercent,
                             numberOfDecimals: 0,
                             formatter: q.percent,
                         },
                         {
-                            condition: K(j.useType.oneOf(U.MUL), j.value.isPositiveInteger),
+                            condition: K(j.useType.oneOf(W.MUL), j.value.isPositiveInteger),
                             valueConverter: $.default,
                             numberOfDecimals: 0,
                             prefixForPositiveValue: '',
                             formatter: q.multiplier,
                         },
-                        { condition: j.useType.oneOf(U.VAL), prefixForPositiveValue: '' },
+                        { condition: j.useType.oneOf(W.VAL), prefixForPositiveValue: '' },
                     ],
                     defaultPrefixForPositiveValue: '+',
                     physTypes: {
-                        [W.UNDEFINED]: { overrides: [], defaultNumberOfDecimals: 2, defaultFormatter: q.default },
-                        [W.RADIANS]: {
+                        [U.UNDEFINED]: { overrides: [], defaultNumberOfDecimals: 2, defaultFormatter: q.default },
+                        [U.RADIANS]: {
                             overrides: [
-                                { condition: j.useType.oneOf(U.ADD, U.VAL), valueConverter: $.radiansToDegrees },
+                                { condition: j.useType.oneOf(W.ADD, W.VAL), valueConverter: $.radiansToDegrees },
                             ],
                             defaultNumberOfDecimals: 0,
                             defaultFormatter: q.degree,
                         },
-                        [W.DEGREES]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.degree },
-                        [W.HIT_POINTS]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.hitpoints },
-                        [W.METERS_PER_SECOND]: {
+                        [U.DEGREES]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.degree },
+                        [U.HIT_POINTS]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.hitpoints },
+                        [U.METERS_PER_SECOND]: {
                             overrides: [
                                 {
                                     condition: K(
                                         j.modificationType.oneOf(V.FW_MAX_SPEED, V.BK_MAX_SPEED),
-                                        j.useType.oneOf(U.VAL, U.ADD),
+                                        j.useType.oneOf(W.VAL, W.ADD),
                                     ),
                                     valueConverter: $.metPerSecondToKmPerHour,
                                     formatter: q.kmPerHour,
@@ -1357,18 +1360,18 @@
                             defaultNumberOfDecimals: 0,
                             defaultFormatter: q.metersPerSecond,
                         },
-                        [W.KILOMETERS_PER_HOUR]: {
+                        [U.KILOMETERS_PER_HOUR]: {
                             overrides: [],
                             defaultNumberOfDecimals: 0,
                             defaultFormatter: q.kmPerHour,
                         },
-                        [W.MILLIMETERS]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.millimeters },
-                        [W.SECONDS]: {
+                        [U.MILLIMETERS]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.millimeters },
+                        [U.SECONDS]: {
                             overrides: [
                                 {
                                     condition: K(
                                         j.modificationType.oneOf(V.BATTLE_LENGTH),
-                                        j.useType.oneOf(U.VAL, U.ADD),
+                                        j.useType.oneOf(W.VAL, W.ADD),
                                     ),
                                     formatter: q.time,
                                 },
@@ -1376,13 +1379,13 @@
                             defaultNumberOfDecimals: 2,
                             defaultFormatter: q.seconds,
                         },
-                        [W.MINUTES]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.minutes },
-                        [W.METERS]: {
+                        [U.MINUTES]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.minutes },
+                        [U.METERS]: {
                             overrides: [
                                 {
                                     condition: K(
                                         j.modificationType.oneOf(V.VISION_MIN_RADIUS),
-                                        j.useType.oneOf(U.VAL, U.ADD),
+                                        j.useType.oneOf(W.VAL, W.ADD),
                                     ),
                                     numberOfDecimals: 0,
                                 },
@@ -1390,10 +1393,10 @@
                             defaultNumberOfDecimals: 2,
                             defaultFormatter: q.meters,
                         },
-                        [W.RADIANS_PER_SECOND]: {
+                        [U.RADIANS_PER_SECOND]: {
                             overrides: [
                                 {
-                                    condition: j.useType.oneOf(U.VAL, U.ADD),
+                                    condition: j.useType.oneOf(W.VAL, W.ADD),
                                     valueConverter: $.radiansPerSecondToDegreesPerSecond,
                                     formatter: q.degreesPerSecond,
                                 },
@@ -1401,20 +1404,20 @@
                             defaultNumberOfDecimals: 0,
                             defaultFormatter: q.degreesPerSecond,
                         },
-                        [W.DEGREES_PER_SECOND]: {
+                        [U.DEGREES_PER_SECOND]: {
                             overrides: [],
                             defaultNumberOfDecimals: 0,
                             defaultFormatter: q.degreesPerSecond,
                         },
-                        [W.METER_PER_SECOND_SQUARED]: {
+                        [U.METER_PER_SECOND_SQUARED]: {
                             overrides: [],
                             defaultNumberOfDecimals: 2,
                             defaultFormatter: q.meterPerSecondSquared,
                         },
-                        [W.PROBABILITY]: {
+                        [U.PROBABILITY]: {
                             overrides: [
                                 {
-                                    condition: j.useType.oneOf(U.VAL, U.ADD),
+                                    condition: j.useType.oneOf(W.VAL, W.ADD),
                                     valueConverter: $.probabilityToPercent,
                                     formatter: q.percent,
                                 },
@@ -1422,17 +1425,17 @@
                             defaultNumberOfDecimals: 0,
                             defaultFormatter: q.percent,
                         },
-                        [W.DEVIATION]: {
+                        [U.DEVIATION]: {
                             overrides: [
                                 {
-                                    condition: j.useType.oneOf(U.VAL),
+                                    condition: j.useType.oneOf(W.VAL),
                                     valueConverter: $.probabilityToPercent,
                                     numberOfDecimals: 0,
                                     prefixForPositiveValue: '',
                                     formatter: q.deviation,
                                 },
                                 {
-                                    condition: j.useType.oneOf(U.ADD),
+                                    condition: j.useType.oneOf(W.ADD),
                                     valueConverter: $.probabilityToPercent,
                                     numberOfDecimals: 0,
                                     formatter: q.percent,
@@ -1441,8 +1444,8 @@
                             defaultNumberOfDecimals: 2,
                             defaultFormatter: q.default,
                         },
-                        [W.HORSEPOWER]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.horsepower },
-                        [W.LOGIC]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.logic },
+                        [U.HORSEPOWER]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.horsepower },
+                        [U.LOGIC]: { overrides: [], defaultNumberOfDecimals: 0, defaultFormatter: q.logic },
                     },
                 };
                 function Y(u, e) {
@@ -1484,7 +1487,7 @@
                 class X {
                     constructor() {
                         (this.formatRestriction = (u, e) => {
-                            const t = Object.assign({}, u, { value: e, useType: U.VAL });
+                            const t = Object.assign({}, u, { value: e, useType: W.VAL });
                             return this.formatModifier(t);
                         }),
                             (this.formatModifier = (u) => {
@@ -1492,7 +1495,7 @@
                                 if (
                                     (void 0 === e &&
                                         (console.warn('Not found formatter for physicalType', u.physicalType),
-                                        (e = z.physTypes[W.UNDEFINED])),
+                                        (e = z.physTypes[U.UNDEFINED])),
                                     void 0 === e)
                                 )
                                     throw Error(`Not found formatter for physicalType=${u.physicalType.toString()}`);
@@ -1518,7 +1521,7 @@
                     J = 'ModifierParameter_paramName_9a',
                     uu = (u) => R.strings.battle_modifiers.modifier.name.$dyn(u),
                     eu = ({ value: u }) => {
-                        if (u.useType === U.UNDEFINED)
+                        if (u.useType === W.UNDEFINED)
                             return i().createElement(
                                 'div',
                                 { className: Q },

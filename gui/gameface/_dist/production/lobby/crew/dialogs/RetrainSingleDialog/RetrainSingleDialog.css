@@ -547,6 +547,475 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
+.Checkbox_base_36 {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    cursor: pointer;
+}
+
+.Checkbox_base__disabled_08 {
+    pointer-events: none;
+}
+
+.Checkbox_base__center_52 {
+    align-items: center;
+}
+
+.Checkbox_base__bottom_28 {
+    align-items: flex-end;
+}
+
+.Checkbox_input_37 {
+    border: 1rem solid rgba(190, 190, 190, 0.45);
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0.6;
+    position: relative;
+    transition: background-color 0.1s linear;
+}
+
+.Checkbox_base__mouseDown_45 .Checkbox_input_37 {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Checkbox_base__small_18 .Checkbox_input_37 {
+    width: 12rem;
+    height: 12rem;
+}
+
+.Checkbox_base__medium_12 .Checkbox_input_37 {
+    width: 18rem;
+    height: 18rem;
+}
+
+.Checkbox_base__large_f7 .Checkbox_input_37 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.Checkbox_base__extraLarge_c9 .Checkbox_input_37 {
+    width: 32rem;
+    height: 32rem;
+}
+
+.Checkbox_alertOverlay_52 {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    left: -1rem;
+    border: 1rem solid #feab34;
+    border-radius: 2rem;
+    box-shadow: inset 0 0 9rem rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.Checkbox_base__alert_b7 .Checkbox_alertOverlay_52 {
+    animation: Checkbox_blink_5e 2s ease-in-out infinite;
+}
+
+.Checkbox_base__alert_b7.Checkbox_base__checked_a2 .Checkbox_alertOverlay_52,
+.Checkbox_base__alert_b7.Checkbox_base__disabled_08 .Checkbox_alertOverlay_52 {
+    opacity: 0;
+    animation: initial;
+}
+
+.Checkbox_inputHoverOverlay_36 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #201f1c, #494741);
+    opacity: 0;
+    transition: opacity 0.1s linear;
+    pointer-events: none;
+}
+
+.Checkbox_base_36:hover .Checkbox_inputHoverOverlay_36 {
+    opacity: 0.8;
+}
+
+.Checkbox_base_36.Checkbox_base__mouseDown_45:hover .Checkbox_inputHoverOverlay_36 {
+    opacity: 0;
+}
+
+.Checkbox_highlight_b8 {
+    background: no-repeat 50% / contain;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.1s linear;
+    pointer-events: none;
+}
+
+.Checkbox_base__checked_a2 .Checkbox_highlight_b8 {
+    opacity: 1;
+}
+
+.Checkbox_base__checked_a2.Checkbox_base__disabled_08 .Checkbox_highlight_b8 {
+    opacity: 0;
+}
+
+.Checkbox_base__small_18 .Checkbox_highlight_b8 {
+    width: 34rem;
+    height: 34rem;
+}
+
+.Checkbox_base__medium_12 .Checkbox_highlight_b8 {
+    width: 40rem;
+    height: 40rem;
+}
+
+.Checkbox_base__large_f7 .Checkbox_highlight_b8 {
+    width: 46rem;
+    height: 46rem;
+}
+
+.Checkbox_base__extraLarge_c9 .Checkbox_highlight_b8 {
+    width: 54rem;
+    height: 54rem;
+}
+
+.Checkbox_base__main_3a.Checkbox_base__small_18 .Checkbox_highlight_b8 {
+    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_s');
+}
+
+.Checkbox_base__main_3a.Checkbox_base__medium_12 .Checkbox_highlight_b8 {
+    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_m');
+}
+
+.Checkbox_base__main_3a.Checkbox_base__large_f7 .Checkbox_highlight_b8 {
+    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_l');
+}
+
+.Checkbox_base__main_3a.Checkbox_base__extraLarge_c9 .Checkbox_highlight_b8 {
+    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_xl');
+}
+
+.Checkbox_base__primary_ab.Checkbox_base__small_18 .Checkbox_highlight_b8 {
+    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_s_green');
+}
+
+.Checkbox_base__primary_ab.Checkbox_base__medium_12 .Checkbox_highlight_b8 {
+    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_m_green');
+}
+
+.Checkbox_base__primary_ab.Checkbox_base__large_f7 .Checkbox_highlight_b8 {
+    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_l_green');
+}
+
+.Checkbox_base__primary_ab.Checkbox_base__extraLarge_c9 .Checkbox_highlight_b8 {
+    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_xl_green');
+}
+
+.Checkbox_checkmark_60 {
+    background: center / contain no-repeat;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+}
+
+.Checkbox_base__checked_a2 .Checkbox_checkmark_60 {
+    /* Using a transition causes the image to blink on appear */
+    animation: Checkbox_fadeIn_1a 0.1s linear 0 normal forwards;
+}
+
+.Checkbox_base__checked_a2.Checkbox_base__disabled_08 .Checkbox_checkmark_60 {
+    opacity: 0.5;
+}
+
+.Checkbox_base__small_18 .Checkbox_checkmark_60 {
+    width: 11rem;
+    height: 11rem;
+}
+
+.Checkbox_base__medium_12 .Checkbox_checkmark_60 {
+    width: 19rem;
+    height: 20rem;
+    transform: translate(1rem, -4rem);
+}
+
+.Checkbox_base__large_f7 .Checkbox_checkmark_60 {
+    width: 23rem;
+    height: 24rem;
+    transform: translate(3rem, -3rem);
+}
+
+.Checkbox_base__extraLarge_c9 .Checkbox_checkmark_60 {
+    width: 36rem;
+    height: 36rem;
+    transform: translate(2rem, -8rem);
+}
+
+.Checkbox_base__main_3a.Checkbox_base__small_18 .Checkbox_checkmark_60 {
+    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_s');
+}
+
+.Checkbox_base__main_3a.Checkbox_base__medium_12 .Checkbox_checkmark_60 {
+    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_m');
+}
+
+.Checkbox_base__main_3a.Checkbox_base__large_f7 .Checkbox_checkmark_60 {
+    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_l');
+}
+
+.Checkbox_base__main_3a.Checkbox_base__extraLarge_c9 .Checkbox_checkmark_60 {
+    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_xl');
+}
+
+.Checkbox_base__primary_ab.Checkbox_base__small_18 .Checkbox_checkmark_60 {
+    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_s_green');
+}
+
+.Checkbox_base__primary_ab.Checkbox_base__medium_12 .Checkbox_checkmark_60 {
+    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_m_green');
+}
+
+.Checkbox_base__primary_ab.Checkbox_base__large_f7 .Checkbox_checkmark_60 {
+    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_l_green');
+}
+
+.Checkbox_base__primary_ab.Checkbox_base__extraLarge_c9 .Checkbox_checkmark_60 {
+    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_xl_green');
+}
+
+.Checkbox_label_bc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    padding-left: 10rem;
+    position: relative;
+}
+
+.Checkbox_labelContent_64 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    line-height: 1.15;
+    transition: color 0.1s linear;
+}
+
+.Checkbox_base__extraLarge_c9 .Checkbox_labelContent_64 {
+    font-size: 16rem;
+}
+
+.Checkbox_base_36:hover .Checkbox_labelContent_64 {
+    color: #c8c8b6;
+}
+
+.Checkbox_base__disabled_08 .Checkbox_labelContent_64,
+.Checkbox_base__disabled_08:hover .Checkbox_labelContent_64 {
+    color: #37362e;
+}
+
+@keyframes Checkbox_fadeIn_1a {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Checkbox_blink_5e {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.RoleIcon_base_51 {
+    background: no-repeat center / contain;
+}
+
+.RoleIcon_base__small_68 {
+    width: 13rem;
+    height: 13rem;
+}
+
+.RoleIcon_base__c_14x14_8f {
+    width: 14rem;
+    height: 14rem;
+}
+
+.RoleIcon_base__c_18x18_0b {
+    width: 18rem;
+    height: 18rem;
+}
+
+.RoleIcon_base__c_24x24_new_fe,
+.RoleIcon_base__c_24x24_52 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.RoleIcon_base__c_30x30_red_85,
+.RoleIcon_base__c_30x30_e9 {
+    width: 30rem;
+    height: 30rem;
+}
+
+.RoleIcon_base__c_40x40_99 {
+    width: 40rem;
+    height: 40rem;
+}
+
+.RoleIcon_base__medium_5d {
+    width: 33rem;
+    height: 33rem;
+}
+
+.RoleIcon_base__white_2a {
+    width: 44rem;
+    height: 44rem;
+}
+
+.RoleIcon_base__big_b4 {
+    width: 60rem;
+    height: 60rem;
+}
+
+.Role_base_8a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78rem;
+    height: 50rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.Role_base_8a:hover .Role_bg_2d {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+.Role_base_8a:hover .Role_roleIcon_a2 {
+    opacity: 0.8;
+}
+
+.Role_base__selected_4d {
+    cursor: default;
+}
+
+.Role_bg_2d {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 4rem;
+}
+
+.Role_base__selected_4d .Role_bg_2d {
+    background-color: rgba(255, 140, 109, 0.15);
+}
+
+.Role_roleIcon_a2 {
+    opacity: 0.2;
+}
+
+.Role_base__selected_4d .Role_roleIcon_a2 {
+    filter: drop-shadow(0px 0px 12px #e52) drop-shadow(0px 0px 4px rgba(255, 127, 0, 0.25));
+    opacity: 0.8;
+}
+
+.Role_warning_49 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.library.alertBigIcon') no-repeat 50% / contain;
+    position: absolute;
+    bottom: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.RoleChange_base_19 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30rem 0 24rem;
+    transition: margin-bottom 0.3s;
+}
+
+.RoleChange_base__checked_71 {
+    margin-bottom: 10rem;
+}
+
+.RoleChange_forced_83 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.RoleChange_lockIcon_59 {
+    display: flex;
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.library.lock_gray') no-repeat center / contain;
+}
+
+.RoleChange_tooltipBox_8c {
+    display: flex;
+}
+
+.RoleChange_labelDisable_e0 {
+    color: rgba(140, 140, 126, 0.5);
+}
+
+.RoleChange_roles_e8 {
+    display: flex;
+    flex-direction: row;
+    margin-top: -54rem;
+    border-radius: 4rem;
+    background-color: rgba(255, 255, 255, 0.04);
+    opacity: 0;
+    position: relative;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+.RoleChange_roles__visible_5d {
+    margin-top: 10rem;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.FooterContent_discount_36 {
+    display: flex;
+    align-items: center;
+    height: 20rem;
+    margin: 38rem 0 10rem;
+}
+
+.FooterContent_infoIcon_3c {
+    width: 14rem;
+    height: 14rem;
+    margin: 2rem 6rem 0 0;
+    background: url('R.images.gui.maps.icons.crew.profile.info') no-repeat center / contain;
+}
+
+.FooterContent_label_20 {
+    color: #e9e2bf;
+}
+
+.FooterContent_emptyFooter_af {
+    height: 30rem;
+}
+
 .WarningText_base_10 {
     display: flex;
     color: #ee7000;
@@ -645,6 +1114,34 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 0;
     right: 0;
     pointer-events: none;
+}
+
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
 }
 
 .colors_blackReal_fc {
@@ -755,7 +1252,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .renderers_word_f3 {
-    white-space: nowrap;
+    white-space: pre;
     overflow-wrap: normal;
 }
 
@@ -776,7 +1273,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     color: rgba(242, 242, 247, 1);
 }
 
-.Description_retrainPrice_3c {
+.Description_efficiencyAfterRetrain_2f {
     color: #f2f2f7;
     font-size: 18rem;
     font-weight: 700;
@@ -786,26 +1283,37 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
-.Description_retrainPrice_3c.Description_animate_1f .Description_retrainPriceGlow_a9 {
-    animation: Description_glowInAnimation_50 0.3s;
-}
-
-.Description_retrainPrice__highlighted_3e {
+.Description_efficiencyAfterRetrain__highlighted_71 {
     color: #ffdd99;
 }
 
-.Description_retrainPrice__selected_b8 {
+.Description_efficiencyAfterRetrain__selected_41 {
     opacity: 1;
 }
 
-.Description_retrainPriceGlow_a9 {
-    width: 100rem;
-    height: 100rem;
-    background: url('R.images.gui.maps.icons.crew.cardGlow.retrainDebuffGlow') no-repeat center / contain;
-    opacity: 0;
+.Description_efficiencyAfterRetrainValue_f4 {
+    position: relative;
+}
+
+.Description_efficiencyAfterRetrainGlow_cb {
+    width: 125rem;
+    height: 70rem;
+    background: no-repeat center / contain;
     position: absolute;
-    top: -39rem;
-    left: -37rem;
+    top: -23rem;
+    left: -47rem;
+}
+
+.Description_efficiencyAfterRetrainGlow__increase_84 {
+    background-image: url('R.images.gui.maps.icons.crew.cardGlow.increaseGlow');
+}
+
+.Description_efficiencyAfterRetrainGlow__decrease_24 {
+    background-image: url('R.images.gui.maps.icons.crew.cardGlow.decreaseGlow');
+}
+
+.Description_efficiencyAfterRetrainValuePercents_29 {
+    position: relative;
 }
 
 .Description_bonusSkill_0d {
@@ -877,24 +1385,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: -7rem;
 }
 
-@keyframes Description_glowInAnimation_50 {
-    0% {
-        opacity: 0;
-    }
-
-    10% {
-        opacity: 0.35;
-    }
-
-    90% {
-        opacity: 0.35;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
 .FormatText_base_d0 {
     display: flex;
     flex-wrap: wrap;
@@ -904,11 +1394,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     background: no-repeat center / contain;
     position: relative;
-}
-
-.SkillIcon_base__small_d0 {
-    width: 14rem;
-    height: 14rem;
 }
 
 .SkillIcon_base__c_22x22_14 {
@@ -929,6 +1414,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .SkillIcon_base__big_ae {
     width: 52rem;
     height: 52rem;
+}
+
+.SkillIcon_base__c_80x80_79 {
+    width: 80rem;
+    height: 80rem;
+}
+
+.SkillIcon_base__c_120x90_8c {
+    width: 120rem;
+    height: 90rem;
 }
 
 .SkillIcon_base__dialogs_e5 {
@@ -1273,7 +1768,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     border-radius: 6rem;
     background: rgba(255, 255, 255, 0.04);
     position: relative;
-    cursor: pointer;
     mask-size: contain;
 }
 
@@ -1286,17 +1780,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     border: 1rem solid rgba(249, 201, 111, 0.5);
     box-shadow: 0 0 8rem 0 rgba(255, 0, 0, 0.28);
     background: rgba(255, 140, 109, 0.15);
-    cursor: default;
+}
+
+.PriceCard_base__hoverEnabled_18:hover {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.PriceCard_base__hoverEnabled_18:hover .PriceCard_hoverRays_75 {
+    visibility: visible;
 }
 
 .PriceCard_base__disabled_9c {
     background: rgba(0, 0, 0, 0.25);
     opacity: 0.5;
-    cursor: default;
-}
-
-.PriceCard_base__hover_7d {
-    background: rgba(255, 255, 255, 0.1);
 }
 
 .PriceCard_tooltip_69 {
@@ -1328,6 +1825,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         rgba(255, 255, 255, 0) 100%
     );
     filter: blur(5rem);
+    visibility: hidden;
 }
 
 .PriceCard_disabledPattern_a7 {
@@ -1340,6 +1838,24 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     border-radius: 6rem;
     background: url('R.images.gui.maps.icons.library.disabled_pattern') center / 9rem;
     opacity: 1;
+}
+
+.PriceCard_discountPattern_d5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 238rem;
+    height: 318rem;
+    background: url('R.images.gui.maps.icons.common.components.price_card.perk_reset.dot_texture') no-repeat center /
+        contain;
+}
+
+.mediaMedium .PriceCard_discountPattern_d5 {
+    width: 298rem;
+    height: 398rem;
+    background-image: url('R.images.gui.maps.icons.common.components.price_card.perk_reset.dot_texture_big');
 }
 
 .PriceCard_title_98 {
@@ -1408,8 +1924,30 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
 }
 
+.PriceCard_price__specialDiscount_12 {
+    color: #ffdd99;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
 .PriceCard_base__small_b0 .PriceCard_price_13 {
     bottom: 15rem;
+}
+
+.PriceCard_bottomGlow_a3 {
+    width: 238rem;
+    height: 109rem;
+    background: url('R.images.gui.maps.icons.common.components.price_card.perk_reset.bottom_glow') no-repeat center /
+        contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.mediaMedium .PriceCard_bottomGlow_a3 {
+    width: 298rem;
+    background-image: url('R.images.gui.maps.icons.common.components.price_card.perk_reset.bottom_glow_big');
 }
 
 .PriceListApp_base_7d {
@@ -1428,442 +1966,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin: 0 10rem;
 }
 
-.Checkbox_base_36 {
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-    cursor: pointer;
-}
-
-.Checkbox_base__disabled_08 {
-    pointer-events: none;
-}
-
-.Checkbox_base__center_52 {
-    align-items: center;
-}
-
-.Checkbox_base__bottom_28 {
-    align-items: flex-end;
-}
-
-.Checkbox_input_37 {
-    border: 1rem solid rgba(190, 190, 190, 0.45);
-    border-radius: 2rem;
-    background-color: rgba(0, 0, 0, 0.3);
-    opacity: 0.6;
-    position: relative;
-    transition: background-color 0.1s linear;
-}
-
-.Checkbox_base__mouseDown_45 .Checkbox_input_37 {
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.Checkbox_base__small_18 .Checkbox_input_37 {
-    width: 12rem;
-    height: 12rem;
-}
-
-.Checkbox_base__medium_12 .Checkbox_input_37 {
-    width: 18rem;
-    height: 18rem;
-}
-
-.Checkbox_base__large_f7 .Checkbox_input_37 {
-    width: 24rem;
-    height: 24rem;
-}
-
-.Checkbox_base__extraLarge_c9 .Checkbox_input_37 {
-    width: 32rem;
-    height: 32rem;
-}
-
-.Checkbox_alertOverlay_52 {
-    position: absolute;
-    top: -1rem;
-    right: -1rem;
-    bottom: -1rem;
-    left: -1rem;
-    border: 1rem solid #feab34;
-    border-radius: 2rem;
-    box-shadow: inset 0 0 9rem rgba(0, 0, 0, 0.25);
-    opacity: 0;
-    pointer-events: none;
-}
-
-.Checkbox_base__alert_b7 .Checkbox_alertOverlay_52 {
-    animation: Checkbox_blink_5e 2s ease-in-out infinite;
-}
-
-.Checkbox_base__alert_b7.Checkbox_base__checked_a2 .Checkbox_alertOverlay_52,
-.Checkbox_base__alert_b7.Checkbox_base__disabled_08 .Checkbox_alertOverlay_52 {
-    opacity: 0;
-    animation: initial;
-}
-
-.Checkbox_inputHoverOverlay_36 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to top, #201f1c, #494741);
-    opacity: 0;
-    transition: opacity 0.1s linear;
-    pointer-events: none;
-}
-
-.Checkbox_base_36:hover .Checkbox_inputHoverOverlay_36 {
-    opacity: 0.8;
-}
-
-.Checkbox_base_36.Checkbox_base__mouseDown_45:hover .Checkbox_inputHoverOverlay_36 {
-    opacity: 0;
-}
-
-.Checkbox_highlight_b8 {
-    background: no-repeat 50% / contain;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.1s linear;
-    pointer-events: none;
-}
-
-.Checkbox_base__checked_a2 .Checkbox_highlight_b8 {
-    opacity: 1;
-}
-
-.Checkbox_base__checked_a2.Checkbox_base__disabled_08 .Checkbox_highlight_b8 {
-    opacity: 0;
-}
-
-.Checkbox_base__small_18 .Checkbox_highlight_b8 {
-    width: 34rem;
-    height: 34rem;
-}
-
-.Checkbox_base__medium_12 .Checkbox_highlight_b8 {
-    width: 40rem;
-    height: 40rem;
-}
-
-.Checkbox_base__large_f7 .Checkbox_highlight_b8 {
-    width: 46rem;
-    height: 46rem;
-}
-
-.Checkbox_base__extraLarge_c9 .Checkbox_highlight_b8 {
-    width: 54rem;
-    height: 54rem;
-}
-
-.Checkbox_base__main_3a.Checkbox_base__small_18 .Checkbox_highlight_b8 {
-    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_s');
-}
-
-.Checkbox_base__main_3a.Checkbox_base__medium_12 .Checkbox_highlight_b8 {
-    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_m');
-}
-
-.Checkbox_base__main_3a.Checkbox_base__large_f7 .Checkbox_highlight_b8 {
-    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_l');
-}
-
-.Checkbox_base__main_3a.Checkbox_base__extraLarge_c9 .Checkbox_highlight_b8 {
-    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_xl');
-}
-
-.Checkbox_base__primary_ab.Checkbox_base__small_18 .Checkbox_highlight_b8 {
-    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_s_green');
-}
-
-.Checkbox_base__primary_ab.Checkbox_base__medium_12 .Checkbox_highlight_b8 {
-    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_m_green');
-}
-
-.Checkbox_base__primary_ab.Checkbox_base__large_f7 .Checkbox_highlight_b8 {
-    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_l_green');
-}
-
-.Checkbox_base__primary_ab.Checkbox_base__extraLarge_c9 .Checkbox_highlight_b8 {
-    background-image: url('R.images.gui.maps.icons.components.checkbox.checkbox_xl_green');
-}
-
-.Checkbox_checkmark_60 {
-    background: center / contain no-repeat;
-    opacity: 0;
-    position: absolute;
-    left: 0;
-}
-
-.Checkbox_base__checked_a2 .Checkbox_checkmark_60 {
-    /* Using a transition causes the image to blink on appear */
-    animation: Checkbox_fadeIn_1a 0.1s linear 0 normal forwards;
-}
-
-.Checkbox_base__checked_a2.Checkbox_base__disabled_08 .Checkbox_checkmark_60 {
-    opacity: 0.5;
-}
-
-.Checkbox_base__small_18 .Checkbox_checkmark_60 {
-    width: 11rem;
-    height: 11rem;
-}
-
-.Checkbox_base__medium_12 .Checkbox_checkmark_60 {
-    width: 19rem;
-    height: 20rem;
-    transform: translate(1rem, -4rem);
-}
-
-.Checkbox_base__large_f7 .Checkbox_checkmark_60 {
-    width: 23rem;
-    height: 24rem;
-    transform: translate(3rem, -3rem);
-}
-
-.Checkbox_base__extraLarge_c9 .Checkbox_checkmark_60 {
-    width: 36rem;
-    height: 36rem;
-    transform: translate(2rem, -8rem);
-}
-
-.Checkbox_base__main_3a.Checkbox_base__small_18 .Checkbox_checkmark_60 {
-    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_s');
-}
-
-.Checkbox_base__main_3a.Checkbox_base__medium_12 .Checkbox_checkmark_60 {
-    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_m');
-}
-
-.Checkbox_base__main_3a.Checkbox_base__large_f7 .Checkbox_checkmark_60 {
-    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_l');
-}
-
-.Checkbox_base__main_3a.Checkbox_base__extraLarge_c9 .Checkbox_checkmark_60 {
-    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_xl');
-}
-
-.Checkbox_base__primary_ab.Checkbox_base__small_18 .Checkbox_checkmark_60 {
-    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_s_green');
-}
-
-.Checkbox_base__primary_ab.Checkbox_base__medium_12 .Checkbox_checkmark_60 {
-    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_m_green');
-}
-
-.Checkbox_base__primary_ab.Checkbox_base__large_f7 .Checkbox_checkmark_60 {
-    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_l_green');
-}
-
-.Checkbox_base__primary_ab.Checkbox_base__extraLarge_c9 .Checkbox_checkmark_60 {
-    background-image: url('R.images.gui.maps.icons.components.checkbox.icon_checked_xl_green');
-}
-
-.Checkbox_label_bc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
-    height: 100%;
-    padding-left: 10rem;
-    position: relative;
-}
-
-.Checkbox_labelContent_64 {
-    color: #8c8c7e;
-    font-size: 14rem;
-    line-height: 1.15;
-    transition: color 0.1s linear;
-}
-
-.Checkbox_base__extraLarge_c9 .Checkbox_labelContent_64 {
-    font-size: 16rem;
-}
-
-.Checkbox_base_36:hover .Checkbox_labelContent_64 {
-    color: #c8c8b6;
-}
-
-.Checkbox_base__disabled_08 .Checkbox_labelContent_64,
-.Checkbox_base__disabled_08:hover .Checkbox_labelContent_64 {
-    color: #37362e;
-}
-
-@keyframes Checkbox_fadeIn_1a {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes Checkbox_blink_5e {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-.RoleIcon_base_51 {
-    background: no-repeat center / contain;
-}
-
-.RoleIcon_base__small_68 {
-    width: 13rem;
-    height: 13rem;
-}
-
-.RoleIcon_base__c_14x14_8f {
-    width: 14rem;
-    height: 14rem;
-}
-
-.RoleIcon_base__c_18x18_0b {
-    width: 18rem;
-    height: 18rem;
-}
-
-.RoleIcon_base__c_24x24_new_fe,
-.RoleIcon_base__c_24x24_52 {
-    width: 24rem;
-    height: 24rem;
-}
-
-.RoleIcon_base__c_30x30_red_85,
-.RoleIcon_base__c_30x30_e9 {
-    width: 30rem;
-    height: 30rem;
-}
-
-.RoleIcon_base__medium_5d {
-    width: 33rem;
-    height: 33rem;
-}
-
-.RoleIcon_base__white_2a {
-    width: 44rem;
-    height: 44rem;
-}
-
-.RoleIcon_base__big_b4 {
-    width: 60rem;
-    height: 60rem;
-}
-
-.Role_base_da {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 78rem;
-    height: 50rem;
-    position: relative;
-    cursor: pointer;
-}
-
-.Role_base__select_c0 {
-    cursor: default;
-}
-
-.Role_bg_59 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: 4rem;
-}
-
-.Role_base__hover_43 .Role_bg_59 {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
-}
-
-.Role_base__select_c0 .Role_bg_59 {
-    background-color: rgba(255, 140, 109, 0.15);
-}
-
-.Role_roleIcon_a0 {
-    opacity: 0.2;
-}
-
-.Role_base__hover_43 .Role_roleIcon_a0 {
-    opacity: 0.8;
-}
-
-.Role_base__select_c0 .Role_roleIcon_a0 {
-    filter: drop-shadow(0px 0px 12px #e52) drop-shadow(0px 0px 4px rgba(255, 127, 0, 0.25));
-    opacity: 0.8;
-}
-
-.Role_warning_a9 {
-    width: 24rem;
-    height: 24rem;
-    background: url('R.images.gui.maps.icons.library.alertBigIcon') no-repeat 50% / contain;
-    position: absolute;
-    bottom: -10rem;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.RoleChange_base_12 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.RoleChange_forced_f0 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.RoleChange_lockIcon_c3 {
-    display: flex;
-    width: 24rem;
-    height: 24rem;
-    background: url('R.images.gui.maps.icons.library.lock_gray') no-repeat center / contain;
-}
-
-.RoleChange_tooltipBox_d0 {
-    display: flex;
-}
-
-.RoleChange_labelDisable_39 {
-    color: rgba(140, 140, 126, 0.5);
-}
-
-.RoleChange_roles_eb {
-    display: flex;
-    flex-direction: row;
-    margin-top: -54rem;
-    border-radius: 4rem;
-    background-color: rgba(255, 255, 255, 0.04);
-    opacity: 0;
-    position: relative;
-    transition: all 0.3s;
-    pointer-events: none;
-}
-
-.RoleChange_roles__visible_52 {
-    margin-top: 10rem;
-    opacity: 1;
-    pointer-events: auto;
-}
-
 .RetrainPriceList_base_68 {
     display: flex;
     flex-direction: column;
@@ -1871,12 +1973,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
-.RetrainPriceList_warning_60 {
-    margin-bottom: 24rem;
+.RetrainPriceList_warningWraper_c0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    opacity: 0;
 }
 
-.RetrainPriceList_roleChange_a7 {
-    margin-top: 20rem;
+.RetrainPriceList_warning_60 {
+    margin-bottom: 24rem;
 }
 
 .Divider_base_0a {
@@ -2001,6 +2107,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     color: #e9e2bf;
 }
 
+.TankName_base__typeWhiteOrange_ac {
+    color: #fefeec;
+}
+
 .TankName_base__typeColored_bc .TankName_level_bb {
     color: #e9e2bf;
 }
@@ -2057,101 +2167,412 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 5rem;
 }
 
-.SkillEfficiency_base_16 {
-    color: #ced9d9;
-    font-size: 22rem;
-    font-weight: 700;
-    line-height: 1.2;
-    position: relative;
-}
-
-.SkillEfficiency_bg_59 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    height: 32rem;
-    border-radius: 4rem;
+.EfficiencyIndicator_base_34 {
+    display: flex;
+    justify-content: center;
+    width: 32rem;
+    height: 22rem;
+    border-radius: 2rem;
     background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    pointer-events: auto;
 }
 
-.SkillEfficiency_base__untrained_42 .SkillEfficiency_bg_59 {
-    width: 46rem;
+.EfficiencyIndicator_base__big_a1 {
+    align-items: center;
+    height: 26rem;
 }
 
-.SkillEfficiency_base__low_11 .SkillEfficiency_bg_59 {
-    width: 50rem;
-}
-
-.SkillEfficiency_base__normal_2a .SkillEfficiency_bg_59 {
-    width: 60rem;
-}
-
-.SkillEfficiency_arrow_11 {
-    display: flex;
-    width: 57rem;
-    height: 96rem;
-    background: url('R.images.gui.maps.icons.windows.retrain_dialog.xp_arrow_small') no-repeat center / cover;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, 0);
-    transition:
-        opacity 0.1s ease-in-out,
-        transform 0.1s ease-in-out;
-    pointer-events: none;
-}
-
-.SkillEfficiency_base__selected_8a .SkillEfficiency_arrow_11 {
-    opacity: 1;
-    transform: translate(-50%, -63rem);
-}
-
-.SkillEfficiency_glow_7b {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    width: 100rem;
-    height: 100rem;
-    display: flex;
-    background: url('R.images.gui.maps.icons.windows.retrain_dialog.efficiency_glow') no-repeat center / cover;
-    opacity: 0.4;
-    pointer-events: none;
-}
-
-.SkillEfficiency_untrained_94 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    display: flex;
-    width: 42rem;
+.EfficiencyIndicator_base__large_dc {
+    align-items: center;
+    width: auto;
     height: 32rem;
-    background: url('R.images.gui.maps.icons.library.untrained') no-repeat center / cover;
+    padding: 0 2rem;
 }
 
-.SkillEfficiency_efficiency_14 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    top: -2rem;
+.EfficiencyIndicator_base__large_dc.EfficiencyIndicator_base__untrained_cd {
+    width: 42rem;
 }
 
-.SkillEfficiency_base__low_11 .SkillEfficiency_efficiency_14 {
+.EfficiencyIndicator_percent_6b {
+    margin-top: 2rem;
+    text-shadow:
+        0 0 12rem rgba(255, 0, 0, 0.7),
+        0 0 8rem rgba(226, 0, 0, 0.7);
+    position: relative;
     color: #ffc3be;
-    text-shadow: 0 0 12rem #ff0000;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
 }
 
-.SkillEfficiency_base__selected_8a .SkillEfficiency_efficiency_14,
-.SkillEfficiency_base__normal_2a .SkillEfficiency_efficiency_14 {
+.EfficiencyIndicator_percent__full_30 {
     color: #ffffff;
     text-shadow:
         0 0 15rem rgb(238, 85, 34),
         0 0 8rem rgba(254, 171, 52, 0.6),
         0 0 4rem rgba(255, 127, 0, 0.25);
+    letter-spacing: -1rem;
+}
+
+.EfficiencyIndicator_base__big_a1 .EfficiencyIndicator_percent_6b {
+    position: relative;
+    top: -1rem;
+}
+
+.EfficiencyIndicator_base__large_dc .EfficiencyIndicator_percent_6b {
+    font-size: 22rem;
+    position: relative;
+    top: -2rem;
+}
+
+.EfficiencyIndicator_icon_da {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.untrained') no-repeat center / 44rem 36rem;
+}
+
+.AcceleratedTrainingIcon_base_4f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 16rem;
+    height: 16rem;
+    pointer-events: auto;
+}
+
+.AcceleratedTrainingIcon_icon_45 {
+    width: 34rem;
+    height: 34rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.speedXpIcon') no-repeat center / contain;
+}
+
+.AnimatedLostSkill_base_55 {
+    display: flex;
+    position: relative;
+}
+
+.AnimatedLostSkill_base__c_24x24_d5 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.AnimatedLostSkill_base__c_44x44_72 {
+    width: 44rem;
+    height: 44rem;
+}
+
+.AnimatedLostSkill_icon_d4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.AnimatedLostSkill_base__c_24x24_d5 .AnimatedLostSkill_icon_d4 {
+    position: absolute;
+    top: -20rem;
+    right: -20rem;
+    bottom: -20rem;
+    left: -20rem;
+}
+
+.AnimatedLostSkill_base__c_44x44_72 .AnimatedLostSkill_icon_d4 {
+    position: absolute;
+    top: -26rem;
+    right: -26rem;
+    bottom: -26rem;
+    left: -26rem;
+}
+
+.AnimatedNewSkill_base_0f {
+    width: 24rem;
+    height: 24rem;
+}
+
+.Skill_base_1f {
+    display: flex;
+    position: relative;
+}
+
+.Skill_base__c_24x24_29 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.Skill_base__c_44x44_5a {
+    width: 44rem;
+    height: 44rem;
+}
+
+.Skill_background_02 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.Skill_base__borderLightYellow_09 .Skill_background_02 {
+    border-color: #ffdd99;
+}
+
+.Skill_base__borderYellow_3e .Skill_background_02 {
+    border-color: #feab34;
+}
+
+.Skill_base__borderRed_d2 .Skill_background_02 {
+    border-color: #ff2717;
+}
+
+.Skill_base__typeBonus_23 .Skill_background_02 {
+    border: none;
+    background: no-repeat 0 / cover;
+}
+
+.Skill_base__disabled_85 .Skill_background_02 {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.6;
+}
+
+.Skill_base__disabled_85.Skill_base__borderYellow_3e .Skill_background_02 {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.Skill_newSkillHighLight_44 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    background: #ff5c00;
+    opacity: 0.25;
+}
+
+.Skill_icon_b0 {
+    position: absolute;
+}
+
+.Skill_base__disabled_85 .Skill_icon_b0 {
+    opacity: 0.3;
+}
+
+.Skill_base__c_24x24_29 .Skill_icon_b0 {
+    width: 22rem;
+    height: 22rem;
+    top: 1rem;
+    left: 1rem;
+}
+
+.Skill_base__c_44x44_5a .Skill_icon_b0 {
+    width: 34rem;
+    height: 34rem;
+    top: 5rem;
+    left: 5rem;
+}
+
+.Skill_disabledOverlay_3b {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    background: url('R.images.gui.maps.icons.crew.skillsFrame.disabled') center / cover;
+}
+
+.LostLevelAnimation_base_f6 {
+    display: flex;
+    align-items: center;
+    width: 0;
+    position: relative;
+}
+
+.LostLevelAnimation_level_f0 {
+    color: #feab34;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    position: absolute;
+}
+
+.LostLevelAnimation_level__skillLost_a2 {
+    color: #ff2717;
+}
+
+.LostLevelAnimation_level__skillBlur_24 {
+    text-shadow: 0 0 20rem rgba(255, 255, 255, 0.9);
+    filter: blur(5rem);
+    opacity: 0;
+}
+
+.LostLevelAnimation_base__c_24x24_1c .LostLevelAnimation_level_f0 {
+    left: 4rem;
+}
+
+.LostLevelAnimation_base__c_44x44_44 .LostLevelAnimation_level_f0 {
+    font-size: 24rem;
+    left: 6rem;
+}
+
+.SkillLevel_base_d2 {
+    color: #feab34;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.SkillLevel_base__highlighted_e3 {
+    color: #fefeec;
+    text-shadow:
+        0 0 15rem #e52,
+        0 0 8rem #ff2a00,
+        0 0 4rem rgba(255, 127, 0, 0.25);
+}
+
+.Row_base_bb {
+    display: flex;
+    align-items: center;
+}
+
+.Row_skill_fb {
+    overflow: hidden;
+}
+
+.Row_skill_fb + .Row_skill_fb {
+    margin-left: 2rem;
+}
+
+.Row_base__c_44x44_4f .Row_skill_fb + .Row_skill_fb {
+    margin-left: 4rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseNoMargins_13 .Row_skill_fb + .Row_skill_fb {
+    margin-left: -1rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOverlap_2c .Row_skill_fb + .Row_skill_fb {
+    margin-left: 0;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseReducedMargins_3b .Row_skill_fb + .Row_skill_fb {
+    margin-left: 1rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOverlap_2c .Row_skill_fb {
+    width: 20rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOverlap_2c .Row_skill__last_0a,
+.Row_base__c_24x24_16.Row_base__collapseOverlap_2c .Row_skill__lastLearnedSkill_6c {
+    width: 24rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOverlap_2c .Row_skill__lastLearnedSkill_6c {
+    margin-right: 2rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOnlyLearningOverlap_19 .Row_skill__stateLearning_5d {
+    width: 20rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOnlyLearningOverlap_19
+    .Row_skill__stateLearning_5d
+    + .Row_skill__stateLearning_5d {
+    margin-left: 0;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOnlyLearningOverlap_19 .Row_skill_fb.Row_skill__last_0a {
+    width: 24rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlap_10 .Row_skill_fb {
+    width: 19rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithLevel_90 .Row_skill_fb,
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithEfficiency_90 .Row_skill_fb {
+    width: 15rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithLevelAndEfficiency_4e .Row_skill_fb {
+    width: 14rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlap_10 .Row_skill__last_0a,
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithLevel_90 .Row_skill__last_0a,
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithEfficiency_90 .Row_skill__last_0a,
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithLevelAndEfficiency_4e .Row_skill__last_0a {
+    width: 24rem;
+}
+
+.Row_base__c_24x24_16 .Row_level_56 {
+    margin-left: 4rem;
+    position: relative;
+    top: -1rem;
+}
+
+.Row_base__c_44x44_4f .Row_level_56 {
+    margin-left: 6rem;
+    font-size: 24rem;
+}
+
+.Row_acceleratedTrainingIcon_c7 {
+    margin-left: 9rem;
+}
+
+.Row_lostSkill_32 {
+    margin-left: 2rem;
+}
+
+.Row_base__c_44x44_4f .Row_lostSkill_32 {
+    margin-left: 4rem;
+}
+
+.Skills_base_ec {
+    display: flex;
+    align-items: center;
+}
+
+.Skills_efficiency_d0 {
+    margin-right: 4rem;
+}
+
+.Skills_base__c_44x44_c0 .Skills_efficiency_d0 {
+    margin-right: 8rem;
+}
+
+.Skills_rows_e8 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Skills_bonusRow_4a {
+    margin-top: 2rem;
+}
+
+.Skills_base__c_44x44_c0 .Skills_bonusRow_4a {
+    margin-top: 4rem;
+}
+
+.SkillsWithRole_base_92 {
+    display: flex;
+    align-items: center;
+}
+
+.SkillsWithRole_role_66 {
+    margin: 0 11rem 0 3rem;
+    opacity: 0.6;
+}
+
+.SkillsWithRole_role__glow_93 {
+    filter: drop-shadow(0 0rem 3rem #e52) drop-shadow(0 0 8rem #ff2717) drop-shadow(0 0 4rem rgba(255, 127, 0, 0.25));
+    opacity: 1;
 }
 
 .Frame_base_e1 {
@@ -2251,111 +2672,70 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 30rem;
 }
 
-.SkillsList_base_26 {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.SkillsList_role_83 {
-    opacity: 0.6;
-}
-
-.SkillsList_role__glow_52 {
-    filter: drop-shadow(0 0rem 3rem #e52) drop-shadow(0 0 8rem #ff2717) drop-shadow(0 0 4rem rgba(255, 127, 0, 0.25));
-    opacity: 1;
-}
-
-.SkillsList_efficiency_93 {
-    display: flex;
-}
-
-.SkillsList_efficiency__untrained_5e {
-    margin: 0 30rem;
-}
-
-.SkillsList_efficiency__low_b5 {
-    margin: 0 32rem;
-}
-
-.SkillsList_efficiency__normal_b3 {
-    margin: 0 36rem;
-}
-
-.SkillsList_skills_b3 {
-    display: flex;
-    flex: 1;
-}
-
-.SkillsList_skills__c_24x24_4f {
-    flex-wrap: wrap;
-}
-
-.SkillsList_skill_57 {
-    display: flex;
-    margin-right: 4rem;
-}
-
-.SkillsList_skills__c_24x24_4f .SkillsList_skill_57 {
-    margin-top: 2rem;
-    margin-right: 1rem;
-}
-
-.SkillsList_sequence_f4 {
-    width: 96rem;
-    height: 96rem;
-    opacity: 0;
-    position: absolute;
-    top: -26rem;
-    left: -26rem;
-}
-
-.SkillsList_sequence__show_24 {
-    opacity: 1;
-}
-
-.SkillsList_sequence__c_24x24_4e {
-    width: 64rem;
-    height: 64rem;
-    position: absolute;
-    top: -18rem;
-    left: -20rem;
-}
-
 .SkillsResult_base_75 {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.SkillsResult_gapBox_da {
-    width: 15rem;
-}
-
-.SkillsResult_arrow_b0 {
-    width: 100rem;
-    position: relative;
-}
-
-.SkillsResult_arrowIcon_a7 {
-    width: 106rem;
+    align-self: center;
+    width: 2rem;
     height: 64rem;
-    background: url('R.images.gui.maps.icons.library.changeArrow106x64') no-repeat center / contain;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    padding: 20rem 0;
+    position: relative;
 }
 
-.SkillsResult_skills_c1 {
+.SkillsResult_base__withBonusSkills_58 {
+    height: 90rem;
+}
+
+.mediaMedium .SkillsResult_base_75 {
+    height: 84rem;
+}
+
+.mediaMedium .SkillsResult_base__withBonusSkills_58 {
+    height: 132rem;
+}
+.SkillsResult_background_8b {
+    width: 720rem;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.03) 15%,
+        rgba(255, 255, 255, 0.03) 85%,
+        transparent 100%
+    );
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.SkillsResult_arrowWrapper_03 {
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 106rem;
+    height: 100%;
 }
-
-.SkillsResult_skills__c_24x24_a2 {
-    max-width: 427rem;
+.SkillsResult_arrow_b0 {
+    width: 128rem;
+    height: 128rem;
+    background: url('R.images.gui.maps.icons.library.changeArrow') no-repeat center / contain;
+}
+.SkillsResult_skillsWrapper_bb {
+    position: absolute;
+    top: 20rem;
+}
+.SkillsResult_base__withPriceSelected_f6 .SkillsResult_skillsWrapper__after_ed {
+    left: 0;
+}
+.SkillsResult_base__withPriceSelected_f6 .SkillsResult_skillsWrapper__before_ec {
+    right: 0;
+}
+.SkillsResult_skillsWrapper__withoutBonusSkills_af {
+    top: 30rem;
+}
+.mediaMedium .SkillsResult_skillsWrapper__withoutBonusSkills_af {
+    top: 44rem;
+}
+.SkillsResult_skills__low_19 {
+    margin-left: 7rem;
 }
 
 .TitleContent_base_38 {
@@ -2374,7 +2754,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .TitleContent_result_1e {
     margin-top: 15rem;
-    padding: 0 40rem;
 }
 
 .RetrainSingleDialogApp_icon_40 {
@@ -2382,18 +2761,26 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .RetrainSingleDialogApp_center_b8 {
-    margin-bottom: -90rem;
+    margin-bottom: -26rem;
     z-index: 2;
 }
 
-.mediaMedium .RetrainSingleDialogApp_center_b8 {
-    margin-bottom: -128rem;
+.mediaLarge .RetrainSingleDialogApp_center_b8 {
+    margin-bottom: -140rem;
 }
 
-.mediaLarge .RetrainSingleDialogApp_center_b8 {
-    margin-bottom: -60rem;
+.RetrainSingleDialogApp_center__checked_92 {
+    margin-bottom: -36rem;
+}
+
+.mediaMedium .RetrainSingleDialogApp_center__checked_92 {
+    margin-bottom: -42rem;
 }
 
 .RetrainSingleDialogApp_priceList_4a {
     margin-top: 5rem;
+}
+
+.RetrainSingleDialogApp_divider_7d {
+    display: none;
 }

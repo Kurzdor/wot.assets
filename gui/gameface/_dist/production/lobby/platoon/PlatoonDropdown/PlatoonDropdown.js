@@ -1768,25 +1768,24 @@
                 !(function (e) {
                     (e.left = 'left'), (e.top = 'top'), (e.right = 'right'), (e.bottom = 'bottom');
                 })(Ee || (Ee = {}));
-                const ye = ({ position: e }) => {
-                        const t = R.images.gui.maps.icons.platoon.common.separator.$dyn(e),
-                            n = [Ee.right, Ee.left].includes(e),
-                            o = c()(pe, n ? fe : he);
+                const ye = [Ee.right, Ee.left],
+                    Oe = ({ position: e }) => {
+                        const t = String(R.images.gui.maps.icons.platoon.common.separator.$dyn(e));
                         return r().createElement(
                             'div',
-                            { className: o },
+                            { className: c()(pe, ye.includes(e) ? fe : he) },
                             r().createElement('div', { className: ge, style: H(t) }),
                         );
                     },
-                    Oe = 'ToggleButton_base_b9',
-                    ke = 'ToggleButton_content_85',
-                    Ce = 'ToggleButton_overlay_0a',
-                    Te = 'ToggleButton_base__active_68',
-                    Pe = 'ToggleButton_indicator_85',
-                    Se = ['active', 'className', 'children', 'size'];
-                function Re() {
+                    ke = 'ToggleButton_base_b9',
+                    Ce = 'ToggleButton_content_85',
+                    Te = 'ToggleButton_overlay_0a',
+                    Pe = 'ToggleButton_base__active_68',
+                    Se = 'ToggleButton_indicator_85',
+                    Re = ['active', 'className', 'children', 'size'];
+                function Me() {
                     return (
-                        (Re =
+                        (Me =
                             Object.assign ||
                             function (e) {
                                 for (var t = 1; t < arguments.length; t++) {
@@ -1795,7 +1794,7 @@
                                 }
                                 return e;
                             }),
-                        Re.apply(this, arguments)
+                        Me.apply(this, arguments)
                     );
                 }
                 (0, o.memo)((e) => {
@@ -1812,24 +1811,24 @@
                                 a = Object.keys(e);
                             for (o = 0; o < a.length; o++) (n = a[o]), t.indexOf(n) >= 0 || (r[n] = e[n]);
                             return r;
-                        })(e, Se);
-                    const l = c()(Oe, n, t && Te);
+                        })(e, Re);
+                    const l = c()(ke, n, t && Pe);
                     return r().createElement(
                         'div',
                         { className: l },
                         r().createElement(
                             Y,
-                            Re({}, s, { type: 'secondary', size: i }),
-                            r().createElement('span', { className: ke }, o),
+                            Me({}, s, { type: 'secondary', size: i }),
+                            r().createElement('span', { className: Ce }, o),
                         ),
-                        r().createElement('div', { className: Ce }),
-                        r().createElement('div', { className: Pe }),
+                        r().createElement('div', { className: Te }),
+                        r().createElement('div', { className: Se }),
                     );
                 });
-                const Me = { contentId: R.views.lobby.platoon.AlertTooltip('resId'), isEnabled: !0 },
-                    Ne = (e, t, n, o = !0) =>
+                const Ne = { contentId: R.views.lobby.platoon.AlertTooltip('resId'), isEnabled: !0 },
+                    Le = (e, t, n, o = !0) =>
                         e && o
-                            ? Me
+                            ? Ne
                             : ((e, t, n) => ({
                                   contentId:
                                       R.views.common.tooltip_window.simple_tooltip_content.SimpleTooltipContent(
@@ -1839,7 +1838,7 @@
                                   args: { header: e, body: t },
                                   isEnabled: n,
                               }))(t, n, o),
-                    Le = {
+                    xe = {
                         base: 'FlatButton_base_bf',
                         background: 'FlatButton_background_5f',
                         base__disabled: 'FlatButton_base__disabled_c0',
@@ -1847,14 +1846,14 @@
                         text: 'FlatButton_text_90',
                         description: 'FlatButton_description_08',
                     };
-                let xe;
+                let Ae;
                 !(function (e) {
                     (e[(e.findPlayers = 0)] = 'findPlayers'),
                         (e[(e.createPlatoon = 1)] = 'createPlatoon'),
                         (e[(e.createPlatoonForTwo = 2)] = 'createPlatoonForTwo'),
                         (e[(e.createPlatoonForSeven = 3)] = 'createPlatoonForSeven');
-                })(xe || (xe = {}));
-                const Ae = ({
+                })(Ae || (Ae = {}));
+                const Ie = ({
                     caption: e,
                     onClick: t,
                     isEnabled: n,
@@ -1863,40 +1862,40 @@
                     text: s,
                     tooltipCaption: l,
                 }) => {
-                    const d = i === xe.createPlatoonForSeven || i === xe.createPlatoonForTwo,
+                    const d = i === Ae.createPlatoonForSeven || i === Ae.createPlatoonForTwo,
                         u =
-                            i === xe.findPlayers
+                            i === Ae.findPlayers
                                 ? R.images.gui.maps.icons.platoon.platoon_dropdown.flat_buttons.find_players()
                                 : R.images.gui.maps.icons.platoon.platoon_dropdown.flat_buttons.create_platoon(),
                         _ = (0, o.useMemo)(() => H(u), [u]),
-                        v = c()(Le.base, !n && Le.base__disabled),
+                        v = c()(xe.base, !n && xe.base__disabled),
                         b = (0, o.useCallback)(() => g('highlight'), []),
                         w = (0, o.useCallback)(() => {
-                            t(), g(i === xe.findPlayers ? R.sounds.gui_platoon_2_find_players() : R.sounds.play());
+                            t(), g(i === Ae.findPlayers ? R.sounds.gui_platoon_2_find_players() : R.sounds.play());
                         }, [t, i]),
                         p = (0, o.useCallback)(() => g(R.sounds.play()), []),
-                        h = i === xe.findPlayers && !n,
-                        f = (0, o.useMemo)(() => Ne(h, l, a), [h, l, a]);
+                        h = i === Ae.findPlayers && !n,
+                        f = (0, o.useMemo)(() => Le(h, l, a), [h, l, a]);
                     return r().createElement(
                         m,
                         f,
                         r().createElement(
                             'div',
                             { className: v, onClick: n ? w : void 0, onMouseDown: p, onMouseEnter: b },
-                            r().createElement('div', { className: Le.background }),
-                            r().createElement('div', { className: Le.image, style: _ }),
+                            r().createElement('div', { className: xe.background }),
+                            r().createElement('div', { className: xe.image, style: _ }),
                             r().createElement(
                                 'div',
-                                { className: Le.text },
-                                r().createElement('span', { className: Le.caption }, e),
-                                d && r().createElement('span', { className: Le.description }, s),
+                                { className: xe.text },
+                                r().createElement('span', { className: xe.caption }, e),
+                                d && r().createElement('span', { className: xe.description }, s),
                             ),
                         ),
                     );
                 };
-                function Ie() {
+                function Be() {
                     return (
-                        (Ie =
+                        (Be =
                             Object.assign ||
                             function (e) {
                                 for (var t = 1; t < arguments.length; t++) {
@@ -1905,10 +1904,10 @@
                                 }
                                 return e;
                             }),
-                        Ie.apply(this, arguments)
+                        Be.apply(this, arguments)
                     );
                 }
-                const Be = (0, L.Pi)(() => {
+                const Fe = (0, L.Pi)(() => {
                     const e = j(),
                         t = e.model,
                         n = e.controls,
@@ -1917,13 +1916,13 @@
                     return r().createElement(
                         r().Fragment,
                         null,
-                        r().createElement(Ae, Ie({ type: xe.createPlatoonForTwo }, o, { onClick: n.createForTwo })),
-                        r().createElement(Ae, Ie({ type: xe.createPlatoonForSeven }, a, { onClick: n.createForSeven })),
+                        r().createElement(Ie, Be({ type: Ae.createPlatoonForTwo }, o, { onClick: n.createForTwo })),
+                        r().createElement(Ie, Be({ type: Ae.createPlatoonForSeven }, a, { onClick: n.createForSeven })),
                     );
                 });
-                function Fe() {
+                function De() {
                     return (
-                        (Fe =
+                        (De =
                             Object.assign ||
                             function (e) {
                                 for (var t = 1; t < arguments.length; t++) {
@@ -1932,10 +1931,10 @@
                                 }
                                 return e;
                             }),
-                        Fe.apply(this, arguments)
+                        De.apply(this, arguments)
                     );
                 }
-                const De = (0, L.Pi)(() => {
+                const Ve = (0, L.Pi)(() => {
                         const e = j(),
                             t = e.model,
                             n = e.controls,
@@ -1944,17 +1943,17 @@
                         return r().createElement(
                             r().Fragment,
                             null,
-                            r().createElement(Ae, Fe({ type: xe.findPlayers }, o, { onClick: n.find })),
-                            r().createElement(Ae, Fe({ type: xe.createPlatoon }, a, { onClick: n.create })),
+                            r().createElement(Ie, De({ type: Ae.findPlayers }, o, { onClick: n.find })),
+                            r().createElement(Ie, De({ type: Ae.createPlatoon }, a, { onClick: n.create })),
                         );
                     }),
-                    Ve = 'SettingsContainer_base_5d',
-                    je = 'SettingsContainer_settingsContainer_48',
-                    He = 'SettingsContainer_base__shown_b7',
-                    ze = 'SettingsContainer_settingsHighlight_22',
-                    Ue = ({ isVisible: e, storeSettingsHeight: t }) => {
+                    je = 'SettingsContainer_base_5d',
+                    He = 'SettingsContainer_settingsContainer_48',
+                    ze = 'SettingsContainer_base__shown_b7',
+                    Ue = 'SettingsContainer_settingsHighlight_22',
+                    qe = ({ isVisible: e, storeSettingsHeight: t }) => {
                         const n = (0, o.useRef)(null),
-                            a = c()(Ve, e && He);
+                            a = c()(je, e && ze);
                         return (
                             (0, o.useEffect)(
                                 () =>
@@ -1979,23 +1978,23 @@
                             r().createElement(
                                 'div',
                                 { className: a, ref: n },
-                                r().createElement(ye, { position: Ee.top }),
+                                r().createElement(Oe, { position: Ee.top }),
                                 r().createElement('div', {
-                                    className: ze,
+                                    className: Ue,
                                     style: H(R.images.gui.maps.icons.platoon.platoon_dropdown.glow_arrow()),
                                 }),
                                 r().createElement(ie, {
                                     id: R.views.lobby.platoon.subViews.SettingsContent('resId'),
-                                    mixClass: je,
+                                    mixClass: He,
                                 }),
-                                r().createElement(ye, { position: Ee.bottom }),
+                                r().createElement(Oe, { position: Ee.bottom }),
                             )
                         );
                     },
-                    qe = 'App_base_79';
+                    Ge = 'App_base_79';
                 window.decorator = { directionType: k.Bottom, isCloseBtnVisible: !1 };
-                const Ge = { [P.Random]: De, [P.Comp7]: Be },
-                    We = (0, L.Pi)(() => {
+                const We = { [P.Random]: Ve, [P.Comp7]: Fe },
+                    Ke = (0, L.Pi)(() => {
                         var e;
                         const t = j(),
                             n = t.model,
@@ -2020,27 +2019,27 @@
                                 (a.outside(), h.O.view.sendEvent.minimize(), h.O.view.setEventHandled());
                         }, [a]);
                         N(S.n.ESCAPE, u);
-                        const _ = Ge[null != (e = n.type.get()) ? e : P.Random];
+                        const _ = We[null != (e = n.type.get()) ? e : P.Random];
                         return r().createElement(
                             T,
                             { ref: c, disableAutoSizeUpdate: !0, onOutsideClick: u },
                             r().createElement(
                                 'div',
-                                { className: qe },
+                                { className: Ge },
                                 r().createElement(we, {
                                     description: n.battleType.get(),
                                     backgroundImage: n.backgroundImage.get(),
                                     hasXpBonus: n.hasXpBonus.get(),
                                     hasCreditBonus: n.hasCreditsBonus.get(),
                                 }),
-                                r().createElement(Ue, { isVisible: i, storeSettingsHeight: d }),
+                                r().createElement(qe, { isVisible: i, storeSettingsHeight: d }),
                                 r().createElement(_, null),
                             ),
                         );
                     });
                 engine.whenReady.then(() => {
                     i().render(
-                        r().createElement(V, null, r().createElement(We, null)),
+                        r().createElement(V, null, r().createElement(Ke, null)),
                         document.getElementById('root'),
                     );
                 });

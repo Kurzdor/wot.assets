@@ -3036,6 +3036,10 @@ body {
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    pointer-events: none;
+}
+.Result_widgetsContainer__hoverable_0f {
+    pointer-events: auto;
 }
 
 .ResultAnimations_itemsBase_c0 {

@@ -106,6 +106,10 @@
     font-size: 56rem;
 }
 
+.mediaExtraLarge .Header_status_74 {
+    font-size: 73rem;
+}
+
 .Header_subtitle_3a {
     opacity: 0;
     animation-name: Header_slideUp_83;

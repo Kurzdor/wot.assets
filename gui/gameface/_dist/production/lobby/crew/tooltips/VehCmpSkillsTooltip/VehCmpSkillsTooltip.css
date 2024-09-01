@@ -53,6 +53,34 @@
     pointer-events: none;
 }
 
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
+}
+
 .colors_blackReal_fc {
     color: #000000;
 }
@@ -161,7 +189,7 @@
 }
 
 .renderers_word_f3 {
-    white-space: nowrap;
+    white-space: pre;
     overflow-wrap: normal;
 }
 
@@ -169,11 +197,6 @@
     display: flex;
     background: no-repeat center / contain;
     position: relative;
-}
-
-.SkillIcon_base__small_d0 {
-    width: 14rem;
-    height: 14rem;
 }
 
 .SkillIcon_base__c_22x22_14 {
@@ -194,6 +217,16 @@
 .SkillIcon_base__big_ae {
     width: 52rem;
     height: 52rem;
+}
+
+.SkillIcon_base__c_80x80_79 {
+    width: 80rem;
+    height: 80rem;
+}
+
+.SkillIcon_base__c_120x90_8c {
+    width: 120rem;
+    height: 90rem;
 }
 
 .SkillIcon_base__dialogs_e5 {
@@ -220,7 +253,7 @@
     font-weight: 400;
     line-height: 1.3;
     width: 345rem;
-    padding: 14rem 22rem 9rem;
+    padding: 14rem 19rem 9rem;
 }
 
 .VehCmpSkillsTooltipApp_header_56 {
@@ -255,8 +288,8 @@
     );
     opacity: 0.07;
     position: absolute;
-    right: -22rem;
-    left: -22rem;
+    right: -19rem;
+    left: -19rem;
 }
 
 .VehCmpSkillsTooltipApp_infoHeader_b0 {
@@ -265,10 +298,6 @@
     font-weight: 700;
     line-height: 1.15;
     margin: 17rem 0 8rem;
-}
-
-.VehCmpSkillsTooltipApp_percentage_82 {
-    color: #ee7000;
 }
 
 .VehCmpSkillsTooltipApp_bottom_b2 {

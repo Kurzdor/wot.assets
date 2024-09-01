@@ -207,7 +207,6 @@
     opacity: 0;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .page_heading_05 {
     padding-top: 54rem;
@@ -352,10 +351,11 @@
 }
 
 .Reward_info_72 {
-    margin-top: -13rem;
     color: #e9e2bf;
     font-size: 14rem;
-    line-height: 18rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: -13rem;
     text-align: center;
     z-index: 1;
 }
@@ -391,6 +391,27 @@
     color: #ffdd99;
 }
 
+.Reward_title_36 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 80rem;
+    margin: -13rem -16rem 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.mediaMedium .Reward_title_36 {
+    max-width: 100rem;
+    margin-left: -10rem;
+    margin-right: -10rem;
+}
+
 .Reward_timer_d3 {
     background: no-repeat center / contain;
     position: absolute;
@@ -415,7 +436,6 @@
     right: -14rem;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes Highlight_fadeIn_e9 {
     0% {

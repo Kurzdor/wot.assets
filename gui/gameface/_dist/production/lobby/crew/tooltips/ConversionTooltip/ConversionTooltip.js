@@ -620,16 +620,18 @@
                         ];
                     })(
                         ({ observableModel: e }) =>
-                            Object.assign({}, e.primitives(['isReceived']), { booksList: e.array('booksList') }),
+                            Object.assign({}, e.primitives(['title', 'description']), {
+                                booksList: e.array('booksList'),
+                            }),
                         pe,
                     ),
                     _e = Ee[0],
                     Te = Ee[1],
                     xe = 'ConversionTooltipBook_base_cb',
                     Pe = 'ConversionTooltipBook_icon_a6',
-                    Re = 'ConversionTooltipBook_labelsBlock_a9',
-                    Oe = 'ConversionTooltipBook_titleLabel_64',
-                    Se = 'ConversionTooltipBook_bottomLabels_b0',
+                    Oe = 'ConversionTooltipBook_labelsBlock_a9',
+                    Se = 'ConversionTooltipBook_titleLabel_64',
+                    Re = 'ConversionTooltipBook_bottomLabels_b0',
                     Ce = 'ConversionTooltipBook_nationLabel_e2',
                     ke = 'ConversionTooltipBook_valueLabel_90',
                     Ae = ({ icon: e, title: n, nation: t, value: o, className: r }) =>
@@ -644,11 +646,11 @@
                             }),
                             ae().createElement(
                                 'div',
-                                { className: Re },
-                                ae().createElement('div', { className: Oe }, n),
+                                { className: Oe },
+                                ae().createElement('div', { className: Se }, n),
                                 ae().createElement(
                                     'div',
-                                    { className: Se },
+                                    { className: Re },
                                     ae().createElement('div', { className: Ce }, t),
                                     ae().createElement('div', { className: ke }, R.strings.common.multiplier()),
                                     ae().createElement('div', { className: ke }, o),
@@ -679,34 +681,32 @@
                 }
                 const Ie = (0, fe.Pi)(() => {
                     const e = Te().model,
-                        n = e.isReceived.get(),
-                        t = e.booksList.get(),
-                        o = t.length > 6,
-                        r = o ? Math.round(t.length / 2) : t.length,
-                        i = n ? R.strings.tooltips.conversion.received : R.strings.tooltips.conversion.notReceived;
+                        n = e.booksList.get(),
+                        t = n.length > 6,
+                        o = t ? Math.round(n.length / 2) : n.length;
                     return ae().createElement(
                         'div',
-                        { className: l()(je, o && ze) },
-                        ae().createElement('div', { className: Me }, i.header()),
-                        ae().createElement('div', { className: Be }, i.body()),
+                        { className: l()(je, t && ze) },
+                        ae().createElement('div', { className: Me }, e.title.get()),
+                        ae().createElement('div', { className: Be }, e.description.get()),
                         ae().createElement(
                             'div',
                             { className: Le },
-                            ((a = t),
-                            (s = (e, n) => {
-                                const t = o && (n + 1) % 2 == 0,
-                                    i = o ? Math.round((n + 1) / 2) === r : n + 1 === r;
+                            ((r = n),
+                            (i = (e, n) => {
+                                const r = t && (n + 1) % 2 == 0,
+                                    i = t ? Math.round((n + 1) / 2) === o : n + 1 === o;
                                 return ae().createElement(
                                     'div',
                                     { key: n, className: Ne },
                                     ae().createElement(Ae, Fe({}, e, { className: De })),
-                                    !t && !i && ae().createElement('div', { className: Ve }),
+                                    !r && !i && ae().createElement('div', { className: Ve }),
                                 );
                             }),
-                            Array.isArray(a) ? a.map(s) : a.map((e, n, t) => s(null == e ? void 0 : e.value, n, t))),
+                            Array.isArray(r) ? r.map(i) : r.map((e, n, t) => i(null == e ? void 0 : e.value, n, t))),
                         ),
                     );
-                    var a, s;
+                    var r, i;
                 });
                 engine.whenReady.then(() => {
                     me().render(
@@ -767,9 +767,9 @@
                 Object.defineProperty(e, Symbol.toStringTag, { value: 'Module' }),
                 Object.defineProperty(e, '__esModule', { value: !0 });
         }),
-        (o.j = 470),
+        (o.j = 3470),
         (() => {
-            var e = { 470: 0 };
+            var e = { 3470: 0 };
             o.O.j = (n) => 0 === e[n];
             var n = (n, t) => {
                     var r,
@@ -786,6 +786,6 @@
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             t.forEach(n.bind(null, 0)), (t.push = n.bind(null, t.push.bind(t)));
         })();
-    var r = o.O(void 0, [56], () => o(1590));
+    var r = o.O(void 0, [9056], () => o(1590));
     r = o.O(r);
 })();

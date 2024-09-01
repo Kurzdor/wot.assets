@@ -146,7 +146,6 @@ body {
     opacity: 0;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .page_heading_05 {
     padding-top: 54rem;
@@ -716,7 +715,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     min-height: 32rem;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .CurrentPositionPanel_base_92 {
     color: #cbac77;
@@ -1271,7 +1269,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding-bottom: var(--offset);
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes RankTabs_fadeIn_42 {
     0% {
@@ -1751,7 +1748,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.3;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes LeaderboardPage_fadeIn_46 {
     0% {
@@ -1957,7 +1953,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translate(-50%, -70%);
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .RatingScore_base_bd {
     display: flex;
@@ -2018,7 +2013,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.3;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes ItemFooter_fadeIn_16 {
     0% {
@@ -2373,194 +2367,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding-right: var(--offset);
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
-/* should be percentage of screen width */
-@keyframes HighlightedRankEmblem_fadeIn_3a {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes HighlightedRankEmblem_fadeInThreeQuarters_a4 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0.75;
-    }
-}
-@keyframes HighlightedRankEmblem_fadeInHalf_6e {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0.5;
-    }
-}
-@keyframes HighlightedRankEmblem_fadeOut_48 {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes HighlightedRankEmblem_fadeInWithScale_a8 {
-    0% {
-        opacity: 0;
-        transform: scale(1.2);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-@keyframes HighlightedRankEmblem_slideUp_82 {
-    0% {
-        opacity: 0;
-        transform: translateY(50%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes HighlightedRankEmblem_scale_ec {
-    0% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-@keyframes HighlightedRankEmblem_raysAppearance_a6 {
-    0% {
-        opacity: 0;
-        transform: translateY(20rem);
-    }
-
-    100% {
-        opacity: 0.2;
-        transform: translateY(0);
-    }
-}
-@keyframes HighlightedRankEmblem_rotate_0f {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-@keyframes HighlightedRankEmblem_reverse-rotate_e8 {
-    from {
-        transform: rotate(360deg);
-    }
-
-    to {
-        transform: rotate(0deg);
-    }
-}
-@keyframes HighlightedRankEmblem_glowAppearance_2a {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes HighlightedRankEmblem_highlightAppearance_60 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0.8;
-    }
-}
-@keyframes HighlightedRankEmblem_blink_ce {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.2;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes HighlightedRankEmblem_slideUpIn_80 {
-    from {
-        opacity: 0;
-        transform: translateY(50rem);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.HighlightedRankEmblem_base_e2 {
+.DivineGlow_base_65 {
     position: relative;
-}
-.HighlightedRankEmblem_highlights_cc {
-    width: var(--highlightsSize);
-    height: var(--highlightsSize);
-    opacity: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition:
-        opacity 0.3s linear,
-        filter 0.3s linear;
-}
-.HighlightedRankEmblem_highlights__gold_9f {
-    filter: grayscale(0%) brightness(250%);
-    transition-delay: 0.3s;
-}
-.HighlightedRankEmblem_highlights__silver_f4 {
-    filter: grayscale(100%) brightness(150%);
-    transition-delay: 0.3s;
-}
-.HighlightedRankEmblem_highlights__hidden_10 {
-    filter: grayscale(0%) brightness(0%);
-    opacity: 0;
-}
-.HighlightedRankEmblem_highlight_72 {
-    width: 100%;
-    height: 100%;
-    background: no-repeat center / cover;
-    position: absolute;
-    animation:
-        HighlightedRankEmblem_highlightAppearance_60 0.3s linear 0.3s both,
-        HighlightedRankEmblem_rotate_0f 80s linear infinite;
+    z-index: -1;
     pointer-events: none;
 }
-.HighlightedRankEmblem_highlight__second_91 {
-    animation-direction: normal, reverse;
-}
-.HighlightedRankEmblem_base__static_87 .HighlightedRankEmblem_highlight_72 {
-    animation: HighlightedRankEmblem_highlightAppearance_60 0.3s linear 0.3s both;
-}
-.HighlightedRankEmblem_highlights__hidden_10 .HighlightedRankEmblem_highlight_72 {
-    display: none;
-}
-.HighlightedRankEmblem_rankEmblem_29 {
+
+.DivineGlow_glow_6d {
+    width: 100%;
+    height: 100%;
     position: relative;
+}
+
+.DivineGlow_glow__bg_7c {
+    background: url('R.images.gui.maps.icons.comp7.icons.divine_glow_700x700') no-repeat center / contain;
 }
 
 .RankInfo_base_21 {
@@ -2934,14 +2754,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 10rem;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
-/* should be percentage of screen width */
 .RankProgress_base_97 {
     display: flex;
     flex-direction: column;
     width: 380rem;
     color: #ffffff;
-    transition: opacity 0.3s linear;
 }
 .mediaMedium .RankProgress_base_97 {
     width: 430rem;
@@ -2954,8 +2771,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .RankProgress_base__active_a2 {
     opacity: 1;
-    transition-delay: 0.3s;
 }
+
 .RankProgress_progressWrapper_4e {
     padding: 3rem 0;
     border-top: 1rem solid rgba(255, 255, 255, 0.2);
@@ -3034,7 +2851,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translate(-50%, -40rem);
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes RankItem_fadeIn_95 {
     0% {
@@ -3183,16 +2999,54 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     color: #ffffff;
     position: relative;
 }
-.RankItem_rankEmblem__future_08 {
+.RankItem_rankEmblemContainer_07 {
+    display: flex;
+    position: relative;
+}
+.RankItem_glowContainer_15 {
+    width: 450rem;
+    height: 450rem;
+    opacity: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mediaMedium .RankItem_glowContainer_15 {
+    width: 600rem;
+    height: 600rem;
+    top: 65%;
+}
+.mediaLarge .RankItem_glowContainer_15 {
+    width: 900rem;
+    height: 900rem;
+    top: 60%;
+}
+.mediaExtraLarge .RankItem_glowContainer_15 {
+    width: 1300rem;
+    height: 1300rem;
+}
+.RankItem_rankEmblemContainer__current_d8 .RankItem_glowContainer_15 {
+    opacity: 1;
+}
+.RankItem_glow_1b {
+    filter: saturate(0.67);
+}
+.RankItem_rankEmblemContainer__future_d2 .RankItem_rankEmblem_e6 {
     opacity: 0.5;
 }
 .RankItem_rankDescription_32 {
+    transform: translateZ(
+        0
+    ); /* obligatory hack to avoid GF bug with render (GF sometimes uses cached incorrect texture) */
+    animation-name: RankItem_fadeOut_56;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-delay: 0s; /* fadeOut without delay, straight away */
     display: flex;
     height: 150rem; /* should be static for correct positioning of emblem without rankDescription context */
-    opacity: 0;
     position: absolute; /* should be cut from context due to extra width of children (more than parent container by design) */
     top: 100%;
-    transition: opacity 0.3s linear;
     pointer-events: none;
 }
 /* hidden siblings can have tooltips, block them here */
@@ -3209,8 +3063,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding-top: 41rem;
 }
 .RankItem_rankDescription__viewed_6b {
-    opacity: 1;
-    transition-delay: 0.3s;
+    animation-name: RankItem_fadeIn_95;
+    animation-delay: 0.3s; /* fadeIn with delay, postponed */
     pointer-events: auto;
 }
 .RankItem_rankInfo_6f {
@@ -3230,7 +3084,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translate(50%, -50%);
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes RankItemContainer_fadeIn_f3 {
     0% {
@@ -3370,16 +3223,50 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
+@keyframes RankItemContainer_fadeOutTitle_5f {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+@keyframes RankItemContainer_fadeInTitle_ce {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 .RankItemContainer_base_b3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: var(--itemWidth);
-    height: 100%;
+    height: 430rem;
     position: relative;
 }
+.mediaMedium .RankItemContainer_base_b3 {
+    height: 514rem;
+}
+.mediaLarge .RankItemContainer_base_b3 {
+    height: 608rem;
+}
+.mediaExtraLarge .RankItemContainer_base_b3 {
+    height: 949rem;
+}
 .RankItemContainer_title_d5 {
+    transform: translateZ(
+        0
+    ); /* obligatory hack to avoid GF bug with render (GF sometimes uses cached incorrect texture) */
+    animation-name: RankItemContainer_fadeOutTitle_5f;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-delay: 0s; /* fadeOut without delay, straight away */
     color: #fefeec;
     font-size: 18rem;
     font-weight: 700;
@@ -3388,8 +3275,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-bottom: 10rem;
     line-height: 1.3;
     text-align: center;
-    opacity: 0.3;
-    transition: opacity 0.3s linear;
 }
 .mediaLargeHeight .RankItemContainer_title_d5 {
     color: #fefeec;
@@ -3399,11 +3284,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.3;
 }
 .RankItemContainer_title__active_f0 {
-    opacity: 1;
-    transition-delay: 0.3s;
+    animation-name: RankItemContainer_fadeInTitle_ce;
+    animation-delay: 0.3s; /* fadeIn with delay, postponed */
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes Progression_fadeIn_1f {
     0% {
@@ -3549,9 +3433,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     align-items: center;
 }
 .Progression_areaContainer_09 {
+    display: flex;
+    align-items: center;
     flex: 1 1;
 }
 .Progression_areaWrapper_5f {
+    height: auto;
+    margin-top: -200rem;
+    margin-bottom: -200rem;
+    pointer-events: none;
     mask-image: linear-gradient(
         90deg,
         transparent,
@@ -3606,6 +3496,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transparent
     );
 }
+.Progression_areaContent_fd {
+    margin-top: 200rem;
+    margin-bottom: 200rem;
+    pointer-events: auto;
+}
 .Progression_bar_4d {
     width: 78vw;
 }
@@ -3630,7 +3525,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 700;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes QualificationBattleItem_fadeIn_c9 {
     0% {
@@ -3814,7 +3708,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-left: 23rem;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .Qualification_base_0f {
     display: flex;
@@ -3842,6 +3735,35 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .mediaLarge .Qualification_footer_8f {
     font-size: 20rem;
     line-height: 24rem;
+}
+.Qualification_qualificationEmblemContainer_47 {
+    display: flex;
+    position: relative;
+}
+.Qualification_glowContainer_d3 {
+    width: 450rem;
+    height: 450rem;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(13deg);
+}
+.mediaMedium .Qualification_glowContainer_d3 {
+    width: 600rem;
+    height: 600rem;
+    top: 65%;
+}
+.mediaLarge .Qualification_glowContainer_d3 {
+    width: 900rem;
+    height: 900rem;
+    top: 60%;
+}
+.mediaExtraLarge .Qualification_glowContainer_d3 {
+    width: 1300rem;
+    height: 1300rem;
+}
+.Qualification_glow_7c {
+    filter: saturate(0.5);
 }
 .Qualification_qualificationEmblem_e2 {
     margin-top: 15rem;
@@ -3985,7 +3907,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 100vh;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes ProgressionPage_fadeIn_16 {
     0% {
@@ -4133,6 +4054,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 100%;
     position: relative;
     z-index: 0;
+}
+.ProgressionPage_heading_75,
+.ProgressionPage_scheduleSubheading_51 {
+    z-index: 1;
 }
 .ProgressionPage_parallaxContainer_c4 {
     width: 100%;
@@ -4288,10 +4213,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Reward_info_72 {
-    margin-top: -13rem;
     color: #e9e2bf;
     font-size: 14rem;
-    line-height: 18rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: -13rem;
     text-align: center;
     z-index: 1;
 }
@@ -4325,6 +4251,27 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .Reward_info__premiumTank_d3 {
     color: #ffdd99;
+}
+
+.Reward_title_36 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 80rem;
+    margin: -13rem -16rem 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.mediaMedium .Reward_title_36 {
+    max-width: 100rem;
+    margin-left: -10rem;
+    margin-right: -10rem;
 }
 
 .Reward_timer_d3 {
@@ -4402,9 +4349,30 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 100%;
 }
 
-.Heading_tooltipArea_c9 {
+.Heading_rankEmblemContainer_67 {
     display: flex;
     position: relative;
+    z-index: 0;
+}
+
+.Heading_godRays_7a {
+    width: 130rem;
+    height: 130rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.mediaMedium .Heading_godRays_7a {
+    width: 180rem;
+    height: 180rem;
+}
+
+.mediaLarge .Heading_godRays_7a {
+    width: 300rem;
+    height: 300rem;
 }
 
 .Heading_rankEmblem__inactive_8a {
@@ -4535,7 +4503,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     opacity: 0;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes MainReward_fadeIn_88 {
     0% {
@@ -4689,36 +4656,34 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     position: relative;
 }
-.MainReward_highlightContainer_cf {
+.MainReward_glowContainer_7f {
     width: 460rem;
     height: 460rem;
-    filter: brightness(130%);
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     z-index: -1;
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
-.mediaMedium .MainReward_highlightContainer_cf {
+.mediaMedium .MainReward_glowContainer_7f {
     width: 580rem;
     height: 580rem;
 }
-.mediaLarge .MainReward_highlightContainer_cf {
+.mediaLarge .MainReward_glowContainer_7f {
     width: 760rem;
     height: 760rem;
+    top: 60%;
 }
-.mediaExtraLarge .MainReward_highlightContainer_cf {
+.mediaExtraLarge .MainReward_glowContainer_7f {
     width: 840rem;
     height: 840rem;
+    top: 50%;
 }
-.MainReward_highlight_06 {
+.MainReward_glow_40 {
     width: 100%;
     height: 100%;
-    background: url('R.images.gui.maps.icons.comp7.icons.blue_highlight') no-repeat center / cover;
-    animation:
-        MainReward_glowAppearance_20 linear 0.7s both,
-        MainReward_rotate_8c 80s linear infinite;
+    animation: MainReward_glowAppearance_20 linear 1.5s both;
 }
 .MainReward_preview_7a {
     display: flex;
@@ -4828,7 +4793,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: url('R.images.gui.maps.icons.comp7.icons.done') no-repeat center / cover;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes RankRewardsPage_fadeIn_0c {
     0% {
@@ -5108,7 +5072,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.25;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes ShopPage_fadeIn_96 {
     0% {
@@ -5437,7 +5400,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     cursor: default;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .ProductCard_base_d5 {
     display: flex;
@@ -6227,7 +6189,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background-color: rgba(192, 222, 239, 0.6);
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .Carousel_dividersSections_e4 {
     display: flex;
@@ -6327,6 +6288,46 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 16rem;
 }
 
+.PeaksContainer_base_73 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.PeaksContainer_venzel_74 {
+    display: flex;
+    align-items: flex-start;
+    flex: 1 1;
+}
+
+.PeaksContainer_venzel__right_39 {
+    transform: scale(-1, 1);
+}
+
+.PeaksContainer_icon_64 {
+    width: 8rem;
+    height: 2rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.venzel_8x2') no-repeat center / cover;
+    opacity: 0.5;
+}
+
+.PeaksContainer_line_4e {
+    flex: 1 1;
+    height: 1rem;
+    background-color: rgba(204, 237, 255, 0.2);
+}
+
+.PeaksContainer_content_17 {
+    margin-right: 12rem;
+    color: rgba(242, 242, 247, 0.5);
+    font-size: 12rem;
+    line-height: 1;
+}
+
+.mediaMedium .PeaksContainer_content_17 {
+    font-size: 16rem;
+}
+
 .RankDiscount_base_4c {
     display: flex;
     position: relative;
@@ -6400,46 +6401,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 50%;
     z-index: -1;
     transform: translate(-50%, -50%);
-}
-
-.SectionHeading_base_e5 {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.SectionHeading_venzel_ab {
-    display: flex;
-    align-items: flex-start;
-    flex: 1 1;
-}
-
-.SectionHeading_venzel__right_25 {
-    transform: scale(-1, 1);
-}
-
-.SectionHeading_icon_26 {
-    width: 8rem;
-    height: 2rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.venzel_8x2') no-repeat center / cover;
-    opacity: 0.5;
-}
-
-.SectionHeading_line_23 {
-    flex: 1 1;
-    height: 1rem;
-    background-color: rgba(204, 237, 255, 0.2);
-}
-
-.SectionHeading_content_e9 {
-    margin-right: 12rem;
-    color: rgba(242, 242, 247, 0.5);
-    font-size: 12rem;
-    line-height: 1;
-}
-
-.mediaMedium .SectionHeading_content_e9 {
-    font-size: 16rem;
 }
 
 .DiscountSection_base_53 {
@@ -6642,7 +6603,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     align-items: center;
     margin-bottom: 4rem;
-    pointer-events: auto;
 }
 
 .mediaMedium .NameSection_vehicleNameContainer_98 {
@@ -6654,6 +6614,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     color: #ffffff;
     font-size: 24rem;
     font-weight: 700;
+    pointer-events: auto;
 }
 
 .mediaMedium .NameSection_productName_c6 {
@@ -7148,6 +7109,145 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding: 36rem 0;
 }
 
+/* should be percentage of screen width */
+@keyframes QuestCard_fadeIn_f7 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes QuestCard_fadeInThreeQuarters_bc {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.75;
+    }
+}
+@keyframes QuestCard_fadeInHalf_c8 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+@keyframes QuestCard_fadeOut_c3 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes QuestCard_fadeInWithScale_ef {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes QuestCard_slideUp_42 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes QuestCard_scale_e2 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes QuestCard_raysAppearance_4c {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+@keyframes QuestCard_rotate_72 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes QuestCard_reverse-rotate_61 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes QuestCard_glowAppearance_e0 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes QuestCard_highlightAppearance_b8 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+@keyframes QuestCard_blink_05 {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes QuestCard_slideUpIn_f8 {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .QuestCard_base_27 {
     display: flex;
     flex-direction: column;
@@ -7175,33 +7275,61 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 530rem;
     padding-bottom: 20rem;
 }
-
-.QuestCard_highlight_08 {
+.QuestCard_highlightContainer_f8 {
     width: 518rem;
     height: 554rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.vertical_highlight') no-repeat center / contain;
+    mask-image: linear-gradient(to top, #000, transparent);
     position: absolute;
     top: 65%;
     left: 60%;
     z-index: -1;
     transform: translate(-50%, -50%);
-    pointer-events: none;
 }
-
-.mediaMedium .QuestCard_highlight_08 {
+.mediaMedium .QuestCard_highlightContainer_f8 {
     width: 720rem;
     height: 640rem;
     top: 55%;
     left: 56%;
 }
-
-.mediaExtraLarge .QuestCard_highlight_08 {
+.mediaExtraLarge .QuestCard_highlightContainer_f8 {
     width: 836rem;
     height: 894rem;
     top: 53%;
     left: 60%;
 }
-
+.QuestCard_highlight_08 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.comp7.icons.vertical_highlight') no-repeat center / contain;
+    pointer-events: none;
+}
+.QuestCard_glowContainer_3c {
+    width: 450rem;
+    height: 450rem;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mask-image: radial-gradient(rgba(0, 0, 0, 0.4), #000);
+}
+.mediaMedium .QuestCard_glowContainer_3c {
+    width: 600rem;
+    height: 600rem;
+    top: 50%;
+}
+.mediaLarge .QuestCard_glowContainer_3c {
+    width: 700rem;
+    height: 700rem;
+    top: 40%;
+}
+.mediaExtraLarge .QuestCard_glowContainer_3c {
+    width: 800rem;
+    height: 800rem;
+}
+.QuestCard_glow_3c {
+    filter: saturate(0.5);
+    animation: QuestCard_glowAppearance_e0 linear 1.5s both;
+}
 .QuestCard_icon_81 {
     width: 124rem;
     height: 124rem;
@@ -7210,49 +7338,40 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform 0.4s ease-in-out,
         opacity 0.4s ease-in-out;
 }
-
 .mediaMedium .QuestCard_icon_81 {
     width: 180rem;
     height: 180rem;
     margin-top: -2rem;
 }
-
 .mediaLarge .QuestCard_icon_81 {
     width: 234rem;
     height: 234rem;
     margin-top: -2rem;
 }
-
 .mediaExtraLarge .QuestCard_icon_81 {
     width: 240rem;
     height: 240rem;
     margin-top: -40rem;
 }
-
 .QuestCard_base__completed_e3 .QuestCard_icon_81,
 .QuestCard_base__locked_e9 .QuestCard_icon_81 {
     mask-image: linear-gradient(180deg, #fff 21%, rgba(255, 255, 255, 0.52) 44.5%, transparent 83%);
     transform: translateY(35rem);
 }
-
 .mediaMedium .QuestCard_base__completed_e3 .QuestCard_icon_81,
 .mediaMedium .QuestCard_base__locked_e9 .QuestCard_icon_81 {
     transform: translateY(50rem);
 }
-
 .mediaExtraLarge .QuestCard_base__completed_e3 .QuestCard_icon_81,
 .mediaExtraLarge .QuestCard_base__locked_e9 .QuestCard_icon_81 {
     transform: translateY(50rem);
 }
-
 .QuestCard_base__completed_e3 .QuestCard_icon_81 {
     opacity: 0.25;
 }
-
 .QuestCard_base__locked_e9 .QuestCard_icon_81 {
     opacity: 0.55;
 }
-
 .QuestCard_content_36 {
     display: flex;
     flex-direction: column;
@@ -7261,29 +7380,23 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: -30rem;
     transition: opacity 0.4s ease-in-out;
 }
-
 .mediaMedium .QuestCard_content_36 {
     margin-top: -48rem;
 }
-
 .mediaExtraLarge .QuestCard_content_36 {
     margin-top: -72rem;
 }
-
 .QuestCard_base__completed_e3 .QuestCard_content_36 {
     opacity: 0.2;
 }
-
 .QuestCard_progress_63 {
     transition: opacity 0.4s ease-in-out;
 }
-
 .QuestCard_base__locked_e9 .QuestCard_progress_63 {
     opacity: 0.6;
 }
-
 .QuestCard_description_ba {
-    color: #fefeec;
+    color: #ffffff;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
@@ -7293,43 +7406,34 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     opacity: 0.88;
     transition: opacity 0.4s ease-in-out;
 }
-
 .mediaMedium .QuestCard_description_ba {
-    color: #fefeec;
+    color: #ffffff;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
     padding: 0 30rem;
 }
-
 .mediaLarge .QuestCard_description_ba {
     padding: 0 40rem;
 }
-
 .mediaExtraLarge .QuestCard_description_ba {
     padding: 0 24rem;
 }
-
 .QuestCard_base__locked_e9 .QuestCard_description_ba {
     opacity: 0.77;
 }
-
 .QuestCard_reward_d5 {
     margin: 0 5rem;
 }
-
 .mediaMedium .QuestCard_reward_d5 {
     margin: 0 11rem;
 }
-
 .QuestCard_status_26 {
     margin-top: 30rem;
 }
-
 .mediaMedium .QuestCard_status_26 {
     margin-top: 37rem;
 }
-
 .mediaExtraLarge .QuestCard_status_26 {
     margin-top: 46rem;
 }
@@ -7713,7 +7817,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: url('R.images.gui.maps.icons.comp7.icons.done') no-repeat center / cover;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes WeeklyQuestsPage_fadeIn_46 {
     0% {
@@ -7920,782 +8023,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: 30rem;
 }
 
-.AdditionalRewards_reward_e8 {
-    margin: 0 6rem;
-}
-
-.SeasonPoint_base_a1 {
-    position: relative;
-    z-index: 0;
-}
-
-.SeasonPoint_base__x24_b6 {
-    width: 24rem;
-    height: 24rem;
-}
-
-.SeasonPoint_base__x32_f0 {
-    width: 32rem;
-    height: 32rem;
-}
-
-.SeasonPoint_base__x48_8a {
-    width: 48rem;
-    height: 48rem;
-}
-
-.SeasonPoint_base__x62_b1 {
-    width: 64rem;
-    height: 64rem;
-}
-
-.SeasonPoint_icon_b6 {
-    width: 100%;
-    height: 100%;
-    background: no-repeat center / cover;
-    position: relative;
-}
-
-.SeasonPoint_base__notAchieved_02 .SeasonPoint_icon_b6 {
-    opacity: 0.7;
-}
-
-.CardSeasonPoints_base_8c {
-    display: flex;
-    align-items: center;
-}
-
-.RewardsStatus_base_49 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.RewardsStatus_status_48 {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.RewardsStatus_venzel_80 {
-    display: flex;
-    align-items: flex-start;
-    flex: 1 1;
-}
-
-.RewardsStatus_venzel__right_b6 {
-    transform: scale(-1, 1);
-}
-
-.RewardsStatus_icon_9f {
-    width: 8rem;
-    height: 2rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.venzel_8x2') no-repeat center / cover;
-}
-
-.RewardsStatus_line_d8 {
-    flex: 1 1;
-    height: 1rem;
-    opacity: 0.8;
-}
-
-.RewardsStatus_base__guaranteed_4f .RewardsStatus_line_d8,
-.RewardsStatus_base__claimed_0f .RewardsStatus_line_d8 {
-    background: linear-gradient(270deg, rgba(128, 212, 58, 0.4) 0%, rgba(128, 212, 58, 0) 50.45%),
-        linear-gradient(0deg, rgba(204, 237, 255, 0.65), rgba(204, 237, 255, 0.65));
-}
-
-.RewardsStatus_base__possible_67 .RewardsStatus_line_d8 {
-    background: linear-gradient(0deg, rgba(204, 237, 255, 0.65), rgba(204, 237, 255, 0.65)),
-        linear-gradient(270deg, rgba(255, 221, 153, 0.8) 0%, rgba(255, 221, 153, 0) 50%);
-}
-
-.RewardsStatus_base__notAvailable_b1 .RewardsStatus_line_d8 {
-    background: linear-gradient(0deg, rgba(204, 237, 255, 0.65), rgba(204, 237, 255, 0.65)),
-        linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 53.71%);
-}
-
-.RewardsStatus_statusIcon_72 {
-    width: 20rem;
-    height: 20rem;
-    margin: 0 16rem;
-    background: no-repeat center / cover;
-}
-
-.RewardsStatus_base__guaranteed_4f .RewardsStatus_statusIcon_72,
-.RewardsStatus_base__claimed_0f .RewardsStatus_statusIcon_72 {
-    background-image: url('R.images.gui.maps.icons.comp7.icons.check_icon_20x20');
-}
-
-.RewardsStatus_base__notAvailable_b1 .RewardsStatus_statusIcon_72 {
-    background-image: url('R.images.gui.maps.icons.comp7.icons.lock_20x20');
-}
-
-.RewardsStatus_base__possible_67 .RewardsStatus_statusIcon_72 {
-    background-image: url('R.images.gui.maps.icons.comp7.icons.flag_20x20');
-}
-
-.RewardsStatus_description_f6 {
-    margin-top: 3rem;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1;
-}
-
-.mediaMedium .RewardsStatus_description_f6 {
-    margin-top: 6rem;
-    font-size: 16rem;
-}
-
-.RewardsStatus_base__guaranteed_4f .RewardsStatus_description_f6,
-.RewardsStatus_base__claimed_0f .RewardsStatus_description_f6 {
-    color: #80d43a;
-}
-
-.RewardsStatus_base__notAvailable_b1 .RewardsStatus_description_f6 {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.RewardsStatus_base__possible_67 .RewardsStatus_description_f6 {
-    color: #e9e2bf;
-}
-
-.CardContent_base_be {
-    --content-spacing: 30rem;
-    position: relative;
-    z-index: 0;
-}
-.mediaSmall .CardContent_base_be {
-    --content-spacing: 58rem;
-}
-.mediaMedium .CardContent_base_be {
-    --content-spacing: 50rem;
-}
-.mediaLarge .CardContent_base_be {
-    --content-spacing: 60rem;
-}
-.mediaExtraLarge .CardContent_base_be {
-    --content-spacing: 130rem;
-}
-.CardContent_base__withVehicle_b1 {
-    --content-spacing: 30rem;
-}
-.mediaSmall .CardContent_base__withVehicle_b1 {
-    --content-spacing: 46rem;
-}
-.mediaMedium .CardContent_base__withVehicle_b1 {
-    --content-spacing: 50rem;
-}
-.mediaLarge .CardContent_base__withVehicle_b1 {
-    --content-spacing: 60rem;
-}
-.mediaExtraLarge .CardContent_base__withVehicle_b1 {
-    --content-spacing: 86rem;
-}
-.CardContent_base__collapsed_a6:hover {
-    background: linear-gradient(180deg, transparent, rgba(175, 231, 255, 0.2) 60%, transparent);
-}
-.CardContent_bigLock_fb {
-    width: 112rem;
-    height: 199rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.lock_231x412') no-repeat center / cover;
-    filter: brightness(1.7);
-    opacity: 0;
-    position: absolute;
-    right: 0;
-    bottom: 77rem;
-    z-index: -1;
-    transition: opacity 0.25s ease-in;
-    pointer-events: none;
-}
-.mediaMedium .CardContent_bigLock_fb {
-    width: 180rem;
-    height: 321rem;
-    bottom: 108rem;
-}
-.mediaLarge .CardContent_bigLock_fb {
-    width: 231rem;
-    height: 412rem;
-    bottom: 115rem;
-}
-.mediaExtraLarge .CardContent_bigLock_fb {
-    bottom: 122rem;
-}
-.CardContent_bigLock__visible_00 {
-    opacity: 1;
-}
-.CardContent_lock_a5 {
-    width: 16rem;
-    height: 25rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.lock_16x25') no-repeat center / cover;
-    filter: brightness(1.7);
-    opacity: 0;
-    position: absolute;
-    right: 0;
-    bottom: 128rem;
-    z-index: 1;
-    transition: opacity 0.25s linear;
-    pointer-events: none;
-}
-.mediaMedium .CardContent_lock_a5 {
-    width: 24rem;
-    height: 39rem;
-    background-image: url('R.images.gui.maps.icons.comp7.icons.lock_24x39');
-    bottom: 145rem;
-}
-.mediaLarge .CardContent_lock_a5 {
-    bottom: 156rem;
-}
-.mediaExtraLarge .CardContent_lock_a5 {
-    bottom: 180rem;
-}
-.CardContent_lock__visible_2e {
-    opacity: 1;
-}
-.CardContent_vehicleImageWrapper_84 {
-    width: 180rem;
-    height: 104rem;
-    position: absolute;
-    z-index: 0;
-    transition: transform 0.25s linear;
-}
-.mediaSmall .CardContent_vehicleImageWrapper_84 {
-    width: 220rem;
-    height: 124rem;
-}
-.mediaMedium .CardContent_vehicleImageWrapper_84 {
-    width: 310rem;
-    height: 180rem;
-}
-.mediaLarge .CardContent_vehicleImageWrapper_84 {
-    width: 444rem;
-    height: 260rem;
-}
-.mediaExtraLarge .CardContent_vehicleImageWrapper_84 {
-    width: 542rem;
-    height: 310rem;
-}
-.CardContent_base__selected_ce .CardContent_vehicleImageWrapper_84 {
-    transform: translate(23rem, 91rem);
-}
-.mediaSmall .CardContent_base__selected_ce .CardContent_vehicleImageWrapper_84 {
-    transform: translate(52rem, 79rem);
-}
-.mediaMedium .CardContent_base__selected_ce .CardContent_vehicleImageWrapper_84 {
-    transform: translate(63rem, 93rem);
-}
-.mediaLarge .CardContent_base__selected_ce .CardContent_vehicleImageWrapper_84 {
-    transform: translate(61rem, 111rem);
-}
-.mediaExtraLarge .CardContent_base__selected_ce .CardContent_vehicleImageWrapper_84 {
-    transform: translate(130rem, 210rem);
-}
-.CardContent_base__collapsed_a6 .CardContent_vehicleImageWrapper_84 {
-    transform: translate(-42rem, 91rem);
-}
-.mediaSmall .CardContent_base__collapsed_a6 .CardContent_vehicleImageWrapper_84 {
-    transform: translate(-57rem, 79rem);
-}
-.mediaMedium .CardContent_base__collapsed_a6 .CardContent_vehicleImageWrapper_84 {
-    transform: translate(-71rem, 93rem);
-}
-.mediaLarge .CardContent_base__collapsed_a6 .CardContent_vehicleImageWrapper_84 {
-    transform: translate(-110rem, 111rem);
-}
-.mediaExtraLarge .CardContent_base__collapsed_a6 .CardContent_vehicleImageWrapper_84 {
-    transform: translate(-114rem, 210rem);
-}
-.CardContent_vehicleImage_a2 {
-    width: 303rem;
-    height: 250rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.vehicle_941x777') no-repeat center / cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-}
-.mediaSmall .CardContent_vehicleImage_a2 {
-    width: 381rem;
-    height: 315rem;
-}
-.mediaMedium .CardContent_vehicleImage_a2 {
-    width: 542rem;
-    height: 448rem;
-}
-.mediaLarge .CardContent_vehicleImage_a2 {
-    width: 772rem;
-    height: 637rem;
-}
-.mediaExtraLarge .CardContent_vehicleImage_a2 {
-    width: 942rem;
-    height: 777rem;
-}
-.CardContent_base__collapsed_a6 .CardContent_vehicleImage_a2 {
-    mask: linear-gradient(
-        180deg,
-        rgba(217, 217, 217, 0) 20%,
-        rgba(217, 217, 217, 0.9) 50%,
-        rgba(217, 217, 217, 0) 100%
-    );
-}
-.CardContent_mainReward_2d {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    transition:
-        transform 0.25s linear,
-        opacity 0.125s linear;
-}
-.CardContent_base__selected_ce .CardContent_mainReward_2d {
-    transform: translate(-25rem, 80rem);
-}
-.mediaSmall .CardContent_base__selected_ce .CardContent_mainReward_2d {
-    transform: translate(10rem, 80rem);
-}
-.mediaMedium .CardContent_base__selected_ce .CardContent_mainReward_2d {
-    transform: translate(-28rem, 54rem);
-}
-.mediaLarge .CardContent_base__selected_ce .CardContent_mainReward_2d {
-    transform: translate(-82rem, 72rem);
-}
-.mediaExtraLarge .CardContent_base__selected_ce .CardContent_mainReward_2d {
-    transform: translate(28rem, 178rem);
-}
-.CardContent_base__collapsed_a6 .CardContent_mainReward_2d {
-    transform: translate(-40rem, 80rem);
-}
-.mediaSmall .CardContent_base__collapsed_a6 .CardContent_mainReward_2d {
-    transform: translate(-40rem, 80rem);
-}
-.mediaMedium .CardContent_base__collapsed_a6 .CardContent_mainReward_2d {
-    transform: translate(-60rem, 54rem);
-}
-.mediaLarge .CardContent_base__collapsed_a6 .CardContent_mainReward_2d {
-    transform: translate(-122rem, 72rem);
-}
-.mediaExtraLarge .CardContent_base__collapsed_a6 .CardContent_mainReward_2d {
-    transform: translate(-94rem, 178rem);
-}
-.CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
-    transform: translate(19rem, 167rem);
-}
-.mediaSmall .CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
-    transform: translate(30rem, 174rem);
-}
-.mediaMedium .CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
-    transform: translate(43rem, 227rem);
-}
-.mediaLarge .CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
-    transform: translate(60rem, 297rem);
-}
-.mediaExtraLarge .CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
-    transform: translate(98rem, 428rem);
-}
-.CardContent_base__selected_ce.CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
-    opacity: 1;
-}
-.CardContent_base__collapsed_a6.CardContent_base__withVehicle_b1 .CardContent_mainReward_2d {
-    opacity: 0;
-    z-index: -1; /* enable events for vehicle tooltip*/
-}
-.CardContent_mainRewardWithVehicle_a1 {
-    width: 70rem;
-    height: 74rem;
-}
-.mediaSmall .CardContent_mainRewardWithVehicle_a1 {
-    width: 83rem;
-    height: 86rem;
-}
-.mediaMedium .CardContent_mainRewardWithVehicle_a1 {
-    width: 102rem;
-    height: 106rem;
-}
-.mediaLarge .CardContent_mainRewardWithVehicle_a1 {
-    width: 150rem;
-    height: 158rem;
-}
-.mediaExtraLarge .CardContent_mainRewardWithVehicle_a1 {
-    width: 184rem;
-    height: 192rem;
-}
-.CardContent_base__collapsed_a6 .CardContent_mainRewardWithVehicle_a1 {
-    pointer-events: none;
-}
-.CardContent_mainRewardPreview_a1,
-.CardContent_mainRewardWithVehiclePreview_ea,
-.CardContent_vehiclePreview_af {
-    position: absolute;
-    z-index: 1;
-}
-.CardContent_base__collapsed_a6 .CardContent_mainRewardPreview_a1,
-.CardContent_base__collapsed_a6 .CardContent_mainRewardWithVehiclePreview_ea,
-.CardContent_base__collapsed_a6 .CardContent_vehiclePreview_af {
-    opacity: 0;
-    pointer-events: none;
-}
-.CardContent_mainRewardPreview_a1 {
-    top: 106rem;
-    left: 84rem;
-    transition:
-        transform 0.25s linear,
-        opacity 0.125s linear;
-}
-.mediaSmall .CardContent_mainRewardPreview_a1 {
-    top: 104rem;
-}
-.mediaMedium .CardContent_mainRewardPreview_a1 {
-    top: 202rem;
-    left: 164rem;
-}
-.mediaLarge .CardContent_mainRewardPreview_a1 {
-    top: 306rem;
-    left: 260rem;
-}
-.mediaExtraLarge .CardContent_mainRewardPreview_a1 {
-    top: 310rem;
-    left: 270rem;
-}
-.CardContent_mainRewardWithVehiclePreview_ea {
-    top: 33rem;
-    left: 3rem;
-}
-.mediaSmall .CardContent_mainRewardWithVehiclePreview_ea {
-    top: 39rem;
-    left: 6rem;
-}
-.mediaMedium .CardContent_mainRewardWithVehiclePreview_ea {
-    top: 53rem;
-    left: 13rem;
-}
-.mediaLarge .CardContent_mainRewardWithVehiclePreview_ea {
-    top: 93rem;
-    left: 32rem;
-}
-.mediaExtraLarge .CardContent_mainRewardWithVehiclePreview_ea {
-    top: 120rem;
-    left: 48rem;
-}
-.CardContent_vehiclePreview_af {
-    top: 150rem;
-    left: 85rem;
-}
-.mediaSmall .CardContent_vehiclePreview_af {
-    top: 158rem;
-    left: 134rem;
-}
-.mediaMedium .CardContent_vehiclePreview_af {
-    top: 222rem;
-    left: 184rem;
-}
-.mediaLarge .CardContent_vehiclePreview_af {
-    top: 314rem;
-    left: 246rem;
-}
-.mediaExtraLarge .CardContent_vehiclePreview_af {
-    top: 472rem;
-    left: 366rem;
-}
-.CardContent_mainRewardIcon_e2 {
-    pointer-events: none;
-}
-.CardContent_base__withVehicle_b1 .CardContent_mainRewardIcon_e2 {
-    width: 195rem;
-    height: 156rem;
-}
-.mediaSmall .CardContent_base__withVehicle_b1 .CardContent_mainRewardIcon_e2 {
-    width: 230rem;
-    height: 184rem;
-}
-.mediaMedium .CardContent_base__withVehicle_b1 .CardContent_mainRewardIcon_e2 {
-    width: 283rem;
-    height: 226rem;
-}
-.mediaLarge .CardContent_base__withVehicle_b1 .CardContent_mainRewardIcon_e2 {
-    width: 417rem;
-    height: 334rem;
-}
-.mediaExtraLarge .CardContent_base__withVehicle_b1 .CardContent_mainRewardIcon_e2 {
-    width: 510rem;
-    height: 406rem;
-}
-.CardContent_rewardImageContainer_3c {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-.CardContent_cardInfoContainer_91 {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    width: 254rem;
-    padding-top: 96rem;
-}
-.mediaSmall .CardContent_cardInfoContainer_91 {
-    width: 298rem;
-}
-.mediaMedium .CardContent_cardInfoContainer_91 {
-    width: 300rem;
-    padding-top: 109rem;
-}
-.mediaLarge .CardContent_cardInfoContainer_91 {
-    width: 344rem;
-    padding-top: 168rem;
-}
-.mediaExtraLarge .CardContent_cardInfoContainer_91 {
-    width: 488rem;
-    padding-top: 270rem;
-}
-.CardContent_base__withVehicle_b1 .CardContent_cardInfoContainer_91 {
-    width: 240rem;
-}
-.mediaSmall .CardContent_base__withVehicle_b1 .CardContent_cardInfoContainer_91 {
-    width: 248rem;
-}
-.mediaMedium .CardContent_base__withVehicle_b1 .CardContent_cardInfoContainer_91 {
-    width: 286rem;
-}
-.mediaLarge .CardContent_base__withVehicle_b1 .CardContent_cardInfoContainer_91 {
-    width: 308rem;
-}
-.mediaExtraLarge .CardContent_base__withVehicle_b1 .CardContent_cardInfoContainer_91 {
-    width: 396rem;
-}
-.CardContent_cardInfo_03 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: #ffffff;
-    font-size: 18rem;
-    font-weight: 700;
-    position: relative;
-}
-.mediaMedium .CardContent_cardInfo_03 {
-    font-size: 24rem;
-}
-.mediaLarge .CardContent_cardInfo_03 {
-    font-size: 28rem;
-}
-.CardContent_vehicleName_89 {
-    font-size: 18rem;
-}
-.mediaMedium .CardContent_vehicleName_89 {
-    margin-bottom: 4rem;
-    font-size: 24rem;
-}
-.mediaLarge .CardContent_vehicleName_89 {
-    font-size: 28rem;
-}
-.CardContent_base_be .CardContent_vehicleTypeContainer_29 {
-    width: 30rem;
-}
-.mediaMedium .CardContent_base_be .CardContent_vehicleTypeContainer_29 {
-    width: 50rem;
-}
-.CardContent_title_c4 {
-    font-size: 18rem;
-    font-weight: 700;
-}
-.mediaMedium .CardContent_title_c4 {
-    font-size: 24rem;
-}
-.mediaLarge .CardContent_title_c4 {
-    font-size: 28rem;
-}
-.CardContent_subTitle_83 {
-    margin-top: 4rem;
-    color: #e9e2bf;
-    font-size: 15rem;
-}
-.mediaMedium .CardContent_subTitle_83 {
-    margin-top: 7rem;
-}
-.mediaLarge .CardContent_subTitle_83 {
-    margin-top: 4rem;
-    font-size: 18rem;
-}
-.CardContent_additionalRewards_2a {
-    margin: 16rem 0 28rem -6rem;
-}
-.mediaMedium .CardContent_additionalRewards_2a {
-    margin: 30rem 0 35rem -6rem;
-}
-.mediaLarge .CardContent_additionalRewards_2a {
-    margin: 36rem 0 48rem -6rem;
-}
-.CardContent_base__withVehicle_b1 .CardContent_additionalRewards_2a {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    width: 100%;
-    margin: 10rem 0 5rem -6rem;
-}
-.mediaSmall .CardContent_base__withVehicle_b1 .CardContent_additionalRewards_2a {
-    margin: 10rem 0 9rem -6rem;
-}
-.mediaMedium .CardContent_base__withVehicle_b1 .CardContent_additionalRewards_2a {
-    margin: 10rem 0 9rem -6rem;
-}
-.mediaLarge .CardContent_base__withVehicle_b1 .CardContent_additionalRewards_2a {
-    max-width: 240rem;
-    margin: 36rem 0 26rem -6rem;
-}
-.mediaExtraLarge .CardContent_base__withVehicle_b1 .CardContent_additionalRewards_2a {
-    max-width: auto;
-    margin: 36rem 0 48rem -6rem;
-}
-.CardContent_additionalRewardWithVehicle_1a {
-    margin: 0 3rem 3rem;
-}
-.mediaMedium .CardContent_additionalRewardWithVehicle_1a {
-    margin: 0 6rem 6rem;
-}
-.mediaExtraLarge .CardContent_additionalRewardWithVehicle_1a {
-    margin: 0 3rem 3rem;
-}
-.CardContent_rewardsStatus_99 {
-    padding-right: var(--content-spacing);
-}
-.CardContent_seasonPointsContainer_fb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 0;
-    left: 0;
-}
-.CardContent_base__selected_ce .CardContent_seasonPointsContainer_fb {
-    padding-left: var(--content-spacing);
-    padding-right: var(--content-spacing);
-    bottom: 0;
-}
-.mediaSmall .CardContent_base__selected_ce .CardContent_seasonPointsContainer_fb {
-    bottom: -4rem;
-}
-.mediaMedium .CardContent_base__selected_ce .CardContent_seasonPointsContainer_fb {
-    bottom: 26rem;
-}
-.mediaLarge .CardContent_base__selected_ce .CardContent_seasonPointsContainer_fb {
-    bottom: 18rem;
-}
-.mediaExtraLarge .CardContent_base__selected_ce .CardContent_seasonPointsContainer_fb {
-    bottom: 20rem;
-}
-.CardContent_base__collapsed_a6 .CardContent_seasonPointsContainer_fb {
-    bottom: 4rem;
-}
-.mediaSmall .CardContent_base__collapsed_a6 .CardContent_seasonPointsContainer_fb {
-    bottom: 0;
-}
-.mediaMedium .CardContent_base__collapsed_a6 .CardContent_seasonPointsContainer_fb {
-    bottom: 32rem;
-}
-.mediaLarge .CardContent_base__collapsed_a6 .CardContent_seasonPointsContainer_fb {
-    bottom: 34rem;
-}
-.mediaExtraLarge .CardContent_base__collapsed_a6 .CardContent_seasonPointsContainer_fb {
-    bottom: 40rem;
-}
-.CardContent_base__selected_ce .CardContent_seasonPoints_41 {
-    margin: 0 16rem;
-}
-.mediaMedium .CardContent_base__selected_ce .CardContent_seasonPoints_41 {
-    margin: 0 28rem;
-}
-.CardContent_base__selected_ce
-    .CardContent_seasonPointWrapper_20
-    + .CardContent_base__selected_ce
-    .CardContent_seasonPointWrapper_20 {
-    margin-left: -4rem;
-}
-.CardContent_base__collapsed_a6
-    .CardContent_seasonPointWrapper_20
-    + .CardContent_base__collapsed_a6
-    .CardContent_seasonPointWrapper_20 {
-    margin-left: -5rem;
-}
-.mediaLarge
-    .CardContent_base__collapsed_a6
-    .CardContent_seasonPointWrapper_20
-    + .CardContent_base__collapsed_a6
-    .CardContent_seasonPointWrapper_20 {
-    margin-left: -2rem;
-}
-.CardContent_venzel_09 {
-    display: flex;
-    align-items: flex-start;
-    flex: 1 1;
-}
-.CardContent_venzel__right_27 {
-    transform: scale(-1, 1);
-}
-.CardContent_peak_05 {
-    width: 42rem;
-    height: 14rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.venzel_42x14') no-repeat center / cover;
-}
-.CardContent_lines_f4 {
-    flex: 1 1;
-    margin-top: 3rem;
-}
-.CardContent_line_ba {
-    height: 1rem;
-    background: rgba(192, 222, 239, 0.6);
-    opacity: 0.8;
-}
-.CardContent_line_ba + .CardContent_line_ba {
-    margin-top: 2rem;
-}
-
-.Card_base_4c {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: 100%;
-    position: relative;
-}
-
-.Card_cardContent_83 {
-    width: 100%;
-    height: 100%;
-    overflow: hidden; /* required for correct animations and tooltips for main rewards assets  */
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.Card_cardContentInner_b9 {
-    width: 100%;
-    height: 100%;
-}
-
-.Card_cardContentInner__selected_f6 {
-    width: 444rem;
-}
-
-.mediaSmall .Card_cardContentInner__selected_f6 {
-    width: 540rem;
-}
-
-.mediaMedium .Card_cardContentInner__selected_f6 {
-    width: 648rem;
-}
-
-.mediaLarge .Card_cardContentInner__selected_f6 {
-    width: 792rem;
-}
-
-.mediaExtraLarge .Card_cardContentInner__selected_f6 {
-    width: 1068rem;
-}
-
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
-@keyframes Cards_fadeIn_52 {
+@keyframes Background_fadeIn_a7 {
     0% {
         opacity: 0;
     }
@@ -8704,7 +8033,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-@keyframes Cards_fadeInThreeQuarters_8d {
+@keyframes Background_fadeInThreeQuarters_b7 {
     0% {
         opacity: 0;
     }
@@ -8713,7 +8042,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 0.75;
     }
 }
-@keyframes Cards_fadeInHalf_bd {
+@keyframes Background_fadeInHalf_1f {
     0% {
         opacity: 0;
     }
@@ -8722,7 +8051,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 0.5;
     }
 }
-@keyframes Cards_fadeOut_55 {
+@keyframes Background_fadeOut_ea {
     0% {
         opacity: 1;
     }
@@ -8731,7 +8060,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 0;
     }
 }
-@keyframes Cards_fadeInWithScale_0c {
+@keyframes Background_fadeInWithScale_c0 {
     0% {
         opacity: 0;
         transform: scale(1.2);
@@ -8742,7 +8071,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-@keyframes Cards_slideUp_39 {
+@keyframes Background_slideUp_65 {
     0% {
         opacity: 0;
         transform: translateY(50%);
@@ -8753,7 +8082,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-@keyframes Cards_scale_60 {
+@keyframes Background_scale_82 {
     0% {
         transform: scale(0);
     }
@@ -8762,7 +8091,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: scale(1);
     }
 }
-@keyframes Cards_raysAppearance_32 {
+@keyframes Background_raysAppearance_43 {
     0% {
         opacity: 0;
         transform: translateY(20rem);
@@ -8773,7 +8102,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-@keyframes Cards_rotate_7c {
+@keyframes Background_rotate_7a {
     from {
         transform: rotate(0deg);
     }
@@ -8782,7 +8111,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(360deg);
     }
 }
-@keyframes Cards_reverse-rotate_67 {
+@keyframes Background_reverse-rotate_b9 {
     from {
         transform: rotate(360deg);
     }
@@ -8791,7 +8120,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: rotate(0deg);
     }
 }
-@keyframes Cards_glowAppearance_d8 {
+@keyframes Background_glowAppearance_c7 {
     0% {
         opacity: 0;
     }
@@ -8800,7 +8129,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-@keyframes Cards_highlightAppearance_c3 {
+@keyframes Background_highlightAppearance_4d {
     0% {
         opacity: 0;
     }
@@ -8809,7 +8138,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 0.8;
     }
 }
-@keyframes Cards_blink_2e {
+@keyframes Background_blink_ee {
     0% {
         opacity: 1;
     }
@@ -8822,7 +8151,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         opacity: 1;
     }
 }
-@keyframes Cards_slideUpIn_6a {
+@keyframes Background_slideUpIn_e1 {
     from {
         opacity: 0;
         transform: translateY(50rem);
@@ -8833,162 +8162,1001 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         transform: translateY(0);
     }
 }
-.Cards_base_b0 {
+.Background_base_46 {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-}
-.Cards_card_18 {
-    position: relative;
-    transition: width 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.34);
-}
-.Cards_card__collapsed_9b {
-    width: 74rem;
-    height: 360rem;
-}
-.mediaSmall .Cards_card__collapsed_9b {
-    width: 90rem;
-}
-.mediaMedium .Cards_card__collapsed_9b {
-    width: 108rem;
-    height: 460rem;
-}
-.mediaLarge .Cards_card__collapsed_9b {
-    width: 132rem;
-    height: 600rem;
-}
-.mediaExtraLarge .Cards_card__collapsed_9b {
-    width: 178rem;
-    height: 730rem;
-}
-.Cards_card__collapsed_9b {
-    cursor: pointer;
-}
-.Cards_card__selected_1b {
-    width: 444rem;
-    height: 360rem;
-}
-.mediaSmall .Cards_card__selected_1b {
-    width: 540rem;
-}
-.mediaMedium .Cards_card__selected_1b {
-    width: 648rem;
-    height: 460rem;
-}
-.mediaLarge .Cards_card__selected_1b {
-    width: 792rem;
-    height: 600rem;
-}
-.mediaExtraLarge .Cards_card__selected_1b {
-    width: 1068rem;
-    height: 730rem;
-}
-.Cards_card__selected_1b {
-    cursor: auto;
-}
-.Cards_highlight_28 {
-    width: 694rem;
-    height: 518rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.selected_card_highlight') no-repeat center / cover;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-70%, -47%);
-    pointer-events: none;
-}
-.mediaMedium .Cards_highlight_28 {
-    width: 902rem;
-    height: 673rem;
-    transform: translate(-69%, -50%);
-}
-.mediaLarge .Cards_highlight_28 {
-    width: 1380rem;
-    height: 1030rem;
-    transform: translate(-63%, -48%);
-}
-.mediaExtraLarge .Cards_highlight_28 {
-    width: 1836rem;
-    height: 1370rem;
-    transform: translate(-61%, -42%);
-}
-.Cards_highlight__visible_f9 {
-    opacity: 0;
-    animation-name: Cards_fadeIn_52;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-    animation-delay: 0.6s;
-    animation-iteration-count: 1;
-}
-.Cards_divider_06 {
-    width: 1rem;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #d5f7ff 50%, #fff 50%, transparent);
-    opacity: 0.3;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     top: 0;
-    bottom: 0;
+    left: 0;
 }
-.Cards_divider__left_c1 {
-    left: 1rem;
+.Background_inactiveBackground_3e {
+    width: 1168rem;
+    height: 768rem;
+    transform: translateX(0rem) translateY(0rem);
 }
-.Cards_divider__right_c2 {
-    right: -1rem;
+.mediaSmall .Background_inactiveBackground_3e {
+    width: 1752rem;
+    height: 1152rem;
+    transform: translateX(30rem) translateY(-60rem);
 }
-.Cards_shadow_39 {
+.mediaMedium .Background_inactiveBackground_3e {
+    width: 2044rem;
+    height: 1344rem;
+    transform: translateX(30rem) translateY(-50rem);
+}
+.mediaLarge .Background_inactiveBackground_3e {
+    width: 2336rem;
+    height: 1536rem;
+    transform: translateX(20rem) translateY(0rem);
+}
+.mediaExtraLarge .Background_inactiveBackground_3e {
+    width: 2920rem;
+    height: 1920rem;
+    transform: translateX(0rem) translateY(0rem);
+}
+.Background_inactiveBackground_3e {
+    background: url('R.images.gui.maps.icons.comp7.backgrounds.yearly_rewards_bg_inactive') no-repeat center / 100% 100%;
+    position: absolute;
+}
+.Background_overlay_62 {
+    --bgWidth: 1168rem;
+    --column: 124rem;
+    --gap: 8rem;
+    --columns: calc(var(--column) * 6 + var(--gap) * 5);
+    --leftOffset: calc((var(--bgWidth) - var(--columns)) / 2);
+}
+.mediaSmall .Background_overlay_62 {
+    --bgWidth: 1752rem;
+    --column: 186rem;
+    --gap: 12rem;
+}
+.mediaMedium .Background_overlay_62 {
+    --bgWidth: 2044rem;
+    --column: 217rem;
+    --gap: 14rem;
+}
+.mediaLarge .Background_overlay_62 {
+    --bgWidth: 2336rem;
+    --column: 248rem;
+    --gap: 16rem;
+}
+.mediaExtraLarge .Background_overlay_62 {
+    --bgWidth: 2920rem;
+    --column: 310rem;
+    --gap: 20rem;
+}
+.Background_overlay_62 {
+    background: url('R.images.gui.maps.icons.comp7.backgrounds.yearly_rewards_bg') no-repeat center / 100% 100%;
+    opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
-    pointer-events: none;
+    bottom: 0;
+    left: 0;
 }
-.Cards_card__collapsed_9b .Cards_shadow_39 {
-    width: 74rem;
-    height: 360rem;
+.Background_base__hoveredCardIndex_-1_d5 .Background_overlay__full_66,
+.Background_base__hoveredCardIndex_0_75 .Background_overlay__firstStage_80,
+.Background_base__hoveredCardIndex_1_53 .Background_overlay__secondStage_03,
+.Background_base__hoveredCardIndex_2_b1 .Background_overlay__thirdStage_4b,
+.Background_base__hoveredCardIndex_3_da .Background_overlay__fourthStage_a3,
+.Background_base__hoveredCardIndex_4_11 .Background_overlay__fifthStage_e8,
+.Background_base__hoveredCardIndex_5_b9 .Background_overlay__sixthStage_92 {
+    opacity: 1;
 }
-.mediaSmall .Cards_card__collapsed_9b .Cards_shadow_39 {
-    width: 90rem;
+.Background_overlay__firstStage_80 {
+    clip-path: polygon(
+        0% 0%,
+        calc(var(--leftOffset) + var(--column)) 0%,
+        calc(var(--leftOffset) + var(--column)) 100%,
+        0% 100%
+    );
 }
-.mediaMedium .Cards_card__collapsed_9b .Cards_shadow_39 {
-    width: 108rem;
-    height: 460rem;
+.Background_overlay__secondStage_03 {
+    clip-path: polygon(
+        0% 0%,
+        calc(var(--leftOffset) + var(--column) * 2 + var(--gap)) 0%,
+        calc(var(--leftOffset) + var(--column) * 2 + var(--gap)) 100%,
+        0% 100%
+    );
 }
-.mediaLarge .Cards_card__collapsed_9b .Cards_shadow_39 {
-    width: 132rem;
-    height: 600rem;
+.Background_overlay__thirdStage_4b {
+    clip-path: polygon(
+        0% 0%,
+        calc(var(--leftOffset) + var(--column) * 3 + var(--gap) * 2) 0%,
+        calc(var(--leftOffset) + var(--column) * 3 + var(--gap) * 2) 100%,
+        0% 100%
+    );
 }
-.mediaExtraLarge .Cards_card__collapsed_9b .Cards_shadow_39 {
-    width: 178rem;
-    height: 730rem;
+.Background_overlay__fourthStage_a3 {
+    clip-path: polygon(
+        0% 0%,
+        calc(var(--leftOffset) + var(--column) * 4 + var(--gap) * 3) 0%,
+        calc(var(--leftOffset) + var(--column) * 4 + var(--gap) * 3) 100%,
+        0% 100%
+    );
 }
-.Cards_card__collapsed_9b .Cards_shadow_39 {
-    background-image: radial-gradient(50% 50% at 100% 50%, rgba(4, 28, 63, 0.7) 0%, rgba(4, 28, 63, 0) 100%);
+.Background_overlay__fifthStage_e8 {
+    clip-path: polygon(
+        0% 0%,
+        calc(var(--leftOffset) + var(--column) * 5 + var(--gap) * 4) 0%,
+        calc(var(--leftOffset) + var(--column) * 5 + var(--gap) * 4) 100%,
+        0% 100%
+    );
 }
-.Cards_card__selected_1b .Cards_shadow_39 {
-    width: 444rem;
-    height: 360rem;
+.Background_overlay__sixthStage_92 {
+    clip-path: polygon(
+        0% 0%,
+        calc(var(--leftOffset) + var(--column) * 6 + var(--gap) * 5) 0%,
+        calc(var(--leftOffset) + var(--column) * 6 + var(--gap) * 5) 100%,
+        0% 100%
+    );
 }
-.mediaSmall .Cards_card__selected_1b .Cards_shadow_39 {
-    width: 540rem;
+.Background_base__withIntro_82 .Background_overlay_62 {
+    opacity: 0;
+    transition: opacity 0.5s;
 }
-.mediaMedium .Cards_card__selected_1b .Cards_shadow_39 {
-    width: 648rem;
-    height: 460rem;
-}
-.mediaLarge .Cards_card__selected_1b .Cards_shadow_39 {
-    width: 792rem;
-    height: 600rem;
-}
-.mediaExtraLarge .Cards_card__selected_1b .Cards_shadow_39 {
-    width: 1068rem;
-    height: 730rem;
-}
-.Cards_card__selected_1b .Cards_shadow_39 {
-    background-image: radial-gradient(10% 50% at 100% 50%, rgba(4, 28, 63, 0.7) 0%, rgba(4, 28, 63, 0) 100%);
+.firstStage .Background_base__withIntro_82 .Background_overlay__firstStage_80,
+.secondStage .Background_base__withIntro_82 .Background_overlay__secondStage_03,
+.thirdStage .Background_base__withIntro_82 .Background_overlay__thirdStage_4b,
+.fourthStage .Background_base__withIntro_82 .Background_overlay__fourthStage_a3,
+.fifthStage .Background_base__withIntro_82 .Background_overlay__fifthStage_e8,
+.sixthStage .Background_base__withIntro_82 .Background_overlay__full_66 {
+    opacity: 1;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
+/* should be percentage of screen width */
+@keyframes ActiveCardHighlight_fadeIn_02 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes ActiveCardHighlight_fadeInThreeQuarters_e6 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.75;
+    }
+}
+@keyframes ActiveCardHighlight_fadeInHalf_86 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+@keyframes ActiveCardHighlight_fadeOut_68 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes ActiveCardHighlight_fadeInWithScale_87 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes ActiveCardHighlight_slideUp_b7 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes ActiveCardHighlight_scale_93 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes ActiveCardHighlight_raysAppearance_2c {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+@keyframes ActiveCardHighlight_rotate_01 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes ActiveCardHighlight_reverse-rotate_cd {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes ActiveCardHighlight_glowAppearance_b0 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes ActiveCardHighlight_highlightAppearance_70 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+@keyframes ActiveCardHighlight_blink_f5 {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes ActiveCardHighlight_slideUpIn_51 {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.ActiveCardHighlight_base_21 {
+    --columnWidth: 124rem;
+    width: var(--columnWidth);
+    height: calc(var(--columnWidth) * 3);
+    mask: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5) 50%, transparent);
+    position: relative;
+    pointer-events: none;
+}
+.mediaSmall .ActiveCardHighlight_base_21 {
+    --columnWidth: 186rem;
+}
+.mediaMedium .ActiveCardHighlight_base_21 {
+    --columnWidth: 217rem;
+}
+.mediaLarge .ActiveCardHighlight_base_21 {
+    --columnWidth: 248rem;
+}
+.mediaExtraLarge .ActiveCardHighlight_base_21 {
+    --columnWidth: 310rem;
+}
+.ActiveCardHighlight_glow_c5 {
+    --glowSize: 300rem;
+    width: var(--glowSize);
+    height: var(--glowSize);
+    filter: blur(7px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-16deg);
+    transform-origin: center;
+}
+.mediaSmall .ActiveCardHighlight_glow_c5 {
+    --glowSize: 400rem;
+}
+.mediaMedium .ActiveCardHighlight_glow_c5 {
+    --glowSize: 500rem;
+}
+.mediaLarge .ActiveCardHighlight_glow_c5 {
+    --glowSize: 550rem;
+}
+.mediaExtraLarge .ActiveCardHighlight_glow_c5 {
+    --glowSize: 700rem;
+    opacity: 0.8;
+}
+
+.AdditionalRewards_reward_e8 {
+    margin: 0 6rem;
+}
+
+.AdditionalRewards_info_11 {
+    font-size: 13rem;
+}
+
+.mediaSmall .AdditionalRewards_info_11 {
+    font-size: 14rem;
+}
+
+.AdditionalRewards_rewardWithPlus_de {
+    width: 86rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.plus_36x36') no-repeat 53rem center / 36rem 36rem;
+}
+
+.AdditionalRewards_rewardWithPlusImage_12 {
+    width: 48rem;
+    height: 48rem;
+}
+
+.SeasonPoint_base__x16_06 {
+    width: 16rem;
+    height: 16rem;
+}
+.SeasonPoint_base__x24_b6 {
+    width: 24rem;
+    height: 24rem;
+}
+.SeasonPoint_base__x32_f0 {
+    width: 32rem;
+    height: 32rem;
+}
+.SeasonPoint_base__x48_8a {
+    width: 48rem;
+    height: 48rem;
+}
+
+.SeasonPoint_icon_b6 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / cover;
+}
+
+.CardSeasonPoints_base_8c {
+    display: flex;
+    align-items: center;
+}
+
+/* should be percentage of screen width */
+@keyframes FakeCardSeasonPoints_fadeIn_d0 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes FakeCardSeasonPoints_fadeInThreeQuarters_d5 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.75;
+    }
+}
+@keyframes FakeCardSeasonPoints_fadeInHalf_c8 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+@keyframes FakeCardSeasonPoints_fadeOut_9a {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes FakeCardSeasonPoints_fadeInWithScale_4d {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes FakeCardSeasonPoints_slideUp_74 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes FakeCardSeasonPoints_scale_ca {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes FakeCardSeasonPoints_raysAppearance_51 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+@keyframes FakeCardSeasonPoints_rotate_17 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes FakeCardSeasonPoints_reverse-rotate_2c {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes FakeCardSeasonPoints_glowAppearance_9b {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes FakeCardSeasonPoints_highlightAppearance_df {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+@keyframes FakeCardSeasonPoints_blink_cc {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes FakeCardSeasonPoints_slideUpIn_3f {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.FakeCardSeasonPoints_base_1f {
+    position: relative;
+}
+.FakeCardSeasonPoints_notAchievedSeasonPoints_a7,
+.FakeCardSeasonPoints_achievedSeasonPoints_fb {
+    display: flex;
+    align-items: center;
+}
+.FakeCardSeasonPoints_notAchievedSeasonPoints_a7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.FakeCardSeasonPoints_notAchievedPoint_3d,
+.FakeCardSeasonPoints_achievedPoint_85 {
+    transition: opacity 0.2s;
+}
+.FakeCardSeasonPoints_notAchievedPoint__first_e3,
+.FakeCardSeasonPoints_achievedPoint__first_be {
+    transition-delay: 0s;
+}
+.FakeCardSeasonPoints_notAchievedPoint__second_84,
+.FakeCardSeasonPoints_achievedPoint__second_5d {
+    transition-delay: 0.2s;
+}
+.FakeCardSeasonPoints_notAchievedPoint__third_39,
+.FakeCardSeasonPoints_achievedPoint__third_ac {
+    transition-delay: 0.4s;
+}
+.showLegend .FakeCardSeasonPoints_notAchievedPoint_3d,
+.showLegend .FakeCardSeasonPoints_achievedPoint_85 {
+    transition-delay: 0s;
+}
+.FakeCardSeasonPoints_notAchievedPoint_3d {
+    opacity: 1;
+}
+.showLegend .FakeCardSeasonPoints_notAchievedPoint_3d {
+    opacity: 1;
+}
+.FakeCardSeasonPoints_achievedPoint_85 {
+    opacity: 0;
+}
+.showLegend .FakeCardSeasonPoints_achievedPoint_85 {
+    opacity: 0;
+}
+.firstStageSeasonPoints .FakeCardSeasonPoints_base__firstStage_77 .FakeCardSeasonPoints_notAchievedPoint_3d,
+.secondStageSeasonPoints .FakeCardSeasonPoints_base__secondStage_91 .FakeCardSeasonPoints_notAchievedPoint_3d,
+.thirdStageSeasonPoints .FakeCardSeasonPoints_base__thirdStage_6f .FakeCardSeasonPoints_notAchievedPoint_3d,
+.fourthStageSeasonPoints .FakeCardSeasonPoints_base__fourthStage_98 .FakeCardSeasonPoints_notAchievedPoint_3d,
+.fifthStageSeasonPoints .FakeCardSeasonPoints_base__fifthStage_bb .FakeCardSeasonPoints_notAchievedPoint_3d,
+.sixthStageSeasonPoints .FakeCardSeasonPoints_base__sixthStage_c5 .FakeCardSeasonPoints_notAchievedPoint_3d {
+    opacity: 0;
+}
+.firstStageSeasonPoints .FakeCardSeasonPoints_base__firstStage_77 .FakeCardSeasonPoints_achievedPoint_85,
+.secondStageSeasonPoints .FakeCardSeasonPoints_base__secondStage_91 .FakeCardSeasonPoints_achievedPoint_85,
+.thirdStageSeasonPoints .FakeCardSeasonPoints_base__thirdStage_6f .FakeCardSeasonPoints_achievedPoint_85,
+.fourthStageSeasonPoints .FakeCardSeasonPoints_base__fourthStage_98 .FakeCardSeasonPoints_achievedPoint_85,
+.fifthStageSeasonPoints .FakeCardSeasonPoints_base__fifthStage_bb .FakeCardSeasonPoints_achievedPoint_85,
+.sixthStageSeasonPoints .FakeCardSeasonPoints_base__sixthStage_c5 .FakeCardSeasonPoints_achievedPoint_85 {
+    opacity: 1;
+}
+
+/* should be percentage of screen width */
+.RewardsStatus_base_49 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 34rem;
+    padding: 0 2rem;
+}
+.RewardsStatus_description_f6 {
+    font-size: 14rem;
+    font-weight: 400;
+    position: relative;
+    z-index: 0;
+}
+.mediaMedium .RewardsStatus_description_f6 {
+    font-size: 16rem;
+}
+.RewardsStatus_base__guaranteed_4f .RewardsStatus_description_f6,
+.RewardsStatus_base__claimed_0f .RewardsStatus_description_f6 {
+    padding-left: 24rem;
+    color: #80d43a;
+}
+.RewardsStatus_base__notAvailable_b1 .RewardsStatus_description_f6 {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+.RewardsStatus_base__possible_67 .RewardsStatus_description_f6 {
+    padding-left: 24rem;
+    color: #e9e2bf;
+}
+.RewardsStatus_shadow_f3 {
+    width: 124rem;
+    height: 124rem;
+    border-radius: 50%;
+    background-color: #182734;
+    filter: blur(50px);
+    opacity: 0.45;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.mediaSmall .RewardsStatus_shadow_f3 {
+    width: 186rem;
+    height: 186rem;
+}
+.mediaMedium .RewardsStatus_shadow_f3 {
+    width: 217rem;
+    height: 217rem;
+}
+.mediaLarge .RewardsStatus_shadow_f3 {
+    width: 248rem;
+    height: 248rem;
+}
+.mediaExtraLarge .RewardsStatus_shadow_f3 {
+    width: 310rem;
+    height: 310rem;
+}
+.RewardsStatus_statusIcon_72 {
+    width: 20rem;
+    height: 20rem;
+    background: no-repeat center / cover;
+    position: absolute;
+}
+.RewardsStatus_base__guaranteed_4f .RewardsStatus_statusIcon_72,
+.RewardsStatus_base__claimed_0f .RewardsStatus_statusIcon_72 {
+    background-image: url('R.images.gui.maps.icons.comp7.icons.check_icon_20x20');
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.RewardsStatus_base__notAvailable_b1 .RewardsStatus_statusIcon_72 {
+    width: 46rem;
+    height: 55rem;
+    margin: 0;
+    background-image: url('R.images.gui.maps.icons.comp7.icons.lock_68x81');
+    opacity: 0.3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+.mediaMedium .RewardsStatus_base__notAvailable_b1 .RewardsStatus_statusIcon_72 {
+    width: 68rem;
+    height: 81rem;
+    transform: translate(-50%, -65%);
+}
+.RewardsStatus_base__possible_67 .RewardsStatus_statusIcon_72 {
+    background-image: url('R.images.gui.maps.icons.comp7.icons.flag_20x20');
+}
+
+/* should be percentage of screen width */
+.Column_base_44 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 124rem;
+    height: 680rem;
+    position: relative;
+}
+.mediaSmall .Column_base_44 {
+    width: 186rem;
+}
+.mediaMedium .Column_base_44 {
+    width: 217rem;
+    height: 812rem;
+}
+.mediaLarge .Column_base_44 {
+    width: 248rem;
+    height: 992rem;
+}
+.mediaExtraLarge .Column_base_44 {
+    width: 310rem;
+    height: 1352rem;
+}
+.Column_base_44 + .Column_base_44 {
+    margin-left: 8rem;
+}
+.mediaSmall .Column_base_44 + .Column_base_44 {
+    margin-left: 12rem;
+}
+.mediaMedium .Column_base_44 + .Column_base_44 {
+    margin-left: 14rem;
+}
+.mediaLarge .Column_base_44 + .Column_base_44 {
+    margin-left: 16rem;
+}
+.mediaExtraLarge .Column_base_44 + .Column_base_44 {
+    margin-left: 20rem;
+}
+.Column_mainRewardContainer_23 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 48rem;
+    overflow: hidden; /* cut reward events by column width in case of overlap*/
+    position: relative;
+}
+/* required, otherwise overflow:hidden will kill all mouse events for children*/
+.mediaSmall .Column_mainRewardContainer_23 {
+    margin-bottom: 16rem;
+}
+.mediaMedium .Column_mainRewardContainer_23 {
+    margin-bottom: 20rem;
+}
+.mediaLarge .Column_mainRewardContainer_23 {
+    margin-bottom: 32rem;
+}
+.mediaExtraLarge .Column_mainRewardContainer_23 {
+    margin-bottom: 87rem;
+}
+.Column_mainRewardContainer__big_0e {
+    height: 80rem;
+}
+.Column_mainRewardContainer__s232x174_f6 {
+    height: 174rem;
+}
+.Column_mainRewardContainer__s296x222_9c {
+    height: 222rem;
+}
+.Column_base__grayscale_2a .Column_mainReward_c4 {
+    filter: grayscale(1);
+    opacity: 0.6;
+}
+.Column_previewContainer_81 {
+    width: 100%;
+    height: 60rem; /* preview base size*/
+    margin-top: -60rem; /* make container 0 height*/
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.3s cubic-bezier(0.07, 0.82, 0.17, 1);
+}
+.Column_base_44:hover .Column_previewContainer_81 {
+    opacity: 1;
+}
+.Column_preview_c3 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50rem);
+    transition: transform 0.6s cubic-bezier(0.07, 0.82, 0.17, 1);
+}
+.mediaMedium .Column_preview_c3 {
+    transform: translate(-50%, -70rem);
+}
+.mediaLarge .Column_preview_c3 {
+    transform: translate(-50%, -100rem);
+}
+.mediaExtraLarge .Column_preview_c3 {
+    transform: translate(-50%, -140rem);
+}
+.Column_base_44:hover .Column_preview_c3 {
+    transform: translate(-50%, -20rem);
+}
+.mediaMedium .Column_base_44:hover .Column_preview_c3 {
+    transform: translate(-50%, -40rem);
+}
+.mediaLarge .Column_base_44:hover .Column_preview_c3 {
+    transform: translate(-50%, -70rem);
+}
+.mediaExtraLarge .Column_base_44:hover .Column_preview_c3 {
+    transform: translate(-50%, -110rem);
+}
+.Column_fakeSeasonPointsContainer_1d,
+.Column_seasonPointsContainer_d2 {
+    position: absolute;
+    top: 209rem;
+}
+.mediaSmall .Column_fakeSeasonPointsContainer_1d,
+.mediaSmall .Column_seasonPointsContainer_d2 {
+    top: 208rem;
+}
+.mediaMedium .Column_fakeSeasonPointsContainer_1d,
+.mediaMedium .Column_seasonPointsContainer_d2 {
+    top: 242rem;
+}
+.mediaLarge .Column_fakeSeasonPointsContainer_1d,
+.mediaLarge .Column_seasonPointsContainer_d2 {
+    top: 292rem;
+}
+.mediaExtraLarge .Column_fakeSeasonPointsContainer_1d,
+.mediaExtraLarge .Column_seasonPointsContainer_d2 {
+    top: 352rem;
+}
+.Column_fakeSeasonPointsContainer_1d {
+    opacity: 0;
+    transform: translateY(-40rem);
+    transition:
+        opacity 0.5s ease-out,
+        transform 0.5s;
+}
+.mediaSmall .Column_fakeSeasonPointsContainer_1d {
+    transform: translateY(-60rem);
+}
+.mediaMedium .Column_fakeSeasonPointsContainer_1d {
+    transform: translateY(-50rem);
+}
+.mediaLarge .Column_fakeSeasonPointsContainer_1d {
+    transform: translateY(-70rem);
+}
+.Column_base__withIntro_b9 .Column_fakeSeasonPointsContainer_1d {
+    opacity: 1;
+}
+.showLegend .Column_fakeSeasonPointsContainer_1d {
+    transform: translateY(0rem);
+}
+.transitionToRealData .Column_fakeSeasonPointsContainer_1d {
+    opacity: 0;
+}
+.Column_seasonPointsContainer_d2 {
+    transition: opacity 0.5s ease-in;
+}
+.Column_base__withIntro_b9 .Column_seasonPointsContainer_d2 {
+    opacity: 0;
+}
+.transitionToRealData .Column_seasonPointsContainer_d2 {
+    opacity: 1;
+}
+.Column_divider_52 {
+    width: 26rem;
+    filter: brightness(1);
+    position: absolute;
+    top: 50%;
+    left: 96rem;
+    transform: translateY(-50%);
+    transition: filter 0.5s;
+}
+.mediaSmall .Column_divider_52 {
+    width: 82rem;
+    left: 100rem;
+}
+.mediaMedium .Column_divider_52 {
+    width: 115rem;
+}
+.mediaLarge .Column_divider_52 {
+    width: 148rem;
+}
+.mediaExtraLarge .Column_divider_52 {
+    width: 182rem;
+    left: 128rem;
+}
+.Column_divider__highlighted_8b {
+    filter: brightness(2.2);
+}
+.Column_seasonPointWrapper_dd + .Column_seasonPointWrapper_dd {
+    margin-left: 6rem;
+}
+.Column_rewardsStatus_80 {
+    margin-bottom: 30rem;
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.07, 0.82, 0.17, 1);
+}
+.mediaMedium .Column_rewardsStatus_80 {
+    margin-bottom: 24rem;
+}
+.mediaLarge .Column_rewardsStatus_80 {
+    margin-bottom: 34rem;
+}
+.mediaExtraLarge .Column_rewardsStatus_80 {
+    margin-bottom: 84rem;
+}
+.Column_base_44:hover .Column_rewardsStatus_80 {
+    opacity: 1;
+}
+.Column_additionalRewards_29 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 210rem;
+    height: 48rem;
+    margin-bottom: 18rem;
+    position: relative;
+    z-index: 1;
+}
+.mediaMedium .Column_additionalRewards_29 {
+    height: 104rem;
+    margin-bottom: 10rem;
+}
+.mediaLarge .Column_additionalRewards_29 {
+    margin-bottom: 17rem;
+}
+.mediaExtraLarge .Column_additionalRewards_29 {
+    margin-bottom: 35rem;
+}
+.Column_base__grayscale_2a .Column_additionalRewards_29 {
+    filter: grayscale(1);
+    opacity: 0.6;
+}
+.Column_description_f5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 46rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14rem;
+    line-height: 18rem;
+    opacity: 0;
+    position: relative;
+    transition: opacity 0.5s;
+}
+.mediaMedium .Column_description_f5 {
+    margin-bottom: 50rem;
+}
+.mediaLarge .Column_description_f5 {
+    margin-bottom: 50rem;
+    font-size: 16rem;
+}
+.mediaExtraLarge .Column_description_f5 {
+    margin-bottom: 60rem;
+}
+.Column_description__visible_40 {
+    opacity: 1;
+}
+.Column_glowContainer_ab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Column_hoverArea_02 {
+    width: 132rem;
+    height: 768rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.mediaSmall .Column_hoverArea_02 {
+    width: 198rem;
+    height: 1152rem;
+}
+.mediaMedium .Column_hoverArea_02 {
+    width: 231rem;
+    height: 1344rem;
+}
+.mediaLarge .Column_hoverArea_02 {
+    width: 264rem;
+    height: 1536rem;
+}
+.mediaExtraLarge .Column_hoverArea_02 {
+    width: 330rem;
+    height: 1920rem;
+}
+.Column_hoverArea__last_37 {
+    width: 124rem;
+}
+.mediaSmall .Column_hoverArea__last_37 {
+    width: 186rem;
+}
+.mediaMedium .Column_hoverArea__last_37 {
+    width: 217rem;
+}
+.mediaLarge .Column_hoverArea__last_37 {
+    width: 248rem;
+}
+.mediaExtraLarge .Column_hoverArea__last_37 {
+    width: 310rem;
+}
+
+.Columns_base_25 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
 /* should be percentage of screen width */
 @keyframes Legend_fadeIn_ae {
     0% {
@@ -9129,21 +9297,29 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 .Legend_base_af {
+    --elementHeight: 60rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.mediaLarge .Legend_base_af {
+    --elementHeight: 80rem;
+}
 .Legend_inner_35 {
     display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 0;
 }
 .Legend_item_27 {
     display: flex;
     align-items: center;
 }
-.Legend_separator_2b {
-    width: 34rem;
-    height: 1rem;
-    background: linear-gradient(270deg, transparent, #669cd4 60%, transparent);
+.Legend_item_27 + .Legend_item_27 {
+    margin-left: 22rem;
+}
+.mediaLarge .Legend_item_27 + .Legend_item_27 {
+    margin-left: 26rem;
 }
 .Legend_description_f0 {
     width: 280rem;
@@ -9162,62 +9338,130 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     z-index: 0;
 }
 .Legend_highlight_3d {
-    width: 200rem;
-    height: 200rem;
+    width: 130rem;
+    height: 130rem;
     position: absolute;
     top: 50%;
     left: 50%;
     z-index: -1;
     transform: translate(-50%, -50%);
+    transition: opacity 0.5s;
     pointer-events: none;
 }
-.mediaMedium .Legend_highlight_3d {
+.mediaLarge .Legend_highlight_3d {
     width: 180rem;
     height: 180rem;
 }
-.Legend_rankEmblem_5d {
-    position: relative;
+.Legend_rankWrapper__withIntro_9c .Legend_highlight_3d {
+    opacity: 0;
 }
-.Legend_rankEmblem__inactive_c1 {
+.realData .Legend_highlight_3d {
+    opacity: 1;
+}
+.Legend_rankEmblem_5d {
+    filter: grayscale(100%);
+    opacity: 0.4;
+    position: relative;
+    transition:
+        filter 0.5s,
+        opacity 0.5s;
+}
+.Legend_rankEmblem__active_6d {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+.Legend_rankWrapper__withIntro_9c .Legend_rankEmblem__active_6d {
     filter: grayscale(100%);
     opacity: 0.4;
 }
+.transitionToRealData .Legend_rankEmblem__active_6d {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+.Legend_arrowContainer_6f {
+    width: 64rem;
+    height: var(--elementHeight);
+}
+.mediaLarge .Legend_arrowContainer_6f {
+    width: 86rem;
+}
+.Legend_arrowContainer_6f {
+    position: relative;
+    z-index: -1;
+    pointer-events: none;
+}
 .Legend_arrow_c0 {
-    display: flex;
+    width: 54rem;
+    height: 70rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.arrow_highlighted_89x116') no-repeat center / cover;
+    position: absolute;
+    top: 50%;
+    right: 18rem;
+    transform: translateY(-50%);
+}
+.mediaLarge .Legend_arrow_c0 {
     width: 89rem;
     height: 116rem;
-    margin-left: -40rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.arrow_highlighted_89x116') no-repeat center / cover;
+    right: 28rem;
 }
 .Legend_pointsCount_23 {
     display: flex;
-    margin-left: 24rem;
+    position: relative;
+    transform: translateY(-5rem);
+}
+.Legend_countContainer_e8 {
+    color: #fff;
+    font-size: var(--elementHeight);
+    font-weight: 700;
+    line-height: var(--elementHeight);
     position: relative;
 }
+.Legend_fakeCount_4e,
 .Legend_count_e3 {
-    font-size: 80rem;
-    font-weight: 700;
-    mask: linear-gradient(178.17deg, #fff 37%, rgba(255, 255, 255, 0) 86%);
+    mask: linear-gradient(178.17deg, #fff 37%, rgba(255, 255, 255, 0));
+}
+.Legend_fakeCount_4e {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s;
+}
+.Legend_base__withIntro_43 .Legend_fakeCount_4e {
+    opacity: 1;
+}
+.realData .Legend_fakeCount_4e {
+    opacity: 0;
+}
+.Legend_count_e3 {
+    transition: opacity 0.5s;
+}
+.Legend_base__withIntro_43 .Legend_count_e3 {
+    opacity: 0;
+}
+.realData .Legend_count_e3 {
+    opacity: 1;
 }
 .Legend_seasonPoint_d8 {
     position: absolute;
-    bottom: 20rem;
-    left: 18rem;
+    right: 0;
+    bottom: 0;
+    transform: translateX(50%);
+}
+.mediaLarge .Legend_seasonPoint_d8 {
+    bottom: -4rem;
 }
 .Legend_status_c7 {
     display: flex;
-    margin-top: -10rem;
     color: rgba(255, 255, 255, 0.6);
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
-.mediaMedium .Legend_status_c7 {
+.mediaLarge .Legend_status_c7 {
     color: rgba(255, 255, 255, 0.6);
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
-    margin-top: 0;
+    margin-bottom: 10rem;
 }
 .Legend_rank_56 {
     color: #ffffff;
@@ -9225,129 +9469,472 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Legend_verticalSeparator_d9 {
     width: 1rem;
     height: 25rem;
-    margin: -2rem 10rem 0;
+    margin: 0 10rem;
     background: linear-gradient(180deg, transparent, #fff 50%, transparent);
     opacity: 0.5;
+    transform: translateY(-2rem);
 }
-.mediaMedium .Legend_verticalSeparator_d9 {
-    margin: 0 10rem;
+.mediaLarge .Legend_verticalSeparator_d9 {
+    transform: translateY(0);
 }
 .Legend_seasonPointIcon_be {
+    margin-left: 1rem;
     position: relative;
-    top: -2rem;
+    transform: translateY(3rem);
 }
-.mediaMedium .Legend_seasonPointIcon_be {
-    top: 0;
+.Legend_schedule_eb {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.mediaMedium .Legend_schedule_eb {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.mediaLarge .Legend_schedule_eb {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Legend_calendarIcon_fa {
+    margin-right: 4rem;
+    transform: translateY(1rem);
+}
+.mediaLarge .Legend_calendarIcon_fa {
+    margin-right: 8rem;
 }
 
+/* should be percentage of screen width */
 .StatusBanner_base_af {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 750rem;
-    height: 46rem;
-    background: url('R.images.gui.maps.icons.comp7.icons.blue_highlight_750x46') no-repeat center / 750rem 46rem;
+    height: 32rem;
     position: relative;
 }
-.mediaMedium .StatusBanner_base_af {
-    height: 52rem;
-    background-size: 750rem 52rem;
+.mediaLarge .StatusBanner_base_af {
+    height: 46rem;
 }
-
-.StatusBanner_lineWrapper_25 {
-    width: 100%;
-    height: 1rem;
-    mask: linear-gradient(90deg, transparent, #000 50%, transparent);
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-}
-
-.StatusBanner_line_81 {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, rgb(10, 98, 153), #fbffde 50%, rgb(10, 98, 153));
-}
-
 .StatusBanner_description_46 {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.45);
     font-size: 14rem;
-    line-height: 18rem;
+    line-height: 14rem;
 }
-
-.mediaMedium .StatusBanner_description_46 {
+.mediaLarge .StatusBanner_description_46 {
     font-size: 16rem;
+    line-height: 16rem;
 }
-
 .StatusBanner_selectionContainer_88 {
     display: flex;
     align-items: center;
 }
-
 .StatusBanner_selectionButton_8d {
+    min-width: 100rem;
+    min-height: 20rem;
+    margin-left: 10rem;
+}
+.mediaLarge .StatusBanner_selectionButton_8d {
     min-width: 120rem;
     min-height: 24rem;
-    margin-left: 20rem;
 }
 
-.mediaMedium .StatusBanner_selectionButton_8d {
-    min-height: 28rem;
+/* should be percentage of screen width */
+@keyframes Vehicle_fadeIn_1e {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Vehicle_fadeInThreeQuarters_91 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.75;
+    }
+}
+@keyframes Vehicle_fadeInHalf_68 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+@keyframes Vehicle_fadeOut_66 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes Vehicle_fadeInWithScale_a5 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes Vehicle_slideUp_e8 {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Vehicle_scale_00 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes Vehicle_raysAppearance_e3 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+@keyframes Vehicle_rotate_95 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes Vehicle_reverse-rotate_de {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes Vehicle_glowAppearance_86 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Vehicle_highlightAppearance_97 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+@keyframes Vehicle_blink_29 {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Vehicle_slideUpIn_dd {
+    from {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.Vehicle_base_52 {
+    --vehicleContainerWidth: 520;
+    --vehicleContainerHeight: 272;
+    width: calc(var(--vehicleContainerWidth) * 1rem);
+    height: calc(var(--vehicleContainerHeight) * 1rem);
+    position: relative;
+}
+.mediaSmall .Vehicle_base_52 {
+    --vehicleContainerWidth: 780;
+    --vehicleContainerHeight: 408;
+}
+.mediaMedium .Vehicle_base_52 {
+    --vehicleContainerWidth: 910;
+    --vehicleContainerHeight: 476;
+}
+.mediaLarge .Vehicle_base_52 {
+    --vehicleContainerWidth: 1040;
+    --vehicleContainerHeight: 544;
+}
+.mediaExtraLarge .Vehicle_base_52 {
+    --vehicleContainerWidth: 1300;
+    --vehicleContainerHeight: 680;
+}
+.Vehicle_vehicleBg_5d {
+    width: calc(1984 / var(--vehicleContainerWidth) * 51%);
+    height: calc(1024 / var(--vehicleContainerHeight) * 51%);
+    background: no-repeat center / cover;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-36.5%, -25.5%);
+    transform-origin: 50% 50%;
+    transition: opacity 0.3s linear;
+    pointer-events: none;
+}
+.mediaSmall .Vehicle_vehicleBg_5d {
+    width: calc(1984 / var(--vehicleContainerWidth) * 56%);
+    height: calc(1024 / var(--vehicleContainerHeight) * 56%);
+    transform: translate(-30.5%, -25.3%);
+}
+.mediaMedium .Vehicle_vehicleBg_5d {
+    width: calc(1984 / var(--vehicleContainerWidth) * 69%);
+    height: calc(1024 / var(--vehicleContainerHeight) * 69%);
+    transform: translate(-32.3%, -27.8%);
+}
+.mediaLarge .Vehicle_vehicleBg_5d {
+    width: calc(1984 / var(--vehicleContainerWidth) * 86%);
+    height: calc(1024 / var(--vehicleContainerHeight) * 86%);
+    transform: translate(-33.8%, -26.7%);
+}
+.mediaExtraLarge .Vehicle_vehicleBg_5d {
+    width: calc(1984 / var(--vehicleContainerWidth) * 116%);
+    height: calc(1024 / var(--vehicleContainerHeight) * 116%);
+    transform: translate(-35.9%, -28.6%);
+}
+.Vehicle_vehicleBg__inactive_d3 {
+    background-image: url('R.images.gui.maps.icons.comp7.yearlyRewards.inactive');
+    opacity: 1;
+}
+.Vehicle_vehicleBg__2_05 {
+    background-image: url('R.images.gui.maps.icons.comp7.yearlyRewards.c_2');
+}
+.Vehicle_base__selectedIndex_2_20 .Vehicle_vehicleBg__2_05 {
+    opacity: 1;
+}
+.Vehicle_vehicleBg__3_dc {
+    background-image: url('R.images.gui.maps.icons.comp7.yearlyRewards.c_3');
+}
+.Vehicle_base__selectedIndex_3_8b .Vehicle_vehicleBg__3_dc {
+    opacity: 1;
+}
+.Vehicle_vehicleBg__4_ba {
+    background-image: url('R.images.gui.maps.icons.comp7.yearlyRewards.c_4');
+}
+.Vehicle_base__selectedIndex_4_bf .Vehicle_vehicleBg__4_ba {
+    opacity: 1;
+}
+.Vehicle_vehicleBg__5_4a {
+    background-image: url('R.images.gui.maps.icons.comp7.yearlyRewards.c_5');
+}
+.Vehicle_base__selectedIndex_5_c6 .Vehicle_vehicleBg__5_4a {
+    opacity: 1;
 }
 
+.VehicleInfo_base_b0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.VehicleInfo_background_7e {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.5) -5%, rgba(0, 0, 0, 0));
+    mask: linear-gradient(to right, #000, #000 70%, transparent);
+    position: absolute;
+    z-index: -1;
+}
+
+.VehicleInfo_content_f2 {
+    margin: 16rem 112rem 16rem 10rem;
+}
+
+.mediaLarge .VehicleInfo_content_f2 {
+    margin: 18rem 187rem 18rem 16rem;
+}
+
+.VehicleInfo_title_0c {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 700;
+    white-space: pre;
+}
+
+.mediaMedium .VehicleInfo_title_0c {
+    font-size: 18rem;
+}
+
+.VehicleInfo_vehicleName_59 {
+    color: #ffffff;
+    font-size: 20rem;
+    font-weight: 700;
+}
+
+.mediaMedium .VehicleInfo_vehicleName_59 {
+    font-size: 28rem;
+}
+
+.VehicleInfo_vehicleTypeContainer_17 {
+    width: 24rem;
+}
+
+.mediaMedium .VehicleInfo_vehicleTypeContainer_17 {
+    width: 36rem;
+}
+
+.VehicleInfo_type_5e {
+    width: 24rem;
+    height: 24rem;
+}
+
+.mediaMedium .VehicleInfo_type_5e {
+    width: 36rem;
+    height: 36rem;
+}
+
+/* should be percentage of screen width */
 .YearlyRewardsPage_base_39 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100%;
-}
-
-.YearlyRewardsPage_headersWrapper_8e {
-    position: relative;
-    z-index: 1;
-}
-
-.YearlyRewardsPage_contentWrapper_73 {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1;
-    width: 100%;
-    color: #fff;
+    background-color: #0a1017;
     position: relative;
     z-index: 0;
 }
-
-.YearlyRewardsPage_cardsContainer_90 {
+.YearlyRewardsPage_contentWrapper_73 {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     flex: 1 1;
+    width: 100%;
 }
-
+.YearlyRewardsPage_vehicle_33 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.YearlyRewardsPage_columns_0a {
+    position: absolute;
+    transform: translateX(0rem);
+}
+.mediaSmall .YearlyRewardsPage_columns_0a {
+    transform: translateX(30rem);
+}
+.mediaMedium .YearlyRewardsPage_columns_0a {
+    transform: translateX(30rem);
+}
+.mediaLarge .YearlyRewardsPage_columns_0a {
+    transform: translateX(20rem);
+}
+.mediaExtraLarge .YearlyRewardsPage_columns_0a {
+    transform: translateX(0rem);
+}
+.YearlyRewardsPage_heading_9b {
+    width: 100%;
+}
+.YearlyRewardsPage_heading_9b,
+.YearlyRewardsPage_legend_2b,
+.YearlyRewardsPage_status_27 {
+    position: relative;
+    z-index: 1;
+}
 .YearlyRewardsPage_legend_2b {
     display: flex;
     justify-content: center;
-    padding: 28rem 0 16rem;
+    padding-top: 14rem;
+    transition: opacity 0.5s;
 }
-
 .mediaMedium .YearlyRewardsPage_legend_2b {
-    padding-top: 0;
-    padding-bottom: 22rem;
+    padding-top: 2rem;
 }
-
 .mediaLarge .YearlyRewardsPage_legend_2b {
-    padding-top: 42rem;
-    padding-bottom: 32rem;
+    padding-top: 13rem;
 }
-
 .mediaExtraLarge .YearlyRewardsPage_legend_2b {
-    padding-top: 63rem;
-    padding-bottom: 75rem;
+    padding-top: 35rem;
 }
-
+.YearlyRewardsPage_contentWrapper__withIntro_e5 .YearlyRewardsPage_legend_2b {
+    opacity: 0;
+}
+.showLegend .YearlyRewardsPage_legend_2b {
+    opacity: 1;
+}
+.YearlyRewardsPage_vehicleInfoContainer_2b {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.YearlyRewardsPage_vehicleInfo_f4 {
+    position: absolute;
+    top: 38rem;
+    left: 320rem;
+}
+.mediaSmall .YearlyRewardsPage_vehicleInfo_f4 {
+    top: 39rem;
+    left: 454rem;
+}
+.mediaMedium .YearlyRewardsPage_vehicleInfo_f4 {
+    top: 30rem;
+    left: 510rem;
+}
+.mediaLarge .YearlyRewardsPage_vehicleInfo_f4 {
+    top: 42rem;
+    left: 610rem;
+}
+.mediaExtraLarge .YearlyRewardsPage_vehicleInfo_f4 {
+    left: 795rem;
+}
 .YearlyRewardsPage_status_27 {
     display: flex;
     justify-content: center;
+    transition: opacity 0.5s;
+}
+.YearlyRewardsPage_contentWrapper__withIntro_e5 .YearlyRewardsPage_status_27 {
+    opacity: 0;
+}
+.realData .YearlyRewardsPage_status_27 {
+    opacity: 1;
 }
 
 .Background_base_8d {
@@ -9791,7 +10378,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex: 1;
 }
 
-.YearlyStatisticsPage_cardWrapper__seasonNotStarted_80 {
+/* opacity can't be on the parent wrapper due to visual bug with filter: blur; on underlying Background component */
+
+.YearlyStatisticsPage_bg__disabled_9a,
+.YearlyStatisticsPage_seasonCard__disabled_d7 {
     opacity: 0.6;
 }
 
@@ -9815,7 +10405,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding-top: 302rem;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .App_base_ef {
     width: 100%;
@@ -9846,12 +10435,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .App_base__shop_ab {
     background-color: transparent;
-}
-.App_base__yearlyRewards_0a {
-    background-image: url('R.images.gui.maps.icons.comp7.backgrounds.yearly_rewards_bg_small');
-}
-.mediaLarge .App_base__yearlyRewards_0a {
-    background-image: url('R.images.gui.maps.icons.comp7.backgrounds.yearly_rewards_bg');
 }
 .App_viewContainer_81 {
     width: 100%;

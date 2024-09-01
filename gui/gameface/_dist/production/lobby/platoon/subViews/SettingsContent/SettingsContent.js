@@ -1369,6 +1369,7 @@
                 !(function (u) {
                     (u.left = 'left'), (u.top = 'top'), (u.right = 'right'), (u.bottom = 'bottom');
                 })(X || (X = {}));
+                X.right, X.left;
                 const Z = 'ToggleButton_base_b9',
                     Q = 'ToggleButton_content_85',
                     J = 'ToggleButton_overlay_0a',

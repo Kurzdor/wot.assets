@@ -47,9 +47,9 @@
                         b = l.extraLargeHeight,
                         w = l.largeHeight,
                         S = l.mediumHeight,
-                        x = l.smallHeight,
-                        y = l.extraSmallHeight,
-                        O = { extraLarge: b, large: w, medium: S, small: x, extraSmall: y };
+                        y = l.smallHeight,
+                        x = l.extraSmallHeight,
+                        O = { extraLarge: b, large: w, medium: S, small: y, extraSmall: x };
                     if (n.extraLarge || n.large || n.medium || n.small || n.extraSmall) {
                         if (n.extraLarge && s) return t;
                         if (n.large && c) return t;
@@ -68,8 +68,8 @@
                             if (n.extraLargeHeight && b) return t;
                             if (n.largeHeight && w) return t;
                             if (n.mediumHeight && S) return t;
-                            if (n.smallHeight && x) return t;
-                            if (n.extraSmallHeight && y) return t;
+                            if (n.smallHeight && y) return t;
+                            if (n.extraSmallHeight && x) return t;
                         }
                     }
                     return null;
@@ -602,14 +602,14 @@
                         getScale: () => v,
                         getSize: () => g,
                         getViewGlobalPosition: () => h,
-                        isEventHandled: () => y,
+                        isEventHandled: () => x,
                         isFocused: () => S,
                         pxToRem: () => f,
                         remToPx: () => b,
                         resize: () => m,
                         sendEvent: () => o.qP,
                         setAnimateWindow: () => w,
-                        setEventHandled: () => x,
+                        setEventHandled: () => y,
                         setInputPaddingsRem: () => s,
                         setSidePaddingsRem: () => d,
                         whenTutorialReady: () => C,
@@ -661,10 +661,10 @@
                 function S() {
                     return viewEnv.isFocused();
                 }
-                function x() {
+                function y() {
                     return viewEnv.setEventHandled();
                 }
-                function y() {
+                function x() {
                     return viewEnv.isEventHandled();
                 }
                 function O() {
@@ -748,8 +748,11 @@
                     };
             },
             4598: (e, t, n) => {
-                n.d(t, { jv: () => a });
-                function a() {
+                n.d(t, { jv: () => r, yR: () => a });
+                function a(e) {
+                    return e;
+                }
+                function r() {
                     return !1;
                 }
                 console.log;
@@ -837,6 +840,8 @@
                     i = n(3946),
                     o = n(1922);
                 const l = [
+                        'qualityFuel',
+                        'excellentFuel',
                         'ration',
                         'chocolate',
                         'cocacola',
@@ -848,16 +853,13 @@
                         'ration_poland',
                         'ration_sweden',
                         'ration_italy',
-                        'removedRpmLimiter',
-                        'qualityOil',
-                        'gasoline100',
-                        'gasoline105',
                     ],
                     s = [
                         'smallRepairkit',
                         'smallMedkit',
                         'handExtinguishers',
                         'largeRepairkit',
+                        'builtinRepairkit',
                         'largeMedkit',
                         'autoExtinguishers',
                         ...l,
@@ -865,6 +867,7 @@
                     c = [
                         'smallRepairkit',
                         'largeRepairkit',
+                        'builtinRepairkit',
                         'smallMedkit',
                         'largeMedkit',
                         'handExtinguishers',
@@ -1005,8 +1008,8 @@
                                 },
                                 { equals: a.jv },
                             ),
-                            x = (0, i.Om)(() => S().length),
-                            y = (0, i.Om)(
+                            y = (0, i.Om)(() => S().length),
+                            x = (0, i.Om)(
                                 (e) => {
                                     const t = r.U2(S(), e);
                                     if (!t) throw Error(`No battle booster found with index: ${e}`);
@@ -1027,7 +1030,7 @@
                                     bonusValue: v,
                                 },
                                 consumables: { length: b, consumable: w },
-                                boosters: { length: x, booster: y },
+                                boosters: { length: y, booster: x },
                             },
                         };
                     };
@@ -1048,7 +1051,11 @@
                                 c = e.array('tankSetup.shellsSetup.slots'),
                                 u = e.object('ammunitionPanel'),
                                 d = e.array('ammunitionPanel.sectionGroups'),
-                                g = (0, o.Om)(
+                                g = e.object('optionalDevicesAssistant'),
+                                m = e.array('optionalDevicesAssistant.optionalDevicesAssistantItems'),
+                                h = () => i.UI(m.get(), (e) => Object.assign({}, e, { items: i.UI(e.items, r.yR) })),
+                                p = (0, o.Om)(() => h().sort((e, t) => t.popularity - e.popularity)),
+                                v = (0, o.Om)(
                                     (e) => {
                                         const t = i.U2(c.get(), e);
                                         if (!t) throw Error(`No shell found with index: ${e}`);
@@ -1056,39 +1063,39 @@
                                     },
                                     { equals: r.jv },
                                 ),
-                                m = (0, o.Om)(() => c.get().length),
-                                h = (0, o.Om)(() => i.UI(c.get(), (e) => e.intCD), { equals: r.jv }),
-                                p = (0, o.Om)((e) => g(e).specifications.length),
-                                v = (0, o.Om)(
+                                f = (0, o.Om)(() => c.get().length),
+                                b = (0, o.Om)(() => i.UI(c.get(), (e) => e.intCD), { equals: r.jv }),
+                                w = (0, o.Om)((e) => v(e).specifications.length),
+                                S = (0, o.Om)(
                                     (e, t) => {
-                                        const n = g(e),
+                                        const n = v(e),
                                             a = i.U2(n.specifications, t);
                                         if (!a) throw Error(`No shell specification found with index: ${t}`);
                                         return Object.assign({}, a);
                                     },
                                     { equals: r.jv },
                                 ),
-                                f = (0, o.Om)(
+                                y = (0, o.Om)(
                                     (e, t) => {
-                                        const n = g(e),
+                                        const n = v(e),
                                             a = i.U2(n.price.price, t);
                                         if (!a) throw Error(`No shell price found with index: ${t}`);
                                         return Object.assign({}, a);
                                     },
                                     { equals: r.jv },
                                 ),
-                                b = (0, o.Om)(
+                                x = (0, o.Om)(
                                     (e, t) => {
-                                        const n = g(e),
+                                        const n = v(e),
                                             a = i.U2(n.price.defPrice, t);
                                         if (!a) throw Error(`No shell defPrice found with index: ${t}`);
                                         return Object.assign({}, a);
                                     },
                                     { equals: r.jv },
                                 ),
-                                w = (0, o.Om)((e) => g(e).price.price.length),
-                                S = (0, o.Om)((e) => g(e).price.defPrice.length),
-                                x = (0, o.Om)(() => {
+                                O = (0, o.Om)((e) => v(e).price.price.length),
+                                E = (0, o.Om)((e) => v(e).price.defPrice.length),
+                                k = (0, o.Om)(() => {
                                     const e = u.get().selectedSlot,
                                         t = i.U2(d.get(), 0);
                                     if (!t) throw Error('No section group found');
@@ -1104,23 +1111,30 @@
                                 shellsSlots: c,
                                 ammunitionPanel: u,
                                 sectionGroups: d,
+                                optionalDevicesAssistant: g,
                                 computes: Object.assign({}, a, {
+                                    getOptionalDevicesAssistantItems: h,
+                                    sortedOptionalDevicesAssistantItems: p,
                                     shells: {
-                                        length: m,
-                                        shell: g,
-                                        specificationsLength: p,
-                                        specification: v,
-                                        price: f,
-                                        priceLength: w,
-                                        defPriceLength: S,
-                                        defPrice: b,
-                                        ids: h,
+                                        length: f,
+                                        shell: v,
+                                        specificationsLength: w,
+                                        specification: S,
+                                        price: y,
+                                        priceLength: O,
+                                        defPriceLength: E,
+                                        defPrice: x,
+                                        ids: b,
                                     },
-                                    selectedSlotSpecialization: x,
+                                    selectedSlotSpecialization: k,
                                 }),
                             });
                         },
                         ({ externalModel: e }) => ({
+                            onHintShown: e.createCallback(
+                                () => ({ value: !0 }),
+                                'optionalDevicesAssistant.onHintShown',
+                            ),
                             close: e.createCallbackNoArgs('onClose'),
                             animationEnded: e.createCallbackNoArgs('onAnimationEnd'),
                             viewRendered: e.createCallbackNoArgs('onViewRendered'),

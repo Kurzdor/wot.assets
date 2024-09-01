@@ -890,14 +890,6 @@ body {
     cursor: default;
 }
 
-.Container_base__noBG_69 {
-    background-image: none;
-}
-
-.Container_base__noBG_69:hover {
-    background-image: none;
-}
-
 .Bonus_base_dd {
     width: 54rem;
     height: 54rem;
@@ -2344,6 +2336,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Shells_shell_3f {
     display: flex;
 }
+.Shells_shell__compressed_2e {
+    margin-left: -17rem;
+}
 
 .ShellsSection_base_08 {
     display: flex;
@@ -2426,14 +2421,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .ShellsSection_base_08 {
     isolation: isolate;
-}
-
-.ShellsSection_base__noBG_0a {
-    background-image: none;
-}
-
-.ShellsSection_base__noBG_0a:hover {
-    background-image: none;
 }
 
 .ShellsSection_label_38 {
@@ -3398,6 +3385,34 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     pointer-events: none;
 }
 
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
+}
+
 .colors_blackReal_fc {
     color: #000000;
 }
@@ -3506,7 +3521,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .renderers_word_f3 {
-    white-space: nowrap;
+    white-space: pre;
     overflow-wrap: normal;
 }
 
@@ -3537,6 +3552,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .TankName_base__typeWhiteSpanish_e2 {
     color: #e9e2bf;
+}
+
+.TankName_base__typeWhiteOrange_ac {
+    color: #fefeec;
 }
 
 .TankName_base__typeColored_bc .TankName_level_bb {
@@ -3949,6 +3968,105 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .ShortenedText_base__shown_af {
     opacity: 1;
+}
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #ffffff;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #f2f2f7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #fefeec;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #e9e2bf;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8c8c7e;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362e;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #ff2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #b70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #feab34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #ee7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #ffdd99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #cbac77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80d43a;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7ab300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #ccffff;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09e2ff;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #ced9d9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #ffc363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #c9c9b6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #a29b70;
+}
+
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8c8c7e;
 }
 
 .FormatColorTagText_base_10 {
@@ -5783,6 +5901,273 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
+.PopularLoadouts_base_f1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.PopularLoadouts_base__hidden_2d {
+    opacity: 0;
+}
+
+.PopularLoadouts_header_92 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 24rem;
+    margin-bottom: 5rem;
+}
+
+.PopularLoadouts_header_container_03 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.PopularLoadouts_header_text_e9 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.mediaMediumHeight .PopularLoadouts_header_text_e9 {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.PopularLoadouts_header_icon_98 {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: -2rem;
+    background: url('R.images.gui.maps.icons.tanksetup.popular_loadouts.i_icon') no-repeat center / contain;
+}
+
+.mediaMediumHeight .PopularLoadouts_header_icon_98 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.PopularLoadouts_header_notEnoughData_05 {
+    width: 30rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.tanksetup.popular_loadouts.notEnoughData') no-repeat center / contain;
+}
+
+.PopularLoadouts_scrollWrapper_30 {
+    position: relative;
+}
+
+.PopularLoadouts_scroll_73 {
+    max-height: 90rem;
+    margin-right: -22rem;
+}
+
+.mediaMediumHeight .PopularLoadouts_scroll_73 {
+    max-height: 130rem;
+}
+
+.mediaLargeHeight .PopularLoadouts_scroll_73 {
+    max-height: 172rem;
+}
+
+.PopularLoadouts_backgroundWrapper_4d {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.PopularLoadouts_animatedBackground_83 {
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0) 25%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0) 75%
+    );
+    position: absolute;
+    right: 100rem;
+    bottom: 100rem;
+}
+
+.PopularLoadouts_shine1_08 {
+    animation: PopularLoadouts_shine1_08 1s ease-in-out;
+}
+
+.PopularLoadouts_shine2_47 {
+    animation: PopularLoadouts_shine2_47 1s ease-in-out;
+}
+
+.PopularLoadouts_border_d5 {
+    width: 272rem;
+    margin-left: 1rem;
+    border-top: 1rem solid #fff0;
+    opacity: 0.1;
+}
+
+.PopularLoadouts_border_visible_28 {
+    border-top: 1rem solid #fff;
+}
+
+.mediaLargeHeight .PopularLoadouts_border_d5 {
+    border-top: none;
+}
+
+.PopularLoadouts_container_33 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 9rem;
+    position: relative;
+}
+
+.PopularLoadouts_row_8c {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 56rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+}
+
+.PopularLoadouts_row_images_d8 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 168rem;
+    height: 56rem;
+    margin-right: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.PopularLoadouts_row_image_a4 {
+    width: 48rem;
+    height: 48rem;
+    margin-right: 5rem;
+}
+
+.PopularLoadouts_row_info_c4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 110rem;
+    height: 59rem;
+    margin-left: 5rem;
+}
+
+.PopularLoadouts_place_9c {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.PopularLoadouts_popularity_4e {
+    margin-bottom: -3rem;
+
+    color: #e9e2bf;
+
+    font-size: 14rem;
+
+    font-weight: 700;
+
+    line-height: 1.15;
+}
+
+.PopularLoadouts_notEnoughData_highlight_7a {
+    width: 119rem;
+    height: 60rem;
+    background: url('R.images.gui.maps.icons.tanksetup.popular_loadouts.highlight') no-repeat center / contain;
+    position: absolute;
+    top: -1rem;
+    right: 0rem;
+    pointer-events: none;
+}
+
+.PopularLoadouts_noData_44 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 280rem;
+    height: 90rem;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.PopularLoadouts_noData_image_59 {
+    width: 24rem;
+    height: 24rem;
+    margin-bottom: -3rem;
+}
+
+.PopularLoadouts_noData_text_d0 {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+@keyframes PopularLoadouts_shine1_08 {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+
+    100% {
+        transform: translateX(100%) translateY(100%);
+    }
+}
+
+@keyframes PopularLoadouts_shine2_47 {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+
+    100% {
+        transform: translateX(100%) translateY(100%);
+    }
+}
+
+.TankName_base__medium_13 {
+    right: 5rem;
+}
+.TankName_base__small_f9 {
+    top: 70rem;
+    right: 5rem;
+}
+.TankName_base__tiny_2d {
+    top: 107rem;
+    right: 10rem;
+}
+.TankName_base__hidden_b0 {
+    opacity: 0;
+}
+
+.RightSideTankParameters_tankNamePosition_b3 {
+    position: absolute;
+    top: 64rem;
+    right: 30rem;
+}
+
+.mediaMedium .RightSideTankParameters_tankNamePosition_b3 {
+    top: 77rem;
+}
+
+.RightSideTankParameters_popularLoadoutsPosition_04 {
+    position: absolute;
+    right: 30rem;
+    bottom: 166rem;
+}
+
 .WeaponOccupancy_base_19 {
     display: flex;
     color: #7ab300;
@@ -6508,30 +6893,6 @@ in JS 8000 reserved like anchor for start optimization
 
 .Sections_base__large_d0 {
     justify-content: space-around;
-}
-
-.TankName_base_56 {
-    position: absolute;
-    top: 85rem;
-    right: 30rem;
-}
-
-.TankName_base__medium_13 {
-    right: 5rem;
-}
-
-.TankName_base__small_f9 {
-    top: 70rem;
-    right: 5rem;
-}
-
-.TankName_base__tiny_2d {
-    top: 107rem;
-    right: 10rem;
-}
-
-.TankName_base__hidden_b0 {
-    opacity: 0;
 }
 
 .Animation_base_bf {

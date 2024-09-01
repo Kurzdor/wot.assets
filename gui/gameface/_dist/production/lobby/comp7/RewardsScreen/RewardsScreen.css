@@ -108,7 +108,6 @@
     background: no-repeat center / cover;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes AnimatedBackground_fadeIn_39 {
     0% {
@@ -407,7 +406,6 @@
     opacity: 1;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes Achievement_fadeIn_c8 {
     0% {
@@ -1182,7 +1180,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     pointer-events: auto;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes QualificationBattleItem_fadeIn_c9 {
     0% {
@@ -1565,10 +1562,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Reward_info_72 {
-    margin-top: -13rem;
     color: #e9e2bf;
     font-size: 14rem;
-    line-height: 18rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: -13rem;
     text-align: center;
     z-index: 1;
 }
@@ -1604,6 +1602,27 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     color: #ffdd99;
 }
 
+.Reward_title_36 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 80rem;
+    margin: -13rem -16rem 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.mediaMedium .Reward_title_36 {
+    max-width: 100rem;
+    margin-left: -10rem;
+    margin-right: -10rem;
+}
+
 .Reward_timer_d3 {
     background: no-repeat center / contain;
     position: absolute;
@@ -1628,7 +1647,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: -14rem;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes AnimatedReward_fadeIn_4b {
     0% {
@@ -1808,7 +1826,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin: -7rem -12rem 0;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes MainRewards_fadeIn_95 {
     0% {
@@ -2154,7 +2171,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.3;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 @keyframes RewardList_fadeIn_31 {
     0% {

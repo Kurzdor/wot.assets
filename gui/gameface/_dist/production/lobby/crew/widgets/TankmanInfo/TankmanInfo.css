@@ -40,6 +40,34 @@
     pointer-events: none;
 }
 
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
+}
+
 .colors_blackReal_fc {
     color: #000000;
 }
@@ -148,7 +176,7 @@
 }
 
 .renderers_word_f3 {
-    white-space: nowrap;
+    white-space: pre;
     overflow-wrap: normal;
 }
 
@@ -196,6 +224,10 @@
     pointer-events: none;
 }
 
+.TankmanFolder_folder__postProgression_07 {
+    background-image: url('R.images.gui.maps.icons.tankmen.crew.frames.folder_post_progression');
+}
+
 .TankmanFolder_photoFrame_ae {
     width: 240rem;
     height: 210rem;
@@ -211,6 +243,31 @@
     background-image: url('R.images.gui.maps.icons.tankmen.crew.frames.photo_frame_big');
     top: 20rem;
     left: 56rem;
+}
+
+.TankmanFolder_veteranBlick_14 {
+    width: 88rem;
+    height: 232rem;
+    mix-blend-mode: additive;
+    position: absolute;
+    top: -32rem;
+    left: 49rem;
+}
+
+.TankmanFolder_veteranFrame_9c {
+    width: 280rem;
+    height: 240rem;
+    mix-blend-mode: additive;
+    position: absolute;
+    top: 9rem;
+    left: 78rem;
+}
+
+.TankmanFolder_base__big_60 .TankmanFolder_veteranFrame_9c {
+    width: 320rem;
+    height: 376rem;
+    top: -7rem;
+    left: 31rem;
 }
 
 .TankmanFolder_icon_74 {
@@ -455,7 +512,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .RetrainAndEfficiency_base_71 {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
@@ -483,15 +539,21 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-left: 14rem;
 }
 
+.mediaExtraLarge .RetrainAndEfficiency_skillsEfficiencyLabel_45 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
 .RetrainAndEfficiency_skillsEfficiencyLabel__red_e9 {
     color: #ff2717;
 }
 
 .RetrainAndEfficiency_skillsEfficiencyRateContainer_5c {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .RetrainAndEfficiency_skillsEfficiencyNumber_9a {
@@ -499,6 +561,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
+}
+
+.mediaExtraLarge .RetrainAndEfficiency_skillsEfficiencyNumber_9a {
+    color: #e9e2bf;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .RetrainAndEfficiency_skillsEfficiencyNumber__red_a1 {
@@ -517,99 +586,152 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 2rem;
 }
 
+.mediaExtraLarge .RetrainAndEfficiency_skillsEfficiencyInfoIcon_76 {
+    background-image: url('R.images.gui.maps.icons.tankmen.crew.information_big');
+}
+
 .CurrentVehicleTrain_base_22 {
     display: flex;
-    flex-direction: row;
     height: 20rem;
-    position: relative;
 }
+
 .CurrentVehicleTrain_currentVehicle_9d {
-    color: rgba(242, 242, 247, 0.6);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
 }
+
+.mediaExtraLarge .CurrentVehicleTrain_currentVehicle_9d {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
 .CurrentVehicleTrain_currentVehicleName_19 {
     color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
 }
+
+.mediaExtraLarge .CurrentVehicleTrain_currentVehicleName_19 {
+    color: #e9e2bf;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
 .CurrentVehicleTrain_currentVehicleName__isPremium_86 {
     color: #ffc363;
 }
+
 .CurrentVehicleTrain_retrainContainer_6a {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    position: relative;
 }
+
 .CurrentVehicleTrain_retrainBtnContainer_00 {
     width: 120rem;
     height: 20rem;
     margin-left: 12rem;
-    position: relative;
 }
-.CurrentVehicleTrain_discountIcon_04 {
-    width: 80rem;
-    height: 45rem;
-    background: url('R.images.gui.maps.icons.tankmen.crew.discount_retrain') no-repeat center / contain;
-    position: absolute;
-    top: -13rem;
-    right: -35rem;
-}
-.CurrentVehicleTrain_discountIcon__forText_d9 {
-    top: -10rem;
-    right: -30rem;
-}
+
 .CurrentVehicleTrain_retrainBtn_3e {
-    width: 120rem;
-    height: 20rem;
-}
-.CurrentVehicleTrain_frameGlow_80 {
-    width: 120rem;
-    height: 20rem;
+    width: 100%;
+    height: 100%;
     border: 1rem solid #ffdd99;
-    border-radius: 2rem;
-    filter: drop-shadow(0 0 4rem rgba(255, 127, 0, 0.25)) drop-shadow(0 0 8rem #ff2a00) drop-shadow(0 0 15rem #e52);
-    position: absolute;
-    top: 1rem;
-    left: 0;
+    box-shadow:
+        0 0 4rem 0 rgba(255, 127, 0, 0.25),
+        0 0 8rem 0 rgba(255, 42, 0, 0.5),
+        0 0 15rem 0 rgba(238, 85, 34, 0.3);
 }
+
 .CurrentVehicleTrain_discountContainer_24 {
     display: flex;
     position: relative;
 }
+
 .CurrentVehicleTrain_discountText_45 {
     color: #ffdd99;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
-    display: flex;
     margin-left: 14rem;
     position: relative;
 }
 
+.CurrentVehicleTrain_retrainDiscountIcon_91,
+.CurrentVehicleTrain_penaltyDiscountIcon_33 {
+    width: 80rem;
+    height: 45rem;
+    background: url('R.images.gui.maps.icons.tankmen.crew.discount_retrain') no-repeat center / contain;
+    position: absolute;
+    z-index: -1;
+}
+
+.CurrentVehicleTrain_penaltyDiscountIcon_33 {
+    top: -13rem;
+    right: -35rem;
+}
+
+.CurrentVehicleTrain_retrainDiscountIcon_91 {
+    top: -10rem;
+    right: -30rem;
+}
+
 .Name_base_2d {
-    color: #f2f2f7;
-    font-size: 28rem;
-    font-weight: 700;
-    line-height: 1.1;
     display: flex;
+    margin-top: 4rem;
     position: relative;
 }
 
 .mediaMedium .Name_base_2d {
-    font-size: 36rem;
+    margin-top: 2rem;
 }
 
-.Name_label_31 {
-    line-height: 1.2;
+.mediaExtraLarge .Name_base_2d {
+    margin-top: 6rem;
+}
+
+.Name_labelWrapper_a0 {
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaMedium .Name_labelWrapper_a0 {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.Name_labelWrapper_a0 {
+    position: relative;
+}
+
+.Name_labelHiglight_7d {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-shadow:
+        0 0 14rem rgba(255, 153, 0, 1),
+        0 0 4rem rgba(251, 120, 0, 0.63);
+    opacity: 0.8;
 }
 
 .Name_voiceButton_00 {
     width: 34rem;
     height: 24rem;
     position: absolute;
-    top: 50%;
-    right: -14rem;
-    transform: translate(100%, -50%);
+    top: -3rem;
+    right: -48rem;
 }
 
 .Name_soundIcon_2a {
@@ -618,22 +740,88 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: url('R.images.gui.maps.icons.tankmen.crew.sound') no-repeat center / contain;
 }
 
+.Name_animationGlow_08 {
+    width: 778rem;
+    height: 438rem;
+    background: url('R.images.gui.maps.icons.crew.profile.glow_spot_white') no-repeat center / contain;
+    position: absolute;
+    top: -200rem;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.RoleIcon_base_51 {
+    background: no-repeat center / contain;
+}
+
+.RoleIcon_base__small_68 {
+    width: 13rem;
+    height: 13rem;
+}
+
+.RoleIcon_base__c_14x14_8f {
+    width: 14rem;
+    height: 14rem;
+}
+
+.RoleIcon_base__c_18x18_0b {
+    width: 18rem;
+    height: 18rem;
+}
+
+.RoleIcon_base__c_24x24_new_fe,
+.RoleIcon_base__c_24x24_52 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.RoleIcon_base__c_30x30_red_85,
+.RoleIcon_base__c_30x30_e9 {
+    width: 30rem;
+    height: 30rem;
+}
+
+.RoleIcon_base__c_40x40_99 {
+    width: 40rem;
+    height: 40rem;
+}
+
+.RoleIcon_base__medium_5d {
+    width: 33rem;
+    height: 33rem;
+}
+
+.RoleIcon_base__white_2a {
+    width: 44rem;
+    height: 44rem;
+}
+
+.RoleIcon_base__big_b4 {
+    width: 60rem;
+    height: 60rem;
+}
+
 .Role_base_e0 {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    position: relative;
+    height: 24rem;
+}
+
+.mediaMedium .Role_base_e0 {
+    margin-top: 0;
+}
+
+.mediaExtraLarge .Role_base_e0 {
+    align-items: center;
 }
 
 .Role_role_2a {
     display: flex;
+    align-items: center;
 }
 
-.Role_roleIcon_e6 {
-    width: 18rem;
-    height: 18rem;
-    margin: 2rem 6rem 0 0;
-    background: no-repeat center / contain;
+.mediaExtraLarge .Role_role_2a {
+    align-items: flex-end;
 }
 
 .Role_roleName_79 {
@@ -641,63 +829,132 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
+    margin: 2rem 6rem;
+}
+
+.mediaExtraLarge .Role_roleName_79 {
+    color: #e9e2bf;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 1rem;
 }
 
 .Role_commanderFeature_e2 {
     display: flex;
     align-items: center;
-    height: 18rem;
-    margin-top: 2rem;
 }
 
-.Role_sense_21 {
-    width: 24rem;
-    height: 24rem;
-    background: url('R.images.gui.maps.icons.tankmen.skills.medium.commander_sixthSense') no-repeat center / contain;
-}
-
+.Role_sense_21,
 .Role_commanderBonus_99 {
     width: 24rem;
     height: 24rem;
-    background: url('R.images.gui.maps.icons.tankmen.skills.medium.commander_bonus') no-repeat center / contain;
+    background: no-repeat center / contain;
+}
+
+.mediaExtraLarge .Role_sense_21,
+.mediaExtraLarge .Role_commanderBonus_99 {
+    width: 34rem;
+    height: 34rem;
+}
+
+.Role_sense_21 {
+    background-image: url('R.images.gui.maps.icons.tankmen.skills.medium.commander_sixthSense');
+}
+
+.mediaExtraLarge .Role_sense_21 {
+    background-image: url('R.images.gui.maps.icons.tankmen.skills.big.commander_sixthSense');
+}
+
+.Role_commanderBonus_99 {
+    background-image: url('R.images.gui.maps.icons.tankmen.skills.medium.commander_bonus');
+}
+
+.mediaExtraLarge .Role_commanderBonus_99 {
+    background-image: url('R.images.gui.maps.icons.tankmen.skills.big.commander_bonus');
+}
+
+.FlagIcon_base_25 {
+    background: no-repeat top center / cover;
+}
+
+.FlagIcon_base__c_1080x454_6c {
+    width: 1080rem;
+    height: 454rem;
+}
+
+.FlagIcon_base__c_240x118_92 {
+    width: 240rem;
+    height: 118rem;
+}
+
+.FlagIcon_base__c_155x31_41 {
+    width: 155rem;
+    height: 31rem;
+}
+
+.VehicleTypeIcon_base_80 {
+    background: no-repeat center / contain;
+}
+
+.VehicleTypeIcon_base__big_01 {
+    width: 83rem;
+    height: 74rem;
+}
+
+.VehicleTypeIcon_base__c_44x44_80 {
+    width: 44rem;
+    height: 44rem;
+}
+
+.VehicleTypeIcon_base__c_48x48_specSlot_c4 {
+    width: 48rem;
+    height: 48rem;
+}
+
+.VehicleTypeIcon_base__c_60x54_08 {
+    width: 60rem;
+    height: 54rem;
 }
 
 .SpecializationSlots_base_1a {
     display: flex;
+    margin: 7rem 0 15rem;
 }
 
-.SpecializationSlots_frame_85 {
+.mediaExtraLarge .SpecializationSlots_base_1a {
+    margin: 5rem 0 21rem;
+}
+
+.SpecializationSlots_frame_85,
+.SpecializationSlots_frameChange_c6 {
     display: flex;
-    width: 150rem;
+    width: 170rem;
     height: 33rem;
     border: 1rem solid rgba(242, 242, 247, 0.1);
     border-radius: 2rem;
     position: relative;
 }
 
-.SpecializationSlots_frame__first_23 {
+.SpecializationSlots_frameChange_c6 {
     margin-right: 10rem;
     cursor: pointer;
 }
 
-.SpecializationSlots_frame__crewLocked_de {
-    cursor: default;
-}
-
-.SpecializationSlots_darkFrame_34 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: none;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.SpecializationSlots_frame__hover_06 .SpecializationSlots_darkFrame_34 {
+.SpecializationSlots_frameChange_c6:hover .SpecializationSlots_darkFrame_34 {
     display: block;
 }
 
+.SpecializationSlots_frameChange_c6:hover .SpecializationSlots_shadow_4a,
+.SpecializationSlots_frameChange_c6:hover .SpecializationSlots_arrows_6e {
+    display: flex;
+}
+
+.SpecializationSlots_frameChange_c6:hover .SpecializationSlots_info_7c {
+    display: none;
+}
+
+.SpecializationSlots_darkFrame_34,
 .SpecializationSlots_shadow_4a {
     position: absolute;
     top: 0;
@@ -705,11 +962,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     bottom: 0;
     left: 0;
     display: none;
-    background: rgba(0, 0, 0, 0.4);
 }
 
-.SpecializationSlots_frame__hover_06 .SpecializationSlots_shadow_4a {
-    display: flex;
+.SpecializationSlots_darkFrame_34 {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.SpecializationSlots_shadow_4a {
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .SpecializationSlots_arrows_6e {
@@ -718,10 +978,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: absolute;
     top: -3rem;
     left: 7rem;
-}
-
-.SpecializationSlots_frame__hover_06 .SpecializationSlots_arrows_6e {
-    display: flex;
 }
 
 .SpecializationSlots_arrowsIcon_fc {
@@ -760,7 +1016,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .SpecializationSlots_vehicleTypeIcon_77 {
     width: 48rem;
     height: 48rem;
-    background: no-repeat center / contain;
     position: relative;
     left: -10rem;
 }
@@ -772,14 +1027,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     pointer-events: none;
 }
 
-.SpecializationSlots_frame__hover_06 .SpecializationSlots_info_7c {
-    display: none;
-}
-
 .SpecializationSlots_flag_84 {
-    width: 148rem;
-    height: 31rem;
-    background: no-repeat center / cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -806,101 +1054,108 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .SpecializationSlots_premVehicleTypeIcon_c9 {
     width: 28rem;
     height: 28rem;
-    background: no-repeat center / contain;
     background-size: 48rem 48rem;
     position: relative;
     top: -5rem;
 }
 
-.TankmanInfoApp_base_8a {
+.TankmanInfoApp_base_bc {
     display: flex;
-    flex-direction: row;
-    min-width: 550rem;
+    height: 232rem;
+    padding-left: 24rem;
     position: relative;
 }
 
-.mediaMedium .TankmanInfoApp_base_8a {
-    min-width: 878rem;
+.mediaMedium .TankmanInfoApp_base_bc {
+    height: 244rem;
+    padding-left: 330rem;
 }
 
-.TankmanInfoApp_tankmanFolder_2d {
+.mediaExtraLarge .TankmanInfoApp_base_bc {
+    height: 282rem;
+    padding-left: 344rem;
+}
+
+.TankmanInfoApp_tankmanFolder_6d {
     display: none;
-    position: relative;
 }
 
-.mediaMedium .TankmanInfoApp_tankmanFolder_2d {
+.mediaMedium .TankmanInfoApp_tankmanFolder_6d {
     display: flex;
+    position: absolute;
+    top: -65rem;
+    left: 0;
 }
 
-.TankmanInfoApp_descriptionBlock_f2 {
+.mediaExtraLarge .TankmanInfoApp_tankmanFolder_6d {
+    top: -44rem;
+}
+
+.TankmanInfoApp_descriptionBlock_00 {
     display: flex;
     flex-direction: column;
 }
 
-.mediaMedium .TankmanInfoApp_descriptionBlock_f2 {
-    margin: 63rem 0 0 -33rem;
-}
-
-.mediaLarge .TankmanInfoApp_descriptionBlock_f2 {
-    margin-left: -31rem;
-}
-
-.TankmanInfoApp_role_71 {
-    margin-top: -1rem;
-}
-
-.mediaMedium .TankmanInfoApp_role_71 {
-    margin-top: 0;
-}
-
-.TankmanInfoApp_name_68 {
-    margin-top: 2rem;
-}
-
-.mediaMedium .TankmanInfoApp_name_68 {
-    margin-top: -1rem;
-}
-
-.TankmanInfoApp_description_a6 {
-    color: rgba(242, 242, 247, 0.5);
+.TankmanInfoApp_description_3c {
+    color: rgba(242, 242, 247, 0.6);
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
-    width: 550rem;
-    height: 60rem;
+    width: 544rem;
+    max-height: 60rem;
     margin-top: 6rem;
 }
 
-.mediaMedium .TankmanInfoApp_description_a6 {
+.mediaMedium .TankmanInfoApp_description_3c {
+    width: 526rem;
     margin-top: 9rem;
 }
 
-.mediaExtraLarge .TankmanInfoApp_description_a6 {
-    width: 668rem;
-    height: 65rem;
+.mediaLarge .TankmanInfoApp_description_3c {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    width: 662rem;
+}
+
+.mediaExtraLarge .TankmanInfoApp_description_3c {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 952rem;
     font-size: 16rem;
 }
 
-.TankmanInfoApp_currentVehicle_06 {
-    margin-top: 13rem;
-}
-
-.TankmanInfoApp_nativeVehicle_5c {
+.TankmanInfoApp_specializationLabel_a3 {
     color: rgba(242, 242, 247, 0.6);
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
+    margin-top: 29rem;
+}
+
+.mediaMedium .TankmanInfoApp_specializationLabel_a3 {
     margin-top: 27rem;
 }
 
-.TankmanInfoApp_nativeVehicle__withDescription_03 {
-    margin-top: 14rem;
+.mediaExtraLarge .TankmanInfoApp_specializationLabel_a3 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 25rem;
 }
 
-.mediaExtraLarge .TankmanInfoApp_nativeVehicle__withDescription_03 {
-    margin-top: 10rem;
+.TankmanInfoApp_specializationLabel__withDescription_2e {
+    margin-top: 21rem;
 }
 
-.TankmanInfoApp_slots_a1 {
-    margin-top: 9rem;
+.mediaMedium .TankmanInfoApp_specializationLabel__withDescription_2e {
+    margin-top: 21rem;
+}
+
+.mediaExtraLarge .TankmanInfoApp_specializationLabel__withDescription_2e {
+    margin-top: 25rem;
 }

@@ -765,9 +765,9 @@
                 Object.defineProperty(e, Symbol.toStringTag, { value: 'Module' }),
                 Object.defineProperty(e, '__esModule', { value: !0 });
         }),
-        (r.j = 486),
+        (r.j = 2486),
         (() => {
-            var e = { 486: 0 };
+            var e = { 2486: 0 };
             r.O.j = (n) => 0 === e[n];
             var n = (n, t) => {
                     var i,
@@ -784,6 +784,6 @@
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             t.forEach(n.bind(null, 0)), (t.push = n.bind(null, t.push.bind(t)));
         })();
-    var i = r.O(void 0, [56], () => r(5022));
+    var i = r.O(void 0, [9056], () => r(5022));
     i = r.O(i);
 })();

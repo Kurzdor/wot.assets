@@ -245,6 +245,34 @@
     pointer-events: none;
 }
 
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
+}
+
 .colors_blackReal_fc {
     color: #000000;
 }
@@ -353,7 +381,7 @@
 }
 
 .renderers_word_f3 {
-    white-space: nowrap;
+    white-space: pre;
     overflow-wrap: normal;
 }
 
@@ -460,15 +488,19 @@
     position: relative;
 }
 
+.Param_valueWrapper_85 {
+    display: flex;
+    width: 85rem;
+}
+
 .Param_value_51 {
     color: #e9e2bf;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
-    display: flex;
-    justify-content: flex-end;
-    width: 85rem;
-    padding: 2rem 3rem 0 0;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
 }
 
 .Param_icon_37 {
@@ -487,16 +519,14 @@
 }
 
 .Param_highlight_81 {
+    width: 100%;
+    height: 24rem;
+    background: no-repeat 50% / 100% 200%;
+    opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
-    left: 0;
-    background: no-repeat 50% / 100% 200%;
-    opacity: 0;
     z-index: -1;
-    animation: Param_highlight_81 0.3s ease-in;
-    animation-delay: 0.5s;
 }
 
 .Param_highlight__increase_35 {
@@ -507,18 +537,8 @@
     background-image: url('R.images.gui.maps.icons.library.red_glow');
 }
 
-@keyframes Param_highlight_81 {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
+.Param_highlight__situational_db {
+    background-image: url('R.images.gui.maps.icons.library.yellow_glow');
 }
 
 .Group_base_66 {
@@ -607,6 +627,13 @@
     position: absolute;
     top: 2rem;
     right: 0;
+}
+
+.Group_situational_55 {
+    width: 16rem;
+    height: 16rem;
+    margin: 1rem 4rem 0 0;
+    background: url('R.images.gui.maps.icons.tooltip.asterisk_optional') no-repeat 50% / contain;
 }
 
 .Group_buff_fa {

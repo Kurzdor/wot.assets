@@ -634,6 +634,34 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     pointer-events: none;
 }
 
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
+}
+
 .colors_blackReal_fc {
     color: #000000;
 }
@@ -742,7 +770,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .renderers_word_f3 {
-    white-space: nowrap;
+    white-space: pre;
     overflow-wrap: normal;
 }
 
@@ -763,7 +791,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     color: rgba(242, 242, 247, 1);
 }
 
-.Description_retrainPrice_3c {
+.Description_efficiencyAfterRetrain_2f {
     color: #f2f2f7;
     font-size: 18rem;
     font-weight: 700;
@@ -773,26 +801,37 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
-.Description_retrainPrice_3c.Description_animate_1f .Description_retrainPriceGlow_a9 {
-    animation: Description_glowInAnimation_50 0.3s;
-}
-
-.Description_retrainPrice__highlighted_3e {
+.Description_efficiencyAfterRetrain__highlighted_71 {
     color: #ffdd99;
 }
 
-.Description_retrainPrice__selected_b8 {
+.Description_efficiencyAfterRetrain__selected_41 {
     opacity: 1;
 }
 
-.Description_retrainPriceGlow_a9 {
-    width: 100rem;
-    height: 100rem;
-    background: url('R.images.gui.maps.icons.crew.cardGlow.retrainDebuffGlow') no-repeat center / contain;
-    opacity: 0;
+.Description_efficiencyAfterRetrainValue_f4 {
+    position: relative;
+}
+
+.Description_efficiencyAfterRetrainGlow_cb {
+    width: 125rem;
+    height: 70rem;
+    background: no-repeat center / contain;
     position: absolute;
-    top: -39rem;
-    left: -37rem;
+    top: -23rem;
+    left: -47rem;
+}
+
+.Description_efficiencyAfterRetrainGlow__increase_84 {
+    background-image: url('R.images.gui.maps.icons.crew.cardGlow.increaseGlow');
+}
+
+.Description_efficiencyAfterRetrainGlow__decrease_24 {
+    background-image: url('R.images.gui.maps.icons.crew.cardGlow.decreaseGlow');
+}
+
+.Description_efficiencyAfterRetrainValuePercents_29 {
+    position: relative;
 }
 
 .Description_bonusSkill_0d {
@@ -864,24 +903,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: -7rem;
 }
 
-@keyframes Description_glowInAnimation_50 {
-    0% {
-        opacity: 0;
-    }
-
-    10% {
-        opacity: 0.35;
-    }
-
-    90% {
-        opacity: 0.35;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
 .FormatText_base_d0 {
     display: flex;
     flex-wrap: wrap;
@@ -891,11 +912,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     background: no-repeat center / contain;
     position: relative;
-}
-
-.SkillIcon_base__small_d0 {
-    width: 14rem;
-    height: 14rem;
 }
 
 .SkillIcon_base__c_22x22_14 {
@@ -916,6 +932,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .SkillIcon_base__big_ae {
     width: 52rem;
     height: 52rem;
+}
+
+.SkillIcon_base__c_80x80_79 {
+    width: 80rem;
+    height: 80rem;
+}
+
+.SkillIcon_base__c_120x90_8c {
+    width: 120rem;
+    height: 90rem;
 }
 
 .SkillIcon_base__dialogs_e5 {
@@ -1260,7 +1286,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     border-radius: 6rem;
     background: rgba(255, 255, 255, 0.04);
     position: relative;
-    cursor: pointer;
     mask-size: contain;
 }
 
@@ -1273,17 +1298,20 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     border: 1rem solid rgba(249, 201, 111, 0.5);
     box-shadow: 0 0 8rem 0 rgba(255, 0, 0, 0.28);
     background: rgba(255, 140, 109, 0.15);
-    cursor: default;
+}
+
+.PriceCard_base__hoverEnabled_18:hover {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.PriceCard_base__hoverEnabled_18:hover .PriceCard_hoverRays_75 {
+    visibility: visible;
 }
 
 .PriceCard_base__disabled_9c {
     background: rgba(0, 0, 0, 0.25);
     opacity: 0.5;
-    cursor: default;
-}
-
-.PriceCard_base__hover_7d {
-    background: rgba(255, 255, 255, 0.1);
 }
 
 .PriceCard_tooltip_69 {
@@ -1315,6 +1343,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
         rgba(255, 255, 255, 0) 100%
     );
     filter: blur(5rem);
+    visibility: hidden;
 }
 
 .PriceCard_disabledPattern_a7 {
@@ -1327,6 +1356,24 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     border-radius: 6rem;
     background: url('R.images.gui.maps.icons.library.disabled_pattern') center / 9rem;
     opacity: 1;
+}
+
+.PriceCard_discountPattern_d5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 238rem;
+    height: 318rem;
+    background: url('R.images.gui.maps.icons.common.components.price_card.perk_reset.dot_texture') no-repeat center /
+        contain;
+}
+
+.mediaMedium .PriceCard_discountPattern_d5 {
+    width: 298rem;
+    height: 398rem;
+    background-image: url('R.images.gui.maps.icons.common.components.price_card.perk_reset.dot_texture_big');
 }
 
 .PriceCard_title_98 {
@@ -1395,8 +1442,30 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
 }
 
+.PriceCard_price__specialDiscount_12 {
+    color: #ffdd99;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
 .PriceCard_base__small_b0 .PriceCard_price_13 {
     bottom: 15rem;
+}
+
+.PriceCard_bottomGlow_a3 {
+    width: 238rem;
+    height: 109rem;
+    background: url('R.images.gui.maps.icons.common.components.price_card.perk_reset.bottom_glow') no-repeat center /
+        contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.mediaMedium .PriceCard_bottomGlow_a3 {
+    width: 298rem;
+    background-image: url('R.images.gui.maps.icons.common.components.price_card.perk_reset.bottom_glow_big');
 }
 
 .PriceListApp_base_7d {
@@ -1413,6 +1482,68 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .mediaSmall .PriceListApp_card_6a {
     margin: 0 10rem;
+}
+
+.Countdown_base_fe {
+    display: flex;
+    align-items: center;
+}
+
+.Countdown_icon_8b {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+}
+
+.Countdown_description_8d {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.FooterContent_base_a0 {
+    display: flex;
+    align-items: center;
+    height: 20rem;
+    margin: 40rem 0 10rem;
+}
+
+.FooterContent_base__noLabels_4b {
+    margin: 16rem 0 0;
+}
+
+.mediaMedium .FooterContent_base__noLabels_4b {
+    margin: 30rem 0 0;
+}
+
+.FooterContent_infoIcon_39 {
+    width: 14rem;
+    height: 14rem;
+    margin: 1rem 6rem 0 0;
+    background: url('R.images.gui.maps.icons.crew.profile.info') no-repeat center / contain;
+}
+
+.FooterContent_label_1f {
+    color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.FooterContent_countdownIcon_52 {
+    margin-top: 2rem;
+}
+
+.FooterContent_countdownText_64 {
+    color: #ffdd99;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
 }
 
 .Divider_base_0a {
@@ -1456,6 +1587,57 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
 }
 
+.RoleIcon_base_51 {
+    background: no-repeat center / contain;
+}
+
+.RoleIcon_base__small_68 {
+    width: 13rem;
+    height: 13rem;
+}
+
+.RoleIcon_base__c_14x14_8f {
+    width: 14rem;
+    height: 14rem;
+}
+
+.RoleIcon_base__c_18x18_0b {
+    width: 18rem;
+    height: 18rem;
+}
+
+.RoleIcon_base__c_24x24_new_fe,
+.RoleIcon_base__c_24x24_52 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.RoleIcon_base__c_30x30_red_85,
+.RoleIcon_base__c_30x30_e9 {
+    width: 30rem;
+    height: 30rem;
+}
+
+.RoleIcon_base__c_40x40_99 {
+    width: 40rem;
+    height: 40rem;
+}
+
+.RoleIcon_base__medium_5d {
+    width: 33rem;
+    height: 33rem;
+}
+
+.RoleIcon_base__white_2a {
+    width: 44rem;
+    height: 44rem;
+}
+
+.RoleIcon_base__big_b4 {
+    width: 60rem;
+    height: 60rem;
+}
+
 .TankmanIcon_base_f9 {
     background: no-repeat center / contain;
 }
@@ -1489,7 +1671,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     pointer-events: none;
 }
 
-.mediaMedium .Tankman_base_51 {
+.mediaLargeWidth .Tankman_base_51 {
     display: flex;
 }
 
@@ -1497,7 +1679,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: none;
 }
 
-.mediaMedium .Tankman_tankman_ef {
+.mediaLargeWidth .Tankman_tankman_ef {
     display: flex;
 }
 
@@ -1513,147 +1695,427 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: -50rem;
 }
 
-.RoleIcon_base_51 {
-    background: no-repeat center / contain;
-}
-
-.RoleIcon_base__small_68 {
-    width: 13rem;
-    height: 13rem;
-}
-
-.RoleIcon_base__c_14x14_8f {
-    width: 14rem;
-    height: 14rem;
-}
-
-.RoleIcon_base__c_18x18_0b {
-    width: 18rem;
-    height: 18rem;
-}
-
-.RoleIcon_base__c_24x24_new_fe,
-.RoleIcon_base__c_24x24_52 {
-    width: 24rem;
-    height: 24rem;
-}
-
-.RoleIcon_base__c_30x30_red_85,
-.RoleIcon_base__c_30x30_e9 {
-    width: 30rem;
-    height: 30rem;
-}
-
-.RoleIcon_base__medium_5d {
-    width: 33rem;
-    height: 33rem;
-}
-
-.RoleIcon_base__white_2a {
-    width: 44rem;
-    height: 44rem;
-}
-
-.RoleIcon_base__big_b4 {
-    width: 60rem;
-    height: 60rem;
-}
-
-.SkillEfficiency_base_16 {
-    color: #ced9d9;
-    font-size: 22rem;
-    font-weight: 700;
-    line-height: 1.2;
-    position: relative;
-}
-
-.SkillEfficiency_bg_59 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    height: 32rem;
-    border-radius: 4rem;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.SkillEfficiency_base__untrained_42 .SkillEfficiency_bg_59 {
-    width: 46rem;
-}
-
-.SkillEfficiency_base__low_11 .SkillEfficiency_bg_59 {
+.Tankman_roleWrapper_02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50rem;
-}
-
-.SkillEfficiency_base__normal_2a .SkillEfficiency_bg_59 {
-    width: 60rem;
-}
-
-.SkillEfficiency_arrow_11 {
-    display: flex;
-    width: 57rem;
-    height: 96rem;
-    background: url('R.images.gui.maps.icons.windows.retrain_dialog.xp_arrow_small') no-repeat center / cover;
-    opacity: 0;
+    height: 42rem;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
     position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, 0);
-    transition:
-        opacity 0.1s ease-in-out,
-        transform 0.1s ease-in-out;
-    pointer-events: none;
+    bottom: -21rem;
 }
 
-.SkillEfficiency_base__selected_8a .SkillEfficiency_arrow_11 {
-    opacity: 1;
-    transform: translate(-50%, -63rem);
+.Tankman_role_d3 {
+    opacity: 0.6;
 }
 
-.SkillEfficiency_glow_7b {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    width: 100rem;
-    height: 100rem;
+.EfficiencyIndicator_base_34 {
     display: flex;
-    background: url('R.images.gui.maps.icons.windows.retrain_dialog.efficiency_glow') no-repeat center / cover;
-    opacity: 0.4;
-    pointer-events: none;
+    justify-content: center;
+    width: 32rem;
+    height: 22rem;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    pointer-events: auto;
 }
 
-.SkillEfficiency_untrained_94 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    display: flex;
-    width: 42rem;
+.EfficiencyIndicator_base__big_a1 {
+    align-items: center;
+    height: 26rem;
+}
+
+.EfficiencyIndicator_base__large_dc {
+    align-items: center;
+    width: auto;
     height: 32rem;
-    background: url('R.images.gui.maps.icons.library.untrained') no-repeat center / cover;
+    padding: 0 2rem;
 }
 
-.SkillEfficiency_efficiency_14 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    top: -2rem;
+.EfficiencyIndicator_base__large_dc.EfficiencyIndicator_base__untrained_cd {
+    width: 42rem;
 }
 
-.SkillEfficiency_base__low_11 .SkillEfficiency_efficiency_14 {
+.EfficiencyIndicator_percent_6b {
+    margin-top: 2rem;
+    text-shadow:
+        0 0 12rem rgba(255, 0, 0, 0.7),
+        0 0 8rem rgba(226, 0, 0, 0.7);
+    position: relative;
     color: #ffc3be;
-    text-shadow: 0 0 12rem #ff0000;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
 }
 
-.SkillEfficiency_base__selected_8a .SkillEfficiency_efficiency_14,
-.SkillEfficiency_base__normal_2a .SkillEfficiency_efficiency_14 {
+.EfficiencyIndicator_percent__full_30 {
     color: #ffffff;
     text-shadow:
         0 0 15rem rgb(238, 85, 34),
         0 0 8rem rgba(254, 171, 52, 0.6),
         0 0 4rem rgba(255, 127, 0, 0.25);
+    letter-spacing: -1rem;
+}
+
+.EfficiencyIndicator_base__big_a1 .EfficiencyIndicator_percent_6b {
+    position: relative;
+    top: -1rem;
+}
+
+.EfficiencyIndicator_base__large_dc .EfficiencyIndicator_percent_6b {
+    font-size: 22rem;
+    position: relative;
+    top: -2rem;
+}
+
+.EfficiencyIndicator_icon_da {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.untrained') no-repeat center / 44rem 36rem;
+}
+
+.AcceleratedTrainingIcon_base_4f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 16rem;
+    height: 16rem;
+    pointer-events: auto;
+}
+
+.AcceleratedTrainingIcon_icon_45 {
+    width: 34rem;
+    height: 34rem;
+    background: url('R.images.gui.maps.icons.crewWidget.slot.speedXpIcon') no-repeat center / contain;
+}
+
+.AnimatedLostSkill_base_55 {
+    display: flex;
+    position: relative;
+}
+
+.AnimatedLostSkill_base__c_24x24_d5 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.AnimatedLostSkill_base__c_44x44_72 {
+    width: 44rem;
+    height: 44rem;
+}
+
+.AnimatedLostSkill_icon_d4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.AnimatedLostSkill_base__c_24x24_d5 .AnimatedLostSkill_icon_d4 {
+    position: absolute;
+    top: -20rem;
+    right: -20rem;
+    bottom: -20rem;
+    left: -20rem;
+}
+
+.AnimatedLostSkill_base__c_44x44_72 .AnimatedLostSkill_icon_d4 {
+    position: absolute;
+    top: -26rem;
+    right: -26rem;
+    bottom: -26rem;
+    left: -26rem;
+}
+
+.AnimatedNewSkill_base_0f {
+    width: 24rem;
+    height: 24rem;
+}
+
+.Skill_base_1f {
+    display: flex;
+    position: relative;
+}
+
+.Skill_base__c_24x24_29 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.Skill_base__c_44x44_5a {
+    width: 44rem;
+    height: 44rem;
+}
+
+.Skill_background_02 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.Skill_base__borderLightYellow_09 .Skill_background_02 {
+    border-color: #ffdd99;
+}
+
+.Skill_base__borderYellow_3e .Skill_background_02 {
+    border-color: #feab34;
+}
+
+.Skill_base__borderRed_d2 .Skill_background_02 {
+    border-color: #ff2717;
+}
+
+.Skill_base__typeBonus_23 .Skill_background_02 {
+    border: none;
+    background: no-repeat 0 / cover;
+}
+
+.Skill_base__disabled_85 .Skill_background_02 {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.6;
+}
+
+.Skill_base__disabled_85.Skill_base__borderYellow_3e .Skill_background_02 {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.Skill_newSkillHighLight_44 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    background: #ff5c00;
+    opacity: 0.25;
+}
+
+.Skill_icon_b0 {
+    position: absolute;
+}
+
+.Skill_base__disabled_85 .Skill_icon_b0 {
+    opacity: 0.3;
+}
+
+.Skill_base__c_24x24_29 .Skill_icon_b0 {
+    width: 22rem;
+    height: 22rem;
+    top: 1rem;
+    left: 1rem;
+}
+
+.Skill_base__c_44x44_5a .Skill_icon_b0 {
+    width: 34rem;
+    height: 34rem;
+    top: 5rem;
+    left: 5rem;
+}
+
+.Skill_disabledOverlay_3b {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    background: url('R.images.gui.maps.icons.crew.skillsFrame.disabled') center / cover;
+}
+
+.LostLevelAnimation_base_f6 {
+    display: flex;
+    align-items: center;
+    width: 0;
+    position: relative;
+}
+
+.LostLevelAnimation_level_f0 {
+    color: #feab34;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    position: absolute;
+}
+
+.LostLevelAnimation_level__skillLost_a2 {
+    color: #ff2717;
+}
+
+.LostLevelAnimation_level__skillBlur_24 {
+    text-shadow: 0 0 20rem rgba(255, 255, 255, 0.9);
+    filter: blur(5rem);
+    opacity: 0;
+}
+
+.LostLevelAnimation_base__c_24x24_1c .LostLevelAnimation_level_f0 {
+    left: 4rem;
+}
+
+.LostLevelAnimation_base__c_44x44_44 .LostLevelAnimation_level_f0 {
+    font-size: 24rem;
+    left: 6rem;
+}
+
+.SkillLevel_base_d2 {
+    color: #feab34;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.SkillLevel_base__highlighted_e3 {
+    color: #fefeec;
+    text-shadow:
+        0 0 15rem #e52,
+        0 0 8rem #ff2a00,
+        0 0 4rem rgba(255, 127, 0, 0.25);
+}
+
+.Row_base_bb {
+    display: flex;
+    align-items: center;
+}
+
+.Row_skill_fb {
+    overflow: hidden;
+}
+
+.Row_skill_fb + .Row_skill_fb {
+    margin-left: 2rem;
+}
+
+.Row_base__c_44x44_4f .Row_skill_fb + .Row_skill_fb {
+    margin-left: 4rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseNoMargins_13 .Row_skill_fb + .Row_skill_fb {
+    margin-left: -1rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOverlap_2c .Row_skill_fb + .Row_skill_fb {
+    margin-left: 0;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseReducedMargins_3b .Row_skill_fb + .Row_skill_fb {
+    margin-left: 1rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOverlap_2c .Row_skill_fb {
+    width: 20rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOverlap_2c .Row_skill__last_0a,
+.Row_base__c_24x24_16.Row_base__collapseOverlap_2c .Row_skill__lastLearnedSkill_6c {
+    width: 24rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOverlap_2c .Row_skill__lastLearnedSkill_6c {
+    margin-right: 2rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOnlyLearningOverlap_19 .Row_skill__stateLearning_5d {
+    width: 20rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOnlyLearningOverlap_19
+    .Row_skill__stateLearning_5d
+    + .Row_skill__stateLearning_5d {
+    margin-left: 0;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseOnlyLearningOverlap_19 .Row_skill_fb.Row_skill__last_0a {
+    width: 24rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlap_10 .Row_skill_fb {
+    width: 19rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithLevel_90 .Row_skill_fb,
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithEfficiency_90 .Row_skill_fb {
+    width: 15rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithLevelAndEfficiency_4e .Row_skill_fb {
+    width: 14rem;
+}
+
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlap_10 .Row_skill__last_0a,
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithLevel_90 .Row_skill__last_0a,
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithEfficiency_90 .Row_skill__last_0a,
+.Row_base__c_24x24_16.Row_base__collapseExtraOverlapWithLevelAndEfficiency_4e .Row_skill__last_0a {
+    width: 24rem;
+}
+
+.Row_base__c_24x24_16 .Row_level_56 {
+    margin-left: 4rem;
+    position: relative;
+    top: -1rem;
+}
+
+.Row_base__c_44x44_4f .Row_level_56 {
+    margin-left: 6rem;
+    font-size: 24rem;
+}
+
+.Row_acceleratedTrainingIcon_c7 {
+    margin-left: 9rem;
+}
+
+.Row_lostSkill_32 {
+    margin-left: 2rem;
+}
+
+.Row_base__c_44x44_4f .Row_lostSkill_32 {
+    margin-left: 4rem;
+}
+
+.Skills_base_ec {
+    display: flex;
+    align-items: center;
+}
+
+.Skills_efficiency_d0 {
+    margin-right: 4rem;
+}
+
+.Skills_base__c_44x44_c0 .Skills_efficiency_d0 {
+    margin-right: 8rem;
+}
+
+.Skills_rows_e8 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Skills_bonusRow_4a {
+    margin-top: 2rem;
+}
+
+.Skills_base__c_44x44_c0 .Skills_bonusRow_4a {
+    margin-top: 4rem;
+}
+
+.SkillsWithRole_base_92 {
+    display: flex;
+    align-items: center;
+}
+
+.SkillsWithRole_role_66 {
+    margin: 0 11rem 0 3rem;
+    opacity: 0.6;
+}
+
+.SkillsWithRole_role__glow_93 {
+    filter: drop-shadow(0 0rem 3rem #e52) drop-shadow(0 0 8rem #ff2717) drop-shadow(0 0 4rem rgba(255, 127, 0, 0.25));
+    opacity: 1;
 }
 
 .Frame_base_e1 {
@@ -1753,148 +2215,120 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 30rem;
 }
 
-.SkillsList_base_26 {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.SkillsList_role_83 {
-    opacity: 0.6;
-}
-
-.SkillsList_role__glow_52 {
-    filter: drop-shadow(0 0rem 3rem #e52) drop-shadow(0 0 8rem #ff2717) drop-shadow(0 0 4rem rgba(255, 127, 0, 0.25));
-    opacity: 1;
-}
-
-.SkillsList_efficiency_93 {
-    display: flex;
-}
-
-.SkillsList_efficiency__untrained_5e {
-    margin: 0 30rem;
-}
-
-.SkillsList_efficiency__low_b5 {
-    margin: 0 32rem;
-}
-
-.SkillsList_efficiency__normal_b3 {
-    margin: 0 36rem;
-}
-
-.SkillsList_skills_b3 {
-    display: flex;
-    flex: 1;
-}
-
-.SkillsList_skills__c_24x24_4f {
-    flex-wrap: wrap;
-}
-
-.SkillsList_skill_57 {
-    display: flex;
-    margin-right: 4rem;
-}
-
-.SkillsList_skills__c_24x24_4f .SkillsList_skill_57 {
-    margin-top: 2rem;
-    margin-right: 1rem;
-}
-
-.SkillsList_sequence_f4 {
-    width: 96rem;
-    height: 96rem;
-    opacity: 0;
-    position: absolute;
-    top: -26rem;
-    left: -26rem;
-}
-
-.SkillsList_sequence__show_24 {
-    opacity: 1;
-}
-
-.SkillsList_sequence__c_24x24_4e {
-    width: 64rem;
-    height: 64rem;
-    position: absolute;
-    top: -18rem;
-    left: -20rem;
-}
-
 .ResetResult_base_7f {
-    color: #8c8c7e;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
     display: flex;
     justify-content: center;
     align-self: center;
     width: 2rem;
     height: 64rem;
-    margin-top: 14rem;
+    padding: 20rem 0;
     position: relative;
 }
 
-.ResetResult_skillsBefore_27,
-.ResetResult_skillsAfter_55 {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+.ResetResult_base__withBonusSkills_97 {
+    height: 90rem;
 }
 
-.ResetResult_skillsBefore__block_2b,
-.ResetResult_skillsAfter__block_0e {
-    margin-top: 32rem;
+.mediaMedium .ResetResult_base_7f {
+    height: 84rem;
+}
+
+.mediaMedium .ResetResult_base__withBonusSkills_97 {
+    height: 132rem;
+}
+.ResetResult_background_1d {
+    width: 720rem;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.03) 15%,
+        rgba(255, 255, 255, 0.03) 85%,
+        transparent 100%
+    );
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    bottom: 0;
 }
-
+.ResetResult_arrowWrapper_7f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 106rem;
+    height: 100%;
+}
 .ResetResult_arrow_1f {
     width: 128rem;
     height: 128rem;
-    margin-left: 30rem;
     background: url('R.images.gui.maps.icons.library.changeArrow') no-repeat center / contain;
+}
+.ResetResult_skillsWrapper_5b {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 20rem;
+}
+.ResetResult_skillsWrapper__after_90 {
+    left: 0;
 }
 
 .TitleContent_base_a5 {
     display: flex;
     flex-direction: column;
-    width: 100vw;
     position: relative;
 }
 
 .TitleContent_title_a7 {
-    padding: 0 50rem;
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding: 22rem 50rem 0;
     text-align: center;
 }
 
+.mediaMedium .TitleContent_title_a7 {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
 .TitleContent_result_d2 {
-    margin-top: 15rem;
-    padding: 0 40rem;
+    margin-top: 11rem;
 }
 
 .PerksResetApp_icon_9e {
     margin-bottom: 14rem;
 }
 
+.PerksResetApp_priceList_41 {
+    margin-top: -8rem;
+    margin-bottom: -20rem;
+}
+
 .PerksResetApp_center_b6 {
-    margin-bottom: -90rem;
+    margin-bottom: 14rem;
     z-index: 2;
 }
 
 .mediaMedium .PerksResetApp_center_b6 {
-    margin-bottom: -128rem;
+    margin-bottom: -108rem;
 }
 
 .mediaLarge .PerksResetApp_center_b6 {
+    margin-bottom: -46rem;
+}
+
+.PerksResetApp_center__withBonusSkills_5b {
     margin-bottom: -60rem;
+}
+
+.mediaMedium .PerksResetApp_center__withBonusSkills_5b {
+    margin-bottom: -152rem;
+}
+
+.mediaLarge .PerksResetApp_center__withBonusSkills_5b {
+    margin-bottom: -92rem;
+}
+
+.PerksResetApp_divider_1d {
+    display: none;
 }

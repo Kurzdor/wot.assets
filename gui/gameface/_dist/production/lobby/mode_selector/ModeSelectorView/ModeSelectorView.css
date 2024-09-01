@@ -471,123 +471,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 4rem;
 }
 
-.Widget_base_82 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.Widget_icon_fa {
-    position: absolute;
-    top: auto;
-    bottom: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: no-repeat 50% / contain;
-    transform: translate(-50%, 0rem);
-    pointer-events: auto;
-}
-
-.Widget_icon__huge_60 {
-    width: 130rem;
-    height: 130rem;
-}
-
-.Widget_icon__big_55,
-.Widget_icon__medium_79,
-.Widget_icon__small_f3 {
-    width: 64rem;
-    height: 64rem;
-}
-
-.Widget_icon__b0_37,
-.Widget_icon__b1_04 {
-    top: 147rem;
-}
-
-.Widget_icon__b0__medium_8d,
-.Widget_icon__b1__medium_39 {
-    top: 103rem;
-}
-
-.Widget_icon__b0__extraSmall_d4,
-.Widget_icon__b0__small_87,
-.Widget_icon__b1__extraSmall_f3,
-.Widget_icon__b1__small_9b {
-    top: 107rem;
-}
-
-.Widget_icon__b2_7a {
-    top: 5rem;
-}
-
-.Widget_icon__b2__medium_3e {
-    top: -4rem;
-}
-
-.Widget_icon__b2__extraSmall_4d,
-.Widget_icon__b2__small_22 {
-    top: 6rem;
-}
-
-.Widget_icon__b3_d8 {
-    top: -10rem;
-}
-
-.Widget_icon__b3__medium_54 {
-    top: 14rem;
-}
-
-.Widget_icon__b3__extraSmall_dd,
-.Widget_icon__b3__small_65 {
-    top: 0;
-}
-
-.Widget_icon__b4_aa {
-    top: 22rem;
-}
-
-.Widget_icon__b4__medium_3c {
-    top: 18rem;
-}
-
-.Widget_icon__b4__extraSmall_03,
-.Widget_icon__b4__small_78 {
-    top: 12rem;
-}
-
-.Widget_icon__b5_56 {
-    top: 9rem;
-}
-
-.Widget_icon__b5__medium_79 {
-    top: 6rem;
-}
-
-.Widget_icon__b5__extraSmall_cc,
-.Widget_icon__b5__small_12 {
-    top: 10rem;
-}
-
-.Widget_icon__b6_7b {
-    top: 3rem;
-}
-
-.Widget_icon__b6__medium_42 {
-    top: 6rem;
-}
-
-.Widget_icon__b6__extraSmall_f6,
-.Widget_icon__b6__small_cd {
-    top: 4rem;
-}
-
 .Counter_base_9e {
     display: flex;
     min-width: 14rem;
@@ -2195,6 +2078,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.3;
     justify-content: center;
     margin-top: -6rem;
+    padding: 0 2rem;
     line-height: 14rem;
     text-align: center;
     top: 64rem;
@@ -2724,30 +2608,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .NormalCard_statusDescription__color_b5 {
     color: #e9e2bf;
-}
-
-.NormalCard_alert_4c {
-    color: #ee7000;
-    font-size: 14rem;
-    font-weight: 700;
-    line-height: 1.15;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15rem auto 0;
-}
-
-.NormalCard_cornerAlert_a7 {
-    position: absolute;
-    top: 12rem;
-    right: 8rem;
-}
-
-.NormalCard_alertIcon_86 {
-    width: 16rem;
-    height: 16rem;
-    margin-right: 4rem;
-    background: url('R.images.gui.maps.icons.library.alertIcon') no-repeat left / contain;
 }
 
 .NormalCard_belowStatus_05 {
@@ -3733,122 +3593,274 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-bottom: -1rem;
 }
 
-.Comp7BattleCard_widgetOverlay_66 {
-    pointer-events: auto;
+.Comp7BattleCard_widget_3b {
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.Comp7BattleCard_base__b0_91 .Comp7BattleCard_widget_3b,
+.Comp7BattleCard_base__b1_30 .Comp7BattleCard_widget_3b {
+    top: 108rem;
+}
+
+.mediaMedium .Comp7BattleCard_base__b0_91 .Comp7BattleCard_widget_3b,
+.mediaMedium .Comp7BattleCard_base__b1_30 .Comp7BattleCard_widget_3b {
+    width: 150rem;
+    height: 150rem;
+    top: 80rem;
+}
+
+.mediaLarge .Comp7BattleCard_base__b0_91 .Comp7BattleCard_widget_3b,
+.mediaLarge .Comp7BattleCard_base__b1_30 .Comp7BattleCard_widget_3b {
+    top: 126rem;
+}
+
+.mediaMedium .Comp7BattleCard_base__b2_da .Comp7BattleCard_widget_3b {
+    width: 110rem;
+    height: 110rem;
+    top: 4rem;
+}
+
+.mediaLarge .Comp7BattleCard_base__b2_da .Comp7BattleCard_widget_3b {
+    top: 14rem;
 }
 
 .Comp7BattleCard_belowStatus_48 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 80rem;
     position: relative;
-    pointer-events: auto;
 }
 
-.mediaMedium .Comp7BattleCard_belowStatus_48 {
-    margin-top: 110rem;
+/* should be percentage of screen width */
+.QualificationCounter_base_fb {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.QualificationCounter_dash_e2 {
+    width: 66rem;
+    height: 32rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.light_dash') no-repeat center / cover;
+}
+.QualificationCounter_dash__right_3e {
+    transform: rotate(180deg);
+}
+.QualificationCounter_iconContainer_c3 {
+    display: flex;
+    width: 26rem;
+    position: relative;
+    transform: translateY(1rem);
+}
+.QualificationCounter_battleIcon_2e {
+    width: 42rem;
+    height: 42rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.battles_42x42') no-repeat center / cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.QualificationCounter_score_3b {
+    margin: 0 -6rem 0 -12rem;
+    color: #cbac77;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+    transform: translateY(-1rem);
 }
 
-.Progression_base_c8 {
+.RankEmblem_base_ec {
+    width: var(--imageSize);
+    height: var(--imageSize);
+    background: no-repeat center / cover;
+}
+
+/* should be percentage of screen width */
+.Progress_base_2e {
+    width: 86rem;
+}
+.Progress_progress_32 {
+    margin-bottom: 10rem;
+}
+.Progress_status_95 {
+    color: #cbac77;
+    font-size: 12rem;
+    text-align: center;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+}
+.Progress_statusPoints_73 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+}
+.Progress_points_a7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Progress_dash_32 {
+    width: 66rem;
+    height: 31rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.light_dash') no-repeat center / cover;
+}
+.Progress_dash__right_fb {
+    transform: rotate(180deg);
+}
+.Progress_score_c0 {
+    margin: 0 -6rem;
+    color: #ffdd99;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+}
+
+/* should be percentage of screen width */
+.Qualification_base_46 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 0 20rem;
 }
-
-.Progression_title_62 {
-    color: #8c8c7e;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
+.Qualification_ratingCalculation_8f {
+    display: flex;
+    justify-content: center;
+    color: #ffdd99;
     text-align: center;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+}
+.Qualification_timer_78 {
+    width: 33rem;
+    height: 33rem;
+    margin: -7rem -5rem 0 -10rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.timer') no-repeat center / cover;
+    filter: drop-shadow(0rem 0rem 4rem rgba(255, 127, 0, 0.25)) drop-shadow(0rem 0rem 8rem #ff2a00);
 }
 
-.Progression_contentWrapper_8f {
+/* should be percentage of screen width */
+.Warning_base_a5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    font-size: 12rem;
+    position: relative;
+}
+.Warning_lighting_e0 {
+    width: 111rem;
+    height: 58rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.lighting') no-repeat center / cover;
+    opacity: 0.6;
+    position: absolute;
+    top: -12rem;
+    right: 50%;
+    transform: translateX(55rem);
+    pointer-events: none;
+}
+.Warning_value_1e {
+    color: #ffdd99;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+}
+.Warning_base__text_08 .Warning_value_1e {
+    color: #ff2717;
+    text-shadow: 0 0 14rem #f00;
+}
+.Warning_timer_fe {
+    width: 30rem;
+    height: 30rem;
+    margin: 0 -10rem -2rem -5rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.timer') no-repeat center / cover;
     position: relative;
 }
 
-.Progression_progress_b8 {
+.App_base_de {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    margin: 8rem 0 10rem;
-    padding: 0 20rem;
-    position: absolute;
+    margin-top: 1rem;
+    overflow: hidden;
 }
-
-.Progression_currentStage_1b {
-    color: #8c8c7e;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 15rem;
-}
-
-.mediaMedium .Progression_currentStage_1b {
-    margin-bottom: 22rem;
-}
-
-.Progression_currentStage_1b span {
-    color: #e9e2bf;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-left: 5rem;
+.App_content_da {
+    width: 130rem;
     position: relative;
-    top: 0;
+    z-index: 1;
+}
+.mediaMediumHeight .App_content_da {
+    width: 150rem;
+}
+.App_emblemContainer_dc {
+    width: 100%;
+    filter: brightness(1);
+    transition: filter 0.2s linear;
+    cursor: pointer;
+}
+.App_emblemContainer_dc:hover {
+    filter: brightness(1.15);
+}
+.App_base__unavailable_e1 .App_emblemContainer_dc {
+    filter: brightness(0.53);
+    cursor: default;
+}
+.App_emblem_90 {
+    width: 130rem;
+    height: 130rem;
+    margin-bottom: 10rem;
+}
+.App_base__unavailable_e1 .App_emblem_90 {
+    filter: saturate(0%);
+}
+.mediaMediumHeight .App_emblem_90 {
+    width: 150rem;
+    height: 150rem;
+    margin-bottom: 0;
+}
+.App_progression_e6 {
+    margin: 0 0 8rem 22rem;
+}
+.mediaMediumHeight .App_progression_e6 {
+    margin-left: 32rem;
+}
+.App_warning_f8 {
+    margin-top: -5rem;
 }
 
-.mediaMedium .Progression_currentStage_1b span {
-    color: #e9e2bf;
-    font-size: 22rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-left: 6rem;
-    top: 2rem;
-}
-
-.mediaLarge .Progression_currentStage_1b span {
-    color: #e9e2bf;
-    font-size: 24rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-left: 7rem;
-}
-
-.Progression_progressValue_f8 {
-    color: #8c8c7e;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
+.Progression_base_bb {
     display: flex;
-    align-items: center;
-    margin-top: 15rem;
-    text-align: center;
+    justify-content: center;
 }
 
-.mediaMedium .Progression_progressValue_f8 {
-    margin-top: 22rem;
+.Progression_progress_2a {
+    margin-top: 18rem;
 }
 
-.Progression_progressValueIcon_df {
-    width: 16rem;
-    height: 16rem;
-    margin-left: 5rem;
-    background: url('R.images.gui.maps.icons.missions.tokens.c_16x16.token_comp7_light') no-repeat center/cover;
+.Progression_warning_1f {
+    margin-top: -5rem;
 }
 
-.mediaMedium .Progression_progressValueIcon_df {
-    margin-bottom: -1rem;
+.Progression_battlesCounter__b0_31,
+.Progression_battlesCounter__b1_92 {
+    margin-top: 20rem;
+}
+
+.Progression_battlesCounter__b2_0c .Progression_battlesCounter_df {
+    margin-top: 10rem;
 }
 
 .Countdown_base_fe {

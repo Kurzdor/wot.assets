@@ -443,7 +443,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Separator_image_5b {
-    background: center / 100% no-repeat;
+    background: no-repeat center / 100% 100%;
 }
 
 .Separator_base__horizontal_34 .Separator_image_5b {
@@ -1617,6 +1617,43 @@ so we just add specificity to css classes here
     background: top / contain no-repeat;
     position: absolute;
     top: 0;
+}
+
+.RankEmblem_base_ec {
+    width: var(--imageSize);
+    height: var(--imageSize);
+    background: no-repeat center / cover;
+}
+
+.Comp7Content_base_f9 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Comp7Content_scoreContainer_f9 {
+    color: #ffdd99;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+}
+
+.Comp7Content_score_e7 {
+    display: flex;
+    align-items: center;
+    padding-right: 10rem;
+}
+
+.Comp7Content_icon_0f {
+    margin: 2rem 4rem 0;
+}
+
+.Comp7Content_base__general_aa .Comp7Content_icon_0f {
+    margin: 2rem 1rem 0 -2rem;
 }
 
 /*////////////*/

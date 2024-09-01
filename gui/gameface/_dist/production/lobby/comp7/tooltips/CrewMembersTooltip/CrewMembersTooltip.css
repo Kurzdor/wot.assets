@@ -1,0 +1,128 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.tooltips_base_6b {
+    display: flex;
+    flex-direction: column;
+    padding: 15rem 20rem 20rem;
+}
+
+.tooltips_heading_ac {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.tooltips_subHeading_2c {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.tooltips_subHeading__topIndent_e1 {
+    margin-top: 8rem;
+}
+
+.tooltips_divider_26 {
+    width: 100%;
+    height: 1rem;
+    margin: 12rem 0 8rem;
+    background: linear-gradient(
+            to right,
+            rgba(201, 201, 182, 0.2) 33.33%,
+            rgba(201, 201, 182, 0) 33.33%,
+            rgba(201, 201, 182, 0)
+        )
+        repeat right / 3rem 1rem;
+    mask: linear-gradient(
+        90deg,
+        transparent,
+        rgba(0, 0, 0, 0.6) 5%,
+        rgba(0, 0, 0, 1) 30%,
+        rgba(0, 0, 0, 1) 70%,
+        rgba(0, 0, 0, 0.6) 95%,
+        transparent
+    );
+}
+
+.tooltips_description_85 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.tooltips_description__topIndent_ba {
+    margin-top: 14rem;
+}
+
+.tooltips_highlight_87 {
+    color: #e9e2bf;
+}
+
+.App_base_51 {
+    width: 368rem;
+}
+
+.App_crewIcon_6e {
+    width: 326rem;
+    height: 246rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.crew_members') no-repeat center / cover;
+}
+
+.App_title_11 {
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-top: 10rem;
+}
+
+.App_title__second_51 {
+    margin-top: 20rem;
+}
+
+.App_perk_9e,
+.App_zeroPerk_a4 {
+    display: flex;
+    width: 52rem;
+    height: 52rem;
+    margin-top: 10rem;
+    position: relative;
+}
+
+.App_perk_9e + .App_perk_9e,
+.App_zeroPerk_a4 + .App_zeroPerk_a4 {
+    margin-left: 13rem;
+}
+
+.App_zeroPerk_a4 {
+    background: url('R.images.gui.maps.icons.comp7.icons.perk_brotherhood') no-repeat center / cover;
+}
+
+.App_slots_27 {
+    display: flex;
+}
+
+.App_slotImage_c6 {
+    display: flex;
+    width: 90rem;
+    height: 90rem;
+    background: url('R.images.gui.maps.icons.comp7.icons.perk_slot') no-repeat center / cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

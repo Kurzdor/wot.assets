@@ -68,18 +68,20 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background: #0d1427 url('R.images.gui.maps.icons.collections.main_layout.common') no-repeat center / 1920rem 1080rem;
+    background: #0d1427 url('R.images.gui.maps.icons.collections.main_layout.common') no-repeat center / 1264rem 736rem;
     opacity: 0;
     position: relative;
 }
 
+.mediaMedium .App_base_24 {
+    background-size: 1738rem 1012rem;
+}
+
 .mediaLarge .App_base_24 {
-    background-image: url('R.images.gui.maps.icons.collections.main_layout.common_large');
-    background-size: 2560rem 1440rem;
+    background-size: 2133rem 1242rem;
 }
 
 .mediaExtraLarge .App_base_24 {
-    background-image: url('R.images.gui.maps.icons.collections.main_layout.common_extraLarge');
     background-size: 3160rem 1840rem;
 }
 

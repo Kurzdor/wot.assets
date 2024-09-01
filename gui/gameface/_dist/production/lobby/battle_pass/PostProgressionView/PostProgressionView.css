@@ -222,7 +222,7 @@
 }
 
 .Label_base_05 {
-    color: #8c8c7e;
+    color: #e9e2bf;
     font-size: 12rem;
     font-weight: 400;
     line-height: 1.3;
@@ -232,16 +232,18 @@
     height: 42rem;
     font-weight: 700;
     text-align: center;
+    letter-spacing: 0.2rem;
     white-space: pre-wrap;
+    opacity: 0.7;
     position: absolute;
     top: 74rem;
     right: 3rem;
     left: 3rem;
     z-index: 5;
+    transition: opacity 0.3s linear;
 }
 .mediaMedium .Label_base_05 {
     display: flex;
-    transition: color 0.3s linear;
 }
 .Label_base__big_3c {
     color: #fefeec;
@@ -251,6 +253,7 @@
     display: flex;
     height: 65rem;
     color: rgba(254, 254, 236, 0.5);
+    opacity: 1;
     top: 86rem;
     transition: color 0.3s linear;
 }
@@ -266,8 +269,12 @@
     text-shadow:
         0 0 4rem rgba(255, 127, 0, 0.25),
         0 0 15rem rgba(238, 85, 34, 0.7);
+    opacity: 1;
 }
 .Label_base__hover_51 {
+    opacity: 1;
+}
+.Label_base__hover_51.Label_base__big_3c {
     color: #e9e2bf;
 }
 .Label_base__hover_51.Label_base__gold_dc {
@@ -826,85 +833,37 @@
     height: 280rem;
 }
 
-.PointAward_locked_7c,
-.PointAward_lockedHover_80 {
+.PointAward_locked_7c {
     width: 24rem;
     height: 24rem;
-    background: no-repeat center / contain;
+    background: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_small_s') no-repeat center / contain;
+    opacity: 0.7;
     position: absolute;
     bottom: 3rem;
     z-index: 3;
     transition: opacity 0.3s linear;
 }
 
-.mediaMedium .PointAward_locked_7c,
-.mediaMedium .PointAward_lockedHover_80 {
+.mediaMedium .PointAward_locked_7c {
+    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_small_m');
     bottom: 4rem;
 }
 
-.PointAward_locked__hidden_bb,
-.PointAward_lockedHover__hidden_17 {
-    display: none;
-}
-
-.PointAward_base__big_dc .PointAward_locked_7c,
-.PointAward_base__big_dc .PointAward_lockedHover_80 {
+.PointAward_base__big_dc .PointAward_locked_7c {
     width: 32rem;
     height: 32rem;
+    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_big_s');
     bottom: 8rem;
 }
 
-.mediaMedium .PointAward_base__big_dc .PointAward_locked_7c,
-.mediaMedium .PointAward_base__big_dc .PointAward_lockedHover_80 {
+.mediaMedium .PointAward_base__big_dc .PointAward_locked_7c {
     width: 48rem;
     height: 48rem;
+    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_big_m');
     bottom: 13rem;
 }
 
-.PointAward_base__big_dc .PointAward_locked__hidden_bb,
-.PointAward_base__big_dc .PointAward_lockedHover__hidden_17 {
-    display: none;
-}
-
-.PointAward_locked_7c {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_small_s');
-    opacity: 1;
-}
-
-.mediaMedium .PointAward_locked_7c {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_small_m');
-}
-
-.PointAward_base__big_dc .PointAward_locked_7c {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_big_s');
-}
-
-.mediaMedium .PointAward_base__big_dc .PointAward_locked_7c {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lock_big_m');
-}
-
 .PointAward_base__hover_50 .PointAward_locked_7c {
-    opacity: 0;
-}
-
-.PointAward_lockedHover_80 {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_small_s');
-    opacity: 0;
-}
-
-.mediaMedium .PointAward_lockedHover_80 {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_small_m');
-}
-
-.PointAward_base__big_dc .PointAward_lockedHover_80 {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_big_s');
-}
-
-.mediaMedium .PointAward_base__big_dc .PointAward_lockedHover_80 {
-    background-image: url('R.images.gui.maps.icons.battlePass.awards_widget.lockHover_big_m');
-}
-
-.PointAward_base__hover_50 .PointAward_lockedHover_80 {
     opacity: 1;
 }
 
@@ -1648,10 +1607,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Reward_info_72 {
-    margin-top: -13rem;
     color: #e9e2bf;
     font-size: 14rem;
-    line-height: 18rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: -13rem;
     text-align: center;
     z-index: 1;
 }
@@ -1685,6 +1645,27 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .Reward_info__premiumTank_d3 {
     color: #ffdd99;
+}
+
+.Reward_title_36 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 80rem;
+    margin: -13rem -16rem 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.mediaMedium .Reward_title_36 {
+    max-width: 100rem;
+    margin-left: -10rem;
+    margin-right: -10rem;
 }
 
 .Reward_timer_d3 {
@@ -2077,105 +2058,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     opacity: 0;
 }
 
-.FormatTextWithColorTags_blackReal_3c {
-    color: #000000;
-}
-
-.FormatTextWithColorTags_whiteReal_8a {
-    color: #ffffff;
-}
-
-.FormatTextWithColorTags_white_16 {
-    color: #f2f2f7;
-}
-
-.FormatTextWithColorTags_whiteOrange_18 {
-    color: #fefeec;
-}
-
-.FormatTextWithColorTags_whiteSpanish_10 {
-    color: #e9e2bf;
-}
-
-.FormatTextWithColorTags_par_ca {
-    color: #8c8c7e;
-}
-
-.FormatTextWithColorTags_parSecondary_8d {
-    color: #595950;
-}
-
-.FormatTextWithColorTags_parTertiary_a3 {
-    color: #37362e;
-}
-
-.FormatTextWithColorTags_red_60 {
-    color: #ff2717;
-}
-
-.FormatTextWithColorTags_redDark_03 {
-    color: #b70000;
-}
-
-.FormatTextWithColorTags_yellow_ad {
-    color: #feab34;
-}
-
-.FormatTextWithColorTags_orange_e4 {
-    color: #ee7000;
-}
-
-.FormatTextWithColorTags_cream_cd {
-    color: #ffdd99;
-}
-
-.FormatTextWithColorTags_brown_c8 {
-    color: #cbac77;
-}
-
-.FormatTextWithColorTags_greenBright_f0 {
-    color: #80d43a;
-}
-
-.FormatTextWithColorTags_green_c5 {
-    color: #7ab300;
-}
-
-.FormatTextWithColorTags_greenDark_af {
-    color: #497212;
-}
-
-.FormatTextWithColorTags_blueBooster_ac {
-    color: #ccffff;
-}
-
-.FormatTextWithColorTags_blueTeamkiller_6f {
-    color: #09e2ff;
-}
-
-.FormatTextWithColorTags_cred_4e {
-    color: #ced9d9;
-}
-
-.FormatTextWithColorTags_gold_90 {
-    color: #ffc363;
-}
-
-.FormatTextWithColorTags_bond_71 {
-    color: #c9c9b6;
-}
-
-.FormatTextWithColorTags_prom_dd {
-    color: #a29b70;
-}
-
-/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
-
-.FormatTextWithColorTags_parNoWidth_5a {
-    width: 0;
-    color: #8c8c7e;
-}
-
 .ChapterBackground_base_fa {
     background: no-repeat center / cover;
     opacity: 0;
@@ -2196,50 +2078,69 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .GroupTitle_base_e8 {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 32rem;
     overflow: hidden;
     position: relative;
 }
 
-.GroupTitle_text_b7 {
-    color: #c9c9b6;
-}
-
-.GroupTitle_divider_19 {
-    flex: 1;
-    height: 1rem;
-}
-
-.GroupTitle_divider__left_d2 {
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.3), transparent);
-}
-
-.GroupTitle_divider__right_24 {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), transparent);
-}
-
-.GroupTitle_inner_f2 {
+.GroupTitle_title_0c {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0 20rem;
-    font-size: 16rem;
-    transform: translateY(-2rem);
+    margin-bottom: 10rem;
+}
+
+.GroupTitle_iconShadow_81 {
+    width: 100rem;
+    height: 60rem;
+    background: no-repeat center / cover;
+    position: absolute;
+    top: -12rem;
+    left: 0;
+}
+
+.GroupTitle_base__now_fa .GroupTitle_iconShadow_81 {
+    background-image: url('R.images.gui.maps.icons.battlePass.buy.rewards.checkedShadow');
+}
+
+.GroupTitle_base__future_42 .GroupTitle_iconShadow_81 {
+    background-image: url('R.images.gui.maps.icons.battlePass.buy.rewards.blockedShadow');
 }
 
 .GroupTitle_icon_62 {
-    width: 24rem;
-    height: 24rem;
-    background: no-repeat center / contain;
+    width: 36rem;
+    height: 36rem;
+    margin-right: 4rem;
+    background: no-repeat center / cover;
+}
+
+.mediaSmall .GroupTitle_icon_62 {
+    margin-top: 6rem;
 }
 
 .GroupTitle_base__now_fa .GroupTitle_icon_62 {
-    background-image: url('R.images.gui.maps.icons.battlePass.progression.icon_now_rewards_title');
+    background-image: url('R.images.gui.maps.icons.battlePass.buy.rewards.checked');
 }
 
 .GroupTitle_base__future_42 .GroupTitle_icon_62 {
-    background-image: url('R.images.gui.maps.icons.battlePass.progression.icon_future_rewards_title');
+    background-image: url('R.images.gui.maps.icons.battlePass.buy.rewards.blocked');
+}
+
+.GroupTitle_titleText_90 {
+    color: #f2f2f7;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaSmall .GroupTitle_titleText_90 {
+    font-size: 36rem;
+}
+
+.GroupTitle_descriptionText_bc {
+    margin: -2rem 0 0 5rem;
+    color: #c9c9b6;
+    font-size: 16rem;
 }
 
 .GroupTitle_steps_8d {
@@ -2249,9 +2150,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .GroupRewards_base_70 {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .GroupRewards_item_af {
@@ -2262,7 +2162,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .RewardsBlock_base_0e {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.RewardsBlock_base_0e:nth-child(2) {
+    margin-top: 50rem;
+}
+
+.mediaMedium .RewardsBlock_base_0e:nth-child(2) {
+    margin-top: 70rem;
 }
 .RewardsBlock_groupTitle_2f {
     width: 100%;
@@ -2273,7 +2181,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-bottom: 15rem;
 }
 .RewardsBlock_groupRewards_38 {
-    margin-bottom: 10rem;
+    margin: 0 0 10rem -20rem;
+    padding-left: 32rem;
 }
 .mediaMedium .RewardsBlock_groupRewards_38 {
     margin-bottom: 15rem;
@@ -2535,37 +2444,31 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .Content_base_94 {
     display: flex;
-    width: 960rem;
-    max-height: 408rem;
-    margin-top: 80rem;
-    position: relative;
+    justify-content: center;
+    width: 850rem;
+    margin: 90rem 0 70rem;
+}
+.mediaSmall .Content_base_94 {
+    width: 940rem;
 }
 .mediaMedium .Content_base_94 {
-    width: 1250rem;
-    max-height: 510rem;
+    width: 1260rem;
 }
 .mediaLarge .Content_base_94 {
-    width: 1300rem;
-    max-height: 610rem;
+    width: 1280rem;
 }
 
 .Content_mainContent_d4 {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    padding: 0 50rem;
-}
-
-.mediaSmall .Content_mainContent_d4 {
-    padding: 0 60rem;
-}
-
-.mediaMedium .Content_mainContent_d4 {
+    justify-content: center;
+    flex-grow: 1;
     padding: 0 20rem;
 }
 
-.mediaLarge .Content_mainContent_d4 {
-    padding: 0 45rem;
+.Content_base__noScroll_d3 .Content_mainContent_d4 {
+    justify-content: center;
+    height: 100%;
 }
 
 /* colors*/
@@ -2685,64 +2588,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 75rem;
     left: 35rem;
     z-index: 1;
-}
-
-.RewardsViewContent_header_46 {
-    text-align: center;
-    position: absolute;
-    top: 70rem;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.RewardsViewContent_title_8d {
-    color: #f2f2f7;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 7rem;
-}
-
-.mediaLarge .RewardsViewContent_title_8d {
-    font-size: 24rem;
-}
-
-.RewardsViewContent_subtitle_8d {
-    color: #f2f2f7;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-top: 6rem;
-}
-
-.mediaLarge .RewardsViewContent_subtitle_8d {
-    margin-top: 12rem;
-    font-size: 24rem;
-}
-
-.RewardsViewContent_description_2d {
-    color: #f2f2f7;
-    font-size: 28rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.mediaMedium .RewardsViewContent_description_2d {
-    font-size: 36rem;
-}
-
-.mediaLarge .RewardsViewContent_description_2d {
-    font-size: 56rem;
-}
-
-.RewardsViewContent_footerButton_06 {
-    width: 140rem;
-    margin-top: 25rem;
-}
-
-.mediaMedium .RewardsViewContent_footerButton_06 {
-    width: 160rem;
-    margin-top: 42rem;
 }
 
 .Rewards_full_21 {

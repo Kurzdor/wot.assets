@@ -3,7 +3,6 @@ body {
     overflow: hidden;
 }
 
-/* delay should be set always separately only for appearance effect, not hiding */
 /* should be percentage of screen width */
 .App_base_e9 {
     width: 100%;

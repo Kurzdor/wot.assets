@@ -341,10 +341,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Reward_info_72 {
-    margin-top: -13rem;
     color: #e9e2bf;
     font-size: 14rem;
-    line-height: 18rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: -13rem;
     text-align: center;
     z-index: 1;
 }
@@ -378,6 +379,27 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .Reward_info__premiumTank_d3 {
     color: #ffdd99;
+}
+
+.Reward_title_36 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 80rem;
+    margin: -13rem -16rem 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.mediaMedium .Reward_title_36 {
+    max-width: 100rem;
+    margin-left: -10rem;
+    margin-right: -10rem;
 }
 
 .Reward_timer_d3 {
@@ -668,58 +690,72 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
-    height: 120rem;
-    margin-right: -50rem;
+    align-items: center;
+    height: 64rem;
     position: relative;
+}
+.mediaSmall .SubscriptionAwardViewApp_unlockedFeatures_5a {
+    height: 110rem;
+}
+.mediaMedium .SubscriptionAwardViewApp_unlockedFeatures_5a {
+    height: 123rem;
 }
 .SubscriptionAwardViewApp_unlockedFeatures_label_80 {
     margin-bottom: 10rem;
     color: #e9e2bf;
-    font-size: 14rem;
-    font-weight: 700;
-    line-height: 1.15;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
     animation: SubscriptionAwardViewApp_fadeInUp_b6 400ms ease-out 800ms both;
-}
-.mediaMedium .SubscriptionAwardViewApp_unlockedFeatures_label_80 {
-    color: #e9e2bf;
-    font-size: 15rem;
-    font-weight: 700;
-    line-height: 1.15;
 }
 .SubscriptionAwardViewApp_unlockedFeature_a7 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60rem;
+    min-width: 64rem;
     height: auto;
-    margin-right: 50rem;
+    margin-right: 15rem;
+    padding-top: 10rem;
     overflow: visible;
     position: relative;
 }
+.mediaSmall .SubscriptionAwardViewApp_unlockedFeature_a7 {
+    min-width: 100rem;
+    margin-right: 5rem;
+}
+.mediaMedium .SubscriptionAwardViewApp_unlockedFeature_a7 {
+    min-width: 110rem;
+    margin-right: 10rem;
+}
 .SubscriptionAwardViewApp_unlockedFeature_label_ad {
+    display: none;
     width: 100rem;
-    margin-top: 0rem;
+    padding-top: 5rem;
     text-align: center;
     overflow-wrap: break-word;
-    color: #fefeec;
+}
+.mediaSmall .SubscriptionAwardViewApp_unlockedFeature_label_ad {
+    display: block;
+    color: #e9e2bf;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 .mediaMedium .SubscriptionAwardViewApp_unlockedFeature_label_ad {
-    color: #fefeec;
+    display: block;
+    color: #e9e2bf;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
 }
 .SubscriptionAwardViewApp_unlockedFeature_icon_9b {
+    width: 64rem;
+    height: 64rem;
+}
+.mediaMedium .SubscriptionAwardViewApp_unlockedFeature_icon_9b {
     width: 80rem;
     height: 80rem;
-}
-.mediaSmall .SubscriptionAwardViewApp_unlockedFeature_a7 {
-    width: 80rem;
 }
 .SubscriptionAwardViewApp_controls_06 {
     display: flex;
@@ -733,7 +769,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: 50rem;
 }
 .SubscriptionAwardViewApp_controls_button_e0 {
-    width: 180rem;
+    width: 160rem;
     margin: 0rem 10rem;
 }
 @keyframes SubscriptionAwardViewApp_fadeInUp_b6 {

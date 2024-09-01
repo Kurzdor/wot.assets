@@ -68,56 +68,6 @@
     align-items: center;
 }
 
-.TooltipAdvancedFooter_base_d6 {
-    display: flex;
-    padding: 12rem 20rem 20rem;
-}
-
-.TooltipAdvancedFooter_altBtn_e0 {
-    width: 29rem;
-    height: 26rem;
-    margin-right: 8rem;
-    background: url('R.images.gui.maps.icons.tooltip.tooltip_alt_btn') no-repeat center / cover;
-}
-
-.SkillsSection_base_d2 {
-    padding: 15rem 20rem 18rem;
-}
-
-.SkillsSection_skillsList_02 {
-    margin-top: 6rem;
-}
-
-.SkillsSection_skill_8c {
-    display: flex;
-    padding: 0 12rem;
-}
-
-.SkillsSection_skill_8c + .SkillsSection_skill_8c {
-    margin-top: 6rem;
-}
-
-.SkillsSection_skillValue_42 {
-    display: flex;
-    justify-content: flex-end;
-    min-width: 45rem;
-    margin-right: 8rem;
-}
-
-.SkillsSection_skillValue__positive_24 {
-    color: #80d43a;
-}
-
-.SkillsSection_skillValue__neutral_97 {
-    color: #feab34;
-}
-
-.SkillsSection_skillText_7d {
-    display: flex;
-    flex: 1;
-    color: #e9e2bf;
-}
-
 .ExtendedText_base_71 {
     display: flex;
     line-height: 1.2;
@@ -158,6 +108,34 @@
     top: 0;
     right: 0;
     pointer-events: none;
+}
+
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
 }
 
 .colors_blackReal_fc {
@@ -268,8 +246,20 @@
 }
 
 .renderers_word_f3 {
-    white-space: nowrap;
+    white-space: pre;
     overflow-wrap: normal;
+}
+
+.TooltipAdvancedFooter_base_d6 {
+    display: flex;
+    padding: 12rem 20rem 20rem;
+}
+
+.TooltipAdvancedFooter_altBtn_e0 {
+    width: 29rem;
+    height: 26rem;
+    margin-right: 8rem;
+    background: url('R.images.gui.maps.icons.tooltip.tooltip_alt_btn') no-repeat center / cover;
 }
 
 .EfficiencyInfo_base_94 {
@@ -298,35 +288,24 @@
     position: relative;
 }
 
-.TypeInfo_base_9e {
-    display: flex;
-    color: #595950;
-}
-
-.TypeInfo_asterisk_97 {
-    margin-top: 1rem;
-}
-
-.TypeInfo_conditionalText_93 {
-    flex: 0;
-}
-
-.TypeInfo_commonIcon_48 {
-    width: 35rem;
-    height: 26rem;
-    margin: -3rem 0 0 -17rem;
-    background: url('R.images.gui.maps.icons.tankmen.crew.crewOperations') no-repeat center / cover;
-}
-
-.TypeInfo_commonText_53 {
-    margin-left: -4rem;
-}
-
 .ExtraInfo_base_55 {
     display: flex;
     flex-direction: column;
     padding: 8rem 20rem 12rem;
     color: #595950;
+}
+
+.ExtraInfo_situationalBlock_f2 {
+    display: flex;
+    color: #595950;
+}
+
+.ExtraInfo_asterisk_7b {
+    margin-top: 1rem;
+}
+
+.ExtraInfo_situationalText_86 {
+    flex: 0;
 }
 
 .ExtraInfo_zeroPerkBlock_01 {
@@ -359,6 +338,44 @@
     color: #7ab300;
 }
 
+.SkillsSection_base_2b {
+    padding: 15rem 20rem 18rem;
+}
+
+.SkillsSection_skillsList_f3 {
+    margin-top: 6rem;
+}
+
+.SkillsSection_skill_84 {
+    display: flex;
+    padding: 0 12rem;
+}
+
+.SkillsSection_skill_84 + .SkillsSection_skill_84 {
+    margin-top: 6rem;
+}
+
+.SkillsSection_skillValue_fe {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 45rem;
+    margin-right: 8rem;
+}
+
+.SkillsSection_skillValue__positive_cc {
+    color: #80d43a;
+}
+
+.SkillsSection_skillValue__neutral_af {
+    color: #feab34;
+}
+
+.SkillsSection_skillText_7a {
+    display: flex;
+    flex: 1;
+    color: #e9e2bf;
+}
+
 .MainContentSection_description_ac {
     padding: 20rem;
     background: url('R.images.gui.maps.icons.tooltip.tooltip_accent_bg') no-repeat center / cover;
@@ -380,7 +397,7 @@
     left: 0;
 }
 
-.CrewPerksApp_base_b3 {
+.CrewPerksApp_base_9d {
     color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;

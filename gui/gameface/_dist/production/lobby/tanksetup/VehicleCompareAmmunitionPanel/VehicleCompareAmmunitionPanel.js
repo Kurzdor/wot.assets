@@ -1842,12 +1842,6 @@
                             (e.DropExit = 'exit');
                     })(a || (a = {}));
             },
-            6063: (e, u, t) => {
-                t.d(u, { C3: () => n, CF: () => a, L0: () => i });
-                const n = 500,
-                    a = 'notUsableSection',
-                    i = 'FunRandomQuickFireGuns';
-            },
             4301: (e, u, t) => {
                 t.d(u, { iN: () => i, j2: () => a, qG: () => s, s$: () => r });
                 var n = t(4231);
@@ -2007,15 +2001,14 @@
                     })(n || (n = {}));
             },
             3220: (e, u, t) => {
-                t.d(u, { k: () => _, t: () => d });
+                t.d(u, { k: () => c, t: () => _ });
                 var n = t(3215),
                     a = t(9480),
                     i = t(3946),
                     s = t(4598),
-                    r = t(6063),
-                    o = t(4301),
-                    l = t(7626);
-                const c = (0, n.q)()(
+                    r = t(4301),
+                    o = t(7626);
+                const l = (0, n.q)()(
                         ({ observableModel: e }) => {
                             const u = {
                                     root: e.object(),
@@ -2025,9 +2018,8 @@
                                     sectionGroups: e.array('ammunitionPanel.sectionGroups'),
                                     lastSlotAction: e.object('lastSlotAction'),
                                 },
-                                t = (0, i.Om)(() => u.root.get().modeName === r.L0),
-                                n = (0, i.Om)(() => u.sectionGroups.get().length),
-                                c = (0, i.Om)(
+                                t = (0, i.Om)(() => u.sectionGroups.get().length),
+                                n = (0, i.Om)(
                                     (e) => {
                                         const t = a.U2(u.sectionGroups.get(), e);
                                         if (!t) throw Error(`No ammunition section group found with index: ${e}`);
@@ -2044,51 +2036,45 @@
                                     },
                                     { equals: s.jv },
                                 ),
-                                _ = (0, i.Om)((e) => {
-                                    if (0 === E(e)) return !0;
-                                    const u = c(e),
-                                        t = a.u4(u.sections, (e, u) => e + u.slots.length, 0);
-                                    return 0 === t;
-                                }),
-                                d = (0, i.Om)(() => a.u4(u.sectionGroups.get(), (e, u) => e + u.sections.length, 0)),
-                                E = (0, i.Om)((e) => c(e).sections.length),
-                                m = (0, i.Om)(
+                                l = (0, i.Om)(() => a.u4(u.sectionGroups.get(), (e, u) => e + u.sections.length, 0)),
+                                c = (0, i.Om)((e) => n(e).sections.length),
+                                _ = (0, i.Om)(
                                     (e, u) => {
-                                        const t = c(e),
-                                            n = a.U2(t.sections, u);
-                                        if (!n) throw Error(`No ammunition section found with index: ${u}`);
-                                        return n;
+                                        const t = n(e),
+                                            i = a.U2(t.sections, u);
+                                        if (!i) throw Error(`No ammunition section found with index: ${u}`);
+                                        return i;
                                     },
                                     { equals: s.jv },
                                 ),
-                                A = (0, i.Om)((e, u) => m(e, u).slots.length),
-                                F = (0, i.Om)((e, u) => {
-                                    const t = m(e, u).slots;
-                                    return a.hX(t, (e) => Boolean(e) && !(0, o.j2)(e)).length;
+                                d = (0, i.Om)((e, u) => _(e, u).slots.length),
+                                E = (0, i.Om)((e, u) => {
+                                    const t = _(e, u).slots;
+                                    return a.hX(t, (e) => Boolean(e) && !(0, r.j2)(e)).length;
                                 }),
-                                b = (0, i.Om)((e, u) => {
-                                    const t = m(e, u).slots;
+                                m = (0, i.Om)((e, u) => {
+                                    const t = _(e, u).slots;
                                     return a.G(t, (e) => e.intCD > 0);
                                 }),
-                                D = (0, i.Om)(
+                                A = (0, i.Om)(
                                     (e, u, t) => {
-                                        const n = m(e, u),
+                                        const n = _(e, u),
                                             i = a.U2(n.slots, t);
                                         if (!i) throw Error(`No ammunition slot found with index: ${t}`);
                                         return i;
                                     },
                                     { equals: s.jv },
                                 ),
-                                g = (0, i.Om)(
+                                F = (0, i.Om)(
                                     (e) => {
-                                        const u = c(e).sections;
-                                        return a.v(u, (e) => (0, l.YR)(e.type));
+                                        const u = n(e).sections;
+                                        return a.v(u, (e) => (0, o.YR)(e.type));
                                     },
                                     { equals: s.jv },
                                 ),
-                                p = (0, i.Om)(
+                                b = (0, i.Om)(
                                     (e, u, t) => {
-                                        const n = D(e, u, t);
+                                        const n = A(e, u, t);
                                         if (!n) throw Error(`No ammunition slot found with index: ${t}`);
                                         if (!n.specializations) throw Error('Selected slot have no specializations');
                                         return Object.assign({}, n.specializations, {
@@ -2101,11 +2087,10 @@
                                 );
                             return Object.assign({}, u, {
                                 computes: {
-                                    groups: { length: n, group: c, isGroupEmpty: _ },
-                                    sections: { allSectionsLength: d, length: E, section: m, IDs: g },
-                                    slots: { length: A, filteredLength: F, slot: D, existFilled: b },
-                                    specializations: p,
-                                    isQFGMode: t,
+                                    groups: { length: t, group: n },
+                                    sections: { allSectionsLength: l, length: c, section: _, IDs: F },
+                                    slots: { length: d, filteredLength: E, slot: A, existFilled: m },
+                                    specializations: b,
                                 },
                             });
                         },
@@ -2134,8 +2119,8 @@
                             escKeyDown: e.createCallbackNoArgs('onEscKeyDown'),
                         }),
                     ),
-                    _ = c[0],
-                    d = c[1];
+                    c = l[0],
+                    _ = l[1];
             },
             1922: (e, u, t) => {
                 t.d(u, { cJ: () => n });
@@ -2150,7 +2135,7 @@
                         (e.Huge = 'huge');
                 })(n || (n = {}));
             },
-            8550: (e, u, t) => {
+            7386: (e, u, t) => {
                 var n = t(6179),
                     a = t.n(n),
                     i = t(493),
@@ -2365,8 +2350,8 @@
                         for (let n = 0; n < e; n++) t.push(u(n));
                         return t;
                     };
-                var G = t(2056);
-                const H = ['children', 'body', 'header', 'note', 'alert', 'args'];
+                var H = t(2056);
+                const G = ['children', 'body', 'header', 'note', 'alert', 'args'];
                 function z() {
                     return (
                         (z =
@@ -2397,14 +2382,14 @@
                                     i = Object.keys(e);
                                 for (n = 0; n < i.length; n++) (t = i[n]), u.indexOf(t) >= 0 || (a[t] = e[t]);
                                 return a;
-                            })(e, H);
+                            })(e, G);
                         const c = (0, n.useMemo)(() => {
                             const e = Object.assign({}, o, { body: t, header: i, note: s, alert: r });
                             for (const u in e) void 0 === e[u] && delete e[u];
                             return e;
                         }, [r, t, i, s, o]);
                         return a().createElement(
-                            G.u,
+                            H.u,
                             z(
                                 {
                                     contentId:
@@ -2694,9 +2679,9 @@
                                 ),
                             )
                         );
-                    });
-                var ye = t(6063),
-                    Ie = t(7626);
+                    }),
+                    ye = 'notUsableSection';
+                var Ie = t(7626);
                 const ke = 'Section_base_8a',
                     Te = 'Section_label_73',
                     Oe = 'Section_counter_8a',
@@ -2715,7 +2700,7 @@
                 !(function (e) {
                     (e.Click = 'click'), (e.KeyDown = 'keydown'), (e.Displayed = 'displayed'), (e.Viewed = 'viewed');
                 })($e || ($e = {}));
-                let je, Ge, He;
+                let je, He, Ge;
                 !(function (e) {
                     (e.HangarView = 'hangar'),
                         (e.SetupView = 'setup_view'),
@@ -2740,10 +2725,10 @@
                             (e.AwardsOkButton = 'awards_ok'),
                             (e.AwardsView = 'awards_view'),
                             (e.RewardsSelectionView = 'rewards_selection_view');
-                    })(Ge || (Ge = {})),
+                    })(He || (He = {})),
                     (function (e) {
                         (e.Click = 'click'), (e.Close = 'close');
-                    })(He || (He = {}));
+                    })(Ge || (Ge = {}));
                 const ze = 'metrics',
                     We = () => Date.now(),
                     Ue = ({ partnerID: e, item: u, parentScreen: t, itemState: n, info: a }) => ({
@@ -2859,11 +2844,11 @@
                                         [r, e, u, t, a],
                                     ),
                                 ];
-                            })(Ge.SkillOrderTooltip, je.SetupView),
+                            })(He.SkillOrderTooltip, je.SetupView),
                             i = t[0],
                             s = t[1];
                         return a().createElement(
-                            G.u,
+                            H.u,
                             {
                                 contentId: R.views.frontline.lobby.tooltips.SkillOrderTooltip('resId'),
                                 onMouseEnter: i,
@@ -3323,8 +3308,8 @@
                         u,
                     );
                 };
-                var Gu = t(1396),
-                    Hu = t(5918);
+                var Hu = t(1396),
+                    Gu = t(5918);
                 const zu = (0, c.Pi)(
                         ({
                             intCD: e,
@@ -3345,7 +3330,7 @@
                                 b = (0, n.useState)(!0),
                                 D = b[0],
                                 g = b[1],
-                                p = (0, Gu.K)();
+                                p = (0, Hu.K)();
                             (0, n.useEffect)(() => {
                                 g(!1), p.run(() => g(!0), 100);
                             }, [F]);
@@ -3364,7 +3349,7 @@
                             );
                             return D
                                 ? a().createElement(
-                                      Hu.y,
+                                      Gu.y,
                                       {
                                           uniqueKey: e,
                                           isEmpty: c,
@@ -3409,38 +3394,36 @@
                             groupIndex: S,
                             sectionIndex: w,
                         }) => {
-                            const x = (0, r.t)().model,
-                                y = x.computes.slots.slot(S, w, u),
-                                I = y.imageSource,
-                                k = y.isInstalled,
-                                T = y.itemInstalledSetupIdx,
-                                O = y.isMountedMoreThanOne,
-                                R = y.overlayType,
-                                L = y.keyName,
-                                N = y.categoryImgSource,
-                                M = y.withAttention,
-                                P = y.id,
-                                $ = y.intCD,
-                                j = E === pe.w.Setup,
-                                G = !(0, Q.s$)(E),
+                            const x = (0, r.t)().model.computes.slots.slot(S, w, u),
+                                y = x.imageSource,
+                                I = x.isInstalled,
+                                k = x.itemInstalledSetupIdx,
+                                T = x.isMountedMoreThanOne,
+                                O = x.overlayType,
+                                R = x.keyName,
+                                L = x.categoryImgSource,
+                                N = x.withAttention,
+                                M = x.id,
+                                P = x.intCD,
+                                $ = E === pe.w.Setup,
+                                j = !(0, Q.s$)(E),
                                 H = !(0, Q.iN)(E),
-                                z = E === pe.w.Compare,
-                                W = j && o && G,
-                                U = (0, n.useRef)(!1),
-                                q = (0, n.useRef)(null),
-                                V = -1 === $,
-                                X = x.computes.isQFGMode();
+                                G = E === pe.w.Compare,
+                                z = $ && o && j,
+                                W = (0, n.useRef)(!1),
+                                U = (0, n.useRef)(null),
+                                q = -1 === P;
                             (0, n.useEffect)(() => {
-                                if (!U.current && o && i)
+                                if (!W.current && o && i)
                                     return b(() => {
-                                        l && l(q, e, P), (U.current = !0);
+                                        l && l(U, e, M), (W.current = !0);
                                     });
-                                U.current = !0;
-                            }, [P, o, i, l, e]),
+                                W.current = !0;
+                            }, [M, o, i, l, e]),
                                 (0, n.useEffect)(() => {
-                                    i && !X && _(q);
-                                }, [i, _, X]);
-                            const Z = ((e) => {
+                                    i && _(U);
+                                }, [i, _]);
+                            const V = ((e) => {
                                     const u = (0, n.useRef)(-1),
                                         t = (0, n.useCallback)(
                                             (t) => {
@@ -3455,65 +3438,65 @@
                                             [e],
                                         );
                                     return (0, n.useEffect)(() => () => clearTimeout(u.current), []), t;
-                                })((0, n.useCallback)(() => (!i && G && !s && c(e, P), ye.C3), [P, G, i, s, c, e])),
-                                K = (0, n.useCallback)(() => {
-                                    m || X || Z('');
-                                }, [Z, m, X]),
-                                Y = (0, n.useCallback)(() => {
+                                })((0, n.useCallback)(() => (!i && j && !s && c(e, M), 500), [M, j, i, s, c, e])),
+                                X = (0, n.useCallback)(() => {
+                                    m || V('');
+                                }, [V, m]),
+                                Z = (0, n.useCallback)(() => {
                                     H && !i && !p && !m && Ke.$.playHighlight();
                                 }, [i, p, m, H]);
                             (0, n.useEffect)(() => {
                                 B && Ke.$.playHighlight();
                             }, [B]);
-                            const J = (0, n.useCallback)(() => {
-                                    null == d || d(P, e);
-                                }, [P, d, e]),
-                                ee = j && !k,
-                                ue = Boolean(D && B === D),
-                                te = D && (W || z),
-                                ne = `${e}-slot-${P}`,
-                                ae = N && N.length > 0,
-                                ie = ae ? { backgroundImage: `url(${N})` } : {},
-                                se = {
+                            const K = (0, n.useCallback)(() => {
+                                    null == d || d(M, e);
+                                }, [M, d, e]),
+                                Y = $ && !I,
+                                J = Boolean(D && B === D),
+                                ee = D && (z || G),
+                                ue = `${e}-slot-${M}`,
+                                te = L && L.length > 0,
+                                ne = te ? { backgroundImage: `url(${L})` } : {},
+                                ae = {
                                     id: D,
                                     containerRef: g,
-                                    isEnabled: !V,
-                                    onClick: K,
+                                    isEnabled: !q,
+                                    onClick: X,
                                     isUpdateAvailable: Boolean(p),
                                     handleAction: C,
                                     forceCenterX: h,
                                     blockOnGrabIds: f,
                                 },
-                                re = {
-                                    isEmpty: V,
-                                    intCD: $,
+                                ie = {
+                                    isEmpty: q,
+                                    intCD: P,
                                     slotType: e,
                                     slotIndex: u,
-                                    imageSource: I,
+                                    imageSource: y,
                                     isDisabled: m,
-                                    isInstalled: k,
-                                    id: P,
-                                    itemInstalledSetupIdx: T,
-                                    isMountedMoreThanOne: O,
+                                    isInstalled: I,
+                                    id: M,
+                                    itemInstalledSetupIdx: k,
+                                    isMountedMoreThanOne: T,
                                     contextMenuDisabled: v,
                                     isSetupSwitching: s,
                                 };
                             return a().createElement(
                                 'div',
-                                { className: Iu, onMouseEnter: Y, id: ne },
-                                (o || z) &&
-                                    !k &&
+                                { className: Iu, onMouseEnter: Z, id: ue },
+                                (o || G) &&
+                                    !I &&
                                     a().createElement(
                                         'div',
                                         { className: Tu },
-                                        a().createElement(yu, { id: `close-${ne}`, show: !p, onClick: J }),
+                                        a().createElement(yu, { id: `close-${ue}`, show: !p, onClick: K }),
                                     ),
                                 a().createElement(
                                     Bu,
-                                    { slotType: e, slotId: P, isEnabled: !p && (0, Q.qG)(E) },
+                                    { slotType: e, slotId: M, isEnabled: !p && (0, Q.qG)(E) },
                                     a().createElement(
                                         'div',
-                                        { ref: q },
+                                        { ref: U },
                                         a().createElement(
                                             eu.W,
                                             {
@@ -3523,38 +3506,37 @@
                                                 isBorderActive: Boolean(A),
                                                 panelType: E,
                                                 isDisabled: m,
-                                                isPotentialDrop: ue,
-                                                withBackground: !X,
-                                                onClick: te ? void 0 : K,
+                                                isPotentialDrop: J,
+                                                onClick: ee ? void 0 : X,
                                             },
-                                            G &&
+                                            j &&
                                                 a().createElement(
                                                     'div',
                                                     { className: ku },
-                                                    a().createElement(Cu, { text: L, show: Boolean(o), panelType: E }),
+                                                    a().createElement(Cu, { text: R, show: Boolean(o), panelType: E }),
                                                 ),
                                             a().createElement(
                                                 Qe.J,
-                                                { when: Boolean(te), wrapper: Fu, withProps: se },
+                                                { when: Boolean(ee), wrapper: Fu, withProps: ae },
                                                 a().createElement(
                                                     Qe.J,
-                                                    { when: G, wrapper: zu, withProps: re },
+                                                    { when: j, wrapper: zu, withProps: ie },
                                                     a().createElement(uu.c, {
-                                                        imageSource: I,
+                                                        imageSource: y,
                                                         isIncompatible: F,
-                                                        overlayType: R,
+                                                        overlayType: O,
                                                         level: t,
-                                                        isTemporary: ee,
-                                                        withAttention: M,
+                                                        isTemporary: Y,
+                                                        withAttention: N,
                                                     }),
                                                 ),
                                             ),
-                                            ae &&
+                                            te &&
                                                 a().createElement(
                                                     a().Fragment,
                                                     null,
                                                     a().createElement('span', { className: Ru }),
-                                                    a().createElement('span', { className: Lu, style: ie }),
+                                                    a().createElement('span', { className: Lu, style: ne }),
                                                 ),
                                             m && a().createElement('div', { className: Ou }),
                                         ),
@@ -3807,8 +3789,7 @@
                             C = p.selectedSection,
                             h = p.selectedSlot,
                             B = p.syncInitiator,
-                            f = b.computes.isQFGMode(),
-                            v = (0, n.useCallback)(
+                            f = (0, n.useCallback)(
                                 (e, u) => {
                                     D.dragDropSwap({
                                         sectionType: i,
@@ -3818,39 +3799,39 @@
                                 },
                                 [D, i],
                             ),
-                            S = C === i,
-                            w = i === ee.YN,
-                            x = S ? h : -1,
-                            y = `${i}-${g}slots`,
-                            I = (0, Ie.UW)({
-                                baseId: y,
+                            v = C === i,
+                            S = i === ee.YN,
+                            w = v ? h : -1,
+                            x = `${i}-${g}slots`,
+                            y = (0, Ie.UW)({
+                                baseId: x,
                                 slotsLength: g,
-                                handleSwap: v,
+                                handleSwap: f,
                                 setIsExitBlocked: _,
                                 syncInitiator: B,
                             }),
-                            k = I.handleGrabberAction,
-                            T = I.dragState,
-                            O = I.getForceCenterX;
+                            I = y.handleGrabberAction,
+                            k = y.dragState,
+                            T = y.getForceCenterX;
                         (0, n.useEffect)(() => {
-                            S && -1 !== x && m.current && s(m, C, x);
-                        }, [s, S, C, x]);
-                        const R = (e, u) => {
-                                if ((o || f || Ke.$.playClick(), 'number' != typeof u))
+                            v && -1 !== w && m.current && s(m, C, w);
+                        }, [s, v, C, w]);
+                        const O = (e, u) => {
+                                if ((o || Ke.$.playClick(), 'number' != typeof u))
                                     return console.warn('selectedSlot is not a number');
                                 D.sectionSelect({ selectedSlot: u, selectedSection: e });
                             },
-                            L = (e) => {
+                            R = (e) => {
                                 m.current = e ? e.current : null;
                             },
-                            N = (e, u) => {
+                            L = (e, u) => {
                                 D.slotClear({ slotId: e, sectionType: u });
                             };
                         return a().createElement(
                             'div',
-                            { id: y, ref: A, className: d()(st, i) },
+                            { id: x, ref: A, className: d()(st, i) },
                             j(g, (e) => {
-                                const r = !w && g > 1 ? `${y}-${e}` : '';
+                                const r = !S && g > 1 ? `${x}-${e}` : '';
                                 return a().createElement(
                                     n.Fragment,
                                     { key: `slot ${u}-${t}-${e}` },
@@ -3863,20 +3844,20 @@
                                                 sectionIndex: t,
                                                 slotIndex: e,
                                                 sectionType: i,
-                                                isSectionSelected: S,
+                                                isSectionSelected: v,
                                                 isDisabled: o,
-                                                contextMenuDisabled: w,
+                                                contextMenuDisabled: S,
                                                 slotType: i,
                                                 onActiveSlotChanged: s,
-                                                onSlotSelected: R,
-                                                onActiveSlotRefChanged: L,
-                                                onSlotClear: N,
+                                                onSlotSelected: O,
+                                                onActiveSlotRefChanged: R,
+                                                onSlotClear: L,
                                                 grabberId: r,
                                                 containerRef: A,
-                                                forceLeftUpdate: O(r),
-                                                activeDragId: T.activeDragId,
-                                                handleGrabberAction: k,
-                                                potentialDropId: T.potentialDropId,
+                                                forceLeftUpdate: T(r),
+                                                activeDragId: k.activeDragId,
+                                                handleGrabberAction: I,
+                                                potentialDropId: k.potentialDropId,
                                                 blockOnGrabIds: l,
                                                 isSetupSwitching: c,
                                                 isChangeSetupIndex: c,
@@ -3992,7 +3973,7 @@
                     return a().createElement(
                         'div',
                         {
-                            id: E ? ye.CF : S,
+                            id: E ? ye : S,
                             ref: b,
                             className: d()(
                                 ke,
@@ -4138,7 +4119,7 @@
                                             { when: f, wrapper: Fu, withProps: k },
                                             a().createElement(
                                                 Qe.J,
-                                                { when: f, wrapper: Hu.y, withProps: T },
+                                                { when: f, wrapper: Gu.y, withProps: T },
                                                 a().createElement('div', { className: mt.image, style: v }),
                                                 !r && a().createElement(Et.X, { count: s }),
                                                 r && a().createElement('div', { className: mt.infinity }),
@@ -4234,14 +4215,12 @@
                             A = (0, r.t)().model,
                             F = A.computes.slots.length(u, t),
                             b = A.computes.slots.slot(u, t, n),
-                            D = !i && F > 1 ? `${o}-${b.id}` : '',
-                            g = A.computes.isQFGMode(),
-                            p = !i && 0 !== n && !g;
+                            D = !i && F > 1 ? `${o}-${b.id}` : '';
                         return (0, Q.j2)(b)
                             ? null
                             : a().createElement(
                                   'div',
-                                  { key: b.id, className: d()(Dt, p && gt) },
+                                  { key: b.id, className: d()(Dt, !i && 0 !== n && gt) },
                                   i
                                       ? a().createElement(bt, Ct({}, b, { onSlotSelected: s }))
                                       : a().createElement(
@@ -4373,7 +4352,6 @@
                         base__dragInActive: 'ShellsSection_base__dragInActive_96',
                         base__toggle: 'ShellsSection_base__toggle_bd',
                         base__disabled: 'ShellsSection_base__disabled_7e',
-                        base__noBG: 'ShellsSection_base__noBG_0a',
                         label: 'ShellsSection_label_38',
                         attention: 'ShellsSection_attention_7e',
                         blinking: 'ShellsSection_blinking_57',
@@ -4408,24 +4386,22 @@
                                 h = t === pe.w.Compare,
                                 B = t === pe.w.Prebattle && e === ee.g9,
                                 f = g === e || B,
-                                v = F.computes.isQFGMode(),
-                                S = (0, n.useCallback)(() => {
+                                v = (0, n.useCallback)(() => {
                                     i(C, g, 0);
                                 }, [i, g]),
-                                w = (0, Ie.Tu)(e, u),
-                                x = w.selfId,
-                                y = w.blockOnGrabIds,
-                                I = ((e) => St.includes(e))(t) && !s && D,
-                                k = F.computes.slots.filteredLength(m, A),
-                                T = !h && t !== pe.w.Battle && t !== pe.w.Respawn;
+                                S = (0, Ie.Tu)(e, u),
+                                w = S.selfId,
+                                x = S.blockOnGrabIds,
+                                y = ((e) => St.includes(e))(t) && !s && D,
+                                I = F.computes.slots.filteredLength(m, A),
+                                k = !h && t !== pe.w.Battle && t !== pe.w.Respawn;
                             return a().createElement(
                                 'div',
                                 {
-                                    id: c ? ye.CF : x,
+                                    id: c ? ye : w,
                                     className: d()(
                                         vt.base,
                                         l,
-                                        v && vt.base__noBG,
                                         vt[`base__${t}`],
                                         !o && f && vt.base__selected,
                                         h && vt.base__compare,
@@ -4433,8 +4409,8 @@
                                     ),
                                     ref: C,
                                 },
-                                I && a().createElement('div', { className: vt.attention }),
-                                T &&
+                                y && a().createElement('div', { className: vt.attention }),
+                                k &&
                                     a().createElement(
                                         'div',
                                         { className: vt.label },
@@ -4445,24 +4421,24 @@
                                             panelType: t,
                                         }),
                                     ),
-                                I &&
+                                y &&
                                     a().createElement('div', {
                                         className: d()(
                                             vt.border,
-                                            2 === k && vt.border__double,
-                                            3 === k && vt.border__triple,
+                                            2 === I && vt.border__double,
+                                            3 === I && vt.border__triple,
                                         ),
                                     }),
                                 a().createElement(ft, {
                                     groupIndex: m,
                                     sectionIndex: A,
                                     panelType: t,
-                                    onSelected: S,
+                                    onSelected: v,
                                     isSelected: f,
                                     isCompare: h,
                                     syncInitiator: p,
-                                    blockOnGrabIds: y,
-                                    isDisabled: s || v,
+                                    blockOnGrabIds: x,
+                                    isDisabled: s,
                                     isSetupSwitching: c,
                                     setIsExitBlocked: _,
                                 }),
@@ -4592,7 +4568,7 @@
                             }),
                         ),
                     ),
-                    Gt = {
+                    Ht = {
                         base: 'Group_base_70',
                         wrapper: 'Group_wrapper_07',
                         switch: 'Group_switch_ff',
@@ -4603,9 +4579,9 @@
                         hint: 'Group_hint_99',
                         hint__disabled: 'Group_hint__disabled_6a',
                     };
-                function Ht() {
+                function Gt() {
                     return (
-                        (Ht =
+                        (Gt =
                             Object.assign ||
                             function (e) {
                                 for (var u = 1; u < arguments.length; u++) {
@@ -4614,7 +4590,7 @@
                                 }
                                 return e;
                             }),
-                        Ht.apply(this, arguments)
+                        Gt.apply(this, arguments)
                     );
                 }
                 const zt = R.strings.tank_setup.tooltips.prebattleSwitchIndicator,
@@ -4627,66 +4603,56 @@
                             setSetupSwitching: n,
                             handleSetupSwitching: i,
                         }) => {
-                            const s = k(['switch'], Gt),
+                            const s = k(['switch'], Ht),
                                 o = (0, r.t)().model,
                                 l = o.root.get().isDisabled,
                                 c = o.computes.groups.group(e);
-                            return o.computes.groups.isGroupEmpty(e)
-                                ? null
-                                : a().createElement(
-                                      'div',
-                                      { key: c.groupId, className: Gt.base },
-                                      a().createElement(
-                                          'div',
-                                          { className: Gt.wrapper },
-                                          a().createElement(
-                                              J,
-                                              ((e, u) => ({ index: e.currentIndex, setSetupSwitching: u }))(c, n),
-                                              a().createElement(
-                                                  It,
-                                                  Ht({}, u, { groupIndex: e, isChangeSetupIndex: t }),
-                                              ),
-                                          ),
-                                          c.setupSelector.isSwitchEnabled &&
-                                              a().createElement(
-                                                  'div',
-                                                  {
-                                                      className: d()(
-                                                          s.switch,
-                                                          (0, Q.iN)(u.panelType) && Gt.switch__battle,
-                                                      ),
-                                                  },
-                                                  a().createElement(q._, {
-                                                      states: c.setupSelector.states,
-                                                      onClick: i,
-                                                      totalCount: c.totalCount,
-                                                      currentIndex: c.currentIndex,
-                                                      groupId: c.groupId,
-                                                      isDisabled: u.isDisabled,
-                                                  }),
-                                                  c.setupSelector.isPrebattleSwitchDisabled &&
-                                                      a().createElement(
-                                                          U,
-                                                          {
-                                                              header: zt.title(),
-                                                              body: String(zt.desc.$dyn(`c_${c.groupId}`)),
-                                                          },
-                                                          a().createElement('div', {
-                                                              className: Gt.prebattleSwitchIndicator,
-                                                          }),
-                                                      ),
-                                              ),
-                                      ),
-                                      ((_ = c),
-                                      ((E = u.panelType) === pe.w.Battle || E === pe.w.Respawn) &&
-                                          _.setupSelector.isSwitchEnabled &&
-                                          Wt(_) &&
-                                          a().createElement(
-                                              'div',
-                                              { className: d()(Gt.hint, l && Gt.hint__disabled) },
-                                              a().createElement(jt, { hotKeys: Wt(c) }),
-                                          )),
-                                  );
+                            return a().createElement(
+                                'div',
+                                { key: c.groupId, className: Ht.base },
+                                a().createElement(
+                                    'div',
+                                    { className: Ht.wrapper },
+                                    a().createElement(
+                                        J,
+                                        ((e, u) => ({ index: e.currentIndex, setSetupSwitching: u }))(c, n),
+                                        a().createElement(It, Gt({}, u, { groupIndex: e, isChangeSetupIndex: t })),
+                                    ),
+                                    c.setupSelector.isSwitchEnabled &&
+                                        a().createElement(
+                                            'div',
+                                            { className: d()(s.switch, (0, Q.iN)(u.panelType) && Ht.switch__battle) },
+                                            a().createElement(q._, {
+                                                states: c.setupSelector.states,
+                                                onClick: i,
+                                                totalCount: c.totalCount,
+                                                currentIndex: c.currentIndex,
+                                                groupId: c.groupId,
+                                                isDisabled: u.isDisabled,
+                                            }),
+                                            c.setupSelector.isPrebattleSwitchDisabled &&
+                                                a().createElement(
+                                                    U,
+                                                    {
+                                                        header: zt.title(),
+                                                        body: String(zt.desc.$dyn(`c_${c.groupId}`)),
+                                                    },
+                                                    a().createElement('div', {
+                                                        className: Ht.prebattleSwitchIndicator,
+                                                    }),
+                                                ),
+                                        ),
+                                ),
+                                ((_ = c),
+                                ((E = u.panelType) === pe.w.Battle || E === pe.w.Respawn) &&
+                                    _.setupSelector.isSwitchEnabled &&
+                                    Wt(_) &&
+                                    a().createElement(
+                                        'div',
+                                        { className: d()(Ht.hint, l && Ht.hint__disabled) },
+                                        a().createElement(jt, { hotKeys: Wt(c) }),
+                                    )),
+                            );
                             var _, E;
                         },
                     ),
@@ -4748,7 +4714,7 @@
                         if (u.header || u.body) return a().createElement(U, u, n);
                         const i = u.contentId;
                         return i
-                            ? a().createElement(G.u, Xt({}, u, { contentId: i }), n)
+                            ? a().createElement(H.u, Xt({}, u, { contentId: i }), n)
                             : a().createElement(hu.t, u, n);
                     },
                     Kt = 'RoleSkillSlot_base_c4',
@@ -4878,24 +4844,24 @@
                                     },
                                     [P],
                                 ),
-                                G = (0, n.useCallback)(
+                                H = (0, n.useCallback)(
                                     () =>
                                         b(() => {
                                             (R.current.generation += 1), P();
                                         }),
                                     [R, P],
                                 );
-                            (0, n.useEffect)(() => b(G), [G]),
+                            (0, n.useEffect)(() => b(H), [H]),
                                 (0, n.useEffect)(
                                     () => (
-                                        engine.on('clientResized', G),
+                                        engine.on('clientResized', H),
                                         () => {
-                                            engine.off('clientResized', G);
+                                            engine.off('clientResized', H);
                                         }
                                     ),
-                                    [G],
+                                    [H],
                                 );
-                            const H = f.slotWidth,
+                            const G = f.slotWidth,
                                 z = f.slotOffset,
                                 W = d()(O.base, !u && O.base__locked, !e && O.base__hidden, i && O.base__disabled),
                                 U = d()(O.border, !w && O.border__hidden),
@@ -4918,7 +4884,7 @@
                                     a().createElement(an, {
                                         key: R.current.generation,
                                         slotOffset: z,
-                                        slotWidth: H,
+                                        slotWidth: G,
                                         isAnimationRunning: w,
                                     }),
                                 a().createElement(
@@ -4937,7 +4903,7 @@
                                     a().createElement(
                                         'div',
                                         { className: U },
-                                        a().createElement($, { slotWidth: H, slotOffset: z, onAnimationEnd: M }),
+                                        a().createElement($, { slotWidth: G, slotOffset: z, onAnimationEnd: M }),
                                     ),
                             );
                         },
@@ -5011,9 +4977,9 @@
             },
             8253: (e, u, t) => {
                 t.d(u, { W: () => o });
-                var n = t(6483),
+                var n = t(6179),
                     a = t.n(n),
-                    i = t(6179),
+                    i = t(6483),
                     s = t.n(i);
                 const r = {
                         base: 'Container_base_9a',
@@ -5026,7 +4992,6 @@
                         base__dragInActive: 'Container_base__dragInActive_e5',
                         base__toggle: 'Container_base__toggle_94',
                         base__disabled: 'Container_base__disabled_22',
-                        base__noBG: 'Container_base__noBG_69',
                     },
                     o = ({
                         activeDragId: e,
@@ -5037,26 +5002,17 @@
                         panelType: o,
                         isDisabled: l,
                         isPotentialDrop: c,
-                        withBackground: _ = !0,
-                        onClick: d,
+                        onClick: _,
                     }) => {
-                        const E = t && !c && !n;
-                        return s().createElement(
-                            'div',
-                            {
-                                className: a()(
-                                    r.base,
-                                    !e && r[`base__${o}`],
-                                    u && r[`base__${u}`],
-                                    E && r.base__selected,
-                                    c && r['base__dragIn' + (t ? 'Active' : '')],
-                                    !_ && r.base__noBG,
-                                    l && r.base__disabled,
-                                ),
-                                onClick: d,
-                            },
-                            i,
+                        const d = s()(
+                            r.base,
+                            !e && r[`base__${o}`],
+                            u && r[`base__${u}`],
+                            t && !c && !n && r.base__selected,
+                            c && r['base__dragIn' + (t ? 'Active' : '')],
+                            l && r.base__disabled,
                         );
+                        return a().createElement('div', { className: d, onClick: _ }, i);
                     };
             },
             8598: (e, u, t) => {
@@ -5550,8 +5506,8 @@
                                 P = N[1],
                                 $ = (0, r.useState)(A),
                                 j = $[0],
-                                G = $[1],
-                                H = (0, i.K)(),
+                                H = $[1],
+                                G = (0, i.K)(),
                                 z = (0, i.K)(),
                                 W = [n._2, n.dZ, n.sH],
                                 U = (B === t || B === M) && j !== A && W.includes(C),
@@ -5579,14 +5535,14 @@
                                             case n._2:
                                                 (t.enterDone = S[`${V}__enter${d.mI.DESTROY}`]),
                                                     (t.exit = S[`${V}__exit${d.mI.DESTROY}`]),
-                                                    H.run(() => y(!0), d.YJ),
+                                                    G.run(() => y(!0), d.YJ),
                                                     T(!0);
                                                 break;
                                             case n.sH:
                                             case n.dZ:
                                                 (t.enter = S[`${V}__enter${d.mI.DEMOUNT}${d.mI.FADE}`]),
                                                     (t.exit = S[`${V}__exit${d.mI.DEMOUNT}`]),
-                                                    H.run(() => y(!0), d.Ij);
+                                                    G.run(() => y(!0), d.Ij);
                                                 break;
                                             case n.eC:
                                             case n.FR:
@@ -5604,12 +5560,12 @@
                                         }
                                         return o().cloneElement(e, { classNames: t, timeout: X });
                                     },
-                                    [C, X, b, u, D, V, q, E, H, s],
+                                    [C, X, b, u, D, V, q, E, G, s],
                                 ),
                                 K = (0, r.useCallback)(
                                     (e) => {
                                         z.run(() => {
-                                            (e.className = ''), e.classList.add(S.base), P(t), G(A);
+                                            (e.className = ''), e.classList.add(S.base), P(t), H(A);
                                         }, X);
                                     },
                                     [z, X, t, A],
@@ -5828,6 +5784,6 @@
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             t.forEach(u.bind(null, 0)), (t.push = u.bind(null, t.push.bind(t)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [727], () => __webpack_require__(8550));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [727], () => __webpack_require__(7386));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

@@ -209,13 +209,13 @@
                         addPreloadTexture: () => o,
                         children: () => a,
                         displayStatus: () => n.W,
-                        displayStatusIs: () => f,
+                        displayStatusIs: () => b,
                         events: () => r.U,
                         extraSize: () => p,
                         forceTriggerMouseMove: () => w,
                         freezeTextureBeforeResize: () => _,
                         getBrowserTexturePath: () => l,
-                        getDisplayStatus: () => b,
+                        getDisplayStatus: () => f,
                         getScale: () => D,
                         getSize: () => c,
                         getViewGlobalPosition: () => d,
@@ -287,10 +287,10 @@
                 function w() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function b() {
+                function f() {
                     return viewEnv.getShowingStatus();
                 }
-                const f = Object.keys(n.W).reduce(
+                const b = Object.keys(n.W).reduce(
                         (u, e) => ((u[e] = () => viewEnv.getShowingStatus() === n.W[e]), u),
                         {},
                     ),
@@ -963,7 +963,7 @@
                     h = t.n(C),
                     g = t(926),
                     v = t.n(g);
-                let w, b, f;
+                let w, f, b;
                 !(function (u) {
                     (u[(u.ExtraSmall = o.extraSmall.width)] = 'ExtraSmall'),
                         (u[(u.Small = o.small.width)] = 'Small'),
@@ -977,14 +977,14 @@
                             (u[(u.Medium = o.medium.width)] = 'Medium'),
                             (u[(u.Large = o.large.width)] = 'Large'),
                             (u[(u.ExtraLarge = o.extraLarge.width)] = 'ExtraLarge');
-                    })(b || (b = {})),
+                    })(f || (f = {})),
                     (function (u) {
                         (u[(u.ExtraSmall = o.extraSmall.height)] = 'ExtraSmall'),
                             (u[(u.Small = o.small.height)] = 'Small'),
                             (u[(u.Medium = o.medium.height)] = 'Medium'),
                             (u[(u.Large = o.large.height)] = 'Large'),
                             (u[(u.ExtraLarge = o.extraLarge.height)] = 'ExtraLarge');
-                    })(f || (f = {}));
+                    })(b || (b = {}));
                 const p = () => {
                         const u = (0, a.useContext)(d),
                             e = u.width,
@@ -1008,33 +1008,33 @@
                             r = ((u) => {
                                 switch (!0) {
                                     case u.extraLargeWidth:
-                                        return b.ExtraLarge;
+                                        return f.ExtraLarge;
                                     case u.largeWidth:
-                                        return b.Large;
+                                        return f.Large;
                                     case u.mediumWidth:
-                                        return b.Medium;
+                                        return f.Medium;
                                     case u.smallWidth:
-                                        return b.Small;
+                                        return f.Small;
                                     case u.extraSmallWidth:
-                                        return b.ExtraSmall;
+                                        return f.ExtraSmall;
                                     default:
-                                        return console.error('Unreachable media context resolution'), b.ExtraSmall;
+                                        return console.error('Unreachable media context resolution'), f.ExtraSmall;
                                 }
                             })(u),
                             i = ((u) => {
                                 switch (!0) {
                                     case u.extraLargeHeight:
-                                        return f.ExtraLarge;
+                                        return b.ExtraLarge;
                                     case u.largeHeight:
-                                        return f.Large;
+                                        return b.Large;
                                     case u.mediumHeight:
-                                        return f.Medium;
+                                        return b.Medium;
                                     case u.smallHeight:
-                                        return f.Small;
+                                        return b.Small;
                                     case u.extraSmallHeight:
-                                        return f.ExtraSmall;
+                                        return b.ExtraSmall;
                                     default:
-                                        return console.error('Unreachable media context resolution'), f.ExtraSmall;
+                                        return console.error('Unreachable media context resolution'), b.ExtraSmall;
                                 }
                             })(u);
                         return { mediaSize: n, mediaWidth: r, mediaHeight: i, remScreenWidth: e, remScreenHeight: t };
@@ -1055,18 +1055,18 @@
                     );
                 }
                 const y = {
-                        [b.ExtraSmall]: '',
-                        [b.Small]: v().SMALL_WIDTH,
-                        [b.Medium]: `${v().SMALL_WIDTH} ${v().MEDIUM_WIDTH}`,
-                        [b.Large]: `${v().SMALL_WIDTH} ${v().MEDIUM_WIDTH} ${v().LARGE_WIDTH}`,
-                        [b.ExtraLarge]: `${v().SMALL_WIDTH} ${v().MEDIUM_WIDTH} ${v().LARGE_WIDTH} ${v().EXTRA_LARGE_WIDTH}`,
+                        [f.ExtraSmall]: '',
+                        [f.Small]: v().SMALL_WIDTH,
+                        [f.Medium]: `${v().SMALL_WIDTH} ${v().MEDIUM_WIDTH}`,
+                        [f.Large]: `${v().SMALL_WIDTH} ${v().MEDIUM_WIDTH} ${v().LARGE_WIDTH}`,
+                        [f.ExtraLarge]: `${v().SMALL_WIDTH} ${v().MEDIUM_WIDTH} ${v().LARGE_WIDTH} ${v().EXTRA_LARGE_WIDTH}`,
                     },
                     S = {
-                        [f.ExtraSmall]: '',
-                        [f.Small]: v().SMALL_HEIGHT,
-                        [f.Medium]: `${v().SMALL_HEIGHT} ${v().MEDIUM_HEIGHT}`,
-                        [f.Large]: `${v().SMALL_HEIGHT} ${v().MEDIUM_HEIGHT} ${v().LARGE_HEIGHT}`,
-                        [f.ExtraLarge]: `${v().SMALL_HEIGHT} ${v().MEDIUM_HEIGHT} ${v().LARGE_HEIGHT} ${v().EXTRA_LARGE_HEIGHT}`,
+                        [b.ExtraSmall]: '',
+                        [b.Small]: v().SMALL_HEIGHT,
+                        [b.Medium]: `${v().SMALL_HEIGHT} ${v().MEDIUM_HEIGHT}`,
+                        [b.Large]: `${v().SMALL_HEIGHT} ${v().MEDIUM_HEIGHT} ${v().LARGE_HEIGHT}`,
+                        [b.ExtraLarge]: `${v().SMALL_HEIGHT} ${v().MEDIUM_HEIGHT} ${v().LARGE_HEIGHT} ${v().EXTRA_LARGE_HEIGHT}`,
                     },
                     M = {
                         [w.ExtraSmall]: '',
@@ -1559,7 +1559,7 @@
                             () => (0, a.useContext)(t),
                         ];
                     })(({ observableModel: u }) => {
-                        const e = { root: u.object() };
+                        const e = { root: u.object(), vehicleInfo: u.object('vehicleInfo') };
                         return Object.assign({}, e);
                     }, tu),
                     lu = su[0],
@@ -1732,8 +1732,8 @@
                 })();
                 const vu = 'VehicleAward_base_82',
                     wu = 'VehicleAward_content_3f',
-                    bu = 'VehicleAward_vehicle_b3',
-                    fu = 'VehicleAward_imageContainer_38',
+                    fu = 'VehicleAward_vehicle_b3',
+                    bu = 'VehicleAward_imageContainer_38',
                     pu = 'VehicleAward_crop_3d',
                     xu = 'VehicleAward_border_5e',
                     Lu = 'VehicleAward_image_d6',
@@ -1746,19 +1746,19 @@
                     Ru = 'VehicleAward_light_ca',
                     Hu = 'VehicleAward_rays_b2',
                     Pu = (0, X.Pi)(() => {
-                        const u = Eu().model.root.get(),
-                            e = u.techName,
-                            t = u.vehicleLevelPoints,
-                            a = u.vehicleLevel,
-                            r = u.vehicleName,
-                            i = u.vehicleType,
-                            o = u.isEliteVehicle,
-                            s = gu(e),
-                            l = i
-                                ? {
-                                      backgroundImage: `url(R.images.gui.maps.icons.vehicleTypes.big.${gu(i)}${o ? '_elite' : ''})`,
-                                  }
-                                : {};
+                        const u = Eu().model,
+                            e = u.root.get(),
+                            t = e.techName,
+                            a = e.vehicleLevelPoints,
+                            r = u.vehicleInfo.get(),
+                            i = r.vehicleType,
+                            o = r.vehicleName,
+                            s = r.vehicleLvl,
+                            l = r.isElite,
+                            E = gu(t),
+                            A = {
+                                backgroundImage: `url(R.images.gui.maps.icons.vehicleTypes.big.${gu(i)}${l ? '_elite' : ''})`,
+                            };
                         return n().createElement(
                             'div',
                             { className: vu },
@@ -1768,11 +1768,11 @@
                                 n().createElement('div', { className: Ru }),
                                 n().createElement(
                                     'div',
-                                    { className: bu },
-                                    s &&
+                                    { className: fu },
+                                    E &&
                                         n().createElement(
                                             'div',
-                                            { className: fu },
+                                            { className: bu },
                                             n().createElement('div', { className: Hu }),
                                             n().createElement(
                                                 'div',
@@ -1780,7 +1780,7 @@
                                                 n().createElement('div', {
                                                     className: Lu,
                                                     style: {
-                                                        backgroundImage: `url(${R.images.gui.maps.shop.vehicles.c_600x450.$dyn(s)})`,
+                                                        backgroundImage: `url(${R.images.gui.maps.shop.vehicles.c_600x450.$dyn(E)})`,
                                                     },
                                                 }),
                                             ),
@@ -1789,18 +1789,18 @@
                                     n().createElement(
                                         'span',
                                         { className: yu },
-                                        t,
+                                        a,
                                         '/',
-                                        t,
+                                        a,
                                         n().createElement('div', { className: Su }),
                                     ),
                                 ),
                                 n().createElement(
                                     'span',
                                     { className: Ou },
-                                    n().createElement('span', { className: Mu }, Cu(a)),
-                                    n().createElement('div', { className: ku, style: l }),
-                                    n().createElement('span', { className: Tu }, r),
+                                    n().createElement('span', { className: Mu }, Cu(s)),
+                                    n().createElement('div', { className: ku, style: A }),
+                                    n().createElement('span', { className: Tu }, o),
                                 ),
                             ),
                         );

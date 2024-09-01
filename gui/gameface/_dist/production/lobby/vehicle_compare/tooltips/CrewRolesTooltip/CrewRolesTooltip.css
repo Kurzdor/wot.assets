@@ -1,0 +1,372 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.RoleIcon_base_51 {
+    background: no-repeat center / contain;
+}
+
+.RoleIcon_base__small_68 {
+    width: 13rem;
+    height: 13rem;
+}
+
+.RoleIcon_base__c_14x14_8f {
+    width: 14rem;
+    height: 14rem;
+}
+
+.RoleIcon_base__c_18x18_0b {
+    width: 18rem;
+    height: 18rem;
+}
+
+.RoleIcon_base__c_24x24_new_fe,
+.RoleIcon_base__c_24x24_52 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.RoleIcon_base__c_30x30_red_85,
+.RoleIcon_base__c_30x30_e9 {
+    width: 30rem;
+    height: 30rem;
+}
+
+.RoleIcon_base__c_40x40_99 {
+    width: 40rem;
+    height: 40rem;
+}
+
+.RoleIcon_base__medium_5d {
+    width: 33rem;
+    height: 33rem;
+}
+
+.RoleIcon_base__white_2a {
+    width: 44rem;
+    height: 44rem;
+}
+
+.RoleIcon_base__big_b4 {
+    width: 60rem;
+    height: 60rem;
+}
+
+.RoleWithIcon_base_ad {
+    display: flex;
+    align-items: center;
+}
+
+.RoleWithIcon_icon_3a {
+    width: 16rem;
+    height: 16rem;
+    opacity: 0.3;
+    position: relative;
+    top: 1rem;
+}
+
+.RoleWithIcon_titleLabel_0d {
+    margin-left: 5rem;
+    color: #c9c9b6;
+}
+
+.CrewMember_base_61 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 13rem;
+    padding: 0 10rem;
+    position: relative;
+}
+
+.CrewMember_titleLabel_b9 {
+    margin-top: 6rem;
+    color: #e9e2bf;
+}
+
+.CrewMember_additionalRolesWrapper_ff {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.CrewMember_additionalRolesLabel_95 {
+    margin-right: 5rem;
+}
+
+.CrewMember_role_28 {
+    margin-right: 10rem;
+}
+
+.CrewMember_role_28:last-child {
+    margin-right: 0;
+}
+
+.Divider_base_a0 {
+    width: 100%;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.tooltip.tooltip_divider_dotty') no-repeat 50% / 450rem 9rem;
+}
+
+.CrewRolesTooltipApp_base_87 {
+    display: flex;
+    flex-direction: column;
+    width: 365rem;
+    position: relative;
+}
+
+.CrewRolesTooltipApp_header_fd {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    margin-bottom: 16rem;
+    padding: 16rem 22rem 0;
+    letter-spacing: 0.55rem;
+}
+
+.CrewRolesTooltipApp_body_0f {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8rem 12rem 3rem;
+    background: linear-gradient(
+        90deg,
+        rgba(201, 201, 182, 0) 0%,
+        rgba(201, 201, 182, 0.1) 33%,
+        rgba(201, 201, 182, 0.1) 66%,
+        rgba(201, 201, 182, 0) 100%
+    );
+    position: relative;
+}
+
+.CrewRolesTooltipApp_bodyHeading_42 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 10rem 10rem 7rem;
+}
+
+.CrewRolesTooltipApp_footer_10 {
+    padding: 15rem 22rem 19rem;
+}
+
+.CrewRolesTooltipApp_footerHeading_c6 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 8rem;
+    letter-spacing: 0.5rem;
+}
+
+.CrewRolesTooltipApp_footerText_96 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.1rem;
+}
+
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+.ExtendedText_base__zeroPadding_25 {
+    padding: 0;
+}
+
+.ExtendedText_base__isTruncationAvailable_5b {
+    width: 100%;
+}
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+    opacity: 0;
+}
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #ff2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #ffffff;
+}
+
+.colors_white_45 {
+    color: #f2f2f7;
+}
+
+.colors_whiteOrange_81 {
+    color: #fefeec;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #e9e2bf;
+}
+
+.colors_par_5b {
+    color: #8c8c7e;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362e;
+}
+
+.colors_red_79 {
+    color: #ff2717;
+}
+
+.colors_redDark_73 {
+    color: #b70000;
+}
+
+.colors_yellow_76 {
+    color: #feab34;
+}
+
+.colors_orange_cd {
+    color: #ee7000;
+}
+
+.colors_cream_0f {
+    color: #ffdd99;
+}
+
+.colors_brown_82 {
+    color: #cbac77;
+}
+
+.colors_greenBright_68 {
+    color: #80d43a;
+}
+
+.colors_green_fa {
+    color: #7ab300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #ccffff;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09e2ff;
+}
+
+.colors_cred_35 {
+    color: #ced9d9;
+}
+
+.colors_gold_c3 {
+    color: #ffc363;
+}
+
+.colors_bond_ce {
+    color: #c9c9b6;
+}
+
+.colors_prom_83 {
+    color: #a29b70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.renderers_word_f3 {
+    white-space: pre;
+    overflow-wrap: normal;
+}

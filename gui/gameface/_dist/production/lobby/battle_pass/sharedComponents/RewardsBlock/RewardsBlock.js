@@ -209,7 +209,7 @@
                 t(6483), t(6179), t(3415), t(2862), t(729), t(1609);
             },
             2862: (u, e, t) => {
-                let i, E, r, a, n, F, A;
+                let i, E, r, a, n, F, A, o;
                 t.d(e, { E4: () => i, h2: () => r }),
                     (function (u) {
                         (u.Items = 'items'),
@@ -356,7 +356,10 @@
                             (u.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4'),
                             (u.PROGRESSION_STYLE_UPGRADED_5 = 'progressionStyleUpgraded_5'),
                             (u.PROGRESSION_STYLE_UPGRADED_6 = 'progressionStyleUpgraded_6');
-                    })(A || (A = {}));
+                    })(A || (A = {})),
+                    (function (u) {
+                        (u[(u.Engraving = 0)] = 'Engraving'), (u[(u.Background = 1)] = 'Background');
+                    })(o || (o = {}));
             },
             729: (u, e, t) => {
                 t(2372), t(6179);
@@ -624,7 +627,7 @@
                         setEventHandled: () => g,
                         setInputPaddingsRem: () => F,
                         setSidePaddingsRem: () => s,
-                        whenTutorialReady: () => P,
+                        whenTutorialReady: () => f,
                     });
                 var i = t(3722),
                     E = t(6112),
@@ -697,7 +700,7 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    P = Promise.all([
+                    f = Promise.all([
                         new Promise((u) => {
                             window.isDomBuilt ? u() : r.U.onDomBuilt(u);
                         }),
@@ -1217,7 +1220,7 @@
                 i.style, i.tankman;
             },
             2893: (u, e, t) => {
-                t(2862), t(729), t(5216), t(8546), t(930), t(7044), t(3649);
+                t(2862), t(729), t(5216), t(7044), t(3649), t(8546), t(930);
             },
             8546: (u, e, t) => {
                 let i, E, r, a;
