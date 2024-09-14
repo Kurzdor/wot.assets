@@ -5046,7 +5046,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .RankRewardsItem_rewardsContainer_69 {
     height: 48rem;
-    margin-bottom: 40rem;
+    margin-bottom: 20rem;
 }
 
 .mediaLarge .RankRewardsItem_rewardsContainer_69 {
@@ -5325,6 +5325,42 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .mediaLarge .RankRewardsPage_qualificationFooter_71 {
     margin-top: 11rem;
     margin-bottom: 44rem;
+}
+.RankRewardsPage_shopButtonContainer_90 {
+    padding: 5rem 0 21rem;
+}
+.mediaMedium .RankRewardsPage_shopButtonContainer_90 {
+    padding: 2rem 0 22rem;
+}
+.mediaLarge .RankRewardsPage_shopButtonContainer_90 {
+    padding: 1rem 0 52rem;
+}
+.RankRewardsPage_shopButton_4e {
+    padding: 5rem 20rem;
+}
+.mediaMedium .RankRewardsPage_shopButton_4e {
+    padding: 11rem 20rem;
+}
+.RankRewardsPage_comp7ShopButtonBackground_cc {
+    width: 130rem;
+    min-height: 36rem;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.comp7ShopButtonBackground') no-repeat 0 100%;
+    background-size: contain;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    z-index: -1;
+}
+.mediaMedium .RankRewardsPage_comp7ShopButtonBackground_cc {
+    height: 48rem;
+}
+.RankRewardsPage_shopButtonIcon_51 {
+    width: 24rem;
+    height: 24rem;
+    margin-top: 2rem;
+    margin-right: 4rem;
+    background: url('R.images.comp7.gui.maps.icons.comp7.icons.comp7TokenCouponReward') no-repeat 50% 50%;
+    background-size: contain;
 }
 
 .Prompt_base_74 {
@@ -5709,6 +5745,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     position: absolute;
 }
+.Content_bar_ae {
+    visibility: hidden;
+}
 
 .ScrollDrag_base_bd {
     cursor: grab;
@@ -5749,6 +5788,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 .Progression_contentWrapper_6f {
     display: flex;
@@ -6811,6 +6851,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .mediaExtraLarge .TaskBattleList_areaWrapper_04 {
     padding: 26rem 0 68rem;
+}
+
+.TaskBattleList_bar_d9 {
+    visibility: hidden;
 }
 
 @keyframes TaskBattleList_hidden-tasks-list_39 {

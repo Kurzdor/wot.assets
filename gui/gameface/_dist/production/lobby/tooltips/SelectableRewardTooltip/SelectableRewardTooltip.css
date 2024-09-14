@@ -1,0 +1,224 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #ffffff;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #f2f2f7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #fefeec;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #e9e2bf;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8c8c7e;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362e;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #ff2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #b70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #feab34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #ee7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #ffdd99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #cbac77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80d43a;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7ab300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #ccffff;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09e2ff;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #ced9d9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #ffc363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #c9c9b6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #a29b70;
+}
+
+.App_base_65 {
+    width: 350rem;
+    box-shadow: inset 0 0 10rem rgba(59, 59, 46, 0.86);
+    background: linear-gradient(
+        180deg,
+        rgba(182, 199, 201, 0.05) 0%,
+        rgba(51, 51, 41, 0) 15.62%,
+        rgba(51, 51, 41, 0) 88.02%,
+        rgba(51, 51, 41, 0.1) 100%
+    );
+}
+
+.App_base__discount_e2 {
+    width: 420rem;
+}
+
+.App_body_64 {
+    padding: 16rem 20rem;
+    position: relative;
+}
+
+.App_base__discount_e2 .App_body_64 {
+    padding: 17rem 20rem 16rem 88rem;
+}
+
+.App_title_e7 {
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 8rem;
+}
+
+.App_base__discount_e2 .App_title_e7 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 7rem;
+}
+
+.App_description_e3 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.App_discountIcon_43 {
+    width: 60rem;
+    height: 60rem;
+    background: url('R.images.winback.gui.maps.icons.tooltip.discount') no-repeat center / contain;
+    position: absolute;
+    top: 12rem;
+    left: 12rem;
+}
+
+.App_discount_2b {
+    color: #fefeec;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.App_discount__research_58 {
+    color: #f2f2f7;
+}
+
+.App_discount__purchase_33 {
+    color: #ffdd99;
+}
+
+.App_footer_d3 {
+    padding: 12rem 20rem 18rem 42rem;
+    position: relative;
+}
+
+.App_footer_d3 * {
+    position: relative;
+}
+
+.App_separator_ea {
+    width: 420rem;
+    height: 9rem;
+    background: url('R.images.winback.gui.maps.icons.tooltip.separator') no-repeat center / contain;
+    position: absolute;
+    top: -4rem;
+    left: 0;
+}
+
+.App_footerMask_37 {
+    background: linear-gradient(
+        90deg,
+        rgba(201, 201, 182, 0) 0%,
+        #c9c9b6 38.22%,
+        #c9c9b6 64.56%,
+        rgba(201, 201, 182, 0) 100%
+    );
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.App_infoIcon_4f {
+    width: 16rem;
+    height: 16rem;
+    background: url('R.images.winback.gui.maps.icons.tooltip.info') no-repeat center / contain;
+    position: absolute;
+    top: 14rem;
+    left: 19rem;
+}

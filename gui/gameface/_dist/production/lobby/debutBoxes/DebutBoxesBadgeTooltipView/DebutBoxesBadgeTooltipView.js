@@ -29,7 +29,7 @@
                 }
                 t.r(s),
                     t.d(s, {
-                        addModelObserver: () => T,
+                        addModelObserver: () => P,
                         addPreloadTexture: () => f,
                         children: () => o,
                         displayStatus: () => B,
@@ -38,7 +38,7 @@
                         extraSize: () => $,
                         forceTriggerMouseMove: () => Y,
                         freezeTextureBeforeResize: () => k,
-                        getBrowserTexturePath: () => P,
+                        getBrowserTexturePath: () => T,
                         getDisplayStatus: () => V,
                         getScale: () => N,
                         getSize: () => y,
@@ -213,10 +213,10 @@
                 function R(u) {
                     viewEnv.setHitAreaPaddingsRem(u, u, u, u, 15);
                 }
-                function P(u, e, t, n = 1) {
+                function T(u, e, t, n = 1) {
                     return viewEnv.getWebBrowserTexturePath(u, e, t, n);
                 }
-                function T(u, e, t) {
+                function P(u, e, t) {
                     return viewEnv.addDataChangedCallback(u, e, t);
                 }
                 function O(u) {
@@ -1027,15 +1027,15 @@
                     w = g[1],
                     h = 'BattleCondition_base_c0',
                     f = 'BattleCondition_description_f0',
-                    P = 'BattleCondition_icon_54',
-                    T = ({ iconKey: u, titleData: e }) => {
+                    T = 'BattleCondition_icon_54',
+                    P = ({ iconKey: u, titleData: e }) => {
                         const t = {
                             backgroundImage: `url(R.images.gui.maps.icons.quests.battleCondition.c_128.icon_battle_condition_${u}_128x128)`,
                         };
                         return i().createElement(
                             'div',
                             { className: h },
-                            i().createElement('div', { className: P, style: t }),
+                            i().createElement('div', { className: T, style: t }),
                             i().createElement('div', { className: f }, e),
                         );
                     },
@@ -1064,7 +1064,7 @@
                         i().createElement(
                             'div',
                             { className: y },
-                            u.map(({ value: u }, e) => i().createElement(T, M({ key: e }, u))),
+                            u.map(({ value: u }, e) => i().createElement(P, M({ key: e }, u))),
                         ),
                     );
                 let N;
@@ -1137,8 +1137,7 @@
                         (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.CosmicLootboxSilver = 'lootBoxToken'),
-                        (u.CosmicLootboxCommon = 'cosmic_2024_2'),
-                        (u.RacesPoint = 'races_point');
+                        (u.CosmicLootboxCommon = 'cosmic_2024_2');
                 })(I || (I = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1381,13 +1380,13 @@
                                   Object.assign(
                                       {
                                           onMouseEnter:
-                                              ((P = e.props.onMouseEnter),
+                                              ((T = e.props.onMouseEnter),
                                               (u) => {
                                                   (u.clientX === window.innerWidth &&
                                                       u.clientY === window.innerHeight) ||
                                                       ((g.current.timeoutId = window.setTimeout(w, A ? 100 : 400)),
                                                       r && r(u),
-                                                      P && P(u));
+                                                      T && T(u));
                                               }),
                                           onMouseLeave: ((u) => (e) => {
                                               h(), null == o || o(e), null == u || u(e);
@@ -1403,7 +1402,7 @@
                                   ),
                               )
                             : e;
-                        var P;
+                        var T;
                     },
                     H = ['children'];
                 function W() {
@@ -1571,7 +1570,7 @@
                         I.CosmicLootboxSilver,
                     ],
                     ou = [I.Gold, I.Credits, I.Crystal, I.FreeXp],
-                    su = [I.BattlePassPoints, I.RacesPoint],
+                    su = [I.BattlePassPoints],
                     iu = [I.PremiumPlus, I.Premium],
                     au = ['engravings', 'backgrounds'],
                     Eu = ['engraving', 'background'],
@@ -1956,7 +1955,7 @@
                     hu = 'App_title_70',
                     fu = 'App_description_11',
                     Ru = 'App_separator_d1',
-                    Pu = (0, D.Pi)(() => {
+                    Tu = (0, D.Pi)(() => {
                         const u = w().model,
                             e = u.root.get(),
                             t = e.postBattleCondition,
@@ -1977,7 +1976,7 @@
                     });
                 engine.whenReady.then(() => {
                     _().render(
-                        i().createElement(b, null, i().createElement(F, null, i().createElement(Pu, null))),
+                        i().createElement(b, null, i().createElement(F, null, i().createElement(Tu, null))),
                         document.getElementById('root'),
                     );
                 });

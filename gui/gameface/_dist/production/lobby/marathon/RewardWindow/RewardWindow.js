@@ -1546,8 +1546,7 @@
                         (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.CosmicLootboxSilver = 'lootBoxToken'),
-                        (u.CosmicLootboxCommon = 'cosmic_2024_2'),
-                        (u.RacesPoint = 'races_point');
+                        (u.CosmicLootboxCommon = 'cosmic_2024_2');
                 })(Du || (Du = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1688,7 +1687,7 @@
                         Du.CosmicLootboxSilver,
                     ],
                     hu = [Du.Gold, Du.Credits, Du.Crystal, Du.FreeXp],
-                    wu = [Du.BattlePassPoints, Du.RacesPoint],
+                    wu = [Du.BattlePassPoints],
                     vu = [Du.PremiumPlus, Du.Premium],
                     bu = (u, e, t) => {
                         const n = e && { contentId: e };

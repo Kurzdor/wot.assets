@@ -2492,8 +2492,7 @@
                         (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.CosmicLootboxSilver = 'lootBoxToken'),
-                        (u.CosmicLootboxCommon = 'cosmic_2024_2'),
-                        (u.RacesPoint = 'races_point');
+                        (u.CosmicLootboxCommon = 'cosmic_2024_2');
                 })(ie || (ie = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -2626,7 +2625,6 @@
                     ie.Crystal,
                     ie.FreeXp,
                     ie.BattlePassPoints,
-                    ie.RacesPoint,
                     ie.PremiumPlus,
                     ie.Premium;
                 const Ae = {

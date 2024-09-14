@@ -5128,8 +5128,7 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
-                        (e.RacesPoint = 'races_point');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
                 })(va || (va = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -5262,7 +5261,6 @@
                     va.Crystal,
                     va.FreeXp,
                     va.BattlePassPoints,
-                    va.RacesPoint,
                     va.PremiumPlus,
                     va.Premium;
                 let Pa, Ta, Ra, xa, ka, Ma;

@@ -782,8 +782,7 @@
                         (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.CosmicLootboxSilver = 'lootBoxToken'),
-                        (u.CosmicLootboxCommon = 'cosmic_2024_2'),
-                        (u.RacesPoint = 'races_point');
+                        (u.CosmicLootboxCommon = 'cosmic_2024_2');
                 })(F || (F = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -918,7 +917,6 @@
                     F.Crystal,
                     F.FreeXp,
                     F.BattlePassPoints,
-                    F.RacesPoint,
                     F.PremiumPlus,
                     F.Premium,
                     ((P = d || (d = {})).Active = 'active'),

@@ -537,7 +537,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: -14rem;
 }
 
-@keyframes AwardsList_raysAppearance_fa {
+@keyframes AwardsList_raysAppearance_ed {
     0% {
         transform: translateY(20rem);
     }
@@ -547,7 +547,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
-@keyframes AwardsList_rotate_78 {
+@keyframes AwardsList_rotate_0a {
     0% {
         transform: rotate(0deg);
     }
@@ -557,17 +557,17 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
-.AwardsList_base_1f {
+.AwardsList_base_0a {
     position: relative;
 }
 
-.AwardsList_container_18 {
+.AwardsList_container_b6 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.AwardsList_value_af {
+.AwardsList_value_15 {
     color: #ffdd99;
     font-size: 24rem;
     font-weight: 400;
@@ -575,7 +575,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: -20rem;
 }
 
-.mediaLarge .AwardsList_value_af {
+.mediaLarge .AwardsList_value_15 {
     color: #ffdd99;
     font-size: 36rem;
     font-weight: 700;
@@ -584,13 +584,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 400;
 }
 
-.AwardsList_reward_33 {
+.AwardsList_reward_d5 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.AwardsList_label_02 {
+.AwardsList_label_8b {
     color: #e9e2bf;
     font-size: 12rem;
     font-weight: 400;
@@ -598,21 +598,21 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: 24rem;
 }
 
-.mediaSmall .AwardsList_label_02 {
+.mediaSmall .AwardsList_label_8b {
     color: #e9e2bf;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
-.mediaLarge .AwardsList_label_02 {
+.mediaLarge .AwardsList_label_8b {
     color: #e9e2bf;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
 }
 
-@keyframes BackGround_raysAppearance_85 {
+@keyframes BackGround_raysAppearance_35 {
     0% {
         transform: translateY(20rem);
     }
@@ -622,7 +622,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
-@keyframes BackGround_rotate_18 {
+@keyframes BackGround_rotate_14 {
     0% {
         transform: rotate(0deg);
     }
@@ -632,7 +632,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
-.BackGround_base_16 {
+.BackGround_base_fb {
     position: absolute;
     top: 0;
     right: 0;
@@ -643,7 +643,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     align-items: center;
 }
 
-.BackGround_bgContainer_4f {
+.BackGround_bgContainer_8c {
     position: absolute;
     top: 0;
     right: 0;
@@ -651,28 +651,28 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
 }
 
-.BackGround_bg_5a {
+.BackGround_bg_34 {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: url('R.images.battle_royale_progression.gui.maps.backgrounds.main_bg') no-repeat center / cover;
+    background: url('R.images.winback.gui.maps.backgrounds.main_bg') no-repeat center / cover;
     filter: blur(6.5px);
 }
 
-.BackGround_noise_26 {
+.BackGround_noise_a7 {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: url('R.images.battle_royale_progression.gui.maps.progression.noise') repeat center / cover;
+    background: url('R.images.winback.gui.maps.icons.progression.noise') repeat center / cover;
     opacity: 0.1;
     mix-blend-mode: soft-light;
 }
 
-.BackGround_shade_6e {
+.BackGround_shade_1c {
     position: absolute;
     top: 0;
     right: 0;
@@ -681,7 +681,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: rgba(0, 0, 0, 0.3);
 }
 
-.BackGround_bottomShadow_4c {
+.BackGround_bottomShadow_7a {
     position: absolute;
     top: 0;
     right: 0;
@@ -697,7 +697,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     opacity: 0.7;
 }
 
-.BackGround_awardsContainer_39 {
+.BackGround_awardsContainer_e6 {
     position: absolute;
     top: 0;
     right: 0;
@@ -709,7 +709,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 200rem;
 }
 
-.BackGround_glowContainer_e8 {
+.BackGround_glowContainer_1f {
     position: absolute;
     top: 0;
     right: 0;
@@ -721,11 +721,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: -105rem;
 }
 
-.mediaMedium .BackGround_glowContainer_e8 {
+.mediaMedium .BackGround_glowContainer_1f {
     top: -135rem;
 }
 
-.BackGround_ribbon_fe {
+.BackGround_ribbon_de {
     width: 1366rem;
     height: 356rem;
     background: no-repeat center / contain;
@@ -733,42 +733,42 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     z-index: 10;
 }
 
-.BackGround_base__inProgress_b9 .BackGround_ribbon_fe {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.red_ribbon_1366');
+.BackGround_base__inProgress_9c .BackGround_ribbon_de {
+    background-image: url('R.images.winback.gui.maps.battleQuestAwards.red_ribbon_1366');
 }
 
-.mediaMedium .BackGround_base__inProgress_b9 .BackGround_ribbon_fe {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.red_ribbon_1600');
+.mediaMedium .BackGround_base__inProgress_9c .BackGround_ribbon_de {
+    background-image: url('R.images.winback.gui.maps.battleQuestAwards.red_ribbon_1600');
 }
 
-.mediaLarge .BackGround_base__inProgress_b9 .BackGround_ribbon_fe {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.red_ribbon_1920');
+.mediaLarge .BackGround_base__inProgress_9c .BackGround_ribbon_de {
+    background-image: url('R.images.winback.gui.maps.battleQuestAwards.red_ribbon_1920');
 }
 
-.BackGround_base__completed_2a .BackGround_ribbon_fe {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.gold_ribbon_1366');
+.BackGround_base__completed_84 .BackGround_ribbon_de {
+    background-image: url('R.images.winback.gui.maps.battleQuestAwards.gold_ribbon_1366');
 }
 
-.mediaMedium .BackGround_base__completed_2a .BackGround_ribbon_fe {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.gold_ribbon_1600');
+.mediaMedium .BackGround_base__completed_84 .BackGround_ribbon_de {
+    background-image: url('R.images.winback.gui.maps.battleQuestAwards.gold_ribbon_1600');
 }
 
-.mediaLarge .BackGround_base__completed_2a .BackGround_ribbon_fe {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.gold_ribbon_1920');
+.mediaLarge .BackGround_base__completed_84 .BackGround_ribbon_de {
+    background-image: url('R.images.winback.gui.maps.battleQuestAwards.gold_ribbon_1920');
 }
 
-.mediaMedium .BackGround_ribbon_fe {
+.mediaMedium .BackGround_ribbon_de {
     width: 1600rem;
     height: 417rem;
 }
 
-.mediaLarge .BackGround_ribbon_fe {
+.mediaLarge .BackGround_ribbon_de {
     width: 1920rem;
     height: 500rem;
 }
 
-.BackGround_gradientLine_b1 {
-    animation-name: BackGround_raysAppearance_85, BackGround_rotate_18;
+.BackGround_gradientLine_87 {
+    animation-name: BackGround_raysAppearance_35, BackGround_rotate_14;
     animation-duration: 1.5s, 120s;
     animation-fill-mode: forwards, forwards;
     animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1), linear;
@@ -776,22 +776,22 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     animation-iteration-count: 1, infinite;
     width: 700rem;
     height: 700rem;
-    background: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.radial_lines') no-repeat top / cover;
+    background: url('R.images.winback.gui.maps.battleQuestAwards.radial_lines') no-repeat top / cover;
     mix-blend-mode: screen;
     position: absolute;
 }
 
-.mediaMedium .BackGround_gradientLine_b1 {
+.mediaMedium .BackGround_gradientLine_87 {
     width: 900rem;
     height: 900rem;
 }
 
-.mediaExtraLarge .BackGround_gradientLine_b1 {
+.mediaExtraLarge .BackGround_gradientLine_87 {
     width: 1000rem;
     height: 1000rem;
 }
 
-.BackGround_glow_89 {
+.BackGround_glow_7d {
     width: 600rem;
     height: 600rem;
     background: no-repeat top / cover;
@@ -799,91 +799,48 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     z-index: 5;
 }
 
-.BackGround_base__inProgress_b9 .BackGround_glow_89 {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.glow_in_progress');
+.BackGround_base__inProgress_9c .BackGround_glow_7d {
+    background-image: url('R.images.winback.gui.maps.battleQuestAwards.glow_in_progress');
     mix-blend-mode: overlay;
 }
 
-.BackGround_base__completed_2a .BackGround_glow_89 {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.glow_done');
+.BackGround_base__completed_84 .BackGround_glow_7d {
+    background-image: url('R.images.winback.gui.maps.battleQuestAwards.glow_done');
     mix-blend-mode: screen;
 }
 
-.mediaLarge .BackGround_glow_89 {
+.mediaLarge .BackGround_glow_7d {
     width: 800rem;
     height: 800rem;
 }
 
-.BackGround_base__completed_2a .BackGround_splash_e1 {
+.BackGround_base__completed_84 .BackGround_splash_af {
     width: 500rem;
     height: 500rem;
-    background: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.splash') no-repeat top / cover;
+    background: url('R.images.winback.gui.maps.battleQuestAwards.splash') no-repeat top / cover;
     mix-blend-mode: screen;
     position: absolute;
     z-index: 5;
 }
 
-.mediaLarge .BackGround_base__completed_2a .BackGround_splash_e1 {
+.mediaLarge .BackGround_base__completed_84 .BackGround_splash_af {
     width: 900rem;
     height: 900rem;
 }
 
-.BackGround_base__completed_2a .BackGround_glowSmall_5f {
+.BackGround_base__completed_84 .BackGround_glowSmall_95 {
     width: 600rem;
     height: 600rem;
-    background: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.glow_small') no-repeat top / cover;
+    background: url('R.images.winback.gui.maps.battleQuestAwards.glow_small') no-repeat top / cover;
     opacity: 0.5;
     mix-blend-mode: screen;
     position: absolute;
     z-index: 5;
 }
 
-.mediaLarge .BackGround_glowSmall_5f {
+.mediaLarge .BackGround_glowSmall_95 {
     width: 800rem;
     height: 800rem;
-}
-
-.BattleIcon_base_cd {
-    position: relative;
-}
-
-.BattleIcon_block_0d {
-    width: 500rem;
-    height: 500rem;
-    position: relative;
-}
-
-.BattleIcon_icon_f7 {
-    width: 130rem;
-    height: 130rem;
-    background: no-repeat center / contain;
-    position: absolute;
-    top: 185rem;
-    left: 185rem;
-    z-index: 10;
-}
-
-.BattleIcon_base__completed_6e .BattleIcon_icon_f7 {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_done_130_130');
-}
-
-.mediaLarge .BattleIcon_base__completed_6e .BattleIcon_icon_f7 {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_done_150_150');
-}
-
-.BattleIcon_base__inProgress_32 .BattleIcon_icon_f7 {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_in_progress_130_130');
-}
-
-.mediaLarge .BattleIcon_base__inProgress_32 .BattleIcon_icon_f7 {
-    background-image: url('R.images.battle_royale_progression.gui.maps.battleQuestAwards.emblem_in_progress_150_150');
-}
-
-.mediaLarge .BattleIcon_icon_f7 {
-    width: 150rem;
-    height: 150rem;
-    top: 165rem;
-    left: 175rem;
 }
 
 .FormatText_base_d0 {
@@ -891,41 +848,311 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex-wrap: wrap;
 }
 
-.Header_base_05 {
+.Box_mt__XS_0c {
+    margin-top: 4rem;
+}
+.Box_mt__SM_eb {
+    margin-top: 8rem;
+}
+.Box_mt__SMp_cf {
+    margin-top: 10rem;
+}
+.Box_mt__MD_25 {
+    margin-top: 16rem;
+}
+.Box_mt__MDp_49 {
+    margin-top: 20rem;
+}
+.Box_mt__LG_e8 {
+    margin-top: 32rem;
+}
+.Box_mt__XL_83 {
+    margin-top: 64rem;
+}
+
+.Box_mr__XS_7c {
+    margin-right: 4rem;
+}
+
+.Box_mr__SM_08 {
+    margin-right: 8rem;
+}
+
+.Box_mr__SMp_06 {
+    margin-right: 10rem;
+}
+
+.Box_mr__MD_4a {
+    margin-right: 16rem;
+}
+
+.Box_mr__MDp_b6 {
+    margin-right: 20rem;
+}
+
+.Box_mr__LG_d0 {
+    margin-right: 32rem;
+}
+
+.Box_mr__XL_db {
+    margin-right: 64rem;
+}
+
+.Box_mb__XS_bb {
+    margin-bottom: 4rem;
+}
+
+.Box_mb__SM_83 {
+    margin-bottom: 8rem;
+}
+
+.Box_mb__SMp_04 {
+    margin-bottom: 10rem;
+}
+
+.Box_mb__MD_ed {
+    margin-bottom: 16rem;
+}
+
+.Box_mb__MDp_65 {
+    margin-bottom: 20rem;
+}
+
+.Box_mb__LG_c8 {
+    margin-bottom: 32rem;
+}
+
+.Box_mb__XL_f8 {
+    margin-bottom: 64rem;
+}
+
+.Box_ml__XS_8a {
+    margin-left: 4rem;
+}
+
+.Box_ml__SM_e6 {
+    margin-left: 8rem;
+}
+
+.Box_ml__SMp_fb {
+    margin-left: 10rem;
+}
+
+.Box_ml__MD_2b {
+    margin-left: 16rem;
+}
+
+.Box_ml__MDp_c7 {
+    margin-left: 20rem;
+}
+
+.Box_ml__LG_39 {
+    margin-left: 32rem;
+}
+
+.Box_ml__XL_4a {
+    margin-left: 64rem;
+}
+
+/* eslint-disable-next-line expectedscss*/
+.Text_paragraph-P10_2c {
+    font-size: 10rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_paragraph-P12_22 {
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Text_paragraph-P14_a7 {
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Text_paragraph-P16_90 {
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Text_paragraph-P18_50 {
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Text_paragraph-P24_33 {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 32rem;
+}
+.Text_heading-H14_8b {
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.Text_heading-H15_9e {
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.Text_heading-H18_b7 {
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H20R_f6 {
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H22_27 {
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H24R_be {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H24_0c {
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H28_78 {
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H36_32 {
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H56_c3 {
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H73_8f {
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H144_a9 {
+    font-size: 144rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.Text_BLACK_REAL_30 {
+    color: #000000;
+}
+.Text_WHITE_REAL_bc {
+    color: #ffffff;
+}
+.Text_WHITE_62 {
+    color: #f2f2f7;
+}
+.Text_WHITE_ORANGE_54 {
+    color: #fefeec;
+}
+.Text_WHITE_SPANISH_df {
+    color: #e9e2bf;
+}
+.Text_PAR_15 {
+    color: #8c8c7e;
+}
+.Text_PAR_SECONDARY_5d {
+    color: #595950;
+}
+.Text_PAR_TERTIARY_c9 {
+    color: #37362e;
+}
+.Text_INFO_RED_30 {
+    color: #ff0000;
+}
+.Text_RED_66 {
+    color: #ff2717;
+}
+.Text_RED_DARK_d8 {
+    color: #b70000;
+}
+.Text_YELLOW_ed {
+    color: #feab34;
+}
+.Text_ORANGE_be {
+    color: #ee7000;
+}
+.Text_CREAM_57 {
+    color: #ffdd99;
+}
+.Text_BROWN_18 {
+    color: #cbac77;
+}
+.Text_GREEN_BRIGHT_3f {
+    color: #80d43a;
+}
+.Text_GREEN_e3 {
+    color: #7ab300;
+}
+.Text_GREEN_DARK_f1 {
+    color: #497212;
+}
+.Text_BLUE_BOOSTER_21 {
+    color: #ccffff;
+}
+.Text_BLUE_TEAMKILLER_ab {
+    color: #09e2ff;
+}
+.Text_CRED_f7 {
+    color: #ced9d9;
+}
+.Text_GOLD_28 {
+    color: #ffc363;
+}
+.Text_BOND_be {
+    color: #c9c9b6;
+}
+.Text_PROM_65 {
+    color: #a29b70;
+}
+
+.Header_base_e6 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.Header_subTitle_65 {
+.Header_subTitle_f8 {
     color: #e9e2bf;
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
-.mediaLarge .Header_subTitle_65 {
+.mediaLarge .Header_subTitle_f8 {
     color: #e9e2bf;
     font-size: 24rem;
     font-weight: 700;
     line-height: 1.2;
 }
 
-.Header_title_03 {
+.Header_title_24 {
     color: #f2f2f7;
     font-size: 56rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
-.mediaLarge .Header_title_03 {
+.mediaLarge .Header_title_24 {
     color: #f2f2f7;
     font-size: 73rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
-@keyframes App_raysAppearance_d2 {
+@keyframes App_raysAppearance_ec {
     0% {
         transform: translateY(20rem);
     }
@@ -935,7 +1162,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 
-@keyframes App_rotate_7a {
+@keyframes App_rotate_22 {
     0% {
         transform: rotate(0deg);
     }
@@ -949,7 +1176,7 @@ body {
     overflow: hidden;
 }
 
-.App_base_4e {
+.App_base_7c {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -958,10 +1185,10 @@ body {
     height: 100%;
     background-color: #2e2e2e;
     position: relative;
-    animation: App_windowIn_f3 0.5s both;
+    animation: App_windowIn_95 0.5s both;
 }
 
-.App_content_92 {
+.App_content_c3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -969,81 +1196,63 @@ body {
     height: 100%;
 }
 
-.App_buttonClose_fc {
+.App_buttonClose_d2 {
     position: absolute;
     top: 40rem;
     right: 30rem;
 }
 
-.App_buttonApprove_44 {
+.App_buttonApprove_0d {
     position: absolute;
     bottom: 50rem;
     z-index: 15;
 }
 
-.mediaMedium .App_buttonApprove_44 {
+.mediaMedium .App_buttonApprove_0d {
     bottom: 70rem;
 }
 
-.mediaLarge .App_buttonApprove_44 {
+.mediaLarge .App_buttonApprove_0d {
     bottom: 90rem;
 }
 
-.App_buttonSize_c6 {
+.App_buttonSize_ce {
     width: 180rem;
     margin: 8rem 57rem;
 }
 
-.App_battleIcon_e2 {
-    margin-left: -25rem;
-    position: absolute;
-    top: -155rem;
-}
-
-.mediaMedium .App_battleIcon_e2 {
-    top: -135rem;
-}
-
-.mediaLarge .App_battleIcon_e2 {
-    top: -120rem;
-}
-
-.mediaExtraLarge .App_battleIcon_e2 {
-    top: -100rem;
-}
-
-.App_awards_75 {
+.App_awards_9d {
     margin-top: 50rem;
     position: relative;
     z-index: 15;
 }
 
-.mediaSmall .App_awards_75 {
+.mediaSmall .App_awards_9d {
     margin-top: 100rem;
 }
 
-.mediaMedium .App_awards_75 {
+.mediaMedium .App_awards_9d {
     margin-top: 30rem;
 }
 
-.App_header_e4 {
+.App_header_f8 {
     position: absolute;
-    top: 180rem;
+    top: 60rem;
 }
 
-.mediaMedium .App_header_e4 {
-    top: 200rem;
+.mediaMedium .App_header_f8 {
+    top: 80rem;
 }
 
-.mediaLarge .App_header_e4 {
-    top: 220rem;
+.mediaLarge .App_header_f8 {
+    top: 100rem;
 }
 
-.mediaExtraLarge .App_header_e4 {
+.mediaExtraLarge .App_header_f8 {
     top: 250rem;
 }
 
-@keyframes App_windowIn_f3 {
+@keyframes App_windowIn_95 {
     from {
         opacity: 0;
     }

@@ -2140,13 +2140,11 @@
                             e = u.controls,
                             t = u.model.root.get(),
                             r = t.startDate,
-                            n = t.endDate,
-                            E = e.close,
-                            A = e.continueEvent;
+                            n = t.endDate;
                         Ru(Su.n.ESCAPE, e.close);
-                        const i = Hu(Tu.Z5.getDateFormat(r, 1)),
-                            F = Hu(Tu.Z5.getDateFormat(n, 1)),
-                            o = f().mediaSize >= v.Medium;
+                        const E = Hu(Tu.Z5.getDateFormat(r, 1)),
+                            A = Hu(Tu.Z5.getDateFormat(n, 1)),
+                            i = f().mediaSize >= v.Medium;
                         return a().createElement(
                             'div',
                             { className: Xu },
@@ -2156,8 +2154,8 @@
                                 a().createElement(Lu, {
                                     side: 'right',
                                     type: 'close',
-                                    caption: R.strings.early_access.introView.exitButtonText(),
-                                    onClick: E,
+                                    caption: Ee.introView.exitButtonText(),
+                                    onClick: e.close,
                                 }),
                             ),
                             a().createElement(
@@ -2169,7 +2167,7 @@
                                     a().createElement(xu, {
                                         className: Vu,
                                         text: Ee.header.dateFormat.between(),
-                                        format: { binding: { fromDate: i, toDate: F } },
+                                        format: { binding: { fromDate: E, toDate: A } },
                                     }),
                                     a().createElement(xu, { className: qu, text: Ee.header.title.introView() }),
                                 ),
@@ -2185,7 +2183,7 @@
                                             a().createElement('div', {
                                                 className: ue,
                                                 style: {
-                                                    backgroundImage: `url(R.images.gui.maps.icons.early_access.intro.Card_${u}${o ? '_large' : ''})`,
+                                                    backgroundImage: `url(R.images.gui.maps.icons.early_access.intro.Card_${u}${i ? '_large' : ''})`,
                                                 },
                                             }),
                                             a().createElement(xu, { className: ee, text: Ee.introView.title.$dyn(u) }),
@@ -2200,8 +2198,13 @@
                                 a().createElement(xu, { className: ae, text: Ee.introView.infoText() }),
                                 a().createElement(
                                     j,
-                                    { mixClass: ne, onClick: A, type: I.primary, size: o ? G.medium : G.small },
-                                    Ee.introView.continueButtonText(),
+                                    {
+                                        mixClass: ne,
+                                        onClick: e.continueEvent,
+                                        type: I.primary,
+                                        size: i ? G.medium : G.small,
+                                    },
+                                    a().createElement(xu, { text: Ee.introView.continueButtonText() }),
                                 ),
                             ),
                         );

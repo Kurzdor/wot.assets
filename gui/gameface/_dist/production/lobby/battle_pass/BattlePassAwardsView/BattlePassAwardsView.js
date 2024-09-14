@@ -1102,7 +1102,8 @@
                         (u.BUY_BATTLE_PASS_LEVELS = 'buyBattlePassLevelsReason'),
                         (u.BUY_MULTIPLE_BATTLE_PASS = 'buyMultipleBattlePassReason'),
                         (u.STYLE_UPGRADE = 'styleUpgradeReason'),
-                        (u.DEFAULT = 'defaultReason');
+                        (u.DEFAULT = 'defaultReason'),
+                        (u.GIFT_CHAPTER = 'giftChapterReason');
                 })(I || (I = {})),
                     (function (u) {
                         (u.Default = 'default'), (u.Marathon = 'marathon'), (u.Resource = 'resource');
@@ -1347,34 +1348,35 @@
                                 },
                                 t = (0, X.Om)(() => e.root.get().reason === I.BUY_BATTLE_PASS),
                                 a = (0, X.Om)(() => e.root.get().reason === I.BUY_MULTIPLE_BATTLE_PASS),
-                                r = (0, X.Om)(() => t() || a()),
-                                n = (0, X.Om)(() => e.root.get().reason === I.STYLE_UPGRADE),
-                                s = (0, X.Om)(
+                                r = (0, X.Om)(() => e.root.get().reason === I.GIFT_CHAPTER),
+                                n = (0, X.Om)(() => t() || a() || r()),
+                                s = (0, X.Om)(() => e.root.get().reason === I.STYLE_UPGRADE),
+                                i = (0, X.Om)(
                                     () =>
-                                        r() && !e.canToOpenAdditionView.get()
+                                        n() && !e.canToOpenAdditionView.get()
                                             ? j(e.packageRewards.get(), H)
                                             : j(e.additionalRewards.get(), H),
                                     { equals: G },
                                 ),
-                                i = (0, X.Om)(() => s().length),
-                                o = (0, X.Om)(() => i() > 0),
-                                l = (0, X.Om)(() => j(e.mainRewards.get(), H), { equals: G }),
-                                E = (0, X.Om)(() => {
-                                    const u = [...l()],
+                                o = (0, X.Om)(() => i().length),
+                                l = (0, X.Om)(() => o() > 0),
+                                E = (0, X.Om)(() => j(e.mainRewards.get(), H), { equals: G }),
+                                c = (0, X.Om)(() => {
+                                    const u = [...E()],
                                         e = u[0];
                                     return (u[0] = u[1]), (u[1] = e), u;
                                 }),
-                                c = (0, X.Om)(() => (e.root.get().isFinalReward ? E() : l())),
-                                A = (0, X.Om)(() => c().length),
-                                d = (0, X.Om)(() => {
-                                    const u = e.root.get().isFinalReward;
-                                    return 1 === A() || u;
-                                }),
+                                A = (0, X.Om)(() => (e.root.get().isFinalReward ? c() : E())),
+                                d = (0, X.Om)(() => A().length),
                                 _ = (0, X.Om)(() => {
                                     const u = e.root.get().isFinalReward;
-                                    return (2 !== c().length && u) || r() || n();
+                                    return 1 === d() || u;
                                 }),
-                                F = (0, X.Om)((u) =>
+                                F = (0, X.Om)(() => {
+                                    const u = e.root.get().isFinalReward;
+                                    return (2 !== A().length && u) || n() || s();
+                                }),
+                                D = (0, X.Om)((u) =>
                                     (function (u, e) {
                                         if (Array.isArray(u)) return u.some(e);
                                         for (let t = 0; t < u.length; t++) if (e(q(u, t), t, u)) return !0;
@@ -1385,17 +1387,17 @@
                                 computes: {
                                     isReasonBuy: t,
                                     isReasonBuyMultiple: a,
-                                    isReasonBuyCurrently: r,
-                                    isReasonStyleUpgrade: n,
-                                    getAdditionalRewards: s,
-                                    getAdditionalRewardsLength: i,
-                                    hasAdditionalRewards: o,
-                                    getRewards: c,
-                                    getRewardsLength: A,
-                                    hasBigSizeReward: d,
-                                    getFinalRewards: E,
-                                    hasGlowAnimation: _,
-                                    hasTypedChapter: F,
+                                    isReasonBuyCurrently: n,
+                                    isReasonStyleUpgrade: s,
+                                    getAdditionalRewards: i,
+                                    getAdditionalRewardsLength: o,
+                                    hasAdditionalRewards: l,
+                                    getRewards: A,
+                                    getRewardsLength: d,
+                                    hasBigSizeReward: _,
+                                    getFinalRewards: c,
+                                    hasGlowAnimation: F,
+                                    hasTypedChapter: D,
                                 },
                             });
                         },
@@ -1704,8 +1706,7 @@
                         (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.CosmicLootboxSilver = 'lootBoxToken'),
-                        (u.CosmicLootboxCommon = 'cosmic_2024_2'),
-                        (u.RacesPoint = 'races_point');
+                        (u.CosmicLootboxCommon = 'cosmic_2024_2');
                 })(fu || (fu = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1846,7 +1847,7 @@
                         fu.CosmicLootboxSilver,
                     ],
                     Ou = [fu.Gold, fu.Credits, fu.Crystal, fu.FreeXp],
-                    Nu = [fu.BattlePassPoints, fu.RacesPoint],
+                    Nu = [fu.BattlePassPoints],
                     ku = [fu.PremiumPlus, fu.Premium],
                     Iu = ['engravings', 'backgrounds'],
                     Uu = ['engraving', 'background'],
@@ -2771,6 +2772,7 @@
                             E = ((u, e, t, a = !1) => {
                                 switch (u) {
                                     case I.BUY_BATTLE_PASS:
+                                    case I.GIFT_CHAPTER:
                                         return Eu(Ie.mainReward.bpBuyAwardsCaption(), {
                                             chapter: R.strings.battle_pass.chapter.fullName.quoted.$num(e),
                                         });
@@ -3188,6 +3190,7 @@
                         switch (u) {
                             case I.BUY_BATTLE_PASS:
                             case I.BUY_MULTIPLE_BATTLE_PASS:
+                            case I.GIFT_CHAPTER:
                                 return Tt.battlePassAwardsView.header.bpTitleWithoutChapter();
                             case I.BUY_BATTLE_PASS_LEVELS:
                             case I.STYLE_UPGRADE:
@@ -3205,6 +3208,8 @@
                             case I.BUY_BATTLE_PASS:
                             case I.BUY_MULTIPLE_BATTLE_PASS:
                                 return Tt.battlePassAwardsView.header.bpBoughtText();
+                            case I.GIFT_CHAPTER:
+                                return Tt.battlePassAwardsView.header.bpReceivedText();
                             case I.BUY_BATTLE_PASS_LEVELS:
                                 return e
                                     ? Tt.battlePassAwardsView.header.bpFinalLevelText()

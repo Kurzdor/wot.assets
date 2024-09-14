@@ -187,7 +187,7 @@
     }
 
     100% {
-        opacity: 0.5;
+        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -217,7 +217,7 @@
     width: 1366rem;
     height: 356rem;
     margin-top: -80rem;
-    background: url('R.images.armory_yard.gui.maps.icons.rewards.ribbon.regular_small') no-repeat center / contain;
+    background: url('R.images.armory_yard.gui.maps.icons.rewards.ribbon.regular') no-repeat center / contain;
     position: absolute;
     top: 50%;
     left: auto;
@@ -226,14 +226,10 @@
     width: 1600rem;
     height: 417rem;
     margin-top: -70rem;
-
-    /* background-image: url('R.images.armory_yard.gui.maps.icons.rewards.ribbon.regular_medium'); */
 }
 .mediaLarge .Content_ribbon_ff {
     width: 1920rem;
     height: 500rem;
-
-    /* background-image: url('R.images.armory_yard.gui.maps.icons.rewards.ribbon.regular_large'); */
 }
 .Content_ribbon__onlyRegular_e5 {
     margin-top: -28rem;
@@ -243,6 +239,67 @@
 }
 .mediaLarge .Content_ribbon__onlyRegular_e5 {
     margin-top: -72rem;
+}
+.Content_ribbon__gold_6e {
+    background-image: url('R.images.armory_yard.gui.maps.icons.rewards.ribbon.regular_gold');
+}
+.Content_glow_58 {
+    opacity: 0;
+    animation: Content_slideUp_8c 0.4s 1.2s 0.7s forwards;
+    align-self: center;
+    width: 620rem;
+    padding-bottom: 100%;
+    background: url('swf://gui/flash/animations/winback/rays.swf') no-repeat center / contain;
+    mix-blend-mode: additive;
+    position: absolute;
+    top: 170rem;
+}
+.mediaMedium .Content_glow_58 {
+    width: 712rem;
+    top: 150rem;
+}
+.mediaLarge .Content_glow_58 {
+    width: 840rem;
+    top: 180rem;
+}
+.Content_glow_58 {
+    z-index: -1;
+}
+.Content_glow2_59 {
+    opacity: 0;
+    animation-name: Content_raysAppearance_65, Content_rotate_d7;
+    animation-duration: 0.4s, 70s;
+    animation-fill-mode: forwards, forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1), linear;
+    animation-delay: 1.5s, 2.3s;
+    animation-iteration-count: 1, infinite;
+    width: 850rem;
+    height: 706rem;
+    background: url('R.images.armory_yard.gui.maps.icons.rewards.radial_lines') no-repeat center / cover;
+    position: relative;
+    top: 100rem;
+    z-index: -1;
+}
+.mediaMedium .Content_glow2_59 {
+    width: 1024rem;
+    height: 851rem;
+    background-image: url('R.images.armory_yard.gui.maps.icons.rewards.radial_lines_large');
+    top: 80rem;
+}
+.Content_vehicleRewards_88 {
+    display: flex;
+    flex-direction: row;
+    margin-top: -32rem;
+    position: absolute;
+    top: 50%;
+    left: auto;
+    transform: translateY(-50%);
+}
+.mediaMedium .Content_vehicleRewards_88 {
+    margin-top: -42rem;
+}
+.mediaLarge .Content_vehicleRewards_88 {
+    margin-top: -20rem;
 }
 .Content_mainRewards_fe {
     display: flex;
@@ -287,6 +344,18 @@
 }
 .mediaLarge .Content_regularRewards__onlyRegular_35 {
     margin-top: 85rem;
+}
+.Content_regularRewards__withVehicle_88 {
+    margin-top: 105rem;
+}
+.mediaSmall .Content_regularRewards__withVehicle_88 {
+    margin-top: 105rem;
+}
+.mediaMedium .Content_regularRewards__withVehicle_88 {
+    margin-top: 160rem;
+}
+.mediaLarge .Content_regularRewards__withVehicle_88 {
+    margin-top: 200rem;
 }
 
 .Reward_base_ea {
@@ -531,6 +600,25 @@
     margin: 0 18rem;
 }
 
+.RewardList_reward__info_2b {
+    padding-top: 5rem;
+}
+
+.VehicleReward_base_d5 {
+    display: flex;
+}
+
+.VehicleReward_image_1f {
+    width: 360rem;
+    height: 270rem;
+    background: no-repeat center / cover;
+}
+
+.mediaMedium .VehicleReward_image_1f {
+    width: 600rem;
+    height: 450rem;
+}
+
 .CButton_base_40 {
     display: flex;
     justify-content: center;
@@ -741,6 +829,281 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     opacity: 0.6;
 }
 
+.Box_mt__XS_0c {
+    margin-top: 4rem;
+}
+.Box_mt__SM_eb {
+    margin-top: 8rem;
+}
+.Box_mt__SMp_cf {
+    margin-top: 10rem;
+}
+.Box_mt__MD_25 {
+    margin-top: 16rem;
+}
+.Box_mt__MDp_49 {
+    margin-top: 20rem;
+}
+.Box_mt__LG_e8 {
+    margin-top: 32rem;
+}
+.Box_mt__XL_83 {
+    margin-top: 64rem;
+}
+
+.Box_mr__XS_7c {
+    margin-right: 4rem;
+}
+
+.Box_mr__SM_08 {
+    margin-right: 8rem;
+}
+
+.Box_mr__SMp_06 {
+    margin-right: 10rem;
+}
+
+.Box_mr__MD_4a {
+    margin-right: 16rem;
+}
+
+.Box_mr__MDp_b6 {
+    margin-right: 20rem;
+}
+
+.Box_mr__LG_d0 {
+    margin-right: 32rem;
+}
+
+.Box_mr__XL_db {
+    margin-right: 64rem;
+}
+
+.Box_mb__XS_bb {
+    margin-bottom: 4rem;
+}
+
+.Box_mb__SM_83 {
+    margin-bottom: 8rem;
+}
+
+.Box_mb__SMp_04 {
+    margin-bottom: 10rem;
+}
+
+.Box_mb__MD_ed {
+    margin-bottom: 16rem;
+}
+
+.Box_mb__MDp_65 {
+    margin-bottom: 20rem;
+}
+
+.Box_mb__LG_c8 {
+    margin-bottom: 32rem;
+}
+
+.Box_mb__XL_f8 {
+    margin-bottom: 64rem;
+}
+
+.Box_ml__XS_8a {
+    margin-left: 4rem;
+}
+
+.Box_ml__SM_e6 {
+    margin-left: 8rem;
+}
+
+.Box_ml__SMp_fb {
+    margin-left: 10rem;
+}
+
+.Box_ml__MD_2b {
+    margin-left: 16rem;
+}
+
+.Box_ml__MDp_c7 {
+    margin-left: 20rem;
+}
+
+.Box_ml__LG_39 {
+    margin-left: 32rem;
+}
+
+.Box_ml__XL_4a {
+    margin-left: 64rem;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* eslint-disable-next-line expectedscss*/
+.Text_paragraph-P10_2c {
+    font-size: 10rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_paragraph-P12_22 {
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Text_paragraph-P14_a7 {
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Text_paragraph-P16_90 {
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Text_paragraph-P18_50 {
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Text_paragraph-P24_33 {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 32rem;
+}
+.Text_heading-H14_8b {
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.Text_heading-H15_9e {
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.Text_heading-H18_b7 {
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H20R_f6 {
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H22_27 {
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H24R_be {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H24_0c {
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H28_78 {
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H36_32 {
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H56_c3 {
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H73_8f {
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H144_a9 {
+    font-size: 144rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.Text_BLACK_REAL_30 {
+    color: #000000;
+}
+.Text_WHITE_REAL_bc {
+    color: #ffffff;
+}
+.Text_WHITE_62 {
+    color: #f2f2f7;
+}
+.Text_WHITE_ORANGE_54 {
+    color: #fefeec;
+}
+.Text_WHITE_SPANISH_df {
+    color: #e9e2bf;
+}
+.Text_PAR_15 {
+    color: #8c8c7e;
+}
+.Text_PAR_SECONDARY_5d {
+    color: #595950;
+}
+.Text_PAR_TERTIARY_c9 {
+    color: #37362e;
+}
+.Text_INFO_RED_30 {
+    color: #ff0000;
+}
+.Text_RED_66 {
+    color: #ff2717;
+}
+.Text_RED_DARK_d8 {
+    color: #b70000;
+}
+.Text_YELLOW_ed {
+    color: #feab34;
+}
+.Text_ORANGE_be {
+    color: #ee7000;
+}
+.Text_CREAM_57 {
+    color: #ffdd99;
+}
+.Text_BROWN_18 {
+    color: #cbac77;
+}
+.Text_GREEN_BRIGHT_3f {
+    color: #80d43a;
+}
+.Text_GREEN_e3 {
+    color: #7ab300;
+}
+.Text_GREEN_DARK_f1 {
+    color: #497212;
+}
+.Text_BLUE_BOOSTER_21 {
+    color: #ccffff;
+}
+.Text_BLUE_TEAMKILLER_ab {
+    color: #09e2ff;
+}
+.Text_CRED_f7 {
+    color: #ced9d9;
+}
+.Text_GOLD_28 {
+    color: #ffc363;
+}
+.Text_BOND_be {
+    color: #c9c9b6;
+}
+.Text_PROM_65 {
+    color: #a29b70;
+}
+
 .Footer_base_7a {
     display: flex;
     flex-direction: column;
@@ -770,11 +1133,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .Footer_button_bf {
     min-width: 160rem;
-}
-
-.FormatText_base_d0 {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 @keyframes Header_fadeOut_34 {
@@ -824,7 +1182,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 
     100% {
-        opacity: 0.5;
+        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -1041,6 +1399,291 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     color: #ffdd99;
 }
 
+@keyframes VehicleHeader_fadeOut_0b {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+@keyframes VehicleHeader_fadeIn_d8 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes VehicleHeader_slideUp_42 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes VehicleHeader_slideDown_ad {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes VehicleHeader_raysAppearance_06 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes VehicleHeader_rotate_66 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.VehicleHeader_base_bd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 700;
+}
+.VehicleHeader_blinkAnimate1_97 {
+    position: absolute;
+    top: -157rem;
+    left: auto;
+    transform: translateX(38rem);
+    animation: VehicleHeader_movingX_short_0b 0.28s linear 0.78s forwards;
+}
+.mediaMedium .VehicleHeader_blinkAnimate1_97 {
+    top: -200rem;
+    transform: translateX(55rem);
+    animation: VehicleHeader_movingX_medium_57 0.28s linear 0.78s forwards;
+}
+.mediaLarge .VehicleHeader_blinkAnimate1_97 {
+    top: -249rem;
+    transform: translateX(137rem);
+    animation: VehicleHeader_movingX_large_2b 0.28s linear 0.78s forwards;
+}
+.VehicleHeader_blinkAnimate2_e3 {
+    width: 900rem;
+    height: 388rem;
+    background: url('R.images.armory_yard.gui.maps.icons.rewards.blink') no-repeat center / cover;
+    opacity: 0;
+    mix-blend-mode: screen;
+    transform: scale(0);
+    animation:
+        VehicleHeader_scaleYFirstStep_4e 0.68s cubic-bezier(0.62, 0, 0.7, 1) 0.5s forwards,
+        VehicleHeader_fadeIn_d8 0.28s cubic-bezier(0.33, 1, 0.68, 1) 0.5s forwards,
+        VehicleHeader_scaleYSecondStep_c6 0.36s ease-in-out 1.3s forwards,
+        VehicleHeader_fadeOut_0b 0.36s cubic-bezier(0.6, 0, 0.8, 1) 1.3s forwards;
+}
+.mediaMedium .VehicleHeader_blinkAnimate2_e3 {
+    width: 1200rem;
+    height: 516rem;
+    transform: scale(1);
+}
+.mediaLarge .VehicleHeader_blinkAnimate2_e3 {
+    width: 1500rem;
+    height: 646rem;
+    transform: scale(1);
+}
+@keyframes VehicleHeader_movingX_short_0b {
+    0% {
+        transform: translateX(38rem);
+    }
+
+    100% {
+        transform: translateX(-14rem);
+    }
+}
+@keyframes VehicleHeader_movingX_medium_57 {
+    0% {
+        transform: translateX(55rem);
+    }
+
+    100% {
+        transform: translateX(-21rem);
+    }
+}
+@keyframes VehicleHeader_movingX_large_2b {
+    0% {
+        transform: translateX(137rem);
+    }
+
+    100% {
+        transform: translateX(-28rem);
+    }
+}
+@keyframes VehicleHeader_scaleYFirstStep_4e {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+@keyframes VehicleHeader_scaleYSecondStep_c6 {
+    0% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(0.4);
+    }
+}
+.VehicleHeader_glowYellowAnimate1_ea {
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%) translateX(-13rem) scale(0);
+    animation: VehicleHeader_glowScaling_short_1e 0.4s linear 0.9s forwards;
+}
+.mediaMedium .VehicleHeader_glowYellowAnimate1_ea {
+    top: 22rem;
+    transform: translateX(-50%) translateX(-21rem) scaleY(0);
+    animation: VehicleHeader_glowScaling_medium_4f 0.4s linear 0.9s forwards;
+}
+.mediaLarge .VehicleHeader_glowYellowAnimate1_ea {
+    top: 29rem;
+    transform: translateX(-50%) translateX(-26rem) scaleY(0);
+    animation: VehicleHeader_glowScaling_large_72 0.4s linear 0.9s forwards;
+}
+.VehicleHeader_glowYellowAnimate2_7b {
+    width: 55rem;
+    height: 55rem;
+    background: url('R.images.armory_yard.gui.maps.icons.rewards.glow_yellow') no-repeat center / cover;
+    opacity: 0;
+    mix-blend-mode: hard-light;
+    transform: rotate(0);
+    animation:
+        VehicleHeader_glowRotate_7b 0.88s linear 0.9s forwards,
+        VehicleHeader_fadeIn_d8 0.22s cubic-bezier(0.6, 0, 0.8, 1) 0.5s forwards,
+        VehicleHeader_fadeOut_0b 0.28s cubic-bezier(1, 0, 0.8, 0.6) 1.5s forwards;
+}
+.mediaMedium .VehicleHeader_glowYellowAnimate2_7b {
+    width: 74rem;
+    height: 74rem;
+}
+.mediaLarge .VehicleHeader_glowYellowAnimate2_7b {
+    width: 92rem;
+    height: 92rem;
+}
+@keyframes VehicleHeader_glowScaling_short_1e {
+    0% {
+        transform: translateX(-50%) translateX(-13rem) scale(0);
+    }
+
+    100% {
+        transform: translateX(-50%) translateX(-13rem) scale(1);
+    }
+}
+@keyframes VehicleHeader_glowScaling_medium_4f {
+    0% {
+        transform: translateX(-50%) translateX(-21rem) scale(0);
+    }
+
+    100% {
+        transform: translateX(-50%) translateX(-21rem) scale(1);
+    }
+}
+@keyframes VehicleHeader_glowScaling_large_72 {
+    0% {
+        transform: translateX(-50%) translateX(-26rem) scale(0);
+    }
+
+    100% {
+        transform: translateX(-50%) translateX(-26rem) scale(1);
+    }
+}
+@keyframes VehicleHeader_glowRotate_7b {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(240deg);
+    }
+}
+.VehicleHeader_title_08 {
+    opacity: 0;
+    animation: VehicleHeader_slideUp_42 0.4s cubic-bezier(0.07, 0.82, 0.17, 1) 0.4s forwards;
+
+    color: #ffe5b1;
+
+    font-size: 36rem;
+
+    font-weight: 700;
+
+    line-height: 1.1;
+    margin-top: 2rem;
+}
+.mediaMedium .VehicleHeader_title_08 {
+    color: #ffe5b1;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.mediaLarge .VehicleHeader_title_08 {
+    color: #ffe5b1;
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 0;
+}
+.VehicleHeader_subTitle_48 {
+    opacity: 0;
+    animation: VehicleHeader_slideUp_42 0.4s cubic-bezier(0.07, 0.82, 0.17, 1) 0.5s forwards;
+    color: #fffdd9;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 14rem;
+}
+.mediaMedium .VehicleHeader_subTitle_48 {
+    color: #fffdd9;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.mediaLarge .VehicleHeader_subTitle_48 {
+    margin-top: 12rem;
+}
+.VehicleHeader_tankIcon_a3 {
+    width: 60rem;
+    height: 54rem;
+    margin: -17rem -7rem 0;
+    background: no-repeat center / cover;
+}
+.mediaMedium .VehicleHeader_tankIcon_a3 {
+    width: 64rem;
+    height: 64rem;
+}
+.VehicleHeader_accent_aa {
+    color: #cbac77;
+}
+
 @keyframes App_fadeOut_40 {
     from {
         opacity: 1;
@@ -1088,7 +1731,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 
     100% {
-        opacity: 0.5;
+        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -1112,8 +1755,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 .App_vignette_ea {
-    /* background: radial-gradient(72% 72% at 50% 50%, rgba(20, 17, 13, 0.29) 0%, rgba(32, 28, 22, 0.26) 100%);*/
-    /* mix-blend-mode: overlay;*/
     position: absolute;
     top: 0;
     right: 0;
@@ -1127,6 +1768,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .mediaMedium .App_header_f2 {
     top: 49rem;
+}
+.App_header__withVehicle_e1 {
+    top: 77rem;
+}
+.mediaMedium .App_header__withVehicle_e1 {
+    top: 40rem;
 }
 .App_content_e6 {
     margin-top: -56rem;
@@ -1142,6 +1789,9 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .mediaLarge .App_content_e6 {
     margin-top: -46rem;
 }
+.App_content__withVehicle_36 {
+    margin-top: 30rem;
+}
 .App_close_8a {
     position: absolute;
     top: 30rem;
@@ -1154,4 +1804,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .mediaLarge .App_footer_95 {
     bottom: 80rem;
+}
+.App_footer__withVehicle_1a {
+    bottom: 100rem;
+}
+.mediaMedium .App_footer__withVehicle_1a {
+    bottom: 110rem;
+}
+.mediaLarge .App_footer__withVehicle_1a {
+    bottom: 160rem;
+}
+.mediaExtraLarge .App_footer__withVehicle_1a {
+    bottom: 220rem;
 }

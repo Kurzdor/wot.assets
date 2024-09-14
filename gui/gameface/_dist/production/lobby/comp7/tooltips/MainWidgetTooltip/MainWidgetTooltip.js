@@ -1962,7 +1962,7 @@
                                 'div',
                                 { className: Y },
                                 r().createElement('div', { className: Q }, we.featureName()),
-                                r().createElement('div', { className: Z }, we.season.name()),
+                                r().createElement('div', { className: Z }, we.season.shortName()),
                                 u.qualification.isActive.get()
                                     ? r().createElement(he, { classNames: xe })
                                     : r().createElement(

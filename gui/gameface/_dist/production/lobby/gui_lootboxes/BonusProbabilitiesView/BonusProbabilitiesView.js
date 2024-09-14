@@ -69,8 +69,7 @@
                             (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
                             (u.CosmicLootboxSilver = 'lootBoxToken'),
-                            (u.CosmicLootboxCommon = 'cosmic_2024_2'),
-                            (u.RacesPoint = 'races_point');
+                            (u.CosmicLootboxCommon = 'cosmic_2024_2');
                     })(r || (r = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -209,7 +208,7 @@
                         o.E4.CosmicLootboxSilver,
                     ],
                     s = [o.E4.Gold, o.E4.Credits, o.E4.Crystal, o.E4.FreeXp],
-                    l = [o.E4.BattlePassPoints, o.E4.RacesPoint],
+                    l = [o.E4.BattlePassPoints],
                     c = [o.E4.PremiumPlus, o.E4.Premium],
                     E = (u) =>
                         i.includes(u)
@@ -622,13 +621,13 @@
                             })(u, o);
                         const w = (0, a.useRef)({ timeoutId: 0, isVisible: !1, prevTarget: null, hideTimerId: null }),
                             S = (0, a.useMemo)(() => h || (0, r.F)().resId, [h]),
-                            R = (0, a.useCallback)(() => {
+                            x = (0, a.useCallback)(() => {
                                 (w.current.isVisible && w.current.timeoutId) ||
                                     (s(t, B, { isMouseEvent: !0, on: !0, arguments: i(n) }, S),
                                     b && b(),
                                     (w.current.isVisible = !0));
                             }, [t, B, n, S, b]),
-                            x = (0, a.useCallback)(() => {
+                            R = (0, a.useCallback)(() => {
                                 if (w.current.isVisible || w.current.timeoutId) {
                                     const u = w.current.timeoutId;
                                     u > 0 && (clearTimeout(u), (w.current.timeoutId = 0)),
@@ -642,7 +641,7 @@
                                     ((w.current.prevTarget = document.elementFromPoint(u.clientX, u.clientY)),
                                     (w.current.hideTimerId = window.setTimeout(() => {
                                         const e = document.elementFromPoint(u.clientX, u.clientY);
-                                        e && !e.isSameNode(w.current.prevTarget) && x();
+                                        e && !e.isSameNode(w.current.prevTarget) && R();
                                     }, 200)));
                             }, []);
                         return (
@@ -657,16 +656,16 @@
                                 );
                             }, []),
                             (0, a.useEffect)(() => {
-                                !1 === g && x();
-                            }, [g, x]),
+                                !1 === g && R();
+                            }, [g, R]),
                             (0, a.useEffect)(
                                 () => (
-                                    window.addEventListener('mouseleave', x),
+                                    window.addEventListener('mouseleave', R),
                                     () => {
-                                        window.removeEventListener('mouseleave', x), x();
+                                        window.removeEventListener('mouseleave', R), R();
                                     }
                                 ),
-                                [x],
+                                [R],
                             ),
                             g
                                 ? (0, a.cloneElement)(
@@ -678,18 +677,18 @@
                                                   (u) => {
                                                       (u.clientX === window.innerWidth &&
                                                           u.clientY === window.innerHeight) ||
-                                                          ((w.current.timeoutId = window.setTimeout(R, F ? 100 : 400)),
+                                                          ((w.current.timeoutId = window.setTimeout(x, F ? 100 : 400)),
                                                           l && l(u),
                                                           P && P(u));
                                                   }),
                                               onMouseLeave: ((u) => (e) => {
-                                                  x(), null == c || c(e), null == u || u(e);
+                                                  R(), null == c || c(e), null == u || u(e);
                                               })(e.props.onMouseLeave),
                                               onClick: ((u) => (e) => {
-                                                  !1 === m && x(), null == A || A(e), null == u || u(e);
+                                                  !1 === m && R(), null == A || A(e), null == u || u(e);
                                               })(e.props.onClick),
                                               onMouseDown: ((u) => (e) => {
-                                                  !1 === m && x(), null == E || E(e), null == u || u(e);
+                                                  !1 === m && R(), null == E || E(e), null == u || u(e);
                                               })(e.props.onMouseDown),
                                           },
                                           f,
@@ -2790,13 +2789,13 @@
                     fu = 'HorizontalBar_base__nonActive_82',
                     wu = 'disable',
                     Su = { pending: !1, offset: 0 },
-                    Ru = (u) => {
+                    xu = (u) => {
                         var e;
                         return 0.9 * (null != (e = u.getWrapperSize()) ? e : 0);
                     },
-                    xu = () => {},
+                    Ru = () => {},
                     yu = (u, e) => Math.max(20, u.offsetWidth * e),
-                    Pu = (0, a.memo)(({ api: u, classNames: e = {}, getStepByRailClick: t = Ru, onDrag: r = xu }) => {
+                    Pu = (0, a.memo)(({ api: u, classNames: e = {}, getStepByRailClick: t = xu, onDrag: r = Ru }) => {
                         const n = (0, a.useRef)(null),
                             i = (0, a.useRef)(null),
                             s = (0, a.useRef)(null),
@@ -2861,7 +2860,7 @@
                                         const e = () => {
                                             m();
                                         };
-                                        let t = xu;
+                                        let t = Ru;
                                         const r = () => {
                                             t(), (t = Fu(_));
                                         };
@@ -3526,7 +3525,7 @@
                             )
                         );
                     }),
-                    ne = () => {
+                    ne = (0, I.Pi)(() => {
                         const u = (0, a.useState)(!1),
                             e = u[0],
                             t = u[1],
@@ -3554,7 +3553,7 @@
                                     }),
                             ),
                         );
-                    },
+                    }),
                     ae = 'ProbabilitiesWithRotation_rewardsTitle_b8',
                     oe = 'AnimatedSlots_divider_cd',
                     ie = (u) => Math.sqrt(1 - Math.pow(u - 1, 2));

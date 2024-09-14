@@ -68,8 +68,7 @@
                             (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
                             (u.CosmicLootboxSilver = 'lootBoxToken'),
-                            (u.CosmicLootboxCommon = 'cosmic_2024_2'),
-                            (u.RacesPoint = 'races_point');
+                            (u.CosmicLootboxCommon = 'cosmic_2024_2');
                     })(n || (n = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -206,7 +205,6 @@
                     n.E4.Crystal,
                     n.E4.FreeXp,
                     n.E4.BattlePassPoints,
-                    n.E4.RacesPoint,
                     n.E4.PremiumPlus,
                     n.E4.Premium;
                 const E = (u, e, t) => {
@@ -340,7 +338,7 @@
                                 for (n = 0; n < r.length; n++) (t = r[n]), e.indexOf(t) >= 0 || (E[t] = u[t]);
                                 return E;
                             })(u, o);
-                        const c = (0, E.useMemo)(() => {
+                        const l = (0, E.useMemo)(() => {
                             const u = Object.assign({}, D, { body: t, header: i, note: a, alert: s });
                             for (const e in u) void 0 === u[e] && delete u[e];
                             return u;
@@ -350,16 +348,16 @@
                             A(
                                 {
                                     contentId:
-                                        ((l = null == D ? void 0 : D.hasHtmlContent),
-                                        l ? F.SimpleTooltipHtmlContent('resId') : F.SimpleTooltipContent('resId')),
+                                        ((c = null == D ? void 0 : D.hasHtmlContent),
+                                        c ? F.SimpleTooltipHtmlContent('resId') : F.SimpleTooltipContent('resId')),
                                     decoratorId: R.views.common.tooltip_window.tooltip_window.TooltipWindow('resId'),
-                                    args: c,
+                                    args: l,
                                 },
                                 B,
                             ),
                             e,
                         );
-                        var l;
+                        var c;
                     };
             },
             2056: (u, e, t) => {
@@ -424,9 +422,9 @@
                             s = u.onMouseDown,
                             D = u.onClick,
                             B = u.ignoreShowDelay,
-                            c = void 0 !== B && B,
-                            l = u.ignoreMouseClick,
-                            C = void 0 !== l && l,
+                            l = void 0 !== B && B,
+                            c = u.ignoreMouseClick,
+                            C = void 0 !== c && c,
                             d = u.decoratorId,
                             _ = void 0 === d ? 0 : d,
                             m = u.isEnabled,
@@ -502,7 +500,7 @@
                                                   (u) => {
                                                       (u.clientX === window.innerWidth &&
                                                           u.clientY === window.innerHeight) ||
-                                                          ((f.current.timeoutId = window.setTimeout(y, c ? 100 : 400)),
+                                                          ((f.current.timeoutId = window.setTimeout(y, l ? 100 : 400)),
                                                           i && i(u),
                                                           R && R(u));
                                                   }),
@@ -682,12 +680,12 @@
                         events: () => r.U,
                         extraSize: () => f,
                         forceTriggerMouseMove: () => g,
-                        freezeTextureBeforeResize: () => l,
+                        freezeTextureBeforeResize: () => c,
                         getBrowserTexturePath: () => i,
                         getDisplayStatus: () => h,
                         getScale: () => C,
                         getSize: () => D,
-                        getViewGlobalPosition: () => c,
+                        getViewGlobalPosition: () => l,
                         isEventHandled: () => b,
                         isFocused: () => p,
                         pxToRem: () => d,
@@ -725,11 +723,11 @@
                 function B(u, e, t = 'px') {
                     return 'rem' === t ? viewEnv.resizeViewRem(u, e) : viewEnv.resizeViewPx(u, e);
                 }
-                function c(u = 'rem') {
+                function l(u = 'rem') {
                     const e = viewEnv.getViewGlobalPositionRem();
                     return 'rem' === u ? e : { x: _(e.x), y: _(e.y) };
                 }
-                function l() {
+                function c() {
                     viewEnv.freezeTextureBeforeResize();
                 }
                 function C() {
@@ -1164,8 +1162,8 @@
                     s = Object.freeze({ FRACTIONAL: 0, WO_ZERO_DIGITS: 1 }),
                     D = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1 }),
                     B = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1, YEAR_MONTH: 2 });
-                var c = t(5521),
-                    l = t(3138);
+                var l = t(5521),
+                    c = t(3138);
                 const C = ['args'];
                 function d(u, e, t, n, E, r, o) {
                     try {
@@ -1246,7 +1244,7 @@
                     },
                     v = () => p(F.CLOSE),
                     b = (u, e) => {
-                        u.keyCode === c.n.ESCAPE && e();
+                        u.keyCode === l.n.ESCAPE && e();
                     };
                 var g = t(7572);
                 const h = E.instance,
@@ -1266,17 +1264,17 @@
                             p(F.CONTEXT_MENU, { isMouseEvent: !0, contentID: u, on: !0, decoratorID: t, args: e });
                         },
                         sendShowPopOverEvent: (u, e, t, n, E = R.invalid('resId'), r) => {
-                            const o = l.O.view.getViewGlobalPosition(),
+                            const o = c.O.view.getViewGlobalPosition(),
                                 A = t.getBoundingClientRect(),
                                 i = A.x,
                                 a = A.y,
                                 s = A.width,
                                 D = A.height,
                                 B = {
-                                    x: l.O.view.pxToRem(i) + o.x,
-                                    y: l.O.view.pxToRem(a) + o.y,
-                                    width: l.O.view.pxToRem(s),
-                                    height: l.O.view.pxToRem(D),
+                                    x: c.O.view.pxToRem(i) + o.x,
+                                    y: c.O.view.pxToRem(a) + o.y,
+                                    width: c.O.view.pxToRem(s),
+                                    height: c.O.view.pxToRem(D),
                                 };
                             p(F.POP_OVER, {
                                 isMouseEvent: !0,
@@ -1476,7 +1474,7 @@
                             for (n = 0; n < r.length; n++) (t = r[n]), e.indexOf(t) >= 0 || (E[t] = u[t]);
                             return E;
                         })(u, i);
-                    const c = (function () {
+                    const l = (function () {
                             const u = (0, o.useRef)(0);
                             var e;
                             return (
@@ -1505,12 +1503,12 @@
                                 )
                             );
                         })(),
-                        l = A().useRef(null);
+                        c = A().useRef(null);
                     var C;
                     return (
                         (C = () => {
-                            c.run(() => {
-                                const u = l.current;
+                            l.run(() => {
+                                const u = c.current;
                                 if (!u) return;
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
@@ -1530,7 +1528,7 @@
                             a({}, B, {
                                 className: E()(F.base, F[`base__theme-${D}`], n),
                                 ref: function (u) {
-                                    (l.current = u), 'function' == typeof e ? e(u) : e && (e.current = u);
+                                    (c.current = u), 'function' == typeof e ? e(u) : e && (e.current = u);
                                 },
                             }),
                             A().createElement('div', { className: F.decorator }, t),
@@ -1539,8 +1537,8 @@
                 });
                 var D = t(493),
                     B = t.n(D),
-                    c = t(3403);
-                function l() {
+                    l = t(3403);
+                function c() {
                     return !1;
                 }
                 console.log;
@@ -1690,7 +1688,7 @@
                                                         compensation: u.object('compensation'),
                                                         vehicleStageList: u.array('vehicleStageList'),
                                                     },
-                                                    t = (0, p.Om)(() => e.vehicleStageList.get(), { equals: l }),
+                                                    t = (0, p.Om)(() => e.vehicleStageList.get(), { equals: c }),
                                                     n = (0, p.Om)(() => e.vehicleStageList.get().length),
                                                     E = (0, p.Om)(
                                                         (u) =>
@@ -1703,7 +1701,7 @@
                                                                           ? void 0
                                                                           : t.value;
                                                             })(t(), u),
-                                                        { equals: l },
+                                                        { equals: c },
                                                     ),
                                                     r = (0, p.Om)(
                                                         (u) => {
@@ -1728,7 +1726,7 @@
                                                                 : void 0;
                                                             var n, r;
                                                         },
-                                                        { equals: l },
+                                                        { equals: c },
                                                     ),
                                                     o = (0, p.Om)((u) => {
                                                         if (u === n() - 1) {
@@ -1757,7 +1755,7 @@
                                                 observableModel: {
                                                     array: (e, t) => {
                                                         const n = null != t ? t : F(e),
-                                                            E = C.LO.box(n, { equals: l });
+                                                            E = C.LO.box(n, { equals: c });
                                                         return (
                                                             'real' === u &&
                                                                 A.subscribe(
@@ -1769,7 +1767,7 @@
                                                     },
                                                     object: (e, t) => {
                                                         const n = null != t ? t : F(e),
-                                                            E = C.LO.box(n, { equals: l });
+                                                            E = C.LO.box(n, { equals: c });
                                                         return (
                                                             'real' === u &&
                                                                 A.subscribe(
@@ -1834,7 +1832,7 @@
                                     s = (0, o.useRef)(!1),
                                     D = (0, o.useState)(u),
                                     B = D[0],
-                                    c = D[1],
+                                    l = D[1],
                                     b = (0, o.useState)(() => a(u, n, F)),
                                     g = b[0],
                                     h = b[1];
@@ -1843,7 +1841,7 @@
                                         s.current ? h(a(B, n, F)) : (s.current = !0);
                                     }, [F, B, n]),
                                     (0, o.useEffect)(() => {
-                                        c(u);
+                                        l(u);
                                     }, [u]),
                                     (0, o.useEffect)(
                                         () => () => {
@@ -1925,7 +1923,7 @@
                         stageIcon__3: 'RotationVehicleList_stageIcon__3_60',
                     },
                     x = R.strings.gui_lootboxes.lootboxRotationTooltip,
-                    L = (0, c.Pi)(({ stageIndex: u }) => {
+                    L = (0, l.Pi)(({ stageIndex: u }) => {
                         const e = h().model,
                             t = u + 1,
                             n = e.root.get().stageRotation === t,
@@ -1952,7 +1950,7 @@
                             r && A().createElement('div', { className: N.bonusBlock }, A().createElement(I.L, r)),
                         );
                     }),
-                    U = (0, c.Pi)(() => {
+                    U = (0, l.Pi)(() => {
                         const u = h().model;
                         return A().createElement(
                             'div',

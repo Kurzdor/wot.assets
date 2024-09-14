@@ -11,135 +11,110 @@
     position: relative;
 }
 
-.Column_base_a8 {
-    flex: 1 1 auto;
-    position: relative;
+.Box_mt__XS_0c {
+    margin-top: 4rem;
+}
+.Box_mt__SM_eb {
+    margin-top: 8rem;
+}
+.Box_mt__SMp_cf {
+    margin-top: 10rem;
+}
+.Box_mt__MD_25 {
+    margin-top: 16rem;
+}
+.Box_mt__MDp_49 {
+    margin-top: 20rem;
+}
+.Box_mt__LG_e8 {
+    margin-top: 32rem;
+}
+.Box_mt__XL_83 {
+    margin-top: 64rem;
 }
 
-.Column_base__notFirstColumn_74::after {
-    width: 1rem;
-    height: 100%;
-    background: linear-gradient(to bottom, transparent 50%, rgba(18, 17, 11, 1) 50%),
-        linear-gradient(180deg, #c9c9b6 100%);
-    background-size:
-        4rem 3rem,
-        100% 100%;
-    opacity: 0.2;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
+.Box_mr__XS_7c {
+    margin-right: 4rem;
 }
 
-.Column_battleType_38 {
-    color: #e9e2bf;
-    font-size: 14rem;
-    font-weight: 700;
-    line-height: 1.15;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    height: 30rem;
-    padding-left: 25rem;
-    position: relative;
+.Box_mr__SM_08 {
+    margin-right: 8rem;
 }
 
-.Column_cell_73 {
-    position: relative;
+.Box_mr__SMp_06 {
+    margin-right: 10rem;
 }
 
-.Column_separator_99 {
-    width: 100%;
-    height: 1rem;
-    background: linear-gradient(to right, transparent 50%, rgba(18, 17, 11, 1) 50%),
-        linear-gradient(270deg, #c9c9b6 0%, #12110b 100%);
-    background-size:
-        3rem 2rem,
-        100% 100%;
-    opacity: 0.2;
-    position: relative;
-    z-index: 1;
+.Box_mr__MD_4a {
+    margin-right: 16rem;
 }
 
-.Column_base__notFirstColumn_74 .Column_separator_99 {
-    background-image: linear-gradient(to left, transparent 50%, rgba(18, 17, 11, 1) 50%),
-        linear-gradient(90deg, #c9c9b6 0%, #12110b 100%);
+.Box_mr__MDp_b6 {
+    margin-right: 20rem;
 }
 
-.Column_row_97 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 32rem;
-    padding: 0rem 25rem 2rem;
-    position: relative;
+.Box_mr__LG_d0 {
+    margin-right: 32rem;
 }
 
-.Column_row__last_4d {
-    margin-bottom: 6rem;
+.Box_mr__XL_db {
+    margin-right: 64rem;
 }
 
-.Column_pointContainer_30 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Box_mb__XS_bb {
+    margin-bottom: 4rem;
 }
 
-.Column_point_1b {
-    color: #ffdd99;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-right: 5rem;
+.Box_mb__SM_83 {
+    margin-bottom: 8rem;
 }
 
-.Column_place_90 {
-    color: #e9e2bf;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
+.Box_mb__SMp_04 {
+    margin-bottom: 10rem;
 }
 
-.Column_reward_c1 {
-    width: 16rem;
-    height: 16rem;
-    margin-top: 1rem;
-    background: url('R.images.battle_royale_progression.gui.maps.progression.token_battle_royale') no-repeat center /
-        cover;
+.Box_mb__MD_ed {
+    margin-bottom: 16rem;
 }
 
-.Column_dash_3c {
-    color: #ffdd99;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-right: 15rem;
+.Box_mb__MDp_65 {
+    margin-bottom: 20rem;
 }
 
-.Table_base_ce {
-    width: 100%;
-    position: relative;
+.Box_mb__LG_c8 {
+    margin-bottom: 32rem;
 }
 
-.Table_battleTypeBg_12 {
-    width: 100%;
-    height: 32rem;
-    background: url('R.images.battle_royale.gui.maps.tooltips.battleType_bg') no-repeat center / cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+.Box_mb__XL_f8 {
+    margin-bottom: 64rem;
 }
 
-.Table_table_a9 {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+.Box_ml__XS_8a {
+    margin-left: 4rem;
 }
 
-.App_base_e6 {
-    width: 363rem;
+.Box_ml__SM_e6 {
+    margin-left: 8rem;
+}
+
+.Box_ml__SMp_fb {
+    margin-left: 10rem;
+}
+
+.Box_ml__MD_2b {
+    margin-left: 16rem;
+}
+
+.Box_ml__MDp_c7 {
+    margin-left: 20rem;
+}
+
+.Box_ml__LG_39 {
+    margin-left: 32rem;
+}
+
+.Box_ml__XL_4a {
+    margin-left: 64rem;
 }
 
 .FormatText_base_d0 {
@@ -147,200 +122,329 @@
     flex-wrap: wrap;
 }
 
-.Schedule_base_f8 {
-    margin-top: 12rem;
-    background: url('R.images.battle_royale.gui.maps.tooltips.schedule_bg') no-repeat center / cover;
+/* eslint-disable-next-line expectedscss*/
+.Text_paragraph-P10_2c {
+    font-size: 10rem;
+    font-weight: 400;
+    line-height: 1.2;
 }
-
-.Schedule_base_f8::after,
-.Schedule_base_f8::before {
-    width: 100%;
-    height: 1rem;
-    background: linear-gradient(to right, transparent 50%, rgba(18, 17, 11, 1) 50%),
-        linear-gradient(270deg, #12110b 0%, #c9c9b6 50%, #12110b 100%);
-    background-size:
-        3rem 2rem,
-        100% 100%;
-    opacity: 0.2;
-    content: '';
-    position: relative;
-    left: 0;
-}
-
-.Schedule_base_f8::after {
-    bottom: 0;
-}
-
-.Schedule_base_f8::before {
-    top: 0;
-}
-
-.Schedule_container_28 {
-    margin: 10rem 0;
-    margin-left: 22rem;
-}
-
-.Schedule_title_0b {
-    display: flex;
-}
-
-.Schedule_icon_b3 {
-    width: 18rem;
-    height: 18rem;
-    margin: -2rem 2rem 0;
-    background: url('R.images.gui.maps.icons.buttons.calendar') no-repeat center / cover;
-}
-
-.Schedule_text_83 {
-    color: #e9e2bf;
-    font-size: 14rem;
+.Text_paragraph-P12_22 {
+    font-size: 12rem;
     font-weight: 400;
     line-height: 1.3;
-    margin-left: 2rem;
 }
-
-.Schedule_scheduleContainer_e8 {
-    margin-left: 23rem;
-}
-
-.Schedule_schedule_b0 {
-    display: flex;
-}
-
-.Schedule_period_6e {
-    color: #8c8c7e;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-right: 5rem;
-    margin-bottom: 2rem;
-}
-
-.Schedule_period__today_17 {
-    color: #e9e2bf;
+.Text_paragraph-P14_a7 {
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
-
-.Schedule_description_83 {
-    color: #8c8c7e;
-    font-size: 14rem;
+.Text_paragraph-P16_90 {
+    font-size: 16rem;
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 1.25;
 }
-
-.Footer_base_7d {
-    width: 100%;
-    padding: 20rem 0;
-}
-
-.Footer_container_7b {
-    width: 318rem;
-    margin-left: 24rem;
-}
-
-.Footer_title_9a {
-    display: flex;
-}
-
-.Footer_icon_4d {
-    width: 16rem;
-    height: 16rem;
-    margin-top: 0.4rem;
-    margin-right: 5rem;
-    background: no-repeat center / cover;
-}
-
-.Footer_base__high_74 .Footer_icon_4d {
-    background-image: url('R.images.gui.maps.icons.library.CancelIcon_1');
-}
-
-.Footer_base__medium_6a .Footer_icon_4d {
-    background-image: url('R.images.gui.maps.icons.library.alertIcon');
-}
-
-.Footer_base__low_f3 .Footer_icon_4d {
-    background-image: url('R.images.gui.maps.icons.library.attentionIcon1');
-}
-
-.Footer_text_45 {
-    color: #e9e2bf;
-    font-size: 14rem;
+.Text_paragraph-P18_50 {
+    font-size: 18rem;
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 1.25;
 }
-
-.Footer_description_4a {
-    color: #8c8c7e;
-    font-size: 14rem;
+.Text_paragraph-P24_33 {
+    font-size: 24rem;
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 32rem;
 }
-
-.Header_base_82 {
-    width: 100%;
-    margin-bottom: 15rem;
-    padding-left: 23rem;
+.Text_heading-H14_8b {
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
 }
-
-.Header_header_72 {
-    width: 100%;
-    height: 80rem;
-    padding: 20rem 0;
-    background: url('R.images.gui.maps.icons.battleRoyale.backgrounds.widget_tooltip_background') no-repeat center/
-        cover;
-    position: relative;
-}
-
-.Header_base__completed_39 .Header_completedIcon_4f {
-    width: 250rem;
-    height: 79rem;
-    background: url('R.images.battle_royale.gui.maps.tooltips.check_mark') no-repeat center/ cover;
-    position: absolute;
-    top: 28rem;
-    left: 45rem;
-}
-
-.Header_description_b1 {
-    width: 318rem;
-    margin: 15rem 0 5rem;
-}
-
-.Header_base__completed_39 .Header_description_b1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: -10rem;
-}
-
-.Header_subtitle_33 {
-    display: none;
-}
-
-.Header_base__completed_39 .Header_subtitle_33 {
-    display: block;
-    color: #fefeec;
+.Text_heading-H15_9e {
     font-size: 15rem;
     font-weight: 700;
     line-height: 1.15;
 }
-
-.Header_title_62 {
-    color: #e9e2bf;
+.Text_heading-H18_b7 {
     font-size: 18rem;
     font-weight: 700;
     line-height: 1.1;
-    margin-bottom: 3rem;
+}
+.Text_heading-H20R_f6 {
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H22_27 {
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H24R_be {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H24_0c {
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H28_78 {
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H36_32 {
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H56_c3 {
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H73_8f {
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H144_a9 {
+    font-size: 144rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.Text_BLACK_REAL_30 {
+    color: #000000;
+}
+.Text_WHITE_REAL_bc {
+    color: #ffffff;
+}
+.Text_WHITE_62 {
+    color: #f2f2f7;
+}
+.Text_WHITE_ORANGE_54 {
+    color: #fefeec;
+}
+.Text_WHITE_SPANISH_df {
+    color: #e9e2bf;
+}
+.Text_PAR_15 {
+    color: #8c8c7e;
+}
+.Text_PAR_SECONDARY_5d {
+    color: #595950;
+}
+.Text_PAR_TERTIARY_c9 {
+    color: #37362e;
+}
+.Text_INFO_RED_30 {
+    color: #ff0000;
+}
+.Text_RED_66 {
+    color: #ff2717;
+}
+.Text_RED_DARK_d8 {
+    color: #b70000;
+}
+.Text_YELLOW_ed {
+    color: #feab34;
+}
+.Text_ORANGE_be {
+    color: #ee7000;
+}
+.Text_CREAM_57 {
+    color: #ffdd99;
+}
+.Text_BROWN_18 {
+    color: #cbac77;
+}
+.Text_GREEN_BRIGHT_3f {
+    color: #80d43a;
+}
+.Text_GREEN_e3 {
+    color: #7ab300;
+}
+.Text_GREEN_DARK_f1 {
+    color: #497212;
+}
+.Text_BLUE_BOOSTER_21 {
+    color: #ccffff;
+}
+.Text_BLUE_TEAMKILLER_ab {
+    color: #09e2ff;
+}
+.Text_CRED_f7 {
+    color: #ced9d9;
+}
+.Text_GOLD_28 {
+    color: #ffc363;
+}
+.Text_BOND_be {
+    color: #c9c9b6;
+}
+.Text_PROM_65 {
+    color: #a29b70;
 }
 
-.Header_text_23 {
+.Countdown_base_fe {
+    display: flex;
+    align-items: center;
+}
+
+.Countdown_icon_8b {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+}
+
+.Countdown_description_8d {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.App_base_eb {
+    display: flex;
+    flex-direction: column;
+    width: 360rem;
+    padding-bottom: 14rem;
+}
+
+.App_disableWrapper_6a {
+    padding: 16rem 17rem 0rem;
+}
+
+.App_disableTitle_c4 {
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    padding-bottom: 8rem;
+}
+
+.App_disableSubtitle_64 {
     color: #8c8c7e;
     font-size: 14rem;
     font-weight: 400;
     line-height: 1.3;
 }
 
-.Header_base__completed_39 .Header_text_23 {
-    text-align: center;
+.App_header_5c {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 96rem;
+    padding: 16rem 25rem 0rem 32rem;
+    background: no-repeat center / cover;
+}
+
+.App_divider_8c {
+    width: 100%;
+    height: 2rem;
+    background: url('R.images.winback.gui.maps.icons.tooltip.separator') no-repeat center / cover;
+}
+
+.App_title_e3 {
+    color: #e9e2bf;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.App_subtitle_0e {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.App_subtitle__complete_fe {
+    color: #ffdd99;
+    text-shadow:
+        0 0 15rem #e52,
+        0 0 8rem #ff2a00,
+        0 0 4rem rgba(255, 127, 0, 0.25);
+}
+
+.App_description_81 {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    padding: 27rem 25rem 37rem 32rem;
+}
+
+.App_description__inProgress_39 {
+    margin-bottom: -17rem;
+}
+
+.App_titleDescription_c6 {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.App_subtitleWrapper_83 {
+    display: flex;
+    align-items: center;
+}
+
+.App_complete_23 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24rem;
+    padding-bottom: 14rem;
+}
+
+.App_complete__complete_61 {
+    flex-direction: row;
+}
+
+.App_iconDone_51 {
+    width: 16rem;
+    height: 16rem;
+    background: url('R.images.gui.maps.icons.library.done') no-repeat center / contain;
+}
+
+.App_completeText_dc {
+    color: #7ab300;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-left: 6rem;
+}
+
+.App_timerBlock_26 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16rem;
+}
+
+.App_time_ea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -18rem;
+    text-shadow:
+        0 0 15rem #e52,
+        0 0 8rem #ff2a00,
+        0 0 4rem rgba(255, 127, 0, 0.25);
+    color: #ffdd99;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.App_timerText_f8 {
+    color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    justify-content: center;
 }

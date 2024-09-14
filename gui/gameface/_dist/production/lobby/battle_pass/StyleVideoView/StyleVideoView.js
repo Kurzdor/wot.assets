@@ -1284,14 +1284,15 @@
                     M = P[1],
                     A = 'StyleVideo_base_16',
                     S = 'StyleVideo_video_f0',
-                    C = (e, t, n) => {
+                    C = 16 / 9,
+                    L = (e, t, n) => {
                         const r = viewEnv.pxToRem(e) * n,
                             o = viewEnv.pxToRem(t) * n,
-                            i = r / 1.6,
+                            i = r / C,
                             a = o > i;
-                        return { width: `${a ? 1.6 * o : r}rem`, height: `${a ? o : i}rem` };
+                        return { width: `${a ? o * C : r}rem`, height: `${a ? o : i}rem` };
                     },
-                    L = (0, p.Pi)(() => {
+                    N = (0, p.Pi)(() => {
                         const e = M(),
                             t = e.model,
                             n = e.controls,
@@ -1351,14 +1352,14 @@
                                     },
                                     onPause: n.close,
                                     ref: d,
-                                    style: C(a, s, c),
+                                    style: L(a, s, c),
                                     onError: m,
                                 }),
                             )
                         );
                     });
                 engine.whenReady.then(() => {
-                    a().render(o().createElement(k, null, o().createElement(L, null)), document.getElementById('root'));
+                    a().render(o().createElement(k, null, o().createElement(N, null)), document.getElementById('root'));
                 });
             },
         },
