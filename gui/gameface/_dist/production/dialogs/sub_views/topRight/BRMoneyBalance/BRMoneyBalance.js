@@ -837,81 +837,80 @@
                     (u.None = 'None'), (u.Shallow = 'Shallow'), (u.Deep = 'Deep');
                 })(w || (w = {}));
                 const p = (u = 'model', e = w.Deep) => {
-                    const t = (0, n.useState)(0),
-                        E = (t[0], t[1]),
-                        F = (0, n.useMemo)(() => B(), []),
-                        A = F.caller,
-                        r = F.resId,
-                        o = (0, n.useMemo)(
-                            () => (window.__feature && window.__feature !== A ? `subViews.${A}.${u}` : u),
-                            [A, u],
-                        ),
-                        i = (0, n.useState)(() =>
-                            ((u) => {
-                                const e = c(u, window);
-                                for (const u in e) 'function' == typeof e[u] && (e[u] = e[u].bind(e));
-                                return C(e) ? e.value : e;
-                            })(_(o)),
-                        ),
-                        a = i[0],
-                        s = i[1],
-                        D = (0, n.useRef)(-1);
-                    return (
-                        l(() => {
-                            if (
-                                ('boolean' == typeof e &&
-                                    ((e = e ? w.Deep : w.None),
-                                    console.warn(
-                                        'Boolean key for useModel "tracking" param is deprecated. Use ModelTracking enum values instead!',
-                                    )),
-                                e !== w.None)
-                            ) {
-                                const t = (u) => {
-                                        ((u) => u && 'CoherentArrayProxy' === u.__proto__.constructor.name)(u) &&
-                                        e === w.Deep
-                                            ? (u === a && E((u) => u + 1), s(u))
-                                            : s(Object.assign([], u));
-                                    },
-                                    n = v(u);
-                                D.current = m.addCallback(n, t, r, e === w.Deep);
-                            }
+                        const t = (0, n.useState)(0),
+                            E = (t[0], t[1]),
+                            F = (0, n.useMemo)(() => B(), []),
+                            A = F.caller,
+                            r = F.resId,
+                            o = (0, n.useMemo)(
+                                () => (window.__feature && window.__feature !== A ? `subViews.${A}.${u}` : u),
+                                [A, u],
+                            ),
+                            i = (0, n.useState)(() =>
+                                ((u) => {
+                                    const e = c(u, window);
+                                    for (const u in e) 'function' == typeof e[u] && (e[u] = e[u].bind(e));
+                                    return C(e) ? e.value : e;
+                                })(_(o)),
+                            ),
+                            a = i[0],
+                            s = i[1],
+                            D = (0, n.useRef)(-1);
+                        return (
+                            l(() => {
+                                if (
+                                    ('boolean' == typeof e &&
+                                        ((e = e ? w.Deep : w.None),
+                                        console.warn(
+                                            'Boolean key for useModel "tracking" param is deprecated. Use ModelTracking enum values instead!',
+                                        )),
+                                    e !== w.None)
+                                ) {
+                                    const t = (u) => {
+                                            ((u) => u && 'CoherentArrayProxy' === u.__proto__.constructor.name)(u) &&
+                                            e === w.Deep
+                                                ? (u === a && E((u) => u + 1), s(u))
+                                                : s(Object.assign([], u));
+                                        },
+                                        n = v(u);
+                                    D.current = m.addCallback(n, t, r, e === w.Deep);
+                                }
+                            }),
+                            (0, n.useEffect)(() => {
+                                if (e !== w.None)
+                                    return () => {
+                                        m.removeCallback(D.current, r);
+                                    };
+                            }, [r, e]),
+                            a
+                        );
+                    },
+                    b =
+                        (s.Sw.instance,
+                        ({ format: u, value: e }) => {
+                            const t = ((u, e = 'integral') => {
+                                let t;
+                                t = 'gold' === e ? s.B3.GOLD : s.B3.INTEGRAL;
+                                return void 0 === u ? '' : s.Z5.getNumberFormat(u, t);
+                            })(e, u);
+                            return t ? E().createElement('span', null, t) : null;
                         }),
-                        (0, n.useEffect)(() => {
-                            if (e !== w.None)
-                                return () => {
-                                    m.removeCallback(D.current, r);
-                                };
-                        }, [r, e]),
-                        a
-                    );
-                };
-                s.Sw.instance;
-                class b extends E().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = s.B3.GOLD;
-                        else u = s.B3.INTEGRAL;
-                        const e = s.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                b.defaultProps = { format: 'integral' };
-                const h = [
-                    'children',
-                    'contentId',
-                    'args',
-                    'onMouseEnter',
-                    'onMouseLeave',
-                    'onMouseDown',
-                    'onClick',
-                    'ignoreShowDelay',
-                    'ignoreMouseClick',
-                    'decoratorId',
-                    'isEnabled',
-                    'targetId',
-                    'onShow',
-                    'onHide',
-                ];
+                    h = [
+                        'children',
+                        'contentId',
+                        'args',
+                        'onMouseEnter',
+                        'onMouseLeave',
+                        'onMouseDown',
+                        'onClick',
+                        'ignoreShowDelay',
+                        'ignoreMouseClick',
+                        'decoratorId',
+                        'isEnabled',
+                        'targetId',
+                        'onShow',
+                        'onHide',
+                    ];
                 function g(u) {
                     return Object.entries(u || {}).map(([u, e]) => {
                         const t = { __Type: 'GFValueProxy', name: u };

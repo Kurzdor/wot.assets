@@ -2587,17 +2587,15 @@
                             },
                             e,
                         );
+                    },
+                    eu = ({ format: e, value: u }) => {
+                        const t = ((e, u = 'integral') => {
+                            let t;
+                            t = 'gold' === u ? K.B3.GOLD : K.B3.INTEGRAL;
+                            return void 0 === e ? '' : K.Z5.getNumberFormat(e, t);
+                        })(u, e);
+                        return t ? s().createElement('span', null, t) : null;
                     };
-                class eu extends s().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = K.B3.GOLD;
-                        else e = K.B3.INTEGRAL;
-                        const u = K.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                eu.defaultProps = { format: 'integral' };
                 var uu = t(280),
                     tu = t(3649),
                     ru = t(7902);

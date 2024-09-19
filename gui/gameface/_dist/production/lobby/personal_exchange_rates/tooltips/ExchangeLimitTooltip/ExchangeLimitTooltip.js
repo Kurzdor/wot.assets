@@ -33,7 +33,7 @@
                         setRTPC: () => C,
                     });
                 var n = {};
-                t.r(n), t.d(n, { getBgUrl: () => f, getTextureUrl: () => p });
+                t.r(n), t.d(n, { getBgUrl: () => p, getTextureUrl: () => f });
                 var E = {};
                 function i(u) {
                     return (e) => (
@@ -167,11 +167,11 @@
                     g = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
                     h = Object.keys(g).reduce((u, e) => ((u[e] = () => B(g[e])), u), {}),
                     v = { play: Object.assign({}, h, { sound: B }), setRTPC: C };
-                function p(u, e, t = 1) {
+                function f(u, e, t = 1) {
                     return viewEnv.getChildTexturePath(u, e.width, e.height, t);
                 }
-                function f(u, e, t) {
-                    return `url(${p(u, e, t)})`;
+                function p(u, e, t) {
+                    return `url(${f(u, e, t)})`;
                 }
                 const w = { showing: 0, shown: 1, hiding: 2, hidden: 3 },
                     x = {
@@ -612,7 +612,7 @@
                     };
                 var h = t(572);
                 const v = a.instance,
-                    p = {
+                    f = {
                         DataTracker: n.Z,
                         ViewModel: h.Z,
                         ViewEventType: i,
@@ -694,7 +694,7 @@
                         SystemLocale: E.Z5,
                         UserLocale: E.cy,
                     };
-                window.ViewEnvHelper = p;
+                window.ViewEnvHelper = f;
             },
             613: (u, e, t) => {
                 'use strict';
@@ -834,7 +834,7 @@
                         g = a.mediumHeight,
                         h = a.smallHeight,
                         v = a.extraSmallHeight,
-                        p = { extraLarge: d, large: m, medium: g, small: h, extraSmall: v };
+                        f = { extraLarge: d, large: m, medium: g, small: h, extraSmall: v };
                     if (t.extraLarge || t.large || t.medium || t.small || t.extraSmall) {
                         if (t.extraLarge && E) return e;
                         if (t.large && i) return e;
@@ -842,11 +842,11 @@
                         if (t.small && F) return e;
                         if (t.extraSmall && l) return e;
                     } else {
-                        if (t.extraLargeWidth && o) return n(e, t, p);
-                        if (t.largeWidth && D) return n(e, t, p);
-                        if (t.mediumWidth && s) return n(e, t, p);
-                        if (t.smallWidth && C) return n(e, t, p);
-                        if (t.extraSmallWidth && _) return n(e, t, p);
+                        if (t.extraLargeWidth && o) return n(e, t, f);
+                        if (t.largeWidth && D) return n(e, t, f);
+                        if (t.mediumWidth && s) return n(e, t, f);
+                        if (t.smallWidth && C) return n(e, t, f);
+                        if (t.extraSmallWidth && _) return n(e, t, f);
                         if (
                             !(t.extraLargeWidth || t.largeWidth || t.mediumWidth || t.smallWidth || t.extraSmallWidth)
                         ) {
@@ -912,21 +912,21 @@
                     g = t.n(m),
                     h = t(926),
                     v = t.n(h);
-                let p, f, w;
+                let f, p, w;
                 !(function (u) {
                     (u[(u.ExtraSmall = i.extraSmall.width)] = 'ExtraSmall'),
                         (u[(u.Small = i.small.width)] = 'Small'),
                         (u[(u.Medium = i.medium.width)] = 'Medium'),
                         (u[(u.Large = i.large.width)] = 'Large'),
                         (u[(u.ExtraLarge = i.extraLarge.width)] = 'ExtraLarge');
-                })(p || (p = {})),
+                })(f || (f = {})),
                     (function (u) {
                         (u[(u.ExtraSmall = i.extraSmall.width)] = 'ExtraSmall'),
                             (u[(u.Small = i.small.width)] = 'Small'),
                             (u[(u.Medium = i.medium.width)] = 'Medium'),
                             (u[(u.Large = i.large.width)] = 'Large'),
                             (u[(u.ExtraLarge = i.extraLarge.width)] = 'ExtraLarge');
-                    })(f || (f = {})),
+                    })(p || (p = {})),
                     (function (u) {
                         (u[(u.ExtraSmall = i.extraSmall.height)] = 'ExtraSmall'),
                             (u[(u.Small = i.small.height)] = 'Small'),
@@ -941,33 +941,33 @@
                             a = ((u) => {
                                 switch (!0) {
                                     case u.extraLarge:
-                                        return p.ExtraLarge;
+                                        return f.ExtraLarge;
                                     case u.large:
-                                        return p.Large;
+                                        return f.Large;
                                     case u.medium:
-                                        return p.Medium;
+                                        return f.Medium;
                                     case u.small:
-                                        return p.Small;
+                                        return f.Small;
                                     case u.extraSmall:
-                                        return p.ExtraSmall;
+                                        return f.ExtraSmall;
                                     default:
-                                        return console.error('Unreachable media context resolution'), p.ExtraSmall;
+                                        return console.error('Unreachable media context resolution'), f.ExtraSmall;
                                 }
                             })(u),
                             n = ((u) => {
                                 switch (!0) {
                                     case u.extraLargeWidth:
-                                        return f.ExtraLarge;
+                                        return p.ExtraLarge;
                                     case u.largeWidth:
-                                        return f.Large;
+                                        return p.Large;
                                     case u.mediumWidth:
-                                        return f.Medium;
+                                        return p.Medium;
                                     case u.smallWidth:
-                                        return f.Small;
+                                        return p.Small;
                                     case u.extraSmallWidth:
-                                        return f.ExtraSmall;
+                                        return p.ExtraSmall;
                                     default:
-                                        return console.error('Unreachable media context resolution'), f.ExtraSmall;
+                                        return console.error('Unreachable media context resolution'), p.ExtraSmall;
                                 }
                             })(u),
                             E = ((u) => {
@@ -1004,11 +1004,11 @@
                     );
                 }
                 const L = {
-                        [f.ExtraSmall]: '',
-                        [f.Small]: v().SMALL_WIDTH,
-                        [f.Medium]: `${v().SMALL_WIDTH} ${v().MEDIUM_WIDTH}`,
-                        [f.Large]: `${v().SMALL_WIDTH} ${v().MEDIUM_WIDTH} ${v().LARGE_WIDTH}`,
-                        [f.ExtraLarge]: `${v().SMALL_WIDTH} ${v().MEDIUM_WIDTH} ${v().LARGE_WIDTH} ${v().EXTRA_LARGE_WIDTH}`,
+                        [p.ExtraSmall]: '',
+                        [p.Small]: v().SMALL_WIDTH,
+                        [p.Medium]: `${v().SMALL_WIDTH} ${v().MEDIUM_WIDTH}`,
+                        [p.Large]: `${v().SMALL_WIDTH} ${v().MEDIUM_WIDTH} ${v().LARGE_WIDTH}`,
+                        [p.ExtraLarge]: `${v().SMALL_WIDTH} ${v().MEDIUM_WIDTH} ${v().LARGE_WIDTH} ${v().EXTRA_LARGE_WIDTH}`,
                     },
                     O = {
                         [w.ExtraSmall]: '',
@@ -1018,11 +1018,11 @@
                         [w.ExtraLarge]: `${v().SMALL_HEIGHT} ${v().MEDIUM_HEIGHT} ${v().LARGE_HEIGHT} ${v().EXTRA_LARGE_HEIGHT}`,
                     },
                     S = {
-                        [p.ExtraSmall]: '',
-                        [p.Small]: v().SMALL,
-                        [p.Medium]: `${v().SMALL} ${v().MEDIUM}`,
-                        [p.Large]: `${v().SMALL} ${v().MEDIUM} ${v().LARGE}`,
-                        [p.ExtraLarge]: `${v().SMALL} ${v().MEDIUM} ${v().LARGE} ${v().EXTRA_LARGE}`,
+                        [f.ExtraSmall]: '',
+                        [f.Small]: v().SMALL,
+                        [f.Medium]: `${v().SMALL} ${v().MEDIUM}`,
+                        [f.Large]: `${v().SMALL} ${v().MEDIUM} ${v().LARGE}`,
+                        [f.ExtraLarge]: `${v().SMALL} ${v().MEDIUM} ${v().LARGE} ${v().EXTRA_LARGE}`,
                     },
                     T = (u) => {
                         let e = u.children,
@@ -1256,17 +1256,15 @@
                 });
                 var au = t(515),
                     nu = t(916);
-                class Eu extends a().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = nu.B3.GOLD;
-                        else u = nu.B3.INTEGRAL;
-                        const e = nu.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                Eu.defaultProps = { format: 'integral' };
-                const iu = {
+                const Eu = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? nu.B3.GOLD : nu.B3.INTEGRAL;
+                            return void 0 === u ? '' : nu.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? a().createElement('span', null, t) : null;
+                    },
+                    iu = {
                         base: 'Currency_base_57',
                         icon: 'Currency_icon_c5',
                         base__small: 'Currency_base__small_af',
@@ -1425,8 +1423,8 @@
                     return !1;
                 }
                 console.log;
-                var pu = t(174);
-                function fu(u, e) {
+                var fu = t(174);
+                function pu(u, e) {
                     var t = ('undefined' != typeof Symbol && u[Symbol.iterator]) || u['@@iterator'];
                     if (t) return (t = t.call(u)).next.bind(t);
                     if (
@@ -1515,7 +1513,7 @@
                                                         };
                                                     },
                                                     dispose: function () {
-                                                        for (var u, t = fu(a.keys()); !(u = t()).done; ) n(u.value, e);
+                                                        for (var u, t = pu(a.keys()); !(u = t()).done; ) n(u.value, e);
                                                     },
                                                     unsubscribe: n,
                                                 };
@@ -1539,11 +1537,11 @@
                                                 observableModel: {
                                                     array: (u, e) => {
                                                         const r = null != e ? e : F(u),
-                                                            a = pu.LO.box(r, { equals: vu });
+                                                            a = fu.LO.box(r, { equals: vu });
                                                         return (
                                                             'real' === t &&
                                                                 A.subscribe(
-                                                                    (0, pu.aD)((u) => a.set(u)),
+                                                                    (0, fu.aD)((u) => a.set(u)),
                                                                     u,
                                                                 ),
                                                             a
@@ -1551,11 +1549,11 @@
                                                     },
                                                     object: (u, e) => {
                                                         const r = null != e ? e : F(u),
-                                                            a = pu.LO.box(r, { equals: vu });
+                                                            a = fu.LO.box(r, { equals: vu });
                                                         return (
                                                             'real' === t &&
                                                                 A.subscribe(
-                                                                    (0, pu.aD)((u) => a.set(u)),
+                                                                    (0, fu.aD)((u) => a.set(u)),
                                                                     u,
                                                                 ),
                                                             a
@@ -1565,13 +1563,13 @@
                                                         const r = F(e);
                                                         if (Array.isArray(u)) {
                                                             const a = u.reduce(
-                                                                (u, e) => ((u[e] = pu.LO.box(r[e], {})), u),
+                                                                (u, e) => ((u[e] = fu.LO.box(r[e], {})), u),
                                                                 {},
                                                             );
                                                             return (
                                                                 'real' === t &&
                                                                     A.subscribe(
-                                                                        (0, pu.aD)((e) => {
+                                                                        (0, fu.aD)((e) => {
                                                                             u.forEach((u) => {
                                                                                 a[u].set(e[u]);
                                                                             });
@@ -1585,13 +1583,13 @@
                                                             const a = u,
                                                                 n = Object.entries(a),
                                                                 E = n.reduce(
-                                                                    (u, [e, t]) => ((u[t] = pu.LO.box(r[e], {})), u),
+                                                                    (u, [e, t]) => ((u[t] = fu.LO.box(r[e], {})), u),
                                                                     {},
                                                                 );
                                                             return (
                                                                 'real' === t &&
                                                                     A.subscribe(
-                                                                        (0, pu.aD)((u) => {
+                                                                        (0, fu.aD)((u) => {
                                                                             n.forEach(([e, t]) => {
                                                                                 E[t].set(u[e]);
                                                                             });

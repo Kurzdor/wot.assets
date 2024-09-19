@@ -186,14 +186,14 @@
                         displayStatusIs: () => f,
                         events: () => o.U,
                         extraSize: () => w,
-                        forceTriggerMouseMove: () => v,
+                        forceTriggerMouseMove: () => h,
                         freezeTextureBeforeResize: () => d,
                         getBrowserTexturePath: () => c,
                         getDisplayStatus: () => b,
                         getScale: () => D,
                         getSize: () => A,
                         getViewGlobalPosition: () => _,
-                        isEventHandled: () => h,
+                        isEventHandled: () => v,
                         isFocused: () => g,
                         pxToRem: () => B,
                         remToPx: () => C,
@@ -255,10 +255,10 @@
                 function m() {
                     return viewEnv.setEventHandled();
                 }
-                function h() {
+                function v() {
                     return viewEnv.isEventHandled();
                 }
-                function v() {
+                function h() {
                     viewEnv.forceTriggerMouseMove();
                 }
                 function b() {
@@ -631,8 +631,8 @@
                         u.keyCode === A.n.ESCAPE && e();
                     };
                 var m = t(7572);
-                const h = r.instance,
-                    v = {
+                const v = r.instance,
+                    h = {
                         DataTracker: o.Z,
                         ViewModel: m.Z,
                         ViewEventType: a,
@@ -710,11 +710,11 @@
                                 }
                             return t;
                         },
-                        ClickOutsideManager: h,
+                        ClickOutsideManager: v,
                         SystemLocale: i.Z5,
                         UserLocale: i.cy,
                     };
-                window.ViewEnvHelper = v;
+                window.ViewEnvHelper = h;
             },
             8613: (u, e, t) => {
                 t.d(e, { Z5: () => n, cy: () => r });
@@ -837,65 +837,63 @@
                 var F = t(493),
                     _ = t.n(F),
                     d = t(9916);
-                class D extends a().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = d.B3.GOLD;
-                        else u = d.B3.INTEGRAL;
-                        const e = d.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                D.defaultProps = { format: 'integral' };
-                const B = {
-                    base: 'Currency_base_57',
-                    icon: 'Currency_icon_c5',
-                    base__small: 'Currency_base__small_af',
-                    base__big: 'Currency_base__big_bc',
-                    base__large: 'Currency_base__large_65',
-                    base__extraLarge: 'Currency_base__extraLarge_4d',
-                    'icon__credits-small': 'Currency_icon__credits-small_9b',
-                    'icon__credits-big': 'Currency_icon__credits-big_96',
-                    'icon__credits-large': 'Currency_icon__credits-large_ac',
-                    'icon__credits-extraLarge': 'Currency_icon__credits-extraLarge_16',
-                    'icon__gold-small': 'Currency_icon__gold-small_86',
-                    'icon__gold-big': 'Currency_icon__gold-big_15',
-                    'icon__gold-large': 'Currency_icon__gold-large_36',
-                    'icon__gold-extraLarge': 'Currency_icon__gold-extraLarge_a0',
-                    'icon__crystal-small': 'Currency_icon__crystal-small_27',
-                    'icon__crystal-big': 'Currency_icon__crystal-big_cd',
-                    'icon__crystal-large': 'Currency_icon__crystal-large_d3',
-                    'icon__crystal-extraLarge': 'Currency_icon__crystal-extraLarge_09',
-                    'icon__xp-small': 'Currency_icon__xp-small_a7',
-                    'icon__xp-big': 'Currency_icon__xp-big_97',
-                    'icon__xp-large': 'Currency_icon__xp-large_6b',
-                    'icon__xp-extraLarge': 'Currency_icon__xp-extraLarge_67',
-                    'icon__freeXP-small': 'Currency_icon__freeXP-small_ca',
-                    'icon__freeXP-big': 'Currency_icon__freeXP-big_21',
-                    'icon__freeXP-large': 'Currency_icon__freeXP-large_c8',
-                    'icon__freeXP-extraLarge': 'Currency_icon__freeXP-extraLarge_58',
-                    'icon__eliteXP-small': 'Currency_icon__eliteXP-small_45',
-                    'icon__eliteXP-big': 'Currency_icon__eliteXP-big_c0',
-                    'icon__eliteXP-large': 'Currency_icon__eliteXP-large_1b',
-                    'icon__eliteXP-extraLarge': 'Currency_icon__eliteXP-extraLarge_9b',
-                    'icon__equipCoin-small': 'Currency_icon__equipCoin-small_32',
-                    'icon__equipCoin-big': 'Currency_icon__equipCoin-big_79',
-                    'icon__equipCoin-large': 'Currency_icon__equipCoin-large_2c',
-                    'icon__equipCoin-extraLarge': 'Currency_icon__equipCoin-extraLarge_8a',
-                    value: 'Currency_value_e1',
-                    value__freeXP: 'Currency_value__freeXP_cb',
-                    value__credits: 'Currency_value__credits_76',
-                    value__gold: 'Currency_value__gold_dd',
-                    value__xp: 'Currency_value__xp_b0',
-                    value__crystal: 'Currency_value__crystal_19',
-                    value__equipCoin: 'Currency_value__equipCoin_d0',
-                    value__eliteXP: 'Currency_value__eliteXP_62',
-                    value__notEnough: 'Currency_value__notEnough_56',
-                    stock: 'Currency_stock_87',
-                    stock__indent: 'Currency_stock__indent_a1',
-                    stock__interactive: 'Currency_stock__interactive_93',
-                    stockBackground: 'Currency_stockBackground_82',
-                };
+                const D = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? d.B3.GOLD : d.B3.INTEGRAL;
+                            return void 0 === u ? '' : d.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? a().createElement('span', null, t) : null;
+                    },
+                    B = {
+                        base: 'Currency_base_57',
+                        icon: 'Currency_icon_c5',
+                        base__small: 'Currency_base__small_af',
+                        base__big: 'Currency_base__big_bc',
+                        base__large: 'Currency_base__large_65',
+                        base__extraLarge: 'Currency_base__extraLarge_4d',
+                        'icon__credits-small': 'Currency_icon__credits-small_9b',
+                        'icon__credits-big': 'Currency_icon__credits-big_96',
+                        'icon__credits-large': 'Currency_icon__credits-large_ac',
+                        'icon__credits-extraLarge': 'Currency_icon__credits-extraLarge_16',
+                        'icon__gold-small': 'Currency_icon__gold-small_86',
+                        'icon__gold-big': 'Currency_icon__gold-big_15',
+                        'icon__gold-large': 'Currency_icon__gold-large_36',
+                        'icon__gold-extraLarge': 'Currency_icon__gold-extraLarge_a0',
+                        'icon__crystal-small': 'Currency_icon__crystal-small_27',
+                        'icon__crystal-big': 'Currency_icon__crystal-big_cd',
+                        'icon__crystal-large': 'Currency_icon__crystal-large_d3',
+                        'icon__crystal-extraLarge': 'Currency_icon__crystal-extraLarge_09',
+                        'icon__xp-small': 'Currency_icon__xp-small_a7',
+                        'icon__xp-big': 'Currency_icon__xp-big_97',
+                        'icon__xp-large': 'Currency_icon__xp-large_6b',
+                        'icon__xp-extraLarge': 'Currency_icon__xp-extraLarge_67',
+                        'icon__freeXP-small': 'Currency_icon__freeXP-small_ca',
+                        'icon__freeXP-big': 'Currency_icon__freeXP-big_21',
+                        'icon__freeXP-large': 'Currency_icon__freeXP-large_c8',
+                        'icon__freeXP-extraLarge': 'Currency_icon__freeXP-extraLarge_58',
+                        'icon__eliteXP-small': 'Currency_icon__eliteXP-small_45',
+                        'icon__eliteXP-big': 'Currency_icon__eliteXP-big_c0',
+                        'icon__eliteXP-large': 'Currency_icon__eliteXP-large_1b',
+                        'icon__eliteXP-extraLarge': 'Currency_icon__eliteXP-extraLarge_9b',
+                        'icon__equipCoin-small': 'Currency_icon__equipCoin-small_32',
+                        'icon__equipCoin-big': 'Currency_icon__equipCoin-big_79',
+                        'icon__equipCoin-large': 'Currency_icon__equipCoin-large_2c',
+                        'icon__equipCoin-extraLarge': 'Currency_icon__equipCoin-extraLarge_8a',
+                        value: 'Currency_value_e1',
+                        value__freeXP: 'Currency_value__freeXP_cb',
+                        value__credits: 'Currency_value__credits_76',
+                        value__gold: 'Currency_value__gold_dd',
+                        value__xp: 'Currency_value__xp_b0',
+                        value__crystal: 'Currency_value__crystal_19',
+                        value__equipCoin: 'Currency_value__equipCoin_d0',
+                        value__eliteXP: 'Currency_value__eliteXP_62',
+                        value__notEnough: 'Currency_value__notEnough_56',
+                        stock: 'Currency_stock_87',
+                        stock__indent: 'Currency_stock__indent_a1',
+                        stock__interactive: 'Currency_stock__interactive_93',
+                        stockBackground: 'Currency_stockBackground_82',
+                    };
                 let C, p, g;
                 !(function (u) {
                     (u.small = 'small'), (u.big = 'big'), (u.large = 'large'), (u.extraLarge = 'extraLarge');
@@ -964,8 +962,8 @@
                                 ),
                         ),
                 );
-                var h = t(3403);
-                const v = [
+                var v = t(3403);
+                const h = [
                     'children',
                     'contentId',
                     'args',
@@ -1041,8 +1039,8 @@
                                     o = Object.keys(u);
                                 for (n = 0; n < o.length; n++) (t = o[n]), e.indexOf(t) >= 0 || (r[t] = u[t]);
                                 return r;
-                            })(u, v);
-                        const h = (0, i.useRef)({ timeoutId: 0, isVisible: !1, prevTarget: null, hideTimerId: null }),
+                            })(u, h);
+                        const v = (0, i.useRef)({ timeoutId: 0, isVisible: !1, prevTarget: null, hideTimerId: null }),
                             w = (0, i.useMemo)(
                                 () =>
                                     C ||
@@ -1063,30 +1061,30 @@
                                 [C],
                             ),
                             y = (0, i.useCallback)(() => {
-                                (h.current.isVisible && h.current.timeoutId) ||
+                                (v.current.isVisible && v.current.timeoutId) ||
                                     (f(t, _, { isMouseEvent: !0, on: !0, arguments: b(n) }, w),
                                     p && p(),
-                                    (h.current.isVisible = !0));
+                                    (v.current.isVisible = !0));
                             }, [t, _, n, w, p]),
                             k = (0, i.useCallback)(() => {
-                                if (h.current.isVisible || h.current.timeoutId) {
-                                    const u = h.current.timeoutId;
-                                    u > 0 && (clearTimeout(u), (h.current.timeoutId = 0)),
+                                if (v.current.isVisible || v.current.timeoutId) {
+                                    const u = v.current.timeoutId;
+                                    u > 0 && (clearTimeout(u), (v.current.timeoutId = 0)),
                                         f(t, _, { on: !1 }, w),
-                                        h.current.isVisible && g && g(),
-                                        (h.current.isVisible = !1);
+                                        v.current.isVisible && g && g(),
+                                        (v.current.isVisible = !1);
                                 }
                             }, [t, _, w, g]),
                             T = (0, i.useCallback)((u) => {
-                                h.current.isVisible &&
-                                    ((h.current.prevTarget = document.elementFromPoint(u.clientX, u.clientY)),
-                                    (h.current.hideTimerId = window.setTimeout(() => {
+                                v.current.isVisible &&
+                                    ((v.current.prevTarget = document.elementFromPoint(u.clientX, u.clientY)),
+                                    (v.current.hideTimerId = window.setTimeout(() => {
                                         const e = document.elementFromPoint(u.clientX, u.clientY);
-                                        e && !e.isSameNode(h.current.prevTarget) && k();
+                                        e && !e.isSameNode(v.current.prevTarget) && k();
                                     }, 200)));
                             }, []);
                         (0, i.useEffect)(() => {
-                            const u = h.current.hideTimerId;
+                            const u = v.current.hideTimerId;
                             return (
                                 document.addEventListener('wheel', T, { capture: !0 }),
                                 () => {
@@ -1117,7 +1115,7 @@
                                               (u) => {
                                                   (u.clientX === window.innerWidth &&
                                                       u.clientY === window.innerHeight) ||
-                                                      ((h.current.timeoutId = window.setTimeout(y, l ? 100 : 400)),
+                                                      ((v.current.timeoutId = window.setTimeout(y, l ? 100 : 400)),
                                                       r && r(u),
                                                       x && x(u));
                                               }),
@@ -1688,7 +1686,7 @@
                                     },
                                     [t, F, p],
                                 ),
-                                h = (0, i.useMemo)(() => ({ justifyContent: E, alignContent: A }), [A, E]);
+                                v = (0, i.useMemo)(() => ({ justifyContent: E, alignContent: A }), [A, E]);
                             return (
                                 ((u, e, t = !0) => {
                                     const n = (0, i.useCallback)(
@@ -1718,7 +1716,7 @@
                                             I.base__zeroPadding,
                                             s && I.base__isTruncationAvailable,
                                         ),
-                                        style: h,
+                                        style: v,
                                     },
                                     a().createElement('div', { className: I.unTruncated, ref: _ }, p),
                                     a().createElement(
@@ -1738,7 +1736,7 @@
                                                     I.truncated,
                                                     !B.isTruncateFinished && s && I.truncated__hide,
                                                 ),
-                                                style: h,
+                                                style: v,
                                             },
                                             B.isTruncateFinished && s ? B.elementList : p,
                                         ),
@@ -1768,8 +1766,8 @@
                     return !1;
                 }
                 console.log;
-                var hu = t(9174);
-                function vu(u, e) {
+                var vu = t(9174);
+                function hu(u, e) {
                     var t = ('undefined' != typeof Symbol && u[Symbol.iterator]) || u['@@iterator'];
                     if (t) return (t = t.call(u)).next.bind(t);
                     if (
@@ -1858,7 +1856,7 @@
                                                         };
                                                     },
                                                     dispose: function () {
-                                                        for (var u, t = vu(r.keys()); !(u = t()).done; ) i(u.value, e);
+                                                        for (var u, t = hu(r.keys()); !(u = t()).done; ) i(u.value, e);
                                                     },
                                                     unsubscribe: i,
                                                 };
@@ -1882,11 +1880,11 @@
                                                 observableModel: {
                                                     array: (u, e) => {
                                                         const n = null != e ? e : c(u),
-                                                            r = hu.LO.box(n, { equals: mu });
+                                                            r = vu.LO.box(n, { equals: mu });
                                                         return (
                                                             'real' === t &&
                                                                 s.subscribe(
-                                                                    (0, hu.aD)((u) => r.set(u)),
+                                                                    (0, vu.aD)((u) => r.set(u)),
                                                                     u,
                                                                 ),
                                                             r
@@ -1894,11 +1892,11 @@
                                                     },
                                                     object: (u, e) => {
                                                         const n = null != e ? e : c(u),
-                                                            r = hu.LO.box(n, { equals: mu });
+                                                            r = vu.LO.box(n, { equals: mu });
                                                         return (
                                                             'real' === t &&
                                                                 s.subscribe(
-                                                                    (0, hu.aD)((u) => r.set(u)),
+                                                                    (0, vu.aD)((u) => r.set(u)),
                                                                     u,
                                                                 ),
                                                             r
@@ -1908,13 +1906,13 @@
                                                         const n = c(e);
                                                         if (Array.isArray(u)) {
                                                             const r = u.reduce(
-                                                                (u, e) => ((u[e] = hu.LO.box(n[e], {})), u),
+                                                                (u, e) => ((u[e] = vu.LO.box(n[e], {})), u),
                                                                 {},
                                                             );
                                                             return (
                                                                 'real' === t &&
                                                                     s.subscribe(
-                                                                        (0, hu.aD)((e) => {
+                                                                        (0, vu.aD)((e) => {
                                                                             u.forEach((u) => {
                                                                                 r[u].set(e[u]);
                                                                             });
@@ -1928,13 +1926,13 @@
                                                             const r = u,
                                                                 o = Object.entries(r),
                                                                 i = o.reduce(
-                                                                    (u, [e, t]) => ((u[t] = hu.LO.box(n[e], {})), u),
+                                                                    (u, [e, t]) => ((u[t] = vu.LO.box(n[e], {})), u),
                                                                     {},
                                                                 );
                                                             return (
                                                                 'real' === t &&
                                                                     s.subscribe(
-                                                                        (0, hu.aD)((u) => {
+                                                                        (0, vu.aD)((u) => {
                                                                             o.forEach(([e, t]) => {
                                                                                 i[t].set(u[e]);
                                                                             });
@@ -1997,7 +1995,7 @@
                     Pu = 'DismissedToggleTooltipApp_description_a1',
                     Lu = 'DismissedToggleTooltipApp_decorator_88',
                     Ru = 'DismissedToggleTooltipApp_freePeriod_cf',
-                    Nu = (0, h.Pi)(() => {
+                    Nu = (0, v.Pi)(() => {
                         const u = ku().model,
                             e = u.freePeriod.get() + u.paidPeriod.get();
                         return a().createElement(

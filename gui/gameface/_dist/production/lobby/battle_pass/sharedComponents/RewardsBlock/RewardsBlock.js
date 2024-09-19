@@ -2,19 +2,7 @@
     'use strict';
     var __webpack_modules__ = {
             2372: (u, e, t) => {
-                var i = t(6179),
-                    E = t.n(i),
-                    r = t(9916);
-                class a extends E().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = r.B3.GOLD;
-                        else u = r.B3.INTEGRAL;
-                        const e = r.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                a.defaultProps = { format: 'integral' };
+                t(6179), t(9916);
             },
             280: (u, e, t) => {
                 t(6483), t(3649), t(6179), t(5287);
@@ -55,8 +43,8 @@
                         A = n.large,
                         o = n.medium,
                         s = n.small,
-                        l = n.extraSmall,
-                        D = n.extraLargeWidth,
+                        D = n.extraSmall,
+                        l = n.extraLargeWidth,
                         B = n.largeWidth,
                         d = n.mediumWidth,
                         C = n.smallWidth,
@@ -72,9 +60,9 @@
                         if (t.large && A) return e;
                         if (t.medium && o) return e;
                         if (t.small && s) return e;
-                        if (t.extraSmall && l) return e;
+                        if (t.extraSmall && D) return e;
                     } else {
-                        if (t.extraLargeWidth && D) return (0, E.H)(e, t, p);
+                        if (t.extraLargeWidth && l) return (0, E.H)(e, t, p);
                         if (t.largeWidth && B) return (0, E.H)(e, t, p);
                         if (t.mediumWidth && d) return (0, E.H)(e, t, p);
                         if (t.smallWidth && C) return (0, E.H)(e, t, p);
@@ -252,12 +240,17 @@
                             (u.BonusX5 = 'battle_bonus_x5'),
                             (u.CrewBonusX3 = 'crew_bonus_x3'),
                             (u.Vehicles = 'vehicles'),
+                            (u.WtHunterLootbox = 'wt_hunter'),
+                            (u.WtBossLootbox = 'wt_boss'),
+                            (u.WtProgressPoints = 'stamp'),
                             (u.EpicSelectToken = 'epicSelectToken'),
                             (u.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
                             (u.DeluxeGift = 'deluxe_gift'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
                             (u.OptionalDevice = 'optionalDevice'),
-                            (u.EquipCoin = 'equipCoin');
+                            (u.EquipCoin = 'equipCoin'),
+                            (u.WTCommanderClaimable = 'wtCommanderClaimable'),
+                            (u.WTCommanderClaimed = 'wtCommanderClaimed');
                     })(i || (i = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -392,6 +385,9 @@
                     i.E4.CrewBonusX3,
                     i.E4.NewYearInvoice,
                     i.E4.EpicSelectToken,
+                    i.E4.WtHunterLootbox,
+                    i.E4.WtBossLootbox,
+                    i.E4.WtProgressPoints,
                     i.E4.Comp7TokenWeeklyReward,
                     i.E4.DeluxeGift,
                     i.E4.BattleBoosterGift,
@@ -615,19 +611,19 @@
                         getBrowserTexturePath: () => A,
                         getDisplayStatus: () => v,
                         getScale: () => C,
-                        getSize: () => l,
+                        getSize: () => D,
                         getViewGlobalPosition: () => B,
                         isEventHandled: () => w,
                         isFocused: () => h,
                         pxToRem: () => _,
                         remToPx: () => c,
-                        resize: () => D,
+                        resize: () => l,
                         sendEvent: () => a.qP,
                         setAnimateWindow: () => m,
                         setEventHandled: () => g,
                         setInputPaddingsRem: () => F,
                         setSidePaddingsRem: () => s,
-                        whenTutorialReady: () => f,
+                        whenTutorialReady: () => P,
                     });
                 var i = t(3722),
                     E = t(6112),
@@ -648,10 +644,10 @@
                 function s(u) {
                     viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, 15);
                 }
-                function l(u = 'px') {
+                function D(u = 'px') {
                     return 'rem' === u ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
                 }
-                function D(u, e, t = 'px') {
+                function l(u, e, t = 'px') {
                     return 'rem' === t ? viewEnv.resizeViewRem(u, e) : viewEnv.resizeViewPx(u, e);
                 }
                 function B(u = 'rem') {
@@ -700,7 +696,7 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    f = Promise.all([
+                    P = Promise.all([
                         new Promise((u) => {
                             window.isDomBuilt ? u() : r.U.onDomBuilt(u);
                         }),
@@ -965,7 +961,7 @@
                 const __WEBPACK_DEFAULT_EXPORT__ = ViewModel;
             },
             9916: (u, e, t) => {
-                t.d(e, { B3: () => F, Z5: () => a.Z5, ry: () => _ });
+                t.d(e, { ry: () => _ });
                 class i {
                     constructor() {
                         (this.entries = []),
@@ -1022,8 +1018,8 @@
                     A = Object.freeze({ FRACTIONAL: 0, WO_ZERO_DIGITS: 1 }),
                     o = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1 }),
                     s = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1, YEAR_MONTH: 2 });
-                var l = t(5521),
-                    D = t(3138);
+                var D = t(5521),
+                    l = t(3138);
                 const B = ['args'];
                 function d(u, e, t, i, E, r, a) {
                     try {
@@ -1104,7 +1100,7 @@
                     },
                     m = () => c(n.CLOSE),
                     h = (u, e) => {
-                        u.keyCode === l.n.ESCAPE && e();
+                        u.keyCode === D.n.ESCAPE && e();
                     };
                 var g = t(7572);
                 const w = E.instance,
@@ -1124,17 +1120,17 @@
                             c(n.CONTEXT_MENU, { isMouseEvent: !0, contentID: u, on: !0, decoratorID: t, args: e });
                         },
                         sendShowPopOverEvent: (u, e, t, i, E = R.invalid('resId'), r) => {
-                            const a = D.O.view.getViewGlobalPosition(),
+                            const a = l.O.view.getViewGlobalPosition(),
                                 F = t.getBoundingClientRect(),
                                 A = F.x,
                                 o = F.y,
                                 s = F.width,
-                                l = F.height,
+                                D = F.height,
                                 B = {
-                                    x: D.O.view.pxToRem(A) + a.x,
-                                    y: D.O.view.pxToRem(o) + a.y,
-                                    width: D.O.view.pxToRem(s),
-                                    height: D.O.view.pxToRem(l),
+                                    x: l.O.view.pxToRem(A) + a.x,
+                                    y: l.O.view.pxToRem(o) + a.y,
+                                    width: l.O.view.pxToRem(s),
+                                    height: l.O.view.pxToRem(D),
                                 };
                             c(n.POP_OVER, {
                                 isMouseEvent: !0,

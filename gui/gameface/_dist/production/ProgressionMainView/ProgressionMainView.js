@@ -1525,12 +1525,17 @@
                         (e.BonusX5 = 'battle_bonus_x5'),
                         (e.CrewBonusX3 = 'crew_bonus_x3'),
                         (e.Vehicles = 'vehicles'),
+                        (e.WtHunterLootbox = 'wt_hunter'),
+                        (e.WtBossLootbox = 'wt_boss'),
+                        (e.WtProgressPoints = 'stamp'),
                         (e.EpicSelectToken = 'epicSelectToken'),
                         (e.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
                         (e.DeluxeGift = 'deluxe_gift'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.OptionalDevice = 'optionalDevice'),
-                        (e.EquipCoin = 'equipCoin');
+                        (e.EquipCoin = 'equipCoin'),
+                        (e.WTCommanderClaimable = 'wtCommanderClaimable'),
+                        (e.WTCommanderClaimed = 'wtCommanderClaimed');
                 })(ie || (ie = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -1916,22 +1921,23 @@
                     );
                 }
                 const Te = ({ children: e, tooltipArgs: u, className: t }) => {
-                    if (!u) return e;
-                    const r = s().createElement('div', { className: t }, e);
-                    if (u.header || u.body) return s().createElement(we, u, r);
-                    const n = u.contentId;
-                    return n ? s().createElement(De, Se({}, u, { contentId: n }), r) : s().createElement(he, u, r);
-                };
-                class ye extends s().PureComponent {
-                    render() {
-                        let e;
-                        e = 'gold' === this.props.format ? j.B3.GOLD : j.B3.INTEGRAL;
-                        const u = j.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                ye.defaultProps = { format: 'integral' };
-                const Pe = [
+                        if (!u) return e;
+                        const r = s().createElement('div', { className: t }, e);
+                        if (u.header || u.body) return s().createElement(we, u, r);
+                        const n = u.contentId;
+                        return n ? s().createElement(De, Se({}, u, { contentId: n }), r) : s().createElement(he, u, r);
+                    },
+                    ye = ({ format: e, value: u }) => {
+                        const t = ((e, u = 'integral') => {
+                            let t;
+                            return (
+                                (t = 'gold' === u ? j.B3.GOLD : j.B3.INTEGRAL),
+                                void 0 === e ? '' : j.Z5.getNumberFormat(e, t)
+                            );
+                        })(u, e);
+                        return t ? s().createElement('span', null, t) : null;
+                    },
+                    Pe = [
                         ie.Items,
                         ie.Equipment,
                         ie.Xp,
@@ -1960,6 +1966,9 @@
                         ie.CrewBonusX3,
                         ie.NewYearInvoice,
                         ie.EpicSelectToken,
+                        ie.WtHunterLootbox,
+                        ie.WtBossLootbox,
+                        ie.WtProgressPoints,
                         ie.Comp7TokenWeeklyReward,
                         ie.DeluxeGift,
                         ie.BattleBoosterGift,

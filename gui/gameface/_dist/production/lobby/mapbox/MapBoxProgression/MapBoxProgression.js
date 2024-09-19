@@ -40,10 +40,10 @@
                         events: () => w,
                         extraSize: () => J,
                         forceTriggerMouseMove: () => K,
-                        freezeTextureBeforeResize: () => z,
+                        freezeTextureBeforeResize: () => H,
                         getBrowserTexturePath: () => I,
                         getDisplayStatus: () => Q,
-                        getScale: () => H,
+                        getScale: () => z,
                         getSize: () => U,
                         getViewGlobalPosition: () => G,
                         isEventHandled: () => X,
@@ -251,10 +251,10 @@
                     const u = viewEnv.getViewGlobalPositionRem();
                     return 'rem' === e ? u : { x: j(u.x), y: j(u.y) };
                 }
-                function z() {
+                function H() {
                     viewEnv.freezeTextureBeforeResize();
                 }
-                function H() {
+                function z() {
                     return viewEnv.getScale();
                 }
                 function $(e) {
@@ -1040,10 +1040,10 @@
                                 .replace(/ /g, ' ')
                                 .match(e);
                     })(),
-                    z = ['zh_cn', 'zh_sg', 'zh_tw'],
-                    H = (e, u = N.left) => {
+                    H = ['zh_cn', 'zh_sg', 'zh_tw'],
+                    z = (e, u = N.left) => {
                         const t = R.strings.settings.LANGUAGE_CODE().toLowerCase();
-                        if (z.includes(t)) return G(e);
+                        if (H.includes(t)) return G(e);
                         if ('ja' === t) {
                             return (0, k.D4)()
                                 .parse(e)
@@ -1967,7 +1967,7 @@
                                     'div',
                                     { className: O()(Me, t), key: `${u}-${s}` },
                                     ((e, u, t) =>
-                                        e.split(/%\((.*?)\)(?:[sd])?/g).map((e) => (t && e in t ? t[e] : H(e, u))))(
+                                        e.split(/%\((.*?)\)(?:[sd])?/g).map((e) => (t && e in t ? t[e] : z(e, u))))(
                                         u,
                                         a,
                                         e,
@@ -2024,7 +2024,7 @@
                             ),
                         );
                     },
-                    ze = (e) => {
+                    He = (e) => {
                         let u = e.children,
                             t = e.contentId,
                             r = e.args,
@@ -2130,7 +2130,7 @@
                             : u;
                         var R;
                     },
-                    He = ['children', 'body', 'header', 'note', 'alert', 'args'];
+                    ze = ['children', 'body', 'header', 'note', 'alert', 'args'];
                 function $e() {
                     return (
                         ($e =
@@ -2161,14 +2161,14 @@
                                     a = Object.keys(e);
                                 for (n = 0; n < a.length; n++) (t = a[n]), u.indexOf(t) >= 0 || (r[t] = e[t]);
                                 return r;
-                            })(e, He);
+                            })(e, ze);
                         const c = (0, n.useMemo)(() => {
                             const e = Object.assign({}, i, { body: t, header: a, note: s, alert: o });
                             for (const u in e) void 0 === e[u] && delete e[u];
                             return e;
                         }, [o, t, a, s, i]);
                         return r().createElement(
-                            ze,
+                            He,
                             $e(
                                 {
                                     contentId:
@@ -2925,9 +2925,9 @@
                         r().createElement(Lu, Wu({}, t, { onEndAnimation: s, key: `${o}-${t.to}`, from: o }))
                     );
                 });
-                function zu() {
+                function Hu() {
                     return (
-                        (zu =
+                        (Hu =
                             Object.assign ||
                             function (e) {
                                 for (var u = 1; u < arguments.length; u++) {
@@ -2936,10 +2936,10 @@
                                 }
                                 return e;
                             }),
-                        zu.apply(this, arguments)
+                        Hu.apply(this, arguments)
                     );
                 }
-                const Hu = (0, n.memo)(
+                const zu = (0, n.memo)(
                         ({
                             size: e,
                             value: u,
@@ -2973,7 +2973,7 @@
                             };
                             return s.withStack
                                 ? r().createElement(Gu, c)
-                                : r().createElement(Lu, zu({ key: `${a}-${u}` }, c));
+                                : r().createElement(Lu, Hu({ key: `${a}-${u}` }, c));
                         },
                     ),
                     $u = (e) => ({
@@ -3041,7 +3041,7 @@
                                 'div',
                                 { className: O()(_u.base, _u[`base__${t}`]), style: $u(u) },
                                 !o && r().createElement(Fu, { size: t }),
-                                r().createElement(Hu, {
+                                r().createElement(zu, {
                                     size: t,
                                     lineRef: c,
                                     disabled: s,
@@ -3097,12 +3097,17 @@
                         (e.BonusX5 = 'battle_bonus_x5'),
                         (e.CrewBonusX3 = 'crew_bonus_x3'),
                         (e.Vehicles = 'vehicles'),
+                        (e.WtHunterLootbox = 'wt_hunter'),
+                        (e.WtBossLootbox = 'wt_boss'),
+                        (e.WtProgressPoints = 'stamp'),
                         (e.EpicSelectToken = 'epicSelectToken'),
                         (e.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
                         (e.DeluxeGift = 'deluxe_gift'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.OptionalDevice = 'optionalDevice'),
-                        (e.EquipCoin = 'equipCoin');
+                        (e.EquipCoin = 'equipCoin'),
+                        (e.WTCommanderClaimable = 'wtCommanderClaimable'),
+                        (e.WTCommanderClaimed = 'wtCommanderClaimed');
                 })(Xu || (Xu = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -3232,7 +3237,7 @@
                             return r;
                         })(e, nt);
                     return r().createElement(
-                        ze,
+                        He,
                         rt(
                             {
                                 contentId:
@@ -3261,75 +3266,77 @@
                     );
                 }
                 const ot = ({ children: e, tooltipArgs: u, className: t }) => {
-                    if (!u) return e;
-                    const n = r().createElement('div', { className: t }, e);
-                    if (u.header || u.body) return r().createElement(Ye, u, n);
-                    const a = u.contentId;
-                    return a ? r().createElement(ze, st({}, u, { contentId: a }), n) : r().createElement(at, u, n);
-                };
-                class it extends r().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = f.B3.GOLD;
-                        else e = f.B3.INTEGRAL;
-                        const u = f.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                it.defaultProps = { format: 'integral' };
-                Xu.Items,
-                    Xu.Equipment,
-                    Xu.Xp,
-                    Xu.XpFactor,
-                    Xu.Blueprints,
-                    Xu.BlueprintsAny,
-                    Xu.Goodies,
-                    Xu.Berths,
-                    Xu.Slots,
-                    Xu.Tokens,
-                    Xu.CrewSkins,
-                    Xu.CrewBooks,
-                    Xu.Customizations,
-                    Xu.CreditsFactor,
-                    Xu.TankmenXp,
-                    Xu.TankmenXpFactor,
-                    Xu.FreeXpFactor,
-                    Xu.BattleToken,
-                    Xu.PremiumUniversal,
-                    Xu.NaturalCover,
-                    Xu.BpCoin,
-                    Xu.BattlePassSelectToken,
-                    Xu.BattlaPassFinalAchievement,
-                    Xu.BattleBadge,
-                    Xu.BonusX5,
-                    Xu.CrewBonusX3,
-                    Xu.NewYearInvoice,
-                    Xu.EpicSelectToken,
-                    Xu.Comp7TokenWeeklyReward,
-                    Xu.DeluxeGift,
-                    Xu.BattleBoosterGift,
-                    Xu.OptionalDevice,
-                    Xu.Gold,
-                    Xu.Credits,
-                    Xu.Crystal,
-                    Xu.FreeXp,
-                    Xu.BattlePassPoints,
-                    Xu.EquipCoin,
-                    Xu.PremiumPlus,
-                    Xu.Premium;
-                const lt = (e, u, t) => {
-                        const n = u && { contentId: u };
-                        return Object.assign(
-                            {
-                                args: e,
-                                isEnabled: Boolean((e && e.tooltipId) || u),
-                                ignoreMouseClick: !0,
-                                ignoreShowDelay: !u,
-                            },
-                            n,
-                            t,
-                        );
+                        if (!u) return e;
+                        const n = r().createElement('div', { className: t }, e);
+                        if (u.header || u.body) return r().createElement(Ye, u, n);
+                        const a = u.contentId;
+                        return a ? r().createElement(He, st({}, u, { contentId: a }), n) : r().createElement(at, u, n);
                     },
+                    it = ({ format: e, value: u }) => {
+                        const t = ((e, u = 'integral') => {
+                            let t;
+                            t = 'gold' === u ? f.B3.GOLD : f.B3.INTEGRAL;
+                            return void 0 === e ? '' : f.Z5.getNumberFormat(e, t);
+                        })(u, e);
+                        return t ? r().createElement('span', null, t) : null;
+                    },
+                    lt =
+                        (Xu.Items,
+                        Xu.Equipment,
+                        Xu.Xp,
+                        Xu.XpFactor,
+                        Xu.Blueprints,
+                        Xu.BlueprintsAny,
+                        Xu.Goodies,
+                        Xu.Berths,
+                        Xu.Slots,
+                        Xu.Tokens,
+                        Xu.CrewSkins,
+                        Xu.CrewBooks,
+                        Xu.Customizations,
+                        Xu.CreditsFactor,
+                        Xu.TankmenXp,
+                        Xu.TankmenXpFactor,
+                        Xu.FreeXpFactor,
+                        Xu.BattleToken,
+                        Xu.PremiumUniversal,
+                        Xu.NaturalCover,
+                        Xu.BpCoin,
+                        Xu.BattlePassSelectToken,
+                        Xu.BattlaPassFinalAchievement,
+                        Xu.BattleBadge,
+                        Xu.BonusX5,
+                        Xu.CrewBonusX3,
+                        Xu.NewYearInvoice,
+                        Xu.EpicSelectToken,
+                        Xu.WtHunterLootbox,
+                        Xu.WtBossLootbox,
+                        Xu.WtProgressPoints,
+                        Xu.Comp7TokenWeeklyReward,
+                        Xu.DeluxeGift,
+                        Xu.BattleBoosterGift,
+                        Xu.OptionalDevice,
+                        Xu.Gold,
+                        Xu.Credits,
+                        Xu.Crystal,
+                        Xu.FreeXp,
+                        Xu.BattlePassPoints,
+                        Xu.EquipCoin,
+                        Xu.PremiumPlus,
+                        Xu.Premium,
+                        (e, u, t) => {
+                            const n = u && { contentId: u };
+                            return Object.assign(
+                                {
+                                    args: e,
+                                    isEnabled: Boolean((e && e.tooltipId) || u),
+                                    ignoreMouseClick: !0,
+                                    ignoreShowDelay: !u,
+                                },
+                                n,
+                                t,
+                            );
+                        }),
                     ct = [Qu.Small, Qu.Big],
                     Et = {
                         base: 'Reward_base_ea',

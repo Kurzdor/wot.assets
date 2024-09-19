@@ -1212,65 +1212,68 @@
                             e({ action: W.Click, parentScreen: j.Catalog, item: q.Breadcrumbs, itemState: u, info: t });
                     };
                 var ue = t(9916);
-                class te extends s().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = ue.B3.GOLD;
-                        else e = ue.B3.INTEGRAL;
-                        const u = ue.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
+                const te = ({ format: e, value: u }) => {
+                    const t = ((e, u = 'integral') => {
+                        let t;
+                        t = 'gold' === u ? ue.B3.GOLD : ue.B3.INTEGRAL;
+                        return void 0 === e ? '' : ue.Z5.getNumberFormat(e, t);
+                    })(u, e);
+                    return t ? s().createElement('span', null, t) : null;
+                };
                 let ne, ae, re, se, ie, oe, le, ce;
-                (te.defaultProps = { format: 'integral' }),
-                    (function (e) {
-                        (e.Items = 'items'),
-                            (e.Equipment = 'equipment'),
-                            (e.Xp = 'xp'),
-                            (e.XpFactor = 'xpFactor'),
-                            (e.Blueprints = 'blueprints'),
-                            (e.BlueprintsAny = 'blueprintsAny'),
-                            (e.Goodies = 'goodies'),
-                            (e.Berths = 'berths'),
-                            (e.Slots = 'slots'),
-                            (e.Tokens = 'tokens'),
-                            (e.CrewSkins = 'crewSkins'),
-                            (e.CrewBooks = 'crewBooks'),
-                            (e.Customizations = 'customizations'),
-                            (e.CreditsFactor = 'creditsFactor'),
-                            (e.Tankman = 'tankman'),
-                            (e.Tankwoman = 'tankwoman'),
-                            (e.TankmenXp = 'tankmenXP'),
-                            (e.TankmenXpFactor = 'tankmenXPFactor'),
-                            (e.FreeXpFactor = 'freeXPFactor'),
-                            (e.BattleToken = 'battleToken'),
-                            (e.PremiumUniversal = 'premium_universal'),
-                            (e.Gold = 'gold'),
-                            (e.Credits = 'credits'),
-                            (e.Crystal = 'crystal'),
-                            (e.FreeXp = 'freeXP'),
-                            (e.Premium = 'premium'),
-                            (e.PremiumPlus = 'premium_plus'),
-                            (e.BattlePassPoints = 'battlePassPoints'),
-                            (e.BattlePassSelectToken = 'battlePassSelectToken'),
-                            (e.StyleProgressToken = 'styleProgressToken'),
-                            (e.TmanToken = 'tmanToken'),
-                            (e.NaturalCover = 'naturalCover'),
-                            (e.BpCoin = 'bpcoin'),
-                            (e.BattlaPassFinalAchievement = 'dossier_achievement'),
-                            (e.BattleBadge = 'dossier_badge'),
-                            (e.NewYearInvoice = 'newYearInvoice'),
-                            (e.NewYearSlot = 'newYearSlot'),
-                            (e.BonusX5 = 'battle_bonus_x5'),
-                            (e.CrewBonusX3 = 'crew_bonus_x3'),
-                            (e.Vehicles = 'vehicles'),
-                            (e.EpicSelectToken = 'epicSelectToken'),
-                            (e.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
-                            (e.DeluxeGift = 'deluxe_gift'),
-                            (e.BattleBoosterGift = 'battleBooster_gift'),
-                            (e.OptionalDevice = 'optionalDevice'),
-                            (e.EquipCoin = 'equipCoin');
-                    })(ne || (ne = {})),
+                !(function (e) {
+                    (e.Items = 'items'),
+                        (e.Equipment = 'equipment'),
+                        (e.Xp = 'xp'),
+                        (e.XpFactor = 'xpFactor'),
+                        (e.Blueprints = 'blueprints'),
+                        (e.BlueprintsAny = 'blueprintsAny'),
+                        (e.Goodies = 'goodies'),
+                        (e.Berths = 'berths'),
+                        (e.Slots = 'slots'),
+                        (e.Tokens = 'tokens'),
+                        (e.CrewSkins = 'crewSkins'),
+                        (e.CrewBooks = 'crewBooks'),
+                        (e.Customizations = 'customizations'),
+                        (e.CreditsFactor = 'creditsFactor'),
+                        (e.Tankman = 'tankman'),
+                        (e.Tankwoman = 'tankwoman'),
+                        (e.TankmenXp = 'tankmenXP'),
+                        (e.TankmenXpFactor = 'tankmenXPFactor'),
+                        (e.FreeXpFactor = 'freeXPFactor'),
+                        (e.BattleToken = 'battleToken'),
+                        (e.PremiumUniversal = 'premium_universal'),
+                        (e.Gold = 'gold'),
+                        (e.Credits = 'credits'),
+                        (e.Crystal = 'crystal'),
+                        (e.FreeXp = 'freeXP'),
+                        (e.Premium = 'premium'),
+                        (e.PremiumPlus = 'premium_plus'),
+                        (e.BattlePassPoints = 'battlePassPoints'),
+                        (e.BattlePassSelectToken = 'battlePassSelectToken'),
+                        (e.StyleProgressToken = 'styleProgressToken'),
+                        (e.TmanToken = 'tmanToken'),
+                        (e.NaturalCover = 'naturalCover'),
+                        (e.BpCoin = 'bpcoin'),
+                        (e.BattlaPassFinalAchievement = 'dossier_achievement'),
+                        (e.BattleBadge = 'dossier_badge'),
+                        (e.NewYearInvoice = 'newYearInvoice'),
+                        (e.NewYearSlot = 'newYearSlot'),
+                        (e.BonusX5 = 'battle_bonus_x5'),
+                        (e.CrewBonusX3 = 'crew_bonus_x3'),
+                        (e.Vehicles = 'vehicles'),
+                        (e.WtHunterLootbox = 'wt_hunter'),
+                        (e.WtBossLootbox = 'wt_boss'),
+                        (e.WtProgressPoints = 'stamp'),
+                        (e.EpicSelectToken = 'epicSelectToken'),
+                        (e.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
+                        (e.DeluxeGift = 'deluxe_gift'),
+                        (e.BattleBoosterGift = 'battleBooster_gift'),
+                        (e.OptionalDevice = 'optionalDevice'),
+                        (e.EquipCoin = 'equipCoin'),
+                        (e.WTCommanderClaimable = 'wtCommanderClaimable'),
+                        (e.WTCommanderClaimed = 'wtCommanderClaimed');
+                })(ne || (ne = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
                             (e.Credits = 'credits'),
@@ -1401,6 +1404,9 @@
                         ne.CrewBonusX3,
                         ne.NewYearInvoice,
                         ne.EpicSelectToken,
+                        ne.WtHunterLootbox,
+                        ne.WtBossLootbox,
+                        ne.WtProgressPoints,
                         ne.Comp7TokenWeeklyReward,
                         ne.DeluxeGift,
                         ne.BattleBoosterGift,

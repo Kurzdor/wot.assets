@@ -1574,7 +1574,7 @@
                     }, [u]);
                 };
                 var Fu = t(521);
-                let lu, Du, cu, Bu;
+                let lu, Du, cu;
                 !(function (u) {
                     (u.small = 'small'), (u.big = 'big'), (u.large = 'large'), (u.extraLarge = 'extraLarge');
                 })(lu || (lu = {})),
@@ -1590,19 +1590,18 @@
                     (function (u) {
                         (u.Red = 'RedActionBG'), (u.Blue = 'BlueActionBG');
                     })(cu || (cu = {}));
-                class Cu extends a().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = L.B3.GOLD;
-                        else u = L.B3.INTEGRAL;
-                        const e = L.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                (Cu.defaultProps = { format: 'integral' }),
-                    (function (u) {
-                        (u.backport = 'backport'), (u.normal = 'normal'), (u.absent = 'absent');
-                    })(Bu || (Bu = {}));
+                const Bu = ({ format: u, value: e }) => {
+                    const t = ((u, e = 'integral') => {
+                        let t;
+                        t = 'gold' === e ? L.B3.GOLD : L.B3.INTEGRAL;
+                        return void 0 === u ? '' : L.Z5.getNumberFormat(u, t);
+                    })(e, u);
+                    return t ? a().createElement('span', null, t) : null;
+                };
+                let Cu;
+                !(function (u) {
+                    (u.backport = 'backport'), (u.normal = 'normal'), (u.absent = 'absent');
+                })(Cu || (Cu = {}));
                 const du = {
                         currency: 'CurrencyItem_currency_b6',
                         currency__credits: 'CurrencyItem_currency__credits_eb',
@@ -1614,17 +1613,17 @@
                         const i = e === Du.gold ? 'gold' : 'integral',
                             r = (0, n.useMemo)(() => {
                                 return (
-                                    (u = Bu.backport),
+                                    (u = Cu.backport),
                                     (t = { currency: e }),
                                     {
-                                        isEnabled: u !== Bu.absent,
+                                        isEnabled: u !== Cu.absent,
                                         args: t,
                                         contentId: R.views.dialogs.common.DialogTemplateGenericTooltip('resId'),
                                         decoratorId:
-                                            u === Bu.normal
+                                            u === Cu.normal
                                                 ? R.views.common.tooltip_window.tooltip_window.TooltipWindow('resId')
                                                 : void 0,
-                                        ignoreShowDelay: u === Bu.backport,
+                                        ignoreShowDelay: u === Cu.backport,
                                         ignoreMouseClick: !0,
                                     }
                                 );
@@ -1636,7 +1635,7 @@
                             a().createElement(
                                 'span',
                                 { className: G()(du.currency, du[`currency__${e}`]) },
-                                t ? a().createElement(Cu, { value: u, format: i }) : R.strings.common.common.dashes(),
+                                t ? a().createElement(Bu, { value: u, format: i }) : R.strings.common.common.dashes(),
                             ),
                         );
                     },

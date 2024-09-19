@@ -2,19 +2,7 @@
     'use strict';
     var __webpack_modules__ = {
             2372: (u, e, t) => {
-                var E = t(6179),
-                    n = t.n(E),
-                    F = t(9916);
-                class A extends n().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = F.B3.GOLD;
-                        else u = F.B3.INTEGRAL;
-                        const e = F.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                A.defaultProps = { format: 'integral' };
+                t(6179), t(9916);
             },
             2862: (u, e, t) => {
                 let E, n, F, A, i, o, r, a;
@@ -60,12 +48,17 @@
                             (u.BonusX5 = 'battle_bonus_x5'),
                             (u.CrewBonusX3 = 'crew_bonus_x3'),
                             (u.Vehicles = 'vehicles'),
+                            (u.WtHunterLootbox = 'wt_hunter'),
+                            (u.WtBossLootbox = 'wt_boss'),
+                            (u.WtProgressPoints = 'stamp'),
                             (u.EpicSelectToken = 'epicSelectToken'),
                             (u.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
                             (u.DeluxeGift = 'deluxe_gift'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
                             (u.OptionalDevice = 'optionalDevice'),
-                            (u.EquipCoin = 'equipCoin');
+                            (u.EquipCoin = 'equipCoin'),
+                            (u.WTCommanderClaimable = 'wtCommanderClaimable'),
+                            (u.WTCommanderClaimed = 'wtCommanderClaimed');
                     })(E || (E = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -200,6 +193,9 @@
                     E.E4.CrewBonusX3,
                     E.E4.NewYearInvoice,
                     E.E4.EpicSelectToken,
+                    E.E4.WtHunterLootbox,
+                    E.E4.WtBossLootbox,
+                    E.E4.WtProgressPoints,
                     E.E4.Comp7TokenWeeklyReward,
                     E.E4.DeluxeGift,
                     E.E4.BattleBoosterGift,
@@ -405,20 +401,20 @@
                         displayStatusIs: () => T,
                         events: () => F.U,
                         extraSize: () => P,
-                        forceTriggerMouseMove: () => w,
+                        forceTriggerMouseMove: () => h,
                         freezeTextureBeforeResize: () => _,
                         getBrowserTexturePath: () => r,
                         getDisplayStatus: () => g,
                         getScale: () => l,
                         getSize: () => s,
                         getViewGlobalPosition: () => C,
-                        isEventHandled: () => h,
-                        isFocused: () => m,
+                        isEventHandled: () => w,
+                        isFocused: () => p,
                         pxToRem: () => d,
                         remToPx: () => c,
                         resize: () => B,
                         sendEvent: () => A.qP,
-                        setAnimateWindow: () => p,
+                        setAnimateWindow: () => m,
                         setEventHandled: () => v,
                         setInputPaddingsRem: () => o,
                         setSidePaddingsRem: () => D,
@@ -465,19 +461,19 @@
                 function c(u) {
                     return viewEnv.remToPx(u);
                 }
-                function p(u, e) {
+                function m(u, e) {
                     viewEnv.setAnimateWindow(u, e);
                 }
-                function m() {
+                function p() {
                     return viewEnv.isFocused();
                 }
                 function v() {
                     return viewEnv.setEventHandled();
                 }
-                function h() {
+                function w() {
                     return viewEnv.isEventHandled();
                 }
-                function w() {
+                function h() {
                     viewEnv.forceTriggerMouseMove();
                 }
                 function g() {
@@ -731,7 +727,7 @@
                 const __WEBPACK_DEFAULT_EXPORT__ = ViewModel;
             },
             9916: (u, e, t) => {
-                t.d(e, { B3: () => o, Z5: () => A.Z5, ry: () => d });
+                t.d(e, { ry: () => d });
                 class E {
                     constructor() {
                         (this.entries = []),
@@ -868,13 +864,13 @@
                         } else viewEnv.handleViewEvent({ __Type: t, type: u });
                         var E;
                     },
-                    p = () => c(i.CLOSE),
-                    m = (u, e) => {
+                    m = () => c(i.CLOSE),
+                    p = (u, e) => {
                         u.keyCode === s.n.ESCAPE && e();
                     };
                 var v = t(7572);
-                const h = n.instance,
-                    w = {
+                const w = n.instance,
+                    h = {
                         DataTracker: F.Z,
                         ViewModel: v.Z,
                         ViewEventType: i,
@@ -884,7 +880,7 @@
                         DateFormatType: D,
                         makeGlobalBoundingBox: l,
                         sendMoveEvent: (u) => c(i.MOVE, { isMouseEvent: !0, on: u }),
-                        sendCloseEvent: p,
+                        sendCloseEvent: m,
                         sendClosePopOverEvent: () => c(i.POP_OVER, { on: !1 }),
                         sendShowContextMenuEvent: (u, e, t = 0) => {
                             c(i.CONTEXT_MENU, { isMouseEvent: !0, contentID: u, on: !0, decoratorID: t, args: e });
@@ -914,13 +910,13 @@
                             });
                         },
                         addEscapeListener: (u) => {
-                            const e = (e) => m(e, u);
+                            const e = (e) => p(e, u);
                             return (
                                 window.addEventListener('keydown', e), () => window.removeEventListener('keydown', e)
                             );
                         },
                         closeOnEsc: (u) => {
-                            m(u, p);
+                            p(u, m);
                         },
                         handleViewEvent: c,
                         onBindingsReady: d,
@@ -952,11 +948,11 @@
                                 }
                             return t;
                         },
-                        ClickOutsideManager: h,
+                        ClickOutsideManager: w,
                         SystemLocale: A.Z5,
                         UserLocale: A.cy,
                     };
-                window.ViewEnvHelper = w;
+                window.ViewEnvHelper = h;
             },
             8613: (u, e, t) => {
                 t.d(e, { Ew: () => F, Z5: () => E, cy: () => n });

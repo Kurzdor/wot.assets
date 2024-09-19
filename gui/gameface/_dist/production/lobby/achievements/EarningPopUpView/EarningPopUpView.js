@@ -1110,32 +1110,30 @@
                 };
                 var k = t(7030),
                     O = t(9916);
-                class T extends a().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = O.B3.GOLD;
-                        else u = O.B3.INTEGRAL;
-                        const e = O.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                T.defaultProps = { format: 'integral' };
-                const L = [
-                    'children',
-                    'contentId',
-                    'args',
-                    'onMouseEnter',
-                    'onMouseLeave',
-                    'onMouseDown',
-                    'onClick',
-                    'ignoreShowDelay',
-                    'ignoreMouseClick',
-                    'decoratorId',
-                    'isEnabled',
-                    'targetId',
-                    'onShow',
-                    'onHide',
-                ];
+                const T = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? O.B3.GOLD : O.B3.INTEGRAL;
+                            return void 0 === u ? '' : O.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? a().createElement('span', null, t) : null;
+                    },
+                    L = [
+                        'children',
+                        'contentId',
+                        'args',
+                        'onMouseEnter',
+                        'onMouseLeave',
+                        'onMouseDown',
+                        'onClick',
+                        'ignoreShowDelay',
+                        'ignoreMouseClick',
+                        'decoratorId',
+                        'isEnabled',
+                        'targetId',
+                        'onShow',
+                        'onHide',
+                    ];
                 function N(u) {
                     return Object.entries(u || {}).map(([u, e]) => {
                         const t = { __Type: 'GFValueProxy', name: u };
@@ -1154,7 +1152,7 @@
                         return t;
                     });
                 }
-                const P = (u, e, t = {}, n = 0) => {
+                const M = (u, e, t = {}, n = 0) => {
                         viewEnv.handleViewEvent(
                             Object.assign(
                                 {
@@ -1168,7 +1166,7 @@
                             ),
                         );
                     },
-                    M = (u) => {
+                    P = (u) => {
                         let e = u.children,
                             t = u.contentId,
                             a = u.args,
@@ -1219,7 +1217,7 @@
                             ),
                             p = (0, n.useCallback)(() => {
                                 (v.current.isVisible && v.current.timeoutId) ||
-                                    (P(t, D, { isMouseEvent: !0, on: !0, arguments: N(a) }, b),
+                                    (M(t, D, { isMouseEvent: !0, on: !0, arguments: N(a) }, b),
                                     _ && _(),
                                     (v.current.isVisible = !0));
                             }, [t, D, a, b, _]),
@@ -1227,7 +1225,7 @@
                                 if (v.current.isVisible || v.current.timeoutId) {
                                     const u = v.current.timeoutId;
                                     u > 0 && (clearTimeout(u), (v.current.timeoutId = 0)),
-                                        P(t, D, { on: !1 }, b),
+                                        M(t, D, { on: !1 }, b),
                                         v.current.isVisible && g && g(),
                                         (v.current.isVisible = !1);
                                 }
@@ -1330,7 +1328,7 @@
                             return u;
                         }, [s, t, r, i, o]);
                         return a().createElement(
-                            M,
+                            P,
                             $(
                                 {
                                     contentId:
@@ -1826,7 +1824,7 @@
                         small: { weight: 1, width: 1366, height: 768 },
                         extraSmall: { weight: 0, width: 1024, height: 768 },
                     };
-                var Pu;
+                var Mu;
                 !(function (u) {
                     (u.extraLarge = 'extraLarge'),
                         (u.large = 'large'),
@@ -1843,10 +1841,10 @@
                         (u.mediumHeight = 'mediumHeight'),
                         (u.smallHeight = 'smallHeight'),
                         (u.extraSmallHeight = 'extraSmallHeight');
-                })(Pu || (Pu = {}));
-                const Mu = s.O.client.getSize('rem'),
-                    Ru = Mu.width,
-                    Iu = Mu.height,
+                })(Mu || (Mu = {}));
+                const Pu = s.O.client.getSize('rem'),
+                    Ru = Pu.width,
+                    Iu = Pu.height,
                     $u = Object.assign(
                         { width: Ru, height: Iu },
                         (function (u, e, t) {
@@ -2506,8 +2504,8 @@
                             )
                         );
                     },
-                    Pe = { beginning: { x: '0rem' }, end: { x: '-340rem' } },
-                    Me = { beginning: { x: '105%', opacity: 1 }, end: { x: '0%', opacity: 1 } },
+                    Me = { beginning: { x: '0rem' }, end: { x: '-340rem' } },
+                    Pe = { beginning: { x: '105%', opacity: 1 }, end: { x: '0%', opacity: 1 } },
                     Re = {
                         beginning: (u) => ({ opacity: 0, x: `-${6 * (u + 1)}rem`, y: `-${6 * (u + 1)}rem` }),
                         end: { x: '0rem', y: '0rem' },
@@ -2540,13 +2538,13 @@
                             E = r.isTrophy,
                             A = !E,
                             l = (0, k.useSpring)(() => ({
-                                from: Pe.beginning,
+                                from: Me.beginning,
                                 config: { duration: 700, easing: f.easeInOutQuad },
                             })),
                             c = l[0],
                             F = l[1],
                             D = (0, k.useSpring)(() => ({
-                                from: Me.beginning,
+                                from: Pe.beginning,
                                 config: { duration: 700, easing: f.easeInOutQuad },
                             })),
                             d = D[0],
@@ -2569,9 +2567,9 @@
                             T = p[1],
                             L = w(),
                             N = w(),
-                            P = (0, n.useState)(!1),
-                            M = P[0],
-                            I = P[1],
+                            M = (0, n.useState)(!1),
+                            P = M[0],
+                            I = M[1],
                             $ = (0, n.useState)(!0),
                             W = $[0],
                             H = $[1],
@@ -2585,9 +2583,9 @@
                                                 : R.sounds.ach_notification_single_out(),
                                         );
                                     const u = s ? 300 : 0;
-                                    F.start({ to: Pe.beginning, delay: u }),
+                                    F.start({ to: Me.beginning, delay: u }),
                                         B.start({
-                                            to: Object.assign({}, Me.beginning, { opacity: 0 }),
+                                            to: Object.assign({}, Pe.beginning, { opacity: 0 }),
                                             delay: u,
                                             onRest: () => H(!1),
                                         });
@@ -2665,7 +2663,7 @@
                                         isVisible: W,
                                         onAppearAnimationEnd: () => {
                                             F.start({
-                                                to: Pe.end,
+                                                to: Me.end,
                                                 delay: 50,
                                                 onRest: () => {
                                                     T(!0),
@@ -2675,13 +2673,13 @@
                                                         L.run(V, 1e4);
                                                 },
                                             }),
-                                                B.start(Me.end);
+                                                B.start(Pe.end);
                                         },
                                         onHideAnimationEnd: t.animationShown,
                                         className: Ie.achievement,
                                     }),
                                 ),
-                                a().createElement(Ne, { isVisible: M, isHover: U }),
+                                a().createElement(Ne, { isVisible: P, isHover: U }),
                             )
                         );
                     }),

@@ -2,19 +2,7 @@
     'use strict';
     var __webpack_modules__ = {
             2372: (e, t, n) => {
-                var i = n(6179),
-                    o = n.n(i),
-                    r = n(9916);
-                class a extends o().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = r.B3.GOLD;
-                        else e = r.B3.INTEGRAL;
-                        const t = r.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== t ? t : null;
-                    }
-                }
-                a.defaultProps = { format: 'integral' };
+                n(6179), n(9916);
             },
             6373: (e, t, n) => {
                 n(2056), n(6179);
@@ -208,10 +196,10 @@
                         displayStatusIs: () => P,
                         events: () => r.U,
                         extraSize: () => k,
-                        forceTriggerMouseMove: () => T,
+                        forceTriggerMouseMove: () => y,
                         freezeTextureBeforeResize: () => w,
                         getBrowserTexturePath: () => d,
-                        getDisplayStatus: () => y,
+                        getDisplayStatus: () => T,
                         getScale: () => h,
                         getSize: () => u,
                         getViewGlobalPosition: () => E,
@@ -280,10 +268,10 @@
                 function O() {
                     return viewEnv.isEventHandled();
                 }
-                function T() {
+                function y() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function y() {
+                function T() {
                     return viewEnv.getShowingStatus();
                 }
                 const P = Object.keys(o.W).reduce(
@@ -511,7 +499,7 @@
                 const __WEBPACK_DEFAULT_EXPORT__ = ViewModel;
             },
             9916: (e, t, n) => {
-                n.d(t, { B3: () => _, Z5: () => a.Z5, ry: () => p });
+                n.d(t, { ry: () => p });
                 class i {
                     constructor() {
                         (this.entries = []),
@@ -654,7 +642,7 @@
                     };
                 var f = n(7572);
                 const O = o.instance,
-                    T = {
+                    y = {
                         DataTracker: r.Z,
                         ViewModel: f.Z,
                         ViewEventType: s,
@@ -736,7 +724,7 @@
                         SystemLocale: a.Z5,
                         UserLocale: a.cy,
                     };
-                window.ViewEnvHelper = T;
+                window.ViewEnvHelper = y;
             },
             8613: (e, t, n) => {
                 n.d(t, { Z5: () => i, cy: () => o });

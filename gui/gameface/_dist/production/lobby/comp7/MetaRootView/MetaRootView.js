@@ -2769,30 +2769,28 @@
                             e.scrollTop = t.value.scrollPosition;
                         },
                         getDirection: (e) => (e.deltaY > 1 ? Ot.Next : Ot.Prev),
-                    });
-                class Ht extends r().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = ae.B3.GOLD;
-                        else e = ae.B3.INTEGRAL;
-                        const t = ae.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== t ? t : null;
-                    }
-                }
-                Ht.defaultProps = { format: 'integral' };
-                const Ut = {
-                    '--pageContentWidth': '78vw',
-                    base: 'CurrentPositionPanel_base_92',
-                    base__active: 'CurrentPositionPanel_base__active_8c',
-                    cell: 'CurrentPositionPanel_cell_be',
-                    cell__order: 'CurrentPositionPanel_cell__order_be',
-                    cell__currentPosition: 'CurrentPositionPanel_cell__currentPosition_c5',
-                    cell__battles: 'CurrentPositionPanel_cell__battles_8f',
-                    cell__score: 'CurrentPositionPanel_cell__score_d2',
-                    screwIcon: 'CurrentPositionPanel_screwIcon_8f',
-                    screwIcon__left: 'CurrentPositionPanel_screwIcon__left_cb',
-                    screwIcon__right: 'CurrentPositionPanel_screwIcon__right_6e',
-                };
+                    }),
+                    Ht = ({ format: e, value: t }) => {
+                        const a = ((e, t = 'integral') => {
+                            let a;
+                            a = 'gold' === t ? ae.B3.GOLD : ae.B3.INTEGRAL;
+                            return void 0 === e ? '' : ae.Z5.getNumberFormat(e, a);
+                        })(t, e);
+                        return a ? r().createElement('span', null, a) : null;
+                    },
+                    Ut = {
+                        '--pageContentWidth': '78vw',
+                        base: 'CurrentPositionPanel_base_92',
+                        base__active: 'CurrentPositionPanel_base__active_8c',
+                        cell: 'CurrentPositionPanel_cell_be',
+                        cell__order: 'CurrentPositionPanel_cell__order_be',
+                        cell__currentPosition: 'CurrentPositionPanel_cell__currentPosition_c5',
+                        cell__battles: 'CurrentPositionPanel_cell__battles_8f',
+                        cell__score: 'CurrentPositionPanel_cell__score_d2',
+                        screwIcon: 'CurrentPositionPanel_screwIcon_8f',
+                        screwIcon__left: 'CurrentPositionPanel_screwIcon__left_cb',
+                        screwIcon__right: 'CurrentPositionPanel_screwIcon__right_6e',
+                    };
                 let zt;
                 !(function (e) {
                     (e.None = 'None'), (e.Active = 'Active');
@@ -7035,12 +7033,17 @@
                         (e.BonusX5 = 'battle_bonus_x5'),
                         (e.CrewBonusX3 = 'crew_bonus_x3'),
                         (e.Vehicles = 'vehicles'),
+                        (e.WtHunterLootbox = 'wt_hunter'),
+                        (e.WtBossLootbox = 'wt_boss'),
+                        (e.WtProgressPoints = 'stamp'),
                         (e.EpicSelectToken = 'epicSelectToken'),
                         (e.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
                         (e.DeluxeGift = 'deluxe_gift'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.OptionalDevice = 'optionalDevice'),
-                        (e.EquipCoin = 'equipCoin');
+                        (e.EquipCoin = 'equipCoin'),
+                        (e.WTCommanderClaimable = 'wtCommanderClaimable'),
+                        (e.WTCommanderClaimed = 'wtCommanderClaimed');
                 })(al || (al = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -7179,6 +7182,9 @@
                         al.CrewBonusX3,
                         al.NewYearInvoice,
                         al.EpicSelectToken,
+                        al.WtHunterLootbox,
+                        al.WtBossLootbox,
+                        al.WtProgressPoints,
                         al.Comp7TokenWeeklyReward,
                         al.DeluxeGift,
                         al.BattleBoosterGift,

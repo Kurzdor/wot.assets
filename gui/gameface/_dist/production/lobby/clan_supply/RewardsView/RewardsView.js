@@ -67,7 +67,7 @@
                         pxToRem: () => V,
                         remToPx: () => j,
                         resize: () => G,
-                        sendEvent: () => C,
+                        sendEvent: () => I,
                         setAnimateWindow: () => q,
                         setEventHandled: () => z,
                         setInputPaddingsRem: () => D,
@@ -195,7 +195,7 @@
                     P = 16,
                     M = 32,
                     k = 64,
-                    I = (e, t) => {
+                    C = (e, t) => {
                         const r = 'GFViewEventProxy';
                         if (void 0 !== t) {
                             const a = t.args,
@@ -231,15 +231,15 @@
                         return viewEnv.handleViewEvent({ __Type: r, type: e });
                         var n;
                     },
-                    C = {
+                    I = {
                         close(e) {
-                            I('popover' === e ? L : M);
+                            C('popover' === e ? L : M);
                         },
                         minimize() {
-                            I(k);
+                            C(k);
                         },
                         move(e) {
-                            I(P, { isMouseEvent: !0, on: e });
+                            C(P, { isMouseEvent: !0, on: e });
                         },
                     };
                 function N(e) {
@@ -1025,14 +1025,14 @@
                         [O.Large]: `${y().SMALL_HEIGHT} ${y().MEDIUM_HEIGHT} ${y().LARGE_HEIGHT}`,
                         [O.ExtraLarge]: `${y().SMALL_HEIGHT} ${y().MEDIUM_HEIGHT} ${y().LARGE_HEIGHT} ${y().EXTRA_LARGE_HEIGHT}`,
                     },
-                    I = {
+                    C = {
                         [T.ExtraSmall]: '',
                         [T.Small]: y().SMALL,
                         [T.Medium]: `${y().SMALL} ${y().MEDIUM}`,
                         [T.Large]: `${y().SMALL} ${y().MEDIUM} ${y().LARGE}`,
                         [T.ExtraLarge]: `${y().SMALL} ${y().MEDIUM} ${y().LARGE} ${y().EXTRA_LARGE}`,
                     },
-                    C = (e) => {
+                    I = (e) => {
                         let t = e.children,
                             r = e.className,
                             n = (function (e, t) {
@@ -1048,7 +1048,7 @@
                             o = i.mediaWidth,
                             s = i.mediaHeight,
                             l = i.mediaSize;
-                        return a().createElement('div', P({ className: f()(r, M[o], k[s], I[l]) }, n), t);
+                        return a().createElement('div', P({ className: f()(r, M[o], k[s], C[l]) }, n), t);
                     },
                     N = ['children'];
                 const D = (e) => {
@@ -1062,7 +1062,7 @@
                             for (n = 0; n < i.length; n++) (r = i[n]), t.indexOf(r) >= 0 || (a[r] = e[r]);
                             return a;
                         })(e, N);
-                    return a().createElement(v, null, a().createElement(C, r, t));
+                    return a().createElement(v, null, a().createElement(I, r, t));
                 };
                 var A = r(493),
                     B = r.n(A);
@@ -1511,7 +1511,7 @@
                     Te = 'Main_radialLinesFadeInWrapper_10',
                     Se = 'Main_radialLines_54',
                     Re = 'Main_rewards_f4';
-                let Oe, xe, Le, Pe, Me, ke, Ie, Ce;
+                let Oe, xe, Le, Pe, Me, ke, Ce, Ie;
                 !(function (e) {
                     (e.Items = 'items'),
                         (e.Equipment = 'equipment'),
@@ -1553,12 +1553,17 @@
                         (e.BonusX5 = 'battle_bonus_x5'),
                         (e.CrewBonusX3 = 'crew_bonus_x3'),
                         (e.Vehicles = 'vehicles'),
+                        (e.WtHunterLootbox = 'wt_hunter'),
+                        (e.WtBossLootbox = 'wt_boss'),
+                        (e.WtProgressPoints = 'stamp'),
                         (e.EpicSelectToken = 'epicSelectToken'),
                         (e.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
                         (e.DeluxeGift = 'deluxe_gift'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.OptionalDevice = 'optionalDevice'),
-                        (e.EquipCoin = 'equipCoin');
+                        (e.EquipCoin = 'equipCoin'),
+                        (e.WTCommanderClaimable = 'wtCommanderClaimable'),
+                        (e.WTCommanderClaimed = 'wtCommanderClaimed');
                 })(Oe || (Oe = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -1657,22 +1662,20 @@
                             (e.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4'),
                             (e.PROGRESSION_STYLE_UPGRADED_5 = 'progressionStyleUpgraded_5'),
                             (e.PROGRESSION_STYLE_UPGRADED_6 = 'progressionStyleUpgraded_6');
-                    })(Ie || (Ie = {})),
+                    })(Ce || (Ce = {})),
                     (function (e) {
                         (e[(e.Engraving = 0)] = 'Engraving'), (e[(e.Background = 1)] = 'Background');
-                    })(Ce || (Ce = {}));
+                    })(Ie || (Ie = {}));
                 var Ne = r(916);
-                class De extends a().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = Ne.B3.GOLD;
-                        else e = Ne.B3.INTEGRAL;
-                        const t = Ne.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== t ? t : null;
-                    }
-                }
-                De.defaultProps = { format: 'integral' };
-                const Ae = [
+                const De = ({ format: e, value: t }) => {
+                        const r = ((e, t = 'integral') => {
+                            let r;
+                            r = 'gold' === t ? Ne.B3.GOLD : Ne.B3.INTEGRAL;
+                            return void 0 === e ? '' : Ne.Z5.getNumberFormat(e, r);
+                        })(t, e);
+                        return r ? a().createElement('span', null, r) : null;
+                    },
+                    Ae = [
                         Oe.Items,
                         Oe.Equipment,
                         Oe.Xp,
@@ -1701,6 +1704,9 @@
                         Oe.CrewBonusX3,
                         Oe.NewYearInvoice,
                         Oe.EpicSelectToken,
+                        Oe.WtHunterLootbox,
+                        Oe.WtBossLootbox,
+                        Oe.WtProgressPoints,
                         Oe.Comp7TokenWeeklyReward,
                         Oe.DeluxeGift,
                         Oe.BattleBoosterGift,
@@ -2167,35 +2173,35 @@
                                 if (void 0 === e) return null;
                                 switch (e) {
                                     case Me.BATTLE_BOOSTER:
-                                        return Ie.BATTLE_BOOSTER;
+                                        return Ce.BATTLE_BOOSTER;
                                     case Me.BATTLE_BOOSTER_REPLACE:
-                                        return Ie.BATTLE_BOOSTER_REPLACE;
+                                        return Ce.BATTLE_BOOSTER_REPLACE;
                                     case Me.BUILT_IN_EQUIPMENT:
-                                        return Ie.BUILT_IN_EQUIPMENT;
+                                        return Ce.BUILT_IN_EQUIPMENT;
                                     case Me.EQUIPMENT_PLUS:
-                                        return Ie.EQUIPMENT_PLUS;
+                                        return Ce.EQUIPMENT_PLUS;
                                     case Me.EQUIPMENT_TROPHY_BASIC:
-                                        return Ie.EQUIPMENT_TROPHY_BASIC;
+                                        return Ce.EQUIPMENT_TROPHY_BASIC;
                                     case Me.EQUIPMENT_TROPHY_UPGRADED:
-                                        return Ie.EQUIPMENT_TROPHY_UPGRADED;
+                                        return Ce.EQUIPMENT_TROPHY_UPGRADED;
                                     case Me.EQUIPMENT_MODERNIZED_UPGRADED_1:
-                                        return Ie.EQUIPMENT_MODERNIZED_UPGRADED_1;
+                                        return Ce.EQUIPMENT_MODERNIZED_UPGRADED_1;
                                     case Me.EQUIPMENT_MODERNIZED_UPGRADED_2:
-                                        return Ie.EQUIPMENT_MODERNIZED_UPGRADED_2;
+                                        return Ce.EQUIPMENT_MODERNIZED_UPGRADED_2;
                                     case Me.EQUIPMENT_MODERNIZED_UPGRADED_3:
-                                        return Ie.EQUIPMENT_MODERNIZED_UPGRADED_3;
+                                        return Ce.EQUIPMENT_MODERNIZED_UPGRADED_3;
                                     case Me.PROGRESSION_STYLE_UPGRADED_1:
-                                        return Ie.PROGRESSION_STYLE_UPGRADED_1;
+                                        return Ce.PROGRESSION_STYLE_UPGRADED_1;
                                     case Me.PROGRESSION_STYLE_UPGRADED_2:
-                                        return Ie.PROGRESSION_STYLE_UPGRADED_2;
+                                        return Ce.PROGRESSION_STYLE_UPGRADED_2;
                                     case Me.PROGRESSION_STYLE_UPGRADED_3:
-                                        return Ie.PROGRESSION_STYLE_UPGRADED_3;
+                                        return Ce.PROGRESSION_STYLE_UPGRADED_3;
                                     case Me.PROGRESSION_STYLE_UPGRADED_4:
-                                        return Ie.PROGRESSION_STYLE_UPGRADED_4;
+                                        return Ce.PROGRESSION_STYLE_UPGRADED_4;
                                     case Me.PROGRESSION_STYLE_UPGRADED_5:
-                                        return Ie.PROGRESSION_STYLE_UPGRADED_5;
+                                        return Ce.PROGRESSION_STYLE_UPGRADED_5;
                                     case Me.PROGRESSION_STYLE_UPGRADED_6:
-                                        return Ie.PROGRESSION_STYLE_UPGRADED_6;
+                                        return Ce.PROGRESSION_STYLE_UPGRADED_6;
                                 }
                             })(i),
                             E = ((e, t) => {
@@ -2478,8 +2484,8 @@
                                       for (; e >= Pt[r]; ) (t += Lt[r]), (e -= Pt[r]);
                                   return t;
                               })(e),
-                    It = 'VehicleReward_base_60',
-                    Ct = 'VehicleReward_image_85',
+                    Ct = 'VehicleReward_base_60',
+                    It = 'VehicleReward_image_85',
                     Nt = 'VehicleReward_name_0d',
                     Dt = 'VehicleReward_typeIcon_ae',
                     At = ({ tooltipArgs: e }) =>
@@ -2488,8 +2494,8 @@
                             { tooltipArgs: e },
                             a().createElement(
                                 'div',
-                                { className: It },
-                                a().createElement('div', { className: Ct }),
+                                { className: Ct },
+                                a().createElement('div', { className: It }),
                                 a().createElement(
                                     'div',
                                     { className: Nt },

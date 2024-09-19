@@ -1,0 +1,5242 @@
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+.TextButton_icon__forward_59 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
+.TextButton_icon__close_53 {
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
+.TextButton_icon__info_33 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_glow_a4 {
+    opacity: 0;
+}
+.TextButton_caption_82 {
+    position: relative;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
+}
+.TextButton_caption__back_b9,
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
+.TextButton_caption__info_23 {
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+    margin-left: 8rem;
+}
+.TextButton_base__right_39 .TextButton_goto_e7 {
+    margin-right: 8rem;
+}
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity 0.16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+    left: -4rem;
+}
+.TextButton_base__right_39 .TextButton_shine_e2 {
+    right: -4rem;
+    transform: rotate(180deg);
+}
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_shine_e2 {
+    opacity: 0;
+}
+
+.Tabs_base_d9 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.Tabs_base__vertical_c0 {
+    flex-direction: row;
+}
+
+.Tabs_list_0a {
+    display: flex;
+    position: relative;
+}
+
+.Tabs_list__centered_dc {
+    justify-content: center;
+    align-items: center;
+}
+
+.Tabs_wrapper_2d {
+    display: flex;
+}
+
+.Tabs_wrapper__centered_d8 {
+    justify-content: center;
+    align-items: center;
+}
+
+.Tabs_wrapper__vertical_a5 {
+    flex-direction: column;
+}
+
+.Counter_base_9e {
+    display: flex;
+    min-width: 14rem;
+    height: 14rem;
+    position: relative;
+    z-index: 0;
+    animation: Counter_show_be ease-in-out forwards;
+}
+
+.Counter_base__big_19 {
+    min-width: 21rem;
+    height: 21rem;
+}
+
+.Counter_base__small_3b {
+    min-width: 13rem;
+    height: 13rem;
+}
+
+.Counter_base__empty_98 {
+    min-width: 6rem;
+    height: 6rem;
+}
+
+.Counter_base__animated_40 {
+    animation-duration: 0.2s;
+}
+
+.Counter_base__hidden_56 {
+    animation-name: Counter_hide_b6;
+}
+.Counter_bg_74 {
+    border: 1rem solid #fe4e0f;
+    border-radius: 7rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 6rem rgba(254, 103, 0, 0.2),
+        0 0 12rem 4rem rgba(249, 0, 0, 0.3);
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.Counter_base__big_19 .Counter_bg_74 {
+    border-radius: 11rem;
+}
+.Counter_base__small_3b .Counter_bg_74 {
+    border-radius: 7rem;
+}
+.Counter_value_3e {
+    display: flex;
+    padding: 0 4rem;
+    color: #fefeec;
+    font-size: 11rem;
+    line-height: 13rem;
+    white-space: nowrap;
+}
+.Counter_base__big_19 .Counter_value_3e {
+    padding: 0 7rem;
+    font-size: 14rem;
+    line-height: 20rem;
+}
+.Counter_base__small_3b .Counter_value_3e {
+    font-size: 9rem;
+    line-height: 12rem;
+}
+.Counter_value__text_d6 {
+    padding: 0 7rem;
+}
+.Counter_base__big_19 .Counter_value__text_d6 {
+    padding: 0 10rem;
+}
+.Counter_base__small_3b .Counter_value__text_d6 {
+    padding: 0 5rem;
+    font-size: 10rem;
+}
+.Counter_base__pattern_71 .Counter_value_3e {
+    display: none;
+}
+.Counter_plus_15 {
+    position: relative;
+    top: -1rem;
+}
+.Counter_pattern_83 {
+    display: none;
+}
+.Counter_base__pattern_71 .Counter_pattern_83 {
+    display: block;
+    border-radius: 50%;
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+@keyframes Counter_show_be {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes Counter_hide_b6 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+.Tab_base_dd {
+    display: flex;
+    align-items: center;
+    height: 32rem;
+    padding: 0 32rem 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 229, 0.4);
+    font-size: 14rem;
+    position: relative;
+    z-index: 0;
+    transition: color 0.16s ease-in-out;
+    cursor: pointer;
+}
+
+.Tab_base_dd:hover {
+    color: #ffdaab;
+}
+
+.Tab_base__first_4a {
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.Tab_base__last_96 {
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.Tab_base__medium_ec {
+    height: 46rem;
+    padding-bottom: 2rem;
+    font-size: 16rem;
+}
+
+.Tab_base__active_5d {
+    color: #ffe0b6;
+    cursor: default;
+    pointer-events: none;
+}
+.Tab_divider_ca {
+    width: 1rem;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.components.tabs.tab.separator') no-repeat 50% 50%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: -1rem;
+    transition: opacity 0.16s ease-in-out;
+}
+.Tab_divider__show_62 {
+    opacity: 1;
+}
+.Tab_state_6c {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: background-color 0.16s ease-in-out;
+    pointer-events: none;
+}
+.Tab_base_dd:hover .Tab_state_6c,
+.Tab_base__active_5d .Tab_state_6c {
+    background-color: rgba(255, 85, 0, 0.06);
+    opacity: 1;
+}
+.Tab_base__active_5d .Tab_state_6c {
+    border: 1rem solid rgba(255, 85, 0, 0.2);
+    opacity: 1;
+}
+.Tab_stateHighlight_1e {
+    width: 337rem;
+    height: 168rem;
+    background: url('R.images.gui.maps.icons.components.tabs.tab.highlight') 50% 50% no-repeat;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.16s ease-in-out;
+}
+.Tab_base__active_5d .Tab_stateHighlight_1e {
+    opacity: 1;
+}
+.Tab_stateBorder_64 {
+    width: 1rem;
+    background: url('R.images.gui.maps.icons.components.tabs.tab.border') 0 50% no-repeat;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: opacity 0.16s ease-in-out;
+}
+.Tab_base__active_5d .Tab_stateBorder_64 {
+    opacity: 1;
+}
+.Tab_stateBorder__positionLeft_e7 {
+    left: -1rem;
+}
+.Tab_stateBorder__positionRight_db {
+    right: -1rem;
+}
+.Tab_counter_e1 {
+    position: absolute;
+    top: 0;
+    right: 10rem;
+    transform: translateY(-50%);
+}
+
+.TabWrapper_base__disabled_1d {
+    filter: grayscale(1);
+}
+
+.TabsHeader_base_78 {
+    position: absolute;
+    top: 30rem;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+.TextOverflow_base_3b {
+    max-width: 100%;
+    line-height: 1.3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Badge_base_ac {
+    display: flex;
+    justify-content: center;
+    background: no-repeat center / contain;
+}
+
+.Badge_base__default_c9 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.Badge_base__x48_e4 {
+    width: 48rem;
+    height: 48rem;
+}
+
+.PlayerNickname_base_32 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.PlayerNickname_userName_cc {
+    flex: 0 1 auto; /* the only value for correct work */
+}
+
+.PlayerNickname_igrIcon_34 {
+    background: url('R.images.gui.maps.icons.library.premium_igr_big.png') no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_igrIcon_34 {
+    width: 32rem;
+    height: 14rem;
+}
+
+.PlayerNickname_base__x48_84 .PlayerNickname_igrIcon_34 {
+    width: 64rem;
+    height: 28rem;
+}
+
+.PlayerNickname_suffixBadgeWrapper_cc {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.PlayerNickname_suffixBadgeStripe_8a {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: -1;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_suffixBadgeStripe_8a {
+    width: 64rem;
+    height: 24rem;
+    right: 12rem;
+}
+
+.PlayerNickname_base__default_8d.PlayerNickname_base__inverted_34 .PlayerNickname_suffixBadgeStripe_8a {
+    right: auto;
+    left: 12rem;
+    transform: rotateY(180deg);
+}
+
+.PlayerNickname_base__x48_84 .PlayerNickname_suffixBadgeStripe_8a {
+    width: 68rem;
+    height: 28rem;
+    right: 16rem;
+}
+
+.PlayerNickname_base__x48_84.PlayerNickname_base__inverted_34 .PlayerNickname_suffixBadgeStripe_8a {
+    right: auto;
+    left: 16rem;
+    transform: rotateY(180deg);
+}
+
+.PlayerNickname_suffixBadge_bd {
+    background: no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_suffixBadge_bd {
+    width: 24rem;
+    height: 24rem;
+}
+
+.PlayerNickname_base__x48_84 .PlayerNickname_suffixBadge_bd {
+    width: 32rem;
+    height: 32rem;
+}
+
+.PlayerNickname_anonymizedIcon_80 {
+    background: no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_anonymizedIcon_80 {
+    width: 24rem;
+    height: 24rem;
+    background-image: url('R.images.gui.maps.icons.library.eye.png');
+}
+
+.PlayerNickname_base__x48_84 .PlayerNickname_anonymizedIcon_80 {
+    width: 48rem;
+    height: 48rem;
+    background-image: url('R.images.gui.maps.icons.library.eye_48x48.png');
+}
+
+.LifeStatus_base_91 {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    color: #c9c9b6;
+    font-size: 16rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24rem;
+}
+
+.LifeStatus_base__extraSmall_a0,
+.LifeStatus_base__small_90 {
+    font-size: 12rem;
+}
+
+.LifeStatus_killer_32 {
+    flex: 0 1 auto;
+    margin-left: 5rem;
+}
+
+.LifeStatus_killer__bot_8e {
+    margin-left: 0;
+}
+
+.UserStatusInfo_base_47 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #fff;
+}
+
+.UserStatusInfo_base__small_0b,
+.UserStatusInfo_base__extraSmall_91 {
+    max-width: 240rem;
+}
+
+.UserStatusInfo_base__medium_f4 {
+    max-width: 350rem;
+}
+
+.UserStatusInfo_player_a4 {
+    flex: 0 1 auto;
+    max-width: 100%;
+    font-size: 18rem;
+    line-height: 21rem;
+}
+
+.UserStatusInfo_player__extraSmall_09,
+.UserStatusInfo_player__small_25 {
+    font-size: 14rem;
+    line-height: 18rem;
+}
+
+.UserStatusInfo_clanTag_77 {
+    color: #c9c9b6;
+    font-weight: 700;
+}
+
+.UserStatusInfo_userName_36 {
+    color: #f2f2f7;
+}
+
+.MapInfo_battleMap_94 {
+    display: flex;
+    color: #fff;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 23rem;
+}
+
+.MapInfo_battleMap__extraSmall_02,
+.MapInfo_battleMap__small_11 {
+    font-size: 14rem;
+    line-height: 18rem;
+}
+
+.MapInfo_battleTime_4f {
+    display: flex;
+    margin-top: 5rem;
+    font-size: 16rem;
+    line-height: 19rem;
+}
+
+.MapInfo_battleTime__extraSmall_6d,
+.MapInfo_battleTime__small_f9 {
+    font-size: 12rem;
+    line-height: 14rem;
+}
+
+.MapInfo_time_4c {
+    padding-left: 5rem;
+    color: #fff;
+}
+
+.MapInfo_separator_df {
+    margin: 0 3rem;
+}
+
+.Achievement_base_58 {
+    width: 67rem;
+    height: 71rem;
+    background: no-repeat center / cover;
+}
+
+.Achievement_base__big_d5 {
+    width: 180rem;
+    height: 180rem;
+}
+
+.Achievement_base__extraSmall_54.Achievement_base__big_d5,
+.Achievement_base__small_16.Achievement_base__big_d5 {
+    width: 123rem;
+    height: 123rem;
+}
+
+.AchievementsList_base_e6 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0 20rem;
+}
+
+.AchievementsList_base__centered_47 {
+    justify-content: center;
+}
+
+.AchievementsList_base__reversed_38 {
+    flex-direction: row-reverse;
+}
+
+.AchievementsList_item_bf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 67rem;
+    position: relative;
+    z-index: 0;
+}
+
+@media (min-width: 2560px) and (min-height: 1440px) {
+    .AchievementsList_item_bf {
+        flex: 0 1 134rem;
+    }
+}
+
+.AchievementsList_base__big_7b .AchievementsList_item_bf {
+    flex: 0 1 80rem;
+}
+
+@media (min-width: 1366px) and (min-height: 768px) {
+    .AchievementsList_base__big_7b .AchievementsList_item_bf {
+        flex: 0 1 100rem;
+    }
+}
+
+@media (min-width: 2560px) and (min-height: 1440px) {
+    .AchievementsList_base__big_7b .AchievementsList_item_bf {
+        flex: 0 1 200rem;
+    }
+}
+
+.AchievementsList_ghost_7a {
+    width: 100%;
+    height: 71rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.AchievementsList_base__big_7b .AchievementsList_ghost_7a {
+    height: 180rem;
+}
+
+.AchievementsList_base__big_7b.AchievementsList_base__extraSmall_34 .AchievementsList_ghost_7a,
+.AchievementsList_base__big_7b.AchievementsList_base__small_95 .AchievementsList_ghost_7a {
+    height: 123rem;
+}
+
+.AchievementsList_achievementWrapper_80 {
+    transform: translateY(0rem);
+    transition: transform 0.3s ease-out;
+    pointer-events: none;
+}
+
+/* fix for tooltip mouseenter */
+
+.AchievementsList_ghost_7a:hover + .AchievementsList_achievementWrapper_80 {
+    transform: translateY(-5rem);
+}
+
+.AchievementsList_base__big_7b .AchievementsList_ghost_7a:hover + .AchievementsList_achievementWrapper_80 {
+    transform: translateY(-15rem);
+}
+
+.AchievementsList_tooltipArea_92 {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.AchievementsList_epicRibbon_9b {
+    width: 90rem;
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.achievements.achievement_epic') no-repeat
+        center / contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+/* fix for gf mouseenter */
+
+.AchievementsList_base__medium_18 .AchievementsList_epicRibbon_9b,
+.AchievementsList_base__large_4c .AchievementsList_epicRibbon_9b,
+.AchievementsList_base__extraLarge_8f .AchievementsList_epicRibbon_9b {
+    width: 123rem;
+}
+
+.DiscreteProgressBar_base_e5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.ExpBonusProgressDot_base_8d {
+    width: 8rem;
+    height: 8rem;
+    padding: 0 5rem;
+    position: relative;
+}
+
+.ExpBonusProgressDot_bonusCounter_0c {
+    width: 8rem;
+    height: 8rem;
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.premium.bonus_counter') no-repeat center /
+        contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ExpBonusProgressDot_bonusCounterLight_e6 {
+    width: 40rem;
+    height: 26rem;
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.premium.bonus_counter_active') no-repeat
+        center / contain;
+    opacity: 0;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: -9rem;
+    left: -16rem;
+}
+
+.ExpBonusProgressDot_base__active_c8 .ExpBonusProgressDot_bonusCounterLight_e6 {
+    opacity: 1;
+}
+
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.6);
+    position: relative;
+    cursor: pointer;
+}
+
+.CButton_base__main_42,
+.CButton_base__primary_7f,
+.CButton_base__primaryGreen_6f,
+.CButton_base__primaryRed_ec,
+.CButton_base__secondary_50 {
+    background-size: 100% 100%;
+}
+
+.CButton_base__main_42 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_main');
+}
+
+.CButton_base__primary_7f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+
+.CButton_base__primaryGreen_6f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+
+.CButton_base__primaryRed_ec {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+
+.CButton_base__secondary_50 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+
+.CButton_base__ghost_ed {
+    border-radius: 3rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 0 1rem rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.CButton_base__extraSmall_27 {
+    min-height: 17rem;
+    padding: 0 16rem;
+}
+
+.CButton_base__small_df,
+.CButton_base__medium_74 {
+    padding: 0 20rem;
+}
+
+.CButton_base__small_df {
+    min-height: 18rem;
+}
+
+.CButton_base__medium_74 {
+    min-height: 32rem;
+}
+
+.CButton_base__large_5c {
+    min-height: 48rem;
+}
+
+.CButton_base__disabled_d9 {
+    cursor: default;
+}
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+}
+.CButton_base__primary_7f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+.CButton_base__secondary_50 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow 0.16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+    border-radius: 2rem;
+    box-shadow: inset 0 0 2rem 1rem rgba(255, 85, 0, 0.2);
+}
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(
+        180deg,
+        rgba(252, 248, 235, 0.25) 0%,
+        rgba(252, 248, 235, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0;
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+    opacity: 1;
+}
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+    box-shadow: 0 15rem 12rem 0 rgba(242, 242, 230, 0.11) inset;
+    background-color: rgba(8, 6, 0, 0.18);
+    background-image: none;
+}
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+    opacity: 0;
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+    opacity: 1;
+}
+.CButton_stateDisabled_54 {
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem 15rem;
+    visibility: hidden;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+    visibility: inherit;
+}
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: 0.03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang='ja'],
+.CButton_content_cc[lang='ko'],
+.CButton_content_cc[lang='zh_tw'],
+.CButton_content_cc[lang='zh_sg'],
+.CButton_content_cc[lang='zh_cn'],
+.CButton_content_cc[lang='th'] {
+    font-weight: 400;
+}
+.CButton_base__main_42 .CButton_content_cc,
+.CButton_base__primaryRed_ec .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #600;
+}
+.CButton_base__secondary_50 .CButton_content_cc {
+    color: rgba(254, 254, 236, 0.75);
+}
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #1c2502;
+}
+.CButton_base__extraSmall_27 .CButton_content_cc {
+    font-size: 12rem;
+}
+.CButton_base__small_df .CButton_content_cc {
+    font-size: 14rem;
+}
+.CButton_base__medium_74 .CButton_content_cc {
+    font-size: 15rem;
+}
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
+}
+.CButton_base__disabled_d9 .CButton_content_cc {
+    opacity: 0.6;
+}
+
+.PremiumRewards_animationStart__enter_29 {
+    opacity: 1;
+    transition: opacity 160ms ease;
+}
+
+.PremiumRewards_animationStart__done_fe,
+.PremiumRewards_animationStart__active_ba {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.PremiumRewards_base_d6 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+@media (min-width: 1366px) and (min-height: 768px) {
+    .PremiumRewards_base_d6 {
+        padding-bottom: 0;
+    }
+}
+
+.PremiumRewards_timer_82 {
+    color: #ffb266;
+    font-size: 16rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.PremiumRewards_rewardsColumn_8a {
+    align-items: flex-end;
+    min-height: 60rem;
+    margin-right: 40rem;
+}
+
+.PremiumRewards_rewardsColumn__last_55 {
+    margin-right: 0;
+}
+
+.PremiumRewards_rewardsColumn__extraSmall_12,
+.PremiumRewards_rewardsColumn__small_6d {
+    min-height: 40rem;
+}
+
+.PremiumRewards_reward_14 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 4rem;
+    color: #fff;
+    font-size: 56rem;
+    font-weight: 700;
+}
+
+.PremiumRewards_reward__extraSmall_fc,
+.PremiumRewards_reward__small_9e {
+    font-size: 36rem;
+}
+
+.PremiumRewards_reward__hidden_0c {
+    visibility: hidden;
+}
+
+.PremiumRewards_bonusRewards_bb {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.PremiumRewards_bonus_63 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30rem;
+    position: relative;
+}
+
+.PremiumRewards_discreteProgressWrapper_1f {
+    margin-top: 10rem;
+    text-align: center;
+    position: relative;
+}
+
+.PremiumRewards_discreteProgressWrapper__exit_93
+    .PremiumRewards_discreteProgress_76
+    .PremiumRewards_discreteProgressLight__active_05,
+.PremiumRewards_discreteProgressWrapper__exit_93
+    .PremiumRewards_discreteProgress_76
+    .PremiumRewards_discreteProgressCounter_0e,
+.PremiumRewards_discreteProgressWrapper__enter_0e
+    .PremiumRewards_discreteProgress_76
+    .PremiumRewards_discreteProgressLight__active_05,
+.PremiumRewards_discreteProgressWrapper__enter_0e
+    .PremiumRewards_discreteProgress_76
+    .PremiumRewards_discreteProgressCounter_0e {
+    opacity: 1;
+    transition: opacity 160ms ease;
+}
+
+.PremiumRewards_discreteProgressWrapper__active_1b
+    .PremiumRewards_discreteProgress_76
+    .PremiumRewards_discreteProgressLight__active_05,
+.PremiumRewards_discreteProgressWrapper__active_1b
+    .PremiumRewards_discreteProgress_76
+    .PremiumRewards_discreteProgressCounter_0e {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.PremiumRewards_discreteProgressWrapper__done_6d
+    .PremiumRewards_discreteProgress_76
+    .PremiumRewards_discreteProgressLight__active_05,
+.PremiumRewards_discreteProgressWrapper__done_6d
+    .PremiumRewards_discreteProgress_76
+    .PremiumRewards_discreteProgressCounter_0e {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.PremiumRewards_discreteProgress_76 {
+    margin-top: 5rem;
+}
+
+.PremiumRewards_titleDiscreteProgress_88 {
+    display: flex;
+    color: #8c8c7e;
+}
+
+.PremiumRewards_discreteProgressWrapper__exit_93 .PremiumRewards_titleDiscreteProgress_88,
+.PremiumRewards_discreteProgressWrapper__enter_0e .PremiumRewards_titleDiscreteProgress_88 {
+    opacity: 1;
+    transition: opacity 160ms ease;
+}
+
+.PremiumRewards_discreteProgressWrapper__active_1b .PremiumRewards_titleDiscreteProgress_88 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.PremiumRewards_discreteProgressWrapper__done_6d .PremiumRewards_titleDiscreteProgress_88 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.PremiumRewards_titleDiscreteProgressRecent_29 {
+    color: #ffc363;
+}
+
+.PremiumRewards_bonusSparks_47 {
+    width: 1440rem;
+    height: 740rem;
+    margin-left: -720rem;
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.premium.button_effect()') no-repeat center /
+        contain;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: -400rem;
+    left: 50%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.PremiumRewards_bonusSparks__exit_45,
+.PremiumRewards_bonusSparks__enter_24 {
+    opacity: 1;
+    transition: opacity 160ms ease;
+}
+
+.PremiumRewards_bonusSparks__active_bc {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.PremiumRewards_bonusSparks__done_cd {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.PremiumRewards_bonusIcon_92 {
+    width: 78rem;
+    height: 66rem;
+    margin-left: -40rem;
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.premium.XPx3()') no-repeat center / contain;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: -44rem;
+    left: 50%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.PremiumRewards_bonusIcon__extraSmall_70,
+.PremiumRewards_bonusIcon__small_17 {
+    width: 48rem;
+    height: 40rem;
+    margin-left: -24rem;
+    top: -26rem;
+}
+
+.PremiumRewards_bonusBorder_ac {
+    border-image-slice: 30 fill;
+    border-image-width: 30rem;
+    position: relative;
+}
+
+.PremiumRewards_bonus__basic_e2 .PremiumRewards_bonusBorder_ac {
+    padding: 4rem;
+    border-image-source: url('R.images.gui.maps.icons.postbattle.postbattle_screen.premium.basic_button_bg');
+}
+
+.PremiumRewards_bonus__premium_f0 .PremiumRewards_bonusBorder_ac {
+    padding: 7rem;
+    border-image-source: url('R.images.gui.maps.icons.postbattle.postbattle_screen.premium.premium_button_bg');
+}
+
+.PremiumRewards_bonusButton_1f {
+    position: relative;
+}
+
+.PremiumRewards_buttonMix_3e {
+    min-width: 190rem;
+    height: 40rem;
+}
+
+.PremiumRewards_bonusAppliedWrapper_dc {
+    width: 190rem;
+    height: 40rem;
+    margin: -3rem;
+    border-radius: 3rem;
+    background: #710101;
+    text-align: center;
+    position: relative;
+}
+
+.PremiumRewards_bonusButtonIcon__exp_2c {
+    width: 23rem;
+    height: 22rem;
+    margin: 0 5rem;
+    background: url('R.images.gui.maps.icons.library.xpIcon_23x22()') no-repeat center / contain;
+}
+
+.PremiumRewards_bonusStatus_64 {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 15rem;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.PremiumRewards_bonusCounter_c9 {
+    width: 8rem;
+    height: 8rem;
+    padding: 0 5rem;
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.premium.bonus_counter') no-repeat center /
+        contain;
+}
+
+.PremiumRewards_bonusCounter__active_72 {
+    position: relative;
+}
+
+.PremiumRewards_bonusCounterLight_b2 {
+    width: 40rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.premium.bonus_counter_active') no-repeat
+        center / contain;
+    opacity: 0;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: -9rem;
+    left: -16rem;
+}
+
+.PremiumRewards_bonusCounter__active_72 .PremiumRewards_bonusCounterLight_b2 {
+    opacity: 1;
+}
+
+.PremiumRewards_bonusLightsWrapper_31 {
+    position: relative;
+}
+
+.PremiumRewards_bonusLightsContainer_07 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 10rem;
+    border-image-source: url('R.images.gui.maps.icons.postbattle.postbattle_screen.premium.bonus_counter_bg');
+    border-image-slice: 12 fill;
+    border-image-width: 12rem;
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+    transform: translateX(-50%);
+}
+
+.PremiumRewards_ignoreEventsWrapper_34 {
+    pointer-events: none;
+}
+
+.Currency_base_85 {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.Currency_base__small_22 {
+    padding-right: 20rem;
+}
+
+.Currency_base__big_d4 {
+    padding-right: 28rem;
+}
+
+.Currency_base__left_90 {
+    padding-left: 20rem;
+    padding-right: 0;
+}
+
+.Currency_base__left_90.Currency_base__big_d4 {
+    padding-left: 29rem;
+}
+
+.Currency_base__left_90.Currency_base__large_2b {
+    padding-left: 58rem;
+}
+
+.Currency_base__negative_11 {
+    color: #ff2717;
+}
+
+.Currency_base__empty_49 {
+    opacity: 0.5;
+}
+
+.Currency_icon_f5 {
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.Currency_icon__noIcon_bc {
+    background: none;
+}
+
+.Currency_icon__small_f5 {
+    width: 16rem;
+    height: 16rem;
+    margin-top: 2rem;
+}
+
+.Currency_icon__small_f5.Currency_icon__credits_6a {
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
+}
+
+.Currency_icon__small_f5.Currency_icon__gold_a8 {
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon-1');
+}
+
+.Currency_icon__small_f5.Currency_icon__crystal_e0 {
+    background-image: url('R.images.gui.maps.icons.library.CrystalIcon_1');
+}
+
+.Currency_icon__small_f5.Currency_icon__xp_1e {
+    background-image: url('R.images.gui.maps.icons.library.NormalXpIcon');
+}
+
+.Currency_icon__small_f5.Currency_icon__freeXp_8e {
+    background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
+}
+
+.Currency_icon__big_d3 {
+    width: 24rem;
+    height: 24rem;
+    top: 60%;
+}
+
+.Currency_icon__big_d3.Currency_icon__credits_6a {
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_3');
+}
+
+.Currency_icon__big_d3.Currency_icon__crystal_e0 {
+    background-image: url('R.images.gui.maps.icons.library.CrystalIcon24x24');
+}
+
+.Currency_icon__big_d3.Currency_icon__xp_1e {
+    background-image: url('R.images.gui.maps.icons.library.XpIconBig_2');
+}
+
+.Currency_icon__big_d3.Currency_icon__freeXp_8e {
+    background-image: url('R.images.gui.maps.icons.library.freeXPIconBig24x24');
+}
+
+.Currency_icon__large_94 {
+    width: 48rem;
+    height: 48rem;
+    top: 60%;
+}
+
+.Currency_icon__large_94.Currency_icon__credits_6a {
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_48x48');
+}
+
+.Currency_icon__large_94.Currency_icon__crystal_e0 {
+    background-image: url('R.images.gui.maps.icons.library.crystal_48x48');
+}
+
+.Currency_icon__large_94.Currency_icon__xp_1e {
+    background-image: url('R.images.gui.maps.icons.library.XpIcon_48x48');
+}
+
+.Currency_icon__large_94.Currency_icon__freeXp_8e {
+    background-image: url('R.images.gui.maps.icons.library.freeXPIconBig24x24');
+}
+
+.Currency_icon__left_c3 {
+    right: auto;
+    left: 0;
+}
+
+.DynamicAmount_base_fb {
+    position: relative;
+}
+
+.DynamicAmount_visibleContainer_b1 {
+    display: flex;
+    height: 60rem;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.DynamicAmount_visibleContainer__extraSmall_f7,
+.DynamicAmount_visibleContainer__small_59 {
+    height: 40rem;
+}
+
+.DynamicAmount_digitBlock_be {
+    min-width: 8.4rem;
+    position: relative;
+}
+
+.DynamicAmount_digitBlock__skippedValue_27 {
+    transform: translateY(-110%);
+    animation-name: DynamicAmount_slideVertically_24;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.DynamicAmount_digitsBase_6f {
+    display: flex;
+    position: relative;
+}
+
+.DynamicAmount_digits_52 {
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+}
+
+.DynamicAmount_digits__slideUp_00 {
+    animation-name: DynamicAmount_slideVertically_24;
+    animation-timing-function: ease-in;
+}
+
+.DynamicAmount_digits__slideDown_21 {
+    animation-name: DynamicAmount_slideVertically_24;
+    animation-timing-function: ease-out;
+}
+
+.DynamicAmount_digits__slideLinear_fd {
+    animation-name: DynamicAmount_slideVertically_24;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.DynamicAmount_digits__slideUpDown_9a {
+    animation-name: DynamicAmount_slideVertically_24;
+    animation-timing-function: ease-in-out;
+}
+
+.DynamicAmount_digitItem_5f {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+.DynamicAmount_digitItem__korea_30 {
+    margin-top: 6rem;
+}
+
+.DynamicAmount_digitItem__initial_56 {
+    position: absolute;
+    top: 100%;
+}
+
+.DynamicAmount_digitItem__hidden_29 {
+    visibility: hidden;
+}
+
+@keyframes DynamicAmount_slideVertically_24 {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.DynamicCurrency_base_fb {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.DynamicCurrency_dynamicAmount_79 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.DynamicCurrency_dynamicAmount__hidden_67 {
+    visibility: hidden;
+}
+
+.DynamicCurrency_currencyContainer_2a {
+    display: flex;
+}
+
+.DynamicCurrency_currencyContainer__hidden_a9 {
+    visibility: hidden;
+}
+
+.RewardTape_base_33 {
+    width: 100%;
+    height: 220rem;
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.reward_tape.reward_tape_bg') no-repeat center /
+        cover;
+    position: relative;
+}
+
+.RewardTape_base__defeat_2b {
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.reward_tape.reward_tape_bg_defeat') no-repeat
+        center / cover;
+}
+
+.RewardTape_base__extraSmall_28,
+.RewardTape_base__small_90 {
+    height: 160rem;
+}
+.RewardTape_ribbon_cf {
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+.RewardTape_base__basic_5b .RewardTape_ribbon_cf {
+    height: 2rem;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 221, 153, 0.04),
+        rgba(255, 221, 153, 0.2) 50%,
+        rgba(255, 221, 153, 0.04)
+    );
+}
+.RewardTape_base__basic_5b .RewardTape_ribbon__top_11 {
+    top: 14rem;
+}
+.RewardTape_base__basic_5b .RewardTape_ribbon__bottom_56 {
+    bottom: 14rem;
+}
+.RewardTape_tile_4c {
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.reward_tape.reward_tape_tile') repeat center;
+    opacity: 0.4;
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.RewardTape_base__premium_39.RewardTape_base__defeat_2b .RewardTape_tile_4c {
+    display: none;
+}
+.RewardTape_content_7f {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    padding: 0 20rem;
+}
+.RewardTape_rewards_6f {
+    padding: 0 60rem;
+}
+.RewardTape_achievements_0a {
+    flex: 1 1 0;
+}
+
+.Progression_base_15 {
+    display: flex;
+    align-items: center;
+}
+.Progression_reward_12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 20rem;
+    margin: 0 20rem;
+    position: relative;
+}
+.Progression_icon_6c {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Progression_icon__normal_78 {
+    width: 20rem;
+    height: 20rem;
+}
+.Progression_icon__normal_78.Progression_icon__active_62 {
+    width: 62rem;
+    height: 64rem;
+}
+.Progression_icon__normal_78.Progression_icon__received_77 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.normal.received');
+}
+.Progression_icon__normal_78.Progression_icon__notReceived_50 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.normal.not_received');
+}
+.Progression_icon__normal_78.Progression_icon__opened_0b {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.normal.active_opened');
+}
+.Progression_icon__normal_78.Progression_icon__notOpened_99 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.normal.active_not_opened');
+}
+.Progression_icon__big_2b {
+    width: 28rem;
+    height: 28rem;
+}
+.Progression_icon__big_2b.Progression_icon__active_62 {
+    width: 71rem;
+    height: 71rem;
+}
+.Progression_icon__big_2b.Progression_icon__received_77 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.big.received');
+}
+.Progression_icon__big_2b.Progression_icon__notReceived_50 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.big.not_received');
+}
+.Progression_icon__big_2b.Progression_icon__opened_0b {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.big.active_opened');
+}
+.Progression_icon__big_2b.Progression_icon__notOpened_99 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.big.active_not_opened');
+}
+.Progression_bgGlow_ad {
+    width: 400rem;
+    height: 330rem;
+    background-position: center;
+    background-size: contain;
+    mix-blend-mode: screen;
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+}
+.Progression_bgGlow__probMed_a2 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.glow_prop_med');
+}
+.Progression_bgGlow__probMax_fa {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.glow_prop_max');
+}
+.Progression_bgGlow__received_e3 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.glow_received');
+}
+
+.ProgressiveReward_base_af {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 17rem;
+    position: relative;
+}
+.ProgressiveReward_glow_07 {
+    width: 100vw;
+    height: 345rem;
+    background: url('R.images.gui.maps.icons.postbattle.progressive_reward.common_glow_not_received') no-repeat center
+        bottom;
+    opacity: 0.2;
+    mix-blend-mode: additive;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+.ProgressiveReward_glow__received_a2 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.common_glow_received');
+    opacity: 0.1;
+}
+.ProgressiveReward_lock_96 {
+    width: 260rem;
+    height: 260rem;
+    background: no-repeat center bottom / contain;
+    mix-blend-mode: additive;
+    position: absolute;
+    bottom: -105rem;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+.ProgressiveReward_lock__probMin_ed {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.lock_prob_min');
+}
+.ProgressiveReward_lock__probMed_fc {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.lock_prob_med');
+}
+.ProgressiveReward_lock__probMax_a9 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.lock_prob_max');
+}
+.ProgressiveReward_lock__received_4c {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.lock_prob_received');
+}
+.ProgressiveReward_progression_00 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 0 40rem;
+}
+.ProgressiveReward_progressionLine_af {
+    flex: 1;
+    height: 2rem;
+}
+.ProgressiveReward_progressionLine__left_9a {
+    background-image: linear-gradient(to left, rgba(255, 119, 51, 0.2), rgba(255, 119, 51, 0.1));
+}
+.ProgressiveReward_progressionLine__right_a8 {
+    background-image: linear-gradient(to right, rgba(255, 119, 51, 0.2), rgba(255, 119, 51, 0.1));
+}
+.ProgressiveReward_progressionContent_d9 {
+    padding: 0 18rem;
+    position: relative;
+    z-index: 1;
+}
+.ProgressiveReward_progressionContent_d9 > * {
+    pointer-events: none;
+}
+
+.VehicleTitle_base_27 {
+    display: flex;
+    margin-top: 10rem;
+    color: #fff;
+    font-size: 18rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 21rem;
+}
+
+.VehicleTitle_name_51,
+.VehicleTitle_type_72,
+.VehicleTitle_level_21 {
+    mix-blend-mode: screen;
+}
+
+.VehicleTitle_type_72 {
+    width: 24rem;
+    height: 24rem;
+    background: no-repeat center / contain;
+}
+
+.Header_base_39 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    padding-top: 84rem;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+.Header_subTitle_20 {
+    display: flex;
+    color: #f2f2f7;
+    font-size: 20rem;
+    font-weight: 700;
+    line-height: 21rem;
+}
+.Header_subTitle__extraSmall_3b,
+.Header_subTitle__small_e2 {
+    font-size: 14rem;
+    line-height: 18rem;
+}
+.Header_title_64 {
+    margin-top: -24rem;
+    padding: 0 5rem;
+    color: #fff;
+    font-size: 96rem;
+    font-weight: 700;
+    line-height: 121rem;
+    mask: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1)) repeat;
+}
+.Header_title__extraSmall_8a,
+.Header_title__small_20 {
+    font-size: 72rem;
+    line-height: 84rem;
+}
+.Header_vehicleName_dd {
+    color: #feab34;
+    font-size: 18rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 23rem;
+    mix-blend-mode: screen;
+}
+
+.Reward_base_ea {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.Reward_base__s48x48_46,
+.Reward_base__small_c0 {
+    width: 48rem;
+    height: 48rem;
+}
+
+.Reward_base__s80x80_ce,
+.Reward_base__big_e5 {
+    width: 80rem;
+    height: 80rem;
+}
+
+.Reward_base__s128x100_c3 {
+    width: 128rem;
+    height: 100rem;
+}
+
+.Reward_base__s180x135_7c {
+    width: 180rem;
+    height: 135rem;
+}
+
+.Reward_base__s232x174_67 {
+    width: 232rem;
+    height: 174rem;
+}
+
+.Reward_base__s296x222_78 {
+    width: 296rem;
+    height: 222rem;
+}
+
+.Reward_base__s400x300_07 {
+    width: 400rem;
+    height: 300rem;
+}
+
+.Reward_base__s600x450_f8 {
+    width: 600rem;
+    height: 450rem;
+}
+
+.Reward_tooltipWrapper_b5 {
+    height: 100%;
+}
+
+.Reward_icon_df {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.Reward_overlay_68 {
+    background: no-repeat center / 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.Reward_base__s48x48_46 .Reward_overlay_68,
+.Reward_base__small_c0 .Reward_overlay_68 {
+    width: 96rem;
+    height: 96rem;
+    background-size: 100%;
+    overflow: visible;
+}
+
+.Reward_base__s80x80_ce .Reward_overlay_68,
+.Reward_base__big_e5 .Reward_overlay_68 {
+    width: 128rem;
+    height: 128rem;
+}
+
+.Reward_base__s180x135_7c .Reward_overlay_68 {
+    width: 266rem;
+    height: 241rem;
+}
+
+.Reward_base__s232x174_67 .Reward_overlay_68 {
+    width: 344rem;
+    height: 312rem;
+}
+
+.Reward_base__s296x222_78 .Reward_overlay_68 {
+    width: 450rem;
+    height: 408rem;
+}
+
+.Reward_base__s400x300_07 .Reward_overlay_68 {
+    width: 618rem;
+    height: 590rem;
+}
+
+.Reward_base__s600x450_f8 .Reward_overlay_68 {
+    width: 670rem;
+    height: 575rem;
+}
+
+.Reward_highlight_36 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 0;
+}
+
+.Reward_image_89 {
+    position: relative;
+}
+
+.Reward_info_72 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: -13rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_info_72,
+.Reward_base__small_c0 .Reward_info_72 {
+    margin: -10rem -10rem 0;
+}
+
+.Reward_info__multi_63 {
+    margin-right: 2rem;
+    text-align: right;
+}
+
+.Reward_base__s48x48_46 .Reward_info__multi_63,
+.Reward_base__small_c0 .Reward_info__multi_63 {
+    margin-right: 0;
+}
+
+.Reward_info__credits_ef {
+    color: #ced9d9;
+}
+
+.Reward_info__gold_36 {
+    color: #ffc363;
+}
+
+.Reward_info__crystal_36 {
+    color: #c9c9b6;
+}
+
+.Reward_info__premiumTank_d3 {
+    color: #ffdd99;
+}
+
+.Reward_title_36 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 80rem;
+    margin: -13rem -16rem 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.mediaMedium .Reward_title_36 {
+    max-width: 100rem;
+    margin-left: -10rem;
+    margin-right: -10rem;
+}
+
+.Reward_timer_d3 {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_timer_d3,
+.Reward_base__small_c0 .Reward_timer_d3 {
+    width: 23rem;
+    height: 23rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
+    top: -6rem;
+    right: -6rem;
+}
+
+.Reward_base__s80x80_ce .Reward_timer_d3,
+.Reward_base__big_e5 .Reward_timer_d3 {
+    width: 48rem;
+    height: 48rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
+    top: -14rem;
+    right: -14rem;
+}
+
+.EventTasksList_base_4d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.EventTasksList_EventTaskAnimation_e2 {
+    position: relative;
+    z-index: 3;
+    transition:
+        0.24s ease-in transform,
+        0.24s ease-in opacity;
+}
+
+.EventTasksList_EventTaskAnimation_e2.EventTasksList_entering_24 {
+    opacity: 0;
+    transform: translateY(15rem);
+}
+
+.EventTasksList_EventTaskAnimation_e2.EventTasksList_entered_d1 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.EventTasksList_wrapper_c4 {
+    margin: 10rem;
+    position: relative;
+}
+
+.EventTasksList_rewardsContainer_f5 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10rem;
+}
+
+.EventTasksList_title_c3 {
+    color: #f2f2f7;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 10rem;
+}
+
+.EventTasksList_background_c9 {
+    width: 200rem;
+    height: 200rem;
+    background: url('R.images.gui.maps.icons.wtevent.postbattle.glow_cold') no-repeat center / cover;
+    position: absolute;
+    top: -60rem;
+    left: -60rem;
+    pointer-events: none;
+}
+
+/* this is not colors (look at @each cycle) */
+/* stylelint-disable-line color-named */
+.StatsEfficiency_base_49 {
+    display: flex;
+    justify-content: center;
+    transform: scale(0.7);
+    transform-origin: 50% 100%;
+}
+@media (min-width: 1366px) and (min-height: 768px) {
+    .StatsEfficiency_base_49 {
+        transform: scale(1);
+    }
+}
+.StatsEfficiency_item_a5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100rem;
+    margin: 0 23rem;
+    background-repeat: no-repeat;
+    background-position: 50% 6rem;
+    background-size: 88rem 76rem;
+}
+.StatsEfficiency_item__gold_10 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.stats_efficiency.wreath_gold');
+}
+.StatsEfficiency_item__silver_2b {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.stats_efficiency.wreath_silver');
+}
+.StatsEfficiency_item__bronze_a5 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.stats_efficiency.wreath_bronze');
+}
+.StatsEfficiency_item_a5 > * {
+    pointer-events: none;
+}
+.StatsEfficiency_iconWrapper_9c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88rem;
+    height: 88rem;
+}
+.StatsEfficiency_icon_27 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+}
+.StatsEfficiency_item__damageAssisted_22 .StatsEfficiency_icon_27 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.general_info.battleCondition.icon_battle_condition_assist_128x128');
+}
+.StatsEfficiency_item__damageDealt_15 .StatsEfficiency_icon_27 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.general_info.battleCondition.icon_battle_condition_damage_128x128');
+}
+.StatsEfficiency_item__damageBlockedByArmor_d5 .StatsEfficiency_icon_27 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.general_info.battleCondition.icon_battle_condition_damage_block_128x128');
+}
+.StatsEfficiency_item__kills_9f .StatsEfficiency_icon_27 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.general_info.battleCondition.icon_battle_condition_kill_vehicles_128x128');
+}
+.StatsEfficiency_count_3c {
+    margin: -16rem 0 6rem;
+    color: #fff;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 29rem;
+}
+.StatsEfficiency_title_b5 {
+    display: none;
+}
+@media (min-width: 1366px) and (min-height: 768px) {
+    .StatsEfficiency_title_b5 {
+        display: flex;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 16rem;
+        text-align: center;
+    }
+}
+
+.VehicleImage_footerTransition_c5 {
+    transition:
+        opacity 400ms ease,
+        bottom 400ms ease;
+}
+.VehicleImage_base_27 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    transition: height 700ms ease;
+}
+.VehicleImage_base__enter_58 .VehicleImage_vehicleImageContainer_75 {
+    height: 450rem;
+    opacity: 1;
+    bottom: 0%;
+    transition:
+        opacity 700ms ease,
+        height 500ms ease;
+}
+.VehicleImage_base__enter_58 .VehicleImage_vehicleImageBackground_e7,
+.VehicleImage_base__enter_58 .VehicleImage_vehicleImageForeground_e1 {
+    opacity: 1;
+    transition: opacity 600ms ease;
+}
+.VehicleImage_base__enter_58 .VehicleImage_tankShadow_ab {
+    transition:
+        opacity 500ms ease,
+        bottom 500ms ease;
+}
+.VehicleImage_base__enter_58 .VehicleImage_shadow_3c {
+    opacity: 1;
+    transition: opacity 500ms ease;
+}
+.VehicleImage_base__enter_58 .VehicleImage_footer_bc {
+    opacity: 1;
+    transition:
+        opacity 400ms ease,
+        bottom 400ms ease;
+}
+.VehicleImage_base__exit_be .VehicleImage_vehicleImageContainer_75 {
+    transition:
+        opacity 500ms ease,
+        height 500ms ease,
+        bottom 500ms ease;
+}
+.VehicleImage_base__exit_be .VehicleImage_vehicleImageBackground_e7,
+.VehicleImage_base__exit_be .VehicleImage_vehicleImageForeground_e1 {
+    transition: opacity 500ms ease;
+}
+.VehicleImage_base__exit_be .VehicleImage_footer_bc {
+    transition:
+        opacity 400ms ease,
+        bottom 400ms ease;
+}
+.VehicleImage_base__exit_be .VehicleImage_tankShadow_ab {
+    transition:
+        opacity 500ms ease,
+        bottom 500ms ease;
+}
+.VehicleImage_base__exit_be .VehicleImage_shadow_3c {
+    transition: opacity 700ms ease;
+}
+.VehicleImage_base__active_54 .VehicleImage_vehicleImageContainer_75,
+.VehicleImage_base__done_b0 .VehicleImage_vehicleImageContainer_75 {
+    height: 300rem;
+    opacity: 0.5;
+}
+.VehicleImage_base__active_54 .VehicleImage_vehicleImageBackground_e7,
+.VehicleImage_base__active_54 .VehicleImage_vehicleImageForeground_e1,
+.VehicleImage_base__done_b0 .VehicleImage_vehicleImageBackground_e7,
+.VehicleImage_base__done_b0 .VehicleImage_vehicleImageForeground_e1 {
+    opacity: 0;
+}
+.VehicleImage_base__active_54 .VehicleImage_tankShadow_ab,
+.VehicleImage_base__done_b0 .VehicleImage_tankShadow_ab {
+    opacity: 0.8;
+}
+.VehicleImage_base__active_54 .VehicleImage_shadow_3c,
+.VehicleImage_base__done_b0 .VehicleImage_shadow_3c {
+    opacity: 0;
+}
+.VehicleImage_base__active_54 .VehicleImage_footer_bc,
+.VehicleImage_base__done_b0 .VehicleImage_footer_bc {
+    opacity: 0;
+    bottom: -30rem;
+    pointer-events: none;
+}
+.VehicleImage_subTitle_85 {
+    display: flex;
+    color: #f2f2f7;
+    font-size: 20rem;
+    font-weight: 700;
+    line-height: 21rem;
+}
+.VehicleImage_subTitle__extraSmall_39,
+.VehicleImage_subTitle__small_b4 {
+    font-size: 14rem;
+    line-height: 18rem;
+}
+.VehicleImage_title_55 {
+    margin-top: -24rem;
+    color: #fff;
+    font-size: 96rem;
+    font-weight: 700;
+    line-height: 121rem;
+    mask: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1)) repeat;
+}
+.VehicleImage_title__extraSmall_14,
+.VehicleImage_title__small_68 {
+    font-size: 72rem;
+    line-height: 84rem;
+}
+.VehicleImage_vehicleName_6c {
+    color: #feab34;
+    font-size: 18rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 23rem;
+    mix-blend-mode: screen;
+}
+.VehicleImage_shadow_3c {
+    width: 100%;
+    height: 400rem;
+    background-image: radial-gradient(#000, transparent 55%);
+    position: absolute;
+    bottom: -200rem;
+    transform: scaleX(2);
+    pointer-events: none;
+}
+.VehicleImage_tankShadowWrapper_fd {
+    width: 100%;
+    height: 260rem;
+    mask: linear-gradient(to bottom, rgba(255, 255, 255, 1) 140rem, rgba(255, 255, 255, 0)) repeat;
+    overflow: hidden;
+    position: absolute;
+    bottom: -130rem;
+    z-index: -1;
+    pointer-events: none;
+}
+.VehicleImage_tankShadow_ab {
+    width: 80%;
+    height: 100%;
+    background: radial-gradient(rgba(0, 0, 0, 1), transparent 50%);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+.VehicleImage_vehicleImageContainer_75 {
+    width: 1024rem;
+    height: 350rem;
+    margin-left: -512rem;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    z-index: -1;
+    transform-origin: 50% 100%;
+}
+.VehicleImage_vehicleImage_fe {
+    width: 1024rem;
+    height: 450rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: 50% 100%;
+}
+.VehicleImage_vehicleImage__extraSmall_32 {
+    bottom: -69rem;
+    transform: scale(0.8);
+}
+.VehicleImage_vehicleImage__small_38,
+.VehicleImage_vehicleImage__medium_ba {
+    bottom: -80rem;
+    transform: scale(0.9);
+}
+.VehicleImage_vehicleImage__large_2c {
+    bottom: -78rem;
+}
+.VehicleImage_vehicleImageBackground_e7,
+.VehicleImage_vehicleImageForeground_e1 {
+    width: 1000rem;
+    height: 280rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-532rem);
+    transform-origin: 50% 100%;
+}
+.VehicleImage_vehicleImageBackground__lose_e3 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.general_info.vehicle_background_lose');
+}
+.VehicleImage_vehicleImageBackground__win_db {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.general_info.vehicle_background_win');
+}
+.VehicleImage_vehicleImageBackground__tie_c3 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.general_info.vehicle_background_tie');
+}
+.VehicleImage_vehicleImageForeground__lose_33 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.general_info.vehicle_foreground_lose');
+}
+.VehicleImage_vehicleImageForeground__win_7c {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.general_info.vehicle_foreground_win');
+    background-position: 50% 26rem;
+}
+.VehicleImage_vehicleImageForeground__tie_ff {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.general_info.vehicle_foreground_tie');
+}
+.VehicleImage_personal_61 {
+    justify-content: space-around;
+    align-items: center;
+    max-width: 200rem;
+    position: absolute;
+    bottom: 0;
+    left: 40rem;
+}
+@media (min-width: 1600px) and (min-height: 900px) {
+    .VehicleImage_personal_61 {
+        max-width: 450rem;
+        font-size: 16rem;
+    }
+}
+.VehicleImage_arenaInfo_8c {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgba(255, 255, 255, 0.6);
+}
+.VehicleImage_arenaInfoItem_5b {
+    padding-right: 10rem;
+    padding-bottom: 5rem;
+}
+.VehicleImage_arenaDate_57 {
+    color: rgba(255, 178, 102, 0.8);
+}
+.VehicleImage_footer_bc {
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20rem;
+}
+@media (min-width: 1600px) and (min-height: 900px) {
+    .VehicleImage_footer_bc {
+        bottom: 30rem;
+    }
+}
+
+.PersonalResultTab_base_7a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.PersonalResultTab_base__exit_ee .PersonalResultTab_rewardTapeWrapper_51,
+.PersonalResultTab_base__enter_51 .PersonalResultTab_rewardTapeWrapper_51 {
+    opacity: 1;
+    transition:
+        opacity 400ms ease,
+        top 500ms ease;
+}
+
+.PersonalResultTab_base__exit_ee .PersonalResultTab_blueSun_04,
+.PersonalResultTab_base__enter_51 .PersonalResultTab_blueSun_04 {
+    opacity: 1;
+    transition: opacity 700ms ease;
+}
+
+.PersonalResultTab_base__exit_ee .PersonalResultTab_bottomShadingAdditional_08,
+.PersonalResultTab_base__enter_51 .PersonalResultTab_bottomShadingAdditional_08 {
+    transition: opacity 500ms ease;
+}
+
+.PersonalResultTab_base__exit_ee .PersonalResultTab_centralAnimationWrapper_d7,
+.PersonalResultTab_base__exit_ee .PersonalResultTab_bottomShading_dc,
+.PersonalResultTab_base__enter_51 .PersonalResultTab_centralAnimationWrapper_d7,
+.PersonalResultTab_base__enter_51 .PersonalResultTab_bottomShading_dc {
+    z-index: 0;
+    transition: top 500ms ease;
+}
+
+.PersonalResultTab_base__done_cb .PersonalResultTab_centralAnimationWrapper_d7,
+.PersonalResultTab_base__active_62 .PersonalResultTab_centralAnimationWrapper_d7 {
+    top: -100rem;
+    z-index: 0;
+}
+
+.PersonalResultTab_base__done_cb .PersonalResultTab_rewardTapeWrapper_51,
+.PersonalResultTab_base__active_62 .PersonalResultTab_rewardTapeWrapper_51 {
+    opacity: 0;
+    top: -20%;
+    pointer-events: none;
+}
+
+.PersonalResultTab_base__done_cb .PersonalResultTab_blueSun_04,
+.PersonalResultTab_base__active_62 .PersonalResultTab_blueSun_04 {
+    opacity: 0;
+}
+
+.PersonalResultTab_base__done_cb .PersonalResultTab_bottomShadingAdditional_08,
+.PersonalResultTab_base__active_62 .PersonalResultTab_bottomShadingAdditional_08 {
+    opacity: 1;
+}
+.PersonalResultTab_centralAnimationWrapper_d7 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    /* unit need for animation */
+    top: 0rem; /* stylelint-disable-line length-zero-no-unit */
+    left: 0;
+    z-index: 1;
+}
+.PersonalResultTab_darkFallow_d0 {
+    width: 100%;
+    height: 240rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
+    position: absolute;
+    top: -55rem;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+.PersonalResultTab_blueSun_04 {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(0, 172, 255, 0.3), rgba(0, 172, 255, 0) 10%);
+    mix-blend-mode: additive;
+    position: absolute;
+    top: -700rem;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+.PersonalResultTab_vignette_b3 {
+    background: radial-gradient(transparent, rgba(0, 0, 0, 0.4));
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    pointer-events: none;
+}
+.PersonalResultTab_mapInfo_01 {
+    position: absolute;
+    bottom: 30rem;
+    left: 40rem;
+    z-index: 3;
+}
+.PersonalResultTab_rewardTapeWrapper_51 {
+    width: 100%;
+    padding-top: 160rem;
+    opacity: 1;
+    position: relative;
+    top: 0%;
+    z-index: 2;
+
+    /*
+    TODO: Необходимо переделать на useMediaStyles
+    @include media-s {
+        padding-top: $reward-tape-height-normal;
+    }
+    */
+}
+.PersonalResultTab_bottomShading_dc {
+    width: 100%;
+    height: 75%;
+    background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.8) 50%, transparent) repeat;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.PersonalResultTab_rewardTape_cc {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.PersonalResultTab_progressiveReward_76 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.PersonalResultTab_detailsButton_bd {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+.PersonalResultTab_eventTasksListWrapper_01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70rem;
+}
+.PersonalResultTab_base__small_85 .PersonalResultTab_eventTasksListWrapper_01,
+.PersonalResultTab_base__extraSmall_6e .PersonalResultTab_eventTasksListWrapper_01 {
+    padding-top: 8rem;
+}
+
+.PlayerVehicleInfo_base_06 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.PlayerVehicleInfo_level__rightAlign_6a {
+    width: 20rem;
+    text-align: right;
+}
+.PlayerVehicleInfo_type_5d {
+    width: 24rem;
+    height: 24rem;
+    margin-top: 3rem;
+    background: no-repeat center / contain;
+    mask-size: contain;
+}
+
+.EfficiencyAchievements_base_04 {
+    height: 71rem;
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.achievements.ribbon_xl') no-repeat center /
+        cover;
+}
+
+.HorizontalBar_base_49 {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+    position: relative;
+}
+
+.HorizontalBar_base__nonActive_82 {
+    visibility: hidden;
+}
+
+.HorizontalBar_base_49 .disable,
+.HorizontalBar_base_49 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover,
+.HorizontalBar_rightButton_03:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem
+        7rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
+    opacity: 0.7;
+}
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.VerticalBar_base_f3 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+.VerticalBar_base__nonActive_42 {
+    visibility: hidden;
+}
+
+.VerticalBar_base_f3 .disable,
+.VerticalBar_base_f3 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.VerticalBar_topButton_d7,
+.VerticalBar_bottomButton_06 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_d7:hover,
+.VerticalBar_bottomButton_06:hover {
+    opacity: 1;
+}
+
+.VerticalBar_topButton_d7 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_06 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_df {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32 {
+    display: none;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32:hover {
+    opacity: 1;
+}
+
+.VerticalBar_rail_43 {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_43:hover {
+    opacity: 0.7;
+}
+
+.VerticalScroll_content_cb {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_f8 {
+    display: flex;
+}
+
+.VerticalScroll_bar_1e {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_af {
+    flex: 1;
+}
+
+.StatisticsInfoRow_row_8b {
+    display: flex;
+    line-height: 24rem;
+}
+
+.StatisticsInfoRow_row__extraSmall_92.StatisticsInfoRow_row__subgroup_58 {
+    padding-left: 20rem;
+}
+
+.StatisticsInfoRow_row__subgroup_58 {
+    padding-left: 40rem;
+}
+
+.StatisticsInfoRow_separator_5f {
+    flex: 1;
+    margin: 0 5rem 6rem;
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.05);
+}
+
+.StatisticsInfoRow_separator__small_62 {
+    margin-bottom: 5rem;
+}
+
+.StatisticsInfoRow_description_dd {
+    display: flex;
+}
+
+.StatisticsInfoRow_icon_82 {
+    margin: 4rem 0 0 4rem;
+}
+
+.StatisticsInfoGroup_group__last_2e {
+    margin-bottom: 0;
+}
+
+.StatisticsInfo_base_29 {
+    height: 100%;
+    color: #c9c9b6;
+    font-size: 16rem;
+    line-height: 19rem;
+    position: relative;
+}
+
+.StatisticsInfo_base__extraSmall_5d {
+    font-size: 13rem;
+    line-height: 16rem;
+}
+.StatisticsInfo_groups_85 {
+    padding: 5rem 26rem 5rem 0;
+}
+
+.DetailedStats_base_24 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+}
+.DetailedStats_header_d3 {
+    display: flex;
+    position: relative;
+}
+.DetailedStats_killedUserBackground_ab {
+    background-image: linear-gradient(90deg, #ec1212, #ec1212 46.87%, rgba(243, 8, 65, 0));
+    opacity: 0.06;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.DetailedStats_vehicleInfo_2a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.DetailedStats_vehicleName_b9 {
+    padding-right: 20rem;
+    font-size: 28rem;
+    font-weight: 700;
+}
+.DetailedStats_vehicleName__extraSmall_07 {
+    font-size: 20rem;
+}
+.DetailedStats_vehicleIcon_ed {
+    width: 160rem;
+    height: 113rem;
+    background: no-repeat center / contain;
+    position: relative;
+    z-index: 1;
+}
+.DetailedStats_vehicleIcon__extraSmall_89 {
+    width: 112rem;
+    height: 81rem;
+}
+.DetailedStats_playerSummary_67 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16rem;
+    line-height: 1.2;
+}
+.DetailedStats_playerSummary__extraSmall_1c {
+    font-size: 13rem;
+}
+.DetailedStats_close_84 {
+    height: 15rem;
+    margin-top: 20rem;
+    margin-right: 20rem;
+    padding-right: 18rem;
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.details.close') no-repeat right /
+        contain;
+    color: #fff;
+    font-size: 12rem;
+    opacity: 0.3;
+    position: relative;
+    transition: opacity 0.2s linear;
+    cursor: pointer;
+}
+.DetailedStats_close_84:hover {
+    opacity: 0.6;
+}
+.DetailedStats_closeText_49 {
+    margin-top: 2rem;
+}
+.DetailedStats_stats_0e {
+    flex: 1 1 100%;
+    padding-bottom: 20rem;
+}
+.DetailedStats_stats__extraSmall_f3.DetailedStats_stats__info_55 {
+    padding-top: 4rem;
+}
+.DetailedStats_stats__info_55 {
+    padding: 0 5rem 10rem 25rem;
+}
+.DetailedStats_stats__bordered_a9 {
+    border-top: 1rem solid rgba(255, 255, 255, 0.1);
+}
+
+.ActiveArrow_base_f7 {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+}
+
+.ActiveArrow_line_1f {
+    flex: 1 1 100%;
+    height: 1rem;
+    background-color: #fff;
+}
+
+.ActiveArrow_arrow_88 {
+    flex: 0 0 auto;
+    width: 11rem;
+    height: 5rem;
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.head_cell_active') center bottom /
+        cover;
+    position: relative;
+}
+
+.ActiveArrow_arrow__top_87 {
+    background-position: center top;
+    bottom: 4rem;
+}
+
+.TeamTable_base_2f {
+    display: flex;
+    flex-direction: column;
+    width: 770rem;
+    font-size: 16rem;
+    position: relative;
+}
+
+.TeamTable_base__small_ad,
+.TeamTable_base__extraSmall_14 {
+    width: 498rem;
+    font-size: 13rem;
+}
+
+.TeamTable_base__small_ad.TeamTable_base__boss_b2,
+.TeamTable_base__extraSmall_14.TeamTable_base__boss_b2 {
+    width: 466rem;
+}
+
+.TeamTable_base__small_ad.TeamTable_base__scroll_81,
+.TeamTable_base__extraSmall_14.TeamTable_base__scroll_81 {
+    width: 515rem;
+}
+
+.TeamTable_base__small_ad.TeamTable_base__scroll_81.TeamTable_base__boss_b2,
+.TeamTable_base__extraSmall_14.TeamTable_base__scroll_81.TeamTable_base__boss_b2 {
+    width: 483rem;
+}
+
+.TeamTable_base__scroll_81 {
+    width: 787rem;
+}
+
+.TeamTable_base__boss_b2 {
+    width: 736rem;
+}
+
+.TeamTable_hidden_85 {
+    /* hack to hide content but still render it */
+    width: 0;
+    visibility: hidden;
+}
+
+.TeamTable_head_6e {
+    width: 770rem;
+    margin-bottom: 7rem;
+}
+
+.TeamTable_base__boss_b2 .TeamTable_head_6e {
+    width: 736rem;
+}
+
+.TeamTable_head__small_9e,
+.TeamTable_head__extraSmall_2a {
+    width: 498rem;
+    margin-bottom: 4rem;
+}
+
+.TeamTable_base__boss_b2 .TeamTable_head__small_9e,
+.TeamTable_base__boss_b2 .TeamTable_head__extraSmall_2a {
+    width: 466rem;
+}
+
+.TeamTable_body_f2 {
+    position: relative;
+}
+
+.TeamTable_bodyWrapper_50 {
+    padding-right: 17rem;
+    overflow-y: hidden; /* we need to hide glow of rows */
+}
+
+.TeamTable_headRow_e2,
+.TeamTable_bodyRow_c9 {
+    display: flex;
+}
+
+.TeamTable_headRow_e2 {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: rgba(242, 242, 247, 0.5);
+}
+
+.TeamTable_bodyRow_c9 {
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.05);
+    position: relative;
+}
+
+/* for active glow */
+
+.TeamTable_bodyRow_c9:hover {
+    background-color: rgba(235, 235, 235, 0.05);
+    cursor: pointer;
+}
+
+.TeamTable_bodyRow__isFirst_ea {
+    border-top: 1rem solid rgba(255, 255, 255, 0.05);
+}
+
+.TeamTable_bodyRow__isActive_33:hover {
+    background-color: transparent;
+}
+
+.TeamTable_bodyRow__isKilled_81 {
+    background: linear-gradient(
+        270deg,
+        rgba(243, 8, 65, 0) 0%,
+        rgba(243, 8, 65, 0.06) 15.88%,
+        rgba(243, 8, 65, 0.06) 84.13%,
+        rgba(243, 8, 65, 0) 100%
+    );
+}
+
+.TeamTable_cell_c1,
+.TeamTable_headCell_50 {
+    display: flex;
+    align-items: center;
+    height: 40rem;
+    position: relative;
+}
+
+.TeamTable_cell__small_0d,
+.TeamTable_cell__extraSmall_30,
+.TeamTable_headCell__small_a8,
+.TeamTable_headCell__extraSmall_ca {
+    height: 32rem;
+}
+
+.TeamTable_cell__small_0d.TeamTable_cell__icon_55,
+.TeamTable_cell__small_0d.TeamTable_headCell__icon_0a,
+.TeamTable_cell__extraSmall_30.TeamTable_cell__icon_55,
+.TeamTable_cell__extraSmall_30.TeamTable_headCell__icon_0a,
+.TeamTable_headCell__small_a8.TeamTable_cell__icon_55,
+.TeamTable_headCell__small_a8.TeamTable_headCell__icon_0a,
+.TeamTable_headCell__extraSmall_ca.TeamTable_cell__icon_55,
+.TeamTable_headCell__extraSmall_ca.TeamTable_headCell__icon_0a {
+    width: 48rem;
+}
+
+.TeamTable_cell__small_0d.TeamTable_cell__smallIcon_85,
+.TeamTable_cell__small_0d.TeamTable_headCell__smallIcon_d8,
+.TeamTable_cell__extraSmall_30.TeamTable_cell__smallIcon_85,
+.TeamTable_cell__extraSmall_30.TeamTable_headCell__smallIcon_d8,
+.TeamTable_headCell__small_a8.TeamTable_cell__smallIcon_85,
+.TeamTable_headCell__small_a8.TeamTable_headCell__smallIcon_d8,
+.TeamTable_headCell__extraSmall_ca.TeamTable_cell__smallIcon_85,
+.TeamTable_headCell__extraSmall_ca.TeamTable_headCell__smallIcon_d8 {
+    width: 32rem;
+}
+
+.TeamTable_cell__icon_55,
+.TeamTable_headCell__icon_0a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+}
+
+.TeamTable_cell__smallIcon_85,
+.TeamTable_headCell__smallIcon_d8 {
+    width: 34rem;
+}
+
+.TeamTable_cell_c1 {
+    /* we set any cell higher than activeGlow for tooltips and events */
+    z-index: 1;
+}
+
+.TeamTable_cell__small_0d.TeamTable_cell__name_c8,
+.TeamTable_cell__extraSmall_30.TeamTable_cell__name_c8 {
+    width: 179rem;
+}
+
+.TeamTable_cell__small_0d.TeamTable_cell__vehicle_06,
+.TeamTable_cell__extraSmall_30.TeamTable_cell__vehicle_06 {
+    width: 143rem;
+}
+
+.TeamTable_cell__medal_86,
+.TeamTable_cell__squad_b3 {
+    justify-content: center;
+    width: 34rem;
+}
+
+.TeamTable_cell__kills_87 {
+    justify-content: center;
+}
+
+.TeamTable_cell__xp_d5 {
+    justify-content: center;
+}
+
+.TeamTable_cell__name_c8 {
+    width: 273rem;
+}
+
+.TeamTable_cell__vehicle_06 {
+    width: 283rem;
+
+    /* we should show vehicle image under active glow */
+    z-index: 0;
+}
+
+.TeamTable_headCell_50 {
+    justify-content: center;
+    cursor: pointer;
+}
+
+.TeamTable_headCell__small_a8.TeamTable_headCell__name_df,
+.TeamTable_headCell__extraSmall_ca.TeamTable_headCell__name_df {
+    width: 179rem;
+}
+
+.TeamTable_headCell__small_a8.TeamTable_headCell__vehicle_75,
+.TeamTable_headCell__extraSmall_ca.TeamTable_headCell__vehicle_75 {
+    width: 143rem;
+}
+
+.TeamTable_headCell__name_df {
+    justify-content: flex-start;
+    width: 273rem;
+}
+
+.TeamTable_headCell__name_df .TeamTable_playerName_a0 {
+    padding-left: 16rem;
+}
+
+.TeamTable_headCell__icon_0a {
+    position: relative;
+}
+
+.TeamTable_headCell__vehicle_75 {
+    width: 283rem;
+}
+
+.TeamTable_name_66 {
+    width: 257rem;
+    margin-left: 16rem;
+}
+
+.TeamTable_name__small_43,
+.TeamTable_name__extraSmall_8b {
+    width: 163rem;
+}
+
+.TeamTable_headHover_51 {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    left: 0;
+}
+
+.TeamTable_headCell_50:hover .TeamTable_headHover_51 {
+    background-color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+
+.TeamTable_headCell__active_82:hover .TeamTable_headHover_51 {
+    background-color: transparent;
+}
+
+.TeamTable_headIcon_10 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+}
+
+.TeamTable_headIcon__damageHeader_15 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.head_cell_damage');
+}
+
+.TeamTable_headCell__active_82 .TeamTable_headIcon__damageHeader_15 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.head_cell_damage_selected');
+}
+
+.TeamTable_headIcon__fragHeader_67 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.head_cell_kill');
+}
+
+.TeamTable_headCell__active_82 .TeamTable_headIcon__fragHeader_67 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.head_cell_kill_selected');
+}
+
+.TeamTable_headIcon__xpHeader_18 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.head_cell_experience');
+}
+
+.TeamTable_headCell__active_82 .TeamTable_headIcon__xpHeader_18 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.head_cell_experience_selected');
+}
+
+.TeamTable_headIcon__tankHeader_b5 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.head_cell_vehicle');
+}
+
+.TeamTable_headCell__active_82 .TeamTable_headIcon__tankHeader_b5 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.head_cell_vehicle_selected');
+}
+
+.TeamTable_headIcon__medalHeader_07 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.header_cell_medal');
+}
+
+.TeamTable_headCell__active_82 .TeamTable_headIcon__medalHeader_07 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.header_cell_medal_selected');
+}
+
+.TeamTable_headIcon__squadHeader_96 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.header_cell_platoon');
+}
+
+.TeamTable_headCell__active_82 .TeamTable_headIcon__squadHeader_96 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.header_cell_platoon_selected');
+}
+
+.TeamTable_headDivider_2c {
+    width: 1rem;
+    height: 31rem;
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.head_cell_divider') no-repeat
+        center / contain;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.TeamTable_glow_98 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.TeamTable_activeArrow_de {
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+}
+
+.TableRendererMedal_base_69 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.TableRendererMedal_medalContainer_18 {
+    position: relative;
+}
+.TableRendererMedal_medalIcon_c7 {
+    width: 12rem;
+    height: 18rem;
+    mask-size: contain;
+    mask-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.medal');
+}
+.TableRendererMedal_medalCount_3e {
+    font-size: 12rem;
+    position: absolute;
+    right: -4rem;
+    bottom: 2rem;
+    transform: translate(50%, 50%);
+}
+.TableRendererMedal_medalCount__extraSmall_b9,
+.TableRendererMedal_medalCount__small_92 {
+    font-size: 10rem;
+    right: -3rem;
+}
+
+.TableRendererVehicleInfo_base_34 {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.TableRendererVehicleInfo_base__small_68,
+.TableRendererVehicleInfo_base__extraSmall_14 {
+    justify-content: center;
+}
+.TableRendererVehicleInfo_vehicleImage_f9 {
+    width: 80rem;
+    height: 40rem;
+    background: 100% 50% / cover no-repeat;
+}
+.TableRendererVehicleInfo_vehicleImage__small_2d,
+.TableRendererVehicleInfo_vehicleImage__extraSmall_21 {
+    display: none;
+}
+.TableRendererVehicleInfo_vehicleImage__isKilled_98 {
+    opacity: 0.5;
+}
+
+.TableRendererSquad_base_46 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18rem;
+    height: 24rem;
+    padding-bottom: 2rem;
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.platoon') no-repeat center /
+        contain;
+    font-size: 12rem;
+}
+
+.TableRendererSquad_base__highlighted_82 {
+    background-image: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.platoon_act');
+}
+
+.ActiveGlow_base_b2 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-image-source: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.body_row_bg');
+    border-image-slice: 1 fill;
+    border-image-width: 1rem;
+    box-shadow: inset 0 0 0 1rem #ff782f;
+    background-color: rgba(254, 171, 52, 0.1);
+    position: relative;
+}
+
+.ActiveGlow_base__active_25 {
+    display: flex;
+}
+
+.ActiveGlow_activeGlow_7d {
+    width: 140rem;
+    height: 140rem;
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.teams.table.body_row_glow') no-repeat center /
+        contain;
+    mix-blend-mode: additive;
+    position: absolute;
+    top: 50%;
+    pointer-events: none;
+}
+
+.ActiveGlow_activeGlow__left_88 {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.ActiveGlow_activeGlow__right_87 {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.TeamsResultTab_base_5f {
+    display: flex;
+    justify-content: center;
+    padding-top: 181rem;
+    padding-bottom: 90rem;
+}
+
+.TeamsResultTab_base__small_69,
+.TeamsResultTab_base__extraSmall_70 {
+    padding-top: 131rem;
+}
+.TeamsResultTab_teams_b3 {
+    display: flex;
+    justify-content: space-between;
+    width: 1580rem;
+    height: 100%;
+    margin-top: -45rem;
+    position: relative;
+    top: -30rem;
+}
+.TeamsResultTab_teams__small_0b,
+.TeamsResultTab_teams__extraSmall_54 {
+    width: 1006rem;
+    top: 0;
+}
+.TeamsResultTab_teams__small_0b.TeamsResultTab_teams__scroll_2f,
+.TeamsResultTab_teams__extraSmall_54.TeamsResultTab_teams__scroll_2f {
+    width: 1050rem;
+}
+.TeamsResultTab_teams__scroll_2f {
+    width: 1614rem;
+}
+.TeamsResultTab_detailsWrapper_28 {
+    flex: 1;
+}
+
+.PremiumBenefitsSection_base_5f {
+    height: 80rem;
+    padding: 20rem;
+}
+.PremiumBenefitsSection_content_65 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.PremiumBenefitsSection_baseGradient_60 {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 10%, #000 50%);
+    mask: linear-gradient(to left, transparent, rgba(255, 255, 255, 1) 50%, transparent) repeat;
+    position: absolute;
+    top: 0;
+    right: -30rem;
+    bottom: 0;
+    left: -30rem;
+}
+.PremiumBenefitsSection_baseBorder_95 {
+    height: 1rem;
+    background-image: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.15) 20%,
+        rgba(255, 255, 255, 0.25) 50%,
+        rgba(255, 255, 255, 0.15) 80%,
+        transparent
+    );
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+.PremiumBenefitsSection_totals_2c {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 20rem;
+    z-index: 1;
+}
+.PremiumBenefitsSection_totals__extraSmall_5a {
+    font-size: 16rem;
+}
+.PremiumBenefitsSection_count_c8 {
+    display: flex;
+    align-items: center;
+    flex: 0;
+    margin-right: 10rem;
+    font-weight: 700;
+    position: relative;
+}
+.PremiumBenefitsSection_button_e1 {
+    min-height: 32rem;
+    margin-left: 10rem;
+    padding: 0 20rem;
+    border: 1rem solid rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.15);
+    color: #f1f0e0;
+    font-size: 13rem;
+    text-shadow: 0 -1rem 2rem rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+.PremiumBenefitsSection_button_e1:hover {
+    opacity: 0.8;
+}
+.PremiumBenefitsSection_button__extraSmall_2c {
+    font-size: 12rem;
+}
+.PremiumBenefitsSection_currency_cc {
+    display: block;
+}
+.PremiumBenefitsSection_premiumIcon_64 {
+    width: 41rem;
+    height: 40rem;
+    margin-bottom: -5rem;
+    background: url('R.images.gui.maps.icons.postbattle.premium_icon.premium_40x40') no-repeat center / contain;
+}
+.PremiumBenefitsSection_premiumIcon__extraSmall_40 {
+    width: 32rem;
+    height: 31rem;
+}
+.PremiumBenefitsSection_contentText_ab {
+    margin-left: 20rem;
+}
+.PremiumBenefitsSection_premiumLabelText_5c {
+    margin: 0;
+    color: #8c8c7e;
+    font-size: 12rem;
+    line-height: 18rem;
+}
+.PremiumBenefitsSection_premiumLabelText__extraSmall_b9 {
+    font-size: 10rem;
+}
+.PremiumBenefitsSection_currenciesWrapper_e7 {
+    display: flex;
+}
+
+.Currency_base_57 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.Currency_icon_c5 {
+    --icon-height: 16rem;
+    --icon-width: var(--icon-height);
+    width: var(--icon-width);
+    height: var(--icon-height);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+.Currency_base__small_af .Currency_icon_c5,
+.Currency_base__big_bc .Currency_icon_c5,
+.Currency_base__large_65 .Currency_icon_c5,
+.Currency_base__extraLarge_4d .Currency_icon_c5 {
+    transform: translateY(3rem);
+}
+.Currency_icon__credits-small_9b {
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
+}
+.Currency_icon__credits-big_96 {
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
+}
+.Currency_icon__credits-large_ac {
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_silver');
+}
+.Currency_base__large_65 .Currency_icon__credits-large_ac {
+    transform: translateY(4rem);
+}
+.Currency_icon__credits-extraLarge_16 {
+    --icon-height: 80rem;
+    margin-right: -2rem;
+    background-image: url('R.images.gui.maps.icons.library.credits_icon_80x80');
+}
+.Currency_icon__gold-small_86 {
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
+}
+.Currency_base__small_af .Currency_icon__gold-small_86 {
+    transform: translateY(2rem);
+}
+.Currency_icon__gold-big_15 {
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
+}
+.Currency_base__big_bc .Currency_icon__gold-big_15 {
+    transform: translateY(4rem);
+}
+.Currency_icon__gold-large_36 {
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_gold');
+}
+.Currency_base__large_65 .Currency_icon__gold-large_36 {
+    transform: translateY(4rem);
+}
+.Currency_icon__gold-extraLarge_a0 {
+    --icon-height: 80rem;
+    background-image: url('R.images.gui.maps.icons.library.gold_icon_80x80');
+}
+.Currency_icon__crystal-small_27 {
+    background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
+}
+.Currency_base__small_af .Currency_icon__crystal-small_27 {
+    transform: translateY(2rem);
+}
+.Currency_icon__crystal-big_cd {
+    --icon-height: 22rem;
+    --icon-width: 23rem;
+    background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
+}
+.Currency_base__big_bc .Currency_icon__crystal-big_cd {
+    transform: translateY(4rem);
+}
+.Currency_icon__crystal-large_d3 {
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_bonds');
+}
+.Currency_icon__crystal-extraLarge_09 {
+    --icon-height: 80rem;
+    background-image: url('R.images.gui.maps.icons.library.crystal_80x80');
+}
+.Currency_base__extraLarge_4d .Currency_icon__crystal-extraLarge_09 {
+    transform: translateY(7rem);
+}
+.Currency_icon__xp-small_a7 {
+    background-image: url('R.images.gui.maps.icons.library.NormalXpIcon');
+}
+.Currency_base__small_af .Currency_icon__xp-small_a7 {
+    transform: translateY(1rem);
+}
+.Currency_icon__xp-big_97 {
+    --icon-height: 22rem;
+    --icon-width: 23rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
+}
+.Currency_base__big_bc .Currency_icon__xp-big_97 {
+    transform: translateY(2rem);
+}
+.Currency_icon__xp-large_6b {
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.exp');
+}
+.Currency_icon__xp-extraLarge_67 {
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.xp_tank_icon_80x80');
+}
+.Currency_icon__freeXP-small_ca {
+    background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
+}
+.Currency_base__small_af .Currency_icon__freeXP-small_ca {
+    transform: translateY(1rem);
+}
+.Currency_icon__freeXP-big_21 {
+    --icon-height: 24rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.freeXPIconBig24x24');
+}
+.Currency_icon__freeXP-large_c8 {
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.freeExp');
+}
+.Currency_icon__freeXP-extraLarge_58 {
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.free_xp_icon_80x80');
+}
+.Currency_base__extraLarge_4d .Currency_icon__freeXP-extraLarge_58 {
+    transform: translateY(4rem);
+}
+.Currency_icon__eliteXP-small_45 {
+    background-image: url('R.images.gui.maps.icons.library.EliteXpIcon-2');
+}
+.Currency_base__small_af .Currency_icon__eliteXP-small_45 {
+    transform: translateY(1rem);
+}
+.Currency_icon__eliteXP-big_c0 {
+    --icon-height: 24rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.EliteXpIconBig');
+}
+.Currency_icon__eliteXP-large_1b {
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.icons.library.elite_exp_48x48');
+}
+.Currency_icon__eliteXP-extraLarge_9b {
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.elite_exp_80x80');
+}
+.Currency_base__extraLarge_4d .Currency_icon__eliteXP-extraLarge_9b {
+    transform: translateY(4rem);
+}
+.Currency_icon__equipCoin-small_32 {
+    --icon-height: 16rem;
+    margin-right: -2rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoin_1');
+}
+.Currency_base__small_af .Currency_icon__equipCoin-small_32 {
+    transform: translateX(-1rem) translateY(1rem);
+}
+.Currency_icon__equipCoin-big_79 {
+    --icon-height: 24rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoinBig');
+}
+.Currency_base__big_bc .Currency_icon__equipCoin-big_79 {
+    transform: translateX(-5rem) translateY(3rem);
+}
+.Currency_icon__equipCoin-large_2c {
+    --icon-height: 48rem;
+    margin-right: 2rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.equipCoin');
+}
+.Currency_icon__equipCoin-extraLarge_8a {
+    --icon-height: 80rem;
+    margin-right: 8rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoin_icon_80x80');
+}
+.Currency_base__extraLarge_4d .Currency_icon__equipCoin-extraLarge_8a {
+    transform: translateX(2rem) translateY(4rem);
+}
+.Currency_value_e1 {
+    /* font-size inherit does not work here, so 1em means the size does not change */
+    /* stylelint-disable-next-line */
+    --font-size: 1em;
+    font-size: var(--font-size);
+    position: relative;
+    z-index: 2;
+}
+.Currency_base__small_af .Currency_value_e1 {
+    padding-right: 2rem;
+}
+.Currency_base__big_bc .Currency_value_e1 {
+    --font-size: 24rem;
+    padding-right: 5rem;
+    font-weight: 700;
+}
+.Currency_base__big_bc .Currency_value_e1 + .Currency_icon_c5 {
+    font-size: 24rem;
+}
+.Currency_base__large_65 .Currency_value_e1 {
+    --font-size: 36rem;
+    font-weight: 700;
+}
+.Currency_base__large_65 .Currency_value_e1 + .Currency_icon_c5 {
+    font-size: 36rem;
+}
+.Currency_base__extraLarge_4d .Currency_value_e1 {
+    --font-size: 56rem;
+    font-weight: 700;
+}
+.Currency_value__freeXP_cb {
+    color: #f2f2f7;
+}
+.Currency_value__credits_76 {
+    color: #ced9d9;
+}
+.Currency_value__gold_dd {
+    color: #ffc363;
+}
+.Currency_value__xp_b0,
+.Currency_value__crystal_19,
+.Currency_value__equipCoin_d0,
+.Currency_value__eliteXP_62 {
+    color: #c9c9b6;
+}
+.Currency_base__small_af .Currency_value__notEnough_56 {
+    color: #ff2717;
+}
+.Currency_base__big_bc .Currency_value__notEnough_56 {
+    color: #b70000;
+}
+.Currency_base__large_65 .Currency_value__notEnough_56 {
+    color: #b70000;
+}
+.Currency_base__extraLarge_4d .Currency_value__notEnough_56 {
+    color: #b70000;
+}
+.Currency_stock_87 {
+    height: 13rem;
+    color: #ffdd99;
+    font-size: 13rem;
+    line-height: 1;
+    position: relative;
+    z-index: 0;
+    pointer-events: none;
+}
+.Currency_stock__indent_a1 {
+    margin-left: 2rem;
+}
+.Currency_base__small_af .Currency_stock_87 {
+    transform: translateY(0rem);
+}
+.Currency_base__big_bc .Currency_stock_87 {
+    transform: translateY(4rem);
+}
+.Currency_base__large_65 .Currency_stock_87 {
+    transform: translateY(10rem);
+}
+.Currency_base__extraLarge_4d .Currency_stock_87 {
+    transform: translateY(18rem);
+}
+.Currency_stock__interactive_93 {
+    pointer-events: auto;
+}
+.Currency_stockBackground_82 {
+    width: 80rem;
+    height: 45rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -27rem;
+    bottom: 0;
+    z-index: -1;
+    transform: translateY(17rem);
+}
+
+.ReportLine_base_dd {
+    display: flex;
+    padding-bottom: 10rem;
+}
+
+.ReportLine_base__separated_d0 {
+    padding-top: 26rem;
+}
+
+.ReportLine_base__separated_d0.ReportLine_mediaExtraSmall_4e {
+    padding-top: 30rem;
+}
+
+.ReportLine_base__subtotal_bd,
+.ReportLine_base__total_c6 {
+    color: #ced9d9;
+    font-weight: 700;
+}
+
+.ReportLine_base__tooltip_55 {
+    font-size: 14rem;
+    line-height: 17rem;
+}
+
+.ReportLine_base__total_c6 {
+    padding-top: 7rem;
+    font-size: 20rem;
+}
+
+.ReportLine_base__total_c6.ReportLine_base__tooltip_55,
+.ReportLine_base__total_c6.ReportLine_mediaExtraSmall_4e {
+    font-size: 16rem;
+    line-height: 20rem;
+}
+
+.ReportLine_separator_45 {
+    flex: 1;
+    align-self: flex-end;
+    margin: 0 5rem 1rem;
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.05);
+}
+
+.ReportLine_base__tooltip_55 .ReportLine_separator_45 {
+    height: 1rem;
+    border-bottom: 0;
+    background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.1) 33%,
+            rgba(255, 255, 255, 0) 33%,
+            rgba(255, 255, 255, 0)
+        )
+        0 0 / 3rem 1rem;
+}
+
+.ReportLine_label_ba {
+    display: flex;
+    flex: 0;
+    min-width: 0;
+}
+
+.ReportLine_label__zero_0c {
+    color: #ced9d9;
+    opacity: 0.4;
+}
+
+.ReportLine_factor_42 {
+    margin-left: 3rem;
+}
+
+.ReportLine_factorText_89 {
+    color: #fff;
+}
+
+.ReportLine_value_2e {
+    color: #ced9d9;
+}
+
+.ReportLine_value__total_b8 {
+    color: #f2f2f7;
+}
+
+.ReportLine_value__zero_f7 {
+    opacity: 0.4;
+}
+
+.ReportLine_wrapper_8d {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ReportLine_wrapper__double_c0 {
+    min-width: 79rem;
+}
+
+.ReportSubGroup_base_a2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 388rem;
+}
+
+.ReportSubGroup_base__extraSmall_7b {
+    width: 338rem;
+}
+.ReportSubGroup_rows_49 {
+    flex-wrap: wrap;
+}
+.ReportSubGroup_message_ce {
+    line-height: 20rem;
+    opacity: 0.8;
+}
+
+.ReportGroup_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 8rem;
+}
+
+.ReportSection_title_91,
+.ReportSection_subTitle_5e {
+    color: #f2f2f7;
+    font-weight: 700;
+}
+.ReportSection_title_91 {
+    margin-bottom: 25rem;
+    font-size: 28rem;
+    line-height: 35rem;
+    mix-blend-mode: screen;
+}
+.ReportSection_title__extraSmall_a6 {
+    font-size: 26rem;
+    line-height: 33rem;
+}
+.ReportSection_totalSeparator_03 {
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.2);
+}
+.ReportSection_afterTotalSeparator_a6 {
+    flex: 0 0;
+    align-self: flex-end;
+    width: 388rem;
+}
+.ReportSection_afterTotalSeparator__extraSmall_e8 {
+    width: 338rem;
+}
+
+.FinancialReportTab_base_fe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 90rem 0 80rem;
+    color: #c9c9b6;
+    font-size: 16rem;
+    line-height: 19rem;
+    mix-blend-mode: screen;
+    position: relative;
+}
+
+.FinancialReportTab_base__withoutFooter_e9 {
+    padding-bottom: 0;
+}
+
+.FinancialReportTab_base__extraSmall_85 {
+    padding-bottom: 80rem;
+    font-size: 13rem;
+    line-height: 16rem;
+}
+.FinancialReportTab_report_7f {
+    align-self: center;
+    width: 800rem;
+}
+.FinancialReportTab_report__extraSmall_70 {
+    width: 700rem;
+}
+.FinancialReportTab_contentContainer_0e {
+    width: 100%;
+    position: relative;
+}
+.FinancialReportTab_section_a1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18rem;
+}
+.FinancialReportTab_benefits_cc {
+    margin-top: 35rem;
+}
+.FinancialReportTab_scrollLip_98 {
+    width: 800rem;
+    height: 30rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity ease-in-out 0.16s;
+}
+.FinancialReportTab_scrollLip__extraSmall_a6 {
+    width: 700rem;
+}
+.FinancialReportTab_scrollLip__top_64 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent);
+    top: 0;
+}
+.FinancialReportTab_scrollLip__bottom_1a {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+    bottom: 0;
+}
+.FinancialReportTab_scrollLip__hide_be {
+    opacity: 0;
+    pointer-events: none;
+}
+.FinancialReportTab_footer_c3 {
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+    left: 20%;
+}
+
+.Reveal_slideOut_2b {
+    opacity: 1;
+    transform: translateY(0);
+    animation: Reveal_slideOut_2b 300ms cubic-bezier(0.6, 0.04, 0.98, 0.34) forwards;
+    pointer-events: none;
+}
+.Reveal_slideIn_b7 {
+    opacity: 0;
+    transform: translateY(20rem);
+    animation: Reveal_slideIn_b7 200ms cubic-bezier(0.07, 0.82, 0.17, 1) forwards;
+    pointer-events: auto;
+}
+.Reveal_slideLeftOut_31 {
+    opacity: 1;
+    transform: translateY(0);
+    animation: Reveal_slideLeftOut_31 200ms cubic-bezier(0.6, 0.04, 0.98, 0.34) forwards;
+    pointer-events: none;
+}
+.Reveal_slideLeftIn_35 {
+    opacity: 0;
+    transform: translateY(40rem);
+    animation: Reveal_slideLeftIn_35 200ms cubic-bezier(0.07, 0.82, 0.17, 1) forwards;
+    pointer-events: auto;
+}
+.Reveal_slideRightOut_9e {
+    opacity: 1;
+    transform: translateY(0);
+    animation: Reveal_slideRightOut_9e 200ms cubic-bezier(0.6, 0.04, 0.98, 0.34) forwards;
+    pointer-events: none;
+}
+.Reveal_slideRightIn_d2 {
+    opacity: 0;
+    transform: translateY(-40rem);
+    animation: Reveal_slideRightIn_d2 200ms cubic-bezier(0.07, 0.82, 0.17, 1) forwards;
+    pointer-events: auto;
+}
+.Reveal_fadeOut_d7 {
+    opacity: 1;
+    animation: Reveal_fadeOut_d7 400ms cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
+    pointer-events: none;
+}
+.Reveal_fadeIn_7b {
+    opacity: 0;
+    animation: Reveal_fadeIn_7b 400ms cubic-bezier(0.47, 0, 0.75, 0.72) forwards;
+    pointer-events: auto;
+}
+.Reveal_bg_fadeOut_7c {
+    opacity: 1;
+    animation: Reveal_fadeOut_d7 300ms cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
+    pointer-events: none;
+}
+.Reveal_bg_fadeIn_5a {
+    opacity: 0;
+    animation: Reveal_fadeIn_7b 400ms cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
+    pointer-events: auto;
+}
+.Reveal_fadeDownIn_7d {
+    opacity: 0;
+    transform: translateY(-50rem);
+    animation: Reveal_fadeInUp_c1 800ms cubic-bezier(0.07, 0.82, 0.17, 1) forwards;
+}
+.Reveal_fadeDownOut_3d {
+    opacity: 1;
+    transform: translateY(0);
+    animation: Reveal_fadeInDown_26 800ms cubic-bezier(0.6, 0.04, 0.98, 0.34) forwards;
+}
+@keyframes Reveal_slideOut_2b {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+}
+@keyframes Reveal_slideIn_b7 {
+    from {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Reveal_slideLeftOut_31 {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(40rem);
+    }
+}
+@keyframes Reveal_slideLeftIn_35 {
+    from {
+        opacity: 0;
+        transform: translateX(40rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes Reveal_slideRightOut_9e {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-40rem);
+    }
+}
+@keyframes Reveal_slideRightIn_d2 {
+    from {
+        opacity: 0;
+        transform: translateX(-40rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes Reveal_fadeOut_d7 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+@keyframes Reveal_fadeIn_7b {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes Reveal_fadeInUp_c1 {
+    from {
+        opacity: 0;
+        transform: translateY(-50rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Reveal_fadeInDown_26 {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-50rem);
+    }
+}
+
+.Rewards_base_26 {
+    display: flex;
+}
+
+.Rewards_base__vertical_9f {
+    flex-direction: column;
+}
+
+.Rewards_reward_7b {
+    margin: 0 10rem;
+}
+
+.Rewards_reward__vertical_c6 {
+    margin: 15rem 0;
+}
+
+.BattleConditions_base_50 {
+    flex: 1;
+    font-size: 14rem;
+}
+
+.BattleConditions_conditionBlockColumn_fb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.BattleConditions_conditionBlockRow_9c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.BattleConditions_condition_63 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.BattleConditions_base__reverse_39 .BattleConditions_condition_63 {
+    flex-direction: column-reverse;
+}
+
+.BattleConditions_operator_79 {
+    margin: 0 10rem;
+    color: #ffbd30;
+}
+
+.BattleConditions_base__big_da .BattleConditions_operator_79 {
+    font-size: 16rem;
+}
+
+.BattleConditions_base__huge_8d .BattleConditions_operator_79 {
+    font-size: 24rem;
+}
+
+.BattleConditions_operator_79 .BattleConditions_base__bolded_99 {
+    font-weight: 700;
+}
+
+.BattleConditions_title_5d {
+    text-align: center;
+}
+
+.BattleConditions_description_3d {
+    display: flex;
+    color: #c9c9b6;
+    font-size: 14rem;
+    line-height: 18rem;
+}
+
+.BattleConditions_base__medium_dc .BattleConditions_description_3d,
+.BattleConditions_base__big_da .BattleConditions_description_3d {
+    font-size: 16rem;
+    line-height: 20rem;
+}
+
+.BattleConditions_base__huge_8d .BattleConditions_description_3d {
+    font-size: 24rem;
+}
+
+.BattleConditions_base__bolded_99 .BattleConditions_description_3d {
+    font-weight: 700;
+}
+
+.BattleConditions_progress_ca {
+    display: flex;
+    color: #c9c9b6;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 16rem;
+}
+
+.BattleConditions_base__medium_dc .BattleConditions_progress_ca {
+    font-size: 18rem;
+    line-height: 21rem;
+}
+
+.BattleConditions_base__big_da .BattleConditions_progress_ca {
+    font-size: 20rem;
+    line-height: 23rem;
+}
+
+.BattleConditions_progress__completed_15 .BattleConditions_progressCurrent_e1,
+.BattleConditions_progress__completed_15 .BattleConditions_progressSeparator_87,
+.BattleConditions_progress__completed_15 .BattleConditions_progressTotal_03 {
+    color: #7ab300;
+}
+
+.BattleConditions_progressCurrent_e1 {
+    color: #cbac77;
+}
+
+.BattleConditions_progressSeparator_87 {
+    margin: 0 3rem;
+}
+
+.BattleConditions_progressBarWrapper_f3 {
+    margin: 5rem 3rem 4rem;
+}
+
+.BattleConditions_base__medium_dc .BattleConditions_progressBarWrapper_f3 {
+    margin-top: 8rem;
+}
+
+.BattleConditions_base__big_da .BattleConditions_progressBarWrapper_f3 {
+    margin-top: 12rem;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBar_base_45 {
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+.ProgressBar_base__small_df {
+    height: 2rem;
+}
+.ProgressBar_background_51 {
+    width: 100%;
+    max-width: 8001px;
+    height: 100%;
+    background-image: var(--progress-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ProgressBar_background__small_46 {
+    height: 2rem;
+}
+.ProgressBar_lineWrapper_6a {
+    display: flex;
+    flex: 1;
+}
+
+.ProgressBarBlink_base_24 {
+    width: 60rem;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    pointer-events: none;
+}
+
+.ProgressBarBlink_base__small_0f {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressLineImpose_base_80 {
+    max-width: 8001px;
+    height: 100%;
+    background-color: var(--progress-line-base);
+    position: relative;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressLineImpose_base__disabled_cc {
+    background-color: var(--progress-line-disabled);
+}
+.ProgressLineImpose_base__finished_d4 {
+    background-color: var(--progress-line-finished);
+}
+.ProgressLineImpose_base__withoutBounce_56 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+.ProgressLineImpose_pattern_1c {
+    max-width: 8001px;
+    background-image: var(--progress-pattern-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
+    top: 0;
+    bottom: 0;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
+    background-image: var(--progress-pattern-disabled);
+    left: 0;
+}
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
+    background-image: var(--progress-pattern-finished);
+}
+.ProgressLineImpose_gradient_35 {
+    max-width: 8001px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75));
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
+    top: 0;
+    bottom: 0;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
+    display: none;
+}
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5));
+}
+.ProgressLineImpose_glow_a5 {
+    width: 60rem;
+    max-width: 8001px;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.ProgressLineImpose_glow__left_d8 {
+    left: 1rem;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+    display: none;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaSimple_base_6c {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ProgressBarDeltaSimple_delta_99 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1), cubic-bezier(0.21, 0.61, 0.35, 1);
+    transition-property: width, transform;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaGrow_base_7e {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+.ProgressBarDeltaGrow_glow_68 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+
+.Card_base_06 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 290rem;
+    height: 330rem;
+    margin: 0 10rem 20rem;
+    border: 1rem solid rgba(255, 255, 255, 0.15);
+    border-radius: 3rem;
+    background: linear-gradient(0deg, rgba(26, 26, 26, 0.25), rgba(26, 26, 26, 0.25));
+    position: relative;
+}
+
+.mediaSmall .Card_base_06 {
+    margin: 0 15rem 30rem;
+}
+
+.mediaSmall .Card_base_06 .Card_completed_6e .Card_border_anim_bg_16 {
+    animation: Card_border-anim_dc 0.7s 0.5s linear forwards;
+}
+
+.mediaMedium .Card_base_06 {
+    width: 330rem;
+    height: 390rem;
+}
+
+.mediaMedium .Card_base_06 .Card_completed_6e .Card_border_anim_bg_16 {
+    animation: Card_border-anim_dc 0.7s 0.5s linear forwards;
+}
+
+.mediaLarge .Card_base_06 {
+    width: 400rem;
+    height: 410rem;
+}
+.Card_card_icon_22 {
+    width: 32rem;
+    height: 32rem;
+    margin-right: 12rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.mediaMedium .Card_card_icon_22 {
+    margin-right: 16rem;
+}
+.mediaLarge .Card_card_icon_22 {
+    width: 50rem;
+    height: 50rem;
+    margin-right: 30rem;
+}
+.Card_status_icon_b2 {
+    width: 32rem;
+    height: 32rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    z-index: 3;
+}
+.Card_border_anim_aa {
+    width: 290rem;
+    height: 330rem;
+    clip-path: polygon(
+        0 0,
+        0 330rem,
+        290rem 330rem,
+        290rem 329rem,
+        1rem 329rem,
+        1rem 1rem,
+        289rem 1rem,
+        289rem 329rem,
+        290rem 329rem,
+        290rem 0,
+        0 0
+    );
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mediaMedium .Card_border_anim_aa {
+    width: 330rem;
+    height: 390rem;
+    clip-path: polygon(
+        0 0,
+        0 390rem,
+        330rem 390rem,
+        330rem 389rem,
+        1rem 389rem,
+        1rem 1rem,
+        329rem 1rem,
+        329rem 389rem,
+        330rem 389rem,
+        330rem 0,
+        0 0
+    );
+}
+.mediaLarge .Card_border_anim_aa {
+    width: 400rem;
+    height: 410rem;
+    clip-path: polygon(
+        0 0,
+        0 410rem,
+        400rem 410rem,
+        400rem 409rem,
+        1rem 409rem,
+        1rem 1rem,
+        399rem 1rem,
+        399rem 409rem,
+        400rem 409rem,
+        400rem 0,
+        0 0
+    );
+}
+.Card_decorator_48 {
+    width: 95%;
+    height: 1rem;
+    margin-top: -1rem;
+    background-image: url('R.images.gui.maps.icons.missions.decorations.DQ_default_line');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    mix-blend-mode: normal;
+    position: absolute;
+    z-index: 5;
+}
+.Card_border_anim_bg_16 {
+    display: none;
+    width: 500rem;
+    height: 410rem;
+    background-image: linear-gradient(120deg, transparent 30%, #fff 58%, transparent 59%);
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-400rem);
+}
+.Card_premium_0b.Card_locked_c2 {
+    background-image: url('R.images.gui.maps.icons.missions.icons.PM_disabled_pattern');
+}
+.Card_premium_0b.Card_locked_c2 .Card_decorator_48 {
+    background-image: url('R.images.gui.maps.icons.missions.decorations.DQ_default_line');
+    opacity: 1;
+}
+.Card_premium_0b.Card_locked_c2 > * {
+    opacity: 0.3;
+}
+.Card_premium_0b.Card_locked_c2 .Card_premArrow_10 {
+    opacity: 1;
+}
+.Card_premium_0b.Card_locked_c2 .Card_premiumLock_21 {
+    width: 80rem;
+    height: 80rem;
+    background-image: url('R.images.gui.maps.icons.missions.icons.lock');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 1;
+    position: absolute;
+    top: -14rem;
+    left: -15rem;
+    z-index: 9;
+}
+.Card_premium_0b.Card_active_6e {
+    border: 1rem solid rgba(255, 178, 102, 0.3);
+    box-shadow: inset 0 0 24px rgba(255, 85, 0, 0.1);
+    background: rgba(255, 85, 0, 0.1);
+}
+.Card_premium_0b.Card_active_6e .Card_decorator_48 {
+    height: 80rem;
+    background-image: url('R.images.gui.maps.icons.missions.decorations.PM_flare');
+    overflow: visible;
+    top: -38rem;
+}
+.Card_premium_0b .Card_premArrow_10 {
+    width: 30rem;
+    margin-left: 1rem;
+    background-image: url('R.images.gui.maps.icons.missions.icons.PM_arrow');
+}
+.Card_premium_0b.Card_small_46 .Card_premArrow_10 {
+    width: 22rem;
+    margin-left: 0;
+    background-image: url('R.images.gui.maps.icons.missions.icons.PM_arrow_small');
+    background-size: 11rem 28rem;
+}
+.Card_premium_0b.Card_completed_6e .Card_premArrow_10,
+.Card_premium_0b.Card_completed_final_6e .Card_premArrow_10 {
+    background-image: url('R.images.gui.maps.icons.missions.icons.PM_arrow_completed');
+}
+.Card_premium_0b.Card_completed_6e.Card_small_46 .Card_premArrow_10,
+.Card_premium_0b.Card_completed_final_6e.Card_small_46 .Card_premArrow_10 {
+    background-image: url('R.images.gui.maps.icons.missions.icons.PM_arrow_completed_small');
+}
+.Card_completed_6e {
+    border: 1rem solid rgba(137, 167, 1, 0.25);
+    box-shadow: inset 0 0 24px rgba(137, 167, 1, 0.05);
+    background: rgba(137, 167, 1, 0.05);
+}
+.Card_completed_6e .Card_border_anim_bg_16 {
+    display: block;
+    animation: Card_border-anim_dc 0.6s 0.4s ease-in forwards;
+}
+.Card_completed_6e .Card_completed_anim_bg_7d {
+    animation: Card_bg-blink_9f 1s 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) 2 forwards;
+}
+.Card_completed_6e .Card_status_icon_wrapper_6b {
+    display: flex;
+}
+.Card_completed_6e .Card_status_icon_wrapper_6b .Card_status_icon_b2 {
+    opacity: 0;
+    animation: Card_completed-icon_2c 0.3s 0.5s ease forwards;
+}
+.Card_completed_6e .Card_decorator_48 {
+    background-image: url('R.images.gui.maps.icons.missions.decorations.DQ_complete_line');
+}
+.Card_completed_final_6e {
+    border: 1rem solid rgba(137, 167, 1, 0.25);
+    box-shadow: inset 0 0 24px rgba(137, 167, 1, 0.05);
+    background: rgba(137, 167, 1, 0.05);
+}
+.Card_completed_final_6e .Card_status_icon_wrapper_6b {
+    display: flex;
+}
+.Card_completed_final_6e .Card_decorator_48 {
+    background-image: url('R.images.gui.maps.icons.missions.decorations.DQ_complete_line');
+}
+.Card_completed_anim_bg_7d {
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    background-color: rgba(76, 111, 29, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.Card_battle_conditions_wrapper_7a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 32rem 18rem 0;
+}
+.mediaMedium .Card_battle_conditions_wrapper_7a {
+    padding: 35rem 20rem 0;
+}
+.mediaLarge .Card_battle_conditions_wrapper_7a {
+    padding: 50rem 35rem 0;
+}
+.Card_battle_conditions_inner_wrapper_59 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25rem;
+}
+.Card_small_46 .Card_battle_conditions_inner_wrapper_59 {
+    margin-bottom: 15rem;
+}
+.Card_battle_conditions_inner_wrapper__no_margin_6f,
+.Card_small_46 .Card_battle_conditions_inner_wrapper__no_margin_6f {
+    margin-bottom: 0;
+}
+.Card_rewards_wrapper_c5 {
+    align-items: center;
+    margin-bottom: 25rem;
+    position: relative;
+    z-index: 3;
+}
+.Card_medium_c6 .Card_rewards_wrapper_c5 {
+    margin-bottom: 20rem;
+}
+.Card_small_46 .Card_rewards_wrapper_c5 {
+    margin-bottom: 21rem;
+}
+.Card_rewardBlock_wrapper_ee {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.Card_rewardsText_7e {
+    margin-bottom: 2rem;
+    color: #e9e2bf;
+    font-size: 16rem;
+    line-height: 20rem;
+    text-align: center;
+}
+.Card_completed_6e .Card_rewardsText_7e {
+    color: #7ab300;
+}
+.Card_status_icon_wrapper_6b {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: -15rem;
+    z-index: 3;
+}
+.Card_status_shadow_92 {
+    width: 320rem;
+    height: 259rem;
+    background: url('R.images.gui.maps.icons.wtevent.postbattle.shadow') no-repeat center / contain;
+    position: absolute;
+    bottom: -127rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Card_status_wrapper_d7 {
+    display: flex;
+    align-items: center;
+    color: #fd9;
+    font-size: 14rem;
+    line-height: 18rem;
+    position: absolute;
+    top: 15rem;
+    right: 15rem;
+}
+.Card_medium_c6 .Card_status_wrapper_d7 {
+    top: 10rem;
+    right: 10rem;
+}
+.Card_small_46 .Card_status_wrapper_d7 {
+    top: 8rem;
+    right: 8rem;
+}
+.Card_reroll_btn_1e {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.Card_reroll_btn_images_d8 {
+    position: relative;
+}
+.Card_reroll_btn_images_d8 .Card_reroll_img_3c {
+    width: 48rem;
+    height: 48rem;
+    background-image: url('R.images.gui.maps.icons.missions.icons.reroll_button');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.Card_reroll_btn_images_d8 .Card_reroll_img_hover_13 {
+    width: 48rem;
+    height: 48rem;
+    background-image: url('R.images.gui.maps.icons.missions.icons.reroll_button_hover');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: opacity 0.2s ease;
+}
+.Card_reroll_btn_images_d8 .Card_reroll_img_disabled_64 {
+    display: none;
+    width: 48rem;
+    height: 48rem;
+    background-image: url('R.images.gui.maps.icons.missions.icons.reroll_button_disabled');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.Card_reroll_btn_1e p {
+    max-width: 125rem;
+    margin: 0 -5rem 0 0;
+    color: #fd9;
+    font-size: 14rem;
+    text-align: right;
+    text-shadow:
+        0 0 15px #e52,
+        0 0 8px #ff2a00,
+        0 0 4px rgba(255, 127, 0, 0.25);
+    white-space: pre;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.Card_reroll_btn_1e:hover p {
+    opacity: 1;
+}
+.Card_reroll_btn_1e:hover .Card_reroll_img_hover_13 {
+    opacity: 1;
+}
+.Card_reroll_btn__disabled_c8 p {
+    display: none;
+}
+.Card_reroll_btn__disabled_c8 .Card_reroll_btn_images_d8 .Card_reroll_img_3c {
+    display: none;
+}
+.Card_reroll_btn__disabled_c8 .Card_reroll_btn_images_d8 .Card_reroll_img_hover_13 {
+    display: none;
+}
+.Card_reroll_btn__disabled_c8 .Card_reroll_btn_images_d8 .Card_reroll_img_disabled_64 {
+    display: flex;
+    opacity: 1;
+    cursor: auto;
+}
+.Card_quest_bottomText_f2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Card_quest_bottomText__completed_71 {
+    color: #80d43a;
+}
+.Card_completed_6e .Card_reroll_btn_1e,
+.Card_completed_final_6e .Card_reroll_btn_1e {
+    display: none;
+}
+.Card_premArrow_10 {
+    width: 30rem;
+    height: 100%;
+    background-image: url('R.images.gui.maps.icons.missions.icons.PM_arrow');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 14rem 38rem;
+    position: absolute;
+    left: 100%;
+}
+.Card_conditionText_22 {
+    color: #c9c9b6;
+    font-size: 16rem;
+    line-height: 20rem;
+}
+@keyframes Card_border-anim_dc {
+    0% {
+        transform: translateX(-400rem);
+    }
+
+    100% {
+        transform: translateX(400rem);
+    }
+}
+@keyframes Card_bg-blink_9f {
+    0% {
+        background-color: rgba(76, 111, 29, 0);
+    }
+
+    50% {
+        background-color: rgba(76, 111, 29, 0.3);
+    }
+
+    100% {
+        background-color: rgba(76, 111, 29, 0);
+    }
+}
+@keyframes Card_completed-icon_2c {
+    from {
+        opacity: 0;
+        transform: scale(1.6);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.Cards_base_b5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+}
+
+.QuestsTab_base_3d {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.QuestsTab_scrollWrapper_26 {
+    margin: 96rem 40rem 0;
+}
+.QuestsTab_contentWrapper_b9 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+}
+.QuestsTab_content_71 {
+    max-width: 1290rem;
+}
+.QuestsTab_base__small_33 .QuestsTab_content_71 {
+    max-width: 1100rem;
+}
+.QuestsTab_base__extraSmall_01 .QuestsTab_content_71 {
+    max-width: 980rem;
+}
+.QuestsTab_shadowLip_3d {
+    width: 100%;
+    height: 120rem;
+    background: linear-gradient(to top, #000, transparent);
+    opacity: 0.4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.TabsContent_base_cc {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    width: 100%;
+    position: relative;
+}
+
+.TabsContent_base__tie_73 {
+    background-image: linear-gradient(#5c5a5f, transparent 50%, transparent);
+}
+
+.TabsContent_base__win_2a {
+    background-image: linear-gradient(rgba(16, 196, 255, 0.2), transparent 50%, transparent);
+}
+
+.TabsContent_base__lose_01 {
+    background-image: linear-gradient(rgba(255, 114, 99, 0.2), transparent 50%, transparent);
+}
+
+.TabsContent_contentContainer_6c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+}
+
+.TabsContent_contentContainer__hidden_4d {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+body {
+    flex: 1;
+    height: 100vh;
+    margin: 0;
+    padding-bottom: 38rem;
+    background-color: #000;
+    color: #8c8c7c;
+    font-size: 14rem;
+    line-height: 1;
+    overflow: hidden;
+}
+.ScreenContent_base_de {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.ScreenContent_bg_ec {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    transform: scale(1.05);
+}
+.ScreenContent_bg__top_5c {
+    height: 60%;
+    top: 0;
+    transform-origin: bottom;
+}
+.ScreenContent_bg__bottom_8b {
+    height: 50%;
+    mask: linear-gradient(to top, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0.1)) repeat;
+    bottom: 0;
+    transform-origin: top;
+}
+.ScreenContent_bgInner_5c {
+    background: no-repeat center / cover;
+    position: absolute;
+    right: 0;
+    left: 0;
+    transition: filter 1s;
+}
+.ScreenContent_bgInner__top_b4 {
+    height: 166.66667%; /* 60 - height of bg__top(see above) */
+    top: 0;
+}
+.ScreenContent_bgInner__bottom_c3 {
+    height: 200%; /* 50 - height of bg__bottom(see above) */
+    bottom: 0;
+}
+.ScreenContent_bgInner__blurred_41 {
+    filter: blur(7px);
+}
+.ScreenContent_filter_89 {
+    background-image: radial-gradient(transparent 0, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.5) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: background-color 0.5s;
+}
+.ScreenContent_filter__shadow_0e {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+.ScreenContent_filter__shadowPersonalEfficiency_be {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.ScreenContent_close_09 {
+    position: absolute;
+    top: 30rem;
+    right: 30rem;
+    z-index: 1;
+}
+.ScreenContent_tabsContentWrapper_64 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+.ScreenContent_playerInfo_f8,
+.ScreenContent_mapInfo_c8 {
+    position: absolute;
+    bottom: 30rem;
+}
+.ScreenContent_playerInfo_f8 {
+    right: 40rem;
+}
+.ScreenContent_mapInfo_c8 {
+    left: 40rem;
+}

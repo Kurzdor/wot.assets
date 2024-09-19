@@ -1,0 +1,444 @@
+.Counter_base_9e {
+    display: flex;
+    min-width: 14rem;
+    height: 14rem;
+    position: relative;
+    z-index: 0;
+    animation: Counter_show_be ease-in-out forwards;
+}
+
+.Counter_base__big_19 {
+    min-width: 21rem;
+    height: 21rem;
+}
+
+.Counter_base__small_3b {
+    min-width: 13rem;
+    height: 13rem;
+}
+
+.Counter_base__empty_98 {
+    min-width: 6rem;
+    height: 6rem;
+}
+
+.Counter_base__animated_40 {
+    animation-duration: 0.2s;
+}
+
+.Counter_base__hidden_56 {
+    animation-name: Counter_hide_b6;
+}
+.Counter_bg_74 {
+    border: 1rem solid #fe4e0f;
+    border-radius: 7rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 6rem rgba(254, 103, 0, 0.2),
+        0 0 12rem 4rem rgba(249, 0, 0, 0.3);
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.Counter_base__big_19 .Counter_bg_74 {
+    border-radius: 11rem;
+}
+.Counter_base__small_3b .Counter_bg_74 {
+    border-radius: 7rem;
+}
+.Counter_value_3e {
+    display: flex;
+    padding: 0 4rem;
+    color: #fefeec;
+    font-size: 11rem;
+    line-height: 13rem;
+    white-space: nowrap;
+}
+.Counter_base__big_19 .Counter_value_3e {
+    padding: 0 7rem;
+    font-size: 14rem;
+    line-height: 20rem;
+}
+.Counter_base__small_3b .Counter_value_3e {
+    font-size: 9rem;
+    line-height: 12rem;
+}
+.Counter_value__text_d6 {
+    padding: 0 7rem;
+}
+.Counter_base__big_19 .Counter_value__text_d6 {
+    padding: 0 10rem;
+}
+.Counter_base__small_3b .Counter_value__text_d6 {
+    padding: 0 5rem;
+    font-size: 10rem;
+}
+.Counter_base__pattern_71 .Counter_value_3e {
+    display: none;
+}
+.Counter_plus_15 {
+    position: relative;
+    top: -1rem;
+}
+.Counter_pattern_83 {
+    display: none;
+}
+.Counter_base__pattern_71 .Counter_pattern_83 {
+    display: block;
+    border-radius: 50%;
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+@keyframes Counter_show_be {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes Counter_hide_b6 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes App_zoom-in_4d {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.03);
+    }
+}
+@keyframes App_zoom-out_2d {
+    0% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes App_brightness-in_ae {
+    0% {
+        filter: brightness(1);
+    }
+
+    100% {
+        filter: brightness(1.05);
+    }
+}
+@keyframes App_brightness-out_2c {
+    0% {
+        filter: brightness(1.05);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
+}
+.App_base_d9 {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.App_base__notPrimeTime_0e .App_base_d9 {
+    cursor: none;
+}
+.App_base__base__before_a7 .App_base_d9 {
+    cursor: none;
+}
+.App_bg_02 {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    background: url('R.images.gui.maps.icons.wtevent.entryPoint.background_160x112') no-repeat center / cover;
+    filter: brightness(1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    transition:
+        filter 0.5s cubic-bezier(0.07, 0.82, 0.17, 1),
+        transform 0.5s cubic-bezier(0.07, 0.82, 0.17, 1);
+}
+.mediaMedium .App_bg_02 {
+    background-image: url('R.images.gui.maps.icons.wtevent.entryPoint.background_220x112');
+}
+.mediaLarge .App_bg_02 {
+    background-image: url('R.images.gui.maps.icons.wtevent.entryPoint.background_300x150');
+}
+.App_base__single_59 .App_bg_02 {
+    background-image: url('R.images.gui.maps.icons.wtevent.entryPoint.background_300x112');
+}
+.mediaLarge .App_base__single_59 .App_bg_02 {
+    background-image: url('R.images.gui.maps.icons.wtevent.entryPoint.background_300x150');
+}
+.App_base_d9:hover .App_bg_02 {
+    filter: brightness(1);
+    transform: scale(1.03);
+}
+.App_base__notPrimeTime_0e .App_bg_02 {
+    filter: brightness(0.6);
+}
+.App_base__active_c2 .App_bg_02 {
+    filter: brightness(0.8);
+}
+.App_base__disabled_96 .App_bg_02 {
+    filter: brightness(1) grayscale(50%);
+}
+.App_base__disabled_96:hover .App_bg_02 {
+    filter: brightness(1) grayscale(50%);
+}
+.App_base__notPrimeTime_0e:hover .App_bg_02 {
+    filter: brightness(0.8);
+}
+.App_overlay_7a {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s cubic-bezier(0.07, 0.82, 0.17, 1);
+}
+.App_base_d9:hover .App_overlay_7a {
+    opacity: 0.7;
+}
+.App_shadow_c1 {
+    width: 100%;
+    height: 100%;
+    border: 1rem solid rgba(255, 255, 255, 0.25);
+    border-radius: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.3) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.App_content_6d {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.App_title_ce {
+    color: #ffffff;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 28rem;
+    text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
+}
+.App_base__after_bd .App_title_ce {
+    margin-top: 18rem;
+}
+.mediaLarge .App_base__after_bd .App_title_ce {
+    margin-top: 37rem;
+}
+.App_base__mini_43 .App_title_ce {
+    color: #ffffff;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-top: 39.5rem;
+}
+.App_base__after__mini_67 .App_title_ce {
+    margin-top: 29rem;
+}
+.mediaLarge .App_title_ce {
+    margin-top: 47rem;
+}
+.App_base__before_06 .App_title_ce {
+    opacity: 0.7;
+}
+.App_subtitle_6a {
+    color: #ffffff;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
+}
+.App_base__mini_43 .App_subtitle_6a {
+    color: #ffffff;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.App_base__before_06 .App_subtitle_6a,
+.App_base__after_bd .App_subtitle_6a {
+    opacity: 0.8;
+}
+.App_highlight_33 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.App_base_d9:hover .App_highlight__default_65 {
+    background: url('R.images.gui.maps.icons.wtevent.entryPoint.highlight') no-repeat center / contain;
+}
+.App_base_d9:hover .App_highlight__mini_89 {
+    background: url('R.images.gui.maps.icons.wtevent.entryPoint.highlight') no-repeat center / cover;
+}
+.App_lootBoxCounts_4a {
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    position: absolute;
+    top: 5rem;
+    right: 7rem;
+    z-index: 3;
+}
+.App_value_2d {
+    padding-left: 16rem;
+    background: url('R.images.gui.maps.icons.wtevent.entryPoint.engineer_16x16') no-repeat left center / 16rem;
+    text-shadow: 1rem 1rem 0 rgba(0, 0, 0, 0.25);
+}
+.App_value__hunter_01 {
+    margin-right: 8rem;
+    background-image: url('R.images.gui.maps.icons.wtevent.entryPoint.harrier_16x16');
+}
+.App_performanceIcon_a6 {
+    width: 16rem;
+    height: 16rem;
+    background: url('R.images.gui.maps.icons.library.alertIcon') no-repeat center / cover;
+    position: absolute;
+    top: 9rem;
+    left: 9rem;
+}
+.App_newLabel_92 {
+    position: absolute;
+    top: 9rem;
+    left: 9rem;
+}
+.App_seasonDate_51 {
+    color: #ffdd99;
+    position: absolute;
+    bottom: 8rem;
+}
+.mediaLarge .App_seasonDate_51 {
+    bottom: 12rem;
+}
+.App_seasonDateIcon_0d {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+}
+.App_base__disabled_96 .App_seasonDateIcon_0d {
+    width: 46rem;
+    height: 46rem;
+    top: 55%;
+    left: -14rem;
+    transform: translateY(-50%);
+}
+.App_base__notPrimeTime_0e .App_seasonDateIcon_0d {
+    width: 46rem;
+    height: 46rem;
+    background: url('R.images.gui.maps.icons.wtevent.entryPoint.lock') no-repeat center / contain;
+    top: 55%;
+    left: -14rem;
+    transform: translateY(-50%);
+}
+.App_base__active_c2 .App_seasonDateIcon_0d {
+    width: 46rem;
+    height: 46rem;
+    background: url('R.images.gui.maps.icons.library.ClockIcon_1') no-repeat center / contain;
+    top: 55%;
+    left: -14rem;
+    transform: translateY(-50%);
+}
+.App_seasonDateText_4c {
+    color: #ffdd99;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.App_base__active_c2 .App_seasonDateText_4c,
+.App_base__notPrimeTime_0e .App_seasonDateText_4c {
+    padding-left: 21rem;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+}
+.App_base__before__mini_65 .App_seasonDateText_4c,
+.App_base__after__mini_67 .App_seasonDateText_4c {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.App_particles_ee {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    width: 160rem;
+    height: 112rem;
+    mix-blend-mode: screen;
+}
+.mediaMedium .App_particles_ee {
+    width: 220rem;
+}
+.mediaLarge .App_particles_ee {
+    width: 300rem;
+    height: 150rem;
+}
+.App_base__single_59 .App_particles_ee {
+    width: 300rem;
+}
+.App_redLine_d8 {
+    width: 300rem;
+    height: 28rem;
+    margin-left: -110rem;
+    margin-top: -2rem;
+    background: url('R.images.gui.maps.icons.wtevent.entryPoint.RedLine') no-repeat center / contain;
+    opacity: 0.9;
+    position: absolute;
+}
+.App_afterEventText_98 {
+    color: #ffdd99;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+}
+.App_base__mini_43 .App_afterEventText_98 {
+    color: #ffdd99;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+body {
+    margin: 1rem;
+    overflow: hidden;
+}

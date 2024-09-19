@@ -1,0 +1,1612 @@
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+.TextButton_icon__forward_59 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
+.TextButton_icon__close_53 {
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
+.TextButton_icon__info_33 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_glow_a4 {
+    opacity: 0;
+}
+.TextButton_caption_82 {
+    position: relative;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
+}
+.TextButton_caption__back_b9,
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
+.TextButton_caption__info_23 {
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+    margin-left: 8rem;
+}
+.TextButton_base__right_39 .TextButton_goto_e7 {
+    margin-right: 8rem;
+}
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity 0.16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+    left: -4rem;
+}
+.TextButton_base__right_39 .TextButton_shine_e2 {
+    right: -4rem;
+    transform: rotate(180deg);
+}
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_shine_e2 {
+    opacity: 0;
+}
+
+@keyframes Category_slideUp_bf {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Category_blink_4f {
+    0% {
+        filter: brightness(1);
+    }
+
+    16% {
+        filter: brightness(3);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
+}
+
+@keyframes Category_show_c1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.Category_base_01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 128rem;
+    padding-bottom: 27rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.mediaMedium .Category_base_01 {
+    width: 160rem;
+    padding-bottom: 33rem;
+}
+
+.Category_glow_8a {
+    width: 400rem;
+    height: 148rem;
+    background: url('R.images.gui.maps.icons.selectableReward.tabs.glow') no-repeat center / cover;
+    opacity: 0;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.Category_glow__show_c1 {
+    opacity: 1;
+}
+
+.Category_title_e6 {
+    color: transparent;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 100%;
+    padding: 0 4rem;
+    line-height: 1;
+    text-align: center;
+    white-space: pre-wrap;
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    transform: translateY(-100%);
+    transition: color 0.5s;
+}
+
+.mediaMedium .Category_title_e6 {
+    color: #fefeec;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    padding: 0;
+    transform: translateY(-100%);
+}
+
+.Category_base_01:hover .Category_title_e6 {
+    color: #8c8c7e;
+}
+
+.Category_base__selected_75 .Category_title_e6 {
+    color: #f2f2f7;
+}
+
+.Category_base__selected_75:hover .Category_title_e6 {
+    color: #f2f2f7;
+}
+
+.Category_imageContainer_a0 {
+    width: 48rem;
+    height: 48rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mediaMedium .Category_imageContainer_a0 {
+    width: 80rem;
+    height: 80rem;
+}
+
+.Category_image_12 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat center / contain;
+    filter: brightness(100%);
+    transition: filter 0.5s;
+}
+
+.Category_base_01:hover .Category_image_12 {
+    filter: brightness(150%);
+}
+
+.Category_base__completed_fb .Category_image_12 {
+    opacity: 0.5;
+}
+
+.Category_base__selected_75 .Category_image_12 {
+    mask-image: linear-gradient(180deg, #c4c4c4 0%, #c4c4c4 51.04%, transparent 100%);
+}
+
+.Category_base__accepting_71 .Category_image_12 {
+    animation-name: Category_blink_4f;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
+    animation-iteration-count: 1;
+}
+
+.Category_check_13 {
+    width: 46rem;
+    height: 48rem;
+    background: url('R.images.gui.maps.icons.selectableReward.tabs.check') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s;
+}
+
+.Category_base__completed_fb .Category_check_13 {
+    opacity: 1;
+}
+
+.Category_counter_1f {
+    color: #8c8c7e;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 10rem;
+    transition: color 0.5s;
+}
+
+.mediaMedium .Category_counter_1f {
+    color: #8c8c7e;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    bottom: 15rem;
+}
+
+.Category_base__selected_75 .Category_counter_1f {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-shadow: 0 0 14rem rgba(255, 255, 255, 0.5);
+}
+
+.mediaMedium .Category_base__selected_75 .Category_counter_1f {
+    color: #f2f2f7;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.HorizontalBar_base_49 {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+    position: relative;
+}
+
+.HorizontalBar_base__nonActive_82 {
+    visibility: hidden;
+}
+
+.HorizontalBar_base_49 .disable,
+.HorizontalBar_base_49 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover,
+.HorizontalBar_rightButton_03:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem
+        7rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
+    opacity: 0.7;
+}
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.VerticalBar_base_f3 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+.VerticalBar_base__nonActive_42 {
+    visibility: hidden;
+}
+
+.VerticalBar_base_f3 .disable,
+.VerticalBar_base_f3 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.VerticalBar_topButton_d7,
+.VerticalBar_bottomButton_06 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_d7:hover,
+.VerticalBar_bottomButton_06:hover {
+    opacity: 1;
+}
+
+.VerticalBar_topButton_d7 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_06 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_df {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32 {
+    display: none;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32:hover {
+    opacity: 1;
+}
+
+.VerticalBar_rail_43 {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_43:hover {
+    opacity: 0.7;
+}
+
+.VerticalScroll_content_cb {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_f8 {
+    display: flex;
+}
+
+.VerticalScroll_bar_1e {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_af {
+    flex: 1;
+}
+
+@keyframes Reward_slideUp_f1 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Reward_blink_2d {
+    0% {
+        filter: brightness(1);
+    }
+
+    16% {
+        filter: brightness(3);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
+}
+
+@keyframes Reward_show_0f {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.Reward_base_fc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 216rem;
+    height: 248rem;
+    border: 1rem solid rgba(0, 0, 0, 0);
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.07);
+    position: relative;
+    cursor: pointer;
+}
+
+.Reward_base_fc:hover {
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 25rem rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Reward_base__selected_6d,
+.Reward_base__selected_6d:hover {
+    border-color: #ffb266;
+    box-shadow: inset 0 0 30rem rgba(255, 122, 0, 0.3);
+    background: linear-gradient(0deg, rgba(255, 107, 0, 0.1), rgba(255, 107, 0, 0.1)), rgba(0, 0, 0, 0.4);
+}
+
+.Reward_reward_3f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180rem;
+    height: 135rem;
+    margin-top: 20rem;
+    position: relative;
+}
+
+.Reward_image_5e {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat center / contain;
+    z-index: 1;
+}
+
+.Reward_base__stateReceived_ff .Reward_image_5e,
+.Reward_base__stateLimited_6e .Reward_image_5e {
+    opacity: 0.4;
+}
+
+.Reward_base__stateLimited_6e.Reward_base__selected_6d .Reward_image_5e {
+    opacity: 1;
+}
+
+.Reward_base__accepting_9d .Reward_image_5e {
+    animation-name: Reward_blink_2d;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
+    animation-iteration-count: 1;
+}
+
+.Reward_optDeviceType_7f {
+    width: 180rem;
+    height: 135rem;
+    background: no-repeat center / cover;
+    position: absolute;
+    z-index: 2;
+}
+
+.Reward_disabled_31 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.gui.maps.icons.selectableReward.reward.s180x135.disable') no-repeat center / contain;
+    opacity: 0.2;
+    mask-size: contain;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+}
+
+.Reward_packSize_63 {
+    color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.Reward_label_e6 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180rem;
+    height: 53rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.Reward_storage_0b {
+    color: #c9c9b6;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    position: absolute;
+    top: 8rem;
+    right: 9rem;
+}
+
+.Reward_storage__hidden_0a {
+    display: none;
+}
+
+.Reward_storageIcon_45 {
+    width: 30rem;
+    height: 24rem;
+    margin-top: -2rem;
+    margin-right: 3rem;
+    background: url('R.images.gui.maps.icons.selectableReward.reward.storage') no-repeat center / contain;
+}
+
+.Reward_countText_61 {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    bottom: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Reward_base__selected_6d .Reward_countText_61,
+.Reward_base_fc:hover .Reward_countText_61 {
+    opacity: 1;
+}
+
+.Reward_select_89 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Reward_base_fc:hover .Reward_select_89 {
+    opacity: 1;
+}
+
+.Reward_state_19 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    transform: translateY(24rem);
+    pointer-events: none;
+}
+
+.Reward_base__stateLimited_6e .Reward_state_19 {
+    opacity: 0;
+    pointer-events: auto;
+}
+
+.Reward_base__stateLimited_6e.Reward_base__selected_6d .Reward_state_19,
+.Reward_base__stateLimited_6e.Reward_base_fc:hover .Reward_state_19 {
+    opacity: 1;
+}
+
+.Reward_stateText_4b {
+    color: #8c8c7e;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 100%;
+    margin-bottom: -11rem;
+    text-align: center;
+}
+
+.Reward_base__stateLimited_6e .Reward_stateText_4b {
+    color: #ee7000;
+}
+
+.Reward_base__stateReceived_ff .Reward_stateText_4b {
+    color: #7ab300;
+}
+
+.Reward_stateIcon_c6 {
+    width: 48rem;
+    height: 48rem;
+    background: no-repeat center / contain;
+}
+
+.Reward_base__stateLimited_6e .Reward_stateIcon_c6 {
+    background-image: url('R.images.gui.maps.icons.selectableReward.reward.state.alert');
+}
+
+.Reward_base__stateReceived_ff .Reward_stateIcon_c6 {
+    background-image: url('R.images.gui.maps.icons.selectableReward.reward.state.check');
+}
+
+.Reward_glow_dc {
+    width: 206rem;
+    height: 78rem;
+    background: no-repeat center / contain;
+    mix-blend-mode: screen;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.Reward_base__stateNormal_99 .Reward_glow_dc,
+.Reward_base__stateLimited_6e .Reward_glow_dc {
+    background-image: url('R.images.gui.maps.icons.selectableReward.reward.state.orange_glow');
+    opacity: 0;
+}
+
+.Reward_base__stateNormal_99.Reward_base__selected_6d .Reward_glow_dc,
+.Reward_base__stateNormal_99.Reward_base_fc:hover .Reward_glow_dc,
+.Reward_base__stateLimited_6e.Reward_base__selected_6d .Reward_glow_dc,
+.Reward_base__stateLimited_6e.Reward_base_fc:hover .Reward_glow_dc {
+    opacity: 1;
+}
+
+.Reward_base__stateReceived_ff .Reward_glow_dc {
+    background-image: url('R.images.gui.maps.icons.selectableReward.reward.state.green_glow');
+}
+
+.SelectButton_base_1c {
+    width: 46rem;
+    height: 42rem;
+    margin: 0 22rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.SelectButton_base__plus_01 {
+    background-image: url('R.images.gui.maps.icons.selectableReward.reward.selectButton.plus_enabled');
+}
+
+.SelectButton_base__plus_01:hover {
+    background-image: url('R.images.gui.maps.icons.selectableReward.reward.selectButton.plus_hover');
+}
+
+.SelectButton_base__plus_01.SelectButton_base__disabled_f4 {
+    background-image: url('R.images.gui.maps.icons.selectableReward.reward.selectButton.plus_disabled');
+    cursor: default;
+}
+
+.SelectButton_base__minus_13 {
+    background-image: url('R.images.gui.maps.icons.selectableReward.reward.selectButton.minus_enabled');
+}
+
+.SelectButton_base__minus_13:hover {
+    background-image: url('R.images.gui.maps.icons.selectableReward.reward.selectButton.minus_hover');
+}
+
+.SelectButton_base__minus_13.SelectButton_base__disabled_f4 {
+    background-image: url('R.images.gui.maps.icons.selectableReward.reward.selectButton.minus_disabled');
+    cursor: default;
+}
+
+.ContentGrid_base_59 {
+    display: flex;
+    height: 443rem;
+    border-top: 1rem solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+.mediaMedium .ContentGrid_base_59 {
+    height: 455rem;
+}
+.mediaLarge .ContentGrid_base_59 {
+    height: 570rem;
+}
+.mediaExtraLarge .ContentGrid_base_59 {
+    height: 842rem;
+}
+
+.ContentGrid_scrollArea_e0 {
+    width: 973rem;
+}
+
+.mediaMedium .ContentGrid_scrollArea_e0 {
+    width: 1213rem;
+}
+
+.mediaLarge .ContentGrid_scrollArea_e0 {
+    width: 1453rem;
+}
+
+.ContentGrid_scrollAreaInner_ba {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 24rem;
+}
+
+.ContentGrid_reward_68 {
+    margin-top: 24rem;
+    margin-right: 24rem;
+}
+
+.Lip_base_57 {
+    width: 100%;
+    padding-bottom: 12%;
+    background: url('R.images.gui.maps.icons.selectableReward.lip') no-repeat center / cover;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    transition: opacity 0.15s ease-in-out;
+    pointer-events: none;
+}
+
+.Lip_base__top_11 {
+    top: 0;
+    transform: translateY(-50%);
+}
+
+.Lip_base__bottom_a5 {
+    bottom: 0;
+    transform: translateY(50%) rotate(180deg);
+}
+
+.Lip_base__show_65 {
+    opacity: 1;
+}
+
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.6);
+    position: relative;
+    cursor: pointer;
+}
+
+.CButton_base__main_42,
+.CButton_base__primary_7f,
+.CButton_base__primaryGreen_6f,
+.CButton_base__primaryRed_ec,
+.CButton_base__secondary_50 {
+    background-size: 100% 100%;
+}
+
+.CButton_base__main_42 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_main');
+}
+
+.CButton_base__primary_7f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+
+.CButton_base__primaryGreen_6f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+
+.CButton_base__primaryRed_ec {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+
+.CButton_base__secondary_50 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+
+.CButton_base__ghost_ed {
+    border-radius: 3rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 0 1rem rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.CButton_base__extraSmall_27 {
+    min-height: 17rem;
+    padding: 0 16rem;
+}
+
+.CButton_base__small_df,
+.CButton_base__medium_74 {
+    padding: 0 20rem;
+}
+
+.CButton_base__small_df {
+    min-height: 18rem;
+}
+
+.CButton_base__medium_74 {
+    min-height: 32rem;
+}
+
+.CButton_base__large_5c {
+    min-height: 48rem;
+}
+
+.CButton_base__disabled_d9 {
+    cursor: default;
+}
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+}
+.CButton_base__primary_7f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+.CButton_base__secondary_50 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow 0.16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+    border-radius: 2rem;
+    box-shadow: inset 0 0 2rem 1rem rgba(255, 85, 0, 0.2);
+}
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(
+        180deg,
+        rgba(252, 248, 235, 0.25) 0%,
+        rgba(252, 248, 235, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0;
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+    opacity: 1;
+}
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+    box-shadow: 0 15rem 12rem 0 rgba(242, 242, 230, 0.11) inset;
+    background-color: rgba(8, 6, 0, 0.18);
+    background-image: none;
+}
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+    opacity: 0;
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+    opacity: 1;
+}
+.CButton_stateDisabled_54 {
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem 15rem;
+    visibility: hidden;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+    visibility: inherit;
+}
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: 0.03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang='ja'],
+.CButton_content_cc[lang='ko'],
+.CButton_content_cc[lang='zh_tw'],
+.CButton_content_cc[lang='zh_sg'],
+.CButton_content_cc[lang='zh_cn'],
+.CButton_content_cc[lang='th'] {
+    font-weight: 400;
+}
+.CButton_base__main_42 .CButton_content_cc,
+.CButton_base__primaryRed_ec .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #600;
+}
+.CButton_base__secondary_50 .CButton_content_cc {
+    color: rgba(254, 254, 236, 0.75);
+}
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #1c2502;
+}
+.CButton_base__extraSmall_27 .CButton_content_cc {
+    font-size: 12rem;
+}
+.CButton_base__small_df .CButton_content_cc {
+    font-size: 14rem;
+}
+.CButton_base__medium_74 .CButton_content_cc {
+    font-size: 15rem;
+}
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
+}
+.CButton_base__disabled_d9 .CButton_content_cc {
+    opacity: 0.6;
+}
+
+.Footer_base_78 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.Footer_description_7a {
+    display: flex;
+    justify-content: center;
+}
+
+.Footer_selectRewards_b0 {
+    display: flex;
+    margin-bottom: 16rem;
+    color: #e9e2bf;
+    font-size: 14rem;
+}
+
+.mediaMedium .Footer_selectRewards_b0 {
+    font-size: 16rem;
+}
+
+.Footer_rewardsSelected_06 {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 15rem;
+    color: #8c8c7e;
+    font-size: 14rem;
+}
+
+.mediaMedium .Footer_rewardsSelected_06 {
+    font-size: 16rem;
+}
+
+.Footer_rewardsSelectedCount_af {
+    margin-left: 7rem;
+    margin-top: -6rem;
+    color: #f2f2f7;
+    font-size: 20rem;
+    font-weight: 700;
+}
+
+.mediaMedium .Footer_rewardsSelectedCount_af {
+    margin-top: -8rem;
+    font-size: 24rem;
+}
+
+.Footer_rewardsSelectedIcon_83 {
+    width: 14rem;
+    height: 14rem;
+    margin-left: 5rem;
+    background: url('R.images.gui.maps.icons.selectableReward.footer.info') no-repeat center / contain;
+}
+
+.mediaMedium .Footer_rewardsSelectedIcon_83 {
+    margin-top: 2rem;
+}
+
+.Footer_buttons_10 {
+    display: flex;
+    justify-content: center;
+}
+
+.Footer_cButton_fe {
+    min-width: 160rem;
+    margin: 0 10rem;
+}
+
+@keyframes Content_slideUp_84 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Content_blink_95 {
+    0% {
+        filter: brightness(1);
+    }
+
+    16% {
+        filter: brightness(3);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
+}
+
+@keyframes Content_show_00 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.Content_base_8e {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Content_base__accepting_d1 {
+    pointer-events: none;
+}
+
+.Content_heading_b3 {
+    opacity: 0;
+    animation-name: Content_slideUp_84;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
+    animation-delay: 0.2s;
+    animation-iteration-count: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 147rem;
+    position: relative;
+}
+
+.mediaMedium .Content_heading_b3 {
+    flex: 1 0 167rem;
+}
+
+.mediaLarge .Content_heading_b3 {
+    flex: 1 0 208rem;
+}
+
+.mediaExtraLarge .Content_heading_b3 {
+    flex: 1 1 100%;
+}
+
+.Content_title_aa {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 39rem;
+    line-height: 20rem;
+}
+
+.mediaLarge .Content_title_aa {
+    color: #f2f2f7;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 38rem;
+}
+
+.Content_subTitle_61 {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 5rem;
+}
+
+.mediaLarge .Content_subTitle_61 {
+    color: #f2f2f7;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 4rem;
+    line-height: 62rem;
+}
+
+.Content_wrapper_b8 {
+    opacity: 0;
+    animation-name: Content_show_00;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 0.35s;
+    animation-iteration-count: 1;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    width: 936rem;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mediaMedium .Content_wrapper_b8 {
+    width: 1176rem;
+}
+
+.mediaLarge .Content_wrapper_b8 {
+    width: 1416rem;
+}
+
+.Content_wrapper__shown_e4 {
+    pointer-events: auto;
+}
+
+.Content_categories_54 {
+    display: flex;
+    justify-content: center;
+}
+
+.Content_footer_ec {
+    opacity: 0;
+    animation-name: Content_slideUp_84;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
+    animation-delay: 0.6s;
+    animation-iteration-count: 1;
+    display: flex;
+    align-items: flex-end;
+    flex: 1 0 104rem;
+    padding-bottom: 30rem;
+}
+
+.mediaMedium .Content_footer_ec {
+    flex: 1 0 168rem;
+    padding-bottom: 80rem;
+}
+
+.mediaLarge .Content_footer_ec {
+    flex: 1 0 191rem;
+}
+
+.mediaExtraLarge .Content_footer_ec {
+    flex: 1 1 100%;
+}
+
+.Content_base__windowed_4a .Content_footer_ec {
+    flex: 1 0 128rem;
+    padding-bottom: 37rem;
+}
+
+.Error_base_71 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.Error_image_a8 {
+    width: 432rem;
+    height: 278rem;
+    background: url('R.images.gui.maps.icons.selectableReward.tabs.error') no-repeat center / contain;
+}
+
+.Error_title_49 {
+    color: #e9e2bf;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 12rem;
+    text-align: center;
+}
+
+.Error_description_4f {
+    color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    width: 516rem;
+    margin-bottom: 20rem;
+    text-align: center;
+}
+
+.Error_footer_2d {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Error_button_4d {
+    min-width: 160rem;
+}
+
+.RewardSelection_base_0f {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes App_slideUp_57 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes App_fadeOut_a8 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes App_fadeIn_9e {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes App_fadeInScale_7b {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+@keyframes App_fadeInWithScale_89 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes App_scale_68 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes App_raysAppearance_35 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+@keyframes App_rotate_72 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes App_fadeTop_13 {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+}
+@keyframes App_fadeBot_b4 {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+}
+.App_base_37 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.wtevent.progression.background.background') center / cover no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+.App_base__hide_86 {
+    opacity: 1;
+    animation-name: App_fadeOut_a8;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
+    animation-delay: 0.1s;
+    animation-iteration-count: 1;
+}
+.App_bgDecoration_topRight_5e {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url('R.images.gui.maps.icons.wtevent.progression.background.top_right') top right / contain no-repeat;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.App_bgDecoration_topLeft_e3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url('R.images.gui.maps.icons.wtevent.progression.background.top_left') top left / contain no-repeat;
+    top: 0;
+    left: 0;
+}
+.App_content_90 {
+    width: 100%;
+    height: 100%;
+}
+.App_background_03 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.App_backgroundBlur_b0 {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+}
+.App_shadow_4d {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.App_shadow__common_6b {
+    background: rgba(0, 0, 0, 0.5);
+}
+.App_close_c6 {
+    position: absolute;
+    top: 40rem;
+    right: 40rem;
+    z-index: 2;
+}

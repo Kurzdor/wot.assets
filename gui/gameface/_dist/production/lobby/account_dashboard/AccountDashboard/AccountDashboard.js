@@ -1612,18 +1612,16 @@
                             s = ou.exec(e);
                         }
                         return n().createElement(Ne, { text: i, classMix: t, binding: o });
-                    });
-                class cu extends n().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = ee.B3.GOLD;
-                        else e = ee.B3.INTEGRAL;
-                        const u = ee.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                cu.defaultProps = { format: 'integral' };
-                const du = {
+                    }),
+                    cu = ({ format: e, value: u }) => {
+                        const t = ((e, u = 'integral') => {
+                            let t;
+                            t = 'gold' === u ? ee.B3.GOLD : ee.B3.INTEGRAL;
+                            return void 0 === e ? '' : ee.Z5.getNumberFormat(e, t);
+                        })(u, e);
+                        return t ? n().createElement('span', null, t) : null;
+                    },
+                    du = {
                         get heading() {
                             return R.strings.account_dashboard.bonusXp.heading();
                         },

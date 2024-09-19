@@ -195,8 +195,8 @@
                         getViewGlobalPosition: () => c,
                         isEventHandled: () => p,
                         isFocused: () => m,
-                        pxToRem: () => d,
-                        remToPx: () => _,
+                        pxToRem: () => _,
+                        remToPx: () => d,
                         resize: () => B,
                         sendEvent: () => A.qP,
                         setAnimateWindow: () => v,
@@ -232,7 +232,7 @@
                 }
                 function c(u = 'rem') {
                     const e = viewEnv.getViewGlobalPositionRem();
-                    return 'rem' === u ? e : { x: _(e.x), y: _(e.y) };
+                    return 'rem' === u ? e : { x: d(e.x), y: d(e.y) };
                 }
                 function C() {
                     viewEnv.freezeTextureBeforeResize();
@@ -240,10 +240,10 @@
                 function l() {
                     return viewEnv.getScale();
                 }
-                function d(u) {
+                function _(u) {
                     return viewEnv.pxToRem(u);
                 }
-                function _(u) {
+                function d(u) {
                     return viewEnv.remToPx(u);
                 }
                 function v(u, e) {
@@ -613,7 +613,7 @@
             72: (u, e, t) => {
                 t.d(e, {
                     Eu: () => a,
-                    KE: () => d,
+                    KE: () => _,
                     Kv: () => i,
                     P3: () => l,
                     SU: () => w,
@@ -622,7 +622,7 @@
                     VM: () => p,
                     c9: () => s,
                     ry: () => o,
-                    uM: () => _,
+                    uM: () => d,
                     uk: () => C,
                     wU: () => v,
                     wv: () => D,
@@ -746,8 +746,8 @@
                             args: r,
                         });
                     },
-                    d = () => viewEnv.isWindowShownByViewEvent(F.B0.TOOLTIP),
-                    _ = () => viewEnv.isWindowShownByViewEvent(F.B0.CONTEXT_MENU),
+                    _ = () => viewEnv.isWindowShownByViewEvent(F.B0.TOOLTIP),
+                    d = () => viewEnv.isWindowShownByViewEvent(F.B0.CONTEXT_MENU),
                     v = () => viewEnv.isWindowShownByViewEvent(F.B0.POP_OVER),
                     m = (u, e) => {
                         u.keyCode === n.n.ESCAPE && e();
@@ -879,109 +879,110 @@
                     },
                     C = (u, e) => u.split('.').reduce((u, e) => u && u[e], e);
                 var l = t(491);
-                const d = (u) => u && 'ArrayItem' === u.__proto__.constructor.name,
-                    _ = (u, e) => (u.length > 0 ? `${u}.${e}` : e),
+                const _ = (u) => u && 'ArrayItem' === u.__proto__.constructor.name,
+                    d = (u, e) => (u.length > 0 ? `${u}.${e}` : e),
                     v = l.Sw.instance;
                 let m;
                 !(function (u) {
                     (u.None = 'None'), (u.Shallow = 'Shallow'), (u.Deep = 'Deep');
                 })(m || (m = {}));
                 const w = (u = 'model', e = m.Deep) => {
-                    const t = (0, n.useState)(0),
-                        E = (t[0], t[1]),
-                        F = (0, n.useMemo)(() => c(), []),
-                        A = F.caller,
-                        r = F.resId,
-                        i = (0, n.useMemo)(
-                            () => (window.__feature && window.__feature !== A ? `subViews.${A}.${u}` : u),
-                            [A, u],
-                        ),
-                        o = (0, n.useState)(() =>
-                            ((u) => {
-                                const e = C(u, window);
-                                for (const u in e) 'function' == typeof e[u] && (e[u] = e[u].bind(e));
-                                return d(e) ? e.value : e;
-                            })(
-                                ((u) =>
-                                    ((u, e) =>
-                                        u.split('.').reduce((u, e) => {
-                                            const t = C(`${u}.${e}`, window);
-                                            return d(t) ? ((u, e) => `${u}.${e}.value`)(u, e) : `${u}.${e}`;
-                                        }))(u))(i),
+                        const t = (0, n.useState)(0),
+                            E = (t[0], t[1]),
+                            F = (0, n.useMemo)(() => c(), []),
+                            A = F.caller,
+                            r = F.resId,
+                            i = (0, n.useMemo)(
+                                () => (window.__feature && window.__feature !== A ? `subViews.${A}.${u}` : u),
+                                [A, u],
                             ),
-                        ),
-                        a = o[0],
-                        s = o[1],
-                        D = (0, n.useRef)(-1);
-                    return (
-                        ((u) => {
-                            const e = (0, n.useRef)(!1);
-                            e.current || (u(), (e.current = !0));
-                        })(() => {
-                            if (
-                                ('boolean' == typeof e &&
-                                    ((e = e ? m.Deep : m.None),
-                                    console.warn(
-                                        'Boolean key for useModel "tracking" param is deprecated. Use ModelTracking enum values instead!',
-                                    )),
-                                e !== m.None)
-                            ) {
-                                const t = (u) => {
-                                        ((u) => u && 'CoherentArrayProxy' === u.__proto__.constructor.name)(u) &&
-                                        e === m.Deep
-                                            ? (u === a && E((u) => u + 1), s(u))
-                                            : s(Object.assign([], u));
-                                    },
-                                    n = ((u) => {
-                                        const e = ((u) => {
-                                                const e = c(),
-                                                    t = e.caller,
-                                                    n = e.resId,
-                                                    E =
-                                                        window.__feature && window.__feature !== t && t
-                                                            ? `subViews.${t}`
-                                                            : '';
-                                                return { modelPrefix: E, modelPath: _(E, ''), resId: n };
-                                            })(),
-                                            t = e.modelPrefix,
-                                            n = u.split('.');
-                                        if (n.length > 0) {
-                                            const u = [n[0]];
-                                            return (
-                                                n.reduce((e, n) => {
-                                                    const E = C(_(t, `${e}.${n}`), window);
-                                                    return d(E)
-                                                        ? (u.push(E.id), `${e}.${n}.value`)
-                                                        : (u.push(n), `${e}.${n}`);
-                                                }),
-                                                u.reduce((u, e) => u + '.' + e)
-                                            );
-                                        }
-                                        return '';
-                                    })(u);
-                                D.current = v.addCallback(n, t, r, e === m.Deep);
-                            }
-                        }),
-                        (0, n.useEffect)(() => {
-                            if (e !== m.None)
-                                return () => {
-                                    v.removeCallback(D.current, r);
-                                };
-                        }, [r, e]),
-                        a
-                    );
-                };
-                class p extends E().PureComponent {
-                    render() {
-                        let u;
-                        u = 'gold' === this.props.format ? l.B3.GOLD : l.B3.INTEGRAL;
-                        const e = l.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
+                            o = (0, n.useState)(() =>
+                                ((u) => {
+                                    const e = C(u, window);
+                                    for (const u in e) 'function' == typeof e[u] && (e[u] = e[u].bind(e));
+                                    return _(e) ? e.value : e;
+                                })(
+                                    ((u) =>
+                                        ((u, e) =>
+                                            u.split('.').reduce((u, e) => {
+                                                const t = C(`${u}.${e}`, window);
+                                                return _(t) ? ((u, e) => `${u}.${e}.value`)(u, e) : `${u}.${e}`;
+                                            }))(u))(i),
+                                ),
+                            ),
+                            a = o[0],
+                            s = o[1],
+                            D = (0, n.useRef)(-1);
+                        return (
+                            ((u) => {
+                                const e = (0, n.useRef)(!1);
+                                e.current || (u(), (e.current = !0));
+                            })(() => {
+                                if (
+                                    ('boolean' == typeof e &&
+                                        ((e = e ? m.Deep : m.None),
+                                        console.warn(
+                                            'Boolean key for useModel "tracking" param is deprecated. Use ModelTracking enum values instead!',
+                                        )),
+                                    e !== m.None)
+                                ) {
+                                    const t = (u) => {
+                                            ((u) => u && 'CoherentArrayProxy' === u.__proto__.constructor.name)(u) &&
+                                            e === m.Deep
+                                                ? (u === a && E((u) => u + 1), s(u))
+                                                : s(Object.assign([], u));
+                                        },
+                                        n = ((u) => {
+                                            const e = ((u) => {
+                                                    const e = c(),
+                                                        t = e.caller,
+                                                        n = e.resId,
+                                                        E =
+                                                            window.__feature && window.__feature !== t && t
+                                                                ? `subViews.${t}`
+                                                                : '';
+                                                    return { modelPrefix: E, modelPath: d(E, ''), resId: n };
+                                                })(),
+                                                t = e.modelPrefix,
+                                                n = u.split('.');
+                                            if (n.length > 0) {
+                                                const u = [n[0]];
+                                                return (
+                                                    n.reduce((e, n) => {
+                                                        const E = C(d(t, `${e}.${n}`), window);
+                                                        return _(E)
+                                                            ? (u.push(E.id), `${e}.${n}.value`)
+                                                            : (u.push(n), `${e}.${n}`);
+                                                    }),
+                                                    u.reduce((u, e) => u + '.' + e)
+                                                );
+                                            }
+                                            return '';
+                                        })(u);
+                                    D.current = v.addCallback(n, t, r, e === m.Deep);
+                                }
+                            }),
+                            (0, n.useEffect)(() => {
+                                if (e !== m.None)
+                                    return () => {
+                                        v.removeCallback(D.current, r);
+                                    };
+                            }, [r, e]),
+                            a
+                        );
+                    },
+                    p = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            return (
+                                (t = 'gold' === e ? l.B3.GOLD : l.B3.INTEGRAL),
+                                void 0 === u ? '' : l.Z5.getNumberFormat(u, t)
+                            );
+                        })(e, u);
+                        return t ? E().createElement('span', null, t) : null;
+                    };
                 let h, g;
-                (p.defaultProps = { format: 'integral' }),
-                    t(281),
+                t(281),
                     (function (u) {
                         (u[(u.left = 0)] = 'left'), (u[(u.right = 1)] = 'right');
                     })(h || (h = {})),

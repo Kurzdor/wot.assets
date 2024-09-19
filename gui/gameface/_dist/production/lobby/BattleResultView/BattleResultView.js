@@ -1130,8 +1130,8 @@
                 );
                 var M = t(7030);
                 const U = { x: 0, y: 0, opacity: 0, transform: 'scale(1) rotate(0deg)' },
-                    G = { x: 0, y: 0, opacity: 1, transform: 'scale(1) rotate(0deg)' };
-                let H;
+                    W = { x: 0, y: 0, opacity: 1, transform: 'scale(1) rotate(0deg)' };
+                let G;
                 !(function (e) {
                     (e.Linear = 'linear'),
                         (e.EaseIn = 'easeIn'),
@@ -1140,27 +1140,27 @@
                         (e.EaseOutBack = 'easeOutBack'),
                         (e.EaseOutQuint = 'easeOutQuint'),
                         (e.EaseOutExpo = 'easeOutExpo');
-                })(H || (H = {}));
-                const W = {
-                        [H.Linear]: (e) => e,
-                        [H.EaseIn]: (e) => e * e * e,
-                        [H.EaseOut]: (e) => --e * e * e + 1,
-                        [H.EaseInOut]: (e) => (e < 0.5 ? 4 * e * e * e : (e - 1) * (2 * e - 2) * (2 * e - 2) + 1),
-                        [H.EaseOutBack]: (e) => 1 + 2.70158 * Math.pow(e - 1, 3) + 1.70158 * Math.pow(e - 1, 2),
-                        [H.EaseOutQuint]: (e) => 1 - Math.pow(1 - e, 5),
-                        [H.EaseOutExpo]: (e) => (1 === e ? 1 : 1 - Math.pow(2, -10 * e)),
+                })(G || (G = {}));
+                const H = {
+                        [G.Linear]: (e) => e,
+                        [G.EaseIn]: (e) => e * e * e,
+                        [G.EaseOut]: (e) => --e * e * e + 1,
+                        [G.EaseInOut]: (e) => (e < 0.5 ? 4 * e * e * e : (e - 1) * (2 * e - 2) * (2 * e - 2) + 1),
+                        [G.EaseOutBack]: (e) => 1 + 2.70158 * Math.pow(e - 1, 3) + 1.70158 * Math.pow(e - 1, 2),
+                        [G.EaseOutQuint]: (e) => 1 - Math.pow(1 - e, 5),
+                        [G.EaseOutExpo]: (e) => (1 === e ? 1 : 1 - Math.pow(2, -10 * e)),
                     },
                     j = (0, n.memo)(function ({
                         children: e,
                         from: u = U,
-                        to: t = G,
+                        to: t = W,
                         config: r,
                         isCanceled: i = !1,
                         isDisabled: o = !1,
                         duration: s = 250,
                         delay: l = 0,
                         transformOrigin: c = '50% 50%',
-                        easingType: E = H.EaseInOut,
+                        easingType: E = G.EaseInOut,
                         onRest: d,
                         onStart: _,
                         trigger: m,
@@ -1169,7 +1169,7 @@
                         playSoundOnStart: g,
                         playSoundOnFinish: B,
                     }) {
-                        const p = W[E],
+                        const p = H[E],
                             D = (0, M.useSpring)(() => u),
                             h = D[0],
                             C = D[1],
@@ -2091,7 +2091,7 @@
                     },
                     Me = (e, u) => !e || e.offsetTop + e.offsetHeight > u,
                     Ue = (e, u) => e.offsetLeft + e.offsetWidth - u,
-                    Ge = (e, u, t) => {
+                    We = (e, u, t) => {
                         if (!e || !e.textContent) return [!1, 0];
                         if (e.offsetLeft > u) return [!1, 0];
                         const n = Ue(e, u),
@@ -2105,7 +2105,7 @@
                         const o = Math.max(t + i, 0);
                         return a < o ? [!1, 0] : [!0, o];
                     },
-                    He = (e, u, t, n, r, i) => {
+                    Ge = (e, u, t, n, r, i) => {
                         let o = -1,
                             s = null;
                         for (let l = t; l >= 0; l--) {
@@ -2114,7 +2114,7 @@
                             if (c === De.LineBreak || c === De.NewLine || c === De.Binding) continue;
                             const E = t.textContent || '';
                             if (!(t.childElementCount > 1)) {
-                                const e = Ge(t, n, r),
+                                const e = We(t, n, r),
                                     c = e[0],
                                     d = e[1];
                                 if (!c) {
@@ -2130,7 +2130,7 @@
                                 const e = t.children,
                                     c = u[l],
                                     d = c.props.children,
-                                    _ = He(e, d, e.length - 1, n, r, i),
+                                    _ = Ge(e, d, e.length - 1, n, r, i),
                                     m = _[0],
                                     A = _[1];
                                 if (!(m < 0)) {
@@ -2143,7 +2143,7 @@
                         }
                         return [o, s];
                     },
-                    We = a().memo(
+                    He = a().memo(
                         ({
                             text: e,
                             classMix: u,
@@ -2200,7 +2200,7 @@
                                                         return t - 1;
                                                     })(l, i);
                                                 if (c < 0) return [a, !1];
-                                                const E = He(l, a, c, o, n.length, n),
+                                                const E = Ge(l, a, c, o, n.length, n),
                                                     d = E[0],
                                                     _ = E[1];
                                                 return _ && (a.splice(d, 1, _), a.splice(d + 1)), [a, !0];
@@ -2611,7 +2611,7 @@
                             duration: ru,
                             from: { opacity: 1 },
                             to: { opacity: 0 },
-                            easingType: H.EaseOut,
+                            easingType: G.EaseOut,
                         },
                         [au.FLASH]: {
                             from: { opacity: 0, transform: 'scale(35, 35)' },
@@ -2621,14 +2621,14 @@
                             ],
                             transformOrigin: '50% 75%',
                             delay: 650,
-                            easingType: H.EaseInOut,
+                            easingType: G.EaseInOut,
                         },
                         [au.TITLE_GLOW]: {
                             from: { opacity: 0 },
                             to: { opacity: 1 },
                             delay: 1e3,
                             duration: 1e3,
-                            easingType: H.EaseOut,
+                            easingType: G.EaseOut,
                         },
                         [au.TITLE]: {
                             from: { y: 25, opacity: 0 },
@@ -2658,21 +2658,21 @@
                             to: { y: 0, opacity: 1 },
                             delay: 1900,
                             duration: ru,
-                            easingType: H.EaseOut,
+                            easingType: G.EaseOut,
                         },
                         [au.IMG]: {
                             from: { x: 20, opacity: 0 },
                             to: { x: 0, opacity: 1 },
                             delay: 2050,
                             duration: 1e3,
-                            easingType: H.EaseOutBack,
+                            easingType: G.EaseOutBack,
                         },
                         [au.BUTTON]: {
                             from: { y: -5, opacity: 0 },
                             to: { y: 0, opacity: 1 },
                             delay: 2900,
                             duration: ru,
-                            easingType: H.EaseInOut,
+                            easingType: G.EaseInOut,
                         },
                     },
                     su = {
@@ -2681,7 +2681,7 @@
                             to: { opacity: 0 },
                             delay: 500,
                             duration: 600,
-                            easingType: H.EaseOut,
+                            easingType: G.EaseOut,
                         },
                         [au.FLASH]: Object.assign({}, tu),
                         [au.TITLE_GLOW]: {
@@ -2689,7 +2689,7 @@
                             to: { opacity: 1 },
                             delay: 1100,
                             duration: 1800,
-                            easingType: H.Linear,
+                            easingType: G.Linear,
                         },
                         [au.TITLE]: {
                             from: { opacity: 0, transform: 'scale(1.3, 1.3)' },
@@ -2697,21 +2697,21 @@
                             transformOrigin: '50% 90%',
                             delay: 700,
                             duration: 1800,
-                            easingType: H.EaseInOut,
+                            easingType: G.EaseInOut,
                         },
                         [au.SUB_TITLE]: {
                             from: { y: -10, opacity: 0 },
                             to: { y: 0, opacity: 1 },
                             delay: 1100,
                             duration: 1200,
-                            easingType: H.EaseInOut,
+                            easingType: G.EaseInOut,
                         },
                         [au.PROGRESS_ITEM]: {
                             from: { y: -10, opacity: 0 },
                             to: { y: 0, opacity: 1 },
                             delay: 1500,
                             duration: 600,
-                            easingType: H.EaseOutBack,
+                            easingType: G.EaseOutBack,
                         },
                         [au.REWARD_RIBBON]: Object.assign({}, tu),
                         [au.REWARD_MAIN]: Object.assign({}, tu),
@@ -2723,21 +2723,21 @@
                             to: { y: 0, opacity: 1 },
                             delay: 1700,
                             duration: 1200,
-                            easingType: H.EaseInOut,
+                            easingType: G.EaseInOut,
                         },
                         [au.IMG]: {
                             from: { x: 20, opacity: 0 },
                             to: { x: 0, opacity: 1 },
                             delay: 1900,
                             duration: 1200,
-                            easingType: H.EaseInOut,
+                            easingType: G.EaseInOut,
                         },
                         [au.BUTTON]: {
                             from: { y: -5, opacity: 0 },
                             to: { y: 0, opacity: 1 },
                             delay: 2900,
                             duration: 1200,
-                            easingType: H.EaseInOut,
+                            easingType: G.EaseInOut,
                         },
                     },
                     lu = {
@@ -2746,7 +2746,7 @@
                             duration: ru,
                             from: { opacity: 1 },
                             to: { opacity: 0 },
-                            easingType: H.EaseOut,
+                            easingType: G.EaseOut,
                         },
                         [au.FLASH]: {
                             from: { opacity: 0, transform: 'scale(35, 35)' },
@@ -2756,14 +2756,14 @@
                             ],
                             transformOrigin: '50% 75%',
                             delay: 650,
-                            easingType: H.EaseInOut,
+                            easingType: G.EaseInOut,
                         },
                         [au.TITLE_GLOW]: {
                             from: { opacity: 0 },
                             to: { opacity: 1 },
                             delay: 1e3,
                             duration: 1e3,
-                            easingType: H.EaseOut,
+                            easingType: G.EaseOut,
                         },
                         [au.TITLE]: {
                             from: { y: 25, opacity: 0 },
@@ -2818,21 +2818,21 @@
                             to: { y: 0, opacity: 1 },
                             delay: 2500,
                             duration: ru,
-                            easingType: H.EaseOut,
+                            easingType: G.EaseOut,
                         },
                         [au.IMG]: {
                             from: { x: 20, opacity: 0 },
                             to: { x: 0, opacity: 1 },
                             delay: 2650,
                             duration: 1e3,
-                            easingType: H.EaseOutBack,
+                            easingType: G.EaseOutBack,
                         },
                         [au.BUTTON]: {
                             from: { y: -5, opacity: 0 },
                             to: { y: 0, opacity: 1 },
                             delay: 4e3,
                             duration: ru,
-                            easingType: H.EaseInOut,
+                            easingType: G.EaseInOut,
                         },
                     };
                 let cu;
@@ -2856,7 +2856,7 @@
                         return a().createElement(
                             'div',
                             { className: 'BattleResultDifficultyInfo_base_c2' },
-                            a().createElement(We, {
+                            a().createElement(He, {
                                 classMix: 'BattleResultDifficultyInfo_text_dc',
                                 justifyContent: he.Center,
                                 text: e ? mu.extraSmall() : mu.smallAndUp(),
@@ -2914,7 +2914,7 @@
                                     { className: 'BattleResultMissionProgress_total_f2' },
                                     t.total,
                                 ),
-                                a().createElement(We, {
+                                a().createElement(He, {
                                     classMix: 'BattleResultMissionProgress_name_6f',
                                     text: t.name,
                                     justifyContent: he.Center,
@@ -3201,7 +3201,7 @@
                                                 { isCanceled: t },
                                             ),
                                         ),
-                                        a().createElement(We, {
+                                        a().createElement(He, {
                                             classMix: 'BattleResultProgress_name_c2',
                                             text: i,
                                             justifyContent: he.Center,
@@ -3255,7 +3255,7 @@
                         ),
                     );
                 });
-                let Mu, Uu, Gu, Hu, Wu, ju, Vu, $u;
+                let Mu, Uu, Wu, Gu, Hu, ju, Vu, $u;
                 var Yu;
                 !(function (e) {
                     (e.Items = 'items'),
@@ -3298,12 +3298,17 @@
                         (e.BonusX5 = 'battle_bonus_x5'),
                         (e.CrewBonusX3 = 'crew_bonus_x3'),
                         (e.Vehicles = 'vehicles'),
+                        (e.WtHunterLootbox = 'wt_hunter'),
+                        (e.WtBossLootbox = 'wt_boss'),
+                        (e.WtProgressPoints = 'stamp'),
                         (e.EpicSelectToken = 'epicSelectToken'),
                         (e.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
                         (e.DeluxeGift = 'deluxe_gift'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.OptionalDevice = 'optionalDevice'),
-                        (e.EquipCoin = 'equipCoin');
+                        (e.EquipCoin = 'equipCoin'),
+                        (e.WTCommanderClaimable = 'wtCommanderClaimable'),
+                        (e.WTCommanderClaimed = 'wtCommanderClaimed');
                 })(Mu || (Mu = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -3345,7 +3350,7 @@
                             (e.BattleAchievement = 'dossier_achievement'),
                             (e.EquipCoin = 'equipCoin');
                     })(Uu || (Uu = {})),
-                    ((Yu = Gu || (Gu = {})).Big = 'big'),
+                    ((Yu = Wu || (Wu = {})).Big = 'big'),
                     (Yu.Small = 'small'),
                     (Yu.Mini = 'mini'),
                     (Yu.S600x450 = 's600x450'),
@@ -3363,7 +3368,7 @@
                             (e.PREMIUM_PLUS = 'premium_plus'),
                             (e.NUMBER = 'number'),
                             (e.STRING = 'string');
-                    })(Hu || (Hu = {})),
+                    })(Gu || (Gu = {})),
                     (function (e) {
                         (e.BATTLE_BOOSTER = 'battleBooster'),
                             (e.BATTLE_BOOSTER_REPLACE = 'battleBoosterReplace'),
@@ -3380,7 +3385,7 @@
                             (e.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4'),
                             (e.PROGRESSION_STYLE_UPGRADED_5 = 'progressionStyleUpgraded_5'),
                             (e.PROGRESSION_STYLE_UPGRADED_6 = 'progressionStyleUpgraded_6');
-                    })(Wu || (Wu = {})),
+                    })(Hu || (Hu = {})),
                     (function (e) {
                         e.BATTLE_BOOSTER = 'battleBooster';
                     })(ju || (ju = {})),
@@ -3404,16 +3409,17 @@
                     (function (e) {
                         (e[(e.Engraving = 0)] = 'Engraving'), (e[(e.Background = 1)] = 'Background');
                     })($u || ($u = {}));
-                class zu extends a().PureComponent {
-                    render() {
-                        let e;
-                        e = 'gold' === this.props.format ? ue.B3.GOLD : ue.B3.INTEGRAL;
-                        const u = ue.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                zu.defaultProps = { format: 'integral' };
-                const qu = [
+                const zu = ({ format: e, value: u }) => {
+                        const t = ((e, u = 'integral') => {
+                            let t;
+                            return (
+                                (t = 'gold' === u ? ue.B3.GOLD : ue.B3.INTEGRAL),
+                                void 0 === e ? '' : ue.Z5.getNumberFormat(e, t)
+                            );
+                        })(u, e);
+                        return t ? a().createElement('span', null, t) : null;
+                    },
+                    qu = [
                         Mu.Items,
                         Mu.Equipment,
                         Mu.Xp,
@@ -3442,6 +3448,9 @@
                         Mu.CrewBonusX3,
                         Mu.NewYearInvoice,
                         Mu.EpicSelectToken,
+                        Mu.WtHunterLootbox,
+                        Mu.WtBossLootbox,
+                        Mu.WtProgressPoints,
                         Mu.Comp7TokenWeeklyReward,
                         Mu.DeluxeGift,
                         Mu.BattleBoosterGift,
@@ -3463,7 +3472,7 @@
                             t,
                         );
                     },
-                    Ju = [Gu.Small, Gu.Big],
+                    Ju = [Wu.Small, Wu.Big],
                     et = {
                         base: 'Reward_base_ea',
                         base__s48x48: 'Reward_base__s48x48_46',
@@ -3494,7 +3503,7 @@
                         name: e,
                         image: u,
                         isPeriodic: t = !1,
-                        size: n = Gu.Big,
+                        size: n = Wu.Big,
                         special: r,
                         value: i,
                         valueType: o,
@@ -3508,57 +3517,57 @@
                         const m = ((e, u) => {
                                 if (void 0 === u || !Ju.includes(e)) return null;
                                 switch (u) {
-                                    case Wu.BATTLE_BOOSTER:
-                                    case Wu.BATTLE_BOOSTER_REPLACE:
+                                    case Hu.BATTLE_BOOSTER:
+                                    case Hu.BATTLE_BOOSTER_REPLACE:
                                         return ju.BATTLE_BOOSTER;
                                 }
                             })(n, r),
                             A = ((e) => {
                                 if (void 0 === e) return null;
                                 switch (e) {
-                                    case Wu.BATTLE_BOOSTER:
+                                    case Hu.BATTLE_BOOSTER:
                                         return Vu.BATTLE_BOOSTER;
-                                    case Wu.BATTLE_BOOSTER_REPLACE:
+                                    case Hu.BATTLE_BOOSTER_REPLACE:
                                         return Vu.BATTLE_BOOSTER_REPLACE;
-                                    case Wu.BUILT_IN_EQUIPMENT:
+                                    case Hu.BUILT_IN_EQUIPMENT:
                                         return Vu.BUILT_IN_EQUIPMENT;
-                                    case Wu.EQUIPMENT_PLUS:
+                                    case Hu.EQUIPMENT_PLUS:
                                         return Vu.EQUIPMENT_PLUS;
-                                    case Wu.EQUIPMENT_TROPHY_BASIC:
+                                    case Hu.EQUIPMENT_TROPHY_BASIC:
                                         return Vu.EQUIPMENT_TROPHY_BASIC;
-                                    case Wu.EQUIPMENT_TROPHY_UPGRADED:
+                                    case Hu.EQUIPMENT_TROPHY_UPGRADED:
                                         return Vu.EQUIPMENT_TROPHY_UPGRADED;
-                                    case Wu.EQUIPMENT_MODERNIZED_UPGRADED_1:
+                                    case Hu.EQUIPMENT_MODERNIZED_UPGRADED_1:
                                         return Vu.EQUIPMENT_MODERNIZED_UPGRADED_1;
-                                    case Wu.EQUIPMENT_MODERNIZED_UPGRADED_2:
+                                    case Hu.EQUIPMENT_MODERNIZED_UPGRADED_2:
                                         return Vu.EQUIPMENT_MODERNIZED_UPGRADED_2;
-                                    case Wu.EQUIPMENT_MODERNIZED_UPGRADED_3:
+                                    case Hu.EQUIPMENT_MODERNIZED_UPGRADED_3:
                                         return Vu.EQUIPMENT_MODERNIZED_UPGRADED_3;
-                                    case Wu.PROGRESSION_STYLE_UPGRADED_1:
+                                    case Hu.PROGRESSION_STYLE_UPGRADED_1:
                                         return Vu.PROGRESSION_STYLE_UPGRADED_1;
-                                    case Wu.PROGRESSION_STYLE_UPGRADED_2:
+                                    case Hu.PROGRESSION_STYLE_UPGRADED_2:
                                         return Vu.PROGRESSION_STYLE_UPGRADED_2;
-                                    case Wu.PROGRESSION_STYLE_UPGRADED_3:
+                                    case Hu.PROGRESSION_STYLE_UPGRADED_3:
                                         return Vu.PROGRESSION_STYLE_UPGRADED_3;
-                                    case Wu.PROGRESSION_STYLE_UPGRADED_4:
+                                    case Hu.PROGRESSION_STYLE_UPGRADED_4:
                                         return Vu.PROGRESSION_STYLE_UPGRADED_4;
-                                    case Wu.PROGRESSION_STYLE_UPGRADED_5:
+                                    case Hu.PROGRESSION_STYLE_UPGRADED_5:
                                         return Vu.PROGRESSION_STYLE_UPGRADED_5;
-                                    case Wu.PROGRESSION_STYLE_UPGRADED_6:
+                                    case Hu.PROGRESSION_STYLE_UPGRADED_6:
                                         return Vu.PROGRESSION_STYLE_UPGRADED_6;
                                 }
                             })(r),
                             F = ((e, u) => {
                                 if (void 0 === e) return null;
                                 switch (u) {
-                                    case Hu.MULTI: {
+                                    case Gu.MULTI: {
                                         const u = Number(e);
                                         return isFinite(u) && u > 1 ? `x${Math.floor(u)}` : null;
                                     }
-                                    case Hu.CURRENCY:
-                                    case Hu.NUMBER:
+                                    case Gu.CURRENCY:
+                                    case Gu.NUMBER:
                                         return a().createElement(zu, { format: 'integral', value: Number(e) });
-                                    case Hu.PREMIUM_PLUS: {
+                                    case Gu.PREMIUM_PLUS: {
                                         const u = Number(e);
                                         return isNaN(u) ? e : null;
                                     }
@@ -3605,7 +3614,7 @@
                                                 className: p()(
                                                     et.info,
                                                     et[`info__${e}`],
-                                                    o === Hu.MULTI && et.info__multi,
+                                                    o === Gu.MULTI && et.info__multi,
                                                     null == E ? void 0 : E.info,
                                                 ),
                                             },
@@ -3628,10 +3637,10 @@
                     nt = (e, u) => {
                         if (void 0 === e) return e;
                         switch (u) {
-                            case Hu.MULTI:
+                            case Gu.MULTI:
                                 return e.substring(1);
-                            case Hu.CURRENCY:
-                            case Hu.NUMBER:
+                            case Gu.CURRENCY:
+                            case Gu.NUMBER:
                                 return tt(e);
                             default:
                                 return e;
@@ -3658,7 +3667,7 @@
                         rt.apply(this, arguments)
                     );
                 }
-                const it = { [Gu.Big]: 80, [Gu.Small]: 48 },
+                const it = { [Wu.Big]: 80, [Wu.Small]: 48 },
                     ot = (0, je.Pi)(
                         ({ icon: e, name: u, index: t, isAnimCanceled: n, iconSize: r, value: i, tooltipArgs: o }) => {
                             const s = uu().model,
@@ -3722,7 +3731,7 @@
                         const u = uu().model,
                             t = u.root.isVictory.get(),
                             r = u.computes.getHasRewards(),
-                            i = v().mediaSize >= C.Medium ? Gu.Big : Gu.Small,
+                            i = v().mediaSize >= C.Medium ? Wu.Big : Wu.Small,
                             o = u.computes.getXPReward(),
                             s = u.computes.getCreditsReward(),
                             l = _u(au.REWARD_MAIN, t, r).delay,
@@ -3799,14 +3808,14 @@
                                                 const o =
                                                     ((s = u.name),
                                                     qu.includes(s)
-                                                        ? Hu.MULTI
+                                                        ? Gu.MULTI
                                                         : Xu.includes(s)
-                                                          ? Hu.CURRENCY
+                                                          ? Gu.CURRENCY
                                                           : Ku.includes(s)
-                                                            ? Hu.NUMBER
+                                                            ? Gu.NUMBER
                                                             : Qu.includes(s)
-                                                              ? Hu.PREMIUM_PLUS
-                                                              : Hu.STRING);
+                                                              ? Gu.PREMIUM_PLUS
+                                                              : Gu.STRING);
                                                 var s;
                                                 return a().createElement(
                                                     j,
@@ -3981,8 +3990,8 @@
                                         Ft({ isCanceled: i, className: At.footer }, _u(au.IMG, s, c), { onStart: m }),
                                         a().createElement(mt, null),
                                     ),
-                                    a().createElement(We, { classMix: At.vehicleName, text: t.root.vehicleName.get() }),
-                                    a().createElement(We, {
+                                    a().createElement(He, { classMix: At.vehicleName, text: t.root.vehicleName.get() }),
+                                    a().createElement(He, {
                                         classMix: At.playerStatus,
                                         text: t.root.playerStatus.get(),
                                     }),

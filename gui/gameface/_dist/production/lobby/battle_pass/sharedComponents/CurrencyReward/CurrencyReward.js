@@ -489,7 +489,7 @@
                 const __WEBPACK_DEFAULT_EXPORT__ = ViewModel;
             },
             9916: (e, t, n) => {
-                n.d(t, { B3: () => _, Z5: () => a.Z5, ry: () => p });
+                n.d(t, { ry: () => p });
                 class i {
                     constructor() {
                         (this.entries = []),
@@ -733,13 +733,11 @@
                     };
             },
             3679: (e, t, n) => {
-                var i = n(6179),
-                    r = n.n(i);
-                n(6483);
-                let o, a, s;
+                n(6179), n(6483);
+                let i, r, o;
                 !(function (e) {
                     (e.small = 'small'), (e.big = 'big'), (e.large = 'large'), (e.extraLarge = 'extraLarge');
-                })(o || (o = {})),
+                })(i || (i = {})),
                     (function (e) {
                         (e.credits = 'credits'),
                             (e.gold = 'gold'),
@@ -748,21 +746,11 @@
                             (e.freeXP = 'freeXP'),
                             (e.eliteXP = 'eliteXP'),
                             (e.equipCoin = 'equipCoin');
-                    })(a || (a = {})),
+                    })(r || (r = {})),
                     (function (e) {
                         (e.Red = 'RedActionBG'), (e.Blue = 'BlueActionBG');
-                    })(s || (s = {}));
-                var _ = n(9916);
-                class d extends r().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = _.B3.GOLD;
-                        else e = _.B3.INTEGRAL;
-                        const t = _.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== t ? t : null;
-                    }
-                }
-                d.defaultProps = { format: 'integral' };
+                    })(o || (o = {}));
+                n(9916);
             },
         },
         __webpack_module_cache__ = {},

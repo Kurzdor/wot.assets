@@ -6,16 +6,14 @@
                 var a = t(6179),
                     n = t.n(a),
                     r = t(9916);
-                class s extends n().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = r.B3.GOLD;
-                        else e = r.B3.INTEGRAL;
-                        const u = r.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                s.defaultProps = { format: 'integral' };
+                const s = ({ format: e, value: u }) => {
+                    const t = ((e, u = 'integral') => {
+                        let t;
+                        t = 'gold' === u ? r.B3.GOLD : r.B3.INTEGRAL;
+                        return void 0 === e ? '' : r.Z5.getNumberFormat(e, t);
+                    })(u, e);
+                    return t ? n().createElement('span', null, t) : null;
+                };
             },
             280: (e, u, t) => {
                 'use strict';
@@ -2990,12 +2988,17 @@
                         (e.BonusX5 = 'battle_bonus_x5'),
                         (e.CrewBonusX3 = 'crew_bonus_x3'),
                         (e.Vehicles = 'vehicles'),
+                        (e.WtHunterLootbox = 'wt_hunter'),
+                        (e.WtBossLootbox = 'wt_boss'),
+                        (e.WtProgressPoints = 'stamp'),
                         (e.EpicSelectToken = 'epicSelectToken'),
                         (e.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
                         (e.DeluxeGift = 'deluxe_gift'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.OptionalDevice = 'optionalDevice'),
-                        (e.EquipCoin = 'equipCoin');
+                        (e.EquipCoin = 'equipCoin'),
+                        (e.WTCommanderClaimable = 'wtCommanderClaimable'),
+                        (e.WTCommanderClaimed = 'wtCommanderClaimed');
                 })(me || (me = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -3127,6 +3130,9 @@
                     me.CrewBonusX3,
                     me.NewYearInvoice,
                     me.EpicSelectToken,
+                    me.WtHunterLootbox,
+                    me.WtBossLootbox,
+                    me.WtProgressPoints,
                     me.Comp7TokenWeeklyReward,
                     me.DeluxeGift,
                     me.BattleBoosterGift,

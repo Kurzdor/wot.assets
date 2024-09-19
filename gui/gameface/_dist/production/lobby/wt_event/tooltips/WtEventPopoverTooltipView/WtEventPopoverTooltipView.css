@@ -1,0 +1,320 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.ContentRewardList_base_9a {
+    display: flex;
+    margin-top: 8rem;
+}
+
+.ContentRewardList_content_81 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    padding-left: 4rem;
+}
+
+.ContentRewardList_content__vehicle_11 {
+    max-width: 350rem;
+}
+
+.ContentRewardList_rewardItem_d6 {
+    width: 40rem;
+    height: 40rem;
+    margin-right: 5rem;
+    background: url('R.images.gui.maps.icons.wtevent.popover.buyTexture') no-repeat center / 100%;
+    position: relative;
+}
+
+.mediaMedium .ContentRewardList_rewardItem_d6 {
+    width: 50rem;
+    height: 50rem;
+}
+
+.ContentRewardList_rewardCount_8d {
+    color: #8c8c7e;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    position: absolute;
+    right: -4rem;
+    bottom: -2rem;
+}
+
+.ContentRewardList_premIcon_a1 {
+    width: 50rem;
+    height: 50rem;
+    margin-right: 5rem;
+    background: url('R.images.gui.maps.icons.quests.bonuses.small.vehicles') no-repeat center / 100%;
+}
+
+.ContentRewardList_vehicleName_8c {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-left: 4rem;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #ffffff;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #f2f2f7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #fefeec;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #e9e2bf;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8c8c7e;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362e;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #ff2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #b70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #feab34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #ee7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #ffdd99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #cbac77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80d43a;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7ab300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #ccffff;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09e2ff;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #ced9d9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #ffc363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #c9c9b6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #a29b70;
+}
+
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8c8c7e;
+}
+
+.ContentTitle_base_38 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ContentTitle_probability_0b {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-left: 4rem;
+}
+
+.RentalTankReward_base_b7 {
+    color: #f2f2f7;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    max-width: 350rem;
+    margin-left: -20rem;
+}
+
+.RentalTankReward_rentalIcon_ad {
+    width: 100rem;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.wtevent.rewards.rental_tank_icon') no-repeat center / 100%;
+}
+
+.mediaMedium .RentalTankReward_rentalIcon_ad {
+    width: 110rem;
+}
+
+.RentalTankReward_rentalText_86 {
+    flex-wrap: wrap;
+    flex: 1;
+    max-width: 350rem;
+}
+
+.RentalTankReward_rentalHeader_2e {
+    color: #feab34;
+}
+
+.RentalTankReward_rentalDescription_5c {
+    color: #c9c9b6;
+}
+
+.Content_base_2e {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.Content_title_29 {
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.Content_slotWrap_83 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Content_slotRow_9a {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16rem;
+}
+
+.Header_base_67 {
+    display: flex;
+    width: 100%;
+    min-height: 90rem;
+}
+
+.Header_boxIcon_c9 {
+    width: 80rem;
+    height: 80rem;
+    background: no-repeat center / 100%;
+    background-image: url('R.images.gui.maps.icons.wtevent.popover.Harrier_lootbox_80x80');
+}
+
+.Header_base__wt_boss_d1 .Header_boxIcon_c9 {
+    background-image: url('R.images.gui.maps.icons.wtevent.popover.Engineer_lootbox_80x80');
+}
+
+.Header_textWrap_42 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 15rem;
+}
+
+.Header_base__wt_hunter_a4 .Header_textWrap_42 {
+    max-width: 320rem;
+}
+
+.Header_base__wt_boss_d1 .Header_textWrap_42 {
+    max-width: 350rem;
+}
+
+.Header_textTitle_0e {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 10rem;
+}
+
+.Header_textDescription_1e {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 100%;
+    padding-right: 35rem;
+}
+
+.App_base_2d {
+    display: flex;
+    flex-direction: column;
+    padding: 20rem;
+    border-radius: 2rem;
+    background: linear-gradient(
+        180deg,
+        rgba(51, 51, 41, 0.3) 0%,
+        rgba(51, 51, 41, 0) 15.62%,
+        rgba(51, 51, 41, 0) 88.02%,
+        rgba(51, 51, 41, 0.1) 100%
+    );
+    color: #8c8c7e;
+    overflow: hidden;
+}
+
+.App_base__wt_hunter_9f {
+    width: 440rem;
+}
+
+.App_base__wt_boss_23 {
+    width: 470rem;
+}

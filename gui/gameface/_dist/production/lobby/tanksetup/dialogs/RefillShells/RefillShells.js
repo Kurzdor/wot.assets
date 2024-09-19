@@ -404,16 +404,14 @@
                 var n = t(6179),
                     a = t.n(n),
                     r = t(9916);
-                class i extends a().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = r.B3.GOLD;
-                        else e = r.B3.INTEGRAL;
-                        const u = r.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                i.defaultProps = { format: 'integral' };
+                const i = ({ format: e, value: u }) => {
+                    const t = ((e, u = 'integral') => {
+                        let t;
+                        t = 'gold' === u ? r.B3.GOLD : r.B3.INTEGRAL;
+                        return void 0 === e ? '' : r.Z5.getNumberFormat(e, t);
+                    })(u, e);
+                    return t ? a().createElement('span', null, t) : null;
+                };
             },
             3495: (e, u, t) => {
                 'use strict';

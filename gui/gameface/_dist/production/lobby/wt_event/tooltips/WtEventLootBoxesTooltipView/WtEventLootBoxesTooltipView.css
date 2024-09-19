@@ -1,0 +1,69 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* stylelint-disable */
+[lang='ja'],
+[lang='ko'],
+[lang='zh_tw'],
+[lang='zh_sg'],
+[lang='zh_ch'],
+[lang='th'] {
+    overflow-wrap: break-word;
+}
+/* stylelint-enable */
+.Content_base_e9 {
+    display: flex;
+    flex-direction: column;
+    width: 400rem;
+    padding: 22rem 25rem 20rem;
+    background: linear-gradient(
+        180deg,
+        rgba(51, 51, 41, 0.3) 0%,
+        rgba(51, 51, 41, 0) 15.62%,
+        rgba(51, 51, 41, 0) 88.02%,
+        rgba(51, 51, 41, 0.1) 100%
+    );
+}
+.Content_topTitle_af {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 9rem;
+}
+.Content_keysImage_b7 {
+    width: 100%;
+    height: 180rem;
+    background: url('R.images.gui.maps.icons.wtevent.tooltips.keys') no-repeat center / contain;
+}
+.Content_title_06 {
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 12rem 0 4rem;
+}
+.Content_text_1a + .Content_title_06 {
+    margin-top: 17rem;
+}
+.Content_text_1a {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}

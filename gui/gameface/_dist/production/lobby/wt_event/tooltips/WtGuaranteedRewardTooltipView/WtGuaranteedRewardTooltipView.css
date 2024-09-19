@@ -1,0 +1,113 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Content_base_8e {
+    display: flex;
+    flex-direction: column;
+    width: 400rem;
+    padding: 15rem 20rem 25rem;
+    background-image: linear-gradient(
+        180deg,
+        rgba(51, 51, 41, 0.3) 0%,
+        transparent 16%,
+        transparent 88%,
+        rgba(51, 51, 41, 0.1) 100%
+    );
+}
+
+.Content_title_3e {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 8rem;
+}
+
+.Content_description_93 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 5rem;
+}
+
+.Content_highlight_fa {
+    color: #e9e2bf;
+}
+
+.Content_portalRunsLeftWrapper_9b {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 20rem 0;
+    padding: 16rem 0;
+    background: linear-gradient(
+        270deg,
+        transparent 0%,
+        rgba(201, 201, 182, 0.07) 38%,
+        rgba(201, 201, 182, 0.07) 65%,
+        transparent 100%
+    );
+    position: relative;
+}
+
+.Content_divider_e7,
+.Content_dividerBottom_71 {
+    width: 100%;
+    height: 9rem;
+    background: url('R.images.gui.maps.icons.wtevent.carousel.dividerDotty') no-repeat center / contain;
+    position: absolute;
+    top: -4rem;
+    left: 0;
+}
+
+.Content_dividerBottom_71 {
+    top: auto;
+    bottom: -4rem;
+}
+
+.Content_portalRunsLeft_3d {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 275rem;
+    margin-left: 10rem;
+}
+
+.Content_subtitle_9c {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.Content_tanks_49 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+}
+
+.Content_tank_b2 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 120rem;
+    padding-right: 16rem;
+}

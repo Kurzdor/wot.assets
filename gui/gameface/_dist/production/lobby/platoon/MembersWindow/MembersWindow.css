@@ -1518,6 +1518,7 @@ so we just add specificity to css classes here
     width: 100%;
     position: relative;
     top: 1rem;
+    z-index: 1;
 }
 
 .Player_topping_6c > * {
@@ -1540,6 +1541,12 @@ so we just add specificity to css classes here
 .Player_topping__isCommander_b9 .Player_toppingBack_cd {
     background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.commander_line') center / contain
         no-repeat;
+}
+
+.Player_topping__isCommander_b9.Player_topping__isEvent_06 .Player_toppingBack_cd {
+    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.commander_line_event') center / contain
+        no-repeat;
+    mix-blend-mode: additive;
 }
 
 .Player_toppingPremiumIcon_20 {
@@ -1584,7 +1591,7 @@ so we just add specificity to css classes here
 }
 
 .Player_footer_1a {
-    margin: 0 10rem;
+    padding: 0 10rem;
     text-align: center;
     position: absolute;
     bottom: 15rem;

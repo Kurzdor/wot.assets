@@ -1,0 +1,219 @@
+html {
+    height: 100%;
+    position: relative;
+}
+
+body {
+    overflow: hidden;
+}
+
+.PopoverDecorator_base_ed {
+    display: flex;
+    position: absolute;
+}
+
+.PopoverDecorator_decorator_d3 {
+    padding: 58rem;
+    border-image-source: url('R.images.gui.maps.icons.popovers.popover_bg');
+    border-image-slice: 90 fill;
+    border-image-width: 90rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.PopoverDecorator_arrow_8a {
+    background: no-repeat 0 0 / contain;
+    position: absolute;
+}
+
+.PopoverDecorator_arrow__bottom_c3,
+.PopoverDecorator_arrow__top_6e {
+    width: 301rem;
+    height: 90rem;
+    margin: 0 58rem;
+    background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_top');
+    left: 50%;
+}
+
+.PopoverDecorator_arrow__left_7a,
+.PopoverDecorator_arrow__right_b6 {
+    width: 84rem;
+    height: 181rem;
+    margin: 58rem 0;
+    background-image: url('R.images.gui.maps.icons.popovers.popover_arrow_left');
+    top: 50%;
+}
+
+.PopoverDecorator_arrow__left_7a {
+    right: 10rem;
+    transform: scaleX(-1) translateY(-90rem);
+}
+
+.PopoverDecorator_arrow__right_b6 {
+    left: 10rem;
+    transform: translateY(-90rem);
+}
+
+.PopoverDecorator_arrow__top_6e {
+    bottom: 8rem;
+    transform: scaleY(-1) translateX(-150rem);
+}
+
+.PopoverDecorator_arrow__bottom_c3 {
+    top: 8rem;
+    transform: translateX(-150rem);
+}
+
+.PopoverDecorator_closeBtn_32 {
+    width: 18rem;
+    height: 18rem;
+    background: url('R.images.gui.maps.icons.popovers.close_button_slim_up') no-repeat 0 0 / contain;
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.PopoverDecorator_closeBtn_32:hover {
+    filter: brightness(160%);
+}
+
+.PopoverDecorator_closeBtn_32:active {
+    background-image: url('R.images.gui.maps.icons.popovers.close_button_slim_press');
+    filter: brightness(100%);
+}
+
+.PopoverDecorator_content_f0 {
+    position: relative;
+    z-index: 2;
+}
+
+.LootBox_shine_1a {
+    width: 116rem;
+    height: 85rem;
+    mix-blend-mode: screen;
+    position: absolute;
+    z-index: -20;
+    pointer-events: none;
+}
+
+.LootBox_shine__harrier_3a {
+    background: url('swf://gui/flash/animations/wt_event/harrierLootboxGlow.swf') no-repeat center / contain;
+    top: 34rem;
+    left: 66rem;
+}
+
+.LootBox_shine__engineer_7f {
+    width: 120rem;
+    height: 89rem;
+    background: url('swf://gui/flash/animations/wt_event/engineerLootboxGlow.swf') no-repeat center / contain;
+    top: -14rem;
+    left: -4rem;
+}
+
+.LootBox_wrapper_e4 {
+    width: 89rem;
+    height: 58rem;
+    margin-left: 10rem;
+    position: relative;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.LootBox_wrapper__harrier_7b {
+    margin-left: 80rem;
+    top: -12rem;
+}
+
+.LootBox_icon_8a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.LootBox_icon__hasBoxesEngineer_1c {
+    background: url('R.images.gui.maps.icons.wtevent.entryBoxPoint.engineerLootbox') no-repeat center / cover;
+}
+
+.LootBox_icon__emptyBoxesEngineer_0c {
+    background: url('R.images.gui.maps.icons.wtevent.entryBoxPoint.engineerLootboxEmpty') no-repeat center / cover;
+}
+
+.LootBox_icon__hasBoxesHarrier_58 {
+    background: url('R.images.gui.maps.icons.wtevent.entryBoxPoint.harrierLootbox') no-repeat center / cover;
+}
+
+.LootBox_icon__emptyBoxesHarrier_36 {
+    background: url('R.images.gui.maps.icons.wtevent.entryBoxPoint.harrierLootboxEmpty') no-repeat center / cover;
+}
+
+.LootBox_iconHover_34 {
+    background: url('R.images.gui.maps.icons.wtevent.entryBoxPoint.lootboxEmptyHover') no-repeat center / cover;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity linear 0.2s;
+    cursor: pointer;
+}
+
+.LootBox_wrapper_e4:hover .LootBox_iconHover_34 {
+    opacity: 1;
+}
+
+.LootBox_count_b5 {
+    color: #ffdd99;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    height: 30rem;
+    font-weight: 400;
+    text-align: right;
+    position: absolute;
+    top: -5rem;
+    right: -30rem;
+}
+
+.LootBox_count__harrier_7f {
+    top: 27rem;
+    right: 0;
+    left: 32rem;
+}
+
+.LootBox_multiplier_0b {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    background: url('R.images.gui.maps.icons.wtevent.entryBoxPoint.multiplier') no-repeat center / contain;
+}
+
+.App_base_99 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    pointer-events: none;
+}
+
+.App_lootBoxContainer_41 {
+    width: 162rem;
+    height: 102rem;
+    margin-left: 40rem;
+    position: relative;
+    pointer-events: auto;
+}

@@ -49,7 +49,7 @@
                 t.r(i),
                     t.d(i, {
                         addModelObserver: () => I,
-                        addPreloadTexture: () => L,
+                        addPreloadTexture: () => y,
                         children: () => a,
                         displayStatus: () => b,
                         displayStatusIs: () => Z,
@@ -67,7 +67,7 @@
                         pxToRem: () => V,
                         remToPx: () => q,
                         resize: () => H,
-                        sendEvent: () => y,
+                        sendEvent: () => L,
                         setAnimateWindow: () => Y,
                         setEventHandled: () => z,
                         setInputPaddingsRem: () => M,
@@ -231,7 +231,7 @@
                         return viewEnv.handleViewEvent({ __Type: t, type: e });
                         var r;
                     },
-                    y = {
+                    L = {
                         close(e) {
                             O('popover' === e ? R : x);
                         },
@@ -242,7 +242,7 @@
                             O(T, { isMouseEvent: !0, on: e });
                         },
                     };
-                function L(e) {
+                function y(e) {
                     viewEnv.addPreloadTexture(e);
                 }
                 function M(e) {
@@ -1028,7 +1028,7 @@
                         [w.Large]: `${p().SMALL} ${p().MEDIUM} ${p().LARGE}`,
                         [w.ExtraLarge]: `${p().SMALL} ${p().MEDIUM} ${p().LARGE} ${p().EXTRA_LARGE}`,
                     },
-                    y = (e) => {
+                    L = (e) => {
                         let u = e.children,
                             t = e.className,
                             r = (function (e, u) {
@@ -1046,7 +1046,7 @@
                             o = a.mediaSize;
                         return n().createElement('div', T({ className: C()(t, x[i], P[s], O[o]) }, r), u);
                     },
-                    L = ['children'];
+                    y = ['children'];
                 const M = (e) => {
                     let u = e.children,
                         t = (function (e, u) {
@@ -1057,8 +1057,8 @@
                                 a = Object.keys(e);
                             for (r = 0; r < a.length; r++) (t = a[r]), u.indexOf(t) >= 0 || (n[t] = e[t]);
                             return n;
-                        })(e, L);
-                    return n().createElement(B, null, n().createElement(y, t, u));
+                        })(e, y);
+                    return n().createElement(B, null, n().createElement(L, t, u));
                 };
                 var k = t(493),
                     I = t.n(k);
@@ -1242,12 +1242,17 @@
                         (e.BonusX5 = 'battle_bonus_x5'),
                         (e.CrewBonusX3 = 'crew_bonus_x3'),
                         (e.Vehicles = 'vehicles'),
+                        (e.WtHunterLootbox = 'wt_hunter'),
+                        (e.WtBossLootbox = 'wt_boss'),
+                        (e.WtProgressPoints = 'stamp'),
                         (e.EpicSelectToken = 'epicSelectToken'),
                         (e.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
                         (e.DeluxeGift = 'deluxe_gift'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.OptionalDevice = 'optionalDevice'),
-                        (e.EquipCoin = 'equipCoin');
+                        (e.EquipCoin = 'equipCoin'),
+                        (e.WTCommanderClaimable = 'wtCommanderClaimable'),
+                        (e.WTCommanderClaimed = 'wtCommanderClaimed');
                 })(V || (V = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -1351,17 +1356,15 @@
                         (e[(e.Engraving = 0)] = 'Engraving'), (e[(e.Background = 1)] = 'Background');
                     })(Q || (Q = {}));
                 var Z = t(916);
-                class J extends n().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = Z.B3.GOLD;
-                        else e = Z.B3.INTEGRAL;
-                        const u = Z.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                J.defaultProps = { format: 'integral' };
-                const ee = [
+                const J = ({ format: e, value: u }) => {
+                        const t = ((e, u = 'integral') => {
+                            let t;
+                            t = 'gold' === u ? Z.B3.GOLD : Z.B3.INTEGRAL;
+                            return void 0 === e ? '' : Z.Z5.getNumberFormat(e, t);
+                        })(u, e);
+                        return t ? n().createElement('span', null, t) : null;
+                    },
+                    ee = [
                         V.Items,
                         V.Equipment,
                         V.Xp,
@@ -1390,6 +1393,9 @@
                         V.CrewBonusX3,
                         V.NewYearInvoice,
                         V.EpicSelectToken,
+                        V.WtHunterLootbox,
+                        V.WtBossLootbox,
+                        V.WtProgressPoints,
                         V.Comp7TokenWeeklyReward,
                         V.DeluxeGift,
                         V.BattleBoosterGift,
@@ -2075,7 +2081,7 @@
                         base__left: 'TextButton_base__left_ff',
                         shine: 'TextButton_shine_e2',
                     },
-                    ye = [
+                    Le = [
                         'caption',
                         'onClick',
                         'goto',
@@ -2089,9 +2095,9 @@
                         'soundClick',
                         'soundHover',
                     ];
-                function Le() {
+                function ye() {
                     return (
-                        (Le =
+                        (ye =
                             Object.assign ||
                             function (e) {
                                 for (var u = 1; u < arguments.length; u++) {
@@ -2100,7 +2106,7 @@
                                 }
                                 return e;
                             }),
-                        Le.apply(this, arguments)
+                        ye.apply(this, arguments)
                     );
                 }
                 class Me extends n().PureComponent {
@@ -2149,7 +2155,7 @@
                                         a = Object.keys(e);
                                     for (r = 0; r < a.length; r++) (t = a[r]), u.indexOf(t) >= 0 || (n[t] = e[t]);
                                     return n;
-                                })(e, ye)),
+                                })(e, Le)),
                             _ = C()(Oe.base, Oe[`base__${i}`], Oe[`base__${a}`], null == s ? void 0 : s.base),
                             A = C()(Oe.icon, Oe[`icon__${i}`], Oe[`icon__${a}`], null == s ? void 0 : s.icon),
                             F = C()(Oe.glow, null == s ? void 0 : s.glow),
@@ -2157,7 +2163,7 @@
                             D = C()(Oe.goto, null == s ? void 0 : s.goto);
                         return n().createElement(
                             'div',
-                            Le(
+                            ye(
                                 {
                                     className: _,
                                     onMouseEnter: this._onMouseEnter(o),

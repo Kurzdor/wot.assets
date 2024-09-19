@@ -1150,12 +1150,17 @@
                         (u.BonusX5 = 'battle_bonus_x5'),
                         (u.CrewBonusX3 = 'crew_bonus_x3'),
                         (u.Vehicles = 'vehicles'),
+                        (u.WtHunterLootbox = 'wt_hunter'),
+                        (u.WtBossLootbox = 'wt_boss'),
+                        (u.WtProgressPoints = 'stamp'),
                         (u.EpicSelectToken = 'epicSelectToken'),
                         (u.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
                         (u.DeluxeGift = 'deluxe_gift'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.OptionalDevice = 'optionalDevice'),
-                        (u.EquipCoin = 'equipCoin');
+                        (u.EquipCoin = 'equipCoin'),
+                        (u.WTCommanderClaimable = 'wtCommanderClaimable'),
+                        (u.WTCommanderClaimed = 'wtCommanderClaimed');
                 })(v || (v = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1258,57 +1263,59 @@
                     (function (u) {
                         (u[(u.Engraving = 0)] = 'Engraving'), (u[(u.Background = 1)] = 'Background');
                     })(N || (N = {}));
-                class T extends r().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = c.B3.GOLD;
-                        else u = c.B3.INTEGRAL;
-                        const e = c.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                T.defaultProps = { format: 'integral' };
-                v.Items,
-                    v.Equipment,
-                    v.Xp,
-                    v.XpFactor,
-                    v.Blueprints,
-                    v.BlueprintsAny,
-                    v.Goodies,
-                    v.Berths,
-                    v.Slots,
-                    v.Tokens,
-                    v.CrewSkins,
-                    v.CrewBooks,
-                    v.Customizations,
-                    v.CreditsFactor,
-                    v.TankmenXp,
-                    v.TankmenXpFactor,
-                    v.FreeXpFactor,
-                    v.BattleToken,
-                    v.PremiumUniversal,
-                    v.NaturalCover,
-                    v.BpCoin,
-                    v.BattlePassSelectToken,
-                    v.BattlaPassFinalAchievement,
-                    v.BattleBadge,
-                    v.BonusX5,
-                    v.CrewBonusX3,
-                    v.NewYearInvoice,
-                    v.EpicSelectToken,
-                    v.Comp7TokenWeeklyReward,
-                    v.DeluxeGift,
-                    v.BattleBoosterGift,
-                    v.OptionalDevice,
-                    v.Gold,
-                    v.Credits,
-                    v.Crystal,
-                    v.FreeXp,
-                    v.BattlePassPoints,
-                    v.EquipCoin,
-                    v.PremiumPlus,
-                    v.Premium;
-                const x = [y.Small, y.Big],
+                const T = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? c.B3.GOLD : c.B3.INTEGRAL;
+                            return void 0 === u ? '' : c.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? r().createElement('span', null, t) : null;
+                    },
+                    x =
+                        (v.Items,
+                        v.Equipment,
+                        v.Xp,
+                        v.XpFactor,
+                        v.Blueprints,
+                        v.BlueprintsAny,
+                        v.Goodies,
+                        v.Berths,
+                        v.Slots,
+                        v.Tokens,
+                        v.CrewSkins,
+                        v.CrewBooks,
+                        v.Customizations,
+                        v.CreditsFactor,
+                        v.TankmenXp,
+                        v.TankmenXpFactor,
+                        v.FreeXpFactor,
+                        v.BattleToken,
+                        v.PremiumUniversal,
+                        v.NaturalCover,
+                        v.BpCoin,
+                        v.BattlePassSelectToken,
+                        v.BattlaPassFinalAchievement,
+                        v.BattleBadge,
+                        v.BonusX5,
+                        v.CrewBonusX3,
+                        v.NewYearInvoice,
+                        v.EpicSelectToken,
+                        v.WtHunterLootbox,
+                        v.WtBossLootbox,
+                        v.WtProgressPoints,
+                        v.Comp7TokenWeeklyReward,
+                        v.DeluxeGift,
+                        v.BattleBoosterGift,
+                        v.OptionalDevice,
+                        v.Gold,
+                        v.Credits,
+                        v.Crystal,
+                        v.FreeXp,
+                        v.BattlePassPoints,
+                        v.EquipCoin,
+                        v.PremiumPlus,
+                        v.Premium,
+                        [y.Small, y.Big]),
                     O = {
                         base: 'Reward_base_ea',
                         base__s48x48: 'Reward_base__s48x48_46',
@@ -1499,11 +1506,11 @@
                         }
                     }, [e, u, t, r]);
                 }
-                function q(u, e) {
+                function W(u, e) {
                     return Array.isArray(u) ? u.map(e) : u.map((u, t, n) => e(null == u ? void 0 : u.value, t, n));
                 }
-                var V = t(3403);
-                function W(u) {
+                var q = t(3403);
+                function V(u) {
                     engine.call('PlaySound', u).catch((e) => {
                         console.error('[lib/sounds.js] playSound(', u, '): ', e);
                     });
@@ -1561,7 +1568,7 @@
                             (this._onMouseEnter = (u) => (e) => {
                                 u && u(e),
                                     this.setState({ hover: !0 }),
-                                    this.props.soundHover && W(this.props.soundHover);
+                                    this.props.soundHover && V(this.props.soundHover);
                             }),
                             (this._onMouseLeave = (u) => (e) => {
                                 u && u(e), this.setState({ hover: !1, click: !1 });
@@ -1569,7 +1576,7 @@
                             (this._onMouseDown = (u) => (e) => {
                                 u && u(e),
                                     this.setState({ click: !0 }),
-                                    this.props.soundClick && W(this.props.soundClick);
+                                    this.props.soundClick && V(this.props.soundClick);
                             }),
                             (this._onMouseUp = (u) => (e) => {
                                 u && u(e), this.setState({ click: !1 });
@@ -2012,7 +2019,7 @@
                             r().createElement(
                                 'div',
                                 { className: o()(hu.currencyBlock, null == t ? void 0 : t.currencyBlock) },
-                                q(u, (u, e) =>
+                                W(u, (u, e) =>
                                     r().createElement(
                                         'div',
                                         {
@@ -2431,15 +2438,15 @@
                     },
                     Hu = 'Alert_alert_66',
                     Xu = 'Alert_icon_ea',
-                    qu = 'Alert_alertText_14',
-                    Vu = ({ alertText: u, className: e }) =>
+                    Wu = 'Alert_alertText_14',
+                    qu = ({ alertText: u, className: e }) =>
                         r().createElement(
                             'div',
                             { className: o()(Hu, e) },
                             r().createElement('i', { className: Xu }),
-                            r().createElement('span', { className: qu }, u),
+                            r().createElement('span', { className: Wu }, u),
                         ),
-                    Wu = 'PriceBlock_base_7a',
+                    Vu = 'PriceBlock_base_7a',
                     ju = 'PriceBlock_priceContainer_d3',
                     zu = 'PriceBlock_text_2c',
                     Yu = 'PriceBlock_currency_13',
@@ -2459,7 +2466,7 @@
                     }) =>
                         r().createElement(
                             'div',
-                            { className: o()(Wu, l) },
+                            { className: o()(Vu, l) },
                             r().createElement(
                                 'div',
                                 { className: o()(ju, null == _ ? void 0 : _.priceContainer) },
@@ -2476,7 +2483,7 @@
                                         classMix: null == _ ? void 0 : _.additionalText,
                                     }),
                             ),
-                            E && r().createElement(Vu, { className: null == _ ? void 0 : _.alert, alertText: c }),
+                            E && r().createElement(qu, { className: null == _ ? void 0 : _.alert, alertText: c }),
                         ),
                     Ku = (u, e) => {
                         const t = u.$dyn(e);
@@ -2496,7 +2503,7 @@
                         priceContainer: 'Content_priceContainer_66',
                     },
                     Ju = R.strings.tank_setup.dialogs.sell.alertText.equipment,
-                    ue = (0, V.Pi)(() => {
+                    ue = (0, q.Pi)(() => {
                         const u = xu().model,
                             e = u.equipment.cost.get(),
                             t = e.type,
@@ -2605,7 +2612,7 @@
                                     s,
                                 ),
                                 onMouseEnter: function (u) {
-                                    a || (null !== c && W(c), _ && _(u));
+                                    a || (null !== c && V(c), _ && _(u));
                                 },
                                 onMouseMove: function (u) {
                                     E && E(u);
@@ -2615,7 +2622,7 @@
                                 },
                                 onMouseDown: function (u) {
                                     a ||
-                                        (null !== l && W(l),
+                                        (null !== l && V(l),
                                         A && A(u),
                                         t && (a || (m.current && (m.current.focus(), B(!0)))),
                                         v(!0));
@@ -3018,10 +3025,10 @@
                                             this.setState({ activeDecrement: !0 }))));
                             }),
                             (this.playHoverSound = () => {
-                                this.props.isDisabled || W('highlight');
+                                this.props.isDisabled || V('highlight');
                             }),
                             (this.playClickSound = () => {
-                                this.props.isDisabled || W('play');
+                                this.props.isDisabled || V('play');
                             }),
                             (this.stop = () => {
                                 this.timer && clearTimeout(this.timer), (this.timer = null);
@@ -3233,7 +3240,7 @@
                     pe = 'Footer_button_ab',
                     Ce = 'Footer_text_cc',
                     Be = R.strings.tank_setup.dialogs.sell.button,
-                    he = (0, V.Pi)(() => {
+                    he = (0, q.Pi)(() => {
                         const u = xu(),
                             e = u.model,
                             t = u.controls,
@@ -3285,7 +3292,7 @@
                     }),
                     ge = 'Header_base_d6',
                     ve = 'Header_text_97',
-                    be = (0, V.Pi)(() => {
+                    be = (0, q.Pi)(() => {
                         const u = xu().model,
                             e = r().createElement(Gu, {
                                 text: Ku(Zu(R.strings.artefacts, u.equipment.props.get().name), 'name'),
@@ -3314,14 +3321,14 @@
                         ye.apply(this, arguments)
                     );
                 }
-                const fe = (0, V.Pi)(() => {
+                const fe = (0, q.Pi)(() => {
                         const u = xu(),
                             e = u.controls,
                             t = u.model,
                             n = t.balance.get(),
                             i = t.computes.parseEquipmentProps(),
                             a = t.computes.isStandardEquipment(),
-                            s = q(t.displayFlags.get(), M);
+                            s = W(t.displayFlags.get(), M);
                         var c;
                         return (
                             (c = e.close),

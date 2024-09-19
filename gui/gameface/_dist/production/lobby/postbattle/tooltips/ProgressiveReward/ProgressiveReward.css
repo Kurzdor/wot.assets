@@ -1,0 +1,201 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.Separator_base_22 {
+    width: 100%;
+    height: 1rem;
+    background-image: linear-gradient(90deg, rgba(255, 255, 229, 0.2), transparent);
+    background-size: 3rem;
+    mask: linear-gradient(90deg, rgba(0, 0, 0, 0.4), #000 40%, #000 60%, rgba(0, 0, 0, 0.4));
+}
+
+.TooltipContentHolder_base_cf {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.TooltipContentHolder_base__primary_02 {
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 204, 0.04),
+        rgba(255, 255, 204, 0.1) 40%,
+        rgba(255, 255, 204, 0.1) 60%,
+        rgba(255, 255, 204, 0.04)
+    );
+}
+
+.TooltipContentHolder_base__accent_e3 {
+    background-image: linear-gradient(
+        90deg,
+        rgba(102, 179, 252, 0.04),
+        rgba(102, 179, 252, 0.1) 40%,
+        rgba(102, 179, 252, 0.1) 60%,
+        rgba(102, 179, 252, 0.04)
+    );
+}
+
+.TooltipContentHolder_content_c2 {
+    flex: 1;
+    padding: 20rem;
+}
+
+.Progression_base_15 {
+    display: flex;
+    align-items: center;
+}
+.Progression_reward_12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 20rem;
+    margin: 0 20rem;
+    position: relative;
+}
+.Progression_icon_6c {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Progression_icon__normal_78 {
+    width: 20rem;
+    height: 20rem;
+}
+.Progression_icon__normal_78.Progression_icon__active_62 {
+    width: 62rem;
+    height: 64rem;
+}
+.Progression_icon__normal_78.Progression_icon__received_77 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.normal.received');
+}
+.Progression_icon__normal_78.Progression_icon__notReceived_50 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.normal.not_received');
+}
+.Progression_icon__normal_78.Progression_icon__opened_0b {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.normal.active_opened');
+}
+.Progression_icon__normal_78.Progression_icon__notOpened_99 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.normal.active_not_opened');
+}
+.Progression_icon__big_2b {
+    width: 28rem;
+    height: 28rem;
+}
+.Progression_icon__big_2b.Progression_icon__active_62 {
+    width: 71rem;
+    height: 71rem;
+}
+.Progression_icon__big_2b.Progression_icon__received_77 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.big.received');
+}
+.Progression_icon__big_2b.Progression_icon__notReceived_50 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.big.not_received');
+}
+.Progression_icon__big_2b.Progression_icon__opened_0b {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.big.active_opened');
+}
+.Progression_icon__big_2b.Progression_icon__notOpened_99 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.big.active_not_opened');
+}
+.Progression_bgGlow_ad {
+    width: 400rem;
+    height: 330rem;
+    background-position: center;
+    background-size: contain;
+    mix-blend-mode: screen;
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+}
+.Progression_bgGlow__probMed_a2 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.glow_prop_med');
+}
+.Progression_bgGlow__probMax_fa {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.glow_prop_max');
+}
+.Progression_bgGlow__received_e3 {
+    background-image: url('R.images.gui.maps.icons.postbattle.progressive_reward.glow_received');
+}
+
+.TooltipContent_base_bd {
+    width: 418rem;
+    overflow: hidden;
+}
+.TooltipContent_header_58 {
+    display: flex;
+    height: 350rem;
+    background: url('R.images.gui.maps.icons.progressiveReward.random_reward_tooltip_bg') no-repeat top / contain;
+    position: relative;
+}
+.TooltipContent_container_f5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+.TooltipContent_title_b6 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 20rem;
+}
+.TooltipContent_stage_c4 {
+    margin-top: 20rem;
+    color: #ffb266;
+    font-size: 16rem;
+    text-align: center;
+}
+.TooltipContent_lock_3d {
+    width: 200rem;
+    height: 200rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.TooltipContent_lock__probMin_29 {
+    background-image: url('R.images.gui.maps.icons.progressiveReward.big_lock_prob_min');
+}
+.TooltipContent_lock__probMed_73 {
+    background-image: url('R.images.gui.maps.icons.progressiveReward.big_lock_prob_med');
+}
+.TooltipContent_lock__probMax_d3 {
+    background-image: url('R.images.gui.maps.icons.progressiveReward.big_lock_prob_max');
+}
+.TooltipContent_lock__received_47 {
+    background-image: url('R.images.gui.maps.icons.progressiveReward.big_lock_received');
+}
+.TooltipContent_progressionStatus_58 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.TooltipContent_rewardReceived_5b {
+    color: #cf6;
+}
+.TooltipContent_description_ad {
+    font-size: 16rem;
+}
+
+body {
+    margin: 0;
+    color: #8c8c7e;
+    font-size: 14rem;
+    line-height: 18rem;
+}

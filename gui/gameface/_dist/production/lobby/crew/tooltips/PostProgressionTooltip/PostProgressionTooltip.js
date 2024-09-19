@@ -1062,32 +1062,30 @@
                     b = h[0],
                     f = h[1];
                 var v = t(9916);
-                class w extends a().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = v.B3.GOLD;
-                        else u = v.B3.INTEGRAL;
-                        const e = v.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                w.defaultProps = { format: 'integral' };
-                const y = [
-                    'children',
-                    'contentId',
-                    'args',
-                    'onMouseEnter',
-                    'onMouseLeave',
-                    'onMouseDown',
-                    'onClick',
-                    'ignoreShowDelay',
-                    'ignoreMouseClick',
-                    'decoratorId',
-                    'isEnabled',
-                    'targetId',
-                    'onShow',
-                    'onHide',
-                ];
+                const w = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? v.B3.GOLD : v.B3.INTEGRAL;
+                            return void 0 === u ? '' : v.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? a().createElement('span', null, t) : null;
+                    },
+                    y = [
+                        'children',
+                        'contentId',
+                        'args',
+                        'onMouseEnter',
+                        'onMouseLeave',
+                        'onMouseDown',
+                        'onClick',
+                        'ignoreShowDelay',
+                        'ignoreMouseClick',
+                        'decoratorId',
+                        'isEnabled',
+                        'targetId',
+                        'onShow',
+                        'onHide',
+                    ];
                 function k(u) {
                     return Object.entries(u || {}).map(([u, e]) => {
                         const t = { __Type: 'GFValueProxy', name: u };

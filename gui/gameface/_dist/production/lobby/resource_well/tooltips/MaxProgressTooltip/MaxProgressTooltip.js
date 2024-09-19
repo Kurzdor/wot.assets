@@ -837,16 +837,14 @@
                     );
                 });
                 var c = E(9916);
-                class l extends F().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = c.B3.GOLD;
-                        else u = c.B3.INTEGRAL;
-                        const e = c.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                l.defaultProps = { format: 'integral' };
+                const l = ({ format: u, value: e }) => {
+                    const E = ((u, e = 'integral') => {
+                        let E;
+                        E = 'gold' === e ? c.B3.GOLD : c.B3.INTEGRAL;
+                        return void 0 === u ? '' : c.Z5.getNumberFormat(u, E);
+                    })(e, u);
+                    return E ? F().createElement('span', null, E) : null;
+                };
                 var d = E(1281);
                 let _;
                 function p(u, e) {
@@ -946,17 +944,17 @@
                         );
                     },
                     x = (u, e) => u.split('.').reduce((u, e) => u && u[e], e),
-                    P = (u) => {
+                    k = (u) => {
                         const e = (0, A.useRef)(!1);
                         e.current || (u(), (e.current = !0));
                     },
-                    k = (u) => u && 'ArrayItem' === u.__proto__.constructor.name,
+                    P = (u) => u && 'ArrayItem' === u.__proto__.constructor.name,
                     S = (u, e) => (u.length > 0 ? `${u}.${e}` : e),
                     L = (u) =>
                         ((u, e) =>
                             u.split('.').reduce((u, E) => {
                                 const A = x(`${u}.${E}`, window);
-                                return k(A) ? e(u, E, A) : `${u}.${E}`;
+                                return P(A) ? e(u, E, A) : `${u}.${E}`;
                             }))(u, (u, e) => `${u}.${e}.value`),
                     M = (u) => {
                         const e = ((u) => {
@@ -973,7 +971,7 @@
                             return (
                                 A.reduce((e, A) => {
                                     const F = x(S(E, `${e}.${A}`), window);
-                                    return k(F) ? (u.push(F.id), `${e}.${A}.value`) : (u.push(A), `${e}.${A}`);
+                                    return P(F) ? (u.push(F.id), `${e}.${A}.value`) : (u.push(A), `${e}.${A}`);
                                 }),
                                 u.reduce((u, e) => u + '.' + e)
                             );
@@ -999,14 +997,14 @@
                                 ((u) => {
                                     const e = x(u, window);
                                     for (const u in e) 'function' == typeof e[u] && (e[u] = e[u].bind(e));
-                                    return k(e) ? e.value : e;
+                                    return P(e) ? e.value : e;
                                 })(L(r)),
                             ),
                             C = B[0],
                             o = B[1],
                             i = (0, A.useRef)(-1);
                         return (
-                            P(() => {
+                            k(() => {
                                 if (
                                     ('boolean' == typeof e &&
                                         ((e = e ? V.Deep : V.None),

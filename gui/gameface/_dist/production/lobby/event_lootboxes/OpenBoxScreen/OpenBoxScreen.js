@@ -1349,12 +1349,17 @@
                         (u.BonusX5 = 'battle_bonus_x5'),
                         (u.CrewBonusX3 = 'crew_bonus_x3'),
                         (u.Vehicles = 'vehicles'),
+                        (u.WtHunterLootbox = 'wt_hunter'),
+                        (u.WtBossLootbox = 'wt_boss'),
+                        (u.WtProgressPoints = 'stamp'),
                         (u.EpicSelectToken = 'epicSelectToken'),
                         (u.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
                         (u.DeluxeGift = 'deluxe_gift'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.OptionalDevice = 'optionalDevice'),
-                        (u.EquipCoin = 'equipCoin');
+                        (u.EquipCoin = 'equipCoin'),
+                        (u.WTCommanderClaimable = 'wtCommanderClaimable'),
+                        (u.WTCommanderClaimed = 'wtCommanderClaimed');
                 })(eu || (eu = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1449,92 +1454,97 @@
                     (function (u) {
                         (u[(u.Engraving = 0)] = 'Engraving'), (u[(u.Background = 1)] = 'Background');
                     })(su || (su = {}));
-                class cu extends a().PureComponent {
-                    render() {
-                        let u;
-                        u = 'gold' === this.props.format ? W.B3.GOLD : W.B3.INTEGRAL;
-                        const e = W.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                (cu.defaultProps = { format: 'integral' }),
-                    eu.Items,
-                    eu.Equipment,
-                    eu.Xp,
-                    eu.XpFactor,
-                    eu.Blueprints,
-                    eu.BlueprintsAny,
-                    eu.Goodies,
-                    eu.Berths,
-                    eu.Slots,
-                    eu.Tokens,
-                    eu.CrewSkins,
-                    eu.CrewBooks,
-                    eu.Customizations,
-                    eu.CreditsFactor,
-                    eu.TankmenXp,
-                    eu.TankmenXpFactor,
-                    eu.FreeXpFactor,
-                    eu.BattleToken,
-                    eu.PremiumUniversal,
-                    eu.NaturalCover,
-                    eu.BpCoin,
-                    eu.BattlePassSelectToken,
-                    eu.BattlaPassFinalAchievement,
-                    eu.BattleBadge,
-                    eu.BonusX5,
-                    eu.CrewBonusX3,
-                    eu.NewYearInvoice,
-                    eu.EpicSelectToken,
-                    eu.Comp7TokenWeeklyReward,
-                    eu.DeluxeGift,
-                    eu.BattleBoosterGift,
-                    eu.OptionalDevice,
-                    eu.Gold,
-                    eu.Credits,
-                    eu.Crystal,
-                    eu.FreeXp,
-                    eu.BattlePassPoints,
-                    eu.EquipCoin,
-                    eu.PremiumPlus,
-                    eu.Premium,
-                    nu.Small,
-                    nu.Big;
-                const Fu = (u) => {
-                    if (void 0 === u) return null;
-                    switch (u) {
-                        case ru.BATTLE_BOOSTER:
-                            return ou.BATTLE_BOOSTER;
-                        case ru.BATTLE_BOOSTER_REPLACE:
-                            return ou.BATTLE_BOOSTER_REPLACE;
-                        case ru.BUILT_IN_EQUIPMENT:
-                            return ou.BUILT_IN_EQUIPMENT;
-                        case ru.EQUIPMENT_PLUS:
-                            return ou.EQUIPMENT_PLUS;
-                        case ru.EQUIPMENT_TROPHY_BASIC:
-                            return ou.EQUIPMENT_TROPHY_BASIC;
-                        case ru.EQUIPMENT_TROPHY_UPGRADED:
-                            return ou.EQUIPMENT_TROPHY_UPGRADED;
-                        case ru.EQUIPMENT_MODERNIZED_UPGRADED_1:
-                            return ou.EQUIPMENT_MODERNIZED_UPGRADED_1;
-                        case ru.EQUIPMENT_MODERNIZED_UPGRADED_2:
-                            return ou.EQUIPMENT_MODERNIZED_UPGRADED_2;
-                        case ru.EQUIPMENT_MODERNIZED_UPGRADED_3:
-                            return ou.EQUIPMENT_MODERNIZED_UPGRADED_3;
-                        case ru.PROGRESSION_STYLE_UPGRADED_1:
-                            return ou.PROGRESSION_STYLE_UPGRADED_1;
-                        case ru.PROGRESSION_STYLE_UPGRADED_2:
-                            return ou.PROGRESSION_STYLE_UPGRADED_2;
-                        case ru.PROGRESSION_STYLE_UPGRADED_3:
-                            return ou.PROGRESSION_STYLE_UPGRADED_3;
-                        case ru.PROGRESSION_STYLE_UPGRADED_4:
-                            return ou.PROGRESSION_STYLE_UPGRADED_4;
-                        case ru.PROGRESSION_STYLE_UPGRADED_5:
-                            return ou.PROGRESSION_STYLE_UPGRADED_5;
-                        case ru.PROGRESSION_STYLE_UPGRADED_6:
-                            return ou.PROGRESSION_STYLE_UPGRADED_6;
-                    }
-                };
+                const cu = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            return (
+                                (t = 'gold' === e ? W.B3.GOLD : W.B3.INTEGRAL),
+                                void 0 === u ? '' : W.Z5.getNumberFormat(u, t)
+                            );
+                        })(e, u);
+                        return t ? a().createElement('span', null, t) : null;
+                    },
+                    Fu =
+                        (eu.Items,
+                        eu.Equipment,
+                        eu.Xp,
+                        eu.XpFactor,
+                        eu.Blueprints,
+                        eu.BlueprintsAny,
+                        eu.Goodies,
+                        eu.Berths,
+                        eu.Slots,
+                        eu.Tokens,
+                        eu.CrewSkins,
+                        eu.CrewBooks,
+                        eu.Customizations,
+                        eu.CreditsFactor,
+                        eu.TankmenXp,
+                        eu.TankmenXpFactor,
+                        eu.FreeXpFactor,
+                        eu.BattleToken,
+                        eu.PremiumUniversal,
+                        eu.NaturalCover,
+                        eu.BpCoin,
+                        eu.BattlePassSelectToken,
+                        eu.BattlaPassFinalAchievement,
+                        eu.BattleBadge,
+                        eu.BonusX5,
+                        eu.CrewBonusX3,
+                        eu.NewYearInvoice,
+                        eu.EpicSelectToken,
+                        eu.WtHunterLootbox,
+                        eu.WtBossLootbox,
+                        eu.WtProgressPoints,
+                        eu.Comp7TokenWeeklyReward,
+                        eu.DeluxeGift,
+                        eu.BattleBoosterGift,
+                        eu.OptionalDevice,
+                        eu.Gold,
+                        eu.Credits,
+                        eu.Crystal,
+                        eu.FreeXp,
+                        eu.BattlePassPoints,
+                        eu.EquipCoin,
+                        eu.PremiumPlus,
+                        eu.Premium,
+                        nu.Small,
+                        nu.Big,
+                        (u) => {
+                            if (void 0 === u) return null;
+                            switch (u) {
+                                case ru.BATTLE_BOOSTER:
+                                    return ou.BATTLE_BOOSTER;
+                                case ru.BATTLE_BOOSTER_REPLACE:
+                                    return ou.BATTLE_BOOSTER_REPLACE;
+                                case ru.BUILT_IN_EQUIPMENT:
+                                    return ou.BUILT_IN_EQUIPMENT;
+                                case ru.EQUIPMENT_PLUS:
+                                    return ou.EQUIPMENT_PLUS;
+                                case ru.EQUIPMENT_TROPHY_BASIC:
+                                    return ou.EQUIPMENT_TROPHY_BASIC;
+                                case ru.EQUIPMENT_TROPHY_UPGRADED:
+                                    return ou.EQUIPMENT_TROPHY_UPGRADED;
+                                case ru.EQUIPMENT_MODERNIZED_UPGRADED_1:
+                                    return ou.EQUIPMENT_MODERNIZED_UPGRADED_1;
+                                case ru.EQUIPMENT_MODERNIZED_UPGRADED_2:
+                                    return ou.EQUIPMENT_MODERNIZED_UPGRADED_2;
+                                case ru.EQUIPMENT_MODERNIZED_UPGRADED_3:
+                                    return ou.EQUIPMENT_MODERNIZED_UPGRADED_3;
+                                case ru.PROGRESSION_STYLE_UPGRADED_1:
+                                    return ou.PROGRESSION_STYLE_UPGRADED_1;
+                                case ru.PROGRESSION_STYLE_UPGRADED_2:
+                                    return ou.PROGRESSION_STYLE_UPGRADED_2;
+                                case ru.PROGRESSION_STYLE_UPGRADED_3:
+                                    return ou.PROGRESSION_STYLE_UPGRADED_3;
+                                case ru.PROGRESSION_STYLE_UPGRADED_4:
+                                    return ou.PROGRESSION_STYLE_UPGRADED_4;
+                                case ru.PROGRESSION_STYLE_UPGRADED_5:
+                                    return ou.PROGRESSION_STYLE_UPGRADED_5;
+                                case ru.PROGRESSION_STYLE_UPGRADED_6:
+                                    return ou.PROGRESSION_STYLE_UPGRADED_6;
+                            }
+                        });
                 let du;
                 !(function (u) {
                     (u.Additional = 'additional'), (u.Default = 'default');

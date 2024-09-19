@@ -48,7 +48,7 @@
                 }
                 t.r(i),
                     t.d(i, {
-                        addModelObserver: () => I,
+                        addModelObserver: () => P,
                         addPreloadTexture: () => N,
                         children: () => a,
                         displayStatus: () => f,
@@ -57,7 +57,7 @@
                         extraSize: () => J,
                         forceTriggerMouseMove: () => Y,
                         freezeTextureBeforeResize: () => V,
-                        getBrowserTexturePath: () => P,
+                        getBrowserTexturePath: () => I,
                         getDisplayStatus: () => Z,
                         getScale: () => G,
                         getSize: () => W,
@@ -248,10 +248,10 @@
                 function M(u) {
                     viewEnv.setHitAreaPaddingsRem(u, u, u, u, 15);
                 }
-                function P(u, e, t, n = 1) {
+                function I(u, e, t, n = 1) {
                     return viewEnv.getWebBrowserTexturePath(u, e, t, n);
                 }
-                function I(u, e, t) {
+                function P(u, e, t) {
                     return viewEnv.addDataChangedCallback(u, e, t);
                 }
                 function R(u) {
@@ -1070,21 +1070,21 @@
                     return r().createElement(B, null, r().createElement(O, t, e));
                 };
                 var M = t(493),
-                    P = t.n(M);
-                function I(u) {
+                    I = t.n(M);
+                function P(u) {
                     engine.call('PlaySound', u).catch((e) => {
                         console.error('[lib/sounds.js] playSound(', u, '): ', e);
                     });
                 }
                 const W = {
                         playHighlight() {
-                            I('highlight');
+                            P('highlight');
                         },
                         playClick() {
-                            I('play');
+                            P('play');
                         },
                         playYes() {
-                            I('yes1');
+                            P('yes1');
                         },
                     },
                     H = {
@@ -1140,7 +1140,7 @@
                             (this._onMouseEnter = (u) => (e) => {
                                 u && u(e),
                                     this.setState({ hover: !0 }),
-                                    this.props.soundHover && I(this.props.soundHover);
+                                    this.props.soundHover && P(this.props.soundHover);
                             }),
                             (this._onMouseLeave = (u) => (e) => {
                                 u && u(e), this.setState({ hover: !1, click: !1 });
@@ -1148,7 +1148,7 @@
                             (this._onMouseDown = (u) => (e) => {
                                 u && u(e),
                                     this.setState({ click: !0 }),
-                                    this.props.soundClick && I(this.props.soundClick);
+                                    this.props.soundClick && P(this.props.soundClick);
                             }),
                             (this._onMouseUp = (u) => (e) => {
                                 u && u(e), this.setState({ click: !1 });
@@ -1482,33 +1482,31 @@
                         Q,
                     ),
                     iu = au[0],
-                    ou = au[1];
-                class lu extends r().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = z.B3.GOLD;
-                        else u = z.B3.INTEGRAL;
-                        const e = z.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                lu.defaultProps = { format: 'integral' };
-                const su = [
-                    'children',
-                    'contentId',
-                    'args',
-                    'onMouseEnter',
-                    'onMouseLeave',
-                    'onMouseDown',
-                    'onClick',
-                    'ignoreShowDelay',
-                    'ignoreMouseClick',
-                    'decoratorId',
-                    'isEnabled',
-                    'targetId',
-                    'onShow',
-                    'onHide',
-                ];
+                    ou = au[1],
+                    lu = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? z.B3.GOLD : z.B3.INTEGRAL;
+                            return void 0 === u ? '' : z.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? r().createElement('span', null, t) : null;
+                    },
+                    su = [
+                        'children',
+                        'contentId',
+                        'args',
+                        'onMouseEnter',
+                        'onMouseLeave',
+                        'onMouseDown',
+                        'onClick',
+                        'ignoreShowDelay',
+                        'ignoreMouseClick',
+                        'decoratorId',
+                        'isEnabled',
+                        'targetId',
+                        'onShow',
+                        'onHide',
+                    ];
                 function cu(u) {
                     return Object.entries(u || {}).map(([u, e]) => {
                         const t = { __Type: 'GFValueProxy', name: u };
@@ -1964,8 +1962,8 @@
                     var t;
                     if (!(e >= u.length)) return Array.isArray(u) ? u[e] : null == (t = u[e]) ? void 0 : t.value;
                 }
-                const Pu = Mu;
-                function Iu(u, e) {
+                const Iu = Mu;
+                function Pu(u, e) {
                     return Array.isArray(u) ? u.map(e) : u.map((u, t, n) => e(null == u ? void 0 : u.value, t, n));
                 }
                 const Ru = 'CompoundPrice_base_96',
@@ -1992,7 +1990,7 @@
                 const Uu = ({ prices: u, tooltipKey: e, size: t, className: n, classNames: a }) => {
                         const i = (function (u, e) {
                             if (Array.isArray(u)) return u.some(e);
-                            for (let t = 0; t < u.length; t++) if (e(Pu(u, t), t, u)) return !0;
+                            for (let t = 0; t < u.length; t++) if (e(Iu(u, t), t, u)) return !0;
                             return !1;
                         })(u, (u) => u.isDiscount);
                         return r().createElement(
@@ -2004,7 +2002,7 @@
                                       { className: Hu },
                                       R.strings.hangar.buyVehicleWindow.freePrice(),
                                   )
-                                : Iu(u, (u, n) =>
+                                : Pu(u, (u, n) =>
                                       r().createElement(
                                           'div',
                                           {
@@ -2115,7 +2113,7 @@
                                     o,
                                 ),
                                 onMouseEnter: function (u) {
-                                    i || (null !== l && I(l), c && c(u));
+                                    i || (null !== l && P(l), c && c(u));
                                 },
                                 onMouseMove: function (u) {
                                     E && E(u);
@@ -2125,7 +2123,7 @@
                                 },
                                 onMouseDown: function (u) {
                                     i ||
-                                        (null !== s && I(s),
+                                        (null !== s && P(s),
                                         _ && _(u),
                                         t && (i || (D.current && (D.current.focus(), C(!0)))),
                                         b(!0));
@@ -2643,7 +2641,7 @@
                             return Te(r, /( )/, e).forEach((u) => (t = t.concat(Te(u, n, be.left)))), t;
                         })(u, e);
                     };
-                let Ne, Me, Pe;
+                let Ne, Me, Ie;
                 !(function (u) {
                     (u[(u.Word = 0)] = 'Word'),
                         (u[(u.LineBreak = 1)] = 'LineBreak'),
@@ -2657,8 +2655,8 @@
                     })(Me || (Me = {})),
                     (function (u) {
                         (u.NBSP = ' '), (u.ZWNBSP = '\ufeff'), (u.NEW_LINE = '\n');
-                    })(Pe || (Pe = {}));
-                const Ie = { [Pe.NBSP]: Ne.NoBreakSymbol, [Pe.ZWNBSP]: Ne.NoBreakSymbol, [Pe.NEW_LINE]: Ne.LineBreak },
+                    })(Ie || (Ie = {}));
+                const Pe = { [Ie.NBSP]: Ne.NoBreakSymbol, [Ie.ZWNBSP]: Ne.NoBreakSymbol, [Ie.NEW_LINE]: Ne.LineBreak },
                     Re = ['zh_cn', 'zh_sg', 'zh_tw', 'ja', 'th'].includes(
                         R.strings.settings.LANGUAGE_CODE().toLowerCase(),
                     ),
@@ -2831,7 +2829,7 @@
                                 },
                                 (u) => {
                                     const t = u[0],
-                                        r = Ie[t.charAt(0)];
+                                        r = Pe[t.charAt(0)];
                                     r === Ne.LineBreak
                                         ? n.push(
                                               ...((u) => {
@@ -3255,7 +3253,7 @@
                         return r().createElement(
                             'div',
                             { className: g()(gt, u) },
-                            Iu(t.options.get(), (u, e) =>
+                            Pu(t.options.get(), (u, e) =>
                                 r().createElement(
                                     Ct,
                                     pt({ key: e }, u, { onClick: () => n.toggleOption(e), className: ht }),
@@ -3313,9 +3311,9 @@
                         ),
                     Nt = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'],
                     Mt = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1e3];
-                const Pt = ['ko', 'no'].includes(R.strings.settings.LANGUAGE_CODE()),
-                    It = (u) =>
-                        Pt
+                const It = ['ko', 'no'].includes(R.strings.settings.LANGUAGE_CODE()),
+                    Pt = (u) =>
+                        It
                             ? `${u}`
                             : (function (u) {
                                   let e = '';
@@ -3370,7 +3368,7 @@
                         return r().createElement(
                             'div',
                             { className: g()(Rt.base, Rt[`base__size${ye(o)}`], Rt[`base__type${ye(l)}`], s) },
-                            r().createElement('div', { className: g()(Rt.level, null == c ? void 0 : c.level) }, It(a)),
+                            r().createElement('div', { className: g()(Rt.level, null == c ? void 0 : c.level) }, Pt(a)),
                             r().createElement('div', {
                                 className: g()(
                                     Rt.type,
@@ -3622,7 +3620,7 @@
                         );
                     });
                 engine.whenReady.then(() => {
-                    P().render(
+                    I().render(
                         r().createElement(xu, null, r().createElement(N, null, r().createElement(Mn, null))),
                         document.getElementById('root'),
                     );

@@ -1,0 +1,54 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.Advantage_base_c4 {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.Advantage_icon_9f {
+    width: 96rem;
+    height: 96rem;
+    background: no-repeat center / 96rem 96rem;
+    position: absolute;
+    top: -30rem;
+    left: -30rem;
+}
+
+.Advantage_content_a3 {
+    padding-left: 60rem;
+}
+
+.Advantage_title_23 {
+    margin-bottom: 8rem;
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 20rem;
+}
+
+.Advantage_description_77 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    line-height: 18rem;
+}
+
+.Content_base_78 {
+    width: 400rem;
+    padding: 30rem 30rem 25rem;
+}
+
+.Content_body_51 {
+    margin-top: 20rem;
+}

@@ -1212,17 +1212,15 @@
                     iu = 'App_content_ab',
                     Eu = 'App_content__generalRank_f1';
                 var Au = t(9916);
-                class Fu extends r().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = Au.B3.GOLD;
-                        else u = Au.B3.INTEGRAL;
-                        const e = Au.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                Fu.defaultProps = { format: 'integral' };
-                const su = 'FormatText_base_d0',
+                const Fu = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? Au.B3.GOLD : Au.B3.INTEGRAL;
+                            return void 0 === u ? '' : Au.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? r().createElement('span', null, t) : null;
+                    },
+                    su = 'FormatText_base_d0',
                     Du = ({ binding: u, text: e = '', classMix: t, alignment: a = _.left, formatWithBrackets: o }) => {
                         if (null === e) return console.error("FormatText was supplied with 'null'"), null;
                         const i = o && u ? g(e, u) : e;

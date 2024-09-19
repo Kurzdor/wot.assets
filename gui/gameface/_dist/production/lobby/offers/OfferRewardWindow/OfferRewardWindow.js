@@ -40,19 +40,19 @@
                         events: () => f,
                         extraSize: () => J,
                         forceTriggerMouseMove: () => K,
-                        freezeTextureBeforeResize: () => q,
+                        freezeTextureBeforeResize: () => H,
                         getBrowserTexturePath: () => x,
                         getDisplayStatus: () => Q,
-                        getScale: () => H,
+                        getScale: () => q,
                         getSize: () => U,
                         getViewGlobalPosition: () => Y,
                         isEventHandled: () => X,
-                        isFocused: () => W,
+                        isFocused: () => z,
                         pxToRem: () => j,
                         remToPx: () => V,
                         resize: () => G,
                         sendEvent: () => k,
-                        setAnimateWindow: () => z,
+                        setAnimateWindow: () => W,
                         setEventHandled: () => $,
                         setInputPaddingsRem: () => N,
                         setSidePaddingsRem: () => L,
@@ -251,10 +251,10 @@
                     const e = viewEnv.getViewGlobalPositionRem();
                     return 'rem' === u ? e : { x: V(e.x), y: V(e.y) };
                 }
-                function q() {
+                function H() {
                     viewEnv.freezeTextureBeforeResize();
                 }
-                function H() {
+                function q() {
                     return viewEnv.getScale();
                 }
                 function j(u) {
@@ -263,10 +263,10 @@
                 function V(u) {
                     return viewEnv.remToPx(u);
                 }
-                function z(u, e) {
+                function W(u, e) {
                     viewEnv.setAnimateWindow(u, e);
                 }
-                function W() {
+                function z() {
                     return viewEnv.isFocused();
                 }
                 function $() {
@@ -1290,8 +1290,8 @@
                     );
                 };
                 Y.defaultProps = { type: U.primary, isFocused: !1, soundHover: 'highlight', soundClick: 'play' };
-                const q = Y,
-                    H = ['children'];
+                const H = Y,
+                    q = ['children'];
                 function j() {
                     return (
                         (j =
@@ -1316,7 +1316,7 @@
                                 r = Object.keys(u);
                             for (n = 0; n < r.length; n++) (t = r[n]), e.indexOf(t) >= 0 || (o[t] = u[t]);
                             return o;
-                        })(u, H);
+                        })(u, q);
                     return o().createElement(
                         b,
                         j(
@@ -1332,9 +1332,9 @@
                         e,
                     );
                 };
-                function z() {
+                function W() {
                     return (
-                        (z =
+                        (W =
                             Object.assign ||
                             function (u) {
                                 for (var e = 1; e < arguments.length; e++) {
@@ -1343,15 +1343,15 @@
                                 }
                                 return u;
                             }),
-                        z.apply(this, arguments)
+                        W.apply(this, arguments)
                     );
                 }
-                const W = ({ children: u, tooltipArgs: e, className: t }) => {
+                const z = ({ children: u, tooltipArgs: e, className: t }) => {
                     if (!e) return u;
                     const n = o().createElement('div', { className: t }, u);
                     if (e.header || e.body) return o().createElement(O, e, n);
                     const r = e.contentId;
-                    return r ? o().createElement(b, z({}, e, { contentId: r }), n) : o().createElement(V, e, n);
+                    return r ? o().createElement(b, W({}, e, { contentId: r }), n) : o().createElement(V, e, n);
                 };
                 let $, X, K, Q, Z, J, uu, eu;
                 !(function (u) {
@@ -1395,12 +1395,17 @@
                         (u.BonusX5 = 'battle_bonus_x5'),
                         (u.CrewBonusX3 = 'crew_bonus_x3'),
                         (u.Vehicles = 'vehicles'),
+                        (u.WtHunterLootbox = 'wt_hunter'),
+                        (u.WtBossLootbox = 'wt_boss'),
+                        (u.WtProgressPoints = 'stamp'),
                         (u.EpicSelectToken = 'epicSelectToken'),
                         (u.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
                         (u.DeluxeGift = 'deluxe_gift'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.OptionalDevice = 'optionalDevice'),
-                        (u.EquipCoin = 'equipCoin');
+                        (u.EquipCoin = 'equipCoin'),
+                        (u.WTCommanderClaimable = 'wtCommanderClaimable'),
+                        (u.WTCommanderClaimed = 'wtCommanderClaimed');
                 })($ || ($ = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1503,17 +1508,15 @@
                     (function (u) {
                         (u[(u.Engraving = 0)] = 'Engraving'), (u[(u.Background = 1)] = 'Background');
                     })(eu || (eu = {}));
-                class tu extends o().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = l.B3.GOLD;
-                        else u = l.B3.INTEGRAL;
-                        const e = l.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                tu.defaultProps = { format: 'integral' };
-                const nu = [
+                const tu = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? l.B3.GOLD : l.B3.INTEGRAL;
+                            return void 0 === u ? '' : l.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? o().createElement('span', null, t) : null;
+                    },
+                    nu = [
                         $.Items,
                         $.Equipment,
                         $.Xp,
@@ -1542,6 +1545,9 @@
                         $.CrewBonusX3,
                         $.NewYearInvoice,
                         $.EpicSelectToken,
+                        $.WtHunterLootbox,
+                        $.WtBossLootbox,
+                        $.WtProgressPoints,
                         $.Comp7TokenWeeklyReward,
                         $.DeluxeGift,
                         $.BattleBoosterGift,
@@ -1657,7 +1663,7 @@
                             'div',
                             { className: S()(su.base, su[`base__${n}`], l), style: E },
                             o().createElement(
-                                W,
+                                z,
                                 { tooltipArgs: A, className: su.tooltipWrapper },
                                 o().createElement(
                                     o().Fragment,
@@ -1703,7 +1709,7 @@
                             ),
                             t &&
                                 o().createElement(
-                                    W,
+                                    z,
                                     { tooltipArgs: c },
                                     o().createElement('div', {
                                         className: S()(su.timer, null == _ ? void 0 : _.periodicIcon),
@@ -1933,7 +1939,7 @@
                                 'div',
                                 { className: bu },
                                 o().createElement(
-                                    q,
+                                    H,
                                     { type: U.primary, size: G.medium, mixClass: fu, onClick: C },
                                     R.strings.offers.rewardWindow.btnLabel(),
                                 ),

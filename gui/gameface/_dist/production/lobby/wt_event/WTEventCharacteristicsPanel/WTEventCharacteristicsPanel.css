@@ -1,0 +1,101 @@
+.Advantage_item_c5 {
+    display: flex;
+    flex-direction: row;
+    height: 40rem;
+    position: relative;
+}
+
+.Advantage_icon_d1 {
+    width: 96rem;
+    height: 96rem;
+    background: no-repeat 50% / 96rem 96rem;
+    position: absolute;
+    top: -27rem;
+    left: -27rem;
+    pointer-events: none;
+}
+
+.Advantage_text_55 {
+    display: flex;
+    align-self: center;
+    margin-left: 48rem;
+    color: #8c8c7e;
+    font-size: 16rem;
+}
+
+.Features_base_fb {
+    margin-left: 6rem;
+    padding-bottom: 14rem;
+    color: #8c8c7e;
+    font-size: 16rem;
+    line-height: 20rem;
+}
+
+.Panel_base_82 {
+    width: 347rem;
+    padding: 10rem 5rem 15rem 76rem;
+    background: url('R.images.gui.maps.icons.wtevent.characteristicPanel.chars_bg') no-repeat 100% 100% / 100% 100%;
+    cursor: default;
+}
+
+.Panel_base__small_d9 {
+    width: 282rem;
+    padding-left: 34rem;
+}
+
+.Panel_title_97 {
+    margin: 10rem 0;
+    color: #e9e2bf;
+    font-size: 24rem;
+    font-weight: 700;
+}
+
+.Panel_base__small_d9 .Panel_title_97 {
+    font-size: 18rem;
+}
+
+.Panel_separator_c9 {
+    align-self: flex-end;
+    width: 243rem;
+    height: 1rem;
+    margin: 10rem 17rem 7rem 0;
+    background: url('R.images.gui.maps.icons.wtevent.characteristicPanel.chars_separator') no-repeat 100% 100% / 100%
+        100%;
+}
+
+.Panel_base__small_d9 .Panel_separator_c9 {
+    width: 222rem;
+    margin-bottom: 0;
+}
+
+.Panel_itemList_da {
+    margin-left: -6rem;
+}
+
+.App_base_eb {
+    display: flex;
+    justify-content: flex-end;
+}
+
+html {
+    height: 100%;
+    position: relative;
+}
+
+/* stylelint-disable */
+
+[lang='ja'],
+[lang='ko'],
+[lang='zh_tw'],
+[lang='zh_sg'],
+[lang='zh_ch'],
+[lang='th'] {
+    overflow-wrap: break-word;
+}
+
+/* stylelint-enable */
+
+body {
+    margin: 0;
+    overflow: hidden;
+}

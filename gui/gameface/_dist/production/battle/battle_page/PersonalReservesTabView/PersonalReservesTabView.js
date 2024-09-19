@@ -209,9 +209,9 @@
                         addPreloadTexture: () => s,
                         children: () => r,
                         displayStatus: () => n.W,
-                        displayStatusIs: () => f,
+                        displayStatusIs: () => w,
                         events: () => a.U,
-                        extraSize: () => w,
+                        extraSize: () => f,
                         forceTriggerMouseMove: () => p,
                         freezeTextureBeforeResize: () => _,
                         getBrowserTexturePath: () => l,
@@ -290,11 +290,11 @@
                 function b() {
                     return viewEnv.getShowingStatus();
                 }
-                const f = Object.keys(n.W).reduce(
+                const w = Object.keys(n.W).reduce(
                         (u, e) => ((u[e] = () => viewEnv.getShowingStatus() === n.W[e]), u),
                         {},
                     ),
-                    w = {
+                    f = {
                         set: (u, e) => {
                             viewEnv.setExtraSizeRem(u, e);
                         },
@@ -967,7 +967,7 @@
                     g = t.n(m),
                     v = t(926),
                     h = t.n(v);
-                let p, b, f;
+                let p, b, w;
                 !(function (u) {
                     (u[(u.ExtraSmall = s.extraSmall.width)] = 'ExtraSmall'),
                         (u[(u.Small = s.small.width)] = 'Small'),
@@ -988,8 +988,8 @@
                             (u[(u.Medium = s.medium.height)] = 'Medium'),
                             (u[(u.Large = s.large.height)] = 'Large'),
                             (u[(u.ExtraLarge = s.extraLarge.height)] = 'ExtraLarge');
-                    })(f || (f = {}));
-                const w = () => {
+                    })(w || (w = {}));
+                const f = () => {
                         const u = (0, r.useContext)(D),
                             e = u.width,
                             t = u.height,
@@ -1028,17 +1028,17 @@
                             i = ((u) => {
                                 switch (!0) {
                                     case u.extraLargeHeight:
-                                        return f.ExtraLarge;
+                                        return w.ExtraLarge;
                                     case u.largeHeight:
-                                        return f.Large;
+                                        return w.Large;
                                     case u.mediumHeight:
-                                        return f.Medium;
+                                        return w.Medium;
                                     case u.smallHeight:
-                                        return f.Small;
+                                        return w.Small;
                                     case u.extraSmallHeight:
-                                        return f.ExtraSmall;
+                                        return w.ExtraSmall;
                                     default:
-                                        return console.error('Unreachable media context resolution'), f.ExtraSmall;
+                                        return console.error('Unreachable media context resolution'), w.ExtraSmall;
                                 }
                             })(u);
                         return { mediaSize: n, mediaWidth: a, mediaHeight: i, remScreenWidth: e, remScreenHeight: t };
@@ -1066,11 +1066,11 @@
                         [b.ExtraLarge]: `${h().SMALL_WIDTH} ${h().MEDIUM_WIDTH} ${h().LARGE_WIDTH} ${h().EXTRA_LARGE_WIDTH}`,
                     },
                     T = {
-                        [f.ExtraSmall]: '',
-                        [f.Small]: h().SMALL_HEIGHT,
-                        [f.Medium]: `${h().SMALL_HEIGHT} ${h().MEDIUM_HEIGHT}`,
-                        [f.Large]: `${h().SMALL_HEIGHT} ${h().MEDIUM_HEIGHT} ${h().LARGE_HEIGHT}`,
-                        [f.ExtraLarge]: `${h().SMALL_HEIGHT} ${h().MEDIUM_HEIGHT} ${h().LARGE_HEIGHT} ${h().EXTRA_LARGE_HEIGHT}`,
+                        [w.ExtraSmall]: '',
+                        [w.Small]: h().SMALL_HEIGHT,
+                        [w.Medium]: `${h().SMALL_HEIGHT} ${h().MEDIUM_HEIGHT}`,
+                        [w.Large]: `${h().SMALL_HEIGHT} ${h().MEDIUM_HEIGHT} ${h().LARGE_HEIGHT}`,
+                        [w.ExtraLarge]: `${h().SMALL_HEIGHT} ${h().MEDIUM_HEIGHT} ${h().LARGE_HEIGHT} ${h().EXTRA_LARGE_HEIGHT}`,
                     },
                     S = {
                         [p.ExtraSmall]: '',
@@ -1091,7 +1091,7 @@
                                 for (r = 0; r < a.length; r++) (t = a[r]), e.indexOf(t) >= 0 || (n[t] = u[t]);
                                 return n;
                             })(u, y);
-                        const a = w(),
+                        const a = f(),
                             i = a.mediaWidth,
                             s = a.mediaHeight,
                             o = a.mediaSize;
@@ -1475,7 +1475,7 @@
                     gu = 'App_notice_background_fd',
                     vu = 'App_groupWrapper_9e',
                     hu = 'App_groupWrapper_clan_51';
-                let pu, bu, fu;
+                let pu, bu, wu;
                 !(function (u) {
                     (u.Personal = 'personal'), (u.Clan = 'clan'), (u.Event = 'event');
                 })(pu || (pu = {})),
@@ -1491,8 +1491,8 @@
                             (u.FL_XP = 'booster_fl_xp'),
                             (u.FreeXPCrewXP = 'booster_free_xp_and_crew_xp'),
                             (u.FreeXPMainXP = 'booster_free_xp_and_crew_xp');
-                    })(fu || (fu = {}));
-                const wu = {
+                    })(wu || (wu = {}));
+                const fu = {
                         [Y.XP]: R.strings.personal_reserves.activation.battleXPTitle(),
                         [Y.Credits]: R.strings.personal_reserves.activation.creditsTitle(),
                         [Y.Combined_XP]: R.strings.personal_reserves.activation.comboXPTitle(),
@@ -1782,65 +1782,63 @@
                         booster_free_xp_and_crew_xp_premium: 200,
                     };
                 pu.Personal, ue.Personal, pu.Event, ue.Event, pu.Clan, ue.Clan;
-                class re extends n().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = Mu.B3.GOLD;
-                        else u = Mu.B3.INTEGRAL;
-                        const e = Mu.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                re.defaultProps = { format: 'integral' };
-                const ne = {
-                    base: 'Currency_base_57',
-                    icon: 'Currency_icon_c5',
-                    base__small: 'Currency_base__small_af',
-                    base__big: 'Currency_base__big_bc',
-                    base__large: 'Currency_base__large_65',
-                    base__extraLarge: 'Currency_base__extraLarge_4d',
-                    'icon__credits-small': 'Currency_icon__credits-small_9b',
-                    'icon__credits-big': 'Currency_icon__credits-big_96',
-                    'icon__credits-large': 'Currency_icon__credits-large_ac',
-                    'icon__credits-extraLarge': 'Currency_icon__credits-extraLarge_16',
-                    'icon__gold-small': 'Currency_icon__gold-small_86',
-                    'icon__gold-big': 'Currency_icon__gold-big_15',
-                    'icon__gold-large': 'Currency_icon__gold-large_36',
-                    'icon__gold-extraLarge': 'Currency_icon__gold-extraLarge_a0',
-                    'icon__crystal-small': 'Currency_icon__crystal-small_27',
-                    'icon__crystal-big': 'Currency_icon__crystal-big_cd',
-                    'icon__crystal-large': 'Currency_icon__crystal-large_d3',
-                    'icon__crystal-extraLarge': 'Currency_icon__crystal-extraLarge_09',
-                    'icon__xp-small': 'Currency_icon__xp-small_a7',
-                    'icon__xp-big': 'Currency_icon__xp-big_97',
-                    'icon__xp-large': 'Currency_icon__xp-large_6b',
-                    'icon__xp-extraLarge': 'Currency_icon__xp-extraLarge_67',
-                    'icon__freeXP-small': 'Currency_icon__freeXP-small_ca',
-                    'icon__freeXP-big': 'Currency_icon__freeXP-big_21',
-                    'icon__freeXP-large': 'Currency_icon__freeXP-large_c8',
-                    'icon__freeXP-extraLarge': 'Currency_icon__freeXP-extraLarge_58',
-                    'icon__eliteXP-small': 'Currency_icon__eliteXP-small_45',
-                    'icon__eliteXP-big': 'Currency_icon__eliteXP-big_c0',
-                    'icon__eliteXP-large': 'Currency_icon__eliteXP-large_1b',
-                    'icon__eliteXP-extraLarge': 'Currency_icon__eliteXP-extraLarge_9b',
-                    'icon__equipCoin-small': 'Currency_icon__equipCoin-small_32',
-                    'icon__equipCoin-big': 'Currency_icon__equipCoin-big_79',
-                    'icon__equipCoin-large': 'Currency_icon__equipCoin-large_2c',
-                    'icon__equipCoin-extraLarge': 'Currency_icon__equipCoin-extraLarge_8a',
-                    value: 'Currency_value_e1',
-                    value__freeXP: 'Currency_value__freeXP_cb',
-                    value__credits: 'Currency_value__credits_76',
-                    value__gold: 'Currency_value__gold_dd',
-                    value__xp: 'Currency_value__xp_b0',
-                    value__crystal: 'Currency_value__crystal_19',
-                    value__equipCoin: 'Currency_value__equipCoin_d0',
-                    value__eliteXP: 'Currency_value__eliteXP_62',
-                    value__notEnough: 'Currency_value__notEnough_56',
-                    stock: 'Currency_stock_87',
-                    stock__indent: 'Currency_stock__indent_a1',
-                    stock__interactive: 'Currency_stock__interactive_93',
-                    stockBackground: 'Currency_stockBackground_82',
-                };
+                const re = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? Mu.B3.GOLD : Mu.B3.INTEGRAL;
+                            return void 0 === u ? '' : Mu.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? n().createElement('span', null, t) : null;
+                    },
+                    ne = {
+                        base: 'Currency_base_57',
+                        icon: 'Currency_icon_c5',
+                        base__small: 'Currency_base__small_af',
+                        base__big: 'Currency_base__big_bc',
+                        base__large: 'Currency_base__large_65',
+                        base__extraLarge: 'Currency_base__extraLarge_4d',
+                        'icon__credits-small': 'Currency_icon__credits-small_9b',
+                        'icon__credits-big': 'Currency_icon__credits-big_96',
+                        'icon__credits-large': 'Currency_icon__credits-large_ac',
+                        'icon__credits-extraLarge': 'Currency_icon__credits-extraLarge_16',
+                        'icon__gold-small': 'Currency_icon__gold-small_86',
+                        'icon__gold-big': 'Currency_icon__gold-big_15',
+                        'icon__gold-large': 'Currency_icon__gold-large_36',
+                        'icon__gold-extraLarge': 'Currency_icon__gold-extraLarge_a0',
+                        'icon__crystal-small': 'Currency_icon__crystal-small_27',
+                        'icon__crystal-big': 'Currency_icon__crystal-big_cd',
+                        'icon__crystal-large': 'Currency_icon__crystal-large_d3',
+                        'icon__crystal-extraLarge': 'Currency_icon__crystal-extraLarge_09',
+                        'icon__xp-small': 'Currency_icon__xp-small_a7',
+                        'icon__xp-big': 'Currency_icon__xp-big_97',
+                        'icon__xp-large': 'Currency_icon__xp-large_6b',
+                        'icon__xp-extraLarge': 'Currency_icon__xp-extraLarge_67',
+                        'icon__freeXP-small': 'Currency_icon__freeXP-small_ca',
+                        'icon__freeXP-big': 'Currency_icon__freeXP-big_21',
+                        'icon__freeXP-large': 'Currency_icon__freeXP-large_c8',
+                        'icon__freeXP-extraLarge': 'Currency_icon__freeXP-extraLarge_58',
+                        'icon__eliteXP-small': 'Currency_icon__eliteXP-small_45',
+                        'icon__eliteXP-big': 'Currency_icon__eliteXP-big_c0',
+                        'icon__eliteXP-large': 'Currency_icon__eliteXP-large_1b',
+                        'icon__eliteXP-extraLarge': 'Currency_icon__eliteXP-extraLarge_9b',
+                        'icon__equipCoin-small': 'Currency_icon__equipCoin-small_32',
+                        'icon__equipCoin-big': 'Currency_icon__equipCoin-big_79',
+                        'icon__equipCoin-large': 'Currency_icon__equipCoin-large_2c',
+                        'icon__equipCoin-extraLarge': 'Currency_icon__equipCoin-extraLarge_8a',
+                        value: 'Currency_value_e1',
+                        value__freeXP: 'Currency_value__freeXP_cb',
+                        value__credits: 'Currency_value__credits_76',
+                        value__gold: 'Currency_value__gold_dd',
+                        value__xp: 'Currency_value__xp_b0',
+                        value__crystal: 'Currency_value__crystal_19',
+                        value__equipCoin: 'Currency_value__equipCoin_d0',
+                        value__eliteXP: 'Currency_value__eliteXP_62',
+                        value__notEnough: 'Currency_value__notEnough_56',
+                        stock: 'Currency_stock_87',
+                        stock__indent: 'Currency_stock__indent_a1',
+                        stock__interactive: 'Currency_stock__interactive_93',
+                        stockBackground: 'Currency_stockBackground_82',
+                    };
                 let ae, ie, se;
                 !(function (u) {
                     (u.small = 'small'), (u.big = 'big'), (u.large = 'large'), (u.extraLarge = 'extraLarge');
@@ -2042,8 +2040,8 @@
                             h = e.minBonus,
                             p = e.maxBonus,
                             b = e.state,
-                            f = e.nextExpirationAmount,
-                            w = e.isNew,
+                            w = e.nextExpirationAmount,
+                            f = e.isNew,
                             y = e.inDepotExpirableAmount,
                             x = e.isExpiringSoon,
                             L = y > 0,
@@ -2169,7 +2167,7 @@
                                                 n().createElement(
                                                     'div',
                                                     { className: de.cardContent_expiringQuantity },
-                                                    f,
+                                                    w,
                                                 ),
                                         ),
                                     n().createElement('div', {
@@ -2202,7 +2200,7 @@
                                 I && !O && n().createElement('div', { className: de.plusIcon }),
                             ),
                             L &&
-                                w &&
+                                f &&
                                 n().createElement(
                                     'div',
                                     { className: de.expiringIndicator },
@@ -2313,7 +2311,7 @@
                                     m && m(),
                                     (h.current.isVisible = !0));
                             }, [t, D, n, p, m]),
-                            f = (0, r.useCallback)(() => {
+                            w = (0, r.useCallback)(() => {
                                 if (h.current.isVisible || h.current.timeoutId) {
                                     const u = h.current.timeoutId;
                                     u > 0 && (clearTimeout(u), (h.current.timeoutId = 0)),
@@ -2322,35 +2320,35 @@
                                         (h.current.isVisible = !1);
                                 }
                             }, [t, D, p, g]),
-                            w = (0, r.useCallback)((u) => {
+                            f = (0, r.useCallback)((u) => {
                                 h.current.isVisible &&
                                     ((h.current.prevTarget = document.elementFromPoint(u.clientX, u.clientY)),
                                     (h.current.hideTimerId = window.setTimeout(() => {
                                         const e = document.elementFromPoint(u.clientX, u.clientY);
-                                        e && !e.isSameNode(h.current.prevTarget) && f();
+                                        e && !e.isSameNode(h.current.prevTarget) && w();
                                     }, 200)));
                             }, []);
                         (0, r.useEffect)(() => {
                             const u = h.current.hideTimerId;
                             return (
-                                document.addEventListener('wheel', w, { capture: !0 }),
+                                document.addEventListener('wheel', f, { capture: !0 }),
                                 () => {
-                                    document.removeEventListener('wheel', w, { capture: !0 }),
+                                    document.removeEventListener('wheel', f, { capture: !0 }),
                                         u && window.clearTimeout(u);
                                 }
                             );
                         }, []),
                             (0, r.useEffect)(() => {
-                                !1 === d && f();
-                            }, [d, f]),
+                                !1 === d && w();
+                            }, [d, w]),
                             (0, r.useEffect)(
                                 () => (
-                                    window.addEventListener('mouseleave', f),
+                                    window.addEventListener('mouseleave', w),
                                     () => {
-                                        window.removeEventListener('mouseleave', f), f();
+                                        window.removeEventListener('mouseleave', w), w();
                                     }
                                 ),
-                                [f],
+                                [w],
                             );
                         return d
                             ? (0, r.cloneElement)(
@@ -2367,13 +2365,13 @@
                                                       y && y(u));
                                               }),
                                           onMouseLeave: ((u) => (e) => {
-                                              f(), null == i || i(e), null == u || u(e);
+                                              w(), null == i || i(e), null == u || u(e);
                                           })(e.props.onMouseLeave),
                                           onClick: ((u) => (e) => {
-                                              !1 === A && f(), null == o || o(e), null == u || u(e);
+                                              !1 === A && w(), null == o || o(e), null == u || u(e);
                                           })(e.props.onClick),
                                           onMouseDown: ((u) => (e) => {
-                                              !1 === A && f(), null == s || s(e), null == u || u(e);
+                                              !1 === A && w(), null == s || s(e), null == u || u(e);
                                           })(e.props.onMouseDown),
                                       },
                                       v,
@@ -2382,10 +2380,10 @@
                             : e;
                         var y;
                     },
-                    fe = ['children', 'body', 'header', 'note', 'alert', 'args'];
-                function we() {
+                    we = ['children', 'body', 'header', 'note', 'alert', 'args'];
+                function fe() {
                     return (
-                        (we =
+                        (fe =
                             Object.assign ||
                             function (u) {
                                 for (var e = 1; e < arguments.length; e++) {
@@ -2394,7 +2392,7 @@
                                 }
                                 return u;
                             }),
-                        we.apply(this, arguments)
+                        fe.apply(this, arguments)
                     );
                 }
                 const ye = R.views.common.tooltip_window.simple_tooltip_content,
@@ -2413,7 +2411,7 @@
                                     a = Object.keys(u);
                                 for (r = 0; r < a.length; r++) (t = a[r]), e.indexOf(t) >= 0 || (n[t] = u[t]);
                                 return n;
-                            })(u, fe);
+                            })(u, we);
                         const E = (0, r.useMemo)(() => {
                             const u = Object.assign({}, o, { body: t, header: a, note: i, alert: s });
                             for (const e in u) void 0 === u[e] && delete u[e];
@@ -2421,7 +2419,7 @@
                         }, [s, t, a, i, o]);
                         return n().createElement(
                             be,
-                            we(
+                            fe(
                                 {
                                     contentId:
                                         ((c = null == o ? void 0 : o.hasHtmlContent),
@@ -2524,7 +2522,7 @@
                             E = i.some((u) => (null == u ? void 0 : u.inactivationTime) > 0),
                             c = 1 === i.length,
                             A = e === Y.Clan,
-                            F = wu[e],
+                            F = fu[e],
                             D = Math.ceil(i.length / 2);
                         return n().createElement(
                             n().Fragment,

@@ -17,8 +17,8 @@
                         type: r,
                         value: a,
                         discountValue: l,
-                        showPlus: d,
-                        isEnough: u = !0,
+                        showPlus: u,
+                        isEnough: d = !0,
                         stockBackgroundName: v = c.we.Red,
                         className: g,
                         classNames: E,
@@ -32,11 +32,11 @@
                                     className: i()(
                                         s.Z.value,
                                         s.Z[`value__${r}`],
-                                        !u && s.Z.value__notEnough,
+                                        !d && s.Z.value__notEnough,
                                         null == E ? void 0 : E.value,
                                     ),
                                 },
-                                d && a > 0 && '+',
+                                u && a > 0 && '+',
                                 _().createElement(o.A, { value: a, format: r === c.V2.gold ? 'gold' : 'integral' }),
                             ),
                             _().createElement('span', {
@@ -86,16 +86,14 @@
                 var r = t(6179),
                     i = t.n(r),
                     o = t(9916);
-                class a extends i().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = o.B3.GOLD;
-                        else e = o.B3.INTEGRAL;
-                        const n = o.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== n ? n : null;
-                    }
-                }
-                a.defaultProps = { format: 'integral' };
+                const a = ({ format: e, value: n }) => {
+                    const t = ((e, n = 'integral') => {
+                        let t;
+                        t = 'gold' === n ? o.B3.GOLD : o.B3.INTEGRAL;
+                        return void 0 === e ? '' : o.Z5.getNumberFormat(e, t);
+                    })(n, e);
+                    return t ? i().createElement('span', null, t) : null;
+                };
             },
             527: (e, n, t) => {
                 t.r(n),
@@ -282,23 +280,23 @@
                         displayStatusIs: () => P,
                         events: () => o.U,
                         extraSize: () => k,
-                        forceTriggerMouseMove: () => C,
+                        forceTriggerMouseMove: () => O,
                         freezeTextureBeforeResize: () => E,
                         getBrowserTexturePath: () => c,
-                        getDisplayStatus: () => O,
+                        getDisplayStatus: () => C,
                         getScale: () => w,
-                        getSize: () => u,
+                        getSize: () => d,
                         getViewGlobalPosition: () => g,
                         isEventHandled: () => f,
                         isFocused: () => m,
-                        pxToRem: () => h,
-                        remToPx: () => p,
+                        pxToRem: () => b,
+                        remToPx: () => h,
                         resize: () => v,
                         sendEvent: () => a.qP,
-                        setAnimateWindow: () => b,
+                        setAnimateWindow: () => p,
                         setEventHandled: () => y,
                         setInputPaddingsRem: () => s,
-                        setSidePaddingsRem: () => d,
+                        setSidePaddingsRem: () => u,
                         whenTutorialReady: () => T,
                     });
                 var r = t(3722),
@@ -317,10 +315,10 @@
                 function l(e, n, t) {
                     return viewEnv.addDataChangedCallback(e, n, t);
                 }
-                function d(e) {
+                function u(e) {
                     viewEnv.setHitAreaPaddingsRem(e.top, e.right, e.bottom, e.left, 15);
                 }
-                function u(e = 'px') {
+                function d(e = 'px') {
                     return 'rem' === e ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
                 }
                 function v(e, n, t = 'px') {
@@ -328,7 +326,7 @@
                 }
                 function g(e = 'rem') {
                     const n = viewEnv.getViewGlobalPositionRem();
-                    return 'rem' === e ? n : { x: p(n.x), y: p(n.y) };
+                    return 'rem' === e ? n : { x: h(n.x), y: h(n.y) };
                 }
                 function E() {
                     viewEnv.freezeTextureBeforeResize();
@@ -336,13 +334,13 @@
                 function w() {
                     return viewEnv.getScale();
                 }
-                function h(e) {
+                function b(e) {
                     return viewEnv.pxToRem(e);
                 }
-                function p(e) {
+                function h(e) {
                     return viewEnv.remToPx(e);
                 }
-                function b(e, n) {
+                function p(e, n) {
                     viewEnv.setAnimateWindow(e, n);
                 }
                 function m() {
@@ -354,10 +352,10 @@
                 function f() {
                     return viewEnv.isEventHandled();
                 }
-                function C() {
+                function O() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function O() {
+                function C() {
                     return viewEnv.getShowingStatus();
                 }
                 const P = Object.keys(i.W).reduce(
@@ -585,7 +583,7 @@
                 const __WEBPACK_DEFAULT_EXPORT__ = ViewModel;
             },
             9916: (e, n, t) => {
-                t.d(n, { B3: () => s, Z5: () => a.Z5, ry: () => h });
+                t.d(n, { B3: () => s, Z5: () => a.Z5, ry: () => b });
                 class r {
                     constructor() {
                         (this.entries = []),
@@ -641,8 +639,8 @@
                 const s = Object.freeze({ INTEGRAL: 0, GOLD: 1 }),
                     c = Object.freeze({ FRACTIONAL: 0, WO_ZERO_DIGITS: 1 }),
                     l = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1 }),
-                    d = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1, YEAR_MONTH: 2 });
-                var u = t(5521),
+                    u = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1, YEAR_MONTH: 2 });
+                var d = t(5521),
                     v = t(3138);
                 const g = ['args'];
                 function E(e, n, t, r, i, o, a) {
@@ -655,7 +653,7 @@
                     _.done ? n(s) : Promise.resolve(s).then(r, i);
                 }
                 const w = (e) => ({ __Type: 'GFBoundingBox', x: e.x, y: e.y, width: e.width, height: e.height }),
-                    h = (function () {
+                    b = (function () {
                         var e,
                             n =
                                 ((e = function* () {
@@ -684,7 +682,7 @@
                             return n.apply(this, arguments);
                         };
                     })(),
-                    p = (e, n) => {
+                    h = (e, n) => {
                         const t = 'GFViewEventProxy';
                         if (void 0 !== n) {
                             const i = n.args,
@@ -722,41 +720,41 @@
                         } else viewEnv.handleViewEvent({ __Type: t, type: e });
                         var r;
                     },
-                    b = () => p(_.CLOSE),
+                    p = () => h(_.CLOSE),
                     m = (e, n) => {
-                        e.keyCode === u.n.ESCAPE && n();
+                        e.keyCode === d.n.ESCAPE && n();
                     };
                 var y = t(7572);
                 const f = i.instance,
-                    C = {
+                    O = {
                         DataTracker: o.Z,
                         ViewModel: y.Z,
                         ViewEventType: _,
                         NumberFormatType: s,
                         RealFormatType: c,
                         TimeFormatType: l,
-                        DateFormatType: d,
+                        DateFormatType: u,
                         makeGlobalBoundingBox: w,
-                        sendMoveEvent: (e) => p(_.MOVE, { isMouseEvent: !0, on: e }),
-                        sendCloseEvent: b,
-                        sendClosePopOverEvent: () => p(_.POP_OVER, { on: !1 }),
+                        sendMoveEvent: (e) => h(_.MOVE, { isMouseEvent: !0, on: e }),
+                        sendCloseEvent: p,
+                        sendClosePopOverEvent: () => h(_.POP_OVER, { on: !1 }),
                         sendShowContextMenuEvent: (e, n, t = 0) => {
-                            p(_.CONTEXT_MENU, { isMouseEvent: !0, contentID: e, on: !0, decoratorID: t, args: n });
+                            h(_.CONTEXT_MENU, { isMouseEvent: !0, contentID: e, on: !0, decoratorID: t, args: n });
                         },
                         sendShowPopOverEvent: (e, n, t, r, i = R.invalid('resId'), o) => {
                             const a = v.O.view.getViewGlobalPosition(),
                                 s = t.getBoundingClientRect(),
                                 c = s.x,
                                 l = s.y,
-                                d = s.width,
-                                u = s.height,
+                                u = s.width,
+                                d = s.height,
                                 g = {
                                     x: v.O.view.pxToRem(c) + a.x,
                                     y: v.O.view.pxToRem(l) + a.y,
-                                    width: v.O.view.pxToRem(d),
-                                    height: v.O.view.pxToRem(u),
+                                    width: v.O.view.pxToRem(u),
+                                    height: v.O.view.pxToRem(d),
                                 };
-                            p(_.POP_OVER, {
+                            h(_.POP_OVER, {
                                 isMouseEvent: !0,
                                 contentID: e,
                                 decoratorID: r || R.invalid('resId'),
@@ -774,10 +772,10 @@
                             );
                         },
                         closeOnEsc: (e) => {
-                            m(e, b);
+                            m(e, p);
                         },
-                        handleViewEvent: p,
-                        onBindingsReady: h,
+                        handleViewEvent: h,
+                        onBindingsReady: b,
                         onLayoutReady: () =>
                             new Promise((e) => {
                                 requestAnimationFrame(() => {
@@ -810,7 +808,7 @@
                         SystemLocale: a.Z5,
                         UserLocale: a.cy,
                     };
-                window.ViewEnvHelper = C;
+                window.ViewEnvHelper = O;
             },
             8613: (e, n, t) => {
                 t.d(n, { Z5: () => r, cy: () => i });

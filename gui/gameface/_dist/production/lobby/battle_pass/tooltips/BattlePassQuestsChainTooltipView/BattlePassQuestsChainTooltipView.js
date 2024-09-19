@@ -183,13 +183,13 @@
                         addPreloadTexture: () => s,
                         children: () => r,
                         displayStatus: () => o.W,
-                        displayStatusIs: () => T,
+                        displayStatusIs: () => P,
                         events: () => a.U,
                         extraSize: () => R,
                         forceTriggerMouseMove: () => O,
                         freezeTextureBeforeResize: () => m,
                         getBrowserTexturePath: () => l,
-                        getDisplayStatus: () => P,
+                        getDisplayStatus: () => T,
                         getScale: () => E,
                         getSize: () => u,
                         getViewGlobalPosition: () => w,
@@ -261,10 +261,10 @@
                 function O() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function P() {
+                function T() {
                     return viewEnv.getShowingStatus();
                 }
-                const T = Object.keys(o.W).reduce(
+                const P = Object.keys(o.W).reduce(
                         (e, t) => ((e[t] = () => viewEnv.getShowingStatus() === o.W[t]), e),
                         {},
                     ),
@@ -755,17 +755,15 @@
                         (e.Red = 'RedActionBG'), (e.Blue = 'BlueActionBG');
                     })(l || (l = {}));
                 var d = n(9916);
-                class _ extends o().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = d.B3.GOLD;
-                        else e = d.B3.INTEGRAL;
-                        const t = d.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== t ? t : null;
-                    }
-                }
-                _.defaultProps = { format: 'integral' };
-                const u = {
+                const _ = ({ format: e, value: t }) => {
+                        const n = ((e, t = 'integral') => {
+                            let n;
+                            n = 'gold' === t ? d.B3.GOLD : d.B3.INTEGRAL;
+                            return void 0 === e ? '' : d.Z5.getNumberFormat(e, n);
+                        })(t, e);
+                        return n ? o().createElement('span', null, n) : null;
+                    },
+                    u = {
                         base: 'CurrencyReward_base_48',
                         icon: 'CurrencyReward_icon_9e',
                         icon__credits: 'CurrencyReward_icon__credits_f6',
@@ -1122,8 +1120,8 @@
                         const t = { rewards: e.array('rewards') };
                         return Object.assign({}, t);
                     }, h),
-                    P = O[0],
-                    T = O[1],
+                    T = O[0],
+                    P = O[1],
                     k = 'Content_base_fc',
                     C = 'Content_separator_c0',
                     x = 'Content_image_f0',
@@ -1137,7 +1135,7 @@
                     I = D.text(),
                     B = D.secondaryText(),
                     U = (0, m.Pi)(() => {
-                        const e = T().model.rewards.get().items;
+                        const e = P().model.rewards.get().items;
                         return o().createElement(
                             'div',
                             { className: k },
@@ -1165,7 +1163,7 @@
                     }),
                     V = () => o().createElement(w, null, o().createElement(U, null));
                 engine.whenReady.then(() => {
-                    i().render(o().createElement(P, null, o().createElement(V, null)), document.getElementById('root'));
+                    i().render(o().createElement(T, null, o().createElement(V, null)), document.getElementById('root'));
                 });
             },
         },

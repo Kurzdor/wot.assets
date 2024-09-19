@@ -177,9 +177,9 @@
                     T = ['args'];
                 const R = 2,
                     P = 16,
-                    O = 32,
-                    S = 64,
-                    x = (u, e) => {
+                    x = 32,
+                    O = 64,
+                    S = (u, e) => {
                         const t = 'GFViewEventProxy';
                         if (void 0 !== e) {
                             const n = e.args,
@@ -217,13 +217,13 @@
                     },
                     y = {
                         close(u) {
-                            x('popover' === u ? R : O);
+                            S('popover' === u ? R : x);
                         },
                         minimize() {
-                            x(S);
+                            S(O);
                         },
                         move(u) {
-                            x(P, { isMouseEvent: !0, on: u });
+                            S(P, { isMouseEvent: !0, on: u });
                         },
                     };
                 function k(u) {
@@ -907,9 +907,9 @@
                         parNoWidth: 'FormatTextWithColorTags_parNoWidth_5a',
                     },
                     P = /(?:%\(|{)\w*(?:_[Oo]pen|Start)(?:\)s|})?(.*?)(?:%\(|{)\w*(?:_[Cc]lose|End)(?:\)s|})?/g,
-                    O = /(?<=(?:%\(|{))(.*?)(?=(?:_[Oo]pen|Start))/,
-                    S = /(?<=(?:_[Oo]pen|Start)(?:\)s?|}))(.*?)(?=(?:%\(|{))/,
-                    x = (0, i.memo)(({ text: u, binding: e, classMix: t }) => {
+                    x = /(?<=(?:%\(|{))(.*?)(?=(?:_[Oo]pen|Start))/,
+                    O = /(?<=(?:_[Oo]pen|Start)(?:\)s?|}))(.*?)(?=(?:%\(|{))/,
+                    S = (0, i.memo)(({ text: u, binding: e, classMix: t }) => {
                         const r = (0, i.useCallback)((u) => ({ color: `#${u}` }), []),
                             n = (0, i.useMemo)(() => e || {}, [e]);
                         let a = P.exec(u),
@@ -917,8 +917,8 @@
                             s = 0;
                         for (; a; ) {
                             const t = a[0],
-                                i = O.exec(t),
-                                A = S.exec(t),
+                                i = x.exec(t),
+                                A = O.exec(t),
                                 F = a[1];
                             if (i && A) {
                                 const u = i[0],
@@ -982,12 +982,17 @@
                         (u.BonusX5 = 'battle_bonus_x5'),
                         (u.CrewBonusX3 = 'crew_bonus_x3'),
                         (u.Vehicles = 'vehicles'),
+                        (u.WtHunterLootbox = 'wt_hunter'),
+                        (u.WtBossLootbox = 'wt_boss'),
+                        (u.WtProgressPoints = 'stamp'),
                         (u.EpicSelectToken = 'epicSelectToken'),
                         (u.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
                         (u.DeluxeGift = 'deluxe_gift'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.OptionalDevice = 'optionalDevice'),
-                        (u.EquipCoin = 'equipCoin');
+                        (u.EquipCoin = 'equipCoin'),
+                        (u.WTCommanderClaimable = 'wtCommanderClaimable'),
+                        (u.WTCommanderClaimed = 'wtCommanderClaimed');
                 })(y || (y = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1091,17 +1096,15 @@
                         (u[(u.Engraving = 0)] = 'Engraving'), (u[(u.Background = 1)] = 'Background');
                     })(G || (G = {}));
                 var W = t(916);
-                class H extends o().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = W.B3.GOLD;
-                        else u = W.B3.INTEGRAL;
-                        const e = W.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                H.defaultProps = { format: 'integral' };
-                const q = [
+                const H = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? W.B3.GOLD : W.B3.INTEGRAL;
+                            return void 0 === u ? '' : W.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? o().createElement('span', null, t) : null;
+                    },
+                    q = [
                         y.Items,
                         y.Equipment,
                         y.Xp,
@@ -1130,6 +1133,9 @@
                         y.CrewBonusX3,
                         y.NewYearInvoice,
                         y.EpicSelectToken,
+                        y.WtHunterLootbox,
+                        y.WtBossLootbox,
+                        y.WtProgressPoints,
                         y.Comp7TokenWeeklyReward,
                         y.DeluxeGift,
                         y.BattleBoosterGift,
@@ -1991,7 +1997,7 @@
                     return r;
                 }
                 const Pu = (u) => (0 === u ? window : window.subViews.get(u));
-                const Ou = ((u, e) => {
+                const xu = ((u, e) => {
                         const t = (0, i.createContext)({});
                         return [
                             function ({ mode: r = 'real', options: n, children: E, mocks: s }) {
@@ -2172,8 +2178,8 @@
                             () => (0, i.useContext)(t),
                         ];
                     })(({ observableModel: u }) => ({ root: u.object(), rewards: u.array('bonuses') }), vu),
-                    Su = Ou[0],
-                    xu = Ou[1],
+                    Ou = xu[0],
+                    Su = xu[1],
                     yu = 'App_base_0c',
                     ku = 'App_header_aa',
                     Lu = 'App_title_46',
@@ -2184,7 +2190,7 @@
                     Gu = 'App_reward_9c',
                     Wu = R.strings.tooltips.confirmEmailTooltip,
                     Hu = () => {
-                        const u = xu().model,
+                        const u = Su().model,
                             e = u.root.get().email,
                             t = u.rewards.get(),
                             r = e ? 'confirmed' : 'notConfirmed';
@@ -2196,7 +2202,7 @@
                                 { className: ku },
                                 o().createElement('div', { className: Lu }, Wu.title.$dyn(r)),
                                 'confirmed' === r
-                                    ? o().createElement(x, {
+                                    ? o().createElement(S, {
                                           text: Wu.subtitle.confirmed(),
                                           binding: { email: e },
                                           classMix: Nu,
@@ -2213,7 +2219,7 @@
                     };
                 engine.whenReady.then(() => {
                     c().render(
-                        o().createElement(Su, null, o().createElement(l, null, o().createElement(Hu, null))),
+                        o().createElement(Ou, null, o().createElement(l, null, o().createElement(Hu, null))),
                         document.getElementById('root'),
                     );
                 });

@@ -164,9 +164,9 @@
                         isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                         get: () => viewEnv.getGraphicsQuality(),
                     },
-                    p = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
-                    b = Object.keys(p).reduce((e, t) => ((e[t] = () => h(p[t])), e), {}),
-                    x = { play: Object.assign({}, b, { sound: h }), setRTPC: v };
+                    b = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    p = Object.keys(b).reduce((e, t) => ((e[t] = () => h(b[t])), e), {}),
+                    x = { play: Object.assign({}, p, { sound: h }), setRTPC: v };
                 function y(e, t, r = 1) {
                     return viewEnv.getChildTexturePath(e, t.width, t.height, r);
                 }
@@ -607,14 +607,14 @@
                         var a;
                     },
                     f = () => w(l.CLOSE),
-                    p = (e, t) => {
+                    b = (e, t) => {
                         e.keyCode === d.n.ESCAPE && t();
                     };
-                var b = r(572);
+                var p = r(572);
                 const x = n.instance,
                     y = {
                         DataTracker: i.Z,
-                        ViewModel: b.Z,
+                        ViewModel: p.Z,
                         ViewEventType: l,
                         NumberFormatType: s,
                         RealFormatType: c,
@@ -652,13 +652,13 @@
                             });
                         },
                         addEscapeListener: (e) => {
-                            const t = (t) => p(t, e);
+                            const t = (t) => b(t, e);
                             return (
                                 window.addEventListener('keydown', t), () => window.removeEventListener('keydown', t)
                             );
                         },
                         closeOnEsc: (e) => {
-                            p(e, f);
+                            b(e, f);
                         },
                         handleViewEvent: w,
                         onBindingsReady: E,
@@ -831,10 +831,10 @@
                         E = n.extraSmallWidth,
                         w = n.extraLargeHeight,
                         f = n.largeHeight,
-                        p = n.mediumHeight,
-                        b = n.smallHeight,
+                        b = n.mediumHeight,
+                        p = n.smallHeight,
                         x = n.extraSmallHeight,
-                        y = { extraLarge: w, large: f, medium: p, small: b, extraSmall: x };
+                        y = { extraLarge: w, large: f, medium: b, small: p, extraSmall: x };
                     if (r.extraLarge || r.large || r.medium || r.small || r.extraSmall) {
                         if (r.extraLarge && o) return t;
                         if (r.large && l) return t;
@@ -852,8 +852,8 @@
                         ) {
                             if (r.extraLargeHeight && w) return t;
                             if (r.largeHeight && f) return t;
-                            if (r.mediumHeight && p) return t;
-                            if (r.smallHeight && b) return t;
+                            if (r.mediumHeight && b) return t;
+                            if (r.smallHeight && p) return t;
                             if (r.extraSmallHeight && x) return t;
                         }
                     }
@@ -909,9 +909,9 @@
                         return n().createElement(g.Provider, { value: d }, e);
                     };
                 var f = r(483),
-                    p = r.n(f),
-                    b = r(926),
-                    x = r.n(b);
+                    b = r.n(f),
+                    p = r(926),
+                    x = r.n(p);
                 let y, L, S;
                 !(function (e) {
                     (e[(e.ExtraSmall = l.extraSmall.width)] = 'ExtraSmall'),
@@ -1040,7 +1040,7 @@
                             o = i.mediaWidth,
                             l = i.mediaHeight,
                             s = i.mediaSize;
-                        return n().createElement('div', C({ className: p()(r, M[o], P[l], k[s]) }, a), t);
+                        return n().createElement('div', C({ className: b()(r, M[o], P[l], k[s]) }, a), t);
                     },
                     A = ['children'];
                 const W = (e) => {
@@ -1145,7 +1145,7 @@
                         n().createElement(
                             'div',
                             F({}, c, {
-                                className: p()(G.base, G[`base__theme-${s}`], i),
+                                className: b()(G.base, G[`base__theme-${s}`], i),
                                 ref: function (e) {
                                     (u.current = e), 'function' == typeof t ? t(e) : t && (t.current = e);
                                 },
@@ -1156,65 +1156,63 @@
                 });
                 var V = r(515),
                     q = r(916);
-                class B extends n().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = q.B3.GOLD;
-                        else e = q.B3.INTEGRAL;
-                        const t = q.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== t ? t : null;
-                    }
-                }
-                B.defaultProps = { format: 'integral' };
-                const $ = {
-                    base: 'Currency_base_57',
-                    icon: 'Currency_icon_c5',
-                    base__small: 'Currency_base__small_af',
-                    base__big: 'Currency_base__big_bc',
-                    base__large: 'Currency_base__large_65',
-                    base__extraLarge: 'Currency_base__extraLarge_4d',
-                    'icon__credits-small': 'Currency_icon__credits-small_9b',
-                    'icon__credits-big': 'Currency_icon__credits-big_96',
-                    'icon__credits-large': 'Currency_icon__credits-large_ac',
-                    'icon__credits-extraLarge': 'Currency_icon__credits-extraLarge_16',
-                    'icon__gold-small': 'Currency_icon__gold-small_86',
-                    'icon__gold-big': 'Currency_icon__gold-big_15',
-                    'icon__gold-large': 'Currency_icon__gold-large_36',
-                    'icon__gold-extraLarge': 'Currency_icon__gold-extraLarge_a0',
-                    'icon__crystal-small': 'Currency_icon__crystal-small_27',
-                    'icon__crystal-big': 'Currency_icon__crystal-big_cd',
-                    'icon__crystal-large': 'Currency_icon__crystal-large_d3',
-                    'icon__crystal-extraLarge': 'Currency_icon__crystal-extraLarge_09',
-                    'icon__xp-small': 'Currency_icon__xp-small_a7',
-                    'icon__xp-big': 'Currency_icon__xp-big_97',
-                    'icon__xp-large': 'Currency_icon__xp-large_6b',
-                    'icon__xp-extraLarge': 'Currency_icon__xp-extraLarge_67',
-                    'icon__freeXP-small': 'Currency_icon__freeXP-small_ca',
-                    'icon__freeXP-big': 'Currency_icon__freeXP-big_21',
-                    'icon__freeXP-large': 'Currency_icon__freeXP-large_c8',
-                    'icon__freeXP-extraLarge': 'Currency_icon__freeXP-extraLarge_58',
-                    'icon__eliteXP-small': 'Currency_icon__eliteXP-small_45',
-                    'icon__eliteXP-big': 'Currency_icon__eliteXP-big_c0',
-                    'icon__eliteXP-large': 'Currency_icon__eliteXP-large_1b',
-                    'icon__eliteXP-extraLarge': 'Currency_icon__eliteXP-extraLarge_9b',
-                    'icon__equipCoin-small': 'Currency_icon__equipCoin-small_32',
-                    'icon__equipCoin-big': 'Currency_icon__equipCoin-big_79',
-                    'icon__equipCoin-large': 'Currency_icon__equipCoin-large_2c',
-                    'icon__equipCoin-extraLarge': 'Currency_icon__equipCoin-extraLarge_8a',
-                    value: 'Currency_value_e1',
-                    value__freeXP: 'Currency_value__freeXP_cb',
-                    value__credits: 'Currency_value__credits_76',
-                    value__gold: 'Currency_value__gold_dd',
-                    value__xp: 'Currency_value__xp_b0',
-                    value__crystal: 'Currency_value__crystal_19',
-                    value__equipCoin: 'Currency_value__equipCoin_d0',
-                    value__eliteXP: 'Currency_value__eliteXP_62',
-                    value__notEnough: 'Currency_value__notEnough_56',
-                    stock: 'Currency_stock_87',
-                    stock__indent: 'Currency_stock__indent_a1',
-                    stock__interactive: 'Currency_stock__interactive_93',
-                    stockBackground: 'Currency_stockBackground_82',
-                };
+                const B = ({ format: e, value: t }) => {
+                        const r = ((e, t = 'integral') => {
+                            let r;
+                            r = 'gold' === t ? q.B3.GOLD : q.B3.INTEGRAL;
+                            return void 0 === e ? '' : q.Z5.getNumberFormat(e, r);
+                        })(t, e);
+                        return r ? n().createElement('span', null, r) : null;
+                    },
+                    $ = {
+                        base: 'Currency_base_57',
+                        icon: 'Currency_icon_c5',
+                        base__small: 'Currency_base__small_af',
+                        base__big: 'Currency_base__big_bc',
+                        base__large: 'Currency_base__large_65',
+                        base__extraLarge: 'Currency_base__extraLarge_4d',
+                        'icon__credits-small': 'Currency_icon__credits-small_9b',
+                        'icon__credits-big': 'Currency_icon__credits-big_96',
+                        'icon__credits-large': 'Currency_icon__credits-large_ac',
+                        'icon__credits-extraLarge': 'Currency_icon__credits-extraLarge_16',
+                        'icon__gold-small': 'Currency_icon__gold-small_86',
+                        'icon__gold-big': 'Currency_icon__gold-big_15',
+                        'icon__gold-large': 'Currency_icon__gold-large_36',
+                        'icon__gold-extraLarge': 'Currency_icon__gold-extraLarge_a0',
+                        'icon__crystal-small': 'Currency_icon__crystal-small_27',
+                        'icon__crystal-big': 'Currency_icon__crystal-big_cd',
+                        'icon__crystal-large': 'Currency_icon__crystal-large_d3',
+                        'icon__crystal-extraLarge': 'Currency_icon__crystal-extraLarge_09',
+                        'icon__xp-small': 'Currency_icon__xp-small_a7',
+                        'icon__xp-big': 'Currency_icon__xp-big_97',
+                        'icon__xp-large': 'Currency_icon__xp-large_6b',
+                        'icon__xp-extraLarge': 'Currency_icon__xp-extraLarge_67',
+                        'icon__freeXP-small': 'Currency_icon__freeXP-small_ca',
+                        'icon__freeXP-big': 'Currency_icon__freeXP-big_21',
+                        'icon__freeXP-large': 'Currency_icon__freeXP-large_c8',
+                        'icon__freeXP-extraLarge': 'Currency_icon__freeXP-extraLarge_58',
+                        'icon__eliteXP-small': 'Currency_icon__eliteXP-small_45',
+                        'icon__eliteXP-big': 'Currency_icon__eliteXP-big_c0',
+                        'icon__eliteXP-large': 'Currency_icon__eliteXP-large_1b',
+                        'icon__eliteXP-extraLarge': 'Currency_icon__eliteXP-extraLarge_9b',
+                        'icon__equipCoin-small': 'Currency_icon__equipCoin-small_32',
+                        'icon__equipCoin-big': 'Currency_icon__equipCoin-big_79',
+                        'icon__equipCoin-large': 'Currency_icon__equipCoin-large_2c',
+                        'icon__equipCoin-extraLarge': 'Currency_icon__equipCoin-extraLarge_8a',
+                        value: 'Currency_value_e1',
+                        value__freeXP: 'Currency_value__freeXP_cb',
+                        value__credits: 'Currency_value__credits_76',
+                        value__gold: 'Currency_value__gold_dd',
+                        value__xp: 'Currency_value__xp_b0',
+                        value__crystal: 'Currency_value__crystal_19',
+                        value__equipCoin: 'Currency_value__equipCoin_d0',
+                        value__eliteXP: 'Currency_value__eliteXP_62',
+                        value__notEnough: 'Currency_value__notEnough_56',
+                        stock: 'Currency_stock_87',
+                        stock__indent: 'Currency_stock__indent_a1',
+                        stock__interactive: 'Currency_stock__interactive_93',
+                        stockBackground: 'Currency_stockBackground_82',
+                    };
                 let z, X, K;
                 !(function (e) {
                     (e.small = 'small'), (e.big = 'big'), (e.large = 'large'), (e.extraLarge = 'extraLarge');
@@ -1247,11 +1245,11 @@
                         }) =>
                             n().createElement(
                                 'span',
-                                { className: p()($.base, $[`base__${r}`], _) },
+                                { className: b()($.base, $[`base__${r}`], _) },
                                 n().createElement(
                                     'span',
                                     {
-                                        className: p()(
+                                        className: b()(
                                             $.value,
                                             $[`value__${a}`],
                                             !s && $.value__notEnough,
@@ -1262,13 +1260,13 @@
                                     n().createElement(B, { value: i, format: a === X.gold ? 'gold' : 'integral' }),
                                 ),
                                 n().createElement('span', {
-                                    className: p()($.icon, $[`icon__${a}-${r}`], null == u ? void 0 : u.icon),
+                                    className: b()($.icon, $[`icon__${a}-${r}`], null == u ? void 0 : u.icon),
                                 }),
                                 e &&
                                     n().createElement(
                                         'span',
                                         {
-                                            className: p()(
+                                            className: b()(
                                                 $.stock,
                                                 o && $.stock__indent,
                                                 t && $.stock__interactive,
@@ -1315,7 +1313,7 @@
                                     ]),
                             n().createElement(
                                 'div',
-                                { className: p()(Z, e) },
+                                { className: b()(Z, e) },
                                 o.map((e, t) => {
                                     const r =
                                             i.from === X.gold

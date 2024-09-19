@@ -1086,12 +1086,12 @@
                         }
                         return '';
                     },
-                    P = v.Sw.instance;
-                let O;
+                    O = v.Sw.instance;
+                let P;
                 !(function (e) {
                     (e.None = 'None'), (e.Shallow = 'Shallow'), (e.Deep = 'Deep');
-                })(O || (O = {}));
-                const L = (e = 'model', u = O.Deep) => {
+                })(P || (P = {}));
+                const L = (e = 'model', u = P.Deep) => {
                     const t = (0, n.useState)(0),
                         r = (t[0], t[1]),
                         i = (0, n.useMemo)(() => y(), []),
@@ -1115,26 +1115,26 @@
                         C(() => {
                             if (
                                 ('boolean' == typeof u &&
-                                    ((u = u ? O.Deep : O.None),
+                                    ((u = u ? P.Deep : P.None),
                                     console.warn(
                                         'Boolean key for useModel "tracking" param is deprecated. Use ModelTracking enum values instead!',
                                     )),
-                                u !== O.None)
+                                u !== P.None)
                             ) {
                                 const t = (e) => {
                                         ((e) => e && 'CoherentArrayProxy' === e.__proto__.constructor.name)(e) &&
-                                        u === O.Deep
+                                        u === P.Deep
                                             ? (e === l && r((e) => e + 1), _(e))
                                             : _(Object.assign([], e));
                                     },
                                     n = T(e);
-                                d.current = P.addCallback(n, t, o, u === O.Deep);
+                                d.current = O.addCallback(n, t, o, u === P.Deep);
                             }
                         }),
                         (0, n.useEffect)(() => {
-                            if (u !== O.None)
+                            if (u !== P.None)
                                 return () => {
-                                    P.removeCallback(d.current, o);
+                                    O.removeCallback(d.current, o);
                                 };
                         }, [o, u]),
                         l
@@ -1842,133 +1842,136 @@
                     );
                 }
                 const ye = (0, n.memo)(({ Template: e }) => {
-                    const u = L('model', O.None),
-                        t = u.onCloseClicked,
-                        i = u.placeHolders,
-                        s = u.background,
-                        o = u.dimmerAlpha,
-                        c = u.displayFlags;
-                    (0, n.useEffect)(() => {
-                        const e = document.getElementById('root');
-                        e && e.setAttribute('id', 'stubDialogTemplate');
-                    }, []);
-                    const l = c.map(({ value: e }) => e),
-                        _ = (0, n.useRef)(i.map(({ value: e }) => e.resourceID)),
-                        d = (0, n.useState)(0 !== _.current.length),
-                        m = d[0],
-                        E = d[1],
-                        p = (0, n.useCallback)(
-                            (e = 'default') => {
-                                t({ reason: e });
-                            },
-                            [t],
-                        ),
-                        h = (0, n.useCallback)(() => {
-                            p('escape');
-                        }, [p]);
-                    var A;
-                    (A = h), H(M.n.ESCAPE, A);
-                    const F = (0, n.useCallback)((e) => {
-                            const u = _.current,
-                                t = u.indexOf(e);
-                            t > -1 && (u.splice(t, 1), 0 === u.length && E(!1));
-                        }, []),
-                        D = (0, n.useMemo)(() => {
-                            const e = { backgroundColor: `rgba(19, 18, 16, ${o})` };
-                            return s && (e.backgroundImage = `url(${s})`), e;
-                        }, [s, o]),
-                        g = (0, n.useMemo)(
-                            () =>
-                                i.reduce(
-                                    (e, { value: u }) => (
-                                        (e[u.placeHolder] = r().createElement(Z, {
-                                            key: u.placeHolder,
-                                            id: u.resourceID,
-                                            mixClass: ve,
-                                            onLoadCallback: F,
-                                        })),
-                                        e
+                        const u = L('model', P.None),
+                            t = u.onCloseClicked,
+                            i = u.placeHolders,
+                            s = u.background,
+                            o = u.dimmerAlpha,
+                            c = u.displayFlags;
+                        (0, n.useEffect)(() => {
+                            const e = document.getElementById('root');
+                            e && e.setAttribute('id', 'stubDialogTemplate');
+                        }, []);
+                        const l = c.map(({ value: e }) => e),
+                            _ = (0, n.useRef)(i.map(({ value: e }) => e.resourceID)),
+                            d = (0, n.useState)(0 !== _.current.length),
+                            m = d[0],
+                            E = d[1],
+                            p = (0, n.useCallback)(
+                                (e = 'default') => {
+                                    t({ reason: e });
+                                },
+                                [t],
+                            ),
+                            h = (0, n.useCallback)(() => {
+                                p('escape');
+                            }, [p]);
+                        var A;
+                        (A = h), H(M.n.ESCAPE, A);
+                        const F = (0, n.useCallback)((e) => {
+                                const u = _.current,
+                                    t = u.indexOf(e);
+                                t > -1 && (u.splice(t, 1), 0 === u.length && E(!1));
+                            }, []),
+                            D = (0, n.useMemo)(() => {
+                                const e = { backgroundColor: `rgba(19, 18, 16, ${o})` };
+                                return s && (e.backgroundImage = `url(${s})`), e;
+                            }, [s, o]),
+                            g = (0, n.useMemo)(
+                                () =>
+                                    i.reduce(
+                                        (e, { value: u }) => (
+                                            (e[u.placeHolder] = r().createElement(Z, {
+                                                key: u.placeHolder,
+                                                id: u.resourceID,
+                                                mixClass: ve,
+                                                onLoadCallback: F,
+                                            })),
+                                            e
+                                        ),
+                                        {},
                                     ),
-                                    {},
-                                ),
-                            [F, i],
-                        ),
-                        C = a()(be, m && fe);
-                    return r().createElement(
-                        B,
-                        null,
-                        r().createElement(
-                            'div',
-                            { className: C, style: D },
+                                [F, i],
+                            ),
+                            C = a()(be, m && fe);
+                        return r().createElement(
+                            B,
+                            null,
                             r().createElement(
-                                e,
-                                we(
-                                    { onClose: p, buttons: r().createElement(Be, null), displayFlags: l, isShown: !m },
-                                    g,
+                                'div',
+                                { className: C, style: D },
+                                r().createElement(
+                                    e,
+                                    we(
+                                        {
+                                            onClose: p,
+                                            buttons: r().createElement(Be, null),
+                                            displayFlags: l,
+                                            isShown: !m,
+                                        },
+                                        g,
+                                    ),
                                 ),
                             ),
-                        ),
-                    );
-                });
-                class xe extends r().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = v.B3.GOLD;
-                        else e = v.B3.INTEGRAL;
-                        const u = v.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                xe.defaultProps = { format: 'integral' };
-                const ke = {
-                    base: 'Currency_base_57',
-                    icon: 'Currency_icon_c5',
-                    base__small: 'Currency_base__small_af',
-                    base__big: 'Currency_base__big_bc',
-                    base__large: 'Currency_base__large_65',
-                    base__extraLarge: 'Currency_base__extraLarge_4d',
-                    'icon__credits-small': 'Currency_icon__credits-small_9b',
-                    'icon__credits-big': 'Currency_icon__credits-big_96',
-                    'icon__credits-large': 'Currency_icon__credits-large_ac',
-                    'icon__credits-extraLarge': 'Currency_icon__credits-extraLarge_16',
-                    'icon__gold-small': 'Currency_icon__gold-small_86',
-                    'icon__gold-big': 'Currency_icon__gold-big_15',
-                    'icon__gold-large': 'Currency_icon__gold-large_36',
-                    'icon__gold-extraLarge': 'Currency_icon__gold-extraLarge_a0',
-                    'icon__crystal-small': 'Currency_icon__crystal-small_27',
-                    'icon__crystal-big': 'Currency_icon__crystal-big_cd',
-                    'icon__crystal-large': 'Currency_icon__crystal-large_d3',
-                    'icon__crystal-extraLarge': 'Currency_icon__crystal-extraLarge_09',
-                    'icon__xp-small': 'Currency_icon__xp-small_a7',
-                    'icon__xp-big': 'Currency_icon__xp-big_97',
-                    'icon__xp-large': 'Currency_icon__xp-large_6b',
-                    'icon__xp-extraLarge': 'Currency_icon__xp-extraLarge_67',
-                    'icon__freeXP-small': 'Currency_icon__freeXP-small_ca',
-                    'icon__freeXP-big': 'Currency_icon__freeXP-big_21',
-                    'icon__freeXP-large': 'Currency_icon__freeXP-large_c8',
-                    'icon__freeXP-extraLarge': 'Currency_icon__freeXP-extraLarge_58',
-                    'icon__eliteXP-small': 'Currency_icon__eliteXP-small_45',
-                    'icon__eliteXP-big': 'Currency_icon__eliteXP-big_c0',
-                    'icon__eliteXP-large': 'Currency_icon__eliteXP-large_1b',
-                    'icon__eliteXP-extraLarge': 'Currency_icon__eliteXP-extraLarge_9b',
-                    'icon__equipCoin-small': 'Currency_icon__equipCoin-small_32',
-                    'icon__equipCoin-big': 'Currency_icon__equipCoin-big_79',
-                    'icon__equipCoin-large': 'Currency_icon__equipCoin-large_2c',
-                    'icon__equipCoin-extraLarge': 'Currency_icon__equipCoin-extraLarge_8a',
-                    value: 'Currency_value_e1',
-                    value__freeXP: 'Currency_value__freeXP_cb',
-                    value__credits: 'Currency_value__credits_76',
-                    value__gold: 'Currency_value__gold_dd',
-                    value__xp: 'Currency_value__xp_b0',
-                    value__crystal: 'Currency_value__crystal_19',
-                    value__equipCoin: 'Currency_value__equipCoin_d0',
-                    value__eliteXP: 'Currency_value__eliteXP_62',
-                    value__notEnough: 'Currency_value__notEnough_56',
-                    stock: 'Currency_stock_87',
-                    stock__indent: 'Currency_stock__indent_a1',
-                    stock__interactive: 'Currency_stock__interactive_93',
-                    stockBackground: 'Currency_stockBackground_82',
-                };
+                        );
+                    }),
+                    xe = ({ format: e, value: u }) => {
+                        const t = ((e, u = 'integral') => {
+                            let t;
+                            t = 'gold' === u ? v.B3.GOLD : v.B3.INTEGRAL;
+                            return void 0 === e ? '' : v.Z5.getNumberFormat(e, t);
+                        })(u, e);
+                        return t ? r().createElement('span', null, t) : null;
+                    },
+                    ke = {
+                        base: 'Currency_base_57',
+                        icon: 'Currency_icon_c5',
+                        base__small: 'Currency_base__small_af',
+                        base__big: 'Currency_base__big_bc',
+                        base__large: 'Currency_base__large_65',
+                        base__extraLarge: 'Currency_base__extraLarge_4d',
+                        'icon__credits-small': 'Currency_icon__credits-small_9b',
+                        'icon__credits-big': 'Currency_icon__credits-big_96',
+                        'icon__credits-large': 'Currency_icon__credits-large_ac',
+                        'icon__credits-extraLarge': 'Currency_icon__credits-extraLarge_16',
+                        'icon__gold-small': 'Currency_icon__gold-small_86',
+                        'icon__gold-big': 'Currency_icon__gold-big_15',
+                        'icon__gold-large': 'Currency_icon__gold-large_36',
+                        'icon__gold-extraLarge': 'Currency_icon__gold-extraLarge_a0',
+                        'icon__crystal-small': 'Currency_icon__crystal-small_27',
+                        'icon__crystal-big': 'Currency_icon__crystal-big_cd',
+                        'icon__crystal-large': 'Currency_icon__crystal-large_d3',
+                        'icon__crystal-extraLarge': 'Currency_icon__crystal-extraLarge_09',
+                        'icon__xp-small': 'Currency_icon__xp-small_a7',
+                        'icon__xp-big': 'Currency_icon__xp-big_97',
+                        'icon__xp-large': 'Currency_icon__xp-large_6b',
+                        'icon__xp-extraLarge': 'Currency_icon__xp-extraLarge_67',
+                        'icon__freeXP-small': 'Currency_icon__freeXP-small_ca',
+                        'icon__freeXP-big': 'Currency_icon__freeXP-big_21',
+                        'icon__freeXP-large': 'Currency_icon__freeXP-large_c8',
+                        'icon__freeXP-extraLarge': 'Currency_icon__freeXP-extraLarge_58',
+                        'icon__eliteXP-small': 'Currency_icon__eliteXP-small_45',
+                        'icon__eliteXP-big': 'Currency_icon__eliteXP-big_c0',
+                        'icon__eliteXP-large': 'Currency_icon__eliteXP-large_1b',
+                        'icon__eliteXP-extraLarge': 'Currency_icon__eliteXP-extraLarge_9b',
+                        'icon__equipCoin-small': 'Currency_icon__equipCoin-small_32',
+                        'icon__equipCoin-big': 'Currency_icon__equipCoin-big_79',
+                        'icon__equipCoin-large': 'Currency_icon__equipCoin-large_2c',
+                        'icon__equipCoin-extraLarge': 'Currency_icon__equipCoin-extraLarge_8a',
+                        value: 'Currency_value_e1',
+                        value__freeXP: 'Currency_value__freeXP_cb',
+                        value__credits: 'Currency_value__credits_76',
+                        value__gold: 'Currency_value__gold_dd',
+                        value__xp: 'Currency_value__xp_b0',
+                        value__crystal: 'Currency_value__crystal_19',
+                        value__equipCoin: 'Currency_value__equipCoin_d0',
+                        value__eliteXP: 'Currency_value__eliteXP_62',
+                        value__notEnough: 'Currency_value__notEnough_56',
+                        stock: 'Currency_stock_87',
+                        stock__indent: 'Currency_stock__indent_a1',
+                        stock__interactive: 'Currency_stock__interactive_93',
+                        stockBackground: 'Currency_stockBackground_82',
+                    };
                 let Se, Ne, Te;
                 !(function (e) {
                     (e.small = 'small'), (e.big = 'big'), (e.large = 'large'), (e.extraLarge = 'extraLarge');
@@ -1985,7 +1988,7 @@
                     (function (e) {
                         (e.Red = 'RedActionBG'), (e.Blue = 'BlueActionBG');
                     })(Te || (Te = {}));
-                const Pe = (0, n.memo)(
+                const Oe = (0, n.memo)(
                     ({
                         isDiscount: e,
                         isInteractiveDiscount: u,
@@ -2038,7 +2041,7 @@
                         ),
                 );
                 t(3368);
-                let Oe;
+                let Pe;
                 !(function (e) {
                     (e[(e.ZERO = 48)] = 'ZERO'),
                         (e[(e.ONE = 49)] = 'ONE'),
@@ -2060,7 +2063,7 @@
                         (e[(e.NUMPAD_7 = 103)] = 'NUMPAD_7'),
                         (e[(e.NUMPAD_8 = 104)] = 'NUMPAD_8'),
                         (e[(e.NUMPAD_9 = 105)] = 'NUMPAD_9');
-                })(Oe || (Oe = {}));
+                })(Pe || (Pe = {}));
                 const Le = {
                     base: 'NumericStepper_base_35',
                     base__small: 'NumericStepper_base__small_11',
@@ -2351,7 +2354,7 @@
                                     }
                             }),
                             (this.allowOnlyNumbers = (e) => {
-                                e.which in Oe || e.preventDefault();
+                                e.which in Pe || e.preventDefault();
                             }),
                             (this.increment = () => {
                                 const e = Math.min(
@@ -3561,8 +3564,8 @@
                             onStepperChange: e.createCallback((e) => ({ selectedCount: e }), 'onBunksCountChange'),
                         }),
                     ),
-                    Pu = Tu[0],
-                    Ou = Tu[1],
+                    Ou = Tu[0],
+                    Pu = Tu[1],
                     Lu = 'EnlargeBarracksDialogApp_freeBunksCount_8d',
                     Mu = 'EnlargeBarracksDialogApp_freeBunksCount__error_d1',
                     Iu = 'EnlargeBarracksDialogApp_footer_24',
@@ -3596,7 +3599,7 @@
                             for (n = 0; n < i.length; n++) (t = i[n]), u.indexOf(t) >= 0 || (r[t] = e[t]);
                             return r;
                         })(e, Hu);
-                    const o = Ou(),
+                    const o = Pu(),
                         a = o.model,
                         c = o.controls,
                         l = a.currency.get();
@@ -3633,7 +3636,7 @@
                                     r().createElement(
                                         'div',
                                         { className: Ru },
-                                        r().createElement(Pe, Vu({}, l, { size: Se.big, type: Ne.gold })),
+                                        r().createElement(Oe, Vu({}, l, { size: Se.big, type: Ne.gold })),
                                     ),
                                 ),
                             ),
@@ -3642,7 +3645,7 @@
                 });
                 engine.whenReady.then(() => {
                     s().render(
-                        r().createElement(Pu, null, r().createElement(ye, { Template: Wu })),
+                        r().createElement(Ou, null, r().createElement(ye, { Template: Wu })),
                         document.getElementById('root'),
                     );
                 });

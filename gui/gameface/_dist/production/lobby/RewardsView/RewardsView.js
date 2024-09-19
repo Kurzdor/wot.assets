@@ -320,12 +320,17 @@
                             (e.BonusX5 = 'battle_bonus_x5'),
                             (e.CrewBonusX3 = 'crew_bonus_x3'),
                             (e.Vehicles = 'vehicles'),
+                            (e.WtHunterLootbox = 'wt_hunter'),
+                            (e.WtBossLootbox = 'wt_boss'),
+                            (e.WtProgressPoints = 'stamp'),
                             (e.EpicSelectToken = 'epicSelectToken'),
                             (e.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
                             (e.DeluxeGift = 'deluxe_gift'),
                             (e.BattleBoosterGift = 'battleBooster_gift'),
                             (e.OptionalDevice = 'optionalDevice'),
-                            (e.EquipCoin = 'equipCoin');
+                            (e.EquipCoin = 'equipCoin'),
+                            (e.WTCommanderClaimable = 'wtCommanderClaimable'),
+                            (e.WTCommanderClaimed = 'wtCommanderClaimed');
                     })(n || (n = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -434,15 +439,16 @@
                 var n = r(6179),
                     a = r.n(n),
                     i = r(9916);
-                class s extends a().PureComponent {
-                    render() {
-                        let e;
-                        e = 'gold' === this.props.format ? i.B3.GOLD : i.B3.INTEGRAL;
-                        const t = i.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== t ? t : null;
-                    }
-                }
-                s.defaultProps = { format: 'integral' };
+                const s = ({ format: e, value: t }) => {
+                    const r = ((e, t = 'integral') => {
+                        let r;
+                        return (
+                            (r = 'gold' === t ? i.B3.GOLD : i.B3.INTEGRAL),
+                            void 0 === e ? '' : i.Z5.getNumberFormat(e, r)
+                        );
+                    })(t, e);
+                    return r ? a().createElement('span', null, r) : null;
+                };
                 var o = r(2862);
                 const l = [
                         o.E4.Items,
@@ -473,6 +479,9 @@
                         o.E4.CrewBonusX3,
                         o.E4.NewYearInvoice,
                         o.E4.EpicSelectToken,
+                        o.E4.WtHunterLootbox,
+                        o.E4.WtBossLootbox,
+                        o.E4.WtProgressPoints,
                         o.E4.Comp7TokenWeeklyReward,
                         o.E4.DeluxeGift,
                         o.E4.BattleBoosterGift,
@@ -932,13 +941,13 @@
                                       Object.assign(
                                           {
                                               onMouseEnter:
-                                                  ((N = t.props.onMouseEnter),
+                                                  ((C = t.props.onMouseEnter),
                                                   (e) => {
                                                       (e.clientX === window.innerWidth &&
                                                           e.clientY === window.innerHeight) ||
                                                           ((O.current.timeoutId = window.setTimeout(x, g ? 100 : 400)),
                                                           c && c(e),
-                                                          N && N(e));
+                                                          C && C(e));
                                                   }),
                                               onMouseLeave: ((e) => (t) => {
                                                   k(), null == u || u(t), null == e || e(t);
@@ -955,7 +964,7 @@
                                   )
                                 : t
                         );
-                        var N;
+                        var C;
                     };
             },
             8246: (e, t, r) => {
@@ -1228,20 +1237,20 @@
                         extraSize: () => K,
                         forceTriggerMouseMove: () => $,
                         freezeTextureBeforeResize: () => U,
-                        getBrowserTexturePath: () => C,
+                        getBrowserTexturePath: () => N,
                         getDisplayStatus: () => q,
                         getScale: () => F,
                         getSize: () => M,
                         getViewGlobalPosition: () => A,
                         isEventHandled: () => V,
-                        isFocused: () => W,
+                        isFocused: () => j,
                         pxToRem: () => G,
                         remToPx: () => H,
                         resize: () => B,
                         sendEvent: () => k,
-                        setAnimateWindow: () => j,
+                        setAnimateWindow: () => W,
                         setEventHandled: () => Y,
-                        setInputPaddingsRem: () => N,
+                        setInputPaddingsRem: () => C,
                         setSidePaddingsRem: () => D,
                         whenTutorialReady: () => X,
                     });
@@ -1412,10 +1421,10 @@
                 function L(e) {
                     viewEnv.addPreloadTexture(e);
                 }
-                function N(e) {
+                function C(e) {
                     viewEnv.setHitAreaPaddingsRem(e, e, e, e, 15);
                 }
-                function C(e, t, r, n = 1) {
+                function N(e, t, r, n = 1) {
                     return viewEnv.getWebBrowserTexturePath(e, t, r, n);
                 }
                 function I(e, t, r) {
@@ -1446,10 +1455,10 @@
                 function H(e) {
                     return viewEnv.remToPx(e);
                 }
-                function j(e, t) {
+                function W(e, t) {
                     viewEnv.setAnimateWindow(e, t);
                 }
-                function W() {
+                function j() {
                     return viewEnv.isFocused();
                 }
                 function Y() {
@@ -2404,15 +2413,15 @@
                             ),
                         );
                     });
-                var N = r(4959);
-                const C = 'SubTitle_base_8d',
+                var C = r(4959);
+                const N = 'SubTitle_base_8d',
                     I = R.strings.fl_rewards.subtitle,
                     D = (0, n.memo)(({ level: e, rewardsCount: t, frontlineState: r }) =>
-                        r !== N.c.Finished
-                            ? a().createElement('div', { className: C }, I.active())
+                        r !== C.c.Finished
+                            ? a().createElement('div', { className: N }, I.active())
                             : a().createElement(
                                   'div',
-                                  { className: C },
+                                  { className: N },
                                   I.finished.title(),
                                   e > 1 &&
                                       (t > 0

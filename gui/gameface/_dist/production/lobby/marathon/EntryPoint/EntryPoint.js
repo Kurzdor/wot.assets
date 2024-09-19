@@ -1063,24 +1063,22 @@
                                 a = W(u);
                             return $(a, /( )/, e).forEach((u) => (t = t.concat($(u, n, N.left)))), t;
                         })(u, e);
+                    },
+                    U = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? v.B3.GOLD : v.B3.INTEGRAL;
+                            return void 0 === u ? '' : v.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? a().createElement('span', null, t) : null;
+                    },
+                    K = {
+                        base: 'ProgressBar_base_45',
+                        base__small: 'ProgressBar_base__small_df',
+                        background: 'ProgressBar_background_51',
+                        background__small: 'ProgressBar_background__small_46',
+                        lineWrapper: 'ProgressBar_lineWrapper_6a',
                     };
-                class U extends a().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = v.B3.GOLD;
-                        else u = v.B3.INTEGRAL;
-                        const e = v.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                U.defaultProps = { format: 'integral' };
-                const K = {
-                    base: 'ProgressBar_base_45',
-                    base__small: 'ProgressBar_base__small_df',
-                    background: 'ProgressBar_background_51',
-                    background__small: 'ProgressBar_background__small_46',
-                    lineWrapper: 'ProgressBar_lineWrapper_6a',
-                };
                 let q, Y;
                 !(function (u) {
                     (u.Small = 'small'), (u.Medium = 'medium'), (u.Default = 'medium');

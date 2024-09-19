@@ -1970,12 +1970,17 @@
                         (u.BonusX5 = 'battle_bonus_x5'),
                         (u.CrewBonusX3 = 'crew_bonus_x3'),
                         (u.Vehicles = 'vehicles'),
+                        (u.WtHunterLootbox = 'wt_hunter'),
+                        (u.WtBossLootbox = 'wt_boss'),
+                        (u.WtProgressPoints = 'stamp'),
                         (u.EpicSelectToken = 'epicSelectToken'),
                         (u.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
                         (u.DeluxeGift = 'deluxe_gift'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.OptionalDevice = 'optionalDevice'),
-                        (u.EquipCoin = 'equipCoin');
+                        (u.EquipCoin = 'equipCoin'),
+                        (u.WTCommanderClaimable = 'wtCommanderClaimable'),
+                        (u.WTCommanderClaimed = 'wtCommanderClaimed');
                 })(ju || (ju = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -2078,17 +2083,15 @@
                     (function (u) {
                         (u[(u.Engraving = 0)] = 'Engraving'), (u[(u.Background = 1)] = 'Background');
                     })(Zu || (Zu = {}));
-                class Ju extends r().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = ru.B3.GOLD;
-                        else u = ru.B3.INTEGRAL;
-                        const e = ru.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                Ju.defaultProps = { format: 'integral' };
-                const ue = [
+                const Ju = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? ru.B3.GOLD : ru.B3.INTEGRAL;
+                            return void 0 === u ? '' : ru.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? r().createElement('span', null, t) : null;
+                    },
+                    ue = [
                         ju.Items,
                         ju.Equipment,
                         ju.Xp,
@@ -2117,6 +2120,9 @@
                         ju.CrewBonusX3,
                         ju.NewYearInvoice,
                         ju.EpicSelectToken,
+                        ju.WtHunterLootbox,
+                        ju.WtBossLootbox,
+                        ju.WtProgressPoints,
                         ju.Comp7TokenWeeklyReward,
                         ju.DeluxeGift,
                         ju.BattleBoosterGift,

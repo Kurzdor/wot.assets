@@ -1142,20 +1142,18 @@
                         (e.Red = 'RedActionBG'), (e.Blue = 'BlueActionBG');
                     })(W || (W = {}));
                 var q = t(9916);
-                class z extends i().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = q.B3.GOLD;
-                        else e = q.B3.INTEGRAL;
-                        const u = q.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
+                const z = ({ format: e, value: u }) => {
+                    const t = ((e, u = 'integral') => {
+                        let t;
+                        t = 'gold' === u ? q.B3.GOLD : q.B3.INTEGRAL;
+                        return void 0 === e ? '' : q.Z5.getNumberFormat(e, t);
+                    })(u, e);
+                    return t ? i().createElement('span', null, t) : null;
+                };
                 let $;
-                (z.defaultProps = { format: 'integral' }),
-                    (function (e) {
-                        (e.Deconstruct = 'deconstruct'), (e.Upgrade = 'upgrade');
-                    })($ || ($ = {}));
+                !(function (e) {
+                    (e.Deconstruct = 'deconstruct'), (e.Upgrade = 'upgrade');
+                })($ || ($ = {}));
                 var j = t(5521);
                 const X = (e) => {
                     console.error(e.type + ': useKeydownListener hook :: Callback is not defined');
@@ -1702,8 +1700,8 @@
                             }
                         );
                     },
-                    Re = 'TextOverflow_base_3b',
-                    Pe = ['content', 'classMix', 'className'];
+                    Pe = 'TextOverflow_base_3b',
+                    Re = ['content', 'classMix', 'className'];
                 function Le() {
                     return (
                         (Le =
@@ -1730,7 +1728,7 @@
                                 a = Object.keys(e);
                             for (n = 0; n < a.length; n++) (t = a[n]), u.indexOf(t) >= 0 || (r[t] = e[t]);
                             return r;
-                        })(e, Pe);
+                        })(e, Re);
                     const o = (0, a.useRef)(null),
                         s = (0, a.useState)(!0),
                         l = s[0],
@@ -1745,7 +1743,7 @@
                         i().createElement(
                             Te,
                             { isEnabled: l, body: u },
-                            i().createElement('div', Le({}, r, { ref: o, className: f()(Re, n, t) }), u),
+                            i().createElement('div', Le({}, r, { ref: o, className: f()(Pe, n, t) }), u),
                         )
                     );
                 };
@@ -2593,7 +2591,7 @@
                     Su = 'App_counter_d7',
                     Tu = (e, u, t) => (t < e ? e : t > u ? u : t),
                     xu = [];
-                function Ru(e) {
+                function Pu(e) {
                     const u = (0, a.useRef)(e);
                     return (
                         (0, a.useLayoutEffect)(() => {
@@ -2602,7 +2600,7 @@
                         (0, a.useCallback)((...e) => (0, u.current)(...e), xu)
                     );
                 }
-                function Pu(e, u, t = []) {
+                function Ru(e, u, t = []) {
                     const n = (0, a.useRef)(0),
                         r = (0, a.useCallback)(() => window.clearInterval(n.current), t || []);
                     (0, a.useEffect)(() => r, [r]);
@@ -2821,7 +2819,7 @@
                                         }),
                                     [g, m.scrollPosition.goal],
                                 ),
-                                v = Ru(() => {
+                                v = Pu(() => {
                                     const e = _.current;
                                     if (!e) return;
                                     const u = o(e, m.scrollPosition.goal);
@@ -2936,7 +2934,7 @@
                                         }
                                     })(_);
                             },
-                            B = Ru(() => {
+                            B = Pu(() => {
                                 (() => {
                                     const u = E.current,
                                         t = c.current,
@@ -3006,7 +3004,7 @@
                                     u(), t();
                                 };
                             }, [e, d.offset, d.pending, n, F]);
-                        const C = Pu((u) => e.applyStepTo(u), _, [e]),
+                        const C = Ru((u) => e.applyStepTo(u), _, [e]),
                             g = C[0],
                             p = C[1];
                         (0, a.useEffect)(
@@ -3164,7 +3162,7 @@
                                 },
                                 [n],
                             ),
-                            m = Ru(() => {
+                            m = Pu(() => {
                                 const u = E.current,
                                     t = c.current,
                                     n = e.getWrapperSize(),
@@ -3179,7 +3177,7 @@
                                     i
                                 );
                             }),
-                            B = Ru(() => {
+                            B = Pu(() => {
                                 const u = c.current,
                                     t = E.current,
                                     n = e.getWrapperSize(),
@@ -3205,7 +3203,7 @@
                                         }
                                     })(_);
                             }),
-                            C = Ru(() => {
+                            C = Pu(() => {
                                 Dt(e, () => {
                                     m(), B();
                                 });
@@ -3261,7 +3259,7 @@
                                     u(), t();
                                 };
                             }, [e, d.offset, d.pending, n, F]);
-                        const g = Pu((u) => e.applyStepTo(u), _, [e]),
+                        const g = Ru((u) => e.applyStepTo(u), _, [e]),
                             p = g[0],
                             h = g[1];
                         (0, a.useEffect)(
@@ -3412,12 +3410,17 @@
                         (e.BonusX5 = 'battle_bonus_x5'),
                         (e.CrewBonusX3 = 'crew_bonus_x3'),
                         (e.Vehicles = 'vehicles'),
+                        (e.WtHunterLootbox = 'wt_hunter'),
+                        (e.WtBossLootbox = 'wt_boss'),
+                        (e.WtProgressPoints = 'stamp'),
                         (e.EpicSelectToken = 'epicSelectToken'),
                         (e.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
                         (e.DeluxeGift = 'deluxe_gift'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.OptionalDevice = 'optionalDevice'),
-                        (e.EquipCoin = 'equipCoin');
+                        (e.EquipCoin = 'equipCoin'),
+                        (e.WTCommanderClaimable = 'wtCommanderClaimable'),
+                        (e.WTCommanderClaimed = 'wtCommanderClaimed');
                 })(ft || (ft = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -3521,9 +3524,9 @@
                         (e[(e.Engraving = 0)] = 'Engraving'), (e[(e.Background = 1)] = 'Background');
                     })(Tt || (Tt = {}));
                 const xt = ['children'];
-                function Rt() {
+                function Pt() {
                     return (
-                        (Rt =
+                        (Pt =
                             Object.assign ||
                             function (e) {
                                 for (var u = 1; u < arguments.length; u++) {
@@ -3532,10 +3535,10 @@
                                 }
                                 return e;
                             }),
-                        Rt.apply(this, arguments)
+                        Pt.apply(this, arguments)
                     );
                 }
-                const Pt = (e) => {
+                const Rt = (e) => {
                     let u = e.children,
                         t = (function (e, u) {
                             if (null == e) return {};
@@ -3548,7 +3551,7 @@
                         })(e, xt);
                     return i().createElement(
                         be,
-                        Rt(
+                        Pt(
                             {
                                 contentId:
                                     R.views.common.tooltip_window.backport_tooltip_content.BackportTooltipContent(
@@ -3580,7 +3583,7 @@
                         const n = i().createElement('div', { className: t }, e);
                         if (u.header || u.body) return i().createElement(Te, u, n);
                         const r = u.contentId;
-                        return r ? i().createElement(be, Lt({}, u, { contentId: r }), n) : i().createElement(Pt, u, n);
+                        return r ? i().createElement(be, Lt({}, u, { contentId: r }), n) : i().createElement(Rt, u, n);
                     },
                     Mt =
                         (ft.Items,
@@ -3611,6 +3614,9 @@
                         ft.CrewBonusX3,
                         ft.NewYearInvoice,
                         ft.EpicSelectToken,
+                        ft.WtHunterLootbox,
+                        ft.WtBossLootbox,
+                        ft.WtProgressPoints,
                         ft.Comp7TokenWeeklyReward,
                         ft.DeluxeGift,
                         ft.BattleBoosterGift,

@@ -186,14 +186,14 @@
                         displayStatusIs: () => f,
                         events: () => o.U,
                         extraSize: () => w,
-                        forceTriggerMouseMove: () => m,
+                        forceTriggerMouseMove: () => v,
                         freezeTextureBeforeResize: () => d,
                         getBrowserTexturePath: () => c,
                         getDisplayStatus: () => b,
                         getScale: () => D,
                         getSize: () => F,
                         getViewGlobalPosition: () => _,
-                        isEventHandled: () => v,
+                        isEventHandled: () => m,
                         isFocused: () => g,
                         pxToRem: () => B,
                         remToPx: () => C,
@@ -255,10 +255,10 @@
                 function h() {
                     return viewEnv.setEventHandled();
                 }
-                function v() {
+                function m() {
                     return viewEnv.isEventHandled();
                 }
-                function m() {
+                function v() {
                     viewEnv.forceTriggerMouseMove();
                 }
                 function b() {
@@ -631,8 +631,8 @@
                         u.keyCode === F.n.ESCAPE && e();
                     };
                 var h = t(7572);
-                const v = r.instance,
-                    m = {
+                const m = r.instance,
+                    v = {
                         DataTracker: o.Z,
                         ViewModel: h.Z,
                         ViewEventType: a,
@@ -710,11 +710,11 @@
                                 }
                             return t;
                         },
-                        ClickOutsideManager: v,
+                        ClickOutsideManager: m,
                         SystemLocale: i.Z5,
                         UserLocale: i.cy,
                     };
-                window.ViewEnvHelper = m;
+                window.ViewEnvHelper = v;
             },
             8613: (u, e, t) => {
                 t.d(e, { Z5: () => n, cy: () => r });
@@ -837,65 +837,63 @@
                 var A = t(493),
                     _ = t.n(A),
                     d = t(9916);
-                class D extends a().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = d.B3.GOLD;
-                        else u = d.B3.INTEGRAL;
-                        const e = d.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                D.defaultProps = { format: 'integral' };
-                const B = {
-                    base: 'Currency_base_57',
-                    icon: 'Currency_icon_c5',
-                    base__small: 'Currency_base__small_af',
-                    base__big: 'Currency_base__big_bc',
-                    base__large: 'Currency_base__large_65',
-                    base__extraLarge: 'Currency_base__extraLarge_4d',
-                    'icon__credits-small': 'Currency_icon__credits-small_9b',
-                    'icon__credits-big': 'Currency_icon__credits-big_96',
-                    'icon__credits-large': 'Currency_icon__credits-large_ac',
-                    'icon__credits-extraLarge': 'Currency_icon__credits-extraLarge_16',
-                    'icon__gold-small': 'Currency_icon__gold-small_86',
-                    'icon__gold-big': 'Currency_icon__gold-big_15',
-                    'icon__gold-large': 'Currency_icon__gold-large_36',
-                    'icon__gold-extraLarge': 'Currency_icon__gold-extraLarge_a0',
-                    'icon__crystal-small': 'Currency_icon__crystal-small_27',
-                    'icon__crystal-big': 'Currency_icon__crystal-big_cd',
-                    'icon__crystal-large': 'Currency_icon__crystal-large_d3',
-                    'icon__crystal-extraLarge': 'Currency_icon__crystal-extraLarge_09',
-                    'icon__xp-small': 'Currency_icon__xp-small_a7',
-                    'icon__xp-big': 'Currency_icon__xp-big_97',
-                    'icon__xp-large': 'Currency_icon__xp-large_6b',
-                    'icon__xp-extraLarge': 'Currency_icon__xp-extraLarge_67',
-                    'icon__freeXP-small': 'Currency_icon__freeXP-small_ca',
-                    'icon__freeXP-big': 'Currency_icon__freeXP-big_21',
-                    'icon__freeXP-large': 'Currency_icon__freeXP-large_c8',
-                    'icon__freeXP-extraLarge': 'Currency_icon__freeXP-extraLarge_58',
-                    'icon__eliteXP-small': 'Currency_icon__eliteXP-small_45',
-                    'icon__eliteXP-big': 'Currency_icon__eliteXP-big_c0',
-                    'icon__eliteXP-large': 'Currency_icon__eliteXP-large_1b',
-                    'icon__eliteXP-extraLarge': 'Currency_icon__eliteXP-extraLarge_9b',
-                    'icon__equipCoin-small': 'Currency_icon__equipCoin-small_32',
-                    'icon__equipCoin-big': 'Currency_icon__equipCoin-big_79',
-                    'icon__equipCoin-large': 'Currency_icon__equipCoin-large_2c',
-                    'icon__equipCoin-extraLarge': 'Currency_icon__equipCoin-extraLarge_8a',
-                    value: 'Currency_value_e1',
-                    value__freeXP: 'Currency_value__freeXP_cb',
-                    value__credits: 'Currency_value__credits_76',
-                    value__gold: 'Currency_value__gold_dd',
-                    value__xp: 'Currency_value__xp_b0',
-                    value__crystal: 'Currency_value__crystal_19',
-                    value__equipCoin: 'Currency_value__equipCoin_d0',
-                    value__eliteXP: 'Currency_value__eliteXP_62',
-                    value__notEnough: 'Currency_value__notEnough_56',
-                    stock: 'Currency_stock_87',
-                    stock__indent: 'Currency_stock__indent_a1',
-                    stock__interactive: 'Currency_stock__interactive_93',
-                    stockBackground: 'Currency_stockBackground_82',
-                };
+                const D = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? d.B3.GOLD : d.B3.INTEGRAL;
+                            return void 0 === u ? '' : d.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? a().createElement('span', null, t) : null;
+                    },
+                    B = {
+                        base: 'Currency_base_57',
+                        icon: 'Currency_icon_c5',
+                        base__small: 'Currency_base__small_af',
+                        base__big: 'Currency_base__big_bc',
+                        base__large: 'Currency_base__large_65',
+                        base__extraLarge: 'Currency_base__extraLarge_4d',
+                        'icon__credits-small': 'Currency_icon__credits-small_9b',
+                        'icon__credits-big': 'Currency_icon__credits-big_96',
+                        'icon__credits-large': 'Currency_icon__credits-large_ac',
+                        'icon__credits-extraLarge': 'Currency_icon__credits-extraLarge_16',
+                        'icon__gold-small': 'Currency_icon__gold-small_86',
+                        'icon__gold-big': 'Currency_icon__gold-big_15',
+                        'icon__gold-large': 'Currency_icon__gold-large_36',
+                        'icon__gold-extraLarge': 'Currency_icon__gold-extraLarge_a0',
+                        'icon__crystal-small': 'Currency_icon__crystal-small_27',
+                        'icon__crystal-big': 'Currency_icon__crystal-big_cd',
+                        'icon__crystal-large': 'Currency_icon__crystal-large_d3',
+                        'icon__crystal-extraLarge': 'Currency_icon__crystal-extraLarge_09',
+                        'icon__xp-small': 'Currency_icon__xp-small_a7',
+                        'icon__xp-big': 'Currency_icon__xp-big_97',
+                        'icon__xp-large': 'Currency_icon__xp-large_6b',
+                        'icon__xp-extraLarge': 'Currency_icon__xp-extraLarge_67',
+                        'icon__freeXP-small': 'Currency_icon__freeXP-small_ca',
+                        'icon__freeXP-big': 'Currency_icon__freeXP-big_21',
+                        'icon__freeXP-large': 'Currency_icon__freeXP-large_c8',
+                        'icon__freeXP-extraLarge': 'Currency_icon__freeXP-extraLarge_58',
+                        'icon__eliteXP-small': 'Currency_icon__eliteXP-small_45',
+                        'icon__eliteXP-big': 'Currency_icon__eliteXP-big_c0',
+                        'icon__eliteXP-large': 'Currency_icon__eliteXP-large_1b',
+                        'icon__eliteXP-extraLarge': 'Currency_icon__eliteXP-extraLarge_9b',
+                        'icon__equipCoin-small': 'Currency_icon__equipCoin-small_32',
+                        'icon__equipCoin-big': 'Currency_icon__equipCoin-big_79',
+                        'icon__equipCoin-large': 'Currency_icon__equipCoin-large_2c',
+                        'icon__equipCoin-extraLarge': 'Currency_icon__equipCoin-extraLarge_8a',
+                        value: 'Currency_value_e1',
+                        value__freeXP: 'Currency_value__freeXP_cb',
+                        value__credits: 'Currency_value__credits_76',
+                        value__gold: 'Currency_value__gold_dd',
+                        value__xp: 'Currency_value__xp_b0',
+                        value__crystal: 'Currency_value__crystal_19',
+                        value__equipCoin: 'Currency_value__equipCoin_d0',
+                        value__eliteXP: 'Currency_value__eliteXP_62',
+                        value__notEnough: 'Currency_value__notEnough_56',
+                        stock: 'Currency_stock_87',
+                        stock__indent: 'Currency_stock__indent_a1',
+                        stock__interactive: 'Currency_stock__interactive_93',
+                        stockBackground: 'Currency_stockBackground_82',
+                    };
                 let C, p, g;
                 !(function (u) {
                     (u.small = 'small'), (u.big = 'big'), (u.large = 'large'), (u.extraLarge = 'extraLarge');
@@ -964,7 +962,7 @@
                                     ),
                             ),
                     ),
-                    v = [
+                    m = [
                         'children',
                         'contentId',
                         'args',
@@ -980,7 +978,7 @@
                         'onShow',
                         'onHide',
                     ];
-                function m(u) {
+                function v(u) {
                     return Object.entries(u || {}).map(([u, e]) => {
                         const t = { __Type: 'GFValueProxy', name: u };
                         switch (typeof e) {
@@ -1040,7 +1038,7 @@
                                     o = Object.keys(u);
                                 for (n = 0; n < o.length; n++) (t = o[n]), e.indexOf(t) >= 0 || (r[t] = u[t]);
                                 return r;
-                            })(u, v);
+                            })(u, m);
                         const f = (0, i.useRef)({ timeoutId: 0, isVisible: !1, prevTarget: null, hideTimerId: null }),
                             w = (0, i.useMemo)(
                                 () =>
@@ -1063,7 +1061,7 @@
                             ),
                             y = (0, i.useCallback)(() => {
                                 (f.current.isVisible && f.current.timeoutId) ||
-                                    (b(t, _, { isMouseEvent: !0, on: !0, arguments: m(n) }, w),
+                                    (b(t, _, { isMouseEvent: !0, on: !0, arguments: v(n) }, w),
                                     p && p(),
                                     (f.current.isVisible = !0));
                             }, [t, _, n, w, p]),
@@ -1687,7 +1685,7 @@
                                     },
                                     [t, A, p],
                                 ),
-                                v = (0, i.useMemo)(() => ({ justifyContent: E, alignContent: F }), [F, E]);
+                                m = (0, i.useMemo)(() => ({ justifyContent: E, alignContent: F }), [F, E]);
                             return (
                                 ((u, e, t = !0) => {
                                     const n = (0, i.useCallback)(
@@ -1717,7 +1715,7 @@
                                             M.base__zeroPadding,
                                             s && M.base__isTruncationAvailable,
                                         ),
-                                        style: v,
+                                        style: m,
                                     },
                                     a().createElement('div', { className: M.unTruncated, ref: _ }, p),
                                     a().createElement(
@@ -1737,7 +1735,7 @@
                                                     M.truncated,
                                                     !B.isTruncateFinished && s && M.truncated__hide,
                                                 ),
-                                                style: v,
+                                                style: m,
                                             },
                                             B.isTruncateFinished && s ? B.elementList : p,
                                         ),
@@ -1974,8 +1972,8 @@
                             ]),
                         du,
                     ),
-                    vu = hu[0],
-                    mu = hu[1],
+                    mu = hu[0],
+                    vu = hu[1],
                     bu = 'QuickTrainingDiscountTooltipApp_base_88',
                     fu = 'QuickTrainingDiscountTooltipApp_title_e8',
                     wu = 'QuickTrainingDiscountTooltipApp_label_d9',
@@ -1989,7 +1987,7 @@
                             },
                         }),
                     ku = () => {
-                        const u = mu().model;
+                        const u = vu().model;
                         return a().createElement(
                             'div',
                             { className: bu },
@@ -2008,7 +2006,7 @@
                     };
                 engine.whenReady.then(() => {
                     _().render(
-                        a().createElement(F, null, a().createElement(vu, null, a().createElement(ku, null))),
+                        a().createElement(F, null, a().createElement(mu, null, a().createElement(ku, null))),
                         document.getElementById('root'),
                     );
                 });
