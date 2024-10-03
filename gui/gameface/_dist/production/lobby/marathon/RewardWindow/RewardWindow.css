@@ -226,30 +226,30 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .TankType_icon_f9 {
     width: 81rem;
     height: 73rem;
-    background: no-repeat 50% / contain;
+    background: no-repeat center / contain;
     position: absolute;
     top: -17rem;
     left: -18rem;
 }
 
 .TankType_icon__lightTank_6d {
-    background-image: url('R.images.gui.maps.icons.marathon.tankTypes.type_tank_big_lighttank');
+    background-image: url('R.images.gui.maps.icons.marathon.tankTypes.lighttank');
 }
 
 .TankType_icon__mediumTank_f0 {
-    background-image: url('R.images.gui.maps.icons.marathon.tankTypes.type_tank_big_mediumtank');
+    background-image: url('R.images.gui.maps.icons.marathon.tankTypes.mediumtank');
 }
 
 .TankType_icon__heavyTank_3c {
-    background-image: url('R.images.gui.maps.icons.marathon.tankTypes.type_tank_big_heavytank');
+    background-image: url('R.images.gui.maps.icons.marathon.tankTypes.heavytank');
 }
 
 .TankType_icon__spg_f1 {
-    background-image: url('R.images.gui.maps.icons.marathon.tankTypes.type_tank_big_spg');
+    background-image: url('R.images.gui.maps.icons.marathon.tankTypes.spg');
 }
 
 .TankType_icon__at_spg_d6 {
-    background-image: url('R.images.gui.maps.icons.marathon.tankTypes.type_tank_big_at-spg');
+    background-image: url('R.images.gui.maps.icons.marathon.tankTypes.atspg');
 }
 
 .TextButton_base_b6 {
@@ -720,16 +720,29 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background-image: url('R.images.gui.maps.icons.marathon.rewardWindow.bg_glow');
     mix-blend-mode: screen;
     position: absolute;
-    top: -20rem;
+    top: -140rem;
     left: 50%;
     z-index: 1;
     transform: translateX(-50%);
     animation: RewardApp_fadeIn_33 0.3s 1s both;
 }
 
-.RewardApp_base__extraSmall_54 .RewardApp_radial_fd,
-.RewardApp_base__small_0d .RewardApp_radial_fd {
-    top: -180rem;
+.mediaMedium .RewardApp_radial_fd {
+    top: -50rem;
+}
+
+.mediaLarge .RewardApp_radial_fd {
+    top: 50rem;
+}
+
+.mediaExtraLarge .RewardApp_radial_fd {
+    top: 170rem;
+}
+
+@media (min-width: 2561px) {
+    .mediaExtraLarge .RewardApp_radial_fd {
+        top: 20%;
+    }
 }
 
 .RewardApp_ribbon_c4 {
@@ -742,6 +755,24 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 50%;
     z-index: 2;
     animation: RewardApp_ribbonIn_72 0.5s 0.5s both;
+}
+
+.mediaMedium .RewardApp_ribbon_c4 {
+    top: 350rem;
+}
+
+.mediaLarge .RewardApp_ribbon_c4 {
+    top: 450rem;
+}
+
+.mediaExtraLarge .RewardApp_ribbon_c4 {
+    top: 550rem;
+}
+
+@media (min-width: 2561px) {
+    .mediaExtraLarge .RewardApp_ribbon_c4 {
+        top: 45%;
+    }
 }
 
 .RewardApp_base__extraSmall_54 .RewardApp_ribbon_c4,
@@ -802,6 +833,24 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     z-index: 4;
 }
 
+.mediaMedium .RewardApp_box_3e {
+    top: 190rem;
+}
+
+.mediaLarge .RewardApp_box_3e {
+    top: 260rem;
+}
+
+.mediaExtraLarge .RewardApp_box_3e {
+    top: 360rem;
+}
+
+@media (min-width: 2561px) {
+    .mediaExtraLarge .RewardApp_box_3e {
+        top: 20%;
+    }
+}
+
 .RewardApp_base__extraSmall_54 .RewardApp_box_3e,
 .RewardApp_base__small_0d .RewardApp_box_3e {
     top: 140rem;
@@ -842,7 +891,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: 28rem;
     background: no-repeat 50% / contain;
     position: relative;
-    left: -59rem;
 }
 
 .RewardApp_base__extraSmall_54 .RewardApp_prize_ce,
@@ -862,7 +910,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .RewardApp_rewards_0f {
     display: flex;
     justify-content: center;
-    margin-top: -33rem;
     animation: RewardApp_prizeIn_1a 0.5s 1s both;
 }
 
