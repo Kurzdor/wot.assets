@@ -401,7 +401,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .Content_content_a3 {
     width: 530rem;
-    padding: 0 27rem 15rem 50rem;
+    padding: 15rem 27rem 15rem 50rem;
     background-image: linear-gradient(
         90deg,
         transparent,
@@ -415,13 +415,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .Content_content__medium_75 {
     width: 620rem;
-    padding: 0 90rem 15rem 80rem;
+    padding: 15rem 90rem 15rem 80rem;
 }
 
 .Content_content__large_bd,
 .Content_content__extraLarge_f0 {
     width: 732rem;
-    padding: 0 90rem 15rem 95rem;
+    padding: 15rem 90rem 15rem 95rem;
 }
 
 .Content_buttonWrapper_1e {
@@ -485,16 +485,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .Info_base_9f {
     display: flex;
-    padding: 15rem 0 17rem;
-}
-
-.Info_base__medium_db {
-    padding: 25rem 0;
-}
-
-.Info_base__large_ef,
-.Info_base__extraLarge_c0 {
-    padding-bottom: 23rem;
+    padding: 10rem 0;
 }
 
 .Info_icon_89 {

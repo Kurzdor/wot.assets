@@ -639,6 +639,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     cursor: pointer;
 }
 
+.DropDownControl_base__extraSmall_a3 {
+    height: 20rem;
+}
+
 .DropDownControl_base__small_22 {
     height: 24rem;
 }
@@ -688,6 +692,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding: 0 8rem;
     color: #8c8c7e;
 }
+.DropDownControl_label__extraSmall_3d {
+    padding-bottom: 2rem;
+    font-size: 14rem;
+}
 .DropDownControl_label__small_e7 {
     padding-bottom: 2rem;
     font-size: 14rem;
@@ -713,6 +721,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     top: 1rem;
     right: 1rem;
     pointer-events: none;
+}
+.DropDownControl_button__extraSmall_d2 {
+    width: 22rem;
+    height: 16rem;
 }
 .DropDownControl_button__small_b5 {
     width: 22rem;
@@ -754,6 +766,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .DropDownControl_arrow_de {
     background: no-repeat center / contain;
     position: absolute;
+}
+.DropDownControl_arrow__extraSmall_eb {
+    width: 9rem;
+    height: 6rem;
+    background-image: url('R.images.gui.maps.icons.components.dropdown.arrow_small');
+    top: 6rem;
+    left: 7rem;
 }
 .DropDownControl_arrow__small_77 {
     width: 9rem;
@@ -1035,6 +1054,11 @@ so we just add specificity to css classes here
     background-color: #1c1b12;
 }
 
+.DropDownItem_base__extraSmall_5a {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
 .DropDownItem_base__small_d6 {
     padding-top: 3rem;
     padding-bottom: 5rem;
@@ -1066,6 +1090,11 @@ so we just add specificity to css classes here
     position: relative;
 }
 
+.DropDownList_base__extraSmall_60 {
+    font-size: 14rem;
+    line-height: 16rem;
+}
+
 .DropDownList_base__small_0c {
     font-size: 14rem;
     line-height: 16rem;
@@ -1084,6 +1113,10 @@ so we just add specificity to css classes here
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
     background-color: rgba(23, 23, 15, 0.8);
     position: relative;
+}
+
+.PureDropDown_base__extraSmall_31 {
+    height: 20rem;
 }
 
 .PureDropDown_base__small_a6 {
@@ -1518,7 +1551,6 @@ so we just add specificity to css classes here
     width: 100%;
     position: relative;
     top: 1rem;
-    z-index: 1;
 }
 
 .Player_topping_6c > * {
@@ -1541,12 +1573,6 @@ so we just add specificity to css classes here
 .Player_topping__isCommander_b9 .Player_toppingBack_cd {
     background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.commander_line') center / contain
         no-repeat;
-}
-
-.Player_topping__isCommander_b9.Player_topping__isEvent_06 .Player_toppingBack_cd {
-    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.commander_line_event') center / contain
-        no-repeat;
-    mix-blend-mode: additive;
 }
 
 .Player_toppingPremiumIcon_20 {
@@ -1591,7 +1617,7 @@ so we just add specificity to css classes here
 }
 
 .Player_footer_1a {
-    padding: 0 10rem;
+    margin: 0 10rem;
     text-align: center;
     position: absolute;
     bottom: 15rem;

@@ -1,0 +1,317 @@
+.Counter_base_9e {
+    display: flex;
+    min-width: 14rem;
+    height: 14rem;
+    position: relative;
+    z-index: 0;
+    animation: Counter_show_be ease-in-out forwards;
+}
+
+.Counter_base__big_19 {
+    min-width: 21rem;
+    height: 21rem;
+}
+
+.Counter_base__small_3b {
+    min-width: 13rem;
+    height: 13rem;
+}
+
+.Counter_base__empty_98 {
+    min-width: 6rem;
+    height: 6rem;
+}
+
+.Counter_base__animated_40 {
+    animation-duration: 0.2s;
+}
+
+.Counter_base__hidden_56 {
+    animation-name: Counter_hide_b6;
+}
+.Counter_bg_74 {
+    border: 1rem solid #fe4e0f;
+    border-radius: 7rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 6rem rgba(254, 103, 0, 0.2),
+        0 0 12rem 4rem rgba(249, 0, 0, 0.3);
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.Counter_base__big_19 .Counter_bg_74 {
+    border-radius: 11rem;
+}
+.Counter_base__small_3b .Counter_bg_74 {
+    border-radius: 7rem;
+}
+.Counter_value_3e {
+    display: flex;
+    padding: 0 4rem;
+    color: #fefeec;
+    font-size: 11rem;
+    line-height: 13rem;
+    white-space: nowrap;
+}
+.Counter_base__big_19 .Counter_value_3e {
+    padding: 0 7rem;
+    font-size: 14rem;
+    line-height: 20rem;
+}
+.Counter_base__small_3b .Counter_value_3e {
+    font-size: 9rem;
+    line-height: 12rem;
+}
+.Counter_value__text_d6 {
+    padding: 0 7rem;
+}
+.Counter_base__big_19 .Counter_value__text_d6 {
+    padding: 0 10rem;
+}
+.Counter_base__small_3b .Counter_value__text_d6 {
+    padding: 0 5rem;
+    font-size: 10rem;
+}
+.Counter_base__pattern_71 .Counter_value_3e {
+    display: none;
+}
+.Counter_plus_15 {
+    position: relative;
+    top: -1rem;
+}
+.Counter_pattern_83 {
+    display: none;
+}
+.Counter_base__pattern_71 .Counter_pattern_83 {
+    display: block;
+    border-radius: 50%;
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+@keyframes Counter_show_be {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes Counter_hide_b6 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+.DifficultyItem_base_22 {
+    width: 80rem;
+    height: 120rem;
+    position: relative;
+    pointer-events: auto;
+}
+
+.DifficultyItem_base__default_fb:hover {
+    cursor: pointer;
+}
+
+.DifficultyItem_base__locked_c7:hover,
+.DifficultyItem_base__disabled_45:hover {
+    cursor: default;
+}
+
+.DifficultyItem_icon_36 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 136rem;
+    height: 136rem;
+    background: no-repeat 50% / contain;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.3s 0s ease-in-out;
+}
+
+.DifficultyItem_icon__level4_d7 {
+    background-image: url('R.images.halloween.gui.maps.icons.difficulties.diff_4');
+}
+
+.DifficultyItem_base__selected_96 .DifficultyItem_icon_36 {
+    opacity: 0;
+}
+
+.DifficultyItem_iconSelected_4d {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 136rem;
+    height: 136rem;
+    background: no-repeat 50% / contain;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s 0s ease-in-out;
+}
+
+.DifficultyItem_iconSelected__level4_0d {
+    background-image: url('R.images.halloween.gui.maps.icons.difficulties.diff_4_selected');
+}
+
+.DifficultyItem_base__selected_96 .DifficultyItem_iconSelected_4d,
+.DifficultyItem_base__disabled_45.DifficultyItem_base__selected_96 .DifficultyItem_iconSelected_4d {
+    opacity: 1;
+}
+
+.DifficultyItem_iconHighlight_9f {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 136rem;
+    height: 136rem;
+    background: no-repeat 50% / contain;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s 0s ease-in-out;
+}
+
+.DifficultyItem_iconHighlight__level4_b9 {
+    background-image: url('R.images.halloween.gui.maps.icons.difficulties.diff_4_highlighted');
+}
+
+.DifficultyItem_base_22:hover .DifficultyItem_iconHighlight_9f {
+    opacity: 1;
+}
+
+.DifficultyItem_label_11 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    height: 20rem;
+    text-align: center;
+    text-shadow:
+        0 0 48rem #000000,
+        0 0 8rem rgba(0, 0, 0, 0.5),
+        0 2rem 16rem rgba(0, 0, 0, 0.75);
+    opacity: 0.3;
+    bottom: -4rem;
+    transition: all 0.3s 0s ease-in-out;
+}
+
+.DifficultyItem_base__default_fb.DifficultyItem_base_22:hover .DifficultyItem_label_11 {
+    opacity: 0.65;
+}
+
+.DifficultyItem_base__selected_96 .DifficultyItem_label_11,
+.DifficultyItem_base__locked_c7.DifficultyItem_base__selected_96 .DifficultyItem_label_11,
+.DifficultyItem_base__locked_c7.DifficultyItem_base__selected_96.DifficultyItem_base_22:hover .DifficultyItem_label_11,
+.DifficultyItem_base__disabled_45.DifficultyItem_base__selected_96.DifficultyItem_base_22:hover
+    .DifficultyItem_label_11 {
+    text-shadow:
+        -4rem 4rem 1rem rgba(214, 36, 20, 0.4),
+        0 2rem 4rem rgba(0, 0, 0, 0.25);
+    opacity: 1;
+}
+
+.DifficultyItem_base__locked_c7 .DifficultyItem_label_11,
+.DifficultyItem_base__locked_c7.DifficultyItem_base_22:hover .DifficultyItem_label_11 {
+    opacity: 0.4;
+}
+
+.DifficultyItem_base__default_fb.DifficultyItem_base__disabled_45 .DifficultyItem_label_11,
+.DifficultyItem_base__disabled_45.DifficultyItem_base_22:hover .DifficultyItem_label_11 {
+    opacity: 0.3;
+}
+
+.DifficultyItem_base__defence_15 .DifficultyItem_label_11 {
+    width: 160rem;
+}
+
+.DifficultyItem_lock_ae {
+    width: 28rem;
+    height: 33rem;
+    background: url('R.images.halloween.gui.maps.icons.difficulties.icon_lock') no-repeat 50% / contain;
+    position: absolute;
+    bottom: 11rem;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%);
+    pointer-events: none;
+}
+
+.DifficultyItem_smoke_86 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 102rem;
+    height: 89rem;
+    background: url('R.images.halloween.gui.maps.icons.difficulties.smoke') no-repeat 50% / 100%;
+    opacity: 0;
+    bottom: 28rem;
+    transform: translateX(-50%) rotate(-35deg);
+    pointer-events: none;
+}
+
+.DifficultyItem_base__selected_96 .DifficultyItem_smoke_86 {
+    opacity: 0.6;
+    mix-blend-mode: hard-light;
+}
+
+.DifficultyItem_counter_a1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    bottom: 20rem;
+    pointer-events: none;
+}
+
+.DifficultyViewApp_base_8a {
+    position: relative;
+}
+
+.DifficultyViewApp_base__disable_9b {
+    pointer-events: none;
+}
+
+.DifficultyViewApp_items_df {
+    display: flex;
+    margin-left: 72rem;
+    position: absolute;
+    top: -8rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.DifficultyViewApp_item_09 {
+    margin: 0 12rem;
+}
+
+.DifficultyViewApp_item__last_71 {
+    margin: 0 12rem 0 52rem;
+}
+
+.DifficultyViewApp_base__disable_9b .DifficultyViewApp_item_09 {
+    pointer-events: none;
+}

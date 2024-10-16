@@ -58,7 +58,7 @@
                 t(3649);
             },
             9768: (u, e, t) => {
-                t.d(e, { O: () => eu });
+                t.d(e, { O: () => tu });
                 var n = {};
                 t.r(n),
                     t.d(n, { mouse: () => B, off: () => s, on: () => D, onResize: () => a, onScaleUpdated: () => o });
@@ -88,31 +88,31 @@
                 }
                 t.r(F),
                     t.d(F, {
-                        addModelObserver: () => S,
-                        addPreloadTexture: () => N,
+                        addModelObserver: () => I,
+                        addPreloadTexture: () => M,
                         children: () => A,
                         displayStatus: () => w,
-                        displayStatusIs: () => Q,
+                        displayStatusIs: () => J,
                         events: () => h,
-                        extraSize: () => J,
-                        forceTriggerMouseMove: () => Z,
-                        freezeTextureBeforeResize: () => q,
-                        getBrowserTexturePath: () => L,
-                        getDisplayStatus: () => Y,
-                        getScale: () => z,
-                        getSize: () => V,
-                        getViewGlobalPosition: () => $,
-                        isEventHandled: () => H,
+                        extraSize: () => uu,
+                        forceTriggerMouseMove: () => Y,
+                        freezeTextureBeforeResize: () => z,
+                        getBrowserTexturePath: () => S,
+                        getDisplayStatus: () => Q,
+                        getScale: () => G,
+                        getSize: () => U,
+                        getViewGlobalPosition: () => q,
+                        isEventHandled: () => Z,
                         isFocused: () => j,
-                        pxToRem: () => G,
-                        remToPx: () => W,
-                        resize: () => U,
+                        pxToRem: () => W,
+                        remToPx: () => K,
+                        resize: () => $,
                         sendEvent: () => R,
-                        setAnimateWindow: () => K,
-                        setEventHandled: () => X,
-                        setInputPaddingsRem: () => M,
-                        setSidePaddingsRem: () => I,
-                        whenTutorialReady: () => uu,
+                        setAnimateWindow: () => X,
+                        setEventHandled: () => H,
+                        setInputPaddingsRem: () => L,
+                        setSidePaddingsRem: () => V,
+                        whenTutorialReady: () => eu,
                     });
                 const a = r('clientResized'),
                     o = r('self.onScaleUpdated'),
@@ -241,12 +241,13 @@
                             const E = e.args,
                                 A = (function (u, e) {
                                     if (null == u) return {};
-                                    var t,
-                                        n,
-                                        E = {},
-                                        A = Object.keys(u);
-                                    for (n = 0; n < A.length; n++) (t = A[n]), e.indexOf(t) >= 0 || (E[t] = u[t]);
-                                    return E;
+                                    var t = {};
+                                    for (var n in u)
+                                        if ({}.hasOwnProperty.call(u, n)) {
+                                            if (e.indexOf(n) >= 0) continue;
+                                            t[n] = u[n];
+                                        }
+                                    return t;
                                 })(e, y);
                             return void 0 !== E
                                 ? viewEnv.handleViewEvent(
@@ -281,64 +282,65 @@
                         move(u) {
                             T(P, { isMouseEvent: !0, on: u });
                         },
-                    };
-                function N(u) {
+                    },
+                    N = 15;
+                function M(u) {
                     viewEnv.addPreloadTexture(u);
                 }
-                function M(u) {
-                    viewEnv.setHitAreaPaddingsRem(u, u, u, u, 15);
+                function L(u) {
+                    viewEnv.setHitAreaPaddingsRem(u, u, u, u, N);
                 }
-                function L(u, e, t, n = 1) {
+                function S(u, e, t, n = 1) {
                     return viewEnv.getWebBrowserTexturePath(u, e, t, n);
                 }
-                function S(u, e, t) {
+                function I(u, e, t) {
                     return viewEnv.addDataChangedCallback(u, e, t);
                 }
-                function I(u) {
-                    viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, 15);
+                function V(u) {
+                    viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, N);
                 }
-                function V(u = 'px') {
+                function U(u = 'px') {
                     return 'rem' === u ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
                 }
-                function U(u, e, t = 'px') {
+                function $(u, e, t = 'px') {
                     return 'rem' === t ? viewEnv.resizeViewRem(u, e) : viewEnv.resizeViewPx(u, e);
                 }
-                function $(u = 'rem') {
+                function q(u = 'rem') {
                     const e = viewEnv.getViewGlobalPositionRem();
-                    return 'rem' === u ? e : { x: W(e.x), y: W(e.y) };
-                }
-                function q() {
-                    viewEnv.freezeTextureBeforeResize();
+                    return 'rem' === u ? e : { x: K(e.x), y: K(e.y) };
                 }
                 function z() {
+                    viewEnv.freezeTextureBeforeResize();
+                }
+                function G() {
                     return viewEnv.getScale();
                 }
-                function G(u) {
+                function W(u) {
                     return viewEnv.pxToRem(u);
                 }
-                function W(u) {
+                function K(u) {
                     return viewEnv.remToPx(u);
                 }
-                function K(u, e) {
+                function X(u, e) {
                     viewEnv.setAnimateWindow(u, e);
                 }
                 function j() {
                     return viewEnv.isFocused();
                 }
-                function X() {
+                function H() {
                     return viewEnv.setEventHandled();
                 }
-                function H() {
+                function Z() {
                     return viewEnv.isEventHandled();
                 }
-                function Z() {
+                function Y() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function Y() {
+                function Q() {
                     return viewEnv.getShowingStatus();
                 }
-                const Q = Object.keys(w).reduce((u, e) => ((u[e] = () => viewEnv.getShowingStatus() === w[e]), u), {}),
-                    J = {
+                const J = Object.keys(w).reduce((u, e) => ((u[e] = () => viewEnv.getShowingStatus() === w[e]), u), {}),
+                    uu = {
                         set: (u, e) => {
                             viewEnv.setExtraSizeRem(u, e);
                         },
@@ -346,13 +348,13 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    uu = Promise.all([
+                    eu = Promise.all([
                         new Promise((u) => {
                             window.isDomBuilt ? u() : h.onDomBuilt(u);
                         }),
                         engine.whenReady,
                     ]),
-                    eu = { view: F, client: E, sound: g };
+                    tu = { view: F, client: E, sound: g };
             },
             5521: (u, e, t) => {
                 let n, E;
@@ -677,12 +679,13 @@
                             const E = e.args,
                                 A = (function (u, e) {
                                     if (null == u) return {};
-                                    var t,
-                                        n,
-                                        E = {},
-                                        A = Object.keys(u);
-                                    for (n = 0; n < A.length; n++) (t = A[n]), e.indexOf(t) >= 0 || (E[t] = u[t]);
-                                    return E;
+                                    var t = {};
+                                    for (var n in u)
+                                        if ({}.hasOwnProperty.call(u, n)) {
+                                            if (e.indexOf(n) >= 0) continue;
+                                            t[n] = u[n];
+                                        }
+                                    return t;
                                 })(e, B);
                             void 0 !== E
                                 ? viewEnv.handleViewEvent(
@@ -872,9 +875,8 @@
                 var n = t(6179),
                     E = t.n(n),
                     A = t(493),
-                    F = t.n(A);
-                t(3649);
-                var r = t(9916),
+                    F = t.n(A),
+                    r = (t(3649), t(9916)),
                     i = t(8613);
                 Date.now(), i.Ew.getRegionalDateTime, i.Ew.getFormattedDateTime;
                 var a = t(9768);
@@ -1038,7 +1040,7 @@
                     G = 'Modification_checkmark_ed',
                     W = 'Modification_bottomHighlight_6a',
                     K = R.images.gui.maps.icons.vehPostProgression.actionItems.pairModifications.c_120x120,
-                    j = ({ isReceived: u, isSelected: e, model: t }) => {
+                    X = ({ isReceived: u, isSelected: e, model: t }) => {
                         const A = I()(V, e && $),
                             F = (0, n.useMemo)(
                                 () => ({
@@ -1063,13 +1065,13 @@
                             ),
                         );
                     },
-                    X = 'ModificationsBlock_base_bd',
+                    j = 'ModificationsBlock_base_bd',
                     H = ({ model: u }) =>
                         E().createElement(
                             'div',
-                            { className: X },
+                            { className: j },
                             u.modifications.map(({ value: e }, t) =>
-                                E().createElement(j, {
+                                E().createElement(X, {
                                     key: t,
                                     isReceived: t === u.receivedIdx,
                                     isSelected: t === u.selectedIdx,
@@ -1247,16 +1249,16 @@
                     mu = ['children', 'className', 'theme'];
                 function vu() {
                     return (
-                        (vu =
-                            Object.assign ||
-                            function (u) {
-                                for (var e = 1; e < arguments.length; e++) {
-                                    var t = arguments[e];
-                                    for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (u[n] = t[n]);
-                                }
-                                return u;
-                            }),
-                        vu.apply(this, arguments)
+                        (vu = Object.assign
+                            ? Object.assign.bind()
+                            : function (u) {
+                                  for (var e = 1; e < arguments.length; e++) {
+                                      var t = arguments[e];
+                                      for (var n in t) ({}).hasOwnProperty.call(t, n) && (u[n] = t[n]);
+                                  }
+                                  return u;
+                              }),
+                        vu.apply(null, arguments)
                     );
                 }
                 const pu = E().forwardRef(function (u, e) {
@@ -1266,12 +1268,13 @@
                             r = void 0 === F ? 'default' : F,
                             i = (function (u, e) {
                                 if (null == u) return {};
-                                var t,
-                                    n,
-                                    E = {},
-                                    A = Object.keys(u);
-                                for (n = 0; n < A.length; n++) (t = A[n]), e.indexOf(t) >= 0 || (E[t] = u[t]);
-                                return E;
+                                var t = {};
+                                for (var n in u)
+                                    if ({}.hasOwnProperty.call(u, n)) {
+                                        if (e.indexOf(n) >= 0) continue;
+                                        t[n] = u[n];
+                                    }
+                                return t;
                             })(u, mu);
                         const o = _u(),
                             D = E().useRef(null);
@@ -1334,63 +1337,65 @@
                     F = t(6483),
                     r = t.n(F),
                     i = t(9916);
-                const a = ({ format: u, value: e }) => {
-                        const t = ((u, e = 'integral') => {
-                            let t;
-                            t = 'gold' === e ? i.B3.GOLD : i.B3.INTEGRAL;
-                            return void 0 === u ? '' : i.Z5.getNumberFormat(u, t);
-                        })(e, u);
-                        return t ? E().createElement('span', null, t) : null;
-                    },
-                    o = {
-                        base: 'Currency_base_57',
-                        icon: 'Currency_icon_c5',
-                        base__small: 'Currency_base__small_af',
-                        base__big: 'Currency_base__big_bc',
-                        base__large: 'Currency_base__large_65',
-                        base__extraLarge: 'Currency_base__extraLarge_4d',
-                        'icon__credits-small': 'Currency_icon__credits-small_9b',
-                        'icon__credits-big': 'Currency_icon__credits-big_96',
-                        'icon__credits-large': 'Currency_icon__credits-large_ac',
-                        'icon__credits-extraLarge': 'Currency_icon__credits-extraLarge_16',
-                        'icon__gold-small': 'Currency_icon__gold-small_86',
-                        'icon__gold-big': 'Currency_icon__gold-big_15',
-                        'icon__gold-large': 'Currency_icon__gold-large_36',
-                        'icon__gold-extraLarge': 'Currency_icon__gold-extraLarge_a0',
-                        'icon__crystal-small': 'Currency_icon__crystal-small_27',
-                        'icon__crystal-big': 'Currency_icon__crystal-big_cd',
-                        'icon__crystal-large': 'Currency_icon__crystal-large_d3',
-                        'icon__crystal-extraLarge': 'Currency_icon__crystal-extraLarge_09',
-                        'icon__xp-small': 'Currency_icon__xp-small_a7',
-                        'icon__xp-big': 'Currency_icon__xp-big_97',
-                        'icon__xp-large': 'Currency_icon__xp-large_6b',
-                        'icon__xp-extraLarge': 'Currency_icon__xp-extraLarge_67',
-                        'icon__freeXP-small': 'Currency_icon__freeXP-small_ca',
-                        'icon__freeXP-big': 'Currency_icon__freeXP-big_21',
-                        'icon__freeXP-large': 'Currency_icon__freeXP-large_c8',
-                        'icon__freeXP-extraLarge': 'Currency_icon__freeXP-extraLarge_58',
-                        'icon__eliteXP-small': 'Currency_icon__eliteXP-small_45',
-                        'icon__eliteXP-big': 'Currency_icon__eliteXP-big_c0',
-                        'icon__eliteXP-large': 'Currency_icon__eliteXP-large_1b',
-                        'icon__eliteXP-extraLarge': 'Currency_icon__eliteXP-extraLarge_9b',
-                        'icon__equipCoin-small': 'Currency_icon__equipCoin-small_32',
-                        'icon__equipCoin-big': 'Currency_icon__equipCoin-big_79',
-                        'icon__equipCoin-large': 'Currency_icon__equipCoin-large_2c',
-                        'icon__equipCoin-extraLarge': 'Currency_icon__equipCoin-extraLarge_8a',
-                        value: 'Currency_value_e1',
-                        value__freeXP: 'Currency_value__freeXP_cb',
-                        value__credits: 'Currency_value__credits_76',
-                        value__gold: 'Currency_value__gold_dd',
-                        value__xp: 'Currency_value__xp_b0',
-                        value__crystal: 'Currency_value__crystal_19',
-                        value__equipCoin: 'Currency_value__equipCoin_d0',
-                        value__eliteXP: 'Currency_value__eliteXP_62',
-                        value__notEnough: 'Currency_value__notEnough_56',
-                        stock: 'Currency_stock_87',
-                        stock__indent: 'Currency_stock__indent_a1',
-                        stock__interactive: 'Currency_stock__interactive_93',
-                        stockBackground: 'Currency_stockBackground_82',
-                    };
+                class a extends E().PureComponent {
+                    render() {
+                        let u;
+                        if ('gold' === this.props.format) u = i.B3.GOLD;
+                        else u = i.B3.INTEGRAL;
+                        const e = i.Z5.getNumberFormat(this.props.value, u);
+                        return void 0 !== this.props.value && void 0 !== e ? e : null;
+                    }
+                }
+                a.defaultProps = { format: 'integral' };
+                const o = {
+                    base: 'Currency_base_57',
+                    icon: 'Currency_icon_c5',
+                    base__small: 'Currency_base__small_af',
+                    base__big: 'Currency_base__big_bc',
+                    base__large: 'Currency_base__large_65',
+                    base__extraLarge: 'Currency_base__extraLarge_4d',
+                    'icon__credits-small': 'Currency_icon__credits-small_9b',
+                    'icon__credits-big': 'Currency_icon__credits-big_96',
+                    'icon__credits-large': 'Currency_icon__credits-large_ac',
+                    'icon__credits-extraLarge': 'Currency_icon__credits-extraLarge_16',
+                    'icon__gold-small': 'Currency_icon__gold-small_86',
+                    'icon__gold-big': 'Currency_icon__gold-big_15',
+                    'icon__gold-large': 'Currency_icon__gold-large_36',
+                    'icon__gold-extraLarge': 'Currency_icon__gold-extraLarge_a0',
+                    'icon__crystal-small': 'Currency_icon__crystal-small_27',
+                    'icon__crystal-big': 'Currency_icon__crystal-big_cd',
+                    'icon__crystal-large': 'Currency_icon__crystal-large_d3',
+                    'icon__crystal-extraLarge': 'Currency_icon__crystal-extraLarge_09',
+                    'icon__xp-small': 'Currency_icon__xp-small_a7',
+                    'icon__xp-big': 'Currency_icon__xp-big_97',
+                    'icon__xp-large': 'Currency_icon__xp-large_6b',
+                    'icon__xp-extraLarge': 'Currency_icon__xp-extraLarge_67',
+                    'icon__freeXP-small': 'Currency_icon__freeXP-small_ca',
+                    'icon__freeXP-big': 'Currency_icon__freeXP-big_21',
+                    'icon__freeXP-large': 'Currency_icon__freeXP-large_c8',
+                    'icon__freeXP-extraLarge': 'Currency_icon__freeXP-extraLarge_58',
+                    'icon__eliteXP-small': 'Currency_icon__eliteXP-small_45',
+                    'icon__eliteXP-big': 'Currency_icon__eliteXP-big_c0',
+                    'icon__eliteXP-large': 'Currency_icon__eliteXP-large_1b',
+                    'icon__eliteXP-extraLarge': 'Currency_icon__eliteXP-extraLarge_9b',
+                    'icon__equipCoin-small': 'Currency_icon__equipCoin-small_32',
+                    'icon__equipCoin-big': 'Currency_icon__equipCoin-big_79',
+                    'icon__equipCoin-large': 'Currency_icon__equipCoin-large_2c',
+                    'icon__equipCoin-extraLarge': 'Currency_icon__equipCoin-extraLarge_8a',
+                    value: 'Currency_value_e1',
+                    value__freeXP: 'Currency_value__freeXP_cb',
+                    value__credits: 'Currency_value__credits_76',
+                    value__gold: 'Currency_value__gold_dd',
+                    value__xp: 'Currency_value__xp_b0',
+                    value__crystal: 'Currency_value__crystal_19',
+                    value__equipCoin: 'Currency_value__equipCoin_d0',
+                    value__eliteXP: 'Currency_value__eliteXP_62',
+                    value__notEnough: 'Currency_value__notEnough_56',
+                    stock: 'Currency_stock_87',
+                    stock__indent: 'Currency_stock__indent_a1',
+                    stock__interactive: 'Currency_stock__interactive_93',
+                    stockBackground: 'Currency_stockBackground_82',
+                };
                 var D = t(329);
                 const s = (0, n.memo)(
                         ({

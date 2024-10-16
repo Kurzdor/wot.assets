@@ -643,7 +643,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translateY(4rem);
 }
 .Currency_icon__eliteXP-small_45 {
-    background-image: url('R.images.gui.maps.icons.library.EliteXpIcon-2');
+    background-image: url('R.images.gui.maps.icons.library.EliteXpIcon_2');
 }
 .Currency_base__small_af .Currency_icon__eliteXP-small_45 {
     transform: translateY(1rem);
@@ -973,11 +973,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .CurrencyBalance_currency__freexp_06 {
     background-image: url('R.images.gui.maps.icons.library.FreeXpIcon_2');
     background-position: 0 1rem;
-}
-
-.CurrencyBalance_errorText_b7 {
-    padding-right: 18rem;
-    background: url('R.images.gui.maps.icons.library.alertIcon') right center / 16rem 16rem no-repeat;
 }
 
 .App_base_8a {

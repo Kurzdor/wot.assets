@@ -225,6 +225,24 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     filter: blur(12px);
 }
 
+.Background_base__grayscale_1b {
+    filter: grayscale(1);
+}
+
+.Background_base__blur_69.Background_base__grayscale_1b {
+    filter: blur(10px) grayscale(1);
+}
+
+.Background_blur_a9 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat 50% / cover;
+    filter: blur(12px);
+}
+
 .Background_vignette_79 {
     position: absolute;
     top: 0;

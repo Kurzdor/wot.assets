@@ -571,27 +571,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     opacity: 0.5;
 }
 
-.CustomComponents_freeCrew_17 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    width: 222rem;
-    height: 132rem;
-    padding: 6rem 10rem 0 0;
-    background: url('R.images.gui.maps.icons.crew.cardGlow.discount') no-repeat center / cover;
-    position: absolute;
-    top: 0;
-    right: 0;
-    pointer-events: none;
-}
-
-.CustomComponents_freeCrewLabel_7d {
-    color: #e9e2bf;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
-
 .ExtendedText_base_71 {
     display: flex;
     line-height: 1.2;
@@ -834,33 +813,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
-.Description_bonusSkill_0d {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0;
-    position: relative;
-}
-
-.mediaSmallWidth .Description_bonusSkill_0d {
-    margin-bottom: 9rem;
-}
-
-.Description_percentText_01 {
-    color: #ffdd99;
-    font-size: 28rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-left: 8rem;
-    position: relative;
-    bottom: 2rem;
-}
-
-.Description_percentText__highlighted_1a {
-    text-shadow:
-        0 0 8rem rgba(255, 122, 0, 1),
-        0 0 4rem rgba(255, 127, 0, 0.25);
-}
-
 .Description_resetPerksLayout_44 {
     display: flex;
     align-items: center;
@@ -906,47 +858,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .FormatText_base_d0 {
     display: flex;
     flex-wrap: wrap;
-}
-
-.SkillIcon_base_43 {
-    display: flex;
-    background: no-repeat center / contain;
-    position: relative;
-}
-
-.SkillIcon_base__c_22x22_14 {
-    width: 22rem;
-    height: 22rem;
-}
-
-.SkillIcon_base__medium_d0 {
-    width: 24rem;
-    height: 24rem;
-}
-
-.SkillIcon_base__c_36x36_flat_7e {
-    width: 36rem;
-    height: 36rem;
-}
-
-.SkillIcon_base__big_ae {
-    width: 52rem;
-    height: 52rem;
-}
-
-.SkillIcon_base__c_80x80_79 {
-    width: 80rem;
-    height: 80rem;
-}
-
-.SkillIcon_base__c_120x90_8c {
-    width: 120rem;
-    height: 90rem;
-}
-
-.SkillIcon_base__dialogs_e5 {
-    width: 180rem;
-    height: 135rem;
 }
 
 .Currency_base_57 {
@@ -1089,7 +1000,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translateY(4rem);
 }
 .Currency_icon__eliteXP-small_45 {
-    background-image: url('R.images.gui.maps.icons.library.EliteXpIcon-2');
+    background-image: url('R.images.gui.maps.icons.library.EliteXpIcon_2');
 }
 .Currency_base__small_af .Currency_icon__eliteXP-small_45 {
     transform: translateY(1rem);
@@ -1427,7 +1338,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding: 0 14rem;
 }
 
-.PriceCard_base__small_b0 .PriceCard_description__recruit_60,
 .PriceCard_base__small_b0 .PriceCard_description__reset_aa {
     margin-top: -20rem;
 }
@@ -1832,6 +1742,47 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .AnimatedNewSkill_base_0f {
     width: 24rem;
     height: 24rem;
+}
+
+.SkillIcon_base_43 {
+    display: flex;
+    background: no-repeat center / contain;
+    position: relative;
+}
+
+.SkillIcon_base__c_22x22_14 {
+    width: 22rem;
+    height: 22rem;
+}
+
+.SkillIcon_base__medium_d0 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.SkillIcon_base__c_36x36_flat_7e {
+    width: 36rem;
+    height: 36rem;
+}
+
+.SkillIcon_base__big_ae {
+    width: 52rem;
+    height: 52rem;
+}
+
+.SkillIcon_base__c_80x80_79 {
+    width: 80rem;
+    height: 80rem;
+}
+
+.SkillIcon_base__c_120x90_8c {
+    width: 120rem;
+    height: 90rem;
+}
+
+.SkillIcon_base__dialogs_e5 {
+    width: 180rem;
+    height: 135rem;
 }
 
 .Skill_base_1f {

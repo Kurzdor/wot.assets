@@ -1,0 +1,645 @@
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+.ExtendedText_base__zeroPadding_25 {
+    padding: 0;
+}
+
+.ExtendedText_base__isTruncationAvailable_5b {
+    width: 100%;
+}
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+    opacity: 0;
+}
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #ff2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #ffffff;
+}
+
+.colors_white_45 {
+    color: #f2f2f7;
+}
+
+.colors_whiteOrange_81 {
+    color: #fefeec;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #e9e2bf;
+}
+
+.colors_par_5b {
+    color: #8c8c7e;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362e;
+}
+
+.colors_red_79 {
+    color: #ff2717;
+}
+
+.colors_redDark_73 {
+    color: #b70000;
+}
+
+.colors_yellow_76 {
+    color: #feab34;
+}
+
+.colors_orange_cd {
+    color: #ee7000;
+}
+
+.colors_cream_0f {
+    color: #ffdd99;
+}
+
+.colors_brown_82 {
+    color: #cbac77;
+}
+
+.colors_greenBright_68 {
+    color: #80d43a;
+}
+
+.colors_green_fa {
+    color: #7ab300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #ccffff;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09e2ff;
+}
+
+.colors_cred_35 {
+    color: #ced9d9;
+}
+
+.colors_gold_c3 {
+    color: #ffc363;
+}
+
+.colors_bond_ce {
+    color: #c9c9b6;
+}
+
+.colors_prom_83 {
+    color: #a29b70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.renderers_word_f3 {
+    white-space: pre;
+    overflow-wrap: normal;
+}
+
+.Text_base_3f {
+    width: 100%;
+    height: 104%;
+    letter-spacing: 0.03em;
+    position: relative;
+}
+
+.Text_base__whiteSpanish_9d {
+    color: #e9e2bf;
+}
+
+.Text_base__red_f1 {
+    color: #ff5454;
+}
+
+.Text_base__currency_66 {
+    color: #ffe0ab;
+}
+
+.Text_base__heading_72 {
+    color: #fdd194;
+}
+
+.Text_base__lightRed_ee {
+    color: #ff9090;
+}
+
+.Text_base__metaHeading_73 {
+    color: #ff7e00;
+    /* stylelint-disable-next-line property-no-unknown */
+    text-stroke: 1rem #ff545466;
+}
+
+.Text_layer0_29 {
+    width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+.Text_base__whiteSpanish_9d .Text_layer0__shadow_c3 {
+    text-shadow: -4rem 4rem 1rem rgba(233, 226, 191, 0.3);
+}
+
+.Text_base__red_f1 .Text_layer0__shadow_c3,
+.Text_base__currency_66 .Text_layer0__shadow_c3,
+.Text_base__heading_72 .Text_layer0__shadow_c3 {
+    text-shadow:
+        -4rem 7rem 0 rgba(255, 39, 23, 0.14),
+        0 0 15rem #d51f00;
+}
+
+.Text_base__metaHeading_73 .Text_layer0__shadow_c3 {
+    text-shadow:
+        -4rem 7rem 0 rgba(255, 39, 23, 0.2),
+        0 0 15rem #d51f00,
+        0 0 3rem 0rem #f6300f inset;
+}
+
+.Text_layer1_81 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #f66b6b;
+}
+
+.Text_base__metaHeading_73 .Text_layer1_81 {
+    color: rgba(209, 17, 12, 0.6);
+}
+
+.Text_layer2_ff {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 1) 85%);
+}
+
+.Text_base__metaHeading_73 .Text_layer2_ff {
+    mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 100%);
+}
+
+.Text_layer3_47 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: rgba(0, 0, 0, 0.3);
+    text-shadow: none;
+    mask-size: 6rem 3rem;
+    mask-repeat: repeat;
+    mask-image: url('R.images.halloween.gui.maps.icons.common.text_mask_pattern');
+}
+
+.Text_base__heading_72 .Text_layer3_47,
+.Text_base__metaHeading_73 .Text_layer3_47 {
+    color: rgba(0, 0, 0, 0.2);
+    mask-size: 1rem 4rem;
+    mask-repeat: repeat;
+    mask-image: url('R.images.halloween.gui.maps.icons.common.text_mask_pattern_header');
+}
+
+.Text_layer4_f7 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #000000;
+    text-shadow: none;
+    opacity: 0.7;
+    mask-size: 628rem 384rem;
+    mask-repeat: repeat;
+    mask-image: url('R.images.halloween.gui.maps.icons.common.text_mask_sharp');
+}
+
+.Button_base_e7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(1);
+    opacity: 1;
+    position: relative;
+    transition:
+        filter 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.Button_base__small_40 {
+    height: 30rem;
+}
+
+.Button_base__medium_ee {
+    height: 40rem;
+}
+
+.Button_base__medium_ee[lang='sr'],
+.Button_base__medium_ee[lang='ko'],
+.Button_base__medium_ee[lang='tr'],
+.Button_base__medium_ee[lang='ja'],
+.Button_base__medium_ee[lang='hr'],
+.Button_base__medium_ee[lang='zh_sg'],
+.Button_base__medium_ee[lang='zh_cn'],
+.Button_base__medium_ee[lang='zh_tw'] {
+    height: 44rem;
+}
+
+.Button_base__disabled_41 {
+    cursor: default;
+}
+
+.Button_base__active_ef {
+    opacity: 0.6;
+}
+
+.Button_base__hover_39 {
+    filter: brightness(1.2);
+}
+.Button_border_bf {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition:
+        border 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
+}
+.Button_base__secondary_b5 .Button_border_bf {
+    border: 2rem solid #f6300f;
+}
+.Button_base__primary_d4 .Button_border_bf {
+    border: 2rem solid #e9e2bf;
+}
+.Button_base__primary_d4.Button_base__active_ef .Button_border_bf {
+    border: 2rem solid #f6300f;
+    opacity: 0.6;
+}
+.Button_base__primary_d4.Button_base__hover_39 .Button_border_bf {
+    border: 2rem solid #f6300f;
+}
+.Button_shadow_b6 {
+    width: 100%;
+    height: 100%;
+    border: 2rem solid rgba(255, 39, 23, 0.21);
+    position: absolute;
+    bottom: -7rem;
+    left: -4rem;
+}
+.Button_content_86 {
+    margin: 2rem 10rem 0;
+    position: relative;
+}
+.Button_base__small_40 .Button_content_86 {
+    margin: 2rem 10rem 0;
+}
+.Button_base__small_40 .Button_content_86[lang='sr'],
+.Button_base__small_40 .Button_content_86[lang='ko'],
+.Button_base__small_40 .Button_content_86[lang='tr'],
+.Button_base__small_40 .Button_content_86[lang='ja'],
+.Button_base__small_40 .Button_content_86[lang='hr'],
+.Button_base__small_40 .Button_content_86[lang='zh_sg'],
+.Button_base__small_40 .Button_content_86[lang='zh_cn'],
+.Button_base__small_40 .Button_content_86[lang='zh_tw'] {
+    margin-top: 4rem;
+}
+.Button_base__medium_ee .Button_content_86 {
+    margin: -5rem 15rem 0;
+}
+.Button_base__medium_ee .Button_content_86[lang='sr'],
+.Button_base__medium_ee .Button_content_86[lang='ko'],
+.Button_base__medium_ee .Button_content_86[lang='tr'],
+.Button_base__medium_ee .Button_content_86[lang='ja'],
+.Button_base__medium_ee .Button_content_86[lang='hr'],
+.Button_base__medium_ee .Button_content_86[lang='zh_sg'],
+.Button_base__medium_ee .Button_content_86[lang='zh_cn'],
+.Button_base__medium_ee .Button_content_86[lang='zh_tw'] {
+    margin-top: 2rem;
+}
+.Button_caption_9b {
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Button_base__small_40 .Button_caption_9b {
+    font-size: 20rem;
+}
+.Button_base__medium_ee .Button_caption_9b {
+    font-size: 36rem;
+}
+.Button_primaryCaption_e9 {
+    color: #e9e2bf;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-shadow: -4rem 7rem 0 rgba(255, 39, 23, 0.25);
+    transition: all 0.3s ease-in-out;
+}
+.Button_base__small_40 .Button_primaryCaption_e9 {
+    margin-top: -5rem;
+}
+.Button_base__medium_ee .Button_primaryCaption_e9 {
+    font-size: 36rem;
+}
+.Button_base__hover_39 .Button_primaryCaption_e9 {
+    color: #f6300f;
+}
+.Button_base__active_ef .Button_primaryCaption_e9 {
+    opacity: 0.6;
+}
+.Button_hintAnim_fe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2rem solid #ff2717;
+    animation: Button_borderWaveAnimation_c1 20s 10s ease-in-out infinite;
+    pointer-events: none;
+}
+@keyframes Button_borderWaveAnimation_c1 {
+    0% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+
+    5% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+
+    10%,
+    100% {
+        opacity: 0;
+        transform: scale(1.5, 2.5);
+    }
+}
+
+.KeyIcon_base_5a {
+    background: no-repeat 50% / contain;
+}
+
+.KeyIcon_base__c28x28_d5 {
+    width: 28rem;
+    height: 28rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_28x28');
+}
+
+.KeyIcon_base__c30x30_ba {
+    width: 28rem;
+    height: 28rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_30x30');
+}
+
+.KeyIcon_base__c36x36_dd {
+    width: 36rem;
+    height: 36rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_36x36');
+}
+
+.KeyIcon_base__c36x36_dd.KeyIcon_base__gray_fc {
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_gray_36x36');
+}
+
+.KeyIcon_base__c44x44_bd {
+    width: 44rem;
+    height: 44rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_44x44');
+}
+
+.KeyIcon_base__c44x44_bd.KeyIcon_base__gray_fc {
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_gray_44x44');
+}
+
+.KeyIcon_base__c70x70_61 {
+    width: 70rem;
+    height: 70rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_70x70');
+}
+
+.KeyIcon_base__c110x110_7c {
+    width: 110rem;
+    height: 110rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_widget_icon');
+}
+
+.NumberAnimation_base_9f {
+    display: flex;
+    position: relative;
+}
+
+.KeysViewApp_base_bb {
+    width: 158rem;
+    height: 100rem;
+    position: relative;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.KeysViewApp_base__hover_77 {
+    cursor: pointer;
+}
+
+.KeysViewApp_base__active_75 {
+    opacity: 0.6;
+}
+.KeysViewApp_blink_22 {
+    width: 100%;
+    height: 50rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+.KeysViewApp_blink__anim_f2 {
+    animation: KeysViewApp_blinkAnim_e9 25s 5s ease-in-out infinite;
+}
+.KeysViewApp_blink__hoverAnim_33 {
+    animation: KeysViewApp_hoverBlinkAnim_49 1.5s ease-in-out 1 forwards;
+}
+.KeysViewApp_blink__unhoverAnim_3e {
+    animation: KeysViewApp_unHoverBlinkAnim_25 0.3s ease-in-out 1 forwards;
+}
+.KeysViewApp_count_9d {
+    color: #ffdd99;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    align-self: flex-end;
+    margin-right: 60rem;
+    text-shadow:
+        -4rem 7rem 0 rgba(255, 39, 23, 0.21),
+        0 0 15rem #d51f00;
+    position: relative;
+}
+.KeysViewApp_key_36 {
+    position: absolute;
+    top: -33rem;
+    right: -29rem;
+}
+.KeysViewApp_buttons_03 {
+    display: flex;
+    filter: brightness(1);
+    position: absolute;
+    right: 0;
+    bottom: 3rem;
+    transition: filter 0.4s ease-in-out;
+    pointer-events: none;
+}
+.KeysViewApp_base__hover_77 .KeysViewApp_buttons_03 {
+    filter: brightness(1.3);
+}
+.KeysViewApp_button_83 {
+    max-width: 150rem;
+    max-height: 30rem;
+}
+.KeysViewApp_arrow_af {
+    width: 39rem;
+    height: 46rem;
+    margin: -8rem -15rem 0 -10rem;
+    background: url('R.images.halloween.gui.maps.icons.hangar.arrow') no-repeat 50% / contain;
+}
+@keyframes KeysViewApp_blinkAnim_e9 {
+    0%,
+    1%,
+    1.55%,
+    2.15%,
+    2.8%,
+    3%,
+    4.1%,
+    4.65%,
+    100% {
+        filter: none;
+    }
+
+    0.7%,
+    1.1%,
+    1.5%,
+    1.6%,
+    2%,
+    2.3%,
+    2.75%,
+    2.85%,
+    3.2%,
+    3.8%,
+    4.2%,
+    4.6% {
+        filter: drop-shadow(0 0 25rem rgba(255, 39, 23, 0.6));
+    }
+}
+@keyframes KeysViewApp_hoverBlinkAnim_49 {
+    0%,
+    20%,
+    40%,
+    50%,
+    80%,
+    30%,
+    90% {
+        filter: none;
+    }
+
+    25%,
+    35%,
+    45%,
+    75%,
+    85%,
+    100% {
+        filter: drop-shadow(0 0 25rem rgba(255, 39, 23, 0.6));
+    }
+}
+@keyframes KeysViewApp_unHoverBlinkAnim_25 {
+    0% {
+        filter: drop-shadow(0 0 25rem rgba(255, 39, 23, 0.6));
+    }
+
+    100% {
+        filter: none;
+    }
+}

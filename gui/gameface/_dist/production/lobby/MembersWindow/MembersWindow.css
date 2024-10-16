@@ -1,0 +1,2120 @@
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.6);
+    position: relative;
+    cursor: pointer;
+}
+
+.CButton_base__main_42,
+.CButton_base__primary_7f,
+.CButton_base__primaryGreen_6f,
+.CButton_base__primaryRed_ec,
+.CButton_base__secondary_50 {
+    background-size: 100% 100%;
+}
+
+.CButton_base__main_42 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_main');
+}
+
+.CButton_base__primary_7f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+
+.CButton_base__primaryGreen_6f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+
+.CButton_base__primaryRed_ec {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+
+.CButton_base__secondary_50 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+
+.CButton_base__ghost_ed {
+    border-radius: 3rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 0 1rem rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.CButton_base__extraSmall_27 {
+    min-height: 17rem;
+    padding: 0 16rem;
+}
+
+.CButton_base__small_df,
+.CButton_base__medium_74 {
+    padding: 0 20rem;
+}
+
+.CButton_base__small_df {
+    min-height: 18rem;
+}
+
+.CButton_base__medium_74 {
+    min-height: 32rem;
+}
+
+.CButton_base__large_5c {
+    min-height: 48rem;
+}
+
+.CButton_base__disabled_d9 {
+    cursor: default;
+}
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+}
+.CButton_base__primary_7f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+.CButton_base__secondary_50 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow 0.16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+    border-radius: 2rem;
+    box-shadow: inset 0 0 2rem 1rem rgba(255, 85, 0, 0.2);
+}
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(
+        180deg,
+        rgba(252, 248, 235, 0.25) 0%,
+        rgba(252, 248, 235, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0;
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+    opacity: 1;
+}
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+    box-shadow: 0 15rem 12rem 0 rgba(242, 242, 230, 0.11) inset;
+    background-color: rgba(8, 6, 0, 0.18);
+    background-image: none;
+}
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+    opacity: 0;
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+    opacity: 1;
+}
+.CButton_stateDisabled_54 {
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem 15rem;
+    visibility: hidden;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+    visibility: inherit;
+}
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: 0.03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang='ja'],
+.CButton_content_cc[lang='ko'],
+.CButton_content_cc[lang='zh_tw'],
+.CButton_content_cc[lang='zh_sg'],
+.CButton_content_cc[lang='zh_cn'],
+.CButton_content_cc[lang='th'] {
+    font-weight: 400;
+}
+.CButton_base__main_42 .CButton_content_cc,
+.CButton_base__primaryRed_ec .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #600;
+}
+.CButton_base__secondary_50 .CButton_content_cc {
+    color: rgba(254, 254, 236, 0.75);
+}
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #1c2502;
+}
+.CButton_base__extraSmall_27 .CButton_content_cc {
+    font-size: 12rem;
+}
+.CButton_base__small_df .CButton_content_cc {
+    font-size: 14rem;
+}
+.CButton_base__medium_74 .CButton_content_cc {
+    font-size: 15rem;
+}
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
+}
+.CButton_base__disabled_d9 .CButton_content_cc {
+    opacity: 0.6;
+}
+
+.Button_base_8d {
+    width: 18rem;
+    height: 18rem;
+    margin-top: 6rem;
+    background: center / contain no-repeat;
+    cursor: pointer;
+}
+
+.Button_base__close_b1 {
+    background-image: url('R.images.gui.maps.icons.windows.controls.Window_CloseButton_UpBitmap');
+}
+
+.Button_base__close_b1:hover {
+    background-image: url('R.images.gui.maps.icons.windows.controls.Window_CloseButton_OverBitmap'),
+        url('R.images.gui.maps.icons.windows.controls.Window_CloseButton_UpBitmap');
+}
+
+.Button_base__close_b1:active {
+    background-image: url('R.images.gui.maps.icons.windows.controls.Window_CloseButton_PressBitmap'),
+        url('R.images.gui.maps.icons.windows.controls.Window_CloseButton_UpBitmap');
+}
+
+.Button_base__minimize_f7 {
+    margin-right: 2rem;
+    background-image: url('R.images.gui.maps.icons.windows.controls.minimize_up');
+}
+
+.Button_base__minimize_f7:hover {
+    background-image: url('R.images.gui.maps.icons.windows.controls.minimize_over'),
+        url('R.images.gui.maps.icons.windows.controls.minimize_up');
+}
+
+.Button_base__minimize_f7:active {
+    background-image: url('R.images.gui.maps.icons.windows.controls.minimize_press'),
+        url('R.images.gui.maps.icons.windows.controls.minimize_up');
+}
+
+.Info_base_7b {
+    width: 16rem;
+    height: 16rem;
+    margin: 6rem 0 0 8rem;
+    background: url('R.images.gui.maps.icons.library.InformationIcon') center / contain no-repeat;
+}
+
+.Title_base_44 {
+    display: flex;
+    flex: 1;
+    margin-top: 1rem;
+    margin-right: 20rem;
+    color: #fefeec;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 120%;
+    text-shadow: #000000 0 -1rem;
+}
+
+.Header_base_ff {
+    display: flex;
+    width: 100%;
+    height: 28rem;
+    padding-left: 10rem;
+    padding-right: 6rem;
+    position: relative;
+    cursor: grab;
+}
+
+.Header_base__grabbing_dc {
+    cursor: grabbing;
+}
+
+.Header_icon_6e {
+    width: 23rem;
+    height: 20rem;
+    background: no-repeat center;
+}
+
+.Header_icon__reload_c2 {
+    background-image: url('R.images.gui.maps.icons.library.refresh');
+}
+
+.Header_reloadButton_19 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 10rem;
+    padding: 0;
+}
+
+.WindowDecorator_base_6a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* stylelint-disable declaration-block-no-redundant-longhand-properties */
+    padding-left: var(--outer-shadow-width);
+    padding-top: var(--outer-shadow-width);
+    padding-right: var(--outer-shadow-width);
+    padding-bottom: var(--outer-shadow-width);
+    /* stylelint-enable declaration-block-no-redundant-longhand-properties */
+    overflow: hidden;
+    position: relative;
+}
+
+.WindowDecorator_frame_b5 {
+    border: transparent solid;
+    border-width: 30rem 27rem 43rem 24rem;
+    border-image: url('R.images.gui.maps.icons.windows.window_bg.centered') 30 27 43 24 fill;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.WindowDecorator_frame__focused_af {
+    opacity: 1;
+}
+
+.WindowDecorator_container_1d {
+    position: relative;
+}
+
+.WindowDecorator_contentDecorations_be {
+    border: transparent solid;
+    border-width: 9rem 13rem 11rem;
+    border-image: url('R.images.gui.maps.icons.windows.window_bg.window_form_bg_new') 9 13 11 fill;
+    position: absolute;
+    top: -2rem;
+    right: -2rem;
+    bottom: -2rem;
+    left: -2rem;
+}
+
+.WindowDecorator_content_0b {
+    position: absolute;
+}
+
+.BonusInfoIcon_bonusInfoIcon_3d {
+    width: 16rem;
+    height: 16rem;
+    margin-left: 8rem;
+    background-size: contain;
+}
+
+.SubView_base_df {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.Header_base_a7 {
+    height: 120rem;
+    padding: 14rem 21rem;
+    background: no-repeat center / contain;
+}
+
+.Header_header_9f {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 19rem;
+}
+
+.Header_label_af {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+}
+
+.Header_description_41 {
+    height: 18rem;
+    margin: 1rem 0 3rem;
+    color: #8c8c7e;
+    font-size: 14rem;
+}
+
+.Header_bonusInfo_3f {
+    display: flex;
+    flex-direction: row;
+}
+
+.Header_bonusesIcon_7a {
+    margin-top: -7rem;
+    position: relative;
+}
+
+.Header_xp_87 {
+    width: 48rem;
+    height: 48rem;
+    background: url('R.images.gui.maps.icons.platoon.common.exp') center / contain no-repeat;
+    position: absolute;
+    right: -10rem;
+}
+
+.Header_credits_82 {
+    width: 48rem;
+    height: 48rem;
+    background: url('R.images.gui.maps.icons.platoon.common.silver') center / contain no-repeat;
+    position: absolute;
+    right: -10rem;
+}
+
+.Header_base__fullBonuses_2f .Header_credits_82 {
+    right: 8rem;
+}
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.Separator_base_98 {
+    pointer-events: none;
+}
+
+.Separator_base__horizontal_34 {
+    width: 100%;
+    height: 1rem;
+}
+
+.Separator_base__vertical_9d {
+    width: 1rem;
+    height: 100%;
+}
+
+.Separator_image_5b {
+    background: no-repeat center / 100% 100%;
+}
+
+.Separator_base__horizontal_34 .Separator_image_5b {
+    width: 100%;
+    height: 144rem;
+    margin: -71rem auto 0;
+}
+
+.Separator_base__vertical_9d .Separator_image_5b {
+    width: 144rem;
+    height: 100%;
+    margin: 0 -71rem;
+}
+
+.ToggleButton_base_b9 {
+    border-radius: 2rem;
+    position: relative;
+}
+
+.ToggleButton_content_85 {
+    font-weight: 300;
+}
+
+.ToggleButton_overlay_0a {
+    border-radius: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.ToggleButton_base__active_68 .ToggleButton_overlay_0a {
+    border: 1rem solid rgba(255, 195, 99, 0.75);
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.6),
+        0 0 7px rgba(238, 112, 0, 0.5);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 42, 0, 0.1) 0%,
+        rgba(255, 42, 0, 0) 0.01%,
+        rgba(255, 127, 0, 0.1) 100%
+    );
+}
+
+.ToggleButton_indicator_85 {
+    width: 40rem;
+    height: 29rem;
+    background: url('R.images.gui.maps.icons.buttons.toggle_indicator') no-repeat center / contain;
+    position: absolute;
+    bottom: -14rem;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, 0);
+    pointer-events: none;
+}
+
+.ToggleButton_base__active_68 .ToggleButton_indicator_85 {
+    background-image: url('R.images.gui.maps.icons.buttons.toggle_indicator_active');
+}
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.Footer_base_d0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10rem 19rem 20rem;
+}
+
+.Footer_message_3d {
+    margin: 14rem 0 7rem;
+    color: #595950;
+    font-size: 14rem;
+    text-align: center;
+}
+
+.Footer_message__alert_64 {
+    color: #ff2717;
+}
+
+.TextOverflow_base_3b {
+    max-width: 100%;
+    line-height: 1.3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.DropDownControl_base_46 {
+    display: flex;
+    height: 100%;
+    border: 1rem solid #464538;
+    border-radius: 2rem;
+    box-shadow:
+        inset 0 0 1rem #000,
+        inset 0 0 8rem #000;
+    position: relative;
+    cursor: pointer;
+}
+
+.DropDownControl_base__extraSmall_a3 {
+    height: 20rem;
+}
+
+.DropDownControl_base__small_22 {
+    height: 24rem;
+}
+
+.DropDownControl_base__medium_09 {
+    height: 32rem;
+}
+
+.DropDownControl_base__disabled_37 {
+    cursor: default;
+}
+
+.DropDownControl_base__focused_63 {
+    border-color: #75552c;
+}
+
+.DropDownControl_base__selected_46 {
+    border-color: #7ab300;
+}
+.DropDownControl_stateHighlight_16 {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+.DropDownControl_base__over_e7 .DropDownControl_stateHighlight_16 {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 1;
+}
+.DropDownControl_base__down_1c .DropDownControl_stateHighlight_16,
+.DropDownControl_base__open_e3 .DropDownControl_stateHighlight_16 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.4) 100%);
+    opacity: 1;
+}
+.DropDownControl_label_12 {
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    padding: 0 8rem;
+    color: #8c8c7e;
+}
+.DropDownControl_label__extraSmall_3d {
+    padding-bottom: 2rem;
+    font-size: 14rem;
+}
+.DropDownControl_label__small_e7 {
+    padding-bottom: 2rem;
+    font-size: 14rem;
+}
+.DropDownControl_label__medium_0b {
+    padding-bottom: 5rem;
+    font-size: 16rem;
+}
+.DropDownControl_label__placeholder_98 {
+    color: #595950;
+}
+.DropDownControl_base__down_1c .DropDownControl_label_12,
+.DropDownControl_base__open_e3 .DropDownControl_label_12 {
+    opacity: 0.8;
+}
+.DropDownControl_base__disabled_37 .DropDownControl_label_12 {
+    color: #37362e;
+}
+.DropDownControl_button_cb {
+    display: flex;
+    background: url('R.images.gui.maps.icons.components.dropdown.button') no-repeat center / 100%;
+    position: relative;
+    top: 1rem;
+    right: 1rem;
+    pointer-events: none;
+}
+.DropDownControl_button__extraSmall_d2 {
+    width: 22rem;
+    height: 16rem;
+}
+.DropDownControl_button__small_b5 {
+    width: 22rem;
+    height: 20rem;
+}
+.DropDownControl_button__medium_14 {
+    width: 28rem;
+    height: 28rem;
+}
+.DropDownControl_base__down_1c .DropDownControl_button_cb {
+    opacity: 0.6;
+}
+.DropDownControl_base__open_e3 .DropDownControl_button_cb {
+    opacity: 0.8;
+}
+.DropDownControl_base__disabled_37 .DropDownControl_button_cb {
+    opacity: 0.8;
+}
+.DropDownControl_gradient_b5 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+.DropDownControl_base__over_e7 .DropDownControl_gradient_b5 {
+    opacity: 1;
+}
+.DropDownControl_disabled_4e {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.library.disabled_pattern') center / 9rem;
+    opacity: 0.8;
+    position: absolute;
+}
+.DropDownControl_arrow_de {
+    background: no-repeat center / contain;
+    position: absolute;
+}
+.DropDownControl_arrow__extraSmall_eb {
+    width: 9rem;
+    height: 6rem;
+    background-image: url('R.images.gui.maps.icons.components.dropdown.arrow_small');
+    top: 6rem;
+    left: 7rem;
+}
+.DropDownControl_arrow__small_77 {
+    width: 9rem;
+    height: 6rem;
+    background-image: url('R.images.gui.maps.icons.components.dropdown.arrow_small');
+    top: 7rem;
+    left: 7rem;
+}
+.DropDownControl_arrow__medium_3d {
+    width: 13rem;
+    height: 7rem;
+    background-image: url('R.images.gui.maps.icons.components.dropdown.arrow_medium');
+    top: 11rem;
+    left: 8rem;
+}
+.DropDownControl_base__open_e3 .DropDownControl_arrow_de {
+    transform: rotate(180deg);
+}
+.DropDownControl_alert_75 {
+    border: 1rem solid #ee7000;
+    border-radius: 2rem;
+    box-shadow: inset 0 0 6rem rgba(141, 13, 3, 0.1);
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    left: -1rem;
+    z-index: 1;
+    animation: DropDownControl_blink_68 2s ease-in-out infinite;
+    pointer-events: none;
+}
+@keyframes DropDownControl_blink_68 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.HorizontalBar_base_49 {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+    position: relative;
+}
+
+.HorizontalBar_base__nonActive_82 {
+    visibility: hidden;
+}
+
+.HorizontalBar_base_49 .disable,
+.HorizontalBar_base_49 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover,
+.HorizontalBar_rightButton_03:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem
+        7rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
+    opacity: 0.7;
+}
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.VerticalBar_base_f3 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+.VerticalBar_base__nonActive_42 {
+    visibility: hidden;
+}
+
+.VerticalBar_base_f3 .disable,
+.VerticalBar_base_f3 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.VerticalBar_topButton_d7,
+.VerticalBar_bottomButton_06 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_d7:hover,
+.VerticalBar_bottomButton_06:hover {
+    opacity: 1;
+}
+
+.VerticalBar_topButton_d7 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_06 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_df {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32 {
+    display: none;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32:hover {
+    opacity: 1;
+}
+
+.VerticalBar_rail_43 {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_43:hover {
+    opacity: 0.7;
+}
+
+.VerticalScroll_content_cb {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_f8 {
+    display: flex;
+}
+
+.VerticalScroll_bar_1e {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_af {
+    flex: 1;
+}
+
+/* bugfix WOTD-242261: due to using Chat as Subview in MembersWindow in platoon feature
+2 bundles (Chat.css and MembersWindow.css) start to conflict with each other
+
+for example, provided selectors as css mixClasses for Scroll component can be overwritten by basic css classes of Scroll component
+because both in Chat.tsx and MembersWindow.tsx <Scroll> component is used
+
+so we just add specificity to css classes here
+*/
+
+.VerticalAutoScroll_base_db .VerticalAutoScroll_content_47 {
+    height: auto;
+    min-height: 1rem;
+    max-height: 100%;
+}
+
+.VerticalAutoScroll_base_db .VerticalAutoScroll_barBase_93 {
+    position: absolute;
+    right: 0;
+}
+
+.DropDownItem_base_5e {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    color: #8c8c7e;
+    cursor: pointer;
+}
+
+.DropDownItem_base_5e:hover {
+    background-color: #1c1b12;
+}
+
+.DropDownItem_base__extraSmall_5a {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.DropDownItem_base__small_d6 {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.DropDownItem_base__medium_e4 {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+}
+
+.DropDownItem_base__selected_8e {
+    color: #cbac77;
+}
+
+.DropDownItem_base__disabled_21 {
+    color: #37362e;
+    pointer-events: none;
+}
+
+.DropDownItems_base__withScroll_19 {
+    padding-right: 15rem;
+}
+
+.DropDownList_base_62 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 198rem;
+    position: relative;
+}
+
+.DropDownList_base__extraSmall_60 {
+    font-size: 14rem;
+    line-height: 16rem;
+}
+
+.DropDownList_base__small_0c {
+    font-size: 14rem;
+    line-height: 16rem;
+}
+
+.DropDownList_base__medium_99 {
+    font-size: 16rem;
+    line-height: 18rem;
+}
+
+.PureDropDown_base_fc {
+    display: flex;
+    flex-direction: column;
+    width: 200rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+    background-color: rgba(23, 23, 15, 0.8);
+    position: relative;
+}
+
+.PureDropDown_base__extraSmall_31 {
+    height: 20rem;
+}
+
+.PureDropDown_base__small_a6 {
+    height: 24rem;
+}
+
+.PureDropDown_base__medium_05 {
+    height: 32rem;
+}
+.PureDropDown_control__down_18 {
+    z-index: 3;
+}
+.PureDropDown_list_28 {
+    display: flex;
+    width: 100%;
+    border: 1rem solid #464538;
+    border-radius: 2rem;
+    background-color: #090906;
+    position: absolute;
+    left: 0;
+    transition: opacity 0.25s;
+}
+.PureDropDown_list__up_a1 {
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+.PureDropDown_list__down_c4 {
+    opacity: 1;
+    z-index: 2;
+}
+.PureDropDown_list__under_64 {
+    margin-top: -1rem;
+    top: 100%;
+}
+.PureDropDown_list__above_c8 {
+    top: 1rem;
+    transform: translateY(-100%);
+}
+
+.CommanderControls_left_37 {
+    display: flex;
+    flex-direction: row;
+}
+
+.CommanderControls_ddlItem_8a:hover {
+    background-color: transparent;
+}
+
+.difficultyControlRenderer_base_5c {
+    display: flex;
+    align-items: center;
+    height: 20rem;
+}
+.difficultyControlRenderer_label_96 {
+    width: 153rem;
+    margin-top: 4rem;
+}
+.difficultyControlRenderer_icon_16 {
+    width: 12rem;
+    height: 12rem;
+    margin: 5rem 3rem 0 0;
+    background: no-repeat 50% / contain;
+}
+
+.difficultyItemRenderer_base_1a {
+    display: flex;
+    align-items: center;
+    height: 25rem;
+    margin: -2rem -15rem;
+    padding: 0 15rem;
+}
+
+.difficultyItemRenderer_base_1a:hover {
+    background-color: #1c1b12;
+}
+
+.difficultyItemRenderer_base__disable_7f:hover {
+    background-color: transparent;
+}
+
+.difficultyItemRenderer_name_57 {
+    display: flex;
+}
+
+.difficultyItemRenderer_label_25 {
+    width: 153rem;
+}
+
+.difficultyItemRenderer_icon_1a {
+    width: 12rem;
+    height: 12rem;
+    margin-right: 5rem;
+    background: no-repeat 50% / contain;
+}
+
+.difficultyItemRenderer_iconLock_af {
+    width: 16rem;
+    height: 16rem;
+    background: url('R.images.halloween.gui.maps.icons.library.ico_lock') no-repeat 50% / contain;
+    cursor: default;
+    pointer-events: auto;
+}
+
+.difficultyItemRenderer_iconWarning_4c {
+    width: 16rem;
+    height: 16rem;
+    margin-top: 2rem;
+    background: url('R.images.halloween.gui.maps.icons.library.ico_alert') no-repeat 50% / contain;
+    cursor: default;
+    pointer-events: auto;
+}
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.Bonus_base_96 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 8rem;
+}
+
+.Bonus_currencyImage_16 {
+    width: 40rem;
+    height: 40rem;
+    background: center / contain no-repeat;
+}
+
+.Bonus_caption_7e {
+    margin-left: -1rem;
+    margin-top: -17rem;
+    color: #f5f0e5;
+    font-size: 16rem;
+    font-weight: 700;
+    text-shadow:
+        0 0 12rem #ff2a00,
+        0 0 12rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.Bonuses_base_6f {
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 3 auto;
+    width: 100%;
+    margin: -6rem -3rem 0 0;
+}
+
+.DropDown_memberCountDropdown_67 {
+    width: 50rem;
+}
+
+.DropDown_memberCountDescription_8a {
+    margin-left: 5rem;
+    margin-right: 10rem;
+    font-size: 14rem;
+}
+
+.DropDown_memberCountDropdownItem_f5 {
+    pointer-events: auto;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.NoBonus_textContainer_ef {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 3 auto;
+    width: 100%;
+    height: 36rem;
+    margin: -10rem 2rem 0 10rem;
+}
+
+.NoBonus_textMix_ff {
+    display: flex;
+    justify-content: flex-end;
+    color: #8c8c7e;
+}
+
+.NoBonus_icon_69 {
+    width: 40rem;
+    height: 40rem;
+    margin: -4rem 2rem 0 4rem;
+    background: center / contain no-repeat;
+}
+
+.Header_base_e7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 68rem;
+    padding: 20rem 14rem;
+    background: center / contain no-repeat;
+}
+
+.Header_base__wide_47 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.Header_buttons_2e {
+    display: flex;
+}
+
+.Header_buttonContainer_c2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Header_leavePlatoonButton_27 {
+    width: 100%;
+}
+
+.Header_dropdowns_d3 {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.Header_muteButtonContainer_1b {
+    margin-left: 10rem;
+}
+
+.Header_muteIcon_8b {
+    width: 24rem;
+    height: 18rem;
+    margin: 1rem -10rem 0;
+    background: url('R.images.gui.maps.icons.platoon.members_window.mute_button') center / contain no-repeat;
+}
+
+.SlotLabel_formattedText_e8 {
+    justify-content: center;
+}
+
+.NoPlayer_base_a3 {
+    width: 160rem;
+    height: 200rem;
+    padding: 0 10rem;
+    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.cards.empty') center / contain no-repeat;
+    color: #595950;
+    font-size: 14rem;
+    text-align: center;
+    position: relative;
+}
+
+.NoPlayer_base__disabled_47 {
+    background-image: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.cards.disable');
+}
+
+.NoPlayer_central_72 {
+    position: absolute;
+    top: 65rem;
+}
+
+.NoPlayer_image_f5 {
+    width: 44rem;
+    height: 44rem;
+}
+
+.NoPlayer_image__disabled_f1 {
+    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.disabled_slot_big') center / contain
+        no-repeat;
+}
+
+.NoPlayer_image__empty_a7 {
+    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.empty_slot_big') center / contain
+        no-repeat;
+}
+
+.NoPlayer_image__spinner_f4 {
+    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.loading_indicator_big') center / contain
+        no-repeat;
+    animation: NoPlayer_spinner_8b 1s linear infinite;
+}
+
+.NoPlayer_footer_06 {
+    position: absolute;
+    bottom: 15rem;
+}
+
+@keyframes NoPlayer_spinner_8b {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.WTRInfo_wtr_5e {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+}
+
+.WTRInfo_wtrIcon_a9 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.library.wtrIcon_24') center / contain no-repeat;
+}
+
+.WTRInfo_wtrValue_80 {
+    height: 20rem;
+    margin-left: 2rem;
+    color: #8c8c7e;
+}
+
+.MutedIcon_base_d2 {
+    width: 16rem;
+    height: 16rem;
+    background: url('R.images.gui.maps.icons.platoon.members_window.muted') center / contain no-repeat;
+}
+
+.Badge_base_ac {
+    display: flex;
+    justify-content: center;
+    background: no-repeat center / contain;
+}
+
+.Badge_base__default_c9 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.Badge_base__x48_e4 {
+    width: 48rem;
+    height: 48rem;
+}
+
+.PlayerNickname_base_32 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.PlayerNickname_userName_cc {
+    flex: 0 1 auto; /* the only value for correct work */
+}
+
+.PlayerNickname_igrIcon_34 {
+    background: url('R.images.gui.maps.icons.library.premium_igr_big.png') no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_igrIcon_34 {
+    width: 32rem;
+    height: 14rem;
+}
+
+.PlayerNickname_base__x48_84 .PlayerNickname_igrIcon_34 {
+    width: 64rem;
+    height: 28rem;
+}
+
+.PlayerNickname_suffixBadgeWrapper_cc {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.PlayerNickname_suffixBadgeStripe_8a {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: -1;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_suffixBadgeStripe_8a {
+    width: 64rem;
+    height: 24rem;
+    right: 12rem;
+}
+
+.PlayerNickname_base__default_8d.PlayerNickname_base__inverted_34 .PlayerNickname_suffixBadgeStripe_8a {
+    right: auto;
+    left: 12rem;
+    transform: rotateY(180deg);
+}
+
+.PlayerNickname_base__x48_84 .PlayerNickname_suffixBadgeStripe_8a {
+    width: 68rem;
+    height: 28rem;
+    right: 16rem;
+}
+
+.PlayerNickname_base__x48_84.PlayerNickname_base__inverted_34 .PlayerNickname_suffixBadgeStripe_8a {
+    right: auto;
+    left: 16rem;
+    transform: rotateY(180deg);
+}
+
+.PlayerNickname_suffixBadge_bd {
+    background: no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_suffixBadge_bd {
+    width: 24rem;
+    height: 24rem;
+}
+
+.PlayerNickname_base__x48_84 .PlayerNickname_suffixBadge_bd {
+    width: 32rem;
+    height: 32rem;
+}
+
+.PlayerNickname_anonymizedIcon_80 {
+    background: no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_anonymizedIcon_80 {
+    width: 24rem;
+    height: 24rem;
+    background-image: url('R.images.gui.maps.icons.library.eye.png');
+}
+
+.PlayerNickname_base__x48_84 .PlayerNickname_anonymizedIcon_80 {
+    width: 48rem;
+    height: 48rem;
+    background-image: url('R.images.gui.maps.icons.library.eye_48x48.png');
+}
+
+/*////////////*/
+
+/* Colors: https://confluence.wargaming.net/pages/viewpage.action?pageId=1111407054*/
+
+.PlayerName_userName_c9 {
+    margin-left: 5rem;
+}
+
+.VoiceAnimation_talkingAnimation_c4 {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: opacity 500ms;
+    pointer-events: none;
+}
+
+.VoiceAnimation_talkingAnimation__visible_18 {
+    opacity: 1;
+}
+
+.PrestigeProgressTab_base_7c {
+    width: 36rem;
+    height: 16rem;
+    position: relative;
+}
+
+.PrestigeProgressTab_icon_0a {
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.PrestigeProgressTab_base__left_55 .PrestigeProgressTab_icon_0a {
+    transform: rotateY(180deg);
+}
+
+.PrestigeProgressTab_level_ba {
+    width: 100%;
+    font-size: 13rem;
+    font-weight: 500;
+    line-height: 15rem;
+    position: relative;
+}
+
+.PrestigeProgressTab_base__left_55 .PrestigeProgressTab_level_ba {
+    padding-right: 5rem;
+    text-align: right;
+}
+
+.PrestigeProgressTab_base__right_5d .PrestigeProgressTab_level_ba {
+    padding-left: 5rem;
+    text-align: left;
+}
+
+.PrestigeProgressTab_base__iron_03 .PrestigeProgressTab_level_ba {
+    color: #909ba1;
+}
+
+.PrestigeProgressTab_base__bronze_b8 .PrestigeProgressTab_level_ba {
+    color: #f18140;
+}
+
+.PrestigeProgressTab_base__silver_ef .PrestigeProgressTab_level_ba {
+    color: #87b2ca;
+}
+
+.PrestigeProgressTab_base__gold_b6 .PrestigeProgressTab_level_ba,
+.PrestigeProgressTab_base__enamel_39 .PrestigeProgressTab_level_ba {
+    color: #ecbe6e;
+}
+
+.VehicleDescription_base_39 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 20rem;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.VehicleDescription_vehicleType_fd {
+    width: 16rem;
+    height: 16rem;
+    margin-top: 1rem;
+    background: 50% / contain no-repeat;
+}
+
+.VehicleDescription_vehicleType__elite_fb {
+    width: 24rem;
+    height: 24rem;
+}
+
+.VehicleDescription_prestigeTab__short_b0 {
+    margin-right: -19rem;
+}
+
+.VehicleDescription_prestigeTab__medium_06 {
+    margin-right: -12rem;
+}
+
+.VehicleDescription_prestigeTab__long_fe {
+    margin-right: -6rem;
+}
+
+.Player_base_ee {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 160rem;
+    height: 200rem;
+    background: center / contain no-repeat;
+    color: #595950;
+    font-size: 14rem;
+    position: relative;
+}
+
+.Player_topping_ca {
+    width: 100%;
+    position: relative;
+    top: 1rem;
+}
+
+.Player_topping_ca > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.Player_toppingBack_be {
+    width: 130rem;
+    height: 68rem;
+    pointer-events: none;
+}
+
+.Player_topping__isPlayer_cf .Player_toppingBack_be {
+    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.player_line') center / contain no-repeat;
+}
+
+.Player_topping__isCommander_97 .Player_toppingBack_be {
+    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.commander_line') center / contain
+        no-repeat;
+}
+
+.Player_toppingPremiumIcon_c5 {
+    width: 22rem;
+    height: 22rem;
+    background: url('R.images.gui.maps.icons.platoon.members_window.prem') center / contain no-repeat;
+}
+
+.Player_toppingPlayerIcon_04 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.Player_topping__isCommander_97 .Player_toppingPlayerIcon_04 {
+    background: url('R.images.gui.maps.icons.platoon.members_window.commander') center / contain no-repeat;
+}
+
+.Player_topping__isPlayer_cf .Player_toppingPlayerIcon_04 {
+    background: url('R.images.gui.maps.icons.platoon.members_window.platoon_player') center / contain no-repeat;
+}
+
+.Player_voice_59 {
+    width: 208rem;
+    height: 248rem;
+    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.player_muted') center / contain no-repeat;
+    position: absolute;
+    top: -33rem;
+    left: -15rem;
+    pointer-events: none;
+}
+
+.Player_mutedContainer_d1 {
+    position: absolute;
+    top: 5rem;
+    right: 6rem;
+}
+
+.Player_name_26 {
+    max-width: 150rem;
+    margin-top: 21rem;
+    color: #e9e2bf;
+}
+
+.Player_footer_6f {
+    margin: 0 10rem;
+    text-align: center;
+    position: absolute;
+    bottom: 15rem;
+}
+
+.Player_readiness_87 {
+    display: none;
+    position: absolute;
+    bottom: -8rem;
+}
+
+.Player_readiness__isReady_f6 {
+    display: flex;
+    width: 150rem;
+    height: 16rem;
+    background: url('R.images.gui.maps.icons.platoon.members_window.tall_slot.ready_bottom') center / contain no-repeat;
+}
+
+.Player_vehicleImage_de {
+    width: 156rem;
+    height: 153.5rem;
+    background: 50% 0 / cover no-repeat;
+    position: absolute;
+    bottom: 0;
+}
+
+.Player_flagImage_16 {
+    width: 100%;
+    height: 100%;
+    background: top / contain no-repeat;
+    position: absolute;
+    top: 0;
+}
+
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+.ExtendedText_base__zeroPadding_25 {
+    padding: 0;
+}
+
+.ExtendedText_base__isTruncationAvailable_5b {
+    width: 100%;
+}
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+    opacity: 0;
+}
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #ff2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #ffffff;
+}
+
+.colors_white_45 {
+    color: #f2f2f7;
+}
+
+.colors_whiteOrange_81 {
+    color: #fefeec;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #e9e2bf;
+}
+
+.colors_par_5b {
+    color: #8c8c7e;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362e;
+}
+
+.colors_red_79 {
+    color: #ff2717;
+}
+
+.colors_redDark_73 {
+    color: #b70000;
+}
+
+.colors_yellow_76 {
+    color: #feab34;
+}
+
+.colors_orange_cd {
+    color: #ee7000;
+}
+
+.colors_cream_0f {
+    color: #ffdd99;
+}
+
+.colors_brown_82 {
+    color: #cbac77;
+}
+
+.colors_greenBright_68 {
+    color: #80d43a;
+}
+
+.colors_green_fa {
+    color: #7ab300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #ccffff;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09e2ff;
+}
+
+.colors_cred_35 {
+    color: #ced9d9;
+}
+
+.colors_gold_c3 {
+    color: #ffc363;
+}
+
+.colors_bond_ce {
+    color: #c9c9b6;
+}
+
+.colors_prom_83 {
+    color: #a29b70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.renderers_word_f3 {
+    white-space: pre;
+    overflow-wrap: normal;
+}
+
+.Vehicle_base_0d {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Vehicle_simpleMessage_8e {
+    color: #8c8c7e;
+}
+
+.Vehicle_tier_cc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 16rem;
+    margin-right: -5rem;
+    position: relative;
+}
+
+.Vehicle_vehicle_2c {
+    width: 80rem;
+    height: 50rem;
+    background: 50% / contain no-repeat;
+    position: absolute;
+    right: 0;
+}
+
+.Vehicle_description_69 {
+    margin-left: 3rem;
+}
+
+.WideSlot_base_64 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 401rem;
+    height: 54rem;
+    margin: 5rem 0 6rem;
+    background-size: contain;
+    color: #595950;
+    font-size: 14rem;
+    position: relative;
+}
+
+.WideSlot_mutedContainer_b9 {
+    width: 16rem;
+    margin-left: 5rem;
+}
+
+.WideSlot_icon_97 {
+    width: 24rem;
+    height: 24rem;
+    background-size: contain;
+    z-index: 1;
+}
+
+.WideSlot_memberType_a7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.WideSlot_spinner_6a {
+    animation-name: WideSlot_spinner_6a;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes WideSlot_spinner_6a {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.WideSlot_badge_c0 {
+    margin-right: 7rem;
+}
+
+.WideSlot_mainContent_52 {
+    width: 144rem;
+    margin-left: 17rem;
+    margin-right: 4rem;
+}
+
+.WideSlot_mainContent__isEmpty_94 {
+    width: 80%;
+}
+
+.WideSlot_flag_21 {
+    width: 100%;
+    height: 100%;
+    background: center / contain no-repeat;
+    position: absolute;
+    pointer-events: none;
+}
+
+.WideSlot_detailsContainer_a0 {
+    width: 190rem;
+    pointer-events: none;
+}
+
+.WideSlot_readiness_de {
+    width: 146rem;
+    height: 15rem;
+    background: url('R.images.gui.maps.icons.platoon.members_window.wide_slot.ready') center / contain no-repeat;
+    position: absolute;
+    bottom: -7rem;
+    left: 125rem;
+}
+
+.WideSlot_level_19 {
+    width: 12rem;
+    height: 12rem;
+    margin-top: 2rem;
+    background: no-repeat 50% / contain;
+    pointer-events: auto;
+}
+
+.WideSlot_level__easy_78 {
+    background-image: url('R.images.halloween.gui.maps.icons.difficulties.c_12x12.difficulty_icon_grey_1');
+}
+
+.WideSlot_level__medium_a5 {
+    background-image: url('R.images.halloween.gui.maps.icons.difficulties.c_12x12.difficulty_icon_grey_2');
+}
+
+.WideSlot_level__hard_3e {
+    background-image: url('R.images.halloween.gui.maps.icons.difficulties.c_12x12.difficulty_icon_grey_3');
+}
+
+.WideSlot_level__defence_3b {
+    background-image: url('R.images.halloween.gui.maps.icons.difficulties.c_12x12.difficulty_icon_grey_4');
+}
+
+.SlotContainer_base__short_e5 {
+    margin: 0 7rem;
+}
+
+.Slots_base_b1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 16rem 0 6rem;
+    padding: 0 14rem;
+}
+
+.Slots_base__isHorizontal_04 {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 23rem 0 17rem;
+}
+
+.Slots_base__isHorizontal__short_00 {
+    justify-content: center;
+}
+
+.SubView_base_c6 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.MembersWindow_base_85 {
+    display: flex;
+    flex-direction: row;
+}
+
+.MembersWindow_base__isHorizontal_14 {
+    width: 784rem;
+    height: 426rem;
+}
+
+.MembersWindow_base__isHorizontal__short_85 {
+    width: 680rem;
+}
+
+.MembersWindow_base__isVertical_08 {
+    width: 680rem;
+    height: 528rem;
+}
+
+.MembersWindow_base_85 .MembersWindow_chatContainer_7c {
+    width: initial;
+}
+.MembersWindow_commanderControls_86 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 35rem;
+    padding: 0 14rem 15rem;
+}
+.MembersWindow_platoon_f0 {
+    color: #8c8c7e;
+    font-size: 14rem;
+}
+.MembersWindow_base__isHorizontal_14 .MembersWindow_platoon_f0 {
+    width: 532rem;
+}
+.MembersWindow_base__isHorizontalShort_4c .MembersWindow_platoon_f0 {
+    width: 430rem;
+}
+.MembersWindow_base__isVertical_08 .MembersWindow_platoon_f0 {
+    width: 430rem;
+}
+.MembersWindow_selectedDifficulty_f1 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+}
+.MembersWindow_icon_0a {
+    width: 12rem;
+    height: 12rem;
+    margin: 2rem 0 0 5rem;
+    background: no-repeat 50% / contain;
+}

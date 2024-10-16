@@ -1,3 +1,8 @@
+body {
+    margin: 1rem;
+    overflow: hidden;
+}
+
 /*
     Gameface can't calculate gradient biggest than 8128px
     in JS 8000 reserved like anchor for start optimization
@@ -247,8 +252,12 @@
     line-height: 1.3;
 }
 
-.ProgressionBlock_base__thinExtraSmall_79 .ProgressionBlock_text_3e,
 .ProgressionBlock_base__thinSmall_1b .ProgressionBlock_text_3e {
+    padding-left: 3rem;
+    font-size: 13rem;
+}
+
+.ProgressionBlock_base__thinExtraSmall_79 .ProgressionBlock_text_3e {
     display: none;
 }
 
@@ -318,6 +327,46 @@
     text-align: left;
 }
 
+.PostProgression_base_68 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 8rem;
+    left: 0;
+}
+
+.PostProgression_base__big_2f {
+    bottom: 14rem;
+}
+
+.PostProgression_progress_77 {
+    display: flex;
+    text-align: center;
+}
+
+.PostProgression_iconWrapper_25 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+.PostProgression_icon_8d {
+    width: 17rem;
+    height: 15rem;
+    margin-top: 2rem;
+    background: url('R.images.gui.maps.icons.marathon.mission_done') no-repeat 50% / contain;
+}
+
+.PostProgression_iconText_b1 {
+    color: #80d43a;
+    font-size: 14rem;
+}
+
 .Progression_base_d7 {
     display: flex;
     justify-content: center;
@@ -350,7 +399,7 @@
     width: 34rem;
     height: 45rem;
     margin: 0 6rem;
-    background: url('R.images.gui.maps.icons.marathon.widget_arrow') no-repeat center / contain;
+    background: url('R.images.gui.maps.icons.marathon.widget_arrow') no-repeat;
 }
 
 .Progression_base__thinExtraSmall_d5 .Progression_separator_d0 {
@@ -450,8 +499,8 @@
     display: flex;
     width: 24rem;
     height: 22rem;
-    margin: 3rem -4rem 0 -2rem;
-    background: url('R.images.gui.maps.icons.marathon.pt') no-repeat 50% / contain;
+    margin: 0 -4rem 0 -2rem;
+    background: url('R.images.gui.maps.icons.marathon.tt') no-repeat 50% / contain;
 }
 
 .StageText_stageWrapper_5c {
@@ -483,12 +532,20 @@
 
 .SubTitle_base_3e {
     display: flex;
-    margin: 2rem 0 18rem;
+    margin-left: 16rem;
     position: relative;
 }
 
 .SubTitle_base__thinExtraSmall_ab {
     margin-left: 0;
+}
+
+.SubTitle_base__notStarted_c8.SubTitle_base__thinExtraSmall_ab {
+    margin-left: 16rem;
+}
+
+.SubTitle_base__hidden_7b {
+    opacity: 0;
 }
 
 .SubTitle_title_a9 {
@@ -499,8 +556,8 @@
         0 0 4px rgba(255, 127, 0, 0.25),
         0 0 8px #ff2a00,
         0 0 15px #e52;
+    position: relative;
     z-index: 1;
-    transform: translateX(-4rem);
 }
 
 .SubTitle_base__thinSmall_41 .SubTitle_title_a9,
@@ -517,27 +574,14 @@
     line-height: 18rem;
 }
 
-.SubTitle_base__thinExtraSmall_ab.SubTitle_base__finished_86 .SubTitle_title_a9 {
-    transform: translateX(0);
-}
-
-.SubTitle_purchaseBlockWrapper_5b {
-    display: flex;
-    justify-content: flex-start;
-    max-width: 90%;
-    position: relative;
-}
-
-.SubTitle_base__thinExtraSmall_ab.SubTitle_base__finished_86 .SubTitle_purchaseBlockWrapper_5b {
-    max-width: 100%;
-}
-
 .SubTitle_icon_f1 {
     width: 38rem;
     height: 38rem;
+    margin-left: -32rem;
     margin-top: -8rem;
     background: url('R.images.gui.maps.icons.library.ClockIcon_1') no-repeat 50% / contain;
-    transform: translateX(2rem);
+    position: absolute;
+    z-index: 1;
 }
 
 .SubTitle_base__thinExtraSmall_ab.SubTitle_base__finished_86 .SubTitle_icon_f1 {
@@ -566,11 +610,6 @@
     position: relative;
     cursor: pointer;
 }
-
-.EntryPointApp_base__notStarted_5b {
-    align-items: center;
-    margin-top: 7rem;
-}
 .EntryPointApp_bgWrapper_b2 {
     position: absolute;
     top: 0;
@@ -584,15 +623,10 @@
     width: 100%;
     height: 100%;
     background: no-repeat center / cover;
-    filter: brightness(1);
-    transform: scale(1);
-    transition:
-        filter 0.5s cubic-bezier(0.07, 0.82, 0.17, 1),
-        transform 0.5s cubic-bezier(0.07, 0.82, 0.17, 1);
+    animation: EntryPointApp_zoom-out_45 0.6s cubic-bezier(0.82, 0.01, 1, 1) forwards;
 }
 .EntryPointApp_base_25:hover .EntryPointApp_bg_27 {
-    filter: brightness(1.05);
-    transform: scale(1.03);
+    animation: EntryPointApp_zoom-in_bc 1.2s cubic-bezier(0, 0, 0.17, 0.99) forwards;
 }
 .EntryPointApp_base__big_93 .EntryPointApp_bg_27 {
     background-image: url('R.images.gui.maps.icons.marathon.banner');
@@ -605,6 +639,18 @@
 }
 .EntryPointApp_base__thinExtraSmall_8a .EntryPointApp_bg_27 {
     background-image: url('R.images.gui.maps.icons.marathon.banner_thin_extra_small');
+}
+.EntryPointApp_base__big_93 .EntryPointApp_bg__post_15 {
+    background-image: url('R.images.gui.maps.icons.marathon.banner_post');
+}
+.EntryPointApp_base__wideSmall_89 .EntryPointApp_bg__post_15 {
+    background-image: url('R.images.gui.maps.icons.marathon.banner_post_wide_small');
+}
+.EntryPointApp_base__thinSmall_6a .EntryPointApp_bg__post_15 {
+    background-image: url('R.images.gui.maps.icons.marathon.banner_post_thin_small');
+}
+.EntryPointApp_base__thinExtraSmall_8a .EntryPointApp_bg__post_15 {
+    background-image: url('R.images.gui.maps.icons.marathon.banner_post_thin_extra_small');
 }
 .EntryPointApp_stroke_fc {
     width: 100%;
@@ -630,11 +676,11 @@
     width: 100%;
     height: 100%;
     background: no-repeat center / cover;
-    opacity: 0.1;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
-    transition: opacity 0.1s ease-in;
+    animation: EntryPointApp_fade-in_9c 0.6s cubic-bezier(0.82, 0.01, 1, 1) forwards;
 }
 .EntryPointApp_base__big_93 .EntryPointApp_bgHighlight_73 {
     background-image: url('R.images.gui.maps.icons.marathon.hover');
@@ -649,7 +695,7 @@
     background-image: url('R.images.gui.maps.icons.marathon.hover_thin_extra_small');
 }
 .EntryPointApp_base_25:hover .EntryPointApp_bgHighlight_73 {
-    opacity: 1;
+    animation: EntryPointApp_fade-out_33 0.3s cubic-bezier(0.82, 0.01, 1, 1) forwards;
 }
 .EntryPointApp_sparkles_bf {
     width: 180rem;
@@ -674,29 +720,14 @@
     bottom: 5rem;
 }
 .EntryPointApp_subTitleWrapper__alert_49 {
-    margin: 5rem 0 0;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 8rem;
+    left: 16rem;
     transform: none;
 }
-.EntryPointApp_base__thinSmall_6a .EntryPointApp_subTitleWrapper__alert_49,
 .EntryPointApp_base__thinExtraSmall_8a .EntryPointApp_subTitleWrapper__alert_49 {
-    margin: -2rem 0 0 -8rem;
-}
-.EntryPointApp_base__wideSmall_89 .EntryPointApp_subTitleWrapper__alert_49 {
-    margin: 0 0 -4rem;
-}
-.EntryPointApp_subTitleWrapper__notStarted_22 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    transform: translateX(-10rem);
+    top: 5rem;
+    left: 25rem;
 }
 .EntryPointApp_subTitleWrapper__finished_d8 {
     display: flex;
@@ -732,7 +763,7 @@
 .EntryPointApp_discountLight_9d {
     width: 180rem;
     height: 140rem;
-    background: url('R.images.gui.maps.icons.marathon.card_discount_sparkles_small') no-repeat 50% / cover;
+    background: url('R.images.gui.maps.icons.marathon.card_discount_sparkles_small') no-repeat 50% / contain;
     position: absolute;
     top: 0;
     right: 0;
@@ -762,7 +793,7 @@
     font-weight: 700;
     line-height: 1.2;
     display: flex;
-    padding: 7rem 5rem 0;
+    padding: 0 5rem;
     text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
 }
 .EntryPointApp_base__thinSmall_6a .EntryPointApp_title_e0 {
@@ -770,9 +801,6 @@
 }
 .EntryPointApp_base__thinExtraSmall_8a .EntryPointApp_title_e0 {
     font-size: 15rem;
-}
-.EntryPointApp_base__wideSmall_89 .EntryPointApp_title_e0 {
-    font-size: 20rem;
 }
 .EntryPointApp_highlight_d1 {
     width: 400rem;
@@ -782,6 +810,24 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+@keyframes EntryPointApp_zoom-in_bc {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.12);
+    }
+}
+@keyframes EntryPointApp_zoom-out_45 {
+    0% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 @keyframes EntryPointApp_fade-in_9c {
     0% {

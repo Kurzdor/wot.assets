@@ -1,0 +1,186 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TankName_base_14 {
+    color: #fefeec;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TankName_type_49 {
+    width: 24rem;
+    height: 24rem;
+    background: no-repeat center / contain;
+}
+
+.mediaSmall .TankName_type_49 {
+    margin-top: 1rem;
+}
+
+.mediaMedium .TankName_type_49 {
+    width: 32rem;
+    height: 32rem;
+    margin: 0 2rem;
+}
+
+.VehicleInfo_base_18 {
+    display: flex;
+}
+
+.VehicleInfo_type_05 {
+    width: 32rem;
+    height: 32rem;
+    background: center / contain no-repeat;
+}
+
+.List_base_2b {
+    display: flex;
+    flex-direction: column;
+}
+
+.List_row_cd {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    min-height: 24rem;
+}
+
+.List_compensation_47 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.List_compensation__big_b5 {
+    margin-top: 8rem;
+}
+
+.List_count_f8 {
+    color: #e9e2bf;
+}
+
+.List_base_2b .List_name_e7 {
+    color: #fefeec;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+}
+
+.List_base_2b .List_vehicleType_1c {
+    width: 24rem;
+    height: 24rem;
+    margin: 0 5rem;
+}
+
+.Reward_base_9d {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 48rem;
+}
+
+.Reward_icon_4a {
+    width: 48rem;
+    height: 48rem;
+    background: no-repeat center / cover;
+    position: relative;
+}
+
+.Reward_overlay_ea {
+    width: 96rem;
+    height: 96rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+}
+
+.Reward_count_bd {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    position: absolute;
+    right: -5rem;
+    bottom: -8rem;
+}
+
+.Reward_name_d2 {
+    color: #fefeec;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-left: 8rem;
+}
+
+.Rewards_base_fd {
+    width: 100%;
+}
+
+.Rewards_reward_fb {
+    margin-bottom: 12rem;
+}
+
+.Rewards_reward__last_a3 {
+    margin-bottom: 0;
+}
+
+.Rewards_rewardsLeft_bf {
+    margin-top: 12rem;
+    color: #8c8c7e;
+}
+
+.Rewards_count_f6 {
+    color: #fefeec;
+}
+
+.Content_base_33 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.App_base_7b {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 16rem 20rem;
+    background: #0d0d0c;
+}
+
+.App_title_c8 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 12rem;
+}

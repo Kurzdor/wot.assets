@@ -1,0 +1,124 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.App_base_f2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450rem;
+    padding: 18rem 20rem;
+    border: 1px solid rgba(61, 59, 49, 0.88);
+    background-color: #0d0d0c;
+}
+
+.App_icon_e4 {
+    width: 296rem;
+    height: 222rem;
+    background: no-repeat center / contain;
+}
+
+.App_textsBlock_80 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.App_title_43 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 8rem 0;
+}
+
+.App_howGetTitle_aa {
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 15rem 0 6rem;
+}
+
+.App_howGetDescription_31 {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 6rem 0 20rem;
+}
+
+.App_description_2c {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 12rem;
+}
+
+.App_descriptionGuaranteed_45 {
+    color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    padding: 15rem 0 10rem;
+}
+
+.App_count_73 {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-shadow: 0 0 12px rgb(255 168 0);
+}
+
+.App_howGetBlock_20 {
+    margin: -4rem 0;
+    background: linear-gradient(
+            90deg,
+            rgba(201, 201, 182, 0) 0%,
+            rgba(201, 201, 182, 0.08) 40%,
+            rgba(201, 201, 182, 0.08) 60%,
+            rgba(201, 201, 182, 0) 100%
+        )
+        #0d0d0c;
+}
+
+.App_guarantyBlock_b2 {
+    margin-bottom: -7rem;
+    position: relative;
+}
+
+.App_glow_65 {
+    width: 350rem;
+    height: 180rem;
+    background-repeat: no-repeat;
+    background-position: -96rem 62rem;
+    background-size: cover;
+    opacity: 0.6;
+    mix-blend-mode: screen;
+    position: absolute;
+    bottom: -10rem;
+    left: -19rem;
+    z-index: 0;
+}
+
+.Divider_base_c5 {
+    width: 408rem;
+    height: 9rem;
+    background: no-repeat center / contain;
+}

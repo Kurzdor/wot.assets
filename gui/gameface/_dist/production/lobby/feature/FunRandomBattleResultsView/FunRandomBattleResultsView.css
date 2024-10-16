@@ -886,6 +886,105 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
 }
 
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #ffffff;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #f2f2f7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #fefeec;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #e9e2bf;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8c8c7e;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362e;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #ff2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #b70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #feab34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #ee7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #ffdd99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #cbac77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80d43a;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7ab300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #ccffff;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09e2ff;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #ced9d9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #ffc363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #c9c9b6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #a29b70;
+}
+
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8c8c7e;
+}
+
 .Reward_base_ea {
     display: flex;
     flex-direction: column;
@@ -1095,119 +1194,38 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     right: -14rem;
 }
 
-.Rewards_base_26 {
+.Rewards_base_86 {
     display: flex;
 }
 
-.Rewards_base__vertical_9f {
+.Rewards_reward_3c {
+    display: flex;
     flex-direction: column;
-}
-
-.Rewards_reward_7b {
     margin: 0 10rem;
 }
 
-.Rewards_reward__vertical_c6 {
-    margin: 15rem 0;
+.Rewards_checkmark_c6 {
+    display: flex;
+    align-self: center;
+    width: 18rem;
+    height: 15rem;
+    background: url('R.images.fun_random.gui.maps.icons.feature.battle_results.check') no-repeat center center / contain;
+    position: relative;
+    top: 8rem;
 }
 
-.FormatTextWithColorTags_blackReal_3c {
-    color: #000000;
+.Rewards_item_cf,
+.Rewards_item_cf > div {
+    height: auto;
 }
 
-.FormatTextWithColorTags_whiteReal_8a {
-    color: #ffffff;
+.Rewards_item_cf + .Rewards_checkmark_c6 {
+    top: -1rem;
 }
 
-.FormatTextWithColorTags_white_16 {
-    color: #f2f2f7;
-}
-
-.FormatTextWithColorTags_whiteOrange_18 {
-    color: #fefeec;
-}
-
-.FormatTextWithColorTags_whiteSpanish_10 {
-    color: #e9e2bf;
-}
-
-.FormatTextWithColorTags_par_ca {
-    color: #8c8c7e;
-}
-
-.FormatTextWithColorTags_parSecondary_8d {
-    color: #595950;
-}
-
-.FormatTextWithColorTags_parTertiary_a3 {
-    color: #37362e;
-}
-
-.FormatTextWithColorTags_red_60 {
-    color: #ff2717;
-}
-
-.FormatTextWithColorTags_redDark_03 {
-    color: #b70000;
-}
-
-.FormatTextWithColorTags_yellow_ad {
-    color: #feab34;
-}
-
-.FormatTextWithColorTags_orange_e4 {
-    color: #ee7000;
-}
-
-.FormatTextWithColorTags_cream_cd {
-    color: #ffdd99;
-}
-
-.FormatTextWithColorTags_brown_c8 {
-    color: #cbac77;
-}
-
-.FormatTextWithColorTags_greenBright_f0 {
-    color: #80d43a;
-}
-
-.FormatTextWithColorTags_green_c5 {
-    color: #7ab300;
-}
-
-.FormatTextWithColorTags_greenDark_af {
-    color: #497212;
-}
-
-.FormatTextWithColorTags_blueBooster_ac {
-    color: #ccffff;
-}
-
-.FormatTextWithColorTags_blueTeamkiller_6f {
-    color: #09e2ff;
-}
-
-.FormatTextWithColorTags_cred_4e {
-    color: #ced9d9;
-}
-
-.FormatTextWithColorTags_gold_90 {
-    color: #ffc363;
-}
-
-.FormatTextWithColorTags_bond_71 {
-    color: #c9c9b6;
-}
-
-.FormatTextWithColorTags_prom_dd {
-    color: #a29b70;
-}
-
-/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
-
-.FormatTextWithColorTags_parNoWidth_5a {
-    width: 0;
-    color: #8c8c7e;
+.Rewards_image_e9 {
+    width: 48rem;
+    height: 48rem;
 }
 
 .Progress_base_81 {
@@ -1277,16 +1295,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .Progress_header_16 {
-    position: relative;
-}
-
-.Progress_rewardItem_d2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 23rem;
-    background: url('R.images.fun_random.gui.maps.icons.feature.battle_results.check') no-repeat center bottom / 18rem
-        15rem;
     position: relative;
 }
 

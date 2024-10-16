@@ -581,12 +581,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .Cards_arrow__left_67 {
     margin-right: -60rem;
-    background-image: url('R.images.gui.maps.icons.mapbox.rewardChoice.prev');
+    background-image: url('R.images.gui.maps.icons.mapbox.progression.prev');
 }
 
 .Cards_arrow__right_10 {
     margin-left: -62rem;
-    background-image: url('R.images.gui.maps.icons.mapbox.rewardChoice.next');
+    background-image: url('R.images.gui.maps.icons.mapbox.progression.next');
 }
 
 .Cards_arrow__disabled_4a {
@@ -838,7 +838,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .ItemWrapper_base_98 {
     padding-left: 15rem;
     opacity: 0;
-    animation: ItemWrapper_appear_7f 0.4s ease-out forwards;
+    animation: ItemWrapper_appear_7f 0.4s cubic-bezier(0.5, 1, 0.89, 1) forwards;
     pointer-events: none;
 }
 
@@ -949,6 +949,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     font-weight: 700;
     line-height: 1.1;
     margin-top: 10rem;
+}
+
+.Header_subtitle_4e {
+    margin-right: 7rem;
 }
 
 .Header_calendar_7e {
@@ -1440,33 +1444,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .RewardItem_base_b9 {
     position: relative;
 }
-.RewardItem_shine_c1 {
-    width: 86rem;
-    height: 72rem;
-    background: url('R.images.gui.maps.icons.mapbox.progression.shine') no-repeat center / cover;
-    position: absolute;
-    top: -14rem;
-    left: -14rem;
-    z-index: -1;
-    transition: transform 0.25s 0.15s;
-}
-.RewardItem_base__button_b4:hover .RewardItem_shine_c1 {
-    transform: translateY(-20rem);
-    transition-delay: 0s;
-}
-.RewardItem_passed_39 {
-    width: 8rem;
-    height: 10rem;
-    background: url('R.images.gui.maps.icons.mapbox.progression.crew_passed') no-repeat center / cover;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.RewardItem_base__animated_bb .RewardItem_passed_39 {
-    opacity: 0;
-    animation: RewardItem_passed_39 0.4s ease-out 1.6s forwards;
-}
 .RewardItem_button_9a {
     padding: 0 10rem;
     opacity: 0;
@@ -1486,13 +1463,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .RewardItem_base__button_b4:hover .RewardItem_rewardWrapper_ad {
     transform: translateY(-20rem);
     transition-delay: 0s;
-}
-.RewardItem_rewardPrevious_49 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: RewardItem_hideReward_54 1s ease-out forwards;
 }
 .RewardItem_base__animated_bb .RewardItem_rewardCurrent_d9 {
     opacity: 0;
@@ -1815,7 +1785,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 40rem;
     height: 40rem;
     margin: 0 7rem -2rem 0;
-    background: url('R.images.gui.maps.icons.mapbox.progression.mode') no-repeat center / contain;
+    background: url('R.images.gui.maps.icons.mapbox.entryPoint.icons.icon52x52') no-repeat center / contain;
 }
 
 .MapBoxProgression_content_a4 {

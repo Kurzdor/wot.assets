@@ -153,6 +153,24 @@
     filter: blur(12px);
 }
 
+.Background_base__grayscale_1b {
+    filter: grayscale(1);
+}
+
+.Background_base__blur_69.Background_base__grayscale_1b {
+    filter: blur(10px) grayscale(1);
+}
+
+.Background_blur_a9 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat 50% / cover;
+    filter: blur(12px);
+}
+
 .Background_vignette_79 {
     position: absolute;
     top: 0;
@@ -386,6 +404,172 @@
 .renderers_word_f3 {
     white-space: pre;
     overflow-wrap: normal;
+}
+
+.LockOverlay_base_6f {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LockOverlay_darkOverlay_c6 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000000;
+    opacity: 0.6;
+}
+
+.LockOverlay_locker_8c {
+    margin-bottom: 18rem;
+    position: relative;
+}
+
+.LockOverlay_ribbon_80 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1688rem;
+    height: 950rem;
+    margin-top: -32rem;
+    background: url('R.images.story_mode.gui.maps.icons.missionSelection.ribbon') no-repeat 50% / contain;
+    z-index: 0;
+}
+
+.mediaLarge .LockOverlay_ribbon_80 {
+    width: 1920rem;
+    height: 1081rem;
+    background: url('R.images.story_mode.gui.maps.icons.missionSelection.ribbon_large') no-repeat 50% / contain;
+}
+
+.mediaExtraLarge .LockOverlay_ribbon_80 {
+    width: 2224rem;
+    height: 1252rem;
+    background: url('R.images.story_mode.gui.maps.icons.missionSelection.ribbon_extraLarge') no-repeat 50% / contain;
+}
+
+.LockOverlay_envelope_d2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 648rem;
+    height: 396rem;
+    background: url('R.images.story_mode.gui.maps.icons.missionSelection.envelope') no-repeat 50% / contain;
+    z-index: 1;
+}
+
+.mediaLarge .LockOverlay_envelope_d2 {
+    width: 900rem;
+    height: 550rem;
+    background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.envelope_large');
+}
+
+.mediaExtraLarge .LockOverlay_envelope_d2 {
+    width: 1188rem;
+    height: 726rem;
+    background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.envelope_extraLarge');
+}
+
+.LockOverlay_divider_50 {
+    width: 100%;
+    height: 90rem;
+    margin: -8rem 0 -12rem;
+    position: relative;
+}
+
+.mediaLarge .LockOverlay_divider_50 {
+    margin: 4rem 0 -2rem;
+}
+
+.mediaExtraLarge .LockOverlay_divider_50 {
+    margin: 14rem 0 10rem;
+}
+
+.LockOverlay_line_e1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400rem;
+    height: 1rem;
+    margin-top: 4rem;
+    background: linear-gradient(270deg, rgba(255, 221, 153, 0) 0%, #ffdd99 50%, rgba(255, 221, 153, 0) 100%);
+    opacity: 0.5;
+}
+
+.LockOverlay_lock_22 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90rem;
+    height: 90rem;
+    background: url('R.images.story_mode.gui.maps.icons.missionSelection.task.icon_body_lock') no-repeat 50% / contain;
+}
+
+.mediaExtraLarge .LockOverlay_lock_22 {
+    background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.task.icon_body_lock_extraLarge');
+}
+
+.LockOverlay_mission_ab {
+    color: #e9e2bf;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    max-width: 500rem;
+    margin-top: -22rem;
+    text-shadow: 0 0 15rem rgba(0, 0, 0, 0.4);
+}
+
+.mediaLarge .LockOverlay_mission_ab {
+    color: #e9e2bf;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    max-width: 750rem;
+    margin-top: -44rem;
+}
+
+.mediaExtraLarge .LockOverlay_mission_ab {
+    color: #e9e2bf;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.LockOverlay_condition_56 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    opacity: 0.7;
+}
+
+.mediaLarge .LockOverlay_condition_56 {
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.mediaExtraLarge .LockOverlay_condition_56 {
+    color: #e9e2bf;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .Countdown_base_c1 {
@@ -890,6 +1074,10 @@
     pointer-events: none;
 }
 
+.MissionButton_base__locked_bf {
+    filter: grayscale(1);
+}
+
 .MissionButton_area_92 {
     position: absolute;
     top: 50%;
@@ -968,7 +1156,7 @@
     transform: translate(-50%, -50%) scale(1);
 }
 
-.MissionButton_swordsShadow_c5 {
+.MissionButton_iconShadow_5f {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -982,20 +1170,20 @@
     transition: all 0.3s ease-in-out;
 }
 
-.mediaExtraLarge .MissionButton_swordsShadow_c5 {
+.mediaExtraLarge .MissionButton_iconShadow_5f {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.MissionButton_base__selected_d4 .MissionButton_swordsShadow_c5 {
+.MissionButton_base__selected_d4 .MissionButton_iconShadow_5f {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1.2);
 }
 
-.mediaExtraLarge .MissionButton_base__selected_d4 .MissionButton_swordsShadow_c5 {
+.mediaExtraLarge .MissionButton_base__selected_d4 .MissionButton_iconShadow_5f {
     transform: translate(-50%, -50%) scale(1.5);
 }
 
-.MissionButton_swordsGlow_58 {
+.MissionButton_iconGlow_20 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1010,21 +1198,21 @@
     transition: all 0.3s ease-in-out;
 }
 
-.mediaExtraLarge .MissionButton_swordsGlow_58 {
+.mediaExtraLarge .MissionButton_iconGlow_20 {
     margin-top: 29rem;
     transform: translate(-50%, -50%) scale(1.1);
 }
 
-.MissionButton_base__selected_d4 .MissionButton_swordsGlow_58 {
+.MissionButton_base__selected_d4 .MissionButton_iconGlow_20 {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1.2);
 }
 
-.mediaExtraLarge .MissionButton_base__selected_d4 .MissionButton_swordsGlow_58 {
+.mediaExtraLarge .MissionButton_base__selected_d4 .MissionButton_iconGlow_20 {
     transform: translate(-50%, -50%) scale(1.5);
 }
 
-.MissionButton_swords_fb {
+.MissionButton_icon_96 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1035,11 +1223,24 @@
     background: url('R.images.story_mode.gui.maps.icons.missionSelection.button.swords') no-repeat 50% / contain;
 }
 
-.mediaExtraLarge .MissionButton_swords_fb {
+.mediaExtraLarge .MissionButton_icon_96 {
     width: 44rem;
     height: 44rem;
     margin-top: 29rem;
     background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.button.extraLarge.swords');
+}
+
+.MissionButton_base__locked_bf .MissionButton_icon_96 {
+    background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.button.lock');
+    filter: brightness(0.6);
+}
+
+.mediaExtraLarge .MissionButton_base__locked_bf .MissionButton_icon_96 {
+    background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.button.extraLarge.lock');
+}
+
+.MissionButton_base__locked_bf.MissionButton_base__selected_d4 .MissionButton_icon_96 {
+    filter: brightness(1);
 }
 
 .MissionButton_hover_87 {
@@ -1304,6 +1505,10 @@
     pointer-events: none;
 }
 
+.MissionSelectionViewApp_blackScreen__overlay_b7 {
+    z-index: 1;
+}
+
 .MissionSelectionViewApp_shadowTop_1a {
     width: 100vw;
     height: 284rem;
@@ -1365,7 +1570,7 @@
     display: flex;
     height: 32rem;
     position: absolute;
-    top: 55rem;
+    top: 29rem;
     right: 0;
     z-index: 2;
 }
@@ -1378,7 +1583,7 @@
     display: flex;
     height: 32rem;
     position: absolute;
-    top: 55rem;
+    top: 29rem;
     left: -3rem;
     z-index: 2;
 }
@@ -1475,6 +1680,15 @@
     width: 300rem;
     height: 140rem;
     background-image: url('R.images.story_mode.gui.maps.icons.missionSelection.logo300x140');
+}
+
+.MissionSelectionViewApp_vignette_fd {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.story_mode.gui.maps.icons.common.lore.vignette') no-repeat 50% / 100% 100%;
 }
 
 @keyframes MissionSelectionViewApp_fadeIn_3b {

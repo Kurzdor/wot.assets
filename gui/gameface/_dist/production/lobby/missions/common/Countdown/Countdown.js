@@ -7,7 +7,7 @@
                 Date.now(), A.Ew.getRegionalDateTime, A.Ew.getFormattedDateTime;
             },
             9768: (u, e, F) => {
-                F.d(e, { O: () => eu });
+                F.d(e, { O: () => Fu });
                 var A = {};
                 F.r(A),
                     F.d(A, { mouse: () => s, off: () => a, on: () => o, onResize: () => B, onScaleUpdated: () => r });
@@ -37,31 +37,31 @@
                 }
                 F.r(n),
                     F.d(n, {
-                        addModelObserver: () => N,
-                        addPreloadTexture: () => S,
+                        addModelObserver: () => U,
+                        addPreloadTexture: () => L,
                         children: () => t,
                         displayStatus: () => g,
-                        displayStatusIs: () => Q,
+                        displayStatusIs: () => J,
                         events: () => f,
-                        extraSize: () => J,
-                        forceTriggerMouseMove: () => X,
-                        freezeTextureBeforeResize: () => q,
-                        getBrowserTexturePath: () => M,
-                        getDisplayStatus: () => $,
-                        getScale: () => W,
-                        getSize: () => V,
-                        getViewGlobalPosition: () => K,
-                        isEventHandled: () => Z,
-                        isFocused: () => H,
-                        pxToRem: () => j,
-                        remToPx: () => z,
-                        resize: () => I,
+                        extraSize: () => uu,
+                        forceTriggerMouseMove: () => $,
+                        freezeTextureBeforeResize: () => W,
+                        getBrowserTexturePath: () => N,
+                        getDisplayStatus: () => Q,
+                        getScale: () => z,
+                        getSize: () => I,
+                        getViewGlobalPosition: () => q,
+                        isEventHandled: () => X,
+                        isFocused: () => Y,
+                        pxToRem: () => G,
+                        remToPx: () => j,
+                        resize: () => K,
                         sendEvent: () => x,
-                        setAnimateWindow: () => G,
-                        setEventHandled: () => Y,
-                        setInputPaddingsRem: () => L,
-                        setSidePaddingsRem: () => U,
-                        whenTutorialReady: () => uu,
+                        setAnimateWindow: () => H,
+                        setEventHandled: () => Z,
+                        setInputPaddingsRem: () => M,
+                        setSidePaddingsRem: () => V,
+                        whenTutorialReady: () => eu,
                     });
                 const B = D('clientResized'),
                     r = D('self.onScaleUpdated'),
@@ -182,20 +182,21 @@
                     O = ['args'];
                 const T = 2,
                     y = 16,
-                    k = 32,
-                    P = 64,
+                    P = 32,
+                    k = 64,
                     R = (u, e) => {
                         const F = 'GFViewEventProxy';
                         if (void 0 !== e) {
                             const E = e.args,
                                 t = (function (u, e) {
                                     if (null == u) return {};
-                                    var F,
-                                        A,
-                                        E = {},
-                                        t = Object.keys(u);
-                                    for (A = 0; A < t.length; A++) (F = t[A]), e.indexOf(F) >= 0 || (E[F] = u[F]);
-                                    return E;
+                                    var F = {};
+                                    for (var A in u)
+                                        if ({}.hasOwnProperty.call(u, A)) {
+                                            if (e.indexOf(A) >= 0) continue;
+                                            F[A] = u[A];
+                                        }
+                                    return F;
                                 })(e, O);
                             return void 0 !== E
                                 ? viewEnv.handleViewEvent(
@@ -222,72 +223,73 @@
                     },
                     x = {
                         close(u) {
-                            R('popover' === u ? T : k);
+                            R('popover' === u ? T : P);
                         },
                         minimize() {
-                            R(P);
+                            R(k);
                         },
                         move(u) {
                             R(y, { isMouseEvent: !0, on: u });
                         },
-                    };
-                function S(u) {
+                    },
+                    S = 15;
+                function L(u) {
                     viewEnv.addPreloadTexture(u);
                 }
-                function L(u) {
-                    viewEnv.setHitAreaPaddingsRem(u, u, u, u, 15);
+                function M(u) {
+                    viewEnv.setHitAreaPaddingsRem(u, u, u, u, S);
                 }
-                function M(u, e, F, A = 1) {
+                function N(u, e, F, A = 1) {
                     return viewEnv.getWebBrowserTexturePath(u, e, F, A);
                 }
-                function N(u, e, F) {
+                function U(u, e, F) {
                     return viewEnv.addDataChangedCallback(u, e, F);
                 }
-                function U(u) {
-                    viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, 15);
+                function V(u) {
+                    viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, S);
                 }
-                function V(u = 'px') {
+                function I(u = 'px') {
                     return 'rem' === u ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
                 }
-                function I(u, e, F = 'px') {
+                function K(u, e, F = 'px') {
                     return 'rem' === F ? viewEnv.resizeViewRem(u, e) : viewEnv.resizeViewPx(u, e);
                 }
-                function K(u = 'rem') {
+                function q(u = 'rem') {
                     const e = viewEnv.getViewGlobalPositionRem();
-                    return 'rem' === u ? e : { x: z(e.x), y: z(e.y) };
-                }
-                function q() {
-                    viewEnv.freezeTextureBeforeResize();
+                    return 'rem' === u ? e : { x: j(e.x), y: j(e.y) };
                 }
                 function W() {
+                    viewEnv.freezeTextureBeforeResize();
+                }
+                function z() {
                     return viewEnv.getScale();
                 }
-                function j(u) {
+                function G(u) {
                     return viewEnv.pxToRem(u);
                 }
-                function z(u) {
+                function j(u) {
                     return viewEnv.remToPx(u);
                 }
-                function G(u, e) {
+                function H(u, e) {
                     viewEnv.setAnimateWindow(u, e);
                 }
-                function H() {
+                function Y() {
                     return viewEnv.isFocused();
                 }
-                function Y() {
+                function Z() {
                     return viewEnv.setEventHandled();
                 }
-                function Z() {
+                function X() {
                     return viewEnv.isEventHandled();
                 }
-                function X() {
+                function $() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function $() {
+                function Q() {
                     return viewEnv.getShowingStatus();
                 }
-                const Q = Object.keys(g).reduce((u, e) => ((u[e] = () => viewEnv.getShowingStatus() === g[e]), u), {}),
-                    J = {
+                const J = Object.keys(g).reduce((u, e) => ((u[e] = () => viewEnv.getShowingStatus() === g[e]), u), {}),
+                    uu = {
                         set: (u, e) => {
                             viewEnv.setExtraSizeRem(u, e);
                         },
@@ -295,17 +297,16 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    uu = Promise.all([
+                    eu = Promise.all([
                         new Promise((u) => {
                             window.isDomBuilt ? u() : f.onDomBuilt(u);
                         }),
                         engine.whenReady,
                     ]),
-                    eu = { view: n, client: E, sound: m };
+                    Fu = { view: n, client: E, sound: m };
             },
             4649: (u, e, F) => {
-                F(6179);
-                F(7044);
+                F(7044), F(6179);
                 F(9768);
                 F(6536);
                 var A = F(9916);
@@ -598,12 +599,13 @@
                             const E = e.args,
                                 t = (function (u, e) {
                                     if (null == u) return {};
-                                    var F,
-                                        A,
-                                        E = {},
-                                        t = Object.keys(u);
-                                    for (A = 0; A < t.length; A++) (F = t[A]), e.indexOf(F) >= 0 || (E[F] = u[F]);
-                                    return E;
+                                    var F = {};
+                                    for (var A in u)
+                                        if ({}.hasOwnProperty.call(u, A)) {
+                                            if (e.indexOf(A) >= 0) continue;
+                                            F[A] = u[A];
+                                        }
+                                    return F;
                                 })(e, s);
                             void 0 !== E
                                 ? viewEnv.handleViewEvent(

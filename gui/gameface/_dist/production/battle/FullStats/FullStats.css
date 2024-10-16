@@ -1,0 +1,1382 @@
+.SortHelper_base_1f {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.SortHelper_base__active_55 {
+    cursor: pointer;
+}
+
+.SortHelper_base__selected_ca {
+    background: radial-gradient(50% 100% at 50% 100%, rgba(242, 242, 247, 0.1) 0%, rgba(242, 242, 247, 0) 100%);
+}
+
+.SortHelper_arrow_4d {
+    width: 118rem;
+    height: 6rem;
+    background: url('R.images.halloween.gui.maps.icons.common.teamList.bg.filterArrow') no-repeat 0 / 122rem 6rem;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%) rotate(-180deg);
+}
+
+.SortHelper_base__desc_f4 .SortHelper_arrow_4d {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -6rem;
+}
+
+.CellDecorator_base_93 {
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+.CellDecorator_base__keys_20 {
+    width: 70rem;
+}
+
+.CellDecorator_base__actions_64 {
+    width: 112rem;
+}
+
+.CellDecorator_base__actions_64.CellDecorator_base__tabWindow_45 {
+    display: none;
+}
+
+.CellDecorator_base__actions_64.CellDecorator_base__currentPlayer_49 {
+    width: 0;
+}
+
+.CellDecorator_base__player_05 {
+    width: 237rem;
+}
+
+.CellDecorator_base__player_05.CellDecorator_base__currentPlayer_49 {
+    width: 349rem;
+}
+
+.CellDecorator_base__player_05.CellDecorator_base__tabWindow_45 {
+    width: 300rem;
+}
+
+.CellDecorator_base__player_05.CellDecorator_base__tabWindow_45.CellDecorator_base__actions_64 {
+    display: none;
+}
+
+.CellDecorator_base__stats_d1 {
+    width: 67rem;
+}
+
+.CellDecorator_base__stats_d1.CellDecorator_base__tabWindow_45 {
+    width: 80rem;
+}
+
+.CellDecorator_base__buffs_87 {
+    width: 130rem;
+}
+
+.CellDecorator_base__damage_ae {
+    width: 90rem;
+}
+
+.CellDecorator_base__damage_ae.CellDecorator_base__tabWindow_45 {
+    width: 90rem;
+}
+
+.CellDecorator_base__vehicle_fd,
+.CellDecorator_base__vehicleIcon_ee {
+    width: 186rem;
+}
+
+.CellDecorator_base__bordered_97 {
+    border-left-width: 1rem;
+    border-left-style: solid;
+    border-image-source: linear-gradient(180deg, transparent 2.5%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+    border-image-slice: 0 0 0 2;
+    border-image-repeat: stretch;
+}
+
+.CellDecorator_border_55 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 31rem;
+    background: linear-gradient(180deg, transparent 2.5%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+}
+
+.CellDecorator_children_21 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.CellDecorator_base__stats_d1 .CellDecorator_children_21,
+.CellDecorator_base__damage_ae .CellDecorator_children_21,
+.CellDecorator_base__actions_64 .CellDecorator_children_21,
+.CellDecorator_base__statsLarge_69 .CellDecorator_children_21 {
+    justify-content: center;
+}
+
+.CellDecorator_base__tabWindow_45.CellDecorator_base__vehicleIcon_ee .CellDecorator_children_21 {
+    padding-left: 18rem;
+}
+
+.CellDecorator_base__player_05 .CellDecorator_children_21 {
+    padding-left: 5rem;
+}
+
+.CellDecorator_base__player_05.CellDecorator_base__tabWindow_45 .CellDecorator_children_21 {
+    padding-left: 0;
+}
+
+.CellDecorator_base__vehicle_fd .CellDecorator_children_21 {
+    padding-left: 4rem;
+}
+
+.CellDecorator_base__vehicle_fd.CellDecorator_base__tabWindow_45 .CellDecorator_children_21 {
+    padding-left: 18rem;
+}
+
+.CellDecorator_base__buffs_87 .CellDecorator_children_21 {
+    padding-left: 12rem;
+}
+
+.RowDecorator_base_67 {
+    width: 100%;
+    height: 40rem;
+    border-bottom-width: 2rem;
+    border-bottom-style: solid;
+    border-image-source: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.08) 15%,
+        rgba(255, 255, 255, 0.08) 85%,
+        transparent 100%
+    );
+    border-image-slice: 2 0 2 0;
+    border-image-repeat: stretch;
+    position: relative;
+}
+
+.RowDecorator_base__currentPlayer_4d {
+    height: 79rem;
+    margin-top: -4rem;
+    font-size: 24rem;
+    font-weight: 600;
+    text-shadow:
+        0 0 4rem #ff7f003f,
+        0 0 15rem #ff2a00,
+        0 0 30rem #e52;
+}
+
+.RowDecorator_base__currentPlayerDefence_ca {
+    font-size: 22rem;
+}
+
+.RowDecorator_childrenWrapper_c3 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    z-index: 3;
+}
+
+.RowDecorator_base__defaultText_ab .RowDecorator_childrenWrapper_c3 {
+    color: #8c8c7e;
+}
+
+.RowDecorator_base__goldText_b6 .RowDecorator_childrenWrapper_c3 {
+    color: #ffdd99;
+}
+
+.RowDecorator_base__disable_ed .RowDecorator_childrenWrapper_c3 {
+    opacity: 0.5;
+}
+
+.RowDecorator_backgroundHelper_8e {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, transparent 100%);
+    top: 3rem;
+    z-index: 1;
+}
+
+.RowDecorator_base__goldBg_95 .RowDecorator_backgroundHelper_8e {
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 112, 0, 0.1) 15%,
+        rgba(255, 112, 0, 0.1) 85%,
+        transparent 100%
+    );
+}
+
+.RowDecorator_backgroundHelper__header_f8 {
+    background: radial-gradient(85% 85% at 50% 85%, #090e16 0%, transparent 100%);
+    opacity: 0.2;
+}
+
+.HeaderIcon_base_88 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    transition: opacity ease-in-out 0.15s;
+}
+
+.HeaderIcon_base__hoverEnabled_3f:hover {
+    opacity: 1;
+}
+
+.HeaderIcon_base__highlighted_62 {
+    opacity: 0.8;
+}
+
+.HeaderIcon_base__squad_small_e9 {
+    margin: 0 4rem 0 -2rem;
+}
+
+.HeaderIcon_base__buffs_80 {
+    justify-content: flex-start;
+}
+
+.HeaderIcon_icon_d9 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat 50% / contain;
+}
+
+.HeaderRow_base_be {
+    display: flex;
+}
+
+.HeaderRow_text_74 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-left: 6rem;
+}
+
+.HeaderRow_text__tabWindow_8a {
+    margin-left: 10rem;
+}
+
+.HeaderRow_cell_44 {
+    width: 100%;
+    height: 100%;
+}
+
+.HeaderRow_squad_8f {
+    justify-content: flex-start;
+    width: 28rem;
+    height: 20rem;
+}
+
+.HeaderRow_vehicle_0d {
+    justify-content: flex-start;
+    margin-left: 32rem;
+}
+
+.HeaderRow_border_5e {
+    flex: 0 0 auto;
+    width: 2rem;
+    position: relative;
+}
+
+.HeaderRow_upperLine_f5 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    height: 1rem;
+    background: linear-gradient(90deg, transparent 2.66%, rgba(242, 242, 247, 0.2) 48.96%, transparent 97.89%);
+    top: -1rem;
+}
+
+.HeaderRow_iconBorder_36 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 31rem;
+    background: linear-gradient(180deg, transparent 2.66%, rgba(242, 242, 247, 0.2) 48.96%, transparent 97.89%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+}
+
+.HeaderRow_actions_31 {
+    width: 100%;
+    margin: 0 -2rem;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.VehicleType_base_13 {
+    background: no-repeat 50% / contain;
+}
+
+.VehicleType_base__c_24x24_8a {
+    width: 24rem;
+    height: 24rem;
+}
+
+.VehicleType_base__c_38x38_c5 {
+    width: 38rem;
+    height: 38rem;
+}
+
+.VehicleType_base__c_48x48_83 {
+    width: 48rem;
+    height: 48rem;
+}
+
+.VehicleType_base__c_83x74_a3 {
+    width: 83rem;
+    height: 74rem;
+}
+
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.6);
+    position: relative;
+    cursor: pointer;
+}
+
+.CButton_base__main_42,
+.CButton_base__primary_7f,
+.CButton_base__primaryGreen_6f,
+.CButton_base__primaryRed_ec,
+.CButton_base__secondary_50 {
+    background-size: 100% 100%;
+}
+
+.CButton_base__main_42 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_main');
+}
+
+.CButton_base__primary_7f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+
+.CButton_base__primaryGreen_6f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+
+.CButton_base__primaryRed_ec {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+
+.CButton_base__secondary_50 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+
+.CButton_base__ghost_ed {
+    border-radius: 3rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 0 1rem rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.CButton_base__extraSmall_27 {
+    min-height: 17rem;
+    padding: 0 16rem;
+}
+
+.CButton_base__small_df,
+.CButton_base__medium_74 {
+    padding: 0 20rem;
+}
+
+.CButton_base__small_df {
+    min-height: 18rem;
+}
+
+.CButton_base__medium_74 {
+    min-height: 32rem;
+}
+
+.CButton_base__large_5c {
+    min-height: 48rem;
+}
+
+.CButton_base__disabled_d9 {
+    cursor: default;
+}
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+}
+.CButton_base__primary_7f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+.CButton_base__secondary_50 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow 0.16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+    border-radius: 2rem;
+    box-shadow: inset 0 0 2rem 1rem rgba(255, 85, 0, 0.2);
+}
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(
+        180deg,
+        rgba(252, 248, 235, 0.25) 0%,
+        rgba(252, 248, 235, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0;
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+    opacity: 1;
+}
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+    box-shadow: 0 15rem 12rem 0 rgba(242, 242, 230, 0.11) inset;
+    background-color: rgba(8, 6, 0, 0.18);
+    background-image: none;
+}
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+    opacity: 0;
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+    opacity: 1;
+}
+.CButton_stateDisabled_54 {
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem 15rem;
+    visibility: hidden;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+    visibility: inherit;
+}
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: 0.03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang='ja'],
+.CButton_content_cc[lang='ko'],
+.CButton_content_cc[lang='zh_tw'],
+.CButton_content_cc[lang='zh_sg'],
+.CButton_content_cc[lang='zh_cn'],
+.CButton_content_cc[lang='th'] {
+    font-weight: 400;
+}
+.CButton_base__main_42 .CButton_content_cc,
+.CButton_base__primaryRed_ec .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #600;
+}
+.CButton_base__secondary_50 .CButton_content_cc {
+    color: rgba(254, 254, 236, 0.75);
+}
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #1c2502;
+}
+.CButton_base__extraSmall_27 .CButton_content_cc {
+    font-size: 12rem;
+}
+.CButton_base__small_df .CButton_content_cc {
+    font-size: 14rem;
+}
+.CButton_base__medium_74 .CButton_content_cc {
+    font-size: 15rem;
+}
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
+}
+.CButton_base__disabled_d9 .CButton_content_cc {
+    opacity: 0.6;
+}
+
+.InteractionControls_base_e0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    z-index: 1;
+}
+
+.InteractionControls_control_92 {
+    display: flex;
+    align-items: center;
+    width: 28rem;
+    height: 20rem;
+    margin: 0 2rem;
+}
+
+.InteractionControls_button_3f {
+    width: 29rem;
+    height: 22rem;
+}
+
+.InteractionControls_icon_75 {
+    width: 28rem;
+    height: 24rem;
+    margin: 2rem 1rem 0;
+    background: no-repeat 50% / contain;
+}
+
+.InteractionControls_icon__addFriend_d9 {
+    background-image: url('R.images.halloween.gui.maps.icons.battleResult.platoon.friendInvite');
+}
+
+.InteractionControls_icon__friendSent_17 {
+    background-image: url('R.images.halloween.gui.maps.icons.battleResult.platoon.friendSent');
+}
+
+.InteractionControls_icon__friendBlacklist_87 {
+    background-image: url('R.images.halloween.gui.maps.icons.battleResult.platoon.removeBlacklist');
+}
+
+.InteractionControls_icon__friend_c3 {
+    background-image: url('R.images.halloween.gui.maps.icons.battleResult.platoon.friendAllready');
+}
+
+.InteractionControls_icon__platoonCanMade_b6 {
+    background-image: url('R.images.halloween.gui.maps.icons.battleResult.platoon.platoonCanMade');
+}
+
+.InteractionControls_icon__platoonSent_21 {
+    background-image: url('R.images.halloween.gui.maps.icons.battleResult.platoon.platoonSent');
+}
+
+.InteractionControls_icon__platoonDone_75 {
+    background-image: url('R.images.halloween.gui.maps.icons.battleResult.platoon.platoonDone');
+}
+
+.InteractionControls_icon__platoonUnavailable_55 {
+    background-image: url('R.images.halloween.gui.maps.icons.battleResult.platoon.platoonUnavailable');
+}
+
+.InteractionControls_icon__menu_1d {
+    background-image: url('R.images.halloween.gui.maps.icons.battleResult.platoon.menu');
+}
+
+.BuffList_base_ca {
+    display: flex;
+}
+
+.BuffList_icon_b8 {
+    width: 24rem;
+    height: 24rem;
+    margin: 0 4rem;
+    background: no-repeat 50% / contain;
+}
+
+.TextOverflow_base_3b {
+    max-width: 100%;
+    line-height: 1.3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Badge_base_ac {
+    display: flex;
+    justify-content: center;
+    background: no-repeat center / contain;
+}
+
+.Badge_base__default_c9 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.Badge_base__x48_e4 {
+    width: 48rem;
+    height: 48rem;
+}
+
+.PlayerNickname_base_32 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.PlayerNickname_userName_cc {
+    flex: 0 1 auto; /* the only value for correct work */
+}
+
+.PlayerNickname_igrIcon_34 {
+    background: url('R.images.gui.maps.icons.library.premium_igr_big.png') no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_igrIcon_34 {
+    width: 32rem;
+    height: 14rem;
+}
+
+.PlayerNickname_base__x48_84 .PlayerNickname_igrIcon_34 {
+    width: 64rem;
+    height: 28rem;
+}
+
+.PlayerNickname_suffixBadgeWrapper_cc {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.PlayerNickname_suffixBadgeStripe_8a {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: -1;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_suffixBadgeStripe_8a {
+    width: 64rem;
+    height: 24rem;
+    right: 12rem;
+}
+
+.PlayerNickname_base__default_8d.PlayerNickname_base__inverted_34 .PlayerNickname_suffixBadgeStripe_8a {
+    right: auto;
+    left: 12rem;
+    transform: rotateY(180deg);
+}
+
+.PlayerNickname_base__x48_84 .PlayerNickname_suffixBadgeStripe_8a {
+    width: 68rem;
+    height: 28rem;
+    right: 16rem;
+}
+
+.PlayerNickname_base__x48_84.PlayerNickname_base__inverted_34 .PlayerNickname_suffixBadgeStripe_8a {
+    right: auto;
+    left: 16rem;
+    transform: rotateY(180deg);
+}
+
+.PlayerNickname_suffixBadge_bd {
+    background: no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_suffixBadge_bd {
+    width: 24rem;
+    height: 24rem;
+}
+
+.PlayerNickname_base__x48_84 .PlayerNickname_suffixBadge_bd {
+    width: 32rem;
+    height: 32rem;
+}
+
+.PlayerNickname_anonymizedIcon_80 {
+    background: no-repeat center / contain;
+}
+
+.PlayerNickname_base__default_8d .PlayerNickname_anonymizedIcon_80 {
+    width: 24rem;
+    height: 24rem;
+    background-image: url('R.images.gui.maps.icons.library.eye.png');
+}
+
+.PlayerNickname_base__x48_84 .PlayerNickname_anonymizedIcon_80 {
+    width: 48rem;
+    height: 48rem;
+    background-image: url('R.images.gui.maps.icons.library.eye_48x48.png');
+}
+
+.PlayerInfo_base_b6 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.PlayerInfo_nickName_53 {
+    display: flex;
+    flex: 1;
+    margin-left: 40rem;
+}
+
+.PlayerInfo_nickName__withSquad_ff {
+    margin-left: 10rem;
+}
+
+.PlayerInfo_userName_82 {
+    margin: 0 -26rem 0 -30rem;
+}
+
+.PlayerInfo_userName_82 > div {
+    margin: 15rem;
+    padding: 15rem;
+}
+
+.PlayerInfo_userName__withBadge_43 {
+    padding-left: 7rem;
+}
+
+.PlayerInfo_name_21 {
+    max-width: 190rem;
+}
+
+.PlayerInfo_base__currentPlayer_c3 .PlayerInfo_name_21 {
+    max-width: 302rem;
+}
+
+.PlayerInfo_base__tabWindow_5a .PlayerInfo_name_21 {
+    max-width: 280rem;
+}
+
+.PlayerInfo_clanTag_bc {
+    max-width: 128rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.PlayerInfo_clanTag_bc > div {
+    margin: -15rem;
+    padding: 15rem;
+}
+
+.PlayerInfo_squad_9a {
+    color: #ced9d9;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 16rem;
+    height: 22rem;
+    margin: 4rem 8rem 0 6rem;
+    background: no-repeat 50% / contain;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.PlayerInfo_squad__highContrast_44 {
+    color: #595950;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 14rem;
+    height: 18rem;
+    margin: 4rem 10rem 0 9rem;
+}
+
+.PlayerInfo_base__currentPlayer_c3 .PlayerInfo_squad__highContrast_44 {
+    margin: 8rem 10rem 0 9rem;
+}
+
+.PlayerInfo_base__currentPlayer_c3 .PlayerInfo_squad_9a {
+    margin: 8rem 8rem 0 6rem;
+}
+
+.PlayerInfo_squad__defaultAlly_c3 {
+    color: #feab34;
+}
+
+.PlayerInfo_banIcon_48 {
+    width: 16rem;
+    height: 16rem;
+    margin: 2rem 6rem 0 0;
+}
+
+.PlayerInfo_banIcon__warned_ad {
+    background: url('R.images.halloween.gui.maps.icons.common.teamList.icon.warned') no-repeat 50% / contain;
+}
+
+.PlayerInfo_banIcon__banned_37 {
+    background: url('R.images.halloween.gui.maps.icons.common.teamList.icon.banned') no-repeat 50% / contain;
+}
+
+.StatValueDecorator_base_aa {
+    white-space: nowrap;
+    position: relative;
+}
+
+.StatValueDecorator_base__max_08 {
+    font-weight: 700;
+}
+
+.StatValueDecorator_crown_21 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 38rem;
+    height: 38rem;
+    background: no-repeat 50% / contain;
+}
+
+.StatValueDecorator_crown__gold_b7 {
+    background-image: url('R.images.halloween.gui.maps.icons.common.teamList.crown.gold');
+}
+
+.StatValueDecorator_base__currentPlayer_7a .StatValueDecorator_crown__gold_b7 {
+    width: 60rem;
+    height: 60rem;
+    background-image: url('R.images.halloween.gui.maps.icons.common.teamList.crown.player.gold');
+}
+
+.StatValueDecorator_crown__silver_0e {
+    background-image: url('R.images.halloween.gui.maps.icons.common.teamList.crown.silver');
+}
+
+.StatValueDecorator_base__currentPlayer_7a .StatValueDecorator_crown__silver_0e {
+    width: 60rem;
+    height: 60rem;
+    background-image: url('R.images.halloween.gui.maps.icons.common.teamList.crown.player.silver');
+}
+
+.StatValueDecorator_crown__bronze_86 {
+    background-image: url('R.images.halloween.gui.maps.icons.common.teamList.crown.bronze');
+}
+
+.StatValueDecorator_base__currentPlayer_7a .StatValueDecorator_crown__bronze_86 {
+    width: 60rem;
+    height: 60rem;
+    background-image: url('R.images.halloween.gui.maps.icons.common.teamList.crown.player.bronze');
+}
+
+.StatValueDecorator_amount_97 {
+    padding-left: 2rem;
+    position: relative;
+}
+
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+.ExtendedText_base__zeroPadding_25 {
+    padding: 0;
+}
+
+.ExtendedText_base__isTruncationAvailable_5b {
+    width: 100%;
+}
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+    opacity: 0;
+}
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #ff2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #ffffff;
+}
+
+.colors_white_45 {
+    color: #f2f2f7;
+}
+
+.colors_whiteOrange_81 {
+    color: #fefeec;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #e9e2bf;
+}
+
+.colors_par_5b {
+    color: #8c8c7e;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362e;
+}
+
+.colors_red_79 {
+    color: #ff2717;
+}
+
+.colors_redDark_73 {
+    color: #b70000;
+}
+
+.colors_yellow_76 {
+    color: #feab34;
+}
+
+.colors_orange_cd {
+    color: #ee7000;
+}
+
+.colors_cream_0f {
+    color: #ffdd99;
+}
+
+.colors_brown_82 {
+    color: #cbac77;
+}
+
+.colors_greenBright_68 {
+    color: #80d43a;
+}
+
+.colors_green_fa {
+    color: #7ab300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #ccffff;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09e2ff;
+}
+
+.colors_cred_35 {
+    color: #ced9d9;
+}
+
+.colors_gold_c3 {
+    color: #ffc363;
+}
+
+.colors_bond_ce {
+    color: #c9c9b6;
+}
+
+.colors_prom_83 {
+    color: #a29b70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.renderers_word_f3 {
+    white-space: pre;
+    overflow-wrap: normal;
+}
+
+.VehicleInfo_base_a4 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.VehicleInfo_vehType_de {
+    margin-top: 2rem;
+}
+
+.VehicleInfo_label_0e {
+    flex: 1;
+}
+
+.VehicleInfo_premiumIGR_5c {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem 3rem 0 -2rem;
+    background: url('R.images.gui.maps.icons.library.premium_igr_ico') no-repeat center / contain;
+    position: relative;
+    top: 5rem;
+}
+
+.TeamList_base_f2 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800rem;
+}
+
+.Caption_base_6d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Caption_flare_07 {
+    width: 1200rem;
+    height: 768rem;
+    margin-top: 16rem;
+    background: url('R.images.halloween.gui.maps.icons.battle.eventStats.bg.flare') no-repeat 50% 0 / cover;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Caption_label_96 {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding: 0 22rem 4rem;
+    text-shadow: 0 0 15rem rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.mediaMedium .Caption_label_96 {
+    color: #f2f2f7;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.Caption_line_6d {
+    flex: 0 0 345rem;
+    width: 345rem;
+    height: 2rem;
+    margin-bottom: 2rem;
+    background: url('R.images.halloween.gui.maps.icons.battle.eventStats.bg.line_left') no-repeat 50% / contain;
+}
+
+.Caption_line__right_11 {
+    transform: rotate(180deg);
+}
+
+.Header_base_14 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 88rem;
+    background: radial-gradient(25% 30% at 50% 100%, rgba(255, 251, 241, 0.13) 0%, rgba(0, 0, 0, 0) 100%),
+        radial-gradient(30% 38% at 50% 0%, rgba(0, 0, 0, 0.19) 0%, rgba(0, 0, 0, 0) 100%),
+        linear-gradient(90deg, rgba(6, 7, 9, 0) 0%, #070809 33.85%, #070809 59.44%, rgba(6, 7, 9, 0) 100%);
+    color: #e9e2bf;
+    position: relative;
+    z-index: 3;
+}
+
+.mediaLarge .Header_base_14 {
+    height: 157rem;
+}
+.Header_mapInfo_13 {
+    width: 350rem;
+    text-align: right;
+}
+.mediaMedium .Header_mapInfo_13 {
+    width: 500rem;
+    margin-top: -4rem;
+}
+.mediaLarge .Header_mapInfo_13 {
+    margin-top: -6rem;
+}
+.Header_mapName_87 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+}
+.Header_icon_21 {
+    width: 64rem;
+    height: 64rem;
+    margin: -4rem 2rem 0;
+    background: url('R.images.halloween.gui.maps.icons.battleTypes.c_64x64.halloween') no-repeat 50% / contain;
+}
+.mediaLarge .Header_icon_21 {
+    width: 136rem;
+    height: 136rem;
+    background-image: url('R.images.halloween.gui.maps.icons.battleTypes.c_136x136.halloween');
+}
+.Header_battleInfo_1e {
+    display: flex;
+    flex-direction: column;
+    width: 350rem;
+}
+.mediaMedium .Header_battleInfo_1e {
+    width: 500rem;
+    margin-top: -4rem;
+}
+.mediaLarge .Header_battleInfo_1e {
+    margin-top: -6rem;
+}
+.Header_battleMode_37 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+}
+.Header_battleTask_0d {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.Header_difficulty_f9 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.PlayerBuffs_base_d6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.PlayerBuffs_buff_cd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200rem;
+    margin: 0 2rem;
+}
+
+.PlayerBuffs_name_2a {
+    color: #feab34;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    height: 20rem;
+}
+
+.PlayerBuffs_description_84 {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    height: 38rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.PlayerBuffs_icon_a3 {
+    width: 58rem;
+    height: 58rem;
+    margin-top: 8rem;
+    background: no-repeat 50% / contain;
+}
+
+.FullEventStatsApp_base_6e {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.FullEventStatsApp_darkener_cf {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.85;
+}
+
+.FullEventStatsApp_overlay_19 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #141519;
+}
+
+.FullEventStatsApp_missionTask_d1 {
+    color: #f2f2f7;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 29rem 0;
+    text-shadow: 0 0 15rem rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.mediaMedium .FullEventStatsApp_missionTask_d1 {
+    color: #f2f2f7;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 52rem 0;
+}
+
+.FullEventStatsApp_content_a8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.mediaMedium .FullEventStatsApp_content_a8 {
+    margin-top: 9rem;
+}
+
+.mediaLarge .FullEventStatsApp_content_a8 {
+    margin-top: 29rem;
+}
+
+.FullEventStatsApp_tableCaption__top_59 {
+    margin-bottom: 28rem;
+}
+
+.FullEventStatsApp_tableCaption__bottom_eb {
+    margin: 26rem 0 28rem;
+}
+
+.mediaMedium .FullEventStatsApp_tableCaption__bottom_eb {
+    margin: 56rem 0 27rem;
+}
+
+.FullEventStatsApp_buffs_77 {
+    z-index: 1;
+}

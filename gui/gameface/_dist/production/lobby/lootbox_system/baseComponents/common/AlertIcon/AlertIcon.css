@@ -1,0 +1,15 @@
+.AlertIcon_shadow_86 {
+    width: 68rem;
+    height: 32rem;
+    background-image: radial-gradient(50% 50% at 50% 50%, #ff0707 0%, #5b3e2300 100%);
+    opacity: 0.3;
+    position: absolute;
+    top: -4rem;
+    left: -22rem;
+}
+
+.AlertIcon_icon_56 {
+    width: 24rem;
+    height: 24rem;
+    background: no-repeat center / contain;
+}

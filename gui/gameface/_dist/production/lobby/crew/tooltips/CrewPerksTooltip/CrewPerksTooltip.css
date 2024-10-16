@@ -11,6 +11,47 @@
     position: relative;
 }
 
+.SkillIcon_base_43 {
+    display: flex;
+    background: no-repeat center / contain;
+    position: relative;
+}
+
+.SkillIcon_base__c_22x22_14 {
+    width: 22rem;
+    height: 22rem;
+}
+
+.SkillIcon_base__medium_d0 {
+    width: 24rem;
+    height: 24rem;
+}
+
+.SkillIcon_base__c_36x36_flat_7e {
+    width: 36rem;
+    height: 36rem;
+}
+
+.SkillIcon_base__big_ae {
+    width: 52rem;
+    height: 52rem;
+}
+
+.SkillIcon_base__c_80x80_79 {
+    width: 80rem;
+    height: 80rem;
+}
+
+.SkillIcon_base__c_120x90_8c {
+    width: 120rem;
+    height: 90rem;
+}
+
+.SkillIcon_base__dialogs_e5 {
+    width: 180rem;
+    height: 135rem;
+}
+
 .Divided_base_06 {
     position: relative;
 }
@@ -44,10 +85,7 @@
 }
 
 .HeaderSection_image_2d {
-    width: 52rem;
-    height: 52rem;
     margin-right: 8rem;
-    background: no-repeat center / cover;
 }
 
 .HeaderSection_textContainer_7d {

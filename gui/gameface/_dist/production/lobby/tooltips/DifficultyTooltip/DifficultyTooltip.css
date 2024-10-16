@@ -1,0 +1,102 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.DifficultyTooltipApp_base_08 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 330rem;
+    padding: 22rem 21rem;
+}
+
+.DifficultyTooltipApp_header_99 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.DifficultyTooltipApp_subHeader_a3 {
+    margin-top: 2rem;
+}
+
+.DifficultyTooltipApp_container_1f {
+    width: 266rem;
+    height: 195rem;
+    position: relative;
+}
+
+.DifficultyTooltipApp_smoke_20 {
+    width: 185rem;
+    height: 189rem;
+    background: url('R.images.halloween.gui.maps.icons.difficulties.smoke') no-repeat 50% / 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.DifficultyTooltipApp_icon_44 {
+    width: 186rem;
+    height: 186rem;
+    margin: 5rem 0 0 51rem;
+    background: no-repeat 50% / contain;
+    position: relative;
+}
+
+.DifficultyTooltipApp_description_4f {
+    margin-top: 19rem;
+}
+
+.DifficultyTooltipApp_dots_a2 {
+    display: flex;
+    align-self: center;
+    width: 329rem;
+    height: 9rem;
+    margin-top: 1rem;
+    background: url('R.images.halloween.gui.maps.icons.difficulties.dots') no-repeat 50% / contain;
+}
+
+.DifficultyTooltipApp_dots__text_b5 {
+    margin-top: 13rem;
+}
+
+.DifficultyTooltipApp_state_cb {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    justify-content: center;
+    margin-top: 12rem;
+}
+
+.DifficultyTooltipApp_state__locked_a3 {
+    color: #8c8c7e;
+}
+
+.DifficultyTooltipApp_state__selected_90 {
+    color: #7ab300;
+}
+
+.DifficultyTooltipApp_lock_a8 {
+    width: 18rem;
+    height: 18rem;
+    background: no-repeat 50% / contain;
+}
+
+.DifficultyTooltipApp_lockDescr_5a {
+    margin-top: 5rem;
+    color: #595950;
+}

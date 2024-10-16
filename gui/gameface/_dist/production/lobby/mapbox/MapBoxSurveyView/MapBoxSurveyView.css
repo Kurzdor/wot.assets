@@ -822,19 +822,19 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.35;
 }
 
-.Survey_base__first_ac .Survey_title_79 {
+.Survey_base__defaultFirst_af .Survey_title_79 {
     margin-top: 38rem;
 }
 
-.mediaMedium .Survey_base__first_ac .Survey_title_79 {
+.mediaMedium .Survey_base__defaultFirst_af .Survey_title_79 {
     margin-top: 0;
 }
 
-.Survey_base__first_ac .Survey_title_79[lang='ja'] {
+.Survey_base__defaultFirst_af .Survey_title_79[lang='ja'] {
     margin-top: 40rem;
 }
 
-.mediaMedium .Survey_base__first_ac .Survey_title_79[lang='ja'] {
+.mediaMedium .Survey_base__defaultFirst_af .Survey_title_79[lang='ja'] {
     margin-top: 0;
 }
 
@@ -878,29 +878,55 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: 50rem;
 }
 
-.Survey_base__first_ac .Survey_content_c5 {
+.Survey_base__defaultFirst_af .Survey_content_c5 {
     margin-top: -18rem;
 }
 
-.mediaLarge .Survey_base__first_ac .Survey_content_c5 {
+.mediaLarge .Survey_base__defaultFirst_af .Survey_content_c5 {
     margin-top: 50rem;
 }
 
-.Survey_base__first_ac .Survey_content_c5[lang='ja'],
-.Survey_base__first_ac .Survey_content_c5[lang='th'] {
+.Survey_base__defaultFirst_af .Survey_content_c5[lang='ja'],
+.Survey_base__defaultFirst_af .Survey_content_c5[lang='th'] {
     margin-top: -30rem;
 }
 
-.mediaMedium .Survey_base__first_ac .Survey_content_c5[lang='ja'],
-.mediaMedium .Survey_base__first_ac .Survey_content_c5[lang='th'] {
+.mediaMedium .Survey_base__defaultFirst_af .Survey_content_c5[lang='ja'],
+.mediaMedium .Survey_base__defaultFirst_af .Survey_content_c5[lang='th'] {
     margin-top: 50rem;
 }
 
-.Survey_base__first_ac .Survey_content_c5[lang='ko'] {
+.Survey_base__defaultFirst_af .Survey_content_c5[lang='ko'] {
     margin-top: -10rem;
 }
 
-.mediaMedium .Survey_base__first_ac .Survey_content_c5[lang='ko'] {
+.mediaMedium .Survey_base__defaultFirst_af .Survey_content_c5[lang='ko'] {
+    margin-top: 50rem;
+}
+
+.Survey_base__tableFirst_f4 .Survey_content_c5 {
+    margin-top: 30rem;
+}
+
+.mediaMedium .Survey_base__tableFirst_f4 .Survey_content_c5 {
+    margin-top: 50rem;
+}
+
+.Survey_base__tableFirst_f4 .Survey_content_c5[lang='ja'],
+.Survey_base__tableFirst_f4 .Survey_content_c5[lang='th'] {
+    margin-top: 20rem;
+}
+
+.mediaMedium .Survey_base__tableFirst_f4 .Survey_content_c5[lang='ja'],
+.mediaMedium .Survey_base__tableFirst_f4 .Survey_content_c5[lang='th'] {
+    margin-top: 50rem;
+}
+
+.Survey_base__tableFirst_f4 .Survey_content_c5[lang='ko'] {
+    margin-top: 5rem;
+}
+
+.mediaMedium .Survey_base__tableFirst_f4 .Survey_content_c5[lang='ko'] {
     margin-top: 50rem;
 }
 

@@ -2,7 +2,19 @@
     'use strict';
     var __webpack_modules__ = {
             2372: (u, e, t) => {
-                t(6179), t(9916);
+                var E = t(6179),
+                    n = t.n(E),
+                    F = t(9916);
+                class A extends n().PureComponent {
+                    render() {
+                        let u;
+                        if ('gold' === this.props.format) u = F.B3.GOLD;
+                        else u = F.B3.INTEGRAL;
+                        const e = F.Z5.getNumberFormat(this.props.value, u);
+                        return void 0 !== this.props.value && void 0 !== e ? e : null;
+                    }
+                }
+                A.defaultProps = { format: 'integral' };
             },
             2862: (u, e, t) => {
                 let E, n, F, A, i, o, r, a;
@@ -48,17 +60,14 @@
                             (u.BonusX5 = 'battle_bonus_x5'),
                             (u.CrewBonusX3 = 'crew_bonus_x3'),
                             (u.Vehicles = 'vehicles'),
-                            (u.WtHunterLootbox = 'wt_hunter'),
-                            (u.WtBossLootbox = 'wt_boss'),
-                            (u.WtProgressPoints = 'stamp'),
                             (u.EpicSelectToken = 'epicSelectToken'),
                             (u.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
                             (u.DeluxeGift = 'deluxe_gift'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
                             (u.OptionalDevice = 'optionalDevice'),
                             (u.EquipCoin = 'equipCoin'),
-                            (u.WTCommanderClaimable = 'wtCommanderClaimable'),
-                            (u.WTCommanderClaimed = 'wtCommanderClaimed');
+                            (u.LootBox = 'lootBox'),
+                            (u.BrCoin = 'brcoin');
                     })(E || (E = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -193,9 +202,6 @@
                     E.E4.CrewBonusX3,
                     E.E4.NewYearInvoice,
                     E.E4.EpicSelectToken,
-                    E.E4.WtHunterLootbox,
-                    E.E4.WtBossLootbox,
-                    E.E4.WtProgressPoints,
                     E.E4.Comp7TokenWeeklyReward,
                     E.E4.DeluxeGift,
                     E.E4.BattleBoosterGift,
@@ -394,96 +400,97 @@
             7641: (u, e, t) => {
                 t.r(e),
                     t.d(e, {
-                        addModelObserver: () => a,
-                        addPreloadTexture: () => i,
+                        addModelObserver: () => D,
+                        addPreloadTexture: () => o,
                         children: () => E,
                         displayStatus: () => n.W,
-                        displayStatusIs: () => T,
+                        displayStatusIs: () => P,
                         events: () => F.U,
-                        extraSize: () => P,
-                        forceTriggerMouseMove: () => h,
-                        freezeTextureBeforeResize: () => _,
-                        getBrowserTexturePath: () => r,
-                        getDisplayStatus: () => g,
-                        getScale: () => l,
-                        getSize: () => s,
-                        getViewGlobalPosition: () => C,
+                        extraSize: () => b,
+                        forceTriggerMouseMove: () => g,
+                        freezeTextureBeforeResize: () => l,
+                        getBrowserTexturePath: () => a,
+                        getDisplayStatus: () => T,
+                        getScale: () => d,
+                        getSize: () => B,
+                        getViewGlobalPosition: () => _,
                         isEventHandled: () => w,
-                        isFocused: () => p,
-                        pxToRem: () => d,
-                        remToPx: () => c,
-                        resize: () => B,
+                        isFocused: () => v,
+                        pxToRem: () => c,
+                        remToPx: () => p,
+                        resize: () => C,
                         sendEvent: () => A.qP,
                         setAnimateWindow: () => m,
-                        setEventHandled: () => v,
-                        setInputPaddingsRem: () => o,
-                        setSidePaddingsRem: () => D,
-                        whenTutorialReady: () => b,
+                        setEventHandled: () => h,
+                        setInputPaddingsRem: () => r,
+                        setSidePaddingsRem: () => s,
+                        whenTutorialReady: () => O,
                     });
                 var E = t(3722),
                     n = t(6112),
                     F = t(6538),
                     A = t(8566);
-                function i(u) {
+                const i = 15;
+                function o(u) {
                     viewEnv.addPreloadTexture(u);
                 }
-                function o(u) {
-                    viewEnv.setHitAreaPaddingsRem(u, u, u, u, 15);
+                function r(u) {
+                    viewEnv.setHitAreaPaddingsRem(u, u, u, u, i);
                 }
-                function r(u, e, t, E = 1) {
+                function a(u, e, t, E = 1) {
                     return viewEnv.getWebBrowserTexturePath(u, e, t, E);
                 }
-                function a(u, e, t) {
+                function D(u, e, t) {
                     return viewEnv.addDataChangedCallback(u, e, t);
                 }
-                function D(u) {
-                    viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, 15);
+                function s(u) {
+                    viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, i);
                 }
-                function s(u = 'px') {
+                function B(u = 'px') {
                     return 'rem' === u ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
                 }
-                function B(u, e, t = 'px') {
+                function C(u, e, t = 'px') {
                     return 'rem' === t ? viewEnv.resizeViewRem(u, e) : viewEnv.resizeViewPx(u, e);
                 }
-                function C(u = 'rem') {
+                function _(u = 'rem') {
                     const e = viewEnv.getViewGlobalPositionRem();
-                    return 'rem' === u ? e : { x: c(e.x), y: c(e.y) };
-                }
-                function _() {
-                    viewEnv.freezeTextureBeforeResize();
+                    return 'rem' === u ? e : { x: p(e.x), y: p(e.y) };
                 }
                 function l() {
+                    viewEnv.freezeTextureBeforeResize();
+                }
+                function d() {
                     return viewEnv.getScale();
                 }
-                function d(u) {
+                function c(u) {
                     return viewEnv.pxToRem(u);
                 }
-                function c(u) {
+                function p(u) {
                     return viewEnv.remToPx(u);
                 }
                 function m(u, e) {
                     viewEnv.setAnimateWindow(u, e);
                 }
-                function p() {
+                function v() {
                     return viewEnv.isFocused();
                 }
-                function v() {
+                function h() {
                     return viewEnv.setEventHandled();
                 }
                 function w() {
                     return viewEnv.isEventHandled();
                 }
-                function h() {
+                function g() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function g() {
+                function T() {
                     return viewEnv.getShowingStatus();
                 }
-                const T = Object.keys(n.W).reduce(
+                const P = Object.keys(n.W).reduce(
                         (u, e) => ((u[e] = () => viewEnv.getShowingStatus() === n.W[e]), u),
                         {},
                     ),
-                    P = {
+                    b = {
                         set: (u, e) => {
                             viewEnv.setExtraSizeRem(u, e);
                         },
@@ -491,7 +498,7 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    b = Promise.all([
+                    O = Promise.all([
                         new Promise((u) => {
                             window.isDomBuilt ? u() : F.U.onDomBuilt(u);
                         }),
@@ -511,12 +518,13 @@
                             const F = e.args,
                                 A = (function (u, e) {
                                     if (null == u) return {};
-                                    var t,
-                                        E,
-                                        n = {},
-                                        F = Object.keys(u);
-                                    for (E = 0; E < F.length; E++) (t = F[E]), e.indexOf(t) >= 0 || (n[t] = u[t]);
-                                    return n;
+                                    var t = {};
+                                    for (var E in u)
+                                        if ({}.hasOwnProperty.call(u, E)) {
+                                            if (e.indexOf(E) >= 0) continue;
+                                            t[E] = u[E];
+                                        }
+                                    return t;
                                 })(e, E);
                             return void 0 !== F
                                 ? viewEnv.handleViewEvent(
@@ -727,7 +735,7 @@
                 const __WEBPACK_DEFAULT_EXPORT__ = ViewModel;
             },
             9916: (u, e, t) => {
-                t.d(e, { ry: () => d });
+                t.d(e, { B3: () => o, Z5: () => A.Z5, ry: () => d });
                 class E {
                     constructor() {
                         (this.entries = []),
@@ -832,12 +840,13 @@
                             const n = e.args,
                                 F = (function (u, e) {
                                     if (null == u) return {};
-                                    var t,
-                                        E,
-                                        n = {},
-                                        F = Object.keys(u);
-                                    for (E = 0; E < F.length; E++) (t = F[E]), e.indexOf(t) >= 0 || (n[t] = u[t]);
-                                    return n;
+                                    var t = {};
+                                    for (var E in u)
+                                        if ({}.hasOwnProperty.call(u, E)) {
+                                            if (e.indexOf(E) >= 0) continue;
+                                            t[E] = u[E];
+                                        }
+                                    return t;
                                 })(e, C);
                             void 0 !== n
                                 ? viewEnv.handleViewEvent(
@@ -864,13 +873,13 @@
                         } else viewEnv.handleViewEvent({ __Type: t, type: u });
                         var E;
                     },
-                    m = () => c(i.CLOSE),
-                    p = (u, e) => {
+                    p = () => c(i.CLOSE),
+                    m = (u, e) => {
                         u.keyCode === s.n.ESCAPE && e();
                     };
                 var v = t(7572);
-                const w = n.instance,
-                    h = {
+                const h = n.instance,
+                    w = {
                         DataTracker: F.Z,
                         ViewModel: v.Z,
                         ViewEventType: i,
@@ -880,7 +889,7 @@
                         DateFormatType: D,
                         makeGlobalBoundingBox: l,
                         sendMoveEvent: (u) => c(i.MOVE, { isMouseEvent: !0, on: u }),
-                        sendCloseEvent: m,
+                        sendCloseEvent: p,
                         sendClosePopOverEvent: () => c(i.POP_OVER, { on: !1 }),
                         sendShowContextMenuEvent: (u, e, t = 0) => {
                             c(i.CONTEXT_MENU, { isMouseEvent: !0, contentID: u, on: !0, decoratorID: t, args: e });
@@ -910,13 +919,13 @@
                             });
                         },
                         addEscapeListener: (u) => {
-                            const e = (e) => p(e, u);
+                            const e = (e) => m(e, u);
                             return (
                                 window.addEventListener('keydown', e), () => window.removeEventListener('keydown', e)
                             );
                         },
                         closeOnEsc: (u) => {
-                            p(u, m);
+                            m(u, p);
                         },
                         handleViewEvent: c,
                         onBindingsReady: d,
@@ -948,11 +957,11 @@
                                 }
                             return t;
                         },
-                        ClickOutsideManager: w,
+                        ClickOutsideManager: h,
                         SystemLocale: A.Z5,
                         UserLocale: A.cy,
                     };
-                window.ViewEnvHelper = h;
+                window.ViewEnvHelper = w;
             },
             8613: (u, e, t) => {
                 t.d(e, { Ew: () => F, Z5: () => E, cy: () => n });

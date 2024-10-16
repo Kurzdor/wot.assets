@@ -1,0 +1,9 @@
+.VehicleInfo_base_18 {
+    display: flex;
+}
+
+.VehicleInfo_type_05 {
+    width: 32rem;
+    height: 32rem;
+    background: center / contain no-repeat;
+}

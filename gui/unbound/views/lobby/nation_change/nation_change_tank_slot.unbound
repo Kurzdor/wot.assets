@@ -174,7 +174,7 @@
             )
             (image
                 (name = 'noEquipment')
-                (source = "R.images.gui.maps.icons.tankmen.icons.small.silhouette_mask()")
+                (source = "R.images.gui.maps.icons.tankmen.icons.barracks.silhouette_mask()")
             )
             (tf
                 (class MainTextStyle)

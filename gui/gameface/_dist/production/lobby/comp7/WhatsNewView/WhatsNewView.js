@@ -205,96 +205,97 @@
                 'use strict';
                 t.r(u),
                     t.d(u, {
-                        addModelObserver: () => c,
-                        addPreloadTexture: () => s,
+                        addModelObserver: () => E,
+                        addPreloadTexture: () => o,
                         children: () => a,
                         displayStatus: () => n.W,
-                        displayStatusIs: () => b,
+                        displayStatusIs: () => w,
                         events: () => r.U,
-                        extraSize: () => w,
-                        forceTriggerMouseMove: () => v,
-                        freezeTextureBeforeResize: () => _,
-                        getBrowserTexturePath: () => l,
-                        getDisplayStatus: () => f,
-                        getScale: () => F,
-                        getSize: () => m,
-                        getViewGlobalPosition: () => A,
-                        isEventHandled: () => p,
-                        isFocused: () => B,
-                        pxToRem: () => D,
-                        remToPx: () => C,
-                        resize: () => d,
+                        extraSize: () => y,
+                        forceTriggerMouseMove: () => f,
+                        freezeTextureBeforeResize: () => F,
+                        getBrowserTexturePath: () => c,
+                        getDisplayStatus: () => b,
+                        getScale: () => D,
+                        getSize: () => d,
+                        getViewGlobalPosition: () => _,
+                        isEventHandled: () => v,
+                        isFocused: () => g,
+                        pxToRem: () => C,
+                        remToPx: () => h,
+                        resize: () => A,
                         sendEvent: () => i.qP,
-                        setAnimateWindow: () => h,
-                        setEventHandled: () => g,
-                        setInputPaddingsRem: () => o,
-                        setSidePaddingsRem: () => E,
-                        whenTutorialReady: () => y,
+                        setAnimateWindow: () => B,
+                        setEventHandled: () => p,
+                        setInputPaddingsRem: () => l,
+                        setSidePaddingsRem: () => m,
+                        whenTutorialReady: () => x,
                     });
                 var a = t(3722),
                     n = t(6112),
                     r = t(6538),
                     i = t(8566);
-                function s(e) {
+                const s = 15;
+                function o(e) {
                     viewEnv.addPreloadTexture(e);
                 }
-                function o(e) {
-                    viewEnv.setHitAreaPaddingsRem(e, e, e, e, 15);
+                function l(e) {
+                    viewEnv.setHitAreaPaddingsRem(e, e, e, e, s);
                 }
-                function l(e, u, t, a = 1) {
+                function c(e, u, t, a = 1) {
                     return viewEnv.getWebBrowserTexturePath(e, u, t, a);
                 }
-                function c(e, u, t) {
+                function E(e, u, t) {
                     return viewEnv.addDataChangedCallback(e, u, t);
                 }
-                function E(e) {
-                    viewEnv.setHitAreaPaddingsRem(e.top, e.right, e.bottom, e.left, 15);
+                function m(e) {
+                    viewEnv.setHitAreaPaddingsRem(e.top, e.right, e.bottom, e.left, s);
                 }
-                function m(e = 'px') {
+                function d(e = 'px') {
                     return 'rem' === e ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
                 }
-                function d(e, u, t = 'px') {
+                function A(e, u, t = 'px') {
                     return 'rem' === t ? viewEnv.resizeViewRem(e, u) : viewEnv.resizeViewPx(e, u);
                 }
-                function A(e = 'rem') {
+                function _(e = 'rem') {
                     const u = viewEnv.getViewGlobalPositionRem();
-                    return 'rem' === e ? u : { x: C(u.x), y: C(u.y) };
-                }
-                function _() {
-                    viewEnv.freezeTextureBeforeResize();
+                    return 'rem' === e ? u : { x: h(u.x), y: h(u.y) };
                 }
                 function F() {
+                    viewEnv.freezeTextureBeforeResize();
+                }
+                function D() {
                     return viewEnv.getScale();
                 }
-                function D(e) {
+                function C(e) {
                     return viewEnv.pxToRem(e);
                 }
-                function C(e) {
+                function h(e) {
                     return viewEnv.remToPx(e);
                 }
-                function h(e, u) {
+                function B(e, u) {
                     viewEnv.setAnimateWindow(e, u);
                 }
-                function B() {
+                function g() {
                     return viewEnv.isFocused();
                 }
-                function g() {
+                function p() {
                     return viewEnv.setEventHandled();
                 }
-                function p() {
+                function v() {
                     return viewEnv.isEventHandled();
                 }
-                function v() {
+                function f() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function f() {
+                function b() {
                     return viewEnv.getShowingStatus();
                 }
-                const b = Object.keys(n.W).reduce(
+                const w = Object.keys(n.W).reduce(
                         (e, u) => ((e[u] = () => viewEnv.getShowingStatus() === n.W[u]), e),
                         {},
                     ),
-                    w = {
+                    y = {
                         set: (e, u) => {
                             viewEnv.setExtraSizeRem(e, u);
                         },
@@ -302,7 +303,7 @@
                             viewEnv.getExtraSizeRem(e, u);
                         },
                     },
-                    y = Promise.all([
+                    x = Promise.all([
                         new Promise((e) => {
                             window.isDomBuilt ? e() : r.U.onDomBuilt(e);
                         }),
@@ -323,12 +324,13 @@
                             const r = u.args,
                                 i = (function (e, u) {
                                     if (null == e) return {};
-                                    var t,
-                                        a,
-                                        n = {},
-                                        r = Object.keys(e);
-                                    for (a = 0; a < r.length; a++) (t = r[a]), u.indexOf(t) >= 0 || (n[t] = e[t]);
-                                    return n;
+                                    var t = {};
+                                    for (var a in e)
+                                        if ({}.hasOwnProperty.call(e, a)) {
+                                            if (u.indexOf(a) >= 0) continue;
+                                            t[a] = e[a];
+                                        }
+                                    return t;
                                 })(u, a);
                             return void 0 !== r
                                 ? viewEnv.handleViewEvent(
@@ -625,12 +627,13 @@
                             const n = u.args,
                                 r = (function (e, u) {
                                     if (null == e) return {};
-                                    var t,
-                                        a,
-                                        n = {},
-                                        r = Object.keys(e);
-                                    for (a = 0; a < r.length; a++) (t = r[a]), u.indexOf(t) >= 0 || (n[t] = e[t]);
-                                    return n;
+                                    var t = {};
+                                    for (var a in e)
+                                        if ({}.hasOwnProperty.call(e, a)) {
+                                            if (u.indexOf(a) >= 0) continue;
+                                            t[a] = e[a];
+                                        }
+                                    return t;
                                 })(u, A);
                             void 0 !== n
                                 ? viewEnv.handleViewEvent(
@@ -878,12 +881,13 @@
                     let u = e.children,
                         t = (function (e, u) {
                             if (null == e) return {};
-                            var t,
-                                a,
-                                n = {},
-                                r = Object.keys(e);
-                            for (a = 0; a < r.length; a++) (t = r[a]), u.indexOf(t) >= 0 || (n[t] = e[t]);
-                            return n;
+                            var t = {};
+                            for (var a in e)
+                                if ({}.hasOwnProperty.call(e, a)) {
+                                    if (u.indexOf(a) >= 0) continue;
+                                    t[a] = e[a];
+                                }
+                            return t;
                         })(e, D);
                     const a = (0, r.useContext)(F),
                         n = a.extraLarge,
@@ -1058,16 +1062,16 @@
                     S = ['children', 'className'];
                 function T() {
                     return (
-                        (T =
-                            Object.assign ||
-                            function (e) {
-                                for (var u = 1; u < arguments.length; u++) {
-                                    var t = arguments[u];
-                                    for (var a in t) Object.prototype.hasOwnProperty.call(t, a) && (e[a] = t[a]);
-                                }
-                                return e;
-                            }),
-                        T.apply(this, arguments)
+                        (T = Object.assign
+                            ? Object.assign.bind()
+                            : function (e) {
+                                  for (var u = 1; u < arguments.length; u++) {
+                                      var t = arguments[u];
+                                      for (var a in t) ({}).hasOwnProperty.call(t, a) && (e[a] = t[a]);
+                                  }
+                                  return e;
+                              }),
+                        T.apply(null, arguments)
                     );
                 }
                 const N = {
@@ -1096,12 +1100,13 @@
                             t = e.className,
                             a = (function (e, u) {
                                 if (null == e) return {};
-                                var t,
-                                    a,
-                                    n = {},
-                                    r = Object.keys(e);
-                                for (a = 0; a < r.length; a++) (t = r[a]), u.indexOf(t) >= 0 || (n[t] = e[t]);
-                                return n;
+                                var t = {};
+                                for (var a in e)
+                                    if ({}.hasOwnProperty.call(e, a)) {
+                                        if (u.indexOf(a) >= 0) continue;
+                                        t[a] = e[a];
+                                    }
+                                return t;
                             })(e, S);
                         const n = x(),
                             r = n.mediaWidth,
@@ -1114,12 +1119,13 @@
                     let u = e.children,
                         t = (function (e, u) {
                             if (null == e) return {};
-                            var t,
-                                a,
-                                n = {},
-                                r = Object.keys(e);
-                            for (a = 0; a < r.length; a++) (t = r[a]), u.indexOf(t) >= 0 || (n[t] = e[t]);
-                            return n;
+                            var t = {};
+                            for (var a in e)
+                                if ({}.hasOwnProperty.call(e, a)) {
+                                    if (u.indexOf(a) >= 0) continue;
+                                    t[a] = e[a];
+                                }
+                            return t;
                         })(e, O);
                     return i().createElement(B, null, i().createElement(k, t, u));
                 };
@@ -1136,12 +1142,18 @@
                     if (
                         Array.isArray(e) ||
                         (t = (function (e, u) {
-                            if (!e) return;
-                            if ('string' == typeof e) return U(e, u);
-                            var t = Object.prototype.toString.call(e).slice(8, -1);
-                            'Object' === t && e.constructor && (t = e.constructor.name);
-                            if ('Map' === t || 'Set' === t) return Array.from(e);
-                            if ('Arguments' === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)) return U(e, u);
+                            if (e) {
+                                if ('string' == typeof e) return U(e, u);
+                                var t = {}.toString.call(e).slice(8, -1);
+                                return (
+                                    'Object' === t && e.constructor && (t = e.constructor.name),
+                                    'Map' === t || 'Set' === t
+                                        ? Array.from(e)
+                                        : 'Arguments' === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)
+                                          ? U(e, u)
+                                          : void 0
+                                );
+                            }
                         })(e)) ||
                         (u && e && 'number' == typeof e.length)
                     ) {
@@ -1157,7 +1169,7 @@
                 }
                 function U(e, u) {
                     (null == u || u > e.length) && (u = e.length);
-                    for (var t = 0, a = new Array(u); t < u; t++) a[t] = e[t];
+                    for (var t = 0, a = Array(u); t < u; t++) a[t] = e[t];
                     return a;
                 }
                 const z = (e) => (0 === e ? window : window.subViews.get(e));
@@ -1403,16 +1415,16 @@
                     ];
                 function ee() {
                     return (
-                        (ee =
-                            Object.assign ||
-                            function (e) {
-                                for (var u = 1; u < arguments.length; u++) {
-                                    var t = arguments[u];
-                                    for (var a in t) Object.prototype.hasOwnProperty.call(t, a) && (e[a] = t[a]);
-                                }
-                                return e;
-                            }),
-                        ee.apply(this, arguments)
+                        (ee = Object.assign
+                            ? Object.assign.bind()
+                            : function (e) {
+                                  for (var u = 1; u < arguments.length; u++) {
+                                      var t = arguments[u];
+                                      for (var a in t) ({}).hasOwnProperty.call(t, a) && (e[a] = t[a]);
+                                  }
+                                  return e;
+                              }),
+                        ee.apply(null, arguments)
                     );
                 }
                 class ue extends i().PureComponent {
@@ -1455,12 +1467,13 @@
                                 e.soundHover,
                                 (function (e, u) {
                                     if (null == e) return {};
-                                    var t,
-                                        a,
-                                        n = {},
-                                        r = Object.keys(e);
-                                    for (a = 0; a < r.length; a++) (t = r[a]), u.indexOf(t) >= 0 || (n[t] = e[t]);
-                                    return n;
+                                    var t = {};
+                                    for (var a in e)
+                                        if ({}.hasOwnProperty.call(e, a)) {
+                                            if (u.indexOf(a) >= 0) continue;
+                                            t[a] = e[a];
+                                        }
+                                    return t;
                                 })(e, J)),
                             d = p()(Q.base, Q[`base__${r}`], Q[`base__${n}`], null == s ? void 0 : s.base),
                             A = p()(Q.icon, Q[`icon__${r}`], Q[`icon__${n}`], null == s ? void 0 : s.icon),
@@ -1751,13 +1764,18 @@
                     if (
                         Array.isArray(e) ||
                         (t = (function (e, u) {
-                            if (!e) return;
-                            if ('string' == typeof e) return ke(e, u);
-                            var t = Object.prototype.toString.call(e).slice(8, -1);
-                            'Object' === t && e.constructor && (t = e.constructor.name);
-                            if ('Map' === t || 'Set' === t) return Array.from(e);
-                            if ('Arguments' === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t))
-                                return ke(e, u);
+                            if (e) {
+                                if ('string' == typeof e) return ke(e, u);
+                                var t = {}.toString.call(e).slice(8, -1);
+                                return (
+                                    'Object' === t && e.constructor && (t = e.constructor.name),
+                                    'Map' === t || 'Set' === t
+                                        ? Array.from(e)
+                                        : 'Arguments' === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)
+                                          ? ke(e, u)
+                                          : void 0
+                                );
+                            }
                         })(e)) ||
                         (u && e && 'number' == typeof e.length)
                     ) {
@@ -1773,7 +1791,7 @@
                 }
                 function ke(e, u) {
                     (null == u || u > e.length) && (u = e.length);
-                    for (var t = 0, a = new Array(u); t < u; t++) a[t] = e[t];
+                    for (var t = 0, a = Array(u); t < u; t++) a[t] = e[t];
                     return a;
                 }
                 function Oe(e, u, t) {
@@ -2748,12 +2766,13 @@
                             B = e.onHide,
                             g = (function (e, u) {
                                 if (null == e) return {};
-                                var t,
-                                    a,
-                                    n = {},
-                                    r = Object.keys(e);
-                                for (a = 0; a < r.length; a++) (t = r[a]), u.indexOf(t) >= 0 || (n[t] = e[t]);
-                                return n;
+                                var t = {};
+                                for (var a in e)
+                                    if ({}.hasOwnProperty.call(e, a)) {
+                                        if (u.indexOf(a) >= 0) continue;
+                                        t[a] = e[a];
+                                    }
+                                return t;
                             })(e, Yu);
                         const p = (0, r.useRef)({ timeoutId: 0, isVisible: !1, prevTarget: null, hideTimerId: null }),
                             v = (0, r.useMemo)(
@@ -2853,28 +2872,29 @@
                     Ju = ['children'];
                 function et() {
                     return (
-                        (et =
-                            Object.assign ||
-                            function (e) {
-                                for (var u = 1; u < arguments.length; u++) {
-                                    var t = arguments[u];
-                                    for (var a in t) Object.prototype.hasOwnProperty.call(t, a) && (e[a] = t[a]);
-                                }
-                                return e;
-                            }),
-                        et.apply(this, arguments)
+                        (et = Object.assign
+                            ? Object.assign.bind()
+                            : function (e) {
+                                  for (var u = 1; u < arguments.length; u++) {
+                                      var t = arguments[u];
+                                      for (var a in t) ({}).hasOwnProperty.call(t, a) && (e[a] = t[a]);
+                                  }
+                                  return e;
+                              }),
+                        et.apply(null, arguments)
                     );
                 }
                 const ut = (e) => {
                     let u = e.children,
                         t = (function (e, u) {
                             if (null == e) return {};
-                            var t,
-                                a,
-                                n = {},
-                                r = Object.keys(e);
-                            for (a = 0; a < r.length; a++) (t = r[a]), u.indexOf(t) >= 0 || (n[t] = e[t]);
-                            return n;
+                            var t = {};
+                            for (var a in e)
+                                if ({}.hasOwnProperty.call(e, a)) {
+                                    if (u.indexOf(a) >= 0) continue;
+                                    t[a] = e[a];
+                                }
+                            return t;
                         })(e, Ju);
                     return i().createElement(
                         Qu,
@@ -2906,15 +2926,17 @@
                         (e.FullDateTime = 'fullDateTime');
                 })(tt || (tt = {}));
                 var at = t(8613);
-                const nt = 60,
-                    rt = 3600,
-                    it = 86400,
-                    st = (Date.now(), at.Ew.getRegionalDateTime),
-                    ot = at.Ew.getFormattedDateTime;
-                const lt = (0, r.memo)(({ datetime: e, format: u = tt.ShortDate, isConvertedToLocal: t = !0 }) =>
-                        Object.values(tt).includes(u) ? st(e, u, t) : ot(e, u, t),
+                const nt = 24,
+                    rt = 60,
+                    it = 60 * rt,
+                    st = nt * it,
+                    ot = 7 * st,
+                    lt = (Date.now(), at.Ew.getRegionalDateTime),
+                    ct = at.Ew.getFormattedDateTime;
+                const Et = (0, r.memo)(({ datetime: e, format: u = tt.ShortDate, isConvertedToLocal: t = !0 }) =>
+                        Object.values(tt).includes(u) ? lt(e, u, t) : ct(e, u, t),
                     ),
-                    ct = (e) => {
+                    mt = (e) => {
                         const u = Math.floor(e);
                         return {
                             totalSecondsLeft: u,
@@ -2924,30 +2946,30 @@
                             totalDays: Math.floor(u / 86400),
                         };
                     },
-                    Et = R.strings.comp7.season,
-                    mt = (e, u) => ({
-                        startDate: i().createElement(lt, { datetime: e, format: tt.ShortDate }),
-                        endDate: i().createElement(lt, { datetime: u, format: tt.ShortDate }),
+                    dt = R.strings.comp7.season,
+                    At = (e, u) => ({
+                        startDate: i().createElement(Et, { datetime: e, format: tt.ShortDate }),
+                        endDate: i().createElement(Et, { datetime: u, format: tt.ShortDate }),
                     }),
-                    dt = (e, u, t) => {
+                    _t = (e, u, t) => {
                         const a = u - t,
-                            n = ((e, u) => ct(e - u))(u, t);
-                        return a >= 604800
-                            ? i().createElement(Wu, { text: Et.range(), binding: mt(e, u) })
-                            : a >= it
-                              ? i().createElement(Wu, { text: Et.daysLeft(), binding: n })
-                              : a >= rt
-                                ? i().createElement(Wu, { text: Et.hoursLeft(), binding: n })
-                                : a >= nt
-                                  ? i().createElement(Wu, { text: Et.minutesLeft(), binding: n })
+                            n = ((e, u) => mt(e - u))(u, t);
+                        return a >= ot
+                            ? i().createElement(Wu, { text: dt.range(), binding: At(e, u) })
+                            : a >= st
+                              ? i().createElement(Wu, { text: dt.daysLeft(), binding: n })
+                              : a >= it
+                                ? i().createElement(Wu, { text: dt.hoursLeft(), binding: n })
+                                : a >= rt
+                                  ? i().createElement(Wu, { text: dt.minutesLeft(), binding: n })
                                   : a >= 1
-                                    ? i().createElement(Wu, { text: Et.secondsLeft(), binding: n })
+                                    ? i().createElement(Wu, { text: dt.secondsLeft(), binding: n })
                                     : void 0;
                     },
-                    At = 'ActiveSeasonState_base_55',
-                    _t = 'ActiveSeasonState_calendarIcon_df',
-                    Ft = 'ActiveSeasonState_divider_5b',
-                    Dt = ({
+                    Ft = 'ActiveSeasonState_base_55',
+                    Dt = 'ActiveSeasonState_calendarIcon_df',
+                    Ct = 'ActiveSeasonState_divider_5b',
+                    ht = ({
                         startTimestamp: e,
                         endTimestamp: u,
                         currentTimestamp: t,
@@ -2961,20 +2983,20 @@
                             { args: { tooltipId: n }, isEnabled: Boolean(n) },
                             i().createElement(
                                 'div',
-                                { className: At },
-                                i().createElement('div', { className: p()(_t, null == s ? void 0 : s.calendarIcon) }),
+                                { className: Ft },
+                                i().createElement('div', { className: p()(Dt, null == s ? void 0 : s.calendarIcon) }),
                                 r &&
                                     i().createElement(
                                         i().Fragment,
                                         null,
                                         Ku(a),
-                                        i().createElement('div', { className: Ft }),
+                                        i().createElement('div', { className: Ct }),
                                     ),
-                                dt(e, u, t),
+                                _t(e, u, t),
                             ),
                         ),
-                    Ct = 'ScheduleSubheading_base_f7',
-                    ht = (0, Y.Pi)(({ className: e, classNames: u, hasSeasonName: t = !0 }) => {
+                    Bt = 'ScheduleSubheading_base_f7',
+                    gt = (0, Y.Pi)(({ className: e, classNames: u, hasSeasonName: t = !0 }) => {
                         const a = q(),
                             n = a.model,
                             r = a.controls,
@@ -2986,12 +3008,12 @@
                             qu(l, o, r.pollServerTime),
                             i().createElement(
                                 'div',
-                                { className: p()(Ct, e) },
+                                { className: p()(Bt, e) },
                                 l < o
                                     ? i().createElement(
                                           'div',
                                           { className: null == u ? void 0 : u.activeSeasonState },
-                                          i().createElement(Dt, {
+                                          i().createElement(ht, {
                                               startTimestamp: s,
                                               endTimestamp: o,
                                               currentTimestamp: l,
@@ -3008,84 +3030,84 @@
                             )
                         );
                     }),
-                    Bt = 'typography_h1_e1',
-                    gt = 'typography_h2_18',
-                    pt = 'typography_h3_79',
-                    vt = 'typography_paragraphText_f5',
-                    ft = 'Banner_base_a0',
-                    bt = 'Banner_h3_80',
-                    wt = 'Banner_date_db',
-                    yt = 'WatchVideo_base_98',
-                    xt = 'WatchVideo_backdrop_40',
-                    St = 'WatchVideo_videoButton_57',
-                    Tt = 'WatchVideo_text_92',
-                    Nt = (0, Y.Pi)(() => {
+                    pt = 'typography_h1_e1',
+                    vt = 'typography_h2_18',
+                    ft = 'typography_h3_79',
+                    bt = 'typography_paragraphText_f5',
+                    wt = 'Banner_base_a0',
+                    yt = 'Banner_h3_80',
+                    xt = 'Banner_date_db',
+                    St = 'WatchVideo_base_98',
+                    Tt = 'WatchVideo_backdrop_40',
+                    Nt = 'WatchVideo_videoButton_57',
+                    Mt = 'WatchVideo_text_92',
+                    Lt = (0, Y.Pi)(() => {
                         const e = Ae().controls;
                         return i().createElement(
                             'div',
-                            { className: yt, onClick: e.openVideo },
-                            i().createElement('div', { className: xt }),
-                            i().createElement('div', { className: St }),
-                            i().createElement('div', { className: Tt }, R.strings.comp7.whatsNewView.watchVideo()),
+                            { className: St, onClick: e.openVideo },
+                            i().createElement('div', { className: Tt }),
+                            i().createElement('div', { className: Nt }),
+                            i().createElement('div', { className: Mt }, R.strings.comp7.whatsNewView.watchVideo()),
                         );
                     }),
-                    Mt = R.strings.comp7.whatsNewView.banner,
-                    Lt = () =>
+                    Rt = R.strings.comp7.whatsNewView.banner,
+                    kt = () =>
                         i().createElement(
                             'div',
-                            { className: ft },
-                            i().createElement('div', { className: p()(pt, bt) }, Mt.title.small()),
-                            i().createElement('div', { className: Bt }, Mt.title.large()),
-                            i().createElement('div', { className: wt }, i().createElement(ht, { hasSeasonName: !1 })),
-                            i().createElement(Nt, null),
+                            { className: wt },
+                            i().createElement('div', { className: p()(ft, yt) }, Rt.title.small()),
+                            i().createElement('div', { className: pt }, Rt.title.large()),
+                            i().createElement('div', { className: xt }, i().createElement(gt, { hasSeasonName: !1 })),
+                            i().createElement(Lt, null),
                         ),
-                    Rt = {
+                    Ot = {
                         main: { name: 'ratingUpdate', tagType: 'revamped' },
                         secondary: [
                             { name: 'assaultTankDestroyer', tagType: 'revamped' },
                             { name: 'reconFlight', tagType: 'revamped' },
                         ],
                     },
-                    kt = {
+                    Pt = {
                         main: { name: 'tournaments', tagType: 'new' },
                         secondary: [
                             { name: 'shopUpdates', tagType: 'seasonUpdate' },
                             { name: 'trainingRoom', tagType: 'revamped' },
                         ],
                     },
-                    Ot = 'Introduction_row_38',
-                    Pt = 'Introduction_h2_a8',
-                    Ht = 'Introduction_seasonText_ff',
-                    Wt = 'Introduction_introContainer_02',
-                    It = 'Introduction_introBackgroundWrapper_60',
-                    Vt = 'Introduction_introBackground_a7',
-                    $t = 'Introduction_introDescription_5e',
-                    Ut = R.strings.comp7.whatsNewView,
-                    zt = () =>
+                    Ht = 'Introduction_row_38',
+                    Wt = 'Introduction_h2_a8',
+                    It = 'Introduction_seasonText_ff',
+                    Vt = 'Introduction_introContainer_02',
+                    $t = 'Introduction_introBackgroundWrapper_60',
+                    Ut = 'Introduction_introBackground_a7',
+                    zt = 'Introduction_introDescription_5e',
+                    Gt = R.strings.comp7.whatsNewView,
+                    jt = () =>
                         i().createElement(
                             'div',
                             null,
                             i().createElement(
                                 'div',
-                                { className: p()(fu, Ot) },
+                                { className: p()(fu, Ht) },
                                 i().createElement(
                                     'div',
-                                    { className: p()(bu, Wt) },
-                                    i().createElement(
-                                        'div',
-                                        { className: It },
-                                        i().createElement('div', { className: Vt }),
-                                    ),
+                                    { className: p()(bu, Vt) },
                                     i().createElement(
                                         'div',
                                         { className: $t },
-                                        i().createElement(Wu, { classMix: p()(gt, Pt), text: Ut.intro.heading() }),
-                                        i().createElement(Wu, { classMix: p()(vt, Ht), text: Ut.intro.description() }),
+                                        i().createElement('div', { className: Ut }),
+                                    ),
+                                    i().createElement(
+                                        'div',
+                                        { className: zt },
+                                        i().createElement(Wu, { classMix: p()(vt, Wt), text: Gt.intro.heading() }),
+                                        i().createElement(Wu, { classMix: p()(bt, It), text: Gt.intro.description() }),
                                     ),
                                 ),
                             ),
                         ),
-                    Gt = {
+                    Kt = {
                         '--pageContentWidth': '78vw',
                         base: 'Main_base_e5',
                         areaBaseWrapper: 'Main_areaBaseWrapper_81',
@@ -3117,7 +3139,7 @@
                         highlightAppearance: 'Main_highlightAppearance_bb',
                         blink: 'Main_blink_fa',
                     },
-                    jt = {
+                    qt = {
                         base: 'Tag_base_b1',
                         base__new: 'Tag_base__new_6b',
                         base__changed: 'Tag_base__changed_95',
@@ -3125,18 +3147,18 @@
                         base__revamped: 'Tag_base__revamped_5c',
                         base__returned: 'Tag_base__returned_6d',
                     },
-                    Kt = ({ type: e, className: u }) =>
+                    Yt = ({ type: e, className: u }) =>
                         i().createElement(
                             'div',
-                            { className: p()(jt.base, jt[`base__${e}`], u) },
+                            { className: p()(qt.base, qt[`base__${e}`], u) },
                             R.strings.comp7.whatsNewView.tag.$dyn(e),
                         ),
-                    qt = [
+                    Xt = [
                         { name: '11_murovanka', tag: 'new' },
                         { name: '44_north_america', tag: 'new' },
                         { name: '04_himmelsdorf', tag: 'returned' },
                     ],
-                    Yt = {
+                    Zt = {
                         base: 'Map_base_71',
                         gradient: 'Map_gradient_81',
                         content: 'Map_content_66',
@@ -3146,72 +3168,72 @@
                         stamp__removed: 'Map_stamp__removed_46',
                         stamp__underDevelopment: 'Map_stamp__underDevelopment_2b',
                     },
-                    Xt = ({ name: e, index: u, tag: t, stamp: a }) => {
+                    Qt = ({ name: e, index: u, tag: t, stamp: a }) => {
                         const n = R.images.gui.maps.icons.comp7.whatsNewView.arenas.$dyn(`c_${u}`),
                             r = R.strings.arenas.$dyn(`c_${e}`);
                         return i().createElement(
                             'div',
-                            { className: Yt.base, style: { backgroundImage: `url(${n})` } },
-                            i().createElement('div', { className: Yt.gradient }),
+                            { className: Zt.base, style: { backgroundImage: `url(${n})` } },
+                            i().createElement('div', { className: Zt.gradient }),
                             a &&
                                 i().createElement(
                                     'div',
-                                    { className: p()(Yt.stamp, Yt[`stamp__${a}`]) },
+                                    { className: p()(Zt.stamp, Zt[`stamp__${a}`]) },
                                     R.strings.comp7.whatsNewView.stamp.$dyn(a),
                                 ),
                             i().createElement(
                                 'div',
-                                { className: Yt.content },
-                                t && i().createElement(Kt, { type: t }),
+                                { className: Zt.content },
+                                t && i().createElement(Yt, { type: t }),
                                 i().createElement(
                                     'div',
-                                    { className: Yt.nameContainer },
-                                    i().createElement('div', { className: Yt.name }, r.$dyn('name')),
+                                    { className: Zt.nameContainer },
+                                    i().createElement('div', { className: Zt.name }, r.$dyn('name')),
                                 ),
                             ),
                         );
                     },
-                    Zt = { header: 'MapChanges_header_5c', legend: 'MapChanges_legend_43' },
-                    Qt = R.strings.comp7.whatsNewView.mapChanges,
-                    Jt = () =>
+                    Jt = { header: 'MapChanges_header_5c', legend: 'MapChanges_legend_43' },
+                    ea = R.strings.comp7.whatsNewView.mapChanges,
+                    ua = () =>
                         i().createElement(
                             'div',
-                            { className: Zt.base },
+                            { className: Jt.base },
                             i().createElement(
                                 'div',
-                                { className: p()(vu, Zt.header) },
-                                i().createElement('div', { className: gt }, Qt.heading()),
-                                i().createElement(Kt, { type: 'seasonUpdate' }),
+                                { className: p()(vu, Jt.header) },
+                                i().createElement('div', { className: vt }, ea.heading()),
+                                i().createElement(Yt, { type: 'seasonUpdate' }),
                             ),
                             i().createElement(
                                 'div',
                                 { className: fu },
-                                qt.map(({ name: e, tag: u, stamp: t }, a) =>
+                                Xt.map(({ name: e, tag: u, stamp: t }, a) =>
                                     i().createElement(
                                         'div',
                                         { className: bu, key: e },
-                                        i().createElement(Xt, { name: e, tag: u, stamp: t, index: a }),
+                                        i().createElement(Qt, { name: e, tag: u, stamp: t, index: a }),
                                     ),
                                 ),
                             ),
                         ),
-                    ea = ['children', 'body', 'header', 'note', 'alert', 'args'];
-                function ua() {
+                    ta = ['children', 'body', 'header', 'note', 'alert', 'args'];
+                function aa() {
                     return (
-                        (ua =
-                            Object.assign ||
-                            function (e) {
-                                for (var u = 1; u < arguments.length; u++) {
-                                    var t = arguments[u];
-                                    for (var a in t) Object.prototype.hasOwnProperty.call(t, a) && (e[a] = t[a]);
-                                }
-                                return e;
-                            }),
-                        ua.apply(this, arguments)
+                        (aa = Object.assign
+                            ? Object.assign.bind()
+                            : function (e) {
+                                  for (var u = 1; u < arguments.length; u++) {
+                                      var t = arguments[u];
+                                      for (var a in t) ({}).hasOwnProperty.call(t, a) && (e[a] = t[a]);
+                                  }
+                                  return e;
+                              }),
+                        aa.apply(null, arguments)
                     );
                 }
-                const ta = R.views.common.tooltip_window.simple_tooltip_content,
-                    aa = (e) => {
+                const na = R.views.common.tooltip_window.simple_tooltip_content,
+                    ra = (e) => {
                         let u = e.children,
                             t = e.body,
                             a = e.header,
@@ -3220,13 +3242,14 @@
                             o = e.args,
                             l = (function (e, u) {
                                 if (null == e) return {};
-                                var t,
-                                    a,
-                                    n = {},
-                                    r = Object.keys(e);
-                                for (a = 0; a < r.length; a++) (t = r[a]), u.indexOf(t) >= 0 || (n[t] = e[t]);
-                                return n;
-                            })(e, ea);
+                                var t = {};
+                                for (var a in e)
+                                    if ({}.hasOwnProperty.call(e, a)) {
+                                        if (u.indexOf(a) >= 0) continue;
+                                        t[a] = e[a];
+                                    }
+                                return t;
+                            })(e, ta);
                         const c = (0, r.useMemo)(() => {
                             const e = Object.assign({}, o, { body: t, header: a, note: n, alert: s });
                             for (const u in e) void 0 === e[u] && delete e[u];
@@ -3234,11 +3257,11 @@
                         }, [s, t, a, n, o]);
                         return i().createElement(
                             Qu,
-                            ua(
+                            aa(
                                 {
                                     contentId:
                                         ((E = null == o ? void 0 : o.hasHtmlContent),
-                                        E ? ta.SimpleTooltipHtmlContent('resId') : ta.SimpleTooltipContent('resId')),
+                                        E ? na.SimpleTooltipHtmlContent('resId') : na.SimpleTooltipContent('resId')),
                                     decoratorId: R.views.common.tooltip_window.tooltip_window.TooltipWindow('resId'),
                                     args: c,
                                 },
@@ -3248,70 +3271,70 @@
                         );
                         var E;
                     },
-                    na = R.strings.comp7.modifier,
-                    ra = [
+                    ia = R.strings.comp7.modifier,
+                    sa = [
                         {
                             type: 'vehicleDurability',
                             randomValue: R.strings.comp7.whatsNewView.modifiers.NA(),
-                            previousSeasonValue: Su(na.valueType.percentage(), { percentage: 25 }),
-                            currentSeasonValue: Su(na.valueType.HP(), { hp: 650 }),
+                            previousSeasonValue: Su(ia.valueType.percentage(), { percentage: 25 }),
+                            currentSeasonValue: Su(ia.valueType.HP(), { hp: 650 }),
                         },
                         {
                             type: 'timeRemainingVisible',
-                            randomValue: Su(na.valueType.seconds(), { seconds: 10 }),
-                            previousSeasonValue: Su(na.valueType.seconds(), { seconds: 3 }),
-                            currentSeasonValue: Su(na.valueType.seconds(), { seconds: 4 }),
+                            randomValue: Su(ia.valueType.seconds(), { seconds: 10 }),
+                            previousSeasonValue: Su(ia.valueType.seconds(), { seconds: 3 }),
+                            currentSeasonValue: Su(ia.valueType.seconds(), { seconds: 4 }),
                         },
                     ],
-                    ia = [
+                    oa = [
                         {
                             type: 'rangeOfPotentialDamage',
-                            randomValue: Su(na.valueType.deviation(), { deviation: 25 }),
-                            previousSeasonValue: Su(na.valueType.deviation(), { deviation: 25 }),
-                            currentSeasonValue: Su(na.valueType.deviation(), { deviation: 12 }),
+                            randomValue: Su(ia.valueType.deviation(), { deviation: 25 }),
+                            previousSeasonValue: Su(ia.valueType.deviation(), { deviation: 25 }),
+                            currentSeasonValue: Su(ia.valueType.deviation(), { deviation: 12 }),
                         },
                         {
                             type: 'innerModuleDamageReduction',
                             randomValue: R.strings.comp7.whatsNewView.modifiers.NA(),
                             previousSeasonValue: R.strings.comp7.whatsNewView.modifiers.NA(),
-                            currentSeasonValue: Su(na.valueType.percentage(), { percentage: 50 }),
+                            currentSeasonValue: Su(ia.valueType.percentage(), { percentage: 50 }),
                         },
                         {
                             type: 'engineFireChance',
-                            randomValue: Su(na.valueType.percentage(), { percentage: '10-20' }),
-                            previousSeasonValue: Su(na.valueType.percentage(), { percentage: '10-20' }),
-                            currentSeasonValue: Su(na.valueType.percentage(), { percentage: 0 }),
+                            randomValue: Su(ia.valueType.percentage(), { percentage: '10-20' }),
+                            previousSeasonValue: Su(ia.valueType.percentage(), { percentage: '10-20' }),
+                            currentSeasonValue: Su(ia.valueType.percentage(), { percentage: 0 }),
                         },
                     ],
-                    sa = 'Modifiers_base_c3',
-                    oa = 'Modifiers_tableContainer_9a',
-                    la = 'Modifiers_tableHeadingWrapper_b3',
-                    ca = 'Modifiers_section_c3',
-                    Ea = 'Modifiers_headingIcon_3c',
-                    ma = 'Modifiers_sectionTitle_e5',
-                    da = 'Modifiers_tableHeading_86',
-                    Aa = 'Modifiers_description_e3',
-                    _a = 'Modifiers_columnName_38',
-                    Fa = 'Modifiers_row_c0',
-                    Da = 'Modifiers_row__heading_7a',
-                    Ca = 'Modifiers_dividerContainer_6c',
-                    ha = 'Modifiers_dividerGradient_e7',
-                    Ba = 'Modifiers_column_b1',
-                    ga = 'Modifiers_column__first_bd',
-                    pa = 'Modifiers_column__second_dc',
-                    va = 'Modifiers_column__third_bb',
-                    fa = 'Modifiers_column__fourth_c0',
-                    ba = 'Modifiers_glow_54',
-                    wa = 'Modifiers_glow__green_8b',
-                    ya = 'Modifiers_glow__blue_22',
-                    xa = 'Modifiers_verticalGlow_6d',
-                    Sa = 'Modifiers_columnIcon_92',
-                    Ta = 'Modifiers_columnIcon__random_c0',
-                    Na = 'Modifiers_columnIcon__previousSeason_44',
-                    Ma = 'Modifiers_columnIcon__currentSeason_4e',
-                    La = 'Modifiers_positiveValue_95',
-                    Ra = R.strings.comp7.modifier,
-                    ka = ({
+                    la = 'Modifiers_base_c3',
+                    ca = 'Modifiers_tableContainer_9a',
+                    Ea = 'Modifiers_tableHeadingWrapper_b3',
+                    ma = 'Modifiers_section_c3',
+                    da = 'Modifiers_headingIcon_3c',
+                    Aa = 'Modifiers_sectionTitle_e5',
+                    _a = 'Modifiers_tableHeading_86',
+                    Fa = 'Modifiers_description_e3',
+                    Da = 'Modifiers_columnName_38',
+                    Ca = 'Modifiers_row_c0',
+                    ha = 'Modifiers_row__heading_7a',
+                    Ba = 'Modifiers_dividerContainer_6c',
+                    ga = 'Modifiers_dividerGradient_e7',
+                    pa = 'Modifiers_column_b1',
+                    va = 'Modifiers_column__first_bd',
+                    fa = 'Modifiers_column__second_dc',
+                    ba = 'Modifiers_column__third_bb',
+                    wa = 'Modifiers_column__fourth_c0',
+                    ya = 'Modifiers_glow_54',
+                    xa = 'Modifiers_glow__green_8b',
+                    Sa = 'Modifiers_glow__blue_22',
+                    Ta = 'Modifiers_verticalGlow_6d',
+                    Na = 'Modifiers_columnIcon_92',
+                    Ma = 'Modifiers_columnIcon__random_c0',
+                    La = 'Modifiers_columnIcon__previousSeason_44',
+                    Ra = 'Modifiers_columnIcon__currentSeason_4e',
+                    ka = 'Modifiers_positiveValue_95',
+                    Oa = R.strings.comp7.modifier,
+                    Pa = ({
                         type: e,
                         randomValue: u,
                         previousSeasonValue: t,
@@ -3320,138 +3343,138 @@
                     }) =>
                         i().createElement(
                             'div',
-                            { className: Fa, key: e },
-                            i().createElement('div', { className: p()(Ba, ga, vt) }, Ra.name.$dyn(e)),
+                            { className: Ca, key: e },
+                            i().createElement('div', { className: p()(pa, va, bt) }, Oa.name.$dyn(e)),
                             i().createElement(
                                 'div',
-                                { className: p()(Ba, pa) },
-                                i().createElement(Wu, { text: u, classMix: vt }),
+                                { className: p()(pa, fa) },
+                                i().createElement(Wu, { text: u, classMix: bt }),
                             ),
                             i().createElement(
                                 'div',
-                                { className: p()(Ba, va) },
-                                i().createElement(Wu, { text: t, classMix: La }),
+                                { className: p()(pa, ba) },
+                                i().createElement(Wu, { text: t, classMix: ka }),
                             ),
                             i().createElement(
                                 'div',
-                                { className: p()(Ba, fa) },
-                                i().createElement(Wu, { text: a, classMix: La }),
+                                { className: p()(pa, wa) },
+                                i().createElement(Wu, { text: a, classMix: ka }),
                             ),
                             n &&
                                 i().createElement(
                                     'div',
-                                    { className: Ca },
-                                    i().createElement('div', { className: ha }),
+                                    { className: Ba },
+                                    i().createElement('div', { className: ga }),
                                 ),
                         );
-                function Oa() {
+                function Ha() {
                     return (
-                        (Oa =
-                            Object.assign ||
-                            function (e) {
-                                for (var u = 1; u < arguments.length; u++) {
-                                    var t = arguments[u];
-                                    for (var a in t) Object.prototype.hasOwnProperty.call(t, a) && (e[a] = t[a]);
-                                }
-                                return e;
-                            }),
-                        Oa.apply(this, arguments)
+                        (Ha = Object.assign
+                            ? Object.assign.bind()
+                            : function (e) {
+                                  for (var u = 1; u < arguments.length; u++) {
+                                      var t = arguments[u];
+                                      for (var a in t) ({}).hasOwnProperty.call(t, a) && (e[a] = t[a]);
+                                  }
+                                  return e;
+                              }),
+                        Ha.apply(null, arguments)
                     );
                 }
-                const Pa = R.strings.comp7.whatsNewView.modifiers,
-                    Ha = (e, u) => e !== u.length - 1,
-                    Wa = () => {
+                const Wa = R.strings.comp7.whatsNewView.modifiers,
+                    Ia = (e, u) => e !== u.length - 1,
+                    Va = () => {
                         const e = x().mediaSize < b.Small;
                         return i().createElement(
                             'div',
-                            { className: p()(sa, pu) },
+                            { className: p()(la, pu) },
                             i().createElement(
                                 'div',
-                                { className: p()(oa) },
+                                { className: p()(ca) },
                                 i().createElement(
                                     'div',
-                                    { className: la },
-                                    i().createElement('div', { className: Ea }),
+                                    { className: Ea },
+                                    i().createElement('div', { className: da }),
                                     i().createElement(
                                         'div',
-                                        { className: da },
-                                        i().createElement('div', { className: gt }, Pa.heading()),
-                                        i().createElement('div', { className: p()(vt, Aa) }, Pa.description()),
+                                        { className: _a },
+                                        i().createElement('div', { className: vt }, Wa.heading()),
+                                        i().createElement('div', { className: p()(bt, Fa) }, Wa.description()),
                                     ),
                                 ),
                                 i().createElement(
                                     'div',
-                                    { className: ca },
+                                    { className: ma },
                                     i().createElement(
                                         'div',
-                                        { className: p()(Fa, Da) },
+                                        { className: p()(Ca, ha) },
                                         i().createElement(
                                             'div',
-                                            { className: p()(Ba, ga) },
-                                            i().createElement('div', { className: ma }, Pa.changed()),
-                                            i().createElement(Kt, { type: 'revamped' }),
+                                            { className: p()(pa, va) },
+                                            i().createElement('div', { className: Aa }, Wa.changed()),
+                                            i().createElement(Yt, { type: 'revamped' }),
                                         ),
                                         i().createElement(
                                             'div',
-                                            { className: p()(Ba, pa) },
+                                            { className: p()(pa, fa) },
                                             i().createElement(
-                                                aa,
-                                                { isEnabled: e, body: Pa.random() },
-                                                i().createElement('div', { className: p()(Sa, Ta) }),
+                                                ra,
+                                                { isEnabled: e, body: Wa.random() },
+                                                i().createElement('div', { className: p()(Na, Ma) }),
                                             ),
-                                            i().createElement('div', { className: _a }, Pa.random()),
+                                            i().createElement('div', { className: Da }, Wa.random()),
                                         ),
                                         i().createElement(
                                             'div',
-                                            { className: p()(Ba, va) },
-                                            i().createElement('div', { className: p()(ba, wa) }),
+                                            { className: p()(pa, ba) },
+                                            i().createElement('div', { className: p()(ya, xa) }),
                                             i().createElement(
-                                                aa,
-                                                { isEnabled: e, body: Pa.previousSeason() },
-                                                i().createElement('div', { className: p()(Sa, Na) }),
+                                                ra,
+                                                { isEnabled: e, body: Wa.previousSeason() },
+                                                i().createElement('div', { className: p()(Na, La) }),
                                             ),
-                                            i().createElement('div', { className: _a }, Pa.previousSeason()),
+                                            i().createElement('div', { className: Da }, Wa.previousSeason()),
                                         ),
                                         i().createElement(
                                             'div',
-                                            { className: p()(Ba, fa) },
-                                            i().createElement('div', { className: xa }),
-                                            i().createElement('div', { className: p()(ba, ya) }),
+                                            { className: p()(pa, wa) },
+                                            i().createElement('div', { className: Ta }),
+                                            i().createElement('div', { className: p()(ya, Sa) }),
                                             i().createElement(
-                                                aa,
-                                                { isEnabled: e, body: Pa.currentSeason() },
-                                                i().createElement('div', { className: p()(Sa, Ma) }),
+                                                ra,
+                                                { isEnabled: e, body: Wa.currentSeason() },
+                                                i().createElement('div', { className: p()(Na, Ra) }),
                                             ),
-                                            i().createElement('div', { className: _a }, Pa.currentSeason()),
+                                            i().createElement('div', { className: Da }, Wa.currentSeason()),
                                         ),
                                     ),
-                                    ra.map((e, u, t) =>
-                                        i().createElement(ka, Oa({}, e, { key: e.type, hasBottomDivider: Ha(u, t) })),
+                                    sa.map((e, u, t) =>
+                                        i().createElement(Pa, Ha({}, e, { key: e.type, hasBottomDivider: Ia(u, t) })),
                                     ),
                                 ),
                                 i().createElement(
                                     'div',
-                                    { className: ca },
+                                    { className: ma },
                                     i().createElement(
                                         'div',
-                                        { className: p()(Fa, Da) },
+                                        { className: p()(Ca, ha) },
                                         i().createElement(
                                             'div',
-                                            { className: p()(Ba, ga) },
-                                            i().createElement('div', { className: ma }, Pa.added()),
-                                            i().createElement(Kt, { type: 'new' }),
+                                            { className: p()(pa, va) },
+                                            i().createElement('div', { className: Aa }, Wa.added()),
+                                            i().createElement(Yt, { type: 'new' }),
                                         ),
-                                        i().createElement('div', { className: p()(Ba, pa) }),
-                                        i().createElement('div', { className: p()(Ba, va) }),
+                                        i().createElement('div', { className: p()(pa, fa) }),
+                                        i().createElement('div', { className: p()(pa, ba) }),
                                     ),
-                                    ia.map((e, u, t) =>
-                                        i().createElement(ka, Oa({}, e, { key: e.type, hasBottomDivider: Ha(u, t) })),
+                                    oa.map((e, u, t) =>
+                                        i().createElement(Pa, Ha({}, e, { key: e.type, hasBottomDivider: Ia(u, t) })),
                                     ),
                                 ),
                             ),
                         );
                     },
-                    Ia = [
+                    $a = [
                         {
                             isPremium: !0,
                             name: R.strings.poland_vehicles.Pl21_CS_63_OSP3(),
@@ -3541,22 +3564,22 @@
                             vehicleCD: 63537,
                         },
                     ],
-                    Va = 'NewVehicles_base_d3',
-                    $a = 'NewVehicles_row_9f',
-                    Ua = 'NewVehicles_header_e7',
-                    za = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'],
-                    Ga = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1e3];
-                const ja = ['ko', 'no'].includes(R.strings.settings.LANGUAGE_CODE()),
-                    Ka = (e) =>
-                        ja
+                    Ua = 'NewVehicles_base_d3',
+                    za = 'NewVehicles_row_9f',
+                    Ga = 'NewVehicles_header_e7',
+                    ja = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'],
+                    Ka = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1e3];
+                const qa = ['ko', 'no'].includes(R.strings.settings.LANGUAGE_CODE()),
+                    Ya = (e) =>
+                        qa
                             ? `${e}`
                             : (function (e) {
                                   let u = '';
-                                  for (let t = Ga.length - 1; t >= 0; t--)
-                                      for (; e >= Ga[t]; ) (u += za[t]), (e -= Ga[t]);
+                                  for (let t = Ka.length - 1; t >= 0; t--)
+                                      for (; e >= Ka[t]; ) (u += ja[t]), (e -= Ka[t]);
                                   return u;
                               })(e),
-                    qa = {
+                    Xa = {
                         base: 'VehicleName_base_3b',
                         base__24x24: 'VehicleName_base__24x24_a7',
                         base__24x24_metal: 'VehicleName_base__24x24_metal_92',
@@ -3567,7 +3590,7 @@
                         base__60x54: 'VehicleName_base__60x54_08',
                         vehicleType: 'VehicleName_vehicleType_c3',
                     };
-                let Ya;
+                let Za;
                 !(function (e) {
                     (e.x24 = '24x24'),
                         (e.x24Metal = '24x24_metal'),
@@ -3577,27 +3600,27 @@
                         (e.x80 = '80x80'),
                         (e.x83 = '83x74'),
                         (e.x180 = '180x135');
-                })(Ya || (Ya = {}));
-                const Xa = R.images.gui.maps.icons.vehicleTypes,
-                    Za = (e) => {
+                })(Za || (Za = {}));
+                const Qa = R.images.gui.maps.icons.vehicleTypes,
+                    Ja = (e) => {
                         switch (e) {
-                            case Ya.x80:
-                                return Xa.large;
-                            case Ya.x83:
-                                return Xa.big;
-                            case Ya.x180:
-                                return Xa.huge;
+                            case Za.x80:
+                                return Qa.large;
+                            case Za.x83:
+                                return Qa.big;
+                            case Za.x180:
+                                return Qa.huge;
                             default:
-                                return Xa.$dyn(`c_${e}`);
+                                return Qa.$dyn(`c_${e}`);
                         }
                     },
-                    Qa = (0, r.memo)(
+                    en = (0, r.memo)(
                         ({
                             name: e,
                             tier: u,
                             type: t,
-                            size: a = Ya.x24Metal,
-                            typeIconFolderPath: n = Za(a),
+                            size: a = Za.x24Metal,
+                            typeIconFolderPath: n = Ja(a),
                             isPremium: r = !1,
                             className: s,
                             classNames: o,
@@ -3605,39 +3628,39 @@
                             const l = `${Tu(t)}${r ? '_elite' : ''}`;
                             return i().createElement(
                                 'div',
-                                { className: p()(qa.base, qa[`base__${a}`], s) },
-                                i().createElement('div', { className: null == o ? void 0 : o.level }, Ka(u)),
+                                { className: p()(Xa.base, Xa[`base__${a}`], s) },
+                                i().createElement('div', { className: null == o ? void 0 : o.level }, Ya(u)),
                                 i().createElement(
                                     'div',
                                     {
                                         className: p()(
-                                            qa.vehicleTypeContainer,
+                                            Xa.vehicleTypeContainer,
                                             null == o ? void 0 : o.vehicleTypeContainer,
                                         ),
                                     },
                                     i().createElement('div', {
-                                        className: p()(qa.vehicleType, null == o ? void 0 : o.type),
+                                        className: p()(Xa.vehicleType, null == o ? void 0 : o.type),
                                         style: { backgroundImage: `url(${null == n ? void 0 : n.$dyn(l)})` },
                                     }),
                                 ),
                                 i().createElement(
                                     'div',
-                                    { className: p()(qa.shortName, null == o ? void 0 : o.shortName) },
+                                    { className: p()(Xa.shortName, null == o ? void 0 : o.shortName) },
                                     e,
                                 ),
                             );
                         },
                     ),
-                    Ja = 'Vehicle_base_af',
-                    en = 'Vehicle_vehicle_0b',
-                    un = 'Vehicle_shortName_53',
-                    tn = 'Vehicle_level_18',
-                    an = 'Vehicle_vehicleName_2b',
-                    nn = 'Vehicle_typeIcon_ed',
-                    rn = 'Vehicle_type_3a',
-                    sn = 'Vehicle_perk_69',
-                    on = { type: p()(nn, rn), vehicleTypeContainer: p()(nn, rn), shortName: un, level: tn },
-                    ln = ({ vehicle: e }) => {
+                    un = 'Vehicle_base_af',
+                    tn = 'Vehicle_vehicle_0b',
+                    an = 'Vehicle_shortName_53',
+                    nn = 'Vehicle_level_18',
+                    rn = 'Vehicle_vehicleName_2b',
+                    sn = 'Vehicle_typeIcon_ed',
+                    on = 'Vehicle_type_3a',
+                    ln = 'Vehicle_perk_69',
+                    cn = { type: p()(sn, on), vehicleTypeContainer: p()(sn, on), shortName: an, level: nn },
+                    En = ({ vehicle: e }) => {
                         const u = e.nation,
                             t = e.techName,
                             a = e.tags,
@@ -3649,19 +3672,19 @@
                         return i().createElement(
                             'div',
                             {
-                                className: Ja,
+                                className: un,
                                 style: {
                                     backgroundImage: `url(${R.images.gui.maps.icons.comp7.whatsNewView.nations.$dyn(u)})`,
                                 },
                             },
                             i().createElement('div', {
-                                className: en,
+                                className: tn,
                                 style: {
                                     backgroundImage: `url(${R.images.gui.maps.icons.comp7.whatsNewView.newVehicles.$dyn(`${t.toLowerCase()}`)})`,
                                 },
                             }),
                             i().createElement('div', {
-                                className: sn,
+                                className: ln,
                                 style: {
                                     backgroundImage: `url(${R.images.gui.maps.icons.comp7.whatsNewView.perks.$dyn(a)})`,
                                 },
@@ -3671,37 +3694,37 @@
                                 { args: { vehicleCD: n, tooltipId: 'shopVehicle' } },
                                 i().createElement(
                                     'div',
-                                    { className: an },
-                                    i().createElement(Qa, {
+                                    { className: rn },
+                                    i().createElement(en, {
                                         name: r,
                                         tier: s,
                                         type: o,
                                         isPremium: l,
-                                        classNames: on,
+                                        classNames: cn,
                                         typeIconFolderPath: R.images.gui.maps.icons.comp7.whatsNewView.vehicleTypes,
                                     }),
                                 ),
                             ),
                         );
                     },
-                    cn = R.strings.comp7.whatsNewView.newVehicles,
-                    En = () =>
+                    mn = R.strings.comp7.whatsNewView.newVehicles,
+                    dn = () =>
                         i().createElement(
                             'div',
-                            { className: Va },
+                            { className: Ua },
                             i().createElement(
                                 'div',
-                                { className: p()(vu, Ua) },
-                                i().createElement('div', { className: gt }, cn.heading()),
-                                i().createElement(Kt, { type: 'new' }),
+                                { className: p()(vu, Ga) },
+                                i().createElement('div', { className: vt }, mn.heading()),
+                                i().createElement(Yt, { type: 'new' }),
                             ),
                             i().createElement(
                                 'div',
-                                { className: p()(fu, $a) },
-                                Ia.map((e, u) => i().createElement(ln, { vehicle: e, key: u })),
+                                { className: p()(fu, za) },
+                                $a.map((e, u) => i().createElement(En, { vehicle: e, key: u })),
                             ),
                         ),
-                    mn = {
+                    An = {
                         base: 'SeasonalChanges_base_5c',
                         row: 'SeasonalChanges_row_35',
                         row__assaultTankDestroyer: 'SeasonalChanges_row__assaultTankDestroyer_93',
@@ -3720,151 +3743,151 @@
                         tournamentsContainer__tournaments: 'SeasonalChanges_tournamentsContainer__tournaments_d8',
                         ranks: 'SeasonalChanges_ranks_1d',
                     },
-                    dn = R.strings.comp7.whatsNewView,
-                    An = (0, Y.Pi)(({ changes: e }) => {
+                    _n = R.strings.comp7.whatsNewView,
+                    Fn = (0, Y.Pi)(({ changes: e }) => {
                         const u = Ae().model.reconFlightDelay.get();
                         return i().createElement(
                             'div',
-                            { className: p()(fu, mn.base) },
+                            { className: p()(fu, An.base) },
                             i().createElement(
                                 'div',
                                 {
                                     className: p()(
                                         bu,
-                                        mn.tournamentsContainer,
-                                        mn[`tournamentsContainer__${e.main.name}`],
+                                        An.tournamentsContainer,
+                                        An[`tournamentsContainer__${e.main.name}`],
                                     ),
                                 },
-                                i().createElement('div', { className: mn.ranks }),
+                                i().createElement('div', { className: An.ranks }),
                                 i().createElement(
                                     'div',
-                                    { className: p()(mn.headingContainer, gt) },
+                                    { className: p()(An.headingContainer, vt) },
                                     i().createElement(
                                         'div',
-                                        { className: mn.heading },
-                                        dn.sectionHeading.$dyn(e.main.name),
+                                        { className: An.heading },
+                                        _n.sectionHeading.$dyn(e.main.name),
                                     ),
-                                    i().createElement(Kt, { type: e.main.tagType, className: mn.headingTag }),
+                                    i().createElement(Yt, { type: e.main.tagType, className: An.headingTag }),
                                 ),
-                                i().createElement('div', { className: vt }, dn.sectionDescription.$dyn(e.main.name)),
+                                i().createElement('div', { className: bt }, _n.sectionDescription.$dyn(e.main.name)),
                             ),
                             i().createElement(
                                 'div',
-                                { className: p()(bu, mn.columnContainer) },
+                                { className: p()(bu, An.columnContainer) },
                                 e.secondary.map(({ name: e, tagType: t }, a, n) =>
                                     i().createElement(
                                         i().Fragment,
                                         { key: e },
                                         i().createElement(
                                             'div',
-                                            { className: p()(mn.row, mn[`row__${e}`]) },
-                                            i().createElement('div', { className: mn.image }),
+                                            { className: p()(An.row, An[`row__${e}`]) },
+                                            i().createElement('div', { className: An.image }),
                                             i().createElement(
                                                 'div',
-                                                { className: mn.rowContainer },
+                                                { className: An.rowContainer },
                                                 i().createElement(
                                                     'div',
-                                                    { className: p()(mn.headingContainer, gt) },
+                                                    { className: p()(An.headingContainer, vt) },
                                                     i().createElement(
                                                         'div',
-                                                        { className: mn.heading },
-                                                        dn.sectionHeading.$dyn(e),
+                                                        { className: An.heading },
+                                                        _n.sectionHeading.$dyn(e),
                                                     ),
-                                                    i().createElement(Kt, { type: t, className: mn.headingTag }),
+                                                    i().createElement(Yt, { type: t, className: An.headingTag }),
                                                 ),
                                                 i().createElement(Wu, {
-                                                    classMix: vt,
+                                                    classMix: bt,
                                                     text: `${R.strings.comp7.whatsNewView.sectionDescription.$dyn(e)}`,
                                                     binding: { seconds: u },
                                                 }),
                                             ),
                                         ),
-                                        a !== n.length - 1 && i().createElement('div', { className: mn.divider }),
+                                        a !== n.length - 1 && i().createElement('div', { className: An.divider }),
                                     ),
                                 ),
                             ),
                         );
                     }),
-                    _n = {
+                    Dn = {
                         base: 'VehicleRole_base_04',
                         base__22x22: 'VehicleRole_base__22x22_d4',
                         iconContainer: 'VehicleRole_iconContainer_0e',
                         icon: 'VehicleRole_icon_61',
                     };
-                let Fn;
+                let Cn;
                 !(function (e) {
                     e.x22 = '22x22';
-                })(Fn || (Fn = {}));
-                const Dn = R.images.gui.maps.icons.roleExp.roles,
-                    Cn = R.strings.menu.roleExp,
-                    hn = (0, r.memo)(
+                })(Cn || (Cn = {}));
+                const hn = R.images.gui.maps.icons.roleExp.roles,
+                    Bn = R.strings.menu.roleExp,
+                    gn = (0, r.memo)(
                         ({
                             role: e,
-                            size: u = Fn.x22,
-                            roleIconFolderPath: t = Dn.$dyn(`c_${u}`),
+                            size: u = Cn.x22,
+                            roleIconFolderPath: t = hn.$dyn(`c_${u}`),
                             className: a,
                             classNames: n,
                         }) => {
                             const r = Tu(e);
                             return i().createElement(
                                 'div',
-                                { className: p()(_n.base, _n[`base__${u}`], a) },
+                                { className: p()(Dn.base, Dn[`base__${u}`], a) },
                                 i().createElement(
                                     'div',
-                                    { className: p()(_n.iconContainer, null == n ? void 0 : n.iconContainer) },
+                                    { className: p()(Dn.iconContainer, null == n ? void 0 : n.iconContainer) },
                                     i().createElement('div', {
-                                        className: p()(_n.icon, null == n ? void 0 : n.icon),
+                                        className: p()(Dn.icon, null == n ? void 0 : n.icon),
                                         style: { backgroundImage: `url(${null == t ? void 0 : t.$dyn(r)})` },
                                     }),
                                 ),
                                 i().createElement(
                                     'div',
-                                    { className: p()(_n.label, null == n ? void 0 : n.label) },
+                                    { className: p()(Dn.label, null == n ? void 0 : n.label) },
                                     i().createElement(Wu, {
-                                        text: `${Cn.roleName.$dyn(r)}`,
-                                        binding: { groupName: Cn.roleGroupName.$dyn(r) },
+                                        text: `${Bn.roleName.$dyn(r)}`,
+                                        binding: { groupName: Bn.roleGroupName.$dyn(r) },
                                     }),
                                 ),
                             );
                         },
                     ),
-                    Bn = 'Vehicle_base_ae',
-                    gn = 'Vehicle_gradient_8b',
-                    pn = 'Vehicle_details_7d',
-                    vn = 'Vehicle_shortName_02',
-                    fn = 'Vehicle_level_e9',
-                    bn = 'Vehicle_vehicleName_7c',
-                    wn = 'Vehicle_typeIcon_20',
-                    yn = 'Vehicle_type_01',
-                    xn = 'Vehicle_vehicleRole_4c',
-                    Sn = { type: p()(wn, yn), vehicleTypeContainer: p()(wn, yn), shortName: vn, level: fn },
-                    Tn = (0, Y.Pi)(({ index: e }) => {
+                    pn = 'Vehicle_base_ae',
+                    vn = 'Vehicle_gradient_8b',
+                    fn = 'Vehicle_details_7d',
+                    bn = 'Vehicle_shortName_02',
+                    wn = 'Vehicle_level_e9',
+                    yn = 'Vehicle_vehicleName_7c',
+                    xn = 'Vehicle_typeIcon_20',
+                    Sn = 'Vehicle_type_01',
+                    Tn = 'Vehicle_vehicleRole_4c',
+                    Nn = { type: p()(xn, Sn), vehicleTypeContainer: p()(xn, Sn), shortName: bn, level: wn },
+                    Mn = (0, Y.Pi)(({ index: e }) => {
                         const u = Ae().model.computes.vehicle(e);
                         return i().createElement(
                             'div',
                             {
-                                className: Bn,
+                                className: pn,
                                 style: {
                                     backgroundImage: `url(${R.images.gui.maps.icons.comp7.whatsNewView.vehiclesForRent.$num(u.vehicleCD)})`,
                                 },
                             },
-                            i().createElement('div', { className: gn }),
+                            i().createElement('div', { className: vn }),
                             i().createElement(
                                 'div',
-                                { className: pn },
+                                { className: fn },
                                 i().createElement(
                                     ut,
                                     { args: { vehicleCD: u.vehicleCD, tooltipId: 'shopVehicle' } },
                                     i().createElement(
                                         'div',
                                         null,
-                                        i().createElement(Qa, {
+                                        i().createElement(en, {
                                             name: u.name,
                                             tier: u.tier,
                                             type: u.type,
                                             isPremium: u.isPremium,
-                                            className: bn,
-                                            classNames: Sn,
+                                            className: yn,
+                                            classNames: Nn,
                                             typeIconFolderPath: R.images.gui.maps.icons.comp7.whatsNewView.vehicleTypes,
                                         }),
                                     ),
@@ -3878,27 +3901,27 @@
                                     i().createElement(
                                         'div',
                                         null,
-                                        i().createElement(hn, { role: u.roleKey, className: xn }),
+                                        i().createElement(gn, { role: u.roleKey, className: Tn }),
                                     ),
                                 ),
                             ),
                         );
                     }),
-                    Nn = { header: 'VehiclesForRent_header_2e' },
-                    Mn = (0, Y.Pi)(() => {
+                    Ln = { header: 'VehiclesForRent_header_2e' },
+                    Rn = (0, Y.Pi)(() => {
                         const e = Ae().model;
                         return i().createElement(
                             'div',
-                            { className: Nn.container },
+                            { className: Ln.container },
                             i().createElement(
                                 'div',
-                                { className: p()(vu, Nn.header) },
+                                { className: p()(vu, Ln.header) },
                                 i().createElement(
                                     'div',
-                                    { className: gt },
+                                    { className: vt },
                                     R.strings.comp7.whatsNewView.vehiclesForRent.heading(),
                                 ),
-                                i().createElement(Kt, { type: 'seasonUpdate' }),
+                                i().createElement(Yt, { type: 'seasonUpdate' }),
                             ),
                             i().createElement(
                                 'div',
@@ -3911,72 +3934,72 @@
                                     i().createElement(
                                         'div',
                                         { className: bu, key: e },
-                                        i().createElement(Tn, { index: e }),
+                                        i().createElement(Mn, { index: e }),
                                     ),
                                 ),
                             ),
                         );
                     }),
-                    Ln = { base: Gt.scrollBar },
-                    Rn = (0, Y.Pi)(() => {
+                    kn = { base: Kt.scrollBar },
+                    On = (0, Y.Pi)(() => {
                         const e = Ae().controls,
                             u = q().model.season.name.get(),
                             t = au();
                         return i().createElement(
                             gu.Vertical.Default,
-                            { className: Gt.base, barClassNames: Ln, scrollClassName: Gt.areaBaseWrapper, api: t },
+                            { className: Kt.base, barClassNames: kn, scrollClassName: Kt.areaBaseWrapper, api: t },
                             i().createElement(
                                 'div',
-                                { className: p()(Gt.content, Gt[`content__${u}`]) },
+                                { className: p()(Kt.content, Kt[`content__${u}`]) },
                                 i().createElement(
                                     'div',
-                                    { className: p()(pu, Gt.banner, Gt.container__1) },
-                                    i().createElement(Lt, null),
+                                    { className: p()(pu, Kt.banner, Kt.container__1) },
+                                    i().createElement(kt, null),
                                 ),
                                 i().createElement(
                                     'div',
-                                    { className: p()(pu, Gt.section, Gt.container__2) },
-                                    i().createElement(zt, null),
+                                    { className: p()(pu, Kt.section, Kt.container__2) },
+                                    i().createElement(jt, null),
                                 ),
                                 i().createElement(
                                     'div',
-                                    { className: p()(pu, Gt.section, Gt.container__3) },
-                                    i().createElement(An, { changes: Rt }),
+                                    { className: p()(pu, Kt.section, Kt.container__3) },
+                                    i().createElement(Fn, { changes: Ot }),
                                 ),
                                 i().createElement(
                                     'div',
-                                    { className: p()(pu, Gt.section, Gt.container__4) },
-                                    i().createElement(Wa, null),
+                                    { className: p()(pu, Kt.section, Kt.container__4) },
+                                    i().createElement(Va, null),
                                 ),
                                 i().createElement(
                                     'div',
-                                    { className: p()(pu, Gt.section, Gt.container__5) },
-                                    i().createElement(En, null),
+                                    { className: p()(pu, Kt.section, Kt.container__5) },
+                                    i().createElement(dn, null),
                                 ),
                                 i().createElement(
                                     'div',
-                                    { className: p()(pu, Gt.section, Gt.container__6) },
-                                    i().createElement(An, { changes: kt }),
+                                    { className: p()(pu, Kt.section, Kt.container__6) },
+                                    i().createElement(Fn, { changes: Pt }),
                                 ),
                                 i().createElement(
                                     'div',
-                                    { className: p()(pu, Gt.section, Gt.container__7) },
-                                    i().createElement(Jt, null),
+                                    { className: p()(pu, Kt.section, Kt.container__7) },
+                                    i().createElement(ua, null),
                                 ),
                                 i().createElement(
                                     'div',
-                                    { className: p()(pu, Gt.container__8) },
-                                    i().createElement(Mn, null),
+                                    { className: p()(pu, Kt.container__8) },
+                                    i().createElement(Rn, null),
                                 ),
                                 i().createElement(
                                     xe,
-                                    { mixClass: Gt.button, onClick: e.close },
+                                    { mixClass: Kt.button, onClick: e.close },
                                     R.strings.comp7.whatsNewView.button.ok(),
                                 ),
                             ),
                         );
                     }),
-                    kn = (0, Y.Pi)(() => {
+                    Pn = (0, Y.Pi)(() => {
                         const e = Ae().controls,
                             u = q().model.season.name.get(),
                             t = (0, X.useSpring)(le),
@@ -4017,13 +4040,13 @@
                                 ? i().createElement(
                                       X.animated.div,
                                       { className: Fe, style: t },
-                                      i().createElement(Rn, null),
+                                      i().createElement(On, null),
                                       i().createElement(oe, { onClose: e.close }),
                                   )
                                 : i().createElement(ve, { onClose: e.close, className: De }),
                         );
                     }),
-                    On = { context: 'model.scheduleInfo' };
+                    Hn = { context: 'model.scheduleInfo' };
                 engine.whenReady.then(() => {
                     W().render(
                         i().createElement(
@@ -4032,7 +4055,7 @@
                             i().createElement(
                                 P,
                                 null,
-                                i().createElement(K, { options: On }, i().createElement(kn, null)),
+                                i().createElement(K, { options: Hn }, i().createElement(Pn, null)),
                             ),
                         ),
                         document.getElementById('root'),

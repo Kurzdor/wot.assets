@@ -1,0 +1,1935 @@
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+.TextButton_icon__forward_59 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
+.TextButton_icon__close_53 {
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
+.TextButton_icon__info_33 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_glow_a4 {
+    opacity: 0;
+}
+.TextButton_caption_82 {
+    position: relative;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
+}
+.TextButton_caption__back_b9,
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
+.TextButton_caption__info_23 {
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+    margin-left: 8rem;
+}
+.TextButton_base__right_39 .TextButton_goto_e7 {
+    margin-right: 8rem;
+}
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity 0.16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+    left: -4rem;
+}
+.TextButton_base__right_39 .TextButton_shine_e2 {
+    right: -4rem;
+    transform: rotate(180deg);
+}
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_shine_e2 {
+    opacity: 0;
+}
+
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+.ExtendedText_base__zeroPadding_25 {
+    padding: 0;
+}
+
+.ExtendedText_base__isTruncationAvailable_5b {
+    width: 100%;
+}
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+    opacity: 0;
+}
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #ff2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #ffffff;
+}
+
+.colors_white_45 {
+    color: #f2f2f7;
+}
+
+.colors_whiteOrange_81 {
+    color: #fefeec;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #e9e2bf;
+}
+
+.colors_par_5b {
+    color: #8c8c7e;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362e;
+}
+
+.colors_red_79 {
+    color: #ff2717;
+}
+
+.colors_redDark_73 {
+    color: #b70000;
+}
+
+.colors_yellow_76 {
+    color: #feab34;
+}
+
+.colors_orange_cd {
+    color: #ee7000;
+}
+
+.colors_cream_0f {
+    color: #ffdd99;
+}
+
+.colors_brown_82 {
+    color: #cbac77;
+}
+
+.colors_greenBright_68 {
+    color: #80d43a;
+}
+
+.colors_green_fa {
+    color: #7ab300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #ccffff;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09e2ff;
+}
+
+.colors_cred_35 {
+    color: #ced9d9;
+}
+
+.colors_gold_c3 {
+    color: #ffc363;
+}
+
+.colors_bond_ce {
+    color: #c9c9b6;
+}
+
+.colors_prom_83 {
+    color: #a29b70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.renderers_word_f3 {
+    white-space: pre;
+    overflow-wrap: normal;
+}
+
+.Text_base_3f {
+    width: 100%;
+    height: 104%;
+    letter-spacing: 0.03em;
+    position: relative;
+}
+
+.Text_base__whiteSpanish_9d {
+    color: #e9e2bf;
+}
+
+.Text_base__red_f1 {
+    color: #ff5454;
+}
+
+.Text_base__currency_66 {
+    color: #ffe0ab;
+}
+
+.Text_base__heading_72 {
+    color: #fdd194;
+}
+
+.Text_base__lightRed_ee {
+    color: #ff9090;
+}
+
+.Text_base__metaHeading_73 {
+    color: #ff7e00;
+    /* stylelint-disable-next-line property-no-unknown */
+    text-stroke: 1rem #ff545466;
+}
+
+.Text_layer0_29 {
+    width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+.Text_base__whiteSpanish_9d .Text_layer0__shadow_c3 {
+    text-shadow: -4rem 4rem 1rem rgba(233, 226, 191, 0.3);
+}
+
+.Text_base__red_f1 .Text_layer0__shadow_c3,
+.Text_base__currency_66 .Text_layer0__shadow_c3,
+.Text_base__heading_72 .Text_layer0__shadow_c3 {
+    text-shadow:
+        -4rem 7rem 0 rgba(255, 39, 23, 0.14),
+        0 0 15rem #d51f00;
+}
+
+.Text_base__metaHeading_73 .Text_layer0__shadow_c3 {
+    text-shadow:
+        -4rem 7rem 0 rgba(255, 39, 23, 0.2),
+        0 0 15rem #d51f00,
+        0 0 3rem 0rem #f6300f inset;
+}
+
+.Text_layer1_81 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #f66b6b;
+}
+
+.Text_base__metaHeading_73 .Text_layer1_81 {
+    color: rgba(209, 17, 12, 0.6);
+}
+
+.Text_layer2_ff {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 1) 85%);
+}
+
+.Text_base__metaHeading_73 .Text_layer2_ff {
+    mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 100%);
+}
+
+.Text_layer3_47 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: rgba(0, 0, 0, 0.3);
+    text-shadow: none;
+    mask-size: 6rem 3rem;
+    mask-repeat: repeat;
+    mask-image: url('R.images.halloween.gui.maps.icons.common.text_mask_pattern');
+}
+
+.Text_base__heading_72 .Text_layer3_47,
+.Text_base__metaHeading_73 .Text_layer3_47 {
+    color: rgba(0, 0, 0, 0.2);
+    mask-size: 1rem 4rem;
+    mask-repeat: repeat;
+    mask-image: url('R.images.halloween.gui.maps.icons.common.text_mask_pattern_header');
+}
+
+.Text_layer4_f7 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #000000;
+    text-shadow: none;
+    opacity: 0.7;
+    mask-size: 628rem 384rem;
+    mask-repeat: repeat;
+    mask-image: url('R.images.halloween.gui.maps.icons.common.text_mask_sharp');
+}
+
+.Button_base_e7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(1);
+    opacity: 1;
+    position: relative;
+    transition:
+        filter 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.Button_base__small_40 {
+    height: 30rem;
+}
+
+.Button_base__medium_ee {
+    height: 40rem;
+}
+
+.Button_base__medium_ee[lang='sr'],
+.Button_base__medium_ee[lang='ko'],
+.Button_base__medium_ee[lang='tr'],
+.Button_base__medium_ee[lang='ja'],
+.Button_base__medium_ee[lang='hr'],
+.Button_base__medium_ee[lang='zh_sg'],
+.Button_base__medium_ee[lang='zh_cn'],
+.Button_base__medium_ee[lang='zh_tw'] {
+    height: 44rem;
+}
+
+.Button_base__disabled_41 {
+    cursor: default;
+}
+
+.Button_base__active_ef {
+    opacity: 0.6;
+}
+
+.Button_base__hover_39 {
+    filter: brightness(1.2);
+}
+.Button_border_bf {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition:
+        border 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
+}
+.Button_base__secondary_b5 .Button_border_bf {
+    border: 2rem solid #f6300f;
+}
+.Button_base__primary_d4 .Button_border_bf {
+    border: 2rem solid #e9e2bf;
+}
+.Button_base__primary_d4.Button_base__active_ef .Button_border_bf {
+    border: 2rem solid #f6300f;
+    opacity: 0.6;
+}
+.Button_base__primary_d4.Button_base__hover_39 .Button_border_bf {
+    border: 2rem solid #f6300f;
+}
+.Button_shadow_b6 {
+    width: 100%;
+    height: 100%;
+    border: 2rem solid rgba(255, 39, 23, 0.21);
+    position: absolute;
+    bottom: -7rem;
+    left: -4rem;
+}
+.Button_content_86 {
+    margin: 2rem 10rem 0;
+    position: relative;
+}
+.Button_base__small_40 .Button_content_86 {
+    margin: 2rem 10rem 0;
+}
+.Button_base__small_40 .Button_content_86[lang='sr'],
+.Button_base__small_40 .Button_content_86[lang='ko'],
+.Button_base__small_40 .Button_content_86[lang='tr'],
+.Button_base__small_40 .Button_content_86[lang='ja'],
+.Button_base__small_40 .Button_content_86[lang='hr'],
+.Button_base__small_40 .Button_content_86[lang='zh_sg'],
+.Button_base__small_40 .Button_content_86[lang='zh_cn'],
+.Button_base__small_40 .Button_content_86[lang='zh_tw'] {
+    margin-top: 4rem;
+}
+.Button_base__medium_ee .Button_content_86 {
+    margin: -5rem 15rem 0;
+}
+.Button_base__medium_ee .Button_content_86[lang='sr'],
+.Button_base__medium_ee .Button_content_86[lang='ko'],
+.Button_base__medium_ee .Button_content_86[lang='tr'],
+.Button_base__medium_ee .Button_content_86[lang='ja'],
+.Button_base__medium_ee .Button_content_86[lang='hr'],
+.Button_base__medium_ee .Button_content_86[lang='zh_sg'],
+.Button_base__medium_ee .Button_content_86[lang='zh_cn'],
+.Button_base__medium_ee .Button_content_86[lang='zh_tw'] {
+    margin-top: 2rem;
+}
+.Button_caption_9b {
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Button_base__small_40 .Button_caption_9b {
+    font-size: 20rem;
+}
+.Button_base__medium_ee .Button_caption_9b {
+    font-size: 36rem;
+}
+.Button_primaryCaption_e9 {
+    color: #e9e2bf;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-shadow: -4rem 7rem 0 rgba(255, 39, 23, 0.25);
+    transition: all 0.3s ease-in-out;
+}
+.Button_base__small_40 .Button_primaryCaption_e9 {
+    margin-top: -5rem;
+}
+.Button_base__medium_ee .Button_primaryCaption_e9 {
+    font-size: 36rem;
+}
+.Button_base__hover_39 .Button_primaryCaption_e9 {
+    color: #f6300f;
+}
+.Button_base__active_ef .Button_primaryCaption_e9 {
+    opacity: 0.6;
+}
+.Button_hintAnim_fe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2rem solid #ff2717;
+    animation: Button_borderWaveAnimation_c1 20s 10s ease-in-out infinite;
+    pointer-events: none;
+}
+@keyframes Button_borderWaveAnimation_c1 {
+    0% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+
+    5% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+
+    10%,
+    100% {
+        opacity: 0;
+        transform: scale(1.5, 2.5);
+    }
+}
+
+.KeyIcon_base_5a {
+    background: no-repeat 50% / contain;
+}
+
+.KeyIcon_base__c28x28_d5 {
+    width: 28rem;
+    height: 28rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_28x28');
+}
+
+.KeyIcon_base__c30x30_ba {
+    width: 28rem;
+    height: 28rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_30x30');
+}
+
+.KeyIcon_base__c36x36_dd {
+    width: 36rem;
+    height: 36rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_36x36');
+}
+
+.KeyIcon_base__c36x36_dd.KeyIcon_base__gray_fc {
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_gray_36x36');
+}
+
+.KeyIcon_base__c44x44_bd {
+    width: 44rem;
+    height: 44rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_44x44');
+}
+
+.KeyIcon_base__c44x44_bd.KeyIcon_base__gray_fc {
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_gray_44x44');
+}
+
+.KeyIcon_base__c70x70_61 {
+    width: 70rem;
+    height: 70rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_70x70');
+}
+
+.KeyIcon_base__c110x110_7c {
+    width: 110rem;
+    height: 110rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_widget_icon');
+}
+
+.NumberAnimation_base_9f {
+    display: flex;
+    position: relative;
+}
+
+.KeysViewApp_base_bb {
+    width: 158rem;
+    height: 100rem;
+    position: relative;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.KeysViewApp_base__hover_77 {
+    cursor: pointer;
+}
+
+.KeysViewApp_base__active_75 {
+    opacity: 0.6;
+}
+.KeysViewApp_blink_22 {
+    width: 100%;
+    height: 50rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+.KeysViewApp_blink__anim_f2 {
+    animation: KeysViewApp_blinkAnim_e9 25s 5s ease-in-out infinite;
+}
+.KeysViewApp_blink__hoverAnim_33 {
+    animation: KeysViewApp_hoverBlinkAnim_49 1.5s ease-in-out 1 forwards;
+}
+.KeysViewApp_blink__unhoverAnim_3e {
+    animation: KeysViewApp_unHoverBlinkAnim_25 0.3s ease-in-out 1 forwards;
+}
+.KeysViewApp_count_9d {
+    color: #ffdd99;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    align-self: flex-end;
+    margin-right: 60rem;
+    text-shadow:
+        -4rem 7rem 0 rgba(255, 39, 23, 0.21),
+        0 0 15rem #d51f00;
+    position: relative;
+}
+.KeysViewApp_key_36 {
+    position: absolute;
+    top: -33rem;
+    right: -29rem;
+}
+.KeysViewApp_buttons_03 {
+    display: flex;
+    filter: brightness(1);
+    position: absolute;
+    right: 0;
+    bottom: 3rem;
+    transition: filter 0.4s ease-in-out;
+    pointer-events: none;
+}
+.KeysViewApp_base__hover_77 .KeysViewApp_buttons_03 {
+    filter: brightness(1.3);
+}
+.KeysViewApp_button_83 {
+    max-width: 150rem;
+    max-height: 30rem;
+}
+.KeysViewApp_arrow_af {
+    width: 39rem;
+    height: 46rem;
+    margin: -8rem -15rem 0 -10rem;
+    background: url('R.images.halloween.gui.maps.icons.hangar.arrow') no-repeat 50% / contain;
+}
+@keyframes KeysViewApp_blinkAnim_e9 {
+    0%,
+    1%,
+    1.55%,
+    2.15%,
+    2.8%,
+    3%,
+    4.1%,
+    4.65%,
+    100% {
+        filter: none;
+    }
+
+    0.7%,
+    1.1%,
+    1.5%,
+    1.6%,
+    2%,
+    2.3%,
+    2.75%,
+    2.85%,
+    3.2%,
+    3.8%,
+    4.2%,
+    4.6% {
+        filter: drop-shadow(0 0 25rem rgba(255, 39, 23, 0.6));
+    }
+}
+@keyframes KeysViewApp_hoverBlinkAnim_49 {
+    0%,
+    20%,
+    40%,
+    50%,
+    80%,
+    30%,
+    90% {
+        filter: none;
+    }
+
+    25%,
+    35%,
+    45%,
+    75%,
+    85%,
+    100% {
+        filter: drop-shadow(0 0 25rem rgba(255, 39, 23, 0.6));
+    }
+}
+@keyframes KeysViewApp_unHoverBlinkAnim_25 {
+    0% {
+        filter: drop-shadow(0 0 25rem rgba(255, 39, 23, 0.6));
+    }
+
+    100% {
+        filter: none;
+    }
+}
+
+.HorizontalBar_base_49 {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+    position: relative;
+}
+
+.HorizontalBar_base__nonActive_82 {
+    visibility: hidden;
+}
+
+.HorizontalBar_base_49 .disable,
+.HorizontalBar_base_49 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover,
+.HorizontalBar_rightButton_03:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem
+        7rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
+    opacity: 0.7;
+}
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.VerticalBar_base_f3 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+.VerticalBar_base__nonActive_42 {
+    visibility: hidden;
+}
+
+.VerticalBar_base_f3 .disable,
+.VerticalBar_base_f3 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.VerticalBar_topButton_d7,
+.VerticalBar_bottomButton_06 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_d7:hover,
+.VerticalBar_bottomButton_06:hover {
+    opacity: 1;
+}
+
+.VerticalBar_topButton_d7 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_06 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_df {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32 {
+    display: none;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32:hover {
+    opacity: 1;
+}
+
+.VerticalBar_rail_43 {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_43:hover {
+    opacity: 0.7;
+}
+
+.VerticalScroll_content_cb {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_f8 {
+    display: flex;
+}
+
+.VerticalScroll_bar_1e {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_af {
+    flex: 1;
+}
+
+.Reward_base_ea {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.Reward_base__s48x48_46,
+.Reward_base__small_c0 {
+    width: 48rem;
+    height: 48rem;
+}
+
+.Reward_base__s80x80_ce,
+.Reward_base__big_e5 {
+    width: 80rem;
+    height: 80rem;
+}
+
+.Reward_base__s128x100_c3 {
+    width: 128rem;
+    height: 100rem;
+}
+
+.Reward_base__s180x135_7c {
+    width: 180rem;
+    height: 135rem;
+}
+
+.Reward_base__s232x174_67 {
+    width: 232rem;
+    height: 174rem;
+}
+
+.Reward_base__s296x222_78 {
+    width: 296rem;
+    height: 222rem;
+}
+
+.Reward_base__s400x300_07 {
+    width: 400rem;
+    height: 300rem;
+}
+
+.Reward_base__s600x450_f8 {
+    width: 600rem;
+    height: 450rem;
+}
+
+.Reward_tooltipWrapper_b5 {
+    height: 100%;
+}
+
+.Reward_icon_df {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.Reward_overlay_68 {
+    background: no-repeat center / 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.Reward_base__s48x48_46 .Reward_overlay_68,
+.Reward_base__small_c0 .Reward_overlay_68 {
+    width: 96rem;
+    height: 96rem;
+    background-size: 100%;
+    overflow: visible;
+}
+
+.Reward_base__s80x80_ce .Reward_overlay_68,
+.Reward_base__big_e5 .Reward_overlay_68 {
+    width: 128rem;
+    height: 128rem;
+}
+
+.Reward_base__s180x135_7c .Reward_overlay_68 {
+    width: 266rem;
+    height: 241rem;
+}
+
+.Reward_base__s232x174_67 .Reward_overlay_68 {
+    width: 344rem;
+    height: 312rem;
+}
+
+.Reward_base__s296x222_78 .Reward_overlay_68 {
+    width: 450rem;
+    height: 408rem;
+}
+
+.Reward_base__s400x300_07 .Reward_overlay_68 {
+    width: 618rem;
+    height: 590rem;
+}
+
+.Reward_base__s600x450_f8 .Reward_overlay_68 {
+    width: 670rem;
+    height: 575rem;
+}
+
+.Reward_highlight_36 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 0;
+}
+
+.Reward_image_89 {
+    position: relative;
+}
+
+.Reward_info_72 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: -13rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_info_72,
+.Reward_base__small_c0 .Reward_info_72 {
+    margin: -10rem -10rem 0;
+}
+
+.Reward_info__multi_63 {
+    margin-right: 2rem;
+    text-align: right;
+}
+
+.Reward_base__s48x48_46 .Reward_info__multi_63,
+.Reward_base__small_c0 .Reward_info__multi_63 {
+    margin-right: 0;
+}
+
+.Reward_info__credits_ef {
+    color: #ced9d9;
+}
+
+.Reward_info__gold_36 {
+    color: #ffc363;
+}
+
+.Reward_info__crystal_36 {
+    color: #c9c9b6;
+}
+
+.Reward_info__premiumTank_d3 {
+    color: #ffdd99;
+}
+
+.Reward_title_36 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 80rem;
+    margin: -13rem -16rem 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.mediaMedium .Reward_title_36 {
+    max-width: 100rem;
+    margin-left: -10rem;
+    margin-right: -10rem;
+}
+
+.Reward_timer_d3 {
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 1;
+}
+
+.Reward_base__s48x48_46 .Reward_timer_d3,
+.Reward_base__small_c0 .Reward_timer_d3 {
+    width: 23rem;
+    height: 23rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.small.timer');
+    top: -6rem;
+    right: -6rem;
+}
+
+.Reward_base__s80x80_ce .Reward_timer_d3,
+.Reward_base__big_e5 .Reward_timer_d3 {
+    width: 48rem;
+    height: 48rem;
+    background-image: url('R.images.gui.maps.icons.quests.bonuses.big.timer');
+    top: -14rem;
+    right: -14rem;
+}
+
+.ArtefactItem_base_5d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ArtefactItem_index_c0 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    width: 24rem;
+    height: 21rem;
+    margin: 1rem 0 9rem;
+    padding-top: 1rem;
+    border: 1rem solid #d62414;
+    box-shadow: 0 0 8rem 0rem #e52;
+    background: linear-gradient(180deg, rgba(1, 16, 27, 0.6) 0%, rgba(1, 16, 27, 0.5) 100%);
+    text-align: center;
+    position: relative;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ArtefactItem_base__open_bb .ArtefactItem_index_c0 {
+    border-color: #e9e2bf;
+    opacity: 0.5;
+}
+
+.ArtefactItem_base__hover_c3 .ArtefactItem_index_c0 {
+    opacity: 1;
+}
+
+.ArtefactItem_indexShadow_9d {
+    width: 24rem;
+    height: 21rem;
+    border: 1rem solid rgba(214, 36, 20, 0.3);
+    position: absolute;
+    bottom: -4rem;
+    left: -4rem;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.ArtefactItem_kingReward_45 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 42rem;
+    height: 42rem;
+    background: url('R.images.halloween.gui.maps.icons.rewardPath.king_reward') no-repeat 50% / contain;
+    pointer-events: none;
+}
+
+.ArtefactItem_base__open_bb .ArtefactItem_kingReward_45 {
+    width: 20rem;
+    height: 22rem;
+    margin-top: 3rem;
+    background-image: url('R.images.halloween.gui.maps.icons.rewardPath.king_reward_completed');
+}
+
+.ArtefactItem_icon_c9 {
+    width: 100rem;
+    height: 80rem;
+    background: no-repeat 50% / contain;
+    position: relative;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ArtefactItem_base__open_bb .ArtefactItem_icon_c9 {
+    opacity: 0.6;
+}
+
+.ArtefactItem_base__hover_c3 .ArtefactItem_icon_c9 {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ArtefactItem_receive_59 {
+    width: 108rem;
+    height: 229rem;
+    background: url('R.images.halloween.gui.maps.icons.rewardPath.receive') no-repeat 50% / contain;
+    position: absolute;
+    top: -74rem;
+    left: -4rem;
+    pointer-events: none;
+}
+
+.ArtefactItem_open_c3 {
+    width: 100rem;
+    height: 67rem;
+    background: url('R.images.halloween.gui.maps.icons.rewardPath.open') no-repeat 50% / contain;
+    position: absolute;
+    top: 46rem;
+    left: 0;
+    pointer-events: none;
+}
+
+.ArtefactItem_info_88 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.ArtefactItem_base__open_bb .ArtefactItem_info_88 {
+    background: linear-gradient(180deg, rgba(122, 179, 0, 0) 0%, rgba(122, 179, 0, 0.1) 20%, rgba(122, 179, 0, 0) 100%);
+}
+
+.ArtefactItem_base__completed_e4 .ArtefactItem_info_88 {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 221, 153, 0) 0%,
+        rgba(255, 221, 153, 0.1) 19.5%,
+        rgba(255, 221, 153, 0) 100%
+    );
+}
+
+.ArtefactItem_infoMask_2e {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 221, 153, 0) 0%,
+        rgba(255, 221, 153, 0.1) 19.5%,
+        rgba(255, 221, 153, 0) 100%
+    );
+    opacity: 0;
+    position: absolute;
+    top: 80rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.ArtefactItem_base__hover_c3 .ArtefactItem_infoMask_2e {
+    opacity: 1;
+}
+
+.ArtefactItem_reward_1f {
+    margin-top: 15rem;
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ArtefactItem_base__open_bb .ArtefactItem_reward_1f {
+    opacity: 0.3;
+}
+
+.ArtefactItem_base__hover_c3 .ArtefactItem_reward_1f {
+    opacity: 1;
+}
+
+.ArtefactItem_overlay_ca {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.halloween.gui.maps.icons.rewardPath.overlay') no-repeat 50% / contain;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.ArtefactItem_base__open_bb .ArtefactItem_overlay_ca {
+    background-image: url('R.images.halloween.gui.maps.icons.rewardPath.overlay_open');
+}
+
+.ArtefactItem_base__recive_dc .ArtefactItem_overlay_ca {
+    background-image: url('R.images.halloween.gui.maps.icons.rewardPath.overlay_receive');
+}
+
+.ArtefactItem_icon_c9:hover .ArtefactItem_overlay_ca {
+    opacity: 1;
+}
+
+.Artefacts_base_c8 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 318rem;
+}
+
+.mediaLarge .Artefacts_base_c8 {
+    height: 345rem;
+}
+
+.Artefacts_scroll_9f {
+    width: calc(100vw - 30rem);
+}
+
+.Artefacts_scrollContent__noScroll_3f {
+    justify-content: center;
+}
+
+.Artefacts_atrefacts_fe {
+    display: flex;
+}
+
+.Artefacts_scrollBarPosition_b5 {
+    margin-top: -78rem;
+    padding: 0 5rem;
+    z-index: 1;
+}
+
+.Artefacts_artefact_bc {
+    display: flex;
+    height: 394rem;
+}
+
+.Artefacts_devider_6f {
+    width: 1rem;
+    height: 328rem;
+    margin: 0 4rem;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.1) 24%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0;
+    animation: Artefacts_fadeIn_f5 0.3s 2.2s ease-in-out both;
+}
+
+.Artefacts_devider__cancel_ba {
+    opacity: 1;
+    animation-name: Artefacts_none_e4;
+}
+
+@keyframes Artefacts_fadeIn_f5 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.Header_base_8a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.mediaMedium .Header_base_8a {
+    font-size: 36rem;
+}
+
+.mediaLarge .Header_base_8a {
+    font-size: 56rem;
+}
+
+.Header_title_15 {
+    height: auto;
+}
+
+.Header_subTitle_86 {
+    color: #ffe0ab;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    display: flex;
+    margin-top: 7rem;
+    text-shadow: -4rem 7rem 0 #ff271735;
+}
+
+.mediaMedium .Header_subTitle_86 {
+    color: #ffe0ab;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaLarge .Header_subTitle_86 {
+    color: #ffe0ab;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.Header_count_0d {
+    width: auto;
+    height: auto;
+}
+
+.InfoButton_base_49 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.InfoButton_icon_5d {
+    width: 50rem;
+    height: 50rem;
+    background: no-repeat 50% / contain;
+    opacity: 0.8;
+    position: relative;
+    transition: opacity 0.16s;
+}
+
+.InfoButton_icon__info_e1 {
+    background-image: url('R.images.halloween.gui.maps.icons.rewardPath.info');
+}
+
+.InfoButton_icon__intro_48 {
+    background-image: url('R.images.halloween.gui.maps.icons.rewardPath.video');
+}
+
+.InfoButton_base_49:hover .InfoButton_icon_5d {
+    opacity: 1;
+}
+
+.InfoButton_base_49:active .InfoButton_icon_5d {
+    opacity: 0.9;
+}
+
+.InfoButton_caption_ad {
+    margin-left: -10rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+    position: relative;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
+}
+
+.InfoButton_base_49:hover .InfoButton_caption_ad {
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
+
+.InfoButton_base_49:active .InfoButton_caption_ad {
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
+
+.IconButton_base_d0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    height: 60rem;
+    opacity: 0.7;
+    position: relative;
+    transition: opacity 0.25s ease-out;
+    cursor: pointer;
+}
+
+.IconButton_base__hovered_26 {
+    opacity: 1;
+}
+
+.IconButton_base__disabled_7d {
+    cursor: auto;
+}
+.IconButton_icon_26 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: no-repeat center / contain;
+    transition: opacity 0.25s ease-out;
+    pointer-events: none;
+}
+.IconButton_icon__preview_58 {
+    background-image: url('R.images.gui.maps.icons.library.previewVehicle');
+}
+.IconButton_icon__compare_4d {
+    background-image: url('R.images.gui.maps.icons.library.compare');
+}
+.IconButton_base__disabled_7d .IconButton_icon__compare_4d {
+    background-image: url('R.images.gui.maps.icons.library.compareDisabled');
+}
+.IconButton_icon__small_b8 {
+    width: 70rem;
+    height: 70rem;
+}
+.IconButton_icon__normal_d3 {
+    width: 100rem;
+    height: 100rem;
+}
+.IconButton_base__mouseDown_06 .IconButton_icon_26 {
+    opacity: 0.7;
+}
+.IconButton_label_73 {
+    color: #ffdd99;
+    font-size: 14rem;
+    line-height: 1.25;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 12rem #e52;
+    white-space: nowrap;
+    opacity: 0;
+    position: absolute;
+    transform: translateY(-5rem);
+    transition:
+        transform 0.25s ease-out,
+        opacity 0.25s ease-out;
+}
+.IconButton_label__small_3a {
+    bottom: -2rem;
+}
+.IconButton_label__normal_ef {
+    bottom: -8rem;
+}
+.IconButton_base__visibleLabel_3a .IconButton_label_73,
+.IconButton_base__hovered_26 .IconButton_label_73 {
+    opacity: 1;
+    transform: translateY(0rem);
+}
+.IconButton_base__disabled_7d .IconButton_label_73 {
+    opacity: 0;
+}
+
+.PreviewBlock_base_d6 {
+    color: #f2f2f7;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.mediaLarge .PreviewBlock_base_d6 {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.PreviewBlock_flagOverlay_34 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 258rem;
+    height: 194rem;
+    margin-top: 40rem;
+    background: url('R.images.halloween.gui.maps.icons.rewardPath.overlay_preview') no-repeat 50% / contain;
+}
+
+.mediaLarge .PreviewBlock_flagOverlay_34 {
+    margin-top: 64rem;
+}
+
+.PreviewBlock_flag_a9 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 258rem;
+    height: 194rem;
+    margin-top: 40rem;
+    background: no-repeat 50% / contain;
+    opacity: 0.5;
+}
+
+.mediaLarge .PreviewBlock_flag_a9 {
+    margin-top: 64rem;
+}
+
+.PreviewBlock_premium_3c {
+    color: #ffc363;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 6rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.mediaMedium .PreviewBlock_premium_3c {
+    margin: 8rem 0 6rem;
+}
+
+.mediaLarge .PreviewBlock_premium_3c {
+    color: #ffc363;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.PreviewBlock_name_db {
+    display: flex;
+    text-shadow: 0 0 40rem rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 1;
+}
+
+.PreviewBlock_vehicleType_76 {
+    width: 40rem;
+    height: 40rem;
+    margin-top: 10rem;
+    background: no-repeat 50% / contain;
+}
+
+.PreviewBlock_vehicleType__premium_86 {
+    margin: -3rem 1rem 0;
+}
+
+.mediaLarge .PreviewBlock_vehicleType_76 {
+    margin-top: -18rem;
+    width: 80rem;
+    height: 80rem;
+}
+
+.PreviewBlock_previewButton_df {
+    width: 100rem;
+    height: 100rem;
+    margin-bottom: -29rem;
+}
+
+.mediaLarge .PreviewBlock_previewButton_df {
+    width: 150rem;
+    height: 150rem;
+    margin-bottom: -40rem;
+}
+
+.PreviewBlock_previewIcon_ae {
+    width: 100rem;
+    height: 100rem;
+    background: url('R.images.halloween.gui.maps.icons.rewardPath.preview_small') no-repeat 50% / contain;
+}
+
+.mediaLarge .PreviewBlock_previewIcon_ae {
+    width: 150rem;
+    height: 150rem;
+    background: url('R.images.halloween.gui.maps.icons.rewardPath.preview_big');
+}
+
+.RewardPathViewApp_base_b3 {
+    width: 100%;
+    height: 100%;
+    background-color: #0c1922;
+    overflow: hidden;
+    position: relative;
+}
+
+.RewardPathViewApp_vignette_3b {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.halloween.gui.maps.icons.rewardPath.vignette') no-repeat 50% / 100% 100%;
+    mix-blend-mode: normal;
+    pointer-events: none;
+}
+
+.RewardPathViewApp_bg_06 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.halloween.gui.maps.icons.rewardPath.bg') no-repeat 50% / cover;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: RewardPathViewApp_fadeInWithScale_5e 3s cubic-bezier(0.33, 0.33, 0, 1) both;
+}
+
+.RewardPathViewApp_bg__cancel_cb {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    animation-name: RewardPathViewApp_none_4e;
+}
+
+.RewardPathViewApp_video_static_frame_ce,
+.RewardPathViewApp_video_56,
+.RewardPathViewApp_tank_f0 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 454rem;
+    height: 384rem;
+    margin: -181rem 0 0 -11rem;
+    background: url('R.images.halloween.gui.maps.icons.rewardPath.tank_decor') no-repeat 50% / contain;
+}
+
+.mediaMedium .RewardPathViewApp_video_static_frame_ce,
+.mediaMedium .RewardPathViewApp_video_56,
+.mediaMedium .RewardPathViewApp_tank_f0 {
+    width: 530rem;
+    height: 450rem;
+    margin: -187rem 0 0 -14rem;
+}
+
+.mediaLarge .RewardPathViewApp_video_static_frame_ce,
+.mediaLarge .RewardPathViewApp_video_56,
+.mediaLarge .RewardPathViewApp_tank_f0 {
+    width: 709rem;
+    height: 600rem;
+    margin: -224rem 0 0 -16rem;
+}
+
+.mediaExtraLarge .RewardPathViewApp_video_static_frame_ce,
+.mediaExtraLarge .RewardPathViewApp_video_56,
+.mediaExtraLarge .RewardPathViewApp_tank_f0 {
+    width: 945rem;
+    height: 800rem;
+    margin: -294rem 0 0 -21rem;
+}
+
+.RewardPathViewApp_video_static_frame_ce {
+    background: url('R.images.halloween.gui.maps.icons.rewardPath.king_reward_static_frame') no-repeat 50% / cover;
+    mix-blend-mode: additive;
+}
+
+.RewardPathViewApp_video_56 {
+    mix-blend-mode: additive;
+}
+
+.RewardPathViewApp_closeBtn_72 {
+    position: absolute;
+    top: 32rem;
+    right: 39rem;
+    z-index: 1;
+    right: 28rem;
+}
+
+.RewardPathViewApp_leftButtons_c3 {
+    display: flex;
+    position: absolute;
+    top: 21rem;
+    left: 18rem;
+}
+
+.RewardPathViewApp_intro_b8 {
+    margin-left: 7rem;
+}
+
+.RewardPathViewApp_header_70 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 26rem;
+}
+
+.mediaMedium .RewardPathViewApp_header_70 {
+    top: 24rem;
+}
+
+.mediaLarge .RewardPathViewApp_header_70 {
+    top: 25rem;
+}
+
+.RewardPathViewApp_rightWidget_5b {
+    position: absolute;
+    top: 117rem;
+    right: 16rem;
+}
+
+.RewardPathViewApp_preview_e3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: -110rem 0 0 0rem;
+    opacity: 0;
+    animation: RewardPathViewApp_fadeIn_88 3s cubic-bezier(0.33, 0.33, 0, 1) both;
+}
+
+.RewardPathViewApp_preview__cancel_52 {
+    opacity: 1;
+    animation-name: RewardPathViewApp_none_4e;
+}
+
+.mediaMedium .RewardPathViewApp_preview_e3 {
+    margin-top: -79rem;
+}
+
+.mediaLarge .RewardPathViewApp_preview_e3 {
+    margin-top: -58rem;
+}
+
+.mediaExtraLarge .RewardPathViewApp_preview_e3 {
+    margin-top: -54rem;
+}
+
+.RewardPathViewApp_artefacts_15 {
+    position: absolute;
+    right: 0;
+    bottom: 35rem;
+    left: 0;
+    z-index: 1;
+}
+
+@keyframes RewardPathViewApp_fadeInWithScale_5e {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes RewardPathViewApp_fadeIn_88 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

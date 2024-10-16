@@ -1,0 +1,769 @@
+.Counter_base_9e {
+    display: flex;
+    min-width: 14rem;
+    height: 14rem;
+    position: relative;
+    z-index: 0;
+    animation: Counter_show_be ease-in-out forwards;
+}
+
+.Counter_base__big_19 {
+    min-width: 21rem;
+    height: 21rem;
+}
+
+.Counter_base__small_3b {
+    min-width: 13rem;
+    height: 13rem;
+}
+
+.Counter_base__empty_98 {
+    min-width: 6rem;
+    height: 6rem;
+}
+
+.Counter_base__animated_40 {
+    animation-duration: 0.2s;
+}
+
+.Counter_base__hidden_56 {
+    animation-name: Counter_hide_b6;
+}
+.Counter_bg_74 {
+    border: 1rem solid #fe4e0f;
+    border-radius: 7rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 6rem rgba(254, 103, 0, 0.2),
+        0 0 12rem 4rem rgba(249, 0, 0, 0.3);
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.Counter_base__big_19 .Counter_bg_74 {
+    border-radius: 11rem;
+}
+.Counter_base__small_3b .Counter_bg_74 {
+    border-radius: 7rem;
+}
+.Counter_value_3e {
+    display: flex;
+    padding: 0 4rem;
+    color: #fefeec;
+    font-size: 11rem;
+    line-height: 13rem;
+    white-space: nowrap;
+}
+.Counter_base__big_19 .Counter_value_3e {
+    padding: 0 7rem;
+    font-size: 14rem;
+    line-height: 20rem;
+}
+.Counter_base__small_3b .Counter_value_3e {
+    font-size: 9rem;
+    line-height: 12rem;
+}
+.Counter_value__text_d6 {
+    padding: 0 7rem;
+}
+.Counter_base__big_19 .Counter_value__text_d6 {
+    padding: 0 10rem;
+}
+.Counter_base__small_3b .Counter_value__text_d6 {
+    padding: 0 5rem;
+    font-size: 10rem;
+}
+.Counter_base__pattern_71 .Counter_value_3e {
+    display: none;
+}
+.Counter_plus_15 {
+    position: relative;
+    top: -1rem;
+}
+.Counter_pattern_83 {
+    display: none;
+}
+.Counter_base__pattern_71 .Counter_pattern_83 {
+    display: block;
+    border-radius: 50%;
+    background-image: url('R.images.gui.maps.icons.components.counter.pattern');
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+@keyframes Counter_show_be {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes Counter_hide_b6 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+.ExtendedText_base__zeroPadding_25 {
+    padding: 0;
+}
+
+.ExtendedText_base__isTruncationAvailable_5b {
+    width: 100%;
+}
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+    opacity: 0;
+}
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #ff2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #ffffff;
+}
+
+.colors_white_45 {
+    color: #f2f2f7;
+}
+
+.colors_whiteOrange_81 {
+    color: #fefeec;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #e9e2bf;
+}
+
+.colors_par_5b {
+    color: #8c8c7e;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362e;
+}
+
+.colors_red_79 {
+    color: #ff2717;
+}
+
+.colors_redDark_73 {
+    color: #b70000;
+}
+
+.colors_yellow_76 {
+    color: #feab34;
+}
+
+.colors_orange_cd {
+    color: #ee7000;
+}
+
+.colors_cream_0f {
+    color: #ffdd99;
+}
+
+.colors_brown_82 {
+    color: #cbac77;
+}
+
+.colors_greenBright_68 {
+    color: #80d43a;
+}
+
+.colors_green_fa {
+    color: #7ab300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #ccffff;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09e2ff;
+}
+
+.colors_cred_35 {
+    color: #ced9d9;
+}
+
+.colors_gold_c3 {
+    color: #ffc363;
+}
+
+.colors_bond_ce {
+    color: #c9c9b6;
+}
+
+.colors_prom_83 {
+    color: #a29b70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.renderers_word_f3 {
+    white-space: pre;
+    overflow-wrap: normal;
+}
+
+.BannerTime_base_16 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.BannerTime_time_90 {
+    color: #ffdd99;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    height: 16rem;
+    text-shadow:
+        0 0 15rem #ff2717,
+        0 0 12rem rgba(255, 39, 23, 0.8),
+        0 0 10rem rgba(255, 39, 23, 0.6),
+        0 0 2rem rgba(255, 39, 23, 0.4),
+        0 0 1rem rgba(255, 39, 23, 0.4);
+}
+
+.BannerTime_base__big_81 .BannerTime_time_90,
+.BannerTime_base__wideSmall_61 .BannerTime_time_90,
+.BannerTime_base__thinSmall_6d .BannerTime_time_90 {
+    font-size: 16rem;
+}
+
+.BannerTime_base__thinExtraSmall_8f .BannerTime_time_90 {
+    font-size: 14rem;
+}
+
+.BannerTime_timerIcon_4c {
+    width: 38rem;
+    height: 38rem;
+    margin: -8rem;
+    background: url('R.images.gui.maps.icons.library.ClockIcon_1') no-repeat 50% / contain;
+    position: relative;
+}
+
+.BannerTime_base__thinSmall_6d .BannerTime_timerIcon_4c,
+.BannerTime_base__thinExtraSmall_8f .BannerTime_timerIcon_4c {
+    margin: -10rem -8rem -10rem -10rem;
+}
+
+.BannerTime_container_93 {
+    margin-bottom: 15rem;
+}
+
+.BannerTime_base__thinExtraSmall_8f .BannerTime_container_93 {
+    margin-bottom: 13rem;
+}
+
+.EventBannerViewApp_base_da {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    pointer-events: none;
+}
+
+.EventBannerViewApp_banner_a1 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    pointer-events: none;
+}
+
+.EventBannerViewApp_banner__big_2e {
+    width: 302rem;
+    height: 152rem;
+}
+
+.EventBannerViewApp_banner__wideSmall_ed {
+    width: 302rem;
+    height: 114rem;
+}
+
+.EventBannerViewApp_banner__thinSmall_cf {
+    width: 222rem;
+    height: 114rem;
+}
+
+.EventBannerViewApp_banner__thinExtraSmall_bf {
+    width: 162rem;
+    height: 114rem;
+}
+
+.EventBannerViewApp_hoverArea_b8 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.EventBannerViewApp_bg_e4 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    border-radius: 3rem;
+    background: no-repeat 50% / cover;
+    pointer-events: none;
+}
+
+.EventBannerViewApp_hoverBg_cf {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    border-radius: 3rem;
+    background: no-repeat 50% / contain;
+    opacity: 0;
+    mix-blend-mode: screen;
+    transition: opacity 0.35s ease-in-out;
+    pointer-events: none;
+}
+
+.EventBannerViewApp_banner_a1:hover .EventBannerViewApp_hoverBg_cf {
+    opacity: 1;
+}
+
+.EventBannerViewApp_container_7f {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 0 6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.EventBannerViewApp_banner__big_2e .EventBannerViewApp_container_7f {
+    height: 138rem;
+}
+
+.EventBannerViewApp_banner__wideSmall_ed .EventBannerViewApp_container_7f,
+.EventBannerViewApp_banner__thinSmall_cf .EventBannerViewApp_container_7f {
+    height: 96rem;
+}
+
+.EventBannerViewApp_banner__thinExtraSmall_bf .EventBannerViewApp_container_7f {
+    height: 106rem;
+}
+
+.EventBannerViewApp_header_8c {
+    color: #ffffff;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    max-height: 60rem;
+    line-height: 26rem;
+    text-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.EventBannerViewApp_banner__big_2e .EventBannerViewApp_header_8c {
+    font-size: 24rem;
+}
+
+.EventBannerViewApp_banner__wideSmall_ed .EventBannerViewApp_header_8c {
+    font-size: 22rem;
+    line-height: 24rem;
+}
+
+.EventBannerViewApp_banner__thinSmall_cf .EventBannerViewApp_header_8c {
+    max-height: 45rem;
+    font-size: 22rem;
+    line-height: 24rem;
+}
+
+.EventBannerViewApp_banner__thinExtraSmall_bf .EventBannerViewApp_header_8c {
+    max-height: 35rem;
+    font-size: 15rem;
+    line-height: 18rem;
+}
+
+.EventBannerViewApp_subheader_6e {
+    color: #ced9d9;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+    max-height: 40rem;
+    padding-top: 0;
+    line-height: 1;
+    text-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.EventBannerViewApp_banner__big_2e .EventBannerViewApp_subheader_6e {
+    padding-top: 3rem;
+    font-size: 16rem;
+}
+
+.EventBannerViewApp_banner__wideSmall_ed .EventBannerViewApp_subheader_6e {
+    padding-top: 1rem;
+    font-size: 16rem;
+}
+
+.EventBannerViewApp_banner__thinSmall_cf .EventBannerViewApp_subheader_6e {
+    max-height: 45rem;
+    padding-top: 2rem;
+    font-size: 16rem;
+}
+
+.EventBannerViewApp_banner__thinExtraSmall_bf .EventBannerViewApp_subheader_6e {
+    max-height: 35rem;
+    padding-top: 2rem;
+    font-size: 12rem;
+}
+
+.EventBannerViewApp_new_87 {
+    border-radius: 100rem;
+    box-shadow:
+        0 0 1rem 0 rgba(0, 0, 0, 0.8),
+        0 0 8rem 0 #fe67007f,
+        0 0 13rem 0 #f90000cc;
+    background: #dd3b03;
+    position: absolute;
+    top: 9rem;
+    left: 9rem;
+}
+
+.EventBannerViewApp_performanceIcon_5c {
+    width: 16rem;
+    height: 16rem;
+    background: no-repeat 50% / contain;
+    position: absolute;
+    top: 7rem;
+    left: 6rem;
+}
+
+.EventBannerViewApp_banner__mediumRisk_4b .EventBannerViewApp_performanceIcon_5c {
+    background-image: url('R.images.gui.maps.icons.library.alertIcon');
+}
+
+.EventBannerViewApp_banner__highRisk_1e .EventBannerViewApp_performanceIcon_5c {
+    background-image: url('R.images.gui.maps.icons.library.CancelIcon_1');
+}
+
+.EventBannerViewApp_shape_e8 {
+    width: 60%;
+    height: 40rem;
+    background-color: #1e3052e5;
+    filter: blur(16rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.EventBannerViewApp_tank_13 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    animation: EventBannerViewApp_animWave_71 6s infinite ease-in-out both;
+}
+
+.EventBannerViewApp_tankSequence_7a {
+    width: 164rem;
+    height: 96rem;
+    position: absolute;
+    top: -12rem;
+    left: 68rem;
+}
+
+.EventBannerViewApp_banner__wideSmall_ed .EventBannerViewApp_tankSequence_7a {
+    top: -20rem;
+    left: 68rem;
+    transform: scale(0.75);
+}
+
+.EventBannerViewApp_banner__thinSmall_cf .EventBannerViewApp_tankSequence_7a {
+    top: -20rem;
+    left: 30rem;
+    transform: scale(0.7);
+}
+
+.EventBannerViewApp_banner__thinExtraSmall_bf .EventBannerViewApp_tankSequence_7a {
+    top: -22rem;
+    left: -2rem;
+    transform: scale(0.65);
+}
+
+.EventBannerViewApp_videoHover_86,
+.EventBannerViewApp_video_8b {
+    width: 300rem;
+    height: 150rem;
+    mix-blend-mode: additive;
+    overflow: hidden;
+    position: absolute;
+    top: -3rem;
+    left: 1rem;
+    transform: scale(1);
+    transform-origin: 50% 0%;
+    transition: opacity 0.35s ease-in-out;
+    pointer-events: none;
+}
+
+.EventBannerViewApp_banner__wideSmall_ed .EventBannerViewApp_videoHover_86,
+.EventBannerViewApp_banner__wideSmall_ed .EventBannerViewApp_video_8b {
+    top: -5rem;
+    transform: scale(0.9);
+}
+
+.EventBannerViewApp_banner__thinSmall_cf .EventBannerViewApp_videoHover_86,
+.EventBannerViewApp_banner__thinSmall_cf .EventBannerViewApp_video_8b {
+    left: -38rem;
+    transform: scale(0.8);
+}
+
+.EventBannerViewApp_banner__thinExtraSmall_bf .EventBannerViewApp_videoHover_86,
+.EventBannerViewApp_banner__thinExtraSmall_bf .EventBannerViewApp_video_8b {
+    left: -75rem;
+    transform: scale(0.7);
+}
+
+.EventBannerViewApp_videoHover_86 {
+    opacity: 0;
+}
+
+.EventBannerViewApp_videoHover__static_89 {
+    background: url('R.images.halloween.gui.maps.icons.eventBanner.banner_hover') no-repeat 50% / contain;
+}
+
+.EventBannerViewApp_banner_a1:hover .EventBannerViewApp_videoHover_86 {
+    opacity: 1;
+}
+
+.EventBannerViewApp_video_8b {
+    opacity: 0.75;
+}
+
+.EventBannerViewApp_video__static_48 {
+    background: url('R.images.halloween.gui.maps.icons.eventBanner.banner_regular') no-repeat 50% / contain;
+}
+
+.EventBannerViewApp_banner_a1:hover .EventBannerViewApp_video_8b {
+    opacity: 1;
+}
+
+.EventBannerViewApp_animNoiseContainer_6c {
+    width: 100%;
+    height: 100%;
+    mask: linear-gradient(0deg, rgba(0, 0, 0, 100) 75%, transparent 95%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.EventBannerViewApp_noise_03,
+.EventBannerViewApp_noiseBar_05 {
+    width: 100%;
+    height: 72rem;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation: EventBannerViewApp_noiseBarsMove_40 8s infinite linear both;
+}
+
+.EventBannerViewApp_noise__delay_ba,
+.EventBannerViewApp_noiseBar__delay_f2 {
+    animation: EventBannerViewApp_noiseBarsMove_40 8s 4s infinite linear both;
+}
+
+.EventBannerViewApp_noiseBar_05 {
+    height: 72rem;
+}
+
+.EventBannerViewApp_noise_03 {
+    height: 98%;
+    animation: unset;
+}
+
+.EventBannerViewApp_banner_a1:hover .EventBannerViewApp_noise_03 {
+    animation: EventBannerViewApp_animNoiseBrightness_68 2s 1 linear forwards;
+}
+
+.EventBannerViewApp_stepAnimContainer_5d {
+    width: 840rem;
+    height: 150rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.EventBannerViewApp_banner__thinSmall_cf .EventBannerViewApp_stepAnimContainer_5d {
+    width: 1320rem;
+}
+
+.EventBannerViewApp_banner__thinExtraSmall_bf .EventBannerViewApp_stepAnimContainer_5d {
+    width: 960rem;
+}
+
+.EventBannerViewApp_stepAnimContainer__noiseScreen_3c {
+    background: url('R.images.halloween.gui.maps.icons.eventBanner.sequences.tv_noise_0') no-repeat 50% / 100% 100%;
+    animation: EventBannerViewApp_stepMoveScreen_93 0.5s infinite steps(8, end) both;
+}
+
+.EventBannerViewApp_stepAnimContainer__noiseBar_f0 {
+    width: 1800rem;
+    height: 72rem;
+    background: url('R.images.halloween.gui.maps.icons.eventBanner.sequences.tv_noise_bars_0') no-repeat 50% / 100% 100%;
+    animation: EventBannerViewApp_stepMoveBars_a2 0.5s infinite steps(6, end) both;
+}
+
+@keyframes EventBannerViewApp_noiseBarsMove_40 {
+    0% {
+        transform: translate(-50%, 200%);
+    }
+
+    100% {
+        transform: translate(-50%, -100%);
+    }
+}
+
+@keyframes EventBannerViewApp_stepMoveBars_a2 {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes EventBannerViewApp_stepMoveScreen_93 {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-70%);
+    }
+}
+
+@keyframes EventBannerViewApp_animWave_71 {
+    0%,
+    100% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(4%);
+    }
+}
+
+@keyframes EventBannerViewApp_animNoiseBrightness_68 {
+    0%,
+    100% {
+        filter: brightness(1);
+    }
+
+    5% {
+        filter: brightness(2);
+    }
+}

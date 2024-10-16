@@ -179,96 +179,97 @@
             7641: (u, e, t) => {
                 t.r(e),
                     t.d(e, {
-                        addModelObserver: () => o,
-                        addPreloadTexture: () => E,
+                        addModelObserver: () => F,
+                        addPreloadTexture: () => s,
                         children: () => n,
                         displayStatus: () => i.W,
-                        displayStatusIs: () => f,
+                        displayStatusIs: () => w,
                         events: () => a.U,
-                        extraSize: () => w,
-                        forceTriggerMouseMove: () => p,
-                        freezeTextureBeforeResize: () => B,
-                        getBrowserTexturePath: () => A,
-                        getDisplayStatus: () => b,
-                        getScale: () => C,
-                        getSize: () => l,
-                        getViewGlobalPosition: () => c,
-                        isEventHandled: () => v,
-                        isFocused: () => g,
-                        pxToRem: () => _,
-                        remToPx: () => d,
-                        resize: () => D,
+                        extraSize: () => x,
+                        forceTriggerMouseMove: () => b,
+                        freezeTextureBeforeResize: () => C,
+                        getBrowserTexturePath: () => o,
+                        getDisplayStatus: () => f,
+                        getScale: () => _,
+                        getSize: () => D,
+                        getViewGlobalPosition: () => B,
+                        isEventHandled: () => p,
+                        isFocused: () => h,
+                        pxToRem: () => d,
+                        remToPx: () => m,
+                        resize: () => c,
                         sendEvent: () => r.qP,
-                        setAnimateWindow: () => m,
-                        setEventHandled: () => h,
-                        setInputPaddingsRem: () => s,
-                        setSidePaddingsRem: () => F,
-                        whenTutorialReady: () => x,
+                        setAnimateWindow: () => g,
+                        setEventHandled: () => v,
+                        setInputPaddingsRem: () => A,
+                        setSidePaddingsRem: () => l,
+                        whenTutorialReady: () => y,
                     });
                 var n = t(3722),
                     i = t(6112),
                     a = t(6538),
                     r = t(8566);
-                function E(u) {
+                const E = 15;
+                function s(u) {
                     viewEnv.addPreloadTexture(u);
                 }
-                function s(u) {
-                    viewEnv.setHitAreaPaddingsRem(u, u, u, u, 15);
+                function A(u) {
+                    viewEnv.setHitAreaPaddingsRem(u, u, u, u, E);
                 }
-                function A(u, e, t, n = 1) {
+                function o(u, e, t, n = 1) {
                     return viewEnv.getWebBrowserTexturePath(u, e, t, n);
                 }
-                function o(u, e, t) {
+                function F(u, e, t) {
                     return viewEnv.addDataChangedCallback(u, e, t);
                 }
-                function F(u) {
-                    viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, 15);
+                function l(u) {
+                    viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, E);
                 }
-                function l(u = 'px') {
+                function D(u = 'px') {
                     return 'rem' === u ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
                 }
-                function D(u, e, t = 'px') {
+                function c(u, e, t = 'px') {
                     return 'rem' === t ? viewEnv.resizeViewRem(u, e) : viewEnv.resizeViewPx(u, e);
                 }
-                function c(u = 'rem') {
+                function B(u = 'rem') {
                     const e = viewEnv.getViewGlobalPositionRem();
-                    return 'rem' === u ? e : { x: d(e.x), y: d(e.y) };
-                }
-                function B() {
-                    viewEnv.freezeTextureBeforeResize();
+                    return 'rem' === u ? e : { x: m(e.x), y: m(e.y) };
                 }
                 function C() {
+                    viewEnv.freezeTextureBeforeResize();
+                }
+                function _() {
                     return viewEnv.getScale();
                 }
-                function _(u) {
+                function d(u) {
                     return viewEnv.pxToRem(u);
                 }
-                function d(u) {
+                function m(u) {
                     return viewEnv.remToPx(u);
                 }
-                function m(u, e) {
+                function g(u, e) {
                     viewEnv.setAnimateWindow(u, e);
                 }
-                function g() {
+                function h() {
                     return viewEnv.isFocused();
                 }
-                function h() {
+                function v() {
                     return viewEnv.setEventHandled();
                 }
-                function v() {
+                function p() {
                     return viewEnv.isEventHandled();
                 }
-                function p() {
+                function b() {
                     viewEnv.forceTriggerMouseMove();
                 }
-                function b() {
+                function f() {
                     return viewEnv.getShowingStatus();
                 }
-                const f = Object.keys(i.W).reduce(
+                const w = Object.keys(i.W).reduce(
                         (u, e) => ((u[e] = () => viewEnv.getShowingStatus() === i.W[e]), u),
                         {},
                     ),
-                    w = {
+                    x = {
                         set: (u, e) => {
                             viewEnv.setExtraSizeRem(u, e);
                         },
@@ -276,7 +277,7 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    x = Promise.all([
+                    y = Promise.all([
                         new Promise((u) => {
                             window.isDomBuilt ? u() : a.U.onDomBuilt(u);
                         }),
@@ -296,12 +297,13 @@
                             const a = e.args,
                                 r = (function (u, e) {
                                     if (null == u) return {};
-                                    var t,
-                                        n,
-                                        i = {},
-                                        a = Object.keys(u);
-                                    for (n = 0; n < a.length; n++) (t = a[n]), e.indexOf(t) >= 0 || (i[t] = u[t]);
-                                    return i;
+                                    var t = {};
+                                    for (var n in u)
+                                        if ({}.hasOwnProperty.call(u, n)) {
+                                            if (e.indexOf(n) >= 0) continue;
+                                            t[n] = u[n];
+                                        }
+                                    return t;
                                 })(e, n);
                             return void 0 !== a
                                 ? viewEnv.handleViewEvent(
@@ -594,12 +596,13 @@
                             const i = e.args,
                                 a = (function (u, e) {
                                     if (null == u) return {};
-                                    var t,
-                                        n,
-                                        i = {},
-                                        a = Object.keys(u);
-                                    for (n = 0; n < a.length; n++) (t = a[n]), e.indexOf(t) >= 0 || (i[t] = u[t]);
-                                    return i;
+                                    var t = {};
+                                    for (var n in u)
+                                        if ({}.hasOwnProperty.call(u, n)) {
+                                            if (e.indexOf(n) >= 0) continue;
+                                            t[n] = u[n];
+                                        }
+                                    return t;
                                 })(e, c);
                             void 0 !== i
                                 ? viewEnv.handleViewEvent(
@@ -831,12 +834,13 @@
                     let e = u.children,
                         t = (function (u, e) {
                             if (null == u) return {};
-                            var t,
-                                n,
-                                i = {},
-                                a = Object.keys(u);
-                            for (n = 0; n < a.length; n++) (t = a[n]), e.indexOf(t) >= 0 || (i[t] = u[t]);
-                            return i;
+                            var t = {};
+                            for (var n in u)
+                                if ({}.hasOwnProperty.call(u, n)) {
+                                    if (e.indexOf(n) >= 0) continue;
+                                    t[n] = u[n];
+                                }
+                            return t;
                         })(u, _);
                     const i = (0, n.useContext)(C),
                         a = i.extraLarge,
@@ -969,16 +973,16 @@
                     ];
                 function w() {
                     return (
-                        (w =
-                            Object.assign ||
-                            function (u) {
-                                for (var e = 1; e < arguments.length; e++) {
-                                    var t = arguments[e];
-                                    for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (u[n] = t[n]);
-                                }
-                                return u;
-                            }),
-                        w.apply(this, arguments)
+                        (w = Object.assign
+                            ? Object.assign.bind()
+                            : function (u) {
+                                  for (var e = 1; e < arguments.length; e++) {
+                                      var t = arguments[e];
+                                      for (var n in t) ({}).hasOwnProperty.call(t, n) && (u[n] = t[n]);
+                                  }
+                                  return u;
+                              }),
+                        w.apply(null, arguments)
                     );
                 }
                 class x extends i().PureComponent {
@@ -1021,12 +1025,13 @@
                                 u.soundHover,
                                 (function (u, e) {
                                     if (null == u) return {};
-                                    var t,
-                                        n,
-                                        i = {},
-                                        a = Object.keys(u);
-                                    for (n = 0; n < a.length; n++) (t = a[n]), e.indexOf(t) >= 0 || (i[t] = u[t]);
-                                    return i;
+                                    var t = {};
+                                    for (var n in u)
+                                        if ({}.hasOwnProperty.call(u, n)) {
+                                            if (e.indexOf(n) >= 0) continue;
+                                            t[n] = u[n];
+                                        }
+                                    return t;
                                 })(u, f)),
                             D = v()(b.base, b[`base__${r}`], b[`base__${a}`], null == E ? void 0 : E.base),
                             c = v()(b.icon, b[`icon__${r}`], b[`icon__${a}`], null == E ? void 0 : E.icon),
@@ -1090,12 +1095,18 @@
                     if (
                         Array.isArray(u) ||
                         (t = (function (u, e) {
-                            if (!u) return;
-                            if ('string' == typeof u) return N(u, e);
-                            var t = Object.prototype.toString.call(u).slice(8, -1);
-                            'Object' === t && u.constructor && (t = u.constructor.name);
-                            if ('Map' === t || 'Set' === t) return Array.from(u);
-                            if ('Arguments' === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)) return N(u, e);
+                            if (u) {
+                                if ('string' == typeof u) return N(u, e);
+                                var t = {}.toString.call(u).slice(8, -1);
+                                return (
+                                    'Object' === t && u.constructor && (t = u.constructor.name),
+                                    'Map' === t || 'Set' === t
+                                        ? Array.from(u)
+                                        : 'Arguments' === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)
+                                          ? N(u, e)
+                                          : void 0
+                                );
+                            }
                         })(u)) ||
                         (e && u && 'number' == typeof u.length)
                     ) {
@@ -1111,7 +1122,7 @@
                 }
                 function N(u, e) {
                     (null == e || e > u.length) && (e = u.length);
-                    for (var t = 0, n = new Array(e); t < e; t++) n[t] = u[t];
+                    for (var t = 0, n = Array(e); t < e; t++) n[t] = u[t];
                     return n;
                 }
                 const P = (u) => (0 === u ? window : window.subViews.get(u));
@@ -1301,9 +1312,9 @@
                     ),
                     W = H[0],
                     U = H[1];
-                var j = t(2558),
-                    z = t(8934);
-                let I;
+                var z = t(2558),
+                    I = t(8934);
+                let j;
                 !(function (u) {
                     (u.None = ''),
                         (u.Tiny = 'tiny'),
@@ -1311,20 +1322,20 @@
                         (u.Medium = 'medium'),
                         (u.Large = 'large'),
                         (u.Huge = 'huge');
-                })(I || (I = {}));
+                })(j || (j = {}));
                 const G = () => {
                         const u = (0, n.useContext)(C);
                         return u.extraSmall
-                            ? I.Tiny
+                            ? j.Tiny
                             : u.small
-                              ? I.Small
+                              ? j.Small
                               : u.medium || 1080 === u.height
-                                ? I.Medium
+                                ? j.Medium
                                 : u.large
-                                  ? I.Large
+                                  ? j.Large
                                   : u.extraLarge
-                                    ? I.Huge
-                                    : I.None;
+                                    ? j.Huge
+                                    : j.None;
                     },
                     V = {
                         base: 'Slider_base_b2',
@@ -1383,10 +1394,10 @@
                                 { className: V.slider },
                                 i().createElement('div', { className: V.pageCounter }, `${a + 1} / ${u.length}`),
                                 i().createElement(
-                                    j.Z,
+                                    z.Z,
                                     null,
                                     i().createElement(
-                                        z.Z,
+                                        I.Z,
                                         { timeout: 400, className: V.slide, classNames: A, key: `slide-${a}` },
                                         u[a],
                                     ),
@@ -1693,16 +1704,16 @@
                     wu = 'NewCategory_image_8b';
                 function xu() {
                     return (
-                        (xu =
-                            Object.assign ||
-                            function (u) {
-                                for (var e = 1; e < arguments.length; e++) {
-                                    var t = arguments[e];
-                                    for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (u[n] = t[n]);
-                                }
-                                return u;
-                            }),
-                        xu.apply(this, arguments)
+                        (xu = Object.assign
+                            ? Object.assign.bind()
+                            : function (u) {
+                                  for (var e = 1; e < arguments.length; e++) {
+                                      var t = arguments[e];
+                                      for (var n in t) ({}).hasOwnProperty.call(t, n) && (u[n] = t[n]);
+                                  }
+                                  return u;
+                              }),
+                        xu.apply(null, arguments)
                     );
                 }
                 const yu = () => {
@@ -1823,9 +1834,9 @@
                             ),
                         );
                     },
-                    ju = 'NewDevices_deviceName_d6',
-                    zu = 'NewDevices_highlighted_1a',
-                    Iu = 'NewDevices_description_b2',
+                    zu = 'NewDevices_deviceName_d6',
+                    Iu = 'NewDevices_highlighted_1a',
+                    ju = 'NewDevices_description_b2',
                     Gu = 'NewDevices_image_28',
                     Vu = () => {
                         const u = R.strings.tank_setup.introduction.slide.c_1.title(),
@@ -1834,64 +1845,64 @@
                                 () => ({
                                     repairBox: i().createElement(
                                         'span',
-                                        { className: ju },
+                                        { className: zu },
                                         i().createElement(
                                             'span',
-                                            { className: zu, key: 'repairBox' },
+                                            { className: Iu, key: 'repairBox' },
                                             R.strings.tank_setup.introduction.slide.repairBox(),
                                         ),
                                     ),
                                     wetAmmo: i().createElement(
                                         'span',
-                                        { className: ju },
+                                        { className: zu },
                                         i().createElement(
                                             'span',
-                                            { className: zu, key: 'wetAmmo' },
+                                            { className: Iu, key: 'wetAmmo' },
                                             R.strings.tank_setup.introduction.slide.wetAmmo(),
                                         ),
                                     ),
                                     CO2Cistern: i().createElement(
                                         'span',
-                                        { className: ju },
+                                        { className: zu },
                                         i().createElement(
                                             'span',
-                                            { className: zu, key: 'CO2Cistern' },
+                                            { className: Iu, key: 'CO2Cistern' },
                                             R.strings.tank_setup.introduction.slide.CO2Cistern(),
                                         ),
                                     ),
                                     cycloneFilter: i().createElement(
                                         'span',
-                                        { className: ju },
+                                        { className: zu },
                                         i().createElement(
                                             'span',
-                                            { className: zu, key: 'cycloneFilter' },
+                                            { className: Iu, key: 'cycloneFilter' },
                                             R.strings.tank_setup.introduction.slide.cycloneFilter(),
                                         ),
                                     ),
                                     changedConfiguration: i().createElement(
                                         'span',
-                                        { className: ju },
+                                        { className: zu },
                                         i().createElement(
                                             'span',
-                                            { className: zu, key: 'changedConfiguration' },
+                                            { className: Iu, key: 'changedConfiguration' },
                                             R.strings.tank_setup.introduction.slide.changedConfiguration(),
                                         ),
                                     ),
                                     forcedChassis: i().createElement(
                                         'span',
-                                        { className: ju },
+                                        { className: zu },
                                         i().createElement(
                                             'span',
-                                            { className: zu, key: 'forcedChassis' },
+                                            { className: Iu, key: 'forcedChassis' },
                                             R.strings.tank_setup.introduction.slide.forcedChassis(),
                                         ),
                                     ),
                                     forcedMetal: i().createElement(
                                         'span',
-                                        { className: ju },
+                                        { className: zu },
                                         i().createElement(
                                             'span',
-                                            { className: zu, key: 'forcedMetal' },
+                                            { className: Iu, key: 'forcedMetal' },
                                             R.strings.tank_setup.introduction.slide.forcedMetal(),
                                         ),
                                     ),
@@ -1903,7 +1914,7 @@
                             { title: u },
                             i().createElement(Z, {
                                 image: i().createElement('div', { className: Gu }),
-                                description: i().createElement(Uu, { classMix: Iu, text: e, binding: t }),
+                                description: i().createElement(Uu, { classMix: ju, text: e, binding: t }),
                             }),
                         );
                     },

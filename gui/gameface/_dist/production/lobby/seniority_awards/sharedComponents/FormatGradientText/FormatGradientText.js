@@ -115,15 +115,15 @@
                     const C = F ? Object.assign({}, F) : {};
                     let s = u;
                     if (u) {
-                        const F = a.length,
-                            A = i.length,
+                        const F = 16,
+                            A = 14,
                             B = u.indexOf(a),
-                            l = u.indexOf(i),
-                            o = u.substring(B, l + A),
-                            c = u.substring(B + F, l);
-                        o &&
-                            o.length &&
-                            ((s = s.replace(o, '%(%)')),
+                            o = u.indexOf(i),
+                            l = u.substring(B, o + A),
+                            c = u.substring(B + F, o);
+                        l &&
+                            l.length &&
+                            ((s = s.replace(l, '%(%)')),
                             (C['%'] = e().createElement(
                                 'div',
                                 { className: t },

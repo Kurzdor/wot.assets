@@ -1,0 +1,141 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Timer_base_cd {
+    display: flex;
+    height: 18rem;
+    margin-top: 12rem;
+    position: relative;
+}
+
+.Timer_timerText_33 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Timer_iconWrapper_de {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21rem;
+    height: 21rem;
+    margin-right: 2rem;
+    position: relative;
+}
+
+.Timer_icon_93 {
+    width: 37rem;
+    height: 37rem;
+    background: center / cover no-repeat;
+    position: absolute;
+}
+
+.Timer_value_9b {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.BaseTooltip_icon_69 {
+    height: 200rem;
+    background: no-repeat center / contain;
+}
+
+.BaseTooltip_title_2f {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 12rem;
+    margin-bottom: 6rem;
+}
+
+.BaseTooltip_description_21 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 6rem;
+}
+
+.AlertIcon_shadow_86 {
+    width: 68rem;
+    height: 32rem;
+    background-image: radial-gradient(50% 50% at 50% 50%, #ff0707 0%, #5b3e2300 100%);
+    opacity: 0.3;
+    position: absolute;
+    top: -4rem;
+    left: -22rem;
+}
+
+.AlertIcon_icon_56 {
+    width: 24rem;
+    height: 24rem;
+    background: no-repeat center / contain;
+}
+
+.ErrorTooltip_base_58 {
+    width: 100%;
+}
+
+.ErrorTooltip_shadow_06 {
+    width: 320rem;
+    height: 80rem;
+    background: radial-gradient(100% 100% at 0% 0%, rgba(215, 64, 30, 0.5) 0%, rgba(144, 61, 61, 0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ErrorTooltip_alertIcon_f6 {
+    margin-right: 4rem;
+}
+
+.ErrorTooltip_title_e7 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+}
+
+.ErrorTooltip_text_74 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40rem;
+}
+
+.ErrorTooltip_description_f5 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 12rem;
+}
+
+.App_base_b8 {
+    display: flex;
+    flex-direction: column;
+    width: 360rem;
+    height: 100%;
+    padding: 18rem 20rem;
+    position: relative;
+}

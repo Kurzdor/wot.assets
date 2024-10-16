@@ -1,0 +1,12 @@
+.Title_base_82 {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.mediaMedium .Title_base_82 {
+    font-size: 56rem;
+}
+.mediaExtraLarge .Title_base_82 {
+    font-size: 73rem;
+}

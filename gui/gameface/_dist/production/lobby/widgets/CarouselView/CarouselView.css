@@ -1,0 +1,612 @@
+.HorizontalBar_base_49 {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+    position: relative;
+}
+
+.HorizontalBar_base__nonActive_82 {
+    visibility: hidden;
+}
+
+.HorizontalBar_base_49 .disable,
+.HorizontalBar_base_49 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover,
+.HorizontalBar_rightButton_03:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem
+        7rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
+    opacity: 0.7;
+}
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.VerticalBar_base_f3 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+.VerticalBar_base__nonActive_42 {
+    visibility: hidden;
+}
+
+.VerticalBar_base_f3 .disable,
+.VerticalBar_base_f3 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.VerticalBar_topButton_d7,
+.VerticalBar_bottomButton_06 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_d7:hover,
+.VerticalBar_bottomButton_06:hover {
+    opacity: 1;
+}
+
+.VerticalBar_topButton_d7 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_06 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_df {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32 {
+    display: none;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32:hover {
+    opacity: 1;
+}
+
+.VerticalBar_rail_43 {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_43:hover {
+    opacity: 0.7;
+}
+
+.VerticalScroll_content_cb {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_f8 {
+    display: flex;
+}
+
+.VerticalScroll_bar_1e {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_af {
+    flex: 1;
+}
+
+.Carousel_base_15 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 160rem;
+    position: relative;
+    pointer-events: none;
+}
+.Carousel_leftBtn_09 {
+    margin: 20rem 0 0;
+    pointer-events: auto;
+}
+.Carousel_rightBtn_bf {
+    margin: 20rem 0 0;
+    pointer-events: auto;
+}
+.Carousel_scroll_38 {
+    width: calc(100vw - 472rem);
+    height: 100%;
+    mask: linear-gradient(90deg, transparent 0%, #000000 4%, #000000 96%, transparent 100%);
+    position: relative;
+}
+.mediaMediumWidth .Carousel_scroll_38 {
+    width: calc(100vw - 640rem);
+}
+.Carousel_content__noScroll_e7 {
+    justify-content: center;
+}
+.Carousel_items_fc {
+    display: flex;
+    margin-top: 30rem;
+    padding: 10rem 10rem 40rem;
+    pointer-events: auto;
+}
+.Carousel_item_9a {
+    margin: 0 2rem;
+}
+
+.KeyIcon_base_5a {
+    background: no-repeat 50% / contain;
+}
+
+.KeyIcon_base__c28x28_d5 {
+    width: 28rem;
+    height: 28rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_28x28');
+}
+
+.KeyIcon_base__c30x30_ba {
+    width: 28rem;
+    height: 28rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_30x30');
+}
+
+.KeyIcon_base__c36x36_dd {
+    width: 36rem;
+    height: 36rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_36x36');
+}
+
+.KeyIcon_base__c36x36_dd.KeyIcon_base__gray_fc {
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_gray_36x36');
+}
+
+.KeyIcon_base__c44x44_bd {
+    width: 44rem;
+    height: 44rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_44x44');
+}
+
+.KeyIcon_base__c44x44_bd.KeyIcon_base__gray_fc {
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_gray_44x44');
+}
+
+.KeyIcon_base__c70x70_61 {
+    width: 70rem;
+    height: 70rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_70x70');
+}
+
+.KeyIcon_base__c110x110_7c {
+    width: 110rem;
+    height: 110rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_widget_icon');
+}
+
+.VehicleType_base_13 {
+    background: no-repeat 50% / contain;
+}
+
+.VehicleType_base__c_24x24_8a {
+    width: 24rem;
+    height: 24rem;
+}
+
+.VehicleType_base__c_38x38_c5 {
+    width: 38rem;
+    height: 38rem;
+}
+
+.VehicleType_base__c_48x48_83 {
+    width: 48rem;
+    height: 48rem;
+}
+
+.VehicleType_base__c_83x74_a3 {
+    width: 83rem;
+    height: 74rem;
+}
+
+.TextOverflow_base_3b {
+    max-width: 100%;
+    line-height: 1.3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Card_base_6b {
+    display: flex;
+    width: 164rem;
+    height: 104rem;
+    border: 2rem solid transparent;
+    background: url('R.images.halloween.gui.maps.icons.hangar.card_bg') no-repeat 5% / contain;
+    position: relative;
+}
+
+.Card_base__selected_0c {
+    border-color: #f6300f;
+}
+
+.Card_base__dragging_b9 {
+    pointer-events: none;
+}
+
+.Card_icon_b6 {
+    width: 160rem;
+    height: 117rem;
+    background: no-repeat 50% / cover;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.Card_base__hover_e9 .Card_icon_b6 {
+    border-color: rgba(255, 243, 218, 0.08);
+    opacity: 0.9;
+}
+
+.Card_base__selected_0c .Card_icon_b6 {
+    opacity: 1;
+}
+
+.Card_base__selected_0c.Card_base__hover_e9 .Card_icon_b6 {
+    opacity: 1;
+}
+
+.Card_selected_f8 {
+    width: 160rem;
+    height: 100rem;
+    border: 2rem solid #f6300f;
+    opacity: 0;
+    position: absolute;
+    bottom: -8rem;
+    left: -5rem;
+}
+
+.Card_base__selected_0c .Card_selected_f8 {
+    opacity: 0.3;
+}
+
+.Card_placeholder_aa {
+    width: 160rem;
+    height: 100rem;
+    background: rgba(255, 243, 218, 0.08);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.Card_base__active_75.Card_base__hover_e9 .Card_placeholder_aa {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.Card_base__active_75 .Card_placeholder_aa {
+    cursor: pointer;
+}
+
+.Card_disabled_91 {
+    width: 160rem;
+    height: 100rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    pointer-events: none;
+}
+
+.Card_disableBackground_52 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.halloween.gui.maps.icons.hangar.card_disabled') no-repeat 50% / contain;
+    opacity: 0.5;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.Card_daily_b7 {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.Card_base__selected_0c .Card_daily_b7 {
+    cursor: default;
+}
+
+.Card_state_a2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.Card_stateText_d3 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    white-space: nowrap;
+}
+
+.Card_stateText_d3[lang='zh_sg'],
+.Card_stateText_d3[lang='zh_tw'],
+.Card_stateText_d3[lang='ja'],
+.Card_stateText_d3[lang='ko'],
+.Card_stateText_d3[lang='zh_cn'],
+.Card_stateText_d3[lang='th'] {
+    max-height: 18rem;
+    overflow: hidden;
+}
+
+.Card_stateIcon_7b {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat 50% / contain;
+    position: relative;
+    left: 0;
+}
+
+.Card_base__inPlatoon_c8 .Card_stateIcon_7b {
+    background-image: url('R.images.halloween.gui.maps.icons.hangar.in_prebattle');
+}
+
+.Card_base__inBattle_a6 .Card_stateIcon_7b {
+    background-image: url('R.images.halloween.gui.maps.icons.hangar.in_battle');
+}
+
+.Card_base__locked_b6 .Card_stateIcon_7b {
+    background-image: url('R.images.halloween.gui.maps.icons.hangar.rentalIs');
+}
+
+.Card_cload_05 {
+    width: 160rem;
+    height: 50rem;
+    background: url('R.images.halloween.gui.maps.icons.hangar.card_overlay') no-repeat 50% / contain;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.Card_vehName_ec {
+    color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 14rem;
+    bottom: 6rem;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.Card_vehName__light_c3 {
+    text-shadow:
+        0 0 8rem rgba(238, 85, 34, 1),
+        0 0 4rem rgba(255, 42, 0, 1),
+        0 0 2rem rgba(255, 127, 0, 0.25);
+}
+
+.Card_vehType_e5 {
+    position: absolute;
+    bottom: -10rem;
+    left: -33rem;
+}
+
+.Card_label_ff {
+    margin-right: -10rem;
+    position: relative;
+}
+
+.SliderBtn_base_1e {
+    width: 24rem;
+    height: 100rem;
+    background: no-repeat 50% / contain;
+    position: relative;
+}
+
+.SliderBtn_base__left_1d {
+    background-image: url('R.images.halloween.gui.maps.icons.slider.left_up');
+}
+
+.SliderBtn_base__right_c8 {
+    background-image: url('R.images.halloween.gui.maps.icons.slider.right_up');
+}
+
+.SliderBtn_base__disabled_6d.SliderBtn_base__left_1d {
+    background-image: url('R.images.halloween.gui.maps.icons.slider.left_disabled');
+}
+
+.SliderBtn_base__disabled_6d.SliderBtn_base__right_c8 {
+    background-image: url('R.images.halloween.gui.maps.icons.slider.right_disabled');
+}
+
+.SliderBtn_base__hover_2f {
+    cursor: pointer;
+}
+
+.SliderBtn_base__disabled_6d:hover {
+    cursor: default;
+    pointer-events: none;
+}
+
+.SliderBtn_hover_b2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat 50% / contain;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.SliderBtn_base__left_1d .SliderBtn_hover_b2 {
+    background-image: url('R.images.halloween.gui.maps.icons.slider.left_hover');
+}
+
+.SliderBtn_base__right_c8 .SliderBtn_hover_b2 {
+    background-image: url('R.images.halloween.gui.maps.icons.slider.right_hover');
+}
+
+.SliderBtn_base__hover_2f .SliderBtn_hover_b2 {
+    opacity: 1;
+}
+
+.SliderBtn_base__active_a9 .SliderBtn_hover_b2 {
+    opacity: 0;
+}
+
+.SliderBtn_active_4f {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat 50% / contain;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.SliderBtn_base__left_1d .SliderBtn_active_4f {
+    background-image: url('R.images.halloween.gui.maps.icons.slider.left_active');
+}
+
+.SliderBtn_base__right_c8 .SliderBtn_active_4f {
+    background-image: url('R.images.halloween.gui.maps.icons.slider.right_active');
+}
+
+.SliderBtn_base__active_a9 .SliderBtn_active_4f {
+    opacity: 1;
+}

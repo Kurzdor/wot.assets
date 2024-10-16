@@ -1,0 +1,743 @@
+.RewardBackground_base_41 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.RewardBackground_image_f9 {
+    background: no-repeat center / cover;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.RewardBackground_image__show_1f {
+    opacity: 1;
+}
+
+.RewardBackground_base_41 .RewardBackground_video_e4 {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.RewardBackground_base_41 .RewardBackground_video__show_f7 {
+    opacity: 1;
+}
+
+.RewardBackground_base_41 .RewardBackground_video__hide_ba {
+    display: none;
+}
+
+.RewardBackgroundsSwitch_base_dd {
+    position: relative;
+    z-index: 0;
+}
+
+.RewardBackgroundsSwitch_base_dd .RewardBackgroundsSwitch_background_02 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity 0.25s linear;
+}
+
+.RewardBackgroundsSwitch_base_dd .RewardBackgroundsSwitch_background__show_9d {
+    opacity: 1;
+    z-index: -1;
+}
+
+.RewardBackgroundsSwitch_base_dd .RewardBackgroundsSwitch_background__hide_13 {
+    opacity: 0;
+    z-index: -2;
+    transition-delay: 0.6s;
+}
+
+.Controls_base_1b {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.Controls_buttons_c3 {
+    display: flex;
+    margin-top: 10rem;
+}
+
+.mediaMedium .Controls_buttons_c3 {
+    margin-top: 20rem;
+}
+
+.Controls_base_1b .Controls_button_61 {
+    display: flex;
+    min-width: 160rem;
+}
+
+.Controls_base_1b .Controls_button__first_66 {
+    margin-right: 12rem;
+}
+
+.Controls_quantity_8a {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    margin-top: 10rem;
+}
+
+.mediaMedium .Controls_quantity_8a {
+    margin-top: 16rem;
+}
+
+.Controls_base_1b .Controls_purchase_bb {
+    position: absolute;
+    right: 0;
+    bottom: -28rem;
+}
+
+.mediaMedium .Controls_base_1b .Controls_purchase_bb {
+    right: 12rem;
+    bottom: -28rem;
+}
+
+.mediaExtraLarge .Controls_base_1b .Controls_purchase_bb {
+    bottom: -36rem;
+}
+
+.VehicleInfo_base_18 {
+    display: flex;
+}
+
+.VehicleInfo_type_05 {
+    width: 32rem;
+    height: 32rem;
+    background: center / contain no-repeat;
+}
+
+.Customization_base_5c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Customization_base_5c .Customization_styleTitle_a0 {
+    color: #ffffff;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaLarge .Customization_base_5c .Customization_styleTitle_a0 {
+    font-size: 56rem;
+}
+
+.Customization_base_5c .Customization_styleDescription_ae,
+.Customization_base_5c .Customization_vehicleInfoStyle_03 {
+    color: #ffffff;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.mediaLarge .Customization_base_5c .Customization_styleDescription_ae,
+.mediaLarge .Customization_base_5c .Customization_vehicleInfoStyle_03 {
+    font-size: 22rem;
+}
+
+.Customization_base_5c .Customization_vehicleTypeStyle_db {
+    width: 32rem;
+    height: 32rem;
+    margin: -5rem 5rem;
+}
+
+.mediaMedium .Customization_base_5c .Customization_vehicleTypeStyle_db {
+    margin-top: -2rem;
+}
+
+.Customization_base_5c .Customization_vehicleInfoStyle_03 {
+    margin: 0;
+}
+
+.Lootbox_base_88 {
+    color: #ffffff;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.mediaLarge .Lootbox_base_88 {
+    font-size: 56rem;
+}
+
+.Vehicle_base_ee .Vehicle_vehicleInfo_8d {
+    color: #ffffff;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.mediaLarge .Vehicle_base_ee .Vehicle_vehicleInfo_8d {
+    font-size: 56rem;
+}
+
+.Vehicle_base_ee .Vehicle_vehicleType_2a {
+    width: 48rem;
+    height: 48rem;
+    margin: 0 7rem;
+}
+
+.mediaMedium .Vehicle_base_ee .Vehicle_vehicleType_2a {
+    margin-top: -1rem;
+}
+
+.mediaLarge .Vehicle_base_ee .Vehicle_vehicleType_2a {
+    width: 80rem;
+    height: 80rem;
+    margin: -5rem 10rem;
+}
+
+.RewardDescription_base_b3 {
+    opacity: 0;
+    animation: RewardDescription_fadeInRewardDescription_cd 0.25s forwards;
+    animation-delay: 0.08s;
+}
+
+@keyframes RewardDescription_fadeInRewardDescription_cd {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes RareRewardOverlay_fadeIn_85 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.RareRewardOverlay_base_8d {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.RareRewardOverlay_rewardDescription_ff {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mediaMedium .RareRewardOverlay_rewardDescription_ff {
+    padding-bottom: 60rem;
+}
+.mediaLarge .RareRewardOverlay_rewardDescription_ff {
+    padding-bottom: 80rem;
+}
+.RareRewardOverlay_title_c3 {
+    color: #ffffff;
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    font-size: 20rem;
+    opacity: 0;
+    animation: RareRewardOverlay_fadeInRewardTitle_fc 0.25s forwards;
+}
+.mediaLarge .RareRewardOverlay_title_c3 {
+    margin-bottom: 4rem;
+    font-size: 24rem;
+}
+.RareRewardOverlay_continueButton_8f {
+    max-width: 128rem;
+    margin-top: 24rem;
+    opacity: 0;
+    animation: RareRewardOverlay_fadeInRewardDescription_0f 0.25s forwards;
+    animation-delay: 0.16s;
+}
+.mediaLarge .RareRewardOverlay_continueButton_8f {
+    margin-top: 32rem;
+}
+.RareRewardOverlay_closeButton_2d {
+    position: absolute;
+    top: 16rem;
+    right: 10rem;
+    z-index: 1;
+}
+.mediaMedium .RareRewardOverlay_closeButton_2d {
+    top: 30rem;
+    right: 30rem;
+}
+.RareRewardOverlay_closeButton_2d {
+    animation: RareRewardOverlay_fadeInRareRewardOverlay_2f 0.3s forwards;
+}
+.RareRewardOverlay_media_1f {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.RareRewardOverlay_media__image_56 {
+    width: 100%;
+    height: 100%;
+    background: #000 no-repeat center / cover;
+}
+@keyframes RareRewardOverlay_fadeInRareRewardOverlay_2f {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes RareRewardOverlay_fadeInRewardDescription_0f {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+@keyframes RareRewardOverlay_fadeInRewardTitle_fc {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: translateY(0rem);
+    }
+}
+
+.LoupeButton_base_bb {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    position: relative;
+    transition: opacity 0.3s ease-out;
+    cursor: pointer;
+}
+
+.LoupeButton_base_bb:hover {
+    opacity: 1;
+}
+
+.LoupeButton_icon_07 {
+    width: 100rem;
+    height: 100rem;
+    background: center / contain no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.RareRewardVideo_base_43 {
+    position: relative;
+    pointer-events: none;
+}
+
+.RareRewardVideo_video_09 {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+.RareRewardVideo_video__show_e9 {
+    visibility: visible;
+}
+
+.RewardIcon_base_f2 {
+    background: no-repeat center / contain;
+}
+
+.Reward_base_d1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16rem 6rem 0;
+}
+
+.Reward_base_d1 .Reward_icon_b2 {
+    background: no-repeat center / contain;
+    position: relative;
+}
+
+.Reward_count_ee {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    position: absolute;
+    right: 0;
+    bottom: -5rem;
+}
+
+.Reward_count__tokenOffset_49 {
+    left: 72rem;
+}
+
+.Reward_overlay_5b {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    position: absolute;
+}
+
+.Reward_overlay__big_9a {
+    width: 128rem;
+    height: 128rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.RewardTitle_base_e1 {
+    display: flex;
+    justify-content: center;
+}
+
+.RewardTitle_base__premium_plus_44 {
+    transform: translateY(8rem);
+}
+
+.RewardTitle_value_b5 {
+    color: #c9c9b6;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    justify-content: center;
+    margin-top: -13rem;
+    line-height: 120%;
+    text-align: center;
+}
+
+.RewardTitle_base__credits_f6 .RewardTitle_value_b5 {
+    color: #ced9d9;
+}
+
+.RewardTitle_base__gold_19 .RewardTitle_value_b5,
+.RewardTitle_base__premium_plus_44 .RewardTitle_value_b5 {
+    color: #ffc363;
+}
+
+.RewardTitle_base__freeXP_ec .RewardTitle_value_b5,
+.RewardTitle_base__crystal_75 .RewardTitle_value_b5 {
+    color: #c9c9b6;
+}
+
+.RewardTitle_pluralText_11 {
+    color: #ffc363;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-left: 4rem;
+    margin-top: -13rem;
+    line-height: 120%;
+}
+
+.Compensation_base_ca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Compensation_iconWrapper_66 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.Compensation_base_ca .Compensation_icon_69 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(8rem, -8rem);
+}
+
+.Compensation_base_ca .Compensation_vehicleTitle_89 {
+    margin-top: -13rem;
+}
+
+.AnimatedReward_base_c3 {
+    width: 80rem;
+    height: 80rem;
+    margin-left: 28rem;
+    position: relative;
+    z-index: 0;
+}
+
+.AnimatedReward_container_c6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.AnimatedReward_base_c3 .AnimatedReward_reward_8e {
+    margin: 0;
+}
+
+.AnimatedReward_base_c3 .AnimatedReward_video_3c {
+    width: 256rem;
+    height: 256rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.AnimatedReward_base_c3 .AnimatedReward_glow_7e {
+    width: 128rem;
+    height: 128rem;
+    z-index: -1;
+}
+
+.AnimatedReward_base_c3 .AnimatedReward_compensation_c4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.AnimatedReward_base_c3 .AnimatedReward_title_3d {
+    z-index: 1;
+}
+
+.AnimatedReward_base_c3 .AnimatedReward_vehicleTitle_08 {
+    margin-top: -13rem;
+    color: #ffc363;
+    white-space: nowrap;
+}
+
+.AnimatedReward_loupeWrapper_a1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 6rem;
+    position: absolute;
+}
+
+.AnimatedReward_base_c3 .AnimatedReward_loupe_22 {
+    opacity: 0.75;
+}
+
+.AnimatedReward_base_c3 .AnimatedReward_loupe_22:hover {
+    opacity: 1;
+}
+
+.RewardsRow_base_72 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 460rem;
+    height: 104rem;
+    position: relative;
+}
+.mediaLarge .RewardsRow_base_72 {
+    height: 124rem;
+}
+.mediaExtraLarge .RewardsRow_base_72 {
+    height: 132rem;
+}
+
+.RewardsRow_number_8e {
+    color: #f2f2f7;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24rem;
+    height: 27rem;
+    border-radius: 4rem;
+    background: #f2f2f719;
+}
+
+.RewardsRow_divider_36 {
+    width: 100%;
+    height: 1rem;
+    background-color: #fff3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@keyframes Content_fadeIn_f4 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.Content_base_48 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    pointer-events: none;
+}
+.Content_base__ready_a2 {
+    pointer-events: auto;
+}
+.Content_rareOverlay_2f {
+    animation-name: Content_fadeIn_f4;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    pointer-events: auto;
+}
+.Content_headerBlock_4d {
+    width: 100%;
+    margin-top: 28rem;
+}
+.mediaMedium .Content_headerBlock_4d {
+    margin-top: 40rem;
+}
+.mediaLarge .Content_headerBlock_4d {
+    margin-top: 44rem;
+}
+.Content_base_48 .Content_subtitle_9e {
+    margin-top: 8rem;
+    opacity: 0.9;
+}
+.mediaMedium .Content_base_48 .Content_subtitle_9e {
+    margin-top: 12rem;
+}
+.Content_closeButton_15 {
+    position: absolute;
+    top: 16rem;
+    right: 10rem;
+    z-index: 1;
+}
+.mediaMedium .Content_closeButton_15 {
+    top: 30rem;
+    right: 30rem;
+}
+.Content_boxes_69 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.Content_footer_04 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 28rem;
+    position: relative;
+}
+.mediaMedium .Content_footer_04 {
+    margin-bottom: 40rem;
+}
+.mediaLarge .Content_footer_04 {
+    margin-bottom: 44rem;
+}
+.Content_base_48 .Content_checkbox_8f {
+    position: absolute;
+    bottom: -12rem;
+    left: 20rem;
+    z-index: 1;
+}
+.mediaMedium .Content_base_48 .Content_checkbox_8f {
+    bottom: -10rem;
+    left: 40rem;
+}
+.mediaExtraLarge .Content_base_48 .Content_checkbox_8f {
+    bottom: -18rem;
+}
+
+.App_base_79 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: App_show_5b 0.4s ease-in;
+}
+
+.App_base_79 .App_background_02 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.App_loader_4a,
+.App_content_62 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.App_loaderWrapper_e5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+@keyframes App_show_5b {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

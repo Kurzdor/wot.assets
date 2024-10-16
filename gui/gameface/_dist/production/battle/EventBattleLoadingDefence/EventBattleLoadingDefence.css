@@ -1,0 +1,872 @@
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+.ExtendedText_base__zeroPadding_25 {
+    padding: 0;
+}
+
+.ExtendedText_base__isTruncationAvailable_5b {
+    width: 100%;
+}
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+    opacity: 0;
+}
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #ff2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.ExtendedText_tooltip_91 {
+    display: flex;
+}
+
+.ExtendedText_tooltip__justify-flex-start_00 {
+    justify-content: flex-start;
+}
+
+.ExtendedText_tooltip__justify-center_08 {
+    justify-content: center;
+}
+
+.ExtendedText_tooltip__justify-flex-end_90 {
+    justify-content: flex-end;
+}
+
+.ExtendedText_tooltip__align-flex-start_40 {
+    align-content: flex-start;
+}
+
+.ExtendedText_tooltip__align-center_54 {
+    align-content: center;
+}
+
+.ExtendedText_tooltip__align-flex-end_d2 {
+    align-content: flex-end;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #ffffff;
+}
+
+.colors_white_45 {
+    color: #f2f2f7;
+}
+
+.colors_whiteOrange_81 {
+    color: #fefeec;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #e9e2bf;
+}
+
+.colors_par_5b {
+    color: #8c8c7e;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362e;
+}
+
+.colors_red_79 {
+    color: #ff2717;
+}
+
+.colors_redDark_73 {
+    color: #b70000;
+}
+
+.colors_yellow_76 {
+    color: #feab34;
+}
+
+.colors_orange_cd {
+    color: #ee7000;
+}
+
+.colors_cream_0f {
+    color: #ffdd99;
+}
+
+.colors_brown_82 {
+    color: #cbac77;
+}
+
+.colors_greenBright_68 {
+    color: #80d43a;
+}
+
+.colors_green_fa {
+    color: #7ab300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #ccffff;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09e2ff;
+}
+
+.colors_cred_35 {
+    color: #ced9d9;
+}
+
+.colors_gold_c3 {
+    color: #ffc363;
+}
+
+.colors_bond_ce {
+    color: #c9c9b6;
+}
+
+.colors_prom_83 {
+    color: #a29b70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.renderers_word_f3 {
+    white-space: pre;
+    overflow-wrap: normal;
+}
+
+.Text_base_3f {
+    width: 100%;
+    height: 104%;
+    letter-spacing: 0.03em;
+    position: relative;
+}
+
+.Text_base__whiteSpanish_9d {
+    color: #e9e2bf;
+}
+
+.Text_base__red_f1 {
+    color: #ff5454;
+}
+
+.Text_base__currency_66 {
+    color: #ffe0ab;
+}
+
+.Text_base__heading_72 {
+    color: #fdd194;
+}
+
+.Text_base__lightRed_ee {
+    color: #ff9090;
+}
+
+.Text_base__metaHeading_73 {
+    color: #ff7e00;
+    /* stylelint-disable-next-line property-no-unknown */
+    text-stroke: 1rem #ff545466;
+}
+
+.Text_layer0_29 {
+    width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+.Text_base__whiteSpanish_9d .Text_layer0__shadow_c3 {
+    text-shadow: -4rem 4rem 1rem rgba(233, 226, 191, 0.3);
+}
+
+.Text_base__red_f1 .Text_layer0__shadow_c3,
+.Text_base__currency_66 .Text_layer0__shadow_c3,
+.Text_base__heading_72 .Text_layer0__shadow_c3 {
+    text-shadow:
+        -4rem 7rem 0 rgba(255, 39, 23, 0.14),
+        0 0 15rem #d51f00;
+}
+
+.Text_base__metaHeading_73 .Text_layer0__shadow_c3 {
+    text-shadow:
+        -4rem 7rem 0 rgba(255, 39, 23, 0.2),
+        0 0 15rem #d51f00,
+        0 0 3rem 0rem #f6300f inset;
+}
+
+.Text_layer1_81 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #f66b6b;
+}
+
+.Text_base__metaHeading_73 .Text_layer1_81 {
+    color: rgba(209, 17, 12, 0.6);
+}
+
+.Text_layer2_ff {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 1) 85%);
+}
+
+.Text_base__metaHeading_73 .Text_layer2_ff {
+    mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 100%);
+}
+
+.Text_layer3_47 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: rgba(0, 0, 0, 0.3);
+    text-shadow: none;
+    mask-size: 6rem 3rem;
+    mask-repeat: repeat;
+    mask-image: url('R.images.halloween.gui.maps.icons.common.text_mask_pattern');
+}
+
+.Text_base__heading_72 .Text_layer3_47,
+.Text_base__metaHeading_73 .Text_layer3_47 {
+    color: rgba(0, 0, 0, 0.2);
+    mask-size: 1rem 4rem;
+    mask-repeat: repeat;
+    mask-image: url('R.images.halloween.gui.maps.icons.common.text_mask_pattern_header');
+}
+
+.Text_layer4_f7 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #000000;
+    text-shadow: none;
+    opacity: 0.7;
+    mask-size: 628rem 384rem;
+    mask-repeat: repeat;
+    mask-image: url('R.images.halloween.gui.maps.icons.common.text_mask_sharp');
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBar_base_45 {
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+.ProgressBar_base__small_df {
+    height: 2rem;
+}
+.ProgressBar_background_51 {
+    width: 100%;
+    max-width: 8001px;
+    height: 100%;
+    background-image: var(--progress-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ProgressBar_background__small_46 {
+    height: 2rem;
+}
+.ProgressBar_lineWrapper_6a {
+    display: flex;
+    flex: 1;
+}
+
+.ProgressBarBlink_base_24 {
+    width: 60rem;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    pointer-events: none;
+}
+
+.ProgressBarBlink_base__small_0f {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressLineImpose_base_80 {
+    max-width: 8001px;
+    height: 100%;
+    background-color: var(--progress-line-base);
+    position: relative;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressLineImpose_base__disabled_cc {
+    background-color: var(--progress-line-disabled);
+}
+.ProgressLineImpose_base__finished_d4 {
+    background-color: var(--progress-line-finished);
+}
+.ProgressLineImpose_base__withoutBounce_56 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+.ProgressLineImpose_pattern_1c {
+    max-width: 8001px;
+    background-image: var(--progress-pattern-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
+    top: 0;
+    bottom: 0;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
+    background-image: var(--progress-pattern-disabled);
+    left: 0;
+}
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
+    background-image: var(--progress-pattern-finished);
+}
+.ProgressLineImpose_gradient_35 {
+    max-width: 8001px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75));
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
+    top: 0;
+    bottom: 0;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
+    display: none;
+}
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5));
+}
+.ProgressLineImpose_glow_a5 {
+    width: 60rem;
+    max-width: 8001px;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.ProgressLineImpose_glow__left_d8 {
+    left: 1rem;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+    display: none;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaSimple_base_6c {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ProgressBarDeltaSimple_delta_99 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1), cubic-bezier(0.21, 0.61, 0.35, 1);
+    transition-property: width, transform;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaGrow_base_7e {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+.ProgressBarDeltaGrow_glow_68 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+
+.Button_base_e0 {
+    width: 60rem;
+    height: 118rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.mediaMedium .Button_base_e0 {
+    width: 73rem;
+    height: 145rem;
+}
+
+.Button_bg_cb {
+    width: 60rem;
+    height: 118rem;
+    background: no-repeat 50% / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mediaMedium .Button_bg_cb {
+    width: 73rem;
+    height: 145rem;
+}
+
+.Button_bg_cb {
+    background-image: url('R.images.halloween.gui.maps.icons.battle.eventLoading.btnArrowSmall');
+    z-index: 0;
+}
+
+.mediaMedium .Button_bg_cb {
+    background-image: url('R.images.halloween.gui.maps.icons.battle.eventLoading.btnArrow');
+}
+
+.Button_base__left_25 .Button_bg_cb {
+    transform: rotateY(180deg);
+}
+
+.Button_hover_31 {
+    width: 60rem;
+    height: 118rem;
+    background: no-repeat 50% / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mediaMedium .Button_hover_31 {
+    width: 73rem;
+    height: 145rem;
+}
+
+.Button_hover_31 {
+    background-image: url('R.images.halloween.gui.maps.icons.battle.eventLoading.btnArrowHoverSmall');
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.mediaMedium .Button_hover_31 {
+    background-image: url('R.images.halloween.gui.maps.icons.battle.eventLoading.btnArrowHover');
+}
+
+.Button_base_e0:hover .Button_hover_31 {
+    opacity: 1;
+}
+
+.Button_base__left_25 .Button_hover_31 {
+    transform: rotateY(180deg);
+}
+
+.NavButton_base_e7 {
+    position: relative;
+}
+
+.NavButton_navImg_75 {
+    width: 69rem;
+    height: 19rem;
+    background: url('R.images.halloween.gui.maps.icons.battle.eventLoading.paginatorNormal') no-repeat 50% / contain;
+}
+
+.NavButton_navImg__active_03 {
+    background-image: url('R.images.halloween.gui.maps.icons.battle.eventLoading.paginatorActive');
+    pointer-events: none;
+}
+
+.NavButton_navImg_75:hover {
+    background-image: url('R.images.halloween.gui.maps.icons.battle.eventLoading.paginatorHover');
+    cursor: pointer;
+}
+
+.EventBattleLoadingApp_base_fc {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+    position: relative;
+}
+
+.EventBattleLoadingApp_vignette_a1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.halloween.gui.maps.icons.battle.eventLoading.loadingPicVignette') no-repeat 50% / 100%
+        100%;
+}
+
+.EventBattleLoadingApp_shadow_b5 {
+    width: 900rem;
+    height: 600rem;
+    background: url('R.images.halloween.gui.maps.icons.battle.eventLoading.txtShadow') no-repeat 50% / cover;
+    position: absolute;
+    bottom: -89rem;
+    left: -50rem;
+    pointer-events: none;
+}
+
+.mediaSmall .EventBattleLoadingApp_shadow_b5 {
+    left: -30rem;
+}
+
+.mediaMedium .EventBattleLoadingApp_shadow_b5 {
+    bottom: -32rem;
+    left: -20rem;
+}
+
+.mediaLarge .EventBattleLoadingApp_shadow_b5 {
+    bottom: 16rem;
+    left: 0;
+}
+
+.mediaExtraLarge .EventBattleLoadingApp_shadow_b5 {
+    bottom: 28rem;
+}
+
+.EventBattleLoadingApp_bgImage_ba {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat 50% / cover;
+}
+
+.EventBattleLoadingApp_block_71 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 100rem;
+    position: absolute;
+    bottom: 86rem;
+    left: 0;
+    pointer-events: none;
+}
+
+.mediaSmall .EventBattleLoadingApp_block_71 {
+    padding: 0 120rem;
+}
+
+.mediaMedium .EventBattleLoadingApp_block_71 {
+    padding: 0 150rem;
+    bottom: 100rem;
+}
+
+.mediaLarge .EventBattleLoadingApp_block_71 {
+    padding: 0 170rem;
+    bottom: 160rem;
+}
+
+.EventBattleLoadingApp_row_d3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 0;
+}
+
+.EventBattleLoadingApp_titleContainer_27 {
+    width: 100%;
+    height: 32rem;
+    margin: 13rem 0 6rem;
+    opacity: 0.4;
+    position: relative;
+    transition: all 0.3s ease-out;
+}
+
+.mediaMedium .EventBattleLoadingApp_titleContainer_27 {
+    height: 44rem;
+    margin: 12rem 0 14rem;
+}
+
+.EventBattleLoadingApp_row__active_11 .EventBattleLoadingApp_titleContainer_27 {
+    color: #f2f2f7;
+    opacity: 1;
+    transition: all 0.3s 0.6s ease-in;
+}
+
+.EventBattleLoadingApp_titleSimple_b2 {
+    color: rgba(233, 226, 191, 0.6);
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: -4rem 4rem 1rem #d624144c;
+    letter-spacing: 0.03em;
+    opacity: 1;
+    position: absolute;
+    transition: opacity 0.3s ease-out;
+}
+
+.mediaMedium .EventBattleLoadingApp_titleSimple_b2 {
+    font-size: 36rem;
+}
+
+.EventBattleLoadingApp_row__active_11 .EventBattleLoadingApp_titleSimple_b2 {
+    opacity: 0;
+    transition: opacity 0.3s 0.6s ease-in;
+}
+
+.EventBattleLoadingApp_titleArt_52 {
+    color: #fdd194;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 0 24rem #d51f0066;
+    letter-spacing: 0.03em;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.EventBattleLoadingApp_row__active_11 .EventBattleLoadingApp_titleArt_52 {
+    opacity: 1;
+    transition: opacity 0.3s 0.6s ease-in;
+}
+
+.mediaMedium .EventBattleLoadingApp_titleArt_52 {
+    font-size: 36rem;
+}
+
+.EventBattleLoadingApp_descriptionText_38 {
+    line-height: 21rem;
+}
+
+.mediaMedium .EventBattleLoadingApp_descriptionText_38 {
+    line-height: 24rem;
+}
+
+.EventBattleLoadingApp_description_4d {
+    color: #e9e2bf;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    max-height: 0rem;
+    padding-bottom: 0rem;
+    font-size: 16rem;
+    font-weight: 400;
+    text-shadow: -4rem 4rem 1rem #d624144c;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.mediaMedium .EventBattleLoadingApp_description_4d {
+    font-size: 20rem;
+}
+
+.EventBattleLoadingApp_row__active_11 .EventBattleLoadingApp_description_4d {
+    max-height: 250rem;
+    padding-bottom: 8rem;
+    opacity: 0.8;
+    transition: all 0.3s 0.6s ease-in;
+}
+
+.mediaMedium .EventBattleLoadingApp_row__active_11 .EventBattleLoadingApp_description_4d {
+    padding-bottom: 13rem;
+}
+
+.EventBattleLoadingApp_progressBar_5b {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 396rem;
+    background-color: #000000;
+    bottom: 42rem;
+}
+
+.mediaMedium .EventBattleLoadingApp_progressBar_5b {
+    width: 690rem;
+    bottom: 52rem;
+}
+
+.EventBattleLoadingApp_progressBorder_fb {
+    position: absolute;
+    top: -2rem;
+    right: -2rem;
+    bottom: -2rem;
+    left: -2rem;
+    border: 1rem solid #333;
+    border-radius: 3rem;
+}
+
+.EventBattleLoadingApp_container_e0 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateY(-14rem);
+}
+
+.mediaMedium .EventBattleLoadingApp_container_e0 {
+    transform: translateY(0);
+}
+
+.EventBattleLoadingApp_button_aa {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.EventBattleLoadingApp_button__left_65 {
+    left: 32rem;
+}
+
+.mediaSmall .EventBattleLoadingApp_button__left_65 {
+    left: 42rem;
+}
+
+.mediaMedium .EventBattleLoadingApp_button__left_65 {
+    left: 50rem;
+}
+
+.mediaLarge .EventBattleLoadingApp_button__left_65 {
+    left: 60rem;
+}
+
+.EventBattleLoadingApp_button__right_71 {
+    right: 32rem;
+}
+
+.mediaSmall .EventBattleLoadingApp_button__right_71 {
+    right: 42rem;
+}
+
+.mediaMedium .EventBattleLoadingApp_button__right_71 {
+    right: 50rem;
+}
+
+.mediaLarge .EventBattleLoadingApp_button__right_71 {
+    right: 60rem;
+}
+
+.EventBattleLoadingApp_navigation_d5 {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 45rem;
+}
+
+.mediaSmall .EventBattleLoadingApp_navigation_d5 {
+    margin-top: 65rem;
+}
+
+.mediaMedium .EventBattleLoadingApp_navigation_d5 {
+    margin-top: 85rem;
+}

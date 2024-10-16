@@ -1,0 +1,162 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.KeyIcon_base_5a {
+    background: no-repeat 50% / contain;
+}
+
+.KeyIcon_base__c28x28_d5 {
+    width: 28rem;
+    height: 28rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_28x28');
+}
+
+.KeyIcon_base__c30x30_ba {
+    width: 28rem;
+    height: 28rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_30x30');
+}
+
+.KeyIcon_base__c36x36_dd {
+    width: 36rem;
+    height: 36rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_36x36');
+}
+
+.KeyIcon_base__c36x36_dd.KeyIcon_base__gray_fc {
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_gray_36x36');
+}
+
+.KeyIcon_base__c44x44_bd {
+    width: 44rem;
+    height: 44rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_44x44');
+}
+
+.KeyIcon_base__c44x44_bd.KeyIcon_base__gray_fc {
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_gray_44x44');
+}
+
+.KeyIcon_base__c70x70_61 {
+    width: 70rem;
+    height: 70rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_70x70');
+}
+
+.KeyIcon_base__c110x110_7c {
+    width: 110rem;
+    height: 110rem;
+    background-image: url('R.images.halloween.gui.maps.icons.key.key_widget_icon');
+}
+
+.KeyTooltipApp_base_4c {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 350rem;
+    padding: 22rem 21rem;
+}
+
+.KeyTooltipApp_header_e0 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.KeyTooltipApp_icon_e6 {
+    display: flex;
+    align-self: center;
+    width: 180rem;
+    height: 135rem;
+    margin-top: 21rem;
+    background: url('R.images.halloween.gui.maps.icons.key.keys') no-repeat 50% / contain;
+}
+
+.KeyTooltipApp_dots_ac {
+    width: 350rem;
+    height: 1rem;
+    margin-top: 1rem;
+    background: url('R.images.halloween.gui.maps.icons.library.dots') no-repeat 50% / contain;
+}
+
+.KeyTooltipApp_description_8b {
+    margin: 40rem 0 16rem;
+}
+
+.KeyTooltipApp_price_5b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 62rem;
+    margin-bottom: -1rem;
+    background: linear-gradient(
+        90deg,
+        rgba(201, 201, 182, 0) 0%,
+        rgba(201, 201, 182, 0.07) 38%,
+        rgba(201, 201, 182, 0.07) 62%,
+        rgba(201, 201, 182, 0) 100%
+    );
+}
+
+.KeyTooltipApp_key_fd {
+    margin: 0 5rem 0 3rem;
+}
+
+.KeyTooltipApp_subMenu_4c {
+    margin: 14rem 0 11rem;
+    color: #e9e2bf;
+}
+
+.KeyTooltipApp_items_20 {
+    margin-top: 6rem;
+}
+
+.KeyTooltipApp_item_db {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    height: 18rem;
+}
+
+.KeyTooltipApp_simplyItem_4b {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 6rem 0 -4rem;
+}
+
+.KeyTooltipApp_itemValue_a7 {
+    margin-left: 3rem;
+    color: #e9e2bf;
+}
+
+.KeyTooltipApp_bottom_4b {
+    display: flex;
+    margin-top: 14rem;
+}
+
+.KeyTooltipApp_info_fc {
+    width: 14rem;
+    height: 14rem;
+    margin: 5rem 17rem 0 0;
+    background: url('R.images.halloween.gui.maps.icons.library.information') no-repeat 50% / contain;
+}
+
+.KeyTooltipApp_bottomText_33 {
+    width: 280rem;
+}
