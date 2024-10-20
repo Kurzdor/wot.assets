@@ -1,0 +1,14 @@
+.App_base_ed {
+    width: 100%;
+    height: 100%;
+    background-color: #120a0d;
+    overflow: hidden;
+    position: relative;
+}
+
+.App_video_f9 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

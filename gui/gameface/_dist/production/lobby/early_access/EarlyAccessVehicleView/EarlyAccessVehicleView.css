@@ -832,6 +832,13 @@
     margin-left: 324rem;
     margin-top: 45rem;
 }
+.mediaMedium .App_description__withWidget_28 {
+    margin-left: 180rem;
+    margin-top: -60rem;
+}
+.mediaExtraLarge .App_description__withWidget_28 {
+    margin-left: 324rem;
+}
 .App_description__hide_57 {
     animation-name: App_translateLeftWithFadeOut_1f;
     animation-duration: 1.5s;
@@ -900,7 +907,7 @@
     width: auto;
     right: 845rem;
 }
-.App_carouselWithWidget_9d {
+.App_carouselWrapper_f4 {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -909,17 +916,17 @@
     position: absolute;
     bottom: 0;
 }
-.mediaMedium .App_carouselWithWidget_9d {
+.mediaMedium .App_carouselWrapper_f4 {
     margin-bottom: 0;
 }
-.App_carouselWithWidget_9d {
+.App_carouselWrapper_f4 {
     animation-name: App_translateTopWithFadeIn_cb;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
 }
-.App_carouselWithWidget__hide_3d {
+.App_carouselWrapper__hide_f1 {
     animation-name: App_translateBottomWithFadeOut_57;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
@@ -929,24 +936,37 @@
     animation-timing-function: cubic-bezier(0.07, 0.82, 0.47, 1);
 }
 .App_carousel_56 {
-    max-width: calc(100vw - 270rem);
+    max-width: 100vw;
     margin-bottom: 20rem;
     position: relative;
 }
 .mediaSmall .App_carousel_56 {
-    max-width: calc(100vw - 283.5rem);
     margin-left: 13.5rem;
 }
 .mediaMedium .App_carousel_56 {
-    max-width: calc(100vw - 345rem);
     margin-left: 0;
     margin-bottom: 39rem;
 }
-.mediaLarge .App_carousel_56 {
+.mediaExtraLarge .App_carousel_56 {
+    margin-left: 194rem;
+}
+.App_carousel__withWidget_69 {
+    max-width: calc(100vw - 270rem);
+}
+.mediaSmall .App_carousel__withWidget_69 {
+    max-width: calc(100vw - 283.5rem);
+    margin-left: 13.5rem;
+}
+.mediaMedium .App_carousel__withWidget_69 {
+    max-width: calc(100vw - 396rem);
+    margin-left: 51rem;
+    margin-bottom: 39rem;
+}
+.mediaLarge .App_carousel__withWidget_69 {
     max-width: calc(100vw - 396rem);
     margin-left: 51rem;
 }
-.mediaExtraLarge .App_carousel_56 {
+.mediaExtraLarge .App_carousel__withWidget_69 {
     max-width: calc(100vw - 539rem);
     margin-left: 194rem;
 }

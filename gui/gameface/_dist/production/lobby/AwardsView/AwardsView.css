@@ -1,0 +1,1603 @@
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+.TextButton_icon__forward_59 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
+.TextButton_icon__close_53 {
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
+.TextButton_icon__info_33 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_glow_a4 {
+    opacity: 0;
+}
+.TextButton_caption_82 {
+    position: relative;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
+}
+.TextButton_caption__back_b9,
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
+.TextButton_caption__info_23 {
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+    margin-left: 8rem;
+}
+.TextButton_base__right_39 .TextButton_goto_e7 {
+    margin-right: 8rem;
+}
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity 0.16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+    left: -4rem;
+}
+.TextButton_base__right_39 .TextButton_shine_e2 {
+    right: -4rem;
+    transform: rotate(180deg);
+}
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_shine_e2 {
+    opacity: 0;
+}
+
+.CloseButton_base_1c {
+    position: absolute;
+    top: 31rem;
+    right: 40rem;
+    z-index: 5;
+}
+.mediaSmall .CloseButton_base_1c {
+    top: 42rem;
+    right: 36rem;
+}
+.mediaMedium .CloseButton_base_1c {
+    top: 46rem;
+}
+.mediaLarge .CloseButton_base_1c {
+    top: 53rem;
+}
+
+.Gradient_base_c7 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, #13141d 0%, #23253a 44%, #2c202f 88%, #341b23 100%);
+    opacity: 0.7;
+}
+
+.Gradient_base__hasAnimation_15 {
+    animation: Gradient_showGradient_30 0.5s;
+}
+
+@keyframes Gradient_showGradient_30 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes DelayedAnimationWrapper_show_92 {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes DelayedAnimationWrapper_translate-down_51 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes DelayedAnimationWrapper_translate-up_48 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+.DelayedAnimationWrapper_base_af {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+
+    /* GF positions element relative to its direct parent, not to its closest positioned ancestor. */
+    position: absolute;
+    animation: DelayedAnimationWrapper_show_92 0.1s 0.1s ease-in-out forwards;
+    pointer-events: none;
+}
+.DelayedAnimationWrapper_base_af > * {
+    pointer-events: auto;
+}
+
+@keyframes Header_slideUp_f2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Header_fadeOut_12 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes Header_fadeIn_42 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Header_fadeInScale_19 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+@keyframes Header_fadeInWithScale_71 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes Header_scale_5e {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes Header_raysAppearance_cd {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+@keyframes Header_rotate_60 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes Header_fadeTop_e3 {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+}
+@keyframes Header_fadeBot_bd {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+}
+.Header_base_f4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200rem;
+    text-align: center;
+}
+.Header_title_b0 {
+    opacity: 0;
+    animation-name: Header_slideUp_f2;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
+    animation-delay: 0.6s;
+    animation-iteration-count: 1;
+    color: #f2f2f7;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Header_base__small_00 .Header_title_b0,
+.Header_base__extraSmall_45 .Header_title_b0 {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Header_status_ef {
+    opacity: 0;
+    animation-name: Header_slideUp_f2;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
+    animation-delay: 0.8s;
+    animation-iteration-count: 1;
+    color: #f2f2f7;
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+}
+.Header_base__small_00 .Header_status_ef,
+.Header_base__extraSmall_45 .Header_status_ef {
+    color: #f2f2f7;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.Counter_base_49 {
+    color: #e9e2bf;
+    font-size: 20rem;
+    font-weight: 400;
+    position: absolute;
+    right: 55rem;
+    bottom: 30rem;
+}
+
+.Counter_base__large_b8 {
+    bottom: 38rem;
+}
+
+.Counter_base__small_66,
+.Counter_base__extraSmall_3a {
+    font-size: 16rem;
+    right: 10rem;
+    bottom: 15rem;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes Vehicle_show_2f {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes Vehicle_translate-down_4f {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes Vehicle_translate-up_a7 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.Vehicle_base_95 {
+    display: flex;
+    align-items: center;
+}
+
+.Vehicle_base__hasAnimation_56 {
+    opacity: 0;
+    animation: Vehicle_show_2f 0.1s 0.1s ease-in-out forwards;
+}
+
+.Vehicle_type_11 {
+    width: 81rem;
+    height: 73rem;
+    margin: 0 -14rem;
+    background: no-repeat center / contain;
+}
+
+.Vehicle_flag_f9 {
+    width: 27rem;
+    height: 17rem;
+    margin-right: 12rem;
+    background: no-repeat center / contain;
+}
+
+.Vehicle_name_63,
+.Vehicle_level_df {
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-top: -3rem;
+}
+
+.mediaMedium .Vehicle_name_63,
+.mediaMedium .Vehicle_level_df {
+    font-size: 18rem;
+}
+
+.Vehicle_base__large_e9 .Vehicle_name_63,
+.Vehicle_base__large_e9 .Vehicle_level_df {
+    font-size: 22rem;
+}
+
+.mediaMedium .Vehicle_base__large_e9 .Vehicle_name_63,
+.mediaMedium .Vehicle_base__large_e9 .Vehicle_level_df {
+    font-size: 28rem;
+}
+
+.mediaLarge .Vehicle_base__large_e9 .Vehicle_name_63,
+.mediaLarge .Vehicle_base__large_e9 .Vehicle_level_df {
+    font-size: 36rem;
+}
+
+.Vehicle_base__single_eb .Vehicle_name_63,
+.Vehicle_base__single_eb .Vehicle_level_df {
+    font-size: 18rem;
+}
+
+.mediaMedium .Vehicle_base__single_eb .Vehicle_name_63,
+.mediaMedium .Vehicle_base__single_eb .Vehicle_level_df {
+    font-size: 22rem;
+}
+
+.Vehicle_base__primary_47 .Vehicle_name_63,
+.Vehicle_base__primary_47 .Vehicle_level_df {
+    color: #f2f2f7;
+}
+
+.Vehicle_base__secondary_0e .Vehicle_name_63,
+.Vehicle_base__secondary_0e .Vehicle_level_df {
+    color: #e9e2bf;
+}
+
+.Vehicle_base__large_e9 .Vehicle_name_63 {
+    margin-left: 5rem;
+}
+
+.Vehicle_base__large_e9 .Vehicle_level_df {
+    margin-right: 5rem;
+}
+
+@keyframes Reward_slideUp_93 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes Reward_fadeOut_70 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes Reward_fadeIn_62 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Reward_fadeInScale_0a {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+@keyframes Reward_fadeInWithScale_22 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes Reward_scale_b3 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes Reward_raysAppearance_7c {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+@keyframes Reward_rotate_62 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes Reward_fadeTop_fd {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+}
+@keyframes Reward_fadeBot_92 {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+}
+.Reward_base_d7 {
+    width: 232rem;
+    height: 174rem;
+    position: relative;
+    z-index: 3;
+    transition:
+        0.3s cubic-bezier(0.07, 0.82, 0.17, 1) opacity,
+        0.3s cubic-bezier(0.07, 0.82, 0.17, 1) transform;
+}
+.Reward_base__small_63 {
+    width: 296rem;
+    height: 222rem;
+}
+.Reward_base__medium_41 {
+    width: 400rem;
+    height: 300rem;
+}
+.Reward_base__large_b7 {
+    width: 400rem;
+    height: 300rem;
+}
+.Reward_base__extraLarge_d0 {
+    width: 400rem;
+    height: 300rem;
+}
+.Reward_base_d7.Reward_entering_95 {
+    opacity: 0;
+    transform: scale(1.5);
+}
+.Reward_base_d7.Reward_entered_15 {
+    opacity: 1;
+    transform: scale(1);
+}
+.Reward_base__single_5f {
+    width: 402rem;
+    height: 390rem;
+}
+.Reward_base__single_5f.Reward_base__extraLarge_d0 {
+    width: 400rem;
+    height: 390rem;
+}
+.Reward_base__single_5f.Reward_base__small_63,
+.Reward_base__single_5f.Reward_base__extraSmall_f1 {
+    width: 260rem;
+    height: 253rem;
+}
+.Reward_base__final_4e {
+    width: 400rem;
+    height: 300rem;
+}
+.Reward_base__final_4e.Reward_base__small_63,
+.Reward_base__final_4e.Reward_base__extraSmall_f1 {
+    width: 400rem;
+    height: 300rem;
+}
+.Reward_base__final_4e.Reward_base__medium_41 {
+    width: 600rem;
+    height: 450rem;
+}
+.Reward_base__final_4e.Reward_base__large_b7 {
+    width: 600rem;
+    height: 450rem;
+}
+.Reward_base__final_4e.Reward_base_extraLarge_cf {
+    width: 600rem;
+    height: 450rem;
+}
+.Reward_base__postBattle_70 {
+    width: 450rem;
+    height: 450rem;
+}
+.Reward_base__postBattle_70.Reward_base__medium_41 {
+    width: 300rem;
+    height: 300rem;
+}
+.Reward_base__postBattle_70.Reward_base__small_63,
+.Reward_base__postBattle_70.Reward_base__extraSmall_f1 {
+    width: 300rem;
+    height: 300rem;
+}
+.Reward_rewardImage_13 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    position: relative;
+    top: -60rem;
+    left: 0;
+}
+.Reward_base__medium_41 .Reward_rewardImage_13 {
+    top: -35rem;
+}
+.Reward_base_extraLarge_cf .Reward_rewardImage_13 {
+    top: -70rem;
+}
+.Reward_rewardImage__single_5a {
+    top: -48rem;
+}
+.Reward_base__extraLarge_d0 .Reward_rewardImage__single_5a {
+    top: -70rem;
+}
+.Reward_base__small_63 .Reward_rewardImage__single_5a,
+.Reward_base__extraSmall_f1 .Reward_rewardImage__single_5a {
+    top: -5rem;
+}
+.Reward_rewardImage__final_65 {
+    top: -40rem;
+}
+.Reward_base__small_63 .Reward_rewardImage__final_65,
+.Reward_base__extraSmall_f1 .Reward_rewardImage__final_65 {
+    top: -60rem;
+}
+.Reward_base__medium_41 .Reward_rewardImage__final_65 {
+    top: -70rem;
+}
+.Reward_base__large_b7 .Reward_rewardImage__final_65 {
+    top: -90rem;
+}
+.Reward_base_extraLarge_cf .Reward_rewardImage__final_65 {
+    top: -70rem;
+}
+.Reward_rewardImage__postBattle_01 {
+    top: -45rem;
+}
+.Reward_base__medium_41 .Reward_rewardImage__postBattle_01 {
+    top: -50rem;
+}
+.Reward_base__small_63 .Reward_rewardImage__postBattle_01,
+.Reward_base__extraSmall_f1 .Reward_rewardImage__postBattle_01 {
+    top: -40rem;
+}
+.Reward_count_bc {
+    color: #e9e2bf;
+    font-size: 20rem;
+    font-weight: 400;
+    position: absolute;
+    right: 55rem;
+    bottom: 30rem;
+}
+.Reward_base__large_b7 .Reward_count_bc {
+    bottom: 38rem;
+}
+.Reward_base__small_63 .Reward_count_bc,
+.Reward_base__extraSmall_f1 .Reward_count_bc {
+    font-size: 16rem;
+    right: 10rem;
+    bottom: 15rem;
+}
+.Reward_rewardText_73 {
+    color: #e9e2bf;
+    font-size: 20rem;
+    font-weight: 700;
+    position: absolute;
+    bottom: -25rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Reward_base__small_63 .Reward_rewardText_73,
+.Reward_base__extraSmall_f1 .Reward_rewardText_73 {
+    font-size: 15rem;
+}
+.Reward_rewardText__big_ed {
+    font-size: 22rem;
+    bottom: -70rem;
+}
+.Reward_base__small_63 .Reward_rewardText__big_ed,
+.Reward_base__extraSmall_f1 .Reward_rewardText__big_ed {
+    font-size: 18rem;
+    bottom: -50rem;
+}
+.Reward_currency_86 {
+    color: #e9e2bf;
+    font-size: 22rem;
+    font-weight: 700;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Reward_base__medium_41 .Reward_currency_86,
+.Reward_base__large_b7 .Reward_currency_86,
+.Reward_base__extraLarge_d0 .Reward_currency_86 {
+    font-size: 33rem;
+}
+.Reward_rentWrapper_0a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: -30rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Reward_base__small_63 .Reward_rentWrapper_0a,
+.Reward_base__extraSmall_f1 .Reward_rentWrapper_0a {
+    bottom: -70rem;
+}
+.Reward_mainRewardLabel_fa {
+    bottom: -10rem;
+}
+.Reward_mainRewardRent_e1 {
+    color: #ffdd99;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem rgba(255, 42, 0, 0.6),
+        0 0 15rem #e52;
+}
+.Reward_icon_b1 {
+    width: 40rem;
+    height: 40rem;
+    background: url('R.images.white_tiger.gui.maps.icons.rewards.rent') no-repeat center / contain;
+}
+
+@keyframes mainRewards_slideUp_9d {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes mainRewards_fadeOut_6d {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes mainRewards_fadeIn_5d {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes mainRewards_fadeInScale_e4 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+@keyframes mainRewards_fadeInWithScale_b7 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes mainRewards_scale_26 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes mainRewards_raysAppearance_39 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+@keyframes mainRewards_rotate_4d {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes mainRewards_fadeTop_7c {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+}
+@keyframes mainRewards_fadeBot_60 {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+}
+.mainRewards_base_6e {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0;
+    position: relative;
+    z-index: 3;
+}
+.mainRewards_content_3c {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0;
+    position: relative;
+}
+.mainRewards_rewards_eb {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+.mainRewards_rewardsList_9e {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.6);
+    position: relative;
+    cursor: pointer;
+}
+
+.CButton_base__main_42,
+.CButton_base__primary_7f,
+.CButton_base__primaryGreen_6f,
+.CButton_base__primaryRed_ec,
+.CButton_base__secondary_50 {
+    background-size: 100% 100%;
+}
+
+.CButton_base__main_42 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_main');
+}
+
+.CButton_base__primary_7f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+
+.CButton_base__primaryGreen_6f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+
+.CButton_base__primaryRed_ec {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+
+.CButton_base__secondary_50 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+
+.CButton_base__ghost_ed {
+    border-radius: 3rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 0 1rem rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.CButton_base__extraSmall_27 {
+    min-height: 17rem;
+    padding: 0 16rem;
+}
+
+.CButton_base__small_df,
+.CButton_base__medium_74 {
+    padding: 0 20rem;
+}
+
+.CButton_base__small_df {
+    min-height: 18rem;
+}
+
+.CButton_base__medium_74 {
+    min-height: 32rem;
+}
+
+.CButton_base__disabled_d9 {
+    cursor: default;
+}
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+}
+.CButton_base__primary_7f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+.CButton_base__secondary_50 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow 0.16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+    border-radius: 2rem;
+    box-shadow: inset 0 0 2rem 1rem rgba(255, 85, 0, 0.2);
+}
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__firstHover_d5 .CButton_stateHighlightHover_ff,
+.CButton_base__firstHover_d5 .CButton_stateHighlightActive_35,
+.CButton_base__firstHover_d5 .CButton_stateDisabled_54 {
+    transition: opacity 0.16s ease-in-out;
+}
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(
+        180deg,
+        rgba(252, 248, 235, 0.25) 0%,
+        rgba(252, 248, 235, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+    opacity: 1;
+}
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+    box-shadow: 0 15rem 12rem 0 rgba(242, 242, 230, 0.11) inset;
+    background-color: rgba(8, 6, 0, 0.18);
+    background-image: none;
+}
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+    opacity: 1;
+}
+.CButton_stateDisabled_54 {
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+    opacity: 1;
+}
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: 0.03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang='ja'],
+.CButton_content_cc[lang='ko'],
+.CButton_content_cc[lang='zh_tw'],
+.CButton_content_cc[lang='zh_sg'],
+.CButton_content_cc[lang='zh_cn'],
+.CButton_content_cc[lang='th'] {
+    font-weight: 400;
+}
+.CButton_base__main_42 .CButton_content_cc,
+.CButton_base__primaryRed_ec .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #600;
+}
+.CButton_base__secondary_50 .CButton_content_cc {
+    color: rgba(254, 254, 236, 0.75);
+}
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #1c2502;
+}
+.CButton_base__extraSmall_27 .CButton_content_cc {
+    font-size: 12rem;
+}
+.CButton_base__small_df .CButton_content_cc {
+    font-size: 14rem;
+}
+.CButton_base__medium_74 .CButton_content_cc {
+    font-size: 15rem;
+}
+.CButton_base__disabled_d9 .CButton_content_cc {
+    opacity: 0.6;
+}
+
+@keyframes RewardFooter_slideUp_78 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes RewardFooter_fadeOut_93 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes RewardFooter_fadeIn_a4 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes RewardFooter_fadeInScale_d7 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+@keyframes RewardFooter_fadeInWithScale_48 {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes RewardFooter_scale_52 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes RewardFooter_raysAppearance_bc {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+@keyframes RewardFooter_rotate_a6 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes RewardFooter_fadeTop_bf {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+}
+@keyframes RewardFooter_fadeBot_61 {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+}
+.RewardFooter_base_d2 {
+    opacity: 0;
+    animation-name: RewardFooter_slideUp_78;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
+    animation-delay: 1.8s;
+    animation-iteration-count: 1;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20rem;
+    position: relative;
+    z-index: 4;
+}
+.mediaMedium .RewardFooter_base_d2 {
+    padding-bottom: 31rem;
+}
+.RewardFooter_buttonHolder_26 {
+    min-width: 200rem;
+    margin: 5rem 16rem;
+}
+
+@keyframes App_slideUp_2b {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes App_fadeOut_3b {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes App_fadeIn_07 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes App_fadeInScale_f0 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes App_fadeInWithScale_7d {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes App_scale_cb {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes App_raysAppearance_a9 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes App_rotate_98 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes App_fadeTop_da {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+}
+
+@keyframes App_fadeBot_44 {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+}
+
+.App_base_de {
+    opacity: 0;
+    animation-name: App_fadeInWithScale_7d;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 42rem 0 35rem;
+    background: url('R.images.white_tiger.gui.maps.icons.welcome.background__gp4') no-repeat center center / cover;
+    position: relative;
+}
+
+.App_base_de.mediaMedium {
+    padding: 48rem 0 37rem;
+}
+
+.App_base_de.mediaLarge {
+    padding: 50rem 0 32rem;
+}
+
+.App_overlay_70 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.App_header_92 {
+    position: relative;
+    z-index: 1;
+}
+
+.App_content_31 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.App_rewards_17 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.App_light_30 {
+    opacity: 0;
+    animation-name: App_fadeIn_07;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
+    animation-delay: 1.1s;
+    animation-iteration-count: 1;
+    width: 700rem;
+    height: 700rem;
+    margin-top: 100rem;
+    background: url('R.images.white_tiger.gui.maps.icons.rewards.light') no-repeat center center / contain;
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    transition: 0.3s cubic-bezier(0.07, 0.82, 0.17, 1) transform;
+    pointer-events: none;
+}
+
+.App_imageLight_13 {
+    opacity: 0;
+    animation-name: App_fadeIn_07;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    width: 1080rem;
+    height: 1080rem;
+    background: url('R.images.white_tiger.gui.maps.icons.rewards.goldrays') no-repeat center center / contain;
+    filter: saturate(20%) contrast(300%);
+    opacity: 100%;
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.App_ribbon_37 {
+    opacity: 0;
+    animation-name: App_slideUp_2b;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    width: 1366rem;
+    height: 356rem;
+    margin-left: -683rem;
+    background: url('R.images.white_tiger.gui.maps.icons.rewards.ribbon_small') no-repeat center center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.mediaMedium .App_ribbon_37 {
+    width: 1620rem;
+    height: 417rem;
+    margin-left: -810rem;
+    background-image: url('R.images.white_tiger.gui.maps.icons.rewards.ribbon_medium');
+}
+
+.mediaLarge .App_ribbon_37 {
+    width: 1920rem;
+    height: 500rem;
+    margin-left: -960rem;
+    background-image: url('R.images.white_tiger.gui.maps.icons.rewards.ribbon');
+}
+
+.App_rays_70 {
+    width: 1300rem;
+    height: 1300rem;
+    margin: -650rem 0 0 -650rem;
+    background: url('R.images.white_tiger.gui.maps.icons.rewards.lines') no-repeat center center / contain;
+    opacity: 0;
+    mix-blend-mode: additive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-name: App_raysAppearance_a9, App_rotate_98;
+    animation-duration: 1.5s, 120s;
+    animation-fill-mode: forwards, forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1), linear;
+    animation-delay: 0.8s, 1.2s;
+    animation-iteration-count: 1, infinite;
+    pointer-events: none;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}

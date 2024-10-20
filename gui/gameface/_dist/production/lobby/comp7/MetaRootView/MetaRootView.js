@@ -2796,30 +2796,28 @@
                             e.scrollTop = t.value.scrollPosition;
                         },
                         getDirection: (e) => (e.deltaY > 1 ? Nt.Next : Nt.Prev),
-                    });
-                class It extends u().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = Q.B3.GOLD;
-                        else e = Q.B3.INTEGRAL;
-                        const t = Q.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== t ? t : null;
-                    }
-                }
-                It.defaultProps = { format: 'integral' };
-                const Mt = {
-                    '--pageContentWidth': '78vw',
-                    base: 'CurrentPositionPanel_base_92',
-                    base__active: 'CurrentPositionPanel_base__active_8c',
-                    cell: 'CurrentPositionPanel_cell_be',
-                    cell__order: 'CurrentPositionPanel_cell__order_be',
-                    cell__currentPosition: 'CurrentPositionPanel_cell__currentPosition_c5',
-                    cell__battles: 'CurrentPositionPanel_cell__battles_8f',
-                    cell__score: 'CurrentPositionPanel_cell__score_d2',
-                    screwIcon: 'CurrentPositionPanel_screwIcon_8f',
-                    screwIcon__left: 'CurrentPositionPanel_screwIcon__left_cb',
-                    screwIcon__right: 'CurrentPositionPanel_screwIcon__right_6e',
-                };
+                    }),
+                    It = ({ format: e, value: t }) => {
+                        const a = ((e, t = 'integral') => {
+                            let a;
+                            a = 'gold' === t ? Q.B3.GOLD : Q.B3.INTEGRAL;
+                            return void 0 === e ? '' : Q.Z5.getNumberFormat(e, a);
+                        })(t, e);
+                        return a ? u().createElement('span', null, a) : null;
+                    },
+                    Mt = {
+                        '--pageContentWidth': '78vw',
+                        base: 'CurrentPositionPanel_base_92',
+                        base__active: 'CurrentPositionPanel_base__active_8c',
+                        cell: 'CurrentPositionPanel_cell_be',
+                        cell__order: 'CurrentPositionPanel_cell__order_be',
+                        cell__currentPosition: 'CurrentPositionPanel_cell__currentPosition_c5',
+                        cell__battles: 'CurrentPositionPanel_cell__battles_8f',
+                        cell__score: 'CurrentPositionPanel_cell__score_d2',
+                        screwIcon: 'CurrentPositionPanel_screwIcon_8f',
+                        screwIcon__left: 'CurrentPositionPanel_screwIcon__left_cb',
+                        screwIcon__right: 'CurrentPositionPanel_screwIcon__right_6e',
+                    };
                 let Ot;
                 !(function (e) {
                     (e.None = 'None'), (e.Active = 'Active');
@@ -6999,6 +6997,7 @@
                         (e.PremiumPlus = 'premium_plus'),
                         (e.BattlePassPoints = 'battlePassPoints'),
                         (e.BattlePassSelectToken = 'battlePassSelectToken'),
+                        (e.SelectableBonus = 'selectableBonus'),
                         (e.StyleProgressToken = 'styleProgressToken'),
                         (e.TmanToken = 'tmanToken'),
                         (e.NaturalCover = 'naturalCover'),
@@ -7019,7 +7018,12 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.WtStamp = 'stamp'),
+                        (e.WtHunter = 'wt_hunter'),
+                        (e.WtHunterCollection = 'hunter_collection'),
+                        (e.WtTicket = 'wtevent_ticket'),
+                        (e.WtMainPrizeDiscount = 'main_prize_discount');
                 })(tl || (tl = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -7159,6 +7163,12 @@
                         tl.BattleBoosterGift,
                         tl.CosmicLootboxCommon,
                         tl.CosmicLootboxSilver,
+                        tl.SelectableBonus,
+                        tl.WtStamp,
+                        tl.WtTicket,
+                        tl.WtMainPrizeDiscount,
+                        tl.WtHunter,
+                        tl.WtHunterCollection,
                     ],
                     dl = [tl.Gold, tl.Credits, tl.Crystal, tl.FreeXp],
                     ml = [tl.BattlePassPoints],
@@ -7224,6 +7234,7 @@
                             case 'groups':
                             case 'tmanToken':
                             case 'battlePassSelectToken':
+                            case 'selectableBonus':
                                 return `R.images.gui.maps.icons.quests.bonuses.${t}.${s}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${t}.${s}`;

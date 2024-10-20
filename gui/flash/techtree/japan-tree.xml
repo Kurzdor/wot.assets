@@ -29,13 +29,13 @@
       <row>	6	</row>
       <column>	4	</column>
       <lines>
+        <J08_Chi_Nu></J08_Chi_Nu>
         <J37_Type_3_Ho_Ni_III></J37_Type_3_Ho_Ni_III>
         <J45_Mitsu_108></J45_Mitsu_108>
-        <J08_Chi_Nu></J08_Chi_Nu>
       </lines>
     </J09_Chi_He>
     <J37_Type_3_Ho_Ni_III>
-      <row>	2	</row>
+      <row>	3	</row>
       <column>	5	</column>
       <lines>
         <J38_Type_95_Ji_Ro></J38_Type_95_Ji_Ro>
@@ -57,7 +57,7 @@
       </lines>
     </J08_Chi_Nu>
     <J38_Type_95_Ji_Ro>
-      <row>	2	</row>
+      <row>	3	</row>
       <column>	6	</column>
       <lines>
         <J32_Chi_To_SPG></J32_Chi_To_SPG>
@@ -85,7 +85,7 @@
       </lines>
     </J10_Chi_To>
     <J32_Chi_To_SPG>
-      <row>	2	</row>
+      <row>	3	</row>
       <column>	7	</column>
       <lines>
         <J33_Ho_Ri_2></J33_Ho_Ri_2>
@@ -113,7 +113,7 @@
       </lines>
     </J11_Chi_Ri>
     <J33_Ho_Ri_2>
-      <row>	2	</row>
+      <row>	3	</row>
       <column>	8	</column>
       <lines>
         <J34_Ho_Ri_1></J34_Ho_Ri_1>
@@ -141,7 +141,7 @@
       </lines>
     </J13_STA_1>
     <J34_Ho_Ri_1>
-      <row>	2	</row>
+      <row>	3	</row>
       <column>	9	</column>
       <lines>
         <J35_Ho_Ri_3></J35_Ho_Ri_3>
@@ -169,7 +169,7 @@
       </lines>
     </J14_Type_61>
     <J35_Ho_Ri_3>
-      <row>	2	</row>
+      <row>	3	</row>
       <column>	10	</column>
     </J35_Ho_Ri_3>
     <J40_Type_71>

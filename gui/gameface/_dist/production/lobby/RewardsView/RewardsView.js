@@ -331,6 +331,7 @@
                             (e.PremiumPlus = 'premium_plus'),
                             (e.BattlePassPoints = 'battlePassPoints'),
                             (e.BattlePassSelectToken = 'battlePassSelectToken'),
+                            (e.SelectableBonus = 'selectableBonus'),
                             (e.StyleProgressToken = 'styleProgressToken'),
                             (e.TmanToken = 'tmanToken'),
                             (e.NaturalCover = 'naturalCover'),
@@ -351,7 +352,12 @@
                             (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (e.BattleBoosterGift = 'battleBooster_gift'),
                             (e.CosmicLootboxSilver = 'lootBoxToken'),
-                            (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                            (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                            (e.WtStamp = 'stamp'),
+                            (e.WtHunter = 'wt_hunter'),
+                            (e.WtHunterCollection = 'hunter_collection'),
+                            (e.WtTicket = 'wtevent_ticket'),
+                            (e.WtMainPrizeDiscount = 'main_prize_discount');
                     })(n || (n = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -451,15 +457,16 @@
                 var n = r(6179),
                     a = r.n(n),
                     i = r(4179);
-                class s extends a().PureComponent {
-                    render() {
-                        let e;
-                        e = 'gold' === this.props.format ? i.B3.GOLD : i.B3.INTEGRAL;
-                        const t = i.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== t ? t : null;
-                    }
-                }
-                s.defaultProps = { format: 'integral' };
+                const s = ({ format: e, value: t }) => {
+                    const r = ((e, t = 'integral') => {
+                        let r;
+                        return (
+                            (r = 'gold' === t ? i.B3.GOLD : i.B3.INTEGRAL),
+                            void 0 === e ? '' : i.Z5.getNumberFormat(e, r)
+                        );
+                    })(t, e);
+                    return r ? a().createElement('span', null, r) : null;
+                };
                 var o = r(2862);
                 const l = [
                         o.E4.Items,
@@ -496,6 +503,12 @@
                         o.E4.BattleBoosterGift,
                         o.E4.CosmicLootboxCommon,
                         o.E4.CosmicLootboxSilver,
+                        o.E4.SelectableBonus,
+                        o.E4.WtStamp,
+                        o.E4.WtTicket,
+                        o.E4.WtMainPrizeDiscount,
+                        o.E4.WtHunter,
+                        o.E4.WtHunterCollection,
                     ],
                     c = [o.E4.Gold, o.E4.Credits, o.E4.Crystal, o.E4.FreeXp],
                     u = [o.E4.BattlePassPoints],
@@ -571,6 +584,7 @@
                             case 'groups':
                             case 'tmanToken':
                             case 'battlePassSelectToken':
+                            case 'selectableBonus':
                                 return `R.images.gui.maps.icons.quests.bonuses.${t}.${i}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${t}.${i}`;
@@ -906,23 +920,23 @@
                                 return a;
                             })(e, s);
                         const O = (0, i.useRef)({ timeoutId: 0, isVisible: !1, prevTarget: null, hideTimerId: null }),
-                            y = (0, i.useMemo)(() => R || (0, n.F)().resId, [R]),
-                            k = (0, i.useCallback)(() => {
+                            k = (0, i.useMemo)(() => R || (0, n.F)().resId, [R]),
+                            y = (0, i.useCallback)(() => {
                                 (O.current.isVisible && O.current.timeoutId) ||
-                                    (l(r, v, { isMouseEvent: !0, on: !0, arguments: o(a) }, y),
+                                    (l(r, v, { isMouseEvent: !0, on: !0, arguments: o(a) }, k),
                                     S && S(),
                                     (O.current.isVisible = !0));
-                            }, [r, v, a, y, S]),
+                            }, [r, v, a, k, S]),
                             x = (0, i.useCallback)(() => {
                                 if (O.current.isVisible || O.current.timeoutId) {
                                     const e = O.current.timeoutId;
                                     e > 0 && (clearTimeout(e), (O.current.timeoutId = 0)),
-                                        l(r, v, { on: !1 }, y),
+                                        l(r, v, { on: !1 }, k),
                                         O.current.isVisible && T && T(),
                                         (O.current.isVisible = !1);
                                 }
-                            }, [r, v, y, T]),
-                            L = (0, i.useCallback)((e) => {
+                            }, [r, v, k, T]),
+                            M = (0, i.useCallback)((e) => {
                                 O.current.isVisible &&
                                     ((O.current.prevTarget = document.elementFromPoint(e.clientX, e.clientY)),
                                     (O.current.hideTimerId = window.setTimeout(() => {
@@ -934,9 +948,9 @@
                             (0, i.useEffect)(() => {
                                 const e = O.current.hideTimerId;
                                 return (
-                                    document.addEventListener('wheel', L, { capture: !0 }),
+                                    document.addEventListener('wheel', M, { capture: !0 }),
                                     () => {
-                                        document.removeEventListener('wheel', L, { capture: !0 }),
+                                        document.removeEventListener('wheel', M, { capture: !0 }),
                                             e && window.clearTimeout(e);
                                     }
                                 );
@@ -959,13 +973,13 @@
                                       Object.assign(
                                           {
                                               onMouseEnter:
-                                                  ((M = t.props.onMouseEnter),
+                                                  ((L = t.props.onMouseEnter),
                                                   (e) => {
                                                       (e.clientX === window.innerWidth &&
                                                           e.clientY === window.innerHeight) ||
-                                                          ((O.current.timeoutId = window.setTimeout(k, g ? 100 : 400)),
+                                                          ((O.current.timeoutId = window.setTimeout(y, g ? 100 : 400)),
                                                           c && c(e),
-                                                          M && M(e));
+                                                          L && L(e));
                                                   }),
                                               onMouseLeave: ((e) => (t) => {
                                                   x(), null == u || u(t), null == e || e(t);
@@ -982,7 +996,7 @@
                                   )
                                 : t
                         );
-                        var M;
+                        var L;
                     };
             },
             8246: (e, t, r) => {
@@ -1389,7 +1403,7 @@
                         setEventHandled: () => f,
                         setInputPaddingsRem: () => l,
                         setSidePaddingsRem: () => d,
-                        whenTutorialReady: () => y,
+                        whenTutorialReady: () => k,
                     });
                 var n = r(3722),
                     a = r(6112),
@@ -1462,7 +1476,7 @@
                             viewEnv.getExtraSizeRem(e, t);
                         },
                     },
-                    y = Promise.all([
+                    k = Promise.all([
                         new Promise((e) => {
                             window.isDomBuilt ? e() : i.U.onDomBuilt(e);
                         }),
@@ -2294,12 +2308,12 @@
                     counter: P,
                     tokensCount: O = 0,
                 }) => {
-                    const y = (0, n.useState)(!1),
-                        k = y[0],
-                        x = y[1],
-                        L = (0, n.useState)(!1),
-                        M = L[0],
-                        N = L[1],
+                    const k = (0, n.useState)(!1),
+                        y = k[0],
+                        x = k[1],
+                        M = (0, n.useState)(!1),
+                        L = M[0],
+                        N = M[1],
                         C = (e, t) => {
                             e && t && e(t);
                         },
@@ -2308,8 +2322,8 @@
                             h && d[`base__${h}`],
                             g && d.base__yellow,
                             _ && d.base__disabled,
-                            k && !_ && d.base__hover,
-                            M && d.base__click,
+                            y && !_ && d.base__hover,
+                            L && d.base__click,
                             m && !_ && d.base__highlight,
                         ),
                         I = o()(d.glowBorder, d.glowBorder__hover),
@@ -2462,7 +2476,7 @@
                             );
                         },
                     ),
-                    y = {
+                    k = {
                         base: 'RewardsCol_base_74',
                         bg: 'RewardsCol_bg_12',
                         highlight: 'RewardsCol_highlight_2b',
@@ -2472,9 +2486,9 @@
                         levels__disable: 'RewardsCol_levels__disable_d4',
                         reward: 'RewardsCol_reward_40',
                     };
-                function k() {
+                function y() {
                     return (
-                        (k =
+                        (y =
                             Object.assign ||
                             function (e) {
                                 for (var t = 1; t < arguments.length; t++) {
@@ -2483,14 +2497,14 @@
                                 }
                                 return e;
                             }),
-                        k.apply(this, arguments)
+                        y.apply(this, arguments)
                     );
                 }
                 var x;
                 !(function (e) {
                     (e.None = 'none'), (e.White = 'white'), (e.Gold = 'gold');
                 })(x || (x = {}));
-                const L = ({ levelsRange: e, frontlineLevel: t, isBattlePassComplete: r, isLastCol: n }) => {
+                const M = ({ levelsRange: e, frontlineLevel: t, isBattlePassComplete: r, isLastCol: n }) => {
                         const i = (0, f.GS)(),
                             s = i.mediaSize,
                             l = i.remScreenHeight,
@@ -2511,12 +2525,12 @@
                             g = t < u;
                         return a().createElement(
                             'div',
-                            { className: y.base },
-                            a().createElement('div', { className: y.bg }),
-                            m && a().createElement('div', { className: o()(y.highlight, y[`highlight__${m}`]) }),
+                            { className: k.base },
+                            a().createElement('div', { className: k.bg }),
+                            m && a().createElement('div', { className: o()(k.highlight, k[`highlight__${m}`]) }),
                             a().createElement(
                                 'span',
-                                { className: o()(y.levels, g && y.levels__disable) },
+                                { className: o()(k.levels, g && k.levels__disable) },
                                 u !== d ? `${u}-${d}` : u,
                             ),
                             _.map(({ value: e, id: t }) =>
@@ -2525,9 +2539,9 @@
                                     { key: t },
                                     a().createElement(
                                         O,
-                                        k({}, e, {
+                                        y({}, e, {
                                             rewardSize: c,
-                                            classMix: y.reward,
+                                            classMix: k.reward,
                                             isDisable: g,
                                             isBattlePassRewardDisable: r && e.name === b.E4.BattlePassPoints,
                                         }),
@@ -2536,7 +2550,7 @@
                             ),
                         );
                     },
-                    M = (0, g.Pi)(() => {
+                    L = (0, g.Pi)(() => {
                         const e = v().model,
                             t = e.root.get(),
                             r = t.frontlineLevel,
@@ -2549,7 +2563,7 @@
                                 a().createElement(
                                     a().Fragment,
                                     { key: `${e.lvlStart}-${e.lvlEnd}` },
-                                    a().createElement(L, {
+                                    a().createElement(M, {
                                         levelsRange: e,
                                         frontlineLevel: r,
                                         isBattlePassComplete: n,
@@ -2600,7 +2614,7 @@
                             { text: R.strings.fl_rewards.title(), classMix: 'RewardsViewApp_pageTitle_61' },
                             a().createElement(I, { level: l, rewardsCount: o, frontlineState: c }),
                         ),
-                        a().createElement('div', { className: 'RewardsViewApp_table_32' }, a().createElement(M, null)),
+                        a().createElement('div', { className: 'RewardsViewApp_table_32' }, a().createElement(L, null)),
                         a().createElement(
                             'div',
                             { className: 'RewardsViewApp_claimButton_3d' },

@@ -1,0 +1,605 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.Currency_base_67 {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.Currency_base__small_32 {
+    padding-right: 20rem;
+}
+
+.Currency_base__big_fe {
+    padding-right: 28rem;
+}
+
+.Currency_base__left_40 {
+    padding-left: 20rem;
+    padding-right: 0;
+}
+
+.Currency_base__left_40.Currency_base__big_fe {
+    padding-left: 29rem;
+}
+
+.Currency_base__left_40.Currency_base__large_45 {
+    padding-left: 58rem;
+}
+
+.Currency_base__negative_a3 {
+    color: #ff2717;
+}
+
+.Currency_base__empty_df {
+    opacity: 0.5;
+}
+
+.Currency_icon_92 {
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.Currency_icon__noIcon_07 {
+    background: none;
+}
+
+.Currency_icon__small_6a {
+    width: 16rem;
+    height: 16rem;
+    margin-top: 2rem;
+}
+
+.Currency_icon__small_6a.Currency_icon__credits_bd {
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
+}
+
+.Currency_icon__small_6a.Currency_icon__gold_89 {
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon-1');
+}
+
+.Currency_icon__small_6a.Currency_icon__crystal_2c {
+    background-image: url('R.images.gui.maps.icons.library.CrystalIcon_1');
+}
+
+.Currency_icon__small_6a.Currency_icon__xp_3f {
+    background-image: url('R.images.gui.maps.icons.library.NormalXpIcon');
+}
+
+.Currency_icon__small_6a.Currency_icon__freeXp_ba {
+    background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
+}
+
+.Currency_icon__big_9d {
+    width: 24rem;
+    height: 24rem;
+    top: 60%;
+}
+
+.Currency_icon__big_9d.Currency_icon__credits_bd {
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_3');
+}
+
+.Currency_icon__big_9d.Currency_icon__crystal_2c {
+    background-image: url('R.images.gui.maps.icons.library.CrystalIcon24x24');
+}
+
+.Currency_icon__big_9d.Currency_icon__xp_3f {
+    background-image: url('R.images.gui.maps.icons.library.XpIconBig_2');
+}
+
+.Currency_icon__big_9d.Currency_icon__freeXp_ba {
+    background-image: url('R.images.gui.maps.icons.library.freeXPIconBig24x24');
+}
+
+.Currency_icon__large_72 {
+    width: 48rem;
+    height: 48rem;
+    top: 60%;
+}
+
+.Currency_icon__large_72.Currency_icon__credits_bd {
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_48x48');
+}
+
+.Currency_icon__large_72.Currency_icon__crystal_2c {
+    background-image: url('R.images.gui.maps.icons.library.crystal_48x48');
+}
+
+.Currency_icon__large_72.Currency_icon__xp_3f {
+    background-image: url('R.images.gui.maps.icons.library.XpIcon_48x48');
+}
+
+.Currency_icon__large_72.Currency_icon__freeXp_ba {
+    background-image: url('R.images.gui.maps.icons.library.freeXPIconBig24x24');
+}
+
+.Currency_icon__left_0b {
+    right: auto;
+    left: 0;
+}
+
+.Currency_base_57 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.Currency_icon_c5 {
+    --icon-height: 16rem;
+    --icon-width: var(--icon-height);
+    width: var(--icon-width);
+    height: var(--icon-height);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+.Currency_base__small_af .Currency_icon_c5,
+.Currency_base__big_bc .Currency_icon_c5,
+.Currency_base__large_65 .Currency_icon_c5,
+.Currency_base__extraLarge_4d .Currency_icon_c5 {
+    transform: translateY(3rem);
+}
+.Currency_icon__credits-small_9b {
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
+}
+.Currency_icon__credits-big_96 {
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
+}
+.Currency_icon__credits-large_ac {
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_silver');
+}
+.Currency_base__large_65 .Currency_icon__credits-large_ac {
+    transform: translateY(4rem);
+}
+.Currency_icon__credits-extraLarge_16 {
+    --icon-height: 80rem;
+    margin-right: -2rem;
+    background-image: url('R.images.gui.maps.icons.library.credits_icon_80x80');
+}
+.Currency_icon__gold-small_86 {
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
+}
+.Currency_base__small_af .Currency_icon__gold-small_86 {
+    transform: translateY(2rem);
+}
+.Currency_icon__gold-big_15 {
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
+}
+.Currency_base__big_bc .Currency_icon__gold-big_15 {
+    transform: translateY(4rem);
+}
+.Currency_icon__gold-large_36 {
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_gold');
+}
+.Currency_base__large_65 .Currency_icon__gold-large_36 {
+    transform: translateY(4rem);
+}
+.Currency_icon__gold-extraLarge_a0 {
+    --icon-height: 80rem;
+    background-image: url('R.images.gui.maps.icons.library.gold_icon_80x80');
+}
+.Currency_icon__crystal-small_27 {
+    background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
+}
+.Currency_base__small_af .Currency_icon__crystal-small_27 {
+    transform: translateY(2rem);
+}
+.Currency_icon__crystal-big_cd {
+    --icon-height: 22rem;
+    --icon-width: 23rem;
+    background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
+}
+.Currency_base__big_bc .Currency_icon__crystal-big_cd {
+    transform: translateY(4rem);
+}
+.Currency_icon__crystal-large_d3 {
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_bonds');
+}
+.Currency_icon__crystal-extraLarge_09 {
+    --icon-height: 80rem;
+    background-image: url('R.images.gui.maps.icons.library.crystal_80x80');
+}
+.Currency_base__extraLarge_4d .Currency_icon__crystal-extraLarge_09 {
+    transform: translateY(7rem);
+}
+.Currency_icon__xp-small_a7 {
+    background-image: url('R.images.gui.maps.icons.library.NormalXpIcon');
+}
+.Currency_base__small_af .Currency_icon__xp-small_a7 {
+    transform: translateY(1rem);
+}
+.Currency_icon__xp-big_97 {
+    --icon-height: 22rem;
+    --icon-width: 23rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
+}
+.Currency_base__big_bc .Currency_icon__xp-big_97 {
+    transform: translateY(2rem);
+}
+.Currency_icon__xp-large_6b {
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.exp');
+}
+.Currency_icon__xp-extraLarge_67 {
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.xp_tank_icon_80x80');
+}
+.Currency_icon__freeXP-small_ca {
+    background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
+}
+.Currency_base__small_af .Currency_icon__freeXP-small_ca {
+    transform: translateY(1rem);
+}
+.Currency_icon__freeXP-big_21 {
+    --icon-height: 24rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.freeXPIconBig24x24');
+}
+.Currency_icon__freeXP-large_c8 {
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.freeExp');
+}
+.Currency_icon__freeXP-extraLarge_58 {
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.free_xp_icon_80x80');
+}
+.Currency_base__extraLarge_4d .Currency_icon__freeXP-extraLarge_58 {
+    transform: translateY(4rem);
+}
+.Currency_icon__equipCoin-small_32 {
+    --icon-height: 16rem;
+    margin-right: -2rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoin_1');
+}
+.Currency_base__small_af .Currency_icon__equipCoin-small_32 {
+    transform: translateX(-1rem) translateY(1rem);
+}
+.Currency_icon__equipCoin-big_79 {
+    --icon-height: 24rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoinBig');
+}
+.Currency_base__big_bc .Currency_icon__equipCoin-big_79 {
+    transform: translateX(-5rem) translateY(3rem);
+}
+.Currency_icon__equipCoin-large_2c {
+    --icon-height: 48rem;
+    margin-right: 2rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.equipCoin');
+}
+.Currency_icon__equipCoin-extraLarge_8a {
+    --icon-height: 80rem;
+    margin-right: 8rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoin_icon_80x80');
+}
+.Currency_base__extraLarge_4d .Currency_icon__equipCoin-extraLarge_8a {
+    transform: translateX(2rem) translateY(4rem);
+}
+.Currency_value_e1 {
+    /* font-size inherit does not work here, so 1em means the size does not change */
+    /* stylelint-disable-next-line */
+    --font-size: 1em;
+    font-size: var(--font-size);
+    position: relative;
+    z-index: 2;
+}
+.Currency_base__small_af .Currency_value_e1 {
+    padding-right: 2rem;
+}
+.Currency_base__big_bc .Currency_value_e1 {
+    --font-size: 24rem;
+    padding-right: 5rem;
+    font-weight: 700;
+}
+.Currency_base__big_bc .Currency_value_e1 + .Currency_icon_c5 {
+    font-size: 24rem;
+}
+.Currency_base__large_65 .Currency_value_e1 {
+    --font-size: 36rem;
+    font-weight: 700;
+}
+.Currency_base__large_65 .Currency_value_e1 + .Currency_icon_c5 {
+    font-size: 36rem;
+}
+.Currency_base__extraLarge_4d .Currency_value_e1 {
+    --font-size: 56rem;
+    font-weight: 700;
+}
+.Currency_value__freeXP_cb {
+    color: #f2f2f7;
+}
+.Currency_value__credits_76 {
+    color: #ced9d9;
+}
+.Currency_value__gold_dd {
+    color: #ffc363;
+}
+.Currency_value__xp_b0,
+.Currency_value__crystal_19,
+.Currency_value__equipCoin_d0 {
+    color: #c9c9b6;
+}
+.Currency_base__small_af .Currency_value__notEnough_56 {
+    color: #ff2717;
+}
+.Currency_base__big_bc .Currency_value__notEnough_56 {
+    color: #b70000;
+}
+.Currency_base__large_65 .Currency_value__notEnough_56 {
+    color: #b70000;
+}
+.Currency_base__extraLarge_4d .Currency_value__notEnough_56 {
+    color: #b70000;
+}
+.Currency_stock_87 {
+    height: 13rem;
+    color: #ffdd99;
+    font-size: 13rem;
+    line-height: 1;
+    position: relative;
+    z-index: 0;
+    pointer-events: none;
+}
+.Currency_stock__indent_a1 {
+    margin-left: 2rem;
+}
+.Currency_base__small_af .Currency_stock_87 {
+    transform: translateY(0rem);
+}
+.Currency_base__big_bc .Currency_stock_87 {
+    transform: translateY(4rem);
+}
+.Currency_base__large_65 .Currency_stock_87 {
+    transform: translateY(10rem);
+}
+.Currency_base__extraLarge_4d .Currency_stock_87 {
+    transform: translateY(18rem);
+}
+.Currency_stock__interactive_93 {
+    pointer-events: auto;
+}
+.Currency_stockBackground_82 {
+    width: 80rem;
+    height: 45rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -27rem;
+    bottom: 0;
+    z-index: -1;
+    transform: translateY(17rem);
+}
+
+.ReportLine_base_d9 {
+    display: flex;
+    padding-bottom: 10rem;
+}
+
+.ReportLine_base__separated_c7 {
+    padding-top: 26rem;
+}
+
+.ReportLine_base__separated_c7.ReportLine_mediaExtraSmall_ec {
+    padding-top: 30rem;
+}
+
+.ReportLine_base__subtotal_b3,
+.ReportLine_base__total_d6 {
+    color: #ced9d9;
+    font-weight: 700;
+}
+
+.ReportLine_base__tooltip_c0 {
+    font-size: 14rem;
+    line-height: 17rem;
+}
+
+.ReportLine_base__total_d6 {
+    padding-top: 7rem;
+    font-size: 20rem;
+}
+
+.ReportLine_base__total_d6.ReportLine_base__tooltip_c0,
+.ReportLine_base__total_d6.ReportLine_mediaExtraSmall_ec {
+    font-size: 16rem;
+    line-height: 20rem;
+}
+
+.ReportLine_separator_b5 {
+    flex: 1;
+    align-self: flex-end;
+    margin: 0 5rem 1rem;
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.05);
+}
+
+.ReportLine_base__tooltip_c0 .ReportLine_separator_b5 {
+    height: 1rem;
+    border-bottom: 0;
+    background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.1) 33%,
+            rgba(255, 255, 255, 0) 33%,
+            rgba(255, 255, 255, 0)
+        )
+        0 0 / 3rem 1rem;
+}
+
+.ReportLine_label_75 {
+    display: flex;
+    flex: 0;
+    min-width: 0;
+}
+
+.ReportLine_label__zero_01 {
+    color: #ced9d9;
+    opacity: 0.4;
+}
+
+.ReportLine_factor_c5 {
+    margin-left: 3rem;
+}
+
+.ReportLine_factorText_f5 {
+    color: #fff;
+}
+
+.ReportLine_value_d5 {
+    color: #ced9d9;
+}
+
+.ReportLine_value__total_69 {
+    color: #f2f2f7;
+}
+
+.ReportLine_value__zero_48 {
+    opacity: 0.4;
+}
+
+.ReportLine_wrapper_ca {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ReportLine_wrapper__double_9d {
+    min-width: 79rem;
+}
+
+.TooltipContent_base_89 {
+    width: 358rem;
+    padding: 25rem 0 10rem;
+    font-size: 16rem;
+}
+
+.TooltipContent_title_02 {
+    display: flex;
+    align-items: center;
+    padding: 0 25rem 25rem;
+}
+
+.TooltipContent_titleIcon_02 {
+    width: 48rem;
+    height: 48rem;
+    background: no-repeat center / contain;
+}
+
+.TooltipContent_titleIcon__credits_7c {
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_48x48');
+}
+
+.TooltipContent_titleIcon__crystal_43 {
+    background-image: url('R.images.gui.maps.icons.library.crystal_48x48');
+}
+
+.TooltipContent_titleIcon__xp_f3 {
+    background-image: url('R.images.gui.maps.icons.library.XpIcon_48x48');
+}
+
+.TooltipContent_titleText_dc {
+    padding-left: 8rem;
+    color: #c9c9b6;
+    font-size: 24rem;
+    line-height: 1.2;
+}
+
+.TooltipContent_lineWrapper_54 {
+    width: 100%;
+    padding: 0 25rem;
+    position: relative;
+}
+
+.TooltipContent_lineWrapper__footer_bc {
+    margin-top: 10rem;
+    padding-top: 15rem;
+    opacity: 0.7;
+}
+
+.TooltipContent_lineWrapper__premium_e9 {
+    padding-left: 45rem;
+}
+
+.TooltipContent_lineWrapper__premiumFooter_75 {
+    padding-left: 66rem;
+}
+
+.TooltipContent_iconPremiumSmall_c6 {
+    width: 16rem;
+    height: 16rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 7rem;
+    left: 25rem;
+}
+
+.TooltipContent_iconPremiumSmall__basic_f8 {
+    background-image: url('R.images.gui.maps.icons.postbattle.premium_icon.premium_basic_16x16');
+}
+
+.TooltipContent_iconPremiumSmall__plus_35 {
+    background-image: url('R.images.gui.maps.icons.postbattle.premium_icon.premium_plus_16x16');
+}
+
+.TooltipContent_accountTitle_36 {
+    margin-bottom: 4rem;
+    font-size: 13rem;
+    line-height: 17rem;
+}
+
+.TooltipContent_accountTitle__premium_9a {
+    color: #cbac77;
+}
+
+.TooltipContent_accountTitle__noPremium_4f {
+    color: #8c8c7e;
+}
+
+.TooltipContent_footerLip_bf {
+    width: 358rem;
+    height: 80rem;
+    background: url('R.images.gui.maps.icons.postbattle.finance_details_tooltip.bg_footer_lip') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.TooltipContent_footerIconPremium_61 {
+    width: 32rem;
+    height: 32rem;
+    background: url('R.images.gui.maps.icons.postbattle.premium_icon.premium_40x40') no-repeat center / contain;
+    position: absolute;
+    top: 20rem;
+    left: 25rem;
+}
+
+body {
+    margin: 0;
+    color: #8c8c7e;
+    font-size: 14rem;
+    line-height: 18rem;
+}

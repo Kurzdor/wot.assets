@@ -72,7 +72,7 @@
                         pxToRem: () => S,
                         remToPx: () => N,
                         resize: () => x,
-                        sendEvent: () => b,
+                        sendEvent: () => p,
                         setAnimateWindow: () => U,
                         setEventHandled: () => I,
                         setInputPaddingsRem: () => f,
@@ -182,9 +182,9 @@
                     v = ['args'];
                 const g = 2,
                     w = 16,
-                    h = 32,
-                    m = 64,
-                    p = (u, e) => {
+                    m = 32,
+                    b = 64,
+                    h = (u, e) => {
                         const F = 'GFViewEventProxy';
                         if (void 0 !== e) {
                             const E = e.args,
@@ -220,15 +220,15 @@
                         return viewEnv.handleViewEvent({ __Type: F, type: u });
                         var A;
                     },
-                    b = {
+                    p = {
                         close(u) {
-                            p('popover' === u ? g : h);
+                            h('popover' === u ? g : m);
                         },
                         minimize() {
-                            p(m);
+                            h(b);
                         },
                         move(u) {
-                            p(w, { isMouseEvent: !0, on: u });
+                            h(w, { isMouseEvent: !0, on: u });
                         },
                     };
                 function y(u) {
@@ -661,11 +661,11 @@
                     w = (u, e) => {
                         u.keyCode === B.n.ESCAPE && e();
                     };
-                var h = F(7572);
-                const m = E.instance,
-                    p = {
+                var m = F(7572);
+                const b = E.instance,
+                    h = {
                         DataTracker: n.Z,
-                        ViewModel: h.Z,
+                        ViewModel: m.Z,
                         ViewEventType: i,
                         NumberFormatType: D,
                         RealFormatType: _,
@@ -741,11 +741,11 @@
                                 }
                             return F;
                         },
-                        ClickOutsideManager: m,
+                        ClickOutsideManager: b,
                         SystemLocale: t,
                         UserLocale: r,
                     };
-                window.ViewEnvHelper = p;
+                window.ViewEnvHelper = h;
             },
             3137: (u, e, F) => {
                 F(329).V2.credits;
@@ -757,17 +757,15 @@
                     t = F.n(n),
                     r = F(329),
                     i = F(4179);
-                class D extends E().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = i.B3.GOLD;
-                        else u = i.B3.INTEGRAL;
-                        const e = i.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                D.defaultProps = { format: 'integral' };
-                const _ = {
+                const D = ({ format: u, value: e }) => {
+                        const F = ((u, e = 'integral') => {
+                            let F;
+                            F = 'gold' === e ? i.B3.GOLD : i.B3.INTEGRAL;
+                            return void 0 === u ? '' : i.Z5.getNumberFormat(u, F);
+                        })(e, u);
+                        return F ? E().createElement('span', null, F) : null;
+                    },
+                    _ = {
                         base: 'Currency_base_57',
                         icon: 'Currency_icon_c5',
                         base__small: 'Currency_base__small_af',

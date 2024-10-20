@@ -2742,7 +2742,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     cursor: pointer;
 }
 
-.mediaLargeWidth .ExperienceStepper_btn_00 {
+.ExperienceStepper_btn__scaled_53 {
     background-size: 200% 400%;
 }
 

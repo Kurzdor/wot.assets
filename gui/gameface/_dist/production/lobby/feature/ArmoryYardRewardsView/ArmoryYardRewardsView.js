@@ -795,7 +795,7 @@
                     };
                 window.ViewEnvHelper = w;
             },
-            6044: (u, e, t) => {
+            2588: (u, e, t) => {
                 'use strict';
                 var r = t(6179),
                     a = t.n(r);
@@ -1303,67 +1303,74 @@
                 function tu(u, e) {
                     return Array.isArray(u) ? u.map(e) : u.map((u, t, r) => e(null == u ? void 0 : u.value, t, r));
                 }
-                class ru extends a().PureComponent {
-                    render() {
-                        let u;
-                        u = 'gold' === this.props.format ? X.B3.GOLD : X.B3.INTEGRAL;
-                        const e = X.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
+                const ru = ({ format: u, value: e }) => {
+                    const t = ((u, e = 'integral') => {
+                        let t;
+                        return (
+                            (t = 'gold' === e ? X.B3.GOLD : X.B3.INTEGRAL),
+                            void 0 === u ? '' : X.Z5.getNumberFormat(u, t)
+                        );
+                    })(e, u);
+                    return t ? a().createElement('span', null, t) : null;
+                };
                 let au, nu, iu, su, ou, lu, Eu;
-                (ru.defaultProps = { format: 'integral' }),
-                    (function (u) {
-                        (u.Items = 'items'),
-                            (u.Equipment = 'equipment'),
-                            (u.Xp = 'xp'),
-                            (u.XpFactor = 'xpFactor'),
-                            (u.Blueprints = 'blueprints'),
-                            (u.BlueprintsAny = 'blueprintsAny'),
-                            (u.Goodies = 'goodies'),
-                            (u.Berths = 'berths'),
-                            (u.Slots = 'slots'),
-                            (u.Tokens = 'tokens'),
-                            (u.CrewSkins = 'crewSkins'),
-                            (u.CrewBooks = 'crewBooks'),
-                            (u.Customizations = 'customizations'),
-                            (u.CreditsFactor = 'creditsFactor'),
-                            (u.Currency = 'currency'),
-                            (u.TankmenXp = 'tankmenXP'),
-                            (u.TankmenXpFactor = 'tankmenXPFactor'),
-                            (u.FreeXpFactor = 'freeXPFactor'),
-                            (u.BattleToken = 'battleToken'),
-                            (u.PremiumUniversal = 'premium_universal'),
-                            (u.Gold = 'gold'),
-                            (u.Credits = 'credits'),
-                            (u.Crystal = 'crystal'),
-                            (u.FreeXp = 'freeXP'),
-                            (u.Premium = 'premium'),
-                            (u.PremiumPlus = 'premium_plus'),
-                            (u.BattlePassPoints = 'battlePassPoints'),
-                            (u.BattlePassSelectToken = 'battlePassSelectToken'),
-                            (u.StyleProgressToken = 'styleProgressToken'),
-                            (u.TmanToken = 'tmanToken'),
-                            (u.NaturalCover = 'naturalCover'),
-                            (u.BpCoin = 'bpcoin'),
-                            (u.BattlaPassFinalAchievement = 'dossier_achievement'),
-                            (u.BattleBadge = 'dossier_badge'),
-                            (u.NewYearAlbumsAccess = 'newYearAlbumsAccess'),
-                            (u.NewYearFillers = 'ny22Fillers'),
-                            (u.NewYearInvoice = 'newYearInvoice'),
-                            (u.NewYearToyFragments = 'ny22ToyFragments'),
-                            (u.NewYearSlot = 'newYearSlot'),
-                            (u.BonusX5 = 'battle_bonus_x5'),
-                            (u.CrewBonusX3 = 'crew_bonus_x3'),
-                            (u.Vehicles = 'vehicles'),
-                            (u.EpicSelectToken = 'epicSelectToken'),
-                            (u.CollectionItem = 'collectionItem'),
-                            (u.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
-                            (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
-                            (u.BattleBoosterGift = 'battleBooster_gift'),
-                            (u.CosmicLootboxSilver = 'lootBoxToken'),
-                            (u.CosmicLootboxCommon = 'cosmic_2024_2');
-                    })(au || (au = {})),
+                !(function (u) {
+                    (u.Items = 'items'),
+                        (u.Equipment = 'equipment'),
+                        (u.Xp = 'xp'),
+                        (u.XpFactor = 'xpFactor'),
+                        (u.Blueprints = 'blueprints'),
+                        (u.BlueprintsAny = 'blueprintsAny'),
+                        (u.Goodies = 'goodies'),
+                        (u.Berths = 'berths'),
+                        (u.Slots = 'slots'),
+                        (u.Tokens = 'tokens'),
+                        (u.CrewSkins = 'crewSkins'),
+                        (u.CrewBooks = 'crewBooks'),
+                        (u.Customizations = 'customizations'),
+                        (u.CreditsFactor = 'creditsFactor'),
+                        (u.Currency = 'currency'),
+                        (u.TankmenXp = 'tankmenXP'),
+                        (u.TankmenXpFactor = 'tankmenXPFactor'),
+                        (u.FreeXpFactor = 'freeXPFactor'),
+                        (u.BattleToken = 'battleToken'),
+                        (u.PremiumUniversal = 'premium_universal'),
+                        (u.Gold = 'gold'),
+                        (u.Credits = 'credits'),
+                        (u.Crystal = 'crystal'),
+                        (u.FreeXp = 'freeXP'),
+                        (u.Premium = 'premium'),
+                        (u.PremiumPlus = 'premium_plus'),
+                        (u.BattlePassPoints = 'battlePassPoints'),
+                        (u.BattlePassSelectToken = 'battlePassSelectToken'),
+                        (u.SelectableBonus = 'selectableBonus'),
+                        (u.StyleProgressToken = 'styleProgressToken'),
+                        (u.TmanToken = 'tmanToken'),
+                        (u.NaturalCover = 'naturalCover'),
+                        (u.BpCoin = 'bpcoin'),
+                        (u.BattlaPassFinalAchievement = 'dossier_achievement'),
+                        (u.BattleBadge = 'dossier_badge'),
+                        (u.NewYearAlbumsAccess = 'newYearAlbumsAccess'),
+                        (u.NewYearFillers = 'ny22Fillers'),
+                        (u.NewYearInvoice = 'newYearInvoice'),
+                        (u.NewYearToyFragments = 'ny22ToyFragments'),
+                        (u.NewYearSlot = 'newYearSlot'),
+                        (u.BonusX5 = 'battle_bonus_x5'),
+                        (u.CrewBonusX3 = 'crew_bonus_x3'),
+                        (u.Vehicles = 'vehicles'),
+                        (u.EpicSelectToken = 'epicSelectToken'),
+                        (u.CollectionItem = 'collectionItem'),
+                        (u.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
+                        (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
+                        (u.BattleBoosterGift = 'battleBooster_gift'),
+                        (u.CosmicLootboxSilver = 'lootBoxToken'),
+                        (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (u.WtStamp = 'stamp'),
+                        (u.WtHunter = 'wt_hunter'),
+                        (u.WtHunterCollection = 'hunter_collection'),
+                        (u.WtTicket = 'wtevent_ticket'),
+                        (u.WtMainPrizeDiscount = 'main_prize_discount');
+                })(au || (au = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
                             (u.Credits = 'credits'),
@@ -1491,6 +1498,12 @@
                         au.BattleBoosterGift,
                         au.CosmicLootboxCommon,
                         au.CosmicLootboxSilver,
+                        au.SelectableBonus,
+                        au.WtStamp,
+                        au.WtTicket,
+                        au.WtMainPrizeDiscount,
+                        au.WtHunter,
+                        au.WtHunterCollection,
                     ],
                     Au = [au.Gold, au.Credits, au.Crystal, au.FreeXp],
                     _u = [au.BattlePassPoints],
@@ -1577,6 +1590,7 @@
                                         case 'groups':
                                         case 'tmanToken':
                                         case 'battlePassSelectToken':
+                                        case 'selectableBonus':
                                             return `R.images.gui.maps.icons.quests.bonuses.${e}.${n}`;
                                         case 'crewBooks':
                                             return `R.images.gui.maps.icons.crewBooks.books.${e}.${n}`;
@@ -3338,15 +3352,19 @@
                         const u = pu(),
                             e = u.model,
                             t = u.controls,
-                            n = e.computes.getFooterShowDelay(),
-                            i = e.computes.getIsShopWithVehicle();
-                        var s;
-                        (s = t.close), j(W.n.ESCAPE, s);
-                        const o = (0, q.useSpring)({
+                            n = (0, r.useState)(!0),
+                            i = n[0],
+                            s = n[1],
+                            o = e.computes.getFooterShowDelay(),
+                            l = e.computes.getIsShopWithVehicle();
+                        var E;
+                        (E = t.close), j(W.n.ESCAPE, E);
+                        const c = (0, q.useSpring)({
                             from: { opacity: 0, transform: 'translateY(20rem)' },
                             to: { opacity: 1, transform: 'translateY(0)' },
-                            delay: n + 900,
+                            delay: o + 900,
                             config: { duration: z, easing: Y },
+                            onRest: () => s(!1),
                         });
                         return (
                             (0, r.useEffect)(() => {
@@ -3358,12 +3376,12 @@
                                 a().createElement('div', { className: 'App_vignette_ea' }),
                                 a().createElement(
                                     'div',
-                                    { className: C()('App_header_f2', i && 'App_header__withVehicle_e1') },
-                                    i ? a().createElement(We, null) : a().createElement(ke, null),
+                                    { className: C()('App_header_f2', l && 'App_header__withVehicle_e1') },
+                                    l ? a().createElement(We, null) : a().createElement(ke, null),
                                 ),
                                 a().createElement(
                                     'div',
-                                    { className: C()('App_content_e6', i && 'App_content__withVehicle_36') },
+                                    { className: C()('App_content_e6', l && 'App_content__withVehicle_36') },
                                     a().createElement(ue, null),
                                 ),
                                 a().createElement(G, {
@@ -3375,7 +3393,14 @@
                                 }),
                                 a().createElement(
                                     q.animated.div,
-                                    { className: C()('App_footer_95', i && 'App_footer__withVehicle_1a'), style: o },
+                                    {
+                                        className: C()(
+                                            'App_footer_95',
+                                            l && 'App_footer__withVehicle_1a',
+                                            i && 'App_footer__disabled_98',
+                                        ),
+                                        style: c,
+                                    },
                                     a().createElement(Pe, null),
                                 ),
                             )
@@ -3634,6 +3659,6 @@
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             t.forEach(e.bind(null, 0)), (t.push = e.bind(null, t.push.bind(t)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [503], () => __webpack_require__(6044));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [503], () => __webpack_require__(2588));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

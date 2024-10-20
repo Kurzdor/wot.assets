@@ -2435,17 +2435,18 @@
                                 justifyContent: pu.Center,
                             }),
                         );
-                    });
-                class Vu extends n().PureComponent {
-                    render() {
-                        let u;
-                        u = 'gold' === this.props.format ? q.B3.GOLD : q.B3.INTEGRAL;
-                        const e = q.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                Vu.defaultProps = { format: 'integral' };
-                const Gu = (0, r.memo)(({ icon: u, value: e, name: t }) => {
+                    }),
+                    Vu = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            return (
+                                (t = 'gold' === e ? q.B3.GOLD : q.B3.INTEGRAL),
+                                void 0 === u ? '' : q.Z5.getNumberFormat(u, t)
+                            );
+                        })(e, u);
+                        return t ? n().createElement('span', null, t) : null;
+                    },
+                    Gu = (0, r.memo)(({ icon: u, value: e, name: t }) => {
                         const r =
                             w().mediaSize >= p.Medium
                                 ? R.images.story_mode.gui.maps.icons.battleResult.icons.large.$dyn(u)

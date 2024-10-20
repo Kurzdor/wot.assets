@@ -2,7 +2,7 @@
     'use strict';
     var __webpack_modules__ = {
             67: (u, e, t) => {
-                t.d(e, { O: () => X });
+                t.d(e, { O: () => z });
                 var n = {};
                 t.r(n), t.d(n, { mouse: () => c, onResize: () => E });
                 var r = {};
@@ -53,7 +53,7 @@
                         setEventHandled: () => G,
                         setInputPaddingsRem: () => R,
                         setSidePaddingsRem: () => O,
-                        whenTutorialReady: () => z,
+                        whenTutorialReady: () => W,
                     });
                 const E = i('clientResized'),
                     A = { down: i('mousedown'), up: i('mouseup'), move: i('mousemove') };
@@ -271,13 +271,13 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    z = Promise.all([
+                    W = Promise.all([
                         new Promise((u) => {
                             window.isDomBuilt ? u() : C.onDomBuilt(u);
                         }),
                         engine.whenReady,
                     ]),
-                    X = { view: s, client: r };
+                    z = { view: s, client: r };
             },
             358: (u, e, t) => {
                 t.d(e, { Z: () => o });
@@ -1117,6 +1117,7 @@
                         (u.PremiumPlus = 'premium_plus'),
                         (u.BattlePassPoints = 'battlePassPoints'),
                         (u.BattlePassSelectToken = 'battlePassSelectToken'),
+                        (u.SelectableBonus = 'selectableBonus'),
                         (u.StyleProgressToken = 'styleProgressToken'),
                         (u.TmanToken = 'tmanToken'),
                         (u.NaturalCover = 'naturalCover'),
@@ -1137,7 +1138,12 @@
                         (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.CosmicLootboxSilver = 'lootBoxToken'),
-                        (u.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (u.WtStamp = 'stamp'),
+                        (u.WtHunter = 'wt_hunter'),
+                        (u.WtHunterCollection = 'hunter_collection'),
+                        (u.WtTicket = 'wtevent_ticket'),
+                        (u.WtMainPrizeDiscount = 'main_prize_discount');
                 })(I || (I = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1266,7 +1272,7 @@
                         return t;
                     });
                 }
-                const z = (u, e, t = {}, n = 0) => {
+                const W = (u, e, t = {}, n = 0) => {
                         viewEnv.handleViewEvent(
                             Object.assign(
                                 {
@@ -1280,7 +1286,7 @@
                             ),
                         );
                     },
-                    X = (u) => {
+                    z = (u) => {
                         let e = u.children,
                             t = u.contentId,
                             n = u.args,
@@ -1331,7 +1337,7 @@
                             ),
                             w = (0, s.useCallback)(() => {
                                 (g.current.isVisible && g.current.timeoutId) ||
-                                    (z(t, _, { isMouseEvent: !0, on: !0, arguments: $(n) }, b),
+                                    (W(t, _, { isMouseEvent: !0, on: !0, arguments: $(n) }, b),
                                     m && m(),
                                     (g.current.isVisible = !0));
                             }, [t, _, n, b, m]),
@@ -1339,7 +1345,7 @@
                                 if (g.current.isVisible || g.current.timeoutId) {
                                     const u = g.current.timeoutId;
                                     u > 0 && (clearTimeout(u), (g.current.timeoutId = 0)),
-                                        z(t, _, { on: !1 }, b),
+                                        W(t, _, { on: !1 }, b),
                                         g.current.isVisible && p && p(),
                                         (g.current.isVisible = !1);
                                 }
@@ -1405,9 +1411,9 @@
                         var T;
                     },
                     H = ['children'];
-                function W() {
+                function X() {
                     return (
-                        (W =
+                        (X =
                             Object.assign ||
                             function (u) {
                                 for (var e = 1; e < arguments.length; e++) {
@@ -1416,7 +1422,7 @@
                                 }
                                 return u;
                             }),
-                        W.apply(this, arguments)
+                        X.apply(this, arguments)
                     );
                 }
                 const K = (u) => {
@@ -1431,8 +1437,8 @@
                                 return r;
                             })(u, H);
                         return i().createElement(
-                            X,
-                            W(
+                            z,
+                            X(
                                 {
                                     contentId:
                                         R.views.common.tooltip_window.backport_tooltip_content.BackportTooltipContent(
@@ -1483,7 +1489,7 @@
                             return u;
                         }, [o, t, n, r, a]);
                         return i().createElement(
-                            X,
+                            z,
                             Z(
                                 {
                                     contentId:
@@ -1513,27 +1519,25 @@
                     );
                 }
                 const tu = ({ children: u, tooltipArgs: e, className: t }) => {
-                    if (!e) return u;
-                    const n = i().createElement('div', { className: t }, u);
-                    if (e.header || e.body) return i().createElement(uu, e, n);
-                    const r = e.contentId,
-                        o = e.args,
-                        s = null == o ? void 0 : o.contentId;
-                    return r || s
-                        ? i().createElement(X, eu({}, e, { contentId: r || s }), n)
-                        : i().createElement(K, e, n);
-                };
-                class nu extends i().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = V.B3.GOLD;
-                        else u = V.B3.INTEGRAL;
-                        const e = V.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                nu.defaultProps = { format: 'integral' };
-                const ru = [
+                        if (!e) return u;
+                        const n = i().createElement('div', { className: t }, u);
+                        if (e.header || e.body) return i().createElement(uu, e, n);
+                        const r = e.contentId,
+                            o = e.args,
+                            s = null == o ? void 0 : o.contentId;
+                        return r || s
+                            ? i().createElement(z, eu({}, e, { contentId: r || s }), n)
+                            : i().createElement(K, e, n);
+                    },
+                    nu = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? V.B3.GOLD : V.B3.INTEGRAL;
+                            return void 0 === u ? '' : V.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? i().createElement('span', null, t) : null;
+                    },
+                    ru = [
                         I.Items,
                         I.Equipment,
                         I.Xp,
@@ -1568,6 +1572,12 @@
                         I.BattleBoosterGift,
                         I.CosmicLootboxCommon,
                         I.CosmicLootboxSilver,
+                        I.SelectableBonus,
+                        I.WtStamp,
+                        I.WtTicket,
+                        I.WtMainPrizeDiscount,
+                        I.WtHunter,
+                        I.WtHunterCollection,
                     ],
                     ou = [I.Gold, I.Credits, I.Crystal, I.FreeXp],
                     su = [I.BattlePassPoints],
@@ -1633,6 +1643,7 @@
                             case 'groups':
                             case 'tmanToken':
                             case 'battlePassSelectToken':
+                            case 'selectableBonus':
                                 return `R.images.gui.maps.icons.quests.bonuses.${e}.${o}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${e}.${o}`;

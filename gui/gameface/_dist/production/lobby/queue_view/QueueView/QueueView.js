@@ -151,7 +151,7 @@
             7641: (u, e, t) => {
                 t.r(e),
                     t.d(e, {
-                        addModelObserver: () => F,
+                        addModelObserver: () => o,
                         addPreloadTexture: () => E,
                         children: () => r,
                         displayStatus: () => n.W,
@@ -160,7 +160,7 @@
                         extraSize: () => f,
                         forceTriggerMouseMove: () => w,
                         freezeTextureBeforeResize: () => B,
-                        getBrowserTexturePath: () => o,
+                        getBrowserTexturePath: () => F,
                         getDisplayStatus: () => p,
                         getScale: () => d,
                         getSize: () => l,
@@ -187,10 +187,10 @@
                 function A(u) {
                     viewEnv.setHitAreaPaddingsRem(u, u, u, u, 15);
                 }
-                function o(u, e, t, r = 1) {
+                function F(u, e, t, r = 1) {
                     return viewEnv.getWebBrowserTexturePath(u, e, t, r);
                 }
-                function F(u, e, t) {
+                function o(u, e, t) {
                     return viewEnv.addDataChangedCallback(u, e, t);
                 }
                 function s(u) {
@@ -489,7 +489,7 @@
                 const __WEBPACK_DEFAULT_EXPORT__ = ViewModel;
             },
             4179: (u, e, t) => {
-                t.d(e, { B3: () => F, Z5: () => i, ry: () => m });
+                t.d(e, { B3: () => o, Z5: () => i, ry: () => m });
                 class r {
                     constructor() {
                         (this.entries = []),
@@ -544,16 +544,16 @@
                         getTimeString: (u, e, t) => userLocale.getTimeString(u, e, void 0 === t || t),
                     };
                 let A;
-                var o;
-                ((o = A || (A = {}))[(o.UNDEFINED = 0)] = 'UNDEFINED'),
-                    (o[(o.TOOLTIP = 1)] = 'TOOLTIP'),
-                    (o[(o.POP_OVER = 2)] = 'POP_OVER'),
-                    (o[(o.CONTEXT_MENU = 4)] = 'CONTEXT_MENU'),
-                    (o[(o.DROP_DOWN = 8)] = 'DROP_DOWN'),
-                    (o[(o.MOVE = 16)] = 'MOVE'),
-                    (o[(o.CLOSE = 32)] = 'CLOSE'),
-                    (o[(o.MINIMIZE = 64)] = 'MINIMIZE');
-                const F = Object.freeze({ INTEGRAL: 0, GOLD: 1 }),
+                var F;
+                ((F = A || (A = {}))[(F.UNDEFINED = 0)] = 'UNDEFINED'),
+                    (F[(F.TOOLTIP = 1)] = 'TOOLTIP'),
+                    (F[(F.POP_OVER = 2)] = 'POP_OVER'),
+                    (F[(F.CONTEXT_MENU = 4)] = 'CONTEXT_MENU'),
+                    (F[(F.DROP_DOWN = 8)] = 'DROP_DOWN'),
+                    (F[(F.MOVE = 16)] = 'MOVE'),
+                    (F[(F.CLOSE = 32)] = 'CLOSE'),
+                    (F[(F.MINIMIZE = 64)] = 'MINIMIZE');
+                const o = Object.freeze({ INTEGRAL: 0, GOLD: 1 }),
                     s = Object.freeze({ FRACTIONAL: 0, WO_ZERO_DIGITS: 1 }),
                     l = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1 }),
                     c = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1, YEAR_MONTH: 2 });
@@ -647,7 +647,7 @@
                         DataTracker: a.Z,
                         ViewModel: w.Z,
                         ViewEventType: A,
-                        NumberFormatType: F,
+                        NumberFormatType: o,
                         RealFormatType: s,
                         TimeFormatType: l,
                         DateFormatType: c,
@@ -661,13 +661,13 @@
                         sendShowPopOverEvent: (u, e, t, r, n = R.invalid('resId'), a) => {
                             const i = B.O.view.getViewGlobalPosition(),
                                 E = t.getBoundingClientRect(),
-                                o = E.x,
-                                F = E.y,
+                                F = E.x,
+                                o = E.y,
                                 s = E.width,
                                 l = E.height,
                                 c = {
-                                    x: B.O.view.pxToRem(o) + i.x,
-                                    y: B.O.view.pxToRem(F) + i.y,
+                                    x: B.O.view.pxToRem(F) + i.x,
+                                    y: B.O.view.pxToRem(o) + i.y,
                                     width: B.O.view.pxToRem(s),
                                     height: B.O.view.pxToRem(l),
                                 };
@@ -743,14 +743,14 @@
                             : null
                         : u;
                 var A = t(3138);
-                const o = {
+                const F = {
                     extraLarge: { weight: 4, width: 2560, height: 1440 },
                     large: { weight: 3, width: 1920, height: 1080 },
                     medium: { weight: 2, width: 1600, height: 900 },
                     small: { weight: 1, width: 1366, height: 768 },
                     extraSmall: { weight: 0, width: 1024, height: 768 },
                 };
-                var F;
+                var o;
                 function s(u, e, t) {
                     const r = (function (u, e) {
                             switch (!0) {
@@ -815,11 +815,11 @@
                         (u.mediumHeight = 'mediumHeight'),
                         (u.smallHeight = 'smallHeight'),
                         (u.extraSmallHeight = 'extraSmallHeight');
-                })(F || (F = {}));
+                })(o || (o = {}));
                 const l = A.O.client.getSize('rem'),
                     c = l.width,
                     D = l.height,
-                    B = Object.assign({ width: c, height: D }, s(c, D, o)),
+                    B = Object.assign({ width: c, height: D }, s(c, D, F)),
                     d = (0, r.createContext)(B),
                     C = ['children'],
                     _ = (u) => {
@@ -837,8 +837,8 @@
                             a = n.extraLarge,
                             i = n.large,
                             A = n.medium,
-                            o = n.small,
-                            F = n.extraSmall,
+                            F = n.small,
+                            o = n.extraSmall,
                             s = n.extraLargeWidth,
                             l = n.largeWidth,
                             c = n.mediumWidth,
@@ -854,8 +854,8 @@
                             if (t.extraLarge && a) return e;
                             if (t.large && i) return e;
                             if (t.medium && A) return e;
-                            if (t.small && o) return e;
-                            if (t.extraSmall && F) return e;
+                            if (t.small && F) return e;
+                            if (t.extraSmall && o) return e;
                         } else {
                             if (t.extraLargeWidth && s) return E(e, t, w);
                             if (t.largeWidth && l) return E(e, t, w);
@@ -907,7 +907,7 @@
                         E = (0, r.useCallback)((u, e) => {
                             const t = A.O.view.pxToRem(u),
                                 r = A.O.view.pxToRem(e);
-                            i(Object.assign({ width: t, height: r }, s(t, r, o)));
+                            i(Object.assign({ width: t, height: r }, s(t, r, F)));
                         }, []);
                     ((u) => {
                         const e = (0, r.useRef)(!1);
@@ -916,8 +916,8 @@
                         engine.on('clientResized', E);
                     }),
                         (0, r.useEffect)(() => () => engine.off('clientResized', E), [E]);
-                    const F = (0, r.useMemo)(() => Object.assign({}, a), [a]);
-                    return n().createElement(d.Provider, { value: F }, u);
+                    const o = (0, r.useMemo)(() => Object.assign({}, a), [a]);
+                    return n().createElement(d.Provider, { value: o }, u);
                 }),
                     (function (u) {
                         (u[(u.left = 0)] = 'left'), (u[(u.right = 1)] = 'right');
@@ -936,14 +936,14 @@
                                 .source,
                         'gum',
                     );
-                const h = Object.keys(F).reduce((u, e) => {
-                        const t = `media__${F[e]}`;
+                const h = Object.keys(o).reduce((u, e) => {
+                        const t = `media__${o[e]}`;
                         return (u[t] = t), u;
                     }, {}),
                     g = ({ children: u, className: e }) => {
                         const t = (function (u, e, t) {
                             const n = (0, r.useContext)(d);
-                            let a = Object.entries(n).filter(([u, e]) => !0 === e && u in F);
+                            let a = Object.entries(n).filter(([u, e]) => !0 === e && u in o);
                             return ['media'].reduce((u, t) => {
                                 const r = a.map((u) =>
                                     i()(
@@ -1012,10 +1012,10 @@
                         refreshRate: i = 1,
                         onFinish: E,
                         targetTime: A,
-                        useTimeUpdateHook: o = x,
-                        isCountUp: F = !1,
+                        useTimeUpdateHook: F = x,
+                        isCountUp: o = !1,
                     }) => {
-                        const s = o(a, i, A, E, F),
+                        const s = F(a, i, A, E, o),
                             l = Math.abs(s) < 3600 ? t : e;
                         return n().createElement(
                             'span',
@@ -1036,19 +1036,20 @@
                                 return r ? `-${A}` : A;
                             })(l, s, r),
                         );
+                    },
+                    y = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            return (
+                                (t = 'gold' === e ? f.B3.GOLD : f.B3.INTEGRAL),
+                                void 0 === u ? '' : f.Z5.getNumberFormat(u, t)
+                            );
+                        })(e, u);
+                        return t ? n().createElement('span', null, t) : null;
                     };
-                class y extends n().PureComponent {
-                    render() {
-                        let u;
-                        u = 'gold' === this.props.format ? f.B3.GOLD : f.B3.INTEGRAL;
-                        const e = f.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
                 function S(u) {
                     engine.call('PlaySound', u);
                 }
-                y.defaultProps = { format: 'integral' };
                 const T = {
                     playHighlight() {
                         S('highlight');
@@ -1078,8 +1079,8 @@
                     W = () => (u, e) => {
                         const t = (0, r.createContext)({});
                         return [
-                            function ({ mode: a = 'real', options: i, children: E, mocks: o }) {
-                                const F = (0, r.useRef)([]),
+                            function ({ mode: a = 'real', options: i, children: E, mocks: F }) {
+                                const o = (0, r.useRef)([]),
                                     s = (t, r, n) => {
                                         var a;
                                         const i = (function ({
@@ -1115,8 +1116,8 @@
                                                 return {
                                                     subscribe: (t, a) => {
                                                         const E = 'string' == typeof a ? `${r}.${a}` : r,
-                                                            o = A.O.view.addModelObserver(E, e, !0);
-                                                        return n.set(o, t), u && t(i(a)), o;
+                                                            F = A.O.view.addModelObserver(E, e, !0);
+                                                        return n.set(F, t), u && t(i(a)), F;
                                                     },
                                                     readByPath: i,
                                                     createCallback: (u, e) => {
@@ -1195,16 +1196,16 @@
                                                                   ? a
                                                                   : () => {},
                                                       }),
-                                            o = (u) =>
+                                            F = (u) =>
                                                 'mocks' === t ? (null == n ? void 0 : n.getter(u)) : E.readByPath(u),
-                                            s = (u) => F.current.push(u),
+                                            s = (u) => o.current.push(u),
                                             l = u({
                                                 mode: t,
-                                                readByPath: o,
+                                                readByPath: F,
                                                 externalModel: E,
                                                 observableModel: {
                                                     array: (u, e) => {
-                                                        const r = null != e ? e : o(u),
+                                                        const r = null != e ? e : F(u),
                                                             n = P.observable.box(r, { equals: N });
                                                         return (
                                                             'real' === t &&
@@ -1216,7 +1217,7 @@
                                                         );
                                                     },
                                                     object: (u, e) => {
-                                                        const r = null != e ? e : o(u),
+                                                        const r = null != e ? e : F(u),
                                                             n = P.observable.box(r, { equals: N });
                                                         return (
                                                             'real' === t &&
@@ -1228,7 +1229,7 @@
                                                         );
                                                     },
                                                     primitives: (u, e) => {
-                                                        const r = o(e);
+                                                        const r = F(e);
                                                         if (Array.isArray(u)) {
                                                             const n = u.reduce(
                                                                 (u, e) => ((u[e] = P.observable.box(r[e], {})), u),
@@ -1285,19 +1286,19 @@
                                     c = (0, r.useState)(a),
                                     D = c[0],
                                     B = c[1],
-                                    d = (0, r.useState)(() => s(a, i, o)),
+                                    d = (0, r.useState)(() => s(a, i, F)),
                                     C = d[0],
                                     _ = d[1];
                                 return (
                                     (0, r.useEffect)(() => {
-                                        l.current ? _(s(D, i, o)) : (l.current = !0);
-                                    }, [o, D, i]),
+                                        l.current ? _(s(D, i, F)) : (l.current = !0);
+                                    }, [F, D, i]),
                                     (0, r.useEffect)(() => {
                                         B(a);
                                     }, [a]),
                                     (0, r.useEffect)(
                                         () => () => {
-                                            C.externalModel.dispose(), F.current.forEach((u) => u());
+                                            C.externalModel.dispose(), o.current.forEach((u) => u());
                                         },
                                         [C],
                                     ),
@@ -1622,11 +1623,11 @@
                         A = 0;
                     if (a.some((e) => 0 !== u[e])) {
                         for (r in i) __webpack_require__.o(i, r) && (__webpack_require__.m[r] = i[r]);
-                        if (E) var o = E(__webpack_require__);
+                        if (E) var F = E(__webpack_require__);
                     }
                     for (e && e(t); A < a.length; A++)
                         (n = a[A]), __webpack_require__.o(u, n) && u[n] && u[n][0](), (u[n] = 0);
-                    return __webpack_require__.O(o);
+                    return __webpack_require__.O(F);
                 },
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             t.forEach(e.bind(null, 0)), (t.push = e.bind(null, t.push.bind(t)));

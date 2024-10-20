@@ -2737,25 +2737,23 @@
                             (e.ExtraLarge = 'extraLarge');
                     })(fu || (fu = {}));
                 const bu = {
-                    base: 'Achievement_base_1a',
-                    image: 'Achievement_image_09',
-                    base__small: 'Achievement_base__small_c8',
-                    base__medium: 'Achievement_base__medium_e1',
-                    base__large: 'Achievement_base__large_1d',
-                    base__extraLarge: 'Achievement_base__extraLarge_1b',
-                    counter: 'Achievement_counter_97',
-                };
-                class pu extends i().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = re.B3.GOLD;
-                        else e = re.B3.INTEGRAL;
-                        const u = re.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                pu.defaultProps = { format: 'integral' };
-                const wu = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'],
+                        base: 'Achievement_base_1a',
+                        image: 'Achievement_image_09',
+                        base__small: 'Achievement_base__small_c8',
+                        base__medium: 'Achievement_base__medium_e1',
+                        base__large: 'Achievement_base__large_1d',
+                        base__extraLarge: 'Achievement_base__extraLarge_1b',
+                        counter: 'Achievement_counter_97',
+                    },
+                    pu = ({ format: e, value: u }) => {
+                        const t = ((e, u = 'integral') => {
+                            let t;
+                            t = 'gold' === u ? re.B3.GOLD : re.B3.INTEGRAL;
+                            return void 0 === e ? '' : re.Z5.getNumberFormat(e, t);
+                        })(u, e);
+                        return t ? i().createElement('span', null, t) : null;
+                    },
+                    wu = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'],
                     Su = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1e3];
                 const xu = ['ko', 'no'].includes(R.strings.settings.LANGUAGE_CODE()),
                     yu = (e) =>

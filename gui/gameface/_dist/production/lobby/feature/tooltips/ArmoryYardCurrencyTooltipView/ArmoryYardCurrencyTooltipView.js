@@ -2029,7 +2029,7 @@
                                 F().createElement(
                                     'div',
                                     { className: 'App_gainTitle_a2' },
-                                    F().createElement(Fu, { text: n.title() }),
+                                    F().createElement(Fu, { text: fu.gain.title() }),
                                 ),
                                 F().createElement(Cu, {
                                     text: fu.gain.description(),
@@ -2039,7 +2039,7 @@
                             ),
                             F().createElement(Cu, {
                                 classMix: 'App_availabilityPeriod_22',
-                                text: d ? n.availabilityPeriodShort() : n.availabilityPeriod(),
+                                text: d ? fu.availabilityPeriodShort() : fu.availabilityPeriod(),
                                 binding: {
                                     startDay: D,
                                     startMonth: o,

@@ -146,6 +146,12 @@ html {
     top: 0;
     left: 0;
 }
+.Content_icon_ab {
+    width: 76rem;
+    height: 76rem;
+    margin: -30rem auto -25rem;
+    background: url('R.images.gui.maps.icons.mapbox.progression.mode') no-repeat center / contain;
+}
 .Content_title_a9 {
     margin-top: -6rem;
     color: #ffffff;

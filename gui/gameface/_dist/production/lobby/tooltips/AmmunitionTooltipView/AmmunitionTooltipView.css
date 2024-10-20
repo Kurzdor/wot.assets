@@ -1,0 +1,106 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Content_base_d2 {
+    display: flex;
+    flex-direction: column;
+    width: 400rem;
+    padding-top: 14rem;
+    background-image: linear-gradient(
+        180deg,
+        rgba(51, 51, 41, 0.3) 0%,
+        transparent 16%,
+        transparent 88%,
+        rgba(51, 51, 41, 0.1) 100%
+    );
+}
+
+.Content_base__hasAnimation_13 {
+    width: 416rem;
+}
+.Content_icon_89 {
+    width: 48rem;
+    height: 48rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 17rem;
+    left: 22rem;
+}
+.Content_title_20 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 4rem;
+    padding: 0 22rem 0 75rem;
+}
+.Content_description_71 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 25rem;
+    padding: 0 22rem 0 75rem;
+}
+.Content_base__hasAnimation_13 .Content_description_71 {
+    margin-bottom: 14rem;
+}
+.Content_animation_e0 {
+    width: 100%;
+    height: 240rem;
+}
+.Content_textWrapper_11 {
+    display: flex;
+    flex-direction: column;
+    padding: 15rem 22rem 13rem;
+}
+.Content_textWrapper__hasGradient_ef {
+    padding: 14rem 22rem 16rem 75rem;
+    background-image: linear-gradient(
+        270deg,
+        transparent 0%,
+        rgba(255, 255, 230, 0.1) 38%,
+        rgba(255, 255, 230, 0.1) 65%,
+        transparent 100%
+    );
+}
+.Content_additionalTextWrapper_a3 {
+    display: flex;
+    flex-direction: column;
+    padding: 11rem 22rem 18rem;
+    background-image: linear-gradient(
+        270deg,
+        transparent 0%,
+        rgba(255, 255, 230, 0.1) 38%,
+        rgba(255, 255, 230, 0.1) 65%,
+        transparent 100%
+    );
+}
+.Content_subtitle_12 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 4rem;
+}
+.Content_text_19 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}

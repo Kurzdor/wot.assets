@@ -1,0 +1,187 @@
+.App_base_66 {
+    width: 168rem;
+    height: 138rem;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.App_base__extended_3f {
+    width: 265rem;
+    height: 250rem;
+}
+
+.App_title_aa {
+    color: #ffffff;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+}
+
+.App_base__extended_3f .App_title_aa {
+    color: #ffffff;
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 8rem;
+}
+
+.App_subtitle_46 {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.App_subtitle__light_62 {
+    color: #e9e2bf;
+}
+
+.App_subtitle__broadcast_b2 {
+    color: #e9e2bf;
+}
+
+.App_base__extended_3f .App_subtitle_46 {
+    color: #ffdd99;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 8rem;
+}
+
+.App_base__extended_3f .App_subtitle__light_62 {
+    color: #e9e2bf;
+}
+
+.App_base__extended_3f .App_subtitle__broadcast_b2 {
+    color: #e9e2bf;
+}
+
+.App_timerText_9c {
+    position: relative;
+    top: -2rem;
+}
+
+.App_externalLink_79 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.battle_royale.gui.maps.icons.tournamentWidget.external') no-repeat center / cover;
+    opacity: 0.3;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.App_base_66:hover .App_externalLink_79 {
+    opacity: 1;
+}
+
+.App_base__extended_3f .App_externalLink_79 {
+    top: 35rem;
+    right: 15rem;
+}
+
+.App_timer_3b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 24rem;
+    padding-left: 24rem;
+    color: #ffdd99;
+    text-shadow:
+        0 0 15rem #e52,
+        0 0 8rem #ff2a00,
+        0 0 4rem rgba(255, 127, 0, 0.25);
+    position: relative;
+}
+
+.App_timerIcon_98 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.battleRoyale.banner.lockStatus') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.App_background_7f {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
+}
+
+.App_background__first_d4 {
+    background: url('R.images.battle_royale.gui.maps.icons.tournamentWidget.background.c_168x138.layer1') no-repeat
+        center top / contain;
+}
+
+.App_base__extended_3f .App_background__first_d4 {
+    background: url('R.images.battle_royale.gui.maps.icons.tournamentWidget.background.c_265x250.layer1') no-repeat
+        center top / contain;
+}
+
+.App_background__second_7d {
+    background: url('R.images.battle_royale.gui.maps.icons.tournamentWidget.background.c_168x138.layer2') no-repeat
+        center top / contain;
+    transform: translateY(5rem);
+}
+
+.App_base__extended_3f .App_background__second_7d {
+    background: url('R.images.battle_royale.gui.maps.icons.tournamentWidget.background.c_265x250.layer2') no-repeat
+        center top / contain;
+    transform: translateY(10rem);
+}
+
+.App_base_66:hover .App_background__second_7d {
+    transform: translateY(0rem);
+}
+
+.App_background__third_99 {
+    background: url('R.images.battle_royale.gui.maps.icons.tournamentWidget.background.c_168x138.layer3') no-repeat
+        center top / contain;
+}
+
+.App_base__extended_3f .App_background__third_99 {
+    background: url('R.images.battle_royale.gui.maps.icons.tournamentWidget.background.c_265x250.layer3') no-repeat
+        center top / contain;
+}
+
+.App_base__extended_3f .App_background_7f {
+    top: 25rem;
+}
+
+.App_content_ad {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    width: 168rem;
+    height: 138rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.App_base__extended_3f .App_content_ad {
+    width: 265rem;
+    height: 250rem;
+}
+
+.App_particlesContainer_d2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}

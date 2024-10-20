@@ -1,0 +1,1557 @@
+.AnimationControls_base_c8 {
+    display: flex;
+    align-items: center;
+    height: 74rem;
+    position: absolute;
+    bottom: 0;
+    left: 15rem;
+    z-index: 10;
+}
+.AnimationControls_icon_03 {
+    width: 50rem;
+    height: 50rem;
+    background: url('R.images.event_lootboxes.gui.maps.openBox.icon_hide_video') no-repeat center / 150%;
+    mix-blend-mode: screen;
+    cursor: pointer;
+}
+.AnimationControls_base__disabled_86 .AnimationControls_icon_03 {
+    background-image: url('R.images.event_lootboxes.gui.maps.openBox.icon_show_video');
+}
+.AnimationControls_glow_f3 {
+    width: 40rem;
+    height: 50rem;
+    background: url('R.images.event_lootboxes.gui.maps.openBox.icon_video_glow') no-repeat center / cover;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 5rem;
+    transform: translateY(-50%);
+    transition: opacity 0.16s;
+}
+.AnimationControls_base_c8:hover .AnimationControls_glow_f3 {
+    opacity: 1;
+}
+.AnimationControls_text_95 {
+    color: #ffdd99;
+    font-size: 12rem;
+    line-height: 14rem;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+    transition: color 0.16s;
+    cursor: pointer;
+}
+.AnimationControls_base_c8:hover .AnimationControls_text_95 {
+    color: #fffa9f;
+}
+.AnimationControls_base_c8:active .AnimationControls_text_95 {
+    color: #fd9;
+}
+
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+.TextButton_icon__forward_59 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
+.TextButton_icon__close_53 {
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
+.TextButton_icon__info_33 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_glow_a4 {
+    opacity: 0;
+}
+.TextButton_caption_82 {
+    position: relative;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
+}
+.TextButton_caption__back_b9,
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
+.TextButton_caption__info_23 {
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+    margin-left: 8rem;
+}
+.TextButton_base__right_39 .TextButton_goto_e7 {
+    margin-right: 8rem;
+}
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity 0.16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+    left: -4rem;
+}
+.TextButton_base__right_39 .TextButton_shine_e2 {
+    right: -4rem;
+    transform: rotate(180deg);
+}
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_shine_e2 {
+    opacity: 0;
+}
+
+.CloseBtn_base_0e {
+    position: absolute;
+    top: 40rem;
+    right: 40rem;
+    z-index: 10;
+}
+
+@keyframes AnimationVideo_bright_29 {
+    from {
+        filter: brightness(1);
+    }
+
+    to {
+        filter: brightness(1.2);
+    }
+}
+
+@keyframes AnimationVideo_raysAppearance_15 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes AnimationVideo_rotate_18 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes AnimationVideo_fadeIn_1b {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes AnimationVideo_fadeOut_ce {
+    0% {
+        filter: blur(1px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.AnimationVideo_base_92 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.AnimationVideo_base__wide_c2 {
+    background: #03060e;
+}
+
+.AnimationVideo_wrapper_ba {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1920rem;
+    height: 100%;
+    position: relative;
+}
+
+.AnimationVideo_imageBackground_1b,
+.AnimationVideo_video_14 {
+    height: 100%;
+}
+
+.AnimationVideo_imageBackground_1b {
+    background: url('R.images.event_lootboxes.gui.maps.openBox.animated_box_prem') no-repeat center / 100%;
+    animation: AnimationVideo_fadeIn_1b 0.35s ease-in-out forwards;
+}
+
+.AnimationVideo_fadeCornerEffect_f9 {
+    background: radial-gradient(ellipse at center, transparent 0%, rgba(3, 6, 14, 0.4) 70%, rgba(3, 6, 14, 0.9) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.AnimationVideo_fadeCornerEffect__wide_bf {
+    background: radial-gradient(ellipse at center, transparent 0%, rgba(3, 6, 14, 1) 80%);
+}
+
+@keyframes BuyWidget_bright_eb {
+    from {
+        filter: brightness(1);
+    }
+
+    to {
+        filter: brightness(1.2);
+    }
+}
+
+@keyframes BuyWidget_raysAppearance_12 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes BuyWidget_rotate_4f {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes BuyWidget_fadeIn_0b {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes BuyWidget_fadeOut_12 {
+    0% {
+        filter: blur(1px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.BuyWidget_base_0e {
+    width: 160rem;
+    height: 124rem;
+    position: absolute;
+    right: 10rem;
+    bottom: 25rem;
+    cursor: pointer;
+}
+
+.BuyWidget_wrapper_fc {
+    width: 100%;
+    height: 102rem;
+    position: relative;
+}
+
+.BuyWidget_icon_a4 {
+    background: url('R.images.event_lootboxes.gui.maps.openBox.boxIcon') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.BuyWidget_iconHover_f3 {
+    background: url('R.images.event_lootboxes.gui.maps.openBox.boxIconHover') no-repeat center / cover;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity linear 0.2s;
+}
+
+.BuyWidget_wrapper_fc:hover .BuyWidget_iconHover_f3 {
+    opacity: 1;
+}
+
+.BuyWidget_buyLabel_2a {
+    color: #ffdd99;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-shadow:
+        0 0 4rem rgba(255, 127, 0, 0.25),
+        0 0 8rem #ff2a00,
+        0 0 15rem #e52;
+    position: absolute;
+    bottom: 0;
+}
+
+.BuyWidget_buyIcon_70 {
+    width: 40rem;
+    height: 40rem;
+    margin-left: -9rem;
+    margin-right: -15rem;
+    background: url('R.images.event_lootboxes.gui.maps.openBox.buyIcon') no-repeat center / cover;
+}
+
+@keyframes CongratulationRewardItem_bright_43 {
+    from {
+        filter: brightness(1);
+    }
+
+    to {
+        filter: brightness(1.2);
+    }
+}
+
+@keyframes CongratulationRewardItem_raysAppearance_49 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes CongratulationRewardItem_rotate_d4 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes CongratulationRewardItem_fadeIn_92 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes CongratulationRewardItem_fadeOut_fe {
+    0% {
+        filter: blur(1px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.CongratulationRewardItem_base_28 {
+    width: 232rem;
+    height: 174rem;
+    position: relative;
+    animation: CongratulationRewardItem_fadeIn_92 0.35s ease-in-out forwards;
+}
+
+.mediaSmall .CongratulationRewardItem_base_28 {
+    width: 296rem;
+    height: 222rem;
+}
+
+.mediaLarge .CongratulationRewardItem_base_28 {
+    width: 400rem;
+    height: 300rem;
+}
+
+.CongratulationRewardItem_base__additional_7b {
+    width: 78rem;
+    height: 78rem;
+    margin: -5rem;
+}
+
+.mediaSmall .CongratulationRewardItem_base__additional_7b {
+    width: 78rem;
+    height: 78rem;
+}
+
+.mediaMedium .CongratulationRewardItem_base__additional_7b {
+    width: 80rem;
+    height: 80rem;
+    margin: 10rem;
+}
+
+.CongratulationRewardItem_base__additional__x2_89 {
+    margin: 10rem;
+}
+
+.CongratulationRewardItem_base__extraSmall_e8 {
+    margin: -15rem;
+}
+
+.CongratulationRewardItem_base__hidden_70 {
+    display: none;
+}
+
+.CongratulationRewardItem_iconWrapper_61 {
+    width: 100%;
+    height: 100%;
+}
+
+.CongratulationRewardItem_icon_bc {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.CongratulationRewardItem_base__additional_7b .CongratulationRewardItem_icon_bc {
+    width: 78rem;
+    height: 78rem;
+    background-size: auto;
+}
+
+.CongratulationRewardItem_base__additional__x2_89 .CongratulationRewardItem_icon_bc {
+    background-size: cover;
+}
+
+.CongratulationRewardItem_overlay_56 {
+    width: 355rem;
+    height: 317rem;
+    background: no-repeat center / 100%;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.mediaSmall .CongratulationRewardItem_overlay_56 {
+    top: 60%;
+    left: 50%;
+}
+
+.mediaMedium .CongratulationRewardItem_overlay_56 {
+    width: 473rem;
+    height: 422.5rem;
+    top: 55%;
+    left: 55%;
+}
+
+.mediaLarge .CongratulationRewardItem_overlay_56 {
+    top: 60%;
+    left: 50%;
+}
+
+.CongratulationRewardItem_overlay_56 .CongratulationRewardItem_base__small_f5,
+.CongratulationRewardItem_base__extraSmall_e8 .CongratulationRewardItem_overlay_56 {
+    width: 274.5rem;
+    height: 245rem;
+}
+
+.mediaMedium .CongratulationRewardItem_overlay_56 .CongratulationRewardItem_base__small_f5,
+.mediaMedium .CongratulationRewardItem_base__extraSmall_e8 .CongratulationRewardItem_overlay_56 {
+    width: 355rem;
+    height: 317rem;
+}
+
+.CongratulationRewardItem_count_04 {
+    color: #e9e2bf;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 15rem;
+    bottom: 0;
+}
+
+.mediaLarge .CongratulationRewardItem_count_04 {
+    right: 29rem;
+    bottom: 26rem;
+}
+
+.CongratulationRewardItem_base__additional_7b .CongratulationRewardItem_count_04 {
+    font-size: 14rem;
+    right: 4rem;
+    bottom: 5rem;
+}
+
+.mediaMedium .CongratulationRewardItem_base__additional_7b .CongratulationRewardItem_count_04 {
+    right: -5rem;
+    bottom: -5rem;
+}
+
+.CongratulationRewardItem_base__additional_7b .CongratulationRewardItem_count__equipCoin_9b,
+.CongratulationRewardItem_base__additional_7b .CongratulationRewardItem_count__freeXP_1c,
+.CongratulationRewardItem_base__additional_7b .CongratulationRewardItem_count__credits_b1,
+.CongratulationRewardItem_base__additional_7b .CongratulationRewardItem_count__gold_36 {
+    right: 50%;
+    bottom: 5rem;
+    transform: translateX(50%);
+}
+
+.mediaMedium .CongratulationRewardItem_base__additional_7b .CongratulationRewardItem_count__equipCoin_9b,
+.mediaMedium .CongratulationRewardItem_base__additional_7b .CongratulationRewardItem_count__freeXP_1c,
+.mediaMedium .CongratulationRewardItem_base__additional_7b .CongratulationRewardItem_count__credits_b1,
+.mediaMedium .CongratulationRewardItem_base__additional_7b .CongratulationRewardItem_count__gold_36 {
+    right: 50%;
+    bottom: -10rem;
+    transform: translateX(50%);
+}
+
+.CongratulationRewardItem_base__additional__x2_89 .CongratulationRewardItem_count_04 {
+    right: -5rem;
+    bottom: -5rem;
+}
+
+.CongratulationRewardItem_base__additional__x2_89 .CongratulationRewardItem_count__equipCoin_9b,
+.CongratulationRewardItem_base__additional__x2_89 .CongratulationRewardItem_count__freeXP_1c,
+.CongratulationRewardItem_base__additional__x2_89 .CongratulationRewardItem_count__credits_b1,
+.CongratulationRewardItem_base__additional__x2_89 .CongratulationRewardItem_count__gold_36 {
+    right: 50%;
+    bottom: -10rem;
+    transform: translateX(50%);
+}
+
+.CongratulationRewardItem_base__compensation_b3 .CongratulationRewardItem_count_04,
+.CongratulationRewardItem_count__equipCoin_9b,
+.CongratulationRewardItem_count__freeXP_1c,
+.CongratulationRewardItem_count__credits_b1,
+.CongratulationRewardItem_count__gold_36 {
+    right: 50%;
+    bottom: 0;
+    transform: translateX(50%);
+}
+
+.mediaMedium .CongratulationRewardItem_base__compensation_b3 .CongratulationRewardItem_count_04,
+.mediaMedium .CongratulationRewardItem_count__equipCoin_9b,
+.mediaMedium .CongratulationRewardItem_count__freeXP_1c,
+.mediaMedium .CongratulationRewardItem_count__credits_b1,
+.mediaMedium .CongratulationRewardItem_count__gold_36 {
+    right: 50%;
+    bottom: 0;
+}
+
+.CongratulationRewardItem_base__small_f5
+    .CongratulationRewardItem_base__compensation_b3
+    .CongratulationRewardItem_count_04,
+.CongratulationRewardItem_base__extraSmall_e8
+    .CongratulationRewardItem_base__compensation_b3
+    .CongratulationRewardItem_count_04,
+.CongratulationRewardItem_base__small_f5 .CongratulationRewardItem_count__equipCoin_9b,
+.CongratulationRewardItem_base__extraSmall_e8 .CongratulationRewardItem_count__equipCoin_9b,
+.CongratulationRewardItem_base__small_f5 .CongratulationRewardItem_count__freeXP_1c,
+.CongratulationRewardItem_base__extraSmall_e8 .CongratulationRewardItem_count__freeXP_1c,
+.CongratulationRewardItem_base__small_f5 .CongratulationRewardItem_count__credits_b1,
+.CongratulationRewardItem_base__extraSmall_e8 .CongratulationRewardItem_count__credits_b1,
+.CongratulationRewardItem_base__small_f5 .CongratulationRewardItem_count__gold_36,
+.CongratulationRewardItem_base__extraSmall_e8 .CongratulationRewardItem_count__gold_36 {
+    font-size: 22rem;
+}
+
+.CongratulationRewardItem_count__credits_b1 {
+    color: #ced9d9;
+}
+
+.CongratulationRewardItem_count__gold_36 {
+    color: #ffc363;
+}
+
+.CongratulationRewardItem_countPrefix_c3 {
+    font-size: 22rem;
+}
+
+.CongratulationRewardItem_base__additional_7b .CongratulationRewardItem_countPrefix_c3 {
+    font-size: 12rem;
+}
+
+.CongratulationRewardItem_compensationIcon_00 {
+    width: 40rem;
+    height: 40rem;
+    background: url('R.images.event_lootboxes.gui.maps.openBox.compensation') no-repeat center / 100%;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+}
+
+.mediaMedium .CongratulationRewardItem_compensationIcon_00 {
+    width: 48rem;
+    height: 48rem;
+}
+
+.CongratulationVehicleHeader_base_fb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: -20rem;
+}
+
+.CongratulationVehicleHeader_level_3d,
+.CongratulationVehicleHeader_name_05 {
+    color: #f2f2f7;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.CongratulationVehicleHeader_type_58 {
+    width: 28rem;
+    height: 28rem;
+    margin: 0 8rem;
+    background: no-repeat center / 170%;
+}
+
+.CongratulationVehicleItem_base_ee {
+    width: 400rem;
+    height: 300rem;
+    position: relative;
+}
+.mediaLarge .CongratulationVehicleItem_base_ee {
+    width: 600rem;
+    height: 450rem;
+}
+
+.CongratulationVehicleItem_icon_1c {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    overflow: hidden;
+}
+
+@keyframes CongratulationRewards_bright_77 {
+    from {
+        filter: brightness(1);
+    }
+
+    to {
+        filter: brightness(1.2);
+    }
+}
+
+@keyframes CongratulationRewards_raysAppearance_cc {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes CongratulationRewards_rotate_c7 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes CongratulationRewards_fadeIn_c6 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes CongratulationRewards_fadeOut_5e {
+    0% {
+        filter: blur(1px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.CongratulationRewards_base_f5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920rem;
+    height: 300rem;
+    opacity: 0;
+    animation: CongratulationRewards_fadeIn_c6 0.35s ease-in-out forwards;
+}
+
+.mediaLarge .CongratulationRewards_base_f5 {
+    height: 450rem;
+}
+
+.CongratulationRewards_base__hasVehicle_be {
+    justify-content: flex-start;
+}
+
+.CongratulationRewards_base__visible_17 {
+    animation: CongratulationRewards_fadeIn_c6 0.35s ease-in-out forwards;
+}
+
+.CongratulationRewards_vehicleWrap_01 {
+    margin-top: -45rem;
+}
+
+.mediaMedium .CongratulationRewards_vehicleWrap_01 {
+    margin-top: -75rem;
+}
+
+.mediaLarge .CongratulationRewards_vehicleWrap_01 {
+    margin-top: -80rem;
+}
+
+.mediaExtraLarge .CongratulationRewards_vehicleWrap_01 {
+    margin-top: -110rem;
+}
+
+.CongratulationRewards_vehicleInfo_37 {
+    margin: 10rem 0;
+    color: #e9e2bf;
+    font-size: 18rem;
+    line-height: 21rem;
+}
+
+.mediaMedium .CongratulationRewards_vehicleInfo_37 {
+    margin-top: 15rem;
+    font-size: 20rem;
+}
+
+.mediaLarge .CongratulationRewards_vehicleInfo_37 {
+    margin-top: 20rem;
+}
+
+.CongratulationRewards_rewardsWrap_61 {
+    display: flex;
+    max-width: 100%;
+    margin-bottom: 10rem;
+}
+
+.mediaLarge .CongratulationRewards_rewardsWrap_61 {
+    margin-bottom: 80rem;
+}
+
+.CButton_base_40 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.6);
+    position: relative;
+    cursor: pointer;
+}
+
+.CButton_base__main_42,
+.CButton_base__primary_7f,
+.CButton_base__primaryGreen_6f,
+.CButton_base__primaryRed_ec,
+.CButton_base__secondary_50 {
+    background-size: 100% 100%;
+}
+
+.CButton_base__main_42 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_main');
+}
+
+.CButton_base__primary_7f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+
+.CButton_base__primaryGreen_6f {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+
+.CButton_base__primaryRed_ec {
+    background-image: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+
+.CButton_base__secondary_50 {
+    background-image: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+
+.CButton_base__ghost_ed {
+    border-radius: 3rem;
+    box-shadow:
+        0 0 0 1rem rgba(0, 0, 0, 0.3),
+        0 0 0 1rem rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.CButton_base__extraSmall_27 {
+    min-height: 17rem;
+    padding: 0 16rem;
+}
+
+.CButton_base__small_df,
+.CButton_base__medium_74 {
+    padding: 0 20rem;
+}
+
+.CButton_base__small_df {
+    min-height: 18rem;
+}
+
+.CButton_base__medium_74 {
+    min-height: 32rem;
+}
+
+.CButton_base__large_5c {
+    min-height: 48rem;
+}
+
+.CButton_base__disabled_d9 {
+    cursor: default;
+}
+/* Element .back and background-image in element .base need for fix bug in GF https://jira.wargaming.net/browse/WOTD-158525
+The bug is that under certain conditions, when using border-image, stripes appear. Strip is a single-pixel gap
+between 'border-image-width' and 'fill'.
+This bug is reproduced in Google Chrome 81.0.4044.113
+*/
+.CButton_back_e5 {
+    border-image-slice: 4 fill;
+    border-image-width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_base__main_42 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_main');
+}
+.CButton_base__primary_7f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary');
+}
+.CButton_base__primaryGreen_6f .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_green');
+}
+.CButton_base__primaryRed_ec .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_primary_red');
+}
+.CButton_base__secondary_50 .CButton_back_e5 {
+    border-image-source: url('R.images.gui.maps.icons.components.button.back_secondary');
+}
+.CButton_texture_fe {
+    background: url('R.images.gui.maps.icons.components.button.standard_texture_file');
+    background-size: 155rem 31rem;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_state_11 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: box-shadow 0.16s ease-in-out;
+}
+.CButton_base__focus_83 .CButton_state_11 {
+    border-radius: 2rem;
+    box-shadow: inset 0 0 2rem 1rem rgba(255, 85, 0, 0.2);
+}
+.CButton_stateHighlightHover_ff,
+.CButton_stateHighlightActive_35,
+.CButton_stateDisabled_54 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.CButton_stateHighlightHover_ff {
+    background-image: linear-gradient(
+        180deg,
+        rgba(252, 248, 235, 0.25) 0%,
+        rgba(252, 248, 235, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0;
+}
+.CButton_base_40:hover .CButton_stateHighlightHover_ff {
+    opacity: 1;
+}
+.CButton_base_40:active .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__disabled_d9:hover .CButton_stateHighlightHover_ff {
+    opacity: 0;
+}
+.CButton_base__ghost_ed .CButton_stateHighlightHover_ff {
+    box-shadow: 0 15rem 12rem 0 rgba(242, 242, 230, 0.11) inset;
+    background-color: rgba(8, 6, 0, 0.18);
+    background-image: none;
+}
+.CButton_stateHighlightActive_35 {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 100%);
+    opacity: 0;
+}
+.CButton_base__highlightActive_b2 .CButton_stateHighlightActive_35 {
+    opacity: 1;
+}
+.CButton_stateDisabled_54 {
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: url('R.images.gui.maps.icons.components.button.texture_disable');
+    background-size: 15rem 15rem;
+    visibility: hidden;
+}
+.CButton_base__disabled_d9 .CButton_stateDisabled_54 {
+    visibility: inherit;
+}
+.CButton_content_cc {
+    display: flex;
+    align-items: center;
+    color: #f2f2e6;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 -1rem 1rem #000;
+    letter-spacing: 0.03em;
+    transform: translateY(-1rem);
+}
+.CButton_content_cc[lang='ja'],
+.CButton_content_cc[lang='ko'],
+.CButton_content_cc[lang='zh_tw'],
+.CButton_content_cc[lang='zh_sg'],
+.CButton_content_cc[lang='zh_cn'],
+.CButton_content_cc[lang='th'] {
+    font-weight: 400;
+}
+.CButton_base__main_42 .CButton_content_cc,
+.CButton_base__primaryRed_ec .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #600;
+}
+.CButton_base__secondary_50 .CButton_content_cc {
+    color: rgba(254, 254, 236, 0.75);
+}
+.CButton_base__primaryGreen_6f .CButton_content_cc {
+    text-shadow: 0 -1rem 1rem #1c2502;
+}
+.CButton_base__extraSmall_27 .CButton_content_cc {
+    font-size: 12rem;
+}
+.CButton_base__small_df .CButton_content_cc {
+    font-size: 14rem;
+}
+.CButton_base__medium_74 .CButton_content_cc {
+    font-size: 15rem;
+}
+.CButton_base__large_5c .CButton_content_cc {
+    font-size: 18rem;
+}
+.CButton_base__disabled_d9 .CButton_content_cc {
+    opacity: 0.6;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes CongratulationRewardsControls_bright_99 {
+    from {
+        filter: brightness(1);
+    }
+
+    to {
+        filter: brightness(1.2);
+    }
+}
+
+@keyframes CongratulationRewardsControls_raysAppearance_9d {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes CongratulationRewardsControls_rotate_2e {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes CongratulationRewardsControls_fadeIn_29 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes CongratulationRewardsControls_fadeOut_41 {
+    0% {
+        filter: blur(1px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.CongratulationRewardsControls_base_1c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CongratulationRewardsControls_btnWrapper_bf {
+    display: flex;
+}
+
+.CongratulationRewardsControls_boxCountBlock_f1 {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    margin-top: 14rem;
+}
+
+.CongratulationRewardsControls_boxCount_0e {
+    color: #cbac77;
+}
+
+.CongratulationRewardsControls_cButton_f4 {
+    width: 190rem;
+    margin: 0 10rem;
+}
+
+.CongratulationRewardsControls_mainRewardInfo_68 {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 22rem;
+}
+
+.CongratulationRewardsControls_mainRewardCount_65 {
+    color: #ffffff;
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: -10rem;
+    text-shadow: 0 0 16rem #ffa800;
+    position: relative;
+    pointer-events: none;
+}
+
+.CongratulationRewardsControls_mainRewardShine_73 {
+    width: 400rem;
+    height: 300rem;
+    margin: -140rem -190rem;
+    background: url('R.images.event_lootboxes.gui.maps.openBox.shine') no-repeat center / cover;
+    opacity: 0;
+    mix-blend-mode: additive;
+    position: absolute;
+    transform: translateY(8rem);
+}
+
+.CongratulationRewardsControls_mainRewardShine__visible_61 {
+    animation: CongratulationRewardsControls_fadeIn_29 0.35s ease-in-out forwards 0.5s;
+}
+
+.CongratulationRewardsControls_infoIcon_7e {
+    width: 16rem;
+    height: 16rem;
+    margin-left: 4rem;
+    background: url('R.images.event_lootboxes.gui.maps.openBox.info') no-repeat center / cover;
+}
+
+@keyframes CongratulationRibbon_bright_ba {
+    from {
+        filter: brightness(1);
+    }
+
+    to {
+        filter: brightness(1.2);
+    }
+}
+
+@keyframes CongratulationRibbon_raysAppearance_0a {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes CongratulationRibbon_rotate_b8 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes CongratulationRibbon_fadeIn_54 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes CongratulationRibbon_fadeOut_93 {
+    0% {
+        filter: blur(1px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.CongratulationRibbon_base_89 {
+    width: 100%;
+    height: 376rem;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: CongratulationRibbon_fadeIn_54 0.5s ease-in-out forwards;
+}
+
+.mediaMedium .CongratulationRibbon_base_89 {
+    height: 417rem;
+    transform: translateY(-40%);
+}
+
+.mediaLarge .CongratulationRibbon_base_89 {
+    height: 500rem;
+}
+
+.CongratulationRibbon_ribbon_f1 {
+    width: 100%;
+    min-width: 1366rem;
+    height: 100%;
+    background: url('R.images.event_lootboxes.gui.maps.openBox.premium_ribbon_small') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, 50rem);
+}
+
+.mediaMedium .CongratulationRibbon_ribbon_f1 {
+    background-image: url('R.images.event_lootboxes.gui.maps.openBox.premium_ribbon_medium');
+}
+
+.mediaLarge .CongratulationRibbon_ribbon_f1 {
+    background-image: url('R.images.event_lootboxes.gui.maps.openBox.premium_ribbon');
+}
+
+.CongratulationRibbon_animationWrap_5b {
+    width: 600rem;
+    height: 600rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -24%);
+    pointer-events: none;
+}
+
+.mediaMedium .CongratulationRibbon_animationWrap_5b {
+    width: 800rem;
+    height: 800rem;
+    transform: translate(-50%, -31%);
+}
+
+.mediaLarge .CongratulationRibbon_animationWrap_5b {
+    width: 1000rem;
+    height: 900rem;
+    transform: translate(-50%, -33%);
+}
+
+.CongratulationRibbon_rays_56 {
+    width: 200%;
+    height: 200%;
+    background: url('R.images.event_lootboxes.gui.maps.openBox.lines') no-repeat center center / contain;
+    opacity: 0;
+    mix-blend-mode: additive;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    animation-name: CongratulationRibbon_raysAppearance_0a, CongratulationRibbon_rotate_b8;
+    animation-duration: 1.5s, 120s;
+    animation-fill-mode: forwards, forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1), linear;
+    animation-delay: 0.8s, 1.2s;
+    animation-iteration-count: 1, infinite;
+    pointer-events: none;
+}
+
+.CongratulationRibbon_imageLight_52 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    mix-blend-mode: additive;
+    position: absolute;
+    animation: CongratulationRibbon_fadeIn_54 0.8s 1s cubic-bezier(0.07, 0.82, 0.17, 1) forwards;
+}
+
+@keyframes CongratulationTitle_bright_4e {
+    from {
+        filter: brightness(1);
+    }
+
+    to {
+        filter: brightness(1.2);
+    }
+}
+
+@keyframes CongratulationTitle_raysAppearance_aa {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes CongratulationTitle_rotate_c2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes CongratulationTitle_fadeIn_52 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes CongratulationTitle_fadeOut_0f {
+    0% {
+        filter: blur(1px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.CongratulationTitle_base_04 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CongratulationTitle_title_be {
+    color: #f2f2f7;
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.mediaLarge .CongratulationTitle_title_be {
+    color: #f2f2f7;
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.CongratulationTitle_description_87 {
+    color: #f2f2e7;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 8rem;
+}
+
+.mediaLarge .CongratulationTitle_description_87 {
+    color: #f2f2e7;
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 16rem;
+}
+
+@keyframes Congratulation_bright_dc {
+    from {
+        filter: brightness(1);
+    }
+
+    to {
+        filter: brightness(1.2);
+    }
+}
+
+@keyframes Congratulation_raysAppearance_3f {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Congratulation_rotate_9b {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes Congratulation_fadeIn_10 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Congratulation_fadeOut_97 {
+    0% {
+        filter: blur(1px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.Congratulation_base_93 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Congratulation_wrapper_d2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40rem;
+    padding-bottom: 40rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.mediaMedium .Congratulation_wrapper_d2 {
+    padding-top: 56rem;
+}
+
+.mediaLarge .Congratulation_wrapper_d2 {
+    padding-top: 62rem;
+}
+
+.mediaExtraLarge .Congratulation_wrapper_d2 {
+    padding-top: 100rem;
+}
+
+.Congratulation_fadeAnimationWrap_ee {
+    opacity: 0;
+}
+
+.Congratulation_fadeAnimationWrap__visible_de {
+    animation: Congratulation_fadeIn_10 0.35s ease-in-out forwards;
+}
+
+.App_base_19 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}

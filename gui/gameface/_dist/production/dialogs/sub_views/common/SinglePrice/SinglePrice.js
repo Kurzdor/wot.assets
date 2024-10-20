@@ -156,8 +156,8 @@
                         },
                     },
                     m = ['args'];
-                const v = 2,
-                    g = 16,
+                const g = 2,
+                    v = 16,
                     w = 32,
                     p = 64,
                     h = (u, e) => {
@@ -198,13 +198,13 @@
                     },
                     b = {
                         close(u) {
-                            h('popover' === u ? v : w);
+                            h('popover' === u ? g : w);
                         },
                         minimize() {
                             h(p);
                         },
                         move(u) {
-                            h(g, { isMouseEvent: !0, on: u });
+                            h(v, { isMouseEvent: !0, on: u });
                         },
                     };
                 function f(u) {
@@ -611,8 +611,8 @@
                         } else viewEnv.handleViewEvent({ __Type: A, type: u });
                         var F;
                     },
-                    v = () => m(D.CLOSE),
-                    g = (u, e) => {
+                    g = () => m(D.CLOSE),
+                    v = (u, e) => {
                         u.keyCode === C.n.ESCAPE && e();
                     };
                 var w = A(572);
@@ -627,7 +627,7 @@
                         DateFormatType: B,
                         makeGlobalBoundingBox: l,
                         sendMoveEvent: (u) => m(D.MOVE, { isMouseEvent: !0, on: u }),
-                        sendCloseEvent: v,
+                        sendCloseEvent: g,
                         sendClosePopOverEvent: () => m(D.POP_OVER, { on: !1 }),
                         sendShowContextMenuEvent: (u, e, A = 0) => {
                             m(D.CONTEXT_MENU, { isMouseEvent: !0, contentID: u, on: !0, decoratorID: A, args: e });
@@ -657,13 +657,13 @@
                             });
                         },
                         addEscapeListener: (u) => {
-                            const e = (e) => g(e, u);
+                            const e = (e) => v(e, u);
                             return (
                                 window.addEventListener('keydown', e), () => window.removeEventListener('keydown', e)
                             );
                         },
                         closeOnEsc: (u) => {
-                            g(u, v);
+                            v(u, g);
                         },
                         handleViewEvent: m,
                         onBindingsReady: d,
@@ -724,17 +724,15 @@
                         (u.Red = 'RedActionBG'), (u.Blue = 'BlueActionBG');
                     })(a || (a = {}));
                 var B = A(364);
-                class C extends E().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = B.B3.GOLD;
-                        else u = B.B3.INTEGRAL;
-                        const e = B.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                C.defaultProps = { format: 'integral' };
-                const s = {
+                const C = ({ format: u, value: e }) => {
+                        const A = ((u, e = 'integral') => {
+                            let A;
+                            A = 'gold' === e ? B.B3.GOLD : B.B3.INTEGRAL;
+                            return void 0 === u ? '' : B.Z5.getNumberFormat(u, A);
+                        })(e, u);
+                        return A ? E().createElement('span', null, A) : null;
+                    },
+                    s = {
                         base: 'Currency_base_57',
                         icon: 'Currency_icon_c5',
                         base__small: 'Currency_base__small_af',
@@ -866,7 +864,7 @@
                         return A;
                     });
                 }
-                const v = (u, e, A = {}, F = 0) => {
+                const g = (u, e, A = {}, F = 0) => {
                         viewEnv.handleViewEvent(
                             Object.assign(
                                 {
@@ -880,7 +878,7 @@
                             ),
                         );
                     },
-                    g = (u) => {
+                    v = (u) => {
                         let e = u.children,
                             A = u.contentId,
                             E = u.args,
@@ -896,8 +894,8 @@
                             s = void 0 === C ? 0 : C,
                             _ = u.isEnabled,
                             c = void 0 === _ || _,
-                            g = u.targetId,
-                            w = void 0 === g ? 0 : g,
+                            v = u.targetId,
+                            w = void 0 === v ? 0 : v,
                             p = u.onShow,
                             h = u.onHide,
                             b = (function (u, e) {
@@ -913,7 +911,7 @@
                             T = (0, F.useMemo)(() => w || l().resId, [w]),
                             y = (0, F.useCallback)(() => {
                                 (f.current.isVisible && f.current.timeoutId) ||
-                                    (v(A, s, { isMouseEvent: !0, on: !0, arguments: m(E) }, T),
+                                    (g(A, s, { isMouseEvent: !0, on: !0, arguments: m(E) }, T),
                                     p && p(),
                                     (f.current.isVisible = !0));
                             }, [A, s, E, T, p]),
@@ -921,7 +919,7 @@
                                 if (f.current.isVisible || f.current.timeoutId) {
                                     const u = f.current.timeoutId;
                                     u > 0 && (clearTimeout(u), (f.current.timeoutId = 0)),
-                                        v(A, s, { on: !1 }, T),
+                                        g(A, s, { on: !1 }, T),
                                         f.current.isVisible && h && h(),
                                         (f.current.isVisible = !1);
                                 }
@@ -1261,7 +1259,7 @@
                             { className: Y.base },
                             E().createElement('div', { className: Y.text }, E().createElement(K, { text: u })),
                             E().createElement(
-                                g,
+                                v,
                                 F,
                                 E().createElement('div', { className: r }, E().createElement(c, e)),
                             ),

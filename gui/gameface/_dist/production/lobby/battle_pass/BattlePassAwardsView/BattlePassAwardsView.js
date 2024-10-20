@@ -1686,6 +1686,7 @@
                         (u.PremiumPlus = 'premium_plus'),
                         (u.BattlePassPoints = 'battlePassPoints'),
                         (u.BattlePassSelectToken = 'battlePassSelectToken'),
+                        (u.SelectableBonus = 'selectableBonus'),
                         (u.StyleProgressToken = 'styleProgressToken'),
                         (u.TmanToken = 'tmanToken'),
                         (u.NaturalCover = 'naturalCover'),
@@ -1706,7 +1707,12 @@
                         (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.CosmicLootboxSilver = 'lootBoxToken'),
-                        (u.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (u.WtStamp = 'stamp'),
+                        (u.WtHunter = 'wt_hunter'),
+                        (u.WtHunterCollection = 'hunter_collection'),
+                        (u.WtTicket = 'wtevent_ticket'),
+                        (u.WtMainPrizeDiscount = 'main_prize_discount');
                 })(fu || (fu = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -1800,17 +1806,15 @@
                             (u.PROGRESSION_STYLE_UPGRADED_3 = 'progressionStyleUpgraded_3'),
                             (u.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4');
                     })(xu || (xu = {}));
-                class Lu extends r().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = nu.B3.GOLD;
-                        else u = nu.B3.INTEGRAL;
-                        const e = nu.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                Lu.defaultProps = { format: 'integral' };
-                const Mu = [
+                const Lu = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? nu.B3.GOLD : nu.B3.INTEGRAL;
+                            return void 0 === u ? '' : nu.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? r().createElement('span', null, t) : null;
+                    },
+                    Mu = [
                         fu.Items,
                         fu.Equipment,
                         fu.Xp,
@@ -1845,6 +1849,12 @@
                         fu.BattleBoosterGift,
                         fu.CosmicLootboxCommon,
                         fu.CosmicLootboxSilver,
+                        fu.SelectableBonus,
+                        fu.WtStamp,
+                        fu.WtTicket,
+                        fu.WtMainPrizeDiscount,
+                        fu.WtHunter,
+                        fu.WtHunterCollection,
                     ],
                     Ou = [fu.Gold, fu.Credits, fu.Crystal, fu.FreeXp],
                     Nu = [fu.BattlePassPoints],
@@ -1910,6 +1920,7 @@
                             case 'groups':
                             case 'tmanToken':
                             case 'battlePassSelectToken':
+                            case 'selectableBonus':
                                 return `R.images.gui.maps.icons.quests.bonuses.${e}.${n}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${e}.${n}`;

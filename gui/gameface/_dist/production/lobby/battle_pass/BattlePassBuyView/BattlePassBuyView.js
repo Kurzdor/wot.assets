@@ -166,16 +166,14 @@
                 var r = t(6179),
                     n = t.n(r),
                     a = t(4179);
-                class s extends n().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = a.B3.GOLD;
-                        else e = a.B3.INTEGRAL;
-                        const u = a.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                s.defaultProps = { format: 'integral' };
+                const s = ({ format: e, value: u }) => {
+                    const t = ((e, u = 'integral') => {
+                        let t;
+                        t = 'gold' === u ? a.B3.GOLD : a.B3.INTEGRAL;
+                        return void 0 === e ? '' : a.Z5.getNumberFormat(e, t);
+                    })(u, e);
+                    return t ? n().createElement('span', null, t) : null;
+                };
             },
             280: (e, u, t) => {
                 'use strict';
@@ -542,6 +540,7 @@
                             (e.PremiumPlus = 'premium_plus'),
                             (e.BattlePassPoints = 'battlePassPoints'),
                             (e.BattlePassSelectToken = 'battlePassSelectToken'),
+                            (e.SelectableBonus = 'selectableBonus'),
                             (e.StyleProgressToken = 'styleProgressToken'),
                             (e.TmanToken = 'tmanToken'),
                             (e.NaturalCover = 'naturalCover'),
@@ -562,7 +561,12 @@
                             (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (e.BattleBoosterGift = 'battleBooster_gift'),
                             (e.CosmicLootboxSilver = 'lootBoxToken'),
-                            (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                            (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                            (e.WtStamp = 'stamp'),
+                            (e.WtHunter = 'wt_hunter'),
+                            (e.WtHunterCollection = 'hunter_collection'),
+                            (e.WtTicket = 'wtevent_ticket'),
+                            (e.WtMainPrizeDiscount = 'main_prize_discount');
                     })(r || (r = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -699,6 +703,12 @@
                         s.E4.BattleBoosterGift,
                         s.E4.CosmicLootboxCommon,
                         s.E4.CosmicLootboxSilver,
+                        s.E4.SelectableBonus,
+                        s.E4.WtStamp,
+                        s.E4.WtTicket,
+                        s.E4.WtMainPrizeDiscount,
+                        s.E4.WtHunter,
+                        s.E4.WtHunterCollection,
                     ],
                     o = [s.E4.Gold, s.E4.Credits, s.E4.Crystal, s.E4.FreeXp],
                     l = [s.E4.BattlePassPoints],
@@ -774,6 +784,7 @@
                             case 'groups':
                             case 'tmanToken':
                             case 'battlePassSelectToken':
+                            case 'selectableBonus':
                                 return `R.images.gui.maps.icons.quests.bonuses.${u}.${a}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${u}.${a}`;

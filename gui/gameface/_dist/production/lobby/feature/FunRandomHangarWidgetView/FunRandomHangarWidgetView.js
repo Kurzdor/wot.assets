@@ -2093,7 +2093,7 @@
                         var w;
                         return (
                             (w = () => {
-                                m.O.view.setSidePaddingsRem({ left: 200, right: 200, top: 0, bottom: 0 });
+                                m.O.view.setSidePaddingsRem({ left: 186, right: 186, top: 0, bottom: 0 });
                             }),
                             (0, a.useEffect)(w, []),
                             (0, a.useEffect)(() => {

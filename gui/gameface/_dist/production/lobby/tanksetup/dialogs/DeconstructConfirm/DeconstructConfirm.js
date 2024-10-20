@@ -1124,20 +1124,18 @@
                         (e.Red = 'RedActionBG'), (e.Blue = 'BlueActionBG');
                     })(G || (G = {}));
                 var z = t(4179);
-                class q extends o().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = z.B3.GOLD;
-                        else e = z.B3.INTEGRAL;
-                        const u = z.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
+                const q = ({ format: e, value: u }) => {
+                    const t = ((e, u = 'integral') => {
+                        let t;
+                        t = 'gold' === u ? z.B3.GOLD : z.B3.INTEGRAL;
+                        return void 0 === e ? '' : z.Z5.getNumberFormat(e, t);
+                    })(u, e);
+                    return t ? o().createElement('span', null, t) : null;
+                };
                 let $;
-                (q.defaultProps = { format: 'integral' }),
-                    (function (e) {
-                        (e.Deconstruct = 'deconstruct'), (e.Upgrade = 'upgrade');
-                    })($ || ($ = {}));
+                !(function (e) {
+                    (e.Deconstruct = 'deconstruct'), (e.Upgrade = 'upgrade');
+                })($ || ($ = {}));
                 var V = t(5521);
                 const Y = (e) => {
                     console.error(e.type + ': useKeydownListener hook :: Callback is not defined');
@@ -3399,6 +3397,7 @@
                         (e.PremiumPlus = 'premium_plus'),
                         (e.BattlePassPoints = 'battlePassPoints'),
                         (e.BattlePassSelectToken = 'battlePassSelectToken'),
+                        (e.SelectableBonus = 'selectableBonus'),
                         (e.StyleProgressToken = 'styleProgressToken'),
                         (e.TmanToken = 'tmanToken'),
                         (e.NaturalCover = 'naturalCover'),
@@ -3419,7 +3418,12 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.WtStamp = 'stamp'),
+                        (e.WtHunter = 'wt_hunter'),
+                        (e.WtHunterCollection = 'hunter_collection'),
+                        (e.WtTicket = 'wtevent_ticket'),
+                        (e.WtMainPrizeDiscount = 'main_prize_discount');
                 })(Ct || (Ct = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -3614,6 +3618,12 @@
                         Ct.BattleBoosterGift,
                         Ct.CosmicLootboxCommon,
                         Ct.CosmicLootboxSilver,
+                        Ct.SelectableBonus,
+                        Ct.WtStamp,
+                        Ct.WtTicket,
+                        Ct.WtMainPrizeDiscount,
+                        Ct.WtHunter,
+                        Ct.WtHunterCollection,
                         Ct.Gold,
                         Ct.Credits,
                         Ct.Crystal,

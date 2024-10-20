@@ -1,0 +1,102 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Content_base_95 {
+    width: 363rem;
+    background-image: linear-gradient(
+        180deg,
+        rgba(51, 51, 41, 0.3) 0%,
+        rgba(51, 51, 41, 0) 16%,
+        rgba(51, 51, 41, 0) 88%,
+        rgba(51, 51, 41, 0.1) 100%
+    );
+}
+.Content_content_bd {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 14rem 20rem;
+}
+.Content_title_30 {
+    margin-bottom: 20rem;
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 20rem;
+}
+.Content_description_8d {
+    margin-bottom: 15rem;
+    color: #8c8c7e;
+    font-size: 14rem;
+    line-height: 18rem;
+}
+.Content_descriptionTitle_3e {
+    margin-bottom: 8rem;
+    color: #e9e2bf;
+    font-size: 14rem;
+    line-height: 18rem;
+}
+.Content_iconBig_c1 {
+    align-self: center;
+    width: 80rem;
+    height: 80rem;
+    margin-bottom: 22rem;
+    background: url('R.images.white_tiger.gui.maps.icons.stamps.stamp_80') no-repeat center / contain;
+}
+.Content_iconSmall_8f {
+    width: 18rem;
+    height: 18rem;
+    background: url('R.images.white_tiger.gui.maps.icons.stamps.stamp_18') no-repeat center / contain;
+}
+.Content_divider_24 {
+    width: 100%;
+    height: 9rem;
+    background: url('R.images.white_tiger.gui.maps.icons.carousel.dividerDotty') no-repeat center / contain;
+    position: relative;
+}
+.Content_divider__top_79 {
+    top: 4rem;
+}
+.Content_divider__bottom_d9 {
+    top: -4rem;
+}
+.Content_quantityWrapper_35 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 41rem;
+    background-image: linear-gradient(
+        270deg,
+        rgba(255, 255, 230, 0) 0%,
+        rgba(255, 255, 230, 0.1) 38%,
+        rgba(255, 255, 230, 0.1) 65%,
+        rgba(255, 255, 230, 0) 100%
+    );
+    color: #8c8c7e;
+    font-size: 14rem;
+    line-height: 18rem;
+}
+.Content_quantity_35 {
+    padding-left: 4rem;
+    padding-right: 8rem;
+}
+.Content_receiveWrapper_9e {
+    margin-top: 15rem;
+}

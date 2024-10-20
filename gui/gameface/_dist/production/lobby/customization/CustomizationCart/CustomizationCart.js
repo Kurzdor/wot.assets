@@ -1664,17 +1664,15 @@
                     (function (e) {
                         (e.Red = 'RedActionBG'), (e.Blue = 'BlueActionBG');
                     })(le || (le = {}));
-                class _e extends a().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = h.B3.GOLD;
-                        else e = h.B3.INTEGRAL;
-                        const u = h.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                _e.defaultProps = { format: 'integral' };
-                const Ee = {
+                const _e = ({ format: e, value: u }) => {
+                        const t = ((e, u = 'integral') => {
+                            let t;
+                            t = 'gold' === u ? h.B3.GOLD : h.B3.INTEGRAL;
+                            return void 0 === e ? '' : h.Z5.getNumberFormat(e, t);
+                        })(u, e);
+                        return t ? a().createElement('span', null, t) : null;
+                    },
+                    Ee = {
                         base: 'Currency_base_57',
                         icon: 'Currency_icon_c5',
                         base__small: 'Currency_base__small_af',

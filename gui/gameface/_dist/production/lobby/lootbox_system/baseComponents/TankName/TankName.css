@@ -1,0 +1,25 @@
+.TankName_base_14 {
+    color: #fefeec;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TankName_type_49 {
+    width: 24rem;
+    height: 24rem;
+    background: no-repeat center / contain;
+}
+
+.mediaSmall .TankName_type_49 {
+    margin-top: 1rem;
+}
+
+.mediaMedium .TankName_type_49 {
+    width: 32rem;
+    height: 32rem;
+    margin: 0 2rem;
+}

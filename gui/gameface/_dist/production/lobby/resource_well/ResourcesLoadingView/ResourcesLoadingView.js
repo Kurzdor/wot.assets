@@ -2675,17 +2675,15 @@
                             },
                             e,
                         );
+                    },
+                    eu = ({ format: e, value: u }) => {
+                        const t = ((e, u = 'integral') => {
+                            let t;
+                            t = 'gold' === u ? Y.B3.GOLD : Y.B3.INTEGRAL;
+                            return void 0 === e ? '' : Y.Z5.getNumberFormat(e, t);
+                        })(u, e);
+                        return t ? s().createElement('span', null, t) : null;
                     };
-                class eu extends s().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = Y.B3.GOLD;
-                        else e = Y.B3.INTEGRAL;
-                        const u = Y.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                eu.defaultProps = { format: 'integral' };
                 var uu = t(280),
                     tu = t(3649);
                 let ru, nu, au, su, iu, ou, lu;
@@ -2718,6 +2716,7 @@
                         (e.PremiumPlus = 'premium_plus'),
                         (e.BattlePassPoints = 'battlePassPoints'),
                         (e.BattlePassSelectToken = 'battlePassSelectToken'),
+                        (e.SelectableBonus = 'selectableBonus'),
                         (e.StyleProgressToken = 'styleProgressToken'),
                         (e.TmanToken = 'tmanToken'),
                         (e.NaturalCover = 'naturalCover'),
@@ -2738,7 +2737,12 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.WtStamp = 'stamp'),
+                        (e.WtHunter = 'wt_hunter'),
+                        (e.WtHunterCollection = 'hunter_collection'),
+                        (e.WtTicket = 'wtevent_ticket'),
+                        (e.WtMainPrizeDiscount = 'main_prize_discount');
                 })(ru || (ru = {})),
                     (function (e) {
                         (e.Gold = 'gold'),

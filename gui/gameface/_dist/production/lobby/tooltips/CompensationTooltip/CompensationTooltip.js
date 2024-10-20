@@ -1076,7 +1076,7 @@
                                 t
                             );
                         }, {}),
-                    L = (u, e = O) => {
+                    M = (u, e = O) => {
                         const t = (
                             (u, e = O) =>
                             (t) => {
@@ -1091,7 +1091,7 @@
                                 : n().createElement(u, e),
                         );
                     },
-                    M = {
+                    L = {
                         mt__XS: 'Box_mt__XS_0c',
                         mt__SM: 'Box_mt__SM_eb',
                         mt__SMp: 'Box_mt__SMp_cf',
@@ -1165,17 +1165,17 @@
                 }
                 Object.keys(l());
                 const I = {
-                        XL: { mt: M.mt__XL, mr: M.mr__XL, mb: M.mb__XL, ml: M.ml__XL },
-                        LG: { mt: M.mt__LG, mr: M.mr__LG, mb: M.mb__LG, ml: M.ml__LG },
-                        MDp: { mt: M.mt__MDp, mr: M.mr__MDp, mb: M.mb__MDp, ml: M.ml__MDp },
-                        MD: { mt: M.mt__MD, mr: M.mr__MD, mb: M.mb__MD, ml: M.ml__MD },
-                        SMp: { mt: M.mt__SMp, mr: M.mr__SMp, mb: M.mb__SMp, ml: M.ml__SMp },
-                        SM: { mt: M.mt__SM, mr: M.mr__SM, mb: M.mb__SM, ml: M.ml__SM },
-                        XS: { mt: M.mt__XS, mr: M.mr__XS, mb: M.mb__XS, ml: M.ml__XS },
+                        XL: { mt: L.mt__XL, mr: L.mr__XL, mb: L.mb__XL, ml: L.ml__XL },
+                        LG: { mt: L.mt__LG, mr: L.mr__LG, mb: L.mb__LG, ml: L.ml__LG },
+                        MDp: { mt: L.mt__MDp, mr: L.mr__MDp, mb: L.mb__MDp, ml: L.ml__MDp },
+                        MD: { mt: L.mt__MD, mr: L.mr__MD, mb: L.mb__MD, ml: L.ml__MD },
+                        SMp: { mt: L.mt__SMp, mr: L.mr__SMp, mb: L.mb__SMp, ml: L.ml__SMp },
+                        SM: { mt: L.mt__SM, mr: L.mr__SM, mb: L.mb__SM, ml: L.ml__SM },
+                        XS: { mt: L.mt__XS, mr: L.mr__XS, mb: L.mb__XS, ml: L.ml__XS },
                     },
                     k = (Object.keys(I), ['mt', 'mr', 'mb', 'ml']),
                     U = { mt: 'marginTop', mr: 'marginRight', mb: 'marginBottom', ml: 'marginLeft' },
-                    H = L((u) => {
+                    H = M((u) => {
                         let e = u.className,
                             t = u.width,
                             a = u.height,
@@ -1212,10 +1212,10 @@
                             T = u.wrap,
                             P = u.flexWrap,
                             O = void 0 === P ? (T ? 'wrap' : void 0) : P,
-                            L = u.grow,
+                            M = u.grow,
                             H = u.shrink,
                             G = u.flex,
-                            W = void 0 === G ? (L || H ? `${L ? 1 : 0} ${H ? 1 : 0} auto` : void 0) : G,
+                            W = void 0 === G ? (M || H ? `${M ? 1 : 0} ${H ? 1 : 0} auto` : void 0) : G,
                             X = u.style,
                             j = u.children,
                             q = (function (u, e) {
@@ -1256,7 +1256,7 @@
                             }, [t, a, o, l, D, _, X, W, R, C, O, f, x]),
                             $ = Y.computedStyle,
                             V = Y.computedClassNames;
-                        return n().createElement('div', N({ className: s()(M.base, ...V, e), style: $ }, q), j);
+                        return n().createElement('div', N({ className: s()(L.base, ...V, e), style: $ }, q), j);
                     });
                 let G;
                 !(function (u) {
@@ -1441,7 +1441,7 @@
                                     ? { colorClassName: K[u] }
                                     : { colorStyle: { color: u } }
                                 : {}),
-                    au = L((u) => {
+                    au = M((u) => {
                         let e = u.text,
                             t = u.variant,
                             a = u.className,
@@ -2110,9 +2110,9 @@
                         );
                         var l;
                     };
-                function Lu() {
+                function Mu() {
                     return (
-                        (Lu =
+                        (Mu =
                             Object.assign ||
                             function (u) {
                                 for (var e = 1; e < arguments.length; e++) {
@@ -2121,10 +2121,10 @@
                                 }
                                 return u;
                             }),
-                        Lu.apply(this, arguments)
+                        Mu.apply(this, arguments)
                     );
                 }
-                const Mu = ({ children: u, tooltipArgs: e, className: t }) => {
+                const Lu = ({ children: u, tooltipArgs: e, className: t }) => {
                     if (!e) return u;
                     const r = n().createElement('div', { className: t }, u);
                     if (e.header || e.body) return n().createElement(Ou, e, r);
@@ -2132,7 +2132,7 @@
                         i = e.args,
                         E = null == i ? void 0 : i.contentId;
                     return a || E
-                        ? n().createElement(wu, Lu({}, e, { contentId: a || E }), r)
+                        ? n().createElement(wu, Mu({}, e, { contentId: a || E }), r)
                         : n().createElement(xu, e, r);
                 };
                 let yu, Nu, Iu, ku, Uu, Hu, Gu;
@@ -2165,6 +2165,7 @@
                         (u.PremiumPlus = 'premium_plus'),
                         (u.BattlePassPoints = 'battlePassPoints'),
                         (u.BattlePassSelectToken = 'battlePassSelectToken'),
+                        (u.SelectableBonus = 'selectableBonus'),
                         (u.StyleProgressToken = 'styleProgressToken'),
                         (u.TmanToken = 'tmanToken'),
                         (u.NaturalCover = 'naturalCover'),
@@ -2185,7 +2186,12 @@
                         (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.CosmicLootboxSilver = 'lootBoxToken'),
-                        (u.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (u.WtStamp = 'stamp'),
+                        (u.WtHunter = 'wt_hunter'),
+                        (u.WtHunterCollection = 'hunter_collection'),
+                        (u.WtTicket = 'wtevent_ticket'),
+                        (u.WtMainPrizeDiscount = 'main_prize_discount');
                 })(yu || (yu = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -2279,16 +2285,17 @@
                             (u.PROGRESSION_STYLE_UPGRADED_3 = 'progressionStyleUpgraded_3'),
                             (u.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4');
                     })(Gu || (Gu = {}));
-                class Wu extends n().PureComponent {
-                    render() {
-                        let u;
-                        u = 'gold' === this.props.format ? hu.B3.GOLD : hu.B3.INTEGRAL;
-                        const e = hu.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                Wu.defaultProps = { format: 'integral' };
-                const Xu = [
+                const Wu = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            return (
+                                (t = 'gold' === e ? hu.B3.GOLD : hu.B3.INTEGRAL),
+                                void 0 === u ? '' : hu.Z5.getNumberFormat(u, t)
+                            );
+                        })(e, u);
+                        return t ? n().createElement('span', null, t) : null;
+                    },
+                    Xu = [
                         yu.Items,
                         yu.Equipment,
                         yu.Xp,
@@ -2323,6 +2330,12 @@
                         yu.BattleBoosterGift,
                         yu.CosmicLootboxCommon,
                         yu.CosmicLootboxSilver,
+                        yu.SelectableBonus,
+                        yu.WtStamp,
+                        yu.WtTicket,
+                        yu.WtMainPrizeDiscount,
+                        yu.WtHunter,
+                        yu.WtHunterCollection,
                     ],
                     ju = [yu.Gold, yu.Credits, yu.Crystal, yu.FreeXp],
                     qu = [yu.BattlePassPoints],
@@ -2442,7 +2455,7 @@
                             'div',
                             { className: s()(Ku.base, Ku[`base__${r}`], A), style: o },
                             n().createElement(
-                                Mu,
+                                Lu,
                                 { tooltipArgs: F, className: Ku.tooltipWrapper },
                                 n().createElement(
                                     n().Fragment,
@@ -2487,7 +2500,7 @@
                             ),
                             t &&
                                 n().createElement(
-                                    Mu,
+                                    Lu,
                                     { tooltipArgs: D },
                                     n().createElement('div', {
                                         className: s()(Ku.timer, null == l ? void 0 : l.periodicIcon),
@@ -2621,6 +2634,7 @@
                                         case 'groups':
                                         case 'tmanToken':
                                         case 'battlePassSelectToken':
+                                        case 'selectableBonus':
                                             return `R.images.gui.maps.icons.quests.bonuses.${e}.${a}`;
                                         case 'crewBooks':
                                             return `R.images.gui.maps.icons.crewBooks.books.${e}.${a}`;

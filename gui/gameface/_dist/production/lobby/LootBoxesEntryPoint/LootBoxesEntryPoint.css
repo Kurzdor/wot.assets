@@ -1,0 +1,173 @@
+.Key_base_3b {
+    position: relative;
+}
+
+.Key_base__second_97 {
+    margin-left: -30rem;
+}
+
+.Key_keyImage_c9 {
+    width: 90rem;
+    height: 90rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+
+.Key_newItem_c3 {
+    width: 200rem;
+    height: 200rem;
+    position: absolute;
+    top: -60rem;
+    left: -58rem;
+    pointer-events: none;
+}
+
+.Key_newItem__boss_af {
+    top: -55rem;
+}
+
+.Key_count_17 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: 9rem;
+    left: 47rem;
+    z-index: 1;
+}
+
+.Key_flare_7a {
+    width: 100rem;
+    height: 12rem;
+    background: #ffffff;
+    visibility: hidden;
+    position: absolute;
+    top: -100rem;
+    left: -10rem;
+    transform: rotate(-53deg);
+    animation: Key_flare-animation_ec 2.6s 0.4s linear infinite;
+}
+
+.Key_base__second_97 .Key_flare_7a {
+    animation-delay: 0.8s;
+}
+
+.Key_flareWrapper_c2 {
+    width: 90rem;
+    height: 90rem;
+    mask-size: 90rem;
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes Key_flare-animation_ec {
+    0% {
+        visibility: visible;
+        top: -100rem;
+    }
+
+    10% {
+        top: -100rem;
+    }
+
+    50% {
+        top: 120rem;
+    }
+
+    100% {
+        top: 120rem;
+    }
+}
+
+@keyframes App_show_12 {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes App_translate-down_04 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes App_translate-up_67 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+.App_base_08 {
+    width: 400rem;
+    height: 300rem;
+    overflow: hidden;
+    position: relative;
+}
+.App_keys_e1 {
+    display: flex;
+    margin-left: 125rem;
+    margin-top: 105rem;
+    background: url('R.images.white_tiger.gui.maps.icons.entryBoxPoint.background_portal') no-repeat -5rem center / contain;
+    position: relative;
+}
+.App_keys__hasNew_f7 {
+    background: none;
+}
+.App_inputArea_bb {
+    width: 125rem;
+    height: 90rem;
+    margin-left: 20rem;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+.App_hoverImage_4c {
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(50% 50% at 42% 50%, rgba(255, 255, 255, 0.2), transparent);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+}
+.App_inputArea_bb:hover .App_hoverImage_4c {
+    opacity: 1;
+}
+.App_backgroundAnimation_db {
+    width: 200rem;
+    height: 200rem;
+    opacity: 1;
+    position: absolute;
+    top: 50rem;
+    left: 100rem;
+    z-index: 0;
+    animation: App_show_12 0.1s ease-in-out forwards;
+    pointer-events: none;
+}
+
+html {
+    height: 100%;
+    position: relative;
+}
+
+body {
+    overflow: hidden;
+}

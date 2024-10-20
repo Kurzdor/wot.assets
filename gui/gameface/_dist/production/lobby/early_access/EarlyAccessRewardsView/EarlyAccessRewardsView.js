@@ -238,7 +238,7 @@
                         setEventHandled: () => h,
                         setInputPaddingsRem: () => o,
                         setSidePaddingsRem: () => A,
-                        whenTutorialReady: () => x,
+                        whenTutorialReady: () => R,
                     });
                 var r = t(3722),
                     a = t(6112),
@@ -311,7 +311,7 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    x = Promise.all([
+                    R = Promise.all([
                         new Promise((u) => {
                             window.isDomBuilt ? u() : n.U.onDomBuilt(u);
                         }),
@@ -1284,69 +1284,73 @@
                 var Y = t(3403),
                     z = t(7030);
                 const V = (u) => Math.sqrt(1 - Math.pow(u - 1, 2)),
-                    K = 400;
-                class Q extends a().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = $.B3.GOLD;
-                        else u = $.B3.INTEGRAL;
-                        const e = $.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
+                    K = 400,
+                    Q = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? $.B3.GOLD : $.B3.INTEGRAL;
+                            return void 0 === u ? '' : $.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? a().createElement('span', null, t) : null;
+                    };
                 let Z, J, uu, eu, tu, ru, au;
-                (Q.defaultProps = { format: 'integral' }),
-                    (function (u) {
-                        (u.Items = 'items'),
-                            (u.Equipment = 'equipment'),
-                            (u.Xp = 'xp'),
-                            (u.XpFactor = 'xpFactor'),
-                            (u.Blueprints = 'blueprints'),
-                            (u.BlueprintsAny = 'blueprintsAny'),
-                            (u.Goodies = 'goodies'),
-                            (u.Berths = 'berths'),
-                            (u.Slots = 'slots'),
-                            (u.Tokens = 'tokens'),
-                            (u.CrewSkins = 'crewSkins'),
-                            (u.CrewBooks = 'crewBooks'),
-                            (u.Customizations = 'customizations'),
-                            (u.CreditsFactor = 'creditsFactor'),
-                            (u.Currency = 'currency'),
-                            (u.TankmenXp = 'tankmenXP'),
-                            (u.TankmenXpFactor = 'tankmenXPFactor'),
-                            (u.FreeXpFactor = 'freeXPFactor'),
-                            (u.BattleToken = 'battleToken'),
-                            (u.PremiumUniversal = 'premium_universal'),
-                            (u.Gold = 'gold'),
-                            (u.Credits = 'credits'),
-                            (u.Crystal = 'crystal'),
-                            (u.FreeXp = 'freeXP'),
-                            (u.Premium = 'premium'),
-                            (u.PremiumPlus = 'premium_plus'),
-                            (u.BattlePassPoints = 'battlePassPoints'),
-                            (u.BattlePassSelectToken = 'battlePassSelectToken'),
-                            (u.StyleProgressToken = 'styleProgressToken'),
-                            (u.TmanToken = 'tmanToken'),
-                            (u.NaturalCover = 'naturalCover'),
-                            (u.BpCoin = 'bpcoin'),
-                            (u.BattlaPassFinalAchievement = 'dossier_achievement'),
-                            (u.BattleBadge = 'dossier_badge'),
-                            (u.NewYearAlbumsAccess = 'newYearAlbumsAccess'),
-                            (u.NewYearFillers = 'ny22Fillers'),
-                            (u.NewYearInvoice = 'newYearInvoice'),
-                            (u.NewYearToyFragments = 'ny22ToyFragments'),
-                            (u.NewYearSlot = 'newYearSlot'),
-                            (u.BonusX5 = 'battle_bonus_x5'),
-                            (u.CrewBonusX3 = 'crew_bonus_x3'),
-                            (u.Vehicles = 'vehicles'),
-                            (u.EpicSelectToken = 'epicSelectToken'),
-                            (u.CollectionItem = 'collectionItem'),
-                            (u.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
-                            (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
-                            (u.BattleBoosterGift = 'battleBooster_gift'),
-                            (u.CosmicLootboxSilver = 'lootBoxToken'),
-                            (u.CosmicLootboxCommon = 'cosmic_2024_2');
-                    })(Z || (Z = {})),
+                !(function (u) {
+                    (u.Items = 'items'),
+                        (u.Equipment = 'equipment'),
+                        (u.Xp = 'xp'),
+                        (u.XpFactor = 'xpFactor'),
+                        (u.Blueprints = 'blueprints'),
+                        (u.BlueprintsAny = 'blueprintsAny'),
+                        (u.Goodies = 'goodies'),
+                        (u.Berths = 'berths'),
+                        (u.Slots = 'slots'),
+                        (u.Tokens = 'tokens'),
+                        (u.CrewSkins = 'crewSkins'),
+                        (u.CrewBooks = 'crewBooks'),
+                        (u.Customizations = 'customizations'),
+                        (u.CreditsFactor = 'creditsFactor'),
+                        (u.Currency = 'currency'),
+                        (u.TankmenXp = 'tankmenXP'),
+                        (u.TankmenXpFactor = 'tankmenXPFactor'),
+                        (u.FreeXpFactor = 'freeXPFactor'),
+                        (u.BattleToken = 'battleToken'),
+                        (u.PremiumUniversal = 'premium_universal'),
+                        (u.Gold = 'gold'),
+                        (u.Credits = 'credits'),
+                        (u.Crystal = 'crystal'),
+                        (u.FreeXp = 'freeXP'),
+                        (u.Premium = 'premium'),
+                        (u.PremiumPlus = 'premium_plus'),
+                        (u.BattlePassPoints = 'battlePassPoints'),
+                        (u.BattlePassSelectToken = 'battlePassSelectToken'),
+                        (u.SelectableBonus = 'selectableBonus'),
+                        (u.StyleProgressToken = 'styleProgressToken'),
+                        (u.TmanToken = 'tmanToken'),
+                        (u.NaturalCover = 'naturalCover'),
+                        (u.BpCoin = 'bpcoin'),
+                        (u.BattlaPassFinalAchievement = 'dossier_achievement'),
+                        (u.BattleBadge = 'dossier_badge'),
+                        (u.NewYearAlbumsAccess = 'newYearAlbumsAccess'),
+                        (u.NewYearFillers = 'ny22Fillers'),
+                        (u.NewYearInvoice = 'newYearInvoice'),
+                        (u.NewYearToyFragments = 'ny22ToyFragments'),
+                        (u.NewYearSlot = 'newYearSlot'),
+                        (u.BonusX5 = 'battle_bonus_x5'),
+                        (u.CrewBonusX3 = 'crew_bonus_x3'),
+                        (u.Vehicles = 'vehicles'),
+                        (u.EpicSelectToken = 'epicSelectToken'),
+                        (u.CollectionItem = 'collectionItem'),
+                        (u.Comp7TokenWeeklyReward = 'comp7TokenWeeklyReward'),
+                        (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
+                        (u.BattleBoosterGift = 'battleBooster_gift'),
+                        (u.CosmicLootboxSilver = 'lootBoxToken'),
+                        (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (u.WtStamp = 'stamp'),
+                        (u.WtHunter = 'wt_hunter'),
+                        (u.WtHunterCollection = 'hunter_collection'),
+                        (u.WtTicket = 'wtevent_ticket'),
+                        (u.WtMainPrizeDiscount = 'main_prize_discount');
+                })(Z || (Z = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
                             (u.Credits = 'credits'),
@@ -1474,6 +1478,12 @@
                         Z.BattleBoosterGift,
                         Z.CosmicLootboxCommon,
                         Z.CosmicLootboxSilver,
+                        Z.SelectableBonus,
+                        Z.WtStamp,
+                        Z.WtTicket,
+                        Z.WtMainPrizeDiscount,
+                        Z.WtHunter,
+                        Z.WtHunterCollection,
                     ],
                     iu = [Z.Gold, Z.Credits, Z.Crystal, Z.FreeXp],
                     su = [Z.BattlePassPoints],
@@ -1539,6 +1549,7 @@
                             case 'groups':
                             case 'tmanToken':
                             case 'battlePassSelectToken':
+                            case 'selectableBonus':
                                 return `R.images.gui.maps.icons.quests.bonuses.${e}.${n}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${e}.${n}`;
@@ -1918,7 +1929,7 @@
                         return t;
                     });
                 }
-                const xu = (u, e, t = {}, r = 0) => {
+                const Ru = (u, e, t = {}, r = 0) => {
                         viewEnv.handleViewEvent(
                             Object.assign(
                                 {
@@ -1932,7 +1943,7 @@
                             ),
                         );
                     },
-                    Ru = (u) => {
+                    xu = (u) => {
                         let e = u.children,
                             t = u.contentId,
                             a = u.args,
@@ -1983,7 +1994,7 @@
                             ),
                             v = (0, r.useCallback)(() => {
                                 (p.current.isVisible && p.current.timeoutId) ||
-                                    (xu(t, F, { isMouseEvent: !0, on: !0, arguments: fu(a) }, b),
+                                    (Ru(t, F, { isMouseEvent: !0, on: !0, arguments: fu(a) }, b),
                                     C && C(),
                                     (p.current.isVisible = !0));
                             }, [t, F, a, b, C]),
@@ -1991,7 +2002,7 @@
                                 if (p.current.isVisible || p.current.timeoutId) {
                                     const u = p.current.timeoutId;
                                     u > 0 && (clearTimeout(u), (p.current.timeoutId = 0)),
-                                        xu(t, F, { on: !1 }, b),
+                                        Ru(t, F, { on: !1 }, b),
                                         p.current.isVisible && g && g(),
                                         (p.current.isVisible = !1);
                                 }
@@ -2083,7 +2094,7 @@
                                 return a;
                             })(u, Su);
                         return a().createElement(
-                            Ru,
+                            xu,
                             Tu(
                                 {
                                     contentId:
@@ -2135,7 +2146,7 @@
                             return u;
                         }, [s, t, n, i, o]);
                         return a().createElement(
-                            Ru,
+                            xu,
                             Ou(
                                 {
                                     contentId:
@@ -2172,7 +2183,7 @@
                             i = e.args,
                             s = null == i ? void 0 : i.contentId;
                         return n || s
-                            ? a().createElement(Ru, Nu({}, e, { contentId: n || s }), r)
+                            ? a().createElement(xu, Nu({}, e, { contentId: n || s }), r)
                             : a().createElement(Mu, e, r);
                     },
                     Iu = {
@@ -2484,8 +2495,8 @@
                                       (v && 'space-around') ||
                                       void 0
                                     : w,
-                            x = u.alignItems,
-                            R = void 0 === x ? (C ? 'flex-start' : g && 'center') || (h && 'flex-end') || void 0 : x,
+                            R = u.alignItems,
+                            x = void 0 === R ? (C ? 'flex-start' : g && 'center') || (h && 'flex-end') || void 0 : R,
                             S = u.alignSelf,
                             T = u.wrap,
                             M = u.flexWrap,
@@ -2523,15 +2534,15 @@
                                         height: void 0 !== n && 'number' == typeof n ? n + 'rem' : n,
                                         flex: N,
                                         alignSelf: S,
-                                        display: B || R ? 'flex' : void 0,
+                                        display: B || x ? 'flex' : void 0,
                                         flexDirection: B,
                                         flexWrap: L,
                                         justifyContent: f,
-                                        alignItems: R,
+                                        alignItems: x,
                                     }),
                                     computedClassNames: e,
                                 };
-                            }, [t, n, o, l, _, F, k, N, S, B, L, f, R]),
+                            }, [t, n, o, l, _, F, k, N, S, B, L, f, x]),
                             G = U.computedStyle,
                             W = U.computedClassNames;
                         return a().createElement('div', Vu({ className: p()(Yu.base, ...W, e), style: G }, H), I);
@@ -2794,7 +2805,7 @@
                         fe.apply(this, arguments)
                     );
                 }
-                const xe = ({ reward: u, index: e }) => {
+                const Re = ({ reward: u, index: e }) => {
                         const t = S().mediaSize < w.Medium ? uu.S296x222 : uu.S400x300,
                             r = u.image(t);
                         return a().createElement(
@@ -2807,7 +2818,7 @@
                             a().createElement(he, { className: we, text: u.label }),
                         );
                     },
-                    Re = 'RewardList_base_03',
+                    xe = 'RewardList_base_03',
                     Se = 'RewardList_reward_ef';
                 function Te() {
                     return (
@@ -2845,7 +2856,7 @@
                             );
                         return a().createElement(
                             'div',
-                            { className: Re },
+                            { className: xe },
                             s.map((u, e) =>
                                 a().createElement(
                                     pe,
@@ -2892,7 +2903,7 @@
                                 a().createElement(
                                     'div',
                                     { className: Pe },
-                                    e.map((u, e) => a().createElement(xe, { key: u.name, reward: u, index: e })),
+                                    e.map((u, e) => a().createElement(Re, { key: u.name, reward: u, index: e })),
                                 ),
                             n &&
                                 a().createElement(

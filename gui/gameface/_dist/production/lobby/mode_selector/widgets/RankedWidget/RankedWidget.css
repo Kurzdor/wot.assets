@@ -532,6 +532,7 @@
     height: 100%;
     overflow: hidden;
     position: relative;
+    pointer-events: none;
 }
 
 .RankedWidget_qualBattles_ec {

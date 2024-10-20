@@ -6,15 +6,16 @@
                 var r = t(6179),
                     n = t.n(r),
                     a = t(4179);
-                class o extends n().PureComponent {
-                    render() {
-                        let u;
-                        u = 'gold' === this.props.format ? a.B3.GOLD : a.B3.INTEGRAL;
-                        const e = a.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                o.defaultProps = { format: 'integral' };
+                const o = ({ format: u, value: e }) => {
+                    const t = ((u, e = 'integral') => {
+                        let t;
+                        return (
+                            (t = 'gold' === e ? a.B3.GOLD : a.B3.INTEGRAL),
+                            void 0 === u ? '' : a.Z5.getNumberFormat(u, t)
+                        );
+                    })(e, u);
+                    return t ? n().createElement('span', null, t) : null;
+                };
             },
             2862: (u, e, t) => {
                 'use strict';
@@ -49,6 +50,7 @@
                             (u.PremiumPlus = 'premium_plus'),
                             (u.BattlePassPoints = 'battlePassPoints'),
                             (u.BattlePassSelectToken = 'battlePassSelectToken'),
+                            (u.SelectableBonus = 'selectableBonus'),
                             (u.StyleProgressToken = 'styleProgressToken'),
                             (u.TmanToken = 'tmanToken'),
                             (u.NaturalCover = 'naturalCover'),
@@ -69,7 +71,12 @@
                             (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                             (u.BattleBoosterGift = 'battleBooster_gift'),
                             (u.CosmicLootboxSilver = 'lootBoxToken'),
-                            (u.CosmicLootboxCommon = 'cosmic_2024_2');
+                            (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                            (u.WtStamp = 'stamp'),
+                            (u.WtHunter = 'wt_hunter'),
+                            (u.WtHunterCollection = 'hunter_collection'),
+                            (u.WtTicket = 'wtevent_ticket'),
+                            (u.WtMainPrizeDiscount = 'main_prize_discount');
                     })(r || (r = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -206,6 +213,12 @@
                         o.E4.BattleBoosterGift,
                         o.E4.CosmicLootboxCommon,
                         o.E4.CosmicLootboxSilver,
+                        o.E4.SelectableBonus,
+                        o.E4.WtStamp,
+                        o.E4.WtTicket,
+                        o.E4.WtMainPrizeDiscount,
+                        o.E4.WtHunter,
+                        o.E4.WtHunterCollection,
                     ],
                     s = [o.E4.Gold, o.E4.Credits, o.E4.Crystal, o.E4.FreeXp],
                     l = [o.E4.BattlePassPoints],
@@ -281,6 +294,7 @@
                             case 'groups':
                             case 'tmanToken':
                             case 'battlePassSelectToken':
+                            case 'selectableBonus':
                                 return `R.images.gui.maps.icons.quests.bonuses.${e}.${a}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${e}.${a}`;
@@ -621,13 +635,13 @@
                             })(u, o);
                         const w = (0, a.useRef)({ timeoutId: 0, isVisible: !1, prevTarget: null, hideTimerId: null }),
                             S = (0, a.useMemo)(() => h || (0, r.F)().resId, [h]),
-                            x = (0, a.useCallback)(() => {
+                            R = (0, a.useCallback)(() => {
                                 (w.current.isVisible && w.current.timeoutId) ||
                                     (s(t, B, { isMouseEvent: !0, on: !0, arguments: i(n) }, S),
                                     b && b(),
                                     (w.current.isVisible = !0));
                             }, [t, B, n, S, b]),
-                            R = (0, a.useCallback)(() => {
+                            x = (0, a.useCallback)(() => {
                                 if (w.current.isVisible || w.current.timeoutId) {
                                     const u = w.current.timeoutId;
                                     u > 0 && (clearTimeout(u), (w.current.timeoutId = 0)),
@@ -641,7 +655,7 @@
                                     ((w.current.prevTarget = document.elementFromPoint(u.clientX, u.clientY)),
                                     (w.current.hideTimerId = window.setTimeout(() => {
                                         const e = document.elementFromPoint(u.clientX, u.clientY);
-                                        e && !e.isSameNode(w.current.prevTarget) && R();
+                                        e && !e.isSameNode(w.current.prevTarget) && x();
                                     }, 200)));
                             }, []);
                         return (
@@ -656,16 +670,16 @@
                                 );
                             }, []),
                             (0, a.useEffect)(() => {
-                                !1 === g && R();
-                            }, [g, R]),
+                                !1 === g && x();
+                            }, [g, x]),
                             (0, a.useEffect)(
                                 () => (
-                                    window.addEventListener('mouseleave', R),
+                                    window.addEventListener('mouseleave', x),
                                     () => {
-                                        window.removeEventListener('mouseleave', R), R();
+                                        window.removeEventListener('mouseleave', x), x();
                                     }
                                 ),
-                                [R],
+                                [x],
                             ),
                             g
                                 ? (0, a.cloneElement)(
@@ -677,18 +691,18 @@
                                                   (u) => {
                                                       (u.clientX === window.innerWidth &&
                                                           u.clientY === window.innerHeight) ||
-                                                          ((w.current.timeoutId = window.setTimeout(x, F ? 100 : 400)),
+                                                          ((w.current.timeoutId = window.setTimeout(R, F ? 100 : 400)),
                                                           l && l(u),
                                                           P && P(u));
                                                   }),
                                               onMouseLeave: ((u) => (e) => {
-                                                  R(), null == c || c(e), null == u || u(e);
+                                                  x(), null == c || c(e), null == u || u(e);
                                               })(e.props.onMouseLeave),
                                               onClick: ((u) => (e) => {
-                                                  !1 === m && R(), null == A || A(e), null == u || u(e);
+                                                  !1 === m && x(), null == A || A(e), null == u || u(e);
                                               })(e.props.onClick),
                                               onMouseDown: ((u) => (e) => {
-                                                  !1 === m && R(), null == E || E(e), null == u || u(e);
+                                                  !1 === m && x(), null == E || E(e), null == u || u(e);
                                               })(e.props.onMouseDown),
                                           },
                                           f,
@@ -2789,13 +2803,13 @@
                     fu = 'HorizontalBar_base__nonActive_82',
                     wu = 'disable',
                     Su = { pending: !1, offset: 0 },
-                    xu = (u) => {
+                    Ru = (u) => {
                         var e;
                         return 0.9 * (null != (e = u.getWrapperSize()) ? e : 0);
                     },
-                    Ru = () => {},
+                    xu = () => {},
                     yu = (u, e) => Math.max(20, u.offsetWidth * e),
-                    Pu = (0, a.memo)(({ api: u, classNames: e = {}, getStepByRailClick: t = xu, onDrag: r = Ru }) => {
+                    Pu = (0, a.memo)(({ api: u, classNames: e = {}, getStepByRailClick: t = Ru, onDrag: r = xu }) => {
                         const n = (0, a.useRef)(null),
                             i = (0, a.useRef)(null),
                             s = (0, a.useRef)(null),
@@ -2860,7 +2874,7 @@
                                         const e = () => {
                                             m();
                                         };
-                                        let t = Ru;
+                                        let t = xu;
                                         const r = () => {
                                             t(), (t = Fu(_));
                                         };
@@ -3525,7 +3539,7 @@
                             )
                         );
                     }),
-                    ne = () => {
+                    ne = (0, I.Pi)(() => {
                         const u = (0, a.useState)(!1),
                             e = u[0],
                             t = u[1],
@@ -3553,7 +3567,7 @@
                                     }),
                             ),
                         );
-                    },
+                    }),
                     ae = 'ProbabilitiesWithRotation_rewardsTitle_b8',
                     oe = 'AnimatedSlots_divider_cd',
                     ie = (u) => Math.sqrt(1 - Math.pow(u - 1, 2));

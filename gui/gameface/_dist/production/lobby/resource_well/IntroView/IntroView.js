@@ -1348,16 +1348,14 @@
                                   ),
                               );
                 var K = t(4179);
-                class q extends A().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = K.B3.GOLD;
-                        else u = K.B3.INTEGRAL;
-                        const e = K.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                q.defaultProps = { format: 'integral' };
+                const q = ({ format: u, value: e }) => {
+                    const t = ((u, e = 'integral') => {
+                        let t;
+                        t = 'gold' === e ? K.B3.GOLD : K.B3.INTEGRAL;
+                        return void 0 === u ? '' : K.Z5.getNumberFormat(u, t);
+                    })(e, u);
+                    return t ? A().createElement('span', null, t) : null;
+                };
                 let Y;
                 !(function (u) {
                     (u.SHORT_DATE = 'short-date'),

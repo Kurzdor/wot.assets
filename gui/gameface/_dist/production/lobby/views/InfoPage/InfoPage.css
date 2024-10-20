@@ -1,0 +1,1126 @@
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.HorizontalBar_base_49 {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+    position: relative;
+}
+
+.HorizontalBar_base__nonActive_82 {
+    visibility: hidden;
+}
+
+.HorizontalBar_base_49 .disable,
+.HorizontalBar_base_49 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.HorizontalBar_leftButton_5f,
+.HorizontalBar_rightButton_03 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_5f:hover,
+.HorizontalBar_rightButton_03:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_leftButton_5f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_03 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_0d {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem
+        7rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_fd:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_rail_32 {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_32:hover {
+    opacity: 0.7;
+}
+
+.HorizontalScroll_base_29 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_1e {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HorizontalScroll_defaultScrollArea_8d {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.VerticalBar_base_f3 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+.VerticalBar_base__nonActive_42 {
+    visibility: hidden;
+}
+
+.VerticalBar_base_f3 .disable,
+.VerticalBar_base_f3 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.VerticalBar_topButton_d7,
+.VerticalBar_bottomButton_06 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_d7:hover,
+.VerticalBar_bottomButton_06:hover {
+    opacity: 1;
+}
+
+.VerticalBar_topButton_d7 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_06 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_df {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32 {
+    display: none;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_32:hover {
+    opacity: 1;
+}
+
+.VerticalBar_rail_43 {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_43:hover {
+    opacity: 0.7;
+}
+
+.VerticalScroll_content_cb {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_f8 {
+    display: flex;
+}
+
+.VerticalScroll_bar_1e {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_af {
+    flex: 1;
+}
+
+.TextButton_base_b6 {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.TextButton_base__right_39 {
+    flex-direction: row-reverse;
+}
+.TextButton_icon_17 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    position: relative;
+}
+.TextButton_icon__back_43,
+.TextButton_icon__forward_59 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.back');
+    transform: translateY(1rem);
+}
+.TextButton_icon__forward_59 {
+    transform: rotate(180deg) translateY(1rem);
+}
+.TextButton_icon__close_53 {
+    margin: -1rem 0;
+    background-image: url('R.images.gui.maps.icons.components.text_button.close');
+}
+.TextButton_icon__info_33 {
+    margin: -1rem -5rem;
+    background-image: url('R.images.gui.maps.icons.components.text_button.info');
+}
+.TextButton_glow_a4 {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.16s;
+}
+.TextButton_icon__back_43 .TextButton_glow_a4,
+.TextButton_icon__forward_59 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.back_hover');
+}
+.TextButton_icon__close_53 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.close_hover');
+}
+.TextButton_icon__info_33 .TextButton_glow_a4 {
+    background-image: url('R.images.gui.maps.icons.components.text_button.info_hover');
+}
+.TextButton_base_b6:hover .TextButton_glow_a4 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_glow_a4 {
+    opacity: 0;
+}
+.TextButton_caption_82 {
+    position: relative;
+    transition:
+        color 0.16s,
+        text-shadow 0.16s;
+}
+.TextButton_caption__back_b9,
+.TextButton_caption__forward_4e,
+.TextButton_caption__close_36 {
+    color: #ffdd99;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 10rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+}
+.TextButton_base_b6:hover .TextButton_caption__back_b9,
+.TextButton_base_b6:hover .TextButton_caption__forward_4e,
+.TextButton_base_b6:hover .TextButton_caption__close_36 {
+    color: #fffa9f;
+}
+.TextButton_base_b6:active .TextButton_caption__back_b9,
+.TextButton_base_b6:active .TextButton_caption__forward_4e,
+.TextButton_base_b6:active .TextButton_caption__close_36 {
+    color: #ffdd99;
+}
+.TextButton_caption__info_23 {
+    padding: 0 5rem;
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:hover .TextButton_caption__info_23 {
+    color: #e3ffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.8),
+        0 0 12rem rgba(0, 234, 255, 1),
+        0 0 8rem #00eaff;
+}
+.TextButton_base_b6:active .TextButton_caption__info_23 {
+    color: #ccffff;
+    text-shadow:
+        0 0 12rem rgba(31, 68, 255, 0.6),
+        0 0 8rem #00eaff;
+}
+.TextButton_goto_e7 {
+    color: #7c7c6c;
+}
+.TextButton_base__left_ff .TextButton_goto_e7 {
+    margin-left: 8rem;
+}
+.TextButton_base__right_39 .TextButton_goto_e7 {
+    margin-right: 8rem;
+}
+.TextButton_shine_e2 {
+    width: 90rem;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.components.text_button.shine') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    transition: opacity 0.16s;
+    pointer-events: none;
+}
+.TextButton_base__left_ff .TextButton_shine_e2 {
+    left: -4rem;
+}
+.TextButton_base__right_39 .TextButton_shine_e2 {
+    right: -4rem;
+    transform: rotate(180deg);
+}
+.TextButton_base_b6:hover .TextButton_shine_e2 {
+    opacity: 1;
+}
+.TextButton_base_b6:active .TextButton_shine_e2 {
+    opacity: 0;
+}
+
+.App_base_5d {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 35rem 0 5rem;
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.3)),
+        url('R.images.battle_royale.gui.maps.infopage.background') no-repeat center / cover;
+    position: relative;
+    z-index: 2;
+}
+
+.App_container_b5 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 965rem;
+}
+
+.App_divider_ec {
+    width: 100%;
+    height: 2rem;
+    margin: 10rem 0;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.App_alignCenter_62 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.App_base_5d .App_titleStyling_15,
+.App_textStyle_00 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 10rem;
+    padding-top: 16rem;
+}
+
+.App_footer_07 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+    padding: 50rem 0;
+    text-align: center;
+}
+
+.App_defaultVertical_5c {
+    flex: 1;
+}
+
+.App_closeButton_86 {
+    position: absolute;
+    top: 30rem;
+}
+
+.App_closeButton__right_0c {
+    right: 30rem;
+}
+
+.App_closeButton__left_24 {
+    left: 30rem;
+}
+
+.App_frame_12 {
+    width: 965rem;
+    height: 400rem;
+}
+
+.App_base_5d .App_respawnTitle_af {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.App_base_5d .App_maraudersTitle_ce {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.App_base_5d .App_maraudersContainer_b0 {
+    margin-top: 0;
+}
+
+.App_base_5d .App_respawnContainer_f8 {
+    justify-content: center;
+    align-items: center;
+}
+
+.App_map_b2 {
+    width: 310rem;
+    height: 185rem;
+}
+
+.App_respawn_3f {
+    width: 471rem;
+    height: 220rem;
+}
+
+.App_marauder_50,
+.App_progression_7c,
+.App_shop_b1 {
+    width: 471rem;
+    height: 280rem;
+}
+
+.App_zone_82,
+.App_radar_e7,
+.App_sector_9a {
+    width: 470rem;
+    height: 330rem;
+}
+
+.App_battleTask_c0 {
+    width: 165rem;
+    height: 164rem;
+}
+
+.App_pointsBattleTask_5b {
+    width: 136rem;
+    height: 136rem;
+}
+
+.App_base_5d .App_indentBPTable_cc {
+    margin-bottom: 15rem;
+}
+
+.FormatTextWithColorTags_blackReal_3c {
+    color: #000000;
+}
+
+.FormatTextWithColorTags_whiteReal_8a {
+    color: #ffffff;
+}
+
+.FormatTextWithColorTags_white_16 {
+    color: #f2f2f7;
+}
+
+.FormatTextWithColorTags_whiteOrange_18 {
+    color: #fefeec;
+}
+
+.FormatTextWithColorTags_whiteSpanish_10 {
+    color: #e9e2bf;
+}
+
+.FormatTextWithColorTags_par_ca {
+    color: #8c8c7e;
+}
+
+.FormatTextWithColorTags_parSecondary_8d {
+    color: #595950;
+}
+
+.FormatTextWithColorTags_parTertiary_a3 {
+    color: #37362e;
+}
+
+.FormatTextWithColorTags_red_60 {
+    color: #ff2717;
+}
+
+.FormatTextWithColorTags_redDark_03 {
+    color: #b70000;
+}
+
+.FormatTextWithColorTags_yellow_ad {
+    color: #feab34;
+}
+
+.FormatTextWithColorTags_orange_e4 {
+    color: #ee7000;
+}
+
+.FormatTextWithColorTags_cream_cd {
+    color: #ffdd99;
+}
+
+.FormatTextWithColorTags_brown_c8 {
+    color: #cbac77;
+}
+
+.FormatTextWithColorTags_greenBright_f0 {
+    color: #80d43a;
+}
+
+.FormatTextWithColorTags_green_c5 {
+    color: #7ab300;
+}
+
+.FormatTextWithColorTags_greenDark_af {
+    color: #497212;
+}
+
+.FormatTextWithColorTags_blueBooster_ac {
+    color: #ccffff;
+}
+
+.FormatTextWithColorTags_blueTeamkiller_6f {
+    color: #09e2ff;
+}
+
+.FormatTextWithColorTags_cred_4e {
+    color: #ced9d9;
+}
+
+.FormatTextWithColorTags_gold_90 {
+    color: #ffc363;
+}
+
+.FormatTextWithColorTags_bond_71 {
+    color: #c9c9b6;
+}
+
+.FormatTextWithColorTags_prom_dd {
+    color: #a29b70;
+}
+
+/* This specific rule is used to fix https://jira.wargaming.net/browse/WOTPRG-9871 */
+
+.FormatTextWithColorTags_parNoWidth_5a {
+    width: 0;
+    color: #8c8c7e;
+}
+
+.Article_base_c8 {
+    display: flex;
+    flex-direction: column;
+    margin: 50rem 0;
+    position: relative;
+}
+
+.Article_title_02 {
+    color: #f2f2f7;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20rem;
+}
+
+.Article_head_51 {
+    margin-bottom: 20rem;
+}
+
+.Article_images_c8 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Article_imageContainer_6a {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.Article_images__mapStyle_21 .Article_imageContainer_6a {
+    align-items: center;
+}
+
+.Article_text_53 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+    padding: 10rem 0;
+}
+
+.Article_images__mapStyle_21 .Article_text_53 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding-bottom: 0;
+}
+
+.Article_accent_0a {
+    margin-top: 20rem;
+    color: #e9e2bf;
+}
+
+.Details_base_78 {
+    display: flex;
+    margin: 50rem 0;
+    position: relative;
+}
+
+.Details_base__reverse_07 {
+    flex-direction: row-reverse;
+}
+
+.Details_base__noIndent_52 {
+    margin: -40rem 0 40rem;
+}
+
+.Details_title_51 {
+    color: #f2f2f7;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20rem;
+}
+
+.Details_subtitle_76 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 10rem;
+}
+
+.Details_image_ad {
+    width: 471rem;
+}
+
+.Details_description_55 {
+    flex: 1;
+}
+
+.Details_devider_b0 {
+    width: 20rem;
+    height: 100%;
+}
+
+.Details_textBlock_bb + .Details_textBlock_bb {
+    margin-top: 25rem;
+}
+
+.Header_base_b7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50rem;
+    position: relative;
+}
+
+.Header_header_57 {
+    margin: 40rem 0;
+    text-align: center;
+}
+
+.Header_title_2a {
+    margin-bottom: 10rem;
+    color: #f2f2f7;
+    font-size: 44rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.Header_subtitle_ce {
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.Header_container_bf {
+    display: flex;
+    width: 100%;
+    height: 540rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.Header_video_7e {
+    width: 150rem;
+    height: 110rem;
+    background: url('R.images.battle_royale.gui.maps.infopage.youtubeButton') no-repeat center / contain;
+    filter: brightness(1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: filter 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+.Header_container_bf:hover .Header_video_7e {
+    filter: brightness(1.2);
+}
+
+.Header_preview_7c {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('R.images.battle_royale.gui.maps.infopage.preview') no-repeat center / contain;
+}
+
+.Mosaic_base_6b {
+    margin-bottom: 50rem;
+    position: relative;
+}
+
+.Mosaic_title_31 {
+    color: #f2f2f7;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15rem;
+}
+
+.Mosaic_container_c3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Mosaic_item_c8 {
+    display: flex;
+    align-items: flex-start;
+    width: 48%;
+    padding-left: 80rem;
+    position: relative;
+}
+
+.Mosaic_description_e2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Mosaic_itemTitle_b9 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding-bottom: 10rem;
+}
+
+.Mosaic_image_67 {
+    width: 61rem;
+    height: 60rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Mosaic_itemSubtitle_76 {
+    margin-bottom: 15rem;
+}
+
+.TableBP_base_37 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+}
+
+.TableBP_row_49 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48rem;
+    position: relative;
+}
+
+.TableBP_border_7b {
+    width: 470rem;
+    border-top: 1rem solid rgba(255, 255, 255, 0.1);
+    position: absolute;
+    bottom: 33rem;
+    left: 0;
+}
+
+.TableBP_cell__inFirstRow_46 .TableBP_border_7b {
+    border-top: none;
+}
+
+.TableBP_cell_a9 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.TableBP_cell__text_ab {
+    justify-content: flex-start;
+    width: 435rem;
+    color: #8c8c7e;
+}
+
+.TableBP_cell__inFirstRow_46 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-right: 38rem;
+    margin-bottom: 33rem;
+}
+
+.TableBP_cell__inSecondCell_83 {
+    margin-right: 23rem;
+}
+
+.TableBP_points_e1 {
+    color: #c9c9b6;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    justify-content: flex-end;
+    width: 36rem;
+    height: 18rem;
+    padding-right: 33rem;
+    background: url('R.images.gui.maps.icons.battlePass.tooltips.points_24') no-repeat center / contain;
+    line-height: 0.8;
+    overflow-wrap: normal;
+}
+
+.TableBP_dash_20 {
+    margin-left: 30rem;
+    color: #c9c9b6;
+}
+
+.Column_base_b3 {
+    display: flex;
+    flex-direction: column;
+    width: 470rem;
+    position: relative;
+}
+
+.Column_battleType_ba {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding-bottom: 27rem;
+}
+
+.Column_cell_71 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12rem 0;
+    border-top: 1rem solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.Column_pointContainer_a2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16rem;
+}
+
+.Column_point_33 {
+    margin-right: 8rem;
+    color: #c9c9b6;
+}
+
+.Column_place_69 {
+    color: #8c8c7e;
+}
+
+.Column_reward_00 {
+    width: 16rem;
+    height: 16rem;
+    margin-top: 3rem;
+    background: url('R.images.battle_royale_progression.gui.maps.progression.token_battle_royale') no-repeat center /
+        contain;
+}
+
+.Column_dash_29 {
+    color: #c9c9b6;
+}
+
+.TableSH_base_5b {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    position: relative;
+}
+
+.TowerBlock_base_da {
+    margin: 50rem 0 5rem;
+    position: relative;
+}
+
+.TowerBlock_title_8a {
+    color: #f2f2f7;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15rem;
+}
+
+.TowerBlock_head_28 {
+    margin-bottom: 20rem;
+}
+
+.TowerBlock_lootsContainer_ec {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15rem;
+}
+
+.TowerBlock_description_89 {
+    flex: 1;
+    margin-left: 30rem;
+}
+
+.TowerBlock_descriptionTitle_7c {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 8rem;
+}
+
+.TowerBlock_image_77 {
+    width: 143rem;
+    height: 140rem;
+}
+
+.Vehicles_header_44 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.1);
+}
+
+.Vehicles_tab_9a {
+    padding-bottom: 10rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.Vehicles_tabGlow_26 {
+    background: no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+.Vehicles_tabGlow__upper_b4 {
+    width: 244rem;
+    height: 77rem;
+    background-image: url('R.images.battle_royale.gui.maps.infopage.vehicles.slots.slotGlow');
+}
+
+.Vehicles_tabGlow__bottom_85 {
+    width: 150rem;
+    height: 55rem;
+    background-image: url('R.images.battle_royale.gui.maps.infopage.vehicles.slots.slotGlowBottom');
+    mix-blend-mode: screen;
+}
+
+.Vehicles_tab__active_43 .Vehicles_tabGlow_26 {
+    opacity: 1;
+}
+
+.Vehicles_tabTitle_f9 {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    position: relative;
+    z-index: 1;
+}
+
+.Vehicles_tab__active_43 .Vehicles_tabTitle_f9 {
+    color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.Vehicles_body_e5 {
+    padding: 40rem 0 10rem;
+}
+
+.Vehicles_description_fd {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30rem;
+}
+
+.Vehicles_text_56 {
+    flex: 1;
+}
+
+.Vehicles_subtitle_6a {
+    line-height: 1.5;
+}
+
+.Vehicles_title_a1 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+    margin-left: -15rem;
+}
+
+.Vehicles_titleText_50 {
+    margin: -6rem 0 0 -10rem;
+}
+
+.Vehicles_container_eb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Vehicles_abilitiesItem_7e {
+    display: flex;
+    align-items: flex-start;
+    width: 48%;
+    min-height: 64rem;
+    padding: 0 0 40rem 80rem;
+    position: relative;
+}
+
+.Vehicles_abilitiesImage_5b {
+    width: 64rem;
+    height: 64rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Vehicles_abilitiesTitle_92 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+    padding-bottom: 10rem;
+}
+
+.Vehicles_abilitiesSubtitle_7e {
+    line-height: 1.25;
+}
+
+.Vehicles_tabImage_6a {
+    width: 120rem;
+    height: 80rem;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.Vehicles_tabImage_6a:hover {
+    opacity: 1;
+}
+
+.Vehicles_tab__active_43 .Vehicles_tabImage_6a {
+    opacity: 1;
+}
+
+.Vehicles_image_40 {
+    width: 350rem;
+    height: 220rem;
+}
+
+.Vehicles_type_b9 {
+    width: 64rem;
+    height: 64rem;
+}

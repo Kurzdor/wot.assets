@@ -16,14 +16,10 @@
       <row>	1	</row>
       <column>	4	</column>
     </GB33_Sentinel_AC_I>
-    <GB113_Matilda_LVT>
-      <row>	2	</row>
-      <column>	4	</column>
-    </GB113_Matilda_LVT>
-    <GB37_Valliant>
+    <GB51_Excelsior>
       <row>	1	</row>
       <column>	5	</column>
-    </GB37_Valliant>
+    </GB51_Excelsior>
     <GB68_Matilda_Black_Prince>
       <row>	2	</row>
       <column>	5	</column>
@@ -36,10 +32,10 @@
       <row>	2	</row>
       <column>	6	</column>
     </GB95_Ekins_Firefly_M4A4>
-    <GB108_A46>
+    <GB63_TOG_II>
       <row>	3	</row>
       <column>	6	</column>
-    </GB108_A46>
+    </GB63_TOG_II>
     <GB52_A45>
       <row>	1	</row>
       <column>	7	</column>
@@ -60,8 +56,12 @@
       <row>	3	</row>
       <column>	8	</column>
     </GB94_Centurion_Mk5-1_RAAC>
-    <GB87_Chieftain_T95_turret>
+    <GB99_Turtle_Mk1>
       <row>	4	</row>
+      <column>	8	</column>
+    </GB99_Turtle_Mk1>
+    <GB87_Chieftain_T95_turret>
+      <row>	5	</row>
       <column>	8	</column>
     </GB87_Chieftain_T95_turret>
   </nodes>

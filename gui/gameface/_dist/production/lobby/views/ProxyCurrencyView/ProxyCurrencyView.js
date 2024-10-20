@@ -155,9 +155,9 @@
                         addPreloadTexture: () => s,
                         children: () => r,
                         displayStatus: () => o.W,
-                        displayStatusIs: () => P,
+                        displayStatusIs: () => M,
                         events: () => i.U,
-                        extraSize: () => M,
+                        extraSize: () => P,
                         forceTriggerMouseMove: () => y,
                         freezeTextureBeforeResize: () => E,
                         getBrowserTexturePath: () => l,
@@ -236,11 +236,11 @@
                 function T() {
                     return viewEnv.getShowingStatus();
                 }
-                const P = Object.keys(o.W).reduce(
+                const M = Object.keys(o.W).reduce(
                         (e, t) => ((e[t] = () => viewEnv.getShowingStatus() === o.W[t]), e),
                         {},
                     ),
-                    M = {
+                    P = {
                         set: (e, t) => {
                             viewEnv.setExtraSizeRem(e, t);
                         },
@@ -643,7 +643,7 @@
                     };
                 var y = n(7572);
                 const T = o.instance,
-                    P = {
+                    M = {
                         DataTracker: i.Z,
                         ViewModel: y.Z,
                         ViewEventType: c,
@@ -725,7 +725,7 @@
                         SystemLocale: a,
                         UserLocale: s,
                     };
-                window.ViewEnvHelper = P;
+                window.ViewEnvHelper = M;
             },
             3266: (e, t, n) => {
                 var r = n(6179),
@@ -733,31 +733,32 @@
                     i = n(493),
                     a = n.n(i),
                     s = n(4179);
-                class c extends o().PureComponent {
-                    render() {
-                        let e;
-                        e = 'gold' === this.props.format ? s.B3.GOLD : s.B3.INTEGRAL;
-                        const t = s.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== t ? t : null;
-                    }
-                }
-                c.defaultProps = { format: 'integral' };
-                const l = [
-                    'children',
-                    'contentId',
-                    'args',
-                    'onMouseEnter',
-                    'onMouseLeave',
-                    'onMouseDown',
-                    'onClick',
-                    'ignoreShowDelay',
-                    'ignoreMouseClick',
-                    'decoratorId',
-                    'isEnabled',
-                    'targetId',
-                    'onShow',
-                    'onHide',
-                ];
+                const c = ({ format: e, value: t }) => {
+                        const n = ((e, t = 'integral') => {
+                            let n;
+                            return (
+                                (n = 'gold' === t ? s.B3.GOLD : s.B3.INTEGRAL),
+                                void 0 === e ? '' : s.Z5.getNumberFormat(e, n)
+                            );
+                        })(t, e);
+                        return n ? o().createElement('span', null, n) : null;
+                    },
+                    l = [
+                        'children',
+                        'contentId',
+                        'args',
+                        'onMouseEnter',
+                        'onMouseLeave',
+                        'onMouseDown',
+                        'onClick',
+                        'ignoreShowDelay',
+                        'ignoreMouseClick',
+                        'decoratorId',
+                        'isEnabled',
+                        'targetId',
+                        'onShow',
+                        'onHide',
+                    ];
                 function d(e) {
                     return Object.entries(e || {}).map(([e, t]) => {
                         const n = { __Type: 'GFValueProxy', name: e };
@@ -819,8 +820,8 @@
                                 for (r = 0; r < i.length; r++) (n = i[r]), t.indexOf(n) >= 0 || (o[n] = e[n]);
                                 return o;
                             })(e, l);
-                        const P = (0, r.useRef)({ timeoutId: 0, isVisible: !1, prevTarget: null, hideTimerId: null }),
-                            M = (0, r.useMemo)(
+                        const M = (0, r.useRef)({ timeoutId: 0, isVisible: !1, prevTarget: null, hideTimerId: null }),
+                            P = (0, r.useMemo)(
                                 () =>
                                     g ||
                                     ((e = 1) => {
@@ -840,31 +841,31 @@
                                 [g],
                             ),
                             k = (0, r.useCallback)(() => {
-                                (P.current.isVisible && P.current.timeoutId) ||
-                                    (u(n, m, { isMouseEvent: !0, on: !0, arguments: d(o) }, M),
+                                (M.current.isVisible && M.current.timeoutId) ||
+                                    (u(n, m, { isMouseEvent: !0, on: !0, arguments: d(o) }, P),
                                     O && O(),
-                                    (P.current.isVisible = !0));
-                            }, [n, m, o, M, O]),
+                                    (M.current.isVisible = !0));
+                            }, [n, m, o, P, O]),
                             A = (0, r.useCallback)(() => {
-                                if (P.current.isVisible || P.current.timeoutId) {
-                                    const e = P.current.timeoutId;
-                                    e > 0 && (clearTimeout(e), (P.current.timeoutId = 0)),
-                                        u(n, m, { on: !1 }, M),
-                                        P.current.isVisible && y && y(),
-                                        (P.current.isVisible = !1);
+                                if (M.current.isVisible || M.current.timeoutId) {
+                                    const e = M.current.timeoutId;
+                                    e > 0 && (clearTimeout(e), (M.current.timeoutId = 0)),
+                                        u(n, m, { on: !1 }, P),
+                                        M.current.isVisible && y && y(),
+                                        (M.current.isVisible = !1);
                                 }
-                            }, [n, m, M, y]),
+                            }, [n, m, P, y]),
                             S = (0, r.useCallback)((e) => {
-                                P.current.isVisible &&
-                                    ((P.current.prevTarget = document.elementFromPoint(e.clientX, e.clientY)),
-                                    (P.current.hideTimerId = window.setTimeout(() => {
+                                M.current.isVisible &&
+                                    ((M.current.prevTarget = document.elementFromPoint(e.clientX, e.clientY)),
+                                    (M.current.hideTimerId = window.setTimeout(() => {
                                         const t = document.elementFromPoint(e.clientX, e.clientY);
-                                        t && !t.isSameNode(P.current.prevTarget) && A();
+                                        t && !t.isSameNode(M.current.prevTarget) && A();
                                     }, 200)));
                             }, []);
                         return (
                             (0, r.useEffect)(() => {
-                                const e = P.current.hideTimerId;
+                                const e = M.current.hideTimerId;
                                 return (
                                     document.addEventListener('wheel', S, { capture: !0 }),
                                     () => {
@@ -895,7 +896,7 @@
                                                   (e) => {
                                                       (e.clientX === window.innerWidth &&
                                                           e.clientY === window.innerHeight) ||
-                                                          ((P.current.timeoutId = window.setTimeout(k, v ? 100 : 400)),
+                                                          ((M.current.timeoutId = window.setTimeout(k, v ? 100 : 400)),
                                                           i && i(e),
                                                           L && L(e));
                                                   }),

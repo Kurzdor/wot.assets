@@ -924,8 +924,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .TokensStepper_base_95 {
     display: flex;
     align-items: center;
-    width: 100rem;
-    height: 31rem;
+    width: 104rem;
+    height: 32rem;
     border: 1rem solid #454437;
     border-radius: 2rem;
     box-shadow: 0 0 1rem #000000;
@@ -937,6 +937,12 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .TokensStepper_base__focused_1f {
     border-color: #663c1f;
+}
+
+.TokensStepper_currency_74 {
+    display: flex;
+    align-items: center;
+    flex: 0;
 }
 
 .TokensStepper_inputWrapper_b1 {
@@ -966,6 +972,13 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     width: 100%;
 }
 
+.TokensStepper_currencyIcon_7a {
+    width: 20rem;
+    height: 20rem;
+    margin-right: 2rem;
+    background: no-repeat center / contain;
+}
+
 .TokensStepper_controls_bf {
     display: flex;
     flex-direction: column;
@@ -979,6 +992,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 
 .mediaLargeWidth .TokensStepper_btn_f2 {
+    background-size: 200% 400%;
+}
+
+.TokensStepper_btn__scaled_9a {
     background-size: 200% 400%;
 }
 
@@ -1020,6 +1037,69 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     cursor: default;
 }
 
+.ToggleButton_base_3a {
+    width: 60rem;
+    height: 30rem;
+    position: relative;
+    cursor: pointer;
+}
+.ToggleButton_bgDefault_e2 {
+    width: 65rem;
+    height: 34rem;
+    background: url('R.images.armory_yard.gui.maps.icons.buy.bg_toggle') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.ToggleButton_bgActive_0c {
+    width: 92rem;
+    height: 62rem;
+    background: url('R.images.armory_yard.gui.maps.icons.buy.bg_toggle_active') no-repeat center / cover;
+    opacity: 0;
+    position: absolute;
+    top: -14rem;
+    left: -14rem;
+    z-index: 2;
+    transition: opacity 250ms;
+}
+.ToggleButton_bgActive__visible_0a {
+    opacity: 1;
+}
+.ToggleButton_icon_f0 {
+    width: 20rem;
+    height: 20rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    z-index: 3;
+}
+.ToggleButton_icon__gold_82 {
+    background-image: url('R.images.armory_yard.gui.maps.icons.shop.buy.gold');
+    top: 7rem;
+    left: 22rem;
+}
+.ToggleButton_icon__crystal_45 {
+    width: 23rem;
+    height: 22rem;
+    background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
+    top: 6rem;
+    left: 21rem;
+}
+.ToggleButton_hover_2d {
+    width: 58rem;
+    height: 29rem;
+    background: url('R.images.armory_yard.gui.maps.icons.buy.glow_toggle') no-repeat center / cover;
+    opacity: 0;
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    z-index: 2;
+    transition: opacity 250ms;
+}
+.ToggleButton_hover__hovered_07 {
+    opacity: 1;
+}
+
 .Footer_base_c0 {
     display: flex;
     flex-direction: row;
@@ -1055,10 +1135,10 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .Footer_content_b3 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
-    padding: 47rem 53rem;
+    padding: 24rem 53rem 21rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -1068,7 +1148,19 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding-right: 82rem;
 }
 .mediaMedium .Footer_content_b3 {
-    padding-top: 46rem;
+    padding-top: 24rem;
+}
+.Footer_priceWrapper_6b {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 18rem;
+}
+.Footer_priceLine_b4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .Footer_tokensAvailable_f7 {
     color: #8c8c7e;
@@ -1077,6 +1169,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.3;
     display: flex;
     align-items: center;
+    margin-top: 7rem;
 }
 .Footer_tokensAvailable__tokens_bd {
     color: #cbac77;
@@ -1090,11 +1183,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .Footer_productCounter_9a {
     margin-left: 6rem;
+    transform: translateY(2rem);
 }
 .Footer_buyButton_fe {
     width: 160rem;
     height: 32rem;
-    margin-left: 16rem;
 }
 .Footer_buttonText_9a {
     color: #fefeec;
@@ -1129,6 +1222,24 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 50%;
     z-index: 10;
     transform: translateX(-50%);
+}
+.Footer_toggle_e8 {
+    margin-right: 15rem;
+    transform: translateY(-3rem);
+}
+.Footer_toggle__crystal_43 {
+    margin-right: 3rem;
+}
+.Footer_arrow_f5 {
+    width: 75rem;
+    height: 75rem;
+    margin-left: -6rem;
+    margin-right: -17rem;
+    background: url('R.images.armory_yard.gui.maps.icons.buy.arrow') no-repeat center / contain;
+    transform: translateY(-1rem);
+}
+.Footer_arrow__last_a6 {
+    margin-right: -13rem;
 }
 
 .Header_base_29 {

@@ -3404,16 +3404,17 @@
                     (function (e) {
                         (e.Red = 'RedActionBG'), (e.Blue = 'BlueActionBG');
                     })(Ou || (Ou = {}));
-                class Iu extends o().PureComponent {
-                    render() {
-                        let e;
-                        e = 'gold' === this.props.format ? W.B3.GOLD : W.B3.INTEGRAL;
-                        const u = W.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                Iu.defaultProps = { format: 'integral' };
-                const Hu = {
+                const Iu = ({ format: e, value: u }) => {
+                        const t = ((e, u = 'integral') => {
+                            let t;
+                            return (
+                                (t = 'gold' === u ? W.B3.GOLD : W.B3.INTEGRAL),
+                                void 0 === e ? '' : W.Z5.getNumberFormat(e, t)
+                            );
+                        })(u, e);
+                        return t ? o().createElement('span', null, t) : null;
+                    },
+                    Hu = {
                         base: 'Currency_base_57',
                         icon: 'Currency_icon_c5',
                         base__small: 'Currency_base__small_af',
@@ -3527,6 +3528,7 @@
                         (e.PremiumPlus = 'premium_plus'),
                         (e.BattlePassPoints = 'battlePassPoints'),
                         (e.BattlePassSelectToken = 'battlePassSelectToken'),
+                        (e.SelectableBonus = 'selectableBonus'),
                         (e.StyleProgressToken = 'styleProgressToken'),
                         (e.TmanToken = 'tmanToken'),
                         (e.NaturalCover = 'naturalCover'),
@@ -3547,7 +3549,12 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.WtStamp = 'stamp'),
+                        (e.WtHunter = 'wt_hunter'),
+                        (e.WtHunterCollection = 'hunter_collection'),
+                        (e.WtTicket = 'wtevent_ticket'),
+                        (e.WtMainPrizeDiscount = 'main_prize_discount');
                 })(Gu || (Gu = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -4235,13 +4242,15 @@
                             g = (0, a.useState)(!1),
                             p = g[0],
                             v = g[1],
-                            f = x(),
-                            b = u.price.find((e) => e.name === Gu.Gold),
-                            S = null != b && b.value ? Math.round(A * b.value) : 0,
-                            w = (0, iu.useTransition)(p, Object.assign({ key: p }, vt)),
-                            y = _.length <= 1 ? 4 : 1,
-                            T = h()('Card_textWrapper_eb', p && 'Card_textWrapper__hover_2b'),
-                            M = (0, a.useMemo)(
+                            b = x(),
+                            S = u.price.find((e) => e.name === Gu.Gold),
+                            w = null != S && S.value ? Math.round(A * S.value) : 0,
+                            y = (0, iu.useTransition)(p, Object.assign({ key: p }, vt)),
+                            T = _.length <= 1 ? 4 : 1,
+                            M = b.mediaSize === f.ExtraSmall,
+                            P = C ? 3 : 4,
+                            L = h()('Card_textWrapper_eb', p && 'Card_textWrapper__hover_2b'),
+                            N = (0, a.useMemo)(
                                 () =>
                                     o().createElement(
                                         'div',
@@ -4299,8 +4308,8 @@
                                   ),
                             o().createElement(
                                 'div',
-                                { className: T },
-                                M,
+                                { className: L },
+                                N,
                                 C &&
                                     o().createElement(
                                         'div',
@@ -4319,7 +4328,7 @@
                                         o().createElement(
                                             'span',
                                             { className: 'Card_effect__text_f9' },
-                                            o().createElement(pt, { mediaSize: f, linesCount: 1, blocks: xt(C) }),
+                                            o().createElement(pt, { mediaSize: b, linesCount: 1, blocks: xt(C) }),
                                         ),
                                     ),
                                 E &&
@@ -4327,17 +4336,17 @@
                                     o().createElement(
                                         'div',
                                         { className: h()(wt, p && yt) },
-                                        o().createElement(pt, { mediaSize: f, linesCount: 4, blocks: xt(E) }),
+                                        o().createElement(pt, { mediaSize: b, linesCount: 4, blocks: xt(E) }),
                                     ),
                                 _[0] &&
                                     o().createElement(
                                         'div',
                                         { className: h()(wt, p && yt) },
-                                        _.map((e, u) =>
+                                        _.slice(0, M ? P : _.length).map((e, u) =>
                                             o().createElement(
                                                 'div',
                                                 { key: `param__${u}`, className: 'Card_extraParams__text_ac' },
-                                                o().createElement(pt, { mediaSize: f, linesCount: y, blocks: xt(e) }),
+                                                o().createElement(pt, { mediaSize: b, linesCount: T, blocks: xt(e) }),
                                             ),
                                         ),
                                     ),
@@ -4352,10 +4361,10 @@
                                         o().Fragment,
                                         null,
                                         o().createElement(gt, { text: Pt.altText(), className: 'Card_altText_e1' }),
-                                        o().createElement(Uu, { type: ku.gold, value: S, size: Nu.small }),
+                                        o().createElement(Uu, { type: ku.gold, value: w, size: Nu.small }),
                                     ),
                             ),
-                            w(
+                            y(
                                 (e, u) =>
                                     u &&
                                     o().createElement(iu.animated.div, {

@@ -1998,7 +1998,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     cursor: pointer;
 }
 
-.mediaLargeWidth .TokensStepper_btn_da {
+.TokensStepper_btn__scaled_f7 {
     background-size: 200% 400%;
 }
 

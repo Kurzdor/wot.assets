@@ -1,0 +1,305 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.atlases.components.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.App_base_b6 {
+    display: flex;
+    flex-direction: column;
+    width: 400rem;
+    padding: 18rem 20rem;
+}
+
+.App_divider_d2 {
+    width: 100%;
+    height: 9rem;
+    background: url('R.images.fun_random.gui.maps.icons.tooltips.battle_result.economy.divider') no-repeat center /
+        contain;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Profit_base_51 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.Profit_base__big_52,
+.Profit_base__large_70 {
+    flex-direction: row-reverse;
+}
+.Profit_icon_75 {
+    --icon-height: 16rem;
+    --icon-width: var(--icon-height);
+    width: var(--icon-width);
+    height: var(--icon-height);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+.Profit_base__big_52 .Profit_icon_75 {
+    transform: translateY(1rem);
+}
+.Profit_base__large_70 .Profit_icon_75 {
+    transform: translateY(3rem);
+}
+.Profit_icon__tankmenXP-small_3f {
+    background-image: url('R.images.fun_random.gui.maps.icons.feature.profit.tankmenXP_16x16');
+}
+.Profit_icon__tankmenXP-big_a7,
+.Profit_icon__tankmenXP-large_ef {
+    --icon-height: 48rem;
+    background-image: url('R.images.fun_random.gui.maps.icons.feature.profit.tankmenXP');
+}
+.Profit_icon__credits-small_5d {
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
+}
+.Profit_base__small_4e .Profit_icon__credits-small_5d {
+    transform: translateY(2rem);
+}
+.Profit_icon__credits-big_02,
+.Profit_icon__credits-large_6b {
+    --icon-height: 48rem;
+    margin-right: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_silver');
+}
+.Profit_base__large_70 .Profit_icon__credits-big_02,
+.Profit_base__large_70 .Profit_icon__credits-large_6b {
+    transform: translateY(4rem);
+}
+.Profit_icon__gold-small_87 {
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
+}
+.Profit_base__small_4e .Profit_icon__gold-small_87 {
+    transform: translateY(1rem);
+}
+.Profit_icon__gold-big_d4,
+.Profit_icon__gold-large_b8 {
+    --icon-height: 48rem;
+    margin-right: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_gold');
+}
+.Profit_base__large_70 .Profit_icon__gold-big_d4,
+.Profit_base__large_70 .Profit_icon__gold-large_b8 {
+    transform: translateY(4rem);
+}
+.Profit_icon__crystal-small_8d {
+    background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
+}
+.Profit_icon__crystal-big_74,
+.Profit_icon__crystal-large_6f {
+    --icon-height: 48rem;
+    margin-right: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_bonds');
+}
+.Profit_icon__multyXp-small_34 {
+    background-image: url('R.images.gui.maps.icons.library.multyXp');
+}
+.Profit_icon__multyFreeXp-small_cc {
+    background-image: url('R.images.gui.maps.icons.library.multyFreeXp');
+}
+.Profit_icon__xp-small_88 {
+    background-image: url('R.images.gui.maps.icons.library.NormalXpIcon');
+}
+.Profit_icon__xp-big_7f,
+.Profit_icon__xp-large_37 {
+    --icon-height: 48rem;
+    margin: 0 -6rem 0 -5rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.exp');
+}
+.Profit_icon__freeXP-small_26 {
+    background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
+}
+.Profit_icon__freeXP-big_36,
+.Profit_icon__freeXP-large_b0 {
+    --icon-height: 48rem;
+    margin: 0 -6rem 0 -5rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.freeExp');
+}
+.Profit_value_c4 {
+    color: #f2f2f7;
+
+    /* font-size inherit does not work here, so 1em means the size does not change */
+    /* stylelint-disable-next-line */
+    --font-size: 1em;
+    font-size: var(--font-size);
+    position: relative;
+    z-index: 2;
+}
+.Profit_base__small_4e .Profit_value_c4 {
+    padding-right: 2rem;
+}
+.Profit_base__big_52 .Profit_value_c4 {
+    --font-size: 24rem;
+    padding-left: 5rem;
+    font-weight: 700;
+}
+.Profit_base__big_52 .Profit_value_c4 + .Profit_icon_75 {
+    font-size: 24rem;
+}
+.Profit_base__large_70 .Profit_value_c4 {
+    --font-size: 36rem;
+    font-weight: 700;
+}
+.Profit_base__large_70 .Profit_value_c4 + .Profit_icon_75 {
+    font-size: 36rem;
+}
+.Profit_base__small_4e .Profit_value__notEnough_0f {
+    color: #ff2717;
+}
+.Profit_base__big_52 .Profit_value__notEnough_0f {
+    color: #b70000;
+}
+.Profit_base__large_70 .Profit_value__notEnough_0f {
+    color: #b70000;
+}
+
+.ListItem_base_7e {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.ListItem_title_b4 {
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.ListItem_description_a2 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.ListItem_base__total_1d .ListItem_description_a2 {
+    color: #fefeec;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.ListItem_dotted_6f {
+    display: flex;
+    flex: 1;
+    height: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+}
+
+.ListItem_secondCount_b7 .ListItem_dotted_6f {
+    align-self: flex-end;
+    margin-right: 3rem;
+}
+
+.ListItem_dotted__inline_34 {
+    align-self: flex-end;
+    margin-left: 3rem;
+}
+
+.ListItem_count_04 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-width: 60rem;
+}
+
+.ListItem_base__total_1d .ListItem_count_04 {
+    font-weight: 700;
+}
+
+.ListItem_profit_0a {
+    margin-left: 5rem;
+}
+
+.ListItem_text_64 {
+    display: flex;
+}
+
+.Content_base_cf {
+    display: flex;
+    flex-direction: column;
+}
+
+.Content_title_83 {
+    color: #fefeec;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 8rem;
+    box-shadow: 0 4rem 4rem 0 rgba(0, 0, 0, 0.25);
+}
+
+.Content_block_ae {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rem;
+}
+
+.Content_block__additional_6f {
+    margin-top: 0;
+}
+
+.Footer_base_e6 {
+    display: flex;
+    padding-left: 24rem;
+    position: relative;
+}
+
+.Footer_icon_b3 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.fun_random.gui.maps.icons.tooltips.battle_result.economy.info') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Footer_description_e6 {
+    color: #cbac77;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 2rem 0 0 7rem;
+}
+
+/* stylelint-disable no-missing-end-of-source-newline */
+.Header_base_ee {
+    display: flex;
+    align-items: center;
+    min-height: 48rem;
+    padding-left: 48rem;
+    position: relative;
+}
+.Header_icon_7a {
+    width: 48rem;
+    height: 48rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.Header_description_a2 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-left: 10rem;
+    position: relative;
+    top: -2rem;
+}

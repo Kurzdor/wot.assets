@@ -461,129 +461,6 @@
     color: #a29b70;
 }
 
-.TokensStepper_base_95 {
-    display: flex;
-    align-items: center;
-    width: 100rem;
-    height: 31rem;
-    border: 1rem solid #454437;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem #000000;
-    background: #0d0d0c;
-    overflow: hidden;
-    position: relative;
-    transition: border 150ms ease-in-out;
-}
-
-.TokensStepper_base__focused_1f {
-    border-color: #663c1f;
-}
-
-.TokensStepper_inputWrapper_b1 {
-    display: flex;
-    flex: 0;
-    padding: 0 9rem 0 6rem;
-}
-
-.TokensStepper_input_03 {
-    display: flex;
-    height: 24rem;
-    border: none;
-    outline: 0;
-    background-color: transparent;
-    color: #8c8c7e;
-    font-size: 20rem;
-    font-weight: 400;
-    line-height: 22rem;
-}
-
-.TokensStepper_input_03::selection {
-    background-color: #8c8c7e;
-    color: #242420;
-}
-
-.TokensStepper_input__disabled_52 {
-    width: 100%;
-}
-
-.TokensStepper_controls_bf {
-    display: flex;
-    flex-direction: column;
-}
-
-.TokensStepper_btn_f2 {
-    width: 27rem;
-    height: 15rem;
-    background: url('R.images.gui.maps.icons.components.numerical_stepper.stepper_medium_buttons') no-repeat;
-    cursor: pointer;
-}
-
-.mediaLargeWidth .TokensStepper_btn_f2 {
-    background-size: 200% 400%;
-}
-
-.TokensStepper_btnIncrement_d2 {
-    background-position-x: 0;
-    background-position-y: 0;
-}
-
-.TokensStepper_btnIncrement_d2:hover {
-    background-position-y: -15rem;
-}
-
-.TokensStepper_btnIncrement_d2:active {
-    background-position-y: -30rem;
-}
-
-.TokensStepper_btnIncrement__disabled_71,
-.TokensStepper_btnIncrement__disabled_71:hover {
-    background-position-y: -45rem;
-    cursor: default;
-}
-
-.TokensStepper_btnDecrement_3d {
-    background-position-x: 100%;
-    background-position-y: 0;
-}
-
-.TokensStepper_btnDecrement_3d:hover {
-    background-position-y: -15rem;
-}
-
-.TokensStepper_btnDecrement_3d:active {
-    background-position-y: -30rem;
-}
-
-.TokensStepper_btnDecrement__disabled_80,
-.TokensStepper_btnDecrement__disabled_80:hover {
-    background-position-y: -45rem;
-    cursor: default;
-}
-
-.Calculator_base_96 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.Calculator_calculatorField_e8 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.Calculator_calculatorField__tokens_31 {
-    margin-right: 53rem;
-}
-
-.Calculator_title_10 {
-    color: #e9e2bf;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-bottom: 10rem;
-}
-
 .Composition_base_b1 {
     display: flex;
     flex-direction: column;
@@ -1177,6 +1054,142 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: translateY(17rem);
 }
 
+.TokensStepper_base_95 {
+    display: flex;
+    align-items: center;
+    width: 104rem;
+    height: 32rem;
+    border: 1rem solid #454437;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #000000;
+    background: #0d0d0c;
+    overflow: hidden;
+    position: relative;
+    transition: border 150ms ease-in-out;
+}
+
+.TokensStepper_base__focused_1f {
+    border-color: #663c1f;
+}
+
+.TokensStepper_currency_74 {
+    display: flex;
+    align-items: center;
+    flex: 0;
+}
+
+.TokensStepper_inputWrapper_b1 {
+    display: flex;
+    flex: 0;
+    padding: 0 9rem 0 6rem;
+}
+
+.TokensStepper_input_03 {
+    display: flex;
+    height: 24rem;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    color: #8c8c7e;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 22rem;
+}
+
+.TokensStepper_input_03::selection {
+    background-color: #8c8c7e;
+    color: #242420;
+}
+
+.TokensStepper_input__disabled_52 {
+    width: 100%;
+}
+
+.TokensStepper_currencyIcon_7a {
+    width: 20rem;
+    height: 20rem;
+    margin-right: 2rem;
+    background: no-repeat center / contain;
+}
+
+.TokensStepper_controls_bf {
+    display: flex;
+    flex-direction: column;
+}
+
+.TokensStepper_btn_f2 {
+    width: 27rem;
+    height: 15rem;
+    background: url('R.images.gui.maps.icons.components.numerical_stepper.stepper_medium_buttons') no-repeat;
+    cursor: pointer;
+}
+
+.mediaLargeWidth .TokensStepper_btn_f2 {
+    background-size: 200% 400%;
+}
+
+.TokensStepper_btn__scaled_9a {
+    background-size: 200% 400%;
+}
+
+.TokensStepper_btnIncrement_d2 {
+    background-position-x: 0;
+    background-position-y: 0;
+}
+
+.TokensStepper_btnIncrement_d2:hover {
+    background-position-y: -15rem;
+}
+
+.TokensStepper_btnIncrement_d2:active {
+    background-position-y: -30rem;
+}
+
+.TokensStepper_btnIncrement__disabled_71,
+.TokensStepper_btnIncrement__disabled_71:hover {
+    background-position-y: -45rem;
+    cursor: default;
+}
+
+.TokensStepper_btnDecrement_3d {
+    background-position-x: 100%;
+    background-position-y: 0;
+}
+
+.TokensStepper_btnDecrement_3d:hover {
+    background-position-y: -15rem;
+}
+
+.TokensStepper_btnDecrement_3d:active {
+    background-position-y: -30rem;
+}
+
+.TokensStepper_btnDecrement__disabled_80,
+.TokensStepper_btnDecrement__disabled_80:hover {
+    background-position-y: -45rem;
+    cursor: default;
+}
+
+.Calculator_base_96 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Calculator_calculatorField_e8 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Calculator_calculatorField__tokens_31 {
+    margin-right: 16rem;
+}
+
+.Calculator_iconGold_54 {
+    margin-right: 0;
+}
+
 .Footer_base_fb {
     display: flex;
     flex-direction: row;
@@ -1212,7 +1225,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .Footer_content_b8 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
     padding: 47rem 53rem;
@@ -1250,13 +1263,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Footer_finalPrice_cc {
     display: flex;
     align-items: center;
-}
-.Footer_finalPrice__text_67 {
-    color: #f2f2f7;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-right: 6rem;
 }
 .Footer_finalPrice__tokens_c9 {
     color: #e9e2bf;
@@ -1366,6 +1372,33 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .Footer_productCounter_dd {
     margin-left: 6rem;
+    position: relative;
+}
+.Footer_calculator_a1 {
+    margin-left: 16rem;
+    position: relative;
+}
+.Footer_limit_c0 {
+    position: absolute;
+    right: -1rem;
+    bottom: -25rem;
+}
+.Footer_limit__text_50 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Footer_limit__text__count_2a {
+    color: #cbac77;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Footer_limit__stepper_9d {
+    display: flex;
+    justify-content: flex-end;
+    width: 200rem;
 }
 
 .Header_base_c0 {
@@ -1819,18 +1852,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .mediaMedium .App_rewards_ca {
     margin-bottom: 3rem;
-}
-.App_price_cc {
-    margin-bottom: 32rem;
-}
-.mediaSmall .App_price_cc {
-    margin-bottom: 31rem;
-}
-.mediaMedium .App_price_cc {
-    margin-bottom: 49rem;
-}
-.mediaLarge .App_price_cc {
-    margin-bottom: 96rem;
 }
 .App_footer_82 {
     width: 960rem;

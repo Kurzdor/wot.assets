@@ -918,14 +918,14 @@
                               );
                 var f = t(3403),
                     P = t(8487),
-                    y = t(401);
-                const T = (0, n.memo)(({ columnWidth: u, header: e, labels: t, headerClassMix: n, labelClassMix: a }) =>
+                    T = t(401);
+                const y = (0, n.memo)(({ columnWidth: u, header: e, labels: t, headerClassMix: n, labelClassMix: a }) =>
                     r().createElement(
                         'div',
                         { style: { width: `${u}rem` } },
-                        r().createElement('div', { className: i()(y.Z.tableHeader, n) }, e),
+                        r().createElement('div', { className: i()(T.Z.tableHeader, n) }, e),
                         t.map((u, e) =>
-                            r().createElement('div', { className: i()(y.Z.label, y.Z.label__table, a), key: e }, u),
+                            r().createElement('div', { className: i()(T.Z.label, T.Z.label__table, a), key: e }, u),
                         ),
                     ),
                 );
@@ -933,12 +933,12 @@
                 const O = (0, n.memo)(({ header: u, points: e, columnClassMix: t }) =>
                         r().createElement(
                             'div',
-                            { className: i()(y.Z.pointsColumn, t) },
-                            r().createElement('div', { className: y.Z.tableHeader }, u),
+                            { className: i()(T.Z.pointsColumn, t) },
+                            r().createElement('div', { className: T.Z.tableHeader }, u),
                             e.map((u, e) =>
                                 r().createElement(
                                     'div',
-                                    { className: y.Z.label, key: e },
+                                    { className: T.Z.label, key: e },
                                     r().createElement(S.E, { value: u }),
                                 ),
                             ),
@@ -968,7 +968,7 @@
                         return r().createElement(
                             r().Fragment,
                             null,
-                            r().createElement(T, {
+                            r().createElement(y, {
                                 columnWidth: 140,
                                 header: I.solo(),
                                 headerClassMix: k,
@@ -976,7 +976,7 @@
                                 labelClassMix: M,
                             }),
                             r().createElement(O, { points: t, columnClassMix: N }),
-                            r().createElement(T, {
+                            r().createElement(y, {
                                 columnWidth: 140,
                                 header: I.squad(),
                                 headerClassMix: k,
@@ -992,12 +992,12 @@
                             s = ((u, e, t) => (u ? t.win() : e ? t.lose() : t.loseWithoutDraw()))(u, t, a);
                         return r().createElement(
                             'div',
-                            { className: y.Z.pointsColumn },
-                            r().createElement('div', { className: y.Z.tableHeader }, s),
+                            { className: T.Z.pointsColumn },
+                            r().createElement('div', { className: T.Z.tableHeader }, s),
                             e.items.map(({ value: e }, t) =>
                                 r().createElement(
                                     'div',
-                                    { className: y.Z.label, key: t },
+                                    { className: T.Z.label, key: t },
                                     r().createElement(S.E, {
                                         value: u ? e.pointsWin : e.pointsLose,
                                         isSpecial: e.isSpecial,
@@ -1017,19 +1017,19 @@
                         return r().createElement(
                             r().Fragment,
                             null,
-                            r().createElement(T, { columnWidth: n, labels: s }),
+                            r().createElement(y, { columnWidth: n, labels: s }),
                             r().createElement(U, { points: u, win: !0, battleType: a }),
                             r().createElement(U, { points: u, win: !1, hasDraw: t, battleType: a }),
                         );
                     };
                 var $ = t(9351);
                 function z() {}
-                function q() {
+                function W() {
                     return !1;
                 }
                 console.log;
-                var Y = t(9174);
-                function W(u, e) {
+                var q = t(9174);
+                function Y(u, e) {
                     var t = ('undefined' != typeof Symbol && u[Symbol.iterator]) || u['@@iterator'];
                     if (t) return (t = t.call(u)).next.bind(t);
                     if (
@@ -1118,7 +1118,7 @@
                                                         };
                                                     },
                                                     dispose: function () {
-                                                        for (var u, t = W(r.keys()); !(u = t()).done; ) a(u.value, e);
+                                                        for (var u, t = Y(r.keys()); !(u = t()).done; ) a(u.value, e);
                                                     },
                                                     unsubscribe: a,
                                                 };
@@ -1142,11 +1142,11 @@
                                                 observableModel: {
                                                     array: (u, e) => {
                                                         const n = null != e ? e : i(u),
-                                                            r = Y.LO.box(n, { equals: q });
+                                                            r = q.LO.box(n, { equals: W });
                                                         return (
                                                             'real' === t &&
                                                                 o.subscribe(
-                                                                    (0, Y.aD)((u) => r.set(u)),
+                                                                    (0, q.aD)((u) => r.set(u)),
                                                                     u,
                                                                 ),
                                                             r
@@ -1154,11 +1154,11 @@
                                                     },
                                                     object: (u, e) => {
                                                         const n = null != e ? e : i(u),
-                                                            r = Y.LO.box(n, { equals: q });
+                                                            r = q.LO.box(n, { equals: W });
                                                         return (
                                                             'real' === t &&
                                                                 o.subscribe(
-                                                                    (0, Y.aD)((u) => r.set(u)),
+                                                                    (0, q.aD)((u) => r.set(u)),
                                                                     u,
                                                                 ),
                                                             r
@@ -1168,13 +1168,13 @@
                                                         const n = i(e);
                                                         if (Array.isArray(u)) {
                                                             const r = u.reduce(
-                                                                (u, e) => ((u[e] = Y.LO.box(n[e], {})), u),
+                                                                (u, e) => ((u[e] = q.LO.box(n[e], {})), u),
                                                                 {},
                                                             );
                                                             return (
                                                                 'real' === t &&
                                                                     o.subscribe(
-                                                                        (0, Y.aD)((e) => {
+                                                                        (0, q.aD)((e) => {
                                                                             u.forEach((u) => {
                                                                                 r[u].set(e[u]);
                                                                             });
@@ -1188,13 +1188,13 @@
                                                             const r = u,
                                                                 a = Object.entries(r),
                                                                 s = a.reduce(
-                                                                    (u, [e, t]) => ((u[t] = Y.LO.box(n[e], {})), u),
+                                                                    (u, [e, t]) => ((u[t] = q.LO.box(n[e], {})), u),
                                                                     {},
                                                                 );
                                                             return (
                                                                 'real' === t &&
                                                                     o.subscribe(
-                                                                        (0, Y.aD)((u) => {
+                                                                        (0, q.aD)((u) => {
                                                                             a.forEach(([e, t]) => {
                                                                                 s[t].set(u[e]);
                                                                             });
@@ -1399,11 +1399,11 @@
                         base__medium: 'ProgressBarBlink_base__medium_ec',
                         base__small: 'ProgressBarBlink_base__small_0f',
                     },
-                    yu = ({ size: u }) => {
+                    Tu = ({ size: u }) => {
                         const e = i()(Ru.base, Ru[`base__${u}`]);
                         return r().createElement('div', { className: e });
                     },
-                    Tu = {
+                    yu = {
                         base: 'ProgressLineImpose_base_80',
                         base__disabled: 'ProgressLineImpose_base__disabled_cc',
                         base__finished: 'ProgressLineImpose_base__finished_d4',
@@ -1417,19 +1417,19 @@
                     Su = (0, n.memo)(
                         ({ size: u, lineRef: e, disabled: t, baseStyles: n, isComplete: a, withoutBounce: s }) => {
                             const o = i()(
-                                    Tu.base,
-                                    Tu[`base__${u}`],
-                                    t && Tu.base__disabled,
-                                    a && Tu.base__finished,
-                                    s && Tu.base__withoutBounce,
+                                    yu.base,
+                                    yu[`base__${u}`],
+                                    t && yu.base__disabled,
+                                    a && yu.base__finished,
+                                    s && yu.base__withoutBounce,
                                 ),
                                 E = !t && !a;
                             return r().createElement(
                                 'div',
                                 { className: o, style: n, ref: e },
-                                r().createElement('div', { className: Tu.pattern }),
-                                r().createElement('div', { className: Tu.gradient }),
-                                E && r().createElement(yu, { size: u }),
+                                r().createElement('div', { className: yu.pattern }),
+                                r().createElement('div', { className: yu.gradient }),
+                                E && r().createElement(Tu, { size: u }),
                             );
                         },
                     ),
@@ -1529,7 +1529,7 @@
                                       r().createElement(
                                           'div',
                                           { style: _ ? B : C, className: xu },
-                                          r().createElement(yu, { size: s }),
+                                          r().createElement(Tu, { size: s }),
                                       ),
                                   );
                         },
@@ -1581,9 +1581,9 @@
                     Gu = 'ProgressBarDeltaGrow_base_7e',
                     $u = 'ProgressBarDeltaGrow_base__withoutBounce_b5',
                     zu = 'ProgressBarDeltaGrow_glow_68',
-                    qu = (u) => (u ? { left: 0 } : { right: 0 }),
-                    Yu = (u, e) => (u ? { right: 100 - e + '%' } : { left: `${e}%` }),
-                    Wu = (u) => ({ transitionDuration: `${u}ms` }),
+                    Wu = (u) => (u ? { left: 0 } : { right: 0 }),
+                    qu = (u, e) => (u ? { right: 100 - e + '%' } : { left: `${e}%` }),
+                    Yu = (u) => ({ transitionDuration: `${u}ms` }),
                     ju = (0, n.memo)(
                         ({
                             transitionDuration: u,
@@ -1627,11 +1627,11 @@
                                             ? g(ku.End, u)
                                             : void (_ && E && E());
                             }, [g, t, _, B, m, C, E, e, u]);
-                            const b = (0, n.useMemo)(() => Object.assign({ width: '100%' }, Wu(u), qu(c)), [c, u]),
-                                v = (0, n.useMemo)(() => Object.assign({ width: '0%' }, Wu(u), qu(c)), [c, u]),
-                                w = (0, n.useMemo)(() => Object.assign({ width: '0%' }, Yu(c, a), Wu(u)), [a, c, u]),
+                            const b = (0, n.useMemo)(() => Object.assign({ width: '100%' }, Yu(u), Wu(c)), [c, u]),
+                                v = (0, n.useMemo)(() => Object.assign({ width: '0%' }, Yu(u), Wu(c)), [c, u]),
+                                w = (0, n.useMemo)(() => Object.assign({ width: '0%' }, qu(c, a), Yu(u)), [a, c, u]),
                                 h = (0, n.useMemo)(
-                                    () => Object.assign({ width: `${Math.abs(o - a)}%` }, Yu(c, a), Wu(u)),
+                                    () => Object.assign({ width: `${Math.abs(o - a)}%` }, qu(c, a), Yu(u)),
                                     [a, c, o, u],
                                 );
                             if (_) return null;
@@ -1642,7 +1642,7 @@
                                 r().createElement(
                                     'div',
                                     { style: C ? v : b, className: zu },
-                                    r().createElement(yu, { size: s }),
+                                    r().createElement(Tu, { size: s }),
                                 ),
                             );
                         },
@@ -1995,6 +1995,7 @@
                         (u.PremiumPlus = 'premium_plus'),
                         (u.BattlePassPoints = 'battlePassPoints'),
                         (u.BattlePassSelectToken = 'battlePassSelectToken'),
+                        (u.SelectableBonus = 'selectableBonus'),
                         (u.StyleProgressToken = 'styleProgressToken'),
                         (u.TmanToken = 'tmanToken'),
                         (u.NaturalCover = 'naturalCover'),
@@ -2015,7 +2016,12 @@
                         (u.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (u.BattleBoosterGift = 'battleBooster_gift'),
                         (u.CosmicLootboxSilver = 'lootBoxToken'),
-                        (u.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (u.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (u.WtStamp = 'stamp'),
+                        (u.WtHunter = 'wt_hunter'),
+                        (u.WtHunterCollection = 'hunter_collection'),
+                        (u.WtTicket = 'wtevent_ticket'),
+                        (u.WtMainPrizeDiscount = 'main_prize_discount');
                 })(pe || (pe = {})),
                     (function (u) {
                         (u.Gold = 'gold'),
@@ -2109,17 +2115,15 @@
                             (u.PROGRESSION_STYLE_UPGRADED_3 = 'progressionStyleUpgraded_3'),
                             (u.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4');
                     })(fe || (fe = {}));
-                class Pe extends r().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = lu.B3.GOLD;
-                        else u = lu.B3.INTEGRAL;
-                        const e = lu.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                Pe.defaultProps = { format: 'integral' };
-                const Re = [
+                const Pe = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? lu.B3.GOLD : lu.B3.INTEGRAL;
+                            return void 0 === u ? '' : lu.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? r().createElement('span', null, t) : null;
+                    },
+                    Re = [
                         pe.Items,
                         pe.Equipment,
                         pe.Xp,
@@ -2154,9 +2158,15 @@
                         pe.BattleBoosterGift,
                         pe.CosmicLootboxCommon,
                         pe.CosmicLootboxSilver,
+                        pe.SelectableBonus,
+                        pe.WtStamp,
+                        pe.WtTicket,
+                        pe.WtMainPrizeDiscount,
+                        pe.WtHunter,
+                        pe.WtHunterCollection,
                     ],
-                    ye = [pe.Gold, pe.Credits, pe.Crystal, pe.FreeXp],
-                    Te = [pe.BattlePassPoints],
+                    Te = [pe.Gold, pe.Credits, pe.Crystal, pe.FreeXp],
+                    ye = [pe.BattlePassPoints],
                     Se = [pe.PremiumPlus, pe.Premium],
                     Oe = ['engravings', 'backgrounds'],
                     Ne = ['engraving', 'background'],
@@ -2219,6 +2229,7 @@
                             case 'groups':
                             case 'tmanToken':
                             case 'battlePassSelectToken':
+                            case 'selectableBonus':
                                 return `R.images.gui.maps.icons.quests.bonuses.${e}.${a}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${e}.${a}`;
@@ -2475,9 +2486,9 @@
                         );
                     },
                     ze = ['children', 'body', 'header', 'note', 'alert', 'args'];
-                function qe() {
+                function We() {
                     return (
-                        (qe =
+                        (We =
                             Object.assign ||
                             function (u) {
                                 for (var e = 1; e < arguments.length; e++) {
@@ -2486,11 +2497,11 @@
                                 }
                                 return u;
                             }),
-                        qe.apply(this, arguments)
+                        We.apply(this, arguments)
                     );
                 }
-                const Ye = R.views.common.tooltip_window.simple_tooltip_content,
-                    We = (u) => {
+                const qe = R.views.common.tooltip_window.simple_tooltip_content,
+                    Ye = (u) => {
                         let e = u.children,
                             t = u.body,
                             a = u.header,
@@ -2513,11 +2524,11 @@
                         }, [o, t, a, s, i]);
                         return r().createElement(
                             Le,
-                            qe(
+                            We(
                                 {
                                     contentId:
                                         ((A = null == i ? void 0 : i.hasHtmlContent),
-                                        A ? Ye.SimpleTooltipHtmlContent('resId') : Ye.SimpleTooltipContent('resId')),
+                                        A ? qe.SimpleTooltipHtmlContent('resId') : qe.SimpleTooltipContent('resId')),
                                     decoratorId: R.views.common.tooltip_window.tooltip_window.TooltipWindow('resId'),
                                     args: l,
                                 },
@@ -2544,7 +2555,7 @@
                 const He = ({ children: u, tooltipArgs: e, className: t }) => {
                         if (!e) return u;
                         const n = r().createElement('div', { className: t }, u);
-                        if (e.header || e.body) return r().createElement(We, e, n);
+                        if (e.header || e.body) return r().createElement(Ye, e, n);
                         const a = e.contentId,
                             s = e.args,
                             o = null == s ? void 0 : s.contentId;
@@ -2749,9 +2760,9 @@
                                 ((e = u.name),
                                 Re.includes(e)
                                     ? ve.MULTI
-                                    : ye.includes(e)
+                                    : Te.includes(e)
                                       ? ve.CURRENCY
-                                      : Te.includes(e)
+                                      : ye.includes(e)
                                         ? ve.NUMBER
                                         : Se.includes(e)
                                           ? ve.PREMIUM_PLUS
@@ -2825,7 +2836,8 @@
                                 ),
                             },
                             d = a === lt.BATTLE_ROYALE,
-                            _ = a === lt.FRONTLINE;
+                            _ = a === lt.FRONTLINE,
+                            B = a === lt.RANKED;
                         return r().createElement(
                             'div',
                             { className: Q.base },
@@ -2865,22 +2877,23 @@
                                           mixClass: Q.playGame,
                                       }),
                             ),
-                            d
-                                ? r().createElement(
-                                      $.c,
-                                      { mixClass: Q.perBattlePointsTable, separatorRows: A.soloMode },
-                                      r().createElement(x, { rewardPoints: A }),
-                                  )
-                                : r().createElement(
-                                      $.c,
-                                      { mixClass: Q.perBattlePointsTable, separatorRows: l.items },
-                                      r().createElement(G, {
-                                          rewardPoints: l,
-                                          hasDraw: !_,
-                                          topPlace: (a === lt.COMP7 ? Dt : Ft).topPlace(),
-                                          battleType: a,
-                                      }),
-                                  ),
+                            !B &&
+                                (d
+                                    ? r().createElement(
+                                          $.c,
+                                          { mixClass: Q.perBattlePointsTable, separatorRows: A.soloMode },
+                                          r().createElement(x, { rewardPoints: A }),
+                                      )
+                                    : r().createElement(
+                                          $.c,
+                                          { mixClass: Q.perBattlePointsTable, separatorRows: l.items },
+                                          r().createElement(G, {
+                                              rewardPoints: l,
+                                              hasDraw: !_,
+                                              topPlace: (a === lt.COMP7 ? Dt : Ft).topPlace(),
+                                              battleType: a,
+                                          }),
+                                      )),
                             F &&
                                 r().createElement(
                                     r().Fragment,

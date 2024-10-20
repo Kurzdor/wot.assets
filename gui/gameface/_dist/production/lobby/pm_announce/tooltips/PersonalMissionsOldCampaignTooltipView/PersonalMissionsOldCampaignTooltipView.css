@@ -1,0 +1,575 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.Box_mt__XS_0c {
+    margin-top: 4rem;
+}
+.Box_mt__SM_eb {
+    margin-top: 8rem;
+}
+.Box_mt__SMp_cf {
+    margin-top: 10rem;
+}
+.Box_mt__MD_25 {
+    margin-top: 16rem;
+}
+.Box_mt__MDp_49 {
+    margin-top: 20rem;
+}
+.Box_mt__LG_e8 {
+    margin-top: 32rem;
+}
+.Box_mt__XL_83 {
+    margin-top: 64rem;
+}
+
+.Box_mr__XS_7c {
+    margin-right: 4rem;
+}
+
+.Box_mr__SM_08 {
+    margin-right: 8rem;
+}
+
+.Box_mr__SMp_06 {
+    margin-right: 10rem;
+}
+
+.Box_mr__MD_4a {
+    margin-right: 16rem;
+}
+
+.Box_mr__MDp_b6 {
+    margin-right: 20rem;
+}
+
+.Box_mr__LG_d0 {
+    margin-right: 32rem;
+}
+
+.Box_mr__XL_db {
+    margin-right: 64rem;
+}
+
+.Box_mb__XS_bb {
+    margin-bottom: 4rem;
+}
+
+.Box_mb__SM_83 {
+    margin-bottom: 8rem;
+}
+
+.Box_mb__SMp_04 {
+    margin-bottom: 10rem;
+}
+
+.Box_mb__MD_ed {
+    margin-bottom: 16rem;
+}
+
+.Box_mb__MDp_65 {
+    margin-bottom: 20rem;
+}
+
+.Box_mb__LG_c8 {
+    margin-bottom: 32rem;
+}
+
+.Box_mb__XL_f8 {
+    margin-bottom: 64rem;
+}
+
+.Box_ml__XS_8a {
+    margin-left: 4rem;
+}
+
+.Box_ml__SM_e6 {
+    margin-left: 8rem;
+}
+
+.Box_ml__SMp_fb {
+    margin-left: 10rem;
+}
+
+.Box_ml__MD_2b {
+    margin-left: 16rem;
+}
+
+.Box_ml__MDp_c7 {
+    margin-left: 20rem;
+}
+
+.Box_ml__LG_39 {
+    margin-left: 32rem;
+}
+
+.Box_ml__XL_4a {
+    margin-left: 64rem;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* eslint-disable-next-line expectedscss*/
+.Text_paragraph-P10_2c {
+    font-size: 10rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_paragraph-P12_22 {
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Text_paragraph-P14_a7 {
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Text_paragraph-P16_90 {
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Text_paragraph-P18_50 {
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Text_paragraph-P24_33 {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 32rem;
+}
+.Text_heading-H14_8b {
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.Text_heading-H15_9e {
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.Text_heading-H18_b7 {
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H20R_f6 {
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H22_27 {
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H24R_be {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H24_0c {
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H28_78 {
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H36_32 {
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H56_c3 {
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H73_8f {
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H144_a9 {
+    font-size: 144rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.Text_BLACK_REAL_30 {
+    color: #000000;
+}
+.Text_WHITE_REAL_bc {
+    color: #ffffff;
+}
+.Text_WHITE_62 {
+    color: #f2f2f7;
+}
+.Text_WHITE_ORANGE_54 {
+    color: #fefeec;
+}
+.Text_WHITE_SPANISH_df {
+    color: #e9e2bf;
+}
+.Text_PAR_15 {
+    color: #8c8c7e;
+}
+.Text_PAR_SECONDARY_5d {
+    color: #595950;
+}
+.Text_PAR_TERTIARY_c9 {
+    color: #37362e;
+}
+.Text_INFO_RED_30 {
+    color: #ff0000;
+}
+.Text_RED_66 {
+    color: #ff2717;
+}
+.Text_RED_DARK_d8 {
+    color: #b70000;
+}
+.Text_YELLOW_ed {
+    color: #feab34;
+}
+.Text_ORANGE_be {
+    color: #ee7000;
+}
+.Text_CREAM_57 {
+    color: #ffdd99;
+}
+.Text_BROWN_18 {
+    color: #cbac77;
+}
+.Text_GREEN_BRIGHT_3f {
+    color: #80d43a;
+}
+.Text_GREEN_e3 {
+    color: #7ab300;
+}
+.Text_GREEN_DARK_f1 {
+    color: #497212;
+}
+.Text_BLUE_BOOSTER_21 {
+    color: #ccffff;
+}
+.Text_BLUE_TEAMKILLER_ab {
+    color: #09e2ff;
+}
+.Text_CRED_f7 {
+    color: #ced9d9;
+}
+.Text_GOLD_28 {
+    color: #ffc363;
+}
+.Text_BOND_be {
+    color: #c9c9b6;
+}
+.Text_PROM_65 {
+    color: #a29b70;
+}
+
+.App_base_89 {
+    width: 410rem;
+    height: 629rem;
+    position: relative;
+}
+
+.App_base__completed_14 {
+    height: 504rem;
+}
+
+.App_base__completedPerfect_ee {
+    height: 209rem;
+}
+.App_bg_c2 {
+    width: 410rem;
+    height: 160rem;
+    background: url('R.images.gui.maps.icons.pm_announce.tooltips.old.bg') no-repeat center / cover;
+    position: absolute;
+    z-index: 1;
+}
+.App_content_85 {
+    width: 100%;
+    height: 100%;
+    padding: 20rem 20rem 28rem;
+    position: absolute;
+    z-index: 2;
+}
+.App_header_bf {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 36rem;
+}
+.App_base__completedPerfect_ee .App_header_bf {
+    margin-bottom: 30rem;
+}
+.App_subTitle_b0 {
+    color: #e9e2bf;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 20rem;
+}
+.App_subTitle__rewards_dc {
+    position: absolute;
+    top: 16rem;
+    z-index: 2;
+}
+.App_operationsWrapper_51 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20rem;
+}
+.App_base__completed_14 .App_operationsWrapper_51 {
+    margin-bottom: 16rem;
+}
+.App_operation_8b {
+    display: flex;
+    align-items: center;
+    margin-left: 70rem;
+    margin-bottom: 4rem;
+}
+.App_operation__last_74 {
+    margin-bottom: 0;
+}
+.App_operationText_b9 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.App_operationText__done_fd {
+    margin-right: 2rem;
+}
+.App_operationText__name_d5 {
+    width: 168rem;
+    margin-right: 4rem;
+}
+.App_operationText__divider_76 {
+    margin-right: 2rem;
+}
+.App_operationText__completed_68 {
+    color: #7ab300;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.App_operationText__active_8b {
+    color: #feab34;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.App_operationText__empty_3c {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.App_dot_10 {
+    width: 18rem;
+    height: 18rem;
+    margin-right: 4rem;
+    background: url('R.images.gui.maps.icons.pm_announce.tooltips.old.dot') no-repeat center / cover;
+}
+.App_rewardsSection_2e {
+    width: 100%;
+    height: 228rem;
+    margin-bottom: 7rem;
+    padding-top: 16rem;
+    position: relative;
+}
+.App_rewardsWrapper_81 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 41rem;
+    z-index: 2;
+}
+.App_reward_39 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15rem;
+}
+.App_reward__lastInRow_6e {
+    margin-right: 0;
+}
+.App_rewardIcon_7c {
+    width: 80rem;
+    height: 80rem;
+    background: no-repeat center / cover;
+}
+.App_rewardName_ff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8rem;
+    transform: translateX(-4rem);
+}
+.App_rewardText_29 {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.App_rewardText__completed_b2 {
+    opacity: 0.7;
+}
+.App_ribbon_af {
+    width: 410rem;
+    height: 180rem;
+    background: url('R.images.gui.maps.icons.pm_announce.tooltips.old.ribbon') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: -20rem;
+    z-index: 1;
+}
+.App_labelIcon_e2 {
+    width: 16rem;
+    height: 18rem;
+    background: no-repeat center / cover;
+}
+.App_labelIcon__completed_0a {
+    background-image: url('R.images.gui.maps.icons.pm_announce.tooltips.old.check');
+    transform: translateY(2rem);
+}
+.App_labelIcon__locked_e4 {
+    width: 18rem;
+    height: 18rem;
+    background-image: url('R.images.gui.maps.icons.pm_announce.tooltips.old.locked');
+}
+.App_rewardCollected_f2 {
+    height: 76rem;
+    margin-bottom: 19rem;
+    position: relative;
+}
+.App_rewardCollectedBg_f0 {
+    width: 410rem;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.pm_announce.tooltips.old.bgWithoutPerfect') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: -20rem;
+    z-index: 1;
+}
+.App_rewardCollectedLabel_04 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.App_rewardCollectedLabelIcon_d2 {
+    width: 24rem;
+    height: 24rem;
+    margin-right: 4rem;
+    background: url('R.images.gui.maps.icons.pm_announce.tooltips.old.completed') no-repeat center / cover;
+}
+.App_rewardCollectedLabelText_b7 {
+    color: #7ab300;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.App_divider_34 {
+    width: 363rem;
+    height: 9rem;
+    margin-left: 3rem;
+    margin-bottom: 15rem;
+    background: url('R.images.gui.maps.icons.pm_announce.tooltips.old.divider') no-repeat center / cover;
+}
+.App_base__completedPerfect_ee .App_divider_34 {
+    margin-bottom: 16rem;
+}
+.App_divider__operations_57 {
+    margin-bottom: 4rem;
+}
+.App_footer_ab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.App_footerLabel_d0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.App_footerLabel_d0 .App_base__completed_14 {
+    margin-bottom: 6rem;
+}
+.App_base__completedPerfect_ee .App_footerLabel_d0 {
+    margin-bottom: 4rem;
+}
+.App_footerLabelIcon_15 {
+    width: 24rem;
+    height: 24rem;
+    margin-right: 4rem;
+    background: url('R.images.gui.maps.icons.pm_announce.tooltips.old.flag') no-repeat center / cover;
+}
+.App_base__completedPerfect_ee .App_footerLabelIcon_15 {
+    background-image: url('R.images.gui.maps.icons.battlePass.chapter_choice.double_check');
+}
+.App_footerLabelText_c0 {
+    color: #ffdd99;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.App_base__completedPerfect_ee .App_footerLabelText_c0 {
+    color: #7ab300;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.App_footerBottomWrapper_0a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.App_footerBottomText_24 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 279rem;
+    text-align: center;
+    opacity: 0.7;
+}
+.App_base__completedPerfect_ee .App_footerBottomText_24 {
+    width: 265rem;
+}

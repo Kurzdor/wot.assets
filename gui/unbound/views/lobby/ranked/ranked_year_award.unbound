@@ -205,31 +205,6 @@
                 (bind bottom "pointsCompensated > 0 ? 80px : 100px")
             )
 
-            (block
-                (name = 'rewardImgBlock')
-                (style
-                    (position = "absolute")
-                    (hcenter = 0)
-                    (vcenter = -160px)
-                )
-                (image
-                    (style
-                        (filters
-                            (blur
-                                (bind blurX "blurValue")
-                                (bind blurY "blurValue")
-                                (quality = 2)
-                            )
-                        )
-                    )
-                    (bind source "R.images.gui.maps.icons.rankedBattles.awards.big[awardType].exists() ? 
-                                R.images.gui.maps.icons.rankedBattles.awards.big[awardType]() : ''"
-                        (bind enabled "awardType !=''")
-                    )
-                )
-                (macro EmptyHitAreaMacro)
-            )
-
             (element RewardsRibbon
                 (name = 'rewardsRibbonElement')
                 (scope

@@ -1918,21 +1918,21 @@
                 };
                 var L = t(493),
                     H = t.n(L);
-                let U, $;
+                let U, W;
                 !(function (e) {
-                    (e.Default = 'default'), (e.Winback = 'winback');
+                    e.Default = 'default';
                 })(U || (U = {})),
                     (function (e) {
                         (e.AVAILABLE = 'available'), (e.DISABLED = 'disabled'), (e.NO_OFFERS = 'no_offers');
-                    })($ || ($ = {}));
-                var W = t(5521),
+                    })(W || (W = {}));
+                var $ = t(5521),
                     z = t(4179);
                 const G = (e) => {
                     console.error(e.type + ': useKeydownListener hook :: Callback is not defined');
                 };
-                function Q(e = W.n.NONE, u = G, t = !1) {
+                function Q(e = $.n.NONE, u = G, t = !1) {
                     (0, r.useEffect)(() => {
-                        if (e !== W.n.NONE)
+                        if (e !== $.n.NONE)
                             return (
                                 window.addEventListener('keydown', n, t),
                                 () => {
@@ -1979,6 +1979,7 @@
                         (e.PremiumPlus = 'premium_plus'),
                         (e.BattlePassPoints = 'battlePassPoints'),
                         (e.BattlePassSelectToken = 'battlePassSelectToken'),
+                        (e.SelectableBonus = 'selectableBonus'),
                         (e.StyleProgressToken = 'styleProgressToken'),
                         (e.TmanToken = 'tmanToken'),
                         (e.NaturalCover = 'naturalCover'),
@@ -1999,7 +2000,12 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.WtStamp = 'stamp'),
+                        (e.WtHunter = 'wt_hunter'),
+                        (e.WtHunterCollection = 'hunter_collection'),
+                        (e.WtTicket = 'wtevent_ticket'),
+                        (e.WtMainPrizeDiscount = 'main_prize_discount');
                 })(j || (j = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -2093,17 +2099,15 @@
                             (e.PROGRESSION_STYLE_UPGRADED_3 = 'progressionStyleUpgraded_3'),
                             (e.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4');
                     })(ee || (ee = {}));
-                class ue extends s().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = z.B3.GOLD;
-                        else e = z.B3.INTEGRAL;
-                        const u = z.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                ue.defaultProps = { format: 'integral' };
-                const te = [
+                const ue = ({ format: e, value: u }) => {
+                        const t = ((e, u = 'integral') => {
+                            let t;
+                            t = 'gold' === u ? z.B3.GOLD : z.B3.INTEGRAL;
+                            return void 0 === e ? '' : z.Z5.getNumberFormat(e, t);
+                        })(u, e);
+                        return t ? s().createElement('span', null, t) : null;
+                    },
+                    te = [
                         j.Items,
                         j.Equipment,
                         j.Xp,
@@ -2138,6 +2142,12 @@
                         j.BattleBoosterGift,
                         j.CosmicLootboxCommon,
                         j.CosmicLootboxSilver,
+                        j.SelectableBonus,
+                        j.WtStamp,
+                        j.WtTicket,
+                        j.WtMainPrizeDiscount,
+                        j.WtHunter,
+                        j.WtHunterCollection,
                     ],
                     ne = [j.Gold, j.Credits, j.Crystal, j.FreeXp],
                     ae = [j.BattlePassPoints],
@@ -2213,6 +2223,7 @@
                             case 'groups':
                             case 'tmanToken':
                             case 'battlePassSelectToken':
+                            case 'selectableBonus':
                                 return `R.images.gui.maps.icons.quests.bonuses.${u}.${r}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${u}.${r}`;
@@ -2544,7 +2555,7 @@
                 }
                 const He = (e) => (0 === e ? window : window.subViews.get(e));
                 var Ue = t(3946);
-                const $e = ((e, u) => {
+                const We = ((e, u) => {
                         const t = (0, r.createContext)({});
                         return [
                             function ({ mode: n = 'real', options: a, children: i, mocks: l }) {
@@ -2835,8 +2846,8 @@
                             claimRewards: e.createCallbackNoArgs('onClaimRewards'),
                         }),
                     ),
-                    We = $e[0],
-                    ze = $e[1],
+                    $e = We[0],
+                    ze = We[1],
                     Ge = {
                         base: 'App_base_32',
                         background: 'App_background_15',
@@ -3816,8 +3827,8 @@
                     Lu = 'VerticalBar_topButton_d7',
                     Hu = 'VerticalBar_bottomButton_06',
                     Uu = 'VerticalBar_track_df',
-                    $u = 'VerticalBar_thumb_32',
-                    Wu = 'VerticalBar_rail_43',
+                    Wu = 'VerticalBar_thumb_32',
+                    $u = 'VerticalBar_rail_43',
                     zu = 'disable',
                     Gu = () => {},
                     Qu = { pending: !1, offset: 0 },
@@ -3855,7 +3866,7 @@
                                 const s = Math.min(1, n / r);
                                 return (
                                     (u.style.height = `${ju(t, s)}px`),
-                                    u.classList.add($u),
+                                    u.classList.add(Wu),
                                     a.current &&
                                         (1 === s ? a.current.classList.add(Iu) : a.current.classList.remove(Iu)),
                                     s
@@ -3997,7 +4008,7 @@
                                     onMouseEnter: f,
                                 },
                                 s().createElement('div', { ref: c, className: u.thumb }),
-                                s().createElement('div', { className: b()(Wu, u.rail) }),
+                                s().createElement('div', { className: b()($u, u.rail) }),
                             ),
                             s().createElement('div', {
                                 className: b()(Hu, u.bottomButton),
@@ -4419,10 +4430,10 @@
                     Lt = 'BonusCard_wrapper_2b',
                     Ht = 'BonusCard_flag_83',
                     Ut = 'BonusCard_content_42',
-                    $t = ['children'];
-                function Wt() {
+                    Wt = ['children'];
+                function $t() {
                     return (
-                        (Wt =
+                        ($t =
                             Object.assign ||
                             function (e) {
                                 for (var u = 1; u < arguments.length; u++) {
@@ -4431,7 +4442,7 @@
                                 }
                                 return e;
                             }),
-                        Wt.apply(this, arguments)
+                        $t.apply(this, arguments)
                     );
                 }
                 const zt = (e) => {
@@ -4444,10 +4455,10 @@
                                 r = Object.keys(e);
                             for (n = 0; n < r.length; n++) (t = r[n]), u.indexOf(t) >= 0 || (a[t] = e[t]);
                             return a;
-                        })(e, $t);
+                        })(e, Wt);
                     return s().createElement(
                         eu,
-                        Wt(
+                        $t(
                             {
                                 contentId:
                                     R.views.common.tooltip_window.backport_tooltip_content.BackportTooltipContent(
@@ -5104,8 +5115,8 @@
                 const Ln = 'BattleCondition_base_96',
                     Hn = 'BattleCondition_text_64',
                     Un = 'BattleCondition_base__prem_1a',
-                    $n = 'BattleCondition_progressInfo_8a',
-                    Wn = 'BattleCondition_progressBar_2b',
+                    Wn = 'BattleCondition_progressInfo_8a',
+                    $n = 'BattleCondition_progressBar_2b',
                     zn = (0, q.Pi)(({ quest: e, className: u, isPremium: t }) => {
                         const n = Se(e.bonusCondition, e.postBattleCondition);
                         return n
@@ -5120,7 +5131,7 @@
                                       missionId: e.id,
                                       swapProgress: !0,
                                       reverse: !0,
-                                      classNames: { text: Hn, progressInfo: $n, progressBar: Wn },
+                                      classNames: { text: Hn, progressInfo: Wn, progressBar: $n },
                                   }),
                               )
                             : null;
@@ -5781,8 +5792,8 @@
                     });
                 var Ha = t(1975);
                 const Ua = 'Progress_base_ff',
-                    $a = 'Progress_infoContainer_26',
-                    Wa = 'Progress_missionsCompleted_a3',
+                    Wa = 'Progress_infoContainer_26',
+                    $a = 'Progress_missionsCompleted_a3',
                     za = 'Progress_title_63',
                     Ga = 'Progress_description_4a',
                     Qa = 'Progress_current_dd',
@@ -5828,10 +5839,10 @@
                                       null,
                                       s().createElement(
                                           'div',
-                                          { className: $a },
+                                          { className: Wa },
                                           s().createElement(
                                               'div',
-                                              { className: Wa },
+                                              { className: $a },
                                               s().createElement(
                                                   'div',
                                                   { className: za },
@@ -6008,7 +6019,7 @@
                         countdown: 'TakeRewards_countdown_60',
                         countdownIcon: 'TakeRewards_countdownIcon_c8',
                     },
-                    Er = { [$.AVAILABLE]: 'active', [$.NO_OFFERS]: 'hidden', [$.DISABLED]: 'disabled' },
+                    Er = { [W.AVAILABLE]: 'active', [W.NO_OFFERS]: 'hidden', [W.DISABLED]: 'disabled' },
                     _r = R.strings.quests.dailyQuests.takeRewardsButton,
                     Ar = (0, q.Pi)(({ className: e }) => {
                         const u = ze(),
@@ -6017,7 +6028,7 @@
                             a = t.root.get(),
                             r = a.getRewardsTimeLeft,
                             i = a.offersState,
-                            o = i === $.DISABLED,
+                            o = i === W.DISABLED,
                             l = ((e, u = !0) =>
                                 e.days > 7 && u
                                     ? (0, tt.WU)(R.strings.common.duration.days(), { days: e.days })
@@ -6090,7 +6101,7 @@
                             r = a.infoVisible,
                             i = a.offersState;
                         var o;
-                        (o = r ? n.infoToggle : n.close), Q(W.n.ESCAPE, o);
+                        (o = r ? n.infoToggle : n.close), Q($.n.ESCAPE, o);
                         const l = null != (e = ve(t.computes.getCurrentTabIndex())) ? e : '',
                             c = (0, V.useTransition)(l, {
                                 from: { opacity: 0 },
@@ -6116,7 +6127,7 @@
                                             null,
                                             s().createElement(sr, null),
                                             i &&
-                                                i !== $.NO_OFFERS &&
+                                                i !== W.NO_OFFERS &&
                                                 s().createElement(Ar, { className: Ge.rewardsButton }),
                                         ),
                                   s().createElement(su, { className: b()(Ge.infoButton, !r && Ge.infoButton__info) }),
@@ -6124,7 +6135,7 @@
                     });
                 engine.whenReady.then(() => {
                     H().render(
-                        s().createElement(I, null, s().createElement(We, null, s().createElement(gr, null))),
+                        s().createElement(I, null, s().createElement($e, null, s().createElement(gr, null))),
                         document.getElementById('root'),
                     );
                 });

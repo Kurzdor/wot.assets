@@ -847,7 +847,7 @@
             },
             4179: (e, u, t) => {
                 'use strict';
-                t.d(u, { kH: () => m, B3: () => c, Z5: () => a, lf: () => E, cy: () => s, B0: () => i, ry: () => C });
+                t.d(u, { kH: () => m, Z5: () => a, lf: () => E, cy: () => s, B0: () => i, ry: () => C });
                 class n {
                     constructor() {
                         (this.entries = []),
@@ -4724,6 +4724,11 @@
                                           },
                                           disabled: c !== Ft.StorageViewing && !(null != D && D.videoRes),
                                       }),
+                                      s().createElement(
+                                          'div',
+                                          { className: 'App_currencyWrapper_bb' },
+                                          s().createElement(qu, null),
+                                      ),
                                   )
                                 : s().createElement(mt, {
                                       isShopAvailable: m,
@@ -4736,11 +4741,6 @@
                                     { className: 'App_buyButtonWrapper_6b' },
                                     s().createElement(tu, { buyBox: Z }),
                                 ),
-                            s().createElement(
-                                'div',
-                                { className: 'App_currencyWrapper_bb' },
-                                s().createElement(qu, null),
-                            ),
                         );
                     }),
                     Rt = {
@@ -5098,11 +5098,13 @@
             },
             6620: (e, u, t) => {
                 'use strict';
-                t.d(u, { s: () => T });
+                t.d(u, { s: () => w });
                 var n = t(6179),
                     r = t.n(n);
                 let o, a, s, i, l, c, d;
                 var E, m, _, A;
+                let F, D, B, C, p, g, b, v;
+                var h, f, x;
                 !(function (e) {
                     (e.Items = 'items'),
                         (e.Equipment = 'equipment'),
@@ -5132,6 +5134,7 @@
                         (e.PremiumPlus = 'premium_plus'),
                         (e.BattlePassPoints = 'battlePassPoints'),
                         (e.BattlePassSelectToken = 'battlePassSelectToken'),
+                        (e.SelectableBonus = 'selectableBonus'),
                         (e.StyleProgressToken = 'styleProgressToken'),
                         (e.TmanToken = 'tmanToken'),
                         (e.NaturalCover = 'naturalCover'),
@@ -5152,7 +5155,12 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.WtStamp = 'stamp'),
+                        (e.WtHunter = 'wt_hunter'),
+                        (e.WtHunterCollection = 'hunter_collection'),
+                        (e.WtTicket = 'wtevent_ticket'),
+                        (e.WtMainPrizeDiscount = 'main_prize_discount');
                 })(o || (o = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -5235,19 +5243,8 @@
                     (E.PROGRESSION_STYLE_UPGRADED_1 = 'progressionStyleUpgraded_1'),
                     (E.PROGRESSION_STYLE_UPGRADED_2 = 'progressionStyleUpgraded_2'),
                     (E.PROGRESSION_STYLE_UPGRADED_3 = 'progressionStyleUpgraded_3'),
-                    (E.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4');
-                var F = t(4179);
-                class D extends r().PureComponent {
-                    render() {
-                        let e;
-                        e = 'gold' === this.props.format ? F.B3.GOLD : F.B3.INTEGRAL;
-                        const u = F.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                let B, C, p, g, b, v, h, f;
-                var x, w, y;
-                (D.defaultProps = { format: 'integral' }),
+                    (E.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4'),
+                    t(4179),
                     o.Items,
                     o.Equipment,
                     o.Xp,
@@ -5282,6 +5279,12 @@
                     o.BattleBoosterGift,
                     o.CosmicLootboxCommon,
                     o.CosmicLootboxSilver,
+                    o.SelectableBonus,
+                    o.WtStamp,
+                    o.WtTicket,
+                    o.WtMainPrizeDiscount,
+                    o.WtHunter,
+                    o.WtHunterCollection,
                     o.Gold,
                     o.Credits,
                     o.Crystal,
@@ -5289,42 +5292,42 @@
                     o.BattlePassPoints,
                     o.PremiumPlus,
                     o.Premium,
-                    ((y = B || (B = {})).Active = 'active'),
-                    (y.Paused = 'paused'),
-                    (y.Completed = 'completed'),
-                    (y.NotStarted = 'notStarted'),
-                    (y.Disabled = 'disabled'),
+                    ((x = F || (F = {})).Active = 'active'),
+                    (x.Paused = 'paused'),
+                    (x.Completed = 'completed'),
+                    (x.NotStarted = 'notStarted'),
+                    (x.Disabled = 'disabled'),
                     (function (e) {
                         (e.Default = 'default'), (e.Marathon = 'marathon'), (e.Resource = 'resource');
-                    })(C || (C = {})),
+                    })(D || (D = {})),
                     (function (e) {
                         (e.Micro = 'micro'), (e.Small = 'small'), (e.Medium = 'medium');
-                    })(p || (p = {})),
+                    })(B || (B = {})),
                     (function (e) {
                         (e.ACTIVE = 'active'), (e.COMPLETED = 'completed'), (e.NOT_CHOSEN = 'notChosen');
-                    })(g || (g = {})),
-                    ((w = b || (b = {})).AwaitSeason = 'awaitSeason'),
-                    (w.Bought = 'bought'),
-                    (w.Free = 'free'),
-                    (w.Completed = 'completed'),
-                    (w.CompletedRightNow = 'completedRightNow'),
-                    (w.SwitchedChapterRightNow = 'switchedChapterRightNow'),
-                    (w.NoVehiclesBase = 'noVehiclesBase'),
-                    (w.ChapterNotChosen = 'chapterNotChosen'),
+                    })(C || (C = {})),
+                    ((f = p || (p = {})).AwaitSeason = 'awaitSeason'),
+                    (f.Bought = 'bought'),
+                    (f.Free = 'free'),
+                    (f.Completed = 'completed'),
+                    (f.CompletedRightNow = 'completedRightNow'),
+                    (f.SwitchedChapterRightNow = 'switchedChapterRightNow'),
+                    (f.NoVehiclesBase = 'noVehiclesBase'),
+                    (f.ChapterNotChosen = 'chapterNotChosen'),
                     (function (e) {
                         (e.None = ''),
                             (e.ShowLevel = 'show'),
                             (e.HideLevel = 'hide'),
                             (e.HideLevelWithDelay = 'hideWithDelay');
-                    })(v || (v = {})),
-                    ((x = h || (h = {})).style = 'style'),
-                    (x.tankman = 'tankman'),
+                    })(g || (g = {})),
+                    ((h = b || (b = {})).style = 'style'),
+                    (h.tankman = 'tankman'),
                     (function (e) {
                         (e.Default = 'default'), (e.Marathon = 'marathon'), (e.Resource = 'resource');
-                    })(f || (f = {})),
-                    h.style,
-                    h.tankman;
-                const T = ({ icon: e, count: u }) =>
+                    })(v || (v = {})),
+                    b.style,
+                    b.tankman;
+                const w = ({ icon: e, count: u }) =>
                     r().createElement(
                         'div',
                         { className: 'CurrencyKey_base_53' },

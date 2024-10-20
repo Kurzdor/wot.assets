@@ -1529,7 +1529,7 @@
                     );
                 };
                 var J = t(5521);
-                let ee, ue, te, ne;
+                let ee, ue, te;
                 !(function (e) {
                     (e.small = 'small'), (e.big = 'big'), (e.large = 'large'), (e.extraLarge = 'extraLarge');
                 })(ee || (ee = {})),
@@ -1544,19 +1544,18 @@
                     (function (e) {
                         (e.Red = 'RedActionBG'), (e.Blue = 'BlueActionBG');
                     })(te || (te = {}));
-                class ae extends a().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = l.B3.GOLD;
-                        else e = l.B3.INTEGRAL;
-                        const u = l.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                (ae.defaultProps = { format: 'integral' }),
-                    (function (e) {
-                        (e.backport = 'backport'), (e.normal = 'normal'), (e.absent = 'absent');
-                    })(ne || (ne = {}));
+                const ne = ({ format: e, value: u }) => {
+                    const t = ((e, u = 'integral') => {
+                        let t;
+                        t = 'gold' === u ? l.B3.GOLD : l.B3.INTEGRAL;
+                        return void 0 === e ? '' : l.Z5.getNumberFormat(e, t);
+                    })(u, e);
+                    return t ? a().createElement('span', null, t) : null;
+                };
+                let ae;
+                !(function (e) {
+                    (e.backport = 'backport'), (e.normal = 'normal'), (e.absent = 'absent');
+                })(ae || (ae = {}));
                 const ie = {
                         currency: 'CurrencyItem_currency_b6',
                         currency__credits: 'CurrencyItem_currency__credits_eb',
@@ -1568,17 +1567,17 @@
                         const i = u === ue.gold ? 'gold' : 'integral',
                             r = (0, n.useMemo)(() => {
                                 return (
-                                    (e = ne.backport),
+                                    (e = ae.backport),
                                     (t = { currency: u }),
                                     {
-                                        isEnabled: e !== ne.absent,
+                                        isEnabled: e !== ae.absent,
                                         args: t,
                                         contentId: R.views.dialogs.common.DialogTemplateGenericTooltip('resId'),
                                         decoratorId:
-                                            e === ne.normal
+                                            e === ae.normal
                                                 ? R.views.common.tooltip_window.tooltip_window.TooltipWindow('resId')
                                                 : void 0,
-                                        ignoreShowDelay: e === ne.backport,
+                                        ignoreShowDelay: e === ae.backport,
                                         ignoreMouseClick: !0,
                                     }
                                 );
@@ -1590,7 +1589,7 @@
                             a().createElement(
                                 'span',
                                 { className: D()(ie.currency, ie[`currency__${u}`]) },
-                                t ? a().createElement(ae, { value: e, format: i }) : R.strings.common.common.dashes(),
+                                t ? a().createElement(ne, { value: e, format: i }) : R.strings.common.common.dashes(),
                             ),
                         );
                     },
@@ -1832,7 +1831,7 @@
                                 'span',
                                 { className: c },
                                 d,
-                                a().createElement(ae, { value: r, format: n === ue.gold ? 'gold' : 'integral' }),
+                                a().createElement(ne, { value: r, format: n === ue.gold ? 'gold' : 'integral' }),
                             ),
                             a().createElement('span', { className: _ }),
                             e &&

@@ -1463,6 +1463,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 100%;
     overflow: hidden;
     position: relative;
+    pointer-events: none;
 }
 
 .RankedWidget_qualBattles_ec {
@@ -1683,6 +1684,589 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .RankedWidget_bonus__b6__extraSmall_b1,
 .RankedWidget_bonus__b6__small_08 {
     bottom: 7rem;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBar_base_45 {
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+.ProgressBar_base__medium_62 {
+    height: 6rem;
+}
+.ProgressBar_base__small_df {
+    height: 2rem;
+}
+.ProgressBar_background_51 {
+    width: 100%;
+    max-width: 8001px;
+    height: 100%;
+    background-image: var(--progress-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ProgressBar_background__medium_6e {
+    height: 6rem;
+}
+.ProgressBar_background__small_46 {
+    height: 2rem;
+}
+.ProgressBar_lineWrapper_6a {
+    display: flex;
+    flex: 1;
+}
+
+.ProgressBarBlink_base_24 {
+    width: 60rem;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    pointer-events: none;
+}
+
+.ProgressBarBlink_base__medium_ec {
+    width: 42rem;
+    height: 70rem;
+}
+
+.ProgressBarBlink_base__small_0f {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressLineImpose_base_80 {
+    max-width: 8001px;
+    height: 100%;
+    background-color: var(--progress-line-base);
+    position: relative;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressLineImpose_base__disabled_cc {
+    background-color: var(--progress-line-disabled);
+}
+.ProgressLineImpose_base__finished_d4 {
+    background-color: var(--progress-line-finished);
+}
+.ProgressLineImpose_base__withoutBounce_56 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+.ProgressLineImpose_pattern_1c {
+    max-width: 8001px;
+    background-image: var(--progress-pattern-base);
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 3rem 10rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
+    top: 0;
+    bottom: 0;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
+    background-image: var(--progress-pattern-disabled);
+    left: 0;
+}
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
+    background-image: var(--progress-pattern-finished);
+}
+.ProgressLineImpose_gradient_35 {
+    max-width: 8001px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75));
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
+    top: 0;
+    bottom: 0;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
+    display: none;
+}
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5));
+}
+.ProgressLineImpose_glow_a5 {
+    width: 60rem;
+    max-width: 8001px;
+    height: 100rem;
+    background-image: var(--progress-glow);
+    background-size: contain;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.ProgressLineImpose_glow__left_d8 {
+    left: 1rem;
+}
+.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
+.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
+    display: none;
+}
+.ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
+    width: 44rem;
+    height: 43rem;
+    background-image: var(--progress-glow-small);
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaSimple_base_6c {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ProgressBarDeltaSimple_delta_99 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1), cubic-bezier(0.21, 0.61, 0.35, 1);
+    transition-property: width, transform;
+}
+
+/*
+    Gameface can't calculate gradient biggest than 8128px
+    in JS 8000 reserved like anchor for start optimization
+*/
+/* stylelint-disable-line */
+.ProgressBarDeltaGrow_base_7e {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+.ProgressBarDeltaGrow_glow_68 {
+    width: 0;
+    max-width: 8001px;
+    height: 100%;
+    box-shadow: var(--progress-delta-shadow);
+    background-color: var(--progress-delta-color);
+    position: absolute;
+    bottom: 0;
+    transform-origin: right center;
+    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
+    transition-property: width;
+}
+.ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
+    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
+}
+
+.ExtendedText_base_71 {
+    display: flex;
+    line-height: 1.2;
+    position: relative;
+}
+
+.ExtendedText_base__zeroPadding_25 {
+    padding: 0;
+}
+
+.ExtendedText_base__isTruncationAvailable_5b {
+    width: 100%;
+}
+
+.ExtendedText_truncated_97 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ExtendedText_truncated__hide_31 {
+    opacity: 0;
+}
+
+.ExtendedText_unTruncated_b8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #ff2717;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.colors_blackReal_fc {
+    color: #000000;
+}
+
+.colors_whiteReal_31 {
+    color: #ffffff;
+}
+
+.colors_white_45 {
+    color: #f2f2f7;
+}
+
+.colors_whiteOrange_81 {
+    color: #fefeec;
+}
+
+.colors_whiteSpanish_c3 {
+    color: #e9e2bf;
+}
+
+.colors_par_5b {
+    color: #8c8c7e;
+}
+
+.colors_parSecondary_fd {
+    color: #595950;
+}
+
+.colors_parTertiary_97 {
+    color: #37362e;
+}
+
+.colors_red_79 {
+    color: #ff2717;
+}
+
+.colors_redDark_73 {
+    color: #b70000;
+}
+
+.colors_yellow_76 {
+    color: #feab34;
+}
+
+.colors_orange_cd {
+    color: #ee7000;
+}
+
+.colors_cream_0f {
+    color: #ffdd99;
+}
+
+.colors_brown_82 {
+    color: #cbac77;
+}
+
+.colors_greenBright_68 {
+    color: #80d43a;
+}
+
+.colors_green_fa {
+    color: #7ab300;
+}
+
+.colors_greenDark_a9 {
+    color: #497212;
+}
+
+.colors_blueBooster_26 {
+    color: #ccffff;
+}
+
+.colors_blueTeamkiller_86 {
+    color: #09e2ff;
+}
+
+.colors_cred_35 {
+    color: #ced9d9;
+}
+
+.colors_gold_c3 {
+    color: #ffc363;
+}
+
+.colors_bond_ce {
+    color: #c9c9b6;
+}
+
+.colors_prom_83 {
+    color: #a29b70;
+}
+
+.renderers_noBreakWrapper_10 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.renderers_lineBreak_b5 {
+    width: 100%;
+    height: 0;
+}
+
+.renderers_newLine_bd {
+    flex: 1;
+    width: 100%;
+}
+
+.WTWidget_base_4b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.WTWidget_base__b1_78 {
+    height: 90%;
+}
+
+.WTWidget_base__b2_9b,
+.WTWidget_base__b3_48 {
+    height: 50%;
+    overflow: visible;
+}
+
+.WTWidget_emblem_4b {
+    width: 72rem;
+    height: 72rem;
+    background: url('R.images.gui.maps.icons.mode_selector.mode.white_tiger.progress_icon') no-repeat 50% / contain;
+    position: relative;
+}
+
+.mediaLarge .WTWidget_emblem_4b {
+    width: 136rem;
+    height: 136rem;
+}
+
+.WTWidget_emblem__b1_77 {
+    top: 104rem;
+}
+
+.mediaMedium .WTWidget_emblem__b1_77 {
+    width: 136rem;
+    height: 136rem;
+}
+
+.mediaLarge .WTWidget_emblem__b1_77 {
+    top: 146rem;
+}
+
+.WTWidget_emblem__b2_6e {
+    top: 3rem;
+}
+
+.mediaMedium .WTWidget_emblem__b2_6e {
+    top: -3rem;
+}
+
+.mediaLarge .WTWidget_emblem__b2_6e {
+    top: 3rem;
+}
+
+.WTWidget_emblem__b3_5c {
+    top: 3rem;
+}
+
+.mediaMedium .WTWidget_emblem__b3_5c {
+    top: 10rem;
+}
+
+.mediaLarge .WTWidget_emblem__b3_5c {
+    top: -15rem;
+}
+
+.WTWidget_emblem__b4_91 {
+    width: 60rem;
+    height: 60rem;
+    top: 3rem;
+}
+
+.mediaLarge .WTWidget_emblem__b4_91 {
+    width: 90rem;
+    height: 90rem;
+    top: -8rem;
+}
+
+.WTWidget_emblem__full_8a {
+    background-image: url('R.images.gui.maps.icons.mode_selector.mode.white_tiger.progress_icon_done');
+}
+
+.WTWidget_checkmark_31 {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.white_tiger.gui.maps.icons.logo.check_green') center / contain no-repeat;
+    visibility: hidden;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.WTWidget_checkmark__visible_3f {
+    visibility: visible;
+}
+
+.mediaSmall .WTWidget_checkmark_31 {
+    width: 32rem;
+    height: 32rem;
+}
+
+.WTWidget_progress_f2 {
+    color: #8c8c7e;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 80%;
+    position: absolute;
+    top: 323rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mediaMedium .WTWidget_progress_f2 {
+    top: 403rem;
+}
+
+.mediaLarge .WTWidget_progress_f2 {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    top: 478rem;
+}
+
+.WTWidget_progress__b2_fc {
+    top: 160rem;
+}
+
+.mediaMedium .WTWidget_progress__b2_fc {
+    top: 210rem;
+}
+
+.mediaLarge .WTWidget_progress__b2_fc {
+    top: 245rem;
+}
+
+.WTWidget_progress__b3_58 {
+    width: 70%;
+    top: 160rem;
+}
+
+.mediaMedium .WTWidget_progress__b3_58 {
+    top: 130rem;
+}
+
+.mediaLarge .WTWidget_progress__b3_58 {
+    top: 160rem;
+}
+
+.WTWidget_collection_9a {
+    margin-bottom: 9rem;
+}
+
+.WTWidget_currentAmount_55 {
+    color: #e9e2bf;
+}
+
+.WTWidget_tickets_8d {
+    color: #e9e2bf;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    position: absolute;
+    top: 87rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mediaMedium .WTWidget_tickets_8d {
+    top: 83rem;
+}
+
+.mediaLarge .WTWidget_tickets_8d {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    top: 125rem;
+}
+
+.WTWidget_tickets__b2_b5 {
+    top: 135rem;
+}
+
+.mediaMedium .WTWidget_tickets__b2_b5 {
+    top: 175rem;
+}
+
+.mediaLarge .WTWidget_tickets__b2_b5 {
+    top: 187rem;
+}
+
+.WTWidget_tickets__b3_b7 {
+    top: 100rem;
+}
+
+.mediaMedium .WTWidget_tickets__b3_b7 {
+    top: 115rem;
+}
+
+.mediaLarge .WTWidget_tickets__b3_b7 {
+    top: 135rem;
+}
+
+.WTWidget_ticketsCount_1d {
+    padding-right: 18rem;
+    background: url('R.images.white_tiger.gui.maps.icons.tickets.ticket_16') no-repeat right center / 16rem;
+    color: #ffdd99;
+}
+
+.WTWidget_progressionWrapper_2b {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.WTWidget_base__b3_48 .WTWidget_progressionWrapper_2b {
+    margin-bottom: 6rem;
 }
 
 .CardWrapper_base_b7 {
@@ -2007,7 +2591,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     transform: scale(1);
 }
 
-.Reward_base_80 {
+.Reward_base_80,
+.Reward_base__narrowMargins_42 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2047,12 +2632,26 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin: 0 19rem;
 }
 
+.Reward_base__small_cb.Reward_base__narrowMargins_42 .Reward_icon_93,
+.Reward_base__small-b0_c5.Reward_base__narrowMargins_42 .Reward_icon_93,
+.Reward_base__small-b1_16.Reward_base__narrowMargins_42 .Reward_icon_93 {
+    margin: 0 12rem;
+}
+
 .Reward_base__medium_ce .Reward_icon_93 {
     margin: 0 23rem;
 }
 
+.Reward_base__medium_ce.Reward_base__narrowMargins_42 .Reward_icon_93 {
+    margin: 0 14rem;
+}
+
 .Reward_base__medium-b1_3f .Reward_icon_93 {
     margin: 0 27rem;
+}
+
+.Reward_base__medium-b1_3f.Reward_base__narrowMargins_42 .Reward_icon_93 {
+    margin: 0 16rem;
 }
 
 .Reward_base__small_cb .Reward_icon_93,
@@ -3157,13 +3756,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     padding-top: 61rem;
 }
 
-.NormalCard_widgetOverlay_09 {
-    pointer-events: none;
-}
-
 .NormalCard_widgetOverlay__hide_7e {
     display: none;
-    pointer-events: auto;
 }
 
 .NormalCard_darken__show_3f {
@@ -3246,216 +3840,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .mediaLarge .Card_base__b2_53 .Card_name_d9 {
     bottom: 162rem;
-}
-
-/*
-    Gameface can't calculate gradient biggest than 8128px
-    in JS 8000 reserved like anchor for start optimization
-*/
-/* stylelint-disable-line */
-.ProgressBar_base_45 {
-    width: 100%;
-    height: 12rem;
-    position: relative;
-}
-.ProgressBar_base__medium_62 {
-    height: 6rem;
-}
-.ProgressBar_base__small_df {
-    height: 2rem;
-}
-.ProgressBar_background_51 {
-    width: 100%;
-    max-width: 8001px;
-    height: 100%;
-    background-image: var(--progress-base);
-    background-repeat: repeat;
-    background-position: 0 50%;
-    background-size: 3rem 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.ProgressBar_background__medium_6e {
-    height: 6rem;
-}
-.ProgressBar_background__small_46 {
-    height: 2rem;
-}
-.ProgressBar_lineWrapper_6a {
-    display: flex;
-    flex: 1;
-}
-
-.ProgressBarBlink_base_24 {
-    width: 60rem;
-    height: 100rem;
-    background-image: var(--progress-glow);
-    background-size: contain;
-    mix-blend-mode: lighten;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(50%, -50%);
-    pointer-events: none;
-}
-
-.ProgressBarBlink_base__medium_ec {
-    width: 42rem;
-    height: 70rem;
-}
-
-.ProgressBarBlink_base__small_0f {
-    width: 44rem;
-    height: 43rem;
-    background-image: var(--progress-glow-small);
-}
-
-/*
-    Gameface can't calculate gradient biggest than 8128px
-    in JS 8000 reserved like anchor for start optimization
-*/
-/* stylelint-disable-line */
-.ProgressLineImpose_base_80 {
-    max-width: 8001px;
-    height: 100%;
-    background-color: var(--progress-line-base);
-    position: relative;
-    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
-    transition-property: width;
-}
-.ProgressLineImpose_base__disabled_cc {
-    background-color: var(--progress-line-disabled);
-}
-.ProgressLineImpose_base__finished_d4 {
-    background-color: var(--progress-line-finished);
-}
-.ProgressLineImpose_base__withoutBounce_56 {
-    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
-}
-.ProgressLineImpose_pattern_1c {
-    max-width: 8001px;
-    background-image: var(--progress-pattern-base);
-    background-repeat: repeat;
-    background-position: 0 50%;
-    background-size: 3rem 10rem;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    bottom: 1rem;
-    left: 1rem;
-}
-.ProgressLineImpose_base__small_55 .ProgressLineImpose_pattern_1c {
-    top: 0;
-    bottom: 0;
-}
-.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_pattern_1c {
-    background-image: var(--progress-pattern-disabled);
-    left: 0;
-}
-.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_pattern_1c {
-    background-image: var(--progress-pattern-finished);
-}
-.ProgressLineImpose_gradient_35 {
-    max-width: 8001px;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75));
-    mix-blend-mode: overlay;
-    position: absolute;
-    top: 1rem;
-    right: 0;
-    bottom: 1rem;
-    left: 0;
-}
-.ProgressLineImpose_base__small_55 .ProgressLineImpose_gradient_35 {
-    top: 0;
-    bottom: 0;
-}
-.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_gradient_35 {
-    display: none;
-}
-.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_gradient_35 {
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.5));
-}
-.ProgressLineImpose_glow_a5 {
-    width: 60rem;
-    max-width: 8001px;
-    height: 100rem;
-    background-image: var(--progress-glow);
-    background-size: contain;
-    mix-blend-mode: lighten;
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-}
-.ProgressLineImpose_glow__left_d8 {
-    left: 1rem;
-}
-.ProgressLineImpose_base__disabled_cc .ProgressLineImpose_glow_a5,
-.ProgressLineImpose_base__finished_d4 .ProgressLineImpose_glow_a5 {
-    display: none;
-}
-.ProgressLineImpose_base__small_55 .ProgressLineImpose_glow_a5 {
-    width: 44rem;
-    height: 43rem;
-    background-image: var(--progress-glow-small);
-}
-
-/*
-    Gameface can't calculate gradient biggest than 8128px
-    in JS 8000 reserved like anchor for start optimization
-*/
-/* stylelint-disable-line */
-.ProgressBarDeltaSimple_base_6c {
-    width: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-}
-.ProgressBarDeltaSimple_delta_99 {
-    width: 0;
-    max-width: 8001px;
-    height: 100%;
-    box-shadow: var(--progress-delta-shadow);
-    background-color: var(--progress-delta-color);
-    position: absolute;
-    bottom: 0;
-    transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, 0.92, 1), cubic-bezier(0.21, 0.61, 0.35, 1);
-    transition-property: width, transform;
-}
-
-/*
-    Gameface can't calculate gradient biggest than 8128px
-    in JS 8000 reserved like anchor for start optimization
-*/
-/* stylelint-disable-line */
-.ProgressBarDeltaGrow_base_7e {
-    width: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
-    transition-property: width;
-}
-.ProgressBarDeltaGrow_base__withoutBounce_b5 {
-    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
-}
-.ProgressBarDeltaGrow_glow_68 {
-    width: 0;
-    max-width: 8001px;
-    height: 100%;
-    box-shadow: var(--progress-delta-shadow);
-    background-color: var(--progress-delta-color);
-    position: absolute;
-    bottom: 0;
-    transform-origin: right center;
-    transition-timing-function: cubic-bezier(1, 0, 0.92, 1);
-    transition-property: width;
-}
-.ProgressBarDeltaGrow_base__withoutBounce_b5 .ProgressBarDeltaGrow_glow_68 {
-    transition-timing-function: cubic-bezier(1, 0, 0.75, 0.75);
 }
 
 .FormatTextWithColorTags_blackReal_3c {
@@ -3944,6 +4328,327 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background-image: url('R.images.comp7.gui.maps.icons.comp7.ranks.c_150.qualification');
 }
 
+.Progression_base_5f {
+    width: 100%;
+    margin-top: 80rem;
+}
+.Progression_base__extraSmall_77,
+.Progression_base__small_a4 {
+    margin-top: 35rem;
+}
+.Progression_base__medium_8d {
+    margin-top: 65rem;
+}
+.Progression_base__extraLarge_28,
+.Progression_base__large_09 {
+    margin-top: 85rem;
+}
+.Progression_base_5f {
+    padding: 0 20rem;
+}
+
+.Progression_contentWrapper_ed {
+    display: flex;
+    justify-content: center;
+}
+
+.Progression_progress_85 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 8rem 0 10rem;
+    padding: 0 20rem;
+}
+
+.Progression_progressValue_c5 {
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+.Progression_currentAmount_e9 {
+    color: #e9e2bf;
+}
+
+.Progression_textCollection_7c {
+    color: #8c8c7e;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 6rem;
+    line-height: 12rem;
+}
+
+.Progression_textCollection__extraSmall_2e,
+.Progression_textCollection__small_e4 {
+    color: #8c8c7e;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 6rem;
+    line-height: 12rem;
+}
+
+.Progression_textCollection__medium_b8 {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 6rem;
+    line-height: 12rem;
+}
+
+.Progression_textCollection__extraLarge_74,
+.Progression_textCollection__large_00 {
+    color: #8c8c7e;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-top: 6rem;
+    line-height: 14rem;
+}
+
+.Progression_textCollection_7c {
+    text-align: center;
+}
+
+.Suspended_base_26 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Suspended_base__b1_f0 {
+    margin-top: 20rem;
+}
+
+.Suspended_base__b1__extraSmall_74,
+.Suspended_base__b1__small_fe {
+    margin-top: 20rem;
+}
+
+.Suspended_base__b1__medium_ed {
+    margin-top: 10rem;
+}
+
+.Suspended_base__b1__extraLarge_2f,
+.Suspended_base__b1__large_73 {
+    margin-top: 0;
+}
+
+.Suspended_base__b2_40 {
+    margin-top: 158rem;
+    transform: translateX(5%);
+}
+
+.Suspended_base__b2__medium_18 {
+    margin-top: 80rem;
+    transform: translateX(16%);
+}
+
+.Suspended_base__b2__extraLarge_d5,
+.Suspended_base__b2__large_6f {
+    margin-top: 50rem;
+    transform: translateX(22%);
+}
+
+.Suspended_base__b3_a7 {
+    margin-top: 90rem;
+    transform: translateX(15%);
+}
+
+.Suspended_base__b3__medium_5a {
+    margin-top: 0;
+    transform: translateX(24%);
+}
+
+.Suspended_base__b3__extraLarge_ea,
+.Suspended_base__b3__large_22 {
+    margin-top: -16rem;
+    transform: translateX(38%);
+}
+
+.Suspended_textContainer_99 {
+    color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-right: 10rem;
+    padding: 0 20rem;
+}
+
+.Suspended_textContainer__extraSmall_15,
+.Suspended_textContainer__small_00 {
+    color: #e9e2bf;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Suspended_textContainer__medium_62 {
+    margin-top: 110rem;
+}
+
+.Suspended_textContainer__extraLarge_40,
+.Suspended_textContainer__large_42 {
+    margin-top: 150rem;
+}
+
+.Suspended_textContainer__b2_00 {
+    margin-top: 0;
+}
+
+.Suspended_textContainer__b2__extraSmall_d6,
+.Suspended_textContainer__b2__small_d1 {
+    color: #e9e2bf;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.Suspended_textContainer__b2__medium_11 {
+    color: #e9e2bf;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 120rem;
+}
+
+.Suspended_textContainer__b2__extraLarge_64,
+.Suspended_textContainer__b2__large_8f {
+    margin-top: 160rem;
+}
+
+.Suspended_locked_de {
+    display: flex;
+    width: 40rem;
+    height: 40rem;
+    background: url('R.images.cosmic_event.gui.maps.icons.mode_selector.icon_lock') no-repeat center / cover;
+}
+
+.Suspended_locked__extraSmall_8d,
+.Suspended_locked__small_ad {
+    width: 40rem;
+    height: 40rem;
+}
+
+.Suspended_locked__medium_0b {
+    width: 50rem;
+    height: 50rem;
+}
+
+.Suspended_locked__extraLarge_be,
+.Suspended_locked__large_19 {
+    width: 60rem;
+    height: 60rem;
+}
+
+.Suspended_lockBase_38 {
+    display: flex;
+    align-items: center;
+}
+
+.Suspended_lockBase__b1__extraSmall_17,
+.Suspended_lockBase__b1__small_88 {
+    margin-top: 50rem;
+}
+
+.Suspended_lockBase__b1__medium_9c {
+    margin-top: 80rem;
+}
+
+.Suspended_lockBase__b1__extraLarge_39,
+.Suspended_lockBase__b1__large_34 {
+    margin-top: 100rem;
+}
+
+.Suspended_lockBase__b2_78 {
+    margin-right: 10rem;
+}
+
+.Suspended_lockBase__b2__extraSmall_fd,
+.Suspended_lockBase__b2__small_7a {
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.Suspended_lockBase__b2__medium_04 {
+    margin-top: 0;
+}
+
+.Suspended_lockBase__b2__extraLarge_32,
+.Suspended_lockBase__b2__large_2a {
+    margin-top: 30rem;
+}
+
+.Suspended_textContent_93 {
+    color: #e9e2bf;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    line-height: 12rem;
+    text-align: center;
+}
+
+.Suspended_textContent__extraSmall_77,
+.Suspended_textContent__small_49 {
+    color: #e9e2bf;
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+    line-height: 12rem;
+}
+
+.Suspended_textContent__medium_18 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    line-height: 14rem;
+}
+
+.Suspended_textContent__extraLarge_c2,
+.Suspended_textContent__large_0e {
+    color: #e9e2bf;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    line-height: 14rem;
+}
+
+.Suspended_primeTimeValue_79 {
+    line-height: 14rem;
+    text-align: center;
+    transform: translateX(-80%);
+}
+
+.Suspended_primeTimeValue__extraSmall_d5,
+.Suspended_primeTimeValue__small_93 {
+    color: #ffdd99;
+    font-size: 10rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.Suspended_primeTimeValue__medium_a8 {
+    color: #ffdd99;
+    font-size: 10rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.Suspended_primeTimeValue__extraLarge_0f,
+.Suspended_primeTimeValue__large_81 {
+    color: #ffdd99;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
 .Countdown_base_fe {
     display: flex;
     align-items: center;
@@ -4283,325 +4988,87 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     pointer-events: none;
 }
 
-.Progression_base_5f {
+.Performance_base_2a {
     width: 100%;
-    margin-top: 80rem;
-}
-.Progression_base__extraSmall_77,
-.Progression_base__small_a4 {
-    margin-top: 35rem;
-}
-.Progression_base__medium_8d {
-    margin-top: 65rem;
-}
-.Progression_base__extraLarge_28,
-.Progression_base__large_09 {
-    margin-top: 85rem;
-}
-.Progression_base_5f {
-    padding: 0 20rem;
+    pointer-events: auto;
 }
 
-.Progression_contentWrapper_ed {
+.Performance_text_93 {
     display: flex;
     justify-content: center;
+    margin: 0 8rem;
 }
 
-.Progression_progress_85 {
-    color: #8c8c7e;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
+.Performance_text__medium_94 {
+    color: #ee7000;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.Performance_text__high_c4 {
+    color: #ff2717;
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.Performance_icon_4e {
+    width: 16rem;
+    height: 16rem;
+    margin-top: 2rem;
+    background: no-repeat 50% / contain;
+}
+
+.Performance_icon__medium_66 {
+    background-image: url('R.images.gui.maps.icons.library.alertIcon');
+}
+
+.Performance_icon__high_59 {
+    background-image: url('R.images.gui.maps.icons.library.CancelIcon_1');
+}
+
+.WTCard_name_2f {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 90%;
-    margin: 8rem 0 10rem;
-    padding: 0 20rem;
 }
 
-.Progression_progressValue_c5 {
-    margin-bottom: 10rem;
-    text-align: center;
+.WTCard_name__b0_fc,
+.WTCard_name__b1_a7 {
+    bottom: 236rem;
 }
 
-.Progression_currentAmount_e9 {
-    color: #e9e2bf;
+.WTCard_name__b0__medium_c3,
+.WTCard_name__b1__medium_00 {
+    bottom: 293rem;
 }
 
-.Progression_textCollection_7c {
-    color: #8c8c7e;
-    font-size: 12rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-top: 6rem;
-    line-height: 12rem;
+.WTCard_name__b0__extraLarge_3a,
+.WTCard_name__b0__large_32,
+.WTCard_name__b1__extraLarge_b4,
+.WTCard_name__b1__large_5a {
+    bottom: 363rem;
 }
 
-.Progression_textCollection__extraSmall_2e,
-.Progression_textCollection__small_e4 {
-    color: #8c8c7e;
-    font-size: 12rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-top: 6rem;
-    line-height: 12rem;
+.WTCard_subtitle__b0_55,
+.WTCard_subtitle__b1_d8 {
+    padding-top: 240rem;
 }
 
-.Progression_textCollection__medium_b8 {
-    color: #8c8c7e;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-top: 6rem;
-    line-height: 12rem;
+.WTCard_subtitle__b0__medium_80,
+.WTCard_subtitle__b1__medium_ad {
+    padding-top: 297rem;
 }
 
-.Progression_textCollection__extraLarge_74,
-.Progression_textCollection__large_00 {
-    color: #8c8c7e;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-top: 6rem;
-    line-height: 14rem;
+.WTCard_subtitle__b0__extraLarge_b0,
+.WTCard_subtitle__b0__large_0e,
+.WTCard_subtitle__b1__extraLarge_8d,
+.WTCard_subtitle__b1__large_ad {
+    padding-top: 341rem;
 }
 
-.Progression_textCollection_7c {
-    text-align: center;
-}
-
-.Suspended_base_26 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.Suspended_base__b1_f0 {
-    margin-top: 20rem;
-}
-
-.Suspended_base__b1__extraSmall_74,
-.Suspended_base__b1__small_fe {
-    margin-top: 20rem;
-}
-
-.Suspended_base__b1__medium_ed {
-    margin-top: 10rem;
-}
-
-.Suspended_base__b1__extraLarge_2f,
-.Suspended_base__b1__large_73 {
-    margin-top: 0;
-}
-
-.Suspended_base__b2_40 {
-    margin-top: 158rem;
-    transform: translateX(5%);
-}
-
-.Suspended_base__b2__medium_18 {
-    margin-top: 80rem;
-    transform: translateX(16%);
-}
-
-.Suspended_base__b2__extraLarge_d5,
-.Suspended_base__b2__large_6f {
-    margin-top: 50rem;
-    transform: translateX(22%);
-}
-
-.Suspended_base__b3_a7 {
-    margin-top: 90rem;
-    transform: translateX(15%);
-}
-
-.Suspended_base__b3__medium_5a {
-    margin-top: 0;
-    transform: translateX(24%);
-}
-
-.Suspended_base__b3__extraLarge_ea,
-.Suspended_base__b3__large_22 {
-    margin-top: -16rem;
-    transform: translateX(38%);
-}
-
-.Suspended_textContainer_99 {
-    color: #e9e2bf;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-right: 10rem;
-    padding: 0 20rem;
-}
-
-.Suspended_textContainer__extraSmall_15,
-.Suspended_textContainer__small_00 {
-    color: #e9e2bf;
-    font-size: 12rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
-
-.Suspended_textContainer__medium_62 {
-    margin-top: 110rem;
-}
-
-.Suspended_textContainer__extraLarge_40,
-.Suspended_textContainer__large_42 {
-    margin-top: 150rem;
-}
-
-.Suspended_textContainer__b2_00 {
-    margin-top: 0;
-}
-
-.Suspended_textContainer__b2__extraSmall_d6,
-.Suspended_textContainer__b2__small_d1 {
-    color: #e9e2bf;
-    font-size: 12rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
-
-.Suspended_textContainer__b2__medium_11 {
-    color: #e9e2bf;
-    font-size: 12rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-top: 120rem;
-}
-
-.Suspended_textContainer__b2__extraLarge_64,
-.Suspended_textContainer__b2__large_8f {
-    margin-top: 160rem;
-}
-
-.Suspended_locked_de {
-    display: flex;
-    width: 40rem;
-    height: 40rem;
-    background: url('R.images.cosmic_event.gui.maps.icons.mode_selector.icon_lock') no-repeat center / cover;
-}
-
-.Suspended_locked__extraSmall_8d,
-.Suspended_locked__small_ad {
-    width: 40rem;
-    height: 40rem;
-}
-
-.Suspended_locked__medium_0b {
-    width: 50rem;
-    height: 50rem;
-}
-
-.Suspended_locked__extraLarge_be,
-.Suspended_locked__large_19 {
-    width: 60rem;
-    height: 60rem;
-}
-
-.Suspended_lockBase_38 {
-    display: flex;
-    align-items: center;
-}
-
-.Suspended_lockBase__b1__extraSmall_17,
-.Suspended_lockBase__b1__small_88 {
-    margin-top: 50rem;
-}
-
-.Suspended_lockBase__b1__medium_9c {
-    margin-top: 80rem;
-}
-
-.Suspended_lockBase__b1__extraLarge_39,
-.Suspended_lockBase__b1__large_34 {
-    margin-top: 100rem;
-}
-
-.Suspended_lockBase__b2_78 {
-    margin-right: 10rem;
-}
-
-.Suspended_lockBase__b2__extraSmall_fd,
-.Suspended_lockBase__b2__small_7a {
-    margin-top: 0;
-    margin-right: 0;
-}
-
-.Suspended_lockBase__b2__medium_04 {
-    margin-top: 0;
-}
-
-.Suspended_lockBase__b2__extraLarge_32,
-.Suspended_lockBase__b2__large_2a {
-    margin-top: 30rem;
-}
-
-.Suspended_textContent_93 {
-    color: #e9e2bf;
-    font-size: 12rem;
-    font-weight: 400;
-    line-height: 1.3;
-    line-height: 12rem;
-    text-align: center;
-}
-
-.Suspended_textContent__extraSmall_77,
-.Suspended_textContent__small_49 {
-    color: #e9e2bf;
-    font-size: 12rem;
-    font-weight: 400;
-    line-height: 1.3;
-    line-height: 12rem;
-}
-
-.Suspended_textContent__medium_18 {
-    color: #e9e2bf;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    line-height: 14rem;
-}
-
-.Suspended_textContent__extraLarge_c2,
-.Suspended_textContent__large_0e {
-    color: #e9e2bf;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-    line-height: 14rem;
-}
-
-.Suspended_primeTimeValue_79 {
-    line-height: 14rem;
-    text-align: center;
-    transform: translateX(-80%);
-}
-
-.Suspended_primeTimeValue__extraSmall_d5,
-.Suspended_primeTimeValue__small_93 {
-    color: #ffdd99;
-    font-size: 10rem;
-    font-weight: 400;
-    line-height: 1.2;
-}
-
-.Suspended_primeTimeValue__medium_a8 {
-    color: #ffdd99;
-    font-size: 10rem;
-    font-weight: 400;
-    line-height: 1.2;
-}
-
-.Suspended_primeTimeValue__extraLarge_0f,
-.Suspended_primeTimeValue__large_81 {
-    color: #ffdd99;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
+.WTCard_performance_cd {
+    margin-top: 16rem;
 }
 
 .Column_base_41 {

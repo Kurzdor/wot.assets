@@ -3061,17 +3061,15 @@
                     (function (e) {
                         (e.Red = 'RedActionBG'), (e.Blue = 'BlueActionBG');
                     })(zt || (zt = {}));
-                class Xt extends n().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = J.B3.GOLD;
-                        else e = J.B3.INTEGRAL;
-                        const u = J.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                Xt.defaultProps = { format: 'integral' };
-                const Vt = {
+                const Xt = ({ format: e, value: u }) => {
+                        const t = ((e, u = 'integral') => {
+                            let t;
+                            t = 'gold' === u ? J.B3.GOLD : J.B3.INTEGRAL;
+                            return void 0 === e ? '' : J.Z5.getNumberFormat(e, t);
+                        })(u, e);
+                        return t ? n().createElement('span', null, t) : null;
+                    },
+                    Vt = {
                         base: 'Currency_base_57',
                         icon: 'Currency_icon_c5',
                         base__small: 'Currency_base__small_af',

@@ -192,8 +192,7 @@
             (width = "BR_POINT_SIZE")
             (height = "BR_POINT_SIZE")
         )
-        (bind alpha "1" init=false (event "deselectEachPoint"))
-        (bind alpha "0" init=false (event "currentPointSelected"))
+        (bind alpha "selected ? 0 : 1")
         (controller $Animation
             (bindcall play from={alpha:1} to={alpha:0} duration=0.3 easing="Easing.cubic_in"
                 (event "currentPointRollOver")
@@ -235,8 +234,12 @@
         )
     )
     (block
-        (bind alpha "0" init=false (event "deselectEachPoint"))
-        (bind alpha "1" init=false (event "currentPointSelected"))
+        (style
+            (width = "BR_POINT_SIZE")
+            (height = "BR_POINT_SIZE")
+            (marginTop = "-BR_POINT_SIZE")
+        )
+        (bind alpha "selected ? 1 : 0")
         (controller $Animation
             (bindcall play from={alpha:0} to={alpha:1} duration=0.3 easing="Easing.cubic_in"
                 (event "currentPointRollOver")
@@ -244,12 +247,6 @@
             (bindcall play from={alpha:1} to={alpha:0} duration=0.3 easing="Easing.cubic_in"
                 (event "currentPointRollOut")
             )
-        )
-        (style
-            (alpha = 0)
-            (width = "BR_POINT_SIZE")
-            (height = "BR_POINT_SIZE")
-            (marginTop = "-BR_POINT_SIZE")
         )
         (element DrawCircle 11 0x44983b 0xb4ff87 line=2 alpha=0.7
             (style
@@ -298,8 +295,7 @@
                 (textColor = 0xccff66)
             )
             (text = "R.strings.battle_royale.selectRespawn.text.startHere()")
-            (bind visible true init=false (event "currentPointSelected"))
-            (bind visible false init=true (event "deselectEachPoint"))
+            (bind visible "selected")
             (controller $Animation
                 (bindcall play name='AnimNickname' from={x:-5px, alpha:0} to={x:0px, alpha:1} duration=0.1 easing="Easing.cubic_in"
                     (event "currentPointSelected")

@@ -1205,25 +1205,29 @@ body {
 
 .Content_vehicles_a7 {
     width: 100%;
-    padding-top: 65rem;
+    padding-top: 12%;
     position: absolute;
     transition: opacity 0.2s 0.3s ease-in;
 }
 
 .mediaSmall .Content_vehicles_a7 {
-    padding-top: 100rem;
+    padding-top: 7%;
+}
+
+.mediaMediumHeight .Content_vehicles_a7 {
+    padding-top: 15%;
 }
 
 .mediaMedium .Content_vehicles_a7 {
-    padding-top: 60rem;
+    padding-top: 7%;
 }
 
-.mediaLarge .Content_vehicles_a7 {
-    padding-top: 140rem;
+.mediaExtraLargeWidth .Content_vehicles_a7 {
+    padding-top: 255rem;
 }
 
 .mediaExtraLarge .Content_vehicles_a7 {
-    padding-top: 120rem;
+    padding-top: 12%;
 }
 
 .Content_vehicles__hidden_f1 {
@@ -1795,40 +1799,41 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 0;
 }
 .App_background_1f {
-    width: 2543rem;
-    height: 946rem;
-    margin-top: -117rem;
-    background: url('R.images.gui.maps.icons.seniorityAwards.award_bg__gp4') no-repeat center / contain;
+    width: 1000%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.seniorityAwards.seniority_awards_background') repeat no-repeat center top /
+        contain;
 }
-.mediaSmall .App_background_1f {
-    width: 3001rem;
-    height: 1116rem;
+.App_foreground_dd {
+    width: 1000%;
+    background: url('R.images.gui.maps.icons.seniorityAwards.seniority_awards_foreground') repeat no-repeat left bottom /
+        contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
 }
-.mediaMedium .App_background_1f {
-    width: 3740rem;
-    height: 1391rem;
-    margin-top: -248rem;
+.App_vignette_db {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
 }
-.mediaLarge .App_background_1f {
-    margin-top: -120rem;
+.App_vignette__mid_69 {
+    background: url('R.images.gui.maps.icons.seniorityAwards.seniority_awards_vignette_bg_mid') repeat no-repeat center /
+        contain;
+    left: 0;
 }
-.mediaExtraLarge .App_background_1f {
-    width: 4096rem;
-    height: 1524rem;
-    margin-top: -250rem;
+.App_vignette__left_28 {
+    background: url('R.images.gui.maps.icons.seniorityAwards.seniority_awards_vignette_bg_left') no-repeat left top /
+        contain;
+    left: 0;
 }
-.App_background__indent_eb {
-    margin-top: -170rem;
-}
-.mediaLarge .App_background__indent_eb {
-    width: 3940rem;
-    height: 1490rem;
-    margin-top: -120rem;
-}
-.mediaExtraLarge .App_background__indent_eb {
-    width: 5310rem;
-    height: 1860rem;
-    margin-top: -220rem;
+.App_vignette__right_fe {
+    background: url('R.images.gui.maps.icons.seniorityAwards.seniority_awards_vignette_bg_right') no-repeat right center /
+        contain;
+    right: 0;
 }
 .App_shadow_03 {
     height: 300rem;

@@ -32,7 +32,7 @@
                         graphicsQuality: () => g,
                     });
                 var i = {};
-                t.r(i), t.d(i, { getBgUrl: () => m, getTextureUrl: () => E });
+                t.r(i), t.d(i, { getBgUrl: () => w, getTextureUrl: () => E });
                 var a = {};
                 function o(e) {
                     return (n) => (
@@ -50,7 +50,7 @@
                         addModelObserver: () => L,
                         addPreloadTexture: () => P,
                         children: () => i,
-                        displayStatus: () => w,
+                        displayStatus: () => m,
                         displayStatusIs: () => W,
                         events: () => b,
                         extraSize: () => G,
@@ -153,10 +153,10 @@
                 function E(e, n, t = 1) {
                     return viewEnv.getChildTexturePath(e, n.width, n.height, t);
                 }
-                function m(e, n, t) {
+                function w(e, n, t) {
                     return `url(${E(e, n, t)})`;
                 }
-                const w = { showing: 0, shown: 1, hiding: 2, hidden: 3 },
+                const m = { showing: 0, shown: 1, hiding: 2, hidden: 3 },
                     b = {
                         onTextureFrozen: o('self.onTextureFrozen'),
                         onTextureReady: o('self.onTextureReady'),
@@ -280,7 +280,7 @@
                 function K() {
                     return viewEnv.getShowingStatus();
                 }
-                const W = Object.keys(w).reduce((e, n) => ((e[n] = () => viewEnv.getShowingStatus() === w[n]), e), {}),
+                const W = Object.keys(m).reduce((e, n) => ((e[n] = () => viewEnv.getShowingStatus() === m[n]), e), {}),
                     G = {
                         set: (e, n) => {
                             viewEnv.setExtraSizeRem(e, n);
@@ -552,7 +552,7 @@
                 var v = t(521),
                     g = t(67);
                 const E = ['args'];
-                function m(e, n, t, r, _, i, a) {
+                function w(e, n, t, r, _, i, a) {
                     try {
                         var o = e[i](a),
                             s = o.value;
@@ -561,7 +561,7 @@
                     }
                     o.done ? n(s) : Promise.resolve(s).then(r, _);
                 }
-                const w = (e) => ({ __Type: 'GFBoundingBox', x: e.x, y: e.y, width: e.width, height: e.height }),
+                const m = (e) => ({ __Type: 'GFBoundingBox', x: e.x, y: e.y, width: e.width, height: e.height }),
                     b = (function () {
                         var e,
                             n =
@@ -579,10 +579,10 @@
                                     return new Promise(function (r, _) {
                                         var i = e.apply(n, t);
                                         function a(e) {
-                                            m(i, r, _, a, o, 'next', e);
+                                            w(i, r, _, a, o, 'next', e);
                                         }
                                         function o(e) {
-                                            m(i, r, _, a, o, 'throw', e);
+                                            w(i, r, _, a, o, 'throw', e);
                                         }
                                         a(void 0);
                                     });
@@ -643,7 +643,7 @@
                         RealFormatType: l,
                         TimeFormatType: u,
                         DateFormatType: d,
-                        makeGlobalBoundingBox: w,
+                        makeGlobalBoundingBox: m,
                         sendMoveEvent: (e) => h(s.MOVE, { isMouseEvent: !0, on: e }),
                         sendCloseEvent: p,
                         sendClosePopOverEvent: () => h(s.POP_OVER, { on: !1 }),
@@ -669,7 +669,7 @@
                                 decoratorID: r || R.invalid('resId'),
                                 targetID: _,
                                 direction: n,
-                                bbox: w(v),
+                                bbox: m(v),
                                 on: !0,
                                 args: i,
                             });
@@ -725,16 +725,14 @@
                     i = t(483),
                     a = t.n(i),
                     o = t(364);
-                class s extends _().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = o.B3.GOLD;
-                        else e = o.B3.INTEGRAL;
-                        const n = o.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== n ? n : null;
-                    }
-                }
-                s.defaultProps = { format: 'integral' };
+                const s = ({ format: e, value: n }) => {
+                    const t = ((e, n = 'integral') => {
+                        let t;
+                        t = 'gold' === n ? o.B3.GOLD : o.B3.INTEGRAL;
+                        return void 0 === e ? '' : o.Z5.getNumberFormat(e, t);
+                    })(n, e);
+                    return t ? _().createElement('span', null, t) : null;
+                };
                 var c = t(329);
                 const l = {
                         base: 'Currency_base_57',
@@ -793,8 +791,8 @@
                     }) => {
                         const g = a()(l.value, l[`value__${r}`], !i && l.value__notEnough),
                             E = a()(l.icon, l[`icon__${r}-${t}`]),
-                            m = a()(l.stock, u && l.stock__indent, n && l.stock__interactive),
-                            w = d && o > 0 && '+',
+                            w = a()(l.stock, u && l.stock__indent, n && l.stock__interactive),
+                            m = d && o > 0 && '+',
                             b = a()(l.base, l[`base__${t}`]);
                         return _().createElement(
                             'span',
@@ -802,14 +800,14 @@
                             _().createElement(
                                 'span',
                                 { className: g },
-                                w,
+                                m,
                                 _().createElement(s, { value: o, format: r === c.V2.gold ? 'gold' : 'integral' }),
                             ),
                             _().createElement('span', { className: E }),
                             e &&
                                 _().createElement(
                                     'span',
-                                    { className: m },
+                                    { className: w },
                                     _().createElement('span', {
                                         className: l.stockBackground,
                                         style: { backgroundImage: `url(R.images.gui.maps.icons.library.${v})` },
@@ -853,14 +851,14 @@
                     }) => {
                         const g = a()(v.value, v[`value__${t}`], !i && v.value__notEnough),
                             E = a()(v.icon, v[`icon__${t}`]),
-                            m = a()(
+                            w = a()(
                                 v.stock,
                                 l && v.stock__indent,
                                 t === c.et.big && v.stock__sizeBig,
                                 t === c.et.large && v.stock__sizeLarge,
                                 n && v.stock__interactive,
                             ),
-                            w = u && o > 0 && '+';
+                            m = u && o > 0 && '+';
                         return r in c.V2
                             ? _().createElement(d, {
                                   size: t,
@@ -878,14 +876,14 @@
                                   _().createElement(
                                       'span',
                                       { className: g },
-                                      w,
+                                      m,
                                       _().createElement(s, { value: o, format: 'integral' }),
                                   ),
                                   _().createElement('span', { className: E }),
                                   e &&
                                       _().createElement(
                                           'span',
-                                          { className: m },
+                                          { className: w },
                                           _().createElement('span', { className: v.stockBackground }),
                                           Boolean(l) && l,
                                       ),

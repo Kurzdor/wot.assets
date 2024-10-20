@@ -1,0 +1,194 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.Separator_base_53 {
+    width: 100%;
+    height: 1rem;
+    background-image: linear-gradient(90deg, rgba(255, 255, 229, 0.2), transparent);
+    background-size: 3rem;
+    mask: linear-gradient(90deg, rgba(0, 0, 0, 0.4), #000 40%, #000 60%, rgba(0, 0, 0, 0.4));
+}
+
+.TooltipContentHolder_base_af {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.TooltipContentHolder_base__primary_b3 {
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 204, 0.04),
+        rgba(255, 255, 204, 0.1) 40%,
+        rgba(255, 255, 204, 0.1) 60%,
+        rgba(255, 255, 204, 0.04)
+    );
+}
+
+.TooltipContentHolder_base__accent_3d {
+    background-image: linear-gradient(
+        90deg,
+        rgba(102, 179, 252, 0.04),
+        rgba(102, 179, 252, 0.1) 40%,
+        rgba(102, 179, 252, 0.1) 60%,
+        rgba(102, 179, 252, 0.04)
+    );
+}
+
+.TooltipContentHolder_content_aa {
+    flex: 1;
+    padding: 20rem;
+}
+
+.ExpBonusProgressDot_base_dc {
+    width: 8rem;
+    height: 8rem;
+    padding: 0 5rem;
+    position: relative;
+}
+
+.ExpBonusProgressDot_bonusCounter_da {
+    width: 8rem;
+    height: 8rem;
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.premium.bonus_counter') no-repeat center /
+        contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ExpBonusProgressDot_bonusCounterLight_b7 {
+    width: 40rem;
+    height: 26rem;
+    background: url('R.images.gui.maps.icons.postbattle.postbattle_screen.premium.bonus_counter_active') no-repeat
+        center / contain;
+    opacity: 0;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: -9rem;
+    left: -16rem;
+}
+
+.ExpBonusProgressDot_base__active_a6 .ExpBonusProgressDot_bonusCounterLight_b7 {
+    opacity: 1;
+}
+
+.DiscreteProgressBar_base_fe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.TooltipContentStatus_status_03 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.TooltipContentStatus_status__cannotApply_ad {
+    align-items: flex-start;
+}
+.TooltipContentStatus_statusTitle_94 {
+    color: #ff2717;
+    font-weight: 700;
+}
+.TooltipContentStatus_statusTitle__applied_23 {
+    color: #7ab300;
+}
+.TooltipContentStatus_statusTitle__available_60 {
+    color: #ee7001;
+}
+.TooltipContentStatus_statusExtraInfo_52 {
+    padding-top: 9rem;
+    color: #595950;
+}
+.TooltipContentStatus_info_e7 {
+    white-space: pre;
+}
+
+.TooltipContent_base_b9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 418rem;
+}
+.TooltipContent_header_b7 {
+    display: flex;
+    width: 100%;
+    height: 335rem;
+    background: url('R.images.gui.maps.icons.postbattle.exp_bonus_tooltip.background') no-repeat center top / contain;
+    mix-blend-mode: screen;
+    position: relative;
+}
+.TooltipContent_container_51 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+.TooltipContent_icon_4c {
+    width: 209rem;
+    height: 183rem;
+    margin-left: -12rem;
+    background: url('R.images.gui.maps.icons.postbattle.exp_bonus_tooltip.exp') no-repeat center / contain;
+    position: absolute;
+    top: 51rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.TooltipContent_title_d7 {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 20rem;
+}
+.TooltipContent_multiplier_f9 {
+    display: flex;
+    color: #e9e2bf;
+    font-size: 96rem;
+    font-weight: 700;
+    text-shadow: 0 0 12rem #f00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(13rem, -50%);
+}
+.TooltipContent_progressionStatus_47 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.TooltipContent_indicator_a8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TooltipContent_usesCount_18 {
+    display: flex;
+    padding-top: 23rem;
+}
+.TooltipContent_usesCountActual_e2 {
+    padding: 0 4rem;
+    color: #ffb266;
+    font-size: 16rem;
+}
+
+body {
+    margin: 0;
+    color: #8c8c7e;
+    font-size: 14rem;
+    line-height: 18rem;
+}

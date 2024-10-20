@@ -746,6 +746,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .Item_base__ready_3f .Item_highlight_90 {
     color: #80d43a;
+    text-shadow: 0 0 3rem #000;
 }
 
 .Item_name_b6 {
@@ -1535,12 +1536,23 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     position: relative;
 }
 
-.Progression_bgSection_5e {
+.Progression_topSectionLine_ac {
     width: 1rem;
-    height: 24rem;
-    background-image: linear-gradient(transparent, rgb(146, 146, 146) 50%, transparent);
+    height: 42rem;
+    background-image: linear-gradient(0deg, #f4e1b3 28.77%, rgba(244, 225, 179, 0) 102.05%);
+    opacity: 0.5;
     position: absolute;
-    top: -5rem;
+    bottom: 2rem;
+    left: 100%;
+}
+
+.Progression_bottomSectionLine_fc {
+    width: 1rem;
+    height: 5rem;
+    background: #f4e1b3;
+    opacity: 0.5;
+    position: absolute;
+    top: 14rem;
     left: 100%;
 }
 
@@ -1584,7 +1596,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 .Progression_rewardsGroup_50 {
     position: absolute;
     top: 35rem;
-    left: 0;
     transform: translateX(-50%);
 }
 

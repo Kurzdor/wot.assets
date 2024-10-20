@@ -1278,17 +1278,15 @@
                     r = t.n(n),
                     D = t(329),
                     a = t(4179);
-                class o extends A().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = a.B3.GOLD;
-                        else u = a.B3.INTEGRAL;
-                        const e = a.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                o.defaultProps = { format: 'integral' };
-                const i = {
+                const o = ({ format: u, value: e }) => {
+                        const t = ((u, e = 'integral') => {
+                            let t;
+                            t = 'gold' === e ? a.B3.GOLD : a.B3.INTEGRAL;
+                            return void 0 === u ? '' : a.Z5.getNumberFormat(u, t);
+                        })(e, u);
+                        return t ? A().createElement('span', null, t) : null;
+                    },
+                    i = {
                         base: 'Currency_base_57',
                         icon: 'Currency_icon_c5',
                         base__small: 'Currency_base__small_af',

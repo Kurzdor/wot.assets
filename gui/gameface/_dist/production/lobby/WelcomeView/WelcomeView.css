@@ -350,875 +350,328 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     opacity: 0;
 }
 
-.PageTitle_base_ef {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.PageTitle_title_33 {
-    color: #f2f2f7;
-    font-size: 36rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.mediaMedium .PageTitle_title_33 {
-    font-size: 56rem;
-}
-
-.PaginationRender_base_75 {
-    display: flex;
-    color: #8c8c7e;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    justify-content: center;
-    border: 1rem solid rgba(233, 226, 191, 0.3);
-    border-radius: 2rem;
-    line-height: 1.1;
-    position: relative;
-    cursor: pointer;
-}
-
-.PaginationRender_base_75:hover {
-    border-color: rgba(233, 226, 191, 0.5);
-    color: #e9e2bf;
-}
-
-.PaginationRender_base__completed_69 {
-    border-color: rgba(128, 212, 58, 0.3);
-    color: #80d43a;
-}
-
-.PaginationRender_base__completed_69:hover {
-    border-color: rgba(128, 212, 58, 0.5);
-    color: #80d43a;
-}
-
-.PaginationRender_base__inaccessible_55 {
-    border-color: rgba(255, 39, 23, 0.3);
-    color: #ff2717;
-}
-
-.PaginationRender_base__inaccessible_55:hover {
-    border-color: rgba(255, 39, 23, 0.5);
-    color: #ff2717;
-}
-
-.PaginationRender_base__selected_e1 {
-    border-color: transparent;
-    color: #e9e2bf;
-}
-
-.PaginationRender_base__selected_e1:hover {
-    border-color: transparent;
-    color: #e9e2bf;
-}
-
-.PaginationRender_selectedImage_58 {
-    width: 48rem;
-    height: 38rem;
-    background: url('R.images.gui.maps.icons.components.pagination.item_select') no-repeat center / contain;
-    opacity: 0.7;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.PaginationList_base_94 {
-    display: flex;
-    flex-direction: row;
-}
-
-.PaginationList_item_58 {
-    width: 30rem;
-    height: 20rem;
-    margin-right: 10rem;
-}
-
-.PaginationList_item__last_ec {
-    margin-right: 0;
-}
-
-.WelcomeSlider_base_08 {
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
-    width: 100%;
-}
-
-.WelcomeSlider_pagination_a8 > div {
-    margin-right: 20rem;
-}
-
-.WelcomeSlider_pagination_a8 > div:last-child {
-    margin-right: 0;
-}
-
-.WelcomeSlider_sliderArrow_b1 {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-.WelcomeSlider_sliderArrowIcon_cc {
-    width: 74rem;
-    height: 142rem;
-    background: url('R.images.frontline.gui.maps.welcome_page.arrow') no-repeat center / cover;
-    opacity: 0.8;
-    cursor: pointer;
-}
-
-.WelcomeSlider_sliderArrowIcon_cc:hover {
-    opacity: 1;
-}
-
-.WelcomeSlider_sliderArrowIcon__right_c4 {
-    transform: rotate(180deg);
-}
-
-.WelcomeSlider_sliderArrowIcon__disabled_57 {
-    background: url('R.images.frontline.gui.maps.welcome_page.arrow_disabled') no-repeat center / cover;
-    opacity: 1;
-    pointer-events: none;
-}
-
-.WelcomeSlider_slider_23 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 488rem;
-    margin: 126rem 0 61rem;
-}
-
-.mediaMedium .WelcomeSlider_slider_23 {
-    width: 960rem;
-    margin: 78rem 0 86rem;
-}
-
-.mediaLarge .WelcomeSlider_slider_23 {
-    margin: 153rem 0 161rem;
-}
-
-.WelcomeSlider_sliderContent_4d {
-    display: flex;
-}
-
-.WelcomeSlider_slide_9c {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 232rem;
-}
-
-.WelcomeSlider_slide_9c + .WelcomeSlider_slide_9c {
-    margin-left: 24rem;
-}
-
-.WelcomeSlider_slide__fullWidth_55 {
-    width: 605rem;
-}
-
-.mediaMedium .WelcomeSlider_slide_9c {
-    width: 400rem;
-}
-
-.mediaMedium .WelcomeSlider_slide__fullWidth_55 {
-    width: 960rem;
-}
-
-.WelcomeViewApp_base_4a {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000;
-    background-image: linear-gradient(
-            to top,
-            transparent,
-            rgba(0, 0, 0, 0.45) 15%,
-            rgba(0, 0, 0, 0.45) 30%,
-            transparent 50%
-        ),
-        radial-gradient(transparent, rgba(0, 0, 0, 0.7)), url('R.images.frontline.gui.maps.bg.info');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-.WelcomeViewApp_page_4a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 739rem;
-    height: 602rem;
-}
-
-.mediaMedium .WelcomeViewApp_page_4a {
-    width: 1208rem;
-    height: 708rem;
-}
-
-.mediaLarge .WelcomeViewApp_page_4a {
-    height: 880rem;
-}
-
-.mediaExtraLarge .WelcomeViewApp_page_4a {
-    height: 860rem;
-}
-
-.WelcomeViewApp_pageTitle_3e {
-    margin-top: -10rem;
-}
-
-.mediaMedium .WelcomeViewApp_pageTitle_3e {
-    margin-top: -14rem;
-}
-
-.mediaLarge .WelcomeViewApp_pageTitle_3e {
-    margin-top: -15rem;
-}
-
-.WelcomeViewApp_closeButton_d3 {
-    position: absolute;
-    top: 30rem;
-    right: 28rem;
-}
-
-.mediaLarge .WelcomeViewApp_closeButton_d3 {
-    right: 38rem;
-}
-
-.WelcomeViewApp_bottomBtnContainer_a9 {
-    display: flex;
-    justify-content: center;
-}
-
-.WelcomeViewApp_bottomCloseBtn_55 {
-    width: 158rem;
-}
-
-.ExtendedText_base_71 {
-    display: flex;
-    line-height: 1.2;
-    position: relative;
-}
-
-.ExtendedText_base__zeroPadding_25 {
-    padding: 0;
-}
-
-.ExtendedText_base__isTruncationAvailable_5b {
-    width: 100%;
-}
-
-.ExtendedText_truncated_97 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-.ExtendedText_truncated__hide_31 {
-    opacity: 0;
-}
-
-.ExtendedText_unTruncated_b8 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    justify-content: flex-start;
-    align-content: flex-start;
-    color: #ff2717;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    pointer-events: none;
-}
-
-.colors_blackReal_fc {
-    color: #000000;
-}
-
-.colors_whiteReal_31 {
-    color: #ffffff;
-}
-
-.colors_white_45 {
-    color: #f2f2f7;
-}
-
-.colors_whiteOrange_81 {
-    color: #fefeec;
-}
-
-.colors_whiteSpanish_c3 {
-    color: #e9e2bf;
-}
-
-.colors_par_5b {
-    color: #8c8c7e;
-}
-
-.colors_parSecondary_fd {
-    color: #595950;
-}
-
-.colors_parTertiary_97 {
-    color: #37362e;
-}
-
-.colors_red_79 {
-    color: #ff2717;
-}
-
-.colors_redDark_73 {
-    color: #b70000;
-}
-
-.colors_yellow_76 {
-    color: #feab34;
-}
-
-.colors_orange_cd {
-    color: #ee7000;
-}
-
-.colors_cream_0f {
-    color: #ffdd99;
-}
-
-.colors_brown_82 {
-    color: #cbac77;
-}
-
-.colors_greenBright_68 {
-    color: #80d43a;
-}
-
-.colors_green_fa {
-    color: #7ab300;
-}
-
-.colors_greenDark_a9 {
-    color: #497212;
-}
-
-.colors_blueBooster_26 {
-    color: #ccffff;
-}
-
-.colors_blueTeamkiller_86 {
-    color: #09e2ff;
-}
-
-.colors_cred_35 {
-    color: #ced9d9;
-}
-
-.colors_gold_c3 {
-    color: #ffc363;
-}
-
-.colors_bond_ce {
-    color: #c9c9b6;
-}
-
-.colors_prom_83 {
-    color: #a29b70;
-}
-
-.renderers_noBreakWrapper_10 {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.renderers_lineBreak_b5 {
-    width: 100%;
-    height: 0;
-}
-
-.renderers_newLine_bd {
-    flex: 1;
-    width: 100%;
-}
-
-.BasicSlide_title_cf {
-    color: #fefeec;
-    font-size: 15rem;
-    font-weight: 700;
-    line-height: 1.15;
-    margin: 21rem 0 10rem;
-}
-
-.mediaMedium .BasicSlide_title_cf {
-    color: #fefeec;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin: 17rem 0 11rem;
-}
-
-.mediaLarge .BasicSlide_title_cf {
-    margin: 22rem 0 11rem;
-}
-
-.BasicSlide_description_e5 {
-    color: #8c8c7e;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-    text-align: center;
-}
-
-.mediaMedium .BasicSlide_description_e5 {
-    color: #8c8c7e;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-}
-
-.BasicSlide_img_27 {
-    width: 232rem;
-    height: 174rem;
-    background: no-repeat center / cover;
-}
-
-.mediaMedium .BasicSlide_img_27 {
-    width: 400rem;
-    height: 300rem;
-}
-
-.BasicSlide_img__level_5b {
-    background-image: url('R.images.frontline.gui.maps.welcome_page.level_reserves_232_174');
-}
-
-.mediaMedium .BasicSlide_img__level_5b {
-    background-image: url('R.images.frontline.gui.maps.welcome_page.level_reserves_400_300');
-}
-
-.BasicSlide_img__general_b9 {
-    background-image: url('R.images.frontline.gui.maps.welcome_page.general_232_174');
-}
-
-.mediaMedium .BasicSlide_img__general_b9 {
-    background-image: url('R.images.frontline.gui.maps.welcome_page.general_400_300');
-}
-
-.BasicSlide_img__map_c3 {
-    width: 488rem;
-    height: 174rem;
-    background-image: url('R.images.frontline.gui.maps.welcome_page.map_488_174');
-}
-
-.mediaMedium .BasicSlide_img__map_c3 {
-    width: 960rem;
-    height: 300rem;
-    background-image: url('R.images.frontline.gui.maps.welcome_page.map_960_300');
-}
-
-.Box_mt__XS_0c {
-    margin-top: 4rem;
-}
-.Box_mt__SM_eb {
-    margin-top: 8rem;
-}
-.Box_mt__SMp_cf {
-    margin-top: 10rem;
-}
-.Box_mt__MD_25 {
-    margin-top: 16rem;
-}
-.Box_mt__MDp_49 {
-    margin-top: 20rem;
-}
-.Box_mt__LG_e8 {
-    margin-top: 32rem;
-}
-.Box_mt__XL_83 {
-    margin-top: 64rem;
-}
-
-.Box_mr__XS_7c {
-    margin-right: 4rem;
-}
-
-.Box_mr__SM_08 {
-    margin-right: 8rem;
-}
-
-.Box_mr__SMp_06 {
-    margin-right: 10rem;
-}
-
-.Box_mr__MD_4a {
-    margin-right: 16rem;
-}
-
-.Box_mr__MDp_b6 {
-    margin-right: 20rem;
-}
-
-.Box_mr__LG_d0 {
-    margin-right: 32rem;
-}
-
-.Box_mr__XL_db {
-    margin-right: 64rem;
-}
-
-.Box_mb__XS_bb {
-    margin-bottom: 4rem;
-}
-
-.Box_mb__SM_83 {
-    margin-bottom: 8rem;
-}
-
-.Box_mb__SMp_04 {
-    margin-bottom: 10rem;
-}
-
-.Box_mb__MD_ed {
-    margin-bottom: 16rem;
-}
-
-.Box_mb__MDp_65 {
-    margin-bottom: 20rem;
-}
-
-.Box_mb__LG_c8 {
-    margin-bottom: 32rem;
-}
-
-.Box_mb__XL_f8 {
-    margin-bottom: 64rem;
-}
-
-.Box_ml__XS_8a {
-    margin-left: 4rem;
-}
-
-.Box_ml__SM_e6 {
-    margin-left: 8rem;
-}
-
-.Box_ml__SMp_fb {
-    margin-left: 10rem;
-}
-
-.Box_ml__MD_2b {
-    margin-left: 16rem;
-}
-
-.Box_ml__MDp_c7 {
-    margin-left: 20rem;
-}
-
-.Box_ml__LG_39 {
-    margin-left: 32rem;
-}
-
-.Box_ml__XL_4a {
-    margin-left: 64rem;
-}
-
 .FormatText_base_d0 {
     display: flex;
     flex-wrap: wrap;
 }
 
-/* eslint-disable-next-line expectedscss*/
-.Text_paragraph-P10_2c {
-    font-size: 10rem;
-    font-weight: 400;
-    line-height: 1.2;
+.DescriptionBlock_base_28 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 262rem;
 }
-.Text_paragraph-P12_22 {
-    font-size: 12rem;
-    font-weight: 400;
-    line-height: 1.3;
+
+.mediaSmall .DescriptionBlock_base_28 {
+    width: 360rem;
 }
-.Text_paragraph-P14_a7 {
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
-.Text_paragraph-P16_90 {
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.25;
-}
-.Text_paragraph-P18_50 {
-    font-size: 18rem;
-    font-weight: 400;
-    line-height: 1.25;
-}
-.Text_paragraph-P24_33 {
-    font-size: 24rem;
-    font-weight: 400;
-    line-height: 32rem;
-}
-.Text_heading-H14_8b {
-    font-size: 14rem;
-    font-weight: 700;
-    line-height: 1.15;
-}
-.Text_heading-H15_9e {
-    font-size: 15rem;
-    font-weight: 700;
-    line-height: 1.15;
-}
-.Text_heading-H18_b7 {
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-.Text_heading-H20R_f6 {
+
+.DescriptionBlock_title_61 {
+    color: #e9e2bf;
     font-size: 20rem;
     font-weight: 400;
     line-height: 1.2;
-}
-.Text_heading-H22_27 {
-    font-size: 22rem;
-    font-weight: 700;
-    line-height: 1.2;
-}
-.Text_heading-H24R_be {
-    font-size: 24rem;
-    font-weight: 400;
-    line-height: 1.2;
-}
-.Text_heading-H24_0c {
-    font-size: 24rem;
-    font-weight: 700;
-    line-height: 1.2;
-}
-.Text_heading-H28_78 {
-    font-size: 28rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-.Text_heading-H36_32 {
-    font-size: 36rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-.Text_heading-H56_c3 {
-    font-size: 56rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-.Text_heading-H73_8f {
-    font-size: 73rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-.Text_heading-H144_a9 {
-    font-size: 144rem;
-    font-weight: 700;
-    line-height: 1;
-}
-.Text_BLACK_REAL_30 {
-    color: #000000;
-}
-.Text_WHITE_REAL_bc {
-    color: #ffffff;
-}
-.Text_WHITE_62 {
-    color: #f2f2f7;
-}
-.Text_WHITE_ORANGE_54 {
-    color: #fefeec;
-}
-.Text_WHITE_SPANISH_df {
-    color: #e9e2bf;
-}
-.Text_PAR_15 {
-    color: #8c8c7e;
-}
-.Text_PAR_SECONDARY_5d {
-    color: #595950;
-}
-.Text_PAR_TERTIARY_c9 {
-    color: #37362e;
-}
-.Text_INFO_RED_30 {
-    color: #ff0000;
-}
-.Text_RED_66 {
-    color: #ff2717;
-}
-.Text_RED_DARK_d8 {
-    color: #b70000;
-}
-.Text_YELLOW_ed {
-    color: #feab34;
-}
-.Text_ORANGE_be {
-    color: #ee7000;
-}
-.Text_CREAM_57 {
-    color: #ffdd99;
-}
-.Text_BROWN_18 {
-    color: #cbac77;
-}
-.Text_GREEN_BRIGHT_3f {
-    color: #80d43a;
-}
-.Text_GREEN_e3 {
-    color: #7ab300;
-}
-.Text_GREEN_DARK_f1 {
-    color: #497212;
-}
-.Text_BLUE_BOOSTER_21 {
-    color: #ccffff;
-}
-.Text_BLUE_TEAMKILLER_ab {
-    color: #09e2ff;
-}
-.Text_CRED_f7 {
-    color: #ced9d9;
-}
-.Text_GOLD_28 {
-    color: #ffc363;
-}
-.Text_BOND_be {
-    color: #c9c9b6;
-}
-.Text_PROM_65 {
-    color: #a29b70;
-}
-
-.VehiclesSlide_title_a4 {
-    color: #fefeec;
-    font-size: 15rem;
-    font-weight: 700;
-    line-height: 1.15;
-    margin: 21rem 0 10rem;
-}
-
-.mediaMedium .VehiclesSlide_title_a4 {
-    color: #fefeec;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin: 17rem 0 11rem;
-}
-
-.mediaLarge .VehiclesSlide_title_a4 {
-    margin: 22rem 0 11rem;
-}
-
-.VehiclesSlide_description_65 {
-    color: #8c8c7e;
-    font-size: 14rem;
-    font-weight: 400;
-    line-height: 1.3;
     text-align: center;
 }
 
-.mediaMedium .VehiclesSlide_description_65 {
-    color: #8c8c7e;
+.mediaSmall .DescriptionBlock_title_61 {
+    font-size: 24rem;
+}
+
+.DescriptionBlock_description_58 {
+    color: #c9c9b6;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 12rem;
+    line-height: 18rem;
+    text-align: center;
+}
+
+.mediaSmall .DescriptionBlock_description_58 {
+    color: #c9c9b6;
     font-size: 16rem;
     font-weight: 400;
     line-height: 1.25;
 }
 
-.VehiclesSlide_img_c1 {
-    width: 232rem;
-    height: 174rem;
-    background: no-repeat center / cover;
+@keyframes App_slideUp_b9 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes App_fadeOut_8d {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes App_fadeIn_f1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes App_fadeInScale_a8 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+@keyframes App_fadeInWithScale_ee {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes App_scale_34 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes App_raysAppearance_26 {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+@keyframes App_rotate_5d {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes App_fadeTop_03 {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+}
+@keyframes App_fadeBot_3a {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+}
+.App_base_12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: url('R.images.white_tiger.gui.maps.icons.welcome.background_dark__gp4') no-repeat center / cover;
+    overflow: hidden;
+    position: relative;
+}
+.App_base__forward_51 .App_fadeTop_03 {
+    animation: App_fadeTop_03 0.5s ease forwards;
+}
+.App_base__forward_51 .App_fadeBot_3a {
+    animation: App_fadeBot_3a 0.5s ease forwards;
+}
+.App_base__backward_ea .App_fadeTop_03 {
+    animation: App_fadeTop_03 0.5s ease forwards reverse;
+}
+.App_base__backward_ea .App_fadeBot_3a {
+    animation: App_fadeBot_3a 0.5s ease forwards reverse;
+}
+.App_base__out_30 {
+    opacity: 1;
+    animation-name: App_fadeOut_8d;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.82, 0.17, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+.App_divider_5b {
+    width: 1rem;
+    margin-left: 16rem;
+    margin-right: 16rem;
+    background: rgba(233, 226, 191, 0.3);
+}
+.mediaMedium .App_divider_5b {
+    margin-left: 30rem;
+    margin-right: 30rem;
+}
+.mediaLarge .App_divider_5b {
+    margin-left: 70rem;
+    margin-right: 70rem;
+}
+.App_bottomBackgroundLayer_e4 {
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+.App_content_4b {
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+}
+.App_topContainer_c0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 63rem;
+}
+.mediaSmall .App_topContainer_c0 {
+    margin-top: 65rem;
+}
+.mediaMedium .App_topContainer_c0 {
+    margin-top: 70rem;
+}
+.App_title_de {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+.mediaSmall .App_title_de {
+    font-size: 56rem;
+}
+.mediaMedium .App_title_de {
+    font-size: 73rem;
+}
+.App_videoContainer_7a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 76rem;
+    height: 52rem;
+    margin: 162rem 0 100rem;
+    z-index: 2;
+    cursor: pointer;
+}
+.mediaSmall .App_videoContainer_7a {
+    margin: 136rem 0 62rem;
+}
+.mediaMedium .App_videoContainer_7a {
+    width: 110rem;
+    height: 70rem;
+    margin: 181rem 0 114rem;
+}
+.mediaLarge .App_videoContainer_7a {
+    margin: 272rem 0 206rem;
+}
+.App_video_46 {
+    width: 100rem;
+    height: 76rem;
+    background: url('R.images.white_tiger.gui.maps.icons.welcome.youtube_button_small') no-repeat center / contain;
+    pointer-events: none;
+}
+.mediaMedium .App_video_46 {
+    width: 150rem;
+    height: 110rem;
+    background-image: url('R.images.white_tiger.gui.maps.icons.welcome.youtube_button');
+}
+.App_videoContainer_7a:hover .App_video_46 {
+    filter: brightness(1.2);
+}
+.App_bottomContainer_5b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 64rem;
+}
+.mediaSmall .App_bottomContainer_5b {
+    margin-bottom: 88rem;
+}
+.mediaMedium .App_bottomContainer_5b {
+    margin-bottom: 58rem;
+}
+.App_close_31 {
+    height: 126rem;
+}
+.mediaMedium .App_close_31 {
+    height: 150rem;
+}
+.App_cButton_cd {
+    width: 160rem;
+    height: 30rem;
+    z-index: 2;
+}
+.App_exit_95 {
+    position: absolute;
+    top: 50rem;
+    right: 50rem;
 }
 
-.mediaMedium .VehiclesSlide_img_c1 {
-    width: 400rem;
-    height: 300rem;
-}
-
-.VehiclesSlide_img__level_e8 {
-    background-image: url('R.images.frontline.gui.maps.welcome_page.level_reserves_232_174');
-}
-
-.mediaMedium .VehiclesSlide_img__level_e8 {
-    background-image: url('R.images.frontline.gui.maps.welcome_page.level_reserves_400_300');
-}
-
-.VehiclesSlide_img__general_45 {
-    background-image: url('R.images.frontline.gui.maps.welcome_page.general_232_174');
-}
-
-.mediaMedium .VehiclesSlide_img__general_45 {
-    background-image: url('R.images.frontline.gui.maps.welcome_page.general_400_300');
-}
-
-.VehiclesSlide_img__map_ca {
-    width: 488rem;
-    height: 174rem;
-    background-image: url('R.images.frontline.gui.maps.welcome_page.map_488_174');
-}
-
-.mediaMedium .VehiclesSlide_img__map_ca {
-    width: 960rem;
-    height: 300rem;
-    background-image: url('R.images.frontline.gui.maps.welcome_page.map_960_300');
-}
-
-.VehiclesSlide_img_c1 {
-    width: 470rem;
-    height: 280rem;
-    margin: -53rem 0;
-    background: url('R.images.frontline.gui.maps.welcome_page.vehicles_470_280') no-repeat center / cover;
+html {
+    height: 100%;
     position: relative;
 }
 
-.mediaMedium .VehiclesSlide_img_c1 {
-    width: 750rem;
-    height: 446rem;
-    margin-top: -75rem;
-    margin-bottom: -71rem;
-    background-image: url('R.images.frontline.gui.maps.welcome_page.vehicles_750_446');
+/* stylelint-disable */
+
+[lang='ja'],
+[lang='ko'],
+[lang='zh_tw'],
+[lang='zh_sg'],
+[lang='zh_ch'],
+[lang='th'] {
+    overflow-wrap: break-word;
 }
 
-.VehiclesSlide_level_91 {
-    width: 100rem;
-    height: 80rem;
-    background: no-repeat center / contain;
-    position: absolute;
-    top: 68rem;
-    transform: translate(-50%, -50%);
-}
+/* stylelint-enable */
 
-.mediaMedium .VehiclesSlide_level_91 {
-    width: 132rem;
-    height: 106rem;
-    top: 109rem;
-}
-
-.VehiclesSlide_level__left_6f {
-    left: 138rem;
-}
-
-.mediaMedium .VehiclesSlide_level__left_6f {
-    left: 218rem;
-}
-
-.VehiclesSlide_level__right_ec {
-    right: 146rem;
-    transform: translate(50%, -50%);
-}
-
-.mediaMedium .VehiclesSlide_level__right_ec {
-    right: 236rem;
+body {
+    margin: 0;
+    overflow: hidden;
 }

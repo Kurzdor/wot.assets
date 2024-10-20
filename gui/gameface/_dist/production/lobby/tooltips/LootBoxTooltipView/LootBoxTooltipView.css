@@ -1,0 +1,69 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Content_base_7e {
+    display: flex;
+    flex-direction: column;
+    width: 363rem;
+    padding: 16rem 20rem 25rem;
+    background-image: linear-gradient(
+        180deg,
+        rgba(51, 51, 41, 0.3) 0%,
+        transparent 16%,
+        transparent 88%,
+        rgba(51, 51, 41, 0.1) 100%
+    );
+}
+
+.Content_title_7d {
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 7rem;
+}
+
+.Content_icon_f4 {
+    width: 100%;
+    height: 120rem;
+    margin-bottom: 20rem;
+    background: url('R.images.white_tiger.gui.maps.icons.keys.boss_140') no-repeat center / contain;
+}
+
+.Content_icon__hunter_fe {
+    background-image: url('R.images.white_tiger.gui.maps.icons.keys.hunter_140');
+}
+
+.Content_howItWorksWrapper_69 {
+    margin-bottom: 14rem;
+}
+
+.Content_subtitle_91 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 5rem;
+}
+
+.Content_description_ba {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}

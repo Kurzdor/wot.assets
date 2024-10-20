@@ -1510,11 +1510,11 @@
         (__webpack_require__.e = (e) =>
             Promise.all(Object.keys(__webpack_require__.f).reduce((t, r) => (__webpack_require__.f[r](e, t), t), []))),
         (__webpack_require__.u = (e) => {
-            if (312 === e) return 'chunks/lobby/b246ce1cfe7007b26485.js';
+            if (312 === e) return 'chunks/lobby/1bb93e5d5349133b6e1f.js';
         }),
         (__webpack_require__.miniCssF = (e) =>
             312 === e
-                ? 'chunks/lobby/b246ce1cfe7007b26485.css'
+                ? 'chunks/lobby/1bb93e5d5349133b6e1f.css'
                 : 'lobby/achievements/AchievementsMainView/AchievementsMainView.css'),
         (__webpack_require__.g = (function () {
             if ('object' == typeof globalThis) return globalThis;

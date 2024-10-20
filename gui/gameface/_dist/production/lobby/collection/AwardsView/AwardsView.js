@@ -1095,8 +1095,8 @@
                     return a().createElement(_, null, a().createElement(y, u, t));
                 };
                 var U = u(493),
-                    I = u.n(U);
-                const k = 'AwardsView_base_c5';
+                    k = u.n(U);
+                const I = 'AwardsView_base_c5';
                 function N(e) {
                     engine.call('PlaySound', e);
                 }
@@ -1279,6 +1279,7 @@
                         (e.PremiumPlus = 'premium_plus'),
                         (e.BattlePassPoints = 'battlePassPoints'),
                         (e.BattlePassSelectToken = 'battlePassSelectToken'),
+                        (e.SelectableBonus = 'selectableBonus'),
                         (e.StyleProgressToken = 'styleProgressToken'),
                         (e.TmanToken = 'tmanToken'),
                         (e.NaturalCover = 'naturalCover'),
@@ -1299,7 +1300,12 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.WtStamp = 'stamp'),
+                        (e.WtHunter = 'wt_hunter'),
+                        (e.WtHunterCollection = 'hunter_collection'),
+                        (e.WtTicket = 'wtevent_ticket'),
+                        (e.WtMainPrizeDiscount = 'main_prize_discount');
                 })(K || (K = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -1406,18 +1412,16 @@
                             if (('string' != typeof u && (u = u.$dyn(i[e])), 'string' == typeof u)) return u;
                         }
                         return '';
-                    };
-                class oe extends a().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = j.B3.GOLD;
-                        else e = j.B3.INTEGRAL;
-                        const t = j.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== t ? t : null;
-                    }
-                }
-                oe.defaultProps = { format: 'integral' };
-                const se = [
+                    },
+                    oe = ({ format: e, value: t }) => {
+                        const u = ((e, t = 'integral') => {
+                            let u;
+                            u = 'gold' === t ? j.B3.GOLD : j.B3.INTEGRAL;
+                            return void 0 === e ? '' : j.Z5.getNumberFormat(e, u);
+                        })(t, e);
+                        return u ? a().createElement('span', null, u) : null;
+                    },
+                    se = [
                         K.Items,
                         K.Equipment,
                         K.Xp,
@@ -1452,6 +1456,12 @@
                         K.BattleBoosterGift,
                         K.CosmicLootboxCommon,
                         K.CosmicLootboxSilver,
+                        K.SelectableBonus,
+                        K.WtStamp,
+                        K.WtTicket,
+                        K.WtMainPrizeDiscount,
+                        K.WtHunter,
+                        K.WtHunterCollection,
                     ],
                     le = [K.Gold, K.Credits, K.Crystal, K.FreeXp],
                     ne = [K.BattlePassPoints],
@@ -1527,6 +1537,7 @@
                             case 'groups':
                             case 'tmanToken':
                             case 'battlePassSelectToken':
+                            case 'selectableBonus':
                                 return `R.images.gui.maps.icons.quests.bonuses.${t}.${r}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${t}.${r}`;
@@ -2904,7 +2915,7 @@
                     },
                     Me = 'defaultConfig',
                     Ue = [J.CURRENCY, K.Credits, K.Crystal, K.Gold, K.PremiumPlus],
-                    Ie = we()(
+                    ke = we()(
                         ({ observableModel: e }) => {
                             const t = Object.assign({}, e.primitives(['currentCollection']), e.primitives(['page']), {
                                     root: e.object(),
@@ -3136,9 +3147,9 @@
                             };
                         },
                     ),
-                    ke =
-                        (Ie[0],
-                        Ie[1],
+                    Ie =
+                        (ke[0],
+                        ke[1],
                         we()(
                             ({ observableModel: e }) => {
                                 const t = { root: e.object(), rewards: e.array('rewards') },
@@ -3174,8 +3185,8 @@
                                 onCloseCollection: e.createCallbackNoArgs('onCloseCollection'),
                             }),
                         )),
-                    Ne = ke[0],
-                    He = ke[1],
+                    Ne = Ie[0],
+                    He = Ie[1],
                     Ge = {
                         base: 'App_base_db',
                         fadeIn: 'App_fadeIn_57',
@@ -3306,7 +3317,7 @@
                             },
                             s,
                         ),
-                        I = F()(We.state, We.state__default);
+                        k = F()(We.state, We.state__default);
                     return (
                         (0, i.useEffect)(
                             () => (
@@ -3341,7 +3352,7 @@
                                 ),
                             a().createElement(
                                 'span',
-                                { className: I },
+                                { className: k },
                                 a().createElement('span', { className: We.stateDisabled }),
                                 a().createElement('span', { className: We.stateHighlightHover }),
                                 a().createElement('span', { className: We.stateHighlightActive }),
@@ -4095,8 +4106,8 @@
                     Ot = 'MainRewards_ribbon_19',
                     Mt = 'MainRewards_raysWrapper_f7',
                     Ut = 'MainRewards_rays_ea',
-                    It = 'MainRewards_sunShineCanvas_e9',
-                    kt = {
+                    kt = 'MainRewards_sunShineCanvas_e9',
+                    It = {
                         width: 400,
                         height: 400,
                         frameCount: 50,
@@ -4114,12 +4125,12 @@
                             a().createElement('div', { className: Mt }, a().createElement('div', { className: Ut })),
                             e &&
                                 a().createElement(lt, {
-                                    width: kt.width,
-                                    height: kt.height,
-                                    frameCount: kt.frameCount,
-                                    getImageSource: rt(kt),
+                                    width: It.width,
+                                    height: It.height,
+                                    frameCount: It.frameCount,
+                                    getImageSource: rt(It),
                                     frameTime: 50,
-                                    className: It,
+                                    className: kt,
                                 }),
                             a().createElement('div', { className: yt }, a().createElement('div', { className: Ot })),
                             a().createElement(Tt, null),
@@ -4159,11 +4170,11 @@
                         );
                     });
                 engine.whenReady.then(() => {
-                    I().render(
+                    k().render(
                         a().createElement(
                             Ne,
                             null,
-                            a().createElement(M, { className: k }, a().createElement(Wt, null)),
+                            a().createElement(M, { className: I }, a().createElement(Wt, null)),
                         ),
                         document.getElementById('root'),
                     );

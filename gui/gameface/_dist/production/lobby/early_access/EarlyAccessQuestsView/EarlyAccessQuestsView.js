@@ -1954,6 +1954,7 @@
                         (e.PremiumPlus = 'premium_plus'),
                         (e.BattlePassPoints = 'battlePassPoints'),
                         (e.BattlePassSelectToken = 'battlePassSelectToken'),
+                        (e.SelectableBonus = 'selectableBonus'),
                         (e.StyleProgressToken = 'styleProgressToken'),
                         (e.TmanToken = 'tmanToken'),
                         (e.NaturalCover = 'naturalCover'),
@@ -1974,7 +1975,12 @@
                         (e.Comp7TokenCouponReward = 'comp7TokenCouponReward'),
                         (e.BattleBoosterGift = 'battleBooster_gift'),
                         (e.CosmicLootboxSilver = 'lootBoxToken'),
-                        (e.CosmicLootboxCommon = 'cosmic_2024_2');
+                        (e.CosmicLootboxCommon = 'cosmic_2024_2'),
+                        (e.WtStamp = 'stamp'),
+                        (e.WtHunter = 'wt_hunter'),
+                        (e.WtHunterCollection = 'hunter_collection'),
+                        (e.WtTicket = 'wtevent_ticket'),
+                        (e.WtMainPrizeDiscount = 'main_prize_discount');
                 })(ou || (ou = {})),
                     (function (e) {
                         (e.Gold = 'gold'),
@@ -2068,17 +2074,15 @@
                             (e.PROGRESSION_STYLE_UPGRADED_3 = 'progressionStyleUpgraded_3'),
                             (e.PROGRESSION_STYLE_UPGRADED_4 = 'progressionStyleUpgraded_4');
                     })(du || (du = {}));
-                class _u extends s().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = X.B3.GOLD;
-                        else e = X.B3.INTEGRAL;
-                        const u = X.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                _u.defaultProps = { format: 'integral' };
-                const Au = [
+                const _u = ({ format: e, value: u }) => {
+                        const t = ((e, u = 'integral') => {
+                            let t;
+                            t = 'gold' === u ? X.B3.GOLD : X.B3.INTEGRAL;
+                            return void 0 === e ? '' : X.Z5.getNumberFormat(e, t);
+                        })(u, e);
+                        return t ? s().createElement('span', null, t) : null;
+                    },
+                    Au = [
                         ou.Items,
                         ou.Equipment,
                         ou.Xp,
@@ -2113,6 +2117,12 @@
                         ou.BattleBoosterGift,
                         ou.CosmicLootboxCommon,
                         ou.CosmicLootboxSilver,
+                        ou.SelectableBonus,
+                        ou.WtStamp,
+                        ou.WtTicket,
+                        ou.WtMainPrizeDiscount,
+                        ou.WtHunter,
+                        ou.WtHunterCollection,
                     ],
                     Fu = [ou.Gold, ou.Credits, ou.Crystal, ou.FreeXp],
                     Du = [ou.BattlePassPoints],
@@ -2178,6 +2188,7 @@
                             case 'groups':
                             case 'tmanToken':
                             case 'battlePassSelectToken':
+                            case 'selectableBonus':
                                 return `R.images.gui.maps.icons.quests.bonuses.${u}.${a}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${u}.${a}`;

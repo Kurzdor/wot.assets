@@ -2589,7 +2589,7 @@
                         );
                     };
             },
-            3116: (e, t, u) => {
+            7003: (e, t, u) => {
                 'use strict';
                 var n = {};
                 u.r(n),
@@ -4152,17 +4152,15 @@
                     (function (e) {
                         (e.Red = 'RedActionBG'), (e.Blue = 'BlueActionBG');
                     })(Rt || (Rt = {}));
-                class It extends i().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = Ft.B3.GOLD;
-                        else e = Ft.B3.INTEGRAL;
-                        const t = Ft.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== t ? t : null;
-                    }
-                }
-                It.defaultProps = { format: 'integral' };
-                const Ot = {
+                const It = ({ format: e, value: t }) => {
+                        const u = ((e, t = 'integral') => {
+                            let u;
+                            u = 'gold' === t ? Ft.B3.GOLD : Ft.B3.INTEGRAL;
+                            return void 0 === e ? '' : Ft.Z5.getNumberFormat(e, u);
+                        })(t, e);
+                        return u ? i().createElement('span', null, u) : null;
+                    },
+                    Ot = {
                         base: 'Currency_base_57',
                         icon: 'Currency_icon_c5',
                         base__small: 'Currency_base__small_af',
@@ -4573,26 +4571,52 @@
                     Du = 'ExperienceStepper_currencyIcon_e8',
                     bu = 'ExperienceStepper_controls_15',
                     Bu = 'ExperienceStepper_btn_00',
-                    vu = 'ExperienceStepper_btnIncrement_fe',
-                    hu = 'ExperienceStepper_btnIncrement__disabled_b8',
-                    fu = 'ExperienceStepper_btnDecrement_fb',
-                    wu = 'ExperienceStepper_btnDecrement__disabled_3e',
-                    yu = 'perk',
-                    ku = 'percent',
-                    Su = 'play',
-                    Lu = /\d+/,
-                    xu = () => (0, ke.G)('highlight'),
-                    Tu = ({ value: e, maxValue: t, isActive: u }) => {
+                    vu = 'ExperienceStepper_btn__scaled_53',
+                    hu = 'ExperienceStepper_btnIncrement_fe',
+                    fu = 'ExperienceStepper_btnIncrement__disabled_b8',
+                    wu = 'ExperienceStepper_btnDecrement_fb',
+                    yu = 'ExperienceStepper_btnDecrement__disabled_3e',
+                    ku = 'perk',
+                    Su = 'percent',
+                    Lu = 'play',
+                    xu = /\d+/,
+                    Tu = () => (0, ke.G)('highlight'),
+                    Mu = ({ value: e, maxValue: t, isActive: u }) => {
                         const n = ve().controls,
                             r = e < t,
                             a = e > 1,
-                            s = (0, o.useRef)(null);
+                            s = (() => {
+                                const e = (0, o.useState)(Se.O.view.getScale()),
+                                    t = e[0],
+                                    u = e[1];
+                                return (
+                                    (0, o.useEffect)(() => {
+                                        const e = () => {
+                                            u(Se.O.view.getScale());
+                                        };
+                                        return (
+                                            window.addEventListener('resize', e),
+                                            () => {
+                                                window.removeEventListener('resize', e);
+                                            }
+                                        );
+                                    }, []),
+                                    t
+                                );
+                            })(),
+                            c = (0, m.GS)(),
+                            d = c.mediaSize,
+                            _ = c.mediaWidth,
+                            E = (d < m.cJ.Large && 2 === s) || _ >= m.fd.Large,
+                            g = l()(Bu, hu, !r && fu, E && vu),
+                            A = l()(Bu, wu, !a && yu, E && vu),
+                            C = (0, o.useRef)(null);
                         return i().createElement(
                             L.u,
                             { contentId: R.views.lobby.crew.tooltips.ExperienceStepperTooltip('resId') },
                             i().createElement(
                                 'div',
-                                { ref: s, className: gu },
+                                { ref: C, className: gu },
                                 i().createElement(
                                     'div',
                                     { className: Cu },
@@ -4605,19 +4629,19 @@
                                             className: Fu,
                                             onBlur: () => {
                                                 var e;
-                                                return null == (e = s.current) ? void 0 : e.classList.remove(Au);
+                                                return null == (e = C.current) ? void 0 : e.classList.remove(Au);
                                             },
                                             onFocus: () => {
                                                 var e;
-                                                return u && (null == (e = s.current) ? void 0 : e.classList.add(Au));
+                                                return u && (null == (e = C.current) ? void 0 : e.classList.add(Au));
                                             },
                                             onKeyDown: (e) => {
                                                 let t,
                                                     u = 0;
                                                 (t =
                                                     e.ctrlKey || e.which === pt.n.PAGE_UP || e.which === pt.n.PAGE_DOWN
-                                                        ? yu
-                                                        : ku),
+                                                        ? ku
+                                                        : Su),
                                                     (e.which !== pt.n.ARROW_UP && e.which !== pt.n.PAGE_UP) || !r
                                                         ? (e.which !== pt.n.ARROW_DOWN && e.which !== pt.n.PAGE_DOWN) ||
                                                           !a ||
@@ -4628,14 +4652,14 @@
                                             onChange: (e) => {
                                                 var u;
                                                 let r = Number(
-                                                    null == (u = Lu.exec(e.currentTarget.value)) ? void 0 : u[0],
+                                                    null == (u = xu.exec(e.currentTarget.value)) ? void 0 : u[0],
                                                 );
                                                 !Number.isInteger(r) && n.onFreeXpManualInput(1),
                                                     r > t ? (r = t) : r < 1 && (r = 1),
                                                     n.onFreeXpManualInput(r);
                                             },
                                             onWheel: (e) => {
-                                                e.deltaY > 0 ? n.onFreeXpUpdated(ku, 1) : n.onFreeXpUpdated(ku, -1);
+                                                e.deltaY > 0 ? n.onFreeXpUpdated(Su, 1) : n.onFreeXpUpdated(Su, -1);
                                             },
                                         }),
                                     ),
@@ -4645,31 +4669,31 @@
                                     'div',
                                     { className: bu },
                                     i().createElement('div', {
-                                        className: l()(Bu, vu, !r && hu),
-                                        onMouseEnter: xu,
+                                        className: g,
+                                        onMouseEnter: Tu,
                                         onClick: (e) =>
                                             r &&
                                             (({ ctrlKey: e }) => {
-                                                (0, ke.G)(Su), n.onFreeXpUpdated(e ? yu : ku, 1);
+                                                (0, ke.G)(Lu), n.onFreeXpUpdated(e ? ku : Su, 1);
                                             })(e),
                                     }),
                                     i().createElement('div', {
-                                        className: l()(Bu, fu, !a && wu),
-                                        onMouseEnter: xu,
+                                        className: A,
+                                        onMouseEnter: Tu,
                                         onClick: (e) =>
                                             a &&
                                             (({ ctrlKey: e }) => {
-                                                (0, ke.G)(Su), n.onFreeXpUpdated(e ? yu : ku, -1);
+                                                (0, ke.G)(Lu), n.onFreeXpUpdated(e ? ku : Su, -1);
                                             })(e),
                                     }),
                                 ),
                             ),
                         );
                     },
-                    Mu = 'FreeXpCard_discount_48',
-                    Nu = 'FreeXpCard_discountValue_ca',
-                    Ru = 'FreeXpCard_bottomStepper_4a',
-                    Iu = (0, h.Pi)(() => {
+                    Nu = 'FreeXpCard_discount_48',
+                    Ru = 'FreeXpCard_discountValue_ca',
+                    Iu = 'FreeXpCard_bottomStepper_4a',
+                    Ou = (0, h.Pi)(() => {
                         const e = ve(),
                             t = e.model,
                             u = e.controls,
@@ -4721,32 +4745,32 @@
                             headerContent: l
                                 ? i().createElement(
                                       'div',
-                                      { className: Mu },
+                                      { className: Nu },
                                       i().createElement(me, {
                                           text: R.strings.crew_books.card.freeExp.discountValue(),
                                           binding: { discount: a },
-                                          classMix: Nu,
+                                          classMix: Ru,
                                       }),
                                   )
                                 : null,
                             bottomContent: i().createElement(
                                 'div',
-                                { className: Ru },
-                                i().createElement(Tu, { value: o, maxValue: r, isActive: d }),
+                                { className: Iu },
+                                i().createElement(Mu, { value: o, maxValue: r, isActive: d }),
                             ),
                             onCardSelect: () => u.onFreeXpSelected(!d),
                             onCardMouseEnter: u.onFreeXpMouseEnter,
                             hoverSound: Wt.gO.CREW_FREEXP_HIGHLIGHT,
                         });
                     });
-                var Ou = u(280);
-                const Pu = 'SectionFooter_base_82',
-                    Hu = 'SectionFooter_base__visible_e5',
-                    Wu = 'SectionFooter_labelContainer_68',
-                    Gu = 'SectionFooter_confirmLabel_53',
-                    ju = 'SectionFooter_confirmLabelMemberName_23',
-                    Uu = 'SectionFooter_confirmBtn_5d',
-                    zu = (0, h.Pi)(() => {
+                var Pu = u(280);
+                const Hu = 'SectionFooter_base_82',
+                    Wu = 'SectionFooter_base__visible_e5',
+                    Gu = 'SectionFooter_labelContainer_68',
+                    ju = 'SectionFooter_confirmLabel_53',
+                    Uu = 'SectionFooter_confirmLabelMemberName_23',
+                    zu = 'SectionFooter_confirmBtn_5d',
+                    Xu = (0, h.Pi)(() => {
                         const e = (0, m.GS)().mediaSize,
                             t = ve(),
                             u = t.model,
@@ -4757,13 +4781,13 @@
                             s = e < m.cJ.Medium ? Mt.small : Mt.big;
                         return i().createElement(
                             'div',
-                            { className: l()(Pu, (o || a) && Hu) },
+                            { className: l()(Hu, (o || a) && Wu) },
                             i().createElement(
                                 'div',
-                                { className: Wu },
+                                { className: Gu },
                                 o &&
-                                    i().createElement(Ou.z, {
-                                        classMix: Gu,
+                                    i().createElement(Pu.z, {
+                                        classMix: ju,
                                         text:
                                             e >= m.cJ.Small && a
                                                 ? R.strings.crew_books.confirm.crewLabelSeparated()
@@ -4778,15 +4802,15 @@
                                         },
                                     }),
                                 a &&
-                                    i().createElement(Ou.z, {
-                                        classMix: Gu,
+                                    i().createElement(Pu.z, {
+                                        classMix: ju,
                                         text: o
                                             ? R.strings.crew_books.confirm.personalExtraLabel()
                                             : R.strings.crew_books.confirm.personalLabel(),
                                         binding: {
                                             memberName: i().createElement(
                                                 'div',
-                                                { className: ju },
+                                                { className: Uu },
                                                 u.tankmanName.get(),
                                             ),
                                             xpValue: i().createElement(Ht, {
@@ -4800,27 +4824,27 @@
                             ),
                             i().createElement(
                                 eu.u5,
-                                { size: eu.qE.medium, mixClass: Uu, onClick: n.onLearn },
+                                { size: eu.qE.medium, mixClass: zu, onClick: n.onLearn },
                                 R.strings.crew_books.buttons.learn(),
                             ),
                             i().createElement(
                                 eu.u5,
-                                { type: eu.L$.secondary, size: eu.qE.medium, mixClass: Uu, onClick: n.onCancel },
+                                { type: eu.L$.secondary, size: eu.qE.medium, mixClass: zu, onClick: n.onCancel },
                                 R.strings.crew_books.buttons.cancel(),
                             ),
                         );
                     }),
-                    Xu = 'CrewBooksSection_base_33',
-                    $u = 'CrewBooksSection_base__centered_be',
-                    Vu = 'CrewBooksSection_mainContentWrapper_2a',
-                    qu = 'CrewBooksSection_mainContent_91',
-                    Zu = 'CrewBooksSection_title_fe',
-                    Ku = 'CrewBooksSection_divider_f1',
-                    Yu = 'CrewBooksSection_divider__bottom_d6',
-                    Qu = 'CrewBooksSection_cards_7f',
-                    Ju = 'CrewBooksSection_cardsScrollContent_8f',
-                    en = 'CrewBooksSection_cardsScrollBar_c4',
-                    tn = (0, h.Pi)(() => {
+                    $u = 'CrewBooksSection_base_33',
+                    Vu = 'CrewBooksSection_base__centered_be',
+                    qu = 'CrewBooksSection_mainContentWrapper_2a',
+                    Zu = 'CrewBooksSection_mainContent_91',
+                    Ku = 'CrewBooksSection_title_fe',
+                    Yu = 'CrewBooksSection_divider_f1',
+                    Qu = 'CrewBooksSection_divider__bottom_d6',
+                    Ju = 'CrewBooksSection_cards_7f',
+                    en = 'CrewBooksSection_cardsScrollContent_8f',
+                    tn = 'CrewBooksSection_cardsScrollBar_c4',
+                    un = (0, h.Pi)(() => {
                         const e = (0, m.GS)(),
                             t = e.mediaSize,
                             u = e.remScreenWidth,
@@ -4840,41 +4864,41 @@
                             bt(pt.n.ESCAPE, d),
                             i().createElement(
                                 'div',
-                                { className: l()(Xu, c && $u) },
+                                { className: l()($u, c && Vu) },
                                 i().createElement(Tt, { onAboutClick: s.onAbout, onCloseClick: s.onClose }),
                                 i().createElement(
                                     'div',
-                                    { className: Vu },
+                                    { className: qu },
                                     i().createElement(
                                         'div',
-                                        { className: qu },
-                                        i().createElement('div', { className: Zu }, R.strings.crew_books.page.title()),
-                                        i().createElement('div', { className: Ku }),
+                                        { className: Zu },
+                                        i().createElement('div', { className: Ku }, R.strings.crew_books.page.title()),
+                                        i().createElement('div', { className: Yu }),
                                         i().createElement(
                                             Ct.Vertical.Area.Default,
-                                            { barClassNames: { base: en }, scrollClassNames: { content: Ju }, api: r },
+                                            { barClassNames: { base: tn }, scrollClassNames: { content: en }, api: r },
                                             i().createElement(
                                                 'div',
-                                                { className: Qu },
-                                                i().createElement(Iu, null),
+                                                { className: Ju },
+                                                i().createElement(Ou, null),
                                                 o.booksList
                                                     .get()
                                                     .map((e, t) => i().createElement(cu, { key: t, bookIndex: t })),
                                             ),
                                         ),
-                                        i().createElement('div', { className: l()(Ku, Yu) }),
-                                        i().createElement(zu, null),
+                                        i().createElement('div', { className: l()(Yu, Qu) }),
+                                        i().createElement(Xu, null),
                                     ),
                                 ),
                             )
                         );
                     }),
-                    un = 'QuickTrainingViewApp_base_b9',
-                    nn = 'QuickTrainingViewApp_flagWrapper_b7',
-                    rn = 'QuickTrainingViewApp_flag_54',
-                    an = 'QuickTrainingViewApp_leftPanelSection_7e',
-                    on = 'QuickTrainingViewApp_pageTips_41';
-                function sn(e, t, u, n, r, a, o) {
+                    nn = 'QuickTrainingViewApp_base_b9',
+                    rn = 'QuickTrainingViewApp_flagWrapper_b7',
+                    an = 'QuickTrainingViewApp_flag_54',
+                    on = 'QuickTrainingViewApp_leftPanelSection_7e',
+                    sn = 'QuickTrainingViewApp_pageTips_41';
+                function ln(e, t, u, n, r, a, o) {
                     try {
                         var i = e[a](o),
                             s = i.value;
@@ -4883,7 +4907,7 @@
                     }
                     i.done ? t(s) : Promise.resolve(s).then(n, r);
                 }
-                const ln = (0, h.Pi)(() => {
+                const cn = (0, h.Pi)(() => {
                     const e = new WeakMap(),
                         t = (0, f.useSpringRef)(),
                         u = ve(),
@@ -4911,10 +4935,10 @@
                                                 return new Promise(function (n, r) {
                                                     var a = u.apply(e, t);
                                                     function o(e) {
-                                                        sn(a, n, r, o, i, 'next', e);
+                                                        ln(a, n, r, o, i, 'next', e);
                                                     }
                                                     function i(e) {
-                                                        sn(a, n, r, o, i, 'throw', e);
+                                                        ln(a, n, r, o, i, 'throw', e);
                                                     }
                                                     o(void 0);
                                                 });
@@ -4934,12 +4958,12 @@
                         ),
                         i().createElement(
                             'div',
-                            { className: un },
+                            { className: nn },
                             i().createElement(
                                 'div',
-                                { className: nn },
+                                { className: rn },
                                 i().createElement('div', {
-                                    className: rn,
+                                    className: an,
                                     style: {
                                         backgroundImage: `url(R.images.gui.maps.icons.crew.flags.${n.nationName.get()})`,
                                     },
@@ -4947,11 +4971,11 @@
                             ),
                             i().createElement(
                                 'div',
-                                { className: an },
+                                { className: on },
                                 i().createElement(Ae.O, null),
                                 i().createElement(
                                     'div',
-                                    { className: on },
+                                    { className: sn },
                                     s((t, u) =>
                                         i().createElement(
                                             f.animated.div,
@@ -4967,13 +4991,13 @@
                                     ),
                                 ),
                             ),
-                            i().createElement(tn, null),
+                            i().createElement(un, null),
                         )
                     );
                 });
                 engine.whenReady.then(() => {
                     B().render(
-                        i().createElement(Be, null, i().createElement(D, null, i().createElement(ln, null))),
+                        i().createElement(Be, null, i().createElement(D, null, i().createElement(cn, null))),
                         document.getElementById('root'),
                     );
                 });
@@ -7656,6 +7680,6 @@
                 u = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             u.forEach(t.bind(null, 0)), (u.push = t.bind(null, u.push.bind(u)));
         })();
-    var __webpack_exports__ = __webpack_require__.O(void 0, [56], () => __webpack_require__(3116));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [56], () => __webpack_require__(7003));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

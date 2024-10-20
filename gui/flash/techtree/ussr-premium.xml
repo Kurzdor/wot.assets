@@ -8,10 +8,6 @@
       <row>	1	</row>
       <column>	2	</column>
     </R84_Tetrarch_LL>
-    <R125_T_45>
-      <row>	2	</row>
-      <column>	2	</column>
-    </R125_T_45>
     <R56_T-127>
       <row>	1	</row>
       <column>	3	</column>
@@ -20,30 +16,30 @@
       <row>	2	</row>
       <column>	3	</column>
     </R86_LTP>
-    <R161_T_116>
+    <R105_BT_7A>
       <row>	3	</row>
       <column>	3	</column>
-    </R161_T_116>
+    </R105_BT_7A>
     <R50_SU76I>
       <row>	4	</row>
       <column>	3	</column>
     </R50_SU76I>
-    <R185_T_34_L_11_1941>
+    <R31_Valentine_LL>
       <row>	1	</row>
       <column>	4	</column>
-    </R185_T_34_L_11_1941>
+    </R31_Valentine_LL>
     <R118_T28_F30>
       <row>	2	</row>
       <column>	4	</column>
     </R118_T28_F30>
-    <R193_M4A2_T_34>
+    <R33_Churchill_LL>
       <row>	1	</row>
       <column>	5	</column>
-    </R193_M4A2_T_34>
-    <R186_KV_1_Screened>
+    </R33_Churchill_LL>
+    <R32_Matilda_II_LL>
       <row>	2	</row>
       <column>	5	</column>
-    </R186_KV_1_Screened>
+    </R32_Matilda_II_LL>
     <R78_SU_85I>
       <row>	3	</row>
       <column>	5	</column>
@@ -52,10 +48,14 @@
       <row>	1	</row>
       <column>	6	</column>
     </R49_SU100Y>
-    <R140_M4_Loza>
+    <R108_T34_85M>
       <row>	2	</row>
       <column>	6	</column>
-    </R140_M4_Loza>
+    </R108_T34_85M>
+    <R114_Object_244>
+      <row>	4	</row>
+      <column>	6	</column>
+    </R114_Object_244>
     <R133_KV_122>
       <row>	1	</row>
       <column>	7	</column>
@@ -68,22 +68,22 @@
       <row>	3	</row>
       <column>	7	</column>
     </R156_IS_2M>
-    <R123_Kirovets_1>
+    <R61_Object252>
       <row>	1	</row>
       <column>	8	</column>
-    </R123_Kirovets_1>
+    </R61_Object252>
     <R112_T54_45>
       <row>	2	</row>
       <column>	8	</column>
     </R112_T54_45>
-    <R177_ISU_152K_BL10>
+    <R135_T_103>
       <row>	3	</row>
       <column>	8	</column>
-    </R177_ISU_152K_BL10>
-    <R180_Object_274_A>
+    </R135_T_103>
+    <R111_ISU130>
       <row>	4	</row>
       <column>	8	</column>
-    </R180_Object_274_A>
+    </R111_ISU130>
     <R146_STG>
       <row>	5	</row>
       <column>	8	</column>

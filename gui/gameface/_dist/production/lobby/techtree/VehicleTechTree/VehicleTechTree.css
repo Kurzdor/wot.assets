@@ -1,0 +1,3108 @@
+.App_base_3e {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.App_premiumPanelWrapper_2b {
+    width: 100%;
+    height: 325rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(215rem);
+    transition: transform 0.25s ease-out;
+}
+.App_premiumPanelWrapper__active_47 {
+    transform: translateY(0rem);
+}
+.App_premiumPanelWrapper__effects_fa {
+    pointer-events: none;
+}
+.App_premiumPanelWrapper__noScroll_92 {
+    cursor: default;
+}
+.App_treeContainer_b0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.App_treeHolder_23 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 25rem 0 110rem;
+    position: relative;
+}
+.App_blueprintIcon_41 {
+    position: absolute;
+    top: -29rem;
+    left: -56rem;
+}
+.mediaMedium .App_blueprintIcon_41 {
+    top: -40rem;
+    left: -74rem;
+}
+.App_tabs_93 {
+    padding-top: 40rem;
+    position: absolute;
+    top: 50%;
+    left: 15rem;
+    transform: translateY(-50%);
+}
+.mediaMedium .App_tabs_93 {
+    left: 22rem;
+}
+@media (min-width: 1700px) and (min-height: 900px) and (max-width: 1919px) and (max-height: 1079px) {
+    .mediaMedium .App_tabs_93 {
+        left: 15rem;
+    }
+}
+.App_tabs__dragging_e1 {
+    pointer-events: none;
+}
+.App_scrollHolderHorizontal_5c {
+    width: 100%;
+    padding: 0 5rem 0 80rem;
+    position: absolute;
+    bottom: 0;
+}
+.App_scrollHolderVertical_a9 {
+    position: absolute;
+    top: 105rem;
+    right: 5rem;
+    bottom: 115rem;
+}
+.App_scrollHolderVertical__withoutBottom_45 {
+    bottom: 20rem;
+}
+.App_scrollHolderVertical__hidden_af {
+    visibility: hidden;
+}
+.App_verticalContent_8e {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    padding-top: 105rem;
+    position: relative;
+}
+.App_verticalContent__withPremiumPanel_78 {
+    padding-top: 10rem;
+}
+.App_verticalContent__withVerticalScrollBar_40 {
+    justify-content: flex-start;
+    padding-top: 107rem;
+}
+.mediaMedium .App_verticalContent__withVerticalScrollBar_40 {
+    padding-top: 123rem;
+}
+.App_mainLine_37 {
+    width: 100%;
+    height: 125rem;
+    margin-left: 90rem;
+    margin-top: 1rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.main_line') no-repeat center / contain;
+    opacity: 0.15;
+    position: absolute;
+    top: calc(53rem * var(--rows-from-top) - 26.5rem);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.App_blueprintBalance_4d {
+    position: absolute;
+    top: 32rem;
+    right: 0;
+}
+.App_nationTitle_f4 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 75rem;
+    background: rgba(19, 18, 16, 0.95);
+    position: absolute;
+}
+.mediaMedium .App_nationTitle_f4 {
+    height: 91rem;
+    padding-bottom: 5rem;
+}
+.App_base__blueprints_fd .App_nationTitle_f4 {
+    background: #161f26f2;
+}
+.App_paragonsEntryPoint_ce {
+    position: absolute;
+    top: 20rem;
+    right: 22rem;
+}
+.mediaMedium .App_paragonsEntryPoint_ce {
+    top: 30rem;
+}
+.App_levels_01 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 75rem;
+    background: rgba(19, 18, 16, 0.95);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mediaMedium .App_levels_01 {
+    padding-top: 91rem;
+}
+.App_base__blueprints_fd .App_levels_01 {
+    background: #161f26f2;
+}
+.App_background_9f {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Background_base_7e {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.background') no-repeat center / cover;
+}
+
+.Background_blueprints_aa {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.background_blueprints') no-repeat center / cover;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.Background_blueprints__active_ac {
+    opacity: 1;
+}
+
+.Background_blueprintsGrid_da {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.bluegrid_pattern') repeat top left;
+}
+
+.Background_blueprintsGrid__scale_2f {
+    background: url('R.images.gui.maps.icons.techtree.researchTree.bluegrid_pattern2x') repeat top left;
+}
+
+.Box_mt__XS_0c {
+    margin-top: 4rem;
+}
+.Box_mt__SM_eb {
+    margin-top: 8rem;
+}
+.Box_mt__SMp_cf {
+    margin-top: 10rem;
+}
+.Box_mt__MD_25 {
+    margin-top: 16rem;
+}
+.Box_mt__MDp_49 {
+    margin-top: 20rem;
+}
+.Box_mt__LG_e8 {
+    margin-top: 32rem;
+}
+.Box_mt__XL_83 {
+    margin-top: 64rem;
+}
+
+.Box_mr__XS_7c {
+    margin-right: 4rem;
+}
+
+.Box_mr__SM_08 {
+    margin-right: 8rem;
+}
+
+.Box_mr__SMp_06 {
+    margin-right: 10rem;
+}
+
+.Box_mr__MD_4a {
+    margin-right: 16rem;
+}
+
+.Box_mr__MDp_b6 {
+    margin-right: 20rem;
+}
+
+.Box_mr__LG_d0 {
+    margin-right: 32rem;
+}
+
+.Box_mr__XL_db {
+    margin-right: 64rem;
+}
+
+.Box_mb__XS_bb {
+    margin-bottom: 4rem;
+}
+
+.Box_mb__SM_83 {
+    margin-bottom: 8rem;
+}
+
+.Box_mb__SMp_04 {
+    margin-bottom: 10rem;
+}
+
+.Box_mb__MD_ed {
+    margin-bottom: 16rem;
+}
+
+.Box_mb__MDp_65 {
+    margin-bottom: 20rem;
+}
+
+.Box_mb__LG_c8 {
+    margin-bottom: 32rem;
+}
+
+.Box_mb__XL_f8 {
+    margin-bottom: 64rem;
+}
+
+.Box_ml__XS_8a {
+    margin-left: 4rem;
+}
+
+.Box_ml__SM_e6 {
+    margin-left: 8rem;
+}
+
+.Box_ml__SMp_fb {
+    margin-left: 10rem;
+}
+
+.Box_ml__MD_2b {
+    margin-left: 16rem;
+}
+
+.Box_ml__MDp_c7 {
+    margin-left: 20rem;
+}
+
+.Box_ml__LG_39 {
+    margin-left: 32rem;
+}
+
+.Box_ml__XL_4a {
+    margin-left: 64rem;
+}
+
+.FormatText_base_d0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* eslint-disable-next-line expectedscss*/
+.Text_paragraph-P10_2c {
+    font-size: 10rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_paragraph-P12_22 {
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Text_paragraph-P14_a7 {
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.Text_paragraph-P16_90 {
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Text_paragraph-P18_50 {
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.Text_paragraph-P24_33 {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 32rem;
+}
+.Text_heading-H14_8b {
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.Text_heading-H15_9e {
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.Text_heading-H18_b7 {
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H20R_f6 {
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H22_27 {
+    font-size: 22rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H24R_be {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.Text_heading-H24_0c {
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Text_heading-H28_78 {
+    font-size: 28rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H36_32 {
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H56_c3 {
+    font-size: 56rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H73_8f {
+    font-size: 73rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Text_heading-H144_a9 {
+    font-size: 144rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.Text_BLACK_REAL_30 {
+    color: #000000;
+}
+.Text_WHITE_REAL_bc {
+    color: #ffffff;
+}
+.Text_WHITE_62 {
+    color: #f2f2f7;
+}
+.Text_WHITE_ORANGE_54 {
+    color: #fefeec;
+}
+.Text_WHITE_SPANISH_df {
+    color: #e9e2bf;
+}
+.Text_PAR_15 {
+    color: #8c8c7e;
+}
+.Text_PAR_SECONDARY_5d {
+    color: #595950;
+}
+.Text_PAR_TERTIARY_c9 {
+    color: #37362e;
+}
+.Text_INFO_RED_30 {
+    color: #ff0000;
+}
+.Text_RED_66 {
+    color: #ff2717;
+}
+.Text_RED_DARK_d8 {
+    color: #b70000;
+}
+.Text_YELLOW_ed {
+    color: #feab34;
+}
+.Text_ORANGE_be {
+    color: #ee7000;
+}
+.Text_CREAM_57 {
+    color: #ffdd99;
+}
+.Text_BROWN_18 {
+    color: #cbac77;
+}
+.Text_GREEN_BRIGHT_3f {
+    color: #80d43a;
+}
+.Text_GREEN_e3 {
+    color: #7ab300;
+}
+.Text_GREEN_DARK_f1 {
+    color: #497212;
+}
+.Text_BLUE_BOOSTER_21 {
+    color: #ccffff;
+}
+.Text_BLUE_TEAMKILLER_ab {
+    color: #09e2ff;
+}
+.Text_CRED_f7 {
+    color: #ced9d9;
+}
+.Text_GOLD_28 {
+    color: #ffc363;
+}
+.Text_BOND_be {
+    color: #c9c9b6;
+}
+.Text_PROM_65 {
+    color: #a29b70;
+}
+
+.BlueprintBalance_base_e5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 250rem;
+    height: 26rem;
+    padding-right: 17rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.blueprintsHeader.balance') no-repeat center / cover;
+}
+
+.BlueprintBalance_text_2e {
+    color: #8c8c7e;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: -1rem;
+    margin-right: -4rem;
+}
+
+.BlueprintBalance_amountWithFlag_70 {
+    color: #e9e2bf;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: row;
+    margin-left: 16rem;
+    margin-top: -1rem;
+}
+
+.BlueprintBalance_amount_5b {
+    margin-left: 6rem;
+}
+
+.BlueprintBalance_icon_2d {
+    width: 19rem;
+    height: 16rem;
+    margin-top: 2rem;
+    background: url('R.images.gui.maps.icons.blueprints.fragment.special.intelligence') no-repeat center / contain;
+}
+
+.BlueprintBalance_icon__national_48 {
+    width: 23rem;
+    height: 16rem;
+}
+
+.BlueprintSwitcher_base_b6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 187rem;
+    height: 187rem;
+    position: relative;
+}
+
+.mediaMedium .BlueprintSwitcher_base_b6 {
+    width: 250rem;
+    height: 250rem;
+}
+
+.BlueprintSwitcher_base__disabled_bb {
+    opacity: 0.5;
+}
+
+.BlueprintSwitcher_hintBody_9f {
+    width: 60rem;
+    height: 60rem;
+    position: absolute;
+    top: 64rem;
+    left: 65rem;
+}
+
+.mediaMedium .BlueprintSwitcher_hintBody_9f {
+    width: 80rem;
+    height: 80rem;
+    top: 85rem;
+    left: 86rem;
+}
+
+.BlueprintSwitcher_icon_5d {
+    width: 60rem;
+    height: 60rem;
+    filter: brightness(100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: filter 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.mediaMedium .BlueprintSwitcher_icon_5d {
+    width: 80rem;
+    height: 80rem;
+}
+
+.BlueprintSwitcher_icon_5d:hover {
+    filter: brightness(130%);
+}
+
+.BlueprintSwitcher_icon_5d:active {
+    filter: brightness(100%);
+}
+
+.BlueprintSwitcher_base__disabled_bb .BlueprintSwitcher_icon_5d {
+    cursor: auto;
+}
+
+.BlueprintSwitcher_base__disabled_bb .BlueprintSwitcher_icon_5d:hover {
+    filter: brightness(100%);
+}
+
+.BlueprintSwitcher_sequence_d4 {
+    width: 100%;
+    height: 100%;
+}
+
+.BlueprintSwitcher_glow_f8 {
+    width: 80rem;
+    height: 80rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.blueprintsHeader.switcher.bp_glow') no-repeat center /
+        cover;
+    transform-origin: center;
+    transition: transform 0.15s ease-in-out;
+}
+
+.BlueprintSwitcher_glow__toBlueprintMode_7c {
+    transform: scale(3.1);
+}
+
+.Levels_base_e6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 32rem;
+    padding: 0 20rem 0 110rem;
+}
+.Levels_levelNumberWrapper_d0 {
+    display: flex;
+    width: 183rem;
+    height: 32rem;
+    position: relative;
+}
+.Levels_levelNumberWrapper__lastColumn_30 {
+    width: 130rem;
+}
+.Levels_levelNumber_72 {
+    width: 32rem;
+    height: 32rem;
+    background: no-repeat center / contain;
+    opacity: 0.25;
+    position: absolute;
+    top: 0;
+    left: 65rem;
+    transform: translateX(-50%);
+    transition: opacity 0.25s linear;
+}
+.Levels_levelNumber__active_32 {
+    opacity: 1;
+}
+.Levels_levelDividers_8a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 183rem;
+    padding: 0 35rem;
+    position: absolute;
+    top: 50%;
+    left: 65rem;
+    transform: translateY(-50%);
+}
+.Levels_levelDivider_7d {
+    width: 2rem;
+    height: 4rem;
+    background: #f2f2f7;
+    opacity: 0.1;
+}
+
+.TreeCell_base_e4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 53rem;
+    position: relative;
+}
+
+.TreeCell_base__premium_87 {
+    justify-content: flex-start;
+}
+.TreeCell_premiumBackground_50 {
+    display: flex;
+    width: 184rem;
+    height: 52rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.premiumPanel.dotty_pattern') no-repeat top left /
+        cover;
+    opacity: 0.16;
+    position: absolute;
+    top: 50%;
+    left: 65rem;
+    z-index: -1;
+    transform: translate(-2rem, -3rem);
+}
+.TreeCell_base__premiumLastColumn_bf .TreeCell_premiumBackground_50 {
+    width: 4rem;
+}
+.TreeCell_base__premiumLastRow_b2 .TreeCell_premiumBackground_50 {
+    height: 4rem;
+}
+
+.TreeColumn_base_c8 {
+    width: 183rem;
+    min-height: 53rem;
+    position: relative;
+}
+
+.TreeColumn_base__withVerticalScrollBar_06 {
+    margin-bottom: 110rem;
+}
+
+.TreeColumn_base__lastColumn_75 {
+    width: 130rem;
+}
+
+.TreeColumn_base__dragging_1e {
+    pointer-events: none;
+}
+
+/* требуется описывать 4 состояния для каждого типа стрелок: тонкая, толстая, пунктирная, толстая пунктирная */
+/* требуется описывать 4 состояния для кадого типа стрелок: тонкая, толстая, пунктирная, толстая пунктирная */
+/* требуется описывать 2 состояния для каждого типа стрелок: тонка и толстая */
+.HorizontalConnector_base_8e {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.HorizontalConnector_connector_b4 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.HorizontalConnector_connector__down_ba {
+    transform: scaleY(-1);
+}
+.HorizontalConnector_connector__withPadding_18 {
+    padding-right: 5rem;
+}
+.HorizontalConnector_part_93 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.HorizontalConnector_part__line_2d {
+    /* normal */
+    background: #727272;
+}
+.HorizontalConnector_base__dashed_37 .HorizontalConnector_part__line_2d {
+    background: linear-gradient(90deg, transparent 50%, #727272 50%);
+    background-position: right;
+    background-size: 10rem 100%;
+}
+.HorizontalConnector_base__thick_38 .HorizontalConnector_part__line_2d {
+    background: #989ea0;
+}
+.HorizontalConnector_base__thick_38.HorizontalConnector_base__dashed_37 .HorizontalConnector_part__line_2d {
+    background: linear-gradient(90deg, transparent 50%, #989ea0 50%);
+    background-position: right;
+    background-size: 10rem 100%;
+}
+/* inBattle */
+.HorizontalConnector_base__inBattle_f0 .HorizontalConnector_part__line_2d {
+    background: #deb368;
+}
+.HorizontalConnector_base__inBattle_f0.HorizontalConnector_base__thick_38 .HorizontalConnector_part__line_2d {
+    background: #deb368;
+}
+.HorizontalConnector_base__inBattle_f0.HorizontalConnector_base__dashed_37 .HorizontalConnector_part__line_2d {
+    background: linear-gradient(0deg, #deb368 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+.HorizontalConnector_base__inBattle_f0.HorizontalConnector_base__dashed_37.HorizontalConnector_base__thick_38
+    .HorizontalConnector_part__line_2d {
+    background: linear-gradient(90deg, transparent 50%, #deb368 50%);
+    background-position: right;
+    background-size: 10rem 100%;
+}
+/* blueprint */
+.HorizontalConnector_base__blueprint_ca .HorizontalConnector_part__line_2d {
+    background: #989898;
+}
+.HorizontalConnector_base__blueprint_ca.HorizontalConnector_base__thick_38 .HorizontalConnector_part__line_2d {
+    background: #989898;
+}
+.HorizontalConnector_base__blueprint_ca.HorizontalConnector_base__dashed_37 .HorizontalConnector_part__line_2d {
+    background: linear-gradient(90deg, transparent 50%, #989898 50%);
+    background-position: right;
+    background-size: 10rem 100%;
+}
+.HorizontalConnector_base__blueprint_ca.HorizontalConnector_base__dashed_37.HorizontalConnector_base__thick_38
+    .HorizontalConnector_part__line_2d {
+    background: linear-gradient(90deg, transparent 50%, #989898 50%);
+    background-position: right;
+    background-size: 10rem 100%;
+}
+/* earlyAccess */
+.HorizontalConnector_base__earlyAccess_2f .HorizontalConnector_part__line_2d {
+    background: #4c6963;
+}
+.HorizontalConnector_base__earlyAccess_2f.HorizontalConnector_base__thick_38 .HorizontalConnector_part__line_2d {
+    background: #6b958d;
+}
+.HorizontalConnector_base__earlyAccess_2f.HorizontalConnector_base__dashed_37 .HorizontalConnector_part__line_2d {
+    background: linear-gradient(90deg, transparent 50%, #4c6963 50%);
+    background-position: right;
+    background-size: 10rem 100%;
+}
+.HorizontalConnector_base__earlyAccess_2f.HorizontalConnector_base__dashed_37.HorizontalConnector_base__thick_38
+    .HorizontalConnector_part__line_2d {
+    background: linear-gradient(90deg, transparent 50%, #6b958d 50%);
+    background-position: right;
+    background-size: 10rem 100%;
+}
+.HorizontalConnector_part__vertical_55 {
+    /* normal */
+    background: #727272;
+}
+.HorizontalConnector_base__dashed_37 .HorizontalConnector_part__vertical_55 {
+    background: linear-gradient(0deg, #727272 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+.HorizontalConnector_base__thick_38 .HorizontalConnector_part__vertical_55 {
+    background: #989ea0;
+}
+.HorizontalConnector_base__thick_38.HorizontalConnector_base__dashed_37 .HorizontalConnector_part__vertical_55 {
+    background: linear-gradient(0deg, #989ea0 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+/* inBattle */
+.HorizontalConnector_base__inBattle_f0 .HorizontalConnector_part__vertical_55 {
+    background: #deb368;
+}
+.HorizontalConnector_base__inBattle_f0.HorizontalConnector_base__dashed_37 .HorizontalConnector_part__vertical_55 {
+    background: linear-gradient(0deg, #deb368 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+/* blueprint */
+.HorizontalConnector_base__blueprint_ca .HorizontalConnector_part__vertical_55 {
+    background: #989898;
+}
+.HorizontalConnector_base__blueprint_ca.HorizontalConnector_base__dashed_37 .HorizontalConnector_part__vertical_55 {
+    background: linear-gradient(0deg, #989898 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+/* earlyAccess */
+.HorizontalConnector_base__earlyAccess_2f .HorizontalConnector_part__vertical_55 {
+    background: #4c6963;
+}
+.HorizontalConnector_base__earlyAccess_2f.HorizontalConnector_base__thick_38 .HorizontalConnector_part__vertical_55 {
+    background: #6b958d;
+}
+.HorizontalConnector_base__earlyAccess_2f.HorizontalConnector_base__dashed_37 .HorizontalConnector_part__vertical_55 {
+    background: linear-gradient(0deg, #4c6963 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+.HorizontalConnector_base__earlyAccess_2f.HorizontalConnector_base__dashed_37.HorizontalConnector_base__thick_38
+    .HorizontalConnector_part__vertical_55 {
+    background: linear-gradient(0deg, #6b958d 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+.HorizontalConnector_part__start_ed {
+    width: 50%;
+    height: 1rem;
+    top: 0;
+    left: 0;
+}
+.HorizontalConnector_base__thick_38 .HorizontalConnector_part__start_ed {
+    height: 3rem;
+}
+.HorizontalConnector_part__middle_07 {
+    width: 1rem;
+    height: calc(53rem * var(--size) + 1rem);
+    top: 1rem;
+    transform: translateY(-100%);
+}
+.HorizontalConnector_base__thick_38 .HorizontalConnector_part__middle_07 {
+    width: 3rem;
+    height: calc(53rem * var(--size) + 3rem);
+    top: 3rem;
+    left: 25.5rem;
+}
+.HorizontalConnector_part__end_c7 {
+    width: 45%;
+    height: 1rem;
+    transform: translateY(calc(-53rem * var(--size)));
+}
+.HorizontalConnector_base__thick_38 .HorizontalConnector_part__end_c7 {
+    height: 3rem;
+}
+.HorizontalConnector_part__straight_4b {
+    width: 100%;
+    height: 1rem;
+    left: 0;
+}
+.HorizontalConnector_base__thick_38 .HorizontalConnector_part__straight_4b {
+    height: 3rem;
+}
+.HorizontalConnector_part__arrow_97 {
+    top: -2rem;
+    right: 0;
+    left: auto;
+    transform: translateY(calc(-53rem * var(--size)));
+    width: 5rem;
+    height: 5rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.commonHead') no-repeat center / contain;
+}
+.HorizontalConnector_base__thick_38 .HorizontalConnector_part__arrow_97 {
+    height: 7rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.thickHead') no-repeat center / contain;
+}
+.HorizontalConnector_base__inBattle_f0 .HorizontalConnector_part__arrow_97 {
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.inBattleHead') no-repeat center / contain;
+}
+.HorizontalConnector_base__thick_38.HorizontalConnector_base__inBattle_f0 .HorizontalConnector_part__arrow_97 {
+    height: 7rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.thickInBattleHead') no-repeat center / contain;
+}
+.HorizontalConnector_base__blueprint_ca .HorizontalConnector_part__arrow_97 {
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.blueprintHead') no-repeat center / contain;
+}
+.HorizontalConnector_base__thick_38.HorizontalConnector_base__blueprint_ca .HorizontalConnector_part__arrow_97 {
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.thickHead') no-repeat center / contain;
+}
+.HorizontalConnector_base__earlyAccess_2f .HorizontalConnector_part__arrow_97 {
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.commonHeadEA') no-repeat center / contain;
+}
+.HorizontalConnector_base__thick_38.HorizontalConnector_base__earlyAccess_2f .HorizontalConnector_part__arrow_97 {
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.thickHeadEA') no-repeat center / contain;
+}
+
+/* требуется описывать 4 состояния для каждого типа стрелок: тонкая, толстая, пунктирная, толстая пунктирная */
+/* требуется описывать 4 состояния для кадого типа стрелок: тонкая, толстая, пунктирная, толстая пунктирная */
+/* требуется описывать 2 состояния для каждого типа стрелок: тонка и толстая */
+.HorizontalVerticalConnector_base_01 {
+    width: 118rem;
+    height: 100%;
+    position: relative;
+}
+.HorizontalVerticalConnector_connector_29 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.HorizontalVerticalConnector_connector__down_10 {
+    transform: scaleY(-1);
+}
+.HorizontalVerticalConnector_part_b9 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.HorizontalVerticalConnector_part__line_9e {
+    /* normal */
+    background: #727272;
+}
+.HorizontalVerticalConnector_base__dashed_02 .HorizontalVerticalConnector_part__line_9e {
+    background: linear-gradient(90deg, transparent 50%, #727272 50%);
+    background-position: right;
+    background-size: 10rem 100%;
+}
+.HorizontalVerticalConnector_base__thick_90 .HorizontalVerticalConnector_part__line_9e {
+    background: #989ea0;
+}
+.HorizontalVerticalConnector_base__thick_90.HorizontalVerticalConnector_base__dashed_02
+    .HorizontalVerticalConnector_part__line_9e {
+    background: linear-gradient(90deg, transparent 50%, #989ea0 50%);
+    background-position: right;
+    background-size: 10rem 100%;
+}
+/* inBattle */
+.HorizontalVerticalConnector_base__inBattle_9e .HorizontalVerticalConnector_part__line_9e {
+    background: #deb368;
+}
+.HorizontalVerticalConnector_base__inBattle_9e.HorizontalVerticalConnector_base__thick_90
+    .HorizontalVerticalConnector_part__line_9e {
+    background: #deb368;
+}
+.HorizontalVerticalConnector_base__inBattle_9e.HorizontalVerticalConnector_base__dashed_02
+    .HorizontalVerticalConnector_part__line_9e {
+    background: linear-gradient(0deg, #deb368 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+.HorizontalVerticalConnector_base__inBattle_9e.HorizontalVerticalConnector_base__dashed_02.HorizontalVerticalConnector_base__thick_90
+    .HorizontalVerticalConnector_part__line_9e {
+    background: linear-gradient(90deg, transparent 50%, #deb368 50%);
+    background-position: right;
+    background-size: 10rem 100%;
+}
+/* blueprint */
+.HorizontalVerticalConnector_base__blueprint_b8 .HorizontalVerticalConnector_part__line_9e {
+    background: #989898;
+}
+.HorizontalVerticalConnector_base__blueprint_b8.HorizontalVerticalConnector_base__thick_90
+    .HorizontalVerticalConnector_part__line_9e {
+    background: #989898;
+}
+.HorizontalVerticalConnector_base__blueprint_b8.HorizontalVerticalConnector_base__dashed_02
+    .HorizontalVerticalConnector_part__line_9e {
+    background: linear-gradient(90deg, transparent 50%, #989898 50%);
+    background-position: right;
+    background-size: 10rem 100%;
+}
+.HorizontalVerticalConnector_base__blueprint_b8.HorizontalVerticalConnector_base__dashed_02.HorizontalVerticalConnector_base__thick_90
+    .HorizontalVerticalConnector_part__line_9e {
+    background: linear-gradient(90deg, transparent 50%, #989898 50%);
+    background-position: right;
+    background-size: 10rem 100%;
+}
+/* earlyAccess */
+.HorizontalVerticalConnector_base__earlyAccess_cd .HorizontalVerticalConnector_part__line_9e {
+    background: #4c6963;
+}
+.HorizontalVerticalConnector_base__earlyAccess_cd.HorizontalVerticalConnector_base__thick_90
+    .HorizontalVerticalConnector_part__line_9e {
+    background: #6b958d;
+}
+.HorizontalVerticalConnector_base__earlyAccess_cd.HorizontalVerticalConnector_base__dashed_02
+    .HorizontalVerticalConnector_part__line_9e {
+    background: linear-gradient(90deg, transparent 50%, #4c6963 50%);
+    background-position: right;
+    background-size: 10rem 100%;
+}
+.HorizontalVerticalConnector_base__earlyAccess_cd.HorizontalVerticalConnector_base__dashed_02.HorizontalVerticalConnector_base__thick_90
+    .HorizontalVerticalConnector_part__line_9e {
+    background: linear-gradient(90deg, transparent 50%, #6b958d 50%);
+    background-position: right;
+    background-size: 10rem 100%;
+}
+.HorizontalVerticalConnector_part__vertical_fa {
+    /* normal */
+    background: #727272;
+}
+.HorizontalVerticalConnector_base__dashed_02 .HorizontalVerticalConnector_part__vertical_fa {
+    background: linear-gradient(0deg, #727272 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+.HorizontalVerticalConnector_base__thick_90 .HorizontalVerticalConnector_part__vertical_fa {
+    background: #989ea0;
+}
+.HorizontalVerticalConnector_base__thick_90.HorizontalVerticalConnector_base__dashed_02
+    .HorizontalVerticalConnector_part__vertical_fa {
+    background: linear-gradient(0deg, #989ea0 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+/* inBattle */
+.HorizontalVerticalConnector_base__inBattle_9e .HorizontalVerticalConnector_part__vertical_fa {
+    background: #deb368;
+}
+.HorizontalVerticalConnector_base__inBattle_9e.HorizontalVerticalConnector_base__dashed_02
+    .HorizontalVerticalConnector_part__vertical_fa {
+    background: linear-gradient(0deg, #deb368 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+/* blueprint */
+.HorizontalVerticalConnector_base__blueprint_b8 .HorizontalVerticalConnector_part__vertical_fa {
+    background: #989898;
+}
+.HorizontalVerticalConnector_base__blueprint_b8.HorizontalVerticalConnector_base__dashed_02
+    .HorizontalVerticalConnector_part__vertical_fa {
+    background: linear-gradient(0deg, #989898 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+/* earlyAccess */
+.HorizontalVerticalConnector_base__earlyAccess_cd .HorizontalVerticalConnector_part__vertical_fa {
+    background: #4c6963;
+}
+.HorizontalVerticalConnector_base__earlyAccess_cd.HorizontalVerticalConnector_base__thick_90
+    .HorizontalVerticalConnector_part__vertical_fa {
+    background: #6b958d;
+}
+.HorizontalVerticalConnector_base__earlyAccess_cd.HorizontalVerticalConnector_base__dashed_02
+    .HorizontalVerticalConnector_part__vertical_fa {
+    background: linear-gradient(0deg, #4c6963 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+.HorizontalVerticalConnector_base__earlyAccess_cd.HorizontalVerticalConnector_base__dashed_02.HorizontalVerticalConnector_base__thick_90
+    .HorizontalVerticalConnector_part__vertical_fa {
+    background: linear-gradient(0deg, #6b958d 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+.HorizontalVerticalConnector_part__start_94 {
+    width: 100%;
+    height: 1rem;
+    top: 2rem;
+    left: 0;
+}
+.HorizontalVerticalConnector_base__thick_90 .HorizontalVerticalConnector_part__start_94 {
+    height: 3rem;
+}
+.HorizontalVerticalConnector_part__end_42 {
+    width: 1rem;
+    height: calc(53rem * var(--size) - 18.5rem);
+    top: 3rem;
+    right: 0;
+    left: auto;
+    transform: translateY(-100%);
+}
+.HorizontalVerticalConnector_base__thick_90 .HorizontalVerticalConnector_part__end_42 {
+    width: 3rem;
+}
+.HorizontalVerticalConnector_part__arrow_06 {
+    top: 18.5rem;
+    right: -2rem;
+    left: auto;
+}
+.HorizontalVerticalConnector_base__thick_90 .HorizontalVerticalConnector_part__arrow_06 {
+    right: -1rem;
+}
+.HorizontalVerticalConnector_part__arrow_06 {
+    transform: translateY(calc(-53rem * var(--size))) rotate(-90deg);
+    width: 5rem;
+    height: 5rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.commonHead') no-repeat center / contain;
+}
+.HorizontalVerticalConnector_base__thick_90 .HorizontalVerticalConnector_part__arrow_06 {
+    height: 7rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.thickHead') no-repeat center / contain;
+}
+.HorizontalVerticalConnector_base__inBattle_9e .HorizontalVerticalConnector_part__arrow_06 {
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.inBattleHead') no-repeat center / contain;
+}
+.HorizontalVerticalConnector_base__thick_90.HorizontalVerticalConnector_base__inBattle_9e
+    .HorizontalVerticalConnector_part__arrow_06 {
+    height: 7rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.thickInBattleHead') no-repeat center / contain;
+}
+.HorizontalVerticalConnector_base__blueprint_b8 .HorizontalVerticalConnector_part__arrow_06 {
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.blueprintHead') no-repeat center / contain;
+}
+.HorizontalVerticalConnector_base__thick_90.HorizontalVerticalConnector_base__blueprint_b8
+    .HorizontalVerticalConnector_part__arrow_06 {
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.thickHead') no-repeat center / contain;
+}
+.HorizontalVerticalConnector_base__earlyAccess_cd .HorizontalVerticalConnector_part__arrow_06 {
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.commonHeadEA') no-repeat center / contain;
+}
+.HorizontalVerticalConnector_base__thick_90.HorizontalVerticalConnector_base__earlyAccess_cd
+    .HorizontalVerticalConnector_part__arrow_06 {
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.thickHeadEA') no-repeat center / contain;
+}
+
+/* требуется описывать 4 состояния для каждого типа стрелок: тонкая, толстая, пунктирная, толстая пунктирная */
+/* требуется описывать 4 состояния для кадого типа стрелок: тонкая, толстая, пунктирная, толстая пунктирная */
+/* требуется описывать 2 состояния для каждого типа стрелок: тонка и толстая */
+.VerticalConnector_base_8d {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.VerticalConnector_connector_4b {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.VerticalConnector_connector__down_14 {
+    transform: scaleY(-1);
+}
+.VerticalConnector_part_bd {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.VerticalConnector_part__line_2c {
+    /* normal */
+    background: #727272;
+}
+.VerticalConnector_base__dashed_12 .VerticalConnector_part__line_2c {
+    background: linear-gradient(0deg, #727272 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+.VerticalConnector_base__thick_1a .VerticalConnector_part__line_2c {
+    background: #989ea0;
+}
+.VerticalConnector_base__thick_1a.VerticalConnector_base__dashed_12 .VerticalConnector_part__line_2c {
+    background: linear-gradient(0deg, #989ea0 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+/* inBattle */
+.VerticalConnector_base__inBattle_b8 .VerticalConnector_part__line_2c {
+    background: #deb368;
+}
+.VerticalConnector_base__inBattle_b8.VerticalConnector_base__dashed_12 .VerticalConnector_part__line_2c {
+    background: linear-gradient(0deg, #deb368 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+/* blueprint */
+.VerticalConnector_base__blueprint_38 .VerticalConnector_part__line_2c {
+    background: #989898;
+}
+.VerticalConnector_base__blueprint_38.VerticalConnector_base__dashed_12 .VerticalConnector_part__line_2c {
+    background: linear-gradient(0deg, #989898 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+/* earlyAccess */
+.VerticalConnector_base__earlyAccess_79 .VerticalConnector_part__line_2c {
+    background: #4c6963;
+}
+.VerticalConnector_base__earlyAccess_79.VerticalConnector_base__thick_1a .VerticalConnector_part__line_2c {
+    background: #6b958d;
+}
+.VerticalConnector_base__earlyAccess_79.VerticalConnector_base__dashed_12 .VerticalConnector_part__line_2c {
+    background: linear-gradient(0deg, #4c6963 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+.VerticalConnector_base__earlyAccess_79.VerticalConnector_base__dashed_12.VerticalConnector_base__thick_1a
+    .VerticalConnector_part__line_2c {
+    background: linear-gradient(0deg, #6b958d 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 100% 10rem;
+}
+.VerticalConnector_part__straight_59 {
+    width: 1rem;
+    height: calc(53rem * var(--size) - 37rem);
+    top: auto;
+    bottom: 18.5rem;
+    left: -65rem;
+}
+.VerticalConnector_base__thick_1a .VerticalConnector_part__straight_59 {
+    width: 3rem;
+    height: calc(53rem * var(--size) - 44rem);
+}
+.VerticalConnector_part__arrow_e5 {
+    top: 18.5rem;
+    left: -67rem;
+    transform: translateY(calc(-53rem * var(--size))) rotate(-90deg);
+    width: 5rem;
+    height: 5rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.commonHead') no-repeat center / contain;
+}
+.VerticalConnector_base__thick_1a .VerticalConnector_part__arrow_e5 {
+    height: 7rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.thickHead') no-repeat center / contain;
+}
+.VerticalConnector_base__inBattle_b8 .VerticalConnector_part__arrow_e5 {
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.inBattleHead') no-repeat center / contain;
+}
+.VerticalConnector_base__thick_1a.VerticalConnector_base__inBattle_b8 .VerticalConnector_part__arrow_e5 {
+    height: 7rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.thickInBattleHead') no-repeat center / contain;
+}
+.VerticalConnector_base__blueprint_38 .VerticalConnector_part__arrow_e5 {
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.blueprintHead') no-repeat center / contain;
+}
+.VerticalConnector_base__thick_1a.VerticalConnector_base__blueprint_38 .VerticalConnector_part__arrow_e5 {
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.thickHead') no-repeat center / contain;
+}
+.VerticalConnector_base__earlyAccess_79 .VerticalConnector_part__arrow_e5 {
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.commonHeadEA') no-repeat center / contain;
+}
+.VerticalConnector_base__thick_1a.VerticalConnector_base__earlyAccess_79 .VerticalConnector_part__arrow_e5 {
+    background: url('R.images.gui.maps.icons.techtree.researchTree.arrows.thickHeadEA') no-repeat center / contain;
+}
+.VerticalConnector_base__thick_1a .VerticalConnector_part__arrow_e5 {
+    top: 24.5rem;
+    left: -66rem;
+}
+
+.TreeConnectors_base_a6 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.TreeConnectors_connectorWrapper_5b {
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.TreeConnectors_connectorWrapper__thick_47 {
+    height: 3rem;
+    z-index: 2;
+    transform: translateY(-1rem);
+}
+.TreeConnectors_connectorWrapper__custom_d8 {
+    z-index: 1;
+}
+.TreeConnectors_connectorWrapper__thick_47.TreeConnectors_connectorWrapper__custom_d8 {
+    z-index: 3;
+}
+
+.Hint_base_b8 {
+    pointer-events: none;
+}
+
+.Hint_border_80 {
+    width: 100%;
+    height: 100%;
+    border: 1rem solid #cca570;
+    filter: drop-shadow(0 0 4rem rgba(255, 127, 0, 0.25)) drop-shadow(0 0 8rem #ff2a00) drop-shadow(0 0 15rem #e52);
+    transition: opacity 0.3s linear 0.5s;
+}
+
+.Hint_base__hidden_8b .Hint_border_80 {
+    opacity: 0;
+}
+
+.Hint_hint_70 {
+    display: flex;
+    align-items: center;
+    width: 250rem;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    transition: opacity 0.3s linear 0.1s;
+    pointer-events: auto;
+}
+
+.Hint_base__leftToRight_9a .Hint_hint_70 {
+    justify-content: center;
+    right: 100%;
+    left: initial;
+}
+
+.Hint_base__hidden_8b .Hint_hint_70 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.Hint_hintSubstrate_e9 {
+    width: 100%;
+    height: 66rem;
+    background: url('R.images.gui.maps.icons.components.tutorial.back') no-repeat center / cover;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: auto;
+}
+
+.Hint_base__hidden_8b .Hint_hintSubstrate_e9 {
+    pointer-events: none;
+}
+
+.Hint_hintArrow_0f {
+    width: 86rem;
+    height: 90rem;
+    background-image: url('R.images.gui.maps.icons.components.tutorial.arrow');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -10rem;
+    animation-name: Hint_blink_7e;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    pointer-events: none;
+}
+
+.Hint_base__leftToRight_9a .Hint_hintArrow_0f {
+    right: -10rem;
+    left: initial;
+    transform: rotateY(180deg);
+    animation-name: Hint_blinkLeftToRight_93;
+}
+
+.Hint_base__hidden_8b .Hint_hintArrow_0f {
+    animation-play-state: paused;
+    pointer-events: none;
+}
+
+.Hint_hintText_b9 {
+    padding-left: 48rem;
+    color: #fd9;
+    line-height: 18rem;
+    text-align: center;
+    text-shadow:
+        0 0 10rem rgba(255, 42, 0, 1),
+        0 0 5rem rgba(255, 42, 0, 0.4),
+        0 0 4rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4),
+        0 0 2rem rgba(255, 42, 0, 0.4),
+        0 0 1rem rgba(255, 42, 0, 0.4);
+    white-space: pre-wrap;
+    position: relative;
+}
+
+.Hint_base__hidden_8b .Hint_hintText_b9 {
+    pointer-events: none;
+}
+
+.Hint_base__leftToRight_9a .Hint_hintText_b9 {
+    padding-left: 24rem;
+}
+
+@keyframes Hint_blink_7e {
+    0% {
+        opacity: 0;
+        transform: translateX(60rem);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+}
+
+@keyframes Hint_blinkLeftToRight_93 {
+    0% {
+        opacity: 0;
+        transform: translateX(-60rem) rotateY(180deg);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateX(0) rotateY(180deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(10rem) rotateY(180deg);
+    }
+}
+
+.HintManager_base__blueprintConvert_4c {
+    width: 24rem;
+    height: 24rem;
+    position: absolute;
+    top: -4rem;
+    left: 117rem;
+    z-index: 3;
+}
+.HintManager_base__inBattle_3c {
+    width: 130rem;
+    height: 37rem;
+    position: absolute;
+    top: 8rem;
+    left: 1rem;
+    z-index: 3;
+}
+
+.Currency_base_57 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.Currency_icon_c5 {
+    --icon-height: 16rem;
+    --icon-width: var(--icon-height);
+    width: var(--icon-width);
+    height: var(--icon-height);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+.Currency_base__small_af .Currency_icon_c5,
+.Currency_base__big_bc .Currency_icon_c5,
+.Currency_base__large_65 .Currency_icon_c5,
+.Currency_base__extraLarge_4d .Currency_icon_c5 {
+    transform: translateY(3rem);
+}
+.Currency_icon__credits-small_9b {
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_2');
+}
+.Currency_icon__credits-big_96 {
+    background-image: url('R.images.gui.maps.icons.library.CreditsIcon_1');
+}
+.Currency_icon__credits-large_ac {
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_silver');
+}
+.Currency_base__large_65 .Currency_icon__credits-large_ac {
+    transform: translateY(4rem);
+}
+.Currency_icon__credits-extraLarge_16 {
+    --icon-height: 80rem;
+    margin-right: -2rem;
+    background-image: url('R.images.gui.maps.icons.library.credits_icon_80x80');
+}
+.Currency_icon__gold-small_86 {
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon_2');
+}
+.Currency_base__small_af .Currency_icon__gold-small_86 {
+    transform: translateY(2rem);
+}
+.Currency_icon__gold-big_15 {
+    background-image: url('R.images.gui.maps.icons.library.GoldIcon_1');
+}
+.Currency_base__big_bc .Currency_icon__gold-big_15 {
+    transform: translateY(4rem);
+}
+.Currency_icon__gold-large_36 {
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_gold');
+}
+.Currency_base__large_65 .Currency_icon__gold-large_36 {
+    transform: translateY(4rem);
+}
+.Currency_icon__gold-extraLarge_a0 {
+    --icon-height: 80rem;
+    background-image: url('R.images.gui.maps.icons.library.gold_icon_80x80');
+}
+.Currency_icon__crystal-small_27 {
+    background-image: url('R.images.gui.maps.icons.library.CrystalIcon_2');
+}
+.Currency_base__small_af .Currency_icon__crystal-small_27 {
+    transform: translateY(2rem);
+}
+.Currency_icon__crystal-big_cd {
+    --icon-height: 22rem;
+    --icon-width: 23rem;
+    background-image: url('R.images.gui.maps.icons.library.crystal_23x22');
+}
+.Currency_base__big_bc .Currency_icon__crystal-big_cd {
+    transform: translateY(4rem);
+}
+.Currency_icon__crystal-large_d3 {
+    --icon-height: 48rem;
+    margin-left: -1rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.money_bonds');
+}
+.Currency_icon__crystal-extraLarge_09 {
+    --icon-height: 80rem;
+    background-image: url('R.images.gui.maps.icons.library.crystal_80x80');
+}
+.Currency_base__extraLarge_4d .Currency_icon__crystal-extraLarge_09 {
+    transform: translateY(7rem);
+}
+.Currency_icon__xp-small_a7 {
+    background-image: url('R.images.gui.maps.icons.library.NormalXpIcon');
+}
+.Currency_base__small_af .Currency_icon__xp-small_a7 {
+    transform: translateY(1rem);
+}
+.Currency_icon__xp-big_97 {
+    --icon-height: 22rem;
+    --icon-width: 23rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.xpIcon_23x22');
+}
+.Currency_base__big_bc .Currency_icon__xp-big_97 {
+    transform: translateY(2rem);
+}
+.Currency_icon__xp-large_6b {
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.exp');
+}
+.Currency_icon__xp-extraLarge_67 {
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.xp_tank_icon_80x80');
+}
+.Currency_icon__freeXP-small_ca {
+    background-image: url('R.images.gui.maps.icons.library.freeXPIcon16x16');
+}
+.Currency_base__small_af .Currency_icon__freeXP-small_ca {
+    transform: translateY(1rem);
+}
+.Currency_icon__freeXP-big_21 {
+    --icon-height: 24rem;
+    margin-left: -5rem;
+    background-image: url('R.images.gui.maps.icons.library.freeXPIconBig24x24');
+}
+.Currency_icon__freeXP-large_c8 {
+    --icon-height: 48rem;
+    margin: 0 -5rem 0 -6rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.freeExp');
+}
+.Currency_icon__freeXP-extraLarge_58 {
+    --icon-height: 80rem;
+    margin: 0 -5rem;
+    background-image: url('R.images.gui.maps.icons.library.free_xp_icon_80x80');
+}
+.Currency_base__extraLarge_4d .Currency_icon__freeXP-extraLarge_58 {
+    transform: translateY(4rem);
+}
+.Currency_icon__equipCoin-small_32 {
+    --icon-height: 16rem;
+    margin-right: -2rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoin_1');
+}
+.Currency_base__small_af .Currency_icon__equipCoin-small_32 {
+    transform: translateX(-1rem) translateY(1rem);
+}
+.Currency_icon__equipCoin-big_79 {
+    --icon-height: 24rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoinBig');
+}
+.Currency_base__big_bc .Currency_icon__equipCoin-big_79 {
+    transform: translateX(-5rem) translateY(3rem);
+}
+.Currency_icon__equipCoin-large_2c {
+    --icon-height: 48rem;
+    margin-right: 2rem;
+    background-image: url('R.images.gui.maps.shop.rewards.c_48x48.equipCoin');
+}
+.Currency_icon__equipCoin-extraLarge_8a {
+    --icon-height: 80rem;
+    margin-right: 8rem;
+    background-image: url('R.images.gui.maps.icons.library.equipCoin_icon_80x80');
+}
+.Currency_base__extraLarge_4d .Currency_icon__equipCoin-extraLarge_8a {
+    transform: translateX(2rem) translateY(4rem);
+}
+.Currency_value_e1 {
+    /* font-size inherit does not work here, so 1em means the size does not change */
+    /* stylelint-disable-next-line */
+    --font-size: 1em;
+    font-size: var(--font-size);
+    position: relative;
+    z-index: 2;
+}
+.Currency_base__small_af .Currency_value_e1 {
+    padding-right: 2rem;
+}
+.Currency_base__big_bc .Currency_value_e1 {
+    --font-size: 24rem;
+    padding-right: 5rem;
+    font-weight: 700;
+}
+.Currency_base__big_bc .Currency_value_e1 + .Currency_icon_c5 {
+    font-size: 24rem;
+}
+.Currency_base__large_65 .Currency_value_e1 {
+    --font-size: 36rem;
+    font-weight: 700;
+}
+.Currency_base__large_65 .Currency_value_e1 + .Currency_icon_c5 {
+    font-size: 36rem;
+}
+.Currency_base__extraLarge_4d .Currency_value_e1 {
+    --font-size: 56rem;
+    font-weight: 700;
+}
+.Currency_value__freeXP_cb {
+    color: #f2f2f7;
+}
+.Currency_value__credits_76 {
+    color: #ced9d9;
+}
+.Currency_value__gold_dd {
+    color: #ffc363;
+}
+.Currency_value__xp_b0,
+.Currency_value__crystal_19,
+.Currency_value__equipCoin_d0 {
+    color: #c9c9b6;
+}
+.Currency_base__small_af .Currency_value__notEnough_56 {
+    color: #ff2717;
+}
+.Currency_base__big_bc .Currency_value__notEnough_56 {
+    color: #b70000;
+}
+.Currency_base__large_65 .Currency_value__notEnough_56 {
+    color: #b70000;
+}
+.Currency_base__extraLarge_4d .Currency_value__notEnough_56 {
+    color: #b70000;
+}
+.Currency_stock_87 {
+    height: 13rem;
+    color: #ffdd99;
+    font-size: 13rem;
+    line-height: 1;
+    position: relative;
+    z-index: 0;
+    pointer-events: none;
+}
+.Currency_stock__indent_a1 {
+    margin-left: 2rem;
+}
+.Currency_base__small_af .Currency_stock_87 {
+    transform: translateY(0rem);
+}
+.Currency_base__big_bc .Currency_stock_87 {
+    transform: translateY(4rem);
+}
+.Currency_base__large_65 .Currency_stock_87 {
+    transform: translateY(10rem);
+}
+.Currency_base__extraLarge_4d .Currency_stock_87 {
+    transform: translateY(18rem);
+}
+.Currency_stock__interactive_93 {
+    pointer-events: auto;
+}
+.Currency_stockBackground_82 {
+    width: 80rem;
+    height: 45rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -27rem;
+    bottom: 0;
+    z-index: -1;
+    transform: translateY(17rem);
+}
+
+.EarlyAccessButton_base_52 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.EarlyAccessButton_background_0e {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 158rem;
+    height: 61rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.earlyAccess.entryPointButton')
+        no-repeat center / contain;
+    position: absolute;
+    top: -4rem;
+}
+
+.EarlyAccessButton_background__paused_7b {
+    width: 194rem;
+    height: 87rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.earlyAccess.entryPointButton_paused')
+        no-repeat center / contain;
+    top: -20rem;
+}
+
+.EarlyAccessButton_hoverBackground_88 {
+    width: 194rem;
+    height: 87rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.earlyAccess.entryPointButton_Hovered')
+        no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: -20rem;
+}
+
+.EarlyAccessButton_hoverBackground__visible_8e {
+    opacity: 1;
+}
+
+.EarlyAccessButton_hoverBackground_88 {
+    transition: opacity 0.2s;
+}
+
+.EarlyAccessButton_content_fc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 128rem;
+    height: 32rem;
+    position: absolute;
+    top: 8rem;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.EarlyAccessButton_content__paused_f7 {
+    cursor: default;
+}
+
+.EarlyAccessButton_text_fb {
+    color: rgba(231, 255, 251, 0.8);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: -3rem;
+    text-shadow:
+        0 0 15rem rgba(90, 112, 168, 0.6),
+        0 0 12rem rgba(80, 200, 157, 0.25);
+}
+
+.EarlyAccessButton_text__hovered_96 {
+    color: #e7fffb;
+}
+
+.EarlyAccessButton_text__paused_29 {
+    color: rgba(218, 225, 224, 0.8);
+    text-align: center;
+}
+
+.EarlyAccessButton_text_fb {
+    transition: color 0.2s;
+}
+
+.ActionButton_base_8b > span {
+    display: flex;
+    justify-content: center;
+    max-height: 100%;
+    transform: scale(0.84) translateY(-1rem) translateX(2%);
+    pointer-events: none;
+}
+.ActionButton_base_8b > span > span:first-child {
+    color: #ecd8b9;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.ActionButton_base_8b > span > span:last-child {
+    background: no-repeat center / cover;
+    top: 1rem;
+    transform: scale(1.2) translateY(1rem);
+}
+.ActionButton_base__scaled_c3 > span > span:last-child {
+    top: 0;
+}
+.ActionButton_base_8b {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 69rem;
+    height: 20rem;
+    background: no-repeat center / cover;
+}
+.ActionButton_base__buyGold_9b,
+.ActionButton_base__buySilver_08 {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.actionButtonBackgrounds.gold');
+}
+.ActionButton_base__buyGold_9b > span > span:last-child {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.goldIcon');
+}
+.ActionButton_base__buyGold_9b.ActionButton_base__scaled_c3 > span > span:last-child {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.goldIcon_x2');
+}
+.ActionButton_base__buySilver_08 > span > span:last-child {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.creditsIcon');
+}
+.ActionButton_base__buySilver_08.ActionButton_base__scaled_c3 > span > span:last-child {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.creditsIcon_x2');
+}
+.ActionButton_base__buyDisabled_83 {
+    height: 19rem;
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.actionButtonBackgrounds.gold_disabled');
+}
+.ActionButton_base__buyDisabled_83 > span > span:last-child {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.creditsIcon');
+}
+.ActionButton_base__buyDisabled_83.ActionButton_base__scaled_c3 > span > span:last-child {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.creditsIcon_x2');
+}
+.ActionButton_base__explore_ba > span > span:first-child {
+    color: #f2f2f7;
+}
+.ActionButton_base__explore_ba > span > span:last-child {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.experienceIcon');
+}
+.ActionButton_base__explore_ba {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.actionButtonBackgrounds.green');
+}
+.ActionButton_base__explore_ba.ActionButton_base__scaled_c3 > span > span:last-child {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.experienceIcon_x2');
+}
+.ActionButton_base__explore_ba.ActionButton_base__scaled_c3 {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.actionButtonBackgrounds.green');
+}
+.ActionButton_base__exploreDisabled_41 > span > span:first-child {
+    color: #f2f2f7;
+}
+.ActionButton_base__exploreDisabled_41 > span > span:last-child {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.experienceIcon');
+}
+.ActionButton_base__exploreDisabled_41 {
+    height: 19rem;
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.actionButtonBackgrounds.green_disabled');
+}
+.ActionButton_base__exploreDisabled_41.ActionButton_base__scaled_c3 > span > span:first-child {
+    color: #f2f2f7;
+}
+.ActionButton_base__exploreDisabled_41.ActionButton_base__scaled_c3 > span > span:last-child {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.experienceIcon_x2');
+}
+.ActionButton_actionButtonHover_ae {
+    width: 67rem;
+    height: 17rem;
+    margin-top: 1rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.node.actionButtonBackgrounds.hover') no-repeat center /
+        cover;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.15s ease-in;
+}
+.ActionButton_actionButtonHover__visible_7d {
+    opacity: 1;
+}
+.ActionButton_recoveryText_c1 {
+    color: #ecd8b9;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    transform: scale(0.7) translateY(-3rem) translateX(1rem);
+}
+
+.AddBluePrintButton_base_2b {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.addBlueprint') no-repeat center /
+        contain;
+    position: relative;
+    cursor: pointer;
+}
+
+.AddBluePrintButton_hovered_5f {
+    width: 24rem;
+    height: 24rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.addBlueprint_hovered') no-repeat
+        center / contain;
+    opacity: 0;
+    position: relative;
+    top: 0;
+    left: -1rem;
+    transition: opacity 0.05s;
+}
+
+.AddBluePrintButton_hovered__visible_cb {
+    opacity: 1;
+}
+
+.CompareButton_base_9e {
+    width: 29rem;
+    height: 22rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.addToCompare') no-repeat center /
+        cover;
+    opacity: 0.7;
+    transition: opacity 0.15s;
+}
+
+.CompareButton_base__hovered_6a {
+    opacity: 1;
+}
+.CompareButton_compareButtonActiveZone_86 {
+    width: 100%;
+    height: 100%;
+}
+
+.TreeNode_base_e4 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 37rem;
+    cursor: pointer;
+}
+.TreeNode_background_3a {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.default') no-repeat center / contain;
+    position: absolute;
+    z-index: -1;
+}
+.TreeNode_background__locked_9a {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.disabled');
+    z-index: 0;
+}
+.TreeNode_background__unlocked_8f,
+.TreeNode_background__inInventory_36 {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.default');
+}
+.TreeNode_background__premium_04 {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.premSlot');
+}
+.TreeNode_blueprints_80 {
+    width: 0%;
+    max-width: 129rem;
+    height: 37rem;
+    border-radius: 2rem;
+    background: #3ea7fd;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    z-index: -1;
+    transition: width 0.3s;
+}
+.TreeNode_blueprints__availableToUnlock_3d {
+    z-index: 0;
+}
+.TreeNode_border_72 {
+    background: no-repeat center / cover;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+.TreeNode_border__blueprint_bc {
+    width: 162rem;
+    height: 70rem;
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.blueprintBorder');
+    top: -16rem;
+    left: -16rem;
+}
+.TreeNode_border__blueprintScaled_6b {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.blueprintBorder_scaled');
+}
+.TreeNode_border__earlyAccess_ec {
+    width: 158rem;
+    height: 65rem;
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.earlyAccess.border');
+    top: -14rem;
+    left: -14rem;
+}
+.TreeNode_border__earlyAccessLocked_65 {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.earlyAccess.borderLocked');
+}
+.TreeNode_border__earlyAccessPaused_cc {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.earlyAccess.borderPaused');
+}
+.TreeNode_border__inBattle_ee {
+    width: 138rem;
+    height: 45rem;
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.inBattle.inBattleBorder');
+    left: -4rem;
+}
+.TreeNode_border__inBattleFirstEntry_2b {
+    width: 158rem;
+    height: 65rem;
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.inBattle.inBattleBorder_firstEntry');
+    left: -13rem;
+}
+.TreeNode_hover_41 {
+    width: 128rem;
+    height: 35rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.hover') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+    transition: opacity 0.15s ease-in;
+    pointer-events: none;
+}
+.TreeNode_base__hovered_f4 .TreeNode_hover_41 {
+    opacity: 0.6;
+}
+.TreeNode_hover__earlyAccess_94 {
+    width: 158rem;
+    height: 65rem;
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.earlyAccess.border_hovered');
+    top: -14rem;
+    left: -14rem;
+}
+.TreeNode_base__hovered_f4 .TreeNode_hover__earlyAccess_94 {
+    opacity: 1;
+}
+.TreeNode_hover__earlyAccessLocked_c4 {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.earlyAccess.borderLocked_hovered');
+}
+.TreeNode_hover__earlyAccessPaused_6b {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.earlyAccess.borderPaused_hovered');
+}
+.TreeNode_earlyAccessMainButtonHover_e2 {
+    width: 128rem;
+    height: 35rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.earlyAccess.borderLocked_hoveredMainButton')
+        no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+    transition: opacity 0.2s;
+}
+.TreeNode_earlyAccessMainButtonHover__visible_f7 {
+    opacity: 1;
+}
+.TreeNode_actionButton_21 {
+    position: absolute;
+    top: 24.5rem;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.TreeNode_addBlueprintButtonContainer_db {
+    position: absolute;
+    top: -12rem;
+    right: -12rem;
+    z-index: 2;
+}
+.TreeNode_content_7c {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.TreeNode_title_d9 {
+    color: #f2f2f7;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+    position: absolute;
+    top: -1rem;
+    right: 4rem;
+    transform: scale(0.75) translateX(15%);
+}
+.TreeNode_base__gold_46 .TreeNode_title_d9 {
+    color: #e8a15f;
+    text-shadow: 2rem 1rem 2rem rgba(0, 0, 0, 0.8);
+}
+.TreeNode_content__locked_46 .TreeNode_title_d9 {
+    opacity: 0.5;
+}
+.TreeNode_vehicleLevel_51 {
+    width: 24rem;
+    height: 17rem;
+    background: no-repeat center / contain;
+    position: relative;
+    top: -1rem;
+    left: -10rem;
+}
+.TreeNode_base__elite_2d .TreeNode_vehicleLevel_51 {
+    top: -0.5rem;
+    left: -3.5rem;
+}
+.TreeNode_content__locked_46 .TreeNode_vehicleLevel_51 {
+    opacity: 0.5;
+}
+.TreeNode_vehicleTypeWrapper_23 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.TreeNode_vehicleType_5f {
+    width: 24rem;
+    height: 24rem;
+    background: no-repeat center / contain;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.TreeNode_vehicleType__lightTank_e4 {
+    top: -1rem;
+    left: 1rem;
+}
+.TreeNode_vehicleType__mediumTank_ba {
+    top: -2rem;
+}
+.TreeNode_vehicleType__heavyTank_af {
+    left: -1rem;
+}
+.TreeNode_vehicleType__AT-SPG_d7 {
+    top: -3rem;
+    left: -1rem;
+}
+.TreeNode_vehicleType__SPG_6a {
+    top: -1rem;
+}
+.TreeNode_base__elite_2d .TreeNode_vehicleType_5f {
+    left: 2rem;
+}
+.TreeNode_base__elite_2d .TreeNode_vehicleType__lightTank_e4 {
+    top: -2rem;
+}
+.TreeNode_base__elite_2d .TreeNode_vehicleType__heavyTank_af {
+    top: -1rem;
+}
+.TreeNode_base__elite_2d .TreeNode_vehicleType__mediumTank_ba {
+    top: -1rem;
+}
+.TreeNode_base__elite_2d .TreeNode_vehicleType__AT-SPG_d7 {
+    top: -1rem;
+}
+.TreeNode_content__locked_46 .TreeNode_vehicleType_5f {
+    opacity: 0.5;
+}
+.TreeNode_vehicleIcon_71 {
+    width: 100%;
+    height: 100%;
+    margin-left: 3rem;
+    background: no-repeat center / contain;
+    position: relative;
+    z-index: -1;
+}
+.TreeNode_content__locked_46 .TreeNode_vehicleIcon_71 {
+    opacity: 0.7;
+}
+.TreeNode_base__blueprint_8f .TreeNode_content__locked_46 .TreeNode_vehicleIcon_71 {
+    z-index: -2;
+}
+.TreeNode_tradeIn_84 {
+    width: 36rem;
+    height: 36rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.tradeIn') no-repeat center /
+        contain;
+    position: absolute;
+    bottom: -17rem;
+    left: 0;
+    z-index: 2;
+}
+.TreeNode_inInventoryIcon_75 {
+    width: 77rem;
+    height: 27rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.inInventory') no-repeat center /
+        contain;
+    position: absolute;
+    top: 22.5rem;
+    left: 26rem;
+    z-index: 2;
+    pointer-events: none;
+}
+.TreeNode_inInventoryIcon__rent_37 {
+    width: 32rem;
+    height: 32rem;
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.rentIcon');
+    top: 18.5rem;
+    left: 50rem;
+}
+.TreeNode_inInventoryIcon__blueprint_d2 {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.inInventory_blueprints');
+}
+.TreeNode_earlyAccessLocked_16 {
+    width: 126rem;
+    height: 42rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.blockedEarlyAccess') no-repeat
+        center / contain;
+    position: absolute;
+    bottom: -7rem;
+    left: 2rem;
+    z-index: 2;
+}
+.TreeNode_xpCost_e5 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 12rem;
+    position: absolute;
+    right: 8rem;
+}
+.TreeNode_xpCost__discount_f5 {
+    right: 26rem;
+}
+.TreeNode_xpCost_e5 {
+    bottom: 4rem;
+}
+.TreeNode_xpCost_e5 > span {
+    display: flex;
+    justify-content: center;
+    max-height: 100%;
+    transform: scale(0.7) translateX(25%);
+    pointer-events: none;
+}
+.TreeNode_xpCost_e5 > span > span:first-child {
+    color: #f2f2f7;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    opacity: 0.7;
+}
+.TreeNode_xpCost_e5 > span > span:last-child {
+    transform: scale(1.42) translateX(2rem) translateY(0.5rem);
+}
+.TreeNode_xpCost__earned_ef > span > span:first-child {
+    opacity: 0.85;
+}
+.TreeNode_xpCost__earned__elite_0d > span > span:last-child {
+    width: 18rem;
+    height: 18rem;
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.currencyIcon.eliteXpIcon.png');
+    top: 1rem;
+}
+.TreeNode_discount_61 {
+    width: 34rem;
+    height: 31rem;
+    background: no-repeat center / cover;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+}
+.TreeNode_discount__buy_a4 {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.discounts.red');
+}
+.TreeNode_discount__research_fe {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.node.discounts.blue');
+}
+.TreeNode_discount__locked_46 {
+    opacity: 0.7;
+}
+.TreeNode_tokenBalance_cd {
+    color: #f2f2f7;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+    height: 12rem;
+    position: absolute;
+    right: 7rem;
+    bottom: 8rem;
+    transform: scale(0.7) translateX(25%);
+}
+.TreeNode_tokenBalance__earlyAccess_a3 {
+    opacity: 0.5;
+    right: 19rem;
+    bottom: 7.5rem;
+}
+.TreeNode_earlyAccessTokenIcon_58 {
+    width: 14rem;
+    height: 14rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.node.additionalIcons.earlyAccessToken') no-repeat
+        center / contain;
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+}
+.TreeNode_compareButton_f1 {
+    position: absolute;
+    top: -11rem;
+    left: 52rem;
+    z-index: 2;
+    cursor: pointer;
+}
+.TreeNode_earlyAccessButton_1f {
+    position: absolute;
+    top: -5rem;
+    left: -118rem;
+}
+.TreeNode_earlyAccessGlowContainer_17 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+.TreeNode_earlyAccessGlow_a8 {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.node.backgrounds.earlyAccess.glow') no-repeat center /
+        cover;
+    position: relative;
+    left: 128rem;
+    animation: TreeNode_earlyAccessGlow_a8 600ms;
+}
+@keyframes TreeNode_earlyAccessGlow_a8 {
+    0% {
+        left: -128rem;
+    }
+
+    100% {
+        left: 128rem;
+    }
+}
+
+.TreeNodeHolder_base_5a {
+    width: 130rem;
+    position: relative;
+}
+
+.TreeNodeHolder_base__premiumEmpty_07 {
+    height: 100%;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.premiumPanel.spacer_dot_golden') no-repeat center /
+        contain;
+}
+
+.MainNodesWithConnectors_connectors_06 {
+    width: 53rem;
+    height: 53rem;
+    position: relative;
+}
+
+.Frame_base_dc {
+    width: 48rem;
+    height: 32rem;
+    position: absolute;
+    pointer-events: none;
+}
+
+.mediaMedium .Frame_base_dc {
+    width: 55rem;
+    height: 36rem;
+}
+
+@media (min-width: 1700px) and (min-height: 900px) and (max-width: 1919px) and (max-height: 1079px) {
+    .mediaMedium .Frame_base_dc {
+        width: 60rem;
+        height: 40rem;
+    }
+}
+
+.mediaMedium .Frame_base__scaled_74 {
+    width: 55rem;
+    height: 36rem;
+}
+
+@media (min-width: 3400px) and (min-height: 1700px) {
+    .mediaMedium .Frame_base__scaled_74 {
+        width: 60rem;
+        height: 40rem;
+    }
+}
+
+.Frame_arrow_ec {
+    width: 7rem;
+    height: 12rem;
+    margin-left: 12rem;
+    margin-top: -2rem;
+    background: url('R.images.gui.maps.icons.components.tabs.tab.arrow') no-repeat center / contain;
+    position: absolute;
+    top: 40%;
+    left: 100%;
+}
+
+.Tab_base_d9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48rem;
+    height: 32rem;
+    margin-top: 12rem;
+    background: none;
+    position: relative;
+    transition:
+        color 0.5s ease-in-out,
+        text-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.mediaMedium .Tab_base_d9 {
+    width: 55rem;
+    height: 36rem;
+    margin-top: 13rem;
+}
+
+@media (min-width: 1700px) and (min-height: 900px) and (max-width: 1919px) and (max-height: 1079px) {
+    .mediaMedium .Tab_base_d9 {
+        width: 60rem;
+        height: 40rem;
+        margin-top: 17rem;
+    }
+}
+
+.mediaLarge .Tab_base_d9 {
+    width: 60rem;
+    height: 40rem;
+    margin-top: 17rem;
+}
+
+.mediaMedium .Tab_base__scaled_bf {
+    width: 55rem;
+    height: 36rem;
+    margin-top: 13rem;
+}
+
+@media (min-width: 3400px) and (min-height: 1700px) {
+    .mediaMedium .Tab_base__scaled_bf {
+        width: 60rem;
+        height: 40rem;
+    }
+}
+
+.Tab_base__active_da {
+    cursor: default;
+    pointer-events: none;
+}
+
+.Tab_base_d9:nth-child(1) {
+    margin-top: 0;
+}
+
+.mediaMedium .Tab_base_d9:nth-child(1) {
+    margin-top: 0;
+}
+
+@media (min-width: 1700px) and (min-height: 900px) and (max-width: 1919px) and (max-height: 1079px) {
+    .mediaMedium .Tab_base_d9:nth-child(1) {
+        margin-top: 0;
+    }
+}
+
+.Tab_earlyAccessIcon_cc {
+    width: 90rem;
+    height: 154rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.nationMenu.earlyAccessShine') no-repeat center /
+        contain;
+    position: absolute;
+    top: 50%;
+    left: -22rem;
+    z-index: 2;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.Tab_discountIcon_6e {
+    width: 20rem;
+    height: 20rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.nationMenu.discount') no-repeat center / contain;
+    position: absolute;
+    top: -8rem;
+    left: 38rem;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.mediaMedium .Tab_discountIcon_6e {
+    width: 22rem;
+    height: 22rem;
+    top: -10rem;
+    left: 44rem;
+}
+
+@media (min-width: 1700px) and (min-height: 900px) and (max-width: 1919px) and (max-height: 1079px) {
+    .mediaMedium .Tab_discountIcon_6e {
+        width: 24rem;
+        height: 24rem;
+        top: -11rem;
+        left: 46rem;
+    }
+}
+
+.mediaLarge .Tab_discountIcon_6e {
+    width: 24rem;
+    height: 24rem;
+    top: -11rem;
+    left: 46rem;
+}
+
+.mediaMedium .Tab_discountIcon__scaled_4c {
+    width: 24rem;
+    height: 24rem;
+    top: -11rem;
+    left: 46rem;
+}
+
+@media (min-width: 3400px) and (min-height: 1700px) {
+    .mediaMedium .Tab_discountIcon__scaled_4c {
+        width: 24rem;
+        height: 24rem;
+        top: -11rem;
+        left: 46rem;
+    }
+}
+
+.Tab_highlight_1d {
+    width: 266rem;
+    height: 132rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.nationMenu.flag_border') no-repeat center / contain;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    transition:
+        opacity 0.5s ease-in-out,
+        width 0.3s ease-out;
+    transition-duration: 0.2s;
+    pointer-events: none;
+}
+
+.Tab_base__active_da .Tab_highlight_1d {
+    opacity: 1;
+}
+
+.mediaMedium .Tab_highlight_1d {
+    width: 320rem;
+    height: 151rem;
+}
+
+@media (min-width: 1700px) and (min-height: 900px) and (max-width: 1919px) and (max-height: 1079px) {
+    .mediaMedium .Tab_highlight_1d {
+        width: 338rem;
+        height: 168rem;
+    }
+}
+
+.mediaLarge .Tab_highlight_1d {
+    width: 338rem;
+    height: 168rem;
+}
+
+.Tab_base__scaled_bf .Tab_highlight_1d {
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.nationMenu.flag_border_2x');
+}
+
+.mediaMedium .Tab_base__scaled_bf .Tab_highlight_1d {
+    width: 320rem;
+    height: 151rem;
+}
+
+@media (min-width: 3400px) and (min-height: 1700px) {
+    .mediaMedium .Tab_base__scaled_bf .Tab_highlight_1d {
+        width: 338rem;
+        height: 168rem;
+    }
+}
+
+.Tab_icon_0f {
+    width: 48rem;
+    height: 32rem;
+    border-radius: 3rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
+
+.mediaMedium .Tab_icon_0f {
+    width: 55rem;
+    height: 36rem;
+}
+
+@media (min-width: 1700px) and (min-height: 900px) and (max-width: 1919px) and (max-height: 1079px) {
+    .mediaMedium .Tab_icon_0f {
+        width: 60rem;
+        height: 40rem;
+    }
+}
+
+.mediaLarge .Tab_icon_0f {
+    width: 60rem;
+    height: 40rem;
+}
+
+.mediaMedium .Tab_base__scaled_bf .Tab_icon_0f {
+    width: 55rem;
+    height: 36rem;
+}
+
+@media (min-width: 3400px) and (min-height: 1700px) {
+    .mediaMedium .Tab_base__scaled_bf .Tab_icon_0f {
+        width: 60rem;
+        height: 40rem;
+    }
+}
+
+.VerticalTabs_base_a6 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.VerticalTabs_title_ea {
+    padding: 0 5rem 10rem;
+    text-align: center;
+}
+
+.VerticalTabs_group_e1 {
+    padding: 0;
+    background: transparent;
+}
+
+.NationsMenu_base_98 {
+    position: relative;
+}
+
+.NationsMenu_shadowContainer_2b {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 30rem 0;
+    position: absolute;
+    left: 10rem;
+}
+
+.NationsMenu_shadow_b5 {
+    width: 1rem;
+    height: 90%;
+    box-shadow: 0 0 94rem 67rem rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.NationsMenu_shadow__scaled_68 {
+    box-shadow: 0 0 85rem 50rem rgba(0, 0, 0, 0.7);
+}
+
+.mediaMedium .NationsMenu_shadow__scaled_68 {
+    box-shadow: 0 0 94rem 80rem rgba(0, 0, 0, 0.7);
+}
+
+.NationTitle_base_60 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 58rem;
+}
+
+.mediaMedium .NationTitle_base_60 {
+    margin-left: 61rem;
+}
+
+.NationTitle_nationTitle_06 {
+    color: #f2f2f7;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.mediaMedium .NationTitle_nationTitle_06 {
+    color: #f2f2f7;
+    font-size: 36rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.NationTitle_collectionVehicles_5a {
+    width: 48rem;
+    height: 24rem;
+    margin-left: 10rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.collectionVehiclesIcons.icon') no-repeat center /
+        contain;
+    opacity: 0.5;
+    position: relative;
+    top: 4rem;
+    transition: opacity 0.15s linear;
+    cursor: pointer;
+}
+
+.mediaMedium .NationTitle_collectionVehicles_5a {
+    height: 30rem;
+    margin-left: 13rem;
+    background-image: url('R.images.gui.maps.icons.techtree.researchTree.collectionVehiclesIcons.icon__large');
+    top: 10rem;
+}
+
+.NationTitle_collectionVehicles_5a:hover {
+    opacity: 1;
+}
+
+.ParagonsEntryPoint_base_ab {
+    display: flex;
+    width: 43rem;
+    height: 43rem;
+}
+
+.mediaMedium .ParagonsEntryPoint_base_ab {
+    width: 60rem;
+    height: 60rem;
+}
+
+.ParagonsEntryPoint_entryPointIcon_ac {
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.paragons.entryPoint.logo') no-repeat top / contain;
+}
+
+.ParagonsEntryPoint_base_ab:hover .ParagonsEntryPoint_entryPointIcon_ac {
+    filter: brightness(130%);
+}
+
+.PremiumPanel_base_90 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.PremiumPanel_backgroundWrapper_a5 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: transform 0.2s ease-in-out;
+}
+.PremiumPanel_background_50 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.premiumPanel.background') no-repeat center / cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+}
+.PremiumPanel_topBorder_b3 {
+    width: 100%;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.premiumPanel.panel_border') no-repeat center top /
+        cover;
+    opacity: 0;
+    transform: translateY(-1rem);
+    transition: opacity 0.2s ease-in-out;
+}
+.PremiumPanel_base__active_05 .PremiumPanel_topBorder_b3 {
+    opacity: 1;
+}
+.PremiumPanel_contentWrapper_a7 {
+    width: 100%;
+    height: 100%;
+    padding-top: 10rem;
+}
+.PremiumPanel_content_63 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 20rem 0 110rem;
+    position: relative;
+    transform: translateY(7rem);
+    transition: transform 0.2s ease-in-out;
+}
+.PremiumPanel_base__active_05 .PremiumPanel_content_63 {
+    transform: translateY(32rem);
+}
+
+.PremiumPanelEffects_base_41 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(255, 255, 255, 0) 15%,
+        rgba(255, 255, 255, 0) 85%,
+        rgba(0, 0, 0, 0.5) 100%
+    );
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+.PremiumPanelEffects_shadow_63 {
+    width: 100%;
+    height: 100%;
+    box-shadow:
+        0 360rem 4rem 0 rgba(0, 0, 0, 0.25) inset,
+        0 -3rem 4rem 0 rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+.PremiumPanelEffects_base__active_6a .PremiumPanelEffects_shadow_63 {
+    opacity: 0;
+}
+.PremiumPanelEffects_topGlow_b7 {
+    width: 1920rem;
+    height: 360rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.premiumPanel.panel_glow') no-repeat center top /
+        cover;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+}
+.PremiumPanelEffects_base__active_6a .PremiumPanelEffects_topGlow_b7 {
+    opacity: 1;
+}
+.PremiumPanelEffects_wreathWrapper_96 {
+    width: 412rem;
+    height: 70rem;
+    position: absolute;
+    top: -30rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.PremiumPanelEffects_wreathContent_bb {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: relative;
+    transition: opacity 0.1s ease-in-out;
+    pointer-events: none;
+}
+.PremiumPanelEffects_base__active_6a .PremiumPanelEffects_wreathContent_bb {
+    opacity: 1;
+}
+.PremiumPanelEffects_wreath_d8 {
+    width: 75rem;
+    height: 70rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.premiumPanel.wreath') no-repeat center top / cover;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.PremiumPanelEffects_titleGlow_bd {
+    width: 100%;
+    height: 40rem;
+    background: url('R.images.gui.maps.icons.techtree.researchTree.premiumPanel.title_glow') no-repeat center / contain;
+    opacity: 0.6;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+}
+.PremiumPanelEffects_header_72 {
+    color: #ffdd99;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 3.6rem;
+    position: absolute;
+    bottom: 7rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.HorizontalBar_base_72 {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+    position: relative;
+}
+
+.HorizontalBar_base__nonActive_8b {
+    visibility: hidden;
+}
+
+.HorizontalBar_base_72 .disable,
+.HorizontalBar_base_72 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.HorizontalBar_leftButton_14,
+.HorizontalBar_rightButton_88 {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transform: rotate(-90deg);
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_leftButton_14:hover,
+.HorizontalBar_rightButton_88:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_leftButton_14 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.HorizontalBar_rightButton_88 {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.HorizontalBar_track_bc {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_63 {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 20rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb_horizontal') no-repeat center / 8rem
+        7rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.HorizontalBar_thumb_63:hover {
+    opacity: 1;
+}
+
+.HorizontalBar_rail_3b {
+    height: 0;
+    border-top: 1rem solid #2f2e24;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    left: 5rem;
+}
+
+.HorizontalBar_rail_3b:hover {
+    opacity: 0.7;
+}
+
+.HorizontalScroll_base_f2 {
+    width: 100%;
+}
+
+.HorizontalScroll_wrapper_89 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: visible;
+}
+
+.HorizontalScroll_content_0e {
+    min-width: 100%;
+    height: 100%;
+}
+
+.HorizontalScroll_defaultScrollArea_8f {
+    width: 100%;
+    margin-bottom: 7rem;
+}
+
+.VerticalBar_base_d6 {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 100%;
+    position: relative;
+}
+
+.VerticalBar_base__nonActive_3c {
+    visibility: hidden;
+}
+
+.VerticalBar_base_d6 .disable,
+.VerticalBar_base_d6 .disable:hover {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.VerticalBar_topButton_6f,
+.VerticalBar_bottomButton_db {
+    width: 13rem;
+    height: 13rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: no-repeat center / 7rem 5rem;
+    opacity: 0.5;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_topButton_6f:hover,
+.VerticalBar_bottomButton_db:hover {
+    opacity: 1;
+}
+
+.VerticalBar_topButton_6f {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_top');
+}
+
+.VerticalBar_bottomButton_db {
+    background-image: url('R.images.gui.maps.icons.components.scroll_area.arrow_down');
+}
+
+.VerticalBar_track_ab {
+    flex: 1;
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_f8 {
+    display: flex;
+    flex: 0 0 13rem;
+    width: 13rem;
+    height: 100%;
+    min-height: 20rem;
+    border: 1rem solid #7e7b68;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 190, 0.3);
+    background: #26241b url('R.images.gui.maps.icons.components.scroll_area.thumb') no-repeat center / 7rem 8rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 130ms linear;
+    cursor: pointer;
+}
+
+.VerticalBar_thumb_f8:hover {
+    opacity: 1;
+}
+
+.VerticalBar_rail_cd {
+    width: 0;
+    height: 100%;
+    border-left: 1rem solid #2f2e24;
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    z-index: 0;
+}
+
+.VerticalBar_rail_cd:hover {
+    opacity: 0.7;
+}
+
+.VerticalScroll_content_dc {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.VerticalScroll_defaultScroll_3b {
+    display: flex;
+}
+
+.VerticalScroll_bar_bb {
+    flex: 1;
+    margin-left: 7rem;
+}
+
+.VerticalScroll_area_d6 {
+    flex: 1;
+}
+
+.ScrollDrag_base_55 {
+    cursor: grab;
+}
+
+.ScrollDrag_base__grabbing_12 {
+    cursor: grabbing;
+}
+
+.ScrollDrag_base__noDrag_02 {
+    cursor: default;
+}

@@ -2,19 +2,7 @@
     'use strict';
     var __webpack_modules__ = {
             2372: (u, e, A) => {
-                var F = A(6179),
-                    E = A.n(F),
-                    t = A(4179);
-                class n extends E().PureComponent {
-                    render() {
-                        let u;
-                        if ('gold' === this.props.format) u = t.B3.GOLD;
-                        else u = t.B3.INTEGRAL;
-                        const e = t.Z5.getNumberFormat(this.props.value, u);
-                        return void 0 !== this.props.value && void 0 !== e ? e : null;
-                    }
-                }
-                n.defaultProps = { format: 'integral' };
+                A(6179), A(4179);
             },
             280: (u, e, A) => {
                 A(6179), A(6483), A(3649), A(5287);
@@ -547,7 +535,7 @@
                 const __WEBPACK_DEFAULT_EXPORT__ = ViewModel;
             },
             4179: (u, e, A) => {
-                A.d(e, { B3: () => r, Z5: () => n, ry: () => l });
+                A.d(e, { ry: () => l });
                 class F {
                     constructor() {
                         (this.entries = []),

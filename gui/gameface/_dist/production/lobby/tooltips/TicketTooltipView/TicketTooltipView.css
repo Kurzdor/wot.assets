@@ -1,0 +1,97 @@
+.TooltipDecorator_base_c9 {
+    display: flex;
+    position: absolute;
+}
+
+.TooltipDecorator_base__theme-default_6d .TooltipDecorator_decorator_3d {
+    padding: 4rem 6rem 8rem;
+    border-image-source: url('R.images.gui.maps.icons.tooltip.tooltip_background');
+    border-image-slice: 24 fill;
+    border-image-width: 24rem;
+    position: relative;
+}
+
+.Content_base_d7 {
+    width: 363rem;
+    background-image: linear-gradient(
+        180deg,
+        rgba(51, 51, 41, 0.3) 0%,
+        rgba(51, 51, 41, 0) 16%,
+        rgba(51, 51, 41, 0) 88%,
+        rgba(51, 51, 41, 0.1) 100%
+    );
+}
+.Content_content_64 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 14rem 20rem;
+}
+.Content_title_9e {
+    margin-bottom: 20rem;
+    color: #e9e2bf;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 20rem;
+}
+.Content_description_c2 {
+    margin-bottom: 15rem;
+    color: #8c8c7e;
+    font-size: 14rem;
+    line-height: 18rem;
+}
+.Content_descriptionTitle_6b {
+    margin-bottom: 8rem;
+    color: #e9e2bf;
+    font-size: 14rem;
+    line-height: 18rem;
+}
+.Content_iconBig_bb {
+    width: 124rem;
+    height: 124rem;
+    margin-left: 100rem;
+    margin-bottom: 22rem;
+    background: url('R.images.white_tiger.gui.maps.icons.tickets.ticket_124') no-repeat center / contain;
+}
+.Content_iconSmall_84 {
+    width: 16rem;
+    height: 16rem;
+    background: url('R.images.white_tiger.gui.maps.icons.tickets.ticket_16') no-repeat center / contain;
+}
+.Content_divider_29 {
+    width: 100%;
+    height: 9rem;
+    background: url('R.images.white_tiger.gui.maps.icons.carousel.dividerDotty') no-repeat center / contain;
+    position: relative;
+}
+.Content_divider__top_a9 {
+    top: 4rem;
+}
+.Content_divider__bottom_33 {
+    top: -4rem;
+}
+.Content_quantityWrapper_10 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 41rem;
+    background-image: linear-gradient(
+        270deg,
+        rgba(255, 255, 230, 0) 0%,
+        rgba(255, 255, 230, 0.1) 38%,
+        rgba(255, 255, 230, 0.1) 65%,
+        rgba(255, 255, 230, 0) 100%
+    );
+}
+.Content_quantity_70 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    color: #8c8c7e;
+    font-size: 14rem;
+    line-height: 18rem;
+}
+.Content_receiveWrapper_bc {
+    margin-top: 15rem;
+}

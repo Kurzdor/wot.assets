@@ -1,0 +1,21 @@
+.SubTitle_base_56 {
+    color: #f2f2f7;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.mediaMedium .SubTitle_base_56 {
+    font-size: 20rem;
+}
+.mediaExtraLarge .SubTitle_base_56 {
+    font-size: 24rem;
+}
+.SubTitle_base__center_1b {
+    text-align: center;
+}
+.SubTitle_base__left_df {
+    text-align: left;
+}
+.SubTitle_base__right_5c {
+    text-align: right;
+}

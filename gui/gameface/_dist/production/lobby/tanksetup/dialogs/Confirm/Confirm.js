@@ -26,10 +26,10 @@
                     onMouseLeave: p,
                     onClick: C,
                 }) => {
-                    const h = (0, r.useRef)(null),
-                        g = (0, r.useState)(t),
-                        B = g[0],
-                        b = g[1],
+                    const g = (0, r.useRef)(null),
+                        h = (0, r.useState)(t),
+                        B = h[0],
+                        b = h[1],
                         v = (0, r.useState)(!1),
                         f = v[0],
                         y = v[1],
@@ -37,11 +37,11 @@
                         x = w[0],
                         S = w[1],
                         k = (0, r.useCallback)(() => {
-                            c || (h.current && (h.current.focus(), b(!0)));
+                            c || (g.current && (g.current.focus(), b(!0)));
                         }, [c]),
                         N = (0, r.useCallback)(
                             (e) => {
-                                B && null !== h.current && !h.current.contains(e.target) && b(!1);
+                                B && null !== g.current && !g.current.contains(e.target) && b(!1);
                             },
                             [B],
                         ),
@@ -110,7 +110,7 @@
                         s().createElement(
                             'div',
                             {
-                                ref: h,
+                                ref: g,
                                 className: H,
                                 onMouseEnter: P,
                                 onMouseMove: M,
@@ -218,9 +218,9 @@
                         D = e.size,
                         p = void 0 === D ? l.yB.medium : D,
                         C = e.type,
-                        h = void 0 === C ? l.Rh.primary : C,
-                        g = e.soundHover,
-                        B = void 0 === g ? 'highlight' : g,
+                        g = void 0 === C ? l.Rh.primary : C,
+                        h = e.soundHover,
+                        B = void 0 === h ? 'highlight' : h,
                         b = e.soundClick,
                         v = void 0 === b ? 'play' : b,
                         f = e.onMouseEnter,
@@ -306,7 +306,7 @@
                         m(
                             {
                                 id: u,
-                                className: r()(c.Z.base, c.Z[`base__${p}`], c.Z[`base__${h}`], {
+                                className: r()(c.Z.base, c.Z[`base__${p}`], c.Z[`base__${g}`], {
                                     [c.Z.base__checked]: i,
                                     [c.Z.base__disabled]: E,
                                     [c.Z.base__mouseDown]: H,
@@ -426,16 +426,14 @@
                 var n = t(6179),
                     a = t.n(n),
                     i = t(4179);
-                class r extends a().PureComponent {
-                    render() {
-                        let e;
-                        if ('gold' === this.props.format) e = i.B3.GOLD;
-                        else e = i.B3.INTEGRAL;
-                        const u = i.Z5.getNumberFormat(this.props.value, e);
-                        return void 0 !== this.props.value && void 0 !== u ? u : null;
-                    }
-                }
-                r.defaultProps = { format: 'integral' };
+                const r = ({ format: e, value: u }) => {
+                    const t = ((e, u = 'integral') => {
+                        let t;
+                        t = 'gold' === u ? i.B3.GOLD : i.B3.INTEGRAL;
+                        return void 0 === e ? '' : i.Z5.getNumberFormat(e, t);
+                    })(u, e);
+                    return t ? a().createElement('span', null, t) : null;
+                };
             },
             3495: (e, u, t) => {
                 'use strict';
@@ -507,10 +505,10 @@
                         D = s.extraSmallWidth,
                         p = s.extraLargeHeight,
                         C = s.largeHeight,
-                        h = s.mediumHeight,
-                        g = s.smallHeight,
+                        g = s.mediumHeight,
+                        h = s.smallHeight,
                         B = s.extraSmallHeight,
-                        b = { extraLarge: p, large: C, medium: h, small: g, extraSmall: B };
+                        b = { extraLarge: p, large: C, medium: g, small: h, extraSmall: B };
                     if (t.extraLarge || t.large || t.medium || t.small || t.extraSmall) {
                         if (t.extraLarge && o) return u;
                         if (t.large && l) return u;
@@ -528,8 +526,8 @@
                         ) {
                             if (t.extraLargeHeight && p) return u;
                             if (t.largeHeight && C) return u;
-                            if (t.mediumHeight && h) return u;
-                            if (t.smallHeight && g) return u;
+                            if (t.mediumHeight && g) return u;
+                            if (t.smallHeight && h) return u;
                             if (t.extraSmallHeight && B) return u;
                         }
                     }
@@ -782,9 +780,9 @@
                             D = e.decoratorId,
                             p = void 0 === D ? 0 : D,
                             C = e.isEnabled,
-                            h = void 0 === C || C,
-                            g = e.targetId,
-                            B = void 0 === g ? 0 : g,
+                            g = void 0 === C || C,
+                            h = e.targetId,
+                            B = void 0 === h ? 0 : h,
                             b = e.onShow,
                             v = e.onHide,
                             f = (function (e, u) {
@@ -832,8 +830,8 @@
                             );
                         }, []),
                             (0, i.useEffect)(() => {
-                                !1 === h && S();
-                            }, [h, S]),
+                                !1 === g && S();
+                            }, [g, S]),
                             (0, i.useEffect)(
                                 () => (
                                     window.addEventListener('mouseleave', S),
@@ -843,7 +841,7 @@
                                 ),
                                 [S],
                             );
-                        return h
+                        return g
                             ? (0, i.cloneElement)(
                                   u,
                                   Object.assign(
@@ -1048,13 +1046,13 @@
                         getSize: () => m,
                         getViewGlobalPosition: () => E,
                         isEventHandled: () => B,
-                        isFocused: () => h,
+                        isFocused: () => g,
                         pxToRem: () => D,
                         remToPx: () => p,
                         resize: () => d,
                         sendEvent: () => r.qP,
                         setAnimateWindow: () => C,
-                        setEventHandled: () => g,
+                        setEventHandled: () => h,
                         setInputPaddingsRem: () => o,
                         setSidePaddingsRem: () => _,
                         whenTutorialReady: () => w,
@@ -1103,10 +1101,10 @@
                 function C(e, u) {
                     viewEnv.setAnimateWindow(e, u);
                 }
-                function h() {
+                function g() {
                     return viewEnv.isFocused();
                 }
-                function g() {
+                function h() {
                     return viewEnv.setEventHandled();
                 }
                 function B() {
@@ -1536,7 +1534,7 @@
             },
             4179: (e, u, t) => {
                 'use strict';
-                t.d(u, { Sw: () => i.Z, B3: () => l, Z5: () => r, B0: () => o, ry: () => p, Eu: () => C, Sy: () => g });
+                t.d(u, { Sw: () => i.Z, B3: () => l, Z5: () => r, B0: () => o, ry: () => p, Eu: () => C, Sy: () => h });
                 class n {
                     constructor() {
                         (this.entries = []),
@@ -1655,7 +1653,7 @@
                                 });
                             });
                         }),
-                    h = (e, u) => {
+                    g = (e, u) => {
                         const t = 'GFViewEventProxy';
                         if (void 0 !== u) {
                             const a = u.args,
@@ -1693,7 +1691,7 @@
                         } else viewEnv.handleViewEvent({ __Type: t, type: e });
                         var n;
                     },
-                    g = () => h(o.CLOSE),
+                    h = () => g(o.CLOSE),
                     B = (e, u) => {
                         e.keyCode === d.n.ESCAPE && u();
                     };
@@ -1708,11 +1706,11 @@
                         TimeFormatType: _,
                         DateFormatType: m,
                         makeGlobalBoundingBox: D,
-                        sendMoveEvent: (e) => h(o.MOVE, { isMouseEvent: !0, on: e }),
-                        sendCloseEvent: g,
-                        sendClosePopOverEvent: () => h(o.POP_OVER, { on: !1 }),
+                        sendMoveEvent: (e) => g(o.MOVE, { isMouseEvent: !0, on: e }),
+                        sendCloseEvent: h,
+                        sendClosePopOverEvent: () => g(o.POP_OVER, { on: !1 }),
                         sendShowContextMenuEvent: (e, u, t = 0) => {
-                            h(o.CONTEXT_MENU, { isMouseEvent: !0, contentID: e, on: !0, decoratorID: t, args: u });
+                            g(o.CONTEXT_MENU, { isMouseEvent: !0, contentID: e, on: !0, decoratorID: t, args: u });
                         },
                         sendShowPopOverEvent: (e, u, t, n, a = R.invalid('resId'), i) => {
                             const r = E.O.view.getViewGlobalPosition(),
@@ -1727,7 +1725,7 @@
                                     width: E.O.view.pxToRem(_),
                                     height: E.O.view.pxToRem(m),
                                 };
-                            h(o.POP_OVER, {
+                            g(o.POP_OVER, {
                                 isMouseEvent: !0,
                                 contentID: e,
                                 decoratorID: n || R.invalid('resId'),
@@ -1745,9 +1743,9 @@
                             );
                         },
                         closeOnEsc: (e) => {
-                            B(e, g);
+                            B(e, h);
                         },
-                        handleViewEvent: h,
+                        handleViewEvent: g,
                         onBindingsReady: p,
                         onLayoutReady: C,
                         isTooltipShown: () => viewEnv.isWindowShownByViewEvent(o.TOOLTIP),
@@ -1953,7 +1951,7 @@
             },
             8772: (e, u, t) => {
                 'use strict';
-                t.d(u, { w: () => B, D: () => h });
+                t.d(u, { w: () => B, D: () => g });
                 var n = t(6483),
                     a = t.n(n),
                     i = t(9056),
@@ -2005,18 +2003,18 @@
                             }),
                         );
                     };
-                let h;
+                let g;
                 !(function (e) {
                     (e.Column = 'column'), (e.Row = 'row');
-                })(h || (h = {}));
-                const g = R.strings.tank_setup.dealPanel,
+                })(g || (g = {}));
+                const h = R.strings.tank_setup.dealPanel,
                     B = ({
                         renewalType: e,
                         withConfirmation: u = !1,
                         mediaSize: t = o.cJ.Medium,
                         parentModelPath: n,
-                        panelType: E = h.Row,
-                        priceLabel: A = g.toBePaid(),
+                        panelType: E = g.Row,
+                        priceLabel: A = h.toBePaid(),
                         autoRenewalLabel: F,
                         onAutoRenewalChanged: D,
                         onDealConfirmed: p,
@@ -2035,7 +2033,7 @@
                             P = t === o.cJ.Tiny || t === o.cJ.Small,
                             M = (0, r.useCallback)(() => p && p(), [p]),
                             I = (0, r.useCallback)(() => B && B(), [B]),
-                            R = E === h.Row,
+                            R = E === g.Row,
                             O = Boolean(f),
                             L = Boolean(S.length),
                             H = P && O && L,
@@ -2062,7 +2060,7 @@
                                         s().createElement(
                                             'div',
                                             { className: W },
-                                            !P && s().createElement('div', { className: d.from }, g.fromStorage()),
+                                            !P && s().createElement('div', { className: d.from }, h.fromStorage()),
                                             s().createElement(l.K, { valueFirst: !0, itemsInStorage: f }),
                                         ),
                                     H && s().createElement('div', { className: d.plus }),
@@ -2221,7 +2219,7 @@
                         }
                         return [...e, u];
                     },
-                    h = (e, u, t) => {
+                    g = (e, u, t) => {
                         if (0 === t) return [u];
                         if (t % 2) return [...e, ' ' === u ? ' ' : u];
                         {
@@ -2229,7 +2227,7 @@
                             return [...e, t + u];
                         }
                     },
-                    g = (e, u, t = F.left) => e.split(u).reduce(t === F.left ? C : h, []),
+                    h = (e, u, t = F.left) => e.split(u).reduce(t === F.left ? C : g, []),
                     B = (() => {
                         const e = new RegExp(
                             /[\(\u2E80-\u2E99\u2E9B-\u2EF3\u2F00-\u2FD5\u3005\u3007\u3021-\u3029\u3038-\u303B\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFA6D\uFA70-\uFAD9\u{16FE2}\u{16FE3}\u{16FF0}\u{16FF1}\u{20000}-\u{2A6DF}\u{2A700}-\u{2B738}\u{2B740}-\u{2B81D}\u{2B820}-\u{2CEA1}\u{2CEB0}-\u{2EBE0}\u{2F800}-\u{2FA1D}\u{30000}-\u{3134A}]?[\u3002\uFF01\uFF0C\uFF1A\uFF1B\uFF1F]?[ %\+\x2D-9A-Za-\{\}\xA0\xC0-\u0237\u2013\u2014\u2026]+[\)\u2E80-\u2E99\u2E9B-\u2EF3\u2F00-\u2FD5\u3002\u3005\u3007\u3021-\u3029\u3038-\u303B\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFA6D\uFA70-\uFAD9\uFF01\uFF0C\uFF1A\uFF1B\uFF1F\u{16FE2}\u{16FE3}\u{16FF0}\u{16FF1}\u{20000}-\u{2A6DF}\u{2A700}-\u{2B738}\u{2B740}-\u{2B81D}\u{2B820}-\u{2CEA1}\u{2CEB0}-\u{2EBE0}\u{2F800}-\u{2FA1D}\u{30000}-\u{3134A}]?[\u3002\uFF01\uFF0C\uFF1A\uFF1B\uFF1F]?/gmu
@@ -2261,7 +2259,7 @@
                                   const n =
                                           /(?<=[a-z\xB5\xDF-\xF6\xF8-\xFF\u0101\u0103\u0105\u0107\u0109\u010B\u010D\u010F\u0111\u0113\u0115\u0117\u0119\u011B\u011D\u011F\u0121\u0123\u0125\u0127\u0129\u012B\u012D\u012F\u0131\u0133\u0135\u0137\u0138\u013A\u013C\u013E\u0140\u0142\u0144\u0146\u0148\u0149\u014B\u014D\u014F\u0151\u0153\u0155\u0157\u0159\u015B\u015D\u015F\u0161\u0163\u0165\u0167\u0169\u016B\u016D\u016F\u0171\u0173\u0175\u0177\u017A\u017C\u017E-\u0180\u0183\u0185\u0188\u018C\u018D\u0192\u0195\u0199-\u019B\u019E\u01A1\u01A3\u01A5\u01A8\u01AA\u01AB\u01AD\u01B0\u01B4\u01B6\u01B9\u01BA\u01BD-\u01BF\u01C6\u01C9\u01CC\u01CE\u01D0\u01D2\u01D4\u01D6\u01D8\u01DA\u01DC\u01DD\u01DF\u01E1\u01E3\u01E5\u01E7\u01E9\u01EB\u01ED\u01EF\u01F0\u01F3\u01F5\u01F9\u01FB\u01FD\u01FF\u0201\u0203\u0205\u0207\u0209\u020B\u020D\u020F\u0211\u0213\u0215\u0217\u0219\u021B\u021D\u021F\u0221\u0223\u0225\u0227\u0229\u022B\u022D\u022F\u0231\u0233-\u0239\u023C\u023F\u0240\u0242\u0247\u0249\u024B\u024D\u024F-\u0293\u0295-\u02AF\u0371\u0373\u0377\u037B-\u037D\u0390\u03AC-\u03CE\u03D0\u03D1\u03D5-\u03D7\u03D9\u03DB\u03DD\u03DF\u03E1\u03E3\u03E5\u03E7\u03E9\u03EB\u03ED\u03EF-\u03F3\u03F5\u03F8\u03FB\u03FC\u0430-\u045F\u0461\u0463\u0465\u0467\u0469\u046B\u046D\u046F\u0471\u0473\u0475\u0477\u0479\u047B\u047D\u047F\u0481\u048B\u048D\u048F\u0491\u0493\u0495\u0497\u0499\u049B\u049D\u049F\u04A1\u04A3\u04A5\u04A7\u04A9\u04AB\u04AD\u04AF\u04B1\u04B3\u04B5\u04B7\u04B9\u04BB\u04BD\u04BF\u04C2\u04C4\u04C6\u04C8\u04CA\u04CC\u04CE\u04CF\u04D1\u04D3\u04D5\u04D7\u04D9\u04DB\u04DD\u04DF\u04E1\u04E3\u04E5\u04E7\u04E9\u04EB\u04ED\u04EF\u04F1\u04F3\u04F5\u04F7\u04F9\u04FB\u04FD\u04FF\u0501\u0503\u0505\u0507\u0509\u050B\u050D\u050F\u0511\u0513\u0515\u0517\u0519\u051B\u051D\u051F\u0521\u0523\u0525\u0527\u0529\u052B\u052D\u052F\u0560-\u0588\u10D0-\u10FA\u10FD-\u10FF\u13F8-\u13FD\u1C80-\u1C88\u1D00-\u1D2B\u1D6B-\u1D77\u1D79-\u1D9A\u1E01\u1E03\u1E05\u1E07\u1E09\u1E0B\u1E0D\u1E0F\u1E11\u1E13\u1E15\u1E17\u1E19\u1E1B\u1E1D\u1E1F\u1E21\u1E23\u1E25\u1E27\u1E29\u1E2B\u1E2D\u1E2F\u1E31\u1E33\u1E35\u1E37\u1E39\u1E3B\u1E3D\u1E3F\u1E41\u1E43\u1E45\u1E47\u1E49\u1E4B\u1E4D\u1E4F\u1E51\u1E53\u1E55\u1E57\u1E59\u1E5B\u1E5D\u1E5F\u1E61\u1E63\u1E65\u1E67\u1E69\u1E6B\u1E6D\u1E6F\u1E71\u1E73\u1E75\u1E77\u1E79\u1E7B\u1E7D\u1E7F\u1E81\u1E83\u1E85\u1E87\u1E89\u1E8B\u1E8D\u1E8F\u1E91\u1E93\u1E95-\u1E9D\u1E9F\u1EA1\u1EA3\u1EA5\u1EA7\u1EA9\u1EAB\u1EAD\u1EAF\u1EB1\u1EB3\u1EB5\u1EB7\u1EB9\u1EBB\u1EBD\u1EBF\u1EC1\u1EC3\u1EC5\u1EC7\u1EC9\u1ECB\u1ECD\u1ECF\u1ED1\u1ED3\u1ED5\u1ED7\u1ED9\u1EDB\u1EDD\u1EDF\u1EE1\u1EE3\u1EE5\u1EE7\u1EE9\u1EEB\u1EED\u1EEF\u1EF1\u1EF3\u1EF5\u1EF7\u1EF9\u1EFB\u1EFD\u1EFF-\u1F07\u1F10-\u1F15\u1F20-\u1F27\u1F30-\u1F37\u1F40-\u1F45\u1F50-\u1F57\u1F60-\u1F67\u1F70-\u1F7D\u1F80-\u1F87\u1F90-\u1F97\u1FA0-\u1FA7\u1FB0-\u1FB4\u1FB6\u1FB7\u1FBE\u1FC2-\u1FC4\u1FC6\u1FC7\u1FD0-\u1FD3\u1FD6\u1FD7\u1FE0-\u1FE7\u1FF2-\u1FF4\u1FF6\u1FF7\u210A\u210E\u210F\u2113\u212F\u2134\u2139\u213C\u213D\u2146-\u2149\u214E\u2184\u2C30-\u2C5F\u2C61\u2C65\u2C66\u2C68\u2C6A\u2C6C\u2C71\u2C73\u2C74\u2C76-\u2C7B\u2C81\u2C83\u2C85\u2C87\u2C89\u2C8B\u2C8D\u2C8F\u2C91\u2C93\u2C95\u2C97\u2C99\u2C9B\u2C9D\u2C9F\u2CA1\u2CA3\u2CA5\u2CA7\u2CA9\u2CAB\u2CAD\u2CAF\u2CB1\u2CB3\u2CB5\u2CB7\u2CB9\u2CBB\u2CBD\u2CBF\u2CC1\u2CC3\u2CC5\u2CC7\u2CC9\u2CCB\u2CCD\u2CCF\u2CD1\u2CD3\u2CD5\u2CD7\u2CD9\u2CDB\u2CDD\u2CDF\u2CE1\u2CE3\u2CE4\u2CEC\u2CEE\u2CF3\u2D00-\u2D25\u2D27\u2D2D\uA641\uA643\uA645\uA647\uA649\uA64B\uA64D\uA64F\uA651\uA653\uA655\uA657\uA659\uA65B\uA65D\uA65F\uA661\uA663\uA665\uA667\uA669\uA66B\uA66D\uA681\uA683\uA685\uA687\uA689\uA68B\uA68D\uA68F\uA691\uA693\uA695\uA697\uA699\uA69B\uA723\uA725\uA727\uA729\uA72B\uA72D\uA72F-\uA731\uA733\uA735\uA737\uA739\uA73B\uA73D\uA73F\uA741\uA743\uA745\uA747\uA749\uA74B\uA74D\uA74F\uA751\uA753\uA755\uA757\uA759\uA75B\uA75D\uA75F\uA761\uA763\uA765\uA767\uA769\uA76B\uA76D\uA76F\uA771-\uA778\uA77A\uA77C\uA77F\uA781\uA783\uA785\uA787\uA78C\uA78E\uA791\uA793-\uA795\uA797\uA799\uA79B\uA79D\uA79F\uA7A1\uA7A3\uA7A5\uA7A7\uA7A9\uA7AF\uA7B5\uA7B7\uA7B9\uA7BB\uA7BD\uA7BF\uA7C1\uA7C3\uA7C8\uA7CA\uA7D1\uA7D3\uA7D5\uA7D7\uA7D9\uA7F6\uA7FA\uAB30-\uAB5A\uAB60-\uAB68\uAB70-\uABBF\uFB00-\uFB06\uFB13-\uFB17\uFF41-\uFF5A\u{10428}-\u{1044F}\u{104D8}-\u{104FB}\u{10597}-\u{105A1}\u{105A3}-\u{105B1}\u{105B3}-\u{105B9}\u{105BB}\u{105BC}\u{10CC0}-\u{10CF2}\u{118C0}-\u{118DF}\u{16E60}-\u{16E7F}\u{1D41A}-\u{1D433}\u{1D44E}-\u{1D454}\u{1D456}-\u{1D467}\u{1D482}-\u{1D49B}\u{1D4B6}-\u{1D4B9}\u{1D4BB}\u{1D4BD}-\u{1D4C3}\u{1D4C5}-\u{1D4CF}\u{1D4EA}-\u{1D503}\u{1D51E}-\u{1D537}\u{1D552}-\u{1D56B}\u{1D586}-\u{1D59F}\u{1D5BA}-\u{1D5D3}\u{1D5EE}-\u{1D607}\u{1D622}-\u{1D63B}\u{1D656}-\u{1D66F}\u{1D68A}-\u{1D6A5}\u{1D6C2}-\u{1D6DA}\u{1D6DC}-\u{1D6E1}\u{1D6FC}-\u{1D714}\u{1D716}-\u{1D71B}\u{1D736}-\u{1D74E}\u{1D750}-\u{1D755}\u{1D770}-\u{1D788}\u{1D78A}-\u{1D78F}\u{1D7AA}-\u{1D7C2}\u{1D7C4}-\u{1D7C9}\u{1D7CB}\u{1DF00}-\u{1DF09}\u{1DF0B}-\u{1DF1E}\u{1E922}-\u{1E943}])(\x2D)(?=[a-z\xB5\xDF-\xF6\xF8-\xFF\u0101\u0103\u0105\u0107\u0109\u010B\u010D\u010F\u0111\u0113\u0115\u0117\u0119\u011B\u011D\u011F\u0121\u0123\u0125\u0127\u0129\u012B\u012D\u012F\u0131\u0133\u0135\u0137\u0138\u013A\u013C\u013E\u0140\u0142\u0144\u0146\u0148\u0149\u014B\u014D\u014F\u0151\u0153\u0155\u0157\u0159\u015B\u015D\u015F\u0161\u0163\u0165\u0167\u0169\u016B\u016D\u016F\u0171\u0173\u0175\u0177\u017A\u017C\u017E-\u0180\u0183\u0185\u0188\u018C\u018D\u0192\u0195\u0199-\u019B\u019E\u01A1\u01A3\u01A5\u01A8\u01AA\u01AB\u01AD\u01B0\u01B4\u01B6\u01B9\u01BA\u01BD-\u01BF\u01C6\u01C9\u01CC\u01CE\u01D0\u01D2\u01D4\u01D6\u01D8\u01DA\u01DC\u01DD\u01DF\u01E1\u01E3\u01E5\u01E7\u01E9\u01EB\u01ED\u01EF\u01F0\u01F3\u01F5\u01F9\u01FB\u01FD\u01FF\u0201\u0203\u0205\u0207\u0209\u020B\u020D\u020F\u0211\u0213\u0215\u0217\u0219\u021B\u021D\u021F\u0221\u0223\u0225\u0227\u0229\u022B\u022D\u022F\u0231\u0233-\u0239\u023C\u023F\u0240\u0242\u0247\u0249\u024B\u024D\u024F-\u0293\u0295-\u02AF\u0371\u0373\u0377\u037B-\u037D\u0390\u03AC-\u03CE\u03D0\u03D1\u03D5-\u03D7\u03D9\u03DB\u03DD\u03DF\u03E1\u03E3\u03E5\u03E7\u03E9\u03EB\u03ED\u03EF-\u03F3\u03F5\u03F8\u03FB\u03FC\u0430-\u045F\u0461\u0463\u0465\u0467\u0469\u046B\u046D\u046F\u0471\u0473\u0475\u0477\u0479\u047B\u047D\u047F\u0481\u048B\u048D\u048F\u0491\u0493\u0495\u0497\u0499\u049B\u049D\u049F\u04A1\u04A3\u04A5\u04A7\u04A9\u04AB\u04AD\u04AF\u04B1\u04B3\u04B5\u04B7\u04B9\u04BB\u04BD\u04BF\u04C2\u04C4\u04C6\u04C8\u04CA\u04CC\u04CE\u04CF\u04D1\u04D3\u04D5\u04D7\u04D9\u04DB\u04DD\u04DF\u04E1\u04E3\u04E5\u04E7\u04E9\u04EB\u04ED\u04EF\u04F1\u04F3\u04F5\u04F7\u04F9\u04FB\u04FD\u04FF\u0501\u0503\u0505\u0507\u0509\u050B\u050D\u050F\u0511\u0513\u0515\u0517\u0519\u051B\u051D\u051F\u0521\u0523\u0525\u0527\u0529\u052B\u052D\u052F\u0560-\u0588\u10D0-\u10FA\u10FD-\u10FF\u13F8-\u13FD\u1C80-\u1C88\u1D00-\u1D2B\u1D6B-\u1D77\u1D79-\u1D9A\u1E01\u1E03\u1E05\u1E07\u1E09\u1E0B\u1E0D\u1E0F\u1E11\u1E13\u1E15\u1E17\u1E19\u1E1B\u1E1D\u1E1F\u1E21\u1E23\u1E25\u1E27\u1E29\u1E2B\u1E2D\u1E2F\u1E31\u1E33\u1E35\u1E37\u1E39\u1E3B\u1E3D\u1E3F\u1E41\u1E43\u1E45\u1E47\u1E49\u1E4B\u1E4D\u1E4F\u1E51\u1E53\u1E55\u1E57\u1E59\u1E5B\u1E5D\u1E5F\u1E61\u1E63\u1E65\u1E67\u1E69\u1E6B\u1E6D\u1E6F\u1E71\u1E73\u1E75\u1E77\u1E79\u1E7B\u1E7D\u1E7F\u1E81\u1E83\u1E85\u1E87\u1E89\u1E8B\u1E8D\u1E8F\u1E91\u1E93\u1E95-\u1E9D\u1E9F\u1EA1\u1EA3\u1EA5\u1EA7\u1EA9\u1EAB\u1EAD\u1EAF\u1EB1\u1EB3\u1EB5\u1EB7\u1EB9\u1EBB\u1EBD\u1EBF\u1EC1\u1EC3\u1EC5\u1EC7\u1EC9\u1ECB\u1ECD\u1ECF\u1ED1\u1ED3\u1ED5\u1ED7\u1ED9\u1EDB\u1EDD\u1EDF\u1EE1\u1EE3\u1EE5\u1EE7\u1EE9\u1EEB\u1EED\u1EEF\u1EF1\u1EF3\u1EF5\u1EF7\u1EF9\u1EFB\u1EFD\u1EFF-\u1F07\u1F10-\u1F15\u1F20-\u1F27\u1F30-\u1F37\u1F40-\u1F45\u1F50-\u1F57\u1F60-\u1F67\u1F70-\u1F7D\u1F80-\u1F87\u1F90-\u1F97\u1FA0-\u1FA7\u1FB0-\u1FB4\u1FB6\u1FB7\u1FBE\u1FC2-\u1FC4\u1FC6\u1FC7\u1FD0-\u1FD3\u1FD6\u1FD7\u1FE0-\u1FE7\u1FF2-\u1FF4\u1FF6\u1FF7\u210A\u210E\u210F\u2113\u212F\u2134\u2139\u213C\u213D\u2146-\u2149\u214E\u2184\u2C30-\u2C5F\u2C61\u2C65\u2C66\u2C68\u2C6A\u2C6C\u2C71\u2C73\u2C74\u2C76-\u2C7B\u2C81\u2C83\u2C85\u2C87\u2C89\u2C8B\u2C8D\u2C8F\u2C91\u2C93\u2C95\u2C97\u2C99\u2C9B\u2C9D\u2C9F\u2CA1\u2CA3\u2CA5\u2CA7\u2CA9\u2CAB\u2CAD\u2CAF\u2CB1\u2CB3\u2CB5\u2CB7\u2CB9\u2CBB\u2CBD\u2CBF\u2CC1\u2CC3\u2CC5\u2CC7\u2CC9\u2CCB\u2CCD\u2CCF\u2CD1\u2CD3\u2CD5\u2CD7\u2CD9\u2CDB\u2CDD\u2CDF\u2CE1\u2CE3\u2CE4\u2CEC\u2CEE\u2CF3\u2D00-\u2D25\u2D27\u2D2D\uA641\uA643\uA645\uA647\uA649\uA64B\uA64D\uA64F\uA651\uA653\uA655\uA657\uA659\uA65B\uA65D\uA65F\uA661\uA663\uA665\uA667\uA669\uA66B\uA66D\uA681\uA683\uA685\uA687\uA689\uA68B\uA68D\uA68F\uA691\uA693\uA695\uA697\uA699\uA69B\uA723\uA725\uA727\uA729\uA72B\uA72D\uA72F-\uA731\uA733\uA735\uA737\uA739\uA73B\uA73D\uA73F\uA741\uA743\uA745\uA747\uA749\uA74B\uA74D\uA74F\uA751\uA753\uA755\uA757\uA759\uA75B\uA75D\uA75F\uA761\uA763\uA765\uA767\uA769\uA76B\uA76D\uA76F\uA771-\uA778\uA77A\uA77C\uA77F\uA781\uA783\uA785\uA787\uA78C\uA78E\uA791\uA793-\uA795\uA797\uA799\uA79B\uA79D\uA79F\uA7A1\uA7A3\uA7A5\uA7A7\uA7A9\uA7AF\uA7B5\uA7B7\uA7B9\uA7BB\uA7BD\uA7BF\uA7C1\uA7C3\uA7C8\uA7CA\uA7D1\uA7D3\uA7D5\uA7D7\uA7D9\uA7F6\uA7FA\uAB30-\uAB5A\uAB60-\uAB68\uAB70-\uABBF\uFB00-\uFB06\uFB13-\uFB17\uFF41-\uFF5A\u{10428}-\u{1044F}\u{104D8}-\u{104FB}\u{10597}-\u{105A1}\u{105A3}-\u{105B1}\u{105B3}-\u{105B9}\u{105BB}\u{105BC}\u{10CC0}-\u{10CF2}\u{118C0}-\u{118DF}\u{16E60}-\u{16E7F}\u{1D41A}-\u{1D433}\u{1D44E}-\u{1D454}\u{1D456}-\u{1D467}\u{1D482}-\u{1D49B}\u{1D4B6}-\u{1D4B9}\u{1D4BB}\u{1D4BD}-\u{1D4C3}\u{1D4C5}-\u{1D4CF}\u{1D4EA}-\u{1D503}\u{1D51E}-\u{1D537}\u{1D552}-\u{1D56B}\u{1D586}-\u{1D59F}\u{1D5BA}-\u{1D5D3}\u{1D5EE}-\u{1D607}\u{1D622}-\u{1D63B}\u{1D656}-\u{1D66F}\u{1D68A}-\u{1D6A5}\u{1D6C2}-\u{1D6DA}\u{1D6DC}-\u{1D6E1}\u{1D6FC}-\u{1D714}\u{1D716}-\u{1D71B}\u{1D736}-\u{1D74E}\u{1D750}-\u{1D755}\u{1D770}-\u{1D788}\u{1D78A}-\u{1D78F}\u{1D7AA}-\u{1D7C2}\u{1D7C4}-\u{1D7C9}\u{1D7CB}\u{1DF00}-\u{1DF09}\u{1DF0B}-\u{1DF1E}\u{1E922}-\u{1E943}])/gu,
                                       a = p(e);
-                                  return g(a, /( )/, u).forEach((e) => (t = t.concat(g(e, n, F.left)))), t;
+                                  return h(a, /( )/, u).forEach((e) => (t = t.concat(h(e, n, F.left)))), t;
                               })(e, u);
                     };
                 var f = t(6483),
@@ -2592,16 +2590,16 @@
                             D = A.golds,
                             p = A.crystals,
                             C = A.freexp,
-                            h = A.onAcceptClicked,
-                            g = A.onCancelClicked,
+                            g = A.onAcceptClicked,
+                            h = A.onCancelClicked,
                             B = A.onExit,
                             b = A.isWalletAvailable,
                             v = (0, n.useCallback)(() => {
-                                h();
-                            }, [h]),
-                            f = (0, n.useCallback)(() => {
                                 g();
                             }, [g]),
+                            f = (0, n.useCallback)(() => {
+                                h();
+                            }, [h]),
                             x = (0, n.useCallback)(() => {
                                 B();
                             }, [B]),
@@ -2716,12 +2714,12 @@
                 !(function (e) {
                     (e.Payment = 'payment'), (e.Setup = 'setup'), (e.Modification = 'modification');
                 })(Ce || (Ce = {}));
-                const he = 'Alert_base_42',
-                    ge = 'Alert_highlight_f2',
+                const ge = 'Alert_base_42',
+                    he = 'Alert_highlight_f2',
                     Be = 'Alert_highlight__warning_13',
                     be = ({ warning: e }) => {
-                        const u = y()(ge, e && Be);
-                        return a().createElement('div', { className: he }, a().createElement('div', { className: u }));
+                        const u = y()(he, e && Be);
+                        return a().createElement('div', { className: ge }, a().createElement('div', { className: u }));
                     },
                     ve = {
                         base: 'ProgressBar_base_45',
@@ -2864,7 +2862,7 @@
                                     }),
                                     [c, u, e],
                                 ),
-                                h = (0, n.useMemo)(
+                                g = (0, n.useMemo)(
                                     () => ({ width: `${Math.abs(i - s)}%`, left: `${c ? s : i}%` }),
                                     [i, c, s],
                                 );
@@ -2872,7 +2870,7 @@
                                 ? null
                                 : a().createElement(
                                       'div',
-                                      { className: Re, style: h },
+                                      { className: Re, style: g },
                                       a().createElement(
                                           'div',
                                           { style: F ? p : C, className: Oe },
@@ -2957,7 +2955,7 @@
                                     },
                                     [l],
                                 ),
-                                h = (0, n.useCallback)(
+                                g = (0, n.useCallback)(
                                     (e, u) =>
                                         Pe(() => {
                                             C(e);
@@ -2967,14 +2965,14 @@
                             (0, n.useEffect)(() => {
                                 if (!t)
                                     return F
-                                        ? h(Me.Grow, u)
+                                        ? g(Me.Grow, u)
                                         : D
-                                          ? h(Me.Shrink, e)
+                                          ? g(Me.Shrink, e)
                                           : p
-                                            ? h(Me.End, e)
+                                            ? g(Me.End, e)
                                             : void (A && o && o());
-                            }, [h, t, A, D, F, p, o, u, e]);
-                            const g = (0, n.useMemo)(() => Object.assign({ width: '100%' }, qe(e), Ve(_)), [_, e]),
+                            }, [g, t, A, D, F, p, o, u, e]);
+                            const h = (0, n.useMemo)(() => Object.assign({ width: '100%' }, qe(e), Ve(_)), [_, e]),
                                 B = (0, n.useMemo)(() => Object.assign({ width: '0%' }, qe(e), Ve(_)), [_, e]),
                                 b = (0, n.useMemo)(() => Object.assign({ width: '0%' }, ze(_, i), qe(e)), [i, _, e]),
                                 v = (0, n.useMemo)(
@@ -2988,7 +2986,7 @@
                                 { style: F ? b : v, className: f },
                                 a().createElement(
                                     'div',
-                                    { style: p ? B : g, className: $e },
+                                    { style: p ? B : h, className: $e },
                                     a().createElement(Se, { size: r }),
                                 ),
                             );
@@ -3331,7 +3329,7 @@
                     },
                     pu = R.strings.tank_setup.dialogs.goldExchange.notRequired.action,
                     Cu = (e) => (e === Ce.Modification ? pu.modification() : pu.buy()),
-                    hu = ({
+                    gu = ({
                         title: e,
                         name: u,
                         lacksMoney: t,
@@ -3366,8 +3364,8 @@
                                 }),
                                 [_, u, t.name, t.value],
                             ),
-                            h = D(c.notRequired.title(), { action: Cu(s) }),
-                            g = (0, n.useMemo)(
+                            g = D(c.notRequired.title(), { action: Cu(s) }),
+                            h = (0, n.useMemo)(
                                 () => ({
                                     gold: a().createElement(pe.F, {
                                         type: G.V2.gold,
@@ -3382,24 +3380,24 @@
                                     case Ee:
                                         return a().createElement(Fu, { fromItem: d, toItem: E, exchangeRate: F });
                                     case 'notPossible':
-                                        return a().createElement(De, { text: c.notPossible.status(), binding: g });
+                                        return a().createElement(De, { text: c.notPossible.status(), binding: h });
                                     case Ae:
                                         return c.notRequired.status();
                                 }
-                            }, [i, d, E, F, c, g]),
+                            }, [i, d, E, F, c, h]),
                             b = y()(Du.status, Du[`status__${i}`]);
                         return a().createElement(
                             'div',
                             { className: Du.base },
                             l === Pu.Repair && a().createElement(Au, null),
                             r && a().createElement('div', { className: Du.items }, r),
-                            a().createElement(De, { text: i === Ae ? h : e, binding: C, classMix: Du.title }),
+                            a().createElement(De, { text: i === Ae ? g : e, binding: C, classMix: Du.title }),
                             o && a().createElement('div', { className: Du.description }, o),
                             a().createElement('div', { className: b }, B),
                         );
                     };
                 t(3368);
-                let gu;
+                let hu;
                 !(function (e) {
                     (e[(e.ZERO = 48)] = 'ZERO'),
                         (e[(e.ONE = 49)] = 'ONE'),
@@ -3421,7 +3419,7 @@
                         (e[(e.NUMPAD_7 = 103)] = 'NUMPAD_7'),
                         (e[(e.NUMPAD_8 = 104)] = 'NUMPAD_8'),
                         (e[(e.NUMPAD_9 = 105)] = 'NUMPAD_9');
-                })(gu || (gu = {}));
+                })(hu || (hu = {}));
                 const Bu = {
                     base: 'NumericStepper_base_35',
                     base__small: 'NumericStepper_base__small_11',
@@ -3703,7 +3701,7 @@
                                     }
                             }),
                             (this.allowOnlyNumbers = (e) => {
-                                e.which in gu || e.preventDefault();
+                                e.which in hu || e.preventDefault();
                             }),
                             (this.increment = () => {
                                 const e = Math.min(
@@ -4011,15 +4009,15 @@
                             D = E.exchangeState,
                             p = (0, A.m)('model.exchangePanel'),
                             C = p.fromItem,
-                            h = p.toItem,
-                            g = D === Ee;
+                            g = p.toItem,
+                            h = D === Ee;
                         return (
                             (0, n.useEffect)(() => {
                                 d(C.value);
                             }, [C.value]),
                             a().createElement(de, {
                                 parentId: 'exchange-dialog',
-                                content: a().createElement(hu, {
+                                content: a().createElement(gu, {
                                     title: e,
                                     name: u,
                                     lacksMoney: F,
@@ -4030,10 +4028,10 @@
                                     exchangeType: o,
                                 }),
                                 footer:
-                                    g &&
+                                    h &&
                                     a().createElement(Tu, { goldToChange: m, setGoldToChange: d, exchangeType: o }),
                                 showPayInfo: !0,
-                                buttonAccept: { size: s.q.medium, type: s.L.main, disabled: !g || F.value > h.value },
+                                buttonAccept: { size: s.q.medium, type: s.L.main, disabled: !h || F.value > g.value },
                                 buttonCancel: { size: s.q.medium, type: s.L.secondary },
                                 buttonAcceptText:
                                     o === Pu.Upgrade ? Mu.exchangeToUpgrade.confirm() : Mu.goldExchange.confirm(),
@@ -4365,14 +4363,14 @@
                             F = _.lacksItem,
                             p = _.demountPairModification,
                             C = (0, A.m)('model.dealPanel'),
-                            h = C.price,
-                            g = C.isDisabled,
+                            g = C.price,
+                            h = C.isDisabled,
                             B = 'exchangePanel' === i,
                             b = 'saveSlotsContent' === i,
-                            v = Boolean(h.length),
+                            v = Boolean(g.length),
                             f = ((e, u) => (e === o ? Ce.Modification : u ? Ce.Payment : Ce.Setup))(d, v);
                         let y, w, x, S, k;
-                        const N = (0, n.useMemo)(() => ({ size: s.q.medium, disabled: g }), [g]),
+                        const N = (0, n.useMemo)(() => ({ size: s.q.medium, disabled: h }), [h]),
                             T = (0, n.useMemo)(() => ({ size: s.q.medium, type: s.L.secondary }), []);
                         if (b)
                             (y = e.title.changeSlots.$dyn(d)),

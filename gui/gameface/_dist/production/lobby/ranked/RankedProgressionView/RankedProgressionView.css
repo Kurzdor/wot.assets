@@ -745,19 +745,19 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: 102rem;
+    min-height: 86rem;
 }
 
 .mediaMedium .DivisionWidget_base_63 {
-    min-height: 124rem;
+    min-height: 108rem;
 }
 
 .mediaLarge .DivisionWidget_base_63 {
-    min-height: 152rem;
+    min-height: 136rem;
 }
 
 .mediaExtraLarge .DivisionWidget_base_63 {
-    min-height: 181rem;
+    min-height: 165rem;
     padding-top: 60rem;
 }
 
@@ -812,10 +812,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     margin-top: 8rem;
     margin-bottom: 8rem;
     line-height: 17rem;
-}
-
-.DivisionWidget_subtitle_a0 {
-    line-height: 14rem;
 }
 
 .DivisionWidget_icon_75 {
@@ -924,12 +920,107 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background-size: 115%;
 }
 
+.TakeRewardButton_buttonHolder_f2 {
+    display: flex;
+    align-self: center;
+}
+
+.TakeRewardButton_buttonInner_e6 {
+    box-shadow:
+        0 0 12rem 1rem rgba(255, 0, 0, 0.25),
+        inset 0 0 12rem 0 rgba(255, 0, 0, 0.3),
+        0 2rem 4rem rgba(107, 52, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+.TakeRewardButton_buttonInner__disabled_96 {
+    box-shadow: none;
+}
+
+.TakeRewardButton_button_09 {
+    padding: 0 10rem;
+    border: 1rem solid rgba(255, 228, 157, 0.7);
+    border-radius: 2rem;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.2);
+    transition:
+        background-color 0.16s ease-in-out,
+        border-color 0.16s ease-in-out;
+}
+
+.TakeRewardButton_button_09:hover {
+    border-color: rgba(255, 228, 157, 1);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.TakeRewardButton_button__disabled_42,
+.TakeRewardButton_button__disabled_42:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+    background-color: transparent;
+}
+
+.TakeRewardButton_buttonBlink_7e {
+    display: flex;
+    width: 72rem;
+    height: 70rem;
+    margin-top: -34rem;
+    background: url('R.images.gui.maps.icons.battlePass.progression.refl') no-repeat center / contain;
+    opacity: 0.5;
+    mix-blend-mode: additive;
+    position: absolute;
+    top: 50%;
+    animation: TakeRewardButton_move_30 3s 2s ease-out infinite;
+}
+
+.TakeRewardButton_buttonText_57 {
+    color: #e9e2bf;
+    font-weight: 400;
+    text-shadow: none;
+    white-space: nowrap;
+}
+
+@keyframes TakeRewardButton_move_30 {
+    0%,
+    40% {
+        opacity: 0.3;
+        transform: translateX(-200%);
+    }
+
+    75% {
+        opacity: 0.7;
+        transform: translateX(300%);
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: translateX(300%);
+    }
+}
+
 .FinalRewardState_base_b1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.FinalRewardState_holder_55 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.FinalRewardState_holder_55 > div {
+    height: 20rem;
+    line-height: 100%;
+}
+
+.FinalRewardState_buttonHolder_c2 {
+    padding-left: 8rem;
 }
 
 .FinalRewardState_header_73 {
@@ -971,10 +1062,57 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background-size: 100%;
 }
 
+.BonusBattles_base_27 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+}
+
+.BonusBattles_light_f3 {
+    width: 403rem;
+    height: 92rem;
+    background: url('R.images.gui.maps.icons.mode_selector.common.bonus_light') no-repeat 50% / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.BonusBattles_divider_0b {
+    width: 74rem;
+    height: 1rem;
+    background: url('R.images.gui.maps.icons.mode_selector.common.bonus_decoration') no-repeat 50% / contain;
+}
+
+.BonusBattles_divider__right_00 {
+    transform: scaleX(-1);
+}
+
+.BonusBattles_icon_c1 {
+    width: 16rem;
+    height: 16rem;
+    background: url('R.images.gui.maps.icons.rankedBattles.bonusIcons.c_16x16') no-repeat 50% / contain;
+}
+
+.BonusBattles_amount_d2 {
+    color: #fefeec;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 1.3;
+    min-width: 8rem;
+    margin: -2rem 0 0 2rem;
+}
+
 .Header_base_e7 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    min-height: 155rem;
+}
+.mediaLarge .Header_base_e7 {
+    min-height: 204rem;
 }
 
 .Header_heading_1e {
@@ -994,6 +1132,14 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     line-height: 1.2;
     font-weight: 400;
     text-align: center;
+}
+
+.Header_bonus_60 {
+    padding-top: 8rem;
+}
+
+.mediaLarge .Header_bonus_60 {
+    padding-top: 24rem;
 }
 
 .RankedProgressionViewContent_base_b0 {
@@ -1286,32 +1432,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     flex: 1;
 }
 
-.BirthdayBalloon_balloonWrapper__hover_a2 {
-    transform: translate(-1rem, -1rem);
-    transition: transform 0.15s linear;
-}
-.BirthdayBalloon_balloon_93 {
-    transform: translateX(-45rem) translateY(-40rem);
-    width: 96rem;
-    height: 96rem;
-    background: url('R.images.gui.maps.icons.rankedBattles.birthday.birthday_balloon') no-repeat center / contain;
-    cursor: pointer;
-}
-.mediaMedium .BirthdayBalloon_balloon_93 {
-    transform: translateX(-75rem) translateY(-70rem);
-    width: 156rem;
-    height: 156rem;
-}
-.BirthdayBalloon_balloon__unburnable_ea {
-    transform: translateX(-48rem) translateY(-45rem);
-}
-.mediaMedium .BirthdayBalloon_balloon__unburnable_ea {
-    transform: translateX(-80rem) translateY(-70rem);
-}
-.BirthdayBalloon_balloon__hover_3a {
-    background: url('R.images.gui.maps.icons.rankedBattles.birthday.birthday_balloon_hover') no-repeat center / contain;
-}
-
 .Rank_base_7c {
     width: 80rem;
     height: 100rem;
@@ -1467,9 +1587,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 
 .RankBlock_steps_7a {
     left: 0;
-}
-
-.RankBlock_steps__other_ec {
     transform: translateX(-50%);
 }
 
@@ -1536,7 +1653,7 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     filter: none;
 }
 
-.RankBlock_rewardsTaken_a1 {
+.RankBlock_underBlock_ef {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1545,15 +1662,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     visibility: hidden;
 }
 
-.mediaSmallHeight .RankBlock_rewardsTaken_a1 {
+.mediaSmallHeight .RankBlock_underBlock_ef {
     padding-top: 10rem;
 }
 
-.mediaMedium .RankBlock_rewardsTaken_a1 {
+.mediaMedium .RankBlock_underBlock_ef {
     padding-top: 15rem;
 }
 
-.RankBlock_rewardsTaken__visible_16 {
+.RankBlock_underBlock__visible_51 {
     visibility: visible;
 }
 
