@@ -201,7 +201,7 @@
                         children: () => r,
                         displayStatus: () => a.W,
                         displayStatusIs: () => O,
-                        enableFullScreenModeSupported: () => R,
+                        enableFullScreenModeSupported: () => S,
                         events: () => o.U,
                         extraSize: () => P,
                         forceTriggerMouseMove: () => v,
@@ -213,7 +213,7 @@
                         getScale: () => m,
                         getSize: () => B,
                         getViewGlobalPosition: () => C,
-                        initExternalPaddings: () => S,
+                        initExternalPaddings: () => R,
                         isEventHandled: () => h,
                         isFocused: () => b,
                         pxToRem: () => _,
@@ -313,10 +313,10 @@
                         }),
                         engine.whenReady,
                     ]);
-                function R() {
+                function S() {
                     viewEnv.setFullscreenModeSupported(!0);
                 }
-                function S(u) {
+                function R(u) {
                     function e() {
                         const e = viewEnv.getExternalPaddingsRem(),
                             t = e.top,
@@ -831,6 +831,11 @@
                     const B = r().useRef(null);
                     var c;
                     return (
+                        (0, n.useLayoutEffect)(() => {
+                            const u = E.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (c = () => {
                             const u = B.current;
                             if (!u)
@@ -840,7 +845,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
-                                E.O.view.resize(e, t);
+                                (E.O.view.resize(e, t),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const n = window.getComputedStyle(u);
                                 E.O.view.setSidePaddingsRem({
                                     left: parseInt(n.getPropertyValue('padding-left'), 10),
@@ -1845,7 +1852,7 @@
                             ),
                         );
                     },
-                    Ru = {
+                    Su = {
                         blackReal: 'FormatTextWithColorTags_blackReal_ae104',
                         whiteReal: 'FormatTextWithColorTags_whiteReal_c12a8',
                         white: 'FormatTextWithColorTags_white_c5665',
@@ -1871,13 +1878,13 @@
                         prom: 'FormatTextWithColorTags_prom_aa30c',
                         parNoWidth: 'FormatTextWithColorTags_parNoWidth_bf7ac',
                     },
-                    Su = /(?:%\(|{)\w*(?:_[Oo]pen|Start)(?:\)s|})?(.*?)(?:%\(|{)\w*(?:_[Cc]lose|End)(?:\)s|})?/g,
+                    Ru = /(?:%\(|{)\w*(?:_[Oo]pen|Start)(?:\)s|})?(.*?)(?:%\(|{)\w*(?:_[Cc]lose|End)(?:\)s|})?/g,
                     Mu = /(?<=(?:%\(|{))(.*?)(?=(?:_[Oo]pen|Start))/,
                     Nu = /(?<=(?:_[Oo]pen|Start)(?:\)s?|}))(.*?)(?=(?:%\(|{))/,
                     Iu = (0, n.memo)(({ text: u, binding: e, classMix: t }) => {
                         const a = (0, n.useCallback)((u) => ({ color: `#${u}` }), []),
                             o = (0, n.useMemo)(() => e || {}, [e]);
-                        let i = Su.exec(u),
+                        let i = Ru.exec(u),
                             s = u,
                             E = 0;
                         for (; i;) {
@@ -1889,10 +1896,10 @@
                                 const u = n[0],
                                     i = u + E++ + u;
                                 ((s = s.replace(t, `%(${i})`)),
-                                    (o[i] = Ru[u]
+                                    (o[i] = Su[u]
                                         ? r().createElement(
                                               'span',
-                                              { className: Ru[u] },
+                                              { className: Su[u] },
                                               r().createElement(ku, { text: F, binding: e }),
                                           )
                                         : r().createElement(
@@ -1901,7 +1908,7 @@
                                               r().createElement(ku, { text: F, binding: e }),
                                           )));
                             }
-                            i = Su.exec(u);
+                            i = Ru.exec(u);
                         }
                         return r().createElement(ku, { text: s, classMix: t, binding: o });
                     }),

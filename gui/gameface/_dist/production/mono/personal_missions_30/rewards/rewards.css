@@ -348,7 +348,8 @@
 .mediaLarge .RegularMainReward_info_59fd3db8 {
     font-size: 20rem;
 }
-.RegularMainReward_base__attachment_54e4f800 .RegularMainReward_info_59fd3db8 {
+.RegularMainReward_base__attachment_54e4f800 .RegularMainReward_info_59fd3db8,
+.RegularMainReward_base__style_3d_54e4f800 .RegularMainReward_info_59fd3db8 {
     visibility: hidden;
 }
 .showMainRewardsLabels .RegularMainReward_info_59fd3db8 {

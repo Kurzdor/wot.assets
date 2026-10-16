@@ -1457,6 +1457,7 @@
                             (e.LootBox = 'lootBox'),
                             (e.BrCoin = 'brcoin'),
                             (e.Attachment = 'attachment'),
+                            (e.Pet = 'pet'),
                             e
                         );
                     })({}),

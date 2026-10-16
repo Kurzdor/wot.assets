@@ -1,161 +1,196 @@
-import { D as e, r as o, j as t, f as a } from './vendor.js';
+import { r as e } from './rolldown-runtime.js';
 import {
-    i as r,
-    c as n,
-    cp as s,
-    dB as l,
-    l as m,
-    m as c,
-    o as d,
-    U as i,
-    u,
-    r as b,
-    v as p,
-    a6 as _,
-    q as I,
+    Ba as s,
+    C as t,
+    Ii as a,
+    Ka as o,
+    Pi as n,
+    Ra as r,
+    Ua as i,
+    Va as c,
+    cr as l,
+    eo as d,
+    gr as m,
+    hr as p,
+    i as g,
+    lo as u,
+    mi as _,
+    n as h,
+    no as x,
+    qa as b,
+    r as f,
+    t as v,
+    xi as T,
+    xr as N,
 } from './lib.js';
-import { s as y, a as P, i as g } from '../views/footer/footer.html/bundle.js';
-import './divider.js';
-import './preload-helper.js';
-/* empty css      */ const [v, h] = r('PlatoonProvider')(
-        ({ observableModel: e }) => {
-            const o = {
-                    ...e.primitives([
-                        'state',
-                        'useWelcomeLayout',
-                        'commanderIndex',
-                        'playerIndex',
-                        'tooltipHeader',
-                        'tooltipBody',
-                        'tooltipParams',
-                    ]),
-                    members: e.arrayClone('members'),
-                },
-                t = n.structural(() => {
-                    try {
-                        const e = JSON.parse(o.tooltipParams.get()),
-                            t = o.tooltipHeader.get(),
-                            a = o.tooltipBody.get();
-                        return { header: (t && s(l(t), e)) ?? void 0, body: (a && s(l(a), e)) ?? void 0 };
-                    } catch (e) {
-                        return {};
-                    }
-                });
-            return { ...o, computes: { tooltipArgs: t } };
-        },
-        ({ externalModel: e }) => ({ onInPlatoonAction: e.createCallbackNoArgs('onInPlatoonAction') }),
-    ),
-    f = 'IN_PLATOON',
-    x = 'DISABLED',
-    j = 'member',
-    N = 'player',
-    A = 'commander',
-    S = 'commanderPlayer',
-    k = 'empty',
-    C = 'search',
-    B = 'notReady',
-    E = 'ready',
-    W = 'inBattle';
-const w = (e, o, t) => (e ? `${t}_${o}` : o === C ? 'search' : 'empty_member'),
-    M = {
-        base: 'Platoon_9c663a1',
-        button: 'Platoon_button_a989ea7f',
-        button__disabled: 'Platoon_button__disabled_e1f331be',
-        button__search: 'Platoon_button__search_a7562308',
-        rotation: 'Platoon_rotation_78daa44d',
-        memberIconWrapper: 'Platoon_memberIconWrapper_3b1536c',
-        memberIcon: 'Platoon_memberIcon_7e29c5ae',
-        memberIcon__searchState: 'Platoon_memberIcon__searchState_78daa44d',
-        memberIcon__readyState: 'Platoon_memberIcon__readyState_407793d7',
+var w = (function (e) {
+    return ((e.News = 'news'), (e.ShopPromo = 'shopPromo'), (e.None = 'none'), e);
+})({});
+(w.News, w.News, w.ShopPromo, Math.floor(Date.now() / 1e3));
+var y = {
+        getter: m({
+            type: w.News,
+            description:
+                'Watch very interesting video, with very long, very very interesting and meaningful description!',
+            isVideo: !0,
+            image: 'https://pie-webbrg-cdn-stg.wgcdn.co/dcont/fb/image/whats_new_475x230_2.png',
+        }),
+        controls: () => a(n('onClick', 'onClose')),
     },
-    D = e(function ({ popoverTargetID: e, classNames: r }) {
-        const n = h(),
-            s = m(),
-            l = c({ value: y.small }, { medium: { value: y.medium } }),
-            v = d(l.value, i),
-            D = n.model.state.get(),
-            L = n.model.useWelcomeLayout.get(),
-            R = n.model.commanderIndex.get(),
-            T = n.model.playerIndex.get(),
-            $ = u(n.model.computes.tooltipArgs()),
-            H = o.useMemo(
-                () => ({ resId: e ?? b.resolve('aliases').read((e) => e.lobby_footer.default.Platoon('resId')) }),
-                [e],
+    [C, j] = p('TeaserModel')(
+        ({ observableModel: e }) =>
+            e.primitives(['type', 'postCounter', 'description', 'text', 'isVideo', 'finishTime', 'image']),
+        ({ externalModel: e }) => ({
+            onClick: e.createCallbackNoArgs('onClick'),
+            onClose: e.createCallbackNoArgs('onClose'),
+        }),
+    ),
+    k = e(x(), 1),
+    W = {
+        imageWrapper: 'Teaser_imageWrapper_901f1116',
+        vignette: 'Teaser_vignette_32737740',
+        base: 'Teaser_a2a96284',
+        base__video: 'Teaser_base__video_3d4fdb7e',
+        contentWrapper: 'Teaser_contentWrapper_b44f0d64',
+        image: 'Teaser_image_41628c29',
+        base__newsType: 'Teaser_base__newsType_3d4fdb7e',
+        base__shopPromoType: 'Teaser_base__shopPromoType_3d4fdb7e',
+        title: 'Teaser_title_f8c387e3',
+        counter: 'Teaser_counter_6afc9955',
+        closeButton: 'Teaser_closeButton_c46a88df',
+        text: 'Teaser_text_8e0a588c',
+        bottomContent: 'Teaser_bottomContent_eb7878d6',
+        description: 'Teaser_description_f7e0ddfc',
+        extendedText: 'Teaser_extendedText_286b5b73',
+        countdown: 'Teaser_countdown_40e45fc1',
+    },
+    M = e(_(), 1),
+    B = 'Teaser:Base',
+    P = l(function ({ className: e, classNames: a }) {
+        const { model: n, controls: l } = j(),
+            m = n.type.get() || w.News,
+            p = n.postCounter.get(),
+            _ = n.text.get(),
+            x = n.description.get(),
+            y = n.finishTime.get(),
+            C = n.isVideo.get(),
+            P = n.image.get(),
+            E = N(),
+            S = u.resolve('strings');
+        const V = (0, k.useCallback)(
+                (e) => {
+                    (e.stopPropagation(), l.onClose());
+                },
+                [l],
             ),
-            O = p('squadTypeSelectPopover', void 0, H);
-        return t.jsx('div', {
-            ...$,
-            onClick: function (e) {
-                ($.onClick(),
-                    D !== x &&
-                        (s.play('click', { target: 'platoon', original: e }),
-                        D !== f && L ? O.onClick(e) : n.controls.onInPlatoonAction()));
-            },
-            onMouseEnter: function (e) {
-                ($.onMouseEnter(e), D !== x && s.play('mouse-enter', { target: 'platoon', original: e }));
-            },
-            className: a(M.base, r?.base),
-            'data-test-id': 'platoonWidget',
-            children: (() => {
-                switch (D) {
-                    case 'CREATE':
-                        return t.jsx(I, { ...P(v, 'creation'), className: a(M.button, r?.button) });
-                    case x:
-                        return t.jsx(I, {
-                            ...P(v, 'creation_disabled'),
-                            className: a(M.button, M.button__disabled, r?.button),
-                        });
-                    case 'SEARCHING':
-                        return t.jsx(I, { ...P(v, 'search'), className: a(M.button, M.button__search, r?.button) });
-                    case f:
-                        return _(n.model.members.get(), (e, o) => {
-                            const n = ((l = o === R), (s = o === T) && l ? S : s ? N : l ? A : j);
-                            var s, l;
-                            const m = (function (e) {
-                                    switch (e) {
-                                        case 'empty':
-                                            return k;
-                                        case 'searching':
-                                            return C;
-                                        case 'notReady':
-                                            return B;
-                                        case 'ready':
-                                            return E;
-                                        case 'inBattle':
-                                            return W;
-                                        default:
-                                            return (
-                                                console.error('Platoon widget: met unexpected member state ', e),
-                                                k
-                                            );
-                                    }
-                                })(e.state),
-                                c = g(`${n}_${m}`),
-                                d = c && m === E;
-                            return t.jsx(
-                                'div',
-                                {
-                                    className: M.memberIconWrapper,
-                                    children: t.jsx(I, {
-                                        ...P(v, w(c, m, n), d),
-                                        className: a(
-                                            M.memberIcon,
-                                            m === C && M.memberIcon__searchState,
-                                            d && M.memberIcon__readyState,
-                                            r?.memberIcon,
-                                        ),
-                                    }),
-                                },
-                                o,
-                            );
-                        });
-                    default:
-                        return void console.error('Platoon widget: met unexpected platoon state ', D);
-                }
-            })(),
-        });
+            [$, A] = (0, k.useState)(null);
+        (0, k.useLayoutEffect)(() => {
+            let e;
+            const t = r(b(y || 0), o());
+            if (!y || t <= 0) return void A(null);
+            const a = Math.floor(c.seconds(t)),
+                n = i(b(y), s(1)) ? f.Extended : f.Long;
+            if ((A({ duration: a, style: n }), n === f.Extended)) {
+                const t = r(b(a + 1), s(1));
+                e = setTimeout(() => A((e) => ({ ...e, style: f.Long })), Math.min(t, T));
+            }
+            return () => {
+                e && (clearTimeout(e), (e = void 0));
+            };
+        }, [y]);
+        const [I, L] = (0, k.useState)(null),
+            [q, z] = (0, k.useState)(!1);
+        return (
+            (0, k.useEffect)(() => {
+                const e = new Image();
+                return (
+                    (e.src = P),
+                    (e.onload = () => {
+                        (L({ path: P, height: e.height, width: e.width }), z(!0));
+                    }),
+                    (e.onerror = () => {
+                        z(!0);
+                    }),
+                    () => {
+                        ((e.src = ''), L(null));
+                    }
+                );
+            }, [P]),
+            q
+                ? (0, M.jsxs)('div', {
+                      className: d(W.base, W[`base__${m}Type`], C && W.base__video, e),
+                      onClick: function (e) {
+                          (E.play('click', { target: B, original: e }), l.onClick());
+                      },
+                      onMouseEnter: function (e) {
+                          E.play('mouse-enter', { target: B, original: e });
+                      },
+                      children: [
+                          (0, M.jsx)('div', {
+                              className: d(W.contentWrapper, a?.contentWrapper),
+                              children: (0, M.jsx)('div', {
+                                  className: d(W.imageWrapper, a?.imageWrapper),
+                                  children:
+                                      I &&
+                                      (0, M.jsx)('div', {
+                                          className: d(W.image, a?.image),
+                                          style: {
+                                              backgroundImage: `url(${I.path})`,
+                                              height: `${I.height}rem`,
+                                              width: `${I.width}rem`,
+                                          },
+                                      }),
+                              }),
+                          }),
+                          (0, M.jsx)('div', { className: d(W.vignette, a?.vignette) }),
+                          (0, M.jsxs)('div', {
+                              className: d(W.contentWrapper, a?.contentWrapper),
+                              children: [
+                                  (0, M.jsxs)('div', {
+                                      className: d(W.title, a?.title),
+                                      children: [
+                                          S.readOrEmpty('menu.promo.teaser.title'),
+                                          Boolean(p) &&
+                                              p > 0 &&
+                                              (0, M.jsx)(g, {
+                                                  className: d(W.counter, a?.counter),
+                                                  value: p,
+                                                  size: 'small',
+                                              }),
+                                      ],
+                                  }),
+                                  (0, M.jsx)(v, {
+                                      type: 'close',
+                                      side: 'right',
+                                      classNames: { base: d(W.closeButton, a?.closeButton) },
+                                      onClick: V,
+                                      caption: '',
+                                  }),
+                                  _ && (0, M.jsx)('div', { className: d(W.text, a?.text), children: _ }),
+                                  (x || $) &&
+                                      (0, M.jsxs)('div', {
+                                          className: W.bottomContent,
+                                          children: [
+                                              x &&
+                                                  (0, M.jsx)('div', {
+                                                      className: d(W.description, a?.description),
+                                                      children: (0, M.jsx)(t, {
+                                                          classMix: W.extendedText,
+                                                          text: x,
+                                                          isTruncationAvailable: !0,
+                                                      }),
+                                                  }),
+                                              $ && (0, M.jsx)(h, { className: d(W.countdown, a?.countdown), ...$ }),
+                                          ],
+                                      }),
+                              ],
+                          }),
+                      ],
+                  })
+                : null
+        );
     });
-function L({ options: e, mocks: o, mode: a, ...r }) {
-    return t.jsx(v, { mode: a, mocks: o, options: e, children: t.jsx(D, { ...r }) });
+function E({ className: e, classNames: s, ...t }) {
+    return (0, M.jsx)(C, { ...t, mode: 'real', mocks: y, children: (0, M.jsx)(P, { className: e, classNames: s }) });
 }
-export { L as default };
+export { E as default };

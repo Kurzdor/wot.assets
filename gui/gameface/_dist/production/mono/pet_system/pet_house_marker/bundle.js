@@ -1,0 +1,71 @@
+import { r as e } from '../chunks/rolldown-runtime.js';
+import {
+    J as s,
+    Mt as a,
+    R as t,
+    U as r,
+    Z as p,
+    _ as i,
+    jt as l,
+    kt as n,
+    lt as m,
+    wt as o,
+    xt as d,
+    y as c,
+} from '../chunks/lib.js';
+import '../chunks/global.js';
+import { t as h } from '../chunks/vendor.js';
+var u = e(l(), 1),
+    [_, f] = p()(({ observableModel: e }) => ({ ...e.primitives(['petNameID', 'hasUpdate', 'isVisible']) }), d),
+    b = 'App_4f546f10',
+    j = 'App_base__hidden_4f2b7a98',
+    x = 'App_inner_f0b59ee5',
+    N = 'App_name_a1466fa8',
+    v = 'App_bubble_14dbfc23',
+    k = m(),
+    g = a.resolve('strings'),
+    y = h(function () {
+        const e = u.useRef(null),
+            { model: s } = f(),
+            a = s.isVisible.get(),
+            r = s.petNameID.get(),
+            p = s.hasUpdate.get();
+        return (
+            (0, u.useEffect)(() => {
+                const s = e.current;
+                if (!s) return;
+                const a = s.scrollWidth,
+                    t = s.scrollHeight;
+                o(a, t);
+            }, [e]),
+            (0, k.jsx)('div', {
+                ref: e,
+                className: n(b, !a && j),
+                children: (0, k.jsxs)('div', {
+                    className: x,
+                    children: [
+                        (0, k.jsx)('div', {
+                            className: N,
+                            children:
+                                0 === r
+                                    ? (0, k.jsx)(t, { path: 'pet_system.petHouseMarker.default' })
+                                    : (0, k.jsx)(t, {
+                                          path: 'pet_system.petHouseMarker.pet',
+                                          params: {
+                                              petName: g.readOr(`pet_names.petName_${r}`, () =>
+                                                  g.readOrEmpty('pet_names.petName_default'),
+                                              ),
+                                          },
+                                      }),
+                        }),
+                        (0, k.jsx)(i.Root, {
+                            className: v,
+                            hidden: !p,
+                            children: (0, k.jsx)(i.Icon, { type: c.bubble }),
+                        }),
+                    ],
+                }),
+            })
+        );
+    });
+s((0, k.jsx)(r, { children: (0, k.jsx)(_, { children: (0, k.jsx)(y, {}) }) }));

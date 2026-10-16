@@ -1,19 +1,21 @@
-import { a2 as s, b as e, D as a } from './lib.js';
-var i = ((s) => (
-    (s.Big = 'big'),
-    (s.Small = 'small'),
-    (s.Mini = 'mini'),
-    (s.S600x450 = 's600x450'),
-    (s.S400x300 = 's400x300'),
-    (s.S360x270 = 's360x270'),
-    (s.S232x174 = 's232x174'),
-    (s.S180x135 = 's180x135'),
-    (s.S80x80 = 's80x80'),
-    (s.S64x64 = 's64x64'),
-    (s.S48x48 = 's48x48'),
-    s
-))(i || {});
-const u = 'vehicles',
+import { B as s, Pn as e, R as a } from './lib.js';
+var i = (function (s) {
+        return (
+            (s.Big = 'big'),
+            (s.Small = 'small'),
+            (s.Mini = 'mini'),
+            (s.S600x450 = 's600x450'),
+            (s.S400x300 = 's400x300'),
+            (s.S360x270 = 's360x270'),
+            (s.S232x174 = 's232x174'),
+            (s.S180x135 = 's180x135'),
+            (s.S80x80 = 's80x80'),
+            (s.S64x64 = 's64x64'),
+            (s.S48x48 = 's48x48'),
+            s
+        );
+    })({}),
+    u = 'vehicles',
     n = 'customizations',
     t = 'attachments_set',
     c = 'attachment',
@@ -32,14 +34,14 @@ const u = 'vehicles',
     d = 'randomNationalBrochure',
     v = 'randomNationalGuide',
     _ = 'randomNationalCrewBook',
-    S = 'crewSkins',
-    B = 'goodies',
-    k = 'groups',
-    f = 'dossier_badge',
+    B = 'crewSkins',
+    S = 'goodies',
+    f = 'groups',
+    k = 'dossier_badge',
     y = 'dossier_achievement',
-    T = 'xp',
-    w = 'xpFactor',
-    P = 'creditsFactor',
+    P = 'xp',
+    T = 'xpFactor',
+    w = 'creditsFactor',
     E = 'crystal',
     O = 'tankmenXPFactor',
     F = 'dailyXPFactor',
@@ -47,9 +49,9 @@ const u = 'vehicles',
     A = 'tmanToken',
     N = 'battlePassSelectToken',
     z = 'premiumTank',
-    I = 'styleProgressToken',
-    L = 'lootBox',
-    C = 'collectionItem',
+    L = 'styleProgressToken',
+    C = 'lootBox',
+    I = 'collectionItem',
     j = (s) => {
         switch (s) {
             case 's180x135':
@@ -65,7 +67,7 @@ const u = 'vehicles',
                 return s;
         }
     },
-    D = (s) => {
+    G = (s) => {
         switch (s) {
             case 's180x135':
             case 'small':
@@ -80,58 +82,58 @@ const u = 'vehicles',
                 return s;
         }
     },
-    G = (s, a = 's180x135') => {
-        const { name: i, isRent: G, icon: M, id: W, value: H } = s;
+    M = (s, a = 's180x135') => {
+        const { name: i, isRent: M, icon: W, id: D, value: H } = s;
         switch (i) {
             case u:
-                return G
+                return M
                     ? `R.images.gui.maps.icons.quests.bonuses.${a}.vehicles_rent`
-                    : M && e.resolve('images').has(`R.images.gui.maps.shop.vehicles.${j(a)}.${M}`)
-                      ? `R.images.gui.maps.shop.vehicles.${j(a)}.${M}`
+                    : W && e.resolve('images').has(`R.images.gui.maps.shop.vehicles.${j(a)}.${W}`)
+                      ? `R.images.gui.maps.shop.vehicles.${j(a)}.${W}`
                       : `R.images.gui.maps.icons.quests.bonuses.${a}.vehicles`;
             case n:
-                return e.resolve('images').has(`quests.bonuses.${a}.${M}_${W}`)
-                    ? `R.images.gui.maps.icons.quests.bonuses.${a}.${M}_${W}`
-                    : `R.images.gui.maps.icons.quests.bonuses.${a}.${M}`;
+                return e.resolve('images').has(`quests.bonuses.${a}.${W}_${D}`)
+                    ? `R.images.gui.maps.icons.quests.bonuses.${a}.${W}_${D}`
+                    : `R.images.gui.maps.icons.quests.bonuses.${a}.${W}`;
             case c:
-                return e.resolve('images').has(`R.images.gui.maps.vehicles.attachments.${a}.${M}`)
-                    ? `R.images.gui.maps.vehicles.attachments.${a}.${M}`
+                return e.resolve('images').has(`R.images.gui.maps.vehicles.attachments.${a}.${W}`)
+                    ? `R.images.gui.maps.vehicles.attachments.${a}.${W}`
                     : `R.images.gui.maps.icons.quests.bonuses.${a}.${i}`;
             case t:
-                return e.resolve('images').has(`R.images.gui.maps.icons.quests.bonuses.${a}.${M}`)
-                    ? `R.images.gui.maps.icons.quests.bonuses.${a}.${M}`
+                return e.resolve('images').has(`R.images.gui.maps.icons.quests.bonuses.${a}.${W}`)
+                    ? `R.images.gui.maps.icons.quests.bonuses.${a}.${W}`
                     : `R.images.gui.maps.icons.quests.bonuses.${a}.attachmentsSet`;
             case o:
             case r:
             case m:
             case g:
             case $:
-                return `R.images.gui.maps.icons.quests.bonuses.${a}.${M}`;
+                return `R.images.gui.maps.icons.quests.bonuses.${a}.${W}`;
             case l:
             case p:
             case b:
             case x:
-                return `R.images.gui.maps.icons.blueprints.fragment.${a}.${M}`;
+                return `R.images.gui.maps.icons.blueprints.fragment.${a}.${W}`;
             case R:
             case h:
-                return `R.images.gui.maps.icons.quests.bonuses.${a}.${M}`;
+                return `R.images.gui.maps.icons.quests.bonuses.${a}.${W}`;
             case q:
             case d:
             case v:
             case _:
-                return `R.images.gui.maps.icons.crewBooks.books.${a}.${M}`;
-            case S:
+                return `R.images.gui.maps.icons.crewBooks.books.${a}.${W}`;
             case B:
-            case k:
-                return `R.images.gui.maps.icons.quests.bonuses.${a}.${M}`;
+            case S:
             case f:
-                return `R.images.gui.maps.icons.quests.bonuses.badges.${D(a)}.${M}`;
+                return `R.images.gui.maps.icons.quests.bonuses.${a}.${W}`;
+            case k:
+                return `R.images.gui.maps.icons.quests.bonuses.badges.${G(a)}.${W}`;
             case y:
-                return `R.images.gui.maps.icons.achievement.${D(a)}.${M}`;
-            case T:
-            case w:
-                return `R.images.gui.maps.icons.quests.bonuses.${a}.exp`;
+                return `R.images.gui.maps.icons.achievement.${G(a)}.${W}`;
             case P:
+            case T:
+                return `R.images.gui.maps.icons.quests.bonuses.${a}.exp`;
+            case w:
                 return `R.images.gui.maps.icons.quests.bonuses.${a}.credits`;
             case E:
                 return `R.images.gui.maps.icons.quests.bonuses.${a}.crystal`;
@@ -142,24 +144,24 @@ const u = 'vehicles',
                 return `R.images.gui.maps.icons.quests.bonuses.${a}.freeXP`;
             case A:
             case N:
-                return e.resolve('images').has(`R.images.gui.maps.icons.quests.bonuses.${a}.${M}_${H}`)
-                    ? `R.images.gui.maps.icons.quests.bonuses.${a}.${M}_${H}`
-                    : `R.images.gui.maps.icons.quests.bonuses.${a}.${M}`;
+                return e.resolve('images').has(`R.images.gui.maps.icons.quests.bonuses.${a}.${W}_${H}`)
+                    ? `R.images.gui.maps.icons.quests.bonuses.${a}.${W}_${H}`
+                    : `R.images.gui.maps.icons.quests.bonuses.${a}.${W}`;
             case z:
                 return `R.images.gui.maps.icons.quests.bonuses.${a}.vehicles`;
-            case I:
-                return `R.images.gui.maps.icons.quests.bonuses.${a}.style_3d`;
             case L:
-                return e.resolve('images').has(`R.images.gui.maps.icons.quests.bonuses.${a}.${M}`)
-                    ? `R.images.gui.maps.icons.quests.bonuses.${a}.${M}`
-                    : `R.images.gui.maps.icons.quests.bonuses.${a}.lootBox_default`;
+                return `R.images.gui.maps.icons.quests.bonuses.${a}.style_3d`;
             case C:
-                return `R.images.gui.maps.icons.collectionItems.${D(a)}.${M}`;
+                return e.resolve('images').has(`R.images.gui.maps.icons.quests.bonuses.${a}.${W}`)
+                    ? `R.images.gui.maps.icons.quests.bonuses.${a}.${W}`
+                    : `R.images.gui.maps.icons.quests.bonuses.${a}.lootBox_default`;
+            case I:
+                return `R.images.gui.maps.icons.collectionItems.${G(a)}.${W}`;
             default:
-                return `R.images.gui.maps.icons.quests.bonuses.${a}.${M}`;
+                return `R.images.gui.maps.icons.quests.bonuses.${a}.${W}`;
         }
     };
-function M({ size: s, name: i, special: u }) {
+function W({ size: s, name: i, special: u }) {
     let n = s;
     return (
         's360x270' === s && (n = 's400x300'),
@@ -168,13 +170,13 @@ function M({ size: s, name: i, special: u }) {
             : e.resolve('images').readOrEmpty(`quests.bonuses.${n}.${a(u)}_overlay`)
     );
 }
-const W = ['small', 'big'],
+var D = ['small', 'big'],
     H = (e, a) => {
-        if (void 0 === a || !W.includes(e)) return null;
+        if (void 0 === a || !D.includes(e)) return null;
         switch (a) {
             case s.BATTLE_BOOSTER:
             case s.BATTLE_BOOSTER_REPLACE:
                 return 'battleBooster';
         }
     };
-export { i as I, M as a, G as b, H as g };
+export { M as i, H as n, W as r, i as t };

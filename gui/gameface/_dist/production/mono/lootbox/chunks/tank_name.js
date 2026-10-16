@@ -1,20 +1,24 @@
-import { j as e, i as a } from './vendor.js';
-import { $ as s, ac as i, ad as l } from './lib.js';
-const t = { base: 'TankName_c5565248', type: 'TankName_type_652adbed' },
-    r = (e, a, s) => ({
-        backgroundImage: `url(${`R.images.gui.maps.icons.vehicleTypes.${s ? 'c_48x48' : 'c_24x24'}.${`${e.replace('-', '_')}${a ? '_elite' : ''}`}`})`,
+import { r as e } from './rolldown-runtime.js';
+import { P as a, dt as s, ft as i, ht as t, pt as l } from './lib.js';
+var r = e(a()),
+    d = { base: 'TankName_c5565248', type: 'TankName_type_652adbed', fadeIn: 'TankName_fadeIn_a6870619' },
+    m = e(i()),
+    n = (e, a, s) => ({
+        backgroundImage: `url(R.images.gui.maps.icons.vehicleTypes.${s ? 'c_48x48' : 'c_24x24'}.${`${e.replace('-', '_')}${a ? '_elite' : ''}`})`,
     });
-function c({ reward: c, style: m = { nameHeight: '18rem' }, className: d = '', hasShortName: o }) {
-    const { breakpoint: n } = s(),
-        { label: v, level: h, type: p, isElite: y, vehicleShortName: N } = c;
-    return e.jsxs('div', {
-        className: a(t.base, d),
-        style: { fontSize: m.nameHeight },
+function o({ reward: e, style: a = { nameHeight: '18rem' }, className: i = '', hasShortName: o }) {
+    const { breakpoint: c } = s(),
+        { label: h, level: p, type: v, isElite: N, vehicleShortName: _ } = e;
+    return (0, m.jsxs)('div', {
+        className: (0, r.default)(d.base, i),
+        style: { fontSize: a.nameHeight },
         children: [
-            void 0 !== h && e.jsx('div', { className: t.level, children: i(h) }),
-            void 0 !== p && void 0 !== y && e.jsx('div', { className: t.type, style: r(p, y, n.width >= l.Medium) }),
-            e.jsx('div', { children: o ? N : v }),
+            void 0 !== p && (0, m.jsx)('div', { className: d.level, children: t(p) }),
+            void 0 !== v &&
+                void 0 !== N &&
+                (0, m.jsx)('div', { className: d.type, style: n(v, N, c.width >= l.Medium) }),
+            (0, m.jsx)('div', { children: o ? _ : h }),
         ],
     });
 }
-export { c as T };
+export { o as t };

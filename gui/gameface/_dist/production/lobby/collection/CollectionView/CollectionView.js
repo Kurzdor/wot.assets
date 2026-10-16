@@ -1239,6 +1239,7 @@
                             (e.LootBox = 'lootBox'),
                             (e.BrCoin = 'brcoin'),
                             (e.Attachment = 'attachment'),
+                            (e.Pet = 'pet'),
                             e
                         );
                     })({}),
@@ -1415,6 +1416,7 @@
                             case 'groups':
                             case 'tmanToken':
                             case 'battlePassSelectToken':
+                            case 'pet':
                                 return `R.images.gui.maps.icons.quests.bonuses.${t}.${n}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${t}.${n}`;
@@ -4828,7 +4830,12 @@
                                             },
                                             _,
                                         ),
-                                    s && a().createElement('div', { className: hi.title }, s),
+                                    s &&
+                                        a().createElement(
+                                            'div',
+                                            { className: g()(hi.title, null == c ? void 0 : c.title) },
+                                            s,
+                                        ),
                                 ),
                             ),
                             u &&
@@ -5109,6 +5116,7 @@
                         notification__symbol: 'HorizontalTabs_notification__symbol_a2760',
                         notification__small: 'HorizontalTabs_notification__small_c3149',
                         notification__large: 'HorizontalTabs_notification__large_d46a5',
+                        notification__single: 'HorizontalTabs_notification__single_c6053',
                         notification__dot: 'HorizontalTabs_notification__dot_faa1d',
                         notification__medium: 'HorizontalTabs_notification__medium_f6177',
                     },
@@ -5192,6 +5200,9 @@
                                                     ki.notification,
                                                     ki[`notification__${r.type}`],
                                                     ki[`notification__${null != (l = r.size) ? l : 'medium'}`],
+                                                    'value' === r.type &&
+                                                        1 === String(r.value).length &&
+                                                        ki.notification__single,
                                                     null == s ? void 0 : s.notification,
                                                 ),
                                             },

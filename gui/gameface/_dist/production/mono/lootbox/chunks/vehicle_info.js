@@ -1,20 +1,21 @@
-import { j as e, e as s } from './vendor.js';
-import { ac as a, ai as i } from './lib.js';
-const c = 'VehicleInfo_7e31903c',
-    l = 'VehicleInfo_type_9875a6cb';
-function o({ vehicleLvl: o, vehicleName: r, vehicleType: m, isElite: n, classNames: t }) {
-    return e.jsxs('div', {
-        className: s(c, t?.base),
+import { r as e } from './rolldown-runtime.js';
+import { Vt as s, ft as a, ht as i, zt as l } from './lib.js';
+var t = 'VehicleInfo_7e31903c',
+    c = 'VehicleInfo_type_9875a6cb',
+    r = e(a());
+function m({ vehicleLvl: e, vehicleName: a, vehicleType: m, isElite: o, classNames: n }) {
+    return (0, r.jsxs)('div', {
+        className: s(t, n?.base),
         children: [
-            a(o),
-            e.jsx('div', {
-                className: s(l, t?.type),
+            i(e),
+            (0, r.jsx)('div', {
+                className: s(c, n?.type),
                 style: {
-                    backgroundImage: `url(${R.images.gui.maps.icons.vehicleTypes.large.$dyn(`${i(m)}${n ? '_elite' : ''}`)})`,
+                    backgroundImage: `url(${R.images.gui.maps.icons.vehicleTypes.large.$dyn(`${l(m)}${o ? '_elite' : ''}`)})`,
                 },
             }),
-            r,
+            a,
         ],
     });
 }
-export { o as V };
+export { m as t };

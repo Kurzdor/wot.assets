@@ -1,0 +1,2 @@
+var t = 'style_3d';
+export { t };

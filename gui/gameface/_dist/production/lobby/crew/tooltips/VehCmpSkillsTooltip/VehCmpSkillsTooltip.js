@@ -829,6 +829,11 @@
                     const d = a().useRef(null);
                     var D;
                     return (
+                        (0, i.useLayoutEffect)(() => {
+                            const u = o.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (D = () => {
                             const u = d.current;
                             if (!u)
@@ -838,7 +843,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
-                                o.O.view.resize(e, t);
+                                (o.O.view.resize(e, t),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const n = window.getComputedStyle(u);
                                 o.O.view.setSidePaddingsRem({
                                     left: parseInt(n.getPropertyValue('padding-left'), 10),
@@ -1263,7 +1270,7 @@
                                   )
                             : a().createElement('span', { key: t, 'data-block-type': e.blockType, className: z }, u);
                     },
-                    H = {
+                    $ = {
                         [S.Word]: G,
                         [S.NoBreakSymbol]: G,
                         [S.Binding]: ({ elementList: u, textBlock: e, key: t }) =>
@@ -1279,7 +1286,7 @@
                         [S.NoBreakWrapper]: ({ elementList: u, key: e }) =>
                             a().createElement('span', { key: e, 'data-block-type': S.NoBreakWrapper, className: j }, u),
                     },
-                    K = (u, e, t) => {
+                    H = (u, e, t) => {
                         const n = [];
                         return (
                             u.childList.forEach((r, o) => {
@@ -1287,14 +1294,14 @@
                                 if (((u) => void 0 !== u.childList)(r)) {
                                     const u = r,
                                         e = u.blockType,
-                                        t = K(u, H[e], i);
+                                        t = H(u, $[e], i);
                                     n.push(...t);
                                 } else n.push(e({ elementList: [r], textBlock: u, key: i }));
                             }),
                             n
                         );
                     },
-                    $ = (u) => {
+                    K = (u) => {
                         const e = [];
                         return (
                             u.forEach((u, t) => {
@@ -1302,8 +1309,8 @@
                                     ...((u, e) => {
                                         const t = [],
                                             n = u.blockType,
-                                            r = H[n],
-                                            o = K(u, r, e);
+                                            r = $[n],
+                                            o = H(u, r, e);
                                         return (
                                             n === S.NoBreakWrapper
                                                 ? t.push(r({ elementList: o, textBlock: u, key: `${e}` }))
@@ -1474,7 +1481,7 @@
                                 );
                             })(P(u).replace(/&zwnbsp;/g, '\ufeff'), e, t),
                         );
-                        return $(n);
+                        return K(n);
                     },
                     nu = (u, e) => !u || u.offsetTop + u.offsetHeight > e,
                     ru = (u, e) => u.offsetLeft + u.offsetWidth - e,

@@ -1,31 +1,42 @@
-import { g as e, w as a, f as s, j as n, R as t, r as i, k as l } from './vendor.js';
+import { r as e } from './rolldown-runtime.js';
 import {
-    i as o,
-    e as _,
-    m as c,
-    K as r,
-    r as d,
-    ac as b,
-    k as m,
-    n as k,
-    G as u,
-    B as v,
-    o as p,
-    bV as h,
-    bO as f,
-    p as S,
-    bm as N,
-    bj as w,
-    br as g,
-    b as x,
-    bA as j,
+    Cr as a,
+    Ct as s,
+    Dr as n,
+    Et as t,
+    Fn as i,
+    Kn as l,
+    Qt as _,
+    R as o,
+    Tt as c,
+    Vr as r,
+    Yn as d,
+    Zr as b,
+    _n as m,
+    _t as k,
+    bt as u,
+    fi as v,
+    gn as p,
+    gt as f,
+    li as h,
+    pt as S,
+    si as w,
+    wt as g,
+    yt as I,
+    zr as N,
 } from './lib.js';
-import { N as I, T as P } from './constants.js';
-/* empty css      */ const V = {
+import './global.js';
+import { h as x } from './vendor.js';
+import { n as j, t as P } from './constants.js';
+var T = e(h(), 1),
+    V = e(_(), 1),
+    y = {
+        root: '/hangar',
         battlePass: {
             chapterChoice: '/battlePass/chapterChoice',
             progression: '/battlePass/progression',
             postProgression: '/battlePass/postProgression',
+            intro: '/battlePass/intro',
             buyPass: '/battlePass/buyPass',
             buyPassRewards: '/battlePass/buyPassRewards',
             buyLevels: '/battlePass/buyLevels',
@@ -34,22 +45,24 @@ import { N as I, T as P } from './constants.js';
             tankmenScreen: '/battlePass/tankmenScreen',
         },
     },
-    [y, O] = o()(
-        ({ observableModel: a }) => {
-            const s = { tankmenList: a.array('tankmen') };
-            return { computes: { getTankmenList: e(() => c(s.tankmenList.get(), r), { equals: _ }) } };
+    [O, C] = m()(
+        ({ observableModel: e }) => {
+            const a = { tankmenList: e.array('tankmen') };
+            return { computes: { getTankmenList: p(() => n(a.tankmenList.get(), r), { equals: N }) } };
         },
         ({ externalModel: e }) => ({ showShop: e.createCallback((e) => ({ tankmanGroupName: e }), 'showShop') }),
-    );
-var T = ((e) => (
-    (e.RECEIVED = 'received'),
-    (e.PROGRESSION = 'progression'),
-    (e.IN_SHOP = 'inShop'),
-    (e.NOT_FULL = 'notFull'),
-    (e.UNAVAILABLE = 'unavailable'),
-    e
-))(T || {});
-const C = {
+    ),
+    L = (function (e) {
+        return (
+            (e.RECEIVED = 'received'),
+            (e.PROGRESSION = 'progression'),
+            (e.IN_SHOP = 'inShop'),
+            (e.NOT_FULL = 'notFull'),
+            (e.UNAVAILABLE = 'unavailable'),
+            e
+        );
+    })({}),
+    D = {
         base: 'Details_f71cbec7',
         base__received: 'Details_base__received_cc86090a',
         button: 'Details_button_7162adb1',
@@ -64,57 +77,58 @@ const C = {
         fadeOut: 'Details_fadeOut_43c92208',
         fadeIn: 'Details_fadeIn_43c92208',
     },
-    L = d.resolve('strings'),
-    D = a(({ tankman: e, className: a }) => {
-        const { controls: t } = O(),
-            { state: i, progressionLevel: l, count: o, availableCount: _, groupName: c, chapterID: r } = e,
-            d = b(),
-            h = m({ buttonSize: k.extraSmall }, { large: { buttonSize: k.small } }),
-            f = L.readOrEmpty(`battle_pass.tankmenVoiceover.${i}`),
-            S = s(C.label, C[`label__${i}`]),
-            N = (() => {
+    E = d(),
+    $ = v.resolve('strings'),
+    U = x(({ tankman: e, className: a }) => {
+        const { controls: n } = C(),
+            { state: i, progressionLevel: _, count: o, availableCount: r, groupName: d, chapterID: b } = e,
+            m = s(),
+            k = l({ buttonSize: c.extraSmall }, { large: { buttonSize: c.small } }),
+            v = $.readOrEmpty(`battle_pass.tankmenVoiceover.${i}`),
+            p = w(D.label, D[`label__${i}`]),
+            f = (() => {
                 switch (i) {
-                    case T.PROGRESSION:
-                        return n.jsx(u, { classMix: S, text: f, binding: { progressionLevel: l } });
-                    case T.NOT_FULL:
-                        return n.jsx(u, { classMix: S, text: f, binding: { availableCount: _, count: o } });
+                    case L.PROGRESSION:
+                        return (0, E.jsx)(u, { classMix: p, text: v, binding: { progressionLevel: _ } });
+                    case L.NOT_FULL:
+                        return (0, E.jsx)(u, { classMix: p, text: v, binding: { availableCount: r, count: o } });
                     default:
-                        return n.jsx('span', { className: S, children: f });
+                        return (0, E.jsx)('span', { className: p, children: v });
                 }
             })(),
-            w = (() => {
+            h = (() => {
                 switch (i) {
-                    case T.PROGRESSION:
+                    case L.PROGRESSION:
                         return {
-                            label: L.readOrEmpty('battle_pass.tankmenVoiceover.chapterButton'),
-                            handler: () => d.push(V.battlePass.progression, { chapterID: r }),
+                            label: $.readOrEmpty('battle_pass.tankmenVoiceover.chapterButton'),
+                            handler: () => m.push(y.battlePass.progression, { chapterID: b }),
                         };
-                    case T.IN_SHOP:
-                    case T.NOT_FULL:
+                    case L.IN_SHOP:
+                    case L.NOT_FULL:
                         return {
-                            label: L.readOrEmpty('battle_pass.tankmenVoiceover.shopButton'),
-                            handler: () => t.showShop(c),
+                            label: $.readOrEmpty('battle_pass.tankmenVoiceover.shopButton'),
+                            handler: () => n.showShop(d),
                         };
                     default:
                         return null;
                 }
             })();
-        return n.jsxs('div', {
-            className: s(C.base, C[`base__${i}`], a),
+        return (0, E.jsxs)('div', {
+            className: w(D.base, D[`base__${i}`], a),
             children: [
-                N,
-                w &&
-                    n.jsx(v, {
-                        onClick: w.handler,
-                        className: C.button,
-                        theme: p.secondary,
-                        size: h.buttonSize,
-                        children: w.label,
+                f,
+                h &&
+                    (0, E.jsx)(g, {
+                        onClick: h.handler,
+                        className: D.button,
+                        theme: t.secondary,
+                        size: k.buttonSize,
+                        children: h.label,
                     }),
             ],
         });
     }),
-    E = {
+    z = {
         base: 'Skills_12e25c21',
         skill: 'Skills_skill_8dd2237b',
         skill__specificPerk: 'Skills_skill__specificPerk_9fedba',
@@ -132,36 +146,36 @@ const C = {
         fadeOut: 'Skills_fadeOut_2c9d324a',
         fadeIn: 'Skills_fadeIn_2c9d324a',
     },
-    $ = d.resolve('images'),
-    U = ({ skills: e, className: a }) => {
-        const i = h(e, (e) => e.isZero);
-        return n.jsx('div', {
-            className: s(E.base, a),
-            children: c(e, (e, a) => {
-                const { name: l, isZero: o } = e,
-                    _ = l !== I,
-                    c = a === i && !_;
-                return n.jsxs(
-                    t.Fragment,
+    W = v.resolve('images'),
+    A = ({ skills: e, className: s }) => {
+        const t = a(e, (e) => e.isZero);
+        return (0, E.jsx)('div', {
+            className: w(z.base, s),
+            children: n(e, (e, a) => {
+                const { name: s, isZero: n } = e,
+                    i = s !== P,
+                    l = a === t && !i;
+                return (0, E.jsxs)(
+                    T.Fragment,
                     {
                         children: [
-                            n.jsx(f, {
+                            (0, E.jsx)(o, {
                                 contentId: R.views.mono.battle_pass.tooltips.crew_member_skill('resId'),
-                                args: { name: l, isZero: o, hasZeroPerk: void 0 !== i },
-                                children: n.jsxs('div', {
-                                    className: s(E.skill, _ && E.skill__specificPerk),
+                                args: { name: s, isZero: n, hasZeroPerk: void 0 !== t },
+                                children: (0, E.jsxs)('div', {
+                                    className: w(z.skill, i && z.skill__specificPerk),
                                     children: [
-                                        o && !_ && n.jsx('div', { className: E.zeroIcon }),
-                                        n.jsx('div', {
-                                            className: s(E.icon, E[`icon__${l}`]),
+                                        n && !i && (0, E.jsx)('div', { className: z.zeroIcon }),
+                                        (0, E.jsx)('div', {
+                                            className: w(z.icon, z[`icon__${s}`]),
                                             style: {
-                                                backgroundImage: `url(${$.readOrEmpty(`battlePass.tankman.new_perks.icon_perk_${l}`)})`,
+                                                backgroundImage: `url(${W.readOrEmpty(`battlePass.tankman.new_perks.icon_perk_${s}`)})`,
                                             },
                                         }),
                                     ],
                                 }),
                             }),
-                            c && n.jsx('div', { className: E.divider }),
+                            l && (0, E.jsx)('div', { className: z.divider }),
                         ],
                     },
                     `${e.name}_${a}`,
@@ -169,7 +183,7 @@ const C = {
             }),
         });
     },
-    z = {
+    F = {
         base: 'Voice_cd68eca5',
         icon: 'Voice_icon_a4c0c739',
         icon__speaker: 'Voice_icon__speaker_96c5b33',
@@ -191,24 +205,27 @@ const C = {
         fadeOut: 'Voice_fadeOut_d1a20ef1',
         fadeIn: 'Voice_fadeIn_d1a20ef1',
     },
-    A = d.resolve('strings'),
-    B = (() => {
-        const e = Math.ceil(P / 800);
+    B = v.resolve('strings'),
+    M = (() => {
+        const e = Math.ceil(j / 800);
         return { duration: 800, iterationCount: e, totalDuration: 800 * e };
     })(),
-    W = ({ isHovered: e, isPlayingSound: a, className: t }) =>
-        n.jsxs('div', {
-            className: s(z.base, e && z.base__hover, a && z.base__animate, t),
-            style: { '--animation-duration': `${B.duration}ms`, '--animation-iteration-count': B.iterationCount },
+    H = ({ isHovered: e, isPlayingSound: a, className: s }) =>
+        (0, E.jsxs)('div', {
+            className: w(F.base, e && F.base__hover, a && F.base__animate, s),
+            style: { '--animation-duration': `${M.duration}ms`, '--animation-iteration-count': M.iterationCount },
             children: [
-                n.jsx('div', { className: s(z.icon, z.icon__speaker) }),
+                (0, E.jsx)('div', { className: w(F.icon, F.icon__speaker) }),
                 Array.from({ length: 3 }, (e, a) =>
-                    n.jsx('div', { className: s(z.icon, z[`icon__wave${a}`]) }, `wave${a}`),
+                    (0, E.jsx)('div', { className: w(F.icon, F[`icon__wave${a}`]) }, `wave${a}`),
                 ),
-                n.jsx('div', { className: z.label, children: A.readOrEmpty('battle_pass.tankmenVoiceover.listen') }),
+                (0, E.jsx)('div', {
+                    className: F.label,
+                    children: B.readOrEmpty('battle_pass.tankmenVoiceover.listen'),
+                }),
             ],
         }),
-    F = {
+    Z = {
         base: 'Tankman_90661404',
         base__hover: 'Tankman_base__hover_ca952550',
         base__active: 'Tankman_base__active_9fe4dd8e',
@@ -220,116 +237,125 @@ const C = {
         voice: 'Tankman_voice_a253f649',
         skills: 'Tankman_skills_771bfa6a',
         name: 'Tankman_name_eb347b56',
+        fadeInWithScale: 'Tankman_fadeInWithScale_ca952550',
+        slideUp: 'Tankman_slideUp_ca952550',
+        blink: 'Tankman_blink_ca952550',
+        scale: 'Tankman_scale_ca952550',
+        rotate: 'Tankman_rotate_ca952550',
+        windowIn: 'Tankman_windowIn_ca952550',
+        fadeOut: 'Tankman_fadeOut_ca952550',
+        fadeIn: 'Tankman_fadeIn_ca952550',
     },
-    M = d.resolve('images'),
-    H = ({ tankman: e, activeTankman: a, setActiveTankman: t }) => {
-        const { groupName: l, fullName: o, hasVoiceover: _, skills: c } = e,
-            r = Boolean(a) && a !== l,
-            [d, b] = i.useState(!1),
-            [m, k] = i.useState(!1),
-            [u, v] = i.useState(!1);
+    G = v.resolve('images'),
+    q = ({ tankman: e, activeTankman: a, setActiveTankman: s }) => {
+        const { groupName: n, fullName: t, hasVoiceover: i, skills: l } = e,
+            _ = Boolean(a) && a !== n,
+            [o, c] = (0, T.useState)(!1),
+            [r, d] = (0, T.useState)(!1),
+            [m, k] = (0, T.useState)(!1);
         return (
-            i.useEffect(() => {
-                m && !r && _ && (b(!0), S.sound(R.sounds.bp_highlight()));
-            }, [r, m, _]),
-            n.jsxs('div', {
-                className: s(
-                    F.base,
-                    r && F.base__disabled,
-                    u && F.base__active,
-                    d && F.base__hover,
-                    !_ && F.base__muted,
+            (0, T.useEffect)(() => {
+                r && !_ && i && (c(!0), b.sound(R.sounds.bp_highlight()));
+            }, [_, r, i]),
+            (0, E.jsxs)('div', {
+                className: w(
+                    Z.base,
+                    _ && Z.base__disabled,
+                    m && Z.base__active,
+                    o && Z.base__hover,
+                    !i && Z.base__muted,
                 ),
                 children: [
-                    n.jsx('div', {
-                        className: F.interactiveContainer,
+                    (0, E.jsx)('div', {
+                        className: Z.interactiveContainer,
                         onClick: () => {
-                            u ||
-                                r ||
-                                !_ ||
-                                (t(l),
-                                v(!0),
-                                S.sound(R.sounds.play()),
-                                S.sound(l),
+                            m ||
+                                _ ||
+                                !i ||
+                                (s(n),
+                                k(!0),
+                                b.sound(R.sounds.play()),
+                                b.sound(n),
                                 setTimeout(() => {
-                                    (v(!1), t(''));
-                                }, P));
+                                    (k(!1), s(''));
+                                }, j));
                         },
                         onMouseEnter: () => {
-                            !r && _ ? (b(!0), S.sound(R.sounds.bp_highlight())) : k(!0);
+                            !_ && i ? (c(!0), b.sound(R.sounds.bp_highlight())) : d(!0);
                         },
                         onMouseLeave: () => {
-                            (b(!1), k(!1));
+                            (c(!1), d(!1));
                         },
-                        children: _ && n.jsx(W, { className: F.voice, isHovered: d, isPlayingSound: u }),
+                        children: i && (0, E.jsx)(H, { className: Z.voice, isHovered: o, isPlayingSound: m }),
                     }),
-                    n.jsx('div', {
-                        className: F.image,
+                    (0, E.jsx)('div', {
+                        className: Z.image,
                         style: {
-                            backgroundImage: `url(${M.readOrEmpty(`battlePass.tankman.persons.commander_${l}`)})`,
+                            backgroundImage: `url(${G.readOrEmpty(`battlePass.tankman.persons.commander_${n}`)})`,
                         },
                     }),
-                    n.jsxs('div', {
-                        className: F.content,
+                    (0, E.jsxs)('div', {
+                        className: Z.content,
                         children: [
-                            c.length > 0 && n.jsx(U, { className: F.skills, skills: c }),
-                            n.jsx('span', { className: F.name, children: o }),
-                            n.jsx(D, { className: F.details, tankman: e }),
+                            l.length > 0 && (0, E.jsx)(A, { className: Z.skills, skills: l }),
+                            (0, E.jsx)('span', { className: Z.name, children: t }),
+                            (0, E.jsx)(U, { className: Z.details, tankman: e }),
                         ],
                     }),
                 ],
             })
         );
     },
-    G = 'Content_bd627888',
-    Z = 'Content_scrollWrapper_722ae7d9',
-    q = 'Content_scrollWrapper__hasScroll_24bcd139',
-    K = 'Content_scrollContent_bc619017',
-    J = 'Content_scrollBar_66a66791',
-    Q = a(({ className: e }) => {
+    K = 'Content_bd627888',
+    Q = 'Content_scrollWrapper_722ae7d9',
+    Y = 'Content_scrollWrapper__hasScroll_24bcd139',
+    J = 'Content_scrollContent_bc619017',
+    X = 'Content_scrollBar_66a66791',
+    ee = x(({ className: e }) => {
         const {
                 model: { computes: a },
-            } = O(),
+            } = C(),
             s = a.getTankmenList(),
-            [t, o] = i.useState(''),
-            { api: _ } = N(),
-            [c, r] = i.useState(!1),
-            d = i.useCallback(() => {
-                const [e, a] = _.getBounds();
-                r(e !== a);
-            }, [_]);
+            [n, t] = (0, T.useState)(''),
+            { api: i } = I(),
+            [l, _] = (0, T.useState)(!1),
+            o = (0, T.useCallback)(() => {
+                const [e, a] = i.getBounds();
+                _(e !== a);
+            }, [i]);
         return (
-            i.useEffect(
+            (0, T.useEffect)(
                 () => (
-                    _.events.on('resizeHandled', d),
+                    i.events.on('resizeHandled', o),
                     () => {
-                        _.events.off('resizeHandled', d);
+                        i.events.off('resizeHandled', o);
                     }
                 ),
-                [_.events, d],
+                [i.events, o],
             ),
-            n.jsxs('div', {
-                className: l(G, e),
+            (0, E.jsxs)('div', {
+                className: (0, V.default)(K, e),
                 children: [
-                    n.jsx(w, {
-                        classNames: { wrapper: l(Z, c && q), content: K },
+                    (0, E.jsx)(f, {
+                        classNames: { wrapper: (0, V.default)(Q, l && Y), content: J },
                         children: s.map((e, a) =>
-                            n.jsx(H, { tankman: e, activeTankman: t, setActiveTankman: o }, `tankman-${a}`),
+                            (0, E.jsx)(q, { tankman: e, activeTankman: n, setActiveTankman: t }, `tankman-${a}`),
                         ),
                     }),
-                    n.jsx(g, { classNames: { base: J } }),
+                    (0, E.jsx)(k, { classNames: { base: X } }),
                 ],
             })
         );
     }),
-    X = 'App_7603ab20',
-    Y = 'App_content_927ebd71',
-    ee = () => {
-        const e = b();
-        return (
-            x(e.goBack),
-            n.jsx('div', { className: X, children: n.jsx(j, { children: n.jsx(Q, { className: Y }) }) })
-        );
-    },
-    ae = () => n.jsx(y, { options: { rootId: R.aliases.battle_pass.TankmenScreen('resId') }, children: n.jsx(ee, {}) });
-export { ae as T, V as r };
+    ae = 'App_7603ab20',
+    se = 'App_content_927ebd71',
+    ne = () => (
+        i(s().goBack),
+        (0, E.jsx)('div', { className: ae, children: (0, E.jsx)(S, { children: (0, E.jsx)(ee, { className: se }) }) })
+    ),
+    te = () =>
+        (0, E.jsx)(O, {
+            options: { rootId: R.aliases.battle_pass.TankmenScreen('resId') },
+            children: (0, E.jsx)(ne, {}),
+        });
+export { y as n, te as t };

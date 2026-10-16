@@ -138,6 +138,17 @@
 .HorizontalTabs_notification__large_d46a5.HorizontalTabs_notification__symbol_a2760 {
     width: 18rem;
 }
+.HorizontalTabs_notification__single_c6053 {
+    width: 14rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+.HorizontalTabs_notification__single_c6053.HorizontalTabs_notification__small_c3149 {
+    width: 13rem;
+}
+.HorizontalTabs_notification__single_c6053.HorizontalTabs_notification__large_d46a5 {
+    width: 18rem;
+}
 .HorizontalTabs_notification__dot_faa1d {
     min-width: 0;
     padding: 0;
@@ -5118,8 +5129,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 26rem;
     align-self: center;
     background: url('R.images.gui.maps.icons.crew.profile.plus_icon') no-repeat center / contain;
-    filter: drop-shadow(0 0 32rem #e52) drop-shadow(0 0 30rem rgba(255, 42, 0, 0.8))
-        drop-shadow(0 0 8rem rgba(255, 127, 0, 0.25));
+    filter: drop-shadow(0 0 32px #e52) drop-shadow(0 0 30px rgba(255, 42, 0, 0.8))
+        drop-shadow(0 0 8px rgba(255, 127, 0, 0.25));
 }
 
 .mediaExtraLarge .AvailableSkill_base_c65be {

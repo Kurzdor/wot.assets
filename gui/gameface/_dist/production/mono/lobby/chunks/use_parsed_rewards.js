@@ -1,29 +1,28 @@
-import { bo as t, u as e, m as o, M as a, I as i, bp as n, bq as s, br as r } from './lib.js';
-import './vendor.js';
-const m = new t(window),
-    p = (t, e) => {
-        const { name: o } = t,
-            a = r(t, e);
-        if (!m.has(a))
-            switch (o) {
+import { $r as t, At as e, Mn as a, Nt as o, Pn as n, jt as i, kt as s, yr as r } from './lib.js';
+var m = new t(window),
+    l = (t, e) => {
+        const { name: a } = t,
+            o = s(t, e);
+        if (!m.has(o))
+            switch (a) {
                 case 'attachment':
-                    return r({ name: o, icon: 'attachment' }, e);
+                    return s({ name: a, icon: 'attachment' }, e);
                 case 'customizations':
-                    return r({ name: o, icon: 'style' }, e);
+                    return s({ name: a, icon: 'style' }, e);
             }
-        return a;
+        return o;
     },
-    l = (t) => ('overlayType' in t ? t.overlayType : void 0);
-function c(t, r) {
-    const m = ((t, e) => e || (t >= a.Medium ? i.Big : i.Small))(e().mediaSize, r);
+    p = (t) => ('overlayType' in t ? t.overlayType : void 0);
+function c(t, s) {
+    const m = ((t, e) => e || (t >= n.Medium ? o.Big : o.Small))(a().mediaSize, s);
     return {
-        parsedRewards: o(t, ({ ...t }) => ({
+        parsedRewards: r(t, ({ ...t }) => ({
             ...t,
-            special: l(t),
-            image: p(t, m),
+            special: p(t),
+            image: l(t, m),
             size: m,
-            valueType: s(t.name),
-            tooltipArgs: n(
+            valueType: i(t.name),
+            tooltipArgs: e(
                 { tooltipId: t.tooltipId, tooltipContentId: t.tooltipContentId },
                 Number(t.tooltipContentId),
             ),
@@ -31,4 +30,4 @@ function c(t, r) {
         imageSize: m,
     };
 }
-export { c as u };
+export { c as t };

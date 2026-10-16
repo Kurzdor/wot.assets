@@ -1,37 +1,39 @@
-import { p as e, q as t, i as o, j as a, e as s, k as r, l, s as n, r as i } from './vendor.js';
-import { i as c, B as u, d as m, e as g, I as d, F as f, R as p } from './lib.js';
-const _ = 'escape',
-    b = 'close',
-    D = 'confirm',
-    h = 'cancel',
-    x = { [b]: b, [_]: _, [D]: D, [h]: h },
-    [y, N] = c()(
-        ({ observableModel: o }) => {
-            const a = { ...o.primitives(['backgroundImage', 'dimmerAlpha']), buttons: o.arrayClone('buttons') },
-                s = o.dict('content'),
-                r = o.dict('resources'),
-                l = e((e, t = !0) => {
-                    const o = s.get(e);
-                    return (!o && t && console.error(`Error getting resource content for key ${e}`), o);
+import { n as e } from './rolldown-runtime.js';
+import { D as t, T as o, _ as a, a as r, d as s, i as l, m as n, o as i, r as c, u, v as m } from './lib.js';
+import { a as g, i as d, o as f, r as p, s as _ } from './vendor.js';
+var b = 'escape',
+    D = 'close',
+    x = 'space',
+    h = 'confirm',
+    y = 'cancel',
+    v = { [D]: D, [b]: b, [x]: x, [h]: h, [y]: y },
+    [N, j] = s()(
+        ({ observableModel: e }) => {
+            const t = { ...e.primitives(['backgroundImage', 'dimmerAlpha']), buttons: e.arrayClone('buttons') },
+                o = e.dict('content'),
+                a = e.dict('resources'),
+                r = u((e, t = !0) => {
+                    const a = o.get(e);
+                    return (!a && t && console.error(`Error getting resource content for key ${e}`), a);
                 }),
-                n = e((e, t = !0) => {
-                    const o = r.get(e);
+                s = u((e, t = !0) => {
+                    const o = a.get(e);
                     return !o && t ? (console.error(`Error getting string content for key ${e}`), null) : (o ?? null);
                 }),
-                i = e((e, o, a = !0) => {
+                l = u((e, t, o = !0) => {
                     try {
-                        const s = l(e, a);
-                        if (!s) return;
-                        return t(o, JSON.parse(s));
-                    } catch (s) {
-                        return void (a && console.error(`Error parsing JSON content for key ${e}: ${s}`));
+                        const a = r(e, o);
+                        if (!a) return;
+                        return d(t, JSON.parse(a));
+                    } catch (a) {
+                        return void (o && console.error(`Error parsing JSON content for key ${e}: ${a}`));
                     }
                 });
-            return { ...a, computes: { getResource: n, getStringContent: l, getParsedContent: i } };
+            return { ...t, computes: { getResource: s, getStringContent: r, getParsedContent: l } };
         },
         ({ externalModel: e }) => ({ onAction: e.createCallback((e) => ({ action: e }), 'onAction') }),
     ),
-    v = {
+    T = {
         base: 'DefaultDialogTemplate_2b940a27',
         overlay: 'DefaultDialogTemplate_overlay_a401350d',
         body: 'DefaultDialogTemplate_body_df1a2692',
@@ -43,6 +45,7 @@ const _ = 'escape',
         buttonGroup: 'DefaultDialogTemplate_buttonGroup_8ab4d55c',
         button: 'DefaultDialogTemplate_button_c76aebb7',
         closeButton: 'DefaultDialogTemplate_closeButton_7efb3d0a',
+        currencyIcon: 'DefaultDialogTemplate_currencyIcon_c313f742',
         footer: 'DefaultDialogTemplate_footer_aa9b73fa',
         footer_glowWrapper: 'DefaultDialogTemplate_footer_glowWrapper_200951f2',
         footer_glow: 'DefaultDialogTemplate_footer_glow_cf98773e',
@@ -50,27 +53,28 @@ const _ = 'escape',
         footer_text: 'DefaultDialogTemplate_footer_text_fa82ceed',
         footer_image: 'DefaultDialogTemplate_footer_image_441f56cf',
     },
-    j = { size: u.sizes.extraSmall },
-    T = { medium: { size: u.sizes.small }, large: { size: u.sizes.medium }, extraLarge: { size: u.sizes.large } },
-    C = o(function ({ className: e }) {
-        const t = m(j, T),
+    C = m(),
+    S = { size: i.sizes.extraSmall },
+    k = { medium: { size: i.sizes.small }, large: { size: i.sizes.medium }, extraLarge: { size: i.sizes.large } },
+    z = _(function ({ className: e }) {
+        const t = a(S, k),
             {
-                model: o,
-                controls: { onAction: r },
-            } = N(),
-            l = o.buttons.get();
+                model: r,
+                controls: { onAction: s },
+            } = j(),
+            l = r.buttons.get();
         return l.length
-            ? a.jsx('div', {
-                  className: s(v.buttonGroup, e),
+            ? (0, C.jsx)('div', {
+                  className: o(T.buttonGroup, e),
                   children: l.map((e, o) =>
-                      a.jsx(
-                          u,
+                      (0, C.jsx)(
+                          i,
                           {
-                              className: v.button,
+                              className: T.button,
                               autoAlignContent: !1,
-                              theme: 0 === o ? u.themes.primary : u.themes.secondary,
+                              theme: 0 === o ? i.themes.primary : i.themes.secondary,
                               size: t.size,
-                              onClick: () => r(e.action),
+                              onClick: () => s(e.action),
                               soundTarget: e.soundTarget || void 0,
                               disabled: e.isDisabled,
                               'data-test-id': e.action,
@@ -82,96 +86,102 @@ const _ = 'escape',
               })
             : null;
     }),
-    S = o(function ({ className: e }) {
-        const { controls: t } = N(),
-            o = g();
-        return a.jsx('div', {
+    P = _(function ({ className: e }) {
+        const { controls: t } = j(),
+            a = n();
+        return (0, C.jsx)('div', {
             onClick: function (e) {
-                (o.play('close', { target: 'dialog:close_button', original: e }),
-                    t.onAction(x.close),
+                (a.play('close', { target: 'dialog:close_button', original: e }),
+                    t.onAction(v.close),
                     e.stopPropagation());
             },
             onMouseEnter: function (e) {
-                o.play('mouse-enter', { target: 'dialog:close_button', original: e });
+                a.play('mouse-enter', { target: 'dialog:close_button', original: e });
             },
-            className: s(v.closeButton, e),
+            className: o(T.closeButton, e),
             'data-test-id': 'close',
-            children: a.jsx(d, { path: 'ui.close_btn', width: 48, height: 48 }),
+            children: (0, C.jsx)(l, { path: 'ui.close_btn', width: 48, height: 48 }),
         });
     }),
-    k = r(l(n(), n())),
-    z = !1,
-    P = o(function ({ className: e }) {
-        const { model: t } = N(),
-            o = t.computes.getResource('descriptionString', z),
-            r = t.computes.getParsedContent('descriptionStringParams', k, z) ?? {};
-        return o
-            ? a.jsx('div', {
-                  className: s(v.description, e),
-                  children: a.jsx(f, { className: v.description_text, text: o, params: r, upgradeLegacy: !0 }),
+    w = p(g(f(), f())),
+    I = !1,
+    A = _(function ({ className: e }) {
+        const { model: t } = j(),
+            a = t.computes.getResource('descriptionString', I),
+            r = t.computes.getParsedContent('descriptionStringParams', w, I) ?? {};
+        return a
+            ? (0, C.jsx)('div', {
+                  className: o(T.description, e),
+                  children: (0, C.jsx)(c, { className: T.description_text, text: a, params: r, upgradeLegacy: !0 }),
               })
             : null;
     }),
-    w = r(l(n(), n())),
-    A = !1,
-    I = o(function ({ className: e }) {
-        const { model: t } = N(),
-            o = t.computes.getStringContent('footerHighlightColor', A),
-            r = t.computes.getResource('footerString', A),
-            l = t.computes.getParsedContent('footerStringParams', w, A) ?? {},
-            n = t.computes.getResource('footerImage', A),
-            c = i.useMemo(() => (o ? { '--footer-highlight-color': o } : {}), [o]);
-        return r
-            ? a.jsxs('div', {
-                  className: s(v.footer, o && v.footer__highlight, e),
-                  style: c,
+    $ = e(t(), 1),
+    R = p(g(f(), f())),
+    E = !1,
+    L = _(function ({ className: e }) {
+        const { model: t } = j(),
+            a = t.computes.getStringContent('footerHighlightColor', E),
+            s = t.computes.getResource('footerString', E),
+            n = t.computes.getParsedContent('footerStringParams', R, E) ?? {},
+            i = t.computes.getResource('footerImage', E),
+            u = (0, $.useMemo)(() => (a ? { '--footer-highlight-color': a } : {}), [a]);
+        return s
+            ? (0, C.jsxs)('div', {
+                  className: o(T.footer, a && T.footer__highlight, e),
+                  style: u,
                   children: [
-                      o &&
-                          a.jsxs(a.Fragment, {
+                      a &&
+                          (0, C.jsxs)(C.Fragment, {
                               children: [
-                                  a.jsx('div', {
-                                      className: v.footer_glowWrapper,
-                                      children: a.jsx('div', { className: v.footer_glow }),
+                                  (0, C.jsx)('div', {
+                                      className: T.footer_glowWrapper,
+                                      children: (0, C.jsx)('div', { className: T.footer_glow }),
                                   }),
-                                  a.jsx(d, {
+                                  (0, C.jsx)(l, {
                                       path: 'ui.noise',
-                                      className: v.footer_border,
-                                      repeat: 'both',
+                                      className: T.footer_border,
+                                      repeat: 'repeat',
                                       style: { backgroundSize: '100rem 100rem' },
                                   }),
                               ],
                           }),
-                      n && a.jsx(p, { src: n, className: v.footer_image, fit: 'contain' }),
-                      a.jsx('div', {
-                          className: v.footer_text,
-                          children: a.jsx(f, { text: r, params: l, upgradeLegacy: !0 }),
+                      i && (0, C.jsx)(r, { src: i, className: T.footer_image, fit: 'contain' }),
+                      (0, C.jsx)('div', {
+                          className: T.footer_text,
+                          children: (0, C.jsx)(c, { text: s, params: n, upgradeLegacy: !0 }),
                       }),
                   ],
               })
-            : a.jsx('div', { className: s(v.footer, e) });
+            : (0, C.jsx)('div', { className: o(T.footer, e) });
     }),
-    R = o(function ({ className: e }) {
-        const { model: t } = N(),
-            o = t.backgroundImage.get(),
+    M = _(function ({ className: e }) {
+        const { model: t } = j(),
+            a = t.backgroundImage.get(),
             r = t.dimmerAlpha.get();
-        return a.jsx('div', {
-            className: s(v.overlay, e),
-            style: { backgroundImage: o ? `url(${o})` : void 0, backgroundColor: `rgba(0,0,0,${r})` },
+        return (0, C.jsx)('div', {
+            className: o(T.overlay, e),
+            style: { backgroundImage: a ? `url(${a})` : void 0, backgroundColor: `rgba(0,0,0,${r})` },
         });
     }),
-    $ = r(l(n(), n())),
-    B = !1,
-    E = o(function ({ className: e }) {
-        const { model: t } = N(),
-            o = t.computes.getResource('titleString', B),
-            r = t.computes.getParsedContent('titleStringParams', $, B) ?? {};
-        return o
-            ? a.jsx('div', { className: s(v.title, e), children: a.jsx(f, { text: o, params: r, upgradeLegacy: !0 }) })
+    B = p(g(f(), f())),
+    G = !1,
+    W = _(function ({ className: e }) {
+        const { model: t } = j(),
+            a = t.computes.getResource('titleString', G),
+            r = t.computes.getParsedContent('titleStringParams', B, G) ?? {};
+        return a
+            ? (0, C.jsx)('div', {
+                  className: o(T.title, e),
+                  children: (0, C.jsx)(c, { text: a, params: r, upgradeLegacy: !0 }),
+              })
             : null;
     }),
-    L = o(function ({ children: e, className: t }) {
-        const { controls: o } = N();
-        return a.jsx('div', { className: s(v.base, t), children: e });
-    });
-var M = ((e) => ((e.Primary = 'primary'), (e.Secondary = 'secondary'), (e.Custom = 'custom'), e))(M || {});
-export { M as B, y as D, x as a, I as b, R as c, S as d, L as e, E as f, P as g, C as h, v as s, N as u };
+    J = _(function ({ children: e, className: t }) {
+        const { controls: a } = j();
+        return (0, C.jsx)('div', { className: o(T.base, t), children: e });
+    }),
+    O = (function (e) {
+        return ((e.Primary = 'primary'), (e.Secondary = 'secondary'), (e.Custom = 'custom'), e);
+    })({});
+export { L as a, z as c, v as d, j as f, M as i, T as l, J as n, A as o, W as r, P as s, O as t, N as u };

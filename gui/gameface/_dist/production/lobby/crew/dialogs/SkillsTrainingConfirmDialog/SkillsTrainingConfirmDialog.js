@@ -2793,6 +2793,7 @@
                         Ze,
                         Bu({ onClose: u, buttons: t, displayFlags: a, isShown: n }, i, {
                             icon: r().createElement(mu, { list: o.skillsList.get() }),
+                            title: R.strings.dialogs.skillsTrainingConfirm.message(),
                         }),
                     );
                 });

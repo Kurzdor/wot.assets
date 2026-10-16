@@ -1,10 +1,11 @@
-const s = R.images.gui.maps.icons.seniorityAwards.award_bg__gp4(),
-    a = 500,
+var s = R.images.gui.maps.icons.seniorityAwards.award_bg__gp4(),
     r = 0.5,
-    e = 'at',
-    o = 'bt',
-    i = (s, a) => {
-        const r = s.split('_')[0];
-        return r ? ([e, o].includes(r) ? a : r) : (console.error(`There is no such seniority category: ${s}`), null);
+    a = (s, r) => {
+        const a = s.split('_')[0];
+        return a
+            ? ['at', 'bt'].includes(a)
+                ? r
+                : a
+            : (console.error(`There is no such seniority category: ${s}`), null);
     };
-export { a as A, o as B, r as T, s as a, e as b, i as g };
+export { s as n, r, a as t };

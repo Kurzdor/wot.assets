@@ -1,6 +1,5 @@
-import { i as e } from './lib.js';
-import './vendor.js';
-const [s, a] = e()(
+import { Zr as e } from './lib.js';
+var [a, s] = e()(
     ({ observableModel: e }) => ({
         root: e.object(),
         season: e.primitives(
@@ -11,4 +10,4 @@ const [s, a] = e()(
     }),
     ({ externalModel: e }) => ({ pollServerTime: e.createCallbackNoArgs('season.pollServerTime') }),
 );
-export { s as S, a as u };
+export { s as n, a as t };

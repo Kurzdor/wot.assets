@@ -173,8 +173,6 @@
 }
 @keyframes App_slideOut_e4276 {
     from {
-        margin-left: -1rem;
-
         /* if we don't specify units GF later complains about unit mismatch between from and to */
         /* stylelint-disable-next-line */
         left: 1rem;

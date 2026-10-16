@@ -1,37 +1,40 @@
-import { j as o, W as s } from './vendor.js';
-import { j as e, p as n } from './lib.js';
-const a = 'CloseButton_49a682e7',
-    i = 'CloseButton_icon_b31f68a5',
-    l = 'CloseButton_iconHover_b5894825',
-    c = { heading: 'Page_heading_2dd55438', close: 'Page_close_401a9518' },
-    u = ({
-        onClick: u,
-        className: r,
-        classNames: t,
-        onMouseEnter: d,
-        onMouseLeave: m,
-        onMouseDown: v,
-        onMouseUp: _,
-        soundHover: p = 'highlight',
-        soundClick: M = 'play',
-    }) => {
-        e(u);
-        return o.jsxs('div', {
-            className: s(a, c.close, r),
-            onMouseEnter: (o) => {
-                (d?.(o), n.sound(p));
-            },
-            onMouseLeave: (o) => {
-                m?.(o);
-            },
-            onMouseDown: (o) => {
-                (v?.(o), n.sound(M));
-            },
-            onMouseUp: (o) => {
-                _?.(o);
-            },
-            onClick: u,
-            children: [o.jsx('div', { className: s(i, t?.icon) }), o.jsx('div', { className: s(l, t?.iconHover) })],
-        });
-    };
-export { u as C, c as p };
+import { r as s } from './rolldown-runtime.js';
+import { hi as a, mi as e, vr as o } from './lib.js';
+import { t as l } from './vendor.js';
+var m = s(l()),
+    t = {
+        base: 'CloseButton_d48b0d77',
+        base__medium: 'CloseButton_base__medium_293b816e',
+        base__small: 'CloseButton_base__small_6ca54dd7',
+        base__extraSmall: 'CloseButton_base__extraSmall_313af556',
+        up: 'CloseButton_up_5a703a08',
+        hover: 'CloseButton_hover_5d3a15c2',
+        shadow: 'CloseButton_shadow_af3d9881',
+    },
+    _ = o(),
+    d = { medium: 'medium', small: 'small', extraSmall: 'extraSmall' };
+function r({
+    size: s = d.medium,
+    hoverSound: o = a.highlight,
+    clickSound: l = a.click,
+    className: r,
+    onHover: i,
+    onClose: u,
+}) {
+    return (0, _.jsxs)('div', {
+        className: (0, m.default)(t.base, t[`base__${s}`], r),
+        onMouseEnter: () => {
+            (e.sound(o), i?.());
+        },
+        onClick: () => {
+            (e.sound(l), u());
+        },
+        children: [
+            (0, _.jsx)('div', { className: t.up }),
+            (0, _.jsx)('div', { className: t.hover }),
+            (0, _.jsx)('div', { className: t.shadow }),
+        ],
+    });
+}
+r.size = d;
+export { r as t };

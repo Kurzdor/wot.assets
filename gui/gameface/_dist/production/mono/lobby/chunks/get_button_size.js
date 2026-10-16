@@ -1,3 +1,3 @@
-import { cG as s, B as a } from './lib.js';
-const e = (e) => (e >= s.Large ? a.sizes.large : a.sizes.small);
-export { e as g };
+import { Fa as s, Rr as a } from './lib.js';
+var r = (r) => (r >= s.Large ? a.sizes.large : a.sizes.small);
+export { r as t };

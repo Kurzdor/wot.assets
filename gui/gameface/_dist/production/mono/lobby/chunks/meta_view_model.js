@@ -1,0 +1,4 @@
+var e = (function (e) {
+    return ((e.None = 'none'), (e.InProgress = 'inProgress'), (e.Receive = 'receive'), (e.Open = 'open'), e);
+})({});
+export { e as t };

@@ -1,0 +1,124 @@
+import {
+    B as e,
+    Bt as t,
+    Gt as a,
+    J as s,
+    Nn as i,
+    R as n,
+    V as r,
+    Wt as o,
+    X as c,
+    Y as l,
+    Z as p,
+    gt as m,
+    jr as d,
+    qr as _,
+    t as b,
+    wn as x,
+    zt as u,
+} from '../../chunks/lib.js';
+import '../../chunks/globals.js';
+import { i as g } from '../../chunks/vendor.js';
+import { t as f } from '../../chunks/enums.js';
+var j = (function (e) {
+        return ((e.Low = 'low'), (e.Medium = 'medium'), (e.High = 'high'), e);
+    })({}),
+    [h, v] = a()(({ observableModel: e }) => {
+        const t = { root: e.object(), eventInfo: e.object('eventInfo') },
+            a = o(
+                () =>
+                    t.eventInfo.get().subMode === f.StPatrick
+                        ? {
+                              subTitle: R.strings.battle_royale_extention.tooltip.banner.stPatrickTitle(),
+                              description: R.strings.battle_royale_extention.tooltip.banner.stPatrickDescription(),
+                              backgroundImage: R.images.battle_royale.gui.maps.st_patrick.tooltips.bannerBg(),
+                          }
+                        : {
+                              subTitle: '',
+                              description: R.strings.battle_royale_extention.tooltip.banner.description(),
+                              backgroundImage: R.images.battle_royale.gui.maps.tooltips.bannerBg(),
+                          },
+                { equals: x.structural },
+            );
+        return { ...t, computes: { settings: a } };
+    }, d),
+    y = {
+        base: 'App_97a7e598',
+        img: 'App_img_f167336c',
+        base__inactive: 'App_base__inactive_0',
+        header: 'App_header_648d499b',
+        subTitle: 'App_subTitle_413725f4',
+        description: 'App_description_8018f8cc',
+        modeContainer: 'App_modeContainer_f5052f31',
+        modeLabel: 'App_modeLabel_2cc9bbac',
+        performance: 'App_performance_414926ee',
+        performanceIcon: 'App_performanceIcon_6b1ac9c2',
+        base__medium: 'App_base__medium_0',
+        base__high: 'App_base__high_0',
+        performanceTitle: 'App_performanceTitle_7afbd784',
+        performanceText: 'App_performanceText_380aef3c',
+        separator: 'App_separator_bad28223',
+        timerStatus: 'App_timerStatus_a52e51dd',
+    },
+    A = i();
+function k(e, t = {}) {
+    return c(p(`{{@ split}}${e}{{/}}`, s), l, t);
+}
+var N = g(function () {
+    const { model: t } = v(),
+        { performanceRisk: a, time: s, modeState: i } = t.root.get(),
+        o = 'inactive' === i ? r.cooldown : r.accent,
+        { backgroundImage: c, description: l, subTitle: p } = t.computes.settings();
+    return (0, A.jsxs)('div', {
+        className: _(y.base, y[`base__${a}`], y[`base__${i}`]),
+        children: [
+            (0, A.jsx)('div', { className: y.img, style: { backgroundImage: `url(${c})` } }),
+            (0, A.jsx)('div', {
+                className: y.header,
+                children: R.strings.battle_royale_extention.tooltip.banner.title(),
+            }),
+            p && (0, A.jsx)('div', { className: y.subTitle, children: p }),
+            (0, A.jsx)('div', { className: y.description, children: (0, A.jsx)(m, { text: l }) }),
+            (0, A.jsxs)('div', {
+                className: y.modeContainer,
+                children: [
+                    (0, A.jsx)('div', {
+                        className: y.modeLabel,
+                        children: R.strings.battle_royale_extention.tooltip.banner.mode.label(),
+                    }),
+                    k(R.strings.battle_royale_extention.tooltip.banner.mode.description()),
+                ],
+            }),
+            a !== j.Low &&
+                (0, A.jsxs)('div', {
+                    className: y.performance,
+                    children: [
+                        (0, A.jsx)('div', { className: y.performanceIcon }),
+                        (0, A.jsx)('div', {
+                            className: y.performanceTitle,
+                            children: `${R.strings.battle_royale_extention.tooltip.banner.performanceRisk.title.$dyn(a)}`,
+                        }),
+                        (0, A.jsx)('div', {
+                            className: y.performanceText,
+                            children: (0, A.jsx)(m, {
+                                text: `${R.strings.battle_royale_extention.tooltip.banner.performanceRisk.description.$dyn(a)}`,
+                            }),
+                        }),
+                    ],
+                }),
+            (0, A.jsx)('div', { className: y.separator }),
+            (0, A.jsx)(m, {
+                text: `${R.strings.battle_royale_extention.tooltip.banner.timer.text.$dyn(o)}`,
+                binding: { timer: (0, A.jsx)(n, { size: e.x24x24, type: o, start: s }) },
+                classMix: y.timerStatus,
+            }),
+        ],
+    });
+});
+t(
+    (0, A.jsx)(u, {
+        children: (0, A.jsx)(h, {
+            children: (0, A.jsx)(b, { children: (0, A.jsx)(b.Decorator, { children: (0, A.jsx)(N, {}) }) }),
+        }),
+    }),
+);

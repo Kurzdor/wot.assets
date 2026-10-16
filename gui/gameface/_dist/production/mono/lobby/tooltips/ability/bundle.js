@@ -1,0 +1,102 @@
+import {
+    Bt as s,
+    F as a,
+    Gt as e,
+    M as t,
+    N as r,
+    Nn as c,
+    Ut as i,
+    jr as n,
+    k as o,
+    ni as p,
+    q as l,
+    t as d,
+    zt as m,
+} from '../../chunks/lib.js';
+import '../../chunks/globals.js';
+import { i as j } from '../../chunks/vendor.js';
+import { t as u } from '../../chunks/common.js';
+var [x, _] = e()((s) => {
+    const a = s.observableModel.primitives(['params', 'type']);
+    return {
+        type: a.type,
+        computes: {
+            params: i.primitive(function (s) {
+                return s(a.params.get());
+            }),
+        },
+    };
+}, n);
+var h,
+    v = 'App_21e3a147',
+    N = 'App_header_62566856',
+    g = 'App_icon_24de08c2',
+    b = 'App_headerContainer_b23d7c80',
+    f = 'App_title_5ec15df',
+    y = 'App_cooldown_1072bf2a',
+    A = 'App_content_80741629',
+    k = 'App_container_58b78fd8',
+    w = 'App_description_fecd9a89',
+    S = c(),
+    L = R.images.gui.maps.icons.battleRoyale.artefact.c_80x80,
+    M =
+        ((h = o(r({ title: a(), iconName: a(), cooldownSeconds: t(), description: a() }))),
+        function () {
+            return _().model.computes.params(h);
+        }),
+    $ = p.resolve('strings'),
+    q = j(function () {
+        const { title: s, iconName: a, cooldownSeconds: e, description: t } = M(),
+            r = u($.readOrEmpty('tooltips.battle_royale.hangar.tankSetupPanel.ability.cooldownTime')),
+            c = u(t);
+        return (0, S.jsx)(d, {
+            children: (0, S.jsx)(d.Decorator, {
+                children: (0, S.jsx)('div', {
+                    className: v,
+                    children: (0, S.jsxs)('div', {
+                        className: k,
+                        children: [
+                            (0, S.jsxs)('div', {
+                                className: N,
+                                children: [
+                                    (0, S.jsx)('div', {
+                                        className: g,
+                                        style: { backgroundImage: `url(${L.$dyn(a)})` },
+                                    }),
+                                    (0, S.jsxs)('div', {
+                                        className: b,
+                                        children: [
+                                            (0, S.jsx)('div', { className: f, children: s }),
+                                            r.map(({ text: s, params: a }) =>
+                                                (0, S.jsx)(
+                                                    l,
+                                                    {
+                                                        upgradeLegacy: !0,
+                                                        text: s,
+                                                        params: { ...a, cooldown: e },
+                                                        className: y,
+                                                    },
+                                                    s,
+                                                ),
+                                            ),
+                                        ],
+                                    }),
+                                ],
+                            }),
+                            (0, S.jsx)('div', {
+                                className: A,
+                                children: c.map(({ text: s, params: a }) =>
+                                    (0, S.jsx)(
+                                        l,
+                                        { upgradeLegacy: !0, text: s, params: { ...a }, className: w, split: !0 },
+                                        s,
+                                    ),
+                                ),
+                            }),
+                        ],
+                    }),
+                }),
+            }),
+        });
+    });
+s((0, S.jsxs)(m, { children: [(0, S.jsx)(x, { children: (0, S.jsx)(q, {}) }), ','] }));

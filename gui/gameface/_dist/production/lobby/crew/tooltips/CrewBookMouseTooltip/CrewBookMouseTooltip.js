@@ -204,7 +204,7 @@
                         enableFullScreenModeSupported: () => L,
                         events: () => i.U,
                         extraSize: () => O,
-                        forceTriggerMouseMove: () => m,
+                        forceTriggerMouseMove: () => b,
                         freezeTextureBeforeResize: () => _,
                         getBrowserTexturePath: () => A,
                         getDisplayStatus: () => g,
@@ -214,7 +214,7 @@
                         getSize: () => d,
                         getViewGlobalPosition: () => B,
                         initExternalPaddings: () => R,
-                        isEventHandled: () => b,
+                        isEventHandled: () => m,
                         isFocused: () => v,
                         pxToRem: () => p,
                         remToPx: () => h,
@@ -278,10 +278,10 @@
                 function w() {
                     return viewEnv.setEventHandled();
                 }
-                function b() {
+                function m() {
                     return viewEnv.isEventHandled();
                 }
-                function m() {
+                function b() {
                     viewEnv.forceTriggerMouseMove();
                 }
                 function g() {
@@ -829,6 +829,11 @@
                     const d = a().useRef(null);
                     var D;
                     return (
+                        (0, i.useLayoutEffect)(() => {
+                            const u = o.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (D = () => {
                             const u = d.current;
                             if (!u)
@@ -838,7 +843,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
-                                o.O.view.resize(e, t);
+                                (o.O.view.resize(e, t),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const n = window.getComputedStyle(u);
                                 o.O.view.setSidePaddingsRem({
                                     left: parseInt(n.getPropertyValue('padding-left'), 10),
@@ -933,7 +940,7 @@
                             f = void 0 === h ? 0 : h,
                             v = u.onShow,
                             w = u.onHide,
-                            b = (function (u, e) {
+                            m = (function (u, e) {
                                 if (null == u) return {};
                                 var t = {};
                                 for (var n in u)
@@ -943,7 +950,7 @@
                                     }
                                 return t;
                             })(u, D);
-                        const m = (0, i.useRef)({ timeoutId: 0, isVisible: !1, prevTarget: null, hideTimerId: null }),
+                        const b = (0, i.useRef)({ timeoutId: 0, isVisible: !1, prevTarget: null, hideTimerId: null }),
                             g = (0, i.useMemo)(
                                 () =>
                                     f ||
@@ -969,30 +976,30 @@
                                 [f],
                             ),
                             y = (0, i.useCallback)(() => {
-                                (m.current.isVisible && m.current.timeoutId) ||
+                                (b.current.isVisible && b.current.timeoutId) ||
                                     (_(t, d, { isMouseEvent: !0, on: !0, arguments: B(n) }, g),
                                     v && v(),
-                                    (m.current.isVisible = !0));
+                                    (b.current.isVisible = !0));
                             }, [t, d, n, g, v]),
                             T = (0, i.useCallback)(() => {
-                                if (m.current.isVisible || m.current.timeoutId) {
-                                    const u = m.current.timeoutId;
-                                    (u > 0 && (clearTimeout(u), (m.current.timeoutId = 0)),
+                                if (b.current.isVisible || b.current.timeoutId) {
+                                    const u = b.current.timeoutId;
+                                    (u > 0 && (clearTimeout(u), (b.current.timeoutId = 0)),
                                         _(t, d, { on: !1 }, g),
-                                        m.current.isVisible && w && w(),
-                                        (m.current.isVisible = !1));
+                                        b.current.isVisible && w && w(),
+                                        (b.current.isVisible = !1));
                                 }
                             }, [t, d, g, w]),
                             k = (0, i.useCallback)((u) => {
-                                m.current.isVisible &&
-                                    ((m.current.prevTarget = document.elementFromPoint(u.clientX, u.clientY)),
-                                    (m.current.hideTimerId = window.setTimeout(() => {
+                                b.current.isVisible &&
+                                    ((b.current.prevTarget = document.elementFromPoint(u.clientX, u.clientY)),
+                                    (b.current.hideTimerId = window.setTimeout(() => {
                                         const e = document.elementFromPoint(u.clientX, u.clientY);
-                                        e && !e.isSameNode(m.current.prevTarget) && T();
+                                        e && !e.isSameNode(b.current.prevTarget) && T();
                                     }, 200)));
                             }, []);
                         ((0, i.useEffect)(() => {
-                            const u = m.current.hideTimerId;
+                            const u = b.current.hideTimerId;
                             return (
                                 document.addEventListener('wheel', k, { capture: !0 }),
                                 () => {
@@ -1023,8 +1030,8 @@
                                               (u) => {
                                                   (u.clientX === window.innerWidth &&
                                                       u.clientY === window.innerHeight) ||
-                                                      (clearTimeout(m.current.timeoutId),
-                                                      (m.current.timeoutId = window.setTimeout(y, F ? 100 : 400)),
+                                                      (clearTimeout(b.current.timeoutId),
+                                                      (b.current.timeoutId = window.setTimeout(y, F ? 100 : 400)),
                                                       r && r(u),
                                                       x && x(u));
                                               }),
@@ -1038,7 +1045,7 @@
                                               (!1 === c && T(), null == a || a(e), null == u || u(e));
                                           })(e.props.onMouseDown),
                                       },
-                                      b,
+                                      m,
                                   ),
                               )
                             : e;
@@ -1101,8 +1108,8 @@
                         w.apply(null, arguments)
                     );
                 }
-                const b = R.views.common.tooltip_window.simple_tooltip_content,
-                    m = (u) => {
+                const m = R.views.common.tooltip_window.simple_tooltip_content,
+                    b = (u) => {
                         let e = u.children,
                             t = u.body,
                             n = u.header,
@@ -1130,7 +1137,7 @@
                                 {
                                     contentId:
                                         ((A = null == s ? void 0 : s.hasHtmlContent),
-                                        A ? b.SimpleTooltipHtmlContent('resId') : b.SimpleTooltipContent('resId')),
+                                        A ? m.SimpleTooltipHtmlContent('resId') : m.SimpleTooltipContent('resId')),
                                     decoratorId: R.views.common.tooltip_window.tooltip_window.TooltipWindow('resId'),
                                     args: F,
                                 },
@@ -1157,7 +1164,7 @@
                 const y = ({ children: u, tooltipArgs: e, className: t }) => {
                     if (!e) return u;
                     const n = a().createElement('div', { className: t }, u);
-                    if (e.header || e.body) return a().createElement(m, e, n);
+                    if (e.header || e.body) return a().createElement(b, e, n);
                     const r = e.contentId;
                     return r ? a().createElement(C, g({}, e, { contentId: r }), n) : a().createElement(f, e, n);
                 };
@@ -1319,7 +1326,7 @@
                         o !== u.length && t(u.slice(o));
                     },
                     Y = new RegExp('[฀-๿][ัำ-ฺ็-๎]*|[^฀-๿]', 'gu'),
-                    Z = (u) => {
+                    $ = (u) => {
                         const e = [];
                         return (
                             K(
@@ -1338,7 +1345,7 @@
                             e
                         );
                     },
-                    $ = M
+                    Z = M
                         ? (u) => {
                               const e = [];
                               return (
@@ -1349,7 +1356,7 @@
                                           e.push(u);
                                       },
                                       (u) => {
-                                          e.push(...Z(u[0]));
+                                          e.push(...$(u[0]));
                                       },
                                   ),
                                   e
@@ -1374,7 +1381,7 @@
                                 u,
                                 /(\n+|[\xa0\ufeff]+)/g,
                                 (u) => {
-                                    n.push({ blockType: O.Word, colorTag: e, childList: $(u, t) });
+                                    n.push({ blockType: O.Word, colorTag: e, childList: Z(u, t) });
                                 },
                                 (u) => {
                                     const t = u[0],

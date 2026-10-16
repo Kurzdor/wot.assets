@@ -829,6 +829,11 @@
                     const A = a().useRef(null);
                     var F;
                     return (
+                        (0, i.useLayoutEffect)(() => {
+                            const e = o.O.client.getSize('rem');
+                            ((document.body.style.width = `${e.width}rem`),
+                                (document.body.style.height = `${e.height}rem`));
+                        }, []),
                         (F = () => {
                             const e = A.current;
                             if (!e)
@@ -838,7 +843,9 @@
                             const u = new ResizeObserver(() => {
                                 const u = e.scrollWidth,
                                     t = e.scrollHeight;
-                                o.O.view.resize(u, t);
+                                (o.O.view.resize(u, t),
+                                    (document.body.style.width = `${u}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const n = window.getComputedStyle(e);
                                 o.O.view.setSidePaddingsRem({
                                     left: parseInt(n.getPropertyValue('padding-left'), 10),

@@ -1,20 +1,24 @@
-import { j as s, W as a } from './vendor.js';
-import { dB as o, d7 as i } from './lib.js';
-const e = 'DivineGlow_2b9c4670',
-    l = 'DivineGlow_glow_fddce7f8',
-    d = 'DivineGlow_glow__bg_a3df35d7',
-    c = (s) => !!i.isHigh() && s,
-    m = ({ className: i, classNames: m, playerRef: r, animated: n = !0 }) =>
-        s.jsx('div', {
-            className: a(e, i),
-            children: c(n)
-                ? s.jsx(o, {
-                      className: a(l, m?.glow),
+import { r as s } from './rolldown-runtime.js';
+import { Cs as a, F as e, Na as l, es as o } from './lib.js';
+import { i } from './vendor.js';
+a();
+var r = s(i()),
+    d = 'DivineGlow_2b9c4670',
+    m = 'DivineGlow_glow_fddce7f8',
+    t = 'DivineGlow_glow__bg_a3df35d7',
+    f = s(l()),
+    c = (s) => !!o.isHigh() && s,
+    n = ({ className: s, classNames: a, playerRef: l, animated: o = !0 }) =>
+        (0, f.jsx)('div', {
+            className: (0, r.default)(d, s),
+            children: c(o)
+                ? (0, f.jsx)(e, {
+                      className: (0, r.default)(m, a?.glow),
                       src: String(R.videos.comp7.divine_glow()),
                       autoplay: !0,
                       loop: !0,
-                      ref: r,
+                      ref: l,
                   })
-                : s.jsx('div', { className: a(l, d, m?.glow) }),
+                : (0, f.jsx)('div', { className: (0, r.default)(m, t, a?.glow) }),
         });
-export { m as D };
+export { n as t };

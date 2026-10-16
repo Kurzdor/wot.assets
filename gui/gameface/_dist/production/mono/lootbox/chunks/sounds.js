@@ -1,32 +1,33 @@
-import { j as e, e as a } from './vendor.js';
-import { X as _ } from './lib.js';
-const i = 'PurchaseButton_46cf53f3',
+import { r as e } from './rolldown-runtime.js';
+import { Ft as a, Vt as _, ft as i } from './lib.js';
+var r = 'PurchaseButton_46cf53f3',
     o = 'PurchaseButton_image_9f3db31f',
     s = 'PurchaseButton_textBlock_97a7dc7d',
-    r = 'PurchaseButton_text_6d4bbfc',
-    t = 'PurchaseButton_icon_4fb4c378';
-function n({ text: n, image: u, sounds: c, icon: l, onClick: g, className: b }) {
-    return e.jsxs('div', {
-        className: a(i, b),
+    t = 'PurchaseButton_text_6d4bbfc',
+    u = 'PurchaseButton_icon_4fb4c378',
+    n = e(i());
+function l({ text: e, image: i, sounds: l, icon: c, onClick: g, className: b }) {
+    return (0, n.jsxs)('div', {
+        className: _(r, b),
         onClick: () => {
-            (_.click(), _.sound(c.purchaseClick), g());
+            (a.click(), a.sound(l.purchaseClick), g());
         },
         onMouseEnter: () => {
-            _.sound(c.purchaseHover);
+            a.sound(l.purchaseHover);
         },
         children: [
-            e.jsx('div', { className: o, style: { backgroundImage: `url(${u})` } }),
-            e.jsxs('div', {
+            (0, n.jsx)('div', { className: o, style: { backgroundImage: `url(${i})` } }),
+            (0, n.jsxs)('div', {
                 className: s,
                 children: [
-                    e.jsx('div', { className: r, children: n }),
-                    l && e.jsx('div', { className: t, style: { backgroundImage: `url(${l})` } }),
+                    (0, n.jsx)('div', { className: t, children: e }),
+                    c && (0, n.jsx)('div', { className: u, style: { backgroundImage: `url(${c})` } }),
                 ],
             }),
         ],
     });
 }
-const u = {
+var c = {
     entryHover: 'gui_lb_icon_hover',
     boxMouseEnter: 'gui_lb_highlight_on',
     boxMouseLeave: 'gui_lb_highlight_off',
@@ -46,4 +47,4 @@ const u = {
     infoPageTabHover: 'gui_lb_infopage_box_highlight',
     infoPageTabClick: 'gui_lb_infopage_box_click',
 };
-export { n as P, u as S };
+export { l as n, c as t };

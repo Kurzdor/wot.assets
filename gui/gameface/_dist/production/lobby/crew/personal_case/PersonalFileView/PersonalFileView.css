@@ -2120,8 +2120,8 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 26rem;
     align-self: center;
     background: url('R.images.gui.maps.icons.crew.profile.plus_icon') no-repeat center / contain;
-    filter: drop-shadow(0 0 32rem #e52) drop-shadow(0 0 30rem rgba(255, 42, 0, 0.8))
-        drop-shadow(0 0 8rem rgba(255, 127, 0, 0.25));
+    filter: drop-shadow(0 0 32px #e52) drop-shadow(0 0 30px rgba(255, 42, 0, 0.8))
+        drop-shadow(0 0 8px rgba(255, 127, 0, 0.25));
 }
 
 .mediaExtraLarge .AvailableSkill_base_c65be {

@@ -1,6 +1,7 @@
-import { r as e, j as _, a0 as a } from './vendor.js';
-import { bK as c, o as s, c3 as o } from './lib.js';
-const d = {
+import { r as e } from './rolldown-runtime.js';
+import { U as _, br as a, do as c, vo as s, xi as o } from './lib.js';
+import { i as d } from './vendor.js';
+var i = {
         bg0: [0],
         bg1: [1, 2, 3, 4],
         bg2: [5, 6, 7, 8, 9],
@@ -8,10 +9,12 @@ const d = {
         bg4: [15, 16, 17, 18, 19],
         bg5: [20],
     },
-    g = { progression_rewards_appearing: c('bp_unlock_big') },
-    i = {
-        root: 'LevelBadge_root_9ce59da6',
+    l = { progression_rewards_appearing: a('bp_unlock_big') },
+    g = e(c()),
+    n = e(d()),
+    b = {
         'media-wrapper': 'LevelBadge_media-wrapper_9ce59da6',
+        root: 'LevelBadge_root_9ce59da6',
         base: 'LevelBadge_7015330',
         base__c_110x110: 'LevelBadge_base__c_110x110_370a54ff',
         base__c_130x130: 'LevelBadge_base__c_130x130_d99f4b5',
@@ -28,32 +31,33 @@ const d = {
         icon__bg5: 'LevelBadge_icon__bg5_9ce59da6',
         video: 'LevelBadge_video_74ea48c7',
     },
-    l = { x110: 'c_110x110', x130: 'c_130x130', x190: 'c_190x190', x270: 'c_270x270', x320: 'c_320x320' },
-    n = new Map([[l.x110, l.x130]]),
-    b = s.resolve('videos');
-function r({ level: c, size: s, showAnimation: g }) {
-    const l = n.has(s) ? n.get(s) : s,
-        r = ((e) => Object.keys(d).find((_) => d[_].includes(e)) || 'bg0')(c),
-        v = e.useMemo(
-            () => ({ backgroundImage: `url(${R.images.frontline.gui.maps.icons.levelBadge.$dyn(l).$dyn(r)})` }),
-            [l, r],
+    r = o(),
+    v = { x110: 'c_110x110', x130: 'c_130x130', x190: 'c_190x190', x270: 'c_270x270', x320: 'c_320x320' },
+    x = new Map([[v.x110, v.x130]]),
+    t = s.resolve('videos');
+function m({ level: e, size: a, showAnimation: c }) {
+    const s = x.has(a) ? x.get(a) : a,
+        o = ((e) => Object.keys(i).find((_) => i[_].includes(e)) || 'bg0')(e),
+        d = (0, g.useMemo)(
+            () => ({ backgroundImage: `url(${R.images.frontline.gui.maps.icons.levelBadge.$dyn(s).$dyn(o)})` }),
+            [s, o],
         );
-    return _.jsxs('div', {
-        className: a(i.base, i[`base__${s}`]),
+    return (0, r.jsxs)('div', {
+        className: (0, n.default)(b.base, b[`base__${a}`]),
         children: [
-            _.jsx('div', {
-                className: a(i.icon, i[`icon__${r}`]),
-                style: v,
-                children: c > 0 && _.jsx('div', { className: i.level, children: c }),
+            (0, r.jsx)('div', {
+                className: (0, n.default)(b.icon, b[`icon__${o}`]),
+                style: d,
+                children: e > 0 && (0, r.jsx)('div', { className: b.level, children: e }),
             }),
-            g &&
-                _.jsx(o, {
-                    className: i.video,
-                    src: b.readOrEmpty('flProgressionScreen.badge_reflection'),
+            c &&
+                (0, r.jsx)(_, {
+                    className: b.video,
+                    src: t.readOrEmpty('flProgressionScreen.badge_reflection'),
                     loop: !0,
                     autoplay: !0,
                 }),
         ],
     });
 }
-export { r as L, l, g as s };
+export { v as n, l as r, m as t };

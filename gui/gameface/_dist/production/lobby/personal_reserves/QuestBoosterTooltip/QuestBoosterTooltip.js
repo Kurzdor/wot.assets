@@ -39,7 +39,7 @@
                 }
                 (t.r(F),
                     t.d(F, {
-                        addModelObserver: () => $,
+                        addModelObserver: () => j,
                         addPreloadTexture: () => z,
                         arabic2roman: () => Fu,
                         children: () => A,
@@ -50,7 +50,7 @@
                         extraSize: () => Du,
                         forceTriggerMouseMove: () => nu,
                         freezeTextureBeforeResize: () => Y,
-                        getBrowserTexturePath: () => j,
+                        getBrowserTexturePath: () => $,
                         getDisplayStatus: () => Eu,
                         getExternalPaddingsRem: () => ru,
                         getFontNames: () => Au,
@@ -168,11 +168,11 @@
                     g = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
                     w = Object.keys(g).reduce((u, e) => ((u[e] = () => l(g[e])), u), {}),
                     b = { play: Object.assign({}, w, { sound: l }), setRTPC: d },
-                    f = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'],
-                    h = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1e3];
+                    h = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'],
+                    f = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1e3];
                 function y(u) {
                     let e = '';
-                    for (let t = h.length - 1; t >= 0; t--) for (; u >= h[t];) ((e += f[t]), (u -= h[t]));
+                    for (let t = f.length - 1; t >= 0; t--) for (; u >= f[t];) ((e += h[t]), (u -= f[t]));
                     return e;
                 }
                 ['ko', 'no'].includes(R.strings.settings.LANGUAGE_CODE());
@@ -259,10 +259,10 @@
                 function W(u) {
                     viewEnv.setHitAreaPaddingsRem(u, u, u, u, U);
                 }
-                function j(u, e, t, n = 1) {
+                function $(u, e, t, n = 1) {
                     return viewEnv.getWebBrowserTexturePath(u, e, t, n);
                 }
-                function $(u, e, t) {
+                function j(u, e, t) {
                     return viewEnv.addDataChangedCallback(u, e, t);
                 }
                 function q(u) {
@@ -829,12 +829,12 @@
                     g = t(6609);
                 const w = 60,
                     b = 3600,
-                    f = 86400;
+                    h = 86400;
                 (Date.now(), g.Ew.getRegionalDateTime, g.Ew.getFormattedDateTime);
-                function h(u = 0) {
+                function f(u = 0) {
                     let e = u;
-                    const t = Math.trunc(e / f);
-                    e -= t * f;
+                    const t = Math.trunc(e / h);
+                    e -= t * h;
                     const n = Math.trunc(e / b);
                     e -= n * b;
                     const E = Math.trunc(e / w);
@@ -942,7 +942,7 @@
                                         );
                                     })();
                                 A && A[B] && A[B]();
-                                const c = L(h(B), t);
+                                const c = L(f(B), t);
                                 return E().createElement(
                                     'div',
                                     { className: o()(P, r) },
@@ -977,11 +977,11 @@
                         );
                     };
                 var W = t(2041);
-                function j() {
+                function $() {
                     return !1;
                 }
                 console.log;
-                var $ = t(3305);
+                var j = t(3305);
                 function q(u, e) {
                     var t = ('undefined' != typeof Symbol && u[Symbol.iterator]) || u['@@iterator'];
                     if (t) return (t = t.call(u)).next.bind(t);
@@ -1100,11 +1100,11 @@
                                                 observableModel: {
                                                     dict: (u) => {
                                                         const e = o(u),
-                                                            n = $.LO.box(e, { equals: j });
+                                                            n = j.LO.box(e, { equals: $ });
                                                         return (
                                                             'real' === t &&
                                                                 r.subscribe(
-                                                                    (0, $.aD)((u) => n.set(u)),
+                                                                    (0, j.aD)((u) => n.set(u)),
                                                                     u,
                                                                 ),
                                                             n
@@ -1112,11 +1112,11 @@
                                                     },
                                                     array: (u, e) => {
                                                         const n = null != e ? e : o(u),
-                                                            E = $.LO.box(n, { equals: j });
+                                                            E = j.LO.box(n, { equals: $ });
                                                         return (
                                                             'real' === t &&
                                                                 r.subscribe(
-                                                                    (0, $.aD)((u) => E.set(u)),
+                                                                    (0, j.aD)((u) => E.set(u)),
                                                                     u,
                                                                 ),
                                                             E
@@ -1124,11 +1124,11 @@
                                                     },
                                                     object: (u, e) => {
                                                         const n = null != e ? e : o(u),
-                                                            E = $.LO.box(n, { equals: j });
+                                                            E = j.LO.box(n, { equals: $ });
                                                         return (
                                                             'real' === t &&
                                                                 r.subscribe(
-                                                                    (0, $.aD)((u) => E.set(u)),
+                                                                    (0, j.aD)((u) => E.set(u)),
                                                                     u,
                                                                 ),
                                                             E
@@ -1138,13 +1138,13 @@
                                                         const n = o(e);
                                                         if (Array.isArray(u)) {
                                                             const E = u.reduce(
-                                                                (u, e) => ((u[e] = $.LO.box(n[e], {})), u),
+                                                                (u, e) => ((u[e] = j.LO.box(n[e], {})), u),
                                                                 {},
                                                             );
                                                             return (
                                                                 'real' === t &&
                                                                     r.subscribe(
-                                                                        (0, $.aD)((e) => {
+                                                                        (0, j.aD)((e) => {
                                                                             u.forEach((u) => {
                                                                                 E[u].set(e[u]);
                                                                             });
@@ -1158,13 +1158,13 @@
                                                             const E = u,
                                                                 A = Object.entries(E),
                                                                 F = A.reduce(
-                                                                    (u, [e, t]) => ((u[t] = $.LO.box(n[e], {})), u),
+                                                                    (u, [e, t]) => ((u[t] = j.LO.box(n[e], {})), u),
                                                                     {},
                                                                 );
                                                             return (
                                                                 'real' === t &&
                                                                     r.subscribe(
-                                                                        (0, $.aD)((u) => {
+                                                                        (0, j.aD)((u) => {
                                                                             A.forEach(([e, t]) => {
                                                                                 F[t].set(u[e]);
                                                                             });
@@ -1267,10 +1267,10 @@
                         const e = Z().model,
                             t = e.primitives,
                             n = e.computes.prices,
-                            A = t.willExpireAfter.get() * f,
+                            A = t.willExpireAfter.get() * h,
                             F = A > 0,
                             r = t.isPremium.get(),
-                            D = y(h(A), !0),
+                            D = y(f(A), !0),
                             a = R.images.gui.maps.icons.quests.bonuses.s232x174.$dyn(t.iconId.get()),
                             s = R.strings.tooltips.boostersWindow.booster.activateInfo.title.$dyn(
                                 e.primitives.reserveKind.get(),
@@ -1311,7 +1311,7 @@
                                     Boolean(d) && E().createElement('span', null, ' - ', d),
                                     '%',
                                 ),
-                                effectTime: E().createElement('span', null, L(h(t.totalDuration.get()), i.Description)),
+                                effectTime: E().createElement('span', null, L(f(t.totalDuration.get()), i.Description)),
                             },
                             g = {
                                 cost: E().createElement('span', { className: o()(Du, iu) }, C),
@@ -1436,6 +1436,11 @@
                     const i = E().useRef(null);
                     var a;
                     return (
+                        (0, n.useLayoutEffect)(() => {
+                            const u = T.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (a = () => {
                             const u = i.current;
                             if (!u)
@@ -1445,7 +1450,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
-                                T.O.view.resize(e, t);
+                                (T.O.view.resize(e, t),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const n = window.getComputedStyle(u);
                                 T.O.view.setSidePaddingsRem({
                                     left: parseInt(n.getPropertyValue('padding-left'), 10),

@@ -1,6 +1,9 @@
-import { W as e, j as a } from './vendor.js';
-import { p as r } from './lib.js';
-const _ = {
+import { r as e } from './rolldown-runtime.js';
+import { Cs as a, Na as r, Qo as _ } from './lib.js';
+import { i as t } from './vendor.js';
+a();
+var o = e(t()),
+    s = {
         base: 'ArrowButton_6b3aeda7',
         base__disabled: 'ArrowButton_base__disabled_66128a31',
         base__large: 'ArrowButton_base__large_ad074d68',
@@ -29,37 +32,38 @@ const _ = {
         blink: 'ArrowButton_blink_5327085d',
         slideUpIn: 'ArrowButton_slideUpIn_5327085d',
     },
-    t = ['default', 'hover', 'active', 'disabled'];
-function o({
-    size: o = 'large',
-    direction: s = 'left',
-    disabled: d = !1,
-    mouseEnterSound: l = 'highlight',
+    l = e(r()),
+    d = ['default', 'hover', 'active', 'disabled'];
+function n({
+    size: e = 'large',
+    direction: a = 'left',
+    disabled: r = !1,
+    mouseEnterSound: t = 'highlight',
     className: n,
     classNames: u,
     onMouseEnter: i,
     ...b
 }) {
-    const A = e(_.layer, u?.layer);
-    return a.jsx('div', {
-        className: e(_.base, _[`base__${s}`], _[`base__${o}`], d && _.base__disabled, n),
+    const A = (0, o.default)(s.layer, u?.layer);
+    return (0, l.jsx)('div', {
+        className: (0, o.default)(s.base, s[`base__${a}`], s[`base__${e}`], r && s.base__disabled, n),
         onMouseEnter: (e) => {
-            (i?.(e), r.sound(l));
+            (i?.(e), _.sound(t));
         },
         ...b,
-        children: a.jsx('div', {
-            className: _.layers,
-            children: t.map((r) =>
-                a.jsx(
+        children: (0, l.jsx)('div', {
+            className: s.layers,
+            children: d.map((a) =>
+                (0, l.jsx)(
                     'div',
                     {
-                        className: e(A, _[`layer__${r}`]),
-                        style: { backgroundImage: `url(R.images.comp7.gui.maps.icons.arrows.${r}_${o})` },
+                        className: (0, o.default)(A, s[`layer__${a}`]),
+                        style: { backgroundImage: `url(R.images.comp7.gui.maps.icons.arrows.${a}_${e})` },
                     },
-                    r,
+                    a,
                 ),
             ),
         }),
     });
 }
-export { o as A };
+export { n as t };

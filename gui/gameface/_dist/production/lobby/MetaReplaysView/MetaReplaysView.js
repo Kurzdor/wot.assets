@@ -4874,7 +4874,7 @@
                         'role_ATSPG_sniper',
                         'role_ATSPG_support',
                         'role_LT_universal',
-                        'role_LT_wheeled',
+                        'role_LT_scout',
                         'role_SPG',
                     ],
                     Ja = [

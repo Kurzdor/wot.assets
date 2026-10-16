@@ -55,7 +55,7 @@
                 }
                 (t.r(o),
                     t.d(o, {
-                        addModelObserver: () => P,
+                        addModelObserver: () => N,
                         addPreloadTexture: () => k,
                         arabic2roman: () => J,
                         children: () => a,
@@ -66,7 +66,7 @@
                         extraSize: () => te,
                         forceTriggerMouseMove: () => K,
                         freezeTextureBeforeResize: () => G,
-                        getBrowserTexturePath: () => N,
+                        getBrowserTexturePath: () => P,
                         getDisplayStatus: () => Z,
                         getExternalPaddingsRem: () => ee,
                         getFontNames: () => Q,
@@ -264,10 +264,10 @@
                 function O(e) {
                     viewEnv.setHitAreaPaddingsRem(e, e, e, e, M);
                 }
-                function N(e, u, t, n = 1) {
+                function P(e, u, t, n = 1) {
                     return viewEnv.getWebBrowserTexturePath(e, u, t, n);
                 }
-                function P(e, u, t) {
+                function N(e, u, t) {
                     return viewEnv.addDataChangedCallback(e, u, t);
                 }
                 function H(e) {
@@ -766,7 +766,7 @@
                     t.d(n, {
                         Area: () => He,
                         Bar: () => Oe,
-                        DefaultScroll: () => Pe,
+                        DefaultScroll: () => Ne,
                         Direction: () => ve,
                         defaultSettings: () => we,
                         useHorizontalScrollApi: () => Se,
@@ -1337,14 +1337,14 @@
                         O.apply(null, arguments)
                     );
                 }
-                const N = {
+                const P = {
                         [T.ExtraSmall]: '',
                         [T.Small]: S().SMALL_WIDTH,
                         [T.Medium]: `${S().SMALL_WIDTH} ${S().MEDIUM_WIDTH}`,
                         [T.Large]: `${S().SMALL_WIDTH} ${S().MEDIUM_WIDTH} ${S().LARGE_WIDTH}`,
                         [T.ExtraLarge]: `${S().SMALL_WIDTH} ${S().MEDIUM_WIDTH} ${S().LARGE_WIDTH} ${S().EXTRA_LARGE_WIDTH}`,
                     },
-                    P = {
+                    N = {
                         [L.ExtraSmall]: '',
                         [L.Small]: S().SMALL_HEIGHT,
                         [L.Medium]: `${S().SMALL_HEIGHT} ${S().MEDIUM_HEIGHT}`,
@@ -1375,7 +1375,7 @@
                             a = r.mediaWidth,
                             o = r.mediaHeight,
                             i = r.mediaSize;
-                        return s().createElement('div', O({ className: w()(t, N[a], P[o], H[i]) }, n), u);
+                        return s().createElement('div', O({ className: w()(t, P[a], N[o], H[i]) }, n), u);
                     },
                     W = ['children'],
                     z = (e) => {
@@ -1578,6 +1578,7 @@
                             (e.LootBox = 'lootBox'),
                             (e.BrCoin = 'brcoin'),
                             (e.Attachment = 'attachment'),
+                            (e.Pet = 'pet'),
                             e
                         );
                     })({}),
@@ -2501,12 +2502,12 @@
                             }),
                         );
                     }),
-                    Ne = {
+                    Pe = {
                         base: 'HorizontalScroll_base_a33a9',
                         wrapper: 'HorizontalScroll_wrapper_b622e',
                         defaultScrollArea: 'HorizontalScroll_defaultScrollArea_a2315',
                     },
-                    Pe = ({
+                    Ne = ({
                         children: e,
                         api: u,
                         className: t,
@@ -2519,15 +2520,15 @@
                     }) => {
                         const d = (0, i.useMemo)(() => {
                                 const e = n || {};
-                                return Object.assign({}, e, { base: w()(Ne.base, e.base) });
+                                return Object.assign({}, e, { base: w()(Pe.base, e.base) });
                             }, [n]),
                             E = (0, i.useMemo)(() => Object.assign({}, u, { handleMouseWheel: () => {} }), [u]);
                         return s().createElement(
                             'div',
-                            { className: w()(Ne.defaultScroll, t), onWheel: u.handleMouseWheel },
+                            { className: w()(Pe.defaultScroll, t), onWheel: u.handleMouseWheel },
                             s().createElement(
                                 'div',
-                                { className: w()(Ne.defaultScrollArea, r) },
+                                { className: w()(Pe.defaultScrollArea, r) },
                                 s().createElement(He, { className: o, api: E, classNames: a }, e),
                             ),
                             s().createElement(Oe, { getStepByRailClick: l, api: u, onDrag: c, classNames: d }),
@@ -2537,23 +2538,23 @@
                         (0, i.useEffect)(() => ge(e.recalculateContent)),
                         s().createElement(
                             'div',
-                            { className: w()(Ne.base, u) },
+                            { className: w()(Pe.base, u) },
                             s().createElement(
                                 'div',
                                 {
-                                    className: w()(Ne.wrapper, null == t ? void 0 : t.wrapper),
+                                    className: w()(Pe.wrapper, null == t ? void 0 : t.wrapper),
                                     onWheel: e.handleMouseWheel,
                                     ref: e.wrapperRef,
                                 },
                                 s().createElement(
                                     'div',
-                                    { className: w()(Ne.content, null == t ? void 0 : t.content), ref: e.contentRef },
+                                    { className: w()(Pe.content, null == t ? void 0 : t.content), ref: e.contentRef },
                                     n,
                                 ),
                             ),
                         )
                     );
-                ((He.Bar = Oe), (He.Default = Pe));
+                ((He.Bar = Oe), (He.Default = Ne));
                 const Ie = ye({
                         getBounds: (e) => [0, e.scrollHeight - e.offsetHeight],
                         getContainerSize: (e) => e.scrollHeight,

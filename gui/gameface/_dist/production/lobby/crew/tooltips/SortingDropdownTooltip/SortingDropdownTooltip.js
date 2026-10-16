@@ -391,6 +391,11 @@
                     const B = du().useRef(null);
                     var r;
                     return (
+                        (0, cu.useLayoutEffect)(() => {
+                            const u = lu.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (r = () => {
                             const u = B.current;
                             if (!u)
@@ -400,7 +405,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     A = u.scrollHeight;
-                                lu.view.resize(e, A);
+                                (lu.view.resize(e, A),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${A}px`));
                                 const F = window.getComputedStyle(u);
                                 lu.view.setSidePaddingsRem({
                                     left: parseInt(F.getPropertyValue('padding-left'), 10),

@@ -224,7 +224,7 @@
                     t.d(u, {
                         addModelObserver: () => E,
                         addPreloadTexture: () => l,
-                        arabic2roman: () => y,
+                        arabic2roman: () => S,
                         children: () => r,
                         displayStatus: () => i.W,
                         displayStatusIs: () => L,
@@ -236,7 +236,7 @@
                         getBrowserTexturePath: () => d,
                         getDisplayStatus: () => b,
                         getExternalPaddingsRem: () => x,
-                        getFontNames: () => S,
+                        getFontNames: () => y,
                         getScale: () => _,
                         getSize: () => F,
                         getViewGlobalPosition: () => D,
@@ -314,11 +314,11 @@
                 function b() {
                     return viewEnv.getShowingStatus();
                 }
-                const S = (() => {
+                const y = (() => {
                         let e = [];
                         return () => (0 === e.length && (e = Object.keys(viewEnv.getFontsConfig())), e);
                     })(),
-                    y = n.cg;
+                    S = n.cg;
                 function x() {
                     return viewEnv.getExternalPaddingsRem();
                 }
@@ -1118,14 +1118,14 @@
                         [B.Large]: `${_().SMALL_HEIGHT} ${_().MEDIUM_HEIGHT} ${_().LARGE_HEIGHT}`,
                         [B.ExtraLarge]: `${_().SMALL_HEIGHT} ${_().MEDIUM_HEIGHT} ${_().LARGE_HEIGHT} ${_().EXTRA_LARGE_HEIGHT}`,
                     },
-                    S = {
+                    y = {
                         [f.ExtraSmall]: '',
                         [f.Small]: _().SMALL,
                         [f.Medium]: `${_().SMALL} ${_().MEDIUM}`,
                         [f.Large]: `${_().SMALL} ${_().MEDIUM} ${_().LARGE}`,
                         [f.ExtraLarge]: `${_().SMALL} ${_().MEDIUM} ${_().LARGE} ${_().EXTRA_LARGE}`,
                     },
-                    y = (e) => {
+                    S = (e) => {
                         let u = e.children,
                             t = e.className,
                             n = (function (e, u) {
@@ -1142,7 +1142,7 @@
                             i = r.mediaWidth,
                             o = r.mediaHeight,
                             s = r.mediaSize;
-                        return a().createElement('div', v({ className: D()(t, w[i], b[o], S[s]) }, n), u);
+                        return a().createElement('div', v({ className: D()(t, w[i], b[o], y[s]) }, n), u);
                     },
                     x = ['children'];
                 const L = (e) => {
@@ -1157,7 +1157,7 @@
                                 }
                             return t;
                         })(e, x);
-                    return a().createElement(F, null, a().createElement(y, t, u));
+                    return a().createElement(F, null, a().createElement(S, t, u));
                 };
                 var M = t(533),
                     O = t.n(M),
@@ -1836,9 +1836,9 @@
                         var u;
                         return 0.9 * (null != (u = e.getWrapperSize()) ? u : 0);
                     },
-                    Se = () => {},
-                    ye = (e, u) => Math.max(20, e.offsetWidth * u),
-                    xe = (0, i.memo)(({ api: e, classNames: u = {}, getStepByRailClick: t = be, onDrag: n = Se }) => {
+                    ye = () => {},
+                    Se = (e, u) => Math.max(20, e.offsetWidth * u),
+                    xe = (0, i.memo)(({ api: e, classNames: u = {}, getStepByRailClick: t = be, onDrag: n = ye }) => {
                         const r = (0, i.useRef)(null),
                             o = (0, i.useRef)(null),
                             l = (0, i.useRef)(null),
@@ -1865,7 +1865,7 @@
                                 const i = e.animationScroll.scrollPosition.get(),
                                     a = Math.min(1, n / r),
                                     s = re(0, 1, i / (r - n)),
-                                    E = (u.offsetWidth - ye(u, a)) * s;
+                                    E = (u.offsetWidth - Se(u, a)) * s;
                                 ((t.style.transform = `translateX(${0 | E}px)`),
                                     ((e) => {
                                         if (o.current && l.current && c.current && d.current) {
@@ -1896,7 +1896,7 @@
                                         i = e.getContainerSize();
                                     if (!(i && u && n && t)) return;
                                     const a = Math.min(1, n / i);
-                                    ((u.style.width = `${ye(t, a)}px`),
+                                    ((u.style.width = `${Se(t, a)}px`),
                                         (u.style.display = 'flex'),
                                         r.current &&
                                             (1 !== a ? r.current.classList.add(_e) : r.current.classList.remove(_e)));
@@ -1910,7 +1910,7 @@
                                         const u = () => {
                                             _();
                                         };
-                                        let t = Se;
+                                        let t = ye;
                                         const n = () => {
                                             (t(), (t = ne(f)));
                                         };
@@ -2460,12 +2460,8 @@
                                     }
                                 return t;
                             })(e, au);
-                        const h = (0, i.useRef)(null),
-                            p = (0, i.useState)(!0),
-                            v = p[0],
-                            w = p[1];
+                        const h = (0, i.useRef)(null);
                         return (
-                            (0, i.useEffect)(() => ne(() => w(!1)), []),
                             (0, i.useEffect)(() => {
                                 const e = h.current;
                                 if (!e) return;
@@ -2500,7 +2496,7 @@
                                         (o(l[e]), s(e, u), e === i && (_(), F || clearInterval(A)));
                                     }, c);
                                 return () => clearInterval(A);
-                            }, [v, r, c, n, t, E, F, s, _, D, u, g]),
+                            }, [r, c, n, t, E, F, s, _, D, u, g]),
                             a().createElement('canvas', ou({}, B, { width: u, height: t, ref: h }))
                         );
                     }),
@@ -2658,14 +2654,14 @@
                                   Object.assign(
                                       {
                                           onMouseEnter:
-                                              ((S = u.props.onMouseEnter),
+                                              ((y = u.props.onMouseEnter),
                                               (e) => {
                                                   (e.clientX === window.innerWidth &&
                                                       e.clientY === window.innerHeight) ||
                                                       (clearTimeout(h.current.timeoutId),
                                                       (h.current.timeoutId = window.setTimeout(v, c ? 100 : 400)),
                                                       r && r(e),
-                                                      S && S(e));
+                                                      y && y(e));
                                               }),
                                           onMouseLeave: ((e) => (u) => {
                                               (w(), null == a || a(u), null == e || e(u));
@@ -2681,7 +2677,7 @@
                                   ),
                               )
                             : u;
-                        var S;
+                        var y;
                     },
                     mu = ['children', 'body', 'header', 'note', 'alert', 'args'];
                 function Du() {
@@ -2860,8 +2856,8 @@
                     vu = { width: 320, height: 440 },
                     wu = { width: 360, height: 500 },
                     bu = { width: 460, height: 600 },
-                    Su = 17,
-                    yu = 48,
+                    yu = 17,
+                    Su = 48,
                     xu = (0, I.Pi)(({ collectionId: e, isLast: u = !1 }) => {
                         const t = J(),
                             n = t.controls,
@@ -2883,9 +2879,9 @@
                             v = B.isActive,
                             w = B.isNew,
                             b = r.hasNewCollection(),
-                            S = h(),
-                            y = S.mediaSize,
-                            x = S.remScreenWidth,
+                            y = h(),
+                            S = y.mediaSize,
+                            x = y.remScreenWidth,
                             L = ((e, u, t) => {
                                 const n = e.itemCount,
                                     r = e.maxCount,
@@ -2959,7 +2955,7 @@
                                     default:
                                         return bu;
                                 }
-                            })(y),
+                            })(S),
                             O = x / 2 + M.width + 30,
                             T = (0, Ee.useSpring)({
                                 from: { transform: `translateX(-${O}rem)`, marginLeft: `-${M.width + 30}rem` },
@@ -2974,7 +2970,7 @@
                         ((0, i.useEffect)(() => {
                             b && s === su.Play && k();
                         }, [b, s]),
-                            (0, i.useEffect)(() => g(M), [y, M]));
+                            (0, i.useEffect)(() => g(M), [S, M]));
                         const N = ae((e) =>
                                 Qe(
                                     R.images,
@@ -3015,9 +3011,9 @@
                                     a().createElement(cu, {
                                         width: viewEnv.remToPx(_.width),
                                         height: viewEnv.remToPx(_.height),
-                                        frameCount: Su,
+                                        frameCount: yu,
                                         getSrcByFrame: N,
-                                        frameTime: yu,
+                                        frameTime: Su,
                                         state: s,
                                         loop: !1,
                                         revers: d,

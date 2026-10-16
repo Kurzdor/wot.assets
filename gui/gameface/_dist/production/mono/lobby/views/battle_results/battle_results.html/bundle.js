@@ -1017,18 +1017,16 @@ const za = [Te, Ua, Se, Oa, Ie, Ce],
             children: d
                 ? r.jsxs(r.Fragment, {
                       children: [
-                          s
-                              .slice(0, t)
-                              .map((e, s) =>
-                                  r.jsxs(
-                                      'div',
-                                      {
-                                          className: _,
-                                          children: [r.jsx(ae, { size: a, ...e }), r.jsx('div', { className: Za })],
-                                      },
-                                      s,
-                                  ),
+                          s.slice(0, t).map((e, s) =>
+                              r.jsxs(
+                                  'div',
+                                  {
+                                      className: _,
+                                      children: [r.jsx(ae, { size: a, ...e }), r.jsx('div', { className: Za })],
+                                  },
+                                  s,
                               ),
+                          ),
                           r.jsxs('div', {
                               className: _,
                               children: [

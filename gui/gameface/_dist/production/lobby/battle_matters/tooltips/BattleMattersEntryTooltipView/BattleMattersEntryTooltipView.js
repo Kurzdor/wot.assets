@@ -46,7 +46,7 @@
                         displayStatus: () => R,
                         displayStatusIs: () => au,
                         enableFullScreenModeSupported: () => iu,
-                        events: () => P,
+                        events: () => y,
                         extraSize: () => su,
                         forceTriggerMouseMove: () => uu,
                         freezeTextureBeforeResize: () => V,
@@ -176,7 +176,7 @@
                     return `url(${w(u, e, t)})`;
                 }
                 const R = { showing: 0, shown: 1, hiding: 2, hidden: 3 },
-                    P = {
+                    y = {
                         onTextureFrozen: o('self.onTextureFrozen'),
                         onTextureReady: o('self.onTextureReady'),
                         onDomBuilt: o('self.onDomBuilt'),
@@ -192,7 +192,7 @@
                             onRequestPosition: o('children.requestPosition'),
                         },
                     },
-                    y = ['args'];
+                    P = ['args'];
                 const S = 2,
                     O = 16,
                     x = 32,
@@ -210,7 +210,7 @@
                                             t[n] = u[n];
                                         }
                                     return t;
-                                })(e, y);
+                                })(e, P);
                             return void 0 !== r
                                 ? viewEnv.handleViewEvent(
                                       Object.assign({ __Type: t, type: u }, a, {
@@ -320,7 +320,7 @@
                     },
                     ou = Promise.all([
                         new Promise((u) => {
-                            window.isDomBuilt ? u() : P.onDomBuilt(u);
+                            window.isDomBuilt ? u() : y.onDomBuilt(u);
                         }),
                         engine.whenReady,
                     ]);
@@ -789,6 +789,11 @@
                     const D = o().useRef(null);
                     var d;
                     return (
+                        (0, s.useLayoutEffect)(() => {
+                            const u = a.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (d = () => {
                             const u = D.current;
                             if (!u)
@@ -798,7 +803,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
-                                a.O.view.resize(e, t);
+                                (a.O.view.resize(e, t),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const n = window.getComputedStyle(u);
                                 a.O.view.setSidePaddingsRem({
                                     left: parseInt(n.getPropertyValue('padding-left'), 10),
@@ -907,13 +914,13 @@
                         })(u, e);
                     };
                 var T = t(828),
-                    P = t(609);
-                const y = 1e3,
+                    y = t(609);
+                const P = 1e3,
                     S = 60,
                     O = 3600,
                     x = 86400,
-                    k = (Date.now(), P.Ew.getRegionalDateTime);
-                P.Ew.getFormattedDateTime;
+                    k = (Date.now(), y.Ew.getRegionalDateTime);
+                y.Ew.getFormattedDateTime;
                 const N = () => {},
                     M = (u = 0, e, t = 0, n = N) => {
                         const r = (0, s.useState)(u),
@@ -926,10 +933,10 @@
                                     const r = Date.now(),
                                         a = setInterval(
                                             () => {
-                                                const e = u - Math.floor((Date.now() - r) / y);
+                                                const e = u - Math.floor((Date.now() - r) / P);
                                                 null !== t && e <= t ? (o(t), n && n(), clearInterval(a)) : o(e);
                                             },
-                                            (e || (u > 120 ? S : 1)) * y,
+                                            (e || (u > 120 ? S : 1)) * P,
                                         );
                                     return () => {
                                         clearInterval(a);
@@ -1026,7 +1033,7 @@
                     j = 'Timer_base_d60a2',
                     V = 'Timer_icon_b6407',
                     Y = (0, s.memo)(({ endDate: u, className: e }) => {
-                        const t = Math.floor(Date.now() / y),
+                        const t = Math.floor(Date.now() / P),
                             n = (function (u = 0) {
                                 let e = u;
                                 const t = Math.trunc(e / x);
@@ -1136,6 +1143,7 @@
                             (u.LootBox = 'lootBox'),
                             (u.BrCoin = 'brcoin'),
                             (u.Attachment = 'attachment'),
+                            (u.Pet = 'pet'),
                             u
                         );
                     })({}),
@@ -1312,6 +1320,7 @@
                             case 'groups':
                             case 'tmanToken':
                             case 'battlePassSelectToken':
+                            case 'pet':
                                 return `R.images.gui.maps.icons.quests.bonuses.${e}.${a}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${e}.${a}`;
@@ -1680,7 +1689,7 @@
                                 ),
                         );
                     }),
-                    Pu = [
+                    yu = [
                         'children',
                         'contentId',
                         'args',
@@ -1696,7 +1705,7 @@
                         'onShow',
                         'onHide',
                     ];
-                function yu(u) {
+                function Pu(u) {
                     return Object.entries(u || {}).map(([u, e]) => {
                         const t = { __Type: 'GFValueProxy', name: u };
                         switch (typeof e) {
@@ -1757,7 +1766,7 @@
                                         t[n] = u[n];
                                     }
                                 return t;
-                            })(u, Pu);
+                            })(u, yu);
                         const b = (0, s.useRef)({ timeoutId: 0, isVisible: !1, prevTarget: null, hideTimerId: null }),
                             f = (0, s.useMemo)(
                                 () =>
@@ -1785,7 +1794,7 @@
                             ),
                             h = (0, s.useCallback)(() => {
                                 (b.current.isVisible && b.current.timeoutId) ||
-                                    (Su(t, D, { isMouseEvent: !0, on: !0, arguments: yu(n) }, f),
+                                    (Su(t, D, { isMouseEvent: !0, on: !0, arguments: Pu(n) }, f),
                                     C && C(),
                                     (b.current.isVisible = !0));
                             }, [t, D, n, f, C]),
@@ -2134,7 +2143,12 @@
                                             },
                                             m,
                                         ),
-                                    l && o().createElement('div', { className: zu.title }, l),
+                                    l &&
+                                        o().createElement(
+                                            'div',
+                                            { className: r()(zu.title, null == c ? void 0 : c.title) },
+                                            l,
+                                        ),
                                 ),
                             ),
                             t &&
@@ -2569,9 +2583,9 @@
                         },
                     ),
                     Re = ['onComplete', 'onEndAnimation'];
-                function Pe() {
+                function ye() {
                     return (
-                        (Pe = Object.assign
+                        (ye = Object.assign
                             ? Object.assign.bind()
                             : function (u) {
                                   for (var e = 1; e < arguments.length; e++) {
@@ -2580,10 +2594,10 @@
                                   }
                                   return u;
                               }),
-                        Pe.apply(null, arguments)
+                        ye.apply(null, arguments)
                     );
                 }
-                const ye = (0, s.memo)((u) => {
+                const Pe = (0, s.memo)((u) => {
                         let e = u.onComplete,
                             t = u.onEndAnimation,
                             n = (function (u, e) {
@@ -2605,9 +2619,9 @@
                             }, [a, e, t, n.to]);
                         switch (n.animationSettings.type) {
                             case oe.Simple:
-                                return o().createElement(Te, Pe({}, n, { onEndAnimation: l, isComplete: a }));
+                                return o().createElement(Te, ye({}, n, { onEndAnimation: l, isComplete: a }));
                             case oe.Growing:
-                                return o().createElement(fe, Pe({}, n, { onEndAnimation: l, isComplete: a }));
+                                return o().createElement(fe, ye({}, n, { onEndAnimation: l, isComplete: a }));
                             default:
                                 return null;
                         }
@@ -2657,7 +2671,7 @@
                     return (
                         (n.current.from = a),
                         o().createElement(
-                            ye,
+                            Pe,
                             xe({}, t, {
                                 onEndAnimation: r,
                                 key: `${a}-${t.to}-${null == t ? void 0 : t.additionalKey}`,
@@ -2716,7 +2730,7 @@
                             };
                             return s.withStack
                                 ? o().createElement(ke, A)
-                                : o().createElement(ye, Ne({ key: `${r}-${e}-${a}` }, A));
+                                : o().createElement(Pe, Ne({ key: `${r}-${e}-${a}` }, A));
                         },
                     ),
                     Ie = (u) => {

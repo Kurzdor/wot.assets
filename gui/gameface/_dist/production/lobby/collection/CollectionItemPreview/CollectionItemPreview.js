@@ -1696,6 +1696,7 @@
                             (e.LootBox = 'lootBox'),
                             (e.BrCoin = 'brcoin'),
                             (e.Attachment = 'attachment'),
+                            (e.Pet = 'pet'),
                             e
                         );
                     })({}),
@@ -1823,6 +1824,7 @@
                             case 'groups':
                             case 'tmanToken':
                             case 'battlePassSelectToken':
+                            case 'pet':
                                 return `R.images.gui.maps.icons.quests.bonuses.${t}.${r}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${t}.${r}`;

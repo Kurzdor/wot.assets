@@ -161,12 +161,12 @@
                         isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                         get: () => viewEnv.getGraphicsQuality(),
                     },
-                    g = {
+                    h = {
                         toUpperCase: (u) => window.systemLocale.toUpperCase(u),
                         toLowerCase: (u) => window.systemLocale.toLowerCase(u),
                     },
-                    h = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
-                    v = Object.keys(h).reduce((u, e) => ((u[e] = () => m(h[e])), u), {}),
+                    g = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    v = Object.keys(g).reduce((u, e) => ((u[e] = () => m(g[e])), u), {}),
                     p = { play: Object.assign({}, v, { sound: m }), setRTPC: _ },
                     w = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'],
                     T = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1e3];
@@ -343,7 +343,7 @@
                     }
                     (e(), engine.on('self.onPaddingsUpdated', () => e()));
                 }
-                const su = { view: a, client: i, sound: p, intl: g };
+                const su = { view: a, client: i, sound: p, intl: h };
             },
             973: (u, e, t) => {
                 t.d(e, { Z: () => n });
@@ -625,11 +625,11 @@
                     f = (u, e) => {
                         u.keyCode === l.ESCAPE && e();
                     };
-                var g = t(533);
-                const h = i.instance,
+                var h = t(533);
+                const g = i.instance,
                     v = {
                         DataTracker: n.Z,
-                        ViewModel: g.Z,
+                        ViewModel: h.Z,
                         ViewEventType: o,
                         NumberFormatType: s,
                         RealFormatType: E,
@@ -706,7 +706,7 @@
                                 }
                             return t;
                         },
-                        ClickOutsideManager: h,
+                        ClickOutsideManager: g,
                         SystemLocale: a.Z5,
                         UserLocale: a.cy,
                     };
@@ -837,9 +837,9 @@
                         B = i.extraLargeHeight,
                         C = i.largeHeight,
                         f = i.mediumHeight,
-                        g = i.smallHeight,
-                        h = i.extraSmallHeight,
-                        v = { extraLarge: B, large: C, medium: f, small: g, extraSmall: h };
+                        h = i.smallHeight,
+                        g = i.extraSmallHeight,
+                        v = { extraLarge: B, large: C, medium: f, small: h, extraSmall: g };
                     if (t.extraLarge || t.large || t.medium || t.small || t.extraSmall) {
                         if (t.extraLarge && a) return e;
                         if (t.large && o) return e;
@@ -862,8 +862,8 @@
                             if (t.extraLargeHeight && B) return e;
                             if (t.largeHeight && C) return e;
                             if (t.mediumHeight && f) return e;
-                            if (t.smallHeight && g) return e;
-                            if (t.extraSmallHeight && h) return e;
+                            if (t.smallHeight && h) return e;
+                            if (t.extraSmallHeight && g) return e;
                         }
                     }
                     return null;
@@ -939,6 +939,11 @@
                     const A = i().useRef(null);
                     var F;
                     return (
+                        (0, r.useLayoutEffect)(() => {
+                            const u = a.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (F = () => {
                             const u = A.current;
                             if (!u)
@@ -948,7 +953,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
-                                a.O.view.resize(e, t);
+                                (a.O.view.resize(e, t),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const r = window.getComputedStyle(u);
                                 a.O.view.setSidePaddingsRem({
                                     left: parseInt(r.getPropertyValue('padding-left'), 10),
@@ -972,11 +979,11 @@
                         )
                     );
                 });
-                function g(u, e) {
+                function h(u, e) {
                     return u.replace(/\{\w+\}/g, (u) => String(e[u.slice(1, -1)]));
                 }
                 t(795);
-                const h = (u) => u.replace(/&nbsp;/g, ' ');
+                const g = (u) => u.replace(/&nbsp;/g, ' ');
                 new RegExp(
                     [
                         /[\(\u2E80-\u2E99\u2E9B-\u2EF3\u2F00-\u2FD5\u3005\u3007\u3021-\u3029\u3038-\u303B\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFA6D\uFA70-\uFAD9\u{16FE2}\u{16FE3}\u{16FF0}\u{16FF1}\u{20000}-\u{2A6DF}\u{2A700}-\u{2B738}\u{2B740}-\u{2B81D}\u{2B820}-\u{2CEA1}\u{2CEB0}-\u{2EBE0}\u{2F800}-\u{2FA1D}\u{30000}-\u{3134A}]?[\u3002\uFF01\uFF0C\uFF1A\uFF1B\uFF1F]?[ %\+\x2D-9A-Za-\{\}\xA0\xC0-\u0237\u2013\u2014\u2026]+[\)\u2E80-\u2E99\u2E9B-\u2EF3\u2F00-\u2FD5\u3002\u3005\u3007\u3021-\u3029\u3038-\u303B\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFA6D\uFA70-\uFAD9\uFF01\uFF0C\uFF1A\uFF1B\uFF1F\u{16FE2}\u{16FE3}\u{16FF0}\u{16FF1}\u{20000}-\u{2A6DF}\u{2A700}-\u{2B738}\u{2B740}-\u{2B81D}\u{2B820}-\u{2CEA1}\u{2CEB0}-\u{2EBE0}\u{2F800}-\u{2FA1D}\u{30000}-\u{3134A}]?[\u3002\uFF01\uFF0C\uFF1A\uFF1B\uFF1F]?/gmu,
@@ -1224,80 +1231,80 @@
                 ((V = U),
                     (U.percent = (u, e, t) => {
                         const r = V.default(u, e, t);
-                        return h(g(R.strings.modifier_formatter.modifier.format.percentage(), { value: r }));
+                        return g(h(R.strings.modifier_formatter.modifier.format.percentage(), { value: r }));
                     }),
                     (U.multiplier = (u, e, t) => {
                         const r = V.default(u, e, t);
-                        return h(g(R.strings.modifier_formatter.modifier.format.multiplier(), { value: r }));
+                        return g(h(R.strings.modifier_formatter.modifier.format.multiplier(), { value: r }));
                     }),
                     (U.hitpoints = (u, e, t) => {
                         const r = V.default(u, e, t);
-                        return h(g(R.strings.modifier_formatter.modifier.format.hitpoints(), { value: r }));
+                        return g(h(R.strings.modifier_formatter.modifier.format.hitpoints(), { value: r }));
                     }),
                     (U.seconds = (u, e, t) => {
                         const r = V.default(u, e, t);
-                        return h(g(R.strings.modifier_formatter.modifier.format.seconds(), { value: r }));
+                        return g(h(R.strings.modifier_formatter.modifier.format.seconds(), { value: r }));
                     }),
                     (U.minutes = (u, e, t) => {
                         const r = V.default(u, e, t);
-                        return h(g(R.strings.modifier_formatter.modifier.format.minutes(), { value: r }));
+                        return g(h(R.strings.modifier_formatter.modifier.format.minutes(), { value: r }));
                     }),
                     (U.deviation = (u, e, t) => {
                         const r = V.default(u, e, t);
-                        return h(g(R.strings.modifier_formatter.modifier.format.deviation(), { value: r }));
+                        return g(h(R.strings.modifier_formatter.modifier.format.deviation(), { value: r }));
                     }),
                     (U.millimeters = (u, e, t) => {
                         const r = V.default(u, e, t);
-                        return h(g(R.strings.modifier_formatter.modifier.format.millimeters(), { value: r }));
+                        return g(h(R.strings.modifier_formatter.modifier.format.millimeters(), { value: r }));
                     }),
                     (U.degree = (u, e, t) => {
                         const r = V.default(u, e, t);
-                        return h(g(R.strings.modifier_formatter.modifier.format.degrees(), { value: r }));
+                        return g(h(R.strings.modifier_formatter.modifier.format.degrees(), { value: r }));
                     }),
                     (U.meters = (u, e, t) => {
                         const r = V.default(u, e, t);
-                        return h(g(R.strings.modifier_formatter.modifier.format.meters(), { value: r }));
+                        return g(h(R.strings.modifier_formatter.modifier.format.meters(), { value: r }));
                     }),
                     (U.kmPerHour = (u, e, t) => {
                         const r = V.default(u, e, t);
-                        return h(g(R.strings.modifier_formatter.modifier.format.km_per_hour(), { value: r }));
+                        return g(h(R.strings.modifier_formatter.modifier.format.km_per_hour(), { value: r }));
                     }),
                     (U.metersPerSecond = (u, e, t) => {
                         const r = V.default(u, e, t);
-                        return h(g(R.strings.modifier_formatter.modifier.format.meters_per_second(), { value: r }));
+                        return g(h(R.strings.modifier_formatter.modifier.format.meters_per_second(), { value: r }));
                     }),
                     (U.degreesPerSecond = (u, e, t) => {
                         const r = V.default(u, e, t);
-                        return h(g(R.strings.modifier_formatter.modifier.format.degrees_per_second(), { value: r }));
+                        return g(h(R.strings.modifier_formatter.modifier.format.degrees_per_second(), { value: r }));
                     }),
                     (U.meterPerSecondSquared = (u, e, t) => {
                         const r = V.default(u, e, t);
-                        return h(
-                            g(R.strings.modifier_formatter.modifier.format.meter_per_second_squared(), { value: r }),
+                        return g(
+                            h(R.strings.modifier_formatter.modifier.format.meter_per_second_squared(), { value: r }),
                         );
                     }),
                     (U.horsepower = (u, e, t) => {
                         const r = V.default(u, e, t);
-                        return h(g(R.strings.modifier_formatter.modifier.format.horsepower(), { value: r }));
+                        return g(h(R.strings.modifier_formatter.modifier.format.horsepower(), { value: r }));
                     }),
                     (U.logic = (u) =>
                         u
                             ? R.strings.modifier_formatter.modifier.format.logic.on()
-                            : h(R.strings.modifier_formatter.modifier.format.logic.off())),
+                            : g(R.strings.modifier_formatter.modifier.format.logic.off())),
                     (U.time = (u, e, t) => {
                         const r = u >= 0 ? t : '-',
                             i = ((u, e = !0) =>
                                 u.days > 7 && e
-                                    ? g(R.strings.common.duration.days(), { days: u.days })
+                                    ? h(R.strings.common.duration.days(), { days: u.days })
                                     : u.days >= 1
                                       ? 0 === u.hours
-                                          ? g(R.strings.common.duration.days(), { days: u.days })
-                                          : `${g(R.strings.common.duration.days(), { days: u.days })} ${g(R.strings.common.duration.hours(), { hours: u.hours })}`
+                                          ? h(R.strings.common.duration.days(), { days: u.days })
+                                          : `${h(R.strings.common.duration.days(), { days: u.days })} ${h(R.strings.common.duration.hours(), { hours: u.hours })}`
                                       : u.hours >= 1
                                         ? 0 === u.minutes
-                                            ? g(R.strings.common.duration.hours(), { hours: u.hours })
-                                            : `${g(R.strings.common.duration.hours(), { hours: u.hours })} ${g(R.strings.common.duration.minutes(), { minutes: u.minutes })}`
-                                        : g(R.strings.common.duration.minutes(), { minutes: u.minutes || 1 }))(
+                                            ? h(R.strings.common.duration.hours(), { hours: u.hours })
+                                            : `${h(R.strings.common.duration.hours(), { hours: u.hours })} ${h(R.strings.common.duration.minutes(), { minutes: u.minutes })}`
+                                        : h(R.strings.common.duration.minutes(), { minutes: u.minutes || 1 }))(
                                 (function (u = 0) {
                                     let e = u;
                                     const t = Math.trunc(e / 86400);
@@ -1309,7 +1316,7 @@
                                 })(Math.abs(u)),
                                 !1,
                             );
-                        return h(`${r}${i}`);
+                        return g(`${r}${i}`);
                     }),
                     (U.default = (u, e, t) => {
                         const r = u >= 0 ? t : '',
@@ -1553,15 +1560,15 @@
                                                 e.limits.forEach(({ value: r }) => {
                                                     t[r.limitType] = u.formatRestriction(e, r.value);
                                                 }),
-                                                h(
-                                                    g(
+                                                g(
+                                                    h(
                                                         R.strings.battle_modifiers.modifiersDomainTooltip.restrict.twoRestriction(),
                                                         {
-                                                            min: g(
+                                                            min: h(
                                                                 R.strings.battle_modifiers.modifiersDomainTooltip.restrict.min(),
                                                                 { value: t.min },
                                                             ),
-                                                            max: g(
+                                                            max: h(
                                                                 R.strings.battle_modifiers.modifiersDomainTooltip.restrict.max(),
                                                                 { value: t.max },
                                                             ),
@@ -1578,11 +1585,11 @@
                                             return 'string' != typeof r
                                                 ? (console.warn(`prefix was not found for limitType: "${t.limitType}"`),
                                                   null)
-                                                : h(
-                                                      g(
+                                                : g(
+                                                      h(
                                                           R.strings.battle_modifiers.modifiersDomainTooltip.restrict.oneRestriction(),
                                                           {
-                                                              restriction: g(r, {
+                                                              restriction: h(r, {
                                                                   value: u.formatRestriction(e, t.value),
                                                               }),
                                                           },

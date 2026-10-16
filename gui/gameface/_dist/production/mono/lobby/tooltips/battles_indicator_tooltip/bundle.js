@@ -1,0 +1,80 @@
+import { r as s } from '../../chunks/rolldown-runtime.js';
+import { Cs as t, Ho as a, Hr as o, Mr as e, Na as i, _i as l, fi as n, q as c } from '../../chunks/lib.js';
+import '../../chunks/_wg-global-styles.js';
+import { a as r, i as d } from '../../chunks/vendor.js';
+/* empty css                  */ import { o as p } from '../../chunks/enums.js';
+import { t as m } from '../../chunks/formatted_statistic_value.js';
+import { t as _ } from '../../chunks/tooltip_decorator.js';
+t();
+var u = s(d(), 1),
+    [j, x] = l()(({ observableModel: s }) => ({ root: s.object() }), a),
+    h = 'App_57dacaa2',
+    b = 'App_heading_ade6eef',
+    v = 'App_count_d181c83a',
+    g = 'App_listHeading_4659093e',
+    f = 'App_list_689fd49d',
+    N = 'App_listItem_73c5e518',
+    A = 'App_value_a9335078',
+    k = 'App_icon_914cb923',
+    C = 'App_icon__solo_1bb3c1ec',
+    B = 'App_icon__platoon_65811861',
+    I = s(i(), 1),
+    T = r(function () {
+        const { model: s } = x(),
+            { statisticsMode: t, soloBattlesCount: a, superPlatoonBattlesCount: o } = s.root.get();
+        return (0, I.jsxs)('div', {
+            className: h,
+            children: [
+                (0, I.jsx)(e, {
+                    text:
+                        t === p.Season
+                            ? R.strings.comp7_ext.battlesIndicatorTooltip.season.heading()
+                            : R.strings.comp7_ext.battlesIndicatorTooltip.day.heading(),
+                    binding: {
+                        battlesCount: (0, I.jsx)('div', { className: v, children: (0, I.jsx)(c, { value: a + o }) }),
+                    },
+                    classMix: b,
+                }),
+                (0, I.jsx)('div', {
+                    className: g,
+                    children: R.strings.comp7_ext.battlesIndicatorTooltip.listHeading(),
+                }),
+                (0, I.jsxs)('div', {
+                    className: f,
+                    children: [
+                        (0, I.jsxs)('div', {
+                            className: N,
+                            children: [
+                                (0, I.jsx)('div', { className: (0, u.default)(k, C) }),
+                                (0, I.jsx)(e, {
+                                    text: R.strings.comp7_ext.battlesIndicatorTooltip.soloBattlesCount(),
+                                    binding: {
+                                        soloBattlesCount: (0, I.jsx)('div', {
+                                            className: A,
+                                            children: (0, I.jsx)(m, { value: a }),
+                                        }),
+                                    },
+                                }),
+                            ],
+                        }),
+                        (0, I.jsxs)('div', {
+                            className: N,
+                            children: [
+                                (0, I.jsx)('div', { className: (0, u.default)(k, B) }),
+                                (0, I.jsx)(e, {
+                                    text: R.strings.comp7_ext.battlesIndicatorTooltip.superPlatoonBattlesCount(),
+                                    binding: {
+                                        superPlatoonBattlesCount: (0, I.jsx)('div', {
+                                            className: A,
+                                            children: (0, I.jsx)(m, { value: o }),
+                                        }),
+                                    },
+                                }),
+                            ],
+                        }),
+                    ],
+                }),
+            ],
+        });
+    });
+n((0, I.jsx)(j, { children: (0, I.jsx)(o, { children: (0, I.jsx)(_, { children: (0, I.jsx)(T, {}) }) }) }));

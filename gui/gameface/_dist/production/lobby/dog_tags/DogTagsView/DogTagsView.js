@@ -2081,16 +2081,13 @@
                 })({});
                 const Et = R.images.gui.maps.icons.dogtags.big.digits;
                 Object.keys(Object.getPrototypeOf(Et))
-                    .filter((e) => '$' !== e[0])
+                    .filter((e) => 'string' == typeof e && '$' !== e[0])
                     .map((e) => Et[e]())
                     .map((e) => {
                         new Image().src = e;
                     });
-                const wt = (e) => {
-                        const t = e.currentTarget.width / e.currentTarget.height;
-                        ((e.currentTarget.style.width = 16 * t + '%'), (e.currentTarget.style.display = 'flex'));
-                    },
-                    yt = {
+                const wt = 'dot-tag-id';
+                const yt = {
                         appear: pt.flameAnimation__appear,
                         appearActive: pt.flameAnimation__appearActive,
                         appearDone: pt.flameAnimation__appearDone,
@@ -2177,11 +2174,29 @@
                                                     });
                                                 const n = bt(e, Et);
                                                 return u().createElement('img', {
+                                                    id: `${wt}-${t}`,
                                                     key: `${n}-${t}`,
-                                                    onLoad: wt,
+                                                    onLoad:
+                                                        ((a = `${wt}-${t}`),
+                                                        (e) => {
+                                                            engine.executeImmediateLayoutSync();
+                                                            const t = e.currentTarget,
+                                                                n = t.width,
+                                                                r = t.height;
+                                                            0 !== r && 0 !== n
+                                                                ? (t.style.width = (n / r) * 16 + '%')
+                                                                : console.warn(
+                                                                      'Incorrect value width:',
+                                                                      n,
+                                                                      'height',
+                                                                      r,
+                                                                      a,
+                                                                  );
+                                                        }),
                                                     className: pt.trackerDigit,
                                                     src: n,
                                                 });
+                                                var a;
                                             }),
                                         ),
                                     ),

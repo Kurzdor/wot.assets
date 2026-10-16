@@ -1,6 +1,8 @@
-import { f as e, j as l, w as _ } from './vendor.js';
-import { I as a, b7 as s } from './lib.js';
-const i = {
+import { r as e } from './rolldown-runtime.js';
+import { $t as l, Rt as _, Yn as a, li as s, si as i } from './lib.js';
+import { h as c } from './vendor.js';
+s();
+var n = {
         base: 'VehicleInfo_4dd93fad',
         base__level1: 'VehicleInfo_base__level1_540927ab',
         base__level2: 'VehicleInfo_base__level2_9dbae429',
@@ -25,36 +27,34 @@ const i = {
         fadeOut: 'VehicleInfo_fadeOut_9c9aeed',
         fadeIn: 'VehicleInfo_fadeIn_9c9aeed',
     },
-    c = R.images.gui.maps.icons.vehicleTypes,
-    n = ({ isSpecial: _, vehicleLevel: a, vehicleName: s, vehicleType: n, isElite: o }) => {
-        const h = ((e, l) => {
-                const _ = l.replace('-', '_'),
-                    a = e ? c.elite : c;
-                if ((s = _) in a && '$num' !== s && '$dyn' !== s && 'function' == typeof a[_]) {
-                    return { backgroundImage: `url(${a[_]()})` };
-                }
-                var s;
-            })(o, n),
-            f = e(i.base, i[`base__level${a}`]),
-            v = e(i.vehicleType, o && i.vehicleType__elite);
-        return l.jsxs('div', {
-            className: f,
+    o = a(),
+    h = R.images.gui.maps.icons.vehicleTypes,
+    t = ({ isSpecial: e, vehicleLevel: l, vehicleName: _, vehicleType: a, isElite: s }) => {
+        const c = ((e, l) => {
+            const _ = l.replace('-', '_'),
+                a = e ? h.elite : h;
+            if ((s = _) in a && '$num' !== s && '$dyn' !== s && 'function' == typeof a[_])
+                return { backgroundImage: `url(${a[_]()})` };
+            var s;
+        })(s, a);
+        return (0, o.jsxs)('div', {
+            className: i(n.base, n[`base__level${l}`]),
             children: [
-                l.jsx('div', { className: v, style: h }),
-                l.jsx('div', { className: _ ? i.vehicleName : '', children: s }),
+                (0, o.jsx)('div', { className: i(n.vehicleType, s && n.vehicleType__elite), style: c }),
+                (0, o.jsx)('div', { className: e ? n.vehicleName : '', children: _ }),
             ],
         });
     },
-    o = 'WotPlusBanner_df826e64',
-    h = 'WotPlusBanner_text_a6efd270',
-    f = _(() =>
-        l.jsxs('div', {
-            className: o,
+    v = 'WotPlusBanner_df826e64',
+    f = 'WotPlusBanner_text_a6efd270',
+    d = c(() =>
+        (0, o.jsxs)('div', {
+            className: v,
             children: [
-                l.jsx(a, { path: 'battlePass.tooltips.plus_logo', width: 64, height: 64 }),
-                l.jsx('div', {
-                    className: h,
-                    children: l.jsx(s, {
+                (0, o.jsx)(_, { path: 'battlePass.tooltips.plus_logo', width: 64, height: 64 }),
+                (0, o.jsx)('div', {
+                    className: f,
+                    children: (0, o.jsx)(l, {
                         path: 'battle_pass.tooltips.plusBanner.text',
                         params: { color1: '#F2F2F7', color2: '#FCF2C4' },
                         split: !0,
@@ -63,4 +63,4 @@ const i = {
             ],
         }),
     );
-export { n as V, f as W };
+export { t as n, d as t };

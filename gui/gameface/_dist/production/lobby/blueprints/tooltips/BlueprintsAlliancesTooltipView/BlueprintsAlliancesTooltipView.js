@@ -40,7 +40,7 @@
                 (t.r(n),
                     t.d(n, {
                         addModelObserver: () => W,
-                        addPreloadTexture: () => z,
+                        addPreloadTexture: () => $,
                         arabic2roman: () => nu,
                         children: () => F,
                         displayStatus: () => O,
@@ -66,7 +66,7 @@
                         sendEvent: () => I,
                         setAnimateWindow: () => J,
                         setEventHandled: () => eu,
-                        setInputPaddingsRem: () => $,
+                        setInputPaddingsRem: () => z,
                         setSidePaddingsRem: () => G,
                         whenTutorialReady: () => ou,
                     }));
@@ -253,10 +253,10 @@
                         },
                     },
                     U = 15;
-                function z(u) {
+                function $(u) {
                     viewEnv.addPreloadTexture(u);
                 }
-                function $(u) {
+                function z(u) {
                     viewEnv.setHitAreaPaddingsRem(u, u, u, u, U);
                 }
                 function j(u, e, t, E = 1) {
@@ -787,6 +787,11 @@
                     const C = A().useRef(null);
                     var c;
                     return (
+                        (0, E.useLayoutEffect)(() => {
+                            const u = r.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (c = () => {
                             const u = C.current;
                             if (!u)
@@ -796,7 +801,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
-                                r.O.view.resize(e, t);
+                                (r.O.view.resize(e, t),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const E = window.getComputedStyle(u);
                                 r.O.view.setSidePaddingsRem({
                                     left: parseInt(E.getPropertyValue('padding-left'), 10),
@@ -1011,17 +1018,17 @@
                         );
                     },
                     U = 'NationName_base_ef802',
-                    z = 'NationName_highlight_c7f50',
-                    $ = 'NationName_highlightBold_ce6ec',
+                    $ = 'NationName_highlight_c7f50',
+                    z = 'NationName_highlightBold_ce6ec',
                     j = ({ strResId: u, nationNameStr: e, value: t }) => {
                         const F = (0, E.useMemo)(
                             () => ({
                                 nation: A().createElement(
                                     'span',
-                                    { className: z },
+                                    { className: $ },
                                     R.strings.blueprints.nations.$dyn(e),
                                 ),
-                                count: A().createElement('span', { className: $ }, t),
+                                count: A().createElement('span', { className: z }, t),
                             }),
                             [e, t],
                         );

@@ -1,0 +1,22 @@
+var e = 'tooltipId',
+    E = (function (e) {
+        return (
+            (e.WELCOME = 'welcome'),
+            (e.PROGRESSION_STEP = 'progressionStep'),
+            (e.SELECTED_REWARDS = 'selectedRewards'),
+            (e.WINBACK_PROGRESSION_COMPLETED = 'winbackProgressionCompleted'),
+            (e.REGULAR_PROGRESSION_COMPLETED = 'regularProgressionCompleted'),
+            e
+        );
+    })({}),
+    o = (function (e) {
+        return (
+            (e.VEHICLE_FOR_GIFT = 'vehicleForGift'),
+            (e.VEHICLE_DISCOUNT = 'vehicleDiscount'),
+            (e.VEHICLE_FOR_RENT = 'vehicleForRent'),
+            (e.SELECTABLE_VEHICLE_FOR_GIFT = 'selectableVehicleForGift'),
+            (e.SELECTABLE_VEHICLE_DISCOUNT = 'selectableVehicleDiscount'),
+            e
+        );
+    })({});
+export { o as n, E as r, e as t };

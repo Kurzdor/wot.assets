@@ -1,4 +1,4 @@
-const s = (s, t) => String(s.$dyn(t)),
+var s = (s, t) => String(s.$dyn(t)),
     t = (t) => s(R.strings.comp7_ext.shortSeasonName, t),
     a = (t) => s(R.strings.comp7_ext.seasonName, t);
-export { a, t as g };
+export { t as n, a as t };

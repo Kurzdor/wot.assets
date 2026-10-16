@@ -33,7 +33,7 @@
                         arabic2roman: () => le,
                         children: () => o,
                         displayStatus: () => A,
-                        displayStatusIs: () => ce,
+                        displayStatusIs: () => ue,
                         enableFullScreenModeSupported: () => ve,
                         events: () => H,
                         extraSize: () => de,
@@ -41,7 +41,7 @@
                         freezeTextureBeforeResize: () => J,
                         getBrowserTexturePath: () => B,
                         getDisplayStatus: () => ae,
-                        getExternalPaddingsRem: () => ue,
+                        getExternalPaddingsRem: () => ce,
                         getFontNames: () => se,
                         getScale: () => Y,
                         getSize: () => Q,
@@ -61,7 +61,7 @@
                     }));
                 var s = t(9849),
                     l = t.n(s);
-                function u(e) {
+                function c(e) {
                     return (n) => (
                         engine.on(e, n),
                         () => {
@@ -69,22 +69,22 @@
                         }
                     );
                 }
-                function c(e) {
+                function u(e) {
                     viewEnv.setTrackMouseOnStage(e);
                 }
-                const d = u('clientResized'),
-                    f = u('self.onScaleUpdated'),
-                    v = u('clientMinimized'),
+                const d = c('clientResized'),
+                    f = c('self.onScaleUpdated'),
+                    v = c('clientMinimized'),
                     m = (e, n) => engine.on(e, n),
                     p = (e, n) => engine.off(e, n),
-                    g = { down: u('mousedown'), up: u('mouseup'), move: u('mousemove') };
+                    g = { down: c('mousedown'), up: c('mouseup'), move: c('mousemove') };
                 const h = (function () {
                     const e = { listeners: 0, enabled: !0, initialized: !1 };
                     function n() {
-                        e.enabled && c(!1);
+                        e.enabled && u(!1);
                     }
                     function t() {
-                        e.enabled && c(!0);
+                        e.enabled && u(!0);
                     }
                     function r() {
                         e.enabled
@@ -96,7 +96,7 @@
                                   ((e.initialized = !0),
                                   document.body.addEventListener('mouseenter', n),
                                   document.body.addEventListener('mouseleave', t))
-                            : c(!1);
+                            : u(!1);
                     }
                     const i = ['down', 'up', 'move'].reduce(
                         (n, t) => (
@@ -135,10 +135,10 @@
                             ((e.enabled = !0), r());
                         },
                         enableOutside() {
-                            e.enabled && c(!0);
+                            e.enabled && u(!0);
                         },
                         disableOutside() {
-                            e.enabled && c(!1);
+                            e.enabled && u(!1);
                         },
                     });
                 })();
@@ -186,19 +186,19 @@
                 }
                 const A = { showing: 0, shown: 1, hiding: 2, hidden: 3 },
                     H = {
-                        onTextureFrozen: u('self.onTextureFrozen'),
-                        onTextureReady: u('self.onTextureReady'),
-                        onDomBuilt: u('self.onDomBuilt'),
-                        onLoaded: u('self.onLoaded'),
-                        onDisplayChanged: u('self.onShowingStatusChanged'),
-                        onFocusUpdated: u('self.onFocusChanged'),
+                        onTextureFrozen: c('self.onTextureFrozen'),
+                        onTextureReady: c('self.onTextureReady'),
+                        onDomBuilt: c('self.onDomBuilt'),
+                        onLoaded: c('self.onLoaded'),
+                        onDisplayChanged: c('self.onShowingStatusChanged'),
+                        onFocusUpdated: c('self.onFocusChanged'),
                         children: {
-                            onAdded: u('children.onAdded'),
-                            onLoaded: u('children.onLoaded'),
-                            onRemoved: u('children.onRemoved'),
-                            onAttached: u('children.onAttached'),
-                            onTextureReady: u('children.onTextureReady'),
-                            onRequestPosition: u('children.requestPosition'),
+                            onAdded: c('children.onAdded'),
+                            onLoaded: c('children.onLoaded'),
+                            onRemoved: c('children.onRemoved'),
+                            onAttached: c('children.onAttached'),
+                            onTextureReady: c('children.onTextureReady'),
+                            onRequestPosition: c('children.requestPosition'),
                         },
                     },
                     j = ['args'];
@@ -315,10 +315,10 @@
                         return () => (0 === e.length && (e = Object.keys(viewEnv.getFontsConfig())), e);
                     })(),
                     le = k;
-                function ue() {
+                function ce() {
                     return viewEnv.getExternalPaddingsRem();
                 }
-                const ce = Object.keys(A).reduce((e, n) => ((e[n] = () => viewEnv.getShowingStatus() === A[n]), e), {}),
+                const ue = Object.keys(A).reduce((e, n) => ((e[n] = () => viewEnv.getShowingStatus() === A[n]), e), {}),
                     de = {
                         set: (e, n) => {
                             viewEnv.setExtraSizeRem(e, n);
@@ -393,6 +393,11 @@
                         })(e, be);
                     const s = he().useRef(null);
                     return (
+                        (0, ge.useLayoutEffect)(() => {
+                            const e = pe.client.getSize('rem');
+                            ((document.body.style.width = `${e.width}rem`),
+                                (document.body.style.height = `${e.height}rem`));
+                        }, []),
                         ye(() => {
                             const e = s.current;
                             if (!e)
@@ -402,7 +407,9 @@
                             const n = new ResizeObserver(() => {
                                 const n = e.scrollWidth,
                                     t = e.scrollHeight;
-                                pe.view.resize(n, t);
+                                (pe.view.resize(n, t),
+                                    (document.body.style.width = `${n}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const r = window.getComputedStyle(e);
                                 pe.view.setSidePaddingsRem({
                                     left: parseInt(r.getPropertyValue('padding-left'), 10),
@@ -461,8 +468,8 @@
                             a = e.style,
                             s = e.loop,
                             l = void 0 !== s && s,
-                            u = e.isPrebufferKeyframes,
-                            c = e.keyframesNameConfig,
+                            c = e.isPrebufferKeyframes,
+                            u = e.keyframesNameConfig,
                             d = e.onClick,
                             f = (function (e, n) {
                                 if (null == e) return {};
@@ -512,7 +519,7 @@
                                         );
                                     })(() => {
                                         const e = m.current;
-                                        if (!v || !e || !u)
+                                        if (!v || !e || !c)
                                             return void (null != e && e.cohFastSeek && (e.cohFastSeek = !1));
                                         const n = e.cohGetKeyframeTimestamps ? e.cohGetKeyframeTimestamps() : [];
                                         n.length > 0
@@ -522,7 +529,7 @@
                                               }))
                                             : console.warn("Can't prebuffered keyframes, keyframes was not found");
                                     }),
-                                [u, v],
+                                [c, v],
                             ),
                             (0, ge.useEffect)(() => {
                                 if (v && m.current) {
@@ -554,7 +561,7 @@
                                                                     e({ currentTime: r, duration: i }),
                                                                 ),
                                                                 (n = r)),
-                                                            m.current.paused || !v || !u)
+                                                            m.current.paused || !v || !c)
                                                         )
                                                             return;
                                                         const o = m.current.cohGetKeyframeTimestamps
@@ -565,10 +572,10 @@
                                                                 r > o[t] - 0.02 &&
                                                                 r < o[t] &&
                                                                 e.changeKeyframeHandlers.forEach((e) => {
-                                                                    const r = Object.keys(null != c ? c : {})[t];
+                                                                    const r = Object.keys(null != u ? u : {})[t];
                                                                     return e({
                                                                         time: n,
-                                                                        name: `${c ? r : `Point_${t}`}`,
+                                                                        name: `${u ? r : `Point_${t}`}`,
                                                                     });
                                                                 });
                                                         });
@@ -694,7 +701,7 @@
                                         }
                                     );
                                 }
-                            }, [c, v, u]),
+                            }, [u, v, c]),
                             (0, ge.useEffect)(() => {
                                 m.current && o && m.current.play();
                             }, [o, l]),
@@ -772,22 +779,22 @@
         (r.O = (n, t, i, o) => {
             if (!t) {
                 var a = 1 / 0;
-                for (c = 0; c < e.length; c++) {
-                    for (var [t, i, o] = e[c], s = !0, l = 0; l < t.length; l++)
+                for (u = 0; u < e.length; u++) {
+                    for (var [t, i, o] = e[u], s = !0, l = 0; l < t.length; l++)
                         (!1 & o || a >= o) && Object.keys(r.O).every((e) => r.O[e](t[l]))
                             ? t.splice(l--, 1)
                             : ((s = !1), o < a && (a = o));
                     if (s) {
-                        e.splice(c--, 1);
-                        var u = i();
-                        void 0 !== u && (n = u);
+                        e.splice(u--, 1);
+                        var c = i();
+                        void 0 !== c && (n = c);
                     }
                 }
                 return n;
             }
             o = o || 0;
-            for (var c = e.length; c > 0 && e[c - 1][2] > o; c--) e[c] = e[c - 1];
-            e[c] = [t, i, o];
+            for (var u = e.length; u > 0 && e[u - 1][2] > o; u--) e[u] = e[u - 1];
+            e[u] = [t, i, o];
         }),
         (r.n = (e) => {
             var n = e && e.__esModule ? () => e.default : () => e;
@@ -819,13 +826,13 @@
                     var i,
                         o,
                         [a, s, l] = t,
-                        u = 0;
+                        c = 0;
                     if (a.some((n) => 0 !== e[n])) {
                         for (i in s) r.o(s, i) && (r.m[i] = s[i]);
-                        if (l) var c = l(r);
+                        if (l) var u = l(r);
                     }
-                    for (n && n(t); u < a.length; u++) ((o = a[u]), r.o(e, o) && e[o] && e[o][0](), (e[o] = 0));
-                    return r.O(c);
+                    for (n && n(t); c < a.length; c++) ((o = a[c]), r.o(e, o) && e[o] && e[o][0](), (e[o] = 0));
+                    return r.O(u);
                 },
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             (t.forEach(n.bind(null, 0)), (t.push = n.bind(null, t.push.bind(t))));

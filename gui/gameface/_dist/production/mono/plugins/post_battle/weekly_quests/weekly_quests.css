@@ -359,6 +359,15 @@ html[lang='th'] .Button_base__size-large_83da852e .Button_content__fontAligned_6
 .FormatText_db904f12 span {
     flex-wrap: wrap;
     white-space: normal;
+    overflow-wrap: normal;
+}
+html[lang='ja'] .FormatText_db904f12 span,
+html[lang='ko'] .FormatText_db904f12 span,
+html[lang='zh_tw'] .FormatText_db904f12 span,
+html[lang='zh_sg'] .FormatText_db904f12 span,
+html[lang='zh_cn'] .FormatText_db904f12 span,
+html[lang='vi'] .FormatText_db904f12 span,
+html[lang='th'] .FormatText_db904f12 span {
     overflow-wrap: anywhere;
 }
 
@@ -1222,6 +1231,14 @@ html[lang='th'] .Button_base__size-large_83da852e .Button_content__fontAligned_6
     width: 600rem;
     height: 450rem;
 }
+.Reward_base__s300x300_b3d79936 {
+    width: 300rem;
+    height: 300rem;
+}
+.Reward_base__s450x450_8b0abaf7 {
+    width: 450rem;
+    height: 450rem;
+}
 .Reward_d65e1e12 {
     display: flex;
     flex-direction: column;
@@ -1336,6 +1353,14 @@ html[lang='th'] .Button_base__size-large_83da852e .Button_content__fontAligned_6
 }
 .Reward_image__s600x450_e27f3852 {
     width: 600rem;
+    height: 450rem;
+}
+.Reward_image__s300x300_b3d79936 {
+    width: 300rem;
+    height: 300rem;
+}
+.Reward_image__s450x450_8b0abaf7 {
+    width: 450rem;
     height: 450rem;
 }
 .Reward_image_810ec3a2 {
@@ -1567,4 +1592,4 @@ html[lang='th'] .Button_base__size-large_83da852e .Button_content__fontAligned_6
 /* stylelint-disable selector-no-qualifying-type */
 .WeeklyQuests_divider_dc4e9ffb {
     opacity: 0.1;
-}
+} /*$vite$:1*/

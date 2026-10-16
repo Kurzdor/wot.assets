@@ -93,23 +93,21 @@ const x = (e, a) => ({ alphaTester: e.includes(h), betaTester: e.includes(_), no
                                 e.jsx('div', { className: B }),
                             ],
                         }),
-                        a.categories
-                            .get()
-                            .map(({ value: a }, s) =>
-                                e.jsxs(
-                                    r.Fragment,
-                                    {
-                                        children: [
-                                            s > 0 && e.jsx('div', { className: B }),
-                                            e.jsx(f, {
-                                                rank: _.readOrEmpty(`seniority_awards.tooltip.rank.${a}`),
-                                                segment: _.readOrEmpty(`seniority_awards.tooltip.segment.${a}`),
-                                            }),
-                                        ],
-                                    },
-                                    a,
-                                ),
+                        a.categories.get().map(({ value: a }, s) =>
+                            e.jsxs(
+                                r.Fragment,
+                                {
+                                    children: [
+                                        s > 0 && e.jsx('div', { className: B }),
+                                        e.jsx(f, {
+                                            rank: _.readOrEmpty(`seniority_awards.tooltip.rank.${a}`),
+                                            segment: _.readOrEmpty(`seniority_awards.tooltip.segment.${a}`),
+                                        }),
+                                    ],
+                                },
+                                a,
                             ),
+                        ),
                     ],
                 }),
             }),

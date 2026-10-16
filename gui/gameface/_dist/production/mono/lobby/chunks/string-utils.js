@@ -1,0 +1,7 @@
+function e(e, n) {
+    return e.replace(/(\{|%\()\w+(\}|\)[s|d])/g, (e) => {
+        const r = 0 === e.indexOf('%') ? 2 : 1;
+        return String(n[e.slice(r, -r)]);
+    });
+}
+export { e as t };

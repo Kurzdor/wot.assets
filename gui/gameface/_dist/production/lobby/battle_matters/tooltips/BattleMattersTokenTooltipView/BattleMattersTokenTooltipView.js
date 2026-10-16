@@ -55,7 +55,7 @@
                         getExternalPaddingsRem: () => Eu,
                         getFontNames: () => tu,
                         getScale: () => K,
-                        getSize: () => z,
+                        getSize: () => j,
                         getViewGlobalPosition: () => q,
                         initExternalPaddings: () => ou,
                         isEventHandled: () => J,
@@ -67,7 +67,7 @@
                         setAnimateWindow: () => Z,
                         setEventHandled: () => Q,
                         setInputPaddingsRem: () => I,
-                        setSidePaddingsRem: () => j,
+                        setSidePaddingsRem: () => z,
                         whenTutorialReady: () => Du,
                     }));
                 const o = D('clientResized'),
@@ -161,12 +161,12 @@
                         isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                         get: () => viewEnv.getGraphicsQuality(),
                     },
-                    v = {
+                    p = {
                         toUpperCase: (u) => window.systemLocale.toUpperCase(u),
                         toLowerCase: (u) => window.systemLocale.toLowerCase(u),
                     },
-                    p = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
-                    w = Object.keys(p).reduce((u, e) => ((u[e] = () => c(p[e])), u), {}),
+                    v = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    w = Object.keys(v).reduce((u, e) => ((u[e] = () => c(v[e])), u), {}),
                     g = { play: Object.assign({}, w, { sound: c }), setRTPC: d };
                 var f = t(308);
                 function b(u, e, t = 1) {
@@ -258,10 +258,10 @@
                 function V(u, e, t) {
                     return viewEnv.addDataChangedCallback(u, e, t);
                 }
-                function j(u) {
+                function z(u) {
                     viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, L);
                 }
-                function z(u = 'px') {
+                function j(u = 'px') {
                     return 'rem' === u ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
                 }
                 function $(u, e, t = 'px') {
@@ -341,7 +341,7 @@
                     }
                     (e(), engine.on('self.onPaddingsUpdated', () => e()));
                 }
-                const au = { view: n, client: E, sound: g, intl: v };
+                const au = { view: n, client: E, sound: g, intl: p };
             },
             20: (u, e, t) => {
                 t.d(e, { n: () => F });
@@ -638,11 +638,11 @@
                     h = (u, e) => {
                         u.keyCode === B.n.ESCAPE && e();
                     };
-                var v = t(17);
-                const p = E.instance,
+                var p = t(17);
+                const v = E.instance,
                     w = {
                         DataTracker: A.Z,
-                        ViewModel: v.Z,
+                        ViewModel: p.Z,
                         ViewEventType: D,
                         NumberFormatType: r,
                         RealFormatType: o,
@@ -719,7 +719,7 @@
                                 }
                             return t;
                         },
-                        ClickOutsideManager: p,
+                        ClickOutsideManager: v,
                         SystemLocale: n.Z5,
                         UserLocale: n.cy,
                     };
@@ -791,6 +791,11 @@
                     const s = E().useRef(null);
                     var l;
                     return (
+                        (0, F.useLayoutEffect)(() => {
+                            const u = o.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (l = () => {
                             const u = s.current;
                             if (!u)
@@ -800,7 +805,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
-                                o.O.view.resize(e, t);
+                                (o.O.view.resize(e, t),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const F = window.getComputedStyle(u);
                                 o.O.view.setSidePaddingsRem({
                                     left: parseInt(F.getPropertyValue('padding-left'), 10),
@@ -848,7 +855,7 @@
                         }
                     },
                     h = (u, e, t = l.left) => u.split(e).reduce(t === l.left ? _ : m, []),
-                    v = (() => {
+                    p = (() => {
                         const u = new RegExp(
                             [
                                 /[\(\u2E80-\u2E99\u2E9B-\u2EF3\u2F00-\u2FD5\u3005\u3007\u3021-\u3029\u3038-\u303B\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFA6D\uFA70-\uFAD9\u{16FE2}\u{16FE3}\u{16FF0}\u{16FF1}\u{20000}-\u{2A6DF}\u{2A700}-\u{2B738}\u{2B740}-\u{2B81D}\u{2B820}-\u{2CEA1}\u{2CEB0}-\u{2EBE0}\u{2F800}-\u{2FA1D}\u{30000}-\u{3134A}]?[\u3002\uFF01\uFF0C\uFF1A\uFF1B\uFF1F]?[ %\+\x2D-9A-Za-\{\}\xA0\xC0-\u0237\u2013\u2014\u2026]+[\)\u2E80-\u2E99\u2E9B-\u2EF3\u2F00-\u2FD5\u3002\u3005\u3007\u3021-\u3029\u3038-\u303B\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFA6D\uFA70-\uFAD9\uFF01\uFF0C\uFF1A\uFF1B\uFF1F\u{16FE2}\u{16FE3}\u{16FF0}\u{16FF1}\u{20000}-\u{2A6DF}\u{2A700}-\u{2B738}\u{2B740}-\u{2B81D}\u{2B820}-\u{2CEA1}\u{2CEB0}-\u{2EBE0}\u{2F800}-\u{2FA1D}\u{30000}-\u{3134A}]?[\u3002\uFF01\uFF0C\uFF1A\uFF1B\uFF1F]?/gmu,
@@ -866,10 +873,10 @@
                                 .replace(/ /g, ' ')
                                 .match(u);
                     })(),
-                    p = ['zh_cn', 'zh_sg', 'zh_tw'],
+                    v = ['zh_cn', 'zh_sg', 'zh_tw'],
                     w = (u, e = l.left) => {
                         const t = R.strings.settings.LANGUAGE_CODE().toLowerCase();
-                        if (p.includes(t)) return v(u);
+                        if (v.includes(t)) return p(u);
                         if ('ja' === t) {
                             return (0, s.D4)()
                                 .parse(u)
@@ -967,11 +974,11 @@
                         return '';
                     };
                 const V = () => (window.injected || (window.injected = new Map()), window.injected);
-                const j = g.Sw.instance;
-                let z = (function (u) {
+                const z = g.Sw.instance;
+                let j = (function (u) {
                     return ((u.None = 'None'), (u.Shallow = 'Shallow'), (u.Deep = 'Deep'), u);
                 })({});
-                const $ = (u = 'model', e = z.Deep) => {
+                const $ = (u = 'model', e = j.Deep) => {
                         const t = (0, F.useState)(0),
                             E = (t[0], t[1]),
                             A = (0, F.useMemo)(() => M(), []),
@@ -998,26 +1005,26 @@
                             N(() => {
                                 if (
                                     ('boolean' == typeof e &&
-                                        ((e = e ? z.Deep : z.None),
+                                        ((e = e ? j.Deep : j.None),
                                         console.warn(
                                             'Boolean key for useModel "tracking" param is deprecated. Use ModelTracking enum values instead!',
                                         )),
-                                    e !== z.None)
+                                    e !== j.None)
                                 ) {
                                     const t = (u) => {
                                             ((u) => u && 'CoherentArrayProxy' === u.__proto__.constructor.name)(u) &&
-                                            e === z.Deep
+                                            e === j.Deep
                                                 ? (u === i && E((u) => u + 1), B(u))
                                                 : B(Object.assign([], u));
                                         },
                                         F = U(u);
-                                    C.current = j.addCallback(F, t, r, e === z.Deep);
+                                    C.current = z.addCallback(F, t, r, e === j.Deep);
                                 }
                             }),
                             (0, F.useEffect)(() => {
-                                if (e !== z.None)
+                                if (e !== j.None)
                                     return () => {
-                                        j.removeCallback(C.current, r);
+                                        z.removeCallback(C.current, r);
                                     };
                             }, [r, e]),
                             i

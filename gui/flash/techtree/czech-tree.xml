@@ -1,7 +1,7 @@
 <czech-tree.xml>
   <settings>	normal	</settings>
   <grid>	grid_1	  <rows>	10	</rows>
-    <columns>	10	</columns>
+    <columns>	11	</columns>
   </grid>
   <nodes>
     <Cz06_Kolohousenka>
@@ -114,6 +114,9 @@
     <Cz17_Vz_55>
       <row>	6	</row>
       <column>	10	</column>
+      <lines>
+        <Cz46_Vz_63P></Cz46_Vz_63P>
+      </lines>
     </Cz17_Vz_55>
     <Cz04_T50_51>
       <row>	8	</row>
@@ -123,5 +126,9 @@
       <row>	9	</row>
       <column>	10	</column>
     </Cz34_Vz_71_Tesak>
+    <Cz46_Vz_63P>
+      <row>	6	</row>
+      <column>	11	</column>
+    </Cz46_Vz_63P>
   </nodes>
 </czech-tree.xml>

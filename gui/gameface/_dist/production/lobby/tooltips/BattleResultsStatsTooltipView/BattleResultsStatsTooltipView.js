@@ -9,9 +9,9 @@
                         mouse: () => c,
                         off: () => C,
                         on: () => i,
-                        onMinimize: () => o,
+                        onMinimize: () => a,
                         onResize: () => B,
-                        onScaleUpdated: () => a,
+                        onScaleUpdated: () => o,
                     }));
                 var F = {};
                 (E.r(F),
@@ -45,18 +45,18 @@
                         children: () => t,
                         displayStatus: () => P,
                         displayStatusIs: () => ru,
-                        enableFullScreenModeSupported: () => ou,
+                        enableFullScreenModeSupported: () => au,
                         events: () => T,
                         extraSize: () => Bu,
                         forceTriggerMouseMove: () => Au,
-                        freezeTextureBeforeResize: () => $,
+                        freezeTextureBeforeResize: () => Y,
                         getBrowserTexturePath: () => q,
                         getDisplayStatus: () => Fu,
                         getExternalPaddingsRem: () => Du,
                         getFontNames: () => tu,
                         getScale: () => Z,
                         getSize: () => K,
-                        getViewGlobalPosition: () => Y,
+                        getViewGlobalPosition: () => $,
                         initExternalPaddings: () => iu,
                         isEventHandled: () => Eu,
                         isFocused: () => uu,
@@ -68,11 +68,11 @@
                         setEventHandled: () => eu,
                         setInputPaddingsRem: () => j,
                         setSidePaddingsRem: () => G,
-                        whenTutorialReady: () => au,
+                        whenTutorialReady: () => ou,
                     }));
                 const B = D('clientResized'),
-                    a = D('self.onScaleUpdated'),
-                    o = D('clientMinimized'),
+                    o = D('self.onScaleUpdated'),
+                    a = D('clientMinimized'),
                     i = (u, e) => engine.on(u, e),
                     C = (u, e) => engine.off(u, e),
                     s = { down: D('mousedown'), up: D('mouseup'), move: D('mousemove') };
@@ -166,8 +166,8 @@
                         toLowerCase: (u) => window.systemLocale.toLowerCase(u),
                     },
                     h = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
-                    f = Object.keys(h).reduce((u, e) => ((u[e] = () => l(h[e])), u), {}),
-                    b = { play: Object.assign({}, f, { sound: l }), setRTPC: d },
+                    b = Object.keys(h).reduce((u, e) => ((u[e] = () => l(h[e])), u), {}),
+                    f = { play: Object.assign({}, b, { sound: l }), setRTPC: d },
                     w = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'],
                     g = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1e3];
                 function y(u) {
@@ -274,11 +274,11 @@
                 function H(u, e, E = 'px') {
                     return 'rem' === E ? viewEnv.resizeViewRem(u, e) : viewEnv.resizeViewPx(u, e);
                 }
-                function Y(u = 'rem') {
+                function $(u = 'rem') {
                     const e = viewEnv.getViewGlobalPositionRem();
                     return 'rem' === u ? e : { x: Q(e.x), y: Q(e.y) };
                 }
-                function $() {
+                function Y() {
                     viewEnv.freezeTextureBeforeResize();
                 }
                 function Z() {
@@ -325,13 +325,13 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    au = Promise.all([
+                    ou = Promise.all([
                         new Promise((u) => {
                             window.isDomBuilt ? u() : T.onDomBuilt(u);
                         }),
                         engine.whenReady,
                     ]);
-                function ou() {
+                function au() {
                     viewEnv.setFullscreenModeSupported(!0);
                 }
                 function iu(u) {
@@ -348,7 +348,7 @@
                     }
                     (e(), engine.on('self.onPaddingsUpdated', () => e()));
                 }
-                const Cu = { view: n, client: F, sound: b, intl: p };
+                const Cu = { view: n, client: F, sound: f, intl: p };
             },
             973: (u, e, E) => {
                 E.d(e, { Z: () => t });
@@ -509,8 +509,8 @@
                 })({});
                 const r = Object.freeze({ INTEGRAL: 0, GOLD: 1 }),
                     B = Object.freeze({ FRACTIONAL: 0, WO_ZERO_DIGITS: 1 }),
-                    a = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1 }),
-                    o = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1, YEAR_MONTH: 2 });
+                    o = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1 }),
+                    a = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1, YEAR_MONTH: 2 });
                 let i = (function (u) {
                     return (
                         (u[(u.NONE = -1)] = 'NONE'),
@@ -632,14 +632,14 @@
                     };
                 var p = E(17);
                 const h = F.instance,
-                    f = {
+                    b = {
                         DataTracker: t.Z,
                         ViewModel: p.Z,
                         ViewEventType: D,
                         NumberFormatType: r,
                         RealFormatType: B,
-                        TimeFormatType: a,
-                        DateFormatType: o,
+                        TimeFormatType: o,
+                        DateFormatType: a,
                         makeGlobalBoundingBox: l,
                         sendMoveEvent: (u) => _(D.MOVE, { isMouseEvent: !0, on: u }),
                         sendCloseEvent: v,
@@ -651,13 +651,13 @@
                             const n = C.O.view.getViewGlobalPosition(),
                                 r = E.getBoundingClientRect(),
                                 B = r.x,
-                                a = r.y,
-                                o = r.width,
+                                o = r.y,
+                                a = r.width,
                                 i = r.height,
                                 s = {
                                     x: C.O.view.pxToRem(B) + n.x,
-                                    y: C.O.view.pxToRem(a) + n.y,
-                                    width: C.O.view.pxToRem(o),
+                                    y: C.O.view.pxToRem(o) + n.y,
+                                    width: C.O.view.pxToRem(a),
                                     height: C.O.view.pxToRem(i),
                                 };
                             _(D.POP_OVER, {
@@ -715,7 +715,7 @@
                         SystemLocale: n.Z5,
                         UserLocale: n.cy,
                     };
-                window.ViewEnvHelper = f;
+                window.ViewEnvHelper = b;
             },
             609: (u, e, E) => {
                 E.d(e, { Z5: () => A, cy: () => F });
@@ -745,9 +745,9 @@
                         decorator: 'TooltipDecorator_decorator_f4de8',
                     },
                     B = ['children', 'className', 'theme'];
-                function a() {
+                function o() {
                     return (
-                        (a = Object.assign
+                        (o = Object.assign
                             ? Object.assign.bind()
                             : function (u) {
                                   for (var e = 1; e < arguments.length; e++) {
@@ -756,14 +756,14 @@
                                   }
                                   return u;
                               }),
-                        a.apply(null, arguments)
+                        o.apply(null, arguments)
                     );
                 }
-                const o = D().forwardRef(function (u, e) {
+                const a = D().forwardRef(function (u, e) {
                     let E = u.children,
                         A = u.className,
-                        o = u.theme,
-                        i = void 0 === o ? 'default' : o,
+                        a = u.theme,
+                        i = void 0 === a ? 'default' : a,
                         C = (function (u, e) {
                             if (null == u) return {};
                             var E = {};
@@ -777,6 +777,11 @@
                     const s = D().useRef(null);
                     var c;
                     return (
+                        (0, n.useLayoutEffect)(() => {
+                            const u = t.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (c = () => {
                             const u = s.current;
                             if (!u)
@@ -786,7 +791,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     E = u.scrollHeight;
-                                t.O.view.resize(e, E);
+                                (t.O.view.resize(e, E),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${E}px`));
                                 const A = window.getComputedStyle(u);
                                 t.O.view.setSidePaddingsRem({
                                     left: parseInt(A.getPropertyValue('padding-left'), 10),
@@ -800,7 +807,7 @@
                         (0, n.useEffect)(c, []),
                         D().createElement(
                             'div',
-                            a({}, C, {
+                            o({}, C, {
                                 className: F()(r.base, r[`base__theme-${i}`], A),
                                 ref: function (u) {
                                     ((s.current = u), 'function' == typeof e ? e(u) : e && (e.current = u));
@@ -860,8 +867,8 @@
                         const E = (0, n.createContext)({});
                         return [
                             function ({ mode: A = 'real', options: F, children: r, mocks: B }) {
-                                const a = (0, n.useRef)([]),
-                                    o = (E, A, F) => {
+                                const o = (0, n.useRef)([]),
+                                    a = (E, A, F) => {
                                         var n;
                                         const D = (function ({
                                                 initializer: u = !0,
@@ -929,7 +936,7 @@
                                                       }),
                                             B = (u) =>
                                                 'mocks' === E ? (null == F ? void 0 : F.getter(u)) : r.readByPath(u),
-                                            o = (u) => a.current.push(u),
+                                            a = (u) => o.current.push(u),
                                             i = u({
                                                 mode: E,
                                                 readByPath: B,
@@ -1013,9 +1020,9 @@
                                                         }
                                                     },
                                                 },
-                                                cleanup: o,
+                                                cleanup: a,
                                             }),
-                                            C = { mode: E, model: i, externalModel: r, cleanup: o };
+                                            C = { mode: E, model: i, externalModel: r, cleanup: a };
                                         return {
                                             model: i,
                                             controls: 'mocks' === E && F ? F.controls(C) : e(C),
@@ -1027,19 +1034,19 @@
                                     C = (0, n.useState)(A),
                                     s = C[0],
                                     c = C[1],
-                                    v = (0, n.useState)(() => o(A, F, B)),
+                                    v = (0, n.useState)(() => a(A, F, B)),
                                     p = v[0],
                                     h = v[1];
                                 return (
                                     (0, n.useEffect)(() => {
-                                        i.current ? h(o(s, F, B)) : (i.current = !0);
+                                        i.current ? h(a(s, F, B)) : (i.current = !0);
                                     }, [B, s, F]),
                                     (0, n.useEffect)(() => {
                                         c(A);
                                     }, [A]),
                                     (0, n.useEffect)(
                                         () => () => {
-                                            (p.externalModel.dispose(), a.current.forEach((u) => u()));
+                                            (p.externalModel.dispose(), o.current.forEach((u) => u()));
                                         },
                                         [p],
                                     ),
@@ -1057,8 +1064,8 @@
                         c,
                     ),
                     h = p[0],
-                    f = p[1],
-                    b = 'App_base_d2730',
+                    b = p[1],
+                    f = 'App_base_d2730',
                     w = 'App_divider_bc6fe';
                 var g = E(354);
                 let y = (function (u) {
@@ -1138,7 +1145,7 @@
                     },
                     V = { base: 'Content_base_f333b', paragraph__indent: 'Content_paragraph__indent_a8e56' },
                     z = (0, s.Pi)(() => {
-                        const u = f().model.root.get().description;
+                        const u = b().model.root.get().description;
                         return D().createElement(
                             'div',
                             { className: V.base },
@@ -1163,16 +1170,16 @@
                     G = 'Footer_valuesColumn_c6703',
                     K = 'Footer_textColumn_ec41c',
                     H = 'Footer_row_a2bc1',
-                    Y = 'Footer_statusRow_c9fb2',
-                    $ = 'Footer_type_ab0c8',
+                    $ = 'Footer_statusRow_c9fb2',
+                    Y = 'Footer_type_ab0c8',
                     Z = (0, s.Pi)(() => {
-                        const u = f().model,
+                        const u = b().model,
                             e = u.details.get(),
                             E = u.statuses.get();
                         return D().createElement(
                             'div',
                             { className: W },
-                            q(E, (u, e) => D().createElement('div', { key: e, className: Y }, u)),
+                            q(E, (u, e) => D().createElement('div', { key: e, className: $ }, u)),
                             q(e, (u, e) =>
                                 D().createElement(
                                     'div',
@@ -1191,7 +1198,7 @@
                                                 label: N(String(u.label), y.left),
                                                 type:
                                                     u.valueType &&
-                                                    D().createElement('span', { className: $ }, u.valueType),
+                                                    D().createElement('span', { className: Y }, u.valueType),
                                             },
                                         }),
                                     ),
@@ -1203,7 +1210,7 @@
                     Q = 'Header_icon_ca3e5',
                     J = 'Header_description_a237f',
                     uu = (0, s.Pi)(() => {
-                        const u = f().model.root.get(),
+                        const u = b().model.root.get(),
                             e = u.title,
                             E = u.icon;
                         return D().createElement(
@@ -1214,12 +1221,12 @@
                         );
                     }),
                     eu = (0, s.Pi)(() => {
-                        const u = f().model,
+                        const u = b().model,
                             e = u.details.get(),
                             E = u.statuses.get();
                         return D().createElement(
                             'div',
-                            { className: b },
+                            { className: f },
                             D().createElement(uu, null),
                             D().createElement('div', { className: w }),
                             D().createElement(z, null),
@@ -1234,7 +1241,7 @@
                     });
                 engine.whenReady.then(() => {
                     C().render(
-                        D().createElement(h, null, D().createElement(o, null, D().createElement(eu, null))),
+                        D().createElement(h, null, D().createElement(a, null, D().createElement(eu, null))),
                         document.getElementById('root'),
                     );
                 });

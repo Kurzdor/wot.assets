@@ -55,19 +55,19 @@
                         getExternalPaddingsRem: () => ru,
                         getFontNames: () => Au,
                         getScale: () => Z,
-                        getSize: () => K,
+                        getSize: () => G,
                         getViewGlobalPosition: () => H,
                         initExternalPaddings: () => su,
                         isEventHandled: () => tu,
                         isFocused: () => uu,
                         pxToRem: () => X,
                         remToPx: () => Q,
-                        resize: () => $,
+                        resize: () => K,
                         sendEvent: () => V,
                         setAnimateWindow: () => J,
                         setEventHandled: () => eu,
                         setInputPaddingsRem: () => z,
-                        setSidePaddingsRem: () => G,
+                        setSidePaddingsRem: () => $,
                         whenTutorialReady: () => au,
                     }));
                 const o = r('clientResized'),
@@ -265,13 +265,13 @@
                 function q(u, e, t) {
                     return viewEnv.addDataChangedCallback(u, e, t);
                 }
-                function G(u) {
+                function $(u) {
                     viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, U);
                 }
-                function K(u = 'px') {
+                function G(u = 'px') {
                     return 'rem' === u ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
                 }
-                function $(u, e, t = 'px') {
+                function K(u, e, t = 'px') {
                     return 'rem' === t ? viewEnv.resizeViewRem(u, e) : viewEnv.resizeViewPx(u, e);
                 }
                 function H(u = 'rem') {
@@ -787,6 +787,11 @@
                         const C = F().useRef(null);
                         var c;
                         return (
+                            (0, n.useLayoutEffect)(() => {
+                                const u = o.O.client.getSize('rem');
+                                ((document.body.style.width = `${u.width}rem`),
+                                    (document.body.style.height = `${u.height}rem`));
+                            }, []),
                             (c = () => {
                                 const u = C.current;
                                 if (!u)
@@ -796,7 +801,9 @@
                                 const e = new ResizeObserver(() => {
                                     const e = u.scrollWidth,
                                         t = u.scrollHeight;
-                                    o.O.view.resize(e, t);
+                                    (o.O.view.resize(e, t),
+                                        (document.body.style.width = `${e}px`),
+                                        (document.body.style.height = `${t}px`));
                                     const n = window.getComputedStyle(u);
                                     o.O.view.setSidePaddingsRem({
                                         left: parseInt(n.getPropertyValue('padding-left'), 10),

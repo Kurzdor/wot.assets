@@ -1524,6 +1524,7 @@
                     description__withOpacity: 'PersistentBonuses_description__withOpacity_a5f12',
                     bonusBase: 'PersistentBonuses_bonusBase_c89c2',
                     roleIcon: 'PersistentBonuses_roleIcon_d6437',
+                    text: 'PersistentBonuses_text_d978e',
                 };
                 function l() {
                     return (
@@ -1585,18 +1586,30 @@
                                             [],
                                         ),
                                     };
-                        })(d, e),
-                        p = E()(C.description, u && C.description__withOpacity);
+                        })(d, e);
                     return s().createElement(
                         'div',
                         { className: g.base },
-                        _ &&
-                            s().createElement(
-                                A.i,
-                                { body: h },
-                                s().createElement('div', { className: C.roleIcon, style: m }),
-                            ),
-                        s().createElement('div', { className: p }, s().createElement(F.z, { text: w, binding: v })),
+                        s().createElement(
+                            'div',
+                            { className: E()(C.description, u && C.description__withOpacity) },
+                            s().createElement(F.z, {
+                                classMix: C.text,
+                                text: w,
+                                binding: Object.assign(
+                                    {
+                                        roleImage:
+                                            _ &&
+                                            s().createElement(
+                                                A.i,
+                                                { body: h },
+                                                s().createElement('div', { className: C.roleIcon, style: m }),
+                                            ),
+                                    },
+                                    v,
+                                ),
+                            }),
+                        ),
                     );
                 });
             },

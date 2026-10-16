@@ -1,18 +1,18 @@
-import { j as r, f as a } from './vendor.js';
-import './lib.js';
-const d = 'GradientDecorator_dbb5784d',
+import { on as a, xt as r } from './lib.js';
+var d = 'GradientDecorator_dbb5784d',
     e = 'GradientDecorator_background_3350082a',
-    s = 'GradientDecorator_divider_fc5b9985',
-    i = 'GradientDecorator_divider__top_7b544103',
+    i = 'GradientDecorator_divider_fc5b9985',
+    s = 'GradientDecorator_divider__top_7b544103',
     o = 'GradientDecorator_divider__bottom_7df700df',
-    t = ({ className: t, children: c }) =>
-        r.jsxs('div', {
-            className: a(d, t),
+    t = r(),
+    c = ({ className: r, children: c }) =>
+        (0, t.jsxs)('div', {
+            className: a(d, r),
             children: [
-                r.jsx('div', { className: e }),
-                r.jsx('div', { className: a(s, i) }),
-                r.jsx('div', { className: a(s, o) }),
+                (0, t.jsx)('div', { className: e }),
+                (0, t.jsx)('div', { className: a(i, s) }),
+                (0, t.jsx)('div', { className: a(i, o) }),
                 c,
             ],
         });
-export { t as G };
+export { c as t };

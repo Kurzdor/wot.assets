@@ -208,6 +208,9 @@
     <Ch29_Type_62C_prot>
       <row>	9	</row>
       <column>	10	</column>
+      <lines>
+        <Ch71_WZ_219></Ch71_WZ_219>
+      </lines>
     </Ch29_Type_62C_prot>
     <Ch70_PTZ_78>
       <row>	3	</row>
@@ -217,5 +220,9 @@
       <row>	4	</row>
       <column>	11	</column>
     </Ch67_BZ_79>
+    <Ch71_WZ_219>
+      <row>	9	</row>
+      <column>	11	</column>
+    </Ch71_WZ_219>
   </nodes>
 </china-tree.xml>

@@ -1,42 +1,40 @@
-import { j as e } from './vendor.js';
-import { aU as a, cp as s, s as l, av as i } from './lib.js';
-const n = (e) => {
+import { r as e } from './rolldown-runtime.js';
+import { Bt as a, Dt as s, Gt as r, Ot as l, Yn as i, li as m } from './lib.js';
+m();
+var t = i(),
+    n = (e) => {
         switch (e) {
-            case i.heavyTank:
-                return i.heavyTank;
-            case i.lightTank:
-                return i.lightTank;
-            case i.mediumTank:
-                return i.mediumTank;
-            case i.SPG:
-                return i.SPG;
+            case r.heavyTank:
+                return r.heavyTank;
+            case r.lightTank:
+                return r.lightTank;
+            case r.mediumTank:
+                return r.mediumTank;
+            case r.SPG:
+                return r.SPG;
             default:
-                return i['AT-SPG'];
+                return r['AT-SPG'];
         }
     },
-    r = ({
-        vehicleName: i,
+    c = ({
+        vehicleName: e,
         vehicleShortName: r,
-        vehicleType: m,
-        vehicleLvl: c,
-        isElite: t,
-        classNames: v,
-        vehicleTypeIconSize: o = l.x64x64,
-        isShortName: u = !1,
-        custom: h = !1,
+        vehicleType: i,
+        vehicleLvl: m,
+        isElite: c,
+        classNames: h,
+        vehicleTypeIconSize: u = l.x64x64,
+        isShortName: o = !1,
+        custom: v = !1,
     }) =>
-        e.jsx('div', {
-            className: null == v ? void 0 : v.base,
-            children: e.jsxs(a, {
+        (0, t.jsx)('div', {
+            className: h?.base,
+            children: (0, t.jsxs)(s, {
                 children: [
-                    e.jsx(a.Level, {
-                        className: null == v ? void 0 : v.level,
-                        value: c,
-                        numberType: s.numberTypes.roman,
-                    }),
-                    e.jsx(a.Type, { className: null == v ? void 0 : v.typeIcon, type: n(m), premium: t, size: o }),
-                    e.jsx(a.Name, { className: null == v ? void 0 : v.name, children: u ? r : i }),
+                    (0, t.jsx)(s.Level, { className: h?.level, value: m, numberType: a.numberTypes.roman }),
+                    (0, t.jsx)(s.Type, { className: h?.typeIcon, type: n(i), premium: c, size: u }),
+                    (0, t.jsx)(s.Name, { className: h?.name, children: o ? r : e }),
                 ],
             }),
         });
-export { r as T };
+export { c as t };

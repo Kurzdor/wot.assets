@@ -1,7 +1,5 @@
-import { j as s, f as e } from './vendor.js';
-import { du as _ } from './lib.js';
-const i = {
-        root: 'StoryPoint_root_fb5c04d4',
+import { go as s, hi as e, to as _ } from './lib.js';
+var i = {
         base: 'StoryPoint_c7387a68',
         base__size16x16: 'StoryPoint_base__size16x16_43e66d80',
         base__size24x24: 'StoryPoint_base__size24x24_e4512cc2',
@@ -10,9 +8,10 @@ const i = {
         base__size80x80: 'StoryPoint_base__size80x80_4721d7ab',
         base__size186x186: 'StoryPoint_base__size186x186_a7429a40',
         base__size256x256: 'StoryPoint_base__size256x256_c0526b14',
-        label: 'StoryPoint_label_13768815',
+        label: 'StoryPoint_label_35ab4bc4',
     },
-    a = {
+    a = e(),
+    o = {
         s16x16: '16x16',
         s24x24: '24x24',
         s32x32: '32x32',
@@ -21,17 +20,16 @@ const i = {
         s186x186: '186x186',
         s256x256: '256x256',
     };
-function o({ size: a, classNames: o, modifier: t = 0, withTimesSymbol: n = !1 }) {
-    return s.jsx('div', {
-        className: e(i.base, i[`base__size${a}`], o?.base),
-        style: { backgroundImage: `url('R.images.last_stand.gui.maps.icons.story_points.sp_${a}')` },
+function t({ size: e, classNames: o, modifier: t = 0, withTimesSymbol: b = !1 }) {
+    return (0, a.jsx)('div', {
+        className: s(i.base, i[`base__size${e}`], o?.base),
+        style: { backgroundImage: `url('R.images.last_stand.gui.maps.icons.story_points.sp_${e}')` },
         children:
             t > 0 &&
-            s.jsx('div', {
-                className: e(i.label, o?.modifier),
-                lang: R.strings.settings.LANGUAGE_CODE(),
+            (0, a.jsx)('div', {
+                className: s(i.label, o?.modifier),
                 children: _(
-                    n
+                    b
                         ? R.strings.last_stand_lobby.common.modifierInlineTimes()
                         : R.strings.last_stand_lobby.common.modifierInline(),
                     { value: t },
@@ -39,5 +37,5 @@ function o({ size: a, classNames: o, modifier: t = 0, withTimesSymbol: n = !1 })
             }),
     });
 }
-o.sizes = a;
-export { o as S, a as s };
+t.sizes = o;
+export { o as n, t };

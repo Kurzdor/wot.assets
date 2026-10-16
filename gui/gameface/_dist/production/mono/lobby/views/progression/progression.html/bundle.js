@@ -1065,13 +1065,11 @@ const He = {
                             (i.state.get() === oe.FirstAnimation && b.set({ rotate: i.currentRotation.get() }),
                                 i.state.get() === oe.ShowProgress &&
                                     m(
-                                        r.progressSchedule
-                                            .get()
-                                            .map(({ delay: e, action: t, duration: s }) => ({
-                                                delay: e,
-                                                duration: s,
-                                                action: l.progress[t],
-                                            })),
+                                        r.progressSchedule.get().map(({ delay: e, action: t, duration: s }) => ({
+                                            delay: e,
+                                            duration: s,
+                                            action: l.progress[t],
+                                        })),
                                     ));
                         },
                     ),

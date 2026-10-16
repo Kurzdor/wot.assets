@@ -1637,13 +1637,13 @@
             568 === e
                 ? 'chunks/lobby/c8a2e831fc9759ab4ac5.js'
                 : 935 === e
-                  ? 'chunks/lobby/1969e3068dccbf3777a6.js'
+                  ? 'chunks/lobby/26c606c56ae80c6635e0.js'
                   : 113 === e
                     ? 'chunks/lobby/ae5b9476965056bf2751.js'
                     : void 0),
         (__webpack_require__.miniCssF = (e) =>
             935 === e
-                ? 'chunks/lobby/1969e3068dccbf3777a6.css'
+                ? 'chunks/lobby/26c606c56ae80c6635e0.css'
                 : 113 === e
                   ? 'chunks/lobby/ae5b9476965056bf2751.css'
                   : void 0),

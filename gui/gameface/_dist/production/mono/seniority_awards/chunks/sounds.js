@@ -1,4 +1,4 @@
-const e = {
+var e = {
     click: { 'rewards-view:button': 'yes1', 'vehicle-selection:card': 'gui_hangar_award_woosh' },
     'mouse-enter': { 'rewards-view:button': 'highlight', 'vehicle-selection:card': 'highlight' },
     rewardsViewAppear: {

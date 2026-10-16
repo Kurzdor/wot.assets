@@ -1,37 +1,38 @@
-import { j as o } from './vendor.js';
-import { m as e, au as t, a0 as a, a1 as s, a3 as r, a2 as i } from './lib.js';
-function n({ bonuses: n, questId: l, size: p, resId: d, ...v }) {
-    const u = e(n, (o) => {
+import { r as o } from './rolldown-runtime.js';
+import { B as e, D as t, E as s, Jt as a, O as r, on as n, y as i } from './lib.js';
+var l = o(a(), 1);
+function p({ bonuses: o, questId: a, size: p, resId: d, ...v }) {
+    const u = n(o, (o) => {
             return {
                 size: p,
                 name: o.name,
                 image: s(o, p),
                 value: o.value,
-                valueType: a(o.name),
+                valueType: r(o.name),
                 special:
                     'overlayType' in o &&
                     o.overlayType &&
-                    ((e = o.overlayType),
-                    ('string' == typeof e && Object.values(i).includes(e)) ||
-                        (console.warn(`Invalid overlayType value: ${e}`), 0))
+                    ((n = o.overlayType),
+                    ('string' == typeof n && Object.values(e).includes(n)) ||
+                        (console.warn(`Invalid overlayType value: ${n}`), 0))
                         ? o.overlayType
                         : void 0,
                 tooltipArgs: {
                     ...t(
-                        { tooltipId: `${l}:${o.tooltipId}` },
+                        { tooltipId: `${a}:${o.tooltipId}` },
                         Number(o.tooltipContentId) ||
                             R.views.common.tooltip_window.backport_tooltip_content.BackportTooltipContent('resId'),
                     ),
                     resId: d,
                 },
             };
-            var e;
+            var n;
         }),
-        m = {
+        y = {
             contentId: R.views.lobby.tooltips.AdditionalRewardsTooltip('resId'),
-            args: { showFromIndex: v.count, questId: l },
+            args: { showFromIndex: v.count, questId: a },
             resId: d,
         };
-    return o.jsx(r, { ...v, data: u, boxRewardTooltip: m, size: p });
+    return (0, l.jsx)(i, { ...v, data: u, boxRewardTooltip: y, size: p });
 }
-export { n as R };
+export { p as t };

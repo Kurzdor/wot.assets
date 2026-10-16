@@ -50,7 +50,7 @@
                         extraSize: () => Bu,
                         forceTriggerMouseMove: () => Au,
                         freezeTextureBeforeResize: () => Y,
-                        getBrowserTexturePath: () => z,
+                        getBrowserTexturePath: () => j,
                         getDisplayStatus: () => Eu,
                         getExternalPaddingsRem: () => nu,
                         getFontNames: () => tu,
@@ -66,7 +66,7 @@
                         sendEvent: () => I,
                         setAnimateWindow: () => J,
                         setEventHandled: () => eu,
-                        setInputPaddingsRem: () => j,
+                        setInputPaddingsRem: () => z,
                         setSidePaddingsRem: () => q,
                         whenTutorialReady: () => ou,
                     }));
@@ -161,13 +161,13 @@
                         isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                         get: () => viewEnv.getGraphicsQuality(),
                     },
-                    v = {
+                    m = {
                         toUpperCase: (u) => window.systemLocale.toUpperCase(u),
                         toLowerCase: (u) => window.systemLocale.toLowerCase(u),
                     },
-                    m = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
-                    h = Object.keys(m).reduce((u, e) => ((u[e] = () => c(m[e])), u), {}),
-                    g = { play: Object.assign({}, h, { sound: c }), setRTPC: d },
+                    h = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    v = Object.keys(h).reduce((u, e) => ((u[e] = () => c(h[e])), u), {}),
+                    g = { play: Object.assign({}, v, { sound: c }), setRTPC: d },
                     f = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'],
                     b = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1e3];
                 function T(u) {
@@ -256,10 +256,10 @@
                 function V(u) {
                     viewEnv.addPreloadTexture(u);
                 }
-                function j(u) {
+                function z(u) {
                     viewEnv.setHitAreaPaddingsRem(u, u, u, u, U);
                 }
-                function z(u, e, F, A = 1) {
+                function j(u, e, F, A = 1) {
                     return viewEnv.getWebBrowserTexturePath(u, e, F, A);
                 }
                 function $(u, e, F) {
@@ -348,7 +348,7 @@
                     }
                     (e(), engine.on('self.onPaddingsUpdated', () => e()));
                 }
-                const Cu = { view: D, client: E, sound: g, intl: v };
+                const Cu = { view: D, client: E, sound: g, intl: m };
             },
             4020: (u, e, F) => {
                 F.d(e, { n: () => A });
@@ -634,11 +634,11 @@
                     p = (u, e) => {
                         u.keyCode === a.n.ESCAPE && e();
                     };
-                var v = F(5533);
-                const m = E.instance,
-                    h = {
+                var m = F(5533);
+                const h = E.instance,
+                    v = {
                         DataTracker: t.Z,
-                        ViewModel: v.Z,
+                        ViewModel: m.Z,
                         ViewEventType: n,
                         NumberFormatType: r,
                         RealFormatType: B,
@@ -715,11 +715,11 @@
                                 }
                             return F;
                         },
-                        ClickOutsideManager: m,
+                        ClickOutsideManager: h,
                         SystemLocale: D.Z5,
                         UserLocale: D.cy,
                     };
-                window.ViewEnvHelper = h;
+                window.ViewEnvHelper = v;
             },
             6609: (u, e, F) => {
                 F.d(e, { Ew: () => t, Z5: () => A, cy: () => E });
@@ -785,6 +785,11 @@
                         const s = n().useRef(null);
                         var l;
                         return (
+                            (0, D.useLayoutEffect)(() => {
+                                const u = t.O.client.getSize('rem');
+                                ((document.body.style.width = `${u.width}rem`),
+                                    (document.body.style.height = `${u.height}rem`));
+                            }, []),
                             (l = () => {
                                 const u = s.current;
                                 if (!u)
@@ -794,7 +799,9 @@
                                 const e = new ResizeObserver(() => {
                                     const e = u.scrollWidth,
                                         F = u.scrollHeight;
-                                    t.O.view.resize(e, F);
+                                    (t.O.view.resize(e, F),
+                                        (document.body.style.width = `${e}px`),
+                                        (document.body.style.height = `${F}px`));
                                     const A = window.getComputedStyle(u);
                                     t.O.view.setSidePaddingsRem({
                                         left: parseInt(A.getPropertyValue('padding-left'), 10),
@@ -844,7 +851,7 @@
                         }
                     },
                     p = (u, e, F = l.left) => u.split(e).reduce(F === l.left ? _ : w, []),
-                    v = (() => {
+                    m = (() => {
                         const u = new RegExp(
                             [
                                 /[\(\u2E80-\u2E99\u2E9B-\u2EF3\u2F00-\u2FD5\u3005\u3007\u3021-\u3029\u3038-\u303B\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFA6D\uFA70-\uFAD9\u{16FE2}\u{16FE3}\u{16FF0}\u{16FF1}\u{20000}-\u{2A6DF}\u{2A700}-\u{2B738}\u{2B740}-\u{2B81D}\u{2B820}-\u{2CEA1}\u{2CEB0}-\u{2EBE0}\u{2F800}-\u{2FA1D}\u{30000}-\u{3134A}]?[\u3002\uFF01\uFF0C\uFF1A\uFF1B\uFF1F]?[ %\+\x2D-9A-Za-\{\}\xA0\xC0-\u0237\u2013\u2014\u2026]+[\)\u2E80-\u2E99\u2E9B-\u2EF3\u2F00-\u2FD5\u3002\u3005\u3007\u3021-\u3029\u3038-\u303B\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFA6D\uFA70-\uFAD9\uFF01\uFF0C\uFF1A\uFF1B\uFF1F\u{16FE2}\u{16FE3}\u{16FF0}\u{16FF1}\u{20000}-\u{2A6DF}\u{2A700}-\u{2B738}\u{2B740}-\u{2B81D}\u{2B820}-\u{2CEA1}\u{2CEB0}-\u{2EBE0}\u{2F800}-\u{2FA1D}\u{30000}-\u{3134A}]?[\u3002\uFF01\uFF0C\uFF1A\uFF1B\uFF1F]?/gmu,
@@ -862,10 +869,10 @@
                                 .replace(/ /g, ' ')
                                 .match(u);
                     })(),
-                    m = ['zh_cn', 'zh_sg', 'zh_tw'],
-                    h = (u, e = l.left) => {
+                    h = ['zh_cn', 'zh_sg', 'zh_tw'],
+                    v = (u, e = l.left) => {
                         const F = R.strings.settings.LANGUAGE_CODE().toLowerCase();
-                        if (m.includes(F)) return v(u);
+                        if (h.includes(F)) return m(u);
                         if ('ja' === F) {
                             return (0, s.D4)()
                                 .parse(u)
@@ -1001,7 +1008,7 @@
                                     'div',
                                     { className: E()(W, F), key: `${e}-${t}` },
                                     ((u, e, F) =>
-                                        u.split(/%\((.*?)\)(?:[sd])?/g).map((u) => (F && u in F ? F[u] : h(u, e))))(
+                                        u.split(/%\((.*?)\)(?:[sd])?/g).map((u) => (F && u in F ? F[u] : v(u, e))))(
                                         e,
                                         A,
                                         u,
@@ -1036,8 +1043,8 @@
                         prom: 'FormatTextWithColorTags_prom_e0cfe',
                     },
                     V = /(?:%\(|{)\w*(?:_[Oo]pen|Start)(?:\)s|})?(.*?)(?:%\(|{)\w*(?:_[Cc]lose|End)(?:\)s|})?/g,
-                    j = /(?<=(?:%\(|{))(.*?)(?=(?:_[Oo]pen|Start))/,
-                    z = /(?<=(?:_[Oo]pen|Start)(?:\)s?|}))(.*?)(?=(?:%\(|{))/,
+                    z = /(?<=(?:%\(|{))(.*?)(?=(?:_[Oo]pen|Start))/,
+                    j = /(?<=(?:_[Oo]pen|Start)(?:\)s?|}))(.*?)(?=(?:%\(|{))/,
                     $ = ({ text: u, binding: e, classMix: F }) => {
                         const A = (0, D.useCallback)((u) => ({ color: `#${u}` }), []),
                             E = e || {};
@@ -1045,8 +1052,8 @@
                             r = u;
                         for (; t;) {
                             const F = t[0],
-                                D = j.exec(F),
-                                B = z.exec(F),
+                                D = z.exec(F),
+                                B = j.exec(F),
                                 o = t[1];
                             if (D && B) {
                                 const u = D[0],

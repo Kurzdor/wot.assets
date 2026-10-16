@@ -1,0 +1,36 @@
+import { r } from './rolldown-runtime.js';
+import { gt as e, nt as s } from './lib.js';
+var n = r(e(), 1),
+    t = (function (r) {
+        return (
+            (r[(r.Pending = 0)] = 'Pending'),
+            (r[(r.Success = 1)] = 'Success'),
+            (r[(r.Failure = 2)] = 'Failure'),
+            r
+        );
+    })({}),
+    o = (r) => {
+        const [e, t] = (0, n.useState)(0);
+        return (
+            (0, n.useEffect)(() => {
+                const e = { errors: 0, loaded: 0 },
+                    n = () => {
+                        e.errors + e.loaded === r.length ? t(e.errors ? 2 : 1) : t(0);
+                    };
+                return s(() => {
+                    r.forEach((r) => {
+                        const s = new Image();
+                        ((s.src = r),
+                            s.addEventListener('load', () => {
+                                ((e.loaded += 1), n());
+                            }),
+                            s.addEventListener('error', () => {
+                                ((e.errors += 1), n());
+                            }));
+                    });
+                });
+            }, [r]),
+            e
+        );
+    };
+export { o as n, t };

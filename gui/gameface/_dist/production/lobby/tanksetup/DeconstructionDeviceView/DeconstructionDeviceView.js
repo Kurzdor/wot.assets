@@ -3188,7 +3188,7 @@
                             o().createElement('span', null, o().createElement('span', { className: wu }), d + F),
                         );
                     }),
-                    Su = ({ slotIndex: e, bonusIndex: u, groupType: t }) => {
+                    Su = (0, V.Pi)(({ slotIndex: e, bonusIndex: u, groupType: t }) => {
                         const n = ue().model,
                             r = n.computes.bonus(e, u, t);
                         if (!r) return null;
@@ -3216,7 +3216,7 @@
                                       ),
                               )
                             : null;
-                    },
+                    }),
                     Mu = 'Bonuses_base_c554d',
                     Lu = 'Bonuses_bonus_d22f8',
                     ku = 'Bonuses_text_c77fe',
@@ -3923,7 +3923,7 @@
                     cn = 'Header_subTitle_fbb4e',
                     En = 'Header_equipCoinIcon_c894d',
                     dn = R.strings.tank_setup.deconstructionDeviceView,
-                    _n = () => {
+                    _n = (0, V.Pi)(() => {
                         const e = ue().model,
                             u = e.computes.hasEnoughMoney(),
                             t = u ? 'enoughMoney' : 'notEnoughMoney',
@@ -3939,7 +3939,7 @@
                             ),
                             o().createElement(Ht, { text: dn.subTitle.$dyn(`${t}`), binding: r, classMix: cn }),
                         );
-                    },
+                    }),
                     An = (0, V.Pi)(() => {
                         const e = ue().controls;
                         var u;

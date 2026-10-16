@@ -1,6 +1,6 @@
-const s = 'announce',
-    a = 'intro',
-    n = 'inProgress',
+var a = 'announce',
+    n = 'intro',
+    s = 'inProgress',
     i = 'inactive',
-    e = 'finished';
-export { s as A, e as F, i as I, a, n as b };
+    r = 'finished';
+export { s as a, n as i, r as n, i as r, a as t };

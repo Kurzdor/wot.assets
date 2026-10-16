@@ -3909,6 +3909,7 @@
                     description__withOpacity: 'PersistentBonuses_description__withOpacity_a5f12',
                     bonusBase: 'PersistentBonuses_bonusBase_c89c2',
                     roleIcon: 'PersistentBonuses_roleIcon_d6437',
+                    text: 'PersistentBonuses_text_d978e',
                 };
                 function F() {
                     return (
@@ -3971,21 +3972,29 @@
                                                     [],
                                                 ),
                                             };
-                                })(b, u),
-                                h = r()(m.description, e && m.description__withOpacity);
+                                })(b, u);
                             return d().createElement(
                                 'div',
                                 { className: C.base },
-                                p &&
-                                    d().createElement(
-                                        i.i,
-                                        { body: D },
-                                        d().createElement('div', { className: m.roleIcon, style: g }),
-                                    ),
                                 d().createElement(
                                     'div',
-                                    { className: h },
-                                    d().createElement(n.z, { text: v, binding: B }),
+                                    { className: r()(m.description, e && m.description__withOpacity) },
+                                    d().createElement(n.z, {
+                                        classMix: m.text,
+                                        text: v,
+                                        binding: Object.assign(
+                                            {
+                                                roleImage:
+                                                    p &&
+                                                    d().createElement(
+                                                        i.i,
+                                                        { body: D },
+                                                        d().createElement('div', { className: m.roleIcon, style: g }),
+                                                    ),
+                                            },
+                                            B,
+                                        ),
+                                    }),
                                 ),
                             );
                         },

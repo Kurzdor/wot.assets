@@ -1,15 +1,15 @@
-import { z as e } from './lib.js';
-const r = (e) => e.replace(/\s+/g, '').replace(',', '').replace('.', ''),
-    s = (s, a) => {
-        if (void 0 === s) return s;
-        switch (a) {
-            case e.MULTI:
-                return s.substring(1);
-            case e.CURRENCY:
-            case e.NUMBER:
-                return r(s);
+import { u as r } from './lib.js';
+var e = (r) => r.replace(/\s+/g, '').replace(',', '').replace('.', ''),
+    a = (a, s) => {
+        if (void 0 === a) return a;
+        switch (s) {
+            case r.MULTI:
+                return a.substring(1);
+            case r.CURRENCY:
+            case r.NUMBER:
+                return e(a);
             default:
-                return s;
+                return a;
         }
     };
-export { s as a, r as g };
+export { a as n, e as t };

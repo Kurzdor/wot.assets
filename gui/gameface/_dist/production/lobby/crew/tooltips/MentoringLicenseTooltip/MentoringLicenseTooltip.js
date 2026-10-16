@@ -818,10 +818,10 @@
                 }
                 const C = E().forwardRef(function (u, e) {
                     let t = u.children,
-                        n = u.className,
-                        r = u.theme,
-                        A = void 0 === r ? 'default' : r,
-                        F = (function (u, e) {
+                        r = u.className,
+                        A = u.theme,
+                        F = void 0 === A ? 'default' : A,
+                        C = (function (u, e) {
                             if (null == u) return {};
                             var t = {};
                             for (var n in u)
@@ -831,10 +831,15 @@
                                 }
                             return t;
                         })(u, s);
-                    const C = E().useRef(null);
+                    const c = E().useRef(null);
                     return (
+                        (0, n.useLayoutEffect)(() => {
+                            const u = a.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         D(() => {
-                            const u = C.current;
+                            const u = c.current;
                             if (!u)
                                 return void console.warn(
                                     'Uncexpected to have base div as not setup in ref to calculate and invoke resize',
@@ -842,7 +847,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
-                                a.O.view.resize(e, t);
+                                (a.O.view.resize(e, t),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const n = window.getComputedStyle(u);
                                 a.O.view.setSidePaddingsRem({
                                     left: parseInt(n.getPropertyValue('padding-left'), 10),
@@ -855,10 +862,10 @@
                         }),
                         E().createElement(
                             'div',
-                            B({}, F, {
-                                className: o()(i.base, i[`base__theme-${A}`], n),
+                            B({}, C, {
+                                className: o()(i.base, i[`base__theme-${F}`], r),
                                 ref: function (u) {
-                                    ((C.current = u), 'function' == typeof e ? e(u) : e && (e.current = u));
+                                    ((c.current = u), 'function' == typeof e ? e(u) : e && (e.current = u));
                                 },
                             }),
                             E().createElement('div', { className: i.decorator }, t),
@@ -1337,7 +1344,7 @@
                     return n;
                 }
                 const H = (u) => (0 === u ? window : window.subViews.get(u));
-                const Y = ((u, e) => {
+                const $ = ((u, e) => {
                         const t = (0, n.createContext)({});
                         return [
                             function ({ mode: r = 'real', options: A, children: F, mocks: o }) {
@@ -1530,8 +1537,8 @@
                             () => (0, n.useContext)(t),
                         ];
                     })(({ observableModel: u }) => u.primitives(['amount']), c),
-                    $ = Y[0],
-                    Z = Y[1],
+                    Y = $[0],
+                    Z = $[1],
                     X = 'WarningBlock_base_b9f91',
                     Q = 'WarningBlock_text_cc2b0',
                     J = 'WarningBlock_icon_e03c8',
@@ -1613,7 +1620,7 @@
                     });
                 engine.whenReady.then(() => {
                     A().render(
-                        E().createElement($, null, E().createElement(iu, null)),
+                        E().createElement(Y, null, E().createElement(iu, null)),
                         document.getElementById('root'),
                     );
                 });

@@ -205,14 +205,14 @@
                         events: () => a.U,
                         extraSize: () => x,
                         forceTriggerMouseMove: () => R,
-                        freezeTextureBeforeResize: () => h,
+                        freezeTextureBeforeResize: () => p,
                         getBrowserTexturePath: () => _,
                         getDisplayStatus: () => P,
                         getExternalPaddingsRem: () => M,
                         getFontNames: () => k,
                         getScale: () => w,
                         getSize: () => m,
-                        getViewGlobalPosition: () => p,
+                        getViewGlobalPosition: () => h,
                         initExternalPaddings: () => D,
                         isEventHandled: () => T,
                         isFocused: () => y,
@@ -253,11 +253,11 @@
                 function E(e, t, n = 'px') {
                     return 'rem' === n ? viewEnv.resizeViewRem(e, t) : viewEnv.resizeViewPx(e, t);
                 }
-                function p(e = 'rem') {
+                function h(e = 'rem') {
                     const t = viewEnv.getViewGlobalPositionRem();
                     return 'rem' === e ? t : { x: f(t.x), y: f(t.y) };
                 }
-                function h() {
+                function p() {
                     viewEnv.freezeTextureBeforeResize();
                 }
                 function w() {
@@ -538,7 +538,7 @@
                 const __WEBPACK_DEFAULT_EXPORT__ = ViewModel;
             },
             828: (e, t, n) => {
-                n.d(t, { Gr: () => c, Z5: () => a.Z5, ry: () => h });
+                n.d(t, { Gr: () => c, Z5: () => a.Z5, ry: () => p });
                 class o {
                     constructor() {
                         ((this.entries = []),
@@ -609,8 +609,8 @@
                     }
                     s.done ? t(l) : Promise.resolve(l).then(o, i);
                 }
-                const p = (e) => ({ __Type: 'GFBoundingBox', x: e.x, y: e.y, width: e.width, height: e.height }),
-                    h = (function () {
+                const h = (e) => ({ __Type: 'GFBoundingBox', x: e.x, y: e.y, width: e.width, height: e.height }),
+                    p = (function () {
                         var e,
                             t =
                                 ((e = function* () {
@@ -692,7 +692,7 @@
                         RealFormatType: c,
                         TimeFormatType: d,
                         DateFormatType: _,
-                        makeGlobalBoundingBox: p,
+                        makeGlobalBoundingBox: h,
                         sendMoveEvent: (e) => w(s.MOVE, { isMouseEvent: !0, on: e }),
                         sendCloseEvent: g,
                         sendClosePopOverEvent: () => w(s.POP_OVER, { on: !1 }),
@@ -718,7 +718,7 @@
                                 decoratorID: o || R.invalid('resId'),
                                 targetID: i,
                                 direction: t,
-                                bbox: p(m),
+                                bbox: h(m),
                                 on: !0,
                                 args: r,
                             });
@@ -734,7 +734,7 @@
                             f(e, g);
                         },
                         handleViewEvent: w,
-                        onBindingsReady: h,
+                        onBindingsReady: p,
                         onLayoutReady: () =>
                             new Promise((e) => {
                                 requestAnimationFrame(() => {
@@ -831,6 +831,11 @@
                     const m = i().useRef(null);
                     var E;
                     return (
+                        (0, o.useLayoutEffect)(() => {
+                            const e = c.O.client.getSize('rem');
+                            ((document.body.style.width = `${e.width}rem`),
+                                (document.body.style.height = `${e.height}rem`));
+                        }, []),
                         (E = () => {
                             const e = m.current;
                             if (!e)
@@ -840,7 +845,9 @@
                             const t = new ResizeObserver(() => {
                                 const t = e.scrollWidth,
                                     n = e.scrollHeight;
-                                c.O.view.resize(t, n);
+                                (c.O.view.resize(t, n),
+                                    (document.body.style.width = `${t}px`),
+                                    (document.body.style.height = `${n}px`));
                                 const o = window.getComputedStyle(e);
                                 c.O.view.setSidePaddingsRem({
                                     left: parseInt(o.getPropertyValue('padding-left'), 10),
@@ -868,7 +875,7 @@
                 let E = (function (e) {
                         return ((e[(e.Engraving = 0)] = 'Engraving'), (e[(e.Background = 1)] = 'Background'), e);
                     })({}),
-                    p = (function (e) {
+                    h = (function (e) {
                         return (
                             (e.Dedication = 'dedication'),
                             (e.Skill = 'skill'),
@@ -879,10 +886,10 @@
                             e
                         );
                     })({}),
-                    h = (function (e) {
+                    p = (function (e) {
                         return ((e.Dedication = 'dedication'), (e.Triumph = 'triumph'), (e.Season = 'season'), e);
                     })({});
-                (h.Dedication, p.Dedication, h.Triumph, p.Triumph, h.Season, p.Skill, p.RankedSkill);
+                (p.Dedication, h.Dedication, p.Triumph, h.Triumph, p.Season, h.Skill, h.RankedSkill);
                 let w = (function (e) {
                     return ((e.NUMBER = 'NUMBER'), (e.PERCENTAGE = 'PERCENTAGE'), e);
                 })({});

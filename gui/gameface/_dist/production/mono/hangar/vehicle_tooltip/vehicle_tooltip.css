@@ -161,6 +161,18 @@
     max-width: 224rem;
 } /* stylelint-disable selector-no-qualifying-type */
 /* stylelint-disable selector-no-qualifying-type */
+.Earnings_row__multiplier_16fcb8c8::after {
+    width: 97rem;
+    height: 28rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    transform: translateX(-12rem);
+}
+
 .Earnings_leftColumn_940b9a0e {
     display: flex;
     justify-content: flex-end;
@@ -181,6 +193,12 @@
     font-size: 18rem;
     font-weight: 400;
     line-height: 1.3em;
+}
+.Earnings_row__multiplier_16fcb8c8::after {
+    height: 27rem;
+    background: linear-gradient(90deg, #ef2400 0%, rgba(67, 11, 11, 0) 100%);
+    opacity: 0.3;
+    content: '';
 }
 
 .Earnings_icon_c10adc2c {

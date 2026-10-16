@@ -265,7 +265,7 @@
                         displayStatusIs: () => Q,
                         enableFullScreenModeSupported: () => R,
                         events: () => E.U,
-                        extraSize: () => _,
+                        extraSize: () => I,
                         forceTriggerMouseMove: () => b,
                         freezeTextureBeforeResize: () => m,
                         getBrowserTexturePath: () => o,
@@ -273,7 +273,7 @@
                         getExternalPaddingsRem: () => P,
                         getFontNames: () => y,
                         getScale: () => d,
-                        getSize: () => l,
+                        getSize: () => B,
                         getViewGlobalPosition: () => c,
                         initExternalPaddings: () => M,
                         isEventHandled: () => w,
@@ -285,8 +285,8 @@
                         setAnimateWindow: () => f,
                         setEventHandled: () => p,
                         setInputPaddingsRem: () => D,
-                        setSidePaddingsRem: () => B,
-                        whenTutorialReady: () => I,
+                        setSidePaddingsRem: () => l,
+                        whenTutorialReady: () => _,
                     }));
                 var t = n(1308),
                     a = n(5544),
@@ -306,10 +306,10 @@
                 function s(u, e, n) {
                     return viewEnv.addDataChangedCallback(u, e, n);
                 }
-                function B(u) {
+                function l(u) {
                     viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, i);
                 }
-                function l(u = 'px') {
+                function B(u = 'px') {
                     return 'rem' === u ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
                 }
                 function C(u, e, n = 'px') {
@@ -361,7 +361,7 @@
                         (u, e) => ((u[e] = () => viewEnv.getShowingStatus() === A.W[e]), u),
                         {},
                     ),
-                    _ = {
+                    I = {
                         set: (u, e) => {
                             viewEnv.setExtraSizeRem(u, e);
                         },
@@ -369,7 +369,7 @@
                             viewEnv.getExtraSizeRem(u, e);
                         },
                     },
-                    I = Promise.all([
+                    _ = Promise.all([
                         new Promise((u) => {
                             window.isDomBuilt ? u() : E.U.onDomBuilt(u);
                         }),
@@ -461,7 +461,7 @@
                 ['ko', 'no'].includes(R.strings.settings.LANGUAGE_CODE());
             },
             6758: (u, e, n) => {
-                n.d(e, { Uw: () => B, WU: () => A, v2: () => a });
+                n.d(e, { Uw: () => l, WU: () => A, v2: () => a });
                 var t = n(8354);
                 let a = (function (u) {
                     return ((u[(u.left = 0)] = 'left'), (u[(u.right = 1)] = 'right'), u);
@@ -521,7 +521,7 @@
                             return (r(A, /( )/, e).forEach((u) => (n = n.concat(r(u, t, a.left)))), n);
                         })(u, e);
                     },
-                    B = (u, e, n) => u.split(/%\((.*?)\)(?:[sd])?/g).map((u) => (n && u in n ? n[u] : s(u, e)));
+                    l = (u, e, n) => u.split(/%\((.*?)\)(?:[sd])?/g).map((u) => (n && u in n ? n[u] : s(u, e)));
             },
             5949: (u, e, n) => {
                 n.d(e, { t: () => c });
@@ -572,8 +572,8 @@
                     return t;
                 }
                 const s = (u) => (0 === u ? window : window.subViews.get(u));
-                var B = n(598);
-                const l = [
+                var l = n(598);
+                const B = [
                     'phase',
                     'isAdvanced',
                     'isKillerUnspotted',
@@ -586,8 +586,8 @@
                 const C = ((u, e) => {
                         const n = (0, F.createContext)({});
                         return [
-                            function ({ mode: t = 'real', options: A, children: o, mocks: B }) {
-                                const l = (0, F.useRef)([]),
+                            function ({ mode: t = 'real', options: A, children: o, mocks: l }) {
+                                const B = (0, F.useRef)([]),
                                     C = (n, t, A) => {
                                         var F;
                                         const i = (function ({
@@ -654,16 +654,16 @@
                                                                   ? F
                                                                   : () => {},
                                                       }),
-                                            B = (u) =>
+                                            l = (u) =>
                                                 'mocks' === n ? (null == A ? void 0 : A.getter(u)) : o.readByPath(u),
-                                            C = (u) => l.current.push(u),
+                                            C = (u) => B.current.push(u),
                                             c = u({
                                                 mode: n,
-                                                readByPath: B,
+                                                readByPath: l,
                                                 externalModel: o,
                                                 observableModel: {
                                                     dict: (u) => {
-                                                        const e = B(u),
+                                                        const e = l(u),
                                                             t = a.LO.box(e, { equals: E });
                                                         return (
                                                             'real' === n &&
@@ -675,7 +675,7 @@
                                                         );
                                                     },
                                                     array: (u, e) => {
-                                                        const t = null != e ? e : B(u),
+                                                        const t = null != e ? e : l(u),
                                                             A = a.LO.box(t, { equals: E });
                                                         return (
                                                             'real' === n &&
@@ -687,7 +687,7 @@
                                                         );
                                                     },
                                                     object: (u, e) => {
-                                                        const t = null != e ? e : B(u),
+                                                        const t = null != e ? e : l(u),
                                                             A = a.LO.box(t, { equals: E });
                                                         return (
                                                             'real' === n &&
@@ -699,7 +699,7 @@
                                                         );
                                                     },
                                                     primitives: (u, e) => {
-                                                        const t = B(e);
+                                                        const t = l(e);
                                                         if (Array.isArray(u)) {
                                                             const A = u.reduce(
                                                                 (u, e) => ((u[e] = a.LO.box(t[e], {})), u),
@@ -754,19 +754,19 @@
                                     m = (0, F.useState)(t),
                                     d = m[0],
                                     h = m[1],
-                                    g = (0, F.useState)(() => C(t, A, B)),
+                                    g = (0, F.useState)(() => C(t, A, l)),
                                     f = g[0],
                                     v = g[1];
                                 return (
                                     (0, F.useEffect)(() => {
-                                        c.current ? v(C(d, A, B)) : (c.current = !0);
-                                    }, [B, d, A]),
+                                        c.current ? v(C(d, A, l)) : (c.current = !0);
+                                    }, [l, d, A]),
                                     (0, F.useEffect)(() => {
                                         h(t);
                                     }, [t]),
                                     (0, F.useEffect)(
                                         () => () => {
-                                            (f.externalModel.dispose(), l.current.forEach((u) => u()));
+                                            (f.externalModel.dispose(), B.current.forEach((u) => u()));
                                         },
                                         [f],
                                     ),
@@ -793,6 +793,7 @@
                                         'isSimplified',
                                         'shellType',
                                         'shellIcon',
+                                        'modeShellIcon',
                                         'armorNominal',
                                         'caliberRule',
                                         'angleRicochet',
@@ -823,28 +824,30 @@
                                                 n[t] = u[t];
                                             }
                                         return n;
-                                    })(u, l);
+                                    })(u, B);
                                 }),
                                 E = (0, A.Om)(() => {
                                     const u = e.isKillerUnspotted,
                                         n = e.impactMode,
                                         a = e.shellType,
                                         A = e.shellIcon,
-                                        E = e.armorNominal,
-                                        F = e.caliberRule,
-                                        i = e.angleRicochet;
+                                        E = e.modeShellIcon,
+                                        F = e.armorNominal,
+                                        i = e.caliberRule,
+                                        r = e.angleRicochet;
                                     return {
                                         isKillerUnspotted: u.get(),
                                         impactMode: n.get(),
                                         shellType: a.get(),
                                         shellIcon: A.get(),
-                                        armorNominal: E.get(),
-                                        is3CaliberRuleApplied: F.get() === t.fE.ThreeCaliber,
-                                        angleRicochet: i.get(),
+                                        modeShellIcon: E.get(),
+                                        armorNominal: F.get(),
+                                        is3CaliberRuleApplied: i.get() === t.fE.ThreeCaliber,
+                                        angleRicochet: r.get(),
                                     };
                                 }),
                                 F = (0, A.Om)(() =>
-                                    (0, B.uz)(
+                                    (0, l.uz)(
                                         n(),
                                         E().impactMode,
                                         e.phase.get(),
@@ -941,8 +944,8 @@
                     D = 'DeathCamUIView_cinemaBar_d22e6',
                     o = 'DeathCamUIView_cinemaBar__visible_a84e3',
                     s = 'DeathCamUIView_notificationWrapper_d8472',
-                    B = 'DeathReasonNotification_base_f8d51',
-                    l = 'DeathReasonNotification_base__visible_ed645',
+                    l = 'DeathReasonNotification_base_f8d51',
+                    B = 'DeathReasonNotification_base__visible_ed645',
                     C = 'DeathReasonNotification_contentContainer_e3d48',
                     c = 'DeathReasonNotification_destructionContainer_ac1c0',
                     m = 'DeathReasonNotification_icon_db447';
@@ -953,7 +956,7 @@
                         const u = (0, E.t)().model,
                             e = u.hud.isFinalPhase.get(),
                             n = u.impactMode.get(),
-                            t = i()(B, e && l),
+                            t = i()(l, e && B),
                             A = n || d.pE.penetration,
                             F = h[A === d.pE.penetration ? 'shellPenetrationEffective' : A]();
                         return a().createElement(
@@ -993,7 +996,7 @@
                         buttonContainer: 'HintButton_buttonContainer_fb6b9',
                         btnInner__blink: 'HintButton_btnInner__blink_ae582',
                     },
-                    _ = ({ btnText: u, hasBlinkAnimation: e = !1, isBlinking: n = !1, isSmall: A = !1 }) => {
+                    I = ({ btnText: u, hasBlinkAnimation: e = !1, isBlinking: n = !1, isSmall: A = !1 }) => {
                         const E = (0, t.useState)(!1),
                             F = E[0],
                             r = E[1],
@@ -1042,17 +1045,17 @@
                             )
                         );
                     };
-                var I = n(6758);
+                var _ = n(6758);
                 const M = 'FormatText_base_f27a4',
                     O = ({
                         binding: u,
                         text: e = '',
                         classMix: n,
-                        alignment: A = I.v2.left,
+                        alignment: A = _.v2.left,
                         formatWithBrackets: E,
                     }) => {
                         if (null === e) return (console.error("FormatText was supplied with 'null'"), null);
-                        const F = E && u ? (0, I.WU)(e, u) : e;
+                        const F = E && u ? (0, _.WU)(e, u) : e;
                         return a().createElement(
                             t.Fragment,
                             null,
@@ -1060,7 +1063,7 @@
                                 a().createElement(
                                     'div',
                                     { className: i()(M, n), key: `${e}-${E}` },
-                                    (0, I.Uw)(e, A, u).map((u, e) =>
+                                    (0, _.Uw)(e, A, u).map((u, e) =>
                                         a().createElement(t.Fragment, { key: `${e}-${u}` }, u),
                                     ),
                                 ),
@@ -1073,7 +1076,7 @@
                         return a().createElement(
                             'div',
                             { className: S },
-                            a().createElement(_, { btnText: u }),
+                            a().createElement(I, { btnText: u }),
                             a().createElement('div', { className: y }, a().createElement(O, { text: e, binding: A })),
                         );
                     },
@@ -1465,7 +1468,7 @@
                             },
                         };
                     },
-                    B = (u, e, n) => {
+                    l = (u, e, n) => {
                         const t = n.slice(0, e + 1).reduce((u, e) => u + e.animationParams.basic.duration, 0),
                             a = n.slice(0, e + 1).reduce((u, e) => u + e.animationParams.advanced.duration, 0),
                             A = E.zn - t,
@@ -1478,7 +1481,7 @@
                             u
                         );
                     },
-                    l = (u, e, n) => {
+                    B = (u, e, n) => {
                         const t = (u) =>
                                 n[e - 1].animationParams[u].duration +
                                 n[e - 1].animationParams[u].dimensionsIncreaseDelay,
@@ -1511,8 +1514,8 @@
                                     u
                                 );
                             })
-                            .map(l)
-                            .map(B);
+                            .map(B)
+                            .map(l);
                     },
                     c = (u) => u.filter((u) => 0 !== u.lines.length),
                     m = (u) =>
@@ -1545,7 +1548,7 @@
                                 n
                             ),
                             o = (e) => ({ name: e.name, value: u[e.name], effects: new Set([...e.effects]) }),
-                            B = F[e][n]
+                            l = F[e][n]
                                 .map((e) =>
                                     e.map((e, F) => ({
                                         hasTopSeparator: Boolean(F),
@@ -1583,9 +1586,9 @@
                                 .map(m)
                                 .filter(d)
                                 .map(s),
-                            l = B[0],
-                            h = B.slice(1);
-                        return [...C([l]), ...C(h)];
+                            B = l[0],
+                            h = l.slice(1);
+                        return [...C([B]), ...C(h)];
                     },
                     g = (u) => {
                         const e = !o().extraSmall ? 'big' : 'small';

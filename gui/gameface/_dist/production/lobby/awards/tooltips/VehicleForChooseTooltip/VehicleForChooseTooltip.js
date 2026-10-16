@@ -211,14 +211,14 @@
                         getExternalPaddingsRem: () => O,
                         getFontNames: () => x,
                         getScale: () => _,
-                        getSize: () => B,
+                        getSize: () => d,
                         getViewGlobalPosition: () => c,
                         initExternalPaddings: () => R,
                         isEventHandled: () => p,
                         isFocused: () => w,
                         pxToRem: () => h,
                         remToPx: () => m,
-                        resize: () => d,
+                        resize: () => B,
                         sendEvent: () => E.qP,
                         setAnimateWindow: () => g,
                         setEventHandled: () => v,
@@ -247,10 +247,10 @@
                 function D(u) {
                     viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, F);
                 }
-                function B(u = 'px') {
+                function d(u = 'px') {
                     return 'rem' === u ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
                 }
-                function d(u, e, t = 'px') {
+                function B(u, e, t = 'px') {
                     return 'rem' === t ? viewEnv.resizeViewRem(u, e) : viewEnv.resizeViewPx(u, e);
                 }
                 function c(u = 'rem') {
@@ -600,8 +600,8 @@
                     s = Object.freeze({ SHORT_FORMAT: 0, LONG_FORMAT: 1, YEAR_MONTH: 2 });
                 var l = t(20),
                     D = t(475);
-                const B = ['args'];
-                function d(u, e, t, n, r, i, a) {
+                const d = ['args'];
+                function B(u, e, t, n, r, i, a) {
                     try {
                         var E = u[i](a),
                             F = E.value;
@@ -628,10 +628,10 @@
                                     return new Promise(function (n, r) {
                                         var i = u.apply(e, t);
                                         function a(u) {
-                                            d(i, n, r, a, E, 'next', u);
+                                            B(i, n, r, a, E, 'next', u);
                                         }
                                         function E(u) {
-                                            d(i, n, r, a, E, 'throw', u);
+                                            B(i, n, r, a, E, 'throw', u);
                                         }
                                         a(void 0);
                                     });
@@ -653,7 +653,7 @@
                                             t[n] = u[n];
                                         }
                                     return t;
-                                })(e, B);
+                                })(e, d);
                             void 0 !== r
                                 ? viewEnv.handleViewEvent(
                                       Object.assign({ __Type: t, type: u }, i, {
@@ -707,7 +707,7 @@
                                 o = F.y,
                                 s = F.width,
                                 l = F.height,
-                                B = {
+                                d = {
                                     x: D.O.view.pxToRem(A) + a.x,
                                     y: D.O.view.pxToRem(o) + a.y,
                                     width: D.O.view.pxToRem(s),
@@ -719,7 +719,7 @@
                                 decoratorID: n || R.invalid('resId'),
                                 targetID: r,
                                 direction: e,
-                                bbox: c(B),
+                                bbox: c(d),
                                 on: !0,
                                 args: i,
                             });
@@ -829,11 +829,16 @@
                                     }
                                 return t;
                             })(u, s);
-                        const B = r().useRef(null);
-                        var d;
+                        const d = r().useRef(null);
+                        var B;
                         return (
-                            (d = () => {
-                                const u = B.current;
+                            (0, n.useLayoutEffect)(() => {
+                                const u = A.O.client.getSize('rem');
+                                ((document.body.style.width = `${u.width}rem`),
+                                    (document.body.style.height = `${u.height}rem`));
+                            }, []),
+                            (B = () => {
+                                const u = d.current;
                                 if (!u)
                                     return void console.warn(
                                         'Uncexpected to have base div as not setup in ref to calculate and invoke resize',
@@ -841,7 +846,9 @@
                                 const e = new ResizeObserver(() => {
                                     const e = u.scrollWidth,
                                         t = u.scrollHeight;
-                                    A.O.view.resize(e, t);
+                                    (A.O.view.resize(e, t),
+                                        (document.body.style.width = `${e}px`),
+                                        (document.body.style.height = `${t}px`));
                                     const n = window.getComputedStyle(u);
                                     A.O.view.setSidePaddingsRem({
                                         left: parseInt(n.getPropertyValue('padding-left'), 10),
@@ -852,20 +859,20 @@
                                 });
                                 return (e.observe(u), e.disconnect);
                             }),
-                            (0, n.useEffect)(d, []),
+                            (0, n.useEffect)(B, []),
                             r().createElement(
                                 'div',
                                 l({}, D, {
                                     className: F()(o.base, o[`base__theme-${E}`], i),
                                     ref: function (u) {
-                                        ((B.current = u), 'function' == typeof e ? e(u) : e && (e.current = u));
+                                        ((d.current = u), 'function' == typeof e ? e(u) : e && (e.current = u));
                                     },
                                 }),
                                 r().createElement('div', { className: o.decorator }, t),
                             )
                         );
                     }),
-                    B = (u = 1) => {
+                    d = (u = 1) => {
                         const e = new Error().stack;
                         let t,
                             n = R.invalid('resId'),
@@ -880,7 +887,7 @@
                                 (n = window.subViews[t].id));
                         return { callerUrl: r, caller: t, stack: e, resId: n };
                     },
-                    d = (u, e) => u.split('.').reduce((u, e) => u && u[e], e),
+                    B = (u, e) => u.split('.').reduce((u, e) => u && u[e], e),
                     c = (u) => {
                         const e = (0, n.useRef)(!1);
                         e.current || (u(), (e.current = !0));
@@ -891,12 +898,12 @@
                     m = (u) =>
                         ((u, e) =>
                             u.split('.').reduce((u, t) => {
-                                const n = d(`${u}.${t}`, window);
+                                const n = B(`${u}.${t}`, window);
                                 return _(n) ? e(u, t, n) : `${u}.${t}`;
                             }))(u, (u, e) => `${u}.${e}.value`),
                     g = (u) => {
                         const e = ((u) => {
-                                const e = B(),
+                                const e = d(),
                                     t = e.caller,
                                     n = e.resId,
                                     r = window.__feature && window.__feature !== t && t ? `subViews.${t}` : '';
@@ -908,7 +915,7 @@
                             const u = [n[0]];
                             return (
                                 n.reduce((e, n) => {
-                                    const r = d(h(t, `${e}.${n}`), window);
+                                    const r = B(h(t, `${e}.${n}`), window);
                                     return _(r) ? (u.push(r.id), `${e}.${n}.value`) : (u.push(n), `${e}.${n}`);
                                 }),
                                 u.reduce((u, e) => u + '.' + e)
@@ -924,7 +931,7 @@
                 const f = (u = 'model', e = p.Deep) => {
                     const t = (0, n.useState)(0),
                         r = (t[0], t[1]),
-                        i = (0, n.useMemo)(() => B(), []),
+                        i = (0, n.useMemo)(() => d(), []),
                         a = i.callerUrl,
                         E = i.caller,
                         F = i.resId,
@@ -936,7 +943,7 @@
                         }, [a, E, u]),
                         o = (0, n.useState)(() =>
                             ((u) => {
-                                const e = d(u, window);
+                                const e = B(u, window);
                                 for (const u in e) 'function' == typeof e[u] && (e[u] = e[u].bind(e));
                                 return _(e) ? e.value : e;
                             })(m(A)),
@@ -1090,13 +1097,13 @@
                         s = r.largeWidth,
                         l = r.mediumWidth,
                         D = r.smallWidth,
-                        B = r.extraSmallWidth,
-                        d = r.extraLargeHeight,
+                        d = r.extraSmallWidth,
+                        B = r.extraLargeHeight,
                         c = r.largeHeight,
                         C = r.mediumHeight,
                         _ = r.smallHeight,
                         h = r.extraSmallHeight,
-                        m = { extraLarge: d, large: c, medium: C, small: _, extraSmall: h };
+                        m = { extraLarge: B, large: c, medium: C, small: _, extraSmall: h };
                     if (t.extraLarge || t.large || t.medium || t.small || t.extraSmall) {
                         if (t.extraLarge && i) return e;
                         if (t.large && a) return e;
@@ -1108,7 +1115,7 @@
                         if (t.largeWidth && s) return x(e, t, m);
                         if (t.mediumWidth && l) return x(e, t, m);
                         if (t.smallWidth && D) return x(e, t, m);
-                        if (t.extraSmallWidth && B) return x(e, t, m);
+                        if (t.extraSmallWidth && d) return x(e, t, m);
                         if (!(
                             t.extraLargeWidth ||
                             t.largeWidth ||
@@ -1116,7 +1123,7 @@
                             t.smallWidth ||
                             t.extraSmallWidth
                         )) {
-                            if (t.extraLargeHeight && d) return e;
+                            if (t.extraLargeHeight && B) return e;
                             if (t.largeHeight && c) return e;
                             if (t.mediumHeight && C) return e;
                             if (t.smallHeight && _) return e;
@@ -1199,10 +1206,10 @@
                     I = 'Content_content_f631e',
                     U = 'Content_caption_f6040',
                     V = 'Content_captionIcon_d335b',
-                    j = 'Content_captionBackground_f202e',
-                    z = 'Content_vehicle_de899',
-                    q = 'Content_vehicleMarker_ffdbf',
-                    $ = R.strings.awards.multipleAwards.rent.tooltip,
+                    z = 'Content_captionBackground_f202e',
+                    j = 'Content_vehicle_de899',
+                    $ = 'Content_vehicleMarker_ffdbf',
+                    q = R.strings.awards.multipleAwards.rent.tooltip,
                     G = () => {
                         const u = f('model', !0).vehiclesList;
                         return r().createElement(
@@ -1211,13 +1218,13 @@
                             r().createElement(
                                 'div',
                                 { className: I },
-                                r().createElement('div', { className: W }, $.title()),
-                                r().createElement('div', { className: H }, $.description()),
+                                r().createElement('div', { className: W }, q.title()),
+                                r().createElement('div', { className: H }, q.description()),
                                 u.map(({ value: u }, e) =>
                                     r().createElement(
                                         'div',
-                                        { className: z, key: `reward-${e}` },
-                                        r().createElement('div', { className: q }),
+                                        { className: j, key: `reward-${e}` },
+                                        r().createElement('div', { className: $ }),
                                         r().createElement(L, {
                                             vehicleLevel: u.vehicleLvl,
                                             vehicleName: u.vehicleName,
@@ -1231,9 +1238,9 @@
                             r().createElement(
                                 'div',
                                 { className: U },
-                                r().createElement('div', { className: j }),
+                                r().createElement('div', { className: z }),
                                 r().createElement('div', { className: V }),
-                                $.caption(),
+                                q.caption(),
                             ),
                         );
                     },
