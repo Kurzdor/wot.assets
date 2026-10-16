@@ -1,42 +1,45 @@
-import { j as a, f as e } from './vendor.js';
-import { cL as s, d6 as i, d7 as t, d8 as o, cK as l } from './lib.js';
-var r = ((a) => ((a.Static = 'static'), (a.Claimable = 'claimable'), a))(r || {});
-const m = 'CustomReward_197314c4',
-    c = 'CustomReward_base__disable_51f6e5f1',
-    d = 'CustomReward_animWrapper_f3d190a6',
-    n = 'CustomReward_glow_11133e2',
-    p = 'CustomReward_glowReverse_48fff15c';
-function u({
-    claimState: u,
-    name: v,
-    icon: _,
-    rewardSize: f,
-    value: C,
+import { r as a } from './rolldown-runtime.js';
+import { c as e, do as s, f as i, h as t, lo as o, m as l, p as r, xi as m } from './lib.js';
+var c = (function (a) {
+        return ((a.Static = 'static'), (a.Claimable = 'claimable'), a);
+    })({}),
+    n = (s(), 'CustomReward_197314c4'),
+    d = 'CustomReward_base__disable_51f6e5f1',
+    u = 'CustomReward_animWrapper_f3d190a6',
+    p = 'CustomReward_glow_11133e2',
+    f = 'CustomReward_glowReverse_48fff15c',
+    _ = m();
+function v({
+    claimState: a,
+    name: s,
+    icon: m,
+    rewardSize: v,
+    value: w,
     tooltipId: b,
-    tooltipContentId: j,
-    isDisable: w,
-    className: g,
-    overlayType: x,
+    tooltipContentId: C,
+    isDisable: j,
+    className: x,
+    overlayType: g,
 }) {
-    const N = u === r.Claimable;
-    return a.jsxs('div', {
-        className: e(m, w && c, g),
+    const N = a === c.Claimable;
+    return (0, _.jsxs)('div', {
+        className: o(n, j && d, x),
         children: [
             N &&
-                a.jsxs('div', {
-                    className: d,
-                    children: [a.jsx('div', { className: n }), a.jsx('div', { className: p })],
+                (0, _.jsxs)('div', {
+                    className: u,
+                    children: [(0, _.jsx)('div', { className: p }), (0, _.jsx)('div', { className: f })],
                 }),
-            a.jsx(s, {
-                name: v,
-                image: o({ name: v, icon: _ }, l.Big),
-                size: f,
-                value: C.toString(),
-                valueType: t(v),
-                tooltipArgs: i({ tooltipId: b }, Number(j)),
-                special: x,
+            (0, _.jsx)(e, {
+                name: s,
+                image: i({ name: s, icon: m }, t.Big),
+                size: v,
+                value: w.toString(),
+                valueType: l(s),
+                tooltipArgs: r({ tooltipId: b }, Number(C)),
+                special: g,
             }),
         ],
     });
 }
-export { u as C };
+export { v as t };

@@ -1,99 +1,99 @@
-import { n as e, q as s, r as a, j as t, t as r, e as n } from './vendor.js';
-import { w as o, i as c, p as i, x as m } from './lib.js';
-import { B as l } from './enums.js';
-const d = { [l.Prepick]: 0, [l.Voting]: 1, [l.Finished]: 2, [l.None]: 3 };
+import { r as e } from './rolldown-runtime.js';
+import { F as s, J as a, O as t, Q as r, X as n, _ as o, g as c, q as i } from './lib.js';
+import { t as l } from './enums.js';
+import { n as m, t as d } from './vendor.js';
+var g = { [l.Prepick]: 0, [l.Voting]: 1, [l.Finished]: 2, [l.None]: 3 };
 function u(e) {
     return e - 1;
 }
-const [g, _] = c()(
-        (s) => {
-            const a = { root: s.observableModel.object() },
-                t = e(() => {
-                    const { startTimestamp: e, endTimestamp: s, serverTimestamp: t } = a.root.get();
+var [_, p] = o()(
+        (e) => {
+            const s = { root: e.observableModel.object() },
+                a = c(() => {
+                    const { startTimestamp: e, endTimestamp: a, serverTimestamp: t } = s.root.get();
                     return (function (e, s, a) {
                         const t = s - e;
                         return a <= e ? 0 : a >= s ? 100 : Math.floor(((a - e) / t) * 100);
-                    })(e, u(s), t);
+                    })(e, u(a), t);
                 });
-            return { ...a, computes: { progressPercentage: t } };
+            return { ...s, computes: { progressPercentage: a } };
         },
         ({ externalModel: e }) => ({ pollServerTime: e.createCallbackNoArgs('pollServerTime') }),
     ),
-    p = 'Stage_dd8bd0be',
-    f = 'Stage_line_6cf4ae98',
-    b = 'Stage_progress_14938f9d',
-    N = 'Stage_background_7913d805',
-    v = 'Stage_accent_ae0fcda6',
-    j = 'Stage_base__current_68142ff2',
-    x = 'Stage_image_d59eb726';
-function S(e, s) {
+    f = e(r()),
+    b = e(d()),
+    v = 'Stage_dd8bd0be',
+    N = 'Stage_line_6cf4ae98',
+    j = 'Stage_progress_14938f9d',
+    x = 'Stage_background_7913d805',
+    S = 'Stage_accent_ae0fcda6',
+    T = 'Stage_base__current_68142ff2',
+    h = 'Stage_image_d59eb726',
+    P = s();
+function B(e, s) {
     return 'past' === e ? 0 : 'future' === e ? -100 : Math.min(0, s - 100);
 }
-const T = s(({ stage: e, soundsEnabled: s, className: n, classNames: o }) => {
-        const { model: c } = _(),
-            { banState: l } = c.root.get(),
-            u = c.computes.progressPercentage(),
-            g = (function (e, s) {
-                const a = d[e] - d[s];
+var k = m(({ stage: e, soundsEnabled: s, className: t, classNames: r }) => {
+        const { model: n } = p(),
+            { banState: o } = n.root.get(),
+            c = n.computes.progressPercentage(),
+            i = (function (e, s) {
+                const a = g[e] - g[s];
                 return a < 0 ? 'past' : a > 0 ? 'future' : 'current';
-            })(e, l);
+            })(e, o);
         return (
-            a.useEffect(() => {
-                s && 'current' === g && i.sound('comp_7_bans_progressbar_start');
-            }, [g, s]),
-            a.useEffect(() => {
-                s && 'current' === g && m('RTPC_ext_comp_7_progressbar', u);
-            }, [g, u, s]),
-            a.useEffect(() => {
-                s && 'current' === g && 100 === u && i.sound('comp_7_bans_progressbar_stop');
-            }, [u, s, g]),
-            t.jsxs('div', {
-                className: r(p, 'current' === g && j, n),
+            (0, f.useEffect)(() => {
+                s && 'current' === i && a('RTPC_ext_comp_7_progressbar', c);
+            }, [i, c, s]),
+            (0, P.jsxs)('div', {
+                className: (0, b.default)(v, 'current' === i && T, t),
                 style: { '--animation-duration': '1s' },
                 children: [
-                    t.jsx('div', { className: f }),
-                    t.jsxs('div', {
-                        className: b,
-                        style: { transform: `translateX(${S(g, u)}%)` },
+                    (0, P.jsx)('div', { className: N }),
+                    (0, P.jsxs)('div', {
+                        className: j,
+                        style: { transform: `translateX(${B(i, c)}%)` },
                         children: [
-                            t.jsx('div', { className: r(N, o?.lineBg) }),
-                            t.jsx('div', { className: v, children: t.jsx('div', { className: x }) }),
+                            (0, P.jsx)('div', { className: (0, b.default)(x, r?.lineBg) }),
+                            (0, P.jsx)('div', { className: S, children: (0, P.jsx)('div', { className: h }) }),
                         ],
                     }),
                 ],
             })
         );
     }),
-    h = 'BanProgressionWidget_e508801a',
-    B = 'BanProgressionWidget_background_6a4cb777',
-    P = 'BanProgressionWidget_stage_68c90a63',
-    E = [l.Prepick, l.Voting, l.Finished],
-    k = s(({ soundsEnabled: e = !0, className: s, classNames: r }) => {
-        const { model: o } = _(),
-            { banState: c } = o.root.get();
-        a.useEffect(() => {
-            e && c === l.Voting && i.sound('comp_7_bans_stage_change');
-        }, [c, e]);
-        const m = a.useMemo(() => ({ lineBg: r?.lineBg }), [r?.lineBg]);
-        return t.jsxs('div', {
-            className: n(h, s),
+    E = 'BanProgressionWidget_e508801a',
+    M = 'BanProgressionWidget_background_6a4cb777',
+    F = 'BanProgressionWidget_stage_68c90a63',
+    V = [l.Prepick, l.Voting, l.Finished],
+    W = m(({ soundsEnabled: e = !0, className: s, classNames: a }) => {
+        const { model: t } = p(),
+            { banState: r } = t.root.get();
+        (0, f.useEffect)(() => {
+            e && r === l.Voting && i.sound('comp_7_bans_stage_change');
+        }, [r, e]);
+        const o = (0, f.useMemo)(() => ({ lineBg: a?.lineBg }), [a?.lineBg]);
+        return (0, P.jsxs)('div', {
+            className: n(E, s),
             children: [
-                t.jsx('div', { className: B }),
-                E.map((s) => t.jsx(T, { soundsEnabled: e, stage: s, className: P, classNames: m }, s)),
+                (0, P.jsx)('div', { className: M }),
+                V.map((s) => (0, P.jsx)(k, { soundsEnabled: e, stage: s, className: F, classNames: o }, s)),
             ],
         });
     }),
-    M = s((e) => {
-        const { model: s, controls: a } = _(),
-            { banState: r, serverTimestamp: n, startTimestamp: c, endTimestamp: i } = s.root.get();
-        !(function (e, s, a, t = 950) {
-            o(
-                () => {
-                    a();
-                },
-                e < s ? t : void 0,
-            );
-        })(n, u(i), a.pollServerTime, 200);
-        return r !== l.None && n > 0 && c > 0 && i > 0 ? t.jsx(k, { ...e }) : null;
+    y = m((e) => {
+        const { model: s, controls: a } = p(),
+            { banState: r, serverTimestamp: n, startTimestamp: o, endTimestamp: c } = s.root.get();
+        return (
+            (function (e, s, a, r = 950) {
+                t(
+                    () => {
+                        a();
+                    },
+                    e < s ? r : void 0,
+                );
+            })(n, u(c), a.pollServerTime, 200),
+            r !== l.None && n > 0 && o > 0 && c > 0 ? (0, P.jsx)(W, { ...e }) : null
+        );
     });
-export { g as B, M as a };
+export { _ as n, y as t };

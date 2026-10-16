@@ -3589,6 +3589,7 @@
                             (e.LootBox = 'lootBox'),
                             (e.BrCoin = 'brcoin'),
                             (e.Attachment = 'attachment'),
+                            (e.Pet = 'pet'),
                             e
                         );
                     })({}),
@@ -3938,7 +3939,12 @@
                                             },
                                             F,
                                         ),
-                                    s && i().createElement('div', { className: Pt.title }, s),
+                                    s &&
+                                        i().createElement(
+                                            'div',
+                                            { className: m()(Pt.title, null == E ? void 0 : E.title) },
+                                            s,
+                                        ),
                                 ),
                             ),
                             t &&

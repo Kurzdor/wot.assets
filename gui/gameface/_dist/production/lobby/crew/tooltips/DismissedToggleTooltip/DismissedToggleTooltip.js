@@ -197,7 +197,7 @@
                     t.d(e, {
                         addModelObserver: () => A,
                         addPreloadTexture: () => c,
-                        arabic2roman: () => T,
+                        arabic2roman: () => x,
                         children: () => r,
                         displayStatus: () => o.W,
                         displayStatusIs: () => k,
@@ -208,7 +208,7 @@
                         freezeTextureBeforeResize: () => B,
                         getBrowserTexturePath: () => E,
                         getDisplayStatus: () => w,
-                        getExternalPaddingsRem: () => x,
+                        getExternalPaddingsRem: () => T,
                         getFontNames: () => y,
                         getScale: () => C,
                         getSize: () => d,
@@ -291,8 +291,8 @@
                         let u = [];
                         return () => (0 === u.length && (u = Object.keys(viewEnv.getFontsConfig())), u);
                     })(),
-                    T = n.cg;
-                function x() {
+                    x = n.cg;
+                function T() {
                     return viewEnv.getExternalPaddingsRem();
                 }
                 const k = Object.keys(o.W).reduce(
@@ -829,6 +829,11 @@
                     const d = a().useRef(null);
                     var _;
                     return (
+                        (0, i.useLayoutEffect)(() => {
+                            const u = o.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (_ = () => {
                             const u = d.current;
                             if (!u)
@@ -838,7 +843,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
-                                o.O.view.resize(e, t);
+                                (o.O.view.resize(e, t),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const n = window.getComputedStyle(u);
                                 o.O.view.setSidePaddingsRem({
                                     left: parseInt(n.getPropertyValue('padding-left'), 10),
@@ -1107,7 +1114,7 @@
                                     p && p(),
                                     (h.current.isVisible = !0));
                             }, [t, d, n, w, p]),
-                            T = (0, i.useCallback)(() => {
+                            x = (0, i.useCallback)(() => {
                                 if (h.current.isVisible || h.current.timeoutId) {
                                     const u = h.current.timeoutId;
                                     (u > 0 && (clearTimeout(u), (h.current.timeoutId = 0)),
@@ -1116,35 +1123,35 @@
                                         (h.current.isVisible = !1));
                                 }
                             }, [t, d, w, g]),
-                            x = (0, i.useCallback)((u) => {
+                            T = (0, i.useCallback)((u) => {
                                 h.current.isVisible &&
                                     ((h.current.prevTarget = document.elementFromPoint(u.clientX, u.clientY)),
                                     (h.current.hideTimerId = window.setTimeout(() => {
                                         const e = document.elementFromPoint(u.clientX, u.clientY);
-                                        e && !e.isSameNode(h.current.prevTarget) && T();
+                                        e && !e.isSameNode(h.current.prevTarget) && x();
                                     }, 200)));
                             }, []);
                         ((0, i.useEffect)(() => {
                             const u = h.current.hideTimerId;
                             return (
-                                document.addEventListener('wheel', x, { capture: !0 }),
+                                document.addEventListener('wheel', T, { capture: !0 }),
                                 () => {
-                                    (document.removeEventListener('wheel', x, { capture: !0 }),
+                                    (document.removeEventListener('wheel', T, { capture: !0 }),
                                         u && window.clearTimeout(u));
                                 }
                             );
                         }, []),
                             (0, i.useEffect)(() => {
-                                !1 === D && T();
-                            }, [D, T]),
+                                !1 === D && x();
+                            }, [D, x]),
                             (0, i.useEffect)(
                                 () => (
-                                    window.addEventListener('mouseleave', T),
+                                    window.addEventListener('mouseleave', x),
                                     () => {
-                                        (window.removeEventListener('mouseleave', T), T());
+                                        (window.removeEventListener('mouseleave', x), x());
                                     }
                                 ),
-                                [T],
+                                [x],
                             ));
                         return D
                             ? (0, i.cloneElement)(
@@ -1162,13 +1169,13 @@
                                                       k && k(u));
                                               }),
                                           onMouseLeave: ((u) => (e) => {
-                                              (T(), null == o || o(e), null == u || u(e));
+                                              (x(), null == o || o(e), null == u || u(e));
                                           })(e.props.onMouseLeave),
                                           onClick: ((u) => (e) => {
-                                              (!1 === A && T(), null == s || s(e), null == u || u(e));
+                                              (!1 === A && x(), null == s || s(e), null == u || u(e));
                                           })(e.props.onClick),
                                           onMouseDown: ((u) => (e) => {
-                                              (!1 === A && T(), null == a || a(e), null == u || u(e));
+                                              (!1 === A && x(), null == a || a(e), null == u || u(e));
                                           })(e.props.onMouseDown),
                                       },
                                       b,
@@ -1192,7 +1199,7 @@
                         y.apply(null, arguments)
                     );
                 }
-                const T = (u) => {
+                const x = (u) => {
                         let e = u.children,
                             t = (function (u, e) {
                                 if (null == u) return {};
@@ -1219,7 +1226,7 @@
                             e,
                         );
                     },
-                    x = ['children', 'body', 'header', 'note', 'alert', 'args'];
+                    T = ['children', 'body', 'header', 'note', 'alert', 'args'];
                 function k() {
                     return (
                         (k = Object.assign
@@ -1251,7 +1258,7 @@
                                         t[n] = u[n];
                                     }
                                 return t;
-                            })(u, x);
+                            })(u, T);
                         const l = (0, i.useMemo)(() => {
                             const u = Object.assign({}, s, { body: t, header: n, note: r, alert: o });
                             for (const e in u) void 0 === u[e] && delete u[e];
@@ -1292,7 +1299,7 @@
                     const n = a().createElement('div', { className: t }, u);
                     if (e.header || e.body) return a().createElement(P, e, n);
                     const r = e.contentId;
-                    return r ? a().createElement(h, L({}, e, { contentId: r }), n) : a().createElement(T, e, n);
+                    return r ? a().createElement(h, L({}, e, { contentId: r }), n) : a().createElement(x, e, n);
                 };
                 var S = t(1311);
                 const M = {
@@ -1374,23 +1381,23 @@
                     G = 'renderers_noBreakWrapper_d986b',
                     X = 'renderers_lineBreak_f90ed',
                     H = 'renderers_newLine_ee778',
-                    K = 'renderers_word_ac32d',
-                    $ = (u) => ({ color: `#${u}` }),
+                    $ = 'renderers_word_ac32d',
+                    K = (u) => ({ color: `#${u}` }),
                     Y = ({ elementList: u, textBlock: e, key: t }) => {
                         const n = e.colorTag;
                         return n
                             ? z[n]
                                 ? a().createElement(
                                       'span',
-                                      { key: t, 'data-block-type': e.blockType, className: r()(K, z[n]) },
+                                      { key: t, 'data-block-type': e.blockType, className: r()($, z[n]) },
                                       u,
                                   )
                                 : a().createElement(
                                       'span',
-                                      { key: t, 'data-block-type': e.blockType, className: K, style: $(n) },
+                                      { key: t, 'data-block-type': e.blockType, className: $, style: K(n) },
                                       u,
                                   )
-                            : a().createElement('span', { key: t, 'data-block-type': e.blockType, className: K }, u);
+                            : a().createElement('span', { key: t, 'data-block-type': e.blockType, className: $ }, u);
                     },
                     Z = {
                         [j.Word]: Y,
@@ -2049,8 +2056,8 @@
                     hu = vu[0],
                     wu = vu[1],
                     yu = 'DismissedToggleTooltipApp_base_eb88d',
-                    Tu = 'DismissedToggleTooltipApp_title_ef4b2',
-                    xu = 'DismissedToggleTooltipApp_supTitle_c980b',
+                    xu = 'DismissedToggleTooltipApp_title_ef4b2',
+                    Tu = 'DismissedToggleTooltipApp_supTitle_c980b',
                     ku = 'DismissedToggleTooltipApp_description_c6243',
                     Ou = 'DismissedToggleTooltipApp_decorator_a9587',
                     Pu = 'DismissedToggleTooltipApp_freePeriod_cf598',
@@ -2061,8 +2068,8 @@
                         return a().createElement(
                             'div',
                             { className: yu },
-                            a().createElement('div', { className: Tu }, R.strings.tooltips.dismissedToggle.header()),
-                            a().createElement('div', { className: xu }, R.strings.tooltips.dismissedToggle.subHeader()),
+                            a().createElement('div', { className: xu }, R.strings.tooltips.dismissedToggle.header()),
+                            a().createElement('div', { className: Tu }, R.strings.tooltips.dismissedToggle.subHeader()),
                             a().createElement('div', { className: ku }, R.strings.tooltips.dismissedToggle.body()),
                             a().createElement(Fu, {
                                 text: R.strings.tooltips.dismissedToggle.recover.total(),
@@ -2093,7 +2100,7 @@
                             a().createElement(Fu, {
                                 text: R.strings.tooltips.dismissedToggle.footer.body(),
                                 binding: { quantity: u.membersBuffer.get() },
-                                classMix: xu,
+                                classMix: Tu,
                             }),
                         );
                     });

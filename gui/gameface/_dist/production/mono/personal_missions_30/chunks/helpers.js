@@ -1,27 +1,39 @@
-import { am as o, an as a, ao as t, ax as e, r as i } from './lib.js';
-const s = 'tooltipId';
-var n = ((o) => (
-    (o.VEHICLE_PART = 'vehiclePart'),
-    (o.OPERATION_WITH_HONORS = 'operationWithHonors'),
-    (o.CAMPAIGN_WITH_HONORS = 'campaignWithHonors'),
-    (o.OPERATION = 'operation'),
-    o
-))(n || {});
-const r = (o, a) => {
-        const t = e.find((o) => o.name === a);
-        return !!t && o < t.weight;
+import { D as o, E as t, St as a, T as e, ln as n, w as i } from './lib.js';
+var r = 'tooltipId',
+    s = (function (o) {
+        return (
+            (o.VEHICLE_PART = 'vehiclePart'),
+            (o.OPERATION_WITH_HONORS = 'operationWithHonors'),
+            (o.CAMPAIGN_WITH_HONORS = 'campaignWithHonors'),
+            (o.OPERATION = 'operation'),
+            o
+        );
+    })({}),
+    l = (o, t) => {
+        const e = a.find((o) => o.name === t);
+        return !!e && o < e.weight;
     },
-    p = (e, n) => ({
-        ...e,
-        size: n,
-        image: t(e, n),
-        valueType: a(e.name),
-        special: 'overlayType' in e ? e.overlayType : void 0,
-        tooltipArgs: o(
-            { [s]: e.tooltipId },
-            i
+    p = (o, a) => ({
+        ...o,
+        size: a,
+        image: i(o, a),
+        valueType: t(o.name),
+        special: 'overlayType' in o ? o.overlayType : void 0,
+        tooltipArgs: e(
+            { [r]: o.tooltipId },
+            n
                 .resolve('views')
                 .read((o) => o.common.tooltip_window.backport_tooltip_content.BackportTooltipContent('resId')),
         ),
-    });
-export { s as A, n as R, p as b, r as s };
+    }),
+    c = (t, a = o.Small) => {
+        const { name: e, icon: n } = t;
+        switch (e) {
+            case 'completionTokens':
+            case 'tankwomanBonus':
+                return n.replace('..', 'img://gui');
+            default:
+                return i(t, a);
+        }
+    };
+export { s as a, r as i, c as n, l as r, p as t };

@@ -1124,6 +1124,7 @@
                         (u.LootBox = 'lootBox'),
                         (u.BrCoin = 'brcoin'),
                         (u.Attachment = 'attachment'),
+                        (u.Pet = 'pet'),
                         u
                     );
                 })({});

@@ -2270,6 +2270,15 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 10rem;
     pointer-events: none;
 }
+.ShellsSlot_mechanic_feea2 {
+    width: 16rem;
+    height: 16rem;
+    background: center / contain no-repeat;
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    pointer-events: none;
+}
 
 .ToggleSlot_base_e2309 {
     position: relative;
@@ -2297,6 +2306,16 @@ This bug is reproduced in Google Chrome 81.0.4044.113
 }
 .ToggleSlot_slot__active_a0100:hover .ToggleSlot_image_ec825 {
     filter: brightness(1.5);
+}
+.ToggleSlot_mechanic_e120c {
+    width: 20rem;
+    height: 20rem;
+    background: center / contain no-repeat;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    z-index: 1;
+    pointer-events: none;
 }
 .ToggleSlot_glow_abae3 {
     width: 80rem;

@@ -43,6 +43,20 @@
     height: 44rem;
 }
 
+.Icon_overlay_d9a11 {
+    width: 16rem;
+    height: 16rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 2rem;
+    right: -10rem;
+}
+
+.mediaSmall .Icon_overlay_d9a11 {
+    width: 16rem;
+    height: 16rem;
+}
+
 .DataLine_base_b4b94 {
     display: flex;
     align-items: center;

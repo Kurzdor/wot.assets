@@ -1,6 +1,8 @@
-import { j as s, f as e } from './vendor.js';
-import './lib.js';
-const i = 'Divider_35efe770',
-    a = 'Divider_db17be24',
-    r = ({ className: r }) => s.jsx('div', { className: e(i, r), children: s.jsx('div', { className: a }) });
-export { r as D };
+import { Ii as a, vr as s } from './lib.js';
+var i = 'Divider_a77a1582',
+    r = 'Divider_cc922847',
+    e = s();
+function c({ className: s }) {
+    return (0, e.jsx)('div', { className: a(i, s), children: (0, e.jsx)('div', { className: r }) });
+}
+export { c as t };

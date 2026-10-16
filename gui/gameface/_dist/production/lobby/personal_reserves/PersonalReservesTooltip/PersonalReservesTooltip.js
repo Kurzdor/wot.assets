@@ -202,7 +202,7 @@
                 (t.r(i),
                     t.d(i, {
                         addModelObserver: () => G,
-                        addPreloadTexture: () => V,
+                        addPreloadTexture: () => $,
                         arabic2roman: () => iu,
                         children: () => a,
                         displayStatus: () => T,
@@ -228,7 +228,7 @@
                         sendEvent: () => z,
                         setAnimateWindow: () => J,
                         setEventHandled: () => eu,
-                        setInputPaddingsRem: () => $,
+                        setInputPaddingsRem: () => V,
                         setSidePaddingsRem: () => j,
                         whenTutorialReady: () => Au,
                     }));
@@ -415,10 +415,10 @@
                         },
                     },
                     U = 15;
-                function V(u) {
+                function $(u) {
                     viewEnv.addPreloadTexture(u);
                 }
-                function $(u) {
+                function V(u) {
                     viewEnv.setHitAreaPaddingsRem(u, u, u, u, U);
                 }
                 function q(u, e, t, n = 1) {
@@ -1268,6 +1268,11 @@
                     const _ = o().useRef(null);
                     var l;
                     return (
+                        (0, i.useLayoutEffect)(() => {
+                            const u = a.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (l = () => {
                             const u = _.current;
                             if (!u)
@@ -1277,7 +1282,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
-                                a.O.view.resize(e, t);
+                                (a.O.view.resize(e, t),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const n = window.getComputedStyle(u);
                                 a.O.view.setSidePaddingsRem({
                                     left: parseInt(n.getPropertyValue('padding-left'), 10),
@@ -1718,8 +1725,8 @@
                         I = e.minBonus,
                         z = e.maxBonus,
                         U = e.state,
-                        V = e.nextExpirationAmount,
-                        $ = e.isNew,
+                        $ = e.nextExpirationAmount,
+                        V = e.isNew,
                         q = e.inDepotExpirableAmount,
                         G = e.isExpiringSoon,
                         j = q > 0,
@@ -1838,7 +1845,7 @@
                                         ),
                                         G &&
                                             !Z &&
-                                            i().createElement('div', { className: N.cardContent_expiringQuantity }, V),
+                                            i().createElement('div', { className: N.cardContent_expiringQuantity }, $),
                                     ),
                                 i().createElement('div', {
                                     style: { backgroundImage: cu },
@@ -1870,7 +1877,7 @@
                             Q && !Z && i().createElement('div', { className: N.plusIcon }),
                         ),
                         j &&
-                            $ &&
+                            V &&
                             i().createElement(
                                 'div',
                                 { className: N.expiringIndicator },

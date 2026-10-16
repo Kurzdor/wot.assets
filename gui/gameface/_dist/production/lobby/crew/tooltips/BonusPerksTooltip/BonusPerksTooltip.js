@@ -217,10 +217,10 @@
                         isEventHandled: () => g,
                         isFocused: () => h,
                         pxToRem: () => p,
-                        remToPx: () => f,
+                        remToPx: () => m,
                         resize: () => D,
                         sendEvent: () => a.qP,
-                        setAnimateWindow: () => m,
+                        setAnimateWindow: () => f,
                         setEventHandled: () => v,
                         setInputPaddingsRem: () => E,
                         setSidePaddingsRem: () => A,
@@ -255,7 +255,7 @@
                 }
                 function B(u = 'rem') {
                     const e = viewEnv.getViewGlobalPositionRem();
-                    return 'rem' === u ? e : { x: f(e.x), y: f(e.y) };
+                    return 'rem' === u ? e : { x: m(e.x), y: m(e.y) };
                 }
                 function _() {
                     viewEnv.freezeTextureBeforeResize();
@@ -266,10 +266,10 @@
                 function p(u) {
                     return viewEnv.pxToRem(u);
                 }
-                function f(u) {
+                function m(u) {
                     return viewEnv.remToPx(u);
                 }
-                function m(u, e) {
+                function f(u, e) {
                     viewEnv.setAnimateWindow(u, e);
                 }
                 function h() {
@@ -679,14 +679,14 @@
                         var n;
                     },
                     p = () => C(a.CLOSE),
-                    f = (u, e) => {
+                    m = (u, e) => {
                         u.keyCode === F.n.ESCAPE && e();
                     };
-                var m = t(5533);
+                var f = t(5533);
                 const h = r.instance,
                     v = {
                         DataTracker: o.Z,
-                        ViewModel: m.Z,
+                        ViewModel: f.Z,
                         ViewEventType: a,
                         NumberFormatType: s,
                         RealFormatType: c,
@@ -724,14 +724,14 @@
                             });
                         },
                         addEscapeListener: (u) => {
-                            const e = (e) => f(e, u);
+                            const e = (e) => m(e, u);
                             return (
                                 window.addEventListener('keydown', e),
                                 () => window.removeEventListener('keydown', e)
                             );
                         },
                         closeOnEsc: (u) => {
-                            f(u, p);
+                            m(u, p);
                         },
                         handleViewEvent: C,
                         onBindingsReady: _,
@@ -817,9 +817,9 @@
                 const F = a().forwardRef(function (u, e) {
                     let t = u.children,
                         n = u.className,
-                        i = u.theme,
-                        F = void 0 === i ? 'default' : i,
-                        A = (function (u, e) {
+                        F = u.theme,
+                        A = void 0 === F ? 'default' : F,
+                        d = (function (u, e) {
                             if (null == u) return {};
                             var t = {};
                             for (var n in u)
@@ -829,10 +829,15 @@
                                 }
                             return t;
                         })(u, E);
-                    const d = a().useRef(null);
+                    const D = a().useRef(null);
                     return (
+                        (0, i.useLayoutEffect)(() => {
+                            const u = o.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         s(() => {
-                            const u = d.current;
+                            const u = D.current;
                             if (!u)
                                 return void console.warn(
                                     'Uncexpected to have base div as not setup in ref to calculate and invoke resize',
@@ -840,7 +845,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
-                                o.O.view.resize(e, t);
+                                (o.O.view.resize(e, t),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const n = window.getComputedStyle(u);
                                 o.O.view.setSidePaddingsRem({
                                     left: parseInt(n.getPropertyValue('padding-left'), 10),
@@ -853,10 +860,10 @@
                         }),
                         a().createElement(
                             'div',
-                            l({}, A, {
-                                className: r()(c.base, c[`base__theme-${F}`], n),
+                            l({}, d, {
+                                className: r()(c.base, c[`base__theme-${A}`], n),
                                 ref: function (u) {
-                                    ((d.current = u), 'function' == typeof e ? e(u) : e && (e.current = u));
+                                    ((D.current = u), 'function' == typeof e ? e(u) : e && (e.current = u));
                                 },
                             }),
                             a().createElement('div', { className: c.decorator }, t),
@@ -912,14 +919,14 @@
                                     }
                                 return t;
                             })(u, B);
-                        const f = e,
-                            m = (0, i.useRef)(null);
+                        const m = e,
+                            f = (0, i.useRef)(null);
                         var h;
                         return (
                             s(() => {
                                 let u = !1;
                                 return o.O.view.events.onDisplayChanged((e, t) => {
-                                    const n = m.current;
+                                    const n = f.current;
                                     n &&
                                         (t === o.O.view.displayStatus.hidden
                                             ? ((u = n.paused), n.pause())
@@ -929,7 +936,7 @@
                             s(() => {
                                 let u = !1;
                                 return o.O.client.events.onMinimize((e) => {
-                                    const t = m.current;
+                                    const t = f.current;
                                     t && (e ? ((u = t.paused), t.pause()) : u || t.play());
                                 });
                             }),
@@ -949,8 +956,8 @@
                                             }
                                         );
                                     })(() => {
-                                        const u = m.current;
-                                        if (!f || !u || !A)
+                                        const u = f.current;
+                                        if (!m || !u || !A)
                                             return void (null != u && u.cohFastSeek && (u.cohFastSeek = !1));
                                         const e = u.cohGetKeyframeTimestamps ? u.cohGetKeyframeTimestamps() : [];
                                         e.length > 0
@@ -960,10 +967,10 @@
                                               }))
                                             : console.warn("Can't prebuffered keyframes, keyframes was not found");
                                     }),
-                                [A, f],
+                                [A, m],
                             ),
                             (0, i.useEffect)(() => {
-                                if (f && m.current) {
+                                if (m && f.current) {
                                     const u = { changeTimeHandlers: [], changeKeyframeHandlers: [], changeTimeLoop: D },
                                         e = () => {
                                             let e = 0;
@@ -978,8 +985,8 @@
                                                         },
                                                     ];
                                                 })(() => {
-                                                    if (m.current) {
-                                                        const t = m.current,
+                                                    if (f.current) {
+                                                        const t = f.current,
                                                             n = t.currentTime,
                                                             r = t.duration;
                                                         if (
@@ -988,11 +995,11 @@
                                                                     u({ currentTime: n, duration: r }),
                                                                 ),
                                                                 (e = n)),
-                                                            m.current.paused || !f || !A)
+                                                            f.current.paused || !m || !A)
                                                         )
                                                             return;
-                                                        const o = m.current.cohGetKeyframeTimestamps
-                                                            ? m.current.cohGetKeyframeTimestamps()
+                                                        const o = f.current.cohGetKeyframeTimestamps
+                                                            ? f.current.cohGetKeyframeTimestamps()
                                                             : [];
                                                         o.forEach((e, t) => {
                                                             void 0 !== o[t] &&
@@ -1039,35 +1046,35 @@
                                         ),
                                         r = () => {
                                             var u;
-                                            return null == (u = m.current) ? void 0 : u.currentTime;
+                                            return null == (u = f.current) ? void 0 : u.currentTime;
                                         },
                                         o = () => {
                                             var u;
-                                            return null == (u = m.current) ? void 0 : u.duration;
+                                            return null == (u = f.current) ? void 0 : u.duration;
                                         },
                                         i = (u) => {
                                             var e, t, n;
-                                            m.current &&
-                                                (m.current.currentTime =
+                                            f.current &&
+                                                (f.current.currentTime =
                                                     ((e = 0),
-                                                    (t = m.current.duration),
+                                                    (t = f.current.duration),
                                                     (n = u) < e ? e : n > t ? t : n));
                                         },
                                         a = () => {
                                             var u;
-                                            return null == (u = m.current) ? void 0 : u.play();
+                                            return null == (u = f.current) ? void 0 : u.play();
                                         },
                                         s = () => {
                                             var u;
-                                            return null == (u = m.current) ? void 0 : u.pause();
+                                            return null == (u = f.current) ? void 0 : u.pause();
                                         },
                                         c = () => {
                                             (s(), i(0));
                                         },
                                         E = () => {
                                             var u;
-                                            return null != (u = m.current) && u.cohGetKeyframeTimestamps
-                                                ? m.current.cohGetKeyframeTimestamps()
+                                            return null != (u = f.current) && u.cohGetKeyframeTimestamps
+                                                ? f.current.cohGetKeyframeTimestamps()
                                                 : [];
                                         },
                                         l = (u) => {
@@ -1084,10 +1091,10 @@
                                         _ = (u, e) => {
                                             var t;
                                             return (
-                                                null == (t = m.current) || t.addEventListener(u, e),
+                                                null == (t = f.current) || t.addEventListener(u, e),
                                                 () => {
                                                     var t;
-                                                    return null == (t = m.current)
+                                                    return null == (t = f.current)
                                                         ? void 0
                                                         : t.removeEventListener(u, e);
                                                 }
@@ -1096,17 +1103,17 @@
                                         C = (u, e) => {
                                             var t;
                                             return (
-                                                null == (t = m.current) || t.removeEventListener(u, e),
+                                                null == (t = f.current) || t.removeEventListener(u, e),
                                                 () => {
                                                     var t;
-                                                    return null == (t = m.current)
+                                                    return null == (t = f.current)
                                                         ? void 0
                                                         : t.removeEventListener(u, e);
                                                 }
                                             );
                                         };
                                     return (
-                                        (f.current = {
+                                        (m.current = {
                                             on: _,
                                             off: C,
                                             play: a,
@@ -1119,33 +1126,33 @@
                                             goToAndPlay: l,
                                             goToAndStop: F,
                                             setCurrentTime: i,
-                                            domRef: m.current,
+                                            domRef: f.current,
                                             onChangeTime: t,
                                             onKeyframes: n,
                                         }),
                                         () => {
-                                            (B(), (f.current = null));
+                                            (B(), (m.current = null));
                                         }
                                     );
                                 }
-                            }, [d, f, A]),
+                            }, [d, m, A]),
                             (0, i.useEffect)(() => {
-                                m.current && c && m.current.play();
+                                f.current && c && f.current.play();
                             }, [c, F]),
                             (h = () => {
                                 var u;
-                                null == (u = m.current) || u.pause();
+                                null == (u = f.current) || u.pause();
                             }),
                             (0, i.useEffect)(() => h, []),
                             a().createElement(
                                 'video',
-                                _({ src: t, className: n, style: E, loop: F, ref: m, onClick: C }, p),
+                                _({ src: t, className: n, style: E, loop: F, ref: f, onClick: C }, p),
                             )
                         );
                     }),
                     p = (0, i.memo)(C);
-                var f = t(828);
-                const m = [
+                var m = t(828);
+                const f = [
                     'children',
                     'contentId',
                     'args',
@@ -1184,7 +1191,7 @@
                             Object.assign(
                                 {
                                     __Type: 'GFViewEventProxy',
-                                    type: f.B0.TOOLTIP,
+                                    type: m.B0.TOOLTIP,
                                     contentID: u,
                                     decoratorID: e,
                                     targetID: n,
@@ -1212,7 +1219,7 @@
                             _ = u.targetId,
                             C = void 0 === _ ? 0 : _,
                             p = u.onShow,
-                            f = u.onHide,
+                            m = u.onHide,
                             g = (function (u, e) {
                                 if (null == u) return {};
                                 var t = {};
@@ -1222,7 +1229,7 @@
                                         t[n] = u[n];
                                     }
                                 return t;
-                            })(u, m);
+                            })(u, f);
                         const b = (0, i.useRef)({ timeoutId: 0, isVisible: !1, prevTarget: null, hideTimerId: null }),
                             w = (0, i.useMemo)(
                                 () =>
@@ -1259,10 +1266,10 @@
                                     const u = b.current.timeoutId;
                                     (u > 0 && (clearTimeout(u), (b.current.timeoutId = 0)),
                                         v(t, d, { on: !1 }, w),
-                                        b.current.isVisible && f && f(),
+                                        b.current.isVisible && m && m(),
                                         (b.current.isVisible = !1));
                                 }
-                            }, [t, d, w, f]),
+                            }, [t, d, w, m]),
                             k = (0, i.useCallback)((u) => {
                                 b.current.isVisible &&
                                     ((b.current.prevTarget = document.elementFromPoint(u.clientX, u.clientY)),
@@ -1850,7 +1857,7 @@
                                 _ = B[0],
                                 C = B[1],
                                 p = (0, i.useMemo)(() => iu(u, n, { justifyContent: l }), [n, l, u]),
-                                f = (0, i.useMemo)(() => {
+                                m = (0, i.useMemo)(() => {
                                     if (
                                         o &&
                                         _.isTruncated &&
@@ -1864,7 +1871,7 @@
                                             targetId: E,
                                         };
                                 }, [n, o, E, u, c, _.isTruncated]),
-                                m = (0, i.useCallback)(
+                                f = (0, i.useCallback)(
                                     (u) => {
                                         ((D.current.width = u.contentRect.width),
                                             (D.current.height = u.contentRect.height));
@@ -1895,7 +1902,7 @@
                                             }
                                         );
                                     }, [n, t, u]);
-                                })(d, m, s),
+                                })(d, f, s),
                                 a().createElement(
                                     'div',
                                     {
@@ -1911,7 +1918,7 @@
                                     a().createElement(
                                         L,
                                         {
-                                            tooltipArgs: f,
+                                            tooltipArgs: m,
                                             className: r()(
                                                 S.tooltip,
                                                 S[`tooltip__justify-${l}`],
@@ -1948,8 +1955,8 @@
                     _u = 'BonusPerksTooltipApp_header_f97e5',
                     Cu = 'BonusPerksTooltipApp_title_d4059',
                     pu = 'BonusPerksTooltipApp_animationContainer_a5625',
-                    fu = 'BonusPerksTooltipApp_video_fe828',
-                    mu = 'BonusPerksTooltipApp_divider_f8f51',
+                    mu = 'BonusPerksTooltipApp_video_fe828',
+                    fu = 'BonusPerksTooltipApp_divider_f8f51',
                     hu = 'BonusPerksTooltipApp_divider__top_aad0f',
                     vu = 'BonusPerksTooltipApp_divider__bottom_de300',
                     gu = 'BonusPerksTooltipApp_list_a1d98',
@@ -1976,14 +1983,14 @@
                             a().createElement(
                                 'div',
                                 { className: pu },
-                                a().createElement('div', { className: r()(mu, hu) }),
+                                a().createElement('div', { className: r()(fu, hu) }),
                                 a().createElement(p, {
                                     loop: !0,
                                     autoplay: !0,
                                     src: R.videos.animations.advancedHints.bonusPerkUnlock(),
-                                    className: fu,
+                                    className: mu,
                                 }),
-                                a().createElement('div', { className: r()(mu, vu) }),
+                                a().createElement('div', { className: r()(fu, vu) }),
                             ),
                             a().createElement(
                                 'div',

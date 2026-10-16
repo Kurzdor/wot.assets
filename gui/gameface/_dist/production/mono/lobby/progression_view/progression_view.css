@@ -548,42 +548,76 @@
     height: 1900rem;
 }
 
-.Rewards_dust_28514631 {
-    position: absolute;
-    top: -64rem;
-    z-index: 1;
-}
-.Rewards_index--0_2c9b85f6 .Rewards_dust_28514631 {
-    left: 50%;
-    transform: translateX(-50%);
-}
-.mediaMedium .Rewards_index--0_2c9b85f6 .Rewards_dust_28514631 {
-    top: 75rem;
-}
-.mediaLarge .Rewards_index--0_2c9b85f6 .Rewards_dust_28514631 {
-    top: 215rem;
-}
-.mediaExtraLarge .Rewards_index--0_2c9b85f6 .Rewards_dust_28514631 {
-    top: 579rem;
-}
-
-.Rewards_dustParts_bdb5e153 {
+.Rewards_dust_51cf4c77 {
     position: absolute;
     top: 0;
     z-index: 1;
 }
-.Rewards_index--0_2c9b85f6 .Rewards_dustParts_bdb5e153 {
-    left: 50%;
-    transform: translateX(-50%);
+.Rewards_index--0_6f1fad32 .Rewards_dust_51cf4c77 {
+    left: 210rem;
 }
-.mediaMedium .Rewards_index--0_2c9b85f6 .Rewards_dustParts_bdb5e153 {
-    top: 48rem;
+.mediaMedium .Rewards_index--0_6f1fad32 .Rewards_dust_51cf4c77 {
+    top: 103rem;
+    left: 280rem;
 }
-.mediaLarge .Rewards_index--0_2c9b85f6 .Rewards_dustParts_bdb5e153 {
-    top: 90rem;
+.mediaLarge .Rewards_index--0_6f1fad32 .Rewards_dust_51cf4c77 {
+    top: 240rem;
+    left: 445rem;
 }
-.mediaExtraLarge .Rewards_index--0_2c9b85f6 .Rewards_dustParts_bdb5e153 {
-    top: 274rem;
+.mediaExtraLarge .Rewards_index--0_6f1fad32 .Rewards_dust_51cf4c77 {
+    top: 556rem;
+    left: 760rem;
+}
+.Rewards_index--1_507b16e2 .Rewards_dust_51cf4c77 {
+    right: 265rem;
+}
+.mediaMedium .Rewards_index--1_507b16e2 .Rewards_dust_51cf4c77 {
+    top: 103rem;
+    right: 412rem;
+}
+.mediaLarge .Rewards_index--1_507b16e2 .Rewards_dust_51cf4c77 {
+    top: 240rem;
+    right: 608rem;
+}
+.mediaExtraLarge .Rewards_index--1_507b16e2 .Rewards_dust_51cf4c77 {
+    top: 556rem;
+    right: 915rem;
+}
+
+.Rewards_dustParts_51cf4c77 {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.Rewards_index--0_6f1fad32 .Rewards_dustParts_51cf4c77 {
+    left: 210rem;
+}
+.mediaMedium .Rewards_index--0_6f1fad32 .Rewards_dustParts_51cf4c77 {
+    top: 103rem;
+    left: 280rem;
+}
+.mediaLarge .Rewards_index--0_6f1fad32 .Rewards_dustParts_51cf4c77 {
+    top: 240rem;
+    left: 445rem;
+}
+.mediaExtraLarge .Rewards_index--0_6f1fad32 .Rewards_dustParts_51cf4c77 {
+    top: 556rem;
+    left: 760rem;
+}
+.Rewards_index--1_507b16e2 .Rewards_dustParts_51cf4c77 {
+    right: 265rem;
+}
+.mediaMedium .Rewards_index--1_507b16e2 .Rewards_dustParts_51cf4c77 {
+    top: 103rem;
+    right: 412rem;
+}
+.mediaLarge .Rewards_index--1_507b16e2 .Rewards_dustParts_51cf4c77 {
+    top: 240rem;
+    right: 608rem;
+}
+.mediaExtraLarge .Rewards_index--1_507b16e2 .Rewards_dustParts_51cf4c77 {
+    top: 556rem;
+    right: 915rem;
 }
 
 .Rewards_vehicleInfoWrapper_f394a3e3 {
@@ -601,21 +635,46 @@
     background: url('R.images.resource_well.gui.maps.icons.shadow_vehicle_info') no-repeat center/contain;
     content: '';
     position: absolute;
-    top: 48%;
+    top: 50%;
     z-index: -1;
     transform: translateY(-50%);
     pointer-events: none;
 }
-.Rewards_vehicleInfoWrapper_f394a3e3.Rewards_index--0_2c9b85f6 {
-    top: 52%;
-    left: 50%;
-    transform: translateX(-50%);
+.Rewards_vehicleInfoWrapper_f394a3e3.Rewards_index--0_6f1fad32 {
+    left: 29%;
 }
-.mediaMedium .Rewards_vehicleInfoWrapper_f394a3e3.Rewards_index--0_2c9b85f6 {
-    top: 55%;
+.mediaSmall .Rewards_vehicleInfoWrapper_f394a3e3.Rewards_index--0_6f1fad32 {
+    left: 29%;
 }
-.mediaExtraLarge .Rewards_vehicleInfoWrapper_f394a3e3.Rewards_index--0_2c9b85f6 {
-    top: 62%;
+.mediaMedium .Rewards_vehicleInfoWrapper_f394a3e3.Rewards_index--0_6f1fad32 {
+    top: 47%;
+    left: 30%;
+}
+.mediaLarge .Rewards_vehicleInfoWrapper_f394a3e3.Rewards_index--0_6f1fad32 {
+    top: 48%;
+    left: 31%;
+}
+.mediaExtraLarge .Rewards_vehicleInfoWrapper_f394a3e3.Rewards_index--0_6f1fad32 {
+    top: 48%;
+    left: 33%;
+}
+.Rewards_vehicleInfoWrapper_f394a3e3.Rewards_index--1_507b16e2 {
+    right: 29%;
+}
+.mediaSmall .Rewards_vehicleInfoWrapper_f394a3e3.Rewards_index--1_507b16e2 {
+    right: 29%;
+}
+.mediaMedium .Rewards_vehicleInfoWrapper_f394a3e3.Rewards_index--1_507b16e2 {
+    top: 47%;
+    right: 30%;
+}
+.mediaLarge .Rewards_vehicleInfoWrapper_f394a3e3.Rewards_index--1_507b16e2 {
+    top: 48%;
+    right: 31%;
+}
+.mediaExtraLarge .Rewards_vehicleInfoWrapper_f394a3e3.Rewards_index--1_507b16e2 {
+    top: 48%;
+    right: 33%;
 }
 
 .Rewards_preview_fc0a7b9f {

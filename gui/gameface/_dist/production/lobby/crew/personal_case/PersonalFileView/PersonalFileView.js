@@ -135,13 +135,12 @@
             },
             5900: (e, u, t) => {
                 'use strict';
-                t.d(u, { At: () => l });
-                var n = t(8978),
-                    r = t(7363),
-                    a = t.n(r),
-                    i = t(1855);
+                t.d(u, { At: () => o });
+                var n = t(7363),
+                    r = t.n(n),
+                    a = t(1855);
                 t(5187);
-                const s = [
+                const i = [
                     'width',
                     'height',
                     'getImageSource',
@@ -156,9 +155,9 @@
                     'onAnimationComplete',
                     'poster',
                 ];
-                function o() {
+                function s() {
                     return (
-                        (o = Object.assign
+                        (s = Object.assign
                             ? Object.assign.bind()
                             : function (e) {
                                   for (var u = 1; u < arguments.length; u++) {
@@ -167,29 +166,29 @@
                                   }
                                   return e;
                               }),
-                        o.apply(null, arguments)
+                        s.apply(null, arguments)
                     );
                 }
-                const l = (0, r.memo)(function (e) {
+                const o = (0, n.memo)(function (e) {
                         let u = e.width,
                             t = e.height,
-                            l = e.getImageSource,
-                            E = e.frameCount,
-                            _ = e.onAnimate,
-                            g = e.frameTime,
-                            A = void 0 === g ? i.O.FRAME_TIME : g,
-                            F = e.initialFrameIndex,
-                            f = void 0 === F ? i.O.INITIAL_FRAME_INDEX : F,
-                            p = e.lastFrameIndex,
-                            D = void 0 === p ? E - 1 : p,
-                            b = e.loop,
-                            h = void 0 === b ? i.O.LOOP : b,
-                            C = e.state,
-                            B = void 0 === C ? i.O.STATE : C,
-                            v = e.onAnimationDone,
-                            w = e.onAnimationComplete,
-                            y = e.poster,
-                            S = (function (e, u) {
+                            o = e.getImageSource,
+                            m = e.frameCount,
+                            E = e.onAnimate,
+                            _ = e.frameTime,
+                            g = void 0 === _ ? a.O.FRAME_TIME : _,
+                            A = e.initialFrameIndex,
+                            F = void 0 === A ? a.O.INITIAL_FRAME_INDEX : A,
+                            f = e.lastFrameIndex,
+                            p = void 0 === f ? m - 1 : f,
+                            D = e.loop,
+                            b = void 0 === D ? a.O.LOOP : D,
+                            h = e.state,
+                            C = void 0 === h ? a.O.STATE : h,
+                            B = e.onAnimationDone,
+                            v = e.onAnimationComplete,
+                            w = e.poster,
+                            y = (function (e, u) {
                                 if (null == e) return {};
                                 var t = {};
                                 for (var n in e)
@@ -198,46 +197,42 @@
                                         t[n] = e[n];
                                     }
                                 return t;
-                            })(e, s);
-                        const k = (0, r.useRef)(null),
-                            x = (0, r.useState)(!0),
-                            T = x[0],
-                            R = x[1];
+                            })(e, i);
+                        const S = (0, n.useRef)(null);
                         return (
-                            (0, r.useEffect)(() => (0, n.v)(() => (0, n.v)(() => R(!1))), []),
-                            (0, r.useEffect)(() => {
-                                const e = k.current;
+                            (0, n.useEffect)(() => {
+                                const e = S.current;
                                 if (!e) return;
                                 const u = e.getContext('2d'),
                                     t = (t) => {
                                         (u.clearRect(0, 0, e.width, e.height), u.drawImage(t.img, -t.x, -t.y));
                                     };
-                                switch (B) {
+                                switch (C) {
                                     case 'play':
                                         return (function () {
-                                            const e = m(f, D, l),
-                                                u = c(f, D),
+                                            const e = d(F, p, o),
+                                                u = l(F, p),
                                                 n = window.setInterval(() => {
                                                     const r = u(),
                                                         a = e.get(r);
                                                     a
-                                                        ? (null == _ || _(r, a),
+                                                        ? (null == E || E(r, a),
                                                           t(a),
-                                                          r === D &&
-                                                              (null == w || w(),
-                                                              h || (null == v || v(), window.clearInterval(n))))
+                                                          r === p &&
+                                                              (null == v || v(),
+                                                              b || (null == B || B(), window.clearInterval(n))))
                                                         : console.error(
                                                               'frameImage was not provided in frameImages Map',
                                                           );
-                                                }, A);
+                                                }, g);
                                             return () => window.clearInterval(n);
                                         })();
                                     case 'stop':
                                         return (function () {
-                                            const e = 0 === f && y ? { path: y, x: 0, y: 0 } : l(f),
+                                            const e = 0 === F && w ? { path: w, x: 0, y: 0 } : o(F),
                                                 u = new Image();
                                             u.src = e.path;
-                                            const n = () => t(d(e, u));
+                                            const n = () => t(c(e, u));
                                             return (
                                                 u.addEventListener('load', n),
                                                 () => u.removeEventListener('load', n)
@@ -246,25 +241,25 @@
                                     default:
                                         return console.error('[CanvasSequence] Unreachable state!');
                                 }
-                            }, [A, l, f, D, h, _, w, v, y, B, T]),
-                            a().createElement('canvas', o({}, S, { width: u, height: t, ref: k }))
+                            }, [g, o, F, p, b, E, v, B, w, C]),
+                            r().createElement('canvas', s({}, y, { width: u, height: t, ref: S }))
                         );
                     }),
-                    c = (e, u) => {
+                    l = (e, u) => {
                         let t = e;
                         return () => {
                             const n = t;
                             return ((t += 1), t > u && (t = e), n);
                         };
                     },
-                    d = (e, u) => Object.assign({}, e, { img: u }),
-                    m = (e, u, t) => {
+                    c = (e, u) => Object.assign({}, e, { img: u }),
+                    d = (e, u, t) => {
                         const n = new Map(),
                             r = {};
                         for (let a = e; a <= u; a++) {
                             const e = t(a),
                                 u = r[e.path];
-                            if (u) n.set(a, d(e, u));
+                            if (u) n.set(a, c(e, u));
                             else {
                                 const u = new Image();
                                 ((r[e.path] = u),
@@ -276,7 +271,7 @@
                                             `(${e.x},${e.y})`,
                                         );
                                     }),
-                                    n.set(a, d(e, u)));
+                                    n.set(a, c(e, u)));
                             }
                         }
                         return n;

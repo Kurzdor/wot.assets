@@ -1,12 +1,12 @@
-const n = (n, s, a = '') => {
-        const r = a.length > 0 ? `_${a}` : a,
-            o = n.$dyn(`c_${s}${r}`),
-            e = String(s).slice(-1),
-            g = n.$dyn(`default_${e}${r}`);
-        return o || g;
+var n = (n, r, a = '') => {
+        const s = a.length > 0 ? `_${a}` : a,
+            e = n.$dyn(`c_${r}${s}`),
+            o = String(r).slice(-1),
+            t = n.$dyn(`default_${o}${s}`);
+        return e || t;
     },
-    s = (s) => {
+    r = (r) => {
         const a = R.images.gui.maps.icons.battlePass.backgrounds;
-        return s ? { backgroundImage: `url(${n(a.progression, s)})` } : { backgroundImage: `url(${a.$dyn('common')})` };
+        return r ? { backgroundImage: `url(${n(a.progression, r)})` } : { backgroundImage: `url(${a.$dyn('common')})` };
     };
-export { s as a, n as g };
+export { n, r as t };

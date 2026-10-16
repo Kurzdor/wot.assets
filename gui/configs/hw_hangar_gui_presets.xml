@@ -12,9 +12,5 @@
       <queueType>	103	</queueType>
       <presetName>	empty	</presetName>
     </item>
-    <item>
-      <queueType>	104	</queueType>
-      <presetName>	empty	</presetName>
-    </item>
   </queueTypePresets>
 </hw_hangar_gui_presets.xml>

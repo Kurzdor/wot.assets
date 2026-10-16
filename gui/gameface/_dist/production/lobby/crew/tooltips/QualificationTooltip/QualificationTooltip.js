@@ -829,6 +829,11 @@
                     const d = a().useRef(null);
                     var _;
                     return (
+                        (0, i.useLayoutEffect)(() => {
+                            const u = o.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (_ = () => {
                             const u = d.current;
                             if (!u)
@@ -838,7 +843,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
-                                o.O.view.resize(e, t);
+                                (o.O.view.resize(e, t),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const n = window.getComputedStyle(u);
                                 o.O.view.setSidePaddingsRem({
                                     left: parseInt(n.getPropertyValue('padding-left'), 10),
@@ -1276,7 +1283,7 @@
                         [P.NoBreakWrapper]: ({ elementList: u, key: e }) =>
                             a().createElement('span', { key: e, 'data-block-type': P.NoBreakWrapper, className: j }, u),
                     },
-                    H = (u, e, t) => {
+                    $ = (u, e, t) => {
                         const n = [];
                         return (
                             u.childList.forEach((r, o) => {
@@ -1284,14 +1291,14 @@
                                 if (((u) => void 0 !== u.childList)(r)) {
                                     const u = r,
                                         e = u.blockType,
-                                        t = H(u, G[e], i);
+                                        t = $(u, G[e], i);
                                     n.push(...t);
                                 } else n.push(e({ elementList: [r], textBlock: u, key: i }));
                             }),
                             n
                         );
                     },
-                    K = (u) => {
+                    H = (u) => {
                         const e = [];
                         return (
                             u.forEach((u, t) => {
@@ -1300,7 +1307,7 @@
                                         const t = [],
                                             n = u.blockType,
                                             r = G[n],
-                                            o = H(u, r, e);
+                                            o = $(u, r, e);
                                         return (
                                             n === P.NoBreakWrapper
                                                 ? t.push(r({ elementList: o, textBlock: u, key: `${e}` }))
@@ -1313,7 +1320,7 @@
                             e
                         );
                     },
-                    $ = (u, e, t, n) => {
+                    K = (u, e, t, n) => {
                         let r = e.exec(u),
                             o = 0;
                         for (; r;) (o !== r.index && t(u.slice(o, r.index)), n(r), (o = e.lastIndex), (r = e.exec(u)));
@@ -1323,7 +1330,7 @@
                     Z = (u) => {
                         const e = [];
                         return (
-                            $(
+                            K(
                                 u,
                                 /\S\s+/g,
                                 (u) => {
@@ -1343,7 +1350,7 @@
                         ? (u) => {
                               const e = [];
                               return (
-                                  $(
+                                  K(
                                       u,
                                       /[^a-zA-Z0-9]+/g,
                                       (u) => {
@@ -1371,7 +1378,7 @@
                     X = (u, e = '', t) => {
                         const n = [];
                         return (
-                            $(
+                            K(
                                 u,
                                 /(\n+|[\xa0\ufeff]+)/g,
                                 (u) => {
@@ -1411,7 +1418,7 @@
                                 .replace(/(.)(、|。|，|ー)/g, '$1\ufeff$2')
                                 .replace(/\d+(?:[ \-.,]\d+)* ?%?/g, (u) => u.split('').join('\ufeff'));
                         return (
-                            $(
+                            K(
                                 o,
                                 /(?:%\(|{)(.*?)[)}][sd]?/g,
                                 (u) => {
@@ -1457,7 +1464,7 @@
                             ((u, e, t) => {
                                 const n = [];
                                 return (
-                                    $(
+                                    K(
                                         u,
                                         /(?:%\(|{)(\w*)(?:_[Oo]pen|_Start)(?:\)s|})([\s\S]*?)(?:%\(|{)\w*(?:_[Cc]lose|_End)(?:\)s|})(\s*)/g,
                                         (u) => {
@@ -1471,7 +1478,7 @@
                                 );
                             })(O(u).replace(/&zwnbsp;/g, '\ufeff'), e, t),
                         );
-                        return K(n);
+                        return H(n);
                     },
                     tu = (u, e) => !u || u.offsetTop + u.offsetHeight > e,
                     nu = (u, e) => u.offsetLeft + u.offsetWidth - e,

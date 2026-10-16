@@ -1,67 +1,88 @@
-import { ac as e, c8 as t, bK as a, bJ as s, bL as i, b_ as o } from './lib.js';
-const n = (e) => Math.sqrt(1 - Math.pow(e - 1, 2)),
-    r = {
+import { an as e, cn as t, dn as a, in as s, ln as n, rn as i } from './lib.js';
+var r = (function (e) {
+        return (
+            (e.Active = 'active'),
+            (e.Paused = 'paused'),
+            (e.Completed = 'completed'),
+            (e.NotStarted = 'notStarted'),
+            e
+        );
+    })({}),
+    o = (function (e) {
+        return (
+            (e.Vehicle = 'vehicle'),
+            (e.VehicleStyle = 'vehicleStyle'),
+            (e.Style = 'style'),
+            (e.Tankman = 'tankman'),
+            (e.AttachmentsSet = 'attachmentsSet'),
+            (e.PostProgression = 'postProgression'),
+            e
+        );
+    })({}),
+    l = (e) => Math.sqrt(1 - Math.pow(e - 1, 2)),
+    c = {
         progressiveStyle: 'progressiveStyle',
         style: 'style',
         tankman: 'tankman',
         vehicle: 'vehicle',
         battleQuest: 'battleQuest',
+        attachmentsSet: 'attachments_set',
     },
-    l = (t) => {
-        const { bigIcon: a, overlayType: s, name: i } = t;
+    m = (e) => {
+        const { bigIcon: a, overlayType: s, name: i } = e;
         if ('equipmentTrophyBasic' === s) {
             const e = `trophyBasic${a.charAt(0).toUpperCase()}${a.slice(1)}`;
             return { backgroundImage: `url(${R.images.gui.maps.icons.battlePass.rewards.$dyn(e)})` };
         }
-        return i === o.CrewBooks
-            ? { backgroundImage: `url(R.images.gui.maps.icons.crewBooks.books.${e.S600x450}.${a})` }
-            : i === o.Attachment
-              ? { backgroundImage: `url(R.images.gui.maps.vehicles.attachments.${e.S600x450}.${a})` }
+        return i === n.CrewBooks
+            ? { backgroundImage: `url(R.images.gui.maps.icons.crewBooks.books.${t.S600x450}.${a})` }
+            : i === n.Attachment
+              ? { backgroundImage: `url(R.images.gui.maps.vehicles.attachments.${t.S600x450}.${a})` }
               : { backgroundImage: `url(${R.images.gui.maps.icons.battlePass.rewards.$dyn(`${a}`)})` };
     },
-    c = (e) => (e.bigIcon.includes('vehicle') ? e.vehicleName : e.bigIcon.includes('style_3d') ? e.userName : void 0),
-    m = (o, n = e.Big, r = !1) => {
-        const { item: l, name: m, value: u, overlayType: d, tooltipId: g, tooltipContentId: p } = o;
+    u = (e) => (e.bigIcon.includes('vehicle') ? e.vehicleName : e.bigIcon.includes('style_3d') ? e.userName : void 0),
+    d = (n, r = t.Big, o = !1) => {
+        const { item: l, name: c, value: m, overlayType: d, tooltipId: p, tooltipContentId: g } = n;
         return {
             ...(() => {
-                const e = u.split('_');
-                return 'universal' === e[0]
-                    ? { value: e[e.length - 1], valueType: t.MULTI }
-                    : { value: u, valueType: a(m) };
+                const t = m.split('_');
+                return 'universal' === t[0]
+                    ? { value: t[t.length - 1], valueType: a.MULTI }
+                    : { value: m, valueType: e(c) };
             })(),
-            name: l || m,
-            image: i(o, n),
+            name: l || c,
+            image: i(n, r),
             special: d,
-            title: r && c(o),
-            tooltipArgs: s({ tooltipId: g }, Number(p), { ignoreShowDelay: !0 }),
-            size: n,
+            title: o && u(n),
+            tooltipArgs: s({ tooltipId: p }, Number(g), { ignoreShowDelay: !0 }),
+            size: r,
         };
     },
-    u = [r.battleQuest, r.tankman, r.style, r.progressiveStyle, r.vehicle],
-    d = (e, t) => u.indexOf(t) - u.indexOf(e),
-    g = (e) => {
-        const [t, a] = e.sort(d);
+    p = [c.battleQuest, c.tankman, c.style, c.progressiveStyle, c.vehicle],
+    g = (e, t) => p.indexOf(t) - p.indexOf(e),
+    h = (e) => {
+        const [t, a] = e.sort(g);
         return { mainReward: t, additionalReward: a };
     },
-    p = (e, t, a) => {
+    v = (e, t, a) => {
         const s = `style_3d_${e}_${t}${a}`;
         return { backgroundImage: `url(${R.images.gui.maps.icons.battlePass.rewards.$dyn(s)})` };
     },
-    v = (e) => e === o.Attachment;
-function h(e) {
+    y = (e) => e === n.Attachment;
+function $(e) {
     return e.replace(/_\w/g, (e) => (void 0 === e[1] ? '' : e[1].toUpperCase()));
 }
 function b(e) {
     const t = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'],
         a = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1e3];
     let s = '';
-    for (let i = a.length - 1; i >= 0; i--) {
-        const o = a[i];
-        for (; void 0 !== o && e >= o;) ((s += t[i]), (e -= o));
+    for (let n = a.length - 1; n >= 0; n--) {
+        const i = a[n];
+        for (; void 0 !== i && e >= i;) ((s += t[n]), (e -= i));
     }
     return s;
 }
-const y = () =>
+var w = () =>
         new Promise((e) => {
             requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
@@ -69,20 +90,20 @@ const y = () =>
                 });
             });
         }),
-    $ = { hd: 16 / 9 },
-    w = (e, t, a, s) => {
-        const i = s.split('.').slice(-1)[0],
-            { videoAspectRatio: o, fill: n } = ((e) =>
+    I = { widescreen: 1.6, hd: 16 / 9 },
+    f = (e, t, a, s) => {
+        const n = s.split('.').slice(-1)[0],
+            { videoAspectRatio: i, fill: r } = ((e) =>
                 'media_ch4' === e
-                    ? { videoAspectRatio: $.hd, fill: 'contain' }
-                    : { videoAspectRatio: $.hd, fill: 'cover' })(i),
-            r = viewEnv.pxToRem(e) * a,
+                    ? { videoAspectRatio: I.hd, fill: 'contain' }
+                    : { videoAspectRatio: I.hd, fill: 'cover' })(n),
+            o = viewEnv.pxToRem(e) * a,
             l = viewEnv.pxToRem(t) * a,
-            c = r / o,
-            m = l * o,
+            c = o / i,
+            m = l * i,
             u = l > c;
-        return 'contain' === n
-            ? { width: `${u ? r : m}rem`, height: `${u ? c : l}rem` }
-            : { width: `${u ? m : r}rem`, height: `${u ? l : c}rem` };
+        return 'contain' === r
+            ? { width: `${u ? o : m}rem`, height: `${u ? c : l}rem` }
+            : { width: `${u ? m : o}rem`, height: `${u ? l : c}rem` };
     };
-export { r as R, b as a, p as b, l as c, n as e, m as g, v as i, g as m, y as o, h as s, w as v };
+export { d as a, h as c, f as d, r as f, m as i, w as l, b as n, v as o, o as p, l as r, y as s, c as t, $ as u };

@@ -161,19 +161,17 @@ const [m, _] = s()(({ observableModel: e }) => {
                         {
                             className: k,
                             children: [
-                                e
-                                    .levelsLabels()
-                                    .labelsData[s]?.map((e, s) =>
-                                        a.jsx(
-                                            c,
-                                            {
-                                                text: e.valueTemplate,
-                                                params: { value: e.value, sign: e.sign },
-                                                className: W,
-                                            },
-                                            s,
-                                        ),
+                                e.levelsLabels().labelsData[s]?.map((e, s) =>
+                                    a.jsx(
+                                        c,
+                                        {
+                                            text: e.valueTemplate,
+                                            params: { value: e.value, sign: e.sign },
+                                            className: W,
+                                        },
+                                        s,
                                     ),
+                                ),
                                 a.jsx('div', { className: B, children: l }),
                             ],
                         },

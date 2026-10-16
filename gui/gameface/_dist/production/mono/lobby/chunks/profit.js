@@ -1,16 +1,19 @@
-import { j as _, F as i } from './vendor.js';
-import { a0 as o, dm as a } from './lib.js';
-var e = ((_) => (
-    (_.UNDEFINED = 'undefined'),
-    (_.MUL = 'mul'),
-    (_.ADD = 'add'),
-    (_.SUB = 'sub'),
-    (_.PROCENT = 'procent'),
-    (_.SHOW_NEGATIVE_IMPACT = 'showNegativeImpact'),
-    _
-))(e || {});
-const l = {
-        root: 'Profit_root_6b8f37cd',
+import { r as _ } from './rolldown-runtime.js';
+import { ra as i, ur as o, vi as a } from './lib.js';
+import { l as e } from './vendor.js';
+var l = _(e(), 1),
+    r = (function (_) {
+        return (
+            (_.UNDEFINED = 'undefined'),
+            (_.MUL = 'mul'),
+            (_.ADD = 'add'),
+            (_.SUB = 'sub'),
+            (_.PROCENT = 'procent'),
+            (_.SHOW_NEGATIVE_IMPACT = 'showNegativeImpact'),
+            _
+        );
+    })({}),
+    n = {
         base: 'Profit_6037941e',
         base__big: 'Profit_base__big_6b8f37cd',
         base__large: 'Profit_base__large_e3f34b22',
@@ -39,26 +42,27 @@ const l = {
         value: 'Profit_value_50419a14',
         value__notEnough: 'Profit_value__notEnough_1ade341b',
     },
-    c = { small: 'small', big: 'big', large: 'large' },
-    r = (_, i) => o(i, _),
-    n = ({ type: o, value: c, showPlus: n, size: s, modifiers: t = [] }) =>
-        _.jsxs('span', {
-            className: i(l.base, l[`base__${s}`]),
+    c = a(),
+    s = { small: 'small', big: 'big', large: 'large' },
+    t = (_, o) => i(o, _),
+    f = ({ type: _, value: i, showPlus: a, size: e, modifiers: s = [] }) =>
+        (0, c.jsxs)('span', {
+            className: (0, l.default)(n.base, n[`base__${e}`]),
             children: [
-                _.jsxs('span', {
-                    className: i(
-                        l.value,
-                        l[`value__${o}`],
-                        (c < 0 || r(e.SHOW_NEGATIVE_IMPACT, t)) && l.value__notEnough,
+                (0, c.jsxs)('span', {
+                    className: (0, l.default)(
+                        n.value,
+                        n[`value__${_}`],
+                        (i < 0 || t(r.SHOW_NEGATIVE_IMPACT, s)) && n.value__notEnough,
                     ),
                     children: [
-                        (n || r(e.ADD, t)) && c > 0 && '+',
-                        r(e.MUL, t) && R.strings.common.multiplier(),
-                        Number.isInteger(c) ? _.jsx(a, { value: c }) : c,
-                        r(e.PROCENT, t) && R.strings.common.common.percent(),
+                        (a || t(r.ADD, s)) && i > 0 && '+',
+                        t(r.MUL, s) && R.strings.common.multiplier(),
+                        Number.isInteger(i) ? (0, c.jsx)(o, { value: i }) : i,
+                        t(r.PROCENT, s) && R.strings.common.common.percent(),
                     ],
                 }),
-                _.jsx('span', { className: i(l.icon, l[`icon__${o}-${s}`]) }),
+                (0, c.jsx)('span', { className: (0, l.default)(n.icon, n[`icon__${_}-${e}`]) }),
             ],
         });
-export { n as P, c as s };
+export { s as n, f as t };

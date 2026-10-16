@@ -1,4 +1,4 @@
-const n = R.images.fun_random.gui.maps.icons.feature.asset_packs,
+var n = R.images.fun_random.gui.maps.icons.feature.asset_packs,
     s = 'R.images.fun_random.gui.maps.icons.feature',
     e = 'undefined';
 function t(n, s) {
@@ -11,25 +11,24 @@ function t(n, s) {
         : (console.warn('FunRandom.combineRPaths: base folder empty: '), null);
 }
 function o({ poFileName: n = 'fun_random', assetsPointer: s = e, isSubMode: t = !1, path: o }) {
-    const r = `R.strings.${n}.${t ? 'sub_modes' : 'modes'}.${s}`;
-    return o ? `${r}.${o}` : r;
+    const a = `R.strings.${n}.${t ? 'sub_modes' : 'modes'}.${s}`;
+    return o ? `${a}.${o}` : a;
 }
-function r(n, { poFileName: s, assetsPointer: o, isSubMode: r = !1 } = {}) {
+function a(n, { poFileName: s, assetsPointer: e, isSubMode: o = !1 } = {}) {
     const a = s ? R.strings.$dyn(s) : R.strings.fun_random;
     if (!a || 'string' == typeof a) throw Error("Incorrect 'poFileName' argument");
-    const i = r ? 'sub_modes' : 'modes',
-        d = a.$dyn(i),
-        u = (o ? d?.$dyn(o) : a) || d?.$dyn(e);
-    if (!n) return { staticTexts: a, dynamicTexts: u };
-    return { staticTexts: t(a, n), dynamicTexts: t(u, n) };
+    const r = o ? 'sub_modes' : 'modes',
+        d = a.$dyn(r),
+        i = (e ? d?.$dyn(e) : a) || d?.$dyn('undefined');
+    return n ? { staticTexts: t(a, n), dynamicTexts: t(i, n) } : { staticTexts: a, dynamicTexts: i };
 }
-function a(s, t) {
-    const o = t ? 'sub_modes' : 'modes',
-        r = n.$dyn(o);
-    return r.$dyn(s) ?? r.$dyn(e);
+function r(s, e) {
+    const t = e ? 'sub_modes' : 'modes',
+        o = n.$dyn(t);
+    return o.$dyn(s) ?? o.$dyn('undefined');
 }
-function i(t, o) {
-    const r = o ? 'sub_modes' : 'modes';
-    return n.$dyn(r).$dyn(t) ? `${s}.asset_packs.${r}.${t}` : `${s}.asset_packs.${r}.${e}`;
+function d(t, o) {
+    const a = o ? 'sub_modes' : 'modes';
+    return n.$dyn(a).$dyn(t) ? `${s}.asset_packs.${a}.${t}` : `${s}.asset_packs.${a}.${e}`;
 }
-export { e as D, i as a, o as b, r as c, a as g };
+export { a, o as i, r as n, d as r, e as t };

@@ -62,7 +62,7 @@
                         displayStatus: () => O,
                         displayStatusIs: () => Au,
                         enableFullScreenModeSupported: () => lu,
-                        events: () => T,
+                        events: () => S,
                         extraSize: () => Fu,
                         forceTriggerMouseMove: () => ru,
                         freezeTextureBeforeResize: () => K,
@@ -199,7 +199,7 @@
                     return `url(${y(u, e, t)})`;
                 }
                 const O = { showing: 0, shown: 1, hiding: 2, hidden: 3 },
-                    T = {
+                    S = {
                         onTextureFrozen: i('self.onTextureFrozen'),
                         onTextureReady: i('self.onTextureReady'),
                         onDomBuilt: i('self.onDomBuilt'),
@@ -215,7 +215,7 @@
                             onRequestPosition: i('children.requestPosition'),
                         },
                     },
-                    S = ['args'];
+                    T = ['args'];
                 const P = 2,
                     M = 16,
                     k = 32,
@@ -233,7 +233,7 @@
                                             t[r] = u[r];
                                         }
                                     return t;
-                                })(e, S);
+                                })(e, T);
                             return void 0 !== a
                                 ? viewEnv.handleViewEvent(
                                       Object.assign({ __Type: t, type: u }, n, {
@@ -343,7 +343,7 @@
                     },
                     ou = Promise.all([
                         new Promise((u) => {
-                            window.isDomBuilt ? u() : T.onDomBuilt(u);
+                            window.isDomBuilt ? u() : S.onDomBuilt(u);
                         }),
                         engine.whenReady,
                     ]);
@@ -1084,7 +1084,7 @@
                 };
                 var L = t(533),
                     O = t.n(L);
-                let T = (function (u) {
+                let S = (function (u) {
                         return (
                             (u.credits = 'credits'),
                             (u.gold = 'gold'),
@@ -1096,7 +1096,7 @@
                             u
                         );
                     })({}),
-                    S = (function (u) {
+                    T = (function (u) {
                         return ((u.Red = 'RedActionBG'), (u.Blue = 'BlueActionBG'), u);
                     })({});
                 var P = t(354);
@@ -1217,6 +1217,11 @@
                     const o = a().useRef(null);
                     var l;
                     return (
+                        (0, r.useLayoutEffect)(() => {
+                            const u = E.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (l = () => {
                             const u = o.current;
                             if (!u)
@@ -1226,7 +1231,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
-                                E.O.view.resize(e, t);
+                                (E.O.view.resize(e, t),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const r = window.getComputedStyle(u);
                                 E.O.view.setSidePaddingsRem({
                                     left: parseInt(r.getPropertyValue('padding-left'), 10),
@@ -1318,7 +1325,7 @@
                             discountValue: E,
                             showPlus: i,
                             isEnough: A = !0,
-                            stockBackgroundName: F = S.Red,
+                            stockBackgroundName: F = T.Red,
                             className: o,
                             classNames: l,
                         }) =>
@@ -1336,7 +1343,7 @@
                                         ),
                                     },
                                     i && n > 0 && '+',
-                                    a().createElement(Q, { value: n, format: r === T.gold ? 'gold' : 'integral' }),
+                                    a().createElement(Q, { value: n, format: r === S.gold ? 'gold' : 'integral' }),
                                 ),
                                 a().createElement('span', {
                                     className: c()(J.icon, J[`icon__${r}-${t}`], null == l ? void 0 : l.icon),
@@ -1380,9 +1387,9 @@
                         currencyTypeTo: E,
                         exceeded: i,
                     }) => {
-                        const A = E === T.credits ? Eu : iu,
+                        const A = E === S.credits ? Eu : iu,
                             F =
-                                n === T.gold
+                                n === S.gold
                                     ? { from: r.goldRateValue, to: r.resourceRateValue }
                                     : { from: r.resourceRateValue, to: r.goldRateValue };
                         return a().createElement(
@@ -1669,8 +1676,8 @@
                     Lu = 'App_limitDivider__bottom_aa69c',
                     Ou = 'App_limitBackground_b1d23',
                     Ru = 'App_notification_f922c',
-                    Tu = 'App_notificationIcon_f401c',
-                    Su = 'App_footer_aa384',
+                    Su = 'App_notificationIcon_f401c',
+                    Tu = 'App_footer_aa384',
                     Pu = 'App_mr10_f649a',
                     Mu = 'App_rates_a0727',
                     ku = 'App_equal_cc614',
@@ -1682,7 +1689,7 @@
                             r = e.currencyTypeTo,
                             n = e.allDiscountsLimitsAmount,
                             E =
-                                t === T.gold
+                                t === S.gold
                                     ? {
                                           from: u.defaultExchangeRate.get().goldRateValue,
                                           to: u.defaultExchangeRate.get().resourceRateValue,
@@ -1692,7 +1699,7 @@
                                           to: u.defaultExchangeRate.get().goldRateValue,
                                       },
                             i =
-                                t === T.gold
+                                t === S.gold
                                     ? {
                                           from: u.commonExchangeRate.get().goldRateValue,
                                           to: u.commonExchangeRate.get().resourceRateValue,
@@ -1774,14 +1781,14 @@
                                         a().createElement(
                                             'div',
                                             { className: Ru },
-                                            a().createElement('div', { className: Tu }),
+                                            a().createElement('div', { className: Su }),
                                             a().createElement('div', null, Iu.exceeded()),
                                         ),
                                         a().createElement('div', { className: wu }),
                                     ),
                                 a().createElement(
                                     'div',
-                                    { className: Su },
+                                    { className: Tu },
                                     a().createElement(
                                         'div',
                                         { className: Mu },

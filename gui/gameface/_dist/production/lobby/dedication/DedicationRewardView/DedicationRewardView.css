@@ -808,7 +808,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    padding-top: 37rem;
     background: url('R.images.gui.maps.icons.dedication.bg') no-repeat center center / cover;
 }
 .App_overlay_efff2 {
@@ -836,10 +835,11 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     }
 }
 .App_content_a0fcb {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     max-height: 1080rem;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 }
 .App_rewardContent_e9935 {
     display: flex;

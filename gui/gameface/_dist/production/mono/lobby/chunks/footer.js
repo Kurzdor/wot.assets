@@ -1,163 +1,171 @@
-import { j as e, r as s, e as t } from './vendor.js';
-import { T as a, Z as r, _ as o, u as i, V as n, F as l, B as c } from './lib.js';
-import { E as d } from './enums.js';
-var u = ((e) => (
-    (e.Active = 'active'),
-    (e.Forbidden = 'forbidden'),
-    (e.NoProgress = 'noProgress'),
-    (e.NoVehicles = 'noVehicles'),
-    e
-))(u || {});
-const m = ({ children: s, header: t, body: r, bindings: o, disabled: i }) =>
-        e.jsx(a, {
+import { r as e } from './rolldown-runtime.js';
+import { J as s, O as t, T as a, Y as r, _ as o, b as i, ft as n, ut as l, v as c, y as d } from './lib.js';
+import { t as u } from './enums.js';
+var m = (function (e) {
+        return (
+            (e.Active = 'active'),
+            (e.Forbidden = 'forbidden'),
+            (e.NoProgress = 'noProgress'),
+            (e.NoVehicles = 'noVehicles'),
+            e
+        );
+    })({}),
+    h = r(),
+    x = ({ children: e, header: s, body: a, bindings: r, disabled: o }) =>
+        (0, h.jsx)(t, {
             contentId: R.aliases.common.tooltip.Param('resId'),
             args: {
                 resId: R.views.resource_well.mono.lobby.tooltips.simple_tooltip('resId'),
                 type: 'simpleTooltip',
-                params: JSON.stringify({ header: t, body: r, bindings: o }),
+                params: JSON.stringify({ header: s, body: a, bindings: r }),
             },
-            isEnabled: !i,
-            children: s,
+            isEnabled: !o,
+            children: e,
         }),
-    h = 'PreviewDelta_86b01c3e',
-    x = 'PreviewDelta_positive_d5d478a9',
-    v = ({ value: s }) => {
-        const t = r(),
-            a = s - t.value,
-            o = Math.abs(a) / t.maxValue,
-            i = a < 0 ? o : 0,
-            n = 100 * (t.percentage - i),
-            l = 100 * o;
-        return e.jsx('div', {
+    v = e(n()),
+    b = 'PreviewDelta_86b01c3e',
+    g = 'PreviewDelta_positive_d5d478a9',
+    p = ({ value: e }) => {
+        const s = c(),
+            t = e - s.value,
+            a = Math.abs(t) / s.maxValue,
+            r = t < 0 ? a : 0,
+            o = 100 * (s.percentage - r),
+            i = 100 * a;
+        return (0, h.jsx)('div', {
             'data-name': 'PreviewDelta',
-            className: h,
-            children: e.jsx('div', { style: { left: `${n}%`, width: `${l}%` }, className: x }),
+            className: b,
+            children: (0, h.jsx)('div', { style: { left: `${o}%`, width: `${i}%` }, className: g }),
         });
     },
-    b = ({ maxValue: t, value: a, delta: r, onAnimate: i }) => {
-        const [n, l] = s.useState(a),
-            c = r && n === a ? a + r : a;
-        return e.jsxs(o, {
+    _ = ({ maxValue: e, value: s, delta: t, onAnimate: a }) => {
+        const [r, i] = (0, v.useState)(s),
+            n = t && r === s ? s + t : s;
+        return (0, h.jsxs)(o, {
             size: 'large',
-            value: a,
-            maxValue: t,
+            value: s,
+            maxValue: e,
             animationType: o.animations.grow,
             children: [
-                e.jsx(o.Fill, {}),
-                e.jsx(o.Delta, {
-                    from: n,
+                (0, h.jsx)(o.Fill, {}),
+                (0, h.jsx)(o.Delta, {
+                    from: r,
                     steps: ['shrinking'],
                     onState: (e) => {
-                        'done' === e && (l(a), i?.());
+                        'done' === e && (i(s), a?.());
                     },
                 }),
-                e.jsx(v, { value: c }, a),
+                (0, h.jsx)(p, { value: n }, s),
             ],
         });
     },
-    g = {
+    j = {
         text: 'VehicleInfo_text_5f991786',
         base__paragraph: 'VehicleInfo_base__paragraph_9c9aeed',
         base__header: 'VehicleInfo_base__header_9c9aeed',
         type: 'VehicleInfo_type_64138e7c',
     },
-    p = ({ vehicleInfo: s, theme: a, className: r }) => {
-        const o = i({ typeSize: 'x24x24' }, { large: { typeSize: 'header' === a ? 'x48x48' : 'x24x24' } });
-        return e.jsxs(n, {
-            className: t(g[`base__${a}`], r),
+    S = ({ vehicleInfo: e, theme: t, className: a }) => {
+        const r = s({ typeSize: 'x24x24' }, { large: { typeSize: 'header' === t ? 'x48x48' : 'x24x24' } });
+        return (0, h.jsxs)(i, {
+            className: l(j[`base__${t}`], a),
             children: [
-                e.jsx(n.Level, { className: g.text, value: s.vehicleLvl }),
-                e.jsx(n.Type, { className: g.type, type: s.vehicleType, premium: s.isElite, size: o.typeSize }),
-                e.jsx(n.Name, { className: g.text, children: s.vehicleName }),
+                (0, h.jsx)(i.Level, { className: j.text, value: e.vehicleLvl }),
+                (0, h.jsx)(i.Type, { className: j.type, type: e.vehicleType, premium: e.isElite, size: r.typeSize }),
+                (0, h.jsx)(i.Name, { className: j.text, children: e.vehicleName }),
             ],
         });
     },
-    _ = 'ActiveState_e74cd00e',
-    j = 'ActiveState_progressBarWrapper_d57b5974',
-    S = 'ActiveState_progressBarLabel_9e0cc264',
-    N = 'ActiveState_vehicleInfo_ded266a7',
-    f = 'ActiveState_progressBarValueLabel_6e96165e',
-    V = 'ActiveState_deltaPercent_56b155fb',
-    w = 'ActiveState_progressBarScaleLabels_d281cc4c',
-    y = 'ActiveState_buttons_af96ee26',
-    z = 'ActiveState_button_438ead65',
-    I = 'ActiveState_info_f339df5',
-    F = 'ActiveState_description_e5878c93',
-    L = R.strings.resource_well,
-    P = (s) => {
-        const t = i({ buttonSize: 'small' }, { large: { buttonSize: 'medium' } }),
-            r = 'resources' === s.variant ? { progressDiff: parseInt(s.deltaValue.toFixed()) } : {},
-            o = e.jsx(l, {
-                text: L.commonTexts.percent(),
-                params: { percent: s.progressValue.toString() },
+    N = 'ActiveState_e74cd00e',
+    f = 'ActiveState_progressBarWrapper_d57b5974',
+    V = 'ActiveState_progressBarLabel_9e0cc264',
+    w = 'ActiveState_vehicleInfo_ded266a7',
+    y = 'ActiveState_progressBarValueLabel_6e96165e',
+    z = 'ActiveState_deltaPercent_56b155fb',
+    I = 'ActiveState_progressBarScaleLabels_d281cc4c',
+    L = 'ActiveState_buttons_af96ee26',
+    F = 'ActiveState_button_438ead65',
+    P = 'ActiveState_info_f339df5',
+    A = 'ActiveState_description_e5878c93',
+    T = R.strings.resource_well,
+    C = (e) => {
+        const r = s({ buttonSize: 'small' }, { large: { buttonSize: 'medium' } }),
+            o = 'resources' === e.variant ? { progressDiff: parseInt(e.deltaValue.toFixed()) } : {},
+            i = (0, h.jsx)(d, {
+                text: T.commonTexts.percent(),
+                params: { percent: e.progressValue.toString() },
                 upgradeLegacy: !0,
             }),
-            n = e.jsx(l, {
-                className: V,
-                text: L.resourcesLoadingView.counter.delta(),
-                params: { delta: 'resources' === s.variant ? s.deltaValue.toFixed() : 0 },
+            n = (0, h.jsx)(d, {
+                className: z,
+                text: T.resourcesLoadingView.counter.delta(),
+                params: { delta: 'resources' === e.variant ? e.deltaValue.toFixed() : 0 },
                 upgradeLegacy: !0,
             }),
-            u = e.jsx(l, {
-                text: L.resourcesLoadingView.counter.currentWithDelta(),
-                params: { current: o, delta: n },
+            l = (0, h.jsx)(d, {
+                text: T.resourcesLoadingView.counter.currentWithDelta(),
+                params: { current: i, delta: n },
                 upgradeLegacy: !0,
             });
-        return e.jsxs('div', {
-            className: _,
+        return (0, h.jsxs)('div', {
+            className: N,
             children: [
-                e.jsxs('div', {
-                    className: j,
+                (0, h.jsxs)('div', {
+                    className: f,
                     children: [
-                        e.jsx('div', {
-                            className: S,
+                        (0, h.jsx)('div', {
+                            className: V,
                             children:
-                                (('main' === s.variant && s.eventMode === d.TWO_PARALLEL_PRODUCTS) ||
-                                    'resources' === s.variant) &&
-                                s.vehicleInfo
-                                    ? e.jsxs(e.Fragment, {
+                                (('main' === e.variant && e.eventMode === u.TWO_PARALLEL_PRODUCTS) ||
+                                    'resources' === e.variant) &&
+                                e.vehicleInfo
+                                    ? (0, h.jsxs)(h.Fragment, {
                                           children: [
-                                              e.jsx('div', {
-                                                  children: L.mainView.footer.activeState.progressionFor.title(),
+                                              (0, h.jsx)('div', {
+                                                  children: T.mainView.footer.activeState.progressionFor.title(),
                                               }),
-                                              e.jsx(p, {
-                                                  className: N,
+                                              (0, h.jsx)(S, {
+                                                  className: w,
                                                   theme: 'paragraph',
-                                                  vehicleInfo: s.vehicleInfo,
+                                                  vehicleInfo: e.vehicleInfo,
                                               }),
                                           ],
                                       })
-                                    : e.jsx(e.Fragment, {
-                                          children: L.mainView.footer.activeState.progression.title(),
+                                    : (0, h.jsx)(h.Fragment, {
+                                          children: T.mainView.footer.activeState.progression.title(),
                                       }),
                         }),
-                        e.jsx(a, {
+                        (0, h.jsx)(t, {
                             contentId: R.views.resource_well.mono.lobby.tooltips.progress_tooltip('resId'),
-                            args: r,
-                            children: e.jsx('div', {
-                                className: f,
+                            args: o,
+                            children: (0, h.jsx)('div', {
+                                className: y,
                                 children:
-                                    'resources' === s.variant && s.deltaValue ? (0 === s.progressValue ? n : u) : o,
+                                    'resources' === e.variant && e.deltaValue ? (0 === e.progressValue ? n : l) : i,
                             }),
                         }),
-                        e.jsx(a, {
+                        (0, h.jsx)(t, {
                             contentId: R.views.resource_well.mono.lobby.tooltips.progress_tooltip('resId'),
-                            args: r,
-                            children: e.jsx('div', {
-                                children: e.jsx(b, {
-                                    value: s.progressValue,
-                                    delta: 'resources' === s.variant ? s.deltaValue : 0,
+                            args: o,
+                            children: (0, h.jsx)('div', {
+                                children: (0, h.jsx)(_, {
+                                    value: e.progressValue,
+                                    delta: 'resources' === e.variant ? e.deltaValue : 0,
                                     maxValue: 100,
-                                    onAnimate: 'resources' === s.variant ? s.onProgressBarAnimate : void 0,
+                                    onAnimate: 'resources' === e.variant ? e.onProgressBarAnimate : void 0,
                                 }),
                             }),
                         }),
-                        e.jsxs('div', {
-                            className: w,
+                        (0, h.jsxs)('div', {
+                            className: I,
                             children: [
-                                e.jsx(l, { text: L.commonTexts.percent(), params: { percent: 0 }, upgradeLegacy: !0 }),
-                                e.jsx(l, {
-                                    text: L.commonTexts.percent(),
+                                (0, h.jsx)(d, {
+                                    text: T.commonTexts.percent(),
+                                    params: { percent: 0 },
+                                    upgradeLegacy: !0,
+                                }),
+                                (0, h.jsx)(d, {
+                                    text: T.commonTexts.percent(),
                                     params: { percent: 100 },
                                     upgradeLegacy: !0,
                                 }),
@@ -165,192 +173,198 @@ const m = ({ children: s, header: t, body: r, bindings: o, disabled: i }) =>
                         }),
                     ],
                 }),
-                e.jsx('div', {
-                    className: y,
+                (0, h.jsx)('div', {
+                    className: L,
                     children: (() => {
-                        switch (s.variant) {
+                        switch (e.variant) {
                             case 'main':
-                                return e.jsxs(e.Fragment, {
+                                return (0, h.jsxs)(h.Fragment, {
                                     children: [
-                                        e.jsx(c, {
-                                            onClick: s.onResourcesSelect,
-                                            size: t.buttonSize,
-                                            className: z,
+                                        (0, h.jsx)(a, {
+                                            onClick: e.onResourcesSelect,
+                                            size: r.buttonSize,
+                                            className: F,
                                             theme: 'primary',
-                                            children: L.mainView.footer.buttonChoose.text(),
+                                            children: T.mainView.footer.buttonChoose.text(),
                                         }),
-                                        e.jsx(m, {
-                                            header: L.tooltips.button.returnResources.header.text(),
-                                            body: L.tooltips.button.returnResources.description.text(),
-                                            children: e.jsx(c, {
-                                                onClick: s.onResourcesReturn,
-                                                size: t.buttonSize,
-                                                className: z,
+                                        (0, h.jsx)(x, {
+                                            header: T.tooltips.button.returnResources.header.text(),
+                                            body: T.tooltips.button.returnResources.description.text(),
+                                            children: (0, h.jsx)(a, {
+                                                onClick: e.onResourcesReturn,
+                                                size: r.buttonSize,
+                                                className: F,
                                                 theme: 'secondary',
-                                                children: L.mainView.footer.activeState.buttonReturn.text(),
+                                                children: T.mainView.footer.activeState.buttonReturn.text(),
                                             }),
                                         }),
-                                        e.jsx(m, {
-                                            header: L.tooltips.button.returnResources.header.text(),
-                                            body: L.tooltips.button.returnResources.description.text(),
-                                            children: e.jsx('div', { className: I }),
+                                        (0, h.jsx)(x, {
+                                            header: T.tooltips.button.returnResources.header.text(),
+                                            body: T.tooltips.button.returnResources.description.text(),
+                                            children: (0, h.jsx)('div', { className: P }),
                                         }),
                                     ],
                                 });
                             case 'resources':
-                                return e.jsxs(e.Fragment, {
+                                return (0, h.jsxs)(h.Fragment, {
                                     children: [
-                                        e.jsx(m, {
-                                            body: L.tooltips.resourcesLoadingView.buttonDisabled.body(),
-                                            disabled: !s.counterUnavailable,
-                                            children: e.jsx(c, {
-                                                onClick: s.onResourcesLoad,
-                                                size: t.buttonSize,
-                                                className: z,
+                                        (0, h.jsx)(x, {
+                                            body: T.tooltips.resourcesLoadingView.buttonDisabled.body(),
+                                            disabled: !e.counterUnavailable,
+                                            children: (0, h.jsx)(a, {
+                                                onClick: e.onResourcesLoad,
+                                                size: r.buttonSize,
+                                                className: F,
                                                 theme: 'primary',
-                                                disabled: s.counterUnavailable || !s.deltaValue,
-                                                children: L.resourcesLoadingView.buttons.load(),
+                                                disabled: e.counterUnavailable || !e.deltaValue,
+                                                children: T.resourcesLoadingView.buttons.load(),
                                             }),
                                         }),
-                                        e.jsx(c, {
-                                            onClick: s.onClose,
-                                            size: t.buttonSize,
-                                            className: z,
+                                        (0, h.jsx)(a, {
+                                            onClick: e.onClose,
+                                            size: r.buttonSize,
+                                            className: F,
                                             theme: 'secondary',
-                                            children: L.resourcesLoadingView.buttons.close(),
+                                            children: T.resourcesLoadingView.buttons.close(),
                                         }),
                                     ],
                                 });
                         }
                     })(),
                 }),
-                e.jsx('div', { className: F, children: L.mainView.footer.description.text() }),
+                (0, h.jsx)('div', { className: A, children: T.mainView.footer.description.text() }),
             ],
         });
     },
-    A = 'Forbidden_icon_9b9e87dc',
-    T = 'Forbidden_title_79cef627',
-    C = 'Forbidden_subtitle_29223041',
-    k = 'Forbidden_button_8b828d1d',
-    B = R.strings.resource_well.mainView.footer,
-    D = ({ onHangarShow: s }) => {
-        const t = i({ buttonSize: 'small' }, { large: { buttonSize: 'medium' } });
-        return e.jsxs(e.Fragment, {
+    k = 'Forbidden_icon_9b9e87dc',
+    D = 'Forbidden_title_79cef627',
+    B = 'Forbidden_subtitle_29223041',
+    H = 'Forbidden_button_8b828d1d',
+    U = R.strings.resource_well.mainView.footer,
+    M = ({ onHangarShow: e }) => {
+        const t = s({ buttonSize: 'small' }, { large: { buttonSize: 'medium' } });
+        return (0, h.jsxs)(h.Fragment, {
             children: [
-                e.jsxs('div', {
-                    className: T,
-                    children: [e.jsx('div', { className: A }), e.jsx('div', { children: B.forbidden.title() })],
+                (0, h.jsxs)('div', {
+                    className: D,
+                    children: [
+                        (0, h.jsx)('div', { className: k }),
+                        (0, h.jsx)('div', { children: U.forbidden.title() }),
+                    ],
                 }),
-                e.jsx('div', { className: C, children: B.forbidden.subTitle() }),
-                e.jsx(c, {
-                    onClick: s,
+                (0, h.jsx)('div', { className: B, children: U.forbidden.subTitle() }),
+                (0, h.jsx)(a, {
+                    onClick: e,
                     size: t.buttonSize,
-                    className: k,
+                    className: H,
                     theme: 'secondary',
-                    children: B.backToHangar.button.text(),
+                    children: U.backToHangar.button.text(),
                 }),
             ],
         });
     },
-    H = 'NoProgress_title_c5c00e94',
-    U = 'NoProgress_button_52f81d91',
-    E = 'NoProgress_description_89205325',
-    M = 'NoProgress_selectVehicleTitle_e414a2d1',
-    O = 'NoProgress_selectVehicleDescription_edf9bc73',
-    W = R.strings.resource_well.mainView.footer,
-    $ = ({ isSmall: s, onResourcesSelect: t, vehicleInfo: a }) => {
-        const r = i({ buttonSize: 'small' }, { large: { buttonSize: 'large' } });
-        return a
-            ? e.jsxs(e.Fragment, {
+    O = 'NoProgress_title_c5c00e94',
+    E = 'NoProgress_button_52f81d91',
+    W = 'NoProgress_description_89205325',
+    $ = 'NoProgress_selectVehicleTitle_e414a2d1',
+    J = 'NoProgress_selectVehicleDescription_edf9bc73',
+    Y = R.strings.resource_well.mainView.footer,
+    q = ({ isSmall: e, onResourcesSelect: t, vehicleInfo: r }) => {
+        const o = s({ buttonSize: 'small' }, { large: { buttonSize: 'large' } });
+        return r
+            ? (0, h.jsxs)(h.Fragment, {
                   children: [
-                      e.jsx(l, {
-                          className: H,
-                          text: W.noProgress.title(),
-                          params: { vehicleName: e.jsx(p, { theme: 'header', vehicleInfo: a }) },
+                      (0, h.jsx)(d, {
+                          className: O,
+                          text: Y.noProgress.title(),
+                          params: { vehicleName: (0, h.jsx)(S, { theme: 'header', vehicleInfo: r }) },
                           upgradeLegacy: !0,
                       }),
-                      e.jsx(c, { onClick: t, size: r.buttonSize, className: U, children: W.buttonChoose.text() }),
-                      e.jsx('div', { className: E, children: W.description.text() }),
+                      (0, h.jsx)(a, { onClick: t, size: o.buttonSize, className: E, children: Y.buttonChoose.text() }),
+                      (0, h.jsx)('div', { className: W, children: Y.description.text() }),
                   ],
               })
-            : e.jsxs(e.Fragment, {
+            : (0, h.jsxs)(h.Fragment, {
                   children: [
-                      e.jsx('div', { className: M, children: W.noProgress.selectVehicle.title() }),
-                      e.jsx('div', { className: O, children: W.noProgress.selectVehicle.description() }),
+                      (0, h.jsx)('div', { className: $, children: Y.noProgress.selectVehicle.title() }),
+                      (0, h.jsx)('div', { className: J, children: Y.noProgress.selectVehicle.description() }),
                   ],
               });
     },
-    J = 'NoVehiclesState_title_a847f92f',
-    Z = 'NoVehiclesState_subtitle_a6a7c9d4',
-    q = 'NoVehiclesState_button_7b7c67b5',
-    G = R.strings.resource_well.mainView.footer,
-    K = ({ onHangarShow: s }) => {
-        const t = i({ buttonSize: 'small' }, { large: { buttonSize: 'medium' } });
-        return e.jsxs(e.Fragment, {
+    G = 'NoVehiclesState_title_a847f92f',
+    K = 'NoVehiclesState_subtitle_a6a7c9d4',
+    Q = 'NoVehiclesState_button_7b7c67b5',
+    X = R.strings.resource_well.mainView.footer,
+    Z = ({ onHangarShow: e }) => {
+        const t = s({ buttonSize: 'small' }, { large: { buttonSize: 'medium' } });
+        return (0, h.jsxs)(h.Fragment, {
             children: [
-                e.jsx('div', { className: J, children: G.noVehicles.title() }),
-                e.jsx('div', { className: Z, children: G.noVehicles.subTitle() }),
-                e.jsx(c, {
-                    onClick: s,
+                (0, h.jsx)('div', { className: G, children: X.noVehicles.title() }),
+                (0, h.jsx)('div', { className: K, children: X.noVehicles.subTitle() }),
+                (0, h.jsx)(a, {
+                    onClick: e,
                     size: t.buttonSize,
-                    className: q,
+                    className: Q,
                     theme: 'secondary',
-                    children: G.backToHangar.button.text(),
+                    children: X.backToHangar.button.text(),
                 }),
             ],
         });
     },
-    Q = 'Footer_c298eb1',
-    X = 'Footer_backgroundBlur_b741fe83',
-    Y = 'Footer_background_3a3b1d42',
-    ee = 'Footer_content_d86b98f6',
-    se = (s) =>
-        e.jsxs('div', {
-            className: t(Q, s.className),
+    ee = 'Footer_c298eb1',
+    se = 'Footer_backgroundBlur_b741fe83',
+    te = 'Footer_background_3a3b1d42',
+    ae = 'Footer_content_d86b98f6',
+    re = (e) =>
+        (0, h.jsxs)('div', {
+            className: l(ee, e.className),
             children: [
-                e.jsx('div', { className: X }),
-                e.jsx('div', { className: Y }),
-                e.jsx('div', {
-                    className: ee,
+                (0, h.jsx)('div', { className: se }),
+                (0, h.jsx)('div', { className: te }),
+                (0, h.jsx)('div', {
+                    className: ae,
                     children: (() => {
-                        switch (s.progressionState) {
-                            case u.Active:
-                                switch (s.variant) {
+                        switch (e.progressionState) {
+                            case m.Active:
+                                switch (e.variant) {
                                     case 'main':
-                                        return e.jsx(P, {
+                                        return (0, h.jsx)(C, {
                                             variant: 'main',
-                                            vehicleInfo: s.vehicleInfo,
-                                            progressValue: s.progressValue,
-                                            onResourcesReturn: s.onResourcesReturn,
-                                            onResourcesSelect: s.onResourcesSelect,
-                                            eventMode: s.eventMode,
+                                            vehicleInfo: e.vehicleInfo,
+                                            progressValue: e.progressValue,
+                                            onResourcesReturn: e.onResourcesReturn,
+                                            onResourcesSelect: e.onResourcesSelect,
+                                            eventMode: e.eventMode,
                                         });
                                     case 'resources':
-                                        return e.jsx(P, {
+                                        return (0, h.jsx)(C, {
                                             variant: 'resources',
-                                            counterUnavailable: s.counterUnavailable,
-                                            vehicleInfo: s.vehicleInfo,
-                                            progressValue: s.progressValue,
-                                            deltaValue: s.deltaValue,
-                                            onResourcesLoad: s.onResourcesLoad,
-                                            onClose: s.onClose,
-                                            onProgressBarAnimate: s.onProgressBarAnimate,
+                                            counterUnavailable: e.counterUnavailable,
+                                            vehicleInfo: e.vehicleInfo,
+                                            progressValue: e.progressValue,
+                                            deltaValue: e.deltaValue,
+                                            onResourcesLoad: e.onResourcesLoad,
+                                            onClose: e.onClose,
+                                            onProgressBarAnimate: e.onProgressBarAnimate,
                                         });
                                     default:
                                         return;
                                 }
-                            case u.NoVehicles:
-                                return e.jsx(K, { onHangarShow: s.onHangarShow });
-                            case u.NoProgress:
+                            case m.NoVehicles:
+                                return (0, h.jsx)(Z, { onHangarShow: e.onHangarShow });
+                            case m.NoProgress:
                                 return (
-                                    'main' === s.variant &&
-                                    e.jsx($, { onResourcesSelect: s.onResourcesSelect, vehicleInfo: s.vehicleInfo })
+                                    'main' === e.variant &&
+                                    (0, h.jsx)(q, {
+                                        onResourcesSelect: e.onResourcesSelect,
+                                        vehicleInfo: e.vehicleInfo,
+                                    })
                                 );
                             default:
-                                return e.jsx(D, { onHangarShow: s.onHangarShow });
+                                return (0, h.jsx)(M, { onHangarShow: e.onHangarShow });
                         }
                     })(),
                 }),
             ],
         });
-export { se as F, u as P, m as S };
+export { x as n, m as r, re as t };

@@ -17,11 +17,11 @@
                 (t.r(r),
                     t.d(r, {
                         events: () => i,
-                        getMouseGlobalPosition: () => y,
-                        getSize: () => E,
-                        graphicsQuality: () => _,
-                        playSound: () => b,
-                        setRTPC: () => h,
+                        getMouseGlobalPosition: () => E,
+                        getSize: () => y,
+                        graphicsQuality: () => x,
+                        playSound: () => h,
+                        setRTPC: () => b,
                     }));
                 var o = {};
                 (t.r(o), t.d(o, { getBgUrl: () => M, getTextureUrl: () => k }));
@@ -29,7 +29,7 @@
                 (t.r(a),
                     t.d(a, {
                         addModelObserver: () => Q,
-                        addPreloadTexture: () => B,
+                        addPreloadTexture: () => H,
                         arabic2roman: () => le,
                         children: () => o,
                         displayStatus: () => N,
@@ -39,7 +39,7 @@
                         extraSize: () => ue,
                         forceTriggerMouseMove: () => oe,
                         freezeTextureBeforeResize: () => K,
-                        getBrowserTexturePath: () => $,
+                        getBrowserTexturePath: () => I,
                         getDisplayStatus: () => ae,
                         getExternalPaddingsRem: () => de,
                         getFontNames: () => se,
@@ -55,7 +55,7 @@
                         sendEvent: () => F,
                         setAnimateWindow: () => ne,
                         setEventHandled: () => ie,
-                        setInputPaddingsRem: () => I,
+                        setInputPaddingsRem: () => B,
                         setSidePaddingsRem: () => W,
                         whenTutorialReady: () => ve,
                     }));
@@ -142,34 +142,34 @@
                         },
                     });
                 })();
-                function b(e) {
+                function h(e) {
                     engine.call('PlaySound', e).catch((n) => {
                         console.error(`playSound('${e}'): `, n);
                     });
                 }
-                function h(e, n) {
+                function b(e, n) {
                     engine.call('SetRTPCGlobal', e, n).catch((t) => {
                         console.error(`setRTPC('${e}', '${n}'): `, t);
                     });
                 }
-                function E(e = 'px') {
+                function y(e = 'px') {
                     return 'rem' === e ? viewEnv.getClientSizeRem() : viewEnv.getClientSizePx();
                 }
-                function y(e = 'px') {
+                function E(e = 'px') {
                     return 'rem' === e ? viewEnv.getMouseGlobalPositionRem() : viewEnv.getMouseGlobalPositionPx();
                 }
-                const _ = {
+                const x = {
                         isLow: () => 1 === viewEnv.getGraphicsQuality(),
                         isHigh: () => 0 === viewEnv.getGraphicsQuality(),
                         get: () => viewEnv.getGraphicsQuality(),
                     },
-                    x = {
+                    _ = {
                         toUpperCase: (e) => window.systemLocale.toUpperCase(e),
                         toLowerCase: (e) => window.systemLocale.toLowerCase(e),
                     },
                     P = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
-                    S = Object.keys(P).reduce((e, n) => ((e[n] = () => b(P[n])), e), {}),
-                    T = { play: Object.assign({}, S, { sound: b }), setRTPC: h },
+                    S = Object.keys(P).reduce((e, n) => ((e[n] = () => h(P[n])), e), {}),
+                    T = { play: Object.assign({}, S, { sound: h }), setRTPC: b },
                     O = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'],
                     z = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1e3];
                 function C(e) {
@@ -254,21 +254,21 @@
                             G(D, { isMouseEvent: !0, on: e });
                         },
                     },
-                    H = 15;
-                function B(e) {
+                    $ = 15;
+                function H(e) {
                     viewEnv.addPreloadTexture(e);
                 }
-                function I(e) {
-                    viewEnv.setHitAreaPaddingsRem(e, e, e, e, H);
+                function B(e) {
+                    viewEnv.setHitAreaPaddingsRem(e, e, e, e, $);
                 }
-                function $(e, n, t, i = 1) {
+                function I(e, n, t, i = 1) {
                     return viewEnv.getWebBrowserTexturePath(e, n, t, i);
                 }
                 function Q(e, n, t) {
                     return viewEnv.addDataChangedCallback(e, n, t);
                 }
                 function W(e) {
-                    viewEnv.setHitAreaPaddingsRem(e.top, e.right, e.bottom, e.left, H);
+                    viewEnv.setHitAreaPaddingsRem(e.top, e.right, e.bottom, e.left, $);
                 }
                 function X(e = 'px') {
                     return 'rem' === e ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
@@ -350,18 +350,18 @@
                     }
                     (n(), engine.on('self.onPaddingsUpdated', () => n()));
                 }
-                const ge = { view: a, client: r, sound: T, intl: x };
+                const ge = { view: a, client: r, sound: T, intl: _ };
                 var pe = t(7363),
                     we = t.n(pe);
-                const be = {
+                const he = {
                         base: 'TooltipDecorator_base_bf61f',
                         'base__theme-default': 'TooltipDecorator_base__theme-default_bf8f8',
                         decorator: 'TooltipDecorator_decorator_f4de8',
                     },
-                    he = ['children', 'className', 'theme'];
-                function Ee() {
+                    be = ['children', 'className', 'theme'];
+                function ye() {
                     return (
-                        (Ee = Object.assign
+                        (ye = Object.assign
                             ? Object.assign.bind()
                             : function (e) {
                                   for (var n = 1; n < arguments.length; n++) {
@@ -370,10 +370,10 @@
                                   }
                                   return e;
                               }),
-                        Ee.apply(null, arguments)
+                        ye.apply(null, arguments)
                     );
                 }
-                const ye = we().forwardRef(function (e, n) {
+                const Ee = we().forwardRef(function (e, n) {
                     let t = e.children,
                         i = e.className,
                         r = e.theme,
@@ -387,10 +387,15 @@
                                     t[i] = e[i];
                                 }
                             return t;
-                        })(e, he);
+                        })(e, be);
                     const s = we().useRef(null);
                     var d;
                     return (
+                        (0, pe.useLayoutEffect)(() => {
+                            const e = ge.client.getSize('rem');
+                            ((document.body.style.width = `${e.width}rem`),
+                                (document.body.style.height = `${e.height}rem`));
+                        }, []),
                         (d = () => {
                             const e = s.current;
                             if (!e)
@@ -400,7 +405,9 @@
                             const n = new ResizeObserver(() => {
                                 const n = e.scrollWidth,
                                     t = e.scrollHeight;
-                                ge.view.resize(n, t);
+                                (ge.view.resize(n, t),
+                                    (document.body.style.width = `${n}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const i = window.getComputedStyle(e);
                                 ge.view.setSidePaddingsRem({
                                     left: parseInt(i.getPropertyValue('padding-left'), 10),
@@ -414,18 +421,18 @@
                         (0, pe.useEffect)(d, []),
                         we().createElement(
                             'div',
-                            Ee({}, a, {
-                                className: l()(be.base, be[`base__theme-${o}`], i),
+                            ye({}, a, {
+                                className: l()(he.base, he[`base__theme-${o}`], i),
                                 ref: function (e) {
                                     ((s.current = e), 'function' == typeof n ? n(e) : n && (n.current = e));
                                 },
                             }),
-                            we().createElement('div', { className: be.decorator }, t),
+                            we().createElement('div', { className: he.decorator }, t),
                         )
                     );
                 });
-                var _e = t(1533),
-                    xe = t.n(_e),
+                var xe = t(1533),
+                    _e = t.n(xe),
                     Pe = t(2041);
                 const Se = 'TooltipAdvancedFooter_base_b214f',
                     Re = 'TooltipAdvancedFooter_altBtn_e7239',
@@ -489,8 +496,8 @@
                         ),
                     );
                 engine.whenReady.then(() => {
-                    xe().render(
-                        we().createElement(ye, null, we().createElement(Fe, null)),
+                    _e().render(
+                        we().createElement(Ee, null, we().createElement(Fe, null)),
                         document.getElementById('root'),
                     );
                 });

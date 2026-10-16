@@ -7,7 +7,7 @@
                 (F.r(A),
                     F.d(A, {
                         mouse: () => v,
-                        off: () => f,
+                        off: () => m,
                         on: () => g,
                         onMinimize: () => d,
                         onResize: () => l,
@@ -37,7 +37,7 @@
                         enableFullScreenModeSupported: () => du,
                         events: () => j,
                         extraSize: () => lu,
-                        forceTriggerMouseMove: () => nu,
+                        forceTriggerMouseMove: () => Cu,
                         freezeTextureBeforeResize: () => eu,
                         getBrowserTexturePath: () => X,
                         getDisplayStatus: () => ru,
@@ -47,7 +47,7 @@
                         getSize: () => K,
                         getViewGlobalPosition: () => uu,
                         initExternalPaddings: () => gu,
-                        isEventHandled: () => Cu,
+                        isEventHandled: () => nu,
                         isFocused: () => tu,
                         pxToRem: () => Au,
                         remToPx: () => Eu,
@@ -60,9 +60,9 @@
                         whenTutorialReady: () => cu,
                     }));
                 var B = F(7363),
-                    C = F.n(B),
-                    n = F(1533),
-                    r = F.n(n),
+                    n = F.n(B),
+                    C = F(1533),
+                    r = F.n(C),
                     o = F(9849),
                     i = F.n(o);
                 function a(u) {
@@ -80,8 +80,8 @@
                     c = a('self.onScaleUpdated'),
                     d = a('clientMinimized'),
                     g = (u, e) => engine.on(u, e),
-                    f = (u, e) => engine.off(u, e),
-                    m = { down: a('mousedown'), up: a('mouseup'), move: a('mousemove') };
+                    m = (u, e) => engine.off(u, e),
+                    f = { down: a('mousedown'), up: a('mouseup'), move: a('mousemove') };
                 const v = (function () {
                     const u = { listeners: 0, enabled: !0, initialized: !1 };
                     function e() {
@@ -109,7 +109,7 @@
                                     u.listeners += 1;
                                     let E = !0;
                                     const D = `mouse${e}`,
-                                        t = m[e]((u) => F([u, 'outside']));
+                                        t = f[e]((u) => F([u, 'outside']));
                                     function B(u) {
                                         F([u, 'inside']);
                                     }
@@ -305,10 +305,10 @@
                 function Bu() {
                     return viewEnv.setEventHandled();
                 }
-                function Cu() {
+                function nu() {
                     return viewEnv.isEventHandled();
                 }
-                function nu() {
+                function Cu() {
                     viewEnv.forceTriggerMouseMove();
                 }
                 function ru() {
@@ -354,8 +354,8 @@
                     }
                     (e(), engine.on('self.onPaddingsUpdated', () => e()));
                 }
-                const fu = { view: t, client: E, sound: S, intl: y };
-                const mu = {
+                const mu = { view: t, client: E, sound: S, intl: y };
+                const fu = {
                         base: 'TooltipDecorator_base_bf61f',
                         'base__theme-default': 'TooltipDecorator_base__theme-default_bf8f8',
                         decorator: 'TooltipDecorator_decorator_f4de8',
@@ -375,7 +375,7 @@
                         pu.apply(null, arguments)
                     );
                 }
-                const hu = C().forwardRef(function (u, e) {
+                const hu = n().forwardRef(function (u, e) {
                     let F = u.children,
                         A = u.className,
                         E = u.theme,
@@ -390,11 +390,16 @@
                                 }
                             return F;
                         })(u, vu);
-                    const n = C().useRef(null);
+                    const C = n().useRef(null);
                     var r;
                     return (
+                        (0, B.useLayoutEffect)(() => {
+                            const u = mu.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (r = () => {
-                            const u = n.current;
+                            const u = C.current;
                             if (!u)
                                 return void console.warn(
                                     'Uncexpected to have base div as not setup in ref to calculate and invoke resize',
@@ -402,9 +407,11 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     F = u.scrollHeight;
-                                fu.view.resize(e, F);
+                                (mu.view.resize(e, F),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${F}px`));
                                 const A = window.getComputedStyle(u);
-                                fu.view.setSidePaddingsRem({
+                                mu.view.setSidePaddingsRem({
                                     left: parseInt(A.getPropertyValue('padding-left'), 10),
                                     top: parseInt(A.getPropertyValue('padding-top'), 10),
                                     right: parseInt(A.getPropertyValue('padding-right'), 10),
@@ -414,15 +421,15 @@
                             return (e.observe(u), e.disconnect);
                         }),
                         (0, B.useEffect)(r, []),
-                        C().createElement(
+                        n().createElement(
                             'div',
                             pu({}, t, {
-                                className: i()(mu.base, mu[`base__theme-${D}`], A),
+                                className: i()(fu.base, fu[`base__theme-${D}`], A),
                                 ref: function (u) {
-                                    ((n.current = u), 'function' == typeof e ? e(u) : e && (e.current = u));
+                                    ((C.current = u), 'function' == typeof e ? e(u) : e && (e.current = u));
                                 },
                             }),
-                            C().createElement('div', { className: mu.decorator }, F),
+                            n().createElement('div', { className: fu.decorator }, F),
                         )
                     );
                 });
@@ -489,11 +496,11 @@
                     ku = ({ binding: u, text: e = '', classMix: F, alignment: A = xu.left, formatWithBrackets: E }) => {
                         if (null === e) return (console.error("FormatText was supplied with 'null'"), null);
                         const D = E && u ? wu(e, u) : e;
-                        return C().createElement(
+                        return n().createElement(
                             B.Fragment,
                             null,
                             D.split('\n').map((e, E) =>
-                                C().createElement(
+                                n().createElement(
                                     'div',
                                     { className: i()(zu, F), key: `${e}-${E}` },
                                     ((u, e, F) =>
@@ -501,7 +508,7 @@
                                         e,
                                         A,
                                         u,
-                                    ).map((u, e) => C().createElement(B.Fragment, { key: `${e}-${u}` }, u)),
+                                    ).map((u, e) => n().createElement(B.Fragment, { key: `${e}-${u}` }, u)),
                                 ),
                             ),
                         );
@@ -540,7 +547,7 @@
                             E = (0, B.useMemo)(() => e || {}, [e]);
                         let D = Wu.exec(u),
                             t = u,
-                            n = 0;
+                            C = 0;
                         for (; D;) {
                             const F = D[0],
                                 B = ju.exec(F),
@@ -548,23 +555,23 @@
                                 o = D[1];
                             if (B && r) {
                                 const u = B[0],
-                                    D = u + n++ + u;
+                                    D = u + C++ + u;
                                 ((t = t.replace(F, `%(${D})`)),
                                     (E[D] = Mu[u]
-                                        ? C().createElement(
+                                        ? n().createElement(
                                               'span',
                                               { className: Mu[u] },
-                                              C().createElement(ku, { text: o, binding: e }),
+                                              n().createElement(ku, { text: o, binding: e }),
                                           )
-                                        : C().createElement(
+                                        : n().createElement(
                                               'span',
                                               { style: A(u) },
-                                              C().createElement(ku, { text: o, binding: e }),
+                                              n().createElement(ku, { text: o, binding: e }),
                                           )));
                             }
                             D = Wu.exec(u);
                         }
-                        return C().createElement(ku, { text: t, classMix: F, binding: E });
+                        return n().createElement(ku, { text: t, classMix: F, binding: E });
                     });
                 const Vu = function () {};
                 function Nu() {
@@ -613,7 +620,7 @@
                         const F = (0, B.createContext)({});
                         return [
                             function ({ mode: A = 'real', options: E, children: D, mocks: t }) {
-                                const n = (0, B.useRef)([]),
+                                const C = (0, B.useRef)([]),
                                     r = (F, A, E) => {
                                         var D;
                                         const t = (function ({
@@ -649,8 +656,8 @@
                                                 return {
                                                     subscribe: (F, D) => {
                                                         const B = 'string' == typeof D ? `${A}.${D}` : A,
-                                                            C = fu.view.addModelObserver(B, e, !0);
-                                                        return (E.set(C, F), u && F(t(D)), C);
+                                                            n = mu.view.addModelObserver(B, e, !0);
+                                                        return (E.set(n, F), u && F(t(D)), n);
                                                     },
                                                     readByPath: t,
                                                     createCallback: (u, e) => {
@@ -680,16 +687,16 @@
                                                                   ? D
                                                                   : () => {},
                                                       }),
-                                            C = (u) =>
+                                            n = (u) =>
                                                 'mocks' === F ? (null == E ? void 0 : E.getter(u)) : B.readByPath(u),
-                                            r = (u) => n.current.push(u),
+                                            r = (u) => C.current.push(u),
                                             o = u({
                                                 mode: F,
-                                                readByPath: C,
+                                                readByPath: n,
                                                 externalModel: B,
                                                 observableModel: {
                                                     dict: (u) => {
-                                                        const e = C(u),
+                                                        const e = n(u),
                                                             A = Gu.LO.box(e, { equals: Nu });
                                                         return (
                                                             'real' === F &&
@@ -701,7 +708,7 @@
                                                         );
                                                     },
                                                     array: (u, e) => {
-                                                        const A = null != e ? e : C(u),
+                                                        const A = null != e ? e : n(u),
                                                             E = Gu.LO.box(A, { equals: Nu });
                                                         return (
                                                             'real' === F &&
@@ -713,7 +720,7 @@
                                                         );
                                                     },
                                                     object: (u, e) => {
-                                                        const A = null != e ? e : C(u),
+                                                        const A = null != e ? e : n(u),
                                                             E = Gu.LO.box(A, { equals: Nu });
                                                         return (
                                                             'real' === F &&
@@ -725,7 +732,7 @@
                                                         );
                                                     },
                                                     primitives: (u, e) => {
-                                                        const A = C(e);
+                                                        const A = n(e);
                                                         if (Array.isArray(u)) {
                                                             const E = u.reduce(
                                                                 (u, e) => ((u[e] = Gu.LO.box(A[e], {})), u),
@@ -792,11 +799,11 @@
                                     }, [A]),
                                     (0, B.useEffect)(
                                         () => () => {
-                                            (c.externalModel.dispose(), n.current.forEach((u) => u()));
+                                            (c.externalModel.dispose(), C.current.forEach((u) => u()));
                                         },
                                         [c],
                                     ),
-                                    C().createElement(F.Provider, { value: c }, D)
+                                    n().createElement(F.Provider, { value: c }, D)
                                 );
                             },
                             () => (0, B.useContext)(F),
@@ -812,32 +819,32 @@
                     ee = R.strings.achievements_page.tooltips.autoSetting,
                     Fe = () => {
                         const u = Xu().model.root.get().isSwitchedOn;
-                        return C().createElement(
+                        return n().createElement(
                             hu,
                             null,
-                            C().createElement(
+                            n().createElement(
                                 'div',
                                 { className: Zu },
-                                C().createElement(
+                                n().createElement(
                                     'div',
                                     { className: Ju },
-                                    C().createElement('div', { className: Ku }, ee.title()),
-                                    C().createElement($u, { text: ee.description() }),
+                                    n().createElement('div', { className: Ku }, ee.title()),
+                                    n().createElement($u, { text: ee.description() }),
                                 ),
-                                C().createElement('div', { className: Yu }),
-                                C().createElement(
+                                n().createElement('div', { className: Yu }),
+                                n().createElement(
                                     'div',
                                     { className: ue },
                                     u
-                                        ? C().createElement($u, { text: ee.caption.isSwitchedOn() })
-                                        : C().createElement($u, { text: ee.caption.isSwitchedOff() }),
+                                        ? n().createElement($u, { text: ee.caption.isSwitchedOn() })
+                                        : n().createElement($u, { text: ee.caption.isSwitchedOff() }),
                                 ),
                             ),
                         );
                     };
                 engine.whenReady.then(() => {
                     r().render(
-                        C().createElement(Qu, null, C().createElement(Fe, null)),
+                        n().createElement(Qu, null, n().createElement(Fe, null)),
                         document.getElementById('root'),
                     );
                 });
@@ -862,14 +869,14 @@
             if (!F) {
                 var t = 1 / 0;
                 for (r = 0; r < u.length; r++) {
-                    for (var [F, E, D] = u[r], B = !0, C = 0; C < F.length; C++)
-                        (!1 & D || t >= D) && Object.keys(A.O).every((u) => A.O[u](F[C]))
-                            ? F.splice(C--, 1)
+                    for (var [F, E, D] = u[r], B = !0, n = 0; n < F.length; n++)
+                        (!1 & D || t >= D) && Object.keys(A.O).every((u) => A.O[u](F[n]))
+                            ? F.splice(n--, 1)
                             : ((B = !1), D < t && (t = D));
                     if (B) {
                         u.splice(r--, 1);
-                        var n = E();
-                        void 0 !== n && (e = n);
+                        var C = E();
+                        void 0 !== C && (e = C);
                     }
                 }
                 return e;
@@ -907,13 +914,13 @@
             var e = (e, F) => {
                     var E,
                         D,
-                        [t, B, C] = F,
-                        n = 0;
+                        [t, B, n] = F,
+                        C = 0;
                     if (t.some((e) => 0 !== u[e])) {
                         for (E in B) A.o(B, E) && (A.m[E] = B[E]);
-                        if (C) var r = C(A);
+                        if (n) var r = n(A);
                     }
-                    for (e && e(F); n < t.length; n++) ((D = t[n]), A.o(u, D) && u[D] && u[D][0](), (u[D] = 0));
+                    for (e && e(F); C < t.length; C++) ((D = t[C]), A.o(u, D) && u[D] && u[D][0](), (u[D] = 0));
                     return A.O(r);
                 },
                 F = (self.webpackChunkgameface = self.webpackChunkgameface || []);

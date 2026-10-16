@@ -39,7 +39,7 @@
                 }
                 (E.r(D),
                     E.d(D, {
-                        addModelObserver: () => j,
+                        addModelObserver: () => $,
                         addPreloadTexture: () => V,
                         arabic2roman: () => Au,
                         children: () => t,
@@ -55,7 +55,7 @@
                         getExternalPaddingsRem: () => Fu,
                         getFontNames: () => Eu,
                         getScale: () => q,
-                        getSize: () => $,
+                        getSize: () => j,
                         getViewGlobalPosition: () => W,
                         initExternalPaddings: () => Bu,
                         isEventHandled: () => J,
@@ -166,8 +166,8 @@
                         toLowerCase: (u) => window.systemLocale.toLowerCase(u),
                     },
                     m = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
-                    f = Object.keys(m).reduce((u, e) => ((u[e] = () => l(m[e])), u), {}),
-                    h = { play: Object.assign({}, f, { sound: l }), setRTPC: d };
+                    h = Object.keys(m).reduce((u, e) => ((u[e] = () => l(m[e])), u), {}),
+                    f = { play: Object.assign({}, h, { sound: l }), setRTPC: d };
                 var g = E(1308);
                 function b(u, e, E = 1) {
                     return viewEnv.getChildTexturePath(u, e.width, e.height, E);
@@ -255,13 +255,13 @@
                 function I(u, e, E, A = 1) {
                     return viewEnv.getWebBrowserTexturePath(u, e, E, A);
                 }
-                function j(u, e, E) {
+                function $(u, e, E) {
                     return viewEnv.addDataChangedCallback(u, e, E);
                 }
                 function z(u) {
                     viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, L);
                 }
-                function $(u = 'px') {
+                function j(u = 'px') {
                     return 'rem' === u ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
                 }
                 function G(u, e, E = 'px') {
@@ -341,7 +341,7 @@
                     }
                     (e(), engine.on('self.onPaddingsUpdated', () => e()));
                 }
-                const iu = { view: D, client: F, sound: h, intl: w };
+                const iu = { view: D, client: F, sound: f, intl: w };
             },
             4020: (u, e, E) => {
                 E.d(e, { n: () => A });
@@ -654,7 +654,7 @@
                     };
                 var w = E(5533);
                 const m = F.instance,
-                    f = {
+                    h = {
                         DataTracker: t.Z,
                         ViewModel: w.Z,
                         ViewEventType: n,
@@ -737,7 +737,7 @@
                         SystemLocale: D.Z5,
                         UserLocale: D.cy,
                     };
-                window.ViewEnvHelper = f;
+                window.ViewEnvHelper = h;
             },
             6609: (u, e, E) => {
                 E.d(e, { Ew: () => t, Z5: () => A, cy: () => F });
@@ -888,17 +888,17 @@
                         return { callerUrl: F, caller: E, stack: e, resId: A };
                     },
                     m = (u, e) => u.split('.').reduce((u, e) => u && u[e], e),
-                    f = (u) => {
+                    h = (u) => {
                         const e = (0, A.useRef)(!1);
                         e.current || (u(), (e.current = !0));
                     },
-                    h = (u) => u && 'ArrayItem' === u.__proto__.constructor.name,
+                    f = (u) => u && 'ArrayItem' === u.__proto__.constructor.name,
                     g = (u, e) => (u.length > 0 ? `${u}.${e}` : e),
                     b = (u) =>
                         ((u, e) =>
                             u.split('.').reduce((u, E) => {
                                 const A = m(`${u}.${E}`, window);
-                                return h(A) ? e(u, E, A) : `${u}.${E}`;
+                                return f(A) ? e(u, E, A) : `${u}.${E}`;
                             }))(u, (u, e) => `${u}.${e}.value`),
                     y = (u) => {
                         const e = ((u) => {
@@ -915,7 +915,7 @@
                             return (
                                 A.reduce((e, A) => {
                                     const F = m(g(E, `${e}.${A}`), window);
-                                    return h(F) ? (u.push(F.id), `${e}.${A}.value`) : (u.push(A), `${e}.${A}`);
+                                    return f(F) ? (u.push(F.id), `${e}.${A}.value`) : (u.push(A), `${e}.${A}`);
                                 }),
                                 u.reduce((u, e) => u + '.' + e)
                             );
@@ -944,14 +944,14 @@
                             ((u) => {
                                 const e = m(u, window);
                                 for (const u in e) 'function' == typeof e[u] && (e[u] = e[u].bind(e));
-                                return h(e) ? e.value : e;
+                                return f(e) ? e.value : e;
                             })(b(B)),
                         ),
                         o = i[0],
                         a = i[1],
                         C = (0, A.useRef)(-1);
                     return (
-                        f(() => {
+                        h(() => {
                             if (
                                 ('boolean' == typeof e &&
                                     ((e = e ? P.Deep : P.None),
@@ -1009,9 +1009,9 @@
                 var V = E(7901),
                     U = E(9326);
                 const I = 'Content_base_e98b4',
-                    j = 'Content_title_b10b0',
+                    $ = 'Content_title_b10b0',
                     z = 'Content_content_e33d4',
-                    $ = 'Content_separator_dd420',
+                    j = 'Content_separator_dd420',
                     G = 'Content_accent_d9d7a',
                     W = 'Content_unit_bec52',
                     K = R.strings.veh_post_progression.postProgressionLevelTooltipView,
@@ -1032,7 +1032,7 @@
                         return F().createElement(
                             'div',
                             { className: I },
-                            F().createElement('div', { className: j }, `${K.title()} ${(0, n.HG)(E)}`),
+                            F().createElement('div', { className: $ }, `${K.title()} ${(0, n.HG)(E)}`),
                             e !== k.None && F().createElement(L, { binding: i, text: q[e], classMix: z }),
                             r.items.map(({ value: u }, e) =>
                                 F().createElement(V.r, { key: e, bonus: u, isUnitVisible: !0, classes: o }),
@@ -1041,7 +1041,7 @@
                                 F().createElement(
                                     'div',
                                     null,
-                                    F().createElement('div', { className: $ }, F().createElement(U.Z, null)),
+                                    F().createElement('div', { className: j }, F().createElement(U.Z, null)),
                                     K.lockedDescription(),
                                 ),
                         );
@@ -1084,6 +1084,11 @@
                         const B = F().useRef(null);
                         var i;
                         return (
+                            (0, A.useLayoutEffect)(() => {
+                                const u = p.O.client.getSize('rem');
+                                ((document.body.style.width = `${u.width}rem`),
+                                    (document.body.style.height = `${u.height}rem`));
+                            }, []),
                             (i = () => {
                                 const u = B.current;
                                 if (!u)
@@ -1093,7 +1098,9 @@
                                 const e = new ResizeObserver(() => {
                                     const e = u.scrollWidth,
                                         E = u.scrollHeight;
-                                    p.O.view.resize(e, E);
+                                    (p.O.view.resize(e, E),
+                                        (document.body.style.width = `${e}px`),
+                                        (document.body.style.height = `${E}px`));
                                     const A = window.getComputedStyle(u);
                                     p.O.view.setSidePaddingsRem({
                                         left: parseInt(A.getPropertyValue('padding-left'), 10),

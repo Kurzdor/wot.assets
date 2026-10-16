@@ -303,7 +303,23 @@
     engine._trigger = Emitter.prototype.trigger;
     engine.trigger = function () {
         if (!this._trigger.apply(this, arguments)) {
-            this.TriggerEvent.apply(this, arguments);
+            if (!this.TriggerEvent.apply(this, arguments) && engine._EventMocks[arguments[0]]) {
+                const eventArgs = Array.prototype.slice.call(arguments);
+                eventArgs.shift();
+                engine._EventMocks[arguments[0]].apply(this, eventArgs);
+            }
+        }
+    };
+
+    /// @function engine.mockEvent
+    /// Register a mock handler for a given event, that will be invoked only when there isn't any registered JS or C++ handler for that event.
+    /// @param {String} eventName name of the event
+    /// @param {Function} callback callback function to be executed when the event has been triggered and there are no other handlers for that event
+
+    engine._EventMocks = {};
+    engine.mockEvent = function (eventName, callback) {
+        if (typeof callback == 'function') {
+            engine._EventMocks[eventName] = callback;
         }
     };
 
@@ -355,10 +371,30 @@
         }
     };
 
+    /// @function engine.mockCall
+    /// Register a mock handler for a Call, that will be invoked if there is no C++ handler
+    /// @param {String} handlerName name of the handler to be invoked
+    /// @param {Function} callback callback function to be executed when the call has been triggered and there is no C++ handler registered
+
+    engine._CallMocks = {};
+    engine.mockCall = function (handlerName, callback) {
+        if (typeof callback == 'function') {
+            engine._CallMocks[handlerName] = callback;
+        }
+    };
+
     engine._Reject = function (requestId, handlerName) {
         var deferred = engine._ActiveRequests[requestId];
         if (deferred !== undefined) {
             delete engine._ActiveRequests[requestId];
+
+            const callback = engine._CallMocks[handlerName];
+            if (callback) {
+                const callArguments = Array.prototype.slice.call(arguments);
+                callArguments.splice(0, 2);
+                deferred.resolve(callback.apply(this, callArguments));
+                return;
+            }
 
             // ChakraCore executes deferred.reject immediately before we can return and have the user attach a rejection callback
             requestAnimationFrame(() => deferred.reject("No handler registered with name '" + handlerName + "'"));
@@ -457,6 +493,46 @@
     engine.removeSynchronizationDependency = (first, second) => {
         let deps = engine.dependency.get(first) || [];
         deps.splice(deps.indexOf(second), 1);
+    };
+
+    /// @function engine.createJSModel
+    /// Registers a JavaScript data binding model
+    /// @param {String} name The name of the model
+    /// @param model The model's definition
+
+    /// @function engine.createOrMergeModel
+    /// Register a JavaScript data binding model if a model with that name doesn't exist, or recursively add the properties from the supplied `jsObject` that are missing from the existing model.
+    /// @param {String} name The name of the model
+    /// @param jsObject The model's definition
+    /// @param {Boolean} includeInherited Whether to include both own and inherited enumerable properties of `jsObject`
+
+    engine.createOrMergeModel = (name, jsObject, includeInherited = true) => {
+        const mergeProperties = function (newObject, existingObject) {
+            if (typeof newObject != 'object' || typeof existingObject != 'object') {
+                return;
+            }
+
+            for (const prop in newObject) {
+                if (!includeInherited && !Object.hasOwn(newObject, prop)) {
+                    continue;
+                }
+
+                if (!Object.hasOwn(existingObject, prop)) {
+                    existingObject[prop] = newObject[prop];
+                } else {
+                    mergeProperties(newObject[prop], existingObject[prop]);
+                }
+            }
+        };
+
+        const existingModel = window[name];
+
+        if (existingModel === undefined) {
+            engine.createJSModel(name, jsObject);
+            return;
+        }
+
+        mergeProperties(jsObject, existingModel);
     };
 
     engine.BindingsReady(VERSION[0], VERSION[1], VERSION[2], VERSION[3]);

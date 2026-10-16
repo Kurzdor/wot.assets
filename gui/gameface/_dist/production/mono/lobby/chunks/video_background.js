@@ -1,44 +1,82 @@
-import { r as e, j as a, m as s } from './vendor.js';
-import { ah as t, at as o, _ as r, af as c } from './lib.js';
-const i = 'VideoBackground_videoBackground_1a24cf5e',
-    n = 'VideoBackground_video_102f3645',
-    d = 1920,
-    l = 1080,
-    u = d / l,
-    f = ({ className: f, src: h, paused: m, rotated: p = !1, onPlay: g }) => {
-        const [j, y] = e.useState(1),
-            _ = e.useRef(null),
-            v = () => {
-                const e = c('rem');
-                let a = 1;
-                (e.width >= e.height * u ? (a = e.width / d) : e.height >= e.width / u && (a = e.height / l), y(a));
+import { r as o } from './rolldown-runtime.js';
+import { Ii as s, Ri as a, Wt as e, _i as t, jr as r, mi as i, vr as n } from './lib.js';
+import { t as c } from './vendor.js';
+import { C as _, w as l } from './sound.js';
+import { t as u } from './useCoverScale.js';
+var d = o(a()),
+    f = o(c()),
+    m = {
+        base: 'ArrowButton_f7f9243b',
+        base__disabled: 'ArrowButton_base__disabled_d61d5f87',
+        base__left: 'ArrowButton_base__left_e7ba36a0',
+        base__right: 'ArrowButton_base__right_930dd67a',
+        up: 'ArrowButton_up_3e008daf',
+        hover: 'ArrowButton_hover_379ad0d6',
+        glow: 'ArrowButton_glow_ace58acc',
+        iconLock: 'ArrowButton_iconLock_cfa3af1b',
+        iconLock__left: 'ArrowButton_iconLock__left_f5389f9c',
+        iconLock__right: 'ArrowButton_iconLock__right_4492202',
+    },
+    b = n(),
+    h = (function (o) {
+        return ((o.Left = 'left'), (o.Right = 'right'), o);
+    })({});
+function w({ className: o, type: s, disabled: a, onClick: e, showLock: t }) {
+    const [n, c] = (0, d.useState)(!1);
+    return (
+        (0, d.useEffect)(
+            () =>
+                r(() => {
+                    c(!1);
+                }, 600),
+            [n],
+        ),
+        (0, b.jsxs)('div', {
+            className: (0, f.default)(m.base, m[`base__${s}`], a && m.base__disabled, o),
+            onClick: () => {
+                n || a || ('left' === s ? i.sound(_) : i.sound(l), c(!0), e());
             },
-            w = () => {
-                g && g();
-            };
+            onMouseEnter: () => {
+                a || i.highlight();
+            },
+            children: [
+                (0, b.jsx)('div', { className: m.glow }),
+                (0, b.jsx)('div', { className: m.up }),
+                (0, b.jsx)('div', { className: m.hover }),
+                t && a && (0, b.jsx)('div', { className: (0, f.default)(m.iconLock, m[`iconLock__${s}`]) }),
+            ],
+        })
+    );
+}
+var p = 'VideoBackground_1a24cf5e',
+    v = 'VideoBackground_video_102f3645',
+    g = { width: 1920, height: 1080 },
+    j = ({ src: o, className: a, isPaused: r, isFlipped: i, onPlay: n }) => {
+        const c = (0, d.useRef)(null),
+            _ = u(g, 1);
+        function l() {
+            n && n();
+        }
         return (
-            e.useEffect(() => {
-                const e = _.current;
-                if (e) return m ? e.pause() : e.play();
-            }, [m, _]),
-            e.useEffect(() => {
-                (t(v), t(v), v());
-            }, []),
-            o.isLow()
+            (0, d.useEffect)(() => {
+                const o = c.current;
+                if (o) return r ? o.pause() : o.play();
+            }, [r, c]),
+            t.isLow()
                 ? null
-                : a.jsx('div', {
-                      className: s(i, f),
-                      style: { transform: `scale(${j}) ${p ? 'rotate(180deg)' : ''}` },
-                      children: a.jsx(r, {
-                          ref: _,
-                          onPlay: w,
-                          onTimeUpdate: w,
-                          src: h,
-                          className: n,
+                : (0, b.jsx)('div', {
+                      className: s(p, a),
+                      style: { transform: `scaleX(${i ? -_ : _}) scaleY(${_})` },
+                      children: (0, b.jsx)(e, {
+                          ref: c,
+                          onPlay: l,
+                          onTimeUpdate: l,
+                          src: o,
+                          className: v,
                           loop: !0,
                           autoplay: !0,
                       }),
                   })
         );
     };
-export { f as V };
+export { w as n, h as r, j as t };

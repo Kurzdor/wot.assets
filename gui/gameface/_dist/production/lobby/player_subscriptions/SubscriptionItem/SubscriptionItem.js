@@ -1029,7 +1029,7 @@
                         return '';
                     };
             },
-            693: (u, e, t) => {
+            988: (u, e, t) => {
                 t.d(e, { j2: () => Q });
                 var n = t(849),
                     i = t.n(n),
@@ -1217,30 +1217,23 @@
                 var w = t(995);
                 const h = {};
                 let g = (function (u) {
-                        return (
-                            (u.DayMonthNumeric = 'dayMonthNumeric'),
-                            (u.DayMonthFull = 'dayMonthFull'),
-                            (u.DayMonthFullTime = 'dayMonthFullTime'),
-                            (u.DayMonthAbbreviated = 'dayMonthAbbreviated'),
-                            (u.DayMonthAbbreviatedTime = 'dayMonthAbbreviatedTime'),
-                            (u.ShortDate = 'shortDate'),
-                            (u.ShortTime = 'ShortTime'),
-                            (u.ShortDateTime = 'ShortDateTime'),
-                            (u.FullDate = 'fullDate'),
-                            (u.FullTime = 'fullTime'),
-                            (u.FullDateTime = 'fullDateTime'),
-                            u
-                        );
-                    })({}),
-                    f = (function (u) {
-                        return (
-                            (u.WotSubscription = 'WotSubscription'),
-                            (u.WotProSubscription = 'WotProSubscription'),
-                            (u.ExternalSubscription = 'ExternalSubscription'),
-                            u
-                        );
-                    })({});
-                var y = t(850),
+                    return (
+                        (u.DayMonthNumeric = 'dayMonthNumeric'),
+                        (u.DayMonthFull = 'dayMonthFull'),
+                        (u.DayMonthFullTime = 'dayMonthFullTime'),
+                        (u.DayMonthAbbreviated = 'dayMonthAbbreviated'),
+                        (u.DayMonthAbbreviatedTime = 'dayMonthAbbreviatedTime'),
+                        (u.ShortDate = 'shortDate'),
+                        (u.ShortTime = 'ShortTime'),
+                        (u.ShortDateTime = 'ShortDateTime'),
+                        (u.FullDate = 'fullDate'),
+                        (u.FullTime = 'fullTime'),
+                        (u.FullDateTime = 'fullDateTime'),
+                        u
+                    );
+                })({});
+                var f = t(395),
+                    y = t(850),
                     S = t(873),
                     T = t(29),
                     x = t(150);
@@ -1614,47 +1607,48 @@
                         subscriptionType: r,
                         activeSubscriptionType: s,
                         isButtonHighlighted: o,
+                        hasProSubscription: E,
                     }) => {
-                        const E = {
+                        const F = {
                                 type: 'main',
                                 size: u === x.h.Full ? 'medium' : 'small',
                                 disabled: t,
                                 mixClass: M.activateButton,
                                 onClick: n,
                             },
-                            F = r === f.WotProSubscription,
-                            A = r === f.WotSubscription,
-                            c = (() => {
+                            A = r === f.P.WotProSubscription,
+                            c = r === f.P.WotSubscription,
+                            D = (() => {
                                 if (s === y.zw.Pro) {
-                                    if (A) return null;
-                                    if (F) return { text: Q.manage, type: 'ghost', onClick: e, showSpinner: !0 };
+                                    if (c) return null;
+                                    if (A) return { text: Q.manage, type: 'ghost', onClick: e, showSpinner: !0 };
                                 }
                                 if (s === y.zw.Core) {
-                                    if (A) return { text: Q.manage, type: 'ghost', onClick: e, showSpinner: !0 };
-                                    if (F) return { text: Q.upgrade, type: 'main', onClick: n };
+                                    if (c) return { text: Q.manage, type: 'ghost', onClick: e, showSpinner: !0 };
+                                    if (A) return { text: Q.upgrade, type: 'main', onClick: n };
                                 }
                                 if (s === y.zw.None) {
-                                    if (A && !o) return { text: Q.subscribe, type: 'ghost', onClick: n };
+                                    if (c && E) return { text: Q.subscribe, type: 'ghost', onClick: n };
                                     if (o) return { text: Q.subscribe, type: 'main', onClick: n };
-                                    if (F) return { text: Q.subscribe, type: 'main', onClick: n };
+                                    if (A) return { text: Q.subscribe, type: 'main', onClick: n };
                                 }
                                 return null;
                             })();
-                        return c
-                            ? A && s === y.zw.Pro
+                        return D
+                            ? c && s === y.zw.Pro
                                 ? null
                                 : a().createElement(
                                       'div',
                                       { className: M.ctaContainer_row },
                                       a().createElement(
                                           I,
-                                          Y({}, E, { onClick: c.onClick, type: c.type }),
-                                          (null == c ? void 0 : c.showSpinner) &&
-                                              A &&
+                                          Y({}, F, { onClick: D.onClick, type: D.type }),
+                                          (null == D ? void 0 : D.showSpinner) &&
+                                              c &&
                                               a().createElement('span', {
                                                   className: i()(M.spinner, t && M.spinner__visible),
                                               }),
-                                          null == c ? void 0 : c.text,
+                                          null == D ? void 0 : D.text,
                                       ),
                                   )
                             : null;
@@ -1727,56 +1721,57 @@
                         hasDepotRewardsToClaim: m,
                         activeSubscriptionType: p,
                         isButtonHighlighted: b,
+                        hasProSubscription: w,
                     }) => {
-                        const w = (0, s.useState)(!1),
-                            h = w[0],
-                            O = w[1],
-                            k = !_ && !m,
-                            P = B === y.w4.Active || B === y.w4.Cancelled,
-                            I = l === f.WotSubscription,
-                            L = l === f.WotProSubscription,
-                            U = P && ((C === y.zw.Core && I) || (C === y.zw.Pro && L)),
-                            z = null !== d ? 30 * d : null,
-                            H = i()(
+                        const h = (0, s.useState)(!1),
+                            O = h[0],
+                            k = h[1],
+                            P = !_ && !m,
+                            I = B === y.w4.Active || B === y.w4.Cancelled,
+                            L = l === f.P.WotSubscription,
+                            U = l === f.P.WotProSubscription,
+                            z = I && ((C === y.zw.Core && L) || (C === y.zw.Pro && U)),
+                            H = null !== d ? 30 * d : null,
+                            W = i()(
                                 M.base,
                                 r === x.h.OneThird && M.base__oneThird,
                                 r === x.h.TwoThirds && M.base__twoThirds,
-                                k && M.base__rewardsClaimed,
-                                L && M.base__pro,
+                                P && M.base__rewardsClaimed,
+                                U && M.base__pro,
                             ),
-                            W = (u) => {
-                                h ||
+                            $ = (u) => {
+                                O ||
                                     (u.stopPropagation(),
                                     (0, T.G)('yes1'),
                                     c({ subscriptionId: e }),
-                                    O(!0),
-                                    setTimeout(() => O(!1), 1e3));
+                                    k(!0),
+                                    setTimeout(() => k(!1), 1e3));
                             },
-                            $ = (u) => {
+                            j = (u) => {
                                 (u.stopPropagation(), (0, T.G)('yes1'), c({ subscriptionId: e }));
                             },
-                            j = (0, s.useCallback)(() => {
+                            G = (0, s.useCallback)(() => {
                                 (0, T.G)('highlight');
                             }, []);
                         return a().createElement(
                             'div',
                             {
-                                className: H,
+                                className: W,
                                 style: {
                                     '--imageUriSmall': `url(${o})`,
                                     '--imageUriMedium': `url(${F})`,
                                     '--imageUriLarge': `url(${A})`,
                                 },
                                 onClick: () => {
-                                    h ||
+                                    O ||
                                         ((0, T.G)('yes1'),
                                         D({ subscriptionId: e }),
-                                        O(!0),
-                                        setTimeout(() => O(!1), 1e3));
+                                        k(!0),
+                                        setTimeout(() => k(!1), 1e3));
                                 },
-                                onMouseEnter: j,
+                                onMouseEnter: G,
                             },
-                            U &&
+                            z &&
                                 a().createElement(
                                     a().Fragment,
                                     null,
@@ -1796,12 +1791,12 @@
                                                 { className: X[B].accentClassName },
                                                 B === y.w4.Active ? Q.active : Q.cancelled,
                                             ),
-                                            L &&
-                                                P &&
+                                            U &&
+                                                I &&
                                                 a().createElement(
                                                     'span',
                                                     { className: M.wotSubscriptionStatus_text },
-                                                    z,
+                                                    H,
                                                     R.strings.player_subscriptions.subscriptionItem.plan(),
                                                 ),
                                             a().createElement(E, {
@@ -1812,7 +1807,7 @@
                                         ),
                                     ),
                                 ),
-                            l === f.ExternalSubscription && a().createElement(K, { refreshTime: u }),
+                            l === f.P.ExternalSubscription && a().createElement(K, { refreshTime: u }),
                             r === x.h.Full &&
                                 a().createElement(
                                     'div',
@@ -1835,24 +1830,25 @@
                                 a().createElement(
                                     'div',
                                     { className: M.ctaContainer },
-                                    l === f.WotSubscription || l === f.WotProSubscription
+                                    l === f.P.WotSubscription || l === f.P.WotProSubscription
                                         ? a().createElement(Z, {
                                               subscriptionState: B,
-                                              buttonClickHandler: $,
-                                              isPendingRedirect: h,
-                                              redirectButtonClickHandler: W,
+                                              buttonClickHandler: j,
+                                              isPendingRedirect: O,
+                                              redirectButtonClickHandler: $,
                                               size: r,
                                               subscriptionType: l,
                                               wotTier: C,
                                               activeSubscriptionType: p,
                                               isButtonHighlighted: b,
+                                              hasProSubscription: w,
                                           })
                                         : a().createElement(N, {
-                                              buttonClickHandler: $,
+                                              buttonClickHandler: j,
                                               has3rdPartyRewardsToClaim: _,
-                                              isPendingRedirect: h,
+                                              isPendingRedirect: O,
                                               hasDepotRewardsToClaim: m,
-                                              redirectButtonClickHandler: W,
+                                              redirectButtonClickHandler: $,
                                               size: r,
                                           }),
                                 ),
@@ -1867,6 +1863,17 @@
                 t.d(e, { h: () => n });
                 let n = (function (u) {
                     return ((u.Full = 'Full'), (u.OneThird = 'OneThird'), (u.TwoThirds = 'TwoThirds'), u);
+                })({});
+            },
+            395: (u, e, t) => {
+                t.d(e, { P: () => n });
+                let n = (function (u) {
+                    return (
+                        (u.WotSubscription = 'WotSubscription'),
+                        (u.WotProSubscription = 'WotProSubscription'),
+                        (u.ExternalSubscription = 'ExternalSubscription'),
+                        u
+                    );
                 })({});
             },
             850: (u, e, t) => {
@@ -1950,6 +1957,6 @@
                 t = (self.webpackChunkgameface = self.webpackChunkgameface || []);
             (t.forEach(e.bind(null, 0)), (t.push = e.bind(null, t.push.bind(t))));
         })());
-    var __webpack_exports__ = __webpack_require__.O(void 0, [559], () => __webpack_require__(693));
+    var __webpack_exports__ = __webpack_require__.O(void 0, [559], () => __webpack_require__(988));
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

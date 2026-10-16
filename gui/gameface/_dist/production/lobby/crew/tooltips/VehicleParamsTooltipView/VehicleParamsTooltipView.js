@@ -829,6 +829,11 @@
                     const D = i().useRef(null);
                     var B;
                     return (
+                        (0, a.useLayoutEffect)(() => {
+                            const u = o.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (B = () => {
                             const u = D.current;
                             if (!u)
@@ -838,7 +843,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
-                                o.O.view.resize(e, t);
+                                (o.O.view.resize(e, t),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const n = window.getComputedStyle(u);
                                 o.O.view.setSidePaddingsRem({
                                     left: parseInt(n.getPropertyValue('padding-left'), 10),
@@ -1292,7 +1299,7 @@
                             ),
                         );
                     },
-                    U = (u) => {
+                    z = (u) => {
                         let e = u.children,
                             t = u.contentId,
                             n = u.args,
@@ -1423,7 +1430,7 @@
                             : e;
                         var y;
                     },
-                    z = ['children'];
+                    U = ['children'];
                 function q() {
                     return (
                         (q = Object.assign
@@ -1438,7 +1445,7 @@
                         q.apply(null, arguments)
                     );
                 }
-                const G = (u) => {
+                const $ = (u) => {
                         let e = u.children,
                             t = (function (u, e) {
                                 if (null == u) return {};
@@ -1449,9 +1456,9 @@
                                         t[n] = u[n];
                                     }
                                 return t;
-                            })(u, z);
+                            })(u, U);
                         return i().createElement(
-                            U,
+                            z,
                             q(
                                 {
                                     contentId:
@@ -1465,10 +1472,10 @@
                             e,
                         );
                     },
-                    H = ['children', 'body', 'header', 'note', 'alert', 'args'];
-                function $() {
+                    G = ['children', 'body', 'header', 'note', 'alert', 'args'];
+                function H() {
                     return (
-                        ($ = Object.assign
+                        (H = Object.assign
                             ? Object.assign.bind()
                             : function (u) {
                                   for (var e = 1; e < arguments.length; e++) {
@@ -1477,7 +1484,7 @@
                                   }
                                   return u;
                               }),
-                        $.apply(null, arguments)
+                        H.apply(null, arguments)
                     );
                 }
                 const K = R.views.common.tooltip_window.simple_tooltip_content,
@@ -1497,15 +1504,15 @@
                                         t[n] = u[n];
                                     }
                                 return t;
-                            })(u, H);
+                            })(u, G);
                         const A = (0, a.useMemo)(() => {
                             const u = Object.assign({}, E, { body: t, header: n, note: r, alert: o });
                             for (const e in u) void 0 === u[e] && delete u[e];
                             return u;
                         }, [o, t, n, r, E]);
                         return i().createElement(
-                            U,
-                            $(
+                            z,
+                            H(
                                 {
                                     contentId:
                                         ((F = null == E ? void 0 : E.hasHtmlContent),
@@ -1538,7 +1545,7 @@
                     const n = i().createElement('div', { className: t }, u);
                     if (e.header || e.body) return i().createElement(Y, e, n);
                     const r = e.contentId;
-                    return r ? i().createElement(U, Z({}, e, { contentId: r }), n) : i().createElement(G, e, n);
+                    return r ? i().createElement(z, Z({}, e, { contentId: r }), n) : i().createElement($, e, n);
                 };
                 var Q = t(1311);
                 const J = {
@@ -2084,23 +2091,23 @@
                     ju = 'default_cell_d2d2b',
                     Vu = 'default_title_ffe38',
                     Wu = 'Param_base_ffb95',
-                    Uu = (0, a.memo)(({ value: u }) => {
+                    zu = (0, a.memo)(({ value: u }) => {
                         const e = r()(Wu, ju);
                         return i().createElement(Iu, { classMix: e, text: u, justifyContent: Fu.FlexEnd });
                     }),
-                    zu = 'ParamSource_base_db603',
+                    Uu = 'ParamSource_base_db603',
                     qu = 'ParamSource_icon_e3858',
-                    Gu = 'ParamSource_base__enabled_eda62',
-                    Hu = 'ParamSource_asteriskIcon_b58f8',
-                    $u = 'ParamSource_sourceName_b9d57',
+                    $u = 'ParamSource_base__enabled_eda62',
+                    Gu = 'ParamSource_asteriskIcon_b58f8',
+                    Hu = 'ParamSource_sourceName_b9d57',
                     Ku = (0, a.memo)(({ icon: u, title: e, asteriskIcon: t, isEnabled: n }) => {
-                        const o = r()(zu, ju, n && Gu);
+                        const o = r()(Uu, ju, n && $u);
                         return i().createElement(
                             'div',
                             { className: o },
                             u && i().createElement('div', { className: qu, style: { backgroundImage: `url(${u})` } }),
-                            i().createElement('div', { className: $u }, e),
-                            t && i().createElement('div', { className: Hu, style: { backgroundImage: `url(${t})` } }),
+                            i().createElement('div', { className: Hu }, e),
+                            t && i().createElement('div', { className: Gu, style: { backgroundImage: `url(${t})` } }),
                         );
                     }),
                     Yu = 'Title_base_edc3d',
@@ -2119,7 +2126,7 @@
                     ue = (u) => i().createElement(Qu, { title: u.title }),
                     ee = (u) => i().createElement(Qu, { title: u, isPenalty: !0 }),
                     te = (u) => i().createElement(Qu, { title: u, isTitleVisible: !1 }),
-                    ne = (u) => i().createElement(Uu, u),
+                    ne = (u) => i().createElement(zu, u),
                     re = (u) => i().createElement(Ku, u),
                     oe = (u) => {
                         switch (u) {

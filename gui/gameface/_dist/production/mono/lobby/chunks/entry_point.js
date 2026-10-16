@@ -1,192 +1,216 @@
-import { _ as e, F as t, $ as s, D as o, j as n, f as a, r } from './vendor.js';
+import { r as e } from './rolldown-runtime.js';
 import {
-    dI as i,
-    dJ as c,
-    dK as l,
-    d,
-    dL as u,
-    dM as m,
-    i as p,
-    ba as f,
-    e as h,
-    u as x,
-    Z as g,
-    b5 as b,
-    j as y,
-    p as _,
+    Co as t,
+    J as o,
+    Ka as s,
+    Or as n,
+    So as r,
+    To as a,
+    Y as i,
+    Zn as c,
+    _i as l,
+    ar as d,
+    go as u,
+    hi as m,
+    mi as p,
+    pr as g,
+    ra as f,
+    vo as x,
+    wo as b,
+    yo as h,
 } from './lib.js';
-var v = ((e) => ((e.Common = 'common'), (e.Rare = 'rare'), (e.Epic = 'epic'), e))(v || {});
-class N extends i {
-    constructor(e, t) {
-        (super(), (this.root = e), (this.prefix = t));
-    }
-    readOr(e, t, s = 'silent') {
-        const o = c(this.prefix, e),
-            n = (function (e, t) {
-                const s = t.split('.');
-                if (window.R && window.R.sounds) {
-                    const t = s[s.length - 1];
-                    if (!t) return;
-                    const o = s.slice(0, -1).reduce((e, t) => {
-                        if ('object' == typeof e?.[t]) return e[t];
-                    }, e);
-                    if (!o) return;
-                    return 'function' == typeof o[t] ? o[t]() : void 0;
-                }
-                throw new Error('R class with images field is not defined');
-            })(this.root, o);
-        return void 0 === n ? ('silent' !== s && l(`Resource not found: ${o}`, s), t()) : n;
-    }
-    readOrEmpty(e, t = 'warn') {
-        return this.readOr(e, () => '', t);
-    }
-}
-const I = 'lootbox_images',
-    w = 'lootbox_sounds';
-(d.register(I, e(() => new u(window.R.images)).singleton()),
-    d.register(w, e(() => new N(window.R.sounds)).singleton()));
-const E = d.resolve(I),
-    O = d.resolve('videos'),
-    j = d.resolve(w),
-    $ = d.resolve('strings'),
-    C = (e, t) => {
+import { n as y, o as v, t as _ } from './vendor.js';
+var N = e(x()),
+    w = (function (e) {
+        return ((e.Common = 'common'), (e.Rare = 'rare'), (e.Epic = 'epic'), e);
+    })({});
+var E = class extends h {
+        root;
+        prefix;
+        constructor(e, t) {
+            (super(), (this.root = e), (this.prefix = t));
+        }
+        readOr(e, o, s = 'silent') {
+            const n = b(this.prefix, e),
+                r = (function (e, t) {
+                    const o = t.split('.');
+                    if (window.R && window.R.sounds) {
+                        const t = o[o.length - 1];
+                        if (!t) return;
+                        const s = o.slice(0, -1).reduce((e, t) => {
+                            if ('object' == typeof e?.[t]) return e[t];
+                        }, e);
+                        if (!s) return;
+                        return 'function' == typeof s[t] ? s[t]() : void 0;
+                    }
+                    throw new Error('R class with images field is not defined');
+                })(this.root, n);
+            return void 0 === r ? ('silent' !== s && t(`Resource not found: ${n}`, s), o()) : r;
+        }
+        readOrEmpty(e, t = 'warn') {
+            return this.readOr(e, () => '', t);
+        }
+    },
+    I = 'lootbox_images',
+    O = 'lootbox_sounds';
+(a.register(I, _(() => new r(window.R.images)).singleton()),
+    a.register(O, _(() => new E(window.R.sounds)).singleton()));
+var j = a.resolve(I),
+    $ = a.resolve('videos'),
+    C = a.resolve(O),
+    P = a.resolve('strings'),
+    M = (e, t) => {
         switch (e) {
             case R.images:
-                return E.readOrEmpty(t, 'silent');
-            case R.videos:
-                return O.readOrEmpty(t, 'silent');
-            case R.sounds:
                 return j.readOrEmpty(t, 'silent');
-            case R.strings:
+            case R.videos:
                 return $.readOrEmpty(t, 'silent');
+            case R.sounds:
+                return C.readOrEmpty(t, 'silent');
+            case R.strings:
+                return P.readOrEmpty(t, 'silent');
             default:
                 return '';
         }
-    };
-var P = ((e) => (
-        (e.EntryPoint = 'ENTRY_POINT'),
-        (e.InfoPage = 'INFO_PAGE'),
-        (e.Rewards = 'REWARDS'),
-        (e.HomeView = 'HOME_VIEW'),
-        e
-    ))(P || {}),
-    M = ((e) => (
-        (e.Videos = 'videos'),
-        (e.Images = 'images'),
-        (e.Texts = 'texts'),
-        (e.Sounds = 'sounds'),
-        (e.DynamicVideos = 'dynamicVideos'),
-        (e.DynamicImages = 'dynamicImages'),
-        (e.DynamicTexts = 'dynamicTexts'),
-        e
-    ))(M || {});
-(v.Rare, v.Epic);
-const T = {
-        ENTRY_POINT: {
-            icon: { emptyIconBrightness: 0.4, boxesIconBrightness: 0.4 },
-            shine: { opacity: { initial: 1, hover: 1 } },
-        },
-        HOME_VIEW: {
-            hasIdle: !0,
-            vignette: { isEnabled: !0, opacity: 0.4 },
-            hoverZone: { width: '38%', height: '39%', horizontalOffset: '30.8%', verticalOffset: '39%' },
-            backgroundColor: '#111',
-        },
-        COMMON: { guaranteed: { accent: 5, visibleAt: 10 } },
     },
-    k = {
-        DEFAULT_CONFIG: T,
+    T = (function (e) {
+        return (
+            (e.EntryPoint = 'ENTRY_POINT'),
+            (e.InfoPage = 'INFO_PAGE'),
+            (e.Rewards = 'REWARDS'),
+            (e.HomeView = 'HOME_VIEW'),
+            e
+        );
+    })({}),
+    k = (function (e) {
+        return (
+            (e.Videos = 'videos'),
+            (e.Images = 'images'),
+            (e.Texts = 'texts'),
+            (e.Sounds = 'sounds'),
+            (e.DynamicVideos = 'dynamicVideos'),
+            (e.DynamicImages = 'dynamicImages'),
+            (e.DynamicTexts = 'dynamicTexts'),
+            e
+        );
+    })({}),
+    A =
+        (w.Rare,
+        w.Epic,
+        {
+            ENTRY_POINT: {
+                icon: { emptyIconBrightness: 0.4, boxesIconBrightness: 0.4 },
+                shine: { opacity: { initial: 1, hover: 1 } },
+            },
+            HOME_VIEW: {
+                hasIdle: !0,
+                vignette: {
+                    isEnabled: !0,
+                    opacity: 0.4,
+                    backgroundImage:
+                        'linear-gradient(0deg, #000 0%, transparent 20%, transparent 80%, #000 100%), linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, transparent 30%, transparent 100%)',
+                },
+                hoverZone: { width: '38%', height: '39%', horizontalOffset: '30.8%', verticalOffset: '39%' },
+                backgroundColor: '#111',
+            },
+            COMMON: { guaranteed: { accent: 5, visibleAt: 10 } },
+        }),
+    B = {
+        DEFAULT_CONFIG: A,
         anniversaryCN: {
             ENTRY_POINT: { icon: { emptyIconBrightness: 0.2 } },
             HOME_VIEW: { hasIdle: !1 },
             COMMON: { guaranteed: { visibleAt: 5 } },
         },
-        retro: {
-            ENTRY_POINT: { icon: { emptyIconBrightness: 0.3, boxesIconBrightness: 0.3 } },
-            HOME_VIEW: { hoverZone: { width: '35%', height: '45%', horizontalOffset: '30.8%', verticalOffset: '35%' } },
+        newYearPremium: {
+            ENTRY_POINT: {
+                icon: { emptyIconBrightness: 0.3, boxesIconBrightness: 0.3 },
+                shine: { opacity: { initial: 0.4, hover: 0.8 } },
+            },
+            HOME_VIEW: { vignette: { isEnabled: !0, opacity: 0.8 } },
+            COMMON: { guaranteed: { accent: 5, visibleAt: 0 } },
         },
     },
-    B = (e, t) => {
-        const s = (e, t) => {
-            const o = { ...e };
-            for (const n in o)
-                t && n in t && ('object' == typeof o[n] ? (o[n] = s(o[n], t[n] ?? o[n])) : (o[n] = t[n] ?? o[n]));
-            return o;
+    L = (e, t) => {
+        const o = (e, t) => {
+            const s = { ...e };
+            for (const n in s)
+                t && n in t && ('object' == typeof s[n] ? (s[n] = o(s[n], t[n] ?? s[n])) : (s[n] = t[n] ?? s[n]));
+            return s;
         };
-        return s(e, t);
+        return o(e, t);
     };
-function A(e, t) {
-    const s = k[m(e)],
-        o = s?.COMMON ? B(T.COMMON, s.COMMON) : T.COMMON;
-    if (!t) return o;
-    const n = s ? B(T[t], s[t]) : T[t],
-        a = Object.keys(n).filter((e) => e in o);
-    if (a.length > 0)
+function S(e, t) {
+    const o = B[d(e)],
+        s = o?.COMMON ? L(A.COMMON, o.COMMON) : A.COMMON;
+    if (!t) return s;
+    const n = o ? L(A[t], o[t]) : A[t],
+        r = Object.keys(n).filter((e) => e in s);
+    if (r.length > 0)
         throw new Error(
-            `[getConfig] Name conflict in "${e}.${String(t)}": keys [${a.join(', ')}] exist in both componentConfig and commonConfig.`,
+            `[getConfig] Name conflict in "${e}.${String(t)}": keys [${r.join(', ')}] exist in both componentConfig and commonConfig.`,
         );
-    return { ...n, ...o };
+    return { ...n, ...s };
 }
-const L = (e, t) => {
-        let s = e;
-        const o = t.split('.');
-        for (const n of o) {
-            if (!s) break;
-            const e = s.$dyn(n);
-            (e && 'object' != typeof e) || (s = e);
+var V = (e, t) => {
+        let o = e;
+        const s = t.split('.');
+        for (const n of s) {
+            if (!o) break;
+            const e = o.$dyn(n);
+            (e && 'object' != typeof e) || (o = e);
         }
-        return s;
+        return o;
     },
-    V = ({ type: e, filePath: t, eventName: s }, o = !1) => {
+    G = ({ type: e, filePath: t, eventName: o }, s = !1) => {
         const {
             parent: n,
-            path: a,
-            defaultPath: r,
-        } = ((e, t, s) => {
-            const o = 'gui.maps.icons.lootBoxSystem.customizable',
+            path: r,
+            defaultPath: a,
+        } = ((e, t, o) => {
+            const s = 'gui.maps.icons.lootBoxSystem.customizable',
                 n = 'lootbox.customizable';
             switch (e) {
-                case M.Images:
-                case M.DynamicImages:
-                    return { parent: R.images, path: `${o}.${s}.${t}`, defaultPath: `${o}.default.${t}` };
-                case M.Videos:
-                case M.DynamicVideos:
-                    return { parent: R.videos, path: `${n}.${s}.${t}`, defaultPath: `${n}.default.${t}` };
-                case M.Texts:
-                case M.DynamicTexts:
-                    return { parent: R.strings, path: `lootbox_${s}.${t}`, defaultPath: `lootbox_system.${t}` };
-                case M.Sounds:
-                    return { parent: R.sounds, path: `${t}_${s}`, defaultPath: `${t}` };
+                case k.Images:
+                case k.DynamicImages:
+                    return { parent: R.images, path: `${s}.${o}.${t}`, defaultPath: `${s}.default.${t}` };
+                case k.Videos:
+                case k.DynamicVideos:
+                    return { parent: R.videos, path: `${n}.${o}.${t}`, defaultPath: `${n}.default.${t}` };
+                case k.Texts:
+                case k.DynamicTexts:
+                    return { parent: R.strings, path: `lootbox_${o}.${t}`, defaultPath: `lootbox_system.${t}` };
+                case k.Sounds:
+                    return { parent: R.sounds, path: `${t}_${o}`, defaultPath: `${t}` };
                 default:
                     return (
                         console.error(`Unreachable code: unknown ResourceType ${e}`),
                         { parent: '', path: '', defaultPath: '' }
                     );
             }
-        })(e, t, s);
-        return n ? { eventResource: o ? L(n, a) : C(n, a), defaultResource: o ? L(n, r) : C(n, r) } : null;
+        })(e, t, o);
+        return n ? { eventResource: s ? V(n, r) : M(n, r), defaultResource: s ? V(n, a) : M(n, a) } : null;
     },
-    D = (e, t, s) =>
-        Object.keys(e).reduce((o, n) => {
-            const a = e[n];
-            return (
-                void 0 !== a &&
-                    (o[n] = (({ type: e, filePath: t, eventName: s }) => {
-                        const o = V({ type: e, filePath: t, eventName: s });
-                        if (!o || (!o.eventResource && !o.defaultResource))
-                            return (console.info(`Unreachable code: unknown resource (${e} ${s} ${t})`), '');
-                        const { eventResource: n, defaultResource: a } = o;
-                        return n || a;
-                    })({ type: t, filePath: a, eventName: s })),
-                o
-            );
+    D = ({ type: e, filePath: t, eventName: o }) => {
+        const s = G({ type: e, filePath: t, eventName: o });
+        if (!s || (!s.eventResource && !s.defaultResource))
+            return (console.info(`Unreachable code: unknown resource (${e} ${o} ${t})`), '');
+        const { eventResource: n, defaultResource: r } = s;
+        return n || r;
+    },
+    z = (e, t) =>
+        Object.keys(e).reduce((o, s) => {
+            const n = e[s];
+            return n
+                ? ((o[s] = ((e, t, o) =>
+                      Object.keys(e).reduce((s, n) => {
+                          const r = e[n];
+                          return (void 0 !== r && (s[n] = D({ type: t, filePath: r, eventName: o })), s);
+                      }, {}))(n, s, t)),
+                  o)
+                : o;
         }, {}),
-    G = (e, t) =>
-        Object.keys(e).reduce((s, o) => {
-            const n = e[o];
-            return n ? ((s[o] = D(n, o, t)), s) : s;
-        }, {}),
-    S = {
+    H = {
         images: {
             iconEmpty: 'entry_point.lootboxEmpty',
             iconGold: 'entry_point.lootboxGold',
@@ -195,65 +219,66 @@ const L = (e, t) => {
         videos: { glow: 'entryPoint.glow' },
         texts: { boxes: 'entryPoint.boxes', maxBoxesCount: 'entryPoint.maxBoxesCount', boxesCount: 'entryPoint.count' },
         sounds: { entryHover: 'gui_lb_icon_hover' },
-    };
-var z = ((e) => ((e.Boxes = 'boxes'), (e.Empty = 'empty'), e))(z || {});
-const [H, W] = p()(
+    },
+    Y = (function (e) {
+        return ((e.Boxes = 'boxes'), (e.Empty = 'empty'), e);
+    })({}),
+    [W, F] = g()(
         ({ observableModel: e }) => {
-            const o = e.object().get().eventName,
-                n = { root: e.object(), style: t.box(A(o, P.EntryPoint)), resources: t.box(G(S, o)) },
-                a = s(() => {
-                    const { boxesCount: e } = n.root.get();
+            const t = e.object().get().eventName,
+                o = { root: e.object(), style: f.box(S(t, T.EntryPoint)), resources: f.box(z(H, t)) },
+                s = y(() => {
+                    const { boxesCount: e } = o.root.get();
                     return e ? 'boxes' : 'empty';
                 });
-            return { ...n, computes: { getState: a } };
+            return { ...o, computes: { getState: s } };
         },
         ({ externalModel: e }) => ({ showLanding: e.createCallbackNoArgs('onEntryClick') }),
     ),
-    F = 'video';
-(v.Common, v.Common, v.Rare, v.Rare);
-const Y = (e) => !!e && !e.includes('customizable/default'),
-    U = (e, t) => {
-        return ((s = e), Y((o = t)) ? o : Y(s) ? s : o || s);
-        var s, o;
+    U = (e) => !!e && !e.includes('customizable/default'),
+    Z = (e, t) => {
+        return ((o = e), U((s = t)) ? s : U(o) ? o : s || o);
+        var o, s;
     },
-    Z = 'Glow_2571a3a9',
-    J = 'Glow_base__hover_bba0fce1',
-    K = 'Glow_video_2d774833',
-    q = 'Glow_img_90334d0',
-    Q = o(function ({ hover: e = !1, className: t }) {
-        const { model: s } = W(),
-            { images: o, videos: r } = s.resources.get(),
-            i = s.style.get(),
-            c = ((e, t) => {
-                const s = U(e, t),
-                    o = s.split(':')[0];
-                return { src: s, type: o };
-            })(o.shine, r.glow);
-        return n.jsx('div', {
-            className: a(Z, e && J, t),
-            style: { '--opacity-initial': i.shine.opacity.initial, '--opacity-hover': i.shine.opacity.hover },
+    J = 'video',
+    K = (w.Common, w.Common, w.Rare, w.Rare, 'Glow_2571a3a9'),
+    q = 'Glow_base__hover_bba0fce1',
+    Q = 'Glow_video_2d774833',
+    X = 'Glow_img_90334d0',
+    ee = m(),
+    te = v(function ({ hover: e = !1, className: t }) {
+        const { model: s } = F(),
+            { images: n, videos: r } = s.resources.get(),
+            a = s.style.get(),
+            i = ((e, t) => {
+                const o = Z(e, t);
+                return { src: o, type: o.split(':')[0] };
+            })(n.shine, r.glow);
+        return (0, ee.jsx)('div', {
+            className: u(K, e && q, t),
+            style: { '--opacity-initial': a.shine.opacity.initial, '--opacity-hover': a.shine.opacity.hover },
             children:
-                c.type === F
-                    ? n.jsx(f, { loop: !0, autoplay: !0, className: K, src: c.src })
-                    : n.jsx('div', { className: q, style: { backgroundImage: `url(${c.src})` } }),
+                i.type === J
+                    ? (0, ee.jsx)(o, { loop: !0, autoplay: !0, className: Q, src: i.src })
+                    : (0, ee.jsx)('div', { className: X, style: { backgroundImage: `url(${i.src})` } }),
         });
     }),
-    X = 'Icon_4b931f4c';
-function ee({ image: e, brightness: t, disabled: s, className: o, ...r }) {
-    return n.jsx('div', {
-        ...r,
-        className: a(X, o),
-        style: { backgroundImage: `url(${e})`, filter: s ? 'brightness(.8) saturate(.5)' : `brightness(${t})` },
+    oe = 'Icon_4b931f4c';
+function se({ image: e, brightness: t, disabled: o, className: s, ...n }) {
+    return (0, ee.jsx)('div', {
+        ...n,
+        className: u(oe, s),
+        style: { backgroundImage: `url(${e})`, filter: o ? 'brightness(.8) saturate(.5)' : `brightness(${t})` },
     });
 }
-const te = 'Counter_e7ec423c';
-function se({ count: e, text: t, maxText: s, className: o }) {
-    return n.jsx('div', {
-        className: a(te, o),
-        children: e < 1e3 ? n.jsx(h, { text: t, params: { count: e }, upgradeLegacy: !0 }) : s,
+var ne = 'Counter_e7ec423c';
+function re({ count: e, text: t, maxText: o, className: s }) {
+    return (0, ee.jsx)('div', {
+        className: u(ne, s),
+        children: e < 1e3 ? (0, ee.jsx)(c, { text: t, params: { count: e }, upgradeLegacy: !0 }) : o,
     });
 }
-const oe = {
+var ae = {
         base: 'Info_7c1194ee',
         additional: 'Info_additional_da3079c4',
         additional__center: 'Info_additional__center_5fc14bcf',
@@ -261,79 +286,83 @@ const oe = {
         text: 'Info_text_2141a424',
         timerLabel: 'Info_timerLabel_7982abd0',
     },
-    ne = o(function ({ className: e }) {
-        const { model: t } = W(),
-            { breakpoint: s } = x(),
-            { texts: o } = t.resources.get(),
-            { boxesCount: r, eventExpireTime: i } = t.root.get(),
-            c = t.computes.getState(),
-            l = s.weight > g.small.weight ? b.size.x32x32 : b.size.x24x24,
-            d = 259200 >= i,
-            u = d || c === z.Empty;
-        return n.jsxs('div', {
-            className: a(oe.base, e),
+    ie = v(function ({ className: e }) {
+        const { model: t } = F(),
+            { breakpoint: o } = p(),
+            { texts: s } = t.resources.get(),
+            { boxesCount: n, eventExpireTime: r } = t.root.get(),
+            a = t.computes.getState(),
+            c = o.weight > l.small.weight ? i.size.x32x32 : i.size.x24x24,
+            d = 259200 >= r,
+            m = d || a === Y.Empty;
+        return (0, ee.jsxs)('div', {
+            className: u(ae.base, e),
             children: [
-                u &&
-                    n.jsx('div', {
-                        className: a(oe.additional, c !== z.Boxes && oe.additional__center),
+                m &&
+                    (0, ee.jsx)('div', {
+                        className: u(ae.additional, a !== Y.Boxes && ae.additional__center),
                         children: d
-                            ? n.jsx(b, { className: oe.timer, classNames: { label: oe.timerLabel }, start: i, size: l })
-                            : n.jsx('div', { className: oe.text, children: o.boxes }),
+                            ? (0, ee.jsx)(i, {
+                                  className: ae.timer,
+                                  classNames: { label: ae.timerLabel },
+                                  start: r,
+                                  size: c,
+                              })
+                            : (0, ee.jsx)('div', { className: ae.text, children: s.boxes }),
                     }),
-                c === z.Boxes &&
-                    n.jsx(se, { className: oe.counter, maxText: o.maxBoxesCount, count: r, text: o.boxesCount }),
+                a === Y.Boxes &&
+                    (0, ee.jsx)(re, { className: ae.counter, maxText: s.maxBoxesCount, count: n, text: s.boxesCount }),
             ],
         });
     }),
-    ae = 'App_bdab25ef',
-    re = 'App_content_3d13e94c',
-    ie = 'App_base__disabled_0',
-    ce = 'App_glow_29445b0',
-    le = 'App_wrapper_4cc053c3',
-    de = 'App_info_be3fbaea',
-    ue = 'App_icon_879c8615';
-const me = o(function () {
-    const e = d.resolve('sounds'),
-        t = d.resolve('aliases'),
-        s = d.resolve('views'),
-        o = y({
+    ce = 'App_bdab25ef',
+    le = 'App_content_3d13e94c',
+    de = 'App_base__disabled_0',
+    ue = 'App_glow_29445b0',
+    me = 'App_wrapper_4cc053c3',
+    pe = 'App_info_be3fbaea',
+    ge = 'App_icon_879c8615';
+var fe = v(function () {
+    const e = a.resolve('sounds'),
+        t = a.resolve('aliases'),
+        o = a.resolve('views'),
+        r = n({
             resId: t.read((e) => e.hangar.shared.LootboxEntryPoint('resId')),
-            contentId: s.read((e) => e.mono.lootbox.tooltips.entry_point('resId')),
+            contentId: o.read((e) => e.mono.lootbox.tooltips.entry_point('resId')),
         }),
-        [i, c] = r.useState(!1),
-        { model: l, controls: u } = W(),
+        [i, c] = (0, N.useState)(!1),
+        { model: l, controls: d } = F(),
         { isEnabled: m } = l.root.get(),
         p = l.computes.getState(),
-        { images: f, videos: h, sounds: x } = l.resources.get(),
-        g = l.style.get(),
-        b = i ? 1 + g.icon[`${p}IconBrightness`] : 1,
-        v = p === z.Empty ? f.iconEmpty : f.iconGold;
-    return n.jsx('div', {
-        className: a(ae, !m && ie),
-        children: n.jsx('div', {
-            className: re,
-            ...o,
-            children: n.jsxs('div', {
-                className: le,
+        { images: g, videos: f, sounds: x } = l.resources.get(),
+        b = l.style.get(),
+        h = i ? 1 + b.icon[`${p}IconBrightness`] : 1,
+        y = p === Y.Empty ? g.iconEmpty : g.iconGold;
+    return (0, ee.jsx)('div', {
+        className: u(ce, !m && de),
+        children: (0, ee.jsx)('div', {
+            className: le,
+            ...r,
+            children: (0, ee.jsxs)('div', {
+                className: me,
                 onClick: function () {
-                    (e.play('yes1'), u.showLanding());
+                    (e.play('yes1'), d.showLanding());
                 },
                 onMouseEnter: function () {
-                    (_.sound(x.entryHover), c(!0));
+                    (s.sound(x.entryHover), c(!0));
                 },
                 onMouseLeave: () => c(!1),
                 children: [
-                    n.jsx(ne, { className: de }),
-                    p === z.Boxes && m && n.jsx(Q, { className: ce, hover: i }),
-                    n.jsx(ee, { disabled: !m, image: v, brightness: b, className: ue }),
+                    (0, ee.jsx)(ie, { className: pe }),
+                    p === Y.Boxes && m && (0, ee.jsx)(te, { className: ue, hover: i }),
+                    (0, ee.jsx)(se, { disabled: !m, image: y, brightness: h, className: ge }),
                 ],
             }),
         }),
     });
 });
-function pe() {
-    const e = d.resolve('aliases').read((e) => e.hangar.shared.LootboxEntryPoint('resId')),
-        t = r.useMemo(() => ({ rootId: e }), [e]);
-    return n.jsx(H, { options: t, children: n.jsx(me, {}) });
+function xe() {
+    const e = a.resolve('aliases').read((e) => e.hangar.shared.LootboxEntryPoint('resId'));
+    return (0, ee.jsx)(W, { options: (0, N.useMemo)(() => ({ rootId: e }), [e]), children: (0, ee.jsx)(fe, {}) });
 }
-export { pe as default };
+export { xe as default };

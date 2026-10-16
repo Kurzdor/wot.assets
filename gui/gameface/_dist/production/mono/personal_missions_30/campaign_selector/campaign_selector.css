@@ -159,6 +159,19 @@
 } /* stylelint-disable selector-no-qualifying-type */
 /* stylelint-disable selector-no-qualifying-type */
 /* stylelint-disable selector-no-qualifying-type */
+.Threads_8f7c55a4 {
+    width: 100%;
+    height: 100%;
+}
+
+.Threads_image_bd974d01 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} /* stylelint-disable selector-no-qualifying-type */
+/* stylelint-disable selector-no-qualifying-type */
+/* stylelint-disable selector-no-qualifying-type */
 .OperationCard_f80d92be {
     position: relative;
 }
@@ -264,7 +277,7 @@
     left: 105rem;
 }
 
-.OperationCard_name_229e88ee {
+.OperationCard_name_28d35292 {
     color: #1e1a17;
     font-size: 15rem;
     font-weight: 500;
@@ -272,71 +285,71 @@
     bottom: 46rem;
     left: 50%;
     transform: translateX(-50%);
-    transition: color 200ms ease-in-out 100ms;
+    transition: opacity 200ms ease-in-out;
 }
-.mediaMedium .OperationCard_name_229e88ee {
+.mediaMedium .OperationCard_name_28d35292 {
     font-size: 18rem;
     bottom: 56rem;
     left: 103rem;
 }
-.mediaLarge .OperationCard_name_229e88ee {
+.mediaLarge .OperationCard_name_28d35292 {
     font-size: 22rem;
     bottom: 67rem;
     left: 122rem;
 }
-.mediaExtraLarge .OperationCard_name_229e88ee {
+.mediaExtraLarge .OperationCard_name_28d35292 {
     font-size: 26rem;
     bottom: 91rem;
     left: 161rem;
 }
-.OperationCard_base__third_dcb7ac10 .OperationCard_name_229e88ee {
+.OperationCard_base__third_dcb7ac10 .OperationCard_name_28d35292 {
     bottom: 11rem;
     left: 74rem;
 }
-.mediaMedium .OperationCard_base__third_dcb7ac10 .OperationCard_name_229e88ee {
+.mediaMedium .OperationCard_base__third_dcb7ac10 .OperationCard_name_28d35292 {
     bottom: 14rem;
     left: 90rem;
 }
-.mediaLarge .OperationCard_base__third_dcb7ac10 .OperationCard_name_229e88ee {
+.mediaLarge .OperationCard_base__third_dcb7ac10 .OperationCard_name_28d35292 {
     bottom: 17rem;
     left: 109rem;
 }
-.mediaExtraLarge .OperationCard_base__third_dcb7ac10 .OperationCard_name_229e88ee {
+.mediaExtraLarge .OperationCard_base__third_dcb7ac10 .OperationCard_name_28d35292 {
     bottom: 26rem;
     left: 143rem;
 }
-.OperationCard_base__light_dcb7ac10 .OperationCard_name_229e88ee {
-    color: #3c3732;
+.OperationCard_base__light_dcb7ac10 .OperationCard_name_28d35292 {
+    opacity: 0.75;
 }
-.OperationCard_base__active_dcb7ac10.OperationCard_base__firstTwo_dcb7ac10 .OperationCard_name_229e88ee {
+.OperationCard_base__active_dcb7ac10.OperationCard_base__firstTwo_dcb7ac10 .OperationCard_name_28d35292 {
     bottom: 29rem;
 }
-.mediaMedium .OperationCard_base__active_dcb7ac10.OperationCard_base__firstTwo_dcb7ac10 .OperationCard_name_229e88ee {
+.mediaMedium .OperationCard_base__active_dcb7ac10.OperationCard_base__firstTwo_dcb7ac10 .OperationCard_name_28d35292 {
     bottom: 36rem;
     left: 103rem;
 }
-.mediaLarge .OperationCard_base__active_dcb7ac10.OperationCard_base__firstTwo_dcb7ac10 .OperationCard_name_229e88ee {
+.mediaLarge .OperationCard_base__active_dcb7ac10.OperationCard_base__firstTwo_dcb7ac10 .OperationCard_name_28d35292 {
     bottom: 43rem;
     left: 122rem;
 }
 .mediaExtraLarge
     .OperationCard_base__active_dcb7ac10.OperationCard_base__firstTwo_dcb7ac10
-    .OperationCard_name_229e88ee {
+    .OperationCard_name_28d35292 {
     bottom: 60rem;
     left: 159rem;
 }
-.OperationCard_base__active_dcb7ac10.OperationCard_base__third_dcb7ac10 .OperationCard_name_229e88ee {
+.OperationCard_base__active_dcb7ac10.OperationCard_base__third_dcb7ac10 .OperationCard_name_28d35292 {
     left: 73rem;
 }
-.mediaMedium .OperationCard_base__active_dcb7ac10.OperationCard_base__third_dcb7ac10 .OperationCard_name_229e88ee {
+.mediaMedium .OperationCard_base__active_dcb7ac10.OperationCard_base__third_dcb7ac10 .OperationCard_name_28d35292 {
     bottom: 14rem;
     left: 90rem;
 }
-.mediaLarge .OperationCard_base__active_dcb7ac10.OperationCard_base__third_dcb7ac10 .OperationCard_name_229e88ee {
+.mediaLarge .OperationCard_base__active_dcb7ac10.OperationCard_base__third_dcb7ac10 .OperationCard_name_28d35292 {
     bottom: 17rem;
     left: 108rem;
 }
-.mediaExtraLarge .OperationCard_base__active_dcb7ac10.OperationCard_base__third_dcb7ac10 .OperationCard_name_229e88ee {
+.mediaExtraLarge .OperationCard_base__active_dcb7ac10.OperationCard_base__third_dcb7ac10 .OperationCard_name_28d35292 {
     bottom: 26rem;
     left: 143rem;
 }
@@ -480,11 +493,10 @@
     position: relative;
 }
 
-.Campaign_threads_d288be34 {
+.Campaign_threads_204a77c9 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
 }
 
 .Campaign_arrow_7ed28fa8,

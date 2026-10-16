@@ -960,16 +960,15 @@
     font-size: 46rem;
 }
 
-.Card_linkButton_b81db4a4 {
+.Card_linkButton_e48299f6 {
     display: flex;
     align-self: flex-start;
-    width: fit-content;
     transform: translateY(-7rem);
 }
-.mediaLarge .Card_linkButton_b81db4a4 {
+.mediaLarge .Card_linkButton_e48299f6 {
     transform: translateY(-34rem);
 }
-.mediaExtraLarge .Card_linkButton_b81db4a4 {
+.mediaExtraLarge .Card_linkButton_e48299f6 {
     transform: translateY(-42rem);
 }
 @keyframes DefaultTab_fadeInWithScale_e2f32c0d {

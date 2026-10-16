@@ -829,6 +829,11 @@
                     const d = a().useRef(null);
                     var D;
                     return (
+                        (0, i.useLayoutEffect)(() => {
+                            const u = o.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (D = () => {
                             const u = d.current;
                             if (!u)
@@ -838,7 +843,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
-                                o.O.view.resize(e, t);
+                                (o.O.view.resize(e, t),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const n = window.getComputedStyle(u);
                                 o.O.view.setSidePaddingsRem({
                                     left: parseInt(n.getPropertyValue('padding-left'), 10),
@@ -1313,23 +1320,23 @@
                             e
                         );
                     },
-                    Y = (u, e, t, n) => {
+                    $ = (u, e, t, n) => {
                         let r = e.exec(u),
                             o = 0;
                         for (; r;) (o !== r.index && t(u.slice(o, r.index)), n(r), (o = e.lastIndex), (r = e.exec(u)));
                         o !== u.length && t(u.slice(o));
                     },
-                    $ = new RegExp('[฀-๿][ัำ-ฺ็-๎]*|[^฀-๿]', 'gu'),
+                    Y = new RegExp('[฀-๿][ัำ-ฺ็-๎]*|[^฀-๿]', 'gu'),
                     Z = (u) => {
                         const e = [];
                         return (
-                            Y(
+                            $(
                                 u,
                                 /\S\s+/g,
                                 (u) => {
                                     var t;
                                     'th' === R.strings.settings.LANGUAGE_CODE().toLowerCase()
-                                        ? e.push(...((t = u), t.match($) || []))
+                                        ? e.push(...((t = u), t.match(Y) || []))
                                         : e.push(...u.split(''));
                                 },
                                 (u) => {
@@ -1343,7 +1350,7 @@
                         ? (u) => {
                               const e = [];
                               return (
-                                  Y(
+                                  $(
                                       u,
                                       /[^a-zA-Z0-9]+/g,
                                       (u) => {
@@ -1371,7 +1378,7 @@
                     Q = (u, e = '', t) => {
                         const n = [];
                         return (
-                            Y(
+                            $(
                                 u,
                                 /(\n+|[\xa0\ufeff]+)/g,
                                 (u) => {
@@ -1411,7 +1418,7 @@
                                 .replace(/(.)(、|。|，|ー)/g, '$1\ufeff$2')
                                 .replace(/\d+(?:[ \-.,]\d+)* ?%?/g, (u) => u.split('').join('\ufeff'));
                         return (
-                            Y(
+                            $(
                                 o,
                                 /(?:%\(|{)(.*?)[)}][sd]?/g,
                                 (u) => {
@@ -1457,7 +1464,7 @@
                             ((u, e, t) => {
                                 const n = [];
                                 return (
-                                    Y(
+                                    $(
                                         u,
                                         /(?:%\(|{)(\w*)(?:_[Oo]pen|_Start)(?:\)s|})([\s\S]*?)(?:%\(|{)\w*(?:_[Cc]lose|_End)(?:\)s|})(\s*)/g,
                                         (u) => {

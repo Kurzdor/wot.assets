@@ -1,0 +1,29 @@
+import { tt as t } from './lib.js';
+import { n as A } from './enums.js';
+var r = 'operationId',
+    s = 'campaignsState',
+    L = (function (t) {
+        return (
+            (t.FIRST_TWO = 'firstTwo'),
+            (t.THIRD = 'third'),
+            (t.COMPLETED_WITH_HONOR = 'completedWithHonor'),
+            (t.LOCKED = 'locked'),
+            t
+        );
+    })({}),
+    a = {
+        [A.AVAILABLE]: A.AVAILABLE,
+        [A.ACTIVE]: A.AVAILABLE,
+        [A.COMPLETED]: A.AVAILABLE,
+        [A.COMPLETED_WITH_HONORS]: A.AVAILABLE,
+        [A.UNAVAILABLE]: A.UNAVAILABLE,
+        [A.LOCKED]: A.UNAVAILABLE,
+    },
+    i = ['first', 'second', 'third', 'fourth'],
+    o = { left: 'left', right: 'right' },
+    E = { light: 'light', dark: 'dark' };
+function I(t) {
+    return t < 2 ? L.FIRST_TWO : L.THIRD;
+}
+var n = { lightsOn: t('pm_lobby_lights_on') };
+export { a, L as c, E as i, r as l, o as n, n as o, I as r, s, i as t };

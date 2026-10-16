@@ -566,6 +566,24 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     height: 31rem;
 }
 
+.FormatText_base_f27a4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.WarningText_base_b769d {
+    display: flex;
+    color: #ee7000;
+    text-align: center;
+}
+
+.WarningText_alertIcon_a756c {
+    width: 16rem;
+    height: 16rem;
+    margin: 4rem 6rem 0 0;
+    background: url('R.images.gui.maps.icons.library.alertIcon') no-repeat 50% / contain;
+}
+
 .Arrow_base_b4621 {
     display: flex;
     align-self: center;
@@ -1559,19 +1577,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     overflow-wrap: normal;
 }
 
-.WarningText_base_b769d {
-    display: flex;
-    color: #ee7000;
-    text-align: center;
-}
-
-.WarningText_alertIcon_a756c {
-    width: 16rem;
-    height: 16rem;
-    margin: 4rem 6rem 0 0;
-    background: url('R.images.gui.maps.icons.library.alertIcon') no-repeat 50% / contain;
-}
-
 .Warning_base_dcec9 {
     color: #ee7000;
     font-size: 16rem;
@@ -1597,10 +1602,6 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     background: url('R.images.gui.maps.icons.library.XpIcon_1') center / contain no-repeat;
     position: relative;
     top: 3rem;
-}
-
-.Warning_oneWay_d07a2 {
-    white-space: pre;
 }
 
 .Content_base_aa662 {
@@ -1685,22 +1686,23 @@ This bug is reproduced in Google Chrome 81.0.4044.113
     left: 50%;
     transform: translateX(-50%);
 }
-.Content_xpLoseBind_b1f45 {
-    color: #c9c9b6;
-    font-size: 14rem;
+.Content_warningBase_d1e49 {
+    color: #ee7000;
+    font-size: 16rem;
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 1.25;
     display: flex;
-    position: relative;
-    top: 1rem;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
-.Content_xpLoseIcon_bcb63 {
+.Content_oneWay_e0661 {
+    white-space: pre;
+}
+.Content_alertIcon_a58ca {
     width: 16rem;
     height: 16rem;
-    display: flex;
-    background: url('R.images.gui.maps.icons.library.XpIcon_1') center / contain no-repeat;
-    position: relative;
-    top: 2rem;
+    margin: 4rem 6rem 0 0;
+    background: url('R.images.gui.maps.icons.library.alertIcon') no-repeat 50% / contain;
 }
 .Content_input_fe595 {
     margin-top: 78rem;

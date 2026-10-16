@@ -1,32 +1,31 @@
-import './vendor.js';
-import { K as s, O as n, L as o, N as t } from './lib.js';
-const r = (s, n, t) => {
+import { $ as s, Q as n, w as o } from './lib.js';
+var t = (s, o, t) => {
         const r = s.days,
             u = s.hours,
             i = s.minutes;
         return r >= 1
             ? 0 === u
-                ? o(R.strings.sm_lobby.countdown.days(), { days: r })
-                : o(R.strings.sm_lobby.countdown.daysHours(), { days: r, hours: u })
-            : n && u < 1 && i < 5
-              ? o(R.strings.sm_lobby.countdown.endsSoon(), { minutes: 5 })
+                ? n(R.strings.sm_lobby.countdown.days(), { days: r })
+                : n(R.strings.sm_lobby.countdown.daysHours(), { days: r, hours: u })
+            : o && u < 1 && i < 5
+              ? n(R.strings.sm_lobby.countdown.endsSoon(), { minutes: 5 })
               : 0 === u
                 ? i < 1
                     ? R.strings.sm_lobby.countdown.lessThanMinute()
-                    : o(t ? R.strings.sm_lobby.countdown.minutesShort() : R.strings.sm_lobby.countdown.minutes(), {
+                    : n(t ? R.strings.sm_lobby.countdown.minutesShort() : R.strings.sm_lobby.countdown.minutes(), {
                           minutes: i,
                       })
                 : 0 === i
-                  ? o(R.strings.sm_lobby.countdown.hours(), { hours: u })
-                  : o(
+                  ? n(R.strings.sm_lobby.countdown.hours(), { hours: u })
+                  : n(
                         t
                             ? R.strings.sm_lobby.countdown.hoursMinutesShort()
                             : R.strings.sm_lobby.countdown.hoursMinutes(),
                         { hours: u, minutes: i },
                     );
     },
-    u = (o, u = !1, i = !1) => {
-        const b = s(o, 1);
-        return { timeString: r(t(b), u, i), secondsLeft: b, isEndingSoon: b < 5 * n };
+    r = (n, r = !1, u = !1) => {
+        const i = o(n, 1);
+        return { timeString: t(s(i), r, u), secondsLeft: i, isEndingSoon: i < 300 };
     };
-export { u };
+export { r as t };

@@ -103,7 +103,7 @@
                 }
                 (t.r(E),
                     t.d(E, {
-                        addModelObserver: () => $,
+                        addModelObserver: () => U,
                         addPreloadTexture: () => I,
                         arabic2roman: () => nu,
                         children: () => i,
@@ -114,7 +114,7 @@
                         extraSize: () => Eu,
                         forceTriggerMouseMove: () => uu,
                         freezeTextureBeforeResize: () => W,
-                        getBrowserTexturePath: () => U,
+                        getBrowserTexturePath: () => $,
                         getDisplayStatus: () => eu,
                         getExternalPaddingsRem: () => ru,
                         getFontNames: () => tu,
@@ -316,10 +316,10 @@
                 function V(u) {
                     viewEnv.setHitAreaPaddingsRem(u, u, u, u, L);
                 }
-                function U(u, e, t, n = 1) {
+                function $(u, e, t, n = 1) {
                     return viewEnv.getWebBrowserTexturePath(u, e, t, n);
                 }
-                function $(u, e, t) {
+                function U(u, e, t) {
                     return viewEnv.addDataChangedCallback(u, e, t);
                 }
                 function z(u) {
@@ -1104,8 +1104,8 @@
                     L = 'Modification_iconContainer_f2d29',
                     I = 'Modification_base__selected_bbd2b',
                     V = 'Modification_icon_d6594',
-                    U = 'Modification_checkMarkWrapper_e8721',
-                    $ = 'Modification_checkmark_e9177',
+                    $ = 'Modification_checkMarkWrapper_e8721',
+                    U = 'Modification_checkmark_e9177',
                     z = 'Modification_bottomHighlight_e1fe4',
                     j = R.images.gui.maps.icons.vehPostProgression.actionItems.pairModifications.c_120x120,
                     q = ({ isReceived: u, isSelected: e, model: t }) => {
@@ -1126,9 +1126,9 @@
                                 u &&
                                     r().createElement(
                                         'div',
-                                        { className: U },
+                                        { className: $ },
                                         r().createElement('div', { className: z }),
-                                        r().createElement('div', { className: $ }),
+                                        r().createElement('div', { className: U }),
                                     ),
                             ),
                         );
@@ -1317,6 +1317,11 @@
                         const F = r().useRef(null);
                         var s;
                         return (
+                            (0, n.useLayoutEffect)(() => {
+                                const u = A.O.client.getSize('rem');
+                                ((document.body.style.width = `${u.width}rem`),
+                                    (document.body.style.height = `${u.height}rem`));
+                            }, []),
                             (s = () => {
                                 const u = F.current;
                                 if (!u)
@@ -1326,7 +1331,9 @@
                                 const e = new ResizeObserver(() => {
                                     const e = u.scrollWidth,
                                         t = u.scrollHeight;
-                                    A.O.view.resize(e, t);
+                                    (A.O.view.resize(e, t),
+                                        (document.body.style.width = `${e}px`),
+                                        (document.body.style.height = `${t}px`));
                                     const n = window.getComputedStyle(u);
                                     A.O.view.setSidePaddingsRem({
                                         left: parseInt(n.getPropertyValue('padding-left'), 10),

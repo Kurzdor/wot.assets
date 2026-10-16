@@ -1,5 +1,9 @@
-import { j as a, a3 as e } from './vendor.js';
-const t = {
+import { r as a } from './rolldown-runtime.js';
+import { Cs as e, Na as t } from './lib.js';
+import { i } from './vendor.js';
+e();
+var l = a(i()),
+    n = {
         base: 'QualificationBattleItem_4eb37328',
         base__x30: 'QualificationBattleItem_base__x30_1c4af689',
         base__x173: 'QualificationBattleItem_base__x173_4dba4b5f',
@@ -21,15 +25,16 @@ const t = {
         highlightAppearance: 'QualificationBattleItem_highlightAppearance_563a6b44',
         slideUpIn: 'QualificationBattleItem_slideUpIn_563a6b44',
     },
-    i = { notPlayed: 'notFinished', inProgress: 'notFinished', victory: 'victory', defeat: 'defeat' };
-function l(a, e) {
+    _ = a(t()),
+    s = { notPlayed: 'notFinished', inProgress: 'notFinished', victory: 'victory', defeat: 'defeat' };
+function o(a, e) {
     return 'x30' === e
-        ? R.images.comp7.gui.maps.icons.icons.$dyn(`battle_${i[a]}_30x30`)
-        : R.images.comp7.gui.maps.icons.icons.$dyn(`battle_${i[a]}`);
+        ? R.images.comp7.gui.maps.icons.icons.$dyn(`battle_${s[a]}_30x30`)
+        : R.images.comp7.gui.maps.icons.icons.$dyn(`battle_${s[a]}`);
 }
-const n = ({ className: i, state: n, size: _ = 'x173' }) =>
-    a.jsx('div', {
-        className: e(t.base, i, t[`base__${n}`], t[`base__${_}`]),
-        children: a.jsx('div', { className: t.battleBackground, style: { backgroundImage: `url(${l(n, _)})` } }),
+var c = ({ className: a, state: e, size: t = 'x173' }) =>
+    (0, _.jsx)('div', {
+        className: (0, l.default)(n.base, a, n[`base__${e}`], n[`base__${t}`]),
+        children: (0, _.jsx)('div', { className: n.battleBackground, style: { backgroundImage: `url(${o(e, t)})` } }),
     });
-export { n as Q };
+export { c as t };

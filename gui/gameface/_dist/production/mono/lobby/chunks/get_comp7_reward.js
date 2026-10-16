@@ -1,17 +1,17 @@
-import { dz as e, eh as r, dM as o, en as n, ad as s } from './lib.js';
-const i = [e.Big, e.Small],
-    a = [e.S232x174, e.S296x222, e.S400x300, e.S600x450],
+import { A as e, Co as r, M as o, j as n, k as s } from './lib.js';
+var i = [o.Big, o.Small],
+    a = [o.S232x174, o.S296x222, o.S400x300, o.S600x450],
     t = R.images.comp7.gui.maps.icons.rewards,
     d = (e, r) => 'styleProgress' === e.name && i.includes(r),
     l = (e, r) => ('progressLevel' in e && d(e, r) ? `progressionStyleUpgraded_${e.progressLevel}` : e.overlayType),
     m = (e) => ('vehicles_rent' === e.name ? e.label : e.value),
-    p = ({ reward: e, rank: r, index: n }) => {
-        const { tooltipId: s, tooltipContentId: i } = e;
-        return o({ tooltipId: s, ...(void 0 !== r && { rank: r }), ...(void 0 !== n && { index: n }) }, Number(i), {
+    p = ({ reward: r, rank: o, index: n }) => {
+        const { tooltipId: s, tooltipContentId: i } = r;
+        return e({ tooltipId: s, ...(void 0 !== o && { rank: o }), ...(void 0 !== n && { index: n }) }, Number(i), {
             ignoreShowDelay: !0,
         });
     },
-    c = (e, r) => {
+    u = (e, r) => {
         if ('tankman' === e.name) {
             const o = R.images.comp7.gui.maps.icons.crew.$dyn(r)?.$dyn(e.groupName);
             if (o) return `${o}`;
@@ -24,29 +24,29 @@ const i = [e.Big, e.Small],
             if (n) return `${n}`;
             console.info(`asset with styleID: ${e.styleID}, size:${r} was not found, using common icon`);
         }
-        return n(e, r);
+        return s(e, r);
     },
-    u = ({ reward: o, size: n, rank: s, index: i }) => {
-        const a = ((r, o) => {
-            if ('dogTagComponents' === r.name) {
-                if (o === e.Big) return e.S80x80;
-                if (o === e.Small) return e.S48x48;
+    c = ({ reward: e, size: r, rank: s, index: i }) => {
+        const a = ((e, r) => {
+            if ('dogTagComponents' === e.name) {
+                if (r === o.Big) return o.S80x80;
+                if (r === o.Small) return o.S48x48;
             }
-            return o;
-        })(o, n);
+            return r;
+        })(e, r);
         return {
-            ...o,
+            ...e,
             size: a,
-            image: c(o, a),
-            value: m(o),
-            valueType: r(o.name),
-            special: l(o, a),
-            tooltipArgs: p({ reward: o, rank: s, index: i }),
+            image: u(e, a),
+            value: m(e),
+            valueType: n(e.name),
+            special: l(e, a),
+            tooltipArgs: p({ reward: e, rank: s, index: i }),
             periodicIconTooltipArgs: {
                 header: R.strings.tooltips.periodicReward.header(),
                 body: R.strings.tooltips.periodicReward.comp7.body(),
             },
         };
     },
-    g = ({ rewards: e, size: r, rank: o, index: n }) => s(e, (e) => u({ reward: e, size: r, rank: o, index: n }));
-export { u as g, g as m };
+    g = ({ rewards: e, size: o, rank: n, index: s }) => r(e, (e) => c({ reward: e, size: o, rank: n, index: s }));
+export { g as n, c as t };

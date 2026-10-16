@@ -1,43 +1,52 @@
-import { r as a, j as e, z as s } from './vendor.js';
-import { o as t, di as i, a3 as m, az as l, eo as o } from './lib.js';
-const n = { small: 'small', big: 'big' },
-    r = { full: 'full', medium: 'medium', small: 'small' },
-    d = { appear: 'appear', fadeIn: 'fadeIn', slideUpIn: 'slideUpIn' },
-    c = { battlePass: 'battlePass', events: 'events', missions: 'missions' },
-    u = 'DateRange_8756cb54',
-    p = 'DateRange_label_a9603586',
-    f = 'DateRange_image_6a8d9b5e',
-    h = t.resolve('strings'),
-    g = { full: 'full', numeric: 'numeric', compact: 'compact' },
-    D = { [g.full]: i.DayMonthFull, [g.numeric]: i.DayMonthNumeric };
-function b({ startDate: t, endDate: i, className: n, size: d, isAdaptive: c, isMode: x }) {
-    const v = o,
-        _ = d === r.medium,
-        j = d === r.small,
-        w = a.useMemo(
-            () => (j || (c && _ && x) ? b.format.compact : c || _ ? b.format.numeric : b.format.full),
-            [c, _, x, j],
+import { r as a } from './rolldown-runtime.js';
+import { Cs as s, Er as e, Es as i, Na as t, Ts as l, is as m, mn as n, yr as r } from './lib.js';
+var o = a(s(), 1),
+    d = a(n(), 1),
+    u = { small: 'small', big: 'big' },
+    c = { full: 'full', medium: 'medium', small: 'small' },
+    p = { appear: 'appear', fadeIn: 'fadeIn', slideUpIn: 'slideUpIn' },
+    f = {
+        battlePass: 'battlePass',
+        events: 'events',
+        missionsSlider: 'missionsSlider',
+        missions: 'missions',
+        personalMissions: 'personalMissions',
+    },
+    h = 'DateRange_8756cb54',
+    g = 'DateRange_label_a9603586',
+    x = 'DateRange_image_6a8d9b5e',
+    D = a(t(), 1),
+    b = i.resolve('strings'),
+    v = { full: 'full', numeric: 'numeric', compact: 'compact' },
+    _ = { [v.full]: l.DayMonthFull, [v.numeric]: l.DayMonthNumeric };
+function M({ startDate: a, endDate: s, className: i, size: t, isAdaptive: l, isMode: n }) {
+    const u = m,
+        p = t === c.medium,
+        f = t === c.small,
+        N = (0, o.useMemo)(
+            () => (f || (l && p && n) ? M.format.compact : l || p ? M.format.numeric : M.format.full),
+            [l, p, n, f],
         );
-    return e.jsxs('div', {
-        className: s(u, n),
+    return (0, D.jsxs)('div', {
+        className: (0, d.default)(h, i),
         children: [
-            e.jsx(m, {
-                className: f,
+            (0, D.jsx)(r, {
+                className: x,
                 path: 'ui_kit.datetime.x16x16.cooldown',
                 width: 18,
                 height: 17,
                 adaptive: { medium: { path: 'ui_kit.datetime.x24x24.cooldown', width: 24, height: 24 } },
             }),
-            w !== g.compact
-                ? e.jsx(l, {
-                      className: p,
-                      text: h.readOrEmpty('user_missions.common.daterange.divider'),
+            N !== v.compact
+                ? (0, D.jsx)(e, {
+                      className: g,
+                      text: b.readOrEmpty('user_missions.common.daterange.divider'),
                       split: !0,
-                      params: { startDate: v(t, D[w]), endDate: v(i, D[w]) },
+                      params: { startDate: u(a, _[N]), endDate: u(s, _[N]) },
                   })
                 : null,
         ],
     });
 }
-b.format = g;
-export { b as D, d as a, c as b, r as c, n as w };
+M.format = v;
+export { u as a, c as i, p as n, f as r, M as t };

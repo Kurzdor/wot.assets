@@ -1,6 +1,7 @@
-import { j as r } from './vendor.js';
-import { cv as s } from './lib.js';
-function o({ value: o }) {
-    return 0 === o ? R.strings.comp7_ext.dash() : r.jsx(s, { value: o });
+import { r } from './rolldown-runtime.js';
+import { Na as t, tt as s } from './lib.js';
+var a = r(t());
+function o({ value: r }) {
+    return 0 === r ? R.strings.comp7_ext.dash() : (0, a.jsx)(s, { value: r });
 }
-export { o as F };
+export { o as t };

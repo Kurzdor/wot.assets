@@ -2044,6 +2044,7 @@
                             (e.LootBox = 'lootBox'),
                             (e.BrCoin = 'brcoin'),
                             (e.Attachment = 'attachment'),
+                            (e.Pet = 'pet'),
                             e
                         );
                     })({}),
@@ -2220,6 +2221,7 @@
                             case 'groups':
                             case 'tmanToken':
                             case 'battlePassSelectToken':
+                            case 'pet':
                                 return `R.images.gui.maps.icons.quests.bonuses.${u}.${a}`;
                             case 'crewBooks':
                                 return `R.images.gui.maps.icons.crewBooks.books.${u}.${a}`;
@@ -2711,7 +2713,12 @@
                                             },
                                             g,
                                         ),
-                                    o && r().createElement('div', { className: fu.title }, o),
+                                    o &&
+                                        r().createElement(
+                                            'div',
+                                            { className: F()(fu.title, null == c ? void 0 : c.title) },
+                                            o,
+                                        ),
                                 ),
                             ),
                             t &&

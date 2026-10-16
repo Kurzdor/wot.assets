@@ -39,7 +39,7 @@
                 }
                 (t.r(E),
                     t.d(E, {
-                        addModelObserver: () => W,
+                        addModelObserver: () => q,
                         addPreloadTexture: () => j,
                         arabic2roman: () => Eu,
                         children: () => A,
@@ -50,7 +50,7 @@
                         extraSize: () => ou,
                         forceTriggerMouseMove: () => nu,
                         freezeTextureBeforeResize: () => Y,
-                        getBrowserTexturePath: () => q,
+                        getBrowserTexturePath: () => $,
                         getDisplayStatus: () => Fu,
                         getExternalPaddingsRem: () => ru,
                         getFontNames: () => Au,
@@ -67,7 +67,7 @@
                         setAnimateWindow: () => J,
                         setEventHandled: () => eu,
                         setInputPaddingsRem: () => z,
-                        setSidePaddingsRem: () => $,
+                        setSidePaddingsRem: () => W,
                         whenTutorialReady: () => au,
                     }));
                 const o = r('clientResized'),
@@ -167,12 +167,12 @@
                     },
                     m = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
                     h = Object.keys(m).reduce((u, e) => ((u[e] = () => d(m[e])), u), {}),
-                    f = { play: Object.assign({}, h, { sound: d }), setRTPC: l },
-                    g = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'],
+                    g = { play: Object.assign({}, h, { sound: d }), setRTPC: l },
+                    f = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'],
                     b = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1e3];
                 function y(u) {
                     let e = '';
-                    for (let t = b.length - 1; t >= 0; t--) for (; u >= b[t];) ((e += g[t]), (u -= b[t]));
+                    for (let t = b.length - 1; t >= 0; t--) for (; u >= b[t];) ((e += f[t]), (u -= b[t]));
                     return e;
                 }
                 ['ko', 'no'].includes(R.strings.settings.LANGUAGE_CODE());
@@ -259,13 +259,13 @@
                 function z(u) {
                     viewEnv.setHitAreaPaddingsRem(u, u, u, u, U);
                 }
-                function q(u, e, t, n = 1) {
+                function $(u, e, t, n = 1) {
                     return viewEnv.getWebBrowserTexturePath(u, e, t, n);
                 }
-                function W(u, e, t) {
+                function q(u, e, t) {
                     return viewEnv.addDataChangedCallback(u, e, t);
                 }
-                function $(u) {
+                function W(u) {
                     viewEnv.setHitAreaPaddingsRem(u.top, u.right, u.bottom, u.left, U);
                 }
                 function G(u = 'px') {
@@ -348,7 +348,7 @@
                     }
                     (e(), engine.on('self.onPaddingsUpdated', () => e()));
                 }
-                const Bu = { view: E, client: F, sound: f, intl: p };
+                const Bu = { view: E, client: F, sound: g, intl: p };
             },
             973: (u, e, t) => {
                 t.d(e, { Z: () => A });
@@ -783,6 +783,11 @@
                     const C = F().useRef(null);
                     var c;
                     return (
+                        (0, n.useLayoutEffect)(() => {
+                            const u = o.O.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (c = () => {
                             const u = C.current;
                             if (!u)
@@ -792,7 +797,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     t = u.scrollHeight;
-                                o.O.view.resize(e, t);
+                                (o.O.view.resize(e, t),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${t}px`));
                                 const n = window.getComputedStyle(u);
                                 o.O.view.setSidePaddingsRem({
                                     left: parseInt(n.getPropertyValue('padding-left'), 10),
@@ -884,11 +891,11 @@
                         return '';
                     };
                 const h = () => (window.injected || (window.injected = new Map()), window.injected);
-                const f = C.Sw.instance;
-                let g = (function (u) {
+                const g = C.Sw.instance;
+                let f = (function (u) {
                     return ((u.None = 'None'), (u.Shallow = 'Shallow'), (u.Deep = 'Deep'), u);
                 })({});
-                const b = (u = 'model', e = g.Deep) => {
+                const b = (u = 'model', e = f.Deep) => {
                         const t = (0, n.useState)(0),
                             F = (t[0], t[1]),
                             A = (0, n.useMemo)(() => d(), []),
@@ -915,26 +922,26 @@
                             _(() => {
                                 if (
                                     ('boolean' == typeof e &&
-                                        ((e = e ? g.Deep : g.None),
+                                        ((e = e ? f.Deep : f.None),
                                         console.warn(
                                             'Boolean key for useModel "tracking" param is deprecated. Use ModelTracking enum values instead!',
                                         )),
-                                    e !== g.None)
+                                    e !== f.None)
                                 ) {
                                     const t = (u) => {
                                             ((u) => u && 'CoherentArrayProxy' === u.__proto__.constructor.name)(u) &&
-                                            e === g.Deep
+                                            e === f.Deep
                                                 ? (u === D && F((u) => u + 1), s(u))
                                                 : s(Object.assign([], u));
                                         },
                                         n = m(u);
-                                    B.current = f.addCallback(n, t, i, e === g.Deep);
+                                    B.current = g.addCallback(n, t, i, e === f.Deep);
                                 }
                             }),
                             (0, n.useEffect)(() => {
-                                if (e !== g.None)
+                                if (e !== f.None)
                                     return () => {
-                                        f.removeCallback(B.current, i);
+                                        g.removeCallback(B.current, i);
                                     };
                             }, [i, e]),
                             D

@@ -763,7 +763,7 @@
                         getFormattedDateTime: (e, u, a = !0) => regionalDateTime.getFormattedDateTime(e, u, a),
                     };
             },
-            618: (e, u, a) => {
+            950: (e, u, a) => {
                 'use strict';
                 var t = a(849),
                     r = a.n(t),
@@ -2492,7 +2492,7 @@
                                     A().createElement('div', null, i),
                                 ),
                                 A().createElement('div', { className: Je.icon, style: d }),
-                                t && A().createElement(W, { text: t, classMix: Je.name }),
+                                t && A().createElement('div', { className: Je.name }, t),
                             ),
                         );
                         var m;
@@ -4139,7 +4139,7 @@
             (a.forEach(u.bind(null, 0)), (a.push = u.bind(null, a.push.bind(a))));
         })());
     var __webpack_exports__ = __webpack_require__.O(void 0, ['lib/comp7_light.vendors'], () =>
-        __webpack_require__(618),
+        __webpack_require__(950),
     );
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

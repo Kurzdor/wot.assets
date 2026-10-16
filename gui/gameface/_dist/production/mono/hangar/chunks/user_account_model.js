@@ -1,100 +1,106 @@
-import { o as e, K as s, q as o } from './vendor.js';
 import {
-    i as t,
-    dg as n,
-    cr as i,
-    cs as r,
-    dh as a,
-    di as c,
-    dj as l,
-    dk as u,
-    S as p,
-    dl as m,
-    dm as b,
-    dn as d,
-    dp as P,
-    W as g,
+    Ba as e,
+    Bi as s,
+    Ga as o,
+    Ja as n,
+    Ka as t,
+    Oi as i,
+    Qa as a,
+    Vi as r,
+    Wa as c,
+    Xa as u,
+    Ya as l,
+    Za as p,
+    _a as b,
+    hr as m,
+    ki as P,
+    qa as f,
+    zi as g,
 } from './lib.js';
-var f = ((e) => ((e.None = 'None'), (e.Core = 'Core'), (e.Pro = 'Pro'), e))(f || {}),
-    v = ((e) => ((e.Inactive = 'Inactive'), (e.Active = 'Active'), (e.Cancelled = 'Cancelled'), e))(v || {});
-const C = n(
-        P((e) => e > 0),
-        d(g),
+var v = (function (e) {
+        return ((e.None = 'None'), (e.Core = 'Core'), (e.Pro = 'Pro'), e);
+    })({}),
+    C = (function (e) {
+        return ((e.Inactive = 'Inactive'), (e.Active = 'Active'), (e.Cancelled = 'Cancelled'), e);
+    })({}),
+    k = b(
+        i((e) => e > 0),
+        P(f),
     ),
-    k = [
-        [a, c],
-        [l, u],
-        [p, m],
-        [b, () => m(1)],
+    x = [
+        [l, e],
+        [u, c],
+        [p, o],
+        [a, () => o(1)],
     ];
 function A(e) {
     if (e) {
-        const s = i(e, r());
-        for (const [e, o] of k) {
-            const t = Math.ceil(e(s));
-            if (t > 0) return o(t);
+        const s = n(e, t());
+        for (const [e, o] of x) {
+            const n = Math.ceil(e(s));
+            if (n > 0) return o(n);
         }
     }
 }
-var x = ((e) => ((e.Unlock = 'unlock'), (e.UnlockSteamAndCn = 'unlockSteamAndCn'), (e.UnlockPro = 'unlockPro'), e))(
-    x || {},
-);
-const [y, I] = t('UserAccountProvider')(
-    ({ observableModel: t, cleanup: n }) => {
-        const i = t.object('userInfo'),
-            r = t.object('subscriptions.wotPlus'),
-            a = t.object('subscriptions.premiumAccount'),
-            c = t.primitives(['isCnRealm', 'isSteamPlatform'], 'subscriptions'),
-            l = t.arrayClone('subscriptions.wotPlus.benefits'),
-            u = t.arrayClone('subscriptions.wotPlus.proBenefits'),
-            p = { basic: e.box(A(C(a.get().expiryTime))), plus: e.box(A(C(r.get().expiryTime))) };
-        const m = s(
-                () => a.get().expiryTime,
-                (e) => {
-                    p.basic.set(A(C(e)));
-                },
-            ),
-            b = s(
-                () => r.get().expiryTime,
-                (e) => {
-                    p.plus.set(A(C(e)));
-                },
-            ),
-            d = setInterval(function () {
+var y = (function (e) {
+        return ((e.Unlock = 'unlock'), (e.UnlockCn = 'unlockCn'), (e.UnlockPro = 'unlockPro'), e);
+    })({}),
+    [I, d] = m('UserAccountProvider')(
+        ({ observableModel: e, cleanup: o }) => {
+            const n = e.object('userInfo'),
+                t = e.object('subscriptions.wotPlus'),
+                i = e.object('subscriptions.premiumAccount'),
+                a = e.primitives(['isCnRealm'], 'subscriptions'),
+                c = e.arrayClone('subscriptions.wotPlus.benefits'),
+                u = e.arrayClone('subscriptions.wotPlus.proBenefits'),
+                l = { basic: g.box(A(k(i.get().expiryTime))), plus: g.box(A(k(t.get().expiryTime))) };
+            const p = s(
+                    () => i.get().expiryTime,
+                    (e) => {
+                        l.basic.set(A(k(e)));
+                    },
+                ),
+                b = s(
+                    () => t.get().expiryTime,
+                    (e) => {
+                        l.plus.set(A(k(e)));
+                    },
+                ),
+                m = setInterval(function () {
+                    r(() => {
+                        (l.basic.set(A(k(i.get().expiryTime))), l.plus.set(A(k(t.get().expiryTime))));
+                    });
+                }, 6e4);
+            return (
                 o(() => {
-                    (p.basic.set(A(C(a.get().expiryTime))), p.plus.set(A(C(r.get().expiryTime))));
-                });
-            }, 6e4);
-        return (
-            n(() => {
-                (clearInterval(d), m(), b());
-            }),
-            {
-                userInfo: i,
-                premiums: p,
-                wotPlus: r,
-                premiumAccount: a,
-                benefits: l,
-                proBenefits: u,
-                subscriptionPrimitives: c,
-                getTooltipVariant: () => {
-                    const e = r.get().state,
-                        s = r.get().type;
-                    return e === v.Inactive && s === f.None && (c.isCnRealm.get() || c.isSteamPlatform.get())
-                        ? 'unlockSteamAndCn'
-                        : e === v.Inactive && s === f.None
-                          ? 'unlock'
-                          : e !== v.Inactive && s === f.Core
-                            ? 'unlockPro'
-                            : 'unlock';
-                },
-            }
-        );
-    },
-    ({ externalModel: e }) => ({
-        openAccountDashboard: e.createCallbackNoArgs('onOpenAccountDashboard'),
-        openWotPlusSubscriptionPage: e.createCallbackNoArgs('subscriptions.onOpenWotPlus'),
-        openPremiumSubscriptionPage: e.createCallbackNoArgs('subscriptions.onOpenPremium'),
-    }),
-);
-export { x as T, y as U, v as W, f as a, I as u };
+                    (clearInterval(m), p(), b());
+                }),
+                {
+                    userInfo: n,
+                    premiums: l,
+                    wotPlus: t,
+                    premiumAccount: i,
+                    benefits: c,
+                    proBenefits: u,
+                    subscriptionPrimitives: a,
+                    getTooltipVariant: () => {
+                        const e = t.get().state,
+                            s = t.get().type;
+                        return e === C.Inactive && s === v.None && a.isCnRealm.get()
+                            ? 'unlockCn'
+                            : e === C.Inactive && s === v.None
+                              ? 'unlock'
+                              : e !== C.Inactive && s === v.Core
+                                ? 'unlockPro'
+                                : 'unlock';
+                    },
+                }
+            );
+        },
+        ({ externalModel: e }) => ({
+            openAccountDashboard: e.createCallbackNoArgs('onOpenAccountDashboard'),
+            openWotPlusSubscriptionPage: e.createCallbackNoArgs('subscriptions.onOpenWotPlus'),
+            openPremiumSubscriptionPage: e.createCallbackNoArgs('subscriptions.onOpenPremium'),
+        }),
+    );
+export { v as a, C as i, I as n, d as r, y as t };

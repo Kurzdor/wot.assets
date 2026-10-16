@@ -1,25 +1,26 @@
-import { i as e, O as r, bC as s, bn as a } from './lib.js';
-import { J as o, F as t, G as n } from './vendor.js';
-var l = ((e) => (
-    (e.None = 'none'),
-    (e.CeasefireCurrentServer = 'ceasefireCurrentServer'),
-    (e.CeasefireAllServers = 'ceasefireAllServers'),
-    (e.ModeIsUnavailable = 'modeIsUnavailable'),
-    (e.ModeIsFinished = 'modeIsFinished'),
-    e
-))(l || {});
-const i = o(t({ goal: n(), periods: o(o(n())) }));
-function c(e) {
-    return e.map(([e, r]) => [s(e, a.ShortTime), s(r, a.ShortTime)]);
+import { Br as e, C as r, Gt as a, Qr as s, T as o, Ut as t, b as n } from './lib.js';
+var l = (function (e) {
+        return (
+            (e.None = 'none'),
+            (e.CeasefireCurrentServer = 'ceasefireCurrentServer'),
+            (e.CeasefireAllServers = 'ceasefireAllServers'),
+            (e.ModeIsUnavailable = 'modeIsUnavailable'),
+            (e.ModeIsFinished = 'modeIsFinished'),
+            e
+        );
+    })({}),
+    i = n(r({ goal: o(), periods: n(n(o())) }));
+function c(r) {
+    return r.map(([r, a]) => [e(r, s.ShortTime), e(a, s.ShortTime)]);
 }
-const [d, m] = e()(
+var [d, u] = a()(
     ({ observableModel: e }) => {
-        const s = { ...e.primitives(['alertType']) },
+        const r = { ...e.primitives(['alertType']) },
             a = e.dict('battleSchedule');
         return {
-            ...s,
+            ...r,
             computes: {
-                battleSchedule: r.shallow(() => {
+                battleSchedule: t.shallow(() => {
                     const e = [];
                     for (const [s, o] of a.entries())
                         try {
@@ -34,4 +35,4 @@ const [d, m] = e()(
     },
     ({ externalModel: e }) => ({ changeServer: e.createCallbackNoArgs('onChangeServer') }),
 );
-export { l as A, i as B, d as a, m as u };
+export { l as i, i as n, u as r, d as t };

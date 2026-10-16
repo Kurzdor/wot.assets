@@ -1,38 +1,40 @@
-import { v as e } from './lib.js';
-import { l as t, a as o } from './getRewardImage.js';
-var r = ((e) => (
-    (e.LootBox = 'lootBox'),
-    (e.Vehicles = 'vehicles'),
-    (e.Style = 'style'),
-    (e.Style3D = 'style_3d'),
-    (e.CrewMember = 'tmanToken'),
-    (e.PremiumPlus = 'premium_plus'),
-    (e.Credits = 'credits'),
-    (e.Gold = 'gold'),
-    (e.Crystal = 'crystal'),
-    (e.FreeXP = 'freeXP'),
-    (e.Customizations = 'customizations'),
-    (e.Attachment = 'attachment'),
-    (e.ExperimentalEquipment = 'experimental_equipment'),
-    (e.Components = 'equipCoin'),
-    (e.ImprovedEquipment = 'improved_equipment'),
-    (e.BountyEquipment = 'trophy_equipment'),
-    (e.StandardEquipment = 'standard_equipment'),
-    (e.Directives = 'battleBooster_gift'),
-    (e.MentoringLicense = 'mentoringLicense'),
-    (e.CrewBook = 'crewBook'),
-    (e.Guide = 'guide'),
-    (e.Brochure = 'brochure'),
-    (e.RecertificationForm = 'recertificationForm'),
-    (e.Blueprints = 'blueprints'),
-    (e.BattleBonusX5 = 'battle_bonus_x5'),
-    (e.CrewBonusX3 = 'crew_bonus_x3'),
-    (e.PersonalReserves = 'personal_reserves'),
-    (e.Consumables = 'consumables'),
-    (e.Rations = 'rations'),
-    e
-))(r || {});
-const s = {
+import { Jt as e } from './lib.js';
+import { a as t, i as o } from './getRewardImage.js';
+var r = (function (e) {
+        return (
+            (e.LootBox = 'lootBox'),
+            (e.Vehicles = 'vehicles'),
+            (e.Style = 'style'),
+            (e.Style3D = 'style_3d'),
+            (e.CrewMember = 'tmanToken'),
+            (e.PremiumPlus = 'premium_plus'),
+            (e.Credits = 'credits'),
+            (e.Gold = 'gold'),
+            (e.Crystal = 'crystal'),
+            (e.FreeXP = 'freeXP'),
+            (e.Customizations = 'customizations'),
+            (e.Attachment = 'attachment'),
+            (e.ExperimentalEquipment = 'experimental_equipment'),
+            (e.Components = 'equipCoin'),
+            (e.ImprovedEquipment = 'improved_equipment'),
+            (e.BountyEquipment = 'trophy_equipment'),
+            (e.StandardEquipment = 'standard_equipment'),
+            (e.Directives = 'battleBooster_gift'),
+            (e.MentoringLicense = 'mentoringLicense'),
+            (e.CrewBook = 'crewBook'),
+            (e.Guide = 'guide'),
+            (e.Brochure = 'brochure'),
+            (e.RecertificationForm = 'recertificationForm'),
+            (e.Blueprints = 'blueprints'),
+            (e.BattleBonusX5 = 'battle_bonus_x5'),
+            (e.CrewBonusX3 = 'crew_bonus_x3'),
+            (e.PersonalReserves = 'personal_reserves'),
+            (e.Consumables = 'consumables'),
+            (e.Rations = 'rations'),
+            e
+        );
+    })({}),
+    s = {
         [r.Vehicles]: 'vehicles',
         [r.Style]: 'style',
         [r.Style3D]: 'style_3d',
@@ -84,11 +86,11 @@ const s = {
     l = (e) => s[e] || e;
 function u(e, r) {
     const s = l(e);
-    return d(e) ? t(r, m(e)) : o(R.images, `gui.maps.icons.quests.bonuses.${r}.${s}`);
+    return d(e) ? o(r, m(e)) : t(R.images, `gui.maps.icons.quests.bonuses.${r}.${s}`);
 }
-function p(t) {
+function p(o) {
     const s = e.resolve('strings');
-    switch (t) {
+    switch (o) {
         case r.PremiumPlus:
             return {
                 header: s.readOrEmpty('tooltips.awardItem.premium_plus.header'),
@@ -131,8 +133,8 @@ function p(t) {
             };
         default:
             return {
-                header: o(R.strings, `tooltips.awardItem.${t}.header`),
-                body: o(R.strings, `tooltips.awardItem.${t}.body`),
+                header: t(R.strings, `tooltips.awardItem.${o}.header`),
+                body: t(R.strings, `tooltips.awardItem.${o}.body`),
             };
     }
 }
@@ -170,4 +172,4 @@ function c(t, o) {
                   args: p(t),
               };
 }
-export { i as L, r as T, c as a, m as b, u as c, l as g, d as i };
+export { c as a, l as i, m as n, d as o, u as r, r as s, i as t };

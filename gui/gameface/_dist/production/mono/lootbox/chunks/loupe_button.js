@@ -1,16 +1,22 @@
-import { j as s, i as o } from './vendor.js';
-import { X as a } from './lib.js';
-const e = 'LoupeButton_1d80b6b5',
-    i = 'LoupeButton_icon_38bae2ae',
-    c = ({ onClick: c, icon: l, className: n = '' }) =>
-        s.jsx('div', {
-            className: o(e, n),
+import { r as a } from './rolldown-runtime.js';
+import { Ft as s, Ht as o, P as e, ft as t } from './lib.js';
+o();
+var l = a(e()),
+    i = 'LoupeButton_1d80b6b5',
+    r = 'LoupeButton_icon_38bae2ae',
+    c = a(t()),
+    n = ({ onClick: a, icon: o, className: e = '' }) =>
+        (0, c.jsx)('div', {
+            className: (0, l.default)(i, e),
             onMouseEnter: () => {
-                a.highlight();
+                s.highlight();
             },
             onClick: () => {
-                (a.click(), c());
+                (s.click(), a());
             },
-            children: s.jsx('div', { className: o(i, l.className), style: { backgroundImage: `url(${l.img})` } }),
+            children: (0, c.jsx)('div', {
+                className: (0, l.default)(r, o.className),
+                style: { backgroundImage: `url(${o.img})` },
+            }),
         });
-export { c as L };
+export { n as t };

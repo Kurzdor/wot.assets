@@ -427,10 +427,10 @@
                         arabic2roman: () => y,
                         children: () => n,
                         displayStatus: () => i.W,
-                        displayStatusIs: () => R,
+                        displayStatusIs: () => I,
                         enableFullScreenModeSupported: () => L,
                         events: () => r.U,
-                        extraSize: () => I,
+                        extraSize: () => R,
                         forceTriggerMouseMove: () => w,
                         freezeTextureBeforeResize: () => C,
                         getBrowserTexturePath: () => c,
@@ -522,11 +522,11 @@
                 function x() {
                     return viewEnv.getExternalPaddingsRem();
                 }
-                const R = Object.keys(i.W).reduce(
+                const I = Object.keys(i.W).reduce(
                         (u, e) => ((u[e] = () => viewEnv.getShowingStatus() === i.W[e]), u),
                         {},
                     ),
-                    I = {
+                    R = {
                         set: (u, e) => {
                             viewEnv.setExtraSizeRem(u, e);
                         },
@@ -1556,6 +1556,7 @@
                                         'isSimplified',
                                         'shellType',
                                         'shellIcon',
+                                        'modeShellIcon',
                                         'armorNominal',
                                         'caliberRule',
                                         'angleRicochet',
@@ -1593,17 +1594,19 @@
                                         t = e.impactMode,
                                         n = e.shellType,
                                         i = e.shellIcon,
-                                        r = e.armorNominal,
-                                        s = e.caliberRule,
-                                        o = e.angleRicochet;
+                                        r = e.modeShellIcon,
+                                        s = e.armorNominal,
+                                        o = e.caliberRule,
+                                        l = e.angleRicochet;
                                     return {
                                         isKillerUnspotted: u.get(),
                                         impactMode: t.get(),
                                         shellType: n.get(),
                                         shellIcon: i.get(),
-                                        armorNominal: r.get(),
-                                        is3CaliberRuleApplied: s.get() === a.fE.ThreeCaliber,
-                                        angleRicochet: o.get(),
+                                        modeShellIcon: r.get(),
+                                        armorNominal: s.get(),
+                                        is3CaliberRuleApplied: o.get() === a.fE.ThreeCaliber,
+                                        angleRicochet: l.get(),
                                     };
                                 }),
                                 s = (0, i.Om)(() =>
@@ -1886,7 +1889,7 @@
             },
             7069: (u, e, t) => {
                 'use strict';
-                t.d(e, { g: () => Eu });
+                t.d(e, { g: () => cu });
                 var a = t(2041),
                     n = t(7363),
                     i = t.n(n),
@@ -2072,22 +2075,23 @@
                             )
                         );
                     }),
-                    v = 'Icon_base_fff8b';
-                var p = t(7475);
-                let w = (function (u) {
+                    v = 'Icon_base_fff8b',
+                    p = 'Icon_overlay_d9a11';
+                var w = t(7475);
+                let b = (function (u) {
                     return ((u.Small = 'small'), (u.Medium = 'medium'), u);
                 })({});
-                const b = R.atlases.deathCam,
-                    S = ({ name: u, value: e, impactMode: t, isKillerUnspotted: a }) => {
-                        const r =
+                const S = R.atlases.deathCam,
+                    y = ({ name: u, value: e, mode: t, impactMode: a, isKillerUnspotted: r }) => {
+                        const s =
                                 (() => {
-                                    const u = (0, n.useState)(p.O.view.getScale()),
+                                    const u = (0, n.useState)(w.O.view.getScale()),
                                         e = u[0],
                                         t = u[1];
                                     return (
                                         (0, n.useEffect)(() => {
                                             const u = () => {
-                                                t(p.O.view.getScale());
+                                                t(w.O.view.getScale());
                                             };
                                             return (
                                                 window.addEventListener('resize', u),
@@ -2099,34 +2103,44 @@
                                         e
                                     );
                                 })() > 1
-                                    ? w.Medium
-                                    : w.Small,
-                            s = R.images.gui.maps.icons.shell.$dyn(r);
+                                    ? b.Medium
+                                    : b.Small,
+                            o = R.images.gui.maps.icons.shell.$dyn(s),
+                            l = R.images.gui.maps.icons.shellModes.$dyn(s);
                         if ('angleImpact' === u) return i().createElement(_, null);
                         {
-                            var o;
+                            var E;
                             let n = u;
                             return 'shellType' === u
-                                ? i().createElement('div', {
-                                      className: v,
-                                      style: { backgroundImage: `url(${s.$dyn(e.toString())})` },
-                                  })
+                                ? i().createElement(
+                                      i().Fragment,
+                                      null,
+                                      i().createElement('div', {
+                                          className: v,
+                                          style: { backgroundImage: `url(${o.$dyn(e.toString())})` },
+                                      }),
+                                      t &&
+                                          i().createElement('div', {
+                                              className: p,
+                                              style: { backgroundImage: `url(${l.$dyn(t)})` },
+                                          }),
+                                  )
                                 : ('deathReason' === u
                                       ? (n = e)
                                       : 'shellDamageBurst' === u || 'shellDamageEffective' === u
-                                        ? (n = t)
-                                        : 'shootDistance' === u && a && (n = 'unspotted'),
+                                        ? (n = a)
+                                        : 'shootDistance' === u && r && (n = 'unspotted'),
                                   i().createElement('div', {
                                       className: v,
-                                      style: { backgroundImage: `url(${null == (o = b[n]) ? void 0 : o.call(b)})` },
+                                      style: { backgroundImage: `url(${null == (E = S[n]) ? void 0 : E.call(S)})` },
                                   }));
                         }
                     };
-                var y = t(3058),
-                    x = t(6758);
-                const I = R.strings.death_cam.marker,
-                    P = ['shellArmorAngleGain', 'shellDamageRandomizationFactor', 'damageDistanceModifier'],
-                    L = [
+                var x = t(3058),
+                    I = t(6758);
+                const P = R.strings.death_cam.marker,
+                    L = ['shellArmorAngleGain', 'shellDamageRandomizationFactor', 'damageDistanceModifier'],
+                    T = [
                         'shellDamageEffective',
                         'shellDamageBasic',
                         'shellDamageRandomizationFactor',
@@ -2136,9 +2150,9 @@
                         'shellDamageLossProtectionSpallLiner',
                         'shellDamageLossDistance',
                     ],
-                    T = ['shootDistance'];
-                (y.kb.crew, y.kb.detonation, y.kb.ignition);
-                var M = (function (u) {
+                    M = ['shootDistance'];
+                (x.kb.crew, x.kb.detonation, x.kb.ignition);
+                var O = (function (u) {
                     return (
                         (u.ARMOR_PIERCING = 'ARMOR_PIERCING'),
                         (u.ARMOR_PIERCING_CR = 'ARMOR_PIERCING_CR'),
@@ -2147,61 +2161,61 @@
                         (u.HIGH_EXPLOSIVE = 'HIGH_EXPLOSIVE'),
                         u
                     );
-                })(M || {});
-                const O = {
-                        [y.gC.armorPiercing]: M.ARMOR_PIERCING,
-                        [y.gC.armorPiercingPremium]: M.ARMOR_PIERCING,
-                        [y.gC.armorPiercingCr]: M.ARMOR_PIERCING_CR,
-                        [y.gC.armorPiercingCrPremium]: M.ARMOR_PIERCING_CR,
-                        [y.gC.highExplosive]: M.HIGH_EXPLOSIVE,
-                        [y.gC.highExplosivePremium]: M.HIGH_EXPLOSIVE,
-                        [y.gC.highExplosiveModern]: M.HIGH_EXPLOSIVE,
-                        [y.gC.highExplosiveSpg]: M.HIGH_EXPLOSIVE,
-                        [y.gC.highExplosiveSpgStun]: M.HIGH_EXPLOSIVE,
-                        [y.gC.highExplosiveModernPremium]: M.HIGH_EXPLOSIVE,
-                        [y.gC.hollowCharge]: M.HOLLOW_CHARGE,
-                        [y.gC.hollowChargePremium]: M.HOLLOW_CHARGE,
+                })(O || {});
+                const H = {
+                        [x.gC.armorPiercing]: O.ARMOR_PIERCING,
+                        [x.gC.armorPiercingPremium]: O.ARMOR_PIERCING,
+                        [x.gC.armorPiercingCr]: O.ARMOR_PIERCING_CR,
+                        [x.gC.armorPiercingCrPremium]: O.ARMOR_PIERCING_CR,
+                        [x.gC.highExplosive]: O.HIGH_EXPLOSIVE,
+                        [x.gC.highExplosivePremium]: O.HIGH_EXPLOSIVE,
+                        [x.gC.highExplosiveModern]: O.HIGH_EXPLOSIVE,
+                        [x.gC.highExplosiveSpg]: O.HIGH_EXPLOSIVE,
+                        [x.gC.highExplosiveSpgStun]: O.HIGH_EXPLOSIVE,
+                        [x.gC.highExplosiveModernPremium]: O.HIGH_EXPLOSIVE,
+                        [x.gC.hollowCharge]: O.HOLLOW_CHARGE,
+                        [x.gC.hollowChargePremium]: O.HOLLOW_CHARGE,
                     },
-                    H = (u, e = !1) => {
+                    k = (u, e = !1) => {
                         const t = R.strings.item_types.shell[e ? 'kindsAbbreviation' : 'kinds'],
-                            a = O[u];
+                            a = H[u];
                         return t[a] ? t[a]() : (console.error('No text for shell type', u), '');
                     },
-                    k = (u, e, t, a, n, i, r, s) => {
+                    N = (u, e, t, a, n, i, r, s) => {
                         let o = String(e);
                         'number' == typeof e &&
                             ((o = ((u, e) =>
-                                L.includes(u) ? (e < 0 ? Math.abs(e).toFixed(1) : e.toFixed(1)) : String(e))(u, e)),
-                            P.includes(u) && e > 0
-                                ? (o = (0, x.uF)(I.value.signPositive(), { value: o }))
-                                : e < 0 && (o = (0, x.uF)(I.value.signNegative(), { value: o })));
+                                T.includes(u) ? (e < 0 ? Math.abs(e).toFixed(1) : e.toFixed(1)) : String(e))(u, e)),
+                            L.includes(u) && e > 0
+                                ? (o = (0, I.uF)(P.value.signPositive(), { value: o }))
+                                : e < 0 && (o = (0, I.uF)(P.value.signNegative(), { value: o })));
                         let E = String(o);
                         if (
                             ('angleRicochet' === u && e >= 90) ||
                             ('angleRicochet' === u &&
                                 l.HE.includes(n) &&
-                                (a === y.pE.penetration || a === y.pE.nonPenetrationDamage)) ||
+                                (a === x.pE.penetration || a === x.pE.nonPenetrationDamage)) ||
                             ('angleRicochet' === u && r)
                         )
-                            E = I.value.notAffected();
-                        else if (t && 'damageDistanceModifier' === u) E = I.value.unspotted();
+                            E = P.value.notAffected();
+                        else if (t && 'damageDistanceModifier' === u) E = P.value.unspotted();
                         else {
-                            if (t && T.includes(u)) return '';
-                            'shellPenetrationEffective' === u && a !== y.pE.penetration
-                                ? (E = I.value.failed())
+                            if (t && M.includes(u)) return '';
+                            'shellPenetrationEffective' === u && a !== x.pE.penetration
+                                ? (E = P.value.failed())
                                 : ('armorRelative' === u && 0 === i) || ('angleFailure' === u && e >= s)
-                                  ? (E = I.value.dashes())
+                                  ? (E = P.value.dashes())
                                   : 'angleImpact' === u
-                                    ? (E = I.value.angle.exact())
+                                    ? (E = P.value.angle.exact())
                                     : 'angleRicochet' === u || 'angleFailure' === u
-                                      ? (E = I.value.angle.more())
+                                      ? (E = P.value.angle.more())
                                       : 'caliberRule' === u
-                                        ? (E = I.value.applied())
-                                        : 'deathReason' === u && (E = I.paramName.deathReason[e]());
+                                        ? (E = P.value.applied())
+                                        : 'deathReason' === u && (E = P.paramName.deathReason[e]());
                         }
-                        return (0, x.uF)(E, { value: o });
+                        return (0, I.uF)(E, { value: o });
                     },
-                    N = {
+                    Q = {
                         base: 'DataLine_base_b4b94',
                         iconContainer__impactAngle: 'DataLine_iconContainer__impactAngle_ca8a3',
                         iconContainer: 'DataLine_iconContainer_a108e',
@@ -2219,8 +2233,8 @@
                         headIconTank: 'DataLine_headIconTank_f92d2',
                         additionalShellInfo: 'DataLine_additionalShellInfo_e78fe',
                     },
-                    Q = 'ColoredText_unit_e8bbf',
-                    G = ({ text: u }) => {
+                    G = 'ColoredText_unit_e8bbf',
+                    j = ({ text: u }) => {
                         const e = /{colorTagOpen}([^{]*){colorTagClose}/g,
                             t = u.split(e);
                         if (t.length <= 1) return i().createElement(i().Fragment, null, u);
@@ -2228,13 +2242,13 @@
                             n = e.exec(u).pop();
                         return (
                             t.forEach((u) =>
-                                a.push(u === n ? i().createElement('div', { className: Q, key: u }, u) : u),
+                                a.push(u === n ? i().createElement('div', { className: G, key: u }, u) : u),
                             ),
                             i().createElement(i().Fragment, null, a)
                         );
                     };
-                var j = t(598);
-                const W = (0, a.Pi)(({ cardId: u, sectionId: e, lineId: t, isAdvancedLinesVisible: a }) => {
+                var W = t(598);
+                const V = (0, a.Pi)(({ cardId: u, sectionId: e, lineId: t, isAdvancedLinesVisible: a }) => {
                         const n = (0, r.t)().model,
                             s = n.isSimplified,
                             o = n.valueWidth,
@@ -2252,76 +2266,78 @@
                             _ = g.impactMode,
                             v = g.shellType,
                             p = g.shellIcon,
-                            b = g.armorNominal,
-                            x = g.is3CaliberRuleApplied,
-                            P = g.angleRicochet,
-                            L = B.has(l.Qm.HeadIconShell) || B.has(l.Qm.HeadIconTank),
-                            T = L ? h - l.h - l.YF : h,
-                            M = A()(N.base, [[...B].map((u) => N[u])]),
-                            O = A()(
-                                N.iconContainer,
-                                'angleImpact' === D && N.iconContainer__impactAngle,
-                                F.getHasAngleIndicator() && N.iconContainer__wide,
+                            w = g.modeShellIcon,
+                            S = g.armorNominal,
+                            I = g.is3CaliberRuleApplied,
+                            L = g.angleRicochet,
+                            T = B.has(l.Qm.HeadIconShell) || B.has(l.Qm.HeadIconTank),
+                            M = T ? h - l.h - l.YF : h,
+                            O = A()(Q.base, [[...B].map((u) => Q[u])]),
+                            H = A()(
+                                Q.iconContainer,
+                                'angleImpact' === D && Q.iconContainer__impactAngle,
+                                F.getHasAngleIndicator() && Q.iconContainer__wide,
                             ),
-                            Q = A()(
-                                N.value,
+                            G = A()(
+                                Q.value,
                                 'shootDistance' === D &&
                                     f &&
-                                    (s.get() ? N.value__unspottedSimple : N.value__unspottedDetailed),
+                                    (s.get() ? Q.value__unspottedSimple : Q.value__unspottedDetailed),
                             ),
-                            W = (({ name: u, value: e, impactMode: t, armorNominal: a, isKillerUnspotted: n }) => {
+                            V = (({ name: u, value: e, impactMode: t, armorNominal: a, isKillerUnspotted: n }) => {
                                 var i;
                                 const r = () => {
-                                    const e = I.paramName,
+                                    const e = P.paramName,
                                         t = u;
                                     return e[t] ? e[t]() : (console.error('No text for Parameter Name', u), '');
                                 };
                                 switch (u) {
                                     case 'deathReason': {
-                                        const u = I.paramName.deathReason,
+                                        const u = P.paramName.deathReason,
                                             t = e;
                                         return u[t] ? u[t]() : (console.error('No text for death reason', e), '');
                                     }
                                     case 'shellType':
-                                        return H(e);
+                                        return k(e);
                                     case 'armorRelative':
                                         var s;
-                                        return 0 === a ? (null != (s = I.paramName.nonArmored()) ? s : '') : r();
+                                        return 0 === a ? (null != (s = P.paramName.nonArmored()) ? s : '') : r();
                                     case 'shellDamageEffective':
-                                        return null != (i = I.paramName.shellDamageEffective[t]()) ? i : '';
+                                        return null != (i = P.paramName.shellDamageEffective[t]()) ? i : '';
                                     case 'caliberRule':
-                                        return e === y.fE.TwoCaliber
-                                            ? I.paramName.is2CaliberRuleApplied()
-                                            : I.paramName.is3CaliberRuleApplied();
+                                        return e === x.fE.TwoCaliber
+                                            ? P.paramName.is2CaliberRuleApplied()
+                                            : P.paramName.is3CaliberRuleApplied();
                                     case 'shootDistance':
-                                        return n ? I.paramName.shootDistanceUnspotted() : I.paramName.shootDistance();
+                                        return n ? P.paramName.shootDistanceUnspotted() : P.paramName.shootDistance();
                                     default:
                                         return r();
                                 }
-                            })({ name: D, value: C, impactMode: _, armorNominal: b, isKillerUnspotted: f }),
-                            V = R.images.gui.maps.icons.shell.$dyn(w.Small);
+                            })({ name: D, value: C, impactMode: _, armorNominal: S, isKillerUnspotted: f }),
+                            U = R.images.gui.maps.icons.shell.$dyn(b.Small);
                         return i().createElement(
                             i().Fragment,
                             null,
-                            L &&
+                            T &&
                                 i().createElement(
                                     'div',
-                                    { className: A()(N.extraHeader, M) },
-                                    i().createElement('div', { className: N.extraHeader_icon }),
+                                    { className: A()(Q.extraHeader, O) },
+                                    i().createElement('div', { className: Q.extraHeader_icon }),
                                 ),
                             i().createElement(
                                 'div',
-                                { className: M, style: { height: `${T}rem` } },
-                                (0, j.f8)(B) &&
+                                { className: O, style: { height: `${M}rem` } },
+                                (0, W.f8)(B) &&
                                     !(B.has(l.Qm.Advanced) && !a) &&
-                                    i().createElement('div', { className: N.glowElement }),
+                                    i().createElement('div', { className: Q.glowElement }),
                                 i().createElement(
                                     'div',
-                                    { className: O },
+                                    { className: H },
                                     B.has(l.Qm.Icon) &&
-                                        i().createElement(S, {
+                                        i().createElement(y, {
                                             name: D,
                                             value: 'shellType' === D ? p : C,
+                                            mode: w,
                                             impactMode: _,
                                             isKillerUnspotted: f,
                                         }),
@@ -2329,23 +2345,23 @@
                                 !['shellType', 'deathReason'].includes(D) &&
                                     i().createElement(
                                         'div',
-                                        { className: Q, style: { width: o.get() } },
-                                        k(D, C, f, _, v, b, x, P),
+                                        { className: G, style: { width: o.get() } },
+                                        N(D, C, f, _, v, S, I, L),
                                     ),
-                                i().createElement(G, { text: W }),
+                                i().createElement(j, { text: V }),
                                 B.has(l.Qm.AdditionalShellInfo) &&
                                     i().createElement(
                                         'div',
                                         {
-                                            className: N.additionalShellInfo,
-                                            style: { backgroundImage: `url(${V.$dyn(p)})` },
+                                            className: Q.additionalShellInfo,
+                                            style: { backgroundImage: `url(${U.$dyn(p)})` },
                                         },
-                                        H(v, !0),
+                                        k(v, !0),
                                     ),
                             ),
                         );
                     }),
-                    V = (0, a.Pi)(({ cardId: u, sectionId: e, isAdvancedLinesVisible: t }) => {
+                    U = (0, a.Pi)(({ cardId: u, sectionId: e, isAdvancedLinesVisible: t }) => {
                         const a = (0, r.t)().model.computes.section,
                             n = a.getLinesCount(u, e),
                             s = a.getHasTopSeparator(u, e),
@@ -2355,7 +2371,7 @@
                             'div',
                             { key: `${u}:${e}`, className: E, style: { height: `${l}rem` } },
                             o(n, (a) =>
-                                i().createElement(W, {
+                                i().createElement(V, {
                                     key: `${u}:${e}:${a}`,
                                     cardId: u,
                                     sectionId: e,
@@ -2365,8 +2381,8 @@
                             ),
                         );
                     }),
-                    U = 'CardAnimation_card_e7c14',
-                    z = (0, a.Pi)(({ cardId: u, bottomToTop: e = !1, isExpanding: t }) => {
+                    z = 'CardAnimation_card_e7c14',
+                    $ = (0, a.Pi)(({ cardId: u, bottomToTop: e = !1, isExpanding: t }) => {
                         const a = (0, r.t)(),
                             s = a.model,
                             l = s.isAdvanced,
@@ -2390,8 +2406,8 @@
                             S = t ? g : v,
                             y = (0, n.useState)(D && t),
                             x = y[0],
-                            R = y[1],
-                            I = D ? 0 : m.getFullHeight(u),
+                            I = y[1],
+                            R = D ? 0 : m.getFullHeight(u),
                             P = (0, n.useRef)(!0);
                         (0, n.useEffect)(
                             () => () => {
@@ -2401,12 +2417,12 @@
                         );
                         const L = (0, E.useSpring)({
                                 clipPath: e
-                                    ? `inset(${I}rem 0 0)`
+                                    ? `inset(${R}rem 0 0)`
                                     : `polygon(0rem 0rem, 100% 0rem, 100% ${w - 0.1}rem, 0rem ${w - 0.1}rem)`,
                                 delay: b,
                                 config: { duration: p },
-                                onRest: () => P.current && R(C),
-                                onStart: () => C && t && R(!0),
+                                onRest: () => P.current && I(C),
+                                onStart: () => C && t && I(!0),
                             }).clipPath,
                             T = (0, E.useSpring)({
                                 height: `${w}rem`,
@@ -2419,9 +2435,9 @@
                             { style: { clipPath: L, height: T } },
                             i().createElement(
                                 'div',
-                                { className: U },
+                                { className: z },
                                 o(m.getSectionsCount(u), (e) =>
-                                    i().createElement(V, {
+                                    i().createElement(U, {
                                         key: `${u}:${e}`,
                                         cardId: u,
                                         sectionId: e,
@@ -2431,23 +2447,23 @@
                             ),
                         );
                     }),
-                    $ = 'CardContainer_base_a2239',
-                    q = 'CardContainer_base__empty_cf1d9',
-                    K = 'CardContainer_children_cc23e',
-                    Y = 'CardContainer_border_db8e0',
-                    X = 'CardContainer_background_ebaed',
-                    Z = ({ isEmpty: u, children: e }) =>
+                    q = 'CardContainer_base_a2239',
+                    K = 'CardContainer_base__empty_cf1d9',
+                    Y = 'CardContainer_children_cc23e',
+                    X = 'CardContainer_border_db8e0',
+                    Z = 'CardContainer_background_ebaed',
+                    J = ({ isEmpty: u, children: e }) =>
                         i().createElement(
                             'div',
-                            { className: A()($, u && q) },
-                            i().createElement('div', { className: Y }),
+                            { className: A()(q, u && K) },
                             i().createElement('div', { className: X }),
-                            i().createElement('div', { className: K }, e),
+                            i().createElement('div', { className: Z }),
+                            i().createElement('div', { className: Y }, e),
                         ),
-                    J = 'Progress_base_f1283',
-                    uu = 'Progress_bar_bb21d',
-                    eu = 'Progress_ending_fcc85',
-                    tu = (0, a.Pi)(({ isVisible: u = !0 }) => {
+                    uu = 'Progress_base_f1283',
+                    eu = 'Progress_bar_bb21d',
+                    tu = 'Progress_ending_fcc85',
+                    au = (0, a.Pi)(({ isVisible: u = !0 }) => {
                         var e, t;
                         const a = (0, r.t)().model.computes.table.getProgressProps(),
                             s = a.phaseTimePassed,
@@ -2466,13 +2482,13 @@
                             C = (0, E.useSpring)({ opacity: Number(u), config: { duration: l.zn } }).opacity;
                         return i().createElement(
                             E.animated.div,
-                            { className: J, style: { opacity: C }, ref: A },
-                            i().createElement(E.animated.div, { className: uu, style: { width: D } }),
-                            i().createElement('div', { className: eu }),
+                            { className: uu, style: { opacity: C }, ref: A },
+                            i().createElement(E.animated.div, { className: eu, style: { width: D } }),
+                            i().createElement('div', { className: tu }),
                         );
                     }),
-                    au = 'DataTable_top_ec2ee',
-                    nu = (0, a.Pi)(() => {
+                    nu = 'DataTable_top_ec2ee',
+                    iu = (0, a.Pi)(() => {
                         const u = (0, r.t)(),
                             e = u.model,
                             t = e.isAdvanced,
@@ -2522,7 +2538,7 @@
                                                 (u =
                                                     null == (e = m.current)
                                                         ? void 0
-                                                        : e.getElementsByClassName(N.value))
+                                                        : e.getElementsByClassName(Q.value))
                                                 ? u
                                                 : [],
                                         );
@@ -2543,12 +2559,12 @@
                             },
                             i().createElement(
                                 'div',
-                                { className: au, style: { height: `${p}rem` } },
-                                i().createElement(tu, { isVisible: h }),
+                                { className: nu, style: { height: `${p}rem` } },
+                                i().createElement(au, { isVisible: h }),
                                 i().createElement(
-                                    Z,
+                                    J,
                                     null,
-                                    i().createElement(z, { cardId: 0, bottomToTop: !0, isExpanding: C }),
+                                    i().createElement($, { cardId: 0, bottomToTop: !0, isExpanding: C }),
                                 ),
                             ),
                             i().createElement(
@@ -2557,17 +2573,17 @@
                                 o(s.getCardsCount() - 1, (u) => {
                                     const e = u + 1;
                                     return i().createElement(
-                                        Z,
+                                        J,
                                         { isEmpty: !(Boolean(E.getBasicHeight(e)) || A), key: u },
-                                        i().createElement(z, { cardId: e, isExpanding: C }),
+                                        i().createElement($, { cardId: e, isExpanding: C }),
                                     );
                                 }),
                             ),
                         );
                     });
-                const iu = (u) => u * u,
-                    ru = 'Leader_base_fac15',
-                    su = (0, a.Pi)(() => {
+                const ru = (u) => u * u,
+                    su = 'Leader_base_fac15',
+                    ou = (0, a.Pi)(() => {
                         const u = (0, r.t)(),
                             e = u.model.computes.table,
                             t = u.controls.setTableVisibility,
@@ -2625,30 +2641,30 @@
                         const d = (0, E.useSpring)({
                             from: { width: '0rem' },
                             to: { width: a ? `${l.d2}rem` : '0rem' },
-                            config: { duration: l.zn, easing: iu },
+                            config: { duration: l.zn, easing: ru },
                             onRest: () => t(a),
                         });
                         return i().createElement(
                             E.animated.div,
-                            { style: d, className: ru },
+                            { style: d, className: su },
                             i().createElement('canvas', { ref: s, width: l.d2 * c, height: l.Cb * c }),
                         );
                     }),
-                    ou = 'MarkerView_base_b031c',
-                    lu = 'MarkerView_base__hidden_f6377',
-                    Eu = (0, a.Pi)(() => {
+                    lu = 'MarkerView_base_b031c',
+                    Eu = 'MarkerView_base__hidden_f6377',
+                    cu = (0, a.Pi)(() => {
                         const u = (0, s.GS)().mediaSize,
                             e = (0, r.t)().model;
                         return i().createElement(
                             'div',
                             {
-                                className: ou,
-                                'data-bind-class-toggle': lu + ': !{{model.marker.isVisible}}',
+                                className: lu,
+                                'data-bind-class-toggle': Eu + ': !{{model.marker.isVisible}}',
                                 'data-bind-style-left': `parseFloat({{model.marker.posx}} + ${l.DC})+"rem"`,
                                 'data-bind-style-top': `parseFloat({{model.marker.posy}} + ${l.xS})+"rem"`,
                             },
-                            i().createElement(su, null),
-                            i().createElement(nu, { key: e.phase.get() + u }),
+                            i().createElement(ou, null),
+                            i().createElement(iu, { key: e.phase.get() + u }),
                         );
                     });
             },

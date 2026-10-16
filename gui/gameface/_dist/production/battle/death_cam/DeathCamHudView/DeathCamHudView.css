@@ -202,7 +202,7 @@
     color: #000;
     font-size: 11rem;
     font-weight: 700;
-    line-height: 13rem;
+    line-height: 12rem;
 }
 
 .HintButton_btnInner__blink_ae582 {
@@ -257,6 +257,20 @@
 .mediaSmall .Icon_base_fff8b {
     width: 44rem;
     height: 44rem;
+}
+
+.Icon_overlay_d9a11 {
+    width: 16rem;
+    height: 16rem;
+    background: no-repeat center / contain;
+    position: absolute;
+    top: 2rem;
+    right: -10rem;
+}
+
+.mediaSmall .Icon_overlay_d9a11 {
+    width: 16rem;
+    height: 16rem;
 }
 
 .DataLine_base_b4b94 {

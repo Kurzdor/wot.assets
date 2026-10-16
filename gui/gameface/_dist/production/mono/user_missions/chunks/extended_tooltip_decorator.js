@@ -1,36 +1,37 @@
-import { j as e, e as o } from './vendor.js';
-import { D as s } from './divider.js';
-import { E as r, F as t, a4 as i, a, v as d } from './lib.js';
-const c = 'ExtendedTooltipDecorator_312a767e',
-    n = 'ExtendedTooltipDecorator_header_37374fa6',
-    l = 'ExtendedTooltipDecorator_base__invertedColors_d4c2e366',
-    m = 'ExtendedTooltipDecorator_description_edb17499',
-    x = 'ExtendedTooltipDecorator_timerBlock_7b7647e1',
-    p = 'ExtendedTooltipDecorator_divider_24cd0041';
-function _({
-    header: _,
-    description: j,
+import { r as e } from './rolldown-runtime.js';
+import { A as t, Dn as r, F as s, Jt as o, ct as i, j as a, st as d } from './lib.js';
+import { t as c } from './divider.js';
+var n = 'ExtendedTooltipDecorator_312a767e',
+    l = 'ExtendedTooltipDecorator_header_37374fa6',
+    m = 'ExtendedTooltipDecorator_base__invertedColors_d4c2e366',
+    x = 'ExtendedTooltipDecorator_description_edb17499',
+    p = 'ExtendedTooltipDecorator_timerBlock_7b7647e1',
+    _ = 'ExtendedTooltipDecorator_divider_24cd0041',
+    j = e(o(), 1);
+function h({
+    header: e,
+    description: o,
     descriptionParams: h,
-    invertedColors: v,
-    timerTimeLeft: D = 0,
-    timerPath: E = 'user_missions.tooltip.common.timer',
-    className: f,
-    children: T,
+    invertedColors: D,
+    timerTimeLeft: f = 0,
+    timerPath: v = 'user_missions.tooltip.common.timer',
+    className: T,
+    children: E,
 }) {
-    return e.jsx(r, {
-        children: e.jsx(r.Decorator, {
-            children: e.jsxs('div', {
-                className: o(c, v && l, f),
+    return (0, j.jsx)(t, {
+        children: (0, j.jsx)(t.Decorator, {
+            children: (0, j.jsxs)('div', {
+                className: r(n, D && m, T),
                 children: [
-                    _ && e.jsx(t, { text: _, className: n }),
-                    e.jsx(i, { text: j, binding: h, classMix: m }),
-                    T,
-                    D > 0 &&
-                        e.jsxs('div', {
-                            className: x,
+                    e && (0, j.jsx)(i, { text: e, className: l }),
+                    (0, j.jsx)(s, { text: o, binding: h, classMix: x }),
+                    E,
+                    f > 0 &&
+                        (0, j.jsxs)('div', {
+                            className: p,
                             children: [
-                                e.jsx(s, { className: p }),
-                                e.jsx(a, { path: E, params: { timeLeft: e.jsx(d, { start: D }) } }),
+                                (0, j.jsx)(c, { className: _ }),
+                                (0, j.jsx)(d, { path: v, params: { timeLeft: (0, j.jsx)(a, { start: f }) } }),
                             ],
                         }),
                 ],
@@ -38,4 +39,4 @@ function _({
         }),
     });
 }
-export { _ as E };
+export { h as t };

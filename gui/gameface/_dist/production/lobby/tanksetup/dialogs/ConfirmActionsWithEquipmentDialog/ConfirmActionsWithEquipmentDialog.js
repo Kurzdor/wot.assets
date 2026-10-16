@@ -1520,6 +1520,7 @@
                             (e.LootBox = 'lootBox'),
                             (e.BrCoin = 'brcoin'),
                             (e.Attachment = 'attachment'),
+                            (e.Pet = 'pet'),
                             e
                         );
                     })({}),
@@ -2583,7 +2584,12 @@
                                             },
                                             m,
                                         ),
-                                    o && r().createElement('div', { className: ze.title }, o),
+                                    o &&
+                                        r().createElement(
+                                            'div',
+                                            { className: D()(ze.title, null == _ ? void 0 : _.title) },
+                                            o,
+                                        ),
                                 ),
                             ),
                             t &&

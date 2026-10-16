@@ -56,7 +56,7 @@
                 (a.r(n),
                     a.d(n, {
                         addModelObserver: () => P,
-                        addPreloadTexture: () => O,
+                        addPreloadTexture: () => M,
                         arabic2roman: () => ue,
                         children: () => _,
                         displayStatus: () => k,
@@ -259,12 +259,12 @@
                             L(16, { isMouseEvent: !0, on: e });
                         },
                     },
-                    M = 15;
-                function O(e) {
+                    O = 15;
+                function M(e) {
                     viewEnv.addPreloadTexture(e);
                 }
                 function W(e) {
-                    viewEnv.setHitAreaPaddingsRem(e, e, e, e, M);
+                    viewEnv.setHitAreaPaddingsRem(e, e, e, e, O);
                 }
                 function I(e, u, a, t = 1) {
                     return viewEnv.getWebBrowserTexturePath(e, u, a, t);
@@ -273,7 +273,7 @@
                     return viewEnv.addDataChangedCallback(e, u, a);
                 }
                 function $(e) {
-                    viewEnv.setHitAreaPaddingsRem(e.top, e.right, e.bottom, e.left, M);
+                    viewEnv.setHitAreaPaddingsRem(e.top, e.right, e.bottom, e.left, O);
                 }
                 function H(e = 'px') {
                     return 'rem' === e ? viewEnv.getViewSizeRem() : viewEnv.getViewSizePx();
@@ -757,7 +757,7 @@
                         getFormattedDateTime: (e, u, a = !0) => regionalDateTime.getFormattedDateTime(e, u, a),
                     };
             },
-            261: (e, u, a) => {
+            1: (e, u, a) => {
                 'use strict';
                 const t = () => (window.injected || (window.injected = new Map()), window.injected);
                 var r = a(363),
@@ -1124,14 +1124,14 @@
                     return ((e[(e.left = 0)] = 'left'), (e[(e.right = 1)] = 'right'), e);
                 })({});
                 const S = (e) => e.replace(/&nbsp;/g, ' '),
-                    M = (e, u, a) => {
+                    O = (e, u, a) => {
                         if (a % 2) {
                             const a = e.pop();
                             return [...e, a + u];
                         }
                         return [...e, u];
                     },
-                    O = (e, u, a) => {
+                    M = (e, u, a) => {
                         if (0 === a) return [u];
                         if (a % 2) return [...e, ' ' === u ? ' ' : u];
                         {
@@ -1139,7 +1139,7 @@
                             return [...e, a + u];
                         }
                     },
-                    W = (e, u, a = L.left) => e.split(u).reduce(a === L.left ? M : O, []),
+                    W = (e, u, a = L.left) => e.split(u).reduce(a === L.left ? O : M, []),
                     I = (() => {
                         const e = new RegExp(
                             [
@@ -2005,7 +2005,7 @@
                     'tooltip__align-center': 'ExtendedText_tooltip__align-center_d5b4a',
                     'tooltip__align-flex-end': 'ExtendedText_tooltip__align-flex-end_fc0e0',
                 };
-                let Me = (function (e) {
+                let Oe = (function (e) {
                         return (
                             (e[(e.Word = 0)] = 'Word'),
                             (e[(e.LineBreak = 1)] = 'LineBreak'),
@@ -2016,13 +2016,13 @@
                             e
                         );
                     })({}),
-                    Oe = (function (e) {
+                    Me = (function (e) {
                         return ((e.FlexStart = 'flex-start'), (e.Center = 'center'), (e.FlexEnd = 'flex-end'), e);
                     })({}),
                     We = (function (e) {
                         return ((e.NBSP = ' '), (e.ZWNBSP = '\ufeff'), (e.NEW_LINE = '\n'), e);
                     })({});
-                const Ie = { [We.NBSP]: Me.NoBreakSymbol, [We.ZWNBSP]: Me.NoBreakSymbol, [We.NEW_LINE]: Me.LineBreak },
+                const Ie = { [We.NBSP]: Oe.NoBreakSymbol, [We.ZWNBSP]: Oe.NoBreakSymbol, [We.NEW_LINE]: Oe.LineBreak },
                     Pe = ['zh_cn', 'zh_sg', 'zh_tw', 'ja', 'th'].includes(
                         R.strings.settings.LANGUAGE_CODE().toLowerCase(),
                     ),
@@ -2070,32 +2070,32 @@
                             : _().createElement('span', { key: a, 'data-block-type': u.blockType, className: He }, e);
                     },
                     Ge = {
-                        [Me.Word]: je,
-                        [Me.NoBreakSymbol]: je,
-                        [Me.Binding]: ({ elementList: e, textBlock: u, key: a }) =>
+                        [Oe.Word]: je,
+                        [Oe.NoBreakSymbol]: je,
+                        [Oe.Binding]: ({ elementList: e, textBlock: u, key: a }) =>
                             _().createElement(
                                 'span',
                                 { key: a, 'data-block-type': u.blockType },
                                 e.map((e) => _().createElement(_().Fragment, { key: a }, e)),
                             ),
-                        [Me.LineBreak]: ({ key: e }) =>
+                        [Oe.LineBreak]: ({ key: e }) =>
                             _().createElement('span', {
                                 key: e,
-                                'data-block-type': Me.LineBreak,
+                                'data-block-type': Oe.LineBreak,
                                 className: 'renderers_lineBreak_f90ed',
                             }),
-                        [Me.NewLine]: ({ elementList: e, key: u }) =>
+                        [Oe.NewLine]: ({ elementList: e, key: u }) =>
                             _().createElement(
                                 'span',
-                                { key: u, 'data-block-type': Me.NewLine, className: 'renderers_newLine_ee778' },
+                                { key: u, 'data-block-type': Oe.NewLine, className: 'renderers_newLine_ee778' },
                                 e,
                             ),
-                        [Me.NoBreakWrapper]: ({ elementList: e, key: u }) =>
+                        [Oe.NoBreakWrapper]: ({ elementList: e, key: u }) =>
                             _().createElement(
                                 'span',
                                 {
                                     key: u,
-                                    'data-block-type': Me.NoBreakWrapper,
+                                    'data-block-type': Oe.NoBreakWrapper,
                                     className: 'renderers_noBreakWrapper_d986b',
                                 },
                                 e,
@@ -2167,7 +2167,7 @@
                               const r = [];
                               let _ = 0;
                               for (; t;) {
-                                  const n = u.justifyContent === Oe.FlexEnd ? t.index : a.lastIndex;
+                                  const n = u.justifyContent === Me.FlexEnd ? t.index : a.lastIndex;
                                   (r.push(e.slice(_, n)), (_ = n), (t = a.exec(e)));
                               }
                               return (_ !== e.length && r.push(e.slice(_)), r);
@@ -2179,24 +2179,24 @@
                                 e,
                                 /(\n+|[\xa0\ufeff]+)/g,
                                 (e) => {
-                                    t.push({ blockType: Me.Word, colorTag: u, childList: qe(e, a) });
+                                    t.push({ blockType: Oe.Word, colorTag: u, childList: qe(e, a) });
                                 },
                                 (e) => {
                                     const a = e[0],
                                         r = Ie[a.charAt(0)];
-                                    r === Me.LineBreak
+                                    r === Oe.LineBreak
                                         ? t.push(
                                               ...((e) => {
                                                   const u = [
                                                       {
-                                                          blockType: Me.LineBreak,
+                                                          blockType: Oe.LineBreak,
                                                           colorTag: '',
                                                           childList: [e.charAt(0)],
                                                       },
                                                   ];
                                                   for (let a = 0; a < e.length - 1; a++)
                                                       u.push({
-                                                          blockType: Me.NewLine,
+                                                          blockType: Oe.NewLine,
                                                           colorTag: '',
                                                           childList: [e.charAt(0)],
                                                       });
@@ -2226,7 +2226,7 @@
                                         n = void 0 === u[_] ? e[0] : u[_];
                                     'string' == typeof n || 'number' == typeof n
                                         ? r.push(...Ye(String(n), a, t))
-                                        : r.push({ blockType: Me.Binding, colorTag: a, childList: [n] });
+                                        : r.push({ blockType: Oe.Binding, colorTag: a, childList: [n] });
                                 },
                             ),
                             r
@@ -2236,11 +2236,11 @@
                         if (!e) return [u];
                         const a = [],
                             t = Object.assign({}, u, { childList: u.childList.splice(0, 1) });
-                        if (e.blockType === Me.NoBreakWrapper) (e.childList.push(t), a.push(e));
+                        if (e.blockType === Oe.NoBreakWrapper) (e.childList.push(t), a.push(e));
                         else {
                             const u = Object.assign({}, e, { childList: e.childList.splice(-1) });
                             (e.childList.length > 0 && a.push(e),
-                                a.push({ blockType: Me.NoBreakWrapper, colorTag: '', childList: [u, t] }));
+                                a.push({ blockType: Oe.NoBreakWrapper, colorTag: '', childList: [u, t] }));
                         }
                         return (u.childList.length > 0 && a.push(u), a);
                     },
@@ -2251,7 +2251,7 @@
                             let a = !1;
                             return (
                                 e.forEach((e) => {
-                                    e.blockType === Me.NoBreakSymbol
+                                    e.blockType === Oe.NoBreakSymbol
                                         ? ((a = !0), u.push(...Ze(u.pop(), e)))
                                         : (a ? u.push(...Ze(u.pop(), e)) : u.push(e), (a = !1));
                                 }),
@@ -2286,7 +2286,7 @@
                                                 r = Ge[t],
                                                 _ = Ue(e, r, u);
                                             return (
-                                                t === Me.NoBreakWrapper
+                                                t === Oe.NoBreakWrapper
                                                     ? a.push(r({ elementList: _, textBlock: e, key: `${u}` }))
                                                     : a.push(..._),
                                                 a
@@ -2320,7 +2320,7 @@
                         for (let l = a; l >= 0; l--) {
                             const a = e[l],
                                 s = Number(e[l].getAttribute('data-block-type'));
-                            if (s === Me.LineBreak || s === Me.NewLine || s === Me.Binding) continue;
+                            if (s === Oe.LineBreak || s === Oe.NewLine || s === Oe.Binding) continue;
                             const d = a.textContent || '';
                             if (!(a.childElementCount > 1)) {
                                 const e = uu(a, t, r),
@@ -2362,8 +2362,8 @@
                             isTruncationAvailable: i = !1,
                             customTooltipArgs: o,
                             targetId: l,
-                            justifyContent: s = Oe.FlexStart,
-                            alignContent: d = Oe.FlexStart,
+                            justifyContent: s = Me.FlexStart,
+                            alignContent: d = Me.FlexStart,
                             truncateIdentify: c = '...',
                         }) => {
                             const m = (0, r.useRef)(null),
@@ -2546,7 +2546,7 @@
                                           text: s,
                                           isTruncationAvailable: e === te.B2,
                                           binding: { icon: _().createElement('div', { className: ru.icon }) },
-                                          justifyContent: Oe.Center,
+                                          justifyContent: Me.Center,
                                       }),
                                   ),
                         );
@@ -2658,7 +2658,7 @@
                                     _().createElement('div', null, o),
                                 ),
                                 _().createElement('div', { className: mu.icon, style: c }),
-                                t && _().createElement(X, { text: t, classMix: mu.name }),
+                                t && _().createElement('div', { className: mu.name }, t),
                             ),
                         );
                         var m;
@@ -3041,7 +3041,7 @@
                             T = e.resourceFolderGetter,
                             y = void 0 === T ? ae : T,
                             L = e.textResourcesFolder,
-                            M = (function (e, u) {
+                            O = (function (e, u) {
                                 if (null == e) return {};
                                 var a = {};
                                 for (var t in e)
@@ -3051,7 +3051,7 @@
                                     }
                                 return a;
                             })(e, wu);
-                        const O = le(),
+                        const M = le(),
                             W = Y(
                                 [
                                     ...ie(
@@ -3073,18 +3073,18 @@
                             I = q('model', K.None),
                             P = I.onItemClicked,
                             $ = I.onInfoClicked,
-                            H = M.resourcesFolderName,
-                            z = M.size,
-                            j = M.isSelected,
-                            G = M.showWidget,
-                            U = M.isNew,
-                            V = M.modeName,
-                            X = M.index,
-                            Z = M.performance,
+                            H = O.resourcesFolderName,
+                            z = O.size,
+                            j = O.isSelected,
+                            G = O.showWidget,
+                            U = O.isNew,
+                            V = O.modeName,
+                            X = O.index,
+                            Z = O.performance,
                             Q = oe(l),
                             J = Q[0],
                             ee = Q[1],
-                            _e = (0, r.useMemo)(() => vu[z][O], [z, O]),
+                            _e = (0, r.useMemo)(() => vu[z][M], [z, M]),
                             ne = (0, r.useMemo)(() => {
                                 const e = y(H);
                                 if (null !== e) {
@@ -3103,7 +3103,7 @@
                             Fe = se && !de,
                             Ce = J && !de && !se,
                             De = J || (j && F),
-                            Be = O !== re.Big,
+                            Be = M !== re.Big,
                             fe = g && g.length > 0 && !t && Ae,
                             he = Z && Z.showPerfRisk,
                             pe = (0, r.useMemo)(
@@ -3147,7 +3147,7 @@
                             Le = A()(W.footer, (J || j) && !G && Ee && fu.footer__anim, null == k ? void 0 : k.footer),
                             Se = A()(W.formatText, W[`formatText__${z}`]),
                             Re = A()(fu.darken, G && fu.darken__show),
-                            Me = A()(
+                            Oe = A()(
                                 fu.widgetOverlay,
                                 !ge && fu.widgetOverlay__hide,
                                 null == k ? void 0 : k.widgetOverlay,
@@ -3157,7 +3157,7 @@
                             { className: A()(W.base, W[`base__${z}`]) },
                             _().createElement(
                                 Ne,
-                                Nu({ onHoverChanged: ee, isDisabled: b }, M, {
+                                Nu({ onHoverChanged: ee, isDisabled: b }, O, {
                                     onItemClicked: P,
                                     onInfoClicked: $,
                                     resourceFolderGetter: y,
@@ -3170,7 +3170,7 @@
                                         _().createElement(ue, { text: xe, classMix: Se }),
                                     ),
                                 _().createElement('div', { className: Re }),
-                                c && _().createElement('div', { className: Me }, c),
+                                c && _().createElement('div', { className: Oe }, c),
                                 o,
                                 (!ge || p) &&
                                     _().createElement(
@@ -3257,9 +3257,9 @@
                         const u = A()(yu.background, yu[`background__${e}`]);
                         return _().createElement('div', { className: u });
                     },
-                    Mu = { base: 'ProgressBarBlink_base_d7125', base__small: 'ProgressBarBlink_base__small_b92f8' },
-                    Ou = ({ size: e }) => {
-                        const u = A()(Mu.base, Mu[`base__${e}`]);
+                    Ou = { base: 'ProgressBarBlink_base_d7125', base__small: 'ProgressBarBlink_base__small_b92f8' },
+                    Mu = ({ size: e }) => {
+                        const u = A()(Ou.base, Ou[`base__${e}`]);
                         return _().createElement('div', { className: u });
                     },
                     Wu = {
@@ -3288,7 +3288,7 @@
                                 { className: i, style: t, ref: u },
                                 _().createElement('div', { className: Wu.pattern }),
                                 _().createElement('div', { className: Wu.gradient }),
-                                o && _().createElement(Ou, { size: e }),
+                                o && _().createElement(Mu, { size: e }),
                             );
                         },
                     ),
@@ -3372,7 +3372,7 @@
                                 _().createElement(
                                     'div',
                                     { style: C ? h : f, className: 'ProgressBarDeltaGrow_glow_c912d' },
-                                    _().createElement(Ou, { size: n }),
+                                    _().createElement(Mu, { size: n }),
                                 ),
                             );
                         },
@@ -3496,7 +3496,7 @@
                                       _().createElement(
                                           'div',
                                           { style: A ? F : C, className: 'ProgressBarDeltaSimple_delta_dc2b6' },
-                                          _().createElement(Ou, { size: n }),
+                                          _().createElement(Mu, { size: n }),
                                       ),
                                   );
                         },
@@ -4175,7 +4175,7 @@
             (a.forEach(u.bind(null, 0)), (a.push = u.bind(null, a.push.bind(a))));
         })());
     var __webpack_exports__ = __webpack_require__.O(void 0, ['lib/battle_royale.vendors'], () =>
-        __webpack_require__(261),
+        __webpack_require__(1),
     );
     __webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 })();

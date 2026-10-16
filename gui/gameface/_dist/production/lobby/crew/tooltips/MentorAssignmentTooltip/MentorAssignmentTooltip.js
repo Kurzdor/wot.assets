@@ -20,8 +20,8 @@
                         getMouseGlobalPosition: () => g,
                         getSize: () => f,
                         graphicsQuality: () => p,
-                        playSound: () => v,
-                        setRTPC: () => m,
+                        playSound: () => m,
+                        setRTPC: () => v,
                     }));
                 var D = {};
                 (A.r(D), A.d(D, { getBgUrl: () => T, getTextureUrl: () => S }));
@@ -142,12 +142,12 @@
                         },
                     });
                 })();
-                function v(u) {
+                function m(u) {
                     engine.call('PlaySound', u).catch((e) => {
                         console.error(`playSound('${u}'): `, e);
                     });
                 }
-                function m(u, e) {
+                function v(u, e) {
                     engine.call('SetRTPCGlobal', u, e).catch((A) => {
                         console.error(`setRTPC('${u}', '${e}'): `, A);
                     });
@@ -167,9 +167,9 @@
                         toUpperCase: (u) => window.systemLocale.toUpperCase(u),
                         toLowerCase: (u) => window.systemLocale.toLowerCase(u),
                     },
-                    w = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
-                    h = Object.keys(w).reduce((u, e) => ((u[e] = () => v(w[e])), u), {}),
-                    y = { play: Object.assign({}, h, { sound: v }), setRTPC: m },
+                    h = { highlight: 'highlight', click: 'play', yes1: 'yes1' },
+                    w = Object.keys(h).reduce((u, e) => ((u[e] = () => m(h[e])), u), {}),
+                    y = { play: Object.assign({}, w, { sound: m }), setRTPC: v },
                     x = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'],
                     _ = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1e3];
                 function P(u) {
@@ -353,12 +353,12 @@
                 const lu = { view: B, client: E, sound: y, intl: b };
                 var cu = A(7363),
                     du = A.n(cu);
-                const vu = {
+                const mu = {
                         base: 'TooltipDecorator_base_bf61f',
                         'base__theme-default': 'TooltipDecorator_base__theme-default_bf8f8',
                         decorator: 'TooltipDecorator_decorator_f4de8',
                     },
-                    mu = ['children', 'className', 'theme'];
+                    vu = ['children', 'className', 'theme'];
                 function fu() {
                     return (
                         (fu = Object.assign
@@ -387,10 +387,15 @@
                                     A[F] = u[F];
                                 }
                             return A;
-                        })(u, mu);
+                        })(u, vu);
                     const t = du().useRef(null);
                     var C;
                     return (
+                        (0, cu.useLayoutEffect)(() => {
+                            const u = lu.client.getSize('rem');
+                            ((document.body.style.width = `${u.width}rem`),
+                                (document.body.style.height = `${u.height}rem`));
+                        }, []),
                         (C = () => {
                             const u = t.current;
                             if (!u)
@@ -400,7 +405,9 @@
                             const e = new ResizeObserver(() => {
                                 const e = u.scrollWidth,
                                     A = u.scrollHeight;
-                                lu.view.resize(e, A);
+                                (lu.view.resize(e, A),
+                                    (document.body.style.width = `${e}px`),
+                                    (document.body.style.height = `${A}px`));
                                 const F = window.getComputedStyle(u);
                                 lu.view.setSidePaddingsRem({
                                     left: parseInt(F.getPropertyValue('padding-left'), 10),
@@ -415,24 +422,24 @@
                         du().createElement(
                             'div',
                             fu({}, B, {
-                                className: n()(vu.base, vu[`base__theme-${D}`], F),
+                                className: n()(mu.base, mu[`base__theme-${D}`], F),
                                 ref: function (u) {
                                     ((t.current = u), 'function' == typeof e ? e(u) : e && (e.current = u));
                                 },
                             }),
-                            du().createElement('div', { className: vu.decorator }, A),
+                            du().createElement('div', { className: mu.decorator }, A),
                         )
                     );
                 });
                 var pu = A(1533),
                     bu = A.n(pu),
-                    wu = A(2041);
-                const hu = 'TooltipAdvancedFooter_base_b214f',
+                    hu = A(2041);
+                const wu = 'TooltipAdvancedFooter_base_b214f',
                     yu = 'TooltipAdvancedFooter_altBtn_e7239',
                     xu = du().memo(function ({ classMix: u }) {
                         return du().createElement(
                             'div',
-                            { className: n()(hu, u) },
+                            { className: n()(wu, u) },
                             du().createElement('div', { className: yu }),
                             du().createElement('div', null, R.strings.tooltips.advanced.info()),
                         );
@@ -812,7 +819,7 @@
                             ),
                         ),
                     ),
-                    ne = (0, wu.Pi)(() => {
+                    ne = (0, hu.Pi)(() => {
                         const u = Mu().model,
                             e = u.hasFreeSkills.get();
                         return du().createElement(

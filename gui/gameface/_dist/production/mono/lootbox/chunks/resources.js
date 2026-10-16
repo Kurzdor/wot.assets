@@ -1,25 +1,31 @@
-import { r as e, a as t } from './getRewardImage.js';
-var a = ((e) => ((e.Common = 'common'), (e.Rare = 'rare'), (e.Epic = 'epic'), e))(a || {}),
-    n = ((e) => (
-        (e.EntryPoint = 'ENTRY_POINT'),
-        (e.InfoPage = 'INFO_PAGE'),
-        (e.Rewards = 'REWARDS'),
-        (e.HomeView = 'HOME_VIEW'),
-        e
-    ))(n || {}),
-    s = ((e) => (
-        (e.Videos = 'videos'),
-        (e.Images = 'images'),
-        (e.Texts = 'texts'),
-        (e.Sounds = 'sounds'),
-        (e.DynamicVideos = 'dynamicVideos'),
-        (e.DynamicImages = 'dynamicImages'),
-        (e.DynamicTexts = 'dynamicTexts'),
-        e
-    ))(s || {});
-const o = 'customizable/default',
-    r = 2560 / 1440,
-    c = [e.attachment],
+import { a as e, r as t } from './getRewardImage.js';
+var a = (function (e) {
+        return ((e.Common = 'common'), (e.Rare = 'rare'), (e.Epic = 'epic'), e);
+    })({}),
+    n = (function (e) {
+        return (
+            (e.EntryPoint = 'ENTRY_POINT'),
+            (e.InfoPage = 'INFO_PAGE'),
+            (e.Rewards = 'REWARDS'),
+            (e.HomeView = 'HOME_VIEW'),
+            e
+        );
+    })({}),
+    s = (function (e) {
+        return (
+            (e.Videos = 'videos'),
+            (e.Images = 'images'),
+            (e.Texts = 'texts'),
+            (e.Sounds = 'sounds'),
+            (e.DynamicVideos = 'dynamicVideos'),
+            (e.DynamicImages = 'dynamicImages'),
+            (e.DynamicTexts = 'dynamicTexts'),
+            e
+        );
+    })({}),
+    r = 'customizable/default',
+    o = 2560 / 1440,
+    c = [t.attachment],
     u = [a.Rare, a.Epic],
     d = (e, t) => {
         let a = e;
@@ -31,21 +37,21 @@ const o = 'customizable/default',
         }
         return a;
     },
-    l = ({ type: e, filePath: a, eventName: n }, o = !1) => {
+    i = ({ type: t, filePath: a, eventName: n }, r = !1) => {
         const {
-            parent: r,
+            parent: o,
             path: c,
             defaultPath: u,
         } = ((e, t, a) => {
             const n = 'gui.maps.icons.lootBoxSystem.customizable',
-                o = 'lootbox.customizable';
+                r = 'lootbox.customizable';
             switch (e) {
                 case s.Images:
                 case s.DynamicImages:
                     return { parent: R.images, path: `${n}.${a}.${t}`, defaultPath: `${n}.default.${t}` };
                 case s.Videos:
                 case s.DynamicVideos:
-                    return { parent: R.videos, path: `${o}.${a}.${t}`, defaultPath: `${o}.default.${t}` };
+                    return { parent: R.videos, path: `${r}.${a}.${t}`, defaultPath: `${r}.default.${t}` };
                 case s.Texts:
                 case s.DynamicTexts:
                     return { parent: R.strings, path: `lootbox_${a}.${t}`, defaultPath: `lootbox_system.${t}` };
@@ -57,63 +63,60 @@ const o = 'customizable/default',
                         { parent: '', path: '', defaultPath: '' }
                     );
             }
-        })(e, a, n);
-        return r ? { eventResource: o ? d(r, c) : t(r, c), defaultResource: o ? d(r, u) : t(r, u) } : null;
+        })(t, a, n);
+        return o ? { eventResource: r ? d(o, c) : e(o, c), defaultResource: r ? d(o, u) : e(o, u) } : null;
     },
-    i = (e, t, a) =>
-        Object.keys(e).reduce((n, s) => {
-            const o = e[s];
-            return (
-                void 0 !== o &&
-                    (n[s] = (({ type: e, filePath: t, eventName: a }) => {
-                        const n = l({ type: e, filePath: t, eventName: a });
-                        if (!n || (!n.eventResource && !n.defaultResource))
-                            return (console.info(`Unreachable code: unknown resource (${e} ${a} ${t})`), '');
-                        const { eventResource: s, defaultResource: o } = n;
-                        return s || o;
-                    })({ type: t, filePath: o, eventName: a })),
-                n
-            );
-        }, {}),
+    l = ({ type: e, filePath: t, eventName: a }) => {
+        const n = i({ type: e, filePath: t, eventName: a });
+        if (!n || (!n.eventResource && !n.defaultResource))
+            return (console.info(`Unreachable code: unknown resource (${e} ${a} ${t})`), '');
+        const { eventResource: s, defaultResource: r } = n;
+        return s || r;
+    },
     m = (e, t) =>
         Object.keys(e).reduce((a, n) => {
             const s = e[n];
-            return s ? ((a[n] = i(s, n, t)), a) : a;
+            return s
+                ? ((a[n] = ((e, t, a) =>
+                      Object.keys(e).reduce((n, s) => {
+                          const r = e[s];
+                          return (void 0 !== r && (n[s] = l({ type: t, filePath: r, eventName: a })), n);
+                      }, {}))(s, n, t)),
+                  a)
+                : a;
         }, {}),
-    p = (e, t, a) => (e || t ? e || t : (console.warn(`Not found ${a}`), '')),
-    y = (e, t, a) =>
+    f = (e, t, a) => (e || t ? e || t : (console.warn(`Not found ${a}`), '')),
+    p = (e, t, a) =>
         Object.keys(e).reduce((n, s) => {
-            const o = e[s];
+            const r = e[s];
             return (
                 (n[s] = ((e, t, a) => {
                     const n = `resource type: ${e}, path: ${t}`,
-                        s = l({ type: e, filePath: t, eventName: a }, !0),
-                        o = s?.defaultResource,
-                        r = s?.eventResource;
+                        s = i({ type: e, filePath: t, eventName: a }, !0);
                     return ((e, t, a) => ({
                         dynOpt: (n, s = 'default') => {
-                            const o = t?.$dyn(n) || t?.$dyn(s),
-                                r = e?.$dyn(s);
-                            return p(o, r, a);
+                            const r = t?.$dyn(n) || t?.$dyn(s),
+                                o = e?.$dyn(s);
+                            return f(r, o, a);
                         },
                         dyn: (n) => {
                             const s = t?.$dyn(n),
-                                o = e?.$dyn(n);
-                            return p(s, o, a);
+                                r = e?.$dyn(n);
+                            return f(s, r, a);
                         },
                         plural: (n, s) => {
-                            const o = t?.$plural(n, s),
-                                r = e?.$plural(n, s);
-                            return p(o, r, a);
+                            const r = t?.$plural(n, s),
+                                o = e?.$plural(n, s);
+                            return f(r, o, a);
                         },
-                    }))(o, r, n);
-                })(t, o, a)),
+                    }))(s?.defaultResource, s?.eventResource, n);
+                })(t, r, a)),
                 n
             );
         }, {}),
-    $ = (e, t) =>
+    y = (e, t) =>
         Object.keys(e).reduce((a, n) => {
             const s = e[n];
-            return s ? ((a[n] = y(s, n, t)), a) : a;
+            return s ? ((a[n] = p(s, n, t)), a) : a;
         }, {});
-export { a as B, n as C, o as D, r as R, m as a, c as b, p as c, u as d, $ as g };
+export { r as a, c, n as i, a as l, f as n, u as o, m as r, o as s, y as t };

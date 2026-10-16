@@ -1,21 +1,20 @@
-import { b as o, m as t, M as e, I as i, dT as a, dU as s, dV as d } from './lib.js';
-import './vendor.js';
-const n = (o) => ('overlayType' in o ? o.overlayType : void 0);
-function p(p, l) {
-    const r = ((o, t) => t || (o >= e.Medium ? i.Big : i.Small))(o().mediaSize, l);
+import { Ir as a, Lr as t, Rr as e, Ua as o, aa as i, sa as r, zr as s } from './lib.js';
+var l = (a) => ('overlayType' in a ? a.overlayType : void 0);
+function p(p, n) {
+    const d = ((a, t) => t || (a >= r.Medium ? s.Big : s.Small))(i().mediaSize, n);
     return {
-        parsedRewards: t(p, ({ ...o }) => ({
+        parsedRewards: o(p, ({ ...o }) => ({
             ...o,
-            special: n(o),
-            image: d(o, r),
-            size: r,
-            valueType: s(o.name),
-            tooltipArgs: a(
+            special: l(o),
+            image: a(o, d),
+            size: d,
+            valueType: e(o.name),
+            tooltipArgs: t(
                 { tooltipId: o.tooltipId, tooltipContentId: o.tooltipContentId },
                 Number(o.tooltipContentId),
             ),
         })),
-        imageSize: r,
+        imageSize: d,
     };
 }
-export { p as u };
+export { p as t };

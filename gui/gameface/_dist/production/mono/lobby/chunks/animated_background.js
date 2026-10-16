@@ -1,35 +1,39 @@
-import { j as a, a3 as s } from './vendor.js';
-import { eu as e, d7 as i, ev as n, n as t, ew as m } from './lib.js';
-const o = 'AnimatedBackground_f47e334b',
-    r = 'AnimatedBackground_rays_caf372e5',
-    c = 'AnimatedBackground_sunShineCanvas_21aff824',
-    h = 'AnimatedBackground_staticHighlight_4c4023e9',
-    d = {
+import { r as a } from './rolldown-runtime.js';
+import { Cs as s, Ho as e, Na as i, a as n, es as t, i as r, r as m } from './lib.js';
+import { i as o } from './vendor.js';
+s();
+var c = a(o(), 1),
+    d = 'AnimatedBackground_f47e334b',
+    h = 'AnimatedBackground_rays_caf372e5',
+    u = 'AnimatedBackground_sunShineCanvas_21aff824',
+    g = 'AnimatedBackground_staticHighlight_4c4023e9',
+    l = a(i(), 1),
+    f = {
         width: 400,
         height: 400,
         frameCount: 50,
         chunk: { count: 2, rows: 5, columns: 5 },
-        getChunkPath: m('R.images.gui.maps.icons.sequence.sun_shine_big_sprite.sprite_'),
+        getChunkPath: r('R.images.gui.maps.icons.sequence.sun_shine_big_sprite.sprite_'),
     },
-    g = e(d),
-    u = ({ className: e }) =>
-        a.jsx('div', {
-            className: s(o, e),
-            children: i.isHigh()
-                ? a.jsxs(a.Fragment, {
+    _ = n(f),
+    j = ({ className: a }) =>
+        (0, l.jsx)('div', {
+            className: (0, c.default)(d, a),
+            children: t.isHigh()
+                ? (0, l.jsxs)(l.Fragment, {
                       children: [
-                          a.jsx(n, {
-                              onAnimationDone: t,
-                              width: d.width,
-                              height: d.height,
-                              frameCount: d.frameCount,
-                              getImageSource: g,
+                          (0, l.jsx)(m, {
+                              onAnimationDone: e,
+                              width: f.width,
+                              height: f.height,
+                              frameCount: f.frameCount,
+                              getImageSource: _,
                               frameTime: 50,
-                              className: c,
+                              className: u,
                           }),
-                          a.jsx('div', { className: r }),
+                          (0, l.jsx)('div', { className: h }),
                       ],
                   })
-                : a.jsx('div', { className: h }),
+                : (0, l.jsx)('div', { className: g }),
         });
-export { u as A };
+export { j as t };

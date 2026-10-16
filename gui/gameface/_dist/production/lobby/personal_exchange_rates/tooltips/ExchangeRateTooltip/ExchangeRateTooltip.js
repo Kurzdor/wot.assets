@@ -55,7 +55,7 @@
                 }
                 (r.r(o),
                     r.d(o, {
-                        addModelObserver: () => B,
+                        addModelObserver: () => q,
                         addPreloadTexture: () => V,
                         arabic2roman: () => oe,
                         children: () => i,
@@ -66,7 +66,7 @@
                         extraSize: () => ce,
                         forceTriggerMouseMove: () => ae,
                         freezeTextureBeforeResize: () => K,
-                        getBrowserTexturePath: () => q,
+                        getBrowserTexturePath: () => $,
                         getDisplayStatus: () => ne,
                         getExternalPaddingsRem: () => le,
                         getFontNames: () => ie,
@@ -83,7 +83,7 @@
                         setAnimateWindow: () => J,
                         setEventHandled: () => te,
                         setInputPaddingsRem: () => F,
-                        setSidePaddingsRem: () => $,
+                        setSidePaddingsRem: () => B,
                         whenTutorialReady: () => ue,
                     }));
                 const c = l('clientResized'),
@@ -275,13 +275,13 @@
                 function F(e) {
                     viewEnv.setHitAreaPaddingsRem(e, e, e, e, U);
                 }
-                function q(e, t, r, a = 1) {
+                function $(e, t, r, a = 1) {
                     return viewEnv.getWebBrowserTexturePath(e, t, r, a);
                 }
-                function B(e, t, r) {
+                function q(e, t, r) {
                     return viewEnv.addDataChangedCallback(e, t, r);
                 }
-                function $(e) {
+                function B(e) {
                     viewEnv.setHitAreaPaddingsRem(e.top, e.right, e.bottom, e.left, U);
                 }
                 function z(e = 'px') {
@@ -1122,6 +1122,11 @@
                     const u = n().useRef(null);
                     var _;
                     return (
+                        (0, a.useLayoutEffect)(() => {
+                            const e = o.O.client.getSize('rem');
+                            ((document.body.style.width = `${e.width}rem`),
+                                (document.body.style.height = `${e.height}rem`));
+                        }, []),
                         (_ = () => {
                             const e = u.current;
                             if (!e)
@@ -1131,7 +1136,9 @@
                             const t = new ResizeObserver(() => {
                                 const t = e.scrollWidth,
                                     r = e.scrollHeight;
-                                o.O.view.resize(t, r);
+                                (o.O.view.resize(t, r),
+                                    (document.body.style.width = `${t}px`),
+                                    (document.body.style.height = `${r}px`));
                                 const a = window.getComputedStyle(e);
                                 o.O.view.setSidePaddingsRem({
                                     left: parseInt(a.getPropertyValue('padding-left'), 10),
@@ -1280,9 +1287,9 @@
                                     ),
                             ),
                     ),
-                    q = 'Rates_base_c2fd3',
-                    B = 'Rates_row_fa885',
-                    $ = 'Rates_equal_f94e5',
+                    $ = 'Rates_base_c2fd3',
+                    q = 'Rates_row_fa885',
+                    B = 'Rates_equal_f94e5',
                     z = 'Rates_text_d7e2e',
                     j = R.strings.personal_exchange_rates.tooltip.common,
                     X = (e, t) => e.goldRateValue === t.goldRateValue && e.resourceRateValue === t.resourceRateValue,
@@ -1312,7 +1319,7 @@
                                     ]),
                             n().createElement(
                                 'div',
-                                { className: m()(q, e) },
+                                { className: m()($, e) },
                                 o.map((e, t) => {
                                     const r =
                                             i.from === U.gold
@@ -1322,10 +1329,10 @@
                                         o = r.to;
                                     return n().createElement(
                                         'div',
-                                        { className: B, key: t },
+                                        { className: q, key: t },
                                         n().createElement('span', { className: z }, e.title),
                                         n().createElement(F, { size: 'small', type: i.from, value: a }),
-                                        n().createElement('span', { className: $ }, '='),
+                                        n().createElement('span', { className: B }, '='),
                                         n().createElement(F, { size: 'small', type: i.to, value: o }),
                                     );
                                 }),

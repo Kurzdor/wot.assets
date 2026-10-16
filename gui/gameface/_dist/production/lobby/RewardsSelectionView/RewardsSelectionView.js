@@ -1458,6 +1458,7 @@
                             (e.LootBox = 'lootBox'),
                             (e.BrCoin = 'brcoin'),
                             (e.Attachment = 'attachment'),
+                            (e.Pet = 'pet'),
                             e
                         );
                     })({}),
@@ -2108,13 +2109,13 @@
                     Se = 'HorizontalBar_base__active_ad89b',
                     xe = 'disable',
                     Te = { pending: !1, offset: 0 },
-                    ke = (e) => {
+                    Re = (e) => {
                         var u;
                         return 0.9 * (null != (u = e.getWrapperSize()) ? u : 0);
                     },
-                    Re = () => {},
+                    ke = () => {},
                     Me = (e, u) => Math.max(20, e.offsetWidth * u),
-                    Le = (0, a.memo)(({ api: e, classNames: u = {}, getStepByRailClick: t = ke, onDrag: n = Re }) => {
+                    Le = (0, a.memo)(({ api: e, classNames: u = {}, getStepByRailClick: t = Re, onDrag: n = ke }) => {
                         const r = (0, a.useRef)(null),
                             o = (0, a.useRef)(null),
                             s = (0, a.useRef)(null),
@@ -2186,7 +2187,7 @@
                                         const u = () => {
                                             D();
                                         };
-                                        let t = Re;
+                                        let t = ke;
                                         const n = () => {
                                             (t(), (t = l(C)));
                                         };
@@ -2788,8 +2789,8 @@
                             ),
                             c || t === uu
                                 ? i().createElement(
-                                      i().Fragment,
-                                      null,
+                                      'div',
+                                      { className: 'Reward_footer_e51cc' },
                                       i().createElement('span', { className: 'Reward_countText_fe729' }, u),
                                       i().createElement(
                                           'div',

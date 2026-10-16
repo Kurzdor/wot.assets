@@ -211,7 +211,7 @@
                         arabic2roman: () => T,
                         children: () => r,
                         displayStatus: () => i.W,
-                        displayStatusIs: () => P,
+                        displayStatusIs: () => S,
                         enableFullScreenModeSupported: () => R,
                         events: () => a.U,
                         extraSize: () => N,
@@ -219,7 +219,7 @@
                         freezeTextureBeforeResize: () => m,
                         getBrowserTexturePath: () => _,
                         getDisplayStatus: () => y,
-                        getExternalPaddingsRem: () => S,
+                        getExternalPaddingsRem: () => P,
                         getFontNames: () => w,
                         getScale: () => p,
                         getSize: () => A,
@@ -303,10 +303,10 @@
                         return () => (0 === u.length && (u = Object.keys(viewEnv.getFontsConfig())), u);
                     })(),
                     T = n.cg;
-                function S() {
+                function P() {
                     return viewEnv.getExternalPaddingsRem();
                 }
-                const P = Object.keys(i.W).reduce(
+                const S = Object.keys(i.W).reduce(
                         (u, e) => ((u[e] = () => viewEnv.getShowingStatus() === i.W[e]), u),
                         {},
                     ),
@@ -994,7 +994,7 @@
                                         (f.current.isVisible = !1));
                                 }
                             }, [t, m, y, b]),
-                            S = (0, n.useCallback)((u) => {
+                            P = (0, n.useCallback)((u) => {
                                 f.current.isVisible &&
                                     ((f.current.prevTarget = document.elementFromPoint(u.clientX, u.clientY)),
                                     (f.current.hideTimerId = window.setTimeout(() => {
@@ -1005,9 +1005,9 @@
                         ((0, n.useEffect)(() => {
                             const u = f.current.hideTimerId;
                             return (
-                                document.addEventListener('wheel', S, { capture: !0 }),
+                                document.addEventListener('wheel', P, { capture: !0 }),
                                 () => {
-                                    (document.removeEventListener('wheel', S, { capture: !0 }),
+                                    (document.removeEventListener('wheel', P, { capture: !0 }),
                                         u && window.clearTimeout(u));
                                 }
                             );
@@ -1030,14 +1030,14 @@
                                   Object.assign(
                                       {
                                           onMouseEnter:
-                                              ((P = e.props.onMouseEnter),
+                                              ((S = e.props.onMouseEnter),
                                               (u) => {
                                                   (u.clientX === window.innerWidth &&
                                                       u.clientY === window.innerHeight) ||
                                                       (clearTimeout(f.current.timeoutId),
                                                       (f.current.timeoutId = window.setTimeout(w, d ? 100 : 400)),
                                                       i && i(u),
-                                                      P && P(u));
+                                                      S && S(u));
                                               }),
                                           onMouseLeave: ((u) => (e) => {
                                               (T(), null == a || a(e), null == u || u(e));
@@ -1053,7 +1053,7 @@
                                   ),
                               )
                             : e;
-                        var P;
+                        var S;
                     },
                     A = ['children'];
                 function D() {
@@ -1226,6 +1226,7 @@
                             (u.LootBox = 'lootBox'),
                             (u.BrCoin = 'brcoin'),
                             (u.Attachment = 'attachment'),
+                            (u.Pet = 'pet'),
                             u
                         );
                     })({}),
@@ -1305,8 +1306,8 @@
                             u
                         );
                     })({});
-                const S = [b.Attachment];
-                const P = ({ value: u, format: e = 'integral' }) => {
+                const P = [b.Attachment];
+                const S = ({ value: u, format: e = 'integral' }) => {
                         const t = (function (u) {
                                 return 'gold' === u ? c.B3.GOLD : c.B3.INTEGRAL;
                             })(e),
@@ -1462,7 +1463,7 @@
                                     }
                                     case f.CURRENCY:
                                     case f.NUMBER:
-                                        return r().createElement(P, { format: 'integral', value: Number(u) });
+                                        return r().createElement(S, { format: 'integral', value: Number(u) });
                                     case f.PREMIUM_PLUS: {
                                         const e = Number(u);
                                         return isNaN(e) ? u : null;
@@ -1474,7 +1475,7 @@
                         return r().createElement(
                             'div',
                             {
-                                className: o()(x.base, x[`base__${n}`], S.includes(u) && x.base__normalize, _),
+                                className: o()(x.base, x[`base__${n}`], P.includes(u) && x.base__normalize, _),
                                 style: l,
                             },
                             r().createElement(
@@ -1519,7 +1520,12 @@
                                             },
                                             m,
                                         ),
-                                    c && r().createElement('div', { className: x.title }, c),
+                                    c &&
+                                        r().createElement(
+                                            'div',
+                                            { className: o()(x.title, null == E ? void 0 : E.title) },
+                                            c,
+                                        ),
                                 ),
                             ),
                             t &&
@@ -2096,7 +2102,7 @@
                                                     null == t ? void 0 : t.balance,
                                                 ),
                                             },
-                                            r().createElement(P, {
+                                            r().createElement(S, {
                                                 value: u.currencyValue,
                                                 format: u.currencyType === Au.gold ? 'gold' : 'integral',
                                             }),
@@ -2378,8 +2384,8 @@
                     yu = fu[0],
                     wu = fu[1],
                     Tu = 'App_background_c5320',
-                    Su = 'App_center_dba95',
-                    Pu = 'App_glow_e4fc8',
+                    Pu = 'App_center_dba95',
+                    Su = 'App_glow_e4fc8',
                     Nu = 'App_reward_a6dd8',
                     xu = {
                         base: 'Currency_base_ed02c',
@@ -2458,7 +2464,7 @@
                                         ),
                                     },
                                     s && i > 0 && '+',
-                                    r().createElement(P, { value: i, format: n === Au.gold ? 'gold' : 'integral' }),
+                                    r().createElement(S, { value: i, format: n === Au.gold ? 'gold' : 'integral' }),
                                 ),
                                 r().createElement('span', {
                                     className: o()(xu.icon, xu[`icon__${n}-${t}`], null == E ? void 0 : E.icon),
@@ -3434,8 +3440,8 @@
                                 content: r().createElement($u, null),
                                 buttons: r().createElement(me, null),
                                 displayFlags: s,
-                                classMix: o()(Tu, !a && Pu),
-                                classNames: { center: Su },
+                                classMix: o()(Tu, !a && Su),
+                                classNames: { center: Pu },
                             })
                         );
                     }),
